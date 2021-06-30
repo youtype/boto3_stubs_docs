@@ -8,15 +8,15 @@ type annotations stubs module
 [mypy_boto3_kinesis_video_media](https://pypi.org/project/mypy-boto3-kinesis-video-media/).
 
 - [Typed dictionaries for boto3 KinesisVideoMedia module](#typed-dictionaries-for-boto3-kinesisvideomedia-module)
-  - [GetMediaInputTypeDef](#getmediainputtypedef)
-  - [GetMediaOutputResponseTypeDef](#getmediaoutputresponsetypedef)
+  - [GetMediaInputRequestTypeDef](#getmediainputrequesttypedef)
+  - [GetMediaOutputTypeDef](#getmediaoutputtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [StartSelectorTypeDef](#startselectortypedef)
 
-## GetMediaInputTypeDef
+## GetMediaInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesis_video_media.type_defs import GetMediaInputTypeDef
+from mypy_boto3_kinesis_video_media.type_defs import GetMediaInputRequestTypeDef
 ```
 
 Required fields:
@@ -28,10 +28,10 @@ Optional fields:
 - `StreamName`: `str`
 - `StreamARN`: `str`
 
-## GetMediaOutputResponseTypeDef
+## GetMediaOutputTypeDef
 
 ```python
-from mypy_boto3_kinesis_video_media.type_defs import GetMediaOutputResponseTypeDef
+from mypy_boto3_kinesis_video_media.type_defs import GetMediaOutputTypeDef
 ```
 
 Required fields:

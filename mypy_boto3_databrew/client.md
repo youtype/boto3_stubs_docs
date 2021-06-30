@@ -11,6 +11,7 @@ type annotations stubs module
   - [GlueDataBrewClient](#gluedatabrewclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [batch_delete_recipe_version](#batch_delete_recipe_version)
     - [can_paginate](#can_paginate)
     - [create_dataset](#create_dataset)
@@ -94,6 +95,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+GlueDataBrewClient exceptions.
+
+Type annotations for `boto3.client("databrew").exceptions` method.
+
+Boto3 documentation:
+[GlueDataBrew.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### batch_delete_recipe_version
 
 Deletes one or more versions of a recipe at a time.
@@ -105,7 +117,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.batch_delete_recipe_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.batch_delete_recipe_version)
 
 Arguments mapping described in
-[BatchDeleteRecipeVersionRequestTypeDef](./type_defs.md#batchdeleterecipeversionrequesttypedef).
+[BatchDeleteRecipeVersionRequestRequestTypeDef](./type_defs.md#batchdeleterecipeversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -113,7 +125,7 @@ Keyword-only arguments:
 - `RecipeVersions`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDeleteRecipeVersionResponseResponseTypeDef](./type_defs.md#batchdeleterecipeversionresponseresponsetypedef).
+[BatchDeleteRecipeVersionResponseTypeDef](./type_defs.md#batchdeleterecipeversionresponsetypedef).
 
 ### can_paginate
 
@@ -140,7 +152,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_dataset)
 
 Arguments mapping described in
-[CreateDatasetRequestTypeDef](./type_defs.md#createdatasetrequesttypedef).
+[CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -152,7 +164,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDatasetResponseResponseTypeDef](./type_defs.md#createdatasetresponseresponsetypedef).
+[CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
 ### create_profile_job
 
@@ -164,7 +176,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.create_profile_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_profile_job)
 
 Arguments mapping described in
-[CreateProfileJobRequestTypeDef](./type_defs.md#createprofilejobrequesttypedef).
+[CreateProfileJobRequestRequestTypeDef](./type_defs.md#createprofilejobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -183,7 +195,7 @@ Keyword-only arguments:
 - `JobSample`: [JobSampleTypeDef](./type_defs.md#jobsampletypedef)
 
 Returns
-[CreateProfileJobResponseResponseTypeDef](./type_defs.md#createprofilejobresponseresponsetypedef).
+[CreateProfileJobResponseTypeDef](./type_defs.md#createprofilejobresponsetypedef).
 
 ### create_project
 
@@ -195,7 +207,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_project)
 
 Arguments mapping described in
-[CreateProjectRequestTypeDef](./type_defs.md#createprojectrequesttypedef).
+[CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -207,7 +219,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateProjectResponseResponseTypeDef](./type_defs.md#createprojectresponseresponsetypedef).
+[CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef).
 
 ### create_recipe
 
@@ -219,7 +231,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.create_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_recipe)
 
 Arguments mapping described in
-[CreateRecipeRequestTypeDef](./type_defs.md#createreciperequesttypedef).
+[CreateRecipeRequestRequestTypeDef](./type_defs.md#createreciperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -230,14 +242,14 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateRecipeResponseResponseTypeDef](./type_defs.md#createreciperesponseresponsetypedef).
+[CreateRecipeResponseTypeDef](./type_defs.md#createreciperesponsetypedef).
 
 ### create_recipe_job
 
 Creates a new job to transform input data, using steps defined in an existing
-AWS Glue DataBrew recipe See also:
+Glue DataBrew recipe See also:
 `AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/databrew-2017-07-25/CreateRecipeJob>`\_
-**Request Syntax** response = client.create_recipe_job( Dataset...
+**Request Syntax** response = client.create_recipe_job( DatasetName...
 
 Type annotations for `boto3.client("databrew").create_recipe_job` method.
 
@@ -245,13 +257,11 @@ Boto3 documentation:
 [GlueDataBrew.Client.create_recipe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_recipe_job)
 
 Arguments mapping described in
-[CreateRecipeJobRequestTypeDef](./type_defs.md#createrecipejobrequesttypedef).
+[CreateRecipeJobRequestRequestTypeDef](./type_defs.md#createrecipejobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
-- `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
-  *(required)*
 - `RoleArn`: `str` *(required)*
 - `DatasetName`: `str`
 - `EncryptionKeyArn`: `str`
@@ -259,6 +269,9 @@ Keyword-only arguments:
 - `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
 - `MaxCapacity`: `int`
 - `MaxRetries`: `int`
+- `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
+- `DataCatalogOutputs`:
+  `List`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
 - `ProjectName`: `str`
 - `RecipeReference`:
   [RecipeReferenceTypeDef](./type_defs.md#recipereferencetypedef)
@@ -266,7 +279,7 @@ Keyword-only arguments:
 - `Timeout`: `int`
 
 Returns
-[CreateRecipeJobResponseResponseTypeDef](./type_defs.md#createrecipejobresponseresponsetypedef).
+[CreateRecipeJobResponseTypeDef](./type_defs.md#createrecipejobresponsetypedef).
 
 ### create_schedule
 
@@ -278,7 +291,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.create_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_schedule)
 
 Arguments mapping described in
-[CreateScheduleRequestTypeDef](./type_defs.md#createschedulerequesttypedef).
+[CreateScheduleRequestRequestTypeDef](./type_defs.md#createschedulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -288,7 +301,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateScheduleResponseResponseTypeDef](./type_defs.md#createscheduleresponseresponsetypedef).
+[CreateScheduleResponseTypeDef](./type_defs.md#createscheduleresponsetypedef).
 
 ### delete_dataset
 
@@ -300,14 +313,14 @@ Boto3 documentation:
 [GlueDataBrew.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_dataset)
 
 Arguments mapping described in
-[DeleteDatasetRequestTypeDef](./type_defs.md#deletedatasetrequesttypedef).
+[DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[DeleteDatasetResponseResponseTypeDef](./type_defs.md#deletedatasetresponseresponsetypedef).
+[DeleteDatasetResponseTypeDef](./type_defs.md#deletedatasetresponsetypedef).
 
 ### delete_job
 
@@ -319,14 +332,13 @@ Boto3 documentation:
 [GlueDataBrew.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_job)
 
 Arguments mapping described in
-[DeleteJobRequestTypeDef](./type_defs.md#deletejobrequesttypedef).
+[DeleteJobRequestRequestTypeDef](./type_defs.md#deletejobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
-Returns
-[DeleteJobResponseResponseTypeDef](./type_defs.md#deletejobresponseresponsetypedef).
+Returns [DeleteJobResponseTypeDef](./type_defs.md#deletejobresponsetypedef).
 
 ### delete_project
 
@@ -338,14 +350,14 @@ Boto3 documentation:
 [GlueDataBrew.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_project)
 
 Arguments mapping described in
-[DeleteProjectRequestTypeDef](./type_defs.md#deleteprojectrequesttypedef).
+[DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[DeleteProjectResponseResponseTypeDef](./type_defs.md#deleteprojectresponseresponsetypedef).
+[DeleteProjectResponseTypeDef](./type_defs.md#deleteprojectresponsetypedef).
 
 ### delete_recipe_version
 
@@ -357,7 +369,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.delete_recipe_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_recipe_version)
 
 Arguments mapping described in
-[DeleteRecipeVersionRequestTypeDef](./type_defs.md#deleterecipeversionrequesttypedef).
+[DeleteRecipeVersionRequestRequestTypeDef](./type_defs.md#deleterecipeversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -365,7 +377,7 @@ Keyword-only arguments:
 - `RecipeVersion`: `str` *(required)*
 
 Returns
-[DeleteRecipeVersionResponseResponseTypeDef](./type_defs.md#deleterecipeversionresponseresponsetypedef).
+[DeleteRecipeVersionResponseTypeDef](./type_defs.md#deleterecipeversionresponsetypedef).
 
 ### delete_schedule
 
@@ -377,14 +389,14 @@ Boto3 documentation:
 [GlueDataBrew.Client.delete_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_schedule)
 
 Arguments mapping described in
-[DeleteScheduleRequestTypeDef](./type_defs.md#deleteschedulerequesttypedef).
+[DeleteScheduleRequestRequestTypeDef](./type_defs.md#deleteschedulerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[DeleteScheduleResponseResponseTypeDef](./type_defs.md#deletescheduleresponseresponsetypedef).
+[DeleteScheduleResponseTypeDef](./type_defs.md#deletescheduleresponsetypedef).
 
 ### describe_dataset
 
@@ -396,14 +408,14 @@ Boto3 documentation:
 [GlueDataBrew.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_dataset)
 
 Arguments mapping described in
-[DescribeDatasetRequestTypeDef](./type_defs.md#describedatasetrequesttypedef).
+[DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[DescribeDatasetResponseResponseTypeDef](./type_defs.md#describedatasetresponseresponsetypedef).
+[DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
 
 ### describe_job
 
@@ -415,14 +427,14 @@ Boto3 documentation:
 [GlueDataBrew.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_job)
 
 Arguments mapping described in
-[DescribeJobRequestTypeDef](./type_defs.md#describejobrequesttypedef).
+[DescribeJobRequestRequestTypeDef](./type_defs.md#describejobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[DescribeJobResponseResponseTypeDef](./type_defs.md#describejobresponseresponsetypedef).
+[DescribeJobResponseTypeDef](./type_defs.md#describejobresponsetypedef).
 
 ### describe_job_run
 
@@ -434,7 +446,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.describe_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_job_run)
 
 Arguments mapping described in
-[DescribeJobRunRequestTypeDef](./type_defs.md#describejobrunrequesttypedef).
+[DescribeJobRunRequestRequestTypeDef](./type_defs.md#describejobrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -442,7 +454,7 @@ Keyword-only arguments:
 - `RunId`: `str` *(required)*
 
 Returns
-[DescribeJobRunResponseResponseTypeDef](./type_defs.md#describejobrunresponseresponsetypedef).
+[DescribeJobRunResponseTypeDef](./type_defs.md#describejobrunresponsetypedef).
 
 ### describe_project
 
@@ -454,14 +466,14 @@ Boto3 documentation:
 [GlueDataBrew.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_project)
 
 Arguments mapping described in
-[DescribeProjectRequestTypeDef](./type_defs.md#describeprojectrequesttypedef).
+[DescribeProjectRequestRequestTypeDef](./type_defs.md#describeprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[DescribeProjectResponseResponseTypeDef](./type_defs.md#describeprojectresponseresponsetypedef).
+[DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef).
 
 ### describe_recipe
 
@@ -474,7 +486,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.describe_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_recipe)
 
 Arguments mapping described in
-[DescribeRecipeRequestTypeDef](./type_defs.md#describereciperequesttypedef).
+[DescribeRecipeRequestRequestTypeDef](./type_defs.md#describereciperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -482,7 +494,7 @@ Keyword-only arguments:
 - `RecipeVersion`: `str`
 
 Returns
-[DescribeRecipeResponseResponseTypeDef](./type_defs.md#describereciperesponseresponsetypedef).
+[DescribeRecipeResponseTypeDef](./type_defs.md#describereciperesponsetypedef).
 
 ### describe_schedule
 
@@ -494,14 +506,14 @@ Boto3 documentation:
 [GlueDataBrew.Client.describe_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_schedule)
 
 Arguments mapping described in
-[DescribeScheduleRequestTypeDef](./type_defs.md#describeschedulerequesttypedef).
+[DescribeScheduleRequestRequestTypeDef](./type_defs.md#describeschedulerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[DescribeScheduleResponseResponseTypeDef](./type_defs.md#describescheduleresponseresponsetypedef).
+[DescribeScheduleResponseTypeDef](./type_defs.md#describescheduleresponsetypedef).
 
 ### generate_presigned_url
 
@@ -531,7 +543,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_datasets)
 
 Arguments mapping described in
-[ListDatasetsRequestTypeDef](./type_defs.md#listdatasetsrequesttypedef).
+[ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -539,7 +551,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListDatasetsResponseResponseTypeDef](./type_defs.md#listdatasetsresponseresponsetypedef).
+[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
 
 ### list_job_runs
 
@@ -551,7 +563,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.list_job_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_job_runs)
 
 Arguments mapping described in
-[ListJobRunsRequestTypeDef](./type_defs.md#listjobrunsrequesttypedef).
+[ListJobRunsRequestRequestTypeDef](./type_defs.md#listjobrunsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -560,7 +572,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListJobRunsResponseResponseTypeDef](./type_defs.md#listjobrunsresponseresponsetypedef).
+[ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef).
 
 ### list_jobs
 
@@ -572,7 +584,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_jobs)
 
 Arguments mapping described in
-[ListJobsRequestTypeDef](./type_defs.md#listjobsrequesttypedef).
+[ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -581,8 +593,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `ProjectName`: `str`
 
-Returns
-[ListJobsResponseResponseTypeDef](./type_defs.md#listjobsresponseresponsetypedef).
+Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
 
 ### list_projects
 
@@ -594,7 +605,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_projects)
 
 Arguments mapping described in
-[ListProjectsRequestTypeDef](./type_defs.md#listprojectsrequesttypedef).
+[ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -602,7 +613,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListProjectsResponseResponseTypeDef](./type_defs.md#listprojectsresponseresponsetypedef).
+[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef).
 
 ### list_recipe_versions
 
@@ -615,7 +626,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.list_recipe_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_recipe_versions)
 
 Arguments mapping described in
-[ListRecipeVersionsRequestTypeDef](./type_defs.md#listrecipeversionsrequesttypedef).
+[ListRecipeVersionsRequestRequestTypeDef](./type_defs.md#listrecipeversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -624,7 +635,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListRecipeVersionsResponseResponseTypeDef](./type_defs.md#listrecipeversionsresponseresponsetypedef).
+[ListRecipeVersionsResponseTypeDef](./type_defs.md#listrecipeversionsresponsetypedef).
 
 ### list_recipes
 
@@ -636,7 +647,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.list_recipes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_recipes)
 
 Arguments mapping described in
-[ListRecipesRequestTypeDef](./type_defs.md#listrecipesrequesttypedef).
+[ListRecipesRequestRequestTypeDef](./type_defs.md#listrecipesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -645,7 +656,7 @@ Keyword-only arguments:
 - `RecipeVersion`: `str`
 
 Returns
-[ListRecipesResponseResponseTypeDef](./type_defs.md#listrecipesresponseresponsetypedef).
+[ListRecipesResponseTypeDef](./type_defs.md#listrecipesresponsetypedef).
 
 ### list_schedules
 
@@ -657,7 +668,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.list_schedules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_schedules)
 
 Arguments mapping described in
-[ListSchedulesRequestTypeDef](./type_defs.md#listschedulesrequesttypedef).
+[ListSchedulesRequestRequestTypeDef](./type_defs.md#listschedulesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -666,7 +677,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSchedulesResponseResponseTypeDef](./type_defs.md#listschedulesresponseresponsetypedef).
+[ListSchedulesResponseTypeDef](./type_defs.md#listschedulesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -678,14 +689,14 @@ Boto3 documentation:
 [GlueDataBrew.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### publish_recipe
 
@@ -697,7 +708,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.publish_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.publish_recipe)
 
 Arguments mapping described in
-[PublishRecipeRequestTypeDef](./type_defs.md#publishreciperequesttypedef).
+[PublishRecipeRequestRequestTypeDef](./type_defs.md#publishreciperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -705,7 +716,7 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[PublishRecipeResponseResponseTypeDef](./type_defs.md#publishreciperesponseresponsetypedef).
+[PublishRecipeResponseTypeDef](./type_defs.md#publishreciperesponsetypedef).
 
 ### send_project_session_action
 
@@ -719,7 +730,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.send_project_session_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.send_project_session_action)
 
 Arguments mapping described in
-[SendProjectSessionActionRequestTypeDef](./type_defs.md#sendprojectsessionactionrequesttypedef).
+[SendProjectSessionActionRequestRequestTypeDef](./type_defs.md#sendprojectsessionactionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -731,7 +742,7 @@ Keyword-only arguments:
 - `ViewFrame`: [ViewFrameTypeDef](./type_defs.md#viewframetypedef)
 
 Returns
-[SendProjectSessionActionResponseResponseTypeDef](./type_defs.md#sendprojectsessionactionresponseresponsetypedef).
+[SendProjectSessionActionResponseTypeDef](./type_defs.md#sendprojectsessionactionresponsetypedef).
 
 ### start_job_run
 
@@ -743,14 +754,14 @@ Boto3 documentation:
 [GlueDataBrew.Client.start_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.start_job_run)
 
 Arguments mapping described in
-[StartJobRunRequestTypeDef](./type_defs.md#startjobrunrequesttypedef).
+[StartJobRunRequestRequestTypeDef](./type_defs.md#startjobrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[StartJobRunResponseResponseTypeDef](./type_defs.md#startjobrunresponseresponsetypedef).
+[StartJobRunResponseTypeDef](./type_defs.md#startjobrunresponsetypedef).
 
 ### start_project_session
 
@@ -763,7 +774,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.start_project_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.start_project_session)
 
 Arguments mapping described in
-[StartProjectSessionRequestTypeDef](./type_defs.md#startprojectsessionrequesttypedef).
+[StartProjectSessionRequestRequestTypeDef](./type_defs.md#startprojectsessionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -771,7 +782,7 @@ Keyword-only arguments:
 - `AssumeControl`: `bool`
 
 Returns
-[StartProjectSessionResponseResponseTypeDef](./type_defs.md#startprojectsessionresponseresponsetypedef).
+[StartProjectSessionResponseTypeDef](./type_defs.md#startprojectsessionresponsetypedef).
 
 ### stop_job_run
 
@@ -783,15 +794,14 @@ Boto3 documentation:
 [GlueDataBrew.Client.stop_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.stop_job_run)
 
 Arguments mapping described in
-[StopJobRunRequestTypeDef](./type_defs.md#stopjobrunrequesttypedef).
+[StopJobRunRequestRequestTypeDef](./type_defs.md#stopjobrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `RunId`: `str` *(required)*
 
-Returns
-[StopJobRunResponseResponseTypeDef](./type_defs.md#stopjobrunresponseresponsetypedef).
+Returns [StopJobRunResponseTypeDef](./type_defs.md#stopjobrunresponsetypedef).
 
 ### tag_resource
 
@@ -804,7 +814,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -823,7 +833,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -842,7 +852,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.update_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_dataset)
 
 Arguments mapping described in
-[UpdateDatasetRequestTypeDef](./type_defs.md#updatedatasetrequesttypedef).
+[UpdateDatasetRequestRequestTypeDef](./type_defs.md#updatedatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -853,7 +863,7 @@ Keyword-only arguments:
 - `PathOptions`: [PathOptionsTypeDef](./type_defs.md#pathoptionstypedef)
 
 Returns
-[UpdateDatasetResponseResponseTypeDef](./type_defs.md#updatedatasetresponseresponsetypedef).
+[UpdateDatasetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef).
 
 ### update_profile_job
 
@@ -865,7 +875,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.update_profile_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_profile_job)
 
 Arguments mapping described in
-[UpdateProfileJobRequestTypeDef](./type_defs.md#updateprofilejobrequesttypedef).
+[UpdateProfileJobRequestRequestTypeDef](./type_defs.md#updateprofilejobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -882,7 +892,7 @@ Keyword-only arguments:
 - `JobSample`: [JobSampleTypeDef](./type_defs.md#jobsampletypedef)
 
 Returns
-[UpdateProfileJobResponseResponseTypeDef](./type_defs.md#updateprofilejobresponseresponsetypedef).
+[UpdateProfileJobResponseTypeDef](./type_defs.md#updateprofilejobresponsetypedef).
 
 ### update_project
 
@@ -894,7 +904,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_project)
 
 Arguments mapping described in
-[UpdateProjectRequestTypeDef](./type_defs.md#updateprojectrequesttypedef).
+[UpdateProjectRequestRequestTypeDef](./type_defs.md#updateprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -903,7 +913,7 @@ Keyword-only arguments:
 - `Sample`: [SampleTypeDef](./type_defs.md#sampletypedef)
 
 Returns
-[UpdateProjectResponseResponseTypeDef](./type_defs.md#updateprojectresponseresponsetypedef).
+[UpdateProjectResponseTypeDef](./type_defs.md#updateprojectresponsetypedef).
 
 ### update_recipe
 
@@ -915,7 +925,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.update_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_recipe)
 
 Arguments mapping described in
-[UpdateRecipeRequestTypeDef](./type_defs.md#updatereciperequesttypedef).
+[UpdateRecipeRequestRequestTypeDef](./type_defs.md#updatereciperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -924,7 +934,7 @@ Keyword-only arguments:
 - `Steps`: `List`\[[RecipeStepTypeDef](./type_defs.md#recipesteptypedef)\]
 
 Returns
-[UpdateRecipeResponseResponseTypeDef](./type_defs.md#updatereciperesponseresponsetypedef).
+[UpdateRecipeResponseTypeDef](./type_defs.md#updatereciperesponsetypedef).
 
 ### update_recipe_job
 
@@ -936,23 +946,24 @@ Boto3 documentation:
 [GlueDataBrew.Client.update_recipe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_recipe_job)
 
 Arguments mapping described in
-[UpdateRecipeJobRequestTypeDef](./type_defs.md#updaterecipejobrequesttypedef).
+[UpdateRecipeJobRequestRequestTypeDef](./type_defs.md#updaterecipejobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
-- `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
-  *(required)*
 - `RoleArn`: `str` *(required)*
 - `EncryptionKeyArn`: `str`
 - `EncryptionMode`: [EncryptionModeType](./literals.md#encryptionmodetype)
 - `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
 - `MaxCapacity`: `int`
 - `MaxRetries`: `int`
+- `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
+- `DataCatalogOutputs`:
+  `List`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
 - `Timeout`: `int`
 
 Returns
-[UpdateRecipeJobResponseResponseTypeDef](./type_defs.md#updaterecipejobresponseresponsetypedef).
+[UpdateRecipeJobResponseTypeDef](./type_defs.md#updaterecipejobresponsetypedef).
 
 ### update_schedule
 
@@ -964,7 +975,7 @@ Boto3 documentation:
 [GlueDataBrew.Client.update_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_schedule)
 
 Arguments mapping described in
-[UpdateScheduleRequestTypeDef](./type_defs.md#updateschedulerequesttypedef).
+[UpdateScheduleRequestRequestTypeDef](./type_defs.md#updateschedulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -973,7 +984,7 @@ Keyword-only arguments:
 - `JobNames`: `List`\[`str`\]
 
 Returns
-[UpdateScheduleResponseResponseTypeDef](./type_defs.md#updatescheduleresponseresponsetypedef).
+[UpdateScheduleResponseTypeDef](./type_defs.md#updatescheduleresponsetypedef).
 
 ### get_paginator
 

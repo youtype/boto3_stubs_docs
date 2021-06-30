@@ -11,6 +11,7 @@ type annotations stubs module
   - [AppSyncClient](#appsyncclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_api_cache](#create_api_cache)
     - [create_api_key](#create_api_key)
@@ -101,6 +102,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+AppSyncClient exceptions.
+
+Type annotations for `boto3.client("appsync").exceptions` method.
+
+Boto3 documentation:
+[AppSync.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -126,7 +138,7 @@ Boto3 documentation:
 [AppSync.Client.create_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_api_cache)
 
 Arguments mapping described in
-[CreateApiCacheRequestTypeDef](./type_defs.md#createapicacherequesttypedef).
+[CreateApiCacheRequestRequestTypeDef](./type_defs.md#createapicacherequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -139,7 +151,7 @@ Keyword-only arguments:
 - `atRestEncryptionEnabled`: `bool`
 
 Returns
-[CreateApiCacheResponseResponseTypeDef](./type_defs.md#createapicacheresponseresponsetypedef).
+[CreateApiCacheResponseTypeDef](./type_defs.md#createapicacheresponsetypedef).
 
 ### create_api_key
 
@@ -152,7 +164,7 @@ Boto3 documentation:
 [AppSync.Client.create_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_api_key)
 
 Arguments mapping described in
-[CreateApiKeyRequestTypeDef](./type_defs.md#createapikeyrequesttypedef).
+[CreateApiKeyRequestRequestTypeDef](./type_defs.md#createapikeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -161,7 +173,7 @@ Keyword-only arguments:
 - `expires`: `int`
 
 Returns
-[CreateApiKeyResponseResponseTypeDef](./type_defs.md#createapikeyresponseresponsetypedef).
+[CreateApiKeyResponseTypeDef](./type_defs.md#createapikeyresponsetypedef).
 
 ### create_data_source
 
@@ -173,7 +185,7 @@ Boto3 documentation:
 [AppSync.Client.create_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_data_source)
 
 Arguments mapping described in
-[CreateDataSourceRequestTypeDef](./type_defs.md#createdatasourcerequesttypedef).
+[CreateDataSourceRequestRequestTypeDef](./type_defs.md#createdatasourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -194,7 +206,7 @@ Keyword-only arguments:
   [RelationalDatabaseDataSourceConfigTypeDef](./type_defs.md#relationaldatabasedatasourceconfigtypedef)
 
 Returns
-[CreateDataSourceResponseResponseTypeDef](./type_defs.md#createdatasourceresponseresponsetypedef).
+[CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef).
 
 ### create_function
 
@@ -206,7 +218,7 @@ Boto3 documentation:
 [AppSync.Client.create_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_function)
 
 Arguments mapping described in
-[CreateFunctionRequestTypeDef](./type_defs.md#createfunctionrequesttypedef).
+[CreateFunctionRequestRequestTypeDef](./type_defs.md#createfunctionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -220,7 +232,7 @@ Keyword-only arguments:
 - `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
 
 Returns
-[CreateFunctionResponseResponseTypeDef](./type_defs.md#createfunctionresponseresponsetypedef).
+[CreateFunctionResponseTypeDef](./type_defs.md#createfunctionresponsetypedef).
 
 ### create_graphql_api
 
@@ -232,7 +244,7 @@ Boto3 documentation:
 [AppSync.Client.create_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_graphql_api)
 
 Arguments mapping described in
-[CreateGraphqlApiRequestTypeDef](./type_defs.md#creategraphqlapirequesttypedef).
+[CreateGraphqlApiRequestRequestTypeDef](./type_defs.md#creategraphqlapirequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -250,7 +262,7 @@ Keyword-only arguments:
 - `xrayEnabled`: `bool`
 
 Returns
-[CreateGraphqlApiResponseResponseTypeDef](./type_defs.md#creategraphqlapiresponseresponsetypedef).
+[CreateGraphqlApiResponseTypeDef](./type_defs.md#creategraphqlapiresponsetypedef).
 
 ### create_resolver
 
@@ -262,7 +274,7 @@ Boto3 documentation:
 [AppSync.Client.create_resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_resolver)
 
 Arguments mapping described in
-[CreateResolverRequestTypeDef](./type_defs.md#createresolverrequesttypedef).
+[CreateResolverRequestRequestTypeDef](./type_defs.md#createresolverrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -279,7 +291,7 @@ Keyword-only arguments:
 - `cachingConfig`: [CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef)
 
 Returns
-[CreateResolverResponseResponseTypeDef](./type_defs.md#createresolverresponseresponsetypedef).
+[CreateResolverResponseTypeDef](./type_defs.md#createresolverresponsetypedef).
 
 ### create_type
 
@@ -291,7 +303,7 @@ Boto3 documentation:
 [AppSync.Client.create_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_type)
 
 Arguments mapping described in
-[CreateTypeRequestTypeDef](./type_defs.md#createtyperequesttypedef).
+[CreateTypeRequestRequestTypeDef](./type_defs.md#createtyperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -300,8 +312,7 @@ Keyword-only arguments:
 - `format`: [TypeDefinitionFormatType](./literals.md#typedefinitionformattype)
   *(required)*
 
-Returns
-[CreateTypeResponseResponseTypeDef](./type_defs.md#createtyperesponseresponsetypedef).
+Returns [CreateTypeResponseTypeDef](./type_defs.md#createtyperesponsetypedef).
 
 ### delete_api_cache
 
@@ -313,7 +324,7 @@ Boto3 documentation:
 [AppSync.Client.delete_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_api_cache)
 
 Arguments mapping described in
-[DeleteApiCacheRequestTypeDef](./type_defs.md#deleteapicacherequesttypedef).
+[DeleteApiCacheRequestRequestTypeDef](./type_defs.md#deleteapicacherequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -331,7 +342,7 @@ Boto3 documentation:
 [AppSync.Client.delete_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_api_key)
 
 Arguments mapping described in
-[DeleteApiKeyRequestTypeDef](./type_defs.md#deleteapikeyrequesttypedef).
+[DeleteApiKeyRequestRequestTypeDef](./type_defs.md#deleteapikeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -350,7 +361,7 @@ Boto3 documentation:
 [AppSync.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_data_source)
 
 Arguments mapping described in
-[DeleteDataSourceRequestTypeDef](./type_defs.md#deletedatasourcerequesttypedef).
+[DeleteDataSourceRequestRequestTypeDef](./type_defs.md#deletedatasourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -369,7 +380,7 @@ Boto3 documentation:
 [AppSync.Client.delete_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_function)
 
 Arguments mapping described in
-[DeleteFunctionRequestTypeDef](./type_defs.md#deletefunctionrequesttypedef).
+[DeleteFunctionRequestRequestTypeDef](./type_defs.md#deletefunctionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -388,7 +399,7 @@ Boto3 documentation:
 [AppSync.Client.delete_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_graphql_api)
 
 Arguments mapping described in
-[DeleteGraphqlApiRequestTypeDef](./type_defs.md#deletegraphqlapirequesttypedef).
+[DeleteGraphqlApiRequestRequestTypeDef](./type_defs.md#deletegraphqlapirequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -406,7 +417,7 @@ Boto3 documentation:
 [AppSync.Client.delete_resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_resolver)
 
 Arguments mapping described in
-[DeleteResolverRequestTypeDef](./type_defs.md#deleteresolverrequesttypedef).
+[DeleteResolverRequestRequestTypeDef](./type_defs.md#deleteresolverrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -426,7 +437,7 @@ Boto3 documentation:
 [AppSync.Client.delete_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_type)
 
 Arguments mapping described in
-[DeleteTypeRequestTypeDef](./type_defs.md#deletetyperequesttypedef).
+[DeleteTypeRequestRequestTypeDef](./type_defs.md#deletetyperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -445,7 +456,7 @@ Boto3 documentation:
 [AppSync.Client.flush_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.flush_api_cache)
 
 Arguments mapping described in
-[FlushApiCacheRequestTypeDef](./type_defs.md#flushapicacherequesttypedef).
+[FlushApiCacheRequestRequestTypeDef](./type_defs.md#flushapicacherequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -481,14 +492,14 @@ Boto3 documentation:
 [AppSync.Client.get_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_api_cache)
 
 Arguments mapping described in
-[GetApiCacheRequestTypeDef](./type_defs.md#getapicacherequesttypedef).
+[GetApiCacheRequestRequestTypeDef](./type_defs.md#getapicacherequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 
 Returns
-[GetApiCacheResponseResponseTypeDef](./type_defs.md#getapicacheresponseresponsetypedef).
+[GetApiCacheResponseTypeDef](./type_defs.md#getapicacheresponsetypedef).
 
 ### get_data_source
 
@@ -500,7 +511,7 @@ Boto3 documentation:
 [AppSync.Client.get_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_data_source)
 
 Arguments mapping described in
-[GetDataSourceRequestTypeDef](./type_defs.md#getdatasourcerequesttypedef).
+[GetDataSourceRequestRequestTypeDef](./type_defs.md#getdatasourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -508,7 +519,7 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 
 Returns
-[GetDataSourceResponseResponseTypeDef](./type_defs.md#getdatasourceresponseresponsetypedef).
+[GetDataSourceResponseTypeDef](./type_defs.md#getdatasourceresponsetypedef).
 
 ### get_function
 
@@ -520,7 +531,7 @@ Boto3 documentation:
 [AppSync.Client.get_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_function)
 
 Arguments mapping described in
-[GetFunctionRequestTypeDef](./type_defs.md#getfunctionrequesttypedef).
+[GetFunctionRequestRequestTypeDef](./type_defs.md#getfunctionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -528,7 +539,7 @@ Keyword-only arguments:
 - `functionId`: `str` *(required)*
 
 Returns
-[GetFunctionResponseResponseTypeDef](./type_defs.md#getfunctionresponseresponsetypedef).
+[GetFunctionResponseTypeDef](./type_defs.md#getfunctionresponsetypedef).
 
 ### get_graphql_api
 
@@ -540,14 +551,14 @@ Boto3 documentation:
 [AppSync.Client.get_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_graphql_api)
 
 Arguments mapping described in
-[GetGraphqlApiRequestTypeDef](./type_defs.md#getgraphqlapirequesttypedef).
+[GetGraphqlApiRequestRequestTypeDef](./type_defs.md#getgraphqlapirequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 
 Returns
-[GetGraphqlApiResponseResponseTypeDef](./type_defs.md#getgraphqlapiresponseresponsetypedef).
+[GetGraphqlApiResponseTypeDef](./type_defs.md#getgraphqlapiresponsetypedef).
 
 ### get_introspection_schema
 
@@ -559,7 +570,7 @@ Boto3 documentation:
 [AppSync.Client.get_introspection_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_introspection_schema)
 
 Arguments mapping described in
-[GetIntrospectionSchemaRequestTypeDef](./type_defs.md#getintrospectionschemarequesttypedef).
+[GetIntrospectionSchemaRequestRequestTypeDef](./type_defs.md#getintrospectionschemarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -568,7 +579,7 @@ Keyword-only arguments:
 - `includeDirectives`: `bool`
 
 Returns
-[GetIntrospectionSchemaResponseResponseTypeDef](./type_defs.md#getintrospectionschemaresponseresponsetypedef).
+[GetIntrospectionSchemaResponseTypeDef](./type_defs.md#getintrospectionschemaresponsetypedef).
 
 ### get_resolver
 
@@ -580,7 +591,7 @@ Boto3 documentation:
 [AppSync.Client.get_resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_resolver)
 
 Arguments mapping described in
-[GetResolverRequestTypeDef](./type_defs.md#getresolverrequesttypedef).
+[GetResolverRequestRequestTypeDef](./type_defs.md#getresolverrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -589,7 +600,7 @@ Keyword-only arguments:
 - `fieldName`: `str` *(required)*
 
 Returns
-[GetResolverResponseResponseTypeDef](./type_defs.md#getresolverresponseresponsetypedef).
+[GetResolverResponseTypeDef](./type_defs.md#getresolverresponsetypedef).
 
 ### get_schema_creation_status
 
@@ -602,14 +613,14 @@ Boto3 documentation:
 [AppSync.Client.get_schema_creation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_schema_creation_status)
 
 Arguments mapping described in
-[GetSchemaCreationStatusRequestTypeDef](./type_defs.md#getschemacreationstatusrequesttypedef).
+[GetSchemaCreationStatusRequestRequestTypeDef](./type_defs.md#getschemacreationstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 
 Returns
-[GetSchemaCreationStatusResponseResponseTypeDef](./type_defs.md#getschemacreationstatusresponseresponsetypedef).
+[GetSchemaCreationStatusResponseTypeDef](./type_defs.md#getschemacreationstatusresponsetypedef).
 
 ### get_type
 
@@ -621,7 +632,7 @@ Boto3 documentation:
 [AppSync.Client.get_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_type)
 
 Arguments mapping described in
-[GetTypeRequestTypeDef](./type_defs.md#gettyperequesttypedef).
+[GetTypeRequestRequestTypeDef](./type_defs.md#gettyperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -630,8 +641,7 @@ Keyword-only arguments:
 - `format`: [TypeDefinitionFormatType](./literals.md#typedefinitionformattype)
   *(required)*
 
-Returns
-[GetTypeResponseResponseTypeDef](./type_defs.md#gettyperesponseresponsetypedef).
+Returns [GetTypeResponseTypeDef](./type_defs.md#gettyperesponsetypedef).
 
 ### list_api_keys
 
@@ -643,7 +653,7 @@ Boto3 documentation:
 [AppSync.Client.list_api_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_api_keys)
 
 Arguments mapping described in
-[ListApiKeysRequestTypeDef](./type_defs.md#listapikeysrequesttypedef).
+[ListApiKeysRequestRequestTypeDef](./type_defs.md#listapikeysrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -652,7 +662,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListApiKeysResponseResponseTypeDef](./type_defs.md#listapikeysresponseresponsetypedef).
+[ListApiKeysResponseTypeDef](./type_defs.md#listapikeysresponsetypedef).
 
 ### list_data_sources
 
@@ -664,7 +674,7 @@ Boto3 documentation:
 [AppSync.Client.list_data_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_data_sources)
 
 Arguments mapping described in
-[ListDataSourcesRequestTypeDef](./type_defs.md#listdatasourcesrequesttypedef).
+[ListDataSourcesRequestRequestTypeDef](./type_defs.md#listdatasourcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -673,7 +683,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDataSourcesResponseResponseTypeDef](./type_defs.md#listdatasourcesresponseresponsetypedef).
+[ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef).
 
 ### list_functions
 
@@ -685,7 +695,7 @@ Boto3 documentation:
 [AppSync.Client.list_functions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_functions)
 
 Arguments mapping described in
-[ListFunctionsRequestTypeDef](./type_defs.md#listfunctionsrequesttypedef).
+[ListFunctionsRequestRequestTypeDef](./type_defs.md#listfunctionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -694,7 +704,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListFunctionsResponseResponseTypeDef](./type_defs.md#listfunctionsresponseresponsetypedef).
+[ListFunctionsResponseTypeDef](./type_defs.md#listfunctionsresponsetypedef).
 
 ### list_graphql_apis
 
@@ -706,7 +716,7 @@ Boto3 documentation:
 [AppSync.Client.list_graphql_apis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_graphql_apis)
 
 Arguments mapping described in
-[ListGraphqlApisRequestTypeDef](./type_defs.md#listgraphqlapisrequesttypedef).
+[ListGraphqlApisRequestRequestTypeDef](./type_defs.md#listgraphqlapisrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -714,7 +724,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListGraphqlApisResponseResponseTypeDef](./type_defs.md#listgraphqlapisresponseresponsetypedef).
+[ListGraphqlApisResponseTypeDef](./type_defs.md#listgraphqlapisresponsetypedef).
 
 ### list_resolvers
 
@@ -726,7 +736,7 @@ Boto3 documentation:
 [AppSync.Client.list_resolvers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_resolvers)
 
 Arguments mapping described in
-[ListResolversRequestTypeDef](./type_defs.md#listresolversrequesttypedef).
+[ListResolversRequestRequestTypeDef](./type_defs.md#listresolversrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -736,7 +746,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListResolversResponseResponseTypeDef](./type_defs.md#listresolversresponseresponsetypedef).
+[ListResolversResponseTypeDef](./type_defs.md#listresolversresponsetypedef).
 
 ### list_resolvers_by_function
 
@@ -749,7 +759,7 @@ Boto3 documentation:
 [AppSync.Client.list_resolvers_by_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_resolvers_by_function)
 
 Arguments mapping described in
-[ListResolversByFunctionRequestTypeDef](./type_defs.md#listresolversbyfunctionrequesttypedef).
+[ListResolversByFunctionRequestRequestTypeDef](./type_defs.md#listresolversbyfunctionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -759,7 +769,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListResolversByFunctionResponseResponseTypeDef](./type_defs.md#listresolversbyfunctionresponseresponsetypedef).
+[ListResolversByFunctionResponseTypeDef](./type_defs.md#listresolversbyfunctionresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -771,14 +781,14 @@ Boto3 documentation:
 [AppSync.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_types
 
@@ -790,7 +800,7 @@ Boto3 documentation:
 [AppSync.Client.list_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_types)
 
 Arguments mapping described in
-[ListTypesRequestTypeDef](./type_defs.md#listtypesrequesttypedef).
+[ListTypesRequestRequestTypeDef](./type_defs.md#listtypesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -800,8 +810,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns
-[ListTypesResponseResponseTypeDef](./type_defs.md#listtypesresponseresponsetypedef).
+Returns [ListTypesResponseTypeDef](./type_defs.md#listtypesresponsetypedef).
 
 ### start_schema_creation
 
@@ -813,7 +822,7 @@ Boto3 documentation:
 [AppSync.Client.start_schema_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.start_schema_creation)
 
 Arguments mapping described in
-[StartSchemaCreationRequestTypeDef](./type_defs.md#startschemacreationrequesttypedef).
+[StartSchemaCreationRequestRequestTypeDef](./type_defs.md#startschemacreationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -822,7 +831,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[StartSchemaCreationResponseResponseTypeDef](./type_defs.md#startschemacreationresponseresponsetypedef).
+[StartSchemaCreationResponseTypeDef](./type_defs.md#startschemacreationresponsetypedef).
 
 ### tag_resource
 
@@ -834,7 +843,7 @@ Boto3 documentation:
 [AppSync.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -853,7 +862,7 @@ Boto3 documentation:
 [AppSync.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -872,7 +881,7 @@ Boto3 documentation:
 [AppSync.Client.update_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_api_cache)
 
 Arguments mapping described in
-[UpdateApiCacheRequestTypeDef](./type_defs.md#updateapicacherequesttypedef).
+[UpdateApiCacheRequestRequestTypeDef](./type_defs.md#updateapicacherequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -883,7 +892,7 @@ Keyword-only arguments:
 - `type`: [ApiCacheTypeType](./literals.md#apicachetypetype) *(required)*
 
 Returns
-[UpdateApiCacheResponseResponseTypeDef](./type_defs.md#updateapicacheresponseresponsetypedef).
+[UpdateApiCacheResponseTypeDef](./type_defs.md#updateapicacheresponsetypedef).
 
 ### update_api_key
 
@@ -895,7 +904,7 @@ Boto3 documentation:
 [AppSync.Client.update_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_api_key)
 
 Arguments mapping described in
-[UpdateApiKeyRequestTypeDef](./type_defs.md#updateapikeyrequesttypedef).
+[UpdateApiKeyRequestRequestTypeDef](./type_defs.md#updateapikeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -905,7 +914,7 @@ Keyword-only arguments:
 - `expires`: `int`
 
 Returns
-[UpdateApiKeyResponseResponseTypeDef](./type_defs.md#updateapikeyresponseresponsetypedef).
+[UpdateApiKeyResponseTypeDef](./type_defs.md#updateapikeyresponsetypedef).
 
 ### update_data_source
 
@@ -917,7 +926,7 @@ Boto3 documentation:
 [AppSync.Client.update_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_data_source)
 
 Arguments mapping described in
-[UpdateDataSourceRequestTypeDef](./type_defs.md#updatedatasourcerequesttypedef).
+[UpdateDataSourceRequestRequestTypeDef](./type_defs.md#updatedatasourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -938,7 +947,7 @@ Keyword-only arguments:
   [RelationalDatabaseDataSourceConfigTypeDef](./type_defs.md#relationaldatabasedatasourceconfigtypedef)
 
 Returns
-[UpdateDataSourceResponseResponseTypeDef](./type_defs.md#updatedatasourceresponseresponsetypedef).
+[UpdateDataSourceResponseTypeDef](./type_defs.md#updatedatasourceresponsetypedef).
 
 ### update_function
 
@@ -950,7 +959,7 @@ Boto3 documentation:
 [AppSync.Client.update_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_function)
 
 Arguments mapping described in
-[UpdateFunctionRequestTypeDef](./type_defs.md#updatefunctionrequesttypedef).
+[UpdateFunctionRequestRequestTypeDef](./type_defs.md#updatefunctionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -965,7 +974,7 @@ Keyword-only arguments:
 - `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
 
 Returns
-[UpdateFunctionResponseResponseTypeDef](./type_defs.md#updatefunctionresponseresponsetypedef).
+[UpdateFunctionResponseTypeDef](./type_defs.md#updatefunctionresponsetypedef).
 
 ### update_graphql_api
 
@@ -977,7 +986,7 @@ Boto3 documentation:
 [AppSync.Client.update_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_graphql_api)
 
 Arguments mapping described in
-[UpdateGraphqlApiRequestTypeDef](./type_defs.md#updategraphqlapirequesttypedef).
+[UpdateGraphqlApiRequestRequestTypeDef](./type_defs.md#updategraphqlapirequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -995,7 +1004,7 @@ Keyword-only arguments:
 - `xrayEnabled`: `bool`
 
 Returns
-[UpdateGraphqlApiResponseResponseTypeDef](./type_defs.md#updategraphqlapiresponseresponsetypedef).
+[UpdateGraphqlApiResponseTypeDef](./type_defs.md#updategraphqlapiresponsetypedef).
 
 ### update_resolver
 
@@ -1007,7 +1016,7 @@ Boto3 documentation:
 [AppSync.Client.update_resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_resolver)
 
 Arguments mapping described in
-[UpdateResolverRequestTypeDef](./type_defs.md#updateresolverrequesttypedef).
+[UpdateResolverRequestRequestTypeDef](./type_defs.md#updateresolverrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1024,7 +1033,7 @@ Keyword-only arguments:
 - `cachingConfig`: [CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef)
 
 Returns
-[UpdateResolverResponseResponseTypeDef](./type_defs.md#updateresolverresponseresponsetypedef).
+[UpdateResolverResponseTypeDef](./type_defs.md#updateresolverresponsetypedef).
 
 ### update_type
 
@@ -1036,7 +1045,7 @@ Boto3 documentation:
 [AppSync.Client.update_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_type)
 
 Arguments mapping described in
-[UpdateTypeRequestTypeDef](./type_defs.md#updatetyperequesttypedef).
+[UpdateTypeRequestRequestTypeDef](./type_defs.md#updatetyperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1046,8 +1055,7 @@ Keyword-only arguments:
   *(required)*
 - `definition`: `str`
 
-Returns
-[UpdateTypeResponseResponseTypeDef](./type_defs.md#updatetyperesponseresponsetypedef).
+Returns [UpdateTypeResponseTypeDef](./type_defs.md#updatetyperesponsetypedef).
 
 ### get_paginator
 

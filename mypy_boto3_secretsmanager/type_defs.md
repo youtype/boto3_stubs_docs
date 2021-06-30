@@ -8,73 +8,73 @@ type annotations stubs module
 [mypy_boto3_secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
 
 - [Typed dictionaries for boto3 SecretsManager module](#typed-dictionaries-for-boto3-secretsmanager-module)
-  - [CancelRotateSecretRequestTypeDef](#cancelrotatesecretrequesttypedef)
-  - [CancelRotateSecretResponseResponseTypeDef](#cancelrotatesecretresponseresponsetypedef)
-  - [CreateSecretRequestTypeDef](#createsecretrequesttypedef)
-  - [CreateSecretResponseResponseTypeDef](#createsecretresponseresponsetypedef)
-  - [DeleteResourcePolicyRequestTypeDef](#deleteresourcepolicyrequesttypedef)
-  - [DeleteResourcePolicyResponseResponseTypeDef](#deleteresourcepolicyresponseresponsetypedef)
-  - [DeleteSecretRequestTypeDef](#deletesecretrequesttypedef)
-  - [DeleteSecretResponseResponseTypeDef](#deletesecretresponseresponsetypedef)
-  - [DescribeSecretRequestTypeDef](#describesecretrequesttypedef)
-  - [DescribeSecretResponseResponseTypeDef](#describesecretresponseresponsetypedef)
+  - [CancelRotateSecretRequestRequestTypeDef](#cancelrotatesecretrequestrequesttypedef)
+  - [CancelRotateSecretResponseTypeDef](#cancelrotatesecretresponsetypedef)
+  - [CreateSecretRequestRequestTypeDef](#createsecretrequestrequesttypedef)
+  - [CreateSecretResponseTypeDef](#createsecretresponsetypedef)
+  - [DeleteResourcePolicyRequestRequestTypeDef](#deleteresourcepolicyrequestrequesttypedef)
+  - [DeleteResourcePolicyResponseTypeDef](#deleteresourcepolicyresponsetypedef)
+  - [DeleteSecretRequestRequestTypeDef](#deletesecretrequestrequesttypedef)
+  - [DeleteSecretResponseTypeDef](#deletesecretresponsetypedef)
+  - [DescribeSecretRequestRequestTypeDef](#describesecretrequestrequesttypedef)
+  - [DescribeSecretResponseTypeDef](#describesecretresponsetypedef)
   - [FilterTypeDef](#filtertypedef)
-  - [GetRandomPasswordRequestTypeDef](#getrandompasswordrequesttypedef)
-  - [GetRandomPasswordResponseResponseTypeDef](#getrandompasswordresponseresponsetypedef)
-  - [GetResourcePolicyRequestTypeDef](#getresourcepolicyrequesttypedef)
-  - [GetResourcePolicyResponseResponseTypeDef](#getresourcepolicyresponseresponsetypedef)
-  - [GetSecretValueRequestTypeDef](#getsecretvaluerequesttypedef)
-  - [GetSecretValueResponseResponseTypeDef](#getsecretvalueresponseresponsetypedef)
-  - [ListSecretVersionIdsRequestTypeDef](#listsecretversionidsrequesttypedef)
-  - [ListSecretVersionIdsResponseResponseTypeDef](#listsecretversionidsresponseresponsetypedef)
-  - [ListSecretsRequestTypeDef](#listsecretsrequesttypedef)
-  - [ListSecretsResponseResponseTypeDef](#listsecretsresponseresponsetypedef)
+  - [GetRandomPasswordRequestRequestTypeDef](#getrandompasswordrequestrequesttypedef)
+  - [GetRandomPasswordResponseTypeDef](#getrandompasswordresponsetypedef)
+  - [GetResourcePolicyRequestRequestTypeDef](#getresourcepolicyrequestrequesttypedef)
+  - [GetResourcePolicyResponseTypeDef](#getresourcepolicyresponsetypedef)
+  - [GetSecretValueRequestRequestTypeDef](#getsecretvaluerequestrequesttypedef)
+  - [GetSecretValueResponseTypeDef](#getsecretvalueresponsetypedef)
+  - [ListSecretVersionIdsRequestRequestTypeDef](#listsecretversionidsrequestrequesttypedef)
+  - [ListSecretVersionIdsResponseTypeDef](#listsecretversionidsresponsetypedef)
+  - [ListSecretsRequestRequestTypeDef](#listsecretsrequestrequesttypedef)
+  - [ListSecretsResponseTypeDef](#listsecretsresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutResourcePolicyRequestTypeDef](#putresourcepolicyrequesttypedef)
-  - [PutResourcePolicyResponseResponseTypeDef](#putresourcepolicyresponseresponsetypedef)
-  - [PutSecretValueRequestTypeDef](#putsecretvaluerequesttypedef)
-  - [PutSecretValueResponseResponseTypeDef](#putsecretvalueresponseresponsetypedef)
-  - [RemoveRegionsFromReplicationRequestTypeDef](#removeregionsfromreplicationrequesttypedef)
-  - [RemoveRegionsFromReplicationResponseResponseTypeDef](#removeregionsfromreplicationresponseresponsetypedef)
+  - [PutResourcePolicyRequestRequestTypeDef](#putresourcepolicyrequestrequesttypedef)
+  - [PutResourcePolicyResponseTypeDef](#putresourcepolicyresponsetypedef)
+  - [PutSecretValueRequestRequestTypeDef](#putsecretvaluerequestrequesttypedef)
+  - [PutSecretValueResponseTypeDef](#putsecretvalueresponsetypedef)
+  - [RemoveRegionsFromReplicationRequestRequestTypeDef](#removeregionsfromreplicationrequestrequesttypedef)
+  - [RemoveRegionsFromReplicationResponseTypeDef](#removeregionsfromreplicationresponsetypedef)
   - [ReplicaRegionTypeTypeDef](#replicaregiontypetypedef)
-  - [ReplicateSecretToRegionsRequestTypeDef](#replicatesecrettoregionsrequesttypedef)
-  - [ReplicateSecretToRegionsResponseResponseTypeDef](#replicatesecrettoregionsresponseresponsetypedef)
+  - [ReplicateSecretToRegionsRequestRequestTypeDef](#replicatesecrettoregionsrequestrequesttypedef)
+  - [ReplicateSecretToRegionsResponseTypeDef](#replicatesecrettoregionsresponsetypedef)
   - [ReplicationStatusTypeTypeDef](#replicationstatustypetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestoreSecretRequestTypeDef](#restoresecretrequesttypedef)
-  - [RestoreSecretResponseResponseTypeDef](#restoresecretresponseresponsetypedef)
-  - [RotateSecretRequestTypeDef](#rotatesecretrequesttypedef)
-  - [RotateSecretResponseResponseTypeDef](#rotatesecretresponseresponsetypedef)
+  - [RestoreSecretRequestRequestTypeDef](#restoresecretrequestrequesttypedef)
+  - [RestoreSecretResponseTypeDef](#restoresecretresponsetypedef)
+  - [RotateSecretRequestRequestTypeDef](#rotatesecretrequestrequesttypedef)
+  - [RotateSecretResponseTypeDef](#rotatesecretresponsetypedef)
   - [RotationRulesTypeTypeDef](#rotationrulestypetypedef)
   - [SecretListEntryTypeDef](#secretlistentrytypedef)
   - [SecretVersionsListEntryTypeDef](#secretversionslistentrytypedef)
-  - [StopReplicationToReplicaRequestTypeDef](#stopreplicationtoreplicarequesttypedef)
-  - [StopReplicationToReplicaResponseResponseTypeDef](#stopreplicationtoreplicaresponseresponsetypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [StopReplicationToReplicaRequestRequestTypeDef](#stopreplicationtoreplicarequestrequesttypedef)
+  - [StopReplicationToReplicaResponseTypeDef](#stopreplicationtoreplicaresponsetypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateSecretRequestTypeDef](#updatesecretrequesttypedef)
-  - [UpdateSecretResponseResponseTypeDef](#updatesecretresponseresponsetypedef)
-  - [UpdateSecretVersionStageRequestTypeDef](#updatesecretversionstagerequesttypedef)
-  - [UpdateSecretVersionStageResponseResponseTypeDef](#updatesecretversionstageresponseresponsetypedef)
-  - [ValidateResourcePolicyRequestTypeDef](#validateresourcepolicyrequesttypedef)
-  - [ValidateResourcePolicyResponseResponseTypeDef](#validateresourcepolicyresponseresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateSecretRequestRequestTypeDef](#updatesecretrequestrequesttypedef)
+  - [UpdateSecretResponseTypeDef](#updatesecretresponsetypedef)
+  - [UpdateSecretVersionStageRequestRequestTypeDef](#updatesecretversionstagerequestrequesttypedef)
+  - [UpdateSecretVersionStageResponseTypeDef](#updatesecretversionstageresponsetypedef)
+  - [ValidateResourcePolicyRequestRequestTypeDef](#validateresourcepolicyrequestrequesttypedef)
+  - [ValidateResourcePolicyResponseTypeDef](#validateresourcepolicyresponsetypedef)
   - [ValidationErrorsEntryTypeDef](#validationerrorsentrytypedef)
 
-## CancelRotateSecretRequestTypeDef
+## CancelRotateSecretRequestRequestTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import CancelRotateSecretRequestTypeDef
+from mypy_boto3_secretsmanager.type_defs import CancelRotateSecretRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `SecretId`: `str`
 
-## CancelRotateSecretResponseResponseTypeDef
+## CancelRotateSecretResponseTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import CancelRotateSecretResponseResponseTypeDef
+from mypy_boto3_secretsmanager.type_defs import CancelRotateSecretResponseTypeDef
 ```
 
 Required fields:
@@ -85,10 +85,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSecretRequestTypeDef
+## CreateSecretRequestRequestTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import CreateSecretRequestTypeDef
+from mypy_boto3_secretsmanager.type_defs import CreateSecretRequestRequestTypeDef
 ```
 
 Required fields:
@@ -107,10 +107,10 @@ Optional fields:
   `List`\[[ReplicaRegionTypeTypeDef](./type_defs.md#replicaregiontypetypedef)\]
 - `ForceOverwriteReplicaSecret`: `bool`
 
-## CreateSecretResponseResponseTypeDef
+## CreateSecretResponseTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import CreateSecretResponseResponseTypeDef
+from mypy_boto3_secretsmanager.type_defs import CreateSecretResponseTypeDef
 ```
 
 Required fields:
@@ -123,20 +123,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteResourcePolicyRequestTypeDef
+## DeleteResourcePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import DeleteResourcePolicyRequestTypeDef
+from mypy_boto3_secretsmanager.type_defs import DeleteResourcePolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `SecretId`: `str`
 
-## DeleteResourcePolicyResponseResponseTypeDef
+## DeleteResourcePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import DeleteResourcePolicyResponseResponseTypeDef
+from mypy_boto3_secretsmanager.type_defs import DeleteResourcePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -146,10 +146,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteSecretRequestTypeDef
+## DeleteSecretRequestRequestTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import DeleteSecretRequestTypeDef
+from mypy_boto3_secretsmanager.type_defs import DeleteSecretRequestRequestTypeDef
 ```
 
 Required fields:
@@ -161,10 +161,10 @@ Optional fields:
 - `RecoveryWindowInDays`: `int`
 - `ForceDeleteWithoutRecovery`: `bool`
 
-## DeleteSecretResponseResponseTypeDef
+## DeleteSecretResponseTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import DeleteSecretResponseResponseTypeDef
+from mypy_boto3_secretsmanager.type_defs import DeleteSecretResponseTypeDef
 ```
 
 Required fields:
@@ -175,20 +175,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSecretRequestTypeDef
+## DescribeSecretRequestRequestTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import DescribeSecretRequestTypeDef
+from mypy_boto3_secretsmanager.type_defs import DescribeSecretRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `SecretId`: `str`
 
-## DescribeSecretResponseResponseTypeDef
+## DescribeSecretResponseTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import DescribeSecretResponseResponseTypeDef
+from mypy_boto3_secretsmanager.type_defs import DescribeSecretResponseTypeDef
 ```
 
 Required fields:
@@ -226,10 +226,10 @@ Optional fields:
 - `Key`: [FilterNameStringTypeType](./literals.md#filternamestringtypetype)
 - `Values`: `List`\[`str`\]
 
-## GetRandomPasswordRequestTypeDef
+## GetRandomPasswordRequestRequestTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import GetRandomPasswordRequestTypeDef
+from mypy_boto3_secretsmanager.type_defs import GetRandomPasswordRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -243,10 +243,10 @@ Optional fields:
 - `IncludeSpace`: `bool`
 - `RequireEachIncludedType`: `bool`
 
-## GetRandomPasswordResponseResponseTypeDef
+## GetRandomPasswordResponseTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import GetRandomPasswordResponseResponseTypeDef
+from mypy_boto3_secretsmanager.type_defs import GetRandomPasswordResponseTypeDef
 ```
 
 Required fields:
@@ -255,20 +255,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResourcePolicyRequestTypeDef
+## GetResourcePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import GetResourcePolicyRequestTypeDef
+from mypy_boto3_secretsmanager.type_defs import GetResourcePolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `SecretId`: `str`
 
-## GetResourcePolicyResponseResponseTypeDef
+## GetResourcePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import GetResourcePolicyResponseResponseTypeDef
+from mypy_boto3_secretsmanager.type_defs import GetResourcePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -279,10 +279,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSecretValueRequestTypeDef
+## GetSecretValueRequestRequestTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import GetSecretValueRequestTypeDef
+from mypy_boto3_secretsmanager.type_defs import GetSecretValueRequestRequestTypeDef
 ```
 
 Required fields:
@@ -294,10 +294,10 @@ Optional fields:
 - `VersionId`: `str`
 - `VersionStage`: `str`
 
-## GetSecretValueResponseResponseTypeDef
+## GetSecretValueResponseTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import GetSecretValueResponseResponseTypeDef
+from mypy_boto3_secretsmanager.type_defs import GetSecretValueResponseTypeDef
 ```
 
 Required fields:
@@ -312,10 +312,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSecretVersionIdsRequestTypeDef
+## ListSecretVersionIdsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import ListSecretVersionIdsRequestTypeDef
+from mypy_boto3_secretsmanager.type_defs import ListSecretVersionIdsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -328,10 +328,10 @@ Optional fields:
 - `NextToken`: `str`
 - `IncludeDeprecated`: `bool`
 
-## ListSecretVersionIdsResponseResponseTypeDef
+## ListSecretVersionIdsResponseTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import ListSecretVersionIdsResponseResponseTypeDef
+from mypy_boto3_secretsmanager.type_defs import ListSecretVersionIdsResponseTypeDef
 ```
 
 Required fields:
@@ -344,10 +344,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSecretsRequestTypeDef
+## ListSecretsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import ListSecretsRequestTypeDef
+from mypy_boto3_secretsmanager.type_defs import ListSecretsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -357,10 +357,10 @@ Optional fields:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `SortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 
-## ListSecretsResponseResponseTypeDef
+## ListSecretsResponseTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import ListSecretsResponseResponseTypeDef
+from mypy_boto3_secretsmanager.type_defs import ListSecretsResponseTypeDef
 ```
 
 Required fields:
@@ -383,10 +383,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PutResourcePolicyRequestTypeDef
+## PutResourcePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import PutResourcePolicyRequestTypeDef
+from mypy_boto3_secretsmanager.type_defs import PutResourcePolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -398,10 +398,10 @@ Optional fields:
 
 - `BlockPublicPolicy`: `bool`
 
-## PutResourcePolicyResponseResponseTypeDef
+## PutResourcePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import PutResourcePolicyResponseResponseTypeDef
+from mypy_boto3_secretsmanager.type_defs import PutResourcePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -411,10 +411,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutSecretValueRequestTypeDef
+## PutSecretValueRequestRequestTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import PutSecretValueRequestTypeDef
+from mypy_boto3_secretsmanager.type_defs import PutSecretValueRequestRequestTypeDef
 ```
 
 Required fields:
@@ -428,10 +428,10 @@ Optional fields:
 - `SecretString`: `str`
 - `VersionStages`: `List`\[`str`\]
 
-## PutSecretValueResponseResponseTypeDef
+## PutSecretValueResponseTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import PutSecretValueResponseResponseTypeDef
+from mypy_boto3_secretsmanager.type_defs import PutSecretValueResponseTypeDef
 ```
 
 Required fields:
@@ -443,10 +443,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RemoveRegionsFromReplicationRequestTypeDef
+## RemoveRegionsFromReplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import RemoveRegionsFromReplicationRequestTypeDef
+from mypy_boto3_secretsmanager.type_defs import RemoveRegionsFromReplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -454,10 +454,10 @@ Required fields:
 - `SecretId`: `str`
 - `RemoveReplicaRegions`: `List`\[`str`\]
 
-## RemoveRegionsFromReplicationResponseResponseTypeDef
+## RemoveRegionsFromReplicationResponseTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import RemoveRegionsFromReplicationResponseResponseTypeDef
+from mypy_boto3_secretsmanager.type_defs import RemoveRegionsFromReplicationResponseTypeDef
 ```
 
 Required fields:
@@ -479,10 +479,10 @@ Optional fields:
 - `Region`: `str`
 - `KmsKeyId`: `str`
 
-## ReplicateSecretToRegionsRequestTypeDef
+## ReplicateSecretToRegionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import ReplicateSecretToRegionsRequestTypeDef
+from mypy_boto3_secretsmanager.type_defs import ReplicateSecretToRegionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -495,10 +495,10 @@ Optional fields:
 
 - `ForceOverwriteReplicaSecret`: `bool`
 
-## ReplicateSecretToRegionsResponseResponseTypeDef
+## ReplicateSecretToRegionsResponseTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import ReplicateSecretToRegionsResponseResponseTypeDef
+from mypy_boto3_secretsmanager.type_defs import ReplicateSecretToRegionsResponseTypeDef
 ```
 
 Required fields:
@@ -537,20 +537,20 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## RestoreSecretRequestTypeDef
+## RestoreSecretRequestRequestTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import RestoreSecretRequestTypeDef
+from mypy_boto3_secretsmanager.type_defs import RestoreSecretRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `SecretId`: `str`
 
-## RestoreSecretResponseResponseTypeDef
+## RestoreSecretResponseTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import RestoreSecretResponseResponseTypeDef
+from mypy_boto3_secretsmanager.type_defs import RestoreSecretResponseTypeDef
 ```
 
 Required fields:
@@ -560,10 +560,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RotateSecretRequestTypeDef
+## RotateSecretRequestRequestTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import RotateSecretRequestTypeDef
+from mypy_boto3_secretsmanager.type_defs import RotateSecretRequestRequestTypeDef
 ```
 
 Required fields:
@@ -577,10 +577,10 @@ Optional fields:
 - `RotationRules`:
   [RotationRulesTypeTypeDef](./type_defs.md#rotationrulestypetypedef)
 
-## RotateSecretResponseResponseTypeDef
+## RotateSecretResponseTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import RotateSecretResponseResponseTypeDef
+from mypy_boto3_secretsmanager.type_defs import RotateSecretResponseTypeDef
 ```
 
 Required fields:
@@ -640,20 +640,20 @@ Optional fields:
 - `LastAccessedDate`: `datetime`
 - `CreatedDate`: `datetime`
 
-## StopReplicationToReplicaRequestTypeDef
+## StopReplicationToReplicaRequestRequestTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import StopReplicationToReplicaRequestTypeDef
+from mypy_boto3_secretsmanager.type_defs import StopReplicationToReplicaRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `SecretId`: `str`
 
-## StopReplicationToReplicaResponseResponseTypeDef
+## StopReplicationToReplicaResponseTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import StopReplicationToReplicaResponseResponseTypeDef
+from mypy_boto3_secretsmanager.type_defs import StopReplicationToReplicaResponseTypeDef
 ```
 
 Required fields:
@@ -662,10 +662,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_secretsmanager.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -684,10 +684,10 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_secretsmanager.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -695,10 +695,10 @@ Required fields:
 - `SecretId`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateSecretRequestTypeDef
+## UpdateSecretRequestRequestTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import UpdateSecretRequestTypeDef
+from mypy_boto3_secretsmanager.type_defs import UpdateSecretRequestRequestTypeDef
 ```
 
 Required fields:
@@ -713,10 +713,10 @@ Optional fields:
 - `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `SecretString`: `str`
 
-## UpdateSecretResponseResponseTypeDef
+## UpdateSecretResponseTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import UpdateSecretResponseResponseTypeDef
+from mypy_boto3_secretsmanager.type_defs import UpdateSecretResponseTypeDef
 ```
 
 Required fields:
@@ -727,10 +727,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateSecretVersionStageRequestTypeDef
+## UpdateSecretVersionStageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import UpdateSecretVersionStageRequestTypeDef
+from mypy_boto3_secretsmanager.type_defs import UpdateSecretVersionStageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -743,10 +743,10 @@ Optional fields:
 - `RemoveFromVersionId`: `str`
 - `MoveToVersionId`: `str`
 
-## UpdateSecretVersionStageResponseResponseTypeDef
+## UpdateSecretVersionStageResponseTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import UpdateSecretVersionStageResponseResponseTypeDef
+from mypy_boto3_secretsmanager.type_defs import UpdateSecretVersionStageResponseTypeDef
 ```
 
 Required fields:
@@ -756,10 +756,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ValidateResourcePolicyRequestTypeDef
+## ValidateResourcePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import ValidateResourcePolicyRequestTypeDef
+from mypy_boto3_secretsmanager.type_defs import ValidateResourcePolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -770,10 +770,10 @@ Optional fields:
 
 - `SecretId`: `str`
 
-## ValidateResourcePolicyResponseResponseTypeDef
+## ValidateResourcePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_secretsmanager.type_defs import ValidateResourcePolicyResponseResponseTypeDef
+from mypy_boto3_secretsmanager.type_defs import ValidateResourcePolicyResponseTypeDef
 ```
 
 Required fields:

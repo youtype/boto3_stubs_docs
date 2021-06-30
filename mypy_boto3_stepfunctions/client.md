@@ -11,6 +11,7 @@ type annotations stubs module
   - [SFNClient](#sfnclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_activity](#create_activity)
     - [create_state_machine](#create_state_machine)
@@ -96,6 +97,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+SFNClient exceptions.
+
+Type annotations for `boto3.client("stepfunctions").exceptions` method.
+
+Boto3 documentation:
+[SFN.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -121,7 +133,7 @@ Boto3 documentation:
 [SFN.Client.create_activity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.create_activity)
 
 Arguments mapping described in
-[CreateActivityInputTypeDef](./type_defs.md#createactivityinputtypedef).
+[CreateActivityInputRequestTypeDef](./type_defs.md#createactivityinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -129,7 +141,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateActivityOutputResponseTypeDef](./type_defs.md#createactivityoutputresponsetypedef).
+[CreateActivityOutputTypeDef](./type_defs.md#createactivityoutputtypedef).
 
 ### create_state_machine
 
@@ -142,7 +154,7 @@ Boto3 documentation:
 [SFN.Client.create_state_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.create_state_machine)
 
 Arguments mapping described in
-[CreateStateMachineInputTypeDef](./type_defs.md#createstatemachineinputtypedef).
+[CreateStateMachineInputRequestTypeDef](./type_defs.md#createstatemachineinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -157,7 +169,7 @@ Keyword-only arguments:
   [TracingConfigurationTypeDef](./type_defs.md#tracingconfigurationtypedef)
 
 Returns
-[CreateStateMachineOutputResponseTypeDef](./type_defs.md#createstatemachineoutputresponsetypedef).
+[CreateStateMachineOutputTypeDef](./type_defs.md#createstatemachineoutputtypedef).
 
 ### delete_activity
 
@@ -169,7 +181,7 @@ Boto3 documentation:
 [SFN.Client.delete_activity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.delete_activity)
 
 Arguments mapping described in
-[DeleteActivityInputTypeDef](./type_defs.md#deleteactivityinputtypedef).
+[DeleteActivityInputRequestTypeDef](./type_defs.md#deleteactivityinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -188,7 +200,7 @@ Boto3 documentation:
 [SFN.Client.delete_state_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.delete_state_machine)
 
 Arguments mapping described in
-[DeleteStateMachineInputTypeDef](./type_defs.md#deletestatemachineinputtypedef).
+[DeleteStateMachineInputRequestTypeDef](./type_defs.md#deletestatemachineinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -206,14 +218,14 @@ Boto3 documentation:
 [SFN.Client.describe_activity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_activity)
 
 Arguments mapping described in
-[DescribeActivityInputTypeDef](./type_defs.md#describeactivityinputtypedef).
+[DescribeActivityInputRequestTypeDef](./type_defs.md#describeactivityinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `activityArn`: `str` *(required)*
 
 Returns
-[DescribeActivityOutputResponseTypeDef](./type_defs.md#describeactivityoutputresponsetypedef).
+[DescribeActivityOutputTypeDef](./type_defs.md#describeactivityoutputtypedef).
 
 ### describe_execution
 
@@ -225,14 +237,14 @@ Boto3 documentation:
 [SFN.Client.describe_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_execution)
 
 Arguments mapping described in
-[DescribeExecutionInputTypeDef](./type_defs.md#describeexecutioninputtypedef).
+[DescribeExecutionInputRequestTypeDef](./type_defs.md#describeexecutioninputrequesttypedef).
 
 Keyword-only arguments:
 
 - `executionArn`: `str` *(required)*
 
 Returns
-[DescribeExecutionOutputResponseTypeDef](./type_defs.md#describeexecutionoutputresponsetypedef).
+[DescribeExecutionOutputTypeDef](./type_defs.md#describeexecutionoutputtypedef).
 
 ### describe_state_machine
 
@@ -245,14 +257,14 @@ Boto3 documentation:
 [SFN.Client.describe_state_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_state_machine)
 
 Arguments mapping described in
-[DescribeStateMachineInputTypeDef](./type_defs.md#describestatemachineinputtypedef).
+[DescribeStateMachineInputRequestTypeDef](./type_defs.md#describestatemachineinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `stateMachineArn`: `str` *(required)*
 
 Returns
-[DescribeStateMachineOutputResponseTypeDef](./type_defs.md#describestatemachineoutputresponsetypedef).
+[DescribeStateMachineOutputTypeDef](./type_defs.md#describestatemachineoutputtypedef).
 
 ### describe_state_machine_for_execution
 
@@ -265,14 +277,14 @@ Boto3 documentation:
 [SFN.Client.describe_state_machine_for_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_state_machine_for_execution)
 
 Arguments mapping described in
-[DescribeStateMachineForExecutionInputTypeDef](./type_defs.md#describestatemachineforexecutioninputtypedef).
+[DescribeStateMachineForExecutionInputRequestTypeDef](./type_defs.md#describestatemachineforexecutioninputrequesttypedef).
 
 Keyword-only arguments:
 
 - `executionArn`: `str` *(required)*
 
 Returns
-[DescribeStateMachineForExecutionOutputResponseTypeDef](./type_defs.md#describestatemachineforexecutionoutputresponsetypedef).
+[DescribeStateMachineForExecutionOutputTypeDef](./type_defs.md#describestatemachineforexecutionoutputtypedef).
 
 ### generate_presigned_url
 
@@ -304,7 +316,7 @@ Boto3 documentation:
 [SFN.Client.get_activity_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.get_activity_task)
 
 Arguments mapping described in
-[GetActivityTaskInputTypeDef](./type_defs.md#getactivitytaskinputtypedef).
+[GetActivityTaskInputRequestTypeDef](./type_defs.md#getactivitytaskinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -312,7 +324,7 @@ Keyword-only arguments:
 - `workerName`: `str`
 
 Returns
-[GetActivityTaskOutputResponseTypeDef](./type_defs.md#getactivitytaskoutputresponsetypedef).
+[GetActivityTaskOutputTypeDef](./type_defs.md#getactivitytaskoutputtypedef).
 
 ### get_execution_history
 
@@ -325,7 +337,7 @@ Boto3 documentation:
 [SFN.Client.get_execution_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.get_execution_history)
 
 Arguments mapping described in
-[GetExecutionHistoryInputTypeDef](./type_defs.md#getexecutionhistoryinputtypedef).
+[GetExecutionHistoryInputRequestTypeDef](./type_defs.md#getexecutionhistoryinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -336,7 +348,7 @@ Keyword-only arguments:
 - `includeExecutionData`: `bool`
 
 Returns
-[GetExecutionHistoryOutputResponseTypeDef](./type_defs.md#getexecutionhistoryoutputresponsetypedef).
+[GetExecutionHistoryOutputTypeDef](./type_defs.md#getexecutionhistoryoutputtypedef).
 
 ### list_activities
 
@@ -348,7 +360,7 @@ Boto3 documentation:
 [SFN.Client.list_activities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_activities)
 
 Arguments mapping described in
-[ListActivitiesInputTypeDef](./type_defs.md#listactivitiesinputtypedef).
+[ListActivitiesInputRequestTypeDef](./type_defs.md#listactivitiesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -356,7 +368,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListActivitiesOutputResponseTypeDef](./type_defs.md#listactivitiesoutputresponsetypedef).
+[ListActivitiesOutputTypeDef](./type_defs.md#listactivitiesoutputtypedef).
 
 ### list_executions
 
@@ -368,7 +380,7 @@ Boto3 documentation:
 [SFN.Client.list_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_executions)
 
 Arguments mapping described in
-[ListExecutionsInputTypeDef](./type_defs.md#listexecutionsinputtypedef).
+[ListExecutionsInputRequestTypeDef](./type_defs.md#listexecutionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -378,7 +390,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListExecutionsOutputResponseTypeDef](./type_defs.md#listexecutionsoutputresponsetypedef).
+[ListExecutionsOutputTypeDef](./type_defs.md#listexecutionsoutputtypedef).
 
 ### list_state_machines
 
@@ -391,7 +403,7 @@ Boto3 documentation:
 [SFN.Client.list_state_machines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_state_machines)
 
 Arguments mapping described in
-[ListStateMachinesInputTypeDef](./type_defs.md#liststatemachinesinputtypedef).
+[ListStateMachinesInputRequestTypeDef](./type_defs.md#liststatemachinesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -399,7 +411,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListStateMachinesOutputResponseTypeDef](./type_defs.md#liststatemachinesoutputresponsetypedef).
+[ListStateMachinesOutputTypeDef](./type_defs.md#liststatemachinesoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -412,14 +424,14 @@ Boto3 documentation:
 [SFN.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceInputTypeDef](./type_defs.md#listtagsforresourceinputtypedef).
+[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef).
+[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
 ### send_task_failure
 
@@ -433,7 +445,7 @@ Boto3 documentation:
 [SFN.Client.send_task_failure](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_failure)
 
 Arguments mapping described in
-[SendTaskFailureInputTypeDef](./type_defs.md#sendtaskfailureinputtypedef).
+[SendTaskFailureInputRequestTypeDef](./type_defs.md#sendtaskfailureinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -457,7 +469,7 @@ Boto3 documentation:
 [SFN.Client.send_task_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_heartbeat)
 
 Arguments mapping described in
-[SendTaskHeartbeatInputTypeDef](./type_defs.md#sendtaskheartbeatinputtypedef).
+[SendTaskHeartbeatInputRequestTypeDef](./type_defs.md#sendtaskheartbeatinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -478,7 +490,7 @@ Boto3 documentation:
 [SFN.Client.send_task_success](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_success)
 
 Arguments mapping described in
-[SendTaskSuccessInputTypeDef](./type_defs.md#sendtasksuccessinputtypedef).
+[SendTaskSuccessInputRequestTypeDef](./type_defs.md#sendtasksuccessinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -497,7 +509,7 @@ Boto3 documentation:
 [SFN.Client.start_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.start_execution)
 
 Arguments mapping described in
-[StartExecutionInputTypeDef](./type_defs.md#startexecutioninputtypedef).
+[StartExecutionInputRequestTypeDef](./type_defs.md#startexecutioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -507,7 +519,7 @@ Keyword-only arguments:
 - `traceHeader`: `str`
 
 Returns
-[StartExecutionOutputResponseTypeDef](./type_defs.md#startexecutionoutputresponsetypedef).
+[StartExecutionOutputTypeDef](./type_defs.md#startexecutionoutputtypedef).
 
 ### start_sync_execution
 
@@ -520,7 +532,7 @@ Boto3 documentation:
 [SFN.Client.start_sync_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.start_sync_execution)
 
 Arguments mapping described in
-[StartSyncExecutionInputTypeDef](./type_defs.md#startsyncexecutioninputtypedef).
+[StartSyncExecutionInputRequestTypeDef](./type_defs.md#startsyncexecutioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -530,7 +542,7 @@ Keyword-only arguments:
 - `traceHeader`: `str`
 
 Returns
-[StartSyncExecutionOutputResponseTypeDef](./type_defs.md#startsyncexecutionoutputresponsetypedef).
+[StartSyncExecutionOutputTypeDef](./type_defs.md#startsyncexecutionoutputtypedef).
 
 ### stop_execution
 
@@ -542,7 +554,7 @@ Boto3 documentation:
 [SFN.Client.stop_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.stop_execution)
 
 Arguments mapping described in
-[StopExecutionInputTypeDef](./type_defs.md#stopexecutioninputtypedef).
+[StopExecutionInputRequestTypeDef](./type_defs.md#stopexecutioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -551,7 +563,7 @@ Keyword-only arguments:
 - `cause`: `str`
 
 Returns
-[StopExecutionOutputResponseTypeDef](./type_defs.md#stopexecutionoutputresponsetypedef).
+[StopExecutionOutputTypeDef](./type_defs.md#stopexecutionoutputtypedef).
 
 ### tag_resource
 
@@ -563,7 +575,7 @@ Boto3 documentation:
 [SFN.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceInputTypeDef](./type_defs.md#tagresourceinputtypedef).
+[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -585,7 +597,7 @@ Boto3 documentation:
 [SFN.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceInputTypeDef](./type_defs.md#untagresourceinputtypedef).
+[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -606,7 +618,7 @@ Boto3 documentation:
 [SFN.Client.update_state_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.update_state_machine)
 
 Arguments mapping described in
-[UpdateStateMachineInputTypeDef](./type_defs.md#updatestatemachineinputtypedef).
+[UpdateStateMachineInputRequestTypeDef](./type_defs.md#updatestatemachineinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -619,7 +631,7 @@ Keyword-only arguments:
   [TracingConfigurationTypeDef](./type_defs.md#tracingconfigurationtypedef)
 
 Returns
-[UpdateStateMachineOutputResponseTypeDef](./type_defs.md#updatestatemachineoutputresponsetypedef).
+[UpdateStateMachineOutputTypeDef](./type_defs.md#updatestatemachineoutputtypedef).
 
 ### get_paginator
 

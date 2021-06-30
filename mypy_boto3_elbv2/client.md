@@ -11,6 +11,7 @@ type annotations stubs module
   - [ElasticLoadBalancingv2Client](#elasticloadbalancingv2client)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_listener_certificates](#add_listener_certificates)
     - [add_tags](#add_tags)
     - [can_paginate](#can_paginate)
@@ -121,6 +122,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ElasticLoadBalancingv2Client exceptions.
+
+Type annotations for `boto3.client("elbv2").exceptions` method.
+
+Boto3 documentation:
+[ElasticLoadBalancingv2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_listener_certificates
 
 Adds the specified SSL server certificate to the certificate list for the
@@ -132,7 +144,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.add_listener_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.add_listener_certificates)
 
 Arguments mapping described in
-[AddListenerCertificatesInputTypeDef](./type_defs.md#addlistenercertificatesinputtypedef).
+[AddListenerCertificatesInputRequestTypeDef](./type_defs.md#addlistenercertificatesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -142,7 +154,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[AddListenerCertificatesOutputResponseTypeDef](./type_defs.md#addlistenercertificatesoutputresponsetypedef).
+[AddListenerCertificatesOutputTypeDef](./type_defs.md#addlistenercertificatesoutputtypedef).
 
 ### add_tags
 
@@ -154,7 +166,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.add_tags)
 
 Arguments mapping described in
-[AddTagsInputTypeDef](./type_defs.md#addtagsinputtypedef).
+[AddTagsInputRequestTypeDef](./type_defs.md#addtagsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -189,7 +201,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.create_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_listener)
 
 Arguments mapping described in
-[CreateListenerInputTypeDef](./type_defs.md#createlistenerinputtypedef).
+[CreateListenerInputRequestTypeDef](./type_defs.md#createlistenerinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -205,7 +217,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateListenerOutputResponseTypeDef](./type_defs.md#createlisteneroutputresponsetypedef).
+[CreateListenerOutputTypeDef](./type_defs.md#createlisteneroutputtypedef).
 
 ### create_load_balancer
 
@@ -218,7 +230,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.create_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_load_balancer)
 
 Arguments mapping described in
-[CreateLoadBalancerInputTypeDef](./type_defs.md#createloadbalancerinputtypedef).
+[CreateLoadBalancerInputRequestTypeDef](./type_defs.md#createloadbalancerinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -235,7 +247,7 @@ Keyword-only arguments:
 - `CustomerOwnedIpv4Pool`: `str`
 
 Returns
-[CreateLoadBalancerOutputResponseTypeDef](./type_defs.md#createloadbalanceroutputresponsetypedef).
+[CreateLoadBalancerOutputTypeDef](./type_defs.md#createloadbalanceroutputtypedef).
 
 ### create_rule
 
@@ -247,7 +259,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.create_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_rule)
 
 Arguments mapping described in
-[CreateRuleInputTypeDef](./type_defs.md#createruleinputtypedef).
+[CreateRuleInputRequestTypeDef](./type_defs.md#createruleinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -260,8 +272,7 @@ Keyword-only arguments:
   *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateRuleOutputResponseTypeDef](./type_defs.md#createruleoutputresponsetypedef).
+Returns [CreateRuleOutputTypeDef](./type_defs.md#createruleoutputtypedef).
 
 ### create_target_group
 
@@ -273,7 +284,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.create_target_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_target_group)
 
 Arguments mapping described in
-[CreateTargetGroupInputTypeDef](./type_defs.md#createtargetgroupinputtypedef).
+[CreateTargetGroupInputRequestTypeDef](./type_defs.md#createtargetgroupinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -295,7 +306,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateTargetGroupOutputResponseTypeDef](./type_defs.md#createtargetgroupoutputresponsetypedef).
+[CreateTargetGroupOutputTypeDef](./type_defs.md#createtargetgroupoutputtypedef).
 
 ### delete_listener
 
@@ -307,7 +318,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.delete_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_listener)
 
 Arguments mapping described in
-[DeleteListenerInputTypeDef](./type_defs.md#deletelistenerinputtypedef).
+[DeleteListenerInputRequestTypeDef](./type_defs.md#deletelistenerinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -326,7 +337,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.delete_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_load_balancer)
 
 Arguments mapping described in
-[DeleteLoadBalancerInputTypeDef](./type_defs.md#deleteloadbalancerinputtypedef).
+[DeleteLoadBalancerInputRequestTypeDef](./type_defs.md#deleteloadbalancerinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -344,7 +355,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.delete_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_rule)
 
 Arguments mapping described in
-[DeleteRuleInputTypeDef](./type_defs.md#deleteruleinputtypedef).
+[DeleteRuleInputRequestTypeDef](./type_defs.md#deleteruleinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -362,7 +373,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.delete_target_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_target_group)
 
 Arguments mapping described in
-[DeleteTargetGroupInputTypeDef](./type_defs.md#deletetargetgroupinputtypedef).
+[DeleteTargetGroupInputRequestTypeDef](./type_defs.md#deletetargetgroupinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -380,7 +391,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.deregister_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.deregister_targets)
 
 Arguments mapping described in
-[DeregisterTargetsInputTypeDef](./type_defs.md#deregistertargetsinputtypedef).
+[DeregisterTargetsInputRequestTypeDef](./type_defs.md#deregistertargetsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -402,7 +413,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.describe_account_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_account_limits)
 
 Arguments mapping described in
-[DescribeAccountLimitsInputTypeDef](./type_defs.md#describeaccountlimitsinputtypedef).
+[DescribeAccountLimitsInputRequestTypeDef](./type_defs.md#describeaccountlimitsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -410,7 +421,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[DescribeAccountLimitsOutputResponseTypeDef](./type_defs.md#describeaccountlimitsoutputresponsetypedef).
+[DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef).
 
 ### describe_listener_certificates
 
@@ -424,7 +435,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.describe_listener_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_listener_certificates)
 
 Arguments mapping described in
-[DescribeListenerCertificatesInputTypeDef](./type_defs.md#describelistenercertificatesinputtypedef).
+[DescribeListenerCertificatesInputRequestTypeDef](./type_defs.md#describelistenercertificatesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -433,7 +444,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[DescribeListenerCertificatesOutputResponseTypeDef](./type_defs.md#describelistenercertificatesoutputresponsetypedef).
+[DescribeListenerCertificatesOutputTypeDef](./type_defs.md#describelistenercertificatesoutputtypedef).
 
 ### describe_listeners
 
@@ -446,7 +457,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.describe_listeners](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_listeners)
 
 Arguments mapping described in
-[DescribeListenersInputTypeDef](./type_defs.md#describelistenersinputtypedef).
+[DescribeListenersInputRequestTypeDef](./type_defs.md#describelistenersinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -456,7 +467,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[DescribeListenersOutputResponseTypeDef](./type_defs.md#describelistenersoutputresponsetypedef).
+[DescribeListenersOutputTypeDef](./type_defs.md#describelistenersoutputtypedef).
 
 ### describe_load_balancer_attributes
 
@@ -470,14 +481,14 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.describe_load_balancer_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_load_balancer_attributes)
 
 Arguments mapping described in
-[DescribeLoadBalancerAttributesInputTypeDef](./type_defs.md#describeloadbalancerattributesinputtypedef).
+[DescribeLoadBalancerAttributesInputRequestTypeDef](./type_defs.md#describeloadbalancerattributesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `LoadBalancerArn`: `str` *(required)*
 
 Returns
-[DescribeLoadBalancerAttributesOutputResponseTypeDef](./type_defs.md#describeloadbalancerattributesoutputresponsetypedef).
+[DescribeLoadBalancerAttributesOutputTypeDef](./type_defs.md#describeloadbalancerattributesoutputtypedef).
 
 ### describe_load_balancers
 
@@ -489,7 +500,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.describe_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_load_balancers)
 
 Arguments mapping described in
-[DescribeLoadBalancersInputTypeDef](./type_defs.md#describeloadbalancersinputtypedef).
+[DescribeLoadBalancersInputRequestTypeDef](./type_defs.md#describeloadbalancersinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -499,7 +510,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[DescribeLoadBalancersOutputResponseTypeDef](./type_defs.md#describeloadbalancersoutputresponsetypedef).
+[DescribeLoadBalancersOutputTypeDef](./type_defs.md#describeloadbalancersoutputtypedef).
 
 ### describe_rules
 
@@ -511,7 +522,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.describe_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_rules)
 
 Arguments mapping described in
-[DescribeRulesInputTypeDef](./type_defs.md#describerulesinputtypedef).
+[DescribeRulesInputRequestTypeDef](./type_defs.md#describerulesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -521,7 +532,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[DescribeRulesOutputResponseTypeDef](./type_defs.md#describerulesoutputresponsetypedef).
+[DescribeRulesOutputTypeDef](./type_defs.md#describerulesoutputtypedef).
 
 ### describe_ssl_policies
 
@@ -533,7 +544,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.describe_ssl_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_ssl_policies)
 
 Arguments mapping described in
-[DescribeSSLPoliciesInputTypeDef](./type_defs.md#describesslpoliciesinputtypedef).
+[DescribeSSLPoliciesInputRequestTypeDef](./type_defs.md#describesslpoliciesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -542,7 +553,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[DescribeSSLPoliciesOutputResponseTypeDef](./type_defs.md#describesslpoliciesoutputresponsetypedef).
+[DescribeSSLPoliciesOutputTypeDef](./type_defs.md#describesslpoliciesoutputtypedef).
 
 ### describe_tags
 
@@ -554,14 +565,13 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_tags)
 
 Arguments mapping described in
-[DescribeTagsInputTypeDef](./type_defs.md#describetagsinputtypedef).
+[DescribeTagsInputRequestTypeDef](./type_defs.md#describetagsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArns`: `List`\[`str`\] *(required)*
 
-Returns
-[DescribeTagsOutputResponseTypeDef](./type_defs.md#describetagsoutputresponsetypedef).
+Returns [DescribeTagsOutputTypeDef](./type_defs.md#describetagsoutputtypedef).
 
 ### describe_target_group_attributes
 
@@ -574,14 +584,14 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.describe_target_group_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_group_attributes)
 
 Arguments mapping described in
-[DescribeTargetGroupAttributesInputTypeDef](./type_defs.md#describetargetgroupattributesinputtypedef).
+[DescribeTargetGroupAttributesInputRequestTypeDef](./type_defs.md#describetargetgroupattributesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `TargetGroupArn`: `str` *(required)*
 
 Returns
-[DescribeTargetGroupAttributesOutputResponseTypeDef](./type_defs.md#describetargetgroupattributesoutputresponsetypedef).
+[DescribeTargetGroupAttributesOutputTypeDef](./type_defs.md#describetargetgroupattributesoutputtypedef).
 
 ### describe_target_groups
 
@@ -593,7 +603,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.describe_target_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_groups)
 
 Arguments mapping described in
-[DescribeTargetGroupsInputTypeDef](./type_defs.md#describetargetgroupsinputtypedef).
+[DescribeTargetGroupsInputRequestTypeDef](./type_defs.md#describetargetgroupsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -604,7 +614,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[DescribeTargetGroupsOutputResponseTypeDef](./type_defs.md#describetargetgroupsoutputresponsetypedef).
+[DescribeTargetGroupsOutputTypeDef](./type_defs.md#describetargetgroupsoutputtypedef).
 
 ### describe_target_health
 
@@ -616,7 +626,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.describe_target_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_health)
 
 Arguments mapping described in
-[DescribeTargetHealthInputTypeDef](./type_defs.md#describetargethealthinputtypedef).
+[DescribeTargetHealthInputRequestTypeDef](./type_defs.md#describetargethealthinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -625,7 +635,7 @@ Keyword-only arguments:
   `List`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
 
 Returns
-[DescribeTargetHealthOutputResponseTypeDef](./type_defs.md#describetargethealthoutputresponsetypedef).
+[DescribeTargetHealthOutputTypeDef](./type_defs.md#describetargethealthoutputtypedef).
 
 ### generate_presigned_url
 
@@ -655,7 +665,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.modify_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_listener)
 
 Arguments mapping described in
-[ModifyListenerInputTypeDef](./type_defs.md#modifylistenerinputtypedef).
+[ModifyListenerInputRequestTypeDef](./type_defs.md#modifylistenerinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -669,7 +679,7 @@ Keyword-only arguments:
 - `AlpnPolicy`: `List`\[`str`\]
 
 Returns
-[ModifyListenerOutputResponseTypeDef](./type_defs.md#modifylisteneroutputresponsetypedef).
+[ModifyListenerOutputTypeDef](./type_defs.md#modifylisteneroutputtypedef).
 
 ### modify_load_balancer_attributes
 
@@ -683,7 +693,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.modify_load_balancer_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_load_balancer_attributes)
 
 Arguments mapping described in
-[ModifyLoadBalancerAttributesInputTypeDef](./type_defs.md#modifyloadbalancerattributesinputtypedef).
+[ModifyLoadBalancerAttributesInputRequestTypeDef](./type_defs.md#modifyloadbalancerattributesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -693,7 +703,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[ModifyLoadBalancerAttributesOutputResponseTypeDef](./type_defs.md#modifyloadbalancerattributesoutputresponsetypedef).
+[ModifyLoadBalancerAttributesOutputTypeDef](./type_defs.md#modifyloadbalancerattributesoutputtypedef).
 
 ### modify_rule
 
@@ -705,7 +715,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.modify_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_rule)
 
 Arguments mapping described in
-[ModifyRuleInputTypeDef](./type_defs.md#modifyruleinputtypedef).
+[ModifyRuleInputRequestTypeDef](./type_defs.md#modifyruleinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -714,8 +724,7 @@ Keyword-only arguments:
   `List`\[[RuleConditionTypeDef](./type_defs.md#ruleconditiontypedef)\]
 - `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 
-Returns
-[ModifyRuleOutputResponseTypeDef](./type_defs.md#modifyruleoutputresponsetypedef).
+Returns [ModifyRuleOutputTypeDef](./type_defs.md#modifyruleoutputtypedef).
 
 ### modify_target_group
 
@@ -728,7 +737,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.modify_target_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_target_group)
 
 Arguments mapping described in
-[ModifyTargetGroupInputTypeDef](./type_defs.md#modifytargetgroupinputtypedef).
+[ModifyTargetGroupInputRequestTypeDef](./type_defs.md#modifytargetgroupinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -744,7 +753,7 @@ Keyword-only arguments:
 - `Matcher`: [MatcherTypeDef](./type_defs.md#matchertypedef)
 
 Returns
-[ModifyTargetGroupOutputResponseTypeDef](./type_defs.md#modifytargetgroupoutputresponsetypedef).
+[ModifyTargetGroupOutputTypeDef](./type_defs.md#modifytargetgroupoutputtypedef).
 
 ### modify_target_group_attributes
 
@@ -757,7 +766,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.modify_target_group_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_target_group_attributes)
 
 Arguments mapping described in
-[ModifyTargetGroupAttributesInputTypeDef](./type_defs.md#modifytargetgroupattributesinputtypedef).
+[ModifyTargetGroupAttributesInputRequestTypeDef](./type_defs.md#modifytargetgroupattributesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -767,7 +776,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[ModifyTargetGroupAttributesOutputResponseTypeDef](./type_defs.md#modifytargetgroupattributesoutputresponsetypedef).
+[ModifyTargetGroupAttributesOutputTypeDef](./type_defs.md#modifytargetgroupattributesoutputtypedef).
 
 ### register_targets
 
@@ -779,7 +788,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.register_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.register_targets)
 
 Arguments mapping described in
-[RegisterTargetsInputTypeDef](./type_defs.md#registertargetsinputtypedef).
+[RegisterTargetsInputRequestTypeDef](./type_defs.md#registertargetsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -802,7 +811,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.remove_listener_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.remove_listener_certificates)
 
 Arguments mapping described in
-[RemoveListenerCertificatesInputTypeDef](./type_defs.md#removelistenercertificatesinputtypedef).
+[RemoveListenerCertificatesInputRequestTypeDef](./type_defs.md#removelistenercertificatesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -823,7 +832,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.remove_tags)
 
 Arguments mapping described in
-[RemoveTagsInputTypeDef](./type_defs.md#removetagsinputtypedef).
+[RemoveTagsInputRequestTypeDef](./type_defs.md#removetagsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -843,7 +852,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.set_ip_address_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_ip_address_type)
 
 Arguments mapping described in
-[SetIpAddressTypeInputTypeDef](./type_defs.md#setipaddresstypeinputtypedef).
+[SetIpAddressTypeInputRequestTypeDef](./type_defs.md#setipaddresstypeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -852,7 +861,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[SetIpAddressTypeOutputResponseTypeDef](./type_defs.md#setipaddresstypeoutputresponsetypedef).
+[SetIpAddressTypeOutputTypeDef](./type_defs.md#setipaddresstypeoutputtypedef).
 
 ### set_rule_priorities
 
@@ -864,7 +873,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.set_rule_priorities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_rule_priorities)
 
 Arguments mapping described in
-[SetRulePrioritiesInputTypeDef](./type_defs.md#setruleprioritiesinputtypedef).
+[SetRulePrioritiesInputRequestTypeDef](./type_defs.md#setruleprioritiesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -873,7 +882,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[SetRulePrioritiesOutputResponseTypeDef](./type_defs.md#setruleprioritiesoutputresponsetypedef).
+[SetRulePrioritiesOutputTypeDef](./type_defs.md#setruleprioritiesoutputtypedef).
 
 ### set_security_groups
 
@@ -886,7 +895,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.set_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_security_groups)
 
 Arguments mapping described in
-[SetSecurityGroupsInputTypeDef](./type_defs.md#setsecuritygroupsinputtypedef).
+[SetSecurityGroupsInputRequestTypeDef](./type_defs.md#setsecuritygroupsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -894,7 +903,7 @@ Keyword-only arguments:
 - `SecurityGroups`: `List`\[`str`\] *(required)*
 
 Returns
-[SetSecurityGroupsOutputResponseTypeDef](./type_defs.md#setsecuritygroupsoutputresponsetypedef).
+[SetSecurityGroupsOutputTypeDef](./type_defs.md#setsecuritygroupsoutputtypedef).
 
 ### set_subnets
 
@@ -907,7 +916,7 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.set_subnets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_subnets)
 
 Arguments mapping described in
-[SetSubnetsInputTypeDef](./type_defs.md#setsubnetsinputtypedef).
+[SetSubnetsInputRequestTypeDef](./type_defs.md#setsubnetsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -917,8 +926,7 @@ Keyword-only arguments:
   `List`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
 - `IpAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 
-Returns
-[SetSubnetsOutputResponseTypeDef](./type_defs.md#setsubnetsoutputresponsetypedef).
+Returns [SetSubnetsOutputTypeDef](./type_defs.md#setsubnetsoutputtypedef).
 
 ### get_paginator
 

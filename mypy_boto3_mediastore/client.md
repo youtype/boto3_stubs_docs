@@ -11,6 +11,7 @@ type annotations stubs module
   - [MediaStoreClient](#mediastoreclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_container](#create_container)
     - [delete_container](#delete_container)
@@ -76,6 +77,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+MediaStoreClient exceptions.
+
+Type annotations for `boto3.client("mediastore").exceptions` method.
+
+Boto3 documentation:
+[MediaStore.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -101,7 +113,7 @@ Boto3 documentation:
 [MediaStore.Client.create_container](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.create_container)
 
 Arguments mapping described in
-[CreateContainerInputTypeDef](./type_defs.md#createcontainerinputtypedef).
+[CreateContainerInputRequestTypeDef](./type_defs.md#createcontainerinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -109,7 +121,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateContainerOutputResponseTypeDef](./type_defs.md#createcontaineroutputresponsetypedef).
+[CreateContainerOutputTypeDef](./type_defs.md#createcontaineroutputtypedef).
 
 ### delete_container
 
@@ -121,7 +133,7 @@ Boto3 documentation:
 [MediaStore.Client.delete_container](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_container)
 
 Arguments mapping described in
-[DeleteContainerInputTypeDef](./type_defs.md#deletecontainerinputtypedef).
+[DeleteContainerInputRequestTypeDef](./type_defs.md#deletecontainerinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -140,7 +152,7 @@ Boto3 documentation:
 [MediaStore.Client.delete_container_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_container_policy)
 
 Arguments mapping described in
-[DeleteContainerPolicyInputTypeDef](./type_defs.md#deletecontainerpolicyinputtypedef).
+[DeleteContainerPolicyInputRequestTypeDef](./type_defs.md#deletecontainerpolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -159,7 +171,7 @@ Boto3 documentation:
 [MediaStore.Client.delete_cors_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_cors_policy)
 
 Arguments mapping described in
-[DeleteCorsPolicyInputTypeDef](./type_defs.md#deletecorspolicyinputtypedef).
+[DeleteCorsPolicyInputRequestTypeDef](./type_defs.md#deletecorspolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -178,7 +190,7 @@ Boto3 documentation:
 [MediaStore.Client.delete_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_lifecycle_policy)
 
 Arguments mapping described in
-[DeleteLifecyclePolicyInputTypeDef](./type_defs.md#deletelifecyclepolicyinputtypedef).
+[DeleteLifecyclePolicyInputRequestTypeDef](./type_defs.md#deletelifecyclepolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -196,7 +208,7 @@ Boto3 documentation:
 [MediaStore.Client.delete_metric_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_metric_policy)
 
 Arguments mapping described in
-[DeleteMetricPolicyInputTypeDef](./type_defs.md#deletemetricpolicyinputtypedef).
+[DeleteMetricPolicyInputRequestTypeDef](./type_defs.md#deletemetricpolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -214,14 +226,14 @@ Boto3 documentation:
 [MediaStore.Client.describe_container](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.describe_container)
 
 Arguments mapping described in
-[DescribeContainerInputTypeDef](./type_defs.md#describecontainerinputtypedef).
+[DescribeContainerInputRequestTypeDef](./type_defs.md#describecontainerinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ContainerName`: `str`
 
 Returns
-[DescribeContainerOutputResponseTypeDef](./type_defs.md#describecontaineroutputresponsetypedef).
+[DescribeContainerOutputTypeDef](./type_defs.md#describecontaineroutputtypedef).
 
 ### generate_presigned_url
 
@@ -252,14 +264,14 @@ Boto3 documentation:
 [MediaStore.Client.get_container_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_container_policy)
 
 Arguments mapping described in
-[GetContainerPolicyInputTypeDef](./type_defs.md#getcontainerpolicyinputtypedef).
+[GetContainerPolicyInputRequestTypeDef](./type_defs.md#getcontainerpolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 
 Returns
-[GetContainerPolicyOutputResponseTypeDef](./type_defs.md#getcontainerpolicyoutputresponsetypedef).
+[GetContainerPolicyOutputTypeDef](./type_defs.md#getcontainerpolicyoutputtypedef).
 
 ### get_cors_policy
 
@@ -272,14 +284,14 @@ Boto3 documentation:
 [MediaStore.Client.get_cors_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_cors_policy)
 
 Arguments mapping described in
-[GetCorsPolicyInputTypeDef](./type_defs.md#getcorspolicyinputtypedef).
+[GetCorsPolicyInputRequestTypeDef](./type_defs.md#getcorspolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 
 Returns
-[GetCorsPolicyOutputResponseTypeDef](./type_defs.md#getcorspolicyoutputresponsetypedef).
+[GetCorsPolicyOutputTypeDef](./type_defs.md#getcorspolicyoutputtypedef).
 
 ### get_lifecycle_policy
 
@@ -291,14 +303,14 @@ Boto3 documentation:
 [MediaStore.Client.get_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_lifecycle_policy)
 
 Arguments mapping described in
-[GetLifecyclePolicyInputTypeDef](./type_defs.md#getlifecyclepolicyinputtypedef).
+[GetLifecyclePolicyInputRequestTypeDef](./type_defs.md#getlifecyclepolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 
 Returns
-[GetLifecyclePolicyOutputResponseTypeDef](./type_defs.md#getlifecyclepolicyoutputresponsetypedef).
+[GetLifecyclePolicyOutputTypeDef](./type_defs.md#getlifecyclepolicyoutputtypedef).
 
 ### get_metric_policy
 
@@ -310,14 +322,14 @@ Boto3 documentation:
 [MediaStore.Client.get_metric_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_metric_policy)
 
 Arguments mapping described in
-[GetMetricPolicyInputTypeDef](./type_defs.md#getmetricpolicyinputtypedef).
+[GetMetricPolicyInputRequestTypeDef](./type_defs.md#getmetricpolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 
 Returns
-[GetMetricPolicyOutputResponseTypeDef](./type_defs.md#getmetricpolicyoutputresponsetypedef).
+[GetMetricPolicyOutputTypeDef](./type_defs.md#getmetricpolicyoutputtypedef).
 
 ### list_containers
 
@@ -329,7 +341,7 @@ Boto3 documentation:
 [MediaStore.Client.list_containers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.list_containers)
 
 Arguments mapping described in
-[ListContainersInputTypeDef](./type_defs.md#listcontainersinputtypedef).
+[ListContainersInputRequestTypeDef](./type_defs.md#listcontainersinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -337,7 +349,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListContainersOutputResponseTypeDef](./type_defs.md#listcontainersoutputresponsetypedef).
+[ListContainersOutputTypeDef](./type_defs.md#listcontainersoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -350,14 +362,14 @@ Boto3 documentation:
 [MediaStore.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceInputTypeDef](./type_defs.md#listtagsforresourceinputtypedef).
+[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `Resource`: `str` *(required)*
 
 Returns
-[ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef).
+[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
 ### put_container_policy
 
@@ -370,7 +382,7 @@ Boto3 documentation:
 [MediaStore.Client.put_container_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_container_policy)
 
 Arguments mapping described in
-[PutContainerPolicyInputTypeDef](./type_defs.md#putcontainerpolicyinputtypedef).
+[PutContainerPolicyInputRequestTypeDef](./type_defs.md#putcontainerpolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -390,7 +402,7 @@ Boto3 documentation:
 [MediaStore.Client.put_cors_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_cors_policy)
 
 Arguments mapping described in
-[PutCorsPolicyInputTypeDef](./type_defs.md#putcorspolicyinputtypedef).
+[PutCorsPolicyInputRequestTypeDef](./type_defs.md#putcorspolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -410,7 +422,7 @@ Boto3 documentation:
 [MediaStore.Client.put_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_lifecycle_policy)
 
 Arguments mapping described in
-[PutLifecyclePolicyInputTypeDef](./type_defs.md#putlifecyclepolicyinputtypedef).
+[PutLifecyclePolicyInputRequestTypeDef](./type_defs.md#putlifecyclepolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -429,7 +441,7 @@ Boto3 documentation:
 [MediaStore.Client.put_metric_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_metric_policy)
 
 Arguments mapping described in
-[PutMetricPolicyInputTypeDef](./type_defs.md#putmetricpolicyinputtypedef).
+[PutMetricPolicyInputRequestTypeDef](./type_defs.md#putmetricpolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -449,7 +461,7 @@ Boto3 documentation:
 [MediaStore.Client.start_access_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.start_access_logging)
 
 Arguments mapping described in
-[StartAccessLoggingInputTypeDef](./type_defs.md#startaccesslogginginputtypedef).
+[StartAccessLoggingInputRequestTypeDef](./type_defs.md#startaccesslogginginputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -467,7 +479,7 @@ Boto3 documentation:
 [MediaStore.Client.stop_access_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.stop_access_logging)
 
 Arguments mapping described in
-[StopAccessLoggingInputTypeDef](./type_defs.md#stopaccesslogginginputtypedef).
+[StopAccessLoggingInputRequestTypeDef](./type_defs.md#stopaccesslogginginputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -485,7 +497,7 @@ Boto3 documentation:
 [MediaStore.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceInputTypeDef](./type_defs.md#tagresourceinputtypedef).
+[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -504,7 +516,7 @@ Boto3 documentation:
 [MediaStore.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceInputTypeDef](./type_defs.md#untagresourceinputtypedef).
+[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 

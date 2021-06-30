@@ -11,6 +11,7 @@ type annotations stubs module
   - [MediaConnectClient](#mediaconnectclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_flow_media_streams](#add_flow_media_streams)
     - [add_flow_outputs](#add_flow_outputs)
     - [add_flow_sources](#add_flow_sources)
@@ -89,6 +90,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+MediaConnectClient exceptions.
+
+Type annotations for `boto3.client("mediaconnect").exceptions` method.
+
+Boto3 documentation:
+[MediaConnect.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_flow_media_streams
 
 Adds media streams to an existing flow.
@@ -100,7 +112,7 @@ Boto3 documentation:
 [MediaConnect.Client.add_flow_media_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_media_streams)
 
 Arguments mapping described in
-[AddFlowMediaStreamsRequestTypeDef](./type_defs.md#addflowmediastreamsrequesttypedef).
+[AddFlowMediaStreamsRequestRequestTypeDef](./type_defs.md#addflowmediastreamsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -110,7 +122,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[AddFlowMediaStreamsResponseResponseTypeDef](./type_defs.md#addflowmediastreamsresponseresponsetypedef).
+[AddFlowMediaStreamsResponseTypeDef](./type_defs.md#addflowmediastreamsresponsetypedef).
 
 ### add_flow_outputs
 
@@ -122,7 +134,7 @@ Boto3 documentation:
 [MediaConnect.Client.add_flow_outputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_outputs)
 
 Arguments mapping described in
-[AddFlowOutputsRequestTypeDef](./type_defs.md#addflowoutputsrequesttypedef).
+[AddFlowOutputsRequestRequestTypeDef](./type_defs.md#addflowoutputsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -132,7 +144,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[AddFlowOutputsResponseResponseTypeDef](./type_defs.md#addflowoutputsresponseresponsetypedef).
+[AddFlowOutputsResponseTypeDef](./type_defs.md#addflowoutputsresponsetypedef).
 
 ### add_flow_sources
 
@@ -147,7 +159,7 @@ Boto3 documentation:
 [MediaConnect.Client.add_flow_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_sources)
 
 Arguments mapping described in
-[AddFlowSourcesRequestTypeDef](./type_defs.md#addflowsourcesrequesttypedef).
+[AddFlowSourcesRequestRequestTypeDef](./type_defs.md#addflowsourcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -157,7 +169,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[AddFlowSourcesResponseResponseTypeDef](./type_defs.md#addflowsourcesresponseresponsetypedef).
+[AddFlowSourcesResponseTypeDef](./type_defs.md#addflowsourcesresponsetypedef).
 
 ### add_flow_vpc_interfaces
 
@@ -173,7 +185,7 @@ Boto3 documentation:
 [MediaConnect.Client.add_flow_vpc_interfaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_vpc_interfaces)
 
 Arguments mapping described in
-[AddFlowVpcInterfacesRequestTypeDef](./type_defs.md#addflowvpcinterfacesrequesttypedef).
+[AddFlowVpcInterfacesRequestRequestTypeDef](./type_defs.md#addflowvpcinterfacesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -183,7 +195,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[AddFlowVpcInterfacesResponseResponseTypeDef](./type_defs.md#addflowvpcinterfacesresponseresponsetypedef).
+[AddFlowVpcInterfacesResponseTypeDef](./type_defs.md#addflowvpcinterfacesresponsetypedef).
 
 ### can_paginate
 
@@ -210,7 +222,7 @@ Boto3 documentation:
 [MediaConnect.Client.create_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.create_flow)
 
 Arguments mapping described in
-[CreateFlowRequestTypeDef](./type_defs.md#createflowrequesttypedef).
+[CreateFlowRequestRequestTypeDef](./type_defs.md#createflowrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -230,8 +242,7 @@ Keyword-only arguments:
 - `VpcInterfaces`:
   `List`\[[VpcInterfaceRequestTypeDef](./type_defs.md#vpcinterfacerequesttypedef)\]
 
-Returns
-[CreateFlowResponseResponseTypeDef](./type_defs.md#createflowresponseresponsetypedef).
+Returns [CreateFlowResponseTypeDef](./type_defs.md#createflowresponsetypedef).
 
 ### delete_flow
 
@@ -243,14 +254,13 @@ Boto3 documentation:
 [MediaConnect.Client.delete_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.delete_flow)
 
 Arguments mapping described in
-[DeleteFlowRequestTypeDef](./type_defs.md#deleteflowrequesttypedef).
+[DeleteFlowRequestRequestTypeDef](./type_defs.md#deleteflowrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 
-Returns
-[DeleteFlowResponseResponseTypeDef](./type_defs.md#deleteflowresponseresponsetypedef).
+Returns [DeleteFlowResponseTypeDef](./type_defs.md#deleteflowresponsetypedef).
 
 ### describe_flow
 
@@ -262,14 +272,14 @@ Boto3 documentation:
 [MediaConnect.Client.describe_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_flow)
 
 Arguments mapping described in
-[DescribeFlowRequestTypeDef](./type_defs.md#describeflowrequesttypedef).
+[DescribeFlowRequestRequestTypeDef](./type_defs.md#describeflowrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 
 Returns
-[DescribeFlowResponseResponseTypeDef](./type_defs.md#describeflowresponseresponsetypedef).
+[DescribeFlowResponseTypeDef](./type_defs.md#describeflowresponsetypedef).
 
 ### describe_offering
 
@@ -281,14 +291,14 @@ Boto3 documentation:
 [MediaConnect.Client.describe_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_offering)
 
 Arguments mapping described in
-[DescribeOfferingRequestTypeDef](./type_defs.md#describeofferingrequesttypedef).
+[DescribeOfferingRequestRequestTypeDef](./type_defs.md#describeofferingrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `OfferingArn`: `str` *(required)*
 
 Returns
-[DescribeOfferingResponseResponseTypeDef](./type_defs.md#describeofferingresponseresponsetypedef).
+[DescribeOfferingResponseTypeDef](./type_defs.md#describeofferingresponsetypedef).
 
 ### describe_reservation
 
@@ -301,14 +311,14 @@ Boto3 documentation:
 [MediaConnect.Client.describe_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_reservation)
 
 Arguments mapping described in
-[DescribeReservationRequestTypeDef](./type_defs.md#describereservationrequesttypedef).
+[DescribeReservationRequestRequestTypeDef](./type_defs.md#describereservationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ReservationArn`: `str` *(required)*
 
 Returns
-[DescribeReservationResponseResponseTypeDef](./type_defs.md#describereservationresponseresponsetypedef).
+[DescribeReservationResponseTypeDef](./type_defs.md#describereservationresponsetypedef).
 
 ### generate_presigned_url
 
@@ -340,7 +350,7 @@ Boto3 documentation:
 [MediaConnect.Client.grant_flow_entitlements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.grant_flow_entitlements)
 
 Arguments mapping described in
-[GrantFlowEntitlementsRequestTypeDef](./type_defs.md#grantflowentitlementsrequesttypedef).
+[GrantFlowEntitlementsRequestRequestTypeDef](./type_defs.md#grantflowentitlementsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -350,7 +360,7 @@ Keyword-only arguments:
 - `FlowArn`: `str` *(required)*
 
 Returns
-[GrantFlowEntitlementsResponseResponseTypeDef](./type_defs.md#grantflowentitlementsresponseresponsetypedef).
+[GrantFlowEntitlementsResponseTypeDef](./type_defs.md#grantflowentitlementsresponsetypedef).
 
 ### list_entitlements
 
@@ -362,7 +372,7 @@ Boto3 documentation:
 [MediaConnect.Client.list_entitlements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_entitlements)
 
 Arguments mapping described in
-[ListEntitlementsRequestTypeDef](./type_defs.md#listentitlementsrequesttypedef).
+[ListEntitlementsRequestRequestTypeDef](./type_defs.md#listentitlementsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -370,7 +380,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListEntitlementsResponseResponseTypeDef](./type_defs.md#listentitlementsresponseresponsetypedef).
+[ListEntitlementsResponseTypeDef](./type_defs.md#listentitlementsresponsetypedef).
 
 ### list_flows
 
@@ -382,15 +392,14 @@ Boto3 documentation:
 [MediaConnect.Client.list_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_flows)
 
 Arguments mapping described in
-[ListFlowsRequestTypeDef](./type_defs.md#listflowsrequesttypedef).
+[ListFlowsRequestRequestTypeDef](./type_defs.md#listflowsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListFlowsResponseResponseTypeDef](./type_defs.md#listflowsresponseresponsetypedef).
+Returns [ListFlowsResponseTypeDef](./type_defs.md#listflowsresponsetypedef).
 
 ### list_offerings
 
@@ -403,7 +412,7 @@ Boto3 documentation:
 [MediaConnect.Client.list_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_offerings)
 
 Arguments mapping described in
-[ListOfferingsRequestTypeDef](./type_defs.md#listofferingsrequesttypedef).
+[ListOfferingsRequestRequestTypeDef](./type_defs.md#listofferingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -411,7 +420,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListOfferingsResponseResponseTypeDef](./type_defs.md#listofferingsresponseresponsetypedef).
+[ListOfferingsResponseTypeDef](./type_defs.md#listofferingsresponsetypedef).
 
 ### list_reservations
 
@@ -424,7 +433,7 @@ Boto3 documentation:
 [MediaConnect.Client.list_reservations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_reservations)
 
 Arguments mapping described in
-[ListReservationsRequestTypeDef](./type_defs.md#listreservationsrequesttypedef).
+[ListReservationsRequestRequestTypeDef](./type_defs.md#listreservationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -432,7 +441,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListReservationsResponseResponseTypeDef](./type_defs.md#listreservationsresponseresponsetypedef).
+[ListReservationsResponseTypeDef](./type_defs.md#listreservationsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -448,14 +457,14 @@ Boto3 documentation:
 [MediaConnect.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### purchase_offering
 
@@ -467,7 +476,7 @@ Boto3 documentation:
 [MediaConnect.Client.purchase_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.purchase_offering)
 
 Arguments mapping described in
-[PurchaseOfferingRequestTypeDef](./type_defs.md#purchaseofferingrequesttypedef).
+[PurchaseOfferingRequestRequestTypeDef](./type_defs.md#purchaseofferingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -476,7 +485,7 @@ Keyword-only arguments:
 - `Start`: `str` *(required)*
 
 Returns
-[PurchaseOfferingResponseResponseTypeDef](./type_defs.md#purchaseofferingresponseresponsetypedef).
+[PurchaseOfferingResponseTypeDef](./type_defs.md#purchaseofferingresponsetypedef).
 
 ### remove_flow_media_stream
 
@@ -489,7 +498,7 @@ Boto3 documentation:
 [MediaConnect.Client.remove_flow_media_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_media_stream)
 
 Arguments mapping described in
-[RemoveFlowMediaStreamRequestTypeDef](./type_defs.md#removeflowmediastreamrequesttypedef).
+[RemoveFlowMediaStreamRequestRequestTypeDef](./type_defs.md#removeflowmediastreamrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -497,7 +506,7 @@ Keyword-only arguments:
 - `MediaStreamName`: `str` *(required)*
 
 Returns
-[RemoveFlowMediaStreamResponseResponseTypeDef](./type_defs.md#removeflowmediastreamresponseresponsetypedef).
+[RemoveFlowMediaStreamResponseTypeDef](./type_defs.md#removeflowmediastreamresponsetypedef).
 
 ### remove_flow_output
 
@@ -509,7 +518,7 @@ Boto3 documentation:
 [MediaConnect.Client.remove_flow_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_output)
 
 Arguments mapping described in
-[RemoveFlowOutputRequestTypeDef](./type_defs.md#removeflowoutputrequesttypedef).
+[RemoveFlowOutputRequestRequestTypeDef](./type_defs.md#removeflowoutputrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -517,7 +526,7 @@ Keyword-only arguments:
 - `OutputArn`: `str` *(required)*
 
 Returns
-[RemoveFlowOutputResponseResponseTypeDef](./type_defs.md#removeflowoutputresponseresponsetypedef).
+[RemoveFlowOutputResponseTypeDef](./type_defs.md#removeflowoutputresponsetypedef).
 
 ### remove_flow_source
 
@@ -529,7 +538,7 @@ Boto3 documentation:
 [MediaConnect.Client.remove_flow_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_source)
 
 Arguments mapping described in
-[RemoveFlowSourceRequestTypeDef](./type_defs.md#removeflowsourcerequesttypedef).
+[RemoveFlowSourceRequestRequestTypeDef](./type_defs.md#removeflowsourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -537,7 +546,7 @@ Keyword-only arguments:
 - `SourceArn`: `str` *(required)*
 
 Returns
-[RemoveFlowSourceResponseResponseTypeDef](./type_defs.md#removeflowsourceresponseresponsetypedef).
+[RemoveFlowSourceResponseTypeDef](./type_defs.md#removeflowsourceresponsetypedef).
 
 ### remove_flow_vpc_interface
 
@@ -550,7 +559,7 @@ Boto3 documentation:
 [MediaConnect.Client.remove_flow_vpc_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_vpc_interface)
 
 Arguments mapping described in
-[RemoveFlowVpcInterfaceRequestTypeDef](./type_defs.md#removeflowvpcinterfacerequesttypedef).
+[RemoveFlowVpcInterfaceRequestRequestTypeDef](./type_defs.md#removeflowvpcinterfacerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -558,7 +567,7 @@ Keyword-only arguments:
 - `VpcInterfaceName`: `str` *(required)*
 
 Returns
-[RemoveFlowVpcInterfaceResponseResponseTypeDef](./type_defs.md#removeflowvpcinterfaceresponseresponsetypedef).
+[RemoveFlowVpcInterfaceResponseTypeDef](./type_defs.md#removeflowvpcinterfaceresponsetypedef).
 
 ### revoke_flow_entitlement
 
@@ -571,7 +580,7 @@ Boto3 documentation:
 [MediaConnect.Client.revoke_flow_entitlement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.revoke_flow_entitlement)
 
 Arguments mapping described in
-[RevokeFlowEntitlementRequestTypeDef](./type_defs.md#revokeflowentitlementrequesttypedef).
+[RevokeFlowEntitlementRequestRequestTypeDef](./type_defs.md#revokeflowentitlementrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -579,7 +588,7 @@ Keyword-only arguments:
 - `FlowArn`: `str` *(required)*
 
 Returns
-[RevokeFlowEntitlementResponseResponseTypeDef](./type_defs.md#revokeflowentitlementresponseresponsetypedef).
+[RevokeFlowEntitlementResponseTypeDef](./type_defs.md#revokeflowentitlementresponsetypedef).
 
 ### start_flow
 
@@ -591,14 +600,13 @@ Boto3 documentation:
 [MediaConnect.Client.start_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.start_flow)
 
 Arguments mapping described in
-[StartFlowRequestTypeDef](./type_defs.md#startflowrequesttypedef).
+[StartFlowRequestRequestTypeDef](./type_defs.md#startflowrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 
-Returns
-[StartFlowResponseResponseTypeDef](./type_defs.md#startflowresponseresponsetypedef).
+Returns [StartFlowResponseTypeDef](./type_defs.md#startflowresponsetypedef).
 
 ### stop_flow
 
@@ -610,14 +618,13 @@ Boto3 documentation:
 [MediaConnect.Client.stop_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.stop_flow)
 
 Arguments mapping described in
-[StopFlowRequestTypeDef](./type_defs.md#stopflowrequesttypedef).
+[StopFlowRequestRequestTypeDef](./type_defs.md#stopflowrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 
-Returns
-[StopFlowResponseResponseTypeDef](./type_defs.md#stopflowresponseresponsetypedef).
+Returns [StopFlowResponseTypeDef](./type_defs.md#stopflowresponsetypedef).
 
 ### tag_resource
 
@@ -629,7 +636,7 @@ Boto3 documentation:
 [MediaConnect.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -646,7 +653,7 @@ Boto3 documentation:
 [MediaConnect.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -666,7 +673,7 @@ Boto3 documentation:
 [MediaConnect.Client.update_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow)
 
 Arguments mapping described in
-[UpdateFlowRequestTypeDef](./type_defs.md#updateflowrequesttypedef).
+[UpdateFlowRequestRequestTypeDef](./type_defs.md#updateflowrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -674,8 +681,7 @@ Keyword-only arguments:
 - `SourceFailoverConfig`:
   [UpdateFailoverConfigTypeDef](./type_defs.md#updatefailoverconfigtypedef)
 
-Returns
-[UpdateFlowResponseResponseTypeDef](./type_defs.md#updateflowresponseresponsetypedef).
+Returns [UpdateFlowResponseTypeDef](./type_defs.md#updateflowresponsetypedef).
 
 ### update_flow_entitlement
 
@@ -688,7 +694,7 @@ Boto3 documentation:
 [MediaConnect.Client.update_flow_entitlement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_entitlement)
 
 Arguments mapping described in
-[UpdateFlowEntitlementRequestTypeDef](./type_defs.md#updateflowentitlementrequesttypedef).
+[UpdateFlowEntitlementRequestRequestTypeDef](./type_defs.md#updateflowentitlementrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -702,7 +708,7 @@ Keyword-only arguments:
 - `Subscribers`: `List`\[`str`\]
 
 Returns
-[UpdateFlowEntitlementResponseResponseTypeDef](./type_defs.md#updateflowentitlementresponseresponsetypedef).
+[UpdateFlowEntitlementResponseTypeDef](./type_defs.md#updateflowentitlementresponsetypedef).
 
 ### update_flow_media_stream
 
@@ -715,7 +721,7 @@ Boto3 documentation:
 [MediaConnect.Client.update_flow_media_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_media_stream)
 
 Arguments mapping described in
-[UpdateFlowMediaStreamRequestTypeDef](./type_defs.md#updateflowmediastreamrequesttypedef).
+[UpdateFlowMediaStreamRequestRequestTypeDef](./type_defs.md#updateflowmediastreamrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -729,7 +735,7 @@ Keyword-only arguments:
 - `VideoFormat`: `str`
 
 Returns
-[UpdateFlowMediaStreamResponseResponseTypeDef](./type_defs.md#updateflowmediastreamresponseresponsetypedef).
+[UpdateFlowMediaStreamResponseTypeDef](./type_defs.md#updateflowmediastreamresponsetypedef).
 
 ### update_flow_output
 
@@ -741,7 +747,7 @@ Boto3 documentation:
 [MediaConnect.Client.update_flow_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_output)
 
 Arguments mapping described in
-[UpdateFlowOutputRequestTypeDef](./type_defs.md#updateflowoutputrequesttypedef).
+[UpdateFlowOutputRequestRequestTypeDef](./type_defs.md#updateflowoutputrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -765,7 +771,7 @@ Keyword-only arguments:
   [VpcInterfaceAttachmentTypeDef](./type_defs.md#vpcinterfaceattachmenttypedef)
 
 Returns
-[UpdateFlowOutputResponseResponseTypeDef](./type_defs.md#updateflowoutputresponseresponsetypedef).
+[UpdateFlowOutputResponseTypeDef](./type_defs.md#updateflowoutputresponsetypedef).
 
 ### update_flow_source
 
@@ -777,7 +783,7 @@ Boto3 documentation:
 [MediaConnect.Client.update_flow_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_source)
 
 Arguments mapping described in
-[UpdateFlowSourceRequestTypeDef](./type_defs.md#updateflowsourcerequesttypedef).
+[UpdateFlowSourceRequestRequestTypeDef](./type_defs.md#updateflowsourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -800,7 +806,7 @@ Keyword-only arguments:
 - `WhitelistCidr`: `str`
 
 Returns
-[UpdateFlowSourceResponseResponseTypeDef](./type_defs.md#updateflowsourceresponseresponsetypedef).
+[UpdateFlowSourceResponseTypeDef](./type_defs.md#updateflowsourceresponsetypedef).
 
 ### get_paginator
 

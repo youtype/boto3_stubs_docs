@@ -11,6 +11,7 @@ type annotations stubs module
   - [RAMClient](#ramclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [accept_resource_share_invitation](#accept_resource_share_invitation)
     - [associate_resource_share](#associate_resource_share)
     - [associate_resource_share_permission](#associate_resource_share_permission)
@@ -94,6 +95,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+RAMClient exceptions.
+
+Type annotations for `boto3.client("ram").exceptions` method.
+
+Boto3 documentation:
+[RAM.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### accept_resource_share_invitation
 
 Accepts an invitation to a resource share from another AWS account.
@@ -105,7 +117,7 @@ Boto3 documentation:
 [RAM.Client.accept_resource_share_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.accept_resource_share_invitation)
 
 Arguments mapping described in
-[AcceptResourceShareInvitationRequestTypeDef](./type_defs.md#acceptresourceshareinvitationrequesttypedef).
+[AcceptResourceShareInvitationRequestRequestTypeDef](./type_defs.md#acceptresourceshareinvitationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -113,7 +125,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[AcceptResourceShareInvitationResponseResponseTypeDef](./type_defs.md#acceptresourceshareinvitationresponseresponsetypedef).
+[AcceptResourceShareInvitationResponseTypeDef](./type_defs.md#acceptresourceshareinvitationresponsetypedef).
 
 ### associate_resource_share
 
@@ -126,7 +138,7 @@ Boto3 documentation:
 [RAM.Client.associate_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.associate_resource_share)
 
 Arguments mapping described in
-[AssociateResourceShareRequestTypeDef](./type_defs.md#associateresourcesharerequesttypedef).
+[AssociateResourceShareRequestRequestTypeDef](./type_defs.md#associateresourcesharerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -136,7 +148,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[AssociateResourceShareResponseResponseTypeDef](./type_defs.md#associateresourceshareresponseresponsetypedef).
+[AssociateResourceShareResponseTypeDef](./type_defs.md#associateresourceshareresponsetypedef).
 
 ### associate_resource_share_permission
 
@@ -149,7 +161,7 @@ Boto3 documentation:
 [RAM.Client.associate_resource_share_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.associate_resource_share_permission)
 
 Arguments mapping described in
-[AssociateResourceSharePermissionRequestTypeDef](./type_defs.md#associateresourcesharepermissionrequesttypedef).
+[AssociateResourceSharePermissionRequestRequestTypeDef](./type_defs.md#associateresourcesharepermissionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -160,7 +172,7 @@ Keyword-only arguments:
 - `permissionVersion`: `int`
 
 Returns
-[AssociateResourceSharePermissionResponseResponseTypeDef](./type_defs.md#associateresourcesharepermissionresponseresponsetypedef).
+[AssociateResourceSharePermissionResponseTypeDef](./type_defs.md#associateresourcesharepermissionresponsetypedef).
 
 ### can_paginate
 
@@ -187,7 +199,7 @@ Boto3 documentation:
 [RAM.Client.create_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.create_resource_share)
 
 Arguments mapping described in
-[CreateResourceShareRequestTypeDef](./type_defs.md#createresourcesharerequesttypedef).
+[CreateResourceShareRequestRequestTypeDef](./type_defs.md#createresourcesharerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -200,7 +212,7 @@ Keyword-only arguments:
 - `permissionArns`: `List`\[`str`\]
 
 Returns
-[CreateResourceShareResponseResponseTypeDef](./type_defs.md#createresourceshareresponseresponsetypedef).
+[CreateResourceShareResponseTypeDef](./type_defs.md#createresourceshareresponsetypedef).
 
 ### delete_resource_share
 
@@ -212,7 +224,7 @@ Boto3 documentation:
 [RAM.Client.delete_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.delete_resource_share)
 
 Arguments mapping described in
-[DeleteResourceShareRequestTypeDef](./type_defs.md#deleteresourcesharerequesttypedef).
+[DeleteResourceShareRequestRequestTypeDef](./type_defs.md#deleteresourcesharerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -220,7 +232,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[DeleteResourceShareResponseResponseTypeDef](./type_defs.md#deleteresourceshareresponseresponsetypedef).
+[DeleteResourceShareResponseTypeDef](./type_defs.md#deleteresourceshareresponsetypedef).
 
 ### disassociate_resource_share
 
@@ -233,7 +245,7 @@ Boto3 documentation:
 [RAM.Client.disassociate_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.disassociate_resource_share)
 
 Arguments mapping described in
-[DisassociateResourceShareRequestTypeDef](./type_defs.md#disassociateresourcesharerequesttypedef).
+[DisassociateResourceShareRequestRequestTypeDef](./type_defs.md#disassociateresourcesharerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -243,7 +255,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[DisassociateResourceShareResponseResponseTypeDef](./type_defs.md#disassociateresourceshareresponseresponsetypedef).
+[DisassociateResourceShareResponseTypeDef](./type_defs.md#disassociateresourceshareresponsetypedef).
 
 ### disassociate_resource_share_permission
 
@@ -256,7 +268,7 @@ Boto3 documentation:
 [RAM.Client.disassociate_resource_share_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.disassociate_resource_share_permission)
 
 Arguments mapping described in
-[DisassociateResourceSharePermissionRequestTypeDef](./type_defs.md#disassociateresourcesharepermissionrequesttypedef).
+[DisassociateResourceSharePermissionRequestRequestTypeDef](./type_defs.md#disassociateresourcesharepermissionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -265,7 +277,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[DisassociateResourceSharePermissionResponseResponseTypeDef](./type_defs.md#disassociateresourcesharepermissionresponseresponsetypedef).
+[DisassociateResourceSharePermissionResponseTypeDef](./type_defs.md#disassociateresourcesharepermissionresponsetypedef).
 
 ### enable_sharing_with_aws_organization
 
@@ -278,7 +290,7 @@ Boto3 documentation:
 [RAM.Client.enable_sharing_with_aws_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.enable_sharing_with_aws_organization)
 
 Returns
-[EnableSharingWithAwsOrganizationResponseResponseTypeDef](./type_defs.md#enablesharingwithawsorganizationresponseresponsetypedef).
+[EnableSharingWithAwsOrganizationResponseTypeDef](./type_defs.md#enablesharingwithawsorganizationresponsetypedef).
 
 ### generate_presigned_url
 
@@ -308,7 +320,7 @@ Boto3 documentation:
 [RAM.Client.get_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_permission)
 
 Arguments mapping described in
-[GetPermissionRequestTypeDef](./type_defs.md#getpermissionrequesttypedef).
+[GetPermissionRequestRequestTypeDef](./type_defs.md#getpermissionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -316,7 +328,7 @@ Keyword-only arguments:
 - `permissionVersion`: `int`
 
 Returns
-[GetPermissionResponseResponseTypeDef](./type_defs.md#getpermissionresponseresponsetypedef).
+[GetPermissionResponseTypeDef](./type_defs.md#getpermissionresponsetypedef).
 
 ### get_resource_policies
 
@@ -328,7 +340,7 @@ Boto3 documentation:
 [RAM.Client.get_resource_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_policies)
 
 Arguments mapping described in
-[GetResourcePoliciesRequestTypeDef](./type_defs.md#getresourcepoliciesrequesttypedef).
+[GetResourcePoliciesRequestRequestTypeDef](./type_defs.md#getresourcepoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -338,7 +350,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetResourcePoliciesResponseResponseTypeDef](./type_defs.md#getresourcepoliciesresponseresponsetypedef).
+[GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef).
 
 ### get_resource_share_associations
 
@@ -351,7 +363,7 @@ Boto3 documentation:
 [RAM.Client.get_resource_share_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_share_associations)
 
 Arguments mapping described in
-[GetResourceShareAssociationsRequestTypeDef](./type_defs.md#getresourceshareassociationsrequesttypedef).
+[GetResourceShareAssociationsRequestRequestTypeDef](./type_defs.md#getresourceshareassociationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -367,7 +379,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetResourceShareAssociationsResponseResponseTypeDef](./type_defs.md#getresourceshareassociationsresponseresponsetypedef).
+[GetResourceShareAssociationsResponseTypeDef](./type_defs.md#getresourceshareassociationsresponsetypedef).
 
 ### get_resource_share_invitations
 
@@ -380,7 +392,7 @@ Boto3 documentation:
 [RAM.Client.get_resource_share_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_share_invitations)
 
 Arguments mapping described in
-[GetResourceShareInvitationsRequestTypeDef](./type_defs.md#getresourceshareinvitationsrequesttypedef).
+[GetResourceShareInvitationsRequestRequestTypeDef](./type_defs.md#getresourceshareinvitationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -390,7 +402,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetResourceShareInvitationsResponseResponseTypeDef](./type_defs.md#getresourceshareinvitationsresponseresponsetypedef).
+[GetResourceShareInvitationsResponseTypeDef](./type_defs.md#getresourceshareinvitationsresponsetypedef).
 
 ### get_resource_shares
 
@@ -403,7 +415,7 @@ Boto3 documentation:
 [RAM.Client.get_resource_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_shares)
 
 Arguments mapping described in
-[GetResourceSharesRequestTypeDef](./type_defs.md#getresourcesharesrequesttypedef).
+[GetResourceSharesRequestRequestTypeDef](./type_defs.md#getresourcesharesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -419,7 +431,7 @@ Keyword-only arguments:
 - `permissionArn`: `str`
 
 Returns
-[GetResourceSharesResponseResponseTypeDef](./type_defs.md#getresourcesharesresponseresponsetypedef).
+[GetResourceSharesResponseTypeDef](./type_defs.md#getresourcesharesresponsetypedef).
 
 ### list_pending_invitation_resources
 
@@ -433,7 +445,7 @@ Boto3 documentation:
 [RAM.Client.list_pending_invitation_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_pending_invitation_resources)
 
 Arguments mapping described in
-[ListPendingInvitationResourcesRequestTypeDef](./type_defs.md#listpendinginvitationresourcesrequesttypedef).
+[ListPendingInvitationResourcesRequestRequestTypeDef](./type_defs.md#listpendinginvitationresourcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -442,7 +454,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListPendingInvitationResourcesResponseResponseTypeDef](./type_defs.md#listpendinginvitationresourcesresponseresponsetypedef).
+[ListPendingInvitationResourcesResponseTypeDef](./type_defs.md#listpendinginvitationresourcesresponsetypedef).
 
 ### list_permissions
 
@@ -454,7 +466,7 @@ Boto3 documentation:
 [RAM.Client.list_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_permissions)
 
 Arguments mapping described in
-[ListPermissionsRequestTypeDef](./type_defs.md#listpermissionsrequesttypedef).
+[ListPermissionsRequestRequestTypeDef](./type_defs.md#listpermissionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -463,7 +475,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListPermissionsResponseResponseTypeDef](./type_defs.md#listpermissionsresponseresponsetypedef).
+[ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef).
 
 ### list_principals
 
@@ -476,7 +488,7 @@ Boto3 documentation:
 [RAM.Client.list_principals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_principals)
 
 Arguments mapping described in
-[ListPrincipalsRequestTypeDef](./type_defs.md#listprincipalsrequesttypedef).
+[ListPrincipalsRequestRequestTypeDef](./type_defs.md#listprincipalsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -490,7 +502,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListPrincipalsResponseResponseTypeDef](./type_defs.md#listprincipalsresponseresponsetypedef).
+[ListPrincipalsResponseTypeDef](./type_defs.md#listprincipalsresponsetypedef).
 
 ### list_resource_share_permissions
 
@@ -503,7 +515,7 @@ Boto3 documentation:
 [RAM.Client.list_resource_share_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_resource_share_permissions)
 
 Arguments mapping described in
-[ListResourceSharePermissionsRequestTypeDef](./type_defs.md#listresourcesharepermissionsrequesttypedef).
+[ListResourceSharePermissionsRequestRequestTypeDef](./type_defs.md#listresourcesharepermissionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -512,7 +524,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListResourceSharePermissionsResponseResponseTypeDef](./type_defs.md#listresourcesharepermissionsresponseresponsetypedef).
+[ListResourceSharePermissionsResponseTypeDef](./type_defs.md#listresourcesharepermissionsresponsetypedef).
 
 ### list_resource_types
 
@@ -524,7 +536,7 @@ Boto3 documentation:
 [RAM.Client.list_resource_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_resource_types)
 
 Arguments mapping described in
-[ListResourceTypesRequestTypeDef](./type_defs.md#listresourcetypesrequesttypedef).
+[ListResourceTypesRequestRequestTypeDef](./type_defs.md#listresourcetypesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -532,7 +544,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListResourceTypesResponseResponseTypeDef](./type_defs.md#listresourcetypesresponseresponsetypedef).
+[ListResourceTypesResponseTypeDef](./type_defs.md#listresourcetypesresponsetypedef).
 
 ### list_resources
 
@@ -545,7 +557,7 @@ Boto3 documentation:
 [RAM.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_resources)
 
 Arguments mapping described in
-[ListResourcesRequestTypeDef](./type_defs.md#listresourcesrequesttypedef).
+[ListResourcesRequestRequestTypeDef](./type_defs.md#listresourcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -559,7 +571,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListResourcesResponseResponseTypeDef](./type_defs.md#listresourcesresponseresponsetypedef).
+[ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef).
 
 ### promote_resource_share_created_from_policy
 
@@ -574,14 +586,14 @@ Boto3 documentation:
 [RAM.Client.promote_resource_share_created_from_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.promote_resource_share_created_from_policy)
 
 Arguments mapping described in
-[PromoteResourceShareCreatedFromPolicyRequestTypeDef](./type_defs.md#promoteresourcesharecreatedfrompolicyrequesttypedef).
+[PromoteResourceShareCreatedFromPolicyRequestRequestTypeDef](./type_defs.md#promoteresourcesharecreatedfrompolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceShareArn`: `str` *(required)*
 
 Returns
-[PromoteResourceShareCreatedFromPolicyResponseResponseTypeDef](./type_defs.md#promoteresourcesharecreatedfrompolicyresponseresponsetypedef).
+[PromoteResourceShareCreatedFromPolicyResponseTypeDef](./type_defs.md#promoteresourcesharecreatedfrompolicyresponsetypedef).
 
 ### reject_resource_share_invitation
 
@@ -594,7 +606,7 @@ Boto3 documentation:
 [RAM.Client.reject_resource_share_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.reject_resource_share_invitation)
 
 Arguments mapping described in
-[RejectResourceShareInvitationRequestTypeDef](./type_defs.md#rejectresourceshareinvitationrequesttypedef).
+[RejectResourceShareInvitationRequestRequestTypeDef](./type_defs.md#rejectresourceshareinvitationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -602,7 +614,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[RejectResourceShareInvitationResponseResponseTypeDef](./type_defs.md#rejectresourceshareinvitationresponseresponsetypedef).
+[RejectResourceShareInvitationResponseTypeDef](./type_defs.md#rejectresourceshareinvitationresponsetypedef).
 
 ### tag_resource
 
@@ -614,7 +626,7 @@ Boto3 documentation:
 [RAM.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -633,7 +645,7 @@ Boto3 documentation:
 [RAM.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -652,7 +664,7 @@ Boto3 documentation:
 [RAM.Client.update_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.update_resource_share)
 
 Arguments mapping described in
-[UpdateResourceShareRequestTypeDef](./type_defs.md#updateresourcesharerequesttypedef).
+[UpdateResourceShareRequestRequestTypeDef](./type_defs.md#updateresourcesharerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -662,7 +674,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[UpdateResourceShareResponseResponseTypeDef](./type_defs.md#updateresourceshareresponseresponsetypedef).
+[UpdateResourceShareResponseTypeDef](./type_defs.md#updateresourceshareresponsetypedef).
 
 ### get_paginator
 

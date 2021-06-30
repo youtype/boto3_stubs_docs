@@ -136,7 +136,7 @@ Arguments for `DescribeAddressesAttributePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAddressesAttributePaginator.paginate` returns
-`Iterator`\[[DescribeAddressesAttributeResultResponseTypeDef](./type_defs.md#describeaddressesattributeresultresponsetypedef)\].
+`Iterator`\[[DescribeAddressesAttributeResultTypeDef](./type_defs.md#describeaddressesattributeresulttypedef)\].
 
 ## DescribeByoipCidrsPaginator
 
@@ -162,7 +162,7 @@ Arguments for `DescribeByoipCidrsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeByoipCidrsPaginator.paginate` returns
-`Iterator`\[[DescribeByoipCidrsResultResponseTypeDef](./type_defs.md#describebyoipcidrsresultresponsetypedef)\].
+`Iterator`\[[DescribeByoipCidrsResultTypeDef](./type_defs.md#describebyoipcidrsresulttypedef)\].
 
 ## DescribeCapacityReservationsPaginator
 
@@ -190,7 +190,7 @@ Arguments for `DescribeCapacityReservationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCapacityReservationsPaginator.paginate` returns
-`Iterator`\[[DescribeCapacityReservationsResultResponseTypeDef](./type_defs.md#describecapacityreservationsresultresponsetypedef)\].
+`Iterator`\[[DescribeCapacityReservationsResultTypeDef](./type_defs.md#describecapacityreservationsresulttypedef)\].
 
 ## DescribeCarrierGatewaysPaginator
 
@@ -218,7 +218,7 @@ Arguments for `DescribeCarrierGatewaysPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCarrierGatewaysPaginator.paginate` returns
-`Iterator`\[[DescribeCarrierGatewaysResultResponseTypeDef](./type_defs.md#describecarriergatewaysresultresponsetypedef)\].
+`Iterator`\[[DescribeCarrierGatewaysResultTypeDef](./type_defs.md#describecarriergatewaysresulttypedef)\].
 
 ## DescribeClassicLinkInstancesPaginator
 
@@ -246,7 +246,7 @@ Arguments for `DescribeClassicLinkInstancesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClassicLinkInstancesPaginator.paginate` returns
-`Iterator`\[[DescribeClassicLinkInstancesResultResponseTypeDef](./type_defs.md#describeclassiclinkinstancesresultresponsetypedef)\].
+`Iterator`\[[DescribeClassicLinkInstancesResultTypeDef](./type_defs.md#describeclassiclinkinstancesresulttypedef)\].
 
 ## DescribeClientVpnAuthorizationRulesPaginator
 
@@ -274,7 +274,7 @@ Arguments for `DescribeClientVpnAuthorizationRulesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClientVpnAuthorizationRulesPaginator.paginate` returns
-`Iterator`\[[DescribeClientVpnAuthorizationRulesResultResponseTypeDef](./type_defs.md#describeclientvpnauthorizationrulesresultresponsetypedef)\].
+`Iterator`\[[DescribeClientVpnAuthorizationRulesResultTypeDef](./type_defs.md#describeclientvpnauthorizationrulesresulttypedef)\].
 
 ## DescribeClientVpnConnectionsPaginator
 
@@ -302,7 +302,7 @@ Arguments for `DescribeClientVpnConnectionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClientVpnConnectionsPaginator.paginate` returns
-`Iterator`\[[DescribeClientVpnConnectionsResultResponseTypeDef](./type_defs.md#describeclientvpnconnectionsresultresponsetypedef)\].
+`Iterator`\[[DescribeClientVpnConnectionsResultTypeDef](./type_defs.md#describeclientvpnconnectionsresulttypedef)\].
 
 ## DescribeClientVpnEndpointsPaginator
 
@@ -330,7 +330,7 @@ Arguments for `DescribeClientVpnEndpointsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClientVpnEndpointsPaginator.paginate` returns
-`Iterator`\[[DescribeClientVpnEndpointsResultResponseTypeDef](./type_defs.md#describeclientvpnendpointsresultresponsetypedef)\].
+`Iterator`\[[DescribeClientVpnEndpointsResultTypeDef](./type_defs.md#describeclientvpnendpointsresulttypedef)\].
 
 ## DescribeClientVpnRoutesPaginator
 
@@ -358,7 +358,7 @@ Arguments for `DescribeClientVpnRoutesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClientVpnRoutesPaginator.paginate` returns
-`Iterator`\[[DescribeClientVpnRoutesResultResponseTypeDef](./type_defs.md#describeclientvpnroutesresultresponsetypedef)\].
+`Iterator`\[[DescribeClientVpnRoutesResultTypeDef](./type_defs.md#describeclientvpnroutesresulttypedef)\].
 
 ## DescribeClientVpnTargetNetworksPaginator
 
@@ -387,7 +387,7 @@ Arguments for `DescribeClientVpnTargetNetworksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClientVpnTargetNetworksPaginator.paginate` returns
-`Iterator`\[[DescribeClientVpnTargetNetworksResultResponseTypeDef](./type_defs.md#describeclientvpntargetnetworksresultresponsetypedef)\].
+`Iterator`\[[DescribeClientVpnTargetNetworksResultTypeDef](./type_defs.md#describeclientvpntargetnetworksresulttypedef)\].
 
 ## DescribeCoipPoolsPaginator
 
@@ -415,7 +415,7 @@ Arguments for `DescribeCoipPoolsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCoipPoolsPaginator.paginate` returns
-`Iterator`\[[DescribeCoipPoolsResultResponseTypeDef](./type_defs.md#describecoippoolsresultresponsetypedef)\].
+`Iterator`\[[DescribeCoipPoolsResultTypeDef](./type_defs.md#describecoippoolsresulttypedef)\].
 
 ## DescribeDhcpOptionsPaginator
 
@@ -443,7 +443,7 @@ Arguments for `DescribeDhcpOptionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDhcpOptionsPaginator.paginate` returns
-`Iterator`\[[DescribeDhcpOptionsResultResponseTypeDef](./type_defs.md#describedhcpoptionsresultresponsetypedef)\].
+`Iterator`\[[DescribeDhcpOptionsResultTypeDef](./type_defs.md#describedhcpoptionsresulttypedef)\].
 
 ## DescribeEgressOnlyInternetGatewaysPaginator
 
@@ -471,7 +471,7 @@ Arguments for `DescribeEgressOnlyInternetGatewaysPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEgressOnlyInternetGatewaysPaginator.paginate` returns
-`Iterator`\[[DescribeEgressOnlyInternetGatewaysResultResponseTypeDef](./type_defs.md#describeegressonlyinternetgatewaysresultresponsetypedef)\].
+`Iterator`\[[DescribeEgressOnlyInternetGatewaysResultTypeDef](./type_defs.md#describeegressonlyinternetgatewaysresulttypedef)\].
 
 ## DescribeExportImageTasksPaginator
 
@@ -499,7 +499,7 @@ Arguments for `DescribeExportImageTasksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeExportImageTasksPaginator.paginate` returns
-`Iterator`\[[DescribeExportImageTasksResultResponseTypeDef](./type_defs.md#describeexportimagetasksresultresponsetypedef)\].
+`Iterator`\[[DescribeExportImageTasksResultTypeDef](./type_defs.md#describeexportimagetasksresulttypedef)\].
 
 ## DescribeFastSnapshotRestoresPaginator
 
@@ -526,7 +526,7 @@ Arguments for `DescribeFastSnapshotRestoresPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFastSnapshotRestoresPaginator.paginate` returns
-`Iterator`\[[DescribeFastSnapshotRestoresResultResponseTypeDef](./type_defs.md#describefastsnapshotrestoresresultresponsetypedef)\].
+`Iterator`\[[DescribeFastSnapshotRestoresResultTypeDef](./type_defs.md#describefastsnapshotrestoresresulttypedef)\].
 
 ## DescribeFleetsPaginator
 
@@ -553,7 +553,7 @@ Arguments for `DescribeFleetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFleetsPaginator.paginate` returns
-`Iterator`\[[DescribeFleetsResultResponseTypeDef](./type_defs.md#describefleetsresultresponsetypedef)\].
+`Iterator`\[[DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef)\].
 
 ## DescribeFlowLogsPaginator
 
@@ -580,7 +580,7 @@ Arguments for `DescribeFlowLogsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFlowLogsPaginator.paginate` returns
-`Iterator`\[[DescribeFlowLogsResultResponseTypeDef](./type_defs.md#describeflowlogsresultresponsetypedef)\].
+`Iterator`\[[DescribeFlowLogsResultTypeDef](./type_defs.md#describeflowlogsresulttypedef)\].
 
 ## DescribeFpgaImagesPaginator
 
@@ -609,7 +609,7 @@ Arguments for `DescribeFpgaImagesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFpgaImagesPaginator.paginate` returns
-`Iterator`\[[DescribeFpgaImagesResultResponseTypeDef](./type_defs.md#describefpgaimagesresultresponsetypedef)\].
+`Iterator`\[[DescribeFpgaImagesResultTypeDef](./type_defs.md#describefpgaimagesresulttypedef)\].
 
 ## DescribeHostReservationOfferingsPaginator
 
@@ -638,7 +638,7 @@ Arguments for `DescribeHostReservationOfferingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeHostReservationOfferingsPaginator.paginate` returns
-`Iterator`\[[DescribeHostReservationOfferingsResultResponseTypeDef](./type_defs.md#describehostreservationofferingsresultresponsetypedef)\].
+`Iterator`\[[DescribeHostReservationOfferingsResultTypeDef](./type_defs.md#describehostreservationofferingsresulttypedef)\].
 
 ## DescribeHostReservationsPaginator
 
@@ -665,7 +665,7 @@ Arguments for `DescribeHostReservationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeHostReservationsPaginator.paginate` returns
-`Iterator`\[[DescribeHostReservationsResultResponseTypeDef](./type_defs.md#describehostreservationsresultresponsetypedef)\].
+`Iterator`\[[DescribeHostReservationsResultTypeDef](./type_defs.md#describehostreservationsresulttypedef)\].
 
 ## DescribeHostsPaginator
 
@@ -691,7 +691,7 @@ Arguments for `DescribeHostsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeHostsPaginator.paginate` returns
-`Iterator`\[[DescribeHostsResultResponseTypeDef](./type_defs.md#describehostsresultresponsetypedef)\].
+`Iterator`\[[DescribeHostsResultTypeDef](./type_defs.md#describehostsresulttypedef)\].
 
 ## DescribeIamInstanceProfileAssociationsPaginator
 
@@ -719,7 +719,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeIamInstanceProfileAssociationsPaginator.paginate` returns
-`Iterator`\[[DescribeIamInstanceProfileAssociationsResultResponseTypeDef](./type_defs.md#describeiaminstanceprofileassociationsresultresponsetypedef)\].
+`Iterator`\[[DescribeIamInstanceProfileAssociationsResultTypeDef](./type_defs.md#describeiaminstanceprofileassociationsresulttypedef)\].
 
 ## DescribeImportImageTasksPaginator
 
@@ -747,7 +747,7 @@ Arguments for `DescribeImportImageTasksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeImportImageTasksPaginator.paginate` returns
-`Iterator`\[[DescribeImportImageTasksResultResponseTypeDef](./type_defs.md#describeimportimagetasksresultresponsetypedef)\].
+`Iterator`\[[DescribeImportImageTasksResultTypeDef](./type_defs.md#describeimportimagetasksresulttypedef)\].
 
 ## DescribeImportSnapshotTasksPaginator
 
@@ -775,7 +775,7 @@ Arguments for `DescribeImportSnapshotTasksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeImportSnapshotTasksPaginator.paginate` returns
-`Iterator`\[[DescribeImportSnapshotTasksResultResponseTypeDef](./type_defs.md#describeimportsnapshottasksresultresponsetypedef)\].
+`Iterator`\[[DescribeImportSnapshotTasksResultTypeDef](./type_defs.md#describeimportsnapshottasksresulttypedef)\].
 
 ## DescribeInstanceCreditSpecificationsPaginator
 
@@ -803,7 +803,7 @@ Arguments for `DescribeInstanceCreditSpecificationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstanceCreditSpecificationsPaginator.paginate` returns
-`Iterator`\[[DescribeInstanceCreditSpecificationsResultResponseTypeDef](./type_defs.md#describeinstancecreditspecificationsresultresponsetypedef)\].
+`Iterator`\[[DescribeInstanceCreditSpecificationsResultTypeDef](./type_defs.md#describeinstancecreditspecificationsresulttypedef)\].
 
 ## DescribeInstanceStatusPaginator
 
@@ -832,7 +832,7 @@ Arguments for `DescribeInstanceStatusPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstanceStatusPaginator.paginate` returns
-`Iterator`\[[DescribeInstanceStatusResultResponseTypeDef](./type_defs.md#describeinstancestatusresultresponsetypedef)\].
+`Iterator`\[[DescribeInstanceStatusResultTypeDef](./type_defs.md#describeinstancestatusresulttypedef)\].
 
 ## DescribeInstanceTypeOfferingsPaginator
 
@@ -860,7 +860,7 @@ Arguments for `DescribeInstanceTypeOfferingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstanceTypeOfferingsPaginator.paginate` returns
-`Iterator`\[[DescribeInstanceTypeOfferingsResultResponseTypeDef](./type_defs.md#describeinstancetypeofferingsresultresponsetypedef)\].
+`Iterator`\[[DescribeInstanceTypeOfferingsResultTypeDef](./type_defs.md#describeinstancetypeofferingsresulttypedef)\].
 
 ## DescribeInstanceTypesPaginator
 
@@ -888,7 +888,7 @@ Arguments for `DescribeInstanceTypesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstanceTypesPaginator.paginate` returns
-`Iterator`\[[DescribeInstanceTypesResultResponseTypeDef](./type_defs.md#describeinstancetypesresultresponsetypedef)\].
+`Iterator`\[[DescribeInstanceTypesResultTypeDef](./type_defs.md#describeinstancetypesresulttypedef)\].
 
 ## DescribeInstancesPaginator
 
@@ -915,7 +915,7 @@ Arguments for `DescribeInstancesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstancesPaginator.paginate` returns
-`Iterator`\[[DescribeInstancesResultResponseTypeDef](./type_defs.md#describeinstancesresultresponsetypedef)\].
+`Iterator`\[[DescribeInstancesResultTypeDef](./type_defs.md#describeinstancesresulttypedef)\].
 
 ## DescribeInternetGatewaysPaginator
 
@@ -943,7 +943,7 @@ Arguments for `DescribeInternetGatewaysPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInternetGatewaysPaginator.paginate` returns
-`Iterator`\[[DescribeInternetGatewaysResultResponseTypeDef](./type_defs.md#describeinternetgatewaysresultresponsetypedef)\].
+`Iterator`\[[DescribeInternetGatewaysResultTypeDef](./type_defs.md#describeinternetgatewaysresulttypedef)\].
 
 ## DescribeIpv6PoolsPaginator
 
@@ -971,7 +971,7 @@ Arguments for `DescribeIpv6PoolsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeIpv6PoolsPaginator.paginate` returns
-`Iterator`\[[DescribeIpv6PoolsResultResponseTypeDef](./type_defs.md#describeipv6poolsresultresponsetypedef)\].
+`Iterator`\[[DescribeIpv6PoolsResultTypeDef](./type_defs.md#describeipv6poolsresulttypedef)\].
 
 ## DescribeLaunchTemplateVersionsPaginator
 
@@ -1003,7 +1003,7 @@ Arguments for `DescribeLaunchTemplateVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLaunchTemplateVersionsPaginator.paginate` returns
-`Iterator`\[[DescribeLaunchTemplateVersionsResultResponseTypeDef](./type_defs.md#describelaunchtemplateversionsresultresponsetypedef)\].
+`Iterator`\[[DescribeLaunchTemplateVersionsResultTypeDef](./type_defs.md#describelaunchtemplateversionsresulttypedef)\].
 
 ## DescribeLaunchTemplatesPaginator
 
@@ -1032,7 +1032,7 @@ Arguments for `DescribeLaunchTemplatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLaunchTemplatesPaginator.paginate` returns
-`Iterator`\[[DescribeLaunchTemplatesResultResponseTypeDef](./type_defs.md#describelaunchtemplatesresultresponsetypedef)\].
+`Iterator`\[[DescribeLaunchTemplatesResultTypeDef](./type_defs.md#describelaunchtemplatesresulttypedef)\].
 
 ## DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator
 
@@ -1063,7 +1063,7 @@ method:
 
 `DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator.paginate`
 returns
-`Iterator`\[[DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultResponseTypeDef](./type_defs.md#describelocalgatewayroutetablevirtualinterfacegroupassociationsresultresponsetypedef)\].
+`Iterator`\[[DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultTypeDef](./type_defs.md#describelocalgatewayroutetablevirtualinterfacegroupassociationsresulttypedef)\].
 
 ## DescribeLocalGatewayRouteTableVpcAssociationsPaginator
 
@@ -1092,7 +1092,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLocalGatewayRouteTableVpcAssociationsPaginator.paginate` returns
-`Iterator`\[[DescribeLocalGatewayRouteTableVpcAssociationsResultResponseTypeDef](./type_defs.md#describelocalgatewayroutetablevpcassociationsresultresponsetypedef)\].
+`Iterator`\[[DescribeLocalGatewayRouteTableVpcAssociationsResultTypeDef](./type_defs.md#describelocalgatewayroutetablevpcassociationsresulttypedef)\].
 
 ## DescribeLocalGatewayRouteTablesPaginator
 
@@ -1120,7 +1120,7 @@ Arguments for `DescribeLocalGatewayRouteTablesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLocalGatewayRouteTablesPaginator.paginate` returns
-`Iterator`\[[DescribeLocalGatewayRouteTablesResultResponseTypeDef](./type_defs.md#describelocalgatewayroutetablesresultresponsetypedef)\].
+`Iterator`\[[DescribeLocalGatewayRouteTablesResultTypeDef](./type_defs.md#describelocalgatewayroutetablesresulttypedef)\].
 
 ## DescribeLocalGatewayVirtualInterfaceGroupsPaginator
 
@@ -1149,7 +1149,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLocalGatewayVirtualInterfaceGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeLocalGatewayVirtualInterfaceGroupsResultResponseTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacegroupsresultresponsetypedef)\].
+`Iterator`\[[DescribeLocalGatewayVirtualInterfaceGroupsResultTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacegroupsresulttypedef)\].
 
 ## DescribeLocalGatewayVirtualInterfacesPaginator
 
@@ -1177,7 +1177,7 @@ Arguments for `DescribeLocalGatewayVirtualInterfacesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLocalGatewayVirtualInterfacesPaginator.paginate` returns
-`Iterator`\[[DescribeLocalGatewayVirtualInterfacesResultResponseTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacesresultresponsetypedef)\].
+`Iterator`\[[DescribeLocalGatewayVirtualInterfacesResultTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacesresulttypedef)\].
 
 ## DescribeLocalGatewaysPaginator
 
@@ -1205,7 +1205,7 @@ Arguments for `DescribeLocalGatewaysPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLocalGatewaysPaginator.paginate` returns
-`Iterator`\[[DescribeLocalGatewaysResultResponseTypeDef](./type_defs.md#describelocalgatewaysresultresponsetypedef)\].
+`Iterator`\[[DescribeLocalGatewaysResultTypeDef](./type_defs.md#describelocalgatewaysresulttypedef)\].
 
 ## DescribeManagedPrefixListsPaginator
 
@@ -1233,7 +1233,7 @@ Arguments for `DescribeManagedPrefixListsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeManagedPrefixListsPaginator.paginate` returns
-`Iterator`\[[DescribeManagedPrefixListsResultResponseTypeDef](./type_defs.md#describemanagedprefixlistsresultresponsetypedef)\].
+`Iterator`\[[DescribeManagedPrefixListsResultTypeDef](./type_defs.md#describemanagedprefixlistsresulttypedef)\].
 
 ## DescribeMovingAddressesPaginator
 
@@ -1261,7 +1261,7 @@ Arguments for `DescribeMovingAddressesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMovingAddressesPaginator.paginate` returns
-`Iterator`\[[DescribeMovingAddressesResultResponseTypeDef](./type_defs.md#describemovingaddressesresultresponsetypedef)\].
+`Iterator`\[[DescribeMovingAddressesResultTypeDef](./type_defs.md#describemovingaddressesresulttypedef)\].
 
 ## DescribeNatGatewaysPaginator
 
@@ -1289,7 +1289,7 @@ Arguments for `DescribeNatGatewaysPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNatGatewaysPaginator.paginate` returns
-`Iterator`\[[DescribeNatGatewaysResultResponseTypeDef](./type_defs.md#describenatgatewaysresultresponsetypedef)\].
+`Iterator`\[[DescribeNatGatewaysResultTypeDef](./type_defs.md#describenatgatewaysresulttypedef)\].
 
 ## DescribeNetworkAclsPaginator
 
@@ -1317,7 +1317,7 @@ Arguments for `DescribeNetworkAclsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNetworkAclsPaginator.paginate` returns
-`Iterator`\[[DescribeNetworkAclsResultResponseTypeDef](./type_defs.md#describenetworkaclsresultresponsetypedef)\].
+`Iterator`\[[DescribeNetworkAclsResultTypeDef](./type_defs.md#describenetworkaclsresulttypedef)\].
 
 ## DescribeNetworkInsightsAnalysesPaginator
 
@@ -1348,7 +1348,7 @@ Arguments for `DescribeNetworkInsightsAnalysesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNetworkInsightsAnalysesPaginator.paginate` returns
-`Iterator`\[[DescribeNetworkInsightsAnalysesResultResponseTypeDef](./type_defs.md#describenetworkinsightsanalysesresultresponsetypedef)\].
+`Iterator`\[[DescribeNetworkInsightsAnalysesResultTypeDef](./type_defs.md#describenetworkinsightsanalysesresulttypedef)\].
 
 ## DescribeNetworkInsightsPathsPaginator
 
@@ -1376,7 +1376,7 @@ Arguments for `DescribeNetworkInsightsPathsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNetworkInsightsPathsPaginator.paginate` returns
-`Iterator`\[[DescribeNetworkInsightsPathsResultResponseTypeDef](./type_defs.md#describenetworkinsightspathsresultresponsetypedef)\].
+`Iterator`\[[DescribeNetworkInsightsPathsResultTypeDef](./type_defs.md#describenetworkinsightspathsresulttypedef)\].
 
 ## DescribeNetworkInterfacePermissionsPaginator
 
@@ -1403,7 +1403,7 @@ Arguments for `DescribeNetworkInterfacePermissionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNetworkInterfacePermissionsPaginator.paginate` returns
-`Iterator`\[[DescribeNetworkInterfacePermissionsResultResponseTypeDef](./type_defs.md#describenetworkinterfacepermissionsresultresponsetypedef)\].
+`Iterator`\[[DescribeNetworkInterfacePermissionsResultTypeDef](./type_defs.md#describenetworkinterfacepermissionsresulttypedef)\].
 
 ## DescribeNetworkInterfacesPaginator
 
@@ -1431,7 +1431,7 @@ Arguments for `DescribeNetworkInterfacesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNetworkInterfacesPaginator.paginate` returns
-`Iterator`\[[DescribeNetworkInterfacesResultResponseTypeDef](./type_defs.md#describenetworkinterfacesresultresponsetypedef)\].
+`Iterator`\[[DescribeNetworkInterfacesResultTypeDef](./type_defs.md#describenetworkinterfacesresulttypedef)\].
 
 ## DescribePrefixListsPaginator
 
@@ -1459,7 +1459,7 @@ Arguments for `DescribePrefixListsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePrefixListsPaginator.paginate` returns
-`Iterator`\[[DescribePrefixListsResultResponseTypeDef](./type_defs.md#describeprefixlistsresultresponsetypedef)\].
+`Iterator`\[[DescribePrefixListsResultTypeDef](./type_defs.md#describeprefixlistsresulttypedef)\].
 
 ## DescribePrincipalIdFormatPaginator
 
@@ -1486,7 +1486,7 @@ Arguments for `DescribePrincipalIdFormatPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePrincipalIdFormatPaginator.paginate` returns
-`Iterator`\[[DescribePrincipalIdFormatResultResponseTypeDef](./type_defs.md#describeprincipalidformatresultresponsetypedef)\].
+`Iterator`\[[DescribePrincipalIdFormatResultTypeDef](./type_defs.md#describeprincipalidformatresulttypedef)\].
 
 ## DescribePublicIpv4PoolsPaginator
 
@@ -1513,7 +1513,7 @@ Arguments for `DescribePublicIpv4PoolsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePublicIpv4PoolsPaginator.paginate` returns
-`Iterator`\[[DescribePublicIpv4PoolsResultResponseTypeDef](./type_defs.md#describepublicipv4poolsresultresponsetypedef)\].
+`Iterator`\[[DescribePublicIpv4PoolsResultTypeDef](./type_defs.md#describepublicipv4poolsresulttypedef)\].
 
 ## DescribeReplaceRootVolumeTasksPaginator
 
@@ -1541,7 +1541,7 @@ Arguments for `DescribeReplaceRootVolumeTasksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReplaceRootVolumeTasksPaginator.paginate` returns
-`Iterator`\[[DescribeReplaceRootVolumeTasksResultResponseTypeDef](./type_defs.md#describereplacerootvolumetasksresultresponsetypedef)\].
+`Iterator`\[[DescribeReplaceRootVolumeTasksResultTypeDef](./type_defs.md#describereplacerootvolumetasksresulttypedef)\].
 
 ## DescribeReservedInstancesModificationsPaginator
 
@@ -1569,7 +1569,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReservedInstancesModificationsPaginator.paginate` returns
-`Iterator`\[[DescribeReservedInstancesModificationsResultResponseTypeDef](./type_defs.md#describereservedinstancesmodificationsresultresponsetypedef)\].
+`Iterator`\[[DescribeReservedInstancesModificationsResultTypeDef](./type_defs.md#describereservedinstancesmodificationsresulttypedef)\].
 
 ## DescribeReservedInstancesOfferingsPaginator
 
@@ -1609,7 +1609,7 @@ Arguments for `DescribeReservedInstancesOfferingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReservedInstancesOfferingsPaginator.paginate` returns
-`Iterator`\[[DescribeReservedInstancesOfferingsResultResponseTypeDef](./type_defs.md#describereservedinstancesofferingsresultresponsetypedef)\].
+`Iterator`\[[DescribeReservedInstancesOfferingsResultTypeDef](./type_defs.md#describereservedinstancesofferingsresulttypedef)\].
 
 ## DescribeRouteTablesPaginator
 
@@ -1637,7 +1637,7 @@ Arguments for `DescribeRouteTablesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeRouteTablesPaginator.paginate` returns
-`Iterator`\[[DescribeRouteTablesResultResponseTypeDef](./type_defs.md#describeroutetablesresultresponsetypedef)\].
+`Iterator`\[[DescribeRouteTablesResultTypeDef](./type_defs.md#describeroutetablesresulttypedef)\].
 
 ## DescribeScheduledInstanceAvailabilityPaginator
 
@@ -1672,7 +1672,7 @@ Arguments for `DescribeScheduledInstanceAvailabilityPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScheduledInstanceAvailabilityPaginator.paginate` returns
-`Iterator`\[[DescribeScheduledInstanceAvailabilityResultResponseTypeDef](./type_defs.md#describescheduledinstanceavailabilityresultresponsetypedef)\].
+`Iterator`\[[DescribeScheduledInstanceAvailabilityResultTypeDef](./type_defs.md#describescheduledinstanceavailabilityresulttypedef)\].
 
 ## DescribeScheduledInstancesPaginator
 
@@ -1702,7 +1702,7 @@ Arguments for `DescribeScheduledInstancesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScheduledInstancesPaginator.paginate` returns
-`Iterator`\[[DescribeScheduledInstancesResultResponseTypeDef](./type_defs.md#describescheduledinstancesresultresponsetypedef)\].
+`Iterator`\[[DescribeScheduledInstancesResultTypeDef](./type_defs.md#describescheduledinstancesresulttypedef)\].
 
 ## DescribeSecurityGroupsPaginator
 
@@ -1731,7 +1731,7 @@ Arguments for `DescribeSecurityGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSecurityGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeSecurityGroupsResultResponseTypeDef](./type_defs.md#describesecuritygroupsresultresponsetypedef)\].
+`Iterator`\[[DescribeSecurityGroupsResultTypeDef](./type_defs.md#describesecuritygroupsresulttypedef)\].
 
 ## DescribeSnapshotsPaginator
 
@@ -1760,7 +1760,7 @@ Arguments for `DescribeSnapshotsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSnapshotsPaginator.paginate` returns
-`Iterator`\[[DescribeSnapshotsResultResponseTypeDef](./type_defs.md#describesnapshotsresultresponsetypedef)\].
+`Iterator`\[[DescribeSnapshotsResultTypeDef](./type_defs.md#describesnapshotsresulttypedef)\].
 
 ## DescribeSpotFleetInstancesPaginator
 
@@ -1787,7 +1787,7 @@ Arguments for `DescribeSpotFleetInstancesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSpotFleetInstancesPaginator.paginate` returns
-`Iterator`\[[DescribeSpotFleetInstancesResponseResponseTypeDef](./type_defs.md#describespotfleetinstancesresponseresponsetypedef)\].
+`Iterator`\[[DescribeSpotFleetInstancesResponseTypeDef](./type_defs.md#describespotfleetinstancesresponsetypedef)\].
 
 ## DescribeSpotFleetRequestsPaginator
 
@@ -1814,7 +1814,7 @@ Arguments for `DescribeSpotFleetRequestsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSpotFleetRequestsPaginator.paginate` returns
-`Iterator`\[[DescribeSpotFleetRequestsResponseResponseTypeDef](./type_defs.md#describespotfleetrequestsresponseresponsetypedef)\].
+`Iterator`\[[DescribeSpotFleetRequestsResponseTypeDef](./type_defs.md#describespotfleetrequestsresponsetypedef)\].
 
 ## DescribeSpotInstanceRequestsPaginator
 
@@ -1842,7 +1842,7 @@ Arguments for `DescribeSpotInstanceRequestsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSpotInstanceRequestsPaginator.paginate` returns
-`Iterator`\[[DescribeSpotInstanceRequestsResultResponseTypeDef](./type_defs.md#describespotinstancerequestsresultresponsetypedef)\].
+`Iterator`\[[DescribeSpotInstanceRequestsResultTypeDef](./type_defs.md#describespotinstancerequestsresulttypedef)\].
 
 ## DescribeSpotPriceHistoryPaginator
 
@@ -1874,7 +1874,7 @@ Arguments for `DescribeSpotPriceHistoryPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSpotPriceHistoryPaginator.paginate` returns
-`Iterator`\[[DescribeSpotPriceHistoryResultResponseTypeDef](./type_defs.md#describespotpricehistoryresultresponsetypedef)\].
+`Iterator`\[[DescribeSpotPriceHistoryResultTypeDef](./type_defs.md#describespotpricehistoryresulttypedef)\].
 
 ## DescribeStaleSecurityGroupsPaginator
 
@@ -1901,7 +1901,7 @@ Arguments for `DescribeStaleSecurityGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeStaleSecurityGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeStaleSecurityGroupsResultResponseTypeDef](./type_defs.md#describestalesecuritygroupsresultresponsetypedef)\].
+`Iterator`\[[DescribeStaleSecurityGroupsResultTypeDef](./type_defs.md#describestalesecuritygroupsresulttypedef)\].
 
 ## DescribeStoreImageTasksPaginator
 
@@ -1929,7 +1929,7 @@ Arguments for `DescribeStoreImageTasksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeStoreImageTasksPaginator.paginate` returns
-`Iterator`\[[DescribeStoreImageTasksResultResponseTypeDef](./type_defs.md#describestoreimagetasksresultresponsetypedef)\].
+`Iterator`\[[DescribeStoreImageTasksResultTypeDef](./type_defs.md#describestoreimagetasksresulttypedef)\].
 
 ## DescribeSubnetsPaginator
 
@@ -1956,7 +1956,7 @@ Arguments for `DescribeSubnetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSubnetsPaginator.paginate` returns
-`Iterator`\[[DescribeSubnetsResultResponseTypeDef](./type_defs.md#describesubnetsresultresponsetypedef)\].
+`Iterator`\[[DescribeSubnetsResultTypeDef](./type_defs.md#describesubnetsresulttypedef)\].
 
 ## DescribeTagsPaginator
 
@@ -1982,7 +1982,7 @@ Arguments for `DescribeTagsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTagsPaginator.paginate` returns
-`Iterator`\[[DescribeTagsResultResponseTypeDef](./type_defs.md#describetagsresultresponsetypedef)\].
+`Iterator`\[[DescribeTagsResultTypeDef](./type_defs.md#describetagsresulttypedef)\].
 
 ## DescribeTrafficMirrorFiltersPaginator
 
@@ -2010,7 +2010,7 @@ Arguments for `DescribeTrafficMirrorFiltersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTrafficMirrorFiltersPaginator.paginate` returns
-`Iterator`\[[DescribeTrafficMirrorFiltersResultResponseTypeDef](./type_defs.md#describetrafficmirrorfiltersresultresponsetypedef)\].
+`Iterator`\[[DescribeTrafficMirrorFiltersResultTypeDef](./type_defs.md#describetrafficmirrorfiltersresulttypedef)\].
 
 ## DescribeTrafficMirrorSessionsPaginator
 
@@ -2038,7 +2038,7 @@ Arguments for `DescribeTrafficMirrorSessionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTrafficMirrorSessionsPaginator.paginate` returns
-`Iterator`\[[DescribeTrafficMirrorSessionsResultResponseTypeDef](./type_defs.md#describetrafficmirrorsessionsresultresponsetypedef)\].
+`Iterator`\[[DescribeTrafficMirrorSessionsResultTypeDef](./type_defs.md#describetrafficmirrorsessionsresulttypedef)\].
 
 ## DescribeTrafficMirrorTargetsPaginator
 
@@ -2066,7 +2066,7 @@ Arguments for `DescribeTrafficMirrorTargetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTrafficMirrorTargetsPaginator.paginate` returns
-`Iterator`\[[DescribeTrafficMirrorTargetsResultResponseTypeDef](./type_defs.md#describetrafficmirrortargetsresultresponsetypedef)\].
+`Iterator`\[[DescribeTrafficMirrorTargetsResultTypeDef](./type_defs.md#describetrafficmirrortargetsresulttypedef)\].
 
 ## DescribeTransitGatewayAttachmentsPaginator
 
@@ -2094,7 +2094,7 @@ Arguments for `DescribeTransitGatewayAttachmentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewayAttachmentsPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewayAttachmentsResultResponseTypeDef](./type_defs.md#describetransitgatewayattachmentsresultresponsetypedef)\].
+`Iterator`\[[DescribeTransitGatewayAttachmentsResultTypeDef](./type_defs.md#describetransitgatewayattachmentsresulttypedef)\].
 
 ## DescribeTransitGatewayConnectPeersPaginator
 
@@ -2122,7 +2122,7 @@ Arguments for `DescribeTransitGatewayConnectPeersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewayConnectPeersPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewayConnectPeersResultResponseTypeDef](./type_defs.md#describetransitgatewayconnectpeersresultresponsetypedef)\].
+`Iterator`\[[DescribeTransitGatewayConnectPeersResultTypeDef](./type_defs.md#describetransitgatewayconnectpeersresulttypedef)\].
 
 ## DescribeTransitGatewayConnectsPaginator
 
@@ -2150,7 +2150,7 @@ Arguments for `DescribeTransitGatewayConnectsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewayConnectsPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewayConnectsResultResponseTypeDef](./type_defs.md#describetransitgatewayconnectsresultresponsetypedef)\].
+`Iterator`\[[DescribeTransitGatewayConnectsResultTypeDef](./type_defs.md#describetransitgatewayconnectsresulttypedef)\].
 
 ## DescribeTransitGatewayMulticastDomainsPaginator
 
@@ -2179,7 +2179,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewayMulticastDomainsPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewayMulticastDomainsResultResponseTypeDef](./type_defs.md#describetransitgatewaymulticastdomainsresultresponsetypedef)\].
+`Iterator`\[[DescribeTransitGatewayMulticastDomainsResultTypeDef](./type_defs.md#describetransitgatewaymulticastdomainsresulttypedef)\].
 
 ## DescribeTransitGatewayPeeringAttachmentsPaginator
 
@@ -2208,7 +2208,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewayPeeringAttachmentsPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewayPeeringAttachmentsResultResponseTypeDef](./type_defs.md#describetransitgatewaypeeringattachmentsresultresponsetypedef)\].
+`Iterator`\[[DescribeTransitGatewayPeeringAttachmentsResultTypeDef](./type_defs.md#describetransitgatewaypeeringattachmentsresulttypedef)\].
 
 ## DescribeTransitGatewayRouteTablesPaginator
 
@@ -2236,7 +2236,7 @@ Arguments for `DescribeTransitGatewayRouteTablesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewayRouteTablesPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewayRouteTablesResultResponseTypeDef](./type_defs.md#describetransitgatewayroutetablesresultresponsetypedef)\].
+`Iterator`\[[DescribeTransitGatewayRouteTablesResultTypeDef](./type_defs.md#describetransitgatewayroutetablesresulttypedef)\].
 
 ## DescribeTransitGatewayVpcAttachmentsPaginator
 
@@ -2264,7 +2264,7 @@ Arguments for `DescribeTransitGatewayVpcAttachmentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewayVpcAttachmentsPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewayVpcAttachmentsResultResponseTypeDef](./type_defs.md#describetransitgatewayvpcattachmentsresultresponsetypedef)\].
+`Iterator`\[[DescribeTransitGatewayVpcAttachmentsResultTypeDef](./type_defs.md#describetransitgatewayvpcattachmentsresulttypedef)\].
 
 ## DescribeTransitGatewaysPaginator
 
@@ -2292,7 +2292,7 @@ Arguments for `DescribeTransitGatewaysPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewaysPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewaysResultResponseTypeDef](./type_defs.md#describetransitgatewaysresultresponsetypedef)\].
+`Iterator`\[[DescribeTransitGatewaysResultTypeDef](./type_defs.md#describetransitgatewaysresulttypedef)\].
 
 ## DescribeVolumeStatusPaginator
 
@@ -2320,7 +2320,7 @@ Arguments for `DescribeVolumeStatusPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVolumeStatusPaginator.paginate` returns
-`Iterator`\[[DescribeVolumeStatusResultResponseTypeDef](./type_defs.md#describevolumestatusresultresponsetypedef)\].
+`Iterator`\[[DescribeVolumeStatusResultTypeDef](./type_defs.md#describevolumestatusresulttypedef)\].
 
 ## DescribeVolumesPaginator
 
@@ -2347,7 +2347,7 @@ Arguments for `DescribeVolumesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVolumesPaginator.paginate` returns
-`Iterator`\[[DescribeVolumesResultResponseTypeDef](./type_defs.md#describevolumesresultresponsetypedef)\].
+`Iterator`\[[DescribeVolumesResultTypeDef](./type_defs.md#describevolumesresulttypedef)\].
 
 ## DescribeVolumesModificationsPaginator
 
@@ -2375,7 +2375,7 @@ Arguments for `DescribeVolumesModificationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVolumesModificationsPaginator.paginate` returns
-`Iterator`\[[DescribeVolumesModificationsResultResponseTypeDef](./type_defs.md#describevolumesmodificationsresultresponsetypedef)\].
+`Iterator`\[[DescribeVolumesModificationsResultTypeDef](./type_defs.md#describevolumesmodificationsresulttypedef)\].
 
 ## DescribeVpcClassicLinkDnsSupportPaginator
 
@@ -2401,7 +2401,7 @@ Arguments for `DescribeVpcClassicLinkDnsSupportPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcClassicLinkDnsSupportPaginator.paginate` returns
-`Iterator`\[[DescribeVpcClassicLinkDnsSupportResultResponseTypeDef](./type_defs.md#describevpcclassiclinkdnssupportresultresponsetypedef)\].
+`Iterator`\[[DescribeVpcClassicLinkDnsSupportResultTypeDef](./type_defs.md#describevpcclassiclinkdnssupportresulttypedef)\].
 
 ## DescribeVpcEndpointConnectionNotificationsPaginator
 
@@ -2430,7 +2430,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcEndpointConnectionNotificationsPaginator.paginate` returns
-`Iterator`\[[DescribeVpcEndpointConnectionNotificationsResultResponseTypeDef](./type_defs.md#describevpcendpointconnectionnotificationsresultresponsetypedef)\].
+`Iterator`\[[DescribeVpcEndpointConnectionNotificationsResultTypeDef](./type_defs.md#describevpcendpointconnectionnotificationsresulttypedef)\].
 
 ## DescribeVpcEndpointConnectionsPaginator
 
@@ -2457,7 +2457,7 @@ Arguments for `DescribeVpcEndpointConnectionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcEndpointConnectionsPaginator.paginate` returns
-`Iterator`\[[DescribeVpcEndpointConnectionsResultResponseTypeDef](./type_defs.md#describevpcendpointconnectionsresultresponsetypedef)\].
+`Iterator`\[[DescribeVpcEndpointConnectionsResultTypeDef](./type_defs.md#describevpcendpointconnectionsresulttypedef)\].
 
 ## DescribeVpcEndpointServiceConfigurationsPaginator
 
@@ -2486,7 +2486,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcEndpointServiceConfigurationsPaginator.paginate` returns
-`Iterator`\[[DescribeVpcEndpointServiceConfigurationsResultResponseTypeDef](./type_defs.md#describevpcendpointserviceconfigurationsresultresponsetypedef)\].
+`Iterator`\[[DescribeVpcEndpointServiceConfigurationsResultTypeDef](./type_defs.md#describevpcendpointserviceconfigurationsresulttypedef)\].
 
 ## DescribeVpcEndpointServicePermissionsPaginator
 
@@ -2514,7 +2514,7 @@ Arguments for `DescribeVpcEndpointServicePermissionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcEndpointServicePermissionsPaginator.paginate` returns
-`Iterator`\[[DescribeVpcEndpointServicePermissionsResultResponseTypeDef](./type_defs.md#describevpcendpointservicepermissionsresultresponsetypedef)\].
+`Iterator`\[[DescribeVpcEndpointServicePermissionsResultTypeDef](./type_defs.md#describevpcendpointservicepermissionsresulttypedef)\].
 
 ## DescribeVpcEndpointServicesPaginator
 
@@ -2542,7 +2542,7 @@ Arguments for `DescribeVpcEndpointServicesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcEndpointServicesPaginator.paginate` returns
-`Iterator`\[[DescribeVpcEndpointServicesResultResponseTypeDef](./type_defs.md#describevpcendpointservicesresultresponsetypedef)\].
+`Iterator`\[[DescribeVpcEndpointServicesResultTypeDef](./type_defs.md#describevpcendpointservicesresulttypedef)\].
 
 ## DescribeVpcEndpointsPaginator
 
@@ -2570,7 +2570,7 @@ Arguments for `DescribeVpcEndpointsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcEndpointsPaginator.paginate` returns
-`Iterator`\[[DescribeVpcEndpointsResultResponseTypeDef](./type_defs.md#describevpcendpointsresultresponsetypedef)\].
+`Iterator`\[[DescribeVpcEndpointsResultTypeDef](./type_defs.md#describevpcendpointsresulttypedef)\].
 
 ## DescribeVpcPeeringConnectionsPaginator
 
@@ -2598,7 +2598,7 @@ Arguments for `DescribeVpcPeeringConnectionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcPeeringConnectionsPaginator.paginate` returns
-`Iterator`\[[DescribeVpcPeeringConnectionsResultResponseTypeDef](./type_defs.md#describevpcpeeringconnectionsresultresponsetypedef)\].
+`Iterator`\[[DescribeVpcPeeringConnectionsResultTypeDef](./type_defs.md#describevpcpeeringconnectionsresulttypedef)\].
 
 ## DescribeVpcsPaginator
 
@@ -2625,7 +2625,7 @@ Arguments for `DescribeVpcsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcsPaginator.paginate` returns
-`Iterator`\[[DescribeVpcsResultResponseTypeDef](./type_defs.md#describevpcsresultresponsetypedef)\].
+`Iterator`\[[DescribeVpcsResultTypeDef](./type_defs.md#describevpcsresulttypedef)\].
 
 ## GetAssociatedIpv6PoolCidrsPaginator
 
@@ -2652,7 +2652,7 @@ Arguments for `GetAssociatedIpv6PoolCidrsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetAssociatedIpv6PoolCidrsPaginator.paginate` returns
-`Iterator`\[[GetAssociatedIpv6PoolCidrsResultResponseTypeDef](./type_defs.md#getassociatedipv6poolcidrsresultresponsetypedef)\].
+`Iterator`\[[GetAssociatedIpv6PoolCidrsResultTypeDef](./type_defs.md#getassociatedipv6poolcidrsresulttypedef)\].
 
 ## GetGroupsForCapacityReservationPaginator
 
@@ -2679,7 +2679,7 @@ Arguments for `GetGroupsForCapacityReservationPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetGroupsForCapacityReservationPaginator.paginate` returns
-`Iterator`\[[GetGroupsForCapacityReservationResultResponseTypeDef](./type_defs.md#getgroupsforcapacityreservationresultresponsetypedef)\].
+`Iterator`\[[GetGroupsForCapacityReservationResultTypeDef](./type_defs.md#getgroupsforcapacityreservationresulttypedef)\].
 
 ## GetManagedPrefixListAssociationsPaginator
 
@@ -2706,7 +2706,7 @@ Arguments for `GetManagedPrefixListAssociationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetManagedPrefixListAssociationsPaginator.paginate` returns
-`Iterator`\[[GetManagedPrefixListAssociationsResultResponseTypeDef](./type_defs.md#getmanagedprefixlistassociationsresultresponsetypedef)\].
+`Iterator`\[[GetManagedPrefixListAssociationsResultTypeDef](./type_defs.md#getmanagedprefixlistassociationsresulttypedef)\].
 
 ## GetManagedPrefixListEntriesPaginator
 
@@ -2734,7 +2734,7 @@ Arguments for `GetManagedPrefixListEntriesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetManagedPrefixListEntriesPaginator.paginate` returns
-`Iterator`\[[GetManagedPrefixListEntriesResultResponseTypeDef](./type_defs.md#getmanagedprefixlistentriesresultresponsetypedef)\].
+`Iterator`\[[GetManagedPrefixListEntriesResultTypeDef](./type_defs.md#getmanagedprefixlistentriesresulttypedef)\].
 
 ## GetTransitGatewayAttachmentPropagationsPaginator
 
@@ -2763,7 +2763,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTransitGatewayAttachmentPropagationsPaginator.paginate` returns
-`Iterator`\[[GetTransitGatewayAttachmentPropagationsResultResponseTypeDef](./type_defs.md#gettransitgatewayattachmentpropagationsresultresponsetypedef)\].
+`Iterator`\[[GetTransitGatewayAttachmentPropagationsResultTypeDef](./type_defs.md#gettransitgatewayattachmentpropagationsresulttypedef)\].
 
 ## GetTransitGatewayMulticastDomainAssociationsPaginator
 
@@ -2792,7 +2792,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTransitGatewayMulticastDomainAssociationsPaginator.paginate` returns
-`Iterator`\[[GetTransitGatewayMulticastDomainAssociationsResultResponseTypeDef](./type_defs.md#gettransitgatewaymulticastdomainassociationsresultresponsetypedef)\].
+`Iterator`\[[GetTransitGatewayMulticastDomainAssociationsResultTypeDef](./type_defs.md#gettransitgatewaymulticastdomainassociationsresulttypedef)\].
 
 ## GetTransitGatewayPrefixListReferencesPaginator
 
@@ -2820,7 +2820,7 @@ Arguments for `GetTransitGatewayPrefixListReferencesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTransitGatewayPrefixListReferencesPaginator.paginate` returns
-`Iterator`\[[GetTransitGatewayPrefixListReferencesResultResponseTypeDef](./type_defs.md#gettransitgatewayprefixlistreferencesresultresponsetypedef)\].
+`Iterator`\[[GetTransitGatewayPrefixListReferencesResultTypeDef](./type_defs.md#gettransitgatewayprefixlistreferencesresulttypedef)\].
 
 ## GetTransitGatewayRouteTableAssociationsPaginator
 
@@ -2849,7 +2849,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTransitGatewayRouteTableAssociationsPaginator.paginate` returns
-`Iterator`\[[GetTransitGatewayRouteTableAssociationsResultResponseTypeDef](./type_defs.md#gettransitgatewayroutetableassociationsresultresponsetypedef)\].
+`Iterator`\[[GetTransitGatewayRouteTableAssociationsResultTypeDef](./type_defs.md#gettransitgatewayroutetableassociationsresulttypedef)\].
 
 ## GetTransitGatewayRouteTablePropagationsPaginator
 
@@ -2878,7 +2878,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTransitGatewayRouteTablePropagationsPaginator.paginate` returns
-`Iterator`\[[GetTransitGatewayRouteTablePropagationsResultResponseTypeDef](./type_defs.md#gettransitgatewayroutetablepropagationsresultresponsetypedef)\].
+`Iterator`\[[GetTransitGatewayRouteTablePropagationsResultTypeDef](./type_defs.md#gettransitgatewayroutetablepropagationsresulttypedef)\].
 
 ## SearchLocalGatewayRoutesPaginator
 
@@ -2907,7 +2907,7 @@ Arguments for `SearchLocalGatewayRoutesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchLocalGatewayRoutesPaginator.paginate` returns
-`Iterator`\[[SearchLocalGatewayRoutesResultResponseTypeDef](./type_defs.md#searchlocalgatewayroutesresultresponsetypedef)\].
+`Iterator`\[[SearchLocalGatewayRoutesResultTypeDef](./type_defs.md#searchlocalgatewayroutesresulttypedef)\].
 
 ## SearchTransitGatewayMulticastGroupsPaginator
 
@@ -2935,4 +2935,4 @@ Arguments for `SearchTransitGatewayMulticastGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchTransitGatewayMulticastGroupsPaginator.paginate` returns
-`Iterator`\[[SearchTransitGatewayMulticastGroupsResultResponseTypeDef](./type_defs.md#searchtransitgatewaymulticastgroupsresultresponsetypedef)\].
+`Iterator`\[[SearchTransitGatewayMulticastGroupsResultTypeDef](./type_defs.md#searchtransitgatewaymulticastgroupsresulttypedef)\].

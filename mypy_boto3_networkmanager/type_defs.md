@@ -9,89 +9,89 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 NetworkManager module](#typed-dictionaries-for-boto3-networkmanager-module)
   - [AWSLocationTypeDef](#awslocationtypedef)
-  - [AssociateCustomerGatewayRequestTypeDef](#associatecustomergatewayrequesttypedef)
-  - [AssociateCustomerGatewayResponseResponseTypeDef](#associatecustomergatewayresponseresponsetypedef)
-  - [AssociateLinkRequestTypeDef](#associatelinkrequesttypedef)
-  - [AssociateLinkResponseResponseTypeDef](#associatelinkresponseresponsetypedef)
-  - [AssociateTransitGatewayConnectPeerRequestTypeDef](#associatetransitgatewayconnectpeerrequesttypedef)
-  - [AssociateTransitGatewayConnectPeerResponseResponseTypeDef](#associatetransitgatewayconnectpeerresponseresponsetypedef)
+  - [AssociateCustomerGatewayRequestRequestTypeDef](#associatecustomergatewayrequestrequesttypedef)
+  - [AssociateCustomerGatewayResponseTypeDef](#associatecustomergatewayresponsetypedef)
+  - [AssociateLinkRequestRequestTypeDef](#associatelinkrequestrequesttypedef)
+  - [AssociateLinkResponseTypeDef](#associatelinkresponsetypedef)
+  - [AssociateTransitGatewayConnectPeerRequestRequestTypeDef](#associatetransitgatewayconnectpeerrequestrequesttypedef)
+  - [AssociateTransitGatewayConnectPeerResponseTypeDef](#associatetransitgatewayconnectpeerresponsetypedef)
   - [BandwidthTypeDef](#bandwidthtypedef)
   - [ConnectionTypeDef](#connectiontypedef)
-  - [CreateConnectionRequestTypeDef](#createconnectionrequesttypedef)
-  - [CreateConnectionResponseResponseTypeDef](#createconnectionresponseresponsetypedef)
-  - [CreateDeviceRequestTypeDef](#createdevicerequesttypedef)
-  - [CreateDeviceResponseResponseTypeDef](#createdeviceresponseresponsetypedef)
-  - [CreateGlobalNetworkRequestTypeDef](#createglobalnetworkrequesttypedef)
-  - [CreateGlobalNetworkResponseResponseTypeDef](#createglobalnetworkresponseresponsetypedef)
-  - [CreateLinkRequestTypeDef](#createlinkrequesttypedef)
-  - [CreateLinkResponseResponseTypeDef](#createlinkresponseresponsetypedef)
-  - [CreateSiteRequestTypeDef](#createsiterequesttypedef)
-  - [CreateSiteResponseResponseTypeDef](#createsiteresponseresponsetypedef)
+  - [CreateConnectionRequestRequestTypeDef](#createconnectionrequestrequesttypedef)
+  - [CreateConnectionResponseTypeDef](#createconnectionresponsetypedef)
+  - [CreateDeviceRequestRequestTypeDef](#createdevicerequestrequesttypedef)
+  - [CreateDeviceResponseTypeDef](#createdeviceresponsetypedef)
+  - [CreateGlobalNetworkRequestRequestTypeDef](#createglobalnetworkrequestrequesttypedef)
+  - [CreateGlobalNetworkResponseTypeDef](#createglobalnetworkresponsetypedef)
+  - [CreateLinkRequestRequestTypeDef](#createlinkrequestrequesttypedef)
+  - [CreateLinkResponseTypeDef](#createlinkresponsetypedef)
+  - [CreateSiteRequestRequestTypeDef](#createsiterequestrequesttypedef)
+  - [CreateSiteResponseTypeDef](#createsiteresponsetypedef)
   - [CustomerGatewayAssociationTypeDef](#customergatewayassociationtypedef)
-  - [DeleteConnectionRequestTypeDef](#deleteconnectionrequesttypedef)
-  - [DeleteConnectionResponseResponseTypeDef](#deleteconnectionresponseresponsetypedef)
-  - [DeleteDeviceRequestTypeDef](#deletedevicerequesttypedef)
-  - [DeleteDeviceResponseResponseTypeDef](#deletedeviceresponseresponsetypedef)
-  - [DeleteGlobalNetworkRequestTypeDef](#deleteglobalnetworkrequesttypedef)
-  - [DeleteGlobalNetworkResponseResponseTypeDef](#deleteglobalnetworkresponseresponsetypedef)
-  - [DeleteLinkRequestTypeDef](#deletelinkrequesttypedef)
-  - [DeleteLinkResponseResponseTypeDef](#deletelinkresponseresponsetypedef)
-  - [DeleteSiteRequestTypeDef](#deletesiterequesttypedef)
-  - [DeleteSiteResponseResponseTypeDef](#deletesiteresponseresponsetypedef)
-  - [DeregisterTransitGatewayRequestTypeDef](#deregistertransitgatewayrequesttypedef)
-  - [DeregisterTransitGatewayResponseResponseTypeDef](#deregistertransitgatewayresponseresponsetypedef)
-  - [DescribeGlobalNetworksRequestTypeDef](#describeglobalnetworksrequesttypedef)
-  - [DescribeGlobalNetworksResponseResponseTypeDef](#describeglobalnetworksresponseresponsetypedef)
+  - [DeleteConnectionRequestRequestTypeDef](#deleteconnectionrequestrequesttypedef)
+  - [DeleteConnectionResponseTypeDef](#deleteconnectionresponsetypedef)
+  - [DeleteDeviceRequestRequestTypeDef](#deletedevicerequestrequesttypedef)
+  - [DeleteDeviceResponseTypeDef](#deletedeviceresponsetypedef)
+  - [DeleteGlobalNetworkRequestRequestTypeDef](#deleteglobalnetworkrequestrequesttypedef)
+  - [DeleteGlobalNetworkResponseTypeDef](#deleteglobalnetworkresponsetypedef)
+  - [DeleteLinkRequestRequestTypeDef](#deletelinkrequestrequesttypedef)
+  - [DeleteLinkResponseTypeDef](#deletelinkresponsetypedef)
+  - [DeleteSiteRequestRequestTypeDef](#deletesiterequestrequesttypedef)
+  - [DeleteSiteResponseTypeDef](#deletesiteresponsetypedef)
+  - [DeregisterTransitGatewayRequestRequestTypeDef](#deregistertransitgatewayrequestrequesttypedef)
+  - [DeregisterTransitGatewayResponseTypeDef](#deregistertransitgatewayresponsetypedef)
+  - [DescribeGlobalNetworksRequestRequestTypeDef](#describeglobalnetworksrequestrequesttypedef)
+  - [DescribeGlobalNetworksResponseTypeDef](#describeglobalnetworksresponsetypedef)
   - [DeviceTypeDef](#devicetypedef)
-  - [DisassociateCustomerGatewayRequestTypeDef](#disassociatecustomergatewayrequesttypedef)
-  - [DisassociateCustomerGatewayResponseResponseTypeDef](#disassociatecustomergatewayresponseresponsetypedef)
-  - [DisassociateLinkRequestTypeDef](#disassociatelinkrequesttypedef)
-  - [DisassociateLinkResponseResponseTypeDef](#disassociatelinkresponseresponsetypedef)
-  - [DisassociateTransitGatewayConnectPeerRequestTypeDef](#disassociatetransitgatewayconnectpeerrequesttypedef)
-  - [DisassociateTransitGatewayConnectPeerResponseResponseTypeDef](#disassociatetransitgatewayconnectpeerresponseresponsetypedef)
-  - [GetConnectionsRequestTypeDef](#getconnectionsrequesttypedef)
-  - [GetConnectionsResponseResponseTypeDef](#getconnectionsresponseresponsetypedef)
-  - [GetCustomerGatewayAssociationsRequestTypeDef](#getcustomergatewayassociationsrequesttypedef)
-  - [GetCustomerGatewayAssociationsResponseResponseTypeDef](#getcustomergatewayassociationsresponseresponsetypedef)
-  - [GetDevicesRequestTypeDef](#getdevicesrequesttypedef)
-  - [GetDevicesResponseResponseTypeDef](#getdevicesresponseresponsetypedef)
-  - [GetLinkAssociationsRequestTypeDef](#getlinkassociationsrequesttypedef)
-  - [GetLinkAssociationsResponseResponseTypeDef](#getlinkassociationsresponseresponsetypedef)
-  - [GetLinksRequestTypeDef](#getlinksrequesttypedef)
-  - [GetLinksResponseResponseTypeDef](#getlinksresponseresponsetypedef)
-  - [GetSitesRequestTypeDef](#getsitesrequesttypedef)
-  - [GetSitesResponseResponseTypeDef](#getsitesresponseresponsetypedef)
-  - [GetTransitGatewayConnectPeerAssociationsRequestTypeDef](#gettransitgatewayconnectpeerassociationsrequesttypedef)
-  - [GetTransitGatewayConnectPeerAssociationsResponseResponseTypeDef](#gettransitgatewayconnectpeerassociationsresponseresponsetypedef)
-  - [GetTransitGatewayRegistrationsRequestTypeDef](#gettransitgatewayregistrationsrequesttypedef)
-  - [GetTransitGatewayRegistrationsResponseResponseTypeDef](#gettransitgatewayregistrationsresponseresponsetypedef)
+  - [DisassociateCustomerGatewayRequestRequestTypeDef](#disassociatecustomergatewayrequestrequesttypedef)
+  - [DisassociateCustomerGatewayResponseTypeDef](#disassociatecustomergatewayresponsetypedef)
+  - [DisassociateLinkRequestRequestTypeDef](#disassociatelinkrequestrequesttypedef)
+  - [DisassociateLinkResponseTypeDef](#disassociatelinkresponsetypedef)
+  - [DisassociateTransitGatewayConnectPeerRequestRequestTypeDef](#disassociatetransitgatewayconnectpeerrequestrequesttypedef)
+  - [DisassociateTransitGatewayConnectPeerResponseTypeDef](#disassociatetransitgatewayconnectpeerresponsetypedef)
+  - [GetConnectionsRequestRequestTypeDef](#getconnectionsrequestrequesttypedef)
+  - [GetConnectionsResponseTypeDef](#getconnectionsresponsetypedef)
+  - [GetCustomerGatewayAssociationsRequestRequestTypeDef](#getcustomergatewayassociationsrequestrequesttypedef)
+  - [GetCustomerGatewayAssociationsResponseTypeDef](#getcustomergatewayassociationsresponsetypedef)
+  - [GetDevicesRequestRequestTypeDef](#getdevicesrequestrequesttypedef)
+  - [GetDevicesResponseTypeDef](#getdevicesresponsetypedef)
+  - [GetLinkAssociationsRequestRequestTypeDef](#getlinkassociationsrequestrequesttypedef)
+  - [GetLinkAssociationsResponseTypeDef](#getlinkassociationsresponsetypedef)
+  - [GetLinksRequestRequestTypeDef](#getlinksrequestrequesttypedef)
+  - [GetLinksResponseTypeDef](#getlinksresponsetypedef)
+  - [GetSitesRequestRequestTypeDef](#getsitesrequestrequesttypedef)
+  - [GetSitesResponseTypeDef](#getsitesresponsetypedef)
+  - [GetTransitGatewayConnectPeerAssociationsRequestRequestTypeDef](#gettransitgatewayconnectpeerassociationsrequestrequesttypedef)
+  - [GetTransitGatewayConnectPeerAssociationsResponseTypeDef](#gettransitgatewayconnectpeerassociationsresponsetypedef)
+  - [GetTransitGatewayRegistrationsRequestRequestTypeDef](#gettransitgatewayregistrationsrequestrequesttypedef)
+  - [GetTransitGatewayRegistrationsResponseTypeDef](#gettransitgatewayregistrationsresponsetypedef)
   - [GlobalNetworkTypeDef](#globalnetworktypedef)
   - [LinkAssociationTypeDef](#linkassociationtypedef)
   - [LinkTypeDef](#linktypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [LocationTypeDef](#locationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [RegisterTransitGatewayRequestTypeDef](#registertransitgatewayrequesttypedef)
-  - [RegisterTransitGatewayResponseResponseTypeDef](#registertransitgatewayresponseresponsetypedef)
+  - [RegisterTransitGatewayRequestRequestTypeDef](#registertransitgatewayrequestrequesttypedef)
+  - [RegisterTransitGatewayResponseTypeDef](#registertransitgatewayresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SiteTypeDef](#sitetypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TransitGatewayConnectPeerAssociationTypeDef](#transitgatewayconnectpeerassociationtypedef)
   - [TransitGatewayRegistrationStateReasonTypeDef](#transitgatewayregistrationstatereasontypedef)
   - [TransitGatewayRegistrationTypeDef](#transitgatewayregistrationtypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateConnectionRequestTypeDef](#updateconnectionrequesttypedef)
-  - [UpdateConnectionResponseResponseTypeDef](#updateconnectionresponseresponsetypedef)
-  - [UpdateDeviceRequestTypeDef](#updatedevicerequesttypedef)
-  - [UpdateDeviceResponseResponseTypeDef](#updatedeviceresponseresponsetypedef)
-  - [UpdateGlobalNetworkRequestTypeDef](#updateglobalnetworkrequesttypedef)
-  - [UpdateGlobalNetworkResponseResponseTypeDef](#updateglobalnetworkresponseresponsetypedef)
-  - [UpdateLinkRequestTypeDef](#updatelinkrequesttypedef)
-  - [UpdateLinkResponseResponseTypeDef](#updatelinkresponseresponsetypedef)
-  - [UpdateSiteRequestTypeDef](#updatesiterequesttypedef)
-  - [UpdateSiteResponseResponseTypeDef](#updatesiteresponseresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateConnectionRequestRequestTypeDef](#updateconnectionrequestrequesttypedef)
+  - [UpdateConnectionResponseTypeDef](#updateconnectionresponsetypedef)
+  - [UpdateDeviceRequestRequestTypeDef](#updatedevicerequestrequesttypedef)
+  - [UpdateDeviceResponseTypeDef](#updatedeviceresponsetypedef)
+  - [UpdateGlobalNetworkRequestRequestTypeDef](#updateglobalnetworkrequestrequesttypedef)
+  - [UpdateGlobalNetworkResponseTypeDef](#updateglobalnetworkresponsetypedef)
+  - [UpdateLinkRequestRequestTypeDef](#updatelinkrequestrequesttypedef)
+  - [UpdateLinkResponseTypeDef](#updatelinkresponsetypedef)
+  - [UpdateSiteRequestRequestTypeDef](#updatesiterequestrequesttypedef)
+  - [UpdateSiteResponseTypeDef](#updatesiteresponsetypedef)
 
 ## AWSLocationTypeDef
 
@@ -104,10 +104,10 @@ Optional fields:
 - `Zone`: `str`
 - `SubnetArn`: `str`
 
-## AssociateCustomerGatewayRequestTypeDef
+## AssociateCustomerGatewayRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import AssociateCustomerGatewayRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import AssociateCustomerGatewayRequestRequestTypeDef
 ```
 
 Required fields:
@@ -120,10 +120,10 @@ Optional fields:
 
 - `LinkId`: `str`
 
-## AssociateCustomerGatewayResponseResponseTypeDef
+## AssociateCustomerGatewayResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import AssociateCustomerGatewayResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import AssociateCustomerGatewayResponseTypeDef
 ```
 
 Required fields:
@@ -133,10 +133,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateLinkRequestTypeDef
+## AssociateLinkRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import AssociateLinkRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import AssociateLinkRequestRequestTypeDef
 ```
 
 Required fields:
@@ -145,10 +145,10 @@ Required fields:
 - `DeviceId`: `str`
 - `LinkId`: `str`
 
-## AssociateLinkResponseResponseTypeDef
+## AssociateLinkResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import AssociateLinkResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import AssociateLinkResponseTypeDef
 ```
 
 Required fields:
@@ -158,10 +158,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateTransitGatewayConnectPeerRequestTypeDef
+## AssociateTransitGatewayConnectPeerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import AssociateTransitGatewayConnectPeerRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import AssociateTransitGatewayConnectPeerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -174,10 +174,10 @@ Optional fields:
 
 - `LinkId`: `str`
 
-## AssociateTransitGatewayConnectPeerResponseResponseTypeDef
+## AssociateTransitGatewayConnectPeerResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import AssociateTransitGatewayConnectPeerResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import AssociateTransitGatewayConnectPeerResponseTypeDef
 ```
 
 Required fields:
@@ -218,10 +218,10 @@ Optional fields:
 - `State`: [ConnectionStateType](./literals.md#connectionstatetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateConnectionRequestTypeDef
+## CreateConnectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import CreateConnectionRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import CreateConnectionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -237,10 +237,10 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateConnectionResponseResponseTypeDef
+## CreateConnectionResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import CreateConnectionResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import CreateConnectionResponseTypeDef
 ```
 
 Required fields:
@@ -249,10 +249,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDeviceRequestTypeDef
+## CreateDeviceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import CreateDeviceRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import CreateDeviceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -271,10 +271,10 @@ Optional fields:
 - `SiteId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateDeviceResponseResponseTypeDef
+## CreateDeviceResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import CreateDeviceResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import CreateDeviceResponseTypeDef
 ```
 
 Required fields:
@@ -283,10 +283,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateGlobalNetworkRequestTypeDef
+## CreateGlobalNetworkRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import CreateGlobalNetworkRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import CreateGlobalNetworkRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -294,10 +294,10 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateGlobalNetworkResponseResponseTypeDef
+## CreateGlobalNetworkResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import CreateGlobalNetworkResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import CreateGlobalNetworkResponseTypeDef
 ```
 
 Required fields:
@@ -306,10 +306,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateLinkRequestTypeDef
+## CreateLinkRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import CreateLinkRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import CreateLinkRequestRequestTypeDef
 ```
 
 Required fields:
@@ -325,10 +325,10 @@ Optional fields:
 - `Provider`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateLinkResponseResponseTypeDef
+## CreateLinkResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import CreateLinkResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import CreateLinkResponseTypeDef
 ```
 
 Required fields:
@@ -337,10 +337,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSiteRequestTypeDef
+## CreateSiteRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import CreateSiteRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import CreateSiteRequestRequestTypeDef
 ```
 
 Required fields:
@@ -353,10 +353,10 @@ Optional fields:
 - `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateSiteResponseResponseTypeDef
+## CreateSiteResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import CreateSiteResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import CreateSiteResponseTypeDef
 ```
 
 Required fields:
@@ -380,10 +380,10 @@ Optional fields:
 - `State`:
   [CustomerGatewayAssociationStateType](./literals.md#customergatewayassociationstatetype)
 
-## DeleteConnectionRequestTypeDef
+## DeleteConnectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import DeleteConnectionRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import DeleteConnectionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -391,10 +391,10 @@ Required fields:
 - `GlobalNetworkId`: `str`
 - `ConnectionId`: `str`
 
-## DeleteConnectionResponseResponseTypeDef
+## DeleteConnectionResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import DeleteConnectionResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import DeleteConnectionResponseTypeDef
 ```
 
 Required fields:
@@ -403,10 +403,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDeviceRequestTypeDef
+## DeleteDeviceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import DeleteDeviceRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import DeleteDeviceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -414,10 +414,10 @@ Required fields:
 - `GlobalNetworkId`: `str`
 - `DeviceId`: `str`
 
-## DeleteDeviceResponseResponseTypeDef
+## DeleteDeviceResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import DeleteDeviceResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import DeleteDeviceResponseTypeDef
 ```
 
 Required fields:
@@ -426,20 +426,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteGlobalNetworkRequestTypeDef
+## DeleteGlobalNetworkRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import DeleteGlobalNetworkRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import DeleteGlobalNetworkRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `GlobalNetworkId`: `str`
 
-## DeleteGlobalNetworkResponseResponseTypeDef
+## DeleteGlobalNetworkResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import DeleteGlobalNetworkResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import DeleteGlobalNetworkResponseTypeDef
 ```
 
 Required fields:
@@ -448,10 +448,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteLinkRequestTypeDef
+## DeleteLinkRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import DeleteLinkRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import DeleteLinkRequestRequestTypeDef
 ```
 
 Required fields:
@@ -459,10 +459,10 @@ Required fields:
 - `GlobalNetworkId`: `str`
 - `LinkId`: `str`
 
-## DeleteLinkResponseResponseTypeDef
+## DeleteLinkResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import DeleteLinkResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import DeleteLinkResponseTypeDef
 ```
 
 Required fields:
@@ -471,10 +471,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteSiteRequestTypeDef
+## DeleteSiteRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import DeleteSiteRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import DeleteSiteRequestRequestTypeDef
 ```
 
 Required fields:
@@ -482,10 +482,10 @@ Required fields:
 - `GlobalNetworkId`: `str`
 - `SiteId`: `str`
 
-## DeleteSiteResponseResponseTypeDef
+## DeleteSiteResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import DeleteSiteResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import DeleteSiteResponseTypeDef
 ```
 
 Required fields:
@@ -494,10 +494,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeregisterTransitGatewayRequestTypeDef
+## DeregisterTransitGatewayRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import DeregisterTransitGatewayRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import DeregisterTransitGatewayRequestRequestTypeDef
 ```
 
 Required fields:
@@ -505,10 +505,10 @@ Required fields:
 - `GlobalNetworkId`: `str`
 - `TransitGatewayArn`: `str`
 
-## DeregisterTransitGatewayResponseResponseTypeDef
+## DeregisterTransitGatewayResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import DeregisterTransitGatewayResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import DeregisterTransitGatewayResponseTypeDef
 ```
 
 Required fields:
@@ -518,10 +518,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeGlobalNetworksRequestTypeDef
+## DescribeGlobalNetworksRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import DescribeGlobalNetworksRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import DescribeGlobalNetworksRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -530,10 +530,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## DescribeGlobalNetworksResponseResponseTypeDef
+## DescribeGlobalNetworksResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import DescribeGlobalNetworksResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import DescribeGlobalNetworksResponseTypeDef
 ```
 
 Required fields:
@@ -567,10 +567,10 @@ Optional fields:
 - `State`: [DeviceStateType](./literals.md#devicestatetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## DisassociateCustomerGatewayRequestTypeDef
+## DisassociateCustomerGatewayRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import DisassociateCustomerGatewayRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import DisassociateCustomerGatewayRequestRequestTypeDef
 ```
 
 Required fields:
@@ -578,10 +578,10 @@ Required fields:
 - `GlobalNetworkId`: `str`
 - `CustomerGatewayArn`: `str`
 
-## DisassociateCustomerGatewayResponseResponseTypeDef
+## DisassociateCustomerGatewayResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import DisassociateCustomerGatewayResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import DisassociateCustomerGatewayResponseTypeDef
 ```
 
 Required fields:
@@ -591,10 +591,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateLinkRequestTypeDef
+## DisassociateLinkRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import DisassociateLinkRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import DisassociateLinkRequestRequestTypeDef
 ```
 
 Required fields:
@@ -603,10 +603,10 @@ Required fields:
 - `DeviceId`: `str`
 - `LinkId`: `str`
 
-## DisassociateLinkResponseResponseTypeDef
+## DisassociateLinkResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import DisassociateLinkResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import DisassociateLinkResponseTypeDef
 ```
 
 Required fields:
@@ -616,10 +616,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateTransitGatewayConnectPeerRequestTypeDef
+## DisassociateTransitGatewayConnectPeerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import DisassociateTransitGatewayConnectPeerRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import DisassociateTransitGatewayConnectPeerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -627,10 +627,10 @@ Required fields:
 - `GlobalNetworkId`: `str`
 - `TransitGatewayConnectPeerArn`: `str`
 
-## DisassociateTransitGatewayConnectPeerResponseResponseTypeDef
+## DisassociateTransitGatewayConnectPeerResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import DisassociateTransitGatewayConnectPeerResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import DisassociateTransitGatewayConnectPeerResponseTypeDef
 ```
 
 Required fields:
@@ -640,10 +640,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetConnectionsRequestTypeDef
+## GetConnectionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import GetConnectionsRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import GetConnectionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -657,10 +657,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## GetConnectionsResponseResponseTypeDef
+## GetConnectionsResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import GetConnectionsResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import GetConnectionsResponseTypeDef
 ```
 
 Required fields:
@@ -671,10 +671,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCustomerGatewayAssociationsRequestTypeDef
+## GetCustomerGatewayAssociationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import GetCustomerGatewayAssociationsRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import GetCustomerGatewayAssociationsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -687,10 +687,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## GetCustomerGatewayAssociationsResponseResponseTypeDef
+## GetCustomerGatewayAssociationsResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import GetCustomerGatewayAssociationsResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import GetCustomerGatewayAssociationsResponseTypeDef
 ```
 
 Required fields:
@@ -701,10 +701,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDevicesRequestTypeDef
+## GetDevicesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import GetDevicesRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import GetDevicesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -718,10 +718,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## GetDevicesResponseResponseTypeDef
+## GetDevicesResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import GetDevicesResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import GetDevicesResponseTypeDef
 ```
 
 Required fields:
@@ -731,10 +731,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLinkAssociationsRequestTypeDef
+## GetLinkAssociationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import GetLinkAssociationsRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import GetLinkAssociationsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -748,10 +748,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## GetLinkAssociationsResponseResponseTypeDef
+## GetLinkAssociationsResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import GetLinkAssociationsResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import GetLinkAssociationsResponseTypeDef
 ```
 
 Required fields:
@@ -762,10 +762,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLinksRequestTypeDef
+## GetLinksRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import GetLinksRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import GetLinksRequestRequestTypeDef
 ```
 
 Required fields:
@@ -781,10 +781,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## GetLinksResponseResponseTypeDef
+## GetLinksResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import GetLinksResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import GetLinksResponseTypeDef
 ```
 
 Required fields:
@@ -794,10 +794,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSitesRequestTypeDef
+## GetSitesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import GetSitesRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import GetSitesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -810,10 +810,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## GetSitesResponseResponseTypeDef
+## GetSitesResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import GetSitesResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import GetSitesResponseTypeDef
 ```
 
 Required fields:
@@ -823,10 +823,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTransitGatewayConnectPeerAssociationsRequestTypeDef
+## GetTransitGatewayConnectPeerAssociationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import GetTransitGatewayConnectPeerAssociationsRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import GetTransitGatewayConnectPeerAssociationsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -839,10 +839,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## GetTransitGatewayConnectPeerAssociationsResponseResponseTypeDef
+## GetTransitGatewayConnectPeerAssociationsResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import GetTransitGatewayConnectPeerAssociationsResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import GetTransitGatewayConnectPeerAssociationsResponseTypeDef
 ```
 
 Required fields:
@@ -853,10 +853,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTransitGatewayRegistrationsRequestTypeDef
+## GetTransitGatewayRegistrationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import GetTransitGatewayRegistrationsRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import GetTransitGatewayRegistrationsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -869,10 +869,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## GetTransitGatewayRegistrationsResponseResponseTypeDef
+## GetTransitGatewayRegistrationsResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import GetTransitGatewayRegistrationsResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import GetTransitGatewayRegistrationsResponseTypeDef
 ```
 
 Required fields:
@@ -932,20 +932,20 @@ Optional fields:
 - `State`: [LinkStateType](./literals.md#linkstatetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -978,10 +978,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## RegisterTransitGatewayRequestTypeDef
+## RegisterTransitGatewayRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import RegisterTransitGatewayRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import RegisterTransitGatewayRequestRequestTypeDef
 ```
 
 Required fields:
@@ -989,10 +989,10 @@ Required fields:
 - `GlobalNetworkId`: `str`
 - `TransitGatewayArn`: `str`
 
-## RegisterTransitGatewayResponseResponseTypeDef
+## RegisterTransitGatewayResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import RegisterTransitGatewayResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import RegisterTransitGatewayResponseTypeDef
 ```
 
 Required fields:
@@ -1033,10 +1033,10 @@ Optional fields:
 - `State`: [SiteStateType](./literals.md#sitestatetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1095,10 +1095,10 @@ Optional fields:
 - `State`:
   [TransitGatewayRegistrationStateReasonTypeDef](./type_defs.md#transitgatewayregistrationstatereasontypedef)
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1106,10 +1106,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateConnectionRequestTypeDef
+## UpdateConnectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import UpdateConnectionRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import UpdateConnectionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1123,10 +1123,10 @@ Optional fields:
 - `ConnectedLinkId`: `str`
 - `Description`: `str`
 
-## UpdateConnectionResponseResponseTypeDef
+## UpdateConnectionResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import UpdateConnectionResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import UpdateConnectionResponseTypeDef
 ```
 
 Required fields:
@@ -1135,10 +1135,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDeviceRequestTypeDef
+## UpdateDeviceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import UpdateDeviceRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import UpdateDeviceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1157,10 +1157,10 @@ Optional fields:
 - `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 - `SiteId`: `str`
 
-## UpdateDeviceResponseResponseTypeDef
+## UpdateDeviceResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import UpdateDeviceResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import UpdateDeviceResponseTypeDef
 ```
 
 Required fields:
@@ -1169,10 +1169,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateGlobalNetworkRequestTypeDef
+## UpdateGlobalNetworkRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import UpdateGlobalNetworkRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import UpdateGlobalNetworkRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1183,10 +1183,10 @@ Optional fields:
 
 - `Description`: `str`
 
-## UpdateGlobalNetworkResponseResponseTypeDef
+## UpdateGlobalNetworkResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import UpdateGlobalNetworkResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import UpdateGlobalNetworkResponseTypeDef
 ```
 
 Required fields:
@@ -1195,10 +1195,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateLinkRequestTypeDef
+## UpdateLinkRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import UpdateLinkRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import UpdateLinkRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1213,10 +1213,10 @@ Optional fields:
 - `Bandwidth`: [BandwidthTypeDef](./type_defs.md#bandwidthtypedef)
 - `Provider`: `str`
 
-## UpdateLinkResponseResponseTypeDef
+## UpdateLinkResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import UpdateLinkResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import UpdateLinkResponseTypeDef
 ```
 
 Required fields:
@@ -1225,10 +1225,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateSiteRequestTypeDef
+## UpdateSiteRequestRequestTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import UpdateSiteRequestTypeDef
+from mypy_boto3_networkmanager.type_defs import UpdateSiteRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1241,10 +1241,10 @@ Optional fields:
 - `Description`: `str`
 - `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 
-## UpdateSiteResponseResponseTypeDef
+## UpdateSiteResponseTypeDef
 
 ```python
-from mypy_boto3_networkmanager.type_defs import UpdateSiteResponseResponseTypeDef
+from mypy_boto3_networkmanager.type_defs import UpdateSiteResponseTypeDef
 ```
 
 Required fields:

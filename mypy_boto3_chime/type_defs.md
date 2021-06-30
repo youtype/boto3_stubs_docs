@@ -20,31 +20,31 @@ type annotations stubs module
   - [AppInstanceUserMembershipSummaryTypeDef](#appinstanceusermembershipsummarytypedef)
   - [AppInstanceUserSummaryTypeDef](#appinstanceusersummarytypedef)
   - [AppInstanceUserTypeDef](#appinstanceusertypedef)
-  - [AssociatePhoneNumberWithUserRequestTypeDef](#associatephonenumberwithuserrequesttypedef)
-  - [AssociatePhoneNumbersWithVoiceConnectorGroupRequestTypeDef](#associatephonenumberswithvoiceconnectorgrouprequesttypedef)
-  - [AssociatePhoneNumbersWithVoiceConnectorGroupResponseResponseTypeDef](#associatephonenumberswithvoiceconnectorgroupresponseresponsetypedef)
-  - [AssociatePhoneNumbersWithVoiceConnectorRequestTypeDef](#associatephonenumberswithvoiceconnectorrequesttypedef)
-  - [AssociatePhoneNumbersWithVoiceConnectorResponseResponseTypeDef](#associatephonenumberswithvoiceconnectorresponseresponsetypedef)
-  - [AssociateSigninDelegateGroupsWithAccountRequestTypeDef](#associatesignindelegategroupswithaccountrequesttypedef)
+  - [AssociatePhoneNumberWithUserRequestRequestTypeDef](#associatephonenumberwithuserrequestrequesttypedef)
+  - [AssociatePhoneNumbersWithVoiceConnectorGroupRequestRequestTypeDef](#associatephonenumberswithvoiceconnectorgrouprequestrequesttypedef)
+  - [AssociatePhoneNumbersWithVoiceConnectorGroupResponseTypeDef](#associatephonenumberswithvoiceconnectorgroupresponsetypedef)
+  - [AssociatePhoneNumbersWithVoiceConnectorRequestRequestTypeDef](#associatephonenumberswithvoiceconnectorrequestrequesttypedef)
+  - [AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef](#associatephonenumberswithvoiceconnectorresponsetypedef)
+  - [AssociateSigninDelegateGroupsWithAccountRequestRequestTypeDef](#associatesignindelegategroupswithaccountrequestrequesttypedef)
   - [AttendeeTypeDef](#attendeetypedef)
   - [BatchChannelMembershipsTypeDef](#batchchannelmembershipstypedef)
-  - [BatchCreateAttendeeRequestTypeDef](#batchcreateattendeerequesttypedef)
-  - [BatchCreateAttendeeResponseResponseTypeDef](#batchcreateattendeeresponseresponsetypedef)
+  - [BatchCreateAttendeeRequestRequestTypeDef](#batchcreateattendeerequestrequesttypedef)
+  - [BatchCreateAttendeeResponseTypeDef](#batchcreateattendeeresponsetypedef)
   - [BatchCreateChannelMembershipErrorTypeDef](#batchcreatechannelmembershiperrortypedef)
-  - [BatchCreateChannelMembershipRequestTypeDef](#batchcreatechannelmembershiprequesttypedef)
-  - [BatchCreateChannelMembershipResponseResponseTypeDef](#batchcreatechannelmembershipresponseresponsetypedef)
-  - [BatchCreateRoomMembershipRequestTypeDef](#batchcreateroommembershiprequesttypedef)
-  - [BatchCreateRoomMembershipResponseResponseTypeDef](#batchcreateroommembershipresponseresponsetypedef)
-  - [BatchDeletePhoneNumberRequestTypeDef](#batchdeletephonenumberrequesttypedef)
-  - [BatchDeletePhoneNumberResponseResponseTypeDef](#batchdeletephonenumberresponseresponsetypedef)
-  - [BatchSuspendUserRequestTypeDef](#batchsuspenduserrequesttypedef)
-  - [BatchSuspendUserResponseResponseTypeDef](#batchsuspenduserresponseresponsetypedef)
-  - [BatchUnsuspendUserRequestTypeDef](#batchunsuspenduserrequesttypedef)
-  - [BatchUnsuspendUserResponseResponseTypeDef](#batchunsuspenduserresponseresponsetypedef)
-  - [BatchUpdatePhoneNumberRequestTypeDef](#batchupdatephonenumberrequesttypedef)
-  - [BatchUpdatePhoneNumberResponseResponseTypeDef](#batchupdatephonenumberresponseresponsetypedef)
-  - [BatchUpdateUserRequestTypeDef](#batchupdateuserrequesttypedef)
-  - [BatchUpdateUserResponseResponseTypeDef](#batchupdateuserresponseresponsetypedef)
+  - [BatchCreateChannelMembershipRequestRequestTypeDef](#batchcreatechannelmembershiprequestrequesttypedef)
+  - [BatchCreateChannelMembershipResponseTypeDef](#batchcreatechannelmembershipresponsetypedef)
+  - [BatchCreateRoomMembershipRequestRequestTypeDef](#batchcreateroommembershiprequestrequesttypedef)
+  - [BatchCreateRoomMembershipResponseTypeDef](#batchcreateroommembershipresponsetypedef)
+  - [BatchDeletePhoneNumberRequestRequestTypeDef](#batchdeletephonenumberrequestrequesttypedef)
+  - [BatchDeletePhoneNumberResponseTypeDef](#batchdeletephonenumberresponsetypedef)
+  - [BatchSuspendUserRequestRequestTypeDef](#batchsuspenduserrequestrequesttypedef)
+  - [BatchSuspendUserResponseTypeDef](#batchsuspenduserresponsetypedef)
+  - [BatchUnsuspendUserRequestRequestTypeDef](#batchunsuspenduserrequestrequesttypedef)
+  - [BatchUnsuspendUserResponseTypeDef](#batchunsuspenduserresponsetypedef)
+  - [BatchUpdatePhoneNumberRequestRequestTypeDef](#batchupdatephonenumberrequestrequesttypedef)
+  - [BatchUpdatePhoneNumberResponseTypeDef](#batchupdatephonenumberresponsetypedef)
+  - [BatchUpdateUserRequestRequestTypeDef](#batchupdateuserrequestrequesttypedef)
+  - [BatchUpdateUserResponseTypeDef](#batchupdateuserresponsetypedef)
   - [BotTypeDef](#bottypedef)
   - [BusinessCallingSettingsTypeDef](#businesscallingsettingstypedef)
   - [ChannelBanSummaryTypeDef](#channelbansummarytypedef)
@@ -61,233 +61,233 @@ type annotations stubs module
   - [ChannelSummaryTypeDef](#channelsummarytypedef)
   - [ChannelTypeDef](#channeltypedef)
   - [ConversationRetentionSettingsTypeDef](#conversationretentionsettingstypedef)
-  - [CreateAccountRequestTypeDef](#createaccountrequesttypedef)
-  - [CreateAccountResponseResponseTypeDef](#createaccountresponseresponsetypedef)
-  - [CreateAppInstanceAdminRequestTypeDef](#createappinstanceadminrequesttypedef)
-  - [CreateAppInstanceAdminResponseResponseTypeDef](#createappinstanceadminresponseresponsetypedef)
-  - [CreateAppInstanceRequestTypeDef](#createappinstancerequesttypedef)
-  - [CreateAppInstanceResponseResponseTypeDef](#createappinstanceresponseresponsetypedef)
-  - [CreateAppInstanceUserRequestTypeDef](#createappinstanceuserrequesttypedef)
-  - [CreateAppInstanceUserResponseResponseTypeDef](#createappinstanceuserresponseresponsetypedef)
+  - [CreateAccountRequestRequestTypeDef](#createaccountrequestrequesttypedef)
+  - [CreateAccountResponseTypeDef](#createaccountresponsetypedef)
+  - [CreateAppInstanceAdminRequestRequestTypeDef](#createappinstanceadminrequestrequesttypedef)
+  - [CreateAppInstanceAdminResponseTypeDef](#createappinstanceadminresponsetypedef)
+  - [CreateAppInstanceRequestRequestTypeDef](#createappinstancerequestrequesttypedef)
+  - [CreateAppInstanceResponseTypeDef](#createappinstanceresponsetypedef)
+  - [CreateAppInstanceUserRequestRequestTypeDef](#createappinstanceuserrequestrequesttypedef)
+  - [CreateAppInstanceUserResponseTypeDef](#createappinstanceuserresponsetypedef)
   - [CreateAttendeeErrorTypeDef](#createattendeeerrortypedef)
   - [CreateAttendeeRequestItemTypeDef](#createattendeerequestitemtypedef)
-  - [CreateAttendeeRequestTypeDef](#createattendeerequesttypedef)
-  - [CreateAttendeeResponseResponseTypeDef](#createattendeeresponseresponsetypedef)
-  - [CreateBotRequestTypeDef](#createbotrequesttypedef)
-  - [CreateBotResponseResponseTypeDef](#createbotresponseresponsetypedef)
-  - [CreateChannelBanRequestTypeDef](#createchannelbanrequesttypedef)
-  - [CreateChannelBanResponseResponseTypeDef](#createchannelbanresponseresponsetypedef)
-  - [CreateChannelMembershipRequestTypeDef](#createchannelmembershiprequesttypedef)
-  - [CreateChannelMembershipResponseResponseTypeDef](#createchannelmembershipresponseresponsetypedef)
-  - [CreateChannelModeratorRequestTypeDef](#createchannelmoderatorrequesttypedef)
-  - [CreateChannelModeratorResponseResponseTypeDef](#createchannelmoderatorresponseresponsetypedef)
-  - [CreateChannelRequestTypeDef](#createchannelrequesttypedef)
-  - [CreateChannelResponseResponseTypeDef](#createchannelresponseresponsetypedef)
-  - [CreateMeetingDialOutRequestTypeDef](#createmeetingdialoutrequesttypedef)
-  - [CreateMeetingDialOutResponseResponseTypeDef](#createmeetingdialoutresponseresponsetypedef)
-  - [CreateMeetingRequestTypeDef](#createmeetingrequesttypedef)
-  - [CreateMeetingResponseResponseTypeDef](#createmeetingresponseresponsetypedef)
-  - [CreateMeetingWithAttendeesRequestTypeDef](#createmeetingwithattendeesrequesttypedef)
-  - [CreateMeetingWithAttendeesResponseResponseTypeDef](#createmeetingwithattendeesresponseresponsetypedef)
-  - [CreatePhoneNumberOrderRequestTypeDef](#createphonenumberorderrequesttypedef)
-  - [CreatePhoneNumberOrderResponseResponseTypeDef](#createphonenumberorderresponseresponsetypedef)
-  - [CreateProxySessionRequestTypeDef](#createproxysessionrequesttypedef)
-  - [CreateProxySessionResponseResponseTypeDef](#createproxysessionresponseresponsetypedef)
-  - [CreateRoomMembershipRequestTypeDef](#createroommembershiprequesttypedef)
-  - [CreateRoomMembershipResponseResponseTypeDef](#createroommembershipresponseresponsetypedef)
-  - [CreateRoomRequestTypeDef](#createroomrequesttypedef)
-  - [CreateRoomResponseResponseTypeDef](#createroomresponseresponsetypedef)
-  - [CreateSipMediaApplicationCallRequestTypeDef](#createsipmediaapplicationcallrequesttypedef)
-  - [CreateSipMediaApplicationCallResponseResponseTypeDef](#createsipmediaapplicationcallresponseresponsetypedef)
-  - [CreateSipMediaApplicationRequestTypeDef](#createsipmediaapplicationrequesttypedef)
-  - [CreateSipMediaApplicationResponseResponseTypeDef](#createsipmediaapplicationresponseresponsetypedef)
-  - [CreateSipRuleRequestTypeDef](#createsiprulerequesttypedef)
-  - [CreateSipRuleResponseResponseTypeDef](#createsipruleresponseresponsetypedef)
-  - [CreateUserRequestTypeDef](#createuserrequesttypedef)
-  - [CreateUserResponseResponseTypeDef](#createuserresponseresponsetypedef)
-  - [CreateVoiceConnectorGroupRequestTypeDef](#createvoiceconnectorgrouprequesttypedef)
-  - [CreateVoiceConnectorGroupResponseResponseTypeDef](#createvoiceconnectorgroupresponseresponsetypedef)
-  - [CreateVoiceConnectorRequestTypeDef](#createvoiceconnectorrequesttypedef)
-  - [CreateVoiceConnectorResponseResponseTypeDef](#createvoiceconnectorresponseresponsetypedef)
+  - [CreateAttendeeRequestRequestTypeDef](#createattendeerequestrequesttypedef)
+  - [CreateAttendeeResponseTypeDef](#createattendeeresponsetypedef)
+  - [CreateBotRequestRequestTypeDef](#createbotrequestrequesttypedef)
+  - [CreateBotResponseTypeDef](#createbotresponsetypedef)
+  - [CreateChannelBanRequestRequestTypeDef](#createchannelbanrequestrequesttypedef)
+  - [CreateChannelBanResponseTypeDef](#createchannelbanresponsetypedef)
+  - [CreateChannelMembershipRequestRequestTypeDef](#createchannelmembershiprequestrequesttypedef)
+  - [CreateChannelMembershipResponseTypeDef](#createchannelmembershipresponsetypedef)
+  - [CreateChannelModeratorRequestRequestTypeDef](#createchannelmoderatorrequestrequesttypedef)
+  - [CreateChannelModeratorResponseTypeDef](#createchannelmoderatorresponsetypedef)
+  - [CreateChannelRequestRequestTypeDef](#createchannelrequestrequesttypedef)
+  - [CreateChannelResponseTypeDef](#createchannelresponsetypedef)
+  - [CreateMeetingDialOutRequestRequestTypeDef](#createmeetingdialoutrequestrequesttypedef)
+  - [CreateMeetingDialOutResponseTypeDef](#createmeetingdialoutresponsetypedef)
+  - [CreateMeetingRequestRequestTypeDef](#createmeetingrequestrequesttypedef)
+  - [CreateMeetingResponseTypeDef](#createmeetingresponsetypedef)
+  - [CreateMeetingWithAttendeesRequestRequestTypeDef](#createmeetingwithattendeesrequestrequesttypedef)
+  - [CreateMeetingWithAttendeesResponseTypeDef](#createmeetingwithattendeesresponsetypedef)
+  - [CreatePhoneNumberOrderRequestRequestTypeDef](#createphonenumberorderrequestrequesttypedef)
+  - [CreatePhoneNumberOrderResponseTypeDef](#createphonenumberorderresponsetypedef)
+  - [CreateProxySessionRequestRequestTypeDef](#createproxysessionrequestrequesttypedef)
+  - [CreateProxySessionResponseTypeDef](#createproxysessionresponsetypedef)
+  - [CreateRoomMembershipRequestRequestTypeDef](#createroommembershiprequestrequesttypedef)
+  - [CreateRoomMembershipResponseTypeDef](#createroommembershipresponsetypedef)
+  - [CreateRoomRequestRequestTypeDef](#createroomrequestrequesttypedef)
+  - [CreateRoomResponseTypeDef](#createroomresponsetypedef)
+  - [CreateSipMediaApplicationCallRequestRequestTypeDef](#createsipmediaapplicationcallrequestrequesttypedef)
+  - [CreateSipMediaApplicationCallResponseTypeDef](#createsipmediaapplicationcallresponsetypedef)
+  - [CreateSipMediaApplicationRequestRequestTypeDef](#createsipmediaapplicationrequestrequesttypedef)
+  - [CreateSipMediaApplicationResponseTypeDef](#createsipmediaapplicationresponsetypedef)
+  - [CreateSipRuleRequestRequestTypeDef](#createsiprulerequestrequesttypedef)
+  - [CreateSipRuleResponseTypeDef](#createsipruleresponsetypedef)
+  - [CreateUserRequestRequestTypeDef](#createuserrequestrequesttypedef)
+  - [CreateUserResponseTypeDef](#createuserresponsetypedef)
+  - [CreateVoiceConnectorGroupRequestRequestTypeDef](#createvoiceconnectorgrouprequestrequesttypedef)
+  - [CreateVoiceConnectorGroupResponseTypeDef](#createvoiceconnectorgroupresponsetypedef)
+  - [CreateVoiceConnectorRequestRequestTypeDef](#createvoiceconnectorrequestrequesttypedef)
+  - [CreateVoiceConnectorResponseTypeDef](#createvoiceconnectorresponsetypedef)
   - [CredentialTypeDef](#credentialtypedef)
   - [DNISEmergencyCallingConfigurationTypeDef](#dnisemergencycallingconfigurationtypedef)
-  - [DeleteAccountRequestTypeDef](#deleteaccountrequesttypedef)
-  - [DeleteAppInstanceAdminRequestTypeDef](#deleteappinstanceadminrequesttypedef)
-  - [DeleteAppInstanceRequestTypeDef](#deleteappinstancerequesttypedef)
-  - [DeleteAppInstanceStreamingConfigurationsRequestTypeDef](#deleteappinstancestreamingconfigurationsrequesttypedef)
-  - [DeleteAppInstanceUserRequestTypeDef](#deleteappinstanceuserrequesttypedef)
-  - [DeleteAttendeeRequestTypeDef](#deleteattendeerequesttypedef)
-  - [DeleteChannelBanRequestTypeDef](#deletechannelbanrequesttypedef)
-  - [DeleteChannelMembershipRequestTypeDef](#deletechannelmembershiprequesttypedef)
-  - [DeleteChannelMessageRequestTypeDef](#deletechannelmessagerequesttypedef)
-  - [DeleteChannelModeratorRequestTypeDef](#deletechannelmoderatorrequesttypedef)
-  - [DeleteChannelRequestTypeDef](#deletechannelrequesttypedef)
-  - [DeleteEventsConfigurationRequestTypeDef](#deleteeventsconfigurationrequesttypedef)
-  - [DeleteMeetingRequestTypeDef](#deletemeetingrequesttypedef)
-  - [DeletePhoneNumberRequestTypeDef](#deletephonenumberrequesttypedef)
-  - [DeleteProxySessionRequestTypeDef](#deleteproxysessionrequesttypedef)
-  - [DeleteRoomMembershipRequestTypeDef](#deleteroommembershiprequesttypedef)
-  - [DeleteRoomRequestTypeDef](#deleteroomrequesttypedef)
-  - [DeleteSipMediaApplicationRequestTypeDef](#deletesipmediaapplicationrequesttypedef)
-  - [DeleteSipRuleRequestTypeDef](#deletesiprulerequesttypedef)
-  - [DeleteVoiceConnectorEmergencyCallingConfigurationRequestTypeDef](#deletevoiceconnectoremergencycallingconfigurationrequesttypedef)
-  - [DeleteVoiceConnectorGroupRequestTypeDef](#deletevoiceconnectorgrouprequesttypedef)
-  - [DeleteVoiceConnectorOriginationRequestTypeDef](#deletevoiceconnectororiginationrequesttypedef)
-  - [DeleteVoiceConnectorProxyRequestTypeDef](#deletevoiceconnectorproxyrequesttypedef)
-  - [DeleteVoiceConnectorRequestTypeDef](#deletevoiceconnectorrequesttypedef)
-  - [DeleteVoiceConnectorStreamingConfigurationRequestTypeDef](#deletevoiceconnectorstreamingconfigurationrequesttypedef)
-  - [DeleteVoiceConnectorTerminationCredentialsRequestTypeDef](#deletevoiceconnectorterminationcredentialsrequesttypedef)
-  - [DeleteVoiceConnectorTerminationRequestTypeDef](#deletevoiceconnectorterminationrequesttypedef)
-  - [DescribeAppInstanceAdminRequestTypeDef](#describeappinstanceadminrequesttypedef)
-  - [DescribeAppInstanceAdminResponseResponseTypeDef](#describeappinstanceadminresponseresponsetypedef)
-  - [DescribeAppInstanceRequestTypeDef](#describeappinstancerequesttypedef)
-  - [DescribeAppInstanceResponseResponseTypeDef](#describeappinstanceresponseresponsetypedef)
-  - [DescribeAppInstanceUserRequestTypeDef](#describeappinstanceuserrequesttypedef)
-  - [DescribeAppInstanceUserResponseResponseTypeDef](#describeappinstanceuserresponseresponsetypedef)
-  - [DescribeChannelBanRequestTypeDef](#describechannelbanrequesttypedef)
-  - [DescribeChannelBanResponseResponseTypeDef](#describechannelbanresponseresponsetypedef)
-  - [DescribeChannelMembershipForAppInstanceUserRequestTypeDef](#describechannelmembershipforappinstanceuserrequesttypedef)
-  - [DescribeChannelMembershipForAppInstanceUserResponseResponseTypeDef](#describechannelmembershipforappinstanceuserresponseresponsetypedef)
-  - [DescribeChannelMembershipRequestTypeDef](#describechannelmembershiprequesttypedef)
-  - [DescribeChannelMembershipResponseResponseTypeDef](#describechannelmembershipresponseresponsetypedef)
-  - [DescribeChannelModeratedByAppInstanceUserRequestTypeDef](#describechannelmoderatedbyappinstanceuserrequesttypedef)
-  - [DescribeChannelModeratedByAppInstanceUserResponseResponseTypeDef](#describechannelmoderatedbyappinstanceuserresponseresponsetypedef)
-  - [DescribeChannelModeratorRequestTypeDef](#describechannelmoderatorrequesttypedef)
-  - [DescribeChannelModeratorResponseResponseTypeDef](#describechannelmoderatorresponseresponsetypedef)
-  - [DescribeChannelRequestTypeDef](#describechannelrequesttypedef)
-  - [DescribeChannelResponseResponseTypeDef](#describechannelresponseresponsetypedef)
-  - [DisassociatePhoneNumberFromUserRequestTypeDef](#disassociatephonenumberfromuserrequesttypedef)
-  - [DisassociatePhoneNumbersFromVoiceConnectorGroupRequestTypeDef](#disassociatephonenumbersfromvoiceconnectorgrouprequesttypedef)
-  - [DisassociatePhoneNumbersFromVoiceConnectorGroupResponseResponseTypeDef](#disassociatephonenumbersfromvoiceconnectorgroupresponseresponsetypedef)
-  - [DisassociatePhoneNumbersFromVoiceConnectorRequestTypeDef](#disassociatephonenumbersfromvoiceconnectorrequesttypedef)
-  - [DisassociatePhoneNumbersFromVoiceConnectorResponseResponseTypeDef](#disassociatephonenumbersfromvoiceconnectorresponseresponsetypedef)
-  - [DisassociateSigninDelegateGroupsFromAccountRequestTypeDef](#disassociatesignindelegategroupsfromaccountrequesttypedef)
+  - [DeleteAccountRequestRequestTypeDef](#deleteaccountrequestrequesttypedef)
+  - [DeleteAppInstanceAdminRequestRequestTypeDef](#deleteappinstanceadminrequestrequesttypedef)
+  - [DeleteAppInstanceRequestRequestTypeDef](#deleteappinstancerequestrequesttypedef)
+  - [DeleteAppInstanceStreamingConfigurationsRequestRequestTypeDef](#deleteappinstancestreamingconfigurationsrequestrequesttypedef)
+  - [DeleteAppInstanceUserRequestRequestTypeDef](#deleteappinstanceuserrequestrequesttypedef)
+  - [DeleteAttendeeRequestRequestTypeDef](#deleteattendeerequestrequesttypedef)
+  - [DeleteChannelBanRequestRequestTypeDef](#deletechannelbanrequestrequesttypedef)
+  - [DeleteChannelMembershipRequestRequestTypeDef](#deletechannelmembershiprequestrequesttypedef)
+  - [DeleteChannelMessageRequestRequestTypeDef](#deletechannelmessagerequestrequesttypedef)
+  - [DeleteChannelModeratorRequestRequestTypeDef](#deletechannelmoderatorrequestrequesttypedef)
+  - [DeleteChannelRequestRequestTypeDef](#deletechannelrequestrequesttypedef)
+  - [DeleteEventsConfigurationRequestRequestTypeDef](#deleteeventsconfigurationrequestrequesttypedef)
+  - [DeleteMeetingRequestRequestTypeDef](#deletemeetingrequestrequesttypedef)
+  - [DeletePhoneNumberRequestRequestTypeDef](#deletephonenumberrequestrequesttypedef)
+  - [DeleteProxySessionRequestRequestTypeDef](#deleteproxysessionrequestrequesttypedef)
+  - [DeleteRoomMembershipRequestRequestTypeDef](#deleteroommembershiprequestrequesttypedef)
+  - [DeleteRoomRequestRequestTypeDef](#deleteroomrequestrequesttypedef)
+  - [DeleteSipMediaApplicationRequestRequestTypeDef](#deletesipmediaapplicationrequestrequesttypedef)
+  - [DeleteSipRuleRequestRequestTypeDef](#deletesiprulerequestrequesttypedef)
+  - [DeleteVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef](#deletevoiceconnectoremergencycallingconfigurationrequestrequesttypedef)
+  - [DeleteVoiceConnectorGroupRequestRequestTypeDef](#deletevoiceconnectorgrouprequestrequesttypedef)
+  - [DeleteVoiceConnectorOriginationRequestRequestTypeDef](#deletevoiceconnectororiginationrequestrequesttypedef)
+  - [DeleteVoiceConnectorProxyRequestRequestTypeDef](#deletevoiceconnectorproxyrequestrequesttypedef)
+  - [DeleteVoiceConnectorRequestRequestTypeDef](#deletevoiceconnectorrequestrequesttypedef)
+  - [DeleteVoiceConnectorStreamingConfigurationRequestRequestTypeDef](#deletevoiceconnectorstreamingconfigurationrequestrequesttypedef)
+  - [DeleteVoiceConnectorTerminationCredentialsRequestRequestTypeDef](#deletevoiceconnectorterminationcredentialsrequestrequesttypedef)
+  - [DeleteVoiceConnectorTerminationRequestRequestTypeDef](#deletevoiceconnectorterminationrequestrequesttypedef)
+  - [DescribeAppInstanceAdminRequestRequestTypeDef](#describeappinstanceadminrequestrequesttypedef)
+  - [DescribeAppInstanceAdminResponseTypeDef](#describeappinstanceadminresponsetypedef)
+  - [DescribeAppInstanceRequestRequestTypeDef](#describeappinstancerequestrequesttypedef)
+  - [DescribeAppInstanceResponseTypeDef](#describeappinstanceresponsetypedef)
+  - [DescribeAppInstanceUserRequestRequestTypeDef](#describeappinstanceuserrequestrequesttypedef)
+  - [DescribeAppInstanceUserResponseTypeDef](#describeappinstanceuserresponsetypedef)
+  - [DescribeChannelBanRequestRequestTypeDef](#describechannelbanrequestrequesttypedef)
+  - [DescribeChannelBanResponseTypeDef](#describechannelbanresponsetypedef)
+  - [DescribeChannelMembershipForAppInstanceUserRequestRequestTypeDef](#describechannelmembershipforappinstanceuserrequestrequesttypedef)
+  - [DescribeChannelMembershipForAppInstanceUserResponseTypeDef](#describechannelmembershipforappinstanceuserresponsetypedef)
+  - [DescribeChannelMembershipRequestRequestTypeDef](#describechannelmembershiprequestrequesttypedef)
+  - [DescribeChannelMembershipResponseTypeDef](#describechannelmembershipresponsetypedef)
+  - [DescribeChannelModeratedByAppInstanceUserRequestRequestTypeDef](#describechannelmoderatedbyappinstanceuserrequestrequesttypedef)
+  - [DescribeChannelModeratedByAppInstanceUserResponseTypeDef](#describechannelmoderatedbyappinstanceuserresponsetypedef)
+  - [DescribeChannelModeratorRequestRequestTypeDef](#describechannelmoderatorrequestrequesttypedef)
+  - [DescribeChannelModeratorResponseTypeDef](#describechannelmoderatorresponsetypedef)
+  - [DescribeChannelRequestRequestTypeDef](#describechannelrequestrequesttypedef)
+  - [DescribeChannelResponseTypeDef](#describechannelresponsetypedef)
+  - [DisassociatePhoneNumberFromUserRequestRequestTypeDef](#disassociatephonenumberfromuserrequestrequesttypedef)
+  - [DisassociatePhoneNumbersFromVoiceConnectorGroupRequestRequestTypeDef](#disassociatephonenumbersfromvoiceconnectorgrouprequestrequesttypedef)
+  - [DisassociatePhoneNumbersFromVoiceConnectorGroupResponseTypeDef](#disassociatephonenumbersfromvoiceconnectorgroupresponsetypedef)
+  - [DisassociatePhoneNumbersFromVoiceConnectorRequestRequestTypeDef](#disassociatephonenumbersfromvoiceconnectorrequestrequesttypedef)
+  - [DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef](#disassociatephonenumbersfromvoiceconnectorresponsetypedef)
+  - [DisassociateSigninDelegateGroupsFromAccountRequestRequestTypeDef](#disassociatesignindelegategroupsfromaccountrequestrequesttypedef)
   - [EmergencyCallingConfigurationTypeDef](#emergencycallingconfigurationtypedef)
   - [EventsConfigurationTypeDef](#eventsconfigurationtypedef)
   - [GeoMatchParamsTypeDef](#geomatchparamstypedef)
-  - [GetAccountRequestTypeDef](#getaccountrequesttypedef)
-  - [GetAccountResponseResponseTypeDef](#getaccountresponseresponsetypedef)
-  - [GetAccountSettingsRequestTypeDef](#getaccountsettingsrequesttypedef)
-  - [GetAccountSettingsResponseResponseTypeDef](#getaccountsettingsresponseresponsetypedef)
-  - [GetAppInstanceRetentionSettingsRequestTypeDef](#getappinstanceretentionsettingsrequesttypedef)
-  - [GetAppInstanceRetentionSettingsResponseResponseTypeDef](#getappinstanceretentionsettingsresponseresponsetypedef)
-  - [GetAppInstanceStreamingConfigurationsRequestTypeDef](#getappinstancestreamingconfigurationsrequesttypedef)
-  - [GetAppInstanceStreamingConfigurationsResponseResponseTypeDef](#getappinstancestreamingconfigurationsresponseresponsetypedef)
-  - [GetAttendeeRequestTypeDef](#getattendeerequesttypedef)
-  - [GetAttendeeResponseResponseTypeDef](#getattendeeresponseresponsetypedef)
-  - [GetBotRequestTypeDef](#getbotrequesttypedef)
-  - [GetBotResponseResponseTypeDef](#getbotresponseresponsetypedef)
-  - [GetChannelMessageRequestTypeDef](#getchannelmessagerequesttypedef)
-  - [GetChannelMessageResponseResponseTypeDef](#getchannelmessageresponseresponsetypedef)
-  - [GetEventsConfigurationRequestTypeDef](#geteventsconfigurationrequesttypedef)
-  - [GetEventsConfigurationResponseResponseTypeDef](#geteventsconfigurationresponseresponsetypedef)
-  - [GetGlobalSettingsResponseResponseTypeDef](#getglobalsettingsresponseresponsetypedef)
-  - [GetMeetingRequestTypeDef](#getmeetingrequesttypedef)
-  - [GetMeetingResponseResponseTypeDef](#getmeetingresponseresponsetypedef)
-  - [GetMessagingSessionEndpointResponseResponseTypeDef](#getmessagingsessionendpointresponseresponsetypedef)
-  - [GetPhoneNumberOrderRequestTypeDef](#getphonenumberorderrequesttypedef)
-  - [GetPhoneNumberOrderResponseResponseTypeDef](#getphonenumberorderresponseresponsetypedef)
-  - [GetPhoneNumberRequestTypeDef](#getphonenumberrequesttypedef)
-  - [GetPhoneNumberResponseResponseTypeDef](#getphonenumberresponseresponsetypedef)
-  - [GetPhoneNumberSettingsResponseResponseTypeDef](#getphonenumbersettingsresponseresponsetypedef)
-  - [GetProxySessionRequestTypeDef](#getproxysessionrequesttypedef)
-  - [GetProxySessionResponseResponseTypeDef](#getproxysessionresponseresponsetypedef)
-  - [GetRetentionSettingsRequestTypeDef](#getretentionsettingsrequesttypedef)
-  - [GetRetentionSettingsResponseResponseTypeDef](#getretentionsettingsresponseresponsetypedef)
-  - [GetRoomRequestTypeDef](#getroomrequesttypedef)
-  - [GetRoomResponseResponseTypeDef](#getroomresponseresponsetypedef)
-  - [GetSipMediaApplicationLoggingConfigurationRequestTypeDef](#getsipmediaapplicationloggingconfigurationrequesttypedef)
-  - [GetSipMediaApplicationLoggingConfigurationResponseResponseTypeDef](#getsipmediaapplicationloggingconfigurationresponseresponsetypedef)
-  - [GetSipMediaApplicationRequestTypeDef](#getsipmediaapplicationrequesttypedef)
-  - [GetSipMediaApplicationResponseResponseTypeDef](#getsipmediaapplicationresponseresponsetypedef)
-  - [GetSipRuleRequestTypeDef](#getsiprulerequesttypedef)
-  - [GetSipRuleResponseResponseTypeDef](#getsipruleresponseresponsetypedef)
-  - [GetUserRequestTypeDef](#getuserrequesttypedef)
-  - [GetUserResponseResponseTypeDef](#getuserresponseresponsetypedef)
-  - [GetUserSettingsRequestTypeDef](#getusersettingsrequesttypedef)
-  - [GetUserSettingsResponseResponseTypeDef](#getusersettingsresponseresponsetypedef)
-  - [GetVoiceConnectorEmergencyCallingConfigurationRequestTypeDef](#getvoiceconnectoremergencycallingconfigurationrequesttypedef)
-  - [GetVoiceConnectorEmergencyCallingConfigurationResponseResponseTypeDef](#getvoiceconnectoremergencycallingconfigurationresponseresponsetypedef)
-  - [GetVoiceConnectorGroupRequestTypeDef](#getvoiceconnectorgrouprequesttypedef)
-  - [GetVoiceConnectorGroupResponseResponseTypeDef](#getvoiceconnectorgroupresponseresponsetypedef)
-  - [GetVoiceConnectorLoggingConfigurationRequestTypeDef](#getvoiceconnectorloggingconfigurationrequesttypedef)
-  - [GetVoiceConnectorLoggingConfigurationResponseResponseTypeDef](#getvoiceconnectorloggingconfigurationresponseresponsetypedef)
-  - [GetVoiceConnectorOriginationRequestTypeDef](#getvoiceconnectororiginationrequesttypedef)
-  - [GetVoiceConnectorOriginationResponseResponseTypeDef](#getvoiceconnectororiginationresponseresponsetypedef)
-  - [GetVoiceConnectorProxyRequestTypeDef](#getvoiceconnectorproxyrequesttypedef)
-  - [GetVoiceConnectorProxyResponseResponseTypeDef](#getvoiceconnectorproxyresponseresponsetypedef)
-  - [GetVoiceConnectorRequestTypeDef](#getvoiceconnectorrequesttypedef)
-  - [GetVoiceConnectorResponseResponseTypeDef](#getvoiceconnectorresponseresponsetypedef)
-  - [GetVoiceConnectorStreamingConfigurationRequestTypeDef](#getvoiceconnectorstreamingconfigurationrequesttypedef)
-  - [GetVoiceConnectorStreamingConfigurationResponseResponseTypeDef](#getvoiceconnectorstreamingconfigurationresponseresponsetypedef)
-  - [GetVoiceConnectorTerminationHealthRequestTypeDef](#getvoiceconnectorterminationhealthrequesttypedef)
-  - [GetVoiceConnectorTerminationHealthResponseResponseTypeDef](#getvoiceconnectorterminationhealthresponseresponsetypedef)
-  - [GetVoiceConnectorTerminationRequestTypeDef](#getvoiceconnectorterminationrequesttypedef)
-  - [GetVoiceConnectorTerminationResponseResponseTypeDef](#getvoiceconnectorterminationresponseresponsetypedef)
+  - [GetAccountRequestRequestTypeDef](#getaccountrequestrequesttypedef)
+  - [GetAccountResponseTypeDef](#getaccountresponsetypedef)
+  - [GetAccountSettingsRequestRequestTypeDef](#getaccountsettingsrequestrequesttypedef)
+  - [GetAccountSettingsResponseTypeDef](#getaccountsettingsresponsetypedef)
+  - [GetAppInstanceRetentionSettingsRequestRequestTypeDef](#getappinstanceretentionsettingsrequestrequesttypedef)
+  - [GetAppInstanceRetentionSettingsResponseTypeDef](#getappinstanceretentionsettingsresponsetypedef)
+  - [GetAppInstanceStreamingConfigurationsRequestRequestTypeDef](#getappinstancestreamingconfigurationsrequestrequesttypedef)
+  - [GetAppInstanceStreamingConfigurationsResponseTypeDef](#getappinstancestreamingconfigurationsresponsetypedef)
+  - [GetAttendeeRequestRequestTypeDef](#getattendeerequestrequesttypedef)
+  - [GetAttendeeResponseTypeDef](#getattendeeresponsetypedef)
+  - [GetBotRequestRequestTypeDef](#getbotrequestrequesttypedef)
+  - [GetBotResponseTypeDef](#getbotresponsetypedef)
+  - [GetChannelMessageRequestRequestTypeDef](#getchannelmessagerequestrequesttypedef)
+  - [GetChannelMessageResponseTypeDef](#getchannelmessageresponsetypedef)
+  - [GetEventsConfigurationRequestRequestTypeDef](#geteventsconfigurationrequestrequesttypedef)
+  - [GetEventsConfigurationResponseTypeDef](#geteventsconfigurationresponsetypedef)
+  - [GetGlobalSettingsResponseTypeDef](#getglobalsettingsresponsetypedef)
+  - [GetMeetingRequestRequestTypeDef](#getmeetingrequestrequesttypedef)
+  - [GetMeetingResponseTypeDef](#getmeetingresponsetypedef)
+  - [GetMessagingSessionEndpointResponseTypeDef](#getmessagingsessionendpointresponsetypedef)
+  - [GetPhoneNumberOrderRequestRequestTypeDef](#getphonenumberorderrequestrequesttypedef)
+  - [GetPhoneNumberOrderResponseTypeDef](#getphonenumberorderresponsetypedef)
+  - [GetPhoneNumberRequestRequestTypeDef](#getphonenumberrequestrequesttypedef)
+  - [GetPhoneNumberResponseTypeDef](#getphonenumberresponsetypedef)
+  - [GetPhoneNumberSettingsResponseTypeDef](#getphonenumbersettingsresponsetypedef)
+  - [GetProxySessionRequestRequestTypeDef](#getproxysessionrequestrequesttypedef)
+  - [GetProxySessionResponseTypeDef](#getproxysessionresponsetypedef)
+  - [GetRetentionSettingsRequestRequestTypeDef](#getretentionsettingsrequestrequesttypedef)
+  - [GetRetentionSettingsResponseTypeDef](#getretentionsettingsresponsetypedef)
+  - [GetRoomRequestRequestTypeDef](#getroomrequestrequesttypedef)
+  - [GetRoomResponseTypeDef](#getroomresponsetypedef)
+  - [GetSipMediaApplicationLoggingConfigurationRequestRequestTypeDef](#getsipmediaapplicationloggingconfigurationrequestrequesttypedef)
+  - [GetSipMediaApplicationLoggingConfigurationResponseTypeDef](#getsipmediaapplicationloggingconfigurationresponsetypedef)
+  - [GetSipMediaApplicationRequestRequestTypeDef](#getsipmediaapplicationrequestrequesttypedef)
+  - [GetSipMediaApplicationResponseTypeDef](#getsipmediaapplicationresponsetypedef)
+  - [GetSipRuleRequestRequestTypeDef](#getsiprulerequestrequesttypedef)
+  - [GetSipRuleResponseTypeDef](#getsipruleresponsetypedef)
+  - [GetUserRequestRequestTypeDef](#getuserrequestrequesttypedef)
+  - [GetUserResponseTypeDef](#getuserresponsetypedef)
+  - [GetUserSettingsRequestRequestTypeDef](#getusersettingsrequestrequesttypedef)
+  - [GetUserSettingsResponseTypeDef](#getusersettingsresponsetypedef)
+  - [GetVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef](#getvoiceconnectoremergencycallingconfigurationrequestrequesttypedef)
+  - [GetVoiceConnectorEmergencyCallingConfigurationResponseTypeDef](#getvoiceconnectoremergencycallingconfigurationresponsetypedef)
+  - [GetVoiceConnectorGroupRequestRequestTypeDef](#getvoiceconnectorgrouprequestrequesttypedef)
+  - [GetVoiceConnectorGroupResponseTypeDef](#getvoiceconnectorgroupresponsetypedef)
+  - [GetVoiceConnectorLoggingConfigurationRequestRequestTypeDef](#getvoiceconnectorloggingconfigurationrequestrequesttypedef)
+  - [GetVoiceConnectorLoggingConfigurationResponseTypeDef](#getvoiceconnectorloggingconfigurationresponsetypedef)
+  - [GetVoiceConnectorOriginationRequestRequestTypeDef](#getvoiceconnectororiginationrequestrequesttypedef)
+  - [GetVoiceConnectorOriginationResponseTypeDef](#getvoiceconnectororiginationresponsetypedef)
+  - [GetVoiceConnectorProxyRequestRequestTypeDef](#getvoiceconnectorproxyrequestrequesttypedef)
+  - [GetVoiceConnectorProxyResponseTypeDef](#getvoiceconnectorproxyresponsetypedef)
+  - [GetVoiceConnectorRequestRequestTypeDef](#getvoiceconnectorrequestrequesttypedef)
+  - [GetVoiceConnectorResponseTypeDef](#getvoiceconnectorresponsetypedef)
+  - [GetVoiceConnectorStreamingConfigurationRequestRequestTypeDef](#getvoiceconnectorstreamingconfigurationrequestrequesttypedef)
+  - [GetVoiceConnectorStreamingConfigurationResponseTypeDef](#getvoiceconnectorstreamingconfigurationresponsetypedef)
+  - [GetVoiceConnectorTerminationHealthRequestRequestTypeDef](#getvoiceconnectorterminationhealthrequestrequesttypedef)
+  - [GetVoiceConnectorTerminationHealthResponseTypeDef](#getvoiceconnectorterminationhealthresponsetypedef)
+  - [GetVoiceConnectorTerminationRequestRequestTypeDef](#getvoiceconnectorterminationrequestrequesttypedef)
+  - [GetVoiceConnectorTerminationResponseTypeDef](#getvoiceconnectorterminationresponsetypedef)
   - [IdentityTypeDef](#identitytypedef)
   - [InviteTypeDef](#invitetypedef)
-  - [InviteUsersRequestTypeDef](#inviteusersrequesttypedef)
-  - [InviteUsersResponseResponseTypeDef](#inviteusersresponseresponsetypedef)
-  - [ListAccountsRequestTypeDef](#listaccountsrequesttypedef)
-  - [ListAccountsResponseResponseTypeDef](#listaccountsresponseresponsetypedef)
-  - [ListAppInstanceAdminsRequestTypeDef](#listappinstanceadminsrequesttypedef)
-  - [ListAppInstanceAdminsResponseResponseTypeDef](#listappinstanceadminsresponseresponsetypedef)
-  - [ListAppInstanceUsersRequestTypeDef](#listappinstanceusersrequesttypedef)
-  - [ListAppInstanceUsersResponseResponseTypeDef](#listappinstanceusersresponseresponsetypedef)
-  - [ListAppInstancesRequestTypeDef](#listappinstancesrequesttypedef)
-  - [ListAppInstancesResponseResponseTypeDef](#listappinstancesresponseresponsetypedef)
-  - [ListAttendeeTagsRequestTypeDef](#listattendeetagsrequesttypedef)
-  - [ListAttendeeTagsResponseResponseTypeDef](#listattendeetagsresponseresponsetypedef)
-  - [ListAttendeesRequestTypeDef](#listattendeesrequesttypedef)
-  - [ListAttendeesResponseResponseTypeDef](#listattendeesresponseresponsetypedef)
-  - [ListBotsRequestTypeDef](#listbotsrequesttypedef)
-  - [ListBotsResponseResponseTypeDef](#listbotsresponseresponsetypedef)
-  - [ListChannelBansRequestTypeDef](#listchannelbansrequesttypedef)
-  - [ListChannelBansResponseResponseTypeDef](#listchannelbansresponseresponsetypedef)
-  - [ListChannelMembershipsForAppInstanceUserRequestTypeDef](#listchannelmembershipsforappinstanceuserrequesttypedef)
-  - [ListChannelMembershipsForAppInstanceUserResponseResponseTypeDef](#listchannelmembershipsforappinstanceuserresponseresponsetypedef)
-  - [ListChannelMembershipsRequestTypeDef](#listchannelmembershipsrequesttypedef)
-  - [ListChannelMembershipsResponseResponseTypeDef](#listchannelmembershipsresponseresponsetypedef)
-  - [ListChannelMessagesRequestTypeDef](#listchannelmessagesrequesttypedef)
-  - [ListChannelMessagesResponseResponseTypeDef](#listchannelmessagesresponseresponsetypedef)
-  - [ListChannelModeratorsRequestTypeDef](#listchannelmoderatorsrequesttypedef)
-  - [ListChannelModeratorsResponseResponseTypeDef](#listchannelmoderatorsresponseresponsetypedef)
-  - [ListChannelsModeratedByAppInstanceUserRequestTypeDef](#listchannelsmoderatedbyappinstanceuserrequesttypedef)
-  - [ListChannelsModeratedByAppInstanceUserResponseResponseTypeDef](#listchannelsmoderatedbyappinstanceuserresponseresponsetypedef)
-  - [ListChannelsRequestTypeDef](#listchannelsrequesttypedef)
-  - [ListChannelsResponseResponseTypeDef](#listchannelsresponseresponsetypedef)
-  - [ListMeetingTagsRequestTypeDef](#listmeetingtagsrequesttypedef)
-  - [ListMeetingTagsResponseResponseTypeDef](#listmeetingtagsresponseresponsetypedef)
-  - [ListMeetingsRequestTypeDef](#listmeetingsrequesttypedef)
-  - [ListMeetingsResponseResponseTypeDef](#listmeetingsresponseresponsetypedef)
-  - [ListPhoneNumberOrdersRequestTypeDef](#listphonenumberordersrequesttypedef)
-  - [ListPhoneNumberOrdersResponseResponseTypeDef](#listphonenumberordersresponseresponsetypedef)
-  - [ListPhoneNumbersRequestTypeDef](#listphonenumbersrequesttypedef)
-  - [ListPhoneNumbersResponseResponseTypeDef](#listphonenumbersresponseresponsetypedef)
-  - [ListProxySessionsRequestTypeDef](#listproxysessionsrequesttypedef)
-  - [ListProxySessionsResponseResponseTypeDef](#listproxysessionsresponseresponsetypedef)
-  - [ListRoomMembershipsRequestTypeDef](#listroommembershipsrequesttypedef)
-  - [ListRoomMembershipsResponseResponseTypeDef](#listroommembershipsresponseresponsetypedef)
-  - [ListRoomsRequestTypeDef](#listroomsrequesttypedef)
-  - [ListRoomsResponseResponseTypeDef](#listroomsresponseresponsetypedef)
-  - [ListSipMediaApplicationsRequestTypeDef](#listsipmediaapplicationsrequesttypedef)
-  - [ListSipMediaApplicationsResponseResponseTypeDef](#listsipmediaapplicationsresponseresponsetypedef)
-  - [ListSipRulesRequestTypeDef](#listsiprulesrequesttypedef)
-  - [ListSipRulesResponseResponseTypeDef](#listsiprulesresponseresponsetypedef)
-  - [ListSupportedPhoneNumberCountriesRequestTypeDef](#listsupportedphonenumbercountriesrequesttypedef)
-  - [ListSupportedPhoneNumberCountriesResponseResponseTypeDef](#listsupportedphonenumbercountriesresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
-  - [ListUsersRequestTypeDef](#listusersrequesttypedef)
-  - [ListUsersResponseResponseTypeDef](#listusersresponseresponsetypedef)
-  - [ListVoiceConnectorGroupsRequestTypeDef](#listvoiceconnectorgroupsrequesttypedef)
-  - [ListVoiceConnectorGroupsResponseResponseTypeDef](#listvoiceconnectorgroupsresponseresponsetypedef)
-  - [ListVoiceConnectorTerminationCredentialsRequestTypeDef](#listvoiceconnectorterminationcredentialsrequesttypedef)
-  - [ListVoiceConnectorTerminationCredentialsResponseResponseTypeDef](#listvoiceconnectorterminationcredentialsresponseresponsetypedef)
-  - [ListVoiceConnectorsRequestTypeDef](#listvoiceconnectorsrequesttypedef)
-  - [ListVoiceConnectorsResponseResponseTypeDef](#listvoiceconnectorsresponseresponsetypedef)
+  - [InviteUsersRequestRequestTypeDef](#inviteusersrequestrequesttypedef)
+  - [InviteUsersResponseTypeDef](#inviteusersresponsetypedef)
+  - [ListAccountsRequestRequestTypeDef](#listaccountsrequestrequesttypedef)
+  - [ListAccountsResponseTypeDef](#listaccountsresponsetypedef)
+  - [ListAppInstanceAdminsRequestRequestTypeDef](#listappinstanceadminsrequestrequesttypedef)
+  - [ListAppInstanceAdminsResponseTypeDef](#listappinstanceadminsresponsetypedef)
+  - [ListAppInstanceUsersRequestRequestTypeDef](#listappinstanceusersrequestrequesttypedef)
+  - [ListAppInstanceUsersResponseTypeDef](#listappinstanceusersresponsetypedef)
+  - [ListAppInstancesRequestRequestTypeDef](#listappinstancesrequestrequesttypedef)
+  - [ListAppInstancesResponseTypeDef](#listappinstancesresponsetypedef)
+  - [ListAttendeeTagsRequestRequestTypeDef](#listattendeetagsrequestrequesttypedef)
+  - [ListAttendeeTagsResponseTypeDef](#listattendeetagsresponsetypedef)
+  - [ListAttendeesRequestRequestTypeDef](#listattendeesrequestrequesttypedef)
+  - [ListAttendeesResponseTypeDef](#listattendeesresponsetypedef)
+  - [ListBotsRequestRequestTypeDef](#listbotsrequestrequesttypedef)
+  - [ListBotsResponseTypeDef](#listbotsresponsetypedef)
+  - [ListChannelBansRequestRequestTypeDef](#listchannelbansrequestrequesttypedef)
+  - [ListChannelBansResponseTypeDef](#listchannelbansresponsetypedef)
+  - [ListChannelMembershipsForAppInstanceUserRequestRequestTypeDef](#listchannelmembershipsforappinstanceuserrequestrequesttypedef)
+  - [ListChannelMembershipsForAppInstanceUserResponseTypeDef](#listchannelmembershipsforappinstanceuserresponsetypedef)
+  - [ListChannelMembershipsRequestRequestTypeDef](#listchannelmembershipsrequestrequesttypedef)
+  - [ListChannelMembershipsResponseTypeDef](#listchannelmembershipsresponsetypedef)
+  - [ListChannelMessagesRequestRequestTypeDef](#listchannelmessagesrequestrequesttypedef)
+  - [ListChannelMessagesResponseTypeDef](#listchannelmessagesresponsetypedef)
+  - [ListChannelModeratorsRequestRequestTypeDef](#listchannelmoderatorsrequestrequesttypedef)
+  - [ListChannelModeratorsResponseTypeDef](#listchannelmoderatorsresponsetypedef)
+  - [ListChannelsModeratedByAppInstanceUserRequestRequestTypeDef](#listchannelsmoderatedbyappinstanceuserrequestrequesttypedef)
+  - [ListChannelsModeratedByAppInstanceUserResponseTypeDef](#listchannelsmoderatedbyappinstanceuserresponsetypedef)
+  - [ListChannelsRequestRequestTypeDef](#listchannelsrequestrequesttypedef)
+  - [ListChannelsResponseTypeDef](#listchannelsresponsetypedef)
+  - [ListMeetingTagsRequestRequestTypeDef](#listmeetingtagsrequestrequesttypedef)
+  - [ListMeetingTagsResponseTypeDef](#listmeetingtagsresponsetypedef)
+  - [ListMeetingsRequestRequestTypeDef](#listmeetingsrequestrequesttypedef)
+  - [ListMeetingsResponseTypeDef](#listmeetingsresponsetypedef)
+  - [ListPhoneNumberOrdersRequestRequestTypeDef](#listphonenumberordersrequestrequesttypedef)
+  - [ListPhoneNumberOrdersResponseTypeDef](#listphonenumberordersresponsetypedef)
+  - [ListPhoneNumbersRequestRequestTypeDef](#listphonenumbersrequestrequesttypedef)
+  - [ListPhoneNumbersResponseTypeDef](#listphonenumbersresponsetypedef)
+  - [ListProxySessionsRequestRequestTypeDef](#listproxysessionsrequestrequesttypedef)
+  - [ListProxySessionsResponseTypeDef](#listproxysessionsresponsetypedef)
+  - [ListRoomMembershipsRequestRequestTypeDef](#listroommembershipsrequestrequesttypedef)
+  - [ListRoomMembershipsResponseTypeDef](#listroommembershipsresponsetypedef)
+  - [ListRoomsRequestRequestTypeDef](#listroomsrequestrequesttypedef)
+  - [ListRoomsResponseTypeDef](#listroomsresponsetypedef)
+  - [ListSipMediaApplicationsRequestRequestTypeDef](#listsipmediaapplicationsrequestrequesttypedef)
+  - [ListSipMediaApplicationsResponseTypeDef](#listsipmediaapplicationsresponsetypedef)
+  - [ListSipRulesRequestRequestTypeDef](#listsiprulesrequestrequesttypedef)
+  - [ListSipRulesResponseTypeDef](#listsiprulesresponsetypedef)
+  - [ListSupportedPhoneNumberCountriesRequestRequestTypeDef](#listsupportedphonenumbercountriesrequestrequesttypedef)
+  - [ListSupportedPhoneNumberCountriesResponseTypeDef](#listsupportedphonenumbercountriesresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListUsersRequestRequestTypeDef](#listusersrequestrequesttypedef)
+  - [ListUsersResponseTypeDef](#listusersresponsetypedef)
+  - [ListVoiceConnectorGroupsRequestRequestTypeDef](#listvoiceconnectorgroupsrequestrequesttypedef)
+  - [ListVoiceConnectorGroupsResponseTypeDef](#listvoiceconnectorgroupsresponsetypedef)
+  - [ListVoiceConnectorTerminationCredentialsRequestRequestTypeDef](#listvoiceconnectorterminationcredentialsrequestrequesttypedef)
+  - [ListVoiceConnectorTerminationCredentialsResponseTypeDef](#listvoiceconnectorterminationcredentialsresponsetypedef)
+  - [ListVoiceConnectorsRequestRequestTypeDef](#listvoiceconnectorsrequestrequesttypedef)
+  - [ListVoiceConnectorsResponseTypeDef](#listvoiceconnectorsresponsetypedef)
   - [LoggingConfigurationTypeDef](#loggingconfigurationtypedef)
-  - [LogoutUserRequestTypeDef](#logoutuserrequesttypedef)
+  - [LogoutUserRequestRequestTypeDef](#logoutuserrequestrequesttypedef)
   - [MediaPlacementTypeDef](#mediaplacementtypedef)
   - [MeetingNotificationConfigurationTypeDef](#meetingnotificationconfigurationtypedef)
   - [MeetingTypeDef](#meetingtypedef)
@@ -308,48 +308,48 @@ type annotations stubs module
   - [PhoneNumberTypeDef](#phonenumbertypedef)
   - [ProxySessionTypeDef](#proxysessiontypedef)
   - [ProxyTypeDef](#proxytypedef)
-  - [PutAppInstanceRetentionSettingsRequestTypeDef](#putappinstanceretentionsettingsrequesttypedef)
-  - [PutAppInstanceRetentionSettingsResponseResponseTypeDef](#putappinstanceretentionsettingsresponseresponsetypedef)
-  - [PutAppInstanceStreamingConfigurationsRequestTypeDef](#putappinstancestreamingconfigurationsrequesttypedef)
-  - [PutAppInstanceStreamingConfigurationsResponseResponseTypeDef](#putappinstancestreamingconfigurationsresponseresponsetypedef)
-  - [PutEventsConfigurationRequestTypeDef](#puteventsconfigurationrequesttypedef)
-  - [PutEventsConfigurationResponseResponseTypeDef](#puteventsconfigurationresponseresponsetypedef)
-  - [PutRetentionSettingsRequestTypeDef](#putretentionsettingsrequesttypedef)
-  - [PutRetentionSettingsResponseResponseTypeDef](#putretentionsettingsresponseresponsetypedef)
-  - [PutSipMediaApplicationLoggingConfigurationRequestTypeDef](#putsipmediaapplicationloggingconfigurationrequesttypedef)
-  - [PutSipMediaApplicationLoggingConfigurationResponseResponseTypeDef](#putsipmediaapplicationloggingconfigurationresponseresponsetypedef)
-  - [PutVoiceConnectorEmergencyCallingConfigurationRequestTypeDef](#putvoiceconnectoremergencycallingconfigurationrequesttypedef)
-  - [PutVoiceConnectorEmergencyCallingConfigurationResponseResponseTypeDef](#putvoiceconnectoremergencycallingconfigurationresponseresponsetypedef)
-  - [PutVoiceConnectorLoggingConfigurationRequestTypeDef](#putvoiceconnectorloggingconfigurationrequesttypedef)
-  - [PutVoiceConnectorLoggingConfigurationResponseResponseTypeDef](#putvoiceconnectorloggingconfigurationresponseresponsetypedef)
-  - [PutVoiceConnectorOriginationRequestTypeDef](#putvoiceconnectororiginationrequesttypedef)
-  - [PutVoiceConnectorOriginationResponseResponseTypeDef](#putvoiceconnectororiginationresponseresponsetypedef)
-  - [PutVoiceConnectorProxyRequestTypeDef](#putvoiceconnectorproxyrequesttypedef)
-  - [PutVoiceConnectorProxyResponseResponseTypeDef](#putvoiceconnectorproxyresponseresponsetypedef)
-  - [PutVoiceConnectorStreamingConfigurationRequestTypeDef](#putvoiceconnectorstreamingconfigurationrequesttypedef)
-  - [PutVoiceConnectorStreamingConfigurationResponseResponseTypeDef](#putvoiceconnectorstreamingconfigurationresponseresponsetypedef)
-  - [PutVoiceConnectorTerminationCredentialsRequestTypeDef](#putvoiceconnectorterminationcredentialsrequesttypedef)
-  - [PutVoiceConnectorTerminationRequestTypeDef](#putvoiceconnectorterminationrequesttypedef)
-  - [PutVoiceConnectorTerminationResponseResponseTypeDef](#putvoiceconnectorterminationresponseresponsetypedef)
-  - [RedactChannelMessageRequestTypeDef](#redactchannelmessagerequesttypedef)
-  - [RedactChannelMessageResponseResponseTypeDef](#redactchannelmessageresponseresponsetypedef)
-  - [RedactConversationMessageRequestTypeDef](#redactconversationmessagerequesttypedef)
-  - [RedactRoomMessageRequestTypeDef](#redactroommessagerequesttypedef)
-  - [RegenerateSecurityTokenRequestTypeDef](#regeneratesecuritytokenrequesttypedef)
-  - [RegenerateSecurityTokenResponseResponseTypeDef](#regeneratesecuritytokenresponseresponsetypedef)
-  - [ResetPersonalPINRequestTypeDef](#resetpersonalpinrequesttypedef)
-  - [ResetPersonalPINResponseResponseTypeDef](#resetpersonalpinresponseresponsetypedef)
+  - [PutAppInstanceRetentionSettingsRequestRequestTypeDef](#putappinstanceretentionsettingsrequestrequesttypedef)
+  - [PutAppInstanceRetentionSettingsResponseTypeDef](#putappinstanceretentionsettingsresponsetypedef)
+  - [PutAppInstanceStreamingConfigurationsRequestRequestTypeDef](#putappinstancestreamingconfigurationsrequestrequesttypedef)
+  - [PutAppInstanceStreamingConfigurationsResponseTypeDef](#putappinstancestreamingconfigurationsresponsetypedef)
+  - [PutEventsConfigurationRequestRequestTypeDef](#puteventsconfigurationrequestrequesttypedef)
+  - [PutEventsConfigurationResponseTypeDef](#puteventsconfigurationresponsetypedef)
+  - [PutRetentionSettingsRequestRequestTypeDef](#putretentionsettingsrequestrequesttypedef)
+  - [PutRetentionSettingsResponseTypeDef](#putretentionsettingsresponsetypedef)
+  - [PutSipMediaApplicationLoggingConfigurationRequestRequestTypeDef](#putsipmediaapplicationloggingconfigurationrequestrequesttypedef)
+  - [PutSipMediaApplicationLoggingConfigurationResponseTypeDef](#putsipmediaapplicationloggingconfigurationresponsetypedef)
+  - [PutVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef](#putvoiceconnectoremergencycallingconfigurationrequestrequesttypedef)
+  - [PutVoiceConnectorEmergencyCallingConfigurationResponseTypeDef](#putvoiceconnectoremergencycallingconfigurationresponsetypedef)
+  - [PutVoiceConnectorLoggingConfigurationRequestRequestTypeDef](#putvoiceconnectorloggingconfigurationrequestrequesttypedef)
+  - [PutVoiceConnectorLoggingConfigurationResponseTypeDef](#putvoiceconnectorloggingconfigurationresponsetypedef)
+  - [PutVoiceConnectorOriginationRequestRequestTypeDef](#putvoiceconnectororiginationrequestrequesttypedef)
+  - [PutVoiceConnectorOriginationResponseTypeDef](#putvoiceconnectororiginationresponsetypedef)
+  - [PutVoiceConnectorProxyRequestRequestTypeDef](#putvoiceconnectorproxyrequestrequesttypedef)
+  - [PutVoiceConnectorProxyResponseTypeDef](#putvoiceconnectorproxyresponsetypedef)
+  - [PutVoiceConnectorStreamingConfigurationRequestRequestTypeDef](#putvoiceconnectorstreamingconfigurationrequestrequesttypedef)
+  - [PutVoiceConnectorStreamingConfigurationResponseTypeDef](#putvoiceconnectorstreamingconfigurationresponsetypedef)
+  - [PutVoiceConnectorTerminationCredentialsRequestRequestTypeDef](#putvoiceconnectorterminationcredentialsrequestrequesttypedef)
+  - [PutVoiceConnectorTerminationRequestRequestTypeDef](#putvoiceconnectorterminationrequestrequesttypedef)
+  - [PutVoiceConnectorTerminationResponseTypeDef](#putvoiceconnectorterminationresponsetypedef)
+  - [RedactChannelMessageRequestRequestTypeDef](#redactchannelmessagerequestrequesttypedef)
+  - [RedactChannelMessageResponseTypeDef](#redactchannelmessageresponsetypedef)
+  - [RedactConversationMessageRequestRequestTypeDef](#redactconversationmessagerequestrequesttypedef)
+  - [RedactRoomMessageRequestRequestTypeDef](#redactroommessagerequestrequesttypedef)
+  - [RegenerateSecurityTokenRequestRequestTypeDef](#regeneratesecuritytokenrequestrequesttypedef)
+  - [RegenerateSecurityTokenResponseTypeDef](#regeneratesecuritytokenresponsetypedef)
+  - [ResetPersonalPINRequestRequestTypeDef](#resetpersonalpinrequestrequesttypedef)
+  - [ResetPersonalPINResponseTypeDef](#resetpersonalpinresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestorePhoneNumberRequestTypeDef](#restorephonenumberrequesttypedef)
-  - [RestorePhoneNumberResponseResponseTypeDef](#restorephonenumberresponseresponsetypedef)
+  - [RestorePhoneNumberRequestRequestTypeDef](#restorephonenumberrequestrequesttypedef)
+  - [RestorePhoneNumberResponseTypeDef](#restorephonenumberresponsetypedef)
   - [RetentionSettingsTypeDef](#retentionsettingstypedef)
   - [RoomMembershipTypeDef](#roommembershiptypedef)
   - [RoomRetentionSettingsTypeDef](#roomretentionsettingstypedef)
   - [RoomTypeDef](#roomtypedef)
-  - [SearchAvailablePhoneNumbersRequestTypeDef](#searchavailablephonenumbersrequesttypedef)
-  - [SearchAvailablePhoneNumbersResponseResponseTypeDef](#searchavailablephonenumbersresponseresponsetypedef)
-  - [SendChannelMessageRequestTypeDef](#sendchannelmessagerequesttypedef)
-  - [SendChannelMessageResponseResponseTypeDef](#sendchannelmessageresponseresponsetypedef)
+  - [SearchAvailablePhoneNumbersRequestRequestTypeDef](#searchavailablephonenumbersrequestrequesttypedef)
+  - [SearchAvailablePhoneNumbersResponseTypeDef](#searchavailablephonenumbersresponsetypedef)
+  - [SendChannelMessageRequestRequestTypeDef](#sendchannelmessagerequestrequesttypedef)
+  - [SendChannelMessageResponseTypeDef](#sendchannelmessageresponsetypedef)
   - [SigninDelegateGroupTypeDef](#signindelegategrouptypedef)
   - [SipMediaApplicationCallTypeDef](#sipmediaapplicationcalltypedef)
   - [SipMediaApplicationEndpointTypeDef](#sipmediaapplicationendpointtypedef)
@@ -359,56 +359,56 @@ type annotations stubs module
   - [SipRuleTypeDef](#sipruletypedef)
   - [StreamingConfigurationTypeDef](#streamingconfigurationtypedef)
   - [StreamingNotificationTargetTypeDef](#streamingnotificationtargettypedef)
-  - [TagAttendeeRequestTypeDef](#tagattendeerequesttypedef)
-  - [TagMeetingRequestTypeDef](#tagmeetingrequesttypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagAttendeeRequestRequestTypeDef](#tagattendeerequestrequesttypedef)
+  - [TagMeetingRequestRequestTypeDef](#tagmeetingrequestrequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TelephonySettingsTypeDef](#telephonysettingstypedef)
   - [TerminationHealthTypeDef](#terminationhealthtypedef)
   - [TerminationTypeDef](#terminationtypedef)
-  - [UntagAttendeeRequestTypeDef](#untagattendeerequesttypedef)
-  - [UntagMeetingRequestTypeDef](#untagmeetingrequesttypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateAccountRequestTypeDef](#updateaccountrequesttypedef)
-  - [UpdateAccountResponseResponseTypeDef](#updateaccountresponseresponsetypedef)
-  - [UpdateAccountSettingsRequestTypeDef](#updateaccountsettingsrequesttypedef)
-  - [UpdateAppInstanceRequestTypeDef](#updateappinstancerequesttypedef)
-  - [UpdateAppInstanceResponseResponseTypeDef](#updateappinstanceresponseresponsetypedef)
-  - [UpdateAppInstanceUserRequestTypeDef](#updateappinstanceuserrequesttypedef)
-  - [UpdateAppInstanceUserResponseResponseTypeDef](#updateappinstanceuserresponseresponsetypedef)
-  - [UpdateBotRequestTypeDef](#updatebotrequesttypedef)
-  - [UpdateBotResponseResponseTypeDef](#updatebotresponseresponsetypedef)
-  - [UpdateChannelMessageRequestTypeDef](#updatechannelmessagerequesttypedef)
-  - [UpdateChannelMessageResponseResponseTypeDef](#updatechannelmessageresponseresponsetypedef)
-  - [UpdateChannelReadMarkerRequestTypeDef](#updatechannelreadmarkerrequesttypedef)
-  - [UpdateChannelReadMarkerResponseResponseTypeDef](#updatechannelreadmarkerresponseresponsetypedef)
-  - [UpdateChannelRequestTypeDef](#updatechannelrequesttypedef)
-  - [UpdateChannelResponseResponseTypeDef](#updatechannelresponseresponsetypedef)
-  - [UpdateGlobalSettingsRequestTypeDef](#updateglobalsettingsrequesttypedef)
+  - [UntagAttendeeRequestRequestTypeDef](#untagattendeerequestrequesttypedef)
+  - [UntagMeetingRequestRequestTypeDef](#untagmeetingrequestrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateAccountRequestRequestTypeDef](#updateaccountrequestrequesttypedef)
+  - [UpdateAccountResponseTypeDef](#updateaccountresponsetypedef)
+  - [UpdateAccountSettingsRequestRequestTypeDef](#updateaccountsettingsrequestrequesttypedef)
+  - [UpdateAppInstanceRequestRequestTypeDef](#updateappinstancerequestrequesttypedef)
+  - [UpdateAppInstanceResponseTypeDef](#updateappinstanceresponsetypedef)
+  - [UpdateAppInstanceUserRequestRequestTypeDef](#updateappinstanceuserrequestrequesttypedef)
+  - [UpdateAppInstanceUserResponseTypeDef](#updateappinstanceuserresponsetypedef)
+  - [UpdateBotRequestRequestTypeDef](#updatebotrequestrequesttypedef)
+  - [UpdateBotResponseTypeDef](#updatebotresponsetypedef)
+  - [UpdateChannelMessageRequestRequestTypeDef](#updatechannelmessagerequestrequesttypedef)
+  - [UpdateChannelMessageResponseTypeDef](#updatechannelmessageresponsetypedef)
+  - [UpdateChannelReadMarkerRequestRequestTypeDef](#updatechannelreadmarkerrequestrequesttypedef)
+  - [UpdateChannelReadMarkerResponseTypeDef](#updatechannelreadmarkerresponsetypedef)
+  - [UpdateChannelRequestRequestTypeDef](#updatechannelrequestrequesttypedef)
+  - [UpdateChannelResponseTypeDef](#updatechannelresponsetypedef)
+  - [UpdateGlobalSettingsRequestRequestTypeDef](#updateglobalsettingsrequestrequesttypedef)
   - [UpdatePhoneNumberRequestItemTypeDef](#updatephonenumberrequestitemtypedef)
-  - [UpdatePhoneNumberRequestTypeDef](#updatephonenumberrequesttypedef)
-  - [UpdatePhoneNumberResponseResponseTypeDef](#updatephonenumberresponseresponsetypedef)
-  - [UpdatePhoneNumberSettingsRequestTypeDef](#updatephonenumbersettingsrequesttypedef)
-  - [UpdateProxySessionRequestTypeDef](#updateproxysessionrequesttypedef)
-  - [UpdateProxySessionResponseResponseTypeDef](#updateproxysessionresponseresponsetypedef)
-  - [UpdateRoomMembershipRequestTypeDef](#updateroommembershiprequesttypedef)
-  - [UpdateRoomMembershipResponseResponseTypeDef](#updateroommembershipresponseresponsetypedef)
-  - [UpdateRoomRequestTypeDef](#updateroomrequesttypedef)
-  - [UpdateRoomResponseResponseTypeDef](#updateroomresponseresponsetypedef)
-  - [UpdateSipMediaApplicationCallRequestTypeDef](#updatesipmediaapplicationcallrequesttypedef)
-  - [UpdateSipMediaApplicationCallResponseResponseTypeDef](#updatesipmediaapplicationcallresponseresponsetypedef)
-  - [UpdateSipMediaApplicationRequestTypeDef](#updatesipmediaapplicationrequesttypedef)
-  - [UpdateSipMediaApplicationResponseResponseTypeDef](#updatesipmediaapplicationresponseresponsetypedef)
-  - [UpdateSipRuleRequestTypeDef](#updatesiprulerequesttypedef)
-  - [UpdateSipRuleResponseResponseTypeDef](#updatesipruleresponseresponsetypedef)
+  - [UpdatePhoneNumberRequestRequestTypeDef](#updatephonenumberrequestrequesttypedef)
+  - [UpdatePhoneNumberResponseTypeDef](#updatephonenumberresponsetypedef)
+  - [UpdatePhoneNumberSettingsRequestRequestTypeDef](#updatephonenumbersettingsrequestrequesttypedef)
+  - [UpdateProxySessionRequestRequestTypeDef](#updateproxysessionrequestrequesttypedef)
+  - [UpdateProxySessionResponseTypeDef](#updateproxysessionresponsetypedef)
+  - [UpdateRoomMembershipRequestRequestTypeDef](#updateroommembershiprequestrequesttypedef)
+  - [UpdateRoomMembershipResponseTypeDef](#updateroommembershipresponsetypedef)
+  - [UpdateRoomRequestRequestTypeDef](#updateroomrequestrequesttypedef)
+  - [UpdateRoomResponseTypeDef](#updateroomresponsetypedef)
+  - [UpdateSipMediaApplicationCallRequestRequestTypeDef](#updatesipmediaapplicationcallrequestrequesttypedef)
+  - [UpdateSipMediaApplicationCallResponseTypeDef](#updatesipmediaapplicationcallresponsetypedef)
+  - [UpdateSipMediaApplicationRequestRequestTypeDef](#updatesipmediaapplicationrequestrequesttypedef)
+  - [UpdateSipMediaApplicationResponseTypeDef](#updatesipmediaapplicationresponsetypedef)
+  - [UpdateSipRuleRequestRequestTypeDef](#updatesiprulerequestrequesttypedef)
+  - [UpdateSipRuleResponseTypeDef](#updatesipruleresponsetypedef)
   - [UpdateUserRequestItemTypeDef](#updateuserrequestitemtypedef)
-  - [UpdateUserRequestTypeDef](#updateuserrequesttypedef)
-  - [UpdateUserResponseResponseTypeDef](#updateuserresponseresponsetypedef)
-  - [UpdateUserSettingsRequestTypeDef](#updateusersettingsrequesttypedef)
-  - [UpdateVoiceConnectorGroupRequestTypeDef](#updatevoiceconnectorgrouprequesttypedef)
-  - [UpdateVoiceConnectorGroupResponseResponseTypeDef](#updatevoiceconnectorgroupresponseresponsetypedef)
-  - [UpdateVoiceConnectorRequestTypeDef](#updatevoiceconnectorrequesttypedef)
-  - [UpdateVoiceConnectorResponseResponseTypeDef](#updatevoiceconnectorresponseresponsetypedef)
+  - [UpdateUserRequestRequestTypeDef](#updateuserrequestrequesttypedef)
+  - [UpdateUserResponseTypeDef](#updateuserresponsetypedef)
+  - [UpdateUserSettingsRequestRequestTypeDef](#updateusersettingsrequestrequesttypedef)
+  - [UpdateVoiceConnectorGroupRequestRequestTypeDef](#updatevoiceconnectorgrouprequestrequesttypedef)
+  - [UpdateVoiceConnectorGroupResponseTypeDef](#updatevoiceconnectorgroupresponsetypedef)
+  - [UpdateVoiceConnectorRequestRequestTypeDef](#updatevoiceconnectorrequestrequesttypedef)
+  - [UpdateVoiceConnectorResponseTypeDef](#updatevoiceconnectorresponsetypedef)
   - [UserErrorTypeDef](#usererrortypedef)
   - [UserSettingsTypeDef](#usersettingstypedef)
   - [UserTypeDef](#usertypedef)
@@ -568,10 +568,10 @@ Optional fields:
 - `Metadata`: `str`
 - `LastUpdatedTimestamp`: `datetime`
 
-## AssociatePhoneNumberWithUserRequestTypeDef
+## AssociatePhoneNumberWithUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import AssociatePhoneNumberWithUserRequestTypeDef
+from mypy_boto3_chime.type_defs import AssociatePhoneNumberWithUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -580,10 +580,10 @@ Required fields:
 - `UserId`: `str`
 - `E164PhoneNumber`: `str`
 
-## AssociatePhoneNumbersWithVoiceConnectorGroupRequestTypeDef
+## AssociatePhoneNumbersWithVoiceConnectorGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import AssociatePhoneNumbersWithVoiceConnectorGroupRequestTypeDef
+from mypy_boto3_chime.type_defs import AssociatePhoneNumbersWithVoiceConnectorGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -595,10 +595,10 @@ Optional fields:
 
 - `ForceAssociate`: `bool`
 
-## AssociatePhoneNumbersWithVoiceConnectorGroupResponseResponseTypeDef
+## AssociatePhoneNumbersWithVoiceConnectorGroupResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import AssociatePhoneNumbersWithVoiceConnectorGroupResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import AssociatePhoneNumbersWithVoiceConnectorGroupResponseTypeDef
 ```
 
 Required fields:
@@ -608,10 +608,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociatePhoneNumbersWithVoiceConnectorRequestTypeDef
+## AssociatePhoneNumbersWithVoiceConnectorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import AssociatePhoneNumbersWithVoiceConnectorRequestTypeDef
+from mypy_boto3_chime.type_defs import AssociatePhoneNumbersWithVoiceConnectorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -623,10 +623,10 @@ Optional fields:
 
 - `ForceAssociate`: `bool`
 
-## AssociatePhoneNumbersWithVoiceConnectorResponseResponseTypeDef
+## AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import AssociatePhoneNumbersWithVoiceConnectorResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef
 ```
 
 Required fields:
@@ -636,10 +636,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateSigninDelegateGroupsWithAccountRequestTypeDef
+## AssociateSigninDelegateGroupsWithAccountRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import AssociateSigninDelegateGroupsWithAccountRequestTypeDef
+from mypy_boto3_chime.type_defs import AssociateSigninDelegateGroupsWithAccountRequestRequestTypeDef
 ```
 
 Required fields:
@@ -673,10 +673,10 @@ Optional fields:
 - `Members`: `List`\[[IdentityTypeDef](./type_defs.md#identitytypedef)\]
 - `ChannelArn`: `str`
 
-## BatchCreateAttendeeRequestTypeDef
+## BatchCreateAttendeeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import BatchCreateAttendeeRequestTypeDef
+from mypy_boto3_chime.type_defs import BatchCreateAttendeeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -685,10 +685,10 @@ Required fields:
 - `Attendees`:
   `List`\[[CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef)\]
 
-## BatchCreateAttendeeResponseResponseTypeDef
+## BatchCreateAttendeeResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import BatchCreateAttendeeResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import BatchCreateAttendeeResponseTypeDef
 ```
 
 Required fields:
@@ -711,10 +711,10 @@ Optional fields:
 - `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `ErrorMessage`: `str`
 
-## BatchCreateChannelMembershipRequestTypeDef
+## BatchCreateChannelMembershipRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import BatchCreateChannelMembershipRequestTypeDef
+from mypy_boto3_chime.type_defs import BatchCreateChannelMembershipRequestRequestTypeDef
 ```
 
 Required fields:
@@ -727,10 +727,10 @@ Optional fields:
 - `Type`: [ChannelMembershipTypeType](./literals.md#channelmembershiptypetype)
 - `ChimeBearer`: `str`
 
-## BatchCreateChannelMembershipResponseResponseTypeDef
+## BatchCreateChannelMembershipResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import BatchCreateChannelMembershipResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import BatchCreateChannelMembershipResponseTypeDef
 ```
 
 Required fields:
@@ -742,10 +742,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchCreateRoomMembershipRequestTypeDef
+## BatchCreateRoomMembershipRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import BatchCreateRoomMembershipRequestTypeDef
+from mypy_boto3_chime.type_defs import BatchCreateRoomMembershipRequestRequestTypeDef
 ```
 
 Required fields:
@@ -755,10 +755,10 @@ Required fields:
 - `MembershipItemList`:
   `List`\[[MembershipItemTypeDef](./type_defs.md#membershipitemtypedef)\]
 
-## BatchCreateRoomMembershipResponseResponseTypeDef
+## BatchCreateRoomMembershipResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import BatchCreateRoomMembershipResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import BatchCreateRoomMembershipResponseTypeDef
 ```
 
 Required fields:
@@ -767,20 +767,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchDeletePhoneNumberRequestTypeDef
+## BatchDeletePhoneNumberRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import BatchDeletePhoneNumberRequestTypeDef
+from mypy_boto3_chime.type_defs import BatchDeletePhoneNumberRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `PhoneNumberIds`: `List`\[`str`\]
 
-## BatchDeletePhoneNumberResponseResponseTypeDef
+## BatchDeletePhoneNumberResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import BatchDeletePhoneNumberResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import BatchDeletePhoneNumberResponseTypeDef
 ```
 
 Required fields:
@@ -790,10 +790,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchSuspendUserRequestTypeDef
+## BatchSuspendUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import BatchSuspendUserRequestTypeDef
+from mypy_boto3_chime.type_defs import BatchSuspendUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -801,10 +801,10 @@ Required fields:
 - `AccountId`: `str`
 - `UserIdList`: `List`\[`str`\]
 
-## BatchSuspendUserResponseResponseTypeDef
+## BatchSuspendUserResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import BatchSuspendUserResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import BatchSuspendUserResponseTypeDef
 ```
 
 Required fields:
@@ -813,10 +813,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchUnsuspendUserRequestTypeDef
+## BatchUnsuspendUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import BatchUnsuspendUserRequestTypeDef
+from mypy_boto3_chime.type_defs import BatchUnsuspendUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -824,10 +824,10 @@ Required fields:
 - `AccountId`: `str`
 - `UserIdList`: `List`\[`str`\]
 
-## BatchUnsuspendUserResponseResponseTypeDef
+## BatchUnsuspendUserResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import BatchUnsuspendUserResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import BatchUnsuspendUserResponseTypeDef
 ```
 
 Required fields:
@@ -836,10 +836,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchUpdatePhoneNumberRequestTypeDef
+## BatchUpdatePhoneNumberRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import BatchUpdatePhoneNumberRequestTypeDef
+from mypy_boto3_chime.type_defs import BatchUpdatePhoneNumberRequestRequestTypeDef
 ```
 
 Required fields:
@@ -847,10 +847,10 @@ Required fields:
 - `UpdatePhoneNumberRequestItems`:
   `List`\[[UpdatePhoneNumberRequestItemTypeDef](./type_defs.md#updatephonenumberrequestitemtypedef)\]
 
-## BatchUpdatePhoneNumberResponseResponseTypeDef
+## BatchUpdatePhoneNumberResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import BatchUpdatePhoneNumberResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import BatchUpdatePhoneNumberResponseTypeDef
 ```
 
 Required fields:
@@ -860,10 +860,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchUpdateUserRequestTypeDef
+## BatchUpdateUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import BatchUpdateUserRequestTypeDef
+from mypy_boto3_chime.type_defs import BatchUpdateUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -872,10 +872,10 @@ Required fields:
 - `UpdateUserRequestItems`:
   `List`\[[UpdateUserRequestItemTypeDef](./type_defs.md#updateuserrequestitemtypedef)\]
 
-## BatchUpdateUserResponseResponseTypeDef
+## BatchUpdateUserResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import BatchUpdateUserResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import BatchUpdateUserResponseTypeDef
 ```
 
 Required fields:
@@ -1100,20 +1100,20 @@ Optional fields:
 
 - `RetentionDays`: `int`
 
-## CreateAccountRequestTypeDef
+## CreateAccountRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateAccountRequestTypeDef
+from mypy_boto3_chime.type_defs import CreateAccountRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## CreateAccountResponseResponseTypeDef
+## CreateAccountResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateAccountResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import CreateAccountResponseTypeDef
 ```
 
 Required fields:
@@ -1122,10 +1122,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateAppInstanceAdminRequestTypeDef
+## CreateAppInstanceAdminRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateAppInstanceAdminRequestTypeDef
+from mypy_boto3_chime.type_defs import CreateAppInstanceAdminRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1133,10 +1133,10 @@ Required fields:
 - `AppInstanceAdminArn`: `str`
 - `AppInstanceArn`: `str`
 
-## CreateAppInstanceAdminResponseResponseTypeDef
+## CreateAppInstanceAdminResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateAppInstanceAdminResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import CreateAppInstanceAdminResponseTypeDef
 ```
 
 Required fields:
@@ -1146,10 +1146,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateAppInstanceRequestTypeDef
+## CreateAppInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateAppInstanceRequestTypeDef
+from mypy_boto3_chime.type_defs import CreateAppInstanceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1162,10 +1162,10 @@ Optional fields:
 - `Metadata`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateAppInstanceResponseResponseTypeDef
+## CreateAppInstanceResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateAppInstanceResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import CreateAppInstanceResponseTypeDef
 ```
 
 Required fields:
@@ -1174,10 +1174,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateAppInstanceUserRequestTypeDef
+## CreateAppInstanceUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateAppInstanceUserRequestTypeDef
+from mypy_boto3_chime.type_defs import CreateAppInstanceUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1192,10 +1192,10 @@ Optional fields:
 - `Metadata`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateAppInstanceUserResponseResponseTypeDef
+## CreateAppInstanceUserResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateAppInstanceUserResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import CreateAppInstanceUserResponseTypeDef
 ```
 
 Required fields:
@@ -1230,10 +1230,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateAttendeeRequestTypeDef
+## CreateAttendeeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateAttendeeRequestTypeDef
+from mypy_boto3_chime.type_defs import CreateAttendeeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1245,10 +1245,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateAttendeeResponseResponseTypeDef
+## CreateAttendeeResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateAttendeeResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import CreateAttendeeResponseTypeDef
 ```
 
 Required fields:
@@ -1257,10 +1257,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateBotRequestTypeDef
+## CreateBotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateBotRequestTypeDef
+from mypy_boto3_chime.type_defs import CreateBotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1272,10 +1272,10 @@ Optional fields:
 
 - `Domain`: `str`
 
-## CreateBotResponseResponseTypeDef
+## CreateBotResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateBotResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import CreateBotResponseTypeDef
 ```
 
 Required fields:
@@ -1284,10 +1284,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateChannelBanRequestTypeDef
+## CreateChannelBanRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateChannelBanRequestTypeDef
+from mypy_boto3_chime.type_defs import CreateChannelBanRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1299,10 +1299,10 @@ Optional fields:
 
 - `ChimeBearer`: `str`
 
-## CreateChannelBanResponseResponseTypeDef
+## CreateChannelBanResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateChannelBanResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import CreateChannelBanResponseTypeDef
 ```
 
 Required fields:
@@ -1312,10 +1312,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateChannelMembershipRequestTypeDef
+## CreateChannelMembershipRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateChannelMembershipRequestTypeDef
+from mypy_boto3_chime.type_defs import CreateChannelMembershipRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1328,10 +1328,10 @@ Optional fields:
 
 - `ChimeBearer`: `str`
 
-## CreateChannelMembershipResponseResponseTypeDef
+## CreateChannelMembershipResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateChannelMembershipResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import CreateChannelMembershipResponseTypeDef
 ```
 
 Required fields:
@@ -1341,10 +1341,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateChannelModeratorRequestTypeDef
+## CreateChannelModeratorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateChannelModeratorRequestTypeDef
+from mypy_boto3_chime.type_defs import CreateChannelModeratorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1356,10 +1356,10 @@ Optional fields:
 
 - `ChimeBearer`: `str`
 
-## CreateChannelModeratorResponseResponseTypeDef
+## CreateChannelModeratorResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateChannelModeratorResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import CreateChannelModeratorResponseTypeDef
 ```
 
 Required fields:
@@ -1369,10 +1369,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateChannelRequestTypeDef
+## CreateChannelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateChannelRequestTypeDef
+from mypy_boto3_chime.type_defs import CreateChannelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1389,10 +1389,10 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ChimeBearer`: `str`
 
-## CreateChannelResponseResponseTypeDef
+## CreateChannelResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateChannelResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import CreateChannelResponseTypeDef
 ```
 
 Required fields:
@@ -1401,10 +1401,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateMeetingDialOutRequestTypeDef
+## CreateMeetingDialOutRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateMeetingDialOutRequestTypeDef
+from mypy_boto3_chime.type_defs import CreateMeetingDialOutRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1414,10 +1414,10 @@ Required fields:
 - `ToPhoneNumber`: `str`
 - `JoinToken`: `str`
 
-## CreateMeetingDialOutResponseResponseTypeDef
+## CreateMeetingDialOutResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateMeetingDialOutResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import CreateMeetingDialOutResponseTypeDef
 ```
 
 Required fields:
@@ -1426,10 +1426,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateMeetingRequestTypeDef
+## CreateMeetingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateMeetingRequestTypeDef
+from mypy_boto3_chime.type_defs import CreateMeetingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1445,10 +1445,10 @@ Optional fields:
 - `NotificationsConfiguration`:
   [MeetingNotificationConfigurationTypeDef](./type_defs.md#meetingnotificationconfigurationtypedef)
 
-## CreateMeetingResponseResponseTypeDef
+## CreateMeetingResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateMeetingResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import CreateMeetingResponseTypeDef
 ```
 
 Required fields:
@@ -1457,10 +1457,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateMeetingWithAttendeesRequestTypeDef
+## CreateMeetingWithAttendeesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateMeetingWithAttendeesRequestTypeDef
+from mypy_boto3_chime.type_defs import CreateMeetingWithAttendeesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1478,10 +1478,10 @@ Optional fields:
 - `Attendees`:
   `List`\[[CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef)\]
 
-## CreateMeetingWithAttendeesResponseResponseTypeDef
+## CreateMeetingWithAttendeesResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateMeetingWithAttendeesResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import CreateMeetingWithAttendeesResponseTypeDef
 ```
 
 Required fields:
@@ -1493,10 +1493,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePhoneNumberOrderRequestTypeDef
+## CreatePhoneNumberOrderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreatePhoneNumberOrderRequestTypeDef
+from mypy_boto3_chime.type_defs import CreatePhoneNumberOrderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1505,10 +1505,10 @@ Required fields:
   [PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype)
 - `E164PhoneNumbers`: `List`\[`str`\]
 
-## CreatePhoneNumberOrderResponseResponseTypeDef
+## CreatePhoneNumberOrderResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreatePhoneNumberOrderResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import CreatePhoneNumberOrderResponseTypeDef
 ```
 
 Required fields:
@@ -1518,10 +1518,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateProxySessionRequestTypeDef
+## CreateProxySessionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateProxySessionRequestTypeDef
+from mypy_boto3_chime.type_defs import CreateProxySessionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1540,10 +1540,10 @@ Optional fields:
 - `GeoMatchParams`:
   [GeoMatchParamsTypeDef](./type_defs.md#geomatchparamstypedef)
 
-## CreateProxySessionResponseResponseTypeDef
+## CreateProxySessionResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateProxySessionResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import CreateProxySessionResponseTypeDef
 ```
 
 Required fields:
@@ -1552,10 +1552,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRoomMembershipRequestTypeDef
+## CreateRoomMembershipRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateRoomMembershipRequestTypeDef
+from mypy_boto3_chime.type_defs import CreateRoomMembershipRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1568,10 +1568,10 @@ Optional fields:
 
 - `Role`: [RoomMembershipRoleType](./literals.md#roommembershiproletype)
 
-## CreateRoomMembershipResponseResponseTypeDef
+## CreateRoomMembershipResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateRoomMembershipResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import CreateRoomMembershipResponseTypeDef
 ```
 
 Required fields:
@@ -1581,10 +1581,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRoomRequestTypeDef
+## CreateRoomRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateRoomRequestTypeDef
+from mypy_boto3_chime.type_defs import CreateRoomRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1596,10 +1596,10 @@ Optional fields:
 
 - `ClientRequestToken`: `str`
 
-## CreateRoomResponseResponseTypeDef
+## CreateRoomResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateRoomResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import CreateRoomResponseTypeDef
 ```
 
 Required fields:
@@ -1608,10 +1608,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSipMediaApplicationCallRequestTypeDef
+## CreateSipMediaApplicationCallRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateSipMediaApplicationCallRequestTypeDef
+from mypy_boto3_chime.type_defs import CreateSipMediaApplicationCallRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1620,10 +1620,10 @@ Required fields:
 - `ToPhoneNumber`: `str`
 - `SipMediaApplicationId`: `str`
 
-## CreateSipMediaApplicationCallResponseResponseTypeDef
+## CreateSipMediaApplicationCallResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateSipMediaApplicationCallResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import CreateSipMediaApplicationCallResponseTypeDef
 ```
 
 Required fields:
@@ -1633,10 +1633,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSipMediaApplicationRequestTypeDef
+## CreateSipMediaApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateSipMediaApplicationRequestTypeDef
+from mypy_boto3_chime.type_defs import CreateSipMediaApplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1646,10 +1646,10 @@ Required fields:
 - `Endpoints`:
   `List`\[[SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef)\]
 
-## CreateSipMediaApplicationResponseResponseTypeDef
+## CreateSipMediaApplicationResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateSipMediaApplicationResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import CreateSipMediaApplicationResponseTypeDef
 ```
 
 Required fields:
@@ -1659,10 +1659,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSipRuleRequestTypeDef
+## CreateSipRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateSipRuleRequestTypeDef
+from mypy_boto3_chime.type_defs import CreateSipRuleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1677,10 +1677,10 @@ Optional fields:
 
 - `Disabled`: `bool`
 
-## CreateSipRuleResponseResponseTypeDef
+## CreateSipRuleResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateSipRuleResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import CreateSipRuleResponseTypeDef
 ```
 
 Required fields:
@@ -1689,10 +1689,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateUserRequestTypeDef
+## CreateUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateUserRequestTypeDef
+from mypy_boto3_chime.type_defs import CreateUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1705,10 +1705,10 @@ Optional fields:
 - `Email`: `str`
 - `UserType`: [UserTypeType](./literals.md#usertypetype)
 
-## CreateUserResponseResponseTypeDef
+## CreateUserResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateUserResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import CreateUserResponseTypeDef
 ```
 
 Required fields:
@@ -1717,10 +1717,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateVoiceConnectorGroupRequestTypeDef
+## CreateVoiceConnectorGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateVoiceConnectorGroupRequestTypeDef
+from mypy_boto3_chime.type_defs import CreateVoiceConnectorGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1732,10 +1732,10 @@ Optional fields:
 - `VoiceConnectorItems`:
   `List`\[[VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef)\]
 
-## CreateVoiceConnectorGroupResponseResponseTypeDef
+## CreateVoiceConnectorGroupResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateVoiceConnectorGroupResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import CreateVoiceConnectorGroupResponseTypeDef
 ```
 
 Required fields:
@@ -1745,10 +1745,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateVoiceConnectorRequestTypeDef
+## CreateVoiceConnectorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateVoiceConnectorRequestTypeDef
+from mypy_boto3_chime.type_defs import CreateVoiceConnectorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1761,10 +1761,10 @@ Optional fields:
 - `AwsRegion`:
   [VoiceConnectorAwsRegionType](./literals.md#voiceconnectorawsregiontype)
 
-## CreateVoiceConnectorResponseResponseTypeDef
+## CreateVoiceConnectorResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import CreateVoiceConnectorResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import CreateVoiceConnectorResponseTypeDef
 ```
 
 Required fields:
@@ -1800,20 +1800,20 @@ Optional fields:
 
 - `TestPhoneNumber`: `str`
 
-## DeleteAccountRequestTypeDef
+## DeleteAccountRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteAccountRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteAccountRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AccountId`: `str`
 
-## DeleteAppInstanceAdminRequestTypeDef
+## DeleteAppInstanceAdminRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteAppInstanceAdminRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteAppInstanceAdminRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1821,40 +1821,40 @@ Required fields:
 - `AppInstanceAdminArn`: `str`
 - `AppInstanceArn`: `str`
 
-## DeleteAppInstanceRequestTypeDef
+## DeleteAppInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteAppInstanceRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteAppInstanceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AppInstanceArn`: `str`
 
-## DeleteAppInstanceStreamingConfigurationsRequestTypeDef
+## DeleteAppInstanceStreamingConfigurationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteAppInstanceStreamingConfigurationsRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteAppInstanceStreamingConfigurationsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AppInstanceArn`: `str`
 
-## DeleteAppInstanceUserRequestTypeDef
+## DeleteAppInstanceUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteAppInstanceUserRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteAppInstanceUserRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AppInstanceUserArn`: `str`
 
-## DeleteAttendeeRequestTypeDef
+## DeleteAttendeeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteAttendeeRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteAttendeeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1862,10 +1862,10 @@ Required fields:
 - `MeetingId`: `str`
 - `AttendeeId`: `str`
 
-## DeleteChannelBanRequestTypeDef
+## DeleteChannelBanRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteChannelBanRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteChannelBanRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1877,10 +1877,10 @@ Optional fields:
 
 - `ChimeBearer`: `str`
 
-## DeleteChannelMembershipRequestTypeDef
+## DeleteChannelMembershipRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteChannelMembershipRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteChannelMembershipRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1892,10 +1892,10 @@ Optional fields:
 
 - `ChimeBearer`: `str`
 
-## DeleteChannelMessageRequestTypeDef
+## DeleteChannelMessageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteChannelMessageRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteChannelMessageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1907,10 +1907,10 @@ Optional fields:
 
 - `ChimeBearer`: `str`
 
-## DeleteChannelModeratorRequestTypeDef
+## DeleteChannelModeratorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteChannelModeratorRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteChannelModeratorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1922,10 +1922,10 @@ Optional fields:
 
 - `ChimeBearer`: `str`
 
-## DeleteChannelRequestTypeDef
+## DeleteChannelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteChannelRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteChannelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1936,10 +1936,10 @@ Optional fields:
 
 - `ChimeBearer`: `str`
 
-## DeleteEventsConfigurationRequestTypeDef
+## DeleteEventsConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteEventsConfigurationRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteEventsConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1947,30 +1947,30 @@ Required fields:
 - `AccountId`: `str`
 - `BotId`: `str`
 
-## DeleteMeetingRequestTypeDef
+## DeleteMeetingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteMeetingRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteMeetingRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `MeetingId`: `str`
 
-## DeletePhoneNumberRequestTypeDef
+## DeletePhoneNumberRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeletePhoneNumberRequestTypeDef
+from mypy_boto3_chime.type_defs import DeletePhoneNumberRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `PhoneNumberId`: `str`
 
-## DeleteProxySessionRequestTypeDef
+## DeleteProxySessionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteProxySessionRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteProxySessionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1978,10 +1978,10 @@ Required fields:
 - `VoiceConnectorId`: `str`
 - `ProxySessionId`: `str`
 
-## DeleteRoomMembershipRequestTypeDef
+## DeleteRoomMembershipRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteRoomMembershipRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteRoomMembershipRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1990,10 +1990,10 @@ Required fields:
 - `RoomId`: `str`
 - `MemberId`: `str`
 
-## DeleteRoomRequestTypeDef
+## DeleteRoomRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteRoomRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteRoomRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2001,90 +2001,90 @@ Required fields:
 - `AccountId`: `str`
 - `RoomId`: `str`
 
-## DeleteSipMediaApplicationRequestTypeDef
+## DeleteSipMediaApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteSipMediaApplicationRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteSipMediaApplicationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `SipMediaApplicationId`: `str`
 
-## DeleteSipRuleRequestTypeDef
+## DeleteSipRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteSipRuleRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteSipRuleRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `SipRuleId`: `str`
 
-## DeleteVoiceConnectorEmergencyCallingConfigurationRequestTypeDef
+## DeleteVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteVoiceConnectorEmergencyCallingConfigurationRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `VoiceConnectorId`: `str`
 
-## DeleteVoiceConnectorGroupRequestTypeDef
+## DeleteVoiceConnectorGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteVoiceConnectorGroupRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteVoiceConnectorGroupRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `VoiceConnectorGroupId`: `str`
 
-## DeleteVoiceConnectorOriginationRequestTypeDef
+## DeleteVoiceConnectorOriginationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteVoiceConnectorOriginationRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteVoiceConnectorOriginationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `VoiceConnectorId`: `str`
 
-## DeleteVoiceConnectorProxyRequestTypeDef
+## DeleteVoiceConnectorProxyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteVoiceConnectorProxyRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteVoiceConnectorProxyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `VoiceConnectorId`: `str`
 
-## DeleteVoiceConnectorRequestTypeDef
+## DeleteVoiceConnectorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteVoiceConnectorRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteVoiceConnectorRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `VoiceConnectorId`: `str`
 
-## DeleteVoiceConnectorStreamingConfigurationRequestTypeDef
+## DeleteVoiceConnectorStreamingConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteVoiceConnectorStreamingConfigurationRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteVoiceConnectorStreamingConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `VoiceConnectorId`: `str`
 
-## DeleteVoiceConnectorTerminationCredentialsRequestTypeDef
+## DeleteVoiceConnectorTerminationCredentialsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteVoiceConnectorTerminationCredentialsRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteVoiceConnectorTerminationCredentialsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2092,20 +2092,20 @@ Required fields:
 - `VoiceConnectorId`: `str`
 - `Usernames`: `List`\[`str`\]
 
-## DeleteVoiceConnectorTerminationRequestTypeDef
+## DeleteVoiceConnectorTerminationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DeleteVoiceConnectorTerminationRequestTypeDef
+from mypy_boto3_chime.type_defs import DeleteVoiceConnectorTerminationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `VoiceConnectorId`: `str`
 
-## DescribeAppInstanceAdminRequestTypeDef
+## DescribeAppInstanceAdminRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DescribeAppInstanceAdminRequestTypeDef
+from mypy_boto3_chime.type_defs import DescribeAppInstanceAdminRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2113,10 +2113,10 @@ Required fields:
 - `AppInstanceAdminArn`: `str`
 - `AppInstanceArn`: `str`
 
-## DescribeAppInstanceAdminResponseResponseTypeDef
+## DescribeAppInstanceAdminResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DescribeAppInstanceAdminResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import DescribeAppInstanceAdminResponseTypeDef
 ```
 
 Required fields:
@@ -2126,20 +2126,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAppInstanceRequestTypeDef
+## DescribeAppInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DescribeAppInstanceRequestTypeDef
+from mypy_boto3_chime.type_defs import DescribeAppInstanceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AppInstanceArn`: `str`
 
-## DescribeAppInstanceResponseResponseTypeDef
+## DescribeAppInstanceResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DescribeAppInstanceResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import DescribeAppInstanceResponseTypeDef
 ```
 
 Required fields:
@@ -2148,20 +2148,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAppInstanceUserRequestTypeDef
+## DescribeAppInstanceUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DescribeAppInstanceUserRequestTypeDef
+from mypy_boto3_chime.type_defs import DescribeAppInstanceUserRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AppInstanceUserArn`: `str`
 
-## DescribeAppInstanceUserResponseResponseTypeDef
+## DescribeAppInstanceUserResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DescribeAppInstanceUserResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import DescribeAppInstanceUserResponseTypeDef
 ```
 
 Required fields:
@@ -2171,10 +2171,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeChannelBanRequestTypeDef
+## DescribeChannelBanRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DescribeChannelBanRequestTypeDef
+from mypy_boto3_chime.type_defs import DescribeChannelBanRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2186,10 +2186,10 @@ Optional fields:
 
 - `ChimeBearer`: `str`
 
-## DescribeChannelBanResponseResponseTypeDef
+## DescribeChannelBanResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DescribeChannelBanResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import DescribeChannelBanResponseTypeDef
 ```
 
 Required fields:
@@ -2198,10 +2198,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeChannelMembershipForAppInstanceUserRequestTypeDef
+## DescribeChannelMembershipForAppInstanceUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DescribeChannelMembershipForAppInstanceUserRequestTypeDef
+from mypy_boto3_chime.type_defs import DescribeChannelMembershipForAppInstanceUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2213,10 +2213,10 @@ Optional fields:
 
 - `ChimeBearer`: `str`
 
-## DescribeChannelMembershipForAppInstanceUserResponseResponseTypeDef
+## DescribeChannelMembershipForAppInstanceUserResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DescribeChannelMembershipForAppInstanceUserResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import DescribeChannelMembershipForAppInstanceUserResponseTypeDef
 ```
 
 Required fields:
@@ -2226,10 +2226,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeChannelMembershipRequestTypeDef
+## DescribeChannelMembershipRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DescribeChannelMembershipRequestTypeDef
+from mypy_boto3_chime.type_defs import DescribeChannelMembershipRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2241,10 +2241,10 @@ Optional fields:
 
 - `ChimeBearer`: `str`
 
-## DescribeChannelMembershipResponseResponseTypeDef
+## DescribeChannelMembershipResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DescribeChannelMembershipResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import DescribeChannelMembershipResponseTypeDef
 ```
 
 Required fields:
@@ -2254,10 +2254,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeChannelModeratedByAppInstanceUserRequestTypeDef
+## DescribeChannelModeratedByAppInstanceUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DescribeChannelModeratedByAppInstanceUserRequestTypeDef
+from mypy_boto3_chime.type_defs import DescribeChannelModeratedByAppInstanceUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2269,10 +2269,10 @@ Optional fields:
 
 - `ChimeBearer`: `str`
 
-## DescribeChannelModeratedByAppInstanceUserResponseResponseTypeDef
+## DescribeChannelModeratedByAppInstanceUserResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DescribeChannelModeratedByAppInstanceUserResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import DescribeChannelModeratedByAppInstanceUserResponseTypeDef
 ```
 
 Required fields:
@@ -2282,10 +2282,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeChannelModeratorRequestTypeDef
+## DescribeChannelModeratorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DescribeChannelModeratorRequestTypeDef
+from mypy_boto3_chime.type_defs import DescribeChannelModeratorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2297,10 +2297,10 @@ Optional fields:
 
 - `ChimeBearer`: `str`
 
-## DescribeChannelModeratorResponseResponseTypeDef
+## DescribeChannelModeratorResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DescribeChannelModeratorResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import DescribeChannelModeratorResponseTypeDef
 ```
 
 Required fields:
@@ -2310,10 +2310,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeChannelRequestTypeDef
+## DescribeChannelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DescribeChannelRequestTypeDef
+from mypy_boto3_chime.type_defs import DescribeChannelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2324,10 +2324,10 @@ Optional fields:
 
 - `ChimeBearer`: `str`
 
-## DescribeChannelResponseResponseTypeDef
+## DescribeChannelResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DescribeChannelResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import DescribeChannelResponseTypeDef
 ```
 
 Required fields:
@@ -2336,10 +2336,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociatePhoneNumberFromUserRequestTypeDef
+## DisassociatePhoneNumberFromUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DisassociatePhoneNumberFromUserRequestTypeDef
+from mypy_boto3_chime.type_defs import DisassociatePhoneNumberFromUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2347,10 +2347,10 @@ Required fields:
 - `AccountId`: `str`
 - `UserId`: `str`
 
-## DisassociatePhoneNumbersFromVoiceConnectorGroupRequestTypeDef
+## DisassociatePhoneNumbersFromVoiceConnectorGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DisassociatePhoneNumbersFromVoiceConnectorGroupRequestTypeDef
+from mypy_boto3_chime.type_defs import DisassociatePhoneNumbersFromVoiceConnectorGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2358,10 +2358,10 @@ Required fields:
 - `VoiceConnectorGroupId`: `str`
 - `E164PhoneNumbers`: `List`\[`str`\]
 
-## DisassociatePhoneNumbersFromVoiceConnectorGroupResponseResponseTypeDef
+## DisassociatePhoneNumbersFromVoiceConnectorGroupResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DisassociatePhoneNumbersFromVoiceConnectorGroupResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import DisassociatePhoneNumbersFromVoiceConnectorGroupResponseTypeDef
 ```
 
 Required fields:
@@ -2371,10 +2371,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociatePhoneNumbersFromVoiceConnectorRequestTypeDef
+## DisassociatePhoneNumbersFromVoiceConnectorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DisassociatePhoneNumbersFromVoiceConnectorRequestTypeDef
+from mypy_boto3_chime.type_defs import DisassociatePhoneNumbersFromVoiceConnectorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2382,10 +2382,10 @@ Required fields:
 - `VoiceConnectorId`: `str`
 - `E164PhoneNumbers`: `List`\[`str`\]
 
-## DisassociatePhoneNumbersFromVoiceConnectorResponseResponseTypeDef
+## DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DisassociatePhoneNumbersFromVoiceConnectorResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef
 ```
 
 Required fields:
@@ -2395,10 +2395,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateSigninDelegateGroupsFromAccountRequestTypeDef
+## DisassociateSigninDelegateGroupsFromAccountRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import DisassociateSigninDelegateGroupsFromAccountRequestTypeDef
+from mypy_boto3_chime.type_defs import DisassociateSigninDelegateGroupsFromAccountRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2440,20 +2440,20 @@ Required fields:
 - `Country`: `str`
 - `AreaCode`: `str`
 
-## GetAccountRequestTypeDef
+## GetAccountRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetAccountRequestTypeDef
+from mypy_boto3_chime.type_defs import GetAccountRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AccountId`: `str`
 
-## GetAccountResponseResponseTypeDef
+## GetAccountResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetAccountResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetAccountResponseTypeDef
 ```
 
 Required fields:
@@ -2462,20 +2462,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAccountSettingsRequestTypeDef
+## GetAccountSettingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetAccountSettingsRequestTypeDef
+from mypy_boto3_chime.type_defs import GetAccountSettingsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AccountId`: `str`
 
-## GetAccountSettingsResponseResponseTypeDef
+## GetAccountSettingsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetAccountSettingsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetAccountSettingsResponseTypeDef
 ```
 
 Required fields:
@@ -2485,20 +2485,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAppInstanceRetentionSettingsRequestTypeDef
+## GetAppInstanceRetentionSettingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetAppInstanceRetentionSettingsRequestTypeDef
+from mypy_boto3_chime.type_defs import GetAppInstanceRetentionSettingsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AppInstanceArn`: `str`
 
-## GetAppInstanceRetentionSettingsResponseResponseTypeDef
+## GetAppInstanceRetentionSettingsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetAppInstanceRetentionSettingsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetAppInstanceRetentionSettingsResponseTypeDef
 ```
 
 Required fields:
@@ -2509,20 +2509,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAppInstanceStreamingConfigurationsRequestTypeDef
+## GetAppInstanceStreamingConfigurationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetAppInstanceStreamingConfigurationsRequestTypeDef
+from mypy_boto3_chime.type_defs import GetAppInstanceStreamingConfigurationsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AppInstanceArn`: `str`
 
-## GetAppInstanceStreamingConfigurationsResponseResponseTypeDef
+## GetAppInstanceStreamingConfigurationsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetAppInstanceStreamingConfigurationsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetAppInstanceStreamingConfigurationsResponseTypeDef
 ```
 
 Required fields:
@@ -2532,10 +2532,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAttendeeRequestTypeDef
+## GetAttendeeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetAttendeeRequestTypeDef
+from mypy_boto3_chime.type_defs import GetAttendeeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2543,10 +2543,10 @@ Required fields:
 - `MeetingId`: `str`
 - `AttendeeId`: `str`
 
-## GetAttendeeResponseResponseTypeDef
+## GetAttendeeResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetAttendeeResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetAttendeeResponseTypeDef
 ```
 
 Required fields:
@@ -2555,10 +2555,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBotRequestTypeDef
+## GetBotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetBotRequestTypeDef
+from mypy_boto3_chime.type_defs import GetBotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2566,10 +2566,10 @@ Required fields:
 - `AccountId`: `str`
 - `BotId`: `str`
 
-## GetBotResponseResponseTypeDef
+## GetBotResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetBotResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetBotResponseTypeDef
 ```
 
 Required fields:
@@ -2578,10 +2578,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetChannelMessageRequestTypeDef
+## GetChannelMessageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetChannelMessageRequestTypeDef
+from mypy_boto3_chime.type_defs import GetChannelMessageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2593,10 +2593,10 @@ Optional fields:
 
 - `ChimeBearer`: `str`
 
-## GetChannelMessageResponseResponseTypeDef
+## GetChannelMessageResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetChannelMessageResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetChannelMessageResponseTypeDef
 ```
 
 Required fields:
@@ -2606,10 +2606,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetEventsConfigurationRequestTypeDef
+## GetEventsConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetEventsConfigurationRequestTypeDef
+from mypy_boto3_chime.type_defs import GetEventsConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2617,10 +2617,10 @@ Required fields:
 - `AccountId`: `str`
 - `BotId`: `str`
 
-## GetEventsConfigurationResponseResponseTypeDef
+## GetEventsConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetEventsConfigurationResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetEventsConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -2630,10 +2630,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetGlobalSettingsResponseResponseTypeDef
+## GetGlobalSettingsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetGlobalSettingsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetGlobalSettingsResponseTypeDef
 ```
 
 Required fields:
@@ -2645,20 +2645,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMeetingRequestTypeDef
+## GetMeetingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetMeetingRequestTypeDef
+from mypy_boto3_chime.type_defs import GetMeetingRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `MeetingId`: `str`
 
-## GetMeetingResponseResponseTypeDef
+## GetMeetingResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetMeetingResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetMeetingResponseTypeDef
 ```
 
 Required fields:
@@ -2667,10 +2667,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMessagingSessionEndpointResponseResponseTypeDef
+## GetMessagingSessionEndpointResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetMessagingSessionEndpointResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetMessagingSessionEndpointResponseTypeDef
 ```
 
 Required fields:
@@ -2680,20 +2680,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPhoneNumberOrderRequestTypeDef
+## GetPhoneNumberOrderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetPhoneNumberOrderRequestTypeDef
+from mypy_boto3_chime.type_defs import GetPhoneNumberOrderRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `PhoneNumberOrderId`: `str`
 
-## GetPhoneNumberOrderResponseResponseTypeDef
+## GetPhoneNumberOrderResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetPhoneNumberOrderResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetPhoneNumberOrderResponseTypeDef
 ```
 
 Required fields:
@@ -2703,20 +2703,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPhoneNumberRequestTypeDef
+## GetPhoneNumberRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetPhoneNumberRequestTypeDef
+from mypy_boto3_chime.type_defs import GetPhoneNumberRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `PhoneNumberId`: `str`
 
-## GetPhoneNumberResponseResponseTypeDef
+## GetPhoneNumberResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetPhoneNumberResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetPhoneNumberResponseTypeDef
 ```
 
 Required fields:
@@ -2725,10 +2725,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPhoneNumberSettingsResponseResponseTypeDef
+## GetPhoneNumberSettingsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetPhoneNumberSettingsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetPhoneNumberSettingsResponseTypeDef
 ```
 
 Required fields:
@@ -2738,10 +2738,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetProxySessionRequestTypeDef
+## GetProxySessionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetProxySessionRequestTypeDef
+from mypy_boto3_chime.type_defs import GetProxySessionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2749,10 +2749,10 @@ Required fields:
 - `VoiceConnectorId`: `str`
 - `ProxySessionId`: `str`
 
-## GetProxySessionResponseResponseTypeDef
+## GetProxySessionResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetProxySessionResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetProxySessionResponseTypeDef
 ```
 
 Required fields:
@@ -2761,20 +2761,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRetentionSettingsRequestTypeDef
+## GetRetentionSettingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetRetentionSettingsRequestTypeDef
+from mypy_boto3_chime.type_defs import GetRetentionSettingsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AccountId`: `str`
 
-## GetRetentionSettingsResponseResponseTypeDef
+## GetRetentionSettingsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetRetentionSettingsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetRetentionSettingsResponseTypeDef
 ```
 
 Required fields:
@@ -2785,10 +2785,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRoomRequestTypeDef
+## GetRoomRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetRoomRequestTypeDef
+from mypy_boto3_chime.type_defs import GetRoomRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2796,10 +2796,10 @@ Required fields:
 - `AccountId`: `str`
 - `RoomId`: `str`
 
-## GetRoomResponseResponseTypeDef
+## GetRoomResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetRoomResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetRoomResponseTypeDef
 ```
 
 Required fields:
@@ -2808,20 +2808,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSipMediaApplicationLoggingConfigurationRequestTypeDef
+## GetSipMediaApplicationLoggingConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetSipMediaApplicationLoggingConfigurationRequestTypeDef
+from mypy_boto3_chime.type_defs import GetSipMediaApplicationLoggingConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `SipMediaApplicationId`: `str`
 
-## GetSipMediaApplicationLoggingConfigurationResponseResponseTypeDef
+## GetSipMediaApplicationLoggingConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetSipMediaApplicationLoggingConfigurationResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetSipMediaApplicationLoggingConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -2831,20 +2831,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSipMediaApplicationRequestTypeDef
+## GetSipMediaApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetSipMediaApplicationRequestTypeDef
+from mypy_boto3_chime.type_defs import GetSipMediaApplicationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `SipMediaApplicationId`: `str`
 
-## GetSipMediaApplicationResponseResponseTypeDef
+## GetSipMediaApplicationResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetSipMediaApplicationResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetSipMediaApplicationResponseTypeDef
 ```
 
 Required fields:
@@ -2854,20 +2854,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSipRuleRequestTypeDef
+## GetSipRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetSipRuleRequestTypeDef
+from mypy_boto3_chime.type_defs import GetSipRuleRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `SipRuleId`: `str`
 
-## GetSipRuleResponseResponseTypeDef
+## GetSipRuleResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetSipRuleResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetSipRuleResponseTypeDef
 ```
 
 Required fields:
@@ -2876,10 +2876,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetUserRequestTypeDef
+## GetUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetUserRequestTypeDef
+from mypy_boto3_chime.type_defs import GetUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2887,10 +2887,10 @@ Required fields:
 - `AccountId`: `str`
 - `UserId`: `str`
 
-## GetUserResponseResponseTypeDef
+## GetUserResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetUserResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetUserResponseTypeDef
 ```
 
 Required fields:
@@ -2899,10 +2899,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetUserSettingsRequestTypeDef
+## GetUserSettingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetUserSettingsRequestTypeDef
+from mypy_boto3_chime.type_defs import GetUserSettingsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2910,10 +2910,10 @@ Required fields:
 - `AccountId`: `str`
 - `UserId`: `str`
 
-## GetUserSettingsResponseResponseTypeDef
+## GetUserSettingsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetUserSettingsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetUserSettingsResponseTypeDef
 ```
 
 Required fields:
@@ -2922,20 +2922,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetVoiceConnectorEmergencyCallingConfigurationRequestTypeDef
+## GetVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetVoiceConnectorEmergencyCallingConfigurationRequestTypeDef
+from mypy_boto3_chime.type_defs import GetVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `VoiceConnectorId`: `str`
 
-## GetVoiceConnectorEmergencyCallingConfigurationResponseResponseTypeDef
+## GetVoiceConnectorEmergencyCallingConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetVoiceConnectorEmergencyCallingConfigurationResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetVoiceConnectorEmergencyCallingConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -2945,20 +2945,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetVoiceConnectorGroupRequestTypeDef
+## GetVoiceConnectorGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetVoiceConnectorGroupRequestTypeDef
+from mypy_boto3_chime.type_defs import GetVoiceConnectorGroupRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `VoiceConnectorGroupId`: `str`
 
-## GetVoiceConnectorGroupResponseResponseTypeDef
+## GetVoiceConnectorGroupResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetVoiceConnectorGroupResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetVoiceConnectorGroupResponseTypeDef
 ```
 
 Required fields:
@@ -2968,20 +2968,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetVoiceConnectorLoggingConfigurationRequestTypeDef
+## GetVoiceConnectorLoggingConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetVoiceConnectorLoggingConfigurationRequestTypeDef
+from mypy_boto3_chime.type_defs import GetVoiceConnectorLoggingConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `VoiceConnectorId`: `str`
 
-## GetVoiceConnectorLoggingConfigurationResponseResponseTypeDef
+## GetVoiceConnectorLoggingConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetVoiceConnectorLoggingConfigurationResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetVoiceConnectorLoggingConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -2991,20 +2991,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetVoiceConnectorOriginationRequestTypeDef
+## GetVoiceConnectorOriginationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetVoiceConnectorOriginationRequestTypeDef
+from mypy_boto3_chime.type_defs import GetVoiceConnectorOriginationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `VoiceConnectorId`: `str`
 
-## GetVoiceConnectorOriginationResponseResponseTypeDef
+## GetVoiceConnectorOriginationResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetVoiceConnectorOriginationResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetVoiceConnectorOriginationResponseTypeDef
 ```
 
 Required fields:
@@ -3013,20 +3013,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetVoiceConnectorProxyRequestTypeDef
+## GetVoiceConnectorProxyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetVoiceConnectorProxyRequestTypeDef
+from mypy_boto3_chime.type_defs import GetVoiceConnectorProxyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `VoiceConnectorId`: `str`
 
-## GetVoiceConnectorProxyResponseResponseTypeDef
+## GetVoiceConnectorProxyResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetVoiceConnectorProxyResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetVoiceConnectorProxyResponseTypeDef
 ```
 
 Required fields:
@@ -3035,20 +3035,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetVoiceConnectorRequestTypeDef
+## GetVoiceConnectorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetVoiceConnectorRequestTypeDef
+from mypy_boto3_chime.type_defs import GetVoiceConnectorRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `VoiceConnectorId`: `str`
 
-## GetVoiceConnectorResponseResponseTypeDef
+## GetVoiceConnectorResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetVoiceConnectorResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetVoiceConnectorResponseTypeDef
 ```
 
 Required fields:
@@ -3058,20 +3058,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetVoiceConnectorStreamingConfigurationRequestTypeDef
+## GetVoiceConnectorStreamingConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetVoiceConnectorStreamingConfigurationRequestTypeDef
+from mypy_boto3_chime.type_defs import GetVoiceConnectorStreamingConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `VoiceConnectorId`: `str`
 
-## GetVoiceConnectorStreamingConfigurationResponseResponseTypeDef
+## GetVoiceConnectorStreamingConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetVoiceConnectorStreamingConfigurationResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetVoiceConnectorStreamingConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -3081,20 +3081,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetVoiceConnectorTerminationHealthRequestTypeDef
+## GetVoiceConnectorTerminationHealthRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetVoiceConnectorTerminationHealthRequestTypeDef
+from mypy_boto3_chime.type_defs import GetVoiceConnectorTerminationHealthRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `VoiceConnectorId`: `str`
 
-## GetVoiceConnectorTerminationHealthResponseResponseTypeDef
+## GetVoiceConnectorTerminationHealthResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetVoiceConnectorTerminationHealthResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetVoiceConnectorTerminationHealthResponseTypeDef
 ```
 
 Required fields:
@@ -3104,20 +3104,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetVoiceConnectorTerminationRequestTypeDef
+## GetVoiceConnectorTerminationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetVoiceConnectorTerminationRequestTypeDef
+from mypy_boto3_chime.type_defs import GetVoiceConnectorTerminationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `VoiceConnectorId`: `str`
 
-## GetVoiceConnectorTerminationResponseResponseTypeDef
+## GetVoiceConnectorTerminationResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import GetVoiceConnectorTerminationResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import GetVoiceConnectorTerminationResponseTypeDef
 ```
 
 Required fields:
@@ -3150,10 +3150,10 @@ Optional fields:
 - `EmailAddress`: `str`
 - `EmailStatus`: [EmailStatusType](./literals.md#emailstatustype)
 
-## InviteUsersRequestTypeDef
+## InviteUsersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import InviteUsersRequestTypeDef
+from mypy_boto3_chime.type_defs import InviteUsersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3165,10 +3165,10 @@ Optional fields:
 
 - `UserType`: [UserTypeType](./literals.md#usertypetype)
 
-## InviteUsersResponseResponseTypeDef
+## InviteUsersResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import InviteUsersResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import InviteUsersResponseTypeDef
 ```
 
 Required fields:
@@ -3177,10 +3177,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAccountsRequestTypeDef
+## ListAccountsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListAccountsRequestTypeDef
+from mypy_boto3_chime.type_defs import ListAccountsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3190,10 +3190,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListAccountsResponseResponseTypeDef
+## ListAccountsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListAccountsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListAccountsResponseTypeDef
 ```
 
 Required fields:
@@ -3203,10 +3203,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAppInstanceAdminsRequestTypeDef
+## ListAppInstanceAdminsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListAppInstanceAdminsRequestTypeDef
+from mypy_boto3_chime.type_defs import ListAppInstanceAdminsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3218,10 +3218,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListAppInstanceAdminsResponseResponseTypeDef
+## ListAppInstanceAdminsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListAppInstanceAdminsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListAppInstanceAdminsResponseTypeDef
 ```
 
 Required fields:
@@ -3233,10 +3233,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAppInstanceUsersRequestTypeDef
+## ListAppInstanceUsersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListAppInstanceUsersRequestTypeDef
+from mypy_boto3_chime.type_defs import ListAppInstanceUsersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3248,10 +3248,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListAppInstanceUsersResponseResponseTypeDef
+## ListAppInstanceUsersResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListAppInstanceUsersResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListAppInstanceUsersResponseTypeDef
 ```
 
 Required fields:
@@ -3263,10 +3263,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAppInstancesRequestTypeDef
+## ListAppInstancesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListAppInstancesRequestTypeDef
+from mypy_boto3_chime.type_defs import ListAppInstancesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3274,10 +3274,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListAppInstancesResponseResponseTypeDef
+## ListAppInstancesResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListAppInstancesResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListAppInstancesResponseTypeDef
 ```
 
 Required fields:
@@ -3288,10 +3288,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAttendeeTagsRequestTypeDef
+## ListAttendeeTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListAttendeeTagsRequestTypeDef
+from mypy_boto3_chime.type_defs import ListAttendeeTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3299,10 +3299,10 @@ Required fields:
 - `MeetingId`: `str`
 - `AttendeeId`: `str`
 
-## ListAttendeeTagsResponseResponseTypeDef
+## ListAttendeeTagsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListAttendeeTagsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListAttendeeTagsResponseTypeDef
 ```
 
 Required fields:
@@ -3311,10 +3311,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAttendeesRequestTypeDef
+## ListAttendeesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListAttendeesRequestTypeDef
+from mypy_boto3_chime.type_defs import ListAttendeesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3326,10 +3326,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListAttendeesResponseResponseTypeDef
+## ListAttendeesResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListAttendeesResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListAttendeesResponseTypeDef
 ```
 
 Required fields:
@@ -3339,10 +3339,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBotsRequestTypeDef
+## ListBotsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListBotsRequestTypeDef
+from mypy_boto3_chime.type_defs import ListBotsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3354,10 +3354,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListBotsResponseResponseTypeDef
+## ListBotsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListBotsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListBotsResponseTypeDef
 ```
 
 Required fields:
@@ -3367,10 +3367,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListChannelBansRequestTypeDef
+## ListChannelBansRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListChannelBansRequestTypeDef
+from mypy_boto3_chime.type_defs import ListChannelBansRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3383,10 +3383,10 @@ Optional fields:
 - `NextToken`: `str`
 - `ChimeBearer`: `str`
 
-## ListChannelBansResponseResponseTypeDef
+## ListChannelBansResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListChannelBansResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListChannelBansResponseTypeDef
 ```
 
 Required fields:
@@ -3398,10 +3398,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListChannelMembershipsForAppInstanceUserRequestTypeDef
+## ListChannelMembershipsForAppInstanceUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListChannelMembershipsForAppInstanceUserRequestTypeDef
+from mypy_boto3_chime.type_defs import ListChannelMembershipsForAppInstanceUserRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3411,10 +3411,10 @@ Optional fields:
 - `NextToken`: `str`
 - `ChimeBearer`: `str`
 
-## ListChannelMembershipsForAppInstanceUserResponseResponseTypeDef
+## ListChannelMembershipsForAppInstanceUserResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListChannelMembershipsForAppInstanceUserResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListChannelMembershipsForAppInstanceUserResponseTypeDef
 ```
 
 Required fields:
@@ -3425,10 +3425,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListChannelMembershipsRequestTypeDef
+## ListChannelMembershipsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListChannelMembershipsRequestTypeDef
+from mypy_boto3_chime.type_defs import ListChannelMembershipsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3442,10 +3442,10 @@ Optional fields:
 - `NextToken`: `str`
 - `ChimeBearer`: `str`
 
-## ListChannelMembershipsResponseResponseTypeDef
+## ListChannelMembershipsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListChannelMembershipsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListChannelMembershipsResponseTypeDef
 ```
 
 Required fields:
@@ -3457,10 +3457,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListChannelMessagesRequestTypeDef
+## ListChannelMessagesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListChannelMessagesRequestTypeDef
+from mypy_boto3_chime.type_defs import ListChannelMessagesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3476,10 +3476,10 @@ Optional fields:
 - `NextToken`: `str`
 - `ChimeBearer`: `str`
 
-## ListChannelMessagesResponseResponseTypeDef
+## ListChannelMessagesResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListChannelMessagesResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListChannelMessagesResponseTypeDef
 ```
 
 Required fields:
@@ -3491,10 +3491,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListChannelModeratorsRequestTypeDef
+## ListChannelModeratorsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListChannelModeratorsRequestTypeDef
+from mypy_boto3_chime.type_defs import ListChannelModeratorsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3507,10 +3507,10 @@ Optional fields:
 - `NextToken`: `str`
 - `ChimeBearer`: `str`
 
-## ListChannelModeratorsResponseResponseTypeDef
+## ListChannelModeratorsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListChannelModeratorsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListChannelModeratorsResponseTypeDef
 ```
 
 Required fields:
@@ -3522,10 +3522,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListChannelsModeratedByAppInstanceUserRequestTypeDef
+## ListChannelsModeratedByAppInstanceUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListChannelsModeratedByAppInstanceUserRequestTypeDef
+from mypy_boto3_chime.type_defs import ListChannelsModeratedByAppInstanceUserRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3535,10 +3535,10 @@ Optional fields:
 - `NextToken`: `str`
 - `ChimeBearer`: `str`
 
-## ListChannelsModeratedByAppInstanceUserResponseResponseTypeDef
+## ListChannelsModeratedByAppInstanceUserResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListChannelsModeratedByAppInstanceUserResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListChannelsModeratedByAppInstanceUserResponseTypeDef
 ```
 
 Required fields:
@@ -3549,10 +3549,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListChannelsRequestTypeDef
+## ListChannelsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListChannelsRequestTypeDef
+from mypy_boto3_chime.type_defs import ListChannelsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3566,10 +3566,10 @@ Optional fields:
 - `NextToken`: `str`
 - `ChimeBearer`: `str`
 
-## ListChannelsResponseResponseTypeDef
+## ListChannelsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListChannelsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListChannelsResponseTypeDef
 ```
 
 Required fields:
@@ -3580,20 +3580,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMeetingTagsRequestTypeDef
+## ListMeetingTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListMeetingTagsRequestTypeDef
+from mypy_boto3_chime.type_defs import ListMeetingTagsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `MeetingId`: `str`
 
-## ListMeetingTagsResponseResponseTypeDef
+## ListMeetingTagsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListMeetingTagsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListMeetingTagsResponseTypeDef
 ```
 
 Required fields:
@@ -3602,10 +3602,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMeetingsRequestTypeDef
+## ListMeetingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListMeetingsRequestTypeDef
+from mypy_boto3_chime.type_defs import ListMeetingsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3613,10 +3613,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListMeetingsResponseResponseTypeDef
+## ListMeetingsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListMeetingsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListMeetingsResponseTypeDef
 ```
 
 Required fields:
@@ -3626,10 +3626,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPhoneNumberOrdersRequestTypeDef
+## ListPhoneNumberOrdersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListPhoneNumberOrdersRequestTypeDef
+from mypy_boto3_chime.type_defs import ListPhoneNumberOrdersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3637,10 +3637,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListPhoneNumberOrdersResponseResponseTypeDef
+## ListPhoneNumberOrdersResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListPhoneNumberOrdersResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListPhoneNumberOrdersResponseTypeDef
 ```
 
 Required fields:
@@ -3651,10 +3651,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPhoneNumbersRequestTypeDef
+## ListPhoneNumbersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListPhoneNumbersRequestTypeDef
+from mypy_boto3_chime.type_defs import ListPhoneNumbersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3668,10 +3668,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListPhoneNumbersResponseResponseTypeDef
+## ListPhoneNumbersResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListPhoneNumbersResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListPhoneNumbersResponseTypeDef
 ```
 
 Required fields:
@@ -3682,10 +3682,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProxySessionsRequestTypeDef
+## ListProxySessionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListProxySessionsRequestTypeDef
+from mypy_boto3_chime.type_defs import ListProxySessionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3698,10 +3698,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListProxySessionsResponseResponseTypeDef
+## ListProxySessionsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListProxySessionsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListProxySessionsResponseTypeDef
 ```
 
 Required fields:
@@ -3712,10 +3712,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRoomMembershipsRequestTypeDef
+## ListRoomMembershipsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListRoomMembershipsRequestTypeDef
+from mypy_boto3_chime.type_defs import ListRoomMembershipsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3728,10 +3728,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListRoomMembershipsResponseResponseTypeDef
+## ListRoomMembershipsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListRoomMembershipsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListRoomMembershipsResponseTypeDef
 ```
 
 Required fields:
@@ -3742,10 +3742,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRoomsRequestTypeDef
+## ListRoomsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListRoomsRequestTypeDef
+from mypy_boto3_chime.type_defs import ListRoomsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3758,10 +3758,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListRoomsResponseResponseTypeDef
+## ListRoomsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListRoomsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListRoomsResponseTypeDef
 ```
 
 Required fields:
@@ -3771,10 +3771,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSipMediaApplicationsRequestTypeDef
+## ListSipMediaApplicationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListSipMediaApplicationsRequestTypeDef
+from mypy_boto3_chime.type_defs import ListSipMediaApplicationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3782,10 +3782,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListSipMediaApplicationsResponseResponseTypeDef
+## ListSipMediaApplicationsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListSipMediaApplicationsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListSipMediaApplicationsResponseTypeDef
 ```
 
 Required fields:
@@ -3796,10 +3796,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSipRulesRequestTypeDef
+## ListSipRulesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListSipRulesRequestTypeDef
+from mypy_boto3_chime.type_defs import ListSipRulesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3808,10 +3808,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListSipRulesResponseResponseTypeDef
+## ListSipRulesResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListSipRulesResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListSipRulesResponseTypeDef
 ```
 
 Required fields:
@@ -3821,10 +3821,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSupportedPhoneNumberCountriesRequestTypeDef
+## ListSupportedPhoneNumberCountriesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListSupportedPhoneNumberCountriesRequestTypeDef
+from mypy_boto3_chime.type_defs import ListSupportedPhoneNumberCountriesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3832,10 +3832,10 @@ Required fields:
 - `ProductType`:
   [PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype)
 
-## ListSupportedPhoneNumberCountriesResponseResponseTypeDef
+## ListSupportedPhoneNumberCountriesResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListSupportedPhoneNumberCountriesResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListSupportedPhoneNumberCountriesResponseTypeDef
 ```
 
 Required fields:
@@ -3845,20 +3845,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_chime.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceARN`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -3867,10 +3867,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListUsersRequestTypeDef
+## ListUsersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListUsersRequestTypeDef
+from mypy_boto3_chime.type_defs import ListUsersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3884,10 +3884,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListUsersResponseResponseTypeDef
+## ListUsersResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListUsersResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListUsersResponseTypeDef
 ```
 
 Required fields:
@@ -3897,10 +3897,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListVoiceConnectorGroupsRequestTypeDef
+## ListVoiceConnectorGroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListVoiceConnectorGroupsRequestTypeDef
+from mypy_boto3_chime.type_defs import ListVoiceConnectorGroupsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3908,10 +3908,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListVoiceConnectorGroupsResponseResponseTypeDef
+## ListVoiceConnectorGroupsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListVoiceConnectorGroupsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListVoiceConnectorGroupsResponseTypeDef
 ```
 
 Required fields:
@@ -3922,20 +3922,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListVoiceConnectorTerminationCredentialsRequestTypeDef
+## ListVoiceConnectorTerminationCredentialsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListVoiceConnectorTerminationCredentialsRequestTypeDef
+from mypy_boto3_chime.type_defs import ListVoiceConnectorTerminationCredentialsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `VoiceConnectorId`: `str`
 
-## ListVoiceConnectorTerminationCredentialsResponseResponseTypeDef
+## ListVoiceConnectorTerminationCredentialsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListVoiceConnectorTerminationCredentialsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListVoiceConnectorTerminationCredentialsResponseTypeDef
 ```
 
 Required fields:
@@ -3944,10 +3944,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListVoiceConnectorsRequestTypeDef
+## ListVoiceConnectorsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListVoiceConnectorsRequestTypeDef
+from mypy_boto3_chime.type_defs import ListVoiceConnectorsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3955,10 +3955,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListVoiceConnectorsResponseResponseTypeDef
+## ListVoiceConnectorsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ListVoiceConnectorsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ListVoiceConnectorsResponseTypeDef
 ```
 
 Required fields:
@@ -3979,10 +3979,10 @@ Optional fields:
 
 - `EnableSIPLogs`: `bool`
 
-## LogoutUserRequestTypeDef
+## LogoutUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import LogoutUserRequestTypeDef
+from mypy_boto3_chime.type_defs import LogoutUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4275,10 +4275,10 @@ Optional fields:
 - `FallBackPhoneNumber`: `str`
 - `PhoneNumberCountries`: `List`\[`str`\]
 
-## PutAppInstanceRetentionSettingsRequestTypeDef
+## PutAppInstanceRetentionSettingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import PutAppInstanceRetentionSettingsRequestTypeDef
+from mypy_boto3_chime.type_defs import PutAppInstanceRetentionSettingsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4287,10 +4287,10 @@ Required fields:
 - `AppInstanceRetentionSettings`:
   [AppInstanceRetentionSettingsTypeDef](./type_defs.md#appinstanceretentionsettingstypedef)
 
-## PutAppInstanceRetentionSettingsResponseResponseTypeDef
+## PutAppInstanceRetentionSettingsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import PutAppInstanceRetentionSettingsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import PutAppInstanceRetentionSettingsResponseTypeDef
 ```
 
 Required fields:
@@ -4301,10 +4301,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutAppInstanceStreamingConfigurationsRequestTypeDef
+## PutAppInstanceStreamingConfigurationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import PutAppInstanceStreamingConfigurationsRequestTypeDef
+from mypy_boto3_chime.type_defs import PutAppInstanceStreamingConfigurationsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4313,10 +4313,10 @@ Required fields:
 - `AppInstanceStreamingConfigurations`:
   `List`\[[AppInstanceStreamingConfigurationTypeDef](./type_defs.md#appinstancestreamingconfigurationtypedef)\]
 
-## PutAppInstanceStreamingConfigurationsResponseResponseTypeDef
+## PutAppInstanceStreamingConfigurationsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import PutAppInstanceStreamingConfigurationsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import PutAppInstanceStreamingConfigurationsResponseTypeDef
 ```
 
 Required fields:
@@ -4326,10 +4326,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutEventsConfigurationRequestTypeDef
+## PutEventsConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import PutEventsConfigurationRequestTypeDef
+from mypy_boto3_chime.type_defs import PutEventsConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4342,10 +4342,10 @@ Optional fields:
 - `OutboundEventsHTTPSEndpoint`: `str`
 - `LambdaFunctionArn`: `str`
 
-## PutEventsConfigurationResponseResponseTypeDef
+## PutEventsConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import PutEventsConfigurationResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import PutEventsConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -4355,10 +4355,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutRetentionSettingsRequestTypeDef
+## PutRetentionSettingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import PutRetentionSettingsRequestTypeDef
+from mypy_boto3_chime.type_defs import PutRetentionSettingsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4367,10 +4367,10 @@ Required fields:
 - `RetentionSettings`:
   [RetentionSettingsTypeDef](./type_defs.md#retentionsettingstypedef)
 
-## PutRetentionSettingsResponseResponseTypeDef
+## PutRetentionSettingsResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import PutRetentionSettingsResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import PutRetentionSettingsResponseTypeDef
 ```
 
 Required fields:
@@ -4381,10 +4381,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutSipMediaApplicationLoggingConfigurationRequestTypeDef
+## PutSipMediaApplicationLoggingConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import PutSipMediaApplicationLoggingConfigurationRequestTypeDef
+from mypy_boto3_chime.type_defs import PutSipMediaApplicationLoggingConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4396,10 +4396,10 @@ Optional fields:
 - `SipMediaApplicationLoggingConfiguration`:
   [SipMediaApplicationLoggingConfigurationTypeDef](./type_defs.md#sipmediaapplicationloggingconfigurationtypedef)
 
-## PutSipMediaApplicationLoggingConfigurationResponseResponseTypeDef
+## PutSipMediaApplicationLoggingConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import PutSipMediaApplicationLoggingConfigurationResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import PutSipMediaApplicationLoggingConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -4409,10 +4409,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutVoiceConnectorEmergencyCallingConfigurationRequestTypeDef
+## PutVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import PutVoiceConnectorEmergencyCallingConfigurationRequestTypeDef
+from mypy_boto3_chime.type_defs import PutVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4421,10 +4421,10 @@ Required fields:
 - `EmergencyCallingConfiguration`:
   [EmergencyCallingConfigurationTypeDef](./type_defs.md#emergencycallingconfigurationtypedef)
 
-## PutVoiceConnectorEmergencyCallingConfigurationResponseResponseTypeDef
+## PutVoiceConnectorEmergencyCallingConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import PutVoiceConnectorEmergencyCallingConfigurationResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import PutVoiceConnectorEmergencyCallingConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -4434,10 +4434,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutVoiceConnectorLoggingConfigurationRequestTypeDef
+## PutVoiceConnectorLoggingConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import PutVoiceConnectorLoggingConfigurationRequestTypeDef
+from mypy_boto3_chime.type_defs import PutVoiceConnectorLoggingConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4446,10 +4446,10 @@ Required fields:
 - `LoggingConfiguration`:
   [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
 
-## PutVoiceConnectorLoggingConfigurationResponseResponseTypeDef
+## PutVoiceConnectorLoggingConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import PutVoiceConnectorLoggingConfigurationResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import PutVoiceConnectorLoggingConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -4459,10 +4459,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutVoiceConnectorOriginationRequestTypeDef
+## PutVoiceConnectorOriginationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import PutVoiceConnectorOriginationRequestTypeDef
+from mypy_boto3_chime.type_defs import PutVoiceConnectorOriginationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4470,10 +4470,10 @@ Required fields:
 - `VoiceConnectorId`: `str`
 - `Origination`: [OriginationTypeDef](./type_defs.md#originationtypedef)
 
-## PutVoiceConnectorOriginationResponseResponseTypeDef
+## PutVoiceConnectorOriginationResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import PutVoiceConnectorOriginationResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import PutVoiceConnectorOriginationResponseTypeDef
 ```
 
 Required fields:
@@ -4482,10 +4482,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutVoiceConnectorProxyRequestTypeDef
+## PutVoiceConnectorProxyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import PutVoiceConnectorProxyRequestTypeDef
+from mypy_boto3_chime.type_defs import PutVoiceConnectorProxyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4499,10 +4499,10 @@ Optional fields:
 - `FallBackPhoneNumber`: `str`
 - `Disabled`: `bool`
 
-## PutVoiceConnectorProxyResponseResponseTypeDef
+## PutVoiceConnectorProxyResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import PutVoiceConnectorProxyResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import PutVoiceConnectorProxyResponseTypeDef
 ```
 
 Required fields:
@@ -4511,10 +4511,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutVoiceConnectorStreamingConfigurationRequestTypeDef
+## PutVoiceConnectorStreamingConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import PutVoiceConnectorStreamingConfigurationRequestTypeDef
+from mypy_boto3_chime.type_defs import PutVoiceConnectorStreamingConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4523,10 +4523,10 @@ Required fields:
 - `StreamingConfiguration`:
   [StreamingConfigurationTypeDef](./type_defs.md#streamingconfigurationtypedef)
 
-## PutVoiceConnectorStreamingConfigurationResponseResponseTypeDef
+## PutVoiceConnectorStreamingConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import PutVoiceConnectorStreamingConfigurationResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import PutVoiceConnectorStreamingConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -4536,10 +4536,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutVoiceConnectorTerminationCredentialsRequestTypeDef
+## PutVoiceConnectorTerminationCredentialsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import PutVoiceConnectorTerminationCredentialsRequestTypeDef
+from mypy_boto3_chime.type_defs import PutVoiceConnectorTerminationCredentialsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4551,10 +4551,10 @@ Optional fields:
 - `Credentials`:
   `List`\[[CredentialTypeDef](./type_defs.md#credentialtypedef)\]
 
-## PutVoiceConnectorTerminationRequestTypeDef
+## PutVoiceConnectorTerminationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import PutVoiceConnectorTerminationRequestTypeDef
+from mypy_boto3_chime.type_defs import PutVoiceConnectorTerminationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4562,10 +4562,10 @@ Required fields:
 - `VoiceConnectorId`: `str`
 - `Termination`: [TerminationTypeDef](./type_defs.md#terminationtypedef)
 
-## PutVoiceConnectorTerminationResponseResponseTypeDef
+## PutVoiceConnectorTerminationResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import PutVoiceConnectorTerminationResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import PutVoiceConnectorTerminationResponseTypeDef
 ```
 
 Required fields:
@@ -4574,10 +4574,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RedactChannelMessageRequestTypeDef
+## RedactChannelMessageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import RedactChannelMessageRequestTypeDef
+from mypy_boto3_chime.type_defs import RedactChannelMessageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4589,10 +4589,10 @@ Optional fields:
 
 - `ChimeBearer`: `str`
 
-## RedactChannelMessageResponseResponseTypeDef
+## RedactChannelMessageResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import RedactChannelMessageResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import RedactChannelMessageResponseTypeDef
 ```
 
 Required fields:
@@ -4602,10 +4602,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RedactConversationMessageRequestTypeDef
+## RedactConversationMessageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import RedactConversationMessageRequestTypeDef
+from mypy_boto3_chime.type_defs import RedactConversationMessageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4614,10 +4614,10 @@ Required fields:
 - `ConversationId`: `str`
 - `MessageId`: `str`
 
-## RedactRoomMessageRequestTypeDef
+## RedactRoomMessageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import RedactRoomMessageRequestTypeDef
+from mypy_boto3_chime.type_defs import RedactRoomMessageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4626,10 +4626,10 @@ Required fields:
 - `RoomId`: `str`
 - `MessageId`: `str`
 
-## RegenerateSecurityTokenRequestTypeDef
+## RegenerateSecurityTokenRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import RegenerateSecurityTokenRequestTypeDef
+from mypy_boto3_chime.type_defs import RegenerateSecurityTokenRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4637,10 +4637,10 @@ Required fields:
 - `AccountId`: `str`
 - `BotId`: `str`
 
-## RegenerateSecurityTokenResponseResponseTypeDef
+## RegenerateSecurityTokenResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import RegenerateSecurityTokenResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import RegenerateSecurityTokenResponseTypeDef
 ```
 
 Required fields:
@@ -4649,10 +4649,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ResetPersonalPINRequestTypeDef
+## ResetPersonalPINRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ResetPersonalPINRequestTypeDef
+from mypy_boto3_chime.type_defs import ResetPersonalPINRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4660,10 +4660,10 @@ Required fields:
 - `AccountId`: `str`
 - `UserId`: `str`
 
-## ResetPersonalPINResponseResponseTypeDef
+## ResetPersonalPINResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import ResetPersonalPINResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import ResetPersonalPINResponseTypeDef
 ```
 
 Required fields:
@@ -4686,20 +4686,20 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## RestorePhoneNumberRequestTypeDef
+## RestorePhoneNumberRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import RestorePhoneNumberRequestTypeDef
+from mypy_boto3_chime.type_defs import RestorePhoneNumberRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `PhoneNumberId`: `str`
 
-## RestorePhoneNumberResponseResponseTypeDef
+## RestorePhoneNumberResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import RestorePhoneNumberResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import RestorePhoneNumberResponseTypeDef
 ```
 
 Required fields:
@@ -4760,10 +4760,10 @@ Optional fields:
 - `CreatedTimestamp`: `datetime`
 - `UpdatedTimestamp`: `datetime`
 
-## SearchAvailablePhoneNumbersRequestTypeDef
+## SearchAvailablePhoneNumbersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import SearchAvailablePhoneNumbersRequestTypeDef
+from mypy_boto3_chime.type_defs import SearchAvailablePhoneNumbersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -4777,10 +4777,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## SearchAvailablePhoneNumbersResponseResponseTypeDef
+## SearchAvailablePhoneNumbersResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import SearchAvailablePhoneNumbersResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import SearchAvailablePhoneNumbersResponseTypeDef
 ```
 
 Required fields:
@@ -4790,10 +4790,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SendChannelMessageRequestTypeDef
+## SendChannelMessageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import SendChannelMessageRequestTypeDef
+from mypy_boto3_chime.type_defs import SendChannelMessageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4810,10 +4810,10 @@ Optional fields:
 - `Metadata`: `str`
 - `ChimeBearer`: `str`
 
-## SendChannelMessageResponseResponseTypeDef
+## SendChannelMessageResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import SendChannelMessageResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import SendChannelMessageResponseTypeDef
 ```
 
 Required fields:
@@ -4936,10 +4936,10 @@ Required fields:
 - `NotificationTarget`:
   [NotificationTargetType](./literals.md#notificationtargettype)
 
-## TagAttendeeRequestTypeDef
+## TagAttendeeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import TagAttendeeRequestTypeDef
+from mypy_boto3_chime.type_defs import TagAttendeeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4948,10 +4948,10 @@ Required fields:
 - `AttendeeId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## TagMeetingRequestTypeDef
+## TagMeetingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import TagMeetingRequestTypeDef
+from mypy_boto3_chime.type_defs import TagMeetingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4959,10 +4959,10 @@ Required fields:
 - `MeetingId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_chime.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5018,10 +5018,10 @@ Optional fields:
 - `CidrAllowedList`: `List`\[`str`\]
 - `Disabled`: `bool`
 
-## UntagAttendeeRequestTypeDef
+## UntagAttendeeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UntagAttendeeRequestTypeDef
+from mypy_boto3_chime.type_defs import UntagAttendeeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5030,10 +5030,10 @@ Required fields:
 - `AttendeeId`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UntagMeetingRequestTypeDef
+## UntagMeetingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UntagMeetingRequestTypeDef
+from mypy_boto3_chime.type_defs import UntagMeetingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5041,10 +5041,10 @@ Required fields:
 - `MeetingId`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_chime.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5052,10 +5052,10 @@ Required fields:
 - `ResourceARN`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateAccountRequestTypeDef
+## UpdateAccountRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateAccountRequestTypeDef
+from mypy_boto3_chime.type_defs import UpdateAccountRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5067,10 +5067,10 @@ Optional fields:
 - `Name`: `str`
 - `DefaultLicense`: [LicenseType](./literals.md#licensetype)
 
-## UpdateAccountResponseResponseTypeDef
+## UpdateAccountResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateAccountResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import UpdateAccountResponseTypeDef
 ```
 
 Required fields:
@@ -5079,10 +5079,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateAccountSettingsRequestTypeDef
+## UpdateAccountSettingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateAccountSettingsRequestTypeDef
+from mypy_boto3_chime.type_defs import UpdateAccountSettingsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5091,10 +5091,10 @@ Required fields:
 - `AccountSettings`:
   [AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef)
 
-## UpdateAppInstanceRequestTypeDef
+## UpdateAppInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateAppInstanceRequestTypeDef
+from mypy_boto3_chime.type_defs import UpdateAppInstanceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5106,10 +5106,10 @@ Optional fields:
 
 - `Metadata`: `str`
 
-## UpdateAppInstanceResponseResponseTypeDef
+## UpdateAppInstanceResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateAppInstanceResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import UpdateAppInstanceResponseTypeDef
 ```
 
 Required fields:
@@ -5118,10 +5118,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateAppInstanceUserRequestTypeDef
+## UpdateAppInstanceUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateAppInstanceUserRequestTypeDef
+from mypy_boto3_chime.type_defs import UpdateAppInstanceUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5133,10 +5133,10 @@ Optional fields:
 
 - `Metadata`: `str`
 
-## UpdateAppInstanceUserResponseResponseTypeDef
+## UpdateAppInstanceUserResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateAppInstanceUserResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import UpdateAppInstanceUserResponseTypeDef
 ```
 
 Required fields:
@@ -5145,10 +5145,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateBotRequestTypeDef
+## UpdateBotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateBotRequestTypeDef
+from mypy_boto3_chime.type_defs import UpdateBotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5160,10 +5160,10 @@ Optional fields:
 
 - `Disabled`: `bool`
 
-## UpdateBotResponseResponseTypeDef
+## UpdateBotResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateBotResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import UpdateBotResponseTypeDef
 ```
 
 Required fields:
@@ -5172,10 +5172,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateChannelMessageRequestTypeDef
+## UpdateChannelMessageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateChannelMessageRequestTypeDef
+from mypy_boto3_chime.type_defs import UpdateChannelMessageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5189,10 +5189,10 @@ Optional fields:
 - `Metadata`: `str`
 - `ChimeBearer`: `str`
 
-## UpdateChannelMessageResponseResponseTypeDef
+## UpdateChannelMessageResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateChannelMessageResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import UpdateChannelMessageResponseTypeDef
 ```
 
 Required fields:
@@ -5202,10 +5202,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateChannelReadMarkerRequestTypeDef
+## UpdateChannelReadMarkerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateChannelReadMarkerRequestTypeDef
+from mypy_boto3_chime.type_defs import UpdateChannelReadMarkerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5216,10 +5216,10 @@ Optional fields:
 
 - `ChimeBearer`: `str`
 
-## UpdateChannelReadMarkerResponseResponseTypeDef
+## UpdateChannelReadMarkerResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateChannelReadMarkerResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import UpdateChannelReadMarkerResponseTypeDef
 ```
 
 Required fields:
@@ -5228,10 +5228,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateChannelRequestTypeDef
+## UpdateChannelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateChannelRequestTypeDef
+from mypy_boto3_chime.type_defs import UpdateChannelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5245,10 +5245,10 @@ Optional fields:
 - `Metadata`: `str`
 - `ChimeBearer`: `str`
 
-## UpdateChannelResponseResponseTypeDef
+## UpdateChannelResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateChannelResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import UpdateChannelResponseTypeDef
 ```
 
 Required fields:
@@ -5257,10 +5257,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateGlobalSettingsRequestTypeDef
+## UpdateGlobalSettingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateGlobalSettingsRequestTypeDef
+from mypy_boto3_chime.type_defs import UpdateGlobalSettingsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5286,10 +5286,10 @@ Optional fields:
   [PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype)
 - `CallingName`: `str`
 
-## UpdatePhoneNumberRequestTypeDef
+## UpdatePhoneNumberRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdatePhoneNumberRequestTypeDef
+from mypy_boto3_chime.type_defs import UpdatePhoneNumberRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5302,10 +5302,10 @@ Optional fields:
   [PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype)
 - `CallingName`: `str`
 
-## UpdatePhoneNumberResponseResponseTypeDef
+## UpdatePhoneNumberResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdatePhoneNumberResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import UpdatePhoneNumberResponseTypeDef
 ```
 
 Required fields:
@@ -5314,20 +5314,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdatePhoneNumberSettingsRequestTypeDef
+## UpdatePhoneNumberSettingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdatePhoneNumberSettingsRequestTypeDef
+from mypy_boto3_chime.type_defs import UpdatePhoneNumberSettingsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `CallingName`: `str`
 
-## UpdateProxySessionRequestTypeDef
+## UpdateProxySessionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateProxySessionRequestTypeDef
+from mypy_boto3_chime.type_defs import UpdateProxySessionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5340,10 +5340,10 @@ Optional fields:
 
 - `ExpiryMinutes`: `int`
 
-## UpdateProxySessionResponseResponseTypeDef
+## UpdateProxySessionResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateProxySessionResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import UpdateProxySessionResponseTypeDef
 ```
 
 Required fields:
@@ -5352,10 +5352,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateRoomMembershipRequestTypeDef
+## UpdateRoomMembershipRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateRoomMembershipRequestTypeDef
+from mypy_boto3_chime.type_defs import UpdateRoomMembershipRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5368,10 +5368,10 @@ Optional fields:
 
 - `Role`: [RoomMembershipRoleType](./literals.md#roommembershiproletype)
 
-## UpdateRoomMembershipResponseResponseTypeDef
+## UpdateRoomMembershipResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateRoomMembershipResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import UpdateRoomMembershipResponseTypeDef
 ```
 
 Required fields:
@@ -5381,10 +5381,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateRoomRequestTypeDef
+## UpdateRoomRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateRoomRequestTypeDef
+from mypy_boto3_chime.type_defs import UpdateRoomRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5396,10 +5396,10 @@ Optional fields:
 
 - `Name`: `str`
 
-## UpdateRoomResponseResponseTypeDef
+## UpdateRoomResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateRoomResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import UpdateRoomResponseTypeDef
 ```
 
 Required fields:
@@ -5408,10 +5408,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateSipMediaApplicationCallRequestTypeDef
+## UpdateSipMediaApplicationCallRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateSipMediaApplicationCallRequestTypeDef
+from mypy_boto3_chime.type_defs import UpdateSipMediaApplicationCallRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5420,10 +5420,10 @@ Required fields:
 - `TransactionId`: `str`
 - `Arguments`: `Dict`\[`str`, `str`\]
 
-## UpdateSipMediaApplicationCallResponseResponseTypeDef
+## UpdateSipMediaApplicationCallResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateSipMediaApplicationCallResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import UpdateSipMediaApplicationCallResponseTypeDef
 ```
 
 Required fields:
@@ -5433,10 +5433,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateSipMediaApplicationRequestTypeDef
+## UpdateSipMediaApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateSipMediaApplicationRequestTypeDef
+from mypy_boto3_chime.type_defs import UpdateSipMediaApplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5449,10 +5449,10 @@ Optional fields:
 - `Endpoints`:
   `List`\[[SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef)\]
 
-## UpdateSipMediaApplicationResponseResponseTypeDef
+## UpdateSipMediaApplicationResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateSipMediaApplicationResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import UpdateSipMediaApplicationResponseTypeDef
 ```
 
 Required fields:
@@ -5462,10 +5462,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateSipRuleRequestTypeDef
+## UpdateSipRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateSipRuleRequestTypeDef
+from mypy_boto3_chime.type_defs import UpdateSipRuleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5479,10 +5479,10 @@ Optional fields:
 - `TargetApplications`:
   `List`\[[SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef)\]
 
-## UpdateSipRuleResponseResponseTypeDef
+## UpdateSipRuleResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateSipRuleResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import UpdateSipRuleResponseTypeDef
 ```
 
 Required fields:
@@ -5508,10 +5508,10 @@ Optional fields:
 - `AlexaForBusinessMetadata`:
   [AlexaForBusinessMetadataTypeDef](./type_defs.md#alexaforbusinessmetadatatypedef)
 
-## UpdateUserRequestTypeDef
+## UpdateUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateUserRequestTypeDef
+from mypy_boto3_chime.type_defs import UpdateUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5526,10 +5526,10 @@ Optional fields:
 - `AlexaForBusinessMetadata`:
   [AlexaForBusinessMetadataTypeDef](./type_defs.md#alexaforbusinessmetadatatypedef)
 
-## UpdateUserResponseResponseTypeDef
+## UpdateUserResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateUserResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import UpdateUserResponseTypeDef
 ```
 
 Required fields:
@@ -5538,10 +5538,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateUserSettingsRequestTypeDef
+## UpdateUserSettingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateUserSettingsRequestTypeDef
+from mypy_boto3_chime.type_defs import UpdateUserSettingsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5550,10 +5550,10 @@ Required fields:
 - `UserId`: `str`
 - `UserSettings`: [UserSettingsTypeDef](./type_defs.md#usersettingstypedef)
 
-## UpdateVoiceConnectorGroupRequestTypeDef
+## UpdateVoiceConnectorGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateVoiceConnectorGroupRequestTypeDef
+from mypy_boto3_chime.type_defs import UpdateVoiceConnectorGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5563,10 +5563,10 @@ Required fields:
 - `VoiceConnectorItems`:
   `List`\[[VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef)\]
 
-## UpdateVoiceConnectorGroupResponseResponseTypeDef
+## UpdateVoiceConnectorGroupResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateVoiceConnectorGroupResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import UpdateVoiceConnectorGroupResponseTypeDef
 ```
 
 Required fields:
@@ -5576,10 +5576,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateVoiceConnectorRequestTypeDef
+## UpdateVoiceConnectorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateVoiceConnectorRequestTypeDef
+from mypy_boto3_chime.type_defs import UpdateVoiceConnectorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5588,10 +5588,10 @@ Required fields:
 - `Name`: `str`
 - `RequireEncryption`: `bool`
 
-## UpdateVoiceConnectorResponseResponseTypeDef
+## UpdateVoiceConnectorResponseTypeDef
 
 ```python
-from mypy_boto3_chime.type_defs import UpdateVoiceConnectorResponseResponseTypeDef
+from mypy_boto3_chime.type_defs import UpdateVoiceConnectorResponseTypeDef
 ```
 
 Required fields:

@@ -43,7 +43,7 @@ Arguments for `DescribeSchedulePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSchedulePaginator.paginate` returns
-`Iterator`\[[DescribeScheduleResponseResponseTypeDef](./type_defs.md#describescheduleresponseresponsetypedef)\].
+`Iterator`\[[DescribeScheduleResponseTypeDef](./type_defs.md#describescheduleresponsetypedef)\].
 
 ## ListChannelsPaginator
 
@@ -68,7 +68,7 @@ Arguments for `ListChannelsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListChannelsPaginator.paginate` returns
-`Iterator`\[[ListChannelsResponseResponseTypeDef](./type_defs.md#listchannelsresponseresponsetypedef)\].
+`Iterator`\[[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)\].
 
 ## ListInputDeviceTransfersPaginator
 
@@ -94,7 +94,7 @@ Arguments for `ListInputDeviceTransfersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInputDeviceTransfersPaginator.paginate` returns
-`Iterator`\[[ListInputDeviceTransfersResponseResponseTypeDef](./type_defs.md#listinputdevicetransfersresponseresponsetypedef)\].
+`Iterator`\[[ListInputDeviceTransfersResponseTypeDef](./type_defs.md#listinputdevicetransfersresponsetypedef)\].
 
 ## ListInputDevicesPaginator
 
@@ -119,7 +119,7 @@ Arguments for `ListInputDevicesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInputDevicesPaginator.paginate` returns
-`Iterator`\[[ListInputDevicesResponseResponseTypeDef](./type_defs.md#listinputdevicesresponseresponsetypedef)\].
+`Iterator`\[[ListInputDevicesResponseTypeDef](./type_defs.md#listinputdevicesresponsetypedef)\].
 
 ## ListInputSecurityGroupsPaginator
 
@@ -144,7 +144,7 @@ Arguments for `ListInputSecurityGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInputSecurityGroupsPaginator.paginate` returns
-`Iterator`\[[ListInputSecurityGroupsResponseResponseTypeDef](./type_defs.md#listinputsecuritygroupsresponseresponsetypedef)\].
+`Iterator`\[[ListInputSecurityGroupsResponseTypeDef](./type_defs.md#listinputsecuritygroupsresponsetypedef)\].
 
 ## ListInputsPaginator
 
@@ -168,7 +168,7 @@ Arguments for `ListInputsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInputsPaginator.paginate` returns
-`Iterator`\[[ListInputsResponseResponseTypeDef](./type_defs.md#listinputsresponseresponsetypedef)\].
+`Iterator`\[[ListInputsResponseTypeDef](./type_defs.md#listinputsresponsetypedef)\].
 
 ## ListMultiplexProgramsPaginator
 
@@ -194,7 +194,7 @@ Arguments for `ListMultiplexProgramsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMultiplexProgramsPaginator.paginate` returns
-`Iterator`\[[ListMultiplexProgramsResponseResponseTypeDef](./type_defs.md#listmultiplexprogramsresponseresponsetypedef)\].
+`Iterator`\[[ListMultiplexProgramsResponseTypeDef](./type_defs.md#listmultiplexprogramsresponsetypedef)\].
 
 ## ListMultiplexesPaginator
 
@@ -219,7 +219,7 @@ Arguments for `ListMultiplexesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMultiplexesPaginator.paginate` returns
-`Iterator`\[[ListMultiplexesResponseResponseTypeDef](./type_defs.md#listmultiplexesresponseresponsetypedef)\].
+`Iterator`\[[ListMultiplexesResponseTypeDef](./type_defs.md#listmultiplexesresponsetypedef)\].
 
 ## ListOfferingsPaginator
 
@@ -254,7 +254,7 @@ Arguments for `ListOfferingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOfferingsPaginator.paginate` returns
-`Iterator`\[[ListOfferingsResponseResponseTypeDef](./type_defs.md#listofferingsresponseresponsetypedef)\].
+`Iterator`\[[ListOfferingsResponseTypeDef](./type_defs.md#listofferingsresponsetypedef)\].
 
 ## ListReservationsPaginator
 
@@ -287,4 +287,4 @@ Arguments for `ListReservationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListReservationsPaginator.paginate` returns
-`Iterator`\[[ListReservationsResponseResponseTypeDef](./type_defs.md#listreservationsresponseresponsetypedef)\].
+`Iterator`\[[ListReservationsResponseTypeDef](./type_defs.md#listreservationsresponsetypedef)\].

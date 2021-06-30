@@ -11,6 +11,7 @@ type annotations stubs module
   - [ChimeClient](#chimeclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_phone_number_with_user](#associate_phone_number_with_user)
     - [associate_phone_numbers_with_voice_connector](#associate_phone_numbers_with_voice_connector)
     - [associate_phone_numbers_with_voice_connector_group](#associate_phone_numbers_with_voice_connector_group)
@@ -244,6 +245,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ChimeClient exceptions.
+
+Type annotations for `boto3.client("chime").exceptions` method.
+
+Boto3 documentation:
+[Chime.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_phone_number_with_user
 
 Associates a phone number with the specified Amazon Chime user.
@@ -255,7 +267,7 @@ Boto3 documentation:
 [Chime.Client.associate_phone_number_with_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_number_with_user)
 
 Arguments mapping described in
-[AssociatePhoneNumberWithUserRequestTypeDef](./type_defs.md#associatephonenumberwithuserrequesttypedef).
+[AssociatePhoneNumberWithUserRequestRequestTypeDef](./type_defs.md#associatephonenumberwithuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -276,7 +288,7 @@ Boto3 documentation:
 [Chime.Client.associate_phone_numbers_with_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_numbers_with_voice_connector)
 
 Arguments mapping described in
-[AssociatePhoneNumbersWithVoiceConnectorRequestTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorrequesttypedef).
+[AssociatePhoneNumbersWithVoiceConnectorRequestRequestTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -285,7 +297,7 @@ Keyword-only arguments:
 - `ForceAssociate`: `bool`
 
 Returns
-[AssociatePhoneNumbersWithVoiceConnectorResponseResponseTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorresponseresponsetypedef).
+[AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorresponsetypedef).
 
 ### associate_phone_numbers_with_voice_connector_group
 
@@ -299,7 +311,7 @@ Boto3 documentation:
 [Chime.Client.associate_phone_numbers_with_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_numbers_with_voice_connector_group)
 
 Arguments mapping described in
-[AssociatePhoneNumbersWithVoiceConnectorGroupRequestTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorgrouprequesttypedef).
+[AssociatePhoneNumbersWithVoiceConnectorGroupRequestRequestTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -308,7 +320,7 @@ Keyword-only arguments:
 - `ForceAssociate`: `bool`
 
 Returns
-[AssociatePhoneNumbersWithVoiceConnectorGroupResponseResponseTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorgroupresponseresponsetypedef).
+[AssociatePhoneNumbersWithVoiceConnectorGroupResponseTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorgroupresponsetypedef).
 
 ### associate_signin_delegate_groups_with_account
 
@@ -322,7 +334,7 @@ Boto3 documentation:
 [Chime.Client.associate_signin_delegate_groups_with_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_signin_delegate_groups_with_account)
 
 Arguments mapping described in
-[AssociateSigninDelegateGroupsWithAccountRequestTypeDef](./type_defs.md#associatesignindelegategroupswithaccountrequesttypedef).
+[AssociateSigninDelegateGroupsWithAccountRequestRequestTypeDef](./type_defs.md#associatesignindelegategroupswithaccountrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -343,7 +355,7 @@ Boto3 documentation:
 [Chime.Client.batch_create_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_create_attendee)
 
 Arguments mapping described in
-[BatchCreateAttendeeRequestTypeDef](./type_defs.md#batchcreateattendeerequesttypedef).
+[BatchCreateAttendeeRequestRequestTypeDef](./type_defs.md#batchcreateattendeerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -353,7 +365,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchCreateAttendeeResponseResponseTypeDef](./type_defs.md#batchcreateattendeeresponseresponsetypedef).
+[BatchCreateAttendeeResponseTypeDef](./type_defs.md#batchcreateattendeeresponsetypedef).
 
 ### batch_create_channel_membership
 
@@ -366,7 +378,7 @@ Boto3 documentation:
 [Chime.Client.batch_create_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_create_channel_membership)
 
 Arguments mapping described in
-[BatchCreateChannelMembershipRequestTypeDef](./type_defs.md#batchcreatechannelmembershiprequesttypedef).
+[BatchCreateChannelMembershipRequestRequestTypeDef](./type_defs.md#batchcreatechannelmembershiprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -376,7 +388,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[BatchCreateChannelMembershipResponseResponseTypeDef](./type_defs.md#batchcreatechannelmembershipresponseresponsetypedef).
+[BatchCreateChannelMembershipResponseTypeDef](./type_defs.md#batchcreatechannelmembershipresponsetypedef).
 
 ### batch_create_room_membership
 
@@ -389,7 +401,7 @@ Boto3 documentation:
 [Chime.Client.batch_create_room_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_create_room_membership)
 
 Arguments mapping described in
-[BatchCreateRoomMembershipRequestTypeDef](./type_defs.md#batchcreateroommembershiprequesttypedef).
+[BatchCreateRoomMembershipRequestRequestTypeDef](./type_defs.md#batchcreateroommembershiprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -400,7 +412,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchCreateRoomMembershipResponseResponseTypeDef](./type_defs.md#batchcreateroommembershipresponseresponsetypedef).
+[BatchCreateRoomMembershipResponseTypeDef](./type_defs.md#batchcreateroommembershipresponsetypedef).
 
 ### batch_delete_phone_number
 
@@ -412,14 +424,14 @@ Boto3 documentation:
 [Chime.Client.batch_delete_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_delete_phone_number)
 
 Arguments mapping described in
-[BatchDeletePhoneNumberRequestTypeDef](./type_defs.md#batchdeletephonenumberrequesttypedef).
+[BatchDeletePhoneNumberRequestRequestTypeDef](./type_defs.md#batchdeletephonenumberrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `PhoneNumberIds`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDeletePhoneNumberResponseResponseTypeDef](./type_defs.md#batchdeletephonenumberresponseresponsetypedef).
+[BatchDeletePhoneNumberResponseTypeDef](./type_defs.md#batchdeletephonenumberresponsetypedef).
 
 ### batch_suspend_user
 
@@ -431,7 +443,7 @@ Boto3 documentation:
 [Chime.Client.batch_suspend_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_suspend_user)
 
 Arguments mapping described in
-[BatchSuspendUserRequestTypeDef](./type_defs.md#batchsuspenduserrequesttypedef).
+[BatchSuspendUserRequestRequestTypeDef](./type_defs.md#batchsuspenduserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -439,7 +451,7 @@ Keyword-only arguments:
 - `UserIdList`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchSuspendUserResponseResponseTypeDef](./type_defs.md#batchsuspenduserresponseresponsetypedef).
+[BatchSuspendUserResponseTypeDef](./type_defs.md#batchsuspenduserresponsetypedef).
 
 ### batch_unsuspend_user
 
@@ -452,7 +464,7 @@ Boto3 documentation:
 [Chime.Client.batch_unsuspend_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_unsuspend_user)
 
 Arguments mapping described in
-[BatchUnsuspendUserRequestTypeDef](./type_defs.md#batchunsuspenduserrequesttypedef).
+[BatchUnsuspendUserRequestRequestTypeDef](./type_defs.md#batchunsuspenduserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -460,7 +472,7 @@ Keyword-only arguments:
 - `UserIdList`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchUnsuspendUserResponseResponseTypeDef](./type_defs.md#batchunsuspenduserresponseresponsetypedef).
+[BatchUnsuspendUserResponseTypeDef](./type_defs.md#batchunsuspenduserresponsetypedef).
 
 ### batch_update_phone_number
 
@@ -472,7 +484,7 @@ Boto3 documentation:
 [Chime.Client.batch_update_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_update_phone_number)
 
 Arguments mapping described in
-[BatchUpdatePhoneNumberRequestTypeDef](./type_defs.md#batchupdatephonenumberrequesttypedef).
+[BatchUpdatePhoneNumberRequestRequestTypeDef](./type_defs.md#batchupdatephonenumberrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -481,7 +493,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchUpdatePhoneNumberResponseResponseTypeDef](./type_defs.md#batchupdatephonenumberresponseresponsetypedef).
+[BatchUpdatePhoneNumberResponseTypeDef](./type_defs.md#batchupdatephonenumberresponsetypedef).
 
 ### batch_update_user
 
@@ -494,7 +506,7 @@ Boto3 documentation:
 [Chime.Client.batch_update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_update_user)
 
 Arguments mapping described in
-[BatchUpdateUserRequestTypeDef](./type_defs.md#batchupdateuserrequesttypedef).
+[BatchUpdateUserRequestRequestTypeDef](./type_defs.md#batchupdateuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -504,7 +516,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchUpdateUserResponseResponseTypeDef](./type_defs.md#batchupdateuserresponseresponsetypedef).
+[BatchUpdateUserResponseTypeDef](./type_defs.md#batchupdateuserresponsetypedef).
 
 ### can_paginate
 
@@ -531,14 +543,14 @@ Boto3 documentation:
 [Chime.Client.create_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_account)
 
 Arguments mapping described in
-[CreateAccountRequestTypeDef](./type_defs.md#createaccountrequesttypedef).
+[CreateAccountRequestRequestTypeDef](./type_defs.md#createaccountrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[CreateAccountResponseResponseTypeDef](./type_defs.md#createaccountresponseresponsetypedef).
+[CreateAccountResponseTypeDef](./type_defs.md#createaccountresponsetypedef).
 
 ### create_app_instance
 
@@ -550,7 +562,7 @@ Boto3 documentation:
 [Chime.Client.create_app_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance)
 
 Arguments mapping described in
-[CreateAppInstanceRequestTypeDef](./type_defs.md#createappinstancerequesttypedef).
+[CreateAppInstanceRequestRequestTypeDef](./type_defs.md#createappinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -560,7 +572,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateAppInstanceResponseResponseTypeDef](./type_defs.md#createappinstanceresponseresponsetypedef).
+[CreateAppInstanceResponseTypeDef](./type_defs.md#createappinstanceresponsetypedef).
 
 ### create_app_instance_admin
 
@@ -572,7 +584,7 @@ Boto3 documentation:
 [Chime.Client.create_app_instance_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance_admin)
 
 Arguments mapping described in
-[CreateAppInstanceAdminRequestTypeDef](./type_defs.md#createappinstanceadminrequesttypedef).
+[CreateAppInstanceAdminRequestRequestTypeDef](./type_defs.md#createappinstanceadminrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -580,7 +592,7 @@ Keyword-only arguments:
 - `AppInstanceArn`: `str` *(required)*
 
 Returns
-[CreateAppInstanceAdminResponseResponseTypeDef](./type_defs.md#createappinstanceadminresponseresponsetypedef).
+[CreateAppInstanceAdminResponseTypeDef](./type_defs.md#createappinstanceadminresponsetypedef).
 
 ### create_app_instance_user
 
@@ -592,7 +604,7 @@ Boto3 documentation:
 [Chime.Client.create_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance_user)
 
 Arguments mapping described in
-[CreateAppInstanceUserRequestTypeDef](./type_defs.md#createappinstanceuserrequesttypedef).
+[CreateAppInstanceUserRequestRequestTypeDef](./type_defs.md#createappinstanceuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -604,7 +616,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateAppInstanceUserResponseResponseTypeDef](./type_defs.md#createappinstanceuserresponseresponsetypedef).
+[CreateAppInstanceUserResponseTypeDef](./type_defs.md#createappinstanceuserresponsetypedef).
 
 ### create_attendee
 
@@ -616,7 +628,7 @@ Boto3 documentation:
 [Chime.Client.create_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_attendee)
 
 Arguments mapping described in
-[CreateAttendeeRequestTypeDef](./type_defs.md#createattendeerequesttypedef).
+[CreateAttendeeRequestRequestTypeDef](./type_defs.md#createattendeerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -625,7 +637,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateAttendeeResponseResponseTypeDef](./type_defs.md#createattendeeresponseresponsetypedef).
+[CreateAttendeeResponseTypeDef](./type_defs.md#createattendeeresponsetypedef).
 
 ### create_bot
 
@@ -637,7 +649,7 @@ Boto3 documentation:
 [Chime.Client.create_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_bot)
 
 Arguments mapping described in
-[CreateBotRequestTypeDef](./type_defs.md#createbotrequesttypedef).
+[CreateBotRequestRequestTypeDef](./type_defs.md#createbotrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -645,8 +657,7 @@ Keyword-only arguments:
 - `DisplayName`: `str` *(required)*
 - `Domain`: `str`
 
-Returns
-[CreateBotResponseResponseTypeDef](./type_defs.md#createbotresponseresponsetypedef).
+Returns [CreateBotResponseTypeDef](./type_defs.md#createbotresponsetypedef).
 
 ### create_channel
 
@@ -658,7 +669,7 @@ Boto3 documentation:
 [Chime.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel)
 
 Arguments mapping described in
-[CreateChannelRequestTypeDef](./type_defs.md#createchannelrequesttypedef).
+[CreateChannelRequestRequestTypeDef](./type_defs.md#createchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -672,7 +683,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[CreateChannelResponseResponseTypeDef](./type_defs.md#createchannelresponseresponsetypedef).
+[CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
 
 ### create_channel_ban
 
@@ -684,7 +695,7 @@ Boto3 documentation:
 [Chime.Client.create_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_ban)
 
 Arguments mapping described in
-[CreateChannelBanRequestTypeDef](./type_defs.md#createchannelbanrequesttypedef).
+[CreateChannelBanRequestRequestTypeDef](./type_defs.md#createchannelbanrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -693,7 +704,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[CreateChannelBanResponseResponseTypeDef](./type_defs.md#createchannelbanresponseresponsetypedef).
+[CreateChannelBanResponseTypeDef](./type_defs.md#createchannelbanresponsetypedef).
 
 ### create_channel_membership
 
@@ -705,7 +716,7 @@ Boto3 documentation:
 [Chime.Client.create_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_membership)
 
 Arguments mapping described in
-[CreateChannelMembershipRequestTypeDef](./type_defs.md#createchannelmembershiprequesttypedef).
+[CreateChannelMembershipRequestRequestTypeDef](./type_defs.md#createchannelmembershiprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -716,7 +727,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[CreateChannelMembershipResponseResponseTypeDef](./type_defs.md#createchannelmembershipresponseresponsetypedef).
+[CreateChannelMembershipResponseTypeDef](./type_defs.md#createchannelmembershipresponsetypedef).
 
 ### create_channel_moderator
 
@@ -728,7 +739,7 @@ Boto3 documentation:
 [Chime.Client.create_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_moderator)
 
 Arguments mapping described in
-[CreateChannelModeratorRequestTypeDef](./type_defs.md#createchannelmoderatorrequesttypedef).
+[CreateChannelModeratorRequestRequestTypeDef](./type_defs.md#createchannelmoderatorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -737,7 +748,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[CreateChannelModeratorResponseResponseTypeDef](./type_defs.md#createchannelmoderatorresponseresponsetypedef).
+[CreateChannelModeratorResponseTypeDef](./type_defs.md#createchannelmoderatorresponsetypedef).
 
 ### create_meeting
 
@@ -750,7 +761,7 @@ Boto3 documentation:
 [Chime.Client.create_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting)
 
 Arguments mapping described in
-[CreateMeetingRequestTypeDef](./type_defs.md#createmeetingrequesttypedef).
+[CreateMeetingRequestRequestTypeDef](./type_defs.md#createmeetingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -763,7 +774,7 @@ Keyword-only arguments:
   [MeetingNotificationConfigurationTypeDef](./type_defs.md#meetingnotificationconfigurationtypedef)
 
 Returns
-[CreateMeetingResponseResponseTypeDef](./type_defs.md#createmeetingresponseresponsetypedef).
+[CreateMeetingResponseTypeDef](./type_defs.md#createmeetingresponsetypedef).
 
 ### create_meeting_dial_out
 
@@ -777,7 +788,7 @@ Boto3 documentation:
 [Chime.Client.create_meeting_dial_out](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting_dial_out)
 
 Arguments mapping described in
-[CreateMeetingDialOutRequestTypeDef](./type_defs.md#createmeetingdialoutrequesttypedef).
+[CreateMeetingDialOutRequestRequestTypeDef](./type_defs.md#createmeetingdialoutrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -787,7 +798,7 @@ Keyword-only arguments:
 - `JoinToken`: `str` *(required)*
 
 Returns
-[CreateMeetingDialOutResponseResponseTypeDef](./type_defs.md#createmeetingdialoutresponseresponsetypedef).
+[CreateMeetingDialOutResponseTypeDef](./type_defs.md#createmeetingdialoutresponsetypedef).
 
 ### create_meeting_with_attendees
 
@@ -801,7 +812,7 @@ Boto3 documentation:
 [Chime.Client.create_meeting_with_attendees](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting_with_attendees)
 
 Arguments mapping described in
-[CreateMeetingWithAttendeesRequestTypeDef](./type_defs.md#createmeetingwithattendeesrequesttypedef).
+[CreateMeetingWithAttendeesRequestRequestTypeDef](./type_defs.md#createmeetingwithattendeesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -816,7 +827,7 @@ Keyword-only arguments:
   `List`\[[CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef)\]
 
 Returns
-[CreateMeetingWithAttendeesResponseResponseTypeDef](./type_defs.md#createmeetingwithattendeesresponseresponsetypedef).
+[CreateMeetingWithAttendeesResponseTypeDef](./type_defs.md#createmeetingwithattendeesresponsetypedef).
 
 ### create_phone_number_order
 
@@ -828,7 +839,7 @@ Boto3 documentation:
 [Chime.Client.create_phone_number_order](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_phone_number_order)
 
 Arguments mapping described in
-[CreatePhoneNumberOrderRequestTypeDef](./type_defs.md#createphonenumberorderrequesttypedef).
+[CreatePhoneNumberOrderRequestRequestTypeDef](./type_defs.md#createphonenumberorderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -838,7 +849,7 @@ Keyword-only arguments:
 - `E164PhoneNumbers`: `List`\[`str`\] *(required)*
 
 Returns
-[CreatePhoneNumberOrderResponseResponseTypeDef](./type_defs.md#createphonenumberorderresponseresponsetypedef).
+[CreatePhoneNumberOrderResponseTypeDef](./type_defs.md#createphonenumberorderresponsetypedef).
 
 ### create_proxy_session
 
@@ -851,7 +862,7 @@ Boto3 documentation:
 [Chime.Client.create_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_proxy_session)
 
 Arguments mapping described in
-[CreateProxySessionRequestTypeDef](./type_defs.md#createproxysessionrequesttypedef).
+[CreateProxySessionRequestRequestTypeDef](./type_defs.md#createproxysessionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -868,7 +879,7 @@ Keyword-only arguments:
   [GeoMatchParamsTypeDef](./type_defs.md#geomatchparamstypedef)
 
 Returns
-[CreateProxySessionResponseResponseTypeDef](./type_defs.md#createproxysessionresponseresponsetypedef).
+[CreateProxySessionResponseTypeDef](./type_defs.md#createproxysessionresponsetypedef).
 
 ### create_room
 
@@ -880,7 +891,7 @@ Boto3 documentation:
 [Chime.Client.create_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_room)
 
 Arguments mapping described in
-[CreateRoomRequestTypeDef](./type_defs.md#createroomrequesttypedef).
+[CreateRoomRequestRequestTypeDef](./type_defs.md#createroomrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -888,8 +899,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `ClientRequestToken`: `str`
 
-Returns
-[CreateRoomResponseResponseTypeDef](./type_defs.md#createroomresponseresponsetypedef).
+Returns [CreateRoomResponseTypeDef](./type_defs.md#createroomresponsetypedef).
 
 ### create_room_membership
 
@@ -901,7 +911,7 @@ Boto3 documentation:
 [Chime.Client.create_room_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_room_membership)
 
 Arguments mapping described in
-[CreateRoomMembershipRequestTypeDef](./type_defs.md#createroommembershiprequesttypedef).
+[CreateRoomMembershipRequestRequestTypeDef](./type_defs.md#createroommembershiprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -911,7 +921,7 @@ Keyword-only arguments:
 - `Role`: [RoomMembershipRoleType](./literals.md#roommembershiproletype)
 
 Returns
-[CreateRoomMembershipResponseResponseTypeDef](./type_defs.md#createroommembershipresponseresponsetypedef).
+[CreateRoomMembershipResponseTypeDef](./type_defs.md#createroommembershipresponsetypedef).
 
 ### create_sip_media_application
 
@@ -924,7 +934,7 @@ Boto3 documentation:
 [Chime.Client.create_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_media_application)
 
 Arguments mapping described in
-[CreateSipMediaApplicationRequestTypeDef](./type_defs.md#createsipmediaapplicationrequesttypedef).
+[CreateSipMediaApplicationRequestRequestTypeDef](./type_defs.md#createsipmediaapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -935,7 +945,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateSipMediaApplicationResponseResponseTypeDef](./type_defs.md#createsipmediaapplicationresponseresponsetypedef).
+[CreateSipMediaApplicationResponseTypeDef](./type_defs.md#createsipmediaapplicationresponsetypedef).
 
 ### create_sip_media_application_call
 
@@ -950,7 +960,7 @@ Boto3 documentation:
 [Chime.Client.create_sip_media_application_call](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_media_application_call)
 
 Arguments mapping described in
-[CreateSipMediaApplicationCallRequestTypeDef](./type_defs.md#createsipmediaapplicationcallrequesttypedef).
+[CreateSipMediaApplicationCallRequestRequestTypeDef](./type_defs.md#createsipmediaapplicationcallrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -959,7 +969,7 @@ Keyword-only arguments:
 - `SipMediaApplicationId`: `str` *(required)*
 
 Returns
-[CreateSipMediaApplicationCallResponseResponseTypeDef](./type_defs.md#createsipmediaapplicationcallresponseresponsetypedef).
+[CreateSipMediaApplicationCallResponseTypeDef](./type_defs.md#createsipmediaapplicationcallresponsetypedef).
 
 ### create_sip_rule
 
@@ -972,7 +982,7 @@ Boto3 documentation:
 [Chime.Client.create_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_rule)
 
 Arguments mapping described in
-[CreateSipRuleRequestTypeDef](./type_defs.md#createsiprulerequesttypedef).
+[CreateSipRuleRequestRequestTypeDef](./type_defs.md#createsiprulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -986,7 +996,7 @@ Keyword-only arguments:
 - `Disabled`: `bool`
 
 Returns
-[CreateSipRuleResponseResponseTypeDef](./type_defs.md#createsipruleresponseresponsetypedef).
+[CreateSipRuleResponseTypeDef](./type_defs.md#createsipruleresponsetypedef).
 
 ### create_user
 
@@ -998,7 +1008,7 @@ Boto3 documentation:
 [Chime.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_user)
 
 Arguments mapping described in
-[CreateUserRequestTypeDef](./type_defs.md#createuserrequesttypedef).
+[CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1007,8 +1017,7 @@ Keyword-only arguments:
 - `Email`: `str`
 - `UserType`: [UserTypeType](./literals.md#usertypetype)
 
-Returns
-[CreateUserResponseResponseTypeDef](./type_defs.md#createuserresponseresponsetypedef).
+Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
 ### create_voice_connector
 
@@ -1020,7 +1029,7 @@ Boto3 documentation:
 [Chime.Client.create_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_voice_connector)
 
 Arguments mapping described in
-[CreateVoiceConnectorRequestTypeDef](./type_defs.md#createvoiceconnectorrequesttypedef).
+[CreateVoiceConnectorRequestRequestTypeDef](./type_defs.md#createvoiceconnectorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1030,7 +1039,7 @@ Keyword-only arguments:
   [VoiceConnectorAwsRegionType](./literals.md#voiceconnectorawsregiontype)
 
 Returns
-[CreateVoiceConnectorResponseResponseTypeDef](./type_defs.md#createvoiceconnectorresponseresponsetypedef).
+[CreateVoiceConnectorResponseTypeDef](./type_defs.md#createvoiceconnectorresponsetypedef).
 
 ### create_voice_connector_group
 
@@ -1044,7 +1053,7 @@ Boto3 documentation:
 [Chime.Client.create_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_voice_connector_group)
 
 Arguments mapping described in
-[CreateVoiceConnectorGroupRequestTypeDef](./type_defs.md#createvoiceconnectorgrouprequesttypedef).
+[CreateVoiceConnectorGroupRequestRequestTypeDef](./type_defs.md#createvoiceconnectorgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1053,7 +1062,7 @@ Keyword-only arguments:
   `List`\[[VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef)\]
 
 Returns
-[CreateVoiceConnectorGroupResponseResponseTypeDef](./type_defs.md#createvoiceconnectorgroupresponseresponsetypedef).
+[CreateVoiceConnectorGroupResponseTypeDef](./type_defs.md#createvoiceconnectorgroupresponsetypedef).
 
 ### delete_account
 
@@ -1065,7 +1074,7 @@ Boto3 documentation:
 [Chime.Client.delete_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_account)
 
 Arguments mapping described in
-[DeleteAccountRequestTypeDef](./type_defs.md#deleteaccountrequesttypedef).
+[DeleteAccountRequestRequestTypeDef](./type_defs.md#deleteaccountrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1083,7 +1092,7 @@ Boto3 documentation:
 [Chime.Client.delete_app_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance)
 
 Arguments mapping described in
-[DeleteAppInstanceRequestTypeDef](./type_defs.md#deleteappinstancerequesttypedef).
+[DeleteAppInstanceRequestRequestTypeDef](./type_defs.md#deleteappinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1099,7 +1108,7 @@ Boto3 documentation:
 [Chime.Client.delete_app_instance_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_admin)
 
 Arguments mapping described in
-[DeleteAppInstanceAdminRequestTypeDef](./type_defs.md#deleteappinstanceadminrequesttypedef).
+[DeleteAppInstanceAdminRequestRequestTypeDef](./type_defs.md#deleteappinstanceadminrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1117,7 +1126,7 @@ Boto3 documentation:
 [Chime.Client.delete_app_instance_streaming_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_streaming_configurations)
 
 Arguments mapping described in
-[DeleteAppInstanceStreamingConfigurationsRequestTypeDef](./type_defs.md#deleteappinstancestreamingconfigurationsrequesttypedef).
+[DeleteAppInstanceStreamingConfigurationsRequestRequestTypeDef](./type_defs.md#deleteappinstancestreamingconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1133,7 +1142,7 @@ Boto3 documentation:
 [Chime.Client.delete_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_user)
 
 Arguments mapping described in
-[DeleteAppInstanceUserRequestTypeDef](./type_defs.md#deleteappinstanceuserrequesttypedef).
+[DeleteAppInstanceUserRequestRequestTypeDef](./type_defs.md#deleteappinstanceuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1150,7 +1159,7 @@ Boto3 documentation:
 [Chime.Client.delete_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_attendee)
 
 Arguments mapping described in
-[DeleteAttendeeRequestTypeDef](./type_defs.md#deleteattendeerequesttypedef).
+[DeleteAttendeeRequestRequestTypeDef](./type_defs.md#deleteattendeerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1168,7 +1177,7 @@ Boto3 documentation:
 [Chime.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel)
 
 Arguments mapping described in
-[DeleteChannelRequestTypeDef](./type_defs.md#deletechannelrequesttypedef).
+[DeleteChannelRequestRequestTypeDef](./type_defs.md#deletechannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1185,7 +1194,7 @@ Boto3 documentation:
 [Chime.Client.delete_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_ban)
 
 Arguments mapping described in
-[DeleteChannelBanRequestTypeDef](./type_defs.md#deletechannelbanrequesttypedef).
+[DeleteChannelBanRequestRequestTypeDef](./type_defs.md#deletechannelbanrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1203,7 +1212,7 @@ Boto3 documentation:
 [Chime.Client.delete_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_membership)
 
 Arguments mapping described in
-[DeleteChannelMembershipRequestTypeDef](./type_defs.md#deletechannelmembershiprequesttypedef).
+[DeleteChannelMembershipRequestRequestTypeDef](./type_defs.md#deletechannelmembershiprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1221,7 +1230,7 @@ Boto3 documentation:
 [Chime.Client.delete_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_message)
 
 Arguments mapping described in
-[DeleteChannelMessageRequestTypeDef](./type_defs.md#deletechannelmessagerequesttypedef).
+[DeleteChannelMessageRequestRequestTypeDef](./type_defs.md#deletechannelmessagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1239,7 +1248,7 @@ Boto3 documentation:
 [Chime.Client.delete_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_moderator)
 
 Arguments mapping described in
-[DeleteChannelModeratorRequestTypeDef](./type_defs.md#deletechannelmoderatorrequesttypedef).
+[DeleteChannelModeratorRequestRequestTypeDef](./type_defs.md#deletechannelmoderatorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1258,7 +1267,7 @@ Boto3 documentation:
 [Chime.Client.delete_events_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_events_configuration)
 
 Arguments mapping described in
-[DeleteEventsConfigurationRequestTypeDef](./type_defs.md#deleteeventsconfigurationrequesttypedef).
+[DeleteEventsConfigurationRequestRequestTypeDef](./type_defs.md#deleteeventsconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1275,7 +1284,7 @@ Boto3 documentation:
 [Chime.Client.delete_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_meeting)
 
 Arguments mapping described in
-[DeleteMeetingRequestTypeDef](./type_defs.md#deletemeetingrequesttypedef).
+[DeleteMeetingRequestRequestTypeDef](./type_defs.md#deletemeetingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1291,7 +1300,7 @@ Boto3 documentation:
 [Chime.Client.delete_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_phone_number)
 
 Arguments mapping described in
-[DeletePhoneNumberRequestTypeDef](./type_defs.md#deletephonenumberrequesttypedef).
+[DeletePhoneNumberRequestRequestTypeDef](./type_defs.md#deletephonenumberrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1308,7 +1317,7 @@ Boto3 documentation:
 [Chime.Client.delete_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_proxy_session)
 
 Arguments mapping described in
-[DeleteProxySessionRequestTypeDef](./type_defs.md#deleteproxysessionrequesttypedef).
+[DeleteProxySessionRequestRequestTypeDef](./type_defs.md#deleteproxysessionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1325,7 +1334,7 @@ Boto3 documentation:
 [Chime.Client.delete_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_room)
 
 Arguments mapping described in
-[DeleteRoomRequestTypeDef](./type_defs.md#deleteroomrequesttypedef).
+[DeleteRoomRequestRequestTypeDef](./type_defs.md#deleteroomrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1342,7 +1351,7 @@ Boto3 documentation:
 [Chime.Client.delete_room_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_room_membership)
 
 Arguments mapping described in
-[DeleteRoomMembershipRequestTypeDef](./type_defs.md#deleteroommembershiprequesttypedef).
+[DeleteRoomMembershipRequestRequestTypeDef](./type_defs.md#deleteroommembershiprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1361,7 +1370,7 @@ Boto3 documentation:
 [Chime.Client.delete_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_sip_media_application)
 
 Arguments mapping described in
-[DeleteSipMediaApplicationRequestTypeDef](./type_defs.md#deletesipmediaapplicationrequesttypedef).
+[DeleteSipMediaApplicationRequestRequestTypeDef](./type_defs.md#deletesipmediaapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1377,7 +1386,7 @@ Boto3 documentation:
 [Chime.Client.delete_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_sip_rule)
 
 Arguments mapping described in
-[DeleteSipRuleRequestTypeDef](./type_defs.md#deletesiprulerequesttypedef).
+[DeleteSipRuleRequestRequestTypeDef](./type_defs.md#deletesiprulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1393,7 +1402,7 @@ Boto3 documentation:
 [Chime.Client.delete_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector)
 
 Arguments mapping described in
-[DeleteVoiceConnectorRequestTypeDef](./type_defs.md#deletevoiceconnectorrequesttypedef).
+[DeleteVoiceConnectorRequestRequestTypeDef](./type_defs.md#deletevoiceconnectorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1412,7 +1421,7 @@ Boto3 documentation:
 [Chime.Client.delete_voice_connector_emergency_calling_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_emergency_calling_configuration)
 
 Arguments mapping described in
-[DeleteVoiceConnectorEmergencyCallingConfigurationRequestTypeDef](./type_defs.md#deletevoiceconnectoremergencycallingconfigurationrequesttypedef).
+[DeleteVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef](./type_defs.md#deletevoiceconnectoremergencycallingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1429,7 +1438,7 @@ Boto3 documentation:
 [Chime.Client.delete_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_group)
 
 Arguments mapping described in
-[DeleteVoiceConnectorGroupRequestTypeDef](./type_defs.md#deletevoiceconnectorgrouprequesttypedef).
+[DeleteVoiceConnectorGroupRequestRequestTypeDef](./type_defs.md#deletevoiceconnectorgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1447,7 +1456,7 @@ Boto3 documentation:
 [Chime.Client.delete_voice_connector_origination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_origination)
 
 Arguments mapping described in
-[DeleteVoiceConnectorOriginationRequestTypeDef](./type_defs.md#deletevoiceconnectororiginationrequesttypedef).
+[DeleteVoiceConnectorOriginationRequestRequestTypeDef](./type_defs.md#deletevoiceconnectororiginationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1465,7 +1474,7 @@ Boto3 documentation:
 [Chime.Client.delete_voice_connector_proxy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_proxy)
 
 Arguments mapping described in
-[DeleteVoiceConnectorProxyRequestTypeDef](./type_defs.md#deletevoiceconnectorproxyrequesttypedef).
+[DeleteVoiceConnectorProxyRequestRequestTypeDef](./type_defs.md#deletevoiceconnectorproxyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1483,7 +1492,7 @@ Boto3 documentation:
 [Chime.Client.delete_voice_connector_streaming_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_streaming_configuration)
 
 Arguments mapping described in
-[DeleteVoiceConnectorStreamingConfigurationRequestTypeDef](./type_defs.md#deletevoiceconnectorstreamingconfigurationrequesttypedef).
+[DeleteVoiceConnectorStreamingConfigurationRequestRequestTypeDef](./type_defs.md#deletevoiceconnectorstreamingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1501,7 +1510,7 @@ Boto3 documentation:
 [Chime.Client.delete_voice_connector_termination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_termination)
 
 Arguments mapping described in
-[DeleteVoiceConnectorTerminationRequestTypeDef](./type_defs.md#deletevoiceconnectorterminationrequesttypedef).
+[DeleteVoiceConnectorTerminationRequestRequestTypeDef](./type_defs.md#deletevoiceconnectorterminationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1519,7 +1528,7 @@ Boto3 documentation:
 [Chime.Client.delete_voice_connector_termination_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_termination_credentials)
 
 Arguments mapping described in
-[DeleteVoiceConnectorTerminationCredentialsRequestTypeDef](./type_defs.md#deletevoiceconnectorterminationcredentialsrequesttypedef).
+[DeleteVoiceConnectorTerminationCredentialsRequestRequestTypeDef](./type_defs.md#deletevoiceconnectorterminationcredentialsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1536,14 +1545,14 @@ Boto3 documentation:
 [Chime.Client.describe_app_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance)
 
 Arguments mapping described in
-[DescribeAppInstanceRequestTypeDef](./type_defs.md#describeappinstancerequesttypedef).
+[DescribeAppInstanceRequestRequestTypeDef](./type_defs.md#describeappinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AppInstanceArn`: `str` *(required)*
 
 Returns
-[DescribeAppInstanceResponseResponseTypeDef](./type_defs.md#describeappinstanceresponseresponsetypedef).
+[DescribeAppInstanceResponseTypeDef](./type_defs.md#describeappinstanceresponsetypedef).
 
 ### describe_app_instance_admin
 
@@ -1556,7 +1565,7 @@ Boto3 documentation:
 [Chime.Client.describe_app_instance_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance_admin)
 
 Arguments mapping described in
-[DescribeAppInstanceAdminRequestTypeDef](./type_defs.md#describeappinstanceadminrequesttypedef).
+[DescribeAppInstanceAdminRequestRequestTypeDef](./type_defs.md#describeappinstanceadminrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1564,7 +1573,7 @@ Keyword-only arguments:
 - `AppInstanceArn`: `str` *(required)*
 
 Returns
-[DescribeAppInstanceAdminResponseResponseTypeDef](./type_defs.md#describeappinstanceadminresponseresponsetypedef).
+[DescribeAppInstanceAdminResponseTypeDef](./type_defs.md#describeappinstanceadminresponsetypedef).
 
 ### describe_app_instance_user
 
@@ -1576,14 +1585,14 @@ Boto3 documentation:
 [Chime.Client.describe_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance_user)
 
 Arguments mapping described in
-[DescribeAppInstanceUserRequestTypeDef](./type_defs.md#describeappinstanceuserrequesttypedef).
+[DescribeAppInstanceUserRequestRequestTypeDef](./type_defs.md#describeappinstanceuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AppInstanceUserArn`: `str` *(required)*
 
 Returns
-[DescribeAppInstanceUserResponseResponseTypeDef](./type_defs.md#describeappinstanceuserresponseresponsetypedef).
+[DescribeAppInstanceUserResponseTypeDef](./type_defs.md#describeappinstanceuserresponsetypedef).
 
 ### describe_channel
 
@@ -1595,7 +1604,7 @@ Boto3 documentation:
 [Chime.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel)
 
 Arguments mapping described in
-[DescribeChannelRequestTypeDef](./type_defs.md#describechannelrequesttypedef).
+[DescribeChannelRequestRequestTypeDef](./type_defs.md#describechannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1603,7 +1612,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[DescribeChannelResponseResponseTypeDef](./type_defs.md#describechannelresponseresponsetypedef).
+[DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
 
 ### describe_channel_ban
 
@@ -1615,7 +1624,7 @@ Boto3 documentation:
 [Chime.Client.describe_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_ban)
 
 Arguments mapping described in
-[DescribeChannelBanRequestTypeDef](./type_defs.md#describechannelbanrequesttypedef).
+[DescribeChannelBanRequestRequestTypeDef](./type_defs.md#describechannelbanrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1624,7 +1633,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[DescribeChannelBanResponseResponseTypeDef](./type_defs.md#describechannelbanresponseresponsetypedef).
+[DescribeChannelBanResponseTypeDef](./type_defs.md#describechannelbanresponsetypedef).
 
 ### describe_channel_membership
 
@@ -1637,7 +1646,7 @@ Boto3 documentation:
 [Chime.Client.describe_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_membership)
 
 Arguments mapping described in
-[DescribeChannelMembershipRequestTypeDef](./type_defs.md#describechannelmembershiprequesttypedef).
+[DescribeChannelMembershipRequestRequestTypeDef](./type_defs.md#describechannelmembershiprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1646,7 +1655,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[DescribeChannelMembershipResponseResponseTypeDef](./type_defs.md#describechannelmembershipresponseresponsetypedef).
+[DescribeChannelMembershipResponseTypeDef](./type_defs.md#describechannelmembershipresponsetypedef).
 
 ### describe_channel_membership_for_app_instance_user
 
@@ -1661,7 +1670,7 @@ Boto3 documentation:
 [Chime.Client.describe_channel_membership_for_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_membership_for_app_instance_user)
 
 Arguments mapping described in
-[DescribeChannelMembershipForAppInstanceUserRequestTypeDef](./type_defs.md#describechannelmembershipforappinstanceuserrequesttypedef).
+[DescribeChannelMembershipForAppInstanceUserRequestRequestTypeDef](./type_defs.md#describechannelmembershipforappinstanceuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1670,7 +1679,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[DescribeChannelMembershipForAppInstanceUserResponseResponseTypeDef](./type_defs.md#describechannelmembershipforappinstanceuserresponseresponsetypedef).
+[DescribeChannelMembershipForAppInstanceUserResponseTypeDef](./type_defs.md#describechannelmembershipforappinstanceuserresponsetypedef).
 
 ### describe_channel_moderated_by_app_instance_user
 
@@ -1684,7 +1693,7 @@ Boto3 documentation:
 [Chime.Client.describe_channel_moderated_by_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_moderated_by_app_instance_user)
 
 Arguments mapping described in
-[DescribeChannelModeratedByAppInstanceUserRequestTypeDef](./type_defs.md#describechannelmoderatedbyappinstanceuserrequesttypedef).
+[DescribeChannelModeratedByAppInstanceUserRequestRequestTypeDef](./type_defs.md#describechannelmoderatedbyappinstanceuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1693,7 +1702,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[DescribeChannelModeratedByAppInstanceUserResponseResponseTypeDef](./type_defs.md#describechannelmoderatedbyappinstanceuserresponseresponsetypedef).
+[DescribeChannelModeratedByAppInstanceUserResponseTypeDef](./type_defs.md#describechannelmoderatedbyappinstanceuserresponsetypedef).
 
 ### describe_channel_moderator
 
@@ -1705,7 +1714,7 @@ Boto3 documentation:
 [Chime.Client.describe_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_moderator)
 
 Arguments mapping described in
-[DescribeChannelModeratorRequestTypeDef](./type_defs.md#describechannelmoderatorrequesttypedef).
+[DescribeChannelModeratorRequestRequestTypeDef](./type_defs.md#describechannelmoderatorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1714,7 +1723,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[DescribeChannelModeratorResponseResponseTypeDef](./type_defs.md#describechannelmoderatorresponseresponsetypedef).
+[DescribeChannelModeratorResponseTypeDef](./type_defs.md#describechannelmoderatorresponsetypedef).
 
 ### disassociate_phone_number_from_user
 
@@ -1728,7 +1737,7 @@ Boto3 documentation:
 [Chime.Client.disassociate_phone_number_from_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_number_from_user)
 
 Arguments mapping described in
-[DisassociatePhoneNumberFromUserRequestTypeDef](./type_defs.md#disassociatephonenumberfromuserrequesttypedef).
+[DisassociatePhoneNumberFromUserRequestRequestTypeDef](./type_defs.md#disassociatephonenumberfromuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1749,7 +1758,7 @@ Boto3 documentation:
 [Chime.Client.disassociate_phone_numbers_from_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_numbers_from_voice_connector)
 
 Arguments mapping described in
-[DisassociatePhoneNumbersFromVoiceConnectorRequestTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorrequesttypedef).
+[DisassociatePhoneNumbersFromVoiceConnectorRequestRequestTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1757,7 +1766,7 @@ Keyword-only arguments:
 - `E164PhoneNumbers`: `List`\[`str`\] *(required)*
 
 Returns
-[DisassociatePhoneNumbersFromVoiceConnectorResponseResponseTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorresponseresponsetypedef).
+[DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorresponsetypedef).
 
 ### disassociate_phone_numbers_from_voice_connector_group
 
@@ -1772,7 +1781,7 @@ Boto3 documentation:
 [Chime.Client.disassociate_phone_numbers_from_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_numbers_from_voice_connector_group)
 
 Arguments mapping described in
-[DisassociatePhoneNumbersFromVoiceConnectorGroupRequestTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorgrouprequesttypedef).
+[DisassociatePhoneNumbersFromVoiceConnectorGroupRequestRequestTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1780,7 +1789,7 @@ Keyword-only arguments:
 - `E164PhoneNumbers`: `List`\[`str`\] *(required)*
 
 Returns
-[DisassociatePhoneNumbersFromVoiceConnectorGroupResponseResponseTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorgroupresponseresponsetypedef).
+[DisassociatePhoneNumbersFromVoiceConnectorGroupResponseTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorgroupresponsetypedef).
 
 ### disassociate_signin_delegate_groups_from_account
 
@@ -1795,7 +1804,7 @@ Boto3 documentation:
 [Chime.Client.disassociate_signin_delegate_groups_from_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_signin_delegate_groups_from_account)
 
 Arguments mapping described in
-[DisassociateSigninDelegateGroupsFromAccountRequestTypeDef](./type_defs.md#disassociatesignindelegategroupsfromaccountrequesttypedef).
+[DisassociateSigninDelegateGroupsFromAccountRequestRequestTypeDef](./type_defs.md#disassociatesignindelegategroupsfromaccountrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1833,14 +1842,13 @@ Boto3 documentation:
 [Chime.Client.get_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_account)
 
 Arguments mapping described in
-[GetAccountRequestTypeDef](./type_defs.md#getaccountrequesttypedef).
+[GetAccountRequestRequestTypeDef](./type_defs.md#getaccountrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 
-Returns
-[GetAccountResponseResponseTypeDef](./type_defs.md#getaccountresponseresponsetypedef).
+Returns [GetAccountResponseTypeDef](./type_defs.md#getaccountresponsetypedef).
 
 ### get_account_settings
 
@@ -1853,14 +1861,14 @@ Boto3 documentation:
 [Chime.Client.get_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_account_settings)
 
 Arguments mapping described in
-[GetAccountSettingsRequestTypeDef](./type_defs.md#getaccountsettingsrequesttypedef).
+[GetAccountSettingsRequestRequestTypeDef](./type_defs.md#getaccountsettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 
 Returns
-[GetAccountSettingsResponseResponseTypeDef](./type_defs.md#getaccountsettingsresponseresponsetypedef).
+[GetAccountSettingsResponseTypeDef](./type_defs.md#getaccountsettingsresponsetypedef).
 
 ### get_app_instance_retention_settings
 
@@ -1873,14 +1881,14 @@ Boto3 documentation:
 [Chime.Client.get_app_instance_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_app_instance_retention_settings)
 
 Arguments mapping described in
-[GetAppInstanceRetentionSettingsRequestTypeDef](./type_defs.md#getappinstanceretentionsettingsrequesttypedef).
+[GetAppInstanceRetentionSettingsRequestRequestTypeDef](./type_defs.md#getappinstanceretentionsettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AppInstanceArn`: `str` *(required)*
 
 Returns
-[GetAppInstanceRetentionSettingsResponseResponseTypeDef](./type_defs.md#getappinstanceretentionsettingsresponseresponsetypedef).
+[GetAppInstanceRetentionSettingsResponseTypeDef](./type_defs.md#getappinstanceretentionsettingsresponsetypedef).
 
 ### get_app_instance_streaming_configurations
 
@@ -1893,14 +1901,14 @@ Boto3 documentation:
 [Chime.Client.get_app_instance_streaming_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_app_instance_streaming_configurations)
 
 Arguments mapping described in
-[GetAppInstanceStreamingConfigurationsRequestTypeDef](./type_defs.md#getappinstancestreamingconfigurationsrequesttypedef).
+[GetAppInstanceStreamingConfigurationsRequestRequestTypeDef](./type_defs.md#getappinstancestreamingconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AppInstanceArn`: `str` *(required)*
 
 Returns
-[GetAppInstanceStreamingConfigurationsResponseResponseTypeDef](./type_defs.md#getappinstancestreamingconfigurationsresponseresponsetypedef).
+[GetAppInstanceStreamingConfigurationsResponseTypeDef](./type_defs.md#getappinstancestreamingconfigurationsresponsetypedef).
 
 ### get_attendee
 
@@ -1913,7 +1921,7 @@ Boto3 documentation:
 [Chime.Client.get_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_attendee)
 
 Arguments mapping described in
-[GetAttendeeRequestTypeDef](./type_defs.md#getattendeerequesttypedef).
+[GetAttendeeRequestRequestTypeDef](./type_defs.md#getattendeerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1921,7 +1929,7 @@ Keyword-only arguments:
 - `AttendeeId`: `str` *(required)*
 
 Returns
-[GetAttendeeResponseResponseTypeDef](./type_defs.md#getattendeeresponseresponsetypedef).
+[GetAttendeeResponseTypeDef](./type_defs.md#getattendeeresponsetypedef).
 
 ### get_bot
 
@@ -1934,15 +1942,14 @@ Boto3 documentation:
 [Chime.Client.get_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_bot)
 
 Arguments mapping described in
-[GetBotRequestTypeDef](./type_defs.md#getbotrequesttypedef).
+[GetBotRequestRequestTypeDef](./type_defs.md#getbotrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `BotId`: `str` *(required)*
 
-Returns
-[GetBotResponseResponseTypeDef](./type_defs.md#getbotresponseresponsetypedef).
+Returns [GetBotResponseTypeDef](./type_defs.md#getbotresponsetypedef).
 
 ### get_channel_message
 
@@ -1954,7 +1961,7 @@ Boto3 documentation:
 [Chime.Client.get_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_channel_message)
 
 Arguments mapping described in
-[GetChannelMessageRequestTypeDef](./type_defs.md#getchannelmessagerequesttypedef).
+[GetChannelMessageRequestRequestTypeDef](./type_defs.md#getchannelmessagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1963,7 +1970,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[GetChannelMessageResponseResponseTypeDef](./type_defs.md#getchannelmessageresponseresponsetypedef).
+[GetChannelMessageResponseTypeDef](./type_defs.md#getchannelmessageresponsetypedef).
 
 ### get_events_configuration
 
@@ -1976,7 +1983,7 @@ Boto3 documentation:
 [Chime.Client.get_events_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_events_configuration)
 
 Arguments mapping described in
-[GetEventsConfigurationRequestTypeDef](./type_defs.md#geteventsconfigurationrequesttypedef).
+[GetEventsConfigurationRequestRequestTypeDef](./type_defs.md#geteventsconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1984,7 +1991,7 @@ Keyword-only arguments:
 - `BotId`: `str` *(required)*
 
 Returns
-[GetEventsConfigurationResponseResponseTypeDef](./type_defs.md#geteventsconfigurationresponseresponsetypedef).
+[GetEventsConfigurationResponseTypeDef](./type_defs.md#geteventsconfigurationresponsetypedef).
 
 ### get_global_settings
 
@@ -1997,7 +2004,7 @@ Boto3 documentation:
 [Chime.Client.get_global_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_global_settings)
 
 Returns
-[GetGlobalSettingsResponseResponseTypeDef](./type_defs.md#getglobalsettingsresponseresponsetypedef).
+[GetGlobalSettingsResponseTypeDef](./type_defs.md#getglobalsettingsresponsetypedef).
 
 ### get_meeting
 
@@ -2009,14 +2016,13 @@ Boto3 documentation:
 [Chime.Client.get_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_meeting)
 
 Arguments mapping described in
-[GetMeetingRequestTypeDef](./type_defs.md#getmeetingrequesttypedef).
+[GetMeetingRequestRequestTypeDef](./type_defs.md#getmeetingrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `MeetingId`: `str` *(required)*
 
-Returns
-[GetMeetingResponseResponseTypeDef](./type_defs.md#getmeetingresponseresponsetypedef).
+Returns [GetMeetingResponseTypeDef](./type_defs.md#getmeetingresponsetypedef).
 
 ### get_messaging_session_endpoint
 
@@ -2029,7 +2035,7 @@ Boto3 documentation:
 [Chime.Client.get_messaging_session_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_messaging_session_endpoint)
 
 Returns
-[GetMessagingSessionEndpointResponseResponseTypeDef](./type_defs.md#getmessagingsessionendpointresponseresponsetypedef).
+[GetMessagingSessionEndpointResponseTypeDef](./type_defs.md#getmessagingsessionendpointresponsetypedef).
 
 ### get_phone_number
 
@@ -2042,14 +2048,14 @@ Boto3 documentation:
 [Chime.Client.get_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number)
 
 Arguments mapping described in
-[GetPhoneNumberRequestTypeDef](./type_defs.md#getphonenumberrequesttypedef).
+[GetPhoneNumberRequestRequestTypeDef](./type_defs.md#getphonenumberrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `PhoneNumberId`: `str` *(required)*
 
 Returns
-[GetPhoneNumberResponseResponseTypeDef](./type_defs.md#getphonenumberresponseresponsetypedef).
+[GetPhoneNumberResponseTypeDef](./type_defs.md#getphonenumberresponsetypedef).
 
 ### get_phone_number_order
 
@@ -2063,14 +2069,14 @@ Boto3 documentation:
 [Chime.Client.get_phone_number_order](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number_order)
 
 Arguments mapping described in
-[GetPhoneNumberOrderRequestTypeDef](./type_defs.md#getphonenumberorderrequesttypedef).
+[GetPhoneNumberOrderRequestRequestTypeDef](./type_defs.md#getphonenumberorderrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `PhoneNumberOrderId`: `str` *(required)*
 
 Returns
-[GetPhoneNumberOrderResponseResponseTypeDef](./type_defs.md#getphonenumberorderresponseresponsetypedef).
+[GetPhoneNumberOrderResponseTypeDef](./type_defs.md#getphonenumberorderresponsetypedef).
 
 ### get_phone_number_settings
 
@@ -2083,7 +2089,7 @@ Boto3 documentation:
 [Chime.Client.get_phone_number_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number_settings)
 
 Returns
-[GetPhoneNumberSettingsResponseResponseTypeDef](./type_defs.md#getphonenumbersettingsresponseresponsetypedef).
+[GetPhoneNumberSettingsResponseTypeDef](./type_defs.md#getphonenumbersettingsresponsetypedef).
 
 ### get_proxy_session
 
@@ -2096,7 +2102,7 @@ Boto3 documentation:
 [Chime.Client.get_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_proxy_session)
 
 Arguments mapping described in
-[GetProxySessionRequestTypeDef](./type_defs.md#getproxysessionrequesttypedef).
+[GetProxySessionRequestRequestTypeDef](./type_defs.md#getproxysessionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2104,7 +2110,7 @@ Keyword-only arguments:
 - `ProxySessionId`: `str` *(required)*
 
 Returns
-[GetProxySessionResponseResponseTypeDef](./type_defs.md#getproxysessionresponseresponsetypedef).
+[GetProxySessionResponseTypeDef](./type_defs.md#getproxysessionresponsetypedef).
 
 ### get_retention_settings
 
@@ -2116,14 +2122,14 @@ Boto3 documentation:
 [Chime.Client.get_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_retention_settings)
 
 Arguments mapping described in
-[GetRetentionSettingsRequestTypeDef](./type_defs.md#getretentionsettingsrequesttypedef).
+[GetRetentionSettingsRequestRequestTypeDef](./type_defs.md#getretentionsettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 
 Returns
-[GetRetentionSettingsResponseResponseTypeDef](./type_defs.md#getretentionsettingsresponseresponsetypedef).
+[GetRetentionSettingsResponseTypeDef](./type_defs.md#getretentionsettingsresponsetypedef).
 
 ### get_room
 
@@ -2136,15 +2142,14 @@ Boto3 documentation:
 [Chime.Client.get_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_room)
 
 Arguments mapping described in
-[GetRoomRequestTypeDef](./type_defs.md#getroomrequesttypedef).
+[GetRoomRequestRequestTypeDef](./type_defs.md#getroomrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `RoomId`: `str` *(required)*
 
-Returns
-[GetRoomResponseResponseTypeDef](./type_defs.md#getroomresponseresponsetypedef).
+Returns [GetRoomResponseTypeDef](./type_defs.md#getroomresponsetypedef).
 
 ### get_sip_media_application
 
@@ -2157,14 +2162,14 @@ Boto3 documentation:
 [Chime.Client.get_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_media_application)
 
 Arguments mapping described in
-[GetSipMediaApplicationRequestTypeDef](./type_defs.md#getsipmediaapplicationrequesttypedef).
+[GetSipMediaApplicationRequestRequestTypeDef](./type_defs.md#getsipmediaapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SipMediaApplicationId`: `str` *(required)*
 
 Returns
-[GetSipMediaApplicationResponseResponseTypeDef](./type_defs.md#getsipmediaapplicationresponseresponsetypedef).
+[GetSipMediaApplicationResponseTypeDef](./type_defs.md#getsipmediaapplicationresponsetypedef).
 
 ### get_sip_media_application_logging_configuration
 
@@ -2177,14 +2182,14 @@ Boto3 documentation:
 [Chime.Client.get_sip_media_application_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_media_application_logging_configuration)
 
 Arguments mapping described in
-[GetSipMediaApplicationLoggingConfigurationRequestTypeDef](./type_defs.md#getsipmediaapplicationloggingconfigurationrequesttypedef).
+[GetSipMediaApplicationLoggingConfigurationRequestRequestTypeDef](./type_defs.md#getsipmediaapplicationloggingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SipMediaApplicationId`: `str` *(required)*
 
 Returns
-[GetSipMediaApplicationLoggingConfigurationResponseResponseTypeDef](./type_defs.md#getsipmediaapplicationloggingconfigurationresponseresponsetypedef).
+[GetSipMediaApplicationLoggingConfigurationResponseTypeDef](./type_defs.md#getsipmediaapplicationloggingconfigurationresponsetypedef).
 
 ### get_sip_rule
 
@@ -2197,14 +2202,13 @@ Boto3 documentation:
 [Chime.Client.get_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_rule)
 
 Arguments mapping described in
-[GetSipRuleRequestTypeDef](./type_defs.md#getsiprulerequesttypedef).
+[GetSipRuleRequestRequestTypeDef](./type_defs.md#getsiprulerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SipRuleId`: `str` *(required)*
 
-Returns
-[GetSipRuleResponseResponseTypeDef](./type_defs.md#getsipruleresponseresponsetypedef).
+Returns [GetSipRuleResponseTypeDef](./type_defs.md#getsipruleresponsetypedef).
 
 ### get_user
 
@@ -2217,15 +2221,14 @@ Boto3 documentation:
 [Chime.Client.get_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_user)
 
 Arguments mapping described in
-[GetUserRequestTypeDef](./type_defs.md#getuserrequesttypedef).
+[GetUserRequestRequestTypeDef](./type_defs.md#getuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `UserId`: `str` *(required)*
 
-Returns
-[GetUserResponseResponseTypeDef](./type_defs.md#getuserresponseresponsetypedef).
+Returns [GetUserResponseTypeDef](./type_defs.md#getuserresponsetypedef).
 
 ### get_user_settings
 
@@ -2238,7 +2241,7 @@ Boto3 documentation:
 [Chime.Client.get_user_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_user_settings)
 
 Arguments mapping described in
-[GetUserSettingsRequestTypeDef](./type_defs.md#getusersettingsrequesttypedef).
+[GetUserSettingsRequestRequestTypeDef](./type_defs.md#getusersettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2246,7 +2249,7 @@ Keyword-only arguments:
 - `UserId`: `str` *(required)*
 
 Returns
-[GetUserSettingsResponseResponseTypeDef](./type_defs.md#getusersettingsresponseresponsetypedef).
+[GetUserSettingsResponseTypeDef](./type_defs.md#getusersettingsresponsetypedef).
 
 ### get_voice_connector
 
@@ -2259,14 +2262,14 @@ Boto3 documentation:
 [Chime.Client.get_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector)
 
 Arguments mapping described in
-[GetVoiceConnectorRequestTypeDef](./type_defs.md#getvoiceconnectorrequesttypedef).
+[GetVoiceConnectorRequestRequestTypeDef](./type_defs.md#getvoiceconnectorrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorResponseResponseTypeDef](./type_defs.md#getvoiceconnectorresponseresponsetypedef).
+[GetVoiceConnectorResponseTypeDef](./type_defs.md#getvoiceconnectorresponsetypedef).
 
 ### get_voice_connector_emergency_calling_configuration
 
@@ -2281,14 +2284,14 @@ Boto3 documentation:
 [Chime.Client.get_voice_connector_emergency_calling_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_emergency_calling_configuration)
 
 Arguments mapping described in
-[GetVoiceConnectorEmergencyCallingConfigurationRequestTypeDef](./type_defs.md#getvoiceconnectoremergencycallingconfigurationrequesttypedef).
+[GetVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef](./type_defs.md#getvoiceconnectoremergencycallingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorEmergencyCallingConfigurationResponseResponseTypeDef](./type_defs.md#getvoiceconnectoremergencycallingconfigurationresponseresponsetypedef).
+[GetVoiceConnectorEmergencyCallingConfigurationResponseTypeDef](./type_defs.md#getvoiceconnectoremergencycallingconfigurationresponsetypedef).
 
 ### get_voice_connector_group
 
@@ -2301,14 +2304,14 @@ Boto3 documentation:
 [Chime.Client.get_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_group)
 
 Arguments mapping described in
-[GetVoiceConnectorGroupRequestTypeDef](./type_defs.md#getvoiceconnectorgrouprequesttypedef).
+[GetVoiceConnectorGroupRequestRequestTypeDef](./type_defs.md#getvoiceconnectorgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `VoiceConnectorGroupId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorGroupResponseResponseTypeDef](./type_defs.md#getvoiceconnectorgroupresponseresponsetypedef).
+[GetVoiceConnectorGroupResponseTypeDef](./type_defs.md#getvoiceconnectorgroupresponsetypedef).
 
 ### get_voice_connector_logging_configuration
 
@@ -2322,14 +2325,14 @@ Boto3 documentation:
 [Chime.Client.get_voice_connector_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_logging_configuration)
 
 Arguments mapping described in
-[GetVoiceConnectorLoggingConfigurationRequestTypeDef](./type_defs.md#getvoiceconnectorloggingconfigurationrequesttypedef).
+[GetVoiceConnectorLoggingConfigurationRequestRequestTypeDef](./type_defs.md#getvoiceconnectorloggingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorLoggingConfigurationResponseResponseTypeDef](./type_defs.md#getvoiceconnectorloggingconfigurationresponseresponsetypedef).
+[GetVoiceConnectorLoggingConfigurationResponseTypeDef](./type_defs.md#getvoiceconnectorloggingconfigurationresponsetypedef).
 
 ### get_voice_connector_origination
 
@@ -2343,14 +2346,14 @@ Boto3 documentation:
 [Chime.Client.get_voice_connector_origination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_origination)
 
 Arguments mapping described in
-[GetVoiceConnectorOriginationRequestTypeDef](./type_defs.md#getvoiceconnectororiginationrequesttypedef).
+[GetVoiceConnectorOriginationRequestRequestTypeDef](./type_defs.md#getvoiceconnectororiginationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorOriginationResponseResponseTypeDef](./type_defs.md#getvoiceconnectororiginationresponseresponsetypedef).
+[GetVoiceConnectorOriginationResponseTypeDef](./type_defs.md#getvoiceconnectororiginationresponsetypedef).
 
 ### get_voice_connector_proxy
 
@@ -2363,14 +2366,14 @@ Boto3 documentation:
 [Chime.Client.get_voice_connector_proxy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_proxy)
 
 Arguments mapping described in
-[GetVoiceConnectorProxyRequestTypeDef](./type_defs.md#getvoiceconnectorproxyrequesttypedef).
+[GetVoiceConnectorProxyRequestRequestTypeDef](./type_defs.md#getvoiceconnectorproxyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorProxyResponseResponseTypeDef](./type_defs.md#getvoiceconnectorproxyresponseresponsetypedef).
+[GetVoiceConnectorProxyResponseTypeDef](./type_defs.md#getvoiceconnectorproxyresponsetypedef).
 
 ### get_voice_connector_streaming_configuration
 
@@ -2384,14 +2387,14 @@ Boto3 documentation:
 [Chime.Client.get_voice_connector_streaming_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_streaming_configuration)
 
 Arguments mapping described in
-[GetVoiceConnectorStreamingConfigurationRequestTypeDef](./type_defs.md#getvoiceconnectorstreamingconfigurationrequesttypedef).
+[GetVoiceConnectorStreamingConfigurationRequestRequestTypeDef](./type_defs.md#getvoiceconnectorstreamingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorStreamingConfigurationResponseResponseTypeDef](./type_defs.md#getvoiceconnectorstreamingconfigurationresponseresponsetypedef).
+[GetVoiceConnectorStreamingConfigurationResponseTypeDef](./type_defs.md#getvoiceconnectorstreamingconfigurationresponsetypedef).
 
 ### get_voice_connector_termination
 
@@ -2405,14 +2408,14 @@ Boto3 documentation:
 [Chime.Client.get_voice_connector_termination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_termination)
 
 Arguments mapping described in
-[GetVoiceConnectorTerminationRequestTypeDef](./type_defs.md#getvoiceconnectorterminationrequesttypedef).
+[GetVoiceConnectorTerminationRequestRequestTypeDef](./type_defs.md#getvoiceconnectorterminationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorTerminationResponseResponseTypeDef](./type_defs.md#getvoiceconnectorterminationresponseresponsetypedef).
+[GetVoiceConnectorTerminationResponseTypeDef](./type_defs.md#getvoiceconnectorterminationresponsetypedef).
 
 ### get_voice_connector_termination_health
 
@@ -2426,14 +2429,14 @@ Boto3 documentation:
 [Chime.Client.get_voice_connector_termination_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_termination_health)
 
 Arguments mapping described in
-[GetVoiceConnectorTerminationHealthRequestTypeDef](./type_defs.md#getvoiceconnectorterminationhealthrequesttypedef).
+[GetVoiceConnectorTerminationHealthRequestRequestTypeDef](./type_defs.md#getvoiceconnectorterminationhealthrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorTerminationHealthResponseResponseTypeDef](./type_defs.md#getvoiceconnectorterminationhealthresponseresponsetypedef).
+[GetVoiceConnectorTerminationHealthResponseTypeDef](./type_defs.md#getvoiceconnectorterminationhealthresponsetypedef).
 
 ### invite_users
 
@@ -2446,7 +2449,7 @@ Boto3 documentation:
 [Chime.Client.invite_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.invite_users)
 
 Arguments mapping described in
-[InviteUsersRequestTypeDef](./type_defs.md#inviteusersrequesttypedef).
+[InviteUsersRequestRequestTypeDef](./type_defs.md#inviteusersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2455,7 +2458,7 @@ Keyword-only arguments:
 - `UserType`: [UserTypeType](./literals.md#usertypetype)
 
 Returns
-[InviteUsersResponseResponseTypeDef](./type_defs.md#inviteusersresponseresponsetypedef).
+[InviteUsersResponseTypeDef](./type_defs.md#inviteusersresponsetypedef).
 
 ### list_accounts
 
@@ -2467,7 +2470,7 @@ Boto3 documentation:
 [Chime.Client.list_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_accounts)
 
 Arguments mapping described in
-[ListAccountsRequestTypeDef](./type_defs.md#listaccountsrequesttypedef).
+[ListAccountsRequestRequestTypeDef](./type_defs.md#listaccountsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2477,7 +2480,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAccountsResponseResponseTypeDef](./type_defs.md#listaccountsresponseresponsetypedef).
+[ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef).
 
 ### list_app_instance_admins
 
@@ -2489,7 +2492,7 @@ Boto3 documentation:
 [Chime.Client.list_app_instance_admins](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instance_admins)
 
 Arguments mapping described in
-[ListAppInstanceAdminsRequestTypeDef](./type_defs.md#listappinstanceadminsrequesttypedef).
+[ListAppInstanceAdminsRequestRequestTypeDef](./type_defs.md#listappinstanceadminsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2498,7 +2501,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAppInstanceAdminsResponseResponseTypeDef](./type_defs.md#listappinstanceadminsresponseresponsetypedef).
+[ListAppInstanceAdminsResponseTypeDef](./type_defs.md#listappinstanceadminsresponsetypedef).
 
 ### list_app_instance_users
 
@@ -2510,7 +2513,7 @@ Boto3 documentation:
 [Chime.Client.list_app_instance_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instance_users)
 
 Arguments mapping described in
-[ListAppInstanceUsersRequestTypeDef](./type_defs.md#listappinstanceusersrequesttypedef).
+[ListAppInstanceUsersRequestRequestTypeDef](./type_defs.md#listappinstanceusersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2519,7 +2522,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAppInstanceUsersResponseResponseTypeDef](./type_defs.md#listappinstanceusersresponseresponsetypedef).
+[ListAppInstanceUsersResponseTypeDef](./type_defs.md#listappinstanceusersresponsetypedef).
 
 ### list_app_instances
 
@@ -2531,7 +2534,7 @@ Boto3 documentation:
 [Chime.Client.list_app_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instances)
 
 Arguments mapping described in
-[ListAppInstancesRequestTypeDef](./type_defs.md#listappinstancesrequesttypedef).
+[ListAppInstancesRequestRequestTypeDef](./type_defs.md#listappinstancesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2539,7 +2542,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAppInstancesResponseResponseTypeDef](./type_defs.md#listappinstancesresponseresponsetypedef).
+[ListAppInstancesResponseTypeDef](./type_defs.md#listappinstancesresponsetypedef).
 
 ### list_attendee_tags
 
@@ -2551,7 +2554,7 @@ Boto3 documentation:
 [Chime.Client.list_attendee_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_attendee_tags)
 
 Arguments mapping described in
-[ListAttendeeTagsRequestTypeDef](./type_defs.md#listattendeetagsrequesttypedef).
+[ListAttendeeTagsRequestRequestTypeDef](./type_defs.md#listattendeetagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2559,7 +2562,7 @@ Keyword-only arguments:
 - `AttendeeId`: `str` *(required)*
 
 Returns
-[ListAttendeeTagsResponseResponseTypeDef](./type_defs.md#listattendeetagsresponseresponsetypedef).
+[ListAttendeeTagsResponseTypeDef](./type_defs.md#listattendeetagsresponsetypedef).
 
 ### list_attendees
 
@@ -2571,7 +2574,7 @@ Boto3 documentation:
 [Chime.Client.list_attendees](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_attendees)
 
 Arguments mapping described in
-[ListAttendeesRequestTypeDef](./type_defs.md#listattendeesrequesttypedef).
+[ListAttendeesRequestRequestTypeDef](./type_defs.md#listattendeesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2580,7 +2583,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAttendeesResponseResponseTypeDef](./type_defs.md#listattendeesresponseresponsetypedef).
+[ListAttendeesResponseTypeDef](./type_defs.md#listattendeesresponsetypedef).
 
 ### list_bots
 
@@ -2593,7 +2596,7 @@ Boto3 documentation:
 [Chime.Client.list_bots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_bots)
 
 Arguments mapping described in
-[ListBotsRequestTypeDef](./type_defs.md#listbotsrequesttypedef).
+[ListBotsRequestRequestTypeDef](./type_defs.md#listbotsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2601,8 +2604,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListBotsResponseResponseTypeDef](./type_defs.md#listbotsresponseresponsetypedef).
+Returns [ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef).
 
 ### list_channel_bans
 
@@ -2614,7 +2616,7 @@ Boto3 documentation:
 [Chime.Client.list_channel_bans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_bans)
 
 Arguments mapping described in
-[ListChannelBansRequestTypeDef](./type_defs.md#listchannelbansrequesttypedef).
+[ListChannelBansRequestRequestTypeDef](./type_defs.md#listchannelbansrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2624,7 +2626,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[ListChannelBansResponseResponseTypeDef](./type_defs.md#listchannelbansresponseresponsetypedef).
+[ListChannelBansResponseTypeDef](./type_defs.md#listchannelbansresponsetypedef).
 
 ### list_channel_memberships
 
@@ -2636,7 +2638,7 @@ Boto3 documentation:
 [Chime.Client.list_channel_memberships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_memberships)
 
 Arguments mapping described in
-[ListChannelMembershipsRequestTypeDef](./type_defs.md#listchannelmembershipsrequesttypedef).
+[ListChannelMembershipsRequestRequestTypeDef](./type_defs.md#listchannelmembershipsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2647,7 +2649,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[ListChannelMembershipsResponseResponseTypeDef](./type_defs.md#listchannelmembershipsresponseresponsetypedef).
+[ListChannelMembershipsResponseTypeDef](./type_defs.md#listchannelmembershipsresponsetypedef).
 
 ### list_channel_memberships_for_app_instance_user
 
@@ -2660,7 +2662,7 @@ Boto3 documentation:
 [Chime.Client.list_channel_memberships_for_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_memberships_for_app_instance_user)
 
 Arguments mapping described in
-[ListChannelMembershipsForAppInstanceUserRequestTypeDef](./type_defs.md#listchannelmembershipsforappinstanceuserrequesttypedef).
+[ListChannelMembershipsForAppInstanceUserRequestRequestTypeDef](./type_defs.md#listchannelmembershipsforappinstanceuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2670,7 +2672,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[ListChannelMembershipsForAppInstanceUserResponseResponseTypeDef](./type_defs.md#listchannelmembershipsforappinstanceuserresponseresponsetypedef).
+[ListChannelMembershipsForAppInstanceUserResponseTypeDef](./type_defs.md#listchannelmembershipsforappinstanceuserresponsetypedef).
 
 ### list_channel_messages
 
@@ -2682,7 +2684,7 @@ Boto3 documentation:
 [Chime.Client.list_channel_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_messages)
 
 Arguments mapping described in
-[ListChannelMessagesRequestTypeDef](./type_defs.md#listchannelmessagesrequesttypedef).
+[ListChannelMessagesRequestRequestTypeDef](./type_defs.md#listchannelmessagesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2695,7 +2697,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[ListChannelMessagesResponseResponseTypeDef](./type_defs.md#listchannelmessagesresponseresponsetypedef).
+[ListChannelMessagesResponseTypeDef](./type_defs.md#listchannelmessagesresponsetypedef).
 
 ### list_channel_moderators
 
@@ -2707,7 +2709,7 @@ Boto3 documentation:
 [Chime.Client.list_channel_moderators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_moderators)
 
 Arguments mapping described in
-[ListChannelModeratorsRequestTypeDef](./type_defs.md#listchannelmoderatorsrequesttypedef).
+[ListChannelModeratorsRequestRequestTypeDef](./type_defs.md#listchannelmoderatorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2717,7 +2719,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[ListChannelModeratorsResponseResponseTypeDef](./type_defs.md#listchannelmoderatorsresponseresponsetypedef).
+[ListChannelModeratorsResponseTypeDef](./type_defs.md#listchannelmoderatorsresponsetypedef).
 
 ### list_channels
 
@@ -2729,7 +2731,7 @@ Boto3 documentation:
 [Chime.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channels)
 
 Arguments mapping described in
-[ListChannelsRequestTypeDef](./type_defs.md#listchannelsrequesttypedef).
+[ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2740,7 +2742,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[ListChannelsResponseResponseTypeDef](./type_defs.md#listchannelsresponseresponsetypedef).
+[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
 
 ### list_channels_moderated_by_app_instance_user
 
@@ -2753,7 +2755,7 @@ Boto3 documentation:
 [Chime.Client.list_channels_moderated_by_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channels_moderated_by_app_instance_user)
 
 Arguments mapping described in
-[ListChannelsModeratedByAppInstanceUserRequestTypeDef](./type_defs.md#listchannelsmoderatedbyappinstanceuserrequesttypedef).
+[ListChannelsModeratedByAppInstanceUserRequestRequestTypeDef](./type_defs.md#listchannelsmoderatedbyappinstanceuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2763,7 +2765,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[ListChannelsModeratedByAppInstanceUserResponseResponseTypeDef](./type_defs.md#listchannelsmoderatedbyappinstanceuserresponseresponsetypedef).
+[ListChannelsModeratedByAppInstanceUserResponseTypeDef](./type_defs.md#listchannelsmoderatedbyappinstanceuserresponsetypedef).
 
 ### list_meeting_tags
 
@@ -2775,14 +2777,14 @@ Boto3 documentation:
 [Chime.Client.list_meeting_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_meeting_tags)
 
 Arguments mapping described in
-[ListMeetingTagsRequestTypeDef](./type_defs.md#listmeetingtagsrequesttypedef).
+[ListMeetingTagsRequestRequestTypeDef](./type_defs.md#listmeetingtagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `MeetingId`: `str` *(required)*
 
 Returns
-[ListMeetingTagsResponseResponseTypeDef](./type_defs.md#listmeetingtagsresponseresponsetypedef).
+[ListMeetingTagsResponseTypeDef](./type_defs.md#listmeetingtagsresponsetypedef).
 
 ### list_meetings
 
@@ -2794,7 +2796,7 @@ Boto3 documentation:
 [Chime.Client.list_meetings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_meetings)
 
 Arguments mapping described in
-[ListMeetingsRequestTypeDef](./type_defs.md#listmeetingsrequesttypedef).
+[ListMeetingsRequestRequestTypeDef](./type_defs.md#listmeetingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2802,7 +2804,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListMeetingsResponseResponseTypeDef](./type_defs.md#listmeetingsresponseresponsetypedef).
+[ListMeetingsResponseTypeDef](./type_defs.md#listmeetingsresponsetypedef).
 
 ### list_phone_number_orders
 
@@ -2814,7 +2816,7 @@ Boto3 documentation:
 [Chime.Client.list_phone_number_orders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_phone_number_orders)
 
 Arguments mapping described in
-[ListPhoneNumberOrdersRequestTypeDef](./type_defs.md#listphonenumberordersrequesttypedef).
+[ListPhoneNumberOrdersRequestRequestTypeDef](./type_defs.md#listphonenumberordersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2822,7 +2824,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPhoneNumberOrdersResponseResponseTypeDef](./type_defs.md#listphonenumberordersresponseresponsetypedef).
+[ListPhoneNumberOrdersResponseTypeDef](./type_defs.md#listphonenumberordersresponsetypedef).
 
 ### list_phone_numbers
 
@@ -2835,7 +2837,7 @@ Boto3 documentation:
 [Chime.Client.list_phone_numbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_phone_numbers)
 
 Arguments mapping described in
-[ListPhoneNumbersRequestTypeDef](./type_defs.md#listphonenumbersrequesttypedef).
+[ListPhoneNumbersRequestRequestTypeDef](./type_defs.md#listphonenumbersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2849,7 +2851,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListPhoneNumbersResponseResponseTypeDef](./type_defs.md#listphonenumbersresponseresponsetypedef).
+[ListPhoneNumbersResponseTypeDef](./type_defs.md#listphonenumbersresponsetypedef).
 
 ### list_proxy_sessions
 
@@ -2861,7 +2863,7 @@ Boto3 documentation:
 [Chime.Client.list_proxy_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_proxy_sessions)
 
 Arguments mapping described in
-[ListProxySessionsRequestTypeDef](./type_defs.md#listproxysessionsrequesttypedef).
+[ListProxySessionsRequestRequestTypeDef](./type_defs.md#listproxysessionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2871,7 +2873,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListProxySessionsResponseResponseTypeDef](./type_defs.md#listproxysessionsresponseresponsetypedef).
+[ListProxySessionsResponseTypeDef](./type_defs.md#listproxysessionsresponsetypedef).
 
 ### list_room_memberships
 
@@ -2884,7 +2886,7 @@ Boto3 documentation:
 [Chime.Client.list_room_memberships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_room_memberships)
 
 Arguments mapping described in
-[ListRoomMembershipsRequestTypeDef](./type_defs.md#listroommembershipsrequesttypedef).
+[ListRoomMembershipsRequestRequestTypeDef](./type_defs.md#listroommembershipsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2894,7 +2896,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListRoomMembershipsResponseResponseTypeDef](./type_defs.md#listroommembershipsresponseresponsetypedef).
+[ListRoomMembershipsResponseTypeDef](./type_defs.md#listroommembershipsresponsetypedef).
 
 ### list_rooms
 
@@ -2906,7 +2908,7 @@ Boto3 documentation:
 [Chime.Client.list_rooms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_rooms)
 
 Arguments mapping described in
-[ListRoomsRequestTypeDef](./type_defs.md#listroomsrequesttypedef).
+[ListRoomsRequestRequestTypeDef](./type_defs.md#listroomsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2915,8 +2917,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListRoomsResponseResponseTypeDef](./type_defs.md#listroomsresponseresponsetypedef).
+Returns [ListRoomsResponseTypeDef](./type_defs.md#listroomsresponsetypedef).
 
 ### list_sip_media_applications
 
@@ -2929,7 +2930,7 @@ Boto3 documentation:
 [Chime.Client.list_sip_media_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_sip_media_applications)
 
 Arguments mapping described in
-[ListSipMediaApplicationsRequestTypeDef](./type_defs.md#listsipmediaapplicationsrequesttypedef).
+[ListSipMediaApplicationsRequestRequestTypeDef](./type_defs.md#listsipmediaapplicationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2937,7 +2938,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSipMediaApplicationsResponseResponseTypeDef](./type_defs.md#listsipmediaapplicationsresponseresponsetypedef).
+[ListSipMediaApplicationsResponseTypeDef](./type_defs.md#listsipmediaapplicationsresponsetypedef).
 
 ### list_sip_rules
 
@@ -2949,7 +2950,7 @@ Boto3 documentation:
 [Chime.Client.list_sip_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_sip_rules)
 
 Arguments mapping described in
-[ListSipRulesRequestTypeDef](./type_defs.md#listsiprulesrequesttypedef).
+[ListSipRulesRequestRequestTypeDef](./type_defs.md#listsiprulesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2958,7 +2959,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSipRulesResponseResponseTypeDef](./type_defs.md#listsiprulesresponseresponsetypedef).
+[ListSipRulesResponseTypeDef](./type_defs.md#listsiprulesresponsetypedef).
 
 ### list_supported_phone_number_countries
 
@@ -2971,7 +2972,7 @@ Boto3 documentation:
 [Chime.Client.list_supported_phone_number_countries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_supported_phone_number_countries)
 
 Arguments mapping described in
-[ListSupportedPhoneNumberCountriesRequestTypeDef](./type_defs.md#listsupportedphonenumbercountriesrequesttypedef).
+[ListSupportedPhoneNumberCountriesRequestRequestTypeDef](./type_defs.md#listsupportedphonenumbercountriesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2980,7 +2981,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[ListSupportedPhoneNumberCountriesResponseResponseTypeDef](./type_defs.md#listsupportedphonenumbercountriesresponseresponsetypedef).
+[ListSupportedPhoneNumberCountriesResponseTypeDef](./type_defs.md#listsupportedphonenumbercountriesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -2992,14 +2993,14 @@ Boto3 documentation:
 [Chime.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_users
 
@@ -3011,7 +3012,7 @@ Boto3 documentation:
 [Chime.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_users)
 
 Arguments mapping described in
-[ListUsersRequestTypeDef](./type_defs.md#listusersrequesttypedef).
+[ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3021,8 +3022,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListUsersResponseResponseTypeDef](./type_defs.md#listusersresponseresponsetypedef).
+Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 
 ### list_voice_connector_groups
 
@@ -3036,7 +3036,7 @@ Boto3 documentation:
 [Chime.Client.list_voice_connector_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connector_groups)
 
 Arguments mapping described in
-[ListVoiceConnectorGroupsRequestTypeDef](./type_defs.md#listvoiceconnectorgroupsrequesttypedef).
+[ListVoiceConnectorGroupsRequestRequestTypeDef](./type_defs.md#listvoiceconnectorgroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3044,7 +3044,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListVoiceConnectorGroupsResponseResponseTypeDef](./type_defs.md#listvoiceconnectorgroupsresponseresponsetypedef).
+[ListVoiceConnectorGroupsResponseTypeDef](./type_defs.md#listvoiceconnectorgroupsresponsetypedef).
 
 ### list_voice_connector_termination_credentials
 
@@ -3057,14 +3057,14 @@ Boto3 documentation:
 [Chime.Client.list_voice_connector_termination_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connector_termination_credentials)
 
 Arguments mapping described in
-[ListVoiceConnectorTerminationCredentialsRequestTypeDef](./type_defs.md#listvoiceconnectorterminationcredentialsrequesttypedef).
+[ListVoiceConnectorTerminationCredentialsRequestRequestTypeDef](./type_defs.md#listvoiceconnectorterminationcredentialsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[ListVoiceConnectorTerminationCredentialsResponseResponseTypeDef](./type_defs.md#listvoiceconnectorterminationcredentialsresponseresponsetypedef).
+[ListVoiceConnectorTerminationCredentialsResponseTypeDef](./type_defs.md#listvoiceconnectorterminationcredentialsresponsetypedef).
 
 ### list_voice_connectors
 
@@ -3076,7 +3076,7 @@ Boto3 documentation:
 [Chime.Client.list_voice_connectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connectors)
 
 Arguments mapping described in
-[ListVoiceConnectorsRequestTypeDef](./type_defs.md#listvoiceconnectorsrequesttypedef).
+[ListVoiceConnectorsRequestRequestTypeDef](./type_defs.md#listvoiceconnectorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3084,7 +3084,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListVoiceConnectorsResponseResponseTypeDef](./type_defs.md#listvoiceconnectorsresponseresponsetypedef).
+[ListVoiceConnectorsResponseTypeDef](./type_defs.md#listvoiceconnectorsresponsetypedef).
 
 ### logout_user
 
@@ -3097,7 +3097,7 @@ Boto3 documentation:
 [Chime.Client.logout_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.logout_user)
 
 Arguments mapping described in
-[LogoutUserRequestTypeDef](./type_defs.md#logoutuserrequesttypedef).
+[LogoutUserRequestRequestTypeDef](./type_defs.md#logoutuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3117,7 +3117,7 @@ Boto3 documentation:
 [Chime.Client.put_app_instance_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_app_instance_retention_settings)
 
 Arguments mapping described in
-[PutAppInstanceRetentionSettingsRequestTypeDef](./type_defs.md#putappinstanceretentionsettingsrequesttypedef).
+[PutAppInstanceRetentionSettingsRequestRequestTypeDef](./type_defs.md#putappinstanceretentionsettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3127,7 +3127,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutAppInstanceRetentionSettingsResponseResponseTypeDef](./type_defs.md#putappinstanceretentionsettingsresponseresponsetypedef).
+[PutAppInstanceRetentionSettingsResponseTypeDef](./type_defs.md#putappinstanceretentionsettingsresponsetypedef).
 
 ### put_app_instance_streaming_configurations
 
@@ -3140,7 +3140,7 @@ Boto3 documentation:
 [Chime.Client.put_app_instance_streaming_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_app_instance_streaming_configurations)
 
 Arguments mapping described in
-[PutAppInstanceStreamingConfigurationsRequestTypeDef](./type_defs.md#putappinstancestreamingconfigurationsrequesttypedef).
+[PutAppInstanceStreamingConfigurationsRequestRequestTypeDef](./type_defs.md#putappinstancestreamingconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3150,7 +3150,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutAppInstanceStreamingConfigurationsResponseResponseTypeDef](./type_defs.md#putappinstancestreamingconfigurationsresponseresponsetypedef).
+[PutAppInstanceStreamingConfigurationsResponseTypeDef](./type_defs.md#putappinstancestreamingconfigurationsresponsetypedef).
 
 ### put_events_configuration
 
@@ -3163,7 +3163,7 @@ Boto3 documentation:
 [Chime.Client.put_events_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_events_configuration)
 
 Arguments mapping described in
-[PutEventsConfigurationRequestTypeDef](./type_defs.md#puteventsconfigurationrequesttypedef).
+[PutEventsConfigurationRequestRequestTypeDef](./type_defs.md#puteventsconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3173,7 +3173,7 @@ Keyword-only arguments:
 - `LambdaFunctionArn`: `str`
 
 Returns
-[PutEventsConfigurationResponseResponseTypeDef](./type_defs.md#puteventsconfigurationresponseresponsetypedef).
+[PutEventsConfigurationResponseTypeDef](./type_defs.md#puteventsconfigurationresponsetypedef).
 
 ### put_retention_settings
 
@@ -3185,7 +3185,7 @@ Boto3 documentation:
 [Chime.Client.put_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_retention_settings)
 
 Arguments mapping described in
-[PutRetentionSettingsRequestTypeDef](./type_defs.md#putretentionsettingsrequesttypedef).
+[PutRetentionSettingsRequestRequestTypeDef](./type_defs.md#putretentionsettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3195,7 +3195,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutRetentionSettingsResponseResponseTypeDef](./type_defs.md#putretentionsettingsresponseresponsetypedef).
+[PutRetentionSettingsResponseTypeDef](./type_defs.md#putretentionsettingsresponsetypedef).
 
 ### put_sip_media_application_logging_configuration
 
@@ -3208,7 +3208,7 @@ Boto3 documentation:
 [Chime.Client.put_sip_media_application_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_sip_media_application_logging_configuration)
 
 Arguments mapping described in
-[PutSipMediaApplicationLoggingConfigurationRequestTypeDef](./type_defs.md#putsipmediaapplicationloggingconfigurationrequesttypedef).
+[PutSipMediaApplicationLoggingConfigurationRequestRequestTypeDef](./type_defs.md#putsipmediaapplicationloggingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3217,7 +3217,7 @@ Keyword-only arguments:
   [SipMediaApplicationLoggingConfigurationTypeDef](./type_defs.md#sipmediaapplicationloggingconfigurationtypedef)
 
 Returns
-[PutSipMediaApplicationLoggingConfigurationResponseResponseTypeDef](./type_defs.md#putsipmediaapplicationloggingconfigurationresponseresponsetypedef).
+[PutSipMediaApplicationLoggingConfigurationResponseTypeDef](./type_defs.md#putsipmediaapplicationloggingconfigurationresponsetypedef).
 
 ### put_voice_connector_emergency_calling_configuration
 
@@ -3232,7 +3232,7 @@ Boto3 documentation:
 [Chime.Client.put_voice_connector_emergency_calling_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_emergency_calling_configuration)
 
 Arguments mapping described in
-[PutVoiceConnectorEmergencyCallingConfigurationRequestTypeDef](./type_defs.md#putvoiceconnectoremergencycallingconfigurationrequesttypedef).
+[PutVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef](./type_defs.md#putvoiceconnectoremergencycallingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3242,7 +3242,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutVoiceConnectorEmergencyCallingConfigurationResponseResponseTypeDef](./type_defs.md#putvoiceconnectoremergencycallingconfigurationresponseresponsetypedef).
+[PutVoiceConnectorEmergencyCallingConfigurationResponseTypeDef](./type_defs.md#putvoiceconnectoremergencycallingconfigurationresponsetypedef).
 
 ### put_voice_connector_logging_configuration
 
@@ -3255,7 +3255,7 @@ Boto3 documentation:
 [Chime.Client.put_voice_connector_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_logging_configuration)
 
 Arguments mapping described in
-[PutVoiceConnectorLoggingConfigurationRequestTypeDef](./type_defs.md#putvoiceconnectorloggingconfigurationrequesttypedef).
+[PutVoiceConnectorLoggingConfigurationRequestRequestTypeDef](./type_defs.md#putvoiceconnectorloggingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3265,7 +3265,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutVoiceConnectorLoggingConfigurationResponseResponseTypeDef](./type_defs.md#putvoiceconnectorloggingconfigurationresponseresponsetypedef).
+[PutVoiceConnectorLoggingConfigurationResponseTypeDef](./type_defs.md#putvoiceconnectorloggingconfigurationresponsetypedef).
 
 ### put_voice_connector_origination
 
@@ -3278,7 +3278,7 @@ Boto3 documentation:
 [Chime.Client.put_voice_connector_origination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_origination)
 
 Arguments mapping described in
-[PutVoiceConnectorOriginationRequestTypeDef](./type_defs.md#putvoiceconnectororiginationrequesttypedef).
+[PutVoiceConnectorOriginationRequestRequestTypeDef](./type_defs.md#putvoiceconnectororiginationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3287,7 +3287,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutVoiceConnectorOriginationResponseResponseTypeDef](./type_defs.md#putvoiceconnectororiginationresponseresponsetypedef).
+[PutVoiceConnectorOriginationResponseTypeDef](./type_defs.md#putvoiceconnectororiginationresponsetypedef).
 
 ### put_voice_connector_proxy
 
@@ -3300,7 +3300,7 @@ Boto3 documentation:
 [Chime.Client.put_voice_connector_proxy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_proxy)
 
 Arguments mapping described in
-[PutVoiceConnectorProxyRequestTypeDef](./type_defs.md#putvoiceconnectorproxyrequesttypedef).
+[PutVoiceConnectorProxyRequestRequestTypeDef](./type_defs.md#putvoiceconnectorproxyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3311,7 +3311,7 @@ Keyword-only arguments:
 - `Disabled`: `bool`
 
 Returns
-[PutVoiceConnectorProxyResponseResponseTypeDef](./type_defs.md#putvoiceconnectorproxyresponseresponsetypedef).
+[PutVoiceConnectorProxyResponseTypeDef](./type_defs.md#putvoiceconnectorproxyresponsetypedef).
 
 ### put_voice_connector_streaming_configuration
 
@@ -3324,7 +3324,7 @@ Boto3 documentation:
 [Chime.Client.put_voice_connector_streaming_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_streaming_configuration)
 
 Arguments mapping described in
-[PutVoiceConnectorStreamingConfigurationRequestTypeDef](./type_defs.md#putvoiceconnectorstreamingconfigurationrequesttypedef).
+[PutVoiceConnectorStreamingConfigurationRequestRequestTypeDef](./type_defs.md#putvoiceconnectorstreamingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3334,7 +3334,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutVoiceConnectorStreamingConfigurationResponseResponseTypeDef](./type_defs.md#putvoiceconnectorstreamingconfigurationresponseresponsetypedef).
+[PutVoiceConnectorStreamingConfigurationResponseTypeDef](./type_defs.md#putvoiceconnectorstreamingconfigurationresponsetypedef).
 
 ### put_voice_connector_termination
 
@@ -3347,7 +3347,7 @@ Boto3 documentation:
 [Chime.Client.put_voice_connector_termination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_termination)
 
 Arguments mapping described in
-[PutVoiceConnectorTerminationRequestTypeDef](./type_defs.md#putvoiceconnectorterminationrequesttypedef).
+[PutVoiceConnectorTerminationRequestRequestTypeDef](./type_defs.md#putvoiceconnectorterminationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3356,7 +3356,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutVoiceConnectorTerminationResponseResponseTypeDef](./type_defs.md#putvoiceconnectorterminationresponseresponsetypedef).
+[PutVoiceConnectorTerminationResponseTypeDef](./type_defs.md#putvoiceconnectorterminationresponsetypedef).
 
 ### put_voice_connector_termination_credentials
 
@@ -3370,7 +3370,7 @@ Boto3 documentation:
 [Chime.Client.put_voice_connector_termination_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_termination_credentials)
 
 Arguments mapping described in
-[PutVoiceConnectorTerminationCredentialsRequestTypeDef](./type_defs.md#putvoiceconnectorterminationcredentialsrequesttypedef).
+[PutVoiceConnectorTerminationCredentialsRequestRequestTypeDef](./type_defs.md#putvoiceconnectorterminationcredentialsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3388,7 +3388,7 @@ Boto3 documentation:
 [Chime.Client.redact_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_channel_message)
 
 Arguments mapping described in
-[RedactChannelMessageRequestTypeDef](./type_defs.md#redactchannelmessagerequesttypedef).
+[RedactChannelMessageRequestRequestTypeDef](./type_defs.md#redactchannelmessagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3397,7 +3397,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[RedactChannelMessageResponseResponseTypeDef](./type_defs.md#redactchannelmessageresponseresponsetypedef).
+[RedactChannelMessageResponseTypeDef](./type_defs.md#redactchannelmessageresponsetypedef).
 
 ### redact_conversation_message
 
@@ -3410,7 +3410,7 @@ Boto3 documentation:
 [Chime.Client.redact_conversation_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_conversation_message)
 
 Arguments mapping described in
-[RedactConversationMessageRequestTypeDef](./type_defs.md#redactconversationmessagerequesttypedef).
+[RedactConversationMessageRequestRequestTypeDef](./type_defs.md#redactconversationmessagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3430,7 +3430,7 @@ Boto3 documentation:
 [Chime.Client.redact_room_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_room_message)
 
 Arguments mapping described in
-[RedactRoomMessageRequestTypeDef](./type_defs.md#redactroommessagerequesttypedef).
+[RedactRoomMessageRequestRequestTypeDef](./type_defs.md#redactroommessagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3450,7 +3450,7 @@ Boto3 documentation:
 [Chime.Client.regenerate_security_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.regenerate_security_token)
 
 Arguments mapping described in
-[RegenerateSecurityTokenRequestTypeDef](./type_defs.md#regeneratesecuritytokenrequesttypedef).
+[RegenerateSecurityTokenRequestRequestTypeDef](./type_defs.md#regeneratesecuritytokenrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3458,7 +3458,7 @@ Keyword-only arguments:
 - `BotId`: `str` *(required)*
 
 Returns
-[RegenerateSecurityTokenResponseResponseTypeDef](./type_defs.md#regeneratesecuritytokenresponseresponsetypedef).
+[RegenerateSecurityTokenResponseTypeDef](./type_defs.md#regeneratesecuritytokenresponsetypedef).
 
 ### reset_personal_pin
 
@@ -3471,7 +3471,7 @@ Boto3 documentation:
 [Chime.Client.reset_personal_pin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.reset_personal_pin)
 
 Arguments mapping described in
-[ResetPersonalPINRequestTypeDef](./type_defs.md#resetpersonalpinrequesttypedef).
+[ResetPersonalPINRequestRequestTypeDef](./type_defs.md#resetpersonalpinrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3479,7 +3479,7 @@ Keyword-only arguments:
 - `UserId`: `str` *(required)*
 
 Returns
-[ResetPersonalPINResponseResponseTypeDef](./type_defs.md#resetpersonalpinresponseresponsetypedef).
+[ResetPersonalPINResponseTypeDef](./type_defs.md#resetpersonalpinresponsetypedef).
 
 ### restore_phone_number
 
@@ -3492,14 +3492,14 @@ Boto3 documentation:
 [Chime.Client.restore_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.restore_phone_number)
 
 Arguments mapping described in
-[RestorePhoneNumberRequestTypeDef](./type_defs.md#restorephonenumberrequesttypedef).
+[RestorePhoneNumberRequestRequestTypeDef](./type_defs.md#restorephonenumberrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `PhoneNumberId`: `str` *(required)*
 
 Returns
-[RestorePhoneNumberResponseResponseTypeDef](./type_defs.md#restorephonenumberresponseresponsetypedef).
+[RestorePhoneNumberResponseTypeDef](./type_defs.md#restorephonenumberresponsetypedef).
 
 ### search_available_phone_numbers
 
@@ -3512,7 +3512,7 @@ Boto3 documentation:
 [Chime.Client.search_available_phone_numbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.search_available_phone_numbers)
 
 Arguments mapping described in
-[SearchAvailablePhoneNumbersRequestTypeDef](./type_defs.md#searchavailablephonenumbersrequesttypedef).
+[SearchAvailablePhoneNumbersRequestRequestTypeDef](./type_defs.md#searchavailablephonenumbersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3526,7 +3526,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[SearchAvailablePhoneNumbersResponseResponseTypeDef](./type_defs.md#searchavailablephonenumbersresponseresponsetypedef).
+[SearchAvailablePhoneNumbersResponseTypeDef](./type_defs.md#searchavailablephonenumbersresponsetypedef).
 
 ### send_channel_message
 
@@ -3538,7 +3538,7 @@ Boto3 documentation:
 [Chime.Client.send_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.send_channel_message)
 
 Arguments mapping described in
-[SendChannelMessageRequestTypeDef](./type_defs.md#sendchannelmessagerequesttypedef).
+[SendChannelMessageRequestRequestTypeDef](./type_defs.md#sendchannelmessagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3554,7 +3554,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[SendChannelMessageResponseResponseTypeDef](./type_defs.md#sendchannelmessageresponseresponsetypedef).
+[SendChannelMessageResponseTypeDef](./type_defs.md#sendchannelmessageresponsetypedef).
 
 ### tag_attendee
 
@@ -3566,7 +3566,7 @@ Boto3 documentation:
 [Chime.Client.tag_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_attendee)
 
 Arguments mapping described in
-[TagAttendeeRequestTypeDef](./type_defs.md#tagattendeerequesttypedef).
+[TagAttendeeRequestRequestTypeDef](./type_defs.md#tagattendeerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3584,7 +3584,7 @@ Boto3 documentation:
 [Chime.Client.tag_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_meeting)
 
 Arguments mapping described in
-[TagMeetingRequestTypeDef](./type_defs.md#tagmeetingrequesttypedef).
+[TagMeetingRequestRequestTypeDef](./type_defs.md#tagmeetingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3601,7 +3601,7 @@ Boto3 documentation:
 [Chime.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3618,7 +3618,7 @@ Boto3 documentation:
 [Chime.Client.untag_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_attendee)
 
 Arguments mapping described in
-[UntagAttendeeRequestTypeDef](./type_defs.md#untagattendeerequesttypedef).
+[UntagAttendeeRequestRequestTypeDef](./type_defs.md#untagattendeerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3636,7 +3636,7 @@ Boto3 documentation:
 [Chime.Client.untag_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_meeting)
 
 Arguments mapping described in
-[UntagMeetingRequestTypeDef](./type_defs.md#untagmeetingrequesttypedef).
+[UntagMeetingRequestRequestTypeDef](./type_defs.md#untagmeetingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3653,7 +3653,7 @@ Boto3 documentation:
 [Chime.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3670,7 +3670,7 @@ Boto3 documentation:
 [Chime.Client.update_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_account)
 
 Arguments mapping described in
-[UpdateAccountRequestTypeDef](./type_defs.md#updateaccountrequesttypedef).
+[UpdateAccountRequestRequestTypeDef](./type_defs.md#updateaccountrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3679,7 +3679,7 @@ Keyword-only arguments:
 - `DefaultLicense`: [LicenseType](./literals.md#licensetype)
 
 Returns
-[UpdateAccountResponseResponseTypeDef](./type_defs.md#updateaccountresponseresponsetypedef).
+[UpdateAccountResponseTypeDef](./type_defs.md#updateaccountresponsetypedef).
 
 ### update_account_settings
 
@@ -3691,7 +3691,7 @@ Boto3 documentation:
 [Chime.Client.update_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_account_settings)
 
 Arguments mapping described in
-[UpdateAccountSettingsRequestTypeDef](./type_defs.md#updateaccountsettingsrequesttypedef).
+[UpdateAccountSettingsRequestRequestTypeDef](./type_defs.md#updateaccountsettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3711,7 +3711,7 @@ Boto3 documentation:
 [Chime.Client.update_app_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_app_instance)
 
 Arguments mapping described in
-[UpdateAppInstanceRequestTypeDef](./type_defs.md#updateappinstancerequesttypedef).
+[UpdateAppInstanceRequestRequestTypeDef](./type_defs.md#updateappinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3720,7 +3720,7 @@ Keyword-only arguments:
 - `Metadata`: `str`
 
 Returns
-[UpdateAppInstanceResponseResponseTypeDef](./type_defs.md#updateappinstanceresponseresponsetypedef).
+[UpdateAppInstanceResponseTypeDef](./type_defs.md#updateappinstanceresponsetypedef).
 
 ### update_app_instance_user
 
@@ -3732,7 +3732,7 @@ Boto3 documentation:
 [Chime.Client.update_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_app_instance_user)
 
 Arguments mapping described in
-[UpdateAppInstanceUserRequestTypeDef](./type_defs.md#updateappinstanceuserrequesttypedef).
+[UpdateAppInstanceUserRequestRequestTypeDef](./type_defs.md#updateappinstanceuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3741,7 +3741,7 @@ Keyword-only arguments:
 - `Metadata`: `str`
 
 Returns
-[UpdateAppInstanceUserResponseResponseTypeDef](./type_defs.md#updateappinstanceuserresponseresponsetypedef).
+[UpdateAppInstanceUserResponseTypeDef](./type_defs.md#updateappinstanceuserresponsetypedef).
 
 ### update_bot
 
@@ -3754,7 +3754,7 @@ Boto3 documentation:
 [Chime.Client.update_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_bot)
 
 Arguments mapping described in
-[UpdateBotRequestTypeDef](./type_defs.md#updatebotrequesttypedef).
+[UpdateBotRequestRequestTypeDef](./type_defs.md#updatebotrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3762,8 +3762,7 @@ Keyword-only arguments:
 - `BotId`: `str` *(required)*
 - `Disabled`: `bool`
 
-Returns
-[UpdateBotResponseResponseTypeDef](./type_defs.md#updatebotresponseresponsetypedef).
+Returns [UpdateBotResponseTypeDef](./type_defs.md#updatebotresponsetypedef).
 
 ### update_channel
 
@@ -3775,7 +3774,7 @@ Boto3 documentation:
 [Chime.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel)
 
 Arguments mapping described in
-[UpdateChannelRequestTypeDef](./type_defs.md#updatechannelrequesttypedef).
+[UpdateChannelRequestRequestTypeDef](./type_defs.md#updatechannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3786,7 +3785,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[UpdateChannelResponseResponseTypeDef](./type_defs.md#updatechannelresponseresponsetypedef).
+[UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
 
 ### update_channel_message
 
@@ -3798,7 +3797,7 @@ Boto3 documentation:
 [Chime.Client.update_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel_message)
 
 Arguments mapping described in
-[UpdateChannelMessageRequestTypeDef](./type_defs.md#updatechannelmessagerequesttypedef).
+[UpdateChannelMessageRequestRequestTypeDef](./type_defs.md#updatechannelmessagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3809,7 +3808,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[UpdateChannelMessageResponseResponseTypeDef](./type_defs.md#updatechannelmessageresponseresponsetypedef).
+[UpdateChannelMessageResponseTypeDef](./type_defs.md#updatechannelmessageresponsetypedef).
 
 ### update_channel_read_marker
 
@@ -3821,7 +3820,7 @@ Boto3 documentation:
 [Chime.Client.update_channel_read_marker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel_read_marker)
 
 Arguments mapping described in
-[UpdateChannelReadMarkerRequestTypeDef](./type_defs.md#updatechannelreadmarkerrequesttypedef).
+[UpdateChannelReadMarkerRequestRequestTypeDef](./type_defs.md#updatechannelreadmarkerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3829,7 +3828,7 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[UpdateChannelReadMarkerResponseResponseTypeDef](./type_defs.md#updatechannelreadmarkerresponseresponsetypedef).
+[UpdateChannelReadMarkerResponseTypeDef](./type_defs.md#updatechannelreadmarkerresponsetypedef).
 
 ### update_global_settings
 
@@ -3842,7 +3841,7 @@ Boto3 documentation:
 [Chime.Client.update_global_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_global_settings)
 
 Arguments mapping described in
-[UpdateGlobalSettingsRequestTypeDef](./type_defs.md#updateglobalsettingsrequesttypedef).
+[UpdateGlobalSettingsRequestRequestTypeDef](./type_defs.md#updateglobalsettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3864,7 +3863,7 @@ Boto3 documentation:
 [Chime.Client.update_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_phone_number)
 
 Arguments mapping described in
-[UpdatePhoneNumberRequestTypeDef](./type_defs.md#updatephonenumberrequesttypedef).
+[UpdatePhoneNumberRequestRequestTypeDef](./type_defs.md#updatephonenumberrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3874,7 +3873,7 @@ Keyword-only arguments:
 - `CallingName`: `str`
 
 Returns
-[UpdatePhoneNumberResponseResponseTypeDef](./type_defs.md#updatephonenumberresponseresponsetypedef).
+[UpdatePhoneNumberResponseTypeDef](./type_defs.md#updatephonenumberresponsetypedef).
 
 ### update_phone_number_settings
 
@@ -3888,7 +3887,7 @@ Boto3 documentation:
 [Chime.Client.update_phone_number_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_phone_number_settings)
 
 Arguments mapping described in
-[UpdatePhoneNumberSettingsRequestTypeDef](./type_defs.md#updatephonenumbersettingsrequesttypedef).
+[UpdatePhoneNumberSettingsRequestRequestTypeDef](./type_defs.md#updatephonenumbersettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3904,7 +3903,7 @@ Boto3 documentation:
 [Chime.Client.update_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_proxy_session)
 
 Arguments mapping described in
-[UpdateProxySessionRequestTypeDef](./type_defs.md#updateproxysessionrequesttypedef).
+[UpdateProxySessionRequestRequestTypeDef](./type_defs.md#updateproxysessionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3915,7 +3914,7 @@ Keyword-only arguments:
 - `ExpiryMinutes`: `int`
 
 Returns
-[UpdateProxySessionResponseResponseTypeDef](./type_defs.md#updateproxysessionresponseresponsetypedef).
+[UpdateProxySessionResponseTypeDef](./type_defs.md#updateproxysessionresponsetypedef).
 
 ### update_room
 
@@ -3928,7 +3927,7 @@ Boto3 documentation:
 [Chime.Client.update_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_room)
 
 Arguments mapping described in
-[UpdateRoomRequestTypeDef](./type_defs.md#updateroomrequesttypedef).
+[UpdateRoomRequestRequestTypeDef](./type_defs.md#updateroomrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3936,8 +3935,7 @@ Keyword-only arguments:
 - `RoomId`: `str` *(required)*
 - `Name`: `str`
 
-Returns
-[UpdateRoomResponseResponseTypeDef](./type_defs.md#updateroomresponseresponsetypedef).
+Returns [UpdateRoomResponseTypeDef](./type_defs.md#updateroomresponsetypedef).
 
 ### update_room_membership
 
@@ -3950,7 +3948,7 @@ Boto3 documentation:
 [Chime.Client.update_room_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_room_membership)
 
 Arguments mapping described in
-[UpdateRoomMembershipRequestTypeDef](./type_defs.md#updateroommembershiprequesttypedef).
+[UpdateRoomMembershipRequestRequestTypeDef](./type_defs.md#updateroommembershiprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3960,7 +3958,7 @@ Keyword-only arguments:
 - `Role`: [RoomMembershipRoleType](./literals.md#roommembershiproletype)
 
 Returns
-[UpdateRoomMembershipResponseResponseTypeDef](./type_defs.md#updateroommembershipresponseresponsetypedef).
+[UpdateRoomMembershipResponseTypeDef](./type_defs.md#updateroommembershipresponsetypedef).
 
 ### update_sip_media_application
 
@@ -3973,7 +3971,7 @@ Boto3 documentation:
 [Chime.Client.update_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_sip_media_application)
 
 Arguments mapping described in
-[UpdateSipMediaApplicationRequestTypeDef](./type_defs.md#updatesipmediaapplicationrequesttypedef).
+[UpdateSipMediaApplicationRequestRequestTypeDef](./type_defs.md#updatesipmediaapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3983,7 +3981,7 @@ Keyword-only arguments:
   `List`\[[SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef)\]
 
 Returns
-[UpdateSipMediaApplicationResponseResponseTypeDef](./type_defs.md#updatesipmediaapplicationresponseresponsetypedef).
+[UpdateSipMediaApplicationResponseTypeDef](./type_defs.md#updatesipmediaapplicationresponsetypedef).
 
 ### update_sip_media_application_call
 
@@ -3997,7 +3995,7 @@ Boto3 documentation:
 [Chime.Client.update_sip_media_application_call](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_sip_media_application_call)
 
 Arguments mapping described in
-[UpdateSipMediaApplicationCallRequestTypeDef](./type_defs.md#updatesipmediaapplicationcallrequesttypedef).
+[UpdateSipMediaApplicationCallRequestRequestTypeDef](./type_defs.md#updatesipmediaapplicationcallrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4006,7 +4004,7 @@ Keyword-only arguments:
 - `Arguments`: `Dict`\[`str`, `str`\] *(required)*
 
 Returns
-[UpdateSipMediaApplicationCallResponseResponseTypeDef](./type_defs.md#updatesipmediaapplicationcallresponseresponsetypedef).
+[UpdateSipMediaApplicationCallResponseTypeDef](./type_defs.md#updatesipmediaapplicationcallresponsetypedef).
 
 ### update_sip_rule
 
@@ -4018,7 +4016,7 @@ Boto3 documentation:
 [Chime.Client.update_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_sip_rule)
 
 Arguments mapping described in
-[UpdateSipRuleRequestTypeDef](./type_defs.md#updatesiprulerequesttypedef).
+[UpdateSipRuleRequestRequestTypeDef](./type_defs.md#updatesiprulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4029,7 +4027,7 @@ Keyword-only arguments:
   `List`\[[SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef)\]
 
 Returns
-[UpdateSipRuleResponseResponseTypeDef](./type_defs.md#updatesipruleresponseresponsetypedef).
+[UpdateSipRuleResponseTypeDef](./type_defs.md#updatesipruleresponsetypedef).
 
 ### update_user
 
@@ -4041,7 +4039,7 @@ Boto3 documentation:
 [Chime.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_user)
 
 Arguments mapping described in
-[UpdateUserRequestTypeDef](./type_defs.md#updateuserrequesttypedef).
+[UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4052,8 +4050,7 @@ Keyword-only arguments:
 - `AlexaForBusinessMetadata`:
   [AlexaForBusinessMetadataTypeDef](./type_defs.md#alexaforbusinessmetadatatypedef)
 
-Returns
-[UpdateUserResponseResponseTypeDef](./type_defs.md#updateuserresponseresponsetypedef).
+Returns [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef).
 
 ### update_user_settings
 
@@ -4065,7 +4062,7 @@ Boto3 documentation:
 [Chime.Client.update_user_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_user_settings)
 
 Arguments mapping described in
-[UpdateUserSettingsRequestTypeDef](./type_defs.md#updateusersettingsrequesttypedef).
+[UpdateUserSettingsRequestRequestTypeDef](./type_defs.md#updateusersettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4084,7 +4081,7 @@ Boto3 documentation:
 [Chime.Client.update_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_voice_connector)
 
 Arguments mapping described in
-[UpdateVoiceConnectorRequestTypeDef](./type_defs.md#updatevoiceconnectorrequesttypedef).
+[UpdateVoiceConnectorRequestRequestTypeDef](./type_defs.md#updatevoiceconnectorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4093,7 +4090,7 @@ Keyword-only arguments:
 - `RequireEncryption`: `bool` *(required)*
 
 Returns
-[UpdateVoiceConnectorResponseResponseTypeDef](./type_defs.md#updatevoiceconnectorresponseresponsetypedef).
+[UpdateVoiceConnectorResponseTypeDef](./type_defs.md#updatevoiceconnectorresponsetypedef).
 
 ### update_voice_connector_group
 
@@ -4107,7 +4104,7 @@ Boto3 documentation:
 [Chime.Client.update_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_voice_connector_group)
 
 Arguments mapping described in
-[UpdateVoiceConnectorGroupRequestTypeDef](./type_defs.md#updatevoiceconnectorgrouprequesttypedef).
+[UpdateVoiceConnectorGroupRequestRequestTypeDef](./type_defs.md#updatevoiceconnectorgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4118,7 +4115,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateVoiceConnectorGroupResponseResponseTypeDef](./type_defs.md#updatevoiceconnectorgroupresponseresponsetypedef).
+[UpdateVoiceConnectorGroupResponseTypeDef](./type_defs.md#updatevoiceconnectorgroupresponsetypedef).
 
 ### get_paginator
 

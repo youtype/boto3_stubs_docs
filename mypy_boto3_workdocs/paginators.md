@@ -49,7 +49,7 @@ Arguments for `DescribeActivitiesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeActivitiesPaginator.paginate` returns
-`Iterator`\[[DescribeActivitiesResponseResponseTypeDef](./type_defs.md#describeactivitiesresponseresponsetypedef)\].
+`Iterator`\[[DescribeActivitiesResponseTypeDef](./type_defs.md#describeactivitiesresponsetypedef)\].
 
 ## DescribeCommentsPaginator
 
@@ -77,7 +77,7 @@ Arguments for `DescribeCommentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCommentsPaginator.paginate` returns
-`Iterator`\[[DescribeCommentsResponseResponseTypeDef](./type_defs.md#describecommentsresponseresponsetypedef)\].
+`Iterator`\[[DescribeCommentsResponseTypeDef](./type_defs.md#describecommentsresponsetypedef)\].
 
 ## DescribeDocumentVersionsPaginator
 
@@ -106,7 +106,7 @@ Arguments for `DescribeDocumentVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDocumentVersionsPaginator.paginate` returns
-`Iterator`\[[DescribeDocumentVersionsResponseResponseTypeDef](./type_defs.md#describedocumentversionsresponseresponsetypedef)\].
+`Iterator`\[[DescribeDocumentVersionsResponseTypeDef](./type_defs.md#describedocumentversionsresponsetypedef)\].
 
 ## DescribeFolderContentsPaginator
 
@@ -137,7 +137,7 @@ Arguments for `DescribeFolderContentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFolderContentsPaginator.paginate` returns
-`Iterator`\[[DescribeFolderContentsResponseResponseTypeDef](./type_defs.md#describefoldercontentsresponseresponsetypedef)\].
+`Iterator`\[[DescribeFolderContentsResponseTypeDef](./type_defs.md#describefoldercontentsresponsetypedef)\].
 
 ## DescribeGroupsPaginator
 
@@ -165,7 +165,7 @@ Arguments for `DescribeGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeGroupsResponseResponseTypeDef](./type_defs.md#describegroupsresponseresponsetypedef)\].
+`Iterator`\[[DescribeGroupsResponseTypeDef](./type_defs.md#describegroupsresponsetypedef)\].
 
 ## DescribeNotificationSubscriptionsPaginator
 
@@ -191,7 +191,7 @@ Arguments for `DescribeNotificationSubscriptionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNotificationSubscriptionsPaginator.paginate` returns
-`Iterator`\[[DescribeNotificationSubscriptionsResponseResponseTypeDef](./type_defs.md#describenotificationsubscriptionsresponseresponsetypedef)\].
+`Iterator`\[[DescribeNotificationSubscriptionsResponseTypeDef](./type_defs.md#describenotificationsubscriptionsresponsetypedef)\].
 
 ## DescribeResourcePermissionsPaginator
 
@@ -219,7 +219,7 @@ Arguments for `DescribeResourcePermissionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeResourcePermissionsPaginator.paginate` returns
-`Iterator`\[[DescribeResourcePermissionsResponseResponseTypeDef](./type_defs.md#describeresourcepermissionsresponseresponsetypedef)\].
+`Iterator`\[[DescribeResourcePermissionsResponseTypeDef](./type_defs.md#describeresourcepermissionsresponsetypedef)\].
 
 ## DescribeRootFoldersPaginator
 
@@ -245,7 +245,7 @@ Arguments for `DescribeRootFoldersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeRootFoldersPaginator.paginate` returns
-`Iterator`\[[DescribeRootFoldersResponseResponseTypeDef](./type_defs.md#describerootfoldersresponseresponsetypedef)\].
+`Iterator`\[[DescribeRootFoldersResponseTypeDef](./type_defs.md#describerootfoldersresponsetypedef)\].
 
 ## DescribeUsersPaginator
 
@@ -278,4 +278,4 @@ Arguments for `DescribeUsersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeUsersPaginator.paginate` returns
-`Iterator`\[[DescribeUsersResponseResponseTypeDef](./type_defs.md#describeusersresponseresponsetypedef)\].
+`Iterator`\[[DescribeUsersResponseTypeDef](./type_defs.md#describeusersresponsetypedef)\].

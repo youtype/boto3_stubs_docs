@@ -11,6 +11,7 @@ type annotations stubs module
   - [SESClient](#sesclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [clone_receipt_rule_set](#clone_receipt_rule_set)
     - [create_configuration_set](#create_configuration_set)
@@ -155,6 +156,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+SESClient exceptions.
+
+Type annotations for `boto3.client("ses").exceptions` method.
+
+Boto3 documentation:
+[SES.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -180,7 +192,7 @@ Boto3 documentation:
 [SES.Client.clone_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.clone_receipt_rule_set)
 
 Arguments mapping described in
-[CloneReceiptRuleSetRequestTypeDef](./type_defs.md#clonereceiptrulesetrequesttypedef).
+[CloneReceiptRuleSetRequestRequestTypeDef](./type_defs.md#clonereceiptrulesetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -199,7 +211,7 @@ Boto3 documentation:
 [SES.Client.create_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_configuration_set)
 
 Arguments mapping described in
-[CreateConfigurationSetRequestTypeDef](./type_defs.md#createconfigurationsetrequesttypedef).
+[CreateConfigurationSetRequestRequestTypeDef](./type_defs.md#createconfigurationsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -220,7 +232,7 @@ Boto3 documentation:
 [SES.Client.create_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_configuration_set_event_destination)
 
 Arguments mapping described in
-[CreateConfigurationSetEventDestinationRequestTypeDef](./type_defs.md#createconfigurationseteventdestinationrequesttypedef).
+[CreateConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#createconfigurationseteventdestinationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -243,7 +255,7 @@ Boto3 documentation:
 [SES.Client.create_configuration_set_tracking_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_configuration_set_tracking_options)
 
 Arguments mapping described in
-[CreateConfigurationSetTrackingOptionsRequestTypeDef](./type_defs.md#createconfigurationsettrackingoptionsrequesttypedef).
+[CreateConfigurationSetTrackingOptionsRequestRequestTypeDef](./type_defs.md#createconfigurationsettrackingoptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -264,7 +276,7 @@ Boto3 documentation:
 [SES.Client.create_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_custom_verification_email_template)
 
 Arguments mapping described in
-[CreateCustomVerificationEmailTemplateRequestTypeDef](./type_defs.md#createcustomverificationemailtemplaterequesttypedef).
+[CreateCustomVerificationEmailTemplateRequestRequestTypeDef](./type_defs.md#createcustomverificationemailtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -285,7 +297,7 @@ Boto3 documentation:
 [SES.Client.create_receipt_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_receipt_filter)
 
 Arguments mapping described in
-[CreateReceiptFilterRequestTypeDef](./type_defs.md#createreceiptfilterrequesttypedef).
+[CreateReceiptFilterRequestRequestTypeDef](./type_defs.md#createreceiptfilterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -304,7 +316,7 @@ Boto3 documentation:
 [SES.Client.create_receipt_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_receipt_rule)
 
 Arguments mapping described in
-[CreateReceiptRuleRequestTypeDef](./type_defs.md#createreceiptrulerequesttypedef).
+[CreateReceiptRuleRequestRequestTypeDef](./type_defs.md#createreceiptrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -324,7 +336,7 @@ Boto3 documentation:
 [SES.Client.create_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_receipt_rule_set)
 
 Arguments mapping described in
-[CreateReceiptRuleSetRequestTypeDef](./type_defs.md#createreceiptrulesetrequesttypedef).
+[CreateReceiptRuleSetRequestRequestTypeDef](./type_defs.md#createreceiptrulesetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -342,7 +354,7 @@ Boto3 documentation:
 [SES.Client.create_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_template)
 
 Arguments mapping described in
-[CreateTemplateRequestTypeDef](./type_defs.md#createtemplaterequesttypedef).
+[CreateTemplateRequestRequestTypeDef](./type_defs.md#createtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -360,7 +372,7 @@ Boto3 documentation:
 [SES.Client.delete_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_configuration_set)
 
 Arguments mapping described in
-[DeleteConfigurationSetRequestTypeDef](./type_defs.md#deleteconfigurationsetrequesttypedef).
+[DeleteConfigurationSetRequestRequestTypeDef](./type_defs.md#deleteconfigurationsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -379,7 +391,7 @@ Boto3 documentation:
 [SES.Client.delete_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_configuration_set_event_destination)
 
 Arguments mapping described in
-[DeleteConfigurationSetEventDestinationRequestTypeDef](./type_defs.md#deleteconfigurationseteventdestinationrequesttypedef).
+[DeleteConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#deleteconfigurationseteventdestinationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -400,7 +412,7 @@ Boto3 documentation:
 [SES.Client.delete_configuration_set_tracking_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_configuration_set_tracking_options)
 
 Arguments mapping described in
-[DeleteConfigurationSetTrackingOptionsRequestTypeDef](./type_defs.md#deleteconfigurationsettrackingoptionsrequesttypedef).
+[DeleteConfigurationSetTrackingOptionsRequestRequestTypeDef](./type_defs.md#deleteconfigurationsettrackingoptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -419,7 +431,7 @@ Boto3 documentation:
 [SES.Client.delete_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_custom_verification_email_template)
 
 Arguments mapping described in
-[DeleteCustomVerificationEmailTemplateRequestTypeDef](./type_defs.md#deletecustomverificationemailtemplaterequesttypedef).
+[DeleteCustomVerificationEmailTemplateRequestRequestTypeDef](./type_defs.md#deletecustomverificationemailtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -436,7 +448,7 @@ Boto3 documentation:
 [SES.Client.delete_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_identity)
 
 Arguments mapping described in
-[DeleteIdentityRequestTypeDef](./type_defs.md#deleteidentityrequesttypedef).
+[DeleteIdentityRequestRequestTypeDef](./type_defs.md#deleteidentityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -455,7 +467,7 @@ Boto3 documentation:
 [SES.Client.delete_identity_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_identity_policy)
 
 Arguments mapping described in
-[DeleteIdentityPolicyRequestTypeDef](./type_defs.md#deleteidentitypolicyrequesttypedef).
+[DeleteIdentityPolicyRequestRequestTypeDef](./type_defs.md#deleteidentitypolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -474,7 +486,7 @@ Boto3 documentation:
 [SES.Client.delete_receipt_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_receipt_filter)
 
 Arguments mapping described in
-[DeleteReceiptFilterRequestTypeDef](./type_defs.md#deletereceiptfilterrequesttypedef).
+[DeleteReceiptFilterRequestRequestTypeDef](./type_defs.md#deletereceiptfilterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -492,7 +504,7 @@ Boto3 documentation:
 [SES.Client.delete_receipt_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_receipt_rule)
 
 Arguments mapping described in
-[DeleteReceiptRuleRequestTypeDef](./type_defs.md#deletereceiptrulerequesttypedef).
+[DeleteReceiptRuleRequestRequestTypeDef](./type_defs.md#deletereceiptrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -512,7 +524,7 @@ Boto3 documentation:
 [SES.Client.delete_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_receipt_rule_set)
 
 Arguments mapping described in
-[DeleteReceiptRuleSetRequestTypeDef](./type_defs.md#deletereceiptrulesetrequesttypedef).
+[DeleteReceiptRuleSetRequestRequestTypeDef](./type_defs.md#deletereceiptrulesetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -530,7 +542,7 @@ Boto3 documentation:
 [SES.Client.delete_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_template)
 
 Arguments mapping described in
-[DeleteTemplateRequestTypeDef](./type_defs.md#deletetemplaterequesttypedef).
+[DeleteTemplateRequestRequestTypeDef](./type_defs.md#deletetemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -549,7 +561,7 @@ Boto3 documentation:
 [SES.Client.delete_verified_email_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_verified_email_address)
 
 Arguments mapping described in
-[DeleteVerifiedEmailAddressRequestTypeDef](./type_defs.md#deleteverifiedemailaddressrequesttypedef).
+[DeleteVerifiedEmailAddressRequestRequestTypeDef](./type_defs.md#deleteverifiedemailaddressrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -567,7 +579,7 @@ Boto3 documentation:
 [SES.Client.describe_active_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_active_receipt_rule_set)
 
 Returns
-[DescribeActiveReceiptRuleSetResponseResponseTypeDef](./type_defs.md#describeactivereceiptrulesetresponseresponsetypedef).
+[DescribeActiveReceiptRuleSetResponseTypeDef](./type_defs.md#describeactivereceiptrulesetresponsetypedef).
 
 ### describe_configuration_set
 
@@ -579,7 +591,7 @@ Boto3 documentation:
 [SES.Client.describe_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_configuration_set)
 
 Arguments mapping described in
-[DescribeConfigurationSetRequestTypeDef](./type_defs.md#describeconfigurationsetrequesttypedef).
+[DescribeConfigurationSetRequestRequestTypeDef](./type_defs.md#describeconfigurationsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -588,7 +600,7 @@ Keyword-only arguments:
   `List`\[[ConfigurationSetAttributeType](./literals.md#configurationsetattributetype)\]
 
 Returns
-[DescribeConfigurationSetResponseResponseTypeDef](./type_defs.md#describeconfigurationsetresponseresponsetypedef).
+[DescribeConfigurationSetResponseTypeDef](./type_defs.md#describeconfigurationsetresponsetypedef).
 
 ### describe_receipt_rule
 
@@ -600,7 +612,7 @@ Boto3 documentation:
 [SES.Client.describe_receipt_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_receipt_rule)
 
 Arguments mapping described in
-[DescribeReceiptRuleRequestTypeDef](./type_defs.md#describereceiptrulerequesttypedef).
+[DescribeReceiptRuleRequestRequestTypeDef](./type_defs.md#describereceiptrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -608,7 +620,7 @@ Keyword-only arguments:
 - `RuleName`: `str` *(required)*
 
 Returns
-[DescribeReceiptRuleResponseResponseTypeDef](./type_defs.md#describereceiptruleresponseresponsetypedef).
+[DescribeReceiptRuleResponseTypeDef](./type_defs.md#describereceiptruleresponsetypedef).
 
 ### describe_receipt_rule_set
 
@@ -620,14 +632,14 @@ Boto3 documentation:
 [SES.Client.describe_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_receipt_rule_set)
 
 Arguments mapping described in
-[DescribeReceiptRuleSetRequestTypeDef](./type_defs.md#describereceiptrulesetrequesttypedef).
+[DescribeReceiptRuleSetRequestRequestTypeDef](./type_defs.md#describereceiptrulesetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `RuleSetName`: `str` *(required)*
 
 Returns
-[DescribeReceiptRuleSetResponseResponseTypeDef](./type_defs.md#describereceiptrulesetresponseresponsetypedef).
+[DescribeReceiptRuleSetResponseTypeDef](./type_defs.md#describereceiptrulesetresponsetypedef).
 
 ### generate_presigned_url
 
@@ -658,7 +670,7 @@ Boto3 documentation:
 [SES.Client.get_account_sending_enabled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_account_sending_enabled)
 
 Returns
-[GetAccountSendingEnabledResponseResponseTypeDef](./type_defs.md#getaccountsendingenabledresponseresponsetypedef).
+[GetAccountSendingEnabledResponseTypeDef](./type_defs.md#getaccountsendingenabledresponsetypedef).
 
 ### get_custom_verification_email_template
 
@@ -672,14 +684,14 @@ Boto3 documentation:
 [SES.Client.get_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_custom_verification_email_template)
 
 Arguments mapping described in
-[GetCustomVerificationEmailTemplateRequestTypeDef](./type_defs.md#getcustomverificationemailtemplaterequesttypedef).
+[GetCustomVerificationEmailTemplateRequestRequestTypeDef](./type_defs.md#getcustomverificationemailtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 
 Returns
-[GetCustomVerificationEmailTemplateResponseResponseTypeDef](./type_defs.md#getcustomverificationemailtemplateresponseresponsetypedef).
+[GetCustomVerificationEmailTemplateResponseTypeDef](./type_defs.md#getcustomverificationemailtemplateresponsetypedef).
 
 ### get_identity_dkim_attributes
 
@@ -691,14 +703,14 @@ Boto3 documentation:
 [SES.Client.get_identity_dkim_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_dkim_attributes)
 
 Arguments mapping described in
-[GetIdentityDkimAttributesRequestTypeDef](./type_defs.md#getidentitydkimattributesrequesttypedef).
+[GetIdentityDkimAttributesRequestRequestTypeDef](./type_defs.md#getidentitydkimattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Identities`: `List`\[`str`\] *(required)*
 
 Returns
-[GetIdentityDkimAttributesResponseResponseTypeDef](./type_defs.md#getidentitydkimattributesresponseresponsetypedef).
+[GetIdentityDkimAttributesResponseTypeDef](./type_defs.md#getidentitydkimattributesresponsetypedef).
 
 ### get_identity_mail_from_domain_attributes
 
@@ -712,14 +724,14 @@ Boto3 documentation:
 [SES.Client.get_identity_mail_from_domain_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_mail_from_domain_attributes)
 
 Arguments mapping described in
-[GetIdentityMailFromDomainAttributesRequestTypeDef](./type_defs.md#getidentitymailfromdomainattributesrequesttypedef).
+[GetIdentityMailFromDomainAttributesRequestRequestTypeDef](./type_defs.md#getidentitymailfromdomainattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Identities`: `List`\[`str`\] *(required)*
 
 Returns
-[GetIdentityMailFromDomainAttributesResponseResponseTypeDef](./type_defs.md#getidentitymailfromdomainattributesresponseresponsetypedef).
+[GetIdentityMailFromDomainAttributesResponseTypeDef](./type_defs.md#getidentitymailfromdomainattributesresponsetypedef).
 
 ### get_identity_notification_attributes
 
@@ -733,14 +745,14 @@ Boto3 documentation:
 [SES.Client.get_identity_notification_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_notification_attributes)
 
 Arguments mapping described in
-[GetIdentityNotificationAttributesRequestTypeDef](./type_defs.md#getidentitynotificationattributesrequesttypedef).
+[GetIdentityNotificationAttributesRequestRequestTypeDef](./type_defs.md#getidentitynotificationattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Identities`: `List`\[`str`\] *(required)*
 
 Returns
-[GetIdentityNotificationAttributesResponseResponseTypeDef](./type_defs.md#getidentitynotificationattributesresponseresponsetypedef).
+[GetIdentityNotificationAttributesResponseTypeDef](./type_defs.md#getidentitynotificationattributesresponsetypedef).
 
 ### get_identity_policies
 
@@ -753,7 +765,7 @@ Boto3 documentation:
 [SES.Client.get_identity_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_policies)
 
 Arguments mapping described in
-[GetIdentityPoliciesRequestTypeDef](./type_defs.md#getidentitypoliciesrequesttypedef).
+[GetIdentityPoliciesRequestRequestTypeDef](./type_defs.md#getidentitypoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -761,7 +773,7 @@ Keyword-only arguments:
 - `PolicyNames`: `List`\[`str`\] *(required)*
 
 Returns
-[GetIdentityPoliciesResponseResponseTypeDef](./type_defs.md#getidentitypoliciesresponseresponsetypedef).
+[GetIdentityPoliciesResponseTypeDef](./type_defs.md#getidentitypoliciesresponsetypedef).
 
 ### get_identity_verification_attributes
 
@@ -776,14 +788,14 @@ Boto3 documentation:
 [SES.Client.get_identity_verification_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_verification_attributes)
 
 Arguments mapping described in
-[GetIdentityVerificationAttributesRequestTypeDef](./type_defs.md#getidentityverificationattributesrequesttypedef).
+[GetIdentityVerificationAttributesRequestRequestTypeDef](./type_defs.md#getidentityverificationattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Identities`: `List`\[`str`\] *(required)*
 
 Returns
-[GetIdentityVerificationAttributesResponseResponseTypeDef](./type_defs.md#getidentityverificationattributesresponseresponsetypedef).
+[GetIdentityVerificationAttributesResponseTypeDef](./type_defs.md#getidentityverificationattributesresponsetypedef).
 
 ### get_send_quota
 
@@ -795,7 +807,7 @@ Boto3 documentation:
 [SES.Client.get_send_quota](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_send_quota)
 
 Returns
-[GetSendQuotaResponseResponseTypeDef](./type_defs.md#getsendquotaresponseresponsetypedef).
+[GetSendQuotaResponseTypeDef](./type_defs.md#getsendquotaresponsetypedef).
 
 ### get_send_statistics
 
@@ -807,7 +819,7 @@ Boto3 documentation:
 [SES.Client.get_send_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_send_statistics)
 
 Returns
-[GetSendStatisticsResponseResponseTypeDef](./type_defs.md#getsendstatisticsresponseresponsetypedef).
+[GetSendStatisticsResponseTypeDef](./type_defs.md#getsendstatisticsresponsetypedef).
 
 ### get_template
 
@@ -820,14 +832,14 @@ Boto3 documentation:
 [SES.Client.get_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_template)
 
 Arguments mapping described in
-[GetTemplateRequestTypeDef](./type_defs.md#gettemplaterequesttypedef).
+[GetTemplateRequestRequestTypeDef](./type_defs.md#gettemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 
 Returns
-[GetTemplateResponseResponseTypeDef](./type_defs.md#gettemplateresponseresponsetypedef).
+[GetTemplateResponseTypeDef](./type_defs.md#gettemplateresponsetypedef).
 
 ### list_configuration_sets
 
@@ -840,7 +852,7 @@ Boto3 documentation:
 [SES.Client.list_configuration_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_configuration_sets)
 
 Arguments mapping described in
-[ListConfigurationSetsRequestTypeDef](./type_defs.md#listconfigurationsetsrequesttypedef).
+[ListConfigurationSetsRequestRequestTypeDef](./type_defs.md#listconfigurationsetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -848,7 +860,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListConfigurationSetsResponseResponseTypeDef](./type_defs.md#listconfigurationsetsresponseresponsetypedef).
+[ListConfigurationSetsResponseTypeDef](./type_defs.md#listconfigurationsetsresponsetypedef).
 
 ### list_custom_verification_email_templates
 
@@ -862,7 +874,7 @@ Boto3 documentation:
 [SES.Client.list_custom_verification_email_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_custom_verification_email_templates)
 
 Arguments mapping described in
-[ListCustomVerificationEmailTemplatesRequestTypeDef](./type_defs.md#listcustomverificationemailtemplatesrequesttypedef).
+[ListCustomVerificationEmailTemplatesRequestRequestTypeDef](./type_defs.md#listcustomverificationemailtemplatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -870,7 +882,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListCustomVerificationEmailTemplatesResponseResponseTypeDef](./type_defs.md#listcustomverificationemailtemplatesresponseresponsetypedef).
+[ListCustomVerificationEmailTemplatesResponseTypeDef](./type_defs.md#listcustomverificationemailtemplatesresponsetypedef).
 
 ### list_identities
 
@@ -884,7 +896,7 @@ Boto3 documentation:
 [SES.Client.list_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_identities)
 
 Arguments mapping described in
-[ListIdentitiesRequestTypeDef](./type_defs.md#listidentitiesrequesttypedef).
+[ListIdentitiesRequestRequestTypeDef](./type_defs.md#listidentitiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -893,7 +905,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListIdentitiesResponseResponseTypeDef](./type_defs.md#listidentitiesresponseresponsetypedef).
+[ListIdentitiesResponseTypeDef](./type_defs.md#listidentitiesresponsetypedef).
 
 ### list_identity_policies
 
@@ -906,14 +918,14 @@ Boto3 documentation:
 [SES.Client.list_identity_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_identity_policies)
 
 Arguments mapping described in
-[ListIdentityPoliciesRequestTypeDef](./type_defs.md#listidentitypoliciesrequesttypedef).
+[ListIdentityPoliciesRequestRequestTypeDef](./type_defs.md#listidentitypoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Identity`: `str` *(required)*
 
 Returns
-[ListIdentityPoliciesResponseResponseTypeDef](./type_defs.md#listidentitypoliciesresponseresponsetypedef).
+[ListIdentityPoliciesResponseTypeDef](./type_defs.md#listidentitypoliciesresponsetypedef).
 
 ### list_receipt_filters
 
@@ -926,7 +938,7 @@ Boto3 documentation:
 [SES.Client.list_receipt_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_receipt_filters)
 
 Returns
-[ListReceiptFiltersResponseResponseTypeDef](./type_defs.md#listreceiptfiltersresponseresponsetypedef).
+[ListReceiptFiltersResponseTypeDef](./type_defs.md#listreceiptfiltersresponsetypedef).
 
 ### list_receipt_rule_sets
 
@@ -939,14 +951,14 @@ Boto3 documentation:
 [SES.Client.list_receipt_rule_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_receipt_rule_sets)
 
 Arguments mapping described in
-[ListReceiptRuleSetsRequestTypeDef](./type_defs.md#listreceiptrulesetsrequesttypedef).
+[ListReceiptRuleSetsRequestRequestTypeDef](./type_defs.md#listreceiptrulesetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
 Returns
-[ListReceiptRuleSetsResponseResponseTypeDef](./type_defs.md#listreceiptrulesetsresponseresponsetypedef).
+[ListReceiptRuleSetsResponseTypeDef](./type_defs.md#listreceiptrulesetsresponsetypedef).
 
 ### list_templates
 
@@ -959,7 +971,7 @@ Boto3 documentation:
 [SES.Client.list_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_templates)
 
 Arguments mapping described in
-[ListTemplatesRequestTypeDef](./type_defs.md#listtemplatesrequesttypedef).
+[ListTemplatesRequestRequestTypeDef](./type_defs.md#listtemplatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -967,7 +979,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListTemplatesResponseResponseTypeDef](./type_defs.md#listtemplatesresponseresponsetypedef).
+[ListTemplatesResponseTypeDef](./type_defs.md#listtemplatesresponsetypedef).
 
 ### list_verified_email_addresses
 
@@ -980,7 +992,7 @@ Boto3 documentation:
 [SES.Client.list_verified_email_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_verified_email_addresses)
 
 Returns
-[ListVerifiedEmailAddressesResponseResponseTypeDef](./type_defs.md#listverifiedemailaddressesresponseresponsetypedef).
+[ListVerifiedEmailAddressesResponseTypeDef](./type_defs.md#listverifiedemailaddressesresponsetypedef).
 
 ### put_configuration_set_delivery_options
 
@@ -993,7 +1005,7 @@ Boto3 documentation:
 [SES.Client.put_configuration_set_delivery_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.put_configuration_set_delivery_options)
 
 Arguments mapping described in
-[PutConfigurationSetDeliveryOptionsRequestTypeDef](./type_defs.md#putconfigurationsetdeliveryoptionsrequesttypedef).
+[PutConfigurationSetDeliveryOptionsRequestRequestTypeDef](./type_defs.md#putconfigurationsetdeliveryoptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1014,7 +1026,7 @@ Boto3 documentation:
 [SES.Client.put_identity_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.put_identity_policy)
 
 Arguments mapping described in
-[PutIdentityPolicyRequestTypeDef](./type_defs.md#putidentitypolicyrequesttypedef).
+[PutIdentityPolicyRequestRequestTypeDef](./type_defs.md#putidentitypolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1034,7 +1046,7 @@ Boto3 documentation:
 [SES.Client.reorder_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.reorder_receipt_rule_set)
 
 Arguments mapping described in
-[ReorderReceiptRuleSetRequestTypeDef](./type_defs.md#reorderreceiptrulesetrequesttypedef).
+[ReorderReceiptRuleSetRequestRequestTypeDef](./type_defs.md#reorderreceiptrulesetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1054,7 +1066,7 @@ Boto3 documentation:
 [SES.Client.send_bounce](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_bounce)
 
 Arguments mapping described in
-[SendBounceRequestTypeDef](./type_defs.md#sendbouncerequesttypedef).
+[SendBounceRequestRequestTypeDef](./type_defs.md#sendbouncerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1067,8 +1079,7 @@ Keyword-only arguments:
 - `MessageDsn`: [MessageDsnTypeDef](./type_defs.md#messagedsntypedef)
 - `BounceSenderArn`: `str`
 
-Returns
-[SendBounceResponseResponseTypeDef](./type_defs.md#sendbounceresponseresponsetypedef).
+Returns [SendBounceResponseTypeDef](./type_defs.md#sendbounceresponsetypedef).
 
 ### send_bulk_templated_email
 
@@ -1080,7 +1091,7 @@ Boto3 documentation:
 [SES.Client.send_bulk_templated_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_bulk_templated_email)
 
 Arguments mapping described in
-[SendBulkTemplatedEmailRequestTypeDef](./type_defs.md#sendbulktemplatedemailrequesttypedef).
+[SendBulkTemplatedEmailRequestRequestTypeDef](./type_defs.md#sendbulktemplatedemailrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1100,7 +1111,7 @@ Keyword-only arguments:
 - `DefaultTemplateData`: `str`
 
 Returns
-[SendBulkTemplatedEmailResponseResponseTypeDef](./type_defs.md#sendbulktemplatedemailresponseresponsetypedef).
+[SendBulkTemplatedEmailResponseTypeDef](./type_defs.md#sendbulktemplatedemailresponsetypedef).
 
 ### send_custom_verification_email
 
@@ -1114,7 +1125,7 @@ Boto3 documentation:
 [SES.Client.send_custom_verification_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_custom_verification_email)
 
 Arguments mapping described in
-[SendCustomVerificationEmailRequestTypeDef](./type_defs.md#sendcustomverificationemailrequesttypedef).
+[SendCustomVerificationEmailRequestRequestTypeDef](./type_defs.md#sendcustomverificationemailrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1123,7 +1134,7 @@ Keyword-only arguments:
 - `ConfigurationSetName`: `str`
 
 Returns
-[SendCustomVerificationEmailResponseResponseTypeDef](./type_defs.md#sendcustomverificationemailresponseresponsetypedef).
+[SendCustomVerificationEmailResponseTypeDef](./type_defs.md#sendcustomverificationemailresponsetypedef).
 
 ### send_email
 
@@ -1135,7 +1146,7 @@ Boto3 documentation:
 [SES.Client.send_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_email)
 
 Arguments mapping described in
-[SendEmailRequestTypeDef](./type_defs.md#sendemailrequesttypedef).
+[SendEmailRequestRequestTypeDef](./type_defs.md#sendemailrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1150,8 +1161,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ConfigurationSetName`: `str`
 
-Returns
-[SendEmailResponseResponseTypeDef](./type_defs.md#sendemailresponseresponsetypedef).
+Returns [SendEmailResponseTypeDef](./type_defs.md#sendemailresponsetypedef).
 
 ### send_raw_email
 
@@ -1163,7 +1173,7 @@ Boto3 documentation:
 [SES.Client.send_raw_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_raw_email)
 
 Arguments mapping described in
-[SendRawEmailRequestTypeDef](./type_defs.md#sendrawemailrequesttypedef).
+[SendRawEmailRequestRequestTypeDef](./type_defs.md#sendrawemailrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1178,7 +1188,7 @@ Keyword-only arguments:
 - `ConfigurationSetName`: `str`
 
 Returns
-[SendRawEmailResponseResponseTypeDef](./type_defs.md#sendrawemailresponseresponsetypedef).
+[SendRawEmailResponseTypeDef](./type_defs.md#sendrawemailresponsetypedef).
 
 ### send_templated_email
 
@@ -1191,7 +1201,7 @@ Boto3 documentation:
 [SES.Client.send_templated_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_templated_email)
 
 Arguments mapping described in
-[SendTemplatedEmailRequestTypeDef](./type_defs.md#sendtemplatedemailrequesttypedef).
+[SendTemplatedEmailRequestRequestTypeDef](./type_defs.md#sendtemplatedemailrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1209,7 +1219,7 @@ Keyword-only arguments:
 - `TemplateArn`: `str`
 
 Returns
-[SendTemplatedEmailResponseResponseTypeDef](./type_defs.md#sendtemplatedemailresponseresponsetypedef).
+[SendTemplatedEmailResponseTypeDef](./type_defs.md#sendtemplatedemailresponsetypedef).
 
 ### set_active_receipt_rule_set
 
@@ -1221,7 +1231,7 @@ Boto3 documentation:
 [SES.Client.set_active_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_active_receipt_rule_set)
 
 Arguments mapping described in
-[SetActiveReceiptRuleSetRequestTypeDef](./type_defs.md#setactivereceiptrulesetrequesttypedef).
+[SetActiveReceiptRuleSetRequestRequestTypeDef](./type_defs.md#setactivereceiptrulesetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1239,7 +1249,7 @@ Boto3 documentation:
 [SES.Client.set_identity_dkim_enabled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_dkim_enabled)
 
 Arguments mapping described in
-[SetIdentityDkimEnabledRequestTypeDef](./type_defs.md#setidentitydkimenabledrequesttypedef).
+[SetIdentityDkimEnabledRequestRequestTypeDef](./type_defs.md#setidentitydkimenabledrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1260,7 +1270,7 @@ Boto3 documentation:
 [SES.Client.set_identity_feedback_forwarding_enabled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_feedback_forwarding_enabled)
 
 Arguments mapping described in
-[SetIdentityFeedbackForwardingEnabledRequestTypeDef](./type_defs.md#setidentityfeedbackforwardingenabledrequesttypedef).
+[SetIdentityFeedbackForwardingEnabledRequestRequestTypeDef](./type_defs.md#setidentityfeedbackforwardingenabledrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1282,7 +1292,7 @@ Boto3 documentation:
 [SES.Client.set_identity_headers_in_notifications_enabled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_headers_in_notifications_enabled)
 
 Arguments mapping described in
-[SetIdentityHeadersInNotificationsEnabledRequestTypeDef](./type_defs.md#setidentityheadersinnotificationsenabledrequesttypedef).
+[SetIdentityHeadersInNotificationsEnabledRequestRequestTypeDef](./type_defs.md#setidentityheadersinnotificationsenabledrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1305,7 +1315,7 @@ Boto3 documentation:
 [SES.Client.set_identity_mail_from_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_mail_from_domain)
 
 Arguments mapping described in
-[SetIdentityMailFromDomainRequestTypeDef](./type_defs.md#setidentitymailfromdomainrequesttypedef).
+[SetIdentityMailFromDomainRequestRequestTypeDef](./type_defs.md#setidentitymailfromdomainrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1328,7 +1338,7 @@ Boto3 documentation:
 [SES.Client.set_identity_notification_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_notification_topic)
 
 Arguments mapping described in
-[SetIdentityNotificationTopicRequestTypeDef](./type_defs.md#setidentitynotificationtopicrequesttypedef).
+[SetIdentityNotificationTopicRequestRequestTypeDef](./type_defs.md#setidentitynotificationtopicrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1349,7 +1359,7 @@ Boto3 documentation:
 [SES.Client.set_receipt_rule_position](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_receipt_rule_position)
 
 Arguments mapping described in
-[SetReceiptRulePositionRequestTypeDef](./type_defs.md#setreceiptrulepositionrequesttypedef).
+[SetReceiptRulePositionRequestRequestTypeDef](./type_defs.md#setreceiptrulepositionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1370,7 +1380,7 @@ Boto3 documentation:
 [SES.Client.test_render_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.test_render_template)
 
 Arguments mapping described in
-[TestRenderTemplateRequestTypeDef](./type_defs.md#testrendertemplaterequesttypedef).
+[TestRenderTemplateRequestRequestTypeDef](./type_defs.md#testrendertemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1378,7 +1388,7 @@ Keyword-only arguments:
 - `TemplateData`: `str` *(required)*
 
 Returns
-[TestRenderTemplateResponseResponseTypeDef](./type_defs.md#testrendertemplateresponseresponsetypedef).
+[TestRenderTemplateResponseTypeDef](./type_defs.md#testrendertemplateresponsetypedef).
 
 ### update_account_sending_enabled
 
@@ -1392,7 +1402,7 @@ Boto3 documentation:
 [SES.Client.update_account_sending_enabled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_account_sending_enabled)
 
 Arguments mapping described in
-[UpdateAccountSendingEnabledRequestTypeDef](./type_defs.md#updateaccountsendingenabledrequesttypedef).
+[UpdateAccountSendingEnabledRequestRequestTypeDef](./type_defs.md#updateaccountsendingenabledrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1409,7 +1419,7 @@ Boto3 documentation:
 [SES.Client.update_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_event_destination)
 
 Arguments mapping described in
-[UpdateConfigurationSetEventDestinationRequestTypeDef](./type_defs.md#updateconfigurationseteventdestinationrequesttypedef).
+[UpdateConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#updateconfigurationseteventdestinationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1433,7 +1443,7 @@ Boto3 documentation:
 [SES.Client.update_configuration_set_reputation_metrics_enabled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_reputation_metrics_enabled)
 
 Arguments mapping described in
-[UpdateConfigurationSetReputationMetricsEnabledRequestTypeDef](./type_defs.md#updateconfigurationsetreputationmetricsenabledrequesttypedef).
+[UpdateConfigurationSetReputationMetricsEnabledRequestRequestTypeDef](./type_defs.md#updateconfigurationsetreputationmetricsenabledrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1452,7 +1462,7 @@ Boto3 documentation:
 [SES.Client.update_configuration_set_sending_enabled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_sending_enabled)
 
 Arguments mapping described in
-[UpdateConfigurationSetSendingEnabledRequestTypeDef](./type_defs.md#updateconfigurationsetsendingenabledrequesttypedef).
+[UpdateConfigurationSetSendingEnabledRequestRequestTypeDef](./type_defs.md#updateconfigurationsetsendingenabledrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1471,7 +1481,7 @@ Boto3 documentation:
 [SES.Client.update_configuration_set_tracking_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_tracking_options)
 
 Arguments mapping described in
-[UpdateConfigurationSetTrackingOptionsRequestTypeDef](./type_defs.md#updateconfigurationsettrackingoptionsrequesttypedef).
+[UpdateConfigurationSetTrackingOptionsRequestRequestTypeDef](./type_defs.md#updateconfigurationsettrackingoptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1492,7 +1502,7 @@ Boto3 documentation:
 [SES.Client.update_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_custom_verification_email_template)
 
 Arguments mapping described in
-[UpdateCustomVerificationEmailTemplateRequestTypeDef](./type_defs.md#updatecustomverificationemailtemplaterequesttypedef).
+[UpdateCustomVerificationEmailTemplateRequestRequestTypeDef](./type_defs.md#updatecustomverificationemailtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1513,7 +1523,7 @@ Boto3 documentation:
 [SES.Client.update_receipt_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_receipt_rule)
 
 Arguments mapping described in
-[UpdateReceiptRuleRequestTypeDef](./type_defs.md#updatereceiptrulerequesttypedef).
+[UpdateReceiptRuleRequestRequestTypeDef](./type_defs.md#updatereceiptrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1532,7 +1542,7 @@ Boto3 documentation:
 [SES.Client.update_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_template)
 
 Arguments mapping described in
-[UpdateTemplateRequestTypeDef](./type_defs.md#updatetemplaterequesttypedef).
+[UpdateTemplateRequestRequestTypeDef](./type_defs.md#updatetemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1550,14 +1560,14 @@ Boto3 documentation:
 [SES.Client.verify_domain_dkim](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_domain_dkim)
 
 Arguments mapping described in
-[VerifyDomainDkimRequestTypeDef](./type_defs.md#verifydomaindkimrequesttypedef).
+[VerifyDomainDkimRequestRequestTypeDef](./type_defs.md#verifydomaindkimrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Domain`: `str` *(required)*
 
 Returns
-[VerifyDomainDkimResponseResponseTypeDef](./type_defs.md#verifydomaindkimresponseresponsetypedef).
+[VerifyDomainDkimResponseTypeDef](./type_defs.md#verifydomaindkimresponsetypedef).
 
 ### verify_domain_identity
 
@@ -1570,14 +1580,14 @@ Boto3 documentation:
 [SES.Client.verify_domain_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_domain_identity)
 
 Arguments mapping described in
-[VerifyDomainIdentityRequestTypeDef](./type_defs.md#verifydomainidentityrequesttypedef).
+[VerifyDomainIdentityRequestRequestTypeDef](./type_defs.md#verifydomainidentityrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Domain`: `str` *(required)*
 
 Returns
-[VerifyDomainIdentityResponseResponseTypeDef](./type_defs.md#verifydomainidentityresponseresponsetypedef).
+[VerifyDomainIdentityResponseTypeDef](./type_defs.md#verifydomainidentityresponsetypedef).
 
 ### verify_email_address
 
@@ -1589,7 +1599,7 @@ Boto3 documentation:
 [SES.Client.verify_email_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_email_address)
 
 Arguments mapping described in
-[VerifyEmailAddressRequestTypeDef](./type_defs.md#verifyemailaddressrequesttypedef).
+[VerifyEmailAddressRequestRequestTypeDef](./type_defs.md#verifyemailaddressrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1606,7 +1616,7 @@ Boto3 documentation:
 [SES.Client.verify_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_email_identity)
 
 Arguments mapping described in
-[VerifyEmailIdentityRequestTypeDef](./type_defs.md#verifyemailidentityrequesttypedef).
+[VerifyEmailIdentityRequestRequestTypeDef](./type_defs.md#verifyemailidentityrequestrequesttypedef).
 
 Keyword-only arguments:
 

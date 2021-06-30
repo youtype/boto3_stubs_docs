@@ -34,6 +34,7 @@ from mypy_boto3_iotsecuretunneling.client import IoTSecureTunnelingClient
 - [can_paginate](./client.md#can_paginate)
 - [close_tunnel](./client.md#close_tunnel)
 - [describe_tunnel](./client.md#describe_tunnel)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [list_tags_for_resource](./client.md#list_tags_for_resource)
 - [list_tunnels](./client.md#list_tunnels)
@@ -70,24 +71,24 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_iotsecuretunneling.type_defs import CloseTunnelRequestTypeDef, ...
+from mypy_boto3_iotsecuretunneling.type_defs import CloseTunnelRequestRequestTypeDef, ...
 ```
 
-- [CloseTunnelRequestTypeDef](./type_defs.md#closetunnelrequesttypedef)
+- [CloseTunnelRequestRequestTypeDef](./type_defs.md#closetunnelrequestrequesttypedef)
 - [ConnectionStateTypeDef](./type_defs.md#connectionstatetypedef)
-- [DescribeTunnelRequestTypeDef](./type_defs.md#describetunnelrequesttypedef)
-- [DescribeTunnelResponseResponseTypeDef](./type_defs.md#describetunnelresponseresponsetypedef)
+- [DescribeTunnelRequestRequestTypeDef](./type_defs.md#describetunnelrequestrequesttypedef)
+- [DescribeTunnelResponseTypeDef](./type_defs.md#describetunnelresponsetypedef)
 - [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
-- [ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef)
-- [ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef)
-- [ListTunnelsRequestTypeDef](./type_defs.md#listtunnelsrequesttypedef)
-- [ListTunnelsResponseResponseTypeDef](./type_defs.md#listtunnelsresponseresponsetypedef)
-- [OpenTunnelRequestTypeDef](./type_defs.md#opentunnelrequesttypedef)
-- [OpenTunnelResponseResponseTypeDef](./type_defs.md#opentunnelresponseresponsetypedef)
+- [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
+- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListTunnelsRequestRequestTypeDef](./type_defs.md#listtunnelsrequestrequesttypedef)
+- [ListTunnelsResponseTypeDef](./type_defs.md#listtunnelsresponsetypedef)
+- [OpenTunnelRequestRequestTypeDef](./type_defs.md#opentunnelrequestrequesttypedef)
+- [OpenTunnelResponseTypeDef](./type_defs.md#opentunnelresponsetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef)
+- [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
 - [TunnelSummaryTypeDef](./type_defs.md#tunnelsummarytypedef)
 - [TunnelTypeDef](./type_defs.md#tunneltypedef)
-- [UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef)
+- [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)

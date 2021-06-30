@@ -11,58 +11,58 @@ type annotations stubs module
   - [ApplicationComponentTypeDef](#applicationcomponenttypedef)
   - [ApplicationInfoTypeDef](#applicationinfotypedef)
   - [ConfigurationEventTypeDef](#configurationeventtypedef)
-  - [CreateApplicationRequestTypeDef](#createapplicationrequesttypedef)
-  - [CreateApplicationResponseResponseTypeDef](#createapplicationresponseresponsetypedef)
-  - [CreateComponentRequestTypeDef](#createcomponentrequesttypedef)
-  - [CreateLogPatternRequestTypeDef](#createlogpatternrequesttypedef)
-  - [CreateLogPatternResponseResponseTypeDef](#createlogpatternresponseresponsetypedef)
-  - [DeleteApplicationRequestTypeDef](#deleteapplicationrequesttypedef)
-  - [DeleteComponentRequestTypeDef](#deletecomponentrequesttypedef)
-  - [DeleteLogPatternRequestTypeDef](#deletelogpatternrequesttypedef)
-  - [DescribeApplicationRequestTypeDef](#describeapplicationrequesttypedef)
-  - [DescribeApplicationResponseResponseTypeDef](#describeapplicationresponseresponsetypedef)
-  - [DescribeComponentConfigurationRecommendationRequestTypeDef](#describecomponentconfigurationrecommendationrequesttypedef)
-  - [DescribeComponentConfigurationRecommendationResponseResponseTypeDef](#describecomponentconfigurationrecommendationresponseresponsetypedef)
-  - [DescribeComponentConfigurationRequestTypeDef](#describecomponentconfigurationrequesttypedef)
-  - [DescribeComponentConfigurationResponseResponseTypeDef](#describecomponentconfigurationresponseresponsetypedef)
-  - [DescribeComponentRequestTypeDef](#describecomponentrequesttypedef)
-  - [DescribeComponentResponseResponseTypeDef](#describecomponentresponseresponsetypedef)
-  - [DescribeLogPatternRequestTypeDef](#describelogpatternrequesttypedef)
-  - [DescribeLogPatternResponseResponseTypeDef](#describelogpatternresponseresponsetypedef)
-  - [DescribeObservationRequestTypeDef](#describeobservationrequesttypedef)
-  - [DescribeObservationResponseResponseTypeDef](#describeobservationresponseresponsetypedef)
-  - [DescribeProblemObservationsRequestTypeDef](#describeproblemobservationsrequesttypedef)
-  - [DescribeProblemObservationsResponseResponseTypeDef](#describeproblemobservationsresponseresponsetypedef)
-  - [DescribeProblemRequestTypeDef](#describeproblemrequesttypedef)
-  - [DescribeProblemResponseResponseTypeDef](#describeproblemresponseresponsetypedef)
-  - [ListApplicationsRequestTypeDef](#listapplicationsrequesttypedef)
-  - [ListApplicationsResponseResponseTypeDef](#listapplicationsresponseresponsetypedef)
-  - [ListComponentsRequestTypeDef](#listcomponentsrequesttypedef)
-  - [ListComponentsResponseResponseTypeDef](#listcomponentsresponseresponsetypedef)
-  - [ListConfigurationHistoryRequestTypeDef](#listconfigurationhistoryrequesttypedef)
-  - [ListConfigurationHistoryResponseResponseTypeDef](#listconfigurationhistoryresponseresponsetypedef)
-  - [ListLogPatternSetsRequestTypeDef](#listlogpatternsetsrequesttypedef)
-  - [ListLogPatternSetsResponseResponseTypeDef](#listlogpatternsetsresponseresponsetypedef)
-  - [ListLogPatternsRequestTypeDef](#listlogpatternsrequesttypedef)
-  - [ListLogPatternsResponseResponseTypeDef](#listlogpatternsresponseresponsetypedef)
-  - [ListProblemsRequestTypeDef](#listproblemsrequesttypedef)
-  - [ListProblemsResponseResponseTypeDef](#listproblemsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [CreateApplicationRequestRequestTypeDef](#createapplicationrequestrequesttypedef)
+  - [CreateApplicationResponseTypeDef](#createapplicationresponsetypedef)
+  - [CreateComponentRequestRequestTypeDef](#createcomponentrequestrequesttypedef)
+  - [CreateLogPatternRequestRequestTypeDef](#createlogpatternrequestrequesttypedef)
+  - [CreateLogPatternResponseTypeDef](#createlogpatternresponsetypedef)
+  - [DeleteApplicationRequestRequestTypeDef](#deleteapplicationrequestrequesttypedef)
+  - [DeleteComponentRequestRequestTypeDef](#deletecomponentrequestrequesttypedef)
+  - [DeleteLogPatternRequestRequestTypeDef](#deletelogpatternrequestrequesttypedef)
+  - [DescribeApplicationRequestRequestTypeDef](#describeapplicationrequestrequesttypedef)
+  - [DescribeApplicationResponseTypeDef](#describeapplicationresponsetypedef)
+  - [DescribeComponentConfigurationRecommendationRequestRequestTypeDef](#describecomponentconfigurationrecommendationrequestrequesttypedef)
+  - [DescribeComponentConfigurationRecommendationResponseTypeDef](#describecomponentconfigurationrecommendationresponsetypedef)
+  - [DescribeComponentConfigurationRequestRequestTypeDef](#describecomponentconfigurationrequestrequesttypedef)
+  - [DescribeComponentConfigurationResponseTypeDef](#describecomponentconfigurationresponsetypedef)
+  - [DescribeComponentRequestRequestTypeDef](#describecomponentrequestrequesttypedef)
+  - [DescribeComponentResponseTypeDef](#describecomponentresponsetypedef)
+  - [DescribeLogPatternRequestRequestTypeDef](#describelogpatternrequestrequesttypedef)
+  - [DescribeLogPatternResponseTypeDef](#describelogpatternresponsetypedef)
+  - [DescribeObservationRequestRequestTypeDef](#describeobservationrequestrequesttypedef)
+  - [DescribeObservationResponseTypeDef](#describeobservationresponsetypedef)
+  - [DescribeProblemObservationsRequestRequestTypeDef](#describeproblemobservationsrequestrequesttypedef)
+  - [DescribeProblemObservationsResponseTypeDef](#describeproblemobservationsresponsetypedef)
+  - [DescribeProblemRequestRequestTypeDef](#describeproblemrequestrequesttypedef)
+  - [DescribeProblemResponseTypeDef](#describeproblemresponsetypedef)
+  - [ListApplicationsRequestRequestTypeDef](#listapplicationsrequestrequesttypedef)
+  - [ListApplicationsResponseTypeDef](#listapplicationsresponsetypedef)
+  - [ListComponentsRequestRequestTypeDef](#listcomponentsrequestrequesttypedef)
+  - [ListComponentsResponseTypeDef](#listcomponentsresponsetypedef)
+  - [ListConfigurationHistoryRequestRequestTypeDef](#listconfigurationhistoryrequestrequesttypedef)
+  - [ListConfigurationHistoryResponseTypeDef](#listconfigurationhistoryresponsetypedef)
+  - [ListLogPatternSetsRequestRequestTypeDef](#listlogpatternsetsrequestrequesttypedef)
+  - [ListLogPatternSetsResponseTypeDef](#listlogpatternsetsresponsetypedef)
+  - [ListLogPatternsRequestRequestTypeDef](#listlogpatternsrequestrequesttypedef)
+  - [ListLogPatternsResponseTypeDef](#listlogpatternsresponsetypedef)
+  - [ListProblemsRequestRequestTypeDef](#listproblemsrequestrequesttypedef)
+  - [ListProblemsResponseTypeDef](#listproblemsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [LogPatternTypeDef](#logpatterntypedef)
   - [ObservationTypeDef](#observationtypedef)
   - [ProblemTypeDef](#problemtypedef)
   - [RelatedObservationsTypeDef](#relatedobservationstypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateApplicationRequestTypeDef](#updateapplicationrequesttypedef)
-  - [UpdateApplicationResponseResponseTypeDef](#updateapplicationresponseresponsetypedef)
-  - [UpdateComponentConfigurationRequestTypeDef](#updatecomponentconfigurationrequesttypedef)
-  - [UpdateComponentRequestTypeDef](#updatecomponentrequesttypedef)
-  - [UpdateLogPatternRequestTypeDef](#updatelogpatternrequesttypedef)
-  - [UpdateLogPatternResponseResponseTypeDef](#updatelogpatternresponseresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateApplicationRequestRequestTypeDef](#updateapplicationrequestrequesttypedef)
+  - [UpdateApplicationResponseTypeDef](#updateapplicationresponsetypedef)
+  - [UpdateComponentConfigurationRequestRequestTypeDef](#updatecomponentconfigurationrequestrequesttypedef)
+  - [UpdateComponentRequestRequestTypeDef](#updatecomponentrequestrequesttypedef)
+  - [UpdateLogPatternRequestRequestTypeDef](#updatelogpatternrequestrequesttypedef)
+  - [UpdateLogPatternResponseTypeDef](#updatelogpatternresponsetypedef)
 
 ## ApplicationComponentTypeDef
 
@@ -113,10 +113,10 @@ Optional fields:
 - `EventDetail`: `str`
 - `EventResourceName`: `str`
 
-## CreateApplicationRequestTypeDef
+## CreateApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import CreateApplicationRequestTypeDef
+from mypy_boto3_application_insights.type_defs import CreateApplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -130,10 +130,10 @@ Optional fields:
 - `OpsItemSNSTopicArn`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateApplicationResponseResponseTypeDef
+## CreateApplicationResponseTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import CreateApplicationResponseResponseTypeDef
+from mypy_boto3_application_insights.type_defs import CreateApplicationResponseTypeDef
 ```
 
 Required fields:
@@ -143,10 +143,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateComponentRequestTypeDef
+## CreateComponentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import CreateComponentRequestTypeDef
+from mypy_boto3_application_insights.type_defs import CreateComponentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -155,10 +155,10 @@ Required fields:
 - `ComponentName`: `str`
 - `ResourceList`: `List`\[`str`\]
 
-## CreateLogPatternRequestTypeDef
+## CreateLogPatternRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import CreateLogPatternRequestTypeDef
+from mypy_boto3_application_insights.type_defs import CreateLogPatternRequestRequestTypeDef
 ```
 
 Required fields:
@@ -169,10 +169,10 @@ Required fields:
 - `Pattern`: `str`
 - `Rank`: `int`
 
-## CreateLogPatternResponseResponseTypeDef
+## CreateLogPatternResponseTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import CreateLogPatternResponseResponseTypeDef
+from mypy_boto3_application_insights.type_defs import CreateLogPatternResponseTypeDef
 ```
 
 Required fields:
@@ -182,20 +182,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteApplicationRequestTypeDef
+## DeleteApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import DeleteApplicationRequestTypeDef
+from mypy_boto3_application_insights.type_defs import DeleteApplicationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceGroupName`: `str`
 
-## DeleteComponentRequestTypeDef
+## DeleteComponentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import DeleteComponentRequestTypeDef
+from mypy_boto3_application_insights.type_defs import DeleteComponentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -203,10 +203,10 @@ Required fields:
 - `ResourceGroupName`: `str`
 - `ComponentName`: `str`
 
-## DeleteLogPatternRequestTypeDef
+## DeleteLogPatternRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import DeleteLogPatternRequestTypeDef
+from mypy_boto3_application_insights.type_defs import DeleteLogPatternRequestRequestTypeDef
 ```
 
 Required fields:
@@ -215,20 +215,20 @@ Required fields:
 - `PatternSetName`: `str`
 - `PatternName`: `str`
 
-## DescribeApplicationRequestTypeDef
+## DescribeApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import DescribeApplicationRequestTypeDef
+from mypy_boto3_application_insights.type_defs import DescribeApplicationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceGroupName`: `str`
 
-## DescribeApplicationResponseResponseTypeDef
+## DescribeApplicationResponseTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import DescribeApplicationResponseResponseTypeDef
+from mypy_boto3_application_insights.type_defs import DescribeApplicationResponseTypeDef
 ```
 
 Required fields:
@@ -238,10 +238,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeComponentConfigurationRecommendationRequestTypeDef
+## DescribeComponentConfigurationRecommendationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import DescribeComponentConfigurationRecommendationRequestTypeDef
+from mypy_boto3_application_insights.type_defs import DescribeComponentConfigurationRecommendationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -250,10 +250,10 @@ Required fields:
 - `ComponentName`: `str`
 - `Tier`: [TierType](./literals.md#tiertype)
 
-## DescribeComponentConfigurationRecommendationResponseResponseTypeDef
+## DescribeComponentConfigurationRecommendationResponseTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import DescribeComponentConfigurationRecommendationResponseResponseTypeDef
+from mypy_boto3_application_insights.type_defs import DescribeComponentConfigurationRecommendationResponseTypeDef
 ```
 
 Required fields:
@@ -262,10 +262,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeComponentConfigurationRequestTypeDef
+## DescribeComponentConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import DescribeComponentConfigurationRequestTypeDef
+from mypy_boto3_application_insights.type_defs import DescribeComponentConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -273,10 +273,10 @@ Required fields:
 - `ResourceGroupName`: `str`
 - `ComponentName`: `str`
 
-## DescribeComponentConfigurationResponseResponseTypeDef
+## DescribeComponentConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import DescribeComponentConfigurationResponseResponseTypeDef
+from mypy_boto3_application_insights.type_defs import DescribeComponentConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -287,10 +287,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeComponentRequestTypeDef
+## DescribeComponentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import DescribeComponentRequestTypeDef
+from mypy_boto3_application_insights.type_defs import DescribeComponentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -298,10 +298,10 @@ Required fields:
 - `ResourceGroupName`: `str`
 - `ComponentName`: `str`
 
-## DescribeComponentResponseResponseTypeDef
+## DescribeComponentResponseTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import DescribeComponentResponseResponseTypeDef
+from mypy_boto3_application_insights.type_defs import DescribeComponentResponseTypeDef
 ```
 
 Required fields:
@@ -312,10 +312,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLogPatternRequestTypeDef
+## DescribeLogPatternRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import DescribeLogPatternRequestTypeDef
+from mypy_boto3_application_insights.type_defs import DescribeLogPatternRequestRequestTypeDef
 ```
 
 Required fields:
@@ -324,10 +324,10 @@ Required fields:
 - `PatternSetName`: `str`
 - `PatternName`: `str`
 
-## DescribeLogPatternResponseResponseTypeDef
+## DescribeLogPatternResponseTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import DescribeLogPatternResponseResponseTypeDef
+from mypy_boto3_application_insights.type_defs import DescribeLogPatternResponseTypeDef
 ```
 
 Required fields:
@@ -337,20 +337,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeObservationRequestTypeDef
+## DescribeObservationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import DescribeObservationRequestTypeDef
+from mypy_boto3_application_insights.type_defs import DescribeObservationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ObservationId`: `str`
 
-## DescribeObservationResponseResponseTypeDef
+## DescribeObservationResponseTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import DescribeObservationResponseResponseTypeDef
+from mypy_boto3_application_insights.type_defs import DescribeObservationResponseTypeDef
 ```
 
 Required fields:
@@ -359,20 +359,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeProblemObservationsRequestTypeDef
+## DescribeProblemObservationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import DescribeProblemObservationsRequestTypeDef
+from mypy_boto3_application_insights.type_defs import DescribeProblemObservationsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ProblemId`: `str`
 
-## DescribeProblemObservationsResponseResponseTypeDef
+## DescribeProblemObservationsResponseTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import DescribeProblemObservationsResponseResponseTypeDef
+from mypy_boto3_application_insights.type_defs import DescribeProblemObservationsResponseTypeDef
 ```
 
 Required fields:
@@ -382,20 +382,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeProblemRequestTypeDef
+## DescribeProblemRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import DescribeProblemRequestTypeDef
+from mypy_boto3_application_insights.type_defs import DescribeProblemRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ProblemId`: `str`
 
-## DescribeProblemResponseResponseTypeDef
+## DescribeProblemResponseTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import DescribeProblemResponseResponseTypeDef
+from mypy_boto3_application_insights.type_defs import DescribeProblemResponseTypeDef
 ```
 
 Required fields:
@@ -404,10 +404,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListApplicationsRequestTypeDef
+## ListApplicationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import ListApplicationsRequestTypeDef
+from mypy_boto3_application_insights.type_defs import ListApplicationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -415,10 +415,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListApplicationsResponseResponseTypeDef
+## ListApplicationsResponseTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import ListApplicationsResponseResponseTypeDef
+from mypy_boto3_application_insights.type_defs import ListApplicationsResponseTypeDef
 ```
 
 Required fields:
@@ -429,10 +429,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListComponentsRequestTypeDef
+## ListComponentsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import ListComponentsRequestTypeDef
+from mypy_boto3_application_insights.type_defs import ListComponentsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -444,10 +444,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListComponentsResponseResponseTypeDef
+## ListComponentsResponseTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import ListComponentsResponseResponseTypeDef
+from mypy_boto3_application_insights.type_defs import ListComponentsResponseTypeDef
 ```
 
 Required fields:
@@ -458,10 +458,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListConfigurationHistoryRequestTypeDef
+## ListConfigurationHistoryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import ListConfigurationHistoryRequestTypeDef
+from mypy_boto3_application_insights.type_defs import ListConfigurationHistoryRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -474,10 +474,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListConfigurationHistoryResponseResponseTypeDef
+## ListConfigurationHistoryResponseTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import ListConfigurationHistoryResponseResponseTypeDef
+from mypy_boto3_application_insights.type_defs import ListConfigurationHistoryResponseTypeDef
 ```
 
 Required fields:
@@ -488,10 +488,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListLogPatternSetsRequestTypeDef
+## ListLogPatternSetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import ListLogPatternSetsRequestTypeDef
+from mypy_boto3_application_insights.type_defs import ListLogPatternSetsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -503,10 +503,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListLogPatternSetsResponseResponseTypeDef
+## ListLogPatternSetsResponseTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import ListLogPatternSetsResponseResponseTypeDef
+from mypy_boto3_application_insights.type_defs import ListLogPatternSetsResponseTypeDef
 ```
 
 Required fields:
@@ -517,10 +517,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListLogPatternsRequestTypeDef
+## ListLogPatternsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import ListLogPatternsRequestTypeDef
+from mypy_boto3_application_insights.type_defs import ListLogPatternsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -533,10 +533,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListLogPatternsResponseResponseTypeDef
+## ListLogPatternsResponseTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import ListLogPatternsResponseResponseTypeDef
+from mypy_boto3_application_insights.type_defs import ListLogPatternsResponseTypeDef
 ```
 
 Required fields:
@@ -548,10 +548,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProblemsRequestTypeDef
+## ListProblemsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import ListProblemsRequestTypeDef
+from mypy_boto3_application_insights.type_defs import ListProblemsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -562,10 +562,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListProblemsResponseResponseTypeDef
+## ListProblemsResponseTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import ListProblemsResponseResponseTypeDef
+from mypy_boto3_application_insights.type_defs import ListProblemsResponseTypeDef
 ```
 
 Required fields:
@@ -575,20 +575,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_application_insights.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceARN`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_application_insights.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -711,10 +711,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_application_insights.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -733,10 +733,10 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_application_insights.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -744,10 +744,10 @@ Required fields:
 - `ResourceARN`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateApplicationRequestTypeDef
+## UpdateApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import UpdateApplicationRequestTypeDef
+from mypy_boto3_application_insights.type_defs import UpdateApplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -761,10 +761,10 @@ Optional fields:
 - `OpsItemSNSTopicArn`: `str`
 - `RemoveSNSTopic`: `bool`
 
-## UpdateApplicationResponseResponseTypeDef
+## UpdateApplicationResponseTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import UpdateApplicationResponseResponseTypeDef
+from mypy_boto3_application_insights.type_defs import UpdateApplicationResponseTypeDef
 ```
 
 Required fields:
@@ -774,10 +774,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateComponentConfigurationRequestTypeDef
+## UpdateComponentConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import UpdateComponentConfigurationRequestTypeDef
+from mypy_boto3_application_insights.type_defs import UpdateComponentConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -791,10 +791,10 @@ Optional fields:
 - `Tier`: [TierType](./literals.md#tiertype)
 - `ComponentConfiguration`: `str`
 
-## UpdateComponentRequestTypeDef
+## UpdateComponentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import UpdateComponentRequestTypeDef
+from mypy_boto3_application_insights.type_defs import UpdateComponentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -807,10 +807,10 @@ Optional fields:
 - `NewComponentName`: `str`
 - `ResourceList`: `List`\[`str`\]
 
-## UpdateLogPatternRequestTypeDef
+## UpdateLogPatternRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import UpdateLogPatternRequestTypeDef
+from mypy_boto3_application_insights.type_defs import UpdateLogPatternRequestRequestTypeDef
 ```
 
 Required fields:
@@ -824,10 +824,10 @@ Optional fields:
 - `Pattern`: `str`
 - `Rank`: `int`
 
-## UpdateLogPatternResponseResponseTypeDef
+## UpdateLogPatternResponseTypeDef
 
 ```python
-from mypy_boto3_application_insights.type_defs import UpdateLogPatternResponseResponseTypeDef
+from mypy_boto3_application_insights.type_defs import UpdateLogPatternResponseTypeDef
 ```
 
 Required fields:

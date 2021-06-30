@@ -35,7 +35,7 @@ Arguments for `ListChannelsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListChannelsPaginator.paginate` returns
-`Iterator`\[[ListChannelsResponseResponseTypeDef](./type_defs.md#listchannelsresponseresponsetypedef)\].
+`Iterator`\[[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)\].
 
 ## ListHarvestJobsPaginator
 
@@ -62,7 +62,7 @@ Arguments for `ListHarvestJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListHarvestJobsPaginator.paginate` returns
-`Iterator`\[[ListHarvestJobsResponseResponseTypeDef](./type_defs.md#listharvestjobsresponseresponsetypedef)\].
+`Iterator`\[[ListHarvestJobsResponseTypeDef](./type_defs.md#listharvestjobsresponsetypedef)\].
 
 ## ListOriginEndpointsPaginator
 
@@ -88,4 +88,4 @@ Arguments for `ListOriginEndpointsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOriginEndpointsPaginator.paginate` returns
-`Iterator`\[[ListOriginEndpointsResponseResponseTypeDef](./type_defs.md#listoriginendpointsresponseresponsetypedef)\].
+`Iterator`\[[ListOriginEndpointsResponseTypeDef](./type_defs.md#listoriginendpointsresponsetypedef)\].

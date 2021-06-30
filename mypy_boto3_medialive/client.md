@@ -11,6 +11,7 @@ type annotations stubs module
   - [MediaLiveClient](#medialiveclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [accept_input_device_transfer](#accept_input_device_transfer)
     - [batch_delete](#batch_delete)
     - [batch_start](#batch_start)
@@ -115,6 +116,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+MediaLiveClient exceptions.
+
+Type annotations for `boto3.client("medialive").exceptions` method.
+
+Boto3 documentation:
+[MediaLive.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### accept_input_device_transfer
 
 Accept an incoming input device transfer.
@@ -126,7 +138,7 @@ Boto3 documentation:
 [MediaLive.Client.accept_input_device_transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.accept_input_device_transfer)
 
 Arguments mapping described in
-[AcceptInputDeviceTransferRequestTypeDef](./type_defs.md#acceptinputdevicetransferrequesttypedef).
+[AcceptInputDeviceTransferRequestRequestTypeDef](./type_defs.md#acceptinputdevicetransferrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -144,7 +156,7 @@ Boto3 documentation:
 [MediaLive.Client.batch_delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_delete)
 
 Arguments mapping described in
-[BatchDeleteRequestTypeDef](./type_defs.md#batchdeleterequesttypedef).
+[BatchDeleteRequestRequestTypeDef](./type_defs.md#batchdeleterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -154,7 +166,7 @@ Keyword-only arguments:
 - `MultiplexIds`: `List`\[`str`\]
 
 Returns
-[BatchDeleteResponseResponseTypeDef](./type_defs.md#batchdeleteresponseresponsetypedef).
+[BatchDeleteResponseTypeDef](./type_defs.md#batchdeleteresponsetypedef).
 
 ### batch_start
 
@@ -169,15 +181,14 @@ Boto3 documentation:
 [MediaLive.Client.batch_start](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_start)
 
 Arguments mapping described in
-[BatchStartRequestTypeDef](./type_defs.md#batchstartrequesttypedef).
+[BatchStartRequestRequestTypeDef](./type_defs.md#batchstartrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ChannelIds`: `List`\[`str`\]
 - `MultiplexIds`: `List`\[`str`\]
 
-Returns
-[BatchStartResponseResponseTypeDef](./type_defs.md#batchstartresponseresponsetypedef).
+Returns [BatchStartResponseTypeDef](./type_defs.md#batchstartresponsetypedef).
 
 ### batch_stop
 
@@ -192,15 +203,14 @@ Boto3 documentation:
 [MediaLive.Client.batch_stop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_stop)
 
 Arguments mapping described in
-[BatchStopRequestTypeDef](./type_defs.md#batchstoprequesttypedef).
+[BatchStopRequestRequestTypeDef](./type_defs.md#batchstoprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ChannelIds`: `List`\[`str`\]
 - `MultiplexIds`: `List`\[`str`\]
 
-Returns
-[BatchStopResponseResponseTypeDef](./type_defs.md#batchstopresponseresponsetypedef).
+Returns [BatchStopResponseTypeDef](./type_defs.md#batchstopresponsetypedef).
 
 ### batch_update_schedule
 
@@ -215,7 +225,7 @@ Boto3 documentation:
 [MediaLive.Client.batch_update_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_update_schedule)
 
 Arguments mapping described in
-[BatchUpdateScheduleRequestTypeDef](./type_defs.md#batchupdateschedulerequesttypedef).
+[BatchUpdateScheduleRequestRequestTypeDef](./type_defs.md#batchupdateschedulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -226,7 +236,7 @@ Keyword-only arguments:
   [BatchScheduleActionDeleteRequestTypeDef](./type_defs.md#batchscheduleactiondeleterequesttypedef)
 
 Returns
-[BatchUpdateScheduleResponseResponseTypeDef](./type_defs.md#batchupdatescheduleresponseresponsetypedef).
+[BatchUpdateScheduleResponseTypeDef](./type_defs.md#batchupdatescheduleresponsetypedef).
 
 ### can_paginate
 
@@ -254,7 +264,7 @@ Boto3 documentation:
 [MediaLive.Client.cancel_input_device_transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.cancel_input_device_transfer)
 
 Arguments mapping described in
-[CancelInputDeviceTransferRequestTypeDef](./type_defs.md#cancelinputdevicetransferrequesttypedef).
+[CancelInputDeviceTransferRequestRequestTypeDef](./type_defs.md#cancelinputdevicetransferrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -275,7 +285,7 @@ Boto3 documentation:
 [MediaLive.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_channel)
 
 Arguments mapping described in
-[CreateChannelRequestTypeDef](./type_defs.md#createchannelrequesttypedef).
+[CreateChannelRequestRequestTypeDef](./type_defs.md#createchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -299,7 +309,7 @@ Keyword-only arguments:
 - `Vpc`: [VpcOutputSettingsTypeDef](./type_defs.md#vpcoutputsettingstypedef)
 
 Returns
-[CreateChannelResponseResponseTypeDef](./type_defs.md#createchannelresponseresponsetypedef).
+[CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
 
 ### create_input
 
@@ -314,7 +324,7 @@ Boto3 documentation:
 [MediaLive.Client.create_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_input)
 
 Arguments mapping described in
-[CreateInputRequestTypeDef](./type_defs.md#createinputrequesttypedef).
+[CreateInputRequestRequestTypeDef](./type_defs.md#createinputrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -335,7 +345,7 @@ Keyword-only arguments:
 - `Vpc`: [InputVpcRequestTypeDef](./type_defs.md#inputvpcrequesttypedef)
 
 Returns
-[CreateInputResponseResponseTypeDef](./type_defs.md#createinputresponseresponsetypedef).
+[CreateInputResponseTypeDef](./type_defs.md#createinputresponsetypedef).
 
 ### create_input_security_group
 
@@ -351,7 +361,7 @@ Boto3 documentation:
 [MediaLive.Client.create_input_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_input_security_group)
 
 Arguments mapping described in
-[CreateInputSecurityGroupRequestTypeDef](./type_defs.md#createinputsecuritygrouprequesttypedef).
+[CreateInputSecurityGroupRequestRequestTypeDef](./type_defs.md#createinputsecuritygrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -360,7 +370,7 @@ Keyword-only arguments:
   `List`\[[InputWhitelistRuleCidrTypeDef](./type_defs.md#inputwhitelistrulecidrtypedef)\]
 
 Returns
-[CreateInputSecurityGroupResponseResponseTypeDef](./type_defs.md#createinputsecuritygroupresponseresponsetypedef).
+[CreateInputSecurityGroupResponseTypeDef](./type_defs.md#createinputsecuritygroupresponsetypedef).
 
 ### create_multiplex
 
@@ -372,7 +382,7 @@ Boto3 documentation:
 [MediaLive.Client.create_multiplex](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_multiplex)
 
 Arguments mapping described in
-[CreateMultiplexRequestTypeDef](./type_defs.md#createmultiplexrequesttypedef).
+[CreateMultiplexRequestRequestTypeDef](./type_defs.md#createmultiplexrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -385,7 +395,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateMultiplexResponseResponseTypeDef](./type_defs.md#createmultiplexresponseresponsetypedef).
+[CreateMultiplexResponseTypeDef](./type_defs.md#createmultiplexresponsetypedef).
 
 ### create_multiplex_program
 
@@ -398,7 +408,7 @@ Boto3 documentation:
 [MediaLive.Client.create_multiplex_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_multiplex_program)
 
 Arguments mapping described in
-[CreateMultiplexProgramRequestTypeDef](./type_defs.md#createmultiplexprogramrequesttypedef).
+[CreateMultiplexProgramRequestRequestTypeDef](./type_defs.md#createmultiplexprogramrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -410,7 +420,7 @@ Keyword-only arguments:
 - `RequestId`: `str` *(required)*
 
 Returns
-[CreateMultiplexProgramResponseResponseTypeDef](./type_defs.md#createmultiplexprogramresponseresponsetypedef).
+[CreateMultiplexProgramResponseTypeDef](./type_defs.md#createmultiplexprogramresponsetypedef).
 
 ### create_partner_input
 
@@ -425,7 +435,7 @@ Boto3 documentation:
 [MediaLive.Client.create_partner_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_partner_input)
 
 Arguments mapping described in
-[CreatePartnerInputRequestTypeDef](./type_defs.md#createpartnerinputrequesttypedef).
+[CreatePartnerInputRequestRequestTypeDef](./type_defs.md#createpartnerinputrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -434,7 +444,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreatePartnerInputResponseResponseTypeDef](./type_defs.md#createpartnerinputresponseresponsetypedef).
+[CreatePartnerInputResponseTypeDef](./type_defs.md#createpartnerinputresponsetypedef).
 
 ### create_tags
 
@@ -449,7 +459,7 @@ Boto3 documentation:
 [MediaLive.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_tags)
 
 Arguments mapping described in
-[CreateTagsRequestTypeDef](./type_defs.md#createtagsrequesttypedef).
+[CreateTagsRequestRequestTypeDef](./type_defs.md#createtagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -466,14 +476,14 @@ Boto3 documentation:
 [MediaLive.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_channel)
 
 Arguments mapping described in
-[DeleteChannelRequestTypeDef](./type_defs.md#deletechannelrequesttypedef).
+[DeleteChannelRequestRequestTypeDef](./type_defs.md#deletechannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ChannelId`: `str` *(required)*
 
 Returns
-[DeleteChannelResponseResponseTypeDef](./type_defs.md#deletechannelresponseresponsetypedef).
+[DeleteChannelResponseTypeDef](./type_defs.md#deletechannelresponsetypedef).
 
 ### delete_input
 
@@ -487,7 +497,7 @@ Boto3 documentation:
 [MediaLive.Client.delete_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_input)
 
 Arguments mapping described in
-[DeleteInputRequestTypeDef](./type_defs.md#deleteinputrequesttypedef).
+[DeleteInputRequestRequestTypeDef](./type_defs.md#deleteinputrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -509,7 +519,7 @@ Boto3 documentation:
 [MediaLive.Client.delete_input_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_input_security_group)
 
 Arguments mapping described in
-[DeleteInputSecurityGroupRequestTypeDef](./type_defs.md#deleteinputsecuritygrouprequesttypedef).
+[DeleteInputSecurityGroupRequestRequestTypeDef](./type_defs.md#deleteinputsecuritygrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -527,14 +537,14 @@ Boto3 documentation:
 [MediaLive.Client.delete_multiplex](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_multiplex)
 
 Arguments mapping described in
-[DeleteMultiplexRequestTypeDef](./type_defs.md#deletemultiplexrequesttypedef).
+[DeleteMultiplexRequestRequestTypeDef](./type_defs.md#deletemultiplexrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `MultiplexId`: `str` *(required)*
 
 Returns
-[DeleteMultiplexResponseResponseTypeDef](./type_defs.md#deletemultiplexresponseresponsetypedef).
+[DeleteMultiplexResponseTypeDef](./type_defs.md#deletemultiplexresponsetypedef).
 
 ### delete_multiplex_program
 
@@ -547,7 +557,7 @@ Boto3 documentation:
 [MediaLive.Client.delete_multiplex_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_multiplex_program)
 
 Arguments mapping described in
-[DeleteMultiplexProgramRequestTypeDef](./type_defs.md#deletemultiplexprogramrequesttypedef).
+[DeleteMultiplexProgramRequestRequestTypeDef](./type_defs.md#deletemultiplexprogramrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -555,7 +565,7 @@ Keyword-only arguments:
 - `ProgramName`: `str` *(required)*
 
 Returns
-[DeleteMultiplexProgramResponseResponseTypeDef](./type_defs.md#deletemultiplexprogramresponseresponsetypedef).
+[DeleteMultiplexProgramResponseTypeDef](./type_defs.md#deletemultiplexprogramresponsetypedef).
 
 ### delete_reservation
 
@@ -567,14 +577,14 @@ Boto3 documentation:
 [MediaLive.Client.delete_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_reservation)
 
 Arguments mapping described in
-[DeleteReservationRequestTypeDef](./type_defs.md#deletereservationrequesttypedef).
+[DeleteReservationRequestRequestTypeDef](./type_defs.md#deletereservationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ReservationId`: `str` *(required)*
 
 Returns
-[DeleteReservationResponseResponseTypeDef](./type_defs.md#deletereservationresponseresponsetypedef).
+[DeleteReservationResponseTypeDef](./type_defs.md#deletereservationresponsetypedef).
 
 ### delete_schedule
 
@@ -586,7 +596,7 @@ Boto3 documentation:
 [MediaLive.Client.delete_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_schedule)
 
 Arguments mapping described in
-[DeleteScheduleRequestTypeDef](./type_defs.md#deleteschedulerequesttypedef).
+[DeleteScheduleRequestRequestTypeDef](./type_defs.md#deleteschedulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -607,7 +617,7 @@ Boto3 documentation:
 [MediaLive.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_tags)
 
 Arguments mapping described in
-[DeleteTagsRequestTypeDef](./type_defs.md#deletetagsrequesttypedef).
+[DeleteTagsRequestRequestTypeDef](./type_defs.md#deletetagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -626,14 +636,14 @@ Boto3 documentation:
 [MediaLive.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_channel)
 
 Arguments mapping described in
-[DescribeChannelRequestTypeDef](./type_defs.md#describechannelrequesttypedef).
+[DescribeChannelRequestRequestTypeDef](./type_defs.md#describechannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ChannelId`: `str` *(required)*
 
 Returns
-[DescribeChannelResponseResponseTypeDef](./type_defs.md#describechannelresponseresponsetypedef).
+[DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
 
 ### describe_input
 
@@ -647,14 +657,14 @@ Boto3 documentation:
 [MediaLive.Client.describe_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input)
 
 Arguments mapping described in
-[DescribeInputRequestTypeDef](./type_defs.md#describeinputrequesttypedef).
+[DescribeInputRequestRequestTypeDef](./type_defs.md#describeinputrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `InputId`: `str` *(required)*
 
 Returns
-[DescribeInputResponseResponseTypeDef](./type_defs.md#describeinputresponseresponsetypedef).
+[DescribeInputResponseTypeDef](./type_defs.md#describeinputresponsetypedef).
 
 ### describe_input_device
 
@@ -669,14 +679,14 @@ Boto3 documentation:
 [MediaLive.Client.describe_input_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_device)
 
 Arguments mapping described in
-[DescribeInputDeviceRequestTypeDef](./type_defs.md#describeinputdevicerequesttypedef).
+[DescribeInputDeviceRequestRequestTypeDef](./type_defs.md#describeinputdevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `InputDeviceId`: `str` *(required)*
 
 Returns
-[DescribeInputDeviceResponseResponseTypeDef](./type_defs.md#describeinputdeviceresponseresponsetypedef).
+[DescribeInputDeviceResponseTypeDef](./type_defs.md#describeinputdeviceresponsetypedef).
 
 ### describe_input_device_thumbnail
 
@@ -689,7 +699,7 @@ Boto3 documentation:
 [MediaLive.Client.describe_input_device_thumbnail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_device_thumbnail)
 
 Arguments mapping described in
-[DescribeInputDeviceThumbnailRequestTypeDef](./type_defs.md#describeinputdevicethumbnailrequesttypedef).
+[DescribeInputDeviceThumbnailRequestRequestTypeDef](./type_defs.md#describeinputdevicethumbnailrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -698,7 +708,7 @@ Keyword-only arguments:
   [AcceptHeaderType](./literals.md#acceptheadertype)) *(required)*
 
 Returns
-[DescribeInputDeviceThumbnailResponseResponseTypeDef](./type_defs.md#describeinputdevicethumbnailresponseresponsetypedef).
+[DescribeInputDeviceThumbnailResponseTypeDef](./type_defs.md#describeinputdevicethumbnailresponsetypedef).
 
 ### describe_input_security_group
 
@@ -714,14 +724,14 @@ Boto3 documentation:
 [MediaLive.Client.describe_input_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_security_group)
 
 Arguments mapping described in
-[DescribeInputSecurityGroupRequestTypeDef](./type_defs.md#describeinputsecuritygrouprequesttypedef).
+[DescribeInputSecurityGroupRequestRequestTypeDef](./type_defs.md#describeinputsecuritygrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `InputSecurityGroupId`: `str` *(required)*
 
 Returns
-[DescribeInputSecurityGroupResponseResponseTypeDef](./type_defs.md#describeinputsecuritygroupresponseresponsetypedef).
+[DescribeInputSecurityGroupResponseTypeDef](./type_defs.md#describeinputsecuritygroupresponsetypedef).
 
 ### describe_multiplex
 
@@ -733,14 +743,14 @@ Boto3 documentation:
 [MediaLive.Client.describe_multiplex](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_multiplex)
 
 Arguments mapping described in
-[DescribeMultiplexRequestTypeDef](./type_defs.md#describemultiplexrequesttypedef).
+[DescribeMultiplexRequestRequestTypeDef](./type_defs.md#describemultiplexrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `MultiplexId`: `str` *(required)*
 
 Returns
-[DescribeMultiplexResponseResponseTypeDef](./type_defs.md#describemultiplexresponseresponsetypedef).
+[DescribeMultiplexResponseTypeDef](./type_defs.md#describemultiplexresponsetypedef).
 
 ### describe_multiplex_program
 
@@ -753,7 +763,7 @@ Boto3 documentation:
 [MediaLive.Client.describe_multiplex_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_multiplex_program)
 
 Arguments mapping described in
-[DescribeMultiplexProgramRequestTypeDef](./type_defs.md#describemultiplexprogramrequesttypedef).
+[DescribeMultiplexProgramRequestRequestTypeDef](./type_defs.md#describemultiplexprogramrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -761,7 +771,7 @@ Keyword-only arguments:
 - `ProgramName`: `str` *(required)*
 
 Returns
-[DescribeMultiplexProgramResponseResponseTypeDef](./type_defs.md#describemultiplexprogramresponseresponsetypedef).
+[DescribeMultiplexProgramResponseTypeDef](./type_defs.md#describemultiplexprogramresponsetypedef).
 
 ### describe_offering
 
@@ -773,14 +783,14 @@ Boto3 documentation:
 [MediaLive.Client.describe_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_offering)
 
 Arguments mapping described in
-[DescribeOfferingRequestTypeDef](./type_defs.md#describeofferingrequesttypedef).
+[DescribeOfferingRequestRequestTypeDef](./type_defs.md#describeofferingrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `OfferingId`: `str` *(required)*
 
 Returns
-[DescribeOfferingResponseResponseTypeDef](./type_defs.md#describeofferingresponseresponsetypedef).
+[DescribeOfferingResponseTypeDef](./type_defs.md#describeofferingresponsetypedef).
 
 ### describe_reservation
 
@@ -792,14 +802,14 @@ Boto3 documentation:
 [MediaLive.Client.describe_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_reservation)
 
 Arguments mapping described in
-[DescribeReservationRequestTypeDef](./type_defs.md#describereservationrequesttypedef).
+[DescribeReservationRequestRequestTypeDef](./type_defs.md#describereservationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ReservationId`: `str` *(required)*
 
 Returns
-[DescribeReservationResponseResponseTypeDef](./type_defs.md#describereservationresponseresponsetypedef).
+[DescribeReservationResponseTypeDef](./type_defs.md#describereservationresponsetypedef).
 
 ### describe_schedule
 
@@ -814,7 +824,7 @@ Boto3 documentation:
 [MediaLive.Client.describe_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_schedule)
 
 Arguments mapping described in
-[DescribeScheduleRequestTypeDef](./type_defs.md#describeschedulerequesttypedef).
+[DescribeScheduleRequestRequestTypeDef](./type_defs.md#describeschedulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -823,7 +833,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeScheduleResponseResponseTypeDef](./type_defs.md#describescheduleresponseresponsetypedef).
+[DescribeScheduleResponseTypeDef](./type_defs.md#describescheduleresponsetypedef).
 
 ### generate_presigned_url
 
@@ -856,7 +866,7 @@ Boto3 documentation:
 [MediaLive.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_channels)
 
 Arguments mapping described in
-[ListChannelsRequestTypeDef](./type_defs.md#listchannelsrequesttypedef).
+[ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -864,7 +874,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListChannelsResponseResponseTypeDef](./type_defs.md#listchannelsresponseresponsetypedef).
+[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
 
 ### list_input_device_transfers
 
@@ -877,7 +887,7 @@ Boto3 documentation:
 [MediaLive.Client.list_input_device_transfers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_input_device_transfers)
 
 Arguments mapping described in
-[ListInputDeviceTransfersRequestTypeDef](./type_defs.md#listinputdevicetransfersrequesttypedef).
+[ListInputDeviceTransfersRequestRequestTypeDef](./type_defs.md#listinputdevicetransfersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -886,7 +896,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListInputDeviceTransfersResponseResponseTypeDef](./type_defs.md#listinputdevicetransfersresponseresponsetypedef).
+[ListInputDeviceTransfersResponseTypeDef](./type_defs.md#listinputdevicetransfersresponsetypedef).
 
 ### list_input_devices
 
@@ -901,7 +911,7 @@ Boto3 documentation:
 [MediaLive.Client.list_input_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_input_devices)
 
 Arguments mapping described in
-[ListInputDevicesRequestTypeDef](./type_defs.md#listinputdevicesrequesttypedef).
+[ListInputDevicesRequestRequestTypeDef](./type_defs.md#listinputdevicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -909,7 +919,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListInputDevicesResponseResponseTypeDef](./type_defs.md#listinputdevicesresponseresponsetypedef).
+[ListInputDevicesResponseTypeDef](./type_defs.md#listinputdevicesresponsetypedef).
 
 ### list_input_security_groups
 
@@ -925,7 +935,7 @@ Boto3 documentation:
 [MediaLive.Client.list_input_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_input_security_groups)
 
 Arguments mapping described in
-[ListInputSecurityGroupsRequestTypeDef](./type_defs.md#listinputsecuritygroupsrequesttypedef).
+[ListInputSecurityGroupsRequestRequestTypeDef](./type_defs.md#listinputsecuritygroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -933,7 +943,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListInputSecurityGroupsResponseResponseTypeDef](./type_defs.md#listinputsecuritygroupsresponseresponsetypedef).
+[ListInputSecurityGroupsResponseTypeDef](./type_defs.md#listinputsecuritygroupsresponsetypedef).
 
 ### list_inputs
 
@@ -948,15 +958,14 @@ Boto3 documentation:
 [MediaLive.Client.list_inputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_inputs)
 
 Arguments mapping described in
-[ListInputsRequestTypeDef](./type_defs.md#listinputsrequesttypedef).
+[ListInputsRequestRequestTypeDef](./type_defs.md#listinputsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListInputsResponseResponseTypeDef](./type_defs.md#listinputsresponseresponsetypedef).
+Returns [ListInputsResponseTypeDef](./type_defs.md#listinputsresponsetypedef).
 
 ### list_multiplex_programs
 
@@ -969,7 +978,7 @@ Boto3 documentation:
 [MediaLive.Client.list_multiplex_programs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_multiplex_programs)
 
 Arguments mapping described in
-[ListMultiplexProgramsRequestTypeDef](./type_defs.md#listmultiplexprogramsrequesttypedef).
+[ListMultiplexProgramsRequestRequestTypeDef](./type_defs.md#listmultiplexprogramsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -978,7 +987,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListMultiplexProgramsResponseResponseTypeDef](./type_defs.md#listmultiplexprogramsresponseresponsetypedef).
+[ListMultiplexProgramsResponseTypeDef](./type_defs.md#listmultiplexprogramsresponsetypedef).
 
 ### list_multiplexes
 
@@ -990,7 +999,7 @@ Boto3 documentation:
 [MediaLive.Client.list_multiplexes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_multiplexes)
 
 Arguments mapping described in
-[ListMultiplexesRequestTypeDef](./type_defs.md#listmultiplexesrequesttypedef).
+[ListMultiplexesRequestRequestTypeDef](./type_defs.md#listmultiplexesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -998,7 +1007,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListMultiplexesResponseResponseTypeDef](./type_defs.md#listmultiplexesresponseresponsetypedef).
+[ListMultiplexesResponseTypeDef](./type_defs.md#listmultiplexesresponsetypedef).
 
 ### list_offerings
 
@@ -1010,7 +1019,7 @@ Boto3 documentation:
 [MediaLive.Client.list_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_offerings)
 
 Arguments mapping described in
-[ListOfferingsRequestTypeDef](./type_defs.md#listofferingsrequesttypedef).
+[ListOfferingsRequestRequestTypeDef](./type_defs.md#listofferingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1028,7 +1037,7 @@ Keyword-only arguments:
 - `VideoQuality`: `str`
 
 Returns
-[ListOfferingsResponseResponseTypeDef](./type_defs.md#listofferingsresponseresponsetypedef).
+[ListOfferingsResponseTypeDef](./type_defs.md#listofferingsresponsetypedef).
 
 ### list_reservations
 
@@ -1040,7 +1049,7 @@ Boto3 documentation:
 [MediaLive.Client.list_reservations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_reservations)
 
 Arguments mapping described in
-[ListReservationsRequestTypeDef](./type_defs.md#listreservationsrequesttypedef).
+[ListReservationsRequestRequestTypeDef](./type_defs.md#listreservationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1056,7 +1065,7 @@ Keyword-only arguments:
 - `VideoQuality`: `str`
 
 Returns
-[ListReservationsResponseResponseTypeDef](./type_defs.md#listreservationsresponseresponsetypedef).
+[ListReservationsResponseTypeDef](./type_defs.md#listreservationsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -1071,14 +1080,14 @@ Boto3 documentation:
 [MediaLive.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### purchase_offering
 
@@ -1090,7 +1099,7 @@ Boto3 documentation:
 [MediaLive.Client.purchase_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.purchase_offering)
 
 Arguments mapping described in
-[PurchaseOfferingRequestTypeDef](./type_defs.md#purchaseofferingrequesttypedef).
+[PurchaseOfferingRequestRequestTypeDef](./type_defs.md#purchaseofferingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1102,7 +1111,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[PurchaseOfferingResponseResponseTypeDef](./type_defs.md#purchaseofferingresponseresponsetypedef).
+[PurchaseOfferingResponseTypeDef](./type_defs.md#purchaseofferingresponsetypedef).
 
 ### reject_input_device_transfer
 
@@ -1115,7 +1124,7 @@ Boto3 documentation:
 [MediaLive.Client.reject_input_device_transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.reject_input_device_transfer)
 
 Arguments mapping described in
-[RejectInputDeviceTransferRequestTypeDef](./type_defs.md#rejectinputdevicetransferrequesttypedef).
+[RejectInputDeviceTransferRequestRequestTypeDef](./type_defs.md#rejectinputdevicetransferrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1135,14 +1144,14 @@ Boto3 documentation:
 [MediaLive.Client.start_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.start_channel)
 
 Arguments mapping described in
-[StartChannelRequestTypeDef](./type_defs.md#startchannelrequesttypedef).
+[StartChannelRequestRequestTypeDef](./type_defs.md#startchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ChannelId`: `str` *(required)*
 
 Returns
-[StartChannelResponseResponseTypeDef](./type_defs.md#startchannelresponseresponsetypedef).
+[StartChannelResponseTypeDef](./type_defs.md#startchannelresponsetypedef).
 
 ### start_multiplex
 
@@ -1154,14 +1163,14 @@ Boto3 documentation:
 [MediaLive.Client.start_multiplex](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.start_multiplex)
 
 Arguments mapping described in
-[StartMultiplexRequestTypeDef](./type_defs.md#startmultiplexrequesttypedef).
+[StartMultiplexRequestRequestTypeDef](./type_defs.md#startmultiplexrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `MultiplexId`: `str` *(required)*
 
 Returns
-[StartMultiplexResponseResponseTypeDef](./type_defs.md#startmultiplexresponseresponsetypedef).
+[StartMultiplexResponseTypeDef](./type_defs.md#startmultiplexresponsetypedef).
 
 ### stop_channel
 
@@ -1175,14 +1184,14 @@ Boto3 documentation:
 [MediaLive.Client.stop_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.stop_channel)
 
 Arguments mapping described in
-[StopChannelRequestTypeDef](./type_defs.md#stopchannelrequesttypedef).
+[StopChannelRequestRequestTypeDef](./type_defs.md#stopchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ChannelId`: `str` *(required)*
 
 Returns
-[StopChannelResponseResponseTypeDef](./type_defs.md#stopchannelresponseresponsetypedef).
+[StopChannelResponseTypeDef](./type_defs.md#stopchannelresponsetypedef).
 
 ### stop_multiplex
 
@@ -1194,14 +1203,14 @@ Boto3 documentation:
 [MediaLive.Client.stop_multiplex](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.stop_multiplex)
 
 Arguments mapping described in
-[StopMultiplexRequestTypeDef](./type_defs.md#stopmultiplexrequesttypedef).
+[StopMultiplexRequestRequestTypeDef](./type_defs.md#stopmultiplexrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `MultiplexId`: `str` *(required)*
 
 Returns
-[StopMultiplexResponseResponseTypeDef](./type_defs.md#stopmultiplexresponseresponsetypedef).
+[StopMultiplexResponseTypeDef](./type_defs.md#stopmultiplexresponsetypedef).
 
 ### transfer_input_device
 
@@ -1213,7 +1222,7 @@ Boto3 documentation:
 [MediaLive.Client.transfer_input_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.transfer_input_device)
 
 Arguments mapping described in
-[TransferInputDeviceRequestTypeDef](./type_defs.md#transferinputdevicerequesttypedef).
+[TransferInputDeviceRequestRequestTypeDef](./type_defs.md#transferinputdevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1234,7 +1243,7 @@ Boto3 documentation:
 [MediaLive.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_channel)
 
 Arguments mapping described in
-[UpdateChannelRequestTypeDef](./type_defs.md#updatechannelrequesttypedef).
+[UpdateChannelRequestRequestTypeDef](./type_defs.md#updatechannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1254,7 +1263,7 @@ Keyword-only arguments:
 - `RoleArn`: `str`
 
 Returns
-[UpdateChannelResponseResponseTypeDef](./type_defs.md#updatechannelresponseresponsetypedef).
+[UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
 
 ### update_channel_class
 
@@ -1266,7 +1275,7 @@ Boto3 documentation:
 [MediaLive.Client.update_channel_class](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_channel_class)
 
 Arguments mapping described in
-[UpdateChannelClassRequestTypeDef](./type_defs.md#updatechannelclassrequesttypedef).
+[UpdateChannelClassRequestRequestTypeDef](./type_defs.md#updatechannelclassrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1277,7 +1286,7 @@ Keyword-only arguments:
   `List`\[[OutputDestinationTypeDef](./type_defs.md#outputdestinationtypedef)\]
 
 Returns
-[UpdateChannelClassResponseResponseTypeDef](./type_defs.md#updatechannelclassresponseresponsetypedef).
+[UpdateChannelClassResponseTypeDef](./type_defs.md#updatechannelclassresponsetypedef).
 
 ### update_input
 
@@ -1289,7 +1298,7 @@ Boto3 documentation:
 [MediaLive.Client.update_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_input)
 
 Arguments mapping described in
-[UpdateInputRequestTypeDef](./type_defs.md#updateinputrequesttypedef).
+[UpdateInputRequestRequestTypeDef](./type_defs.md#updateinputrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1307,7 +1316,7 @@ Keyword-only arguments:
   `List`\[[InputSourceRequestTypeDef](./type_defs.md#inputsourcerequesttypedef)\]
 
 Returns
-[UpdateInputResponseResponseTypeDef](./type_defs.md#updateinputresponseresponsetypedef).
+[UpdateInputResponseTypeDef](./type_defs.md#updateinputresponsetypedef).
 
 ### update_input_device
 
@@ -1319,7 +1328,7 @@ Boto3 documentation:
 [MediaLive.Client.update_input_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_input_device)
 
 Arguments mapping described in
-[UpdateInputDeviceRequestTypeDef](./type_defs.md#updateinputdevicerequesttypedef).
+[UpdateInputDeviceRequestRequestTypeDef](./type_defs.md#updateinputdevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1331,7 +1340,7 @@ Keyword-only arguments:
   [InputDeviceConfigurableSettingsTypeDef](./type_defs.md#inputdeviceconfigurablesettingstypedef)
 
 Returns
-[UpdateInputDeviceResponseResponseTypeDef](./type_defs.md#updateinputdeviceresponseresponsetypedef).
+[UpdateInputDeviceResponseTypeDef](./type_defs.md#updateinputdeviceresponsetypedef).
 
 ### update_input_security_group
 
@@ -1344,7 +1353,7 @@ Boto3 documentation:
 [MediaLive.Client.update_input_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_input_security_group)
 
 Arguments mapping described in
-[UpdateInputSecurityGroupRequestTypeDef](./type_defs.md#updateinputsecuritygrouprequesttypedef).
+[UpdateInputSecurityGroupRequestRequestTypeDef](./type_defs.md#updateinputsecuritygrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1354,7 +1363,7 @@ Keyword-only arguments:
   `List`\[[InputWhitelistRuleCidrTypeDef](./type_defs.md#inputwhitelistrulecidrtypedef)\]
 
 Returns
-[UpdateInputSecurityGroupResponseResponseTypeDef](./type_defs.md#updateinputsecuritygroupresponseresponsetypedef).
+[UpdateInputSecurityGroupResponseTypeDef](./type_defs.md#updateinputsecuritygroupresponsetypedef).
 
 ### update_multiplex
 
@@ -1366,7 +1375,7 @@ Boto3 documentation:
 [MediaLive.Client.update_multiplex](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_multiplex)
 
 Arguments mapping described in
-[UpdateMultiplexRequestTypeDef](./type_defs.md#updatemultiplexrequesttypedef).
+[UpdateMultiplexRequestRequestTypeDef](./type_defs.md#updatemultiplexrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1376,7 +1385,7 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns
-[UpdateMultiplexResponseResponseTypeDef](./type_defs.md#updatemultiplexresponseresponsetypedef).
+[UpdateMultiplexResponseTypeDef](./type_defs.md#updatemultiplexresponsetypedef).
 
 ### update_multiplex_program
 
@@ -1389,7 +1398,7 @@ Boto3 documentation:
 [MediaLive.Client.update_multiplex_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_multiplex_program)
 
 Arguments mapping described in
-[UpdateMultiplexProgramRequestTypeDef](./type_defs.md#updatemultiplexprogramrequesttypedef).
+[UpdateMultiplexProgramRequestRequestTypeDef](./type_defs.md#updatemultiplexprogramrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1399,7 +1408,7 @@ Keyword-only arguments:
   [MultiplexProgramSettingsTypeDef](./type_defs.md#multiplexprogramsettingstypedef)
 
 Returns
-[UpdateMultiplexProgramResponseResponseTypeDef](./type_defs.md#updatemultiplexprogramresponseresponsetypedef).
+[UpdateMultiplexProgramResponseTypeDef](./type_defs.md#updatemultiplexprogramresponsetypedef).
 
 ### update_reservation
 
@@ -1411,7 +1420,7 @@ Boto3 documentation:
 [MediaLive.Client.update_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_reservation)
 
 Arguments mapping described in
-[UpdateReservationRequestTypeDef](./type_defs.md#updatereservationrequesttypedef).
+[UpdateReservationRequestRequestTypeDef](./type_defs.md#updatereservationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1419,7 +1428,7 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns
-[UpdateReservationResponseResponseTypeDef](./type_defs.md#updatereservationresponseresponsetypedef).
+[UpdateReservationResponseTypeDef](./type_defs.md#updatereservationresponsetypedef).
 
 ### get_paginator
 

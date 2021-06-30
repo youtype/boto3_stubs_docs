@@ -11,6 +11,7 @@ type annotations stubs module
   - [ServiceQuotasClient](#servicequotasclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_service_quota_template](#associate_service_quota_template)
     - [can_paginate](#can_paginate)
     - [delete_service_quota_increase_request_from_template](#delete_service_quota_increase_request_from_template)
@@ -85,6 +86,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ServiceQuotasClient exceptions.
+
+Type annotations for `boto3.client("service-quotas").exceptions` method.
+
+Boto3 documentation:
+[ServiceQuotas.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_service_quota_template
 
 Associates your quota request template with your organization.
@@ -125,7 +137,7 @@ Boto3 documentation:
 [ServiceQuotas.Client.delete_service_quota_increase_request_from_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.delete_service_quota_increase_request_from_template)
 
 Arguments mapping described in
-[DeleteServiceQuotaIncreaseRequestFromTemplateRequestTypeDef](./type_defs.md#deleteservicequotaincreaserequestfromtemplaterequesttypedef).
+[DeleteServiceQuotaIncreaseRequestFromTemplateRequestRequestTypeDef](./type_defs.md#deleteservicequotaincreaserequestfromtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -178,7 +190,7 @@ Boto3 documentation:
 [ServiceQuotas.Client.get_association_for_service_quota_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_association_for_service_quota_template)
 
 Returns
-[GetAssociationForServiceQuotaTemplateResponseResponseTypeDef](./type_defs.md#getassociationforservicequotatemplateresponseresponsetypedef).
+[GetAssociationForServiceQuotaTemplateResponseTypeDef](./type_defs.md#getassociationforservicequotatemplateresponsetypedef).
 
 ### get_aws_default_service_quota
 
@@ -191,7 +203,7 @@ Boto3 documentation:
 [ServiceQuotas.Client.get_aws_default_service_quota](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_aws_default_service_quota)
 
 Arguments mapping described in
-[GetAWSDefaultServiceQuotaRequestTypeDef](./type_defs.md#getawsdefaultservicequotarequesttypedef).
+[GetAWSDefaultServiceQuotaRequestRequestTypeDef](./type_defs.md#getawsdefaultservicequotarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -199,7 +211,7 @@ Keyword-only arguments:
 - `QuotaCode`: `str` *(required)*
 
 Returns
-[GetAWSDefaultServiceQuotaResponseResponseTypeDef](./type_defs.md#getawsdefaultservicequotaresponseresponsetypedef).
+[GetAWSDefaultServiceQuotaResponseTypeDef](./type_defs.md#getawsdefaultservicequotaresponsetypedef).
 
 ### get_requested_service_quota_change
 
@@ -212,14 +224,14 @@ Boto3 documentation:
 [ServiceQuotas.Client.get_requested_service_quota_change](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_requested_service_quota_change)
 
 Arguments mapping described in
-[GetRequestedServiceQuotaChangeRequestTypeDef](./type_defs.md#getrequestedservicequotachangerequesttypedef).
+[GetRequestedServiceQuotaChangeRequestRequestTypeDef](./type_defs.md#getrequestedservicequotachangerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `RequestId`: `str` *(required)*
 
 Returns
-[GetRequestedServiceQuotaChangeResponseResponseTypeDef](./type_defs.md#getrequestedservicequotachangeresponseresponsetypedef).
+[GetRequestedServiceQuotaChangeResponseTypeDef](./type_defs.md#getrequestedservicequotachangeresponsetypedef).
 
 ### get_service_quota
 
@@ -231,7 +243,7 @@ Boto3 documentation:
 [ServiceQuotas.Client.get_service_quota](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_service_quota)
 
 Arguments mapping described in
-[GetServiceQuotaRequestTypeDef](./type_defs.md#getservicequotarequesttypedef).
+[GetServiceQuotaRequestRequestTypeDef](./type_defs.md#getservicequotarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -239,7 +251,7 @@ Keyword-only arguments:
 - `QuotaCode`: `str` *(required)*
 
 Returns
-[GetServiceQuotaResponseResponseTypeDef](./type_defs.md#getservicequotaresponseresponsetypedef).
+[GetServiceQuotaResponseTypeDef](./type_defs.md#getservicequotaresponsetypedef).
 
 ### get_service_quota_increase_request_from_template
 
@@ -254,7 +266,7 @@ Boto3 documentation:
 [ServiceQuotas.Client.get_service_quota_increase_request_from_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_service_quota_increase_request_from_template)
 
 Arguments mapping described in
-[GetServiceQuotaIncreaseRequestFromTemplateRequestTypeDef](./type_defs.md#getservicequotaincreaserequestfromtemplaterequesttypedef).
+[GetServiceQuotaIncreaseRequestFromTemplateRequestRequestTypeDef](./type_defs.md#getservicequotaincreaserequestfromtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -263,7 +275,7 @@ Keyword-only arguments:
 - `AwsRegion`: `str` *(required)*
 
 Returns
-[GetServiceQuotaIncreaseRequestFromTemplateResponseResponseTypeDef](./type_defs.md#getservicequotaincreaserequestfromtemplateresponseresponsetypedef).
+[GetServiceQuotaIncreaseRequestFromTemplateResponseTypeDef](./type_defs.md#getservicequotaincreaserequestfromtemplateresponsetypedef).
 
 ### list_aws_default_service_quotas
 
@@ -276,7 +288,7 @@ Boto3 documentation:
 [ServiceQuotas.Client.list_aws_default_service_quotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_aws_default_service_quotas)
 
 Arguments mapping described in
-[ListAWSDefaultServiceQuotasRequestTypeDef](./type_defs.md#listawsdefaultservicequotasrequesttypedef).
+[ListAWSDefaultServiceQuotasRequestRequestTypeDef](./type_defs.md#listawsdefaultservicequotasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -285,7 +297,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAWSDefaultServiceQuotasResponseResponseTypeDef](./type_defs.md#listawsdefaultservicequotasresponseresponsetypedef).
+[ListAWSDefaultServiceQuotasResponseTypeDef](./type_defs.md#listawsdefaultservicequotasresponsetypedef).
 
 ### list_requested_service_quota_change_history
 
@@ -299,7 +311,7 @@ Boto3 documentation:
 [ServiceQuotas.Client.list_requested_service_quota_change_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_requested_service_quota_change_history)
 
 Arguments mapping described in
-[ListRequestedServiceQuotaChangeHistoryRequestTypeDef](./type_defs.md#listrequestedservicequotachangehistoryrequesttypedef).
+[ListRequestedServiceQuotaChangeHistoryRequestRequestTypeDef](./type_defs.md#listrequestedservicequotachangehistoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -309,7 +321,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListRequestedServiceQuotaChangeHistoryResponseResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistoryresponseresponsetypedef).
+[ListRequestedServiceQuotaChangeHistoryResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistoryresponsetypedef).
 
 ### list_requested_service_quota_change_history_by_quota
 
@@ -323,7 +335,7 @@ Boto3 documentation:
 [ServiceQuotas.Client.list_requested_service_quota_change_history_by_quota](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_requested_service_quota_change_history_by_quota)
 
 Arguments mapping described in
-[ListRequestedServiceQuotaChangeHistoryByQuotaRequestTypeDef](./type_defs.md#listrequestedservicequotachangehistorybyquotarequesttypedef).
+[ListRequestedServiceQuotaChangeHistoryByQuotaRequestRequestTypeDef](./type_defs.md#listrequestedservicequotachangehistorybyquotarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -334,7 +346,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListRequestedServiceQuotaChangeHistoryByQuotaResponseResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistorybyquotaresponseresponsetypedef).
+[ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistorybyquotaresponsetypedef).
 
 ### list_service_quota_increase_requests_in_template
 
@@ -348,7 +360,7 @@ Boto3 documentation:
 [ServiceQuotas.Client.list_service_quota_increase_requests_in_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_service_quota_increase_requests_in_template)
 
 Arguments mapping described in
-[ListServiceQuotaIncreaseRequestsInTemplateRequestTypeDef](./type_defs.md#listservicequotaincreaserequestsintemplaterequesttypedef).
+[ListServiceQuotaIncreaseRequestsInTemplateRequestRequestTypeDef](./type_defs.md#listservicequotaincreaserequestsintemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -358,7 +370,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListServiceQuotaIncreaseRequestsInTemplateResponseResponseTypeDef](./type_defs.md#listservicequotaincreaserequestsintemplateresponseresponsetypedef).
+[ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef](./type_defs.md#listservicequotaincreaserequestsintemplateresponsetypedef).
 
 ### list_service_quotas
 
@@ -371,7 +383,7 @@ Boto3 documentation:
 [ServiceQuotas.Client.list_service_quotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_service_quotas)
 
 Arguments mapping described in
-[ListServiceQuotasRequestTypeDef](./type_defs.md#listservicequotasrequesttypedef).
+[ListServiceQuotasRequestRequestTypeDef](./type_defs.md#listservicequotasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -380,7 +392,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListServiceQuotasResponseResponseTypeDef](./type_defs.md#listservicequotasresponseresponsetypedef).
+[ListServiceQuotasResponseTypeDef](./type_defs.md#listservicequotasresponsetypedef).
 
 ### list_services
 
@@ -392,7 +404,7 @@ Boto3 documentation:
 [ServiceQuotas.Client.list_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_services)
 
 Arguments mapping described in
-[ListServicesRequestTypeDef](./type_defs.md#listservicesrequesttypedef).
+[ListServicesRequestRequestTypeDef](./type_defs.md#listservicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -400,7 +412,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListServicesResponseResponseTypeDef](./type_defs.md#listservicesresponseresponsetypedef).
+[ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -413,14 +425,14 @@ Boto3 documentation:
 [ServiceQuotas.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_service_quota_increase_request_into_template
 
@@ -434,7 +446,7 @@ Boto3 documentation:
 [ServiceQuotas.Client.put_service_quota_increase_request_into_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.put_service_quota_increase_request_into_template)
 
 Arguments mapping described in
-[PutServiceQuotaIncreaseRequestIntoTemplateRequestTypeDef](./type_defs.md#putservicequotaincreaserequestintotemplaterequesttypedef).
+[PutServiceQuotaIncreaseRequestIntoTemplateRequestRequestTypeDef](./type_defs.md#putservicequotaincreaserequestintotemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -444,7 +456,7 @@ Keyword-only arguments:
 - `DesiredValue`: `float` *(required)*
 
 Returns
-[PutServiceQuotaIncreaseRequestIntoTemplateResponseResponseTypeDef](./type_defs.md#putservicequotaincreaserequestintotemplateresponseresponsetypedef).
+[PutServiceQuotaIncreaseRequestIntoTemplateResponseTypeDef](./type_defs.md#putservicequotaincreaserequestintotemplateresponsetypedef).
 
 ### request_service_quota_increase
 
@@ -457,7 +469,7 @@ Boto3 documentation:
 [ServiceQuotas.Client.request_service_quota_increase](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.request_service_quota_increase)
 
 Arguments mapping described in
-[RequestServiceQuotaIncreaseRequestTypeDef](./type_defs.md#requestservicequotaincreaserequesttypedef).
+[RequestServiceQuotaIncreaseRequestRequestTypeDef](./type_defs.md#requestservicequotaincreaserequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -466,7 +478,7 @@ Keyword-only arguments:
 - `DesiredValue`: `float` *(required)*
 
 Returns
-[RequestServiceQuotaIncreaseResponseResponseTypeDef](./type_defs.md#requestservicequotaincreaseresponseresponsetypedef).
+[RequestServiceQuotaIncreaseResponseTypeDef](./type_defs.md#requestservicequotaincreaseresponsetypedef).
 
 ### tag_resource
 
@@ -478,7 +490,7 @@ Boto3 documentation:
 [ServiceQuotas.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -497,7 +509,7 @@ Boto3 documentation:
 [ServiceQuotas.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 

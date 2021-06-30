@@ -12,6 +12,7 @@ type annotations stubs module
   - [KinesisVideoArchivedMediaClient](#kinesisvideoarchivedmediaclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_clip](#get_clip)
@@ -64,6 +65,18 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+KinesisVideoArchivedMediaClient exceptions.
+
+Type annotations for `boto3.client("kinesis-video-archived-media").exceptions`
+method.
+
+Boto3 documentation:
+[KinesisVideoArchivedMedia.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -111,7 +124,7 @@ Boto3 documentation:
 [KinesisVideoArchivedMedia.Client.get_clip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_clip)
 
 Arguments mapping described in
-[GetClipInputTypeDef](./type_defs.md#getclipinputtypedef).
+[GetClipInputRequestTypeDef](./type_defs.md#getclipinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -121,8 +134,7 @@ Keyword-only arguments:
 - `StreamName`: `str`
 - `StreamARN`: `str`
 
-Returns
-[GetClipOutputResponseTypeDef](./type_defs.md#getclipoutputresponsetypedef).
+Returns [GetClipOutputTypeDef](./type_defs.md#getclipoutputtypedef).
 
 ### get_dash_streaming_session_url
 
@@ -137,7 +149,7 @@ Boto3 documentation:
 [KinesisVideoArchivedMedia.Client.get_dash_streaming_session_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_dash_streaming_session_url)
 
 Arguments mapping described in
-[GetDASHStreamingSessionURLInputTypeDef](./type_defs.md#getdashstreamingsessionurlinputtypedef).
+[GetDASHStreamingSessionURLInputRequestTypeDef](./type_defs.md#getdashstreamingsessionurlinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -154,7 +166,7 @@ Keyword-only arguments:
 - `MaxManifestFragmentResults`: `int`
 
 Returns
-[GetDASHStreamingSessionURLOutputResponseTypeDef](./type_defs.md#getdashstreamingsessionurloutputresponsetypedef).
+[GetDASHStreamingSessionURLOutputTypeDef](./type_defs.md#getdashstreamingsessionurloutputtypedef).
 
 ### get_hls_streaming_session_url
 
@@ -168,7 +180,7 @@ Boto3 documentation:
 [KinesisVideoArchivedMedia.Client.get_hls_streaming_session_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_hls_streaming_session_url)
 
 Arguments mapping described in
-[GetHLSStreamingSessionURLInputTypeDef](./type_defs.md#gethlsstreamingsessionurlinputtypedef).
+[GetHLSStreamingSessionURLInputRequestTypeDef](./type_defs.md#gethlsstreamingsessionurlinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -186,7 +198,7 @@ Keyword-only arguments:
 - `MaxMediaPlaylistFragmentResults`: `int`
 
 Returns
-[GetHLSStreamingSessionURLOutputResponseTypeDef](./type_defs.md#gethlsstreamingsessionurloutputresponsetypedef).
+[GetHLSStreamingSessionURLOutputTypeDef](./type_defs.md#gethlsstreamingsessionurloutputtypedef).
 
 ### get_media_for_fragment_list
 
@@ -201,7 +213,7 @@ Boto3 documentation:
 [KinesisVideoArchivedMedia.Client.get_media_for_fragment_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_media_for_fragment_list)
 
 Arguments mapping described in
-[GetMediaForFragmentListInputTypeDef](./type_defs.md#getmediaforfragmentlistinputtypedef).
+[GetMediaForFragmentListInputRequestTypeDef](./type_defs.md#getmediaforfragmentlistinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -210,7 +222,7 @@ Keyword-only arguments:
 - `StreamARN`: `str`
 
 Returns
-[GetMediaForFragmentListOutputResponseTypeDef](./type_defs.md#getmediaforfragmentlistoutputresponsetypedef).
+[GetMediaForFragmentListOutputTypeDef](./type_defs.md#getmediaforfragmentlistoutputtypedef).
 
 ### list_fragments
 
@@ -224,7 +236,7 @@ Boto3 documentation:
 [KinesisVideoArchivedMedia.Client.list_fragments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.list_fragments)
 
 Arguments mapping described in
-[ListFragmentsInputTypeDef](./type_defs.md#listfragmentsinputtypedef).
+[ListFragmentsInputRequestTypeDef](./type_defs.md#listfragmentsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -236,7 +248,7 @@ Keyword-only arguments:
   [FragmentSelectorTypeDef](./type_defs.md#fragmentselectortypedef)
 
 Returns
-[ListFragmentsOutputResponseTypeDef](./type_defs.md#listfragmentsoutputresponsetypedef).
+[ListFragmentsOutputTypeDef](./type_defs.md#listfragmentsoutputtypedef).
 
 ### get_paginator
 

@@ -8,29 +8,29 @@ type annotations stubs module
 [mypy_boto3_appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
 
 - [Typed dictionaries for boto3 AppIntegrationsService module](#typed-dictionaries-for-boto3-appintegrationsservice-module)
-  - [CreateEventIntegrationRequestTypeDef](#createeventintegrationrequesttypedef)
-  - [CreateEventIntegrationResponseResponseTypeDef](#createeventintegrationresponseresponsetypedef)
-  - [DeleteEventIntegrationRequestTypeDef](#deleteeventintegrationrequesttypedef)
+  - [CreateEventIntegrationRequestRequestTypeDef](#createeventintegrationrequestrequesttypedef)
+  - [CreateEventIntegrationResponseTypeDef](#createeventintegrationresponsetypedef)
+  - [DeleteEventIntegrationRequestRequestTypeDef](#deleteeventintegrationrequestrequesttypedef)
   - [EventFilterTypeDef](#eventfiltertypedef)
   - [EventIntegrationAssociationTypeDef](#eventintegrationassociationtypedef)
   - [EventIntegrationTypeDef](#eventintegrationtypedef)
-  - [GetEventIntegrationRequestTypeDef](#geteventintegrationrequesttypedef)
-  - [GetEventIntegrationResponseResponseTypeDef](#geteventintegrationresponseresponsetypedef)
-  - [ListEventIntegrationAssociationsRequestTypeDef](#listeventintegrationassociationsrequesttypedef)
-  - [ListEventIntegrationAssociationsResponseResponseTypeDef](#listeventintegrationassociationsresponseresponsetypedef)
-  - [ListEventIntegrationsRequestTypeDef](#listeventintegrationsrequesttypedef)
-  - [ListEventIntegrationsResponseResponseTypeDef](#listeventintegrationsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [GetEventIntegrationRequestRequestTypeDef](#geteventintegrationrequestrequesttypedef)
+  - [GetEventIntegrationResponseTypeDef](#geteventintegrationresponsetypedef)
+  - [ListEventIntegrationAssociationsRequestRequestTypeDef](#listeventintegrationassociationsrequestrequesttypedef)
+  - [ListEventIntegrationAssociationsResponseTypeDef](#listeventintegrationassociationsresponsetypedef)
+  - [ListEventIntegrationsRequestRequestTypeDef](#listeventintegrationsrequestrequesttypedef)
+  - [ListEventIntegrationsResponseTypeDef](#listeventintegrationsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateEventIntegrationRequestTypeDef](#updateeventintegrationrequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateEventIntegrationRequestRequestTypeDef](#updateeventintegrationrequestrequesttypedef)
 
-## CreateEventIntegrationRequestTypeDef
+## CreateEventIntegrationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appintegrations.type_defs import CreateEventIntegrationRequestTypeDef
+from mypy_boto3_appintegrations.type_defs import CreateEventIntegrationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -45,10 +45,10 @@ Optional fields:
 - `ClientToken`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateEventIntegrationResponseResponseTypeDef
+## CreateEventIntegrationResponseTypeDef
 
 ```python
-from mypy_boto3_appintegrations.type_defs import CreateEventIntegrationResponseResponseTypeDef
+from mypy_boto3_appintegrations.type_defs import CreateEventIntegrationResponseTypeDef
 ```
 
 Required fields:
@@ -57,10 +57,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteEventIntegrationRequestTypeDef
+## DeleteEventIntegrationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appintegrations.type_defs import DeleteEventIntegrationRequestTypeDef
+from mypy_boto3_appintegrations.type_defs import DeleteEventIntegrationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -107,20 +107,20 @@ Optional fields:
 - `EventBridgeBus`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## GetEventIntegrationRequestTypeDef
+## GetEventIntegrationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appintegrations.type_defs import GetEventIntegrationRequestTypeDef
+from mypy_boto3_appintegrations.type_defs import GetEventIntegrationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## GetEventIntegrationResponseResponseTypeDef
+## GetEventIntegrationResponseTypeDef
 
 ```python
-from mypy_boto3_appintegrations.type_defs import GetEventIntegrationResponseResponseTypeDef
+from mypy_boto3_appintegrations.type_defs import GetEventIntegrationResponseTypeDef
 ```
 
 Required fields:
@@ -134,10 +134,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListEventIntegrationAssociationsRequestTypeDef
+## ListEventIntegrationAssociationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appintegrations.type_defs import ListEventIntegrationAssociationsRequestTypeDef
+from mypy_boto3_appintegrations.type_defs import ListEventIntegrationAssociationsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -149,10 +149,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListEventIntegrationAssociationsResponseResponseTypeDef
+## ListEventIntegrationAssociationsResponseTypeDef
 
 ```python
-from mypy_boto3_appintegrations.type_defs import ListEventIntegrationAssociationsResponseResponseTypeDef
+from mypy_boto3_appintegrations.type_defs import ListEventIntegrationAssociationsResponseTypeDef
 ```
 
 Required fields:
@@ -163,10 +163,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListEventIntegrationsRequestTypeDef
+## ListEventIntegrationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appintegrations.type_defs import ListEventIntegrationsRequestTypeDef
+from mypy_boto3_appintegrations.type_defs import ListEventIntegrationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -174,10 +174,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListEventIntegrationsResponseResponseTypeDef
+## ListEventIntegrationsResponseTypeDef
 
 ```python
-from mypy_boto3_appintegrations.type_defs import ListEventIntegrationsResponseResponseTypeDef
+from mypy_boto3_appintegrations.type_defs import ListEventIntegrationsResponseTypeDef
 ```
 
 Required fields:
@@ -188,20 +188,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appintegrations.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_appintegrations.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_appintegrations.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_appintegrations.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -224,10 +224,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appintegrations.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_appintegrations.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -235,10 +235,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appintegrations.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_appintegrations.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -246,10 +246,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tagKeys`: `List`\[`str`\]
 
-## UpdateEventIntegrationRequestTypeDef
+## UpdateEventIntegrationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appintegrations.type_defs import UpdateEventIntegrationRequestTypeDef
+from mypy_boto3_appintegrations.type_defs import UpdateEventIntegrationRequestRequestTypeDef
 ```
 
 Required fields:

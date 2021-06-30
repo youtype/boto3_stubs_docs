@@ -12,229 +12,229 @@ type annotations stubs module
   - [AccessKeyLastUsedTypeDef](#accesskeylastusedtypedef)
   - [AccessKeyMetadataTypeDef](#accesskeymetadatatypedef)
   - [AccessKeyTypeDef](#accesskeytypedef)
-  - [AddClientIDToOpenIDConnectProviderRequestTypeDef](#addclientidtoopenidconnectproviderrequesttypedef)
+  - [AddClientIDToOpenIDConnectProviderRequestRequestTypeDef](#addclientidtoopenidconnectproviderrequestrequesttypedef)
   - [AddRoleToInstanceProfileRequestInstanceProfileTypeDef](#addroletoinstanceprofilerequestinstanceprofiletypedef)
-  - [AddRoleToInstanceProfileRequestTypeDef](#addroletoinstanceprofilerequesttypedef)
+  - [AddRoleToInstanceProfileRequestRequestTypeDef](#addroletoinstanceprofilerequestrequesttypedef)
   - [AddUserToGroupRequestGroupTypeDef](#addusertogrouprequestgrouptypedef)
-  - [AddUserToGroupRequestTypeDef](#addusertogrouprequesttypedef)
+  - [AddUserToGroupRequestRequestTypeDef](#addusertogrouprequestrequesttypedef)
   - [AddUserToGroupRequestUserTypeDef](#addusertogrouprequestusertypedef)
   - [AttachGroupPolicyRequestGroupTypeDef](#attachgrouppolicyrequestgrouptypedef)
   - [AttachGroupPolicyRequestPolicyTypeDef](#attachgrouppolicyrequestpolicytypedef)
-  - [AttachGroupPolicyRequestTypeDef](#attachgrouppolicyrequesttypedef)
+  - [AttachGroupPolicyRequestRequestTypeDef](#attachgrouppolicyrequestrequesttypedef)
   - [AttachRolePolicyRequestPolicyTypeDef](#attachrolepolicyrequestpolicytypedef)
+  - [AttachRolePolicyRequestRequestTypeDef](#attachrolepolicyrequestrequesttypedef)
   - [AttachRolePolicyRequestRoleTypeDef](#attachrolepolicyrequestroletypedef)
-  - [AttachRolePolicyRequestTypeDef](#attachrolepolicyrequesttypedef)
   - [AttachUserPolicyRequestPolicyTypeDef](#attachuserpolicyrequestpolicytypedef)
-  - [AttachUserPolicyRequestTypeDef](#attachuserpolicyrequesttypedef)
+  - [AttachUserPolicyRequestRequestTypeDef](#attachuserpolicyrequestrequesttypedef)
   - [AttachUserPolicyRequestUserTypeDef](#attachuserpolicyrequestusertypedef)
   - [AttachedPermissionsBoundaryTypeDef](#attachedpermissionsboundarytypedef)
   - [AttachedPolicyTypeDef](#attachedpolicytypedef)
+  - [ChangePasswordRequestRequestTypeDef](#changepasswordrequestrequesttypedef)
   - [ChangePasswordRequestServiceResourceTypeDef](#changepasswordrequestserviceresourcetypedef)
-  - [ChangePasswordRequestTypeDef](#changepasswordrequesttypedef)
   - [ContextEntryTypeDef](#contextentrytypedef)
-  - [CreateAccessKeyRequestTypeDef](#createaccesskeyrequesttypedef)
-  - [CreateAccessKeyResponseResponseTypeDef](#createaccesskeyresponseresponsetypedef)
+  - [CreateAccessKeyRequestRequestTypeDef](#createaccesskeyrequestrequesttypedef)
+  - [CreateAccessKeyResponseTypeDef](#createaccesskeyresponsetypedef)
+  - [CreateAccountAliasRequestRequestTypeDef](#createaccountaliasrequestrequesttypedef)
   - [CreateAccountAliasRequestServiceResourceTypeDef](#createaccountaliasrequestserviceresourcetypedef)
-  - [CreateAccountAliasRequestTypeDef](#createaccountaliasrequesttypedef)
   - [CreateGroupRequestGroupTypeDef](#creategrouprequestgrouptypedef)
+  - [CreateGroupRequestRequestTypeDef](#creategrouprequestrequesttypedef)
   - [CreateGroupRequestServiceResourceTypeDef](#creategrouprequestserviceresourcetypedef)
-  - [CreateGroupRequestTypeDef](#creategrouprequesttypedef)
-  - [CreateGroupResponseResponseTypeDef](#creategroupresponseresponsetypedef)
+  - [CreateGroupResponseTypeDef](#creategroupresponsetypedef)
+  - [CreateInstanceProfileRequestRequestTypeDef](#createinstanceprofilerequestrequesttypedef)
   - [CreateInstanceProfileRequestServiceResourceTypeDef](#createinstanceprofilerequestserviceresourcetypedef)
-  - [CreateInstanceProfileRequestTypeDef](#createinstanceprofilerequesttypedef)
-  - [CreateInstanceProfileResponseResponseTypeDef](#createinstanceprofileresponseresponsetypedef)
+  - [CreateInstanceProfileResponseTypeDef](#createinstanceprofileresponsetypedef)
   - [CreateLoginProfileRequestLoginProfileTypeDef](#createloginprofilerequestloginprofiletypedef)
-  - [CreateLoginProfileRequestTypeDef](#createloginprofilerequesttypedef)
+  - [CreateLoginProfileRequestRequestTypeDef](#createloginprofilerequestrequesttypedef)
   - [CreateLoginProfileRequestUserTypeDef](#createloginprofilerequestusertypedef)
-  - [CreateLoginProfileResponseResponseTypeDef](#createloginprofileresponseresponsetypedef)
-  - [CreateOpenIDConnectProviderRequestTypeDef](#createopenidconnectproviderrequesttypedef)
-  - [CreateOpenIDConnectProviderResponseResponseTypeDef](#createopenidconnectproviderresponseresponsetypedef)
+  - [CreateLoginProfileResponseTypeDef](#createloginprofileresponsetypedef)
+  - [CreateOpenIDConnectProviderRequestRequestTypeDef](#createopenidconnectproviderrequestrequesttypedef)
+  - [CreateOpenIDConnectProviderResponseTypeDef](#createopenidconnectproviderresponsetypedef)
+  - [CreatePolicyRequestRequestTypeDef](#createpolicyrequestrequesttypedef)
   - [CreatePolicyRequestServiceResourceTypeDef](#createpolicyrequestserviceresourcetypedef)
-  - [CreatePolicyRequestTypeDef](#createpolicyrequesttypedef)
-  - [CreatePolicyResponseResponseTypeDef](#createpolicyresponseresponsetypedef)
+  - [CreatePolicyResponseTypeDef](#createpolicyresponsetypedef)
   - [CreatePolicyVersionRequestPolicyTypeDef](#createpolicyversionrequestpolicytypedef)
-  - [CreatePolicyVersionRequestTypeDef](#createpolicyversionrequesttypedef)
-  - [CreatePolicyVersionResponseResponseTypeDef](#createpolicyversionresponseresponsetypedef)
+  - [CreatePolicyVersionRequestRequestTypeDef](#createpolicyversionrequestrequesttypedef)
+  - [CreatePolicyVersionResponseTypeDef](#createpolicyversionresponsetypedef)
+  - [CreateRoleRequestRequestTypeDef](#createrolerequestrequesttypedef)
   - [CreateRoleRequestServiceResourceTypeDef](#createrolerequestserviceresourcetypedef)
-  - [CreateRoleRequestTypeDef](#createrolerequesttypedef)
-  - [CreateRoleResponseResponseTypeDef](#createroleresponseresponsetypedef)
+  - [CreateRoleResponseTypeDef](#createroleresponsetypedef)
+  - [CreateSAMLProviderRequestRequestTypeDef](#createsamlproviderrequestrequesttypedef)
   - [CreateSAMLProviderRequestServiceResourceTypeDef](#createsamlproviderrequestserviceresourcetypedef)
-  - [CreateSAMLProviderRequestTypeDef](#createsamlproviderrequesttypedef)
-  - [CreateSAMLProviderResponseResponseTypeDef](#createsamlproviderresponseresponsetypedef)
-  - [CreateServiceLinkedRoleRequestTypeDef](#createservicelinkedrolerequesttypedef)
-  - [CreateServiceLinkedRoleResponseResponseTypeDef](#createservicelinkedroleresponseresponsetypedef)
-  - [CreateServiceSpecificCredentialRequestTypeDef](#createservicespecificcredentialrequesttypedef)
-  - [CreateServiceSpecificCredentialResponseResponseTypeDef](#createservicespecificcredentialresponseresponsetypedef)
+  - [CreateSAMLProviderResponseTypeDef](#createsamlproviderresponsetypedef)
+  - [CreateServiceLinkedRoleRequestRequestTypeDef](#createservicelinkedrolerequestrequesttypedef)
+  - [CreateServiceLinkedRoleResponseTypeDef](#createservicelinkedroleresponsetypedef)
+  - [CreateServiceSpecificCredentialRequestRequestTypeDef](#createservicespecificcredentialrequestrequesttypedef)
+  - [CreateServiceSpecificCredentialResponseTypeDef](#createservicespecificcredentialresponsetypedef)
+  - [CreateUserRequestRequestTypeDef](#createuserrequestrequesttypedef)
   - [CreateUserRequestServiceResourceTypeDef](#createuserrequestserviceresourcetypedef)
-  - [CreateUserRequestTypeDef](#createuserrequesttypedef)
   - [CreateUserRequestUserTypeDef](#createuserrequestusertypedef)
-  - [CreateUserResponseResponseTypeDef](#createuserresponseresponsetypedef)
+  - [CreateUserResponseTypeDef](#createuserresponsetypedef)
+  - [CreateVirtualMFADeviceRequestRequestTypeDef](#createvirtualmfadevicerequestrequesttypedef)
   - [CreateVirtualMFADeviceRequestServiceResourceTypeDef](#createvirtualmfadevicerequestserviceresourcetypedef)
-  - [CreateVirtualMFADeviceRequestTypeDef](#createvirtualmfadevicerequesttypedef)
-  - [CreateVirtualMFADeviceResponseResponseTypeDef](#createvirtualmfadeviceresponseresponsetypedef)
-  - [DeactivateMFADeviceRequestTypeDef](#deactivatemfadevicerequesttypedef)
-  - [DeleteAccessKeyRequestTypeDef](#deleteaccesskeyrequesttypedef)
-  - [DeleteAccountAliasRequestTypeDef](#deleteaccountaliasrequesttypedef)
-  - [DeleteGroupPolicyRequestTypeDef](#deletegrouppolicyrequesttypedef)
-  - [DeleteGroupRequestTypeDef](#deletegrouprequesttypedef)
-  - [DeleteInstanceProfileRequestTypeDef](#deleteinstanceprofilerequesttypedef)
-  - [DeleteLoginProfileRequestTypeDef](#deleteloginprofilerequesttypedef)
-  - [DeleteOpenIDConnectProviderRequestTypeDef](#deleteopenidconnectproviderrequesttypedef)
-  - [DeletePolicyRequestTypeDef](#deletepolicyrequesttypedef)
-  - [DeletePolicyVersionRequestTypeDef](#deletepolicyversionrequesttypedef)
-  - [DeleteRolePermissionsBoundaryRequestTypeDef](#deleterolepermissionsboundaryrequesttypedef)
-  - [DeleteRolePolicyRequestTypeDef](#deleterolepolicyrequesttypedef)
-  - [DeleteRoleRequestTypeDef](#deleterolerequesttypedef)
-  - [DeleteSAMLProviderRequestTypeDef](#deletesamlproviderrequesttypedef)
-  - [DeleteSSHPublicKeyRequestTypeDef](#deletesshpublickeyrequesttypedef)
-  - [DeleteServerCertificateRequestTypeDef](#deleteservercertificaterequesttypedef)
-  - [DeleteServiceLinkedRoleRequestTypeDef](#deleteservicelinkedrolerequesttypedef)
-  - [DeleteServiceLinkedRoleResponseResponseTypeDef](#deleteservicelinkedroleresponseresponsetypedef)
-  - [DeleteServiceSpecificCredentialRequestTypeDef](#deleteservicespecificcredentialrequesttypedef)
-  - [DeleteSigningCertificateRequestTypeDef](#deletesigningcertificaterequesttypedef)
-  - [DeleteUserPermissionsBoundaryRequestTypeDef](#deleteuserpermissionsboundaryrequesttypedef)
-  - [DeleteUserPolicyRequestTypeDef](#deleteuserpolicyrequesttypedef)
-  - [DeleteUserRequestTypeDef](#deleteuserrequesttypedef)
-  - [DeleteVirtualMFADeviceRequestTypeDef](#deletevirtualmfadevicerequesttypedef)
+  - [CreateVirtualMFADeviceResponseTypeDef](#createvirtualmfadeviceresponsetypedef)
+  - [DeactivateMFADeviceRequestRequestTypeDef](#deactivatemfadevicerequestrequesttypedef)
+  - [DeleteAccessKeyRequestRequestTypeDef](#deleteaccesskeyrequestrequesttypedef)
+  - [DeleteAccountAliasRequestRequestTypeDef](#deleteaccountaliasrequestrequesttypedef)
+  - [DeleteGroupPolicyRequestRequestTypeDef](#deletegrouppolicyrequestrequesttypedef)
+  - [DeleteGroupRequestRequestTypeDef](#deletegrouprequestrequesttypedef)
+  - [DeleteInstanceProfileRequestRequestTypeDef](#deleteinstanceprofilerequestrequesttypedef)
+  - [DeleteLoginProfileRequestRequestTypeDef](#deleteloginprofilerequestrequesttypedef)
+  - [DeleteOpenIDConnectProviderRequestRequestTypeDef](#deleteopenidconnectproviderrequestrequesttypedef)
+  - [DeletePolicyRequestRequestTypeDef](#deletepolicyrequestrequesttypedef)
+  - [DeletePolicyVersionRequestRequestTypeDef](#deletepolicyversionrequestrequesttypedef)
+  - [DeleteRolePermissionsBoundaryRequestRequestTypeDef](#deleterolepermissionsboundaryrequestrequesttypedef)
+  - [DeleteRolePolicyRequestRequestTypeDef](#deleterolepolicyrequestrequesttypedef)
+  - [DeleteRoleRequestRequestTypeDef](#deleterolerequestrequesttypedef)
+  - [DeleteSAMLProviderRequestRequestTypeDef](#deletesamlproviderrequestrequesttypedef)
+  - [DeleteSSHPublicKeyRequestRequestTypeDef](#deletesshpublickeyrequestrequesttypedef)
+  - [DeleteServerCertificateRequestRequestTypeDef](#deleteservercertificaterequestrequesttypedef)
+  - [DeleteServiceLinkedRoleRequestRequestTypeDef](#deleteservicelinkedrolerequestrequesttypedef)
+  - [DeleteServiceLinkedRoleResponseTypeDef](#deleteservicelinkedroleresponsetypedef)
+  - [DeleteServiceSpecificCredentialRequestRequestTypeDef](#deleteservicespecificcredentialrequestrequesttypedef)
+  - [DeleteSigningCertificateRequestRequestTypeDef](#deletesigningcertificaterequestrequesttypedef)
+  - [DeleteUserPermissionsBoundaryRequestRequestTypeDef](#deleteuserpermissionsboundaryrequestrequesttypedef)
+  - [DeleteUserPolicyRequestRequestTypeDef](#deleteuserpolicyrequestrequesttypedef)
+  - [DeleteUserRequestRequestTypeDef](#deleteuserrequestrequesttypedef)
+  - [DeleteVirtualMFADeviceRequestRequestTypeDef](#deletevirtualmfadevicerequestrequesttypedef)
   - [DeletionTaskFailureReasonTypeTypeDef](#deletiontaskfailurereasontypetypedef)
   - [DetachGroupPolicyRequestGroupTypeDef](#detachgrouppolicyrequestgrouptypedef)
   - [DetachGroupPolicyRequestPolicyTypeDef](#detachgrouppolicyrequestpolicytypedef)
-  - [DetachGroupPolicyRequestTypeDef](#detachgrouppolicyrequesttypedef)
+  - [DetachGroupPolicyRequestRequestTypeDef](#detachgrouppolicyrequestrequesttypedef)
   - [DetachRolePolicyRequestPolicyTypeDef](#detachrolepolicyrequestpolicytypedef)
+  - [DetachRolePolicyRequestRequestTypeDef](#detachrolepolicyrequestrequesttypedef)
   - [DetachRolePolicyRequestRoleTypeDef](#detachrolepolicyrequestroletypedef)
-  - [DetachRolePolicyRequestTypeDef](#detachrolepolicyrequesttypedef)
   - [DetachUserPolicyRequestPolicyTypeDef](#detachuserpolicyrequestpolicytypedef)
-  - [DetachUserPolicyRequestTypeDef](#detachuserpolicyrequesttypedef)
+  - [DetachUserPolicyRequestRequestTypeDef](#detachuserpolicyrequestrequesttypedef)
   - [DetachUserPolicyRequestUserTypeDef](#detachuserpolicyrequestusertypedef)
   - [EnableMFADeviceRequestMfaDeviceTypeDef](#enablemfadevicerequestmfadevicetypedef)
-  - [EnableMFADeviceRequestTypeDef](#enablemfadevicerequesttypedef)
+  - [EnableMFADeviceRequestRequestTypeDef](#enablemfadevicerequestrequesttypedef)
   - [EnableMFADeviceRequestUserTypeDef](#enablemfadevicerequestusertypedef)
   - [EntityDetailsTypeDef](#entitydetailstypedef)
   - [EntityInfoTypeDef](#entityinfotypedef)
   - [ErrorDetailsTypeDef](#errordetailstypedef)
   - [EvaluationResultTypeDef](#evaluationresulttypedef)
-  - [GenerateCredentialReportResponseResponseTypeDef](#generatecredentialreportresponseresponsetypedef)
-  - [GenerateOrganizationsAccessReportRequestTypeDef](#generateorganizationsaccessreportrequesttypedef)
-  - [GenerateOrganizationsAccessReportResponseResponseTypeDef](#generateorganizationsaccessreportresponseresponsetypedef)
-  - [GenerateServiceLastAccessedDetailsRequestTypeDef](#generateservicelastaccesseddetailsrequesttypedef)
-  - [GenerateServiceLastAccessedDetailsResponseResponseTypeDef](#generateservicelastaccesseddetailsresponseresponsetypedef)
-  - [GetAccessKeyLastUsedRequestTypeDef](#getaccesskeylastusedrequesttypedef)
-  - [GetAccessKeyLastUsedResponseResponseTypeDef](#getaccesskeylastusedresponseresponsetypedef)
-  - [GetAccountAuthorizationDetailsRequestTypeDef](#getaccountauthorizationdetailsrequesttypedef)
-  - [GetAccountAuthorizationDetailsResponseResponseTypeDef](#getaccountauthorizationdetailsresponseresponsetypedef)
-  - [GetAccountPasswordPolicyResponseResponseTypeDef](#getaccountpasswordpolicyresponseresponsetypedef)
-  - [GetAccountSummaryResponseResponseTypeDef](#getaccountsummaryresponseresponsetypedef)
-  - [GetContextKeysForCustomPolicyRequestTypeDef](#getcontextkeysforcustompolicyrequesttypedef)
-  - [GetContextKeysForPolicyResponseResponseTypeDef](#getcontextkeysforpolicyresponseresponsetypedef)
-  - [GetContextKeysForPrincipalPolicyRequestTypeDef](#getcontextkeysforprincipalpolicyrequesttypedef)
-  - [GetCredentialReportResponseResponseTypeDef](#getcredentialreportresponseresponsetypedef)
-  - [GetGroupPolicyRequestTypeDef](#getgrouppolicyrequesttypedef)
-  - [GetGroupPolicyResponseResponseTypeDef](#getgrouppolicyresponseresponsetypedef)
-  - [GetGroupRequestTypeDef](#getgrouprequesttypedef)
-  - [GetGroupResponseResponseTypeDef](#getgroupresponseresponsetypedef)
-  - [GetInstanceProfileRequestTypeDef](#getinstanceprofilerequesttypedef)
-  - [GetInstanceProfileResponseResponseTypeDef](#getinstanceprofileresponseresponsetypedef)
-  - [GetLoginProfileRequestTypeDef](#getloginprofilerequesttypedef)
-  - [GetLoginProfileResponseResponseTypeDef](#getloginprofileresponseresponsetypedef)
-  - [GetOpenIDConnectProviderRequestTypeDef](#getopenidconnectproviderrequesttypedef)
-  - [GetOpenIDConnectProviderResponseResponseTypeDef](#getopenidconnectproviderresponseresponsetypedef)
-  - [GetOrganizationsAccessReportRequestTypeDef](#getorganizationsaccessreportrequesttypedef)
-  - [GetOrganizationsAccessReportResponseResponseTypeDef](#getorganizationsaccessreportresponseresponsetypedef)
-  - [GetPolicyRequestTypeDef](#getpolicyrequesttypedef)
-  - [GetPolicyResponseResponseTypeDef](#getpolicyresponseresponsetypedef)
-  - [GetPolicyVersionRequestTypeDef](#getpolicyversionrequesttypedef)
-  - [GetPolicyVersionResponseResponseTypeDef](#getpolicyversionresponseresponsetypedef)
-  - [GetRolePolicyRequestTypeDef](#getrolepolicyrequesttypedef)
-  - [GetRolePolicyResponseResponseTypeDef](#getrolepolicyresponseresponsetypedef)
-  - [GetRoleRequestTypeDef](#getrolerequesttypedef)
-  - [GetRoleResponseResponseTypeDef](#getroleresponseresponsetypedef)
-  - [GetSAMLProviderRequestTypeDef](#getsamlproviderrequesttypedef)
-  - [GetSAMLProviderResponseResponseTypeDef](#getsamlproviderresponseresponsetypedef)
-  - [GetSSHPublicKeyRequestTypeDef](#getsshpublickeyrequesttypedef)
-  - [GetSSHPublicKeyResponseResponseTypeDef](#getsshpublickeyresponseresponsetypedef)
-  - [GetServerCertificateRequestTypeDef](#getservercertificaterequesttypedef)
-  - [GetServerCertificateResponseResponseTypeDef](#getservercertificateresponseresponsetypedef)
-  - [GetServiceLastAccessedDetailsRequestTypeDef](#getservicelastaccesseddetailsrequesttypedef)
-  - [GetServiceLastAccessedDetailsResponseResponseTypeDef](#getservicelastaccesseddetailsresponseresponsetypedef)
-  - [GetServiceLastAccessedDetailsWithEntitiesRequestTypeDef](#getservicelastaccesseddetailswithentitiesrequesttypedef)
-  - [GetServiceLastAccessedDetailsWithEntitiesResponseResponseTypeDef](#getservicelastaccesseddetailswithentitiesresponseresponsetypedef)
-  - [GetServiceLinkedRoleDeletionStatusRequestTypeDef](#getservicelinkedroledeletionstatusrequesttypedef)
-  - [GetServiceLinkedRoleDeletionStatusResponseResponseTypeDef](#getservicelinkedroledeletionstatusresponseresponsetypedef)
-  - [GetUserPolicyRequestTypeDef](#getuserpolicyrequesttypedef)
-  - [GetUserPolicyResponseResponseTypeDef](#getuserpolicyresponseresponsetypedef)
-  - [GetUserRequestTypeDef](#getuserrequesttypedef)
-  - [GetUserResponseResponseTypeDef](#getuserresponseresponsetypedef)
+  - [GenerateCredentialReportResponseTypeDef](#generatecredentialreportresponsetypedef)
+  - [GenerateOrganizationsAccessReportRequestRequestTypeDef](#generateorganizationsaccessreportrequestrequesttypedef)
+  - [GenerateOrganizationsAccessReportResponseTypeDef](#generateorganizationsaccessreportresponsetypedef)
+  - [GenerateServiceLastAccessedDetailsRequestRequestTypeDef](#generateservicelastaccesseddetailsrequestrequesttypedef)
+  - [GenerateServiceLastAccessedDetailsResponseTypeDef](#generateservicelastaccesseddetailsresponsetypedef)
+  - [GetAccessKeyLastUsedRequestRequestTypeDef](#getaccesskeylastusedrequestrequesttypedef)
+  - [GetAccessKeyLastUsedResponseTypeDef](#getaccesskeylastusedresponsetypedef)
+  - [GetAccountAuthorizationDetailsRequestRequestTypeDef](#getaccountauthorizationdetailsrequestrequesttypedef)
+  - [GetAccountAuthorizationDetailsResponseTypeDef](#getaccountauthorizationdetailsresponsetypedef)
+  - [GetAccountPasswordPolicyResponseTypeDef](#getaccountpasswordpolicyresponsetypedef)
+  - [GetAccountSummaryResponseTypeDef](#getaccountsummaryresponsetypedef)
+  - [GetContextKeysForCustomPolicyRequestRequestTypeDef](#getcontextkeysforcustompolicyrequestrequesttypedef)
+  - [GetContextKeysForPolicyResponseTypeDef](#getcontextkeysforpolicyresponsetypedef)
+  - [GetContextKeysForPrincipalPolicyRequestRequestTypeDef](#getcontextkeysforprincipalpolicyrequestrequesttypedef)
+  - [GetCredentialReportResponseTypeDef](#getcredentialreportresponsetypedef)
+  - [GetGroupPolicyRequestRequestTypeDef](#getgrouppolicyrequestrequesttypedef)
+  - [GetGroupPolicyResponseTypeDef](#getgrouppolicyresponsetypedef)
+  - [GetGroupRequestRequestTypeDef](#getgrouprequestrequesttypedef)
+  - [GetGroupResponseTypeDef](#getgroupresponsetypedef)
+  - [GetInstanceProfileRequestRequestTypeDef](#getinstanceprofilerequestrequesttypedef)
+  - [GetInstanceProfileResponseTypeDef](#getinstanceprofileresponsetypedef)
+  - [GetLoginProfileRequestRequestTypeDef](#getloginprofilerequestrequesttypedef)
+  - [GetLoginProfileResponseTypeDef](#getloginprofileresponsetypedef)
+  - [GetOpenIDConnectProviderRequestRequestTypeDef](#getopenidconnectproviderrequestrequesttypedef)
+  - [GetOpenIDConnectProviderResponseTypeDef](#getopenidconnectproviderresponsetypedef)
+  - [GetOrganizationsAccessReportRequestRequestTypeDef](#getorganizationsaccessreportrequestrequesttypedef)
+  - [GetOrganizationsAccessReportResponseTypeDef](#getorganizationsaccessreportresponsetypedef)
+  - [GetPolicyRequestRequestTypeDef](#getpolicyrequestrequesttypedef)
+  - [GetPolicyResponseTypeDef](#getpolicyresponsetypedef)
+  - [GetPolicyVersionRequestRequestTypeDef](#getpolicyversionrequestrequesttypedef)
+  - [GetPolicyVersionResponseTypeDef](#getpolicyversionresponsetypedef)
+  - [GetRolePolicyRequestRequestTypeDef](#getrolepolicyrequestrequesttypedef)
+  - [GetRolePolicyResponseTypeDef](#getrolepolicyresponsetypedef)
+  - [GetRoleRequestRequestTypeDef](#getrolerequestrequesttypedef)
+  - [GetRoleResponseTypeDef](#getroleresponsetypedef)
+  - [GetSAMLProviderRequestRequestTypeDef](#getsamlproviderrequestrequesttypedef)
+  - [GetSAMLProviderResponseTypeDef](#getsamlproviderresponsetypedef)
+  - [GetSSHPublicKeyRequestRequestTypeDef](#getsshpublickeyrequestrequesttypedef)
+  - [GetSSHPublicKeyResponseTypeDef](#getsshpublickeyresponsetypedef)
+  - [GetServerCertificateRequestRequestTypeDef](#getservercertificaterequestrequesttypedef)
+  - [GetServerCertificateResponseTypeDef](#getservercertificateresponsetypedef)
+  - [GetServiceLastAccessedDetailsRequestRequestTypeDef](#getservicelastaccesseddetailsrequestrequesttypedef)
+  - [GetServiceLastAccessedDetailsResponseTypeDef](#getservicelastaccesseddetailsresponsetypedef)
+  - [GetServiceLastAccessedDetailsWithEntitiesRequestRequestTypeDef](#getservicelastaccesseddetailswithentitiesrequestrequesttypedef)
+  - [GetServiceLastAccessedDetailsWithEntitiesResponseTypeDef](#getservicelastaccesseddetailswithentitiesresponsetypedef)
+  - [GetServiceLinkedRoleDeletionStatusRequestRequestTypeDef](#getservicelinkedroledeletionstatusrequestrequesttypedef)
+  - [GetServiceLinkedRoleDeletionStatusResponseTypeDef](#getservicelinkedroledeletionstatusresponsetypedef)
+  - [GetUserPolicyRequestRequestTypeDef](#getuserpolicyrequestrequesttypedef)
+  - [GetUserPolicyResponseTypeDef](#getuserpolicyresponsetypedef)
+  - [GetUserRequestRequestTypeDef](#getuserrequestrequesttypedef)
+  - [GetUserResponseTypeDef](#getuserresponsetypedef)
   - [GroupDetailTypeDef](#groupdetailtypedef)
   - [GroupPolicyRequestTypeDef](#grouppolicyrequesttypedef)
   - [GroupTypeDef](#grouptypedef)
   - [InstanceProfileTypeDef](#instanceprofiletypedef)
-  - [ListAccessKeysRequestTypeDef](#listaccesskeysrequesttypedef)
-  - [ListAccessKeysResponseResponseTypeDef](#listaccesskeysresponseresponsetypedef)
-  - [ListAccountAliasesRequestTypeDef](#listaccountaliasesrequesttypedef)
-  - [ListAccountAliasesResponseResponseTypeDef](#listaccountaliasesresponseresponsetypedef)
-  - [ListAttachedGroupPoliciesRequestTypeDef](#listattachedgrouppoliciesrequesttypedef)
-  - [ListAttachedGroupPoliciesResponseResponseTypeDef](#listattachedgrouppoliciesresponseresponsetypedef)
-  - [ListAttachedRolePoliciesRequestTypeDef](#listattachedrolepoliciesrequesttypedef)
-  - [ListAttachedRolePoliciesResponseResponseTypeDef](#listattachedrolepoliciesresponseresponsetypedef)
-  - [ListAttachedUserPoliciesRequestTypeDef](#listattacheduserpoliciesrequesttypedef)
-  - [ListAttachedUserPoliciesResponseResponseTypeDef](#listattacheduserpoliciesresponseresponsetypedef)
-  - [ListEntitiesForPolicyRequestTypeDef](#listentitiesforpolicyrequesttypedef)
-  - [ListEntitiesForPolicyResponseResponseTypeDef](#listentitiesforpolicyresponseresponsetypedef)
-  - [ListGroupPoliciesRequestTypeDef](#listgrouppoliciesrequesttypedef)
-  - [ListGroupPoliciesResponseResponseTypeDef](#listgrouppoliciesresponseresponsetypedef)
-  - [ListGroupsForUserRequestTypeDef](#listgroupsforuserrequesttypedef)
-  - [ListGroupsForUserResponseResponseTypeDef](#listgroupsforuserresponseresponsetypedef)
-  - [ListGroupsRequestTypeDef](#listgroupsrequesttypedef)
-  - [ListGroupsResponseResponseTypeDef](#listgroupsresponseresponsetypedef)
-  - [ListInstanceProfileTagsRequestTypeDef](#listinstanceprofiletagsrequesttypedef)
-  - [ListInstanceProfileTagsResponseResponseTypeDef](#listinstanceprofiletagsresponseresponsetypedef)
-  - [ListInstanceProfilesForRoleRequestTypeDef](#listinstanceprofilesforrolerequesttypedef)
-  - [ListInstanceProfilesForRoleResponseResponseTypeDef](#listinstanceprofilesforroleresponseresponsetypedef)
-  - [ListInstanceProfilesRequestTypeDef](#listinstanceprofilesrequesttypedef)
-  - [ListInstanceProfilesResponseResponseTypeDef](#listinstanceprofilesresponseresponsetypedef)
-  - [ListMFADeviceTagsRequestTypeDef](#listmfadevicetagsrequesttypedef)
-  - [ListMFADeviceTagsResponseResponseTypeDef](#listmfadevicetagsresponseresponsetypedef)
-  - [ListMFADevicesRequestTypeDef](#listmfadevicesrequesttypedef)
-  - [ListMFADevicesResponseResponseTypeDef](#listmfadevicesresponseresponsetypedef)
-  - [ListOpenIDConnectProviderTagsRequestTypeDef](#listopenidconnectprovidertagsrequesttypedef)
-  - [ListOpenIDConnectProviderTagsResponseResponseTypeDef](#listopenidconnectprovidertagsresponseresponsetypedef)
-  - [ListOpenIDConnectProvidersResponseResponseTypeDef](#listopenidconnectprovidersresponseresponsetypedef)
+  - [ListAccessKeysRequestRequestTypeDef](#listaccesskeysrequestrequesttypedef)
+  - [ListAccessKeysResponseTypeDef](#listaccesskeysresponsetypedef)
+  - [ListAccountAliasesRequestRequestTypeDef](#listaccountaliasesrequestrequesttypedef)
+  - [ListAccountAliasesResponseTypeDef](#listaccountaliasesresponsetypedef)
+  - [ListAttachedGroupPoliciesRequestRequestTypeDef](#listattachedgrouppoliciesrequestrequesttypedef)
+  - [ListAttachedGroupPoliciesResponseTypeDef](#listattachedgrouppoliciesresponsetypedef)
+  - [ListAttachedRolePoliciesRequestRequestTypeDef](#listattachedrolepoliciesrequestrequesttypedef)
+  - [ListAttachedRolePoliciesResponseTypeDef](#listattachedrolepoliciesresponsetypedef)
+  - [ListAttachedUserPoliciesRequestRequestTypeDef](#listattacheduserpoliciesrequestrequesttypedef)
+  - [ListAttachedUserPoliciesResponseTypeDef](#listattacheduserpoliciesresponsetypedef)
+  - [ListEntitiesForPolicyRequestRequestTypeDef](#listentitiesforpolicyrequestrequesttypedef)
+  - [ListEntitiesForPolicyResponseTypeDef](#listentitiesforpolicyresponsetypedef)
+  - [ListGroupPoliciesRequestRequestTypeDef](#listgrouppoliciesrequestrequesttypedef)
+  - [ListGroupPoliciesResponseTypeDef](#listgrouppoliciesresponsetypedef)
+  - [ListGroupsForUserRequestRequestTypeDef](#listgroupsforuserrequestrequesttypedef)
+  - [ListGroupsForUserResponseTypeDef](#listgroupsforuserresponsetypedef)
+  - [ListGroupsRequestRequestTypeDef](#listgroupsrequestrequesttypedef)
+  - [ListGroupsResponseTypeDef](#listgroupsresponsetypedef)
+  - [ListInstanceProfileTagsRequestRequestTypeDef](#listinstanceprofiletagsrequestrequesttypedef)
+  - [ListInstanceProfileTagsResponseTypeDef](#listinstanceprofiletagsresponsetypedef)
+  - [ListInstanceProfilesForRoleRequestRequestTypeDef](#listinstanceprofilesforrolerequestrequesttypedef)
+  - [ListInstanceProfilesForRoleResponseTypeDef](#listinstanceprofilesforroleresponsetypedef)
+  - [ListInstanceProfilesRequestRequestTypeDef](#listinstanceprofilesrequestrequesttypedef)
+  - [ListInstanceProfilesResponseTypeDef](#listinstanceprofilesresponsetypedef)
+  - [ListMFADeviceTagsRequestRequestTypeDef](#listmfadevicetagsrequestrequesttypedef)
+  - [ListMFADeviceTagsResponseTypeDef](#listmfadevicetagsresponsetypedef)
+  - [ListMFADevicesRequestRequestTypeDef](#listmfadevicesrequestrequesttypedef)
+  - [ListMFADevicesResponseTypeDef](#listmfadevicesresponsetypedef)
+  - [ListOpenIDConnectProviderTagsRequestRequestTypeDef](#listopenidconnectprovidertagsrequestrequesttypedef)
+  - [ListOpenIDConnectProviderTagsResponseTypeDef](#listopenidconnectprovidertagsresponsetypedef)
+  - [ListOpenIDConnectProvidersResponseTypeDef](#listopenidconnectprovidersresponsetypedef)
   - [ListPoliciesGrantingServiceAccessEntryTypeDef](#listpoliciesgrantingserviceaccessentrytypedef)
-  - [ListPoliciesGrantingServiceAccessRequestTypeDef](#listpoliciesgrantingserviceaccessrequesttypedef)
-  - [ListPoliciesGrantingServiceAccessResponseResponseTypeDef](#listpoliciesgrantingserviceaccessresponseresponsetypedef)
-  - [ListPoliciesRequestTypeDef](#listpoliciesrequesttypedef)
-  - [ListPoliciesResponseResponseTypeDef](#listpoliciesresponseresponsetypedef)
-  - [ListPolicyTagsRequestTypeDef](#listpolicytagsrequesttypedef)
-  - [ListPolicyTagsResponseResponseTypeDef](#listpolicytagsresponseresponsetypedef)
-  - [ListPolicyVersionsRequestTypeDef](#listpolicyversionsrequesttypedef)
-  - [ListPolicyVersionsResponseResponseTypeDef](#listpolicyversionsresponseresponsetypedef)
-  - [ListRolePoliciesRequestTypeDef](#listrolepoliciesrequesttypedef)
-  - [ListRolePoliciesResponseResponseTypeDef](#listrolepoliciesresponseresponsetypedef)
-  - [ListRoleTagsRequestTypeDef](#listroletagsrequesttypedef)
-  - [ListRoleTagsResponseResponseTypeDef](#listroletagsresponseresponsetypedef)
-  - [ListRolesRequestTypeDef](#listrolesrequesttypedef)
-  - [ListRolesResponseResponseTypeDef](#listrolesresponseresponsetypedef)
-  - [ListSAMLProviderTagsRequestTypeDef](#listsamlprovidertagsrequesttypedef)
-  - [ListSAMLProviderTagsResponseResponseTypeDef](#listsamlprovidertagsresponseresponsetypedef)
-  - [ListSAMLProvidersResponseResponseTypeDef](#listsamlprovidersresponseresponsetypedef)
-  - [ListSSHPublicKeysRequestTypeDef](#listsshpublickeysrequesttypedef)
-  - [ListSSHPublicKeysResponseResponseTypeDef](#listsshpublickeysresponseresponsetypedef)
-  - [ListServerCertificateTagsRequestTypeDef](#listservercertificatetagsrequesttypedef)
-  - [ListServerCertificateTagsResponseResponseTypeDef](#listservercertificatetagsresponseresponsetypedef)
-  - [ListServerCertificatesRequestTypeDef](#listservercertificatesrequesttypedef)
-  - [ListServerCertificatesResponseResponseTypeDef](#listservercertificatesresponseresponsetypedef)
-  - [ListServiceSpecificCredentialsRequestTypeDef](#listservicespecificcredentialsrequesttypedef)
-  - [ListServiceSpecificCredentialsResponseResponseTypeDef](#listservicespecificcredentialsresponseresponsetypedef)
-  - [ListSigningCertificatesRequestTypeDef](#listsigningcertificatesrequesttypedef)
-  - [ListSigningCertificatesResponseResponseTypeDef](#listsigningcertificatesresponseresponsetypedef)
-  - [ListUserPoliciesRequestTypeDef](#listuserpoliciesrequesttypedef)
-  - [ListUserPoliciesResponseResponseTypeDef](#listuserpoliciesresponseresponsetypedef)
-  - [ListUserTagsRequestTypeDef](#listusertagsrequesttypedef)
-  - [ListUserTagsResponseResponseTypeDef](#listusertagsresponseresponsetypedef)
-  - [ListUsersRequestTypeDef](#listusersrequesttypedef)
-  - [ListUsersResponseResponseTypeDef](#listusersresponseresponsetypedef)
-  - [ListVirtualMFADevicesRequestTypeDef](#listvirtualmfadevicesrequesttypedef)
-  - [ListVirtualMFADevicesResponseResponseTypeDef](#listvirtualmfadevicesresponseresponsetypedef)
+  - [ListPoliciesGrantingServiceAccessRequestRequestTypeDef](#listpoliciesgrantingserviceaccessrequestrequesttypedef)
+  - [ListPoliciesGrantingServiceAccessResponseTypeDef](#listpoliciesgrantingserviceaccessresponsetypedef)
+  - [ListPoliciesRequestRequestTypeDef](#listpoliciesrequestrequesttypedef)
+  - [ListPoliciesResponseTypeDef](#listpoliciesresponsetypedef)
+  - [ListPolicyTagsRequestRequestTypeDef](#listpolicytagsrequestrequesttypedef)
+  - [ListPolicyTagsResponseTypeDef](#listpolicytagsresponsetypedef)
+  - [ListPolicyVersionsRequestRequestTypeDef](#listpolicyversionsrequestrequesttypedef)
+  - [ListPolicyVersionsResponseTypeDef](#listpolicyversionsresponsetypedef)
+  - [ListRolePoliciesRequestRequestTypeDef](#listrolepoliciesrequestrequesttypedef)
+  - [ListRolePoliciesResponseTypeDef](#listrolepoliciesresponsetypedef)
+  - [ListRoleTagsRequestRequestTypeDef](#listroletagsrequestrequesttypedef)
+  - [ListRoleTagsResponseTypeDef](#listroletagsresponsetypedef)
+  - [ListRolesRequestRequestTypeDef](#listrolesrequestrequesttypedef)
+  - [ListRolesResponseTypeDef](#listrolesresponsetypedef)
+  - [ListSAMLProviderTagsRequestRequestTypeDef](#listsamlprovidertagsrequestrequesttypedef)
+  - [ListSAMLProviderTagsResponseTypeDef](#listsamlprovidertagsresponsetypedef)
+  - [ListSAMLProvidersResponseTypeDef](#listsamlprovidersresponsetypedef)
+  - [ListSSHPublicKeysRequestRequestTypeDef](#listsshpublickeysrequestrequesttypedef)
+  - [ListSSHPublicKeysResponseTypeDef](#listsshpublickeysresponsetypedef)
+  - [ListServerCertificateTagsRequestRequestTypeDef](#listservercertificatetagsrequestrequesttypedef)
+  - [ListServerCertificateTagsResponseTypeDef](#listservercertificatetagsresponsetypedef)
+  - [ListServerCertificatesRequestRequestTypeDef](#listservercertificatesrequestrequesttypedef)
+  - [ListServerCertificatesResponseTypeDef](#listservercertificatesresponsetypedef)
+  - [ListServiceSpecificCredentialsRequestRequestTypeDef](#listservicespecificcredentialsrequestrequesttypedef)
+  - [ListServiceSpecificCredentialsResponseTypeDef](#listservicespecificcredentialsresponsetypedef)
+  - [ListSigningCertificatesRequestRequestTypeDef](#listsigningcertificatesrequestrequesttypedef)
+  - [ListSigningCertificatesResponseTypeDef](#listsigningcertificatesresponsetypedef)
+  - [ListUserPoliciesRequestRequestTypeDef](#listuserpoliciesrequestrequesttypedef)
+  - [ListUserPoliciesResponseTypeDef](#listuserpoliciesresponsetypedef)
+  - [ListUserTagsRequestRequestTypeDef](#listusertagsrequestrequesttypedef)
+  - [ListUserTagsResponseTypeDef](#listusertagsresponsetypedef)
+  - [ListUsersRequestRequestTypeDef](#listusersrequestrequesttypedef)
+  - [ListUsersResponseTypeDef](#listusersresponsetypedef)
+  - [ListVirtualMFADevicesRequestRequestTypeDef](#listvirtualmfadevicesrequestrequesttypedef)
+  - [ListVirtualMFADevicesResponseTypeDef](#listvirtualmfadevicesresponsetypedef)
   - [LoginProfileTypeDef](#loginprofiletypedef)
   - [MFADeviceTypeDef](#mfadevicetypedef)
   - [ManagedPolicyDetailTypeDef](#managedpolicydetailtypedef)
@@ -253,26 +253,26 @@ type annotations stubs module
   - [PositionTypeDef](#positiontypedef)
   - [PutGroupPolicyRequestGroupPolicyTypeDef](#putgrouppolicyrequestgrouppolicytypedef)
   - [PutGroupPolicyRequestGroupTypeDef](#putgrouppolicyrequestgrouptypedef)
-  - [PutGroupPolicyRequestTypeDef](#putgrouppolicyrequesttypedef)
-  - [PutRolePermissionsBoundaryRequestTypeDef](#putrolepermissionsboundaryrequesttypedef)
+  - [PutGroupPolicyRequestRequestTypeDef](#putgrouppolicyrequestrequesttypedef)
+  - [PutRolePermissionsBoundaryRequestRequestTypeDef](#putrolepermissionsboundaryrequestrequesttypedef)
+  - [PutRolePolicyRequestRequestTypeDef](#putrolepolicyrequestrequesttypedef)
   - [PutRolePolicyRequestRolePolicyTypeDef](#putrolepolicyrequestrolepolicytypedef)
-  - [PutRolePolicyRequestTypeDef](#putrolepolicyrequesttypedef)
-  - [PutUserPermissionsBoundaryRequestTypeDef](#putuserpermissionsboundaryrequesttypedef)
-  - [PutUserPolicyRequestTypeDef](#putuserpolicyrequesttypedef)
+  - [PutUserPermissionsBoundaryRequestRequestTypeDef](#putuserpermissionsboundaryrequestrequesttypedef)
+  - [PutUserPolicyRequestRequestTypeDef](#putuserpolicyrequestrequesttypedef)
   - [PutUserPolicyRequestUserPolicyTypeDef](#putuserpolicyrequestuserpolicytypedef)
   - [PutUserPolicyRequestUserTypeDef](#putuserpolicyrequestusertypedef)
-  - [RemoveClientIDFromOpenIDConnectProviderRequestTypeDef](#removeclientidfromopenidconnectproviderrequesttypedef)
+  - [RemoveClientIDFromOpenIDConnectProviderRequestRequestTypeDef](#removeclientidfromopenidconnectproviderrequestrequesttypedef)
   - [RemoveRoleFromInstanceProfileRequestInstanceProfileTypeDef](#removerolefrominstanceprofilerequestinstanceprofiletypedef)
-  - [RemoveRoleFromInstanceProfileRequestTypeDef](#removerolefrominstanceprofilerequesttypedef)
+  - [RemoveRoleFromInstanceProfileRequestRequestTypeDef](#removerolefrominstanceprofilerequestrequesttypedef)
   - [RemoveUserFromGroupRequestGroupTypeDef](#removeuserfromgrouprequestgrouptypedef)
-  - [RemoveUserFromGroupRequestTypeDef](#removeuserfromgrouprequesttypedef)
+  - [RemoveUserFromGroupRequestRequestTypeDef](#removeuserfromgrouprequestrequesttypedef)
   - [RemoveUserFromGroupRequestUserTypeDef](#removeuserfromgrouprequestusertypedef)
-  - [ResetServiceSpecificCredentialRequestTypeDef](#resetservicespecificcredentialrequesttypedef)
-  - [ResetServiceSpecificCredentialResponseResponseTypeDef](#resetservicespecificcredentialresponseresponsetypedef)
+  - [ResetServiceSpecificCredentialRequestRequestTypeDef](#resetservicespecificcredentialrequestrequesttypedef)
+  - [ResetServiceSpecificCredentialResponseTypeDef](#resetservicespecificcredentialresponsetypedef)
   - [ResourceSpecificResultTypeDef](#resourcespecificresulttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ResyncMFADeviceRequestMfaDeviceTypeDef](#resyncmfadevicerequestmfadevicetypedef)
-  - [ResyncMFADeviceRequestTypeDef](#resyncmfadevicerequesttypedef)
+  - [ResyncMFADeviceRequestRequestTypeDef](#resyncmfadevicerequestrequesttypedef)
   - [RoleDetailTypeDef](#roledetailtypedef)
   - [RoleLastUsedTypeDef](#rolelastusedtypedef)
   - [RolePolicyRequestTypeDef](#rolepolicyrequesttypedef)
@@ -304,66 +304,66 @@ type annotations stubs module
   - [ServiceResourceVirtualMfaDeviceRequestTypeDef](#serviceresourcevirtualmfadevicerequesttypedef)
   - [ServiceSpecificCredentialMetadataTypeDef](#servicespecificcredentialmetadatatypedef)
   - [ServiceSpecificCredentialTypeDef](#servicespecificcredentialtypedef)
-  - [SetDefaultPolicyVersionRequestTypeDef](#setdefaultpolicyversionrequesttypedef)
-  - [SetSecurityTokenServicePreferencesRequestTypeDef](#setsecuritytokenservicepreferencesrequesttypedef)
+  - [SetDefaultPolicyVersionRequestRequestTypeDef](#setdefaultpolicyversionrequestrequesttypedef)
+  - [SetSecurityTokenServicePreferencesRequestRequestTypeDef](#setsecuritytokenservicepreferencesrequestrequesttypedef)
   - [SigningCertificateTypeDef](#signingcertificatetypedef)
-  - [SimulateCustomPolicyRequestTypeDef](#simulatecustompolicyrequesttypedef)
-  - [SimulatePolicyResponseResponseTypeDef](#simulatepolicyresponseresponsetypedef)
-  - [SimulatePrincipalPolicyRequestTypeDef](#simulateprincipalpolicyrequesttypedef)
+  - [SimulateCustomPolicyRequestRequestTypeDef](#simulatecustompolicyrequestrequesttypedef)
+  - [SimulatePolicyResponseTypeDef](#simulatepolicyresponsetypedef)
+  - [SimulatePrincipalPolicyRequestRequestTypeDef](#simulateprincipalpolicyrequestrequesttypedef)
   - [StatementTypeDef](#statementtypedef)
-  - [TagInstanceProfileRequestTypeDef](#taginstanceprofilerequesttypedef)
-  - [TagMFADeviceRequestTypeDef](#tagmfadevicerequesttypedef)
-  - [TagOpenIDConnectProviderRequestTypeDef](#tagopenidconnectproviderrequesttypedef)
-  - [TagPolicyRequestTypeDef](#tagpolicyrequesttypedef)
-  - [TagRoleRequestTypeDef](#tagrolerequesttypedef)
-  - [TagSAMLProviderRequestTypeDef](#tagsamlproviderrequesttypedef)
-  - [TagServerCertificateRequestTypeDef](#tagservercertificaterequesttypedef)
+  - [TagInstanceProfileRequestRequestTypeDef](#taginstanceprofilerequestrequesttypedef)
+  - [TagMFADeviceRequestRequestTypeDef](#tagmfadevicerequestrequesttypedef)
+  - [TagOpenIDConnectProviderRequestRequestTypeDef](#tagopenidconnectproviderrequestrequesttypedef)
+  - [TagPolicyRequestRequestTypeDef](#tagpolicyrequestrequesttypedef)
+  - [TagRoleRequestRequestTypeDef](#tagrolerequestrequesttypedef)
+  - [TagSAMLProviderRequestRequestTypeDef](#tagsamlproviderrequestrequesttypedef)
+  - [TagServerCertificateRequestRequestTypeDef](#tagservercertificaterequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [TagUserRequestTypeDef](#taguserrequesttypedef)
+  - [TagUserRequestRequestTypeDef](#taguserrequestrequesttypedef)
   - [TrackedActionLastAccessedTypeDef](#trackedactionlastaccessedtypedef)
-  - [UntagInstanceProfileRequestTypeDef](#untaginstanceprofilerequesttypedef)
-  - [UntagMFADeviceRequestTypeDef](#untagmfadevicerequesttypedef)
-  - [UntagOpenIDConnectProviderRequestTypeDef](#untagopenidconnectproviderrequesttypedef)
-  - [UntagPolicyRequestTypeDef](#untagpolicyrequesttypedef)
-  - [UntagRoleRequestTypeDef](#untagrolerequesttypedef)
-  - [UntagSAMLProviderRequestTypeDef](#untagsamlproviderrequesttypedef)
-  - [UntagServerCertificateRequestTypeDef](#untagservercertificaterequesttypedef)
-  - [UntagUserRequestTypeDef](#untaguserrequesttypedef)
+  - [UntagInstanceProfileRequestRequestTypeDef](#untaginstanceprofilerequestrequesttypedef)
+  - [UntagMFADeviceRequestRequestTypeDef](#untagmfadevicerequestrequesttypedef)
+  - [UntagOpenIDConnectProviderRequestRequestTypeDef](#untagopenidconnectproviderrequestrequesttypedef)
+  - [UntagPolicyRequestRequestTypeDef](#untagpolicyrequestrequesttypedef)
+  - [UntagRoleRequestRequestTypeDef](#untagrolerequestrequesttypedef)
+  - [UntagSAMLProviderRequestRequestTypeDef](#untagsamlproviderrequestrequesttypedef)
+  - [UntagServerCertificateRequestRequestTypeDef](#untagservercertificaterequestrequesttypedef)
+  - [UntagUserRequestRequestTypeDef](#untaguserrequestrequesttypedef)
   - [UpdateAccessKeyRequestAccessKeyPairTypeDef](#updateaccesskeyrequestaccesskeypairtypedef)
   - [UpdateAccessKeyRequestAccessKeyTypeDef](#updateaccesskeyrequestaccesskeytypedef)
-  - [UpdateAccessKeyRequestTypeDef](#updateaccesskeyrequesttypedef)
+  - [UpdateAccessKeyRequestRequestTypeDef](#updateaccesskeyrequestrequesttypedef)
   - [UpdateAccountPasswordPolicyRequestAccountPasswordPolicyTypeDef](#updateaccountpasswordpolicyrequestaccountpasswordpolicytypedef)
+  - [UpdateAccountPasswordPolicyRequestRequestTypeDef](#updateaccountpasswordpolicyrequestrequesttypedef)
   - [UpdateAccountPasswordPolicyRequestServiceResourceTypeDef](#updateaccountpasswordpolicyrequestserviceresourcetypedef)
-  - [UpdateAccountPasswordPolicyRequestTypeDef](#updateaccountpasswordpolicyrequesttypedef)
   - [UpdateAssumeRolePolicyRequestAssumeRolePolicyTypeDef](#updateassumerolepolicyrequestassumerolepolicytypedef)
-  - [UpdateAssumeRolePolicyRequestTypeDef](#updateassumerolepolicyrequesttypedef)
+  - [UpdateAssumeRolePolicyRequestRequestTypeDef](#updateassumerolepolicyrequestrequesttypedef)
   - [UpdateGroupRequestGroupTypeDef](#updategrouprequestgrouptypedef)
-  - [UpdateGroupRequestTypeDef](#updategrouprequesttypedef)
+  - [UpdateGroupRequestRequestTypeDef](#updategrouprequestrequesttypedef)
   - [UpdateLoginProfileRequestLoginProfileTypeDef](#updateloginprofilerequestloginprofiletypedef)
-  - [UpdateLoginProfileRequestTypeDef](#updateloginprofilerequesttypedef)
-  - [UpdateOpenIDConnectProviderThumbprintRequestTypeDef](#updateopenidconnectproviderthumbprintrequesttypedef)
-  - [UpdateRoleDescriptionRequestTypeDef](#updateroledescriptionrequesttypedef)
-  - [UpdateRoleDescriptionResponseResponseTypeDef](#updateroledescriptionresponseresponsetypedef)
-  - [UpdateRoleRequestTypeDef](#updaterolerequesttypedef)
+  - [UpdateLoginProfileRequestRequestTypeDef](#updateloginprofilerequestrequesttypedef)
+  - [UpdateOpenIDConnectProviderThumbprintRequestRequestTypeDef](#updateopenidconnectproviderthumbprintrequestrequesttypedef)
+  - [UpdateRoleDescriptionRequestRequestTypeDef](#updateroledescriptionrequestrequesttypedef)
+  - [UpdateRoleDescriptionResponseTypeDef](#updateroledescriptionresponsetypedef)
+  - [UpdateRoleRequestRequestTypeDef](#updaterolerequestrequesttypedef)
+  - [UpdateSAMLProviderRequestRequestTypeDef](#updatesamlproviderrequestrequesttypedef)
   - [UpdateSAMLProviderRequestSamlProviderTypeDef](#updatesamlproviderrequestsamlprovidertypedef)
-  - [UpdateSAMLProviderRequestTypeDef](#updatesamlproviderrequesttypedef)
-  - [UpdateSAMLProviderResponseResponseTypeDef](#updatesamlproviderresponseresponsetypedef)
-  - [UpdateSSHPublicKeyRequestTypeDef](#updatesshpublickeyrequesttypedef)
+  - [UpdateSAMLProviderResponseTypeDef](#updatesamlproviderresponsetypedef)
+  - [UpdateSSHPublicKeyRequestRequestTypeDef](#updatesshpublickeyrequestrequesttypedef)
+  - [UpdateServerCertificateRequestRequestTypeDef](#updateservercertificaterequestrequesttypedef)
   - [UpdateServerCertificateRequestServerCertificateTypeDef](#updateservercertificaterequestservercertificatetypedef)
-  - [UpdateServerCertificateRequestTypeDef](#updateservercertificaterequesttypedef)
-  - [UpdateServiceSpecificCredentialRequestTypeDef](#updateservicespecificcredentialrequesttypedef)
+  - [UpdateServiceSpecificCredentialRequestRequestTypeDef](#updateservicespecificcredentialrequestrequesttypedef)
+  - [UpdateSigningCertificateRequestRequestTypeDef](#updatesigningcertificaterequestrequesttypedef)
   - [UpdateSigningCertificateRequestSigningCertificateTypeDef](#updatesigningcertificaterequestsigningcertificatetypedef)
-  - [UpdateSigningCertificateRequestTypeDef](#updatesigningcertificaterequesttypedef)
-  - [UpdateUserRequestTypeDef](#updateuserrequesttypedef)
+  - [UpdateUserRequestRequestTypeDef](#updateuserrequestrequesttypedef)
   - [UpdateUserRequestUserTypeDef](#updateuserrequestusertypedef)
-  - [UploadSSHPublicKeyRequestTypeDef](#uploadsshpublickeyrequesttypedef)
-  - [UploadSSHPublicKeyResponseResponseTypeDef](#uploadsshpublickeyresponseresponsetypedef)
+  - [UploadSSHPublicKeyRequestRequestTypeDef](#uploadsshpublickeyrequestrequesttypedef)
+  - [UploadSSHPublicKeyResponseTypeDef](#uploadsshpublickeyresponsetypedef)
+  - [UploadServerCertificateRequestRequestTypeDef](#uploadservercertificaterequestrequesttypedef)
   - [UploadServerCertificateRequestServiceResourceTypeDef](#uploadservercertificaterequestserviceresourcetypedef)
-  - [UploadServerCertificateRequestTypeDef](#uploadservercertificaterequesttypedef)
-  - [UploadServerCertificateResponseResponseTypeDef](#uploadservercertificateresponseresponsetypedef)
+  - [UploadServerCertificateResponseTypeDef](#uploadservercertificateresponsetypedef)
+  - [UploadSigningCertificateRequestRequestTypeDef](#uploadsigningcertificaterequestrequesttypedef)
   - [UploadSigningCertificateRequestServiceResourceTypeDef](#uploadsigningcertificaterequestserviceresourcetypedef)
-  - [UploadSigningCertificateRequestTypeDef](#uploadsigningcertificaterequesttypedef)
-  - [UploadSigningCertificateResponseResponseTypeDef](#uploadsigningcertificateresponseresponsetypedef)
+  - [UploadSigningCertificateResponseTypeDef](#uploadsigningcertificateresponsetypedef)
   - [UserAccessKeyRequestTypeDef](#useraccesskeyrequesttypedef)
   - [UserDetailTypeDef](#userdetailtypedef)
   - [UserMfaDeviceRequestTypeDef](#usermfadevicerequesttypedef)
@@ -433,10 +433,10 @@ Optional fields:
 
 - `CreateDate`: `datetime`
 
-## AddClientIDToOpenIDConnectProviderRequestTypeDef
+## AddClientIDToOpenIDConnectProviderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import AddClientIDToOpenIDConnectProviderRequestTypeDef
+from mypy_boto3_iam.type_defs import AddClientIDToOpenIDConnectProviderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -454,10 +454,10 @@ Required fields:
 
 - `RoleName`: `str`
 
-## AddRoleToInstanceProfileRequestTypeDef
+## AddRoleToInstanceProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import AddRoleToInstanceProfileRequestTypeDef
+from mypy_boto3_iam.type_defs import AddRoleToInstanceProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -475,10 +475,10 @@ Required fields:
 
 - `UserName`: `str`
 
-## AddUserToGroupRequestTypeDef
+## AddUserToGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import AddUserToGroupRequestTypeDef
+from mypy_boto3_iam.type_defs import AddUserToGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -516,10 +516,10 @@ Required fields:
 
 - `GroupName`: `str`
 
-## AttachGroupPolicyRequestTypeDef
+## AttachGroupPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import AttachGroupPolicyRequestTypeDef
+from mypy_boto3_iam.type_defs import AttachGroupPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -537,6 +537,17 @@ Required fields:
 
 - `RoleName`: `str`
 
+## AttachRolePolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_iam.type_defs import AttachRolePolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `RoleName`: `str`
+- `PolicyArn`: `str`
+
 ## AttachRolePolicyRequestRoleTypeDef
 
 ```python
@@ -545,17 +556,6 @@ from mypy_boto3_iam.type_defs import AttachRolePolicyRequestRoleTypeDef
 
 Required fields:
 
-- `PolicyArn`: `str`
-
-## AttachRolePolicyRequestTypeDef
-
-```python
-from mypy_boto3_iam.type_defs import AttachRolePolicyRequestTypeDef
-```
-
-Required fields:
-
-- `RoleName`: `str`
 - `PolicyArn`: `str`
 
 ## AttachUserPolicyRequestPolicyTypeDef
@@ -568,10 +568,10 @@ Required fields:
 
 - `UserName`: `str`
 
-## AttachUserPolicyRequestTypeDef
+## AttachUserPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import AttachUserPolicyRequestTypeDef
+from mypy_boto3_iam.type_defs import AttachUserPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -612,10 +612,10 @@ Optional fields:
 - `PolicyName`: `str`
 - `PolicyArn`: `str`
 
-## ChangePasswordRequestServiceResourceTypeDef
+## ChangePasswordRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ChangePasswordRequestServiceResourceTypeDef
+from mypy_boto3_iam.type_defs import ChangePasswordRequestRequestTypeDef
 ```
 
 Required fields:
@@ -623,10 +623,10 @@ Required fields:
 - `OldPassword`: `str`
 - `NewPassword`: `str`
 
-## ChangePasswordRequestTypeDef
+## ChangePasswordRequestServiceResourceTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ChangePasswordRequestTypeDef
+from mypy_boto3_iam.type_defs import ChangePasswordRequestServiceResourceTypeDef
 ```
 
 Required fields:
@@ -647,20 +647,20 @@ Optional fields:
 - `ContextKeyType`:
   [ContextKeyTypeEnumType](./literals.md#contextkeytypeenumtype)
 
-## CreateAccessKeyRequestTypeDef
+## CreateAccessKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import CreateAccessKeyRequestTypeDef
+from mypy_boto3_iam.type_defs import CreateAccessKeyRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `UserName`: `str`
 
-## CreateAccessKeyResponseResponseTypeDef
+## CreateAccessKeyResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import CreateAccessKeyResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import CreateAccessKeyResponseTypeDef
 ```
 
 Required fields:
@@ -668,6 +668,16 @@ Required fields:
 - `AccessKey`: [AccessKeyTypeDef](./type_defs.md#accesskeytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateAccountAliasRequestRequestTypeDef
+
+```python
+from mypy_boto3_iam.type_defs import CreateAccountAliasRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AccountAlias`: `str`
 
 ## CreateAccountAliasRequestServiceResourceTypeDef
 
@@ -679,21 +689,25 @@ Required fields:
 
 - `AccountAlias`: `str`
 
-## CreateAccountAliasRequestTypeDef
-
-```python
-from mypy_boto3_iam.type_defs import CreateAccountAliasRequestTypeDef
-```
-
-Required fields:
-
-- `AccountAlias`: `str`
-
 ## CreateGroupRequestGroupTypeDef
 
 ```python
 from mypy_boto3_iam.type_defs import CreateGroupRequestGroupTypeDef
 ```
+
+Optional fields:
+
+- `Path`: `str`
+
+## CreateGroupRequestRequestTypeDef
+
+```python
+from mypy_boto3_iam.type_defs import CreateGroupRequestRequestTypeDef
+```
+
+Required fields:
+
+- `GroupName`: `str`
 
 Optional fields:
 
@@ -713,24 +727,10 @@ Optional fields:
 
 - `Path`: `str`
 
-## CreateGroupRequestTypeDef
+## CreateGroupResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import CreateGroupRequestTypeDef
-```
-
-Required fields:
-
-- `GroupName`: `str`
-
-Optional fields:
-
-- `Path`: `str`
-
-## CreateGroupResponseResponseTypeDef
-
-```python
-from mypy_boto3_iam.type_defs import CreateGroupResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import CreateGroupResponseTypeDef
 ```
 
 Required fields:
@@ -738,6 +738,21 @@ Required fields:
 - `Group`: [GroupTypeDef](./type_defs.md#grouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateInstanceProfileRequestRequestTypeDef
+
+```python
+from mypy_boto3_iam.type_defs import CreateInstanceProfileRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceProfileName`: `str`
+
+Optional fields:
+
+- `Path`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateInstanceProfileRequestServiceResourceTypeDef
 
@@ -754,25 +769,10 @@ Optional fields:
 - `Path`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateInstanceProfileRequestTypeDef
+## CreateInstanceProfileResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import CreateInstanceProfileRequestTypeDef
-```
-
-Required fields:
-
-- `InstanceProfileName`: `str`
-
-Optional fields:
-
-- `Path`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-## CreateInstanceProfileResponseResponseTypeDef
-
-```python
-from mypy_boto3_iam.type_defs import CreateInstanceProfileResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import CreateInstanceProfileResponseTypeDef
 ```
 
 Required fields:
@@ -796,10 +796,10 @@ Optional fields:
 
 - `PasswordResetRequired`: `bool`
 
-## CreateLoginProfileRequestTypeDef
+## CreateLoginProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import CreateLoginProfileRequestTypeDef
+from mypy_boto3_iam.type_defs import CreateLoginProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -825,10 +825,10 @@ Optional fields:
 
 - `PasswordResetRequired`: `bool`
 
-## CreateLoginProfileResponseResponseTypeDef
+## CreateLoginProfileResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import CreateLoginProfileResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import CreateLoginProfileResponseTypeDef
 ```
 
 Required fields:
@@ -837,10 +837,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateOpenIDConnectProviderRequestTypeDef
+## CreateOpenIDConnectProviderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import CreateOpenIDConnectProviderRequestTypeDef
+from mypy_boto3_iam.type_defs import CreateOpenIDConnectProviderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -853,10 +853,10 @@ Optional fields:
 - `ClientIDList`: `List`\[`str`\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateOpenIDConnectProviderResponseResponseTypeDef
+## CreateOpenIDConnectProviderResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import CreateOpenIDConnectProviderResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import CreateOpenIDConnectProviderResponseTypeDef
 ```
 
 Required fields:
@@ -865,6 +865,23 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreatePolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_iam.type_defs import CreatePolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `PolicyName`: `str`
+- `PolicyDocument`: `str`
+
+Optional fields:
+
+- `Path`: `str`
+- `Description`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreatePolicyRequestServiceResourceTypeDef
 
@@ -883,27 +900,10 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreatePolicyRequestTypeDef
+## CreatePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import CreatePolicyRequestTypeDef
-```
-
-Required fields:
-
-- `PolicyName`: `str`
-- `PolicyDocument`: `str`
-
-Optional fields:
-
-- `Path`: `str`
-- `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-## CreatePolicyResponseResponseTypeDef
-
-```python
-from mypy_boto3_iam.type_defs import CreatePolicyResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import CreatePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -926,10 +926,10 @@ Optional fields:
 
 - `SetAsDefault`: `bool`
 
-## CreatePolicyVersionRequestTypeDef
+## CreatePolicyVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import CreatePolicyVersionRequestTypeDef
+from mypy_boto3_iam.type_defs import CreatePolicyVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -941,10 +941,10 @@ Optional fields:
 
 - `SetAsDefault`: `bool`
 
-## CreatePolicyVersionResponseResponseTypeDef
+## CreatePolicyVersionResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import CreatePolicyVersionResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import CreatePolicyVersionResponseTypeDef
 ```
 
 Required fields:
@@ -952,6 +952,25 @@ Required fields:
 - `PolicyVersion`: [PolicyVersionTypeDef](./type_defs.md#policyversiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateRoleRequestRequestTypeDef
+
+```python
+from mypy_boto3_iam.type_defs import CreateRoleRequestRequestTypeDef
+```
+
+Required fields:
+
+- `RoleName`: `str`
+- `AssumeRolePolicyDocument`: `str`
+
+Optional fields:
+
+- `Path`: `str`
+- `Description`: `str`
+- `MaxSessionDuration`: `int`
+- `PermissionsBoundary`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateRoleRequestServiceResourceTypeDef
 
@@ -972,29 +991,10 @@ Optional fields:
 - `PermissionsBoundary`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateRoleRequestTypeDef
+## CreateRoleResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import CreateRoleRequestTypeDef
-```
-
-Required fields:
-
-- `RoleName`: `str`
-- `AssumeRolePolicyDocument`: `str`
-
-Optional fields:
-
-- `Path`: `str`
-- `Description`: `str`
-- `MaxSessionDuration`: `int`
-- `PermissionsBoundary`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-## CreateRoleResponseResponseTypeDef
-
-```python
-from mypy_boto3_iam.type_defs import CreateRoleResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import CreateRoleResponseTypeDef
 ```
 
 Required fields:
@@ -1002,6 +1002,21 @@ Required fields:
 - `Role`: [RoleTypeDef](./type_defs.md#roletypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateSAMLProviderRequestRequestTypeDef
+
+```python
+from mypy_boto3_iam.type_defs import CreateSAMLProviderRequestRequestTypeDef
+```
+
+Required fields:
+
+- `SAMLMetadataDocument`: `str`
+- `Name`: `str`
+
+Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateSAMLProviderRequestServiceResourceTypeDef
 
@@ -1018,25 +1033,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateSAMLProviderRequestTypeDef
+## CreateSAMLProviderResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import CreateSAMLProviderRequestTypeDef
-```
-
-Required fields:
-
-- `SAMLMetadataDocument`: `str`
-- `Name`: `str`
-
-Optional fields:
-
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-## CreateSAMLProviderResponseResponseTypeDef
-
-```python
-from mypy_boto3_iam.type_defs import CreateSAMLProviderResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import CreateSAMLProviderResponseTypeDef
 ```
 
 Required fields:
@@ -1046,10 +1046,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateServiceLinkedRoleRequestTypeDef
+## CreateServiceLinkedRoleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import CreateServiceLinkedRoleRequestTypeDef
+from mypy_boto3_iam.type_defs import CreateServiceLinkedRoleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1061,10 +1061,10 @@ Optional fields:
 - `Description`: `str`
 - `CustomSuffix`: `str`
 
-## CreateServiceLinkedRoleResponseResponseTypeDef
+## CreateServiceLinkedRoleResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import CreateServiceLinkedRoleResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import CreateServiceLinkedRoleResponseTypeDef
 ```
 
 Required fields:
@@ -1073,10 +1073,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateServiceSpecificCredentialRequestTypeDef
+## CreateServiceSpecificCredentialRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import CreateServiceSpecificCredentialRequestTypeDef
+from mypy_boto3_iam.type_defs import CreateServiceSpecificCredentialRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1084,10 +1084,10 @@ Required fields:
 - `UserName`: `str`
 - `ServiceName`: `str`
 
-## CreateServiceSpecificCredentialResponseResponseTypeDef
+## CreateServiceSpecificCredentialResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import CreateServiceSpecificCredentialResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import CreateServiceSpecificCredentialResponseTypeDef
 ```
 
 Required fields:
@@ -1097,10 +1097,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateUserRequestServiceResourceTypeDef
+## CreateUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import CreateUserRequestServiceResourceTypeDef
+from mypy_boto3_iam.type_defs import CreateUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1113,10 +1113,10 @@ Optional fields:
 - `PermissionsBoundary`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateUserRequestTypeDef
+## CreateUserRequestServiceResourceTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import CreateUserRequestTypeDef
+from mypy_boto3_iam.type_defs import CreateUserRequestServiceResourceTypeDef
 ```
 
 Required fields:
@@ -1141,10 +1141,10 @@ Optional fields:
 - `PermissionsBoundary`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateUserResponseResponseTypeDef
+## CreateUserResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import CreateUserResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import CreateUserResponseTypeDef
 ```
 
 Required fields:
@@ -1152,6 +1152,21 @@ Required fields:
 - `User`: [UserTypeDef](./type_defs.md#usertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateVirtualMFADeviceRequestRequestTypeDef
+
+```python
+from mypy_boto3_iam.type_defs import CreateVirtualMFADeviceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `VirtualMFADeviceName`: `str`
+
+Optional fields:
+
+- `Path`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateVirtualMFADeviceRequestServiceResourceTypeDef
 
@@ -1168,25 +1183,10 @@ Optional fields:
 - `Path`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateVirtualMFADeviceRequestTypeDef
+## CreateVirtualMFADeviceResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import CreateVirtualMFADeviceRequestTypeDef
-```
-
-Required fields:
-
-- `VirtualMFADeviceName`: `str`
-
-Optional fields:
-
-- `Path`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-## CreateVirtualMFADeviceResponseResponseTypeDef
-
-```python
-from mypy_boto3_iam.type_defs import CreateVirtualMFADeviceResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import CreateVirtualMFADeviceResponseTypeDef
 ```
 
 Required fields:
@@ -1196,10 +1196,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeactivateMFADeviceRequestTypeDef
+## DeactivateMFADeviceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeactivateMFADeviceRequestTypeDef
+from mypy_boto3_iam.type_defs import DeactivateMFADeviceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1207,10 +1207,10 @@ Required fields:
 - `UserName`: `str`
 - `SerialNumber`: `str`
 
-## DeleteAccessKeyRequestTypeDef
+## DeleteAccessKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeleteAccessKeyRequestTypeDef
+from mypy_boto3_iam.type_defs import DeleteAccessKeyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1221,20 +1221,20 @@ Optional fields:
 
 - `UserName`: `str`
 
-## DeleteAccountAliasRequestTypeDef
+## DeleteAccountAliasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeleteAccountAliasRequestTypeDef
+from mypy_boto3_iam.type_defs import DeleteAccountAliasRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AccountAlias`: `str`
 
-## DeleteGroupPolicyRequestTypeDef
+## DeleteGroupPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeleteGroupPolicyRequestTypeDef
+from mypy_boto3_iam.type_defs import DeleteGroupPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1242,60 +1242,60 @@ Required fields:
 - `GroupName`: `str`
 - `PolicyName`: `str`
 
-## DeleteGroupRequestTypeDef
+## DeleteGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeleteGroupRequestTypeDef
+from mypy_boto3_iam.type_defs import DeleteGroupRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `GroupName`: `str`
 
-## DeleteInstanceProfileRequestTypeDef
+## DeleteInstanceProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeleteInstanceProfileRequestTypeDef
+from mypy_boto3_iam.type_defs import DeleteInstanceProfileRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `InstanceProfileName`: `str`
 
-## DeleteLoginProfileRequestTypeDef
+## DeleteLoginProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeleteLoginProfileRequestTypeDef
+from mypy_boto3_iam.type_defs import DeleteLoginProfileRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `UserName`: `str`
 
-## DeleteOpenIDConnectProviderRequestTypeDef
+## DeleteOpenIDConnectProviderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeleteOpenIDConnectProviderRequestTypeDef
+from mypy_boto3_iam.type_defs import DeleteOpenIDConnectProviderRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `OpenIDConnectProviderArn`: `str`
 
-## DeletePolicyRequestTypeDef
+## DeletePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeletePolicyRequestTypeDef
+from mypy_boto3_iam.type_defs import DeletePolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `PolicyArn`: `str`
 
-## DeletePolicyVersionRequestTypeDef
+## DeletePolicyVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeletePolicyVersionRequestTypeDef
+from mypy_boto3_iam.type_defs import DeletePolicyVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1303,20 +1303,20 @@ Required fields:
 - `PolicyArn`: `str`
 - `VersionId`: `str`
 
-## DeleteRolePermissionsBoundaryRequestTypeDef
+## DeleteRolePermissionsBoundaryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeleteRolePermissionsBoundaryRequestTypeDef
+from mypy_boto3_iam.type_defs import DeleteRolePermissionsBoundaryRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `RoleName`: `str`
 
-## DeleteRolePolicyRequestTypeDef
+## DeleteRolePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeleteRolePolicyRequestTypeDef
+from mypy_boto3_iam.type_defs import DeleteRolePolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1324,30 +1324,30 @@ Required fields:
 - `RoleName`: `str`
 - `PolicyName`: `str`
 
-## DeleteRoleRequestTypeDef
+## DeleteRoleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeleteRoleRequestTypeDef
+from mypy_boto3_iam.type_defs import DeleteRoleRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `RoleName`: `str`
 
-## DeleteSAMLProviderRequestTypeDef
+## DeleteSAMLProviderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeleteSAMLProviderRequestTypeDef
+from mypy_boto3_iam.type_defs import DeleteSAMLProviderRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `SAMLProviderArn`: `str`
 
-## DeleteSSHPublicKeyRequestTypeDef
+## DeleteSSHPublicKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeleteSSHPublicKeyRequestTypeDef
+from mypy_boto3_iam.type_defs import DeleteSSHPublicKeyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1355,30 +1355,30 @@ Required fields:
 - `UserName`: `str`
 - `SSHPublicKeyId`: `str`
 
-## DeleteServerCertificateRequestTypeDef
+## DeleteServerCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeleteServerCertificateRequestTypeDef
+from mypy_boto3_iam.type_defs import DeleteServerCertificateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ServerCertificateName`: `str`
 
-## DeleteServiceLinkedRoleRequestTypeDef
+## DeleteServiceLinkedRoleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeleteServiceLinkedRoleRequestTypeDef
+from mypy_boto3_iam.type_defs import DeleteServiceLinkedRoleRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `RoleName`: `str`
 
-## DeleteServiceLinkedRoleResponseResponseTypeDef
+## DeleteServiceLinkedRoleResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeleteServiceLinkedRoleResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import DeleteServiceLinkedRoleResponseTypeDef
 ```
 
 Required fields:
@@ -1387,10 +1387,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteServiceSpecificCredentialRequestTypeDef
+## DeleteServiceSpecificCredentialRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeleteServiceSpecificCredentialRequestTypeDef
+from mypy_boto3_iam.type_defs import DeleteServiceSpecificCredentialRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1401,10 +1401,10 @@ Optional fields:
 
 - `UserName`: `str`
 
-## DeleteSigningCertificateRequestTypeDef
+## DeleteSigningCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeleteSigningCertificateRequestTypeDef
+from mypy_boto3_iam.type_defs import DeleteSigningCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1415,20 +1415,20 @@ Optional fields:
 
 - `UserName`: `str`
 
-## DeleteUserPermissionsBoundaryRequestTypeDef
+## DeleteUserPermissionsBoundaryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeleteUserPermissionsBoundaryRequestTypeDef
+from mypy_boto3_iam.type_defs import DeleteUserPermissionsBoundaryRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `UserName`: `str`
 
-## DeleteUserPolicyRequestTypeDef
+## DeleteUserPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeleteUserPolicyRequestTypeDef
+from mypy_boto3_iam.type_defs import DeleteUserPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1436,20 +1436,20 @@ Required fields:
 - `UserName`: `str`
 - `PolicyName`: `str`
 
-## DeleteUserRequestTypeDef
+## DeleteUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeleteUserRequestTypeDef
+from mypy_boto3_iam.type_defs import DeleteUserRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `UserName`: `str`
 
-## DeleteVirtualMFADeviceRequestTypeDef
+## DeleteVirtualMFADeviceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DeleteVirtualMFADeviceRequestTypeDef
+from mypy_boto3_iam.type_defs import DeleteVirtualMFADeviceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1488,10 +1488,10 @@ Required fields:
 
 - `GroupName`: `str`
 
-## DetachGroupPolicyRequestTypeDef
+## DetachGroupPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DetachGroupPolicyRequestTypeDef
+from mypy_boto3_iam.type_defs import DetachGroupPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1509,6 +1509,17 @@ Required fields:
 
 - `RoleName`: `str`
 
+## DetachRolePolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_iam.type_defs import DetachRolePolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `RoleName`: `str`
+- `PolicyArn`: `str`
+
 ## DetachRolePolicyRequestRoleTypeDef
 
 ```python
@@ -1517,17 +1528,6 @@ from mypy_boto3_iam.type_defs import DetachRolePolicyRequestRoleTypeDef
 
 Required fields:
 
-- `PolicyArn`: `str`
-
-## DetachRolePolicyRequestTypeDef
-
-```python
-from mypy_boto3_iam.type_defs import DetachRolePolicyRequestTypeDef
-```
-
-Required fields:
-
-- `RoleName`: `str`
 - `PolicyArn`: `str`
 
 ## DetachUserPolicyRequestPolicyTypeDef
@@ -1540,10 +1540,10 @@ Required fields:
 
 - `UserName`: `str`
 
-## DetachUserPolicyRequestTypeDef
+## DetachUserPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import DetachUserPolicyRequestTypeDef
+from mypy_boto3_iam.type_defs import DetachUserPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1572,10 +1572,10 @@ Required fields:
 - `AuthenticationCode1`: `str`
 - `AuthenticationCode2`: `str`
 
-## EnableMFADeviceRequestTypeDef
+## EnableMFADeviceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import EnableMFADeviceRequestTypeDef
+from mypy_boto3_iam.type_defs import EnableMFADeviceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1666,10 +1666,10 @@ Optional fields:
 - `ResourceSpecificResults`:
   `List`\[[ResourceSpecificResultTypeDef](./type_defs.md#resourcespecificresulttypedef)\]
 
-## GenerateCredentialReportResponseResponseTypeDef
+## GenerateCredentialReportResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GenerateCredentialReportResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GenerateCredentialReportResponseTypeDef
 ```
 
 Required fields:
@@ -1679,10 +1679,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GenerateOrganizationsAccessReportRequestTypeDef
+## GenerateOrganizationsAccessReportRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GenerateOrganizationsAccessReportRequestTypeDef
+from mypy_boto3_iam.type_defs import GenerateOrganizationsAccessReportRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1693,10 +1693,10 @@ Optional fields:
 
 - `OrganizationsPolicyId`: `str`
 
-## GenerateOrganizationsAccessReportResponseResponseTypeDef
+## GenerateOrganizationsAccessReportResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GenerateOrganizationsAccessReportResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GenerateOrganizationsAccessReportResponseTypeDef
 ```
 
 Required fields:
@@ -1705,10 +1705,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GenerateServiceLastAccessedDetailsRequestTypeDef
+## GenerateServiceLastAccessedDetailsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GenerateServiceLastAccessedDetailsRequestTypeDef
+from mypy_boto3_iam.type_defs import GenerateServiceLastAccessedDetailsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1720,10 +1720,10 @@ Optional fields:
 - `Granularity`:
   [AccessAdvisorUsageGranularityTypeType](./literals.md#accessadvisorusagegranularitytypetype)
 
-## GenerateServiceLastAccessedDetailsResponseResponseTypeDef
+## GenerateServiceLastAccessedDetailsResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GenerateServiceLastAccessedDetailsResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GenerateServiceLastAccessedDetailsResponseTypeDef
 ```
 
 Required fields:
@@ -1732,20 +1732,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAccessKeyLastUsedRequestTypeDef
+## GetAccessKeyLastUsedRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetAccessKeyLastUsedRequestTypeDef
+from mypy_boto3_iam.type_defs import GetAccessKeyLastUsedRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AccessKeyId`: `str`
 
-## GetAccessKeyLastUsedResponseResponseTypeDef
+## GetAccessKeyLastUsedResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetAccessKeyLastUsedResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetAccessKeyLastUsedResponseTypeDef
 ```
 
 Required fields:
@@ -1756,10 +1756,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAccountAuthorizationDetailsRequestTypeDef
+## GetAccountAuthorizationDetailsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetAccountAuthorizationDetailsRequestTypeDef
+from mypy_boto3_iam.type_defs import GetAccountAuthorizationDetailsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1768,10 +1768,10 @@ Optional fields:
 - `MaxItems`: `int`
 - `Marker`: `str`
 
-## GetAccountAuthorizationDetailsResponseResponseTypeDef
+## GetAccountAuthorizationDetailsResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetAccountAuthorizationDetailsResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetAccountAuthorizationDetailsResponseTypeDef
 ```
 
 Required fields:
@@ -1789,10 +1789,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAccountPasswordPolicyResponseResponseTypeDef
+## GetAccountPasswordPolicyResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetAccountPasswordPolicyResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetAccountPasswordPolicyResponseTypeDef
 ```
 
 Required fields:
@@ -1802,10 +1802,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAccountSummaryResponseResponseTypeDef
+## GetAccountSummaryResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetAccountSummaryResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetAccountSummaryResponseTypeDef
 ```
 
 Required fields:
@@ -1815,20 +1815,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetContextKeysForCustomPolicyRequestTypeDef
+## GetContextKeysForCustomPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetContextKeysForCustomPolicyRequestTypeDef
+from mypy_boto3_iam.type_defs import GetContextKeysForCustomPolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `PolicyInputList`: `List`\[`str`\]
 
-## GetContextKeysForPolicyResponseResponseTypeDef
+## GetContextKeysForPolicyResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetContextKeysForPolicyResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetContextKeysForPolicyResponseTypeDef
 ```
 
 Required fields:
@@ -1837,10 +1837,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetContextKeysForPrincipalPolicyRequestTypeDef
+## GetContextKeysForPrincipalPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetContextKeysForPrincipalPolicyRequestTypeDef
+from mypy_boto3_iam.type_defs import GetContextKeysForPrincipalPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1851,10 +1851,10 @@ Optional fields:
 
 - `PolicyInputList`: `List`\[`str`\]
 
-## GetCredentialReportResponseResponseTypeDef
+## GetCredentialReportResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetCredentialReportResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetCredentialReportResponseTypeDef
 ```
 
 Required fields:
@@ -1866,10 +1866,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetGroupPolicyRequestTypeDef
+## GetGroupPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetGroupPolicyRequestTypeDef
+from mypy_boto3_iam.type_defs import GetGroupPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1877,10 +1877,10 @@ Required fields:
 - `GroupName`: `str`
 - `PolicyName`: `str`
 
-## GetGroupPolicyResponseResponseTypeDef
+## GetGroupPolicyResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetGroupPolicyResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetGroupPolicyResponseTypeDef
 ```
 
 Required fields:
@@ -1891,10 +1891,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetGroupRequestTypeDef
+## GetGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetGroupRequestTypeDef
+from mypy_boto3_iam.type_defs import GetGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1906,10 +1906,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## GetGroupResponseResponseTypeDef
+## GetGroupResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetGroupResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetGroupResponseTypeDef
 ```
 
 Required fields:
@@ -1921,20 +1921,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetInstanceProfileRequestTypeDef
+## GetInstanceProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetInstanceProfileRequestTypeDef
+from mypy_boto3_iam.type_defs import GetInstanceProfileRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `InstanceProfileName`: `str`
 
-## GetInstanceProfileResponseResponseTypeDef
+## GetInstanceProfileResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetInstanceProfileResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetInstanceProfileResponseTypeDef
 ```
 
 Required fields:
@@ -1944,20 +1944,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLoginProfileRequestTypeDef
+## GetLoginProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetLoginProfileRequestTypeDef
+from mypy_boto3_iam.type_defs import GetLoginProfileRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `UserName`: `str`
 
-## GetLoginProfileResponseResponseTypeDef
+## GetLoginProfileResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetLoginProfileResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetLoginProfileResponseTypeDef
 ```
 
 Required fields:
@@ -1966,20 +1966,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetOpenIDConnectProviderRequestTypeDef
+## GetOpenIDConnectProviderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetOpenIDConnectProviderRequestTypeDef
+from mypy_boto3_iam.type_defs import GetOpenIDConnectProviderRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `OpenIDConnectProviderArn`: `str`
 
-## GetOpenIDConnectProviderResponseResponseTypeDef
+## GetOpenIDConnectProviderResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetOpenIDConnectProviderResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetOpenIDConnectProviderResponseTypeDef
 ```
 
 Required fields:
@@ -1992,10 +1992,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetOrganizationsAccessReportRequestTypeDef
+## GetOrganizationsAccessReportRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetOrganizationsAccessReportRequestTypeDef
+from mypy_boto3_iam.type_defs import GetOrganizationsAccessReportRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2008,10 +2008,10 @@ Optional fields:
 - `Marker`: `str`
 - `SortKey`: [sortKeyTypeType](./literals.md#sortkeytypetype)
 
-## GetOrganizationsAccessReportResponseResponseTypeDef
+## GetOrganizationsAccessReportResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetOrganizationsAccessReportResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetOrganizationsAccessReportResponseTypeDef
 ```
 
 Required fields:
@@ -2029,20 +2029,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPolicyRequestTypeDef
+## GetPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetPolicyRequestTypeDef
+from mypy_boto3_iam.type_defs import GetPolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `PolicyArn`: `str`
 
-## GetPolicyResponseResponseTypeDef
+## GetPolicyResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetPolicyResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetPolicyResponseTypeDef
 ```
 
 Required fields:
@@ -2051,10 +2051,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPolicyVersionRequestTypeDef
+## GetPolicyVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetPolicyVersionRequestTypeDef
+from mypy_boto3_iam.type_defs import GetPolicyVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2062,10 +2062,10 @@ Required fields:
 - `PolicyArn`: `str`
 - `VersionId`: `str`
 
-## GetPolicyVersionResponseResponseTypeDef
+## GetPolicyVersionResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetPolicyVersionResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetPolicyVersionResponseTypeDef
 ```
 
 Required fields:
@@ -2074,10 +2074,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRolePolicyRequestTypeDef
+## GetRolePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetRolePolicyRequestTypeDef
+from mypy_boto3_iam.type_defs import GetRolePolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2085,10 +2085,10 @@ Required fields:
 - `RoleName`: `str`
 - `PolicyName`: `str`
 
-## GetRolePolicyResponseResponseTypeDef
+## GetRolePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetRolePolicyResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetRolePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -2099,20 +2099,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRoleRequestTypeDef
+## GetRoleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetRoleRequestTypeDef
+from mypy_boto3_iam.type_defs import GetRoleRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `RoleName`: `str`
 
-## GetRoleResponseResponseTypeDef
+## GetRoleResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetRoleResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetRoleResponseTypeDef
 ```
 
 Required fields:
@@ -2121,20 +2121,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSAMLProviderRequestTypeDef
+## GetSAMLProviderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetSAMLProviderRequestTypeDef
+from mypy_boto3_iam.type_defs import GetSAMLProviderRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `SAMLProviderArn`: `str`
 
-## GetSAMLProviderResponseResponseTypeDef
+## GetSAMLProviderResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetSAMLProviderResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetSAMLProviderResponseTypeDef
 ```
 
 Required fields:
@@ -2146,10 +2146,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSSHPublicKeyRequestTypeDef
+## GetSSHPublicKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetSSHPublicKeyRequestTypeDef
+from mypy_boto3_iam.type_defs import GetSSHPublicKeyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2158,10 +2158,10 @@ Required fields:
 - `SSHPublicKeyId`: `str`
 - `Encoding`: [encodingTypeType](./literals.md#encodingtypetype)
 
-## GetSSHPublicKeyResponseResponseTypeDef
+## GetSSHPublicKeyResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetSSHPublicKeyResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetSSHPublicKeyResponseTypeDef
 ```
 
 Required fields:
@@ -2170,20 +2170,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetServerCertificateRequestTypeDef
+## GetServerCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetServerCertificateRequestTypeDef
+from mypy_boto3_iam.type_defs import GetServerCertificateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ServerCertificateName`: `str`
 
-## GetServerCertificateResponseResponseTypeDef
+## GetServerCertificateResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetServerCertificateResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetServerCertificateResponseTypeDef
 ```
 
 Required fields:
@@ -2193,10 +2193,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetServiceLastAccessedDetailsRequestTypeDef
+## GetServiceLastAccessedDetailsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetServiceLastAccessedDetailsRequestTypeDef
+from mypy_boto3_iam.type_defs import GetServiceLastAccessedDetailsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2208,10 +2208,10 @@ Optional fields:
 - `MaxItems`: `int`
 - `Marker`: `str`
 
-## GetServiceLastAccessedDetailsResponseResponseTypeDef
+## GetServiceLastAccessedDetailsResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetServiceLastAccessedDetailsResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetServiceLastAccessedDetailsResponseTypeDef
 ```
 
 Required fields:
@@ -2229,10 +2229,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetServiceLastAccessedDetailsWithEntitiesRequestTypeDef
+## GetServiceLastAccessedDetailsWithEntitiesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetServiceLastAccessedDetailsWithEntitiesRequestTypeDef
+from mypy_boto3_iam.type_defs import GetServiceLastAccessedDetailsWithEntitiesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2245,10 +2245,10 @@ Optional fields:
 - `MaxItems`: `int`
 - `Marker`: `str`
 
-## GetServiceLastAccessedDetailsWithEntitiesResponseResponseTypeDef
+## GetServiceLastAccessedDetailsWithEntitiesResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetServiceLastAccessedDetailsWithEntitiesResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetServiceLastAccessedDetailsWithEntitiesResponseTypeDef
 ```
 
 Required fields:
@@ -2264,20 +2264,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetServiceLinkedRoleDeletionStatusRequestTypeDef
+## GetServiceLinkedRoleDeletionStatusRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetServiceLinkedRoleDeletionStatusRequestTypeDef
+from mypy_boto3_iam.type_defs import GetServiceLinkedRoleDeletionStatusRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DeletionTaskId`: `str`
 
-## GetServiceLinkedRoleDeletionStatusResponseResponseTypeDef
+## GetServiceLinkedRoleDeletionStatusResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetServiceLinkedRoleDeletionStatusResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetServiceLinkedRoleDeletionStatusResponseTypeDef
 ```
 
 Required fields:
@@ -2289,10 +2289,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetUserPolicyRequestTypeDef
+## GetUserPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetUserPolicyRequestTypeDef
+from mypy_boto3_iam.type_defs import GetUserPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2300,10 +2300,10 @@ Required fields:
 - `UserName`: `str`
 - `PolicyName`: `str`
 
-## GetUserPolicyResponseResponseTypeDef
+## GetUserPolicyResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetUserPolicyResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetUserPolicyResponseTypeDef
 ```
 
 Required fields:
@@ -2314,20 +2314,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetUserRequestTypeDef
+## GetUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetUserRequestTypeDef
+from mypy_boto3_iam.type_defs import GetUserRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `UserName`: `str`
 
-## GetUserResponseResponseTypeDef
+## GetUserResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import GetUserResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import GetUserResponseTypeDef
 ```
 
 Required fields:
@@ -2397,10 +2397,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## ListAccessKeysRequestTypeDef
+## ListAccessKeysRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListAccessKeysRequestTypeDef
+from mypy_boto3_iam.type_defs import ListAccessKeysRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2409,10 +2409,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListAccessKeysResponseResponseTypeDef
+## ListAccessKeysResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListAccessKeysResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListAccessKeysResponseTypeDef
 ```
 
 Required fields:
@@ -2424,10 +2424,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAccountAliasesRequestTypeDef
+## ListAccountAliasesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListAccountAliasesRequestTypeDef
+from mypy_boto3_iam.type_defs import ListAccountAliasesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2435,10 +2435,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListAccountAliasesResponseResponseTypeDef
+## ListAccountAliasesResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListAccountAliasesResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListAccountAliasesResponseTypeDef
 ```
 
 Required fields:
@@ -2449,10 +2449,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAttachedGroupPoliciesRequestTypeDef
+## ListAttachedGroupPoliciesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListAttachedGroupPoliciesRequestTypeDef
+from mypy_boto3_iam.type_defs import ListAttachedGroupPoliciesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2465,10 +2465,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListAttachedGroupPoliciesResponseResponseTypeDef
+## ListAttachedGroupPoliciesResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListAttachedGroupPoliciesResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListAttachedGroupPoliciesResponseTypeDef
 ```
 
 Required fields:
@@ -2480,10 +2480,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAttachedRolePoliciesRequestTypeDef
+## ListAttachedRolePoliciesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListAttachedRolePoliciesRequestTypeDef
+from mypy_boto3_iam.type_defs import ListAttachedRolePoliciesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2496,10 +2496,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListAttachedRolePoliciesResponseResponseTypeDef
+## ListAttachedRolePoliciesResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListAttachedRolePoliciesResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListAttachedRolePoliciesResponseTypeDef
 ```
 
 Required fields:
@@ -2511,10 +2511,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAttachedUserPoliciesRequestTypeDef
+## ListAttachedUserPoliciesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListAttachedUserPoliciesRequestTypeDef
+from mypy_boto3_iam.type_defs import ListAttachedUserPoliciesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2527,10 +2527,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListAttachedUserPoliciesResponseResponseTypeDef
+## ListAttachedUserPoliciesResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListAttachedUserPoliciesResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListAttachedUserPoliciesResponseTypeDef
 ```
 
 Required fields:
@@ -2542,10 +2542,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListEntitiesForPolicyRequestTypeDef
+## ListEntitiesForPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListEntitiesForPolicyRequestTypeDef
+from mypy_boto3_iam.type_defs import ListEntitiesForPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2560,10 +2560,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListEntitiesForPolicyResponseResponseTypeDef
+## ListEntitiesForPolicyResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListEntitiesForPolicyResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListEntitiesForPolicyResponseTypeDef
 ```
 
 Required fields:
@@ -2579,10 +2579,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListGroupPoliciesRequestTypeDef
+## ListGroupPoliciesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListGroupPoliciesRequestTypeDef
+from mypy_boto3_iam.type_defs import ListGroupPoliciesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2594,10 +2594,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListGroupPoliciesResponseResponseTypeDef
+## ListGroupPoliciesResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListGroupPoliciesResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListGroupPoliciesResponseTypeDef
 ```
 
 Required fields:
@@ -2608,10 +2608,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListGroupsForUserRequestTypeDef
+## ListGroupsForUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListGroupsForUserRequestTypeDef
+from mypy_boto3_iam.type_defs import ListGroupsForUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2623,10 +2623,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListGroupsForUserResponseResponseTypeDef
+## ListGroupsForUserResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListGroupsForUserResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListGroupsForUserResponseTypeDef
 ```
 
 Required fields:
@@ -2637,10 +2637,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListGroupsRequestTypeDef
+## ListGroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListGroupsRequestTypeDef
+from mypy_boto3_iam.type_defs import ListGroupsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2649,10 +2649,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListGroupsResponseResponseTypeDef
+## ListGroupsResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListGroupsResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListGroupsResponseTypeDef
 ```
 
 Required fields:
@@ -2663,10 +2663,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInstanceProfileTagsRequestTypeDef
+## ListInstanceProfileTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListInstanceProfileTagsRequestTypeDef
+from mypy_boto3_iam.type_defs import ListInstanceProfileTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2678,10 +2678,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListInstanceProfileTagsResponseResponseTypeDef
+## ListInstanceProfileTagsResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListInstanceProfileTagsResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListInstanceProfileTagsResponseTypeDef
 ```
 
 Required fields:
@@ -2692,10 +2692,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInstanceProfilesForRoleRequestTypeDef
+## ListInstanceProfilesForRoleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListInstanceProfilesForRoleRequestTypeDef
+from mypy_boto3_iam.type_defs import ListInstanceProfilesForRoleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2707,10 +2707,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListInstanceProfilesForRoleResponseResponseTypeDef
+## ListInstanceProfilesForRoleResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListInstanceProfilesForRoleResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListInstanceProfilesForRoleResponseTypeDef
 ```
 
 Required fields:
@@ -2722,10 +2722,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInstanceProfilesRequestTypeDef
+## ListInstanceProfilesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListInstanceProfilesRequestTypeDef
+from mypy_boto3_iam.type_defs import ListInstanceProfilesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2734,10 +2734,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListInstanceProfilesResponseResponseTypeDef
+## ListInstanceProfilesResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListInstanceProfilesResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListInstanceProfilesResponseTypeDef
 ```
 
 Required fields:
@@ -2749,10 +2749,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMFADeviceTagsRequestTypeDef
+## ListMFADeviceTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListMFADeviceTagsRequestTypeDef
+from mypy_boto3_iam.type_defs import ListMFADeviceTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2764,10 +2764,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListMFADeviceTagsResponseResponseTypeDef
+## ListMFADeviceTagsResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListMFADeviceTagsResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListMFADeviceTagsResponseTypeDef
 ```
 
 Required fields:
@@ -2778,10 +2778,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMFADevicesRequestTypeDef
+## ListMFADevicesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListMFADevicesRequestTypeDef
+from mypy_boto3_iam.type_defs import ListMFADevicesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2790,10 +2790,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListMFADevicesResponseResponseTypeDef
+## ListMFADevicesResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListMFADevicesResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListMFADevicesResponseTypeDef
 ```
 
 Required fields:
@@ -2804,10 +2804,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListOpenIDConnectProviderTagsRequestTypeDef
+## ListOpenIDConnectProviderTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListOpenIDConnectProviderTagsRequestTypeDef
+from mypy_boto3_iam.type_defs import ListOpenIDConnectProviderTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2819,10 +2819,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListOpenIDConnectProviderTagsResponseResponseTypeDef
+## ListOpenIDConnectProviderTagsResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListOpenIDConnectProviderTagsResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListOpenIDConnectProviderTagsResponseTypeDef
 ```
 
 Required fields:
@@ -2833,10 +2833,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListOpenIDConnectProvidersResponseResponseTypeDef
+## ListOpenIDConnectProvidersResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListOpenIDConnectProvidersResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListOpenIDConnectProvidersResponseTypeDef
 ```
 
 Required fields:
@@ -2858,10 +2858,10 @@ Optional fields:
 - `Policies`:
   `List`\[[PolicyGrantingServiceAccessTypeDef](./type_defs.md#policygrantingserviceaccesstypedef)\]
 
-## ListPoliciesGrantingServiceAccessRequestTypeDef
+## ListPoliciesGrantingServiceAccessRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListPoliciesGrantingServiceAccessRequestTypeDef
+from mypy_boto3_iam.type_defs import ListPoliciesGrantingServiceAccessRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2873,10 +2873,10 @@ Optional fields:
 
 - `Marker`: `str`
 
-## ListPoliciesGrantingServiceAccessResponseResponseTypeDef
+## ListPoliciesGrantingServiceAccessResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListPoliciesGrantingServiceAccessResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListPoliciesGrantingServiceAccessResponseTypeDef
 ```
 
 Required fields:
@@ -2888,10 +2888,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPoliciesRequestTypeDef
+## ListPoliciesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListPoliciesRequestTypeDef
+from mypy_boto3_iam.type_defs import ListPoliciesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2903,10 +2903,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListPoliciesResponseResponseTypeDef
+## ListPoliciesResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListPoliciesResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListPoliciesResponseTypeDef
 ```
 
 Required fields:
@@ -2917,10 +2917,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPolicyTagsRequestTypeDef
+## ListPolicyTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListPolicyTagsRequestTypeDef
+from mypy_boto3_iam.type_defs import ListPolicyTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2932,10 +2932,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListPolicyTagsResponseResponseTypeDef
+## ListPolicyTagsResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListPolicyTagsResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListPolicyTagsResponseTypeDef
 ```
 
 Required fields:
@@ -2946,10 +2946,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPolicyVersionsRequestTypeDef
+## ListPolicyVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListPolicyVersionsRequestTypeDef
+from mypy_boto3_iam.type_defs import ListPolicyVersionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2961,10 +2961,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListPolicyVersionsResponseResponseTypeDef
+## ListPolicyVersionsResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListPolicyVersionsResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListPolicyVersionsResponseTypeDef
 ```
 
 Required fields:
@@ -2976,10 +2976,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRolePoliciesRequestTypeDef
+## ListRolePoliciesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListRolePoliciesRequestTypeDef
+from mypy_boto3_iam.type_defs import ListRolePoliciesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2991,10 +2991,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListRolePoliciesResponseResponseTypeDef
+## ListRolePoliciesResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListRolePoliciesResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListRolePoliciesResponseTypeDef
 ```
 
 Required fields:
@@ -3005,10 +3005,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRoleTagsRequestTypeDef
+## ListRoleTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListRoleTagsRequestTypeDef
+from mypy_boto3_iam.type_defs import ListRoleTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3020,10 +3020,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListRoleTagsResponseResponseTypeDef
+## ListRoleTagsResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListRoleTagsResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListRoleTagsResponseTypeDef
 ```
 
 Required fields:
@@ -3034,10 +3034,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRolesRequestTypeDef
+## ListRolesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListRolesRequestTypeDef
+from mypy_boto3_iam.type_defs import ListRolesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3046,10 +3046,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListRolesResponseResponseTypeDef
+## ListRolesResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListRolesResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListRolesResponseTypeDef
 ```
 
 Required fields:
@@ -3060,10 +3060,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSAMLProviderTagsRequestTypeDef
+## ListSAMLProviderTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListSAMLProviderTagsRequestTypeDef
+from mypy_boto3_iam.type_defs import ListSAMLProviderTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3075,10 +3075,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListSAMLProviderTagsResponseResponseTypeDef
+## ListSAMLProviderTagsResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListSAMLProviderTagsResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListSAMLProviderTagsResponseTypeDef
 ```
 
 Required fields:
@@ -3089,10 +3089,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSAMLProvidersResponseResponseTypeDef
+## ListSAMLProvidersResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListSAMLProvidersResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListSAMLProvidersResponseTypeDef
 ```
 
 Required fields:
@@ -3102,10 +3102,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSSHPublicKeysRequestTypeDef
+## ListSSHPublicKeysRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListSSHPublicKeysRequestTypeDef
+from mypy_boto3_iam.type_defs import ListSSHPublicKeysRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3114,10 +3114,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListSSHPublicKeysResponseResponseTypeDef
+## ListSSHPublicKeysResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListSSHPublicKeysResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListSSHPublicKeysResponseTypeDef
 ```
 
 Required fields:
@@ -3129,10 +3129,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListServerCertificateTagsRequestTypeDef
+## ListServerCertificateTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListServerCertificateTagsRequestTypeDef
+from mypy_boto3_iam.type_defs import ListServerCertificateTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3144,10 +3144,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListServerCertificateTagsResponseResponseTypeDef
+## ListServerCertificateTagsResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListServerCertificateTagsResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListServerCertificateTagsResponseTypeDef
 ```
 
 Required fields:
@@ -3158,10 +3158,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListServerCertificatesRequestTypeDef
+## ListServerCertificatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListServerCertificatesRequestTypeDef
+from mypy_boto3_iam.type_defs import ListServerCertificatesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3170,10 +3170,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListServerCertificatesResponseResponseTypeDef
+## ListServerCertificatesResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListServerCertificatesResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListServerCertificatesResponseTypeDef
 ```
 
 Required fields:
@@ -3185,10 +3185,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListServiceSpecificCredentialsRequestTypeDef
+## ListServiceSpecificCredentialsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListServiceSpecificCredentialsRequestTypeDef
+from mypy_boto3_iam.type_defs import ListServiceSpecificCredentialsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3196,10 +3196,10 @@ Optional fields:
 - `UserName`: `str`
 - `ServiceName`: `str`
 
-## ListServiceSpecificCredentialsResponseResponseTypeDef
+## ListServiceSpecificCredentialsResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListServiceSpecificCredentialsResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListServiceSpecificCredentialsResponseTypeDef
 ```
 
 Required fields:
@@ -3209,10 +3209,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSigningCertificatesRequestTypeDef
+## ListSigningCertificatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListSigningCertificatesRequestTypeDef
+from mypy_boto3_iam.type_defs import ListSigningCertificatesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3221,10 +3221,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListSigningCertificatesResponseResponseTypeDef
+## ListSigningCertificatesResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListSigningCertificatesResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListSigningCertificatesResponseTypeDef
 ```
 
 Required fields:
@@ -3236,10 +3236,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListUserPoliciesRequestTypeDef
+## ListUserPoliciesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListUserPoliciesRequestTypeDef
+from mypy_boto3_iam.type_defs import ListUserPoliciesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3251,10 +3251,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListUserPoliciesResponseResponseTypeDef
+## ListUserPoliciesResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListUserPoliciesResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListUserPoliciesResponseTypeDef
 ```
 
 Required fields:
@@ -3265,10 +3265,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListUserTagsRequestTypeDef
+## ListUserTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListUserTagsRequestTypeDef
+from mypy_boto3_iam.type_defs import ListUserTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3280,10 +3280,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListUserTagsResponseResponseTypeDef
+## ListUserTagsResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListUserTagsResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListUserTagsResponseTypeDef
 ```
 
 Required fields:
@@ -3294,10 +3294,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListUsersRequestTypeDef
+## ListUsersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListUsersRequestTypeDef
+from mypy_boto3_iam.type_defs import ListUsersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3306,10 +3306,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListUsersResponseResponseTypeDef
+## ListUsersResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListUsersResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListUsersResponseTypeDef
 ```
 
 Required fields:
@@ -3320,10 +3320,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListVirtualMFADevicesRequestTypeDef
+## ListVirtualMFADevicesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListVirtualMFADevicesRequestTypeDef
+from mypy_boto3_iam.type_defs import ListVirtualMFADevicesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3333,10 +3333,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListVirtualMFADevicesResponseResponseTypeDef
+## ListVirtualMFADevicesResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ListVirtualMFADevicesResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ListVirtualMFADevicesResponseTypeDef
 ```
 
 Required fields:
@@ -3586,10 +3586,10 @@ Required fields:
 - `PolicyName`: `str`
 - `PolicyDocument`: `str`
 
-## PutGroupPolicyRequestTypeDef
+## PutGroupPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import PutGroupPolicyRequestTypeDef
+from mypy_boto3_iam.type_defs import PutGroupPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3598,16 +3598,28 @@ Required fields:
 - `PolicyName`: `str`
 - `PolicyDocument`: `str`
 
-## PutRolePermissionsBoundaryRequestTypeDef
+## PutRolePermissionsBoundaryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import PutRolePermissionsBoundaryRequestTypeDef
+from mypy_boto3_iam.type_defs import PutRolePermissionsBoundaryRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `RoleName`: `str`
 - `PermissionsBoundary`: `str`
+
+## PutRolePolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_iam.type_defs import PutRolePolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `RoleName`: `str`
+- `PolicyName`: `str`
+- `PolicyDocument`: `str`
 
 ## PutRolePolicyRequestRolePolicyTypeDef
 
@@ -3619,22 +3631,10 @@ Required fields:
 
 - `PolicyDocument`: `str`
 
-## PutRolePolicyRequestTypeDef
+## PutUserPermissionsBoundaryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import PutRolePolicyRequestTypeDef
-```
-
-Required fields:
-
-- `RoleName`: `str`
-- `PolicyName`: `str`
-- `PolicyDocument`: `str`
-
-## PutUserPermissionsBoundaryRequestTypeDef
-
-```python
-from mypy_boto3_iam.type_defs import PutUserPermissionsBoundaryRequestTypeDef
+from mypy_boto3_iam.type_defs import PutUserPermissionsBoundaryRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3642,10 +3642,10 @@ Required fields:
 - `UserName`: `str`
 - `PermissionsBoundary`: `str`
 
-## PutUserPolicyRequestTypeDef
+## PutUserPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import PutUserPolicyRequestTypeDef
+from mypy_boto3_iam.type_defs import PutUserPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3675,10 +3675,10 @@ Required fields:
 - `PolicyName`: `str`
 - `PolicyDocument`: `str`
 
-## RemoveClientIDFromOpenIDConnectProviderRequestTypeDef
+## RemoveClientIDFromOpenIDConnectProviderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import RemoveClientIDFromOpenIDConnectProviderRequestTypeDef
+from mypy_boto3_iam.type_defs import RemoveClientIDFromOpenIDConnectProviderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3696,10 +3696,10 @@ Required fields:
 
 - `RoleName`: `str`
 
-## RemoveRoleFromInstanceProfileRequestTypeDef
+## RemoveRoleFromInstanceProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import RemoveRoleFromInstanceProfileRequestTypeDef
+from mypy_boto3_iam.type_defs import RemoveRoleFromInstanceProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3717,10 +3717,10 @@ Required fields:
 
 - `UserName`: `str`
 
-## RemoveUserFromGroupRequestTypeDef
+## RemoveUserFromGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import RemoveUserFromGroupRequestTypeDef
+from mypy_boto3_iam.type_defs import RemoveUserFromGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3738,10 +3738,10 @@ Required fields:
 
 - `GroupName`: `str`
 
-## ResetServiceSpecificCredentialRequestTypeDef
+## ResetServiceSpecificCredentialRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ResetServiceSpecificCredentialRequestTypeDef
+from mypy_boto3_iam.type_defs import ResetServiceSpecificCredentialRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3752,10 +3752,10 @@ Optional fields:
 
 - `UserName`: `str`
 
-## ResetServiceSpecificCredentialResponseResponseTypeDef
+## ResetServiceSpecificCredentialResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ResetServiceSpecificCredentialResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import ResetServiceSpecificCredentialResponseTypeDef
 ```
 
 Required fields:
@@ -3812,10 +3812,10 @@ Required fields:
 - `AuthenticationCode1`: `str`
 - `AuthenticationCode2`: `str`
 
-## ResyncMFADeviceRequestTypeDef
+## ResyncMFADeviceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import ResyncMFADeviceRequestTypeDef
+from mypy_boto3_iam.type_defs import ResyncMFADeviceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4224,10 +4224,10 @@ Required fields:
 - `UserName`: `str`
 - `Status`: [statusTypeType](./literals.md#statustypetype)
 
-## SetDefaultPolicyVersionRequestTypeDef
+## SetDefaultPolicyVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import SetDefaultPolicyVersionRequestTypeDef
+from mypy_boto3_iam.type_defs import SetDefaultPolicyVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4235,10 +4235,10 @@ Required fields:
 - `PolicyArn`: `str`
 - `VersionId`: `str`
 
-## SetSecurityTokenServicePreferencesRequestTypeDef
+## SetSecurityTokenServicePreferencesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import SetSecurityTokenServicePreferencesRequestTypeDef
+from mypy_boto3_iam.type_defs import SetSecurityTokenServicePreferencesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4263,10 +4263,10 @@ Optional fields:
 
 - `UploadDate`: `datetime`
 
-## SimulateCustomPolicyRequestTypeDef
+## SimulateCustomPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import SimulateCustomPolicyRequestTypeDef
+from mypy_boto3_iam.type_defs import SimulateCustomPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4287,10 +4287,10 @@ Optional fields:
 - `MaxItems`: `int`
 - `Marker`: `str`
 
-## SimulatePolicyResponseResponseTypeDef
+## SimulatePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import SimulatePolicyResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import SimulatePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -4302,10 +4302,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SimulatePrincipalPolicyRequestTypeDef
+## SimulatePrincipalPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import SimulatePrincipalPolicyRequestTypeDef
+from mypy_boto3_iam.type_defs import SimulatePrincipalPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4341,10 +4341,10 @@ Optional fields:
 - `StartPosition`: [PositionTypeDef](./type_defs.md#positiontypedef)
 - `EndPosition`: [PositionTypeDef](./type_defs.md#positiontypedef)
 
-## TagInstanceProfileRequestTypeDef
+## TagInstanceProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import TagInstanceProfileRequestTypeDef
+from mypy_boto3_iam.type_defs import TagInstanceProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4352,10 +4352,10 @@ Required fields:
 - `InstanceProfileName`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## TagMFADeviceRequestTypeDef
+## TagMFADeviceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import TagMFADeviceRequestTypeDef
+from mypy_boto3_iam.type_defs import TagMFADeviceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4363,10 +4363,10 @@ Required fields:
 - `SerialNumber`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## TagOpenIDConnectProviderRequestTypeDef
+## TagOpenIDConnectProviderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import TagOpenIDConnectProviderRequestTypeDef
+from mypy_boto3_iam.type_defs import TagOpenIDConnectProviderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4374,10 +4374,10 @@ Required fields:
 - `OpenIDConnectProviderArn`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## TagPolicyRequestTypeDef
+## TagPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import TagPolicyRequestTypeDef
+from mypy_boto3_iam.type_defs import TagPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4385,10 +4385,10 @@ Required fields:
 - `PolicyArn`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## TagRoleRequestTypeDef
+## TagRoleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import TagRoleRequestTypeDef
+from mypy_boto3_iam.type_defs import TagRoleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4396,10 +4396,10 @@ Required fields:
 - `RoleName`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## TagSAMLProviderRequestTypeDef
+## TagSAMLProviderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import TagSAMLProviderRequestTypeDef
+from mypy_boto3_iam.type_defs import TagSAMLProviderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4407,10 +4407,10 @@ Required fields:
 - `SAMLProviderArn`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## TagServerCertificateRequestTypeDef
+## TagServerCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import TagServerCertificateRequestTypeDef
+from mypy_boto3_iam.type_defs import TagServerCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4429,10 +4429,10 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## TagUserRequestTypeDef
+## TagUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import TagUserRequestTypeDef
+from mypy_boto3_iam.type_defs import TagUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4453,10 +4453,10 @@ Optional fields:
 - `LastAccessedTime`: `datetime`
 - `LastAccessedRegion`: `str`
 
-## UntagInstanceProfileRequestTypeDef
+## UntagInstanceProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UntagInstanceProfileRequestTypeDef
+from mypy_boto3_iam.type_defs import UntagInstanceProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4464,10 +4464,10 @@ Required fields:
 - `InstanceProfileName`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UntagMFADeviceRequestTypeDef
+## UntagMFADeviceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UntagMFADeviceRequestTypeDef
+from mypy_boto3_iam.type_defs import UntagMFADeviceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4475,10 +4475,10 @@ Required fields:
 - `SerialNumber`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UntagOpenIDConnectProviderRequestTypeDef
+## UntagOpenIDConnectProviderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UntagOpenIDConnectProviderRequestTypeDef
+from mypy_boto3_iam.type_defs import UntagOpenIDConnectProviderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4486,10 +4486,10 @@ Required fields:
 - `OpenIDConnectProviderArn`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UntagPolicyRequestTypeDef
+## UntagPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UntagPolicyRequestTypeDef
+from mypy_boto3_iam.type_defs import UntagPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4497,10 +4497,10 @@ Required fields:
 - `PolicyArn`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UntagRoleRequestTypeDef
+## UntagRoleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UntagRoleRequestTypeDef
+from mypy_boto3_iam.type_defs import UntagRoleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4508,10 +4508,10 @@ Required fields:
 - `RoleName`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UntagSAMLProviderRequestTypeDef
+## UntagSAMLProviderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UntagSAMLProviderRequestTypeDef
+from mypy_boto3_iam.type_defs import UntagSAMLProviderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4519,10 +4519,10 @@ Required fields:
 - `SAMLProviderArn`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UntagServerCertificateRequestTypeDef
+## UntagServerCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UntagServerCertificateRequestTypeDef
+from mypy_boto3_iam.type_defs import UntagServerCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4530,10 +4530,10 @@ Required fields:
 - `ServerCertificateName`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UntagUserRequestTypeDef
+## UntagUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UntagUserRequestTypeDef
+from mypy_boto3_iam.type_defs import UntagUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4561,10 +4561,10 @@ Required fields:
 
 - `Status`: [statusTypeType](./literals.md#statustypetype)
 
-## UpdateAccessKeyRequestTypeDef
+## UpdateAccessKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UpdateAccessKeyRequestTypeDef
+from mypy_boto3_iam.type_defs import UpdateAccessKeyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4580,6 +4580,24 @@ Optional fields:
 
 ```python
 from mypy_boto3_iam.type_defs import UpdateAccountPasswordPolicyRequestAccountPasswordPolicyTypeDef
+```
+
+Optional fields:
+
+- `MinimumPasswordLength`: `int`
+- `RequireSymbols`: `bool`
+- `RequireNumbers`: `bool`
+- `RequireUppercaseCharacters`: `bool`
+- `RequireLowercaseCharacters`: `bool`
+- `AllowUsersToChangePassword`: `bool`
+- `MaxPasswordAge`: `int`
+- `PasswordReusePrevention`: `int`
+- `HardExpiry`: `bool`
+
+## UpdateAccountPasswordPolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_iam.type_defs import UpdateAccountPasswordPolicyRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -4612,24 +4630,6 @@ Optional fields:
 - `PasswordReusePrevention`: `int`
 - `HardExpiry`: `bool`
 
-## UpdateAccountPasswordPolicyRequestTypeDef
-
-```python
-from mypy_boto3_iam.type_defs import UpdateAccountPasswordPolicyRequestTypeDef
-```
-
-Optional fields:
-
-- `MinimumPasswordLength`: `int`
-- `RequireSymbols`: `bool`
-- `RequireNumbers`: `bool`
-- `RequireUppercaseCharacters`: `bool`
-- `RequireLowercaseCharacters`: `bool`
-- `AllowUsersToChangePassword`: `bool`
-- `MaxPasswordAge`: `int`
-- `PasswordReusePrevention`: `int`
-- `HardExpiry`: `bool`
-
 ## UpdateAssumeRolePolicyRequestAssumeRolePolicyTypeDef
 
 ```python
@@ -4640,10 +4640,10 @@ Required fields:
 
 - `PolicyDocument`: `str`
 
-## UpdateAssumeRolePolicyRequestTypeDef
+## UpdateAssumeRolePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UpdateAssumeRolePolicyRequestTypeDef
+from mypy_boto3_iam.type_defs import UpdateAssumeRolePolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4662,10 +4662,10 @@ Optional fields:
 - `NewPath`: `str`
 - `NewGroupName`: `str`
 
-## UpdateGroupRequestTypeDef
+## UpdateGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UpdateGroupRequestTypeDef
+from mypy_boto3_iam.type_defs import UpdateGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4688,10 +4688,10 @@ Optional fields:
 - `Password`: `str`
 - `PasswordResetRequired`: `bool`
 
-## UpdateLoginProfileRequestTypeDef
+## UpdateLoginProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UpdateLoginProfileRequestTypeDef
+from mypy_boto3_iam.type_defs import UpdateLoginProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4703,10 +4703,10 @@ Optional fields:
 - `Password`: `str`
 - `PasswordResetRequired`: `bool`
 
-## UpdateOpenIDConnectProviderThumbprintRequestTypeDef
+## UpdateOpenIDConnectProviderThumbprintRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UpdateOpenIDConnectProviderThumbprintRequestTypeDef
+from mypy_boto3_iam.type_defs import UpdateOpenIDConnectProviderThumbprintRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4714,10 +4714,10 @@ Required fields:
 - `OpenIDConnectProviderArn`: `str`
 - `ThumbprintList`: `List`\[`str`\]
 
-## UpdateRoleDescriptionRequestTypeDef
+## UpdateRoleDescriptionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UpdateRoleDescriptionRequestTypeDef
+from mypy_boto3_iam.type_defs import UpdateRoleDescriptionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4725,10 +4725,10 @@ Required fields:
 - `RoleName`: `str`
 - `Description`: `str`
 
-## UpdateRoleDescriptionResponseResponseTypeDef
+## UpdateRoleDescriptionResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UpdateRoleDescriptionResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import UpdateRoleDescriptionResponseTypeDef
 ```
 
 Required fields:
@@ -4737,10 +4737,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateRoleRequestTypeDef
+## UpdateRoleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UpdateRoleRequestTypeDef
+from mypy_boto3_iam.type_defs import UpdateRoleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4752,6 +4752,17 @@ Optional fields:
 - `Description`: `str`
 - `MaxSessionDuration`: `int`
 
+## UpdateSAMLProviderRequestRequestTypeDef
+
+```python
+from mypy_boto3_iam.type_defs import UpdateSAMLProviderRequestRequestTypeDef
+```
+
+Required fields:
+
+- `SAMLMetadataDocument`: `str`
+- `SAMLProviderArn`: `str`
+
 ## UpdateSAMLProviderRequestSamlProviderTypeDef
 
 ```python
@@ -4762,21 +4773,10 @@ Required fields:
 
 - `SAMLMetadataDocument`: `str`
 
-## UpdateSAMLProviderRequestTypeDef
+## UpdateSAMLProviderResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UpdateSAMLProviderRequestTypeDef
-```
-
-Required fields:
-
-- `SAMLMetadataDocument`: `str`
-- `SAMLProviderArn`: `str`
-
-## UpdateSAMLProviderResponseResponseTypeDef
-
-```python
-from mypy_boto3_iam.type_defs import UpdateSAMLProviderResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import UpdateSAMLProviderResponseTypeDef
 ```
 
 Required fields:
@@ -4785,10 +4785,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateSSHPublicKeyRequestTypeDef
+## UpdateSSHPublicKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UpdateSSHPublicKeyRequestTypeDef
+from mypy_boto3_iam.type_defs import UpdateSSHPublicKeyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4796,6 +4796,21 @@ Required fields:
 - `UserName`: `str`
 - `SSHPublicKeyId`: `str`
 - `Status`: [statusTypeType](./literals.md#statustypetype)
+
+## UpdateServerCertificateRequestRequestTypeDef
+
+```python
+from mypy_boto3_iam.type_defs import UpdateServerCertificateRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ServerCertificateName`: `str`
+
+Optional fields:
+
+- `NewPath`: `str`
+- `NewServerCertificateName`: `str`
 
 ## UpdateServerCertificateRequestServerCertificateTypeDef
 
@@ -4808,30 +4823,30 @@ Optional fields:
 - `NewPath`: `str`
 - `NewServerCertificateName`: `str`
 
-## UpdateServerCertificateRequestTypeDef
+## UpdateServiceSpecificCredentialRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UpdateServerCertificateRequestTypeDef
-```
-
-Required fields:
-
-- `ServerCertificateName`: `str`
-
-Optional fields:
-
-- `NewPath`: `str`
-- `NewServerCertificateName`: `str`
-
-## UpdateServiceSpecificCredentialRequestTypeDef
-
-```python
-from mypy_boto3_iam.type_defs import UpdateServiceSpecificCredentialRequestTypeDef
+from mypy_boto3_iam.type_defs import UpdateServiceSpecificCredentialRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ServiceSpecificCredentialId`: `str`
+- `Status`: [statusTypeType](./literals.md#statustypetype)
+
+Optional fields:
+
+- `UserName`: `str`
+
+## UpdateSigningCertificateRequestRequestTypeDef
+
+```python
+from mypy_boto3_iam.type_defs import UpdateSigningCertificateRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CertificateId`: `str`
 - `Status`: [statusTypeType](./literals.md#statustypetype)
 
 Optional fields:
@@ -4848,25 +4863,10 @@ Required fields:
 
 - `Status`: [statusTypeType](./literals.md#statustypetype)
 
-## UpdateSigningCertificateRequestTypeDef
+## UpdateUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UpdateSigningCertificateRequestTypeDef
-```
-
-Required fields:
-
-- `CertificateId`: `str`
-- `Status`: [statusTypeType](./literals.md#statustypetype)
-
-Optional fields:
-
-- `UserName`: `str`
-
-## UpdateUserRequestTypeDef
-
-```python
-from mypy_boto3_iam.type_defs import UpdateUserRequestTypeDef
+from mypy_boto3_iam.type_defs import UpdateUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4889,10 +4889,10 @@ Optional fields:
 - `NewPath`: `str`
 - `NewUserName`: `str`
 
-## UploadSSHPublicKeyRequestTypeDef
+## UploadSSHPublicKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UploadSSHPublicKeyRequestTypeDef
+from mypy_boto3_iam.type_defs import UploadSSHPublicKeyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4900,10 +4900,10 @@ Required fields:
 - `UserName`: `str`
 - `SSHPublicKeyBody`: `str`
 
-## UploadSSHPublicKeyResponseResponseTypeDef
+## UploadSSHPublicKeyResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UploadSSHPublicKeyResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import UploadSSHPublicKeyResponseTypeDef
 ```
 
 Required fields:
@@ -4911,6 +4911,24 @@ Required fields:
 - `SSHPublicKey`: [SSHPublicKeyTypeDef](./type_defs.md#sshpublickeytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UploadServerCertificateRequestRequestTypeDef
+
+```python
+from mypy_boto3_iam.type_defs import UploadServerCertificateRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ServerCertificateName`: `str`
+- `CertificateBody`: `str`
+- `PrivateKey`: `str`
+
+Optional fields:
+
+- `Path`: `str`
+- `CertificateChain`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## UploadServerCertificateRequestServiceResourceTypeDef
 
@@ -4930,28 +4948,10 @@ Optional fields:
 - `CertificateChain`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## UploadServerCertificateRequestTypeDef
+## UploadServerCertificateResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UploadServerCertificateRequestTypeDef
-```
-
-Required fields:
-
-- `ServerCertificateName`: `str`
-- `CertificateBody`: `str`
-- `PrivateKey`: `str`
-
-Optional fields:
-
-- `Path`: `str`
-- `CertificateChain`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-## UploadServerCertificateResponseResponseTypeDef
-
-```python
-from mypy_boto3_iam.type_defs import UploadServerCertificateResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import UploadServerCertificateResponseTypeDef
 ```
 
 Required fields:
@@ -4961,6 +4961,20 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UploadSigningCertificateRequestRequestTypeDef
+
+```python
+from mypy_boto3_iam.type_defs import UploadSigningCertificateRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CertificateBody`: `str`
+
+Optional fields:
+
+- `UserName`: `str`
 
 ## UploadSigningCertificateRequestServiceResourceTypeDef
 
@@ -4976,24 +4990,10 @@ Optional fields:
 
 - `UserName`: `str`
 
-## UploadSigningCertificateRequestTypeDef
+## UploadSigningCertificateResponseTypeDef
 
 ```python
-from mypy_boto3_iam.type_defs import UploadSigningCertificateRequestTypeDef
-```
-
-Required fields:
-
-- `CertificateBody`: `str`
-
-Optional fields:
-
-- `UserName`: `str`
-
-## UploadSigningCertificateResponseResponseTypeDef
-
-```python
-from mypy_boto3_iam.type_defs import UploadSigningCertificateResponseResponseTypeDef
+from mypy_boto3_iam.type_defs import UploadSigningCertificateResponseTypeDef
 ```
 
 Required fields:

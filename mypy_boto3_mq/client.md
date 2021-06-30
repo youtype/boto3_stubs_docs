@@ -11,6 +11,7 @@ type annotations stubs module
   - [MQClient](#mqclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_broker](#create_broker)
     - [create_configuration](#create_configuration)
@@ -77,6 +78,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+MQClient exceptions.
+
+Type annotations for `boto3.client("mq").exceptions` method.
+
+Boto3 documentation:
+[MQ.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -102,7 +114,7 @@ Boto3 documentation:
 [MQ.Client.create_broker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_broker)
 
 Arguments mapping described in
-[CreateBrokerRequestTypeDef](./type_defs.md#createbrokerrequesttypedef).
+[CreateBrokerRequestRequestTypeDef](./type_defs.md#createbrokerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -132,7 +144,7 @@ Keyword-only arguments:
 - `Users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
 
 Returns
-[CreateBrokerResponseResponseTypeDef](./type_defs.md#createbrokerresponseresponsetypedef).
+[CreateBrokerResponseTypeDef](./type_defs.md#createbrokerresponsetypedef).
 
 ### create_configuration
 
@@ -144,7 +156,7 @@ Boto3 documentation:
 [MQ.Client.create_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_configuration)
 
 Arguments mapping described in
-[CreateConfigurationRequestTypeDef](./type_defs.md#createconfigurationrequesttypedef).
+[CreateConfigurationRequestRequestTypeDef](./type_defs.md#createconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -156,7 +168,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateConfigurationResponseResponseTypeDef](./type_defs.md#createconfigurationresponseresponsetypedef).
+[CreateConfigurationResponseTypeDef](./type_defs.md#createconfigurationresponsetypedef).
 
 ### create_tags
 
@@ -168,7 +180,7 @@ Boto3 documentation:
 [MQ.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_tags)
 
 Arguments mapping described in
-[CreateTagsRequestTypeDef](./type_defs.md#createtagsrequesttypedef).
+[CreateTagsRequestRequestTypeDef](./type_defs.md#createtagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -185,7 +197,7 @@ Boto3 documentation:
 [MQ.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_user)
 
 Arguments mapping described in
-[CreateUserRequestTypeDef](./type_defs.md#createuserrequesttypedef).
+[CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -207,14 +219,14 @@ Boto3 documentation:
 [MQ.Client.delete_broker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_broker)
 
 Arguments mapping described in
-[DeleteBrokerRequestTypeDef](./type_defs.md#deletebrokerrequesttypedef).
+[DeleteBrokerRequestRequestTypeDef](./type_defs.md#deletebrokerrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `BrokerId`: `str` *(required)*
 
 Returns
-[DeleteBrokerResponseResponseTypeDef](./type_defs.md#deletebrokerresponseresponsetypedef).
+[DeleteBrokerResponseTypeDef](./type_defs.md#deletebrokerresponsetypedef).
 
 ### delete_tags
 
@@ -226,7 +238,7 @@ Boto3 documentation:
 [MQ.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_tags)
 
 Arguments mapping described in
-[DeleteTagsRequestTypeDef](./type_defs.md#deletetagsrequesttypedef).
+[DeleteTagsRequestRequestTypeDef](./type_defs.md#deletetagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -243,7 +255,7 @@ Boto3 documentation:
 [MQ.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_user)
 
 Arguments mapping described in
-[DeleteUserRequestTypeDef](./type_defs.md#deleteuserrequesttypedef).
+[DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -262,14 +274,14 @@ Boto3 documentation:
 [MQ.Client.describe_broker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker)
 
 Arguments mapping described in
-[DescribeBrokerRequestTypeDef](./type_defs.md#describebrokerrequesttypedef).
+[DescribeBrokerRequestRequestTypeDef](./type_defs.md#describebrokerrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `BrokerId`: `str` *(required)*
 
 Returns
-[DescribeBrokerResponseResponseTypeDef](./type_defs.md#describebrokerresponseresponsetypedef).
+[DescribeBrokerResponseTypeDef](./type_defs.md#describebrokerresponsetypedef).
 
 ### describe_broker_engine_types
 
@@ -281,7 +293,7 @@ Boto3 documentation:
 [MQ.Client.describe_broker_engine_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker_engine_types)
 
 Arguments mapping described in
-[DescribeBrokerEngineTypesRequestTypeDef](./type_defs.md#describebrokerenginetypesrequesttypedef).
+[DescribeBrokerEngineTypesRequestRequestTypeDef](./type_defs.md#describebrokerenginetypesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -290,7 +302,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeBrokerEngineTypesResponseResponseTypeDef](./type_defs.md#describebrokerenginetypesresponseresponsetypedef).
+[DescribeBrokerEngineTypesResponseTypeDef](./type_defs.md#describebrokerenginetypesresponsetypedef).
 
 ### describe_broker_instance_options
 
@@ -303,7 +315,7 @@ Boto3 documentation:
 [MQ.Client.describe_broker_instance_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker_instance_options)
 
 Arguments mapping described in
-[DescribeBrokerInstanceOptionsRequestTypeDef](./type_defs.md#describebrokerinstanceoptionsrequesttypedef).
+[DescribeBrokerInstanceOptionsRequestRequestTypeDef](./type_defs.md#describebrokerinstanceoptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -314,7 +326,7 @@ Keyword-only arguments:
 - `StorageType`: `str`
 
 Returns
-[DescribeBrokerInstanceOptionsResponseResponseTypeDef](./type_defs.md#describebrokerinstanceoptionsresponseresponsetypedef).
+[DescribeBrokerInstanceOptionsResponseTypeDef](./type_defs.md#describebrokerinstanceoptionsresponsetypedef).
 
 ### describe_configuration
 
@@ -326,14 +338,14 @@ Boto3 documentation:
 [MQ.Client.describe_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_configuration)
 
 Arguments mapping described in
-[DescribeConfigurationRequestTypeDef](./type_defs.md#describeconfigurationrequesttypedef).
+[DescribeConfigurationRequestRequestTypeDef](./type_defs.md#describeconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ConfigurationId`: `str` *(required)*
 
 Returns
-[DescribeConfigurationResponseResponseTypeDef](./type_defs.md#describeconfigurationresponseresponsetypedef).
+[DescribeConfigurationResponseTypeDef](./type_defs.md#describeconfigurationresponsetypedef).
 
 ### describe_configuration_revision
 
@@ -346,7 +358,7 @@ Boto3 documentation:
 [MQ.Client.describe_configuration_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_configuration_revision)
 
 Arguments mapping described in
-[DescribeConfigurationRevisionRequestTypeDef](./type_defs.md#describeconfigurationrevisionrequesttypedef).
+[DescribeConfigurationRevisionRequestRequestTypeDef](./type_defs.md#describeconfigurationrevisionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -354,7 +366,7 @@ Keyword-only arguments:
 - `ConfigurationRevision`: `str` *(required)*
 
 Returns
-[DescribeConfigurationRevisionResponseResponseTypeDef](./type_defs.md#describeconfigurationrevisionresponseresponsetypedef).
+[DescribeConfigurationRevisionResponseTypeDef](./type_defs.md#describeconfigurationrevisionresponsetypedef).
 
 ### describe_user
 
@@ -366,7 +378,7 @@ Boto3 documentation:
 [MQ.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_user)
 
 Arguments mapping described in
-[DescribeUserRequestTypeDef](./type_defs.md#describeuserrequesttypedef).
+[DescribeUserRequestRequestTypeDef](./type_defs.md#describeuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -374,7 +386,7 @@ Keyword-only arguments:
 - `Username`: `str` *(required)*
 
 Returns
-[DescribeUserResponseResponseTypeDef](./type_defs.md#describeuserresponseresponsetypedef).
+[DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
 
 ### generate_presigned_url
 
@@ -404,7 +416,7 @@ Boto3 documentation:
 [MQ.Client.list_brokers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_brokers)
 
 Arguments mapping described in
-[ListBrokersRequestTypeDef](./type_defs.md#listbrokersrequesttypedef).
+[ListBrokersRequestRequestTypeDef](./type_defs.md#listbrokersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -412,7 +424,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListBrokersResponseResponseTypeDef](./type_defs.md#listbrokersresponseresponsetypedef).
+[ListBrokersResponseTypeDef](./type_defs.md#listbrokersresponsetypedef).
 
 ### list_configuration_revisions
 
@@ -424,7 +436,7 @@ Boto3 documentation:
 [MQ.Client.list_configuration_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_configuration_revisions)
 
 Arguments mapping described in
-[ListConfigurationRevisionsRequestTypeDef](./type_defs.md#listconfigurationrevisionsrequesttypedef).
+[ListConfigurationRevisionsRequestRequestTypeDef](./type_defs.md#listconfigurationrevisionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -433,7 +445,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListConfigurationRevisionsResponseResponseTypeDef](./type_defs.md#listconfigurationrevisionsresponseresponsetypedef).
+[ListConfigurationRevisionsResponseTypeDef](./type_defs.md#listconfigurationrevisionsresponsetypedef).
 
 ### list_configurations
 
@@ -445,7 +457,7 @@ Boto3 documentation:
 [MQ.Client.list_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_configurations)
 
 Arguments mapping described in
-[ListConfigurationsRequestTypeDef](./type_defs.md#listconfigurationsrequesttypedef).
+[ListConfigurationsRequestRequestTypeDef](./type_defs.md#listconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -453,7 +465,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListConfigurationsResponseResponseTypeDef](./type_defs.md#listconfigurationsresponseresponsetypedef).
+[ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef).
 
 ### list_tags
 
@@ -465,14 +477,13 @@ Boto3 documentation:
 [MQ.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_tags)
 
 Arguments mapping described in
-[ListTagsRequestTypeDef](./type_defs.md#listtagsrequesttypedef).
+[ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
-Returns
-[ListTagsResponseResponseTypeDef](./type_defs.md#listtagsresponseresponsetypedef).
+Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 
 ### list_users
 
@@ -484,7 +495,7 @@ Boto3 documentation:
 [MQ.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_users)
 
 Arguments mapping described in
-[ListUsersRequestTypeDef](./type_defs.md#listusersrequesttypedef).
+[ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -492,8 +503,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListUsersResponseResponseTypeDef](./type_defs.md#listusersresponseresponsetypedef).
+Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 
 ### reboot_broker
 
@@ -505,7 +515,7 @@ Boto3 documentation:
 [MQ.Client.reboot_broker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.reboot_broker)
 
 Arguments mapping described in
-[RebootBrokerRequestTypeDef](./type_defs.md#rebootbrokerrequesttypedef).
+[RebootBrokerRequestRequestTypeDef](./type_defs.md#rebootbrokerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -523,7 +533,7 @@ Boto3 documentation:
 [MQ.Client.update_broker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_broker)
 
 Arguments mapping described in
-[UpdateBrokerRequestTypeDef](./type_defs.md#updatebrokerrequesttypedef).
+[UpdateBrokerRequestRequestTypeDef](./type_defs.md#updatebrokerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -541,7 +551,7 @@ Keyword-only arguments:
 - `SecurityGroups`: `List`\[`str`\]
 
 Returns
-[UpdateBrokerResponseResponseTypeDef](./type_defs.md#updatebrokerresponseresponsetypedef).
+[UpdateBrokerResponseTypeDef](./type_defs.md#updatebrokerresponsetypedef).
 
 ### update_configuration
 
@@ -553,7 +563,7 @@ Boto3 documentation:
 [MQ.Client.update_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_configuration)
 
 Arguments mapping described in
-[UpdateConfigurationRequestTypeDef](./type_defs.md#updateconfigurationrequesttypedef).
+[UpdateConfigurationRequestRequestTypeDef](./type_defs.md#updateconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -562,7 +572,7 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[UpdateConfigurationResponseResponseTypeDef](./type_defs.md#updateconfigurationresponseresponsetypedef).
+[UpdateConfigurationResponseTypeDef](./type_defs.md#updateconfigurationresponsetypedef).
 
 ### update_user
 
@@ -574,7 +584,7 @@ Boto3 documentation:
 [MQ.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_user)
 
 Arguments mapping described in
-[UpdateUserRequestTypeDef](./type_defs.md#updateuserrequesttypedef).
+[UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef).
 
 Keyword-only arguments:
 

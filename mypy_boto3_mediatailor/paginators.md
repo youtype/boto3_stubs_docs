@@ -39,7 +39,7 @@ Arguments for `GetChannelSchedulePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetChannelSchedulePaginator.paginate` returns
-`Iterator`\[[GetChannelScheduleResponseResponseTypeDef](./type_defs.md#getchannelscheduleresponseresponsetypedef)\].
+`Iterator`\[[GetChannelScheduleResponseTypeDef](./type_defs.md#getchannelscheduleresponsetypedef)\].
 
 ## ListChannelsPaginator
 
@@ -64,7 +64,7 @@ Arguments for `ListChannelsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListChannelsPaginator.paginate` returns
-`Iterator`\[[ListChannelsResponseResponseTypeDef](./type_defs.md#listchannelsresponseresponsetypedef)\].
+`Iterator`\[[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)\].
 
 ## ListPlaybackConfigurationsPaginator
 
@@ -89,7 +89,7 @@ Arguments for `ListPlaybackConfigurationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPlaybackConfigurationsPaginator.paginate` returns
-`Iterator`\[[ListPlaybackConfigurationsResponseResponseTypeDef](./type_defs.md#listplaybackconfigurationsresponseresponsetypedef)\].
+`Iterator`\[[ListPlaybackConfigurationsResponseTypeDef](./type_defs.md#listplaybackconfigurationsresponsetypedef)\].
 
 ## ListSourceLocationsPaginator
 
@@ -114,7 +114,7 @@ Arguments for `ListSourceLocationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSourceLocationsPaginator.paginate` returns
-`Iterator`\[[ListSourceLocationsResponseResponseTypeDef](./type_defs.md#listsourcelocationsresponseresponsetypedef)\].
+`Iterator`\[[ListSourceLocationsResponseTypeDef](./type_defs.md#listsourcelocationsresponsetypedef)\].
 
 ## ListVodSourcesPaginator
 
@@ -140,4 +140,4 @@ Arguments for `ListVodSourcesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVodSourcesPaginator.paginate` returns
-`Iterator`\[[ListVodSourcesResponseResponseTypeDef](./type_defs.md#listvodsourcesresponseresponsetypedef)\].
+`Iterator`\[[ListVodSourcesResponseTypeDef](./type_defs.md#listvodsourcesresponsetypedef)\].

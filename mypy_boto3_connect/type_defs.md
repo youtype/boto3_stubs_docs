@@ -8,89 +8,89 @@ type annotations stubs module
 [mypy_boto3_connect](https://pypi.org/project/mypy-boto3-connect/).
 
 - [Typed dictionaries for boto3 Connect module](#typed-dictionaries-for-boto3-connect-module)
-  - [AssociateApprovedOriginRequestTypeDef](#associateapprovedoriginrequesttypedef)
-  - [AssociateBotRequestTypeDef](#associatebotrequesttypedef)
-  - [AssociateInstanceStorageConfigRequestTypeDef](#associateinstancestorageconfigrequesttypedef)
-  - [AssociateInstanceStorageConfigResponseResponseTypeDef](#associateinstancestorageconfigresponseresponsetypedef)
-  - [AssociateLambdaFunctionRequestTypeDef](#associatelambdafunctionrequesttypedef)
-  - [AssociateLexBotRequestTypeDef](#associatelexbotrequesttypedef)
-  - [AssociateQueueQuickConnectsRequestTypeDef](#associatequeuequickconnectsrequesttypedef)
-  - [AssociateRoutingProfileQueuesRequestTypeDef](#associateroutingprofilequeuesrequesttypedef)
-  - [AssociateSecurityKeyRequestTypeDef](#associatesecuritykeyrequesttypedef)
-  - [AssociateSecurityKeyResponseResponseTypeDef](#associatesecuritykeyresponseresponsetypedef)
+  - [AssociateApprovedOriginRequestRequestTypeDef](#associateapprovedoriginrequestrequesttypedef)
+  - [AssociateBotRequestRequestTypeDef](#associatebotrequestrequesttypedef)
+  - [AssociateInstanceStorageConfigRequestRequestTypeDef](#associateinstancestorageconfigrequestrequesttypedef)
+  - [AssociateInstanceStorageConfigResponseTypeDef](#associateinstancestorageconfigresponsetypedef)
+  - [AssociateLambdaFunctionRequestRequestTypeDef](#associatelambdafunctionrequestrequesttypedef)
+  - [AssociateLexBotRequestRequestTypeDef](#associatelexbotrequestrequesttypedef)
+  - [AssociateQueueQuickConnectsRequestRequestTypeDef](#associatequeuequickconnectsrequestrequesttypedef)
+  - [AssociateRoutingProfileQueuesRequestRequestTypeDef](#associateroutingprofilequeuesrequestrequesttypedef)
+  - [AssociateSecurityKeyRequestRequestTypeDef](#associatesecuritykeyrequestrequesttypedef)
+  - [AssociateSecurityKeyResponseTypeDef](#associatesecuritykeyresponsetypedef)
   - [AttributeTypeDef](#attributetypedef)
   - [ChatMessageTypeDef](#chatmessagetypedef)
   - [ContactFlowSummaryTypeDef](#contactflowsummarytypedef)
   - [ContactFlowTypeDef](#contactflowtypedef)
-  - [CreateContactFlowRequestTypeDef](#createcontactflowrequesttypedef)
-  - [CreateContactFlowResponseResponseTypeDef](#createcontactflowresponseresponsetypedef)
-  - [CreateInstanceRequestTypeDef](#createinstancerequesttypedef)
-  - [CreateInstanceResponseResponseTypeDef](#createinstanceresponseresponsetypedef)
-  - [CreateIntegrationAssociationRequestTypeDef](#createintegrationassociationrequesttypedef)
-  - [CreateIntegrationAssociationResponseResponseTypeDef](#createintegrationassociationresponseresponsetypedef)
-  - [CreateQueueRequestTypeDef](#createqueuerequesttypedef)
-  - [CreateQueueResponseResponseTypeDef](#createqueueresponseresponsetypedef)
-  - [CreateQuickConnectRequestTypeDef](#createquickconnectrequesttypedef)
-  - [CreateQuickConnectResponseResponseTypeDef](#createquickconnectresponseresponsetypedef)
-  - [CreateRoutingProfileRequestTypeDef](#createroutingprofilerequesttypedef)
-  - [CreateRoutingProfileResponseResponseTypeDef](#createroutingprofileresponseresponsetypedef)
-  - [CreateUseCaseRequestTypeDef](#createusecaserequesttypedef)
-  - [CreateUseCaseResponseResponseTypeDef](#createusecaseresponseresponsetypedef)
-  - [CreateUserHierarchyGroupRequestTypeDef](#createuserhierarchygrouprequesttypedef)
-  - [CreateUserHierarchyGroupResponseResponseTypeDef](#createuserhierarchygroupresponseresponsetypedef)
-  - [CreateUserRequestTypeDef](#createuserrequesttypedef)
-  - [CreateUserResponseResponseTypeDef](#createuserresponseresponsetypedef)
+  - [CreateContactFlowRequestRequestTypeDef](#createcontactflowrequestrequesttypedef)
+  - [CreateContactFlowResponseTypeDef](#createcontactflowresponsetypedef)
+  - [CreateInstanceRequestRequestTypeDef](#createinstancerequestrequesttypedef)
+  - [CreateInstanceResponseTypeDef](#createinstanceresponsetypedef)
+  - [CreateIntegrationAssociationRequestRequestTypeDef](#createintegrationassociationrequestrequesttypedef)
+  - [CreateIntegrationAssociationResponseTypeDef](#createintegrationassociationresponsetypedef)
+  - [CreateQueueRequestRequestTypeDef](#createqueuerequestrequesttypedef)
+  - [CreateQueueResponseTypeDef](#createqueueresponsetypedef)
+  - [CreateQuickConnectRequestRequestTypeDef](#createquickconnectrequestrequesttypedef)
+  - [CreateQuickConnectResponseTypeDef](#createquickconnectresponsetypedef)
+  - [CreateRoutingProfileRequestRequestTypeDef](#createroutingprofilerequestrequesttypedef)
+  - [CreateRoutingProfileResponseTypeDef](#createroutingprofileresponsetypedef)
+  - [CreateUseCaseRequestRequestTypeDef](#createusecaserequestrequesttypedef)
+  - [CreateUseCaseResponseTypeDef](#createusecaseresponsetypedef)
+  - [CreateUserHierarchyGroupRequestRequestTypeDef](#createuserhierarchygrouprequestrequesttypedef)
+  - [CreateUserHierarchyGroupResponseTypeDef](#createuserhierarchygroupresponsetypedef)
+  - [CreateUserRequestRequestTypeDef](#createuserrequestrequesttypedef)
+  - [CreateUserResponseTypeDef](#createuserresponsetypedef)
   - [CredentialsTypeDef](#credentialstypedef)
   - [CurrentMetricDataTypeDef](#currentmetricdatatypedef)
   - [CurrentMetricResultTypeDef](#currentmetricresulttypedef)
   - [CurrentMetricTypeDef](#currentmetrictypedef)
-  - [DeleteInstanceRequestTypeDef](#deleteinstancerequesttypedef)
-  - [DeleteIntegrationAssociationRequestTypeDef](#deleteintegrationassociationrequesttypedef)
-  - [DeleteQuickConnectRequestTypeDef](#deletequickconnectrequesttypedef)
-  - [DeleteUseCaseRequestTypeDef](#deleteusecaserequesttypedef)
-  - [DeleteUserHierarchyGroupRequestTypeDef](#deleteuserhierarchygrouprequesttypedef)
-  - [DeleteUserRequestTypeDef](#deleteuserrequesttypedef)
-  - [DescribeContactFlowRequestTypeDef](#describecontactflowrequesttypedef)
-  - [DescribeContactFlowResponseResponseTypeDef](#describecontactflowresponseresponsetypedef)
-  - [DescribeHoursOfOperationRequestTypeDef](#describehoursofoperationrequesttypedef)
-  - [DescribeHoursOfOperationResponseResponseTypeDef](#describehoursofoperationresponseresponsetypedef)
-  - [DescribeInstanceAttributeRequestTypeDef](#describeinstanceattributerequesttypedef)
-  - [DescribeInstanceAttributeResponseResponseTypeDef](#describeinstanceattributeresponseresponsetypedef)
-  - [DescribeInstanceRequestTypeDef](#describeinstancerequesttypedef)
-  - [DescribeInstanceResponseResponseTypeDef](#describeinstanceresponseresponsetypedef)
-  - [DescribeInstanceStorageConfigRequestTypeDef](#describeinstancestorageconfigrequesttypedef)
-  - [DescribeInstanceStorageConfigResponseResponseTypeDef](#describeinstancestorageconfigresponseresponsetypedef)
-  - [DescribeQueueRequestTypeDef](#describequeuerequesttypedef)
-  - [DescribeQueueResponseResponseTypeDef](#describequeueresponseresponsetypedef)
-  - [DescribeQuickConnectRequestTypeDef](#describequickconnectrequesttypedef)
-  - [DescribeQuickConnectResponseResponseTypeDef](#describequickconnectresponseresponsetypedef)
-  - [DescribeRoutingProfileRequestTypeDef](#describeroutingprofilerequesttypedef)
-  - [DescribeRoutingProfileResponseResponseTypeDef](#describeroutingprofileresponseresponsetypedef)
-  - [DescribeUserHierarchyGroupRequestTypeDef](#describeuserhierarchygrouprequesttypedef)
-  - [DescribeUserHierarchyGroupResponseResponseTypeDef](#describeuserhierarchygroupresponseresponsetypedef)
-  - [DescribeUserHierarchyStructureRequestTypeDef](#describeuserhierarchystructurerequesttypedef)
-  - [DescribeUserHierarchyStructureResponseResponseTypeDef](#describeuserhierarchystructureresponseresponsetypedef)
-  - [DescribeUserRequestTypeDef](#describeuserrequesttypedef)
-  - [DescribeUserResponseResponseTypeDef](#describeuserresponseresponsetypedef)
+  - [DeleteInstanceRequestRequestTypeDef](#deleteinstancerequestrequesttypedef)
+  - [DeleteIntegrationAssociationRequestRequestTypeDef](#deleteintegrationassociationrequestrequesttypedef)
+  - [DeleteQuickConnectRequestRequestTypeDef](#deletequickconnectrequestrequesttypedef)
+  - [DeleteUseCaseRequestRequestTypeDef](#deleteusecaserequestrequesttypedef)
+  - [DeleteUserHierarchyGroupRequestRequestTypeDef](#deleteuserhierarchygrouprequestrequesttypedef)
+  - [DeleteUserRequestRequestTypeDef](#deleteuserrequestrequesttypedef)
+  - [DescribeContactFlowRequestRequestTypeDef](#describecontactflowrequestrequesttypedef)
+  - [DescribeContactFlowResponseTypeDef](#describecontactflowresponsetypedef)
+  - [DescribeHoursOfOperationRequestRequestTypeDef](#describehoursofoperationrequestrequesttypedef)
+  - [DescribeHoursOfOperationResponseTypeDef](#describehoursofoperationresponsetypedef)
+  - [DescribeInstanceAttributeRequestRequestTypeDef](#describeinstanceattributerequestrequesttypedef)
+  - [DescribeInstanceAttributeResponseTypeDef](#describeinstanceattributeresponsetypedef)
+  - [DescribeInstanceRequestRequestTypeDef](#describeinstancerequestrequesttypedef)
+  - [DescribeInstanceResponseTypeDef](#describeinstanceresponsetypedef)
+  - [DescribeInstanceStorageConfigRequestRequestTypeDef](#describeinstancestorageconfigrequestrequesttypedef)
+  - [DescribeInstanceStorageConfigResponseTypeDef](#describeinstancestorageconfigresponsetypedef)
+  - [DescribeQueueRequestRequestTypeDef](#describequeuerequestrequesttypedef)
+  - [DescribeQueueResponseTypeDef](#describequeueresponsetypedef)
+  - [DescribeQuickConnectRequestRequestTypeDef](#describequickconnectrequestrequesttypedef)
+  - [DescribeQuickConnectResponseTypeDef](#describequickconnectresponsetypedef)
+  - [DescribeRoutingProfileRequestRequestTypeDef](#describeroutingprofilerequestrequesttypedef)
+  - [DescribeRoutingProfileResponseTypeDef](#describeroutingprofileresponsetypedef)
+  - [DescribeUserHierarchyGroupRequestRequestTypeDef](#describeuserhierarchygrouprequestrequesttypedef)
+  - [DescribeUserHierarchyGroupResponseTypeDef](#describeuserhierarchygroupresponsetypedef)
+  - [DescribeUserHierarchyStructureRequestRequestTypeDef](#describeuserhierarchystructurerequestrequesttypedef)
+  - [DescribeUserHierarchyStructureResponseTypeDef](#describeuserhierarchystructureresponsetypedef)
+  - [DescribeUserRequestRequestTypeDef](#describeuserrequestrequesttypedef)
+  - [DescribeUserResponseTypeDef](#describeuserresponsetypedef)
   - [DimensionsTypeDef](#dimensionstypedef)
-  - [DisassociateApprovedOriginRequestTypeDef](#disassociateapprovedoriginrequesttypedef)
-  - [DisassociateBotRequestTypeDef](#disassociatebotrequesttypedef)
-  - [DisassociateInstanceStorageConfigRequestTypeDef](#disassociateinstancestorageconfigrequesttypedef)
-  - [DisassociateLambdaFunctionRequestTypeDef](#disassociatelambdafunctionrequesttypedef)
-  - [DisassociateLexBotRequestTypeDef](#disassociatelexbotrequesttypedef)
-  - [DisassociateQueueQuickConnectsRequestTypeDef](#disassociatequeuequickconnectsrequesttypedef)
-  - [DisassociateRoutingProfileQueuesRequestTypeDef](#disassociateroutingprofilequeuesrequesttypedef)
-  - [DisassociateSecurityKeyRequestTypeDef](#disassociatesecuritykeyrequesttypedef)
+  - [DisassociateApprovedOriginRequestRequestTypeDef](#disassociateapprovedoriginrequestrequesttypedef)
+  - [DisassociateBotRequestRequestTypeDef](#disassociatebotrequestrequesttypedef)
+  - [DisassociateInstanceStorageConfigRequestRequestTypeDef](#disassociateinstancestorageconfigrequestrequesttypedef)
+  - [DisassociateLambdaFunctionRequestRequestTypeDef](#disassociatelambdafunctionrequestrequesttypedef)
+  - [DisassociateLexBotRequestRequestTypeDef](#disassociatelexbotrequestrequesttypedef)
+  - [DisassociateQueueQuickConnectsRequestRequestTypeDef](#disassociatequeuequickconnectsrequestrequesttypedef)
+  - [DisassociateRoutingProfileQueuesRequestRequestTypeDef](#disassociateroutingprofilequeuesrequestrequesttypedef)
+  - [DisassociateSecurityKeyRequestRequestTypeDef](#disassociatesecuritykeyrequestrequesttypedef)
   - [EncryptionConfigTypeDef](#encryptionconfigtypedef)
   - [FiltersTypeDef](#filterstypedef)
-  - [GetContactAttributesRequestTypeDef](#getcontactattributesrequesttypedef)
-  - [GetContactAttributesResponseResponseTypeDef](#getcontactattributesresponseresponsetypedef)
-  - [GetCurrentMetricDataRequestTypeDef](#getcurrentmetricdatarequesttypedef)
-  - [GetCurrentMetricDataResponseResponseTypeDef](#getcurrentmetricdataresponseresponsetypedef)
-  - [GetFederationTokenRequestTypeDef](#getfederationtokenrequesttypedef)
-  - [GetFederationTokenResponseResponseTypeDef](#getfederationtokenresponseresponsetypedef)
-  - [GetMetricDataRequestTypeDef](#getmetricdatarequesttypedef)
-  - [GetMetricDataResponseResponseTypeDef](#getmetricdataresponseresponsetypedef)
+  - [GetContactAttributesRequestRequestTypeDef](#getcontactattributesrequestrequesttypedef)
+  - [GetContactAttributesResponseTypeDef](#getcontactattributesresponsetypedef)
+  - [GetCurrentMetricDataRequestRequestTypeDef](#getcurrentmetricdatarequestrequesttypedef)
+  - [GetCurrentMetricDataResponseTypeDef](#getcurrentmetricdataresponsetypedef)
+  - [GetFederationTokenRequestRequestTypeDef](#getfederationtokenrequestrequesttypedef)
+  - [GetFederationTokenResponseTypeDef](#getfederationtokenresponsetypedef)
+  - [GetMetricDataRequestRequestTypeDef](#getmetricdatarequestrequesttypedef)
+  - [GetMetricDataResponseTypeDef](#getmetricdataresponsetypedef)
   - [HierarchyGroupSummaryTypeDef](#hierarchygroupsummarytypedef)
   - [HierarchyGroupTypeDef](#hierarchygrouptypedef)
   - [HierarchyLevelTypeDef](#hierarchyleveltypedef)
@@ -116,52 +116,52 @@ type annotations stubs module
   - [LexBotConfigTypeDef](#lexbotconfigtypedef)
   - [LexBotTypeDef](#lexbottypedef)
   - [LexV2BotTypeDef](#lexv2bottypedef)
-  - [ListApprovedOriginsRequestTypeDef](#listapprovedoriginsrequesttypedef)
-  - [ListApprovedOriginsResponseResponseTypeDef](#listapprovedoriginsresponseresponsetypedef)
-  - [ListBotsRequestTypeDef](#listbotsrequesttypedef)
-  - [ListBotsResponseResponseTypeDef](#listbotsresponseresponsetypedef)
-  - [ListContactFlowsRequestTypeDef](#listcontactflowsrequesttypedef)
-  - [ListContactFlowsResponseResponseTypeDef](#listcontactflowsresponseresponsetypedef)
-  - [ListHoursOfOperationsRequestTypeDef](#listhoursofoperationsrequesttypedef)
-  - [ListHoursOfOperationsResponseResponseTypeDef](#listhoursofoperationsresponseresponsetypedef)
-  - [ListInstanceAttributesRequestTypeDef](#listinstanceattributesrequesttypedef)
-  - [ListInstanceAttributesResponseResponseTypeDef](#listinstanceattributesresponseresponsetypedef)
-  - [ListInstanceStorageConfigsRequestTypeDef](#listinstancestorageconfigsrequesttypedef)
-  - [ListInstanceStorageConfigsResponseResponseTypeDef](#listinstancestorageconfigsresponseresponsetypedef)
-  - [ListInstancesRequestTypeDef](#listinstancesrequesttypedef)
-  - [ListInstancesResponseResponseTypeDef](#listinstancesresponseresponsetypedef)
-  - [ListIntegrationAssociationsRequestTypeDef](#listintegrationassociationsrequesttypedef)
-  - [ListIntegrationAssociationsResponseResponseTypeDef](#listintegrationassociationsresponseresponsetypedef)
-  - [ListLambdaFunctionsRequestTypeDef](#listlambdafunctionsrequesttypedef)
-  - [ListLambdaFunctionsResponseResponseTypeDef](#listlambdafunctionsresponseresponsetypedef)
-  - [ListLexBotsRequestTypeDef](#listlexbotsrequesttypedef)
-  - [ListLexBotsResponseResponseTypeDef](#listlexbotsresponseresponsetypedef)
-  - [ListPhoneNumbersRequestTypeDef](#listphonenumbersrequesttypedef)
-  - [ListPhoneNumbersResponseResponseTypeDef](#listphonenumbersresponseresponsetypedef)
-  - [ListPromptsRequestTypeDef](#listpromptsrequesttypedef)
-  - [ListPromptsResponseResponseTypeDef](#listpromptsresponseresponsetypedef)
-  - [ListQueueQuickConnectsRequestTypeDef](#listqueuequickconnectsrequesttypedef)
-  - [ListQueueQuickConnectsResponseResponseTypeDef](#listqueuequickconnectsresponseresponsetypedef)
-  - [ListQueuesRequestTypeDef](#listqueuesrequesttypedef)
-  - [ListQueuesResponseResponseTypeDef](#listqueuesresponseresponsetypedef)
-  - [ListQuickConnectsRequestTypeDef](#listquickconnectsrequesttypedef)
-  - [ListQuickConnectsResponseResponseTypeDef](#listquickconnectsresponseresponsetypedef)
-  - [ListRoutingProfileQueuesRequestTypeDef](#listroutingprofilequeuesrequesttypedef)
-  - [ListRoutingProfileQueuesResponseResponseTypeDef](#listroutingprofilequeuesresponseresponsetypedef)
-  - [ListRoutingProfilesRequestTypeDef](#listroutingprofilesrequesttypedef)
-  - [ListRoutingProfilesResponseResponseTypeDef](#listroutingprofilesresponseresponsetypedef)
-  - [ListSecurityKeysRequestTypeDef](#listsecuritykeysrequesttypedef)
-  - [ListSecurityKeysResponseResponseTypeDef](#listsecuritykeysresponseresponsetypedef)
-  - [ListSecurityProfilesRequestTypeDef](#listsecurityprofilesrequesttypedef)
-  - [ListSecurityProfilesResponseResponseTypeDef](#listsecurityprofilesresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
-  - [ListUseCasesRequestTypeDef](#listusecasesrequesttypedef)
-  - [ListUseCasesResponseResponseTypeDef](#listusecasesresponseresponsetypedef)
-  - [ListUserHierarchyGroupsRequestTypeDef](#listuserhierarchygroupsrequesttypedef)
-  - [ListUserHierarchyGroupsResponseResponseTypeDef](#listuserhierarchygroupsresponseresponsetypedef)
-  - [ListUsersRequestTypeDef](#listusersrequesttypedef)
-  - [ListUsersResponseResponseTypeDef](#listusersresponseresponsetypedef)
+  - [ListApprovedOriginsRequestRequestTypeDef](#listapprovedoriginsrequestrequesttypedef)
+  - [ListApprovedOriginsResponseTypeDef](#listapprovedoriginsresponsetypedef)
+  - [ListBotsRequestRequestTypeDef](#listbotsrequestrequesttypedef)
+  - [ListBotsResponseTypeDef](#listbotsresponsetypedef)
+  - [ListContactFlowsRequestRequestTypeDef](#listcontactflowsrequestrequesttypedef)
+  - [ListContactFlowsResponseTypeDef](#listcontactflowsresponsetypedef)
+  - [ListHoursOfOperationsRequestRequestTypeDef](#listhoursofoperationsrequestrequesttypedef)
+  - [ListHoursOfOperationsResponseTypeDef](#listhoursofoperationsresponsetypedef)
+  - [ListInstanceAttributesRequestRequestTypeDef](#listinstanceattributesrequestrequesttypedef)
+  - [ListInstanceAttributesResponseTypeDef](#listinstanceattributesresponsetypedef)
+  - [ListInstanceStorageConfigsRequestRequestTypeDef](#listinstancestorageconfigsrequestrequesttypedef)
+  - [ListInstanceStorageConfigsResponseTypeDef](#listinstancestorageconfigsresponsetypedef)
+  - [ListInstancesRequestRequestTypeDef](#listinstancesrequestrequesttypedef)
+  - [ListInstancesResponseTypeDef](#listinstancesresponsetypedef)
+  - [ListIntegrationAssociationsRequestRequestTypeDef](#listintegrationassociationsrequestrequesttypedef)
+  - [ListIntegrationAssociationsResponseTypeDef](#listintegrationassociationsresponsetypedef)
+  - [ListLambdaFunctionsRequestRequestTypeDef](#listlambdafunctionsrequestrequesttypedef)
+  - [ListLambdaFunctionsResponseTypeDef](#listlambdafunctionsresponsetypedef)
+  - [ListLexBotsRequestRequestTypeDef](#listlexbotsrequestrequesttypedef)
+  - [ListLexBotsResponseTypeDef](#listlexbotsresponsetypedef)
+  - [ListPhoneNumbersRequestRequestTypeDef](#listphonenumbersrequestrequesttypedef)
+  - [ListPhoneNumbersResponseTypeDef](#listphonenumbersresponsetypedef)
+  - [ListPromptsRequestRequestTypeDef](#listpromptsrequestrequesttypedef)
+  - [ListPromptsResponseTypeDef](#listpromptsresponsetypedef)
+  - [ListQueueQuickConnectsRequestRequestTypeDef](#listqueuequickconnectsrequestrequesttypedef)
+  - [ListQueueQuickConnectsResponseTypeDef](#listqueuequickconnectsresponsetypedef)
+  - [ListQueuesRequestRequestTypeDef](#listqueuesrequestrequesttypedef)
+  - [ListQueuesResponseTypeDef](#listqueuesresponsetypedef)
+  - [ListQuickConnectsRequestRequestTypeDef](#listquickconnectsrequestrequesttypedef)
+  - [ListQuickConnectsResponseTypeDef](#listquickconnectsresponsetypedef)
+  - [ListRoutingProfileQueuesRequestRequestTypeDef](#listroutingprofilequeuesrequestrequesttypedef)
+  - [ListRoutingProfileQueuesResponseTypeDef](#listroutingprofilequeuesresponsetypedef)
+  - [ListRoutingProfilesRequestRequestTypeDef](#listroutingprofilesrequestrequesttypedef)
+  - [ListRoutingProfilesResponseTypeDef](#listroutingprofilesresponsetypedef)
+  - [ListSecurityKeysRequestRequestTypeDef](#listsecuritykeysrequestrequesttypedef)
+  - [ListSecurityKeysResponseTypeDef](#listsecuritykeysresponsetypedef)
+  - [ListSecurityProfilesRequestRequestTypeDef](#listsecurityprofilesrequestrequesttypedef)
+  - [ListSecurityProfilesResponseTypeDef](#listsecurityprofilesresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListUseCasesRequestRequestTypeDef](#listusecasesrequestrequesttypedef)
+  - [ListUseCasesResponseTypeDef](#listusecasesresponsetypedef)
+  - [ListUserHierarchyGroupsRequestRequestTypeDef](#listuserhierarchygroupsrequestrequesttypedef)
+  - [ListUserHierarchyGroupsResponseTypeDef](#listuserhierarchygroupsresponsetypedef)
+  - [ListUsersRequestRequestTypeDef](#listusersrequestrequesttypedef)
+  - [ListUsersResponseTypeDef](#listusersresponsetypedef)
   - [MediaConcurrencyTypeDef](#mediaconcurrencytypedef)
   - [OutboundCallerConfigTypeDef](#outboundcallerconfigtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
@@ -178,7 +178,7 @@ type annotations stubs module
   - [QuickConnectTypeDef](#quickconnecttypedef)
   - [ReferenceTypeDef](#referencetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ResumeContactRecordingRequestTypeDef](#resumecontactrecordingrequesttypedef)
+  - [ResumeContactRecordingRequestRequestTypeDef](#resumecontactrecordingrequestrequesttypedef)
   - [RoutingProfileQueueConfigSummaryTypeDef](#routingprofilequeueconfigsummarytypedef)
   - [RoutingProfileQueueConfigTypeDef](#routingprofilequeueconfigtypedef)
   - [RoutingProfileQueueReferenceTypeDef](#routingprofilequeuereferencetypedef)
@@ -187,42 +187,42 @@ type annotations stubs module
   - [S3ConfigTypeDef](#s3configtypedef)
   - [SecurityKeyTypeDef](#securitykeytypedef)
   - [SecurityProfileSummaryTypeDef](#securityprofilesummarytypedef)
-  - [StartChatContactRequestTypeDef](#startchatcontactrequesttypedef)
-  - [StartChatContactResponseResponseTypeDef](#startchatcontactresponseresponsetypedef)
-  - [StartContactRecordingRequestTypeDef](#startcontactrecordingrequesttypedef)
-  - [StartOutboundVoiceContactRequestTypeDef](#startoutboundvoicecontactrequesttypedef)
-  - [StartOutboundVoiceContactResponseResponseTypeDef](#startoutboundvoicecontactresponseresponsetypedef)
-  - [StartTaskContactRequestTypeDef](#starttaskcontactrequesttypedef)
-  - [StartTaskContactResponseResponseTypeDef](#starttaskcontactresponseresponsetypedef)
-  - [StopContactRecordingRequestTypeDef](#stopcontactrecordingrequesttypedef)
-  - [StopContactRequestTypeDef](#stopcontactrequesttypedef)
-  - [SuspendContactRecordingRequestTypeDef](#suspendcontactrecordingrequesttypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [StartChatContactRequestRequestTypeDef](#startchatcontactrequestrequesttypedef)
+  - [StartChatContactResponseTypeDef](#startchatcontactresponsetypedef)
+  - [StartContactRecordingRequestRequestTypeDef](#startcontactrecordingrequestrequesttypedef)
+  - [StartOutboundVoiceContactRequestRequestTypeDef](#startoutboundvoicecontactrequestrequesttypedef)
+  - [StartOutboundVoiceContactResponseTypeDef](#startoutboundvoicecontactresponsetypedef)
+  - [StartTaskContactRequestRequestTypeDef](#starttaskcontactrequestrequesttypedef)
+  - [StartTaskContactResponseTypeDef](#starttaskcontactresponsetypedef)
+  - [StopContactRecordingRequestRequestTypeDef](#stopcontactrecordingrequestrequesttypedef)
+  - [StopContactRequestRequestTypeDef](#stopcontactrequestrequesttypedef)
+  - [SuspendContactRecordingRequestRequestTypeDef](#suspendcontactrecordingrequestrequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [ThresholdTypeDef](#thresholdtypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateContactAttributesRequestTypeDef](#updatecontactattributesrequesttypedef)
-  - [UpdateContactFlowContentRequestTypeDef](#updatecontactflowcontentrequesttypedef)
-  - [UpdateContactFlowNameRequestTypeDef](#updatecontactflownamerequesttypedef)
-  - [UpdateInstanceAttributeRequestTypeDef](#updateinstanceattributerequesttypedef)
-  - [UpdateInstanceStorageConfigRequestTypeDef](#updateinstancestorageconfigrequesttypedef)
-  - [UpdateQueueHoursOfOperationRequestTypeDef](#updatequeuehoursofoperationrequesttypedef)
-  - [UpdateQueueMaxContactsRequestTypeDef](#updatequeuemaxcontactsrequesttypedef)
-  - [UpdateQueueNameRequestTypeDef](#updatequeuenamerequesttypedef)
-  - [UpdateQueueOutboundCallerConfigRequestTypeDef](#updatequeueoutboundcallerconfigrequesttypedef)
-  - [UpdateQueueStatusRequestTypeDef](#updatequeuestatusrequesttypedef)
-  - [UpdateQuickConnectConfigRequestTypeDef](#updatequickconnectconfigrequesttypedef)
-  - [UpdateQuickConnectNameRequestTypeDef](#updatequickconnectnamerequesttypedef)
-  - [UpdateRoutingProfileConcurrencyRequestTypeDef](#updateroutingprofileconcurrencyrequesttypedef)
-  - [UpdateRoutingProfileDefaultOutboundQueueRequestTypeDef](#updateroutingprofiledefaultoutboundqueuerequesttypedef)
-  - [UpdateRoutingProfileNameRequestTypeDef](#updateroutingprofilenamerequesttypedef)
-  - [UpdateRoutingProfileQueuesRequestTypeDef](#updateroutingprofilequeuesrequesttypedef)
-  - [UpdateUserHierarchyGroupNameRequestTypeDef](#updateuserhierarchygroupnamerequesttypedef)
-  - [UpdateUserHierarchyRequestTypeDef](#updateuserhierarchyrequesttypedef)
-  - [UpdateUserHierarchyStructureRequestTypeDef](#updateuserhierarchystructurerequesttypedef)
-  - [UpdateUserIdentityInfoRequestTypeDef](#updateuseridentityinforequesttypedef)
-  - [UpdateUserPhoneConfigRequestTypeDef](#updateuserphoneconfigrequesttypedef)
-  - [UpdateUserRoutingProfileRequestTypeDef](#updateuserroutingprofilerequesttypedef)
-  - [UpdateUserSecurityProfilesRequestTypeDef](#updateusersecurityprofilesrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateContactAttributesRequestRequestTypeDef](#updatecontactattributesrequestrequesttypedef)
+  - [UpdateContactFlowContentRequestRequestTypeDef](#updatecontactflowcontentrequestrequesttypedef)
+  - [UpdateContactFlowNameRequestRequestTypeDef](#updatecontactflownamerequestrequesttypedef)
+  - [UpdateInstanceAttributeRequestRequestTypeDef](#updateinstanceattributerequestrequesttypedef)
+  - [UpdateInstanceStorageConfigRequestRequestTypeDef](#updateinstancestorageconfigrequestrequesttypedef)
+  - [UpdateQueueHoursOfOperationRequestRequestTypeDef](#updatequeuehoursofoperationrequestrequesttypedef)
+  - [UpdateQueueMaxContactsRequestRequestTypeDef](#updatequeuemaxcontactsrequestrequesttypedef)
+  - [UpdateQueueNameRequestRequestTypeDef](#updatequeuenamerequestrequesttypedef)
+  - [UpdateQueueOutboundCallerConfigRequestRequestTypeDef](#updatequeueoutboundcallerconfigrequestrequesttypedef)
+  - [UpdateQueueStatusRequestRequestTypeDef](#updatequeuestatusrequestrequesttypedef)
+  - [UpdateQuickConnectConfigRequestRequestTypeDef](#updatequickconnectconfigrequestrequesttypedef)
+  - [UpdateQuickConnectNameRequestRequestTypeDef](#updatequickconnectnamerequestrequesttypedef)
+  - [UpdateRoutingProfileConcurrencyRequestRequestTypeDef](#updateroutingprofileconcurrencyrequestrequesttypedef)
+  - [UpdateRoutingProfileDefaultOutboundQueueRequestRequestTypeDef](#updateroutingprofiledefaultoutboundqueuerequestrequesttypedef)
+  - [UpdateRoutingProfileNameRequestRequestTypeDef](#updateroutingprofilenamerequestrequesttypedef)
+  - [UpdateRoutingProfileQueuesRequestRequestTypeDef](#updateroutingprofilequeuesrequestrequesttypedef)
+  - [UpdateUserHierarchyGroupNameRequestRequestTypeDef](#updateuserhierarchygroupnamerequestrequesttypedef)
+  - [UpdateUserHierarchyRequestRequestTypeDef](#updateuserhierarchyrequestrequesttypedef)
+  - [UpdateUserHierarchyStructureRequestRequestTypeDef](#updateuserhierarchystructurerequestrequesttypedef)
+  - [UpdateUserIdentityInfoRequestRequestTypeDef](#updateuseridentityinforequestrequesttypedef)
+  - [UpdateUserPhoneConfigRequestRequestTypeDef](#updateuserphoneconfigrequestrequesttypedef)
+  - [UpdateUserRoutingProfileRequestRequestTypeDef](#updateuserroutingprofilerequestrequesttypedef)
+  - [UpdateUserSecurityProfilesRequestRequestTypeDef](#updateusersecurityprofilesrequestrequesttypedef)
   - [UseCaseTypeDef](#usecasetypedef)
   - [UserIdentityInfoTypeDef](#useridentityinfotypedef)
   - [UserPhoneConfigTypeDef](#userphoneconfigtypedef)
@@ -231,10 +231,10 @@ type annotations stubs module
   - [UserTypeDef](#usertypedef)
   - [VoiceRecordingConfigurationTypeDef](#voicerecordingconfigurationtypedef)
 
-## AssociateApprovedOriginRequestTypeDef
+## AssociateApprovedOriginRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import AssociateApprovedOriginRequestTypeDef
+from mypy_boto3_connect.type_defs import AssociateApprovedOriginRequestRequestTypeDef
 ```
 
 Required fields:
@@ -242,10 +242,10 @@ Required fields:
 - `InstanceId`: `str`
 - `Origin`: `str`
 
-## AssociateBotRequestTypeDef
+## AssociateBotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import AssociateBotRequestTypeDef
+from mypy_boto3_connect.type_defs import AssociateBotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -257,10 +257,10 @@ Optional fields:
 - `LexBot`: [LexBotTypeDef](./type_defs.md#lexbottypedef)
 - `LexV2Bot`: [LexV2BotTypeDef](./type_defs.md#lexv2bottypedef)
 
-## AssociateInstanceStorageConfigRequestTypeDef
+## AssociateInstanceStorageConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import AssociateInstanceStorageConfigRequestTypeDef
+from mypy_boto3_connect.type_defs import AssociateInstanceStorageConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -271,10 +271,10 @@ Required fields:
 - `StorageConfig`:
   [InstanceStorageConfigTypeDef](./type_defs.md#instancestorageconfigtypedef)
 
-## AssociateInstanceStorageConfigResponseResponseTypeDef
+## AssociateInstanceStorageConfigResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import AssociateInstanceStorageConfigResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import AssociateInstanceStorageConfigResponseTypeDef
 ```
 
 Required fields:
@@ -283,10 +283,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateLambdaFunctionRequestTypeDef
+## AssociateLambdaFunctionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import AssociateLambdaFunctionRequestTypeDef
+from mypy_boto3_connect.type_defs import AssociateLambdaFunctionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -294,10 +294,10 @@ Required fields:
 - `InstanceId`: `str`
 - `FunctionArn`: `str`
 
-## AssociateLexBotRequestTypeDef
+## AssociateLexBotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import AssociateLexBotRequestTypeDef
+from mypy_boto3_connect.type_defs import AssociateLexBotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -305,10 +305,10 @@ Required fields:
 - `InstanceId`: `str`
 - `LexBot`: [LexBotTypeDef](./type_defs.md#lexbottypedef)
 
-## AssociateQueueQuickConnectsRequestTypeDef
+## AssociateQueueQuickConnectsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import AssociateQueueQuickConnectsRequestTypeDef
+from mypy_boto3_connect.type_defs import AssociateQueueQuickConnectsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -317,10 +317,10 @@ Required fields:
 - `QueueId`: `str`
 - `QuickConnectIds`: `List`\[`str`\]
 
-## AssociateRoutingProfileQueuesRequestTypeDef
+## AssociateRoutingProfileQueuesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import AssociateRoutingProfileQueuesRequestTypeDef
+from mypy_boto3_connect.type_defs import AssociateRoutingProfileQueuesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -330,10 +330,10 @@ Required fields:
 - `QueueConfigs`:
   `List`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
 
-## AssociateSecurityKeyRequestTypeDef
+## AssociateSecurityKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import AssociateSecurityKeyRequestTypeDef
+from mypy_boto3_connect.type_defs import AssociateSecurityKeyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -341,10 +341,10 @@ Required fields:
 - `InstanceId`: `str`
 - `Key`: `str`
 
-## AssociateSecurityKeyResponseResponseTypeDef
+## AssociateSecurityKeyResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import AssociateSecurityKeyResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import AssociateSecurityKeyResponseTypeDef
 ```
 
 Required fields:
@@ -405,10 +405,10 @@ Optional fields:
 - `Content`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateContactFlowRequestTypeDef
+## CreateContactFlowRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import CreateContactFlowRequestTypeDef
+from mypy_boto3_connect.type_defs import CreateContactFlowRequestRequestTypeDef
 ```
 
 Required fields:
@@ -423,10 +423,10 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateContactFlowResponseResponseTypeDef
+## CreateContactFlowResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import CreateContactFlowResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import CreateContactFlowResponseTypeDef
 ```
 
 Required fields:
@@ -436,10 +436,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateInstanceRequestTypeDef
+## CreateInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import CreateInstanceRequestTypeDef
+from mypy_boto3_connect.type_defs import CreateInstanceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -455,10 +455,10 @@ Optional fields:
 - `InstanceAlias`: `str`
 - `DirectoryId`: `str`
 
-## CreateInstanceResponseResponseTypeDef
+## CreateInstanceResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import CreateInstanceResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import CreateInstanceResponseTypeDef
 ```
 
 Required fields:
@@ -468,10 +468,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateIntegrationAssociationRequestTypeDef
+## CreateIntegrationAssociationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import CreateIntegrationAssociationRequestTypeDef
+from mypy_boto3_connect.type_defs import CreateIntegrationAssociationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -488,10 +488,10 @@ Optional fields:
 
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateIntegrationAssociationResponseResponseTypeDef
+## CreateIntegrationAssociationResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import CreateIntegrationAssociationResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import CreateIntegrationAssociationResponseTypeDef
 ```
 
 Required fields:
@@ -501,10 +501,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateQueueRequestTypeDef
+## CreateQueueRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import CreateQueueRequestTypeDef
+from mypy_boto3_connect.type_defs import CreateQueueRequestRequestTypeDef
 ```
 
 Required fields:
@@ -522,10 +522,10 @@ Optional fields:
 - `QuickConnectIds`: `List`\[`str`\]
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateQueueResponseResponseTypeDef
+## CreateQueueResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import CreateQueueResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import CreateQueueResponseTypeDef
 ```
 
 Required fields:
@@ -535,10 +535,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateQuickConnectRequestTypeDef
+## CreateQuickConnectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import CreateQuickConnectRequestTypeDef
+from mypy_boto3_connect.type_defs import CreateQuickConnectRequestRequestTypeDef
 ```
 
 Required fields:
@@ -553,10 +553,10 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateQuickConnectResponseResponseTypeDef
+## CreateQuickConnectResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import CreateQuickConnectResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import CreateQuickConnectResponseTypeDef
 ```
 
 Required fields:
@@ -566,10 +566,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRoutingProfileRequestTypeDef
+## CreateRoutingProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import CreateRoutingProfileRequestTypeDef
+from mypy_boto3_connect.type_defs import CreateRoutingProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -587,10 +587,10 @@ Optional fields:
   `List`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateRoutingProfileResponseResponseTypeDef
+## CreateRoutingProfileResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import CreateRoutingProfileResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import CreateRoutingProfileResponseTypeDef
 ```
 
 Required fields:
@@ -600,10 +600,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateUseCaseRequestTypeDef
+## CreateUseCaseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import CreateUseCaseRequestTypeDef
+from mypy_boto3_connect.type_defs import CreateUseCaseRequestRequestTypeDef
 ```
 
 Required fields:
@@ -617,10 +617,10 @@ Optional fields:
 
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateUseCaseResponseResponseTypeDef
+## CreateUseCaseResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import CreateUseCaseResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import CreateUseCaseResponseTypeDef
 ```
 
 Required fields:
@@ -630,10 +630,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateUserHierarchyGroupRequestTypeDef
+## CreateUserHierarchyGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import CreateUserHierarchyGroupRequestTypeDef
+from mypy_boto3_connect.type_defs import CreateUserHierarchyGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -645,10 +645,10 @@ Optional fields:
 
 - `ParentGroupId`: `str`
 
-## CreateUserHierarchyGroupResponseResponseTypeDef
+## CreateUserHierarchyGroupResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import CreateUserHierarchyGroupResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import CreateUserHierarchyGroupResponseTypeDef
 ```
 
 Required fields:
@@ -658,10 +658,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateUserRequestTypeDef
+## CreateUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import CreateUserRequestTypeDef
+from mypy_boto3_connect.type_defs import CreateUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -682,10 +682,10 @@ Optional fields:
 - `HierarchyGroupId`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateUserResponseResponseTypeDef
+## CreateUserResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import CreateUserResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import CreateUserResponseTypeDef
 ```
 
 Required fields:
@@ -742,20 +742,20 @@ Optional fields:
 - `Name`: [CurrentMetricNameType](./literals.md#currentmetricnametype)
 - `Unit`: [UnitType](./literals.md#unittype)
 
-## DeleteInstanceRequestTypeDef
+## DeleteInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DeleteInstanceRequestTypeDef
+from mypy_boto3_connect.type_defs import DeleteInstanceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `InstanceId`: `str`
 
-## DeleteIntegrationAssociationRequestTypeDef
+## DeleteIntegrationAssociationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DeleteIntegrationAssociationRequestTypeDef
+from mypy_boto3_connect.type_defs import DeleteIntegrationAssociationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -763,10 +763,10 @@ Required fields:
 - `InstanceId`: `str`
 - `IntegrationAssociationId`: `str`
 
-## DeleteQuickConnectRequestTypeDef
+## DeleteQuickConnectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DeleteQuickConnectRequestTypeDef
+from mypy_boto3_connect.type_defs import DeleteQuickConnectRequestRequestTypeDef
 ```
 
 Required fields:
@@ -774,10 +774,10 @@ Required fields:
 - `InstanceId`: `str`
 - `QuickConnectId`: `str`
 
-## DeleteUseCaseRequestTypeDef
+## DeleteUseCaseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DeleteUseCaseRequestTypeDef
+from mypy_boto3_connect.type_defs import DeleteUseCaseRequestRequestTypeDef
 ```
 
 Required fields:
@@ -786,10 +786,10 @@ Required fields:
 - `IntegrationAssociationId`: `str`
 - `UseCaseId`: `str`
 
-## DeleteUserHierarchyGroupRequestTypeDef
+## DeleteUserHierarchyGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DeleteUserHierarchyGroupRequestTypeDef
+from mypy_boto3_connect.type_defs import DeleteUserHierarchyGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -797,10 +797,10 @@ Required fields:
 - `HierarchyGroupId`: `str`
 - `InstanceId`: `str`
 
-## DeleteUserRequestTypeDef
+## DeleteUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DeleteUserRequestTypeDef
+from mypy_boto3_connect.type_defs import DeleteUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -808,10 +808,10 @@ Required fields:
 - `InstanceId`: `str`
 - `UserId`: `str`
 
-## DescribeContactFlowRequestTypeDef
+## DescribeContactFlowRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DescribeContactFlowRequestTypeDef
+from mypy_boto3_connect.type_defs import DescribeContactFlowRequestRequestTypeDef
 ```
 
 Required fields:
@@ -819,10 +819,10 @@ Required fields:
 - `InstanceId`: `str`
 - `ContactFlowId`: `str`
 
-## DescribeContactFlowResponseResponseTypeDef
+## DescribeContactFlowResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DescribeContactFlowResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import DescribeContactFlowResponseTypeDef
 ```
 
 Required fields:
@@ -831,10 +831,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeHoursOfOperationRequestTypeDef
+## DescribeHoursOfOperationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DescribeHoursOfOperationRequestTypeDef
+from mypy_boto3_connect.type_defs import DescribeHoursOfOperationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -842,10 +842,10 @@ Required fields:
 - `InstanceId`: `str`
 - `HoursOfOperationId`: `str`
 
-## DescribeHoursOfOperationResponseResponseTypeDef
+## DescribeHoursOfOperationResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DescribeHoursOfOperationResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import DescribeHoursOfOperationResponseTypeDef
 ```
 
 Required fields:
@@ -855,10 +855,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInstanceAttributeRequestTypeDef
+## DescribeInstanceAttributeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DescribeInstanceAttributeRequestTypeDef
+from mypy_boto3_connect.type_defs import DescribeInstanceAttributeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -867,10 +867,10 @@ Required fields:
 - `AttributeType`:
   [InstanceAttributeTypeType](./literals.md#instanceattributetypetype)
 
-## DescribeInstanceAttributeResponseResponseTypeDef
+## DescribeInstanceAttributeResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DescribeInstanceAttributeResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import DescribeInstanceAttributeResponseTypeDef
 ```
 
 Required fields:
@@ -879,20 +879,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInstanceRequestTypeDef
+## DescribeInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DescribeInstanceRequestTypeDef
+from mypy_boto3_connect.type_defs import DescribeInstanceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `InstanceId`: `str`
 
-## DescribeInstanceResponseResponseTypeDef
+## DescribeInstanceResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DescribeInstanceResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import DescribeInstanceResponseTypeDef
 ```
 
 Required fields:
@@ -901,10 +901,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInstanceStorageConfigRequestTypeDef
+## DescribeInstanceStorageConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DescribeInstanceStorageConfigRequestTypeDef
+from mypy_boto3_connect.type_defs import DescribeInstanceStorageConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -914,10 +914,10 @@ Required fields:
 - `ResourceType`:
   [InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype)
 
-## DescribeInstanceStorageConfigResponseResponseTypeDef
+## DescribeInstanceStorageConfigResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DescribeInstanceStorageConfigResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import DescribeInstanceStorageConfigResponseTypeDef
 ```
 
 Required fields:
@@ -927,10 +927,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeQueueRequestTypeDef
+## DescribeQueueRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DescribeQueueRequestTypeDef
+from mypy_boto3_connect.type_defs import DescribeQueueRequestRequestTypeDef
 ```
 
 Required fields:
@@ -938,10 +938,10 @@ Required fields:
 - `InstanceId`: `str`
 - `QueueId`: `str`
 
-## DescribeQueueResponseResponseTypeDef
+## DescribeQueueResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DescribeQueueResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import DescribeQueueResponseTypeDef
 ```
 
 Required fields:
@@ -950,10 +950,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeQuickConnectRequestTypeDef
+## DescribeQuickConnectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DescribeQuickConnectRequestTypeDef
+from mypy_boto3_connect.type_defs import DescribeQuickConnectRequestRequestTypeDef
 ```
 
 Required fields:
@@ -961,10 +961,10 @@ Required fields:
 - `InstanceId`: `str`
 - `QuickConnectId`: `str`
 
-## DescribeQuickConnectResponseResponseTypeDef
+## DescribeQuickConnectResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DescribeQuickConnectResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import DescribeQuickConnectResponseTypeDef
 ```
 
 Required fields:
@@ -973,10 +973,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRoutingProfileRequestTypeDef
+## DescribeRoutingProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DescribeRoutingProfileRequestTypeDef
+from mypy_boto3_connect.type_defs import DescribeRoutingProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -984,10 +984,10 @@ Required fields:
 - `InstanceId`: `str`
 - `RoutingProfileId`: `str`
 
-## DescribeRoutingProfileResponseResponseTypeDef
+## DescribeRoutingProfileResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DescribeRoutingProfileResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import DescribeRoutingProfileResponseTypeDef
 ```
 
 Required fields:
@@ -997,10 +997,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeUserHierarchyGroupRequestTypeDef
+## DescribeUserHierarchyGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DescribeUserHierarchyGroupRequestTypeDef
+from mypy_boto3_connect.type_defs import DescribeUserHierarchyGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1008,10 +1008,10 @@ Required fields:
 - `HierarchyGroupId`: `str`
 - `InstanceId`: `str`
 
-## DescribeUserHierarchyGroupResponseResponseTypeDef
+## DescribeUserHierarchyGroupResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DescribeUserHierarchyGroupResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import DescribeUserHierarchyGroupResponseTypeDef
 ```
 
 Required fields:
@@ -1021,20 +1021,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeUserHierarchyStructureRequestTypeDef
+## DescribeUserHierarchyStructureRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DescribeUserHierarchyStructureRequestTypeDef
+from mypy_boto3_connect.type_defs import DescribeUserHierarchyStructureRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `InstanceId`: `str`
 
-## DescribeUserHierarchyStructureResponseResponseTypeDef
+## DescribeUserHierarchyStructureResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DescribeUserHierarchyStructureResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import DescribeUserHierarchyStructureResponseTypeDef
 ```
 
 Required fields:
@@ -1044,10 +1044,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeUserRequestTypeDef
+## DescribeUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DescribeUserRequestTypeDef
+from mypy_boto3_connect.type_defs import DescribeUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1055,10 +1055,10 @@ Required fields:
 - `UserId`: `str`
 - `InstanceId`: `str`
 
-## DescribeUserResponseResponseTypeDef
+## DescribeUserResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DescribeUserResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import DescribeUserResponseTypeDef
 ```
 
 Required fields:
@@ -1078,10 +1078,10 @@ Optional fields:
 - `Queue`: [QueueReferenceTypeDef](./type_defs.md#queuereferencetypedef)
 - `Channel`: [ChannelType](./literals.md#channeltype)
 
-## DisassociateApprovedOriginRequestTypeDef
+## DisassociateApprovedOriginRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DisassociateApprovedOriginRequestTypeDef
+from mypy_boto3_connect.type_defs import DisassociateApprovedOriginRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1089,10 +1089,10 @@ Required fields:
 - `InstanceId`: `str`
 - `Origin`: `str`
 
-## DisassociateBotRequestTypeDef
+## DisassociateBotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DisassociateBotRequestTypeDef
+from mypy_boto3_connect.type_defs import DisassociateBotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1104,10 +1104,10 @@ Optional fields:
 - `LexBot`: [LexBotTypeDef](./type_defs.md#lexbottypedef)
 - `LexV2Bot`: [LexV2BotTypeDef](./type_defs.md#lexv2bottypedef)
 
-## DisassociateInstanceStorageConfigRequestTypeDef
+## DisassociateInstanceStorageConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DisassociateInstanceStorageConfigRequestTypeDef
+from mypy_boto3_connect.type_defs import DisassociateInstanceStorageConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1117,10 +1117,10 @@ Required fields:
 - `ResourceType`:
   [InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype)
 
-## DisassociateLambdaFunctionRequestTypeDef
+## DisassociateLambdaFunctionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DisassociateLambdaFunctionRequestTypeDef
+from mypy_boto3_connect.type_defs import DisassociateLambdaFunctionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1128,10 +1128,10 @@ Required fields:
 - `InstanceId`: `str`
 - `FunctionArn`: `str`
 
-## DisassociateLexBotRequestTypeDef
+## DisassociateLexBotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DisassociateLexBotRequestTypeDef
+from mypy_boto3_connect.type_defs import DisassociateLexBotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1140,10 +1140,10 @@ Required fields:
 - `BotName`: `str`
 - `LexRegion`: `str`
 
-## DisassociateQueueQuickConnectsRequestTypeDef
+## DisassociateQueueQuickConnectsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DisassociateQueueQuickConnectsRequestTypeDef
+from mypy_boto3_connect.type_defs import DisassociateQueueQuickConnectsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1152,10 +1152,10 @@ Required fields:
 - `QueueId`: `str`
 - `QuickConnectIds`: `List`\[`str`\]
 
-## DisassociateRoutingProfileQueuesRequestTypeDef
+## DisassociateRoutingProfileQueuesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DisassociateRoutingProfileQueuesRequestTypeDef
+from mypy_boto3_connect.type_defs import DisassociateRoutingProfileQueuesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1165,10 +1165,10 @@ Required fields:
 - `QueueReferences`:
   `List`\[[RoutingProfileQueueReferenceTypeDef](./type_defs.md#routingprofilequeuereferencetypedef)\]
 
-## DisassociateSecurityKeyRequestTypeDef
+## DisassociateSecurityKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import DisassociateSecurityKeyRequestTypeDef
+from mypy_boto3_connect.type_defs import DisassociateSecurityKeyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1199,10 +1199,10 @@ Optional fields:
 - `Queues`: `List`\[`str`\]
 - `Channels`: `List`\[[ChannelType](./literals.md#channeltype)\]
 
-## GetContactAttributesRequestTypeDef
+## GetContactAttributesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import GetContactAttributesRequestTypeDef
+from mypy_boto3_connect.type_defs import GetContactAttributesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1210,10 +1210,10 @@ Required fields:
 - `InstanceId`: `str`
 - `InitialContactId`: `str`
 
-## GetContactAttributesResponseResponseTypeDef
+## GetContactAttributesResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import GetContactAttributesResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import GetContactAttributesResponseTypeDef
 ```
 
 Required fields:
@@ -1222,10 +1222,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCurrentMetricDataRequestTypeDef
+## GetCurrentMetricDataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import GetCurrentMetricDataRequestTypeDef
+from mypy_boto3_connect.type_defs import GetCurrentMetricDataRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1241,10 +1241,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## GetCurrentMetricDataResponseResponseTypeDef
+## GetCurrentMetricDataResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import GetCurrentMetricDataResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import GetCurrentMetricDataResponseTypeDef
 ```
 
 Required fields:
@@ -1256,20 +1256,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFederationTokenRequestTypeDef
+## GetFederationTokenRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import GetFederationTokenRequestTypeDef
+from mypy_boto3_connect.type_defs import GetFederationTokenRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `InstanceId`: `str`
 
-## GetFederationTokenResponseResponseTypeDef
+## GetFederationTokenResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import GetFederationTokenResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import GetFederationTokenResponseTypeDef
 ```
 
 Required fields:
@@ -1278,10 +1278,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMetricDataRequestTypeDef
+## GetMetricDataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import GetMetricDataRequestTypeDef
+from mypy_boto3_connect.type_defs import GetMetricDataRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1299,10 +1299,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## GetMetricDataResponseResponseTypeDef
+## GetMetricDataResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import GetMetricDataResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import GetMetricDataResponseTypeDef
 ```
 
 Required fields:
@@ -1657,10 +1657,10 @@ Optional fields:
 
 - `AliasArn`: `str`
 
-## ListApprovedOriginsRequestTypeDef
+## ListApprovedOriginsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListApprovedOriginsRequestTypeDef
+from mypy_boto3_connect.type_defs import ListApprovedOriginsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1672,10 +1672,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListApprovedOriginsResponseResponseTypeDef
+## ListApprovedOriginsResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListApprovedOriginsResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import ListApprovedOriginsResponseTypeDef
 ```
 
 Required fields:
@@ -1685,10 +1685,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBotsRequestTypeDef
+## ListBotsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListBotsRequestTypeDef
+from mypy_boto3_connect.type_defs import ListBotsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1701,10 +1701,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListBotsResponseResponseTypeDef
+## ListBotsResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListBotsResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import ListBotsResponseTypeDef
 ```
 
 Required fields:
@@ -1715,10 +1715,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListContactFlowsRequestTypeDef
+## ListContactFlowsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListContactFlowsRequestTypeDef
+from mypy_boto3_connect.type_defs import ListContactFlowsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1732,10 +1732,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListContactFlowsResponseResponseTypeDef
+## ListContactFlowsResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListContactFlowsResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import ListContactFlowsResponseTypeDef
 ```
 
 Required fields:
@@ -1746,10 +1746,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListHoursOfOperationsRequestTypeDef
+## ListHoursOfOperationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListHoursOfOperationsRequestTypeDef
+from mypy_boto3_connect.type_defs import ListHoursOfOperationsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1761,10 +1761,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListHoursOfOperationsResponseResponseTypeDef
+## ListHoursOfOperationsResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListHoursOfOperationsResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import ListHoursOfOperationsResponseTypeDef
 ```
 
 Required fields:
@@ -1775,10 +1775,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInstanceAttributesRequestTypeDef
+## ListInstanceAttributesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListInstanceAttributesRequestTypeDef
+from mypy_boto3_connect.type_defs import ListInstanceAttributesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1790,10 +1790,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListInstanceAttributesResponseResponseTypeDef
+## ListInstanceAttributesResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListInstanceAttributesResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import ListInstanceAttributesResponseTypeDef
 ```
 
 Required fields:
@@ -1803,10 +1803,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInstanceStorageConfigsRequestTypeDef
+## ListInstanceStorageConfigsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListInstanceStorageConfigsRequestTypeDef
+from mypy_boto3_connect.type_defs import ListInstanceStorageConfigsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1820,10 +1820,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListInstanceStorageConfigsResponseResponseTypeDef
+## ListInstanceStorageConfigsResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListInstanceStorageConfigsResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import ListInstanceStorageConfigsResponseTypeDef
 ```
 
 Required fields:
@@ -1834,10 +1834,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInstancesRequestTypeDef
+## ListInstancesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListInstancesRequestTypeDef
+from mypy_boto3_connect.type_defs import ListInstancesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1845,10 +1845,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListInstancesResponseResponseTypeDef
+## ListInstancesResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListInstancesResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import ListInstancesResponseTypeDef
 ```
 
 Required fields:
@@ -1859,10 +1859,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListIntegrationAssociationsRequestTypeDef
+## ListIntegrationAssociationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListIntegrationAssociationsRequestTypeDef
+from mypy_boto3_connect.type_defs import ListIntegrationAssociationsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1874,10 +1874,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListIntegrationAssociationsResponseResponseTypeDef
+## ListIntegrationAssociationsResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListIntegrationAssociationsResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import ListIntegrationAssociationsResponseTypeDef
 ```
 
 Required fields:
@@ -1888,10 +1888,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListLambdaFunctionsRequestTypeDef
+## ListLambdaFunctionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListLambdaFunctionsRequestTypeDef
+from mypy_boto3_connect.type_defs import ListLambdaFunctionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1903,10 +1903,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListLambdaFunctionsResponseResponseTypeDef
+## ListLambdaFunctionsResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListLambdaFunctionsResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import ListLambdaFunctionsResponseTypeDef
 ```
 
 Required fields:
@@ -1916,10 +1916,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListLexBotsRequestTypeDef
+## ListLexBotsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListLexBotsRequestTypeDef
+from mypy_boto3_connect.type_defs import ListLexBotsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1931,10 +1931,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListLexBotsResponseResponseTypeDef
+## ListLexBotsResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListLexBotsResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import ListLexBotsResponseTypeDef
 ```
 
 Required fields:
@@ -1944,10 +1944,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPhoneNumbersRequestTypeDef
+## ListPhoneNumbersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListPhoneNumbersRequestTypeDef
+from mypy_boto3_connect.type_defs import ListPhoneNumbersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1963,10 +1963,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListPhoneNumbersResponseResponseTypeDef
+## ListPhoneNumbersResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListPhoneNumbersResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import ListPhoneNumbersResponseTypeDef
 ```
 
 Required fields:
@@ -1977,10 +1977,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPromptsRequestTypeDef
+## ListPromptsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListPromptsRequestTypeDef
+from mypy_boto3_connect.type_defs import ListPromptsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1992,10 +1992,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListPromptsResponseResponseTypeDef
+## ListPromptsResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListPromptsResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import ListPromptsResponseTypeDef
 ```
 
 Required fields:
@@ -2006,10 +2006,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListQueueQuickConnectsRequestTypeDef
+## ListQueueQuickConnectsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListQueueQuickConnectsRequestTypeDef
+from mypy_boto3_connect.type_defs import ListQueueQuickConnectsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2022,10 +2022,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListQueueQuickConnectsResponseResponseTypeDef
+## ListQueueQuickConnectsResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListQueueQuickConnectsResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import ListQueueQuickConnectsResponseTypeDef
 ```
 
 Required fields:
@@ -2036,10 +2036,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListQueuesRequestTypeDef
+## ListQueuesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListQueuesRequestTypeDef
+from mypy_boto3_connect.type_defs import ListQueuesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2052,10 +2052,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListQueuesResponseResponseTypeDef
+## ListQueuesResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListQueuesResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import ListQueuesResponseTypeDef
 ```
 
 Required fields:
@@ -2066,10 +2066,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListQuickConnectsRequestTypeDef
+## ListQuickConnectsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListQuickConnectsRequestTypeDef
+from mypy_boto3_connect.type_defs import ListQuickConnectsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2083,10 +2083,10 @@ Optional fields:
 - `QuickConnectTypes`:
   `List`\[[QuickConnectTypeType](./literals.md#quickconnecttypetype)\]
 
-## ListQuickConnectsResponseResponseTypeDef
+## ListQuickConnectsResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListQuickConnectsResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import ListQuickConnectsResponseTypeDef
 ```
 
 Required fields:
@@ -2097,10 +2097,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRoutingProfileQueuesRequestTypeDef
+## ListRoutingProfileQueuesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListRoutingProfileQueuesRequestTypeDef
+from mypy_boto3_connect.type_defs import ListRoutingProfileQueuesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2113,10 +2113,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListRoutingProfileQueuesResponseResponseTypeDef
+## ListRoutingProfileQueuesResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListRoutingProfileQueuesResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import ListRoutingProfileQueuesResponseTypeDef
 ```
 
 Required fields:
@@ -2127,10 +2127,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRoutingProfilesRequestTypeDef
+## ListRoutingProfilesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListRoutingProfilesRequestTypeDef
+from mypy_boto3_connect.type_defs import ListRoutingProfilesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2142,10 +2142,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListRoutingProfilesResponseResponseTypeDef
+## ListRoutingProfilesResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListRoutingProfilesResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import ListRoutingProfilesResponseTypeDef
 ```
 
 Required fields:
@@ -2156,10 +2156,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSecurityKeysRequestTypeDef
+## ListSecurityKeysRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListSecurityKeysRequestTypeDef
+from mypy_boto3_connect.type_defs import ListSecurityKeysRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2171,10 +2171,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListSecurityKeysResponseResponseTypeDef
+## ListSecurityKeysResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListSecurityKeysResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import ListSecurityKeysResponseTypeDef
 ```
 
 Required fields:
@@ -2185,10 +2185,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSecurityProfilesRequestTypeDef
+## ListSecurityProfilesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListSecurityProfilesRequestTypeDef
+from mypy_boto3_connect.type_defs import ListSecurityProfilesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2200,10 +2200,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListSecurityProfilesResponseResponseTypeDef
+## ListSecurityProfilesResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListSecurityProfilesResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import ListSecurityProfilesResponseTypeDef
 ```
 
 Required fields:
@@ -2214,20 +2214,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_connect.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -2236,10 +2236,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListUseCasesRequestTypeDef
+## ListUseCasesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListUseCasesRequestTypeDef
+from mypy_boto3_connect.type_defs import ListUseCasesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2252,10 +2252,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListUseCasesResponseResponseTypeDef
+## ListUseCasesResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListUseCasesResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import ListUseCasesResponseTypeDef
 ```
 
 Required fields:
@@ -2266,10 +2266,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListUserHierarchyGroupsRequestTypeDef
+## ListUserHierarchyGroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListUserHierarchyGroupsRequestTypeDef
+from mypy_boto3_connect.type_defs import ListUserHierarchyGroupsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2281,10 +2281,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListUserHierarchyGroupsResponseResponseTypeDef
+## ListUserHierarchyGroupsResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListUserHierarchyGroupsResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import ListUserHierarchyGroupsResponseTypeDef
 ```
 
 Required fields:
@@ -2295,10 +2295,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListUsersRequestTypeDef
+## ListUsersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListUsersRequestTypeDef
+from mypy_boto3_connect.type_defs import ListUsersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2310,10 +2310,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListUsersResponseResponseTypeDef
+## ListUsersResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ListUsersResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import ListUsersResponseTypeDef
 ```
 
 Required fields:
@@ -2536,10 +2536,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## ResumeContactRecordingRequestTypeDef
+## ResumeContactRecordingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import ResumeContactRecordingRequestTypeDef
+from mypy_boto3_connect.type_defs import ResumeContactRecordingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2657,10 +2657,10 @@ Optional fields:
 - `Arn`: `str`
 - `Name`: `str`
 
-## StartChatContactRequestTypeDef
+## StartChatContactRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import StartChatContactRequestTypeDef
+from mypy_boto3_connect.type_defs import StartChatContactRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2676,10 +2676,10 @@ Optional fields:
 - `InitialMessage`: [ChatMessageTypeDef](./type_defs.md#chatmessagetypedef)
 - `ClientToken`: `str`
 
-## StartChatContactResponseResponseTypeDef
+## StartChatContactResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import StartChatContactResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import StartChatContactResponseTypeDef
 ```
 
 Required fields:
@@ -2690,10 +2690,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartContactRecordingRequestTypeDef
+## StartContactRecordingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import StartContactRecordingRequestTypeDef
+from mypy_boto3_connect.type_defs import StartContactRecordingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2704,10 +2704,10 @@ Required fields:
 - `VoiceRecordingConfiguration`:
   [VoiceRecordingConfigurationTypeDef](./type_defs.md#voicerecordingconfigurationtypedef)
 
-## StartOutboundVoiceContactRequestTypeDef
+## StartOutboundVoiceContactRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import StartOutboundVoiceContactRequestTypeDef
+from mypy_boto3_connect.type_defs import StartOutboundVoiceContactRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2723,10 +2723,10 @@ Optional fields:
 - `QueueId`: `str`
 - `Attributes`: `Dict`\[`str`, `str`\]
 
-## StartOutboundVoiceContactResponseResponseTypeDef
+## StartOutboundVoiceContactResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import StartOutboundVoiceContactResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import StartOutboundVoiceContactResponseTypeDef
 ```
 
 Required fields:
@@ -2735,10 +2735,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartTaskContactRequestTypeDef
+## StartTaskContactRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import StartTaskContactRequestTypeDef
+from mypy_boto3_connect.type_defs import StartTaskContactRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2756,10 +2756,10 @@ Optional fields:
 - `Description`: `str`
 - `ClientToken`: `str`
 
-## StartTaskContactResponseResponseTypeDef
+## StartTaskContactResponseTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import StartTaskContactResponseResponseTypeDef
+from mypy_boto3_connect.type_defs import StartTaskContactResponseTypeDef
 ```
 
 Required fields:
@@ -2768,10 +2768,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopContactRecordingRequestTypeDef
+## StopContactRecordingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import StopContactRecordingRequestTypeDef
+from mypy_boto3_connect.type_defs import StopContactRecordingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2780,10 +2780,10 @@ Required fields:
 - `ContactId`: `str`
 - `InitialContactId`: `str`
 
-## StopContactRequestTypeDef
+## StopContactRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import StopContactRequestTypeDef
+from mypy_boto3_connect.type_defs import StopContactRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2791,10 +2791,10 @@ Required fields:
 - `ContactId`: `str`
 - `InstanceId`: `str`
 
-## SuspendContactRecordingRequestTypeDef
+## SuspendContactRecordingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import SuspendContactRecordingRequestTypeDef
+from mypy_boto3_connect.type_defs import SuspendContactRecordingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2803,10 +2803,10 @@ Required fields:
 - `ContactId`: `str`
 - `InitialContactId`: `str`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_connect.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2826,10 +2826,10 @@ Optional fields:
   [ComparisonType](./literals.md#comparisontype))
 - `ThresholdValue`: `float`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_connect.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2837,10 +2837,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tagKeys`: `List`\[`str`\]
 
-## UpdateContactAttributesRequestTypeDef
+## UpdateContactAttributesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UpdateContactAttributesRequestTypeDef
+from mypy_boto3_connect.type_defs import UpdateContactAttributesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2849,10 +2849,10 @@ Required fields:
 - `InstanceId`: `str`
 - `Attributes`: `Dict`\[`str`, `str`\]
 
-## UpdateContactFlowContentRequestTypeDef
+## UpdateContactFlowContentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UpdateContactFlowContentRequestTypeDef
+from mypy_boto3_connect.type_defs import UpdateContactFlowContentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2861,10 +2861,10 @@ Required fields:
 - `ContactFlowId`: `str`
 - `Content`: `str`
 
-## UpdateContactFlowNameRequestTypeDef
+## UpdateContactFlowNameRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UpdateContactFlowNameRequestTypeDef
+from mypy_boto3_connect.type_defs import UpdateContactFlowNameRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2877,10 +2877,10 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 
-## UpdateInstanceAttributeRequestTypeDef
+## UpdateInstanceAttributeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UpdateInstanceAttributeRequestTypeDef
+from mypy_boto3_connect.type_defs import UpdateInstanceAttributeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2890,10 +2890,10 @@ Required fields:
   [InstanceAttributeTypeType](./literals.md#instanceattributetypetype)
 - `Value`: `str`
 
-## UpdateInstanceStorageConfigRequestTypeDef
+## UpdateInstanceStorageConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UpdateInstanceStorageConfigRequestTypeDef
+from mypy_boto3_connect.type_defs import UpdateInstanceStorageConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2905,10 +2905,10 @@ Required fields:
 - `StorageConfig`:
   [InstanceStorageConfigTypeDef](./type_defs.md#instancestorageconfigtypedef)
 
-## UpdateQueueHoursOfOperationRequestTypeDef
+## UpdateQueueHoursOfOperationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UpdateQueueHoursOfOperationRequestTypeDef
+from mypy_boto3_connect.type_defs import UpdateQueueHoursOfOperationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2917,10 +2917,10 @@ Required fields:
 - `QueueId`: `str`
 - `HoursOfOperationId`: `str`
 
-## UpdateQueueMaxContactsRequestTypeDef
+## UpdateQueueMaxContactsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UpdateQueueMaxContactsRequestTypeDef
+from mypy_boto3_connect.type_defs import UpdateQueueMaxContactsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2932,10 +2932,10 @@ Optional fields:
 
 - `MaxContacts`: `int`
 
-## UpdateQueueNameRequestTypeDef
+## UpdateQueueNameRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UpdateQueueNameRequestTypeDef
+from mypy_boto3_connect.type_defs import UpdateQueueNameRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2948,10 +2948,10 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 
-## UpdateQueueOutboundCallerConfigRequestTypeDef
+## UpdateQueueOutboundCallerConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UpdateQueueOutboundCallerConfigRequestTypeDef
+from mypy_boto3_connect.type_defs import UpdateQueueOutboundCallerConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2961,10 +2961,10 @@ Required fields:
 - `OutboundCallerConfig`:
   [OutboundCallerConfigTypeDef](./type_defs.md#outboundcallerconfigtypedef)
 
-## UpdateQueueStatusRequestTypeDef
+## UpdateQueueStatusRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UpdateQueueStatusRequestTypeDef
+from mypy_boto3_connect.type_defs import UpdateQueueStatusRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2973,10 +2973,10 @@ Required fields:
 - `QueueId`: `str`
 - `Status`: [QueueStatusType](./literals.md#queuestatustype)
 
-## UpdateQuickConnectConfigRequestTypeDef
+## UpdateQuickConnectConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UpdateQuickConnectConfigRequestTypeDef
+from mypy_boto3_connect.type_defs import UpdateQuickConnectConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2986,10 +2986,10 @@ Required fields:
 - `QuickConnectConfig`:
   [QuickConnectConfigTypeDef](./type_defs.md#quickconnectconfigtypedef)
 
-## UpdateQuickConnectNameRequestTypeDef
+## UpdateQuickConnectNameRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UpdateQuickConnectNameRequestTypeDef
+from mypy_boto3_connect.type_defs import UpdateQuickConnectNameRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3002,10 +3002,10 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 
-## UpdateRoutingProfileConcurrencyRequestTypeDef
+## UpdateRoutingProfileConcurrencyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UpdateRoutingProfileConcurrencyRequestTypeDef
+from mypy_boto3_connect.type_defs import UpdateRoutingProfileConcurrencyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3015,10 +3015,10 @@ Required fields:
 - `MediaConcurrencies`:
   `List`\[[MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)\]
 
-## UpdateRoutingProfileDefaultOutboundQueueRequestTypeDef
+## UpdateRoutingProfileDefaultOutboundQueueRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UpdateRoutingProfileDefaultOutboundQueueRequestTypeDef
+from mypy_boto3_connect.type_defs import UpdateRoutingProfileDefaultOutboundQueueRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3027,10 +3027,10 @@ Required fields:
 - `RoutingProfileId`: `str`
 - `DefaultOutboundQueueId`: `str`
 
-## UpdateRoutingProfileNameRequestTypeDef
+## UpdateRoutingProfileNameRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UpdateRoutingProfileNameRequestTypeDef
+from mypy_boto3_connect.type_defs import UpdateRoutingProfileNameRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3043,10 +3043,10 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 
-## UpdateRoutingProfileQueuesRequestTypeDef
+## UpdateRoutingProfileQueuesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UpdateRoutingProfileQueuesRequestTypeDef
+from mypy_boto3_connect.type_defs import UpdateRoutingProfileQueuesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3056,10 +3056,10 @@ Required fields:
 - `QueueConfigs`:
   `List`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
 
-## UpdateUserHierarchyGroupNameRequestTypeDef
+## UpdateUserHierarchyGroupNameRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UpdateUserHierarchyGroupNameRequestTypeDef
+from mypy_boto3_connect.type_defs import UpdateUserHierarchyGroupNameRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3068,10 +3068,10 @@ Required fields:
 - `HierarchyGroupId`: `str`
 - `InstanceId`: `str`
 
-## UpdateUserHierarchyRequestTypeDef
+## UpdateUserHierarchyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UpdateUserHierarchyRequestTypeDef
+from mypy_boto3_connect.type_defs import UpdateUserHierarchyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3083,10 +3083,10 @@ Optional fields:
 
 - `HierarchyGroupId`: `str`
 
-## UpdateUserHierarchyStructureRequestTypeDef
+## UpdateUserHierarchyStructureRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UpdateUserHierarchyStructureRequestTypeDef
+from mypy_boto3_connect.type_defs import UpdateUserHierarchyStructureRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3095,10 +3095,10 @@ Required fields:
   [HierarchyStructureUpdateTypeDef](./type_defs.md#hierarchystructureupdatetypedef)
 - `InstanceId`: `str`
 
-## UpdateUserIdentityInfoRequestTypeDef
+## UpdateUserIdentityInfoRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UpdateUserIdentityInfoRequestTypeDef
+from mypy_boto3_connect.type_defs import UpdateUserIdentityInfoRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3108,10 +3108,10 @@ Required fields:
 - `UserId`: `str`
 - `InstanceId`: `str`
 
-## UpdateUserPhoneConfigRequestTypeDef
+## UpdateUserPhoneConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UpdateUserPhoneConfigRequestTypeDef
+from mypy_boto3_connect.type_defs import UpdateUserPhoneConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3121,10 +3121,10 @@ Required fields:
 - `UserId`: `str`
 - `InstanceId`: `str`
 
-## UpdateUserRoutingProfileRequestTypeDef
+## UpdateUserRoutingProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UpdateUserRoutingProfileRequestTypeDef
+from mypy_boto3_connect.type_defs import UpdateUserRoutingProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3133,10 +3133,10 @@ Required fields:
 - `UserId`: `str`
 - `InstanceId`: `str`
 
-## UpdateUserSecurityProfilesRequestTypeDef
+## UpdateUserSecurityProfilesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect.type_defs import UpdateUserSecurityProfilesRequestTypeDef
+from mypy_boto3_connect.type_defs import UpdateUserSecurityProfilesRequestRequestTypeDef
 ```
 
 Required fields:

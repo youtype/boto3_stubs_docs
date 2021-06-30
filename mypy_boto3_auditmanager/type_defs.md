@@ -22,20 +22,20 @@ type annotations stubs module
   - [AssessmentReportTypeDef](#assessmentreporttypedef)
   - [AssessmentReportsDestinationTypeDef](#assessmentreportsdestinationtypedef)
   - [AssessmentTypeDef](#assessmenttypedef)
-  - [AssociateAssessmentReportEvidenceFolderRequestTypeDef](#associateassessmentreportevidencefolderrequesttypedef)
-  - [BatchAssociateAssessmentReportEvidenceRequestTypeDef](#batchassociateassessmentreportevidencerequesttypedef)
-  - [BatchAssociateAssessmentReportEvidenceResponseResponseTypeDef](#batchassociateassessmentreportevidenceresponseresponsetypedef)
+  - [AssociateAssessmentReportEvidenceFolderRequestRequestTypeDef](#associateassessmentreportevidencefolderrequestrequesttypedef)
+  - [BatchAssociateAssessmentReportEvidenceRequestRequestTypeDef](#batchassociateassessmentreportevidencerequestrequesttypedef)
+  - [BatchAssociateAssessmentReportEvidenceResponseTypeDef](#batchassociateassessmentreportevidenceresponsetypedef)
   - [BatchCreateDelegationByAssessmentErrorTypeDef](#batchcreatedelegationbyassessmenterrortypedef)
-  - [BatchCreateDelegationByAssessmentRequestTypeDef](#batchcreatedelegationbyassessmentrequesttypedef)
-  - [BatchCreateDelegationByAssessmentResponseResponseTypeDef](#batchcreatedelegationbyassessmentresponseresponsetypedef)
+  - [BatchCreateDelegationByAssessmentRequestRequestTypeDef](#batchcreatedelegationbyassessmentrequestrequesttypedef)
+  - [BatchCreateDelegationByAssessmentResponseTypeDef](#batchcreatedelegationbyassessmentresponsetypedef)
   - [BatchDeleteDelegationByAssessmentErrorTypeDef](#batchdeletedelegationbyassessmenterrortypedef)
-  - [BatchDeleteDelegationByAssessmentRequestTypeDef](#batchdeletedelegationbyassessmentrequesttypedef)
-  - [BatchDeleteDelegationByAssessmentResponseResponseTypeDef](#batchdeletedelegationbyassessmentresponseresponsetypedef)
-  - [BatchDisassociateAssessmentReportEvidenceRequestTypeDef](#batchdisassociateassessmentreportevidencerequesttypedef)
-  - [BatchDisassociateAssessmentReportEvidenceResponseResponseTypeDef](#batchdisassociateassessmentreportevidenceresponseresponsetypedef)
+  - [BatchDeleteDelegationByAssessmentRequestRequestTypeDef](#batchdeletedelegationbyassessmentrequestrequesttypedef)
+  - [BatchDeleteDelegationByAssessmentResponseTypeDef](#batchdeletedelegationbyassessmentresponsetypedef)
+  - [BatchDisassociateAssessmentReportEvidenceRequestRequestTypeDef](#batchdisassociateassessmentreportevidencerequestrequesttypedef)
+  - [BatchDisassociateAssessmentReportEvidenceResponseTypeDef](#batchdisassociateassessmentreportevidenceresponsetypedef)
   - [BatchImportEvidenceToAssessmentControlErrorTypeDef](#batchimportevidencetoassessmentcontrolerrortypedef)
-  - [BatchImportEvidenceToAssessmentControlRequestTypeDef](#batchimportevidencetoassessmentcontrolrequesttypedef)
-  - [BatchImportEvidenceToAssessmentControlResponseResponseTypeDef](#batchimportevidencetoassessmentcontrolresponseresponsetypedef)
+  - [BatchImportEvidenceToAssessmentControlRequestRequestTypeDef](#batchimportevidencetoassessmentcontrolrequestrequesttypedef)
+  - [BatchImportEvidenceToAssessmentControlResponseTypeDef](#batchimportevidencetoassessmentcontrolresponsetypedef)
   - [ChangeLogTypeDef](#changelogtypedef)
   - [ControlCommentTypeDef](#controlcommenttypedef)
   - [ControlMappingSourceTypeDef](#controlmappingsourcetypedef)
@@ -44,75 +44,75 @@ type annotations stubs module
   - [ControlTypeDef](#controltypedef)
   - [CreateAssessmentFrameworkControlSetTypeDef](#createassessmentframeworkcontrolsettypedef)
   - [CreateAssessmentFrameworkControlTypeDef](#createassessmentframeworkcontroltypedef)
-  - [CreateAssessmentFrameworkRequestTypeDef](#createassessmentframeworkrequesttypedef)
-  - [CreateAssessmentFrameworkResponseResponseTypeDef](#createassessmentframeworkresponseresponsetypedef)
-  - [CreateAssessmentReportRequestTypeDef](#createassessmentreportrequesttypedef)
-  - [CreateAssessmentReportResponseResponseTypeDef](#createassessmentreportresponseresponsetypedef)
-  - [CreateAssessmentRequestTypeDef](#createassessmentrequesttypedef)
-  - [CreateAssessmentResponseResponseTypeDef](#createassessmentresponseresponsetypedef)
+  - [CreateAssessmentFrameworkRequestRequestTypeDef](#createassessmentframeworkrequestrequesttypedef)
+  - [CreateAssessmentFrameworkResponseTypeDef](#createassessmentframeworkresponsetypedef)
+  - [CreateAssessmentReportRequestRequestTypeDef](#createassessmentreportrequestrequesttypedef)
+  - [CreateAssessmentReportResponseTypeDef](#createassessmentreportresponsetypedef)
+  - [CreateAssessmentRequestRequestTypeDef](#createassessmentrequestrequesttypedef)
+  - [CreateAssessmentResponseTypeDef](#createassessmentresponsetypedef)
   - [CreateControlMappingSourceTypeDef](#createcontrolmappingsourcetypedef)
-  - [CreateControlRequestTypeDef](#createcontrolrequesttypedef)
-  - [CreateControlResponseResponseTypeDef](#createcontrolresponseresponsetypedef)
+  - [CreateControlRequestRequestTypeDef](#createcontrolrequestrequesttypedef)
+  - [CreateControlResponseTypeDef](#createcontrolresponsetypedef)
   - [CreateDelegationRequestTypeDef](#createdelegationrequesttypedef)
   - [DelegationMetadataTypeDef](#delegationmetadatatypedef)
   - [DelegationTypeDef](#delegationtypedef)
-  - [DeleteAssessmentFrameworkRequestTypeDef](#deleteassessmentframeworkrequesttypedef)
-  - [DeleteAssessmentReportRequestTypeDef](#deleteassessmentreportrequesttypedef)
-  - [DeleteAssessmentRequestTypeDef](#deleteassessmentrequesttypedef)
-  - [DeleteControlRequestTypeDef](#deletecontrolrequesttypedef)
-  - [DeregisterAccountResponseResponseTypeDef](#deregisteraccountresponseresponsetypedef)
-  - [DeregisterOrganizationAdminAccountRequestTypeDef](#deregisterorganizationadminaccountrequesttypedef)
-  - [DisassociateAssessmentReportEvidenceFolderRequestTypeDef](#disassociateassessmentreportevidencefolderrequesttypedef)
+  - [DeleteAssessmentFrameworkRequestRequestTypeDef](#deleteassessmentframeworkrequestrequesttypedef)
+  - [DeleteAssessmentReportRequestRequestTypeDef](#deleteassessmentreportrequestrequesttypedef)
+  - [DeleteAssessmentRequestRequestTypeDef](#deleteassessmentrequestrequesttypedef)
+  - [DeleteControlRequestRequestTypeDef](#deletecontrolrequestrequesttypedef)
+  - [DeregisterAccountResponseTypeDef](#deregisteraccountresponsetypedef)
+  - [DeregisterOrganizationAdminAccountRequestRequestTypeDef](#deregisterorganizationadminaccountrequestrequesttypedef)
+  - [DisassociateAssessmentReportEvidenceFolderRequestRequestTypeDef](#disassociateassessmentreportevidencefolderrequestrequesttypedef)
   - [EvidenceTypeDef](#evidencetypedef)
   - [FrameworkMetadataTypeDef](#frameworkmetadatatypedef)
   - [FrameworkTypeDef](#frameworktypedef)
-  - [GetAccountStatusResponseResponseTypeDef](#getaccountstatusresponseresponsetypedef)
-  - [GetAssessmentFrameworkRequestTypeDef](#getassessmentframeworkrequesttypedef)
-  - [GetAssessmentFrameworkResponseResponseTypeDef](#getassessmentframeworkresponseresponsetypedef)
-  - [GetAssessmentReportUrlRequestTypeDef](#getassessmentreporturlrequesttypedef)
-  - [GetAssessmentReportUrlResponseResponseTypeDef](#getassessmentreporturlresponseresponsetypedef)
-  - [GetAssessmentRequestTypeDef](#getassessmentrequesttypedef)
-  - [GetAssessmentResponseResponseTypeDef](#getassessmentresponseresponsetypedef)
-  - [GetChangeLogsRequestTypeDef](#getchangelogsrequesttypedef)
-  - [GetChangeLogsResponseResponseTypeDef](#getchangelogsresponseresponsetypedef)
-  - [GetControlRequestTypeDef](#getcontrolrequesttypedef)
-  - [GetControlResponseResponseTypeDef](#getcontrolresponseresponsetypedef)
-  - [GetDelegationsRequestTypeDef](#getdelegationsrequesttypedef)
-  - [GetDelegationsResponseResponseTypeDef](#getdelegationsresponseresponsetypedef)
-  - [GetEvidenceByEvidenceFolderRequestTypeDef](#getevidencebyevidencefolderrequesttypedef)
-  - [GetEvidenceByEvidenceFolderResponseResponseTypeDef](#getevidencebyevidencefolderresponseresponsetypedef)
-  - [GetEvidenceFolderRequestTypeDef](#getevidencefolderrequesttypedef)
-  - [GetEvidenceFolderResponseResponseTypeDef](#getevidencefolderresponseresponsetypedef)
-  - [GetEvidenceFoldersByAssessmentControlRequestTypeDef](#getevidencefoldersbyassessmentcontrolrequesttypedef)
-  - [GetEvidenceFoldersByAssessmentControlResponseResponseTypeDef](#getevidencefoldersbyassessmentcontrolresponseresponsetypedef)
-  - [GetEvidenceFoldersByAssessmentRequestTypeDef](#getevidencefoldersbyassessmentrequesttypedef)
-  - [GetEvidenceFoldersByAssessmentResponseResponseTypeDef](#getevidencefoldersbyassessmentresponseresponsetypedef)
-  - [GetEvidenceRequestTypeDef](#getevidencerequesttypedef)
-  - [GetEvidenceResponseResponseTypeDef](#getevidenceresponseresponsetypedef)
-  - [GetOrganizationAdminAccountResponseResponseTypeDef](#getorganizationadminaccountresponseresponsetypedef)
-  - [GetServicesInScopeResponseResponseTypeDef](#getservicesinscoperesponseresponsetypedef)
-  - [GetSettingsRequestTypeDef](#getsettingsrequesttypedef)
-  - [GetSettingsResponseResponseTypeDef](#getsettingsresponseresponsetypedef)
-  - [ListAssessmentFrameworksRequestTypeDef](#listassessmentframeworksrequesttypedef)
-  - [ListAssessmentFrameworksResponseResponseTypeDef](#listassessmentframeworksresponseresponsetypedef)
-  - [ListAssessmentReportsRequestTypeDef](#listassessmentreportsrequesttypedef)
-  - [ListAssessmentReportsResponseResponseTypeDef](#listassessmentreportsresponseresponsetypedef)
-  - [ListAssessmentsRequestTypeDef](#listassessmentsrequesttypedef)
-  - [ListAssessmentsResponseResponseTypeDef](#listassessmentsresponseresponsetypedef)
-  - [ListControlsRequestTypeDef](#listcontrolsrequesttypedef)
-  - [ListControlsResponseResponseTypeDef](#listcontrolsresponseresponsetypedef)
-  - [ListKeywordsForDataSourceRequestTypeDef](#listkeywordsfordatasourcerequesttypedef)
-  - [ListKeywordsForDataSourceResponseResponseTypeDef](#listkeywordsfordatasourceresponseresponsetypedef)
-  - [ListNotificationsRequestTypeDef](#listnotificationsrequesttypedef)
-  - [ListNotificationsResponseResponseTypeDef](#listnotificationsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [GetAccountStatusResponseTypeDef](#getaccountstatusresponsetypedef)
+  - [GetAssessmentFrameworkRequestRequestTypeDef](#getassessmentframeworkrequestrequesttypedef)
+  - [GetAssessmentFrameworkResponseTypeDef](#getassessmentframeworkresponsetypedef)
+  - [GetAssessmentReportUrlRequestRequestTypeDef](#getassessmentreporturlrequestrequesttypedef)
+  - [GetAssessmentReportUrlResponseTypeDef](#getassessmentreporturlresponsetypedef)
+  - [GetAssessmentRequestRequestTypeDef](#getassessmentrequestrequesttypedef)
+  - [GetAssessmentResponseTypeDef](#getassessmentresponsetypedef)
+  - [GetChangeLogsRequestRequestTypeDef](#getchangelogsrequestrequesttypedef)
+  - [GetChangeLogsResponseTypeDef](#getchangelogsresponsetypedef)
+  - [GetControlRequestRequestTypeDef](#getcontrolrequestrequesttypedef)
+  - [GetControlResponseTypeDef](#getcontrolresponsetypedef)
+  - [GetDelegationsRequestRequestTypeDef](#getdelegationsrequestrequesttypedef)
+  - [GetDelegationsResponseTypeDef](#getdelegationsresponsetypedef)
+  - [GetEvidenceByEvidenceFolderRequestRequestTypeDef](#getevidencebyevidencefolderrequestrequesttypedef)
+  - [GetEvidenceByEvidenceFolderResponseTypeDef](#getevidencebyevidencefolderresponsetypedef)
+  - [GetEvidenceFolderRequestRequestTypeDef](#getevidencefolderrequestrequesttypedef)
+  - [GetEvidenceFolderResponseTypeDef](#getevidencefolderresponsetypedef)
+  - [GetEvidenceFoldersByAssessmentControlRequestRequestTypeDef](#getevidencefoldersbyassessmentcontrolrequestrequesttypedef)
+  - [GetEvidenceFoldersByAssessmentControlResponseTypeDef](#getevidencefoldersbyassessmentcontrolresponsetypedef)
+  - [GetEvidenceFoldersByAssessmentRequestRequestTypeDef](#getevidencefoldersbyassessmentrequestrequesttypedef)
+  - [GetEvidenceFoldersByAssessmentResponseTypeDef](#getevidencefoldersbyassessmentresponsetypedef)
+  - [GetEvidenceRequestRequestTypeDef](#getevidencerequestrequesttypedef)
+  - [GetEvidenceResponseTypeDef](#getevidenceresponsetypedef)
+  - [GetOrganizationAdminAccountResponseTypeDef](#getorganizationadminaccountresponsetypedef)
+  - [GetServicesInScopeResponseTypeDef](#getservicesinscoperesponsetypedef)
+  - [GetSettingsRequestRequestTypeDef](#getsettingsrequestrequesttypedef)
+  - [GetSettingsResponseTypeDef](#getsettingsresponsetypedef)
+  - [ListAssessmentFrameworksRequestRequestTypeDef](#listassessmentframeworksrequestrequesttypedef)
+  - [ListAssessmentFrameworksResponseTypeDef](#listassessmentframeworksresponsetypedef)
+  - [ListAssessmentReportsRequestRequestTypeDef](#listassessmentreportsrequestrequesttypedef)
+  - [ListAssessmentReportsResponseTypeDef](#listassessmentreportsresponsetypedef)
+  - [ListAssessmentsRequestRequestTypeDef](#listassessmentsrequestrequesttypedef)
+  - [ListAssessmentsResponseTypeDef](#listassessmentsresponsetypedef)
+  - [ListControlsRequestRequestTypeDef](#listcontrolsrequestrequesttypedef)
+  - [ListControlsResponseTypeDef](#listcontrolsresponsetypedef)
+  - [ListKeywordsForDataSourceRequestRequestTypeDef](#listkeywordsfordatasourcerequestrequesttypedef)
+  - [ListKeywordsForDataSourceResponseTypeDef](#listkeywordsfordatasourceresponsetypedef)
+  - [ListNotificationsRequestRequestTypeDef](#listnotificationsrequestrequesttypedef)
+  - [ListNotificationsResponseTypeDef](#listnotificationsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ManualEvidenceTypeDef](#manualevidencetypedef)
   - [NotificationTypeDef](#notificationtypedef)
-  - [RegisterAccountRequestTypeDef](#registeraccountrequesttypedef)
-  - [RegisterAccountResponseResponseTypeDef](#registeraccountresponseresponsetypedef)
-  - [RegisterOrganizationAdminAccountRequestTypeDef](#registerorganizationadminaccountrequesttypedef)
-  - [RegisterOrganizationAdminAccountResponseResponseTypeDef](#registerorganizationadminaccountresponseresponsetypedef)
+  - [RegisterAccountRequestRequestTypeDef](#registeraccountrequestrequesttypedef)
+  - [RegisterAccountResponseTypeDef](#registeraccountresponsetypedef)
+  - [RegisterOrganizationAdminAccountRequestRequestTypeDef](#registerorganizationadminaccountrequestrequesttypedef)
+  - [RegisterOrganizationAdminAccountResponseTypeDef](#registerorganizationadminaccountresponsetypedef)
   - [ResourceTypeDef](#resourcetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RoleTypeDef](#roletypedef)
@@ -120,26 +120,26 @@ type annotations stubs module
   - [ServiceMetadataTypeDef](#servicemetadatatypedef)
   - [SettingsTypeDef](#settingstypedef)
   - [SourceKeywordTypeDef](#sourcekeywordtypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [URLTypeDef](#urltypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateAssessmentControlRequestTypeDef](#updateassessmentcontrolrequesttypedef)
-  - [UpdateAssessmentControlResponseResponseTypeDef](#updateassessmentcontrolresponseresponsetypedef)
-  - [UpdateAssessmentControlSetStatusRequestTypeDef](#updateassessmentcontrolsetstatusrequesttypedef)
-  - [UpdateAssessmentControlSetStatusResponseResponseTypeDef](#updateassessmentcontrolsetstatusresponseresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateAssessmentControlRequestRequestTypeDef](#updateassessmentcontrolrequestrequesttypedef)
+  - [UpdateAssessmentControlResponseTypeDef](#updateassessmentcontrolresponsetypedef)
+  - [UpdateAssessmentControlSetStatusRequestRequestTypeDef](#updateassessmentcontrolsetstatusrequestrequesttypedef)
+  - [UpdateAssessmentControlSetStatusResponseTypeDef](#updateassessmentcontrolsetstatusresponsetypedef)
   - [UpdateAssessmentFrameworkControlSetTypeDef](#updateassessmentframeworkcontrolsettypedef)
-  - [UpdateAssessmentFrameworkRequestTypeDef](#updateassessmentframeworkrequesttypedef)
-  - [UpdateAssessmentFrameworkResponseResponseTypeDef](#updateassessmentframeworkresponseresponsetypedef)
-  - [UpdateAssessmentRequestTypeDef](#updateassessmentrequesttypedef)
-  - [UpdateAssessmentResponseResponseTypeDef](#updateassessmentresponseresponsetypedef)
-  - [UpdateAssessmentStatusRequestTypeDef](#updateassessmentstatusrequesttypedef)
-  - [UpdateAssessmentStatusResponseResponseTypeDef](#updateassessmentstatusresponseresponsetypedef)
-  - [UpdateControlRequestTypeDef](#updatecontrolrequesttypedef)
-  - [UpdateControlResponseResponseTypeDef](#updatecontrolresponseresponsetypedef)
-  - [UpdateSettingsRequestTypeDef](#updatesettingsrequesttypedef)
-  - [UpdateSettingsResponseResponseTypeDef](#updatesettingsresponseresponsetypedef)
-  - [ValidateAssessmentReportIntegrityRequestTypeDef](#validateassessmentreportintegrityrequesttypedef)
-  - [ValidateAssessmentReportIntegrityResponseResponseTypeDef](#validateassessmentreportintegrityresponseresponsetypedef)
+  - [UpdateAssessmentFrameworkRequestRequestTypeDef](#updateassessmentframeworkrequestrequesttypedef)
+  - [UpdateAssessmentFrameworkResponseTypeDef](#updateassessmentframeworkresponsetypedef)
+  - [UpdateAssessmentRequestRequestTypeDef](#updateassessmentrequestrequesttypedef)
+  - [UpdateAssessmentResponseTypeDef](#updateassessmentresponsetypedef)
+  - [UpdateAssessmentStatusRequestRequestTypeDef](#updateassessmentstatusrequestrequesttypedef)
+  - [UpdateAssessmentStatusResponseTypeDef](#updateassessmentstatusresponsetypedef)
+  - [UpdateControlRequestRequestTypeDef](#updatecontrolrequestrequesttypedef)
+  - [UpdateControlResponseTypeDef](#updatecontrolresponsetypedef)
+  - [UpdateSettingsRequestRequestTypeDef](#updatesettingsrequestrequesttypedef)
+  - [UpdateSettingsResponseTypeDef](#updatesettingsresponsetypedef)
+  - [ValidateAssessmentReportIntegrityRequestRequestTypeDef](#validateassessmentreportintegrityrequestrequesttypedef)
+  - [ValidateAssessmentReportIntegrityResponseTypeDef](#validateassessmentreportintegrityresponsetypedef)
 
 ## AWSAccountTypeDef
 
@@ -380,10 +380,10 @@ Optional fields:
   [AssessmentFrameworkTypeDef](./type_defs.md#assessmentframeworktypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
-## AssociateAssessmentReportEvidenceFolderRequestTypeDef
+## AssociateAssessmentReportEvidenceFolderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import AssociateAssessmentReportEvidenceFolderRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import AssociateAssessmentReportEvidenceFolderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -391,10 +391,10 @@ Required fields:
 - `assessmentId`: `str`
 - `evidenceFolderId`: `str`
 
-## BatchAssociateAssessmentReportEvidenceRequestTypeDef
+## BatchAssociateAssessmentReportEvidenceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import BatchAssociateAssessmentReportEvidenceRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import BatchAssociateAssessmentReportEvidenceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -403,10 +403,10 @@ Required fields:
 - `evidenceFolderId`: `str`
 - `evidenceIds`: `List`\[`str`\]
 
-## BatchAssociateAssessmentReportEvidenceResponseResponseTypeDef
+## BatchAssociateAssessmentReportEvidenceResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import BatchAssociateAssessmentReportEvidenceResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import BatchAssociateAssessmentReportEvidenceResponseTypeDef
 ```
 
 Required fields:
@@ -430,10 +430,10 @@ Optional fields:
 - `errorCode`: `str`
 - `errorMessage`: `str`
 
-## BatchCreateDelegationByAssessmentRequestTypeDef
+## BatchCreateDelegationByAssessmentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import BatchCreateDelegationByAssessmentRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import BatchCreateDelegationByAssessmentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -442,10 +442,10 @@ Required fields:
   `List`\[[CreateDelegationRequestTypeDef](./type_defs.md#createdelegationrequesttypedef)\]
 - `assessmentId`: `str`
 
-## BatchCreateDelegationByAssessmentResponseResponseTypeDef
+## BatchCreateDelegationByAssessmentResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import BatchCreateDelegationByAssessmentResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import BatchCreateDelegationByAssessmentResponseTypeDef
 ```
 
 Required fields:
@@ -469,10 +469,10 @@ Optional fields:
 - `errorCode`: `str`
 - `errorMessage`: `str`
 
-## BatchDeleteDelegationByAssessmentRequestTypeDef
+## BatchDeleteDelegationByAssessmentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import BatchDeleteDelegationByAssessmentRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import BatchDeleteDelegationByAssessmentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -480,10 +480,10 @@ Required fields:
 - `delegationIds`: `List`\[`str`\]
 - `assessmentId`: `str`
 
-## BatchDeleteDelegationByAssessmentResponseResponseTypeDef
+## BatchDeleteDelegationByAssessmentResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import BatchDeleteDelegationByAssessmentResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import BatchDeleteDelegationByAssessmentResponseTypeDef
 ```
 
 Required fields:
@@ -493,10 +493,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchDisassociateAssessmentReportEvidenceRequestTypeDef
+## BatchDisassociateAssessmentReportEvidenceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import BatchDisassociateAssessmentReportEvidenceRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import BatchDisassociateAssessmentReportEvidenceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -505,10 +505,10 @@ Required fields:
 - `evidenceFolderId`: `str`
 - `evidenceIds`: `List`\[`str`\]
 
-## BatchDisassociateAssessmentReportEvidenceResponseResponseTypeDef
+## BatchDisassociateAssessmentReportEvidenceResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import BatchDisassociateAssessmentReportEvidenceResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import BatchDisassociateAssessmentReportEvidenceResponseTypeDef
 ```
 
 Required fields:
@@ -532,10 +532,10 @@ Optional fields:
 - `errorCode`: `str`
 - `errorMessage`: `str`
 
-## BatchImportEvidenceToAssessmentControlRequestTypeDef
+## BatchImportEvidenceToAssessmentControlRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import BatchImportEvidenceToAssessmentControlRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import BatchImportEvidenceToAssessmentControlRequestRequestTypeDef
 ```
 
 Required fields:
@@ -546,10 +546,10 @@ Required fields:
 - `manualEvidence`:
   `List`\[[ManualEvidenceTypeDef](./type_defs.md#manualevidencetypedef)\]
 
-## BatchImportEvidenceToAssessmentControlResponseResponseTypeDef
+## BatchImportEvidenceToAssessmentControlResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import BatchImportEvidenceToAssessmentControlResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import BatchImportEvidenceToAssessmentControlResponseTypeDef
 ```
 
 Required fields:
@@ -680,10 +680,10 @@ Optional fields:
 
 - `id`: `str`
 
-## CreateAssessmentFrameworkRequestTypeDef
+## CreateAssessmentFrameworkRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import CreateAssessmentFrameworkRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import CreateAssessmentFrameworkRequestRequestTypeDef
 ```
 
 Required fields:
@@ -698,10 +698,10 @@ Optional fields:
 - `complianceType`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateAssessmentFrameworkResponseResponseTypeDef
+## CreateAssessmentFrameworkResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import CreateAssessmentFrameworkResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import CreateAssessmentFrameworkResponseTypeDef
 ```
 
 Required fields:
@@ -710,10 +710,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateAssessmentReportRequestTypeDef
+## CreateAssessmentReportRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import CreateAssessmentReportRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import CreateAssessmentReportRequestRequestTypeDef
 ```
 
 Required fields:
@@ -725,10 +725,10 @@ Optional fields:
 
 - `description`: `str`
 
-## CreateAssessmentReportResponseResponseTypeDef
+## CreateAssessmentReportResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import CreateAssessmentReportResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import CreateAssessmentReportResponseTypeDef
 ```
 
 Required fields:
@@ -738,10 +738,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateAssessmentRequestTypeDef
+## CreateAssessmentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import CreateAssessmentRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import CreateAssessmentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -758,10 +758,10 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateAssessmentResponseResponseTypeDef
+## CreateAssessmentResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import CreateAssessmentResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import CreateAssessmentResponseTypeDef
 ```
 
 Required fields:
@@ -787,10 +787,10 @@ Optional fields:
 - `sourceFrequency`: [SourceFrequencyType](./literals.md#sourcefrequencytype)
 - `troubleshootingText`: `str`
 
-## CreateControlRequestTypeDef
+## CreateControlRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import CreateControlRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import CreateControlRequestRequestTypeDef
 ```
 
 Required fields:
@@ -807,10 +807,10 @@ Optional fields:
 - `actionPlanInstructions`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateControlResponseResponseTypeDef
+## CreateControlResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import CreateControlResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import CreateControlResponseTypeDef
 ```
 
 Required fields:
@@ -868,20 +868,20 @@ Optional fields:
 - `comment`: `str`
 - `createdBy`: `str`
 
-## DeleteAssessmentFrameworkRequestTypeDef
+## DeleteAssessmentFrameworkRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import DeleteAssessmentFrameworkRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import DeleteAssessmentFrameworkRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `frameworkId`: `str`
 
-## DeleteAssessmentReportRequestTypeDef
+## DeleteAssessmentReportRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import DeleteAssessmentReportRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import DeleteAssessmentReportRequestRequestTypeDef
 ```
 
 Required fields:
@@ -889,30 +889,30 @@ Required fields:
 - `assessmentId`: `str`
 - `assessmentReportId`: `str`
 
-## DeleteAssessmentRequestTypeDef
+## DeleteAssessmentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import DeleteAssessmentRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import DeleteAssessmentRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `assessmentId`: `str`
 
-## DeleteControlRequestTypeDef
+## DeleteControlRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import DeleteControlRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import DeleteControlRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `controlId`: `str`
 
-## DeregisterAccountResponseResponseTypeDef
+## DeregisterAccountResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import DeregisterAccountResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import DeregisterAccountResponseTypeDef
 ```
 
 Required fields:
@@ -921,20 +921,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeregisterOrganizationAdminAccountRequestTypeDef
+## DeregisterOrganizationAdminAccountRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import DeregisterOrganizationAdminAccountRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import DeregisterOrganizationAdminAccountRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `adminAccountId`: `str`
 
-## DisassociateAssessmentReportEvidenceFolderRequestTypeDef
+## DisassociateAssessmentReportEvidenceFolderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import DisassociateAssessmentReportEvidenceFolderRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import DisassociateAssessmentReportEvidenceFolderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1004,10 +1004,10 @@ Optional fields:
 - `lastUpdatedBy`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## GetAccountStatusResponseResponseTypeDef
+## GetAccountStatusResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetAccountStatusResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import GetAccountStatusResponseTypeDef
 ```
 
 Required fields:
@@ -1016,20 +1016,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAssessmentFrameworkRequestTypeDef
+## GetAssessmentFrameworkRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetAssessmentFrameworkRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import GetAssessmentFrameworkRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `frameworkId`: `str`
 
-## GetAssessmentFrameworkResponseResponseTypeDef
+## GetAssessmentFrameworkResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetAssessmentFrameworkResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import GetAssessmentFrameworkResponseTypeDef
 ```
 
 Required fields:
@@ -1038,10 +1038,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAssessmentReportUrlRequestTypeDef
+## GetAssessmentReportUrlRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetAssessmentReportUrlRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import GetAssessmentReportUrlRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1049,10 +1049,10 @@ Required fields:
 - `assessmentReportId`: `str`
 - `assessmentId`: `str`
 
-## GetAssessmentReportUrlResponseResponseTypeDef
+## GetAssessmentReportUrlResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetAssessmentReportUrlResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import GetAssessmentReportUrlResponseTypeDef
 ```
 
 Required fields:
@@ -1061,20 +1061,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAssessmentRequestTypeDef
+## GetAssessmentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetAssessmentRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import GetAssessmentRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `assessmentId`: `str`
 
-## GetAssessmentResponseResponseTypeDef
+## GetAssessmentResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetAssessmentResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import GetAssessmentResponseTypeDef
 ```
 
 Required fields:
@@ -1084,10 +1084,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetChangeLogsRequestTypeDef
+## GetChangeLogsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetChangeLogsRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import GetChangeLogsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1101,10 +1101,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## GetChangeLogsResponseResponseTypeDef
+## GetChangeLogsResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetChangeLogsResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import GetChangeLogsResponseTypeDef
 ```
 
 Required fields:
@@ -1114,20 +1114,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetControlRequestTypeDef
+## GetControlRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetControlRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import GetControlRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `controlId`: `str`
 
-## GetControlResponseResponseTypeDef
+## GetControlResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetControlResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import GetControlResponseTypeDef
 ```
 
 Required fields:
@@ -1136,10 +1136,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDelegationsRequestTypeDef
+## GetDelegationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetDelegationsRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import GetDelegationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1147,10 +1147,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## GetDelegationsResponseResponseTypeDef
+## GetDelegationsResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetDelegationsResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import GetDelegationsResponseTypeDef
 ```
 
 Required fields:
@@ -1161,10 +1161,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetEvidenceByEvidenceFolderRequestTypeDef
+## GetEvidenceByEvidenceFolderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetEvidenceByEvidenceFolderRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import GetEvidenceByEvidenceFolderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1178,10 +1178,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## GetEvidenceByEvidenceFolderResponseResponseTypeDef
+## GetEvidenceByEvidenceFolderResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetEvidenceByEvidenceFolderResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import GetEvidenceByEvidenceFolderResponseTypeDef
 ```
 
 Required fields:
@@ -1191,10 +1191,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetEvidenceFolderRequestTypeDef
+## GetEvidenceFolderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetEvidenceFolderRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import GetEvidenceFolderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1203,10 +1203,10 @@ Required fields:
 - `controlSetId`: `str`
 - `evidenceFolderId`: `str`
 
-## GetEvidenceFolderResponseResponseTypeDef
+## GetEvidenceFolderResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetEvidenceFolderResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import GetEvidenceFolderResponseTypeDef
 ```
 
 Required fields:
@@ -1216,10 +1216,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetEvidenceFoldersByAssessmentControlRequestTypeDef
+## GetEvidenceFoldersByAssessmentControlRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetEvidenceFoldersByAssessmentControlRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import GetEvidenceFoldersByAssessmentControlRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1233,10 +1233,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## GetEvidenceFoldersByAssessmentControlResponseResponseTypeDef
+## GetEvidenceFoldersByAssessmentControlResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetEvidenceFoldersByAssessmentControlResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import GetEvidenceFoldersByAssessmentControlResponseTypeDef
 ```
 
 Required fields:
@@ -1247,10 +1247,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetEvidenceFoldersByAssessmentRequestTypeDef
+## GetEvidenceFoldersByAssessmentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetEvidenceFoldersByAssessmentRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import GetEvidenceFoldersByAssessmentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1262,10 +1262,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## GetEvidenceFoldersByAssessmentResponseResponseTypeDef
+## GetEvidenceFoldersByAssessmentResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetEvidenceFoldersByAssessmentResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import GetEvidenceFoldersByAssessmentResponseTypeDef
 ```
 
 Required fields:
@@ -1276,10 +1276,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetEvidenceRequestTypeDef
+## GetEvidenceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetEvidenceRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import GetEvidenceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1289,10 +1289,10 @@ Required fields:
 - `evidenceFolderId`: `str`
 - `evidenceId`: `str`
 
-## GetEvidenceResponseResponseTypeDef
+## GetEvidenceResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetEvidenceResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import GetEvidenceResponseTypeDef
 ```
 
 Required fields:
@@ -1301,10 +1301,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetOrganizationAdminAccountResponseResponseTypeDef
+## GetOrganizationAdminAccountResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetOrganizationAdminAccountResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import GetOrganizationAdminAccountResponseTypeDef
 ```
 
 Required fields:
@@ -1314,10 +1314,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetServicesInScopeResponseResponseTypeDef
+## GetServicesInScopeResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetServicesInScopeResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import GetServicesInScopeResponseTypeDef
 ```
 
 Required fields:
@@ -1327,20 +1327,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSettingsRequestTypeDef
+## GetSettingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetSettingsRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import GetSettingsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `attribute`: [SettingAttributeType](./literals.md#settingattributetype)
 
-## GetSettingsResponseResponseTypeDef
+## GetSettingsResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import GetSettingsResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import GetSettingsResponseTypeDef
 ```
 
 Required fields:
@@ -1349,10 +1349,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAssessmentFrameworksRequestTypeDef
+## ListAssessmentFrameworksRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import ListAssessmentFrameworksRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import ListAssessmentFrameworksRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1364,10 +1364,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListAssessmentFrameworksResponseResponseTypeDef
+## ListAssessmentFrameworksResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import ListAssessmentFrameworksResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import ListAssessmentFrameworksResponseTypeDef
 ```
 
 Required fields:
@@ -1378,10 +1378,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAssessmentReportsRequestTypeDef
+## ListAssessmentReportsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import ListAssessmentReportsRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import ListAssessmentReportsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1389,10 +1389,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListAssessmentReportsResponseResponseTypeDef
+## ListAssessmentReportsResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import ListAssessmentReportsResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import ListAssessmentReportsResponseTypeDef
 ```
 
 Required fields:
@@ -1403,10 +1403,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAssessmentsRequestTypeDef
+## ListAssessmentsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import ListAssessmentsRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import ListAssessmentsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1414,10 +1414,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListAssessmentsResponseResponseTypeDef
+## ListAssessmentsResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import ListAssessmentsResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import ListAssessmentsResponseTypeDef
 ```
 
 Required fields:
@@ -1428,10 +1428,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListControlsRequestTypeDef
+## ListControlsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import ListControlsRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import ListControlsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1443,10 +1443,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListControlsResponseResponseTypeDef
+## ListControlsResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import ListControlsResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import ListControlsResponseTypeDef
 ```
 
 Required fields:
@@ -1457,10 +1457,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListKeywordsForDataSourceRequestTypeDef
+## ListKeywordsForDataSourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import ListKeywordsForDataSourceRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import ListKeywordsForDataSourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1472,10 +1472,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListKeywordsForDataSourceResponseResponseTypeDef
+## ListKeywordsForDataSourceResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import ListKeywordsForDataSourceResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import ListKeywordsForDataSourceResponseTypeDef
 ```
 
 Required fields:
@@ -1485,10 +1485,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListNotificationsRequestTypeDef
+## ListNotificationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import ListNotificationsRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import ListNotificationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1496,10 +1496,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListNotificationsResponseResponseTypeDef
+## ListNotificationsResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import ListNotificationsResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import ListNotificationsResponseTypeDef
 ```
 
 Required fields:
@@ -1510,20 +1510,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -1559,10 +1559,10 @@ Optional fields:
 - `eventTime`: `datetime`
 - `source`: `str`
 
-## RegisterAccountRequestTypeDef
+## RegisterAccountRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import RegisterAccountRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import RegisterAccountRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1570,10 +1570,10 @@ Optional fields:
 - `kmsKey`: `str`
 - `delegatedAdminAccount`: `str`
 
-## RegisterAccountResponseResponseTypeDef
+## RegisterAccountResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import RegisterAccountResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import RegisterAccountResponseTypeDef
 ```
 
 Required fields:
@@ -1582,20 +1582,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RegisterOrganizationAdminAccountRequestTypeDef
+## RegisterOrganizationAdminAccountRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import RegisterOrganizationAdminAccountRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import RegisterOrganizationAdminAccountRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `adminAccountId`: `str`
 
-## RegisterOrganizationAdminAccountResponseResponseTypeDef
+## RegisterOrganizationAdminAccountResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import RegisterOrganizationAdminAccountResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import RegisterOrganizationAdminAccountResponseTypeDef
 ```
 
 Required fields:
@@ -1694,10 +1694,10 @@ Optional fields:
   [KeywordInputTypeType](./literals.md#keywordinputtypetype))
 - `keywordValue`: `str`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1716,10 +1716,10 @@ Optional fields:
 - `hyperlinkName`: `str`
 - `link`: `str`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1727,10 +1727,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tagKeys`: `List`\[`str`\]
 
-## UpdateAssessmentControlRequestTypeDef
+## UpdateAssessmentControlRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import UpdateAssessmentControlRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import UpdateAssessmentControlRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1744,10 +1744,10 @@ Optional fields:
 - `controlStatus`: [ControlStatusType](./literals.md#controlstatustype)
 - `commentBody`: `str`
 
-## UpdateAssessmentControlResponseResponseTypeDef
+## UpdateAssessmentControlResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import UpdateAssessmentControlResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import UpdateAssessmentControlResponseTypeDef
 ```
 
 Required fields:
@@ -1757,10 +1757,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateAssessmentControlSetStatusRequestTypeDef
+## UpdateAssessmentControlSetStatusRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import UpdateAssessmentControlSetStatusRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import UpdateAssessmentControlSetStatusRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1770,10 +1770,10 @@ Required fields:
 - `status`: [ControlSetStatusType](./literals.md#controlsetstatustype)
 - `comment`: `str`
 
-## UpdateAssessmentControlSetStatusResponseResponseTypeDef
+## UpdateAssessmentControlSetStatusResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import UpdateAssessmentControlSetStatusResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import UpdateAssessmentControlSetStatusResponseTypeDef
 ```
 
 Required fields:
@@ -1799,10 +1799,10 @@ Optional fields:
 - `controls`:
   `List`\[[CreateAssessmentFrameworkControlTypeDef](./type_defs.md#createassessmentframeworkcontroltypedef)\]
 
-## UpdateAssessmentFrameworkRequestTypeDef
+## UpdateAssessmentFrameworkRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import UpdateAssessmentFrameworkRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import UpdateAssessmentFrameworkRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1817,10 +1817,10 @@ Optional fields:
 - `description`: `str`
 - `complianceType`: `str`
 
-## UpdateAssessmentFrameworkResponseResponseTypeDef
+## UpdateAssessmentFrameworkResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import UpdateAssessmentFrameworkResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import UpdateAssessmentFrameworkResponseTypeDef
 ```
 
 Required fields:
@@ -1829,10 +1829,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateAssessmentRequestTypeDef
+## UpdateAssessmentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import UpdateAssessmentRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import UpdateAssessmentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1848,10 +1848,10 @@ Optional fields:
   [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
 - `roles`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
 
-## UpdateAssessmentResponseResponseTypeDef
+## UpdateAssessmentResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import UpdateAssessmentResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import UpdateAssessmentResponseTypeDef
 ```
 
 Required fields:
@@ -1860,10 +1860,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateAssessmentStatusRequestTypeDef
+## UpdateAssessmentStatusRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import UpdateAssessmentStatusRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import UpdateAssessmentStatusRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1871,10 +1871,10 @@ Required fields:
 - `assessmentId`: `str`
 - `status`: [AssessmentStatusType](./literals.md#assessmentstatustype)
 
-## UpdateAssessmentStatusResponseResponseTypeDef
+## UpdateAssessmentStatusResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import UpdateAssessmentStatusResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import UpdateAssessmentStatusResponseTypeDef
 ```
 
 Required fields:
@@ -1883,10 +1883,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateControlRequestTypeDef
+## UpdateControlRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import UpdateControlRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import UpdateControlRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1903,10 +1903,10 @@ Optional fields:
 - `actionPlanTitle`: `str`
 - `actionPlanInstructions`: `str`
 
-## UpdateControlResponseResponseTypeDef
+## UpdateControlResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import UpdateControlResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import UpdateControlResponseTypeDef
 ```
 
 Required fields:
@@ -1915,10 +1915,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateSettingsRequestTypeDef
+## UpdateSettingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import UpdateSettingsRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import UpdateSettingsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1929,10 +1929,10 @@ Optional fields:
 - `defaultProcessOwners`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
 - `kmsKey`: `str`
 
-## UpdateSettingsResponseResponseTypeDef
+## UpdateSettingsResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import UpdateSettingsResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import UpdateSettingsResponseTypeDef
 ```
 
 Required fields:
@@ -1941,20 +1941,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ValidateAssessmentReportIntegrityRequestTypeDef
+## ValidateAssessmentReportIntegrityRequestRequestTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import ValidateAssessmentReportIntegrityRequestTypeDef
+from mypy_boto3_auditmanager.type_defs import ValidateAssessmentReportIntegrityRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `s3RelativePath`: `str`
 
-## ValidateAssessmentReportIntegrityResponseResponseTypeDef
+## ValidateAssessmentReportIntegrityResponseTypeDef
 
 ```python
-from mypy_boto3_auditmanager.type_defs import ValidateAssessmentReportIntegrityResponseResponseTypeDef
+from mypy_boto3_auditmanager.type_defs import ValidateAssessmentReportIntegrityResponseTypeDef
 ```
 
 Required fields:

@@ -11,6 +11,7 @@ type annotations stubs module
   - [PrometheusServiceClient](#prometheusserviceclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_workspace](#create_workspace)
     - [delete_workspace](#delete_workspace)
@@ -61,6 +62,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+PrometheusServiceClient exceptions.
+
+Type annotations for `boto3.client("amp").exceptions` method.
+
+Boto3 documentation:
+[PrometheusService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -86,7 +98,7 @@ Boto3 documentation:
 [PrometheusService.Client.create_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.create_workspace)
 
 Arguments mapping described in
-[CreateWorkspaceRequestTypeDef](./type_defs.md#createworkspacerequesttypedef).
+[CreateWorkspaceRequestRequestTypeDef](./type_defs.md#createworkspacerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -94,7 +106,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[CreateWorkspaceResponseResponseTypeDef](./type_defs.md#createworkspaceresponseresponsetypedef).
+[CreateWorkspaceResponseTypeDef](./type_defs.md#createworkspaceresponsetypedef).
 
 ### delete_workspace
 
@@ -106,7 +118,7 @@ Boto3 documentation:
 [PrometheusService.Client.delete_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.delete_workspace)
 
 Arguments mapping described in
-[DeleteWorkspaceRequestTypeDef](./type_defs.md#deleteworkspacerequesttypedef).
+[DeleteWorkspaceRequestRequestTypeDef](./type_defs.md#deleteworkspacerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -123,14 +135,14 @@ Boto3 documentation:
 [PrometheusService.Client.describe_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.describe_workspace)
 
 Arguments mapping described in
-[DescribeWorkspaceRequestTypeDef](./type_defs.md#describeworkspacerequesttypedef).
+[DescribeWorkspaceRequestRequestTypeDef](./type_defs.md#describeworkspacerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `workspaceId`: `str` *(required)*
 
 Returns
-[DescribeWorkspaceResponseResponseTypeDef](./type_defs.md#describeworkspaceresponseresponsetypedef).
+[DescribeWorkspaceResponseTypeDef](./type_defs.md#describeworkspaceresponsetypedef).
 
 ### generate_presigned_url
 
@@ -160,7 +172,7 @@ Boto3 documentation:
 [PrometheusService.Client.list_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.list_workspaces)
 
 Arguments mapping described in
-[ListWorkspacesRequestTypeDef](./type_defs.md#listworkspacesrequesttypedef).
+[ListWorkspacesRequestRequestTypeDef](./type_defs.md#listworkspacesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -169,7 +181,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListWorkspacesResponseResponseTypeDef](./type_defs.md#listworkspacesresponseresponsetypedef).
+[ListWorkspacesResponseTypeDef](./type_defs.md#listworkspacesresponsetypedef).
 
 ### update_workspace_alias
 
@@ -181,7 +193,7 @@ Boto3 documentation:
 [PrometheusService.Client.update_workspace_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.update_workspace_alias)
 
 Arguments mapping described in
-[UpdateWorkspaceAliasRequestTypeDef](./type_defs.md#updateworkspacealiasrequesttypedef).
+[UpdateWorkspaceAliasRequestRequestTypeDef](./type_defs.md#updateworkspacealiasrequestrequesttypedef).
 
 Keyword-only arguments:
 

@@ -11,6 +11,7 @@ type annotations stubs module
   - [CodeDeployClient](#codedeployclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_tags_to_on_premises_instances](#add_tags_to_on_premises_instances)
     - [batch_get_application_revisions](#batch_get_application_revisions)
     - [batch_get_applications](#batch_get_applications)
@@ -209,6 +210,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+CodeDeployClient exceptions.
+
+Type annotations for `boto3.client("codedeploy").exceptions` method.
+
+Boto3 documentation:
+[CodeDeploy.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_tags_to_on_premises_instances
 
 Adds tags to on-premises instances.
@@ -220,7 +232,7 @@ Boto3 documentation:
 [CodeDeploy.Client.add_tags_to_on_premises_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.add_tags_to_on_premises_instances)
 
 Arguments mapping described in
-[AddTagsToOnPremisesInstancesInputTypeDef](./type_defs.md#addtagstoonpremisesinstancesinputtypedef).
+[AddTagsToOnPremisesInstancesInputRequestTypeDef](./type_defs.md#addtagstoonpremisesinstancesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -238,7 +250,7 @@ Boto3 documentation:
 [CodeDeploy.Client.batch_get_application_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_application_revisions)
 
 Arguments mapping described in
-[BatchGetApplicationRevisionsInputTypeDef](./type_defs.md#batchgetapplicationrevisionsinputtypedef).
+[BatchGetApplicationRevisionsInputRequestTypeDef](./type_defs.md#batchgetapplicationrevisionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -248,7 +260,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchGetApplicationRevisionsOutputResponseTypeDef](./type_defs.md#batchgetapplicationrevisionsoutputresponsetypedef).
+[BatchGetApplicationRevisionsOutputTypeDef](./type_defs.md#batchgetapplicationrevisionsoutputtypedef).
 
 ### batch_get_applications
 
@@ -261,14 +273,14 @@ Boto3 documentation:
 [CodeDeploy.Client.batch_get_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_applications)
 
 Arguments mapping described in
-[BatchGetApplicationsInputTypeDef](./type_defs.md#batchgetapplicationsinputtypedef).
+[BatchGetApplicationsInputRequestTypeDef](./type_defs.md#batchgetapplicationsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `applicationNames`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetApplicationsOutputResponseTypeDef](./type_defs.md#batchgetapplicationsoutputresponsetypedef).
+[BatchGetApplicationsOutputTypeDef](./type_defs.md#batchgetapplicationsoutputtypedef).
 
 ### batch_get_deployment_groups
 
@@ -281,7 +293,7 @@ Boto3 documentation:
 [CodeDeploy.Client.batch_get_deployment_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_groups)
 
 Arguments mapping described in
-[BatchGetDeploymentGroupsInputTypeDef](./type_defs.md#batchgetdeploymentgroupsinputtypedef).
+[BatchGetDeploymentGroupsInputRequestTypeDef](./type_defs.md#batchgetdeploymentgroupsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -289,7 +301,7 @@ Keyword-only arguments:
 - `deploymentGroupNames`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetDeploymentGroupsOutputResponseTypeDef](./type_defs.md#batchgetdeploymentgroupsoutputresponsetypedef).
+[BatchGetDeploymentGroupsOutputTypeDef](./type_defs.md#batchgetdeploymentgroupsoutputtypedef).
 
 ### batch_get_deployment_instances
 
@@ -302,7 +314,7 @@ Boto3 documentation:
 [CodeDeploy.Client.batch_get_deployment_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_instances)
 
 Arguments mapping described in
-[BatchGetDeploymentInstancesInputTypeDef](./type_defs.md#batchgetdeploymentinstancesinputtypedef).
+[BatchGetDeploymentInstancesInputRequestTypeDef](./type_defs.md#batchgetdeploymentinstancesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -310,7 +322,7 @@ Keyword-only arguments:
 - `instanceIds`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetDeploymentInstancesOutputResponseTypeDef](./type_defs.md#batchgetdeploymentinstancesoutputresponsetypedef).
+[BatchGetDeploymentInstancesOutputTypeDef](./type_defs.md#batchgetdeploymentinstancesoutputtypedef).
 
 ### batch_get_deployment_targets
 
@@ -323,7 +335,7 @@ Boto3 documentation:
 [CodeDeploy.Client.batch_get_deployment_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_targets)
 
 Arguments mapping described in
-[BatchGetDeploymentTargetsInputTypeDef](./type_defs.md#batchgetdeploymenttargetsinputtypedef).
+[BatchGetDeploymentTargetsInputRequestTypeDef](./type_defs.md#batchgetdeploymenttargetsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -331,7 +343,7 @@ Keyword-only arguments:
 - `targetIds`: `List`\[`str`\]
 
 Returns
-[BatchGetDeploymentTargetsOutputResponseTypeDef](./type_defs.md#batchgetdeploymenttargetsoutputresponsetypedef).
+[BatchGetDeploymentTargetsOutputTypeDef](./type_defs.md#batchgetdeploymenttargetsoutputtypedef).
 
 ### batch_get_deployments
 
@@ -343,14 +355,14 @@ Boto3 documentation:
 [CodeDeploy.Client.batch_get_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployments)
 
 Arguments mapping described in
-[BatchGetDeploymentsInputTypeDef](./type_defs.md#batchgetdeploymentsinputtypedef).
+[BatchGetDeploymentsInputRequestTypeDef](./type_defs.md#batchgetdeploymentsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `deploymentIds`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetDeploymentsOutputResponseTypeDef](./type_defs.md#batchgetdeploymentsoutputresponsetypedef).
+[BatchGetDeploymentsOutputTypeDef](./type_defs.md#batchgetdeploymentsoutputtypedef).
 
 ### batch_get_on_premises_instances
 
@@ -363,14 +375,14 @@ Boto3 documentation:
 [CodeDeploy.Client.batch_get_on_premises_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_on_premises_instances)
 
 Arguments mapping described in
-[BatchGetOnPremisesInstancesInputTypeDef](./type_defs.md#batchgetonpremisesinstancesinputtypedef).
+[BatchGetOnPremisesInstancesInputRequestTypeDef](./type_defs.md#batchgetonpremisesinstancesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `instanceNames`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetOnPremisesInstancesOutputResponseTypeDef](./type_defs.md#batchgetonpremisesinstancesoutputresponsetypedef).
+[BatchGetOnPremisesInstancesOutputTypeDef](./type_defs.md#batchgetonpremisesinstancesoutputtypedef).
 
 ### can_paginate
 
@@ -399,7 +411,7 @@ Boto3 documentation:
 [CodeDeploy.Client.continue_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.continue_deployment)
 
 Arguments mapping described in
-[ContinueDeploymentInputTypeDef](./type_defs.md#continuedeploymentinputtypedef).
+[ContinueDeploymentInputRequestTypeDef](./type_defs.md#continuedeploymentinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -417,7 +429,7 @@ Boto3 documentation:
 [CodeDeploy.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_application)
 
 Arguments mapping described in
-[CreateApplicationInputTypeDef](./type_defs.md#createapplicationinputtypedef).
+[CreateApplicationInputRequestTypeDef](./type_defs.md#createapplicationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -426,7 +438,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateApplicationOutputResponseTypeDef](./type_defs.md#createapplicationoutputresponsetypedef).
+[CreateApplicationOutputTypeDef](./type_defs.md#createapplicationoutputtypedef).
 
 ### create_deployment
 
@@ -438,7 +450,7 @@ Boto3 documentation:
 [CodeDeploy.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment)
 
 Arguments mapping described in
-[CreateDeploymentInputTypeDef](./type_defs.md#createdeploymentinputtypedef).
+[CreateDeploymentInputRequestTypeDef](./type_defs.md#createdeploymentinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -457,7 +469,7 @@ Keyword-only arguments:
   [FileExistsBehaviorType](./literals.md#fileexistsbehaviortype)
 
 Returns
-[CreateDeploymentOutputResponseTypeDef](./type_defs.md#createdeploymentoutputresponsetypedef).
+[CreateDeploymentOutputTypeDef](./type_defs.md#createdeploymentoutputtypedef).
 
 ### create_deployment_config
 
@@ -470,7 +482,7 @@ Boto3 documentation:
 [CodeDeploy.Client.create_deployment_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment_config)
 
 Arguments mapping described in
-[CreateDeploymentConfigInputTypeDef](./type_defs.md#createdeploymentconfiginputtypedef).
+[CreateDeploymentConfigInputRequestTypeDef](./type_defs.md#createdeploymentconfiginputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -482,7 +494,7 @@ Keyword-only arguments:
 - `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
 
 Returns
-[CreateDeploymentConfigOutputResponseTypeDef](./type_defs.md#createdeploymentconfigoutputresponsetypedef).
+[CreateDeploymentConfigOutputTypeDef](./type_defs.md#createdeploymentconfigoutputtypedef).
 
 ### create_deployment_group
 
@@ -495,7 +507,7 @@ Boto3 documentation:
 [CodeDeploy.Client.create_deployment_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment_group)
 
 Arguments mapping described in
-[CreateDeploymentGroupInputTypeDef](./type_defs.md#createdeploymentgroupinputtypedef).
+[CreateDeploymentGroupInputRequestTypeDef](./type_defs.md#createdeploymentgroupinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -530,7 +542,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDeploymentGroupOutputResponseTypeDef](./type_defs.md#createdeploymentgroupoutputresponsetypedef).
+[CreateDeploymentGroupOutputTypeDef](./type_defs.md#createdeploymentgroupoutputtypedef).
 
 ### delete_application
 
@@ -542,7 +554,7 @@ Boto3 documentation:
 [CodeDeploy.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_application)
 
 Arguments mapping described in
-[DeleteApplicationInputTypeDef](./type_defs.md#deleteapplicationinputtypedef).
+[DeleteApplicationInputRequestTypeDef](./type_defs.md#deleteapplicationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -559,7 +571,7 @@ Boto3 documentation:
 [CodeDeploy.Client.delete_deployment_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_deployment_config)
 
 Arguments mapping described in
-[DeleteDeploymentConfigInputTypeDef](./type_defs.md#deletedeploymentconfiginputtypedef).
+[DeleteDeploymentConfigInputRequestTypeDef](./type_defs.md#deletedeploymentconfiginputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -576,7 +588,7 @@ Boto3 documentation:
 [CodeDeploy.Client.delete_deployment_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_deployment_group)
 
 Arguments mapping described in
-[DeleteDeploymentGroupInputTypeDef](./type_defs.md#deletedeploymentgroupinputtypedef).
+[DeleteDeploymentGroupInputRequestTypeDef](./type_defs.md#deletedeploymentgroupinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -584,7 +596,7 @@ Keyword-only arguments:
 - `deploymentGroupName`: `str` *(required)*
 
 Returns
-[DeleteDeploymentGroupOutputResponseTypeDef](./type_defs.md#deletedeploymentgroupoutputresponsetypedef).
+[DeleteDeploymentGroupOutputTypeDef](./type_defs.md#deletedeploymentgroupoutputtypedef).
 
 ### delete_git_hub_account_token
 
@@ -597,14 +609,14 @@ Boto3 documentation:
 [CodeDeploy.Client.delete_git_hub_account_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_git_hub_account_token)
 
 Arguments mapping described in
-[DeleteGitHubAccountTokenInputTypeDef](./type_defs.md#deletegithubaccounttokeninputtypedef).
+[DeleteGitHubAccountTokenInputRequestTypeDef](./type_defs.md#deletegithubaccounttokeninputrequesttypedef).
 
 Keyword-only arguments:
 
 - `tokenName`: `str`
 
 Returns
-[DeleteGitHubAccountTokenOutputResponseTypeDef](./type_defs.md#deletegithubaccounttokenoutputresponsetypedef).
+[DeleteGitHubAccountTokenOutputTypeDef](./type_defs.md#deletegithubaccounttokenoutputtypedef).
 
 ### delete_resources_by_external_id
 
@@ -617,7 +629,7 @@ Boto3 documentation:
 [CodeDeploy.Client.delete_resources_by_external_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_resources_by_external_id)
 
 Arguments mapping described in
-[DeleteResourcesByExternalIdInputTypeDef](./type_defs.md#deleteresourcesbyexternalidinputtypedef).
+[DeleteResourcesByExternalIdInputRequestTypeDef](./type_defs.md#deleteresourcesbyexternalidinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -636,7 +648,7 @@ Boto3 documentation:
 [CodeDeploy.Client.deregister_on_premises_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.deregister_on_premises_instance)
 
 Arguments mapping described in
-[DeregisterOnPremisesInstanceInputTypeDef](./type_defs.md#deregisteronpremisesinstanceinputtypedef).
+[DeregisterOnPremisesInstanceInputRequestTypeDef](./type_defs.md#deregisteronpremisesinstanceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -671,14 +683,14 @@ Boto3 documentation:
 [CodeDeploy.Client.get_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_application)
 
 Arguments mapping described in
-[GetApplicationInputTypeDef](./type_defs.md#getapplicationinputtypedef).
+[GetApplicationInputRequestTypeDef](./type_defs.md#getapplicationinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `applicationName`: `str` *(required)*
 
 Returns
-[GetApplicationOutputResponseTypeDef](./type_defs.md#getapplicationoutputresponsetypedef).
+[GetApplicationOutputTypeDef](./type_defs.md#getapplicationoutputtypedef).
 
 ### get_application_revision
 
@@ -691,7 +703,7 @@ Boto3 documentation:
 [CodeDeploy.Client.get_application_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_application_revision)
 
 Arguments mapping described in
-[GetApplicationRevisionInputTypeDef](./type_defs.md#getapplicationrevisioninputtypedef).
+[GetApplicationRevisionInputRequestTypeDef](./type_defs.md#getapplicationrevisioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -700,7 +712,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[GetApplicationRevisionOutputResponseTypeDef](./type_defs.md#getapplicationrevisionoutputresponsetypedef).
+[GetApplicationRevisionOutputTypeDef](./type_defs.md#getapplicationrevisionoutputtypedef).
 
 ### get_deployment
 
@@ -712,14 +724,14 @@ Boto3 documentation:
 [CodeDeploy.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment)
 
 Arguments mapping described in
-[GetDeploymentInputTypeDef](./type_defs.md#getdeploymentinputtypedef).
+[GetDeploymentInputRequestTypeDef](./type_defs.md#getdeploymentinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `deploymentId`: `str` *(required)*
 
 Returns
-[GetDeploymentOutputResponseTypeDef](./type_defs.md#getdeploymentoutputresponsetypedef).
+[GetDeploymentOutputTypeDef](./type_defs.md#getdeploymentoutputtypedef).
 
 ### get_deployment_config
 
@@ -731,14 +743,14 @@ Boto3 documentation:
 [CodeDeploy.Client.get_deployment_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_config)
 
 Arguments mapping described in
-[GetDeploymentConfigInputTypeDef](./type_defs.md#getdeploymentconfiginputtypedef).
+[GetDeploymentConfigInputRequestTypeDef](./type_defs.md#getdeploymentconfiginputrequesttypedef).
 
 Keyword-only arguments:
 
 - `deploymentConfigName`: `str` *(required)*
 
 Returns
-[GetDeploymentConfigOutputResponseTypeDef](./type_defs.md#getdeploymentconfigoutputresponsetypedef).
+[GetDeploymentConfigOutputTypeDef](./type_defs.md#getdeploymentconfigoutputtypedef).
 
 ### get_deployment_group
 
@@ -750,7 +762,7 @@ Boto3 documentation:
 [CodeDeploy.Client.get_deployment_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_group)
 
 Arguments mapping described in
-[GetDeploymentGroupInputTypeDef](./type_defs.md#getdeploymentgroupinputtypedef).
+[GetDeploymentGroupInputRequestTypeDef](./type_defs.md#getdeploymentgroupinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -758,7 +770,7 @@ Keyword-only arguments:
 - `deploymentGroupName`: `str` *(required)*
 
 Returns
-[GetDeploymentGroupOutputResponseTypeDef](./type_defs.md#getdeploymentgroupoutputresponsetypedef).
+[GetDeploymentGroupOutputTypeDef](./type_defs.md#getdeploymentgroupoutputtypedef).
 
 ### get_deployment_instance
 
@@ -771,7 +783,7 @@ Boto3 documentation:
 [CodeDeploy.Client.get_deployment_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_instance)
 
 Arguments mapping described in
-[GetDeploymentInstanceInputTypeDef](./type_defs.md#getdeploymentinstanceinputtypedef).
+[GetDeploymentInstanceInputRequestTypeDef](./type_defs.md#getdeploymentinstanceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -779,7 +791,7 @@ Keyword-only arguments:
 - `instanceId`: `str` *(required)*
 
 Returns
-[GetDeploymentInstanceOutputResponseTypeDef](./type_defs.md#getdeploymentinstanceoutputresponsetypedef).
+[GetDeploymentInstanceOutputTypeDef](./type_defs.md#getdeploymentinstanceoutputtypedef).
 
 ### get_deployment_target
 
@@ -791,7 +803,7 @@ Boto3 documentation:
 [CodeDeploy.Client.get_deployment_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_target)
 
 Arguments mapping described in
-[GetDeploymentTargetInputTypeDef](./type_defs.md#getdeploymenttargetinputtypedef).
+[GetDeploymentTargetInputRequestTypeDef](./type_defs.md#getdeploymenttargetinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -799,7 +811,7 @@ Keyword-only arguments:
 - `targetId`: `str`
 
 Returns
-[GetDeploymentTargetOutputResponseTypeDef](./type_defs.md#getdeploymenttargetoutputresponsetypedef).
+[GetDeploymentTargetOutputTypeDef](./type_defs.md#getdeploymenttargetoutputtypedef).
 
 ### get_on_premises_instance
 
@@ -812,14 +824,14 @@ Boto3 documentation:
 [CodeDeploy.Client.get_on_premises_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_on_premises_instance)
 
 Arguments mapping described in
-[GetOnPremisesInstanceInputTypeDef](./type_defs.md#getonpremisesinstanceinputtypedef).
+[GetOnPremisesInstanceInputRequestTypeDef](./type_defs.md#getonpremisesinstanceinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `instanceName`: `str` *(required)*
 
 Returns
-[GetOnPremisesInstanceOutputResponseTypeDef](./type_defs.md#getonpremisesinstanceoutputresponsetypedef).
+[GetOnPremisesInstanceOutputTypeDef](./type_defs.md#getonpremisesinstanceoutputtypedef).
 
 ### list_application_revisions
 
@@ -832,7 +844,7 @@ Boto3 documentation:
 [CodeDeploy.Client.list_application_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_application_revisions)
 
 Arguments mapping described in
-[ListApplicationRevisionsInputTypeDef](./type_defs.md#listapplicationrevisionsinputtypedef).
+[ListApplicationRevisionsInputRequestTypeDef](./type_defs.md#listapplicationrevisionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -847,7 +859,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListApplicationRevisionsOutputResponseTypeDef](./type_defs.md#listapplicationrevisionsoutputresponsetypedef).
+[ListApplicationRevisionsOutputTypeDef](./type_defs.md#listapplicationrevisionsoutputtypedef).
 
 ### list_applications
 
@@ -859,14 +871,14 @@ Boto3 documentation:
 [CodeDeploy.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_applications)
 
 Arguments mapping described in
-[ListApplicationsInputTypeDef](./type_defs.md#listapplicationsinputtypedef).
+[ListApplicationsInputRequestTypeDef](./type_defs.md#listapplicationsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `nextToken`: `str`
 
 Returns
-[ListApplicationsOutputResponseTypeDef](./type_defs.md#listapplicationsoutputresponsetypedef).
+[ListApplicationsOutputTypeDef](./type_defs.md#listapplicationsoutputtypedef).
 
 ### list_deployment_configs
 
@@ -879,14 +891,14 @@ Boto3 documentation:
 [CodeDeploy.Client.list_deployment_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_configs)
 
 Arguments mapping described in
-[ListDeploymentConfigsInputTypeDef](./type_defs.md#listdeploymentconfigsinputtypedef).
+[ListDeploymentConfigsInputRequestTypeDef](./type_defs.md#listdeploymentconfigsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `nextToken`: `str`
 
 Returns
-[ListDeploymentConfigsOutputResponseTypeDef](./type_defs.md#listdeploymentconfigsoutputresponsetypedef).
+[ListDeploymentConfigsOutputTypeDef](./type_defs.md#listdeploymentconfigsoutputtypedef).
 
 ### list_deployment_groups
 
@@ -900,7 +912,7 @@ Boto3 documentation:
 [CodeDeploy.Client.list_deployment_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_groups)
 
 Arguments mapping described in
-[ListDeploymentGroupsInputTypeDef](./type_defs.md#listdeploymentgroupsinputtypedef).
+[ListDeploymentGroupsInputRequestTypeDef](./type_defs.md#listdeploymentgroupsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -908,7 +920,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListDeploymentGroupsOutputResponseTypeDef](./type_defs.md#listdeploymentgroupsoutputresponsetypedef).
+[ListDeploymentGroupsOutputTypeDef](./type_defs.md#listdeploymentgroupsoutputtypedef).
 
 ### list_deployment_instances
 
@@ -921,7 +933,7 @@ Boto3 documentation:
 [CodeDeploy.Client.list_deployment_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_instances)
 
 Arguments mapping described in
-[ListDeploymentInstancesInputTypeDef](./type_defs.md#listdeploymentinstancesinputtypedef).
+[ListDeploymentInstancesInputRequestTypeDef](./type_defs.md#listdeploymentinstancesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -933,7 +945,7 @@ Keyword-only arguments:
   `List`\[[InstanceTypeType](./literals.md#instancetypetype)\]
 
 Returns
-[ListDeploymentInstancesOutputResponseTypeDef](./type_defs.md#listdeploymentinstancesoutputresponsetypedef).
+[ListDeploymentInstancesOutputTypeDef](./type_defs.md#listdeploymentinstancesoutputtypedef).
 
 ### list_deployment_targets
 
@@ -946,7 +958,7 @@ Boto3 documentation:
 [CodeDeploy.Client.list_deployment_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_targets)
 
 Arguments mapping described in
-[ListDeploymentTargetsInputTypeDef](./type_defs.md#listdeploymenttargetsinputtypedef).
+[ListDeploymentTargetsInputRequestTypeDef](./type_defs.md#listdeploymenttargetsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -957,7 +969,7 @@ Keyword-only arguments:
   `List`\[`str`\]\]
 
 Returns
-[ListDeploymentTargetsOutputResponseTypeDef](./type_defs.md#listdeploymenttargetsoutputresponsetypedef).
+[ListDeploymentTargetsOutputTypeDef](./type_defs.md#listdeploymenttargetsoutputtypedef).
 
 ### list_deployments
 
@@ -970,7 +982,7 @@ Boto3 documentation:
 [CodeDeploy.Client.list_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployments)
 
 Arguments mapping described in
-[ListDeploymentsInputTypeDef](./type_defs.md#listdeploymentsinputtypedef).
+[ListDeploymentsInputRequestTypeDef](./type_defs.md#listdeploymentsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -983,7 +995,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListDeploymentsOutputResponseTypeDef](./type_defs.md#listdeploymentsoutputresponsetypedef).
+[ListDeploymentsOutputTypeDef](./type_defs.md#listdeploymentsoutputtypedef).
 
 ### list_git_hub_account_token_names
 
@@ -996,14 +1008,14 @@ Boto3 documentation:
 [CodeDeploy.Client.list_git_hub_account_token_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_git_hub_account_token_names)
 
 Arguments mapping described in
-[ListGitHubAccountTokenNamesInputTypeDef](./type_defs.md#listgithubaccounttokennamesinputtypedef).
+[ListGitHubAccountTokenNamesInputRequestTypeDef](./type_defs.md#listgithubaccounttokennamesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `nextToken`: `str`
 
 Returns
-[ListGitHubAccountTokenNamesOutputResponseTypeDef](./type_defs.md#listgithubaccounttokennamesoutputresponsetypedef).
+[ListGitHubAccountTokenNamesOutputTypeDef](./type_defs.md#listgithubaccounttokennamesoutputtypedef).
 
 ### list_on_premises_instances
 
@@ -1016,7 +1028,7 @@ Boto3 documentation:
 [CodeDeploy.Client.list_on_premises_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_on_premises_instances)
 
 Arguments mapping described in
-[ListOnPremisesInstancesInputTypeDef](./type_defs.md#listonpremisesinstancesinputtypedef).
+[ListOnPremisesInstancesInputRequestTypeDef](./type_defs.md#listonpremisesinstancesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1026,7 +1038,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListOnPremisesInstancesOutputResponseTypeDef](./type_defs.md#listonpremisesinstancesoutputresponsetypedef).
+[ListOnPremisesInstancesOutputTypeDef](./type_defs.md#listonpremisesinstancesoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -1040,7 +1052,7 @@ Boto3 documentation:
 [CodeDeploy.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceInputTypeDef](./type_defs.md#listtagsforresourceinputtypedef).
+[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1048,7 +1060,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef).
+[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
 ### put_lifecycle_event_hook_execution_status
 
@@ -1061,7 +1073,7 @@ Boto3 documentation:
 [CodeDeploy.Client.put_lifecycle_event_hook_execution_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.put_lifecycle_event_hook_execution_status)
 
 Arguments mapping described in
-[PutLifecycleEventHookExecutionStatusInputTypeDef](./type_defs.md#putlifecycleeventhookexecutionstatusinputtypedef).
+[PutLifecycleEventHookExecutionStatusInputRequestTypeDef](./type_defs.md#putlifecycleeventhookexecutionstatusinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1070,7 +1082,7 @@ Keyword-only arguments:
 - `status`: [LifecycleEventStatusType](./literals.md#lifecycleeventstatustype)
 
 Returns
-[PutLifecycleEventHookExecutionStatusOutputResponseTypeDef](./type_defs.md#putlifecycleeventhookexecutionstatusoutputresponsetypedef).
+[PutLifecycleEventHookExecutionStatusOutputTypeDef](./type_defs.md#putlifecycleeventhookexecutionstatusoutputtypedef).
 
 ### register_application_revision
 
@@ -1083,7 +1095,7 @@ Boto3 documentation:
 [CodeDeploy.Client.register_application_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.register_application_revision)
 
 Arguments mapping described in
-[RegisterApplicationRevisionInputTypeDef](./type_defs.md#registerapplicationrevisioninputtypedef).
+[RegisterApplicationRevisionInputRequestTypeDef](./type_defs.md#registerapplicationrevisioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1103,7 +1115,7 @@ Boto3 documentation:
 [CodeDeploy.Client.register_on_premises_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.register_on_premises_instance)
 
 Arguments mapping described in
-[RegisterOnPremisesInstanceInputTypeDef](./type_defs.md#registeronpremisesinstanceinputtypedef).
+[RegisterOnPremisesInstanceInputRequestTypeDef](./type_defs.md#registeronpremisesinstanceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1122,7 +1134,7 @@ Boto3 documentation:
 [CodeDeploy.Client.remove_tags_from_on_premises_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.remove_tags_from_on_premises_instances)
 
 Arguments mapping described in
-[RemoveTagsFromOnPremisesInstancesInputTypeDef](./type_defs.md#removetagsfromonpremisesinstancesinputtypedef).
+[RemoveTagsFromOnPremisesInstancesInputRequestTypeDef](./type_defs.md#removetagsfromonpremisesinstancesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1141,7 +1153,7 @@ Boto3 documentation:
 [CodeDeploy.Client.skip_wait_time_for_instance_termination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.skip_wait_time_for_instance_termination)
 
 Arguments mapping described in
-[SkipWaitTimeForInstanceTerminationInputTypeDef](./type_defs.md#skipwaittimeforinstanceterminationinputtypedef).
+[SkipWaitTimeForInstanceTerminationInputRequestTypeDef](./type_defs.md#skipwaittimeforinstanceterminationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1157,7 +1169,7 @@ Boto3 documentation:
 [CodeDeploy.Client.stop_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.stop_deployment)
 
 Arguments mapping described in
-[StopDeploymentInputTypeDef](./type_defs.md#stopdeploymentinputtypedef).
+[StopDeploymentInputRequestTypeDef](./type_defs.md#stopdeploymentinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1165,7 +1177,7 @@ Keyword-only arguments:
 - `autoRollbackEnabled`: `bool`
 
 Returns
-[StopDeploymentOutputResponseTypeDef](./type_defs.md#stopdeploymentoutputresponsetypedef).
+[StopDeploymentOutputTypeDef](./type_defs.md#stopdeploymentoutputtypedef).
 
 ### tag_resource
 
@@ -1178,7 +1190,7 @@ Boto3 documentation:
 [CodeDeploy.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceInputTypeDef](./type_defs.md#tagresourceinputtypedef).
+[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1197,7 +1209,7 @@ Boto3 documentation:
 [CodeDeploy.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceInputTypeDef](./type_defs.md#untagresourceinputtypedef).
+[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1216,7 +1228,7 @@ Boto3 documentation:
 [CodeDeploy.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.update_application)
 
 Arguments mapping described in
-[UpdateApplicationInputTypeDef](./type_defs.md#updateapplicationinputtypedef).
+[UpdateApplicationInputRequestTypeDef](./type_defs.md#updateapplicationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1234,7 +1246,7 @@ Boto3 documentation:
 [CodeDeploy.Client.update_deployment_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.update_deployment_group)
 
 Arguments mapping described in
-[UpdateDeploymentGroupInputTypeDef](./type_defs.md#updatedeploymentgroupinputtypedef).
+[UpdateDeploymentGroupInputRequestTypeDef](./type_defs.md#updatedeploymentgroupinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1269,7 +1281,7 @@ Keyword-only arguments:
   [OnPremisesTagSetTypeDef](./type_defs.md#onpremisestagsettypedef)
 
 Returns
-[UpdateDeploymentGroupOutputResponseTypeDef](./type_defs.md#updatedeploymentgroupoutputresponsetypedef).
+[UpdateDeploymentGroupOutputTypeDef](./type_defs.md#updatedeploymentgroupoutputtypedef).
 
 ### get_paginator
 

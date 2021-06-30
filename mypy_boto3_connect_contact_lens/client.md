@@ -11,6 +11,7 @@ type annotations stubs module
   - [ConnectContactLensClient](#connectcontactlensclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [generate_presigned_url](#generate_presigned_url)
     - [list_realtime_contact_analysis_segments](#list_realtime_contact_analysis_segments)
@@ -53,6 +54,17 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 
 ## Methods
+
+### exceptions
+
+ConnectContactLensClient exceptions.
+
+Type annotations for `boto3.client("connect-contact-lens").exceptions` method.
+
+Boto3 documentation:
+[ConnectContactLens.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
 
 ### can_paginate
 
@@ -101,7 +113,7 @@ Boto3 documentation:
 [ConnectContactLens.Client.list_realtime_contact_analysis_segments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client.list_realtime_contact_analysis_segments)
 
 Arguments mapping described in
-[ListRealtimeContactAnalysisSegmentsRequestTypeDef](./type_defs.md#listrealtimecontactanalysissegmentsrequesttypedef).
+[ListRealtimeContactAnalysisSegmentsRequestRequestTypeDef](./type_defs.md#listrealtimecontactanalysissegmentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -111,4 +123,4 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListRealtimeContactAnalysisSegmentsResponseResponseTypeDef](./type_defs.md#listrealtimecontactanalysissegmentsresponseresponsetypedef).
+[ListRealtimeContactAnalysisSegmentsResponseTypeDef](./type_defs.md#listrealtimecontactanalysissegmentsresponsetypedef).

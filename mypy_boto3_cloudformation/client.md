@@ -11,6 +11,7 @@ type annotations stubs module
   - [CloudFormationClient](#cloudformationclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [activate_type](#activate_type)
     - [batch_describe_type_configurations](#batch_describe_type_configurations)
     - [can_paginate](#can_paginate)
@@ -134,6 +135,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+CloudFormationClient exceptions.
+
+Type annotations for `boto3.client("cloudformation").exceptions` method.
+
+Boto3 documentation:
+[CloudFormation.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### activate_type
 
 Activates a public third-party extension, making it available for use in stack
@@ -145,7 +157,7 @@ Boto3 documentation:
 [CloudFormation.Client.activate_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.activate_type)
 
 Arguments mapping described in
-[ActivateTypeInputTypeDef](./type_defs.md#activatetypeinputtypedef).
+[ActivateTypeInputRequestTypeDef](./type_defs.md#activatetypeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -160,8 +172,7 @@ Keyword-only arguments:
 - `VersionBump`: [VersionBumpType](./literals.md#versionbumptype)
 - `MajorVersion`: `int`
 
-Returns
-[ActivateTypeOutputResponseTypeDef](./type_defs.md#activatetypeoutputresponsetypedef).
+Returns [ActivateTypeOutputTypeDef](./type_defs.md#activatetypeoutputtypedef).
 
 ### batch_describe_type_configurations
 
@@ -175,7 +186,7 @@ Boto3 documentation:
 [CloudFormation.Client.batch_describe_type_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.batch_describe_type_configurations)
 
 Arguments mapping described in
-[BatchDescribeTypeConfigurationsInputTypeDef](./type_defs.md#batchdescribetypeconfigurationsinputtypedef).
+[BatchDescribeTypeConfigurationsInputRequestTypeDef](./type_defs.md#batchdescribetypeconfigurationsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -184,7 +195,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchDescribeTypeConfigurationsOutputResponseTypeDef](./type_defs.md#batchdescribetypeconfigurationsoutputresponsetypedef).
+[BatchDescribeTypeConfigurationsOutputTypeDef](./type_defs.md#batchdescribetypeconfigurationsoutputtypedef).
 
 ### can_paginate
 
@@ -212,7 +223,7 @@ Boto3 documentation:
 [CloudFormation.Client.cancel_update_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.cancel_update_stack)
 
 Arguments mapping described in
-[CancelUpdateStackInputTypeDef](./type_defs.md#cancelupdatestackinputtypedef).
+[CancelUpdateStackInputRequestTypeDef](./type_defs.md#cancelupdatestackinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -231,7 +242,7 @@ Boto3 documentation:
 [CloudFormation.Client.continue_update_rollback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.continue_update_rollback)
 
 Arguments mapping described in
-[ContinueUpdateRollbackInputTypeDef](./type_defs.md#continueupdaterollbackinputtypedef).
+[ContinueUpdateRollbackInputRequestTypeDef](./type_defs.md#continueupdaterollbackinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -252,7 +263,7 @@ Boto3 documentation:
 [CloudFormation.Client.create_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_change_set)
 
 Arguments mapping described in
-[CreateChangeSetInputTypeDef](./type_defs.md#createchangesetinputtypedef).
+[CreateChangeSetInputRequestTypeDef](./type_defs.md#createchangesetinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -277,7 +288,7 @@ Keyword-only arguments:
 - `IncludeNestedStacks`: `bool`
 
 Returns
-[CreateChangeSetOutputResponseTypeDef](./type_defs.md#createchangesetoutputresponsetypedef).
+[CreateChangeSetOutputTypeDef](./type_defs.md#createchangesetoutputtypedef).
 
 ### create_stack
 
@@ -289,7 +300,7 @@ Boto3 documentation:
 [CloudFormation.Client.create_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack)
 
 Arguments mapping described in
-[CreateStackInputTypeDef](./type_defs.md#createstackinputtypedef).
+[CreateStackInputRequestTypeDef](./type_defs.md#createstackinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -312,8 +323,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 - `EnableTerminationProtection`: `bool`
 
-Returns
-[CreateStackOutputResponseTypeDef](./type_defs.md#createstackoutputresponsetypedef).
+Returns [CreateStackOutputTypeDef](./type_defs.md#createstackoutputtypedef).
 
 ### create_stack_instances
 
@@ -327,7 +337,7 @@ Boto3 documentation:
 [CloudFormation.Client.create_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack_instances)
 
 Arguments mapping described in
-[CreateStackInstancesInputTypeDef](./type_defs.md#createstackinstancesinputtypedef).
+[CreateStackInstancesInputRequestTypeDef](./type_defs.md#createstackinstancesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -344,7 +354,7 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[CreateStackInstancesOutputResponseTypeDef](./type_defs.md#createstackinstancesoutputresponsetypedef).
+[CreateStackInstancesOutputTypeDef](./type_defs.md#createstackinstancesoutputtypedef).
 
 ### create_stack_set
 
@@ -356,7 +366,7 @@ Boto3 documentation:
 [CloudFormation.Client.create_stack_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack_set)
 
 Arguments mapping described in
-[CreateStackSetInputTypeDef](./type_defs.md#createstacksetinputtypedef).
+[CreateStackSetInputRequestTypeDef](./type_defs.md#createstacksetinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -376,7 +386,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[CreateStackSetOutputResponseTypeDef](./type_defs.md#createstacksetoutputresponsetypedef).
+[CreateStackSetOutputTypeDef](./type_defs.md#createstacksetoutputtypedef).
 
 ### deactivate_type
 
@@ -389,7 +399,7 @@ Boto3 documentation:
 [CloudFormation.Client.deactivate_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.deactivate_type)
 
 Arguments mapping described in
-[DeactivateTypeInputTypeDef](./type_defs.md#deactivatetypeinputtypedef).
+[DeactivateTypeInputRequestTypeDef](./type_defs.md#deactivatetypeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -409,7 +419,7 @@ Boto3 documentation:
 [CloudFormation.Client.delete_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_change_set)
 
 Arguments mapping described in
-[DeleteChangeSetInputTypeDef](./type_defs.md#deletechangesetinputtypedef).
+[DeleteChangeSetInputRequestTypeDef](./type_defs.md#deletechangesetinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -428,7 +438,7 @@ Boto3 documentation:
 [CloudFormation.Client.delete_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack)
 
 Arguments mapping described in
-[DeleteStackInputTypeDef](./type_defs.md#deletestackinputtypedef).
+[DeleteStackInputRequestTypeDef](./type_defs.md#deletestackinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -448,7 +458,7 @@ Boto3 documentation:
 [CloudFormation.Client.delete_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack_instances)
 
 Arguments mapping described in
-[DeleteStackInstancesInputTypeDef](./type_defs.md#deletestackinstancesinputtypedef).
+[DeleteStackInstancesInputRequestTypeDef](./type_defs.md#deletestackinstancesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -464,7 +474,7 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[DeleteStackInstancesOutputResponseTypeDef](./type_defs.md#deletestackinstancesoutputresponsetypedef).
+[DeleteStackInstancesOutputTypeDef](./type_defs.md#deletestackinstancesoutputtypedef).
 
 ### delete_stack_set
 
@@ -476,7 +486,7 @@ Boto3 documentation:
 [CloudFormation.Client.delete_stack_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack_set)
 
 Arguments mapping described in
-[DeleteStackSetInputTypeDef](./type_defs.md#deletestacksetinputtypedef).
+[DeleteStackSetInputRequestTypeDef](./type_defs.md#deletestacksetinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -496,7 +506,7 @@ Boto3 documentation:
 [CloudFormation.Client.deregister_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.deregister_type)
 
 Arguments mapping described in
-[DeregisterTypeInputTypeDef](./type_defs.md#deregistertypeinputtypedef).
+[DeregisterTypeInputRequestTypeDef](./type_defs.md#deregistertypeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -519,14 +529,14 @@ Boto3 documentation:
 [CloudFormation.Client.describe_account_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_account_limits)
 
 Arguments mapping described in
-[DescribeAccountLimitsInputTypeDef](./type_defs.md#describeaccountlimitsinputtypedef).
+[DescribeAccountLimitsInputRequestTypeDef](./type_defs.md#describeaccountlimitsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
 Returns
-[DescribeAccountLimitsOutputResponseTypeDef](./type_defs.md#describeaccountlimitsoutputresponsetypedef).
+[DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef).
 
 ### describe_change_set
 
@@ -540,7 +550,7 @@ Boto3 documentation:
 [CloudFormation.Client.describe_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_change_set)
 
 Arguments mapping described in
-[DescribeChangeSetInputTypeDef](./type_defs.md#describechangesetinputtypedef).
+[DescribeChangeSetInputRequestTypeDef](./type_defs.md#describechangesetinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -549,7 +559,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeChangeSetOutputResponseTypeDef](./type_defs.md#describechangesetoutputresponsetypedef).
+[DescribeChangeSetOutputTypeDef](./type_defs.md#describechangesetoutputtypedef).
 
 ### describe_publisher
 
@@ -562,14 +572,14 @@ Boto3 documentation:
 [CloudFormation.Client.describe_publisher](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_publisher)
 
 Arguments mapping described in
-[DescribePublisherInputTypeDef](./type_defs.md#describepublisherinputtypedef).
+[DescribePublisherInputRequestTypeDef](./type_defs.md#describepublisherinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `PublisherId`: `str`
 
 Returns
-[DescribePublisherOutputResponseTypeDef](./type_defs.md#describepublisheroutputresponsetypedef).
+[DescribePublisherOutputTypeDef](./type_defs.md#describepublisheroutputtypedef).
 
 ### describe_stack_drift_detection_status
 
@@ -582,14 +592,14 @@ Boto3 documentation:
 [CloudFormation.Client.describe_stack_drift_detection_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_drift_detection_status)
 
 Arguments mapping described in
-[DescribeStackDriftDetectionStatusInputTypeDef](./type_defs.md#describestackdriftdetectionstatusinputtypedef).
+[DescribeStackDriftDetectionStatusInputRequestTypeDef](./type_defs.md#describestackdriftdetectionstatusinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `StackDriftDetectionId`: `str` *(required)*
 
 Returns
-[DescribeStackDriftDetectionStatusOutputResponseTypeDef](./type_defs.md#describestackdriftdetectionstatusoutputresponsetypedef).
+[DescribeStackDriftDetectionStatusOutputTypeDef](./type_defs.md#describestackdriftdetectionstatusoutputtypedef).
 
 ### describe_stack_events
 
@@ -603,7 +613,7 @@ Boto3 documentation:
 [CloudFormation.Client.describe_stack_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_events)
 
 Arguments mapping described in
-[DescribeStackEventsInputTypeDef](./type_defs.md#describestackeventsinputtypedef).
+[DescribeStackEventsInputRequestTypeDef](./type_defs.md#describestackeventsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -611,7 +621,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeStackEventsOutputResponseTypeDef](./type_defs.md#describestackeventsoutputresponsetypedef).
+[DescribeStackEventsOutputTypeDef](./type_defs.md#describestackeventsoutputtypedef).
 
 ### describe_stack_instance
 
@@ -625,7 +635,7 @@ Boto3 documentation:
 [CloudFormation.Client.describe_stack_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_instance)
 
 Arguments mapping described in
-[DescribeStackInstanceInputTypeDef](./type_defs.md#describestackinstanceinputtypedef).
+[DescribeStackInstanceInputRequestTypeDef](./type_defs.md#describestackinstanceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -635,7 +645,7 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[DescribeStackInstanceOutputResponseTypeDef](./type_defs.md#describestackinstanceoutputresponsetypedef).
+[DescribeStackInstanceOutputTypeDef](./type_defs.md#describestackinstanceoutputtypedef).
 
 ### describe_stack_resource
 
@@ -648,7 +658,7 @@ Boto3 documentation:
 [CloudFormation.Client.describe_stack_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resource)
 
 Arguments mapping described in
-[DescribeStackResourceInputTypeDef](./type_defs.md#describestackresourceinputtypedef).
+[DescribeStackResourceInputRequestTypeDef](./type_defs.md#describestackresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -656,7 +666,7 @@ Keyword-only arguments:
 - `LogicalResourceId`: `str` *(required)*
 
 Returns
-[DescribeStackResourceOutputResponseTypeDef](./type_defs.md#describestackresourceoutputresponsetypedef).
+[DescribeStackResourceOutputTypeDef](./type_defs.md#describestackresourceoutputtypedef).
 
 ### describe_stack_resource_drifts
 
@@ -670,7 +680,7 @@ Boto3 documentation:
 [CloudFormation.Client.describe_stack_resource_drifts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resource_drifts)
 
 Arguments mapping described in
-[DescribeStackResourceDriftsInputTypeDef](./type_defs.md#describestackresourcedriftsinputtypedef).
+[DescribeStackResourceDriftsInputRequestTypeDef](./type_defs.md#describestackresourcedriftsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -681,7 +691,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeStackResourceDriftsOutputResponseTypeDef](./type_defs.md#describestackresourcedriftsoutputresponsetypedef).
+[DescribeStackResourceDriftsOutputTypeDef](./type_defs.md#describestackresourcedriftsoutputtypedef).
 
 ### describe_stack_resources
 
@@ -694,7 +704,7 @@ Boto3 documentation:
 [CloudFormation.Client.describe_stack_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resources)
 
 Arguments mapping described in
-[DescribeStackResourcesInputTypeDef](./type_defs.md#describestackresourcesinputtypedef).
+[DescribeStackResourcesInputRequestTypeDef](./type_defs.md#describestackresourcesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -703,7 +713,7 @@ Keyword-only arguments:
 - `PhysicalResourceId`: `str`
 
 Returns
-[DescribeStackResourcesOutputResponseTypeDef](./type_defs.md#describestackresourcesoutputresponsetypedef).
+[DescribeStackResourcesOutputTypeDef](./type_defs.md#describestackresourcesoutputtypedef).
 
 ### describe_stack_set
 
@@ -716,7 +726,7 @@ Boto3 documentation:
 [CloudFormation.Client.describe_stack_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_set)
 
 Arguments mapping described in
-[DescribeStackSetInputTypeDef](./type_defs.md#describestacksetinputtypedef).
+[DescribeStackSetInputRequestTypeDef](./type_defs.md#describestacksetinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -724,7 +734,7 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[DescribeStackSetOutputResponseTypeDef](./type_defs.md#describestacksetoutputresponsetypedef).
+[DescribeStackSetOutputTypeDef](./type_defs.md#describestacksetoutputtypedef).
 
 ### describe_stack_set_operation
 
@@ -737,7 +747,7 @@ Boto3 documentation:
 [CloudFormation.Client.describe_stack_set_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_set_operation)
 
 Arguments mapping described in
-[DescribeStackSetOperationInputTypeDef](./type_defs.md#describestacksetoperationinputtypedef).
+[DescribeStackSetOperationInputRequestTypeDef](./type_defs.md#describestacksetoperationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -746,7 +756,7 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[DescribeStackSetOperationOutputResponseTypeDef](./type_defs.md#describestacksetoperationoutputresponsetypedef).
+[DescribeStackSetOperationOutputTypeDef](./type_defs.md#describestacksetoperationoutputtypedef).
 
 ### describe_stacks
 
@@ -759,7 +769,7 @@ Boto3 documentation:
 [CloudFormation.Client.describe_stacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stacks)
 
 Arguments mapping described in
-[DescribeStacksInputTypeDef](./type_defs.md#describestacksinputtypedef).
+[DescribeStacksInputRequestTypeDef](./type_defs.md#describestacksinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -767,7 +777,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeStacksOutputResponseTypeDef](./type_defs.md#describestacksoutputresponsetypedef).
+[DescribeStacksOutputTypeDef](./type_defs.md#describestacksoutputtypedef).
 
 ### describe_type
 
@@ -779,7 +789,7 @@ Boto3 documentation:
 [CloudFormation.Client.describe_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_type)
 
 Arguments mapping described in
-[DescribeTypeInputTypeDef](./type_defs.md#describetypeinputtypedef).
+[DescribeTypeInputRequestTypeDef](./type_defs.md#describetypeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -790,8 +800,7 @@ Keyword-only arguments:
 - `PublisherId`: `str`
 - `PublicVersionNumber`: `str`
 
-Returns
-[DescribeTypeOutputResponseTypeDef](./type_defs.md#describetypeoutputresponsetypedef).
+Returns [DescribeTypeOutputTypeDef](./type_defs.md#describetypeoutputtypedef).
 
 ### describe_type_registration
 
@@ -805,14 +814,14 @@ Boto3 documentation:
 [CloudFormation.Client.describe_type_registration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_type_registration)
 
 Arguments mapping described in
-[DescribeTypeRegistrationInputTypeDef](./type_defs.md#describetyperegistrationinputtypedef).
+[DescribeTypeRegistrationInputRequestTypeDef](./type_defs.md#describetyperegistrationinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `RegistrationToken`: `str` *(required)*
 
 Returns
-[DescribeTypeRegistrationOutputResponseTypeDef](./type_defs.md#describetyperegistrationoutputresponsetypedef).
+[DescribeTypeRegistrationOutputTypeDef](./type_defs.md#describetyperegistrationoutputtypedef).
 
 ### detect_stack_drift
 
@@ -827,7 +836,7 @@ Boto3 documentation:
 [CloudFormation.Client.detect_stack_drift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_drift)
 
 Arguments mapping described in
-[DetectStackDriftInputTypeDef](./type_defs.md#detectstackdriftinputtypedef).
+[DetectStackDriftInputRequestTypeDef](./type_defs.md#detectstackdriftinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -835,7 +844,7 @@ Keyword-only arguments:
 - `LogicalResourceIds`: `List`\[`str`\]
 
 Returns
-[DetectStackDriftOutputResponseTypeDef](./type_defs.md#detectstackdriftoutputresponsetypedef).
+[DetectStackDriftOutputTypeDef](./type_defs.md#detectstackdriftoutputtypedef).
 
 ### detect_stack_resource_drift
 
@@ -850,7 +859,7 @@ Boto3 documentation:
 [CloudFormation.Client.detect_stack_resource_drift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_resource_drift)
 
 Arguments mapping described in
-[DetectStackResourceDriftInputTypeDef](./type_defs.md#detectstackresourcedriftinputtypedef).
+[DetectStackResourceDriftInputRequestTypeDef](./type_defs.md#detectstackresourcedriftinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -858,7 +867,7 @@ Keyword-only arguments:
 - `LogicalResourceId`: `str` *(required)*
 
 Returns
-[DetectStackResourceDriftOutputResponseTypeDef](./type_defs.md#detectstackresourcedriftoutputresponsetypedef).
+[DetectStackResourceDriftOutputTypeDef](./type_defs.md#detectstackresourcedriftoutputtypedef).
 
 ### detect_stack_set_drift
 
@@ -871,7 +880,7 @@ Boto3 documentation:
 [CloudFormation.Client.detect_stack_set_drift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_set_drift)
 
 Arguments mapping described in
-[DetectStackSetDriftInputTypeDef](./type_defs.md#detectstacksetdriftinputtypedef).
+[DetectStackSetDriftInputRequestTypeDef](./type_defs.md#detectstacksetdriftinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -882,7 +891,7 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[DetectStackSetDriftOutputResponseTypeDef](./type_defs.md#detectstacksetdriftoutputresponsetypedef).
+[DetectStackSetDriftOutputTypeDef](./type_defs.md#detectstacksetdriftoutputtypedef).
 
 ### estimate_template_cost
 
@@ -895,7 +904,7 @@ Boto3 documentation:
 [CloudFormation.Client.estimate_template_cost](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.estimate_template_cost)
 
 Arguments mapping described in
-[EstimateTemplateCostInputTypeDef](./type_defs.md#estimatetemplatecostinputtypedef).
+[EstimateTemplateCostInputRequestTypeDef](./type_defs.md#estimatetemplatecostinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -904,7 +913,7 @@ Keyword-only arguments:
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 Returns
-[EstimateTemplateCostOutputResponseTypeDef](./type_defs.md#estimatetemplatecostoutputresponsetypedef).
+[EstimateTemplateCostOutputTypeDef](./type_defs.md#estimatetemplatecostoutputtypedef).
 
 ### execute_change_set
 
@@ -918,7 +927,7 @@ Boto3 documentation:
 [CloudFormation.Client.execute_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.execute_change_set)
 
 Arguments mapping described in
-[ExecuteChangeSetInputTypeDef](./type_defs.md#executechangesetinputtypedef).
+[ExecuteChangeSetInputRequestTypeDef](./type_defs.md#executechangesetinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -957,14 +966,14 @@ Boto3 documentation:
 [CloudFormation.Client.get_stack_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_stack_policy)
 
 Arguments mapping described in
-[GetStackPolicyInputTypeDef](./type_defs.md#getstackpolicyinputtypedef).
+[GetStackPolicyInputRequestTypeDef](./type_defs.md#getstackpolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `StackName`: `str` *(required)*
 
 Returns
-[GetStackPolicyOutputResponseTypeDef](./type_defs.md#getstackpolicyoutputresponsetypedef).
+[GetStackPolicyOutputTypeDef](./type_defs.md#getstackpolicyoutputtypedef).
 
 ### get_template
 
@@ -976,7 +985,7 @@ Boto3 documentation:
 [CloudFormation.Client.get_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_template)
 
 Arguments mapping described in
-[GetTemplateInputTypeDef](./type_defs.md#gettemplateinputtypedef).
+[GetTemplateInputRequestTypeDef](./type_defs.md#gettemplateinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -984,8 +993,7 @@ Keyword-only arguments:
 - `ChangeSetName`: `str`
 - `TemplateStage`: [TemplateStageType](./literals.md#templatestagetype)
 
-Returns
-[GetTemplateOutputResponseTypeDef](./type_defs.md#gettemplateoutputresponsetypedef).
+Returns [GetTemplateOutputTypeDef](./type_defs.md#gettemplateoutputtypedef).
 
 ### get_template_summary
 
@@ -998,7 +1006,7 @@ Boto3 documentation:
 [CloudFormation.Client.get_template_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_template_summary)
 
 Arguments mapping described in
-[GetTemplateSummaryInputTypeDef](./type_defs.md#gettemplatesummaryinputtypedef).
+[GetTemplateSummaryInputRequestTypeDef](./type_defs.md#gettemplatesummaryinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1009,7 +1017,7 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[GetTemplateSummaryOutputResponseTypeDef](./type_defs.md#gettemplatesummaryoutputresponsetypedef).
+[GetTemplateSummaryOutputTypeDef](./type_defs.md#gettemplatesummaryoutputtypedef).
 
 ### list_change_sets
 
@@ -1021,7 +1029,7 @@ Boto3 documentation:
 [CloudFormation.Client.list_change_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_change_sets)
 
 Arguments mapping described in
-[ListChangeSetsInputTypeDef](./type_defs.md#listchangesetsinputtypedef).
+[ListChangeSetsInputRequestTypeDef](./type_defs.md#listchangesetsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1029,7 +1037,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListChangeSetsOutputResponseTypeDef](./type_defs.md#listchangesetsoutputresponsetypedef).
+[ListChangeSetsOutputTypeDef](./type_defs.md#listchangesetsoutputtypedef).
 
 ### list_exports
 
@@ -1041,14 +1049,13 @@ Boto3 documentation:
 [CloudFormation.Client.list_exports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_exports)
 
 Arguments mapping described in
-[ListExportsInputTypeDef](./type_defs.md#listexportsinputtypedef).
+[ListExportsInputRequestTypeDef](./type_defs.md#listexportsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
-Returns
-[ListExportsOutputResponseTypeDef](./type_defs.md#listexportsoutputresponsetypedef).
+Returns [ListExportsOutputTypeDef](./type_defs.md#listexportsoutputtypedef).
 
 ### list_imports
 
@@ -1060,15 +1067,14 @@ Boto3 documentation:
 [CloudFormation.Client.list_imports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_imports)
 
 Arguments mapping described in
-[ListImportsInputTypeDef](./type_defs.md#listimportsinputtypedef).
+[ListImportsInputRequestTypeDef](./type_defs.md#listimportsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ExportName`: `str` *(required)*
 - `NextToken`: `str`
 
-Returns
-[ListImportsOutputResponseTypeDef](./type_defs.md#listimportsoutputresponsetypedef).
+Returns [ListImportsOutputTypeDef](./type_defs.md#listimportsoutputtypedef).
 
 ### list_stack_instances
 
@@ -1082,7 +1088,7 @@ Boto3 documentation:
 [CloudFormation.Client.list_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_instances)
 
 Arguments mapping described in
-[ListStackInstancesInputTypeDef](./type_defs.md#liststackinstancesinputtypedef).
+[ListStackInstancesInputRequestTypeDef](./type_defs.md#liststackinstancesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1096,7 +1102,7 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[ListStackInstancesOutputResponseTypeDef](./type_defs.md#liststackinstancesoutputresponsetypedef).
+[ListStackInstancesOutputTypeDef](./type_defs.md#liststackinstancesoutputtypedef).
 
 ### list_stack_resources
 
@@ -1109,7 +1115,7 @@ Boto3 documentation:
 [CloudFormation.Client.list_stack_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_resources)
 
 Arguments mapping described in
-[ListStackResourcesInputTypeDef](./type_defs.md#liststackresourcesinputtypedef).
+[ListStackResourcesInputRequestTypeDef](./type_defs.md#liststackresourcesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1117,7 +1123,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListStackResourcesOutputResponseTypeDef](./type_defs.md#liststackresourcesoutputresponsetypedef).
+[ListStackResourcesOutputTypeDef](./type_defs.md#liststackresourcesoutputtypedef).
 
 ### list_stack_set_operation_results
 
@@ -1130,7 +1136,7 @@ Boto3 documentation:
 [CloudFormation.Client.list_stack_set_operation_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_set_operation_results)
 
 Arguments mapping described in
-[ListStackSetOperationResultsInputTypeDef](./type_defs.md#liststacksetoperationresultsinputtypedef).
+[ListStackSetOperationResultsInputRequestTypeDef](./type_defs.md#liststacksetoperationresultsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1141,7 +1147,7 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[ListStackSetOperationResultsOutputResponseTypeDef](./type_defs.md#liststacksetoperationresultsoutputresponsetypedef).
+[ListStackSetOperationResultsOutputTypeDef](./type_defs.md#liststacksetoperationresultsoutputtypedef).
 
 ### list_stack_set_operations
 
@@ -1154,7 +1160,7 @@ Boto3 documentation:
 [CloudFormation.Client.list_stack_set_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_set_operations)
 
 Arguments mapping described in
-[ListStackSetOperationsInputTypeDef](./type_defs.md#liststacksetoperationsinputtypedef).
+[ListStackSetOperationsInputRequestTypeDef](./type_defs.md#liststacksetoperationsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1164,7 +1170,7 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[ListStackSetOperationsOutputResponseTypeDef](./type_defs.md#liststacksetoperationsoutputresponsetypedef).
+[ListStackSetOperationsOutputTypeDef](./type_defs.md#liststacksetoperationsoutputtypedef).
 
 ### list_stack_sets
 
@@ -1176,7 +1182,7 @@ Boto3 documentation:
 [CloudFormation.Client.list_stack_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_sets)
 
 Arguments mapping described in
-[ListStackSetsInputTypeDef](./type_defs.md#liststacksetsinputtypedef).
+[ListStackSetsInputRequestTypeDef](./type_defs.md#liststacksetsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1186,7 +1192,7 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[ListStackSetsOutputResponseTypeDef](./type_defs.md#liststacksetsoutputresponsetypedef).
+[ListStackSetsOutputTypeDef](./type_defs.md#liststacksetsoutputtypedef).
 
 ### list_stacks
 
@@ -1199,7 +1205,7 @@ Boto3 documentation:
 [CloudFormation.Client.list_stacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stacks)
 
 Arguments mapping described in
-[ListStacksInputTypeDef](./type_defs.md#liststacksinputtypedef).
+[ListStacksInputRequestTypeDef](./type_defs.md#liststacksinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1207,8 +1213,7 @@ Keyword-only arguments:
 - `StackStatusFilter`:
   `List`\[[StackStatusType](./literals.md#stackstatustype)\]
 
-Returns
-[ListStacksOutputResponseTypeDef](./type_defs.md#liststacksoutputresponsetypedef).
+Returns [ListStacksOutputTypeDef](./type_defs.md#liststacksoutputtypedef).
 
 ### list_type_registrations
 
@@ -1221,7 +1226,7 @@ Boto3 documentation:
 [CloudFormation.Client.list_type_registrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_type_registrations)
 
 Arguments mapping described in
-[ListTypeRegistrationsInputTypeDef](./type_defs.md#listtyperegistrationsinputtypedef).
+[ListTypeRegistrationsInputRequestTypeDef](./type_defs.md#listtyperegistrationsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1234,7 +1239,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTypeRegistrationsOutputResponseTypeDef](./type_defs.md#listtyperegistrationsoutputresponsetypedef).
+[ListTypeRegistrationsOutputTypeDef](./type_defs.md#listtyperegistrationsoutputtypedef).
 
 ### list_type_versions
 
@@ -1247,7 +1252,7 @@ Boto3 documentation:
 [CloudFormation.Client.list_type_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_type_versions)
 
 Arguments mapping described in
-[ListTypeVersionsInputTypeDef](./type_defs.md#listtypeversionsinputtypedef).
+[ListTypeVersionsInputRequestTypeDef](./type_defs.md#listtypeversionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1261,7 +1266,7 @@ Keyword-only arguments:
 - `PublisherId`: `str`
 
 Returns
-[ListTypeVersionsOutputResponseTypeDef](./type_defs.md#listtypeversionsoutputresponsetypedef).
+[ListTypeVersionsOutputTypeDef](./type_defs.md#listtypeversionsoutputtypedef).
 
 ### list_types
 
@@ -1274,7 +1279,7 @@ Boto3 documentation:
 [CloudFormation.Client.list_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_types)
 
 Arguments mapping described in
-[ListTypesInputTypeDef](./type_defs.md#listtypesinputtypedef).
+[ListTypesInputRequestTypeDef](./type_defs.md#listtypesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1288,8 +1293,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListTypesOutputResponseTypeDef](./type_defs.md#listtypesoutputresponsetypedef).
+Returns [ListTypesOutputTypeDef](./type_defs.md#listtypesoutputtypedef).
 
 ### publish_type
 
@@ -1302,7 +1306,7 @@ Boto3 documentation:
 [CloudFormation.Client.publish_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.publish_type)
 
 Arguments mapping described in
-[PublishTypeInputTypeDef](./type_defs.md#publishtypeinputtypedef).
+[PublishTypeInputRequestTypeDef](./type_defs.md#publishtypeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1311,8 +1315,7 @@ Keyword-only arguments:
 - `TypeName`: `str`
 - `PublicVersionNumber`: `str`
 
-Returns
-[PublishTypeOutputResponseTypeDef](./type_defs.md#publishtypeoutputresponsetypedef).
+Returns [PublishTypeOutputTypeDef](./type_defs.md#publishtypeoutputtypedef).
 
 ### record_handler_progress
 
@@ -1325,7 +1328,7 @@ Boto3 documentation:
 [CloudFormation.Client.record_handler_progress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.record_handler_progress)
 
 Arguments mapping described in
-[RecordHandlerProgressInputTypeDef](./type_defs.md#recordhandlerprogressinputtypedef).
+[RecordHandlerProgressInputRequestTypeDef](./type_defs.md#recordhandlerprogressinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1353,7 +1356,7 @@ Boto3 documentation:
 [CloudFormation.Client.register_publisher](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.register_publisher)
 
 Arguments mapping described in
-[RegisterPublisherInputTypeDef](./type_defs.md#registerpublisherinputtypedef).
+[RegisterPublisherInputRequestTypeDef](./type_defs.md#registerpublisherinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1361,7 +1364,7 @@ Keyword-only arguments:
 - `ConnectionArn`: `str`
 
 Returns
-[RegisterPublisherOutputResponseTypeDef](./type_defs.md#registerpublisheroutputresponsetypedef).
+[RegisterPublisherOutputTypeDef](./type_defs.md#registerpublisheroutputtypedef).
 
 ### register_type
 
@@ -1373,7 +1376,7 @@ Boto3 documentation:
 [CloudFormation.Client.register_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.register_type)
 
 Arguments mapping described in
-[RegisterTypeInputTypeDef](./type_defs.md#registertypeinputtypedef).
+[RegisterTypeInputRequestTypeDef](./type_defs.md#registertypeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1384,8 +1387,7 @@ Keyword-only arguments:
 - `ExecutionRoleArn`: `str`
 - `ClientRequestToken`: `str`
 
-Returns
-[RegisterTypeOutputResponseTypeDef](./type_defs.md#registertypeoutputresponsetypedef).
+Returns [RegisterTypeOutputTypeDef](./type_defs.md#registertypeoutputtypedef).
 
 ### set_stack_policy
 
@@ -1397,7 +1399,7 @@ Boto3 documentation:
 [CloudFormation.Client.set_stack_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.set_stack_policy)
 
 Arguments mapping described in
-[SetStackPolicyInputTypeDef](./type_defs.md#setstackpolicyinputtypedef).
+[SetStackPolicyInputRequestTypeDef](./type_defs.md#setstackpolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1417,7 +1419,7 @@ Boto3 documentation:
 [CloudFormation.Client.set_type_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.set_type_configuration)
 
 Arguments mapping described in
-[SetTypeConfigurationInputTypeDef](./type_defs.md#settypeconfigurationinputtypedef).
+[SetTypeConfigurationInputRequestTypeDef](./type_defs.md#settypeconfigurationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1428,7 +1430,7 @@ Keyword-only arguments:
 - `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
 
 Returns
-[SetTypeConfigurationOutputResponseTypeDef](./type_defs.md#settypeconfigurationoutputresponsetypedef).
+[SetTypeConfigurationOutputTypeDef](./type_defs.md#settypeconfigurationoutputtypedef).
 
 ### set_type_default_version
 
@@ -1441,7 +1443,7 @@ Boto3 documentation:
 [CloudFormation.Client.set_type_default_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.set_type_default_version)
 
 Arguments mapping described in
-[SetTypeDefaultVersionInputTypeDef](./type_defs.md#settypedefaultversioninputtypedef).
+[SetTypeDefaultVersionInputRequestTypeDef](./type_defs.md#settypedefaultversioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1462,7 +1464,7 @@ Boto3 documentation:
 [CloudFormation.Client.signal_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.signal_resource)
 
 Arguments mapping described in
-[SignalResourceInputTypeDef](./type_defs.md#signalresourceinputtypedef).
+[SignalResourceInputRequestTypeDef](./type_defs.md#signalresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1484,7 +1486,7 @@ Boto3 documentation:
 [CloudFormation.Client.stop_stack_set_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.stop_stack_set_operation)
 
 Arguments mapping described in
-[StopStackSetOperationInputTypeDef](./type_defs.md#stopstacksetoperationinputtypedef).
+[StopStackSetOperationInputRequestTypeDef](./type_defs.md#stopstacksetoperationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1505,7 +1507,7 @@ Boto3 documentation:
 [CloudFormation.Client.test_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.test_type)
 
 Arguments mapping described in
-[TestTypeInputTypeDef](./type_defs.md#testtypeinputtypedef).
+[TestTypeInputRequestTypeDef](./type_defs.md#testtypeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1515,8 +1517,7 @@ Keyword-only arguments:
 - `VersionId`: `str`
 - `LogDeliveryBucket`: `str`
 
-Returns
-[TestTypeOutputResponseTypeDef](./type_defs.md#testtypeoutputresponsetypedef).
+Returns [TestTypeOutputTypeDef](./type_defs.md#testtypeoutputtypedef).
 
 ### update_stack
 
@@ -1528,7 +1529,7 @@ Boto3 documentation:
 [CloudFormation.Client.update_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack)
 
 Arguments mapping described in
-[UpdateStackInputTypeDef](./type_defs.md#updatestackinputtypedef).
+[UpdateStackInputRequestTypeDef](./type_defs.md#updatestackinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1550,8 +1551,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 
-Returns
-[UpdateStackOutputResponseTypeDef](./type_defs.md#updatestackoutputresponsetypedef).
+Returns [UpdateStackOutputTypeDef](./type_defs.md#updatestackoutputtypedef).
 
 ### update_stack_instances
 
@@ -1565,7 +1565,7 @@ Boto3 documentation:
 [CloudFormation.Client.update_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack_instances)
 
 Arguments mapping described in
-[UpdateStackInstancesInputTypeDef](./type_defs.md#updatestackinstancesinputtypedef).
+[UpdateStackInstancesInputRequestTypeDef](./type_defs.md#updatestackinstancesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1582,7 +1582,7 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[UpdateStackInstancesOutputResponseTypeDef](./type_defs.md#updatestackinstancesoutputresponsetypedef).
+[UpdateStackInstancesOutputTypeDef](./type_defs.md#updatestackinstancesoutputtypedef).
 
 ### update_stack_set
 
@@ -1595,7 +1595,7 @@ Boto3 documentation:
 [CloudFormation.Client.update_stack_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack_set)
 
 Arguments mapping described in
-[UpdateStackSetInputTypeDef](./type_defs.md#updatestacksetinputtypedef).
+[UpdateStackSetInputRequestTypeDef](./type_defs.md#updatestacksetinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1622,7 +1622,7 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[UpdateStackSetOutputResponseTypeDef](./type_defs.md#updatestacksetoutputresponsetypedef).
+[UpdateStackSetOutputTypeDef](./type_defs.md#updatestacksetoutputtypedef).
 
 ### update_termination_protection
 
@@ -1635,7 +1635,7 @@ Boto3 documentation:
 [CloudFormation.Client.update_termination_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_termination_protection)
 
 Arguments mapping described in
-[UpdateTerminationProtectionInputTypeDef](./type_defs.md#updateterminationprotectioninputtypedef).
+[UpdateTerminationProtectionInputRequestTypeDef](./type_defs.md#updateterminationprotectioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1643,7 +1643,7 @@ Keyword-only arguments:
 - `StackName`: `str` *(required)*
 
 Returns
-[UpdateTerminationProtectionOutputResponseTypeDef](./type_defs.md#updateterminationprotectionoutputresponsetypedef).
+[UpdateTerminationProtectionOutputTypeDef](./type_defs.md#updateterminationprotectionoutputtypedef).
 
 ### validate_template
 
@@ -1655,7 +1655,7 @@ Boto3 documentation:
 [CloudFormation.Client.validate_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.validate_template)
 
 Arguments mapping described in
-[ValidateTemplateInputTypeDef](./type_defs.md#validatetemplateinputtypedef).
+[ValidateTemplateInputRequestTypeDef](./type_defs.md#validatetemplateinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1663,7 +1663,7 @@ Keyword-only arguments:
 - `TemplateURL`: `str`
 
 Returns
-[ValidateTemplateOutputResponseTypeDef](./type_defs.md#validatetemplateoutputresponsetypedef).
+[ValidateTemplateOutputTypeDef](./type_defs.md#validatetemplateoutputtypedef).
 
 ### get_paginator
 

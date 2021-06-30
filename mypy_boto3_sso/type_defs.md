@@ -9,13 +9,13 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 SSO module](#typed-dictionaries-for-boto3-sso-module)
   - [AccountInfoTypeDef](#accountinfotypedef)
-  - [GetRoleCredentialsRequestTypeDef](#getrolecredentialsrequesttypedef)
-  - [GetRoleCredentialsResponseResponseTypeDef](#getrolecredentialsresponseresponsetypedef)
-  - [ListAccountRolesRequestTypeDef](#listaccountrolesrequesttypedef)
-  - [ListAccountRolesResponseResponseTypeDef](#listaccountrolesresponseresponsetypedef)
-  - [ListAccountsRequestTypeDef](#listaccountsrequesttypedef)
-  - [ListAccountsResponseResponseTypeDef](#listaccountsresponseresponsetypedef)
-  - [LogoutRequestTypeDef](#logoutrequesttypedef)
+  - [GetRoleCredentialsRequestRequestTypeDef](#getrolecredentialsrequestrequesttypedef)
+  - [GetRoleCredentialsResponseTypeDef](#getrolecredentialsresponsetypedef)
+  - [ListAccountRolesRequestRequestTypeDef](#listaccountrolesrequestrequesttypedef)
+  - [ListAccountRolesResponseTypeDef](#listaccountrolesresponsetypedef)
+  - [ListAccountsRequestRequestTypeDef](#listaccountsrequestrequesttypedef)
+  - [ListAccountsResponseTypeDef](#listaccountsresponsetypedef)
+  - [LogoutRequestRequestTypeDef](#logoutrequestrequesttypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RoleCredentialsTypeDef](#rolecredentialstypedef)
@@ -33,10 +33,10 @@ Optional fields:
 - `accountName`: `str`
 - `emailAddress`: `str`
 
-## GetRoleCredentialsRequestTypeDef
+## GetRoleCredentialsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso.type_defs import GetRoleCredentialsRequestTypeDef
+from mypy_boto3_sso.type_defs import GetRoleCredentialsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -45,10 +45,10 @@ Required fields:
 - `accountId`: `str`
 - `accessToken`: `str`
 
-## GetRoleCredentialsResponseResponseTypeDef
+## GetRoleCredentialsResponseTypeDef
 
 ```python
-from mypy_boto3_sso.type_defs import GetRoleCredentialsResponseResponseTypeDef
+from mypy_boto3_sso.type_defs import GetRoleCredentialsResponseTypeDef
 ```
 
 Required fields:
@@ -58,10 +58,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAccountRolesRequestTypeDef
+## ListAccountRolesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso.type_defs import ListAccountRolesRequestTypeDef
+from mypy_boto3_sso.type_defs import ListAccountRolesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -74,10 +74,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListAccountRolesResponseResponseTypeDef
+## ListAccountRolesResponseTypeDef
 
 ```python
-from mypy_boto3_sso.type_defs import ListAccountRolesResponseResponseTypeDef
+from mypy_boto3_sso.type_defs import ListAccountRolesResponseTypeDef
 ```
 
 Required fields:
@@ -87,10 +87,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAccountsRequestTypeDef
+## ListAccountsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso.type_defs import ListAccountsRequestTypeDef
+from mypy_boto3_sso.type_defs import ListAccountsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -102,10 +102,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListAccountsResponseResponseTypeDef
+## ListAccountsResponseTypeDef
 
 ```python
-from mypy_boto3_sso.type_defs import ListAccountsResponseResponseTypeDef
+from mypy_boto3_sso.type_defs import ListAccountsResponseTypeDef
 ```
 
 Required fields:
@@ -116,10 +116,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## LogoutRequestTypeDef
+## LogoutRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso.type_defs import LogoutRequestTypeDef
+from mypy_boto3_sso.type_defs import LogoutRequestRequestTypeDef
 ```
 
 Required fields:

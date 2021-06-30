@@ -33,6 +33,7 @@ from mypy_boto3_finspace_data.client import FinSpaceDataClient
 
 - [can_paginate](./client.md#can_paginate)
 - [create_changeset](./client.md#create_changeset)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_programmatic_access_credentials](./client.md#get_programmatic_access_credentials)
 - [get_working_location](./client.md#get_working_location)
@@ -77,12 +78,12 @@ from mypy_boto3_finspace_data.type_defs import ChangesetInfoTypeDef, ...
 ```
 
 - [ChangesetInfoTypeDef](./type_defs.md#changesetinfotypedef)
-- [CreateChangesetRequestTypeDef](./type_defs.md#createchangesetrequesttypedef)
-- [CreateChangesetResponseResponseTypeDef](./type_defs.md#createchangesetresponseresponsetypedef)
+- [CreateChangesetRequestRequestTypeDef](./type_defs.md#createchangesetrequestrequesttypedef)
+- [CreateChangesetResponseTypeDef](./type_defs.md#createchangesetresponsetypedef)
 - [CredentialsTypeDef](./type_defs.md#credentialstypedef)
 - [ErrorInfoTypeDef](./type_defs.md#errorinfotypedef)
-- [GetProgrammaticAccessCredentialsRequestTypeDef](./type_defs.md#getprogrammaticaccesscredentialsrequesttypedef)
-- [GetProgrammaticAccessCredentialsResponseResponseTypeDef](./type_defs.md#getprogrammaticaccesscredentialsresponseresponsetypedef)
-- [GetWorkingLocationRequestTypeDef](./type_defs.md#getworkinglocationrequesttypedef)
-- [GetWorkingLocationResponseResponseTypeDef](./type_defs.md#getworkinglocationresponseresponsetypedef)
+- [GetProgrammaticAccessCredentialsRequestRequestTypeDef](./type_defs.md#getprogrammaticaccesscredentialsrequestrequesttypedef)
+- [GetProgrammaticAccessCredentialsResponseTypeDef](./type_defs.md#getprogrammaticaccesscredentialsresponsetypedef)
+- [GetWorkingLocationRequestRequestTypeDef](./type_defs.md#getworkinglocationrequestrequesttypedef)
+- [GetWorkingLocationResponseTypeDef](./type_defs.md#getworkinglocationresponsetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

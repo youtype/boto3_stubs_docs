@@ -11,6 +11,7 @@ type annotations stubs module
   - [WorkLinkClient](#worklinkclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_domain](#associate_domain)
     - [associate_website_authorization_provider](#associate_website_authorization_provider)
     - [associate_website_certificate_authority](#associate_website_certificate_authority)
@@ -87,6 +88,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+WorkLinkClient exceptions.
+
+Type annotations for `boto3.client("worklink").exceptions` method.
+
+Boto3 documentation:
+[WorkLink.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_domain
 
 Specifies a domain to be associated to Amazon WorkLink.
@@ -97,7 +109,7 @@ Boto3 documentation:
 [WorkLink.Client.associate_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.associate_domain)
 
 Arguments mapping described in
-[AssociateDomainRequestTypeDef](./type_defs.md#associatedomainrequesttypedef).
+[AssociateDomainRequestRequestTypeDef](./type_defs.md#associatedomainrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -119,7 +131,7 @@ Boto3 documentation:
 [WorkLink.Client.associate_website_authorization_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.associate_website_authorization_provider)
 
 Arguments mapping described in
-[AssociateWebsiteAuthorizationProviderRequestTypeDef](./type_defs.md#associatewebsiteauthorizationproviderrequesttypedef).
+[AssociateWebsiteAuthorizationProviderRequestRequestTypeDef](./type_defs.md#associatewebsiteauthorizationproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -130,7 +142,7 @@ Keyword-only arguments:
 - `DomainName`: `str`
 
 Returns
-[AssociateWebsiteAuthorizationProviderResponseResponseTypeDef](./type_defs.md#associatewebsiteauthorizationproviderresponseresponsetypedef).
+[AssociateWebsiteAuthorizationProviderResponseTypeDef](./type_defs.md#associatewebsiteauthorizationproviderresponsetypedef).
 
 ### associate_website_certificate_authority
 
@@ -144,7 +156,7 @@ Boto3 documentation:
 [WorkLink.Client.associate_website_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.associate_website_certificate_authority)
 
 Arguments mapping described in
-[AssociateWebsiteCertificateAuthorityRequestTypeDef](./type_defs.md#associatewebsitecertificateauthorityrequesttypedef).
+[AssociateWebsiteCertificateAuthorityRequestRequestTypeDef](./type_defs.md#associatewebsitecertificateauthorityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -153,7 +165,7 @@ Keyword-only arguments:
 - `DisplayName`: `str`
 
 Returns
-[AssociateWebsiteCertificateAuthorityResponseResponseTypeDef](./type_defs.md#associatewebsitecertificateauthorityresponseresponsetypedef).
+[AssociateWebsiteCertificateAuthorityResponseTypeDef](./type_defs.md#associatewebsitecertificateauthorityresponsetypedef).
 
 ### can_paginate
 
@@ -180,7 +192,7 @@ Boto3 documentation:
 [WorkLink.Client.create_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.create_fleet)
 
 Arguments mapping described in
-[CreateFleetRequestTypeDef](./type_defs.md#createfleetrequesttypedef).
+[CreateFleetRequestRequestTypeDef](./type_defs.md#createfleetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -190,7 +202,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateFleetResponseResponseTypeDef](./type_defs.md#createfleetresponseresponsetypedef).
+[CreateFleetResponseTypeDef](./type_defs.md#createfleetresponsetypedef).
 
 ### delete_fleet
 
@@ -202,7 +214,7 @@ Boto3 documentation:
 [WorkLink.Client.delete_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.delete_fleet)
 
 Arguments mapping described in
-[DeleteFleetRequestTypeDef](./type_defs.md#deletefleetrequesttypedef).
+[DeleteFleetRequestRequestTypeDef](./type_defs.md#deletefleetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -222,14 +234,14 @@ Boto3 documentation:
 [WorkLink.Client.describe_audit_stream_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_audit_stream_configuration)
 
 Arguments mapping described in
-[DescribeAuditStreamConfigurationRequestTypeDef](./type_defs.md#describeauditstreamconfigurationrequesttypedef).
+[DescribeAuditStreamConfigurationRequestRequestTypeDef](./type_defs.md#describeauditstreamconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 
 Returns
-[DescribeAuditStreamConfigurationResponseResponseTypeDef](./type_defs.md#describeauditstreamconfigurationresponseresponsetypedef).
+[DescribeAuditStreamConfigurationResponseTypeDef](./type_defs.md#describeauditstreamconfigurationresponsetypedef).
 
 ### describe_company_network_configuration
 
@@ -243,14 +255,14 @@ Boto3 documentation:
 [WorkLink.Client.describe_company_network_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_company_network_configuration)
 
 Arguments mapping described in
-[DescribeCompanyNetworkConfigurationRequestTypeDef](./type_defs.md#describecompanynetworkconfigurationrequesttypedef).
+[DescribeCompanyNetworkConfigurationRequestRequestTypeDef](./type_defs.md#describecompanynetworkconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 
 Returns
-[DescribeCompanyNetworkConfigurationResponseResponseTypeDef](./type_defs.md#describecompanynetworkconfigurationresponseresponsetypedef).
+[DescribeCompanyNetworkConfigurationResponseTypeDef](./type_defs.md#describecompanynetworkconfigurationresponsetypedef).
 
 ### describe_device
 
@@ -262,7 +274,7 @@ Boto3 documentation:
 [WorkLink.Client.describe_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_device)
 
 Arguments mapping described in
-[DescribeDeviceRequestTypeDef](./type_defs.md#describedevicerequesttypedef).
+[DescribeDeviceRequestRequestTypeDef](./type_defs.md#describedevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -270,7 +282,7 @@ Keyword-only arguments:
 - `DeviceId`: `str` *(required)*
 
 Returns
-[DescribeDeviceResponseResponseTypeDef](./type_defs.md#describedeviceresponseresponsetypedef).
+[DescribeDeviceResponseTypeDef](./type_defs.md#describedeviceresponsetypedef).
 
 ### describe_device_policy_configuration
 
@@ -283,14 +295,14 @@ Boto3 documentation:
 [WorkLink.Client.describe_device_policy_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_device_policy_configuration)
 
 Arguments mapping described in
-[DescribeDevicePolicyConfigurationRequestTypeDef](./type_defs.md#describedevicepolicyconfigurationrequesttypedef).
+[DescribeDevicePolicyConfigurationRequestRequestTypeDef](./type_defs.md#describedevicepolicyconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 
 Returns
-[DescribeDevicePolicyConfigurationResponseResponseTypeDef](./type_defs.md#describedevicepolicyconfigurationresponseresponsetypedef).
+[DescribeDevicePolicyConfigurationResponseTypeDef](./type_defs.md#describedevicepolicyconfigurationresponsetypedef).
 
 ### describe_domain
 
@@ -302,7 +314,7 @@ Boto3 documentation:
 [WorkLink.Client.describe_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_domain)
 
 Arguments mapping described in
-[DescribeDomainRequestTypeDef](./type_defs.md#describedomainrequesttypedef).
+[DescribeDomainRequestRequestTypeDef](./type_defs.md#describedomainrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -310,7 +322,7 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[DescribeDomainResponseResponseTypeDef](./type_defs.md#describedomainresponseresponsetypedef).
+[DescribeDomainResponseTypeDef](./type_defs.md#describedomainresponsetypedef).
 
 ### describe_fleet_metadata
 
@@ -323,14 +335,14 @@ Boto3 documentation:
 [WorkLink.Client.describe_fleet_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_fleet_metadata)
 
 Arguments mapping described in
-[DescribeFleetMetadataRequestTypeDef](./type_defs.md#describefleetmetadatarequesttypedef).
+[DescribeFleetMetadataRequestRequestTypeDef](./type_defs.md#describefleetmetadatarequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 
 Returns
-[DescribeFleetMetadataResponseResponseTypeDef](./type_defs.md#describefleetmetadataresponseresponsetypedef).
+[DescribeFleetMetadataResponseTypeDef](./type_defs.md#describefleetmetadataresponsetypedef).
 
 ### describe_identity_provider_configuration
 
@@ -343,14 +355,14 @@ Boto3 documentation:
 [WorkLink.Client.describe_identity_provider_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_identity_provider_configuration)
 
 Arguments mapping described in
-[DescribeIdentityProviderConfigurationRequestTypeDef](./type_defs.md#describeidentityproviderconfigurationrequesttypedef).
+[DescribeIdentityProviderConfigurationRequestRequestTypeDef](./type_defs.md#describeidentityproviderconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 
 Returns
-[DescribeIdentityProviderConfigurationResponseResponseTypeDef](./type_defs.md#describeidentityproviderconfigurationresponseresponsetypedef).
+[DescribeIdentityProviderConfigurationResponseTypeDef](./type_defs.md#describeidentityproviderconfigurationresponsetypedef).
 
 ### describe_website_certificate_authority
 
@@ -363,7 +375,7 @@ Boto3 documentation:
 [WorkLink.Client.describe_website_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_website_certificate_authority)
 
 Arguments mapping described in
-[DescribeWebsiteCertificateAuthorityRequestTypeDef](./type_defs.md#describewebsitecertificateauthorityrequesttypedef).
+[DescribeWebsiteCertificateAuthorityRequestRequestTypeDef](./type_defs.md#describewebsitecertificateauthorityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -371,7 +383,7 @@ Keyword-only arguments:
 - `WebsiteCaId`: `str` *(required)*
 
 Returns
-[DescribeWebsiteCertificateAuthorityResponseResponseTypeDef](./type_defs.md#describewebsitecertificateauthorityresponseresponsetypedef).
+[DescribeWebsiteCertificateAuthorityResponseTypeDef](./type_defs.md#describewebsitecertificateauthorityresponsetypedef).
 
 ### disassociate_domain
 
@@ -383,7 +395,7 @@ Boto3 documentation:
 [WorkLink.Client.disassociate_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.disassociate_domain)
 
 Arguments mapping described in
-[DisassociateDomainRequestTypeDef](./type_defs.md#disassociatedomainrequesttypedef).
+[DisassociateDomainRequestRequestTypeDef](./type_defs.md#disassociatedomainrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -403,7 +415,7 @@ Boto3 documentation:
 [WorkLink.Client.disassociate_website_authorization_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.disassociate_website_authorization_provider)
 
 Arguments mapping described in
-[DisassociateWebsiteAuthorizationProviderRequestTypeDef](./type_defs.md#disassociatewebsiteauthorizationproviderrequesttypedef).
+[DisassociateWebsiteAuthorizationProviderRequestRequestTypeDef](./type_defs.md#disassociatewebsiteauthorizationproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -423,7 +435,7 @@ Boto3 documentation:
 [WorkLink.Client.disassociate_website_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.disassociate_website_certificate_authority)
 
 Arguments mapping described in
-[DisassociateWebsiteCertificateAuthorityRequestTypeDef](./type_defs.md#disassociatewebsitecertificateauthorityrequesttypedef).
+[DisassociateWebsiteCertificateAuthorityRequestRequestTypeDef](./type_defs.md#disassociatewebsitecertificateauthorityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -460,7 +472,7 @@ Boto3 documentation:
 [WorkLink.Client.list_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_devices)
 
 Arguments mapping described in
-[ListDevicesRequestTypeDef](./type_defs.md#listdevicesrequesttypedef).
+[ListDevicesRequestRequestTypeDef](./type_defs.md#listdevicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -469,7 +481,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDevicesResponseResponseTypeDef](./type_defs.md#listdevicesresponseresponsetypedef).
+[ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef).
 
 ### list_domains
 
@@ -481,7 +493,7 @@ Boto3 documentation:
 [WorkLink.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_domains)
 
 Arguments mapping described in
-[ListDomainsRequestTypeDef](./type_defs.md#listdomainsrequesttypedef).
+[ListDomainsRequestRequestTypeDef](./type_defs.md#listdomainsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -490,7 +502,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDomainsResponseResponseTypeDef](./type_defs.md#listdomainsresponseresponsetypedef).
+[ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef).
 
 ### list_fleets
 
@@ -502,15 +514,14 @@ Boto3 documentation:
 [WorkLink.Client.list_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_fleets)
 
 Arguments mapping described in
-[ListFleetsRequestTypeDef](./type_defs.md#listfleetsrequesttypedef).
+[ListFleetsRequestRequestTypeDef](./type_defs.md#listfleetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListFleetsResponseResponseTypeDef](./type_defs.md#listfleetsresponseresponsetypedef).
+Returns [ListFleetsResponseTypeDef](./type_defs.md#listfleetsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -522,14 +533,14 @@ Boto3 documentation:
 [WorkLink.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_website_authorization_providers
 
@@ -543,7 +554,7 @@ Boto3 documentation:
 [WorkLink.Client.list_website_authorization_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_website_authorization_providers)
 
 Arguments mapping described in
-[ListWebsiteAuthorizationProvidersRequestTypeDef](./type_defs.md#listwebsiteauthorizationprovidersrequesttypedef).
+[ListWebsiteAuthorizationProvidersRequestRequestTypeDef](./type_defs.md#listwebsiteauthorizationprovidersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -552,7 +563,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListWebsiteAuthorizationProvidersResponseResponseTypeDef](./type_defs.md#listwebsiteauthorizationprovidersresponseresponsetypedef).
+[ListWebsiteAuthorizationProvidersResponseTypeDef](./type_defs.md#listwebsiteauthorizationprovidersresponsetypedef).
 
 ### list_website_certificate_authorities
 
@@ -566,7 +577,7 @@ Boto3 documentation:
 [WorkLink.Client.list_website_certificate_authorities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_website_certificate_authorities)
 
 Arguments mapping described in
-[ListWebsiteCertificateAuthoritiesRequestTypeDef](./type_defs.md#listwebsitecertificateauthoritiesrequesttypedef).
+[ListWebsiteCertificateAuthoritiesRequestRequestTypeDef](./type_defs.md#listwebsitecertificateauthoritiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -575,7 +586,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListWebsiteCertificateAuthoritiesResponseResponseTypeDef](./type_defs.md#listwebsitecertificateauthoritiesresponseresponsetypedef).
+[ListWebsiteCertificateAuthoritiesResponseTypeDef](./type_defs.md#listwebsitecertificateauthoritiesresponsetypedef).
 
 ### restore_domain_access
 
@@ -587,7 +598,7 @@ Boto3 documentation:
 [WorkLink.Client.restore_domain_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.restore_domain_access)
 
 Arguments mapping described in
-[RestoreDomainAccessRequestTypeDef](./type_defs.md#restoredomainaccessrequesttypedef).
+[RestoreDomainAccessRequestRequestTypeDef](./type_defs.md#restoredomainaccessrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -606,7 +617,7 @@ Boto3 documentation:
 [WorkLink.Client.revoke_domain_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.revoke_domain_access)
 
 Arguments mapping described in
-[RevokeDomainAccessRequestTypeDef](./type_defs.md#revokedomainaccessrequesttypedef).
+[RevokeDomainAccessRequestRequestTypeDef](./type_defs.md#revokedomainaccessrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -625,7 +636,7 @@ Boto3 documentation:
 [WorkLink.Client.sign_out_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.sign_out_user)
 
 Arguments mapping described in
-[SignOutUserRequestTypeDef](./type_defs.md#signoutuserrequesttypedef).
+[SignOutUserRequestRequestTypeDef](./type_defs.md#signoutuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -645,7 +656,7 @@ Boto3 documentation:
 [WorkLink.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -664,7 +675,7 @@ Boto3 documentation:
 [WorkLink.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -684,7 +695,7 @@ Boto3 documentation:
 [WorkLink.Client.update_audit_stream_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_audit_stream_configuration)
 
 Arguments mapping described in
-[UpdateAuditStreamConfigurationRequestTypeDef](./type_defs.md#updateauditstreamconfigurationrequesttypedef).
+[UpdateAuditStreamConfigurationRequestRequestTypeDef](./type_defs.md#updateauditstreamconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -704,7 +715,7 @@ Boto3 documentation:
 [WorkLink.Client.update_company_network_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_company_network_configuration)
 
 Arguments mapping described in
-[UpdateCompanyNetworkConfigurationRequestTypeDef](./type_defs.md#updatecompanynetworkconfigurationrequesttypedef).
+[UpdateCompanyNetworkConfigurationRequestRequestTypeDef](./type_defs.md#updatecompanynetworkconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -726,7 +737,7 @@ Boto3 documentation:
 [WorkLink.Client.update_device_policy_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_device_policy_configuration)
 
 Arguments mapping described in
-[UpdateDevicePolicyConfigurationRequestTypeDef](./type_defs.md#updatedevicepolicyconfigurationrequesttypedef).
+[UpdateDevicePolicyConfigurationRequestRequestTypeDef](./type_defs.md#updatedevicepolicyconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -745,7 +756,7 @@ Boto3 documentation:
 [WorkLink.Client.update_domain_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_domain_metadata)
 
 Arguments mapping described in
-[UpdateDomainMetadataRequestTypeDef](./type_defs.md#updatedomainmetadatarequesttypedef).
+[UpdateDomainMetadataRequestRequestTypeDef](./type_defs.md#updatedomainmetadatarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -765,7 +776,7 @@ Boto3 documentation:
 [WorkLink.Client.update_fleet_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_fleet_metadata)
 
 Arguments mapping described in
-[UpdateFleetMetadataRequestTypeDef](./type_defs.md#updatefleetmetadatarequesttypedef).
+[UpdateFleetMetadataRequestRequestTypeDef](./type_defs.md#updatefleetmetadatarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -786,7 +797,7 @@ Boto3 documentation:
 [WorkLink.Client.update_identity_provider_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_identity_provider_configuration)
 
 Arguments mapping described in
-[UpdateIdentityProviderConfigurationRequestTypeDef](./type_defs.md#updateidentityproviderconfigurationrequesttypedef).
+[UpdateIdentityProviderConfigurationRequestRequestTypeDef](./type_defs.md#updateidentityproviderconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 

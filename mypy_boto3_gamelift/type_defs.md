@@ -8,111 +8,111 @@ type annotations stubs module
 [mypy_boto3_gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
 
 - [Typed dictionaries for boto3 GameLift module](#typed-dictionaries-for-boto3-gamelift-module)
-  - [AcceptMatchInputTypeDef](#acceptmatchinputtypedef)
+  - [AcceptMatchInputRequestTypeDef](#acceptmatchinputrequesttypedef)
   - [AliasTypeDef](#aliastypedef)
   - [AttributeValueTypeDef](#attributevaluetypedef)
   - [AwsCredentialsTypeDef](#awscredentialstypedef)
   - [BuildTypeDef](#buildtypedef)
   - [CertificateConfigurationTypeDef](#certificateconfigurationtypedef)
-  - [ClaimGameServerInputTypeDef](#claimgameserverinputtypedef)
-  - [ClaimGameServerOutputResponseTypeDef](#claimgameserveroutputresponsetypedef)
-  - [CreateAliasInputTypeDef](#createaliasinputtypedef)
-  - [CreateAliasOutputResponseTypeDef](#createaliasoutputresponsetypedef)
-  - [CreateBuildInputTypeDef](#createbuildinputtypedef)
-  - [CreateBuildOutputResponseTypeDef](#createbuildoutputresponsetypedef)
-  - [CreateFleetInputTypeDef](#createfleetinputtypedef)
-  - [CreateFleetLocationsInputTypeDef](#createfleetlocationsinputtypedef)
-  - [CreateFleetLocationsOutputResponseTypeDef](#createfleetlocationsoutputresponsetypedef)
-  - [CreateFleetOutputResponseTypeDef](#createfleetoutputresponsetypedef)
-  - [CreateGameServerGroupInputTypeDef](#creategameservergroupinputtypedef)
-  - [CreateGameServerGroupOutputResponseTypeDef](#creategameservergroupoutputresponsetypedef)
-  - [CreateGameSessionInputTypeDef](#creategamesessioninputtypedef)
-  - [CreateGameSessionOutputResponseTypeDef](#creategamesessionoutputresponsetypedef)
-  - [CreateGameSessionQueueInputTypeDef](#creategamesessionqueueinputtypedef)
-  - [CreateGameSessionQueueOutputResponseTypeDef](#creategamesessionqueueoutputresponsetypedef)
-  - [CreateMatchmakingConfigurationInputTypeDef](#creatematchmakingconfigurationinputtypedef)
-  - [CreateMatchmakingConfigurationOutputResponseTypeDef](#creatematchmakingconfigurationoutputresponsetypedef)
-  - [CreateMatchmakingRuleSetInputTypeDef](#creatematchmakingrulesetinputtypedef)
-  - [CreateMatchmakingRuleSetOutputResponseTypeDef](#creatematchmakingrulesetoutputresponsetypedef)
-  - [CreatePlayerSessionInputTypeDef](#createplayersessioninputtypedef)
-  - [CreatePlayerSessionOutputResponseTypeDef](#createplayersessionoutputresponsetypedef)
-  - [CreatePlayerSessionsInputTypeDef](#createplayersessionsinputtypedef)
-  - [CreatePlayerSessionsOutputResponseTypeDef](#createplayersessionsoutputresponsetypedef)
-  - [CreateScriptInputTypeDef](#createscriptinputtypedef)
-  - [CreateScriptOutputResponseTypeDef](#createscriptoutputresponsetypedef)
-  - [CreateVpcPeeringAuthorizationInputTypeDef](#createvpcpeeringauthorizationinputtypedef)
-  - [CreateVpcPeeringAuthorizationOutputResponseTypeDef](#createvpcpeeringauthorizationoutputresponsetypedef)
-  - [CreateVpcPeeringConnectionInputTypeDef](#createvpcpeeringconnectioninputtypedef)
-  - [DeleteAliasInputTypeDef](#deletealiasinputtypedef)
-  - [DeleteBuildInputTypeDef](#deletebuildinputtypedef)
-  - [DeleteFleetInputTypeDef](#deletefleetinputtypedef)
-  - [DeleteFleetLocationsInputTypeDef](#deletefleetlocationsinputtypedef)
-  - [DeleteFleetLocationsOutputResponseTypeDef](#deletefleetlocationsoutputresponsetypedef)
-  - [DeleteGameServerGroupInputTypeDef](#deletegameservergroupinputtypedef)
-  - [DeleteGameServerGroupOutputResponseTypeDef](#deletegameservergroupoutputresponsetypedef)
-  - [DeleteGameSessionQueueInputTypeDef](#deletegamesessionqueueinputtypedef)
-  - [DeleteMatchmakingConfigurationInputTypeDef](#deletematchmakingconfigurationinputtypedef)
-  - [DeleteMatchmakingRuleSetInputTypeDef](#deletematchmakingrulesetinputtypedef)
-  - [DeleteScalingPolicyInputTypeDef](#deletescalingpolicyinputtypedef)
-  - [DeleteScriptInputTypeDef](#deletescriptinputtypedef)
-  - [DeleteVpcPeeringAuthorizationInputTypeDef](#deletevpcpeeringauthorizationinputtypedef)
-  - [DeleteVpcPeeringConnectionInputTypeDef](#deletevpcpeeringconnectioninputtypedef)
-  - [DeregisterGameServerInputTypeDef](#deregistergameserverinputtypedef)
-  - [DescribeAliasInputTypeDef](#describealiasinputtypedef)
-  - [DescribeAliasOutputResponseTypeDef](#describealiasoutputresponsetypedef)
-  - [DescribeBuildInputTypeDef](#describebuildinputtypedef)
-  - [DescribeBuildOutputResponseTypeDef](#describebuildoutputresponsetypedef)
-  - [DescribeEC2InstanceLimitsInputTypeDef](#describeec2instancelimitsinputtypedef)
-  - [DescribeEC2InstanceLimitsOutputResponseTypeDef](#describeec2instancelimitsoutputresponsetypedef)
-  - [DescribeFleetAttributesInputTypeDef](#describefleetattributesinputtypedef)
-  - [DescribeFleetAttributesOutputResponseTypeDef](#describefleetattributesoutputresponsetypedef)
-  - [DescribeFleetCapacityInputTypeDef](#describefleetcapacityinputtypedef)
-  - [DescribeFleetCapacityOutputResponseTypeDef](#describefleetcapacityoutputresponsetypedef)
-  - [DescribeFleetEventsInputTypeDef](#describefleeteventsinputtypedef)
-  - [DescribeFleetEventsOutputResponseTypeDef](#describefleeteventsoutputresponsetypedef)
-  - [DescribeFleetLocationAttributesInputTypeDef](#describefleetlocationattributesinputtypedef)
-  - [DescribeFleetLocationAttributesOutputResponseTypeDef](#describefleetlocationattributesoutputresponsetypedef)
-  - [DescribeFleetLocationCapacityInputTypeDef](#describefleetlocationcapacityinputtypedef)
-  - [DescribeFleetLocationCapacityOutputResponseTypeDef](#describefleetlocationcapacityoutputresponsetypedef)
-  - [DescribeFleetLocationUtilizationInputTypeDef](#describefleetlocationutilizationinputtypedef)
-  - [DescribeFleetLocationUtilizationOutputResponseTypeDef](#describefleetlocationutilizationoutputresponsetypedef)
-  - [DescribeFleetPortSettingsInputTypeDef](#describefleetportsettingsinputtypedef)
-  - [DescribeFleetPortSettingsOutputResponseTypeDef](#describefleetportsettingsoutputresponsetypedef)
-  - [DescribeFleetUtilizationInputTypeDef](#describefleetutilizationinputtypedef)
-  - [DescribeFleetUtilizationOutputResponseTypeDef](#describefleetutilizationoutputresponsetypedef)
-  - [DescribeGameServerGroupInputTypeDef](#describegameservergroupinputtypedef)
-  - [DescribeGameServerGroupOutputResponseTypeDef](#describegameservergroupoutputresponsetypedef)
-  - [DescribeGameServerInputTypeDef](#describegameserverinputtypedef)
-  - [DescribeGameServerInstancesInputTypeDef](#describegameserverinstancesinputtypedef)
-  - [DescribeGameServerInstancesOutputResponseTypeDef](#describegameserverinstancesoutputresponsetypedef)
-  - [DescribeGameServerOutputResponseTypeDef](#describegameserveroutputresponsetypedef)
-  - [DescribeGameSessionDetailsInputTypeDef](#describegamesessiondetailsinputtypedef)
-  - [DescribeGameSessionDetailsOutputResponseTypeDef](#describegamesessiondetailsoutputresponsetypedef)
-  - [DescribeGameSessionPlacementInputTypeDef](#describegamesessionplacementinputtypedef)
-  - [DescribeGameSessionPlacementOutputResponseTypeDef](#describegamesessionplacementoutputresponsetypedef)
-  - [DescribeGameSessionQueuesInputTypeDef](#describegamesessionqueuesinputtypedef)
-  - [DescribeGameSessionQueuesOutputResponseTypeDef](#describegamesessionqueuesoutputresponsetypedef)
-  - [DescribeGameSessionsInputTypeDef](#describegamesessionsinputtypedef)
-  - [DescribeGameSessionsOutputResponseTypeDef](#describegamesessionsoutputresponsetypedef)
-  - [DescribeInstancesInputTypeDef](#describeinstancesinputtypedef)
-  - [DescribeInstancesOutputResponseTypeDef](#describeinstancesoutputresponsetypedef)
-  - [DescribeMatchmakingConfigurationsInputTypeDef](#describematchmakingconfigurationsinputtypedef)
-  - [DescribeMatchmakingConfigurationsOutputResponseTypeDef](#describematchmakingconfigurationsoutputresponsetypedef)
-  - [DescribeMatchmakingInputTypeDef](#describematchmakinginputtypedef)
-  - [DescribeMatchmakingOutputResponseTypeDef](#describematchmakingoutputresponsetypedef)
-  - [DescribeMatchmakingRuleSetsInputTypeDef](#describematchmakingrulesetsinputtypedef)
-  - [DescribeMatchmakingRuleSetsOutputResponseTypeDef](#describematchmakingrulesetsoutputresponsetypedef)
-  - [DescribePlayerSessionsInputTypeDef](#describeplayersessionsinputtypedef)
-  - [DescribePlayerSessionsOutputResponseTypeDef](#describeplayersessionsoutputresponsetypedef)
-  - [DescribeRuntimeConfigurationInputTypeDef](#describeruntimeconfigurationinputtypedef)
-  - [DescribeRuntimeConfigurationOutputResponseTypeDef](#describeruntimeconfigurationoutputresponsetypedef)
-  - [DescribeScalingPoliciesInputTypeDef](#describescalingpoliciesinputtypedef)
-  - [DescribeScalingPoliciesOutputResponseTypeDef](#describescalingpoliciesoutputresponsetypedef)
-  - [DescribeScriptInputTypeDef](#describescriptinputtypedef)
-  - [DescribeScriptOutputResponseTypeDef](#describescriptoutputresponsetypedef)
-  - [DescribeVpcPeeringAuthorizationsOutputResponseTypeDef](#describevpcpeeringauthorizationsoutputresponsetypedef)
-  - [DescribeVpcPeeringConnectionsInputTypeDef](#describevpcpeeringconnectionsinputtypedef)
-  - [DescribeVpcPeeringConnectionsOutputResponseTypeDef](#describevpcpeeringconnectionsoutputresponsetypedef)
+  - [ClaimGameServerInputRequestTypeDef](#claimgameserverinputrequesttypedef)
+  - [ClaimGameServerOutputTypeDef](#claimgameserveroutputtypedef)
+  - [CreateAliasInputRequestTypeDef](#createaliasinputrequesttypedef)
+  - [CreateAliasOutputTypeDef](#createaliasoutputtypedef)
+  - [CreateBuildInputRequestTypeDef](#createbuildinputrequesttypedef)
+  - [CreateBuildOutputTypeDef](#createbuildoutputtypedef)
+  - [CreateFleetInputRequestTypeDef](#createfleetinputrequesttypedef)
+  - [CreateFleetLocationsInputRequestTypeDef](#createfleetlocationsinputrequesttypedef)
+  - [CreateFleetLocationsOutputTypeDef](#createfleetlocationsoutputtypedef)
+  - [CreateFleetOutputTypeDef](#createfleetoutputtypedef)
+  - [CreateGameServerGroupInputRequestTypeDef](#creategameservergroupinputrequesttypedef)
+  - [CreateGameServerGroupOutputTypeDef](#creategameservergroupoutputtypedef)
+  - [CreateGameSessionInputRequestTypeDef](#creategamesessioninputrequesttypedef)
+  - [CreateGameSessionOutputTypeDef](#creategamesessionoutputtypedef)
+  - [CreateGameSessionQueueInputRequestTypeDef](#creategamesessionqueueinputrequesttypedef)
+  - [CreateGameSessionQueueOutputTypeDef](#creategamesessionqueueoutputtypedef)
+  - [CreateMatchmakingConfigurationInputRequestTypeDef](#creatematchmakingconfigurationinputrequesttypedef)
+  - [CreateMatchmakingConfigurationOutputTypeDef](#creatematchmakingconfigurationoutputtypedef)
+  - [CreateMatchmakingRuleSetInputRequestTypeDef](#creatematchmakingrulesetinputrequesttypedef)
+  - [CreateMatchmakingRuleSetOutputTypeDef](#creatematchmakingrulesetoutputtypedef)
+  - [CreatePlayerSessionInputRequestTypeDef](#createplayersessioninputrequesttypedef)
+  - [CreatePlayerSessionOutputTypeDef](#createplayersessionoutputtypedef)
+  - [CreatePlayerSessionsInputRequestTypeDef](#createplayersessionsinputrequesttypedef)
+  - [CreatePlayerSessionsOutputTypeDef](#createplayersessionsoutputtypedef)
+  - [CreateScriptInputRequestTypeDef](#createscriptinputrequesttypedef)
+  - [CreateScriptOutputTypeDef](#createscriptoutputtypedef)
+  - [CreateVpcPeeringAuthorizationInputRequestTypeDef](#createvpcpeeringauthorizationinputrequesttypedef)
+  - [CreateVpcPeeringAuthorizationOutputTypeDef](#createvpcpeeringauthorizationoutputtypedef)
+  - [CreateVpcPeeringConnectionInputRequestTypeDef](#createvpcpeeringconnectioninputrequesttypedef)
+  - [DeleteAliasInputRequestTypeDef](#deletealiasinputrequesttypedef)
+  - [DeleteBuildInputRequestTypeDef](#deletebuildinputrequesttypedef)
+  - [DeleteFleetInputRequestTypeDef](#deletefleetinputrequesttypedef)
+  - [DeleteFleetLocationsInputRequestTypeDef](#deletefleetlocationsinputrequesttypedef)
+  - [DeleteFleetLocationsOutputTypeDef](#deletefleetlocationsoutputtypedef)
+  - [DeleteGameServerGroupInputRequestTypeDef](#deletegameservergroupinputrequesttypedef)
+  - [DeleteGameServerGroupOutputTypeDef](#deletegameservergroupoutputtypedef)
+  - [DeleteGameSessionQueueInputRequestTypeDef](#deletegamesessionqueueinputrequesttypedef)
+  - [DeleteMatchmakingConfigurationInputRequestTypeDef](#deletematchmakingconfigurationinputrequesttypedef)
+  - [DeleteMatchmakingRuleSetInputRequestTypeDef](#deletematchmakingrulesetinputrequesttypedef)
+  - [DeleteScalingPolicyInputRequestTypeDef](#deletescalingpolicyinputrequesttypedef)
+  - [DeleteScriptInputRequestTypeDef](#deletescriptinputrequesttypedef)
+  - [DeleteVpcPeeringAuthorizationInputRequestTypeDef](#deletevpcpeeringauthorizationinputrequesttypedef)
+  - [DeleteVpcPeeringConnectionInputRequestTypeDef](#deletevpcpeeringconnectioninputrequesttypedef)
+  - [DeregisterGameServerInputRequestTypeDef](#deregistergameserverinputrequesttypedef)
+  - [DescribeAliasInputRequestTypeDef](#describealiasinputrequesttypedef)
+  - [DescribeAliasOutputTypeDef](#describealiasoutputtypedef)
+  - [DescribeBuildInputRequestTypeDef](#describebuildinputrequesttypedef)
+  - [DescribeBuildOutputTypeDef](#describebuildoutputtypedef)
+  - [DescribeEC2InstanceLimitsInputRequestTypeDef](#describeec2instancelimitsinputrequesttypedef)
+  - [DescribeEC2InstanceLimitsOutputTypeDef](#describeec2instancelimitsoutputtypedef)
+  - [DescribeFleetAttributesInputRequestTypeDef](#describefleetattributesinputrequesttypedef)
+  - [DescribeFleetAttributesOutputTypeDef](#describefleetattributesoutputtypedef)
+  - [DescribeFleetCapacityInputRequestTypeDef](#describefleetcapacityinputrequesttypedef)
+  - [DescribeFleetCapacityOutputTypeDef](#describefleetcapacityoutputtypedef)
+  - [DescribeFleetEventsInputRequestTypeDef](#describefleeteventsinputrequesttypedef)
+  - [DescribeFleetEventsOutputTypeDef](#describefleeteventsoutputtypedef)
+  - [DescribeFleetLocationAttributesInputRequestTypeDef](#describefleetlocationattributesinputrequesttypedef)
+  - [DescribeFleetLocationAttributesOutputTypeDef](#describefleetlocationattributesoutputtypedef)
+  - [DescribeFleetLocationCapacityInputRequestTypeDef](#describefleetlocationcapacityinputrequesttypedef)
+  - [DescribeFleetLocationCapacityOutputTypeDef](#describefleetlocationcapacityoutputtypedef)
+  - [DescribeFleetLocationUtilizationInputRequestTypeDef](#describefleetlocationutilizationinputrequesttypedef)
+  - [DescribeFleetLocationUtilizationOutputTypeDef](#describefleetlocationutilizationoutputtypedef)
+  - [DescribeFleetPortSettingsInputRequestTypeDef](#describefleetportsettingsinputrequesttypedef)
+  - [DescribeFleetPortSettingsOutputTypeDef](#describefleetportsettingsoutputtypedef)
+  - [DescribeFleetUtilizationInputRequestTypeDef](#describefleetutilizationinputrequesttypedef)
+  - [DescribeFleetUtilizationOutputTypeDef](#describefleetutilizationoutputtypedef)
+  - [DescribeGameServerGroupInputRequestTypeDef](#describegameservergroupinputrequesttypedef)
+  - [DescribeGameServerGroupOutputTypeDef](#describegameservergroupoutputtypedef)
+  - [DescribeGameServerInputRequestTypeDef](#describegameserverinputrequesttypedef)
+  - [DescribeGameServerInstancesInputRequestTypeDef](#describegameserverinstancesinputrequesttypedef)
+  - [DescribeGameServerInstancesOutputTypeDef](#describegameserverinstancesoutputtypedef)
+  - [DescribeGameServerOutputTypeDef](#describegameserveroutputtypedef)
+  - [DescribeGameSessionDetailsInputRequestTypeDef](#describegamesessiondetailsinputrequesttypedef)
+  - [DescribeGameSessionDetailsOutputTypeDef](#describegamesessiondetailsoutputtypedef)
+  - [DescribeGameSessionPlacementInputRequestTypeDef](#describegamesessionplacementinputrequesttypedef)
+  - [DescribeGameSessionPlacementOutputTypeDef](#describegamesessionplacementoutputtypedef)
+  - [DescribeGameSessionQueuesInputRequestTypeDef](#describegamesessionqueuesinputrequesttypedef)
+  - [DescribeGameSessionQueuesOutputTypeDef](#describegamesessionqueuesoutputtypedef)
+  - [DescribeGameSessionsInputRequestTypeDef](#describegamesessionsinputrequesttypedef)
+  - [DescribeGameSessionsOutputTypeDef](#describegamesessionsoutputtypedef)
+  - [DescribeInstancesInputRequestTypeDef](#describeinstancesinputrequesttypedef)
+  - [DescribeInstancesOutputTypeDef](#describeinstancesoutputtypedef)
+  - [DescribeMatchmakingConfigurationsInputRequestTypeDef](#describematchmakingconfigurationsinputrequesttypedef)
+  - [DescribeMatchmakingConfigurationsOutputTypeDef](#describematchmakingconfigurationsoutputtypedef)
+  - [DescribeMatchmakingInputRequestTypeDef](#describematchmakinginputrequesttypedef)
+  - [DescribeMatchmakingOutputTypeDef](#describematchmakingoutputtypedef)
+  - [DescribeMatchmakingRuleSetsInputRequestTypeDef](#describematchmakingrulesetsinputrequesttypedef)
+  - [DescribeMatchmakingRuleSetsOutputTypeDef](#describematchmakingrulesetsoutputtypedef)
+  - [DescribePlayerSessionsInputRequestTypeDef](#describeplayersessionsinputrequesttypedef)
+  - [DescribePlayerSessionsOutputTypeDef](#describeplayersessionsoutputtypedef)
+  - [DescribeRuntimeConfigurationInputRequestTypeDef](#describeruntimeconfigurationinputrequesttypedef)
+  - [DescribeRuntimeConfigurationOutputTypeDef](#describeruntimeconfigurationoutputtypedef)
+  - [DescribeScalingPoliciesInputRequestTypeDef](#describescalingpoliciesinputrequesttypedef)
+  - [DescribeScalingPoliciesOutputTypeDef](#describescalingpoliciesoutputtypedef)
+  - [DescribeScriptInputRequestTypeDef](#describescriptinputrequesttypedef)
+  - [DescribeScriptOutputTypeDef](#describescriptoutputtypedef)
+  - [DescribeVpcPeeringAuthorizationsOutputTypeDef](#describevpcpeeringauthorizationsoutputtypedef)
+  - [DescribeVpcPeeringConnectionsInputRequestTypeDef](#describevpcpeeringconnectionsinputrequesttypedef)
+  - [DescribeVpcPeeringConnectionsOutputTypeDef](#describevpcpeeringconnectionsoutputtypedef)
   - [DesiredPlayerSessionTypeDef](#desiredplayersessiontypedef)
   - [EC2InstanceCountsTypeDef](#ec2instancecountstypedef)
   - [EC2InstanceLimitTypeDef](#ec2instancelimittypedef)
@@ -132,30 +132,30 @@ type annotations stubs module
   - [GameSessionQueueDestinationTypeDef](#gamesessionqueuedestinationtypedef)
   - [GameSessionQueueTypeDef](#gamesessionqueuetypedef)
   - [GameSessionTypeDef](#gamesessiontypedef)
-  - [GetGameSessionLogUrlInputTypeDef](#getgamesessionlogurlinputtypedef)
-  - [GetGameSessionLogUrlOutputResponseTypeDef](#getgamesessionlogurloutputresponsetypedef)
-  - [GetInstanceAccessInputTypeDef](#getinstanceaccessinputtypedef)
-  - [GetInstanceAccessOutputResponseTypeDef](#getinstanceaccessoutputresponsetypedef)
+  - [GetGameSessionLogUrlInputRequestTypeDef](#getgamesessionlogurlinputrequesttypedef)
+  - [GetGameSessionLogUrlOutputTypeDef](#getgamesessionlogurloutputtypedef)
+  - [GetInstanceAccessInputRequestTypeDef](#getinstanceaccessinputrequesttypedef)
+  - [GetInstanceAccessOutputTypeDef](#getinstanceaccessoutputtypedef)
   - [InstanceAccessTypeDef](#instanceaccesstypedef)
   - [InstanceCredentialsTypeDef](#instancecredentialstypedef)
   - [InstanceDefinitionTypeDef](#instancedefinitiontypedef)
   - [InstanceTypeDef](#instancetypedef)
   - [IpPermissionTypeDef](#ippermissiontypedef)
   - [LaunchTemplateSpecificationTypeDef](#launchtemplatespecificationtypedef)
-  - [ListAliasesInputTypeDef](#listaliasesinputtypedef)
-  - [ListAliasesOutputResponseTypeDef](#listaliasesoutputresponsetypedef)
-  - [ListBuildsInputTypeDef](#listbuildsinputtypedef)
-  - [ListBuildsOutputResponseTypeDef](#listbuildsoutputresponsetypedef)
-  - [ListFleetsInputTypeDef](#listfleetsinputtypedef)
-  - [ListFleetsOutputResponseTypeDef](#listfleetsoutputresponsetypedef)
-  - [ListGameServerGroupsInputTypeDef](#listgameservergroupsinputtypedef)
-  - [ListGameServerGroupsOutputResponseTypeDef](#listgameservergroupsoutputresponsetypedef)
-  - [ListGameServersInputTypeDef](#listgameserversinputtypedef)
-  - [ListGameServersOutputResponseTypeDef](#listgameserversoutputresponsetypedef)
-  - [ListScriptsInputTypeDef](#listscriptsinputtypedef)
-  - [ListScriptsOutputResponseTypeDef](#listscriptsoutputresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListAliasesInputRequestTypeDef](#listaliasesinputrequesttypedef)
+  - [ListAliasesOutputTypeDef](#listaliasesoutputtypedef)
+  - [ListBuildsInputRequestTypeDef](#listbuildsinputrequesttypedef)
+  - [ListBuildsOutputTypeDef](#listbuildsoutputtypedef)
+  - [ListFleetsInputRequestTypeDef](#listfleetsinputrequesttypedef)
+  - [ListFleetsOutputTypeDef](#listfleetsoutputtypedef)
+  - [ListGameServerGroupsInputRequestTypeDef](#listgameservergroupsinputrequesttypedef)
+  - [ListGameServerGroupsOutputTypeDef](#listgameservergroupsoutputtypedef)
+  - [ListGameServersInputRequestTypeDef](#listgameserversinputrequesttypedef)
+  - [ListGameServersOutputTypeDef](#listgameserversoutputtypedef)
+  - [ListScriptsInputRequestTypeDef](#listscriptsinputrequesttypedef)
+  - [ListScriptsOutputTypeDef](#listscriptsoutputtypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [LocationAttributesTypeDef](#locationattributestypedef)
   - [LocationConfigurationTypeDef](#locationconfigurationtypedef)
   - [LocationStateTypeDef](#locationstatetypedef)
@@ -170,80 +170,80 @@ type annotations stubs module
   - [PlayerSessionTypeDef](#playersessiontypedef)
   - [PlayerTypeDef](#playertypedef)
   - [PriorityConfigurationTypeDef](#priorityconfigurationtypedef)
-  - [PutScalingPolicyInputTypeDef](#putscalingpolicyinputtypedef)
-  - [PutScalingPolicyOutputResponseTypeDef](#putscalingpolicyoutputresponsetypedef)
-  - [RegisterGameServerInputTypeDef](#registergameserverinputtypedef)
-  - [RegisterGameServerOutputResponseTypeDef](#registergameserveroutputresponsetypedef)
-  - [RequestUploadCredentialsInputTypeDef](#requestuploadcredentialsinputtypedef)
-  - [RequestUploadCredentialsOutputResponseTypeDef](#requestuploadcredentialsoutputresponsetypedef)
-  - [ResolveAliasInputTypeDef](#resolvealiasinputtypedef)
-  - [ResolveAliasOutputResponseTypeDef](#resolvealiasoutputresponsetypedef)
+  - [PutScalingPolicyInputRequestTypeDef](#putscalingpolicyinputrequesttypedef)
+  - [PutScalingPolicyOutputTypeDef](#putscalingpolicyoutputtypedef)
+  - [RegisterGameServerInputRequestTypeDef](#registergameserverinputrequesttypedef)
+  - [RegisterGameServerOutputTypeDef](#registergameserveroutputtypedef)
+  - [RequestUploadCredentialsInputRequestTypeDef](#requestuploadcredentialsinputrequesttypedef)
+  - [RequestUploadCredentialsOutputTypeDef](#requestuploadcredentialsoutputtypedef)
+  - [ResolveAliasInputRequestTypeDef](#resolvealiasinputrequesttypedef)
+  - [ResolveAliasOutputTypeDef](#resolvealiasoutputtypedef)
   - [ResourceCreationLimitPolicyTypeDef](#resourcecreationlimitpolicytypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ResumeGameServerGroupInputTypeDef](#resumegameservergroupinputtypedef)
-  - [ResumeGameServerGroupOutputResponseTypeDef](#resumegameservergroupoutputresponsetypedef)
+  - [ResumeGameServerGroupInputRequestTypeDef](#resumegameservergroupinputrequesttypedef)
+  - [ResumeGameServerGroupOutputTypeDef](#resumegameservergroupoutputtypedef)
   - [RoutingStrategyTypeDef](#routingstrategytypedef)
   - [RuntimeConfigurationTypeDef](#runtimeconfigurationtypedef)
   - [S3LocationTypeDef](#s3locationtypedef)
   - [ScalingPolicyTypeDef](#scalingpolicytypedef)
   - [ScriptTypeDef](#scripttypedef)
-  - [SearchGameSessionsInputTypeDef](#searchgamesessionsinputtypedef)
-  - [SearchGameSessionsOutputResponseTypeDef](#searchgamesessionsoutputresponsetypedef)
+  - [SearchGameSessionsInputRequestTypeDef](#searchgamesessionsinputrequesttypedef)
+  - [SearchGameSessionsOutputTypeDef](#searchgamesessionsoutputtypedef)
   - [ServerProcessTypeDef](#serverprocesstypedef)
-  - [StartFleetActionsInputTypeDef](#startfleetactionsinputtypedef)
-  - [StartFleetActionsOutputResponseTypeDef](#startfleetactionsoutputresponsetypedef)
-  - [StartGameSessionPlacementInputTypeDef](#startgamesessionplacementinputtypedef)
-  - [StartGameSessionPlacementOutputResponseTypeDef](#startgamesessionplacementoutputresponsetypedef)
-  - [StartMatchBackfillInputTypeDef](#startmatchbackfillinputtypedef)
-  - [StartMatchBackfillOutputResponseTypeDef](#startmatchbackfilloutputresponsetypedef)
-  - [StartMatchmakingInputTypeDef](#startmatchmakinginputtypedef)
-  - [StartMatchmakingOutputResponseTypeDef](#startmatchmakingoutputresponsetypedef)
-  - [StopFleetActionsInputTypeDef](#stopfleetactionsinputtypedef)
-  - [StopFleetActionsOutputResponseTypeDef](#stopfleetactionsoutputresponsetypedef)
-  - [StopGameSessionPlacementInputTypeDef](#stopgamesessionplacementinputtypedef)
-  - [StopGameSessionPlacementOutputResponseTypeDef](#stopgamesessionplacementoutputresponsetypedef)
-  - [StopMatchmakingInputTypeDef](#stopmatchmakinginputtypedef)
-  - [SuspendGameServerGroupInputTypeDef](#suspendgameservergroupinputtypedef)
-  - [SuspendGameServerGroupOutputResponseTypeDef](#suspendgameservergroupoutputresponsetypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [StartFleetActionsInputRequestTypeDef](#startfleetactionsinputrequesttypedef)
+  - [StartFleetActionsOutputTypeDef](#startfleetactionsoutputtypedef)
+  - [StartGameSessionPlacementInputRequestTypeDef](#startgamesessionplacementinputrequesttypedef)
+  - [StartGameSessionPlacementOutputTypeDef](#startgamesessionplacementoutputtypedef)
+  - [StartMatchBackfillInputRequestTypeDef](#startmatchbackfillinputrequesttypedef)
+  - [StartMatchBackfillOutputTypeDef](#startmatchbackfilloutputtypedef)
+  - [StartMatchmakingInputRequestTypeDef](#startmatchmakinginputrequesttypedef)
+  - [StartMatchmakingOutputTypeDef](#startmatchmakingoutputtypedef)
+  - [StopFleetActionsInputRequestTypeDef](#stopfleetactionsinputrequesttypedef)
+  - [StopFleetActionsOutputTypeDef](#stopfleetactionsoutputtypedef)
+  - [StopGameSessionPlacementInputRequestTypeDef](#stopgamesessionplacementinputrequesttypedef)
+  - [StopGameSessionPlacementOutputTypeDef](#stopgamesessionplacementoutputtypedef)
+  - [StopMatchmakingInputRequestTypeDef](#stopmatchmakinginputrequesttypedef)
+  - [SuspendGameServerGroupInputRequestTypeDef](#suspendgameservergroupinputrequesttypedef)
+  - [SuspendGameServerGroupOutputTypeDef](#suspendgameservergroupoutputtypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TargetConfigurationTypeDef](#targetconfigurationtypedef)
   - [TargetTrackingConfigurationTypeDef](#targettrackingconfigurationtypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateAliasInputTypeDef](#updatealiasinputtypedef)
-  - [UpdateAliasOutputResponseTypeDef](#updatealiasoutputresponsetypedef)
-  - [UpdateBuildInputTypeDef](#updatebuildinputtypedef)
-  - [UpdateBuildOutputResponseTypeDef](#updatebuildoutputresponsetypedef)
-  - [UpdateFleetAttributesInputTypeDef](#updatefleetattributesinputtypedef)
-  - [UpdateFleetAttributesOutputResponseTypeDef](#updatefleetattributesoutputresponsetypedef)
-  - [UpdateFleetCapacityInputTypeDef](#updatefleetcapacityinputtypedef)
-  - [UpdateFleetCapacityOutputResponseTypeDef](#updatefleetcapacityoutputresponsetypedef)
-  - [UpdateFleetPortSettingsInputTypeDef](#updatefleetportsettingsinputtypedef)
-  - [UpdateFleetPortSettingsOutputResponseTypeDef](#updatefleetportsettingsoutputresponsetypedef)
-  - [UpdateGameServerGroupInputTypeDef](#updategameservergroupinputtypedef)
-  - [UpdateGameServerGroupOutputResponseTypeDef](#updategameservergroupoutputresponsetypedef)
-  - [UpdateGameServerInputTypeDef](#updategameserverinputtypedef)
-  - [UpdateGameServerOutputResponseTypeDef](#updategameserveroutputresponsetypedef)
-  - [UpdateGameSessionInputTypeDef](#updategamesessioninputtypedef)
-  - [UpdateGameSessionOutputResponseTypeDef](#updategamesessionoutputresponsetypedef)
-  - [UpdateGameSessionQueueInputTypeDef](#updategamesessionqueueinputtypedef)
-  - [UpdateGameSessionQueueOutputResponseTypeDef](#updategamesessionqueueoutputresponsetypedef)
-  - [UpdateMatchmakingConfigurationInputTypeDef](#updatematchmakingconfigurationinputtypedef)
-  - [UpdateMatchmakingConfigurationOutputResponseTypeDef](#updatematchmakingconfigurationoutputresponsetypedef)
-  - [UpdateRuntimeConfigurationInputTypeDef](#updateruntimeconfigurationinputtypedef)
-  - [UpdateRuntimeConfigurationOutputResponseTypeDef](#updateruntimeconfigurationoutputresponsetypedef)
-  - [UpdateScriptInputTypeDef](#updatescriptinputtypedef)
-  - [UpdateScriptOutputResponseTypeDef](#updatescriptoutputresponsetypedef)
-  - [ValidateMatchmakingRuleSetInputTypeDef](#validatematchmakingrulesetinputtypedef)
-  - [ValidateMatchmakingRuleSetOutputResponseTypeDef](#validatematchmakingrulesetoutputresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateAliasInputRequestTypeDef](#updatealiasinputrequesttypedef)
+  - [UpdateAliasOutputTypeDef](#updatealiasoutputtypedef)
+  - [UpdateBuildInputRequestTypeDef](#updatebuildinputrequesttypedef)
+  - [UpdateBuildOutputTypeDef](#updatebuildoutputtypedef)
+  - [UpdateFleetAttributesInputRequestTypeDef](#updatefleetattributesinputrequesttypedef)
+  - [UpdateFleetAttributesOutputTypeDef](#updatefleetattributesoutputtypedef)
+  - [UpdateFleetCapacityInputRequestTypeDef](#updatefleetcapacityinputrequesttypedef)
+  - [UpdateFleetCapacityOutputTypeDef](#updatefleetcapacityoutputtypedef)
+  - [UpdateFleetPortSettingsInputRequestTypeDef](#updatefleetportsettingsinputrequesttypedef)
+  - [UpdateFleetPortSettingsOutputTypeDef](#updatefleetportsettingsoutputtypedef)
+  - [UpdateGameServerGroupInputRequestTypeDef](#updategameservergroupinputrequesttypedef)
+  - [UpdateGameServerGroupOutputTypeDef](#updategameservergroupoutputtypedef)
+  - [UpdateGameServerInputRequestTypeDef](#updategameserverinputrequesttypedef)
+  - [UpdateGameServerOutputTypeDef](#updategameserveroutputtypedef)
+  - [UpdateGameSessionInputRequestTypeDef](#updategamesessioninputrequesttypedef)
+  - [UpdateGameSessionOutputTypeDef](#updategamesessionoutputtypedef)
+  - [UpdateGameSessionQueueInputRequestTypeDef](#updategamesessionqueueinputrequesttypedef)
+  - [UpdateGameSessionQueueOutputTypeDef](#updategamesessionqueueoutputtypedef)
+  - [UpdateMatchmakingConfigurationInputRequestTypeDef](#updatematchmakingconfigurationinputrequesttypedef)
+  - [UpdateMatchmakingConfigurationOutputTypeDef](#updatematchmakingconfigurationoutputtypedef)
+  - [UpdateRuntimeConfigurationInputRequestTypeDef](#updateruntimeconfigurationinputrequesttypedef)
+  - [UpdateRuntimeConfigurationOutputTypeDef](#updateruntimeconfigurationoutputtypedef)
+  - [UpdateScriptInputRequestTypeDef](#updatescriptinputrequesttypedef)
+  - [UpdateScriptOutputTypeDef](#updatescriptoutputtypedef)
+  - [ValidateMatchmakingRuleSetInputRequestTypeDef](#validatematchmakingrulesetinputrequesttypedef)
+  - [ValidateMatchmakingRuleSetOutputTypeDef](#validatematchmakingrulesetoutputtypedef)
   - [VpcPeeringAuthorizationTypeDef](#vpcpeeringauthorizationtypedef)
   - [VpcPeeringConnectionStatusTypeDef](#vpcpeeringconnectionstatustypedef)
   - [VpcPeeringConnectionTypeDef](#vpcpeeringconnectiontypedef)
 
-## AcceptMatchInputTypeDef
+## AcceptMatchInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import AcceptMatchInputTypeDef
+from mypy_boto3_gamelift.type_defs import AcceptMatchInputRequestTypeDef
 ```
 
 Required fields:
@@ -321,10 +321,10 @@ Required fields:
 
 - `CertificateType`: [CertificateTypeType](./literals.md#certificatetypetype)
 
-## ClaimGameServerInputTypeDef
+## ClaimGameServerInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import ClaimGameServerInputTypeDef
+from mypy_boto3_gamelift.type_defs import ClaimGameServerInputRequestTypeDef
 ```
 
 Required fields:
@@ -336,10 +336,10 @@ Optional fields:
 - `GameServerId`: `str`
 - `GameServerData`: `str`
 
-## ClaimGameServerOutputResponseTypeDef
+## ClaimGameServerOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import ClaimGameServerOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import ClaimGameServerOutputTypeDef
 ```
 
 Required fields:
@@ -348,10 +348,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateAliasInputTypeDef
+## CreateAliasInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreateAliasInputTypeDef
+from mypy_boto3_gamelift.type_defs import CreateAliasInputRequestTypeDef
 ```
 
 Required fields:
@@ -365,10 +365,10 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateAliasOutputResponseTypeDef
+## CreateAliasOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreateAliasOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import CreateAliasOutputTypeDef
 ```
 
 Required fields:
@@ -377,10 +377,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateBuildInputTypeDef
+## CreateBuildInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreateBuildInputTypeDef
+from mypy_boto3_gamelift.type_defs import CreateBuildInputRequestTypeDef
 ```
 
 Optional fields:
@@ -391,10 +391,10 @@ Optional fields:
 - `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateBuildOutputResponseTypeDef
+## CreateBuildOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreateBuildOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import CreateBuildOutputTypeDef
 ```
 
 Required fields:
@@ -406,10 +406,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateFleetInputTypeDef
+## CreateFleetInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreateFleetInputTypeDef
+from mypy_boto3_gamelift.type_defs import CreateFleetInputRequestTypeDef
 ```
 
 Required fields:
@@ -444,10 +444,10 @@ Optional fields:
   `List`\[[LocationConfigurationTypeDef](./type_defs.md#locationconfigurationtypedef)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateFleetLocationsInputTypeDef
+## CreateFleetLocationsInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreateFleetLocationsInputTypeDef
+from mypy_boto3_gamelift.type_defs import CreateFleetLocationsInputRequestTypeDef
 ```
 
 Required fields:
@@ -456,10 +456,10 @@ Required fields:
 - `Locations`:
   `List`\[[LocationConfigurationTypeDef](./type_defs.md#locationconfigurationtypedef)\]
 
-## CreateFleetLocationsOutputResponseTypeDef
+## CreateFleetLocationsOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreateFleetLocationsOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import CreateFleetLocationsOutputTypeDef
 ```
 
 Required fields:
@@ -471,10 +471,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateFleetOutputResponseTypeDef
+## CreateFleetOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreateFleetOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import CreateFleetOutputTypeDef
 ```
 
 Required fields:
@@ -486,10 +486,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateGameServerGroupInputTypeDef
+## CreateGameServerGroupInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreateGameServerGroupInputTypeDef
+from mypy_boto3_gamelift.type_defs import CreateGameServerGroupInputRequestTypeDef
 ```
 
 Required fields:
@@ -514,10 +514,10 @@ Optional fields:
 - `VpcSubnets`: `List`\[`str`\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateGameServerGroupOutputResponseTypeDef
+## CreateGameServerGroupOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreateGameServerGroupOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import CreateGameServerGroupOutputTypeDef
 ```
 
 Required fields:
@@ -527,10 +527,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateGameSessionInputTypeDef
+## CreateGameSessionInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreateGameSessionInputTypeDef
+from mypy_boto3_gamelift.type_defs import CreateGameSessionInputRequestTypeDef
 ```
 
 Required fields:
@@ -550,10 +550,10 @@ Optional fields:
 - `GameSessionData`: `str`
 - `Location`: `str`
 
-## CreateGameSessionOutputResponseTypeDef
+## CreateGameSessionOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreateGameSessionOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import CreateGameSessionOutputTypeDef
 ```
 
 Required fields:
@@ -562,10 +562,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateGameSessionQueueInputTypeDef
+## CreateGameSessionQueueInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreateGameSessionQueueInputTypeDef
+from mypy_boto3_gamelift.type_defs import CreateGameSessionQueueInputRequestTypeDef
 ```
 
 Required fields:
@@ -587,10 +587,10 @@ Optional fields:
 - `NotificationTarget`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateGameSessionQueueOutputResponseTypeDef
+## CreateGameSessionQueueOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreateGameSessionQueueOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import CreateGameSessionQueueOutputTypeDef
 ```
 
 Required fields:
@@ -600,10 +600,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateMatchmakingConfigurationInputTypeDef
+## CreateMatchmakingConfigurationInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreateMatchmakingConfigurationInputTypeDef
+from mypy_boto3_gamelift.type_defs import CreateMatchmakingConfigurationInputRequestTypeDef
 ```
 
 Required fields:
@@ -628,10 +628,10 @@ Optional fields:
 - `FlexMatchMode`: [FlexMatchModeType](./literals.md#flexmatchmodetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateMatchmakingConfigurationOutputResponseTypeDef
+## CreateMatchmakingConfigurationOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreateMatchmakingConfigurationOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import CreateMatchmakingConfigurationOutputTypeDef
 ```
 
 Required fields:
@@ -641,10 +641,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateMatchmakingRuleSetInputTypeDef
+## CreateMatchmakingRuleSetInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreateMatchmakingRuleSetInputTypeDef
+from mypy_boto3_gamelift.type_defs import CreateMatchmakingRuleSetInputRequestTypeDef
 ```
 
 Required fields:
@@ -656,10 +656,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateMatchmakingRuleSetOutputResponseTypeDef
+## CreateMatchmakingRuleSetOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreateMatchmakingRuleSetOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import CreateMatchmakingRuleSetOutputTypeDef
 ```
 
 Required fields:
@@ -669,10 +669,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePlayerSessionInputTypeDef
+## CreatePlayerSessionInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreatePlayerSessionInputTypeDef
+from mypy_boto3_gamelift.type_defs import CreatePlayerSessionInputRequestTypeDef
 ```
 
 Required fields:
@@ -684,10 +684,10 @@ Optional fields:
 
 - `PlayerData`: `str`
 
-## CreatePlayerSessionOutputResponseTypeDef
+## CreatePlayerSessionOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreatePlayerSessionOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import CreatePlayerSessionOutputTypeDef
 ```
 
 Required fields:
@@ -696,10 +696,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePlayerSessionsInputTypeDef
+## CreatePlayerSessionsInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreatePlayerSessionsInputTypeDef
+from mypy_boto3_gamelift.type_defs import CreatePlayerSessionsInputRequestTypeDef
 ```
 
 Required fields:
@@ -711,10 +711,10 @@ Optional fields:
 
 - `PlayerDataMap`: `Dict`\[`str`, `str`\]
 
-## CreatePlayerSessionsOutputResponseTypeDef
+## CreatePlayerSessionsOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreatePlayerSessionsOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import CreatePlayerSessionsOutputTypeDef
 ```
 
 Required fields:
@@ -724,10 +724,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateScriptInputTypeDef
+## CreateScriptInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreateScriptInputTypeDef
+from mypy_boto3_gamelift.type_defs import CreateScriptInputRequestTypeDef
 ```
 
 Optional fields:
@@ -738,10 +738,10 @@ Optional fields:
 - `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateScriptOutputResponseTypeDef
+## CreateScriptOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreateScriptOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import CreateScriptOutputTypeDef
 ```
 
 Required fields:
@@ -750,10 +750,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateVpcPeeringAuthorizationInputTypeDef
+## CreateVpcPeeringAuthorizationInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreateVpcPeeringAuthorizationInputTypeDef
+from mypy_boto3_gamelift.type_defs import CreateVpcPeeringAuthorizationInputRequestTypeDef
 ```
 
 Required fields:
@@ -761,10 +761,10 @@ Required fields:
 - `GameLiftAwsAccountId`: `str`
 - `PeerVpcId`: `str`
 
-## CreateVpcPeeringAuthorizationOutputResponseTypeDef
+## CreateVpcPeeringAuthorizationOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreateVpcPeeringAuthorizationOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import CreateVpcPeeringAuthorizationOutputTypeDef
 ```
 
 Required fields:
@@ -774,10 +774,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateVpcPeeringConnectionInputTypeDef
+## CreateVpcPeeringConnectionInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import CreateVpcPeeringConnectionInputTypeDef
+from mypy_boto3_gamelift.type_defs import CreateVpcPeeringConnectionInputRequestTypeDef
 ```
 
 Required fields:
@@ -786,40 +786,40 @@ Required fields:
 - `PeerVpcAwsAccountId`: `str`
 - `PeerVpcId`: `str`
 
-## DeleteAliasInputTypeDef
+## DeleteAliasInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DeleteAliasInputTypeDef
+from mypy_boto3_gamelift.type_defs import DeleteAliasInputRequestTypeDef
 ```
 
 Required fields:
 
 - `AliasId`: `str`
 
-## DeleteBuildInputTypeDef
+## DeleteBuildInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DeleteBuildInputTypeDef
+from mypy_boto3_gamelift.type_defs import DeleteBuildInputRequestTypeDef
 ```
 
 Required fields:
 
 - `BuildId`: `str`
 
-## DeleteFleetInputTypeDef
+## DeleteFleetInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DeleteFleetInputTypeDef
+from mypy_boto3_gamelift.type_defs import DeleteFleetInputRequestTypeDef
 ```
 
 Required fields:
 
 - `FleetId`: `str`
 
-## DeleteFleetLocationsInputTypeDef
+## DeleteFleetLocationsInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DeleteFleetLocationsInputTypeDef
+from mypy_boto3_gamelift.type_defs import DeleteFleetLocationsInputRequestTypeDef
 ```
 
 Required fields:
@@ -827,10 +827,10 @@ Required fields:
 - `FleetId`: `str`
 - `Locations`: `List`\[`str`\]
 
-## DeleteFleetLocationsOutputResponseTypeDef
+## DeleteFleetLocationsOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DeleteFleetLocationsOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DeleteFleetLocationsOutputTypeDef
 ```
 
 Required fields:
@@ -842,10 +842,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteGameServerGroupInputTypeDef
+## DeleteGameServerGroupInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DeleteGameServerGroupInputTypeDef
+from mypy_boto3_gamelift.type_defs import DeleteGameServerGroupInputRequestTypeDef
 ```
 
 Required fields:
@@ -857,10 +857,10 @@ Optional fields:
 - `DeleteOption`:
   [GameServerGroupDeleteOptionType](./literals.md#gameservergroupdeleteoptiontype)
 
-## DeleteGameServerGroupOutputResponseTypeDef
+## DeleteGameServerGroupOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DeleteGameServerGroupOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DeleteGameServerGroupOutputTypeDef
 ```
 
 Required fields:
@@ -870,40 +870,40 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteGameSessionQueueInputTypeDef
+## DeleteGameSessionQueueInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DeleteGameSessionQueueInputTypeDef
+from mypy_boto3_gamelift.type_defs import DeleteGameSessionQueueInputRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DeleteMatchmakingConfigurationInputTypeDef
+## DeleteMatchmakingConfigurationInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DeleteMatchmakingConfigurationInputTypeDef
+from mypy_boto3_gamelift.type_defs import DeleteMatchmakingConfigurationInputRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DeleteMatchmakingRuleSetInputTypeDef
+## DeleteMatchmakingRuleSetInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DeleteMatchmakingRuleSetInputTypeDef
+from mypy_boto3_gamelift.type_defs import DeleteMatchmakingRuleSetInputRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DeleteScalingPolicyInputTypeDef
+## DeleteScalingPolicyInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DeleteScalingPolicyInputTypeDef
+from mypy_boto3_gamelift.type_defs import DeleteScalingPolicyInputRequestTypeDef
 ```
 
 Required fields:
@@ -911,20 +911,20 @@ Required fields:
 - `Name`: `str`
 - `FleetId`: `str`
 
-## DeleteScriptInputTypeDef
+## DeleteScriptInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DeleteScriptInputTypeDef
+from mypy_boto3_gamelift.type_defs import DeleteScriptInputRequestTypeDef
 ```
 
 Required fields:
 
 - `ScriptId`: `str`
 
-## DeleteVpcPeeringAuthorizationInputTypeDef
+## DeleteVpcPeeringAuthorizationInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DeleteVpcPeeringAuthorizationInputTypeDef
+from mypy_boto3_gamelift.type_defs import DeleteVpcPeeringAuthorizationInputRequestTypeDef
 ```
 
 Required fields:
@@ -932,10 +932,10 @@ Required fields:
 - `GameLiftAwsAccountId`: `str`
 - `PeerVpcId`: `str`
 
-## DeleteVpcPeeringConnectionInputTypeDef
+## DeleteVpcPeeringConnectionInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DeleteVpcPeeringConnectionInputTypeDef
+from mypy_boto3_gamelift.type_defs import DeleteVpcPeeringConnectionInputRequestTypeDef
 ```
 
 Required fields:
@@ -943,10 +943,10 @@ Required fields:
 - `FleetId`: `str`
 - `VpcPeeringConnectionId`: `str`
 
-## DeregisterGameServerInputTypeDef
+## DeregisterGameServerInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DeregisterGameServerInputTypeDef
+from mypy_boto3_gamelift.type_defs import DeregisterGameServerInputRequestTypeDef
 ```
 
 Required fields:
@@ -954,20 +954,20 @@ Required fields:
 - `GameServerGroupName`: `str`
 - `GameServerId`: `str`
 
-## DescribeAliasInputTypeDef
+## DescribeAliasInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeAliasInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeAliasInputRequestTypeDef
 ```
 
 Required fields:
 
 - `AliasId`: `str`
 
-## DescribeAliasOutputResponseTypeDef
+## DescribeAliasOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeAliasOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeAliasOutputTypeDef
 ```
 
 Required fields:
@@ -976,20 +976,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBuildInputTypeDef
+## DescribeBuildInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeBuildInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeBuildInputRequestTypeDef
 ```
 
 Required fields:
 
 - `BuildId`: `str`
 
-## DescribeBuildOutputResponseTypeDef
+## DescribeBuildOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeBuildOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeBuildOutputTypeDef
 ```
 
 Required fields:
@@ -998,10 +998,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEC2InstanceLimitsInputTypeDef
+## DescribeEC2InstanceLimitsInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeEC2InstanceLimitsInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeEC2InstanceLimitsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1009,10 +1009,10 @@ Optional fields:
 - `EC2InstanceType`: [EC2InstanceTypeType](./literals.md#ec2instancetypetype)
 - `Location`: `str`
 
-## DescribeEC2InstanceLimitsOutputResponseTypeDef
+## DescribeEC2InstanceLimitsOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeEC2InstanceLimitsOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeEC2InstanceLimitsOutputTypeDef
 ```
 
 Required fields:
@@ -1022,10 +1022,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFleetAttributesInputTypeDef
+## DescribeFleetAttributesInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeFleetAttributesInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeFleetAttributesInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1034,10 +1034,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## DescribeFleetAttributesOutputResponseTypeDef
+## DescribeFleetAttributesOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeFleetAttributesOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeFleetAttributesOutputTypeDef
 ```
 
 Required fields:
@@ -1048,10 +1048,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFleetCapacityInputTypeDef
+## DescribeFleetCapacityInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeFleetCapacityInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeFleetCapacityInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1060,10 +1060,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## DescribeFleetCapacityOutputResponseTypeDef
+## DescribeFleetCapacityOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeFleetCapacityOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeFleetCapacityOutputTypeDef
 ```
 
 Required fields:
@@ -1074,10 +1074,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFleetEventsInputTypeDef
+## DescribeFleetEventsInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeFleetEventsInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeFleetEventsInputRequestTypeDef
 ```
 
 Required fields:
@@ -1091,10 +1091,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## DescribeFleetEventsOutputResponseTypeDef
+## DescribeFleetEventsOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeFleetEventsOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeFleetEventsOutputTypeDef
 ```
 
 Required fields:
@@ -1104,10 +1104,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFleetLocationAttributesInputTypeDef
+## DescribeFleetLocationAttributesInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeFleetLocationAttributesInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeFleetLocationAttributesInputRequestTypeDef
 ```
 
 Required fields:
@@ -1120,10 +1120,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## DescribeFleetLocationAttributesOutputResponseTypeDef
+## DescribeFleetLocationAttributesOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeFleetLocationAttributesOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeFleetLocationAttributesOutputTypeDef
 ```
 
 Required fields:
@@ -1136,10 +1136,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFleetLocationCapacityInputTypeDef
+## DescribeFleetLocationCapacityInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeFleetLocationCapacityInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeFleetLocationCapacityInputRequestTypeDef
 ```
 
 Required fields:
@@ -1147,10 +1147,10 @@ Required fields:
 - `FleetId`: `str`
 - `Location`: `str`
 
-## DescribeFleetLocationCapacityOutputResponseTypeDef
+## DescribeFleetLocationCapacityOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeFleetLocationCapacityOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeFleetLocationCapacityOutputTypeDef
 ```
 
 Required fields:
@@ -1159,10 +1159,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFleetLocationUtilizationInputTypeDef
+## DescribeFleetLocationUtilizationInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeFleetLocationUtilizationInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeFleetLocationUtilizationInputRequestTypeDef
 ```
 
 Required fields:
@@ -1170,10 +1170,10 @@ Required fields:
 - `FleetId`: `str`
 - `Location`: `str`
 
-## DescribeFleetLocationUtilizationOutputResponseTypeDef
+## DescribeFleetLocationUtilizationOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeFleetLocationUtilizationOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeFleetLocationUtilizationOutputTypeDef
 ```
 
 Required fields:
@@ -1183,10 +1183,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFleetPortSettingsInputTypeDef
+## DescribeFleetPortSettingsInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeFleetPortSettingsInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeFleetPortSettingsInputRequestTypeDef
 ```
 
 Required fields:
@@ -1197,10 +1197,10 @@ Optional fields:
 
 - `Location`: `str`
 
-## DescribeFleetPortSettingsOutputResponseTypeDef
+## DescribeFleetPortSettingsOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeFleetPortSettingsOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeFleetPortSettingsOutputTypeDef
 ```
 
 Required fields:
@@ -1215,10 +1215,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFleetUtilizationInputTypeDef
+## DescribeFleetUtilizationInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeFleetUtilizationInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeFleetUtilizationInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1227,10 +1227,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## DescribeFleetUtilizationOutputResponseTypeDef
+## DescribeFleetUtilizationOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeFleetUtilizationOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeFleetUtilizationOutputTypeDef
 ```
 
 Required fields:
@@ -1241,20 +1241,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeGameServerGroupInputTypeDef
+## DescribeGameServerGroupInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeGameServerGroupInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeGameServerGroupInputRequestTypeDef
 ```
 
 Required fields:
 
 - `GameServerGroupName`: `str`
 
-## DescribeGameServerGroupOutputResponseTypeDef
+## DescribeGameServerGroupOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeGameServerGroupOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeGameServerGroupOutputTypeDef
 ```
 
 Required fields:
@@ -1264,10 +1264,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeGameServerInputTypeDef
+## DescribeGameServerInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeGameServerInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeGameServerInputRequestTypeDef
 ```
 
 Required fields:
@@ -1275,10 +1275,10 @@ Required fields:
 - `GameServerGroupName`: `str`
 - `GameServerId`: `str`
 
-## DescribeGameServerInstancesInputTypeDef
+## DescribeGameServerInstancesInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeGameServerInstancesInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeGameServerInstancesInputRequestTypeDef
 ```
 
 Required fields:
@@ -1291,10 +1291,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## DescribeGameServerInstancesOutputResponseTypeDef
+## DescribeGameServerInstancesOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeGameServerInstancesOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeGameServerInstancesOutputTypeDef
 ```
 
 Required fields:
@@ -1305,10 +1305,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeGameServerOutputResponseTypeDef
+## DescribeGameServerOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeGameServerOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeGameServerOutputTypeDef
 ```
 
 Required fields:
@@ -1317,10 +1317,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeGameSessionDetailsInputTypeDef
+## DescribeGameSessionDetailsInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeGameSessionDetailsInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeGameSessionDetailsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1333,10 +1333,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## DescribeGameSessionDetailsOutputResponseTypeDef
+## DescribeGameSessionDetailsOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeGameSessionDetailsOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeGameSessionDetailsOutputTypeDef
 ```
 
 Required fields:
@@ -1347,20 +1347,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeGameSessionPlacementInputTypeDef
+## DescribeGameSessionPlacementInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeGameSessionPlacementInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeGameSessionPlacementInputRequestTypeDef
 ```
 
 Required fields:
 
 - `PlacementId`: `str`
 
-## DescribeGameSessionPlacementOutputResponseTypeDef
+## DescribeGameSessionPlacementOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeGameSessionPlacementOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeGameSessionPlacementOutputTypeDef
 ```
 
 Required fields:
@@ -1370,10 +1370,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeGameSessionQueuesInputTypeDef
+## DescribeGameSessionQueuesInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeGameSessionQueuesInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeGameSessionQueuesInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1382,10 +1382,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## DescribeGameSessionQueuesOutputResponseTypeDef
+## DescribeGameSessionQueuesOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeGameSessionQueuesOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeGameSessionQueuesOutputTypeDef
 ```
 
 Required fields:
@@ -1396,10 +1396,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeGameSessionsInputTypeDef
+## DescribeGameSessionsInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeGameSessionsInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeGameSessionsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1412,10 +1412,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## DescribeGameSessionsOutputResponseTypeDef
+## DescribeGameSessionsOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeGameSessionsOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeGameSessionsOutputTypeDef
 ```
 
 Required fields:
@@ -1426,10 +1426,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInstancesInputTypeDef
+## DescribeInstancesInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeInstancesInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeInstancesInputRequestTypeDef
 ```
 
 Required fields:
@@ -1443,10 +1443,10 @@ Optional fields:
 - `NextToken`: `str`
 - `Location`: `str`
 
-## DescribeInstancesOutputResponseTypeDef
+## DescribeInstancesOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeInstancesOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeInstancesOutputTypeDef
 ```
 
 Required fields:
@@ -1456,10 +1456,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMatchmakingConfigurationsInputTypeDef
+## DescribeMatchmakingConfigurationsInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeMatchmakingConfigurationsInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeMatchmakingConfigurationsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1469,10 +1469,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## DescribeMatchmakingConfigurationsOutputResponseTypeDef
+## DescribeMatchmakingConfigurationsOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeMatchmakingConfigurationsOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeMatchmakingConfigurationsOutputTypeDef
 ```
 
 Required fields:
@@ -1483,20 +1483,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMatchmakingInputTypeDef
+## DescribeMatchmakingInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeMatchmakingInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeMatchmakingInputRequestTypeDef
 ```
 
 Required fields:
 
 - `TicketIds`: `List`\[`str`\]
 
-## DescribeMatchmakingOutputResponseTypeDef
+## DescribeMatchmakingOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeMatchmakingOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeMatchmakingOutputTypeDef
 ```
 
 Required fields:
@@ -1506,10 +1506,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMatchmakingRuleSetsInputTypeDef
+## DescribeMatchmakingRuleSetsInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeMatchmakingRuleSetsInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeMatchmakingRuleSetsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1518,10 +1518,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## DescribeMatchmakingRuleSetsOutputResponseTypeDef
+## DescribeMatchmakingRuleSetsOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeMatchmakingRuleSetsOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeMatchmakingRuleSetsOutputTypeDef
 ```
 
 Required fields:
@@ -1532,10 +1532,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePlayerSessionsInputTypeDef
+## DescribePlayerSessionsInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribePlayerSessionsInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribePlayerSessionsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1547,10 +1547,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## DescribePlayerSessionsOutputResponseTypeDef
+## DescribePlayerSessionsOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribePlayerSessionsOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribePlayerSessionsOutputTypeDef
 ```
 
 Required fields:
@@ -1561,20 +1561,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRuntimeConfigurationInputTypeDef
+## DescribeRuntimeConfigurationInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeRuntimeConfigurationInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeRuntimeConfigurationInputRequestTypeDef
 ```
 
 Required fields:
 
 - `FleetId`: `str`
 
-## DescribeRuntimeConfigurationOutputResponseTypeDef
+## DescribeRuntimeConfigurationOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeRuntimeConfigurationOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeRuntimeConfigurationOutputTypeDef
 ```
 
 Required fields:
@@ -1584,10 +1584,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeScalingPoliciesInputTypeDef
+## DescribeScalingPoliciesInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeScalingPoliciesInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeScalingPoliciesInputRequestTypeDef
 ```
 
 Required fields:
@@ -1601,10 +1601,10 @@ Optional fields:
 - `NextToken`: `str`
 - `Location`: `str`
 
-## DescribeScalingPoliciesOutputResponseTypeDef
+## DescribeScalingPoliciesOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeScalingPoliciesOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeScalingPoliciesOutputTypeDef
 ```
 
 Required fields:
@@ -1615,20 +1615,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeScriptInputTypeDef
+## DescribeScriptInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeScriptInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeScriptInputRequestTypeDef
 ```
 
 Required fields:
 
 - `ScriptId`: `str`
 
-## DescribeScriptOutputResponseTypeDef
+## DescribeScriptOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeScriptOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeScriptOutputTypeDef
 ```
 
 Required fields:
@@ -1637,10 +1637,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeVpcPeeringAuthorizationsOutputResponseTypeDef
+## DescribeVpcPeeringAuthorizationsOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeVpcPeeringAuthorizationsOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeVpcPeeringAuthorizationsOutputTypeDef
 ```
 
 Required fields:
@@ -1650,20 +1650,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeVpcPeeringConnectionsInputTypeDef
+## DescribeVpcPeeringConnectionsInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeVpcPeeringConnectionsInputTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeVpcPeeringConnectionsInputRequestTypeDef
 ```
 
 Optional fields:
 
 - `FleetId`: `str`
 
-## DescribeVpcPeeringConnectionsOutputResponseTypeDef
+## DescribeVpcPeeringConnectionsOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import DescribeVpcPeeringConnectionsOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import DescribeVpcPeeringConnectionsOutputTypeDef
 ```
 
 Required fields:
@@ -2014,20 +2014,20 @@ Optional fields:
 - `MatchmakerData`: `str`
 - `Location`: `str`
 
-## GetGameSessionLogUrlInputTypeDef
+## GetGameSessionLogUrlInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import GetGameSessionLogUrlInputTypeDef
+from mypy_boto3_gamelift.type_defs import GetGameSessionLogUrlInputRequestTypeDef
 ```
 
 Required fields:
 
 - `GameSessionId`: `str`
 
-## GetGameSessionLogUrlOutputResponseTypeDef
+## GetGameSessionLogUrlOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import GetGameSessionLogUrlOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import GetGameSessionLogUrlOutputTypeDef
 ```
 
 Required fields:
@@ -2036,10 +2036,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetInstanceAccessInputTypeDef
+## GetInstanceAccessInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import GetInstanceAccessInputTypeDef
+from mypy_boto3_gamelift.type_defs import GetInstanceAccessInputRequestTypeDef
 ```
 
 Required fields:
@@ -2047,10 +2047,10 @@ Required fields:
 - `FleetId`: `str`
 - `InstanceId`: `str`
 
-## GetInstanceAccessOutputResponseTypeDef
+## GetInstanceAccessOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import GetInstanceAccessOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import GetInstanceAccessOutputTypeDef
 ```
 
 Required fields:
@@ -2145,10 +2145,10 @@ Optional fields:
 - `LaunchTemplateName`: `str`
 - `Version`: `str`
 
-## ListAliasesInputTypeDef
+## ListAliasesInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import ListAliasesInputTypeDef
+from mypy_boto3_gamelift.type_defs import ListAliasesInputRequestTypeDef
 ```
 
 Optional fields:
@@ -2159,10 +2159,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## ListAliasesOutputResponseTypeDef
+## ListAliasesOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import ListAliasesOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import ListAliasesOutputTypeDef
 ```
 
 Required fields:
@@ -2172,10 +2172,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBuildsInputTypeDef
+## ListBuildsInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import ListBuildsInputTypeDef
+from mypy_boto3_gamelift.type_defs import ListBuildsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -2184,10 +2184,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## ListBuildsOutputResponseTypeDef
+## ListBuildsOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import ListBuildsOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import ListBuildsOutputTypeDef
 ```
 
 Required fields:
@@ -2197,10 +2197,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFleetsInputTypeDef
+## ListFleetsInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import ListFleetsInputTypeDef
+from mypy_boto3_gamelift.type_defs import ListFleetsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -2210,10 +2210,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## ListFleetsOutputResponseTypeDef
+## ListFleetsOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import ListFleetsOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import ListFleetsOutputTypeDef
 ```
 
 Required fields:
@@ -2223,10 +2223,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListGameServerGroupsInputTypeDef
+## ListGameServerGroupsInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import ListGameServerGroupsInputTypeDef
+from mypy_boto3_gamelift.type_defs import ListGameServerGroupsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -2234,10 +2234,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## ListGameServerGroupsOutputResponseTypeDef
+## ListGameServerGroupsOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import ListGameServerGroupsOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import ListGameServerGroupsOutputTypeDef
 ```
 
 Required fields:
@@ -2248,10 +2248,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListGameServersInputTypeDef
+## ListGameServersInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import ListGameServersInputTypeDef
+from mypy_boto3_gamelift.type_defs import ListGameServersInputRequestTypeDef
 ```
 
 Required fields:
@@ -2264,10 +2264,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## ListGameServersOutputResponseTypeDef
+## ListGameServersOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import ListGameServersOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import ListGameServersOutputTypeDef
 ```
 
 Required fields:
@@ -2278,10 +2278,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListScriptsInputTypeDef
+## ListScriptsInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import ListScriptsInputTypeDef
+from mypy_boto3_gamelift.type_defs import ListScriptsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -2289,10 +2289,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## ListScriptsOutputResponseTypeDef
+## ListScriptsOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import ListScriptsOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import ListScriptsOutputTypeDef
 ```
 
 Required fields:
@@ -2302,20 +2302,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_gamelift.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceARN`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_gamelift.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -2527,10 +2527,10 @@ Optional fields:
 - `PriorityOrder`: `List`\[[PriorityTypeType](./literals.md#prioritytypetype)\]
 - `LocationOrder`: `List`\[`str`\]
 
-## PutScalingPolicyInputTypeDef
+## PutScalingPolicyInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import PutScalingPolicyInputTypeDef
+from mypy_boto3_gamelift.type_defs import PutScalingPolicyInputRequestTypeDef
 ```
 
 Required fields:
@@ -2552,10 +2552,10 @@ Optional fields:
 - `TargetConfiguration`:
   [TargetConfigurationTypeDef](./type_defs.md#targetconfigurationtypedef)
 
-## PutScalingPolicyOutputResponseTypeDef
+## PutScalingPolicyOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import PutScalingPolicyOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import PutScalingPolicyOutputTypeDef
 ```
 
 Required fields:
@@ -2564,10 +2564,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RegisterGameServerInputTypeDef
+## RegisterGameServerInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import RegisterGameServerInputTypeDef
+from mypy_boto3_gamelift.type_defs import RegisterGameServerInputRequestTypeDef
 ```
 
 Required fields:
@@ -2581,10 +2581,10 @@ Optional fields:
 - `ConnectionInfo`: `str`
 - `GameServerData`: `str`
 
-## RegisterGameServerOutputResponseTypeDef
+## RegisterGameServerOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import RegisterGameServerOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import RegisterGameServerOutputTypeDef
 ```
 
 Required fields:
@@ -2593,20 +2593,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RequestUploadCredentialsInputTypeDef
+## RequestUploadCredentialsInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import RequestUploadCredentialsInputTypeDef
+from mypy_boto3_gamelift.type_defs import RequestUploadCredentialsInputRequestTypeDef
 ```
 
 Required fields:
 
 - `BuildId`: `str`
 
-## RequestUploadCredentialsOutputResponseTypeDef
+## RequestUploadCredentialsOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import RequestUploadCredentialsOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import RequestUploadCredentialsOutputTypeDef
 ```
 
 Required fields:
@@ -2617,20 +2617,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ResolveAliasInputTypeDef
+## ResolveAliasInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import ResolveAliasInputTypeDef
+from mypy_boto3_gamelift.type_defs import ResolveAliasInputRequestTypeDef
 ```
 
 Required fields:
 
 - `AliasId`: `str`
 
-## ResolveAliasOutputResponseTypeDef
+## ResolveAliasOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import ResolveAliasOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import ResolveAliasOutputTypeDef
 ```
 
 Required fields:
@@ -2665,10 +2665,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## ResumeGameServerGroupInputTypeDef
+## ResumeGameServerGroupInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import ResumeGameServerGroupInputTypeDef
+from mypy_boto3_gamelift.type_defs import ResumeGameServerGroupInputRequestTypeDef
 ```
 
 Required fields:
@@ -2677,10 +2677,10 @@ Required fields:
 - `ResumeActions`: `List`\[`Literal['REPLACE_INSTANCE_TYPES']` (see
   [GameServerGroupActionType](./literals.md#gameservergroupactiontype))\]
 
-## ResumeGameServerGroupOutputResponseTypeDef
+## ResumeGameServerGroupOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import ResumeGameServerGroupOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import ResumeGameServerGroupOutputTypeDef
 ```
 
 Required fields:
@@ -2771,10 +2771,10 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `StorageLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 
-## SearchGameSessionsInputTypeDef
+## SearchGameSessionsInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import SearchGameSessionsInputTypeDef
+from mypy_boto3_gamelift.type_defs import SearchGameSessionsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -2787,10 +2787,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## SearchGameSessionsOutputResponseTypeDef
+## SearchGameSessionsOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import SearchGameSessionsOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import SearchGameSessionsOutputTypeDef
 ```
 
 Required fields:
@@ -2816,10 +2816,10 @@ Optional fields:
 
 - `Parameters`: `str`
 
-## StartFleetActionsInputTypeDef
+## StartFleetActionsInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import StartFleetActionsInputTypeDef
+from mypy_boto3_gamelift.type_defs import StartFleetActionsInputRequestTypeDef
 ```
 
 Required fields:
@@ -2832,10 +2832,10 @@ Optional fields:
 
 - `Location`: `str`
 
-## StartFleetActionsOutputResponseTypeDef
+## StartFleetActionsOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import StartFleetActionsOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import StartFleetActionsOutputTypeDef
 ```
 
 Required fields:
@@ -2845,10 +2845,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartGameSessionPlacementInputTypeDef
+## StartGameSessionPlacementInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import StartGameSessionPlacementInputTypeDef
+from mypy_boto3_gamelift.type_defs import StartGameSessionPlacementInputRequestTypeDef
 ```
 
 Required fields:
@@ -2868,10 +2868,10 @@ Optional fields:
   `List`\[[DesiredPlayerSessionTypeDef](./type_defs.md#desiredplayersessiontypedef)\]
 - `GameSessionData`: `str`
 
-## StartGameSessionPlacementOutputResponseTypeDef
+## StartGameSessionPlacementOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import StartGameSessionPlacementOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import StartGameSessionPlacementOutputTypeDef
 ```
 
 Required fields:
@@ -2881,10 +2881,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartMatchBackfillInputTypeDef
+## StartMatchBackfillInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import StartMatchBackfillInputTypeDef
+from mypy_boto3_gamelift.type_defs import StartMatchBackfillInputRequestTypeDef
 ```
 
 Required fields:
@@ -2897,10 +2897,10 @@ Optional fields:
 - `TicketId`: `str`
 - `GameSessionArn`: `str`
 
-## StartMatchBackfillOutputResponseTypeDef
+## StartMatchBackfillOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import StartMatchBackfillOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import StartMatchBackfillOutputTypeDef
 ```
 
 Required fields:
@@ -2910,10 +2910,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartMatchmakingInputTypeDef
+## StartMatchmakingInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import StartMatchmakingInputTypeDef
+from mypy_boto3_gamelift.type_defs import StartMatchmakingInputRequestTypeDef
 ```
 
 Required fields:
@@ -2925,10 +2925,10 @@ Optional fields:
 
 - `TicketId`: `str`
 
-## StartMatchmakingOutputResponseTypeDef
+## StartMatchmakingOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import StartMatchmakingOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import StartMatchmakingOutputTypeDef
 ```
 
 Required fields:
@@ -2938,10 +2938,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopFleetActionsInputTypeDef
+## StopFleetActionsInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import StopFleetActionsInputTypeDef
+from mypy_boto3_gamelift.type_defs import StopFleetActionsInputRequestTypeDef
 ```
 
 Required fields:
@@ -2954,10 +2954,10 @@ Optional fields:
 
 - `Location`: `str`
 
-## StopFleetActionsOutputResponseTypeDef
+## StopFleetActionsOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import StopFleetActionsOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import StopFleetActionsOutputTypeDef
 ```
 
 Required fields:
@@ -2967,20 +2967,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopGameSessionPlacementInputTypeDef
+## StopGameSessionPlacementInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import StopGameSessionPlacementInputTypeDef
+from mypy_boto3_gamelift.type_defs import StopGameSessionPlacementInputRequestTypeDef
 ```
 
 Required fields:
 
 - `PlacementId`: `str`
 
-## StopGameSessionPlacementOutputResponseTypeDef
+## StopGameSessionPlacementOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import StopGameSessionPlacementOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import StopGameSessionPlacementOutputTypeDef
 ```
 
 Required fields:
@@ -2990,20 +2990,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopMatchmakingInputTypeDef
+## StopMatchmakingInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import StopMatchmakingInputTypeDef
+from mypy_boto3_gamelift.type_defs import StopMatchmakingInputRequestTypeDef
 ```
 
 Required fields:
 
 - `TicketId`: `str`
 
-## SuspendGameServerGroupInputTypeDef
+## SuspendGameServerGroupInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import SuspendGameServerGroupInputTypeDef
+from mypy_boto3_gamelift.type_defs import SuspendGameServerGroupInputRequestTypeDef
 ```
 
 Required fields:
@@ -3012,10 +3012,10 @@ Required fields:
 - `SuspendActions`: `List`\[`Literal['REPLACE_INSTANCE_TYPES']` (see
   [GameServerGroupActionType](./literals.md#gameservergroupactiontype))\]
 
-## SuspendGameServerGroupOutputResponseTypeDef
+## SuspendGameServerGroupOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import SuspendGameServerGroupOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import SuspendGameServerGroupOutputTypeDef
 ```
 
 Required fields:
@@ -3025,10 +3025,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_gamelift.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3067,10 +3067,10 @@ Required fields:
 
 - `TargetValue`: `float`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_gamelift.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3078,10 +3078,10 @@ Required fields:
 - `ResourceARN`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateAliasInputTypeDef
+## UpdateAliasInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateAliasInputTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateAliasInputRequestTypeDef
 ```
 
 Required fields:
@@ -3095,10 +3095,10 @@ Optional fields:
 - `RoutingStrategy`:
   [RoutingStrategyTypeDef](./type_defs.md#routingstrategytypedef)
 
-## UpdateAliasOutputResponseTypeDef
+## UpdateAliasOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateAliasOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateAliasOutputTypeDef
 ```
 
 Required fields:
@@ -3107,10 +3107,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateBuildInputTypeDef
+## UpdateBuildInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateBuildInputTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateBuildInputRequestTypeDef
 ```
 
 Required fields:
@@ -3122,10 +3122,10 @@ Optional fields:
 - `Name`: `str`
 - `Version`: `str`
 
-## UpdateBuildOutputResponseTypeDef
+## UpdateBuildOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateBuildOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateBuildOutputTypeDef
 ```
 
 Required fields:
@@ -3134,10 +3134,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateFleetAttributesInputTypeDef
+## UpdateFleetAttributesInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateFleetAttributesInputTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateFleetAttributesInputRequestTypeDef
 ```
 
 Required fields:
@@ -3154,10 +3154,10 @@ Optional fields:
   [ResourceCreationLimitPolicyTypeDef](./type_defs.md#resourcecreationlimitpolicytypedef)
 - `MetricGroups`: `List`\[`str`\]
 
-## UpdateFleetAttributesOutputResponseTypeDef
+## UpdateFleetAttributesOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateFleetAttributesOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateFleetAttributesOutputTypeDef
 ```
 
 Required fields:
@@ -3166,10 +3166,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateFleetCapacityInputTypeDef
+## UpdateFleetCapacityInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateFleetCapacityInputTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateFleetCapacityInputRequestTypeDef
 ```
 
 Required fields:
@@ -3183,10 +3183,10 @@ Optional fields:
 - `MaxSize`: `int`
 - `Location`: `str`
 
-## UpdateFleetCapacityOutputResponseTypeDef
+## UpdateFleetCapacityOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateFleetCapacityOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateFleetCapacityOutputTypeDef
 ```
 
 Required fields:
@@ -3197,10 +3197,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateFleetPortSettingsInputTypeDef
+## UpdateFleetPortSettingsInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateFleetPortSettingsInputTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateFleetPortSettingsInputRequestTypeDef
 ```
 
 Required fields:
@@ -3214,10 +3214,10 @@ Optional fields:
 - `InboundPermissionRevocations`:
   `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 
-## UpdateFleetPortSettingsOutputResponseTypeDef
+## UpdateFleetPortSettingsOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateFleetPortSettingsOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateFleetPortSettingsOutputTypeDef
 ```
 
 Required fields:
@@ -3226,10 +3226,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateGameServerGroupInputTypeDef
+## UpdateGameServerGroupInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateGameServerGroupInputTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateGameServerGroupInputRequestTypeDef
 ```
 
 Required fields:
@@ -3246,10 +3246,10 @@ Optional fields:
 - `BalancingStrategy`:
   [BalancingStrategyType](./literals.md#balancingstrategytype)
 
-## UpdateGameServerGroupOutputResponseTypeDef
+## UpdateGameServerGroupOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateGameServerGroupOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateGameServerGroupOutputTypeDef
 ```
 
 Required fields:
@@ -3259,10 +3259,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateGameServerInputTypeDef
+## UpdateGameServerInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateGameServerInputTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateGameServerInputRequestTypeDef
 ```
 
 Required fields:
@@ -3278,10 +3278,10 @@ Optional fields:
 - `HealthCheck`: `Literal['HEALTHY']` (see
   [GameServerHealthCheckType](./literals.md#gameserverhealthchecktype))
 
-## UpdateGameServerOutputResponseTypeDef
+## UpdateGameServerOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateGameServerOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateGameServerOutputTypeDef
 ```
 
 Required fields:
@@ -3290,10 +3290,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateGameSessionInputTypeDef
+## UpdateGameSessionInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateGameSessionInputTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateGameSessionInputRequestTypeDef
 ```
 
 Required fields:
@@ -3309,10 +3309,10 @@ Optional fields:
 - `ProtectionPolicy`:
   [ProtectionPolicyType](./literals.md#protectionpolicytype)
 
-## UpdateGameSessionOutputResponseTypeDef
+## UpdateGameSessionOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateGameSessionOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateGameSessionOutputTypeDef
 ```
 
 Required fields:
@@ -3321,10 +3321,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateGameSessionQueueInputTypeDef
+## UpdateGameSessionQueueInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateGameSessionQueueInputTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateGameSessionQueueInputRequestTypeDef
 ```
 
 Required fields:
@@ -3345,10 +3345,10 @@ Optional fields:
 - `CustomEventData`: `str`
 - `NotificationTarget`: `str`
 
-## UpdateGameSessionQueueOutputResponseTypeDef
+## UpdateGameSessionQueueOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateGameSessionQueueOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateGameSessionQueueOutputTypeDef
 ```
 
 Required fields:
@@ -3358,10 +3358,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateMatchmakingConfigurationInputTypeDef
+## UpdateMatchmakingConfigurationInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateMatchmakingConfigurationInputTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateMatchmakingConfigurationInputRequestTypeDef
 ```
 
 Required fields:
@@ -3385,10 +3385,10 @@ Optional fields:
 - `BackfillMode`: [BackfillModeType](./literals.md#backfillmodetype)
 - `FlexMatchMode`: [FlexMatchModeType](./literals.md#flexmatchmodetype)
 
-## UpdateMatchmakingConfigurationOutputResponseTypeDef
+## UpdateMatchmakingConfigurationOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateMatchmakingConfigurationOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateMatchmakingConfigurationOutputTypeDef
 ```
 
 Required fields:
@@ -3398,10 +3398,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateRuntimeConfigurationInputTypeDef
+## UpdateRuntimeConfigurationInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateRuntimeConfigurationInputTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateRuntimeConfigurationInputRequestTypeDef
 ```
 
 Required fields:
@@ -3410,10 +3410,10 @@ Required fields:
 - `RuntimeConfiguration`:
   [RuntimeConfigurationTypeDef](./type_defs.md#runtimeconfigurationtypedef)
 
-## UpdateRuntimeConfigurationOutputResponseTypeDef
+## UpdateRuntimeConfigurationOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateRuntimeConfigurationOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateRuntimeConfigurationOutputTypeDef
 ```
 
 Required fields:
@@ -3423,10 +3423,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateScriptInputTypeDef
+## UpdateScriptInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateScriptInputTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateScriptInputRequestTypeDef
 ```
 
 Required fields:
@@ -3440,10 +3440,10 @@ Optional fields:
 - `StorageLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
-## UpdateScriptOutputResponseTypeDef
+## UpdateScriptOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import UpdateScriptOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import UpdateScriptOutputTypeDef
 ```
 
 Required fields:
@@ -3452,20 +3452,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ValidateMatchmakingRuleSetInputTypeDef
+## ValidateMatchmakingRuleSetInputRequestTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import ValidateMatchmakingRuleSetInputTypeDef
+from mypy_boto3_gamelift.type_defs import ValidateMatchmakingRuleSetInputRequestTypeDef
 ```
 
 Required fields:
 
 - `RuleSetBody`: `str`
 
-## ValidateMatchmakingRuleSetOutputResponseTypeDef
+## ValidateMatchmakingRuleSetOutputTypeDef
 
 ```python
-from mypy_boto3_gamelift.type_defs import ValidateMatchmakingRuleSetOutputResponseTypeDef
+from mypy_boto3_gamelift.type_defs import ValidateMatchmakingRuleSetOutputTypeDef
 ```
 
 Required fields:

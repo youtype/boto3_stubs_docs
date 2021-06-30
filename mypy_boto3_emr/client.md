@@ -11,6 +11,7 @@ type annotations stubs module
   - [EMRClient](#emrclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_instance_fleet](#add_instance_fleet)
     - [add_instance_groups](#add_instance_groups)
     - [add_job_flow_steps](#add_job_flow_steps)
@@ -100,6 +101,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+EMRClient exceptions.
+
+Type annotations for `boto3.client("emr").exceptions` method.
+
+Boto3 documentation:
+[EMR.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_instance_fleet
 
 Adds an instance fleet to a running cluster.
@@ -110,7 +122,7 @@ Boto3 documentation:
 [EMR.Client.add_instance_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_instance_fleet)
 
 Arguments mapping described in
-[AddInstanceFleetInputTypeDef](./type_defs.md#addinstancefleetinputtypedef).
+[AddInstanceFleetInputRequestTypeDef](./type_defs.md#addinstancefleetinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -120,7 +132,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[AddInstanceFleetOutputResponseTypeDef](./type_defs.md#addinstancefleetoutputresponsetypedef).
+[AddInstanceFleetOutputTypeDef](./type_defs.md#addinstancefleetoutputtypedef).
 
 ### add_instance_groups
 
@@ -132,7 +144,7 @@ Boto3 documentation:
 [EMR.Client.add_instance_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_instance_groups)
 
 Arguments mapping described in
-[AddInstanceGroupsInputTypeDef](./type_defs.md#addinstancegroupsinputtypedef).
+[AddInstanceGroupsInputRequestTypeDef](./type_defs.md#addinstancegroupsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -142,7 +154,7 @@ Keyword-only arguments:
 - `JobFlowId`: `str` *(required)*
 
 Returns
-[AddInstanceGroupsOutputResponseTypeDef](./type_defs.md#addinstancegroupsoutputresponsetypedef).
+[AddInstanceGroupsOutputTypeDef](./type_defs.md#addinstancegroupsoutputtypedef).
 
 ### add_job_flow_steps
 
@@ -154,7 +166,7 @@ Boto3 documentation:
 [EMR.Client.add_job_flow_steps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_job_flow_steps)
 
 Arguments mapping described in
-[AddJobFlowStepsInputTypeDef](./type_defs.md#addjobflowstepsinputtypedef).
+[AddJobFlowStepsInputRequestTypeDef](./type_defs.md#addjobflowstepsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -163,7 +175,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[AddJobFlowStepsOutputResponseTypeDef](./type_defs.md#addjobflowstepsoutputresponsetypedef).
+[AddJobFlowStepsOutputTypeDef](./type_defs.md#addjobflowstepsoutputtypedef).
 
 ### add_tags
 
@@ -175,7 +187,7 @@ Boto3 documentation:
 [EMR.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_tags)
 
 Arguments mapping described in
-[AddTagsInputTypeDef](./type_defs.md#addtagsinputtypedef).
+[AddTagsInputRequestTypeDef](./type_defs.md#addtagsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -209,7 +221,7 @@ Boto3 documentation:
 [EMR.Client.cancel_steps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.cancel_steps)
 
 Arguments mapping described in
-[CancelStepsInputTypeDef](./type_defs.md#cancelstepsinputtypedef).
+[CancelStepsInputRequestTypeDef](./type_defs.md#cancelstepsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -218,8 +230,7 @@ Keyword-only arguments:
 - `StepCancellationOption`:
   [StepCancellationOptionType](./literals.md#stepcancellationoptiontype)
 
-Returns
-[CancelStepsOutputResponseTypeDef](./type_defs.md#cancelstepsoutputresponsetypedef).
+Returns [CancelStepsOutputTypeDef](./type_defs.md#cancelstepsoutputtypedef).
 
 ### create_security_configuration
 
@@ -233,7 +244,7 @@ Boto3 documentation:
 [EMR.Client.create_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_security_configuration)
 
 Arguments mapping described in
-[CreateSecurityConfigurationInputTypeDef](./type_defs.md#createsecurityconfigurationinputtypedef).
+[CreateSecurityConfigurationInputRequestTypeDef](./type_defs.md#createsecurityconfigurationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -241,7 +252,7 @@ Keyword-only arguments:
 - `SecurityConfiguration`: `str` *(required)*
 
 Returns
-[CreateSecurityConfigurationOutputResponseTypeDef](./type_defs.md#createsecurityconfigurationoutputresponsetypedef).
+[CreateSecurityConfigurationOutputTypeDef](./type_defs.md#createsecurityconfigurationoutputtypedef).
 
 ### create_studio
 
@@ -253,7 +264,7 @@ Boto3 documentation:
 [EMR.Client.create_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_studio)
 
 Arguments mapping described in
-[CreateStudioInputTypeDef](./type_defs.md#createstudioinputtypedef).
+[CreateStudioInputRequestTypeDef](./type_defs.md#createstudioinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -269,8 +280,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateStudioOutputResponseTypeDef](./type_defs.md#createstudiooutputresponsetypedef).
+Returns [CreateStudioOutputTypeDef](./type_defs.md#createstudiooutputtypedef).
 
 ### create_studio_session_mapping
 
@@ -284,7 +294,7 @@ Boto3 documentation:
 [EMR.Client.create_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_studio_session_mapping)
 
 Arguments mapping described in
-[CreateStudioSessionMappingInputTypeDef](./type_defs.md#createstudiosessionmappinginputtypedef).
+[CreateStudioSessionMappingInputRequestTypeDef](./type_defs.md#createstudiosessionmappinginputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -306,7 +316,7 @@ Boto3 documentation:
 [EMR.Client.delete_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_security_configuration)
 
 Arguments mapping described in
-[DeleteSecurityConfigurationInputTypeDef](./type_defs.md#deletesecurityconfigurationinputtypedef).
+[DeleteSecurityConfigurationInputRequestTypeDef](./type_defs.md#deletesecurityconfigurationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -324,7 +334,7 @@ Boto3 documentation:
 [EMR.Client.delete_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_studio)
 
 Arguments mapping described in
-[DeleteStudioInputTypeDef](./type_defs.md#deletestudioinputtypedef).
+[DeleteStudioInputRequestTypeDef](./type_defs.md#deletestudioinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -341,7 +351,7 @@ Boto3 documentation:
 [EMR.Client.delete_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_studio_session_mapping)
 
 Arguments mapping described in
-[DeleteStudioSessionMappingInputTypeDef](./type_defs.md#deletestudiosessionmappinginputtypedef).
+[DeleteStudioSessionMappingInputRequestTypeDef](./type_defs.md#deletestudiosessionmappinginputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -362,14 +372,14 @@ Boto3 documentation:
 [EMR.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_cluster)
 
 Arguments mapping described in
-[DescribeClusterInputTypeDef](./type_defs.md#describeclusterinputtypedef).
+[DescribeClusterInputRequestTypeDef](./type_defs.md#describeclusterinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 
 Returns
-[DescribeClusterOutputResponseTypeDef](./type_defs.md#describeclusteroutputresponsetypedef).
+[DescribeClusterOutputTypeDef](./type_defs.md#describeclusteroutputtypedef).
 
 ### describe_job_flows
 
@@ -381,7 +391,7 @@ Boto3 documentation:
 [EMR.Client.describe_job_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_job_flows)
 
 Arguments mapping described in
-[DescribeJobFlowsInputTypeDef](./type_defs.md#describejobflowsinputtypedef).
+[DescribeJobFlowsInputRequestTypeDef](./type_defs.md#describejobflowsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -392,7 +402,7 @@ Keyword-only arguments:
   `List`\[[JobFlowExecutionStateType](./literals.md#jobflowexecutionstatetype)\]
 
 Returns
-[DescribeJobFlowsOutputResponseTypeDef](./type_defs.md#describejobflowsoutputresponsetypedef).
+[DescribeJobFlowsOutputTypeDef](./type_defs.md#describejobflowsoutputtypedef).
 
 ### describe_notebook_execution
 
@@ -404,14 +414,14 @@ Boto3 documentation:
 [EMR.Client.describe_notebook_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_notebook_execution)
 
 Arguments mapping described in
-[DescribeNotebookExecutionInputTypeDef](./type_defs.md#describenotebookexecutioninputtypedef).
+[DescribeNotebookExecutionInputRequestTypeDef](./type_defs.md#describenotebookexecutioninputrequesttypedef).
 
 Keyword-only arguments:
 
 - `NotebookExecutionId`: `str` *(required)*
 
 Returns
-[DescribeNotebookExecutionOutputResponseTypeDef](./type_defs.md#describenotebookexecutionoutputresponsetypedef).
+[DescribeNotebookExecutionOutputTypeDef](./type_defs.md#describenotebookexecutionoutputtypedef).
 
 ### describe_security_configuration
 
@@ -425,14 +435,14 @@ Boto3 documentation:
 [EMR.Client.describe_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_security_configuration)
 
 Arguments mapping described in
-[DescribeSecurityConfigurationInputTypeDef](./type_defs.md#describesecurityconfigurationinputtypedef).
+[DescribeSecurityConfigurationInputRequestTypeDef](./type_defs.md#describesecurityconfigurationinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[DescribeSecurityConfigurationOutputResponseTypeDef](./type_defs.md#describesecurityconfigurationoutputresponsetypedef).
+[DescribeSecurityConfigurationOutputTypeDef](./type_defs.md#describesecurityconfigurationoutputtypedef).
 
 ### describe_step
 
@@ -444,15 +454,14 @@ Boto3 documentation:
 [EMR.Client.describe_step](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_step)
 
 Arguments mapping described in
-[DescribeStepInputTypeDef](./type_defs.md#describestepinputtypedef).
+[DescribeStepInputRequestTypeDef](./type_defs.md#describestepinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `StepId`: `str` *(required)*
 
-Returns
-[DescribeStepOutputResponseTypeDef](./type_defs.md#describestepoutputresponsetypedef).
+Returns [DescribeStepOutputTypeDef](./type_defs.md#describestepoutputtypedef).
 
 ### describe_studio
 
@@ -465,14 +474,14 @@ Boto3 documentation:
 [EMR.Client.describe_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_studio)
 
 Arguments mapping described in
-[DescribeStudioInputTypeDef](./type_defs.md#describestudioinputtypedef).
+[DescribeStudioInputRequestTypeDef](./type_defs.md#describestudioinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `StudioId`: `str` *(required)*
 
 Returns
-[DescribeStudioOutputResponseTypeDef](./type_defs.md#describestudiooutputresponsetypedef).
+[DescribeStudioOutputTypeDef](./type_defs.md#describestudiooutputtypedef).
 
 ### generate_presigned_url
 
@@ -504,7 +513,7 @@ Boto3 documentation:
 [EMR.Client.get_block_public_access_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_block_public_access_configuration)
 
 Returns
-[GetBlockPublicAccessConfigurationOutputResponseTypeDef](./type_defs.md#getblockpublicaccessconfigurationoutputresponsetypedef).
+[GetBlockPublicAccessConfigurationOutputTypeDef](./type_defs.md#getblockpublicaccessconfigurationoutputtypedef).
 
 ### get_managed_scaling_policy
 
@@ -516,14 +525,14 @@ Boto3 documentation:
 [EMR.Client.get_managed_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_managed_scaling_policy)
 
 Arguments mapping described in
-[GetManagedScalingPolicyInputTypeDef](./type_defs.md#getmanagedscalingpolicyinputtypedef).
+[GetManagedScalingPolicyInputRequestTypeDef](./type_defs.md#getmanagedscalingpolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 
 Returns
-[GetManagedScalingPolicyOutputResponseTypeDef](./type_defs.md#getmanagedscalingpolicyoutputresponsetypedef).
+[GetManagedScalingPolicyOutputTypeDef](./type_defs.md#getmanagedscalingpolicyoutputtypedef).
 
 ### get_studio_session_mapping
 
@@ -536,7 +545,7 @@ Boto3 documentation:
 [EMR.Client.get_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_studio_session_mapping)
 
 Arguments mapping described in
-[GetStudioSessionMappingInputTypeDef](./type_defs.md#getstudiosessionmappinginputtypedef).
+[GetStudioSessionMappingInputRequestTypeDef](./type_defs.md#getstudiosessionmappinginputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -547,7 +556,7 @@ Keyword-only arguments:
 - `IdentityName`: `str`
 
 Returns
-[GetStudioSessionMappingOutputResponseTypeDef](./type_defs.md#getstudiosessionmappingoutputresponsetypedef).
+[GetStudioSessionMappingOutputTypeDef](./type_defs.md#getstudiosessionmappingoutputtypedef).
 
 ### list_bootstrap_actions
 
@@ -559,7 +568,7 @@ Boto3 documentation:
 [EMR.Client.list_bootstrap_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_bootstrap_actions)
 
 Arguments mapping described in
-[ListBootstrapActionsInputTypeDef](./type_defs.md#listbootstrapactionsinputtypedef).
+[ListBootstrapActionsInputRequestTypeDef](./type_defs.md#listbootstrapactionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -567,7 +576,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ListBootstrapActionsOutputResponseTypeDef](./type_defs.md#listbootstrapactionsoutputresponsetypedef).
+[ListBootstrapActionsOutputTypeDef](./type_defs.md#listbootstrapactionsoutputtypedef).
 
 ### list_clusters
 
@@ -579,7 +588,7 @@ Boto3 documentation:
 [EMR.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_clusters)
 
 Arguments mapping described in
-[ListClustersInputTypeDef](./type_defs.md#listclustersinputtypedef).
+[ListClustersInputRequestTypeDef](./type_defs.md#listclustersinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -588,8 +597,7 @@ Keyword-only arguments:
 - `ClusterStates`: `List`\[[ClusterStateType](./literals.md#clusterstatetype)\]
 - `Marker`: `str`
 
-Returns
-[ListClustersOutputResponseTypeDef](./type_defs.md#listclustersoutputresponsetypedef).
+Returns [ListClustersOutputTypeDef](./type_defs.md#listclustersoutputtypedef).
 
 ### list_instance_fleets
 
@@ -601,7 +609,7 @@ Boto3 documentation:
 [EMR.Client.list_instance_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instance_fleets)
 
 Arguments mapping described in
-[ListInstanceFleetsInputTypeDef](./type_defs.md#listinstancefleetsinputtypedef).
+[ListInstanceFleetsInputRequestTypeDef](./type_defs.md#listinstancefleetsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -609,7 +617,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ListInstanceFleetsOutputResponseTypeDef](./type_defs.md#listinstancefleetsoutputresponsetypedef).
+[ListInstanceFleetsOutputTypeDef](./type_defs.md#listinstancefleetsoutputtypedef).
 
 ### list_instance_groups
 
@@ -621,7 +629,7 @@ Boto3 documentation:
 [EMR.Client.list_instance_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instance_groups)
 
 Arguments mapping described in
-[ListInstanceGroupsInputTypeDef](./type_defs.md#listinstancegroupsinputtypedef).
+[ListInstanceGroupsInputRequestTypeDef](./type_defs.md#listinstancegroupsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -629,7 +637,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ListInstanceGroupsOutputResponseTypeDef](./type_defs.md#listinstancegroupsoutputresponsetypedef).
+[ListInstanceGroupsOutputTypeDef](./type_defs.md#listinstancegroupsoutputtypedef).
 
 ### list_instances
 
@@ -642,7 +650,7 @@ Boto3 documentation:
 [EMR.Client.list_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instances)
 
 Arguments mapping described in
-[ListInstancesInputTypeDef](./type_defs.md#listinstancesinputtypedef).
+[ListInstancesInputRequestTypeDef](./type_defs.md#listinstancesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -658,7 +666,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ListInstancesOutputResponseTypeDef](./type_defs.md#listinstancesoutputresponsetypedef).
+[ListInstancesOutputTypeDef](./type_defs.md#listinstancesoutputtypedef).
 
 ### list_notebook_executions
 
@@ -670,7 +678,7 @@ Boto3 documentation:
 [EMR.Client.list_notebook_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_notebook_executions)
 
 Arguments mapping described in
-[ListNotebookExecutionsInputTypeDef](./type_defs.md#listnotebookexecutionsinputtypedef).
+[ListNotebookExecutionsInputRequestTypeDef](./type_defs.md#listnotebookexecutionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -682,7 +690,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ListNotebookExecutionsOutputResponseTypeDef](./type_defs.md#listnotebookexecutionsoutputresponsetypedef).
+[ListNotebookExecutionsOutputTypeDef](./type_defs.md#listnotebookexecutionsoutputtypedef).
 
 ### list_security_configurations
 
@@ -695,14 +703,14 @@ Boto3 documentation:
 [EMR.Client.list_security_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_security_configurations)
 
 Arguments mapping described in
-[ListSecurityConfigurationsInputTypeDef](./type_defs.md#listsecurityconfigurationsinputtypedef).
+[ListSecurityConfigurationsInputRequestTypeDef](./type_defs.md#listsecurityconfigurationsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `Marker`: `str`
 
 Returns
-[ListSecurityConfigurationsOutputResponseTypeDef](./type_defs.md#listsecurityconfigurationsoutputresponsetypedef).
+[ListSecurityConfigurationsOutputTypeDef](./type_defs.md#listsecurityconfigurationsoutputtypedef).
 
 ### list_steps
 
@@ -715,7 +723,7 @@ Boto3 documentation:
 [EMR.Client.list_steps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_steps)
 
 Arguments mapping described in
-[ListStepsInputTypeDef](./type_defs.md#liststepsinputtypedef).
+[ListStepsInputRequestTypeDef](./type_defs.md#liststepsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -724,8 +732,7 @@ Keyword-only arguments:
 - `StepIds`: `List`\[`str`\]
 - `Marker`: `str`
 
-Returns
-[ListStepsOutputResponseTypeDef](./type_defs.md#liststepsoutputresponsetypedef).
+Returns [ListStepsOutputTypeDef](./type_defs.md#liststepsoutputtypedef).
 
 ### list_studio_session_mappings
 
@@ -738,7 +745,7 @@ Boto3 documentation:
 [EMR.Client.list_studio_session_mappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_studio_session_mappings)
 
 Arguments mapping described in
-[ListStudioSessionMappingsInputTypeDef](./type_defs.md#liststudiosessionmappingsinputtypedef).
+[ListStudioSessionMappingsInputRequestTypeDef](./type_defs.md#liststudiosessionmappingsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -747,7 +754,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ListStudioSessionMappingsOutputResponseTypeDef](./type_defs.md#liststudiosessionmappingsoutputresponsetypedef).
+[ListStudioSessionMappingsOutputTypeDef](./type_defs.md#liststudiosessionmappingsoutputtypedef).
 
 ### list_studios
 
@@ -759,14 +766,13 @@ Boto3 documentation:
 [EMR.Client.list_studios](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_studios)
 
 Arguments mapping described in
-[ListStudiosInputTypeDef](./type_defs.md#liststudiosinputtypedef).
+[ListStudiosInputRequestTypeDef](./type_defs.md#liststudiosinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `Marker`: `str`
 
-Returns
-[ListStudiosOutputResponseTypeDef](./type_defs.md#liststudiosoutputresponsetypedef).
+Returns [ListStudiosOutputTypeDef](./type_defs.md#liststudiosoutputtypedef).
 
 ### modify_cluster
 
@@ -779,7 +785,7 @@ Boto3 documentation:
 [EMR.Client.modify_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_cluster)
 
 Arguments mapping described in
-[ModifyClusterInputTypeDef](./type_defs.md#modifyclusterinputtypedef).
+[ModifyClusterInputRequestTypeDef](./type_defs.md#modifyclusterinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -787,7 +793,7 @@ Keyword-only arguments:
 - `StepConcurrencyLevel`: `int`
 
 Returns
-[ModifyClusterOutputResponseTypeDef](./type_defs.md#modifyclusteroutputresponsetypedef).
+[ModifyClusterOutputTypeDef](./type_defs.md#modifyclusteroutputtypedef).
 
 ### modify_instance_fleet
 
@@ -801,7 +807,7 @@ Boto3 documentation:
 [EMR.Client.modify_instance_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_instance_fleet)
 
 Arguments mapping described in
-[ModifyInstanceFleetInputTypeDef](./type_defs.md#modifyinstancefleetinputtypedef).
+[ModifyInstanceFleetInputRequestTypeDef](./type_defs.md#modifyinstancefleetinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -821,7 +827,7 @@ Boto3 documentation:
 [EMR.Client.modify_instance_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_instance_groups)
 
 Arguments mapping described in
-[ModifyInstanceGroupsInputTypeDef](./type_defs.md#modifyinstancegroupsinputtypedef).
+[ModifyInstanceGroupsInputRequestTypeDef](./type_defs.md#modifyinstancegroupsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -840,7 +846,7 @@ Boto3 documentation:
 [EMR.Client.put_auto_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_auto_scaling_policy)
 
 Arguments mapping described in
-[PutAutoScalingPolicyInputTypeDef](./type_defs.md#putautoscalingpolicyinputtypedef).
+[PutAutoScalingPolicyInputRequestTypeDef](./type_defs.md#putautoscalingpolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -851,7 +857,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutAutoScalingPolicyOutputResponseTypeDef](./type_defs.md#putautoscalingpolicyoutputresponsetypedef).
+[PutAutoScalingPolicyOutputTypeDef](./type_defs.md#putautoscalingpolicyoutputtypedef).
 
 ### put_block_public_access_configuration
 
@@ -865,7 +871,7 @@ Boto3 documentation:
 [EMR.Client.put_block_public_access_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_block_public_access_configuration)
 
 Arguments mapping described in
-[PutBlockPublicAccessConfigurationInputTypeDef](./type_defs.md#putblockpublicaccessconfigurationinputtypedef).
+[PutBlockPublicAccessConfigurationInputRequestTypeDef](./type_defs.md#putblockpublicaccessconfigurationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -885,7 +891,7 @@ Boto3 documentation:
 [EMR.Client.put_managed_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_managed_scaling_policy)
 
 Arguments mapping described in
-[PutManagedScalingPolicyInputTypeDef](./type_defs.md#putmanagedscalingpolicyinputtypedef).
+[PutManagedScalingPolicyInputRequestTypeDef](./type_defs.md#putmanagedscalingpolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -907,7 +913,7 @@ Boto3 documentation:
 [EMR.Client.remove_auto_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_auto_scaling_policy)
 
 Arguments mapping described in
-[RemoveAutoScalingPolicyInputTypeDef](./type_defs.md#removeautoscalingpolicyinputtypedef).
+[RemoveAutoScalingPolicyInputRequestTypeDef](./type_defs.md#removeautoscalingpolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -927,7 +933,7 @@ Boto3 documentation:
 [EMR.Client.remove_managed_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_managed_scaling_policy)
 
 Arguments mapping described in
-[RemoveManagedScalingPolicyInputTypeDef](./type_defs.md#removemanagedscalingpolicyinputtypedef).
+[RemoveManagedScalingPolicyInputRequestTypeDef](./type_defs.md#removemanagedscalingpolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -945,7 +951,7 @@ Boto3 documentation:
 [EMR.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_tags)
 
 Arguments mapping described in
-[RemoveTagsInputTypeDef](./type_defs.md#removetagsinputtypedef).
+[RemoveTagsInputRequestTypeDef](./type_defs.md#removetagsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -964,7 +970,7 @@ Boto3 documentation:
 [EMR.Client.run_job_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.run_job_flow)
 
 Arguments mapping described in
-[RunJobFlowInputTypeDef](./type_defs.md#runjobflowinputtypedef).
+[RunJobFlowInputRequestTypeDef](./type_defs.md#runjobflowinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1007,8 +1013,7 @@ Keyword-only arguments:
 - `PlacementGroupConfigs`:
   `List`\[[PlacementGroupConfigTypeDef](./type_defs.md#placementgroupconfigtypedef)\]
 
-Returns
-[RunJobFlowOutputResponseTypeDef](./type_defs.md#runjobflowoutputresponsetypedef).
+Returns [RunJobFlowOutputTypeDef](./type_defs.md#runjobflowoutputtypedef).
 
 ### set_termination_protection
 
@@ -1022,7 +1027,7 @@ Boto3 documentation:
 [EMR.Client.set_termination_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.set_termination_protection)
 
 Arguments mapping described in
-[SetTerminationProtectionInputTypeDef](./type_defs.md#setterminationprotectioninputtypedef).
+[SetTerminationProtectionInputRequestTypeDef](./type_defs.md#setterminationprotectioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1040,7 +1045,7 @@ Boto3 documentation:
 [EMR.Client.set_visible_to_all_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.set_visible_to_all_users)
 
 Arguments mapping described in
-[SetVisibleToAllUsersInputTypeDef](./type_defs.md#setvisibletoallusersinputtypedef).
+[SetVisibleToAllUsersInputRequestTypeDef](./type_defs.md#setvisibletoallusersinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1057,7 +1062,7 @@ Boto3 documentation:
 [EMR.Client.start_notebook_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.start_notebook_execution)
 
 Arguments mapping described in
-[StartNotebookExecutionInputTypeDef](./type_defs.md#startnotebookexecutioninputtypedef).
+[StartNotebookExecutionInputRequestTypeDef](./type_defs.md#startnotebookexecutioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1073,7 +1078,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[StartNotebookExecutionOutputResponseTypeDef](./type_defs.md#startnotebookexecutionoutputresponsetypedef).
+[StartNotebookExecutionOutputTypeDef](./type_defs.md#startnotebookexecutionoutputtypedef).
 
 ### stop_notebook_execution
 
@@ -1085,7 +1090,7 @@ Boto3 documentation:
 [EMR.Client.stop_notebook_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.stop_notebook_execution)
 
 Arguments mapping described in
-[StopNotebookExecutionInputTypeDef](./type_defs.md#stopnotebookexecutioninputtypedef).
+[StopNotebookExecutionInputRequestTypeDef](./type_defs.md#stopnotebookexecutioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1101,7 +1106,7 @@ Boto3 documentation:
 [EMR.Client.terminate_job_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.terminate_job_flows)
 
 Arguments mapping described in
-[TerminateJobFlowsInputTypeDef](./type_defs.md#terminatejobflowsinputtypedef).
+[TerminateJobFlowsInputRequestTypeDef](./type_defs.md#terminatejobflowsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1118,7 +1123,7 @@ Boto3 documentation:
 [EMR.Client.update_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.update_studio)
 
 Arguments mapping described in
-[UpdateStudioInputTypeDef](./type_defs.md#updatestudioinputtypedef).
+[UpdateStudioInputRequestTypeDef](./type_defs.md#updatestudioinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1140,7 +1145,7 @@ Boto3 documentation:
 [EMR.Client.update_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.update_studio_session_mapping)
 
 Arguments mapping described in
-[UpdateStudioSessionMappingInputTypeDef](./type_defs.md#updatestudiosessionmappinginputtypedef).
+[UpdateStudioSessionMappingInputRequestTypeDef](./type_defs.md#updatestudiosessionmappinginputrequesttypedef).
 
 Keyword-only arguments:
 

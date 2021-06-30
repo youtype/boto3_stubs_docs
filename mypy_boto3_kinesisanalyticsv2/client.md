@@ -11,6 +11,7 @@ type annotations stubs module
   - [KinesisAnalyticsV2Client](#kinesisanalyticsv2client)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_application_cloud_watch_logging_option](#add_application_cloud_watch_logging_option)
     - [add_application_input](#add_application_input)
     - [add_application_input_processing_configuration](#add_application_input_processing_configuration)
@@ -93,6 +94,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+KinesisAnalyticsV2Client exceptions.
+
+Type annotations for `boto3.client("kinesisanalyticsv2").exceptions` method.
+
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_application_cloud_watch_logging_option
 
 Adds an Amazon CloudWatch log stream to monitor application configuration
@@ -106,7 +118,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.add_application_cloud_watch_logging_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_cloud_watch_logging_option)
 
 Arguments mapping described in
-[AddApplicationCloudWatchLoggingOptionRequestTypeDef](./type_defs.md#addapplicationcloudwatchloggingoptionrequesttypedef).
+[AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef](./type_defs.md#addapplicationcloudwatchloggingoptionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -118,7 +130,7 @@ Keyword-only arguments:
 - `ConditionalToken`: `str`
 
 Returns
-[AddApplicationCloudWatchLoggingOptionResponseResponseTypeDef](./type_defs.md#addapplicationcloudwatchloggingoptionresponseresponsetypedef).
+[AddApplicationCloudWatchLoggingOptionResponseTypeDef](./type_defs.md#addapplicationcloudwatchloggingoptionresponsetypedef).
 
 ### add_application_input
 
@@ -131,7 +143,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.add_application_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_input)
 
 Arguments mapping described in
-[AddApplicationInputRequestTypeDef](./type_defs.md#addapplicationinputrequesttypedef).
+[AddApplicationInputRequestRequestTypeDef](./type_defs.md#addapplicationinputrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -140,7 +152,7 @@ Keyword-only arguments:
 - `Input`: [InputTypeDef](./type_defs.md#inputtypedef) *(required)*
 
 Returns
-[AddApplicationInputResponseResponseTypeDef](./type_defs.md#addapplicationinputresponseresponsetypedef).
+[AddApplicationInputResponseTypeDef](./type_defs.md#addapplicationinputresponsetypedef).
 
 ### add_application_input_processing_configuration
 
@@ -155,7 +167,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.add_application_input_processing_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_input_processing_configuration)
 
 Arguments mapping described in
-[AddApplicationInputProcessingConfigurationRequestTypeDef](./type_defs.md#addapplicationinputprocessingconfigurationrequesttypedef).
+[AddApplicationInputProcessingConfigurationRequestRequestTypeDef](./type_defs.md#addapplicationinputprocessingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -167,7 +179,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[AddApplicationInputProcessingConfigurationResponseResponseTypeDef](./type_defs.md#addapplicationinputprocessingconfigurationresponseresponsetypedef).
+[AddApplicationInputProcessingConfigurationResponseTypeDef](./type_defs.md#addapplicationinputprocessingconfigurationresponsetypedef).
 
 ### add_application_output
 
@@ -181,7 +193,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.add_application_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_output)
 
 Arguments mapping described in
-[AddApplicationOutputRequestTypeDef](./type_defs.md#addapplicationoutputrequesttypedef).
+[AddApplicationOutputRequestRequestTypeDef](./type_defs.md#addapplicationoutputrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -190,7 +202,7 @@ Keyword-only arguments:
 - `Output`: [OutputTypeDef](./type_defs.md#outputtypedef) *(required)*
 
 Returns
-[AddApplicationOutputResponseResponseTypeDef](./type_defs.md#addapplicationoutputresponseresponsetypedef).
+[AddApplicationOutputResponseTypeDef](./type_defs.md#addapplicationoutputresponsetypedef).
 
 ### add_application_reference_data_source
 
@@ -205,7 +217,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.add_application_reference_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_reference_data_source)
 
 Arguments mapping described in
-[AddApplicationReferenceDataSourceRequestTypeDef](./type_defs.md#addapplicationreferencedatasourcerequesttypedef).
+[AddApplicationReferenceDataSourceRequestRequestTypeDef](./type_defs.md#addapplicationreferencedatasourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -216,7 +228,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[AddApplicationReferenceDataSourceResponseResponseTypeDef](./type_defs.md#addapplicationreferencedatasourceresponseresponsetypedef).
+[AddApplicationReferenceDataSourceResponseTypeDef](./type_defs.md#addapplicationreferencedatasourceresponsetypedef).
 
 ### add_application_vpc_configuration
 
@@ -229,7 +241,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.add_application_vpc_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_vpc_configuration)
 
 Arguments mapping described in
-[AddApplicationVpcConfigurationRequestTypeDef](./type_defs.md#addapplicationvpcconfigurationrequesttypedef).
+[AddApplicationVpcConfigurationRequestRequestTypeDef](./type_defs.md#addapplicationvpcconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -241,7 +253,7 @@ Keyword-only arguments:
 - `ConditionalToken`: `str`
 
 Returns
-[AddApplicationVpcConfigurationResponseResponseTypeDef](./type_defs.md#addapplicationvpcconfigurationresponseresponsetypedef).
+[AddApplicationVpcConfigurationResponseTypeDef](./type_defs.md#addapplicationvpcconfigurationresponsetypedef).
 
 ### can_paginate
 
@@ -269,7 +281,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.create_application)
 
 Arguments mapping described in
-[CreateApplicationRequestTypeDef](./type_defs.md#createapplicationrequesttypedef).
+[CreateApplicationRequestRequestTypeDef](./type_defs.md#createapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -286,7 +298,7 @@ Keyword-only arguments:
 - `ApplicationMode`: [ApplicationModeType](./literals.md#applicationmodetype)
 
 Returns
-[CreateApplicationResponseResponseTypeDef](./type_defs.md#createapplicationresponseresponsetypedef).
+[CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
 
 ### create_application_presigned_url
 
@@ -300,7 +312,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.create_application_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.create_application_presigned_url)
 
 Arguments mapping described in
-[CreateApplicationPresignedUrlRequestTypeDef](./type_defs.md#createapplicationpresignedurlrequesttypedef).
+[CreateApplicationPresignedUrlRequestRequestTypeDef](./type_defs.md#createapplicationpresignedurlrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -309,7 +321,7 @@ Keyword-only arguments:
 - `SessionExpirationDurationInSeconds`: `int`
 
 Returns
-[CreateApplicationPresignedUrlResponseResponseTypeDef](./type_defs.md#createapplicationpresignedurlresponseresponsetypedef).
+[CreateApplicationPresignedUrlResponseTypeDef](./type_defs.md#createapplicationpresignedurlresponsetypedef).
 
 ### create_application_snapshot
 
@@ -322,7 +334,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.create_application_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.create_application_snapshot)
 
 Arguments mapping described in
-[CreateApplicationSnapshotRequestTypeDef](./type_defs.md#createapplicationsnapshotrequesttypedef).
+[CreateApplicationSnapshotRequestRequestTypeDef](./type_defs.md#createapplicationsnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -342,7 +354,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application)
 
 Arguments mapping described in
-[DeleteApplicationRequestTypeDef](./type_defs.md#deleteapplicationrequesttypedef).
+[DeleteApplicationRequestRequestTypeDef](./type_defs.md#deleteapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -364,7 +376,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.delete_application_cloud_watch_logging_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_cloud_watch_logging_option)
 
 Arguments mapping described in
-[DeleteApplicationCloudWatchLoggingOptionRequestTypeDef](./type_defs.md#deleteapplicationcloudwatchloggingoptionrequesttypedef).
+[DeleteApplicationCloudWatchLoggingOptionRequestRequestTypeDef](./type_defs.md#deleteapplicationcloudwatchloggingoptionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -374,7 +386,7 @@ Keyword-only arguments:
 - `ConditionalToken`: `str`
 
 Returns
-[DeleteApplicationCloudWatchLoggingOptionResponseResponseTypeDef](./type_defs.md#deleteapplicationcloudwatchloggingoptionresponseresponsetypedef).
+[DeleteApplicationCloudWatchLoggingOptionResponseTypeDef](./type_defs.md#deleteapplicationcloudwatchloggingoptionresponsetypedef).
 
 ### delete_application_input_processing_configuration
 
@@ -388,7 +400,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.delete_application_input_processing_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_input_processing_configuration)
 
 Arguments mapping described in
-[DeleteApplicationInputProcessingConfigurationRequestTypeDef](./type_defs.md#deleteapplicationinputprocessingconfigurationrequesttypedef).
+[DeleteApplicationInputProcessingConfigurationRequestRequestTypeDef](./type_defs.md#deleteapplicationinputprocessingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -397,7 +409,7 @@ Keyword-only arguments:
 - `InputId`: `str` *(required)*
 
 Returns
-[DeleteApplicationInputProcessingConfigurationResponseResponseTypeDef](./type_defs.md#deleteapplicationinputprocessingconfigurationresponseresponsetypedef).
+[DeleteApplicationInputProcessingConfigurationResponseTypeDef](./type_defs.md#deleteapplicationinputprocessingconfigurationresponsetypedef).
 
 ### delete_application_output
 
@@ -411,7 +423,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.delete_application_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_output)
 
 Arguments mapping described in
-[DeleteApplicationOutputRequestTypeDef](./type_defs.md#deleteapplicationoutputrequesttypedef).
+[DeleteApplicationOutputRequestRequestTypeDef](./type_defs.md#deleteapplicationoutputrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -420,7 +432,7 @@ Keyword-only arguments:
 - `OutputId`: `str` *(required)*
 
 Returns
-[DeleteApplicationOutputResponseResponseTypeDef](./type_defs.md#deleteapplicationoutputresponseresponsetypedef).
+[DeleteApplicationOutputResponseTypeDef](./type_defs.md#deleteapplicationoutputresponsetypedef).
 
 ### delete_application_reference_data_source
 
@@ -435,7 +447,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.delete_application_reference_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_reference_data_source)
 
 Arguments mapping described in
-[DeleteApplicationReferenceDataSourceRequestTypeDef](./type_defs.md#deleteapplicationreferencedatasourcerequesttypedef).
+[DeleteApplicationReferenceDataSourceRequestRequestTypeDef](./type_defs.md#deleteapplicationreferencedatasourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -444,7 +456,7 @@ Keyword-only arguments:
 - `ReferenceId`: `str` *(required)*
 
 Returns
-[DeleteApplicationReferenceDataSourceResponseResponseTypeDef](./type_defs.md#deleteapplicationreferencedatasourceresponseresponsetypedef).
+[DeleteApplicationReferenceDataSourceResponseTypeDef](./type_defs.md#deleteapplicationreferencedatasourceresponsetypedef).
 
 ### delete_application_snapshot
 
@@ -457,7 +469,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.delete_application_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_snapshot)
 
 Arguments mapping described in
-[DeleteApplicationSnapshotRequestTypeDef](./type_defs.md#deleteapplicationsnapshotrequesttypedef).
+[DeleteApplicationSnapshotRequestRequestTypeDef](./type_defs.md#deleteapplicationsnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -479,7 +491,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.delete_application_vpc_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_vpc_configuration)
 
 Arguments mapping described in
-[DeleteApplicationVpcConfigurationRequestTypeDef](./type_defs.md#deleteapplicationvpcconfigurationrequesttypedef).
+[DeleteApplicationVpcConfigurationRequestRequestTypeDef](./type_defs.md#deleteapplicationvpcconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -489,7 +501,7 @@ Keyword-only arguments:
 - `ConditionalToken`: `str`
 
 Returns
-[DeleteApplicationVpcConfigurationResponseResponseTypeDef](./type_defs.md#deleteapplicationvpcconfigurationresponseresponsetypedef).
+[DeleteApplicationVpcConfigurationResponseTypeDef](./type_defs.md#deleteapplicationvpcconfigurationresponsetypedef).
 
 ### describe_application
 
@@ -502,7 +514,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.describe_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.describe_application)
 
 Arguments mapping described in
-[DescribeApplicationRequestTypeDef](./type_defs.md#describeapplicationrequesttypedef).
+[DescribeApplicationRequestRequestTypeDef](./type_defs.md#describeapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -510,7 +522,7 @@ Keyword-only arguments:
 - `IncludeAdditionalDetails`: `bool`
 
 Returns
-[DescribeApplicationResponseResponseTypeDef](./type_defs.md#describeapplicationresponseresponsetypedef).
+[DescribeApplicationResponseTypeDef](./type_defs.md#describeapplicationresponsetypedef).
 
 ### describe_application_snapshot
 
@@ -523,7 +535,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.describe_application_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.describe_application_snapshot)
 
 Arguments mapping described in
-[DescribeApplicationSnapshotRequestTypeDef](./type_defs.md#describeapplicationsnapshotrequesttypedef).
+[DescribeApplicationSnapshotRequestRequestTypeDef](./type_defs.md#describeapplicationsnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -531,7 +543,7 @@ Keyword-only arguments:
 - `SnapshotName`: `str` *(required)*
 
 Returns
-[DescribeApplicationSnapshotResponseResponseTypeDef](./type_defs.md#describeapplicationsnapshotresponseresponsetypedef).
+[DescribeApplicationSnapshotResponseTypeDef](./type_defs.md#describeapplicationsnapshotresponsetypedef).
 
 ### describe_application_version
 
@@ -544,7 +556,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.describe_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.describe_application_version)
 
 Arguments mapping described in
-[DescribeApplicationVersionRequestTypeDef](./type_defs.md#describeapplicationversionrequesttypedef).
+[DescribeApplicationVersionRequestRequestTypeDef](./type_defs.md#describeapplicationversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -552,7 +564,7 @@ Keyword-only arguments:
 - `ApplicationVersionId`: `int` *(required)*
 
 Returns
-[DescribeApplicationVersionResponseResponseTypeDef](./type_defs.md#describeapplicationversionresponseresponsetypedef).
+[DescribeApplicationVersionResponseTypeDef](./type_defs.md#describeapplicationversionresponsetypedef).
 
 ### discover_input_schema
 
@@ -567,7 +579,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.discover_input_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.discover_input_schema)
 
 Arguments mapping described in
-[DiscoverInputSchemaRequestTypeDef](./type_defs.md#discoverinputschemarequesttypedef).
+[DiscoverInputSchemaRequestRequestTypeDef](./type_defs.md#discoverinputschemarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -581,7 +593,7 @@ Keyword-only arguments:
   [InputProcessingConfigurationTypeDef](./type_defs.md#inputprocessingconfigurationtypedef)
 
 Returns
-[DiscoverInputSchemaResponseResponseTypeDef](./type_defs.md#discoverinputschemaresponseresponsetypedef).
+[DiscoverInputSchemaResponseTypeDef](./type_defs.md#discoverinputschemaresponsetypedef).
 
 ### generate_presigned_url
 
@@ -613,7 +625,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.list_application_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.list_application_snapshots)
 
 Arguments mapping described in
-[ListApplicationSnapshotsRequestTypeDef](./type_defs.md#listapplicationsnapshotsrequesttypedef).
+[ListApplicationSnapshotsRequestRequestTypeDef](./type_defs.md#listapplicationsnapshotsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -622,7 +634,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListApplicationSnapshotsResponseResponseTypeDef](./type_defs.md#listapplicationsnapshotsresponseresponsetypedef).
+[ListApplicationSnapshotsResponseTypeDef](./type_defs.md#listapplicationsnapshotsresponsetypedef).
 
 ### list_application_versions
 
@@ -636,7 +648,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.list_application_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.list_application_versions)
 
 Arguments mapping described in
-[ListApplicationVersionsRequestTypeDef](./type_defs.md#listapplicationversionsrequesttypedef).
+[ListApplicationVersionsRequestRequestTypeDef](./type_defs.md#listapplicationversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -645,7 +657,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListApplicationVersionsResponseResponseTypeDef](./type_defs.md#listapplicationversionsresponseresponsetypedef).
+[ListApplicationVersionsResponseTypeDef](./type_defs.md#listapplicationversionsresponsetypedef).
 
 ### list_applications
 
@@ -658,7 +670,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.list_applications)
 
 Arguments mapping described in
-[ListApplicationsRequestTypeDef](./type_defs.md#listapplicationsrequesttypedef).
+[ListApplicationsRequestRequestTypeDef](./type_defs.md#listapplicationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -666,7 +678,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListApplicationsResponseResponseTypeDef](./type_defs.md#listapplicationsresponseresponsetypedef).
+[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -679,14 +691,14 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### rollback_application
 
@@ -699,7 +711,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.rollback_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.rollback_application)
 
 Arguments mapping described in
-[RollbackApplicationRequestTypeDef](./type_defs.md#rollbackapplicationrequesttypedef).
+[RollbackApplicationRequestRequestTypeDef](./type_defs.md#rollbackapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -707,7 +719,7 @@ Keyword-only arguments:
 - `CurrentApplicationVersionId`: `int` *(required)*
 
 Returns
-[RollbackApplicationResponseResponseTypeDef](./type_defs.md#rollbackapplicationresponseresponsetypedef).
+[RollbackApplicationResponseTypeDef](./type_defs.md#rollbackapplicationresponsetypedef).
 
 ### start_application
 
@@ -720,7 +732,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.start_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.start_application)
 
 Arguments mapping described in
-[StartApplicationRequestTypeDef](./type_defs.md#startapplicationrequesttypedef).
+[StartApplicationRequestRequestTypeDef](./type_defs.md#startapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -741,7 +753,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.stop_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.stop_application)
 
 Arguments mapping described in
-[StopApplicationRequestTypeDef](./type_defs.md#stopapplicationrequesttypedef).
+[StopApplicationRequestRequestTypeDef](./type_defs.md#stopapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -760,7 +772,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -780,7 +792,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -800,7 +812,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.update_application)
 
 Arguments mapping described in
-[UpdateApplicationRequestTypeDef](./type_defs.md#updateapplicationrequesttypedef).
+[UpdateApplicationRequestRequestTypeDef](./type_defs.md#updateapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -816,7 +828,7 @@ Keyword-only arguments:
 - `ConditionalToken`: `str`
 
 Returns
-[UpdateApplicationResponseResponseTypeDef](./type_defs.md#updateapplicationresponseresponsetypedef).
+[UpdateApplicationResponseTypeDef](./type_defs.md#updateapplicationresponsetypedef).
 
 ### update_application_maintenance_configuration
 
@@ -831,7 +843,7 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.update_application_maintenance_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.update_application_maintenance_configuration)
 
 Arguments mapping described in
-[UpdateApplicationMaintenanceConfigurationRequestTypeDef](./type_defs.md#updateapplicationmaintenanceconfigurationrequesttypedef).
+[UpdateApplicationMaintenanceConfigurationRequestRequestTypeDef](./type_defs.md#updateapplicationmaintenanceconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -841,7 +853,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateApplicationMaintenanceConfigurationResponseResponseTypeDef](./type_defs.md#updateapplicationmaintenanceconfigurationresponseresponsetypedef).
+[UpdateApplicationMaintenanceConfigurationResponseTypeDef](./type_defs.md#updateapplicationmaintenanceconfigurationresponsetypedef).
 
 ### get_paginator
 

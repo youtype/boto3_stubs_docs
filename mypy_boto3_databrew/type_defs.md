@@ -8,50 +8,52 @@ type annotations stubs module
 [mypy_boto3_databrew](https://pypi.org/project/mypy-boto3-databrew/).
 
 - [Typed dictionaries for boto3 GlueDataBrew module](#typed-dictionaries-for-boto3-gluedatabrew-module)
-  - [BatchDeleteRecipeVersionRequestTypeDef](#batchdeleterecipeversionrequesttypedef)
-  - [BatchDeleteRecipeVersionResponseResponseTypeDef](#batchdeleterecipeversionresponseresponsetypedef)
+  - [BatchDeleteRecipeVersionRequestRequestTypeDef](#batchdeleterecipeversionrequestrequesttypedef)
+  - [BatchDeleteRecipeVersionResponseTypeDef](#batchdeleterecipeversionresponsetypedef)
   - [ConditionExpressionTypeDef](#conditionexpressiontypedef)
-  - [CreateDatasetRequestTypeDef](#createdatasetrequesttypedef)
-  - [CreateDatasetResponseResponseTypeDef](#createdatasetresponseresponsetypedef)
-  - [CreateProfileJobRequestTypeDef](#createprofilejobrequesttypedef)
-  - [CreateProfileJobResponseResponseTypeDef](#createprofilejobresponseresponsetypedef)
-  - [CreateProjectRequestTypeDef](#createprojectrequesttypedef)
-  - [CreateProjectResponseResponseTypeDef](#createprojectresponseresponsetypedef)
-  - [CreateRecipeJobRequestTypeDef](#createrecipejobrequesttypedef)
-  - [CreateRecipeJobResponseResponseTypeDef](#createrecipejobresponseresponsetypedef)
-  - [CreateRecipeRequestTypeDef](#createreciperequesttypedef)
-  - [CreateRecipeResponseResponseTypeDef](#createreciperesponseresponsetypedef)
-  - [CreateScheduleRequestTypeDef](#createschedulerequesttypedef)
-  - [CreateScheduleResponseResponseTypeDef](#createscheduleresponseresponsetypedef)
+  - [CreateDatasetRequestRequestTypeDef](#createdatasetrequestrequesttypedef)
+  - [CreateDatasetResponseTypeDef](#createdatasetresponsetypedef)
+  - [CreateProfileJobRequestRequestTypeDef](#createprofilejobrequestrequesttypedef)
+  - [CreateProfileJobResponseTypeDef](#createprofilejobresponsetypedef)
+  - [CreateProjectRequestRequestTypeDef](#createprojectrequestrequesttypedef)
+  - [CreateProjectResponseTypeDef](#createprojectresponsetypedef)
+  - [CreateRecipeJobRequestRequestTypeDef](#createrecipejobrequestrequesttypedef)
+  - [CreateRecipeJobResponseTypeDef](#createrecipejobresponsetypedef)
+  - [CreateRecipeRequestRequestTypeDef](#createreciperequestrequesttypedef)
+  - [CreateRecipeResponseTypeDef](#createreciperesponsetypedef)
+  - [CreateScheduleRequestRequestTypeDef](#createschedulerequestrequesttypedef)
+  - [CreateScheduleResponseTypeDef](#createscheduleresponsetypedef)
   - [CsvOptionsTypeDef](#csvoptionstypedef)
   - [CsvOutputOptionsTypeDef](#csvoutputoptionstypedef)
   - [DataCatalogInputDefinitionTypeDef](#datacataloginputdefinitiontypedef)
+  - [DataCatalogOutputTypeDef](#datacatalogoutputtypedef)
   - [DatabaseInputDefinitionTypeDef](#databaseinputdefinitiontypedef)
+  - [DatabaseTableOutputOptionsTypeDef](#databasetableoutputoptionstypedef)
   - [DatasetParameterTypeDef](#datasetparametertypedef)
   - [DatasetTypeDef](#datasettypedef)
   - [DatetimeOptionsTypeDef](#datetimeoptionstypedef)
-  - [DeleteDatasetRequestTypeDef](#deletedatasetrequesttypedef)
-  - [DeleteDatasetResponseResponseTypeDef](#deletedatasetresponseresponsetypedef)
-  - [DeleteJobRequestTypeDef](#deletejobrequesttypedef)
-  - [DeleteJobResponseResponseTypeDef](#deletejobresponseresponsetypedef)
-  - [DeleteProjectRequestTypeDef](#deleteprojectrequesttypedef)
-  - [DeleteProjectResponseResponseTypeDef](#deleteprojectresponseresponsetypedef)
-  - [DeleteRecipeVersionRequestTypeDef](#deleterecipeversionrequesttypedef)
-  - [DeleteRecipeVersionResponseResponseTypeDef](#deleterecipeversionresponseresponsetypedef)
-  - [DeleteScheduleRequestTypeDef](#deleteschedulerequesttypedef)
-  - [DeleteScheduleResponseResponseTypeDef](#deletescheduleresponseresponsetypedef)
-  - [DescribeDatasetRequestTypeDef](#describedatasetrequesttypedef)
-  - [DescribeDatasetResponseResponseTypeDef](#describedatasetresponseresponsetypedef)
-  - [DescribeJobRequestTypeDef](#describejobrequesttypedef)
-  - [DescribeJobResponseResponseTypeDef](#describejobresponseresponsetypedef)
-  - [DescribeJobRunRequestTypeDef](#describejobrunrequesttypedef)
-  - [DescribeJobRunResponseResponseTypeDef](#describejobrunresponseresponsetypedef)
-  - [DescribeProjectRequestTypeDef](#describeprojectrequesttypedef)
-  - [DescribeProjectResponseResponseTypeDef](#describeprojectresponseresponsetypedef)
-  - [DescribeRecipeRequestTypeDef](#describereciperequesttypedef)
-  - [DescribeRecipeResponseResponseTypeDef](#describereciperesponseresponsetypedef)
-  - [DescribeScheduleRequestTypeDef](#describeschedulerequesttypedef)
-  - [DescribeScheduleResponseResponseTypeDef](#describescheduleresponseresponsetypedef)
+  - [DeleteDatasetRequestRequestTypeDef](#deletedatasetrequestrequesttypedef)
+  - [DeleteDatasetResponseTypeDef](#deletedatasetresponsetypedef)
+  - [DeleteJobRequestRequestTypeDef](#deletejobrequestrequesttypedef)
+  - [DeleteJobResponseTypeDef](#deletejobresponsetypedef)
+  - [DeleteProjectRequestRequestTypeDef](#deleteprojectrequestrequesttypedef)
+  - [DeleteProjectResponseTypeDef](#deleteprojectresponsetypedef)
+  - [DeleteRecipeVersionRequestRequestTypeDef](#deleterecipeversionrequestrequesttypedef)
+  - [DeleteRecipeVersionResponseTypeDef](#deleterecipeversionresponsetypedef)
+  - [DeleteScheduleRequestRequestTypeDef](#deleteschedulerequestrequesttypedef)
+  - [DeleteScheduleResponseTypeDef](#deletescheduleresponsetypedef)
+  - [DescribeDatasetRequestRequestTypeDef](#describedatasetrequestrequesttypedef)
+  - [DescribeDatasetResponseTypeDef](#describedatasetresponsetypedef)
+  - [DescribeJobRequestRequestTypeDef](#describejobrequestrequesttypedef)
+  - [DescribeJobResponseTypeDef](#describejobresponsetypedef)
+  - [DescribeJobRunRequestRequestTypeDef](#describejobrunrequestrequesttypedef)
+  - [DescribeJobRunResponseTypeDef](#describejobrunresponsetypedef)
+  - [DescribeProjectRequestRequestTypeDef](#describeprojectrequestrequesttypedef)
+  - [DescribeProjectResponseTypeDef](#describeprojectresponsetypedef)
+  - [DescribeRecipeRequestRequestTypeDef](#describereciperequestrequesttypedef)
+  - [DescribeRecipeResponseTypeDef](#describereciperesponsetypedef)
+  - [DescribeScheduleRequestRequestTypeDef](#describeschedulerequestrequesttypedef)
+  - [DescribeScheduleResponseTypeDef](#describescheduleresponsetypedef)
   - [ExcelOptionsTypeDef](#exceloptionstypedef)
   - [FilesLimitTypeDef](#fileslimittypedef)
   - [FilterExpressionTypeDef](#filterexpressiontypedef)
@@ -61,29 +63,29 @@ type annotations stubs module
   - [JobSampleTypeDef](#jobsampletypedef)
   - [JobTypeDef](#jobtypedef)
   - [JsonOptionsTypeDef](#jsonoptionstypedef)
-  - [ListDatasetsRequestTypeDef](#listdatasetsrequesttypedef)
-  - [ListDatasetsResponseResponseTypeDef](#listdatasetsresponseresponsetypedef)
-  - [ListJobRunsRequestTypeDef](#listjobrunsrequesttypedef)
-  - [ListJobRunsResponseResponseTypeDef](#listjobrunsresponseresponsetypedef)
-  - [ListJobsRequestTypeDef](#listjobsrequesttypedef)
-  - [ListJobsResponseResponseTypeDef](#listjobsresponseresponsetypedef)
-  - [ListProjectsRequestTypeDef](#listprojectsrequesttypedef)
-  - [ListProjectsResponseResponseTypeDef](#listprojectsresponseresponsetypedef)
-  - [ListRecipeVersionsRequestTypeDef](#listrecipeversionsrequesttypedef)
-  - [ListRecipeVersionsResponseResponseTypeDef](#listrecipeversionsresponseresponsetypedef)
-  - [ListRecipesRequestTypeDef](#listrecipesrequesttypedef)
-  - [ListRecipesResponseResponseTypeDef](#listrecipesresponseresponsetypedef)
-  - [ListSchedulesRequestTypeDef](#listschedulesrequesttypedef)
-  - [ListSchedulesResponseResponseTypeDef](#listschedulesresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListDatasetsRequestRequestTypeDef](#listdatasetsrequestrequesttypedef)
+  - [ListDatasetsResponseTypeDef](#listdatasetsresponsetypedef)
+  - [ListJobRunsRequestRequestTypeDef](#listjobrunsrequestrequesttypedef)
+  - [ListJobRunsResponseTypeDef](#listjobrunsresponsetypedef)
+  - [ListJobsRequestRequestTypeDef](#listjobsrequestrequesttypedef)
+  - [ListJobsResponseTypeDef](#listjobsresponsetypedef)
+  - [ListProjectsRequestRequestTypeDef](#listprojectsrequestrequesttypedef)
+  - [ListProjectsResponseTypeDef](#listprojectsresponsetypedef)
+  - [ListRecipeVersionsRequestRequestTypeDef](#listrecipeversionsrequestrequesttypedef)
+  - [ListRecipeVersionsResponseTypeDef](#listrecipeversionsresponsetypedef)
+  - [ListRecipesRequestRequestTypeDef](#listrecipesrequestrequesttypedef)
+  - [ListRecipesResponseTypeDef](#listrecipesresponsetypedef)
+  - [ListSchedulesRequestRequestTypeDef](#listschedulesrequestrequesttypedef)
+  - [ListSchedulesResponseTypeDef](#listschedulesresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [OutputFormatOptionsTypeDef](#outputformatoptionstypedef)
   - [OutputTypeDef](#outputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PathOptionsTypeDef](#pathoptionstypedef)
   - [ProjectTypeDef](#projecttypedef)
-  - [PublishRecipeRequestTypeDef](#publishreciperequesttypedef)
-  - [PublishRecipeResponseResponseTypeDef](#publishreciperesponseresponsetypedef)
+  - [PublishRecipeRequestRequestTypeDef](#publishreciperequestrequesttypedef)
+  - [PublishRecipeResponseTypeDef](#publishreciperesponsetypedef)
   - [RecipeActionTypeDef](#recipeactiontypedef)
   - [RecipeReferenceTypeDef](#recipereferencetypedef)
   - [RecipeStepTypeDef](#recipesteptypedef)
@@ -91,36 +93,37 @@ type annotations stubs module
   - [RecipeVersionErrorDetailTypeDef](#recipeversionerrordetailtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3LocationTypeDef](#s3locationtypedef)
+  - [S3TableOutputOptionsTypeDef](#s3tableoutputoptionstypedef)
   - [SampleTypeDef](#sampletypedef)
   - [ScheduleTypeDef](#scheduletypedef)
-  - [SendProjectSessionActionRequestTypeDef](#sendprojectsessionactionrequesttypedef)
-  - [SendProjectSessionActionResponseResponseTypeDef](#sendprojectsessionactionresponseresponsetypedef)
-  - [StartJobRunRequestTypeDef](#startjobrunrequesttypedef)
-  - [StartJobRunResponseResponseTypeDef](#startjobrunresponseresponsetypedef)
-  - [StartProjectSessionRequestTypeDef](#startprojectsessionrequesttypedef)
-  - [StartProjectSessionResponseResponseTypeDef](#startprojectsessionresponseresponsetypedef)
-  - [StopJobRunRequestTypeDef](#stopjobrunrequesttypedef)
-  - [StopJobRunResponseResponseTypeDef](#stopjobrunresponseresponsetypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateDatasetRequestTypeDef](#updatedatasetrequesttypedef)
-  - [UpdateDatasetResponseResponseTypeDef](#updatedatasetresponseresponsetypedef)
-  - [UpdateProfileJobRequestTypeDef](#updateprofilejobrequesttypedef)
-  - [UpdateProfileJobResponseResponseTypeDef](#updateprofilejobresponseresponsetypedef)
-  - [UpdateProjectRequestTypeDef](#updateprojectrequesttypedef)
-  - [UpdateProjectResponseResponseTypeDef](#updateprojectresponseresponsetypedef)
-  - [UpdateRecipeJobRequestTypeDef](#updaterecipejobrequesttypedef)
-  - [UpdateRecipeJobResponseResponseTypeDef](#updaterecipejobresponseresponsetypedef)
-  - [UpdateRecipeRequestTypeDef](#updatereciperequesttypedef)
-  - [UpdateRecipeResponseResponseTypeDef](#updatereciperesponseresponsetypedef)
-  - [UpdateScheduleRequestTypeDef](#updateschedulerequesttypedef)
-  - [UpdateScheduleResponseResponseTypeDef](#updatescheduleresponseresponsetypedef)
+  - [SendProjectSessionActionRequestRequestTypeDef](#sendprojectsessionactionrequestrequesttypedef)
+  - [SendProjectSessionActionResponseTypeDef](#sendprojectsessionactionresponsetypedef)
+  - [StartJobRunRequestRequestTypeDef](#startjobrunrequestrequesttypedef)
+  - [StartJobRunResponseTypeDef](#startjobrunresponsetypedef)
+  - [StartProjectSessionRequestRequestTypeDef](#startprojectsessionrequestrequesttypedef)
+  - [StartProjectSessionResponseTypeDef](#startprojectsessionresponsetypedef)
+  - [StopJobRunRequestRequestTypeDef](#stopjobrunrequestrequesttypedef)
+  - [StopJobRunResponseTypeDef](#stopjobrunresponsetypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateDatasetRequestRequestTypeDef](#updatedatasetrequestrequesttypedef)
+  - [UpdateDatasetResponseTypeDef](#updatedatasetresponsetypedef)
+  - [UpdateProfileJobRequestRequestTypeDef](#updateprofilejobrequestrequesttypedef)
+  - [UpdateProfileJobResponseTypeDef](#updateprofilejobresponsetypedef)
+  - [UpdateProjectRequestRequestTypeDef](#updateprojectrequestrequesttypedef)
+  - [UpdateProjectResponseTypeDef](#updateprojectresponsetypedef)
+  - [UpdateRecipeJobRequestRequestTypeDef](#updaterecipejobrequestrequesttypedef)
+  - [UpdateRecipeJobResponseTypeDef](#updaterecipejobresponsetypedef)
+  - [UpdateRecipeRequestRequestTypeDef](#updatereciperequestrequesttypedef)
+  - [UpdateRecipeResponseTypeDef](#updatereciperesponsetypedef)
+  - [UpdateScheduleRequestRequestTypeDef](#updateschedulerequestrequesttypedef)
+  - [UpdateScheduleResponseTypeDef](#updatescheduleresponsetypedef)
   - [ViewFrameTypeDef](#viewframetypedef)
 
-## BatchDeleteRecipeVersionRequestTypeDef
+## BatchDeleteRecipeVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import BatchDeleteRecipeVersionRequestTypeDef
+from mypy_boto3_databrew.type_defs import BatchDeleteRecipeVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -128,10 +131,10 @@ Required fields:
 - `Name`: `str`
 - `RecipeVersions`: `List`\[`str`\]
 
-## BatchDeleteRecipeVersionResponseResponseTypeDef
+## BatchDeleteRecipeVersionResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import BatchDeleteRecipeVersionResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import BatchDeleteRecipeVersionResponseTypeDef
 ```
 
 Required fields:
@@ -157,10 +160,10 @@ Optional fields:
 
 - `Value`: `str`
 
-## CreateDatasetRequestTypeDef
+## CreateDatasetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import CreateDatasetRequestTypeDef
+from mypy_boto3_databrew.type_defs import CreateDatasetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -175,10 +178,10 @@ Optional fields:
 - `PathOptions`: [PathOptionsTypeDef](./type_defs.md#pathoptionstypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateDatasetResponseResponseTypeDef
+## CreateDatasetResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import CreateDatasetResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import CreateDatasetResponseTypeDef
 ```
 
 Required fields:
@@ -187,10 +190,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateProfileJobRequestTypeDef
+## CreateProfileJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import CreateProfileJobRequestTypeDef
+from mypy_boto3_databrew.type_defs import CreateProfileJobRequestRequestTypeDef
 ```
 
 Required fields:
@@ -211,10 +214,10 @@ Optional fields:
 - `Timeout`: `int`
 - `JobSample`: [JobSampleTypeDef](./type_defs.md#jobsampletypedef)
 
-## CreateProfileJobResponseResponseTypeDef
+## CreateProfileJobResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import CreateProfileJobResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import CreateProfileJobResponseTypeDef
 ```
 
 Required fields:
@@ -223,10 +226,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateProjectRequestTypeDef
+## CreateProjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import CreateProjectRequestTypeDef
+from mypy_boto3_databrew.type_defs import CreateProjectRequestRequestTypeDef
 ```
 
 Required fields:
@@ -241,10 +244,10 @@ Optional fields:
 - `Sample`: [SampleTypeDef](./type_defs.md#sampletypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateProjectResponseResponseTypeDef
+## CreateProjectResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import CreateProjectResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import CreateProjectResponseTypeDef
 ```
 
 Required fields:
@@ -253,16 +256,15 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRecipeJobRequestTypeDef
+## CreateRecipeJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import CreateRecipeJobRequestTypeDef
+from mypy_boto3_databrew.type_defs import CreateRecipeJobRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
-- `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `RoleArn`: `str`
 
 Optional fields:
@@ -273,16 +275,19 @@ Optional fields:
 - `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
 - `MaxCapacity`: `int`
 - `MaxRetries`: `int`
+- `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
+- `DataCatalogOutputs`:
+  `List`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
 - `ProjectName`: `str`
 - `RecipeReference`:
   [RecipeReferenceTypeDef](./type_defs.md#recipereferencetypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Timeout`: `int`
 
-## CreateRecipeJobResponseResponseTypeDef
+## CreateRecipeJobResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import CreateRecipeJobResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import CreateRecipeJobResponseTypeDef
 ```
 
 Required fields:
@@ -291,10 +296,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRecipeRequestTypeDef
+## CreateRecipeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import CreateRecipeRequestTypeDef
+from mypy_boto3_databrew.type_defs import CreateRecipeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -307,10 +312,10 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateRecipeResponseResponseTypeDef
+## CreateRecipeResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import CreateRecipeResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import CreateRecipeResponseTypeDef
 ```
 
 Required fields:
@@ -319,10 +324,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateScheduleRequestTypeDef
+## CreateScheduleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import CreateScheduleRequestTypeDef
+from mypy_boto3_databrew.type_defs import CreateScheduleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -335,10 +340,10 @@ Optional fields:
 - `JobNames`: `List`\[`str`\]
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateScheduleResponseResponseTypeDef
+## CreateScheduleResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import CreateScheduleResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import CreateScheduleResponseTypeDef
 ```
 
 Required fields:
@@ -384,6 +389,26 @@ Optional fields:
 - `CatalogId`: `str`
 - `TempDirectory`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 
+## DataCatalogOutputTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import DataCatalogOutputTypeDef
+```
+
+Required fields:
+
+- `DatabaseName`: `str`
+- `TableName`: `str`
+
+Optional fields:
+
+- `CatalogId`: `str`
+- `S3Options`:
+  [S3TableOutputOptionsTypeDef](./type_defs.md#s3tableoutputoptionstypedef)
+- `DatabaseOptions`:
+  [DatabaseTableOutputOptionsTypeDef](./type_defs.md#databasetableoutputoptionstypedef)
+- `Overwrite`: `bool`
+
 ## DatabaseInputDefinitionTypeDef
 
 ```python
@@ -394,6 +419,20 @@ Required fields:
 
 - `GlueConnectionName`: `str`
 - `DatabaseTableName`: `str`
+
+Optional fields:
+
+- `TempDirectory`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+
+## DatabaseTableOutputOptionsTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import DatabaseTableOutputOptionsTypeDef
+```
+
+Required fields:
+
+- `TableName`: `str`
 
 Optional fields:
 
@@ -457,42 +496,20 @@ Optional fields:
 - `TimezoneOffset`: `str`
 - `LocaleCode`: `str`
 
-## DeleteDatasetRequestTypeDef
+## DeleteDatasetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import DeleteDatasetRequestTypeDef
+from mypy_boto3_databrew.type_defs import DeleteDatasetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DeleteDatasetResponseResponseTypeDef
+## DeleteDatasetResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import DeleteDatasetResponseResponseTypeDef
-```
-
-Required fields:
-
-- `Name`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-## DeleteJobRequestTypeDef
-
-```python
-from mypy_boto3_databrew.type_defs import DeleteJobRequestTypeDef
-```
-
-Required fields:
-
-- `Name`: `str`
-
-## DeleteJobResponseResponseTypeDef
-
-```python
-from mypy_boto3_databrew.type_defs import DeleteJobResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import DeleteDatasetResponseTypeDef
 ```
 
 Required fields:
@@ -501,20 +518,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteProjectRequestTypeDef
+## DeleteJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import DeleteProjectRequestTypeDef
+from mypy_boto3_databrew.type_defs import DeleteJobRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DeleteProjectResponseResponseTypeDef
+## DeleteJobResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import DeleteProjectResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import DeleteJobResponseTypeDef
 ```
 
 Required fields:
@@ -523,10 +540,32 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteRecipeVersionRequestTypeDef
+## DeleteProjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import DeleteRecipeVersionRequestTypeDef
+from mypy_boto3_databrew.type_defs import DeleteProjectRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+## DeleteProjectResponseTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import DeleteProjectResponseTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteRecipeVersionRequestRequestTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import DeleteRecipeVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -534,10 +573,10 @@ Required fields:
 - `Name`: `str`
 - `RecipeVersion`: `str`
 
-## DeleteRecipeVersionResponseResponseTypeDef
+## DeleteRecipeVersionResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import DeleteRecipeVersionResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import DeleteRecipeVersionResponseTypeDef
 ```
 
 Required fields:
@@ -547,20 +586,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteScheduleRequestTypeDef
+## DeleteScheduleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import DeleteScheduleRequestTypeDef
+from mypy_boto3_databrew.type_defs import DeleteScheduleRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DeleteScheduleResponseResponseTypeDef
+## DeleteScheduleResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import DeleteScheduleResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import DeleteScheduleResponseTypeDef
 ```
 
 Required fields:
@@ -569,20 +608,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDatasetRequestTypeDef
+## DescribeDatasetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import DescribeDatasetRequestTypeDef
+from mypy_boto3_databrew.type_defs import DescribeDatasetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DescribeDatasetResponseResponseTypeDef
+## DescribeDatasetResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import DescribeDatasetResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import DescribeDatasetResponseTypeDef
 ```
 
 Required fields:
@@ -602,20 +641,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeJobRequestTypeDef
+## DescribeJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import DescribeJobRequestTypeDef
+from mypy_boto3_databrew.type_defs import DescribeJobRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DescribeJobResponseResponseTypeDef
+## DescribeJobResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import DescribeJobResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import DescribeJobResponseTypeDef
 ```
 
 Required fields:
@@ -633,6 +672,8 @@ Required fields:
 - `MaxCapacity`: `int`
 - `MaxRetries`: `int`
 - `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
+- `DataCatalogOutputs`:
+  `List`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
 - `ProjectName`: `str`
 - `RecipeReference`:
   [RecipeReferenceTypeDef](./type_defs.md#recipereferencetypedef)
@@ -644,10 +685,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeJobRunRequestTypeDef
+## DescribeJobRunRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import DescribeJobRunRequestTypeDef
+from mypy_boto3_databrew.type_defs import DescribeJobRunRequestRequestTypeDef
 ```
 
 Required fields:
@@ -655,10 +696,10 @@ Required fields:
 - `Name`: `str`
 - `RunId`: `str`
 
-## DescribeJobRunResponseResponseTypeDef
+## DescribeJobRunResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import DescribeJobRunResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import DescribeJobRunResponseTypeDef
 ```
 
 Required fields:
@@ -674,6 +715,8 @@ Required fields:
 - `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
 - `LogGroupName`: `str`
 - `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
+- `DataCatalogOutputs`:
+  `List`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
 - `RecipeReference`:
   [RecipeReferenceTypeDef](./type_defs.md#recipereferencetypedef)
 - `StartedBy`: `str`
@@ -682,20 +725,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeProjectRequestTypeDef
+## DescribeProjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import DescribeProjectRequestTypeDef
+from mypy_boto3_databrew.type_defs import DescribeProjectRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DescribeProjectResponseResponseTypeDef
+## DescribeProjectResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import DescribeProjectResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import DescribeProjectResponseTypeDef
 ```
 
 Required fields:
@@ -717,10 +760,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRecipeRequestTypeDef
+## DescribeRecipeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import DescribeRecipeRequestTypeDef
+from mypy_boto3_databrew.type_defs import DescribeRecipeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -731,10 +774,10 @@ Optional fields:
 
 - `RecipeVersion`: `str`
 
-## DescribeRecipeResponseResponseTypeDef
+## DescribeRecipeResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import DescribeRecipeResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import DescribeRecipeResponseTypeDef
 ```
 
 Required fields:
@@ -755,20 +798,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeScheduleRequestTypeDef
+## DescribeScheduleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import DescribeScheduleRequestTypeDef
+from mypy_boto3_databrew.type_defs import DescribeScheduleRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DescribeScheduleResponseResponseTypeDef
+## DescribeScheduleResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import DescribeScheduleResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import DescribeScheduleResponseTypeDef
 ```
 
 Required fields:
@@ -869,6 +912,8 @@ Optional fields:
 - `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
 - `LogGroupName`: `str`
 - `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
+- `DataCatalogOutputs`:
+  `List`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
 - `RecipeReference`:
   [RecipeReferenceTypeDef](./type_defs.md#recipereferencetypedef)
 - `StartedBy`: `str`
@@ -911,6 +956,8 @@ Optional fields:
 - `MaxCapacity`: `int`
 - `MaxRetries`: `int`
 - `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
+- `DataCatalogOutputs`:
+  `List`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
 - `ProjectName`: `str`
 - `RecipeReference`:
   [RecipeReferenceTypeDef](./type_defs.md#recipereferencetypedef)
@@ -930,10 +977,10 @@ Optional fields:
 
 - `MultiLine`: `bool`
 
-## ListDatasetsRequestTypeDef
+## ListDatasetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import ListDatasetsRequestTypeDef
+from mypy_boto3_databrew.type_defs import ListDatasetsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -941,10 +988,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListDatasetsResponseResponseTypeDef
+## ListDatasetsResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import ListDatasetsResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import ListDatasetsResponseTypeDef
 ```
 
 Required fields:
@@ -954,10 +1001,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListJobRunsRequestTypeDef
+## ListJobRunsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import ListJobRunsRequestTypeDef
+from mypy_boto3_databrew.type_defs import ListJobRunsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -969,10 +1016,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListJobRunsResponseResponseTypeDef
+## ListJobRunsResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import ListJobRunsResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import ListJobRunsResponseTypeDef
 ```
 
 Required fields:
@@ -982,10 +1029,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListJobsRequestTypeDef
+## ListJobsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import ListJobsRequestTypeDef
+from mypy_boto3_databrew.type_defs import ListJobsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -995,10 +1042,10 @@ Optional fields:
 - `NextToken`: `str`
 - `ProjectName`: `str`
 
-## ListJobsResponseResponseTypeDef
+## ListJobsResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import ListJobsResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import ListJobsResponseTypeDef
 ```
 
 Required fields:
@@ -1008,10 +1055,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProjectsRequestTypeDef
+## ListProjectsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import ListProjectsRequestTypeDef
+from mypy_boto3_databrew.type_defs import ListProjectsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1019,10 +1066,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListProjectsResponseResponseTypeDef
+## ListProjectsResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import ListProjectsResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import ListProjectsResponseTypeDef
 ```
 
 Required fields:
@@ -1032,10 +1079,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRecipeVersionsRequestTypeDef
+## ListRecipeVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import ListRecipeVersionsRequestTypeDef
+from mypy_boto3_databrew.type_defs import ListRecipeVersionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1047,10 +1094,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListRecipeVersionsResponseResponseTypeDef
+## ListRecipeVersionsResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import ListRecipeVersionsResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import ListRecipeVersionsResponseTypeDef
 ```
 
 Required fields:
@@ -1060,10 +1107,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRecipesRequestTypeDef
+## ListRecipesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import ListRecipesRequestTypeDef
+from mypy_boto3_databrew.type_defs import ListRecipesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1072,10 +1119,10 @@ Optional fields:
 - `NextToken`: `str`
 - `RecipeVersion`: `str`
 
-## ListRecipesResponseResponseTypeDef
+## ListRecipesResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import ListRecipesResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import ListRecipesResponseTypeDef
 ```
 
 Required fields:
@@ -1085,10 +1132,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSchedulesRequestTypeDef
+## ListSchedulesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import ListSchedulesRequestTypeDef
+from mypy_boto3_databrew.type_defs import ListSchedulesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1097,10 +1144,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListSchedulesResponseResponseTypeDef
+## ListSchedulesResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import ListSchedulesResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import ListSchedulesResponseTypeDef
 ```
 
 Required fields:
@@ -1110,20 +1157,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_databrew.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -1214,10 +1261,10 @@ Optional fields:
 - `OpenedBy`: `str`
 - `OpenDate`: `datetime`
 
-## PublishRecipeRequestTypeDef
+## PublishRecipeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import PublishRecipeRequestTypeDef
+from mypy_boto3_databrew.type_defs import PublishRecipeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1228,10 +1275,10 @@ Optional fields:
 
 - `Description`: `str`
 
-## PublishRecipeResponseResponseTypeDef
+## PublishRecipeResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import PublishRecipeResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import PublishRecipeResponseTypeDef
 ```
 
 Required fields:
@@ -1348,6 +1395,16 @@ Optional fields:
 
 - `Key`: `str`
 
+## S3TableOutputOptionsTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import S3TableOutputOptionsTypeDef
+```
+
+Required fields:
+
+- `Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+
 ## SampleTypeDef
 
 ```python
@@ -1384,10 +1441,10 @@ Optional fields:
 - `CronExpression`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## SendProjectSessionActionRequestTypeDef
+## SendProjectSessionActionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import SendProjectSessionActionRequestTypeDef
+from mypy_boto3_databrew.type_defs import SendProjectSessionActionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1402,10 +1459,10 @@ Optional fields:
 - `ClientSessionId`: `str`
 - `ViewFrame`: [ViewFrameTypeDef](./type_defs.md#viewframetypedef)
 
-## SendProjectSessionActionResponseResponseTypeDef
+## SendProjectSessionActionResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import SendProjectSessionActionResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import SendProjectSessionActionResponseTypeDef
 ```
 
 Required fields:
@@ -1416,20 +1473,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartJobRunRequestTypeDef
+## StartJobRunRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import StartJobRunRequestTypeDef
+from mypy_boto3_databrew.type_defs import StartJobRunRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## StartJobRunResponseResponseTypeDef
+## StartJobRunResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import StartJobRunResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import StartJobRunResponseTypeDef
 ```
 
 Required fields:
@@ -1438,10 +1495,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartProjectSessionRequestTypeDef
+## StartProjectSessionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import StartProjectSessionRequestTypeDef
+from mypy_boto3_databrew.type_defs import StartProjectSessionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1452,10 +1509,10 @@ Optional fields:
 
 - `AssumeControl`: `bool`
 
-## StartProjectSessionResponseResponseTypeDef
+## StartProjectSessionResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import StartProjectSessionResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import StartProjectSessionResponseTypeDef
 ```
 
 Required fields:
@@ -1465,10 +1522,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopJobRunRequestTypeDef
+## StopJobRunRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import StopJobRunRequestTypeDef
+from mypy_boto3_databrew.type_defs import StopJobRunRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1476,10 +1533,10 @@ Required fields:
 - `Name`: `str`
 - `RunId`: `str`
 
-## StopJobRunResponseResponseTypeDef
+## StopJobRunResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import StopJobRunResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import StopJobRunResponseTypeDef
 ```
 
 Required fields:
@@ -1488,10 +1545,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_databrew.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1499,10 +1556,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_databrew.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1510,10 +1567,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateDatasetRequestTypeDef
+## UpdateDatasetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import UpdateDatasetRequestTypeDef
+from mypy_boto3_databrew.type_defs import UpdateDatasetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1527,10 +1584,10 @@ Optional fields:
 - `FormatOptions`: [FormatOptionsTypeDef](./type_defs.md#formatoptionstypedef)
 - `PathOptions`: [PathOptionsTypeDef](./type_defs.md#pathoptionstypedef)
 
-## UpdateDatasetResponseResponseTypeDef
+## UpdateDatasetResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import UpdateDatasetResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import UpdateDatasetResponseTypeDef
 ```
 
 Required fields:
@@ -1539,10 +1596,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateProfileJobRequestTypeDef
+## UpdateProfileJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import UpdateProfileJobRequestTypeDef
+from mypy_boto3_databrew.type_defs import UpdateProfileJobRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1561,10 +1618,10 @@ Optional fields:
 - `Timeout`: `int`
 - `JobSample`: [JobSampleTypeDef](./type_defs.md#jobsampletypedef)
 
-## UpdateProfileJobResponseResponseTypeDef
+## UpdateProfileJobResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import UpdateProfileJobResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import UpdateProfileJobResponseTypeDef
 ```
 
 Required fields:
@@ -1573,10 +1630,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateProjectRequestTypeDef
+## UpdateProjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import UpdateProjectRequestTypeDef
+from mypy_boto3_databrew.type_defs import UpdateProjectRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1588,10 +1645,10 @@ Optional fields:
 
 - `Sample`: [SampleTypeDef](./type_defs.md#sampletypedef)
 
-## UpdateProjectResponseResponseTypeDef
+## UpdateProjectResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import UpdateProjectResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import UpdateProjectResponseTypeDef
 ```
 
 Required fields:
@@ -1601,16 +1658,15 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateRecipeJobRequestTypeDef
+## UpdateRecipeJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import UpdateRecipeJobRequestTypeDef
+from mypy_boto3_databrew.type_defs import UpdateRecipeJobRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
-- `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `RoleArn`: `str`
 
 Optional fields:
@@ -1620,12 +1676,15 @@ Optional fields:
 - `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
 - `MaxCapacity`: `int`
 - `MaxRetries`: `int`
+- `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
+- `DataCatalogOutputs`:
+  `List`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
 - `Timeout`: `int`
 
-## UpdateRecipeJobResponseResponseTypeDef
+## UpdateRecipeJobResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import UpdateRecipeJobResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import UpdateRecipeJobResponseTypeDef
 ```
 
 Required fields:
@@ -1634,10 +1693,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateRecipeRequestTypeDef
+## UpdateRecipeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import UpdateRecipeRequestTypeDef
+from mypy_boto3_databrew.type_defs import UpdateRecipeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1649,10 +1708,10 @@ Optional fields:
 - `Description`: `str`
 - `Steps`: `List`\[[RecipeStepTypeDef](./type_defs.md#recipesteptypedef)\]
 
-## UpdateRecipeResponseResponseTypeDef
+## UpdateRecipeResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import UpdateRecipeResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import UpdateRecipeResponseTypeDef
 ```
 
 Required fields:
@@ -1661,10 +1720,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateScheduleRequestTypeDef
+## UpdateScheduleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import UpdateScheduleRequestTypeDef
+from mypy_boto3_databrew.type_defs import UpdateScheduleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1676,10 +1735,10 @@ Optional fields:
 
 - `JobNames`: `List`\[`str`\]
 
-## UpdateScheduleResponseResponseTypeDef
+## UpdateScheduleResponseTypeDef
 
 ```python
-from mypy_boto3_databrew.type_defs import UpdateScheduleResponseResponseTypeDef
+from mypy_boto3_databrew.type_defs import UpdateScheduleResponseTypeDef
 ```
 
 Required fields:

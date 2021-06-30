@@ -11,6 +11,7 @@ type annotations stubs module
   - [DataPipelineClient](#datapipelineclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [activate_pipeline](#activate_pipeline)
     - [add_tags](#add_tags)
     - [can_paginate](#can_paginate)
@@ -73,6 +74,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+DataPipelineClient exceptions.
+
+Type annotations for `boto3.client("datapipeline").exceptions` method.
+
+Boto3 documentation:
+[DataPipeline.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### activate_pipeline
 
 Validates the specified pipeline and starts processing pipeline tasks.
@@ -83,7 +95,7 @@ Boto3 documentation:
 [DataPipeline.Client.activate_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.activate_pipeline)
 
 Arguments mapping described in
-[ActivatePipelineInputTypeDef](./type_defs.md#activatepipelineinputtypedef).
+[ActivatePipelineInputRequestTypeDef](./type_defs.md#activatepipelineinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -104,7 +116,7 @@ Boto3 documentation:
 [DataPipeline.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.add_tags)
 
 Arguments mapping described in
-[AddTagsInputTypeDef](./type_defs.md#addtagsinputtypedef).
+[AddTagsInputRequestTypeDef](./type_defs.md#addtagsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -138,7 +150,7 @@ Boto3 documentation:
 [DataPipeline.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.create_pipeline)
 
 Arguments mapping described in
-[CreatePipelineInputTypeDef](./type_defs.md#createpipelineinputtypedef).
+[CreatePipelineInputRequestTypeDef](./type_defs.md#createpipelineinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -148,7 +160,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreatePipelineOutputResponseTypeDef](./type_defs.md#createpipelineoutputresponsetypedef).
+[CreatePipelineOutputTypeDef](./type_defs.md#createpipelineoutputtypedef).
 
 ### deactivate_pipeline
 
@@ -160,7 +172,7 @@ Boto3 documentation:
 [DataPipeline.Client.deactivate_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.deactivate_pipeline)
 
 Arguments mapping described in
-[DeactivatePipelineInputTypeDef](./type_defs.md#deactivatepipelineinputtypedef).
+[DeactivatePipelineInputRequestTypeDef](./type_defs.md#deactivatepipelineinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -179,7 +191,7 @@ Boto3 documentation:
 [DataPipeline.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.delete_pipeline)
 
 Arguments mapping described in
-[DeletePipelineInputTypeDef](./type_defs.md#deletepipelineinputtypedef).
+[DeletePipelineInputRequestTypeDef](./type_defs.md#deletepipelineinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -195,7 +207,7 @@ Boto3 documentation:
 [DataPipeline.Client.describe_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.describe_objects)
 
 Arguments mapping described in
-[DescribeObjectsInputTypeDef](./type_defs.md#describeobjectsinputtypedef).
+[DescribeObjectsInputRequestTypeDef](./type_defs.md#describeobjectsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -205,7 +217,7 @@ Keyword-only arguments:
 - `marker`: `str`
 
 Returns
-[DescribeObjectsOutputResponseTypeDef](./type_defs.md#describeobjectsoutputresponsetypedef).
+[DescribeObjectsOutputTypeDef](./type_defs.md#describeobjectsoutputtypedef).
 
 ### describe_pipelines
 
@@ -217,14 +229,14 @@ Boto3 documentation:
 [DataPipeline.Client.describe_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.describe_pipelines)
 
 Arguments mapping described in
-[DescribePipelinesInputTypeDef](./type_defs.md#describepipelinesinputtypedef).
+[DescribePipelinesInputRequestTypeDef](./type_defs.md#describepipelinesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `pipelineIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribePipelinesOutputResponseTypeDef](./type_defs.md#describepipelinesoutputresponsetypedef).
+[DescribePipelinesOutputTypeDef](./type_defs.md#describepipelinesoutputtypedef).
 
 ### evaluate_expression
 
@@ -237,7 +249,7 @@ Boto3 documentation:
 [DataPipeline.Client.evaluate_expression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.evaluate_expression)
 
 Arguments mapping described in
-[EvaluateExpressionInputTypeDef](./type_defs.md#evaluateexpressioninputtypedef).
+[EvaluateExpressionInputRequestTypeDef](./type_defs.md#evaluateexpressioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -246,7 +258,7 @@ Keyword-only arguments:
 - `expression`: `str` *(required)*
 
 Returns
-[EvaluateExpressionOutputResponseTypeDef](./type_defs.md#evaluateexpressionoutputresponsetypedef).
+[EvaluateExpressionOutputTypeDef](./type_defs.md#evaluateexpressionoutputtypedef).
 
 ### generate_presigned_url
 
@@ -278,7 +290,7 @@ Boto3 documentation:
 [DataPipeline.Client.get_pipeline_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.get_pipeline_definition)
 
 Arguments mapping described in
-[GetPipelineDefinitionInputTypeDef](./type_defs.md#getpipelinedefinitioninputtypedef).
+[GetPipelineDefinitionInputRequestTypeDef](./type_defs.md#getpipelinedefinitioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -286,7 +298,7 @@ Keyword-only arguments:
 - `version`: `str`
 
 Returns
-[GetPipelineDefinitionOutputResponseTypeDef](./type_defs.md#getpipelinedefinitionoutputresponsetypedef).
+[GetPipelineDefinitionOutputTypeDef](./type_defs.md#getpipelinedefinitionoutputtypedef).
 
 ### list_pipelines
 
@@ -299,14 +311,14 @@ Boto3 documentation:
 [DataPipeline.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.list_pipelines)
 
 Arguments mapping described in
-[ListPipelinesInputTypeDef](./type_defs.md#listpipelinesinputtypedef).
+[ListPipelinesInputRequestTypeDef](./type_defs.md#listpipelinesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `marker`: `str`
 
 Returns
-[ListPipelinesOutputResponseTypeDef](./type_defs.md#listpipelinesoutputresponsetypedef).
+[ListPipelinesOutputTypeDef](./type_defs.md#listpipelinesoutputtypedef).
 
 ### poll_for_task
 
@@ -319,7 +331,7 @@ Boto3 documentation:
 [DataPipeline.Client.poll_for_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.poll_for_task)
 
 Arguments mapping described in
-[PollForTaskInputTypeDef](./type_defs.md#pollfortaskinputtypedef).
+[PollForTaskInputRequestTypeDef](./type_defs.md#pollfortaskinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -328,8 +340,7 @@ Keyword-only arguments:
 - `instanceIdentity`:
   [InstanceIdentityTypeDef](./type_defs.md#instanceidentitytypedef)
 
-Returns
-[PollForTaskOutputResponseTypeDef](./type_defs.md#pollfortaskoutputresponsetypedef).
+Returns [PollForTaskOutputTypeDef](./type_defs.md#pollfortaskoutputtypedef).
 
 ### put_pipeline_definition
 
@@ -342,7 +353,7 @@ Boto3 documentation:
 [DataPipeline.Client.put_pipeline_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.put_pipeline_definition)
 
 Arguments mapping described in
-[PutPipelineDefinitionInputTypeDef](./type_defs.md#putpipelinedefinitioninputtypedef).
+[PutPipelineDefinitionInputRequestTypeDef](./type_defs.md#putpipelinedefinitioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -356,7 +367,7 @@ Keyword-only arguments:
   `List`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
 
 Returns
-[PutPipelineDefinitionOutputResponseTypeDef](./type_defs.md#putpipelinedefinitionoutputresponsetypedef).
+[PutPipelineDefinitionOutputTypeDef](./type_defs.md#putpipelinedefinitionoutputtypedef).
 
 ### query_objects
 
@@ -369,7 +380,7 @@ Boto3 documentation:
 [DataPipeline.Client.query_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.query_objects)
 
 Arguments mapping described in
-[QueryObjectsInputTypeDef](./type_defs.md#queryobjectsinputtypedef).
+[QueryObjectsInputRequestTypeDef](./type_defs.md#queryobjectsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -379,8 +390,7 @@ Keyword-only arguments:
 - `marker`: `str`
 - `limit`: `int`
 
-Returns
-[QueryObjectsOutputResponseTypeDef](./type_defs.md#queryobjectsoutputresponsetypedef).
+Returns [QueryObjectsOutputTypeDef](./type_defs.md#queryobjectsoutputtypedef).
 
 ### remove_tags
 
@@ -392,7 +402,7 @@ Boto3 documentation:
 [DataPipeline.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.remove_tags)
 
 Arguments mapping described in
-[RemoveTagsInputTypeDef](./type_defs.md#removetagsinputtypedef).
+[RemoveTagsInputRequestTypeDef](./type_defs.md#removetagsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -413,7 +423,7 @@ Boto3 documentation:
 [DataPipeline.Client.report_task_progress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.report_task_progress)
 
 Arguments mapping described in
-[ReportTaskProgressInputTypeDef](./type_defs.md#reporttaskprogressinputtypedef).
+[ReportTaskProgressInputRequestTypeDef](./type_defs.md#reporttaskprogressinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -421,7 +431,7 @@ Keyword-only arguments:
 - `fields`: `List`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]
 
 Returns
-[ReportTaskProgressOutputResponseTypeDef](./type_defs.md#reporttaskprogressoutputresponsetypedef).
+[ReportTaskProgressOutputTypeDef](./type_defs.md#reporttaskprogressoutputtypedef).
 
 ### report_task_runner_heartbeat
 
@@ -435,7 +445,7 @@ Boto3 documentation:
 [DataPipeline.Client.report_task_runner_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.report_task_runner_heartbeat)
 
 Arguments mapping described in
-[ReportTaskRunnerHeartbeatInputTypeDef](./type_defs.md#reporttaskrunnerheartbeatinputtypedef).
+[ReportTaskRunnerHeartbeatInputRequestTypeDef](./type_defs.md#reporttaskrunnerheartbeatinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -444,7 +454,7 @@ Keyword-only arguments:
 - `hostname`: `str`
 
 Returns
-[ReportTaskRunnerHeartbeatOutputResponseTypeDef](./type_defs.md#reporttaskrunnerheartbeatoutputresponsetypedef).
+[ReportTaskRunnerHeartbeatOutputTypeDef](./type_defs.md#reporttaskrunnerheartbeatoutputtypedef).
 
 ### set_status
 
@@ -457,7 +467,7 @@ Boto3 documentation:
 [DataPipeline.Client.set_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.set_status)
 
 Arguments mapping described in
-[SetStatusInputTypeDef](./type_defs.md#setstatusinputtypedef).
+[SetStatusInputRequestTypeDef](./type_defs.md#setstatusinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -476,7 +486,7 @@ Boto3 documentation:
 [DataPipeline.Client.set_task_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.set_task_status)
 
 Arguments mapping described in
-[SetTaskStatusInputTypeDef](./type_defs.md#settaskstatusinputtypedef).
+[SetTaskStatusInputRequestTypeDef](./type_defs.md#settaskstatusinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -500,7 +510,7 @@ Boto3 documentation:
 [DataPipeline.Client.validate_pipeline_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.validate_pipeline_definition)
 
 Arguments mapping described in
-[ValidatePipelineDefinitionInputTypeDef](./type_defs.md#validatepipelinedefinitioninputtypedef).
+[ValidatePipelineDefinitionInputRequestTypeDef](./type_defs.md#validatepipelinedefinitioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -514,7 +524,7 @@ Keyword-only arguments:
   `List`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
 
 Returns
-[ValidatePipelineDefinitionOutputResponseTypeDef](./type_defs.md#validatepipelinedefinitionoutputresponsetypedef).
+[ValidatePipelineDefinitionOutputTypeDef](./type_defs.md#validatepipelinedefinitionoutputtypedef).
 
 ### get_paginator
 

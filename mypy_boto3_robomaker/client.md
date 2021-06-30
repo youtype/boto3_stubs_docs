@@ -11,6 +11,7 @@ type annotations stubs module
   - [RoboMakerClient](#robomakerclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [batch_delete_worlds](#batch_delete_worlds)
     - [batch_describe_simulation_job](#batch_describe_simulation_job)
     - [can_paginate](#can_paginate)
@@ -115,6 +116,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+RoboMakerClient exceptions.
+
+Type annotations for `boto3.client("robomaker").exceptions` method.
+
+Boto3 documentation:
+[RoboMaker.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### batch_delete_worlds
 
 Deletes one or more worlds in a batch operation.
@@ -125,14 +137,14 @@ Boto3 documentation:
 [RoboMaker.Client.batch_delete_worlds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.batch_delete_worlds)
 
 Arguments mapping described in
-[BatchDeleteWorldsRequestTypeDef](./type_defs.md#batchdeleteworldsrequesttypedef).
+[BatchDeleteWorldsRequestRequestTypeDef](./type_defs.md#batchdeleteworldsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `worlds`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDeleteWorldsResponseResponseTypeDef](./type_defs.md#batchdeleteworldsresponseresponsetypedef).
+[BatchDeleteWorldsResponseTypeDef](./type_defs.md#batchdeleteworldsresponsetypedef).
 
 ### batch_describe_simulation_job
 
@@ -145,14 +157,14 @@ Boto3 documentation:
 [RoboMaker.Client.batch_describe_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.batch_describe_simulation_job)
 
 Arguments mapping described in
-[BatchDescribeSimulationJobRequestTypeDef](./type_defs.md#batchdescribesimulationjobrequesttypedef).
+[BatchDescribeSimulationJobRequestRequestTypeDef](./type_defs.md#batchdescribesimulationjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `jobs`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDescribeSimulationJobResponseResponseTypeDef](./type_defs.md#batchdescribesimulationjobresponseresponsetypedef).
+[BatchDescribeSimulationJobResponseTypeDef](./type_defs.md#batchdescribesimulationjobresponsetypedef).
 
 ### can_paginate
 
@@ -179,7 +191,7 @@ Boto3 documentation:
 [RoboMaker.Client.cancel_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_deployment_job)
 
 Arguments mapping described in
-[CancelDeploymentJobRequestTypeDef](./type_defs.md#canceldeploymentjobrequesttypedef).
+[CancelDeploymentJobRequestRequestTypeDef](./type_defs.md#canceldeploymentjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -197,7 +209,7 @@ Boto3 documentation:
 [RoboMaker.Client.cancel_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_simulation_job)
 
 Arguments mapping described in
-[CancelSimulationJobRequestTypeDef](./type_defs.md#cancelsimulationjobrequesttypedef).
+[CancelSimulationJobRequestRequestTypeDef](./type_defs.md#cancelsimulationjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -216,7 +228,7 @@ Boto3 documentation:
 [RoboMaker.Client.cancel_simulation_job_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_simulation_job_batch)
 
 Arguments mapping described in
-[CancelSimulationJobBatchRequestTypeDef](./type_defs.md#cancelsimulationjobbatchrequesttypedef).
+[CancelSimulationJobBatchRequestRequestTypeDef](./type_defs.md#cancelsimulationjobbatchrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -235,7 +247,7 @@ Boto3 documentation:
 [RoboMaker.Client.cancel_world_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_world_export_job)
 
 Arguments mapping described in
-[CancelWorldExportJobRequestTypeDef](./type_defs.md#cancelworldexportjobrequesttypedef).
+[CancelWorldExportJobRequestRequestTypeDef](./type_defs.md#cancelworldexportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -254,7 +266,7 @@ Boto3 documentation:
 [RoboMaker.Client.cancel_world_generation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_world_generation_job)
 
 Arguments mapping described in
-[CancelWorldGenerationJobRequestTypeDef](./type_defs.md#cancelworldgenerationjobrequesttypedef).
+[CancelWorldGenerationJobRequestRequestTypeDef](./type_defs.md#cancelworldgenerationjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -272,7 +284,7 @@ Boto3 documentation:
 [RoboMaker.Client.create_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_deployment_job)
 
 Arguments mapping described in
-[CreateDeploymentJobRequestTypeDef](./type_defs.md#createdeploymentjobrequesttypedef).
+[CreateDeploymentJobRequestRequestTypeDef](./type_defs.md#createdeploymentjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -286,7 +298,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDeploymentJobResponseResponseTypeDef](./type_defs.md#createdeploymentjobresponseresponsetypedef).
+[CreateDeploymentJobResponseTypeDef](./type_defs.md#createdeploymentjobresponsetypedef).
 
 ### create_fleet
 
@@ -298,7 +310,7 @@ Boto3 documentation:
 [RoboMaker.Client.create_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_fleet)
 
 Arguments mapping described in
-[CreateFleetRequestTypeDef](./type_defs.md#createfleetrequesttypedef).
+[CreateFleetRequestRequestTypeDef](./type_defs.md#createfleetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -306,7 +318,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateFleetResponseResponseTypeDef](./type_defs.md#createfleetresponseresponsetypedef).
+[CreateFleetResponseTypeDef](./type_defs.md#createfleetresponsetypedef).
 
 ### create_robot
 
@@ -318,7 +330,7 @@ Boto3 documentation:
 [RoboMaker.Client.create_robot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot)
 
 Arguments mapping described in
-[CreateRobotRequestTypeDef](./type_defs.md#createrobotrequesttypedef).
+[CreateRobotRequestRequestTypeDef](./type_defs.md#createrobotrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -329,7 +341,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateRobotResponseResponseTypeDef](./type_defs.md#createrobotresponseresponsetypedef).
+[CreateRobotResponseTypeDef](./type_defs.md#createrobotresponsetypedef).
 
 ### create_robot_application
 
@@ -342,7 +354,7 @@ Boto3 documentation:
 [RoboMaker.Client.create_robot_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot_application)
 
 Arguments mapping described in
-[CreateRobotApplicationRequestTypeDef](./type_defs.md#createrobotapplicationrequesttypedef).
+[CreateRobotApplicationRequestRequestTypeDef](./type_defs.md#createrobotapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -356,7 +368,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateRobotApplicationResponseResponseTypeDef](./type_defs.md#createrobotapplicationresponseresponsetypedef).
+[CreateRobotApplicationResponseTypeDef](./type_defs.md#createrobotapplicationresponsetypedef).
 
 ### create_robot_application_version
 
@@ -369,7 +381,7 @@ Boto3 documentation:
 [RoboMaker.Client.create_robot_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot_application_version)
 
 Arguments mapping described in
-[CreateRobotApplicationVersionRequestTypeDef](./type_defs.md#createrobotapplicationversionrequesttypedef).
+[CreateRobotApplicationVersionRequestRequestTypeDef](./type_defs.md#createrobotapplicationversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -377,7 +389,7 @@ Keyword-only arguments:
 - `currentRevisionId`: `str`
 
 Returns
-[CreateRobotApplicationVersionResponseResponseTypeDef](./type_defs.md#createrobotapplicationversionresponseresponsetypedef).
+[CreateRobotApplicationVersionResponseTypeDef](./type_defs.md#createrobotapplicationversionresponsetypedef).
 
 ### create_simulation_application
 
@@ -390,7 +402,7 @@ Boto3 documentation:
 [RoboMaker.Client.create_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_application)
 
 Arguments mapping described in
-[CreateSimulationApplicationRequestTypeDef](./type_defs.md#createsimulationapplicationrequesttypedef).
+[CreateSimulationApplicationRequestRequestTypeDef](./type_defs.md#createsimulationapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -409,7 +421,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateSimulationApplicationResponseResponseTypeDef](./type_defs.md#createsimulationapplicationresponseresponsetypedef).
+[CreateSimulationApplicationResponseTypeDef](./type_defs.md#createsimulationapplicationresponsetypedef).
 
 ### create_simulation_application_version
 
@@ -422,7 +434,7 @@ Boto3 documentation:
 [RoboMaker.Client.create_simulation_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_application_version)
 
 Arguments mapping described in
-[CreateSimulationApplicationVersionRequestTypeDef](./type_defs.md#createsimulationapplicationversionrequesttypedef).
+[CreateSimulationApplicationVersionRequestRequestTypeDef](./type_defs.md#createsimulationapplicationversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -430,7 +442,7 @@ Keyword-only arguments:
 - `currentRevisionId`: `str`
 
 Returns
-[CreateSimulationApplicationVersionResponseResponseTypeDef](./type_defs.md#createsimulationapplicationversionresponseresponsetypedef).
+[CreateSimulationApplicationVersionResponseTypeDef](./type_defs.md#createsimulationapplicationversionresponsetypedef).
 
 ### create_simulation_job
 
@@ -442,7 +454,7 @@ Boto3 documentation:
 [RoboMaker.Client.create_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_job)
 
 Arguments mapping described in
-[CreateSimulationJobRequestTypeDef](./type_defs.md#createsimulationjobrequesttypedef).
+[CreateSimulationJobRequestRequestTypeDef](./type_defs.md#createsimulationjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -464,7 +476,7 @@ Keyword-only arguments:
 - `compute`: [ComputeTypeDef](./type_defs.md#computetypedef)
 
 Returns
-[CreateSimulationJobResponseResponseTypeDef](./type_defs.md#createsimulationjobresponseresponsetypedef).
+[CreateSimulationJobResponseTypeDef](./type_defs.md#createsimulationjobresponsetypedef).
 
 ### create_world_export_job
 
@@ -477,7 +489,7 @@ Boto3 documentation:
 [RoboMaker.Client.create_world_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_export_job)
 
 Arguments mapping described in
-[CreateWorldExportJobRequestTypeDef](./type_defs.md#createworldexportjobrequesttypedef).
+[CreateWorldExportJobRequestRequestTypeDef](./type_defs.md#createworldexportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -489,7 +501,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateWorldExportJobResponseResponseTypeDef](./type_defs.md#createworldexportjobresponseresponsetypedef).
+[CreateWorldExportJobResponseTypeDef](./type_defs.md#createworldexportjobresponsetypedef).
 
 ### create_world_generation_job
 
@@ -502,7 +514,7 @@ Boto3 documentation:
 [RoboMaker.Client.create_world_generation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_generation_job)
 
 Arguments mapping described in
-[CreateWorldGenerationJobRequestTypeDef](./type_defs.md#createworldgenerationjobrequesttypedef).
+[CreateWorldGenerationJobRequestRequestTypeDef](./type_defs.md#createworldgenerationjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -514,7 +526,7 @@ Keyword-only arguments:
 - `worldTags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateWorldGenerationJobResponseResponseTypeDef](./type_defs.md#createworldgenerationjobresponseresponsetypedef).
+[CreateWorldGenerationJobResponseTypeDef](./type_defs.md#createworldgenerationjobresponsetypedef).
 
 ### create_world_template
 
@@ -526,7 +538,7 @@ Boto3 documentation:
 [RoboMaker.Client.create_world_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_template)
 
 Arguments mapping described in
-[CreateWorldTemplateRequestTypeDef](./type_defs.md#createworldtemplaterequesttypedef).
+[CreateWorldTemplateRequestRequestTypeDef](./type_defs.md#createworldtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -538,7 +550,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateWorldTemplateResponseResponseTypeDef](./type_defs.md#createworldtemplateresponseresponsetypedef).
+[CreateWorldTemplateResponseTypeDef](./type_defs.md#createworldtemplateresponsetypedef).
 
 ### delete_fleet
 
@@ -550,7 +562,7 @@ Boto3 documentation:
 [RoboMaker.Client.delete_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_fleet)
 
 Arguments mapping described in
-[DeleteFleetRequestTypeDef](./type_defs.md#deletefleetrequesttypedef).
+[DeleteFleetRequestRequestTypeDef](./type_defs.md#deletefleetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -568,7 +580,7 @@ Boto3 documentation:
 [RoboMaker.Client.delete_robot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_robot)
 
 Arguments mapping described in
-[DeleteRobotRequestTypeDef](./type_defs.md#deleterobotrequesttypedef).
+[DeleteRobotRequestRequestTypeDef](./type_defs.md#deleterobotrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -587,7 +599,7 @@ Boto3 documentation:
 [RoboMaker.Client.delete_robot_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_robot_application)
 
 Arguments mapping described in
-[DeleteRobotApplicationRequestTypeDef](./type_defs.md#deleterobotapplicationrequesttypedef).
+[DeleteRobotApplicationRequestRequestTypeDef](./type_defs.md#deleterobotapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -607,7 +619,7 @@ Boto3 documentation:
 [RoboMaker.Client.delete_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_simulation_application)
 
 Arguments mapping described in
-[DeleteSimulationApplicationRequestTypeDef](./type_defs.md#deletesimulationapplicationrequesttypedef).
+[DeleteSimulationApplicationRequestRequestTypeDef](./type_defs.md#deletesimulationapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -626,7 +638,7 @@ Boto3 documentation:
 [RoboMaker.Client.delete_world_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_world_template)
 
 Arguments mapping described in
-[DeleteWorldTemplateRequestTypeDef](./type_defs.md#deleteworldtemplaterequesttypedef).
+[DeleteWorldTemplateRequestRequestTypeDef](./type_defs.md#deleteworldtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -644,7 +656,7 @@ Boto3 documentation:
 [RoboMaker.Client.deregister_robot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.deregister_robot)
 
 Arguments mapping described in
-[DeregisterRobotRequestTypeDef](./type_defs.md#deregisterrobotrequesttypedef).
+[DeregisterRobotRequestRequestTypeDef](./type_defs.md#deregisterrobotrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -652,7 +664,7 @@ Keyword-only arguments:
 - `robot`: `str` *(required)*
 
 Returns
-[DeregisterRobotResponseResponseTypeDef](./type_defs.md#deregisterrobotresponseresponsetypedef).
+[DeregisterRobotResponseTypeDef](./type_defs.md#deregisterrobotresponsetypedef).
 
 ### describe_deployment_job
 
@@ -665,14 +677,14 @@ Boto3 documentation:
 [RoboMaker.Client.describe_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_deployment_job)
 
 Arguments mapping described in
-[DescribeDeploymentJobRequestTypeDef](./type_defs.md#describedeploymentjobrequesttypedef).
+[DescribeDeploymentJobRequestRequestTypeDef](./type_defs.md#describedeploymentjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `job`: `str` *(required)*
 
 Returns
-[DescribeDeploymentJobResponseResponseTypeDef](./type_defs.md#describedeploymentjobresponseresponsetypedef).
+[DescribeDeploymentJobResponseTypeDef](./type_defs.md#describedeploymentjobresponsetypedef).
 
 ### describe_fleet
 
@@ -684,14 +696,14 @@ Boto3 documentation:
 [RoboMaker.Client.describe_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_fleet)
 
 Arguments mapping described in
-[DescribeFleetRequestTypeDef](./type_defs.md#describefleetrequesttypedef).
+[DescribeFleetRequestRequestTypeDef](./type_defs.md#describefleetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `fleet`: `str` *(required)*
 
 Returns
-[DescribeFleetResponseResponseTypeDef](./type_defs.md#describefleetresponseresponsetypedef).
+[DescribeFleetResponseTypeDef](./type_defs.md#describefleetresponsetypedef).
 
 ### describe_robot
 
@@ -703,14 +715,14 @@ Boto3 documentation:
 [RoboMaker.Client.describe_robot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_robot)
 
 Arguments mapping described in
-[DescribeRobotRequestTypeDef](./type_defs.md#describerobotrequesttypedef).
+[DescribeRobotRequestRequestTypeDef](./type_defs.md#describerobotrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `robot`: `str` *(required)*
 
 Returns
-[DescribeRobotResponseResponseTypeDef](./type_defs.md#describerobotresponseresponsetypedef).
+[DescribeRobotResponseTypeDef](./type_defs.md#describerobotresponsetypedef).
 
 ### describe_robot_application
 
@@ -723,7 +735,7 @@ Boto3 documentation:
 [RoboMaker.Client.describe_robot_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_robot_application)
 
 Arguments mapping described in
-[DescribeRobotApplicationRequestTypeDef](./type_defs.md#describerobotapplicationrequesttypedef).
+[DescribeRobotApplicationRequestRequestTypeDef](./type_defs.md#describerobotapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -731,7 +743,7 @@ Keyword-only arguments:
 - `applicationVersion`: `str`
 
 Returns
-[DescribeRobotApplicationResponseResponseTypeDef](./type_defs.md#describerobotapplicationresponseresponsetypedef).
+[DescribeRobotApplicationResponseTypeDef](./type_defs.md#describerobotapplicationresponsetypedef).
 
 ### describe_simulation_application
 
@@ -744,7 +756,7 @@ Boto3 documentation:
 [RoboMaker.Client.describe_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_application)
 
 Arguments mapping described in
-[DescribeSimulationApplicationRequestTypeDef](./type_defs.md#describesimulationapplicationrequesttypedef).
+[DescribeSimulationApplicationRequestRequestTypeDef](./type_defs.md#describesimulationapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -752,7 +764,7 @@ Keyword-only arguments:
 - `applicationVersion`: `str`
 
 Returns
-[DescribeSimulationApplicationResponseResponseTypeDef](./type_defs.md#describesimulationapplicationresponseresponsetypedef).
+[DescribeSimulationApplicationResponseTypeDef](./type_defs.md#describesimulationapplicationresponsetypedef).
 
 ### describe_simulation_job
 
@@ -765,14 +777,14 @@ Boto3 documentation:
 [RoboMaker.Client.describe_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_job)
 
 Arguments mapping described in
-[DescribeSimulationJobRequestTypeDef](./type_defs.md#describesimulationjobrequesttypedef).
+[DescribeSimulationJobRequestRequestTypeDef](./type_defs.md#describesimulationjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `job`: `str` *(required)*
 
 Returns
-[DescribeSimulationJobResponseResponseTypeDef](./type_defs.md#describesimulationjobresponseresponsetypedef).
+[DescribeSimulationJobResponseTypeDef](./type_defs.md#describesimulationjobresponsetypedef).
 
 ### describe_simulation_job_batch
 
@@ -785,14 +797,14 @@ Boto3 documentation:
 [RoboMaker.Client.describe_simulation_job_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_job_batch)
 
 Arguments mapping described in
-[DescribeSimulationJobBatchRequestTypeDef](./type_defs.md#describesimulationjobbatchrequesttypedef).
+[DescribeSimulationJobBatchRequestRequestTypeDef](./type_defs.md#describesimulationjobbatchrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `batch`: `str` *(required)*
 
 Returns
-[DescribeSimulationJobBatchResponseResponseTypeDef](./type_defs.md#describesimulationjobbatchresponseresponsetypedef).
+[DescribeSimulationJobBatchResponseTypeDef](./type_defs.md#describesimulationjobbatchresponsetypedef).
 
 ### describe_world
 
@@ -804,14 +816,14 @@ Boto3 documentation:
 [RoboMaker.Client.describe_world](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world)
 
 Arguments mapping described in
-[DescribeWorldRequestTypeDef](./type_defs.md#describeworldrequesttypedef).
+[DescribeWorldRequestRequestTypeDef](./type_defs.md#describeworldrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `world`: `str` *(required)*
 
 Returns
-[DescribeWorldResponseResponseTypeDef](./type_defs.md#describeworldresponseresponsetypedef).
+[DescribeWorldResponseTypeDef](./type_defs.md#describeworldresponsetypedef).
 
 ### describe_world_export_job
 
@@ -824,14 +836,14 @@ Boto3 documentation:
 [RoboMaker.Client.describe_world_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_export_job)
 
 Arguments mapping described in
-[DescribeWorldExportJobRequestTypeDef](./type_defs.md#describeworldexportjobrequesttypedef).
+[DescribeWorldExportJobRequestRequestTypeDef](./type_defs.md#describeworldexportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `job`: `str` *(required)*
 
 Returns
-[DescribeWorldExportJobResponseResponseTypeDef](./type_defs.md#describeworldexportjobresponseresponsetypedef).
+[DescribeWorldExportJobResponseTypeDef](./type_defs.md#describeworldexportjobresponsetypedef).
 
 ### describe_world_generation_job
 
@@ -844,14 +856,14 @@ Boto3 documentation:
 [RoboMaker.Client.describe_world_generation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_generation_job)
 
 Arguments mapping described in
-[DescribeWorldGenerationJobRequestTypeDef](./type_defs.md#describeworldgenerationjobrequesttypedef).
+[DescribeWorldGenerationJobRequestRequestTypeDef](./type_defs.md#describeworldgenerationjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `job`: `str` *(required)*
 
 Returns
-[DescribeWorldGenerationJobResponseResponseTypeDef](./type_defs.md#describeworldgenerationjobresponseresponsetypedef).
+[DescribeWorldGenerationJobResponseTypeDef](./type_defs.md#describeworldgenerationjobresponsetypedef).
 
 ### describe_world_template
 
@@ -864,14 +876,14 @@ Boto3 documentation:
 [RoboMaker.Client.describe_world_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_template)
 
 Arguments mapping described in
-[DescribeWorldTemplateRequestTypeDef](./type_defs.md#describeworldtemplaterequesttypedef).
+[DescribeWorldTemplateRequestRequestTypeDef](./type_defs.md#describeworldtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `template`: `str` *(required)*
 
 Returns
-[DescribeWorldTemplateResponseResponseTypeDef](./type_defs.md#describeworldtemplateresponseresponsetypedef).
+[DescribeWorldTemplateResponseTypeDef](./type_defs.md#describeworldtemplateresponsetypedef).
 
 ### generate_presigned_url
 
@@ -902,7 +914,7 @@ Boto3 documentation:
 [RoboMaker.Client.get_world_template_body](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.get_world_template_body)
 
 Arguments mapping described in
-[GetWorldTemplateBodyRequestTypeDef](./type_defs.md#getworldtemplatebodyrequesttypedef).
+[GetWorldTemplateBodyRequestRequestTypeDef](./type_defs.md#getworldtemplatebodyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -910,7 +922,7 @@ Keyword-only arguments:
 - `generationJob`: `str`
 
 Returns
-[GetWorldTemplateBodyResponseResponseTypeDef](./type_defs.md#getworldtemplatebodyresponseresponsetypedef).
+[GetWorldTemplateBodyResponseTypeDef](./type_defs.md#getworldtemplatebodyresponsetypedef).
 
 ### list_deployment_jobs
 
@@ -922,7 +934,7 @@ Boto3 documentation:
 [RoboMaker.Client.list_deployment_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_deployment_jobs)
 
 Arguments mapping described in
-[ListDeploymentJobsRequestTypeDef](./type_defs.md#listdeploymentjobsrequesttypedef).
+[ListDeploymentJobsRequestRequestTypeDef](./type_defs.md#listdeploymentjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -931,7 +943,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDeploymentJobsResponseResponseTypeDef](./type_defs.md#listdeploymentjobsresponseresponsetypedef).
+[ListDeploymentJobsResponseTypeDef](./type_defs.md#listdeploymentjobsresponsetypedef).
 
 ### list_fleets
 
@@ -943,7 +955,7 @@ Boto3 documentation:
 [RoboMaker.Client.list_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_fleets)
 
 Arguments mapping described in
-[ListFleetsRequestTypeDef](./type_defs.md#listfleetsrequesttypedef).
+[ListFleetsRequestRequestTypeDef](./type_defs.md#listfleetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -951,8 +963,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
-Returns
-[ListFleetsResponseResponseTypeDef](./type_defs.md#listfleetsresponseresponsetypedef).
+Returns [ListFleetsResponseTypeDef](./type_defs.md#listfleetsresponsetypedef).
 
 ### list_robot_applications
 
@@ -965,7 +976,7 @@ Boto3 documentation:
 [RoboMaker.Client.list_robot_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_robot_applications)
 
 Arguments mapping described in
-[ListRobotApplicationsRequestTypeDef](./type_defs.md#listrobotapplicationsrequesttypedef).
+[ListRobotApplicationsRequestRequestTypeDef](./type_defs.md#listrobotapplicationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -975,7 +986,7 @@ Keyword-only arguments:
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListRobotApplicationsResponseResponseTypeDef](./type_defs.md#listrobotapplicationsresponseresponsetypedef).
+[ListRobotApplicationsResponseTypeDef](./type_defs.md#listrobotapplicationsresponsetypedef).
 
 ### list_robots
 
@@ -987,7 +998,7 @@ Boto3 documentation:
 [RoboMaker.Client.list_robots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_robots)
 
 Arguments mapping described in
-[ListRobotsRequestTypeDef](./type_defs.md#listrobotsrequesttypedef).
+[ListRobotsRequestRequestTypeDef](./type_defs.md#listrobotsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -995,8 +1006,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
-Returns
-[ListRobotsResponseResponseTypeDef](./type_defs.md#listrobotsresponseresponsetypedef).
+Returns [ListRobotsResponseTypeDef](./type_defs.md#listrobotsresponsetypedef).
 
 ### list_simulation_applications
 
@@ -1009,7 +1019,7 @@ Boto3 documentation:
 [RoboMaker.Client.list_simulation_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_applications)
 
 Arguments mapping described in
-[ListSimulationApplicationsRequestTypeDef](./type_defs.md#listsimulationapplicationsrequesttypedef).
+[ListSimulationApplicationsRequestRequestTypeDef](./type_defs.md#listsimulationapplicationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1019,7 +1029,7 @@ Keyword-only arguments:
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListSimulationApplicationsResponseResponseTypeDef](./type_defs.md#listsimulationapplicationsresponseresponsetypedef).
+[ListSimulationApplicationsResponseTypeDef](./type_defs.md#listsimulationapplicationsresponsetypedef).
 
 ### list_simulation_job_batches
 
@@ -1032,7 +1042,7 @@ Boto3 documentation:
 [RoboMaker.Client.list_simulation_job_batches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_job_batches)
 
 Arguments mapping described in
-[ListSimulationJobBatchesRequestTypeDef](./type_defs.md#listsimulationjobbatchesrequesttypedef).
+[ListSimulationJobBatchesRequestRequestTypeDef](./type_defs.md#listsimulationjobbatchesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1041,7 +1051,7 @@ Keyword-only arguments:
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListSimulationJobBatchesResponseResponseTypeDef](./type_defs.md#listsimulationjobbatchesresponseresponsetypedef).
+[ListSimulationJobBatchesResponseTypeDef](./type_defs.md#listsimulationjobbatchesresponsetypedef).
 
 ### list_simulation_jobs
 
@@ -1053,7 +1063,7 @@ Boto3 documentation:
 [RoboMaker.Client.list_simulation_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_jobs)
 
 Arguments mapping described in
-[ListSimulationJobsRequestTypeDef](./type_defs.md#listsimulationjobsrequesttypedef).
+[ListSimulationJobsRequestRequestTypeDef](./type_defs.md#listsimulationjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1062,7 +1072,7 @@ Keyword-only arguments:
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListSimulationJobsResponseResponseTypeDef](./type_defs.md#listsimulationjobsresponseresponsetypedef).
+[ListSimulationJobsResponseTypeDef](./type_defs.md#listsimulationjobsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -1074,14 +1084,14 @@ Boto3 documentation:
 [RoboMaker.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_world_export_jobs
 
@@ -1093,7 +1103,7 @@ Boto3 documentation:
 [RoboMaker.Client.list_world_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_export_jobs)
 
 Arguments mapping described in
-[ListWorldExportJobsRequestTypeDef](./type_defs.md#listworldexportjobsrequesttypedef).
+[ListWorldExportJobsRequestRequestTypeDef](./type_defs.md#listworldexportjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1102,7 +1112,7 @@ Keyword-only arguments:
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListWorldExportJobsResponseResponseTypeDef](./type_defs.md#listworldexportjobsresponseresponsetypedef).
+[ListWorldExportJobsResponseTypeDef](./type_defs.md#listworldexportjobsresponsetypedef).
 
 ### list_world_generation_jobs
 
@@ -1115,7 +1125,7 @@ Boto3 documentation:
 [RoboMaker.Client.list_world_generation_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_generation_jobs)
 
 Arguments mapping described in
-[ListWorldGenerationJobsRequestTypeDef](./type_defs.md#listworldgenerationjobsrequesttypedef).
+[ListWorldGenerationJobsRequestRequestTypeDef](./type_defs.md#listworldgenerationjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1124,7 +1134,7 @@ Keyword-only arguments:
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListWorldGenerationJobsResponseResponseTypeDef](./type_defs.md#listworldgenerationjobsresponseresponsetypedef).
+[ListWorldGenerationJobsResponseTypeDef](./type_defs.md#listworldgenerationjobsresponsetypedef).
 
 ### list_world_templates
 
@@ -1136,7 +1146,7 @@ Boto3 documentation:
 [RoboMaker.Client.list_world_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_templates)
 
 Arguments mapping described in
-[ListWorldTemplatesRequestTypeDef](./type_defs.md#listworldtemplatesrequesttypedef).
+[ListWorldTemplatesRequestRequestTypeDef](./type_defs.md#listworldtemplatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1144,7 +1154,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListWorldTemplatesResponseResponseTypeDef](./type_defs.md#listworldtemplatesresponseresponsetypedef).
+[ListWorldTemplatesResponseTypeDef](./type_defs.md#listworldtemplatesresponsetypedef).
 
 ### list_worlds
 
@@ -1156,7 +1166,7 @@ Boto3 documentation:
 [RoboMaker.Client.list_worlds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_worlds)
 
 Arguments mapping described in
-[ListWorldsRequestTypeDef](./type_defs.md#listworldsrequesttypedef).
+[ListWorldsRequestRequestTypeDef](./type_defs.md#listworldsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1164,8 +1174,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
-Returns
-[ListWorldsResponseResponseTypeDef](./type_defs.md#listworldsresponseresponsetypedef).
+Returns [ListWorldsResponseTypeDef](./type_defs.md#listworldsresponsetypedef).
 
 ### register_robot
 
@@ -1177,7 +1186,7 @@ Boto3 documentation:
 [RoboMaker.Client.register_robot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.register_robot)
 
 Arguments mapping described in
-[RegisterRobotRequestTypeDef](./type_defs.md#registerrobotrequesttypedef).
+[RegisterRobotRequestRequestTypeDef](./type_defs.md#registerrobotrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1185,7 +1194,7 @@ Keyword-only arguments:
 - `robot`: `str` *(required)*
 
 Returns
-[RegisterRobotResponseResponseTypeDef](./type_defs.md#registerrobotresponseresponsetypedef).
+[RegisterRobotResponseTypeDef](./type_defs.md#registerrobotresponsetypedef).
 
 ### restart_simulation_job
 
@@ -1197,7 +1206,7 @@ Boto3 documentation:
 [RoboMaker.Client.restart_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.restart_simulation_job)
 
 Arguments mapping described in
-[RestartSimulationJobRequestTypeDef](./type_defs.md#restartsimulationjobrequesttypedef).
+[RestartSimulationJobRequestRequestTypeDef](./type_defs.md#restartsimulationjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1216,7 +1225,7 @@ Boto3 documentation:
 [RoboMaker.Client.start_simulation_job_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.start_simulation_job_batch)
 
 Arguments mapping described in
-[StartSimulationJobBatchRequestTypeDef](./type_defs.md#startsimulationjobbatchrequesttypedef).
+[StartSimulationJobBatchRequestRequestTypeDef](./type_defs.md#startsimulationjobbatchrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1228,7 +1237,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[StartSimulationJobBatchResponseResponseTypeDef](./type_defs.md#startsimulationjobbatchresponseresponsetypedef).
+[StartSimulationJobBatchResponseTypeDef](./type_defs.md#startsimulationjobbatchresponsetypedef).
 
 ### sync_deployment_job
 
@@ -1240,7 +1249,7 @@ Boto3 documentation:
 [RoboMaker.Client.sync_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.sync_deployment_job)
 
 Arguments mapping described in
-[SyncDeploymentJobRequestTypeDef](./type_defs.md#syncdeploymentjobrequesttypedef).
+[SyncDeploymentJobRequestRequestTypeDef](./type_defs.md#syncdeploymentjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1248,7 +1257,7 @@ Keyword-only arguments:
 - `fleet`: `str` *(required)*
 
 Returns
-[SyncDeploymentJobResponseResponseTypeDef](./type_defs.md#syncdeploymentjobresponseresponsetypedef).
+[SyncDeploymentJobResponseTypeDef](./type_defs.md#syncdeploymentjobresponsetypedef).
 
 ### tag_resource
 
@@ -1260,7 +1269,7 @@ Boto3 documentation:
 [RoboMaker.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1279,7 +1288,7 @@ Boto3 documentation:
 [RoboMaker.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1299,7 +1308,7 @@ Boto3 documentation:
 [RoboMaker.Client.update_robot_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_robot_application)
 
 Arguments mapping described in
-[UpdateRobotApplicationRequestTypeDef](./type_defs.md#updaterobotapplicationrequesttypedef).
+[UpdateRobotApplicationRequestRequestTypeDef](./type_defs.md#updaterobotapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1313,7 +1322,7 @@ Keyword-only arguments:
 - `currentRevisionId`: `str`
 
 Returns
-[UpdateRobotApplicationResponseResponseTypeDef](./type_defs.md#updaterobotapplicationresponseresponsetypedef).
+[UpdateRobotApplicationResponseTypeDef](./type_defs.md#updaterobotapplicationresponsetypedef).
 
 ### update_simulation_application
 
@@ -1326,7 +1335,7 @@ Boto3 documentation:
 [RoboMaker.Client.update_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_simulation_application)
 
 Arguments mapping described in
-[UpdateSimulationApplicationRequestTypeDef](./type_defs.md#updatesimulationapplicationrequesttypedef).
+[UpdateSimulationApplicationRequestRequestTypeDef](./type_defs.md#updatesimulationapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1345,7 +1354,7 @@ Keyword-only arguments:
 - `currentRevisionId`: `str`
 
 Returns
-[UpdateSimulationApplicationResponseResponseTypeDef](./type_defs.md#updatesimulationapplicationresponseresponsetypedef).
+[UpdateSimulationApplicationResponseTypeDef](./type_defs.md#updatesimulationapplicationresponsetypedef).
 
 ### update_world_template
 
@@ -1357,7 +1366,7 @@ Boto3 documentation:
 [RoboMaker.Client.update_world_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_world_template)
 
 Arguments mapping described in
-[UpdateWorldTemplateRequestTypeDef](./type_defs.md#updateworldtemplaterequesttypedef).
+[UpdateWorldTemplateRequestRequestTypeDef](./type_defs.md#updateworldtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1368,7 +1377,7 @@ Keyword-only arguments:
   [TemplateLocationTypeDef](./type_defs.md#templatelocationtypedef)
 
 Returns
-[UpdateWorldTemplateResponseResponseTypeDef](./type_defs.md#updateworldtemplateresponseresponsetypedef).
+[UpdateWorldTemplateResponseTypeDef](./type_defs.md#updateworldtemplateresponsetypedef).
 
 ### get_paginator
 

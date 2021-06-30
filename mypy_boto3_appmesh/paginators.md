@@ -43,7 +43,7 @@ Arguments for `ListGatewayRoutesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGatewayRoutesPaginator.paginate` returns
-`Iterator`\[[ListGatewayRoutesOutputResponseTypeDef](./type_defs.md#listgatewayroutesoutputresponsetypedef)\].
+`Iterator`\[[ListGatewayRoutesOutputTypeDef](./type_defs.md#listgatewayroutesoutputtypedef)\].
 
 ## ListMeshesPaginator
 
@@ -67,7 +67,7 @@ Arguments for `ListMeshesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMeshesPaginator.paginate` returns
-`Iterator`\[[ListMeshesOutputResponseTypeDef](./type_defs.md#listmeshesoutputresponsetypedef)\].
+`Iterator`\[[ListMeshesOutputTypeDef](./type_defs.md#listmeshesoutputtypedef)\].
 
 ## ListRoutesPaginator
 
@@ -94,7 +94,7 @@ Arguments for `ListRoutesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRoutesPaginator.paginate` returns
-`Iterator`\[[ListRoutesOutputResponseTypeDef](./type_defs.md#listroutesoutputresponsetypedef)\].
+`Iterator`\[[ListRoutesOutputTypeDef](./type_defs.md#listroutesoutputtypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -120,7 +120,7 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef)\].
+`Iterator`\[[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)\].
 
 ## ListVirtualGatewaysPaginator
 
@@ -147,7 +147,7 @@ Arguments for `ListVirtualGatewaysPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVirtualGatewaysPaginator.paginate` returns
-`Iterator`\[[ListVirtualGatewaysOutputResponseTypeDef](./type_defs.md#listvirtualgatewaysoutputresponsetypedef)\].
+`Iterator`\[[ListVirtualGatewaysOutputTypeDef](./type_defs.md#listvirtualgatewaysoutputtypedef)\].
 
 ## ListVirtualNodesPaginator
 
@@ -174,7 +174,7 @@ Arguments for `ListVirtualNodesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVirtualNodesPaginator.paginate` returns
-`Iterator`\[[ListVirtualNodesOutputResponseTypeDef](./type_defs.md#listvirtualnodesoutputresponsetypedef)\].
+`Iterator`\[[ListVirtualNodesOutputTypeDef](./type_defs.md#listvirtualnodesoutputtypedef)\].
 
 ## ListVirtualRoutersPaginator
 
@@ -201,7 +201,7 @@ Arguments for `ListVirtualRoutersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVirtualRoutersPaginator.paginate` returns
-`Iterator`\[[ListVirtualRoutersOutputResponseTypeDef](./type_defs.md#listvirtualroutersoutputresponsetypedef)\].
+`Iterator`\[[ListVirtualRoutersOutputTypeDef](./type_defs.md#listvirtualroutersoutputtypedef)\].
 
 ## ListVirtualServicesPaginator
 
@@ -228,4 +228,4 @@ Arguments for `ListVirtualServicesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVirtualServicesPaginator.paginate` returns
-`Iterator`\[[ListVirtualServicesOutputResponseTypeDef](./type_defs.md#listvirtualservicesoutputresponsetypedef)\].
+`Iterator`\[[ListVirtualServicesOutputTypeDef](./type_defs.md#listvirtualservicesoutputtypedef)\].

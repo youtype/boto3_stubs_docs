@@ -11,6 +11,7 @@ type annotations stubs module
   - [TimestreamWriteClient](#timestreamwriteclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_database](#create_database)
     - [create_table](#create_table)
@@ -72,6 +73,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+TimestreamWriteClient exceptions.
+
+Type annotations for `boto3.client("timestream-write").exceptions` method.
+
+Boto3 documentation:
+[TimestreamWrite.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -97,7 +109,7 @@ Boto3 documentation:
 [TimestreamWrite.Client.create_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.create_database)
 
 Arguments mapping described in
-[CreateDatabaseRequestTypeDef](./type_defs.md#createdatabaserequesttypedef).
+[CreateDatabaseRequestRequestTypeDef](./type_defs.md#createdatabaserequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -106,7 +118,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDatabaseResponseResponseTypeDef](./type_defs.md#createdatabaseresponseresponsetypedef).
+[CreateDatabaseResponseTypeDef](./type_defs.md#createdatabaseresponsetypedef).
 
 ### create_table
 
@@ -119,7 +131,7 @@ Boto3 documentation:
 [TimestreamWrite.Client.create_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.create_table)
 
 Arguments mapping described in
-[CreateTableRequestTypeDef](./type_defs.md#createtablerequesttypedef).
+[CreateTableRequestRequestTypeDef](./type_defs.md#createtablerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -130,7 +142,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateTableResponseResponseTypeDef](./type_defs.md#createtableresponseresponsetypedef).
+[CreateTableResponseTypeDef](./type_defs.md#createtableresponsetypedef).
 
 ### delete_database
 
@@ -142,7 +154,7 @@ Boto3 documentation:
 [TimestreamWrite.Client.delete_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.delete_database)
 
 Arguments mapping described in
-[DeleteDatabaseRequestTypeDef](./type_defs.md#deletedatabaserequesttypedef).
+[DeleteDatabaseRequestRequestTypeDef](./type_defs.md#deletedatabaserequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -158,7 +170,7 @@ Boto3 documentation:
 [TimestreamWrite.Client.delete_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.delete_table)
 
 Arguments mapping described in
-[DeleteTableRequestTypeDef](./type_defs.md#deletetablerequesttypedef).
+[DeleteTableRequestRequestTypeDef](./type_defs.md#deletetablerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -178,14 +190,14 @@ Boto3 documentation:
 [TimestreamWrite.Client.describe_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_database)
 
 Arguments mapping described in
-[DescribeDatabaseRequestTypeDef](./type_defs.md#describedatabaserequesttypedef).
+[DescribeDatabaseRequestRequestTypeDef](./type_defs.md#describedatabaserequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 
 Returns
-[DescribeDatabaseResponseResponseTypeDef](./type_defs.md#describedatabaseresponseresponsetypedef).
+[DescribeDatabaseResponseTypeDef](./type_defs.md#describedatabaseresponsetypedef).
 
 ### describe_endpoints
 
@@ -199,7 +211,7 @@ Boto3 documentation:
 [TimestreamWrite.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_endpoints)
 
 Returns
-[DescribeEndpointsResponseResponseTypeDef](./type_defs.md#describeendpointsresponseresponsetypedef).
+[DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
 
 ### describe_table
 
@@ -212,7 +224,7 @@ Boto3 documentation:
 [TimestreamWrite.Client.describe_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_table)
 
 Arguments mapping described in
-[DescribeTableRequestTypeDef](./type_defs.md#describetablerequesttypedef).
+[DescribeTableRequestRequestTypeDef](./type_defs.md#describetablerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -220,7 +232,7 @@ Keyword-only arguments:
 - `TableName`: `str` *(required)*
 
 Returns
-[DescribeTableResponseResponseTypeDef](./type_defs.md#describetableresponseresponsetypedef).
+[DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef).
 
 ### generate_presigned_url
 
@@ -251,7 +263,7 @@ Boto3 documentation:
 [TimestreamWrite.Client.list_databases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_databases)
 
 Arguments mapping described in
-[ListDatabasesRequestTypeDef](./type_defs.md#listdatabasesrequesttypedef).
+[ListDatabasesRequestRequestTypeDef](./type_defs.md#listdatabasesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -259,7 +271,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDatabasesResponseResponseTypeDef](./type_defs.md#listdatabasesresponseresponsetypedef).
+[ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef).
 
 ### list_tables
 
@@ -272,7 +284,7 @@ Boto3 documentation:
 [TimestreamWrite.Client.list_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_tables)
 
 Arguments mapping described in
-[ListTablesRequestTypeDef](./type_defs.md#listtablesrequesttypedef).
+[ListTablesRequestRequestTypeDef](./type_defs.md#listtablesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -280,8 +292,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListTablesResponseResponseTypeDef](./type_defs.md#listtablesresponseresponsetypedef).
+Returns [ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -294,14 +305,14 @@ Boto3 documentation:
 [TimestreamWrite.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -313,7 +324,7 @@ Boto3 documentation:
 [TimestreamWrite.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -332,7 +343,7 @@ Boto3 documentation:
 [TimestreamWrite.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -351,7 +362,7 @@ Boto3 documentation:
 [TimestreamWrite.Client.update_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.update_database)
 
 Arguments mapping described in
-[UpdateDatabaseRequestTypeDef](./type_defs.md#updatedatabaserequesttypedef).
+[UpdateDatabaseRequestRequestTypeDef](./type_defs.md#updatedatabaserequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -359,7 +370,7 @@ Keyword-only arguments:
 - `KmsKeyId`: `str` *(required)*
 
 Returns
-[UpdateDatabaseResponseResponseTypeDef](./type_defs.md#updatedatabaseresponseresponsetypedef).
+[UpdateDatabaseResponseTypeDef](./type_defs.md#updatedatabaseresponsetypedef).
 
 ### update_table
 
@@ -372,7 +383,7 @@ Boto3 documentation:
 [TimestreamWrite.Client.update_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.update_table)
 
 Arguments mapping described in
-[UpdateTableRequestTypeDef](./type_defs.md#updatetablerequesttypedef).
+[UpdateTableRequestRequestTypeDef](./type_defs.md#updatetablerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -383,7 +394,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateTableResponseResponseTypeDef](./type_defs.md#updatetableresponseresponsetypedef).
+[UpdateTableResponseTypeDef](./type_defs.md#updatetableresponsetypedef).
 
 ### write_records
 
@@ -396,7 +407,7 @@ Boto3 documentation:
 [TimestreamWrite.Client.write_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.write_records)
 
 Arguments mapping described in
-[WriteRecordsRequestTypeDef](./type_defs.md#writerecordsrequesttypedef).
+[WriteRecordsRequestRequestTypeDef](./type_defs.md#writerecordsrequestrequesttypedef).
 
 Keyword-only arguments:
 

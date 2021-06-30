@@ -41,7 +41,7 @@ Arguments for `ListEndpointsByPlatformApplicationPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEndpointsByPlatformApplicationPaginator.paginate` returns
-`Iterator`\[[ListEndpointsByPlatformApplicationResponseResponseTypeDef](./type_defs.md#listendpointsbyplatformapplicationresponseresponsetypedef)\].
+`Iterator`\[[ListEndpointsByPlatformApplicationResponseTypeDef](./type_defs.md#listendpointsbyplatformapplicationresponsetypedef)\].
 
 ## ListOriginationNumbersPaginator
 
@@ -66,7 +66,7 @@ Arguments for `ListOriginationNumbersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOriginationNumbersPaginator.paginate` returns
-`Iterator`\[[ListOriginationNumbersResultResponseTypeDef](./type_defs.md#listoriginationnumbersresultresponsetypedef)\].
+`Iterator`\[[ListOriginationNumbersResultTypeDef](./type_defs.md#listoriginationnumbersresulttypedef)\].
 
 ## ListPhoneNumbersOptedOutPaginator
 
@@ -91,7 +91,7 @@ Arguments for `ListPhoneNumbersOptedOutPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPhoneNumbersOptedOutPaginator.paginate` returns
-`Iterator`\[[ListPhoneNumbersOptedOutResponseResponseTypeDef](./type_defs.md#listphonenumbersoptedoutresponseresponsetypedef)\].
+`Iterator`\[[ListPhoneNumbersOptedOutResponseTypeDef](./type_defs.md#listphonenumbersoptedoutresponsetypedef)\].
 
 ## ListPlatformApplicationsPaginator
 
@@ -116,7 +116,7 @@ Arguments for `ListPlatformApplicationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPlatformApplicationsPaginator.paginate` returns
-`Iterator`\[[ListPlatformApplicationsResponseResponseTypeDef](./type_defs.md#listplatformapplicationsresponseresponsetypedef)\].
+`Iterator`\[[ListPlatformApplicationsResponseTypeDef](./type_defs.md#listplatformapplicationsresponsetypedef)\].
 
 ## ListSMSSandboxPhoneNumbersPaginator
 
@@ -141,7 +141,7 @@ Arguments for `ListSMSSandboxPhoneNumbersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSMSSandboxPhoneNumbersPaginator.paginate` returns
-`Iterator`\[[ListSMSSandboxPhoneNumbersResultResponseTypeDef](./type_defs.md#listsmssandboxphonenumbersresultresponsetypedef)\].
+`Iterator`\[[ListSMSSandboxPhoneNumbersResultTypeDef](./type_defs.md#listsmssandboxphonenumbersresulttypedef)\].
 
 ## ListSubscriptionsPaginator
 
@@ -165,7 +165,7 @@ Arguments for `ListSubscriptionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSubscriptionsPaginator.paginate` returns
-`Iterator`\[[ListSubscriptionsResponseResponseTypeDef](./type_defs.md#listsubscriptionsresponseresponsetypedef)\].
+`Iterator`\[[ListSubscriptionsResponseTypeDef](./type_defs.md#listsubscriptionsresponsetypedef)\].
 
 ## ListSubscriptionsByTopicPaginator
 
@@ -191,7 +191,7 @@ Arguments for `ListSubscriptionsByTopicPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSubscriptionsByTopicPaginator.paginate` returns
-`Iterator`\[[ListSubscriptionsByTopicResponseResponseTypeDef](./type_defs.md#listsubscriptionsbytopicresponseresponsetypedef)\].
+`Iterator`\[[ListSubscriptionsByTopicResponseTypeDef](./type_defs.md#listsubscriptionsbytopicresponsetypedef)\].
 
 ## ListTopicsPaginator
 
@@ -215,4 +215,4 @@ Arguments for `ListTopicsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTopicsPaginator.paginate` returns
-`Iterator`\[[ListTopicsResponseResponseTypeDef](./type_defs.md#listtopicsresponseresponsetypedef)\].
+`Iterator`\[[ListTopicsResponseTypeDef](./type_defs.md#listtopicsresponsetypedef)\].

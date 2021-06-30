@@ -32,6 +32,7 @@ from mypy_boto3_apigatewaymanagementapi.client import ApiGatewayManagementApiCli
 
 - [can_paginate](./client.md#can_paginate)
 - [delete_connection](./client.md#delete_connection)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_connection](./client.md#get_connection)
 - [post_to_connection](./client.md#post_to_connection)
@@ -54,12 +55,12 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_apigatewaymanagementapi.type_defs import DeleteConnectionRequestTypeDef, ...
+from mypy_boto3_apigatewaymanagementapi.type_defs import DeleteConnectionRequestRequestTypeDef, ...
 ```
 
-- [DeleteConnectionRequestTypeDef](./type_defs.md#deleteconnectionrequesttypedef)
-- [GetConnectionRequestTypeDef](./type_defs.md#getconnectionrequesttypedef)
-- [GetConnectionResponseResponseTypeDef](./type_defs.md#getconnectionresponseresponsetypedef)
+- [DeleteConnectionRequestRequestTypeDef](./type_defs.md#deleteconnectionrequestrequesttypedef)
+- [GetConnectionRequestRequestTypeDef](./type_defs.md#getconnectionrequestrequesttypedef)
+- [GetConnectionResponseTypeDef](./type_defs.md#getconnectionresponsetypedef)
 - [IdentityTypeDef](./type_defs.md#identitytypedef)
-- [PostToConnectionRequestTypeDef](./type_defs.md#posttoconnectionrequesttypedef)
+- [PostToConnectionRequestRequestTypeDef](./type_defs.md#posttoconnectionrequestrequesttypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

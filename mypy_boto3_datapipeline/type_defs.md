@@ -8,24 +8,24 @@ type annotations stubs module
 [mypy_boto3_datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
 
 - [Typed dictionaries for boto3 DataPipeline module](#typed-dictionaries-for-boto3-datapipeline-module)
-  - [ActivatePipelineInputTypeDef](#activatepipelineinputtypedef)
-  - [AddTagsInputTypeDef](#addtagsinputtypedef)
-  - [CreatePipelineInputTypeDef](#createpipelineinputtypedef)
-  - [CreatePipelineOutputResponseTypeDef](#createpipelineoutputresponsetypedef)
-  - [DeactivatePipelineInputTypeDef](#deactivatepipelineinputtypedef)
-  - [DeletePipelineInputTypeDef](#deletepipelineinputtypedef)
-  - [DescribeObjectsInputTypeDef](#describeobjectsinputtypedef)
-  - [DescribeObjectsOutputResponseTypeDef](#describeobjectsoutputresponsetypedef)
-  - [DescribePipelinesInputTypeDef](#describepipelinesinputtypedef)
-  - [DescribePipelinesOutputResponseTypeDef](#describepipelinesoutputresponsetypedef)
-  - [EvaluateExpressionInputTypeDef](#evaluateexpressioninputtypedef)
-  - [EvaluateExpressionOutputResponseTypeDef](#evaluateexpressionoutputresponsetypedef)
+  - [ActivatePipelineInputRequestTypeDef](#activatepipelineinputrequesttypedef)
+  - [AddTagsInputRequestTypeDef](#addtagsinputrequesttypedef)
+  - [CreatePipelineInputRequestTypeDef](#createpipelineinputrequesttypedef)
+  - [CreatePipelineOutputTypeDef](#createpipelineoutputtypedef)
+  - [DeactivatePipelineInputRequestTypeDef](#deactivatepipelineinputrequesttypedef)
+  - [DeletePipelineInputRequestTypeDef](#deletepipelineinputrequesttypedef)
+  - [DescribeObjectsInputRequestTypeDef](#describeobjectsinputrequesttypedef)
+  - [DescribeObjectsOutputTypeDef](#describeobjectsoutputtypedef)
+  - [DescribePipelinesInputRequestTypeDef](#describepipelinesinputrequesttypedef)
+  - [DescribePipelinesOutputTypeDef](#describepipelinesoutputtypedef)
+  - [EvaluateExpressionInputRequestTypeDef](#evaluateexpressioninputrequesttypedef)
+  - [EvaluateExpressionOutputTypeDef](#evaluateexpressionoutputtypedef)
   - [FieldTypeDef](#fieldtypedef)
-  - [GetPipelineDefinitionInputTypeDef](#getpipelinedefinitioninputtypedef)
-  - [GetPipelineDefinitionOutputResponseTypeDef](#getpipelinedefinitionoutputresponsetypedef)
+  - [GetPipelineDefinitionInputRequestTypeDef](#getpipelinedefinitioninputrequesttypedef)
+  - [GetPipelineDefinitionOutputTypeDef](#getpipelinedefinitionoutputtypedef)
   - [InstanceIdentityTypeDef](#instanceidentitytypedef)
-  - [ListPipelinesInputTypeDef](#listpipelinesinputtypedef)
-  - [ListPipelinesOutputResponseTypeDef](#listpipelinesoutputresponsetypedef)
+  - [ListPipelinesInputRequestTypeDef](#listpipelinesinputrequesttypedef)
+  - [ListPipelinesOutputTypeDef](#listpipelinesoutputtypedef)
   - [OperatorTypeDef](#operatortypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ParameterAttributeTypeDef](#parameterattributetypedef)
@@ -34,33 +34,33 @@ type annotations stubs module
   - [PipelineDescriptionTypeDef](#pipelinedescriptiontypedef)
   - [PipelineIdNameTypeDef](#pipelineidnametypedef)
   - [PipelineObjectTypeDef](#pipelineobjecttypedef)
-  - [PollForTaskInputTypeDef](#pollfortaskinputtypedef)
-  - [PollForTaskOutputResponseTypeDef](#pollfortaskoutputresponsetypedef)
-  - [PutPipelineDefinitionInputTypeDef](#putpipelinedefinitioninputtypedef)
-  - [PutPipelineDefinitionOutputResponseTypeDef](#putpipelinedefinitionoutputresponsetypedef)
-  - [QueryObjectsInputTypeDef](#queryobjectsinputtypedef)
-  - [QueryObjectsOutputResponseTypeDef](#queryobjectsoutputresponsetypedef)
+  - [PollForTaskInputRequestTypeDef](#pollfortaskinputrequesttypedef)
+  - [PollForTaskOutputTypeDef](#pollfortaskoutputtypedef)
+  - [PutPipelineDefinitionInputRequestTypeDef](#putpipelinedefinitioninputrequesttypedef)
+  - [PutPipelineDefinitionOutputTypeDef](#putpipelinedefinitionoutputtypedef)
+  - [QueryObjectsInputRequestTypeDef](#queryobjectsinputrequesttypedef)
+  - [QueryObjectsOutputTypeDef](#queryobjectsoutputtypedef)
   - [QueryTypeDef](#querytypedef)
-  - [RemoveTagsInputTypeDef](#removetagsinputtypedef)
-  - [ReportTaskProgressInputTypeDef](#reporttaskprogressinputtypedef)
-  - [ReportTaskProgressOutputResponseTypeDef](#reporttaskprogressoutputresponsetypedef)
-  - [ReportTaskRunnerHeartbeatInputTypeDef](#reporttaskrunnerheartbeatinputtypedef)
-  - [ReportTaskRunnerHeartbeatOutputResponseTypeDef](#reporttaskrunnerheartbeatoutputresponsetypedef)
+  - [RemoveTagsInputRequestTypeDef](#removetagsinputrequesttypedef)
+  - [ReportTaskProgressInputRequestTypeDef](#reporttaskprogressinputrequesttypedef)
+  - [ReportTaskProgressOutputTypeDef](#reporttaskprogressoutputtypedef)
+  - [ReportTaskRunnerHeartbeatInputRequestTypeDef](#reporttaskrunnerheartbeatinputrequesttypedef)
+  - [ReportTaskRunnerHeartbeatOutputTypeDef](#reporttaskrunnerheartbeatoutputtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SelectorTypeDef](#selectortypedef)
-  - [SetStatusInputTypeDef](#setstatusinputtypedef)
-  - [SetTaskStatusInputTypeDef](#settaskstatusinputtypedef)
+  - [SetStatusInputRequestTypeDef](#setstatusinputrequesttypedef)
+  - [SetTaskStatusInputRequestTypeDef](#settaskstatusinputrequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TaskObjectTypeDef](#taskobjecttypedef)
-  - [ValidatePipelineDefinitionInputTypeDef](#validatepipelinedefinitioninputtypedef)
-  - [ValidatePipelineDefinitionOutputResponseTypeDef](#validatepipelinedefinitionoutputresponsetypedef)
+  - [ValidatePipelineDefinitionInputRequestTypeDef](#validatepipelinedefinitioninputrequesttypedef)
+  - [ValidatePipelineDefinitionOutputTypeDef](#validatepipelinedefinitionoutputtypedef)
   - [ValidationErrorTypeDef](#validationerrortypedef)
   - [ValidationWarningTypeDef](#validationwarningtypedef)
 
-## ActivatePipelineInputTypeDef
+## ActivatePipelineInputRequestTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import ActivatePipelineInputTypeDef
+from mypy_boto3_datapipeline.type_defs import ActivatePipelineInputRequestTypeDef
 ```
 
 Required fields:
@@ -73,10 +73,10 @@ Optional fields:
   `List`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
 - `startTimestamp`: `Union`\[`datetime`, `str`\]
 
-## AddTagsInputTypeDef
+## AddTagsInputRequestTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import AddTagsInputTypeDef
+from mypy_boto3_datapipeline.type_defs import AddTagsInputRequestTypeDef
 ```
 
 Required fields:
@@ -84,10 +84,10 @@ Required fields:
 - `pipelineId`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreatePipelineInputTypeDef
+## CreatePipelineInputRequestTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import CreatePipelineInputTypeDef
+from mypy_boto3_datapipeline.type_defs import CreatePipelineInputRequestTypeDef
 ```
 
 Required fields:
@@ -100,10 +100,10 @@ Optional fields:
 - `description`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreatePipelineOutputResponseTypeDef
+## CreatePipelineOutputTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import CreatePipelineOutputResponseTypeDef
+from mypy_boto3_datapipeline.type_defs import CreatePipelineOutputTypeDef
 ```
 
 Required fields:
@@ -112,10 +112,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeactivatePipelineInputTypeDef
+## DeactivatePipelineInputRequestTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import DeactivatePipelineInputTypeDef
+from mypy_boto3_datapipeline.type_defs import DeactivatePipelineInputRequestTypeDef
 ```
 
 Required fields:
@@ -126,20 +126,20 @@ Optional fields:
 
 - `cancelActive`: `bool`
 
-## DeletePipelineInputTypeDef
+## DeletePipelineInputRequestTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import DeletePipelineInputTypeDef
+from mypy_boto3_datapipeline.type_defs import DeletePipelineInputRequestTypeDef
 ```
 
 Required fields:
 
 - `pipelineId`: `str`
 
-## DescribeObjectsInputTypeDef
+## DescribeObjectsInputRequestTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import DescribeObjectsInputTypeDef
+from mypy_boto3_datapipeline.type_defs import DescribeObjectsInputRequestTypeDef
 ```
 
 Required fields:
@@ -152,10 +152,10 @@ Optional fields:
 - `evaluateExpressions`: `bool`
 - `marker`: `str`
 
-## DescribeObjectsOutputResponseTypeDef
+## DescribeObjectsOutputTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import DescribeObjectsOutputResponseTypeDef
+from mypy_boto3_datapipeline.type_defs import DescribeObjectsOutputTypeDef
 ```
 
 Required fields:
@@ -167,20 +167,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePipelinesInputTypeDef
+## DescribePipelinesInputRequestTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import DescribePipelinesInputTypeDef
+from mypy_boto3_datapipeline.type_defs import DescribePipelinesInputRequestTypeDef
 ```
 
 Required fields:
 
 - `pipelineIds`: `List`\[`str`\]
 
-## DescribePipelinesOutputResponseTypeDef
+## DescribePipelinesOutputTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import DescribePipelinesOutputResponseTypeDef
+from mypy_boto3_datapipeline.type_defs import DescribePipelinesOutputTypeDef
 ```
 
 Required fields:
@@ -190,10 +190,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## EvaluateExpressionInputTypeDef
+## EvaluateExpressionInputRequestTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import EvaluateExpressionInputTypeDef
+from mypy_boto3_datapipeline.type_defs import EvaluateExpressionInputRequestTypeDef
 ```
 
 Required fields:
@@ -202,10 +202,10 @@ Required fields:
 - `objectId`: `str`
 - `expression`: `str`
 
-## EvaluateExpressionOutputResponseTypeDef
+## EvaluateExpressionOutputTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import EvaluateExpressionOutputResponseTypeDef
+from mypy_boto3_datapipeline.type_defs import EvaluateExpressionOutputTypeDef
 ```
 
 Required fields:
@@ -229,10 +229,10 @@ Optional fields:
 - `stringValue`: `str`
 - `refValue`: `str`
 
-## GetPipelineDefinitionInputTypeDef
+## GetPipelineDefinitionInputRequestTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import GetPipelineDefinitionInputTypeDef
+from mypy_boto3_datapipeline.type_defs import GetPipelineDefinitionInputRequestTypeDef
 ```
 
 Required fields:
@@ -243,10 +243,10 @@ Optional fields:
 
 - `version`: `str`
 
-## GetPipelineDefinitionOutputResponseTypeDef
+## GetPipelineDefinitionOutputTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import GetPipelineDefinitionOutputResponseTypeDef
+from mypy_boto3_datapipeline.type_defs import GetPipelineDefinitionOutputTypeDef
 ```
 
 Required fields:
@@ -271,20 +271,20 @@ Optional fields:
 - `document`: `str`
 - `signature`: `str`
 
-## ListPipelinesInputTypeDef
+## ListPipelinesInputRequestTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import ListPipelinesInputTypeDef
+from mypy_boto3_datapipeline.type_defs import ListPipelinesInputRequestTypeDef
 ```
 
 Optional fields:
 
 - `marker`: `str`
 
-## ListPipelinesOutputResponseTypeDef
+## ListPipelinesOutputTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import ListPipelinesOutputResponseTypeDef
+from mypy_boto3_datapipeline.type_defs import ListPipelinesOutputTypeDef
 ```
 
 Required fields:
@@ -393,10 +393,10 @@ Required fields:
 - `name`: `str`
 - `fields`: `List`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]
 
-## PollForTaskInputTypeDef
+## PollForTaskInputRequestTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import PollForTaskInputTypeDef
+from mypy_boto3_datapipeline.type_defs import PollForTaskInputRequestTypeDef
 ```
 
 Required fields:
@@ -409,10 +409,10 @@ Optional fields:
 - `instanceIdentity`:
   [InstanceIdentityTypeDef](./type_defs.md#instanceidentitytypedef)
 
-## PollForTaskOutputResponseTypeDef
+## PollForTaskOutputTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import PollForTaskOutputResponseTypeDef
+from mypy_boto3_datapipeline.type_defs import PollForTaskOutputTypeDef
 ```
 
 Required fields:
@@ -421,10 +421,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutPipelineDefinitionInputTypeDef
+## PutPipelineDefinitionInputRequestTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import PutPipelineDefinitionInputTypeDef
+from mypy_boto3_datapipeline.type_defs import PutPipelineDefinitionInputRequestTypeDef
 ```
 
 Required fields:
@@ -440,10 +440,10 @@ Optional fields:
 - `parameterValues`:
   `List`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
 
-## PutPipelineDefinitionOutputResponseTypeDef
+## PutPipelineDefinitionOutputTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import PutPipelineDefinitionOutputResponseTypeDef
+from mypy_boto3_datapipeline.type_defs import PutPipelineDefinitionOutputTypeDef
 ```
 
 Required fields:
@@ -456,10 +456,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## QueryObjectsInputTypeDef
+## QueryObjectsInputRequestTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import QueryObjectsInputTypeDef
+from mypy_boto3_datapipeline.type_defs import QueryObjectsInputRequestTypeDef
 ```
 
 Required fields:
@@ -473,10 +473,10 @@ Optional fields:
 - `marker`: `str`
 - `limit`: `int`
 
-## QueryObjectsOutputResponseTypeDef
+## QueryObjectsOutputTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import QueryObjectsOutputResponseTypeDef
+from mypy_boto3_datapipeline.type_defs import QueryObjectsOutputTypeDef
 ```
 
 Required fields:
@@ -497,10 +497,10 @@ Optional fields:
 
 - `selectors`: `List`\[[SelectorTypeDef](./type_defs.md#selectortypedef)\]
 
-## RemoveTagsInputTypeDef
+## RemoveTagsInputRequestTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import RemoveTagsInputTypeDef
+from mypy_boto3_datapipeline.type_defs import RemoveTagsInputRequestTypeDef
 ```
 
 Required fields:
@@ -508,10 +508,10 @@ Required fields:
 - `pipelineId`: `str`
 - `tagKeys`: `List`\[`str`\]
 
-## ReportTaskProgressInputTypeDef
+## ReportTaskProgressInputRequestTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import ReportTaskProgressInputTypeDef
+from mypy_boto3_datapipeline.type_defs import ReportTaskProgressInputRequestTypeDef
 ```
 
 Required fields:
@@ -522,10 +522,10 @@ Optional fields:
 
 - `fields`: `List`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]
 
-## ReportTaskProgressOutputResponseTypeDef
+## ReportTaskProgressOutputTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import ReportTaskProgressOutputResponseTypeDef
+from mypy_boto3_datapipeline.type_defs import ReportTaskProgressOutputTypeDef
 ```
 
 Required fields:
@@ -534,10 +534,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ReportTaskRunnerHeartbeatInputTypeDef
+## ReportTaskRunnerHeartbeatInputRequestTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import ReportTaskRunnerHeartbeatInputTypeDef
+from mypy_boto3_datapipeline.type_defs import ReportTaskRunnerHeartbeatInputRequestTypeDef
 ```
 
 Required fields:
@@ -549,10 +549,10 @@ Optional fields:
 - `workerGroup`: `str`
 - `hostname`: `str`
 
-## ReportTaskRunnerHeartbeatOutputResponseTypeDef
+## ReportTaskRunnerHeartbeatOutputTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import ReportTaskRunnerHeartbeatOutputResponseTypeDef
+from mypy_boto3_datapipeline.type_defs import ReportTaskRunnerHeartbeatOutputTypeDef
 ```
 
 Required fields:
@@ -586,10 +586,10 @@ Optional fields:
 - `fieldName`: `str`
 - `operator`: [OperatorTypeDef](./type_defs.md#operatortypedef)
 
-## SetStatusInputTypeDef
+## SetStatusInputRequestTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import SetStatusInputTypeDef
+from mypy_boto3_datapipeline.type_defs import SetStatusInputRequestTypeDef
 ```
 
 Required fields:
@@ -598,10 +598,10 @@ Required fields:
 - `objectIds`: `List`\[`str`\]
 - `status`: `str`
 
-## SetTaskStatusInputTypeDef
+## SetTaskStatusInputRequestTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import SetTaskStatusInputTypeDef
+from mypy_boto3_datapipeline.type_defs import SetTaskStatusInputRequestTypeDef
 ```
 
 Required fields:
@@ -640,10 +640,10 @@ Optional fields:
 - `objects`: `Dict`\[`str`,
   [PipelineObjectTypeDef](./type_defs.md#pipelineobjecttypedef)\]
 
-## ValidatePipelineDefinitionInputTypeDef
+## ValidatePipelineDefinitionInputRequestTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import ValidatePipelineDefinitionInputTypeDef
+from mypy_boto3_datapipeline.type_defs import ValidatePipelineDefinitionInputRequestTypeDef
 ```
 
 Required fields:
@@ -659,10 +659,10 @@ Optional fields:
 - `parameterValues`:
   `List`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
 
-## ValidatePipelineDefinitionOutputResponseTypeDef
+## ValidatePipelineDefinitionOutputTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import ValidatePipelineDefinitionOutputResponseTypeDef
+from mypy_boto3_datapipeline.type_defs import ValidatePipelineDefinitionOutputTypeDef
 ```
 
 Required fields:

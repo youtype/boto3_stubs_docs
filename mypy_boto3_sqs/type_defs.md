@@ -9,62 +9,62 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 SQS module](#typed-dictionaries-for-boto3-sqs-module)
   - [AddPermissionRequestQueueTypeDef](#addpermissionrequestqueuetypedef)
-  - [AddPermissionRequestTypeDef](#addpermissionrequesttypedef)
+  - [AddPermissionRequestRequestTypeDef](#addpermissionrequestrequesttypedef)
   - [BatchResultErrorEntryTypeDef](#batchresulterrorentrytypedef)
   - [ChangeMessageVisibilityBatchRequestEntryTypeDef](#changemessagevisibilitybatchrequestentrytypedef)
   - [ChangeMessageVisibilityBatchRequestQueueTypeDef](#changemessagevisibilitybatchrequestqueuetypedef)
-  - [ChangeMessageVisibilityBatchRequestTypeDef](#changemessagevisibilitybatchrequesttypedef)
+  - [ChangeMessageVisibilityBatchRequestRequestTypeDef](#changemessagevisibilitybatchrequestrequesttypedef)
   - [ChangeMessageVisibilityBatchResultEntryTypeDef](#changemessagevisibilitybatchresultentrytypedef)
-  - [ChangeMessageVisibilityBatchResultResponseTypeDef](#changemessagevisibilitybatchresultresponsetypedef)
+  - [ChangeMessageVisibilityBatchResultTypeDef](#changemessagevisibilitybatchresulttypedef)
   - [ChangeMessageVisibilityRequestMessageTypeDef](#changemessagevisibilityrequestmessagetypedef)
-  - [ChangeMessageVisibilityRequestTypeDef](#changemessagevisibilityrequesttypedef)
+  - [ChangeMessageVisibilityRequestRequestTypeDef](#changemessagevisibilityrequestrequesttypedef)
+  - [CreateQueueRequestRequestTypeDef](#createqueuerequestrequesttypedef)
   - [CreateQueueRequestServiceResourceTypeDef](#createqueuerequestserviceresourcetypedef)
-  - [CreateQueueRequestTypeDef](#createqueuerequesttypedef)
-  - [CreateQueueResultResponseTypeDef](#createqueueresultresponsetypedef)
+  - [CreateQueueResultTypeDef](#createqueueresulttypedef)
   - [DeleteMessageBatchRequestEntryTypeDef](#deletemessagebatchrequestentrytypedef)
   - [DeleteMessageBatchRequestQueueTypeDef](#deletemessagebatchrequestqueuetypedef)
-  - [DeleteMessageBatchRequestTypeDef](#deletemessagebatchrequesttypedef)
+  - [DeleteMessageBatchRequestRequestTypeDef](#deletemessagebatchrequestrequesttypedef)
   - [DeleteMessageBatchResultEntryTypeDef](#deletemessagebatchresultentrytypedef)
-  - [DeleteMessageBatchResultResponseTypeDef](#deletemessagebatchresultresponsetypedef)
-  - [DeleteMessageRequestTypeDef](#deletemessagerequesttypedef)
-  - [DeleteQueueRequestTypeDef](#deletequeuerequesttypedef)
-  - [GetQueueAttributesRequestTypeDef](#getqueueattributesrequesttypedef)
-  - [GetQueueAttributesResultResponseTypeDef](#getqueueattributesresultresponsetypedef)
+  - [DeleteMessageBatchResultTypeDef](#deletemessagebatchresulttypedef)
+  - [DeleteMessageRequestRequestTypeDef](#deletemessagerequestrequesttypedef)
+  - [DeleteQueueRequestRequestTypeDef](#deletequeuerequestrequesttypedef)
+  - [GetQueueAttributesRequestRequestTypeDef](#getqueueattributesrequestrequesttypedef)
+  - [GetQueueAttributesResultTypeDef](#getqueueattributesresulttypedef)
+  - [GetQueueUrlRequestRequestTypeDef](#getqueueurlrequestrequesttypedef)
   - [GetQueueUrlRequestServiceResourceTypeDef](#getqueueurlrequestserviceresourcetypedef)
-  - [GetQueueUrlRequestTypeDef](#getqueueurlrequesttypedef)
-  - [GetQueueUrlResultResponseTypeDef](#getqueueurlresultresponsetypedef)
-  - [ListDeadLetterSourceQueuesRequestTypeDef](#listdeadlettersourcequeuesrequesttypedef)
-  - [ListDeadLetterSourceQueuesResultResponseTypeDef](#listdeadlettersourcequeuesresultresponsetypedef)
-  - [ListQueueTagsRequestTypeDef](#listqueuetagsrequesttypedef)
-  - [ListQueueTagsResultResponseTypeDef](#listqueuetagsresultresponsetypedef)
-  - [ListQueuesRequestTypeDef](#listqueuesrequesttypedef)
-  - [ListQueuesResultResponseTypeDef](#listqueuesresultresponsetypedef)
+  - [GetQueueUrlResultTypeDef](#getqueueurlresulttypedef)
+  - [ListDeadLetterSourceQueuesRequestRequestTypeDef](#listdeadlettersourcequeuesrequestrequesttypedef)
+  - [ListDeadLetterSourceQueuesResultTypeDef](#listdeadlettersourcequeuesresulttypedef)
+  - [ListQueueTagsRequestRequestTypeDef](#listqueuetagsrequestrequesttypedef)
+  - [ListQueueTagsResultTypeDef](#listqueuetagsresulttypedef)
+  - [ListQueuesRequestRequestTypeDef](#listqueuesrequestrequesttypedef)
+  - [ListQueuesResultTypeDef](#listqueuesresulttypedef)
   - [MessageAttributeValueTypeDef](#messageattributevaluetypedef)
   - [MessageSystemAttributeValueTypeDef](#messagesystemattributevaluetypedef)
   - [MessageTypeDef](#messagetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PurgeQueueRequestTypeDef](#purgequeuerequesttypedef)
+  - [PurgeQueueRequestRequestTypeDef](#purgequeuerequestrequesttypedef)
   - [QueueMessageRequestTypeDef](#queuemessagerequesttypedef)
   - [ReceiveMessageRequestQueueTypeDef](#receivemessagerequestqueuetypedef)
-  - [ReceiveMessageRequestTypeDef](#receivemessagerequesttypedef)
-  - [ReceiveMessageResultResponseTypeDef](#receivemessageresultresponsetypedef)
+  - [ReceiveMessageRequestRequestTypeDef](#receivemessagerequestrequesttypedef)
+  - [ReceiveMessageResultTypeDef](#receivemessageresulttypedef)
   - [RemovePermissionRequestQueueTypeDef](#removepermissionrequestqueuetypedef)
-  - [RemovePermissionRequestTypeDef](#removepermissionrequesttypedef)
+  - [RemovePermissionRequestRequestTypeDef](#removepermissionrequestrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SendMessageBatchRequestEntryTypeDef](#sendmessagebatchrequestentrytypedef)
   - [SendMessageBatchRequestQueueTypeDef](#sendmessagebatchrequestqueuetypedef)
-  - [SendMessageBatchRequestTypeDef](#sendmessagebatchrequesttypedef)
+  - [SendMessageBatchRequestRequestTypeDef](#sendmessagebatchrequestrequesttypedef)
   - [SendMessageBatchResultEntryTypeDef](#sendmessagebatchresultentrytypedef)
-  - [SendMessageBatchResultResponseTypeDef](#sendmessagebatchresultresponsetypedef)
+  - [SendMessageBatchResultTypeDef](#sendmessagebatchresulttypedef)
   - [SendMessageRequestQueueTypeDef](#sendmessagerequestqueuetypedef)
-  - [SendMessageRequestTypeDef](#sendmessagerequesttypedef)
-  - [SendMessageResultResponseTypeDef](#sendmessageresultresponsetypedef)
+  - [SendMessageRequestRequestTypeDef](#sendmessagerequestrequesttypedef)
+  - [SendMessageResultTypeDef](#sendmessageresulttypedef)
   - [ServiceResourceMessageRequestTypeDef](#serviceresourcemessagerequesttypedef)
   - [ServiceResourceQueueRequestTypeDef](#serviceresourcequeuerequesttypedef)
   - [SetQueueAttributesRequestQueueTypeDef](#setqueueattributesrequestqueuetypedef)
-  - [SetQueueAttributesRequestTypeDef](#setqueueattributesrequesttypedef)
-  - [TagQueueRequestTypeDef](#tagqueuerequesttypedef)
-  - [UntagQueueRequestTypeDef](#untagqueuerequesttypedef)
+  - [SetQueueAttributesRequestRequestTypeDef](#setqueueattributesrequestrequesttypedef)
+  - [TagQueueRequestRequestTypeDef](#tagqueuerequestrequesttypedef)
+  - [UntagQueueRequestRequestTypeDef](#untagqueuerequestrequesttypedef)
 
 ## AddPermissionRequestQueueTypeDef
 
@@ -78,10 +78,10 @@ Required fields:
 - `AWSAccountIds`: `List`\[`str`\]
 - `Actions`: `List`\[`str`\]
 
-## AddPermissionRequestTypeDef
+## AddPermissionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import AddPermissionRequestTypeDef
+from mypy_boto3_sqs.type_defs import AddPermissionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -133,10 +133,10 @@ Required fields:
 - `Entries`:
   `List`\[[ChangeMessageVisibilityBatchRequestEntryTypeDef](./type_defs.md#changemessagevisibilitybatchrequestentrytypedef)\]
 
-## ChangeMessageVisibilityBatchRequestTypeDef
+## ChangeMessageVisibilityBatchRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import ChangeMessageVisibilityBatchRequestTypeDef
+from mypy_boto3_sqs.type_defs import ChangeMessageVisibilityBatchRequestRequestTypeDef
 ```
 
 Required fields:
@@ -155,10 +155,10 @@ Required fields:
 
 - `Id`: `str`
 
-## ChangeMessageVisibilityBatchResultResponseTypeDef
+## ChangeMessageVisibilityBatchResultTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import ChangeMessageVisibilityBatchResultResponseTypeDef
+from mypy_boto3_sqs.type_defs import ChangeMessageVisibilityBatchResultTypeDef
 ```
 
 Required fields:
@@ -180,10 +180,10 @@ Required fields:
 
 - `VisibilityTimeout`: `int`
 
-## ChangeMessageVisibilityRequestTypeDef
+## ChangeMessageVisibilityRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import ChangeMessageVisibilityRequestTypeDef
+from mypy_boto3_sqs.type_defs import ChangeMessageVisibilityRequestRequestTypeDef
 ```
 
 Required fields:
@@ -191,6 +191,23 @@ Required fields:
 - `QueueUrl`: `str`
 - `ReceiptHandle`: `str`
 - `VisibilityTimeout`: `int`
+
+## CreateQueueRequestRequestTypeDef
+
+```python
+from mypy_boto3_sqs.type_defs import CreateQueueRequestRequestTypeDef
+```
+
+Required fields:
+
+- `QueueName`: `str`
+
+Optional fields:
+
+- `Attributes`:
+  `Dict`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
+  `str`\]
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## CreateQueueRequestServiceResourceTypeDef
 
@@ -209,27 +226,10 @@ Optional fields:
   `str`\]
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateQueueRequestTypeDef
+## CreateQueueResultTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import CreateQueueRequestTypeDef
-```
-
-Required fields:
-
-- `QueueName`: `str`
-
-Optional fields:
-
-- `Attributes`:
-  `Dict`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
-  `str`\]
-- `tags`: `Dict`\[`str`, `str`\]
-
-## CreateQueueResultResponseTypeDef
-
-```python
-from mypy_boto3_sqs.type_defs import CreateQueueResultResponseTypeDef
+from mypy_boto3_sqs.type_defs import CreateQueueResultTypeDef
 ```
 
 Required fields:
@@ -260,10 +260,10 @@ Required fields:
 - `Entries`:
   `List`\[[DeleteMessageBatchRequestEntryTypeDef](./type_defs.md#deletemessagebatchrequestentrytypedef)\]
 
-## DeleteMessageBatchRequestTypeDef
+## DeleteMessageBatchRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import DeleteMessageBatchRequestTypeDef
+from mypy_boto3_sqs.type_defs import DeleteMessageBatchRequestRequestTypeDef
 ```
 
 Required fields:
@@ -282,10 +282,10 @@ Required fields:
 
 - `Id`: `str`
 
-## DeleteMessageBatchResultResponseTypeDef
+## DeleteMessageBatchResultTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import DeleteMessageBatchResultResponseTypeDef
+from mypy_boto3_sqs.type_defs import DeleteMessageBatchResultTypeDef
 ```
 
 Required fields:
@@ -297,10 +297,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteMessageRequestTypeDef
+## DeleteMessageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import DeleteMessageRequestTypeDef
+from mypy_boto3_sqs.type_defs import DeleteMessageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -308,20 +308,20 @@ Required fields:
 - `QueueUrl`: `str`
 - `ReceiptHandle`: `str`
 
-## DeleteQueueRequestTypeDef
+## DeleteQueueRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import DeleteQueueRequestTypeDef
+from mypy_boto3_sqs.type_defs import DeleteQueueRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `QueueUrl`: `str`
 
-## GetQueueAttributesRequestTypeDef
+## GetQueueAttributesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import GetQueueAttributesRequestTypeDef
+from mypy_boto3_sqs.type_defs import GetQueueAttributesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -333,10 +333,10 @@ Optional fields:
 - `AttributeNames`:
   `List`\[[QueueAttributeNameType](./literals.md#queueattributenametype)\]
 
-## GetQueueAttributesResultResponseTypeDef
+## GetQueueAttributesResultTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import GetQueueAttributesResultResponseTypeDef
+from mypy_boto3_sqs.type_defs import GetQueueAttributesResultTypeDef
 ```
 
 Required fields:
@@ -346,6 +346,20 @@ Required fields:
   `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetQueueUrlRequestRequestTypeDef
+
+```python
+from mypy_boto3_sqs.type_defs import GetQueueUrlRequestRequestTypeDef
+```
+
+Required fields:
+
+- `QueueName`: `str`
+
+Optional fields:
+
+- `QueueOwnerAWSAccountId`: `str`
 
 ## GetQueueUrlRequestServiceResourceTypeDef
 
@@ -361,24 +375,10 @@ Optional fields:
 
 - `QueueOwnerAWSAccountId`: `str`
 
-## GetQueueUrlRequestTypeDef
+## GetQueueUrlResultTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import GetQueueUrlRequestTypeDef
-```
-
-Required fields:
-
-- `QueueName`: `str`
-
-Optional fields:
-
-- `QueueOwnerAWSAccountId`: `str`
-
-## GetQueueUrlResultResponseTypeDef
-
-```python
-from mypy_boto3_sqs.type_defs import GetQueueUrlResultResponseTypeDef
+from mypy_boto3_sqs.type_defs import GetQueueUrlResultTypeDef
 ```
 
 Required fields:
@@ -387,10 +387,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDeadLetterSourceQueuesRequestTypeDef
+## ListDeadLetterSourceQueuesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import ListDeadLetterSourceQueuesRequestTypeDef
+from mypy_boto3_sqs.type_defs import ListDeadLetterSourceQueuesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -402,10 +402,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListDeadLetterSourceQueuesResultResponseTypeDef
+## ListDeadLetterSourceQueuesResultTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import ListDeadLetterSourceQueuesResultResponseTypeDef
+from mypy_boto3_sqs.type_defs import ListDeadLetterSourceQueuesResultTypeDef
 ```
 
 Required fields:
@@ -415,20 +415,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListQueueTagsRequestTypeDef
+## ListQueueTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import ListQueueTagsRequestTypeDef
+from mypy_boto3_sqs.type_defs import ListQueueTagsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `QueueUrl`: `str`
 
-## ListQueueTagsResultResponseTypeDef
+## ListQueueTagsResultTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import ListQueueTagsResultResponseTypeDef
+from mypy_boto3_sqs.type_defs import ListQueueTagsResultTypeDef
 ```
 
 Required fields:
@@ -437,10 +437,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListQueuesRequestTypeDef
+## ListQueuesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import ListQueuesRequestTypeDef
+from mypy_boto3_sqs.type_defs import ListQueuesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -449,10 +449,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListQueuesResultResponseTypeDef
+## ListQueuesResultTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import ListQueuesResultResponseTypeDef
+from mypy_boto3_sqs.type_defs import ListQueuesResultTypeDef
 ```
 
 Required fields:
@@ -528,10 +528,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PurgeQueueRequestTypeDef
+## PurgeQueueRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import PurgeQueueRequestTypeDef
+from mypy_boto3_sqs.type_defs import PurgeQueueRequestRequestTypeDef
 ```
 
 Required fields:
@@ -564,10 +564,10 @@ Optional fields:
 - `WaitTimeSeconds`: `int`
 - `ReceiveRequestAttemptId`: `str`
 
-## ReceiveMessageRequestTypeDef
+## ReceiveMessageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import ReceiveMessageRequestTypeDef
+from mypy_boto3_sqs.type_defs import ReceiveMessageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -584,10 +584,10 @@ Optional fields:
 - `WaitTimeSeconds`: `int`
 - `ReceiveRequestAttemptId`: `str`
 
-## ReceiveMessageResultResponseTypeDef
+## ReceiveMessageResultTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import ReceiveMessageResultResponseTypeDef
+from mypy_boto3_sqs.type_defs import ReceiveMessageResultTypeDef
 ```
 
 Required fields:
@@ -606,10 +606,10 @@ Required fields:
 
 - `Label`: `str`
 
-## RemovePermissionRequestTypeDef
+## RemovePermissionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import RemovePermissionRequestTypeDef
+from mypy_boto3_sqs.type_defs import RemovePermissionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -664,10 +664,10 @@ Required fields:
 - `Entries`:
   `List`\[[SendMessageBatchRequestEntryTypeDef](./type_defs.md#sendmessagebatchrequestentrytypedef)\]
 
-## SendMessageBatchRequestTypeDef
+## SendMessageBatchRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import SendMessageBatchRequestTypeDef
+from mypy_boto3_sqs.type_defs import SendMessageBatchRequestRequestTypeDef
 ```
 
 Required fields:
@@ -694,10 +694,10 @@ Optional fields:
 - `MD5OfMessageSystemAttributes`: `str`
 - `SequenceNumber`: `str`
 
-## SendMessageBatchResultResponseTypeDef
+## SendMessageBatchResultTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import SendMessageBatchResultResponseTypeDef
+from mypy_boto3_sqs.type_defs import SendMessageBatchResultTypeDef
 ```
 
 Required fields:
@@ -730,10 +730,10 @@ Optional fields:
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
 
-## SendMessageRequestTypeDef
+## SendMessageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import SendMessageRequestTypeDef
+from mypy_boto3_sqs.type_defs import SendMessageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -752,10 +752,10 @@ Optional fields:
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
 
-## SendMessageResultResponseTypeDef
+## SendMessageResultTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import SendMessageResultResponseTypeDef
+from mypy_boto3_sqs.type_defs import SendMessageResultTypeDef
 ```
 
 Required fields:
@@ -801,10 +801,10 @@ Required fields:
   `Dict`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
   `str`\]
 
-## SetQueueAttributesRequestTypeDef
+## SetQueueAttributesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import SetQueueAttributesRequestTypeDef
+from mypy_boto3_sqs.type_defs import SetQueueAttributesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -814,10 +814,10 @@ Required fields:
   `Dict`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
   `str`\]
 
-## TagQueueRequestTypeDef
+## TagQueueRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import TagQueueRequestTypeDef
+from mypy_boto3_sqs.type_defs import TagQueueRequestRequestTypeDef
 ```
 
 Required fields:
@@ -825,10 +825,10 @@ Required fields:
 - `QueueUrl`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## UntagQueueRequestTypeDef
+## UntagQueueRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sqs.type_defs import UntagQueueRequestTypeDef
+from mypy_boto3_sqs.type_defs import UntagQueueRequestRequestTypeDef
 ```
 
 Required fields:

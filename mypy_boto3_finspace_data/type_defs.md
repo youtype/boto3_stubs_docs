@@ -9,14 +9,14 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 FinSpaceData module](#typed-dictionaries-for-boto3-finspacedata-module)
   - [ChangesetInfoTypeDef](#changesetinfotypedef)
-  - [CreateChangesetRequestTypeDef](#createchangesetrequesttypedef)
-  - [CreateChangesetResponseResponseTypeDef](#createchangesetresponseresponsetypedef)
+  - [CreateChangesetRequestRequestTypeDef](#createchangesetrequestrequesttypedef)
+  - [CreateChangesetResponseTypeDef](#createchangesetresponsetypedef)
   - [CredentialsTypeDef](#credentialstypedef)
   - [ErrorInfoTypeDef](#errorinfotypedef)
-  - [GetProgrammaticAccessCredentialsRequestTypeDef](#getprogrammaticaccesscredentialsrequesttypedef)
-  - [GetProgrammaticAccessCredentialsResponseResponseTypeDef](#getprogrammaticaccesscredentialsresponseresponsetypedef)
-  - [GetWorkingLocationRequestTypeDef](#getworkinglocationrequesttypedef)
-  - [GetWorkingLocationResponseResponseTypeDef](#getworkinglocationresponseresponsetypedef)
+  - [GetProgrammaticAccessCredentialsRequestRequestTypeDef](#getprogrammaticaccesscredentialsrequestrequesttypedef)
+  - [GetProgrammaticAccessCredentialsResponseTypeDef](#getprogrammaticaccesscredentialsresponsetypedef)
+  - [GetWorkingLocationRequestRequestTypeDef](#getworkinglocationrequestrequesttypedef)
+  - [GetWorkingLocationResponseTypeDef](#getworkinglocationresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
 
 ## ChangesetInfoTypeDef
@@ -43,10 +43,10 @@ Optional fields:
 - `updatesChangesetId`: `str`
 - `updatedByChangesetId`: `str`
 
-## CreateChangesetRequestTypeDef
+## CreateChangesetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_finspace_data.type_defs import CreateChangesetRequestTypeDef
+from mypy_boto3_finspace_data.type_defs import CreateChangesetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -63,10 +63,10 @@ Optional fields:
 - `formatParams`: `Dict`\[`str`, `str`\]
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateChangesetResponseResponseTypeDef
+## CreateChangesetResponseTypeDef
 
 ```python
-from mypy_boto3_finspace_data.type_defs import CreateChangesetResponseResponseTypeDef
+from mypy_boto3_finspace_data.type_defs import CreateChangesetResponseTypeDef
 ```
 
 Required fields:
@@ -98,10 +98,10 @@ Optional fields:
 - `errorMessage`: `str`
 - `errorCategory`: [ErrorCategoryType](./literals.md#errorcategorytype)
 
-## GetProgrammaticAccessCredentialsRequestTypeDef
+## GetProgrammaticAccessCredentialsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_finspace_data.type_defs import GetProgrammaticAccessCredentialsRequestTypeDef
+from mypy_boto3_finspace_data.type_defs import GetProgrammaticAccessCredentialsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -112,10 +112,10 @@ Optional fields:
 
 - `durationInMinutes`: `int`
 
-## GetProgrammaticAccessCredentialsResponseResponseTypeDef
+## GetProgrammaticAccessCredentialsResponseTypeDef
 
 ```python
-from mypy_boto3_finspace_data.type_defs import GetProgrammaticAccessCredentialsResponseResponseTypeDef
+from mypy_boto3_finspace_data.type_defs import GetProgrammaticAccessCredentialsResponseTypeDef
 ```
 
 Required fields:
@@ -125,20 +125,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetWorkingLocationRequestTypeDef
+## GetWorkingLocationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_finspace_data.type_defs import GetWorkingLocationRequestTypeDef
+from mypy_boto3_finspace_data.type_defs import GetWorkingLocationRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `locationType`: [locationTypeType](./literals.md#locationtypetype)
 
-## GetWorkingLocationResponseResponseTypeDef
+## GetWorkingLocationResponseTypeDef
 
 ```python
-from mypy_boto3_finspace_data.type_defs import GetWorkingLocationResponseResponseTypeDef
+from mypy_boto3_finspace_data.type_defs import GetWorkingLocationResponseTypeDef
 ```
 
 Required fields:

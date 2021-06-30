@@ -11,6 +11,7 @@ type annotations stubs module
   - [GlobalAcceleratorClient](#globalacceleratorclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_custom_routing_endpoints](#add_custom_routing_endpoints)
     - [advertise_byoip_cidr](#advertise_byoip_cidr)
     - [allow_custom_routing_traffic](#allow_custom_routing_traffic)
@@ -114,6 +115,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+GlobalAcceleratorClient exceptions.
+
+Type annotations for `boto3.client("globalaccelerator").exceptions` method.
+
+Boto3 documentation:
+[GlobalAccelerator.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_custom_routing_endpoints
 
 Associate a virtual private cloud (VPC) subnet endpoint with your custom
@@ -126,7 +138,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.add_custom_routing_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.add_custom_routing_endpoints)
 
 Arguments mapping described in
-[AddCustomRoutingEndpointsRequestTypeDef](./type_defs.md#addcustomroutingendpointsrequesttypedef).
+[AddCustomRoutingEndpointsRequestRequestTypeDef](./type_defs.md#addcustomroutingendpointsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -136,7 +148,7 @@ Keyword-only arguments:
 - `EndpointGroupArn`: `str` *(required)*
 
 Returns
-[AddCustomRoutingEndpointsResponseResponseTypeDef](./type_defs.md#addcustomroutingendpointsresponseresponsetypedef).
+[AddCustomRoutingEndpointsResponseTypeDef](./type_defs.md#addcustomroutingendpointsresponsetypedef).
 
 ### advertise_byoip_cidr
 
@@ -150,14 +162,14 @@ Boto3 documentation:
 [GlobalAccelerator.Client.advertise_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.advertise_byoip_cidr)
 
 Arguments mapping described in
-[AdvertiseByoipCidrRequestTypeDef](./type_defs.md#advertisebyoipcidrrequesttypedef).
+[AdvertiseByoipCidrRequestRequestTypeDef](./type_defs.md#advertisebyoipcidrrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Cidr`: `str` *(required)*
 
 Returns
-[AdvertiseByoipCidrResponseResponseTypeDef](./type_defs.md#advertisebyoipcidrresponseresponsetypedef).
+[AdvertiseByoipCidrResponseTypeDef](./type_defs.md#advertisebyoipcidrresponsetypedef).
 
 ### allow_custom_routing_traffic
 
@@ -171,7 +183,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.allow_custom_routing_traffic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.allow_custom_routing_traffic)
 
 Arguments mapping described in
-[AllowCustomRoutingTrafficRequestTypeDef](./type_defs.md#allowcustomroutingtrafficrequesttypedef).
+[AllowCustomRoutingTrafficRequestRequestTypeDef](./type_defs.md#allowcustomroutingtrafficrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -207,7 +219,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.create_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_accelerator)
 
 Arguments mapping described in
-[CreateAcceleratorRequestTypeDef](./type_defs.md#createacceleratorrequesttypedef).
+[CreateAcceleratorRequestRequestTypeDef](./type_defs.md#createacceleratorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -220,7 +232,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateAcceleratorResponseResponseTypeDef](./type_defs.md#createacceleratorresponseresponsetypedef).
+[CreateAcceleratorResponseTypeDef](./type_defs.md#createacceleratorresponsetypedef).
 
 ### create_custom_routing_accelerator
 
@@ -233,7 +245,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.create_custom_routing_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_accelerator)
 
 Arguments mapping described in
-[CreateCustomRoutingAcceleratorRequestTypeDef](./type_defs.md#createcustomroutingacceleratorrequesttypedef).
+[CreateCustomRoutingAcceleratorRequestRequestTypeDef](./type_defs.md#createcustomroutingacceleratorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -246,7 +258,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateCustomRoutingAcceleratorResponseResponseTypeDef](./type_defs.md#createcustomroutingacceleratorresponseresponsetypedef).
+[CreateCustomRoutingAcceleratorResponseTypeDef](./type_defs.md#createcustomroutingacceleratorresponsetypedef).
 
 ### create_custom_routing_endpoint_group
 
@@ -261,7 +273,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.create_custom_routing_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_endpoint_group)
 
 Arguments mapping described in
-[CreateCustomRoutingEndpointGroupRequestTypeDef](./type_defs.md#createcustomroutingendpointgrouprequesttypedef).
+[CreateCustomRoutingEndpointGroupRequestRequestTypeDef](./type_defs.md#createcustomroutingendpointgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -273,7 +285,7 @@ Keyword-only arguments:
 - `IdempotencyToken`: `str` *(required)*
 
 Returns
-[CreateCustomRoutingEndpointGroupResponseResponseTypeDef](./type_defs.md#createcustomroutingendpointgroupresponseresponsetypedef).
+[CreateCustomRoutingEndpointGroupResponseTypeDef](./type_defs.md#createcustomroutingendpointgroupresponsetypedef).
 
 ### create_custom_routing_listener
 
@@ -287,7 +299,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.create_custom_routing_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_listener)
 
 Arguments mapping described in
-[CreateCustomRoutingListenerRequestTypeDef](./type_defs.md#createcustomroutinglistenerrequesttypedef).
+[CreateCustomRoutingListenerRequestRequestTypeDef](./type_defs.md#createcustomroutinglistenerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -297,7 +309,7 @@ Keyword-only arguments:
 - `IdempotencyToken`: `str` *(required)*
 
 Returns
-[CreateCustomRoutingListenerResponseResponseTypeDef](./type_defs.md#createcustomroutinglistenerresponseresponsetypedef).
+[CreateCustomRoutingListenerResponseTypeDef](./type_defs.md#createcustomroutinglistenerresponsetypedef).
 
 ### create_endpoint_group
 
@@ -310,7 +322,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.create_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_endpoint_group)
 
 Arguments mapping described in
-[CreateEndpointGroupRequestTypeDef](./type_defs.md#createendpointgrouprequesttypedef).
+[CreateEndpointGroupRequestRequestTypeDef](./type_defs.md#createendpointgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -330,7 +342,7 @@ Keyword-only arguments:
   `List`\[[PortOverrideTypeDef](./type_defs.md#portoverridetypedef)\]
 
 Returns
-[CreateEndpointGroupResponseResponseTypeDef](./type_defs.md#createendpointgroupresponseresponsetypedef).
+[CreateEndpointGroupResponseTypeDef](./type_defs.md#createendpointgroupresponsetypedef).
 
 ### create_listener
 
@@ -344,7 +356,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.create_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_listener)
 
 Arguments mapping described in
-[CreateListenerRequestTypeDef](./type_defs.md#createlistenerrequesttypedef).
+[CreateListenerRequestRequestTypeDef](./type_defs.md#createlistenerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -356,7 +368,7 @@ Keyword-only arguments:
 - `ClientAffinity`: [ClientAffinityType](./literals.md#clientaffinitytype)
 
 Returns
-[CreateListenerResponseResponseTypeDef](./type_defs.md#createlistenerresponseresponsetypedef).
+[CreateListenerResponseTypeDef](./type_defs.md#createlistenerresponsetypedef).
 
 ### delete_accelerator
 
@@ -369,7 +381,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.delete_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_accelerator)
 
 Arguments mapping described in
-[DeleteAcceleratorRequestTypeDef](./type_defs.md#deleteacceleratorrequesttypedef).
+[DeleteAcceleratorRequestRequestTypeDef](./type_defs.md#deleteacceleratorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -386,7 +398,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.delete_custom_routing_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_accelerator)
 
 Arguments mapping described in
-[DeleteCustomRoutingAcceleratorRequestTypeDef](./type_defs.md#deletecustomroutingacceleratorrequesttypedef).
+[DeleteCustomRoutingAcceleratorRequestRequestTypeDef](./type_defs.md#deletecustomroutingacceleratorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -404,7 +416,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.delete_custom_routing_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_endpoint_group)
 
 Arguments mapping described in
-[DeleteCustomRoutingEndpointGroupRequestTypeDef](./type_defs.md#deletecustomroutingendpointgrouprequesttypedef).
+[DeleteCustomRoutingEndpointGroupRequestRequestTypeDef](./type_defs.md#deletecustomroutingendpointgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -421,7 +433,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.delete_custom_routing_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_listener)
 
 Arguments mapping described in
-[DeleteCustomRoutingListenerRequestTypeDef](./type_defs.md#deletecustomroutinglistenerrequesttypedef).
+[DeleteCustomRoutingListenerRequestRequestTypeDef](./type_defs.md#deletecustomroutinglistenerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -438,7 +450,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.delete_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_endpoint_group)
 
 Arguments mapping described in
-[DeleteEndpointGroupRequestTypeDef](./type_defs.md#deleteendpointgrouprequesttypedef).
+[DeleteEndpointGroupRequestRequestTypeDef](./type_defs.md#deleteendpointgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -455,7 +467,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.delete_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_listener)
 
 Arguments mapping described in
-[DeleteListenerRequestTypeDef](./type_defs.md#deletelistenerrequesttypedef).
+[DeleteListenerRequestRequestTypeDef](./type_defs.md#deletelistenerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -473,7 +485,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.deny_custom_routing_traffic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.deny_custom_routing_traffic)
 
 Arguments mapping described in
-[DenyCustomRoutingTrafficRequestTypeDef](./type_defs.md#denycustomroutingtrafficrequesttypedef).
+[DenyCustomRoutingTrafficRequestRequestTypeDef](./type_defs.md#denycustomroutingtrafficrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -496,14 +508,14 @@ Boto3 documentation:
 [GlobalAccelerator.Client.deprovision_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.deprovision_byoip_cidr)
 
 Arguments mapping described in
-[DeprovisionByoipCidrRequestTypeDef](./type_defs.md#deprovisionbyoipcidrrequesttypedef).
+[DeprovisionByoipCidrRequestRequestTypeDef](./type_defs.md#deprovisionbyoipcidrrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Cidr`: `str` *(required)*
 
 Returns
-[DeprovisionByoipCidrResponseResponseTypeDef](./type_defs.md#deprovisionbyoipcidrresponseresponsetypedef).
+[DeprovisionByoipCidrResponseTypeDef](./type_defs.md#deprovisionbyoipcidrresponsetypedef).
 
 ### describe_accelerator
 
@@ -516,14 +528,14 @@ Boto3 documentation:
 [GlobalAccelerator.Client.describe_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_accelerator)
 
 Arguments mapping described in
-[DescribeAcceleratorRequestTypeDef](./type_defs.md#describeacceleratorrequesttypedef).
+[DescribeAcceleratorRequestRequestTypeDef](./type_defs.md#describeacceleratorrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AcceleratorArn`: `str` *(required)*
 
 Returns
-[DescribeAcceleratorResponseResponseTypeDef](./type_defs.md#describeacceleratorresponseresponsetypedef).
+[DescribeAcceleratorResponseTypeDef](./type_defs.md#describeacceleratorresponsetypedef).
 
 ### describe_accelerator_attributes
 
@@ -536,14 +548,14 @@ Boto3 documentation:
 [GlobalAccelerator.Client.describe_accelerator_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_accelerator_attributes)
 
 Arguments mapping described in
-[DescribeAcceleratorAttributesRequestTypeDef](./type_defs.md#describeacceleratorattributesrequesttypedef).
+[DescribeAcceleratorAttributesRequestRequestTypeDef](./type_defs.md#describeacceleratorattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AcceleratorArn`: `str` *(required)*
 
 Returns
-[DescribeAcceleratorAttributesResponseResponseTypeDef](./type_defs.md#describeacceleratorattributesresponseresponsetypedef).
+[DescribeAcceleratorAttributesResponseTypeDef](./type_defs.md#describeacceleratorattributesresponsetypedef).
 
 ### describe_custom_routing_accelerator
 
@@ -556,14 +568,14 @@ Boto3 documentation:
 [GlobalAccelerator.Client.describe_custom_routing_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_accelerator)
 
 Arguments mapping described in
-[DescribeCustomRoutingAcceleratorRequestTypeDef](./type_defs.md#describecustomroutingacceleratorrequesttypedef).
+[DescribeCustomRoutingAcceleratorRequestRequestTypeDef](./type_defs.md#describecustomroutingacceleratorrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AcceleratorArn`: `str` *(required)*
 
 Returns
-[DescribeCustomRoutingAcceleratorResponseResponseTypeDef](./type_defs.md#describecustomroutingacceleratorresponseresponsetypedef).
+[DescribeCustomRoutingAcceleratorResponseTypeDef](./type_defs.md#describecustomroutingacceleratorresponsetypedef).
 
 ### describe_custom_routing_accelerator_attributes
 
@@ -577,14 +589,14 @@ Boto3 documentation:
 [GlobalAccelerator.Client.describe_custom_routing_accelerator_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_accelerator_attributes)
 
 Arguments mapping described in
-[DescribeCustomRoutingAcceleratorAttributesRequestTypeDef](./type_defs.md#describecustomroutingacceleratorattributesrequesttypedef).
+[DescribeCustomRoutingAcceleratorAttributesRequestRequestTypeDef](./type_defs.md#describecustomroutingacceleratorattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AcceleratorArn`: `str` *(required)*
 
 Returns
-[DescribeCustomRoutingAcceleratorAttributesResponseResponseTypeDef](./type_defs.md#describecustomroutingacceleratorattributesresponseresponsetypedef).
+[DescribeCustomRoutingAcceleratorAttributesResponseTypeDef](./type_defs.md#describecustomroutingacceleratorattributesresponsetypedef).
 
 ### describe_custom_routing_endpoint_group
 
@@ -598,14 +610,14 @@ Boto3 documentation:
 [GlobalAccelerator.Client.describe_custom_routing_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_endpoint_group)
 
 Arguments mapping described in
-[DescribeCustomRoutingEndpointGroupRequestTypeDef](./type_defs.md#describecustomroutingendpointgrouprequesttypedef).
+[DescribeCustomRoutingEndpointGroupRequestRequestTypeDef](./type_defs.md#describecustomroutingendpointgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `EndpointGroupArn`: `str` *(required)*
 
 Returns
-[DescribeCustomRoutingEndpointGroupResponseResponseTypeDef](./type_defs.md#describecustomroutingendpointgroupresponseresponsetypedef).
+[DescribeCustomRoutingEndpointGroupResponseTypeDef](./type_defs.md#describecustomroutingendpointgroupresponsetypedef).
 
 ### describe_custom_routing_listener
 
@@ -618,14 +630,14 @@ Boto3 documentation:
 [GlobalAccelerator.Client.describe_custom_routing_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_listener)
 
 Arguments mapping described in
-[DescribeCustomRoutingListenerRequestTypeDef](./type_defs.md#describecustomroutinglistenerrequesttypedef).
+[DescribeCustomRoutingListenerRequestRequestTypeDef](./type_defs.md#describecustomroutinglistenerrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
 
 Returns
-[DescribeCustomRoutingListenerResponseResponseTypeDef](./type_defs.md#describecustomroutinglistenerresponseresponsetypedef).
+[DescribeCustomRoutingListenerResponseTypeDef](./type_defs.md#describecustomroutinglistenerresponsetypedef).
 
 ### describe_endpoint_group
 
@@ -638,14 +650,14 @@ Boto3 documentation:
 [GlobalAccelerator.Client.describe_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_endpoint_group)
 
 Arguments mapping described in
-[DescribeEndpointGroupRequestTypeDef](./type_defs.md#describeendpointgrouprequesttypedef).
+[DescribeEndpointGroupRequestRequestTypeDef](./type_defs.md#describeendpointgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `EndpointGroupArn`: `str` *(required)*
 
 Returns
-[DescribeEndpointGroupResponseResponseTypeDef](./type_defs.md#describeendpointgroupresponseresponsetypedef).
+[DescribeEndpointGroupResponseTypeDef](./type_defs.md#describeendpointgroupresponsetypedef).
 
 ### describe_listener
 
@@ -658,14 +670,14 @@ Boto3 documentation:
 [GlobalAccelerator.Client.describe_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_listener)
 
 Arguments mapping described in
-[DescribeListenerRequestTypeDef](./type_defs.md#describelistenerrequesttypedef).
+[DescribeListenerRequestRequestTypeDef](./type_defs.md#describelistenerrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
 
 Returns
-[DescribeListenerResponseResponseTypeDef](./type_defs.md#describelistenerresponseresponsetypedef).
+[DescribeListenerResponseTypeDef](./type_defs.md#describelistenerresponsetypedef).
 
 ### generate_presigned_url
 
@@ -697,7 +709,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.list_accelerators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_accelerators)
 
 Arguments mapping described in
-[ListAcceleratorsRequestTypeDef](./type_defs.md#listacceleratorsrequesttypedef).
+[ListAcceleratorsRequestRequestTypeDef](./type_defs.md#listacceleratorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -705,7 +717,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAcceleratorsResponseResponseTypeDef](./type_defs.md#listacceleratorsresponseresponsetypedef).
+[ListAcceleratorsResponseTypeDef](./type_defs.md#listacceleratorsresponsetypedef).
 
 ### list_byoip_cidrs
 
@@ -720,7 +732,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.list_byoip_cidrs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_byoip_cidrs)
 
 Arguments mapping described in
-[ListByoipCidrsRequestTypeDef](./type_defs.md#listbyoipcidrsrequesttypedef).
+[ListByoipCidrsRequestRequestTypeDef](./type_defs.md#listbyoipcidrsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -728,7 +740,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListByoipCidrsResponseResponseTypeDef](./type_defs.md#listbyoipcidrsresponseresponsetypedef).
+[ListByoipCidrsResponseTypeDef](./type_defs.md#listbyoipcidrsresponsetypedef).
 
 ### list_custom_routing_accelerators
 
@@ -741,7 +753,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.list_custom_routing_accelerators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_accelerators)
 
 Arguments mapping described in
-[ListCustomRoutingAcceleratorsRequestTypeDef](./type_defs.md#listcustomroutingacceleratorsrequesttypedef).
+[ListCustomRoutingAcceleratorsRequestRequestTypeDef](./type_defs.md#listcustomroutingacceleratorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -749,7 +761,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListCustomRoutingAcceleratorsResponseResponseTypeDef](./type_defs.md#listcustomroutingacceleratorsresponseresponsetypedef).
+[ListCustomRoutingAcceleratorsResponseTypeDef](./type_defs.md#listcustomroutingacceleratorsresponsetypedef).
 
 ### list_custom_routing_endpoint_groups
 
@@ -763,7 +775,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.list_custom_routing_endpoint_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_endpoint_groups)
 
 Arguments mapping described in
-[ListCustomRoutingEndpointGroupsRequestTypeDef](./type_defs.md#listcustomroutingendpointgroupsrequesttypedef).
+[ListCustomRoutingEndpointGroupsRequestRequestTypeDef](./type_defs.md#listcustomroutingendpointgroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -772,7 +784,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListCustomRoutingEndpointGroupsResponseResponseTypeDef](./type_defs.md#listcustomroutingendpointgroupsresponseresponsetypedef).
+[ListCustomRoutingEndpointGroupsResponseTypeDef](./type_defs.md#listcustomroutingendpointgroupsresponsetypedef).
 
 ### list_custom_routing_listeners
 
@@ -785,7 +797,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.list_custom_routing_listeners](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_listeners)
 
 Arguments mapping described in
-[ListCustomRoutingListenersRequestTypeDef](./type_defs.md#listcustomroutinglistenersrequesttypedef).
+[ListCustomRoutingListenersRequestRequestTypeDef](./type_defs.md#listcustomroutinglistenersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -794,7 +806,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListCustomRoutingListenersResponseResponseTypeDef](./type_defs.md#listcustomroutinglistenersresponseresponsetypedef).
+[ListCustomRoutingListenersResponseTypeDef](./type_defs.md#listcustomroutinglistenersresponsetypedef).
 
 ### list_custom_routing_port_mappings
 
@@ -809,7 +821,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.list_custom_routing_port_mappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_port_mappings)
 
 Arguments mapping described in
-[ListCustomRoutingPortMappingsRequestTypeDef](./type_defs.md#listcustomroutingportmappingsrequesttypedef).
+[ListCustomRoutingPortMappingsRequestRequestTypeDef](./type_defs.md#listcustomroutingportmappingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -819,7 +831,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListCustomRoutingPortMappingsResponseResponseTypeDef](./type_defs.md#listcustomroutingportmappingsresponseresponsetypedef).
+[ListCustomRoutingPortMappingsResponseTypeDef](./type_defs.md#listcustomroutingportmappingsresponsetypedef).
 
 ### list_custom_routing_port_mappings_by_destination
 
@@ -834,7 +846,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.list_custom_routing_port_mappings_by_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_port_mappings_by_destination)
 
 Arguments mapping described in
-[ListCustomRoutingPortMappingsByDestinationRequestTypeDef](./type_defs.md#listcustomroutingportmappingsbydestinationrequesttypedef).
+[ListCustomRoutingPortMappingsByDestinationRequestRequestTypeDef](./type_defs.md#listcustomroutingportmappingsbydestinationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -844,7 +856,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListCustomRoutingPortMappingsByDestinationResponseResponseTypeDef](./type_defs.md#listcustomroutingportmappingsbydestinationresponseresponsetypedef).
+[ListCustomRoutingPortMappingsByDestinationResponseTypeDef](./type_defs.md#listcustomroutingportmappingsbydestinationresponsetypedef).
 
 ### list_endpoint_groups
 
@@ -857,7 +869,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.list_endpoint_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_endpoint_groups)
 
 Arguments mapping described in
-[ListEndpointGroupsRequestTypeDef](./type_defs.md#listendpointgroupsrequesttypedef).
+[ListEndpointGroupsRequestRequestTypeDef](./type_defs.md#listendpointgroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -866,7 +878,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListEndpointGroupsResponseResponseTypeDef](./type_defs.md#listendpointgroupsresponseresponsetypedef).
+[ListEndpointGroupsResponseTypeDef](./type_defs.md#listendpointgroupsresponsetypedef).
 
 ### list_listeners
 
@@ -878,7 +890,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.list_listeners](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_listeners)
 
 Arguments mapping described in
-[ListListenersRequestTypeDef](./type_defs.md#listlistenersrequesttypedef).
+[ListListenersRequestRequestTypeDef](./type_defs.md#listlistenersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -887,7 +899,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListListenersResponseResponseTypeDef](./type_defs.md#listlistenersresponseresponsetypedef).
+[ListListenersResponseTypeDef](./type_defs.md#listlistenersresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -900,14 +912,14 @@ Boto3 documentation:
 [GlobalAccelerator.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### provision_byoip_cidr
 
@@ -921,7 +933,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.provision_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.provision_byoip_cidr)
 
 Arguments mapping described in
-[ProvisionByoipCidrRequestTypeDef](./type_defs.md#provisionbyoipcidrrequesttypedef).
+[ProvisionByoipCidrRequestRequestTypeDef](./type_defs.md#provisionbyoipcidrrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -931,7 +943,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[ProvisionByoipCidrResponseResponseTypeDef](./type_defs.md#provisionbyoipcidrresponseresponsetypedef).
+[ProvisionByoipCidrResponseTypeDef](./type_defs.md#provisionbyoipcidrresponsetypedef).
 
 ### remove_custom_routing_endpoints
 
@@ -944,7 +956,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.remove_custom_routing_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.remove_custom_routing_endpoints)
 
 Arguments mapping described in
-[RemoveCustomRoutingEndpointsRequestTypeDef](./type_defs.md#removecustomroutingendpointsrequesttypedef).
+[RemoveCustomRoutingEndpointsRequestRequestTypeDef](./type_defs.md#removecustomroutingendpointsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -961,7 +973,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -980,7 +992,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1000,7 +1012,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.update_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_accelerator)
 
 Arguments mapping described in
-[UpdateAcceleratorRequestTypeDef](./type_defs.md#updateacceleratorrequesttypedef).
+[UpdateAcceleratorRequestRequestTypeDef](./type_defs.md#updateacceleratorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1011,7 +1023,7 @@ Keyword-only arguments:
 - `Enabled`: `bool`
 
 Returns
-[UpdateAcceleratorResponseResponseTypeDef](./type_defs.md#updateacceleratorresponseresponsetypedef).
+[UpdateAcceleratorResponseTypeDef](./type_defs.md#updateacceleratorresponsetypedef).
 
 ### update_accelerator_attributes
 
@@ -1024,7 +1036,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.update_accelerator_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_accelerator_attributes)
 
 Arguments mapping described in
-[UpdateAcceleratorAttributesRequestTypeDef](./type_defs.md#updateacceleratorattributesrequesttypedef).
+[UpdateAcceleratorAttributesRequestRequestTypeDef](./type_defs.md#updateacceleratorattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1034,7 +1046,7 @@ Keyword-only arguments:
 - `FlowLogsS3Prefix`: `str`
 
 Returns
-[UpdateAcceleratorAttributesResponseResponseTypeDef](./type_defs.md#updateacceleratorattributesresponseresponsetypedef).
+[UpdateAcceleratorAttributesResponseTypeDef](./type_defs.md#updateacceleratorattributesresponsetypedef).
 
 ### update_custom_routing_accelerator
 
@@ -1047,7 +1059,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.update_custom_routing_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_accelerator)
 
 Arguments mapping described in
-[UpdateCustomRoutingAcceleratorRequestTypeDef](./type_defs.md#updatecustomroutingacceleratorrequesttypedef).
+[UpdateCustomRoutingAcceleratorRequestRequestTypeDef](./type_defs.md#updatecustomroutingacceleratorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1058,7 +1070,7 @@ Keyword-only arguments:
 - `Enabled`: `bool`
 
 Returns
-[UpdateCustomRoutingAcceleratorResponseResponseTypeDef](./type_defs.md#updatecustomroutingacceleratorresponseresponsetypedef).
+[UpdateCustomRoutingAcceleratorResponseTypeDef](./type_defs.md#updatecustomroutingacceleratorresponsetypedef).
 
 ### update_custom_routing_accelerator_attributes
 
@@ -1072,7 +1084,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.update_custom_routing_accelerator_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_accelerator_attributes)
 
 Arguments mapping described in
-[UpdateCustomRoutingAcceleratorAttributesRequestTypeDef](./type_defs.md#updatecustomroutingacceleratorattributesrequesttypedef).
+[UpdateCustomRoutingAcceleratorAttributesRequestRequestTypeDef](./type_defs.md#updatecustomroutingacceleratorattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1082,7 +1094,7 @@ Keyword-only arguments:
 - `FlowLogsS3Prefix`: `str`
 
 Returns
-[UpdateCustomRoutingAcceleratorAttributesResponseResponseTypeDef](./type_defs.md#updatecustomroutingacceleratorattributesresponseresponsetypedef).
+[UpdateCustomRoutingAcceleratorAttributesResponseTypeDef](./type_defs.md#updatecustomroutingacceleratorattributesresponsetypedef).
 
 ### update_custom_routing_listener
 
@@ -1095,7 +1107,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.update_custom_routing_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_listener)
 
 Arguments mapping described in
-[UpdateCustomRoutingListenerRequestTypeDef](./type_defs.md#updatecustomroutinglistenerrequesttypedef).
+[UpdateCustomRoutingListenerRequestRequestTypeDef](./type_defs.md#updatecustomroutinglistenerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1104,7 +1116,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateCustomRoutingListenerResponseResponseTypeDef](./type_defs.md#updatecustomroutinglistenerresponseresponsetypedef).
+[UpdateCustomRoutingListenerResponseTypeDef](./type_defs.md#updatecustomroutinglistenerresponsetypedef).
 
 ### update_endpoint_group
 
@@ -1117,7 +1129,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.update_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_endpoint_group)
 
 Arguments mapping described in
-[UpdateEndpointGroupRequestTypeDef](./type_defs.md#updateendpointgrouprequesttypedef).
+[UpdateEndpointGroupRequestRequestTypeDef](./type_defs.md#updateendpointgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1135,7 +1147,7 @@ Keyword-only arguments:
   `List`\[[PortOverrideTypeDef](./type_defs.md#portoverridetypedef)\]
 
 Returns
-[UpdateEndpointGroupResponseResponseTypeDef](./type_defs.md#updateendpointgroupresponseresponsetypedef).
+[UpdateEndpointGroupResponseTypeDef](./type_defs.md#updateendpointgroupresponsetypedef).
 
 ### update_listener
 
@@ -1148,7 +1160,7 @@ Boto3 documentation:
 [GlobalAccelerator.Client.update_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_listener)
 
 Arguments mapping described in
-[UpdateListenerRequestTypeDef](./type_defs.md#updatelistenerrequesttypedef).
+[UpdateListenerRequestRequestTypeDef](./type_defs.md#updatelistenerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1158,7 +1170,7 @@ Keyword-only arguments:
 - `ClientAffinity`: [ClientAffinityType](./literals.md#clientaffinitytype)
 
 Returns
-[UpdateListenerResponseResponseTypeDef](./type_defs.md#updatelistenerresponseresponsetypedef).
+[UpdateListenerResponseTypeDef](./type_defs.md#updatelistenerresponsetypedef).
 
 ### withdraw_byoip_cidr
 
@@ -1171,14 +1183,14 @@ Boto3 documentation:
 [GlobalAccelerator.Client.withdraw_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.withdraw_byoip_cidr)
 
 Arguments mapping described in
-[WithdrawByoipCidrRequestTypeDef](./type_defs.md#withdrawbyoipcidrrequesttypedef).
+[WithdrawByoipCidrRequestRequestTypeDef](./type_defs.md#withdrawbyoipcidrrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Cidr`: `str` *(required)*
 
 Returns
-[WithdrawByoipCidrResponseResponseTypeDef](./type_defs.md#withdrawbyoipcidrresponseresponsetypedef).
+[WithdrawByoipCidrResponseTypeDef](./type_defs.md#withdrawbyoipcidrresponsetypedef).
 
 ### get_paginator
 

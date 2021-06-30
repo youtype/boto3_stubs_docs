@@ -11,6 +11,7 @@ type annotations stubs module
   - [PersonalizeRuntimeClient](#personalizeruntimeclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_personalized_ranking](#get_personalized_ranking)
@@ -51,6 +52,17 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 
 ## Methods
+
+### exceptions
+
+PersonalizeRuntimeClient exceptions.
+
+Type annotations for `boto3.client("personalize-runtime").exceptions` method.
+
+Boto3 documentation:
+[PersonalizeRuntime.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
 
 ### can_paginate
 
@@ -97,7 +109,7 @@ Boto3 documentation:
 [PersonalizeRuntime.Client.get_personalized_ranking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.get_personalized_ranking)
 
 Arguments mapping described in
-[GetPersonalizedRankingRequestTypeDef](./type_defs.md#getpersonalizedrankingrequesttypedef).
+[GetPersonalizedRankingRequestRequestTypeDef](./type_defs.md#getpersonalizedrankingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -109,7 +121,7 @@ Keyword-only arguments:
 - `filterValues`: `Dict`\[`str`, `str`\]
 
 Returns
-[GetPersonalizedRankingResponseResponseTypeDef](./type_defs.md#getpersonalizedrankingresponseresponsetypedef).
+[GetPersonalizedRankingResponseTypeDef](./type_defs.md#getpersonalizedrankingresponsetypedef).
 
 ### get_recommendations
 
@@ -122,7 +134,7 @@ Boto3 documentation:
 [PersonalizeRuntime.Client.get_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.get_recommendations)
 
 Arguments mapping described in
-[GetRecommendationsRequestTypeDef](./type_defs.md#getrecommendationsrequesttypedef).
+[GetRecommendationsRequestRequestTypeDef](./type_defs.md#getrecommendationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -135,4 +147,4 @@ Keyword-only arguments:
 - `filterValues`: `Dict`\[`str`, `str`\]
 
 Returns
-[GetRecommendationsResponseResponseTypeDef](./type_defs.md#getrecommendationsresponseresponsetypedef).
+[GetRecommendationsResponseTypeDef](./type_defs.md#getrecommendationsresponsetypedef).

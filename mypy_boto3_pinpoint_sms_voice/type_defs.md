@@ -10,22 +10,22 @@ type annotations stubs module
 - [Typed dictionaries for boto3 PinpointSMSVoice module](#typed-dictionaries-for-boto3-pinpointsmsvoice-module)
   - [CallInstructionsMessageTypeTypeDef](#callinstructionsmessagetypetypedef)
   - [CloudWatchLogsDestinationTypeDef](#cloudwatchlogsdestinationtypedef)
-  - [CreateConfigurationSetEventDestinationRequestTypeDef](#createconfigurationseteventdestinationrequesttypedef)
-  - [CreateConfigurationSetRequestTypeDef](#createconfigurationsetrequesttypedef)
-  - [DeleteConfigurationSetEventDestinationRequestTypeDef](#deleteconfigurationseteventdestinationrequesttypedef)
-  - [DeleteConfigurationSetRequestTypeDef](#deleteconfigurationsetrequesttypedef)
+  - [CreateConfigurationSetEventDestinationRequestRequestTypeDef](#createconfigurationseteventdestinationrequestrequesttypedef)
+  - [CreateConfigurationSetRequestRequestTypeDef](#createconfigurationsetrequestrequesttypedef)
+  - [DeleteConfigurationSetEventDestinationRequestRequestTypeDef](#deleteconfigurationseteventdestinationrequestrequesttypedef)
+  - [DeleteConfigurationSetRequestRequestTypeDef](#deleteconfigurationsetrequestrequesttypedef)
   - [EventDestinationDefinitionTypeDef](#eventdestinationdefinitiontypedef)
   - [EventDestinationTypeDef](#eventdestinationtypedef)
-  - [GetConfigurationSetEventDestinationsRequestTypeDef](#getconfigurationseteventdestinationsrequesttypedef)
-  - [GetConfigurationSetEventDestinationsResponseResponseTypeDef](#getconfigurationseteventdestinationsresponseresponsetypedef)
+  - [GetConfigurationSetEventDestinationsRequestRequestTypeDef](#getconfigurationseteventdestinationsrequestrequesttypedef)
+  - [GetConfigurationSetEventDestinationsResponseTypeDef](#getconfigurationseteventdestinationsresponsetypedef)
   - [KinesisFirehoseDestinationTypeDef](#kinesisfirehosedestinationtypedef)
   - [PlainTextMessageTypeTypeDef](#plaintextmessagetypetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SSMLMessageTypeTypeDef](#ssmlmessagetypetypedef)
-  - [SendVoiceMessageRequestTypeDef](#sendvoicemessagerequesttypedef)
-  - [SendVoiceMessageResponseResponseTypeDef](#sendvoicemessageresponseresponsetypedef)
+  - [SendVoiceMessageRequestRequestTypeDef](#sendvoicemessagerequestrequesttypedef)
+  - [SendVoiceMessageResponseTypeDef](#sendvoicemessageresponsetypedef)
   - [SnsDestinationTypeDef](#snsdestinationtypedef)
-  - [UpdateConfigurationSetEventDestinationRequestTypeDef](#updateconfigurationseteventdestinationrequesttypedef)
+  - [UpdateConfigurationSetEventDestinationRequestRequestTypeDef](#updateconfigurationseteventdestinationrequestrequesttypedef)
   - [VoiceMessageContentTypeDef](#voicemessagecontenttypedef)
 
 ## CallInstructionsMessageTypeTypeDef
@@ -49,10 +49,10 @@ Optional fields:
 - `IamRoleArn`: `str`
 - `LogGroupArn`: `str`
 
-## CreateConfigurationSetEventDestinationRequestTypeDef
+## CreateConfigurationSetEventDestinationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_pinpoint_sms_voice.type_defs import CreateConfigurationSetEventDestinationRequestTypeDef
+from mypy_boto3_pinpoint_sms_voice.type_defs import CreateConfigurationSetEventDestinationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -65,20 +65,20 @@ Optional fields:
   [EventDestinationDefinitionTypeDef](./type_defs.md#eventdestinationdefinitiontypedef)
 - `EventDestinationName`: `str`
 
-## CreateConfigurationSetRequestTypeDef
+## CreateConfigurationSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_pinpoint_sms_voice.type_defs import CreateConfigurationSetRequestTypeDef
+from mypy_boto3_pinpoint_sms_voice.type_defs import CreateConfigurationSetRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `ConfigurationSetName`: `str`
 
-## DeleteConfigurationSetEventDestinationRequestTypeDef
+## DeleteConfigurationSetEventDestinationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_pinpoint_sms_voice.type_defs import DeleteConfigurationSetEventDestinationRequestTypeDef
+from mypy_boto3_pinpoint_sms_voice.type_defs import DeleteConfigurationSetEventDestinationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -86,10 +86,10 @@ Required fields:
 - `ConfigurationSetName`: `str`
 - `EventDestinationName`: `str`
 
-## DeleteConfigurationSetRequestTypeDef
+## DeleteConfigurationSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_pinpoint_sms_voice.type_defs import DeleteConfigurationSetRequestTypeDef
+from mypy_boto3_pinpoint_sms_voice.type_defs import DeleteConfigurationSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -131,20 +131,20 @@ Optional fields:
 - `SnsDestination`:
   [SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef)
 
-## GetConfigurationSetEventDestinationsRequestTypeDef
+## GetConfigurationSetEventDestinationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_pinpoint_sms_voice.type_defs import GetConfigurationSetEventDestinationsRequestTypeDef
+from mypy_boto3_pinpoint_sms_voice.type_defs import GetConfigurationSetEventDestinationsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ConfigurationSetName`: `str`
 
-## GetConfigurationSetEventDestinationsResponseResponseTypeDef
+## GetConfigurationSetEventDestinationsResponseTypeDef
 
 ```python
-from mypy_boto3_pinpoint_sms_voice.type_defs import GetConfigurationSetEventDestinationsResponseResponseTypeDef
+from mypy_boto3_pinpoint_sms_voice.type_defs import GetConfigurationSetEventDestinationsResponseTypeDef
 ```
 
 Required fields:
@@ -203,10 +203,10 @@ Optional fields:
 - `Text`: `str`
 - `VoiceId`: `str`
 
-## SendVoiceMessageRequestTypeDef
+## SendVoiceMessageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_pinpoint_sms_voice.type_defs import SendVoiceMessageRequestTypeDef
+from mypy_boto3_pinpoint_sms_voice.type_defs import SendVoiceMessageRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -218,10 +218,10 @@ Optional fields:
 - `DestinationPhoneNumber`: `str`
 - `OriginationPhoneNumber`: `str`
 
-## SendVoiceMessageResponseResponseTypeDef
+## SendVoiceMessageResponseTypeDef
 
 ```python
-from mypy_boto3_pinpoint_sms_voice.type_defs import SendVoiceMessageResponseResponseTypeDef
+from mypy_boto3_pinpoint_sms_voice.type_defs import SendVoiceMessageResponseTypeDef
 ```
 
 Required fields:
@@ -240,10 +240,10 @@ Optional fields:
 
 - `TopicArn`: `str`
 
-## UpdateConfigurationSetEventDestinationRequestTypeDef
+## UpdateConfigurationSetEventDestinationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_pinpoint_sms_voice.type_defs import UpdateConfigurationSetEventDestinationRequestTypeDef
+from mypy_boto3_pinpoint_sms_voice.type_defs import UpdateConfigurationSetEventDestinationRequestRequestTypeDef
 ```
 
 Required fields:

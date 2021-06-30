@@ -24,20 +24,20 @@ type annotations stubs module
   - [CoverageHoursTypeDef](#coveragehourstypedef)
   - [CoverageNormalizedUnitsTypeDef](#coveragenormalizedunitstypedef)
   - [CoverageTypeDef](#coveragetypedef)
-  - [CreateAnomalyMonitorRequestTypeDef](#createanomalymonitorrequesttypedef)
-  - [CreateAnomalyMonitorResponseResponseTypeDef](#createanomalymonitorresponseresponsetypedef)
-  - [CreateAnomalySubscriptionRequestTypeDef](#createanomalysubscriptionrequesttypedef)
-  - [CreateAnomalySubscriptionResponseResponseTypeDef](#createanomalysubscriptionresponseresponsetypedef)
-  - [CreateCostCategoryDefinitionRequestTypeDef](#createcostcategorydefinitionrequesttypedef)
-  - [CreateCostCategoryDefinitionResponseResponseTypeDef](#createcostcategorydefinitionresponseresponsetypedef)
+  - [CreateAnomalyMonitorRequestRequestTypeDef](#createanomalymonitorrequestrequesttypedef)
+  - [CreateAnomalyMonitorResponseTypeDef](#createanomalymonitorresponsetypedef)
+  - [CreateAnomalySubscriptionRequestRequestTypeDef](#createanomalysubscriptionrequestrequesttypedef)
+  - [CreateAnomalySubscriptionResponseTypeDef](#createanomalysubscriptionresponsetypedef)
+  - [CreateCostCategoryDefinitionRequestRequestTypeDef](#createcostcategorydefinitionrequestrequesttypedef)
+  - [CreateCostCategoryDefinitionResponseTypeDef](#createcostcategorydefinitionresponsetypedef)
   - [CurrentInstanceTypeDef](#currentinstancetypedef)
   - [DateIntervalTypeDef](#dateintervaltypedef)
-  - [DeleteAnomalyMonitorRequestTypeDef](#deleteanomalymonitorrequesttypedef)
-  - [DeleteAnomalySubscriptionRequestTypeDef](#deleteanomalysubscriptionrequesttypedef)
-  - [DeleteCostCategoryDefinitionRequestTypeDef](#deletecostcategorydefinitionrequesttypedef)
-  - [DeleteCostCategoryDefinitionResponseResponseTypeDef](#deletecostcategorydefinitionresponseresponsetypedef)
-  - [DescribeCostCategoryDefinitionRequestTypeDef](#describecostcategorydefinitionrequesttypedef)
-  - [DescribeCostCategoryDefinitionResponseResponseTypeDef](#describecostcategorydefinitionresponseresponsetypedef)
+  - [DeleteAnomalyMonitorRequestRequestTypeDef](#deleteanomalymonitorrequestrequesttypedef)
+  - [DeleteAnomalySubscriptionRequestRequestTypeDef](#deleteanomalysubscriptionrequestrequesttypedef)
+  - [DeleteCostCategoryDefinitionRequestRequestTypeDef](#deletecostcategorydefinitionrequestrequesttypedef)
+  - [DeleteCostCategoryDefinitionResponseTypeDef](#deletecostcategorydefinitionresponsetypedef)
+  - [DescribeCostCategoryDefinitionRequestRequestTypeDef](#describecostcategorydefinitionrequestrequesttypedef)
+  - [DescribeCostCategoryDefinitionResponseTypeDef](#describecostcategorydefinitionresponsetypedef)
   - [DimensionValuesTypeDef](#dimensionvaluestypedef)
   - [DimensionValuesWithAttributesTypeDef](#dimensionvalueswithattributestypedef)
   - [DiskResourceUtilizationTypeDef](#diskresourceutilizationtypedef)
@@ -50,53 +50,53 @@ type annotations stubs module
   - [ElastiCacheInstanceDetailsTypeDef](#elasticacheinstancedetailstypedef)
   - [ExpressionTypeDef](#expressiontypedef)
   - [ForecastResultTypeDef](#forecastresulttypedef)
-  - [GetAnomaliesRequestTypeDef](#getanomaliesrequesttypedef)
-  - [GetAnomaliesResponseResponseTypeDef](#getanomaliesresponseresponsetypedef)
-  - [GetAnomalyMonitorsRequestTypeDef](#getanomalymonitorsrequesttypedef)
-  - [GetAnomalyMonitorsResponseResponseTypeDef](#getanomalymonitorsresponseresponsetypedef)
-  - [GetAnomalySubscriptionsRequestTypeDef](#getanomalysubscriptionsrequesttypedef)
-  - [GetAnomalySubscriptionsResponseResponseTypeDef](#getanomalysubscriptionsresponseresponsetypedef)
-  - [GetCostAndUsageRequestTypeDef](#getcostandusagerequesttypedef)
-  - [GetCostAndUsageResponseResponseTypeDef](#getcostandusageresponseresponsetypedef)
-  - [GetCostAndUsageWithResourcesRequestTypeDef](#getcostandusagewithresourcesrequesttypedef)
-  - [GetCostAndUsageWithResourcesResponseResponseTypeDef](#getcostandusagewithresourcesresponseresponsetypedef)
-  - [GetCostCategoriesRequestTypeDef](#getcostcategoriesrequesttypedef)
-  - [GetCostCategoriesResponseResponseTypeDef](#getcostcategoriesresponseresponsetypedef)
-  - [GetCostForecastRequestTypeDef](#getcostforecastrequesttypedef)
-  - [GetCostForecastResponseResponseTypeDef](#getcostforecastresponseresponsetypedef)
-  - [GetDimensionValuesRequestTypeDef](#getdimensionvaluesrequesttypedef)
-  - [GetDimensionValuesResponseResponseTypeDef](#getdimensionvaluesresponseresponsetypedef)
-  - [GetReservationCoverageRequestTypeDef](#getreservationcoveragerequesttypedef)
-  - [GetReservationCoverageResponseResponseTypeDef](#getreservationcoverageresponseresponsetypedef)
-  - [GetReservationPurchaseRecommendationRequestTypeDef](#getreservationpurchaserecommendationrequesttypedef)
-  - [GetReservationPurchaseRecommendationResponseResponseTypeDef](#getreservationpurchaserecommendationresponseresponsetypedef)
-  - [GetReservationUtilizationRequestTypeDef](#getreservationutilizationrequesttypedef)
-  - [GetReservationUtilizationResponseResponseTypeDef](#getreservationutilizationresponseresponsetypedef)
-  - [GetRightsizingRecommendationRequestTypeDef](#getrightsizingrecommendationrequesttypedef)
-  - [GetRightsizingRecommendationResponseResponseTypeDef](#getrightsizingrecommendationresponseresponsetypedef)
-  - [GetSavingsPlansCoverageRequestTypeDef](#getsavingsplanscoveragerequesttypedef)
-  - [GetSavingsPlansCoverageResponseResponseTypeDef](#getsavingsplanscoverageresponseresponsetypedef)
-  - [GetSavingsPlansPurchaseRecommendationRequestTypeDef](#getsavingsplanspurchaserecommendationrequesttypedef)
-  - [GetSavingsPlansPurchaseRecommendationResponseResponseTypeDef](#getsavingsplanspurchaserecommendationresponseresponsetypedef)
-  - [GetSavingsPlansUtilizationDetailsRequestTypeDef](#getsavingsplansutilizationdetailsrequesttypedef)
-  - [GetSavingsPlansUtilizationDetailsResponseResponseTypeDef](#getsavingsplansutilizationdetailsresponseresponsetypedef)
-  - [GetSavingsPlansUtilizationRequestTypeDef](#getsavingsplansutilizationrequesttypedef)
-  - [GetSavingsPlansUtilizationResponseResponseTypeDef](#getsavingsplansutilizationresponseresponsetypedef)
-  - [GetTagsRequestTypeDef](#gettagsrequesttypedef)
-  - [GetTagsResponseResponseTypeDef](#gettagsresponseresponsetypedef)
-  - [GetUsageForecastRequestTypeDef](#getusageforecastrequesttypedef)
-  - [GetUsageForecastResponseResponseTypeDef](#getusageforecastresponseresponsetypedef)
+  - [GetAnomaliesRequestRequestTypeDef](#getanomaliesrequestrequesttypedef)
+  - [GetAnomaliesResponseTypeDef](#getanomaliesresponsetypedef)
+  - [GetAnomalyMonitorsRequestRequestTypeDef](#getanomalymonitorsrequestrequesttypedef)
+  - [GetAnomalyMonitorsResponseTypeDef](#getanomalymonitorsresponsetypedef)
+  - [GetAnomalySubscriptionsRequestRequestTypeDef](#getanomalysubscriptionsrequestrequesttypedef)
+  - [GetAnomalySubscriptionsResponseTypeDef](#getanomalysubscriptionsresponsetypedef)
+  - [GetCostAndUsageRequestRequestTypeDef](#getcostandusagerequestrequesttypedef)
+  - [GetCostAndUsageResponseTypeDef](#getcostandusageresponsetypedef)
+  - [GetCostAndUsageWithResourcesRequestRequestTypeDef](#getcostandusagewithresourcesrequestrequesttypedef)
+  - [GetCostAndUsageWithResourcesResponseTypeDef](#getcostandusagewithresourcesresponsetypedef)
+  - [GetCostCategoriesRequestRequestTypeDef](#getcostcategoriesrequestrequesttypedef)
+  - [GetCostCategoriesResponseTypeDef](#getcostcategoriesresponsetypedef)
+  - [GetCostForecastRequestRequestTypeDef](#getcostforecastrequestrequesttypedef)
+  - [GetCostForecastResponseTypeDef](#getcostforecastresponsetypedef)
+  - [GetDimensionValuesRequestRequestTypeDef](#getdimensionvaluesrequestrequesttypedef)
+  - [GetDimensionValuesResponseTypeDef](#getdimensionvaluesresponsetypedef)
+  - [GetReservationCoverageRequestRequestTypeDef](#getreservationcoveragerequestrequesttypedef)
+  - [GetReservationCoverageResponseTypeDef](#getreservationcoverageresponsetypedef)
+  - [GetReservationPurchaseRecommendationRequestRequestTypeDef](#getreservationpurchaserecommendationrequestrequesttypedef)
+  - [GetReservationPurchaseRecommendationResponseTypeDef](#getreservationpurchaserecommendationresponsetypedef)
+  - [GetReservationUtilizationRequestRequestTypeDef](#getreservationutilizationrequestrequesttypedef)
+  - [GetReservationUtilizationResponseTypeDef](#getreservationutilizationresponsetypedef)
+  - [GetRightsizingRecommendationRequestRequestTypeDef](#getrightsizingrecommendationrequestrequesttypedef)
+  - [GetRightsizingRecommendationResponseTypeDef](#getrightsizingrecommendationresponsetypedef)
+  - [GetSavingsPlansCoverageRequestRequestTypeDef](#getsavingsplanscoveragerequestrequesttypedef)
+  - [GetSavingsPlansCoverageResponseTypeDef](#getsavingsplanscoverageresponsetypedef)
+  - [GetSavingsPlansPurchaseRecommendationRequestRequestTypeDef](#getsavingsplanspurchaserecommendationrequestrequesttypedef)
+  - [GetSavingsPlansPurchaseRecommendationResponseTypeDef](#getsavingsplanspurchaserecommendationresponsetypedef)
+  - [GetSavingsPlansUtilizationDetailsRequestRequestTypeDef](#getsavingsplansutilizationdetailsrequestrequesttypedef)
+  - [GetSavingsPlansUtilizationDetailsResponseTypeDef](#getsavingsplansutilizationdetailsresponsetypedef)
+  - [GetSavingsPlansUtilizationRequestRequestTypeDef](#getsavingsplansutilizationrequestrequesttypedef)
+  - [GetSavingsPlansUtilizationResponseTypeDef](#getsavingsplansutilizationresponsetypedef)
+  - [GetTagsRequestRequestTypeDef](#gettagsrequestrequesttypedef)
+  - [GetTagsResponseTypeDef](#gettagsresponsetypedef)
+  - [GetUsageForecastRequestRequestTypeDef](#getusageforecastrequestrequesttypedef)
+  - [GetUsageForecastResponseTypeDef](#getusageforecastresponsetypedef)
   - [GroupDefinitionTypeDef](#groupdefinitiontypedef)
   - [GroupTypeDef](#grouptypedef)
   - [ImpactTypeDef](#impacttypedef)
   - [InstanceDetailsTypeDef](#instancedetailstypedef)
-  - [ListCostCategoryDefinitionsRequestTypeDef](#listcostcategorydefinitionsrequesttypedef)
-  - [ListCostCategoryDefinitionsResponseResponseTypeDef](#listcostcategorydefinitionsresponseresponsetypedef)
+  - [ListCostCategoryDefinitionsRequestRequestTypeDef](#listcostcategorydefinitionsrequestrequesttypedef)
+  - [ListCostCategoryDefinitionsResponseTypeDef](#listcostcategorydefinitionsresponsetypedef)
   - [MetricValueTypeDef](#metricvaluetypedef)
   - [ModifyRecommendationDetailTypeDef](#modifyrecommendationdetailtypedef)
   - [NetworkResourceUtilizationTypeDef](#networkresourceutilizationtypedef)
-  - [ProvideAnomalyFeedbackRequestTypeDef](#provideanomalyfeedbackrequesttypedef)
-  - [ProvideAnomalyFeedbackResponseResponseTypeDef](#provideanomalyfeedbackresponseresponsetypedef)
+  - [ProvideAnomalyFeedbackRequestRequestTypeDef](#provideanomalyfeedbackrequestrequesttypedef)
+  - [ProvideAnomalyFeedbackResponseTypeDef](#provideanomalyfeedbackresponsetypedef)
   - [RDSInstanceDetailsTypeDef](#rdsinstancedetailstypedef)
   - [RedshiftInstanceDetailsTypeDef](#redshiftinstancedetailstypedef)
   - [ReservationAggregatesTypeDef](#reservationaggregatestypedef)
@@ -135,12 +135,12 @@ type annotations stubs module
   - [TargetInstanceTypeDef](#targetinstancetypedef)
   - [TerminateRecommendationDetailTypeDef](#terminaterecommendationdetailtypedef)
   - [TotalImpactFilterTypeDef](#totalimpactfiltertypedef)
-  - [UpdateAnomalyMonitorRequestTypeDef](#updateanomalymonitorrequesttypedef)
-  - [UpdateAnomalyMonitorResponseResponseTypeDef](#updateanomalymonitorresponseresponsetypedef)
-  - [UpdateAnomalySubscriptionRequestTypeDef](#updateanomalysubscriptionrequesttypedef)
-  - [UpdateAnomalySubscriptionResponseResponseTypeDef](#updateanomalysubscriptionresponseresponsetypedef)
-  - [UpdateCostCategoryDefinitionRequestTypeDef](#updatecostcategorydefinitionrequesttypedef)
-  - [UpdateCostCategoryDefinitionResponseResponseTypeDef](#updatecostcategorydefinitionresponseresponsetypedef)
+  - [UpdateAnomalyMonitorRequestRequestTypeDef](#updateanomalymonitorrequestrequesttypedef)
+  - [UpdateAnomalyMonitorResponseTypeDef](#updateanomalymonitorresponsetypedef)
+  - [UpdateAnomalySubscriptionRequestRequestTypeDef](#updateanomalysubscriptionrequestrequesttypedef)
+  - [UpdateAnomalySubscriptionResponseTypeDef](#updateanomalysubscriptionresponsetypedef)
+  - [UpdateCostCategoryDefinitionRequestRequestTypeDef](#updatecostcategorydefinitionrequestrequesttypedef)
+  - [UpdateCostCategoryDefinitionResponseTypeDef](#updatecostcategorydefinitionresponsetypedef)
   - [UtilizationByTimeTypeDef](#utilizationbytimetypedef)
 
 ## AnomalyDateIntervalTypeDef
@@ -385,10 +385,10 @@ Optional fields:
   [CoverageNormalizedUnitsTypeDef](./type_defs.md#coveragenormalizedunitstypedef)
 - `CoverageCost`: [CoverageCostTypeDef](./type_defs.md#coveragecosttypedef)
 
-## CreateAnomalyMonitorRequestTypeDef
+## CreateAnomalyMonitorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import CreateAnomalyMonitorRequestTypeDef
+from mypy_boto3_ce.type_defs import CreateAnomalyMonitorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -396,10 +396,10 @@ Required fields:
 - `AnomalyMonitor`:
   [AnomalyMonitorTypeDef](./type_defs.md#anomalymonitortypedef)
 
-## CreateAnomalyMonitorResponseResponseTypeDef
+## CreateAnomalyMonitorResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import CreateAnomalyMonitorResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import CreateAnomalyMonitorResponseTypeDef
 ```
 
 Required fields:
@@ -408,10 +408,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateAnomalySubscriptionRequestTypeDef
+## CreateAnomalySubscriptionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import CreateAnomalySubscriptionRequestTypeDef
+from mypy_boto3_ce.type_defs import CreateAnomalySubscriptionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -419,10 +419,10 @@ Required fields:
 - `AnomalySubscription`:
   [AnomalySubscriptionTypeDef](./type_defs.md#anomalysubscriptiontypedef)
 
-## CreateAnomalySubscriptionResponseResponseTypeDef
+## CreateAnomalySubscriptionResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import CreateAnomalySubscriptionResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import CreateAnomalySubscriptionResponseTypeDef
 ```
 
 Required fields:
@@ -431,10 +431,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateCostCategoryDefinitionRequestTypeDef
+## CreateCostCategoryDefinitionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import CreateCostCategoryDefinitionRequestTypeDef
+from mypy_boto3_ce.type_defs import CreateCostCategoryDefinitionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -449,10 +449,10 @@ Optional fields:
 
 - `DefaultValue`: `str`
 
-## CreateCostCategoryDefinitionResponseResponseTypeDef
+## CreateCostCategoryDefinitionResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import CreateCostCategoryDefinitionResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import CreateCostCategoryDefinitionResponseTypeDef
 ```
 
 Required fields:
@@ -495,40 +495,40 @@ Required fields:
 - `Start`: `str`
 - `End`: `str`
 
-## DeleteAnomalyMonitorRequestTypeDef
+## DeleteAnomalyMonitorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import DeleteAnomalyMonitorRequestTypeDef
+from mypy_boto3_ce.type_defs import DeleteAnomalyMonitorRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `MonitorArn`: `str`
 
-## DeleteAnomalySubscriptionRequestTypeDef
+## DeleteAnomalySubscriptionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import DeleteAnomalySubscriptionRequestTypeDef
+from mypy_boto3_ce.type_defs import DeleteAnomalySubscriptionRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `SubscriptionArn`: `str`
 
-## DeleteCostCategoryDefinitionRequestTypeDef
+## DeleteCostCategoryDefinitionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import DeleteCostCategoryDefinitionRequestTypeDef
+from mypy_boto3_ce.type_defs import DeleteCostCategoryDefinitionRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `CostCategoryArn`: `str`
 
-## DeleteCostCategoryDefinitionResponseResponseTypeDef
+## DeleteCostCategoryDefinitionResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import DeleteCostCategoryDefinitionResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import DeleteCostCategoryDefinitionResponseTypeDef
 ```
 
 Required fields:
@@ -538,10 +538,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCostCategoryDefinitionRequestTypeDef
+## DescribeCostCategoryDefinitionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import DescribeCostCategoryDefinitionRequestTypeDef
+from mypy_boto3_ce.type_defs import DescribeCostCategoryDefinitionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -552,10 +552,10 @@ Optional fields:
 
 - `EffectiveOn`: `str`
 
-## DescribeCostCategoryDefinitionResponseResponseTypeDef
+## DescribeCostCategoryDefinitionResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import DescribeCostCategoryDefinitionResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import DescribeCostCategoryDefinitionResponseTypeDef
 ```
 
 Required fields:
@@ -734,10 +734,10 @@ Optional fields:
 - `PredictionIntervalLowerBound`: `str`
 - `PredictionIntervalUpperBound`: `str`
 
-## GetAnomaliesRequestTypeDef
+## GetAnomaliesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetAnomaliesRequestTypeDef
+from mypy_boto3_ce.type_defs import GetAnomaliesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -754,10 +754,10 @@ Optional fields:
 - `NextPageToken`: `str`
 - `MaxResults`: `int`
 
-## GetAnomaliesResponseResponseTypeDef
+## GetAnomaliesResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetAnomaliesResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import GetAnomaliesResponseTypeDef
 ```
 
 Required fields:
@@ -767,10 +767,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAnomalyMonitorsRequestTypeDef
+## GetAnomalyMonitorsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetAnomalyMonitorsRequestTypeDef
+from mypy_boto3_ce.type_defs import GetAnomalyMonitorsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -779,10 +779,10 @@ Optional fields:
 - `NextPageToken`: `str`
 - `MaxResults`: `int`
 
-## GetAnomalyMonitorsResponseResponseTypeDef
+## GetAnomalyMonitorsResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetAnomalyMonitorsResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import GetAnomalyMonitorsResponseTypeDef
 ```
 
 Required fields:
@@ -793,10 +793,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAnomalySubscriptionsRequestTypeDef
+## GetAnomalySubscriptionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetAnomalySubscriptionsRequestTypeDef
+from mypy_boto3_ce.type_defs import GetAnomalySubscriptionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -806,10 +806,10 @@ Optional fields:
 - `NextPageToken`: `str`
 - `MaxResults`: `int`
 
-## GetAnomalySubscriptionsResponseResponseTypeDef
+## GetAnomalySubscriptionsResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetAnomalySubscriptionsResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import GetAnomalySubscriptionsResponseTypeDef
 ```
 
 Required fields:
@@ -820,10 +820,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCostAndUsageRequestTypeDef
+## GetCostAndUsageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetCostAndUsageRequestTypeDef
+from mypy_boto3_ce.type_defs import GetCostAndUsageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -839,10 +839,10 @@ Optional fields:
   `List`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
 - `NextPageToken`: `str`
 
-## GetCostAndUsageResponseResponseTypeDef
+## GetCostAndUsageResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetCostAndUsageResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import GetCostAndUsageResponseTypeDef
 ```
 
 Required fields:
@@ -857,10 +857,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCostAndUsageWithResourcesRequestTypeDef
+## GetCostAndUsageWithResourcesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetCostAndUsageWithResourcesRequestTypeDef
+from mypy_boto3_ce.type_defs import GetCostAndUsageWithResourcesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -876,10 +876,10 @@ Optional fields:
   `List`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
 - `NextPageToken`: `str`
 
-## GetCostAndUsageWithResourcesResponseResponseTypeDef
+## GetCostAndUsageWithResourcesResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetCostAndUsageWithResourcesResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import GetCostAndUsageWithResourcesResponseTypeDef
 ```
 
 Required fields:
@@ -894,10 +894,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCostCategoriesRequestTypeDef
+## GetCostCategoriesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetCostCategoriesRequestTypeDef
+from mypy_boto3_ce.type_defs import GetCostCategoriesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -914,10 +914,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextPageToken`: `str`
 
-## GetCostCategoriesResponseResponseTypeDef
+## GetCostCategoriesResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetCostCategoriesResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import GetCostCategoriesResponseTypeDef
 ```
 
 Required fields:
@@ -930,10 +930,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCostForecastRequestTypeDef
+## GetCostForecastRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetCostForecastRequestTypeDef
+from mypy_boto3_ce.type_defs import GetCostForecastRequestRequestTypeDef
 ```
 
 Required fields:
@@ -947,10 +947,10 @@ Optional fields:
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 - `PredictionIntervalLevel`: `int`
 
-## GetCostForecastResponseResponseTypeDef
+## GetCostForecastResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetCostForecastResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import GetCostForecastResponseTypeDef
 ```
 
 Required fields:
@@ -961,10 +961,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDimensionValuesRequestTypeDef
+## GetDimensionValuesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetDimensionValuesRequestTypeDef
+from mypy_boto3_ce.type_defs import GetDimensionValuesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -982,10 +982,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextPageToken`: `str`
 
-## GetDimensionValuesResponseResponseTypeDef
+## GetDimensionValuesResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetDimensionValuesResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import GetDimensionValuesResponseTypeDef
 ```
 
 Required fields:
@@ -998,10 +998,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetReservationCoverageRequestTypeDef
+## GetReservationCoverageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetReservationCoverageRequestTypeDef
+from mypy_boto3_ce.type_defs import GetReservationCoverageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1019,10 +1019,10 @@ Optional fields:
 - `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
 - `MaxResults`: `int`
 
-## GetReservationCoverageResponseResponseTypeDef
+## GetReservationCoverageResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetReservationCoverageResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import GetReservationCoverageResponseTypeDef
 ```
 
 Required fields:
@@ -1034,10 +1034,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetReservationPurchaseRecommendationRequestTypeDef
+## GetReservationPurchaseRecommendationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetReservationPurchaseRecommendationRequestTypeDef
+from mypy_boto3_ce.type_defs import GetReservationPurchaseRecommendationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1058,10 +1058,10 @@ Optional fields:
 - `PageSize`: `int`
 - `NextPageToken`: `str`
 
-## GetReservationPurchaseRecommendationResponseResponseTypeDef
+## GetReservationPurchaseRecommendationResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetReservationPurchaseRecommendationResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import GetReservationPurchaseRecommendationResponseTypeDef
 ```
 
 Required fields:
@@ -1074,10 +1074,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetReservationUtilizationRequestTypeDef
+## GetReservationUtilizationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetReservationUtilizationRequestTypeDef
+from mypy_boto3_ce.type_defs import GetReservationUtilizationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1094,10 +1094,10 @@ Optional fields:
 - `NextPageToken`: `str`
 - `MaxResults`: `int`
 
-## GetReservationUtilizationResponseResponseTypeDef
+## GetReservationUtilizationResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetReservationUtilizationResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import GetReservationUtilizationResponseTypeDef
 ```
 
 Required fields:
@@ -1110,10 +1110,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRightsizingRecommendationRequestTypeDef
+## GetRightsizingRecommendationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetRightsizingRecommendationRequestTypeDef
+from mypy_boto3_ce.type_defs import GetRightsizingRecommendationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1128,10 +1128,10 @@ Optional fields:
 - `PageSize`: `int`
 - `NextPageToken`: `str`
 
-## GetRightsizingRecommendationResponseResponseTypeDef
+## GetRightsizingRecommendationResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetRightsizingRecommendationResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import GetRightsizingRecommendationResponseTypeDef
 ```
 
 Required fields:
@@ -1148,10 +1148,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSavingsPlansCoverageRequestTypeDef
+## GetSavingsPlansCoverageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetSavingsPlansCoverageRequestTypeDef
+from mypy_boto3_ce.type_defs import GetSavingsPlansCoverageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1169,10 +1169,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
 
-## GetSavingsPlansCoverageResponseResponseTypeDef
+## GetSavingsPlansCoverageResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetSavingsPlansCoverageResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import GetSavingsPlansCoverageResponseTypeDef
 ```
 
 Required fields:
@@ -1183,10 +1183,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSavingsPlansPurchaseRecommendationRequestTypeDef
+## GetSavingsPlansPurchaseRecommendationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetSavingsPlansPurchaseRecommendationRequestTypeDef
+from mypy_boto3_ce.type_defs import GetSavingsPlansPurchaseRecommendationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1205,10 +1205,10 @@ Optional fields:
 - `PageSize`: `int`
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 
-## GetSavingsPlansPurchaseRecommendationResponseResponseTypeDef
+## GetSavingsPlansPurchaseRecommendationResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetSavingsPlansPurchaseRecommendationResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import GetSavingsPlansPurchaseRecommendationResponseTypeDef
 ```
 
 Required fields:
@@ -1221,10 +1221,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSavingsPlansUtilizationDetailsRequestTypeDef
+## GetSavingsPlansUtilizationDetailsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetSavingsPlansUtilizationDetailsRequestTypeDef
+from mypy_boto3_ce.type_defs import GetSavingsPlansUtilizationDetailsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1240,10 +1240,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
 
-## GetSavingsPlansUtilizationDetailsResponseResponseTypeDef
+## GetSavingsPlansUtilizationDetailsResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetSavingsPlansUtilizationDetailsResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import GetSavingsPlansUtilizationDetailsResponseTypeDef
 ```
 
 Required fields:
@@ -1257,10 +1257,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSavingsPlansUtilizationRequestTypeDef
+## GetSavingsPlansUtilizationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetSavingsPlansUtilizationRequestTypeDef
+from mypy_boto3_ce.type_defs import GetSavingsPlansUtilizationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1273,10 +1273,10 @@ Optional fields:
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 - `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
 
-## GetSavingsPlansUtilizationResponseResponseTypeDef
+## GetSavingsPlansUtilizationResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetSavingsPlansUtilizationResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import GetSavingsPlansUtilizationResponseTypeDef
 ```
 
 Required fields:
@@ -1288,10 +1288,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTagsRequestTypeDef
+## GetTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetTagsRequestTypeDef
+from mypy_boto3_ce.type_defs import GetTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1308,10 +1308,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextPageToken`: `str`
 
-## GetTagsResponseResponseTypeDef
+## GetTagsResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetTagsResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import GetTagsResponseTypeDef
 ```
 
 Required fields:
@@ -1323,10 +1323,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetUsageForecastRequestTypeDef
+## GetUsageForecastRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetUsageForecastRequestTypeDef
+from mypy_boto3_ce.type_defs import GetUsageForecastRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1340,10 +1340,10 @@ Optional fields:
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 - `PredictionIntervalLevel`: `int`
 
-## GetUsageForecastResponseResponseTypeDef
+## GetUsageForecastResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import GetUsageForecastResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import GetUsageForecastResponseTypeDef
 ```
 
 Required fields:
@@ -1410,10 +1410,10 @@ Optional fields:
 - `ESInstanceDetails`:
   [ESInstanceDetailsTypeDef](./type_defs.md#esinstancedetailstypedef)
 
-## ListCostCategoryDefinitionsRequestTypeDef
+## ListCostCategoryDefinitionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import ListCostCategoryDefinitionsRequestTypeDef
+from mypy_boto3_ce.type_defs import ListCostCategoryDefinitionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1422,10 +1422,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListCostCategoryDefinitionsResponseResponseTypeDef
+## ListCostCategoryDefinitionsResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import ListCostCategoryDefinitionsResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import ListCostCategoryDefinitionsResponseTypeDef
 ```
 
 Required fields:
@@ -1471,10 +1471,10 @@ Optional fields:
 - `NetworkPacketsInPerSecond`: `str`
 - `NetworkPacketsOutPerSecond`: `str`
 
-## ProvideAnomalyFeedbackRequestTypeDef
+## ProvideAnomalyFeedbackRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import ProvideAnomalyFeedbackRequestTypeDef
+from mypy_boto3_ce.type_defs import ProvideAnomalyFeedbackRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1482,10 +1482,10 @@ Required fields:
 - `AnomalyId`: `str`
 - `Feedback`: [AnomalyFeedbackTypeType](./literals.md#anomalyfeedbacktypetype)
 
-## ProvideAnomalyFeedbackResponseResponseTypeDef
+## ProvideAnomalyFeedbackResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import ProvideAnomalyFeedbackResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import ProvideAnomalyFeedbackResponseTypeDef
 ```
 
 Required fields:
@@ -2070,10 +2070,10 @@ Optional fields:
 
 - `EndValue`: `float`
 
-## UpdateAnomalyMonitorRequestTypeDef
+## UpdateAnomalyMonitorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import UpdateAnomalyMonitorRequestTypeDef
+from mypy_boto3_ce.type_defs import UpdateAnomalyMonitorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2084,10 +2084,10 @@ Optional fields:
 
 - `MonitorName`: `str`
 
-## UpdateAnomalyMonitorResponseResponseTypeDef
+## UpdateAnomalyMonitorResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import UpdateAnomalyMonitorResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import UpdateAnomalyMonitorResponseTypeDef
 ```
 
 Required fields:
@@ -2096,10 +2096,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateAnomalySubscriptionRequestTypeDef
+## UpdateAnomalySubscriptionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import UpdateAnomalySubscriptionRequestTypeDef
+from mypy_boto3_ce.type_defs import UpdateAnomalySubscriptionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2116,10 +2116,10 @@ Optional fields:
   `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 - `SubscriptionName`: `str`
 
-## UpdateAnomalySubscriptionResponseResponseTypeDef
+## UpdateAnomalySubscriptionResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import UpdateAnomalySubscriptionResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import UpdateAnomalySubscriptionResponseTypeDef
 ```
 
 Required fields:
@@ -2128,10 +2128,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateCostCategoryDefinitionRequestTypeDef
+## UpdateCostCategoryDefinitionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import UpdateCostCategoryDefinitionRequestTypeDef
+from mypy_boto3_ce.type_defs import UpdateCostCategoryDefinitionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2146,10 +2146,10 @@ Optional fields:
 
 - `DefaultValue`: `str`
 
-## UpdateCostCategoryDefinitionResponseResponseTypeDef
+## UpdateCostCategoryDefinitionResponseTypeDef
 
 ```python
-from mypy_boto3_ce.type_defs import UpdateCostCategoryDefinitionResponseResponseTypeDef
+from mypy_boto3_ce.type_defs import UpdateCostCategoryDefinitionResponseTypeDef
 ```
 
 Required fields:

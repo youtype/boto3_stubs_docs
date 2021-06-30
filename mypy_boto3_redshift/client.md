@@ -11,6 +11,7 @@ type annotations stubs module
   - [RedshiftClient](#redshiftclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [accept_reserved_node_exchange](#accept_reserved_node_exchange)
     - [add_partner](#add_partner)
     - [authorize_cluster_security_group_ingress](#authorize_cluster_security_group_ingress)
@@ -273,6 +274,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+RedshiftClient exceptions.
+
+Type annotations for `boto3.client("redshift").exceptions` method.
+
+Boto3 documentation:
+[Redshift.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### accept_reserved_node_exchange
 
 Exchanges a DC1 Reserved Node for a DC2 Reserved Node with no changes to the
@@ -285,7 +297,7 @@ Boto3 documentation:
 [Redshift.Client.accept_reserved_node_exchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.accept_reserved_node_exchange)
 
 Arguments mapping described in
-[AcceptReservedNodeExchangeInputMessageTypeDef](./type_defs.md#acceptreservednodeexchangeinputmessagetypedef).
+[AcceptReservedNodeExchangeInputMessageRequestTypeDef](./type_defs.md#acceptreservednodeexchangeinputmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -293,7 +305,7 @@ Keyword-only arguments:
 - `TargetReservedNodeOfferingId`: `str` *(required)*
 
 Returns
-[AcceptReservedNodeExchangeOutputMessageResponseTypeDef](./type_defs.md#acceptreservednodeexchangeoutputmessageresponsetypedef).
+[AcceptReservedNodeExchangeOutputMessageTypeDef](./type_defs.md#acceptreservednodeexchangeoutputmessagetypedef).
 
 ### add_partner
 
@@ -305,7 +317,7 @@ Boto3 documentation:
 [Redshift.Client.add_partner](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.add_partner)
 
 Arguments mapping described in
-[PartnerIntegrationInputMessageTypeDef](./type_defs.md#partnerintegrationinputmessagetypedef).
+[PartnerIntegrationInputMessageRequestTypeDef](./type_defs.md#partnerintegrationinputmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -315,7 +327,7 @@ Keyword-only arguments:
 - `PartnerName`: `str` *(required)*
 
 Returns
-[PartnerIntegrationOutputMessageResponseTypeDef](./type_defs.md#partnerintegrationoutputmessageresponsetypedef).
+[PartnerIntegrationOutputMessageTypeDef](./type_defs.md#partnerintegrationoutputmessagetypedef).
 
 ### authorize_cluster_security_group_ingress
 
@@ -328,7 +340,7 @@ Boto3 documentation:
 [Redshift.Client.authorize_cluster_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.authorize_cluster_security_group_ingress)
 
 Arguments mapping described in
-[AuthorizeClusterSecurityGroupIngressMessageTypeDef](./type_defs.md#authorizeclustersecuritygroupingressmessagetypedef).
+[AuthorizeClusterSecurityGroupIngressMessageRequestTypeDef](./type_defs.md#authorizeclustersecuritygroupingressmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -338,7 +350,7 @@ Keyword-only arguments:
 - `EC2SecurityGroupOwnerId`: `str`
 
 Returns
-[AuthorizeClusterSecurityGroupIngressResultResponseTypeDef](./type_defs.md#authorizeclustersecuritygroupingressresultresponsetypedef).
+[AuthorizeClusterSecurityGroupIngressResultTypeDef](./type_defs.md#authorizeclustersecuritygroupingressresulttypedef).
 
 ### authorize_endpoint_access
 
@@ -351,7 +363,7 @@ Boto3 documentation:
 [Redshift.Client.authorize_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.authorize_endpoint_access)
 
 Arguments mapping described in
-[AuthorizeEndpointAccessMessageTypeDef](./type_defs.md#authorizeendpointaccessmessagetypedef).
+[AuthorizeEndpointAccessMessageRequestTypeDef](./type_defs.md#authorizeendpointaccessmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -360,7 +372,7 @@ Keyword-only arguments:
 - `VpcIds`: `List`\[`str`\]
 
 Returns
-[EndpointAuthorizationResponseTypeDef](./type_defs.md#endpointauthorizationresponsetypedef).
+[EndpointAuthorizationResponseMetadataTypeDef](./type_defs.md#endpointauthorizationresponsemetadatatypedef).
 
 ### authorize_snapshot_access
 
@@ -374,7 +386,7 @@ Boto3 documentation:
 [Redshift.Client.authorize_snapshot_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.authorize_snapshot_access)
 
 Arguments mapping described in
-[AuthorizeSnapshotAccessMessageTypeDef](./type_defs.md#authorizesnapshotaccessmessagetypedef).
+[AuthorizeSnapshotAccessMessageRequestTypeDef](./type_defs.md#authorizesnapshotaccessmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -383,7 +395,7 @@ Keyword-only arguments:
 - `SnapshotClusterIdentifier`: `str`
 
 Returns
-[AuthorizeSnapshotAccessResultResponseTypeDef](./type_defs.md#authorizesnapshotaccessresultresponsetypedef).
+[AuthorizeSnapshotAccessResultTypeDef](./type_defs.md#authorizesnapshotaccessresulttypedef).
 
 ### batch_delete_cluster_snapshots
 
@@ -396,7 +408,7 @@ Boto3 documentation:
 [Redshift.Client.batch_delete_cluster_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.batch_delete_cluster_snapshots)
 
 Arguments mapping described in
-[BatchDeleteClusterSnapshotsRequestTypeDef](./type_defs.md#batchdeleteclustersnapshotsrequesttypedef).
+[BatchDeleteClusterSnapshotsRequestRequestTypeDef](./type_defs.md#batchdeleteclustersnapshotsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -405,7 +417,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchDeleteClusterSnapshotsResultResponseTypeDef](./type_defs.md#batchdeleteclustersnapshotsresultresponsetypedef).
+[BatchDeleteClusterSnapshotsResultTypeDef](./type_defs.md#batchdeleteclustersnapshotsresulttypedef).
 
 ### batch_modify_cluster_snapshots
 
@@ -418,7 +430,7 @@ Boto3 documentation:
 [Redshift.Client.batch_modify_cluster_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.batch_modify_cluster_snapshots)
 
 Arguments mapping described in
-[BatchModifyClusterSnapshotsMessageTypeDef](./type_defs.md#batchmodifyclustersnapshotsmessagetypedef).
+[BatchModifyClusterSnapshotsMessageRequestTypeDef](./type_defs.md#batchmodifyclustersnapshotsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -427,7 +439,7 @@ Keyword-only arguments:
 - `Force`: `bool`
 
 Returns
-[BatchModifyClusterSnapshotsOutputMessageResponseTypeDef](./type_defs.md#batchmodifyclustersnapshotsoutputmessageresponsetypedef).
+[BatchModifyClusterSnapshotsOutputMessageTypeDef](./type_defs.md#batchmodifyclustersnapshotsoutputmessagetypedef).
 
 ### can_paginate
 
@@ -454,14 +466,14 @@ Boto3 documentation:
 [Redshift.Client.cancel_resize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.cancel_resize)
 
 Arguments mapping described in
-[CancelResizeMessageTypeDef](./type_defs.md#cancelresizemessagetypedef).
+[CancelResizeMessageRequestTypeDef](./type_defs.md#cancelresizemessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 
 Returns
-[ResizeProgressMessageResponseTypeDef](./type_defs.md#resizeprogressmessageresponsetypedef).
+[ResizeProgressMessageTypeDef](./type_defs.md#resizeprogressmessagetypedef).
 
 ### copy_cluster_snapshot
 
@@ -474,7 +486,7 @@ Boto3 documentation:
 [Redshift.Client.copy_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.copy_cluster_snapshot)
 
 Arguments mapping described in
-[CopyClusterSnapshotMessageTypeDef](./type_defs.md#copyclustersnapshotmessagetypedef).
+[CopyClusterSnapshotMessageRequestTypeDef](./type_defs.md#copyclustersnapshotmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -484,7 +496,7 @@ Keyword-only arguments:
 - `ManualSnapshotRetentionPeriod`: `int`
 
 Returns
-[CopyClusterSnapshotResultResponseTypeDef](./type_defs.md#copyclustersnapshotresultresponsetypedef).
+[CopyClusterSnapshotResultTypeDef](./type_defs.md#copyclustersnapshotresulttypedef).
 
 ### create_cluster
 
@@ -496,7 +508,7 @@ Boto3 documentation:
 [Redshift.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster)
 
 Arguments mapping described in
-[CreateClusterMessageTypeDef](./type_defs.md#createclustermessagetypedef).
+[CreateClusterMessageRequestTypeDef](./type_defs.md#createclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -535,7 +547,7 @@ Keyword-only arguments:
   [AquaConfigurationStatusType](./literals.md#aquaconfigurationstatustype)
 
 Returns
-[CreateClusterResultResponseTypeDef](./type_defs.md#createclusterresultresponsetypedef).
+[CreateClusterResultTypeDef](./type_defs.md#createclusterresulttypedef).
 
 ### create_cluster_parameter_group
 
@@ -548,7 +560,7 @@ Boto3 documentation:
 [Redshift.Client.create_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster_parameter_group)
 
 Arguments mapping described in
-[CreateClusterParameterGroupMessageTypeDef](./type_defs.md#createclusterparametergroupmessagetypedef).
+[CreateClusterParameterGroupMessageRequestTypeDef](./type_defs.md#createclusterparametergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -558,7 +570,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateClusterParameterGroupResultResponseTypeDef](./type_defs.md#createclusterparametergroupresultresponsetypedef).
+[CreateClusterParameterGroupResultTypeDef](./type_defs.md#createclusterparametergroupresulttypedef).
 
 ### create_cluster_security_group
 
@@ -571,7 +583,7 @@ Boto3 documentation:
 [Redshift.Client.create_cluster_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster_security_group)
 
 Arguments mapping described in
-[CreateClusterSecurityGroupMessageTypeDef](./type_defs.md#createclustersecuritygroupmessagetypedef).
+[CreateClusterSecurityGroupMessageRequestTypeDef](./type_defs.md#createclustersecuritygroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -580,7 +592,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateClusterSecurityGroupResultResponseTypeDef](./type_defs.md#createclustersecuritygroupresultresponsetypedef).
+[CreateClusterSecurityGroupResultTypeDef](./type_defs.md#createclustersecuritygroupresulttypedef).
 
 ### create_cluster_snapshot
 
@@ -592,7 +604,7 @@ Boto3 documentation:
 [Redshift.Client.create_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster_snapshot)
 
 Arguments mapping described in
-[CreateClusterSnapshotMessageTypeDef](./type_defs.md#createclustersnapshotmessagetypedef).
+[CreateClusterSnapshotMessageRequestTypeDef](./type_defs.md#createclustersnapshotmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -602,7 +614,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateClusterSnapshotResultResponseTypeDef](./type_defs.md#createclustersnapshotresultresponsetypedef).
+[CreateClusterSnapshotResultTypeDef](./type_defs.md#createclustersnapshotresulttypedef).
 
 ### create_cluster_subnet_group
 
@@ -615,7 +627,7 @@ Boto3 documentation:
 [Redshift.Client.create_cluster_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster_subnet_group)
 
 Arguments mapping described in
-[CreateClusterSubnetGroupMessageTypeDef](./type_defs.md#createclustersubnetgroupmessagetypedef).
+[CreateClusterSubnetGroupMessageRequestTypeDef](./type_defs.md#createclustersubnetgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -625,7 +637,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateClusterSubnetGroupResultResponseTypeDef](./type_defs.md#createclustersubnetgroupresultresponsetypedef).
+[CreateClusterSubnetGroupResultTypeDef](./type_defs.md#createclustersubnetgroupresulttypedef).
 
 ### create_endpoint_access
 
@@ -637,7 +649,7 @@ Boto3 documentation:
 [Redshift.Client.create_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_endpoint_access)
 
 Arguments mapping described in
-[CreateEndpointAccessMessageTypeDef](./type_defs.md#createendpointaccessmessagetypedef).
+[CreateEndpointAccessMessageRequestTypeDef](./type_defs.md#createendpointaccessmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -648,7 +660,7 @@ Keyword-only arguments:
 - `VpcSecurityGroupIds`: `List`\[`str`\]
 
 Returns
-[EndpointAccessResponseTypeDef](./type_defs.md#endpointaccessresponsetypedef).
+[EndpointAccessResponseMetadataTypeDef](./type_defs.md#endpointaccessresponsemetadatatypedef).
 
 ### create_event_subscription
 
@@ -661,7 +673,7 @@ Boto3 documentation:
 [Redshift.Client.create_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_event_subscription)
 
 Arguments mapping described in
-[CreateEventSubscriptionMessageTypeDef](./type_defs.md#createeventsubscriptionmessagetypedef).
+[CreateEventSubscriptionMessageRequestTypeDef](./type_defs.md#createeventsubscriptionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -675,7 +687,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateEventSubscriptionResultResponseTypeDef](./type_defs.md#createeventsubscriptionresultresponsetypedef).
+[CreateEventSubscriptionResultTypeDef](./type_defs.md#createeventsubscriptionresulttypedef).
 
 ### create_hsm_client_certificate
 
@@ -690,7 +702,7 @@ Boto3 documentation:
 [Redshift.Client.create_hsm_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_hsm_client_certificate)
 
 Arguments mapping described in
-[CreateHsmClientCertificateMessageTypeDef](./type_defs.md#createhsmclientcertificatemessagetypedef).
+[CreateHsmClientCertificateMessageRequestTypeDef](./type_defs.md#createhsmclientcertificatemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -698,7 +710,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateHsmClientCertificateResultResponseTypeDef](./type_defs.md#createhsmclientcertificateresultresponsetypedef).
+[CreateHsmClientCertificateResultTypeDef](./type_defs.md#createhsmclientcertificateresulttypedef).
 
 ### create_hsm_configuration
 
@@ -713,7 +725,7 @@ Boto3 documentation:
 [Redshift.Client.create_hsm_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_hsm_configuration)
 
 Arguments mapping described in
-[CreateHsmConfigurationMessageTypeDef](./type_defs.md#createhsmconfigurationmessagetypedef).
+[CreateHsmConfigurationMessageRequestTypeDef](./type_defs.md#createhsmconfigurationmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -726,7 +738,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateHsmConfigurationResultResponseTypeDef](./type_defs.md#createhsmconfigurationresultresponsetypedef).
+[CreateHsmConfigurationResultTypeDef](./type_defs.md#createhsmconfigurationresulttypedef).
 
 ### create_scheduled_action
 
@@ -738,7 +750,7 @@ Boto3 documentation:
 [Redshift.Client.create_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_scheduled_action)
 
 Arguments mapping described in
-[CreateScheduledActionMessageTypeDef](./type_defs.md#createscheduledactionmessagetypedef).
+[CreateScheduledActionMessageRequestTypeDef](./type_defs.md#createscheduledactionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -754,7 +766,7 @@ Keyword-only arguments:
 - `Enable`: `bool`
 
 Returns
-[ScheduledActionResponseTypeDef](./type_defs.md#scheduledactionresponsetypedef).
+[ScheduledActionResponseMetadataTypeDef](./type_defs.md#scheduledactionresponsemetadatatypedef).
 
 ### create_snapshot_copy_grant
 
@@ -769,7 +781,7 @@ Boto3 documentation:
 [Redshift.Client.create_snapshot_copy_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_snapshot_copy_grant)
 
 Arguments mapping described in
-[CreateSnapshotCopyGrantMessageTypeDef](./type_defs.md#createsnapshotcopygrantmessagetypedef).
+[CreateSnapshotCopyGrantMessageRequestTypeDef](./type_defs.md#createsnapshotcopygrantmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -778,7 +790,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateSnapshotCopyGrantResultResponseTypeDef](./type_defs.md#createsnapshotcopygrantresultresponsetypedef).
+[CreateSnapshotCopyGrantResultTypeDef](./type_defs.md#createsnapshotcopygrantresulttypedef).
 
 ### create_snapshot_schedule
 
@@ -792,7 +804,7 @@ Boto3 documentation:
 [Redshift.Client.create_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_snapshot_schedule)
 
 Arguments mapping described in
-[CreateSnapshotScheduleMessageTypeDef](./type_defs.md#createsnapshotschedulemessagetypedef).
+[CreateSnapshotScheduleMessageRequestTypeDef](./type_defs.md#createsnapshotschedulemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -804,7 +816,7 @@ Keyword-only arguments:
 - `NextInvocations`: `int`
 
 Returns
-[SnapshotScheduleResponseTypeDef](./type_defs.md#snapshotscheduleresponsetypedef).
+[SnapshotScheduleResponseMetadataTypeDef](./type_defs.md#snapshotscheduleresponsemetadatatypedef).
 
 ### create_tags
 
@@ -816,7 +828,7 @@ Boto3 documentation:
 [Redshift.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_tags)
 
 Arguments mapping described in
-[CreateTagsMessageTypeDef](./type_defs.md#createtagsmessagetypedef).
+[CreateTagsMessageRequestTypeDef](./type_defs.md#createtagsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -833,7 +845,7 @@ Boto3 documentation:
 [Redshift.Client.create_usage_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_usage_limit)
 
 Arguments mapping described in
-[CreateUsageLimitMessageTypeDef](./type_defs.md#createusagelimitmessagetypedef).
+[CreateUsageLimitMessageRequestTypeDef](./type_defs.md#createusagelimitmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -849,7 +861,8 @@ Keyword-only arguments:
   [UsageLimitBreachActionType](./literals.md#usagelimitbreachactiontype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns [UsageLimitResponseTypeDef](./type_defs.md#usagelimitresponsetypedef).
+Returns
+[UsageLimitResponseMetadataTypeDef](./type_defs.md#usagelimitresponsemetadatatypedef).
 
 ### delete_cluster
 
@@ -862,7 +875,7 @@ Boto3 documentation:
 [Redshift.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster)
 
 Arguments mapping described in
-[DeleteClusterMessageTypeDef](./type_defs.md#deleteclustermessagetypedef).
+[DeleteClusterMessageRequestTypeDef](./type_defs.md#deleteclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -872,7 +885,7 @@ Keyword-only arguments:
 - `FinalClusterSnapshotRetentionPeriod`: `int`
 
 Returns
-[DeleteClusterResultResponseTypeDef](./type_defs.md#deleteclusterresultresponsetypedef).
+[DeleteClusterResultTypeDef](./type_defs.md#deleteclusterresulttypedef).
 
 ### delete_cluster_parameter_group
 
@@ -885,7 +898,7 @@ Boto3 documentation:
 [Redshift.Client.delete_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_parameter_group)
 
 Arguments mapping described in
-[DeleteClusterParameterGroupMessageTypeDef](./type_defs.md#deleteclusterparametergroupmessagetypedef).
+[DeleteClusterParameterGroupMessageRequestTypeDef](./type_defs.md#deleteclusterparametergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -902,7 +915,7 @@ Boto3 documentation:
 [Redshift.Client.delete_cluster_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_security_group)
 
 Arguments mapping described in
-[DeleteClusterSecurityGroupMessageTypeDef](./type_defs.md#deleteclustersecuritygroupmessagetypedef).
+[DeleteClusterSecurityGroupMessageRequestTypeDef](./type_defs.md#deleteclustersecuritygroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -918,7 +931,7 @@ Boto3 documentation:
 [Redshift.Client.delete_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_snapshot)
 
 Arguments mapping described in
-[DeleteClusterSnapshotMessageTypeDef](./type_defs.md#deleteclustersnapshotmessagetypedef).
+[DeleteClusterSnapshotMessageRequestTypeDef](./type_defs.md#deleteclustersnapshotmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -926,7 +939,7 @@ Keyword-only arguments:
 - `SnapshotClusterIdentifier`: `str`
 
 Returns
-[DeleteClusterSnapshotResultResponseTypeDef](./type_defs.md#deleteclustersnapshotresultresponsetypedef).
+[DeleteClusterSnapshotResultTypeDef](./type_defs.md#deleteclustersnapshotresulttypedef).
 
 ### delete_cluster_subnet_group
 
@@ -939,7 +952,7 @@ Boto3 documentation:
 [Redshift.Client.delete_cluster_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_subnet_group)
 
 Arguments mapping described in
-[DeleteClusterSubnetGroupMessageTypeDef](./type_defs.md#deleteclustersubnetgroupmessagetypedef).
+[DeleteClusterSubnetGroupMessageRequestTypeDef](./type_defs.md#deleteclustersubnetgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -955,14 +968,14 @@ Boto3 documentation:
 [Redshift.Client.delete_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_endpoint_access)
 
 Arguments mapping described in
-[DeleteEndpointAccessMessageTypeDef](./type_defs.md#deleteendpointaccessmessagetypedef).
+[DeleteEndpointAccessMessageRequestTypeDef](./type_defs.md#deleteendpointaccessmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `EndpointName`: `str` *(required)*
 
 Returns
-[EndpointAccessResponseTypeDef](./type_defs.md#endpointaccessresponsetypedef).
+[EndpointAccessResponseMetadataTypeDef](./type_defs.md#endpointaccessresponsemetadatatypedef).
 
 ### delete_event_subscription
 
@@ -975,7 +988,7 @@ Boto3 documentation:
 [Redshift.Client.delete_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_event_subscription)
 
 Arguments mapping described in
-[DeleteEventSubscriptionMessageTypeDef](./type_defs.md#deleteeventsubscriptionmessagetypedef).
+[DeleteEventSubscriptionMessageRequestTypeDef](./type_defs.md#deleteeventsubscriptionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -992,7 +1005,7 @@ Boto3 documentation:
 [Redshift.Client.delete_hsm_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_hsm_client_certificate)
 
 Arguments mapping described in
-[DeleteHsmClientCertificateMessageTypeDef](./type_defs.md#deletehsmclientcertificatemessagetypedef).
+[DeleteHsmClientCertificateMessageRequestTypeDef](./type_defs.md#deletehsmclientcertificatemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1009,7 +1022,7 @@ Boto3 documentation:
 [Redshift.Client.delete_hsm_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_hsm_configuration)
 
 Arguments mapping described in
-[DeleteHsmConfigurationMessageTypeDef](./type_defs.md#deletehsmconfigurationmessagetypedef).
+[DeleteHsmConfigurationMessageRequestTypeDef](./type_defs.md#deletehsmconfigurationmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1025,7 +1038,7 @@ Boto3 documentation:
 [Redshift.Client.delete_partner](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_partner)
 
 Arguments mapping described in
-[PartnerIntegrationInputMessageTypeDef](./type_defs.md#partnerintegrationinputmessagetypedef).
+[PartnerIntegrationInputMessageRequestTypeDef](./type_defs.md#partnerintegrationinputmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1035,7 +1048,7 @@ Keyword-only arguments:
 - `PartnerName`: `str` *(required)*
 
 Returns
-[PartnerIntegrationOutputMessageResponseTypeDef](./type_defs.md#partnerintegrationoutputmessageresponsetypedef).
+[PartnerIntegrationOutputMessageTypeDef](./type_defs.md#partnerintegrationoutputmessagetypedef).
 
 ### delete_scheduled_action
 
@@ -1047,7 +1060,7 @@ Boto3 documentation:
 [Redshift.Client.delete_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_scheduled_action)
 
 Arguments mapping described in
-[DeleteScheduledActionMessageTypeDef](./type_defs.md#deletescheduledactionmessagetypedef).
+[DeleteScheduledActionMessageRequestTypeDef](./type_defs.md#deletescheduledactionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1064,7 +1077,7 @@ Boto3 documentation:
 [Redshift.Client.delete_snapshot_copy_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_snapshot_copy_grant)
 
 Arguments mapping described in
-[DeleteSnapshotCopyGrantMessageTypeDef](./type_defs.md#deletesnapshotcopygrantmessagetypedef).
+[DeleteSnapshotCopyGrantMessageRequestTypeDef](./type_defs.md#deletesnapshotcopygrantmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1081,7 +1094,7 @@ Boto3 documentation:
 [Redshift.Client.delete_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_snapshot_schedule)
 
 Arguments mapping described in
-[DeleteSnapshotScheduleMessageTypeDef](./type_defs.md#deletesnapshotschedulemessagetypedef).
+[DeleteSnapshotScheduleMessageRequestTypeDef](./type_defs.md#deletesnapshotschedulemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1097,7 +1110,7 @@ Boto3 documentation:
 [Redshift.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_tags)
 
 Arguments mapping described in
-[DeleteTagsMessageTypeDef](./type_defs.md#deletetagsmessagetypedef).
+[DeleteTagsMessageRequestTypeDef](./type_defs.md#deletetagsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1114,7 +1127,7 @@ Boto3 documentation:
 [Redshift.Client.delete_usage_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_usage_limit)
 
 Arguments mapping described in
-[DeleteUsageLimitMessageTypeDef](./type_defs.md#deleteusagelimitmessagetypedef).
+[DeleteUsageLimitMessageRequestTypeDef](./type_defs.md#deleteusagelimitmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1134,14 +1147,14 @@ Boto3 documentation:
 [Redshift.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_account_attributes)
 
 Arguments mapping described in
-[DescribeAccountAttributesMessageTypeDef](./type_defs.md#describeaccountattributesmessagetypedef).
+[DescribeAccountAttributesMessageRequestTypeDef](./type_defs.md#describeaccountattributesmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `AttributeNames`: `List`\[`str`\]
 
 Returns
-[AccountAttributeListResponseTypeDef](./type_defs.md#accountattributelistresponsetypedef).
+[AccountAttributeListTypeDef](./type_defs.md#accountattributelisttypedef).
 
 ### describe_cluster_db_revisions
 
@@ -1154,7 +1167,7 @@ Boto3 documentation:
 [Redshift.Client.describe_cluster_db_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_db_revisions)
 
 Arguments mapping described in
-[DescribeClusterDbRevisionsMessageTypeDef](./type_defs.md#describeclusterdbrevisionsmessagetypedef).
+[DescribeClusterDbRevisionsMessageRequestTypeDef](./type_defs.md#describeclusterdbrevisionsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1163,7 +1176,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ClusterDbRevisionsMessageResponseTypeDef](./type_defs.md#clusterdbrevisionsmessageresponsetypedef).
+[ClusterDbRevisionsMessageTypeDef](./type_defs.md#clusterdbrevisionsmessagetypedef).
 
 ### describe_cluster_parameter_groups
 
@@ -1177,7 +1190,7 @@ Boto3 documentation:
 [Redshift.Client.describe_cluster_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_parameter_groups)
 
 Arguments mapping described in
-[DescribeClusterParameterGroupsMessageTypeDef](./type_defs.md#describeclusterparametergroupsmessagetypedef).
+[DescribeClusterParameterGroupsMessageRequestTypeDef](./type_defs.md#describeclusterparametergroupsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1188,7 +1201,7 @@ Keyword-only arguments:
 - `TagValues`: `List`\[`str`\]
 
 Returns
-[ClusterParameterGroupsMessageResponseTypeDef](./type_defs.md#clusterparametergroupsmessageresponsetypedef).
+[ClusterParameterGroupsMessageTypeDef](./type_defs.md#clusterparametergroupsmessagetypedef).
 
 ### describe_cluster_parameters
 
@@ -1202,7 +1215,7 @@ Boto3 documentation:
 [Redshift.Client.describe_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_parameters)
 
 Arguments mapping described in
-[DescribeClusterParametersMessageTypeDef](./type_defs.md#describeclusterparametersmessagetypedef).
+[DescribeClusterParametersMessageRequestTypeDef](./type_defs.md#describeclusterparametersmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1212,7 +1225,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ClusterParameterGroupDetailsResponseTypeDef](./type_defs.md#clusterparametergroupdetailsresponsetypedef).
+[ClusterParameterGroupDetailsTypeDef](./type_defs.md#clusterparametergroupdetailstypedef).
 
 ### describe_cluster_security_groups
 
@@ -1225,7 +1238,7 @@ Boto3 documentation:
 [Redshift.Client.describe_cluster_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_security_groups)
 
 Arguments mapping described in
-[DescribeClusterSecurityGroupsMessageTypeDef](./type_defs.md#describeclustersecuritygroupsmessagetypedef).
+[DescribeClusterSecurityGroupsMessageRequestTypeDef](./type_defs.md#describeclustersecuritygroupsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1236,7 +1249,7 @@ Keyword-only arguments:
 - `TagValues`: `List`\[`str`\]
 
 Returns
-[ClusterSecurityGroupMessageResponseTypeDef](./type_defs.md#clustersecuritygroupmessageresponsetypedef).
+[ClusterSecurityGroupMessageTypeDef](./type_defs.md#clustersecuritygroupmessagetypedef).
 
 ### describe_cluster_snapshots
 
@@ -1250,7 +1263,7 @@ Boto3 documentation:
 [Redshift.Client.describe_cluster_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_snapshots)
 
 Arguments mapping described in
-[DescribeClusterSnapshotsMessageTypeDef](./type_defs.md#describeclustersnapshotsmessagetypedef).
+[DescribeClusterSnapshotsMessageRequestTypeDef](./type_defs.md#describeclustersnapshotsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1268,8 +1281,7 @@ Keyword-only arguments:
 - `SortingEntities`:
   `List`\[[SnapshotSortingEntityTypeDef](./type_defs.md#snapshotsortingentitytypedef)\]
 
-Returns
-[SnapshotMessageResponseTypeDef](./type_defs.md#snapshotmessageresponsetypedef).
+Returns [SnapshotMessageTypeDef](./type_defs.md#snapshotmessagetypedef).
 
 ### describe_cluster_subnet_groups
 
@@ -1283,7 +1295,7 @@ Boto3 documentation:
 [Redshift.Client.describe_cluster_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_subnet_groups)
 
 Arguments mapping described in
-[DescribeClusterSubnetGroupsMessageTypeDef](./type_defs.md#describeclustersubnetgroupsmessagetypedef).
+[DescribeClusterSubnetGroupsMessageRequestTypeDef](./type_defs.md#describeclustersubnetgroupsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1294,7 +1306,7 @@ Keyword-only arguments:
 - `TagValues`: `List`\[`str`\]
 
 Returns
-[ClusterSubnetGroupMessageResponseTypeDef](./type_defs.md#clustersubnetgroupmessageresponsetypedef).
+[ClusterSubnetGroupMessageTypeDef](./type_defs.md#clustersubnetgroupmessagetypedef).
 
 ### describe_cluster_tracks
 
@@ -1306,7 +1318,7 @@ Boto3 documentation:
 [Redshift.Client.describe_cluster_tracks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_tracks)
 
 Arguments mapping described in
-[DescribeClusterTracksMessageTypeDef](./type_defs.md#describeclustertracksmessagetypedef).
+[DescribeClusterTracksMessageRequestTypeDef](./type_defs.md#describeclustertracksmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1314,8 +1326,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-Returns
-[TrackListMessageResponseTypeDef](./type_defs.md#tracklistmessageresponsetypedef).
+Returns [TrackListMessageTypeDef](./type_defs.md#tracklistmessagetypedef).
 
 ### describe_cluster_versions
 
@@ -1328,7 +1339,7 @@ Boto3 documentation:
 [Redshift.Client.describe_cluster_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_versions)
 
 Arguments mapping described in
-[DescribeClusterVersionsMessageTypeDef](./type_defs.md#describeclusterversionsmessagetypedef).
+[DescribeClusterVersionsMessageRequestTypeDef](./type_defs.md#describeclusterversionsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1338,7 +1349,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ClusterVersionsMessageResponseTypeDef](./type_defs.md#clusterversionsmessageresponsetypedef).
+[ClusterVersionsMessageTypeDef](./type_defs.md#clusterversionsmessagetypedef).
 
 ### describe_clusters
 
@@ -1352,7 +1363,7 @@ Boto3 documentation:
 [Redshift.Client.describe_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_clusters)
 
 Arguments mapping described in
-[DescribeClustersMessageTypeDef](./type_defs.md#describeclustersmessagetypedef).
+[DescribeClustersMessageRequestTypeDef](./type_defs.md#describeclustersmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1362,8 +1373,7 @@ Keyword-only arguments:
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 
-Returns
-[ClustersMessageResponseTypeDef](./type_defs.md#clustersmessageresponsetypedef).
+Returns [ClustersMessageTypeDef](./type_defs.md#clustersmessagetypedef).
 
 ### describe_default_cluster_parameters
 
@@ -1376,7 +1386,7 @@ Boto3 documentation:
 [Redshift.Client.describe_default_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_default_cluster_parameters)
 
 Arguments mapping described in
-[DescribeDefaultClusterParametersMessageTypeDef](./type_defs.md#describedefaultclusterparametersmessagetypedef).
+[DescribeDefaultClusterParametersMessageRequestTypeDef](./type_defs.md#describedefaultclusterparametersmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1385,7 +1395,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeDefaultClusterParametersResultResponseTypeDef](./type_defs.md#describedefaultclusterparametersresultresponsetypedef).
+[DescribeDefaultClusterParametersResultTypeDef](./type_defs.md#describedefaultclusterparametersresulttypedef).
 
 ### describe_endpoint_access
 
@@ -1398,7 +1408,7 @@ Boto3 documentation:
 [Redshift.Client.describe_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_endpoint_access)
 
 Arguments mapping described in
-[DescribeEndpointAccessMessageTypeDef](./type_defs.md#describeendpointaccessmessagetypedef).
+[DescribeEndpointAccessMessageRequestTypeDef](./type_defs.md#describeendpointaccessmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1409,8 +1419,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-Returns
-[EndpointAccessListResponseTypeDef](./type_defs.md#endpointaccesslistresponsetypedef).
+Returns [EndpointAccessListTypeDef](./type_defs.md#endpointaccesslisttypedef).
 
 ### describe_endpoint_authorization
 
@@ -1423,7 +1432,7 @@ Boto3 documentation:
 [Redshift.Client.describe_endpoint_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_endpoint_authorization)
 
 Arguments mapping described in
-[DescribeEndpointAuthorizationMessageTypeDef](./type_defs.md#describeendpointauthorizationmessagetypedef).
+[DescribeEndpointAuthorizationMessageRequestTypeDef](./type_defs.md#describeendpointauthorizationmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1434,7 +1443,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[EndpointAuthorizationListResponseTypeDef](./type_defs.md#endpointauthorizationlistresponsetypedef).
+[EndpointAuthorizationListTypeDef](./type_defs.md#endpointauthorizationlisttypedef).
 
 ### describe_event_categories
 
@@ -1448,14 +1457,14 @@ Boto3 documentation:
 [Redshift.Client.describe_event_categories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_event_categories)
 
 Arguments mapping described in
-[DescribeEventCategoriesMessageTypeDef](./type_defs.md#describeeventcategoriesmessagetypedef).
+[DescribeEventCategoriesMessageRequestTypeDef](./type_defs.md#describeeventcategoriesmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `SourceType`: `str`
 
 Returns
-[EventCategoriesMessageResponseTypeDef](./type_defs.md#eventcategoriesmessageresponsetypedef).
+[EventCategoriesMessageTypeDef](./type_defs.md#eventcategoriesmessagetypedef).
 
 ### describe_event_subscriptions
 
@@ -1469,7 +1478,7 @@ Boto3 documentation:
 [Redshift.Client.describe_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_event_subscriptions)
 
 Arguments mapping described in
-[DescribeEventSubscriptionsMessageTypeDef](./type_defs.md#describeeventsubscriptionsmessagetypedef).
+[DescribeEventSubscriptionsMessageRequestTypeDef](./type_defs.md#describeeventsubscriptionsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1480,7 +1489,7 @@ Keyword-only arguments:
 - `TagValues`: `List`\[`str`\]
 
 Returns
-[EventSubscriptionsMessageResponseTypeDef](./type_defs.md#eventsubscriptionsmessageresponsetypedef).
+[EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef).
 
 ### describe_events
 
@@ -1493,7 +1502,7 @@ Boto3 documentation:
 [Redshift.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_events)
 
 Arguments mapping described in
-[DescribeEventsMessageTypeDef](./type_defs.md#describeeventsmessagetypedef).
+[DescribeEventsMessageRequestTypeDef](./type_defs.md#describeeventsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1505,8 +1514,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-Returns
-[EventsMessageResponseTypeDef](./type_defs.md#eventsmessageresponsetypedef).
+Returns [EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef).
 
 ### describe_hsm_client_certificates
 
@@ -1519,7 +1527,7 @@ Boto3 documentation:
 [Redshift.Client.describe_hsm_client_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_hsm_client_certificates)
 
 Arguments mapping described in
-[DescribeHsmClientCertificatesMessageTypeDef](./type_defs.md#describehsmclientcertificatesmessagetypedef).
+[DescribeHsmClientCertificatesMessageRequestTypeDef](./type_defs.md#describehsmclientcertificatesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1530,7 +1538,7 @@ Keyword-only arguments:
 - `TagValues`: `List`\[`str`\]
 
 Returns
-[HsmClientCertificateMessageResponseTypeDef](./type_defs.md#hsmclientcertificatemessageresponsetypedef).
+[HsmClientCertificateMessageTypeDef](./type_defs.md#hsmclientcertificatemessagetypedef).
 
 ### describe_hsm_configurations
 
@@ -1543,7 +1551,7 @@ Boto3 documentation:
 [Redshift.Client.describe_hsm_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_hsm_configurations)
 
 Arguments mapping described in
-[DescribeHsmConfigurationsMessageTypeDef](./type_defs.md#describehsmconfigurationsmessagetypedef).
+[DescribeHsmConfigurationsMessageRequestTypeDef](./type_defs.md#describehsmconfigurationsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1554,7 +1562,7 @@ Keyword-only arguments:
 - `TagValues`: `List`\[`str`\]
 
 Returns
-[HsmConfigurationMessageResponseTypeDef](./type_defs.md#hsmconfigurationmessageresponsetypedef).
+[HsmConfigurationMessageTypeDef](./type_defs.md#hsmconfigurationmessagetypedef).
 
 ### describe_logging_status
 
@@ -1567,14 +1575,13 @@ Boto3 documentation:
 [Redshift.Client.describe_logging_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_logging_status)
 
 Arguments mapping described in
-[DescribeLoggingStatusMessageTypeDef](./type_defs.md#describeloggingstatusmessagetypedef).
+[DescribeLoggingStatusMessageRequestTypeDef](./type_defs.md#describeloggingstatusmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 
-Returns
-[LoggingStatusResponseTypeDef](./type_defs.md#loggingstatusresponsetypedef).
+Returns [LoggingStatusTypeDef](./type_defs.md#loggingstatustypedef).
 
 ### describe_node_configuration_options
 
@@ -1588,7 +1595,7 @@ Boto3 documentation:
 [Redshift.Client.describe_node_configuration_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_node_configuration_options)
 
 Arguments mapping described in
-[DescribeNodeConfigurationOptionsMessageTypeDef](./type_defs.md#describenodeconfigurationoptionsmessagetypedef).
+[DescribeNodeConfigurationOptionsMessageRequestTypeDef](./type_defs.md#describenodeconfigurationoptionsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1602,7 +1609,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 
 Returns
-[NodeConfigurationOptionsMessageResponseTypeDef](./type_defs.md#nodeconfigurationoptionsmessageresponsetypedef).
+[NodeConfigurationOptionsMessageTypeDef](./type_defs.md#nodeconfigurationoptionsmessagetypedef).
 
 ### describe_orderable_cluster_options
 
@@ -1615,7 +1622,7 @@ Boto3 documentation:
 [Redshift.Client.describe_orderable_cluster_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_orderable_cluster_options)
 
 Arguments mapping described in
-[DescribeOrderableClusterOptionsMessageTypeDef](./type_defs.md#describeorderableclusteroptionsmessagetypedef).
+[DescribeOrderableClusterOptionsMessageRequestTypeDef](./type_defs.md#describeorderableclusteroptionsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1625,7 +1632,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[OrderableClusterOptionsMessageResponseTypeDef](./type_defs.md#orderableclusteroptionsmessageresponsetypedef).
+[OrderableClusterOptionsMessageTypeDef](./type_defs.md#orderableclusteroptionsmessagetypedef).
 
 ### describe_partners
 
@@ -1637,7 +1644,7 @@ Boto3 documentation:
 [Redshift.Client.describe_partners](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_partners)
 
 Arguments mapping described in
-[DescribePartnersInputMessageTypeDef](./type_defs.md#describepartnersinputmessagetypedef).
+[DescribePartnersInputMessageRequestTypeDef](./type_defs.md#describepartnersinputmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1647,7 +1654,7 @@ Keyword-only arguments:
 - `PartnerName`: `str`
 
 Returns
-[DescribePartnersOutputMessageResponseTypeDef](./type_defs.md#describepartnersoutputmessageresponsetypedef).
+[DescribePartnersOutputMessageTypeDef](./type_defs.md#describepartnersoutputmessagetypedef).
 
 ### describe_reserved_node_offerings
 
@@ -1662,7 +1669,7 @@ Boto3 documentation:
 [Redshift.Client.describe_reserved_node_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_reserved_node_offerings)
 
 Arguments mapping described in
-[DescribeReservedNodeOfferingsMessageTypeDef](./type_defs.md#describereservednodeofferingsmessagetypedef).
+[DescribeReservedNodeOfferingsMessageRequestTypeDef](./type_defs.md#describereservednodeofferingsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1671,7 +1678,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ReservedNodeOfferingsMessageResponseTypeDef](./type_defs.md#reservednodeofferingsmessageresponsetypedef).
+[ReservedNodeOfferingsMessageTypeDef](./type_defs.md#reservednodeofferingsmessagetypedef).
 
 ### describe_reserved_nodes
 
@@ -1683,7 +1690,7 @@ Boto3 documentation:
 [Redshift.Client.describe_reserved_nodes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_reserved_nodes)
 
 Arguments mapping described in
-[DescribeReservedNodesMessageTypeDef](./type_defs.md#describereservednodesmessagetypedef).
+[DescribeReservedNodesMessageRequestTypeDef](./type_defs.md#describereservednodesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1692,7 +1699,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ReservedNodesMessageResponseTypeDef](./type_defs.md#reservednodesmessageresponsetypedef).
+[ReservedNodesMessageTypeDef](./type_defs.md#reservednodesmessagetypedef).
 
 ### describe_resize
 
@@ -1704,14 +1711,14 @@ Boto3 documentation:
 [Redshift.Client.describe_resize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_resize)
 
 Arguments mapping described in
-[DescribeResizeMessageTypeDef](./type_defs.md#describeresizemessagetypedef).
+[DescribeResizeMessageRequestTypeDef](./type_defs.md#describeresizemessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 
 Returns
-[ResizeProgressMessageResponseTypeDef](./type_defs.md#resizeprogressmessageresponsetypedef).
+[ResizeProgressMessageTypeDef](./type_defs.md#resizeprogressmessagetypedef).
 
 ### describe_scheduled_actions
 
@@ -1724,7 +1731,7 @@ Boto3 documentation:
 [Redshift.Client.describe_scheduled_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_scheduled_actions)
 
 Arguments mapping described in
-[DescribeScheduledActionsMessageTypeDef](./type_defs.md#describescheduledactionsmessagetypedef).
+[DescribeScheduledActionsMessageRequestTypeDef](./type_defs.md#describescheduledactionsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1740,7 +1747,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 
 Returns
-[ScheduledActionsMessageResponseTypeDef](./type_defs.md#scheduledactionsmessageresponsetypedef).
+[ScheduledActionsMessageTypeDef](./type_defs.md#scheduledactionsmessagetypedef).
 
 ### describe_snapshot_copy_grants
 
@@ -1754,7 +1761,7 @@ Boto3 documentation:
 [Redshift.Client.describe_snapshot_copy_grants](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_snapshot_copy_grants)
 
 Arguments mapping described in
-[DescribeSnapshotCopyGrantsMessageTypeDef](./type_defs.md#describesnapshotcopygrantsmessagetypedef).
+[DescribeSnapshotCopyGrantsMessageRequestTypeDef](./type_defs.md#describesnapshotcopygrantsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1765,7 +1772,7 @@ Keyword-only arguments:
 - `TagValues`: `List`\[`str`\]
 
 Returns
-[SnapshotCopyGrantMessageResponseTypeDef](./type_defs.md#snapshotcopygrantmessageresponsetypedef).
+[SnapshotCopyGrantMessageTypeDef](./type_defs.md#snapshotcopygrantmessagetypedef).
 
 ### describe_snapshot_schedules
 
@@ -1778,7 +1785,7 @@ Boto3 documentation:
 [Redshift.Client.describe_snapshot_schedules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_snapshot_schedules)
 
 Arguments mapping described in
-[DescribeSnapshotSchedulesMessageTypeDef](./type_defs.md#describesnapshotschedulesmessagetypedef).
+[DescribeSnapshotSchedulesMessageRequestTypeDef](./type_defs.md#describesnapshotschedulesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1790,7 +1797,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 
 Returns
-[DescribeSnapshotSchedulesOutputMessageResponseTypeDef](./type_defs.md#describesnapshotschedulesoutputmessageresponsetypedef).
+[DescribeSnapshotSchedulesOutputMessageTypeDef](./type_defs.md#describesnapshotschedulesoutputmessagetypedef).
 
 ### describe_storage
 
@@ -1802,7 +1809,7 @@ Boto3 documentation:
 [Redshift.Client.describe_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_storage)
 
 Returns
-[CustomerStorageMessageResponseTypeDef](./type_defs.md#customerstoragemessageresponsetypedef).
+[CustomerStorageMessageTypeDef](./type_defs.md#customerstoragemessagetypedef).
 
 ### describe_table_restore_status
 
@@ -1816,7 +1823,7 @@ Boto3 documentation:
 [Redshift.Client.describe_table_restore_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_table_restore_status)
 
 Arguments mapping described in
-[DescribeTableRestoreStatusMessageTypeDef](./type_defs.md#describetablerestorestatusmessagetypedef).
+[DescribeTableRestoreStatusMessageRequestTypeDef](./type_defs.md#describetablerestorestatusmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1826,7 +1833,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[TableRestoreStatusMessageResponseTypeDef](./type_defs.md#tablerestorestatusmessageresponsetypedef).
+[TableRestoreStatusMessageTypeDef](./type_defs.md#tablerestorestatusmessagetypedef).
 
 ### describe_tags
 
@@ -1838,7 +1845,7 @@ Boto3 documentation:
 [Redshift.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_tags)
 
 Arguments mapping described in
-[DescribeTagsMessageTypeDef](./type_defs.md#describetagsmessagetypedef).
+[DescribeTagsMessageRequestTypeDef](./type_defs.md#describetagsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1850,7 +1857,7 @@ Keyword-only arguments:
 - `TagValues`: `List`\[`str`\]
 
 Returns
-[TaggedResourceListMessageResponseTypeDef](./type_defs.md#taggedresourcelistmessageresponsetypedef).
+[TaggedResourceListMessageTypeDef](./type_defs.md#taggedresourcelistmessagetypedef).
 
 ### describe_usage_limits
 
@@ -1862,7 +1869,7 @@ Boto3 documentation:
 [Redshift.Client.describe_usage_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_usage_limits)
 
 Arguments mapping described in
-[DescribeUsageLimitsMessageTypeDef](./type_defs.md#describeusagelimitsmessagetypedef).
+[DescribeUsageLimitsMessageRequestTypeDef](./type_defs.md#describeusagelimitsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1875,8 +1882,7 @@ Keyword-only arguments:
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 
-Returns
-[UsageLimitListResponseTypeDef](./type_defs.md#usagelimitlistresponsetypedef).
+Returns [UsageLimitListTypeDef](./type_defs.md#usagelimitlisttypedef).
 
 ### disable_logging
 
@@ -1889,14 +1895,13 @@ Boto3 documentation:
 [Redshift.Client.disable_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.disable_logging)
 
 Arguments mapping described in
-[DisableLoggingMessageTypeDef](./type_defs.md#disableloggingmessagetypedef).
+[DisableLoggingMessageRequestTypeDef](./type_defs.md#disableloggingmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 
-Returns
-[LoggingStatusResponseTypeDef](./type_defs.md#loggingstatusresponsetypedef).
+Returns [LoggingStatusTypeDef](./type_defs.md#loggingstatustypedef).
 
 ### disable_snapshot_copy
 
@@ -1909,14 +1914,14 @@ Boto3 documentation:
 [Redshift.Client.disable_snapshot_copy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.disable_snapshot_copy)
 
 Arguments mapping described in
-[DisableSnapshotCopyMessageTypeDef](./type_defs.md#disablesnapshotcopymessagetypedef).
+[DisableSnapshotCopyMessageRequestTypeDef](./type_defs.md#disablesnapshotcopymessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 
 Returns
-[DisableSnapshotCopyResultResponseTypeDef](./type_defs.md#disablesnapshotcopyresultresponsetypedef).
+[DisableSnapshotCopyResultTypeDef](./type_defs.md#disablesnapshotcopyresulttypedef).
 
 ### enable_logging
 
@@ -1929,7 +1934,7 @@ Boto3 documentation:
 [Redshift.Client.enable_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.enable_logging)
 
 Arguments mapping described in
-[EnableLoggingMessageTypeDef](./type_defs.md#enableloggingmessagetypedef).
+[EnableLoggingMessageRequestTypeDef](./type_defs.md#enableloggingmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1937,8 +1942,7 @@ Keyword-only arguments:
 - `BucketName`: `str` *(required)*
 - `S3KeyPrefix`: `str`
 
-Returns
-[LoggingStatusResponseTypeDef](./type_defs.md#loggingstatusresponsetypedef).
+Returns [LoggingStatusTypeDef](./type_defs.md#loggingstatustypedef).
 
 ### enable_snapshot_copy
 
@@ -1951,7 +1955,7 @@ Boto3 documentation:
 [Redshift.Client.enable_snapshot_copy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.enable_snapshot_copy)
 
 Arguments mapping described in
-[EnableSnapshotCopyMessageTypeDef](./type_defs.md#enablesnapshotcopymessagetypedef).
+[EnableSnapshotCopyMessageRequestTypeDef](./type_defs.md#enablesnapshotcopymessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1962,7 +1966,7 @@ Keyword-only arguments:
 - `ManualSnapshotRetentionPeriod`: `int`
 
 Returns
-[EnableSnapshotCopyResultResponseTypeDef](./type_defs.md#enablesnapshotcopyresultresponsetypedef).
+[EnableSnapshotCopyResultTypeDef](./type_defs.md#enablesnapshotcopyresulttypedef).
 
 ### generate_presigned_url
 
@@ -1993,7 +1997,7 @@ Boto3 documentation:
 [Redshift.Client.get_cluster_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.get_cluster_credentials)
 
 Arguments mapping described in
-[GetClusterCredentialsMessageTypeDef](./type_defs.md#getclustercredentialsmessagetypedef).
+[GetClusterCredentialsMessageRequestTypeDef](./type_defs.md#getclustercredentialsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2004,8 +2008,7 @@ Keyword-only arguments:
 - `AutoCreate`: `bool`
 - `DbGroups`: `List`\[`str`\]
 
-Returns
-[ClusterCredentialsResponseTypeDef](./type_defs.md#clustercredentialsresponsetypedef).
+Returns [ClusterCredentialsTypeDef](./type_defs.md#clustercredentialstypedef).
 
 ### get_reserved_node_exchange_offerings
 
@@ -2019,7 +2022,7 @@ Boto3 documentation:
 [Redshift.Client.get_reserved_node_exchange_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.get_reserved_node_exchange_offerings)
 
 Arguments mapping described in
-[GetReservedNodeExchangeOfferingsInputMessageTypeDef](./type_defs.md#getreservednodeexchangeofferingsinputmessagetypedef).
+[GetReservedNodeExchangeOfferingsInputMessageRequestTypeDef](./type_defs.md#getreservednodeexchangeofferingsinputmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2028,7 +2031,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[GetReservedNodeExchangeOfferingsOutputMessageResponseTypeDef](./type_defs.md#getreservednodeexchangeofferingsoutputmessageresponsetypedef).
+[GetReservedNodeExchangeOfferingsOutputMessageTypeDef](./type_defs.md#getreservednodeexchangeofferingsoutputmessagetypedef).
 
 ### modify_aqua_configuration
 
@@ -2041,7 +2044,7 @@ Boto3 documentation:
 [Redshift.Client.modify_aqua_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_aqua_configuration)
 
 Arguments mapping described in
-[ModifyAquaInputMessageTypeDef](./type_defs.md#modifyaquainputmessagetypedef).
+[ModifyAquaInputMessageRequestTypeDef](./type_defs.md#modifyaquainputmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2050,7 +2053,7 @@ Keyword-only arguments:
   [AquaConfigurationStatusType](./literals.md#aquaconfigurationstatustype)
 
 Returns
-[ModifyAquaOutputMessageResponseTypeDef](./type_defs.md#modifyaquaoutputmessageresponsetypedef).
+[ModifyAquaOutputMessageTypeDef](./type_defs.md#modifyaquaoutputmessagetypedef).
 
 ### modify_cluster
 
@@ -2062,7 +2065,7 @@ Boto3 documentation:
 [Redshift.Client.modify_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster)
 
 Arguments mapping described in
-[ModifyClusterMessageTypeDef](./type_defs.md#modifyclustermessagetypedef).
+[ModifyClusterMessageRequestTypeDef](./type_defs.md#modifyclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2093,7 +2096,7 @@ Keyword-only arguments:
 - `Port`: `int`
 
 Returns
-[ModifyClusterResultResponseTypeDef](./type_defs.md#modifyclusterresultresponsetypedef).
+[ModifyClusterResultTypeDef](./type_defs.md#modifyclusterresulttypedef).
 
 ### modify_cluster_db_revision
 
@@ -2106,7 +2109,7 @@ Boto3 documentation:
 [Redshift.Client.modify_cluster_db_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_db_revision)
 
 Arguments mapping described in
-[ModifyClusterDbRevisionMessageTypeDef](./type_defs.md#modifyclusterdbrevisionmessagetypedef).
+[ModifyClusterDbRevisionMessageRequestTypeDef](./type_defs.md#modifyclusterdbrevisionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2114,7 +2117,7 @@ Keyword-only arguments:
 - `RevisionTarget`: `str` *(required)*
 
 Returns
-[ModifyClusterDbRevisionResultResponseTypeDef](./type_defs.md#modifyclusterdbrevisionresultresponsetypedef).
+[ModifyClusterDbRevisionResultTypeDef](./type_defs.md#modifyclusterdbrevisionresulttypedef).
 
 ### modify_cluster_iam_roles
 
@@ -2128,7 +2131,7 @@ Boto3 documentation:
 [Redshift.Client.modify_cluster_iam_roles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_iam_roles)
 
 Arguments mapping described in
-[ModifyClusterIamRolesMessageTypeDef](./type_defs.md#modifyclusteriamrolesmessagetypedef).
+[ModifyClusterIamRolesMessageRequestTypeDef](./type_defs.md#modifyclusteriamrolesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2137,7 +2140,7 @@ Keyword-only arguments:
 - `RemoveIamRoles`: `List`\[`str`\]
 
 Returns
-[ModifyClusterIamRolesResultResponseTypeDef](./type_defs.md#modifyclusteriamrolesresultresponsetypedef).
+[ModifyClusterIamRolesResultTypeDef](./type_defs.md#modifyclusteriamrolesresulttypedef).
 
 ### modify_cluster_maintenance
 
@@ -2150,7 +2153,7 @@ Boto3 documentation:
 [Redshift.Client.modify_cluster_maintenance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_maintenance)
 
 Arguments mapping described in
-[ModifyClusterMaintenanceMessageTypeDef](./type_defs.md#modifyclustermaintenancemessagetypedef).
+[ModifyClusterMaintenanceMessageRequestTypeDef](./type_defs.md#modifyclustermaintenancemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2162,7 +2165,7 @@ Keyword-only arguments:
 - `DeferMaintenanceDuration`: `int`
 
 Returns
-[ModifyClusterMaintenanceResultResponseTypeDef](./type_defs.md#modifyclustermaintenanceresultresponsetypedef).
+[ModifyClusterMaintenanceResultTypeDef](./type_defs.md#modifyclustermaintenanceresulttypedef).
 
 ### modify_cluster_parameter_group
 
@@ -2175,7 +2178,7 @@ Boto3 documentation:
 [Redshift.Client.modify_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_parameter_group)
 
 Arguments mapping described in
-[ModifyClusterParameterGroupMessageTypeDef](./type_defs.md#modifyclusterparametergroupmessagetypedef).
+[ModifyClusterParameterGroupMessageRequestTypeDef](./type_defs.md#modifyclusterparametergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2184,7 +2187,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[ClusterParameterGroupNameMessageResponseTypeDef](./type_defs.md#clusterparametergroupnamemessageresponsetypedef).
+[ClusterParameterGroupNameMessageTypeDef](./type_defs.md#clusterparametergroupnamemessagetypedef).
 
 ### modify_cluster_snapshot
 
@@ -2196,7 +2199,7 @@ Boto3 documentation:
 [Redshift.Client.modify_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_snapshot)
 
 Arguments mapping described in
-[ModifyClusterSnapshotMessageTypeDef](./type_defs.md#modifyclustersnapshotmessagetypedef).
+[ModifyClusterSnapshotMessageRequestTypeDef](./type_defs.md#modifyclustersnapshotmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2205,7 +2208,7 @@ Keyword-only arguments:
 - `Force`: `bool`
 
 Returns
-[ModifyClusterSnapshotResultResponseTypeDef](./type_defs.md#modifyclustersnapshotresultresponsetypedef).
+[ModifyClusterSnapshotResultTypeDef](./type_defs.md#modifyclustersnapshotresulttypedef).
 
 ### modify_cluster_snapshot_schedule
 
@@ -2218,7 +2221,7 @@ Boto3 documentation:
 [Redshift.Client.modify_cluster_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_snapshot_schedule)
 
 Arguments mapping described in
-[ModifyClusterSnapshotScheduleMessageTypeDef](./type_defs.md#modifyclustersnapshotschedulemessagetypedef).
+[ModifyClusterSnapshotScheduleMessageRequestTypeDef](./type_defs.md#modifyclustersnapshotschedulemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2237,7 +2240,7 @@ Boto3 documentation:
 [Redshift.Client.modify_cluster_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_subnet_group)
 
 Arguments mapping described in
-[ModifyClusterSubnetGroupMessageTypeDef](./type_defs.md#modifyclustersubnetgroupmessagetypedef).
+[ModifyClusterSubnetGroupMessageRequestTypeDef](./type_defs.md#modifyclustersubnetgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2246,7 +2249,7 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[ModifyClusterSubnetGroupResultResponseTypeDef](./type_defs.md#modifyclustersubnetgroupresultresponsetypedef).
+[ModifyClusterSubnetGroupResultTypeDef](./type_defs.md#modifyclustersubnetgroupresulttypedef).
 
 ### modify_endpoint_access
 
@@ -2258,7 +2261,7 @@ Boto3 documentation:
 [Redshift.Client.modify_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_endpoint_access)
 
 Arguments mapping described in
-[ModifyEndpointAccessMessageTypeDef](./type_defs.md#modifyendpointaccessmessagetypedef).
+[ModifyEndpointAccessMessageRequestTypeDef](./type_defs.md#modifyendpointaccessmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2266,7 +2269,7 @@ Keyword-only arguments:
 - `VpcSecurityGroupIds`: `List`\[`str`\]
 
 Returns
-[EndpointAccessResponseTypeDef](./type_defs.md#endpointaccessresponsetypedef).
+[EndpointAccessResponseMetadataTypeDef](./type_defs.md#endpointaccessresponsemetadatatypedef).
 
 ### modify_event_subscription
 
@@ -2279,7 +2282,7 @@ Boto3 documentation:
 [Redshift.Client.modify_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_event_subscription)
 
 Arguments mapping described in
-[ModifyEventSubscriptionMessageTypeDef](./type_defs.md#modifyeventsubscriptionmessagetypedef).
+[ModifyEventSubscriptionMessageRequestTypeDef](./type_defs.md#modifyeventsubscriptionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2292,7 +2295,7 @@ Keyword-only arguments:
 - `Enabled`: `bool`
 
 Returns
-[ModifyEventSubscriptionResultResponseTypeDef](./type_defs.md#modifyeventsubscriptionresultresponsetypedef).
+[ModifyEventSubscriptionResultTypeDef](./type_defs.md#modifyeventsubscriptionresulttypedef).
 
 ### modify_scheduled_action
 
@@ -2304,7 +2307,7 @@ Boto3 documentation:
 [Redshift.Client.modify_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_scheduled_action)
 
 Arguments mapping described in
-[ModifyScheduledActionMessageTypeDef](./type_defs.md#modifyscheduledactionmessagetypedef).
+[ModifyScheduledActionMessageRequestTypeDef](./type_defs.md#modifyscheduledactionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2319,7 +2322,7 @@ Keyword-only arguments:
 - `Enable`: `bool`
 
 Returns
-[ScheduledActionResponseTypeDef](./type_defs.md#scheduledactionresponsetypedef).
+[ScheduledActionResponseMetadataTypeDef](./type_defs.md#scheduledactionresponsemetadatatypedef).
 
 ### modify_snapshot_copy_retention_period
 
@@ -2333,7 +2336,7 @@ Boto3 documentation:
 [Redshift.Client.modify_snapshot_copy_retention_period](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_snapshot_copy_retention_period)
 
 Arguments mapping described in
-[ModifySnapshotCopyRetentionPeriodMessageTypeDef](./type_defs.md#modifysnapshotcopyretentionperiodmessagetypedef).
+[ModifySnapshotCopyRetentionPeriodMessageRequestTypeDef](./type_defs.md#modifysnapshotcopyretentionperiodmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2342,7 +2345,7 @@ Keyword-only arguments:
 - `Manual`: `bool`
 
 Returns
-[ModifySnapshotCopyRetentionPeriodResultResponseTypeDef](./type_defs.md#modifysnapshotcopyretentionperiodresultresponsetypedef).
+[ModifySnapshotCopyRetentionPeriodResultTypeDef](./type_defs.md#modifysnapshotcopyretentionperiodresulttypedef).
 
 ### modify_snapshot_schedule
 
@@ -2355,7 +2358,7 @@ Boto3 documentation:
 [Redshift.Client.modify_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_snapshot_schedule)
 
 Arguments mapping described in
-[ModifySnapshotScheduleMessageTypeDef](./type_defs.md#modifysnapshotschedulemessagetypedef).
+[ModifySnapshotScheduleMessageRequestTypeDef](./type_defs.md#modifysnapshotschedulemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2363,7 +2366,7 @@ Keyword-only arguments:
 - `ScheduleDefinitions`: `List`\[`str`\] *(required)*
 
 Returns
-[SnapshotScheduleResponseTypeDef](./type_defs.md#snapshotscheduleresponsetypedef).
+[SnapshotScheduleResponseMetadataTypeDef](./type_defs.md#snapshotscheduleresponsemetadatatypedef).
 
 ### modify_usage_limit
 
@@ -2375,7 +2378,7 @@ Boto3 documentation:
 [Redshift.Client.modify_usage_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_usage_limit)
 
 Arguments mapping described in
-[ModifyUsageLimitMessageTypeDef](./type_defs.md#modifyusagelimitmessagetypedef).
+[ModifyUsageLimitMessageRequestTypeDef](./type_defs.md#modifyusagelimitmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2384,7 +2387,8 @@ Keyword-only arguments:
 - `BreachAction`:
   [UsageLimitBreachActionType](./literals.md#usagelimitbreachactiontype)
 
-Returns [UsageLimitResponseTypeDef](./type_defs.md#usagelimitresponsetypedef).
+Returns
+[UsageLimitResponseMetadataTypeDef](./type_defs.md#usagelimitresponsemetadatatypedef).
 
 ### pause_cluster
 
@@ -2396,14 +2400,13 @@ Boto3 documentation:
 [Redshift.Client.pause_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.pause_cluster)
 
 Arguments mapping described in
-[PauseClusterMessageTypeDef](./type_defs.md#pauseclustermessagetypedef).
+[PauseClusterMessageRequestTypeDef](./type_defs.md#pauseclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 
-Returns
-[PauseClusterResultResponseTypeDef](./type_defs.md#pauseclusterresultresponsetypedef).
+Returns [PauseClusterResultTypeDef](./type_defs.md#pauseclusterresulttypedef).
 
 ### purchase_reserved_node_offering
 
@@ -2416,7 +2419,7 @@ Boto3 documentation:
 [Redshift.Client.purchase_reserved_node_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.purchase_reserved_node_offering)
 
 Arguments mapping described in
-[PurchaseReservedNodeOfferingMessageTypeDef](./type_defs.md#purchasereservednodeofferingmessagetypedef).
+[PurchaseReservedNodeOfferingMessageRequestTypeDef](./type_defs.md#purchasereservednodeofferingmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2424,7 +2427,7 @@ Keyword-only arguments:
 - `NodeCount`: `int`
 
 Returns
-[PurchaseReservedNodeOfferingResultResponseTypeDef](./type_defs.md#purchasereservednodeofferingresultresponsetypedef).
+[PurchaseReservedNodeOfferingResultTypeDef](./type_defs.md#purchasereservednodeofferingresulttypedef).
 
 ### reboot_cluster
 
@@ -2436,14 +2439,14 @@ Boto3 documentation:
 [Redshift.Client.reboot_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.reboot_cluster)
 
 Arguments mapping described in
-[RebootClusterMessageTypeDef](./type_defs.md#rebootclustermessagetypedef).
+[RebootClusterMessageRequestTypeDef](./type_defs.md#rebootclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 
 Returns
-[RebootClusterResultResponseTypeDef](./type_defs.md#rebootclusterresultresponsetypedef).
+[RebootClusterResultTypeDef](./type_defs.md#rebootclusterresulttypedef).
 
 ### reset_cluster_parameter_group
 
@@ -2457,7 +2460,7 @@ Boto3 documentation:
 [Redshift.Client.reset_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.reset_cluster_parameter_group)
 
 Arguments mapping described in
-[ResetClusterParameterGroupMessageTypeDef](./type_defs.md#resetclusterparametergroupmessagetypedef).
+[ResetClusterParameterGroupMessageRequestTypeDef](./type_defs.md#resetclusterparametergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2466,7 +2469,7 @@ Keyword-only arguments:
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 Returns
-[ClusterParameterGroupNameMessageResponseTypeDef](./type_defs.md#clusterparametergroupnamemessageresponsetypedef).
+[ClusterParameterGroupNameMessageTypeDef](./type_defs.md#clusterparametergroupnamemessagetypedef).
 
 ### resize_cluster
 
@@ -2478,7 +2481,7 @@ Boto3 documentation:
 [Redshift.Client.resize_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.resize_cluster)
 
 Arguments mapping described in
-[ResizeClusterMessageTypeDef](./type_defs.md#resizeclustermessagetypedef).
+[ResizeClusterMessageRequestTypeDef](./type_defs.md#resizeclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2489,7 +2492,7 @@ Keyword-only arguments:
 - `Classic`: `bool`
 
 Returns
-[ResizeClusterResultResponseTypeDef](./type_defs.md#resizeclusterresultresponsetypedef).
+[ResizeClusterResultTypeDef](./type_defs.md#resizeclusterresulttypedef).
 
 ### restore_from_cluster_snapshot
 
@@ -2502,7 +2505,7 @@ Boto3 documentation:
 [Redshift.Client.restore_from_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.restore_from_cluster_snapshot)
 
 Arguments mapping described in
-[RestoreFromClusterSnapshotMessageTypeDef](./type_defs.md#restorefromclustersnapshotmessagetypedef).
+[RestoreFromClusterSnapshotMessageRequestTypeDef](./type_defs.md#restorefromclustersnapshotmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2537,7 +2540,7 @@ Keyword-only arguments:
   [AquaConfigurationStatusType](./literals.md#aquaconfigurationstatustype)
 
 Returns
-[RestoreFromClusterSnapshotResultResponseTypeDef](./type_defs.md#restorefromclustersnapshotresultresponsetypedef).
+[RestoreFromClusterSnapshotResultTypeDef](./type_defs.md#restorefromclustersnapshotresulttypedef).
 
 ### restore_table_from_cluster_snapshot
 
@@ -2550,7 +2553,7 @@ Boto3 documentation:
 [Redshift.Client.restore_table_from_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.restore_table_from_cluster_snapshot)
 
 Arguments mapping described in
-[RestoreTableFromClusterSnapshotMessageTypeDef](./type_defs.md#restoretablefromclustersnapshotmessagetypedef).
+[RestoreTableFromClusterSnapshotMessageRequestTypeDef](./type_defs.md#restoretablefromclustersnapshotmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2565,7 +2568,7 @@ Keyword-only arguments:
 - `EnableCaseSensitiveIdentifier`: `bool`
 
 Returns
-[RestoreTableFromClusterSnapshotResultResponseTypeDef](./type_defs.md#restoretablefromclustersnapshotresultresponsetypedef).
+[RestoreTableFromClusterSnapshotResultTypeDef](./type_defs.md#restoretablefromclustersnapshotresulttypedef).
 
 ### resume_cluster
 
@@ -2577,14 +2580,14 @@ Boto3 documentation:
 [Redshift.Client.resume_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.resume_cluster)
 
 Arguments mapping described in
-[ResumeClusterMessageTypeDef](./type_defs.md#resumeclustermessagetypedef).
+[ResumeClusterMessageRequestTypeDef](./type_defs.md#resumeclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 
 Returns
-[ResumeClusterResultResponseTypeDef](./type_defs.md#resumeclusterresultresponsetypedef).
+[ResumeClusterResultTypeDef](./type_defs.md#resumeclusterresulttypedef).
 
 ### revoke_cluster_security_group_ingress
 
@@ -2598,7 +2601,7 @@ Boto3 documentation:
 [Redshift.Client.revoke_cluster_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.revoke_cluster_security_group_ingress)
 
 Arguments mapping described in
-[RevokeClusterSecurityGroupIngressMessageTypeDef](./type_defs.md#revokeclustersecuritygroupingressmessagetypedef).
+[RevokeClusterSecurityGroupIngressMessageRequestTypeDef](./type_defs.md#revokeclustersecuritygroupingressmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2608,7 +2611,7 @@ Keyword-only arguments:
 - `EC2SecurityGroupOwnerId`: `str`
 
 Returns
-[RevokeClusterSecurityGroupIngressResultResponseTypeDef](./type_defs.md#revokeclustersecuritygroupingressresultresponsetypedef).
+[RevokeClusterSecurityGroupIngressResultTypeDef](./type_defs.md#revokeclustersecuritygroupingressresulttypedef).
 
 ### revoke_endpoint_access
 
@@ -2620,7 +2623,7 @@ Boto3 documentation:
 [Redshift.Client.revoke_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.revoke_endpoint_access)
 
 Arguments mapping described in
-[RevokeEndpointAccessMessageTypeDef](./type_defs.md#revokeendpointaccessmessagetypedef).
+[RevokeEndpointAccessMessageRequestTypeDef](./type_defs.md#revokeendpointaccessmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2630,7 +2633,7 @@ Keyword-only arguments:
 - `Force`: `bool`
 
 Returns
-[EndpointAuthorizationResponseTypeDef](./type_defs.md#endpointauthorizationresponsetypedef).
+[EndpointAuthorizationResponseMetadataTypeDef](./type_defs.md#endpointauthorizationresponsemetadatatypedef).
 
 ### revoke_snapshot_access
 
@@ -2643,7 +2646,7 @@ Boto3 documentation:
 [Redshift.Client.revoke_snapshot_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.revoke_snapshot_access)
 
 Arguments mapping described in
-[RevokeSnapshotAccessMessageTypeDef](./type_defs.md#revokesnapshotaccessmessagetypedef).
+[RevokeSnapshotAccessMessageRequestTypeDef](./type_defs.md#revokesnapshotaccessmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2652,7 +2655,7 @@ Keyword-only arguments:
 - `SnapshotClusterIdentifier`: `str`
 
 Returns
-[RevokeSnapshotAccessResultResponseTypeDef](./type_defs.md#revokesnapshotaccessresultresponsetypedef).
+[RevokeSnapshotAccessResultTypeDef](./type_defs.md#revokesnapshotaccessresulttypedef).
 
 ### rotate_encryption_key
 
@@ -2664,14 +2667,14 @@ Boto3 documentation:
 [Redshift.Client.rotate_encryption_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.rotate_encryption_key)
 
 Arguments mapping described in
-[RotateEncryptionKeyMessageTypeDef](./type_defs.md#rotateencryptionkeymessagetypedef).
+[RotateEncryptionKeyMessageRequestTypeDef](./type_defs.md#rotateencryptionkeymessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 
 Returns
-[RotateEncryptionKeyResultResponseTypeDef](./type_defs.md#rotateencryptionkeyresultresponsetypedef).
+[RotateEncryptionKeyResultTypeDef](./type_defs.md#rotateencryptionkeyresulttypedef).
 
 ### update_partner_status
 
@@ -2683,7 +2686,7 @@ Boto3 documentation:
 [Redshift.Client.update_partner_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.update_partner_status)
 
 Arguments mapping described in
-[UpdatePartnerStatusInputMessageTypeDef](./type_defs.md#updatepartnerstatusinputmessagetypedef).
+[UpdatePartnerStatusInputMessageRequestTypeDef](./type_defs.md#updatepartnerstatusinputmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2697,7 +2700,7 @@ Keyword-only arguments:
 - `StatusMessage`: `str`
 
 Returns
-[PartnerIntegrationOutputMessageResponseTypeDef](./type_defs.md#partnerintegrationoutputmessageresponsetypedef).
+[PartnerIntegrationOutputMessageTypeDef](./type_defs.md#partnerintegrationoutputmessagetypedef).
 
 ### get_paginator
 

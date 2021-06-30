@@ -38,4 +38,4 @@ Arguments for `ListRepositoryAssociationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRepositoryAssociationsPaginator.paginate` returns
-`Iterator`\[[ListRepositoryAssociationsResponseResponseTypeDef](./type_defs.md#listrepositoryassociationsresponseresponsetypedef)\].
+`Iterator`\[[ListRepositoryAssociationsResponseTypeDef](./type_defs.md#listrepositoryassociationsresponsetypedef)\].

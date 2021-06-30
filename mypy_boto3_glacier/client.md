@@ -11,6 +11,7 @@ type annotations stubs module
   - [GlacierClient](#glacierclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [abort_multipart_upload](#abort_multipart_upload)
     - [abort_vault_lock](#abort_vault_lock)
     - [add_tags_to_vault](#add_tags_to_vault)
@@ -91,6 +92,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+GlacierClient exceptions.
+
+Type annotations for `boto3.client("glacier").exceptions` method.
+
+Boto3 documentation:
+[Glacier.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### abort_multipart_upload
 
 This operation aborts a multipart upload identified by the upload ID.
@@ -101,7 +113,7 @@ Boto3 documentation:
 [Glacier.Client.abort_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.abort_multipart_upload)
 
 Arguments mapping described in
-[AbortMultipartUploadInputTypeDef](./type_defs.md#abortmultipartuploadinputtypedef).
+[AbortMultipartUploadInputRequestTypeDef](./type_defs.md#abortmultipartuploadinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -120,7 +132,7 @@ Boto3 documentation:
 [Glacier.Client.abort_vault_lock](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.abort_vault_lock)
 
 Arguments mapping described in
-[AbortVaultLockInputTypeDef](./type_defs.md#abortvaultlockinputtypedef).
+[AbortVaultLockInputRequestTypeDef](./type_defs.md#abortvaultlockinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -137,7 +149,7 @@ Boto3 documentation:
 [Glacier.Client.add_tags_to_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.add_tags_to_vault)
 
 Arguments mapping described in
-[AddTagsToVaultInputTypeDef](./type_defs.md#addtagstovaultinputtypedef).
+[AddTagsToVaultInputRequestTypeDef](./type_defs.md#addtagstovaultinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -173,7 +185,7 @@ Boto3 documentation:
 [Glacier.Client.complete_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.complete_multipart_upload)
 
 Arguments mapping described in
-[CompleteMultipartUploadInputTypeDef](./type_defs.md#completemultipartuploadinputtypedef).
+[CompleteMultipartUploadInputRequestTypeDef](./type_defs.md#completemultipartuploadinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -184,7 +196,7 @@ Keyword-only arguments:
 - `checksum`: `str`
 
 Returns
-[ArchiveCreationOutputResponseTypeDef](./type_defs.md#archivecreationoutputresponsetypedef).
+[ArchiveCreationOutputTypeDef](./type_defs.md#archivecreationoutputtypedef).
 
 ### complete_vault_lock
 
@@ -198,7 +210,7 @@ Boto3 documentation:
 [Glacier.Client.complete_vault_lock](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.complete_vault_lock)
 
 Arguments mapping described in
-[CompleteVaultLockInputTypeDef](./type_defs.md#completevaultlockinputtypedef).
+[CompleteVaultLockInputRequestTypeDef](./type_defs.md#completevaultlockinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -216,15 +228,14 @@ Boto3 documentation:
 [Glacier.Client.create_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.create_vault)
 
 Arguments mapping described in
-[CreateVaultInputTypeDef](./type_defs.md#createvaultinputtypedef).
+[CreateVaultInputRequestTypeDef](./type_defs.md#createvaultinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
 
-Returns
-[CreateVaultOutputResponseTypeDef](./type_defs.md#createvaultoutputresponsetypedef).
+Returns [CreateVaultOutputTypeDef](./type_defs.md#createvaultoutputtypedef).
 
 ### delete_archive
 
@@ -236,7 +247,7 @@ Boto3 documentation:
 [Glacier.Client.delete_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.delete_archive)
 
 Arguments mapping described in
-[DeleteArchiveInputTypeDef](./type_defs.md#deletearchiveinputtypedef).
+[DeleteArchiveInputRequestTypeDef](./type_defs.md#deletearchiveinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -254,7 +265,7 @@ Boto3 documentation:
 [Glacier.Client.delete_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.delete_vault)
 
 Arguments mapping described in
-[DeleteVaultInputTypeDef](./type_defs.md#deletevaultinputtypedef).
+[DeleteVaultInputRequestTypeDef](./type_defs.md#deletevaultinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -272,7 +283,7 @@ Boto3 documentation:
 [Glacier.Client.delete_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.delete_vault_access_policy)
 
 Arguments mapping described in
-[DeleteVaultAccessPolicyInputTypeDef](./type_defs.md#deletevaultaccesspolicyinputtypedef).
+[DeleteVaultAccessPolicyInputRequestTypeDef](./type_defs.md#deletevaultaccesspolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -290,7 +301,7 @@ Boto3 documentation:
 [Glacier.Client.delete_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.delete_vault_notifications)
 
 Arguments mapping described in
-[DeleteVaultNotificationsInputTypeDef](./type_defs.md#deletevaultnotificationsinputtypedef).
+[DeleteVaultNotificationsInputRequestTypeDef](./type_defs.md#deletevaultnotificationsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -310,7 +321,7 @@ Boto3 documentation:
 [Glacier.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.describe_job)
 
 Arguments mapping described in
-[DescribeJobInputTypeDef](./type_defs.md#describejobinputtypedef).
+[DescribeJobInputRequestTypeDef](./type_defs.md#describejobinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -319,7 +330,7 @@ Keyword-only arguments:
 - `jobId`: `str` *(required)*
 
 Returns
-[GlacierJobDescriptionResponseTypeDef](./type_defs.md#glacierjobdescriptionresponsetypedef).
+[GlacierJobDescriptionResponseMetadataTypeDef](./type_defs.md#glacierjobdescriptionresponsemetadatatypedef).
 
 ### describe_vault
 
@@ -333,7 +344,7 @@ Boto3 documentation:
 [Glacier.Client.describe_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.describe_vault)
 
 Arguments mapping described in
-[DescribeVaultInputTypeDef](./type_defs.md#describevaultinputtypedef).
+[DescribeVaultInputRequestTypeDef](./type_defs.md#describevaultinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -341,7 +352,7 @@ Keyword-only arguments:
 - `vaultName`: `str` *(required)*
 
 Returns
-[DescribeVaultOutputResponseTypeDef](./type_defs.md#describevaultoutputresponsetypedef).
+[DescribeVaultOutputResponseMetadataTypeDef](./type_defs.md#describevaultoutputresponsemetadatatypedef).
 
 ### generate_presigned_url
 
@@ -373,14 +384,14 @@ Boto3 documentation:
 [Glacier.Client.get_data_retrieval_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.get_data_retrieval_policy)
 
 Arguments mapping described in
-[GetDataRetrievalPolicyInputTypeDef](./type_defs.md#getdataretrievalpolicyinputtypedef).
+[GetDataRetrievalPolicyInputRequestTypeDef](./type_defs.md#getdataretrievalpolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 
 Returns
-[GetDataRetrievalPolicyOutputResponseTypeDef](./type_defs.md#getdataretrievalpolicyoutputresponsetypedef).
+[GetDataRetrievalPolicyOutputTypeDef](./type_defs.md#getdataretrievalpolicyoutputtypedef).
 
 ### get_job_output
 
@@ -392,7 +403,7 @@ Boto3 documentation:
 [Glacier.Client.get_job_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.get_job_output)
 
 Arguments mapping described in
-[GetJobOutputInputTypeDef](./type_defs.md#getjoboutputinputtypedef).
+[GetJobOutputInputRequestTypeDef](./type_defs.md#getjoboutputinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -401,8 +412,7 @@ Keyword-only arguments:
 - `jobId`: `str` *(required)*
 - `range`: `str`
 
-Returns
-[GetJobOutputOutputResponseTypeDef](./type_defs.md#getjoboutputoutputresponsetypedef).
+Returns [GetJobOutputOutputTypeDef](./type_defs.md#getjoboutputoutputtypedef).
 
 ### get_vault_access_policy
 
@@ -416,7 +426,7 @@ Boto3 documentation:
 [Glacier.Client.get_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.get_vault_access_policy)
 
 Arguments mapping described in
-[GetVaultAccessPolicyInputTypeDef](./type_defs.md#getvaultaccesspolicyinputtypedef).
+[GetVaultAccessPolicyInputRequestTypeDef](./type_defs.md#getvaultaccesspolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -424,7 +434,7 @@ Keyword-only arguments:
 - `vaultName`: `str` *(required)*
 
 Returns
-[GetVaultAccessPolicyOutputResponseTypeDef](./type_defs.md#getvaultaccesspolicyoutputresponsetypedef).
+[GetVaultAccessPolicyOutputTypeDef](./type_defs.md#getvaultaccesspolicyoutputtypedef).
 
 ### get_vault_lock
 
@@ -438,15 +448,14 @@ Boto3 documentation:
 [Glacier.Client.get_vault_lock](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.get_vault_lock)
 
 Arguments mapping described in
-[GetVaultLockInputTypeDef](./type_defs.md#getvaultlockinputtypedef).
+[GetVaultLockInputRequestTypeDef](./type_defs.md#getvaultlockinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
 
-Returns
-[GetVaultLockOutputResponseTypeDef](./type_defs.md#getvaultlockoutputresponsetypedef).
+Returns [GetVaultLockOutputTypeDef](./type_defs.md#getvaultlockoutputtypedef).
 
 ### get_vault_notifications
 
@@ -459,7 +468,7 @@ Boto3 documentation:
 [Glacier.Client.get_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.get_vault_notifications)
 
 Arguments mapping described in
-[GetVaultNotificationsInputTypeDef](./type_defs.md#getvaultnotificationsinputtypedef).
+[GetVaultNotificationsInputRequestTypeDef](./type_defs.md#getvaultnotificationsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -467,7 +476,7 @@ Keyword-only arguments:
 - `vaultName`: `str` *(required)*
 
 Returns
-[GetVaultNotificationsOutputResponseTypeDef](./type_defs.md#getvaultnotificationsoutputresponsetypedef).
+[GetVaultNotificationsOutputTypeDef](./type_defs.md#getvaultnotificationsoutputtypedef).
 
 ### initiate_job
 
@@ -480,7 +489,7 @@ Boto3 documentation:
 [Glacier.Client.initiate_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.initiate_job)
 
 Arguments mapping described in
-[InitiateJobInputTypeDef](./type_defs.md#initiatejobinputtypedef).
+[InitiateJobInputRequestTypeDef](./type_defs.md#initiatejobinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -488,8 +497,7 @@ Keyword-only arguments:
 - `vaultName`: `str` *(required)*
 - `jobParameters`: [JobParametersTypeDef](./type_defs.md#jobparameterstypedef)
 
-Returns
-[InitiateJobOutputResponseTypeDef](./type_defs.md#initiatejoboutputresponsetypedef).
+Returns [InitiateJobOutputTypeDef](./type_defs.md#initiatejoboutputtypedef).
 
 ### initiate_multipart_upload
 
@@ -502,7 +510,7 @@ Boto3 documentation:
 [Glacier.Client.initiate_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.initiate_multipart_upload)
 
 Arguments mapping described in
-[InitiateMultipartUploadInputTypeDef](./type_defs.md#initiatemultipartuploadinputtypedef).
+[InitiateMultipartUploadInputRequestTypeDef](./type_defs.md#initiatemultipartuploadinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -512,7 +520,7 @@ Keyword-only arguments:
 - `partSize`: `str`
 
 Returns
-[InitiateMultipartUploadOutputResponseTypeDef](./type_defs.md#initiatemultipartuploadoutputresponsetypedef).
+[InitiateMultipartUploadOutputTypeDef](./type_defs.md#initiatemultipartuploadoutputtypedef).
 
 ### initiate_vault_lock
 
@@ -525,7 +533,7 @@ Boto3 documentation:
 [Glacier.Client.initiate_vault_lock](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.initiate_vault_lock)
 
 Arguments mapping described in
-[InitiateVaultLockInputTypeDef](./type_defs.md#initiatevaultlockinputtypedef).
+[InitiateVaultLockInputRequestTypeDef](./type_defs.md#initiatevaultlockinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -534,7 +542,7 @@ Keyword-only arguments:
 - `policy`: [VaultLockPolicyTypeDef](./type_defs.md#vaultlockpolicytypedef)
 
 Returns
-[InitiateVaultLockOutputResponseTypeDef](./type_defs.md#initiatevaultlockoutputresponsetypedef).
+[InitiateVaultLockOutputTypeDef](./type_defs.md#initiatevaultlockoutputtypedef).
 
 ### list_jobs
 
@@ -547,7 +555,7 @@ Boto3 documentation:
 [Glacier.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.list_jobs)
 
 Arguments mapping described in
-[ListJobsInputTypeDef](./type_defs.md#listjobsinputtypedef).
+[ListJobsInputRequestTypeDef](./type_defs.md#listjobsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -558,8 +566,7 @@ Keyword-only arguments:
 - `statuscode`: `str`
 - `completed`: `str`
 
-Returns
-[ListJobsOutputResponseTypeDef](./type_defs.md#listjobsoutputresponsetypedef).
+Returns [ListJobsOutputTypeDef](./type_defs.md#listjobsoutputtypedef).
 
 ### list_multipart_uploads
 
@@ -571,7 +578,7 @@ Boto3 documentation:
 [Glacier.Client.list_multipart_uploads](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.list_multipart_uploads)
 
 Arguments mapping described in
-[ListMultipartUploadsInputTypeDef](./type_defs.md#listmultipartuploadsinputtypedef).
+[ListMultipartUploadsInputRequestTypeDef](./type_defs.md#listmultipartuploadsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -581,7 +588,7 @@ Keyword-only arguments:
 - `limit`: `str`
 
 Returns
-[ListMultipartUploadsOutputResponseTypeDef](./type_defs.md#listmultipartuploadsoutputresponsetypedef).
+[ListMultipartUploadsOutputTypeDef](./type_defs.md#listmultipartuploadsoutputtypedef).
 
 ### list_parts
 
@@ -594,7 +601,7 @@ Boto3 documentation:
 [Glacier.Client.list_parts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.list_parts)
 
 Arguments mapping described in
-[ListPartsInputTypeDef](./type_defs.md#listpartsinputtypedef).
+[ListPartsInputRequestTypeDef](./type_defs.md#listpartsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -604,8 +611,7 @@ Keyword-only arguments:
 - `marker`: `str`
 - `limit`: `str`
 
-Returns
-[ListPartsOutputResponseTypeDef](./type_defs.md#listpartsoutputresponsetypedef).
+Returns [ListPartsOutputTypeDef](./type_defs.md#listpartsoutputtypedef).
 
 ### list_provisioned_capacity
 
@@ -619,14 +625,14 @@ Boto3 documentation:
 [Glacier.Client.list_provisioned_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.list_provisioned_capacity)
 
 Arguments mapping described in
-[ListProvisionedCapacityInputTypeDef](./type_defs.md#listprovisionedcapacityinputtypedef).
+[ListProvisionedCapacityInputRequestTypeDef](./type_defs.md#listprovisionedcapacityinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 
 Returns
-[ListProvisionedCapacityOutputResponseTypeDef](./type_defs.md#listprovisionedcapacityoutputresponsetypedef).
+[ListProvisionedCapacityOutputTypeDef](./type_defs.md#listprovisionedcapacityoutputtypedef).
 
 ### list_tags_for_vault
 
@@ -638,7 +644,7 @@ Boto3 documentation:
 [Glacier.Client.list_tags_for_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.list_tags_for_vault)
 
 Arguments mapping described in
-[ListTagsForVaultInputTypeDef](./type_defs.md#listtagsforvaultinputtypedef).
+[ListTagsForVaultInputRequestTypeDef](./type_defs.md#listtagsforvaultinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -646,7 +652,7 @@ Keyword-only arguments:
 - `vaultName`: `str` *(required)*
 
 Returns
-[ListTagsForVaultOutputResponseTypeDef](./type_defs.md#listtagsforvaultoutputresponsetypedef).
+[ListTagsForVaultOutputTypeDef](./type_defs.md#listtagsforvaultoutputtypedef).
 
 ### list_vaults
 
@@ -658,7 +664,7 @@ Boto3 documentation:
 [Glacier.Client.list_vaults](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.list_vaults)
 
 Arguments mapping described in
-[ListVaultsInputTypeDef](./type_defs.md#listvaultsinputtypedef).
+[ListVaultsInputRequestTypeDef](./type_defs.md#listvaultsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -666,8 +672,7 @@ Keyword-only arguments:
 - `marker`: `str`
 - `limit`: `str`
 
-Returns
-[ListVaultsOutputResponseTypeDef](./type_defs.md#listvaultsoutputresponsetypedef).
+Returns [ListVaultsOutputTypeDef](./type_defs.md#listvaultsoutputtypedef).
 
 ### purchase_provisioned_capacity
 
@@ -680,14 +685,14 @@ Boto3 documentation:
 [Glacier.Client.purchase_provisioned_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.purchase_provisioned_capacity)
 
 Arguments mapping described in
-[PurchaseProvisionedCapacityInputTypeDef](./type_defs.md#purchaseprovisionedcapacityinputtypedef).
+[PurchaseProvisionedCapacityInputRequestTypeDef](./type_defs.md#purchaseprovisionedcapacityinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 
 Returns
-[PurchaseProvisionedCapacityOutputResponseTypeDef](./type_defs.md#purchaseprovisionedcapacityoutputresponsetypedef).
+[PurchaseProvisionedCapacityOutputTypeDef](./type_defs.md#purchaseprovisionedcapacityoutputtypedef).
 
 ### remove_tags_from_vault
 
@@ -700,7 +705,7 @@ Boto3 documentation:
 [Glacier.Client.remove_tags_from_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.remove_tags_from_vault)
 
 Arguments mapping described in
-[RemoveTagsFromVaultInputTypeDef](./type_defs.md#removetagsfromvaultinputtypedef).
+[RemoveTagsFromVaultInputRequestTypeDef](./type_defs.md#removetagsfromvaultinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -720,7 +725,7 @@ Boto3 documentation:
 [Glacier.Client.set_data_retrieval_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.set_data_retrieval_policy)
 
 Arguments mapping described in
-[SetDataRetrievalPolicyInputTypeDef](./type_defs.md#setdataretrievalpolicyinputtypedef).
+[SetDataRetrievalPolicyInputRequestTypeDef](./type_defs.md#setdataretrievalpolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -739,7 +744,7 @@ Boto3 documentation:
 [Glacier.Client.set_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.set_vault_access_policy)
 
 Arguments mapping described in
-[SetVaultAccessPolicyInputTypeDef](./type_defs.md#setvaultaccesspolicyinputtypedef).
+[SetVaultAccessPolicyInputRequestTypeDef](./type_defs.md#setvaultaccesspolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -758,7 +763,7 @@ Boto3 documentation:
 [Glacier.Client.set_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.set_vault_notifications)
 
 Arguments mapping described in
-[SetVaultNotificationsInputTypeDef](./type_defs.md#setvaultnotificationsinputtypedef).
+[SetVaultNotificationsInputRequestTypeDef](./type_defs.md#setvaultnotificationsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -777,7 +782,7 @@ Boto3 documentation:
 [Glacier.Client.upload_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.upload_archive)
 
 Arguments mapping described in
-[UploadArchiveInputTypeDef](./type_defs.md#uploadarchiveinputtypedef).
+[UploadArchiveInputRequestTypeDef](./type_defs.md#uploadarchiveinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -788,7 +793,7 @@ Keyword-only arguments:
 - `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 Returns
-[ArchiveCreationOutputResponseTypeDef](./type_defs.md#archivecreationoutputresponsetypedef).
+[ArchiveCreationOutputTypeDef](./type_defs.md#archivecreationoutputtypedef).
 
 ### upload_multipart_part
 
@@ -800,7 +805,7 @@ Boto3 documentation:
 [Glacier.Client.upload_multipart_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.upload_multipart_part)
 
 Arguments mapping described in
-[UploadMultipartPartInputTypeDef](./type_defs.md#uploadmultipartpartinputtypedef).
+[UploadMultipartPartInputRequestTypeDef](./type_defs.md#uploadmultipartpartinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -812,7 +817,7 @@ Keyword-only arguments:
 - `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 Returns
-[UploadMultipartPartOutputResponseTypeDef](./type_defs.md#uploadmultipartpartoutputresponsetypedef).
+[UploadMultipartPartOutputTypeDef](./type_defs.md#uploadmultipartpartoutputtypedef).
 
 ### get_paginator
 

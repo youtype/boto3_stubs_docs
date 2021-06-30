@@ -8,42 +8,42 @@ type annotations stubs module
 [mypy_boto3_macie](https://pypi.org/project/mypy-boto3-macie/).
 
 - [Typed dictionaries for boto3 Macie module](#typed-dictionaries-for-boto3-macie-module)
-  - [AssociateMemberAccountRequestTypeDef](#associatememberaccountrequesttypedef)
-  - [AssociateS3ResourcesRequestTypeDef](#associates3resourcesrequesttypedef)
-  - [AssociateS3ResourcesResultResponseTypeDef](#associates3resourcesresultresponsetypedef)
+  - [AssociateMemberAccountRequestRequestTypeDef](#associatememberaccountrequestrequesttypedef)
+  - [AssociateS3ResourcesRequestRequestTypeDef](#associates3resourcesrequestrequesttypedef)
+  - [AssociateS3ResourcesResultTypeDef](#associates3resourcesresulttypedef)
   - [ClassificationTypeTypeDef](#classificationtypetypedef)
   - [ClassificationTypeUpdateTypeDef](#classificationtypeupdatetypedef)
-  - [DisassociateMemberAccountRequestTypeDef](#disassociatememberaccountrequesttypedef)
-  - [DisassociateS3ResourcesRequestTypeDef](#disassociates3resourcesrequesttypedef)
-  - [DisassociateS3ResourcesResultResponseTypeDef](#disassociates3resourcesresultresponsetypedef)
+  - [DisassociateMemberAccountRequestRequestTypeDef](#disassociatememberaccountrequestrequesttypedef)
+  - [DisassociateS3ResourcesRequestRequestTypeDef](#disassociates3resourcesrequestrequesttypedef)
+  - [DisassociateS3ResourcesResultTypeDef](#disassociates3resourcesresulttypedef)
   - [FailedS3ResourceTypeDef](#faileds3resourcetypedef)
-  - [ListMemberAccountsRequestTypeDef](#listmemberaccountsrequesttypedef)
-  - [ListMemberAccountsResultResponseTypeDef](#listmemberaccountsresultresponsetypedef)
-  - [ListS3ResourcesRequestTypeDef](#lists3resourcesrequesttypedef)
-  - [ListS3ResourcesResultResponseTypeDef](#lists3resourcesresultresponsetypedef)
+  - [ListMemberAccountsRequestRequestTypeDef](#listmemberaccountsrequestrequesttypedef)
+  - [ListMemberAccountsResultTypeDef](#listmemberaccountsresulttypedef)
+  - [ListS3ResourcesRequestRequestTypeDef](#lists3resourcesrequestrequesttypedef)
+  - [ListS3ResourcesResultTypeDef](#lists3resourcesresulttypedef)
   - [MemberAccountTypeDef](#memberaccounttypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3ResourceClassificationTypeDef](#s3resourceclassificationtypedef)
   - [S3ResourceClassificationUpdateTypeDef](#s3resourceclassificationupdatetypedef)
   - [S3ResourceTypeDef](#s3resourcetypedef)
-  - [UpdateS3ResourcesRequestTypeDef](#updates3resourcesrequesttypedef)
-  - [UpdateS3ResourcesResultResponseTypeDef](#updates3resourcesresultresponsetypedef)
+  - [UpdateS3ResourcesRequestRequestTypeDef](#updates3resourcesrequestrequesttypedef)
+  - [UpdateS3ResourcesResultTypeDef](#updates3resourcesresulttypedef)
 
-## AssociateMemberAccountRequestTypeDef
+## AssociateMemberAccountRequestRequestTypeDef
 
 ```python
-from mypy_boto3_macie.type_defs import AssociateMemberAccountRequestTypeDef
+from mypy_boto3_macie.type_defs import AssociateMemberAccountRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `memberAccountId`: `str`
 
-## AssociateS3ResourcesRequestTypeDef
+## AssociateS3ResourcesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_macie.type_defs import AssociateS3ResourcesRequestTypeDef
+from mypy_boto3_macie.type_defs import AssociateS3ResourcesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -55,10 +55,10 @@ Optional fields:
 
 - `memberAccountId`: `str`
 
-## AssociateS3ResourcesResultResponseTypeDef
+## AssociateS3ResourcesResultTypeDef
 
 ```python
-from mypy_boto3_macie.type_defs import AssociateS3ResourcesResultResponseTypeDef
+from mypy_boto3_macie.type_defs import AssociateS3ResourcesResultTypeDef
 ```
 
 Required fields:
@@ -94,20 +94,20 @@ Optional fields:
 - `continuous`: `Literal['FULL']` (see
   [S3ContinuousClassificationTypeType](./literals.md#s3continuousclassificationtypetype))
 
-## DisassociateMemberAccountRequestTypeDef
+## DisassociateMemberAccountRequestRequestTypeDef
 
 ```python
-from mypy_boto3_macie.type_defs import DisassociateMemberAccountRequestTypeDef
+from mypy_boto3_macie.type_defs import DisassociateMemberAccountRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `memberAccountId`: `str`
 
-## DisassociateS3ResourcesRequestTypeDef
+## DisassociateS3ResourcesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_macie.type_defs import DisassociateS3ResourcesRequestTypeDef
+from mypy_boto3_macie.type_defs import DisassociateS3ResourcesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -119,10 +119,10 @@ Optional fields:
 
 - `memberAccountId`: `str`
 
-## DisassociateS3ResourcesResultResponseTypeDef
+## DisassociateS3ResourcesResultTypeDef
 
 ```python
-from mypy_boto3_macie.type_defs import DisassociateS3ResourcesResultResponseTypeDef
+from mypy_boto3_macie.type_defs import DisassociateS3ResourcesResultTypeDef
 ```
 
 Required fields:
@@ -144,10 +144,10 @@ Optional fields:
 - `errorCode`: `str`
 - `errorMessage`: `str`
 
-## ListMemberAccountsRequestTypeDef
+## ListMemberAccountsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_macie.type_defs import ListMemberAccountsRequestTypeDef
+from mypy_boto3_macie.type_defs import ListMemberAccountsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -155,10 +155,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListMemberAccountsResultResponseTypeDef
+## ListMemberAccountsResultTypeDef
 
 ```python
-from mypy_boto3_macie.type_defs import ListMemberAccountsResultResponseTypeDef
+from mypy_boto3_macie.type_defs import ListMemberAccountsResultTypeDef
 ```
 
 Required fields:
@@ -169,10 +169,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListS3ResourcesRequestTypeDef
+## ListS3ResourcesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_macie.type_defs import ListS3ResourcesRequestTypeDef
+from mypy_boto3_macie.type_defs import ListS3ResourcesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -181,10 +181,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListS3ResourcesResultResponseTypeDef
+## ListS3ResourcesResultTypeDef
 
 ```python
-from mypy_boto3_macie.type_defs import ListS3ResourcesResultResponseTypeDef
+from mypy_boto3_macie.type_defs import ListS3ResourcesResultTypeDef
 ```
 
 Required fields:
@@ -277,10 +277,10 @@ Optional fields:
 
 - `prefix`: `str`
 
-## UpdateS3ResourcesRequestTypeDef
+## UpdateS3ResourcesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_macie.type_defs import UpdateS3ResourcesRequestTypeDef
+from mypy_boto3_macie.type_defs import UpdateS3ResourcesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -292,10 +292,10 @@ Optional fields:
 
 - `memberAccountId`: `str`
 
-## UpdateS3ResourcesResultResponseTypeDef
+## UpdateS3ResourcesResultTypeDef
 
 ```python
-from mypy_boto3_macie.type_defs import UpdateS3ResourcesResultResponseTypeDef
+from mypy_boto3_macie.type_defs import UpdateS3ResourcesResultTypeDef
 ```
 
 Required fields:

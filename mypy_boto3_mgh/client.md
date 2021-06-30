@@ -11,6 +11,7 @@ type annotations stubs module
   - [MigrationHubClient](#migrationhubclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_created_artifact](#associate_created_artifact)
     - [associate_discovered_resource](#associate_discovered_resource)
     - [can_paginate](#can_paginate)
@@ -76,6 +77,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+MigrationHubClient exceptions.
+
+Type annotations for `boto3.client("mgh").exceptions` method.
+
+Boto3 documentation:
+[MigrationHub.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_created_artifact
 
 Associates a created artifact of an AWS cloud resource, the target receiving
@@ -87,7 +99,7 @@ Boto3 documentation:
 [MigrationHub.Client.associate_created_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.associate_created_artifact)
 
 Arguments mapping described in
-[AssociateCreatedArtifactRequestTypeDef](./type_defs.md#associatecreatedartifactrequesttypedef).
+[AssociateCreatedArtifactRequestRequestTypeDef](./type_defs.md#associatecreatedartifactrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -111,7 +123,7 @@ Boto3 documentation:
 [MigrationHub.Client.associate_discovered_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.associate_discovered_resource)
 
 Arguments mapping described in
-[AssociateDiscoveredResourceRequestTypeDef](./type_defs.md#associatediscoveredresourcerequesttypedef).
+[AssociateDiscoveredResourceRequestRequestTypeDef](./type_defs.md#associatediscoveredresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -152,7 +164,7 @@ Boto3 documentation:
 [MigrationHub.Client.create_progress_update_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.create_progress_update_stream)
 
 Arguments mapping described in
-[CreateProgressUpdateStreamRequestTypeDef](./type_defs.md#createprogressupdatestreamrequesttypedef).
+[CreateProgressUpdateStreamRequestRequestTypeDef](./type_defs.md#createprogressupdatestreamrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -173,7 +185,7 @@ Boto3 documentation:
 [MigrationHub.Client.delete_progress_update_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.delete_progress_update_stream)
 
 Arguments mapping described in
-[DeleteProgressUpdateStreamRequestTypeDef](./type_defs.md#deleteprogressupdatestreamrequesttypedef).
+[DeleteProgressUpdateStreamRequestRequestTypeDef](./type_defs.md#deleteprogressupdatestreamrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -192,14 +204,14 @@ Boto3 documentation:
 [MigrationHub.Client.describe_application_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.describe_application_state)
 
 Arguments mapping described in
-[DescribeApplicationStateRequestTypeDef](./type_defs.md#describeapplicationstaterequesttypedef).
+[DescribeApplicationStateRequestRequestTypeDef](./type_defs.md#describeapplicationstaterequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[DescribeApplicationStateResultResponseTypeDef](./type_defs.md#describeapplicationstateresultresponsetypedef).
+[DescribeApplicationStateResultTypeDef](./type_defs.md#describeapplicationstateresulttypedef).
 
 ### describe_migration_task
 
@@ -211,7 +223,7 @@ Boto3 documentation:
 [MigrationHub.Client.describe_migration_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.describe_migration_task)
 
 Arguments mapping described in
-[DescribeMigrationTaskRequestTypeDef](./type_defs.md#describemigrationtaskrequesttypedef).
+[DescribeMigrationTaskRequestRequestTypeDef](./type_defs.md#describemigrationtaskrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -219,7 +231,7 @@ Keyword-only arguments:
 - `MigrationTaskName`: `str` *(required)*
 
 Returns
-[DescribeMigrationTaskResultResponseTypeDef](./type_defs.md#describemigrationtaskresultresponsetypedef).
+[DescribeMigrationTaskResultTypeDef](./type_defs.md#describemigrationtaskresulttypedef).
 
 ### disassociate_created_artifact
 
@@ -233,7 +245,7 @@ Boto3 documentation:
 [MigrationHub.Client.disassociate_created_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.disassociate_created_artifact)
 
 Arguments mapping described in
-[DisassociateCreatedArtifactRequestTypeDef](./type_defs.md#disassociatecreatedartifactrequesttypedef).
+[DisassociateCreatedArtifactRequestRequestTypeDef](./type_defs.md#disassociatecreatedartifactrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -256,7 +268,7 @@ Boto3 documentation:
 [MigrationHub.Client.disassociate_discovered_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.disassociate_discovered_resource)
 
 Arguments mapping described in
-[DisassociateDiscoveredResourceRequestTypeDef](./type_defs.md#disassociatediscoveredresourcerequesttypedef).
+[DisassociateDiscoveredResourceRequestRequestTypeDef](./type_defs.md#disassociatediscoveredresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -296,7 +308,7 @@ Boto3 documentation:
 [MigrationHub.Client.import_migration_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.import_migration_task)
 
 Arguments mapping described in
-[ImportMigrationTaskRequestTypeDef](./type_defs.md#importmigrationtaskrequesttypedef).
+[ImportMigrationTaskRequestRequestTypeDef](./type_defs.md#importmigrationtaskrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -316,7 +328,7 @@ Boto3 documentation:
 [MigrationHub.Client.list_application_states](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_application_states)
 
 Arguments mapping described in
-[ListApplicationStatesRequestTypeDef](./type_defs.md#listapplicationstatesrequesttypedef).
+[ListApplicationStatesRequestRequestTypeDef](./type_defs.md#listapplicationstatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -325,7 +337,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListApplicationStatesResultResponseTypeDef](./type_defs.md#listapplicationstatesresultresponsetypedef).
+[ListApplicationStatesResultTypeDef](./type_defs.md#listapplicationstatesresulttypedef).
 
 ### list_created_artifacts
 
@@ -338,7 +350,7 @@ Boto3 documentation:
 [MigrationHub.Client.list_created_artifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_created_artifacts)
 
 Arguments mapping described in
-[ListCreatedArtifactsRequestTypeDef](./type_defs.md#listcreatedartifactsrequesttypedef).
+[ListCreatedArtifactsRequestRequestTypeDef](./type_defs.md#listcreatedartifactsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -348,7 +360,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListCreatedArtifactsResultResponseTypeDef](./type_defs.md#listcreatedartifactsresultresponsetypedef).
+[ListCreatedArtifactsResultTypeDef](./type_defs.md#listcreatedartifactsresulttypedef).
 
 ### list_discovered_resources
 
@@ -360,7 +372,7 @@ Boto3 documentation:
 [MigrationHub.Client.list_discovered_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_discovered_resources)
 
 Arguments mapping described in
-[ListDiscoveredResourcesRequestTypeDef](./type_defs.md#listdiscoveredresourcesrequesttypedef).
+[ListDiscoveredResourcesRequestRequestTypeDef](./type_defs.md#listdiscoveredresourcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -370,7 +382,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDiscoveredResourcesResultResponseTypeDef](./type_defs.md#listdiscoveredresourcesresultresponsetypedef).
+[ListDiscoveredResourcesResultTypeDef](./type_defs.md#listdiscoveredresourcesresulttypedef).
 
 ### list_migration_tasks
 
@@ -383,7 +395,7 @@ Boto3 documentation:
 [MigrationHub.Client.list_migration_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_migration_tasks)
 
 Arguments mapping described in
-[ListMigrationTasksRequestTypeDef](./type_defs.md#listmigrationtasksrequesttypedef).
+[ListMigrationTasksRequestRequestTypeDef](./type_defs.md#listmigrationtasksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -392,7 +404,7 @@ Keyword-only arguments:
 - `ResourceName`: `str`
 
 Returns
-[ListMigrationTasksResultResponseTypeDef](./type_defs.md#listmigrationtasksresultresponsetypedef).
+[ListMigrationTasksResultTypeDef](./type_defs.md#listmigrationtasksresulttypedef).
 
 ### list_progress_update_streams
 
@@ -405,7 +417,7 @@ Boto3 documentation:
 [MigrationHub.Client.list_progress_update_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_progress_update_streams)
 
 Arguments mapping described in
-[ListProgressUpdateStreamsRequestTypeDef](./type_defs.md#listprogressupdatestreamsrequesttypedef).
+[ListProgressUpdateStreamsRequestRequestTypeDef](./type_defs.md#listprogressupdatestreamsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -413,7 +425,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListProgressUpdateStreamsResultResponseTypeDef](./type_defs.md#listprogressupdatestreamsresultresponsetypedef).
+[ListProgressUpdateStreamsResultTypeDef](./type_defs.md#listprogressupdatestreamsresulttypedef).
 
 ### notify_application_state
 
@@ -425,7 +437,7 @@ Boto3 documentation:
 [MigrationHub.Client.notify_application_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.notify_application_state)
 
 Arguments mapping described in
-[NotifyApplicationStateRequestTypeDef](./type_defs.md#notifyapplicationstaterequesttypedef).
+[NotifyApplicationStateRequestRequestTypeDef](./type_defs.md#notifyapplicationstaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -448,7 +460,7 @@ Boto3 documentation:
 [MigrationHub.Client.notify_migration_task_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.notify_migration_task_state)
 
 Arguments mapping described in
-[NotifyMigrationTaskStateRequestTypeDef](./type_defs.md#notifymigrationtaskstaterequesttypedef).
+[NotifyMigrationTaskStateRequestRequestTypeDef](./type_defs.md#notifymigrationtaskstaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -471,7 +483,7 @@ Boto3 documentation:
 [MigrationHub.Client.put_resource_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.put_resource_attributes)
 
 Arguments mapping described in
-[PutResourceAttributesRequestTypeDef](./type_defs.md#putresourceattributesrequesttypedef).
+[PutResourceAttributesRequestRequestTypeDef](./type_defs.md#putresourceattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 

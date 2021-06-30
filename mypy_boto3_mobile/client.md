@@ -11,6 +11,7 @@ type annotations stubs module
   - [MobileClient](#mobileclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_project](#create_project)
     - [delete_project](#delete_project)
@@ -66,6 +67,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+MobileClient exceptions.
+
+Type annotations for `boto3.client("mobile").exceptions` method.
+
+Boto3 documentation:
+[Mobile.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -91,7 +103,7 @@ Boto3 documentation:
 [Mobile.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.create_project)
 
 Arguments mapping described in
-[CreateProjectRequestTypeDef](./type_defs.md#createprojectrequesttypedef).
+[CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -101,7 +113,7 @@ Keyword-only arguments:
 - `snapshotId`: `str`
 
 Returns
-[CreateProjectResultResponseTypeDef](./type_defs.md#createprojectresultresponsetypedef).
+[CreateProjectResultTypeDef](./type_defs.md#createprojectresulttypedef).
 
 ### delete_project
 
@@ -113,14 +125,14 @@ Boto3 documentation:
 [Mobile.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.delete_project)
 
 Arguments mapping described in
-[DeleteProjectRequestTypeDef](./type_defs.md#deleteprojectrequesttypedef).
+[DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `projectId`: `str` *(required)*
 
 Returns
-[DeleteProjectResultResponseTypeDef](./type_defs.md#deleteprojectresultresponsetypedef).
+[DeleteProjectResultTypeDef](./type_defs.md#deleteprojectresulttypedef).
 
 ### describe_bundle
 
@@ -132,14 +144,14 @@ Boto3 documentation:
 [Mobile.Client.describe_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.describe_bundle)
 
 Arguments mapping described in
-[DescribeBundleRequestTypeDef](./type_defs.md#describebundlerequesttypedef).
+[DescribeBundleRequestRequestTypeDef](./type_defs.md#describebundlerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `bundleId`: `str` *(required)*
 
 Returns
-[DescribeBundleResultResponseTypeDef](./type_defs.md#describebundleresultresponsetypedef).
+[DescribeBundleResultTypeDef](./type_defs.md#describebundleresulttypedef).
 
 ### describe_project
 
@@ -151,7 +163,7 @@ Boto3 documentation:
 [Mobile.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.describe_project)
 
 Arguments mapping described in
-[DescribeProjectRequestTypeDef](./type_defs.md#describeprojectrequesttypedef).
+[DescribeProjectRequestRequestTypeDef](./type_defs.md#describeprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -159,7 +171,7 @@ Keyword-only arguments:
 - `syncFromResources`: `bool`
 
 Returns
-[DescribeProjectResultResponseTypeDef](./type_defs.md#describeprojectresultresponsetypedef).
+[DescribeProjectResultTypeDef](./type_defs.md#describeprojectresulttypedef).
 
 ### export_bundle
 
@@ -172,7 +184,7 @@ Boto3 documentation:
 [Mobile.Client.export_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.export_bundle)
 
 Arguments mapping described in
-[ExportBundleRequestTypeDef](./type_defs.md#exportbundlerequesttypedef).
+[ExportBundleRequestRequestTypeDef](./type_defs.md#exportbundlerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -180,8 +192,7 @@ Keyword-only arguments:
 - `projectId`: `str`
 - `platform`: [PlatformType](./literals.md#platformtype)
 
-Returns
-[ExportBundleResultResponseTypeDef](./type_defs.md#exportbundleresultresponsetypedef).
+Returns [ExportBundleResultTypeDef](./type_defs.md#exportbundleresulttypedef).
 
 ### export_project
 
@@ -193,14 +204,14 @@ Boto3 documentation:
 [Mobile.Client.export_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.export_project)
 
 Arguments mapping described in
-[ExportProjectRequestTypeDef](./type_defs.md#exportprojectrequesttypedef).
+[ExportProjectRequestRequestTypeDef](./type_defs.md#exportprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `projectId`: `str` *(required)*
 
 Returns
-[ExportProjectResultResponseTypeDef](./type_defs.md#exportprojectresultresponsetypedef).
+[ExportProjectResultTypeDef](./type_defs.md#exportprojectresulttypedef).
 
 ### generate_presigned_url
 
@@ -230,15 +241,14 @@ Boto3 documentation:
 [Mobile.Client.list_bundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.list_bundles)
 
 Arguments mapping described in
-[ListBundlesRequestTypeDef](./type_defs.md#listbundlesrequesttypedef).
+[ListBundlesRequestRequestTypeDef](./type_defs.md#listbundlesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-Returns
-[ListBundlesResultResponseTypeDef](./type_defs.md#listbundlesresultresponsetypedef).
+Returns [ListBundlesResultTypeDef](./type_defs.md#listbundlesresulttypedef).
 
 ### list_projects
 
@@ -250,15 +260,14 @@ Boto3 documentation:
 [Mobile.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.list_projects)
 
 Arguments mapping described in
-[ListProjectsRequestTypeDef](./type_defs.md#listprojectsrequesttypedef).
+[ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-Returns
-[ListProjectsResultResponseTypeDef](./type_defs.md#listprojectsresultresponsetypedef).
+Returns [ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef).
 
 ### update_project
 
@@ -270,7 +279,7 @@ Boto3 documentation:
 [Mobile.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.update_project)
 
 Arguments mapping described in
-[UpdateProjectRequestTypeDef](./type_defs.md#updateprojectrequesttypedef).
+[UpdateProjectRequestRequestTypeDef](./type_defs.md#updateprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -278,7 +287,7 @@ Keyword-only arguments:
 - `contents`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 Returns
-[UpdateProjectResultResponseTypeDef](./type_defs.md#updateprojectresultresponsetypedef).
+[UpdateProjectResultTypeDef](./type_defs.md#updateprojectresulttypedef).
 
 ### get_paginator
 

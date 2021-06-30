@@ -11,6 +11,7 @@ type annotations stubs module
   - [BraketClient](#braketclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [cancel_quantum_task](#cancel_quantum_task)
     - [create_quantum_task](#create_quantum_task)
@@ -67,6 +68,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+BraketClient exceptions.
+
+Type annotations for `boto3.client("braket").exceptions` method.
+
+Boto3 documentation:
+[Braket.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -92,7 +104,7 @@ Boto3 documentation:
 [Braket.Client.cancel_quantum_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.cancel_quantum_task)
 
 Arguments mapping described in
-[CancelQuantumTaskRequestTypeDef](./type_defs.md#cancelquantumtaskrequesttypedef).
+[CancelQuantumTaskRequestRequestTypeDef](./type_defs.md#cancelquantumtaskrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -100,7 +112,7 @@ Keyword-only arguments:
 - `quantumTaskArn`: `str` *(required)*
 
 Returns
-[CancelQuantumTaskResponseResponseTypeDef](./type_defs.md#cancelquantumtaskresponseresponsetypedef).
+[CancelQuantumTaskResponseTypeDef](./type_defs.md#cancelquantumtaskresponsetypedef).
 
 ### create_quantum_task
 
@@ -112,7 +124,7 @@ Boto3 documentation:
 [Braket.Client.create_quantum_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.create_quantum_task)
 
 Arguments mapping described in
-[CreateQuantumTaskRequestTypeDef](./type_defs.md#createquantumtaskrequesttypedef).
+[CreateQuantumTaskRequestRequestTypeDef](./type_defs.md#createquantumtaskrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -126,7 +138,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateQuantumTaskResponseResponseTypeDef](./type_defs.md#createquantumtaskresponseresponsetypedef).
+[CreateQuantumTaskResponseTypeDef](./type_defs.md#createquantumtaskresponsetypedef).
 
 ### generate_presigned_url
 
@@ -156,14 +168,13 @@ Boto3 documentation:
 [Braket.Client.get_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.get_device)
 
 Arguments mapping described in
-[GetDeviceRequestTypeDef](./type_defs.md#getdevicerequesttypedef).
+[GetDeviceRequestRequestTypeDef](./type_defs.md#getdevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `deviceArn`: `str` *(required)*
 
-Returns
-[GetDeviceResponseResponseTypeDef](./type_defs.md#getdeviceresponseresponsetypedef).
+Returns [GetDeviceResponseTypeDef](./type_defs.md#getdeviceresponsetypedef).
 
 ### get_quantum_task
 
@@ -175,14 +186,14 @@ Boto3 documentation:
 [Braket.Client.get_quantum_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.get_quantum_task)
 
 Arguments mapping described in
-[GetQuantumTaskRequestTypeDef](./type_defs.md#getquantumtaskrequesttypedef).
+[GetQuantumTaskRequestRequestTypeDef](./type_defs.md#getquantumtaskrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `quantumTaskArn`: `str` *(required)*
 
 Returns
-[GetQuantumTaskResponseResponseTypeDef](./type_defs.md#getquantumtaskresponseresponsetypedef).
+[GetQuantumTaskResponseTypeDef](./type_defs.md#getquantumtaskresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -194,14 +205,14 @@ Boto3 documentation:
 [Braket.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### search_devices
 
@@ -213,7 +224,7 @@ Boto3 documentation:
 [Braket.Client.search_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.search_devices)
 
 Arguments mapping described in
-[SearchDevicesRequestTypeDef](./type_defs.md#searchdevicesrequesttypedef).
+[SearchDevicesRequestRequestTypeDef](./type_defs.md#searchdevicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -224,7 +235,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[SearchDevicesResponseResponseTypeDef](./type_defs.md#searchdevicesresponseresponsetypedef).
+[SearchDevicesResponseTypeDef](./type_defs.md#searchdevicesresponsetypedef).
 
 ### search_quantum_tasks
 
@@ -236,7 +247,7 @@ Boto3 documentation:
 [Braket.Client.search_quantum_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.search_quantum_tasks)
 
 Arguments mapping described in
-[SearchQuantumTasksRequestTypeDef](./type_defs.md#searchquantumtasksrequesttypedef).
+[SearchQuantumTasksRequestRequestTypeDef](./type_defs.md#searchquantumtasksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -247,7 +258,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[SearchQuantumTasksResponseResponseTypeDef](./type_defs.md#searchquantumtasksresponseresponsetypedef).
+[SearchQuantumTasksResponseTypeDef](./type_defs.md#searchquantumtasksresponsetypedef).
 
 ### tag_resource
 
@@ -259,7 +270,7 @@ Boto3 documentation:
 [Braket.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -278,7 +289,7 @@ Boto3 documentation:
 [Braket.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 

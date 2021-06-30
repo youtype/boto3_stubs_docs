@@ -11,6 +11,7 @@ type annotations stubs module
   - [DirectoryServiceClient](#directoryserviceclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [accept_shared_directory](#accept_shared_directory)
     - [add_ip_routes](#add_ip_routes)
     - [add_region](#add_region)
@@ -145,6 +146,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+DirectoryServiceClient exceptions.
+
+Type annotations for `boto3.client("ds").exceptions` method.
+
+Boto3 documentation:
+[DirectoryService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### accept_shared_directory
 
 Accepts a directory sharing request that was sent from the directory owner
@@ -156,14 +168,14 @@ Boto3 documentation:
 [DirectoryService.Client.accept_shared_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.accept_shared_directory)
 
 Arguments mapping described in
-[AcceptSharedDirectoryRequestTypeDef](./type_defs.md#acceptshareddirectoryrequesttypedef).
+[AcceptSharedDirectoryRequestRequestTypeDef](./type_defs.md#acceptshareddirectoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SharedDirectoryId`: `str` *(required)*
 
 Returns
-[AcceptSharedDirectoryResultResponseTypeDef](./type_defs.md#acceptshareddirectoryresultresponsetypedef).
+[AcceptSharedDirectoryResultTypeDef](./type_defs.md#acceptshareddirectoryresulttypedef).
 
 ### add_ip_routes
 
@@ -177,7 +189,7 @@ Boto3 documentation:
 [DirectoryService.Client.add_ip_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_ip_routes)
 
 Arguments mapping described in
-[AddIpRoutesRequestTypeDef](./type_defs.md#addiproutesrequesttypedef).
+[AddIpRoutesRequestRequestTypeDef](./type_defs.md#addiproutesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -199,7 +211,7 @@ Boto3 documentation:
 [DirectoryService.Client.add_region](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_region)
 
 Arguments mapping described in
-[AddRegionRequestTypeDef](./type_defs.md#addregionrequesttypedef).
+[AddRegionRequestRequestTypeDef](./type_defs.md#addregionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -221,7 +233,7 @@ Boto3 documentation:
 [DirectoryService.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_tags_to_resource)
 
 Arguments mapping described in
-[AddTagsToResourceRequestTypeDef](./type_defs.md#addtagstoresourcerequesttypedef).
+[AddTagsToResourceRequestRequestTypeDef](./type_defs.md#addtagstoresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -255,7 +267,7 @@ Boto3 documentation:
 [DirectoryService.Client.cancel_schema_extension](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.cancel_schema_extension)
 
 Arguments mapping described in
-[CancelSchemaExtensionRequestTypeDef](./type_defs.md#cancelschemaextensionrequesttypedef).
+[CancelSchemaExtensionRequestRequestTypeDef](./type_defs.md#cancelschemaextensionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -274,7 +286,7 @@ Boto3 documentation:
 [DirectoryService.Client.connect_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.connect_directory)
 
 Arguments mapping described in
-[ConnectDirectoryRequestTypeDef](./type_defs.md#connectdirectoryrequesttypedef).
+[ConnectDirectoryRequestRequestTypeDef](./type_defs.md#connectdirectoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -289,7 +301,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[ConnectDirectoryResultResponseTypeDef](./type_defs.md#connectdirectoryresultresponsetypedef).
+[ConnectDirectoryResultTypeDef](./type_defs.md#connectdirectoryresulttypedef).
 
 ### create_alias
 
@@ -301,15 +313,14 @@ Boto3 documentation:
 [DirectoryService.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_alias)
 
 Arguments mapping described in
-[CreateAliasRequestTypeDef](./type_defs.md#createaliasrequesttypedef).
+[CreateAliasRequestRequestTypeDef](./type_defs.md#createaliasrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `Alias`: `str` *(required)*
 
-Returns
-[CreateAliasResultResponseTypeDef](./type_defs.md#createaliasresultresponsetypedef).
+Returns [CreateAliasResultTypeDef](./type_defs.md#createaliasresulttypedef).
 
 ### create_computer
 
@@ -321,7 +332,7 @@ Boto3 documentation:
 [DirectoryService.Client.create_computer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_computer)
 
 Arguments mapping described in
-[CreateComputerRequestTypeDef](./type_defs.md#createcomputerrequesttypedef).
+[CreateComputerRequestRequestTypeDef](./type_defs.md#createcomputerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -333,7 +344,7 @@ Keyword-only arguments:
   `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
 Returns
-[CreateComputerResultResponseTypeDef](./type_defs.md#createcomputerresultresponsetypedef).
+[CreateComputerResultTypeDef](./type_defs.md#createcomputerresulttypedef).
 
 ### create_conditional_forwarder
 
@@ -345,7 +356,7 @@ Boto3 documentation:
 [DirectoryService.Client.create_conditional_forwarder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_conditional_forwarder)
 
 Arguments mapping described in
-[CreateConditionalForwarderRequestTypeDef](./type_defs.md#createconditionalforwarderrequesttypedef).
+[CreateConditionalForwarderRequestRequestTypeDef](./type_defs.md#createconditionalforwarderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -365,7 +376,7 @@ Boto3 documentation:
 [DirectoryService.Client.create_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_directory)
 
 Arguments mapping described in
-[CreateDirectoryRequestTypeDef](./type_defs.md#createdirectoryrequesttypedef).
+[CreateDirectoryRequestRequestTypeDef](./type_defs.md#createdirectoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -379,7 +390,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDirectoryResultResponseTypeDef](./type_defs.md#createdirectoryresultresponsetypedef).
+[CreateDirectoryResultTypeDef](./type_defs.md#createdirectoryresulttypedef).
 
 ### create_log_subscription
 
@@ -392,7 +403,7 @@ Boto3 documentation:
 [DirectoryService.Client.create_log_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_log_subscription)
 
 Arguments mapping described in
-[CreateLogSubscriptionRequestTypeDef](./type_defs.md#createlogsubscriptionrequesttypedef).
+[CreateLogSubscriptionRequestRequestTypeDef](./type_defs.md#createlogsubscriptionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -411,7 +422,7 @@ Boto3 documentation:
 [DirectoryService.Client.create_microsoft_ad](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_microsoft_ad)
 
 Arguments mapping described in
-[CreateMicrosoftADRequestTypeDef](./type_defs.md#createmicrosoftadrequesttypedef).
+[CreateMicrosoftADRequestRequestTypeDef](./type_defs.md#createmicrosoftadrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -426,7 +437,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateMicrosoftADResultResponseTypeDef](./type_defs.md#createmicrosoftadresultresponsetypedef).
+[CreateMicrosoftADResultTypeDef](./type_defs.md#createmicrosoftadresulttypedef).
 
 ### create_snapshot
 
@@ -438,7 +449,7 @@ Boto3 documentation:
 [DirectoryService.Client.create_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_snapshot)
 
 Arguments mapping described in
-[CreateSnapshotRequestTypeDef](./type_defs.md#createsnapshotrequesttypedef).
+[CreateSnapshotRequestRequestTypeDef](./type_defs.md#createsnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -446,7 +457,7 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns
-[CreateSnapshotResultResponseTypeDef](./type_defs.md#createsnapshotresultresponsetypedef).
+[CreateSnapshotResultTypeDef](./type_defs.md#createsnapshotresulttypedef).
 
 ### create_trust
 
@@ -459,7 +470,7 @@ Boto3 documentation:
 [DirectoryService.Client.create_trust](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_trust)
 
 Arguments mapping described in
-[CreateTrustRequestTypeDef](./type_defs.md#createtrustrequesttypedef).
+[CreateTrustRequestRequestTypeDef](./type_defs.md#createtrustrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -472,8 +483,7 @@ Keyword-only arguments:
 - `ConditionalForwarderIpAddrs`: `List`\[`str`\]
 - `SelectiveAuth`: [SelectiveAuthType](./literals.md#selectiveauthtype)
 
-Returns
-[CreateTrustResultResponseTypeDef](./type_defs.md#createtrustresultresponsetypedef).
+Returns [CreateTrustResultTypeDef](./type_defs.md#createtrustresulttypedef).
 
 ### delete_conditional_forwarder
 
@@ -485,7 +495,7 @@ Boto3 documentation:
 [DirectoryService.Client.delete_conditional_forwarder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_conditional_forwarder)
 
 Arguments mapping described in
-[DeleteConditionalForwarderRequestTypeDef](./type_defs.md#deleteconditionalforwarderrequesttypedef).
+[DeleteConditionalForwarderRequestRequestTypeDef](./type_defs.md#deleteconditionalforwarderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -504,14 +514,14 @@ Boto3 documentation:
 [DirectoryService.Client.delete_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_directory)
 
 Arguments mapping described in
-[DeleteDirectoryRequestTypeDef](./type_defs.md#deletedirectoryrequesttypedef).
+[DeleteDirectoryRequestRequestTypeDef](./type_defs.md#deletedirectoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 
 Returns
-[DeleteDirectoryResultResponseTypeDef](./type_defs.md#deletedirectoryresultresponsetypedef).
+[DeleteDirectoryResultTypeDef](./type_defs.md#deletedirectoryresulttypedef).
 
 ### delete_log_subscription
 
@@ -523,7 +533,7 @@ Boto3 documentation:
 [DirectoryService.Client.delete_log_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_log_subscription)
 
 Arguments mapping described in
-[DeleteLogSubscriptionRequestTypeDef](./type_defs.md#deletelogsubscriptionrequesttypedef).
+[DeleteLogSubscriptionRequestRequestTypeDef](./type_defs.md#deletelogsubscriptionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -541,14 +551,14 @@ Boto3 documentation:
 [DirectoryService.Client.delete_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_snapshot)
 
 Arguments mapping described in
-[DeleteSnapshotRequestTypeDef](./type_defs.md#deletesnapshotrequesttypedef).
+[DeleteSnapshotRequestRequestTypeDef](./type_defs.md#deletesnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SnapshotId`: `str` *(required)*
 
 Returns
-[DeleteSnapshotResultResponseTypeDef](./type_defs.md#deletesnapshotresultresponsetypedef).
+[DeleteSnapshotResultTypeDef](./type_defs.md#deletesnapshotresulttypedef).
 
 ### delete_trust
 
@@ -561,15 +571,14 @@ Boto3 documentation:
 [DirectoryService.Client.delete_trust](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_trust)
 
 Arguments mapping described in
-[DeleteTrustRequestTypeDef](./type_defs.md#deletetrustrequesttypedef).
+[DeleteTrustRequestRequestTypeDef](./type_defs.md#deletetrustrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TrustId`: `str` *(required)*
 - `DeleteAssociatedConditionalForwarder`: `bool`
 
-Returns
-[DeleteTrustResultResponseTypeDef](./type_defs.md#deletetrustresultresponsetypedef).
+Returns [DeleteTrustResultTypeDef](./type_defs.md#deletetrustresulttypedef).
 
 ### deregister_certificate
 
@@ -582,7 +591,7 @@ Boto3 documentation:
 [DirectoryService.Client.deregister_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.deregister_certificate)
 
 Arguments mapping described in
-[DeregisterCertificateRequestTypeDef](./type_defs.md#deregistercertificaterequesttypedef).
+[DeregisterCertificateRequestRequestTypeDef](./type_defs.md#deregistercertificaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -601,7 +610,7 @@ Boto3 documentation:
 [DirectoryService.Client.deregister_event_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.deregister_event_topic)
 
 Arguments mapping described in
-[DeregisterEventTopicRequestTypeDef](./type_defs.md#deregistereventtopicrequesttypedef).
+[DeregisterEventTopicRequestRequestTypeDef](./type_defs.md#deregistereventtopicrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -621,7 +630,7 @@ Boto3 documentation:
 [DirectoryService.Client.describe_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_certificate)
 
 Arguments mapping described in
-[DescribeCertificateRequestTypeDef](./type_defs.md#describecertificaterequesttypedef).
+[DescribeCertificateRequestRequestTypeDef](./type_defs.md#describecertificaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -629,7 +638,7 @@ Keyword-only arguments:
 - `CertificateId`: `str` *(required)*
 
 Returns
-[DescribeCertificateResultResponseTypeDef](./type_defs.md#describecertificateresultresponsetypedef).
+[DescribeCertificateResultTypeDef](./type_defs.md#describecertificateresulttypedef).
 
 ### describe_conditional_forwarders
 
@@ -642,7 +651,7 @@ Boto3 documentation:
 [DirectoryService.Client.describe_conditional_forwarders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_conditional_forwarders)
 
 Arguments mapping described in
-[DescribeConditionalForwardersRequestTypeDef](./type_defs.md#describeconditionalforwardersrequesttypedef).
+[DescribeConditionalForwardersRequestRequestTypeDef](./type_defs.md#describeconditionalforwardersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -650,7 +659,7 @@ Keyword-only arguments:
 - `RemoteDomainNames`: `List`\[`str`\]
 
 Returns
-[DescribeConditionalForwardersResultResponseTypeDef](./type_defs.md#describeconditionalforwardersresultresponsetypedef).
+[DescribeConditionalForwardersResultTypeDef](./type_defs.md#describeconditionalforwardersresulttypedef).
 
 ### describe_directories
 
@@ -662,7 +671,7 @@ Boto3 documentation:
 [DirectoryService.Client.describe_directories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_directories)
 
 Arguments mapping described in
-[DescribeDirectoriesRequestTypeDef](./type_defs.md#describedirectoriesrequesttypedef).
+[DescribeDirectoriesRequestRequestTypeDef](./type_defs.md#describedirectoriesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -671,7 +680,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeDirectoriesResultResponseTypeDef](./type_defs.md#describedirectoriesresultresponsetypedef).
+[DescribeDirectoriesResultTypeDef](./type_defs.md#describedirectoriesresulttypedef).
 
 ### describe_domain_controllers
 
@@ -683,7 +692,7 @@ Boto3 documentation:
 [DirectoryService.Client.describe_domain_controllers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_domain_controllers)
 
 Arguments mapping described in
-[DescribeDomainControllersRequestTypeDef](./type_defs.md#describedomaincontrollersrequesttypedef).
+[DescribeDomainControllersRequestRequestTypeDef](./type_defs.md#describedomaincontrollersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -693,7 +702,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeDomainControllersResultResponseTypeDef](./type_defs.md#describedomaincontrollersresultresponsetypedef).
+[DescribeDomainControllersResultTypeDef](./type_defs.md#describedomaincontrollersresulttypedef).
 
 ### describe_event_topics
 
@@ -706,7 +715,7 @@ Boto3 documentation:
 [DirectoryService.Client.describe_event_topics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_event_topics)
 
 Arguments mapping described in
-[DescribeEventTopicsRequestTypeDef](./type_defs.md#describeeventtopicsrequesttypedef).
+[DescribeEventTopicsRequestRequestTypeDef](./type_defs.md#describeeventtopicsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -714,7 +723,7 @@ Keyword-only arguments:
 - `TopicNames`: `List`\[`str`\]
 
 Returns
-[DescribeEventTopicsResultResponseTypeDef](./type_defs.md#describeeventtopicsresultresponsetypedef).
+[DescribeEventTopicsResultTypeDef](./type_defs.md#describeeventtopicsresulttypedef).
 
 ### describe_ldaps_settings
 
@@ -726,7 +735,7 @@ Boto3 documentation:
 [DirectoryService.Client.describe_ldaps_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_ldaps_settings)
 
 Arguments mapping described in
-[DescribeLDAPSSettingsRequestTypeDef](./type_defs.md#describeldapssettingsrequesttypedef).
+[DescribeLDAPSSettingsRequestRequestTypeDef](./type_defs.md#describeldapssettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -737,7 +746,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeLDAPSSettingsResultResponseTypeDef](./type_defs.md#describeldapssettingsresultresponsetypedef).
+[DescribeLDAPSSettingsResultTypeDef](./type_defs.md#describeldapssettingsresulttypedef).
 
 ### describe_regions
 
@@ -750,7 +759,7 @@ Boto3 documentation:
 [DirectoryService.Client.describe_regions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_regions)
 
 Arguments mapping described in
-[DescribeRegionsRequestTypeDef](./type_defs.md#describeregionsrequesttypedef).
+[DescribeRegionsRequestRequestTypeDef](./type_defs.md#describeregionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -759,7 +768,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeRegionsResultResponseTypeDef](./type_defs.md#describeregionsresultresponsetypedef).
+[DescribeRegionsResultTypeDef](./type_defs.md#describeregionsresulttypedef).
 
 ### describe_shared_directories
 
@@ -771,7 +780,7 @@ Boto3 documentation:
 [DirectoryService.Client.describe_shared_directories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_shared_directories)
 
 Arguments mapping described in
-[DescribeSharedDirectoriesRequestTypeDef](./type_defs.md#describeshareddirectoriesrequesttypedef).
+[DescribeSharedDirectoriesRequestRequestTypeDef](./type_defs.md#describeshareddirectoriesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -781,7 +790,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeSharedDirectoriesResultResponseTypeDef](./type_defs.md#describeshareddirectoriesresultresponsetypedef).
+[DescribeSharedDirectoriesResultTypeDef](./type_defs.md#describeshareddirectoriesresulttypedef).
 
 ### describe_snapshots
 
@@ -793,7 +802,7 @@ Boto3 documentation:
 [DirectoryService.Client.describe_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_snapshots)
 
 Arguments mapping described in
-[DescribeSnapshotsRequestTypeDef](./type_defs.md#describesnapshotsrequesttypedef).
+[DescribeSnapshotsRequestRequestTypeDef](./type_defs.md#describesnapshotsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -803,7 +812,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeSnapshotsResultResponseTypeDef](./type_defs.md#describesnapshotsresultresponsetypedef).
+[DescribeSnapshotsResultTypeDef](./type_defs.md#describesnapshotsresulttypedef).
 
 ### describe_trusts
 
@@ -815,7 +824,7 @@ Boto3 documentation:
 [DirectoryService.Client.describe_trusts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_trusts)
 
 Arguments mapping described in
-[DescribeTrustsRequestTypeDef](./type_defs.md#describetrustsrequesttypedef).
+[DescribeTrustsRequestRequestTypeDef](./type_defs.md#describetrustsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -825,7 +834,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeTrustsResultResponseTypeDef](./type_defs.md#describetrustsresultresponsetypedef).
+[DescribeTrustsResultTypeDef](./type_defs.md#describetrustsresulttypedef).
 
 ### disable_client_authentication
 
@@ -837,7 +846,7 @@ Boto3 documentation:
 [DirectoryService.Client.disable_client_authentication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_client_authentication)
 
 Arguments mapping described in
-[DisableClientAuthenticationRequestTypeDef](./type_defs.md#disableclientauthenticationrequesttypedef).
+[DisableClientAuthenticationRequestRequestTypeDef](./type_defs.md#disableclientauthenticationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -858,7 +867,7 @@ Boto3 documentation:
 [DirectoryService.Client.disable_ldaps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_ldaps)
 
 Arguments mapping described in
-[DisableLDAPSRequestTypeDef](./type_defs.md#disableldapsrequesttypedef).
+[DisableLDAPSRequestRequestTypeDef](./type_defs.md#disableldapsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -879,7 +888,7 @@ Boto3 documentation:
 [DirectoryService.Client.disable_radius](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_radius)
 
 Arguments mapping described in
-[DisableRadiusRequestTypeDef](./type_defs.md#disableradiusrequesttypedef).
+[DisableRadiusRequestRequestTypeDef](./type_defs.md#disableradiusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -897,7 +906,7 @@ Boto3 documentation:
 [DirectoryService.Client.disable_sso](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_sso)
 
 Arguments mapping described in
-[DisableSsoRequestTypeDef](./type_defs.md#disablessorequesttypedef).
+[DisableSsoRequestRequestTypeDef](./type_defs.md#disablessorequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -917,7 +926,7 @@ Boto3 documentation:
 [DirectoryService.Client.enable_client_authentication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_client_authentication)
 
 Arguments mapping described in
-[EnableClientAuthenticationRequestTypeDef](./type_defs.md#enableclientauthenticationrequesttypedef).
+[EnableClientAuthenticationRequestRequestTypeDef](./type_defs.md#enableclientauthenticationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -939,7 +948,7 @@ Boto3 documentation:
 [DirectoryService.Client.enable_ldaps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_ldaps)
 
 Arguments mapping described in
-[EnableLDAPSRequestTypeDef](./type_defs.md#enableldapsrequesttypedef).
+[EnableLDAPSRequestRequestTypeDef](./type_defs.md#enableldapsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -960,7 +969,7 @@ Boto3 documentation:
 [DirectoryService.Client.enable_radius](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_radius)
 
 Arguments mapping described in
-[EnableRadiusRequestTypeDef](./type_defs.md#enableradiusrequesttypedef).
+[EnableRadiusRequestRequestTypeDef](./type_defs.md#enableradiusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -980,7 +989,7 @@ Boto3 documentation:
 [DirectoryService.Client.enable_sso](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_sso)
 
 Arguments mapping described in
-[EnableSsoRequestTypeDef](./type_defs.md#enablessorequesttypedef).
+[EnableSsoRequestRequestTypeDef](./type_defs.md#enablessorequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1018,7 +1027,7 @@ Boto3 documentation:
 [DirectoryService.Client.get_directory_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.get_directory_limits)
 
 Returns
-[GetDirectoryLimitsResultResponseTypeDef](./type_defs.md#getdirectorylimitsresultresponsetypedef).
+[GetDirectoryLimitsResultTypeDef](./type_defs.md#getdirectorylimitsresulttypedef).
 
 ### get_snapshot_limits
 
@@ -1030,14 +1039,14 @@ Boto3 documentation:
 [DirectoryService.Client.get_snapshot_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.get_snapshot_limits)
 
 Arguments mapping described in
-[GetSnapshotLimitsRequestTypeDef](./type_defs.md#getsnapshotlimitsrequesttypedef).
+[GetSnapshotLimitsRequestRequestTypeDef](./type_defs.md#getsnapshotlimitsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 
 Returns
-[GetSnapshotLimitsResultResponseTypeDef](./type_defs.md#getsnapshotlimitsresultresponsetypedef).
+[GetSnapshotLimitsResultTypeDef](./type_defs.md#getsnapshotlimitsresulttypedef).
 
 ### list_certificates
 
@@ -1050,7 +1059,7 @@ Boto3 documentation:
 [DirectoryService.Client.list_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_certificates)
 
 Arguments mapping described in
-[ListCertificatesRequestTypeDef](./type_defs.md#listcertificatesrequesttypedef).
+[ListCertificatesRequestRequestTypeDef](./type_defs.md#listcertificatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1059,7 +1068,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListCertificatesResultResponseTypeDef](./type_defs.md#listcertificatesresultresponsetypedef).
+[ListCertificatesResultTypeDef](./type_defs.md#listcertificatesresulttypedef).
 
 ### list_ip_routes
 
@@ -1071,7 +1080,7 @@ Boto3 documentation:
 [DirectoryService.Client.list_ip_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_ip_routes)
 
 Arguments mapping described in
-[ListIpRoutesRequestTypeDef](./type_defs.md#listiproutesrequesttypedef).
+[ListIpRoutesRequestRequestTypeDef](./type_defs.md#listiproutesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1079,8 +1088,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `Limit`: `int`
 
-Returns
-[ListIpRoutesResultResponseTypeDef](./type_defs.md#listiproutesresultresponsetypedef).
+Returns [ListIpRoutesResultTypeDef](./type_defs.md#listiproutesresulttypedef).
 
 ### list_log_subscriptions
 
@@ -1092,7 +1100,7 @@ Boto3 documentation:
 [DirectoryService.Client.list_log_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_log_subscriptions)
 
 Arguments mapping described in
-[ListLogSubscriptionsRequestTypeDef](./type_defs.md#listlogsubscriptionsrequesttypedef).
+[ListLogSubscriptionsRequestRequestTypeDef](./type_defs.md#listlogsubscriptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1101,7 +1109,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListLogSubscriptionsResultResponseTypeDef](./type_defs.md#listlogsubscriptionsresultresponsetypedef).
+[ListLogSubscriptionsResultTypeDef](./type_defs.md#listlogsubscriptionsresulttypedef).
 
 ### list_schema_extensions
 
@@ -1113,7 +1121,7 @@ Boto3 documentation:
 [DirectoryService.Client.list_schema_extensions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_schema_extensions)
 
 Arguments mapping described in
-[ListSchemaExtensionsRequestTypeDef](./type_defs.md#listschemaextensionsrequesttypedef).
+[ListSchemaExtensionsRequestRequestTypeDef](./type_defs.md#listschemaextensionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1122,7 +1130,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListSchemaExtensionsResultResponseTypeDef](./type_defs.md#listschemaextensionsresultresponsetypedef).
+[ListSchemaExtensionsResultTypeDef](./type_defs.md#listschemaextensionsresulttypedef).
 
 ### list_tags_for_resource
 
@@ -1134,7 +1142,7 @@ Boto3 documentation:
 [DirectoryService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1143,7 +1151,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListTagsForResourceResultResponseTypeDef](./type_defs.md#listtagsforresourceresultresponsetypedef).
+[ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
 
 ### register_certificate
 
@@ -1155,7 +1163,7 @@ Boto3 documentation:
 [DirectoryService.Client.register_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.register_certificate)
 
 Arguments mapping described in
-[RegisterCertificateRequestTypeDef](./type_defs.md#registercertificaterequesttypedef).
+[RegisterCertificateRequestRequestTypeDef](./type_defs.md#registercertificaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1166,7 +1174,7 @@ Keyword-only arguments:
   [ClientCertAuthSettingsTypeDef](./type_defs.md#clientcertauthsettingstypedef)
 
 Returns
-[RegisterCertificateResultResponseTypeDef](./type_defs.md#registercertificateresultresponsetypedef).
+[RegisterCertificateResultTypeDef](./type_defs.md#registercertificateresulttypedef).
 
 ### register_event_topic
 
@@ -1178,7 +1186,7 @@ Boto3 documentation:
 [DirectoryService.Client.register_event_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.register_event_topic)
 
 Arguments mapping described in
-[RegisterEventTopicRequestTypeDef](./type_defs.md#registereventtopicrequesttypedef).
+[RegisterEventTopicRequestRequestTypeDef](./type_defs.md#registereventtopicrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1198,14 +1206,14 @@ Boto3 documentation:
 [DirectoryService.Client.reject_shared_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.reject_shared_directory)
 
 Arguments mapping described in
-[RejectSharedDirectoryRequestTypeDef](./type_defs.md#rejectshareddirectoryrequesttypedef).
+[RejectSharedDirectoryRequestRequestTypeDef](./type_defs.md#rejectshareddirectoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SharedDirectoryId`: `str` *(required)*
 
 Returns
-[RejectSharedDirectoryResultResponseTypeDef](./type_defs.md#rejectshareddirectoryresultresponsetypedef).
+[RejectSharedDirectoryResultTypeDef](./type_defs.md#rejectshareddirectoryresulttypedef).
 
 ### remove_ip_routes
 
@@ -1217,7 +1225,7 @@ Boto3 documentation:
 [DirectoryService.Client.remove_ip_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_ip_routes)
 
 Arguments mapping described in
-[RemoveIpRoutesRequestTypeDef](./type_defs.md#removeiproutesrequesttypedef).
+[RemoveIpRoutesRequestRequestTypeDef](./type_defs.md#removeiproutesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1237,7 +1245,7 @@ Boto3 documentation:
 [DirectoryService.Client.remove_region](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_region)
 
 Arguments mapping described in
-[RemoveRegionRequestTypeDef](./type_defs.md#removeregionrequesttypedef).
+[RemoveRegionRequestRequestTypeDef](./type_defs.md#removeregionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1255,7 +1263,7 @@ Boto3 documentation:
 [DirectoryService.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_tags_from_resource)
 
 Arguments mapping described in
-[RemoveTagsFromResourceRequestTypeDef](./type_defs.md#removetagsfromresourcerequesttypedef).
+[RemoveTagsFromResourceRequestRequestTypeDef](./type_defs.md#removetagsfromresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1275,7 +1283,7 @@ Boto3 documentation:
 [DirectoryService.Client.reset_user_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.reset_user_password)
 
 Arguments mapping described in
-[ResetUserPasswordRequestTypeDef](./type_defs.md#resetuserpasswordrequesttypedef).
+[ResetUserPasswordRequestRequestTypeDef](./type_defs.md#resetuserpasswordrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1295,7 +1303,7 @@ Boto3 documentation:
 [DirectoryService.Client.restore_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.restore_from_snapshot)
 
 Arguments mapping described in
-[RestoreFromSnapshotRequestTypeDef](./type_defs.md#restorefromsnapshotrequesttypedef).
+[RestoreFromSnapshotRequestRequestTypeDef](./type_defs.md#restorefromsnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1314,7 +1322,7 @@ Boto3 documentation:
 [DirectoryService.Client.share_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.share_directory)
 
 Arguments mapping described in
-[ShareDirectoryRequestTypeDef](./type_defs.md#sharedirectoryrequesttypedef).
+[ShareDirectoryRequestRequestTypeDef](./type_defs.md#sharedirectoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1325,7 +1333,7 @@ Keyword-only arguments:
 - `ShareNotes`: `str`
 
 Returns
-[ShareDirectoryResultResponseTypeDef](./type_defs.md#sharedirectoryresultresponsetypedef).
+[ShareDirectoryResultTypeDef](./type_defs.md#sharedirectoryresulttypedef).
 
 ### start_schema_extension
 
@@ -1337,7 +1345,7 @@ Boto3 documentation:
 [DirectoryService.Client.start_schema_extension](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.start_schema_extension)
 
 Arguments mapping described in
-[StartSchemaExtensionRequestTypeDef](./type_defs.md#startschemaextensionrequesttypedef).
+[StartSchemaExtensionRequestRequestTypeDef](./type_defs.md#startschemaextensionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1347,7 +1355,7 @@ Keyword-only arguments:
 - `Description`: `str` *(required)*
 
 Returns
-[StartSchemaExtensionResultResponseTypeDef](./type_defs.md#startschemaextensionresultresponsetypedef).
+[StartSchemaExtensionResultTypeDef](./type_defs.md#startschemaextensionresulttypedef).
 
 ### unshare_directory
 
@@ -1359,7 +1367,7 @@ Boto3 documentation:
 [DirectoryService.Client.unshare_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.unshare_directory)
 
 Arguments mapping described in
-[UnshareDirectoryRequestTypeDef](./type_defs.md#unsharedirectoryrequesttypedef).
+[UnshareDirectoryRequestRequestTypeDef](./type_defs.md#unsharedirectoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1368,7 +1376,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UnshareDirectoryResultResponseTypeDef](./type_defs.md#unsharedirectoryresultresponsetypedef).
+[UnshareDirectoryResultTypeDef](./type_defs.md#unsharedirectoryresulttypedef).
 
 ### update_conditional_forwarder
 
@@ -1380,7 +1388,7 @@ Boto3 documentation:
 [DirectoryService.Client.update_conditional_forwarder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_conditional_forwarder)
 
 Arguments mapping described in
-[UpdateConditionalForwarderRequestTypeDef](./type_defs.md#updateconditionalforwarderrequesttypedef).
+[UpdateConditionalForwarderRequestRequestTypeDef](./type_defs.md#updateconditionalforwarderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1401,7 +1409,7 @@ Boto3 documentation:
 [DirectoryService.Client.update_number_of_domain_controllers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_number_of_domain_controllers)
 
 Arguments mapping described in
-[UpdateNumberOfDomainControllersRequestTypeDef](./type_defs.md#updatenumberofdomaincontrollersrequesttypedef).
+[UpdateNumberOfDomainControllersRequestRequestTypeDef](./type_defs.md#updatenumberofdomaincontrollersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1421,7 +1429,7 @@ Boto3 documentation:
 [DirectoryService.Client.update_radius](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_radius)
 
 Arguments mapping described in
-[UpdateRadiusRequestTypeDef](./type_defs.md#updateradiusrequesttypedef).
+[UpdateRadiusRequestRequestTypeDef](./type_defs.md#updateradiusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1442,15 +1450,14 @@ Boto3 documentation:
 [DirectoryService.Client.update_trust](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_trust)
 
 Arguments mapping described in
-[UpdateTrustRequestTypeDef](./type_defs.md#updatetrustrequesttypedef).
+[UpdateTrustRequestRequestTypeDef](./type_defs.md#updatetrustrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TrustId`: `str` *(required)*
 - `SelectiveAuth`: [SelectiveAuthType](./literals.md#selectiveauthtype)
 
-Returns
-[UpdateTrustResultResponseTypeDef](./type_defs.md#updatetrustresultresponsetypedef).
+Returns [UpdateTrustResultTypeDef](./type_defs.md#updatetrustresulttypedef).
 
 ### verify_trust
 
@@ -1463,14 +1470,13 @@ Boto3 documentation:
 [DirectoryService.Client.verify_trust](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.verify_trust)
 
 Arguments mapping described in
-[VerifyTrustRequestTypeDef](./type_defs.md#verifytrustrequesttypedef).
+[VerifyTrustRequestRequestTypeDef](./type_defs.md#verifytrustrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TrustId`: `str` *(required)*
 
-Returns
-[VerifyTrustResultResponseTypeDef](./type_defs.md#verifytrustresultresponsetypedef).
+Returns [VerifyTrustResultTypeDef](./type_defs.md#verifytrustresulttypedef).
 
 ### get_paginator
 

@@ -11,6 +11,7 @@ type annotations stubs module
   - [DynamoDBClient](#dynamodbclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [batch_execute_statement](#batch_execute_statement)
     - [batch_get_item](#batch_get_item)
     - [batch_write_item](#batch_write_item)
@@ -129,6 +130,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+DynamoDBClient exceptions.
+
+Type annotations for `boto3.client("dynamodb").exceptions` method.
+
+Boto3 documentation:
+[DynamoDB.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### batch_execute_statement
 
 This operation allows you to perform batch reads and writes on data stored in
@@ -140,7 +152,7 @@ Boto3 documentation:
 [DynamoDB.Client.batch_execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.batch_execute_statement)
 
 Arguments mapping described in
-[BatchExecuteStatementInputTypeDef](./type_defs.md#batchexecutestatementinputtypedef).
+[BatchExecuteStatementInputRequestTypeDef](./type_defs.md#batchexecutestatementinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -149,7 +161,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchExecuteStatementOutputResponseTypeDef](./type_defs.md#batchexecutestatementoutputresponsetypedef).
+[BatchExecuteStatementOutputTypeDef](./type_defs.md#batchexecutestatementoutputtypedef).
 
 ### batch_get_item
 
@@ -162,7 +174,7 @@ Boto3 documentation:
 [DynamoDB.Client.batch_get_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.batch_get_item)
 
 Arguments mapping described in
-[BatchGetItemInputTypeDef](./type_defs.md#batchgetiteminputtypedef).
+[BatchGetItemInputRequestTypeDef](./type_defs.md#batchgetiteminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -172,8 +184,7 @@ Keyword-only arguments:
 - `ReturnConsumedCapacity`:
   [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 
-Returns
-[BatchGetItemOutputResponseTypeDef](./type_defs.md#batchgetitemoutputresponsetypedef).
+Returns [BatchGetItemOutputTypeDef](./type_defs.md#batchgetitemoutputtypedef).
 
 ### batch_write_item
 
@@ -186,7 +197,7 @@ Boto3 documentation:
 [DynamoDB.Client.batch_write_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.batch_write_item)
 
 Arguments mapping described in
-[BatchWriteItemInputTypeDef](./type_defs.md#batchwriteiteminputtypedef).
+[BatchWriteItemInputRequestTypeDef](./type_defs.md#batchwriteiteminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -199,7 +210,7 @@ Keyword-only arguments:
   [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
 
 Returns
-[BatchWriteItemOutputResponseTypeDef](./type_defs.md#batchwriteitemoutputresponsetypedef).
+[BatchWriteItemOutputTypeDef](./type_defs.md#batchwriteitemoutputtypedef).
 
 ### can_paginate
 
@@ -226,15 +237,14 @@ Boto3 documentation:
 [DynamoDB.Client.create_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.create_backup)
 
 Arguments mapping described in
-[CreateBackupInputTypeDef](./type_defs.md#createbackupinputtypedef).
+[CreateBackupInputRequestTypeDef](./type_defs.md#createbackupinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 - `BackupName`: `str` *(required)*
 
-Returns
-[CreateBackupOutputResponseTypeDef](./type_defs.md#createbackupoutputresponsetypedef).
+Returns [CreateBackupOutputTypeDef](./type_defs.md#createbackupoutputtypedef).
 
 ### create_global_table
 
@@ -246,7 +256,7 @@ Boto3 documentation:
 [DynamoDB.Client.create_global_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.create_global_table)
 
 Arguments mapping described in
-[CreateGlobalTableInputTypeDef](./type_defs.md#createglobaltableinputtypedef).
+[CreateGlobalTableInputRequestTypeDef](./type_defs.md#createglobaltableinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -255,7 +265,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateGlobalTableOutputResponseTypeDef](./type_defs.md#createglobaltableoutputresponsetypedef).
+[CreateGlobalTableOutputTypeDef](./type_defs.md#createglobaltableoutputtypedef).
 
 ### create_table
 
@@ -267,7 +277,7 @@ Boto3 documentation:
 [DynamoDB.Client.create_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.create_table)
 
 Arguments mapping described in
-[CreateTableInputTypeDef](./type_defs.md#createtableinputtypedef).
+[CreateTableInputRequestTypeDef](./type_defs.md#createtableinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -291,8 +301,7 @@ Keyword-only arguments:
   [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateTableOutputResponseTypeDef](./type_defs.md#createtableoutputresponsetypedef).
+Returns [CreateTableOutputTypeDef](./type_defs.md#createtableoutputtypedef).
 
 ### delete_backup
 
@@ -304,14 +313,13 @@ Boto3 documentation:
 [DynamoDB.Client.delete_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.delete_backup)
 
 Arguments mapping described in
-[DeleteBackupInputTypeDef](./type_defs.md#deletebackupinputtypedef).
+[DeleteBackupInputRequestTypeDef](./type_defs.md#deletebackupinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `BackupArn`: `str` *(required)*
 
-Returns
-[DeleteBackupOutputResponseTypeDef](./type_defs.md#deletebackupoutputresponsetypedef).
+Returns [DeleteBackupOutputTypeDef](./type_defs.md#deletebackupoutputtypedef).
 
 ### delete_item
 
@@ -323,7 +331,7 @@ Boto3 documentation:
 [DynamoDB.Client.delete_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.delete_item)
 
 Arguments mapping described in
-[DeleteItemInputTypeDef](./type_defs.md#deleteiteminputtypedef).
+[DeleteItemInputRequestTypeDef](./type_defs.md#deleteiteminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -348,8 +356,7 @@ Keyword-only arguments:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
   `Dict`\[`str`, `Any`\], `None`\]\]
 
-Returns
-[DeleteItemOutputResponseTypeDef](./type_defs.md#deleteitemoutputresponsetypedef).
+Returns [DeleteItemOutputTypeDef](./type_defs.md#deleteitemoutputtypedef).
 
 ### delete_table
 
@@ -361,14 +368,13 @@ Boto3 documentation:
 [DynamoDB.Client.delete_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.delete_table)
 
 Arguments mapping described in
-[DeleteTableInputTypeDef](./type_defs.md#deletetableinputtypedef).
+[DeleteTableInputRequestTypeDef](./type_defs.md#deletetableinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 
-Returns
-[DeleteTableOutputResponseTypeDef](./type_defs.md#deletetableoutputresponsetypedef).
+Returns [DeleteTableOutputTypeDef](./type_defs.md#deletetableoutputtypedef).
 
 ### describe_backup
 
@@ -380,14 +386,14 @@ Boto3 documentation:
 [DynamoDB.Client.describe_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_backup)
 
 Arguments mapping described in
-[DescribeBackupInputTypeDef](./type_defs.md#describebackupinputtypedef).
+[DescribeBackupInputRequestTypeDef](./type_defs.md#describebackupinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `BackupArn`: `str` *(required)*
 
 Returns
-[DescribeBackupOutputResponseTypeDef](./type_defs.md#describebackupoutputresponsetypedef).
+[DescribeBackupOutputTypeDef](./type_defs.md#describebackupoutputtypedef).
 
 ### describe_continuous_backups
 
@@ -401,14 +407,14 @@ Boto3 documentation:
 [DynamoDB.Client.describe_continuous_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_continuous_backups)
 
 Arguments mapping described in
-[DescribeContinuousBackupsInputTypeDef](./type_defs.md#describecontinuousbackupsinputtypedef).
+[DescribeContinuousBackupsInputRequestTypeDef](./type_defs.md#describecontinuousbackupsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 
 Returns
-[DescribeContinuousBackupsOutputResponseTypeDef](./type_defs.md#describecontinuousbackupsoutputresponsetypedef).
+[DescribeContinuousBackupsOutputTypeDef](./type_defs.md#describecontinuousbackupsoutputtypedef).
 
 ### describe_contributor_insights
 
@@ -422,7 +428,7 @@ Boto3 documentation:
 [DynamoDB.Client.describe_contributor_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_contributor_insights)
 
 Arguments mapping described in
-[DescribeContributorInsightsInputTypeDef](./type_defs.md#describecontributorinsightsinputtypedef).
+[DescribeContributorInsightsInputRequestTypeDef](./type_defs.md#describecontributorinsightsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -430,7 +436,7 @@ Keyword-only arguments:
 - `IndexName`: `str`
 
 Returns
-[DescribeContributorInsightsOutputResponseTypeDef](./type_defs.md#describecontributorinsightsoutputresponsetypedef).
+[DescribeContributorInsightsOutputTypeDef](./type_defs.md#describecontributorinsightsoutputtypedef).
 
 ### describe_endpoints
 
@@ -442,7 +448,7 @@ Boto3 documentation:
 [DynamoDB.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_endpoints)
 
 Returns
-[DescribeEndpointsResponseResponseTypeDef](./type_defs.md#describeendpointsresponseresponsetypedef).
+[DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
 
 ### describe_export
 
@@ -454,14 +460,14 @@ Boto3 documentation:
 [DynamoDB.Client.describe_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_export)
 
 Arguments mapping described in
-[DescribeExportInputTypeDef](./type_defs.md#describeexportinputtypedef).
+[DescribeExportInputRequestTypeDef](./type_defs.md#describeexportinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ExportArn`: `str` *(required)*
 
 Returns
-[DescribeExportOutputResponseTypeDef](./type_defs.md#describeexportoutputresponsetypedef).
+[DescribeExportOutputTypeDef](./type_defs.md#describeexportoutputtypedef).
 
 ### describe_global_table
 
@@ -473,14 +479,14 @@ Boto3 documentation:
 [DynamoDB.Client.describe_global_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_global_table)
 
 Arguments mapping described in
-[DescribeGlobalTableInputTypeDef](./type_defs.md#describeglobaltableinputtypedef).
+[DescribeGlobalTableInputRequestTypeDef](./type_defs.md#describeglobaltableinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `GlobalTableName`: `str` *(required)*
 
 Returns
-[DescribeGlobalTableOutputResponseTypeDef](./type_defs.md#describeglobaltableoutputresponsetypedef).
+[DescribeGlobalTableOutputTypeDef](./type_defs.md#describeglobaltableoutputtypedef).
 
 ### describe_global_table_settings
 
@@ -493,14 +499,14 @@ Boto3 documentation:
 [DynamoDB.Client.describe_global_table_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_global_table_settings)
 
 Arguments mapping described in
-[DescribeGlobalTableSettingsInputTypeDef](./type_defs.md#describeglobaltablesettingsinputtypedef).
+[DescribeGlobalTableSettingsInputRequestTypeDef](./type_defs.md#describeglobaltablesettingsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `GlobalTableName`: `str` *(required)*
 
 Returns
-[DescribeGlobalTableSettingsOutputResponseTypeDef](./type_defs.md#describeglobaltablesettingsoutputresponsetypedef).
+[DescribeGlobalTableSettingsOutputTypeDef](./type_defs.md#describeglobaltablesettingsoutputtypedef).
 
 ### describe_kinesis_streaming_destination
 
@@ -513,14 +519,14 @@ Boto3 documentation:
 [DynamoDB.Client.describe_kinesis_streaming_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_kinesis_streaming_destination)
 
 Arguments mapping described in
-[DescribeKinesisStreamingDestinationInputTypeDef](./type_defs.md#describekinesisstreamingdestinationinputtypedef).
+[DescribeKinesisStreamingDestinationInputRequestTypeDef](./type_defs.md#describekinesisstreamingdestinationinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 
 Returns
-[DescribeKinesisStreamingDestinationOutputResponseTypeDef](./type_defs.md#describekinesisstreamingdestinationoutputresponsetypedef).
+[DescribeKinesisStreamingDestinationOutputTypeDef](./type_defs.md#describekinesisstreamingdestinationoutputtypedef).
 
 ### describe_limits
 
@@ -534,7 +540,7 @@ Boto3 documentation:
 [DynamoDB.Client.describe_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_limits)
 
 Returns
-[DescribeLimitsOutputResponseTypeDef](./type_defs.md#describelimitsoutputresponsetypedef).
+[DescribeLimitsOutputTypeDef](./type_defs.md#describelimitsoutputtypedef).
 
 ### describe_table
 
@@ -547,14 +553,14 @@ Boto3 documentation:
 [DynamoDB.Client.describe_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_table)
 
 Arguments mapping described in
-[DescribeTableInputTypeDef](./type_defs.md#describetableinputtypedef).
+[DescribeTableInputRequestTypeDef](./type_defs.md#describetableinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 
 Returns
-[DescribeTableOutputResponseTypeDef](./type_defs.md#describetableoutputresponsetypedef).
+[DescribeTableOutputTypeDef](./type_defs.md#describetableoutputtypedef).
 
 ### describe_table_replica_auto_scaling
 
@@ -567,14 +573,14 @@ Boto3 documentation:
 [DynamoDB.Client.describe_table_replica_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_table_replica_auto_scaling)
 
 Arguments mapping described in
-[DescribeTableReplicaAutoScalingInputTypeDef](./type_defs.md#describetablereplicaautoscalinginputtypedef).
+[DescribeTableReplicaAutoScalingInputRequestTypeDef](./type_defs.md#describetablereplicaautoscalinginputrequesttypedef).
 
 Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 
 Returns
-[DescribeTableReplicaAutoScalingOutputResponseTypeDef](./type_defs.md#describetablereplicaautoscalingoutputresponsetypedef).
+[DescribeTableReplicaAutoScalingOutputTypeDef](./type_defs.md#describetablereplicaautoscalingoutputtypedef).
 
 ### describe_time_to_live
 
@@ -586,14 +592,14 @@ Boto3 documentation:
 [DynamoDB.Client.describe_time_to_live](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_time_to_live)
 
 Arguments mapping described in
-[DescribeTimeToLiveInputTypeDef](./type_defs.md#describetimetoliveinputtypedef).
+[DescribeTimeToLiveInputRequestTypeDef](./type_defs.md#describetimetoliveinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 
 Returns
-[DescribeTimeToLiveOutputResponseTypeDef](./type_defs.md#describetimetoliveoutputresponsetypedef).
+[DescribeTimeToLiveOutputTypeDef](./type_defs.md#describetimetoliveoutputtypedef).
 
 ### disable_kinesis_streaming_destination
 
@@ -606,7 +612,7 @@ Boto3 documentation:
 [DynamoDB.Client.disable_kinesis_streaming_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.disable_kinesis_streaming_destination)
 
 Arguments mapping described in
-[KinesisStreamingDestinationInputTypeDef](./type_defs.md#kinesisstreamingdestinationinputtypedef).
+[KinesisStreamingDestinationInputRequestTypeDef](./type_defs.md#kinesisstreamingdestinationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -614,7 +620,7 @@ Keyword-only arguments:
 - `StreamArn`: `str` *(required)*
 
 Returns
-[KinesisStreamingDestinationOutputResponseTypeDef](./type_defs.md#kinesisstreamingdestinationoutputresponsetypedef).
+[KinesisStreamingDestinationOutputTypeDef](./type_defs.md#kinesisstreamingdestinationoutputtypedef).
 
 ### enable_kinesis_streaming_destination
 
@@ -628,7 +634,7 @@ Boto3 documentation:
 [DynamoDB.Client.enable_kinesis_streaming_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.enable_kinesis_streaming_destination)
 
 Arguments mapping described in
-[KinesisStreamingDestinationInputTypeDef](./type_defs.md#kinesisstreamingdestinationinputtypedef).
+[KinesisStreamingDestinationInputRequestTypeDef](./type_defs.md#kinesisstreamingdestinationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -636,7 +642,7 @@ Keyword-only arguments:
 - `StreamArn`: `str` *(required)*
 
 Returns
-[KinesisStreamingDestinationOutputResponseTypeDef](./type_defs.md#kinesisstreamingdestinationoutputresponsetypedef).
+[KinesisStreamingDestinationOutputTypeDef](./type_defs.md#kinesisstreamingdestinationoutputtypedef).
 
 ### execute_statement
 
@@ -649,7 +655,7 @@ Boto3 documentation:
 [DynamoDB.Client.execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.execute_statement)
 
 Arguments mapping described in
-[ExecuteStatementInputTypeDef](./type_defs.md#executestatementinputtypedef).
+[ExecuteStatementInputRequestTypeDef](./type_defs.md#executestatementinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -661,7 +667,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ExecuteStatementOutputResponseTypeDef](./type_defs.md#executestatementoutputresponsetypedef).
+[ExecuteStatementOutputTypeDef](./type_defs.md#executestatementoutputtypedef).
 
 ### execute_transaction
 
@@ -674,7 +680,7 @@ Boto3 documentation:
 [DynamoDB.Client.execute_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.execute_transaction)
 
 Arguments mapping described in
-[ExecuteTransactionInputTypeDef](./type_defs.md#executetransactioninputtypedef).
+[ExecuteTransactionInputRequestTypeDef](./type_defs.md#executetransactioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -684,7 +690,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[ExecuteTransactionOutputResponseTypeDef](./type_defs.md#executetransactionoutputresponsetypedef).
+[ExecuteTransactionOutputTypeDef](./type_defs.md#executetransactionoutputtypedef).
 
 ### export_table_to_point_in_time
 
@@ -697,7 +703,7 @@ Boto3 documentation:
 [DynamoDB.Client.export_table_to_point_in_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.export_table_to_point_in_time)
 
 Arguments mapping described in
-[ExportTableToPointInTimeInputTypeDef](./type_defs.md#exporttabletopointintimeinputtypedef).
+[ExportTableToPointInTimeInputRequestTypeDef](./type_defs.md#exporttabletopointintimeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -712,7 +718,7 @@ Keyword-only arguments:
 - `ExportFormat`: [ExportFormatType](./literals.md#exportformattype)
 
 Returns
-[ExportTableToPointInTimeOutputResponseTypeDef](./type_defs.md#exporttabletopointintimeoutputresponsetypedef).
+[ExportTableToPointInTimeOutputTypeDef](./type_defs.md#exporttabletopointintimeoutputtypedef).
 
 ### generate_presigned_url
 
@@ -743,7 +749,7 @@ Boto3 documentation:
 [DynamoDB.Client.get_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.get_item)
 
 Arguments mapping described in
-[GetItemInputTypeDef](./type_defs.md#getiteminputtypedef).
+[GetItemInputRequestTypeDef](./type_defs.md#getiteminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -759,8 +765,7 @@ Keyword-only arguments:
 - `ProjectionExpression`: `str`
 - `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
 
-Returns
-[GetItemOutputResponseTypeDef](./type_defs.md#getitemoutputresponsetypedef).
+Returns [GetItemOutputTypeDef](./type_defs.md#getitemoutputtypedef).
 
 ### list_backups
 
@@ -772,7 +777,7 @@ Boto3 documentation:
 [DynamoDB.Client.list_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_backups)
 
 Arguments mapping described in
-[ListBackupsInputTypeDef](./type_defs.md#listbackupsinputtypedef).
+[ListBackupsInputRequestTypeDef](./type_defs.md#listbackupsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -783,8 +788,7 @@ Keyword-only arguments:
 - `ExclusiveStartBackupArn`: `str`
 - `BackupType`: [BackupTypeFilterType](./literals.md#backuptypefiltertype)
 
-Returns
-[ListBackupsOutputResponseTypeDef](./type_defs.md#listbackupsoutputresponsetypedef).
+Returns [ListBackupsOutputTypeDef](./type_defs.md#listbackupsoutputtypedef).
 
 ### list_contributor_insights
 
@@ -798,7 +802,7 @@ Boto3 documentation:
 [DynamoDB.Client.list_contributor_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_contributor_insights)
 
 Arguments mapping described in
-[ListContributorInsightsInputTypeDef](./type_defs.md#listcontributorinsightsinputtypedef).
+[ListContributorInsightsInputRequestTypeDef](./type_defs.md#listcontributorinsightsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -807,7 +811,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListContributorInsightsOutputResponseTypeDef](./type_defs.md#listcontributorinsightsoutputresponsetypedef).
+[ListContributorInsightsOutputTypeDef](./type_defs.md#listcontributorinsightsoutputtypedef).
 
 ### list_exports
 
@@ -819,7 +823,7 @@ Boto3 documentation:
 [DynamoDB.Client.list_exports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_exports)
 
 Arguments mapping described in
-[ListExportsInputTypeDef](./type_defs.md#listexportsinputtypedef).
+[ListExportsInputRequestTypeDef](./type_defs.md#listexportsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -827,8 +831,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListExportsOutputResponseTypeDef](./type_defs.md#listexportsoutputresponsetypedef).
+Returns [ListExportsOutputTypeDef](./type_defs.md#listexportsoutputtypedef).
 
 ### list_global_tables
 
@@ -840,7 +843,7 @@ Boto3 documentation:
 [DynamoDB.Client.list_global_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_global_tables)
 
 Arguments mapping described in
-[ListGlobalTablesInputTypeDef](./type_defs.md#listglobaltablesinputtypedef).
+[ListGlobalTablesInputRequestTypeDef](./type_defs.md#listglobaltablesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -849,7 +852,7 @@ Keyword-only arguments:
 - `RegionName`: `str`
 
 Returns
-[ListGlobalTablesOutputResponseTypeDef](./type_defs.md#listglobaltablesoutputresponsetypedef).
+[ListGlobalTablesOutputTypeDef](./type_defs.md#listglobaltablesoutputtypedef).
 
 ### list_tables
 
@@ -862,15 +865,14 @@ Boto3 documentation:
 [DynamoDB.Client.list_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_tables)
 
 Arguments mapping described in
-[ListTablesInputTypeDef](./type_defs.md#listtablesinputtypedef).
+[ListTablesInputRequestTypeDef](./type_defs.md#listtablesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ExclusiveStartTableName`: `str`
 - `Limit`: `int`
 
-Returns
-[ListTablesOutputResponseTypeDef](./type_defs.md#listtablesoutputresponsetypedef).
+Returns [ListTablesOutputTypeDef](./type_defs.md#listtablesoutputtypedef).
 
 ### list_tags_of_resource
 
@@ -882,7 +884,7 @@ Boto3 documentation:
 [DynamoDB.Client.list_tags_of_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_tags_of_resource)
 
 Arguments mapping described in
-[ListTagsOfResourceInputTypeDef](./type_defs.md#listtagsofresourceinputtypedef).
+[ListTagsOfResourceInputRequestTypeDef](./type_defs.md#listtagsofresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -890,7 +892,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTagsOfResourceOutputResponseTypeDef](./type_defs.md#listtagsofresourceoutputresponsetypedef).
+[ListTagsOfResourceOutputTypeDef](./type_defs.md#listtagsofresourceoutputtypedef).
 
 ### put_item
 
@@ -902,7 +904,7 @@ Boto3 documentation:
 [DynamoDB.Client.put_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.put_item)
 
 Arguments mapping described in
-[PutItemInputTypeDef](./type_defs.md#putiteminputtypedef).
+[PutItemInputRequestTypeDef](./type_defs.md#putiteminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -927,8 +929,7 @@ Keyword-only arguments:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
   `Dict`\[`str`, `Any`\], `None`\]\]
 
-Returns
-[PutItemOutputResponseTypeDef](./type_defs.md#putitemoutputresponsetypedef).
+Returns [PutItemOutputTypeDef](./type_defs.md#putitemoutputtypedef).
 
 ### query
 
@@ -940,7 +941,7 @@ Boto3 documentation:
 [DynamoDB.Client.query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.query)
 
 Arguments mapping described in
-[QueryInputTypeDef](./type_defs.md#queryinputtypedef).
+[QueryInputRequestTypeDef](./type_defs.md#queryinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -972,8 +973,7 @@ Keyword-only arguments:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
   `Dict`\[`str`, `Any`\], `None`\]\]
 
-Returns
-[QueryOutputResponseTypeDef](./type_defs.md#queryoutputresponsetypedef).
+Returns [QueryOutputTypeDef](./type_defs.md#queryoutputtypedef).
 
 ### restore_table_from_backup
 
@@ -986,7 +986,7 @@ Boto3 documentation:
 [DynamoDB.Client.restore_table_from_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.restore_table_from_backup)
 
 Arguments mapping described in
-[RestoreTableFromBackupInputTypeDef](./type_defs.md#restoretablefrombackupinputtypedef).
+[RestoreTableFromBackupInputRequestTypeDef](./type_defs.md#restoretablefrombackupinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1003,7 +1003,7 @@ Keyword-only arguments:
   [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
 
 Returns
-[RestoreTableFromBackupOutputResponseTypeDef](./type_defs.md#restoretablefrombackupoutputresponsetypedef).
+[RestoreTableFromBackupOutputTypeDef](./type_defs.md#restoretablefrombackupoutputtypedef).
 
 ### restore_table_to_point_in_time
 
@@ -1017,7 +1017,7 @@ Boto3 documentation:
 [DynamoDB.Client.restore_table_to_point_in_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.restore_table_to_point_in_time)
 
 Arguments mapping described in
-[RestoreTableToPointInTimeInputTypeDef](./type_defs.md#restoretabletopointintimeinputtypedef).
+[RestoreTableToPointInTimeInputRequestTypeDef](./type_defs.md#restoretabletopointintimeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1037,7 +1037,7 @@ Keyword-only arguments:
   [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
 
 Returns
-[RestoreTableToPointInTimeOutputResponseTypeDef](./type_defs.md#restoretabletopointintimeoutputresponsetypedef).
+[RestoreTableToPointInTimeOutputTypeDef](./type_defs.md#restoretabletopointintimeoutputtypedef).
 
 ### scan
 
@@ -1050,7 +1050,7 @@ Boto3 documentation:
 [DynamoDB.Client.scan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.scan)
 
 Arguments mapping described in
-[ScanInputTypeDef](./type_defs.md#scaninputtypedef).
+[ScanInputRequestTypeDef](./type_defs.md#scaninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1080,7 +1080,7 @@ Keyword-only arguments:
   `Dict`\[`str`, `Any`\], `None`\]\]
 - `ConsistentRead`: `bool`
 
-Returns [ScanOutputResponseTypeDef](./type_defs.md#scanoutputresponsetypedef).
+Returns [ScanOutputTypeDef](./type_defs.md#scanoutputtypedef).
 
 ### tag_resource
 
@@ -1092,7 +1092,7 @@ Boto3 documentation:
 [DynamoDB.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceInputTypeDef](./type_defs.md#tagresourceinputtypedef).
+[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1111,7 +1111,7 @@ Boto3 documentation:
 [DynamoDB.Client.transact_get_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.transact_get_items)
 
 Arguments mapping described in
-[TransactGetItemsInputTypeDef](./type_defs.md#transactgetitemsinputtypedef).
+[TransactGetItemsInputRequestTypeDef](./type_defs.md#transactgetitemsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1122,7 +1122,7 @@ Keyword-only arguments:
   [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 
 Returns
-[TransactGetItemsOutputResponseTypeDef](./type_defs.md#transactgetitemsoutputresponsetypedef).
+[TransactGetItemsOutputTypeDef](./type_defs.md#transactgetitemsoutputtypedef).
 
 ### transact_write_items
 
@@ -1135,7 +1135,7 @@ Boto3 documentation:
 [DynamoDB.Client.transact_write_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.transact_write_items)
 
 Arguments mapping described in
-[TransactWriteItemsInputTypeDef](./type_defs.md#transactwriteitemsinputtypedef).
+[TransactWriteItemsInputRequestTypeDef](./type_defs.md#transactwriteitemsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1149,7 +1149,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[TransactWriteItemsOutputResponseTypeDef](./type_defs.md#transactwriteitemsoutputresponsetypedef).
+[TransactWriteItemsOutputTypeDef](./type_defs.md#transactwriteitemsoutputtypedef).
 
 ### untag_resource
 
@@ -1161,7 +1161,7 @@ Boto3 documentation:
 [DynamoDB.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceInputTypeDef](./type_defs.md#untagresourceinputtypedef).
+[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1180,7 +1180,7 @@ Boto3 documentation:
 [DynamoDB.Client.update_continuous_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_continuous_backups)
 
 Arguments mapping described in
-[UpdateContinuousBackupsInputTypeDef](./type_defs.md#updatecontinuousbackupsinputtypedef).
+[UpdateContinuousBackupsInputRequestTypeDef](./type_defs.md#updatecontinuousbackupsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1190,7 +1190,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateContinuousBackupsOutputResponseTypeDef](./type_defs.md#updatecontinuousbackupsoutputresponsetypedef).
+[UpdateContinuousBackupsOutputTypeDef](./type_defs.md#updatecontinuousbackupsoutputtypedef).
 
 ### update_contributor_insights
 
@@ -1203,7 +1203,7 @@ Boto3 documentation:
 [DynamoDB.Client.update_contributor_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_contributor_insights)
 
 Arguments mapping described in
-[UpdateContributorInsightsInputTypeDef](./type_defs.md#updatecontributorinsightsinputtypedef).
+[UpdateContributorInsightsInputRequestTypeDef](./type_defs.md#updatecontributorinsightsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1214,7 +1214,7 @@ Keyword-only arguments:
 - `IndexName`: `str`
 
 Returns
-[UpdateContributorInsightsOutputResponseTypeDef](./type_defs.md#updatecontributorinsightsoutputresponsetypedef).
+[UpdateContributorInsightsOutputTypeDef](./type_defs.md#updatecontributorinsightsoutputtypedef).
 
 ### update_global_table
 
@@ -1226,7 +1226,7 @@ Boto3 documentation:
 [DynamoDB.Client.update_global_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_global_table)
 
 Arguments mapping described in
-[UpdateGlobalTableInputTypeDef](./type_defs.md#updateglobaltableinputtypedef).
+[UpdateGlobalTableInputRequestTypeDef](./type_defs.md#updateglobaltableinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1236,7 +1236,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateGlobalTableOutputResponseTypeDef](./type_defs.md#updateglobaltableoutputresponsetypedef).
+[UpdateGlobalTableOutputTypeDef](./type_defs.md#updateglobaltableoutputtypedef).
 
 ### update_global_table_settings
 
@@ -1249,7 +1249,7 @@ Boto3 documentation:
 [DynamoDB.Client.update_global_table_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_global_table_settings)
 
 Arguments mapping described in
-[UpdateGlobalTableSettingsInputTypeDef](./type_defs.md#updateglobaltablesettingsinputtypedef).
+[UpdateGlobalTableSettingsInputRequestTypeDef](./type_defs.md#updateglobaltablesettingsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1264,7 +1264,7 @@ Keyword-only arguments:
   `List`\[[ReplicaSettingsUpdateTypeDef](./type_defs.md#replicasettingsupdatetypedef)\]
 
 Returns
-[UpdateGlobalTableSettingsOutputResponseTypeDef](./type_defs.md#updateglobaltablesettingsoutputresponsetypedef).
+[UpdateGlobalTableSettingsOutputTypeDef](./type_defs.md#updateglobaltablesettingsoutputtypedef).
 
 ### update_item
 
@@ -1277,7 +1277,7 @@ Boto3 documentation:
 [DynamoDB.Client.update_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_item)
 
 Arguments mapping described in
-[UpdateItemInputTypeDef](./type_defs.md#updateiteminputtypedef).
+[UpdateItemInputRequestTypeDef](./type_defs.md#updateiteminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1305,8 +1305,7 @@ Keyword-only arguments:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
   `Dict`\[`str`, `Any`\], `None`\]\]
 
-Returns
-[UpdateItemOutputResponseTypeDef](./type_defs.md#updateitemoutputresponsetypedef).
+Returns [UpdateItemOutputTypeDef](./type_defs.md#updateitemoutputtypedef).
 
 ### update_table
 
@@ -1319,7 +1318,7 @@ Boto3 documentation:
 [DynamoDB.Client.update_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_table)
 
 Arguments mapping described in
-[UpdateTableInputTypeDef](./type_defs.md#updatetableinputtypedef).
+[UpdateTableInputRequestTypeDef](./type_defs.md#updatetableinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1338,8 +1337,7 @@ Keyword-only arguments:
 - `ReplicaUpdates`:
   `List`\[[ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef)\]
 
-Returns
-[UpdateTableOutputResponseTypeDef](./type_defs.md#updatetableoutputresponsetypedef).
+Returns [UpdateTableOutputTypeDef](./type_defs.md#updatetableoutputtypedef).
 
 ### update_table_replica_auto_scaling
 
@@ -1352,7 +1350,7 @@ Boto3 documentation:
 [DynamoDB.Client.update_table_replica_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_table_replica_auto_scaling)
 
 Arguments mapping described in
-[UpdateTableReplicaAutoScalingInputTypeDef](./type_defs.md#updatetablereplicaautoscalinginputtypedef).
+[UpdateTableReplicaAutoScalingInputRequestTypeDef](./type_defs.md#updatetablereplicaautoscalinginputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1365,7 +1363,7 @@ Keyword-only arguments:
   `List`\[[ReplicaAutoScalingUpdateTypeDef](./type_defs.md#replicaautoscalingupdatetypedef)\]
 
 Returns
-[UpdateTableReplicaAutoScalingOutputResponseTypeDef](./type_defs.md#updatetablereplicaautoscalingoutputresponsetypedef).
+[UpdateTableReplicaAutoScalingOutputTypeDef](./type_defs.md#updatetablereplicaautoscalingoutputtypedef).
 
 ### update_time_to_live
 
@@ -1378,7 +1376,7 @@ Boto3 documentation:
 [DynamoDB.Client.update_time_to_live](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_time_to_live)
 
 Arguments mapping described in
-[UpdateTimeToLiveInputTypeDef](./type_defs.md#updatetimetoliveinputtypedef).
+[UpdateTimeToLiveInputRequestTypeDef](./type_defs.md#updatetimetoliveinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1388,7 +1386,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateTimeToLiveOutputResponseTypeDef](./type_defs.md#updatetimetoliveoutputresponsetypedef).
+[UpdateTimeToLiveOutputTypeDef](./type_defs.md#updatetimetoliveoutputtypedef).
 
 ### get_paginator
 

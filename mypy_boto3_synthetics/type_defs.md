@@ -21,28 +21,28 @@ type annotations stubs module
   - [CanaryStatusTypeDef](#canarystatustypedef)
   - [CanaryTimelineTypeDef](#canarytimelinetypedef)
   - [CanaryTypeDef](#canarytypedef)
-  - [CreateCanaryRequestTypeDef](#createcanaryrequesttypedef)
-  - [CreateCanaryResponseResponseTypeDef](#createcanaryresponseresponsetypedef)
-  - [DeleteCanaryRequestTypeDef](#deletecanaryrequesttypedef)
-  - [DescribeCanariesLastRunRequestTypeDef](#describecanarieslastrunrequesttypedef)
-  - [DescribeCanariesLastRunResponseResponseTypeDef](#describecanarieslastrunresponseresponsetypedef)
-  - [DescribeCanariesRequestTypeDef](#describecanariesrequesttypedef)
-  - [DescribeCanariesResponseResponseTypeDef](#describecanariesresponseresponsetypedef)
-  - [DescribeRuntimeVersionsRequestTypeDef](#describeruntimeversionsrequesttypedef)
-  - [DescribeRuntimeVersionsResponseResponseTypeDef](#describeruntimeversionsresponseresponsetypedef)
-  - [GetCanaryRequestTypeDef](#getcanaryrequesttypedef)
-  - [GetCanaryResponseResponseTypeDef](#getcanaryresponseresponsetypedef)
-  - [GetCanaryRunsRequestTypeDef](#getcanaryrunsrequesttypedef)
-  - [GetCanaryRunsResponseResponseTypeDef](#getcanaryrunsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [CreateCanaryRequestRequestTypeDef](#createcanaryrequestrequesttypedef)
+  - [CreateCanaryResponseTypeDef](#createcanaryresponsetypedef)
+  - [DeleteCanaryRequestRequestTypeDef](#deletecanaryrequestrequesttypedef)
+  - [DescribeCanariesLastRunRequestRequestTypeDef](#describecanarieslastrunrequestrequesttypedef)
+  - [DescribeCanariesLastRunResponseTypeDef](#describecanarieslastrunresponsetypedef)
+  - [DescribeCanariesRequestRequestTypeDef](#describecanariesrequestrequesttypedef)
+  - [DescribeCanariesResponseTypeDef](#describecanariesresponsetypedef)
+  - [DescribeRuntimeVersionsRequestRequestTypeDef](#describeruntimeversionsrequestrequesttypedef)
+  - [DescribeRuntimeVersionsResponseTypeDef](#describeruntimeversionsresponsetypedef)
+  - [GetCanaryRequestRequestTypeDef](#getcanaryrequestrequesttypedef)
+  - [GetCanaryResponseTypeDef](#getcanaryresponsetypedef)
+  - [GetCanaryRunsRequestRequestTypeDef](#getcanaryrunsrequestrequesttypedef)
+  - [GetCanaryRunsResponseTypeDef](#getcanaryrunsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RuntimeVersionTypeDef](#runtimeversiontypedef)
-  - [StartCanaryRequestTypeDef](#startcanaryrequesttypedef)
-  - [StopCanaryRequestTypeDef](#stopcanaryrequesttypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateCanaryRequestTypeDef](#updatecanaryrequesttypedef)
+  - [StartCanaryRequestRequestTypeDef](#startcanaryrequestrequesttypedef)
+  - [StopCanaryRequestRequestTypeDef](#stopcanaryrequestrequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateCanaryRequestRequestTypeDef](#updatecanaryrequestrequesttypedef)
   - [VpcConfigInputTypeDef](#vpcconfiginputtypedef)
   - [VpcConfigOutputTypeDef](#vpcconfigoutputtypedef)
 
@@ -226,10 +226,10 @@ Optional fields:
 - `VpcConfig`: [VpcConfigOutputTypeDef](./type_defs.md#vpcconfigoutputtypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateCanaryRequestTypeDef
+## CreateCanaryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_synthetics.type_defs import CreateCanaryRequestTypeDef
+from mypy_boto3_synthetics.type_defs import CreateCanaryRequestRequestTypeDef
 ```
 
 Required fields:
@@ -251,10 +251,10 @@ Optional fields:
 - `VpcConfig`: [VpcConfigInputTypeDef](./type_defs.md#vpcconfiginputtypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateCanaryResponseResponseTypeDef
+## CreateCanaryResponseTypeDef
 
 ```python
-from mypy_boto3_synthetics.type_defs import CreateCanaryResponseResponseTypeDef
+from mypy_boto3_synthetics.type_defs import CreateCanaryResponseTypeDef
 ```
 
 Required fields:
@@ -263,20 +263,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteCanaryRequestTypeDef
+## DeleteCanaryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_synthetics.type_defs import DeleteCanaryRequestTypeDef
+from mypy_boto3_synthetics.type_defs import DeleteCanaryRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DescribeCanariesLastRunRequestTypeDef
+## DescribeCanariesLastRunRequestRequestTypeDef
 
 ```python
-from mypy_boto3_synthetics.type_defs import DescribeCanariesLastRunRequestTypeDef
+from mypy_boto3_synthetics.type_defs import DescribeCanariesLastRunRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -284,10 +284,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## DescribeCanariesLastRunResponseResponseTypeDef
+## DescribeCanariesLastRunResponseTypeDef
 
 ```python
-from mypy_boto3_synthetics.type_defs import DescribeCanariesLastRunResponseResponseTypeDef
+from mypy_boto3_synthetics.type_defs import DescribeCanariesLastRunResponseTypeDef
 ```
 
 Required fields:
@@ -298,10 +298,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCanariesRequestTypeDef
+## DescribeCanariesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_synthetics.type_defs import DescribeCanariesRequestTypeDef
+from mypy_boto3_synthetics.type_defs import DescribeCanariesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -309,10 +309,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## DescribeCanariesResponseResponseTypeDef
+## DescribeCanariesResponseTypeDef
 
 ```python
-from mypy_boto3_synthetics.type_defs import DescribeCanariesResponseResponseTypeDef
+from mypy_boto3_synthetics.type_defs import DescribeCanariesResponseTypeDef
 ```
 
 Required fields:
@@ -322,10 +322,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRuntimeVersionsRequestTypeDef
+## DescribeRuntimeVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_synthetics.type_defs import DescribeRuntimeVersionsRequestTypeDef
+from mypy_boto3_synthetics.type_defs import DescribeRuntimeVersionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -333,10 +333,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## DescribeRuntimeVersionsResponseResponseTypeDef
+## DescribeRuntimeVersionsResponseTypeDef
 
 ```python
-from mypy_boto3_synthetics.type_defs import DescribeRuntimeVersionsResponseResponseTypeDef
+from mypy_boto3_synthetics.type_defs import DescribeRuntimeVersionsResponseTypeDef
 ```
 
 Required fields:
@@ -347,20 +347,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCanaryRequestTypeDef
+## GetCanaryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_synthetics.type_defs import GetCanaryRequestTypeDef
+from mypy_boto3_synthetics.type_defs import GetCanaryRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## GetCanaryResponseResponseTypeDef
+## GetCanaryResponseTypeDef
 
 ```python
-from mypy_boto3_synthetics.type_defs import GetCanaryResponseResponseTypeDef
+from mypy_boto3_synthetics.type_defs import GetCanaryResponseTypeDef
 ```
 
 Required fields:
@@ -369,10 +369,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCanaryRunsRequestTypeDef
+## GetCanaryRunsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_synthetics.type_defs import GetCanaryRunsRequestTypeDef
+from mypy_boto3_synthetics.type_defs import GetCanaryRunsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -384,10 +384,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## GetCanaryRunsResponseResponseTypeDef
+## GetCanaryRunsResponseTypeDef
 
 ```python
-from mypy_boto3_synthetics.type_defs import GetCanaryRunsResponseResponseTypeDef
+from mypy_boto3_synthetics.type_defs import GetCanaryRunsResponseTypeDef
 ```
 
 Required fields:
@@ -397,20 +397,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_synthetics.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_synthetics.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_synthetics.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_synthetics.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -446,30 +446,30 @@ Optional fields:
 - `ReleaseDate`: `datetime`
 - `DeprecationDate`: `datetime`
 
-## StartCanaryRequestTypeDef
+## StartCanaryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_synthetics.type_defs import StartCanaryRequestTypeDef
+from mypy_boto3_synthetics.type_defs import StartCanaryRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## StopCanaryRequestTypeDef
+## StopCanaryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_synthetics.type_defs import StopCanaryRequestTypeDef
+from mypy_boto3_synthetics.type_defs import StopCanaryRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_synthetics.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_synthetics.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -477,10 +477,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_synthetics.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_synthetics.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -488,10 +488,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateCanaryRequestTypeDef
+## UpdateCanaryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_synthetics.type_defs import UpdateCanaryRequestTypeDef
+from mypy_boto3_synthetics.type_defs import UpdateCanaryRequestRequestTypeDef
 ```
 
 Required fields:

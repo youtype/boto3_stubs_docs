@@ -12,6 +12,7 @@ type annotations stubs module
   - [SageMakerFeatureStoreRuntimeClient](#sagemakerfeaturestoreruntimeclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [batch_get_record](#batch_get_record)
     - [can_paginate](#can_paginate)
     - [delete_record](#delete_record)
@@ -58,6 +59,18 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+SageMakerFeatureStoreRuntimeClient exceptions.
+
+Type annotations for
+`boto3.client("sagemaker-featurestore-runtime").exceptions` method.
+
+Boto3 documentation:
+[SageMakerFeatureStoreRuntime.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SageMakerFeatureStoreRuntime.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### batch_get_record
 
 Retrieves a batch of `Records` from a `FeatureGroup` .
@@ -69,7 +82,7 @@ Boto3 documentation:
 [SageMakerFeatureStoreRuntime.Client.batch_get_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SageMakerFeatureStoreRuntime.Client.batch_get_record)
 
 Arguments mapping described in
-[BatchGetRecordRequestTypeDef](./type_defs.md#batchgetrecordrequesttypedef).
+[BatchGetRecordRequestRequestTypeDef](./type_defs.md#batchgetrecordrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -78,7 +91,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchGetRecordResponseResponseTypeDef](./type_defs.md#batchgetrecordresponseresponsetypedef).
+[BatchGetRecordResponseTypeDef](./type_defs.md#batchgetrecordresponsetypedef).
 
 ### can_paginate
 
@@ -107,7 +120,7 @@ Boto3 documentation:
 [SageMakerFeatureStoreRuntime.Client.delete_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SageMakerFeatureStoreRuntime.Client.delete_record)
 
 Arguments mapping described in
-[DeleteRecordRequestTypeDef](./type_defs.md#deleterecordrequesttypedef).
+[DeleteRecordRequestRequestTypeDef](./type_defs.md#deleterecordrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -145,7 +158,7 @@ Boto3 documentation:
 [SageMakerFeatureStoreRuntime.Client.get_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SageMakerFeatureStoreRuntime.Client.get_record)
 
 Arguments mapping described in
-[GetRecordRequestTypeDef](./type_defs.md#getrecordrequesttypedef).
+[GetRecordRequestRequestTypeDef](./type_defs.md#getrecordrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -153,8 +166,7 @@ Keyword-only arguments:
 - `RecordIdentifierValueAsString`: `str` *(required)*
 - `FeatureNames`: `List`\[`str`\]
 
-Returns
-[GetRecordResponseResponseTypeDef](./type_defs.md#getrecordresponseresponsetypedef).
+Returns [GetRecordResponseTypeDef](./type_defs.md#getrecordresponsetypedef).
 
 ### put_record
 
@@ -167,7 +179,7 @@ Boto3 documentation:
 [SageMakerFeatureStoreRuntime.Client.put_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SageMakerFeatureStoreRuntime.Client.put_record)
 
 Arguments mapping described in
-[PutRecordRequestTypeDef](./type_defs.md#putrecordrequesttypedef).
+[PutRecordRequestRequestTypeDef](./type_defs.md#putrecordrequestrequesttypedef).
 
 Keyword-only arguments:
 

@@ -11,6 +11,7 @@ type annotations stubs module
   - [DataExchangeClient](#dataexchangeclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [cancel_job](#cancel_job)
     - [create_data_set](#create_data_set)
@@ -78,6 +79,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+DataExchangeClient exceptions.
+
+Type annotations for `boto3.client("dataexchange").exceptions` method.
+
+Boto3 documentation:
+[DataExchange.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -103,7 +115,7 @@ Boto3 documentation:
 [DataExchange.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.cancel_job)
 
 Arguments mapping described in
-[CancelJobRequestTypeDef](./type_defs.md#canceljobrequesttypedef).
+[CancelJobRequestRequestTypeDef](./type_defs.md#canceljobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -119,7 +131,7 @@ Boto3 documentation:
 [DataExchange.Client.create_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_data_set)
 
 Arguments mapping described in
-[CreateDataSetRequestTypeDef](./type_defs.md#createdatasetrequesttypedef).
+[CreateDataSetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -130,7 +142,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDataSetResponseResponseTypeDef](./type_defs.md#createdatasetresponseresponsetypedef).
+[CreateDataSetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
 ### create_job
 
@@ -142,7 +154,7 @@ Boto3 documentation:
 [DataExchange.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_job)
 
 Arguments mapping described in
-[CreateJobRequestTypeDef](./type_defs.md#createjobrequesttypedef).
+[CreateJobRequestRequestTypeDef](./type_defs.md#createjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -150,8 +162,7 @@ Keyword-only arguments:
   *(required)*
 - `Type`: [TypeType](./literals.md#typetype) *(required)*
 
-Returns
-[CreateJobResponseResponseTypeDef](./type_defs.md#createjobresponseresponsetypedef).
+Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
 
 ### create_revision
 
@@ -163,7 +174,7 @@ Boto3 documentation:
 [DataExchange.Client.create_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_revision)
 
 Arguments mapping described in
-[CreateRevisionRequestTypeDef](./type_defs.md#createrevisionrequesttypedef).
+[CreateRevisionRequestRequestTypeDef](./type_defs.md#createrevisionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -172,7 +183,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateRevisionResponseResponseTypeDef](./type_defs.md#createrevisionresponseresponsetypedef).
+[CreateRevisionResponseTypeDef](./type_defs.md#createrevisionresponsetypedef).
 
 ### delete_asset
 
@@ -184,7 +195,7 @@ Boto3 documentation:
 [DataExchange.Client.delete_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_asset)
 
 Arguments mapping described in
-[DeleteAssetRequestTypeDef](./type_defs.md#deleteassetrequesttypedef).
+[DeleteAssetRequestRequestTypeDef](./type_defs.md#deleteassetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -202,7 +213,7 @@ Boto3 documentation:
 [DataExchange.Client.delete_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_data_set)
 
 Arguments mapping described in
-[DeleteDataSetRequestTypeDef](./type_defs.md#deletedatasetrequesttypedef).
+[DeleteDataSetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -218,7 +229,7 @@ Boto3 documentation:
 [DataExchange.Client.delete_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_revision)
 
 Arguments mapping described in
-[DeleteRevisionRequestTypeDef](./type_defs.md#deleterevisionrequesttypedef).
+[DeleteRevisionRequestRequestTypeDef](./type_defs.md#deleterevisionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -254,7 +265,7 @@ Boto3 documentation:
 [DataExchange.Client.get_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_asset)
 
 Arguments mapping described in
-[GetAssetRequestTypeDef](./type_defs.md#getassetrequesttypedef).
+[GetAssetRequestRequestTypeDef](./type_defs.md#getassetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -262,8 +273,7 @@ Keyword-only arguments:
 - `DataSetId`: `str` *(required)*
 - `RevisionId`: `str` *(required)*
 
-Returns
-[GetAssetResponseResponseTypeDef](./type_defs.md#getassetresponseresponsetypedef).
+Returns [GetAssetResponseTypeDef](./type_defs.md#getassetresponsetypedef).
 
 ### get_data_set
 
@@ -275,14 +285,13 @@ Boto3 documentation:
 [DataExchange.Client.get_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_data_set)
 
 Arguments mapping described in
-[GetDataSetRequestTypeDef](./type_defs.md#getdatasetrequesttypedef).
+[GetDataSetRequestRequestTypeDef](./type_defs.md#getdatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DataSetId`: `str` *(required)*
 
-Returns
-[GetDataSetResponseResponseTypeDef](./type_defs.md#getdatasetresponseresponsetypedef).
+Returns [GetDataSetResponseTypeDef](./type_defs.md#getdatasetresponsetypedef).
 
 ### get_job
 
@@ -294,14 +303,13 @@ Boto3 documentation:
 [DataExchange.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_job)
 
 Arguments mapping described in
-[GetJobRequestTypeDef](./type_defs.md#getjobrequesttypedef).
+[GetJobRequestRequestTypeDef](./type_defs.md#getjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
-Returns
-[GetJobResponseResponseTypeDef](./type_defs.md#getjobresponseresponsetypedef).
+Returns [GetJobResponseTypeDef](./type_defs.md#getjobresponsetypedef).
 
 ### get_revision
 
@@ -313,7 +321,7 @@ Boto3 documentation:
 [DataExchange.Client.get_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_revision)
 
 Arguments mapping described in
-[GetRevisionRequestTypeDef](./type_defs.md#getrevisionrequesttypedef).
+[GetRevisionRequestRequestTypeDef](./type_defs.md#getrevisionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -321,7 +329,7 @@ Keyword-only arguments:
 - `RevisionId`: `str` *(required)*
 
 Returns
-[GetRevisionResponseResponseTypeDef](./type_defs.md#getrevisionresponseresponsetypedef).
+[GetRevisionResponseTypeDef](./type_defs.md#getrevisionresponsetypedef).
 
 ### list_data_set_revisions
 
@@ -335,7 +343,7 @@ Boto3 documentation:
 [DataExchange.Client.list_data_set_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_data_set_revisions)
 
 Arguments mapping described in
-[ListDataSetRevisionsRequestTypeDef](./type_defs.md#listdatasetrevisionsrequesttypedef).
+[ListDataSetRevisionsRequestRequestTypeDef](./type_defs.md#listdatasetrevisionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -344,7 +352,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListDataSetRevisionsResponseResponseTypeDef](./type_defs.md#listdatasetrevisionsresponseresponsetypedef).
+[ListDataSetRevisionsResponseTypeDef](./type_defs.md#listdatasetrevisionsresponsetypedef).
 
 ### list_data_sets
 
@@ -356,7 +364,7 @@ Boto3 documentation:
 [DataExchange.Client.list_data_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_data_sets)
 
 Arguments mapping described in
-[ListDataSetsRequestTypeDef](./type_defs.md#listdatasetsrequesttypedef).
+[ListDataSetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -365,7 +373,7 @@ Keyword-only arguments:
 - `Origin`: `str`
 
 Returns
-[ListDataSetsResponseResponseTypeDef](./type_defs.md#listdatasetsresponseresponsetypedef).
+[ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
 
 ### list_jobs
 
@@ -377,7 +385,7 @@ Boto3 documentation:
 [DataExchange.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_jobs)
 
 Arguments mapping described in
-[ListJobsRequestTypeDef](./type_defs.md#listjobsrequesttypedef).
+[ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -386,8 +394,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `RevisionId`: `str`
 
-Returns
-[ListJobsResponseResponseTypeDef](./type_defs.md#listjobsresponseresponsetypedef).
+Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
 
 ### list_revision_assets
 
@@ -401,7 +408,7 @@ Boto3 documentation:
 [DataExchange.Client.list_revision_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_revision_assets)
 
 Arguments mapping described in
-[ListRevisionAssetsRequestTypeDef](./type_defs.md#listrevisionassetsrequesttypedef).
+[ListRevisionAssetsRequestRequestTypeDef](./type_defs.md#listrevisionassetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -411,7 +418,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListRevisionAssetsResponseResponseTypeDef](./type_defs.md#listrevisionassetsresponseresponsetypedef).
+[ListRevisionAssetsResponseTypeDef](./type_defs.md#listrevisionassetsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -424,14 +431,14 @@ Boto3 documentation:
 [DataExchange.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### start_job
 
@@ -443,7 +450,7 @@ Boto3 documentation:
 [DataExchange.Client.start_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.start_job)
 
 Arguments mapping described in
-[StartJobRequestTypeDef](./type_defs.md#startjobrequesttypedef).
+[StartJobRequestRequestTypeDef](./type_defs.md#startjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -461,7 +468,7 @@ Boto3 documentation:
 [DataExchange.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -478,7 +485,7 @@ Boto3 documentation:
 [DataExchange.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -495,7 +502,7 @@ Boto3 documentation:
 [DataExchange.Client.update_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_asset)
 
 Arguments mapping described in
-[UpdateAssetRequestTypeDef](./type_defs.md#updateassetrequesttypedef).
+[UpdateAssetRequestRequestTypeDef](./type_defs.md#updateassetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -505,7 +512,7 @@ Keyword-only arguments:
 - `RevisionId`: `str` *(required)*
 
 Returns
-[UpdateAssetResponseResponseTypeDef](./type_defs.md#updateassetresponseresponsetypedef).
+[UpdateAssetResponseTypeDef](./type_defs.md#updateassetresponsetypedef).
 
 ### update_data_set
 
@@ -517,7 +524,7 @@ Boto3 documentation:
 [DataExchange.Client.update_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_data_set)
 
 Arguments mapping described in
-[UpdateDataSetRequestTypeDef](./type_defs.md#updatedatasetrequesttypedef).
+[UpdateDataSetRequestRequestTypeDef](./type_defs.md#updatedatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -526,7 +533,7 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns
-[UpdateDataSetResponseResponseTypeDef](./type_defs.md#updatedatasetresponseresponsetypedef).
+[UpdateDataSetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef).
 
 ### update_revision
 
@@ -538,7 +545,7 @@ Boto3 documentation:
 [DataExchange.Client.update_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_revision)
 
 Arguments mapping described in
-[UpdateRevisionRequestTypeDef](./type_defs.md#updaterevisionrequesttypedef).
+[UpdateRevisionRequestRequestTypeDef](./type_defs.md#updaterevisionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -548,7 +555,7 @@ Keyword-only arguments:
 - `Finalized`: `bool`
 
 Returns
-[UpdateRevisionResponseResponseTypeDef](./type_defs.md#updaterevisionresponseresponsetypedef).
+[UpdateRevisionResponseTypeDef](./type_defs.md#updaterevisionresponsetypedef).
 
 ### get_paginator
 

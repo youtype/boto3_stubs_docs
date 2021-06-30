@@ -32,6 +32,7 @@ from mypy_boto3_kinesis_video_media.client import KinesisVideoMediaClient
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_media](./client.md#get_media)
 
@@ -67,10 +68,10 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesis_video_media.type_defs import GetMediaInputTypeDef, ...
+from mypy_boto3_kinesis_video_media.type_defs import GetMediaInputRequestTypeDef, ...
 ```
 
-- [GetMediaInputTypeDef](./type_defs.md#getmediainputtypedef)
-- [GetMediaOutputResponseTypeDef](./type_defs.md#getmediaoutputresponsetypedef)
+- [GetMediaInputRequestTypeDef](./type_defs.md#getmediainputrequesttypedef)
+- [GetMediaOutputTypeDef](./type_defs.md#getmediaoutputtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [StartSelectorTypeDef](./type_defs.md#startselectortypedef)

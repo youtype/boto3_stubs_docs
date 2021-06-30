@@ -11,6 +11,7 @@ type annotations stubs module
   - [LexModelBuildingServiceClient](#lexmodelbuildingserviceclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_bot_version](#create_bot_version)
     - [create_intent_version](#create_intent_version)
@@ -95,6 +96,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+LexModelBuildingServiceClient exceptions.
+
+Type annotations for `boto3.client("lex-models").exceptions` method.
+
+Boto3 documentation:
+[LexModelBuildingService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -120,7 +132,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.create_bot_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_bot_version)
 
 Arguments mapping described in
-[CreateBotVersionRequestTypeDef](./type_defs.md#createbotversionrequesttypedef).
+[CreateBotVersionRequestRequestTypeDef](./type_defs.md#createbotversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -128,7 +140,7 @@ Keyword-only arguments:
 - `checksum`: `str`
 
 Returns
-[CreateBotVersionResponseResponseTypeDef](./type_defs.md#createbotversionresponseresponsetypedef).
+[CreateBotVersionResponseTypeDef](./type_defs.md#createbotversionresponsetypedef).
 
 ### create_intent_version
 
@@ -141,7 +153,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.create_intent_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_intent_version)
 
 Arguments mapping described in
-[CreateIntentVersionRequestTypeDef](./type_defs.md#createintentversionrequesttypedef).
+[CreateIntentVersionRequestRequestTypeDef](./type_defs.md#createintentversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -149,7 +161,7 @@ Keyword-only arguments:
 - `checksum`: `str`
 
 Returns
-[CreateIntentVersionResponseResponseTypeDef](./type_defs.md#createintentversionresponseresponsetypedef).
+[CreateIntentVersionResponseTypeDef](./type_defs.md#createintentversionresponsetypedef).
 
 ### create_slot_type_version
 
@@ -163,7 +175,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.create_slot_type_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_slot_type_version)
 
 Arguments mapping described in
-[CreateSlotTypeVersionRequestTypeDef](./type_defs.md#createslottypeversionrequesttypedef).
+[CreateSlotTypeVersionRequestRequestTypeDef](./type_defs.md#createslottypeversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -171,7 +183,7 @@ Keyword-only arguments:
 - `checksum`: `str`
 
 Returns
-[CreateSlotTypeVersionResponseResponseTypeDef](./type_defs.md#createslottypeversionresponseresponsetypedef).
+[CreateSlotTypeVersionResponseTypeDef](./type_defs.md#createslottypeversionresponsetypedef).
 
 ### delete_bot
 
@@ -183,7 +195,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.delete_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot)
 
 Arguments mapping described in
-[DeleteBotRequestTypeDef](./type_defs.md#deletebotrequesttypedef).
+[DeleteBotRequestRequestTypeDef](./type_defs.md#deletebotrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -199,7 +211,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.delete_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot_alias)
 
 Arguments mapping described in
-[DeleteBotAliasRequestTypeDef](./type_defs.md#deletebotaliasrequesttypedef).
+[DeleteBotAliasRequestRequestTypeDef](./type_defs.md#deletebotaliasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -217,7 +229,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.delete_bot_channel_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot_channel_association)
 
 Arguments mapping described in
-[DeleteBotChannelAssociationRequestTypeDef](./type_defs.md#deletebotchannelassociationrequesttypedef).
+[DeleteBotChannelAssociationRequestRequestTypeDef](./type_defs.md#deletebotchannelassociationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -235,7 +247,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.delete_bot_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot_version)
 
 Arguments mapping described in
-[DeleteBotVersionRequestTypeDef](./type_defs.md#deletebotversionrequesttypedef).
+[DeleteBotVersionRequestRequestTypeDef](./type_defs.md#deletebotversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -252,7 +264,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.delete_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_intent)
 
 Arguments mapping described in
-[DeleteIntentRequestTypeDef](./type_defs.md#deleteintentrequesttypedef).
+[DeleteIntentRequestRequestTypeDef](./type_defs.md#deleteintentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -268,7 +280,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.delete_intent_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_intent_version)
 
 Arguments mapping described in
-[DeleteIntentVersionRequestTypeDef](./type_defs.md#deleteintentversionrequesttypedef).
+[DeleteIntentVersionRequestRequestTypeDef](./type_defs.md#deleteintentversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -285,7 +297,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.delete_slot_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_slot_type)
 
 Arguments mapping described in
-[DeleteSlotTypeRequestTypeDef](./type_defs.md#deleteslottyperequesttypedef).
+[DeleteSlotTypeRequestRequestTypeDef](./type_defs.md#deleteslottyperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -302,7 +314,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.delete_slot_type_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_slot_type_version)
 
 Arguments mapping described in
-[DeleteSlotTypeVersionRequestTypeDef](./type_defs.md#deleteslottypeversionrequesttypedef).
+[DeleteSlotTypeVersionRequestRequestTypeDef](./type_defs.md#deleteslottypeversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -319,7 +331,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.delete_utterances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_utterances)
 
 Arguments mapping described in
-[DeleteUtterancesRequestTypeDef](./type_defs.md#deleteutterancesrequesttypedef).
+[DeleteUtterancesRequestRequestTypeDef](./type_defs.md#deleteutterancesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -355,15 +367,14 @@ Boto3 documentation:
 [LexModelBuildingService.Client.get_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot)
 
 Arguments mapping described in
-[GetBotRequestTypeDef](./type_defs.md#getbotrequesttypedef).
+[GetBotRequestRequestTypeDef](./type_defs.md#getbotrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `versionOrAlias`: `str` *(required)*
 
-Returns
-[GetBotResponseResponseTypeDef](./type_defs.md#getbotresponseresponsetypedef).
+Returns [GetBotResponseTypeDef](./type_defs.md#getbotresponsetypedef).
 
 ### get_bot_alias
 
@@ -375,7 +386,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.get_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_alias)
 
 Arguments mapping described in
-[GetBotAliasRequestTypeDef](./type_defs.md#getbotaliasrequesttypedef).
+[GetBotAliasRequestRequestTypeDef](./type_defs.md#getbotaliasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -383,7 +394,7 @@ Keyword-only arguments:
 - `botName`: `str` *(required)*
 
 Returns
-[GetBotAliasResponseResponseTypeDef](./type_defs.md#getbotaliasresponseresponsetypedef).
+[GetBotAliasResponseTypeDef](./type_defs.md#getbotaliasresponsetypedef).
 
 ### get_bot_aliases
 
@@ -395,7 +406,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.get_bot_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_aliases)
 
 Arguments mapping described in
-[GetBotAliasesRequestTypeDef](./type_defs.md#getbotaliasesrequesttypedef).
+[GetBotAliasesRequestRequestTypeDef](./type_defs.md#getbotaliasesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -405,7 +416,7 @@ Keyword-only arguments:
 - `nameContains`: `str`
 
 Returns
-[GetBotAliasesResponseResponseTypeDef](./type_defs.md#getbotaliasesresponseresponsetypedef).
+[GetBotAliasesResponseTypeDef](./type_defs.md#getbotaliasesresponsetypedef).
 
 ### get_bot_channel_association
 
@@ -419,7 +430,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.get_bot_channel_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_channel_association)
 
 Arguments mapping described in
-[GetBotChannelAssociationRequestTypeDef](./type_defs.md#getbotchannelassociationrequesttypedef).
+[GetBotChannelAssociationRequestRequestTypeDef](./type_defs.md#getbotchannelassociationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -428,7 +439,7 @@ Keyword-only arguments:
 - `botAlias`: `str` *(required)*
 
 Returns
-[GetBotChannelAssociationResponseResponseTypeDef](./type_defs.md#getbotchannelassociationresponseresponsetypedef).
+[GetBotChannelAssociationResponseTypeDef](./type_defs.md#getbotchannelassociationresponsetypedef).
 
 ### get_bot_channel_associations
 
@@ -441,7 +452,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.get_bot_channel_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_channel_associations)
 
 Arguments mapping described in
-[GetBotChannelAssociationsRequestTypeDef](./type_defs.md#getbotchannelassociationsrequesttypedef).
+[GetBotChannelAssociationsRequestRequestTypeDef](./type_defs.md#getbotchannelassociationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -452,7 +463,7 @@ Keyword-only arguments:
 - `nameContains`: `str`
 
 Returns
-[GetBotChannelAssociationsResponseResponseTypeDef](./type_defs.md#getbotchannelassociationsresponseresponsetypedef).
+[GetBotChannelAssociationsResponseTypeDef](./type_defs.md#getbotchannelassociationsresponsetypedef).
 
 ### get_bot_versions
 
@@ -464,7 +475,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.get_bot_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_versions)
 
 Arguments mapping described in
-[GetBotVersionsRequestTypeDef](./type_defs.md#getbotversionsrequesttypedef).
+[GetBotVersionsRequestRequestTypeDef](./type_defs.md#getbotversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -473,7 +484,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetBotVersionsResponseResponseTypeDef](./type_defs.md#getbotversionsresponseresponsetypedef).
+[GetBotVersionsResponseTypeDef](./type_defs.md#getbotversionsresponsetypedef).
 
 ### get_bots
 
@@ -487,7 +498,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.get_bots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bots)
 
 Arguments mapping described in
-[GetBotsRequestTypeDef](./type_defs.md#getbotsrequesttypedef).
+[GetBotsRequestRequestTypeDef](./type_defs.md#getbotsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -495,8 +506,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 - `nameContains`: `str`
 
-Returns
-[GetBotsResponseResponseTypeDef](./type_defs.md#getbotsresponseresponsetypedef).
+Returns [GetBotsResponseTypeDef](./type_defs.md#getbotsresponsetypedef).
 
 ### get_builtin_intent
 
@@ -508,14 +518,14 @@ Boto3 documentation:
 [LexModelBuildingService.Client.get_builtin_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_builtin_intent)
 
 Arguments mapping described in
-[GetBuiltinIntentRequestTypeDef](./type_defs.md#getbuiltinintentrequesttypedef).
+[GetBuiltinIntentRequestRequestTypeDef](./type_defs.md#getbuiltinintentrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `signature`: `str` *(required)*
 
 Returns
-[GetBuiltinIntentResponseResponseTypeDef](./type_defs.md#getbuiltinintentresponseresponsetypedef).
+[GetBuiltinIntentResponseTypeDef](./type_defs.md#getbuiltinintentresponsetypedef).
 
 ### get_builtin_intents
 
@@ -527,7 +537,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.get_builtin_intents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_builtin_intents)
 
 Arguments mapping described in
-[GetBuiltinIntentsRequestTypeDef](./type_defs.md#getbuiltinintentsrequesttypedef).
+[GetBuiltinIntentsRequestRequestTypeDef](./type_defs.md#getbuiltinintentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -537,7 +547,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetBuiltinIntentsResponseResponseTypeDef](./type_defs.md#getbuiltinintentsresponseresponsetypedef).
+[GetBuiltinIntentsResponseTypeDef](./type_defs.md#getbuiltinintentsresponsetypedef).
 
 ### get_builtin_slot_types
 
@@ -550,7 +560,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.get_builtin_slot_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_builtin_slot_types)
 
 Arguments mapping described in
-[GetBuiltinSlotTypesRequestTypeDef](./type_defs.md#getbuiltinslottypesrequesttypedef).
+[GetBuiltinSlotTypesRequestRequestTypeDef](./type_defs.md#getbuiltinslottypesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -560,7 +570,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetBuiltinSlotTypesResponseResponseTypeDef](./type_defs.md#getbuiltinslottypesresponseresponsetypedef).
+[GetBuiltinSlotTypesResponseTypeDef](./type_defs.md#getbuiltinslottypesresponsetypedef).
 
 ### get_export
 
@@ -572,7 +582,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.get_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_export)
 
 Arguments mapping described in
-[GetExportRequestTypeDef](./type_defs.md#getexportrequesttypedef).
+[GetExportRequestRequestTypeDef](./type_defs.md#getexportrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -582,8 +592,7 @@ Keyword-only arguments:
   *(required)*
 - `exportType`: [ExportTypeType](./literals.md#exporttypetype) *(required)*
 
-Returns
-[GetExportResponseResponseTypeDef](./type_defs.md#getexportresponseresponsetypedef).
+Returns [GetExportResponseTypeDef](./type_defs.md#getexportresponsetypedef).
 
 ### get_import
 
@@ -595,14 +604,13 @@ Boto3 documentation:
 [LexModelBuildingService.Client.get_import](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_import)
 
 Arguments mapping described in
-[GetImportRequestTypeDef](./type_defs.md#getimportrequesttypedef).
+[GetImportRequestRequestTypeDef](./type_defs.md#getimportrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `importId`: `str` *(required)*
 
-Returns
-[GetImportResponseResponseTypeDef](./type_defs.md#getimportresponseresponsetypedef).
+Returns [GetImportResponseTypeDef](./type_defs.md#getimportresponsetypedef).
 
 ### get_intent
 
@@ -614,15 +622,14 @@ Boto3 documentation:
 [LexModelBuildingService.Client.get_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_intent)
 
 Arguments mapping described in
-[GetIntentRequestTypeDef](./type_defs.md#getintentrequesttypedef).
+[GetIntentRequestRequestTypeDef](./type_defs.md#getintentrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `version`: `str` *(required)*
 
-Returns
-[GetIntentResponseResponseTypeDef](./type_defs.md#getintentresponseresponsetypedef).
+Returns [GetIntentResponseTypeDef](./type_defs.md#getintentresponsetypedef).
 
 ### get_intent_versions
 
@@ -634,7 +641,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.get_intent_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_intent_versions)
 
 Arguments mapping described in
-[GetIntentVersionsRequestTypeDef](./type_defs.md#getintentversionsrequesttypedef).
+[GetIntentVersionsRequestRequestTypeDef](./type_defs.md#getintentversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -643,7 +650,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetIntentVersionsResponseResponseTypeDef](./type_defs.md#getintentversionsresponseresponsetypedef).
+[GetIntentVersionsResponseTypeDef](./type_defs.md#getintentversionsresponsetypedef).
 
 ### get_intents
 
@@ -657,7 +664,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.get_intents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_intents)
 
 Arguments mapping described in
-[GetIntentsRequestTypeDef](./type_defs.md#getintentsrequesttypedef).
+[GetIntentsRequestRequestTypeDef](./type_defs.md#getintentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -665,8 +672,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 - `nameContains`: `str`
 
-Returns
-[GetIntentsResponseResponseTypeDef](./type_defs.md#getintentsresponseresponsetypedef).
+Returns [GetIntentsResponseTypeDef](./type_defs.md#getintentsresponsetypedef).
 
 ### get_slot_type
 
@@ -678,7 +684,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.get_slot_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_slot_type)
 
 Arguments mapping described in
-[GetSlotTypeRequestTypeDef](./type_defs.md#getslottyperequesttypedef).
+[GetSlotTypeRequestRequestTypeDef](./type_defs.md#getslottyperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -686,7 +692,7 @@ Keyword-only arguments:
 - `version`: `str` *(required)*
 
 Returns
-[GetSlotTypeResponseResponseTypeDef](./type_defs.md#getslottyperesponseresponsetypedef).
+[GetSlotTypeResponseTypeDef](./type_defs.md#getslottyperesponsetypedef).
 
 ### get_slot_type_versions
 
@@ -699,7 +705,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.get_slot_type_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_slot_type_versions)
 
 Arguments mapping described in
-[GetSlotTypeVersionsRequestTypeDef](./type_defs.md#getslottypeversionsrequesttypedef).
+[GetSlotTypeVersionsRequestRequestTypeDef](./type_defs.md#getslottypeversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -708,7 +714,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetSlotTypeVersionsResponseResponseTypeDef](./type_defs.md#getslottypeversionsresponseresponsetypedef).
+[GetSlotTypeVersionsResponseTypeDef](./type_defs.md#getslottypeversionsresponsetypedef).
 
 ### get_slot_types
 
@@ -722,7 +728,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.get_slot_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_slot_types)
 
 Arguments mapping described in
-[GetSlotTypesRequestTypeDef](./type_defs.md#getslottypesrequesttypedef).
+[GetSlotTypesRequestRequestTypeDef](./type_defs.md#getslottypesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -731,7 +737,7 @@ Keyword-only arguments:
 - `nameContains`: `str`
 
 Returns
-[GetSlotTypesResponseResponseTypeDef](./type_defs.md#getslottypesresponseresponsetypedef).
+[GetSlotTypesResponseTypeDef](./type_defs.md#getslottypesresponsetypedef).
 
 ### get_utterances_view
 
@@ -744,7 +750,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.get_utterances_view](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_utterances_view)
 
 Arguments mapping described in
-[GetUtterancesViewRequestTypeDef](./type_defs.md#getutterancesviewrequesttypedef).
+[GetUtterancesViewRequestRequestTypeDef](./type_defs.md#getutterancesviewrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -753,7 +759,7 @@ Keyword-only arguments:
 - `statusType`: [StatusTypeType](./literals.md#statustypetype) *(required)*
 
 Returns
-[GetUtterancesViewResponseResponseTypeDef](./type_defs.md#getutterancesviewresponseresponsetypedef).
+[GetUtterancesViewResponseTypeDef](./type_defs.md#getutterancesviewresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -766,14 +772,14 @@ Boto3 documentation:
 [LexModelBuildingService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_bot
 
@@ -785,7 +791,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.put_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_bot)
 
 Arguments mapping described in
-[PutBotRequestTypeDef](./type_defs.md#putbotrequesttypedef).
+[PutBotRequestRequestTypeDef](./type_defs.md#putbotrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -806,8 +812,7 @@ Keyword-only arguments:
 - `createVersion`: `bool`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[PutBotResponseResponseTypeDef](./type_defs.md#putbotresponseresponsetypedef).
+Returns [PutBotResponseTypeDef](./type_defs.md#putbotresponsetypedef).
 
 ### put_bot_alias
 
@@ -820,7 +825,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.put_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_bot_alias)
 
 Arguments mapping described in
-[PutBotAliasRequestTypeDef](./type_defs.md#putbotaliasrequesttypedef).
+[PutBotAliasRequestRequestTypeDef](./type_defs.md#putbotaliasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -834,7 +839,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[PutBotAliasResponseResponseTypeDef](./type_defs.md#putbotaliasresponseresponsetypedef).
+[PutBotAliasResponseTypeDef](./type_defs.md#putbotaliasresponsetypedef).
 
 ### put_intent
 
@@ -846,7 +851,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.put_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_intent)
 
 Arguments mapping described in
-[PutIntentRequestTypeDef](./type_defs.md#putintentrequesttypedef).
+[PutIntentRequestRequestTypeDef](./type_defs.md#putintentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -872,8 +877,7 @@ Keyword-only arguments:
 - `outputContexts`:
   `List`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
 
-Returns
-[PutIntentResponseResponseTypeDef](./type_defs.md#putintentresponseresponsetypedef).
+Returns [PutIntentResponseTypeDef](./type_defs.md#putintentresponsetypedef).
 
 ### put_slot_type
 
@@ -885,7 +889,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.put_slot_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_slot_type)
 
 Arguments mapping described in
-[PutSlotTypeRequestTypeDef](./type_defs.md#putslottyperequesttypedef).
+[PutSlotTypeRequestRequestTypeDef](./type_defs.md#putslottyperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -902,7 +906,7 @@ Keyword-only arguments:
   `List`\[[SlotTypeConfigurationTypeDef](./type_defs.md#slottypeconfigurationtypedef)\]
 
 Returns
-[PutSlotTypeResponseResponseTypeDef](./type_defs.md#putslottyperesponseresponsetypedef).
+[PutSlotTypeResponseTypeDef](./type_defs.md#putslottyperesponsetypedef).
 
 ### start_import
 
@@ -914,7 +918,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.start_import](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.start_import)
 
 Arguments mapping described in
-[StartImportRequestTypeDef](./type_defs.md#startimportrequesttypedef).
+[StartImportRequestRequestTypeDef](./type_defs.md#startimportrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -926,7 +930,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[StartImportResponseResponseTypeDef](./type_defs.md#startimportresponseresponsetypedef).
+[StartImportResponseTypeDef](./type_defs.md#startimportresponsetypedef).
 
 ### tag_resource
 
@@ -938,7 +942,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -957,7 +961,7 @@ Boto3 documentation:
 [LexModelBuildingService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 

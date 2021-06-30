@@ -11,6 +11,7 @@ type annotations stubs module
   - [ResourceGroupsClient](#resourcegroupsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_group](#create_group)
     - [delete_group](#delete_group)
@@ -72,6 +73,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ResourceGroupsClient exceptions.
+
+Type annotations for `boto3.client("resource-groups").exceptions` method.
+
+Boto3 documentation:
+[ResourceGroups.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -97,7 +109,7 @@ Boto3 documentation:
 [ResourceGroups.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.create_group)
 
 Arguments mapping described in
-[CreateGroupInputTypeDef](./type_defs.md#creategroupinputtypedef).
+[CreateGroupInputRequestTypeDef](./type_defs.md#creategroupinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -108,8 +120,7 @@ Keyword-only arguments:
 - `Configuration`:
   `List`\[[GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef)\]
 
-Returns
-[CreateGroupOutputResponseTypeDef](./type_defs.md#creategroupoutputresponsetypedef).
+Returns [CreateGroupOutputTypeDef](./type_defs.md#creategroupoutputtypedef).
 
 ### delete_group
 
@@ -121,15 +132,14 @@ Boto3 documentation:
 [ResourceGroups.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.delete_group)
 
 Arguments mapping described in
-[DeleteGroupInputTypeDef](./type_defs.md#deletegroupinputtypedef).
+[DeleteGroupInputRequestTypeDef](./type_defs.md#deletegroupinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `GroupName`: `str`
 - `Group`: `str`
 
-Returns
-[DeleteGroupOutputResponseTypeDef](./type_defs.md#deletegroupoutputresponsetypedef).
+Returns [DeleteGroupOutputTypeDef](./type_defs.md#deletegroupoutputtypedef).
 
 ### generate_presigned_url
 
@@ -160,15 +170,14 @@ Boto3 documentation:
 [ResourceGroups.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.get_group)
 
 Arguments mapping described in
-[GetGroupInputTypeDef](./type_defs.md#getgroupinputtypedef).
+[GetGroupInputRequestTypeDef](./type_defs.md#getgroupinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `GroupName`: `str`
 - `Group`: `str`
 
-Returns
-[GetGroupOutputResponseTypeDef](./type_defs.md#getgroupoutputresponsetypedef).
+Returns [GetGroupOutputTypeDef](./type_defs.md#getgroupoutputtypedef).
 
 ### get_group_configuration
 
@@ -181,14 +190,14 @@ Boto3 documentation:
 [ResourceGroups.Client.get_group_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.get_group_configuration)
 
 Arguments mapping described in
-[GetGroupConfigurationInputTypeDef](./type_defs.md#getgroupconfigurationinputtypedef).
+[GetGroupConfigurationInputRequestTypeDef](./type_defs.md#getgroupconfigurationinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `Group`: `str`
 
 Returns
-[GetGroupConfigurationOutputResponseTypeDef](./type_defs.md#getgroupconfigurationoutputresponsetypedef).
+[GetGroupConfigurationOutputTypeDef](./type_defs.md#getgroupconfigurationoutputtypedef).
 
 ### get_group_query
 
@@ -200,7 +209,7 @@ Boto3 documentation:
 [ResourceGroups.Client.get_group_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.get_group_query)
 
 Arguments mapping described in
-[GetGroupQueryInputTypeDef](./type_defs.md#getgroupqueryinputtypedef).
+[GetGroupQueryInputRequestTypeDef](./type_defs.md#getgroupqueryinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -208,7 +217,7 @@ Keyword-only arguments:
 - `Group`: `str`
 
 Returns
-[GetGroupQueryOutputResponseTypeDef](./type_defs.md#getgroupqueryoutputresponsetypedef).
+[GetGroupQueryOutputTypeDef](./type_defs.md#getgroupqueryoutputtypedef).
 
 ### get_tags
 
@@ -221,14 +230,13 @@ Boto3 documentation:
 [ResourceGroups.Client.get_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.get_tags)
 
 Arguments mapping described in
-[GetTagsInputTypeDef](./type_defs.md#gettagsinputtypedef).
+[GetTagsInputRequestTypeDef](./type_defs.md#gettagsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
-Returns
-[GetTagsOutputResponseTypeDef](./type_defs.md#gettagsoutputresponsetypedef).
+Returns [GetTagsOutputTypeDef](./type_defs.md#gettagsoutputtypedef).
 
 ### group_resources
 
@@ -240,7 +248,7 @@ Boto3 documentation:
 [ResourceGroups.Client.group_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.group_resources)
 
 Arguments mapping described in
-[GroupResourcesInputTypeDef](./type_defs.md#groupresourcesinputtypedef).
+[GroupResourcesInputRequestTypeDef](./type_defs.md#groupresourcesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -248,7 +256,7 @@ Keyword-only arguments:
 - `ResourceArns`: `List`\[`str`\] *(required)*
 
 Returns
-[GroupResourcesOutputResponseTypeDef](./type_defs.md#groupresourcesoutputresponsetypedef).
+[GroupResourcesOutputTypeDef](./type_defs.md#groupresourcesoutputtypedef).
 
 ### list_group_resources
 
@@ -262,7 +270,7 @@ Boto3 documentation:
 [ResourceGroups.Client.list_group_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.list_group_resources)
 
 Arguments mapping described in
-[ListGroupResourcesInputTypeDef](./type_defs.md#listgroupresourcesinputtypedef).
+[ListGroupResourcesInputRequestTypeDef](./type_defs.md#listgroupresourcesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -274,7 +282,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListGroupResourcesOutputResponseTypeDef](./type_defs.md#listgroupresourcesoutputresponsetypedef).
+[ListGroupResourcesOutputTypeDef](./type_defs.md#listgroupresourcesoutputtypedef).
 
 ### list_groups
 
@@ -286,7 +294,7 @@ Boto3 documentation:
 [ResourceGroups.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.list_groups)
 
 Arguments mapping described in
-[ListGroupsInputTypeDef](./type_defs.md#listgroupsinputtypedef).
+[ListGroupsInputRequestTypeDef](./type_defs.md#listgroupsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -294,8 +302,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListGroupsOutputResponseTypeDef](./type_defs.md#listgroupsoutputresponsetypedef).
+Returns [ListGroupsOutputTypeDef](./type_defs.md#listgroupsoutputtypedef).
 
 ### put_group_configuration
 
@@ -308,7 +315,7 @@ Boto3 documentation:
 [ResourceGroups.Client.put_group_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.put_group_configuration)
 
 Arguments mapping described in
-[PutGroupConfigurationInputTypeDef](./type_defs.md#putgroupconfigurationinputtypedef).
+[PutGroupConfigurationInputRequestTypeDef](./type_defs.md#putgroupconfigurationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -328,7 +335,7 @@ Boto3 documentation:
 [ResourceGroups.Client.search_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.search_resources)
 
 Arguments mapping described in
-[SearchResourcesInputTypeDef](./type_defs.md#searchresourcesinputtypedef).
+[SearchResourcesInputRequestTypeDef](./type_defs.md#searchresourcesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -338,7 +345,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[SearchResourcesOutputResponseTypeDef](./type_defs.md#searchresourcesoutputresponsetypedef).
+[SearchResourcesOutputTypeDef](./type_defs.md#searchresourcesoutputtypedef).
 
 ### tag
 
@@ -350,14 +357,14 @@ Boto3 documentation:
 [ResourceGroups.Client.tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.tag)
 
 Arguments mapping described in
-[TagInputTypeDef](./type_defs.md#taginputtypedef).
+[TagInputRequestTypeDef](./type_defs.md#taginputrequesttypedef).
 
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
 
-Returns [TagOutputResponseTypeDef](./type_defs.md#tagoutputresponsetypedef).
+Returns [TagOutputTypeDef](./type_defs.md#tagoutputtypedef).
 
 ### ungroup_resources
 
@@ -370,7 +377,7 @@ Boto3 documentation:
 [ResourceGroups.Client.ungroup_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.ungroup_resources)
 
 Arguments mapping described in
-[UngroupResourcesInputTypeDef](./type_defs.md#ungroupresourcesinputtypedef).
+[UngroupResourcesInputRequestTypeDef](./type_defs.md#ungroupresourcesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -378,7 +385,7 @@ Keyword-only arguments:
 - `ResourceArns`: `List`\[`str`\] *(required)*
 
 Returns
-[UngroupResourcesOutputResponseTypeDef](./type_defs.md#ungroupresourcesoutputresponsetypedef).
+[UngroupResourcesOutputTypeDef](./type_defs.md#ungroupresourcesoutputtypedef).
 
 ### untag
 
@@ -390,15 +397,14 @@ Boto3 documentation:
 [ResourceGroups.Client.untag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.untag)
 
 Arguments mapping described in
-[UntagInputTypeDef](./type_defs.md#untaginputtypedef).
+[UntagInputRequestTypeDef](./type_defs.md#untaginputrequesttypedef).
 
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `Keys`: `List`\[`str`\] *(required)*
 
-Returns
-[UntagOutputResponseTypeDef](./type_defs.md#untagoutputresponsetypedef).
+Returns [UntagOutputTypeDef](./type_defs.md#untagoutputtypedef).
 
 ### update_group
 
@@ -410,7 +416,7 @@ Boto3 documentation:
 [ResourceGroups.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.update_group)
 
 Arguments mapping described in
-[UpdateGroupInputTypeDef](./type_defs.md#updategroupinputtypedef).
+[UpdateGroupInputRequestTypeDef](./type_defs.md#updategroupinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -418,8 +424,7 @@ Keyword-only arguments:
 - `Group`: `str`
 - `Description`: `str`
 
-Returns
-[UpdateGroupOutputResponseTypeDef](./type_defs.md#updategroupoutputresponsetypedef).
+Returns [UpdateGroupOutputTypeDef](./type_defs.md#updategroupoutputtypedef).
 
 ### update_group_query
 
@@ -432,7 +437,7 @@ Boto3 documentation:
 [ResourceGroups.Client.update_group_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.update_group_query)
 
 Arguments mapping described in
-[UpdateGroupQueryInputTypeDef](./type_defs.md#updategroupqueryinputtypedef).
+[UpdateGroupQueryInputRequestTypeDef](./type_defs.md#updategroupqueryinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -442,7 +447,7 @@ Keyword-only arguments:
 - `Group`: `str`
 
 Returns
-[UpdateGroupQueryOutputResponseTypeDef](./type_defs.md#updategroupqueryoutputresponsetypedef).
+[UpdateGroupQueryOutputTypeDef](./type_defs.md#updategroupqueryoutputtypedef).
 
 ### get_paginator
 

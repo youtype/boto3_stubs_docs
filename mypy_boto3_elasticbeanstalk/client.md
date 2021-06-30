@@ -11,6 +11,7 @@ type annotations stubs module
   - [ElasticBeanstalkClient](#elasticbeanstalkclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [abort_environment_update](#abort_environment_update)
     - [apply_environment_managed_action](#apply_environment_managed_action)
     - [associate_environment_operations_role](#associate_environment_operations_role)
@@ -116,6 +117,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ElasticBeanstalkClient exceptions.
+
+Type annotations for `boto3.client("elasticbeanstalk").exceptions` method.
+
+Boto3 documentation:
+[ElasticBeanstalk.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### abort_environment_update
 
 Cancels in-progress environment configuration update or application version
@@ -128,7 +140,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.abort_environment_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.abort_environment_update)
 
 Arguments mapping described in
-[AbortEnvironmentUpdateMessageTypeDef](./type_defs.md#abortenvironmentupdatemessagetypedef).
+[AbortEnvironmentUpdateMessageRequestTypeDef](./type_defs.md#abortenvironmentupdatemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -146,7 +158,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.apply_environment_managed_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.apply_environment_managed_action)
 
 Arguments mapping described in
-[ApplyEnvironmentManagedActionRequestTypeDef](./type_defs.md#applyenvironmentmanagedactionrequesttypedef).
+[ApplyEnvironmentManagedActionRequestRequestTypeDef](./type_defs.md#applyenvironmentmanagedactionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -155,7 +167,7 @@ Keyword-only arguments:
 - `EnvironmentId`: `str`
 
 Returns
-[ApplyEnvironmentManagedActionResultResponseTypeDef](./type_defs.md#applyenvironmentmanagedactionresultresponsetypedef).
+[ApplyEnvironmentManagedActionResultTypeDef](./type_defs.md#applyenvironmentmanagedactionresulttypedef).
 
 ### associate_environment_operations_role
 
@@ -169,7 +181,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.associate_environment_operations_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.associate_environment_operations_role)
 
 Arguments mapping described in
-[AssociateEnvironmentOperationsRoleMessageTypeDef](./type_defs.md#associateenvironmentoperationsrolemessagetypedef).
+[AssociateEnvironmentOperationsRoleMessageRequestTypeDef](./type_defs.md#associateenvironmentoperationsrolemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -202,14 +214,14 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.check_dns_availability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.check_dns_availability)
 
 Arguments mapping described in
-[CheckDNSAvailabilityMessageTypeDef](./type_defs.md#checkdnsavailabilitymessagetypedef).
+[CheckDNSAvailabilityMessageRequestTypeDef](./type_defs.md#checkdnsavailabilitymessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `CNAMEPrefix`: `str` *(required)*
 
 Returns
-[CheckDNSAvailabilityResultMessageResponseTypeDef](./type_defs.md#checkdnsavailabilityresultmessageresponsetypedef).
+[CheckDNSAvailabilityResultMessageTypeDef](./type_defs.md#checkdnsavailabilityresultmessagetypedef).
 
 ### compose_environments
 
@@ -223,7 +235,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.compose_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.compose_environments)
 
 Arguments mapping described in
-[ComposeEnvironmentsMessageTypeDef](./type_defs.md#composeenvironmentsmessagetypedef).
+[ComposeEnvironmentsMessageRequestTypeDef](./type_defs.md#composeenvironmentsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -232,7 +244,7 @@ Keyword-only arguments:
 - `VersionLabels`: `List`\[`str`\]
 
 Returns
-[EnvironmentDescriptionsMessageResponseTypeDef](./type_defs.md#environmentdescriptionsmessageresponsetypedef).
+[EnvironmentDescriptionsMessageTypeDef](./type_defs.md#environmentdescriptionsmessagetypedef).
 
 ### create_application
 
@@ -246,7 +258,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_application)
 
 Arguments mapping described in
-[CreateApplicationMessageTypeDef](./type_defs.md#createapplicationmessagetypedef).
+[CreateApplicationMessageRequestTypeDef](./type_defs.md#createapplicationmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -257,7 +269,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[ApplicationDescriptionMessageResponseTypeDef](./type_defs.md#applicationdescriptionmessageresponsetypedef).
+[ApplicationDescriptionMessageTypeDef](./type_defs.md#applicationdescriptionmessagetypedef).
 
 ### create_application_version
 
@@ -270,7 +282,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.create_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_application_version)
 
 Arguments mapping described in
-[CreateApplicationVersionMessageTypeDef](./type_defs.md#createapplicationversionmessagetypedef).
+[CreateApplicationVersionMessageRequestTypeDef](./type_defs.md#createapplicationversionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -287,7 +299,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[ApplicationVersionDescriptionMessageResponseTypeDef](./type_defs.md#applicationversiondescriptionmessageresponsetypedef).
+[ApplicationVersionDescriptionMessageTypeDef](./type_defs.md#applicationversiondescriptionmessagetypedef).
 
 ### create_configuration_template
 
@@ -300,7 +312,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.create_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_configuration_template)
 
 Arguments mapping described in
-[CreateConfigurationTemplateMessageTypeDef](./type_defs.md#createconfigurationtemplatemessagetypedef).
+[CreateConfigurationTemplateMessageRequestTypeDef](./type_defs.md#createconfigurationtemplatemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -317,7 +329,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[ConfigurationSettingsDescriptionResponseTypeDef](./type_defs.md#configurationsettingsdescriptionresponsetypedef).
+[ConfigurationSettingsDescriptionResponseMetadataTypeDef](./type_defs.md#configurationsettingsdescriptionresponsemetadatatypedef).
 
 ### create_environment
 
@@ -331,7 +343,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_environment)
 
 Arguments mapping described in
-[CreateEnvironmentMessageTypeDef](./type_defs.md#createenvironmentmessagetypedef).
+[CreateEnvironmentMessageRequestTypeDef](./type_defs.md#createenvironmentmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -353,7 +365,7 @@ Keyword-only arguments:
 - `OperationsRole`: `str`
 
 Returns
-[EnvironmentDescriptionTypeDef](./type_defs.md#environmentdescriptiontypedef).
+[EnvironmentDescriptionResponseMetadataTypeDef](./type_defs.md#environmentdescriptionresponsemetadatatypedef).
 
 ### create_platform_version
 
@@ -366,7 +378,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.create_platform_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_platform_version)
 
 Arguments mapping described in
-[CreatePlatformVersionRequestTypeDef](./type_defs.md#createplatformversionrequesttypedef).
+[CreatePlatformVersionRequestRequestTypeDef](./type_defs.md#createplatformversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -380,7 +392,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreatePlatformVersionResultResponseTypeDef](./type_defs.md#createplatformversionresultresponsetypedef).
+[CreatePlatformVersionResultTypeDef](./type_defs.md#createplatformversionresulttypedef).
 
 ### create_storage_location
 
@@ -394,7 +406,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.create_storage_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_storage_location)
 
 Returns
-[CreateStorageLocationResultMessageResponseTypeDef](./type_defs.md#createstoragelocationresultmessageresponsetypedef).
+[CreateStorageLocationResultMessageTypeDef](./type_defs.md#createstoragelocationresultmessagetypedef).
 
 ### delete_application
 
@@ -408,7 +420,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_application)
 
 Arguments mapping described in
-[DeleteApplicationMessageTypeDef](./type_defs.md#deleteapplicationmessagetypedef).
+[DeleteApplicationMessageRequestTypeDef](./type_defs.md#deleteapplicationmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -426,7 +438,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.delete_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_application_version)
 
 Arguments mapping described in
-[DeleteApplicationVersionMessageTypeDef](./type_defs.md#deleteapplicationversionmessagetypedef).
+[DeleteApplicationVersionMessageRequestTypeDef](./type_defs.md#deleteapplicationversionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -445,7 +457,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.delete_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_configuration_template)
 
 Arguments mapping described in
-[DeleteConfigurationTemplateMessageTypeDef](./type_defs.md#deleteconfigurationtemplatemessagetypedef).
+[DeleteConfigurationTemplateMessageRequestTypeDef](./type_defs.md#deleteconfigurationtemplatemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -463,7 +475,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.delete_environment_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_environment_configuration)
 
 Arguments mapping described in
-[DeleteEnvironmentConfigurationMessageTypeDef](./type_defs.md#deleteenvironmentconfigurationmessagetypedef).
+[DeleteEnvironmentConfigurationMessageRequestTypeDef](./type_defs.md#deleteenvironmentconfigurationmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -481,14 +493,14 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.delete_platform_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_platform_version)
 
 Arguments mapping described in
-[DeletePlatformVersionRequestTypeDef](./type_defs.md#deleteplatformversionrequesttypedef).
+[DeletePlatformVersionRequestRequestTypeDef](./type_defs.md#deleteplatformversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `PlatformArn`: `str`
 
 Returns
-[DeletePlatformVersionResultResponseTypeDef](./type_defs.md#deleteplatformversionresultresponsetypedef).
+[DeletePlatformVersionResultTypeDef](./type_defs.md#deleteplatformversionresulttypedef).
 
 ### describe_account_attributes
 
@@ -502,7 +514,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_account_attributes)
 
 Returns
-[DescribeAccountAttributesResultResponseTypeDef](./type_defs.md#describeaccountattributesresultresponsetypedef).
+[DescribeAccountAttributesResultTypeDef](./type_defs.md#describeaccountattributesresulttypedef).
 
 ### describe_application_versions
 
@@ -515,7 +527,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.describe_application_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_application_versions)
 
 Arguments mapping described in
-[DescribeApplicationVersionsMessageTypeDef](./type_defs.md#describeapplicationversionsmessagetypedef).
+[DescribeApplicationVersionsMessageRequestTypeDef](./type_defs.md#describeapplicationversionsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -525,7 +537,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ApplicationVersionDescriptionsMessageResponseTypeDef](./type_defs.md#applicationversiondescriptionsmessageresponsetypedef).
+[ApplicationVersionDescriptionsMessageTypeDef](./type_defs.md#applicationversiondescriptionsmessagetypedef).
 
 ### describe_applications
 
@@ -538,14 +550,14 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.describe_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_applications)
 
 Arguments mapping described in
-[DescribeApplicationsMessageTypeDef](./type_defs.md#describeapplicationsmessagetypedef).
+[DescribeApplicationsMessageRequestTypeDef](./type_defs.md#describeapplicationsmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationNames`: `List`\[`str`\]
 
 Returns
-[ApplicationDescriptionsMessageResponseTypeDef](./type_defs.md#applicationdescriptionsmessageresponsetypedef).
+[ApplicationDescriptionsMessageTypeDef](./type_defs.md#applicationdescriptionsmessagetypedef).
 
 ### describe_configuration_options
 
@@ -559,7 +571,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.describe_configuration_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_configuration_options)
 
 Arguments mapping described in
-[DescribeConfigurationOptionsMessageTypeDef](./type_defs.md#describeconfigurationoptionsmessagetypedef).
+[DescribeConfigurationOptionsMessageRequestTypeDef](./type_defs.md#describeconfigurationoptionsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -572,7 +584,7 @@ Keyword-only arguments:
   `List`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
 
 Returns
-[ConfigurationOptionsDescriptionResponseTypeDef](./type_defs.md#configurationoptionsdescriptionresponsetypedef).
+[ConfigurationOptionsDescriptionTypeDef](./type_defs.md#configurationoptionsdescriptiontypedef).
 
 ### describe_configuration_settings
 
@@ -587,7 +599,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.describe_configuration_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_configuration_settings)
 
 Arguments mapping described in
-[DescribeConfigurationSettingsMessageTypeDef](./type_defs.md#describeconfigurationsettingsmessagetypedef).
+[DescribeConfigurationSettingsMessageRequestTypeDef](./type_defs.md#describeconfigurationsettingsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -596,7 +608,7 @@ Keyword-only arguments:
 - `EnvironmentName`: `str`
 
 Returns
-[ConfigurationSettingsDescriptionsResponseTypeDef](./type_defs.md#configurationsettingsdescriptionsresponsetypedef).
+[ConfigurationSettingsDescriptionsTypeDef](./type_defs.md#configurationsettingsdescriptionstypedef).
 
 ### describe_environment_health
 
@@ -609,7 +621,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.describe_environment_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_health)
 
 Arguments mapping described in
-[DescribeEnvironmentHealthRequestTypeDef](./type_defs.md#describeenvironmenthealthrequesttypedef).
+[DescribeEnvironmentHealthRequestRequestTypeDef](./type_defs.md#describeenvironmenthealthrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -619,7 +631,7 @@ Keyword-only arguments:
   `List`\[[EnvironmentHealthAttributeType](./literals.md#environmenthealthattributetype)\]
 
 Returns
-[DescribeEnvironmentHealthResultResponseTypeDef](./type_defs.md#describeenvironmenthealthresultresponsetypedef).
+[DescribeEnvironmentHealthResultTypeDef](./type_defs.md#describeenvironmenthealthresulttypedef).
 
 ### describe_environment_managed_action_history
 
@@ -633,7 +645,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.describe_environment_managed_action_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_managed_action_history)
 
 Arguments mapping described in
-[DescribeEnvironmentManagedActionHistoryRequestTypeDef](./type_defs.md#describeenvironmentmanagedactionhistoryrequesttypedef).
+[DescribeEnvironmentManagedActionHistoryRequestRequestTypeDef](./type_defs.md#describeenvironmentmanagedactionhistoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -643,7 +655,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[DescribeEnvironmentManagedActionHistoryResultResponseTypeDef](./type_defs.md#describeenvironmentmanagedactionhistoryresultresponsetypedef).
+[DescribeEnvironmentManagedActionHistoryResultTypeDef](./type_defs.md#describeenvironmentmanagedactionhistoryresulttypedef).
 
 ### describe_environment_managed_actions
 
@@ -656,7 +668,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.describe_environment_managed_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_managed_actions)
 
 Arguments mapping described in
-[DescribeEnvironmentManagedActionsRequestTypeDef](./type_defs.md#describeenvironmentmanagedactionsrequesttypedef).
+[DescribeEnvironmentManagedActionsRequestRequestTypeDef](./type_defs.md#describeenvironmentmanagedactionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -665,7 +677,7 @@ Keyword-only arguments:
 - `Status`: [ActionStatusType](./literals.md#actionstatustype)
 
 Returns
-[DescribeEnvironmentManagedActionsResultResponseTypeDef](./type_defs.md#describeenvironmentmanagedactionsresultresponsetypedef).
+[DescribeEnvironmentManagedActionsResultTypeDef](./type_defs.md#describeenvironmentmanagedactionsresulttypedef).
 
 ### describe_environment_resources
 
@@ -678,7 +690,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.describe_environment_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_resources)
 
 Arguments mapping described in
-[DescribeEnvironmentResourcesMessageTypeDef](./type_defs.md#describeenvironmentresourcesmessagetypedef).
+[DescribeEnvironmentResourcesMessageRequestTypeDef](./type_defs.md#describeenvironmentresourcesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -686,7 +698,7 @@ Keyword-only arguments:
 - `EnvironmentName`: `str`
 
 Returns
-[EnvironmentResourceDescriptionsMessageResponseTypeDef](./type_defs.md#environmentresourcedescriptionsmessageresponsetypedef).
+[EnvironmentResourceDescriptionsMessageTypeDef](./type_defs.md#environmentresourcedescriptionsmessagetypedef).
 
 ### describe_environments
 
@@ -699,7 +711,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.describe_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environments)
 
 Arguments mapping described in
-[DescribeEnvironmentsMessageTypeDef](./type_defs.md#describeenvironmentsmessagetypedef).
+[DescribeEnvironmentsMessageRequestTypeDef](./type_defs.md#describeenvironmentsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -713,7 +725,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[EnvironmentDescriptionsMessageResponseTypeDef](./type_defs.md#environmentdescriptionsmessageresponsetypedef).
+[EnvironmentDescriptionsMessageTypeDef](./type_defs.md#environmentdescriptionsmessagetypedef).
 
 ### describe_events
 
@@ -725,7 +737,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_events)
 
 Arguments mapping described in
-[DescribeEventsMessageTypeDef](./type_defs.md#describeeventsmessagetypedef).
+[DescribeEventsMessageRequestTypeDef](./type_defs.md#describeeventsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -743,7 +755,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[EventDescriptionsMessageResponseTypeDef](./type_defs.md#eventdescriptionsmessageresponsetypedef).
+[EventDescriptionsMessageTypeDef](./type_defs.md#eventdescriptionsmessagetypedef).
 
 ### describe_instances_health
 
@@ -757,7 +769,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.describe_instances_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_instances_health)
 
 Arguments mapping described in
-[DescribeInstancesHealthRequestTypeDef](./type_defs.md#describeinstanceshealthrequesttypedef).
+[DescribeInstancesHealthRequestRequestTypeDef](./type_defs.md#describeinstanceshealthrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -768,7 +780,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeInstancesHealthResultResponseTypeDef](./type_defs.md#describeinstanceshealthresultresponsetypedef).
+[DescribeInstancesHealthResultTypeDef](./type_defs.md#describeinstanceshealthresulttypedef).
 
 ### describe_platform_version
 
@@ -781,14 +793,14 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.describe_platform_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_platform_version)
 
 Arguments mapping described in
-[DescribePlatformVersionRequestTypeDef](./type_defs.md#describeplatformversionrequesttypedef).
+[DescribePlatformVersionRequestRequestTypeDef](./type_defs.md#describeplatformversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `PlatformArn`: `str`
 
 Returns
-[DescribePlatformVersionResultResponseTypeDef](./type_defs.md#describeplatformversionresultresponsetypedef).
+[DescribePlatformVersionResultTypeDef](./type_defs.md#describeplatformversionresulttypedef).
 
 ### disassociate_environment_operations_role
 
@@ -802,7 +814,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.disassociate_environment_operations_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.disassociate_environment_operations_role)
 
 Arguments mapping described in
-[DisassociateEnvironmentOperationsRoleMessageTypeDef](./type_defs.md#disassociateenvironmentoperationsrolemessagetypedef).
+[DisassociateEnvironmentOperationsRoleMessageRequestTypeDef](./type_defs.md#disassociateenvironmentoperationsrolemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -839,7 +851,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.list_available_solution_stacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_available_solution_stacks)
 
 Returns
-[ListAvailableSolutionStacksResultMessageResponseTypeDef](./type_defs.md#listavailablesolutionstacksresultmessageresponsetypedef).
+[ListAvailableSolutionStacksResultMessageTypeDef](./type_defs.md#listavailablesolutionstacksresultmessagetypedef).
 
 ### list_platform_branches
 
@@ -852,7 +864,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.list_platform_branches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_platform_branches)
 
 Arguments mapping described in
-[ListPlatformBranchesRequestTypeDef](./type_defs.md#listplatformbranchesrequesttypedef).
+[ListPlatformBranchesRequestRequestTypeDef](./type_defs.md#listplatformbranchesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -862,7 +874,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListPlatformBranchesResultResponseTypeDef](./type_defs.md#listplatformbranchesresultresponsetypedef).
+[ListPlatformBranchesResultTypeDef](./type_defs.md#listplatformbranchesresulttypedef).
 
 ### list_platform_versions
 
@@ -875,7 +887,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.list_platform_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_platform_versions)
 
 Arguments mapping described in
-[ListPlatformVersionsRequestTypeDef](./type_defs.md#listplatformversionsrequesttypedef).
+[ListPlatformVersionsRequestRequestTypeDef](./type_defs.md#listplatformversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -885,7 +897,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListPlatformVersionsResultResponseTypeDef](./type_defs.md#listplatformversionsresultresponsetypedef).
+[ListPlatformVersionsResultTypeDef](./type_defs.md#listplatformversionsresulttypedef).
 
 ### list_tags_for_resource
 
@@ -898,14 +910,14 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceMessageTypeDef](./type_defs.md#listtagsforresourcemessagetypedef).
+[ListTagsForResourceMessageRequestTypeDef](./type_defs.md#listtagsforresourcemessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ResourceTagsDescriptionMessageResponseTypeDef](./type_defs.md#resourcetagsdescriptionmessageresponsetypedef).
+[ResourceTagsDescriptionMessageTypeDef](./type_defs.md#resourcetagsdescriptionmessagetypedef).
 
 ### rebuild_environment
 
@@ -919,7 +931,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.rebuild_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.rebuild_environment)
 
 Arguments mapping described in
-[RebuildEnvironmentMessageTypeDef](./type_defs.md#rebuildenvironmentmessagetypedef).
+[RebuildEnvironmentMessageRequestTypeDef](./type_defs.md#rebuildenvironmentmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -938,7 +950,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.request_environment_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.request_environment_info)
 
 Arguments mapping described in
-[RequestEnvironmentInfoMessageTypeDef](./type_defs.md#requestenvironmentinfomessagetypedef).
+[RequestEnvironmentInfoMessageRequestTypeDef](./type_defs.md#requestenvironmentinfomessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -959,7 +971,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.restart_app_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.restart_app_server)
 
 Arguments mapping described in
-[RestartAppServerMessageTypeDef](./type_defs.md#restartappservermessagetypedef).
+[RestartAppServerMessageRequestTypeDef](./type_defs.md#restartappservermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -977,7 +989,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.retrieve_environment_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.retrieve_environment_info)
 
 Arguments mapping described in
-[RetrieveEnvironmentInfoMessageTypeDef](./type_defs.md#retrieveenvironmentinfomessagetypedef).
+[RetrieveEnvironmentInfoMessageRequestTypeDef](./type_defs.md#retrieveenvironmentinfomessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -987,7 +999,7 @@ Keyword-only arguments:
 - `EnvironmentName`: `str`
 
 Returns
-[RetrieveEnvironmentInfoResultMessageResponseTypeDef](./type_defs.md#retrieveenvironmentinforesultmessageresponsetypedef).
+[RetrieveEnvironmentInfoResultMessageTypeDef](./type_defs.md#retrieveenvironmentinforesultmessagetypedef).
 
 ### swap_environment_cnames
 
@@ -1000,7 +1012,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.swap_environment_cnames](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.swap_environment_cnames)
 
 Arguments mapping described in
-[SwapEnvironmentCNAMEsMessageTypeDef](./type_defs.md#swapenvironmentcnamesmessagetypedef).
+[SwapEnvironmentCNAMEsMessageRequestTypeDef](./type_defs.md#swapenvironmentcnamesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1020,7 +1032,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.terminate_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.terminate_environment)
 
 Arguments mapping described in
-[TerminateEnvironmentMessageTypeDef](./type_defs.md#terminateenvironmentmessagetypedef).
+[TerminateEnvironmentMessageRequestTypeDef](./type_defs.md#terminateenvironmentmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1030,7 +1042,7 @@ Keyword-only arguments:
 - `ForceTerminate`: `bool`
 
 Returns
-[EnvironmentDescriptionTypeDef](./type_defs.md#environmentdescriptiontypedef).
+[EnvironmentDescriptionResponseMetadataTypeDef](./type_defs.md#environmentdescriptionresponsemetadatatypedef).
 
 ### update_application
 
@@ -1043,7 +1055,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application)
 
 Arguments mapping described in
-[UpdateApplicationMessageTypeDef](./type_defs.md#updateapplicationmessagetypedef).
+[UpdateApplicationMessageRequestTypeDef](./type_defs.md#updateapplicationmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1051,7 +1063,7 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[ApplicationDescriptionMessageResponseTypeDef](./type_defs.md#applicationdescriptionmessageresponsetypedef).
+[ApplicationDescriptionMessageTypeDef](./type_defs.md#applicationdescriptionmessagetypedef).
 
 ### update_application_resource_lifecycle
 
@@ -1065,7 +1077,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.update_application_resource_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application_resource_lifecycle)
 
 Arguments mapping described in
-[UpdateApplicationResourceLifecycleMessageTypeDef](./type_defs.md#updateapplicationresourcelifecyclemessagetypedef).
+[UpdateApplicationResourceLifecycleMessageRequestTypeDef](./type_defs.md#updateapplicationresourcelifecyclemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1075,7 +1087,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[ApplicationResourceLifecycleDescriptionMessageResponseTypeDef](./type_defs.md#applicationresourcelifecycledescriptionmessageresponsetypedef).
+[ApplicationResourceLifecycleDescriptionMessageTypeDef](./type_defs.md#applicationresourcelifecycledescriptionmessagetypedef).
 
 ### update_application_version
 
@@ -1088,7 +1100,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.update_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application_version)
 
 Arguments mapping described in
-[UpdateApplicationVersionMessageTypeDef](./type_defs.md#updateapplicationversionmessagetypedef).
+[UpdateApplicationVersionMessageRequestTypeDef](./type_defs.md#updateapplicationversionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1097,7 +1109,7 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[ApplicationVersionDescriptionMessageResponseTypeDef](./type_defs.md#applicationversiondescriptionmessageresponsetypedef).
+[ApplicationVersionDescriptionMessageTypeDef](./type_defs.md#applicationversiondescriptionmessagetypedef).
 
 ### update_configuration_template
 
@@ -1111,7 +1123,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.update_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_configuration_template)
 
 Arguments mapping described in
-[UpdateConfigurationTemplateMessageTypeDef](./type_defs.md#updateconfigurationtemplatemessagetypedef).
+[UpdateConfigurationTemplateMessageRequestTypeDef](./type_defs.md#updateconfigurationtemplatemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1124,7 +1136,7 @@ Keyword-only arguments:
   `List`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
 
 Returns
-[ConfigurationSettingsDescriptionResponseTypeDef](./type_defs.md#configurationsettingsdescriptionresponsetypedef).
+[ConfigurationSettingsDescriptionResponseMetadataTypeDef](./type_defs.md#configurationsettingsdescriptionresponsemetadatatypedef).
 
 ### update_environment
 
@@ -1139,7 +1151,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_environment)
 
 Arguments mapping described in
-[UpdateEnvironmentMessageTypeDef](./type_defs.md#updateenvironmentmessagetypedef).
+[UpdateEnvironmentMessageRequestTypeDef](./type_defs.md#updateenvironmentmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1159,7 +1171,7 @@ Keyword-only arguments:
   `List`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
 
 Returns
-[EnvironmentDescriptionTypeDef](./type_defs.md#environmentdescriptiontypedef).
+[EnvironmentDescriptionResponseMetadataTypeDef](./type_defs.md#environmentdescriptionresponsemetadatatypedef).
 
 ### update_tags_for_resource
 
@@ -1172,7 +1184,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.update_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_tags_for_resource)
 
 Arguments mapping described in
-[UpdateTagsForResourceMessageTypeDef](./type_defs.md#updatetagsforresourcemessagetypedef).
+[UpdateTagsForResourceMessageRequestTypeDef](./type_defs.md#updatetagsforresourcemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1192,7 +1204,7 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.validate_configuration_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.validate_configuration_settings)
 
 Arguments mapping described in
-[ValidateConfigurationSettingsMessageTypeDef](./type_defs.md#validateconfigurationsettingsmessagetypedef).
+[ValidateConfigurationSettingsMessageRequestTypeDef](./type_defs.md#validateconfigurationsettingsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1204,7 +1216,7 @@ Keyword-only arguments:
 - `EnvironmentName`: `str`
 
 Returns
-[ConfigurationSettingsValidationMessagesResponseTypeDef](./type_defs.md#configurationsettingsvalidationmessagesresponsetypedef).
+[ConfigurationSettingsValidationMessagesTypeDef](./type_defs.md#configurationsettingsvalidationmessagestypedef).
 
 ### get_paginator
 

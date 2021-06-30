@@ -9,152 +9,152 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 WAFRegional module](#typed-dictionaries-for-boto3-wafregional-module)
   - [ActivatedRuleTypeDef](#activatedruletypedef)
-  - [AssociateWebACLRequestTypeDef](#associatewebaclrequesttypedef)
+  - [AssociateWebACLRequestRequestTypeDef](#associatewebaclrequestrequesttypedef)
   - [ByteMatchSetSummaryTypeDef](#bytematchsetsummarytypedef)
   - [ByteMatchSetTypeDef](#bytematchsettypedef)
   - [ByteMatchSetUpdateTypeDef](#bytematchsetupdatetypedef)
   - [ByteMatchTupleTypeDef](#bytematchtupletypedef)
-  - [CreateByteMatchSetRequestTypeDef](#createbytematchsetrequesttypedef)
-  - [CreateByteMatchSetResponseResponseTypeDef](#createbytematchsetresponseresponsetypedef)
-  - [CreateGeoMatchSetRequestTypeDef](#creategeomatchsetrequesttypedef)
-  - [CreateGeoMatchSetResponseResponseTypeDef](#creategeomatchsetresponseresponsetypedef)
-  - [CreateIPSetRequestTypeDef](#createipsetrequesttypedef)
-  - [CreateIPSetResponseResponseTypeDef](#createipsetresponseresponsetypedef)
-  - [CreateRateBasedRuleRequestTypeDef](#createratebasedrulerequesttypedef)
-  - [CreateRateBasedRuleResponseResponseTypeDef](#createratebasedruleresponseresponsetypedef)
-  - [CreateRegexMatchSetRequestTypeDef](#createregexmatchsetrequesttypedef)
-  - [CreateRegexMatchSetResponseResponseTypeDef](#createregexmatchsetresponseresponsetypedef)
-  - [CreateRegexPatternSetRequestTypeDef](#createregexpatternsetrequesttypedef)
-  - [CreateRegexPatternSetResponseResponseTypeDef](#createregexpatternsetresponseresponsetypedef)
-  - [CreateRuleGroupRequestTypeDef](#createrulegrouprequesttypedef)
-  - [CreateRuleGroupResponseResponseTypeDef](#createrulegroupresponseresponsetypedef)
-  - [CreateRuleRequestTypeDef](#createrulerequesttypedef)
-  - [CreateRuleResponseResponseTypeDef](#createruleresponseresponsetypedef)
-  - [CreateSizeConstraintSetRequestTypeDef](#createsizeconstraintsetrequesttypedef)
-  - [CreateSizeConstraintSetResponseResponseTypeDef](#createsizeconstraintsetresponseresponsetypedef)
-  - [CreateSqlInjectionMatchSetRequestTypeDef](#createsqlinjectionmatchsetrequesttypedef)
-  - [CreateSqlInjectionMatchSetResponseResponseTypeDef](#createsqlinjectionmatchsetresponseresponsetypedef)
-  - [CreateWebACLMigrationStackRequestTypeDef](#createwebaclmigrationstackrequesttypedef)
-  - [CreateWebACLMigrationStackResponseResponseTypeDef](#createwebaclmigrationstackresponseresponsetypedef)
-  - [CreateWebACLRequestTypeDef](#createwebaclrequesttypedef)
-  - [CreateWebACLResponseResponseTypeDef](#createwebaclresponseresponsetypedef)
-  - [CreateXssMatchSetRequestTypeDef](#createxssmatchsetrequesttypedef)
-  - [CreateXssMatchSetResponseResponseTypeDef](#createxssmatchsetresponseresponsetypedef)
-  - [DeleteByteMatchSetRequestTypeDef](#deletebytematchsetrequesttypedef)
-  - [DeleteByteMatchSetResponseResponseTypeDef](#deletebytematchsetresponseresponsetypedef)
-  - [DeleteGeoMatchSetRequestTypeDef](#deletegeomatchsetrequesttypedef)
-  - [DeleteGeoMatchSetResponseResponseTypeDef](#deletegeomatchsetresponseresponsetypedef)
-  - [DeleteIPSetRequestTypeDef](#deleteipsetrequesttypedef)
-  - [DeleteIPSetResponseResponseTypeDef](#deleteipsetresponseresponsetypedef)
-  - [DeleteLoggingConfigurationRequestTypeDef](#deleteloggingconfigurationrequesttypedef)
-  - [DeletePermissionPolicyRequestTypeDef](#deletepermissionpolicyrequesttypedef)
-  - [DeleteRateBasedRuleRequestTypeDef](#deleteratebasedrulerequesttypedef)
-  - [DeleteRateBasedRuleResponseResponseTypeDef](#deleteratebasedruleresponseresponsetypedef)
-  - [DeleteRegexMatchSetRequestTypeDef](#deleteregexmatchsetrequesttypedef)
-  - [DeleteRegexMatchSetResponseResponseTypeDef](#deleteregexmatchsetresponseresponsetypedef)
-  - [DeleteRegexPatternSetRequestTypeDef](#deleteregexpatternsetrequesttypedef)
-  - [DeleteRegexPatternSetResponseResponseTypeDef](#deleteregexpatternsetresponseresponsetypedef)
-  - [DeleteRuleGroupRequestTypeDef](#deleterulegrouprequesttypedef)
-  - [DeleteRuleGroupResponseResponseTypeDef](#deleterulegroupresponseresponsetypedef)
-  - [DeleteRuleRequestTypeDef](#deleterulerequesttypedef)
-  - [DeleteRuleResponseResponseTypeDef](#deleteruleresponseresponsetypedef)
-  - [DeleteSizeConstraintSetRequestTypeDef](#deletesizeconstraintsetrequesttypedef)
-  - [DeleteSizeConstraintSetResponseResponseTypeDef](#deletesizeconstraintsetresponseresponsetypedef)
-  - [DeleteSqlInjectionMatchSetRequestTypeDef](#deletesqlinjectionmatchsetrequesttypedef)
-  - [DeleteSqlInjectionMatchSetResponseResponseTypeDef](#deletesqlinjectionmatchsetresponseresponsetypedef)
-  - [DeleteWebACLRequestTypeDef](#deletewebaclrequesttypedef)
-  - [DeleteWebACLResponseResponseTypeDef](#deletewebaclresponseresponsetypedef)
-  - [DeleteXssMatchSetRequestTypeDef](#deletexssmatchsetrequesttypedef)
-  - [DeleteXssMatchSetResponseResponseTypeDef](#deletexssmatchsetresponseresponsetypedef)
-  - [DisassociateWebACLRequestTypeDef](#disassociatewebaclrequesttypedef)
+  - [CreateByteMatchSetRequestRequestTypeDef](#createbytematchsetrequestrequesttypedef)
+  - [CreateByteMatchSetResponseTypeDef](#createbytematchsetresponsetypedef)
+  - [CreateGeoMatchSetRequestRequestTypeDef](#creategeomatchsetrequestrequesttypedef)
+  - [CreateGeoMatchSetResponseTypeDef](#creategeomatchsetresponsetypedef)
+  - [CreateIPSetRequestRequestTypeDef](#createipsetrequestrequesttypedef)
+  - [CreateIPSetResponseTypeDef](#createipsetresponsetypedef)
+  - [CreateRateBasedRuleRequestRequestTypeDef](#createratebasedrulerequestrequesttypedef)
+  - [CreateRateBasedRuleResponseTypeDef](#createratebasedruleresponsetypedef)
+  - [CreateRegexMatchSetRequestRequestTypeDef](#createregexmatchsetrequestrequesttypedef)
+  - [CreateRegexMatchSetResponseTypeDef](#createregexmatchsetresponsetypedef)
+  - [CreateRegexPatternSetRequestRequestTypeDef](#createregexpatternsetrequestrequesttypedef)
+  - [CreateRegexPatternSetResponseTypeDef](#createregexpatternsetresponsetypedef)
+  - [CreateRuleGroupRequestRequestTypeDef](#createrulegrouprequestrequesttypedef)
+  - [CreateRuleGroupResponseTypeDef](#createrulegroupresponsetypedef)
+  - [CreateRuleRequestRequestTypeDef](#createrulerequestrequesttypedef)
+  - [CreateRuleResponseTypeDef](#createruleresponsetypedef)
+  - [CreateSizeConstraintSetRequestRequestTypeDef](#createsizeconstraintsetrequestrequesttypedef)
+  - [CreateSizeConstraintSetResponseTypeDef](#createsizeconstraintsetresponsetypedef)
+  - [CreateSqlInjectionMatchSetRequestRequestTypeDef](#createsqlinjectionmatchsetrequestrequesttypedef)
+  - [CreateSqlInjectionMatchSetResponseTypeDef](#createsqlinjectionmatchsetresponsetypedef)
+  - [CreateWebACLMigrationStackRequestRequestTypeDef](#createwebaclmigrationstackrequestrequesttypedef)
+  - [CreateWebACLMigrationStackResponseTypeDef](#createwebaclmigrationstackresponsetypedef)
+  - [CreateWebACLRequestRequestTypeDef](#createwebaclrequestrequesttypedef)
+  - [CreateWebACLResponseTypeDef](#createwebaclresponsetypedef)
+  - [CreateXssMatchSetRequestRequestTypeDef](#createxssmatchsetrequestrequesttypedef)
+  - [CreateXssMatchSetResponseTypeDef](#createxssmatchsetresponsetypedef)
+  - [DeleteByteMatchSetRequestRequestTypeDef](#deletebytematchsetrequestrequesttypedef)
+  - [DeleteByteMatchSetResponseTypeDef](#deletebytematchsetresponsetypedef)
+  - [DeleteGeoMatchSetRequestRequestTypeDef](#deletegeomatchsetrequestrequesttypedef)
+  - [DeleteGeoMatchSetResponseTypeDef](#deletegeomatchsetresponsetypedef)
+  - [DeleteIPSetRequestRequestTypeDef](#deleteipsetrequestrequesttypedef)
+  - [DeleteIPSetResponseTypeDef](#deleteipsetresponsetypedef)
+  - [DeleteLoggingConfigurationRequestRequestTypeDef](#deleteloggingconfigurationrequestrequesttypedef)
+  - [DeletePermissionPolicyRequestRequestTypeDef](#deletepermissionpolicyrequestrequesttypedef)
+  - [DeleteRateBasedRuleRequestRequestTypeDef](#deleteratebasedrulerequestrequesttypedef)
+  - [DeleteRateBasedRuleResponseTypeDef](#deleteratebasedruleresponsetypedef)
+  - [DeleteRegexMatchSetRequestRequestTypeDef](#deleteregexmatchsetrequestrequesttypedef)
+  - [DeleteRegexMatchSetResponseTypeDef](#deleteregexmatchsetresponsetypedef)
+  - [DeleteRegexPatternSetRequestRequestTypeDef](#deleteregexpatternsetrequestrequesttypedef)
+  - [DeleteRegexPatternSetResponseTypeDef](#deleteregexpatternsetresponsetypedef)
+  - [DeleteRuleGroupRequestRequestTypeDef](#deleterulegrouprequestrequesttypedef)
+  - [DeleteRuleGroupResponseTypeDef](#deleterulegroupresponsetypedef)
+  - [DeleteRuleRequestRequestTypeDef](#deleterulerequestrequesttypedef)
+  - [DeleteRuleResponseTypeDef](#deleteruleresponsetypedef)
+  - [DeleteSizeConstraintSetRequestRequestTypeDef](#deletesizeconstraintsetrequestrequesttypedef)
+  - [DeleteSizeConstraintSetResponseTypeDef](#deletesizeconstraintsetresponsetypedef)
+  - [DeleteSqlInjectionMatchSetRequestRequestTypeDef](#deletesqlinjectionmatchsetrequestrequesttypedef)
+  - [DeleteSqlInjectionMatchSetResponseTypeDef](#deletesqlinjectionmatchsetresponsetypedef)
+  - [DeleteWebACLRequestRequestTypeDef](#deletewebaclrequestrequesttypedef)
+  - [DeleteWebACLResponseTypeDef](#deletewebaclresponsetypedef)
+  - [DeleteXssMatchSetRequestRequestTypeDef](#deletexssmatchsetrequestrequesttypedef)
+  - [DeleteXssMatchSetResponseTypeDef](#deletexssmatchsetresponsetypedef)
+  - [DisassociateWebACLRequestRequestTypeDef](#disassociatewebaclrequestrequesttypedef)
   - [ExcludedRuleTypeDef](#excludedruletypedef)
   - [FieldToMatchTypeDef](#fieldtomatchtypedef)
   - [GeoMatchConstraintTypeDef](#geomatchconstrainttypedef)
   - [GeoMatchSetSummaryTypeDef](#geomatchsetsummarytypedef)
   - [GeoMatchSetTypeDef](#geomatchsettypedef)
   - [GeoMatchSetUpdateTypeDef](#geomatchsetupdatetypedef)
-  - [GetByteMatchSetRequestTypeDef](#getbytematchsetrequesttypedef)
-  - [GetByteMatchSetResponseResponseTypeDef](#getbytematchsetresponseresponsetypedef)
-  - [GetChangeTokenResponseResponseTypeDef](#getchangetokenresponseresponsetypedef)
-  - [GetChangeTokenStatusRequestTypeDef](#getchangetokenstatusrequesttypedef)
-  - [GetChangeTokenStatusResponseResponseTypeDef](#getchangetokenstatusresponseresponsetypedef)
-  - [GetGeoMatchSetRequestTypeDef](#getgeomatchsetrequesttypedef)
-  - [GetGeoMatchSetResponseResponseTypeDef](#getgeomatchsetresponseresponsetypedef)
-  - [GetIPSetRequestTypeDef](#getipsetrequesttypedef)
-  - [GetIPSetResponseResponseTypeDef](#getipsetresponseresponsetypedef)
-  - [GetLoggingConfigurationRequestTypeDef](#getloggingconfigurationrequesttypedef)
-  - [GetLoggingConfigurationResponseResponseTypeDef](#getloggingconfigurationresponseresponsetypedef)
-  - [GetPermissionPolicyRequestTypeDef](#getpermissionpolicyrequesttypedef)
-  - [GetPermissionPolicyResponseResponseTypeDef](#getpermissionpolicyresponseresponsetypedef)
-  - [GetRateBasedRuleManagedKeysRequestTypeDef](#getratebasedrulemanagedkeysrequesttypedef)
-  - [GetRateBasedRuleManagedKeysResponseResponseTypeDef](#getratebasedrulemanagedkeysresponseresponsetypedef)
-  - [GetRateBasedRuleRequestTypeDef](#getratebasedrulerequesttypedef)
-  - [GetRateBasedRuleResponseResponseTypeDef](#getratebasedruleresponseresponsetypedef)
-  - [GetRegexMatchSetRequestTypeDef](#getregexmatchsetrequesttypedef)
-  - [GetRegexMatchSetResponseResponseTypeDef](#getregexmatchsetresponseresponsetypedef)
-  - [GetRegexPatternSetRequestTypeDef](#getregexpatternsetrequesttypedef)
-  - [GetRegexPatternSetResponseResponseTypeDef](#getregexpatternsetresponseresponsetypedef)
-  - [GetRuleGroupRequestTypeDef](#getrulegrouprequesttypedef)
-  - [GetRuleGroupResponseResponseTypeDef](#getrulegroupresponseresponsetypedef)
-  - [GetRuleRequestTypeDef](#getrulerequesttypedef)
-  - [GetRuleResponseResponseTypeDef](#getruleresponseresponsetypedef)
-  - [GetSampledRequestsRequestTypeDef](#getsampledrequestsrequesttypedef)
-  - [GetSampledRequestsResponseResponseTypeDef](#getsampledrequestsresponseresponsetypedef)
-  - [GetSizeConstraintSetRequestTypeDef](#getsizeconstraintsetrequesttypedef)
-  - [GetSizeConstraintSetResponseResponseTypeDef](#getsizeconstraintsetresponseresponsetypedef)
-  - [GetSqlInjectionMatchSetRequestTypeDef](#getsqlinjectionmatchsetrequesttypedef)
-  - [GetSqlInjectionMatchSetResponseResponseTypeDef](#getsqlinjectionmatchsetresponseresponsetypedef)
-  - [GetWebACLForResourceRequestTypeDef](#getwebaclforresourcerequesttypedef)
-  - [GetWebACLForResourceResponseResponseTypeDef](#getwebaclforresourceresponseresponsetypedef)
-  - [GetWebACLRequestTypeDef](#getwebaclrequesttypedef)
-  - [GetWebACLResponseResponseTypeDef](#getwebaclresponseresponsetypedef)
-  - [GetXssMatchSetRequestTypeDef](#getxssmatchsetrequesttypedef)
-  - [GetXssMatchSetResponseResponseTypeDef](#getxssmatchsetresponseresponsetypedef)
+  - [GetByteMatchSetRequestRequestTypeDef](#getbytematchsetrequestrequesttypedef)
+  - [GetByteMatchSetResponseTypeDef](#getbytematchsetresponsetypedef)
+  - [GetChangeTokenResponseTypeDef](#getchangetokenresponsetypedef)
+  - [GetChangeTokenStatusRequestRequestTypeDef](#getchangetokenstatusrequestrequesttypedef)
+  - [GetChangeTokenStatusResponseTypeDef](#getchangetokenstatusresponsetypedef)
+  - [GetGeoMatchSetRequestRequestTypeDef](#getgeomatchsetrequestrequesttypedef)
+  - [GetGeoMatchSetResponseTypeDef](#getgeomatchsetresponsetypedef)
+  - [GetIPSetRequestRequestTypeDef](#getipsetrequestrequesttypedef)
+  - [GetIPSetResponseTypeDef](#getipsetresponsetypedef)
+  - [GetLoggingConfigurationRequestRequestTypeDef](#getloggingconfigurationrequestrequesttypedef)
+  - [GetLoggingConfigurationResponseTypeDef](#getloggingconfigurationresponsetypedef)
+  - [GetPermissionPolicyRequestRequestTypeDef](#getpermissionpolicyrequestrequesttypedef)
+  - [GetPermissionPolicyResponseTypeDef](#getpermissionpolicyresponsetypedef)
+  - [GetRateBasedRuleManagedKeysRequestRequestTypeDef](#getratebasedrulemanagedkeysrequestrequesttypedef)
+  - [GetRateBasedRuleManagedKeysResponseTypeDef](#getratebasedrulemanagedkeysresponsetypedef)
+  - [GetRateBasedRuleRequestRequestTypeDef](#getratebasedrulerequestrequesttypedef)
+  - [GetRateBasedRuleResponseTypeDef](#getratebasedruleresponsetypedef)
+  - [GetRegexMatchSetRequestRequestTypeDef](#getregexmatchsetrequestrequesttypedef)
+  - [GetRegexMatchSetResponseTypeDef](#getregexmatchsetresponsetypedef)
+  - [GetRegexPatternSetRequestRequestTypeDef](#getregexpatternsetrequestrequesttypedef)
+  - [GetRegexPatternSetResponseTypeDef](#getregexpatternsetresponsetypedef)
+  - [GetRuleGroupRequestRequestTypeDef](#getrulegrouprequestrequesttypedef)
+  - [GetRuleGroupResponseTypeDef](#getrulegroupresponsetypedef)
+  - [GetRuleRequestRequestTypeDef](#getrulerequestrequesttypedef)
+  - [GetRuleResponseTypeDef](#getruleresponsetypedef)
+  - [GetSampledRequestsRequestRequestTypeDef](#getsampledrequestsrequestrequesttypedef)
+  - [GetSampledRequestsResponseTypeDef](#getsampledrequestsresponsetypedef)
+  - [GetSizeConstraintSetRequestRequestTypeDef](#getsizeconstraintsetrequestrequesttypedef)
+  - [GetSizeConstraintSetResponseTypeDef](#getsizeconstraintsetresponsetypedef)
+  - [GetSqlInjectionMatchSetRequestRequestTypeDef](#getsqlinjectionmatchsetrequestrequesttypedef)
+  - [GetSqlInjectionMatchSetResponseTypeDef](#getsqlinjectionmatchsetresponsetypedef)
+  - [GetWebACLForResourceRequestRequestTypeDef](#getwebaclforresourcerequestrequesttypedef)
+  - [GetWebACLForResourceResponseTypeDef](#getwebaclforresourceresponsetypedef)
+  - [GetWebACLRequestRequestTypeDef](#getwebaclrequestrequesttypedef)
+  - [GetWebACLResponseTypeDef](#getwebaclresponsetypedef)
+  - [GetXssMatchSetRequestRequestTypeDef](#getxssmatchsetrequestrequesttypedef)
+  - [GetXssMatchSetResponseTypeDef](#getxssmatchsetresponsetypedef)
   - [HTTPHeaderTypeDef](#httpheadertypedef)
   - [HTTPRequestTypeDef](#httprequesttypedef)
   - [IPSetDescriptorTypeDef](#ipsetdescriptortypedef)
   - [IPSetSummaryTypeDef](#ipsetsummarytypedef)
   - [IPSetTypeDef](#ipsettypedef)
   - [IPSetUpdateTypeDef](#ipsetupdatetypedef)
-  - [ListActivatedRulesInRuleGroupRequestTypeDef](#listactivatedrulesinrulegrouprequesttypedef)
-  - [ListActivatedRulesInRuleGroupResponseResponseTypeDef](#listactivatedrulesinrulegroupresponseresponsetypedef)
-  - [ListByteMatchSetsRequestTypeDef](#listbytematchsetsrequesttypedef)
-  - [ListByteMatchSetsResponseResponseTypeDef](#listbytematchsetsresponseresponsetypedef)
-  - [ListGeoMatchSetsRequestTypeDef](#listgeomatchsetsrequesttypedef)
-  - [ListGeoMatchSetsResponseResponseTypeDef](#listgeomatchsetsresponseresponsetypedef)
-  - [ListIPSetsRequestTypeDef](#listipsetsrequesttypedef)
-  - [ListIPSetsResponseResponseTypeDef](#listipsetsresponseresponsetypedef)
-  - [ListLoggingConfigurationsRequestTypeDef](#listloggingconfigurationsrequesttypedef)
-  - [ListLoggingConfigurationsResponseResponseTypeDef](#listloggingconfigurationsresponseresponsetypedef)
-  - [ListRateBasedRulesRequestTypeDef](#listratebasedrulesrequesttypedef)
-  - [ListRateBasedRulesResponseResponseTypeDef](#listratebasedrulesresponseresponsetypedef)
-  - [ListRegexMatchSetsRequestTypeDef](#listregexmatchsetsrequesttypedef)
-  - [ListRegexMatchSetsResponseResponseTypeDef](#listregexmatchsetsresponseresponsetypedef)
-  - [ListRegexPatternSetsRequestTypeDef](#listregexpatternsetsrequesttypedef)
-  - [ListRegexPatternSetsResponseResponseTypeDef](#listregexpatternsetsresponseresponsetypedef)
-  - [ListResourcesForWebACLRequestTypeDef](#listresourcesforwebaclrequesttypedef)
-  - [ListResourcesForWebACLResponseResponseTypeDef](#listresourcesforwebaclresponseresponsetypedef)
-  - [ListRuleGroupsRequestTypeDef](#listrulegroupsrequesttypedef)
-  - [ListRuleGroupsResponseResponseTypeDef](#listrulegroupsresponseresponsetypedef)
-  - [ListRulesRequestTypeDef](#listrulesrequesttypedef)
-  - [ListRulesResponseResponseTypeDef](#listrulesresponseresponsetypedef)
-  - [ListSizeConstraintSetsRequestTypeDef](#listsizeconstraintsetsrequesttypedef)
-  - [ListSizeConstraintSetsResponseResponseTypeDef](#listsizeconstraintsetsresponseresponsetypedef)
-  - [ListSqlInjectionMatchSetsRequestTypeDef](#listsqlinjectionmatchsetsrequesttypedef)
-  - [ListSqlInjectionMatchSetsResponseResponseTypeDef](#listsqlinjectionmatchsetsresponseresponsetypedef)
-  - [ListSubscribedRuleGroupsRequestTypeDef](#listsubscribedrulegroupsrequesttypedef)
-  - [ListSubscribedRuleGroupsResponseResponseTypeDef](#listsubscribedrulegroupsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
-  - [ListWebACLsRequestTypeDef](#listwebaclsrequesttypedef)
-  - [ListWebACLsResponseResponseTypeDef](#listwebaclsresponseresponsetypedef)
-  - [ListXssMatchSetsRequestTypeDef](#listxssmatchsetsrequesttypedef)
-  - [ListXssMatchSetsResponseResponseTypeDef](#listxssmatchsetsresponseresponsetypedef)
+  - [ListActivatedRulesInRuleGroupRequestRequestTypeDef](#listactivatedrulesinrulegrouprequestrequesttypedef)
+  - [ListActivatedRulesInRuleGroupResponseTypeDef](#listactivatedrulesinrulegroupresponsetypedef)
+  - [ListByteMatchSetsRequestRequestTypeDef](#listbytematchsetsrequestrequesttypedef)
+  - [ListByteMatchSetsResponseTypeDef](#listbytematchsetsresponsetypedef)
+  - [ListGeoMatchSetsRequestRequestTypeDef](#listgeomatchsetsrequestrequesttypedef)
+  - [ListGeoMatchSetsResponseTypeDef](#listgeomatchsetsresponsetypedef)
+  - [ListIPSetsRequestRequestTypeDef](#listipsetsrequestrequesttypedef)
+  - [ListIPSetsResponseTypeDef](#listipsetsresponsetypedef)
+  - [ListLoggingConfigurationsRequestRequestTypeDef](#listloggingconfigurationsrequestrequesttypedef)
+  - [ListLoggingConfigurationsResponseTypeDef](#listloggingconfigurationsresponsetypedef)
+  - [ListRateBasedRulesRequestRequestTypeDef](#listratebasedrulesrequestrequesttypedef)
+  - [ListRateBasedRulesResponseTypeDef](#listratebasedrulesresponsetypedef)
+  - [ListRegexMatchSetsRequestRequestTypeDef](#listregexmatchsetsrequestrequesttypedef)
+  - [ListRegexMatchSetsResponseTypeDef](#listregexmatchsetsresponsetypedef)
+  - [ListRegexPatternSetsRequestRequestTypeDef](#listregexpatternsetsrequestrequesttypedef)
+  - [ListRegexPatternSetsResponseTypeDef](#listregexpatternsetsresponsetypedef)
+  - [ListResourcesForWebACLRequestRequestTypeDef](#listresourcesforwebaclrequestrequesttypedef)
+  - [ListResourcesForWebACLResponseTypeDef](#listresourcesforwebaclresponsetypedef)
+  - [ListRuleGroupsRequestRequestTypeDef](#listrulegroupsrequestrequesttypedef)
+  - [ListRuleGroupsResponseTypeDef](#listrulegroupsresponsetypedef)
+  - [ListRulesRequestRequestTypeDef](#listrulesrequestrequesttypedef)
+  - [ListRulesResponseTypeDef](#listrulesresponsetypedef)
+  - [ListSizeConstraintSetsRequestRequestTypeDef](#listsizeconstraintsetsrequestrequesttypedef)
+  - [ListSizeConstraintSetsResponseTypeDef](#listsizeconstraintsetsresponsetypedef)
+  - [ListSqlInjectionMatchSetsRequestRequestTypeDef](#listsqlinjectionmatchsetsrequestrequesttypedef)
+  - [ListSqlInjectionMatchSetsResponseTypeDef](#listsqlinjectionmatchsetsresponsetypedef)
+  - [ListSubscribedRuleGroupsRequestRequestTypeDef](#listsubscribedrulegroupsrequestrequesttypedef)
+  - [ListSubscribedRuleGroupsResponseTypeDef](#listsubscribedrulegroupsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListWebACLsRequestRequestTypeDef](#listwebaclsrequestrequesttypedef)
+  - [ListWebACLsResponseTypeDef](#listwebaclsresponsetypedef)
+  - [ListXssMatchSetsRequestRequestTypeDef](#listxssmatchsetsrequestrequesttypedef)
+  - [ListXssMatchSetsResponseTypeDef](#listxssmatchsetsresponsetypedef)
   - [LoggingConfigurationTypeDef](#loggingconfigurationtypedef)
   - [PredicateTypeDef](#predicatetypedef)
-  - [PutLoggingConfigurationRequestTypeDef](#putloggingconfigurationrequesttypedef)
-  - [PutLoggingConfigurationResponseResponseTypeDef](#putloggingconfigurationresponseresponsetypedef)
-  - [PutPermissionPolicyRequestTypeDef](#putpermissionpolicyrequesttypedef)
+  - [PutLoggingConfigurationRequestRequestTypeDef](#putloggingconfigurationrequestrequesttypedef)
+  - [PutLoggingConfigurationResponseTypeDef](#putloggingconfigurationresponsetypedef)
+  - [PutPermissionPolicyRequestRequestTypeDef](#putpermissionpolicyrequestrequesttypedef)
   - [RateBasedRuleTypeDef](#ratebasedruletypedef)
   - [RegexMatchSetSummaryTypeDef](#regexmatchsetsummarytypedef)
   - [RegexMatchSetTypeDef](#regexmatchsettypedef)
@@ -181,34 +181,34 @@ type annotations stubs module
   - [SqlInjectionMatchTupleTypeDef](#sqlinjectionmatchtupletypedef)
   - [SubscribedRuleGroupSummaryTypeDef](#subscribedrulegroupsummarytypedef)
   - [TagInfoForResourceTypeDef](#taginfoforresourcetypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TimeWindowTypeDef](#timewindowtypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateByteMatchSetRequestTypeDef](#updatebytematchsetrequesttypedef)
-  - [UpdateByteMatchSetResponseResponseTypeDef](#updatebytematchsetresponseresponsetypedef)
-  - [UpdateGeoMatchSetRequestTypeDef](#updategeomatchsetrequesttypedef)
-  - [UpdateGeoMatchSetResponseResponseTypeDef](#updategeomatchsetresponseresponsetypedef)
-  - [UpdateIPSetRequestTypeDef](#updateipsetrequesttypedef)
-  - [UpdateIPSetResponseResponseTypeDef](#updateipsetresponseresponsetypedef)
-  - [UpdateRateBasedRuleRequestTypeDef](#updateratebasedrulerequesttypedef)
-  - [UpdateRateBasedRuleResponseResponseTypeDef](#updateratebasedruleresponseresponsetypedef)
-  - [UpdateRegexMatchSetRequestTypeDef](#updateregexmatchsetrequesttypedef)
-  - [UpdateRegexMatchSetResponseResponseTypeDef](#updateregexmatchsetresponseresponsetypedef)
-  - [UpdateRegexPatternSetRequestTypeDef](#updateregexpatternsetrequesttypedef)
-  - [UpdateRegexPatternSetResponseResponseTypeDef](#updateregexpatternsetresponseresponsetypedef)
-  - [UpdateRuleGroupRequestTypeDef](#updaterulegrouprequesttypedef)
-  - [UpdateRuleGroupResponseResponseTypeDef](#updaterulegroupresponseresponsetypedef)
-  - [UpdateRuleRequestTypeDef](#updaterulerequesttypedef)
-  - [UpdateRuleResponseResponseTypeDef](#updateruleresponseresponsetypedef)
-  - [UpdateSizeConstraintSetRequestTypeDef](#updatesizeconstraintsetrequesttypedef)
-  - [UpdateSizeConstraintSetResponseResponseTypeDef](#updatesizeconstraintsetresponseresponsetypedef)
-  - [UpdateSqlInjectionMatchSetRequestTypeDef](#updatesqlinjectionmatchsetrequesttypedef)
-  - [UpdateSqlInjectionMatchSetResponseResponseTypeDef](#updatesqlinjectionmatchsetresponseresponsetypedef)
-  - [UpdateWebACLRequestTypeDef](#updatewebaclrequesttypedef)
-  - [UpdateWebACLResponseResponseTypeDef](#updatewebaclresponseresponsetypedef)
-  - [UpdateXssMatchSetRequestTypeDef](#updatexssmatchsetrequesttypedef)
-  - [UpdateXssMatchSetResponseResponseTypeDef](#updatexssmatchsetresponseresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateByteMatchSetRequestRequestTypeDef](#updatebytematchsetrequestrequesttypedef)
+  - [UpdateByteMatchSetResponseTypeDef](#updatebytematchsetresponsetypedef)
+  - [UpdateGeoMatchSetRequestRequestTypeDef](#updategeomatchsetrequestrequesttypedef)
+  - [UpdateGeoMatchSetResponseTypeDef](#updategeomatchsetresponsetypedef)
+  - [UpdateIPSetRequestRequestTypeDef](#updateipsetrequestrequesttypedef)
+  - [UpdateIPSetResponseTypeDef](#updateipsetresponsetypedef)
+  - [UpdateRateBasedRuleRequestRequestTypeDef](#updateratebasedrulerequestrequesttypedef)
+  - [UpdateRateBasedRuleResponseTypeDef](#updateratebasedruleresponsetypedef)
+  - [UpdateRegexMatchSetRequestRequestTypeDef](#updateregexmatchsetrequestrequesttypedef)
+  - [UpdateRegexMatchSetResponseTypeDef](#updateregexmatchsetresponsetypedef)
+  - [UpdateRegexPatternSetRequestRequestTypeDef](#updateregexpatternsetrequestrequesttypedef)
+  - [UpdateRegexPatternSetResponseTypeDef](#updateregexpatternsetresponsetypedef)
+  - [UpdateRuleGroupRequestRequestTypeDef](#updaterulegrouprequestrequesttypedef)
+  - [UpdateRuleGroupResponseTypeDef](#updaterulegroupresponsetypedef)
+  - [UpdateRuleRequestRequestTypeDef](#updaterulerequestrequesttypedef)
+  - [UpdateRuleResponseTypeDef](#updateruleresponsetypedef)
+  - [UpdateSizeConstraintSetRequestRequestTypeDef](#updatesizeconstraintsetrequestrequesttypedef)
+  - [UpdateSizeConstraintSetResponseTypeDef](#updatesizeconstraintsetresponsetypedef)
+  - [UpdateSqlInjectionMatchSetRequestRequestTypeDef](#updatesqlinjectionmatchsetrequestrequesttypedef)
+  - [UpdateSqlInjectionMatchSetResponseTypeDef](#updatesqlinjectionmatchsetresponsetypedef)
+  - [UpdateWebACLRequestRequestTypeDef](#updatewebaclrequestrequesttypedef)
+  - [UpdateWebACLResponseTypeDef](#updatewebaclresponsetypedef)
+  - [UpdateXssMatchSetRequestRequestTypeDef](#updatexssmatchsetrequestrequesttypedef)
+  - [UpdateXssMatchSetResponseTypeDef](#updatexssmatchsetresponsetypedef)
   - [WafActionTypeDef](#wafactiontypedef)
   - [WafOverrideActionTypeDef](#wafoverrideactiontypedef)
   - [WebACLSummaryTypeDef](#webaclsummarytypedef)
@@ -239,10 +239,10 @@ Optional fields:
 - `ExcludedRules`:
   `List`\[[ExcludedRuleTypeDef](./type_defs.md#excludedruletypedef)\]
 
-## AssociateWebACLRequestTypeDef
+## AssociateWebACLRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import AssociateWebACLRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import AssociateWebACLRequestRequestTypeDef
 ```
 
 Required fields:
@@ -304,10 +304,10 @@ Required fields:
 - `PositionalConstraint`:
   [PositionalConstraintType](./literals.md#positionalconstrainttype)
 
-## CreateByteMatchSetRequestTypeDef
+## CreateByteMatchSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateByteMatchSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateByteMatchSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -315,10 +315,10 @@ Required fields:
 - `Name`: `str`
 - `ChangeToken`: `str`
 
-## CreateByteMatchSetResponseResponseTypeDef
+## CreateByteMatchSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateByteMatchSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateByteMatchSetResponseTypeDef
 ```
 
 Required fields:
@@ -328,10 +328,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateGeoMatchSetRequestTypeDef
+## CreateGeoMatchSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateGeoMatchSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateGeoMatchSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -339,10 +339,10 @@ Required fields:
 - `Name`: `str`
 - `ChangeToken`: `str`
 
-## CreateGeoMatchSetResponseResponseTypeDef
+## CreateGeoMatchSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateGeoMatchSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateGeoMatchSetResponseTypeDef
 ```
 
 Required fields:
@@ -352,10 +352,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateIPSetRequestTypeDef
+## CreateIPSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateIPSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateIPSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -363,10 +363,10 @@ Required fields:
 - `Name`: `str`
 - `ChangeToken`: `str`
 
-## CreateIPSetResponseResponseTypeDef
+## CreateIPSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateIPSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateIPSetResponseTypeDef
 ```
 
 Required fields:
@@ -376,10 +376,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRateBasedRuleRequestTypeDef
+## CreateRateBasedRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateRateBasedRuleRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateRateBasedRuleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -394,10 +394,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateRateBasedRuleResponseResponseTypeDef
+## CreateRateBasedRuleResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateRateBasedRuleResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateRateBasedRuleResponseTypeDef
 ```
 
 Required fields:
@@ -407,10 +407,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRegexMatchSetRequestTypeDef
+## CreateRegexMatchSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateRegexMatchSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateRegexMatchSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -418,10 +418,10 @@ Required fields:
 - `Name`: `str`
 - `ChangeToken`: `str`
 
-## CreateRegexMatchSetResponseResponseTypeDef
+## CreateRegexMatchSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateRegexMatchSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateRegexMatchSetResponseTypeDef
 ```
 
 Required fields:
@@ -431,10 +431,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRegexPatternSetRequestTypeDef
+## CreateRegexPatternSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateRegexPatternSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateRegexPatternSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -442,10 +442,10 @@ Required fields:
 - `Name`: `str`
 - `ChangeToken`: `str`
 
-## CreateRegexPatternSetResponseResponseTypeDef
+## CreateRegexPatternSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateRegexPatternSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateRegexPatternSetResponseTypeDef
 ```
 
 Required fields:
@@ -456,10 +456,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRuleGroupRequestTypeDef
+## CreateRuleGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateRuleGroupRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateRuleGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -472,10 +472,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateRuleGroupResponseResponseTypeDef
+## CreateRuleGroupResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateRuleGroupResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateRuleGroupResponseTypeDef
 ```
 
 Required fields:
@@ -485,10 +485,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRuleRequestTypeDef
+## CreateRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateRuleRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateRuleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -501,10 +501,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateRuleResponseResponseTypeDef
+## CreateRuleResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateRuleResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateRuleResponseTypeDef
 ```
 
 Required fields:
@@ -514,10 +514,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSizeConstraintSetRequestTypeDef
+## CreateSizeConstraintSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateSizeConstraintSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateSizeConstraintSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -525,10 +525,10 @@ Required fields:
 - `Name`: `str`
 - `ChangeToken`: `str`
 
-## CreateSizeConstraintSetResponseResponseTypeDef
+## CreateSizeConstraintSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateSizeConstraintSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateSizeConstraintSetResponseTypeDef
 ```
 
 Required fields:
@@ -539,10 +539,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSqlInjectionMatchSetRequestTypeDef
+## CreateSqlInjectionMatchSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateSqlInjectionMatchSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateSqlInjectionMatchSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -550,10 +550,10 @@ Required fields:
 - `Name`: `str`
 - `ChangeToken`: `str`
 
-## CreateSqlInjectionMatchSetResponseResponseTypeDef
+## CreateSqlInjectionMatchSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateSqlInjectionMatchSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateSqlInjectionMatchSetResponseTypeDef
 ```
 
 Required fields:
@@ -564,10 +564,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateWebACLMigrationStackRequestTypeDef
+## CreateWebACLMigrationStackRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateWebACLMigrationStackRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateWebACLMigrationStackRequestRequestTypeDef
 ```
 
 Required fields:
@@ -576,10 +576,10 @@ Required fields:
 - `S3BucketName`: `str`
 - `IgnoreUnsupportedType`: `bool`
 
-## CreateWebACLMigrationStackResponseResponseTypeDef
+## CreateWebACLMigrationStackResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateWebACLMigrationStackResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateWebACLMigrationStackResponseTypeDef
 ```
 
 Required fields:
@@ -588,10 +588,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateWebACLRequestTypeDef
+## CreateWebACLRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateWebACLRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateWebACLRequestRequestTypeDef
 ```
 
 Required fields:
@@ -605,10 +605,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateWebACLResponseResponseTypeDef
+## CreateWebACLResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateWebACLResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateWebACLResponseTypeDef
 ```
 
 Required fields:
@@ -618,10 +618,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateXssMatchSetRequestTypeDef
+## CreateXssMatchSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateXssMatchSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateXssMatchSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -629,10 +629,10 @@ Required fields:
 - `Name`: `str`
 - `ChangeToken`: `str`
 
-## CreateXssMatchSetResponseResponseTypeDef
+## CreateXssMatchSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import CreateXssMatchSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import CreateXssMatchSetResponseTypeDef
 ```
 
 Required fields:
@@ -642,10 +642,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteByteMatchSetRequestTypeDef
+## DeleteByteMatchSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteByteMatchSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteByteMatchSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -653,10 +653,10 @@ Required fields:
 - `ByteMatchSetId`: `str`
 - `ChangeToken`: `str`
 
-## DeleteByteMatchSetResponseResponseTypeDef
+## DeleteByteMatchSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteByteMatchSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteByteMatchSetResponseTypeDef
 ```
 
 Required fields:
@@ -665,10 +665,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteGeoMatchSetRequestTypeDef
+## DeleteGeoMatchSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteGeoMatchSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteGeoMatchSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -676,10 +676,10 @@ Required fields:
 - `GeoMatchSetId`: `str`
 - `ChangeToken`: `str`
 
-## DeleteGeoMatchSetResponseResponseTypeDef
+## DeleteGeoMatchSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteGeoMatchSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteGeoMatchSetResponseTypeDef
 ```
 
 Required fields:
@@ -688,10 +688,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteIPSetRequestTypeDef
+## DeleteIPSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteIPSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteIPSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -699,10 +699,10 @@ Required fields:
 - `IPSetId`: `str`
 - `ChangeToken`: `str`
 
-## DeleteIPSetResponseResponseTypeDef
+## DeleteIPSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteIPSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteIPSetResponseTypeDef
 ```
 
 Required fields:
@@ -711,30 +711,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteLoggingConfigurationRequestTypeDef
+## DeleteLoggingConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteLoggingConfigurationRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteLoggingConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## DeletePermissionPolicyRequestTypeDef
+## DeletePermissionPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeletePermissionPolicyRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import DeletePermissionPolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## DeleteRateBasedRuleRequestTypeDef
+## DeleteRateBasedRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteRateBasedRuleRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteRateBasedRuleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -742,10 +742,10 @@ Required fields:
 - `RuleId`: `str`
 - `ChangeToken`: `str`
 
-## DeleteRateBasedRuleResponseResponseTypeDef
+## DeleteRateBasedRuleResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteRateBasedRuleResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteRateBasedRuleResponseTypeDef
 ```
 
 Required fields:
@@ -754,10 +754,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteRegexMatchSetRequestTypeDef
+## DeleteRegexMatchSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteRegexMatchSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteRegexMatchSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -765,10 +765,10 @@ Required fields:
 - `RegexMatchSetId`: `str`
 - `ChangeToken`: `str`
 
-## DeleteRegexMatchSetResponseResponseTypeDef
+## DeleteRegexMatchSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteRegexMatchSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteRegexMatchSetResponseTypeDef
 ```
 
 Required fields:
@@ -777,10 +777,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteRegexPatternSetRequestTypeDef
+## DeleteRegexPatternSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteRegexPatternSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteRegexPatternSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -788,10 +788,10 @@ Required fields:
 - `RegexPatternSetId`: `str`
 - `ChangeToken`: `str`
 
-## DeleteRegexPatternSetResponseResponseTypeDef
+## DeleteRegexPatternSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteRegexPatternSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteRegexPatternSetResponseTypeDef
 ```
 
 Required fields:
@@ -800,10 +800,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteRuleGroupRequestTypeDef
+## DeleteRuleGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteRuleGroupRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteRuleGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -811,10 +811,10 @@ Required fields:
 - `RuleGroupId`: `str`
 - `ChangeToken`: `str`
 
-## DeleteRuleGroupResponseResponseTypeDef
+## DeleteRuleGroupResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteRuleGroupResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteRuleGroupResponseTypeDef
 ```
 
 Required fields:
@@ -823,10 +823,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteRuleRequestTypeDef
+## DeleteRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteRuleRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteRuleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -834,10 +834,10 @@ Required fields:
 - `RuleId`: `str`
 - `ChangeToken`: `str`
 
-## DeleteRuleResponseResponseTypeDef
+## DeleteRuleResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteRuleResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteRuleResponseTypeDef
 ```
 
 Required fields:
@@ -846,10 +846,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteSizeConstraintSetRequestTypeDef
+## DeleteSizeConstraintSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteSizeConstraintSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteSizeConstraintSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -857,10 +857,10 @@ Required fields:
 - `SizeConstraintSetId`: `str`
 - `ChangeToken`: `str`
 
-## DeleteSizeConstraintSetResponseResponseTypeDef
+## DeleteSizeConstraintSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteSizeConstraintSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteSizeConstraintSetResponseTypeDef
 ```
 
 Required fields:
@@ -869,10 +869,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteSqlInjectionMatchSetRequestTypeDef
+## DeleteSqlInjectionMatchSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteSqlInjectionMatchSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteSqlInjectionMatchSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -880,10 +880,10 @@ Required fields:
 - `SqlInjectionMatchSetId`: `str`
 - `ChangeToken`: `str`
 
-## DeleteSqlInjectionMatchSetResponseResponseTypeDef
+## DeleteSqlInjectionMatchSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteSqlInjectionMatchSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteSqlInjectionMatchSetResponseTypeDef
 ```
 
 Required fields:
@@ -892,10 +892,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteWebACLRequestTypeDef
+## DeleteWebACLRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteWebACLRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteWebACLRequestRequestTypeDef
 ```
 
 Required fields:
@@ -903,10 +903,10 @@ Required fields:
 - `WebACLId`: `str`
 - `ChangeToken`: `str`
 
-## DeleteWebACLResponseResponseTypeDef
+## DeleteWebACLResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteWebACLResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteWebACLResponseTypeDef
 ```
 
 Required fields:
@@ -915,10 +915,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteXssMatchSetRequestTypeDef
+## DeleteXssMatchSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteXssMatchSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteXssMatchSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -926,10 +926,10 @@ Required fields:
 - `XssMatchSetId`: `str`
 - `ChangeToken`: `str`
 
-## DeleteXssMatchSetResponseResponseTypeDef
+## DeleteXssMatchSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DeleteXssMatchSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import DeleteXssMatchSetResponseTypeDef
 ```
 
 Required fields:
@@ -938,10 +938,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateWebACLRequestTypeDef
+## DisassociateWebACLRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import DisassociateWebACLRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import DisassociateWebACLRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1024,20 +1024,20 @@ Required fields:
 - `GeoMatchConstraint`:
   [GeoMatchConstraintTypeDef](./type_defs.md#geomatchconstrainttypedef)
 
-## GetByteMatchSetRequestTypeDef
+## GetByteMatchSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetByteMatchSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import GetByteMatchSetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ByteMatchSetId`: `str`
 
-## GetByteMatchSetResponseResponseTypeDef
+## GetByteMatchSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetByteMatchSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import GetByteMatchSetResponseTypeDef
 ```
 
 Required fields:
@@ -1046,10 +1046,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetChangeTokenResponseResponseTypeDef
+## GetChangeTokenResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetChangeTokenResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import GetChangeTokenResponseTypeDef
 ```
 
 Required fields:
@@ -1058,20 +1058,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetChangeTokenStatusRequestTypeDef
+## GetChangeTokenStatusRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetChangeTokenStatusRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import GetChangeTokenStatusRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ChangeToken`: `str`
 
-## GetChangeTokenStatusResponseResponseTypeDef
+## GetChangeTokenStatusResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetChangeTokenStatusResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import GetChangeTokenStatusResponseTypeDef
 ```
 
 Required fields:
@@ -1081,20 +1081,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetGeoMatchSetRequestTypeDef
+## GetGeoMatchSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetGeoMatchSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import GetGeoMatchSetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `GeoMatchSetId`: `str`
 
-## GetGeoMatchSetResponseResponseTypeDef
+## GetGeoMatchSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetGeoMatchSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import GetGeoMatchSetResponseTypeDef
 ```
 
 Required fields:
@@ -1103,20 +1103,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetIPSetRequestTypeDef
+## GetIPSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetIPSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import GetIPSetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `IPSetId`: `str`
 
-## GetIPSetResponseResponseTypeDef
+## GetIPSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetIPSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import GetIPSetResponseTypeDef
 ```
 
 Required fields:
@@ -1125,20 +1125,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLoggingConfigurationRequestTypeDef
+## GetLoggingConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetLoggingConfigurationRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import GetLoggingConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## GetLoggingConfigurationResponseResponseTypeDef
+## GetLoggingConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetLoggingConfigurationResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import GetLoggingConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -1148,20 +1148,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPermissionPolicyRequestTypeDef
+## GetPermissionPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetPermissionPolicyRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import GetPermissionPolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## GetPermissionPolicyResponseResponseTypeDef
+## GetPermissionPolicyResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetPermissionPolicyResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import GetPermissionPolicyResponseTypeDef
 ```
 
 Required fields:
@@ -1170,10 +1170,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRateBasedRuleManagedKeysRequestTypeDef
+## GetRateBasedRuleManagedKeysRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetRateBasedRuleManagedKeysRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import GetRateBasedRuleManagedKeysRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1184,10 +1184,10 @@ Optional fields:
 
 - `NextMarker`: `str`
 
-## GetRateBasedRuleManagedKeysResponseResponseTypeDef
+## GetRateBasedRuleManagedKeysResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetRateBasedRuleManagedKeysResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import GetRateBasedRuleManagedKeysResponseTypeDef
 ```
 
 Required fields:
@@ -1197,20 +1197,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRateBasedRuleRequestTypeDef
+## GetRateBasedRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetRateBasedRuleRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import GetRateBasedRuleRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `RuleId`: `str`
 
-## GetRateBasedRuleResponseResponseTypeDef
+## GetRateBasedRuleResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetRateBasedRuleResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import GetRateBasedRuleResponseTypeDef
 ```
 
 Required fields:
@@ -1219,20 +1219,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRegexMatchSetRequestTypeDef
+## GetRegexMatchSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetRegexMatchSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import GetRegexMatchSetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `RegexMatchSetId`: `str`
 
-## GetRegexMatchSetResponseResponseTypeDef
+## GetRegexMatchSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetRegexMatchSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import GetRegexMatchSetResponseTypeDef
 ```
 
 Required fields:
@@ -1241,20 +1241,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRegexPatternSetRequestTypeDef
+## GetRegexPatternSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetRegexPatternSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import GetRegexPatternSetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `RegexPatternSetId`: `str`
 
-## GetRegexPatternSetResponseResponseTypeDef
+## GetRegexPatternSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetRegexPatternSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import GetRegexPatternSetResponseTypeDef
 ```
 
 Required fields:
@@ -1264,20 +1264,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRuleGroupRequestTypeDef
+## GetRuleGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetRuleGroupRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import GetRuleGroupRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `RuleGroupId`: `str`
 
-## GetRuleGroupResponseResponseTypeDef
+## GetRuleGroupResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetRuleGroupResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import GetRuleGroupResponseTypeDef
 ```
 
 Required fields:
@@ -1286,20 +1286,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRuleRequestTypeDef
+## GetRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetRuleRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import GetRuleRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `RuleId`: `str`
 
-## GetRuleResponseResponseTypeDef
+## GetRuleResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetRuleResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import GetRuleResponseTypeDef
 ```
 
 Required fields:
@@ -1308,10 +1308,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSampledRequestsRequestTypeDef
+## GetSampledRequestsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetSampledRequestsRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import GetSampledRequestsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1321,10 +1321,10 @@ Required fields:
 - `TimeWindow`: [TimeWindowTypeDef](./type_defs.md#timewindowtypedef)
 - `MaxItems`: `int`
 
-## GetSampledRequestsResponseResponseTypeDef
+## GetSampledRequestsResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetSampledRequestsResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import GetSampledRequestsResponseTypeDef
 ```
 
 Required fields:
@@ -1336,20 +1336,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSizeConstraintSetRequestTypeDef
+## GetSizeConstraintSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetSizeConstraintSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import GetSizeConstraintSetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `SizeConstraintSetId`: `str`
 
-## GetSizeConstraintSetResponseResponseTypeDef
+## GetSizeConstraintSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetSizeConstraintSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import GetSizeConstraintSetResponseTypeDef
 ```
 
 Required fields:
@@ -1359,20 +1359,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSqlInjectionMatchSetRequestTypeDef
+## GetSqlInjectionMatchSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetSqlInjectionMatchSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import GetSqlInjectionMatchSetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `SqlInjectionMatchSetId`: `str`
 
-## GetSqlInjectionMatchSetResponseResponseTypeDef
+## GetSqlInjectionMatchSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetSqlInjectionMatchSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import GetSqlInjectionMatchSetResponseTypeDef
 ```
 
 Required fields:
@@ -1382,20 +1382,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetWebACLForResourceRequestTypeDef
+## GetWebACLForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetWebACLForResourceRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import GetWebACLForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## GetWebACLForResourceResponseResponseTypeDef
+## GetWebACLForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetWebACLForResourceResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import GetWebACLForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -1404,20 +1404,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetWebACLRequestTypeDef
+## GetWebACLRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetWebACLRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import GetWebACLRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `WebACLId`: `str`
 
-## GetWebACLResponseResponseTypeDef
+## GetWebACLResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetWebACLResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import GetWebACLResponseTypeDef
 ```
 
 Required fields:
@@ -1426,20 +1426,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetXssMatchSetRequestTypeDef
+## GetXssMatchSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetXssMatchSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import GetXssMatchSetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `XssMatchSetId`: `str`
 
-## GetXssMatchSetResponseResponseTypeDef
+## GetXssMatchSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import GetXssMatchSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import GetXssMatchSetResponseTypeDef
 ```
 
 Required fields:
@@ -1524,10 +1524,10 @@ Required fields:
 - `IPSetDescriptor`:
   [IPSetDescriptorTypeDef](./type_defs.md#ipsetdescriptortypedef)
 
-## ListActivatedRulesInRuleGroupRequestTypeDef
+## ListActivatedRulesInRuleGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListActivatedRulesInRuleGroupRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import ListActivatedRulesInRuleGroupRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1536,10 +1536,10 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
-## ListActivatedRulesInRuleGroupResponseResponseTypeDef
+## ListActivatedRulesInRuleGroupResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListActivatedRulesInRuleGroupResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import ListActivatedRulesInRuleGroupResponseTypeDef
 ```
 
 Required fields:
@@ -1550,10 +1550,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListByteMatchSetsRequestTypeDef
+## ListByteMatchSetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListByteMatchSetsRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import ListByteMatchSetsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1561,10 +1561,10 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
-## ListByteMatchSetsResponseResponseTypeDef
+## ListByteMatchSetsResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListByteMatchSetsResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import ListByteMatchSetsResponseTypeDef
 ```
 
 Required fields:
@@ -1575,10 +1575,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListGeoMatchSetsRequestTypeDef
+## ListGeoMatchSetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListGeoMatchSetsRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import ListGeoMatchSetsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1586,10 +1586,10 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
-## ListGeoMatchSetsResponseResponseTypeDef
+## ListGeoMatchSetsResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListGeoMatchSetsResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import ListGeoMatchSetsResponseTypeDef
 ```
 
 Required fields:
@@ -1600,10 +1600,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListIPSetsRequestTypeDef
+## ListIPSetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListIPSetsRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import ListIPSetsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1611,10 +1611,10 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
-## ListIPSetsResponseResponseTypeDef
+## ListIPSetsResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListIPSetsResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import ListIPSetsResponseTypeDef
 ```
 
 Required fields:
@@ -1624,10 +1624,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListLoggingConfigurationsRequestTypeDef
+## ListLoggingConfigurationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListLoggingConfigurationsRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import ListLoggingConfigurationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1635,10 +1635,10 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
-## ListLoggingConfigurationsResponseResponseTypeDef
+## ListLoggingConfigurationsResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListLoggingConfigurationsResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import ListLoggingConfigurationsResponseTypeDef
 ```
 
 Required fields:
@@ -1649,10 +1649,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRateBasedRulesRequestTypeDef
+## ListRateBasedRulesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListRateBasedRulesRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import ListRateBasedRulesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1660,10 +1660,10 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
-## ListRateBasedRulesResponseResponseTypeDef
+## ListRateBasedRulesResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListRateBasedRulesResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import ListRateBasedRulesResponseTypeDef
 ```
 
 Required fields:
@@ -1673,10 +1673,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRegexMatchSetsRequestTypeDef
+## ListRegexMatchSetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListRegexMatchSetsRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import ListRegexMatchSetsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1684,10 +1684,10 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
-## ListRegexMatchSetsResponseResponseTypeDef
+## ListRegexMatchSetsResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListRegexMatchSetsResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import ListRegexMatchSetsResponseTypeDef
 ```
 
 Required fields:
@@ -1698,10 +1698,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRegexPatternSetsRequestTypeDef
+## ListRegexPatternSetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListRegexPatternSetsRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import ListRegexPatternSetsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1709,10 +1709,10 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
-## ListRegexPatternSetsResponseResponseTypeDef
+## ListRegexPatternSetsResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListRegexPatternSetsResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import ListRegexPatternSetsResponseTypeDef
 ```
 
 Required fields:
@@ -1723,10 +1723,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResourcesForWebACLRequestTypeDef
+## ListResourcesForWebACLRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListResourcesForWebACLRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import ListResourcesForWebACLRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1737,10 +1737,10 @@ Optional fields:
 
 - `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 
-## ListResourcesForWebACLResponseResponseTypeDef
+## ListResourcesForWebACLResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListResourcesForWebACLResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import ListResourcesForWebACLResponseTypeDef
 ```
 
 Required fields:
@@ -1749,10 +1749,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRuleGroupsRequestTypeDef
+## ListRuleGroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListRuleGroupsRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import ListRuleGroupsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1760,10 +1760,10 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
-## ListRuleGroupsResponseResponseTypeDef
+## ListRuleGroupsResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListRuleGroupsResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import ListRuleGroupsResponseTypeDef
 ```
 
 Required fields:
@@ -1774,10 +1774,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRulesRequestTypeDef
+## ListRulesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListRulesRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import ListRulesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1785,10 +1785,10 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
-## ListRulesResponseResponseTypeDef
+## ListRulesResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListRulesResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import ListRulesResponseTypeDef
 ```
 
 Required fields:
@@ -1798,10 +1798,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSizeConstraintSetsRequestTypeDef
+## ListSizeConstraintSetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListSizeConstraintSetsRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import ListSizeConstraintSetsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1809,10 +1809,10 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
-## ListSizeConstraintSetsResponseResponseTypeDef
+## ListSizeConstraintSetsResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListSizeConstraintSetsResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import ListSizeConstraintSetsResponseTypeDef
 ```
 
 Required fields:
@@ -1823,10 +1823,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSqlInjectionMatchSetsRequestTypeDef
+## ListSqlInjectionMatchSetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListSqlInjectionMatchSetsRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import ListSqlInjectionMatchSetsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1834,10 +1834,10 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
-## ListSqlInjectionMatchSetsResponseResponseTypeDef
+## ListSqlInjectionMatchSetsResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListSqlInjectionMatchSetsResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import ListSqlInjectionMatchSetsResponseTypeDef
 ```
 
 Required fields:
@@ -1848,10 +1848,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSubscribedRuleGroupsRequestTypeDef
+## ListSubscribedRuleGroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListSubscribedRuleGroupsRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import ListSubscribedRuleGroupsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1859,10 +1859,10 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
-## ListSubscribedRuleGroupsResponseResponseTypeDef
+## ListSubscribedRuleGroupsResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListSubscribedRuleGroupsResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import ListSubscribedRuleGroupsResponseTypeDef
 ```
 
 Required fields:
@@ -1873,10 +1873,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1888,10 +1888,10 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -1902,10 +1902,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListWebACLsRequestTypeDef
+## ListWebACLsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListWebACLsRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import ListWebACLsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1913,10 +1913,10 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
-## ListWebACLsResponseResponseTypeDef
+## ListWebACLsResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListWebACLsResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import ListWebACLsResponseTypeDef
 ```
 
 Required fields:
@@ -1927,10 +1927,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListXssMatchSetsRequestTypeDef
+## ListXssMatchSetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListXssMatchSetsRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import ListXssMatchSetsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1938,10 +1938,10 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
-## ListXssMatchSetsResponseResponseTypeDef
+## ListXssMatchSetsResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import ListXssMatchSetsResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import ListXssMatchSetsResponseTypeDef
 ```
 
 Required fields:
@@ -1980,10 +1980,10 @@ Required fields:
 - `Type`: [PredicateTypeType](./literals.md#predicatetypetype)
 - `DataId`: `str`
 
-## PutLoggingConfigurationRequestTypeDef
+## PutLoggingConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import PutLoggingConfigurationRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import PutLoggingConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1991,10 +1991,10 @@ Required fields:
 - `LoggingConfiguration`:
   [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
 
-## PutLoggingConfigurationResponseResponseTypeDef
+## PutLoggingConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import PutLoggingConfigurationResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import PutLoggingConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -2004,10 +2004,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutPermissionPolicyRequestTypeDef
+## PutPermissionPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import PutPermissionPolicyRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import PutPermissionPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2354,10 +2354,10 @@ Optional fields:
 - `ResourceARN`: `str`
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2387,10 +2387,10 @@ Required fields:
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2398,10 +2398,10 @@ Required fields:
 - `ResourceARN`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateByteMatchSetRequestTypeDef
+## UpdateByteMatchSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateByteMatchSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateByteMatchSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2411,10 +2411,10 @@ Required fields:
 - `Updates`:
   `List`\[[ByteMatchSetUpdateTypeDef](./type_defs.md#bytematchsetupdatetypedef)\]
 
-## UpdateByteMatchSetResponseResponseTypeDef
+## UpdateByteMatchSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateByteMatchSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateByteMatchSetResponseTypeDef
 ```
 
 Required fields:
@@ -2423,10 +2423,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateGeoMatchSetRequestTypeDef
+## UpdateGeoMatchSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateGeoMatchSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateGeoMatchSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2436,10 +2436,10 @@ Required fields:
 - `Updates`:
   `List`\[[GeoMatchSetUpdateTypeDef](./type_defs.md#geomatchsetupdatetypedef)\]
 
-## UpdateGeoMatchSetResponseResponseTypeDef
+## UpdateGeoMatchSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateGeoMatchSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateGeoMatchSetResponseTypeDef
 ```
 
 Required fields:
@@ -2448,10 +2448,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateIPSetRequestTypeDef
+## UpdateIPSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateIPSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateIPSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2460,10 +2460,10 @@ Required fields:
 - `ChangeToken`: `str`
 - `Updates`: `List`\[[IPSetUpdateTypeDef](./type_defs.md#ipsetupdatetypedef)\]
 
-## UpdateIPSetResponseResponseTypeDef
+## UpdateIPSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateIPSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateIPSetResponseTypeDef
 ```
 
 Required fields:
@@ -2472,10 +2472,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateRateBasedRuleRequestTypeDef
+## UpdateRateBasedRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateRateBasedRuleRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateRateBasedRuleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2485,10 +2485,10 @@ Required fields:
 - `Updates`: `List`\[[RuleUpdateTypeDef](./type_defs.md#ruleupdatetypedef)\]
 - `RateLimit`: `int`
 
-## UpdateRateBasedRuleResponseResponseTypeDef
+## UpdateRateBasedRuleResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateRateBasedRuleResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateRateBasedRuleResponseTypeDef
 ```
 
 Required fields:
@@ -2497,10 +2497,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateRegexMatchSetRequestTypeDef
+## UpdateRegexMatchSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateRegexMatchSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateRegexMatchSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2510,10 +2510,10 @@ Required fields:
   `List`\[[RegexMatchSetUpdateTypeDef](./type_defs.md#regexmatchsetupdatetypedef)\]
 - `ChangeToken`: `str`
 
-## UpdateRegexMatchSetResponseResponseTypeDef
+## UpdateRegexMatchSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateRegexMatchSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateRegexMatchSetResponseTypeDef
 ```
 
 Required fields:
@@ -2522,10 +2522,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateRegexPatternSetRequestTypeDef
+## UpdateRegexPatternSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateRegexPatternSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateRegexPatternSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2535,10 +2535,10 @@ Required fields:
   `List`\[[RegexPatternSetUpdateTypeDef](./type_defs.md#regexpatternsetupdatetypedef)\]
 - `ChangeToken`: `str`
 
-## UpdateRegexPatternSetResponseResponseTypeDef
+## UpdateRegexPatternSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateRegexPatternSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateRegexPatternSetResponseTypeDef
 ```
 
 Required fields:
@@ -2547,10 +2547,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateRuleGroupRequestTypeDef
+## UpdateRuleGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateRuleGroupRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateRuleGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2560,10 +2560,10 @@ Required fields:
   `List`\[[RuleGroupUpdateTypeDef](./type_defs.md#rulegroupupdatetypedef)\]
 - `ChangeToken`: `str`
 
-## UpdateRuleGroupResponseResponseTypeDef
+## UpdateRuleGroupResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateRuleGroupResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateRuleGroupResponseTypeDef
 ```
 
 Required fields:
@@ -2572,10 +2572,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateRuleRequestTypeDef
+## UpdateRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateRuleRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateRuleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2584,10 +2584,10 @@ Required fields:
 - `ChangeToken`: `str`
 - `Updates`: `List`\[[RuleUpdateTypeDef](./type_defs.md#ruleupdatetypedef)\]
 
-## UpdateRuleResponseResponseTypeDef
+## UpdateRuleResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateRuleResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateRuleResponseTypeDef
 ```
 
 Required fields:
@@ -2596,10 +2596,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateSizeConstraintSetRequestTypeDef
+## UpdateSizeConstraintSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateSizeConstraintSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateSizeConstraintSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2609,10 +2609,10 @@ Required fields:
 - `Updates`:
   `List`\[[SizeConstraintSetUpdateTypeDef](./type_defs.md#sizeconstraintsetupdatetypedef)\]
 
-## UpdateSizeConstraintSetResponseResponseTypeDef
+## UpdateSizeConstraintSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateSizeConstraintSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateSizeConstraintSetResponseTypeDef
 ```
 
 Required fields:
@@ -2621,10 +2621,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateSqlInjectionMatchSetRequestTypeDef
+## UpdateSqlInjectionMatchSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateSqlInjectionMatchSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateSqlInjectionMatchSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2634,10 +2634,10 @@ Required fields:
 - `Updates`:
   `List`\[[SqlInjectionMatchSetUpdateTypeDef](./type_defs.md#sqlinjectionmatchsetupdatetypedef)\]
 
-## UpdateSqlInjectionMatchSetResponseResponseTypeDef
+## UpdateSqlInjectionMatchSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateSqlInjectionMatchSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateSqlInjectionMatchSetResponseTypeDef
 ```
 
 Required fields:
@@ -2646,10 +2646,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateWebACLRequestTypeDef
+## UpdateWebACLRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateWebACLRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateWebACLRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2663,10 +2663,10 @@ Optional fields:
   `List`\[[WebACLUpdateTypeDef](./type_defs.md#webaclupdatetypedef)\]
 - `DefaultAction`: [WafActionTypeDef](./type_defs.md#wafactiontypedef)
 
-## UpdateWebACLResponseResponseTypeDef
+## UpdateWebACLResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateWebACLResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateWebACLResponseTypeDef
 ```
 
 Required fields:
@@ -2675,10 +2675,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateXssMatchSetRequestTypeDef
+## UpdateXssMatchSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateXssMatchSetRequestTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateXssMatchSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2688,10 +2688,10 @@ Required fields:
 - `Updates`:
   `List`\[[XssMatchSetUpdateTypeDef](./type_defs.md#xssmatchsetupdatetypedef)\]
 
-## UpdateXssMatchSetResponseResponseTypeDef
+## UpdateXssMatchSetResponseTypeDef
 
 ```python
-from mypy_boto3_waf_regional.type_defs import UpdateXssMatchSetResponseResponseTypeDef
+from mypy_boto3_waf_regional.type_defs import UpdateXssMatchSetResponseTypeDef
 ```
 
 Required fields:

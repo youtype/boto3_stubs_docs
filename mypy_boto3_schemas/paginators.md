@@ -39,7 +39,7 @@ Arguments for `ListDiscoverersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDiscoverersPaginator.paginate` returns
-`Iterator`\[[ListDiscoverersResponseResponseTypeDef](./type_defs.md#listdiscoverersresponseresponsetypedef)\].
+`Iterator`\[[ListDiscoverersResponseTypeDef](./type_defs.md#listdiscoverersresponsetypedef)\].
 
 ## ListRegistriesPaginator
 
@@ -66,7 +66,7 @@ Arguments for `ListRegistriesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRegistriesPaginator.paginate` returns
-`Iterator`\[[ListRegistriesResponseResponseTypeDef](./type_defs.md#listregistriesresponseresponsetypedef)\].
+`Iterator`\[[ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef)\].
 
 ## ListSchemaVersionsPaginator
 
@@ -93,7 +93,7 @@ Arguments for `ListSchemaVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSchemaVersionsPaginator.paginate` returns
-`Iterator`\[[ListSchemaVersionsResponseResponseTypeDef](./type_defs.md#listschemaversionsresponseresponsetypedef)\].
+`Iterator`\[[ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef)\].
 
 ## ListSchemasPaginator
 
@@ -119,7 +119,7 @@ Arguments for `ListSchemasPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSchemasPaginator.paginate` returns
-`Iterator`\[[ListSchemasResponseResponseTypeDef](./type_defs.md#listschemasresponseresponsetypedef)\].
+`Iterator`\[[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef)\].
 
 ## SearchSchemasPaginator
 
@@ -145,4 +145,4 @@ Arguments for `SearchSchemasPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchSchemasPaginator.paginate` returns
-`Iterator`\[[SearchSchemasResponseResponseTypeDef](./type_defs.md#searchschemasresponseresponsetypedef)\].
+`Iterator`\[[SearchSchemasResponseTypeDef](./type_defs.md#searchschemasresponsetypedef)\].

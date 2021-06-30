@@ -11,6 +11,7 @@ type annotations stubs module
   - [S3OutpostsClient](#s3outpostsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_endpoint](#create_endpoint)
     - [delete_endpoint](#delete_endpoint)
@@ -57,6 +58,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+S3OutpostsClient exceptions.
+
+Type annotations for `boto3.client("s3outposts").exceptions` method.
+
+Boto3 documentation:
+[S3Outposts.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -83,7 +95,7 @@ Boto3 documentation:
 [S3Outposts.Client.create_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.create_endpoint)
 
 Arguments mapping described in
-[CreateEndpointRequestTypeDef](./type_defs.md#createendpointrequesttypedef).
+[CreateEndpointRequestRequestTypeDef](./type_defs.md#createendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -92,7 +104,7 @@ Keyword-only arguments:
 - `SecurityGroupId`: `str` *(required)*
 
 Returns
-[CreateEndpointResultResponseTypeDef](./type_defs.md#createendpointresultresponsetypedef).
+[CreateEndpointResultTypeDef](./type_defs.md#createendpointresulttypedef).
 
 ### delete_endpoint
 
@@ -105,7 +117,7 @@ Boto3 documentation:
 [S3Outposts.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.delete_endpoint)
 
 Arguments mapping described in
-[DeleteEndpointRequestTypeDef](./type_defs.md#deleteendpointrequesttypedef).
+[DeleteEndpointRequestRequestTypeDef](./type_defs.md#deleteendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -142,7 +154,7 @@ Boto3 documentation:
 [S3Outposts.Client.list_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.list_endpoints)
 
 Arguments mapping described in
-[ListEndpointsRequestTypeDef](./type_defs.md#listendpointsrequesttypedef).
+[ListEndpointsRequestRequestTypeDef](./type_defs.md#listendpointsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -150,7 +162,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListEndpointsResultResponseTypeDef](./type_defs.md#listendpointsresultresponsetypedef).
+[ListEndpointsResultTypeDef](./type_defs.md#listendpointsresulttypedef).
 
 ### get_paginator
 

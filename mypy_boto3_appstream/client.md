@@ -11,6 +11,7 @@ type annotations stubs module
   - [AppStreamClient](#appstreamclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_fleet](#associate_fleet)
     - [batch_associate_user_stack](#batch_associate_user_stack)
     - [batch_disassociate_user_stack](#batch_disassociate_user_stack)
@@ -110,6 +111,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+AppStreamClient exceptions.
+
+Type annotations for `boto3.client("appstream").exceptions` method.
+
+Boto3 documentation:
+[AppStream.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_fleet
 
 Associates the specified fleet with the specified stack.
@@ -120,7 +132,7 @@ Boto3 documentation:
 [AppStream.Client.associate_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.associate_fleet)
 
 Arguments mapping described in
-[AssociateFleetRequestTypeDef](./type_defs.md#associatefleetrequesttypedef).
+[AssociateFleetRequestRequestTypeDef](./type_defs.md#associatefleetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -140,7 +152,7 @@ Boto3 documentation:
 [AppStream.Client.batch_associate_user_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.batch_associate_user_stack)
 
 Arguments mapping described in
-[BatchAssociateUserStackRequestTypeDef](./type_defs.md#batchassociateuserstackrequesttypedef).
+[BatchAssociateUserStackRequestRequestTypeDef](./type_defs.md#batchassociateuserstackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -149,7 +161,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchAssociateUserStackResultResponseTypeDef](./type_defs.md#batchassociateuserstackresultresponsetypedef).
+[BatchAssociateUserStackResultTypeDef](./type_defs.md#batchassociateuserstackresulttypedef).
 
 ### batch_disassociate_user_stack
 
@@ -162,7 +174,7 @@ Boto3 documentation:
 [AppStream.Client.batch_disassociate_user_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.batch_disassociate_user_stack)
 
 Arguments mapping described in
-[BatchDisassociateUserStackRequestTypeDef](./type_defs.md#batchdisassociateuserstackrequesttypedef).
+[BatchDisassociateUserStackRequestRequestTypeDef](./type_defs.md#batchdisassociateuserstackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -171,7 +183,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchDisassociateUserStackResultResponseTypeDef](./type_defs.md#batchdisassociateuserstackresultresponsetypedef).
+[BatchDisassociateUserStackResultTypeDef](./type_defs.md#batchdisassociateuserstackresulttypedef).
 
 ### can_paginate
 
@@ -199,7 +211,7 @@ Boto3 documentation:
 [AppStream.Client.copy_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.copy_image)
 
 Arguments mapping described in
-[CopyImageRequestTypeDef](./type_defs.md#copyimagerequesttypedef).
+[CopyImageRequestRequestTypeDef](./type_defs.md#copyimagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -208,8 +220,7 @@ Keyword-only arguments:
 - `DestinationRegion`: `str` *(required)*
 - `DestinationImageDescription`: `str`
 
-Returns
-[CopyImageResponseResponseTypeDef](./type_defs.md#copyimageresponseresponsetypedef).
+Returns [CopyImageResponseTypeDef](./type_defs.md#copyimageresponsetypedef).
 
 ### create_directory_config
 
@@ -222,7 +233,7 @@ Boto3 documentation:
 [AppStream.Client.create_directory_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_directory_config)
 
 Arguments mapping described in
-[CreateDirectoryConfigRequestTypeDef](./type_defs.md#createdirectoryconfigrequesttypedef).
+[CreateDirectoryConfigRequestRequestTypeDef](./type_defs.md#createdirectoryconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -232,7 +243,7 @@ Keyword-only arguments:
   [ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef)
 
 Returns
-[CreateDirectoryConfigResultResponseTypeDef](./type_defs.md#createdirectoryconfigresultresponsetypedef).
+[CreateDirectoryConfigResultTypeDef](./type_defs.md#createdirectoryconfigresulttypedef).
 
 ### create_fleet
 
@@ -244,7 +255,7 @@ Boto3 documentation:
 [AppStream.Client.create_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_fleet)
 
 Arguments mapping described in
-[CreateFleetRequestTypeDef](./type_defs.md#createfleetrequesttypedef).
+[CreateFleetRequestRequestTypeDef](./type_defs.md#createfleetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -268,8 +279,7 @@ Keyword-only arguments:
 - `IamRoleArn`: `str`
 - `StreamView`: [StreamViewType](./literals.md#streamviewtype)
 
-Returns
-[CreateFleetResultResponseTypeDef](./type_defs.md#createfleetresultresponsetypedef).
+Returns [CreateFleetResultTypeDef](./type_defs.md#createfleetresulttypedef).
 
 ### create_image_builder
 
@@ -281,7 +291,7 @@ Boto3 documentation:
 [AppStream.Client.create_image_builder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_image_builder)
 
 Arguments mapping described in
-[CreateImageBuilderRequestTypeDef](./type_defs.md#createimagebuilderrequesttypedef).
+[CreateImageBuilderRequestRequestTypeDef](./type_defs.md#createimagebuilderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -302,7 +312,7 @@ Keyword-only arguments:
   `List`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
 
 Returns
-[CreateImageBuilderResultResponseTypeDef](./type_defs.md#createimagebuilderresultresponsetypedef).
+[CreateImageBuilderResultTypeDef](./type_defs.md#createimagebuilderresulttypedef).
 
 ### create_image_builder_streaming_url
 
@@ -315,7 +325,7 @@ Boto3 documentation:
 [AppStream.Client.create_image_builder_streaming_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_image_builder_streaming_url)
 
 Arguments mapping described in
-[CreateImageBuilderStreamingURLRequestTypeDef](./type_defs.md#createimagebuilderstreamingurlrequesttypedef).
+[CreateImageBuilderStreamingURLRequestRequestTypeDef](./type_defs.md#createimagebuilderstreamingurlrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -323,7 +333,7 @@ Keyword-only arguments:
 - `Validity`: `int`
 
 Returns
-[CreateImageBuilderStreamingURLResultResponseTypeDef](./type_defs.md#createimagebuilderstreamingurlresultresponsetypedef).
+[CreateImageBuilderStreamingURLResultTypeDef](./type_defs.md#createimagebuilderstreamingurlresulttypedef).
 
 ### create_stack
 
@@ -335,7 +345,7 @@ Boto3 documentation:
 [AppStream.Client.create_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_stack)
 
 Arguments mapping described in
-[CreateStackRequestTypeDef](./type_defs.md#createstackrequesttypedef).
+[CreateStackRequestRequestTypeDef](./type_defs.md#createstackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -355,8 +365,7 @@ Keyword-only arguments:
   `List`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
 - `EmbedHostDomains`: `List`\[`str`\]
 
-Returns
-[CreateStackResultResponseTypeDef](./type_defs.md#createstackresultresponsetypedef).
+Returns [CreateStackResultTypeDef](./type_defs.md#createstackresulttypedef).
 
 ### create_streaming_url
 
@@ -369,7 +378,7 @@ Boto3 documentation:
 [AppStream.Client.create_streaming_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_streaming_url)
 
 Arguments mapping described in
-[CreateStreamingURLRequestTypeDef](./type_defs.md#createstreamingurlrequesttypedef).
+[CreateStreamingURLRequestRequestTypeDef](./type_defs.md#createstreamingurlrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -381,7 +390,7 @@ Keyword-only arguments:
 - `SessionContext`: `str`
 
 Returns
-[CreateStreamingURLResultResponseTypeDef](./type_defs.md#createstreamingurlresultresponsetypedef).
+[CreateStreamingURLResultTypeDef](./type_defs.md#createstreamingurlresulttypedef).
 
 ### create_updated_image
 
@@ -394,7 +403,7 @@ Boto3 documentation:
 [AppStream.Client.create_updated_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_updated_image)
 
 Arguments mapping described in
-[CreateUpdatedImageRequestTypeDef](./type_defs.md#createupdatedimagerequesttypedef).
+[CreateUpdatedImageRequestRequestTypeDef](./type_defs.md#createupdatedimagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -406,7 +415,7 @@ Keyword-only arguments:
 - `dryRun`: `bool`
 
 Returns
-[CreateUpdatedImageResultResponseTypeDef](./type_defs.md#createupdatedimageresultresponsetypedef).
+[CreateUpdatedImageResultTypeDef](./type_defs.md#createupdatedimageresulttypedef).
 
 ### create_usage_report_subscription
 
@@ -419,7 +428,7 @@ Boto3 documentation:
 [AppStream.Client.create_usage_report_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_usage_report_subscription)
 
 Returns
-[CreateUsageReportSubscriptionResultResponseTypeDef](./type_defs.md#createusagereportsubscriptionresultresponsetypedef).
+[CreateUsageReportSubscriptionResultTypeDef](./type_defs.md#createusagereportsubscriptionresulttypedef).
 
 ### create_user
 
@@ -431,7 +440,7 @@ Boto3 documentation:
 [AppStream.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_user)
 
 Arguments mapping described in
-[CreateUserRequestTypeDef](./type_defs.md#createuserrequesttypedef).
+[CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -455,7 +464,7 @@ Boto3 documentation:
 [AppStream.Client.delete_directory_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_directory_config)
 
 Arguments mapping described in
-[DeleteDirectoryConfigRequestTypeDef](./type_defs.md#deletedirectoryconfigrequesttypedef).
+[DeleteDirectoryConfigRequestRequestTypeDef](./type_defs.md#deletedirectoryconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -473,7 +482,7 @@ Boto3 documentation:
 [AppStream.Client.delete_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_fleet)
 
 Arguments mapping described in
-[DeleteFleetRequestTypeDef](./type_defs.md#deletefleetrequesttypedef).
+[DeleteFleetRequestRequestTypeDef](./type_defs.md#deletefleetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -491,14 +500,13 @@ Boto3 documentation:
 [AppStream.Client.delete_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_image)
 
 Arguments mapping described in
-[DeleteImageRequestTypeDef](./type_defs.md#deleteimagerequesttypedef).
+[DeleteImageRequestRequestTypeDef](./type_defs.md#deleteimagerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
-Returns
-[DeleteImageResultResponseTypeDef](./type_defs.md#deleteimageresultresponsetypedef).
+Returns [DeleteImageResultTypeDef](./type_defs.md#deleteimageresulttypedef).
 
 ### delete_image_builder
 
@@ -510,14 +518,14 @@ Boto3 documentation:
 [AppStream.Client.delete_image_builder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_image_builder)
 
 Arguments mapping described in
-[DeleteImageBuilderRequestTypeDef](./type_defs.md#deleteimagebuilderrequesttypedef).
+[DeleteImageBuilderRequestRequestTypeDef](./type_defs.md#deleteimagebuilderrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[DeleteImageBuilderResultResponseTypeDef](./type_defs.md#deleteimagebuilderresultresponsetypedef).
+[DeleteImageBuilderResultTypeDef](./type_defs.md#deleteimagebuilderresulttypedef).
 
 ### delete_image_permissions
 
@@ -530,7 +538,7 @@ Boto3 documentation:
 [AppStream.Client.delete_image_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_image_permissions)
 
 Arguments mapping described in
-[DeleteImagePermissionsRequestTypeDef](./type_defs.md#deleteimagepermissionsrequesttypedef).
+[DeleteImagePermissionsRequestRequestTypeDef](./type_defs.md#deleteimagepermissionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -549,7 +557,7 @@ Boto3 documentation:
 [AppStream.Client.delete_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_stack)
 
 Arguments mapping described in
-[DeleteStackRequestTypeDef](./type_defs.md#deletestackrequesttypedef).
+[DeleteStackRequestRequestTypeDef](./type_defs.md#deletestackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -579,7 +587,7 @@ Boto3 documentation:
 [AppStream.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_user)
 
 Arguments mapping described in
-[DeleteUserRequestTypeDef](./type_defs.md#deleteuserrequesttypedef).
+[DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -601,7 +609,7 @@ Boto3 documentation:
 [AppStream.Client.describe_directory_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_directory_configs)
 
 Arguments mapping described in
-[DescribeDirectoryConfigsRequestTypeDef](./type_defs.md#describedirectoryconfigsrequesttypedef).
+[DescribeDirectoryConfigsRequestRequestTypeDef](./type_defs.md#describedirectoryconfigsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -610,7 +618,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeDirectoryConfigsResultResponseTypeDef](./type_defs.md#describedirectoryconfigsresultresponsetypedef).
+[DescribeDirectoryConfigsResultTypeDef](./type_defs.md#describedirectoryconfigsresulttypedef).
 
 ### describe_fleets
 
@@ -623,7 +631,7 @@ Boto3 documentation:
 [AppStream.Client.describe_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_fleets)
 
 Arguments mapping described in
-[DescribeFleetsRequestTypeDef](./type_defs.md#describefleetsrequesttypedef).
+[DescribeFleetsRequestRequestTypeDef](./type_defs.md#describefleetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -631,7 +639,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeFleetsResultResponseTypeDef](./type_defs.md#describefleetsresultresponsetypedef).
+[DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef).
 
 ### describe_image_builders
 
@@ -645,7 +653,7 @@ Boto3 documentation:
 [AppStream.Client.describe_image_builders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_image_builders)
 
 Arguments mapping described in
-[DescribeImageBuildersRequestTypeDef](./type_defs.md#describeimagebuildersrequesttypedef).
+[DescribeImageBuildersRequestRequestTypeDef](./type_defs.md#describeimagebuildersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -654,7 +662,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeImageBuildersResultResponseTypeDef](./type_defs.md#describeimagebuildersresultresponsetypedef).
+[DescribeImageBuildersResultTypeDef](./type_defs.md#describeimagebuildersresulttypedef).
 
 ### describe_image_permissions
 
@@ -668,7 +676,7 @@ Boto3 documentation:
 [AppStream.Client.describe_image_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_image_permissions)
 
 Arguments mapping described in
-[DescribeImagePermissionsRequestTypeDef](./type_defs.md#describeimagepermissionsrequesttypedef).
+[DescribeImagePermissionsRequestRequestTypeDef](./type_defs.md#describeimagepermissionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -678,7 +686,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeImagePermissionsResultResponseTypeDef](./type_defs.md#describeimagepermissionsresultresponsetypedef).
+[DescribeImagePermissionsResultTypeDef](./type_defs.md#describeimagepermissionsresulttypedef).
 
 ### describe_images
 
@@ -691,7 +699,7 @@ Boto3 documentation:
 [AppStream.Client.describe_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_images)
 
 Arguments mapping described in
-[DescribeImagesRequestTypeDef](./type_defs.md#describeimagesrequesttypedef).
+[DescribeImagesRequestRequestTypeDef](./type_defs.md#describeimagesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -702,7 +710,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeImagesResultResponseTypeDef](./type_defs.md#describeimagesresultresponsetypedef).
+[DescribeImagesResultTypeDef](./type_defs.md#describeimagesresulttypedef).
 
 ### describe_sessions
 
@@ -715,7 +723,7 @@ Boto3 documentation:
 [AppStream.Client.describe_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_sessions)
 
 Arguments mapping described in
-[DescribeSessionsRequestTypeDef](./type_defs.md#describesessionsrequesttypedef).
+[DescribeSessionsRequestRequestTypeDef](./type_defs.md#describesessionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -728,7 +736,7 @@ Keyword-only arguments:
   [AuthenticationTypeType](./literals.md#authenticationtypetype)
 
 Returns
-[DescribeSessionsResultResponseTypeDef](./type_defs.md#describesessionsresultresponsetypedef).
+[DescribeSessionsResultTypeDef](./type_defs.md#describesessionsresulttypedef).
 
 ### describe_stacks
 
@@ -741,7 +749,7 @@ Boto3 documentation:
 [AppStream.Client.describe_stacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_stacks)
 
 Arguments mapping described in
-[DescribeStacksRequestTypeDef](./type_defs.md#describestacksrequesttypedef).
+[DescribeStacksRequestRequestTypeDef](./type_defs.md#describestacksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -749,7 +757,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeStacksResultResponseTypeDef](./type_defs.md#describestacksresultresponsetypedef).
+[DescribeStacksResultTypeDef](./type_defs.md#describestacksresulttypedef).
 
 ### describe_usage_report_subscriptions
 
@@ -762,7 +770,7 @@ Boto3 documentation:
 [AppStream.Client.describe_usage_report_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_usage_report_subscriptions)
 
 Arguments mapping described in
-[DescribeUsageReportSubscriptionsRequestTypeDef](./type_defs.md#describeusagereportsubscriptionsrequesttypedef).
+[DescribeUsageReportSubscriptionsRequestRequestTypeDef](./type_defs.md#describeusagereportsubscriptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -770,7 +778,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeUsageReportSubscriptionsResultResponseTypeDef](./type_defs.md#describeusagereportsubscriptionsresultresponsetypedef).
+[DescribeUsageReportSubscriptionsResultTypeDef](./type_defs.md#describeusagereportsubscriptionsresulttypedef).
 
 ### describe_user_stack_associations
 
@@ -783,7 +791,7 @@ Boto3 documentation:
 [AppStream.Client.describe_user_stack_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_user_stack_associations)
 
 Arguments mapping described in
-[DescribeUserStackAssociationsRequestTypeDef](./type_defs.md#describeuserstackassociationsrequesttypedef).
+[DescribeUserStackAssociationsRequestRequestTypeDef](./type_defs.md#describeuserstackassociationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -795,7 +803,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeUserStackAssociationsResultResponseTypeDef](./type_defs.md#describeuserstackassociationsresultresponsetypedef).
+[DescribeUserStackAssociationsResultTypeDef](./type_defs.md#describeuserstackassociationsresulttypedef).
 
 ### describe_users
 
@@ -807,7 +815,7 @@ Boto3 documentation:
 [AppStream.Client.describe_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_users)
 
 Arguments mapping described in
-[DescribeUsersRequestTypeDef](./type_defs.md#describeusersrequesttypedef).
+[DescribeUsersRequestRequestTypeDef](./type_defs.md#describeusersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -817,7 +825,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeUsersResultResponseTypeDef](./type_defs.md#describeusersresultresponsetypedef).
+[DescribeUsersResultTypeDef](./type_defs.md#describeusersresulttypedef).
 
 ### disable_user
 
@@ -829,7 +837,7 @@ Boto3 documentation:
 [AppStream.Client.disable_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.disable_user)
 
 Arguments mapping described in
-[DisableUserRequestTypeDef](./type_defs.md#disableuserrequesttypedef).
+[DisableUserRequestRequestTypeDef](./type_defs.md#disableuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -849,7 +857,7 @@ Boto3 documentation:
 [AppStream.Client.disassociate_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.disassociate_fleet)
 
 Arguments mapping described in
-[DisassociateFleetRequestTypeDef](./type_defs.md#disassociatefleetrequesttypedef).
+[DisassociateFleetRequestRequestTypeDef](./type_defs.md#disassociatefleetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -868,7 +876,7 @@ Boto3 documentation:
 [AppStream.Client.enable_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.enable_user)
 
 Arguments mapping described in
-[EnableUserRequestTypeDef](./type_defs.md#enableuserrequesttypedef).
+[EnableUserRequestRequestTypeDef](./type_defs.md#enableuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -888,7 +896,7 @@ Boto3 documentation:
 [AppStream.Client.expire_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.expire_session)
 
 Arguments mapping described in
-[ExpireSessionRequestTypeDef](./type_defs.md#expiresessionrequesttypedef).
+[ExpireSessionRequestRequestTypeDef](./type_defs.md#expiresessionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -924,7 +932,7 @@ Boto3 documentation:
 [AppStream.Client.list_associated_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.list_associated_fleets)
 
 Arguments mapping described in
-[ListAssociatedFleetsRequestTypeDef](./type_defs.md#listassociatedfleetsrequesttypedef).
+[ListAssociatedFleetsRequestRequestTypeDef](./type_defs.md#listassociatedfleetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -932,7 +940,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAssociatedFleetsResultResponseTypeDef](./type_defs.md#listassociatedfleetsresultresponsetypedef).
+[ListAssociatedFleetsResultTypeDef](./type_defs.md#listassociatedfleetsresulttypedef).
 
 ### list_associated_stacks
 
@@ -944,7 +952,7 @@ Boto3 documentation:
 [AppStream.Client.list_associated_stacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.list_associated_stacks)
 
 Arguments mapping described in
-[ListAssociatedStacksRequestTypeDef](./type_defs.md#listassociatedstacksrequesttypedef).
+[ListAssociatedStacksRequestRequestTypeDef](./type_defs.md#listassociatedstacksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -952,7 +960,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAssociatedStacksResultResponseTypeDef](./type_defs.md#listassociatedstacksresultresponsetypedef).
+[ListAssociatedStacksResultTypeDef](./type_defs.md#listassociatedstacksresulttypedef).
 
 ### list_tags_for_resource
 
@@ -964,14 +972,14 @@ Boto3 documentation:
 [AppStream.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### start_fleet
 
@@ -983,7 +991,7 @@ Boto3 documentation:
 [AppStream.Client.start_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.start_fleet)
 
 Arguments mapping described in
-[StartFleetRequestTypeDef](./type_defs.md#startfleetrequesttypedef).
+[StartFleetRequestRequestTypeDef](./type_defs.md#startfleetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1001,7 +1009,7 @@ Boto3 documentation:
 [AppStream.Client.start_image_builder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.start_image_builder)
 
 Arguments mapping described in
-[StartImageBuilderRequestTypeDef](./type_defs.md#startimagebuilderrequesttypedef).
+[StartImageBuilderRequestRequestTypeDef](./type_defs.md#startimagebuilderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1009,7 +1017,7 @@ Keyword-only arguments:
 - `AppstreamAgentVersion`: `str`
 
 Returns
-[StartImageBuilderResultResponseTypeDef](./type_defs.md#startimagebuilderresultresponsetypedef).
+[StartImageBuilderResultTypeDef](./type_defs.md#startimagebuilderresulttypedef).
 
 ### stop_fleet
 
@@ -1021,7 +1029,7 @@ Boto3 documentation:
 [AppStream.Client.stop_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.stop_fleet)
 
 Arguments mapping described in
-[StopFleetRequestTypeDef](./type_defs.md#stopfleetrequesttypedef).
+[StopFleetRequestRequestTypeDef](./type_defs.md#stopfleetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1039,14 +1047,14 @@ Boto3 documentation:
 [AppStream.Client.stop_image_builder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.stop_image_builder)
 
 Arguments mapping described in
-[StopImageBuilderRequestTypeDef](./type_defs.md#stopimagebuilderrequesttypedef).
+[StopImageBuilderRequestRequestTypeDef](./type_defs.md#stopimagebuilderrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[StopImageBuilderResultResponseTypeDef](./type_defs.md#stopimagebuilderresultresponsetypedef).
+[StopImageBuilderResultTypeDef](./type_defs.md#stopimagebuilderresulttypedef).
 
 ### tag_resource
 
@@ -1058,7 +1066,7 @@ Boto3 documentation:
 [AppStream.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1078,7 +1086,7 @@ Boto3 documentation:
 [AppStream.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1098,7 +1106,7 @@ Boto3 documentation:
 [AppStream.Client.update_directory_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_directory_config)
 
 Arguments mapping described in
-[UpdateDirectoryConfigRequestTypeDef](./type_defs.md#updatedirectoryconfigrequesttypedef).
+[UpdateDirectoryConfigRequestRequestTypeDef](./type_defs.md#updatedirectoryconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1108,7 +1116,7 @@ Keyword-only arguments:
   [ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef)
 
 Returns
-[UpdateDirectoryConfigResultResponseTypeDef](./type_defs.md#updatedirectoryconfigresultresponsetypedef).
+[UpdateDirectoryConfigResultTypeDef](./type_defs.md#updatedirectoryconfigresulttypedef).
 
 ### update_fleet
 
@@ -1120,7 +1128,7 @@ Boto3 documentation:
 [AppStream.Client.update_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_fleet)
 
 Arguments mapping described in
-[UpdateFleetRequestTypeDef](./type_defs.md#updatefleetrequesttypedef).
+[UpdateFleetRequestRequestTypeDef](./type_defs.md#updatefleetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1145,8 +1153,7 @@ Keyword-only arguments:
 - `IamRoleArn`: `str`
 - `StreamView`: [StreamViewType](./literals.md#streamviewtype)
 
-Returns
-[UpdateFleetResultResponseTypeDef](./type_defs.md#updatefleetresultresponsetypedef).
+Returns [UpdateFleetResultTypeDef](./type_defs.md#updatefleetresulttypedef).
 
 ### update_image_permissions
 
@@ -1159,7 +1166,7 @@ Boto3 documentation:
 [AppStream.Client.update_image_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_image_permissions)
 
 Arguments mapping described in
-[UpdateImagePermissionsRequestTypeDef](./type_defs.md#updateimagepermissionsrequesttypedef).
+[UpdateImagePermissionsRequestRequestTypeDef](./type_defs.md#updateimagepermissionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1181,7 +1188,7 @@ Boto3 documentation:
 [AppStream.Client.update_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_stack)
 
 Arguments mapping described in
-[UpdateStackRequestTypeDef](./type_defs.md#updatestackrequesttypedef).
+[UpdateStackRequestRequestTypeDef](./type_defs.md#updatestackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1203,8 +1210,7 @@ Keyword-only arguments:
   `List`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
 - `EmbedHostDomains`: `List`\[`str`\]
 
-Returns
-[UpdateStackResultResponseTypeDef](./type_defs.md#updatestackresultresponsetypedef).
+Returns [UpdateStackResultTypeDef](./type_defs.md#updatestackresulttypedef).
 
 ### get_paginator
 

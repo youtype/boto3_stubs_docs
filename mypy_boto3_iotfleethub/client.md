@@ -11,6 +11,7 @@ type annotations stubs module
   - [IoTFleetHubClient](#iotfleethubclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_application](#create_application)
     - [delete_application](#delete_application)
@@ -63,6 +64,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+IoTFleetHubClient exceptions.
+
+Type annotations for `boto3.client("iotfleethub").exceptions` method.
+
+Boto3 documentation:
+[IoTFleetHub.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -88,7 +100,7 @@ Boto3 documentation:
 [IoTFleetHub.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.create_application)
 
 Arguments mapping described in
-[CreateApplicationRequestTypeDef](./type_defs.md#createapplicationrequesttypedef).
+[CreateApplicationRequestRequestTypeDef](./type_defs.md#createapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -99,7 +111,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateApplicationResponseResponseTypeDef](./type_defs.md#createapplicationresponseresponsetypedef).
+[CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
 
 ### delete_application
 
@@ -111,7 +123,7 @@ Boto3 documentation:
 [IoTFleetHub.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.delete_application)
 
 Arguments mapping described in
-[DeleteApplicationRequestTypeDef](./type_defs.md#deleteapplicationrequesttypedef).
+[DeleteApplicationRequestRequestTypeDef](./type_defs.md#deleteapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -131,14 +143,14 @@ Boto3 documentation:
 [IoTFleetHub.Client.describe_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.describe_application)
 
 Arguments mapping described in
-[DescribeApplicationRequestTypeDef](./type_defs.md#describeapplicationrequesttypedef).
+[DescribeApplicationRequestRequestTypeDef](./type_defs.md#describeapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `applicationId`: `str` *(required)*
 
 Returns
-[DescribeApplicationResponseResponseTypeDef](./type_defs.md#describeapplicationresponseresponsetypedef).
+[DescribeApplicationResponseTypeDef](./type_defs.md#describeapplicationresponsetypedef).
 
 ### generate_presigned_url
 
@@ -170,14 +182,14 @@ Boto3 documentation:
 [IoTFleetHub.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.list_applications)
 
 Arguments mapping described in
-[ListApplicationsRequestTypeDef](./type_defs.md#listapplicationsrequesttypedef).
+[ListApplicationsRequestRequestTypeDef](./type_defs.md#listapplicationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `nextToken`: `str`
 
 Returns
-[ListApplicationsResponseResponseTypeDef](./type_defs.md#listapplicationsresponseresponsetypedef).
+[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -190,14 +202,14 @@ Boto3 documentation:
 [IoTFleetHub.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -209,7 +221,7 @@ Boto3 documentation:
 [IoTFleetHub.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -228,7 +240,7 @@ Boto3 documentation:
 [IoTFleetHub.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -248,7 +260,7 @@ Boto3 documentation:
 [IoTFleetHub.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.update_application)
 
 Arguments mapping described in
-[UpdateApplicationRequestTypeDef](./type_defs.md#updateapplicationrequesttypedef).
+[UpdateApplicationRequestRequestTypeDef](./type_defs.md#updateapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 

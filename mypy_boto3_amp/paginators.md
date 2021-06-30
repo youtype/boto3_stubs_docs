@@ -33,4 +33,4 @@ Arguments for `ListWorkspacesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListWorkspacesPaginator.paginate` returns
-`Iterator`\[[ListWorkspacesResponseResponseTypeDef](./type_defs.md#listworkspacesresponseresponsetypedef)\].
+`Iterator`\[[ListWorkspacesResponseTypeDef](./type_defs.md#listworkspacesresponsetypedef)\].

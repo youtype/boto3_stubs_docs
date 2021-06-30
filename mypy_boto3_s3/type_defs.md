@@ -9,9 +9,9 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 S3 module](#typed-dictionaries-for-boto3-s3-module)
   - [AbortIncompleteMultipartUploadTypeDef](#abortincompletemultipartuploadtypedef)
-  - [AbortMultipartUploadOutputResponseTypeDef](#abortmultipartuploadoutputresponsetypedef)
+  - [AbortMultipartUploadOutputTypeDef](#abortmultipartuploadoutputtypedef)
   - [AbortMultipartUploadRequestMultipartUploadTypeDef](#abortmultipartuploadrequestmultipartuploadtypedef)
-  - [AbortMultipartUploadRequestTypeDef](#abortmultipartuploadrequesttypedef)
+  - [AbortMultipartUploadRequestRequestTypeDef](#abortmultipartuploadrequestrequesttypedef)
   - [AccelerateConfigurationTypeDef](#accelerateconfigurationtypedef)
   - [AccessControlPolicyTypeDef](#accesscontrolpolicytypedef)
   - [AccessControlTranslationTypeDef](#accesscontroltranslationtypedef)
@@ -41,62 +41,62 @@ type annotations stubs module
   - [ClientUploadFileobjRequestTypeDef](#clientuploadfileobjrequesttypedef)
   - [CloudFunctionConfigurationTypeDef](#cloudfunctionconfigurationtypedef)
   - [CommonPrefixTypeDef](#commonprefixtypedef)
-  - [CompleteMultipartUploadOutputResponseTypeDef](#completemultipartuploadoutputresponsetypedef)
+  - [CompleteMultipartUploadOutputTypeDef](#completemultipartuploadoutputtypedef)
   - [CompleteMultipartUploadRequestMultipartUploadTypeDef](#completemultipartuploadrequestmultipartuploadtypedef)
-  - [CompleteMultipartUploadRequestTypeDef](#completemultipartuploadrequesttypedef)
+  - [CompleteMultipartUploadRequestRequestTypeDef](#completemultipartuploadrequestrequesttypedef)
   - [CompletedMultipartUploadTypeDef](#completedmultipartuploadtypedef)
   - [CompletedPartTypeDef](#completedparttypedef)
   - [ConditionTypeDef](#conditiontypedef)
-  - [CopyObjectOutputResponseTypeDef](#copyobjectoutputresponsetypedef)
+  - [CopyObjectOutputTypeDef](#copyobjectoutputtypedef)
   - [CopyObjectRequestObjectSummaryTypeDef](#copyobjectrequestobjectsummarytypedef)
   - [CopyObjectRequestObjectTypeDef](#copyobjectrequestobjecttypedef)
-  - [CopyObjectRequestTypeDef](#copyobjectrequesttypedef)
+  - [CopyObjectRequestRequestTypeDef](#copyobjectrequestrequesttypedef)
   - [CopyObjectResultTypeDef](#copyobjectresulttypedef)
   - [CopyPartResultTypeDef](#copypartresulttypedef)
   - [CopySourceTypeDef](#copysourcetypedef)
   - [CreateBucketConfigurationTypeDef](#createbucketconfigurationtypedef)
-  - [CreateBucketOutputResponseTypeDef](#createbucketoutputresponsetypedef)
+  - [CreateBucketOutputTypeDef](#createbucketoutputtypedef)
   - [CreateBucketRequestBucketTypeDef](#createbucketrequestbuckettypedef)
+  - [CreateBucketRequestRequestTypeDef](#createbucketrequestrequesttypedef)
   - [CreateBucketRequestServiceResourceTypeDef](#createbucketrequestserviceresourcetypedef)
-  - [CreateBucketRequestTypeDef](#createbucketrequesttypedef)
-  - [CreateMultipartUploadOutputResponseTypeDef](#createmultipartuploadoutputresponsetypedef)
+  - [CreateMultipartUploadOutputTypeDef](#createmultipartuploadoutputtypedef)
   - [CreateMultipartUploadRequestObjectSummaryTypeDef](#createmultipartuploadrequestobjectsummarytypedef)
   - [CreateMultipartUploadRequestObjectTypeDef](#createmultipartuploadrequestobjecttypedef)
-  - [CreateMultipartUploadRequestTypeDef](#createmultipartuploadrequesttypedef)
+  - [CreateMultipartUploadRequestRequestTypeDef](#createmultipartuploadrequestrequesttypedef)
   - [DefaultRetentionTypeDef](#defaultretentiontypedef)
-  - [DeleteBucketAnalyticsConfigurationRequestTypeDef](#deletebucketanalyticsconfigurationrequesttypedef)
+  - [DeleteBucketAnalyticsConfigurationRequestRequestTypeDef](#deletebucketanalyticsconfigurationrequestrequesttypedef)
   - [DeleteBucketCorsRequestBucketCorsTypeDef](#deletebucketcorsrequestbucketcorstypedef)
-  - [DeleteBucketCorsRequestTypeDef](#deletebucketcorsrequesttypedef)
-  - [DeleteBucketEncryptionRequestTypeDef](#deletebucketencryptionrequesttypedef)
-  - [DeleteBucketIntelligentTieringConfigurationRequestTypeDef](#deletebucketintelligenttieringconfigurationrequesttypedef)
-  - [DeleteBucketInventoryConfigurationRequestTypeDef](#deletebucketinventoryconfigurationrequesttypedef)
+  - [DeleteBucketCorsRequestRequestTypeDef](#deletebucketcorsrequestrequesttypedef)
+  - [DeleteBucketEncryptionRequestRequestTypeDef](#deletebucketencryptionrequestrequesttypedef)
+  - [DeleteBucketIntelligentTieringConfigurationRequestRequestTypeDef](#deletebucketintelligenttieringconfigurationrequestrequesttypedef)
+  - [DeleteBucketInventoryConfigurationRequestRequestTypeDef](#deletebucketinventoryconfigurationrequestrequesttypedef)
   - [DeleteBucketLifecycleRequestBucketLifecycleConfigurationTypeDef](#deletebucketlifecyclerequestbucketlifecycleconfigurationtypedef)
   - [DeleteBucketLifecycleRequestBucketLifecycleTypeDef](#deletebucketlifecyclerequestbucketlifecycletypedef)
-  - [DeleteBucketLifecycleRequestTypeDef](#deletebucketlifecyclerequesttypedef)
-  - [DeleteBucketMetricsConfigurationRequestTypeDef](#deletebucketmetricsconfigurationrequesttypedef)
-  - [DeleteBucketOwnershipControlsRequestTypeDef](#deletebucketownershipcontrolsrequesttypedef)
+  - [DeleteBucketLifecycleRequestRequestTypeDef](#deletebucketlifecyclerequestrequesttypedef)
+  - [DeleteBucketMetricsConfigurationRequestRequestTypeDef](#deletebucketmetricsconfigurationrequestrequesttypedef)
+  - [DeleteBucketOwnershipControlsRequestRequestTypeDef](#deletebucketownershipcontrolsrequestrequesttypedef)
   - [DeleteBucketPolicyRequestBucketPolicyTypeDef](#deletebucketpolicyrequestbucketpolicytypedef)
-  - [DeleteBucketPolicyRequestTypeDef](#deletebucketpolicyrequesttypedef)
-  - [DeleteBucketReplicationRequestTypeDef](#deletebucketreplicationrequesttypedef)
+  - [DeleteBucketPolicyRequestRequestTypeDef](#deletebucketpolicyrequestrequesttypedef)
+  - [DeleteBucketReplicationRequestRequestTypeDef](#deletebucketreplicationrequestrequesttypedef)
   - [DeleteBucketRequestBucketTypeDef](#deletebucketrequestbuckettypedef)
-  - [DeleteBucketRequestTypeDef](#deletebucketrequesttypedef)
+  - [DeleteBucketRequestRequestTypeDef](#deletebucketrequestrequesttypedef)
   - [DeleteBucketTaggingRequestBucketTaggingTypeDef](#deletebuckettaggingrequestbuckettaggingtypedef)
-  - [DeleteBucketTaggingRequestTypeDef](#deletebuckettaggingrequesttypedef)
+  - [DeleteBucketTaggingRequestRequestTypeDef](#deletebuckettaggingrequestrequesttypedef)
   - [DeleteBucketWebsiteRequestBucketWebsiteTypeDef](#deletebucketwebsiterequestbucketwebsitetypedef)
-  - [DeleteBucketWebsiteRequestTypeDef](#deletebucketwebsiterequesttypedef)
+  - [DeleteBucketWebsiteRequestRequestTypeDef](#deletebucketwebsiterequestrequesttypedef)
   - [DeleteMarkerEntryTypeDef](#deletemarkerentrytypedef)
   - [DeleteMarkerReplicationTypeDef](#deletemarkerreplicationtypedef)
-  - [DeleteObjectOutputResponseTypeDef](#deleteobjectoutputresponsetypedef)
+  - [DeleteObjectOutputTypeDef](#deleteobjectoutputtypedef)
   - [DeleteObjectRequestObjectSummaryTypeDef](#deleteobjectrequestobjectsummarytypedef)
   - [DeleteObjectRequestObjectTypeDef](#deleteobjectrequestobjecttypedef)
   - [DeleteObjectRequestObjectVersionTypeDef](#deleteobjectrequestobjectversiontypedef)
-  - [DeleteObjectRequestTypeDef](#deleteobjectrequesttypedef)
-  - [DeleteObjectTaggingOutputResponseTypeDef](#deleteobjecttaggingoutputresponsetypedef)
-  - [DeleteObjectTaggingRequestTypeDef](#deleteobjecttaggingrequesttypedef)
-  - [DeleteObjectsOutputResponseTypeDef](#deleteobjectsoutputresponsetypedef)
+  - [DeleteObjectRequestRequestTypeDef](#deleteobjectrequestrequesttypedef)
+  - [DeleteObjectTaggingOutputTypeDef](#deleteobjecttaggingoutputtypedef)
+  - [DeleteObjectTaggingRequestRequestTypeDef](#deleteobjecttaggingrequestrequesttypedef)
+  - [DeleteObjectsOutputTypeDef](#deleteobjectsoutputtypedef)
   - [DeleteObjectsRequestBucketTypeDef](#deleteobjectsrequestbuckettypedef)
-  - [DeleteObjectsRequestTypeDef](#deleteobjectsrequesttypedef)
-  - [DeletePublicAccessBlockRequestTypeDef](#deletepublicaccessblockrequesttypedef)
+  - [DeleteObjectsRequestRequestTypeDef](#deleteobjectsrequestrequesttypedef)
+  - [DeletePublicAccessBlockRequestRequestTypeDef](#deletepublicaccessblockrequestrequesttypedef)
   - [DeleteTypeDef](#deletetypedef)
   - [DeletedObjectTypeDef](#deletedobjecttypedef)
   - [DestinationTypeDef](#destinationtypedef)
@@ -106,73 +106,73 @@ type annotations stubs module
   - [ErrorTypeDef](#errortypedef)
   - [ExistingObjectReplicationTypeDef](#existingobjectreplicationtypedef)
   - [FilterRuleTypeDef](#filterruletypedef)
-  - [GetBucketAccelerateConfigurationOutputResponseTypeDef](#getbucketaccelerateconfigurationoutputresponsetypedef)
-  - [GetBucketAccelerateConfigurationRequestTypeDef](#getbucketaccelerateconfigurationrequesttypedef)
-  - [GetBucketAclOutputResponseTypeDef](#getbucketacloutputresponsetypedef)
-  - [GetBucketAclRequestTypeDef](#getbucketaclrequesttypedef)
-  - [GetBucketAnalyticsConfigurationOutputResponseTypeDef](#getbucketanalyticsconfigurationoutputresponsetypedef)
-  - [GetBucketAnalyticsConfigurationRequestTypeDef](#getbucketanalyticsconfigurationrequesttypedef)
-  - [GetBucketCorsOutputResponseTypeDef](#getbucketcorsoutputresponsetypedef)
-  - [GetBucketCorsRequestTypeDef](#getbucketcorsrequesttypedef)
-  - [GetBucketEncryptionOutputResponseTypeDef](#getbucketencryptionoutputresponsetypedef)
-  - [GetBucketEncryptionRequestTypeDef](#getbucketencryptionrequesttypedef)
-  - [GetBucketIntelligentTieringConfigurationOutputResponseTypeDef](#getbucketintelligenttieringconfigurationoutputresponsetypedef)
-  - [GetBucketIntelligentTieringConfigurationRequestTypeDef](#getbucketintelligenttieringconfigurationrequesttypedef)
-  - [GetBucketInventoryConfigurationOutputResponseTypeDef](#getbucketinventoryconfigurationoutputresponsetypedef)
-  - [GetBucketInventoryConfigurationRequestTypeDef](#getbucketinventoryconfigurationrequesttypedef)
-  - [GetBucketLifecycleConfigurationOutputResponseTypeDef](#getbucketlifecycleconfigurationoutputresponsetypedef)
-  - [GetBucketLifecycleConfigurationRequestTypeDef](#getbucketlifecycleconfigurationrequesttypedef)
-  - [GetBucketLifecycleOutputResponseTypeDef](#getbucketlifecycleoutputresponsetypedef)
-  - [GetBucketLifecycleRequestTypeDef](#getbucketlifecyclerequesttypedef)
-  - [GetBucketLocationOutputResponseTypeDef](#getbucketlocationoutputresponsetypedef)
-  - [GetBucketLocationRequestTypeDef](#getbucketlocationrequesttypedef)
-  - [GetBucketLoggingOutputResponseTypeDef](#getbucketloggingoutputresponsetypedef)
-  - [GetBucketLoggingRequestTypeDef](#getbucketloggingrequesttypedef)
-  - [GetBucketMetricsConfigurationOutputResponseTypeDef](#getbucketmetricsconfigurationoutputresponsetypedef)
-  - [GetBucketMetricsConfigurationRequestTypeDef](#getbucketmetricsconfigurationrequesttypedef)
-  - [GetBucketNotificationConfigurationRequestTypeDef](#getbucketnotificationconfigurationrequesttypedef)
-  - [GetBucketOwnershipControlsOutputResponseTypeDef](#getbucketownershipcontrolsoutputresponsetypedef)
-  - [GetBucketOwnershipControlsRequestTypeDef](#getbucketownershipcontrolsrequesttypedef)
-  - [GetBucketPolicyOutputResponseTypeDef](#getbucketpolicyoutputresponsetypedef)
-  - [GetBucketPolicyRequestTypeDef](#getbucketpolicyrequesttypedef)
-  - [GetBucketPolicyStatusOutputResponseTypeDef](#getbucketpolicystatusoutputresponsetypedef)
-  - [GetBucketPolicyStatusRequestTypeDef](#getbucketpolicystatusrequesttypedef)
-  - [GetBucketReplicationOutputResponseTypeDef](#getbucketreplicationoutputresponsetypedef)
-  - [GetBucketReplicationRequestTypeDef](#getbucketreplicationrequesttypedef)
-  - [GetBucketRequestPaymentOutputResponseTypeDef](#getbucketrequestpaymentoutputresponsetypedef)
-  - [GetBucketRequestPaymentRequestTypeDef](#getbucketrequestpaymentrequesttypedef)
-  - [GetBucketTaggingOutputResponseTypeDef](#getbuckettaggingoutputresponsetypedef)
-  - [GetBucketTaggingRequestTypeDef](#getbuckettaggingrequesttypedef)
-  - [GetBucketVersioningOutputResponseTypeDef](#getbucketversioningoutputresponsetypedef)
-  - [GetBucketVersioningRequestTypeDef](#getbucketversioningrequesttypedef)
-  - [GetBucketWebsiteOutputResponseTypeDef](#getbucketwebsiteoutputresponsetypedef)
-  - [GetBucketWebsiteRequestTypeDef](#getbucketwebsiterequesttypedef)
-  - [GetObjectAclOutputResponseTypeDef](#getobjectacloutputresponsetypedef)
-  - [GetObjectAclRequestTypeDef](#getobjectaclrequesttypedef)
-  - [GetObjectLegalHoldOutputResponseTypeDef](#getobjectlegalholdoutputresponsetypedef)
-  - [GetObjectLegalHoldRequestTypeDef](#getobjectlegalholdrequesttypedef)
-  - [GetObjectLockConfigurationOutputResponseTypeDef](#getobjectlockconfigurationoutputresponsetypedef)
-  - [GetObjectLockConfigurationRequestTypeDef](#getobjectlockconfigurationrequesttypedef)
-  - [GetObjectOutputResponseTypeDef](#getobjectoutputresponsetypedef)
+  - [GetBucketAccelerateConfigurationOutputTypeDef](#getbucketaccelerateconfigurationoutputtypedef)
+  - [GetBucketAccelerateConfigurationRequestRequestTypeDef](#getbucketaccelerateconfigurationrequestrequesttypedef)
+  - [GetBucketAclOutputTypeDef](#getbucketacloutputtypedef)
+  - [GetBucketAclRequestRequestTypeDef](#getbucketaclrequestrequesttypedef)
+  - [GetBucketAnalyticsConfigurationOutputTypeDef](#getbucketanalyticsconfigurationoutputtypedef)
+  - [GetBucketAnalyticsConfigurationRequestRequestTypeDef](#getbucketanalyticsconfigurationrequestrequesttypedef)
+  - [GetBucketCorsOutputTypeDef](#getbucketcorsoutputtypedef)
+  - [GetBucketCorsRequestRequestTypeDef](#getbucketcorsrequestrequesttypedef)
+  - [GetBucketEncryptionOutputTypeDef](#getbucketencryptionoutputtypedef)
+  - [GetBucketEncryptionRequestRequestTypeDef](#getbucketencryptionrequestrequesttypedef)
+  - [GetBucketIntelligentTieringConfigurationOutputTypeDef](#getbucketintelligenttieringconfigurationoutputtypedef)
+  - [GetBucketIntelligentTieringConfigurationRequestRequestTypeDef](#getbucketintelligenttieringconfigurationrequestrequesttypedef)
+  - [GetBucketInventoryConfigurationOutputTypeDef](#getbucketinventoryconfigurationoutputtypedef)
+  - [GetBucketInventoryConfigurationRequestRequestTypeDef](#getbucketinventoryconfigurationrequestrequesttypedef)
+  - [GetBucketLifecycleConfigurationOutputTypeDef](#getbucketlifecycleconfigurationoutputtypedef)
+  - [GetBucketLifecycleConfigurationRequestRequestTypeDef](#getbucketlifecycleconfigurationrequestrequesttypedef)
+  - [GetBucketLifecycleOutputTypeDef](#getbucketlifecycleoutputtypedef)
+  - [GetBucketLifecycleRequestRequestTypeDef](#getbucketlifecyclerequestrequesttypedef)
+  - [GetBucketLocationOutputTypeDef](#getbucketlocationoutputtypedef)
+  - [GetBucketLocationRequestRequestTypeDef](#getbucketlocationrequestrequesttypedef)
+  - [GetBucketLoggingOutputTypeDef](#getbucketloggingoutputtypedef)
+  - [GetBucketLoggingRequestRequestTypeDef](#getbucketloggingrequestrequesttypedef)
+  - [GetBucketMetricsConfigurationOutputTypeDef](#getbucketmetricsconfigurationoutputtypedef)
+  - [GetBucketMetricsConfigurationRequestRequestTypeDef](#getbucketmetricsconfigurationrequestrequesttypedef)
+  - [GetBucketNotificationConfigurationRequestRequestTypeDef](#getbucketnotificationconfigurationrequestrequesttypedef)
+  - [GetBucketOwnershipControlsOutputTypeDef](#getbucketownershipcontrolsoutputtypedef)
+  - [GetBucketOwnershipControlsRequestRequestTypeDef](#getbucketownershipcontrolsrequestrequesttypedef)
+  - [GetBucketPolicyOutputTypeDef](#getbucketpolicyoutputtypedef)
+  - [GetBucketPolicyRequestRequestTypeDef](#getbucketpolicyrequestrequesttypedef)
+  - [GetBucketPolicyStatusOutputTypeDef](#getbucketpolicystatusoutputtypedef)
+  - [GetBucketPolicyStatusRequestRequestTypeDef](#getbucketpolicystatusrequestrequesttypedef)
+  - [GetBucketReplicationOutputTypeDef](#getbucketreplicationoutputtypedef)
+  - [GetBucketReplicationRequestRequestTypeDef](#getbucketreplicationrequestrequesttypedef)
+  - [GetBucketRequestPaymentOutputTypeDef](#getbucketrequestpaymentoutputtypedef)
+  - [GetBucketRequestPaymentRequestRequestTypeDef](#getbucketrequestpaymentrequestrequesttypedef)
+  - [GetBucketTaggingOutputTypeDef](#getbuckettaggingoutputtypedef)
+  - [GetBucketTaggingRequestRequestTypeDef](#getbuckettaggingrequestrequesttypedef)
+  - [GetBucketVersioningOutputTypeDef](#getbucketversioningoutputtypedef)
+  - [GetBucketVersioningRequestRequestTypeDef](#getbucketversioningrequestrequesttypedef)
+  - [GetBucketWebsiteOutputTypeDef](#getbucketwebsiteoutputtypedef)
+  - [GetBucketWebsiteRequestRequestTypeDef](#getbucketwebsiterequestrequesttypedef)
+  - [GetObjectAclOutputTypeDef](#getobjectacloutputtypedef)
+  - [GetObjectAclRequestRequestTypeDef](#getobjectaclrequestrequesttypedef)
+  - [GetObjectLegalHoldOutputTypeDef](#getobjectlegalholdoutputtypedef)
+  - [GetObjectLegalHoldRequestRequestTypeDef](#getobjectlegalholdrequestrequesttypedef)
+  - [GetObjectLockConfigurationOutputTypeDef](#getobjectlockconfigurationoutputtypedef)
+  - [GetObjectLockConfigurationRequestRequestTypeDef](#getobjectlockconfigurationrequestrequesttypedef)
+  - [GetObjectOutputTypeDef](#getobjectoutputtypedef)
   - [GetObjectRequestObjectSummaryTypeDef](#getobjectrequestobjectsummarytypedef)
   - [GetObjectRequestObjectTypeDef](#getobjectrequestobjecttypedef)
   - [GetObjectRequestObjectVersionTypeDef](#getobjectrequestobjectversiontypedef)
-  - [GetObjectRequestTypeDef](#getobjectrequesttypedef)
-  - [GetObjectRetentionOutputResponseTypeDef](#getobjectretentionoutputresponsetypedef)
-  - [GetObjectRetentionRequestTypeDef](#getobjectretentionrequesttypedef)
-  - [GetObjectTaggingOutputResponseTypeDef](#getobjecttaggingoutputresponsetypedef)
-  - [GetObjectTaggingRequestTypeDef](#getobjecttaggingrequesttypedef)
-  - [GetObjectTorrentOutputResponseTypeDef](#getobjecttorrentoutputresponsetypedef)
-  - [GetObjectTorrentRequestTypeDef](#getobjecttorrentrequesttypedef)
-  - [GetPublicAccessBlockOutputResponseTypeDef](#getpublicaccessblockoutputresponsetypedef)
-  - [GetPublicAccessBlockRequestTypeDef](#getpublicaccessblockrequesttypedef)
+  - [GetObjectRequestRequestTypeDef](#getobjectrequestrequesttypedef)
+  - [GetObjectRetentionOutputTypeDef](#getobjectretentionoutputtypedef)
+  - [GetObjectRetentionRequestRequestTypeDef](#getobjectretentionrequestrequesttypedef)
+  - [GetObjectTaggingOutputTypeDef](#getobjecttaggingoutputtypedef)
+  - [GetObjectTaggingRequestRequestTypeDef](#getobjecttaggingrequestrequesttypedef)
+  - [GetObjectTorrentOutputTypeDef](#getobjecttorrentoutputtypedef)
+  - [GetObjectTorrentRequestRequestTypeDef](#getobjecttorrentrequestrequesttypedef)
+  - [GetPublicAccessBlockOutputTypeDef](#getpublicaccessblockoutputtypedef)
+  - [GetPublicAccessBlockRequestRequestTypeDef](#getpublicaccessblockrequestrequesttypedef)
   - [GlacierJobParametersTypeDef](#glacierjobparameterstypedef)
   - [GrantTypeDef](#granttypedef)
   - [GranteeTypeDef](#granteetypedef)
-  - [HeadBucketRequestTypeDef](#headbucketrequesttypedef)
-  - [HeadObjectOutputResponseTypeDef](#headobjectoutputresponsetypedef)
+  - [HeadBucketRequestRequestTypeDef](#headbucketrequestrequesttypedef)
+  - [HeadObjectOutputTypeDef](#headobjectoutputtypedef)
   - [HeadObjectRequestObjectVersionTypeDef](#headobjectrequestobjectversiontypedef)
-  - [HeadObjectRequestTypeDef](#headobjectrequesttypedef)
+  - [HeadObjectRequestRequestTypeDef](#headobjectrequestrequesttypedef)
   - [IndexDocumentTypeDef](#indexdocumenttypedef)
   - [InitiatorTypeDef](#initiatortypedef)
   - [InputSerializationTypeDef](#inputserializationtypedef)
@@ -193,25 +193,25 @@ type annotations stubs module
   - [LifecycleRuleAndOperatorTypeDef](#lifecycleruleandoperatortypedef)
   - [LifecycleRuleFilterTypeDef](#lifecyclerulefiltertypedef)
   - [LifecycleRuleTypeDef](#lifecycleruletypedef)
-  - [ListBucketAnalyticsConfigurationsOutputResponseTypeDef](#listbucketanalyticsconfigurationsoutputresponsetypedef)
-  - [ListBucketAnalyticsConfigurationsRequestTypeDef](#listbucketanalyticsconfigurationsrequesttypedef)
-  - [ListBucketIntelligentTieringConfigurationsOutputResponseTypeDef](#listbucketintelligenttieringconfigurationsoutputresponsetypedef)
-  - [ListBucketIntelligentTieringConfigurationsRequestTypeDef](#listbucketintelligenttieringconfigurationsrequesttypedef)
-  - [ListBucketInventoryConfigurationsOutputResponseTypeDef](#listbucketinventoryconfigurationsoutputresponsetypedef)
-  - [ListBucketInventoryConfigurationsRequestTypeDef](#listbucketinventoryconfigurationsrequesttypedef)
-  - [ListBucketMetricsConfigurationsOutputResponseTypeDef](#listbucketmetricsconfigurationsoutputresponsetypedef)
-  - [ListBucketMetricsConfigurationsRequestTypeDef](#listbucketmetricsconfigurationsrequesttypedef)
-  - [ListBucketsOutputResponseTypeDef](#listbucketsoutputresponsetypedef)
-  - [ListMultipartUploadsOutputResponseTypeDef](#listmultipartuploadsoutputresponsetypedef)
-  - [ListMultipartUploadsRequestTypeDef](#listmultipartuploadsrequesttypedef)
-  - [ListObjectVersionsOutputResponseTypeDef](#listobjectversionsoutputresponsetypedef)
-  - [ListObjectVersionsRequestTypeDef](#listobjectversionsrequesttypedef)
-  - [ListObjectsOutputResponseTypeDef](#listobjectsoutputresponsetypedef)
-  - [ListObjectsRequestTypeDef](#listobjectsrequesttypedef)
-  - [ListObjectsV2OutputResponseTypeDef](#listobjectsv2outputresponsetypedef)
-  - [ListObjectsV2RequestTypeDef](#listobjectsv2requesttypedef)
-  - [ListPartsOutputResponseTypeDef](#listpartsoutputresponsetypedef)
-  - [ListPartsRequestTypeDef](#listpartsrequesttypedef)
+  - [ListBucketAnalyticsConfigurationsOutputTypeDef](#listbucketanalyticsconfigurationsoutputtypedef)
+  - [ListBucketAnalyticsConfigurationsRequestRequestTypeDef](#listbucketanalyticsconfigurationsrequestrequesttypedef)
+  - [ListBucketIntelligentTieringConfigurationsOutputTypeDef](#listbucketintelligenttieringconfigurationsoutputtypedef)
+  - [ListBucketIntelligentTieringConfigurationsRequestRequestTypeDef](#listbucketintelligenttieringconfigurationsrequestrequesttypedef)
+  - [ListBucketInventoryConfigurationsOutputTypeDef](#listbucketinventoryconfigurationsoutputtypedef)
+  - [ListBucketInventoryConfigurationsRequestRequestTypeDef](#listbucketinventoryconfigurationsrequestrequesttypedef)
+  - [ListBucketMetricsConfigurationsOutputTypeDef](#listbucketmetricsconfigurationsoutputtypedef)
+  - [ListBucketMetricsConfigurationsRequestRequestTypeDef](#listbucketmetricsconfigurationsrequestrequesttypedef)
+  - [ListBucketsOutputTypeDef](#listbucketsoutputtypedef)
+  - [ListMultipartUploadsOutputTypeDef](#listmultipartuploadsoutputtypedef)
+  - [ListMultipartUploadsRequestRequestTypeDef](#listmultipartuploadsrequestrequesttypedef)
+  - [ListObjectVersionsOutputTypeDef](#listobjectversionsoutputtypedef)
+  - [ListObjectVersionsRequestRequestTypeDef](#listobjectversionsrequestrequesttypedef)
+  - [ListObjectsOutputTypeDef](#listobjectsoutputtypedef)
+  - [ListObjectsRequestRequestTypeDef](#listobjectsrequestrequesttypedef)
+  - [ListObjectsV2OutputTypeDef](#listobjectsv2outputtypedef)
+  - [ListObjectsV2RequestRequestTypeDef](#listobjectsv2requestrequesttypedef)
+  - [ListPartsOutputTypeDef](#listpartsoutputtypedef)
+  - [ListPartsRequestRequestTypeDef](#listpartsrequestrequesttypedef)
   - [LoggingEnabledTypeDef](#loggingenabledtypedef)
   - [MetadataEntryTypeDef](#metadataentrytypedef)
   - [MetricsAndOperatorTypeDef](#metricsandoperatortypedef)
@@ -222,9 +222,11 @@ type annotations stubs module
   - [MultipartUploadTypeDef](#multipartuploadtypedef)
   - [NoncurrentVersionExpirationTypeDef](#noncurrentversionexpirationtypedef)
   - [NoncurrentVersionTransitionTypeDef](#noncurrentversiontransitiontypedef)
-  - [NotificationConfigurationDeprecatedResponseTypeDef](#notificationconfigurationdeprecatedresponsetypedef)
+  - [NotificationConfigurationDeprecatedResponseMetadataTypeDef](#notificationconfigurationdeprecatedresponsemetadatatypedef)
+  - [NotificationConfigurationDeprecatedTypeDef](#notificationconfigurationdeprecatedtypedef)
   - [NotificationConfigurationFilterTypeDef](#notificationconfigurationfiltertypedef)
-  - [NotificationConfigurationResponseTypeDef](#notificationconfigurationresponsetypedef)
+  - [NotificationConfigurationResponseMetadataTypeDef](#notificationconfigurationresponsemetadatatypedef)
+  - [NotificationConfigurationTypeDef](#notificationconfigurationtypedef)
   - [ObjectCopyRequestTypeDef](#objectcopyrequesttypedef)
   - [ObjectDownloadFileRequestTypeDef](#objectdownloadfilerequesttypedef)
   - [ObjectDownloadFileobjRequestTypeDef](#objectdownloadfileobjrequesttypedef)
@@ -252,54 +254,54 @@ type annotations stubs module
   - [ProgressEventTypeDef](#progresseventtypedef)
   - [ProgressTypeDef](#progresstypedef)
   - [PublicAccessBlockConfigurationTypeDef](#publicaccessblockconfigurationtypedef)
-  - [PutBucketAccelerateConfigurationRequestTypeDef](#putbucketaccelerateconfigurationrequesttypedef)
+  - [PutBucketAccelerateConfigurationRequestRequestTypeDef](#putbucketaccelerateconfigurationrequestrequesttypedef)
   - [PutBucketAclRequestBucketAclTypeDef](#putbucketaclrequestbucketacltypedef)
-  - [PutBucketAclRequestTypeDef](#putbucketaclrequesttypedef)
-  - [PutBucketAnalyticsConfigurationRequestTypeDef](#putbucketanalyticsconfigurationrequesttypedef)
+  - [PutBucketAclRequestRequestTypeDef](#putbucketaclrequestrequesttypedef)
+  - [PutBucketAnalyticsConfigurationRequestRequestTypeDef](#putbucketanalyticsconfigurationrequestrequesttypedef)
   - [PutBucketCorsRequestBucketCorsTypeDef](#putbucketcorsrequestbucketcorstypedef)
-  - [PutBucketCorsRequestTypeDef](#putbucketcorsrequesttypedef)
-  - [PutBucketEncryptionRequestTypeDef](#putbucketencryptionrequesttypedef)
-  - [PutBucketIntelligentTieringConfigurationRequestTypeDef](#putbucketintelligenttieringconfigurationrequesttypedef)
-  - [PutBucketInventoryConfigurationRequestTypeDef](#putbucketinventoryconfigurationrequesttypedef)
+  - [PutBucketCorsRequestRequestTypeDef](#putbucketcorsrequestrequesttypedef)
+  - [PutBucketEncryptionRequestRequestTypeDef](#putbucketencryptionrequestrequesttypedef)
+  - [PutBucketIntelligentTieringConfigurationRequestRequestTypeDef](#putbucketintelligenttieringconfigurationrequestrequesttypedef)
+  - [PutBucketInventoryConfigurationRequestRequestTypeDef](#putbucketinventoryconfigurationrequestrequesttypedef)
   - [PutBucketLifecycleConfigurationRequestBucketLifecycleConfigurationTypeDef](#putbucketlifecycleconfigurationrequestbucketlifecycleconfigurationtypedef)
-  - [PutBucketLifecycleConfigurationRequestTypeDef](#putbucketlifecycleconfigurationrequesttypedef)
+  - [PutBucketLifecycleConfigurationRequestRequestTypeDef](#putbucketlifecycleconfigurationrequestrequesttypedef)
   - [PutBucketLifecycleRequestBucketLifecycleTypeDef](#putbucketlifecyclerequestbucketlifecycletypedef)
-  - [PutBucketLifecycleRequestTypeDef](#putbucketlifecyclerequesttypedef)
+  - [PutBucketLifecycleRequestRequestTypeDef](#putbucketlifecyclerequestrequesttypedef)
   - [PutBucketLoggingRequestBucketLoggingTypeDef](#putbucketloggingrequestbucketloggingtypedef)
-  - [PutBucketLoggingRequestTypeDef](#putbucketloggingrequesttypedef)
-  - [PutBucketMetricsConfigurationRequestTypeDef](#putbucketmetricsconfigurationrequesttypedef)
+  - [PutBucketLoggingRequestRequestTypeDef](#putbucketloggingrequestrequesttypedef)
+  - [PutBucketMetricsConfigurationRequestRequestTypeDef](#putbucketmetricsconfigurationrequestrequesttypedef)
   - [PutBucketNotificationConfigurationRequestBucketNotificationTypeDef](#putbucketnotificationconfigurationrequestbucketnotificationtypedef)
-  - [PutBucketNotificationConfigurationRequestTypeDef](#putbucketnotificationconfigurationrequesttypedef)
-  - [PutBucketNotificationRequestTypeDef](#putbucketnotificationrequesttypedef)
-  - [PutBucketOwnershipControlsRequestTypeDef](#putbucketownershipcontrolsrequesttypedef)
+  - [PutBucketNotificationConfigurationRequestRequestTypeDef](#putbucketnotificationconfigurationrequestrequesttypedef)
+  - [PutBucketNotificationRequestRequestTypeDef](#putbucketnotificationrequestrequesttypedef)
+  - [PutBucketOwnershipControlsRequestRequestTypeDef](#putbucketownershipcontrolsrequestrequesttypedef)
   - [PutBucketPolicyRequestBucketPolicyTypeDef](#putbucketpolicyrequestbucketpolicytypedef)
-  - [PutBucketPolicyRequestTypeDef](#putbucketpolicyrequesttypedef)
-  - [PutBucketReplicationRequestTypeDef](#putbucketreplicationrequesttypedef)
+  - [PutBucketPolicyRequestRequestTypeDef](#putbucketpolicyrequestrequesttypedef)
+  - [PutBucketReplicationRequestRequestTypeDef](#putbucketreplicationrequestrequesttypedef)
   - [PutBucketRequestPaymentRequestBucketRequestPaymentTypeDef](#putbucketrequestpaymentrequestbucketrequestpaymenttypedef)
-  - [PutBucketRequestPaymentRequestTypeDef](#putbucketrequestpaymentrequesttypedef)
+  - [PutBucketRequestPaymentRequestRequestTypeDef](#putbucketrequestpaymentrequestrequesttypedef)
   - [PutBucketTaggingRequestBucketTaggingTypeDef](#putbuckettaggingrequestbuckettaggingtypedef)
-  - [PutBucketTaggingRequestTypeDef](#putbuckettaggingrequesttypedef)
+  - [PutBucketTaggingRequestRequestTypeDef](#putbuckettaggingrequestrequesttypedef)
   - [PutBucketVersioningRequestBucketVersioningTypeDef](#putbucketversioningrequestbucketversioningtypedef)
-  - [PutBucketVersioningRequestTypeDef](#putbucketversioningrequesttypedef)
+  - [PutBucketVersioningRequestRequestTypeDef](#putbucketversioningrequestrequesttypedef)
   - [PutBucketWebsiteRequestBucketWebsiteTypeDef](#putbucketwebsiterequestbucketwebsitetypedef)
-  - [PutBucketWebsiteRequestTypeDef](#putbucketwebsiterequesttypedef)
-  - [PutObjectAclOutputResponseTypeDef](#putobjectacloutputresponsetypedef)
+  - [PutBucketWebsiteRequestRequestTypeDef](#putbucketwebsiterequestrequesttypedef)
+  - [PutObjectAclOutputTypeDef](#putobjectacloutputtypedef)
   - [PutObjectAclRequestObjectAclTypeDef](#putobjectaclrequestobjectacltypedef)
-  - [PutObjectAclRequestTypeDef](#putobjectaclrequesttypedef)
-  - [PutObjectLegalHoldOutputResponseTypeDef](#putobjectlegalholdoutputresponsetypedef)
-  - [PutObjectLegalHoldRequestTypeDef](#putobjectlegalholdrequesttypedef)
-  - [PutObjectLockConfigurationOutputResponseTypeDef](#putobjectlockconfigurationoutputresponsetypedef)
-  - [PutObjectLockConfigurationRequestTypeDef](#putobjectlockconfigurationrequesttypedef)
-  - [PutObjectOutputResponseTypeDef](#putobjectoutputresponsetypedef)
+  - [PutObjectAclRequestRequestTypeDef](#putobjectaclrequestrequesttypedef)
+  - [PutObjectLegalHoldOutputTypeDef](#putobjectlegalholdoutputtypedef)
+  - [PutObjectLegalHoldRequestRequestTypeDef](#putobjectlegalholdrequestrequesttypedef)
+  - [PutObjectLockConfigurationOutputTypeDef](#putobjectlockconfigurationoutputtypedef)
+  - [PutObjectLockConfigurationRequestRequestTypeDef](#putobjectlockconfigurationrequestrequesttypedef)
+  - [PutObjectOutputTypeDef](#putobjectoutputtypedef)
   - [PutObjectRequestBucketTypeDef](#putobjectrequestbuckettypedef)
   - [PutObjectRequestObjectSummaryTypeDef](#putobjectrequestobjectsummarytypedef)
   - [PutObjectRequestObjectTypeDef](#putobjectrequestobjecttypedef)
-  - [PutObjectRequestTypeDef](#putobjectrequesttypedef)
-  - [PutObjectRetentionOutputResponseTypeDef](#putobjectretentionoutputresponsetypedef)
-  - [PutObjectRetentionRequestTypeDef](#putobjectretentionrequesttypedef)
-  - [PutObjectTaggingOutputResponseTypeDef](#putobjecttaggingoutputresponsetypedef)
-  - [PutObjectTaggingRequestTypeDef](#putobjecttaggingrequesttypedef)
-  - [PutPublicAccessBlockRequestTypeDef](#putpublicaccessblockrequesttypedef)
+  - [PutObjectRequestRequestTypeDef](#putobjectrequestrequesttypedef)
+  - [PutObjectRetentionOutputTypeDef](#putobjectretentionoutputtypedef)
+  - [PutObjectRetentionRequestRequestTypeDef](#putobjectretentionrequestrequesttypedef)
+  - [PutObjectTaggingOutputTypeDef](#putobjecttaggingoutputtypedef)
+  - [PutObjectTaggingRequestRequestTypeDef](#putobjecttaggingrequestrequesttypedef)
+  - [PutPublicAccessBlockRequestRequestTypeDef](#putpublicaccessblockrequestrequesttypedef)
   - [QueueConfigurationDeprecatedTypeDef](#queueconfigurationdeprecatedtypedef)
   - [QueueConfigurationTypeDef](#queueconfigurationtypedef)
   - [RecordsEventTypeDef](#recordseventtypedef)
@@ -315,10 +317,10 @@ type annotations stubs module
   - [RequestPaymentConfigurationTypeDef](#requestpaymentconfigurationtypedef)
   - [RequestProgressTypeDef](#requestprogresstypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestoreObjectOutputResponseTypeDef](#restoreobjectoutputresponsetypedef)
+  - [RestoreObjectOutputTypeDef](#restoreobjectoutputtypedef)
   - [RestoreObjectRequestObjectSummaryTypeDef](#restoreobjectrequestobjectsummarytypedef)
   - [RestoreObjectRequestObjectTypeDef](#restoreobjectrequestobjecttypedef)
-  - [RestoreObjectRequestTypeDef](#restoreobjectrequesttypedef)
+  - [RestoreObjectRequestRequestTypeDef](#restoreobjectrequestrequesttypedef)
   - [RestoreRequestTypeDef](#restorerequesttypedef)
   - [RoutingRuleTypeDef](#routingruletypedef)
   - [RuleTypeDef](#ruletypedef)
@@ -327,8 +329,8 @@ type annotations stubs module
   - [SSEKMSTypeDef](#ssekmstypedef)
   - [ScanRangeTypeDef](#scanrangetypedef)
   - [SelectObjectContentEventStreamTypeDef](#selectobjectcontenteventstreamtypedef)
-  - [SelectObjectContentOutputResponseTypeDef](#selectobjectcontentoutputresponsetypedef)
-  - [SelectObjectContentRequestTypeDef](#selectobjectcontentrequesttypedef)
+  - [SelectObjectContentOutputTypeDef](#selectobjectcontentoutputtypedef)
+  - [SelectObjectContentRequestRequestTypeDef](#selectobjectcontentrequestrequesttypedef)
   - [SelectParametersTypeDef](#selectparameterstypedef)
   - [ServerSideEncryptionByDefaultTypeDef](#serversideencryptionbydefaulttypedef)
   - [ServerSideEncryptionConfigurationTypeDef](#serversideencryptionconfigurationtypedef)
@@ -364,16 +366,16 @@ type annotations stubs module
   - [TopicConfigurationDeprecatedTypeDef](#topicconfigurationdeprecatedtypedef)
   - [TopicConfigurationTypeDef](#topicconfigurationtypedef)
   - [TransitionTypeDef](#transitiontypedef)
-  - [UploadPartCopyOutputResponseTypeDef](#uploadpartcopyoutputresponsetypedef)
+  - [UploadPartCopyOutputTypeDef](#uploadpartcopyoutputtypedef)
   - [UploadPartCopyRequestMultipartUploadPartTypeDef](#uploadpartcopyrequestmultipartuploadparttypedef)
-  - [UploadPartCopyRequestTypeDef](#uploadpartcopyrequesttypedef)
-  - [UploadPartOutputResponseTypeDef](#uploadpartoutputresponsetypedef)
+  - [UploadPartCopyRequestRequestTypeDef](#uploadpartcopyrequestrequesttypedef)
+  - [UploadPartOutputTypeDef](#uploadpartoutputtypedef)
   - [UploadPartRequestMultipartUploadPartTypeDef](#uploadpartrequestmultipartuploadparttypedef)
-  - [UploadPartRequestTypeDef](#uploadpartrequesttypedef)
+  - [UploadPartRequestRequestTypeDef](#uploadpartrequestrequesttypedef)
   - [VersioningConfigurationTypeDef](#versioningconfigurationtypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
   - [WebsiteConfigurationTypeDef](#websiteconfigurationtypedef)
-  - [WriteGetObjectResponseRequestTypeDef](#writegetobjectresponserequesttypedef)
+  - [WriteGetObjectResponseRequestRequestTypeDef](#writegetobjectresponserequestrequesttypedef)
 
 ## AbortIncompleteMultipartUploadTypeDef
 
@@ -385,10 +387,10 @@ Optional fields:
 
 - `DaysAfterInitiation`: `int`
 
-## AbortMultipartUploadOutputResponseTypeDef
+## AbortMultipartUploadOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import AbortMultipartUploadOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import AbortMultipartUploadOutputTypeDef
 ```
 
 Required fields:
@@ -410,10 +412,10 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
-## AbortMultipartUploadRequestTypeDef
+## AbortMultipartUploadRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import AbortMultipartUploadRequestTypeDef
+from mypy_boto3_s3.type_defs import AbortMultipartUploadRequestRequestTypeDef
 ```
 
 Required fields:
@@ -848,10 +850,10 @@ Optional fields:
 
 - `Prefix`: `str`
 
-## CompleteMultipartUploadOutputResponseTypeDef
+## CompleteMultipartUploadOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import CompleteMultipartUploadOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import CompleteMultipartUploadOutputTypeDef
 ```
 
 Required fields:
@@ -885,10 +887,10 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
-## CompleteMultipartUploadRequestTypeDef
+## CompleteMultipartUploadRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import CompleteMultipartUploadRequestTypeDef
+from mypy_boto3_s3.type_defs import CompleteMultipartUploadRequestRequestTypeDef
 ```
 
 Required fields:
@@ -938,10 +940,10 @@ Optional fields:
 - `HttpErrorCodeReturnedEquals`: `str`
 - `KeyPrefixEquals`: `str`
 
-## CopyObjectOutputResponseTypeDef
+## CopyObjectOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import CopyObjectOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import CopyObjectOutputTypeDef
 ```
 
 Required fields:
@@ -1073,10 +1075,10 @@ Optional fields:
 - `ExpectedBucketOwner`: `str`
 - `ExpectedSourceBucketOwner`: `str`
 
-## CopyObjectRequestTypeDef
+## CopyObjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import CopyObjectRequestTypeDef
+from mypy_boto3_s3.type_defs import CopyObjectRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1179,10 +1181,10 @@ Optional fields:
 - `LocationConstraint`:
   [BucketLocationConstraintType](./literals.md#bucketlocationconstrainttype)
 
-## CreateBucketOutputResponseTypeDef
+## CreateBucketOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import CreateBucketOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import CreateBucketOutputTypeDef
 ```
 
 Required fields:
@@ -1196,6 +1198,28 @@ Required fields:
 ```python
 from mypy_boto3_s3.type_defs import CreateBucketRequestBucketTypeDef
 ```
+
+Optional fields:
+
+- `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
+- `CreateBucketConfiguration`:
+  [CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef)
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWrite`: `str`
+- `GrantWriteACP`: `str`
+- `ObjectLockEnabledForBucket`: `bool`
+
+## CreateBucketRequestRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import CreateBucketRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
 
 Optional fields:
 
@@ -1231,32 +1255,10 @@ Optional fields:
 - `GrantWriteACP`: `str`
 - `ObjectLockEnabledForBucket`: `bool`
 
-## CreateBucketRequestTypeDef
+## CreateMultipartUploadOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import CreateBucketRequestTypeDef
-```
-
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
-- `CreateBucketConfiguration`:
-  [CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef)
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWrite`: `str`
-- `GrantWriteACP`: `str`
-- `ObjectLockEnabledForBucket`: `bool`
-
-## CreateMultipartUploadOutputResponseTypeDef
-
-```python
-from mypy_boto3_s3.type_defs import CreateMultipartUploadOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import CreateMultipartUploadOutputTypeDef
 ```
 
 Required fields:
@@ -1356,10 +1358,10 @@ Optional fields:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
 
-## CreateMultipartUploadRequestTypeDef
+## CreateMultipartUploadRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import CreateMultipartUploadRequestTypeDef
+from mypy_boto3_s3.type_defs import CreateMultipartUploadRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1413,10 +1415,10 @@ Optional fields:
 - `Days`: `int`
 - `Years`: `int`
 
-## DeleteBucketAnalyticsConfigurationRequestTypeDef
+## DeleteBucketAnalyticsConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import DeleteBucketAnalyticsConfigurationRequestTypeDef
+from mypy_boto3_s3.type_defs import DeleteBucketAnalyticsConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1438,10 +1440,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## DeleteBucketCorsRequestTypeDef
+## DeleteBucketCorsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import DeleteBucketCorsRequestTypeDef
+from mypy_boto3_s3.type_defs import DeleteBucketCorsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1452,10 +1454,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## DeleteBucketEncryptionRequestTypeDef
+## DeleteBucketEncryptionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import DeleteBucketEncryptionRequestTypeDef
+from mypy_boto3_s3.type_defs import DeleteBucketEncryptionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1466,10 +1468,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## DeleteBucketIntelligentTieringConfigurationRequestTypeDef
+## DeleteBucketIntelligentTieringConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import DeleteBucketIntelligentTieringConfigurationRequestTypeDef
+from mypy_boto3_s3.type_defs import DeleteBucketIntelligentTieringConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1477,10 +1479,10 @@ Required fields:
 - `Bucket`: `str`
 - `Id`: `str`
 
-## DeleteBucketInventoryConfigurationRequestTypeDef
+## DeleteBucketInventoryConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import DeleteBucketInventoryConfigurationRequestTypeDef
+from mypy_boto3_s3.type_defs import DeleteBucketInventoryConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1512,10 +1514,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## DeleteBucketLifecycleRequestTypeDef
+## DeleteBucketLifecycleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import DeleteBucketLifecycleRequestTypeDef
+from mypy_boto3_s3.type_defs import DeleteBucketLifecycleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1526,10 +1528,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## DeleteBucketMetricsConfigurationRequestTypeDef
+## DeleteBucketMetricsConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import DeleteBucketMetricsConfigurationRequestTypeDef
+from mypy_boto3_s3.type_defs import DeleteBucketMetricsConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1541,10 +1543,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## DeleteBucketOwnershipControlsRequestTypeDef
+## DeleteBucketOwnershipControlsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import DeleteBucketOwnershipControlsRequestTypeDef
+from mypy_boto3_s3.type_defs import DeleteBucketOwnershipControlsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1565,10 +1567,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## DeleteBucketPolicyRequestTypeDef
+## DeleteBucketPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import DeleteBucketPolicyRequestTypeDef
+from mypy_boto3_s3.type_defs import DeleteBucketPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1579,10 +1581,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## DeleteBucketReplicationRequestTypeDef
+## DeleteBucketReplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import DeleteBucketReplicationRequestTypeDef
+from mypy_boto3_s3.type_defs import DeleteBucketReplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1603,10 +1605,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## DeleteBucketRequestTypeDef
+## DeleteBucketRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import DeleteBucketRequestTypeDef
+from mypy_boto3_s3.type_defs import DeleteBucketRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1627,10 +1629,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## DeleteBucketTaggingRequestTypeDef
+## DeleteBucketTaggingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import DeleteBucketTaggingRequestTypeDef
+from mypy_boto3_s3.type_defs import DeleteBucketTaggingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1651,10 +1653,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## DeleteBucketWebsiteRequestTypeDef
+## DeleteBucketWebsiteRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import DeleteBucketWebsiteRequestTypeDef
+from mypy_boto3_s3.type_defs import DeleteBucketWebsiteRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1690,10 +1692,10 @@ Optional fields:
 - `Status`:
   [DeleteMarkerReplicationStatusType](./literals.md#deletemarkerreplicationstatustype)
 
-## DeleteObjectOutputResponseTypeDef
+## DeleteObjectOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import DeleteObjectOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import DeleteObjectOutputTypeDef
 ```
 
 Required fields:
@@ -1749,10 +1751,10 @@ Optional fields:
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
 
-## DeleteObjectRequestTypeDef
+## DeleteObjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import DeleteObjectRequestTypeDef
+from mypy_boto3_s3.type_defs import DeleteObjectRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1769,10 +1771,10 @@ Optional fields:
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
 
-## DeleteObjectTaggingOutputResponseTypeDef
+## DeleteObjectTaggingOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import DeleteObjectTaggingOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import DeleteObjectTaggingOutputTypeDef
 ```
 
 Required fields:
@@ -1781,10 +1783,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteObjectTaggingRequestTypeDef
+## DeleteObjectTaggingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import DeleteObjectTaggingRequestTypeDef
+from mypy_boto3_s3.type_defs import DeleteObjectTaggingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1797,10 +1799,10 @@ Optional fields:
 - `VersionId`: `str`
 - `ExpectedBucketOwner`: `str`
 
-## DeleteObjectsOutputResponseTypeDef
+## DeleteObjectsOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import DeleteObjectsOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import DeleteObjectsOutputTypeDef
 ```
 
 Required fields:
@@ -1831,10 +1833,10 @@ Optional fields:
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
 
-## DeleteObjectsRequestTypeDef
+## DeleteObjectsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import DeleteObjectsRequestTypeDef
+from mypy_boto3_s3.type_defs import DeleteObjectsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1850,10 +1852,10 @@ Optional fields:
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
 
-## DeletePublicAccessBlockRequestTypeDef
+## DeletePublicAccessBlockRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import DeletePublicAccessBlockRequestTypeDef
+from mypy_boto3_s3.type_defs import DeletePublicAccessBlockRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1985,10 +1987,10 @@ Optional fields:
 - `Name`: [FilterRuleNameType](./literals.md#filterrulenametype)
 - `Value`: `str`
 
-## GetBucketAccelerateConfigurationOutputResponseTypeDef
+## GetBucketAccelerateConfigurationOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketAccelerateConfigurationOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetBucketAccelerateConfigurationOutputTypeDef
 ```
 
 Required fields:
@@ -1998,10 +2000,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketAccelerateConfigurationRequestTypeDef
+## GetBucketAccelerateConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketAccelerateConfigurationRequestTypeDef
+from mypy_boto3_s3.type_defs import GetBucketAccelerateConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2012,10 +2014,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## GetBucketAclOutputResponseTypeDef
+## GetBucketAclOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketAclOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetBucketAclOutputTypeDef
 ```
 
 Required fields:
@@ -2025,10 +2027,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketAclRequestTypeDef
+## GetBucketAclRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketAclRequestTypeDef
+from mypy_boto3_s3.type_defs import GetBucketAclRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2039,10 +2041,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## GetBucketAnalyticsConfigurationOutputResponseTypeDef
+## GetBucketAnalyticsConfigurationOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketAnalyticsConfigurationOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetBucketAnalyticsConfigurationOutputTypeDef
 ```
 
 Required fields:
@@ -2052,10 +2054,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketAnalyticsConfigurationRequestTypeDef
+## GetBucketAnalyticsConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketAnalyticsConfigurationRequestTypeDef
+from mypy_boto3_s3.type_defs import GetBucketAnalyticsConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2067,10 +2069,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## GetBucketCorsOutputResponseTypeDef
+## GetBucketCorsOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketCorsOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetBucketCorsOutputTypeDef
 ```
 
 Required fields:
@@ -2079,10 +2081,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketCorsRequestTypeDef
+## GetBucketCorsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketCorsRequestTypeDef
+from mypy_boto3_s3.type_defs import GetBucketCorsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2093,10 +2095,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## GetBucketEncryptionOutputResponseTypeDef
+## GetBucketEncryptionOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketEncryptionOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetBucketEncryptionOutputTypeDef
 ```
 
 Required fields:
@@ -2106,10 +2108,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketEncryptionRequestTypeDef
+## GetBucketEncryptionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketEncryptionRequestTypeDef
+from mypy_boto3_s3.type_defs import GetBucketEncryptionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2120,10 +2122,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## GetBucketIntelligentTieringConfigurationOutputResponseTypeDef
+## GetBucketIntelligentTieringConfigurationOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketIntelligentTieringConfigurationOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetBucketIntelligentTieringConfigurationOutputTypeDef
 ```
 
 Required fields:
@@ -2133,10 +2135,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketIntelligentTieringConfigurationRequestTypeDef
+## GetBucketIntelligentTieringConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketIntelligentTieringConfigurationRequestTypeDef
+from mypy_boto3_s3.type_defs import GetBucketIntelligentTieringConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2144,10 +2146,10 @@ Required fields:
 - `Bucket`: `str`
 - `Id`: `str`
 
-## GetBucketInventoryConfigurationOutputResponseTypeDef
+## GetBucketInventoryConfigurationOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketInventoryConfigurationOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetBucketInventoryConfigurationOutputTypeDef
 ```
 
 Required fields:
@@ -2157,10 +2159,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketInventoryConfigurationRequestTypeDef
+## GetBucketInventoryConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketInventoryConfigurationRequestTypeDef
+from mypy_boto3_s3.type_defs import GetBucketInventoryConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2172,10 +2174,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## GetBucketLifecycleConfigurationOutputResponseTypeDef
+## GetBucketLifecycleConfigurationOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketLifecycleConfigurationOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetBucketLifecycleConfigurationOutputTypeDef
 ```
 
 Required fields:
@@ -2185,10 +2187,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketLifecycleConfigurationRequestTypeDef
+## GetBucketLifecycleConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketLifecycleConfigurationRequestTypeDef
+from mypy_boto3_s3.type_defs import GetBucketLifecycleConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2199,10 +2201,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## GetBucketLifecycleOutputResponseTypeDef
+## GetBucketLifecycleOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketLifecycleOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetBucketLifecycleOutputTypeDef
 ```
 
 Required fields:
@@ -2211,10 +2213,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketLifecycleRequestTypeDef
+## GetBucketLifecycleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketLifecycleRequestTypeDef
+from mypy_boto3_s3.type_defs import GetBucketLifecycleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2225,10 +2227,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## GetBucketLocationOutputResponseTypeDef
+## GetBucketLocationOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketLocationOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetBucketLocationOutputTypeDef
 ```
 
 Required fields:
@@ -2238,10 +2240,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketLocationRequestTypeDef
+## GetBucketLocationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketLocationRequestTypeDef
+from mypy_boto3_s3.type_defs import GetBucketLocationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2252,10 +2254,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## GetBucketLoggingOutputResponseTypeDef
+## GetBucketLoggingOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketLoggingOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetBucketLoggingOutputTypeDef
 ```
 
 Required fields:
@@ -2265,10 +2267,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketLoggingRequestTypeDef
+## GetBucketLoggingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketLoggingRequestTypeDef
+from mypy_boto3_s3.type_defs import GetBucketLoggingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2279,10 +2281,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## GetBucketMetricsConfigurationOutputResponseTypeDef
+## GetBucketMetricsConfigurationOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketMetricsConfigurationOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetBucketMetricsConfigurationOutputTypeDef
 ```
 
 Required fields:
@@ -2292,10 +2294,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketMetricsConfigurationRequestTypeDef
+## GetBucketMetricsConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketMetricsConfigurationRequestTypeDef
+from mypy_boto3_s3.type_defs import GetBucketMetricsConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2307,10 +2309,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## GetBucketNotificationConfigurationRequestTypeDef
+## GetBucketNotificationConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketNotificationConfigurationRequestTypeDef
+from mypy_boto3_s3.type_defs import GetBucketNotificationConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2321,10 +2323,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## GetBucketOwnershipControlsOutputResponseTypeDef
+## GetBucketOwnershipControlsOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketOwnershipControlsOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetBucketOwnershipControlsOutputTypeDef
 ```
 
 Required fields:
@@ -2334,10 +2336,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketOwnershipControlsRequestTypeDef
+## GetBucketOwnershipControlsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketOwnershipControlsRequestTypeDef
+from mypy_boto3_s3.type_defs import GetBucketOwnershipControlsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2348,10 +2350,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## GetBucketPolicyOutputResponseTypeDef
+## GetBucketPolicyOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketPolicyOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetBucketPolicyOutputTypeDef
 ```
 
 Required fields:
@@ -2360,10 +2362,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketPolicyRequestTypeDef
+## GetBucketPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketPolicyRequestTypeDef
+from mypy_boto3_s3.type_defs import GetBucketPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2374,10 +2376,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## GetBucketPolicyStatusOutputResponseTypeDef
+## GetBucketPolicyStatusOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketPolicyStatusOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetBucketPolicyStatusOutputTypeDef
 ```
 
 Required fields:
@@ -2386,10 +2388,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketPolicyStatusRequestTypeDef
+## GetBucketPolicyStatusRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketPolicyStatusRequestTypeDef
+from mypy_boto3_s3.type_defs import GetBucketPolicyStatusRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2400,10 +2402,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## GetBucketReplicationOutputResponseTypeDef
+## GetBucketReplicationOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketReplicationOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetBucketReplicationOutputTypeDef
 ```
 
 Required fields:
@@ -2413,10 +2415,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketReplicationRequestTypeDef
+## GetBucketReplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketReplicationRequestTypeDef
+from mypy_boto3_s3.type_defs import GetBucketReplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2427,10 +2429,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## GetBucketRequestPaymentOutputResponseTypeDef
+## GetBucketRequestPaymentOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketRequestPaymentOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetBucketRequestPaymentOutputTypeDef
 ```
 
 Required fields:
@@ -2439,10 +2441,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketRequestPaymentRequestTypeDef
+## GetBucketRequestPaymentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketRequestPaymentRequestTypeDef
+from mypy_boto3_s3.type_defs import GetBucketRequestPaymentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2453,10 +2455,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## GetBucketTaggingOutputResponseTypeDef
+## GetBucketTaggingOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketTaggingOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetBucketTaggingOutputTypeDef
 ```
 
 Required fields:
@@ -2465,10 +2467,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketTaggingRequestTypeDef
+## GetBucketTaggingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketTaggingRequestTypeDef
+from mypy_boto3_s3.type_defs import GetBucketTaggingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2479,10 +2481,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## GetBucketVersioningOutputResponseTypeDef
+## GetBucketVersioningOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketVersioningOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetBucketVersioningOutputTypeDef
 ```
 
 Required fields:
@@ -2493,10 +2495,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketVersioningRequestTypeDef
+## GetBucketVersioningRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketVersioningRequestTypeDef
+from mypy_boto3_s3.type_defs import GetBucketVersioningRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2507,10 +2509,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## GetBucketWebsiteOutputResponseTypeDef
+## GetBucketWebsiteOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketWebsiteOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetBucketWebsiteOutputTypeDef
 ```
 
 Required fields:
@@ -2524,10 +2526,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketWebsiteRequestTypeDef
+## GetBucketWebsiteRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketWebsiteRequestTypeDef
+from mypy_boto3_s3.type_defs import GetBucketWebsiteRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2538,10 +2540,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## GetObjectAclOutputResponseTypeDef
+## GetObjectAclOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetObjectAclOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetObjectAclOutputTypeDef
 ```
 
 Required fields:
@@ -2553,10 +2555,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetObjectAclRequestTypeDef
+## GetObjectAclRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetObjectAclRequestTypeDef
+from mypy_boto3_s3.type_defs import GetObjectAclRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2571,10 +2573,10 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
-## GetObjectLegalHoldOutputResponseTypeDef
+## GetObjectLegalHoldOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetObjectLegalHoldOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetObjectLegalHoldOutputTypeDef
 ```
 
 Required fields:
@@ -2584,10 +2586,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetObjectLegalHoldRequestTypeDef
+## GetObjectLegalHoldRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetObjectLegalHoldRequestTypeDef
+from mypy_boto3_s3.type_defs import GetObjectLegalHoldRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2602,10 +2604,10 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
-## GetObjectLockConfigurationOutputResponseTypeDef
+## GetObjectLockConfigurationOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetObjectLockConfigurationOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetObjectLockConfigurationOutputTypeDef
 ```
 
 Required fields:
@@ -2615,10 +2617,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetObjectLockConfigurationRequestTypeDef
+## GetObjectLockConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetObjectLockConfigurationRequestTypeDef
+from mypy_boto3_s3.type_defs import GetObjectLockConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2629,10 +2631,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## GetObjectOutputResponseTypeDef
+## GetObjectOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetObjectOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetObjectOutputTypeDef
 ```
 
 Required fields:
@@ -2759,10 +2761,10 @@ Optional fields:
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
 
-## GetObjectRequestTypeDef
+## GetObjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetObjectRequestTypeDef
+from mypy_boto3_s3.type_defs import GetObjectRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2792,10 +2794,10 @@ Optional fields:
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
 
-## GetObjectRetentionOutputResponseTypeDef
+## GetObjectRetentionOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetObjectRetentionOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetObjectRetentionOutputTypeDef
 ```
 
 Required fields:
@@ -2805,10 +2807,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetObjectRetentionRequestTypeDef
+## GetObjectRetentionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetObjectRetentionRequestTypeDef
+from mypy_boto3_s3.type_defs import GetObjectRetentionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2823,10 +2825,10 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
-## GetObjectTaggingOutputResponseTypeDef
+## GetObjectTaggingOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetObjectTaggingOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetObjectTaggingOutputTypeDef
 ```
 
 Required fields:
@@ -2836,10 +2838,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetObjectTaggingRequestTypeDef
+## GetObjectTaggingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetObjectTaggingRequestTypeDef
+from mypy_boto3_s3.type_defs import GetObjectTaggingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2854,10 +2856,10 @@ Optional fields:
 - `RequestPayer`: `Literal['requester']` (see
   [RequestPayerType](./literals.md#requestpayertype))
 
-## GetObjectTorrentOutputResponseTypeDef
+## GetObjectTorrentOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetObjectTorrentOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetObjectTorrentOutputTypeDef
 ```
 
 Required fields:
@@ -2868,10 +2870,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetObjectTorrentRequestTypeDef
+## GetObjectTorrentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetObjectTorrentRequestTypeDef
+from mypy_boto3_s3.type_defs import GetObjectTorrentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2885,10 +2887,10 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
-## GetPublicAccessBlockOutputResponseTypeDef
+## GetPublicAccessBlockOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetPublicAccessBlockOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import GetPublicAccessBlockOutputTypeDef
 ```
 
 Required fields:
@@ -2898,10 +2900,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPublicAccessBlockRequestTypeDef
+## GetPublicAccessBlockRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetPublicAccessBlockRequestTypeDef
+from mypy_boto3_s3.type_defs import GetPublicAccessBlockRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2950,10 +2952,10 @@ Optional fields:
 - `ID`: `str`
 - `URI`: `str`
 
-## HeadBucketRequestTypeDef
+## HeadBucketRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import HeadBucketRequestTypeDef
+from mypy_boto3_s3.type_defs import HeadBucketRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2964,10 +2966,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## HeadObjectOutputResponseTypeDef
+## HeadObjectOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import HeadObjectOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import HeadObjectOutputTypeDef
 ```
 
 Required fields:
@@ -3030,10 +3032,10 @@ Optional fields:
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
 
-## HeadObjectRequestTypeDef
+## HeadObjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import HeadObjectRequestTypeDef
+from mypy_boto3_s3.type_defs import HeadObjectRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3326,10 +3328,10 @@ Optional fields:
 - `AbortIncompleteMultipartUpload`:
   [AbortIncompleteMultipartUploadTypeDef](./type_defs.md#abortincompletemultipartuploadtypedef)
 
-## ListBucketAnalyticsConfigurationsOutputResponseTypeDef
+## ListBucketAnalyticsConfigurationsOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListBucketAnalyticsConfigurationsOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import ListBucketAnalyticsConfigurationsOutputTypeDef
 ```
 
 Required fields:
@@ -3342,10 +3344,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBucketAnalyticsConfigurationsRequestTypeDef
+## ListBucketAnalyticsConfigurationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListBucketAnalyticsConfigurationsRequestTypeDef
+from mypy_boto3_s3.type_defs import ListBucketAnalyticsConfigurationsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3357,10 +3359,10 @@ Optional fields:
 - `ContinuationToken`: `str`
 - `ExpectedBucketOwner`: `str`
 
-## ListBucketIntelligentTieringConfigurationsOutputResponseTypeDef
+## ListBucketIntelligentTieringConfigurationsOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListBucketIntelligentTieringConfigurationsOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import ListBucketIntelligentTieringConfigurationsOutputTypeDef
 ```
 
 Required fields:
@@ -3373,10 +3375,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBucketIntelligentTieringConfigurationsRequestTypeDef
+## ListBucketIntelligentTieringConfigurationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListBucketIntelligentTieringConfigurationsRequestTypeDef
+from mypy_boto3_s3.type_defs import ListBucketIntelligentTieringConfigurationsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3387,10 +3389,10 @@ Optional fields:
 
 - `ContinuationToken`: `str`
 
-## ListBucketInventoryConfigurationsOutputResponseTypeDef
+## ListBucketInventoryConfigurationsOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListBucketInventoryConfigurationsOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import ListBucketInventoryConfigurationsOutputTypeDef
 ```
 
 Required fields:
@@ -3403,10 +3405,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBucketInventoryConfigurationsRequestTypeDef
+## ListBucketInventoryConfigurationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListBucketInventoryConfigurationsRequestTypeDef
+from mypy_boto3_s3.type_defs import ListBucketInventoryConfigurationsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3418,10 +3420,10 @@ Optional fields:
 - `ContinuationToken`: `str`
 - `ExpectedBucketOwner`: `str`
 
-## ListBucketMetricsConfigurationsOutputResponseTypeDef
+## ListBucketMetricsConfigurationsOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListBucketMetricsConfigurationsOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import ListBucketMetricsConfigurationsOutputTypeDef
 ```
 
 Required fields:
@@ -3434,10 +3436,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBucketMetricsConfigurationsRequestTypeDef
+## ListBucketMetricsConfigurationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListBucketMetricsConfigurationsRequestTypeDef
+from mypy_boto3_s3.type_defs import ListBucketMetricsConfigurationsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3449,10 +3451,10 @@ Optional fields:
 - `ContinuationToken`: `str`
 - `ExpectedBucketOwner`: `str`
 
-## ListBucketsOutputResponseTypeDef
+## ListBucketsOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListBucketsOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import ListBucketsOutputTypeDef
 ```
 
 Required fields:
@@ -3462,10 +3464,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMultipartUploadsOutputResponseTypeDef
+## ListMultipartUploadsOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListMultipartUploadsOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import ListMultipartUploadsOutputTypeDef
 ```
 
 Required fields:
@@ -3488,10 +3490,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMultipartUploadsRequestTypeDef
+## ListMultipartUploadsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListMultipartUploadsRequestTypeDef
+from mypy_boto3_s3.type_defs import ListMultipartUploadsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3509,10 +3511,10 @@ Optional fields:
 - `UploadIdMarker`: `str`
 - `ExpectedBucketOwner`: `str`
 
-## ListObjectVersionsOutputResponseTypeDef
+## ListObjectVersionsOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListObjectVersionsOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import ListObjectVersionsOutputTypeDef
 ```
 
 Required fields:
@@ -3537,10 +3539,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListObjectVersionsRequestTypeDef
+## ListObjectVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListObjectVersionsRequestTypeDef
+from mypy_boto3_s3.type_defs import ListObjectVersionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3558,10 +3560,10 @@ Optional fields:
 - `VersionIdMarker`: `str`
 - `ExpectedBucketOwner`: `str`
 
-## ListObjectsOutputResponseTypeDef
+## ListObjectsOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListObjectsOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import ListObjectsOutputTypeDef
 ```
 
 Required fields:
@@ -3581,10 +3583,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListObjectsRequestTypeDef
+## ListObjectsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListObjectsRequestTypeDef
+from mypy_boto3_s3.type_defs import ListObjectsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3603,10 +3605,10 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
-## ListObjectsV2OutputResponseTypeDef
+## ListObjectsV2OutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListObjectsV2OutputResponseTypeDef
+from mypy_boto3_s3.type_defs import ListObjectsV2OutputTypeDef
 ```
 
 Required fields:
@@ -3628,10 +3630,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListObjectsV2RequestTypeDef
+## ListObjectsV2RequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListObjectsV2RequestTypeDef
+from mypy_boto3_s3.type_defs import ListObjectsV2RequestRequestTypeDef
 ```
 
 Required fields:
@@ -3652,10 +3654,10 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
-## ListPartsOutputResponseTypeDef
+## ListPartsOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListPartsOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import ListPartsOutputTypeDef
 ```
 
 Required fields:
@@ -3678,10 +3680,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPartsRequestTypeDef
+## ListPartsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListPartsRequestTypeDef
+from mypy_boto3_s3.type_defs import ListPartsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3824,10 +3826,10 @@ Optional fields:
 - `StorageClass`:
   [TransitionStorageClassType](./literals.md#transitionstorageclasstype)
 
-## NotificationConfigurationDeprecatedResponseTypeDef
+## NotificationConfigurationDeprecatedResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import NotificationConfigurationDeprecatedResponseTypeDef
+from mypy_boto3_s3.type_defs import NotificationConfigurationDeprecatedResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -3841,6 +3843,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## NotificationConfigurationDeprecatedTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import NotificationConfigurationDeprecatedTypeDef
+```
+
+Optional fields:
+
+- `TopicConfiguration`:
+  [TopicConfigurationDeprecatedTypeDef](./type_defs.md#topicconfigurationdeprecatedtypedef)
+- `QueueConfiguration`:
+  [QueueConfigurationDeprecatedTypeDef](./type_defs.md#queueconfigurationdeprecatedtypedef)
+- `CloudFunctionConfiguration`:
+  [CloudFunctionConfigurationTypeDef](./type_defs.md#cloudfunctionconfigurationtypedef)
+
 ## NotificationConfigurationFilterTypeDef
 
 ```python
@@ -3851,10 +3868,10 @@ Optional fields:
 
 - `Key`: [S3KeyFilterTypeDef](./type_defs.md#s3keyfiltertypedef)
 
-## NotificationConfigurationResponseTypeDef
+## NotificationConfigurationResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import NotificationConfigurationResponseTypeDef
+from mypy_boto3_s3.type_defs import NotificationConfigurationResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -3867,6 +3884,21 @@ Required fields:
   `List`\[[LambdaFunctionConfigurationTypeDef](./type_defs.md#lambdafunctionconfigurationtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## NotificationConfigurationTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import NotificationConfigurationTypeDef
+```
+
+Optional fields:
+
+- `TopicConfigurations`:
+  `List`\[[TopicConfigurationTypeDef](./type_defs.md#topicconfigurationtypedef)\]
+- `QueueConfigurations`:
+  `List`\[[QueueConfigurationTypeDef](./type_defs.md#queueconfigurationtypedef)\]
+- `LambdaFunctionConfigurations`:
+  `List`\[[LambdaFunctionConfigurationTypeDef](./type_defs.md#lambdafunctionconfigurationtypedef)\]
 
 ## ObjectCopyRequestTypeDef
 
@@ -4206,10 +4238,10 @@ Optional fields:
 - `BlockPublicPolicy`: `bool`
 - `RestrictPublicBuckets`: `bool`
 
-## PutBucketAccelerateConfigurationRequestTypeDef
+## PutBucketAccelerateConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutBucketAccelerateConfigurationRequestTypeDef
+from mypy_boto3_s3.type_defs import PutBucketAccelerateConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4240,10 +4272,10 @@ Optional fields:
 - `GrantWriteACP`: `str`
 - `ExpectedBucketOwner`: `str`
 
-## PutBucketAclRequestTypeDef
+## PutBucketAclRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutBucketAclRequestTypeDef
+from mypy_boto3_s3.type_defs import PutBucketAclRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4262,10 +4294,10 @@ Optional fields:
 - `GrantWriteACP`: `str`
 - `ExpectedBucketOwner`: `str`
 
-## PutBucketAnalyticsConfigurationRequestTypeDef
+## PutBucketAnalyticsConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutBucketAnalyticsConfigurationRequestTypeDef
+from mypy_boto3_s3.type_defs import PutBucketAnalyticsConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4294,10 +4326,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## PutBucketCorsRequestTypeDef
+## PutBucketCorsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutBucketCorsRequestTypeDef
+from mypy_boto3_s3.type_defs import PutBucketCorsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4310,10 +4342,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## PutBucketEncryptionRequestTypeDef
+## PutBucketEncryptionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutBucketEncryptionRequestTypeDef
+from mypy_boto3_s3.type_defs import PutBucketEncryptionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4327,10 +4359,10 @@ Optional fields:
 - `ContentMD5`: `str`
 - `ExpectedBucketOwner`: `str`
 
-## PutBucketIntelligentTieringConfigurationRequestTypeDef
+## PutBucketIntelligentTieringConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutBucketIntelligentTieringConfigurationRequestTypeDef
+from mypy_boto3_s3.type_defs import PutBucketIntelligentTieringConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4340,10 +4372,10 @@ Required fields:
 - `IntelligentTieringConfiguration`:
   [IntelligentTieringConfigurationTypeDef](./type_defs.md#intelligenttieringconfigurationtypedef)
 
-## PutBucketInventoryConfigurationRequestTypeDef
+## PutBucketInventoryConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutBucketInventoryConfigurationRequestTypeDef
+from mypy_boto3_s3.type_defs import PutBucketInventoryConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4369,10 +4401,10 @@ Optional fields:
   [BucketLifecycleConfigurationTypeDef](./type_defs.md#bucketlifecycleconfigurationtypedef)
 - `ExpectedBucketOwner`: `str`
 
-## PutBucketLifecycleConfigurationRequestTypeDef
+## PutBucketLifecycleConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutBucketLifecycleConfigurationRequestTypeDef
+from mypy_boto3_s3.type_defs import PutBucketLifecycleConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4397,10 +4429,10 @@ Optional fields:
   [LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef)
 - `ExpectedBucketOwner`: `str`
 
-## PutBucketLifecycleRequestTypeDef
+## PutBucketLifecycleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutBucketLifecycleRequestTypeDef
+from mypy_boto3_s3.type_defs import PutBucketLifecycleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4428,10 +4460,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## PutBucketLoggingRequestTypeDef
+## PutBucketLoggingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutBucketLoggingRequestTypeDef
+from mypy_boto3_s3.type_defs import PutBucketLoggingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4444,10 +4476,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## PutBucketMetricsConfigurationRequestTypeDef
+## PutBucketMetricsConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutBucketMetricsConfigurationRequestTypeDef
+from mypy_boto3_s3.type_defs import PutBucketMetricsConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4470,48 +4502,48 @@ from mypy_boto3_s3.type_defs import PutBucketNotificationConfigurationRequestBuc
 Required fields:
 
 - `NotificationConfiguration`:
-  [NotificationConfigurationResponseTypeDef](./type_defs.md#notificationconfigurationresponsetypedef)
+  [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
 
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## PutBucketNotificationConfigurationRequestTypeDef
+## PutBucketNotificationConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutBucketNotificationConfigurationRequestTypeDef
+from mypy_boto3_s3.type_defs import PutBucketNotificationConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Bucket`: `str`
 - `NotificationConfiguration`:
-  [NotificationConfigurationResponseTypeDef](./type_defs.md#notificationconfigurationresponsetypedef)
+  [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
 
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## PutBucketNotificationRequestTypeDef
+## PutBucketNotificationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutBucketNotificationRequestTypeDef
+from mypy_boto3_s3.type_defs import PutBucketNotificationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Bucket`: `str`
 - `NotificationConfiguration`:
-  [NotificationConfigurationDeprecatedResponseTypeDef](./type_defs.md#notificationconfigurationdeprecatedresponsetypedef)
+  [NotificationConfigurationDeprecatedTypeDef](./type_defs.md#notificationconfigurationdeprecatedtypedef)
 
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## PutBucketOwnershipControlsRequestTypeDef
+## PutBucketOwnershipControlsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutBucketOwnershipControlsRequestTypeDef
+from mypy_boto3_s3.type_defs import PutBucketOwnershipControlsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4540,10 +4572,10 @@ Optional fields:
 - `ConfirmRemoveSelfBucketAccess`: `bool`
 - `ExpectedBucketOwner`: `str`
 
-## PutBucketPolicyRequestTypeDef
+## PutBucketPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutBucketPolicyRequestTypeDef
+from mypy_boto3_s3.type_defs import PutBucketPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4556,10 +4588,10 @@ Optional fields:
 - `ConfirmRemoveSelfBucketAccess`: `bool`
 - `ExpectedBucketOwner`: `str`
 
-## PutBucketReplicationRequestTypeDef
+## PutBucketReplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutBucketReplicationRequestTypeDef
+from mypy_boto3_s3.type_defs import PutBucketReplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4588,10 +4620,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## PutBucketRequestPaymentRequestTypeDef
+## PutBucketRequestPaymentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutBucketRequestPaymentRequestTypeDef
+from mypy_boto3_s3.type_defs import PutBucketRequestPaymentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4618,10 +4650,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## PutBucketTaggingRequestTypeDef
+## PutBucketTaggingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutBucketTaggingRequestTypeDef
+from mypy_boto3_s3.type_defs import PutBucketTaggingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4649,10 +4681,10 @@ Optional fields:
 - `MFA`: `str`
 - `ExpectedBucketOwner`: `str`
 
-## PutBucketVersioningRequestTypeDef
+## PutBucketVersioningRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutBucketVersioningRequestTypeDef
+from mypy_boto3_s3.type_defs import PutBucketVersioningRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4681,10 +4713,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## PutBucketWebsiteRequestTypeDef
+## PutBucketWebsiteRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutBucketWebsiteRequestTypeDef
+from mypy_boto3_s3.type_defs import PutBucketWebsiteRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4697,10 +4729,10 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
-## PutObjectAclOutputResponseTypeDef
+## PutObjectAclOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutObjectAclOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import PutObjectAclOutputTypeDef
 ```
 
 Required fields:
@@ -4731,10 +4763,10 @@ Optional fields:
 - `VersionId`: `str`
 - `ExpectedBucketOwner`: `str`
 
-## PutObjectAclRequestTypeDef
+## PutObjectAclRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutObjectAclRequestTypeDef
+from mypy_boto3_s3.type_defs import PutObjectAclRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4757,10 +4789,10 @@ Optional fields:
 - `VersionId`: `str`
 - `ExpectedBucketOwner`: `str`
 
-## PutObjectLegalHoldOutputResponseTypeDef
+## PutObjectLegalHoldOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutObjectLegalHoldOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import PutObjectLegalHoldOutputTypeDef
 ```
 
 Required fields:
@@ -4770,10 +4802,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutObjectLegalHoldRequestTypeDef
+## PutObjectLegalHoldRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutObjectLegalHoldRequestTypeDef
+from mypy_boto3_s3.type_defs import PutObjectLegalHoldRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4791,10 +4823,10 @@ Optional fields:
 - `ContentMD5`: `str`
 - `ExpectedBucketOwner`: `str`
 
-## PutObjectLockConfigurationOutputResponseTypeDef
+## PutObjectLockConfigurationOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutObjectLockConfigurationOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import PutObjectLockConfigurationOutputTypeDef
 ```
 
 Required fields:
@@ -4804,10 +4836,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutObjectLockConfigurationRequestTypeDef
+## PutObjectLockConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutObjectLockConfigurationRequestTypeDef
+from mypy_boto3_s3.type_defs import PutObjectLockConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4824,10 +4856,10 @@ Optional fields:
 - `ContentMD5`: `str`
 - `ExpectedBucketOwner`: `str`
 
-## PutObjectOutputResponseTypeDef
+## PutObjectOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutObjectOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import PutObjectOutputTypeDef
 ```
 
 Required fields:
@@ -4977,10 +5009,10 @@ Optional fields:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
 
-## PutObjectRequestTypeDef
+## PutObjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutObjectRequestTypeDef
+from mypy_boto3_s3.type_defs import PutObjectRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5024,10 +5056,10 @@ Optional fields:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
 
-## PutObjectRetentionOutputResponseTypeDef
+## PutObjectRetentionOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutObjectRetentionOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import PutObjectRetentionOutputTypeDef
 ```
 
 Required fields:
@@ -5037,10 +5069,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutObjectRetentionRequestTypeDef
+## PutObjectRetentionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutObjectRetentionRequestTypeDef
+from mypy_boto3_s3.type_defs import PutObjectRetentionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5059,10 +5091,10 @@ Optional fields:
 - `ContentMD5`: `str`
 - `ExpectedBucketOwner`: `str`
 
-## PutObjectTaggingOutputResponseTypeDef
+## PutObjectTaggingOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutObjectTaggingOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import PutObjectTaggingOutputTypeDef
 ```
 
 Required fields:
@@ -5071,10 +5103,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutObjectTaggingRequestTypeDef
+## PutObjectTaggingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutObjectTaggingRequestTypeDef
+from mypy_boto3_s3.type_defs import PutObjectTaggingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5091,10 +5123,10 @@ Optional fields:
 - `RequestPayer`: `Literal['requester']` (see
   [RequestPayerType](./literals.md#requestpayertype))
 
-## PutPublicAccessBlockRequestTypeDef
+## PutPublicAccessBlockRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutPublicAccessBlockRequestTypeDef
+from mypy_boto3_s3.type_defs import PutPublicAccessBlockRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5306,10 +5338,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## RestoreObjectOutputResponseTypeDef
+## RestoreObjectOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import RestoreObjectOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import RestoreObjectOutputTypeDef
 ```
 
 Required fields:
@@ -5350,10 +5382,10 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
-## RestoreObjectRequestTypeDef
+## RestoreObjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import RestoreObjectRequestTypeDef
+from mypy_boto3_s3.type_defs import RestoreObjectRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5495,10 +5527,10 @@ Optional fields:
 - `Cont`: `Dict`\[`str`, `Any`\]
 - `End`: `Dict`\[`str`, `Any`\]
 
-## SelectObjectContentOutputResponseTypeDef
+## SelectObjectContentOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import SelectObjectContentOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import SelectObjectContentOutputTypeDef
 ```
 
 Required fields:
@@ -5508,10 +5540,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SelectObjectContentRequestTypeDef
+## SelectObjectContentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import SelectObjectContentRequestTypeDef
+from mypy_boto3_s3.type_defs import SelectObjectContentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5938,10 +5970,10 @@ Optional fields:
 - `StorageClass`:
   [TransitionStorageClassType](./literals.md#transitionstorageclasstype)
 
-## UploadPartCopyOutputResponseTypeDef
+## UploadPartCopyOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import UploadPartCopyOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import UploadPartCopyOutputTypeDef
 ```
 
 Required fields:
@@ -5988,10 +6020,10 @@ Optional fields:
 - `ExpectedBucketOwner`: `str`
 - `ExpectedSourceBucketOwner`: `str`
 
-## UploadPartCopyRequestTypeDef
+## UploadPartCopyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import UploadPartCopyRequestTypeDef
+from mypy_boto3_s3.type_defs import UploadPartCopyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6021,10 +6053,10 @@ Optional fields:
 - `ExpectedBucketOwner`: `str`
 - `ExpectedSourceBucketOwner`: `str`
 
-## UploadPartOutputResponseTypeDef
+## UploadPartOutputTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import UploadPartOutputResponseTypeDef
+from mypy_boto3_s3.type_defs import UploadPartOutputTypeDef
 ```
 
 Required fields:
@@ -6059,10 +6091,10 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
-## UploadPartRequestTypeDef
+## UploadPartRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import UploadPartRequestTypeDef
+from mypy_boto3_s3.type_defs import UploadPartRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6122,10 +6154,10 @@ Optional fields:
 - `RoutingRules`:
   `List`\[[RoutingRuleTypeDef](./type_defs.md#routingruletypedef)\]
 
-## WriteGetObjectResponseRequestTypeDef
+## WriteGetObjectResponseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import WriteGetObjectResponseRequestTypeDef
+from mypy_boto3_s3.type_defs import WriteGetObjectResponseRequestRequestTypeDef
 ```
 
 Required fields:

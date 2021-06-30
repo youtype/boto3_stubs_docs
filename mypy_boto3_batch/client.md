@@ -11,6 +11,7 @@ type annotations stubs module
   - [BatchClient](#batchclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [cancel_job](#cancel_job)
     - [create_compute_environment](#create_compute_environment)
@@ -70,6 +71,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+BatchClient exceptions.
+
+Type annotations for `boto3.client("batch").exceptions` method.
+
+Boto3 documentation:
+[Batch.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -95,7 +107,7 @@ Boto3 documentation:
 [Batch.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.cancel_job)
 
 Arguments mapping described in
-[CancelJobRequestTypeDef](./type_defs.md#canceljobrequesttypedef).
+[CancelJobRequestRequestTypeDef](./type_defs.md#canceljobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -114,7 +126,7 @@ Boto3 documentation:
 [Batch.Client.create_compute_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.create_compute_environment)
 
 Arguments mapping described in
-[CreateComputeEnvironmentRequestTypeDef](./type_defs.md#createcomputeenvironmentrequesttypedef).
+[CreateComputeEnvironmentRequestRequestTypeDef](./type_defs.md#createcomputeenvironmentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -127,7 +139,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateComputeEnvironmentResponseResponseTypeDef](./type_defs.md#createcomputeenvironmentresponseresponsetypedef).
+[CreateComputeEnvironmentResponseTypeDef](./type_defs.md#createcomputeenvironmentresponsetypedef).
 
 ### create_job_queue
 
@@ -139,7 +151,7 @@ Boto3 documentation:
 [Batch.Client.create_job_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.create_job_queue)
 
 Arguments mapping described in
-[CreateJobQueueRequestTypeDef](./type_defs.md#createjobqueuerequesttypedef).
+[CreateJobQueueRequestRequestTypeDef](./type_defs.md#createjobqueuerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -152,7 +164,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateJobQueueResponseResponseTypeDef](./type_defs.md#createjobqueueresponseresponsetypedef).
+[CreateJobQueueResponseTypeDef](./type_defs.md#createjobqueueresponsetypedef).
 
 ### delete_compute_environment
 
@@ -164,7 +176,7 @@ Boto3 documentation:
 [Batch.Client.delete_compute_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.delete_compute_environment)
 
 Arguments mapping described in
-[DeleteComputeEnvironmentRequestTypeDef](./type_defs.md#deletecomputeenvironmentrequesttypedef).
+[DeleteComputeEnvironmentRequestRequestTypeDef](./type_defs.md#deletecomputeenvironmentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -182,7 +194,7 @@ Boto3 documentation:
 [Batch.Client.delete_job_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.delete_job_queue)
 
 Arguments mapping described in
-[DeleteJobQueueRequestTypeDef](./type_defs.md#deletejobqueuerequesttypedef).
+[DeleteJobQueueRequestRequestTypeDef](./type_defs.md#deletejobqueuerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -200,7 +212,7 @@ Boto3 documentation:
 [Batch.Client.deregister_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.deregister_job_definition)
 
 Arguments mapping described in
-[DeregisterJobDefinitionRequestTypeDef](./type_defs.md#deregisterjobdefinitionrequesttypedef).
+[DeregisterJobDefinitionRequestRequestTypeDef](./type_defs.md#deregisterjobdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -219,7 +231,7 @@ Boto3 documentation:
 [Batch.Client.describe_compute_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_compute_environments)
 
 Arguments mapping described in
-[DescribeComputeEnvironmentsRequestTypeDef](./type_defs.md#describecomputeenvironmentsrequesttypedef).
+[DescribeComputeEnvironmentsRequestRequestTypeDef](./type_defs.md#describecomputeenvironmentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -228,7 +240,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeComputeEnvironmentsResponseResponseTypeDef](./type_defs.md#describecomputeenvironmentsresponseresponsetypedef).
+[DescribeComputeEnvironmentsResponseTypeDef](./type_defs.md#describecomputeenvironmentsresponsetypedef).
 
 ### describe_job_definitions
 
@@ -240,7 +252,7 @@ Boto3 documentation:
 [Batch.Client.describe_job_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_job_definitions)
 
 Arguments mapping described in
-[DescribeJobDefinitionsRequestTypeDef](./type_defs.md#describejobdefinitionsrequesttypedef).
+[DescribeJobDefinitionsRequestRequestTypeDef](./type_defs.md#describejobdefinitionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -251,7 +263,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeJobDefinitionsResponseResponseTypeDef](./type_defs.md#describejobdefinitionsresponseresponsetypedef).
+[DescribeJobDefinitionsResponseTypeDef](./type_defs.md#describejobdefinitionsresponsetypedef).
 
 ### describe_job_queues
 
@@ -263,7 +275,7 @@ Boto3 documentation:
 [Batch.Client.describe_job_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_job_queues)
 
 Arguments mapping described in
-[DescribeJobQueuesRequestTypeDef](./type_defs.md#describejobqueuesrequesttypedef).
+[DescribeJobQueuesRequestRequestTypeDef](./type_defs.md#describejobqueuesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -272,7 +284,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeJobQueuesResponseResponseTypeDef](./type_defs.md#describejobqueuesresponseresponsetypedef).
+[DescribeJobQueuesResponseTypeDef](./type_defs.md#describejobqueuesresponsetypedef).
 
 ### describe_jobs
 
@@ -284,14 +296,14 @@ Boto3 documentation:
 [Batch.Client.describe_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_jobs)
 
 Arguments mapping described in
-[DescribeJobsRequestTypeDef](./type_defs.md#describejobsrequesttypedef).
+[DescribeJobsRequestRequestTypeDef](./type_defs.md#describejobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `jobs`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeJobsResponseResponseTypeDef](./type_defs.md#describejobsresponseresponsetypedef).
+[DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -321,7 +333,7 @@ Boto3 documentation:
 [Batch.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.list_jobs)
 
 Arguments mapping described in
-[ListJobsRequestTypeDef](./type_defs.md#listjobsrequesttypedef).
+[ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -332,8 +344,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-Returns
-[ListJobsResponseResponseTypeDef](./type_defs.md#listjobsresponseresponsetypedef).
+Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -345,14 +356,14 @@ Boto3 documentation:
 [Batch.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### register_job_definition
 
@@ -364,7 +375,7 @@ Boto3 documentation:
 [Batch.Client.register_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.register_job_definition)
 
 Arguments mapping described in
-[RegisterJobDefinitionRequestTypeDef](./type_defs.md#registerjobdefinitionrequesttypedef).
+[RegisterJobDefinitionRequestRequestTypeDef](./type_defs.md#registerjobdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -384,7 +395,7 @@ Keyword-only arguments:
   `List`\[[PlatformCapabilityType](./literals.md#platformcapabilitytype)\]
 
 Returns
-[RegisterJobDefinitionResponseResponseTypeDef](./type_defs.md#registerjobdefinitionresponseresponsetypedef).
+[RegisterJobDefinitionResponseTypeDef](./type_defs.md#registerjobdefinitionresponsetypedef).
 
 ### submit_job
 
@@ -396,7 +407,7 @@ Boto3 documentation:
 [Batch.Client.submit_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.submit_job)
 
 Arguments mapping described in
-[SubmitJobRequestTypeDef](./type_defs.md#submitjobrequesttypedef).
+[SubmitJobRequestRequestTypeDef](./type_defs.md#submitjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -416,8 +427,7 @@ Keyword-only arguments:
 - `timeout`: [JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
-Returns
-[SubmitJobResponseResponseTypeDef](./type_defs.md#submitjobresponseresponsetypedef).
+Returns [SubmitJobResponseTypeDef](./type_defs.md#submitjobresponsetypedef).
 
 ### tag_resource
 
@@ -429,7 +439,7 @@ Boto3 documentation:
 [Batch.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -448,7 +458,7 @@ Boto3 documentation:
 [Batch.Client.terminate_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.terminate_job)
 
 Arguments mapping described in
-[TerminateJobRequestTypeDef](./type_defs.md#terminatejobrequesttypedef).
+[TerminateJobRequestRequestTypeDef](./type_defs.md#terminatejobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -467,7 +477,7 @@ Boto3 documentation:
 [Batch.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -486,7 +496,7 @@ Boto3 documentation:
 [Batch.Client.update_compute_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.update_compute_environment)
 
 Arguments mapping described in
-[UpdateComputeEnvironmentRequestTypeDef](./type_defs.md#updatecomputeenvironmentrequesttypedef).
+[UpdateComputeEnvironmentRequestRequestTypeDef](./type_defs.md#updatecomputeenvironmentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -497,7 +507,7 @@ Keyword-only arguments:
 - `serviceRole`: `str`
 
 Returns
-[UpdateComputeEnvironmentResponseResponseTypeDef](./type_defs.md#updatecomputeenvironmentresponseresponsetypedef).
+[UpdateComputeEnvironmentResponseTypeDef](./type_defs.md#updatecomputeenvironmentresponsetypedef).
 
 ### update_job_queue
 
@@ -509,7 +519,7 @@ Boto3 documentation:
 [Batch.Client.update_job_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.update_job_queue)
 
 Arguments mapping described in
-[UpdateJobQueueRequestTypeDef](./type_defs.md#updatejobqueuerequesttypedef).
+[UpdateJobQueueRequestRequestTypeDef](./type_defs.md#updatejobqueuerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -520,7 +530,7 @@ Keyword-only arguments:
   `List`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
 
 Returns
-[UpdateJobQueueResponseResponseTypeDef](./type_defs.md#updatejobqueueresponseresponsetypedef).
+[UpdateJobQueueResponseTypeDef](./type_defs.md#updatejobqueueresponsetypedef).
 
 ### get_paginator
 

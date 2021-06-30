@@ -11,6 +11,7 @@ type annotations stubs module
   - [CodeArtifactClient](#codeartifactclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_external_connection](#associate_external_connection)
     - [can_paginate](#can_paginate)
     - [copy_package_versions](#copy_package_versions)
@@ -90,6 +91,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+CodeArtifactClient exceptions.
+
+Type annotations for `boto3.client("codeartifact").exceptions` method.
+
+Boto3 documentation:
+[CodeArtifact.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_external_connection
 
 Adds an existing external connection to a repository.
@@ -101,7 +113,7 @@ Boto3 documentation:
 [CodeArtifact.Client.associate_external_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.associate_external_connection)
 
 Arguments mapping described in
-[AssociateExternalConnectionRequestTypeDef](./type_defs.md#associateexternalconnectionrequesttypedef).
+[AssociateExternalConnectionRequestRequestTypeDef](./type_defs.md#associateexternalconnectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -111,7 +123,7 @@ Keyword-only arguments:
 - `domainOwner`: `str`
 
 Returns
-[AssociateExternalConnectionResultResponseTypeDef](./type_defs.md#associateexternalconnectionresultresponsetypedef).
+[AssociateExternalConnectionResultTypeDef](./type_defs.md#associateexternalconnectionresulttypedef).
 
 ### can_paginate
 
@@ -140,7 +152,7 @@ Boto3 documentation:
 [CodeArtifact.Client.copy_package_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.copy_package_versions)
 
 Arguments mapping described in
-[CopyPackageVersionsRequestTypeDef](./type_defs.md#copypackageversionsrequesttypedef).
+[CopyPackageVersionsRequestRequestTypeDef](./type_defs.md#copypackageversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -157,7 +169,7 @@ Keyword-only arguments:
 - `includeFromUpstream`: `bool`
 
 Returns
-[CopyPackageVersionsResultResponseTypeDef](./type_defs.md#copypackageversionsresultresponsetypedef).
+[CopyPackageVersionsResultTypeDef](./type_defs.md#copypackageversionsresulttypedef).
 
 ### create_domain
 
@@ -169,7 +181,7 @@ Boto3 documentation:
 [CodeArtifact.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.create_domain)
 
 Arguments mapping described in
-[CreateDomainRequestTypeDef](./type_defs.md#createdomainrequesttypedef).
+[CreateDomainRequestRequestTypeDef](./type_defs.md#createdomainrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -177,8 +189,7 @@ Keyword-only arguments:
 - `encryptionKey`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateDomainResultResponseTypeDef](./type_defs.md#createdomainresultresponsetypedef).
+Returns [CreateDomainResultTypeDef](./type_defs.md#createdomainresulttypedef).
 
 ### create_repository
 
@@ -190,7 +201,7 @@ Boto3 documentation:
 [CodeArtifact.Client.create_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.create_repository)
 
 Arguments mapping described in
-[CreateRepositoryRequestTypeDef](./type_defs.md#createrepositoryrequesttypedef).
+[CreateRepositoryRequestRequestTypeDef](./type_defs.md#createrepositoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -203,7 +214,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateRepositoryResultResponseTypeDef](./type_defs.md#createrepositoryresultresponsetypedef).
+[CreateRepositoryResultTypeDef](./type_defs.md#createrepositoryresulttypedef).
 
 ### delete_domain
 
@@ -215,15 +226,14 @@ Boto3 documentation:
 [CodeArtifact.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_domain)
 
 Arguments mapping described in
-[DeleteDomainRequestTypeDef](./type_defs.md#deletedomainrequesttypedef).
+[DeleteDomainRequestRequestTypeDef](./type_defs.md#deletedomainrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `domainOwner`: `str`
 
-Returns
-[DeleteDomainResultResponseTypeDef](./type_defs.md#deletedomainresultresponsetypedef).
+Returns [DeleteDomainResultTypeDef](./type_defs.md#deletedomainresulttypedef).
 
 ### delete_domain_permissions_policy
 
@@ -236,7 +246,7 @@ Boto3 documentation:
 [CodeArtifact.Client.delete_domain_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_domain_permissions_policy)
 
 Arguments mapping described in
-[DeleteDomainPermissionsPolicyRequestTypeDef](./type_defs.md#deletedomainpermissionspolicyrequesttypedef).
+[DeleteDomainPermissionsPolicyRequestRequestTypeDef](./type_defs.md#deletedomainpermissionspolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -245,7 +255,7 @@ Keyword-only arguments:
 - `policyRevision`: `str`
 
 Returns
-[DeleteDomainPermissionsPolicyResultResponseTypeDef](./type_defs.md#deletedomainpermissionspolicyresultresponsetypedef).
+[DeleteDomainPermissionsPolicyResultTypeDef](./type_defs.md#deletedomainpermissionspolicyresulttypedef).
 
 ### delete_package_versions
 
@@ -258,7 +268,7 @@ Boto3 documentation:
 [CodeArtifact.Client.delete_package_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_package_versions)
 
 Arguments mapping described in
-[DeletePackageVersionsRequestTypeDef](./type_defs.md#deletepackageversionsrequesttypedef).
+[DeletePackageVersionsRequestRequestTypeDef](./type_defs.md#deletepackageversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -273,7 +283,7 @@ Keyword-only arguments:
   [PackageVersionStatusType](./literals.md#packageversionstatustype)
 
 Returns
-[DeletePackageVersionsResultResponseTypeDef](./type_defs.md#deletepackageversionsresultresponsetypedef).
+[DeletePackageVersionsResultTypeDef](./type_defs.md#deletepackageversionsresulttypedef).
 
 ### delete_repository
 
@@ -285,7 +295,7 @@ Boto3 documentation:
 [CodeArtifact.Client.delete_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_repository)
 
 Arguments mapping described in
-[DeleteRepositoryRequestTypeDef](./type_defs.md#deleterepositoryrequesttypedef).
+[DeleteRepositoryRequestRequestTypeDef](./type_defs.md#deleterepositoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -294,7 +304,7 @@ Keyword-only arguments:
 - `domainOwner`: `str`
 
 Returns
-[DeleteRepositoryResultResponseTypeDef](./type_defs.md#deleterepositoryresultresponsetypedef).
+[DeleteRepositoryResultTypeDef](./type_defs.md#deleterepositoryresulttypedef).
 
 ### delete_repository_permissions_policy
 
@@ -307,7 +317,7 @@ Boto3 documentation:
 [CodeArtifact.Client.delete_repository_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_repository_permissions_policy)
 
 Arguments mapping described in
-[DeleteRepositoryPermissionsPolicyRequestTypeDef](./type_defs.md#deleterepositorypermissionspolicyrequesttypedef).
+[DeleteRepositoryPermissionsPolicyRequestRequestTypeDef](./type_defs.md#deleterepositorypermissionspolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -317,7 +327,7 @@ Keyword-only arguments:
 - `policyRevision`: `str`
 
 Returns
-[DeleteRepositoryPermissionsPolicyResultResponseTypeDef](./type_defs.md#deleterepositorypermissionspolicyresultresponsetypedef).
+[DeleteRepositoryPermissionsPolicyResultTypeDef](./type_defs.md#deleterepositorypermissionspolicyresulttypedef).
 
 ### describe_domain
 
@@ -331,7 +341,7 @@ Boto3 documentation:
 [CodeArtifact.Client.describe_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_domain)
 
 Arguments mapping described in
-[DescribeDomainRequestTypeDef](./type_defs.md#describedomainrequesttypedef).
+[DescribeDomainRequestRequestTypeDef](./type_defs.md#describedomainrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -339,7 +349,7 @@ Keyword-only arguments:
 - `domainOwner`: `str`
 
 Returns
-[DescribeDomainResultResponseTypeDef](./type_defs.md#describedomainresultresponsetypedef).
+[DescribeDomainResultTypeDef](./type_defs.md#describedomainresulttypedef).
 
 ### describe_package_version
 
@@ -354,7 +364,7 @@ Boto3 documentation:
 [CodeArtifact.Client.describe_package_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_package_version)
 
 Arguments mapping described in
-[DescribePackageVersionRequestTypeDef](./type_defs.md#describepackageversionrequesttypedef).
+[DescribePackageVersionRequestRequestTypeDef](./type_defs.md#describepackageversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -367,7 +377,7 @@ Keyword-only arguments:
 - `namespace`: `str`
 
 Returns
-[DescribePackageVersionResultResponseTypeDef](./type_defs.md#describepackageversionresultresponsetypedef).
+[DescribePackageVersionResultTypeDef](./type_defs.md#describepackageversionresulttypedef).
 
 ### describe_repository
 
@@ -380,7 +390,7 @@ Boto3 documentation:
 [CodeArtifact.Client.describe_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_repository)
 
 Arguments mapping described in
-[DescribeRepositoryRequestTypeDef](./type_defs.md#describerepositoryrequesttypedef).
+[DescribeRepositoryRequestRequestTypeDef](./type_defs.md#describerepositoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -389,7 +399,7 @@ Keyword-only arguments:
 - `domainOwner`: `str`
 
 Returns
-[DescribeRepositoryResultResponseTypeDef](./type_defs.md#describerepositoryresultresponsetypedef).
+[DescribeRepositoryResultTypeDef](./type_defs.md#describerepositoryresulttypedef).
 
 ### disassociate_external_connection
 
@@ -402,7 +412,7 @@ Boto3 documentation:
 [CodeArtifact.Client.disassociate_external_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.disassociate_external_connection)
 
 Arguments mapping described in
-[DisassociateExternalConnectionRequestTypeDef](./type_defs.md#disassociateexternalconnectionrequesttypedef).
+[DisassociateExternalConnectionRequestRequestTypeDef](./type_defs.md#disassociateexternalconnectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -412,7 +422,7 @@ Keyword-only arguments:
 - `domainOwner`: `str`
 
 Returns
-[DisassociateExternalConnectionResultResponseTypeDef](./type_defs.md#disassociateexternalconnectionresultresponsetypedef).
+[DisassociateExternalConnectionResultTypeDef](./type_defs.md#disassociateexternalconnectionresulttypedef).
 
 ### dispose_package_versions
 
@@ -426,7 +436,7 @@ Boto3 documentation:
 [CodeArtifact.Client.dispose_package_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.dispose_package_versions)
 
 Arguments mapping described in
-[DisposePackageVersionsRequestTypeDef](./type_defs.md#disposepackageversionsrequesttypedef).
+[DisposePackageVersionsRequestRequestTypeDef](./type_defs.md#disposepackageversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -442,7 +452,7 @@ Keyword-only arguments:
   [PackageVersionStatusType](./literals.md#packageversionstatustype)
 
 Returns
-[DisposePackageVersionsResultResponseTypeDef](./type_defs.md#disposepackageversionsresultresponsetypedef).
+[DisposePackageVersionsResultTypeDef](./type_defs.md#disposepackageversionsresulttypedef).
 
 ### generate_presigned_url
 
@@ -475,7 +485,7 @@ Boto3 documentation:
 [CodeArtifact.Client.get_authorization_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_authorization_token)
 
 Arguments mapping described in
-[GetAuthorizationTokenRequestTypeDef](./type_defs.md#getauthorizationtokenrequesttypedef).
+[GetAuthorizationTokenRequestRequestTypeDef](./type_defs.md#getauthorizationtokenrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -484,7 +494,7 @@ Keyword-only arguments:
 - `durationSeconds`: `int`
 
 Returns
-[GetAuthorizationTokenResultResponseTypeDef](./type_defs.md#getauthorizationtokenresultresponsetypedef).
+[GetAuthorizationTokenResultTypeDef](./type_defs.md#getauthorizationtokenresulttypedef).
 
 ### get_domain_permissions_policy
 
@@ -497,7 +507,7 @@ Boto3 documentation:
 [CodeArtifact.Client.get_domain_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_domain_permissions_policy)
 
 Arguments mapping described in
-[GetDomainPermissionsPolicyRequestTypeDef](./type_defs.md#getdomainpermissionspolicyrequesttypedef).
+[GetDomainPermissionsPolicyRequestRequestTypeDef](./type_defs.md#getdomainpermissionspolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -505,7 +515,7 @@ Keyword-only arguments:
 - `domainOwner`: `str`
 
 Returns
-[GetDomainPermissionsPolicyResultResponseTypeDef](./type_defs.md#getdomainpermissionspolicyresultresponsetypedef).
+[GetDomainPermissionsPolicyResultTypeDef](./type_defs.md#getdomainpermissionspolicyresulttypedef).
 
 ### get_package_version_asset
 
@@ -518,7 +528,7 @@ Boto3 documentation:
 [CodeArtifact.Client.get_package_version_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_package_version_asset)
 
 Arguments mapping described in
-[GetPackageVersionAssetRequestTypeDef](./type_defs.md#getpackageversionassetrequesttypedef).
+[GetPackageVersionAssetRequestRequestTypeDef](./type_defs.md#getpackageversionassetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -533,7 +543,7 @@ Keyword-only arguments:
 - `packageVersionRevision`: `str`
 
 Returns
-[GetPackageVersionAssetResultResponseTypeDef](./type_defs.md#getpackageversionassetresultresponsetypedef).
+[GetPackageVersionAssetResultTypeDef](./type_defs.md#getpackageversionassetresulttypedef).
 
 ### get_package_version_readme
 
@@ -546,7 +556,7 @@ Boto3 documentation:
 [CodeArtifact.Client.get_package_version_readme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_package_version_readme)
 
 Arguments mapping described in
-[GetPackageVersionReadmeRequestTypeDef](./type_defs.md#getpackageversionreadmerequesttypedef).
+[GetPackageVersionReadmeRequestRequestTypeDef](./type_defs.md#getpackageversionreadmerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -559,7 +569,7 @@ Keyword-only arguments:
 - `namespace`: `str`
 
 Returns
-[GetPackageVersionReadmeResultResponseTypeDef](./type_defs.md#getpackageversionreadmeresultresponsetypedef).
+[GetPackageVersionReadmeResultTypeDef](./type_defs.md#getpackageversionreadmeresulttypedef).
 
 ### get_repository_endpoint
 
@@ -572,7 +582,7 @@ Boto3 documentation:
 [CodeArtifact.Client.get_repository_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_repository_endpoint)
 
 Arguments mapping described in
-[GetRepositoryEndpointRequestTypeDef](./type_defs.md#getrepositoryendpointrequesttypedef).
+[GetRepositoryEndpointRequestRequestTypeDef](./type_defs.md#getrepositoryendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -582,7 +592,7 @@ Keyword-only arguments:
 - `domainOwner`: `str`
 
 Returns
-[GetRepositoryEndpointResultResponseTypeDef](./type_defs.md#getrepositoryendpointresultresponsetypedef).
+[GetRepositoryEndpointResultTypeDef](./type_defs.md#getrepositoryendpointresulttypedef).
 
 ### get_repository_permissions_policy
 
@@ -595,7 +605,7 @@ Boto3 documentation:
 [CodeArtifact.Client.get_repository_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_repository_permissions_policy)
 
 Arguments mapping described in
-[GetRepositoryPermissionsPolicyRequestTypeDef](./type_defs.md#getrepositorypermissionspolicyrequesttypedef).
+[GetRepositoryPermissionsPolicyRequestRequestTypeDef](./type_defs.md#getrepositorypermissionspolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -604,7 +614,7 @@ Keyword-only arguments:
 - `domainOwner`: `str`
 
 Returns
-[GetRepositoryPermissionsPolicyResultResponseTypeDef](./type_defs.md#getrepositorypermissionspolicyresultresponsetypedef).
+[GetRepositoryPermissionsPolicyResultTypeDef](./type_defs.md#getrepositorypermissionspolicyresulttypedef).
 
 ### list_domains
 
@@ -618,15 +628,14 @@ Boto3 documentation:
 [CodeArtifact.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_domains)
 
 Arguments mapping described in
-[ListDomainsRequestTypeDef](./type_defs.md#listdomainsrequesttypedef).
+[ListDomainsRequestRequestTypeDef](./type_defs.md#listdomainsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-Returns
-[ListDomainsResultResponseTypeDef](./type_defs.md#listdomainsresultresponsetypedef).
+Returns [ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef).
 
 ### list_package_version_assets
 
@@ -641,7 +650,7 @@ Boto3 documentation:
 [CodeArtifact.Client.list_package_version_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_version_assets)
 
 Arguments mapping described in
-[ListPackageVersionAssetsRequestTypeDef](./type_defs.md#listpackageversionassetsrequesttypedef).
+[ListPackageVersionAssetsRequestRequestTypeDef](./type_defs.md#listpackageversionassetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -656,7 +665,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListPackageVersionAssetsResultResponseTypeDef](./type_defs.md#listpackageversionassetsresultresponsetypedef).
+[ListPackageVersionAssetsResultTypeDef](./type_defs.md#listpackageversionassetsresulttypedef).
 
 ### list_package_version_dependencies
 
@@ -669,7 +678,7 @@ Boto3 documentation:
 [CodeArtifact.Client.list_package_version_dependencies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_version_dependencies)
 
 Arguments mapping described in
-[ListPackageVersionDependenciesRequestTypeDef](./type_defs.md#listpackageversiondependenciesrequesttypedef).
+[ListPackageVersionDependenciesRequestRequestTypeDef](./type_defs.md#listpackageversiondependenciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -683,7 +692,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListPackageVersionDependenciesResultResponseTypeDef](./type_defs.md#listpackageversiondependenciesresultresponsetypedef).
+[ListPackageVersionDependenciesResultTypeDef](./type_defs.md#listpackageversiondependenciesresulttypedef).
 
 ### list_package_versions
 
@@ -698,7 +707,7 @@ Boto3 documentation:
 [CodeArtifact.Client.list_package_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_versions)
 
 Arguments mapping described in
-[ListPackageVersionsRequestTypeDef](./type_defs.md#listpackageversionsrequesttypedef).
+[ListPackageVersionsRequestRequestTypeDef](./type_defs.md#listpackageversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -715,7 +724,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListPackageVersionsResultResponseTypeDef](./type_defs.md#listpackageversionsresultresponsetypedef).
+[ListPackageVersionsResultTypeDef](./type_defs.md#listpackageversionsresulttypedef).
 
 ### list_packages
 
@@ -729,7 +738,7 @@ Boto3 documentation:
 [CodeArtifact.Client.list_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_packages)
 
 Arguments mapping described in
-[ListPackagesRequestTypeDef](./type_defs.md#listpackagesrequesttypedef).
+[ListPackagesRequestRequestTypeDef](./type_defs.md#listpackagesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -742,8 +751,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-Returns
-[ListPackagesResultResponseTypeDef](./type_defs.md#listpackagesresultresponsetypedef).
+Returns [ListPackagesResultTypeDef](./type_defs.md#listpackagesresulttypedef).
 
 ### list_repositories
 
@@ -757,7 +765,7 @@ Boto3 documentation:
 [CodeArtifact.Client.list_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_repositories)
 
 Arguments mapping described in
-[ListRepositoriesRequestTypeDef](./type_defs.md#listrepositoriesrequesttypedef).
+[ListRepositoriesRequestRequestTypeDef](./type_defs.md#listrepositoriesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -766,7 +774,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListRepositoriesResultResponseTypeDef](./type_defs.md#listrepositoriesresultresponsetypedef).
+[ListRepositoriesResultTypeDef](./type_defs.md#listrepositoriesresulttypedef).
 
 ### list_repositories_in_domain
 
@@ -781,7 +789,7 @@ Boto3 documentation:
 [CodeArtifact.Client.list_repositories_in_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_repositories_in_domain)
 
 Arguments mapping described in
-[ListRepositoriesInDomainRequestTypeDef](./type_defs.md#listrepositoriesindomainrequesttypedef).
+[ListRepositoriesInDomainRequestRequestTypeDef](./type_defs.md#listrepositoriesindomainrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -793,7 +801,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListRepositoriesInDomainResultResponseTypeDef](./type_defs.md#listrepositoriesindomainresultresponsetypedef).
+[ListRepositoriesInDomainResultTypeDef](./type_defs.md#listrepositoriesindomainresulttypedef).
 
 ### list_tags_for_resource
 
@@ -807,14 +815,14 @@ Boto3 documentation:
 [CodeArtifact.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResultResponseTypeDef](./type_defs.md#listtagsforresourceresultresponsetypedef).
+[ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
 
 ### put_domain_permissions_policy
 
@@ -827,7 +835,7 @@ Boto3 documentation:
 [CodeArtifact.Client.put_domain_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.put_domain_permissions_policy)
 
 Arguments mapping described in
-[PutDomainPermissionsPolicyRequestTypeDef](./type_defs.md#putdomainpermissionspolicyrequesttypedef).
+[PutDomainPermissionsPolicyRequestRequestTypeDef](./type_defs.md#putdomainpermissionspolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -837,7 +845,7 @@ Keyword-only arguments:
 - `policyRevision`: `str`
 
 Returns
-[PutDomainPermissionsPolicyResultResponseTypeDef](./type_defs.md#putdomainpermissionspolicyresultresponsetypedef).
+[PutDomainPermissionsPolicyResultTypeDef](./type_defs.md#putdomainpermissionspolicyresulttypedef).
 
 ### put_repository_permissions_policy
 
@@ -851,7 +859,7 @@ Boto3 documentation:
 [CodeArtifact.Client.put_repository_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.put_repository_permissions_policy)
 
 Arguments mapping described in
-[PutRepositoryPermissionsPolicyRequestTypeDef](./type_defs.md#putrepositorypermissionspolicyrequesttypedef).
+[PutRepositoryPermissionsPolicyRequestRequestTypeDef](./type_defs.md#putrepositorypermissionspolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -862,7 +870,7 @@ Keyword-only arguments:
 - `policyRevision`: `str`
 
 Returns
-[PutRepositoryPermissionsPolicyResultResponseTypeDef](./type_defs.md#putrepositorypermissionspolicyresultresponsetypedef).
+[PutRepositoryPermissionsPolicyResultTypeDef](./type_defs.md#putrepositorypermissionspolicyresulttypedef).
 
 ### tag_resource
 
@@ -874,7 +882,7 @@ Boto3 documentation:
 [CodeArtifact.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -893,7 +901,7 @@ Boto3 documentation:
 [CodeArtifact.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -913,7 +921,7 @@ Boto3 documentation:
 [CodeArtifact.Client.update_package_versions_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.update_package_versions_status)
 
 Arguments mapping described in
-[UpdatePackageVersionsStatusRequestTypeDef](./type_defs.md#updatepackageversionsstatusrequesttypedef).
+[UpdatePackageVersionsStatusRequestRequestTypeDef](./type_defs.md#updatepackageversionsstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -932,7 +940,7 @@ Keyword-only arguments:
   [PackageVersionStatusType](./literals.md#packageversionstatustype)
 
 Returns
-[UpdatePackageVersionsStatusResultResponseTypeDef](./type_defs.md#updatepackageversionsstatusresultresponsetypedef).
+[UpdatePackageVersionsStatusResultTypeDef](./type_defs.md#updatepackageversionsstatusresulttypedef).
 
 ### update_repository
 
@@ -944,7 +952,7 @@ Boto3 documentation:
 [CodeArtifact.Client.update_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.update_repository)
 
 Arguments mapping described in
-[UpdateRepositoryRequestTypeDef](./type_defs.md#updaterepositoryrequesttypedef).
+[UpdateRepositoryRequestRequestTypeDef](./type_defs.md#updaterepositoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -956,7 +964,7 @@ Keyword-only arguments:
   `List`\[[UpstreamRepositoryTypeDef](./type_defs.md#upstreamrepositorytypedef)\]
 
 Returns
-[UpdateRepositoryResultResponseTypeDef](./type_defs.md#updaterepositoryresultresponsetypedef).
+[UpdateRepositoryResultTypeDef](./type_defs.md#updaterepositoryresulttypedef).
 
 ### get_paginator
 

@@ -11,6 +11,7 @@ type annotations stubs module
   - [RDSDataServiceClient](#rdsdataserviceclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [batch_execute_statement](#batch_execute_statement)
     - [begin_transaction](#begin_transaction)
     - [can_paginate](#can_paginate)
@@ -60,6 +61,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+RDSDataServiceClient exceptions.
+
+Type annotations for `boto3.client("rds-data").exceptions` method.
+
+Boto3 documentation:
+[RDSDataService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### batch_execute_statement
 
 Runs a batch SQL statement over an array of data.
@@ -70,7 +82,7 @@ Boto3 documentation:
 [RDSDataService.Client.batch_execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.batch_execute_statement)
 
 Arguments mapping described in
-[BatchExecuteStatementRequestTypeDef](./type_defs.md#batchexecutestatementrequesttypedef).
+[BatchExecuteStatementRequestRequestTypeDef](./type_defs.md#batchexecutestatementrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -84,7 +96,7 @@ Keyword-only arguments:
 - `transactionId`: `str`
 
 Returns
-[BatchExecuteStatementResponseResponseTypeDef](./type_defs.md#batchexecutestatementresponseresponsetypedef).
+[BatchExecuteStatementResponseTypeDef](./type_defs.md#batchexecutestatementresponsetypedef).
 
 ### begin_transaction
 
@@ -96,7 +108,7 @@ Boto3 documentation:
 [RDSDataService.Client.begin_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.begin_transaction)
 
 Arguments mapping described in
-[BeginTransactionRequestTypeDef](./type_defs.md#begintransactionrequesttypedef).
+[BeginTransactionRequestRequestTypeDef](./type_defs.md#begintransactionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -106,7 +118,7 @@ Keyword-only arguments:
 - `schema`: `str`
 
 Returns
-[BeginTransactionResponseResponseTypeDef](./type_defs.md#begintransactionresponseresponsetypedef).
+[BeginTransactionResponseTypeDef](./type_defs.md#begintransactionresponsetypedef).
 
 ### can_paginate
 
@@ -134,7 +146,7 @@ Boto3 documentation:
 [RDSDataService.Client.commit_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.commit_transaction)
 
 Arguments mapping described in
-[CommitTransactionRequestTypeDef](./type_defs.md#committransactionrequesttypedef).
+[CommitTransactionRequestRequestTypeDef](./type_defs.md#committransactionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -143,7 +155,7 @@ Keyword-only arguments:
 - `transactionId`: `str` *(required)*
 
 Returns
-[CommitTransactionResponseResponseTypeDef](./type_defs.md#committransactionresponseresponsetypedef).
+[CommitTransactionResponseTypeDef](./type_defs.md#committransactionresponsetypedef).
 
 ### execute_sql
 
@@ -155,7 +167,7 @@ Boto3 documentation:
 [RDSDataService.Client.execute_sql](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.execute_sql)
 
 Arguments mapping described in
-[ExecuteSqlRequestTypeDef](./type_defs.md#executesqlrequesttypedef).
+[ExecuteSqlRequestRequestTypeDef](./type_defs.md#executesqlrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -165,8 +177,7 @@ Keyword-only arguments:
 - `database`: `str`
 - `schema`: `str`
 
-Returns
-[ExecuteSqlResponseResponseTypeDef](./type_defs.md#executesqlresponseresponsetypedef).
+Returns [ExecuteSqlResponseTypeDef](./type_defs.md#executesqlresponsetypedef).
 
 ### execute_statement
 
@@ -178,7 +189,7 @@ Boto3 documentation:
 [RDSDataService.Client.execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.execute_statement)
 
 Arguments mapping described in
-[ExecuteStatementRequestTypeDef](./type_defs.md#executestatementrequesttypedef).
+[ExecuteStatementRequestRequestTypeDef](./type_defs.md#executestatementrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -196,7 +207,7 @@ Keyword-only arguments:
 - `transactionId`: `str`
 
 Returns
-[ExecuteStatementResponseResponseTypeDef](./type_defs.md#executestatementresponseresponsetypedef).
+[ExecuteStatementResponseTypeDef](./type_defs.md#executestatementresponsetypedef).
 
 ### generate_presigned_url
 
@@ -226,7 +237,7 @@ Boto3 documentation:
 [RDSDataService.Client.rollback_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.rollback_transaction)
 
 Arguments mapping described in
-[RollbackTransactionRequestTypeDef](./type_defs.md#rollbacktransactionrequesttypedef).
+[RollbackTransactionRequestRequestTypeDef](./type_defs.md#rollbacktransactionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -235,4 +246,4 @@ Keyword-only arguments:
 - `transactionId`: `str` *(required)*
 
 Returns
-[RollbackTransactionResponseResponseTypeDef](./type_defs.md#rollbacktransactionresponseresponsetypedef).
+[RollbackTransactionResponseTypeDef](./type_defs.md#rollbacktransactionresponsetypedef).

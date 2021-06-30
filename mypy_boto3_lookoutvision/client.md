@@ -11,6 +11,7 @@ type annotations stubs module
   - [LookoutforVisionClient](#lookoutforvisionclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_dataset](#create_dataset)
     - [create_model](#create_model)
@@ -75,6 +76,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+LookoutforVisionClient exceptions.
+
+Type annotations for `boto3.client("lookoutvision").exceptions` method.
+
+Boto3 documentation:
+[LookoutforVision.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -100,7 +112,7 @@ Boto3 documentation:
 [LookoutforVision.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_dataset)
 
 Arguments mapping described in
-[CreateDatasetRequestTypeDef](./type_defs.md#createdatasetrequesttypedef).
+[CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -110,7 +122,7 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[CreateDatasetResponseResponseTypeDef](./type_defs.md#createdatasetresponseresponsetypedef).
+[CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
 ### create_model
 
@@ -123,7 +135,7 @@ Boto3 documentation:
 [LookoutforVision.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_model)
 
 Arguments mapping described in
-[CreateModelRequestTypeDef](./type_defs.md#createmodelrequesttypedef).
+[CreateModelRequestRequestTypeDef](./type_defs.md#createmodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -136,7 +148,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateModelResponseResponseTypeDef](./type_defs.md#createmodelresponseresponsetypedef).
+[CreateModelResponseTypeDef](./type_defs.md#createmodelresponsetypedef).
 
 ### create_project
 
@@ -148,7 +160,7 @@ Boto3 documentation:
 [LookoutforVision.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_project)
 
 Arguments mapping described in
-[CreateProjectRequestTypeDef](./type_defs.md#createprojectrequesttypedef).
+[CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -156,7 +168,7 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[CreateProjectResponseResponseTypeDef](./type_defs.md#createprojectresponseresponsetypedef).
+[CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef).
 
 ### delete_dataset
 
@@ -168,7 +180,7 @@ Boto3 documentation:
 [LookoutforVision.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_dataset)
 
 Arguments mapping described in
-[DeleteDatasetRequestTypeDef](./type_defs.md#deletedatasetrequesttypedef).
+[DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -188,7 +200,7 @@ Boto3 documentation:
 [LookoutforVision.Client.delete_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_model)
 
 Arguments mapping described in
-[DeleteModelRequestTypeDef](./type_defs.md#deletemodelrequesttypedef).
+[DeleteModelRequestRequestTypeDef](./type_defs.md#deletemodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -197,7 +209,7 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[DeleteModelResponseResponseTypeDef](./type_defs.md#deletemodelresponseresponsetypedef).
+[DeleteModelResponseTypeDef](./type_defs.md#deletemodelresponsetypedef).
 
 ### delete_project
 
@@ -209,7 +221,7 @@ Boto3 documentation:
 [LookoutforVision.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_project)
 
 Arguments mapping described in
-[DeleteProjectRequestTypeDef](./type_defs.md#deleteprojectrequesttypedef).
+[DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -217,7 +229,7 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[DeleteProjectResponseResponseTypeDef](./type_defs.md#deleteprojectresponseresponsetypedef).
+[DeleteProjectResponseTypeDef](./type_defs.md#deleteprojectresponsetypedef).
 
 ### describe_dataset
 
@@ -229,7 +241,7 @@ Boto3 documentation:
 [LookoutforVision.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_dataset)
 
 Arguments mapping described in
-[DescribeDatasetRequestTypeDef](./type_defs.md#describedatasetrequesttypedef).
+[DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -237,7 +249,7 @@ Keyword-only arguments:
 - `DatasetType`: `str` *(required)*
 
 Returns
-[DescribeDatasetResponseResponseTypeDef](./type_defs.md#describedatasetresponseresponsetypedef).
+[DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
 
 ### describe_model
 
@@ -249,7 +261,7 @@ Boto3 documentation:
 [LookoutforVision.Client.describe_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_model)
 
 Arguments mapping described in
-[DescribeModelRequestTypeDef](./type_defs.md#describemodelrequesttypedef).
+[DescribeModelRequestRequestTypeDef](./type_defs.md#describemodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -257,7 +269,7 @@ Keyword-only arguments:
 - `ModelVersion`: `str` *(required)*
 
 Returns
-[DescribeModelResponseResponseTypeDef](./type_defs.md#describemodelresponseresponsetypedef).
+[DescribeModelResponseTypeDef](./type_defs.md#describemodelresponsetypedef).
 
 ### describe_project
 
@@ -269,14 +281,14 @@ Boto3 documentation:
 [LookoutforVision.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_project)
 
 Arguments mapping described in
-[DescribeProjectRequestTypeDef](./type_defs.md#describeprojectrequesttypedef).
+[DescribeProjectRequestRequestTypeDef](./type_defs.md#describeprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
 
 Returns
-[DescribeProjectResponseResponseTypeDef](./type_defs.md#describeprojectresponseresponsetypedef).
+[DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef).
 
 ### detect_anomalies
 
@@ -288,7 +300,7 @@ Boto3 documentation:
 [LookoutforVision.Client.detect_anomalies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.detect_anomalies)
 
 Arguments mapping described in
-[DetectAnomaliesRequestTypeDef](./type_defs.md#detectanomaliesrequesttypedef).
+[DetectAnomaliesRequestRequestTypeDef](./type_defs.md#detectanomaliesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -298,7 +310,7 @@ Keyword-only arguments:
 - `ContentType`: `str` *(required)*
 
 Returns
-[DetectAnomaliesResponseResponseTypeDef](./type_defs.md#detectanomaliesresponseresponsetypedef).
+[DetectAnomaliesResponseTypeDef](./type_defs.md#detectanomaliesresponsetypedef).
 
 ### generate_presigned_url
 
@@ -330,7 +342,7 @@ Boto3 documentation:
 [LookoutforVision.Client.list_dataset_entries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_dataset_entries)
 
 Arguments mapping described in
-[ListDatasetEntriesRequestTypeDef](./type_defs.md#listdatasetentriesrequesttypedef).
+[ListDatasetEntriesRequestRequestTypeDef](./type_defs.md#listdatasetentriesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -345,7 +357,7 @@ Keyword-only arguments:
 - `SourceRefContains`: `str`
 
 Returns
-[ListDatasetEntriesResponseResponseTypeDef](./type_defs.md#listdatasetentriesresponseresponsetypedef).
+[ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef).
 
 ### list_models
 
@@ -357,7 +369,7 @@ Boto3 documentation:
 [LookoutforVision.Client.list_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_models)
 
 Arguments mapping described in
-[ListModelsRequestTypeDef](./type_defs.md#listmodelsrequesttypedef).
+[ListModelsRequestRequestTypeDef](./type_defs.md#listmodelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -365,8 +377,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListModelsResponseResponseTypeDef](./type_defs.md#listmodelsresponseresponsetypedef).
+Returns [ListModelsResponseTypeDef](./type_defs.md#listmodelsresponsetypedef).
 
 ### list_projects
 
@@ -378,7 +389,7 @@ Boto3 documentation:
 [LookoutforVision.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_projects)
 
 Arguments mapping described in
-[ListProjectsRequestTypeDef](./type_defs.md#listprojectsrequesttypedef).
+[ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -386,7 +397,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListProjectsResponseResponseTypeDef](./type_defs.md#listprojectsresponseresponsetypedef).
+[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -400,14 +411,14 @@ Boto3 documentation:
 [LookoutforVision.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### start_model
 
@@ -419,7 +430,7 @@ Boto3 documentation:
 [LookoutforVision.Client.start_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.start_model)
 
 Arguments mapping described in
-[StartModelRequestTypeDef](./type_defs.md#startmodelrequesttypedef).
+[StartModelRequestRequestTypeDef](./type_defs.md#startmodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -428,8 +439,7 @@ Keyword-only arguments:
 - `MinInferenceUnits`: `int` *(required)*
 - `ClientToken`: `str`
 
-Returns
-[StartModelResponseResponseTypeDef](./type_defs.md#startmodelresponseresponsetypedef).
+Returns [StartModelResponseTypeDef](./type_defs.md#startmodelresponsetypedef).
 
 ### stop_model
 
@@ -441,7 +451,7 @@ Boto3 documentation:
 [LookoutforVision.Client.stop_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.stop_model)
 
 Arguments mapping described in
-[StopModelRequestTypeDef](./type_defs.md#stopmodelrequesttypedef).
+[StopModelRequestRequestTypeDef](./type_defs.md#stopmodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -449,8 +459,7 @@ Keyword-only arguments:
 - `ModelVersion`: `str` *(required)*
 - `ClientToken`: `str`
 
-Returns
-[StopModelResponseResponseTypeDef](./type_defs.md#stopmodelresponseresponsetypedef).
+Returns [StopModelResponseTypeDef](./type_defs.md#stopmodelresponsetypedef).
 
 ### tag_resource
 
@@ -462,7 +471,7 @@ Boto3 documentation:
 [LookoutforVision.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -481,7 +490,7 @@ Boto3 documentation:
 [LookoutforVision.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -501,7 +510,7 @@ Boto3 documentation:
 [LookoutforVision.Client.update_dataset_entries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.update_dataset_entries)
 
 Arguments mapping described in
-[UpdateDatasetEntriesRequestTypeDef](./type_defs.md#updatedatasetentriesrequesttypedef).
+[UpdateDatasetEntriesRequestRequestTypeDef](./type_defs.md#updatedatasetentriesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -511,7 +520,7 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[UpdateDatasetEntriesResponseResponseTypeDef](./type_defs.md#updatedatasetentriesresponseresponsetypedef).
+[UpdateDatasetEntriesResponseTypeDef](./type_defs.md#updatedatasetentriesresponsetypedef).
 
 ### get_paginator
 

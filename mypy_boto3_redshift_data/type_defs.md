@@ -8,46 +8,46 @@ type annotations stubs module
 [mypy_boto3_redshift_data](https://pypi.org/project/mypy-boto3-redshift-data/).
 
 - [Typed dictionaries for boto3 RedshiftDataAPIService module](#typed-dictionaries-for-boto3-redshiftdataapiservice-module)
-  - [CancelStatementRequestTypeDef](#cancelstatementrequesttypedef)
-  - [CancelStatementResponseResponseTypeDef](#cancelstatementresponseresponsetypedef)
+  - [CancelStatementRequestRequestTypeDef](#cancelstatementrequestrequesttypedef)
+  - [CancelStatementResponseTypeDef](#cancelstatementresponsetypedef)
   - [ColumnMetadataTypeDef](#columnmetadatatypedef)
-  - [DescribeStatementRequestTypeDef](#describestatementrequesttypedef)
-  - [DescribeStatementResponseResponseTypeDef](#describestatementresponseresponsetypedef)
-  - [DescribeTableRequestTypeDef](#describetablerequesttypedef)
-  - [DescribeTableResponseResponseTypeDef](#describetableresponseresponsetypedef)
-  - [ExecuteStatementInputTypeDef](#executestatementinputtypedef)
-  - [ExecuteStatementOutputResponseTypeDef](#executestatementoutputresponsetypedef)
+  - [DescribeStatementRequestRequestTypeDef](#describestatementrequestrequesttypedef)
+  - [DescribeStatementResponseTypeDef](#describestatementresponsetypedef)
+  - [DescribeTableRequestRequestTypeDef](#describetablerequestrequesttypedef)
+  - [DescribeTableResponseTypeDef](#describetableresponsetypedef)
+  - [ExecuteStatementInputRequestTypeDef](#executestatementinputrequesttypedef)
+  - [ExecuteStatementOutputTypeDef](#executestatementoutputtypedef)
   - [FieldTypeDef](#fieldtypedef)
-  - [GetStatementResultRequestTypeDef](#getstatementresultrequesttypedef)
-  - [GetStatementResultResponseResponseTypeDef](#getstatementresultresponseresponsetypedef)
-  - [ListDatabasesRequestTypeDef](#listdatabasesrequesttypedef)
-  - [ListDatabasesResponseResponseTypeDef](#listdatabasesresponseresponsetypedef)
-  - [ListSchemasRequestTypeDef](#listschemasrequesttypedef)
-  - [ListSchemasResponseResponseTypeDef](#listschemasresponseresponsetypedef)
-  - [ListStatementsRequestTypeDef](#liststatementsrequesttypedef)
-  - [ListStatementsResponseResponseTypeDef](#liststatementsresponseresponsetypedef)
-  - [ListTablesRequestTypeDef](#listtablesrequesttypedef)
-  - [ListTablesResponseResponseTypeDef](#listtablesresponseresponsetypedef)
+  - [GetStatementResultRequestRequestTypeDef](#getstatementresultrequestrequesttypedef)
+  - [GetStatementResultResponseTypeDef](#getstatementresultresponsetypedef)
+  - [ListDatabasesRequestRequestTypeDef](#listdatabasesrequestrequesttypedef)
+  - [ListDatabasesResponseTypeDef](#listdatabasesresponsetypedef)
+  - [ListSchemasRequestRequestTypeDef](#listschemasrequestrequesttypedef)
+  - [ListSchemasResponseTypeDef](#listschemasresponsetypedef)
+  - [ListStatementsRequestRequestTypeDef](#liststatementsrequestrequesttypedef)
+  - [ListStatementsResponseTypeDef](#liststatementsresponsetypedef)
+  - [ListTablesRequestRequestTypeDef](#listtablesrequestrequesttypedef)
+  - [ListTablesResponseTypeDef](#listtablesresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SqlParameterTypeDef](#sqlparametertypedef)
   - [StatementDataTypeDef](#statementdatatypedef)
   - [TableMemberTypeDef](#tablemembertypedef)
 
-## CancelStatementRequestTypeDef
+## CancelStatementRequestRequestTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import CancelStatementRequestTypeDef
+from mypy_boto3_redshift_data.type_defs import CancelStatementRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Id`: `str`
 
-## CancelStatementResponseResponseTypeDef
+## CancelStatementResponseTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import CancelStatementResponseResponseTypeDef
+from mypy_boto3_redshift_data.type_defs import CancelStatementResponseTypeDef
 ```
 
 Required fields:
@@ -78,20 +78,20 @@ Optional fields:
 - `tableName`: `str`
 - `typeName`: `str`
 
-## DescribeStatementRequestTypeDef
+## DescribeStatementRequestRequestTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import DescribeStatementRequestTypeDef
+from mypy_boto3_redshift_data.type_defs import DescribeStatementRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Id`: `str`
 
-## DescribeStatementResponseResponseTypeDef
+## DescribeStatementResponseTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import DescribeStatementResponseResponseTypeDef
+from mypy_boto3_redshift_data.type_defs import DescribeStatementResponseTypeDef
 ```
 
 Required fields:
@@ -117,10 +117,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTableRequestTypeDef
+## DescribeTableRequestRequestTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import DescribeTableRequestTypeDef
+from mypy_boto3_redshift_data.type_defs import DescribeTableRequestRequestTypeDef
 ```
 
 Required fields:
@@ -138,10 +138,10 @@ Optional fields:
 - `SecretArn`: `str`
 - `Table`: `str`
 
-## DescribeTableResponseResponseTypeDef
+## DescribeTableResponseTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import DescribeTableResponseResponseTypeDef
+from mypy_boto3_redshift_data.type_defs import DescribeTableResponseTypeDef
 ```
 
 Required fields:
@@ -153,10 +153,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ExecuteStatementInputTypeDef
+## ExecuteStatementInputRequestTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import ExecuteStatementInputTypeDef
+from mypy_boto3_redshift_data.type_defs import ExecuteStatementInputRequestTypeDef
 ```
 
 Required fields:
@@ -174,10 +174,10 @@ Optional fields:
 - `StatementName`: `str`
 - `WithEvent`: `bool`
 
-## ExecuteStatementOutputResponseTypeDef
+## ExecuteStatementOutputTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import ExecuteStatementOutputResponseTypeDef
+from mypy_boto3_redshift_data.type_defs import ExecuteStatementOutputTypeDef
 ```
 
 Required fields:
@@ -206,10 +206,10 @@ Optional fields:
 - `longValue`: `int`
 - `stringValue`: `str`
 
-## GetStatementResultRequestTypeDef
+## GetStatementResultRequestRequestTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import GetStatementResultRequestTypeDef
+from mypy_boto3_redshift_data.type_defs import GetStatementResultRequestRequestTypeDef
 ```
 
 Required fields:
@@ -220,10 +220,10 @@ Optional fields:
 
 - `NextToken`: `str`
 
-## GetStatementResultResponseResponseTypeDef
+## GetStatementResultResponseTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import GetStatementResultResponseResponseTypeDef
+from mypy_boto3_redshift_data.type_defs import GetStatementResultResponseTypeDef
 ```
 
 Required fields:
@@ -236,10 +236,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDatabasesRequestTypeDef
+## ListDatabasesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import ListDatabasesRequestTypeDef
+from mypy_boto3_redshift_data.type_defs import ListDatabasesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -254,10 +254,10 @@ Optional fields:
 - `NextToken`: `str`
 - `SecretArn`: `str`
 
-## ListDatabasesResponseResponseTypeDef
+## ListDatabasesResponseTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import ListDatabasesResponseResponseTypeDef
+from mypy_boto3_redshift_data.type_defs import ListDatabasesResponseTypeDef
 ```
 
 Required fields:
@@ -267,10 +267,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSchemasRequestTypeDef
+## ListSchemasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import ListSchemasRequestTypeDef
+from mypy_boto3_redshift_data.type_defs import ListSchemasRequestRequestTypeDef
 ```
 
 Required fields:
@@ -287,10 +287,10 @@ Optional fields:
 - `SchemaPattern`: `str`
 - `SecretArn`: `str`
 
-## ListSchemasResponseResponseTypeDef
+## ListSchemasResponseTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import ListSchemasResponseResponseTypeDef
+from mypy_boto3_redshift_data.type_defs import ListSchemasResponseTypeDef
 ```
 
 Required fields:
@@ -300,10 +300,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStatementsRequestTypeDef
+## ListStatementsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import ListStatementsRequestTypeDef
+from mypy_boto3_redshift_data.type_defs import ListStatementsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -314,10 +314,10 @@ Optional fields:
 - `StatementName`: `str`
 - `Status`: [StatusStringType](./literals.md#statusstringtype)
 
-## ListStatementsResponseResponseTypeDef
+## ListStatementsResponseTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import ListStatementsResponseResponseTypeDef
+from mypy_boto3_redshift_data.type_defs import ListStatementsResponseTypeDef
 ```
 
 Required fields:
@@ -328,10 +328,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTablesRequestTypeDef
+## ListTablesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import ListTablesRequestTypeDef
+from mypy_boto3_redshift_data.type_defs import ListTablesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -349,10 +349,10 @@ Optional fields:
 - `SecretArn`: `str`
 - `TablePattern`: `str`
 
-## ListTablesResponseResponseTypeDef
+## ListTablesResponseTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import ListTablesResponseResponseTypeDef
+from mypy_boto3_redshift_data.type_defs import ListTablesResponseTypeDef
 ```
 
 Required fields:

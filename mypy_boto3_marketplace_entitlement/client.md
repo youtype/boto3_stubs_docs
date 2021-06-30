@@ -12,6 +12,7 @@ type annotations stubs module
   - [MarketplaceEntitlementServiceClient](#marketplaceentitlementserviceclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_entitlements](#get_entitlements)
@@ -53,6 +54,18 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 
 ## Methods
+
+### exceptions
+
+MarketplaceEntitlementServiceClient exceptions.
+
+Type annotations for `boto3.client("marketplace-entitlement").exceptions`
+method.
+
+Boto3 documentation:
+[MarketplaceEntitlementService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
 
 ### can_paginate
 
@@ -100,7 +113,7 @@ Boto3 documentation:
 [MarketplaceEntitlementService.Client.get_entitlements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService.Client.get_entitlements)
 
 Arguments mapping described in
-[GetEntitlementsRequestTypeDef](./type_defs.md#getentitlementsrequesttypedef).
+[GetEntitlementsRequestRequestTypeDef](./type_defs.md#getentitlementsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -112,7 +125,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetEntitlementsResultResponseTypeDef](./type_defs.md#getentitlementsresultresponsetypedef).
+[GetEntitlementsResultTypeDef](./type_defs.md#getentitlementsresulttypedef).
 
 ### get_paginator
 

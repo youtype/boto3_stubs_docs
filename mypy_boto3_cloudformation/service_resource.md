@@ -447,8 +447,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 
-Returns
-[UpdateStackOutputResponseTypeDef](./type_defs.md#updatestackoutputresponsetypedef).
+Returns [UpdateStackOutputTypeDef](./type_defs.md#updatestackoutputtypedef).
 
 ## StackResource
 

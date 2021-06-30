@@ -11,6 +11,7 @@ type annotations stubs module
   - [DynamoDBStreamsClient](#dynamodbstreamsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [describe_stream](#describe_stream)
     - [generate_presigned_url](#generate_presigned_url)
@@ -57,6 +58,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+DynamoDBStreamsClient exceptions.
+
+Type annotations for `boto3.client("dynamodbstreams").exceptions` method.
+
+Boto3 documentation:
+[DynamoDBStreams.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -84,7 +96,7 @@ Boto3 documentation:
 [DynamoDBStreams.Client.describe_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.describe_stream)
 
 Arguments mapping described in
-[DescribeStreamInputTypeDef](./type_defs.md#describestreaminputtypedef).
+[DescribeStreamInputRequestTypeDef](./type_defs.md#describestreaminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -93,7 +105,7 @@ Keyword-only arguments:
 - `ExclusiveStartShardId`: `str`
 
 Returns
-[DescribeStreamOutputResponseTypeDef](./type_defs.md#describestreamoutputresponsetypedef).
+[DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef).
 
 ### generate_presigned_url
 
@@ -124,15 +136,14 @@ Boto3 documentation:
 [DynamoDBStreams.Client.get_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.get_records)
 
 Arguments mapping described in
-[GetRecordsInputTypeDef](./type_defs.md#getrecordsinputtypedef).
+[GetRecordsInputRequestTypeDef](./type_defs.md#getrecordsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ShardIterator`: `str` *(required)*
 - `Limit`: `int`
 
-Returns
-[GetRecordsOutputResponseTypeDef](./type_defs.md#getrecordsoutputresponsetypedef).
+Returns [GetRecordsOutputTypeDef](./type_defs.md#getrecordsoutputtypedef).
 
 ### get_shard_iterator
 
@@ -145,7 +156,7 @@ Boto3 documentation:
 [DynamoDBStreams.Client.get_shard_iterator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.get_shard_iterator)
 
 Arguments mapping described in
-[GetShardIteratorInputTypeDef](./type_defs.md#getsharditeratorinputtypedef).
+[GetShardIteratorInputRequestTypeDef](./type_defs.md#getsharditeratorinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -156,7 +167,7 @@ Keyword-only arguments:
 - `SequenceNumber`: `str`
 
 Returns
-[GetShardIteratorOutputResponseTypeDef](./type_defs.md#getsharditeratoroutputresponsetypedef).
+[GetShardIteratorOutputTypeDef](./type_defs.md#getsharditeratoroutputtypedef).
 
 ### list_streams
 
@@ -169,7 +180,7 @@ Boto3 documentation:
 [DynamoDBStreams.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.list_streams)
 
 Arguments mapping described in
-[ListStreamsInputTypeDef](./type_defs.md#liststreamsinputtypedef).
+[ListStreamsInputRequestTypeDef](./type_defs.md#liststreamsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -177,5 +188,4 @@ Keyword-only arguments:
 - `Limit`: `int`
 - `ExclusiveStartStreamArn`: `str`
 
-Returns
-[ListStreamsOutputResponseTypeDef](./type_defs.md#liststreamsoutputresponsetypedef).
+Returns [ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef).

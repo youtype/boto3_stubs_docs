@@ -453,8 +453,7 @@ Keyword-only arguments:
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
 
-Returns
-[PublishResponseResponseTypeDef](./type_defs.md#publishresponseresponsetypedef).
+Returns [PublishResponseTypeDef](./type_defs.md#publishresponsetypedef).
 
 #### PlatformEndpoint.reload method
 
@@ -706,8 +705,7 @@ Keyword-only arguments:
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
 
-Returns
-[PublishResponseResponseTypeDef](./type_defs.md#publishresponseresponsetypedef).
+Returns [PublishResponseTypeDef](./type_defs.md#publishresponsetypedef).
 
 #### Topic.reload method
 

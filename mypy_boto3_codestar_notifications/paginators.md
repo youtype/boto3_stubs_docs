@@ -37,7 +37,7 @@ Arguments for `ListEventTypesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEventTypesPaginator.paginate` returns
-`Iterator`\[[ListEventTypesResultResponseTypeDef](./type_defs.md#listeventtypesresultresponsetypedef)\].
+`Iterator`\[[ListEventTypesResultTypeDef](./type_defs.md#listeventtypesresulttypedef)\].
 
 ## ListNotificationRulesPaginator
 
@@ -64,7 +64,7 @@ Arguments for `ListNotificationRulesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListNotificationRulesPaginator.paginate` returns
-`Iterator`\[[ListNotificationRulesResultResponseTypeDef](./type_defs.md#listnotificationrulesresultresponsetypedef)\].
+`Iterator`\[[ListNotificationRulesResultTypeDef](./type_defs.md#listnotificationrulesresulttypedef)\].
 
 ## ListTargetsPaginator
 
@@ -91,4 +91,4 @@ Arguments for `ListTargetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTargetsPaginator.paginate` returns
-`Iterator`\[[ListTargetsResultResponseTypeDef](./type_defs.md#listtargetsresultresponsetypedef)\].
+`Iterator`\[[ListTargetsResultTypeDef](./type_defs.md#listtargetsresulttypedef)\].

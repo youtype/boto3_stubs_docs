@@ -33,4 +33,4 @@ Arguments for `ListTerminologiesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTerminologiesPaginator.paginate` returns
-`Iterator`\[[ListTerminologiesResponseResponseTypeDef](./type_defs.md#listterminologiesresponseresponsetypedef)\].
+`Iterator`\[[ListTerminologiesResponseTypeDef](./type_defs.md#listterminologiesresponsetypedef)\].

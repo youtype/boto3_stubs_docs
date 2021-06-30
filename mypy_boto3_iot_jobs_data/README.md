@@ -33,6 +33,7 @@ from mypy_boto3_iot_jobs_data.client import IoTJobsDataPlaneClient
 
 - [can_paginate](./client.md#can_paginate)
 - [describe_job_execution](./client.md#describe_job_execution)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_pending_job_executions](./client.md#get_pending_job_executions)
 - [start_next_pending_job_execution](./client.md#start_next_pending_job_execution)
@@ -71,18 +72,18 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_iot_jobs_data.type_defs import DescribeJobExecutionRequestTypeDef, ...
+from mypy_boto3_iot_jobs_data.type_defs import DescribeJobExecutionRequestRequestTypeDef, ...
 ```
 
-- [DescribeJobExecutionRequestTypeDef](./type_defs.md#describejobexecutionrequesttypedef)
-- [DescribeJobExecutionResponseResponseTypeDef](./type_defs.md#describejobexecutionresponseresponsetypedef)
-- [GetPendingJobExecutionsRequestTypeDef](./type_defs.md#getpendingjobexecutionsrequesttypedef)
-- [GetPendingJobExecutionsResponseResponseTypeDef](./type_defs.md#getpendingjobexecutionsresponseresponsetypedef)
+- [DescribeJobExecutionRequestRequestTypeDef](./type_defs.md#describejobexecutionrequestrequesttypedef)
+- [DescribeJobExecutionResponseTypeDef](./type_defs.md#describejobexecutionresponsetypedef)
+- [GetPendingJobExecutionsRequestRequestTypeDef](./type_defs.md#getpendingjobexecutionsrequestrequesttypedef)
+- [GetPendingJobExecutionsResponseTypeDef](./type_defs.md#getpendingjobexecutionsresponsetypedef)
 - [JobExecutionStateTypeDef](./type_defs.md#jobexecutionstatetypedef)
 - [JobExecutionSummaryTypeDef](./type_defs.md#jobexecutionsummarytypedef)
 - [JobExecutionTypeDef](./type_defs.md#jobexecutiontypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [StartNextPendingJobExecutionRequestTypeDef](./type_defs.md#startnextpendingjobexecutionrequesttypedef)
-- [StartNextPendingJobExecutionResponseResponseTypeDef](./type_defs.md#startnextpendingjobexecutionresponseresponsetypedef)
-- [UpdateJobExecutionRequestTypeDef](./type_defs.md#updatejobexecutionrequesttypedef)
-- [UpdateJobExecutionResponseResponseTypeDef](./type_defs.md#updatejobexecutionresponseresponsetypedef)
+- [StartNextPendingJobExecutionRequestRequestTypeDef](./type_defs.md#startnextpendingjobexecutionrequestrequesttypedef)
+- [StartNextPendingJobExecutionResponseTypeDef](./type_defs.md#startnextpendingjobexecutionresponsetypedef)
+- [UpdateJobExecutionRequestRequestTypeDef](./type_defs.md#updatejobexecutionrequestrequesttypedef)
+- [UpdateJobExecutionResponseTypeDef](./type_defs.md#updatejobexecutionresponsetypedef)

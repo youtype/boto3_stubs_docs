@@ -11,6 +11,7 @@ type annotations stubs module
   - [AppflowClient](#appflowclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_connector_profile](#create_connector_profile)
     - [create_flow](#create_flow)
@@ -74,6 +75,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+AppflowClient exceptions.
+
+Type annotations for `boto3.client("appflow").exceptions` method.
+
+Boto3 documentation:
+[Appflow.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -99,7 +111,7 @@ Boto3 documentation:
 [Appflow.Client.create_connector_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.create_connector_profile)
 
 Arguments mapping described in
-[CreateConnectorProfileRequestTypeDef](./type_defs.md#createconnectorprofilerequesttypedef).
+[CreateConnectorProfileRequestRequestTypeDef](./type_defs.md#createconnectorprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -114,7 +126,7 @@ Keyword-only arguments:
 - `kmsArn`: `str`
 
 Returns
-[CreateConnectorProfileResponseResponseTypeDef](./type_defs.md#createconnectorprofileresponseresponsetypedef).
+[CreateConnectorProfileResponseTypeDef](./type_defs.md#createconnectorprofileresponsetypedef).
 
 ### create_flow
 
@@ -126,7 +138,7 @@ Boto3 documentation:
 [Appflow.Client.create_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.create_flow)
 
 Arguments mapping described in
-[CreateFlowRequestTypeDef](./type_defs.md#createflowrequesttypedef).
+[CreateFlowRequestRequestTypeDef](./type_defs.md#createflowrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -144,8 +156,7 @@ Keyword-only arguments:
 - `kmsArn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-Returns
-[CreateFlowResponseResponseTypeDef](./type_defs.md#createflowresponseresponsetypedef).
+Returns [CreateFlowResponseTypeDef](./type_defs.md#createflowresponsetypedef).
 
 ### delete_connector_profile
 
@@ -157,7 +168,7 @@ Boto3 documentation:
 [Appflow.Client.delete_connector_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.delete_connector_profile)
 
 Arguments mapping described in
-[DeleteConnectorProfileRequestTypeDef](./type_defs.md#deleteconnectorprofilerequesttypedef).
+[DeleteConnectorProfileRequestRequestTypeDef](./type_defs.md#deleteconnectorprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -176,7 +187,7 @@ Boto3 documentation:
 [Appflow.Client.delete_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.delete_flow)
 
 Arguments mapping described in
-[DeleteFlowRequestTypeDef](./type_defs.md#deleteflowrequesttypedef).
+[DeleteFlowRequestRequestTypeDef](./type_defs.md#deleteflowrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -197,7 +208,7 @@ Boto3 documentation:
 [Appflow.Client.describe_connector_entity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector_entity)
 
 Arguments mapping described in
-[DescribeConnectorEntityRequestTypeDef](./type_defs.md#describeconnectorentityrequesttypedef).
+[DescribeConnectorEntityRequestRequestTypeDef](./type_defs.md#describeconnectorentityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -206,7 +217,7 @@ Keyword-only arguments:
 - `connectorProfileName`: `str`
 
 Returns
-[DescribeConnectorEntityResponseResponseTypeDef](./type_defs.md#describeconnectorentityresponseresponsetypedef).
+[DescribeConnectorEntityResponseTypeDef](./type_defs.md#describeconnectorentityresponsetypedef).
 
 ### describe_connector_profiles
 
@@ -220,7 +231,7 @@ Boto3 documentation:
 [Appflow.Client.describe_connector_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector_profiles)
 
 Arguments mapping described in
-[DescribeConnectorProfilesRequestTypeDef](./type_defs.md#describeconnectorprofilesrequesttypedef).
+[DescribeConnectorProfilesRequestRequestTypeDef](./type_defs.md#describeconnectorprofilesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -230,7 +241,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeConnectorProfilesResponseResponseTypeDef](./type_defs.md#describeconnectorprofilesresponseresponsetypedef).
+[DescribeConnectorProfilesResponseTypeDef](./type_defs.md#describeconnectorprofilesresponsetypedef).
 
 ### describe_connectors
 
@@ -243,7 +254,7 @@ Boto3 documentation:
 [Appflow.Client.describe_connectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connectors)
 
 Arguments mapping described in
-[DescribeConnectorsRequestTypeDef](./type_defs.md#describeconnectorsrequesttypedef).
+[DescribeConnectorsRequestRequestTypeDef](./type_defs.md#describeconnectorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -252,7 +263,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeConnectorsResponseResponseTypeDef](./type_defs.md#describeconnectorsresponseresponsetypedef).
+[DescribeConnectorsResponseTypeDef](./type_defs.md#describeconnectorsresponsetypedef).
 
 ### describe_flow
 
@@ -264,14 +275,14 @@ Boto3 documentation:
 [Appflow.Client.describe_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_flow)
 
 Arguments mapping described in
-[DescribeFlowRequestTypeDef](./type_defs.md#describeflowrequesttypedef).
+[DescribeFlowRequestRequestTypeDef](./type_defs.md#describeflowrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `flowName`: `str` *(required)*
 
 Returns
-[DescribeFlowResponseResponseTypeDef](./type_defs.md#describeflowresponseresponsetypedef).
+[DescribeFlowResponseTypeDef](./type_defs.md#describeflowresponsetypedef).
 
 ### describe_flow_execution_records
 
@@ -284,7 +295,7 @@ Boto3 documentation:
 [Appflow.Client.describe_flow_execution_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_flow_execution_records)
 
 Arguments mapping described in
-[DescribeFlowExecutionRecordsRequestTypeDef](./type_defs.md#describeflowexecutionrecordsrequesttypedef).
+[DescribeFlowExecutionRecordsRequestRequestTypeDef](./type_defs.md#describeflowexecutionrecordsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -293,7 +304,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeFlowExecutionRecordsResponseResponseTypeDef](./type_defs.md#describeflowexecutionrecordsresponseresponsetypedef).
+[DescribeFlowExecutionRecordsResponseTypeDef](./type_defs.md#describeflowexecutionrecordsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -323,7 +334,7 @@ Boto3 documentation:
 [Appflow.Client.list_connector_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_connector_entities)
 
 Arguments mapping described in
-[ListConnectorEntitiesRequestTypeDef](./type_defs.md#listconnectorentitiesrequesttypedef).
+[ListConnectorEntitiesRequestRequestTypeDef](./type_defs.md#listconnectorentitiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -332,7 +343,7 @@ Keyword-only arguments:
 - `entitiesPath`: `str`
 
 Returns
-[ListConnectorEntitiesResponseResponseTypeDef](./type_defs.md#listconnectorentitiesresponseresponsetypedef).
+[ListConnectorEntitiesResponseTypeDef](./type_defs.md#listconnectorentitiesresponsetypedef).
 
 ### list_flows
 
@@ -344,15 +355,14 @@ Boto3 documentation:
 [Appflow.Client.list_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_flows)
 
 Arguments mapping described in
-[ListFlowsRequestTypeDef](./type_defs.md#listflowsrequesttypedef).
+[ListFlowsRequestRequestTypeDef](./type_defs.md#listflowsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-Returns
-[ListFlowsResponseResponseTypeDef](./type_defs.md#listflowsresponseresponsetypedef).
+Returns [ListFlowsResponseTypeDef](./type_defs.md#listflowsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -364,14 +374,14 @@ Boto3 documentation:
 [Appflow.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### start_flow
 
@@ -383,14 +393,13 @@ Boto3 documentation:
 [Appflow.Client.start_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.start_flow)
 
 Arguments mapping described in
-[StartFlowRequestTypeDef](./type_defs.md#startflowrequesttypedef).
+[StartFlowRequestRequestTypeDef](./type_defs.md#startflowrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `flowName`: `str` *(required)*
 
-Returns
-[StartFlowResponseResponseTypeDef](./type_defs.md#startflowresponseresponsetypedef).
+Returns [StartFlowResponseTypeDef](./type_defs.md#startflowresponsetypedef).
 
 ### stop_flow
 
@@ -402,14 +411,13 @@ Boto3 documentation:
 [Appflow.Client.stop_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.stop_flow)
 
 Arguments mapping described in
-[StopFlowRequestTypeDef](./type_defs.md#stopflowrequesttypedef).
+[StopFlowRequestRequestTypeDef](./type_defs.md#stopflowrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `flowName`: `str` *(required)*
 
-Returns
-[StopFlowResponseResponseTypeDef](./type_defs.md#stopflowresponseresponsetypedef).
+Returns [StopFlowResponseTypeDef](./type_defs.md#stopflowresponsetypedef).
 
 ### tag_resource
 
@@ -421,7 +429,7 @@ Boto3 documentation:
 [Appflow.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -440,7 +448,7 @@ Boto3 documentation:
 [Appflow.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -459,7 +467,7 @@ Boto3 documentation:
 [Appflow.Client.update_connector_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.update_connector_profile)
 
 Arguments mapping described in
-[UpdateConnectorProfileRequestTypeDef](./type_defs.md#updateconnectorprofilerequesttypedef).
+[UpdateConnectorProfileRequestRequestTypeDef](./type_defs.md#updateconnectorprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -471,7 +479,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateConnectorProfileResponseResponseTypeDef](./type_defs.md#updateconnectorprofileresponseresponsetypedef).
+[UpdateConnectorProfileResponseTypeDef](./type_defs.md#updateconnectorprofileresponsetypedef).
 
 ### update_flow
 
@@ -483,7 +491,7 @@ Boto3 documentation:
 [Appflow.Client.update_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.update_flow)
 
 Arguments mapping described in
-[UpdateFlowRequestTypeDef](./type_defs.md#updateflowrequesttypedef).
+[UpdateFlowRequestRequestTypeDef](./type_defs.md#updateflowrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -498,5 +506,4 @@ Keyword-only arguments:
 - `sourceFlowConfig`:
   [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef)
 
-Returns
-[UpdateFlowResponseResponseTypeDef](./type_defs.md#updateflowresponseresponsetypedef).
+Returns [UpdateFlowResponseTypeDef](./type_defs.md#updateflowresponsetypedef).

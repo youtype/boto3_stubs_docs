@@ -11,6 +11,7 @@ type annotations stubs module
   - [MachineLearningClient](#machinelearningclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_tags](#add_tags)
     - [can_paginate](#can_paginate)
     - [create_batch_prediction](#create_batch_prediction)
@@ -86,6 +87,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+MachineLearningClient exceptions.
+
+Type annotations for `boto3.client("machinelearning").exceptions` method.
+
+Boto3 documentation:
+[MachineLearning.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_tags
 
 Adds one or more tags to an object, up to a limit of 10.
@@ -96,7 +108,7 @@ Boto3 documentation:
 [MachineLearning.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.add_tags)
 
 Arguments mapping described in
-[AddTagsInputTypeDef](./type_defs.md#addtagsinputtypedef).
+[AddTagsInputRequestTypeDef](./type_defs.md#addtagsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -106,8 +118,7 @@ Keyword-only arguments:
   [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
   *(required)*
 
-Returns
-[AddTagsOutputResponseTypeDef](./type_defs.md#addtagsoutputresponsetypedef).
+Returns [AddTagsOutputTypeDef](./type_defs.md#addtagsoutputtypedef).
 
 ### can_paginate
 
@@ -135,7 +146,7 @@ Boto3 documentation:
 [MachineLearning.Client.create_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_batch_prediction)
 
 Arguments mapping described in
-[CreateBatchPredictionInputTypeDef](./type_defs.md#createbatchpredictioninputtypedef).
+[CreateBatchPredictionInputRequestTypeDef](./type_defs.md#createbatchpredictioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -146,7 +157,7 @@ Keyword-only arguments:
 - `BatchPredictionName`: `str`
 
 Returns
-[CreateBatchPredictionOutputResponseTypeDef](./type_defs.md#createbatchpredictionoutputresponsetypedef).
+[CreateBatchPredictionOutputTypeDef](./type_defs.md#createbatchpredictionoutputtypedef).
 
 ### create_data_source_from_rds
 
@@ -161,7 +172,7 @@ Boto3 documentation:
 [MachineLearning.Client.create_data_source_from_rds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_rds)
 
 Arguments mapping described in
-[CreateDataSourceFromRDSInputTypeDef](./type_defs.md#createdatasourcefromrdsinputtypedef).
+[CreateDataSourceFromRDSInputRequestTypeDef](./type_defs.md#createdatasourcefromrdsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -173,7 +184,7 @@ Keyword-only arguments:
 - `ComputeStatistics`: `bool`
 
 Returns
-[CreateDataSourceFromRDSOutputResponseTypeDef](./type_defs.md#createdatasourcefromrdsoutputresponsetypedef).
+[CreateDataSourceFromRDSOutputTypeDef](./type_defs.md#createdatasourcefromrdsoutputtypedef).
 
 ### create_data_source_from_redshift
 
@@ -186,7 +197,7 @@ Boto3 documentation:
 [MachineLearning.Client.create_data_source_from_redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_redshift)
 
 Arguments mapping described in
-[CreateDataSourceFromRedshiftInputTypeDef](./type_defs.md#createdatasourcefromredshiftinputtypedef).
+[CreateDataSourceFromRedshiftInputRequestTypeDef](./type_defs.md#createdatasourcefromredshiftinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -198,7 +209,7 @@ Keyword-only arguments:
 - `ComputeStatistics`: `bool`
 
 Returns
-[CreateDataSourceFromRedshiftOutputResponseTypeDef](./type_defs.md#createdatasourcefromredshiftoutputresponsetypedef).
+[CreateDataSourceFromRedshiftOutputTypeDef](./type_defs.md#createdatasourcefromredshiftoutputtypedef).
 
 ### create_data_source_from_s3
 
@@ -211,7 +222,7 @@ Boto3 documentation:
 [MachineLearning.Client.create_data_source_from_s3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_s3)
 
 Arguments mapping described in
-[CreateDataSourceFromS3InputTypeDef](./type_defs.md#createdatasourcefroms3inputtypedef).
+[CreateDataSourceFromS3InputRequestTypeDef](./type_defs.md#createdatasourcefroms3inputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -222,7 +233,7 @@ Keyword-only arguments:
 - `ComputeStatistics`: `bool`
 
 Returns
-[CreateDataSourceFromS3OutputResponseTypeDef](./type_defs.md#createdatasourcefroms3outputresponsetypedef).
+[CreateDataSourceFromS3OutputTypeDef](./type_defs.md#createdatasourcefroms3outputtypedef).
 
 ### create_evaluation
 
@@ -235,7 +246,7 @@ Boto3 documentation:
 [MachineLearning.Client.create_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_evaluation)
 
 Arguments mapping described in
-[CreateEvaluationInputTypeDef](./type_defs.md#createevaluationinputtypedef).
+[CreateEvaluationInputRequestTypeDef](./type_defs.md#createevaluationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -245,7 +256,7 @@ Keyword-only arguments:
 - `EvaluationName`: `str`
 
 Returns
-[CreateEvaluationOutputResponseTypeDef](./type_defs.md#createevaluationoutputresponsetypedef).
+[CreateEvaluationOutputTypeDef](./type_defs.md#createevaluationoutputtypedef).
 
 ### create_ml_model
 
@@ -258,7 +269,7 @@ Boto3 documentation:
 [MachineLearning.Client.create_ml_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_ml_model)
 
 Arguments mapping described in
-[CreateMLModelInputTypeDef](./type_defs.md#createmlmodelinputtypedef).
+[CreateMLModelInputRequestTypeDef](./type_defs.md#createmlmodelinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -271,7 +282,7 @@ Keyword-only arguments:
 - `RecipeUri`: `str`
 
 Returns
-[CreateMLModelOutputResponseTypeDef](./type_defs.md#createmlmodeloutputresponsetypedef).
+[CreateMLModelOutputTypeDef](./type_defs.md#createmlmodeloutputtypedef).
 
 ### create_realtime_endpoint
 
@@ -284,14 +295,14 @@ Boto3 documentation:
 [MachineLearning.Client.create_realtime_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_realtime_endpoint)
 
 Arguments mapping described in
-[CreateRealtimeEndpointInputTypeDef](./type_defs.md#createrealtimeendpointinputtypedef).
+[CreateRealtimeEndpointInputRequestTypeDef](./type_defs.md#createrealtimeendpointinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `MLModelId`: `str` *(required)*
 
 Returns
-[CreateRealtimeEndpointOutputResponseTypeDef](./type_defs.md#createrealtimeendpointoutputresponsetypedef).
+[CreateRealtimeEndpointOutputTypeDef](./type_defs.md#createrealtimeendpointoutputtypedef).
 
 ### delete_batch_prediction
 
@@ -304,14 +315,14 @@ Boto3 documentation:
 [MachineLearning.Client.delete_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_batch_prediction)
 
 Arguments mapping described in
-[DeleteBatchPredictionInputTypeDef](./type_defs.md#deletebatchpredictioninputtypedef).
+[DeleteBatchPredictionInputRequestTypeDef](./type_defs.md#deletebatchpredictioninputrequesttypedef).
 
 Keyword-only arguments:
 
 - `BatchPredictionId`: `str` *(required)*
 
 Returns
-[DeleteBatchPredictionOutputResponseTypeDef](./type_defs.md#deletebatchpredictionoutputresponsetypedef).
+[DeleteBatchPredictionOutputTypeDef](./type_defs.md#deletebatchpredictionoutputtypedef).
 
 ### delete_data_source
 
@@ -324,14 +335,14 @@ Boto3 documentation:
 [MachineLearning.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_data_source)
 
 Arguments mapping described in
-[DeleteDataSourceInputTypeDef](./type_defs.md#deletedatasourceinputtypedef).
+[DeleteDataSourceInputRequestTypeDef](./type_defs.md#deletedatasourceinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `DataSourceId`: `str` *(required)*
 
 Returns
-[DeleteDataSourceOutputResponseTypeDef](./type_defs.md#deletedatasourceoutputresponsetypedef).
+[DeleteDataSourceOutputTypeDef](./type_defs.md#deletedatasourceoutputtypedef).
 
 ### delete_evaluation
 
@@ -344,14 +355,14 @@ Boto3 documentation:
 [MachineLearning.Client.delete_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_evaluation)
 
 Arguments mapping described in
-[DeleteEvaluationInputTypeDef](./type_defs.md#deleteevaluationinputtypedef).
+[DeleteEvaluationInputRequestTypeDef](./type_defs.md#deleteevaluationinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `EvaluationId`: `str` *(required)*
 
 Returns
-[DeleteEvaluationOutputResponseTypeDef](./type_defs.md#deleteevaluationoutputresponsetypedef).
+[DeleteEvaluationOutputTypeDef](./type_defs.md#deleteevaluationoutputtypedef).
 
 ### delete_ml_model
 
@@ -363,14 +374,14 @@ Boto3 documentation:
 [MachineLearning.Client.delete_ml_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_ml_model)
 
 Arguments mapping described in
-[DeleteMLModelInputTypeDef](./type_defs.md#deletemlmodelinputtypedef).
+[DeleteMLModelInputRequestTypeDef](./type_defs.md#deletemlmodelinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `MLModelId`: `str` *(required)*
 
 Returns
-[DeleteMLModelOutputResponseTypeDef](./type_defs.md#deletemlmodeloutputresponsetypedef).
+[DeleteMLModelOutputTypeDef](./type_defs.md#deletemlmodeloutputtypedef).
 
 ### delete_realtime_endpoint
 
@@ -383,14 +394,14 @@ Boto3 documentation:
 [MachineLearning.Client.delete_realtime_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_realtime_endpoint)
 
 Arguments mapping described in
-[DeleteRealtimeEndpointInputTypeDef](./type_defs.md#deleterealtimeendpointinputtypedef).
+[DeleteRealtimeEndpointInputRequestTypeDef](./type_defs.md#deleterealtimeendpointinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `MLModelId`: `str` *(required)*
 
 Returns
-[DeleteRealtimeEndpointOutputResponseTypeDef](./type_defs.md#deleterealtimeendpointoutputresponsetypedef).
+[DeleteRealtimeEndpointOutputTypeDef](./type_defs.md#deleterealtimeendpointoutputtypedef).
 
 ### delete_tags
 
@@ -402,7 +413,7 @@ Boto3 documentation:
 [MachineLearning.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_tags)
 
 Arguments mapping described in
-[DeleteTagsInputTypeDef](./type_defs.md#deletetagsinputtypedef).
+[DeleteTagsInputRequestTypeDef](./type_defs.md#deletetagsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -412,8 +423,7 @@ Keyword-only arguments:
   [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
   *(required)*
 
-Returns
-[DeleteTagsOutputResponseTypeDef](./type_defs.md#deletetagsoutputresponsetypedef).
+Returns [DeleteTagsOutputTypeDef](./type_defs.md#deletetagsoutputtypedef).
 
 ### describe_batch_predictions
 
@@ -427,7 +437,7 @@ Boto3 documentation:
 [MachineLearning.Client.describe_batch_predictions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_batch_predictions)
 
 Arguments mapping described in
-[DescribeBatchPredictionsInputTypeDef](./type_defs.md#describebatchpredictionsinputtypedef).
+[DescribeBatchPredictionsInputRequestTypeDef](./type_defs.md#describebatchpredictionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -445,7 +455,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeBatchPredictionsOutputResponseTypeDef](./type_defs.md#describebatchpredictionsoutputresponsetypedef).
+[DescribeBatchPredictionsOutputTypeDef](./type_defs.md#describebatchpredictionsoutputtypedef).
 
 ### describe_data_sources
 
@@ -458,7 +468,7 @@ Boto3 documentation:
 [MachineLearning.Client.describe_data_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_data_sources)
 
 Arguments mapping described in
-[DescribeDataSourcesInputTypeDef](./type_defs.md#describedatasourcesinputtypedef).
+[DescribeDataSourcesInputRequestTypeDef](./type_defs.md#describedatasourcesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -476,7 +486,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeDataSourcesOutputResponseTypeDef](./type_defs.md#describedatasourcesoutputresponsetypedef).
+[DescribeDataSourcesOutputTypeDef](./type_defs.md#describedatasourcesoutputtypedef).
 
 ### describe_evaluations
 
@@ -490,7 +500,7 @@ Boto3 documentation:
 [MachineLearning.Client.describe_evaluations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_evaluations)
 
 Arguments mapping described in
-[DescribeEvaluationsInputTypeDef](./type_defs.md#describeevaluationsinputtypedef).
+[DescribeEvaluationsInputRequestTypeDef](./type_defs.md#describeevaluationsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -508,7 +518,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeEvaluationsOutputResponseTypeDef](./type_defs.md#describeevaluationsoutputresponsetypedef).
+[DescribeEvaluationsOutputTypeDef](./type_defs.md#describeevaluationsoutputtypedef).
 
 ### describe_ml_models
 
@@ -521,7 +531,7 @@ Boto3 documentation:
 [MachineLearning.Client.describe_ml_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_ml_models)
 
 Arguments mapping described in
-[DescribeMLModelsInputTypeDef](./type_defs.md#describemlmodelsinputtypedef).
+[DescribeMLModelsInputRequestTypeDef](./type_defs.md#describemlmodelsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -539,7 +549,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeMLModelsOutputResponseTypeDef](./type_defs.md#describemlmodelsoutputresponsetypedef).
+[DescribeMLModelsOutputTypeDef](./type_defs.md#describemlmodelsoutputtypedef).
 
 ### describe_tags
 
@@ -551,7 +561,7 @@ Boto3 documentation:
 [MachineLearning.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_tags)
 
 Arguments mapping described in
-[DescribeTagsInputTypeDef](./type_defs.md#describetagsinputtypedef).
+[DescribeTagsInputRequestTypeDef](./type_defs.md#describetagsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -560,8 +570,7 @@ Keyword-only arguments:
   [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
   *(required)*
 
-Returns
-[DescribeTagsOutputResponseTypeDef](./type_defs.md#describetagsoutputresponsetypedef).
+Returns [DescribeTagsOutputTypeDef](./type_defs.md#describetagsoutputtypedef).
 
 ### generate_presigned_url
 
@@ -594,14 +603,14 @@ Boto3 documentation:
 [MachineLearning.Client.get_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_batch_prediction)
 
 Arguments mapping described in
-[GetBatchPredictionInputTypeDef](./type_defs.md#getbatchpredictioninputtypedef).
+[GetBatchPredictionInputRequestTypeDef](./type_defs.md#getbatchpredictioninputrequesttypedef).
 
 Keyword-only arguments:
 
 - `BatchPredictionId`: `str` *(required)*
 
 Returns
-[GetBatchPredictionOutputResponseTypeDef](./type_defs.md#getbatchpredictionoutputresponsetypedef).
+[GetBatchPredictionOutputTypeDef](./type_defs.md#getbatchpredictionoutputtypedef).
 
 ### get_data_source
 
@@ -614,7 +623,7 @@ Boto3 documentation:
 [MachineLearning.Client.get_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_data_source)
 
 Arguments mapping described in
-[GetDataSourceInputTypeDef](./type_defs.md#getdatasourceinputtypedef).
+[GetDataSourceInputRequestTypeDef](./type_defs.md#getdatasourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -622,7 +631,7 @@ Keyword-only arguments:
 - `Verbose`: `bool`
 
 Returns
-[GetDataSourceOutputResponseTypeDef](./type_defs.md#getdatasourceoutputresponsetypedef).
+[GetDataSourceOutputTypeDef](./type_defs.md#getdatasourceoutputtypedef).
 
 ### get_evaluation
 
@@ -635,14 +644,14 @@ Boto3 documentation:
 [MachineLearning.Client.get_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_evaluation)
 
 Arguments mapping described in
-[GetEvaluationInputTypeDef](./type_defs.md#getevaluationinputtypedef).
+[GetEvaluationInputRequestTypeDef](./type_defs.md#getevaluationinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `EvaluationId`: `str` *(required)*
 
 Returns
-[GetEvaluationOutputResponseTypeDef](./type_defs.md#getevaluationoutputresponsetypedef).
+[GetEvaluationOutputTypeDef](./type_defs.md#getevaluationoutputtypedef).
 
 ### get_ml_model
 
@@ -655,15 +664,14 @@ Boto3 documentation:
 [MachineLearning.Client.get_ml_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_ml_model)
 
 Arguments mapping described in
-[GetMLModelInputTypeDef](./type_defs.md#getmlmodelinputtypedef).
+[GetMLModelInputRequestTypeDef](./type_defs.md#getmlmodelinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `MLModelId`: `str` *(required)*
 - `Verbose`: `bool`
 
-Returns
-[GetMLModelOutputResponseTypeDef](./type_defs.md#getmlmodeloutputresponsetypedef).
+Returns [GetMLModelOutputTypeDef](./type_defs.md#getmlmodeloutputtypedef).
 
 ### predict
 
@@ -675,7 +683,7 @@ Boto3 documentation:
 [MachineLearning.Client.predict](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.predict)
 
 Arguments mapping described in
-[PredictInputTypeDef](./type_defs.md#predictinputtypedef).
+[PredictInputRequestTypeDef](./type_defs.md#predictinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -683,8 +691,7 @@ Keyword-only arguments:
 - `Record`: `Dict`\[`str`, `str`\] *(required)*
 - `PredictEndpoint`: `str` *(required)*
 
-Returns
-[PredictOutputResponseTypeDef](./type_defs.md#predictoutputresponsetypedef).
+Returns [PredictOutputTypeDef](./type_defs.md#predictoutputtypedef).
 
 ### update_batch_prediction
 
@@ -697,7 +704,7 @@ Boto3 documentation:
 [MachineLearning.Client.update_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_batch_prediction)
 
 Arguments mapping described in
-[UpdateBatchPredictionInputTypeDef](./type_defs.md#updatebatchpredictioninputtypedef).
+[UpdateBatchPredictionInputRequestTypeDef](./type_defs.md#updatebatchpredictioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -705,7 +712,7 @@ Keyword-only arguments:
 - `BatchPredictionName`: `str` *(required)*
 
 Returns
-[UpdateBatchPredictionOutputResponseTypeDef](./type_defs.md#updatebatchpredictionoutputresponsetypedef).
+[UpdateBatchPredictionOutputTypeDef](./type_defs.md#updatebatchpredictionoutputtypedef).
 
 ### update_data_source
 
@@ -718,7 +725,7 @@ Boto3 documentation:
 [MachineLearning.Client.update_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_data_source)
 
 Arguments mapping described in
-[UpdateDataSourceInputTypeDef](./type_defs.md#updatedatasourceinputtypedef).
+[UpdateDataSourceInputRequestTypeDef](./type_defs.md#updatedatasourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -726,7 +733,7 @@ Keyword-only arguments:
 - `DataSourceName`: `str` *(required)*
 
 Returns
-[UpdateDataSourceOutputResponseTypeDef](./type_defs.md#updatedatasourceoutputresponsetypedef).
+[UpdateDataSourceOutputTypeDef](./type_defs.md#updatedatasourceoutputtypedef).
 
 ### update_evaluation
 
@@ -739,7 +746,7 @@ Boto3 documentation:
 [MachineLearning.Client.update_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_evaluation)
 
 Arguments mapping described in
-[UpdateEvaluationInputTypeDef](./type_defs.md#updateevaluationinputtypedef).
+[UpdateEvaluationInputRequestTypeDef](./type_defs.md#updateevaluationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -747,7 +754,7 @@ Keyword-only arguments:
 - `EvaluationName`: `str` *(required)*
 
 Returns
-[UpdateEvaluationOutputResponseTypeDef](./type_defs.md#updateevaluationoutputresponsetypedef).
+[UpdateEvaluationOutputTypeDef](./type_defs.md#updateevaluationoutputtypedef).
 
 ### update_ml_model
 
@@ -759,7 +766,7 @@ Boto3 documentation:
 [MachineLearning.Client.update_ml_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_ml_model)
 
 Arguments mapping described in
-[UpdateMLModelInputTypeDef](./type_defs.md#updatemlmodelinputtypedef).
+[UpdateMLModelInputRequestTypeDef](./type_defs.md#updatemlmodelinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -768,7 +775,7 @@ Keyword-only arguments:
 - `ScoreThreshold`: `float`
 
 Returns
-[UpdateMLModelOutputResponseTypeDef](./type_defs.md#updatemlmodeloutputresponsetypedef).
+[UpdateMLModelOutputTypeDef](./type_defs.md#updatemlmodeloutputtypedef).
 
 ### get_paginator
 

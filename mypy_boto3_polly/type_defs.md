@@ -8,44 +8,44 @@ type annotations stubs module
 [mypy_boto3_polly](https://pypi.org/project/mypy-boto3-polly/).
 
 - [Typed dictionaries for boto3 Polly module](#typed-dictionaries-for-boto3-polly-module)
-  - [DeleteLexiconInputTypeDef](#deletelexiconinputtypedef)
-  - [DescribeVoicesInputTypeDef](#describevoicesinputtypedef)
-  - [DescribeVoicesOutputResponseTypeDef](#describevoicesoutputresponsetypedef)
-  - [GetLexiconInputTypeDef](#getlexiconinputtypedef)
-  - [GetLexiconOutputResponseTypeDef](#getlexiconoutputresponsetypedef)
-  - [GetSpeechSynthesisTaskInputTypeDef](#getspeechsynthesistaskinputtypedef)
-  - [GetSpeechSynthesisTaskOutputResponseTypeDef](#getspeechsynthesistaskoutputresponsetypedef)
+  - [DeleteLexiconInputRequestTypeDef](#deletelexiconinputrequesttypedef)
+  - [DescribeVoicesInputRequestTypeDef](#describevoicesinputrequesttypedef)
+  - [DescribeVoicesOutputTypeDef](#describevoicesoutputtypedef)
+  - [GetLexiconInputRequestTypeDef](#getlexiconinputrequesttypedef)
+  - [GetLexiconOutputTypeDef](#getlexiconoutputtypedef)
+  - [GetSpeechSynthesisTaskInputRequestTypeDef](#getspeechsynthesistaskinputrequesttypedef)
+  - [GetSpeechSynthesisTaskOutputTypeDef](#getspeechsynthesistaskoutputtypedef)
   - [LexiconAttributesTypeDef](#lexiconattributestypedef)
   - [LexiconDescriptionTypeDef](#lexicondescriptiontypedef)
   - [LexiconTypeDef](#lexicontypedef)
-  - [ListLexiconsInputTypeDef](#listlexiconsinputtypedef)
-  - [ListLexiconsOutputResponseTypeDef](#listlexiconsoutputresponsetypedef)
-  - [ListSpeechSynthesisTasksInputTypeDef](#listspeechsynthesistasksinputtypedef)
-  - [ListSpeechSynthesisTasksOutputResponseTypeDef](#listspeechsynthesistasksoutputresponsetypedef)
+  - [ListLexiconsInputRequestTypeDef](#listlexiconsinputrequesttypedef)
+  - [ListLexiconsOutputTypeDef](#listlexiconsoutputtypedef)
+  - [ListSpeechSynthesisTasksInputRequestTypeDef](#listspeechsynthesistasksinputrequesttypedef)
+  - [ListSpeechSynthesisTasksOutputTypeDef](#listspeechsynthesistasksoutputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutLexiconInputTypeDef](#putlexiconinputtypedef)
+  - [PutLexiconInputRequestTypeDef](#putlexiconinputrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartSpeechSynthesisTaskInputTypeDef](#startspeechsynthesistaskinputtypedef)
-  - [StartSpeechSynthesisTaskOutputResponseTypeDef](#startspeechsynthesistaskoutputresponsetypedef)
+  - [StartSpeechSynthesisTaskInputRequestTypeDef](#startspeechsynthesistaskinputrequesttypedef)
+  - [StartSpeechSynthesisTaskOutputTypeDef](#startspeechsynthesistaskoutputtypedef)
   - [SynthesisTaskTypeDef](#synthesistasktypedef)
-  - [SynthesizeSpeechInputTypeDef](#synthesizespeechinputtypedef)
-  - [SynthesizeSpeechOutputResponseTypeDef](#synthesizespeechoutputresponsetypedef)
+  - [SynthesizeSpeechInputRequestTypeDef](#synthesizespeechinputrequesttypedef)
+  - [SynthesizeSpeechOutputTypeDef](#synthesizespeechoutputtypedef)
   - [VoiceTypeDef](#voicetypedef)
 
-## DeleteLexiconInputTypeDef
+## DeleteLexiconInputRequestTypeDef
 
 ```python
-from mypy_boto3_polly.type_defs import DeleteLexiconInputTypeDef
+from mypy_boto3_polly.type_defs import DeleteLexiconInputRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DescribeVoicesInputTypeDef
+## DescribeVoicesInputRequestTypeDef
 
 ```python
-from mypy_boto3_polly.type_defs import DescribeVoicesInputTypeDef
+from mypy_boto3_polly.type_defs import DescribeVoicesInputRequestTypeDef
 ```
 
 Optional fields:
@@ -55,10 +55,10 @@ Optional fields:
 - `IncludeAdditionalLanguageCodes`: `bool`
 - `NextToken`: `str`
 
-## DescribeVoicesOutputResponseTypeDef
+## DescribeVoicesOutputTypeDef
 
 ```python
-from mypy_boto3_polly.type_defs import DescribeVoicesOutputResponseTypeDef
+from mypy_boto3_polly.type_defs import DescribeVoicesOutputTypeDef
 ```
 
 Required fields:
@@ -68,20 +68,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLexiconInputTypeDef
+## GetLexiconInputRequestTypeDef
 
 ```python
-from mypy_boto3_polly.type_defs import GetLexiconInputTypeDef
+from mypy_boto3_polly.type_defs import GetLexiconInputRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## GetLexiconOutputResponseTypeDef
+## GetLexiconOutputTypeDef
 
 ```python
-from mypy_boto3_polly.type_defs import GetLexiconOutputResponseTypeDef
+from mypy_boto3_polly.type_defs import GetLexiconOutputTypeDef
 ```
 
 Required fields:
@@ -92,20 +92,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSpeechSynthesisTaskInputTypeDef
+## GetSpeechSynthesisTaskInputRequestTypeDef
 
 ```python
-from mypy_boto3_polly.type_defs import GetSpeechSynthesisTaskInputTypeDef
+from mypy_boto3_polly.type_defs import GetSpeechSynthesisTaskInputRequestTypeDef
 ```
 
 Required fields:
 
 - `TaskId`: `str`
 
-## GetSpeechSynthesisTaskOutputResponseTypeDef
+## GetSpeechSynthesisTaskOutputTypeDef
 
 ```python
-from mypy_boto3_polly.type_defs import GetSpeechSynthesisTaskOutputResponseTypeDef
+from mypy_boto3_polly.type_defs import GetSpeechSynthesisTaskOutputTypeDef
 ```
 
 Required fields:
@@ -152,20 +152,20 @@ Optional fields:
 - `Content`: `str`
 - `Name`: `str`
 
-## ListLexiconsInputTypeDef
+## ListLexiconsInputRequestTypeDef
 
 ```python
-from mypy_boto3_polly.type_defs import ListLexiconsInputTypeDef
+from mypy_boto3_polly.type_defs import ListLexiconsInputRequestTypeDef
 ```
 
 Optional fields:
 
 - `NextToken`: `str`
 
-## ListLexiconsOutputResponseTypeDef
+## ListLexiconsOutputTypeDef
 
 ```python
-from mypy_boto3_polly.type_defs import ListLexiconsOutputResponseTypeDef
+from mypy_boto3_polly.type_defs import ListLexiconsOutputTypeDef
 ```
 
 Required fields:
@@ -176,10 +176,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSpeechSynthesisTasksInputTypeDef
+## ListSpeechSynthesisTasksInputRequestTypeDef
 
 ```python
-from mypy_boto3_polly.type_defs import ListSpeechSynthesisTasksInputTypeDef
+from mypy_boto3_polly.type_defs import ListSpeechSynthesisTasksInputRequestTypeDef
 ```
 
 Optional fields:
@@ -188,10 +188,10 @@ Optional fields:
 - `NextToken`: `str`
 - `Status`: [TaskStatusType](./literals.md#taskstatustype)
 
-## ListSpeechSynthesisTasksOutputResponseTypeDef
+## ListSpeechSynthesisTasksOutputTypeDef
 
 ```python
-from mypy_boto3_polly.type_defs import ListSpeechSynthesisTasksOutputResponseTypeDef
+from mypy_boto3_polly.type_defs import ListSpeechSynthesisTasksOutputTypeDef
 ```
 
 Required fields:
@@ -214,10 +214,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PutLexiconInputTypeDef
+## PutLexiconInputRequestTypeDef
 
 ```python
-from mypy_boto3_polly.type_defs import PutLexiconInputTypeDef
+from mypy_boto3_polly.type_defs import PutLexiconInputRequestTypeDef
 ```
 
 Required fields:
@@ -239,10 +239,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## StartSpeechSynthesisTaskInputTypeDef
+## StartSpeechSynthesisTaskInputRequestTypeDef
 
 ```python
-from mypy_boto3_polly.type_defs import StartSpeechSynthesisTaskInputTypeDef
+from mypy_boto3_polly.type_defs import StartSpeechSynthesisTaskInputRequestTypeDef
 ```
 
 Required fields:
@@ -264,10 +264,10 @@ Optional fields:
   `List`\[[SpeechMarkTypeType](./literals.md#speechmarktypetype)\]
 - `TextType`: [TextTypeType](./literals.md#texttypetype)
 
-## StartSpeechSynthesisTaskOutputResponseTypeDef
+## StartSpeechSynthesisTaskOutputTypeDef
 
 ```python
-from mypy_boto3_polly.type_defs import StartSpeechSynthesisTaskOutputResponseTypeDef
+from mypy_boto3_polly.type_defs import StartSpeechSynthesisTaskOutputTypeDef
 ```
 
 Required fields:
@@ -301,10 +301,10 @@ Optional fields:
 - `VoiceId`: [VoiceIdType](./literals.md#voiceidtype)
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 
-## SynthesizeSpeechInputTypeDef
+## SynthesizeSpeechInputRequestTypeDef
 
 ```python
-from mypy_boto3_polly.type_defs import SynthesizeSpeechInputTypeDef
+from mypy_boto3_polly.type_defs import SynthesizeSpeechInputRequestTypeDef
 ```
 
 Required fields:
@@ -323,10 +323,10 @@ Optional fields:
   `List`\[[SpeechMarkTypeType](./literals.md#speechmarktypetype)\]
 - `TextType`: [TextTypeType](./literals.md#texttypetype)
 
-## SynthesizeSpeechOutputResponseTypeDef
+## SynthesizeSpeechOutputTypeDef
 
 ```python
-from mypy_boto3_polly.type_defs import SynthesizeSpeechOutputResponseTypeDef
+from mypy_boto3_polly.type_defs import SynthesizeSpeechOutputTypeDef
 ```
 
 Required fields:

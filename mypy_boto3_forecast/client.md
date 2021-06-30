@@ -11,6 +11,7 @@ type annotations stubs module
   - [ForecastServiceClient](#forecastserviceclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_dataset](#create_dataset)
     - [create_dataset_group](#create_dataset_group)
@@ -90,6 +91,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ForecastServiceClient exceptions.
+
+Type annotations for `boto3.client("forecast").exceptions` method.
+
+Boto3 documentation:
+[ForecastService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -115,7 +127,7 @@ Boto3 documentation:
 [ForecastService.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_dataset)
 
 Arguments mapping described in
-[CreateDatasetRequestTypeDef](./type_defs.md#createdatasetrequesttypedef).
+[CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -129,7 +141,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDatasetResponseResponseTypeDef](./type_defs.md#createdatasetresponseresponsetypedef).
+[CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
 ### create_dataset_group
 
@@ -141,7 +153,7 @@ Boto3 documentation:
 [ForecastService.Client.create_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_dataset_group)
 
 Arguments mapping described in
-[CreateDatasetGroupRequestTypeDef](./type_defs.md#createdatasetgrouprequesttypedef).
+[CreateDatasetGroupRequestRequestTypeDef](./type_defs.md#createdatasetgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -151,7 +163,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDatasetGroupResponseResponseTypeDef](./type_defs.md#createdatasetgroupresponseresponsetypedef).
+[CreateDatasetGroupResponseTypeDef](./type_defs.md#createdatasetgroupresponsetypedef).
 
 ### create_dataset_import_job
 
@@ -164,7 +176,7 @@ Boto3 documentation:
 [ForecastService.Client.create_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_dataset_import_job)
 
 Arguments mapping described in
-[CreateDatasetImportJobRequestTypeDef](./type_defs.md#createdatasetimportjobrequesttypedef).
+[CreateDatasetImportJobRequestRequestTypeDef](./type_defs.md#createdatasetimportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -179,7 +191,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDatasetImportJobResponseResponseTypeDef](./type_defs.md#createdatasetimportjobresponseresponsetypedef).
+[CreateDatasetImportJobResponseTypeDef](./type_defs.md#createdatasetimportjobresponsetypedef).
 
 ### create_forecast
 
@@ -192,7 +204,7 @@ Boto3 documentation:
 [ForecastService.Client.create_forecast](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_forecast)
 
 Arguments mapping described in
-[CreateForecastRequestTypeDef](./type_defs.md#createforecastrequesttypedef).
+[CreateForecastRequestRequestTypeDef](./type_defs.md#createforecastrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -202,7 +214,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateForecastResponseResponseTypeDef](./type_defs.md#createforecastresponseresponsetypedef).
+[CreateForecastResponseTypeDef](./type_defs.md#createforecastresponsetypedef).
 
 ### create_forecast_export_job
 
@@ -216,7 +228,7 @@ Boto3 documentation:
 [ForecastService.Client.create_forecast_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_forecast_export_job)
 
 Arguments mapping described in
-[CreateForecastExportJobRequestTypeDef](./type_defs.md#createforecastexportjobrequesttypedef).
+[CreateForecastExportJobRequestRequestTypeDef](./type_defs.md#createforecastexportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -227,7 +239,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateForecastExportJobResponseResponseTypeDef](./type_defs.md#createforecastexportjobresponseresponsetypedef).
+[CreateForecastExportJobResponseTypeDef](./type_defs.md#createforecastexportjobresponsetypedef).
 
 ### create_predictor
 
@@ -239,7 +251,7 @@ Boto3 documentation:
 [ForecastService.Client.create_predictor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_predictor)
 
 Arguments mapping described in
-[CreatePredictorRequestTypeDef](./type_defs.md#createpredictorrequesttypedef).
+[CreatePredictorRequestRequestTypeDef](./type_defs.md#createpredictorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -266,7 +278,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreatePredictorResponseResponseTypeDef](./type_defs.md#createpredictorresponseresponsetypedef).
+[CreatePredictorResponseTypeDef](./type_defs.md#createpredictorresponsetypedef).
 
 ### create_predictor_backtest_export_job
 
@@ -280,7 +292,7 @@ Boto3 documentation:
 [ForecastService.Client.create_predictor_backtest_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_predictor_backtest_export_job)
 
 Arguments mapping described in
-[CreatePredictorBacktestExportJobRequestTypeDef](./type_defs.md#createpredictorbacktestexportjobrequesttypedef).
+[CreatePredictorBacktestExportJobRequestRequestTypeDef](./type_defs.md#createpredictorbacktestexportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -291,7 +303,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreatePredictorBacktestExportJobResponseResponseTypeDef](./type_defs.md#createpredictorbacktestexportjobresponseresponsetypedef).
+[CreatePredictorBacktestExportJobResponseTypeDef](./type_defs.md#createpredictorbacktestexportjobresponsetypedef).
 
 ### delete_dataset
 
@@ -304,7 +316,7 @@ Boto3 documentation:
 [ForecastService.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_dataset)
 
 Arguments mapping described in
-[DeleteDatasetRequestTypeDef](./type_defs.md#deletedatasetrequesttypedef).
+[DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -320,7 +332,7 @@ Boto3 documentation:
 [ForecastService.Client.delete_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_dataset_group)
 
 Arguments mapping described in
-[DeleteDatasetGroupRequestTypeDef](./type_defs.md#deletedatasetgrouprequesttypedef).
+[DeleteDatasetGroupRequestRequestTypeDef](./type_defs.md#deletedatasetgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -338,7 +350,7 @@ Boto3 documentation:
 [ForecastService.Client.delete_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_dataset_import_job)
 
 Arguments mapping described in
-[DeleteDatasetImportJobRequestTypeDef](./type_defs.md#deletedatasetimportjobrequesttypedef).
+[DeleteDatasetImportJobRequestRequestTypeDef](./type_defs.md#deletedatasetimportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -354,7 +366,7 @@ Boto3 documentation:
 [ForecastService.Client.delete_forecast](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_forecast)
 
 Arguments mapping described in
-[DeleteForecastRequestTypeDef](./type_defs.md#deleteforecastrequesttypedef).
+[DeleteForecastRequestRequestTypeDef](./type_defs.md#deleteforecastrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -372,7 +384,7 @@ Boto3 documentation:
 [ForecastService.Client.delete_forecast_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_forecast_export_job)
 
 Arguments mapping described in
-[DeleteForecastExportJobRequestTypeDef](./type_defs.md#deleteforecastexportjobrequesttypedef).
+[DeleteForecastExportJobRequestRequestTypeDef](./type_defs.md#deleteforecastexportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -388,7 +400,7 @@ Boto3 documentation:
 [ForecastService.Client.delete_predictor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_predictor)
 
 Arguments mapping described in
-[DeletePredictorRequestTypeDef](./type_defs.md#deletepredictorrequesttypedef).
+[DeletePredictorRequestRequestTypeDef](./type_defs.md#deletepredictorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -405,7 +417,7 @@ Boto3 documentation:
 [ForecastService.Client.delete_predictor_backtest_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_predictor_backtest_export_job)
 
 Arguments mapping described in
-[DeletePredictorBacktestExportJobRequestTypeDef](./type_defs.md#deletepredictorbacktestexportjobrequesttypedef).
+[DeletePredictorBacktestExportJobRequestRequestTypeDef](./type_defs.md#deletepredictorbacktestexportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -421,7 +433,7 @@ Boto3 documentation:
 [ForecastService.Client.delete_resource_tree](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_resource_tree)
 
 Arguments mapping described in
-[DeleteResourceTreeRequestTypeDef](./type_defs.md#deleteresourcetreerequesttypedef).
+[DeleteResourceTreeRequestRequestTypeDef](./type_defs.md#deleteresourcetreerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -437,14 +449,14 @@ Boto3 documentation:
 [ForecastService.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_dataset)
 
 Arguments mapping described in
-[DescribeDatasetRequestTypeDef](./type_defs.md#describedatasetrequesttypedef).
+[DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DatasetArn`: `str` *(required)*
 
 Returns
-[DescribeDatasetResponseResponseTypeDef](./type_defs.md#describedatasetresponseresponsetypedef).
+[DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
 
 ### describe_dataset_group
 
@@ -456,14 +468,14 @@ Boto3 documentation:
 [ForecastService.Client.describe_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_dataset_group)
 
 Arguments mapping described in
-[DescribeDatasetGroupRequestTypeDef](./type_defs.md#describedatasetgrouprequesttypedef).
+[DescribeDatasetGroupRequestRequestTypeDef](./type_defs.md#describedatasetgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DatasetGroupArn`: `str` *(required)*
 
 Returns
-[DescribeDatasetGroupResponseResponseTypeDef](./type_defs.md#describedatasetgroupresponseresponsetypedef).
+[DescribeDatasetGroupResponseTypeDef](./type_defs.md#describedatasetgroupresponsetypedef).
 
 ### describe_dataset_import_job
 
@@ -477,14 +489,14 @@ Boto3 documentation:
 [ForecastService.Client.describe_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_dataset_import_job)
 
 Arguments mapping described in
-[DescribeDatasetImportJobRequestTypeDef](./type_defs.md#describedatasetimportjobrequesttypedef).
+[DescribeDatasetImportJobRequestRequestTypeDef](./type_defs.md#describedatasetimportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DatasetImportJobArn`: `str` *(required)*
 
 Returns
-[DescribeDatasetImportJobResponseResponseTypeDef](./type_defs.md#describedatasetimportjobresponseresponsetypedef).
+[DescribeDatasetImportJobResponseTypeDef](./type_defs.md#describedatasetimportjobresponsetypedef).
 
 ### describe_forecast
 
@@ -496,14 +508,14 @@ Boto3 documentation:
 [ForecastService.Client.describe_forecast](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_forecast)
 
 Arguments mapping described in
-[DescribeForecastRequestTypeDef](./type_defs.md#describeforecastrequesttypedef).
+[DescribeForecastRequestRequestTypeDef](./type_defs.md#describeforecastrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ForecastArn`: `str` *(required)*
 
 Returns
-[DescribeForecastResponseResponseTypeDef](./type_defs.md#describeforecastresponseresponsetypedef).
+[DescribeForecastResponseTypeDef](./type_defs.md#describeforecastresponsetypedef).
 
 ### describe_forecast_export_job
 
@@ -517,14 +529,14 @@ Boto3 documentation:
 [ForecastService.Client.describe_forecast_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_forecast_export_job)
 
 Arguments mapping described in
-[DescribeForecastExportJobRequestTypeDef](./type_defs.md#describeforecastexportjobrequesttypedef).
+[DescribeForecastExportJobRequestRequestTypeDef](./type_defs.md#describeforecastexportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ForecastExportJobArn`: `str` *(required)*
 
 Returns
-[DescribeForecastExportJobResponseResponseTypeDef](./type_defs.md#describeforecastexportjobresponseresponsetypedef).
+[DescribeForecastExportJobResponseTypeDef](./type_defs.md#describeforecastexportjobresponsetypedef).
 
 ### describe_predictor
 
@@ -536,14 +548,14 @@ Boto3 documentation:
 [ForecastService.Client.describe_predictor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_predictor)
 
 Arguments mapping described in
-[DescribePredictorRequestTypeDef](./type_defs.md#describepredictorrequesttypedef).
+[DescribePredictorRequestRequestTypeDef](./type_defs.md#describepredictorrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `PredictorArn`: `str` *(required)*
 
 Returns
-[DescribePredictorResponseResponseTypeDef](./type_defs.md#describepredictorresponseresponsetypedef).
+[DescribePredictorResponseTypeDef](./type_defs.md#describepredictorresponsetypedef).
 
 ### describe_predictor_backtest_export_job
 
@@ -557,14 +569,14 @@ Boto3 documentation:
 [ForecastService.Client.describe_predictor_backtest_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_predictor_backtest_export_job)
 
 Arguments mapping described in
-[DescribePredictorBacktestExportJobRequestTypeDef](./type_defs.md#describepredictorbacktestexportjobrequesttypedef).
+[DescribePredictorBacktestExportJobRequestRequestTypeDef](./type_defs.md#describepredictorbacktestexportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `PredictorBacktestExportJobArn`: `str` *(required)*
 
 Returns
-[DescribePredictorBacktestExportJobResponseResponseTypeDef](./type_defs.md#describepredictorbacktestexportjobresponseresponsetypedef).
+[DescribePredictorBacktestExportJobResponseTypeDef](./type_defs.md#describepredictorbacktestexportjobresponsetypedef).
 
 ### generate_presigned_url
 
@@ -595,14 +607,14 @@ Boto3 documentation:
 [ForecastService.Client.get_accuracy_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.get_accuracy_metrics)
 
 Arguments mapping described in
-[GetAccuracyMetricsRequestTypeDef](./type_defs.md#getaccuracymetricsrequesttypedef).
+[GetAccuracyMetricsRequestRequestTypeDef](./type_defs.md#getaccuracymetricsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `PredictorArn`: `str` *(required)*
 
 Returns
-[GetAccuracyMetricsResponseResponseTypeDef](./type_defs.md#getaccuracymetricsresponseresponsetypedef).
+[GetAccuracyMetricsResponseTypeDef](./type_defs.md#getaccuracymetricsresponsetypedef).
 
 ### list_dataset_groups
 
@@ -615,7 +627,7 @@ Boto3 documentation:
 [ForecastService.Client.list_dataset_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_dataset_groups)
 
 Arguments mapping described in
-[ListDatasetGroupsRequestTypeDef](./type_defs.md#listdatasetgroupsrequesttypedef).
+[ListDatasetGroupsRequestRequestTypeDef](./type_defs.md#listdatasetgroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -623,7 +635,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDatasetGroupsResponseResponseTypeDef](./type_defs.md#listdatasetgroupsresponseresponsetypedef).
+[ListDatasetGroupsResponseTypeDef](./type_defs.md#listdatasetgroupsresponsetypedef).
 
 ### list_dataset_import_jobs
 
@@ -637,7 +649,7 @@ Boto3 documentation:
 [ForecastService.Client.list_dataset_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_dataset_import_jobs)
 
 Arguments mapping described in
-[ListDatasetImportJobsRequestTypeDef](./type_defs.md#listdatasetimportjobsrequesttypedef).
+[ListDatasetImportJobsRequestRequestTypeDef](./type_defs.md#listdatasetimportjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -646,7 +658,7 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListDatasetImportJobsResponseResponseTypeDef](./type_defs.md#listdatasetimportjobsresponseresponsetypedef).
+[ListDatasetImportJobsResponseTypeDef](./type_defs.md#listdatasetimportjobsresponsetypedef).
 
 ### list_datasets
 
@@ -658,7 +670,7 @@ Boto3 documentation:
 [ForecastService.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_datasets)
 
 Arguments mapping described in
-[ListDatasetsRequestTypeDef](./type_defs.md#listdatasetsrequesttypedef).
+[ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -666,7 +678,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDatasetsResponseResponseTypeDef](./type_defs.md#listdatasetsresponseresponsetypedef).
+[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
 
 ### list_forecast_export_jobs
 
@@ -680,7 +692,7 @@ Boto3 documentation:
 [ForecastService.Client.list_forecast_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_forecast_export_jobs)
 
 Arguments mapping described in
-[ListForecastExportJobsRequestTypeDef](./type_defs.md#listforecastexportjobsrequesttypedef).
+[ListForecastExportJobsRequestRequestTypeDef](./type_defs.md#listforecastexportjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -689,7 +701,7 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListForecastExportJobsResponseResponseTypeDef](./type_defs.md#listforecastexportjobsresponseresponsetypedef).
+[ListForecastExportJobsResponseTypeDef](./type_defs.md#listforecastexportjobsresponsetypedef).
 
 ### list_forecasts
 
@@ -701,7 +713,7 @@ Boto3 documentation:
 [ForecastService.Client.list_forecasts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_forecasts)
 
 Arguments mapping described in
-[ListForecastsRequestTypeDef](./type_defs.md#listforecastsrequesttypedef).
+[ListForecastsRequestRequestTypeDef](./type_defs.md#listforecastsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -710,7 +722,7 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListForecastsResponseResponseTypeDef](./type_defs.md#listforecastsresponseresponsetypedef).
+[ListForecastsResponseTypeDef](./type_defs.md#listforecastsresponsetypedef).
 
 ### list_predictor_backtest_export_jobs
 
@@ -724,7 +736,7 @@ Boto3 documentation:
 [ForecastService.Client.list_predictor_backtest_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_predictor_backtest_export_jobs)
 
 Arguments mapping described in
-[ListPredictorBacktestExportJobsRequestTypeDef](./type_defs.md#listpredictorbacktestexportjobsrequesttypedef).
+[ListPredictorBacktestExportJobsRequestRequestTypeDef](./type_defs.md#listpredictorbacktestexportjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -733,7 +745,7 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListPredictorBacktestExportJobsResponseResponseTypeDef](./type_defs.md#listpredictorbacktestexportjobsresponseresponsetypedef).
+[ListPredictorBacktestExportJobsResponseTypeDef](./type_defs.md#listpredictorbacktestexportjobsresponsetypedef).
 
 ### list_predictors
 
@@ -745,7 +757,7 @@ Boto3 documentation:
 [ForecastService.Client.list_predictors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_predictors)
 
 Arguments mapping described in
-[ListPredictorsRequestTypeDef](./type_defs.md#listpredictorsrequesttypedef).
+[ListPredictorsRequestRequestTypeDef](./type_defs.md#listpredictorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -754,7 +766,7 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListPredictorsResponseResponseTypeDef](./type_defs.md#listpredictorsresponseresponsetypedef).
+[ListPredictorsResponseTypeDef](./type_defs.md#listpredictorsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -766,14 +778,14 @@ Boto3 documentation:
 [ForecastService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### stop_resource
 
@@ -785,7 +797,7 @@ Boto3 documentation:
 [ForecastService.Client.stop_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.stop_resource)
 
 Arguments mapping described in
-[StopResourceRequestTypeDef](./type_defs.md#stopresourcerequesttypedef).
+[StopResourceRequestRequestTypeDef](./type_defs.md#stopresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -801,7 +813,7 @@ Boto3 documentation:
 [ForecastService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -820,7 +832,7 @@ Boto3 documentation:
 [ForecastService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -839,7 +851,7 @@ Boto3 documentation:
 [ForecastService.Client.update_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.update_dataset_group)
 
 Arguments mapping described in
-[UpdateDatasetGroupRequestTypeDef](./type_defs.md#updatedatasetgrouprequesttypedef).
+[UpdateDatasetGroupRequestRequestTypeDef](./type_defs.md#updatedatasetgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 

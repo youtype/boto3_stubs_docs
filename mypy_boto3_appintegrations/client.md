@@ -11,6 +11,7 @@ type annotations stubs module
   - [AppIntegrationsServiceClient](#appintegrationsserviceclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_event_integration](#create_event_integration)
     - [delete_event_integration](#delete_event_integration)
@@ -64,6 +65,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+AppIntegrationsServiceClient exceptions.
+
+Type annotations for `boto3.client("appintegrations").exceptions` method.
+
+Boto3 documentation:
+[AppIntegrationsService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -91,7 +103,7 @@ Boto3 documentation:
 [AppIntegrationsService.Client.create_event_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.create_event_integration)
 
 Arguments mapping described in
-[CreateEventIntegrationRequestTypeDef](./type_defs.md#createeventintegrationrequesttypedef).
+[CreateEventIntegrationRequestRequestTypeDef](./type_defs.md#createeventintegrationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -104,7 +116,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateEventIntegrationResponseResponseTypeDef](./type_defs.md#createeventintegrationresponseresponsetypedef).
+[CreateEventIntegrationResponseTypeDef](./type_defs.md#createeventintegrationresponsetypedef).
 
 ### delete_event_integration
 
@@ -118,7 +130,7 @@ Boto3 documentation:
 [AppIntegrationsService.Client.delete_event_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.delete_event_integration)
 
 Arguments mapping described in
-[DeleteEventIntegrationRequestTypeDef](./type_defs.md#deleteeventintegrationrequesttypedef).
+[DeleteEventIntegrationRequestRequestTypeDef](./type_defs.md#deleteeventintegrationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -157,14 +169,14 @@ Boto3 documentation:
 [AppIntegrationsService.Client.get_event_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.get_event_integration)
 
 Arguments mapping described in
-[GetEventIntegrationRequestTypeDef](./type_defs.md#geteventintegrationrequesttypedef).
+[GetEventIntegrationRequestRequestTypeDef](./type_defs.md#geteventintegrationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[GetEventIntegrationResponseResponseTypeDef](./type_defs.md#geteventintegrationresponseresponsetypedef).
+[GetEventIntegrationResponseTypeDef](./type_defs.md#geteventintegrationresponsetypedef).
 
 ### list_event_integration_associations
 
@@ -178,7 +190,7 @@ Boto3 documentation:
 [AppIntegrationsService.Client.list_event_integration_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_event_integration_associations)
 
 Arguments mapping described in
-[ListEventIntegrationAssociationsRequestTypeDef](./type_defs.md#listeventintegrationassociationsrequesttypedef).
+[ListEventIntegrationAssociationsRequestRequestTypeDef](./type_defs.md#listeventintegrationassociationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -187,7 +199,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListEventIntegrationAssociationsResponseResponseTypeDef](./type_defs.md#listeventintegrationassociationsresponseresponsetypedef).
+[ListEventIntegrationAssociationsResponseTypeDef](./type_defs.md#listeventintegrationassociationsresponsetypedef).
 
 ### list_event_integrations
 
@@ -201,7 +213,7 @@ Boto3 documentation:
 [AppIntegrationsService.Client.list_event_integrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_event_integrations)
 
 Arguments mapping described in
-[ListEventIntegrationsRequestTypeDef](./type_defs.md#listeventintegrationsrequesttypedef).
+[ListEventIntegrationsRequestRequestTypeDef](./type_defs.md#listeventintegrationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -209,7 +221,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListEventIntegrationsResponseResponseTypeDef](./type_defs.md#listeventintegrationsresponseresponsetypedef).
+[ListEventIntegrationsResponseTypeDef](./type_defs.md#listeventintegrationsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -223,14 +235,14 @@ Boto3 documentation:
 [AppIntegrationsService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -243,7 +255,7 @@ Boto3 documentation:
 [AppIntegrationsService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -263,7 +275,7 @@ Boto3 documentation:
 [AppIntegrationsService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -284,7 +296,7 @@ Boto3 documentation:
 [AppIntegrationsService.Client.update_event_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.update_event_integration)
 
 Arguments mapping described in
-[UpdateEventIntegrationRequestTypeDef](./type_defs.md#updateeventintegrationrequesttypedef).
+[UpdateEventIntegrationRequestRequestTypeDef](./type_defs.md#updateeventintegrationrequestrequesttypedef).
 
 Keyword-only arguments:
 

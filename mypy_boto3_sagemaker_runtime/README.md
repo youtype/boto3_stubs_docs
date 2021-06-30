@@ -31,6 +31,7 @@ from mypy_boto3_sagemaker_runtime.client import SageMakerRuntimeClient
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [invoke_endpoint](./client.md#invoke_endpoint)
 
@@ -52,9 +53,9 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker_runtime.type_defs import InvokeEndpointInputTypeDef, ...
+from mypy_boto3_sagemaker_runtime.type_defs import InvokeEndpointInputRequestTypeDef, ...
 ```
 
-- [InvokeEndpointInputTypeDef](./type_defs.md#invokeendpointinputtypedef)
-- [InvokeEndpointOutputResponseTypeDef](./type_defs.md#invokeendpointoutputresponsetypedef)
+- [InvokeEndpointInputRequestTypeDef](./type_defs.md#invokeendpointinputrequesttypedef)
+- [InvokeEndpointOutputTypeDef](./type_defs.md#invokeendpointoutputtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

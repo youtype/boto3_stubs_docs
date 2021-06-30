@@ -11,6 +11,7 @@ type annotations stubs module
   - [PinpointEmailClient](#pinpointemailclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_configuration_set](#create_configuration_set)
     - [create_configuration_set_event_destination](#create_configuration_set_event_destination)
@@ -101,6 +102,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+PinpointEmailClient exceptions.
+
+Type annotations for `boto3.client("pinpoint-email").exceptions` method.
+
+Boto3 documentation:
+[PinpointEmail.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -127,7 +139,7 @@ Boto3 documentation:
 [PinpointEmail.Client.create_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_configuration_set)
 
 Arguments mapping described in
-[CreateConfigurationSetRequestTypeDef](./type_defs.md#createconfigurationsetrequesttypedef).
+[CreateConfigurationSetRequestRequestTypeDef](./type_defs.md#createconfigurationsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -156,7 +168,7 @@ Boto3 documentation:
 [PinpointEmail.Client.create_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_configuration_set_event_destination)
 
 Arguments mapping described in
-[CreateConfigurationSetEventDestinationRequestTypeDef](./type_defs.md#createconfigurationseteventdestinationrequesttypedef).
+[CreateConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#createconfigurationseteventdestinationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -179,7 +191,7 @@ Boto3 documentation:
 [PinpointEmail.Client.create_dedicated_ip_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_dedicated_ip_pool)
 
 Arguments mapping described in
-[CreateDedicatedIpPoolRequestTypeDef](./type_defs.md#creatededicatedippoolrequesttypedef).
+[CreateDedicatedIpPoolRequestRequestTypeDef](./type_defs.md#creatededicatedippoolrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -199,7 +211,7 @@ Boto3 documentation:
 [PinpointEmail.Client.create_deliverability_test_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_deliverability_test_report)
 
 Arguments mapping described in
-[CreateDeliverabilityTestReportRequestTypeDef](./type_defs.md#createdeliverabilitytestreportrequesttypedef).
+[CreateDeliverabilityTestReportRequestRequestTypeDef](./type_defs.md#createdeliverabilitytestreportrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -210,7 +222,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDeliverabilityTestReportResponseResponseTypeDef](./type_defs.md#createdeliverabilitytestreportresponseresponsetypedef).
+[CreateDeliverabilityTestReportResponseTypeDef](./type_defs.md#createdeliverabilitytestreportresponsetypedef).
 
 ### create_email_identity
 
@@ -223,7 +235,7 @@ Boto3 documentation:
 [PinpointEmail.Client.create_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_email_identity)
 
 Arguments mapping described in
-[CreateEmailIdentityRequestTypeDef](./type_defs.md#createemailidentityrequesttypedef).
+[CreateEmailIdentityRequestRequestTypeDef](./type_defs.md#createemailidentityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -231,7 +243,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateEmailIdentityResponseResponseTypeDef](./type_defs.md#createemailidentityresponseresponsetypedef).
+[CreateEmailIdentityResponseTypeDef](./type_defs.md#createemailidentityresponsetypedef).
 
 ### delete_configuration_set
 
@@ -244,7 +256,7 @@ Boto3 documentation:
 [PinpointEmail.Client.delete_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_configuration_set)
 
 Arguments mapping described in
-[DeleteConfigurationSetRequestTypeDef](./type_defs.md#deleteconfigurationsetrequesttypedef).
+[DeleteConfigurationSetRequestRequestTypeDef](./type_defs.md#deleteconfigurationsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -264,7 +276,7 @@ Boto3 documentation:
 [PinpointEmail.Client.delete_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_configuration_set_event_destination)
 
 Arguments mapping described in
-[DeleteConfigurationSetEventDestinationRequestTypeDef](./type_defs.md#deleteconfigurationseteventdestinationrequesttypedef).
+[DeleteConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#deleteconfigurationseteventdestinationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -284,7 +296,7 @@ Boto3 documentation:
 [PinpointEmail.Client.delete_dedicated_ip_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_dedicated_ip_pool)
 
 Arguments mapping described in
-[DeleteDedicatedIpPoolRequestTypeDef](./type_defs.md#deletededicatedippoolrequesttypedef).
+[DeleteDedicatedIpPoolRequestRequestTypeDef](./type_defs.md#deletededicatedippoolrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -304,7 +316,7 @@ Boto3 documentation:
 [PinpointEmail.Client.delete_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_email_identity)
 
 Arguments mapping described in
-[DeleteEmailIdentityRequestTypeDef](./type_defs.md#deleteemailidentityrequesttypedef).
+[DeleteEmailIdentityRequestRequestTypeDef](./type_defs.md#deleteemailidentityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -341,8 +353,7 @@ Type annotations for `boto3.client("pinpoint-email").get_account` method.
 Boto3 documentation:
 [PinpointEmail.Client.get_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_account)
 
-Returns
-[GetAccountResponseResponseTypeDef](./type_defs.md#getaccountresponseresponsetypedef).
+Returns [GetAccountResponseTypeDef](./type_defs.md#getaccountresponsetypedef).
 
 ### get_blacklist_reports
 
@@ -355,14 +366,14 @@ Boto3 documentation:
 [PinpointEmail.Client.get_blacklist_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_blacklist_reports)
 
 Arguments mapping described in
-[GetBlacklistReportsRequestTypeDef](./type_defs.md#getblacklistreportsrequesttypedef).
+[GetBlacklistReportsRequestRequestTypeDef](./type_defs.md#getblacklistreportsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `BlacklistItemNames`: `List`\[`str`\] *(required)*
 
 Returns
-[GetBlacklistReportsResponseResponseTypeDef](./type_defs.md#getblacklistreportsresponseresponsetypedef).
+[GetBlacklistReportsResponseTypeDef](./type_defs.md#getblacklistreportsresponsetypedef).
 
 ### get_configuration_set
 
@@ -377,14 +388,14 @@ Boto3 documentation:
 [PinpointEmail.Client.get_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_configuration_set)
 
 Arguments mapping described in
-[GetConfigurationSetRequestTypeDef](./type_defs.md#getconfigurationsetrequesttypedef).
+[GetConfigurationSetRequestRequestTypeDef](./type_defs.md#getconfigurationsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 
 Returns
-[GetConfigurationSetResponseResponseTypeDef](./type_defs.md#getconfigurationsetresponseresponsetypedef).
+[GetConfigurationSetResponseTypeDef](./type_defs.md#getconfigurationsetresponsetypedef).
 
 ### get_configuration_set_event_destinations
 
@@ -399,14 +410,14 @@ Boto3 documentation:
 [PinpointEmail.Client.get_configuration_set_event_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_configuration_set_event_destinations)
 
 Arguments mapping described in
-[GetConfigurationSetEventDestinationsRequestTypeDef](./type_defs.md#getconfigurationseteventdestinationsrequesttypedef).
+[GetConfigurationSetEventDestinationsRequestRequestTypeDef](./type_defs.md#getconfigurationseteventdestinationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 
 Returns
-[GetConfigurationSetEventDestinationsResponseResponseTypeDef](./type_defs.md#getconfigurationseteventdestinationsresponseresponsetypedef).
+[GetConfigurationSetEventDestinationsResponseTypeDef](./type_defs.md#getconfigurationseteventdestinationsresponsetypedef).
 
 ### get_dedicated_ip
 
@@ -420,14 +431,14 @@ Boto3 documentation:
 [PinpointEmail.Client.get_dedicated_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_dedicated_ip)
 
 Arguments mapping described in
-[GetDedicatedIpRequestTypeDef](./type_defs.md#getdedicatediprequesttypedef).
+[GetDedicatedIpRequestRequestTypeDef](./type_defs.md#getdedicatediprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Ip`: `str` *(required)*
 
 Returns
-[GetDedicatedIpResponseResponseTypeDef](./type_defs.md#getdedicatedipresponseresponsetypedef).
+[GetDedicatedIpResponseTypeDef](./type_defs.md#getdedicatedipresponsetypedef).
 
 ### get_dedicated_ips
 
@@ -440,7 +451,7 @@ Boto3 documentation:
 [PinpointEmail.Client.get_dedicated_ips](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_dedicated_ips)
 
 Arguments mapping described in
-[GetDedicatedIpsRequestTypeDef](./type_defs.md#getdedicatedipsrequesttypedef).
+[GetDedicatedIpsRequestRequestTypeDef](./type_defs.md#getdedicatedipsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -449,7 +460,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[GetDedicatedIpsResponseResponseTypeDef](./type_defs.md#getdedicatedipsresponseresponsetypedef).
+[GetDedicatedIpsResponseTypeDef](./type_defs.md#getdedicatedipsresponsetypedef).
 
 ### get_deliverability_dashboard_options
 
@@ -463,7 +474,7 @@ Boto3 documentation:
 [PinpointEmail.Client.get_deliverability_dashboard_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_deliverability_dashboard_options)
 
 Returns
-[GetDeliverabilityDashboardOptionsResponseResponseTypeDef](./type_defs.md#getdeliverabilitydashboardoptionsresponseresponsetypedef).
+[GetDeliverabilityDashboardOptionsResponseTypeDef](./type_defs.md#getdeliverabilitydashboardoptionsresponsetypedef).
 
 ### get_deliverability_test_report
 
@@ -476,14 +487,14 @@ Boto3 documentation:
 [PinpointEmail.Client.get_deliverability_test_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_deliverability_test_report)
 
 Arguments mapping described in
-[GetDeliverabilityTestReportRequestTypeDef](./type_defs.md#getdeliverabilitytestreportrequesttypedef).
+[GetDeliverabilityTestReportRequestRequestTypeDef](./type_defs.md#getdeliverabilitytestreportrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ReportId`: `str` *(required)*
 
 Returns
-[GetDeliverabilityTestReportResponseResponseTypeDef](./type_defs.md#getdeliverabilitytestreportresponseresponsetypedef).
+[GetDeliverabilityTestReportResponseTypeDef](./type_defs.md#getdeliverabilitytestreportresponsetypedef).
 
 ### get_domain_deliverability_campaign
 
@@ -496,14 +507,14 @@ Boto3 documentation:
 [PinpointEmail.Client.get_domain_deliverability_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_domain_deliverability_campaign)
 
 Arguments mapping described in
-[GetDomainDeliverabilityCampaignRequestTypeDef](./type_defs.md#getdomaindeliverabilitycampaignrequesttypedef).
+[GetDomainDeliverabilityCampaignRequestRequestTypeDef](./type_defs.md#getdomaindeliverabilitycampaignrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `CampaignId`: `str` *(required)*
 
 Returns
-[GetDomainDeliverabilityCampaignResponseResponseTypeDef](./type_defs.md#getdomaindeliverabilitycampaignresponseresponsetypedef).
+[GetDomainDeliverabilityCampaignResponseTypeDef](./type_defs.md#getdomaindeliverabilitycampaignresponsetypedef).
 
 ### get_domain_statistics_report
 
@@ -517,7 +528,7 @@ Boto3 documentation:
 [PinpointEmail.Client.get_domain_statistics_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_domain_statistics_report)
 
 Arguments mapping described in
-[GetDomainStatisticsReportRequestTypeDef](./type_defs.md#getdomainstatisticsreportrequesttypedef).
+[GetDomainStatisticsReportRequestRequestTypeDef](./type_defs.md#getdomainstatisticsreportrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -526,7 +537,7 @@ Keyword-only arguments:
 - `EndDate`: `Union`\[`datetime`, `str`\] *(required)*
 
 Returns
-[GetDomainStatisticsReportResponseResponseTypeDef](./type_defs.md#getdomainstatisticsreportresponseresponsetypedef).
+[GetDomainStatisticsReportResponseTypeDef](./type_defs.md#getdomainstatisticsreportresponsetypedef).
 
 ### get_email_identity
 
@@ -541,14 +552,14 @@ Boto3 documentation:
 [PinpointEmail.Client.get_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_email_identity)
 
 Arguments mapping described in
-[GetEmailIdentityRequestTypeDef](./type_defs.md#getemailidentityrequesttypedef).
+[GetEmailIdentityRequestRequestTypeDef](./type_defs.md#getemailidentityrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `EmailIdentity`: `str` *(required)*
 
 Returns
-[GetEmailIdentityResponseResponseTypeDef](./type_defs.md#getemailidentityresponseresponsetypedef).
+[GetEmailIdentityResponseTypeDef](./type_defs.md#getemailidentityresponsetypedef).
 
 ### list_configuration_sets
 
@@ -562,7 +573,7 @@ Boto3 documentation:
 [PinpointEmail.Client.list_configuration_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_configuration_sets)
 
 Arguments mapping described in
-[ListConfigurationSetsRequestTypeDef](./type_defs.md#listconfigurationsetsrequesttypedef).
+[ListConfigurationSetsRequestRequestTypeDef](./type_defs.md#listconfigurationsetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -570,7 +581,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[ListConfigurationSetsResponseResponseTypeDef](./type_defs.md#listconfigurationsetsresponseresponsetypedef).
+[ListConfigurationSetsResponseTypeDef](./type_defs.md#listconfigurationsetsresponsetypedef).
 
 ### list_dedicated_ip_pools
 
@@ -584,7 +595,7 @@ Boto3 documentation:
 [PinpointEmail.Client.list_dedicated_ip_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_dedicated_ip_pools)
 
 Arguments mapping described in
-[ListDedicatedIpPoolsRequestTypeDef](./type_defs.md#listdedicatedippoolsrequesttypedef).
+[ListDedicatedIpPoolsRequestRequestTypeDef](./type_defs.md#listdedicatedippoolsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -592,7 +603,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[ListDedicatedIpPoolsResponseResponseTypeDef](./type_defs.md#listdedicatedippoolsresponseresponsetypedef).
+[ListDedicatedIpPoolsResponseTypeDef](./type_defs.md#listdedicatedippoolsresponsetypedef).
 
 ### list_deliverability_test_reports
 
@@ -606,7 +617,7 @@ Boto3 documentation:
 [PinpointEmail.Client.list_deliverability_test_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_deliverability_test_reports)
 
 Arguments mapping described in
-[ListDeliverabilityTestReportsRequestTypeDef](./type_defs.md#listdeliverabilitytestreportsrequesttypedef).
+[ListDeliverabilityTestReportsRequestRequestTypeDef](./type_defs.md#listdeliverabilitytestreportsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -614,7 +625,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[ListDeliverabilityTestReportsResponseResponseTypeDef](./type_defs.md#listdeliverabilitytestreportsresponseresponsetypedef).
+[ListDeliverabilityTestReportsResponseTypeDef](./type_defs.md#listdeliverabilitytestreportsresponsetypedef).
 
 ### list_domain_deliverability_campaigns
 
@@ -628,7 +639,7 @@ Boto3 documentation:
 [PinpointEmail.Client.list_domain_deliverability_campaigns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_domain_deliverability_campaigns)
 
 Arguments mapping described in
-[ListDomainDeliverabilityCampaignsRequestTypeDef](./type_defs.md#listdomaindeliverabilitycampaignsrequesttypedef).
+[ListDomainDeliverabilityCampaignsRequestRequestTypeDef](./type_defs.md#listdomaindeliverabilitycampaignsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -639,7 +650,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[ListDomainDeliverabilityCampaignsResponseResponseTypeDef](./type_defs.md#listdomaindeliverabilitycampaignsresponseresponsetypedef).
+[ListDomainDeliverabilityCampaignsResponseTypeDef](./type_defs.md#listdomaindeliverabilitycampaignsresponsetypedef).
 
 ### list_email_identities
 
@@ -653,7 +664,7 @@ Boto3 documentation:
 [PinpointEmail.Client.list_email_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_email_identities)
 
 Arguments mapping described in
-[ListEmailIdentitiesRequestTypeDef](./type_defs.md#listemailidentitiesrequesttypedef).
+[ListEmailIdentitiesRequestRequestTypeDef](./type_defs.md#listemailidentitiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -661,7 +672,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[ListEmailIdentitiesResponseResponseTypeDef](./type_defs.md#listemailidentitiesresponseresponsetypedef).
+[ListEmailIdentitiesResponseTypeDef](./type_defs.md#listemailidentitiesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -675,14 +686,14 @@ Boto3 documentation:
 [PinpointEmail.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_account_dedicated_ip_warmup_attributes
 
@@ -696,7 +707,7 @@ Boto3 documentation:
 [PinpointEmail.Client.put_account_dedicated_ip_warmup_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_account_dedicated_ip_warmup_attributes)
 
 Arguments mapping described in
-[PutAccountDedicatedIpWarmupAttributesRequestTypeDef](./type_defs.md#putaccountdedicatedipwarmupattributesrequesttypedef).
+[PutAccountDedicatedIpWarmupAttributesRequestRequestTypeDef](./type_defs.md#putaccountdedicatedipwarmupattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -715,7 +726,7 @@ Boto3 documentation:
 [PinpointEmail.Client.put_account_sending_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_account_sending_attributes)
 
 Arguments mapping described in
-[PutAccountSendingAttributesRequestTypeDef](./type_defs.md#putaccountsendingattributesrequesttypedef).
+[PutAccountSendingAttributesRequestRequestTypeDef](./type_defs.md#putaccountsendingattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -734,7 +745,7 @@ Boto3 documentation:
 [PinpointEmail.Client.put_configuration_set_delivery_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_delivery_options)
 
 Arguments mapping described in
-[PutConfigurationSetDeliveryOptionsRequestTypeDef](./type_defs.md#putconfigurationsetdeliveryoptionsrequesttypedef).
+[PutConfigurationSetDeliveryOptionsRequestRequestTypeDef](./type_defs.md#putconfigurationsetdeliveryoptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -757,7 +768,7 @@ Boto3 documentation:
 [PinpointEmail.Client.put_configuration_set_reputation_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_reputation_options)
 
 Arguments mapping described in
-[PutConfigurationSetReputationOptionsRequestTypeDef](./type_defs.md#putconfigurationsetreputationoptionsrequesttypedef).
+[PutConfigurationSetReputationOptionsRequestRequestTypeDef](./type_defs.md#putconfigurationsetreputationoptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -778,7 +789,7 @@ Boto3 documentation:
 [PinpointEmail.Client.put_configuration_set_sending_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_sending_options)
 
 Arguments mapping described in
-[PutConfigurationSetSendingOptionsRequestTypeDef](./type_defs.md#putconfigurationsetsendingoptionsrequesttypedef).
+[PutConfigurationSetSendingOptionsRequestRequestTypeDef](./type_defs.md#putconfigurationsetsendingoptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -799,7 +810,7 @@ Boto3 documentation:
 [PinpointEmail.Client.put_configuration_set_tracking_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_tracking_options)
 
 Arguments mapping described in
-[PutConfigurationSetTrackingOptionsRequestTypeDef](./type_defs.md#putconfigurationsettrackingoptionsrequesttypedef).
+[PutConfigurationSetTrackingOptionsRequestRequestTypeDef](./type_defs.md#putconfigurationsettrackingoptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -819,7 +830,7 @@ Boto3 documentation:
 [PinpointEmail.Client.put_dedicated_ip_in_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_dedicated_ip_in_pool)
 
 Arguments mapping described in
-[PutDedicatedIpInPoolRequestTypeDef](./type_defs.md#putdedicatedipinpoolrequesttypedef).
+[PutDedicatedIpInPoolRequestRequestTypeDef](./type_defs.md#putdedicatedipinpoolrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -842,7 +853,7 @@ Boto3 documentation:
 [PinpointEmail.Client.put_dedicated_ip_warmup_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_dedicated_ip_warmup_attributes)
 
 Arguments mapping described in
-[PutDedicatedIpWarmupAttributesRequestTypeDef](./type_defs.md#putdedicatedipwarmupattributesrequesttypedef).
+[PutDedicatedIpWarmupAttributesRequestRequestTypeDef](./type_defs.md#putdedicatedipwarmupattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -863,7 +874,7 @@ Boto3 documentation:
 [PinpointEmail.Client.put_deliverability_dashboard_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_deliverability_dashboard_option)
 
 Arguments mapping described in
-[PutDeliverabilityDashboardOptionRequestTypeDef](./type_defs.md#putdeliverabilitydashboardoptionrequesttypedef).
+[PutDeliverabilityDashboardOptionRequestRequestTypeDef](./type_defs.md#putdeliverabilitydashboardoptionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -884,7 +895,7 @@ Boto3 documentation:
 [PinpointEmail.Client.put_email_identity_dkim_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_email_identity_dkim_attributes)
 
 Arguments mapping described in
-[PutEmailIdentityDkimAttributesRequestTypeDef](./type_defs.md#putemailidentitydkimattributesrequesttypedef).
+[PutEmailIdentityDkimAttributesRequestRequestTypeDef](./type_defs.md#putemailidentitydkimattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -904,7 +915,7 @@ Boto3 documentation:
 [PinpointEmail.Client.put_email_identity_feedback_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_email_identity_feedback_attributes)
 
 Arguments mapping described in
-[PutEmailIdentityFeedbackAttributesRequestTypeDef](./type_defs.md#putemailidentityfeedbackattributesrequesttypedef).
+[PutEmailIdentityFeedbackAttributesRequestRequestTypeDef](./type_defs.md#putemailidentityfeedbackattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -926,7 +937,7 @@ Boto3 documentation:
 [PinpointEmail.Client.put_email_identity_mail_from_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_email_identity_mail_from_attributes)
 
 Arguments mapping described in
-[PutEmailIdentityMailFromAttributesRequestTypeDef](./type_defs.md#putemailidentitymailfromattributesrequesttypedef).
+[PutEmailIdentityMailFromAttributesRequestRequestTypeDef](./type_defs.md#putemailidentitymailfromattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -947,7 +958,7 @@ Boto3 documentation:
 [PinpointEmail.Client.send_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.send_email)
 
 Arguments mapping described in
-[SendEmailRequestTypeDef](./type_defs.md#sendemailrequesttypedef).
+[SendEmailRequestRequestTypeDef](./type_defs.md#sendemailrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -961,8 +972,7 @@ Keyword-only arguments:
 - `EmailTags`: `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ConfigurationSetName`: `str`
 
-Returns
-[SendEmailResponseResponseTypeDef](./type_defs.md#sendemailresponseresponsetypedef).
+Returns [SendEmailResponseTypeDef](./type_defs.md#sendemailresponsetypedef).
 
 ### tag_resource
 
@@ -974,7 +984,7 @@ Boto3 documentation:
 [PinpointEmail.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -993,7 +1003,7 @@ Boto3 documentation:
 [PinpointEmail.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1014,7 +1024,7 @@ Boto3 documentation:
 [PinpointEmail.Client.update_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.update_configuration_set_event_destination)
 
 Arguments mapping described in
-[UpdateConfigurationSetEventDestinationRequestTypeDef](./type_defs.md#updateconfigurationseteventdestinationrequesttypedef).
+[UpdateConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#updateconfigurationseteventdestinationrequestrequesttypedef).
 
 Keyword-only arguments:
 

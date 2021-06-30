@@ -11,6 +11,7 @@ type annotations stubs module
   - [EventBridgeClient](#eventbridgeclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [activate_event_source](#activate_event_source)
     - [can_paginate](#can_paginate)
     - [cancel_replay](#cancel_replay)
@@ -111,6 +112,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+EventBridgeClient exceptions.
+
+Type annotations for `boto3.client("events").exceptions` method.
+
+Boto3 documentation:
+[EventBridge.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### activate_event_source
 
 Activates a partner event source that has been deactivated.
@@ -121,7 +133,7 @@ Boto3 documentation:
 [EventBridge.Client.activate_event_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.activate_event_source)
 
 Arguments mapping described in
-[ActivateEventSourceRequestTypeDef](./type_defs.md#activateeventsourcerequesttypedef).
+[ActivateEventSourceRequestRequestTypeDef](./type_defs.md#activateeventsourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -152,14 +164,14 @@ Boto3 documentation:
 [EventBridge.Client.cancel_replay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.cancel_replay)
 
 Arguments mapping described in
-[CancelReplayRequestTypeDef](./type_defs.md#cancelreplayrequesttypedef).
+[CancelReplayRequestRequestTypeDef](./type_defs.md#cancelreplayrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ReplayName`: `str` *(required)*
 
 Returns
-[CancelReplayResponseResponseTypeDef](./type_defs.md#cancelreplayresponseresponsetypedef).
+[CancelReplayResponseTypeDef](./type_defs.md#cancelreplayresponsetypedef).
 
 ### create_api_destination
 
@@ -172,7 +184,7 @@ Boto3 documentation:
 [EventBridge.Client.create_api_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_api_destination)
 
 Arguments mapping described in
-[CreateApiDestinationRequestTypeDef](./type_defs.md#createapidestinationrequesttypedef).
+[CreateApiDestinationRequestRequestTypeDef](./type_defs.md#createapidestinationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -186,7 +198,7 @@ Keyword-only arguments:
 - `InvocationRateLimitPerSecond`: `int`
 
 Returns
-[CreateApiDestinationResponseResponseTypeDef](./type_defs.md#createapidestinationresponseresponsetypedef).
+[CreateApiDestinationResponseTypeDef](./type_defs.md#createapidestinationresponsetypedef).
 
 ### create_archive
 
@@ -198,7 +210,7 @@ Boto3 documentation:
 [EventBridge.Client.create_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_archive)
 
 Arguments mapping described in
-[CreateArchiveRequestTypeDef](./type_defs.md#createarchiverequesttypedef).
+[CreateArchiveRequestRequestTypeDef](./type_defs.md#createarchiverequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -209,7 +221,7 @@ Keyword-only arguments:
 - `RetentionDays`: `int`
 
 Returns
-[CreateArchiveResponseResponseTypeDef](./type_defs.md#createarchiveresponseresponsetypedef).
+[CreateArchiveResponseTypeDef](./type_defs.md#createarchiveresponsetypedef).
 
 ### create_connection
 
@@ -221,7 +233,7 @@ Boto3 documentation:
 [EventBridge.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_connection)
 
 Arguments mapping described in
-[CreateConnectionRequestTypeDef](./type_defs.md#createconnectionrequesttypedef).
+[CreateConnectionRequestRequestTypeDef](./type_defs.md#createconnectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -235,7 +247,7 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[CreateConnectionResponseResponseTypeDef](./type_defs.md#createconnectionresponseresponsetypedef).
+[CreateConnectionResponseTypeDef](./type_defs.md#createconnectionresponsetypedef).
 
 ### create_event_bus
 
@@ -247,7 +259,7 @@ Boto3 documentation:
 [EventBridge.Client.create_event_bus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_event_bus)
 
 Arguments mapping described in
-[CreateEventBusRequestTypeDef](./type_defs.md#createeventbusrequesttypedef).
+[CreateEventBusRequestRequestTypeDef](./type_defs.md#createeventbusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -256,7 +268,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateEventBusResponseResponseTypeDef](./type_defs.md#createeventbusresponseresponsetypedef).
+[CreateEventBusResponseTypeDef](./type_defs.md#createeventbusresponsetypedef).
 
 ### create_partner_event_source
 
@@ -269,7 +281,7 @@ Boto3 documentation:
 [EventBridge.Client.create_partner_event_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_partner_event_source)
 
 Arguments mapping described in
-[CreatePartnerEventSourceRequestTypeDef](./type_defs.md#createpartnereventsourcerequesttypedef).
+[CreatePartnerEventSourceRequestRequestTypeDef](./type_defs.md#createpartnereventsourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -277,7 +289,7 @@ Keyword-only arguments:
 - `Account`: `str` *(required)*
 
 Returns
-[CreatePartnerEventSourceResponseResponseTypeDef](./type_defs.md#createpartnereventsourceresponseresponsetypedef).
+[CreatePartnerEventSourceResponseTypeDef](./type_defs.md#createpartnereventsourceresponsetypedef).
 
 ### deactivate_event_source
 
@@ -290,7 +302,7 @@ Boto3 documentation:
 [EventBridge.Client.deactivate_event_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.deactivate_event_source)
 
 Arguments mapping described in
-[DeactivateEventSourceRequestTypeDef](./type_defs.md#deactivateeventsourcerequesttypedef).
+[DeactivateEventSourceRequestRequestTypeDef](./type_defs.md#deactivateeventsourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -306,14 +318,14 @@ Boto3 documentation:
 [EventBridge.Client.deauthorize_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.deauthorize_connection)
 
 Arguments mapping described in
-[DeauthorizeConnectionRequestTypeDef](./type_defs.md#deauthorizeconnectionrequesttypedef).
+[DeauthorizeConnectionRequestRequestTypeDef](./type_defs.md#deauthorizeconnectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[DeauthorizeConnectionResponseResponseTypeDef](./type_defs.md#deauthorizeconnectionresponseresponsetypedef).
+[DeauthorizeConnectionResponseTypeDef](./type_defs.md#deauthorizeconnectionresponsetypedef).
 
 ### delete_api_destination
 
@@ -325,7 +337,7 @@ Boto3 documentation:
 [EventBridge.Client.delete_api_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_api_destination)
 
 Arguments mapping described in
-[DeleteApiDestinationRequestTypeDef](./type_defs.md#deleteapidestinationrequesttypedef).
+[DeleteApiDestinationRequestRequestTypeDef](./type_defs.md#deleteapidestinationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -343,7 +355,7 @@ Boto3 documentation:
 [EventBridge.Client.delete_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_archive)
 
 Arguments mapping described in
-[DeleteArchiveRequestTypeDef](./type_defs.md#deletearchiverequesttypedef).
+[DeleteArchiveRequestRequestTypeDef](./type_defs.md#deletearchiverequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -361,14 +373,14 @@ Boto3 documentation:
 [EventBridge.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_connection)
 
 Arguments mapping described in
-[DeleteConnectionRequestTypeDef](./type_defs.md#deleteconnectionrequesttypedef).
+[DeleteConnectionRequestRequestTypeDef](./type_defs.md#deleteconnectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[DeleteConnectionResponseResponseTypeDef](./type_defs.md#deleteconnectionresponseresponsetypedef).
+[DeleteConnectionResponseTypeDef](./type_defs.md#deleteconnectionresponsetypedef).
 
 ### delete_event_bus
 
@@ -380,7 +392,7 @@ Boto3 documentation:
 [EventBridge.Client.delete_event_bus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_event_bus)
 
 Arguments mapping described in
-[DeleteEventBusRequestTypeDef](./type_defs.md#deleteeventbusrequesttypedef).
+[DeleteEventBusRequestRequestTypeDef](./type_defs.md#deleteeventbusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -397,7 +409,7 @@ Boto3 documentation:
 [EventBridge.Client.delete_partner_event_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_partner_event_source)
 
 Arguments mapping described in
-[DeletePartnerEventSourceRequestTypeDef](./type_defs.md#deletepartnereventsourcerequesttypedef).
+[DeletePartnerEventSourceRequestRequestTypeDef](./type_defs.md#deletepartnereventsourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -414,7 +426,7 @@ Boto3 documentation:
 [EventBridge.Client.delete_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_rule)
 
 Arguments mapping described in
-[DeleteRuleRequestTypeDef](./type_defs.md#deleterulerequesttypedef).
+[DeleteRuleRequestRequestTypeDef](./type_defs.md#deleterulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -432,14 +444,14 @@ Boto3 documentation:
 [EventBridge.Client.describe_api_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_api_destination)
 
 Arguments mapping described in
-[DescribeApiDestinationRequestTypeDef](./type_defs.md#describeapidestinationrequesttypedef).
+[DescribeApiDestinationRequestRequestTypeDef](./type_defs.md#describeapidestinationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[DescribeApiDestinationResponseResponseTypeDef](./type_defs.md#describeapidestinationresponseresponsetypedef).
+[DescribeApiDestinationResponseTypeDef](./type_defs.md#describeapidestinationresponsetypedef).
 
 ### describe_archive
 
@@ -451,14 +463,14 @@ Boto3 documentation:
 [EventBridge.Client.describe_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_archive)
 
 Arguments mapping described in
-[DescribeArchiveRequestTypeDef](./type_defs.md#describearchiverequesttypedef).
+[DescribeArchiveRequestRequestTypeDef](./type_defs.md#describearchiverequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ArchiveName`: `str` *(required)*
 
 Returns
-[DescribeArchiveResponseResponseTypeDef](./type_defs.md#describearchiveresponseresponsetypedef).
+[DescribeArchiveResponseTypeDef](./type_defs.md#describearchiveresponsetypedef).
 
 ### describe_connection
 
@@ -470,14 +482,14 @@ Boto3 documentation:
 [EventBridge.Client.describe_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_connection)
 
 Arguments mapping described in
-[DescribeConnectionRequestTypeDef](./type_defs.md#describeconnectionrequesttypedef).
+[DescribeConnectionRequestRequestTypeDef](./type_defs.md#describeconnectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[DescribeConnectionResponseResponseTypeDef](./type_defs.md#describeconnectionresponseresponsetypedef).
+[DescribeConnectionResponseTypeDef](./type_defs.md#describeconnectionresponsetypedef).
 
 ### describe_event_bus
 
@@ -489,14 +501,14 @@ Boto3 documentation:
 [EventBridge.Client.describe_event_bus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_event_bus)
 
 Arguments mapping described in
-[DescribeEventBusRequestTypeDef](./type_defs.md#describeeventbusrequesttypedef).
+[DescribeEventBusRequestRequestTypeDef](./type_defs.md#describeeventbusrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str`
 
 Returns
-[DescribeEventBusResponseResponseTypeDef](./type_defs.md#describeeventbusresponseresponsetypedef).
+[DescribeEventBusResponseTypeDef](./type_defs.md#describeeventbusresponsetypedef).
 
 ### describe_event_source
 
@@ -509,14 +521,14 @@ Boto3 documentation:
 [EventBridge.Client.describe_event_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_event_source)
 
 Arguments mapping described in
-[DescribeEventSourceRequestTypeDef](./type_defs.md#describeeventsourcerequesttypedef).
+[DescribeEventSourceRequestRequestTypeDef](./type_defs.md#describeeventsourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[DescribeEventSourceResponseResponseTypeDef](./type_defs.md#describeeventsourceresponseresponsetypedef).
+[DescribeEventSourceResponseTypeDef](./type_defs.md#describeeventsourceresponsetypedef).
 
 ### describe_partner_event_source
 
@@ -530,14 +542,14 @@ Boto3 documentation:
 [EventBridge.Client.describe_partner_event_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_partner_event_source)
 
 Arguments mapping described in
-[DescribePartnerEventSourceRequestTypeDef](./type_defs.md#describepartnereventsourcerequesttypedef).
+[DescribePartnerEventSourceRequestRequestTypeDef](./type_defs.md#describepartnereventsourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[DescribePartnerEventSourceResponseResponseTypeDef](./type_defs.md#describepartnereventsourceresponseresponsetypedef).
+[DescribePartnerEventSourceResponseTypeDef](./type_defs.md#describepartnereventsourceresponsetypedef).
 
 ### describe_replay
 
@@ -549,14 +561,14 @@ Boto3 documentation:
 [EventBridge.Client.describe_replay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_replay)
 
 Arguments mapping described in
-[DescribeReplayRequestTypeDef](./type_defs.md#describereplayrequesttypedef).
+[DescribeReplayRequestRequestTypeDef](./type_defs.md#describereplayrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ReplayName`: `str` *(required)*
 
 Returns
-[DescribeReplayResponseResponseTypeDef](./type_defs.md#describereplayresponseresponsetypedef).
+[DescribeReplayResponseTypeDef](./type_defs.md#describereplayresponsetypedef).
 
 ### describe_rule
 
@@ -568,7 +580,7 @@ Boto3 documentation:
 [EventBridge.Client.describe_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_rule)
 
 Arguments mapping described in
-[DescribeRuleRequestTypeDef](./type_defs.md#describerulerequesttypedef).
+[DescribeRuleRequestRequestTypeDef](./type_defs.md#describerulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -576,7 +588,7 @@ Keyword-only arguments:
 - `EventBusName`: `str`
 
 Returns
-[DescribeRuleResponseResponseTypeDef](./type_defs.md#describeruleresponseresponsetypedef).
+[DescribeRuleResponseTypeDef](./type_defs.md#describeruleresponsetypedef).
 
 ### disable_rule
 
@@ -588,7 +600,7 @@ Boto3 documentation:
 [EventBridge.Client.disable_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.disable_rule)
 
 Arguments mapping described in
-[DisableRuleRequestTypeDef](./type_defs.md#disablerulerequesttypedef).
+[DisableRuleRequestRequestTypeDef](./type_defs.md#disablerulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -605,7 +617,7 @@ Boto3 documentation:
 [EventBridge.Client.enable_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.enable_rule)
 
 Arguments mapping described in
-[EnableRuleRequestTypeDef](./type_defs.md#enablerulerequesttypedef).
+[EnableRuleRequestRequestTypeDef](./type_defs.md#enablerulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -640,7 +652,7 @@ Boto3 documentation:
 [EventBridge.Client.list_api_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_api_destinations)
 
 Arguments mapping described in
-[ListApiDestinationsRequestTypeDef](./type_defs.md#listapidestinationsrequesttypedef).
+[ListApiDestinationsRequestRequestTypeDef](./type_defs.md#listapidestinationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -650,7 +662,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListApiDestinationsResponseResponseTypeDef](./type_defs.md#listapidestinationsresponseresponsetypedef).
+[ListApiDestinationsResponseTypeDef](./type_defs.md#listapidestinationsresponsetypedef).
 
 ### list_archives
 
@@ -662,7 +674,7 @@ Boto3 documentation:
 [EventBridge.Client.list_archives](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_archives)
 
 Arguments mapping described in
-[ListArchivesRequestTypeDef](./type_defs.md#listarchivesrequesttypedef).
+[ListArchivesRequestRequestTypeDef](./type_defs.md#listarchivesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -673,7 +685,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListArchivesResponseResponseTypeDef](./type_defs.md#listarchivesresponseresponsetypedef).
+[ListArchivesResponseTypeDef](./type_defs.md#listarchivesresponsetypedef).
 
 ### list_connections
 
@@ -685,7 +697,7 @@ Boto3 documentation:
 [EventBridge.Client.list_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_connections)
 
 Arguments mapping described in
-[ListConnectionsRequestTypeDef](./type_defs.md#listconnectionsrequesttypedef).
+[ListConnectionsRequestRequestTypeDef](./type_defs.md#listconnectionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -695,7 +707,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListConnectionsResponseResponseTypeDef](./type_defs.md#listconnectionsresponseresponsetypedef).
+[ListConnectionsResponseTypeDef](./type_defs.md#listconnectionsresponsetypedef).
 
 ### list_event_buses
 
@@ -708,7 +720,7 @@ Boto3 documentation:
 [EventBridge.Client.list_event_buses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_event_buses)
 
 Arguments mapping described in
-[ListEventBusesRequestTypeDef](./type_defs.md#listeventbusesrequesttypedef).
+[ListEventBusesRequestRequestTypeDef](./type_defs.md#listeventbusesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -717,7 +729,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListEventBusesResponseResponseTypeDef](./type_defs.md#listeventbusesresponseresponsetypedef).
+[ListEventBusesResponseTypeDef](./type_defs.md#listeventbusesresponsetypedef).
 
 ### list_event_sources
 
@@ -730,7 +742,7 @@ Boto3 documentation:
 [EventBridge.Client.list_event_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_event_sources)
 
 Arguments mapping described in
-[ListEventSourcesRequestTypeDef](./type_defs.md#listeventsourcesrequesttypedef).
+[ListEventSourcesRequestRequestTypeDef](./type_defs.md#listeventsourcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -739,7 +751,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListEventSourcesResponseResponseTypeDef](./type_defs.md#listeventsourcesresponseresponsetypedef).
+[ListEventSourcesResponseTypeDef](./type_defs.md#listeventsourcesresponsetypedef).
 
 ### list_partner_event_source_accounts
 
@@ -753,7 +765,7 @@ Boto3 documentation:
 [EventBridge.Client.list_partner_event_source_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_partner_event_source_accounts)
 
 Arguments mapping described in
-[ListPartnerEventSourceAccountsRequestTypeDef](./type_defs.md#listpartnereventsourceaccountsrequesttypedef).
+[ListPartnerEventSourceAccountsRequestRequestTypeDef](./type_defs.md#listpartnereventsourceaccountsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -762,7 +774,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListPartnerEventSourceAccountsResponseResponseTypeDef](./type_defs.md#listpartnereventsourceaccountsresponseresponsetypedef).
+[ListPartnerEventSourceAccountsResponseTypeDef](./type_defs.md#listpartnereventsourceaccountsresponsetypedef).
 
 ### list_partner_event_sources
 
@@ -776,7 +788,7 @@ Boto3 documentation:
 [EventBridge.Client.list_partner_event_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_partner_event_sources)
 
 Arguments mapping described in
-[ListPartnerEventSourcesRequestTypeDef](./type_defs.md#listpartnereventsourcesrequesttypedef).
+[ListPartnerEventSourcesRequestRequestTypeDef](./type_defs.md#listpartnereventsourcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -785,7 +797,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListPartnerEventSourcesResponseResponseTypeDef](./type_defs.md#listpartnereventsourcesresponseresponsetypedef).
+[ListPartnerEventSourcesResponseTypeDef](./type_defs.md#listpartnereventsourcesresponsetypedef).
 
 ### list_replays
 
@@ -797,7 +809,7 @@ Boto3 documentation:
 [EventBridge.Client.list_replays](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_replays)
 
 Arguments mapping described in
-[ListReplaysRequestTypeDef](./type_defs.md#listreplaysrequesttypedef).
+[ListReplaysRequestRequestTypeDef](./type_defs.md#listreplaysrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -808,7 +820,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListReplaysResponseResponseTypeDef](./type_defs.md#listreplaysresponseresponsetypedef).
+[ListReplaysResponseTypeDef](./type_defs.md#listreplaysresponsetypedef).
 
 ### list_rule_names_by_target
 
@@ -820,7 +832,7 @@ Boto3 documentation:
 [EventBridge.Client.list_rule_names_by_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_rule_names_by_target)
 
 Arguments mapping described in
-[ListRuleNamesByTargetRequestTypeDef](./type_defs.md#listrulenamesbytargetrequesttypedef).
+[ListRuleNamesByTargetRequestRequestTypeDef](./type_defs.md#listrulenamesbytargetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -830,7 +842,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListRuleNamesByTargetResponseResponseTypeDef](./type_defs.md#listrulenamesbytargetresponseresponsetypedef).
+[ListRuleNamesByTargetResponseTypeDef](./type_defs.md#listrulenamesbytargetresponsetypedef).
 
 ### list_rules
 
@@ -842,7 +854,7 @@ Boto3 documentation:
 [EventBridge.Client.list_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_rules)
 
 Arguments mapping described in
-[ListRulesRequestTypeDef](./type_defs.md#listrulesrequesttypedef).
+[ListRulesRequestRequestTypeDef](./type_defs.md#listrulesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -851,8 +863,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `Limit`: `int`
 
-Returns
-[ListRulesResponseResponseTypeDef](./type_defs.md#listrulesresponseresponsetypedef).
+Returns [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -864,14 +875,14 @@ Boto3 documentation:
 [EventBridge.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_targets_by_rule
 
@@ -883,7 +894,7 @@ Boto3 documentation:
 [EventBridge.Client.list_targets_by_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_targets_by_rule)
 
 Arguments mapping described in
-[ListTargetsByRuleRequestTypeDef](./type_defs.md#listtargetsbyrulerequesttypedef).
+[ListTargetsByRuleRequestRequestTypeDef](./type_defs.md#listtargetsbyrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -893,7 +904,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListTargetsByRuleResponseResponseTypeDef](./type_defs.md#listtargetsbyruleresponseresponsetypedef).
+[ListTargetsByRuleResponseTypeDef](./type_defs.md#listtargetsbyruleresponsetypedef).
 
 ### put_events
 
@@ -905,7 +916,7 @@ Boto3 documentation:
 [EventBridge.Client.put_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_events)
 
 Arguments mapping described in
-[PutEventsRequestTypeDef](./type_defs.md#puteventsrequesttypedef).
+[PutEventsRequestRequestTypeDef](./type_defs.md#puteventsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -913,8 +924,7 @@ Keyword-only arguments:
   `List`\[[PutEventsRequestEntryTypeDef](./type_defs.md#puteventsrequestentrytypedef)\]
   *(required)*
 
-Returns
-[PutEventsResponseResponseTypeDef](./type_defs.md#puteventsresponseresponsetypedef).
+Returns [PutEventsResponseTypeDef](./type_defs.md#puteventsresponsetypedef).
 
 ### put_partner_events
 
@@ -927,7 +937,7 @@ Boto3 documentation:
 [EventBridge.Client.put_partner_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_partner_events)
 
 Arguments mapping described in
-[PutPartnerEventsRequestTypeDef](./type_defs.md#putpartnereventsrequesttypedef).
+[PutPartnerEventsRequestRequestTypeDef](./type_defs.md#putpartnereventsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -936,7 +946,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutPartnerEventsResponseResponseTypeDef](./type_defs.md#putpartnereventsresponseresponsetypedef).
+[PutPartnerEventsResponseTypeDef](./type_defs.md#putpartnereventsresponsetypedef).
 
 ### put_permission
 
@@ -949,7 +959,7 @@ Boto3 documentation:
 [EventBridge.Client.put_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_permission)
 
 Arguments mapping described in
-[PutPermissionRequestTypeDef](./type_defs.md#putpermissionrequesttypedef).
+[PutPermissionRequestRequestTypeDef](./type_defs.md#putpermissionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -970,7 +980,7 @@ Boto3 documentation:
 [EventBridge.Client.put_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_rule)
 
 Arguments mapping described in
-[PutRuleRequestTypeDef](./type_defs.md#putrulerequesttypedef).
+[PutRuleRequestRequestTypeDef](./type_defs.md#putrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -983,8 +993,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `EventBusName`: `str`
 
-Returns
-[PutRuleResponseResponseTypeDef](./type_defs.md#putruleresponseresponsetypedef).
+Returns [PutRuleResponseTypeDef](./type_defs.md#putruleresponsetypedef).
 
 ### put_targets
 
@@ -997,7 +1006,7 @@ Boto3 documentation:
 [EventBridge.Client.put_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_targets)
 
 Arguments mapping described in
-[PutTargetsRequestTypeDef](./type_defs.md#puttargetsrequesttypedef).
+[PutTargetsRequestRequestTypeDef](./type_defs.md#puttargetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1006,8 +1015,7 @@ Keyword-only arguments:
   *(required)*
 - `EventBusName`: `str`
 
-Returns
-[PutTargetsResponseResponseTypeDef](./type_defs.md#puttargetsresponseresponsetypedef).
+Returns [PutTargetsResponseTypeDef](./type_defs.md#puttargetsresponsetypedef).
 
 ### remove_permission
 
@@ -1020,7 +1028,7 @@ Boto3 documentation:
 [EventBridge.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.remove_permission)
 
 Arguments mapping described in
-[RemovePermissionRequestTypeDef](./type_defs.md#removepermissionrequesttypedef).
+[RemovePermissionRequestRequestTypeDef](./type_defs.md#removepermissionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1038,7 +1046,7 @@ Boto3 documentation:
 [EventBridge.Client.remove_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.remove_targets)
 
 Arguments mapping described in
-[RemoveTargetsRequestTypeDef](./type_defs.md#removetargetsrequesttypedef).
+[RemoveTargetsRequestRequestTypeDef](./type_defs.md#removetargetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1048,7 +1056,7 @@ Keyword-only arguments:
 - `Force`: `bool`
 
 Returns
-[RemoveTargetsResponseResponseTypeDef](./type_defs.md#removetargetsresponseresponsetypedef).
+[RemoveTargetsResponseTypeDef](./type_defs.md#removetargetsresponsetypedef).
 
 ### start_replay
 
@@ -1060,7 +1068,7 @@ Boto3 documentation:
 [EventBridge.Client.start_replay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.start_replay)
 
 Arguments mapping described in
-[StartReplayRequestTypeDef](./type_defs.md#startreplayrequesttypedef).
+[StartReplayRequestRequestTypeDef](./type_defs.md#startreplayrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1074,7 +1082,7 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[StartReplayResponseResponseTypeDef](./type_defs.md#startreplayresponseresponsetypedef).
+[StartReplayResponseTypeDef](./type_defs.md#startreplayresponsetypedef).
 
 ### tag_resource
 
@@ -1087,7 +1095,7 @@ Boto3 documentation:
 [EventBridge.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1106,7 +1114,7 @@ Boto3 documentation:
 [EventBridge.Client.test_event_pattern](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.test_event_pattern)
 
 Arguments mapping described in
-[TestEventPatternRequestTypeDef](./type_defs.md#testeventpatternrequesttypedef).
+[TestEventPatternRequestRequestTypeDef](./type_defs.md#testeventpatternrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1114,7 +1122,7 @@ Keyword-only arguments:
 - `Event`: `str` *(required)*
 
 Returns
-[TestEventPatternResponseResponseTypeDef](./type_defs.md#testeventpatternresponseresponsetypedef).
+[TestEventPatternResponseTypeDef](./type_defs.md#testeventpatternresponsetypedef).
 
 ### untag_resource
 
@@ -1126,7 +1134,7 @@ Boto3 documentation:
 [EventBridge.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1145,7 +1153,7 @@ Boto3 documentation:
 [EventBridge.Client.update_api_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.update_api_destination)
 
 Arguments mapping described in
-[UpdateApiDestinationRequestTypeDef](./type_defs.md#updateapidestinationrequesttypedef).
+[UpdateApiDestinationRequestRequestTypeDef](./type_defs.md#updateapidestinationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1158,7 +1166,7 @@ Keyword-only arguments:
 - `InvocationRateLimitPerSecond`: `int`
 
 Returns
-[UpdateApiDestinationResponseResponseTypeDef](./type_defs.md#updateapidestinationresponseresponsetypedef).
+[UpdateApiDestinationResponseTypeDef](./type_defs.md#updateapidestinationresponsetypedef).
 
 ### update_archive
 
@@ -1170,7 +1178,7 @@ Boto3 documentation:
 [EventBridge.Client.update_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.update_archive)
 
 Arguments mapping described in
-[UpdateArchiveRequestTypeDef](./type_defs.md#updatearchiverequesttypedef).
+[UpdateArchiveRequestRequestTypeDef](./type_defs.md#updatearchiverequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1180,7 +1188,7 @@ Keyword-only arguments:
 - `RetentionDays`: `int`
 
 Returns
-[UpdateArchiveResponseResponseTypeDef](./type_defs.md#updatearchiveresponseresponsetypedef).
+[UpdateArchiveResponseTypeDef](./type_defs.md#updatearchiveresponsetypedef).
 
 ### update_connection
 
@@ -1192,7 +1200,7 @@ Boto3 documentation:
 [EventBridge.Client.update_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.update_connection)
 
 Arguments mapping described in
-[UpdateConnectionRequestTypeDef](./type_defs.md#updateconnectionrequesttypedef).
+[UpdateConnectionRequestRequestTypeDef](./type_defs.md#updateconnectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1204,7 +1212,7 @@ Keyword-only arguments:
   [UpdateConnectionAuthRequestParametersTypeDef](./type_defs.md#updateconnectionauthrequestparameterstypedef)
 
 Returns
-[UpdateConnectionResponseResponseTypeDef](./type_defs.md#updateconnectionresponseresponsetypedef).
+[UpdateConnectionResponseTypeDef](./type_defs.md#updateconnectionresponsetypedef).
 
 ### get_paginator
 

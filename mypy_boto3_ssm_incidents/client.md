@@ -11,6 +11,7 @@ type annotations stubs module
   - [SSMIncidentsClient](#ssmincidentsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_replication_set](#create_replication_set)
     - [create_response_plan](#create_response_plan)
@@ -86,6 +87,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+SSMIncidentsClient exceptions.
+
+Type annotations for `boto3.client("ssm-incidents").exceptions` method.
+
+Boto3 documentation:
+[SSMIncidents.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -113,7 +125,7 @@ Boto3 documentation:
 [SSMIncidents.Client.create_replication_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.create_replication_set)
 
 Arguments mapping described in
-[CreateReplicationSetInputTypeDef](./type_defs.md#createreplicationsetinputtypedef).
+[CreateReplicationSetInputRequestTypeDef](./type_defs.md#createreplicationsetinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -123,7 +135,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[CreateReplicationSetOutputResponseTypeDef](./type_defs.md#createreplicationsetoutputresponsetypedef).
+[CreateReplicationSetOutputTypeDef](./type_defs.md#createreplicationsetoutputtypedef).
 
 ### create_response_plan
 
@@ -136,7 +148,7 @@ Boto3 documentation:
 [SSMIncidents.Client.create_response_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.create_response_plan)
 
 Arguments mapping described in
-[CreateResponsePlanInputTypeDef](./type_defs.md#createresponseplaninputtypedef).
+[CreateResponsePlanInputRequestTypeDef](./type_defs.md#createresponseplaninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -152,7 +164,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateResponsePlanOutputResponseTypeDef](./type_defs.md#createresponseplanoutputresponsetypedef).
+[CreateResponsePlanOutputTypeDef](./type_defs.md#createresponseplanoutputtypedef).
 
 ### create_timeline_event
 
@@ -166,7 +178,7 @@ Boto3 documentation:
 [SSMIncidents.Client.create_timeline_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.create_timeline_event)
 
 Arguments mapping described in
-[CreateTimelineEventInputTypeDef](./type_defs.md#createtimelineeventinputtypedef).
+[CreateTimelineEventInputRequestTypeDef](./type_defs.md#createtimelineeventinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -177,7 +189,7 @@ Keyword-only arguments:
 - `incidentRecordArn`: `str` *(required)*
 
 Returns
-[CreateTimelineEventOutputResponseTypeDef](./type_defs.md#createtimelineeventoutputresponsetypedef).
+[CreateTimelineEventOutputTypeDef](./type_defs.md#createtimelineeventoutputtypedef).
 
 ### delete_incident_record
 
@@ -190,7 +202,7 @@ Boto3 documentation:
 [SSMIncidents.Client.delete_incident_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.delete_incident_record)
 
 Arguments mapping described in
-[DeleteIncidentRecordInputTypeDef](./type_defs.md#deleteincidentrecordinputtypedef).
+[DeleteIncidentRecordInputRequestTypeDef](./type_defs.md#deleteincidentrecordinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -209,7 +221,7 @@ Boto3 documentation:
 [SSMIncidents.Client.delete_replication_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.delete_replication_set)
 
 Arguments mapping described in
-[DeleteReplicationSetInputTypeDef](./type_defs.md#deletereplicationsetinputtypedef).
+[DeleteReplicationSetInputRequestTypeDef](./type_defs.md#deletereplicationsetinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -229,7 +241,7 @@ Boto3 documentation:
 [SSMIncidents.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.delete_resource_policy)
 
 Arguments mapping described in
-[DeleteResourcePolicyInputTypeDef](./type_defs.md#deleteresourcepolicyinputtypedef).
+[DeleteResourcePolicyInputRequestTypeDef](./type_defs.md#deleteresourcepolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -249,7 +261,7 @@ Boto3 documentation:
 [SSMIncidents.Client.delete_response_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.delete_response_plan)
 
 Arguments mapping described in
-[DeleteResponsePlanInputTypeDef](./type_defs.md#deleteresponseplaninputtypedef).
+[DeleteResponsePlanInputRequestTypeDef](./type_defs.md#deleteresponseplaninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -268,7 +280,7 @@ Boto3 documentation:
 [SSMIncidents.Client.delete_timeline_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.delete_timeline_event)
 
 Arguments mapping described in
-[DeleteTimelineEventInputTypeDef](./type_defs.md#deletetimelineeventinputtypedef).
+[DeleteTimelineEventInputRequestTypeDef](./type_defs.md#deletetimelineeventinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -307,14 +319,14 @@ Boto3 documentation:
 [SSMIncidents.Client.get_incident_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.get_incident_record)
 
 Arguments mapping described in
-[GetIncidentRecordInputTypeDef](./type_defs.md#getincidentrecordinputtypedef).
+[GetIncidentRecordInputRequestTypeDef](./type_defs.md#getincidentrecordinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
 Returns
-[GetIncidentRecordOutputResponseTypeDef](./type_defs.md#getincidentrecordoutputresponsetypedef).
+[GetIncidentRecordOutputTypeDef](./type_defs.md#getincidentrecordoutputtypedef).
 
 ### get_replication_set
 
@@ -327,14 +339,14 @@ Boto3 documentation:
 [SSMIncidents.Client.get_replication_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.get_replication_set)
 
 Arguments mapping described in
-[GetReplicationSetInputTypeDef](./type_defs.md#getreplicationsetinputtypedef).
+[GetReplicationSetInputRequestTypeDef](./type_defs.md#getreplicationsetinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
 Returns
-[GetReplicationSetOutputResponseTypeDef](./type_defs.md#getreplicationsetoutputresponsetypedef).
+[GetReplicationSetOutputTypeDef](./type_defs.md#getreplicationsetoutputtypedef).
 
 ### get_resource_policies
 
@@ -347,7 +359,7 @@ Boto3 documentation:
 [SSMIncidents.Client.get_resource_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.get_resource_policies)
 
 Arguments mapping described in
-[GetResourcePoliciesInputTypeDef](./type_defs.md#getresourcepoliciesinputtypedef).
+[GetResourcePoliciesInputRequestTypeDef](./type_defs.md#getresourcepoliciesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -356,7 +368,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[GetResourcePoliciesOutputResponseTypeDef](./type_defs.md#getresourcepoliciesoutputresponsetypedef).
+[GetResourcePoliciesOutputTypeDef](./type_defs.md#getresourcepoliciesoutputtypedef).
 
 ### get_response_plan
 
@@ -368,14 +380,14 @@ Boto3 documentation:
 [SSMIncidents.Client.get_response_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.get_response_plan)
 
 Arguments mapping described in
-[GetResponsePlanInputTypeDef](./type_defs.md#getresponseplaninputtypedef).
+[GetResponsePlanInputRequestTypeDef](./type_defs.md#getresponseplaninputrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
 Returns
-[GetResponsePlanOutputResponseTypeDef](./type_defs.md#getresponseplanoutputresponsetypedef).
+[GetResponsePlanOutputTypeDef](./type_defs.md#getresponseplanoutputtypedef).
 
 ### get_timeline_event
 
@@ -387,7 +399,7 @@ Boto3 documentation:
 [SSMIncidents.Client.get_timeline_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.get_timeline_event)
 
 Arguments mapping described in
-[GetTimelineEventInputTypeDef](./type_defs.md#gettimelineeventinputtypedef).
+[GetTimelineEventInputRequestTypeDef](./type_defs.md#gettimelineeventinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -395,7 +407,7 @@ Keyword-only arguments:
 - `incidentRecordArn`: `str` *(required)*
 
 Returns
-[GetTimelineEventOutputResponseTypeDef](./type_defs.md#gettimelineeventoutputresponsetypedef).
+[GetTimelineEventOutputTypeDef](./type_defs.md#gettimelineeventoutputtypedef).
 
 ### list_incident_records
 
@@ -408,7 +420,7 @@ Boto3 documentation:
 [SSMIncidents.Client.list_incident_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.list_incident_records)
 
 Arguments mapping described in
-[ListIncidentRecordsInputTypeDef](./type_defs.md#listincidentrecordsinputtypedef).
+[ListIncidentRecordsInputRequestTypeDef](./type_defs.md#listincidentrecordsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -417,7 +429,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListIncidentRecordsOutputResponseTypeDef](./type_defs.md#listincidentrecordsoutputresponsetypedef).
+[ListIncidentRecordsOutputTypeDef](./type_defs.md#listincidentrecordsoutputtypedef).
 
 ### list_related_items
 
@@ -429,7 +441,7 @@ Boto3 documentation:
 [SSMIncidents.Client.list_related_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.list_related_items)
 
 Arguments mapping described in
-[ListRelatedItemsInputTypeDef](./type_defs.md#listrelateditemsinputtypedef).
+[ListRelatedItemsInputRequestTypeDef](./type_defs.md#listrelateditemsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -438,7 +450,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListRelatedItemsOutputResponseTypeDef](./type_defs.md#listrelateditemsoutputresponsetypedef).
+[ListRelatedItemsOutputTypeDef](./type_defs.md#listrelateditemsoutputtypedef).
 
 ### list_replication_sets
 
@@ -451,7 +463,7 @@ Boto3 documentation:
 [SSMIncidents.Client.list_replication_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.list_replication_sets)
 
 Arguments mapping described in
-[ListReplicationSetsInputTypeDef](./type_defs.md#listreplicationsetsinputtypedef).
+[ListReplicationSetsInputRequestTypeDef](./type_defs.md#listreplicationsetsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -459,7 +471,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListReplicationSetsOutputResponseTypeDef](./type_defs.md#listreplicationsetsoutputresponsetypedef).
+[ListReplicationSetsOutputTypeDef](./type_defs.md#listreplicationsetsoutputtypedef).
 
 ### list_response_plans
 
@@ -472,7 +484,7 @@ Boto3 documentation:
 [SSMIncidents.Client.list_response_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.list_response_plans)
 
 Arguments mapping described in
-[ListResponsePlansInputTypeDef](./type_defs.md#listresponseplansinputtypedef).
+[ListResponsePlansInputRequestTypeDef](./type_defs.md#listresponseplansinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -480,7 +492,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListResponsePlansOutputResponseTypeDef](./type_defs.md#listresponseplansoutputresponsetypedef).
+[ListResponsePlansOutputTypeDef](./type_defs.md#listresponseplansoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -493,14 +505,14 @@ Boto3 documentation:
 [SSMIncidents.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_timeline_events
 
@@ -513,7 +525,7 @@ Boto3 documentation:
 [SSMIncidents.Client.list_timeline_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.list_timeline_events)
 
 Arguments mapping described in
-[ListTimelineEventsInputTypeDef](./type_defs.md#listtimelineeventsinputtypedef).
+[ListTimelineEventsInputRequestTypeDef](./type_defs.md#listtimelineeventsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -526,7 +538,7 @@ Keyword-only arguments:
 - `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 
 Returns
-[ListTimelineEventsOutputResponseTypeDef](./type_defs.md#listtimelineeventsoutputresponsetypedef).
+[ListTimelineEventsOutputTypeDef](./type_defs.md#listtimelineeventsoutputtypedef).
 
 ### put_resource_policy
 
@@ -539,7 +551,7 @@ Boto3 documentation:
 [SSMIncidents.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.put_resource_policy)
 
 Arguments mapping described in
-[PutResourcePolicyInputTypeDef](./type_defs.md#putresourcepolicyinputtypedef).
+[PutResourcePolicyInputRequestTypeDef](./type_defs.md#putresourcepolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -547,7 +559,7 @@ Keyword-only arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[PutResourcePolicyOutputResponseTypeDef](./type_defs.md#putresourcepolicyoutputresponsetypedef).
+[PutResourcePolicyOutputTypeDef](./type_defs.md#putresourcepolicyoutputtypedef).
 
 ### start_incident
 
@@ -560,7 +572,7 @@ Boto3 documentation:
 [SSMIncidents.Client.start_incident](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.start_incident)
 
 Arguments mapping described in
-[StartIncidentInputTypeDef](./type_defs.md#startincidentinputtypedef).
+[StartIncidentInputRequestTypeDef](./type_defs.md#startincidentinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -574,7 +586,7 @@ Keyword-only arguments:
   [TriggerDetailsTypeDef](./type_defs.md#triggerdetailstypedef)
 
 Returns
-[StartIncidentOutputResponseTypeDef](./type_defs.md#startincidentoutputresponsetypedef).
+[StartIncidentOutputTypeDef](./type_defs.md#startincidentoutputtypedef).
 
 ### tag_resource
 
@@ -586,7 +598,7 @@ Boto3 documentation:
 [SSMIncidents.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -605,7 +617,7 @@ Boto3 documentation:
 [SSMIncidents.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -626,7 +638,7 @@ Boto3 documentation:
 [SSMIncidents.Client.update_deletion_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.update_deletion_protection)
 
 Arguments mapping described in
-[UpdateDeletionProtectionInputTypeDef](./type_defs.md#updatedeletionprotectioninputtypedef).
+[UpdateDeletionProtectionInputRequestTypeDef](./type_defs.md#updatedeletionprotectioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -647,7 +659,7 @@ Boto3 documentation:
 [SSMIncidents.Client.update_incident_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.update_incident_record)
 
 Arguments mapping described in
-[UpdateIncidentRecordInputTypeDef](./type_defs.md#updateincidentrecordinputtypedef).
+[UpdateIncidentRecordInputRequestTypeDef](./type_defs.md#updateincidentrecordinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -674,7 +686,7 @@ Boto3 documentation:
 [SSMIncidents.Client.update_related_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.update_related_items)
 
 Arguments mapping described in
-[UpdateRelatedItemsInputTypeDef](./type_defs.md#updaterelateditemsinputtypedef).
+[UpdateRelatedItemsInputRequestTypeDef](./type_defs.md#updaterelateditemsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -697,7 +709,7 @@ Boto3 documentation:
 [SSMIncidents.Client.update_replication_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.update_replication_set)
 
 Arguments mapping described in
-[UpdateReplicationSetInputTypeDef](./type_defs.md#updatereplicationsetinputtypedef).
+[UpdateReplicationSetInputRequestTypeDef](./type_defs.md#updatereplicationsetinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -720,7 +732,7 @@ Boto3 documentation:
 [SSMIncidents.Client.update_response_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.update_response_plan)
 
 Arguments mapping described in
-[UpdateResponsePlanInputTypeDef](./type_defs.md#updateresponseplaninputtypedef).
+[UpdateResponsePlanInputRequestTypeDef](./type_defs.md#updateresponseplaninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -750,7 +762,7 @@ Boto3 documentation:
 [SSMIncidents.Client.update_timeline_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.update_timeline_event)
 
 Arguments mapping described in
-[UpdateTimelineEventInputTypeDef](./type_defs.md#updatetimelineeventinputtypedef).
+[UpdateTimelineEventInputRequestTypeDef](./type_defs.md#updatetimelineeventinputrequesttypedef).
 
 Keyword-only arguments:
 

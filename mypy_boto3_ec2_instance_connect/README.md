@@ -31,6 +31,7 @@ from mypy_boto3_ec2_instance_connect.client import EC2InstanceConnectClient
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [send_serial_console_ssh_public_key](./client.md#send_serial_console_ssh_public_key)
 - [send_ssh_public_key](./client.md#send_ssh_public_key)
@@ -62,7 +63,7 @@ from mypy_boto3_ec2_instance_connect.type_defs import ResponseMetadataTypeDef, .
 ```
 
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [SendSSHPublicKeyRequestTypeDef](./type_defs.md#sendsshpublickeyrequesttypedef)
-- [SendSSHPublicKeyResponseResponseTypeDef](./type_defs.md#sendsshpublickeyresponseresponsetypedef)
-- [SendSerialConsoleSSHPublicKeyRequestTypeDef](./type_defs.md#sendserialconsolesshpublickeyrequesttypedef)
-- [SendSerialConsoleSSHPublicKeyResponseResponseTypeDef](./type_defs.md#sendserialconsolesshpublickeyresponseresponsetypedef)
+- [SendSSHPublicKeyRequestRequestTypeDef](./type_defs.md#sendsshpublickeyrequestrequesttypedef)
+- [SendSSHPublicKeyResponseTypeDef](./type_defs.md#sendsshpublickeyresponsetypedef)
+- [SendSerialConsoleSSHPublicKeyRequestRequestTypeDef](./type_defs.md#sendserialconsolesshpublickeyrequestrequesttypedef)
+- [SendSerialConsoleSSHPublicKeyResponseTypeDef](./type_defs.md#sendserialconsolesshpublickeyresponsetypedef)

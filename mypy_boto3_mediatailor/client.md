@@ -11,6 +11,7 @@ type annotations stubs module
   - [MediaTailorClient](#mediatailorclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_channel](#create_channel)
     - [create_program](#create_program)
@@ -81,6 +82,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+MediaTailorClient exceptions.
+
+Type annotations for `boto3.client("mediatailor").exceptions` method.
+
+Boto3 documentation:
+[MediaTailor.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -106,7 +118,7 @@ Boto3 documentation:
 [MediaTailor.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_channel)
 
 Arguments mapping described in
-[CreateChannelRequestTypeDef](./type_defs.md#createchannelrequesttypedef).
+[CreateChannelRequestRequestTypeDef](./type_defs.md#createchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -119,7 +131,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateChannelResponseResponseTypeDef](./type_defs.md#createchannelresponseresponsetypedef).
+[CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
 
 ### create_program
 
@@ -131,7 +143,7 @@ Boto3 documentation:
 [MediaTailor.Client.create_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_program)
 
 Arguments mapping described in
-[CreateProgramRequestTypeDef](./type_defs.md#createprogramrequesttypedef).
+[CreateProgramRequestRequestTypeDef](./type_defs.md#createprogramrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -145,7 +157,7 @@ Keyword-only arguments:
 - `AdBreaks`: `List`\[[AdBreakTypeDef](./type_defs.md#adbreaktypedef)\]
 
 Returns
-[CreateProgramResponseResponseTypeDef](./type_defs.md#createprogramresponseresponsetypedef).
+[CreateProgramResponseTypeDef](./type_defs.md#createprogramresponsetypedef).
 
 ### create_source_location
 
@@ -158,7 +170,7 @@ Boto3 documentation:
 [MediaTailor.Client.create_source_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_source_location)
 
 Arguments mapping described in
-[CreateSourceLocationRequestTypeDef](./type_defs.md#createsourcelocationrequesttypedef).
+[CreateSourceLocationRequestRequestTypeDef](./type_defs.md#createsourcelocationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -173,7 +185,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateSourceLocationResponseResponseTypeDef](./type_defs.md#createsourcelocationresponseresponsetypedef).
+[CreateSourceLocationResponseTypeDef](./type_defs.md#createsourcelocationresponsetypedef).
 
 ### create_vod_source
 
@@ -185,7 +197,7 @@ Boto3 documentation:
 [MediaTailor.Client.create_vod_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_vod_source)
 
 Arguments mapping described in
-[CreateVodSourceRequestTypeDef](./type_defs.md#createvodsourcerequesttypedef).
+[CreateVodSourceRequestRequestTypeDef](./type_defs.md#createvodsourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -197,7 +209,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateVodSourceResponseResponseTypeDef](./type_defs.md#createvodsourceresponseresponsetypedef).
+[CreateVodSourceResponseTypeDef](./type_defs.md#createvodsourceresponsetypedef).
 
 ### delete_channel
 
@@ -209,7 +221,7 @@ Boto3 documentation:
 [MediaTailor.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_channel)
 
 Arguments mapping described in
-[DeleteChannelRequestTypeDef](./type_defs.md#deletechannelrequesttypedef).
+[DeleteChannelRequestRequestTypeDef](./type_defs.md#deletechannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -228,7 +240,7 @@ Boto3 documentation:
 [MediaTailor.Client.delete_channel_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_channel_policy)
 
 Arguments mapping described in
-[DeleteChannelPolicyRequestTypeDef](./type_defs.md#deletechannelpolicyrequesttypedef).
+[DeleteChannelPolicyRequestRequestTypeDef](./type_defs.md#deletechannelpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -247,7 +259,7 @@ Boto3 documentation:
 [MediaTailor.Client.delete_playback_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_playback_configuration)
 
 Arguments mapping described in
-[DeletePlaybackConfigurationRequestTypeDef](./type_defs.md#deleteplaybackconfigurationrequesttypedef).
+[DeletePlaybackConfigurationRequestRequestTypeDef](./type_defs.md#deleteplaybackconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -265,7 +277,7 @@ Boto3 documentation:
 [MediaTailor.Client.delete_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_program)
 
 Arguments mapping described in
-[DeleteProgramRequestTypeDef](./type_defs.md#deleteprogramrequesttypedef).
+[DeleteProgramRequestRequestTypeDef](./type_defs.md#deleteprogramrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -285,7 +297,7 @@ Boto3 documentation:
 [MediaTailor.Client.delete_source_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_source_location)
 
 Arguments mapping described in
-[DeleteSourceLocationRequestTypeDef](./type_defs.md#deletesourcelocationrequesttypedef).
+[DeleteSourceLocationRequestRequestTypeDef](./type_defs.md#deletesourcelocationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -303,7 +315,7 @@ Boto3 documentation:
 [MediaTailor.Client.delete_vod_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_vod_source)
 
 Arguments mapping described in
-[DeleteVodSourceRequestTypeDef](./type_defs.md#deletevodsourcerequesttypedef).
+[DeleteVodSourceRequestRequestTypeDef](./type_defs.md#deletevodsourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -322,14 +334,14 @@ Boto3 documentation:
 [MediaTailor.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_channel)
 
 Arguments mapping described in
-[DescribeChannelRequestTypeDef](./type_defs.md#describechannelrequesttypedef).
+[DescribeChannelRequestRequestTypeDef](./type_defs.md#describechannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ChannelName`: `str` *(required)*
 
 Returns
-[DescribeChannelResponseResponseTypeDef](./type_defs.md#describechannelresponseresponsetypedef).
+[DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
 
 ### describe_program
 
@@ -341,7 +353,7 @@ Boto3 documentation:
 [MediaTailor.Client.describe_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_program)
 
 Arguments mapping described in
-[DescribeProgramRequestTypeDef](./type_defs.md#describeprogramrequesttypedef).
+[DescribeProgramRequestRequestTypeDef](./type_defs.md#describeprogramrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -349,7 +361,7 @@ Keyword-only arguments:
 - `ProgramName`: `str` *(required)*
 
 Returns
-[DescribeProgramResponseResponseTypeDef](./type_defs.md#describeprogramresponseresponsetypedef).
+[DescribeProgramResponseTypeDef](./type_defs.md#describeprogramresponsetypedef).
 
 ### describe_source_location
 
@@ -362,14 +374,14 @@ Boto3 documentation:
 [MediaTailor.Client.describe_source_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_source_location)
 
 Arguments mapping described in
-[DescribeSourceLocationRequestTypeDef](./type_defs.md#describesourcelocationrequesttypedef).
+[DescribeSourceLocationRequestRequestTypeDef](./type_defs.md#describesourcelocationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SourceLocationName`: `str` *(required)*
 
 Returns
-[DescribeSourceLocationResponseResponseTypeDef](./type_defs.md#describesourcelocationresponseresponsetypedef).
+[DescribeSourceLocationResponseTypeDef](./type_defs.md#describesourcelocationresponsetypedef).
 
 ### describe_vod_source
 
@@ -381,7 +393,7 @@ Boto3 documentation:
 [MediaTailor.Client.describe_vod_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_vod_source)
 
 Arguments mapping described in
-[DescribeVodSourceRequestTypeDef](./type_defs.md#describevodsourcerequesttypedef).
+[DescribeVodSourceRequestRequestTypeDef](./type_defs.md#describevodsourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -389,7 +401,7 @@ Keyword-only arguments:
 - `VodSourceName`: `str` *(required)*
 
 Returns
-[DescribeVodSourceResponseResponseTypeDef](./type_defs.md#describevodsourceresponseresponsetypedef).
+[DescribeVodSourceResponseTypeDef](./type_defs.md#describevodsourceresponsetypedef).
 
 ### generate_presigned_url
 
@@ -420,14 +432,14 @@ Boto3 documentation:
 [MediaTailor.Client.get_channel_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_channel_policy)
 
 Arguments mapping described in
-[GetChannelPolicyRequestTypeDef](./type_defs.md#getchannelpolicyrequesttypedef).
+[GetChannelPolicyRequestRequestTypeDef](./type_defs.md#getchannelpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ChannelName`: `str` *(required)*
 
 Returns
-[GetChannelPolicyResponseResponseTypeDef](./type_defs.md#getchannelpolicyresponseresponsetypedef).
+[GetChannelPolicyResponseTypeDef](./type_defs.md#getchannelpolicyresponsetypedef).
 
 ### get_channel_schedule
 
@@ -439,7 +451,7 @@ Boto3 documentation:
 [MediaTailor.Client.get_channel_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_channel_schedule)
 
 Arguments mapping described in
-[GetChannelScheduleRequestTypeDef](./type_defs.md#getchannelschedulerequesttypedef).
+[GetChannelScheduleRequestRequestTypeDef](./type_defs.md#getchannelschedulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -449,7 +461,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetChannelScheduleResponseResponseTypeDef](./type_defs.md#getchannelscheduleresponseresponsetypedef).
+[GetChannelScheduleResponseTypeDef](./type_defs.md#getchannelscheduleresponsetypedef).
 
 ### get_playback_configuration
 
@@ -462,14 +474,14 @@ Boto3 documentation:
 [MediaTailor.Client.get_playback_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_playback_configuration)
 
 Arguments mapping described in
-[GetPlaybackConfigurationRequestTypeDef](./type_defs.md#getplaybackconfigurationrequesttypedef).
+[GetPlaybackConfigurationRequestRequestTypeDef](./type_defs.md#getplaybackconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[GetPlaybackConfigurationResponseResponseTypeDef](./type_defs.md#getplaybackconfigurationresponseresponsetypedef).
+[GetPlaybackConfigurationResponseTypeDef](./type_defs.md#getplaybackconfigurationresponsetypedef).
 
 ### list_channels
 
@@ -481,7 +493,7 @@ Boto3 documentation:
 [MediaTailor.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_channels)
 
 Arguments mapping described in
-[ListChannelsRequestTypeDef](./type_defs.md#listchannelsrequesttypedef).
+[ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -489,7 +501,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListChannelsResponseResponseTypeDef](./type_defs.md#listchannelsresponseresponsetypedef).
+[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
 
 ### list_playback_configurations
 
@@ -503,7 +515,7 @@ Boto3 documentation:
 [MediaTailor.Client.list_playback_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_playback_configurations)
 
 Arguments mapping described in
-[ListPlaybackConfigurationsRequestTypeDef](./type_defs.md#listplaybackconfigurationsrequesttypedef).
+[ListPlaybackConfigurationsRequestRequestTypeDef](./type_defs.md#listplaybackconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -511,7 +523,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListPlaybackConfigurationsResponseResponseTypeDef](./type_defs.md#listplaybackconfigurationsresponseresponsetypedef).
+[ListPlaybackConfigurationsResponseTypeDef](./type_defs.md#listplaybackconfigurationsresponsetypedef).
 
 ### list_source_locations
 
@@ -524,7 +536,7 @@ Boto3 documentation:
 [MediaTailor.Client.list_source_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_source_locations)
 
 Arguments mapping described in
-[ListSourceLocationsRequestTypeDef](./type_defs.md#listsourcelocationsrequesttypedef).
+[ListSourceLocationsRequestRequestTypeDef](./type_defs.md#listsourcelocationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -532,7 +544,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSourceLocationsResponseResponseTypeDef](./type_defs.md#listsourcelocationsresponseresponsetypedef).
+[ListSourceLocationsResponseTypeDef](./type_defs.md#listsourcelocationsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -546,14 +558,14 @@ Boto3 documentation:
 [MediaTailor.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_vod_sources
 
@@ -565,7 +577,7 @@ Boto3 documentation:
 [MediaTailor.Client.list_vod_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_vod_sources)
 
 Arguments mapping described in
-[ListVodSourcesRequestTypeDef](./type_defs.md#listvodsourcesrequesttypedef).
+[ListVodSourcesRequestRequestTypeDef](./type_defs.md#listvodsourcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -574,7 +586,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListVodSourcesResponseResponseTypeDef](./type_defs.md#listvodsourcesresponseresponsetypedef).
+[ListVodSourcesResponseTypeDef](./type_defs.md#listvodsourcesresponsetypedef).
 
 ### put_channel_policy
 
@@ -586,7 +598,7 @@ Boto3 documentation:
 [MediaTailor.Client.put_channel_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.put_channel_policy)
 
 Arguments mapping described in
-[PutChannelPolicyRequestTypeDef](./type_defs.md#putchannelpolicyrequesttypedef).
+[PutChannelPolicyRequestRequestTypeDef](./type_defs.md#putchannelpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -606,7 +618,7 @@ Boto3 documentation:
 [MediaTailor.Client.put_playback_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.put_playback_configuration)
 
 Arguments mapping described in
-[PutPlaybackConfigurationRequestTypeDef](./type_defs.md#putplaybackconfigurationrequesttypedef).
+[PutPlaybackConfigurationRequestRequestTypeDef](./type_defs.md#putplaybackconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -631,7 +643,7 @@ Keyword-only arguments:
 - `VideoContentSourceUrl`: `str`
 
 Returns
-[PutPlaybackConfigurationResponseResponseTypeDef](./type_defs.md#putplaybackconfigurationresponseresponsetypedef).
+[PutPlaybackConfigurationResponseTypeDef](./type_defs.md#putplaybackconfigurationresponsetypedef).
 
 ### start_channel
 
@@ -643,7 +655,7 @@ Boto3 documentation:
 [MediaTailor.Client.start_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.start_channel)
 
 Arguments mapping described in
-[StartChannelRequestTypeDef](./type_defs.md#startchannelrequesttypedef).
+[StartChannelRequestRequestTypeDef](./type_defs.md#startchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -661,7 +673,7 @@ Boto3 documentation:
 [MediaTailor.Client.stop_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.stop_channel)
 
 Arguments mapping described in
-[StopChannelRequestTypeDef](./type_defs.md#stopchannelrequesttypedef).
+[StopChannelRequestRequestTypeDef](./type_defs.md#stopchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -679,7 +691,7 @@ Boto3 documentation:
 [MediaTailor.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -696,7 +708,7 @@ Boto3 documentation:
 [MediaTailor.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -713,7 +725,7 @@ Boto3 documentation:
 [MediaTailor.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_channel)
 
 Arguments mapping described in
-[UpdateChannelRequestTypeDef](./type_defs.md#updatechannelrequesttypedef).
+[UpdateChannelRequestRequestTypeDef](./type_defs.md#updatechannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -723,7 +735,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateChannelResponseResponseTypeDef](./type_defs.md#updatechannelresponseresponsetypedef).
+[UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
 
 ### update_source_location
 
@@ -736,7 +748,7 @@ Boto3 documentation:
 [MediaTailor.Client.update_source_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_source_location)
 
 Arguments mapping described in
-[UpdateSourceLocationRequestTypeDef](./type_defs.md#updatesourcelocationrequesttypedef).
+[UpdateSourceLocationRequestRequestTypeDef](./type_defs.md#updatesourcelocationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -750,7 +762,7 @@ Keyword-only arguments:
   [DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef)
 
 Returns
-[UpdateSourceLocationResponseResponseTypeDef](./type_defs.md#updatesourcelocationresponseresponsetypedef).
+[UpdateSourceLocationResponseTypeDef](./type_defs.md#updatesourcelocationresponsetypedef).
 
 ### update_vod_source
 
@@ -762,7 +774,7 @@ Boto3 documentation:
 [MediaTailor.Client.update_vod_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_vod_source)
 
 Arguments mapping described in
-[UpdateVodSourceRequestTypeDef](./type_defs.md#updatevodsourcerequesttypedef).
+[UpdateVodSourceRequestRequestTypeDef](./type_defs.md#updatevodsourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -773,7 +785,7 @@ Keyword-only arguments:
 - `VodSourceName`: `str` *(required)*
 
 Returns
-[UpdateVodSourceResponseResponseTypeDef](./type_defs.md#updatevodsourceresponseresponsetypedef).
+[UpdateVodSourceResponseTypeDef](./type_defs.md#updatevodsourceresponsetypedef).
 
 ### get_paginator
 

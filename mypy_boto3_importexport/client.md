@@ -11,6 +11,7 @@ type annotations stubs module
   - [ImportExportClient](#importexportclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [cancel_job](#cancel_job)
     - [create_job](#create_job)
@@ -75,6 +76,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ImportExportClient exceptions.
+
+Type annotations for `boto3.client("importexport").exceptions` method.
+
+Boto3 documentation:
+[ImportExport.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -100,15 +112,14 @@ Boto3 documentation:
 [ImportExport.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.cancel_job)
 
 Arguments mapping described in
-[CancelJobInputTypeDef](./type_defs.md#canceljobinputtypedef).
+[CancelJobInputRequestTypeDef](./type_defs.md#canceljobinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 - `APIVersion`: `str`
 
-Returns
-[CancelJobOutputResponseTypeDef](./type_defs.md#canceljoboutputresponsetypedef).
+Returns [CancelJobOutputTypeDef](./type_defs.md#canceljoboutputtypedef).
 
 ### create_job
 
@@ -121,7 +132,7 @@ Boto3 documentation:
 [ImportExport.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.create_job)
 
 Arguments mapping described in
-[CreateJobInputTypeDef](./type_defs.md#createjobinputtypedef).
+[CreateJobInputRequestTypeDef](./type_defs.md#createjobinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -131,8 +142,7 @@ Keyword-only arguments:
 - `ManifestAddendum`: `str`
 - `APIVersion`: `str`
 
-Returns
-[CreateJobOutputResponseTypeDef](./type_defs.md#createjoboutputresponsetypedef).
+Returns [CreateJobOutputTypeDef](./type_defs.md#createjoboutputtypedef).
 
 ### generate_presigned_url
 
@@ -164,7 +174,7 @@ Boto3 documentation:
 [ImportExport.Client.get_shipping_label](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.get_shipping_label)
 
 Arguments mapping described in
-[GetShippingLabelInputTypeDef](./type_defs.md#getshippinglabelinputtypedef).
+[GetShippingLabelInputRequestTypeDef](./type_defs.md#getshippinglabelinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -182,7 +192,7 @@ Keyword-only arguments:
 - `APIVersion`: `str`
 
 Returns
-[GetShippingLabelOutputResponseTypeDef](./type_defs.md#getshippinglabeloutputresponsetypedef).
+[GetShippingLabelOutputTypeDef](./type_defs.md#getshippinglabeloutputtypedef).
 
 ### get_status
 
@@ -196,15 +206,14 @@ Boto3 documentation:
 [ImportExport.Client.get_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.get_status)
 
 Arguments mapping described in
-[GetStatusInputTypeDef](./type_defs.md#getstatusinputtypedef).
+[GetStatusInputRequestTypeDef](./type_defs.md#getstatusinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 - `APIVersion`: `str`
 
-Returns
-[GetStatusOutputResponseTypeDef](./type_defs.md#getstatusoutputresponsetypedef).
+Returns [GetStatusOutputTypeDef](./type_defs.md#getstatusoutputtypedef).
 
 ### list_jobs
 
@@ -216,7 +225,7 @@ Boto3 documentation:
 [ImportExport.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.list_jobs)
 
 Arguments mapping described in
-[ListJobsInputTypeDef](./type_defs.md#listjobsinputtypedef).
+[ListJobsInputRequestTypeDef](./type_defs.md#listjobsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -224,8 +233,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 - `APIVersion`: `str`
 
-Returns
-[ListJobsOutputResponseTypeDef](./type_defs.md#listjobsoutputresponsetypedef).
+Returns [ListJobsOutputTypeDef](./type_defs.md#listjobsoutputtypedef).
 
 ### update_job
 
@@ -238,7 +246,7 @@ Boto3 documentation:
 [ImportExport.Client.update_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.update_job)
 
 Arguments mapping described in
-[UpdateJobInputTypeDef](./type_defs.md#updatejobinputtypedef).
+[UpdateJobInputRequestTypeDef](./type_defs.md#updatejobinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -248,8 +256,7 @@ Keyword-only arguments:
 - `ValidateOnly`: `bool` *(required)*
 - `APIVersion`: `str`
 
-Returns
-[UpdateJobOutputResponseTypeDef](./type_defs.md#updatejoboutputresponsetypedef).
+Returns [UpdateJobOutputTypeDef](./type_defs.md#updatejoboutputtypedef).
 
 ### get_paginator
 

@@ -11,6 +11,7 @@ type annotations stubs module
   - [FMSClient](#fmsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_admin_account](#associate_admin_account)
     - [can_paginate](#can_paginate)
     - [delete_apps_list](#delete_apps_list)
@@ -81,6 +82,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+FMSClient exceptions.
+
+Type annotations for `boto3.client("fms").exceptions` method.
+
+Boto3 documentation:
+[FMS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_admin_account
 
 Sets the AWS Firewall Manager administrator account.
@@ -91,7 +103,7 @@ Boto3 documentation:
 [FMS.Client.associate_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.associate_admin_account)
 
 Arguments mapping described in
-[AssociateAdminAccountRequestTypeDef](./type_defs.md#associateadminaccountrequesttypedef).
+[AssociateAdminAccountRequestRequestTypeDef](./type_defs.md#associateadminaccountrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -122,7 +134,7 @@ Boto3 documentation:
 [FMS.Client.delete_apps_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_apps_list)
 
 Arguments mapping described in
-[DeleteAppsListRequestTypeDef](./type_defs.md#deleteappslistrequesttypedef).
+[DeleteAppsListRequestRequestTypeDef](./type_defs.md#deleteappslistrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -149,7 +161,7 @@ Boto3 documentation:
 [FMS.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_policy)
 
 Arguments mapping described in
-[DeletePolicyRequestTypeDef](./type_defs.md#deletepolicyrequesttypedef).
+[DeletePolicyRequestRequestTypeDef](./type_defs.md#deletepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -166,7 +178,7 @@ Boto3 documentation:
 [FMS.Client.delete_protocols_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_protocols_list)
 
 Arguments mapping described in
-[DeleteProtocolsListRequestTypeDef](./type_defs.md#deleteprotocolslistrequesttypedef).
+[DeleteProtocolsListRequestRequestTypeDef](./type_defs.md#deleteprotocolslistrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -211,7 +223,7 @@ Boto3 documentation:
 [FMS.Client.get_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_admin_account)
 
 Returns
-[GetAdminAccountResponseResponseTypeDef](./type_defs.md#getadminaccountresponseresponsetypedef).
+[GetAdminAccountResponseTypeDef](./type_defs.md#getadminaccountresponsetypedef).
 
 ### get_apps_list
 
@@ -223,7 +235,7 @@ Boto3 documentation:
 [FMS.Client.get_apps_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_apps_list)
 
 Arguments mapping described in
-[GetAppsListRequestTypeDef](./type_defs.md#getappslistrequesttypedef).
+[GetAppsListRequestRequestTypeDef](./type_defs.md#getappslistrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -231,7 +243,7 @@ Keyword-only arguments:
 - `DefaultList`: `bool`
 
 Returns
-[GetAppsListResponseResponseTypeDef](./type_defs.md#getappslistresponseresponsetypedef).
+[GetAppsListResponseTypeDef](./type_defs.md#getappslistresponsetypedef).
 
 ### get_compliance_detail
 
@@ -243,7 +255,7 @@ Boto3 documentation:
 [FMS.Client.get_compliance_detail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_compliance_detail)
 
 Arguments mapping described in
-[GetComplianceDetailRequestTypeDef](./type_defs.md#getcompliancedetailrequesttypedef).
+[GetComplianceDetailRequestRequestTypeDef](./type_defs.md#getcompliancedetailrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -251,7 +263,7 @@ Keyword-only arguments:
 - `MemberAccount`: `str` *(required)*
 
 Returns
-[GetComplianceDetailResponseResponseTypeDef](./type_defs.md#getcompliancedetailresponseresponsetypedef).
+[GetComplianceDetailResponseTypeDef](./type_defs.md#getcompliancedetailresponsetypedef).
 
 ### get_notification_channel
 
@@ -264,7 +276,7 @@ Boto3 documentation:
 [FMS.Client.get_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_notification_channel)
 
 Returns
-[GetNotificationChannelResponseResponseTypeDef](./type_defs.md#getnotificationchannelresponseresponsetypedef).
+[GetNotificationChannelResponseTypeDef](./type_defs.md#getnotificationchannelresponsetypedef).
 
 ### get_policy
 
@@ -276,14 +288,13 @@ Boto3 documentation:
 [FMS.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_policy)
 
 Arguments mapping described in
-[GetPolicyRequestTypeDef](./type_defs.md#getpolicyrequesttypedef).
+[GetPolicyRequestRequestTypeDef](./type_defs.md#getpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
 
-Returns
-[GetPolicyResponseResponseTypeDef](./type_defs.md#getpolicyresponseresponsetypedef).
+Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
 
 ### get_protection_status
 
@@ -296,7 +307,7 @@ Boto3 documentation:
 [FMS.Client.get_protection_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_protection_status)
 
 Arguments mapping described in
-[GetProtectionStatusRequestTypeDef](./type_defs.md#getprotectionstatusrequesttypedef).
+[GetProtectionStatusRequestRequestTypeDef](./type_defs.md#getprotectionstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -308,7 +319,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetProtectionStatusResponseResponseTypeDef](./type_defs.md#getprotectionstatusresponseresponsetypedef).
+[GetProtectionStatusResponseTypeDef](./type_defs.md#getprotectionstatusresponsetypedef).
 
 ### get_protocols_list
 
@@ -320,7 +331,7 @@ Boto3 documentation:
 [FMS.Client.get_protocols_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_protocols_list)
 
 Arguments mapping described in
-[GetProtocolsListRequestTypeDef](./type_defs.md#getprotocolslistrequesttypedef).
+[GetProtocolsListRequestRequestTypeDef](./type_defs.md#getprotocolslistrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -328,7 +339,7 @@ Keyword-only arguments:
 - `DefaultList`: `bool`
 
 Returns
-[GetProtocolsListResponseResponseTypeDef](./type_defs.md#getprotocolslistresponseresponsetypedef).
+[GetProtocolsListResponseTypeDef](./type_defs.md#getprotocolslistresponsetypedef).
 
 ### get_violation_details
 
@@ -341,7 +352,7 @@ Boto3 documentation:
 [FMS.Client.get_violation_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_violation_details)
 
 Arguments mapping described in
-[GetViolationDetailsRequestTypeDef](./type_defs.md#getviolationdetailsrequesttypedef).
+[GetViolationDetailsRequestRequestTypeDef](./type_defs.md#getviolationdetailsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -351,7 +362,7 @@ Keyword-only arguments:
 - `ResourceType`: `str` *(required)*
 
 Returns
-[GetViolationDetailsResponseResponseTypeDef](./type_defs.md#getviolationdetailsresponseresponsetypedef).
+[GetViolationDetailsResponseTypeDef](./type_defs.md#getviolationdetailsresponsetypedef).
 
 ### list_apps_lists
 
@@ -363,7 +374,7 @@ Boto3 documentation:
 [FMS.Client.list_apps_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_apps_lists)
 
 Arguments mapping described in
-[ListAppsListsRequestTypeDef](./type_defs.md#listappslistsrequesttypedef).
+[ListAppsListsRequestRequestTypeDef](./type_defs.md#listappslistsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -372,7 +383,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAppsListsResponseResponseTypeDef](./type_defs.md#listappslistsresponseresponsetypedef).
+[ListAppsListsResponseTypeDef](./type_defs.md#listappslistsresponsetypedef).
 
 ### list_compliance_status
 
@@ -384,7 +395,7 @@ Boto3 documentation:
 [FMS.Client.list_compliance_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_compliance_status)
 
 Arguments mapping described in
-[ListComplianceStatusRequestTypeDef](./type_defs.md#listcompliancestatusrequesttypedef).
+[ListComplianceStatusRequestRequestTypeDef](./type_defs.md#listcompliancestatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -393,7 +404,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListComplianceStatusResponseResponseTypeDef](./type_defs.md#listcompliancestatusresponseresponsetypedef).
+[ListComplianceStatusResponseTypeDef](./type_defs.md#listcompliancestatusresponsetypedef).
 
 ### list_member_accounts
 
@@ -406,7 +417,7 @@ Boto3 documentation:
 [FMS.Client.list_member_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_member_accounts)
 
 Arguments mapping described in
-[ListMemberAccountsRequestTypeDef](./type_defs.md#listmemberaccountsrequesttypedef).
+[ListMemberAccountsRequestRequestTypeDef](./type_defs.md#listmemberaccountsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -414,7 +425,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListMemberAccountsResponseResponseTypeDef](./type_defs.md#listmemberaccountsresponseresponsetypedef).
+[ListMemberAccountsResponseTypeDef](./type_defs.md#listmemberaccountsresponsetypedef).
 
 ### list_policies
 
@@ -426,7 +437,7 @@ Boto3 documentation:
 [FMS.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_policies)
 
 Arguments mapping described in
-[ListPoliciesRequestTypeDef](./type_defs.md#listpoliciesrequesttypedef).
+[ListPoliciesRequestRequestTypeDef](./type_defs.md#listpoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -434,7 +445,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPoliciesResponseResponseTypeDef](./type_defs.md#listpoliciesresponseresponsetypedef).
+[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef).
 
 ### list_protocols_lists
 
@@ -446,7 +457,7 @@ Boto3 documentation:
 [FMS.Client.list_protocols_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_protocols_lists)
 
 Arguments mapping described in
-[ListProtocolsListsRequestTypeDef](./type_defs.md#listprotocolslistsrequesttypedef).
+[ListProtocolsListsRequestRequestTypeDef](./type_defs.md#listprotocolslistsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -455,7 +466,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListProtocolsListsResponseResponseTypeDef](./type_defs.md#listprotocolslistsresponseresponsetypedef).
+[ListProtocolsListsResponseTypeDef](./type_defs.md#listprotocolslistsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -467,14 +478,14 @@ Boto3 documentation:
 [FMS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_apps_list
 
@@ -486,7 +497,7 @@ Boto3 documentation:
 [FMS.Client.put_apps_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_apps_list)
 
 Arguments mapping described in
-[PutAppsListRequestTypeDef](./type_defs.md#putappslistrequesttypedef).
+[PutAppsListRequestRequestTypeDef](./type_defs.md#putappslistrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -495,7 +506,7 @@ Keyword-only arguments:
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[PutAppsListResponseResponseTypeDef](./type_defs.md#putappslistresponseresponsetypedef).
+[PutAppsListResponseTypeDef](./type_defs.md#putappslistresponsetypedef).
 
 ### put_notification_channel
 
@@ -508,7 +519,7 @@ Boto3 documentation:
 [FMS.Client.put_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_notification_channel)
 
 Arguments mapping described in
-[PutNotificationChannelRequestTypeDef](./type_defs.md#putnotificationchannelrequesttypedef).
+[PutNotificationChannelRequestRequestTypeDef](./type_defs.md#putnotificationchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -525,15 +536,14 @@ Boto3 documentation:
 [FMS.Client.put_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_policy)
 
 Arguments mapping described in
-[PutPolicyRequestTypeDef](./type_defs.md#putpolicyrequesttypedef).
+[PutPolicyRequestRequestTypeDef](./type_defs.md#putpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef) *(required)*
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[PutPolicyResponseResponseTypeDef](./type_defs.md#putpolicyresponseresponsetypedef).
+Returns [PutPolicyResponseTypeDef](./type_defs.md#putpolicyresponsetypedef).
 
 ### put_protocols_list
 
@@ -545,7 +555,7 @@ Boto3 documentation:
 [FMS.Client.put_protocols_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_protocols_list)
 
 Arguments mapping described in
-[PutProtocolsListRequestTypeDef](./type_defs.md#putprotocolslistrequesttypedef).
+[PutProtocolsListRequestRequestTypeDef](./type_defs.md#putprotocolslistrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -555,7 +565,7 @@ Keyword-only arguments:
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[PutProtocolsListResponseResponseTypeDef](./type_defs.md#putprotocolslistresponseresponsetypedef).
+[PutProtocolsListResponseTypeDef](./type_defs.md#putprotocolslistresponsetypedef).
 
 ### tag_resource
 
@@ -567,7 +577,7 @@ Boto3 documentation:
 [FMS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -586,7 +596,7 @@ Boto3 documentation:
 [FMS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 

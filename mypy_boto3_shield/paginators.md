@@ -36,7 +36,7 @@ Arguments for `ListAttacksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAttacksPaginator.paginate` returns
-`Iterator`\[[ListAttacksResponseResponseTypeDef](./type_defs.md#listattacksresponseresponsetypedef)\].
+`Iterator`\[[ListAttacksResponseTypeDef](./type_defs.md#listattacksresponsetypedef)\].
 
 ## ListProtectionsPaginator
 
@@ -61,4 +61,4 @@ Arguments for `ListProtectionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProtectionsPaginator.paginate` returns
-`Iterator`\[[ListProtectionsResponseResponseTypeDef](./type_defs.md#listprotectionsresponseresponsetypedef)\].
+`Iterator`\[[ListProtectionsResponseTypeDef](./type_defs.md#listprotectionsresponsetypedef)\].

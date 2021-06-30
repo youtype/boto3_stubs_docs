@@ -781,8 +781,7 @@ Keyword-only arguments:
 - `GrantWriteACP`: `str`
 - `ObjectLockEnabledForBucket`: `bool`
 
-Returns
-[CreateBucketOutputResponseTypeDef](./type_defs.md#createbucketoutputresponsetypedef).
+Returns [CreateBucketOutputTypeDef](./type_defs.md#createbucketoutputtypedef).
 
 #### Bucket.delete method
 
@@ -823,7 +822,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[DeleteObjectsOutputResponseTypeDef](./type_defs.md#deleteobjectsoutputresponsetypedef).
+[DeleteObjectsOutputTypeDef](./type_defs.md#deleteobjectsoutputtypedef).
 
 #### Bucket.download_file method
 
@@ -1540,7 +1539,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `NotificationConfiguration`:
-  [NotificationConfigurationResponseTypeDef](./type_defs.md#notificationconfigurationresponsetypedef)
+  [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
   *(required)*
 - `ExpectedBucketOwner`: `str`
 
@@ -2167,7 +2166,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[AbortMultipartUploadOutputResponseTypeDef](./type_defs.md#abortmultipartuploadoutputresponsetypedef).
+[AbortMultipartUploadOutputTypeDef](./type_defs.md#abortmultipartuploadoutputtypedef).
 
 #### MultipartUpload.complete method
 
@@ -2273,7 +2272,7 @@ Keyword-only arguments:
 - `ExpectedSourceBucketOwner`: `str`
 
 Returns
-[UploadPartCopyOutputResponseTypeDef](./type_defs.md#uploadpartcopyoutputresponsetypedef).
+[UploadPartCopyOutputTypeDef](./type_defs.md#uploadpartcopyoutputtypedef).
 
 #### MultipartUploadPart.get_available_subresources method
 
@@ -2310,8 +2309,7 @@ Keyword-only arguments:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[UploadPartOutputResponseTypeDef](./type_defs.md#uploadpartoutputresponsetypedef).
+Returns [UploadPartOutputTypeDef](./type_defs.md#uploadpartoutputtypedef).
 
 ## Object
 
@@ -2503,8 +2501,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 - `ExpectedSourceBucketOwner`: `str`
 
-Returns
-[CopyObjectOutputResponseTypeDef](./type_defs.md#copyobjectoutputresponsetypedef).
+Returns [CopyObjectOutputTypeDef](./type_defs.md#copyobjectoutputtypedef).
 
 #### Object.delete method
 
@@ -2528,8 +2525,7 @@ Keyword-only arguments:
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[DeleteObjectOutputResponseTypeDef](./type_defs.md#deleteobjectoutputresponsetypedef).
+Returns [DeleteObjectOutputTypeDef](./type_defs.md#deleteobjectoutputtypedef).
 
 #### Object.download_file method
 
@@ -2603,8 +2599,7 @@ Keyword-only arguments:
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[GetObjectOutputResponseTypeDef](./type_defs.md#getobjectoutputresponsetypedef).
+Returns [GetObjectOutputTypeDef](./type_defs.md#getobjectoutputtypedef).
 
 #### Object.get_available_subresources method
 
@@ -2722,8 +2717,7 @@ Keyword-only arguments:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[PutObjectOutputResponseTypeDef](./type_defs.md#putobjectoutputresponsetypedef).
+Returns [PutObjectOutputTypeDef](./type_defs.md#putobjectoutputtypedef).
 
 #### Object.reload method
 
@@ -2758,7 +2752,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[RestoreObjectOutputResponseTypeDef](./type_defs.md#restoreobjectoutputresponsetypedef).
+[RestoreObjectOutputTypeDef](./type_defs.md#restoreobjectoutputtypedef).
 
 #### Object.upload_file method
 
@@ -2902,8 +2896,7 @@ Keyword-only arguments:
 - `VersionId`: `str`
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[PutObjectAclOutputResponseTypeDef](./type_defs.md#putobjectacloutputresponsetypedef).
+Returns [PutObjectAclOutputTypeDef](./type_defs.md#putobjectacloutputtypedef).
 
 #### ObjectAcl.reload method
 
@@ -3070,8 +3063,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 - `ExpectedSourceBucketOwner`: `str`
 
-Returns
-[CopyObjectOutputResponseTypeDef](./type_defs.md#copyobjectoutputresponsetypedef).
+Returns [CopyObjectOutputTypeDef](./type_defs.md#copyobjectoutputtypedef).
 
 #### ObjectSummary.delete method
 
@@ -3095,8 +3087,7 @@ Keyword-only arguments:
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[DeleteObjectOutputResponseTypeDef](./type_defs.md#deleteobjectoutputresponsetypedef).
+Returns [DeleteObjectOutputTypeDef](./type_defs.md#deleteobjectoutputtypedef).
 
 #### ObjectSummary.get method
 
@@ -3132,8 +3123,7 @@ Keyword-only arguments:
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[GetObjectOutputResponseTypeDef](./type_defs.md#getobjectoutputresponsetypedef).
+Returns [GetObjectOutputTypeDef](./type_defs.md#getobjectoutputtypedef).
 
 #### ObjectSummary.get_available_subresources method
 
@@ -3251,8 +3241,7 @@ Keyword-only arguments:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[PutObjectOutputResponseTypeDef](./type_defs.md#putobjectoutputresponsetypedef).
+Returns [PutObjectOutputTypeDef](./type_defs.md#putobjectoutputtypedef).
 
 #### ObjectSummary.restore_object method
 
@@ -3277,7 +3266,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[RestoreObjectOutputResponseTypeDef](./type_defs.md#restoreobjectoutputresponsetypedef).
+[RestoreObjectOutputTypeDef](./type_defs.md#restoreobjectoutputtypedef).
 
 #### ObjectSummary.wait_until_exists method
 
@@ -3361,8 +3350,7 @@ Keyword-only arguments:
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[DeleteObjectOutputResponseTypeDef](./type_defs.md#deleteobjectoutputresponsetypedef).
+Returns [DeleteObjectOutputTypeDef](./type_defs.md#deleteobjectoutputtypedef).
 
 #### ObjectVersion.get method
 
@@ -3397,8 +3385,7 @@ Keyword-only arguments:
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[GetObjectOutputResponseTypeDef](./type_defs.md#getobjectoutputresponsetypedef).
+Returns [GetObjectOutputTypeDef](./type_defs.md#getobjectoutputtypedef).
 
 #### ObjectVersion.get_available_subresources method
 
@@ -3439,5 +3426,4 @@ Keyword-only arguments:
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[HeadObjectOutputResponseTypeDef](./type_defs.md#headobjectoutputresponsetypedef).
+Returns [HeadObjectOutputTypeDef](./type_defs.md#headobjectoutputtypedef).

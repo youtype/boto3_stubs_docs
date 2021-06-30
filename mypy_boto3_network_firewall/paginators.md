@@ -36,7 +36,7 @@ Arguments for `ListFirewallPoliciesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFirewallPoliciesPaginator.paginate` returns
-`Iterator`\[[ListFirewallPoliciesResponseResponseTypeDef](./type_defs.md#listfirewallpoliciesresponseresponsetypedef)\].
+`Iterator`\[[ListFirewallPoliciesResponseTypeDef](./type_defs.md#listfirewallpoliciesresponsetypedef)\].
 
 ## ListFirewallsPaginator
 
@@ -62,7 +62,7 @@ Arguments for `ListFirewallsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFirewallsPaginator.paginate` returns
-`Iterator`\[[ListFirewallsResponseResponseTypeDef](./type_defs.md#listfirewallsresponseresponsetypedef)\].
+`Iterator`\[[ListFirewallsResponseTypeDef](./type_defs.md#listfirewallsresponsetypedef)\].
 
 ## ListRuleGroupsPaginator
 
@@ -87,7 +87,7 @@ Arguments for `ListRuleGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRuleGroupsPaginator.paginate` returns
-`Iterator`\[[ListRuleGroupsResponseResponseTypeDef](./type_defs.md#listrulegroupsresponseresponsetypedef)\].
+`Iterator`\[[ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -113,4 +113,4 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef)\].
+`Iterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].

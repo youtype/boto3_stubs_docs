@@ -11,6 +11,7 @@ type annotations stubs module
   - [MediaStoreDataClient](#mediastoredataclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [delete_object](#delete_object)
     - [describe_object](#describe_object)
@@ -58,6 +59,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+MediaStoreDataClient exceptions.
+
+Type annotations for `boto3.client("mediastore-data").exceptions` method.
+
+Boto3 documentation:
+[MediaStoreData.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -83,7 +95,7 @@ Boto3 documentation:
 [MediaStoreData.Client.delete_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.delete_object)
 
 Arguments mapping described in
-[DeleteObjectRequestTypeDef](./type_defs.md#deleteobjectrequesttypedef).
+[DeleteObjectRequestRequestTypeDef](./type_defs.md#deleteobjectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -101,14 +113,14 @@ Boto3 documentation:
 [MediaStoreData.Client.describe_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.describe_object)
 
 Arguments mapping described in
-[DescribeObjectRequestTypeDef](./type_defs.md#describeobjectrequesttypedef).
+[DescribeObjectRequestRequestTypeDef](./type_defs.md#describeobjectrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Path`: `str` *(required)*
 
 Returns
-[DescribeObjectResponseResponseTypeDef](./type_defs.md#describeobjectresponseresponsetypedef).
+[DescribeObjectResponseTypeDef](./type_defs.md#describeobjectresponsetypedef).
 
 ### generate_presigned_url
 
@@ -139,15 +151,14 @@ Boto3 documentation:
 [MediaStoreData.Client.get_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.get_object)
 
 Arguments mapping described in
-[GetObjectRequestTypeDef](./type_defs.md#getobjectrequesttypedef).
+[GetObjectRequestRequestTypeDef](./type_defs.md#getobjectrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Path`: `str` *(required)*
 - `Range`: `str`
 
-Returns
-[GetObjectResponseResponseTypeDef](./type_defs.md#getobjectresponseresponsetypedef).
+Returns [GetObjectResponseTypeDef](./type_defs.md#getobjectresponsetypedef).
 
 ### list_items
 
@@ -160,7 +171,7 @@ Boto3 documentation:
 [MediaStoreData.Client.list_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.list_items)
 
 Arguments mapping described in
-[ListItemsRequestTypeDef](./type_defs.md#listitemsrequesttypedef).
+[ListItemsRequestRequestTypeDef](./type_defs.md#listitemsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -168,8 +179,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListItemsResponseResponseTypeDef](./type_defs.md#listitemsresponseresponsetypedef).
+Returns [ListItemsResponseTypeDef](./type_defs.md#listitemsresponsetypedef).
 
 ### put_object
 
@@ -181,7 +191,7 @@ Boto3 documentation:
 [MediaStoreData.Client.put_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.put_object)
 
 Arguments mapping described in
-[PutObjectRequestTypeDef](./type_defs.md#putobjectrequesttypedef).
+[PutObjectRequestRequestTypeDef](./type_defs.md#putobjectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -194,8 +204,7 @@ Keyword-only arguments:
 - `UploadAvailability`:
   [UploadAvailabilityType](./literals.md#uploadavailabilitytype)
 
-Returns
-[PutObjectResponseResponseTypeDef](./type_defs.md#putobjectresponseresponsetypedef).
+Returns [PutObjectResponseTypeDef](./type_defs.md#putobjectresponsetypedef).
 
 ### get_paginator
 

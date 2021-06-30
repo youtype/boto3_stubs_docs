@@ -10,24 +10,24 @@ type annotations stubs module
 - [Typed dictionaries for boto3 ApplicationAutoScaling module](#typed-dictionaries-for-boto3-applicationautoscaling-module)
   - [AlarmTypeDef](#alarmtypedef)
   - [CustomizedMetricSpecificationTypeDef](#customizedmetricspecificationtypedef)
-  - [DeleteScalingPolicyRequestTypeDef](#deletescalingpolicyrequesttypedef)
-  - [DeleteScheduledActionRequestTypeDef](#deletescheduledactionrequesttypedef)
-  - [DeregisterScalableTargetRequestTypeDef](#deregisterscalabletargetrequesttypedef)
-  - [DescribeScalableTargetsRequestTypeDef](#describescalabletargetsrequesttypedef)
-  - [DescribeScalableTargetsResponseResponseTypeDef](#describescalabletargetsresponseresponsetypedef)
-  - [DescribeScalingActivitiesRequestTypeDef](#describescalingactivitiesrequesttypedef)
-  - [DescribeScalingActivitiesResponseResponseTypeDef](#describescalingactivitiesresponseresponsetypedef)
-  - [DescribeScalingPoliciesRequestTypeDef](#describescalingpoliciesrequesttypedef)
-  - [DescribeScalingPoliciesResponseResponseTypeDef](#describescalingpoliciesresponseresponsetypedef)
-  - [DescribeScheduledActionsRequestTypeDef](#describescheduledactionsrequesttypedef)
-  - [DescribeScheduledActionsResponseResponseTypeDef](#describescheduledactionsresponseresponsetypedef)
+  - [DeleteScalingPolicyRequestRequestTypeDef](#deletescalingpolicyrequestrequesttypedef)
+  - [DeleteScheduledActionRequestRequestTypeDef](#deletescheduledactionrequestrequesttypedef)
+  - [DeregisterScalableTargetRequestRequestTypeDef](#deregisterscalabletargetrequestrequesttypedef)
+  - [DescribeScalableTargetsRequestRequestTypeDef](#describescalabletargetsrequestrequesttypedef)
+  - [DescribeScalableTargetsResponseTypeDef](#describescalabletargetsresponsetypedef)
+  - [DescribeScalingActivitiesRequestRequestTypeDef](#describescalingactivitiesrequestrequesttypedef)
+  - [DescribeScalingActivitiesResponseTypeDef](#describescalingactivitiesresponsetypedef)
+  - [DescribeScalingPoliciesRequestRequestTypeDef](#describescalingpoliciesrequestrequesttypedef)
+  - [DescribeScalingPoliciesResponseTypeDef](#describescalingpoliciesresponsetypedef)
+  - [DescribeScheduledActionsRequestRequestTypeDef](#describescheduledactionsrequestrequesttypedef)
+  - [DescribeScheduledActionsResponseTypeDef](#describescheduledactionsresponsetypedef)
   - [MetricDimensionTypeDef](#metricdimensiontypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PredefinedMetricSpecificationTypeDef](#predefinedmetricspecificationtypedef)
-  - [PutScalingPolicyRequestTypeDef](#putscalingpolicyrequesttypedef)
-  - [PutScalingPolicyResponseResponseTypeDef](#putscalingpolicyresponseresponsetypedef)
-  - [PutScheduledActionRequestTypeDef](#putscheduledactionrequesttypedef)
-  - [RegisterScalableTargetRequestTypeDef](#registerscalabletargetrequesttypedef)
+  - [PutScalingPolicyRequestRequestTypeDef](#putscalingpolicyrequestrequesttypedef)
+  - [PutScalingPolicyResponseTypeDef](#putscalingpolicyresponsetypedef)
+  - [PutScheduledActionRequestRequestTypeDef](#putscheduledactionrequestrequesttypedef)
+  - [RegisterScalableTargetRequestRequestTypeDef](#registerscalabletargetrequestrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ScalableTargetActionTypeDef](#scalabletargetactiontypedef)
   - [ScalableTargetTypeDef](#scalabletargettypedef)
@@ -68,10 +68,10 @@ Optional fields:
   `List`\[[MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)\]
 - `Unit`: `str`
 
-## DeleteScalingPolicyRequestTypeDef
+## DeleteScalingPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_autoscaling.type_defs import DeleteScalingPolicyRequestTypeDef
+from mypy_boto3_application_autoscaling.type_defs import DeleteScalingPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -83,10 +83,10 @@ Required fields:
 - `ScalableDimension`:
   [ScalableDimensionType](./literals.md#scalabledimensiontype)
 
-## DeleteScheduledActionRequestTypeDef
+## DeleteScheduledActionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_autoscaling.type_defs import DeleteScheduledActionRequestTypeDef
+from mypy_boto3_application_autoscaling.type_defs import DeleteScheduledActionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -98,10 +98,10 @@ Required fields:
 - `ScalableDimension`:
   [ScalableDimensionType](./literals.md#scalabledimensiontype)
 
-## DeregisterScalableTargetRequestTypeDef
+## DeregisterScalableTargetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_autoscaling.type_defs import DeregisterScalableTargetRequestTypeDef
+from mypy_boto3_application_autoscaling.type_defs import DeregisterScalableTargetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -112,10 +112,10 @@ Required fields:
 - `ScalableDimension`:
   [ScalableDimensionType](./literals.md#scalabledimensiontype)
 
-## DescribeScalableTargetsRequestTypeDef
+## DescribeScalableTargetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_autoscaling.type_defs import DescribeScalableTargetsRequestTypeDef
+from mypy_boto3_application_autoscaling.type_defs import DescribeScalableTargetsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -131,10 +131,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## DescribeScalableTargetsResponseResponseTypeDef
+## DescribeScalableTargetsResponseTypeDef
 
 ```python
-from mypy_boto3_application_autoscaling.type_defs import DescribeScalableTargetsResponseResponseTypeDef
+from mypy_boto3_application_autoscaling.type_defs import DescribeScalableTargetsResponseTypeDef
 ```
 
 Required fields:
@@ -145,10 +145,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeScalingActivitiesRequestTypeDef
+## DescribeScalingActivitiesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_autoscaling.type_defs import DescribeScalingActivitiesRequestTypeDef
+from mypy_boto3_application_autoscaling.type_defs import DescribeScalingActivitiesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -164,10 +164,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## DescribeScalingActivitiesResponseResponseTypeDef
+## DescribeScalingActivitiesResponseTypeDef
 
 ```python
-from mypy_boto3_application_autoscaling.type_defs import DescribeScalingActivitiesResponseResponseTypeDef
+from mypy_boto3_application_autoscaling.type_defs import DescribeScalingActivitiesResponseTypeDef
 ```
 
 Required fields:
@@ -178,10 +178,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeScalingPoliciesRequestTypeDef
+## DescribeScalingPoliciesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_autoscaling.type_defs import DescribeScalingPoliciesRequestTypeDef
+from mypy_boto3_application_autoscaling.type_defs import DescribeScalingPoliciesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -198,10 +198,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## DescribeScalingPoliciesResponseResponseTypeDef
+## DescribeScalingPoliciesResponseTypeDef
 
 ```python
-from mypy_boto3_application_autoscaling.type_defs import DescribeScalingPoliciesResponseResponseTypeDef
+from mypy_boto3_application_autoscaling.type_defs import DescribeScalingPoliciesResponseTypeDef
 ```
 
 Required fields:
@@ -212,10 +212,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeScheduledActionsRequestTypeDef
+## DescribeScheduledActionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_autoscaling.type_defs import DescribeScheduledActionsRequestTypeDef
+from mypy_boto3_application_autoscaling.type_defs import DescribeScheduledActionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -232,10 +232,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## DescribeScheduledActionsResponseResponseTypeDef
+## DescribeScheduledActionsResponseTypeDef
 
 ```python
-from mypy_boto3_application_autoscaling.type_defs import DescribeScheduledActionsResponseResponseTypeDef
+from mypy_boto3_application_autoscaling.type_defs import DescribeScheduledActionsResponseTypeDef
 ```
 
 Required fields:
@@ -283,10 +283,10 @@ Optional fields:
 
 - `ResourceLabel`: `str`
 
-## PutScalingPolicyRequestTypeDef
+## PutScalingPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_autoscaling.type_defs import PutScalingPolicyRequestTypeDef
+from mypy_boto3_application_autoscaling.type_defs import PutScalingPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -306,10 +306,10 @@ Optional fields:
 - `TargetTrackingScalingPolicyConfiguration`:
   [TargetTrackingScalingPolicyConfigurationTypeDef](./type_defs.md#targettrackingscalingpolicyconfigurationtypedef)
 
-## PutScalingPolicyResponseResponseTypeDef
+## PutScalingPolicyResponseTypeDef
 
 ```python
-from mypy_boto3_application_autoscaling.type_defs import PutScalingPolicyResponseResponseTypeDef
+from mypy_boto3_application_autoscaling.type_defs import PutScalingPolicyResponseTypeDef
 ```
 
 Required fields:
@@ -319,10 +319,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutScheduledActionRequestTypeDef
+## PutScheduledActionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_autoscaling.type_defs import PutScheduledActionRequestTypeDef
+from mypy_boto3_application_autoscaling.type_defs import PutScheduledActionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -343,10 +343,10 @@ Optional fields:
 - `ScalableTargetAction`:
   [ScalableTargetActionTypeDef](./type_defs.md#scalabletargetactiontypedef)
 
-## RegisterScalableTargetRequestTypeDef
+## RegisterScalableTargetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_application_autoscaling.type_defs import RegisterScalableTargetRequestTypeDef
+from mypy_boto3_application_autoscaling.type_defs import RegisterScalableTargetRequestRequestTypeDef
 ```
 
 Required fields:

@@ -9,21 +9,21 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 ImportExport module](#typed-dictionaries-for-boto3-importexport-module)
   - [ArtifactTypeDef](#artifacttypedef)
-  - [CancelJobInputTypeDef](#canceljobinputtypedef)
-  - [CancelJobOutputResponseTypeDef](#canceljoboutputresponsetypedef)
-  - [CreateJobInputTypeDef](#createjobinputtypedef)
-  - [CreateJobOutputResponseTypeDef](#createjoboutputresponsetypedef)
-  - [GetShippingLabelInputTypeDef](#getshippinglabelinputtypedef)
-  - [GetShippingLabelOutputResponseTypeDef](#getshippinglabeloutputresponsetypedef)
-  - [GetStatusInputTypeDef](#getstatusinputtypedef)
-  - [GetStatusOutputResponseTypeDef](#getstatusoutputresponsetypedef)
+  - [CancelJobInputRequestTypeDef](#canceljobinputrequesttypedef)
+  - [CancelJobOutputTypeDef](#canceljoboutputtypedef)
+  - [CreateJobInputRequestTypeDef](#createjobinputrequesttypedef)
+  - [CreateJobOutputTypeDef](#createjoboutputtypedef)
+  - [GetShippingLabelInputRequestTypeDef](#getshippinglabelinputrequesttypedef)
+  - [GetShippingLabelOutputTypeDef](#getshippinglabeloutputtypedef)
+  - [GetStatusInputRequestTypeDef](#getstatusinputrequesttypedef)
+  - [GetStatusOutputTypeDef](#getstatusoutputtypedef)
   - [JobTypeDef](#jobtypedef)
-  - [ListJobsInputTypeDef](#listjobsinputtypedef)
-  - [ListJobsOutputResponseTypeDef](#listjobsoutputresponsetypedef)
+  - [ListJobsInputRequestTypeDef](#listjobsinputrequesttypedef)
+  - [ListJobsOutputTypeDef](#listjobsoutputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [UpdateJobInputTypeDef](#updatejobinputtypedef)
-  - [UpdateJobOutputResponseTypeDef](#updatejoboutputresponsetypedef)
+  - [UpdateJobInputRequestTypeDef](#updatejobinputrequesttypedef)
+  - [UpdateJobOutputTypeDef](#updatejoboutputtypedef)
 
 ## ArtifactTypeDef
 
@@ -36,10 +36,10 @@ Optional fields:
 - `Description`: `str`
 - `URL`: `str`
 
-## CancelJobInputTypeDef
+## CancelJobInputRequestTypeDef
 
 ```python
-from mypy_boto3_importexport.type_defs import CancelJobInputTypeDef
+from mypy_boto3_importexport.type_defs import CancelJobInputRequestTypeDef
 ```
 
 Required fields:
@@ -50,10 +50,10 @@ Optional fields:
 
 - `APIVersion`: `str`
 
-## CancelJobOutputResponseTypeDef
+## CancelJobOutputTypeDef
 
 ```python
-from mypy_boto3_importexport.type_defs import CancelJobOutputResponseTypeDef
+from mypy_boto3_importexport.type_defs import CancelJobOutputTypeDef
 ```
 
 Required fields:
@@ -62,10 +62,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateJobInputTypeDef
+## CreateJobInputRequestTypeDef
 
 ```python
-from mypy_boto3_importexport.type_defs import CreateJobInputTypeDef
+from mypy_boto3_importexport.type_defs import CreateJobInputRequestTypeDef
 ```
 
 Required fields:
@@ -79,10 +79,10 @@ Optional fields:
 - `ManifestAddendum`: `str`
 - `APIVersion`: `str`
 
-## CreateJobOutputResponseTypeDef
+## CreateJobOutputTypeDef
 
 ```python
-from mypy_boto3_importexport.type_defs import CreateJobOutputResponseTypeDef
+from mypy_boto3_importexport.type_defs import CreateJobOutputTypeDef
 ```
 
 Required fields:
@@ -96,10 +96,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetShippingLabelInputTypeDef
+## GetShippingLabelInputRequestTypeDef
 
 ```python
-from mypy_boto3_importexport.type_defs import GetShippingLabelInputTypeDef
+from mypy_boto3_importexport.type_defs import GetShippingLabelInputRequestTypeDef
 ```
 
 Required fields:
@@ -120,10 +120,10 @@ Optional fields:
 - `street3`: `str`
 - `APIVersion`: `str`
 
-## GetShippingLabelOutputResponseTypeDef
+## GetShippingLabelOutputTypeDef
 
 ```python
-from mypy_boto3_importexport.type_defs import GetShippingLabelOutputResponseTypeDef
+from mypy_boto3_importexport.type_defs import GetShippingLabelOutputTypeDef
 ```
 
 Required fields:
@@ -133,10 +133,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetStatusInputTypeDef
+## GetStatusInputRequestTypeDef
 
 ```python
-from mypy_boto3_importexport.type_defs import GetStatusInputTypeDef
+from mypy_boto3_importexport.type_defs import GetStatusInputRequestTypeDef
 ```
 
 Required fields:
@@ -147,10 +147,10 @@ Optional fields:
 
 - `APIVersion`: `str`
 
-## GetStatusOutputResponseTypeDef
+## GetStatusOutputTypeDef
 
 ```python
-from mypy_boto3_importexport.type_defs import GetStatusOutputResponseTypeDef
+from mypy_boto3_importexport.type_defs import GetStatusOutputTypeDef
 ```
 
 Required fields:
@@ -187,10 +187,10 @@ Optional fields:
 - `IsCanceled`: `bool`
 - `JobType`: [JobTypeType](./literals.md#jobtypetype)
 
-## ListJobsInputTypeDef
+## ListJobsInputRequestTypeDef
 
 ```python
-from mypy_boto3_importexport.type_defs import ListJobsInputTypeDef
+from mypy_boto3_importexport.type_defs import ListJobsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -199,10 +199,10 @@ Optional fields:
 - `Marker`: `str`
 - `APIVersion`: `str`
 
-## ListJobsOutputResponseTypeDef
+## ListJobsOutputTypeDef
 
 ```python
-from mypy_boto3_importexport.type_defs import ListJobsOutputResponseTypeDef
+from mypy_boto3_importexport.type_defs import ListJobsOutputTypeDef
 ```
 
 Required fields:
@@ -238,10 +238,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## UpdateJobInputTypeDef
+## UpdateJobInputRequestTypeDef
 
 ```python
-from mypy_boto3_importexport.type_defs import UpdateJobInputTypeDef
+from mypy_boto3_importexport.type_defs import UpdateJobInputRequestTypeDef
 ```
 
 Required fields:
@@ -255,10 +255,10 @@ Optional fields:
 
 - `APIVersion`: `str`
 
-## UpdateJobOutputResponseTypeDef
+## UpdateJobOutputTypeDef
 
 ```python
-from mypy_boto3_importexport.type_defs import UpdateJobOutputResponseTypeDef
+from mypy_boto3_importexport.type_defs import UpdateJobOutputTypeDef
 ```
 
 Required fields:

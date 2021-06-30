@@ -8,33 +8,33 @@ type annotations stubs module
 [mypy_boto3_braket](https://pypi.org/project/mypy-boto3-braket/).
 
 - [Typed dictionaries for boto3 Braket module](#typed-dictionaries-for-boto3-braket-module)
-  - [CancelQuantumTaskRequestTypeDef](#cancelquantumtaskrequesttypedef)
-  - [CancelQuantumTaskResponseResponseTypeDef](#cancelquantumtaskresponseresponsetypedef)
-  - [CreateQuantumTaskRequestTypeDef](#createquantumtaskrequesttypedef)
-  - [CreateQuantumTaskResponseResponseTypeDef](#createquantumtaskresponseresponsetypedef)
+  - [CancelQuantumTaskRequestRequestTypeDef](#cancelquantumtaskrequestrequesttypedef)
+  - [CancelQuantumTaskResponseTypeDef](#cancelquantumtaskresponsetypedef)
+  - [CreateQuantumTaskRequestRequestTypeDef](#createquantumtaskrequestrequesttypedef)
+  - [CreateQuantumTaskResponseTypeDef](#createquantumtaskresponsetypedef)
   - [DeviceSummaryTypeDef](#devicesummarytypedef)
-  - [GetDeviceRequestTypeDef](#getdevicerequesttypedef)
-  - [GetDeviceResponseResponseTypeDef](#getdeviceresponseresponsetypedef)
-  - [GetQuantumTaskRequestTypeDef](#getquantumtaskrequesttypedef)
-  - [GetQuantumTaskResponseResponseTypeDef](#getquantumtaskresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [GetDeviceRequestRequestTypeDef](#getdevicerequestrequesttypedef)
+  - [GetDeviceResponseTypeDef](#getdeviceresponsetypedef)
+  - [GetQuantumTaskRequestRequestTypeDef](#getquantumtaskrequestrequesttypedef)
+  - [GetQuantumTaskResponseTypeDef](#getquantumtaskresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [QuantumTaskSummaryTypeDef](#quantumtasksummarytypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SearchDevicesFilterTypeDef](#searchdevicesfiltertypedef)
-  - [SearchDevicesRequestTypeDef](#searchdevicesrequesttypedef)
-  - [SearchDevicesResponseResponseTypeDef](#searchdevicesresponseresponsetypedef)
+  - [SearchDevicesRequestRequestTypeDef](#searchdevicesrequestrequesttypedef)
+  - [SearchDevicesResponseTypeDef](#searchdevicesresponsetypedef)
   - [SearchQuantumTasksFilterTypeDef](#searchquantumtasksfiltertypedef)
-  - [SearchQuantumTasksRequestTypeDef](#searchquantumtasksrequesttypedef)
-  - [SearchQuantumTasksResponseResponseTypeDef](#searchquantumtasksresponseresponsetypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [SearchQuantumTasksRequestRequestTypeDef](#searchquantumtasksrequestrequesttypedef)
+  - [SearchQuantumTasksResponseTypeDef](#searchquantumtasksresponsetypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
 
-## CancelQuantumTaskRequestTypeDef
+## CancelQuantumTaskRequestRequestTypeDef
 
 ```python
-from mypy_boto3_braket.type_defs import CancelQuantumTaskRequestTypeDef
+from mypy_boto3_braket.type_defs import CancelQuantumTaskRequestRequestTypeDef
 ```
 
 Required fields:
@@ -42,10 +42,10 @@ Required fields:
 - `clientToken`: `str`
 - `quantumTaskArn`: `str`
 
-## CancelQuantumTaskResponseResponseTypeDef
+## CancelQuantumTaskResponseTypeDef
 
 ```python
-from mypy_boto3_braket.type_defs import CancelQuantumTaskResponseResponseTypeDef
+from mypy_boto3_braket.type_defs import CancelQuantumTaskResponseTypeDef
 ```
 
 Required fields:
@@ -56,10 +56,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateQuantumTaskRequestTypeDef
+## CreateQuantumTaskRequestRequestTypeDef
 
 ```python
-from mypy_boto3_braket.type_defs import CreateQuantumTaskRequestTypeDef
+from mypy_boto3_braket.type_defs import CreateQuantumTaskRequestRequestTypeDef
 ```
 
 Required fields:
@@ -76,10 +76,10 @@ Optional fields:
 - `deviceParameters`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateQuantumTaskResponseResponseTypeDef
+## CreateQuantumTaskResponseTypeDef
 
 ```python
-from mypy_boto3_braket.type_defs import CreateQuantumTaskResponseResponseTypeDef
+from mypy_boto3_braket.type_defs import CreateQuantumTaskResponseTypeDef
 ```
 
 Required fields:
@@ -102,20 +102,20 @@ Required fields:
 - `deviceType`: [DeviceTypeType](./literals.md#devicetypetype)
 - `providerName`: `str`
 
-## GetDeviceRequestTypeDef
+## GetDeviceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_braket.type_defs import GetDeviceRequestTypeDef
+from mypy_boto3_braket.type_defs import GetDeviceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `deviceArn`: `str`
 
-## GetDeviceResponseResponseTypeDef
+## GetDeviceResponseTypeDef
 
 ```python
-from mypy_boto3_braket.type_defs import GetDeviceResponseResponseTypeDef
+from mypy_boto3_braket.type_defs import GetDeviceResponseTypeDef
 ```
 
 Required fields:
@@ -129,20 +129,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetQuantumTaskRequestTypeDef
+## GetQuantumTaskRequestRequestTypeDef
 
 ```python
-from mypy_boto3_braket.type_defs import GetQuantumTaskRequestTypeDef
+from mypy_boto3_braket.type_defs import GetQuantumTaskRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `quantumTaskArn`: `str`
 
-## GetQuantumTaskResponseResponseTypeDef
+## GetQuantumTaskResponseTypeDef
 
 ```python
-from mypy_boto3_braket.type_defs import GetQuantumTaskResponseResponseTypeDef
+from mypy_boto3_braket.type_defs import GetQuantumTaskResponseTypeDef
 ```
 
 Required fields:
@@ -161,20 +161,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_braket.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_braket.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_braket.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_braket.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -241,10 +241,10 @@ Required fields:
 - `name`: `str`
 - `values`: `List`\[`str`\]
 
-## SearchDevicesRequestTypeDef
+## SearchDevicesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_braket.type_defs import SearchDevicesRequestTypeDef
+from mypy_boto3_braket.type_defs import SearchDevicesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -257,10 +257,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## SearchDevicesResponseResponseTypeDef
+## SearchDevicesResponseTypeDef
 
 ```python
-from mypy_boto3_braket.type_defs import SearchDevicesResponseResponseTypeDef
+from mypy_boto3_braket.type_defs import SearchDevicesResponseTypeDef
 ```
 
 Required fields:
@@ -284,10 +284,10 @@ Required fields:
   [SearchQuantumTasksFilterOperatorType](./literals.md#searchquantumtasksfilteroperatortype)
 - `values`: `List`\[`str`\]
 
-## SearchQuantumTasksRequestTypeDef
+## SearchQuantumTasksRequestRequestTypeDef
 
 ```python
-from mypy_boto3_braket.type_defs import SearchQuantumTasksRequestTypeDef
+from mypy_boto3_braket.type_defs import SearchQuantumTasksRequestRequestTypeDef
 ```
 
 Required fields:
@@ -300,10 +300,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## SearchQuantumTasksResponseResponseTypeDef
+## SearchQuantumTasksResponseTypeDef
 
 ```python
-from mypy_boto3_braket.type_defs import SearchQuantumTasksResponseResponseTypeDef
+from mypy_boto3_braket.type_defs import SearchQuantumTasksResponseTypeDef
 ```
 
 Required fields:
@@ -314,10 +314,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_braket.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_braket.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -325,10 +325,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_braket.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_braket.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:

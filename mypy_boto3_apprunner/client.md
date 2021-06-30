@@ -11,6 +11,7 @@ type annotations stubs module
   - [AppRunnerClient](#apprunnerclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_custom_domain](#associate_custom_domain)
     - [can_paginate](#can_paginate)
     - [create_auto_scaling_configuration](#create_auto_scaling_configuration)
@@ -75,6 +76,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+AppRunnerClient exceptions.
+
+Type annotations for `boto3.client("apprunner").exceptions` method.
+
+Boto3 documentation:
+[AppRunner.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_custom_domain
 
 Associate your own domain name with the AWS App Runner subdomain URL of your
@@ -87,7 +99,7 @@ Boto3 documentation:
 [AppRunner.Client.associate_custom_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.associate_custom_domain)
 
 Arguments mapping described in
-[AssociateCustomDomainRequestTypeDef](./type_defs.md#associatecustomdomainrequesttypedef).
+[AssociateCustomDomainRequestRequestTypeDef](./type_defs.md#associatecustomdomainrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -96,7 +108,7 @@ Keyword-only arguments:
 - `EnableWWWSubdomain`: `bool`
 
 Returns
-[AssociateCustomDomainResponseResponseTypeDef](./type_defs.md#associatecustomdomainresponseresponsetypedef).
+[AssociateCustomDomainResponseTypeDef](./type_defs.md#associatecustomdomainresponsetypedef).
 
 ### can_paginate
 
@@ -124,7 +136,7 @@ Boto3 documentation:
 [AppRunner.Client.create_auto_scaling_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.create_auto_scaling_configuration)
 
 Arguments mapping described in
-[CreateAutoScalingConfigurationRequestTypeDef](./type_defs.md#createautoscalingconfigurationrequesttypedef).
+[CreateAutoScalingConfigurationRequestRequestTypeDef](./type_defs.md#createautoscalingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -135,7 +147,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateAutoScalingConfigurationResponseResponseTypeDef](./type_defs.md#createautoscalingconfigurationresponseresponsetypedef).
+[CreateAutoScalingConfigurationResponseTypeDef](./type_defs.md#createautoscalingconfigurationresponsetypedef).
 
 ### create_connection
 
@@ -147,7 +159,7 @@ Boto3 documentation:
 [AppRunner.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.create_connection)
 
 Arguments mapping described in
-[CreateConnectionRequestTypeDef](./type_defs.md#createconnectionrequesttypedef).
+[CreateConnectionRequestRequestTypeDef](./type_defs.md#createconnectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -157,7 +169,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateConnectionResponseResponseTypeDef](./type_defs.md#createconnectionresponseresponsetypedef).
+[CreateConnectionResponseTypeDef](./type_defs.md#createconnectionresponsetypedef).
 
 ### create_service
 
@@ -169,7 +181,7 @@ Boto3 documentation:
 [AppRunner.Client.create_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.create_service)
 
 Arguments mapping described in
-[CreateServiceRequestTypeDef](./type_defs.md#createservicerequesttypedef).
+[CreateServiceRequestRequestTypeDef](./type_defs.md#createservicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -187,7 +199,7 @@ Keyword-only arguments:
 - `AutoScalingConfigurationArn`: `str`
 
 Returns
-[CreateServiceResponseResponseTypeDef](./type_defs.md#createserviceresponseresponsetypedef).
+[CreateServiceResponseTypeDef](./type_defs.md#createserviceresponsetypedef).
 
 ### delete_auto_scaling_configuration
 
@@ -200,14 +212,14 @@ Boto3 documentation:
 [AppRunner.Client.delete_auto_scaling_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.delete_auto_scaling_configuration)
 
 Arguments mapping described in
-[DeleteAutoScalingConfigurationRequestTypeDef](./type_defs.md#deleteautoscalingconfigurationrequesttypedef).
+[DeleteAutoScalingConfigurationRequestRequestTypeDef](./type_defs.md#deleteautoscalingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AutoScalingConfigurationArn`: `str` *(required)*
 
 Returns
-[DeleteAutoScalingConfigurationResponseResponseTypeDef](./type_defs.md#deleteautoscalingconfigurationresponseresponsetypedef).
+[DeleteAutoScalingConfigurationResponseTypeDef](./type_defs.md#deleteautoscalingconfigurationresponsetypedef).
 
 ### delete_connection
 
@@ -219,14 +231,14 @@ Boto3 documentation:
 [AppRunner.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.delete_connection)
 
 Arguments mapping described in
-[DeleteConnectionRequestTypeDef](./type_defs.md#deleteconnectionrequesttypedef).
+[DeleteConnectionRequestRequestTypeDef](./type_defs.md#deleteconnectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ConnectionArn`: `str` *(required)*
 
 Returns
-[DeleteConnectionResponseResponseTypeDef](./type_defs.md#deleteconnectionresponseresponsetypedef).
+[DeleteConnectionResponseTypeDef](./type_defs.md#deleteconnectionresponsetypedef).
 
 ### delete_service
 
@@ -238,14 +250,14 @@ Boto3 documentation:
 [AppRunner.Client.delete_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.delete_service)
 
 Arguments mapping described in
-[DeleteServiceRequestTypeDef](./type_defs.md#deleteservicerequesttypedef).
+[DeleteServiceRequestRequestTypeDef](./type_defs.md#deleteservicerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ServiceArn`: `str` *(required)*
 
 Returns
-[DeleteServiceResponseResponseTypeDef](./type_defs.md#deleteserviceresponseresponsetypedef).
+[DeleteServiceResponseTypeDef](./type_defs.md#deleteserviceresponsetypedef).
 
 ### describe_auto_scaling_configuration
 
@@ -259,14 +271,14 @@ Boto3 documentation:
 [AppRunner.Client.describe_auto_scaling_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.describe_auto_scaling_configuration)
 
 Arguments mapping described in
-[DescribeAutoScalingConfigurationRequestTypeDef](./type_defs.md#describeautoscalingconfigurationrequesttypedef).
+[DescribeAutoScalingConfigurationRequestRequestTypeDef](./type_defs.md#describeautoscalingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AutoScalingConfigurationArn`: `str` *(required)*
 
 Returns
-[DescribeAutoScalingConfigurationResponseResponseTypeDef](./type_defs.md#describeautoscalingconfigurationresponseresponsetypedef).
+[DescribeAutoScalingConfigurationResponseTypeDef](./type_defs.md#describeautoscalingconfigurationresponsetypedef).
 
 ### describe_custom_domains
 
@@ -280,7 +292,7 @@ Boto3 documentation:
 [AppRunner.Client.describe_custom_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.describe_custom_domains)
 
 Arguments mapping described in
-[DescribeCustomDomainsRequestTypeDef](./type_defs.md#describecustomdomainsrequesttypedef).
+[DescribeCustomDomainsRequestRequestTypeDef](./type_defs.md#describecustomdomainsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -289,7 +301,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeCustomDomainsResponseResponseTypeDef](./type_defs.md#describecustomdomainsresponseresponsetypedef).
+[DescribeCustomDomainsResponseTypeDef](./type_defs.md#describecustomdomainsresponsetypedef).
 
 ### describe_service
 
@@ -301,14 +313,14 @@ Boto3 documentation:
 [AppRunner.Client.describe_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.describe_service)
 
 Arguments mapping described in
-[DescribeServiceRequestTypeDef](./type_defs.md#describeservicerequesttypedef).
+[DescribeServiceRequestRequestTypeDef](./type_defs.md#describeservicerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ServiceArn`: `str` *(required)*
 
 Returns
-[DescribeServiceResponseResponseTypeDef](./type_defs.md#describeserviceresponseresponsetypedef).
+[DescribeServiceResponseTypeDef](./type_defs.md#describeserviceresponsetypedef).
 
 ### disassociate_custom_domain
 
@@ -321,7 +333,7 @@ Boto3 documentation:
 [AppRunner.Client.disassociate_custom_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.disassociate_custom_domain)
 
 Arguments mapping described in
-[DisassociateCustomDomainRequestTypeDef](./type_defs.md#disassociatecustomdomainrequesttypedef).
+[DisassociateCustomDomainRequestRequestTypeDef](./type_defs.md#disassociatecustomdomainrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -329,7 +341,7 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[DisassociateCustomDomainResponseResponseTypeDef](./type_defs.md#disassociatecustomdomainresponseresponsetypedef).
+[DisassociateCustomDomainResponseTypeDef](./type_defs.md#disassociatecustomdomainresponsetypedef).
 
 ### generate_presigned_url
 
@@ -361,7 +373,7 @@ Boto3 documentation:
 [AppRunner.Client.list_auto_scaling_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_auto_scaling_configurations)
 
 Arguments mapping described in
-[ListAutoScalingConfigurationsRequestTypeDef](./type_defs.md#listautoscalingconfigurationsrequesttypedef).
+[ListAutoScalingConfigurationsRequestRequestTypeDef](./type_defs.md#listautoscalingconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -371,7 +383,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAutoScalingConfigurationsResponseResponseTypeDef](./type_defs.md#listautoscalingconfigurationsresponseresponsetypedef).
+[ListAutoScalingConfigurationsResponseTypeDef](./type_defs.md#listautoscalingconfigurationsresponsetypedef).
 
 ### list_connections
 
@@ -384,7 +396,7 @@ Boto3 documentation:
 [AppRunner.Client.list_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_connections)
 
 Arguments mapping described in
-[ListConnectionsRequestTypeDef](./type_defs.md#listconnectionsrequesttypedef).
+[ListConnectionsRequestRequestTypeDef](./type_defs.md#listconnectionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -393,7 +405,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListConnectionsResponseResponseTypeDef](./type_defs.md#listconnectionsresponseresponsetypedef).
+[ListConnectionsResponseTypeDef](./type_defs.md#listconnectionsresponsetypedef).
 
 ### list_operations
 
@@ -405,7 +417,7 @@ Boto3 documentation:
 [AppRunner.Client.list_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_operations)
 
 Arguments mapping described in
-[ListOperationsRequestTypeDef](./type_defs.md#listoperationsrequesttypedef).
+[ListOperationsRequestRequestTypeDef](./type_defs.md#listoperationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -414,7 +426,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListOperationsResponseResponseTypeDef](./type_defs.md#listoperationsresponseresponsetypedef).
+[ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef).
 
 ### list_services
 
@@ -426,7 +438,7 @@ Boto3 documentation:
 [AppRunner.Client.list_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_services)
 
 Arguments mapping described in
-[ListServicesRequestTypeDef](./type_defs.md#listservicesrequesttypedef).
+[ListServicesRequestRequestTypeDef](./type_defs.md#listservicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -434,7 +446,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListServicesResponseResponseTypeDef](./type_defs.md#listservicesresponseresponsetypedef).
+[ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -446,14 +458,14 @@ Boto3 documentation:
 [AppRunner.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### pause_service
 
@@ -465,14 +477,14 @@ Boto3 documentation:
 [AppRunner.Client.pause_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.pause_service)
 
 Arguments mapping described in
-[PauseServiceRequestTypeDef](./type_defs.md#pauseservicerequesttypedef).
+[PauseServiceRequestRequestTypeDef](./type_defs.md#pauseservicerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ServiceArn`: `str` *(required)*
 
 Returns
-[PauseServiceResponseResponseTypeDef](./type_defs.md#pauseserviceresponseresponsetypedef).
+[PauseServiceResponseTypeDef](./type_defs.md#pauseserviceresponsetypedef).
 
 ### resume_service
 
@@ -484,14 +496,14 @@ Boto3 documentation:
 [AppRunner.Client.resume_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.resume_service)
 
 Arguments mapping described in
-[ResumeServiceRequestTypeDef](./type_defs.md#resumeservicerequesttypedef).
+[ResumeServiceRequestRequestTypeDef](./type_defs.md#resumeservicerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ServiceArn`: `str` *(required)*
 
 Returns
-[ResumeServiceResponseResponseTypeDef](./type_defs.md#resumeserviceresponseresponsetypedef).
+[ResumeServiceResponseTypeDef](./type_defs.md#resumeserviceresponsetypedef).
 
 ### start_deployment
 
@@ -504,14 +516,14 @@ Boto3 documentation:
 [AppRunner.Client.start_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.start_deployment)
 
 Arguments mapping described in
-[StartDeploymentRequestTypeDef](./type_defs.md#startdeploymentrequesttypedef).
+[StartDeploymentRequestRequestTypeDef](./type_defs.md#startdeploymentrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ServiceArn`: `str` *(required)*
 
 Returns
-[StartDeploymentResponseResponseTypeDef](./type_defs.md#startdeploymentresponseresponsetypedef).
+[StartDeploymentResponseTypeDef](./type_defs.md#startdeploymentresponsetypedef).
 
 ### tag_resource
 
@@ -523,7 +535,7 @@ Boto3 documentation:
 [AppRunner.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -542,7 +554,7 @@ Boto3 documentation:
 [AppRunner.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -561,7 +573,7 @@ Boto3 documentation:
 [AppRunner.Client.update_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.update_service)
 
 Arguments mapping described in
-[UpdateServiceRequestTypeDef](./type_defs.md#updateservicerequesttypedef).
+[UpdateServiceRequestRequestTypeDef](./type_defs.md#updateservicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -575,4 +587,4 @@ Keyword-only arguments:
   [HealthCheckConfigurationTypeDef](./type_defs.md#healthcheckconfigurationtypedef)
 
 Returns
-[UpdateServiceResponseResponseTypeDef](./type_defs.md#updateserviceresponseresponsetypedef).
+[UpdateServiceResponseTypeDef](./type_defs.md#updateserviceresponsetypedef).

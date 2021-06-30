@@ -35,6 +35,7 @@ from mypy_boto3_cur.client import CostandUsageReportServiceClient
 - [can_paginate](./client.md#can_paginate)
 - [delete_report_definition](./client.md#delete_report_definition)
 - [describe_report_definitions](./client.md#describe_report_definitions)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_paginator](./client.md#get_paginator)
 - [modify_report_definition](./client.md#modify_report_definition)
@@ -90,15 +91,15 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_cur.type_defs import DeleteReportDefinitionRequestTypeDef, ...
+from mypy_boto3_cur.type_defs import DeleteReportDefinitionRequestRequestTypeDef, ...
 ```
 
-- [DeleteReportDefinitionRequestTypeDef](./type_defs.md#deletereportdefinitionrequesttypedef)
-- [DeleteReportDefinitionResponseResponseTypeDef](./type_defs.md#deletereportdefinitionresponseresponsetypedef)
-- [DescribeReportDefinitionsRequestTypeDef](./type_defs.md#describereportdefinitionsrequesttypedef)
-- [DescribeReportDefinitionsResponseResponseTypeDef](./type_defs.md#describereportdefinitionsresponseresponsetypedef)
-- [ModifyReportDefinitionRequestTypeDef](./type_defs.md#modifyreportdefinitionrequesttypedef)
+- [DeleteReportDefinitionRequestRequestTypeDef](./type_defs.md#deletereportdefinitionrequestrequesttypedef)
+- [DeleteReportDefinitionResponseTypeDef](./type_defs.md#deletereportdefinitionresponsetypedef)
+- [DescribeReportDefinitionsRequestRequestTypeDef](./type_defs.md#describereportdefinitionsrequestrequesttypedef)
+- [DescribeReportDefinitionsResponseTypeDef](./type_defs.md#describereportdefinitionsresponsetypedef)
+- [ModifyReportDefinitionRequestRequestTypeDef](./type_defs.md#modifyreportdefinitionrequestrequesttypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-- [PutReportDefinitionRequestTypeDef](./type_defs.md#putreportdefinitionrequesttypedef)
+- [PutReportDefinitionRequestRequestTypeDef](./type_defs.md#putreportdefinitionrequestrequesttypedef)
 - [ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

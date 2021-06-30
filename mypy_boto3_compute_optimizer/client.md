@@ -11,6 +11,7 @@ type annotations stubs module
   - [ComputeOptimizerClient](#computeoptimizerclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [describe_recommendation_export_jobs](#describe_recommendation_export_jobs)
     - [export_auto_scaling_group_recommendations](#export_auto_scaling_group_recommendations)
@@ -70,6 +71,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ComputeOptimizerClient exceptions.
+
+Type annotations for `boto3.client("compute-optimizer").exceptions` method.
+
+Boto3 documentation:
+[ComputeOptimizer.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -96,7 +108,7 @@ Boto3 documentation:
 [ComputeOptimizer.Client.describe_recommendation_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.describe_recommendation_export_jobs)
 
 Arguments mapping described in
-[DescribeRecommendationExportJobsRequestTypeDef](./type_defs.md#describerecommendationexportjobsrequesttypedef).
+[DescribeRecommendationExportJobsRequestRequestTypeDef](./type_defs.md#describerecommendationexportjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -106,7 +118,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeRecommendationExportJobsResponseResponseTypeDef](./type_defs.md#describerecommendationexportjobsresponseresponsetypedef).
+[DescribeRecommendationExportJobsResponseTypeDef](./type_defs.md#describerecommendationexportjobsresponsetypedef).
 
 ### export_auto_scaling_group_recommendations
 
@@ -120,7 +132,7 @@ Boto3 documentation:
 [ComputeOptimizer.Client.export_auto_scaling_group_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_auto_scaling_group_recommendations)
 
 Arguments mapping described in
-[ExportAutoScalingGroupRecommendationsRequestTypeDef](./type_defs.md#exportautoscalinggrouprecommendationsrequesttypedef).
+[ExportAutoScalingGroupRecommendationsRequestRequestTypeDef](./type_defs.md#exportautoscalinggrouprecommendationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -136,7 +148,7 @@ Keyword-only arguments:
 - `includeMemberAccounts`: `bool`
 
 Returns
-[ExportAutoScalingGroupRecommendationsResponseResponseTypeDef](./type_defs.md#exportautoscalinggrouprecommendationsresponseresponsetypedef).
+[ExportAutoScalingGroupRecommendationsResponseTypeDef](./type_defs.md#exportautoscalinggrouprecommendationsresponsetypedef).
 
 ### export_ebs_volume_recommendations
 
@@ -149,7 +161,7 @@ Boto3 documentation:
 [ComputeOptimizer.Client.export_ebs_volume_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_ebs_volume_recommendations)
 
 Arguments mapping described in
-[ExportEBSVolumeRecommendationsRequestTypeDef](./type_defs.md#exportebsvolumerecommendationsrequesttypedef).
+[ExportEBSVolumeRecommendationsRequestRequestTypeDef](./type_defs.md#exportebsvolumerecommendationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -165,7 +177,7 @@ Keyword-only arguments:
 - `includeMemberAccounts`: `bool`
 
 Returns
-[ExportEBSVolumeRecommendationsResponseResponseTypeDef](./type_defs.md#exportebsvolumerecommendationsresponseresponsetypedef).
+[ExportEBSVolumeRecommendationsResponseTypeDef](./type_defs.md#exportebsvolumerecommendationsresponsetypedef).
 
 ### export_ec2_instance_recommendations
 
@@ -178,7 +190,7 @@ Boto3 documentation:
 [ComputeOptimizer.Client.export_ec2_instance_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_ec2_instance_recommendations)
 
 Arguments mapping described in
-[ExportEC2InstanceRecommendationsRequestTypeDef](./type_defs.md#exportec2instancerecommendationsrequesttypedef).
+[ExportEC2InstanceRecommendationsRequestRequestTypeDef](./type_defs.md#exportec2instancerecommendationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -194,7 +206,7 @@ Keyword-only arguments:
 - `includeMemberAccounts`: `bool`
 
 Returns
-[ExportEC2InstanceRecommendationsResponseResponseTypeDef](./type_defs.md#exportec2instancerecommendationsresponseresponsetypedef).
+[ExportEC2InstanceRecommendationsResponseTypeDef](./type_defs.md#exportec2instancerecommendationsresponsetypedef).
 
 ### export_lambda_function_recommendations
 
@@ -208,7 +220,7 @@ Boto3 documentation:
 [ComputeOptimizer.Client.export_lambda_function_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_lambda_function_recommendations)
 
 Arguments mapping described in
-[ExportLambdaFunctionRecommendationsRequestTypeDef](./type_defs.md#exportlambdafunctionrecommendationsrequesttypedef).
+[ExportLambdaFunctionRecommendationsRequestRequestTypeDef](./type_defs.md#exportlambdafunctionrecommendationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -225,7 +237,7 @@ Keyword-only arguments:
 - `includeMemberAccounts`: `bool`
 
 Returns
-[ExportLambdaFunctionRecommendationsResponseResponseTypeDef](./type_defs.md#exportlambdafunctionrecommendationsresponseresponsetypedef).
+[ExportLambdaFunctionRecommendationsResponseTypeDef](./type_defs.md#exportlambdafunctionrecommendationsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -258,7 +270,7 @@ Boto3 documentation:
 [ComputeOptimizer.Client.get_auto_scaling_group_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_auto_scaling_group_recommendations)
 
 Arguments mapping described in
-[GetAutoScalingGroupRecommendationsRequestTypeDef](./type_defs.md#getautoscalinggrouprecommendationsrequesttypedef).
+[GetAutoScalingGroupRecommendationsRequestRequestTypeDef](./type_defs.md#getautoscalinggrouprecommendationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -269,7 +281,7 @@ Keyword-only arguments:
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[GetAutoScalingGroupRecommendationsResponseResponseTypeDef](./type_defs.md#getautoscalinggrouprecommendationsresponseresponsetypedef).
+[GetAutoScalingGroupRecommendationsResponseTypeDef](./type_defs.md#getautoscalinggrouprecommendationsresponsetypedef).
 
 ### get_ebs_volume_recommendations
 
@@ -282,7 +294,7 @@ Boto3 documentation:
 [ComputeOptimizer.Client.get_ebs_volume_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ebs_volume_recommendations)
 
 Arguments mapping described in
-[GetEBSVolumeRecommendationsRequestTypeDef](./type_defs.md#getebsvolumerecommendationsrequesttypedef).
+[GetEBSVolumeRecommendationsRequestRequestTypeDef](./type_defs.md#getebsvolumerecommendationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -293,7 +305,7 @@ Keyword-only arguments:
 - `accountIds`: `List`\[`str`\]
 
 Returns
-[GetEBSVolumeRecommendationsResponseResponseTypeDef](./type_defs.md#getebsvolumerecommendationsresponseresponsetypedef).
+[GetEBSVolumeRecommendationsResponseTypeDef](./type_defs.md#getebsvolumerecommendationsresponsetypedef).
 
 ### get_ec2_instance_recommendations
 
@@ -306,7 +318,7 @@ Boto3 documentation:
 [ComputeOptimizer.Client.get_ec2_instance_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ec2_instance_recommendations)
 
 Arguments mapping described in
-[GetEC2InstanceRecommendationsRequestTypeDef](./type_defs.md#getec2instancerecommendationsrequesttypedef).
+[GetEC2InstanceRecommendationsRequestRequestTypeDef](./type_defs.md#getec2instancerecommendationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -317,7 +329,7 @@ Keyword-only arguments:
 - `accountIds`: `List`\[`str`\]
 
 Returns
-[GetEC2InstanceRecommendationsResponseResponseTypeDef](./type_defs.md#getec2instancerecommendationsresponseresponsetypedef).
+[GetEC2InstanceRecommendationsResponseTypeDef](./type_defs.md#getec2instancerecommendationsresponsetypedef).
 
 ### get_ec2_recommendation_projected_metrics
 
@@ -332,7 +344,7 @@ Boto3 documentation:
 [ComputeOptimizer.Client.get_ec2_recommendation_projected_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ec2_recommendation_projected_metrics)
 
 Arguments mapping described in
-[GetEC2RecommendationProjectedMetricsRequestTypeDef](./type_defs.md#getec2recommendationprojectedmetricsrequesttypedef).
+[GetEC2RecommendationProjectedMetricsRequestRequestTypeDef](./type_defs.md#getec2recommendationprojectedmetricsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -343,7 +355,7 @@ Keyword-only arguments:
 - `endTime`: `Union`\[`datetime`, `str`\] *(required)*
 
 Returns
-[GetEC2RecommendationProjectedMetricsResponseResponseTypeDef](./type_defs.md#getec2recommendationprojectedmetricsresponseresponsetypedef).
+[GetEC2RecommendationProjectedMetricsResponseTypeDef](./type_defs.md#getec2recommendationprojectedmetricsresponsetypedef).
 
 ### get_enrollment_status
 
@@ -357,7 +369,7 @@ Boto3 documentation:
 [ComputeOptimizer.Client.get_enrollment_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_enrollment_status)
 
 Returns
-[GetEnrollmentStatusResponseResponseTypeDef](./type_defs.md#getenrollmentstatusresponseresponsetypedef).
+[GetEnrollmentStatusResponseTypeDef](./type_defs.md#getenrollmentstatusresponsetypedef).
 
 ### get_lambda_function_recommendations
 
@@ -370,7 +382,7 @@ Boto3 documentation:
 [ComputeOptimizer.Client.get_lambda_function_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_lambda_function_recommendations)
 
 Arguments mapping described in
-[GetLambdaFunctionRecommendationsRequestTypeDef](./type_defs.md#getlambdafunctionrecommendationsrequesttypedef).
+[GetLambdaFunctionRecommendationsRequestRequestTypeDef](./type_defs.md#getlambdafunctionrecommendationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -382,7 +394,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetLambdaFunctionRecommendationsResponseResponseTypeDef](./type_defs.md#getlambdafunctionrecommendationsresponseresponsetypedef).
+[GetLambdaFunctionRecommendationsResponseTypeDef](./type_defs.md#getlambdafunctionrecommendationsresponsetypedef).
 
 ### get_recommendation_summaries
 
@@ -395,7 +407,7 @@ Boto3 documentation:
 [ComputeOptimizer.Client.get_recommendation_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_recommendation_summaries)
 
 Arguments mapping described in
-[GetRecommendationSummariesRequestTypeDef](./type_defs.md#getrecommendationsummariesrequesttypedef).
+[GetRecommendationSummariesRequestRequestTypeDef](./type_defs.md#getrecommendationsummariesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -404,7 +416,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetRecommendationSummariesResponseResponseTypeDef](./type_defs.md#getrecommendationsummariesresponseresponsetypedef).
+[GetRecommendationSummariesResponseTypeDef](./type_defs.md#getrecommendationsummariesresponsetypedef).
 
 ### update_enrollment_status
 
@@ -418,7 +430,7 @@ Boto3 documentation:
 [ComputeOptimizer.Client.update_enrollment_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.update_enrollment_status)
 
 Arguments mapping described in
-[UpdateEnrollmentStatusRequestTypeDef](./type_defs.md#updateenrollmentstatusrequesttypedef).
+[UpdateEnrollmentStatusRequestRequestTypeDef](./type_defs.md#updateenrollmentstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -426,4 +438,4 @@ Keyword-only arguments:
 - `includeMemberAccounts`: `bool`
 
 Returns
-[UpdateEnrollmentStatusResponseResponseTypeDef](./type_defs.md#updateenrollmentstatusresponseresponsetypedef).
+[UpdateEnrollmentStatusResponseTypeDef](./type_defs.md#updateenrollmentstatusresponsetypedef).

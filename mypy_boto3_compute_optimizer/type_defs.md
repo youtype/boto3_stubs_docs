@@ -11,34 +11,34 @@ type annotations stubs module
   - [AutoScalingGroupConfigurationTypeDef](#autoscalinggroupconfigurationtypedef)
   - [AutoScalingGroupRecommendationOptionTypeDef](#autoscalinggrouprecommendationoptiontypedef)
   - [AutoScalingGroupRecommendationTypeDef](#autoscalinggrouprecommendationtypedef)
-  - [DescribeRecommendationExportJobsRequestTypeDef](#describerecommendationexportjobsrequesttypedef)
-  - [DescribeRecommendationExportJobsResponseResponseTypeDef](#describerecommendationexportjobsresponseresponsetypedef)
+  - [DescribeRecommendationExportJobsRequestRequestTypeDef](#describerecommendationexportjobsrequestrequesttypedef)
+  - [DescribeRecommendationExportJobsResponseTypeDef](#describerecommendationexportjobsresponsetypedef)
   - [EBSFilterTypeDef](#ebsfiltertypedef)
   - [EBSUtilizationMetricTypeDef](#ebsutilizationmetrictypedef)
-  - [ExportAutoScalingGroupRecommendationsRequestTypeDef](#exportautoscalinggrouprecommendationsrequesttypedef)
-  - [ExportAutoScalingGroupRecommendationsResponseResponseTypeDef](#exportautoscalinggrouprecommendationsresponseresponsetypedef)
+  - [ExportAutoScalingGroupRecommendationsRequestRequestTypeDef](#exportautoscalinggrouprecommendationsrequestrequesttypedef)
+  - [ExportAutoScalingGroupRecommendationsResponseTypeDef](#exportautoscalinggrouprecommendationsresponsetypedef)
   - [ExportDestinationTypeDef](#exportdestinationtypedef)
-  - [ExportEBSVolumeRecommendationsRequestTypeDef](#exportebsvolumerecommendationsrequesttypedef)
-  - [ExportEBSVolumeRecommendationsResponseResponseTypeDef](#exportebsvolumerecommendationsresponseresponsetypedef)
-  - [ExportEC2InstanceRecommendationsRequestTypeDef](#exportec2instancerecommendationsrequesttypedef)
-  - [ExportEC2InstanceRecommendationsResponseResponseTypeDef](#exportec2instancerecommendationsresponseresponsetypedef)
-  - [ExportLambdaFunctionRecommendationsRequestTypeDef](#exportlambdafunctionrecommendationsrequesttypedef)
-  - [ExportLambdaFunctionRecommendationsResponseResponseTypeDef](#exportlambdafunctionrecommendationsresponseresponsetypedef)
+  - [ExportEBSVolumeRecommendationsRequestRequestTypeDef](#exportebsvolumerecommendationsrequestrequesttypedef)
+  - [ExportEBSVolumeRecommendationsResponseTypeDef](#exportebsvolumerecommendationsresponsetypedef)
+  - [ExportEC2InstanceRecommendationsRequestRequestTypeDef](#exportec2instancerecommendationsrequestrequesttypedef)
+  - [ExportEC2InstanceRecommendationsResponseTypeDef](#exportec2instancerecommendationsresponsetypedef)
+  - [ExportLambdaFunctionRecommendationsRequestRequestTypeDef](#exportlambdafunctionrecommendationsrequestrequesttypedef)
+  - [ExportLambdaFunctionRecommendationsResponseTypeDef](#exportlambdafunctionrecommendationsresponsetypedef)
   - [FilterTypeDef](#filtertypedef)
-  - [GetAutoScalingGroupRecommendationsRequestTypeDef](#getautoscalinggrouprecommendationsrequesttypedef)
-  - [GetAutoScalingGroupRecommendationsResponseResponseTypeDef](#getautoscalinggrouprecommendationsresponseresponsetypedef)
-  - [GetEBSVolumeRecommendationsRequestTypeDef](#getebsvolumerecommendationsrequesttypedef)
-  - [GetEBSVolumeRecommendationsResponseResponseTypeDef](#getebsvolumerecommendationsresponseresponsetypedef)
-  - [GetEC2InstanceRecommendationsRequestTypeDef](#getec2instancerecommendationsrequesttypedef)
-  - [GetEC2InstanceRecommendationsResponseResponseTypeDef](#getec2instancerecommendationsresponseresponsetypedef)
-  - [GetEC2RecommendationProjectedMetricsRequestTypeDef](#getec2recommendationprojectedmetricsrequesttypedef)
-  - [GetEC2RecommendationProjectedMetricsResponseResponseTypeDef](#getec2recommendationprojectedmetricsresponseresponsetypedef)
-  - [GetEnrollmentStatusResponseResponseTypeDef](#getenrollmentstatusresponseresponsetypedef)
-  - [GetLambdaFunctionRecommendationsRequestTypeDef](#getlambdafunctionrecommendationsrequesttypedef)
-  - [GetLambdaFunctionRecommendationsResponseResponseTypeDef](#getlambdafunctionrecommendationsresponseresponsetypedef)
+  - [GetAutoScalingGroupRecommendationsRequestRequestTypeDef](#getautoscalinggrouprecommendationsrequestrequesttypedef)
+  - [GetAutoScalingGroupRecommendationsResponseTypeDef](#getautoscalinggrouprecommendationsresponsetypedef)
+  - [GetEBSVolumeRecommendationsRequestRequestTypeDef](#getebsvolumerecommendationsrequestrequesttypedef)
+  - [GetEBSVolumeRecommendationsResponseTypeDef](#getebsvolumerecommendationsresponsetypedef)
+  - [GetEC2InstanceRecommendationsRequestRequestTypeDef](#getec2instancerecommendationsrequestrequesttypedef)
+  - [GetEC2InstanceRecommendationsResponseTypeDef](#getec2instancerecommendationsresponsetypedef)
+  - [GetEC2RecommendationProjectedMetricsRequestRequestTypeDef](#getec2recommendationprojectedmetricsrequestrequesttypedef)
+  - [GetEC2RecommendationProjectedMetricsResponseTypeDef](#getec2recommendationprojectedmetricsresponsetypedef)
+  - [GetEnrollmentStatusResponseTypeDef](#getenrollmentstatusresponsetypedef)
+  - [GetLambdaFunctionRecommendationsRequestRequestTypeDef](#getlambdafunctionrecommendationsrequestrequesttypedef)
+  - [GetLambdaFunctionRecommendationsResponseTypeDef](#getlambdafunctionrecommendationsresponsetypedef)
   - [GetRecommendationErrorTypeDef](#getrecommendationerrortypedef)
-  - [GetRecommendationSummariesRequestTypeDef](#getrecommendationsummariesrequesttypedef)
-  - [GetRecommendationSummariesResponseResponseTypeDef](#getrecommendationsummariesresponseresponsetypedef)
+  - [GetRecommendationSummariesRequestRequestTypeDef](#getrecommendationsummariesrequestrequesttypedef)
+  - [GetRecommendationSummariesResponseTypeDef](#getrecommendationsummariesresponsetypedef)
   - [InstanceRecommendationOptionTypeDef](#instancerecommendationoptiontypedef)
   - [InstanceRecommendationTypeDef](#instancerecommendationtypedef)
   - [JobFilterTypeDef](#jobfiltertypedef)
@@ -57,8 +57,8 @@ type annotations stubs module
   - [S3DestinationConfigTypeDef](#s3destinationconfigtypedef)
   - [S3DestinationTypeDef](#s3destinationtypedef)
   - [SummaryTypeDef](#summarytypedef)
-  - [UpdateEnrollmentStatusRequestTypeDef](#updateenrollmentstatusrequesttypedef)
-  - [UpdateEnrollmentStatusResponseResponseTypeDef](#updateenrollmentstatusresponseresponsetypedef)
+  - [UpdateEnrollmentStatusRequestRequestTypeDef](#updateenrollmentstatusrequestrequesttypedef)
+  - [UpdateEnrollmentStatusResponseTypeDef](#updateenrollmentstatusresponsetypedef)
   - [UtilizationMetricTypeDef](#utilizationmetrictypedef)
   - [VolumeConfigurationTypeDef](#volumeconfigurationtypedef)
   - [VolumeRecommendationOptionTypeDef](#volumerecommendationoptiontypedef)
@@ -113,10 +113,10 @@ Optional fields:
   `List`\[[AutoScalingGroupRecommendationOptionTypeDef](./type_defs.md#autoscalinggrouprecommendationoptiontypedef)\]
 - `lastRefreshTimestamp`: `datetime`
 
-## DescribeRecommendationExportJobsRequestTypeDef
+## DescribeRecommendationExportJobsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import DescribeRecommendationExportJobsRequestTypeDef
+from mypy_boto3_compute_optimizer.type_defs import DescribeRecommendationExportJobsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -126,10 +126,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## DescribeRecommendationExportJobsResponseResponseTypeDef
+## DescribeRecommendationExportJobsResponseTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import DescribeRecommendationExportJobsResponseResponseTypeDef
+from mypy_boto3_compute_optimizer.type_defs import DescribeRecommendationExportJobsResponseTypeDef
 ```
 
 Required fields:
@@ -164,10 +164,10 @@ Optional fields:
 - `statistic`: [MetricStatisticType](./literals.md#metricstatistictype)
 - `value`: `float`
 
-## ExportAutoScalingGroupRecommendationsRequestTypeDef
+## ExportAutoScalingGroupRecommendationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import ExportAutoScalingGroupRecommendationsRequestTypeDef
+from mypy_boto3_compute_optimizer.type_defs import ExportAutoScalingGroupRecommendationsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -185,10 +185,10 @@ Optional fields:
   [FileFormatType](./literals.md#fileformattype))
 - `includeMemberAccounts`: `bool`
 
-## ExportAutoScalingGroupRecommendationsResponseResponseTypeDef
+## ExportAutoScalingGroupRecommendationsResponseTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import ExportAutoScalingGroupRecommendationsResponseResponseTypeDef
+from mypy_boto3_compute_optimizer.type_defs import ExportAutoScalingGroupRecommendationsResponseTypeDef
 ```
 
 Required fields:
@@ -208,10 +208,10 @@ Optional fields:
 
 - `s3`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
 
-## ExportEBSVolumeRecommendationsRequestTypeDef
+## ExportEBSVolumeRecommendationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import ExportEBSVolumeRecommendationsRequestTypeDef
+from mypy_boto3_compute_optimizer.type_defs import ExportEBSVolumeRecommendationsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -229,10 +229,10 @@ Optional fields:
   [FileFormatType](./literals.md#fileformattype))
 - `includeMemberAccounts`: `bool`
 
-## ExportEBSVolumeRecommendationsResponseResponseTypeDef
+## ExportEBSVolumeRecommendationsResponseTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import ExportEBSVolumeRecommendationsResponseResponseTypeDef
+from mypy_boto3_compute_optimizer.type_defs import ExportEBSVolumeRecommendationsResponseTypeDef
 ```
 
 Required fields:
@@ -242,10 +242,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ExportEC2InstanceRecommendationsRequestTypeDef
+## ExportEC2InstanceRecommendationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import ExportEC2InstanceRecommendationsRequestTypeDef
+from mypy_boto3_compute_optimizer.type_defs import ExportEC2InstanceRecommendationsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -263,10 +263,10 @@ Optional fields:
   [FileFormatType](./literals.md#fileformattype))
 - `includeMemberAccounts`: `bool`
 
-## ExportEC2InstanceRecommendationsResponseResponseTypeDef
+## ExportEC2InstanceRecommendationsResponseTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import ExportEC2InstanceRecommendationsResponseResponseTypeDef
+from mypy_boto3_compute_optimizer.type_defs import ExportEC2InstanceRecommendationsResponseTypeDef
 ```
 
 Required fields:
@@ -276,10 +276,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ExportLambdaFunctionRecommendationsRequestTypeDef
+## ExportLambdaFunctionRecommendationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import ExportLambdaFunctionRecommendationsRequestTypeDef
+from mypy_boto3_compute_optimizer.type_defs import ExportLambdaFunctionRecommendationsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -298,10 +298,10 @@ Optional fields:
   [FileFormatType](./literals.md#fileformattype))
 - `includeMemberAccounts`: `bool`
 
-## ExportLambdaFunctionRecommendationsResponseResponseTypeDef
+## ExportLambdaFunctionRecommendationsResponseTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import ExportLambdaFunctionRecommendationsResponseResponseTypeDef
+from mypy_boto3_compute_optimizer.type_defs import ExportLambdaFunctionRecommendationsResponseTypeDef
 ```
 
 Required fields:
@@ -322,10 +322,10 @@ Optional fields:
 - `name`: [FilterNameType](./literals.md#filternametype)
 - `values`: `List`\[`str`\]
 
-## GetAutoScalingGroupRecommendationsRequestTypeDef
+## GetAutoScalingGroupRecommendationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import GetAutoScalingGroupRecommendationsRequestTypeDef
+from mypy_boto3_compute_optimizer.type_defs import GetAutoScalingGroupRecommendationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -336,10 +336,10 @@ Optional fields:
 - `maxResults`: `int`
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
-## GetAutoScalingGroupRecommendationsResponseResponseTypeDef
+## GetAutoScalingGroupRecommendationsResponseTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import GetAutoScalingGroupRecommendationsResponseResponseTypeDef
+from mypy_boto3_compute_optimizer.type_defs import GetAutoScalingGroupRecommendationsResponseTypeDef
 ```
 
 Required fields:
@@ -352,10 +352,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetEBSVolumeRecommendationsRequestTypeDef
+## GetEBSVolumeRecommendationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import GetEBSVolumeRecommendationsRequestTypeDef
+from mypy_boto3_compute_optimizer.type_defs import GetEBSVolumeRecommendationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -366,10 +366,10 @@ Optional fields:
 - `filters`: `List`\[[EBSFilterTypeDef](./type_defs.md#ebsfiltertypedef)\]
 - `accountIds`: `List`\[`str`\]
 
-## GetEBSVolumeRecommendationsResponseResponseTypeDef
+## GetEBSVolumeRecommendationsResponseTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import GetEBSVolumeRecommendationsResponseResponseTypeDef
+from mypy_boto3_compute_optimizer.type_defs import GetEBSVolumeRecommendationsResponseTypeDef
 ```
 
 Required fields:
@@ -382,10 +382,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetEC2InstanceRecommendationsRequestTypeDef
+## GetEC2InstanceRecommendationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import GetEC2InstanceRecommendationsRequestTypeDef
+from mypy_boto3_compute_optimizer.type_defs import GetEC2InstanceRecommendationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -396,10 +396,10 @@ Optional fields:
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `accountIds`: `List`\[`str`\]
 
-## GetEC2InstanceRecommendationsResponseResponseTypeDef
+## GetEC2InstanceRecommendationsResponseTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import GetEC2InstanceRecommendationsResponseResponseTypeDef
+from mypy_boto3_compute_optimizer.type_defs import GetEC2InstanceRecommendationsResponseTypeDef
 ```
 
 Required fields:
@@ -412,10 +412,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetEC2RecommendationProjectedMetricsRequestTypeDef
+## GetEC2RecommendationProjectedMetricsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import GetEC2RecommendationProjectedMetricsRequestTypeDef
+from mypy_boto3_compute_optimizer.type_defs import GetEC2RecommendationProjectedMetricsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -426,10 +426,10 @@ Required fields:
 - `startTime`: `Union`\[`datetime`, `str`\]
 - `endTime`: `Union`\[`datetime`, `str`\]
 
-## GetEC2RecommendationProjectedMetricsResponseResponseTypeDef
+## GetEC2RecommendationProjectedMetricsResponseTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import GetEC2RecommendationProjectedMetricsResponseResponseTypeDef
+from mypy_boto3_compute_optimizer.type_defs import GetEC2RecommendationProjectedMetricsResponseTypeDef
 ```
 
 Required fields:
@@ -439,10 +439,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetEnrollmentStatusResponseResponseTypeDef
+## GetEnrollmentStatusResponseTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import GetEnrollmentStatusResponseResponseTypeDef
+from mypy_boto3_compute_optimizer.type_defs import GetEnrollmentStatusResponseTypeDef
 ```
 
 Required fields:
@@ -453,10 +453,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLambdaFunctionRecommendationsRequestTypeDef
+## GetLambdaFunctionRecommendationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import GetLambdaFunctionRecommendationsRequestTypeDef
+from mypy_boto3_compute_optimizer.type_defs import GetLambdaFunctionRecommendationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -468,10 +468,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## GetLambdaFunctionRecommendationsResponseResponseTypeDef
+## GetLambdaFunctionRecommendationsResponseTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import GetLambdaFunctionRecommendationsResponseResponseTypeDef
+from mypy_boto3_compute_optimizer.type_defs import GetLambdaFunctionRecommendationsResponseTypeDef
 ```
 
 Required fields:
@@ -494,10 +494,10 @@ Optional fields:
 - `code`: `str`
 - `message`: `str`
 
-## GetRecommendationSummariesRequestTypeDef
+## GetRecommendationSummariesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import GetRecommendationSummariesRequestTypeDef
+from mypy_boto3_compute_optimizer.type_defs import GetRecommendationSummariesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -506,10 +506,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## GetRecommendationSummariesResponseResponseTypeDef
+## GetRecommendationSummariesResponseTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import GetRecommendationSummariesResponseResponseTypeDef
+from mypy_boto3_compute_optimizer.type_defs import GetRecommendationSummariesResponseTypeDef
 ```
 
 Required fields:
@@ -776,10 +776,10 @@ Optional fields:
 - `reasonCodeSummaries`:
   `List`\[[ReasonCodeSummaryTypeDef](./type_defs.md#reasoncodesummarytypedef)\]
 
-## UpdateEnrollmentStatusRequestTypeDef
+## UpdateEnrollmentStatusRequestRequestTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import UpdateEnrollmentStatusRequestTypeDef
+from mypy_boto3_compute_optimizer.type_defs import UpdateEnrollmentStatusRequestRequestTypeDef
 ```
 
 Required fields:
@@ -790,10 +790,10 @@ Optional fields:
 
 - `includeMemberAccounts`: `bool`
 
-## UpdateEnrollmentStatusResponseResponseTypeDef
+## UpdateEnrollmentStatusResponseTypeDef
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import UpdateEnrollmentStatusResponseResponseTypeDef
+from mypy_boto3_compute_optimizer.type_defs import UpdateEnrollmentStatusResponseTypeDef
 ```
 
 Required fields:

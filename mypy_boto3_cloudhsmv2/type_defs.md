@@ -12,39 +12,39 @@ type annotations stubs module
   - [BackupTypeDef](#backuptypedef)
   - [CertificatesTypeDef](#certificatestypedef)
   - [ClusterTypeDef](#clustertypedef)
-  - [CopyBackupToRegionRequestTypeDef](#copybackuptoregionrequesttypedef)
-  - [CopyBackupToRegionResponseResponseTypeDef](#copybackuptoregionresponseresponsetypedef)
-  - [CreateClusterRequestTypeDef](#createclusterrequesttypedef)
-  - [CreateClusterResponseResponseTypeDef](#createclusterresponseresponsetypedef)
-  - [CreateHsmRequestTypeDef](#createhsmrequesttypedef)
-  - [CreateHsmResponseResponseTypeDef](#createhsmresponseresponsetypedef)
-  - [DeleteBackupRequestTypeDef](#deletebackuprequesttypedef)
-  - [DeleteBackupResponseResponseTypeDef](#deletebackupresponseresponsetypedef)
-  - [DeleteClusterRequestTypeDef](#deleteclusterrequesttypedef)
-  - [DeleteClusterResponseResponseTypeDef](#deleteclusterresponseresponsetypedef)
-  - [DeleteHsmRequestTypeDef](#deletehsmrequesttypedef)
-  - [DeleteHsmResponseResponseTypeDef](#deletehsmresponseresponsetypedef)
-  - [DescribeBackupsRequestTypeDef](#describebackupsrequesttypedef)
-  - [DescribeBackupsResponseResponseTypeDef](#describebackupsresponseresponsetypedef)
-  - [DescribeClustersRequestTypeDef](#describeclustersrequesttypedef)
-  - [DescribeClustersResponseResponseTypeDef](#describeclustersresponseresponsetypedef)
+  - [CopyBackupToRegionRequestRequestTypeDef](#copybackuptoregionrequestrequesttypedef)
+  - [CopyBackupToRegionResponseTypeDef](#copybackuptoregionresponsetypedef)
+  - [CreateClusterRequestRequestTypeDef](#createclusterrequestrequesttypedef)
+  - [CreateClusterResponseTypeDef](#createclusterresponsetypedef)
+  - [CreateHsmRequestRequestTypeDef](#createhsmrequestrequesttypedef)
+  - [CreateHsmResponseTypeDef](#createhsmresponsetypedef)
+  - [DeleteBackupRequestRequestTypeDef](#deletebackuprequestrequesttypedef)
+  - [DeleteBackupResponseTypeDef](#deletebackupresponsetypedef)
+  - [DeleteClusterRequestRequestTypeDef](#deleteclusterrequestrequesttypedef)
+  - [DeleteClusterResponseTypeDef](#deleteclusterresponsetypedef)
+  - [DeleteHsmRequestRequestTypeDef](#deletehsmrequestrequesttypedef)
+  - [DeleteHsmResponseTypeDef](#deletehsmresponsetypedef)
+  - [DescribeBackupsRequestRequestTypeDef](#describebackupsrequestrequesttypedef)
+  - [DescribeBackupsResponseTypeDef](#describebackupsresponsetypedef)
+  - [DescribeClustersRequestRequestTypeDef](#describeclustersrequestrequesttypedef)
+  - [DescribeClustersResponseTypeDef](#describeclustersresponsetypedef)
   - [DestinationBackupTypeDef](#destinationbackuptypedef)
   - [HsmTypeDef](#hsmtypedef)
-  - [InitializeClusterRequestTypeDef](#initializeclusterrequesttypedef)
-  - [InitializeClusterResponseResponseTypeDef](#initializeclusterresponseresponsetypedef)
-  - [ListTagsRequestTypeDef](#listtagsrequesttypedef)
-  - [ListTagsResponseResponseTypeDef](#listtagsresponseresponsetypedef)
-  - [ModifyBackupAttributesRequestTypeDef](#modifybackupattributesrequesttypedef)
-  - [ModifyBackupAttributesResponseResponseTypeDef](#modifybackupattributesresponseresponsetypedef)
-  - [ModifyClusterRequestTypeDef](#modifyclusterrequesttypedef)
-  - [ModifyClusterResponseResponseTypeDef](#modifyclusterresponseresponsetypedef)
+  - [InitializeClusterRequestRequestTypeDef](#initializeclusterrequestrequesttypedef)
+  - [InitializeClusterResponseTypeDef](#initializeclusterresponsetypedef)
+  - [ListTagsRequestRequestTypeDef](#listtagsrequestrequesttypedef)
+  - [ListTagsResponseTypeDef](#listtagsresponsetypedef)
+  - [ModifyBackupAttributesRequestRequestTypeDef](#modifybackupattributesrequestrequesttypedef)
+  - [ModifyBackupAttributesResponseTypeDef](#modifybackupattributesresponsetypedef)
+  - [ModifyClusterRequestRequestTypeDef](#modifyclusterrequestrequesttypedef)
+  - [ModifyClusterResponseTypeDef](#modifyclusterresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestoreBackupRequestTypeDef](#restorebackuprequesttypedef)
-  - [RestoreBackupResponseResponseTypeDef](#restorebackupresponseresponsetypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [RestoreBackupRequestRequestTypeDef](#restorebackuprequestrequesttypedef)
+  - [RestoreBackupResponseTypeDef](#restorebackupresponsetypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
 
 ## BackupRetentionPolicyTypeDef
 
@@ -121,10 +121,10 @@ Optional fields:
 - `Certificates`: [CertificatesTypeDef](./type_defs.md#certificatestypedef)
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CopyBackupToRegionRequestTypeDef
+## CopyBackupToRegionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import CopyBackupToRegionRequestTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import CopyBackupToRegionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -136,10 +136,10 @@ Optional fields:
 
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CopyBackupToRegionResponseResponseTypeDef
+## CopyBackupToRegionResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import CopyBackupToRegionResponseResponseTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import CopyBackupToRegionResponseTypeDef
 ```
 
 Required fields:
@@ -149,10 +149,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateClusterRequestTypeDef
+## CreateClusterRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import CreateClusterRequestTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import CreateClusterRequestRequestTypeDef
 ```
 
 Required fields:
@@ -167,10 +167,10 @@ Optional fields:
 - `SourceBackupId`: `str`
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateClusterResponseResponseTypeDef
+## CreateClusterResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import CreateClusterResponseResponseTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import CreateClusterResponseTypeDef
 ```
 
 Required fields:
@@ -179,10 +179,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateHsmRequestTypeDef
+## CreateHsmRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import CreateHsmRequestTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import CreateHsmRequestRequestTypeDef
 ```
 
 Required fields:
@@ -194,10 +194,10 @@ Optional fields:
 
 - `IpAddress`: `str`
 
-## CreateHsmResponseResponseTypeDef
+## CreateHsmResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import CreateHsmResponseResponseTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import CreateHsmResponseTypeDef
 ```
 
 Required fields:
@@ -206,20 +206,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteBackupRequestTypeDef
+## DeleteBackupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import DeleteBackupRequestTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import DeleteBackupRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `BackupId`: `str`
 
-## DeleteBackupResponseResponseTypeDef
+## DeleteBackupResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import DeleteBackupResponseResponseTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import DeleteBackupResponseTypeDef
 ```
 
 Required fields:
@@ -228,20 +228,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteClusterRequestTypeDef
+## DeleteClusterRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import DeleteClusterRequestTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import DeleteClusterRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ClusterId`: `str`
 
-## DeleteClusterResponseResponseTypeDef
+## DeleteClusterResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import DeleteClusterResponseResponseTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import DeleteClusterResponseTypeDef
 ```
 
 Required fields:
@@ -250,10 +250,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteHsmRequestTypeDef
+## DeleteHsmRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import DeleteHsmRequestTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import DeleteHsmRequestRequestTypeDef
 ```
 
 Required fields:
@@ -266,10 +266,10 @@ Optional fields:
 - `EniId`: `str`
 - `EniIp`: `str`
 
-## DeleteHsmResponseResponseTypeDef
+## DeleteHsmResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import DeleteHsmResponseResponseTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import DeleteHsmResponseTypeDef
 ```
 
 Required fields:
@@ -278,10 +278,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBackupsRequestTypeDef
+## DescribeBackupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import DescribeBackupsRequestTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import DescribeBackupsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -291,10 +291,10 @@ Optional fields:
 - `Filters`: `Dict`\[`str`, `List`\[`str`\]\]
 - `SortAscending`: `bool`
 
-## DescribeBackupsResponseResponseTypeDef
+## DescribeBackupsResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import DescribeBackupsResponseResponseTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import DescribeBackupsResponseTypeDef
 ```
 
 Required fields:
@@ -304,10 +304,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeClustersRequestTypeDef
+## DescribeClustersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import DescribeClustersRequestTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import DescribeClustersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -316,10 +316,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## DescribeClustersResponseResponseTypeDef
+## DescribeClustersResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import DescribeClustersResponseResponseTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import DescribeClustersResponseTypeDef
 ```
 
 Required fields:
@@ -362,10 +362,10 @@ Optional fields:
 - `State`: [HsmStateType](./literals.md#hsmstatetype)
 - `StateMessage`: `str`
 
-## InitializeClusterRequestTypeDef
+## InitializeClusterRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import InitializeClusterRequestTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import InitializeClusterRequestRequestTypeDef
 ```
 
 Required fields:
@@ -374,10 +374,10 @@ Required fields:
 - `SignedCert`: `str`
 - `TrustAnchor`: `str`
 
-## InitializeClusterResponseResponseTypeDef
+## InitializeClusterResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import InitializeClusterResponseResponseTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import InitializeClusterResponseTypeDef
 ```
 
 Required fields:
@@ -387,10 +387,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsRequestTypeDef
+## ListTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import ListTagsRequestTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import ListTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -402,10 +402,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListTagsResponseResponseTypeDef
+## ListTagsResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import ListTagsResponseResponseTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import ListTagsResponseTypeDef
 ```
 
 Required fields:
@@ -415,10 +415,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyBackupAttributesRequestTypeDef
+## ModifyBackupAttributesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import ModifyBackupAttributesRequestTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import ModifyBackupAttributesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -426,10 +426,10 @@ Required fields:
 - `BackupId`: `str`
 - `NeverExpires`: `bool`
 
-## ModifyBackupAttributesResponseResponseTypeDef
+## ModifyBackupAttributesResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import ModifyBackupAttributesResponseResponseTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import ModifyBackupAttributesResponseTypeDef
 ```
 
 Required fields:
@@ -438,10 +438,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyClusterRequestTypeDef
+## ModifyClusterRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import ModifyClusterRequestTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import ModifyClusterRequestRequestTypeDef
 ```
 
 Required fields:
@@ -450,10 +450,10 @@ Required fields:
   [BackupRetentionPolicyTypeDef](./type_defs.md#backupretentionpolicytypedef)
 - `ClusterId`: `str`
 
-## ModifyClusterResponseResponseTypeDef
+## ModifyClusterResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import ModifyClusterResponseResponseTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import ModifyClusterResponseTypeDef
 ```
 
 Required fields:
@@ -488,20 +488,20 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## RestoreBackupRequestTypeDef
+## RestoreBackupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import RestoreBackupRequestTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import RestoreBackupRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `BackupId`: `str`
 
-## RestoreBackupResponseResponseTypeDef
+## RestoreBackupResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import RestoreBackupResponseResponseTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import RestoreBackupResponseTypeDef
 ```
 
 Required fields:
@@ -510,10 +510,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -532,10 +532,10 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsmv2.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_cloudhsmv2.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:

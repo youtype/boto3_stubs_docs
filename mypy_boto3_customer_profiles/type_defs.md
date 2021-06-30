@@ -8,99 +8,99 @@ type annotations stubs module
 [mypy_boto3_customer_profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).
 
 - [Typed dictionaries for boto3 CustomerProfiles module](#typed-dictionaries-for-boto3-customerprofiles-module)
-  - [AddProfileKeyRequestTypeDef](#addprofilekeyrequesttypedef)
-  - [AddProfileKeyResponseResponseTypeDef](#addprofilekeyresponseresponsetypedef)
+  - [AddProfileKeyRequestRequestTypeDef](#addprofilekeyrequestrequesttypedef)
+  - [AddProfileKeyResponseTypeDef](#addprofilekeyresponsetypedef)
   - [AddressTypeDef](#addresstypedef)
   - [ConnectorOperatorTypeDef](#connectoroperatortypedef)
-  - [CreateDomainRequestTypeDef](#createdomainrequesttypedef)
-  - [CreateDomainResponseResponseTypeDef](#createdomainresponseresponsetypedef)
-  - [CreateProfileRequestTypeDef](#createprofilerequesttypedef)
-  - [CreateProfileResponseResponseTypeDef](#createprofileresponseresponsetypedef)
-  - [DeleteDomainRequestTypeDef](#deletedomainrequesttypedef)
-  - [DeleteDomainResponseResponseTypeDef](#deletedomainresponseresponsetypedef)
-  - [DeleteIntegrationRequestTypeDef](#deleteintegrationrequesttypedef)
-  - [DeleteIntegrationResponseResponseTypeDef](#deleteintegrationresponseresponsetypedef)
-  - [DeleteProfileKeyRequestTypeDef](#deleteprofilekeyrequesttypedef)
-  - [DeleteProfileKeyResponseResponseTypeDef](#deleteprofilekeyresponseresponsetypedef)
-  - [DeleteProfileObjectRequestTypeDef](#deleteprofileobjectrequesttypedef)
-  - [DeleteProfileObjectResponseResponseTypeDef](#deleteprofileobjectresponseresponsetypedef)
-  - [DeleteProfileObjectTypeRequestTypeDef](#deleteprofileobjecttyperequesttypedef)
-  - [DeleteProfileObjectTypeResponseResponseTypeDef](#deleteprofileobjecttyperesponseresponsetypedef)
-  - [DeleteProfileRequestTypeDef](#deleteprofilerequesttypedef)
-  - [DeleteProfileResponseResponseTypeDef](#deleteprofileresponseresponsetypedef)
+  - [CreateDomainRequestRequestTypeDef](#createdomainrequestrequesttypedef)
+  - [CreateDomainResponseTypeDef](#createdomainresponsetypedef)
+  - [CreateProfileRequestRequestTypeDef](#createprofilerequestrequesttypedef)
+  - [CreateProfileResponseTypeDef](#createprofileresponsetypedef)
+  - [DeleteDomainRequestRequestTypeDef](#deletedomainrequestrequesttypedef)
+  - [DeleteDomainResponseTypeDef](#deletedomainresponsetypedef)
+  - [DeleteIntegrationRequestRequestTypeDef](#deleteintegrationrequestrequesttypedef)
+  - [DeleteIntegrationResponseTypeDef](#deleteintegrationresponsetypedef)
+  - [DeleteProfileKeyRequestRequestTypeDef](#deleteprofilekeyrequestrequesttypedef)
+  - [DeleteProfileKeyResponseTypeDef](#deleteprofilekeyresponsetypedef)
+  - [DeleteProfileObjectRequestRequestTypeDef](#deleteprofileobjectrequestrequesttypedef)
+  - [DeleteProfileObjectResponseTypeDef](#deleteprofileobjectresponsetypedef)
+  - [DeleteProfileObjectTypeRequestRequestTypeDef](#deleteprofileobjecttyperequestrequesttypedef)
+  - [DeleteProfileObjectTypeResponseTypeDef](#deleteprofileobjecttyperesponsetypedef)
+  - [DeleteProfileRequestRequestTypeDef](#deleteprofilerequestrequesttypedef)
+  - [DeleteProfileResponseTypeDef](#deleteprofileresponsetypedef)
   - [DomainStatsTypeDef](#domainstatstypedef)
   - [FieldSourceProfileIdsTypeDef](#fieldsourceprofileidstypedef)
   - [FlowDefinitionTypeDef](#flowdefinitiontypedef)
-  - [GetDomainRequestTypeDef](#getdomainrequesttypedef)
-  - [GetDomainResponseResponseTypeDef](#getdomainresponseresponsetypedef)
-  - [GetIntegrationRequestTypeDef](#getintegrationrequesttypedef)
-  - [GetIntegrationResponseResponseTypeDef](#getintegrationresponseresponsetypedef)
-  - [GetMatchesRequestTypeDef](#getmatchesrequesttypedef)
-  - [GetMatchesResponseResponseTypeDef](#getmatchesresponseresponsetypedef)
-  - [GetProfileObjectTypeRequestTypeDef](#getprofileobjecttyperequesttypedef)
-  - [GetProfileObjectTypeResponseResponseTypeDef](#getprofileobjecttyperesponseresponsetypedef)
-  - [GetProfileObjectTypeTemplateRequestTypeDef](#getprofileobjecttypetemplaterequesttypedef)
-  - [GetProfileObjectTypeTemplateResponseResponseTypeDef](#getprofileobjecttypetemplateresponseresponsetypedef)
+  - [GetDomainRequestRequestTypeDef](#getdomainrequestrequesttypedef)
+  - [GetDomainResponseTypeDef](#getdomainresponsetypedef)
+  - [GetIntegrationRequestRequestTypeDef](#getintegrationrequestrequesttypedef)
+  - [GetIntegrationResponseTypeDef](#getintegrationresponsetypedef)
+  - [GetMatchesRequestRequestTypeDef](#getmatchesrequestrequesttypedef)
+  - [GetMatchesResponseTypeDef](#getmatchesresponsetypedef)
+  - [GetProfileObjectTypeRequestRequestTypeDef](#getprofileobjecttyperequestrequesttypedef)
+  - [GetProfileObjectTypeResponseTypeDef](#getprofileobjecttyperesponsetypedef)
+  - [GetProfileObjectTypeTemplateRequestRequestTypeDef](#getprofileobjecttypetemplaterequestrequesttypedef)
+  - [GetProfileObjectTypeTemplateResponseTypeDef](#getprofileobjecttypetemplateresponsetypedef)
   - [IncrementalPullConfigTypeDef](#incrementalpullconfigtypedef)
-  - [ListAccountIntegrationsRequestTypeDef](#listaccountintegrationsrequesttypedef)
-  - [ListAccountIntegrationsResponseResponseTypeDef](#listaccountintegrationsresponseresponsetypedef)
+  - [ListAccountIntegrationsRequestRequestTypeDef](#listaccountintegrationsrequestrequesttypedef)
+  - [ListAccountIntegrationsResponseTypeDef](#listaccountintegrationsresponsetypedef)
   - [ListDomainItemTypeDef](#listdomainitemtypedef)
-  - [ListDomainsRequestTypeDef](#listdomainsrequesttypedef)
-  - [ListDomainsResponseResponseTypeDef](#listdomainsresponseresponsetypedef)
+  - [ListDomainsRequestRequestTypeDef](#listdomainsrequestrequesttypedef)
+  - [ListDomainsResponseTypeDef](#listdomainsresponsetypedef)
   - [ListIntegrationItemTypeDef](#listintegrationitemtypedef)
-  - [ListIntegrationsRequestTypeDef](#listintegrationsrequesttypedef)
-  - [ListIntegrationsResponseResponseTypeDef](#listintegrationsresponseresponsetypedef)
+  - [ListIntegrationsRequestRequestTypeDef](#listintegrationsrequestrequesttypedef)
+  - [ListIntegrationsResponseTypeDef](#listintegrationsresponsetypedef)
   - [ListProfileObjectTypeItemTypeDef](#listprofileobjecttypeitemtypedef)
   - [ListProfileObjectTypeTemplateItemTypeDef](#listprofileobjecttypetemplateitemtypedef)
-  - [ListProfileObjectTypeTemplatesRequestTypeDef](#listprofileobjecttypetemplatesrequesttypedef)
-  - [ListProfileObjectTypeTemplatesResponseResponseTypeDef](#listprofileobjecttypetemplatesresponseresponsetypedef)
-  - [ListProfileObjectTypesRequestTypeDef](#listprofileobjecttypesrequesttypedef)
-  - [ListProfileObjectTypesResponseResponseTypeDef](#listprofileobjecttypesresponseresponsetypedef)
+  - [ListProfileObjectTypeTemplatesRequestRequestTypeDef](#listprofileobjecttypetemplatesrequestrequesttypedef)
+  - [ListProfileObjectTypeTemplatesResponseTypeDef](#listprofileobjecttypetemplatesresponsetypedef)
+  - [ListProfileObjectTypesRequestRequestTypeDef](#listprofileobjecttypesrequestrequesttypedef)
+  - [ListProfileObjectTypesResponseTypeDef](#listprofileobjecttypesresponsetypedef)
   - [ListProfileObjectsItemTypeDef](#listprofileobjectsitemtypedef)
-  - [ListProfileObjectsRequestTypeDef](#listprofileobjectsrequesttypedef)
-  - [ListProfileObjectsResponseResponseTypeDef](#listprofileobjectsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListProfileObjectsRequestRequestTypeDef](#listprofileobjectsrequestrequesttypedef)
+  - [ListProfileObjectsResponseTypeDef](#listprofileobjectsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [MarketoSourcePropertiesTypeDef](#marketosourcepropertiestypedef)
   - [MatchItemTypeDef](#matchitemtypedef)
   - [MatchingRequestTypeDef](#matchingrequesttypedef)
   - [MatchingResponseTypeDef](#matchingresponsetypedef)
-  - [MergeProfilesRequestTypeDef](#mergeprofilesrequesttypedef)
-  - [MergeProfilesResponseResponseTypeDef](#mergeprofilesresponseresponsetypedef)
+  - [MergeProfilesRequestRequestTypeDef](#mergeprofilesrequestrequesttypedef)
+  - [MergeProfilesResponseTypeDef](#mergeprofilesresponsetypedef)
   - [ObjectTypeFieldTypeDef](#objecttypefieldtypedef)
   - [ObjectTypeKeyTypeDef](#objecttypekeytypedef)
   - [ProfileTypeDef](#profiletypedef)
-  - [PutIntegrationRequestTypeDef](#putintegrationrequesttypedef)
-  - [PutIntegrationResponseResponseTypeDef](#putintegrationresponseresponsetypedef)
-  - [PutProfileObjectRequestTypeDef](#putprofileobjectrequesttypedef)
-  - [PutProfileObjectResponseResponseTypeDef](#putprofileobjectresponseresponsetypedef)
-  - [PutProfileObjectTypeRequestTypeDef](#putprofileobjecttyperequesttypedef)
-  - [PutProfileObjectTypeResponseResponseTypeDef](#putprofileobjecttyperesponseresponsetypedef)
+  - [PutIntegrationRequestRequestTypeDef](#putintegrationrequestrequesttypedef)
+  - [PutIntegrationResponseTypeDef](#putintegrationresponsetypedef)
+  - [PutProfileObjectRequestRequestTypeDef](#putprofileobjectrequestrequesttypedef)
+  - [PutProfileObjectResponseTypeDef](#putprofileobjectresponsetypedef)
+  - [PutProfileObjectTypeRequestRequestTypeDef](#putprofileobjecttyperequestrequesttypedef)
+  - [PutProfileObjectTypeResponseTypeDef](#putprofileobjecttyperesponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3SourcePropertiesTypeDef](#s3sourcepropertiestypedef)
   - [SalesforceSourcePropertiesTypeDef](#salesforcesourcepropertiestypedef)
   - [ScheduledTriggerPropertiesTypeDef](#scheduledtriggerpropertiestypedef)
-  - [SearchProfilesRequestTypeDef](#searchprofilesrequesttypedef)
-  - [SearchProfilesResponseResponseTypeDef](#searchprofilesresponseresponsetypedef)
+  - [SearchProfilesRequestRequestTypeDef](#searchprofilesrequestrequesttypedef)
+  - [SearchProfilesResponseTypeDef](#searchprofilesresponsetypedef)
   - [ServiceNowSourcePropertiesTypeDef](#servicenowsourcepropertiestypedef)
   - [SourceConnectorPropertiesTypeDef](#sourceconnectorpropertiestypedef)
   - [SourceFlowConfigTypeDef](#sourceflowconfigtypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TaskTypeDef](#tasktypedef)
   - [TriggerConfigTypeDef](#triggerconfigtypedef)
   - [TriggerPropertiesTypeDef](#triggerpropertiestypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateAddressTypeDef](#updateaddresstypedef)
-  - [UpdateDomainRequestTypeDef](#updatedomainrequesttypedef)
-  - [UpdateDomainResponseResponseTypeDef](#updatedomainresponseresponsetypedef)
-  - [UpdateProfileRequestTypeDef](#updateprofilerequesttypedef)
-  - [UpdateProfileResponseResponseTypeDef](#updateprofileresponseresponsetypedef)
+  - [UpdateDomainRequestRequestTypeDef](#updatedomainrequestrequesttypedef)
+  - [UpdateDomainResponseTypeDef](#updatedomainresponsetypedef)
+  - [UpdateProfileRequestRequestTypeDef](#updateprofilerequestrequesttypedef)
+  - [UpdateProfileResponseTypeDef](#updateprofileresponsetypedef)
   - [ZendeskSourcePropertiesTypeDef](#zendesksourcepropertiestypedef)
 
-## AddProfileKeyRequestTypeDef
+## AddProfileKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import AddProfileKeyRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import AddProfileKeyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -110,10 +110,10 @@ Required fields:
 - `Values`: `List`\[`str`\]
 - `DomainName`: `str`
 
-## AddProfileKeyResponseResponseTypeDef
+## AddProfileKeyResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import AddProfileKeyResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import AddProfileKeyResponseTypeDef
 ```
 
 Required fields:
@@ -160,10 +160,10 @@ Optional fields:
 - `Zendesk`:
   [ZendeskConnectorOperatorType](./literals.md#zendeskconnectoroperatortype)
 
-## CreateDomainRequestTypeDef
+## CreateDomainRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import CreateDomainRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import CreateDomainRequestRequestTypeDef
 ```
 
 Required fields:
@@ -178,10 +178,10 @@ Optional fields:
 - `Matching`: [MatchingRequestTypeDef](./type_defs.md#matchingrequesttypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateDomainResponseResponseTypeDef
+## CreateDomainResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import CreateDomainResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import CreateDomainResponseTypeDef
 ```
 
 Required fields:
@@ -197,10 +197,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateProfileRequestTypeDef
+## CreateProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import CreateProfileRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import CreateProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -231,10 +231,10 @@ Optional fields:
 - `BillingAddress`: [AddressTypeDef](./type_defs.md#addresstypedef)
 - `Attributes`: `Dict`\[`str`, `str`\]
 
-## CreateProfileResponseResponseTypeDef
+## CreateProfileResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import CreateProfileResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import CreateProfileResponseTypeDef
 ```
 
 Required fields:
@@ -243,20 +243,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDomainRequestTypeDef
+## DeleteDomainRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import DeleteDomainRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import DeleteDomainRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DomainName`: `str`
 
-## DeleteDomainResponseResponseTypeDef
+## DeleteDomainResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import DeleteDomainResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import DeleteDomainResponseTypeDef
 ```
 
 Required fields:
@@ -265,10 +265,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteIntegrationRequestTypeDef
+## DeleteIntegrationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import DeleteIntegrationRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import DeleteIntegrationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -276,10 +276,10 @@ Required fields:
 - `DomainName`: `str`
 - `Uri`: `str`
 
-## DeleteIntegrationResponseResponseTypeDef
+## DeleteIntegrationResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import DeleteIntegrationResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import DeleteIntegrationResponseTypeDef
 ```
 
 Required fields:
@@ -288,10 +288,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteProfileKeyRequestTypeDef
+## DeleteProfileKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import DeleteProfileKeyRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import DeleteProfileKeyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -301,10 +301,10 @@ Required fields:
 - `Values`: `List`\[`str`\]
 - `DomainName`: `str`
 
-## DeleteProfileKeyResponseResponseTypeDef
+## DeleteProfileKeyResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import DeleteProfileKeyResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import DeleteProfileKeyResponseTypeDef
 ```
 
 Required fields:
@@ -313,10 +313,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteProfileObjectRequestTypeDef
+## DeleteProfileObjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import DeleteProfileObjectRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import DeleteProfileObjectRequestRequestTypeDef
 ```
 
 Required fields:
@@ -326,10 +326,10 @@ Required fields:
 - `ObjectTypeName`: `str`
 - `DomainName`: `str`
 
-## DeleteProfileObjectResponseResponseTypeDef
+## DeleteProfileObjectResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import DeleteProfileObjectResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import DeleteProfileObjectResponseTypeDef
 ```
 
 Required fields:
@@ -338,10 +338,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteProfileObjectTypeRequestTypeDef
+## DeleteProfileObjectTypeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import DeleteProfileObjectTypeRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import DeleteProfileObjectTypeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -349,10 +349,10 @@ Required fields:
 - `DomainName`: `str`
 - `ObjectTypeName`: `str`
 
-## DeleteProfileObjectTypeResponseResponseTypeDef
+## DeleteProfileObjectTypeResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import DeleteProfileObjectTypeResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import DeleteProfileObjectTypeResponseTypeDef
 ```
 
 Required fields:
@@ -361,10 +361,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteProfileRequestTypeDef
+## DeleteProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import DeleteProfileRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import DeleteProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -372,10 +372,10 @@ Required fields:
 - `ProfileId`: `str`
 - `DomainName`: `str`
 
-## DeleteProfileResponseResponseTypeDef
+## DeleteProfileResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import DeleteProfileResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import DeleteProfileResponseTypeDef
 ```
 
 Required fields:
@@ -446,20 +446,20 @@ Optional fields:
 
 - `Description`: `str`
 
-## GetDomainRequestTypeDef
+## GetDomainRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import GetDomainRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import GetDomainRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DomainName`: `str`
 
-## GetDomainResponseResponseTypeDef
+## GetDomainResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import GetDomainResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import GetDomainResponseTypeDef
 ```
 
 Required fields:
@@ -476,10 +476,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetIntegrationRequestTypeDef
+## GetIntegrationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import GetIntegrationRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import GetIntegrationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -487,10 +487,10 @@ Required fields:
 - `DomainName`: `str`
 - `Uri`: `str`
 
-## GetIntegrationResponseResponseTypeDef
+## GetIntegrationResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import GetIntegrationResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import GetIntegrationResponseTypeDef
 ```
 
 Required fields:
@@ -504,10 +504,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMatchesRequestTypeDef
+## GetMatchesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import GetMatchesRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import GetMatchesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -519,10 +519,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## GetMatchesResponseResponseTypeDef
+## GetMatchesResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import GetMatchesResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import GetMatchesResponseTypeDef
 ```
 
 Required fields:
@@ -534,10 +534,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetProfileObjectTypeRequestTypeDef
+## GetProfileObjectTypeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import GetProfileObjectTypeRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import GetProfileObjectTypeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -545,10 +545,10 @@ Required fields:
 - `DomainName`: `str`
 - `ObjectTypeName`: `str`
 
-## GetProfileObjectTypeResponseResponseTypeDef
+## GetProfileObjectTypeResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import GetProfileObjectTypeResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import GetProfileObjectTypeResponseTypeDef
 ```
 
 Required fields:
@@ -569,20 +569,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetProfileObjectTypeTemplateRequestTypeDef
+## GetProfileObjectTypeTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import GetProfileObjectTypeTemplateRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import GetProfileObjectTypeTemplateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `TemplateId`: `str`
 
-## GetProfileObjectTypeTemplateResponseResponseTypeDef
+## GetProfileObjectTypeTemplateResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import GetProfileObjectTypeTemplateResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import GetProfileObjectTypeTemplateResponseTypeDef
 ```
 
 Required fields:
@@ -608,10 +608,10 @@ Optional fields:
 
 - `DatetimeTypeFieldName`: `str`
 
-## ListAccountIntegrationsRequestTypeDef
+## ListAccountIntegrationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import ListAccountIntegrationsRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import ListAccountIntegrationsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -623,10 +623,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListAccountIntegrationsResponseResponseTypeDef
+## ListAccountIntegrationsResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import ListAccountIntegrationsResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import ListAccountIntegrationsResponseTypeDef
 ```
 
 Required fields:
@@ -653,10 +653,10 @@ Optional fields:
 
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## ListDomainsRequestTypeDef
+## ListDomainsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import ListDomainsRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import ListDomainsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -664,10 +664,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListDomainsResponseResponseTypeDef
+## ListDomainsResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import ListDomainsResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import ListDomainsResponseTypeDef
 ```
 
 Required fields:
@@ -696,10 +696,10 @@ Optional fields:
 
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## ListIntegrationsRequestTypeDef
+## ListIntegrationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import ListIntegrationsRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import ListIntegrationsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -711,10 +711,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListIntegrationsResponseResponseTypeDef
+## ListIntegrationsResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import ListIntegrationsResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import ListIntegrationsResponseTypeDef
 ```
 
 Required fields:
@@ -754,10 +754,10 @@ Optional fields:
 - `SourceName`: `str`
 - `SourceObject`: `str`
 
-## ListProfileObjectTypeTemplatesRequestTypeDef
+## ListProfileObjectTypeTemplatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import ListProfileObjectTypeTemplatesRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import ListProfileObjectTypeTemplatesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -765,10 +765,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListProfileObjectTypeTemplatesResponseResponseTypeDef
+## ListProfileObjectTypeTemplatesResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import ListProfileObjectTypeTemplatesResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import ListProfileObjectTypeTemplatesResponseTypeDef
 ```
 
 Required fields:
@@ -779,10 +779,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProfileObjectTypesRequestTypeDef
+## ListProfileObjectTypesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import ListProfileObjectTypesRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import ListProfileObjectTypesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -794,10 +794,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListProfileObjectTypesResponseResponseTypeDef
+## ListProfileObjectTypesResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import ListProfileObjectTypesResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import ListProfileObjectTypesResponseTypeDef
 ```
 
 Required fields:
@@ -820,10 +820,10 @@ Optional fields:
 - `ProfileObjectUniqueKey`: `str`
 - `Object`: `str`
 
-## ListProfileObjectsRequestTypeDef
+## ListProfileObjectsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import ListProfileObjectsRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import ListProfileObjectsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -837,10 +837,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListProfileObjectsResponseResponseTypeDef
+## ListProfileObjectsResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import ListProfileObjectsResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import ListProfileObjectsResponseTypeDef
 ```
 
 Required fields:
@@ -851,20 +851,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -914,10 +914,10 @@ Optional fields:
 
 - `Enabled`: `bool`
 
-## MergeProfilesRequestTypeDef
+## MergeProfilesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import MergeProfilesRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import MergeProfilesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -931,10 +931,10 @@ Optional fields:
 - `FieldSourceProfileIds`:
   [FieldSourceProfileIdsTypeDef](./type_defs.md#fieldsourceprofileidstypedef)
 
-## MergeProfilesResponseResponseTypeDef
+## MergeProfilesResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import MergeProfilesResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import MergeProfilesResponseTypeDef
 ```
 
 Required fields:
@@ -998,10 +998,10 @@ Optional fields:
 - `BillingAddress`: [AddressTypeDef](./type_defs.md#addresstypedef)
 - `Attributes`: `Dict`\[`str`, `str`\]
 
-## PutIntegrationRequestTypeDef
+## PutIntegrationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import PutIntegrationRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import PutIntegrationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1016,10 +1016,10 @@ Optional fields:
 - `FlowDefinition`:
   [FlowDefinitionTypeDef](./type_defs.md#flowdefinitiontypedef)
 
-## PutIntegrationResponseResponseTypeDef
+## PutIntegrationResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import PutIntegrationResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import PutIntegrationResponseTypeDef
 ```
 
 Required fields:
@@ -1033,10 +1033,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutProfileObjectRequestTypeDef
+## PutProfileObjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import PutProfileObjectRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import PutProfileObjectRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1045,10 +1045,10 @@ Required fields:
 - `Object`: `str`
 - `DomainName`: `str`
 
-## PutProfileObjectResponseResponseTypeDef
+## PutProfileObjectResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import PutProfileObjectResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import PutProfileObjectResponseTypeDef
 ```
 
 Required fields:
@@ -1057,10 +1057,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutProfileObjectTypeRequestTypeDef
+## PutProfileObjectTypeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import PutProfileObjectTypeRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import PutProfileObjectTypeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1081,10 +1081,10 @@ Optional fields:
   `List`\[[ObjectTypeKeyTypeDef](./type_defs.md#objecttypekeytypedef)\]\]
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## PutProfileObjectTypeResponseResponseTypeDef
+## PutProfileObjectTypeResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import PutProfileObjectTypeResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import PutProfileObjectTypeResponseTypeDef
 ```
 
 Required fields:
@@ -1167,10 +1167,10 @@ Optional fields:
 - `ScheduleOffset`: `int`
 - `FirstExecutionFrom`: `Union`\[`datetime`, `str`\]
 
-## SearchProfilesRequestTypeDef
+## SearchProfilesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import SearchProfilesRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import SearchProfilesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1184,10 +1184,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## SearchProfilesResponseResponseTypeDef
+## SearchProfilesResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import SearchProfilesResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import SearchProfilesResponseTypeDef
 ```
 
 Required fields:
@@ -1244,10 +1244,10 @@ Optional fields:
 - `IncrementalPullConfig`:
   [IncrementalPullConfigTypeDef](./type_defs.md#incrementalpullconfigtypedef)
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1301,10 +1301,10 @@ Optional fields:
 - `Scheduled`:
   [ScheduledTriggerPropertiesTypeDef](./type_defs.md#scheduledtriggerpropertiestypedef)
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1331,10 +1331,10 @@ Optional fields:
 - `Country`: `str`
 - `PostalCode`: `str`
 
-## UpdateDomainRequestTypeDef
+## UpdateDomainRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import UpdateDomainRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import UpdateDomainRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1349,10 +1349,10 @@ Optional fields:
 - `Matching`: [MatchingRequestTypeDef](./type_defs.md#matchingrequesttypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## UpdateDomainResponseResponseTypeDef
+## UpdateDomainResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import UpdateDomainResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import UpdateDomainResponseTypeDef
 ```
 
 Required fields:
@@ -1368,10 +1368,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateProfileRequestTypeDef
+## UpdateProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import UpdateProfileRequestTypeDef
+from mypy_boto3_customer_profiles.type_defs import UpdateProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1404,10 +1404,10 @@ Optional fields:
 - `BillingAddress`: [UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef)
 - `Attributes`: `Dict`\[`str`, `str`\]
 
-## UpdateProfileResponseResponseTypeDef
+## UpdateProfileResponseTypeDef
 
 ```python
-from mypy_boto3_customer_profiles.type_defs import UpdateProfileResponseResponseTypeDef
+from mypy_boto3_customer_profiles.type_defs import UpdateProfileResponseTypeDef
 ```
 
 Required fields:

@@ -42,7 +42,7 @@ Arguments for `DescribeDestinationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDestinationsPaginator.paginate` returns
-`Iterator`\[[DescribeDestinationsResponseResponseTypeDef](./type_defs.md#describedestinationsresponseresponsetypedef)\].
+`Iterator`\[[DescribeDestinationsResponseTypeDef](./type_defs.md#describedestinationsresponsetypedef)\].
 
 ## DescribeExportTasksPaginator
 
@@ -70,7 +70,7 @@ Arguments for `DescribeExportTasksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeExportTasksPaginator.paginate` returns
-`Iterator`\[[DescribeExportTasksResponseResponseTypeDef](./type_defs.md#describeexporttasksresponseresponsetypedef)\].
+`Iterator`\[[DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef)\].
 
 ## DescribeLogGroupsPaginator
 
@@ -96,7 +96,7 @@ Arguments for `DescribeLogGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLogGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeLogGroupsResponseResponseTypeDef](./type_defs.md#describeloggroupsresponseresponsetypedef)\].
+`Iterator`\[[DescribeLogGroupsResponseTypeDef](./type_defs.md#describeloggroupsresponsetypedef)\].
 
 ## DescribeLogStreamsPaginator
 
@@ -125,7 +125,7 @@ Arguments for `DescribeLogStreamsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLogStreamsPaginator.paginate` returns
-`Iterator`\[[DescribeLogStreamsResponseResponseTypeDef](./type_defs.md#describelogstreamsresponseresponsetypedef)\].
+`Iterator`\[[DescribeLogStreamsResponseTypeDef](./type_defs.md#describelogstreamsresponsetypedef)\].
 
 ## DescribeMetricFiltersPaginator
 
@@ -154,7 +154,7 @@ Arguments for `DescribeMetricFiltersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMetricFiltersPaginator.paginate` returns
-`Iterator`\[[DescribeMetricFiltersResponseResponseTypeDef](./type_defs.md#describemetricfiltersresponseresponsetypedef)\].
+`Iterator`\[[DescribeMetricFiltersResponseTypeDef](./type_defs.md#describemetricfiltersresponsetypedef)\].
 
 ## DescribeQueriesPaginator
 
@@ -180,7 +180,7 @@ Arguments for `DescribeQueriesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeQueriesPaginator.paginate` returns
-`Iterator`\[[DescribeQueriesResponseResponseTypeDef](./type_defs.md#describequeriesresponseresponsetypedef)\].
+`Iterator`\[[DescribeQueriesResponseTypeDef](./type_defs.md#describequeriesresponsetypedef)\].
 
 ## DescribeResourcePoliciesPaginator
 
@@ -205,7 +205,7 @@ Arguments for `DescribeResourcePoliciesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeResourcePoliciesPaginator.paginate` returns
-`Iterator`\[[DescribeResourcePoliciesResponseResponseTypeDef](./type_defs.md#describeresourcepoliciesresponseresponsetypedef)\].
+`Iterator`\[[DescribeResourcePoliciesResponseTypeDef](./type_defs.md#describeresourcepoliciesresponsetypedef)\].
 
 ## DescribeSubscriptionFiltersPaginator
 
@@ -232,7 +232,7 @@ Arguments for `DescribeSubscriptionFiltersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSubscriptionFiltersPaginator.paginate` returns
-`Iterator`\[[DescribeSubscriptionFiltersResponseResponseTypeDef](./type_defs.md#describesubscriptionfiltersresponseresponsetypedef)\].
+`Iterator`\[[DescribeSubscriptionFiltersResponseTypeDef](./type_defs.md#describesubscriptionfiltersresponsetypedef)\].
 
 ## FilterLogEventsPaginator
 
@@ -263,4 +263,4 @@ Arguments for `FilterLogEventsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `FilterLogEventsPaginator.paginate` returns
-`Iterator`\[[FilterLogEventsResponseResponseTypeDef](./type_defs.md#filterlogeventsresponseresponsetypedef)\].
+`Iterator`\[[FilterLogEventsResponseTypeDef](./type_defs.md#filterlogeventsresponsetypedef)\].

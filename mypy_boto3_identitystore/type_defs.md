@@ -8,23 +8,23 @@ type annotations stubs module
 [mypy_boto3_identitystore](https://pypi.org/project/mypy-boto3-identitystore/).
 
 - [Typed dictionaries for boto3 IdentityStore module](#typed-dictionaries-for-boto3-identitystore-module)
-  - [DescribeGroupRequestTypeDef](#describegrouprequesttypedef)
-  - [DescribeGroupResponseResponseTypeDef](#describegroupresponseresponsetypedef)
-  - [DescribeUserRequestTypeDef](#describeuserrequesttypedef)
-  - [DescribeUserResponseResponseTypeDef](#describeuserresponseresponsetypedef)
+  - [DescribeGroupRequestRequestTypeDef](#describegrouprequestrequesttypedef)
+  - [DescribeGroupResponseTypeDef](#describegroupresponsetypedef)
+  - [DescribeUserRequestRequestTypeDef](#describeuserrequestrequesttypedef)
+  - [DescribeUserResponseTypeDef](#describeuserresponsetypedef)
   - [FilterTypeDef](#filtertypedef)
   - [GroupTypeDef](#grouptypedef)
-  - [ListGroupsRequestTypeDef](#listgroupsrequesttypedef)
-  - [ListGroupsResponseResponseTypeDef](#listgroupsresponseresponsetypedef)
-  - [ListUsersRequestTypeDef](#listusersrequesttypedef)
-  - [ListUsersResponseResponseTypeDef](#listusersresponseresponsetypedef)
+  - [ListGroupsRequestRequestTypeDef](#listgroupsrequestrequesttypedef)
+  - [ListGroupsResponseTypeDef](#listgroupsresponsetypedef)
+  - [ListUsersRequestRequestTypeDef](#listusersrequestrequesttypedef)
+  - [ListUsersResponseTypeDef](#listusersresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [UserTypeDef](#usertypedef)
 
-## DescribeGroupRequestTypeDef
+## DescribeGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_identitystore.type_defs import DescribeGroupRequestTypeDef
+from mypy_boto3_identitystore.type_defs import DescribeGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -32,10 +32,10 @@ Required fields:
 - `IdentityStoreId`: `str`
 - `GroupId`: `str`
 
-## DescribeGroupResponseResponseTypeDef
+## DescribeGroupResponseTypeDef
 
 ```python
-from mypy_boto3_identitystore.type_defs import DescribeGroupResponseResponseTypeDef
+from mypy_boto3_identitystore.type_defs import DescribeGroupResponseTypeDef
 ```
 
 Required fields:
@@ -45,10 +45,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeUserRequestTypeDef
+## DescribeUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_identitystore.type_defs import DescribeUserRequestTypeDef
+from mypy_boto3_identitystore.type_defs import DescribeUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -56,10 +56,10 @@ Required fields:
 - `IdentityStoreId`: `str`
 - `UserId`: `str`
 
-## DescribeUserResponseResponseTypeDef
+## DescribeUserResponseTypeDef
 
 ```python
-from mypy_boto3_identitystore.type_defs import DescribeUserResponseResponseTypeDef
+from mypy_boto3_identitystore.type_defs import DescribeUserResponseTypeDef
 ```
 
 Required fields:
@@ -91,10 +91,10 @@ Required fields:
 - `GroupId`: `str`
 - `DisplayName`: `str`
 
-## ListGroupsRequestTypeDef
+## ListGroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_identitystore.type_defs import ListGroupsRequestTypeDef
+from mypy_boto3_identitystore.type_defs import ListGroupsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -107,10 +107,10 @@ Optional fields:
 - `NextToken`: `str`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
-## ListGroupsResponseResponseTypeDef
+## ListGroupsResponseTypeDef
 
 ```python
-from mypy_boto3_identitystore.type_defs import ListGroupsResponseResponseTypeDef
+from mypy_boto3_identitystore.type_defs import ListGroupsResponseTypeDef
 ```
 
 Required fields:
@@ -120,10 +120,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListUsersRequestTypeDef
+## ListUsersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_identitystore.type_defs import ListUsersRequestTypeDef
+from mypy_boto3_identitystore.type_defs import ListUsersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -136,10 +136,10 @@ Optional fields:
 - `NextToken`: `str`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
-## ListUsersResponseResponseTypeDef
+## ListUsersResponseTypeDef
 
 ```python
-from mypy_boto3_identitystore.type_defs import ListUsersResponseResponseTypeDef
+from mypy_boto3_identitystore.type_defs import ListUsersResponseTypeDef
 ```
 
 Required fields:

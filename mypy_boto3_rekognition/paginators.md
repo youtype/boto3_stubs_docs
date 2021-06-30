@@ -39,7 +39,7 @@ Arguments for `DescribeProjectVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeProjectVersionsPaginator.paginate` returns
-`Iterator`\[[DescribeProjectVersionsResponseResponseTypeDef](./type_defs.md#describeprojectversionsresponseresponsetypedef)\].
+`Iterator`\[[DescribeProjectVersionsResponseTypeDef](./type_defs.md#describeprojectversionsresponsetypedef)\].
 
 ## DescribeProjectsPaginator
 
@@ -64,7 +64,7 @@ Arguments for `DescribeProjectsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeProjectsPaginator.paginate` returns
-`Iterator`\[[DescribeProjectsResponseResponseTypeDef](./type_defs.md#describeprojectsresponseresponsetypedef)\].
+`Iterator`\[[DescribeProjectsResponseTypeDef](./type_defs.md#describeprojectsresponsetypedef)\].
 
 ## ListCollectionsPaginator
 
@@ -89,7 +89,7 @@ Arguments for `ListCollectionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCollectionsPaginator.paginate` returns
-`Iterator`\[[ListCollectionsResponseResponseTypeDef](./type_defs.md#listcollectionsresponseresponsetypedef)\].
+`Iterator`\[[ListCollectionsResponseTypeDef](./type_defs.md#listcollectionsresponsetypedef)\].
 
 ## ListFacesPaginator
 
@@ -114,7 +114,7 @@ Arguments for `ListFacesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFacesPaginator.paginate` returns
-`Iterator`\[[ListFacesResponseResponseTypeDef](./type_defs.md#listfacesresponseresponsetypedef)\].
+`Iterator`\[[ListFacesResponseTypeDef](./type_defs.md#listfacesresponsetypedef)\].
 
 ## ListStreamProcessorsPaginator
 
@@ -139,4 +139,4 @@ Arguments for `ListStreamProcessorsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStreamProcessorsPaginator.paginate` returns
-`Iterator`\[[ListStreamProcessorsResponseResponseTypeDef](./type_defs.md#liststreamprocessorsresponseresponsetypedef)\].
+`Iterator`\[[ListStreamProcessorsResponseTypeDef](./type_defs.md#liststreamprocessorsresponsetypedef)\].

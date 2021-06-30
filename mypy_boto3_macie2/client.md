@@ -11,6 +11,7 @@ type annotations stubs module
   - [Macie2Client](#macie2client)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [accept_invitation](#accept_invitation)
     - [batch_get_custom_data_identifiers](#batch_get_custom_data_identifiers)
     - [can_paginate](#can_paginate)
@@ -112,6 +113,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+Macie2Client exceptions.
+
+Type annotations for `boto3.client("macie2").exceptions` method.
+
+Boto3 documentation:
+[Macie2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### accept_invitation
 
 Accepts an Amazon Macie membership invitation that was received from a specific
@@ -123,7 +135,7 @@ Boto3 documentation:
 [Macie2.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.accept_invitation)
 
 Arguments mapping described in
-[AcceptInvitationRequestTypeDef](./type_defs.md#acceptinvitationrequesttypedef).
+[AcceptInvitationRequestRequestTypeDef](./type_defs.md#acceptinvitationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -144,14 +156,14 @@ Boto3 documentation:
 [Macie2.Client.batch_get_custom_data_identifiers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.batch_get_custom_data_identifiers)
 
 Arguments mapping described in
-[BatchGetCustomDataIdentifiersRequestTypeDef](./type_defs.md#batchgetcustomdataidentifiersrequesttypedef).
+[BatchGetCustomDataIdentifiersRequestRequestTypeDef](./type_defs.md#batchgetcustomdataidentifiersrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ids`: `List`\[`str`\]
 
 Returns
-[BatchGetCustomDataIdentifiersResponseResponseTypeDef](./type_defs.md#batchgetcustomdataidentifiersresponseresponsetypedef).
+[BatchGetCustomDataIdentifiersResponseTypeDef](./type_defs.md#batchgetcustomdataidentifiersresponsetypedef).
 
 ### can_paginate
 
@@ -178,7 +190,7 @@ Boto3 documentation:
 [Macie2.Client.create_classification_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_classification_job)
 
 Arguments mapping described in
-[CreateClassificationJobRequestTypeDef](./type_defs.md#createclassificationjobrequesttypedef).
+[CreateClassificationJobRequestRequestTypeDef](./type_defs.md#createclassificationjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -196,7 +208,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateClassificationJobResponseResponseTypeDef](./type_defs.md#createclassificationjobresponseresponsetypedef).
+[CreateClassificationJobResponseTypeDef](./type_defs.md#createclassificationjobresponsetypedef).
 
 ### create_custom_data_identifier
 
@@ -210,7 +222,7 @@ Boto3 documentation:
 [Macie2.Client.create_custom_data_identifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_custom_data_identifier)
 
 Arguments mapping described in
-[CreateCustomDataIdentifierRequestTypeDef](./type_defs.md#createcustomdataidentifierrequesttypedef).
+[CreateCustomDataIdentifierRequestRequestTypeDef](./type_defs.md#createcustomdataidentifierrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -224,7 +236,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateCustomDataIdentifierResponseResponseTypeDef](./type_defs.md#createcustomdataidentifierresponseresponsetypedef).
+[CreateCustomDataIdentifierResponseTypeDef](./type_defs.md#createcustomdataidentifierresponsetypedef).
 
 ### create_findings_filter
 
@@ -236,7 +248,7 @@ Boto3 documentation:
 [Macie2.Client.create_findings_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_findings_filter)
 
 Arguments mapping described in
-[CreateFindingsFilterRequestTypeDef](./type_defs.md#createfindingsfilterrequesttypedef).
+[CreateFindingsFilterRequestRequestTypeDef](./type_defs.md#createfindingsfilterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -251,7 +263,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateFindingsFilterResponseResponseTypeDef](./type_defs.md#createfindingsfilterresponseresponsetypedef).
+[CreateFindingsFilterResponseTypeDef](./type_defs.md#createfindingsfilterresponsetypedef).
 
 ### create_invitations
 
@@ -263,7 +275,7 @@ Boto3 documentation:
 [Macie2.Client.create_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_invitations)
 
 Arguments mapping described in
-[CreateInvitationsRequestTypeDef](./type_defs.md#createinvitationsrequesttypedef).
+[CreateInvitationsRequestRequestTypeDef](./type_defs.md#createinvitationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -272,7 +284,7 @@ Keyword-only arguments:
 - `message`: `str`
 
 Returns
-[CreateInvitationsResponseResponseTypeDef](./type_defs.md#createinvitationsresponseresponsetypedef).
+[CreateInvitationsResponseTypeDef](./type_defs.md#createinvitationsresponsetypedef).
 
 ### create_member
 
@@ -284,7 +296,7 @@ Boto3 documentation:
 [Macie2.Client.create_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_member)
 
 Arguments mapping described in
-[CreateMemberRequestTypeDef](./type_defs.md#creatememberrequesttypedef).
+[CreateMemberRequestRequestTypeDef](./type_defs.md#creatememberrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -293,7 +305,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateMemberResponseResponseTypeDef](./type_defs.md#creatememberresponseresponsetypedef).
+[CreateMemberResponseTypeDef](./type_defs.md#creatememberresponsetypedef).
 
 ### create_sample_findings
 
@@ -305,7 +317,7 @@ Boto3 documentation:
 [Macie2.Client.create_sample_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_sample_findings)
 
 Arguments mapping described in
-[CreateSampleFindingsRequestTypeDef](./type_defs.md#createsamplefindingsrequesttypedef).
+[CreateSampleFindingsRequestRequestTypeDef](./type_defs.md#createsamplefindingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -324,14 +336,14 @@ Boto3 documentation:
 [Macie2.Client.decline_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.decline_invitations)
 
 Arguments mapping described in
-[DeclineInvitationsRequestTypeDef](./type_defs.md#declineinvitationsrequesttypedef).
+[DeclineInvitationsRequestRequestTypeDef](./type_defs.md#declineinvitationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `accountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DeclineInvitationsResponseResponseTypeDef](./type_defs.md#declineinvitationsresponseresponsetypedef).
+[DeclineInvitationsResponseTypeDef](./type_defs.md#declineinvitationsresponsetypedef).
 
 ### delete_custom_data_identifier
 
@@ -344,7 +356,7 @@ Boto3 documentation:
 [Macie2.Client.delete_custom_data_identifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_custom_data_identifier)
 
 Arguments mapping described in
-[DeleteCustomDataIdentifierRequestTypeDef](./type_defs.md#deletecustomdataidentifierrequesttypedef).
+[DeleteCustomDataIdentifierRequestRequestTypeDef](./type_defs.md#deletecustomdataidentifierrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -362,7 +374,7 @@ Boto3 documentation:
 [Macie2.Client.delete_findings_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_findings_filter)
 
 Arguments mapping described in
-[DeleteFindingsFilterRequestTypeDef](./type_defs.md#deletefindingsfilterrequesttypedef).
+[DeleteFindingsFilterRequestRequestTypeDef](./type_defs.md#deletefindingsfilterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -381,14 +393,14 @@ Boto3 documentation:
 [Macie2.Client.delete_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_invitations)
 
 Arguments mapping described in
-[DeleteInvitationsRequestTypeDef](./type_defs.md#deleteinvitationsrequesttypedef).
+[DeleteInvitationsRequestRequestTypeDef](./type_defs.md#deleteinvitationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `accountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DeleteInvitationsResponseResponseTypeDef](./type_defs.md#deleteinvitationsresponseresponsetypedef).
+[DeleteInvitationsResponseTypeDef](./type_defs.md#deleteinvitationsresponsetypedef).
 
 ### delete_member
 
@@ -401,7 +413,7 @@ Boto3 documentation:
 [Macie2.Client.delete_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_member)
 
 Arguments mapping described in
-[DeleteMemberRequestTypeDef](./type_defs.md#deletememberrequesttypedef).
+[DeleteMemberRequestRequestTypeDef](./type_defs.md#deletememberrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -420,7 +432,7 @@ Boto3 documentation:
 [Macie2.Client.describe_buckets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.describe_buckets)
 
 Arguments mapping described in
-[DescribeBucketsRequestTypeDef](./type_defs.md#describebucketsrequesttypedef).
+[DescribeBucketsRequestRequestTypeDef](./type_defs.md#describebucketsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -432,7 +444,7 @@ Keyword-only arguments:
   [BucketSortCriteriaTypeDef](./type_defs.md#bucketsortcriteriatypedef)
 
 Returns
-[DescribeBucketsResponseResponseTypeDef](./type_defs.md#describebucketsresponseresponsetypedef).
+[DescribeBucketsResponseTypeDef](./type_defs.md#describebucketsresponsetypedef).
 
 ### describe_classification_job
 
@@ -445,14 +457,14 @@ Boto3 documentation:
 [Macie2.Client.describe_classification_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.describe_classification_job)
 
 Arguments mapping described in
-[DescribeClassificationJobRequestTypeDef](./type_defs.md#describeclassificationjobrequesttypedef).
+[DescribeClassificationJobRequestRequestTypeDef](./type_defs.md#describeclassificationjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 
 Returns
-[DescribeClassificationJobResponseResponseTypeDef](./type_defs.md#describeclassificationjobresponseresponsetypedef).
+[DescribeClassificationJobResponseTypeDef](./type_defs.md#describeclassificationjobresponsetypedef).
 
 ### describe_organization_configuration
 
@@ -465,7 +477,7 @@ Boto3 documentation:
 [Macie2.Client.describe_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.describe_organization_configuration)
 
 Returns
-[DescribeOrganizationConfigurationResponseResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponseresponsetypedef).
+[DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef).
 
 ### disable_macie
 
@@ -490,7 +502,7 @@ Boto3 documentation:
 [Macie2.Client.disable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disable_organization_admin_account)
 
 Arguments mapping described in
-[DisableOrganizationAdminAccountRequestTypeDef](./type_defs.md#disableorganizationadminaccountrequesttypedef).
+[DisableOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#disableorganizationadminaccountrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -533,7 +545,7 @@ Boto3 documentation:
 [Macie2.Client.disassociate_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disassociate_member)
 
 Arguments mapping described in
-[DisassociateMemberRequestTypeDef](./type_defs.md#disassociatememberrequesttypedef).
+[DisassociateMemberRequestRequestTypeDef](./type_defs.md#disassociatememberrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -552,7 +564,7 @@ Boto3 documentation:
 [Macie2.Client.enable_macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.enable_macie)
 
 Arguments mapping described in
-[EnableMacieRequestTypeDef](./type_defs.md#enablemacierequesttypedef).
+[EnableMacieRequestRequestTypeDef](./type_defs.md#enablemacierequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -575,7 +587,7 @@ Boto3 documentation:
 [Macie2.Client.enable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.enable_organization_admin_account)
 
 Arguments mapping described in
-[EnableOrganizationAdminAccountRequestTypeDef](./type_defs.md#enableorganizationadminaccountrequesttypedef).
+[EnableOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#enableorganizationadminaccountrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -613,7 +625,7 @@ Boto3 documentation:
 [Macie2.Client.get_administrator_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_administrator_account)
 
 Returns
-[GetAdministratorAccountResponseResponseTypeDef](./type_defs.md#getadministratoraccountresponseresponsetypedef).
+[GetAdministratorAccountResponseTypeDef](./type_defs.md#getadministratoraccountresponsetypedef).
 
 ### get_bucket_statistics
 
@@ -626,14 +638,14 @@ Boto3 documentation:
 [Macie2.Client.get_bucket_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_bucket_statistics)
 
 Arguments mapping described in
-[GetBucketStatisticsRequestTypeDef](./type_defs.md#getbucketstatisticsrequesttypedef).
+[GetBucketStatisticsRequestRequestTypeDef](./type_defs.md#getbucketstatisticsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `accountId`: `str`
 
 Returns
-[GetBucketStatisticsResponseResponseTypeDef](./type_defs.md#getbucketstatisticsresponseresponsetypedef).
+[GetBucketStatisticsResponseTypeDef](./type_defs.md#getbucketstatisticsresponsetypedef).
 
 ### get_classification_export_configuration
 
@@ -646,7 +658,7 @@ Boto3 documentation:
 [Macie2.Client.get_classification_export_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_classification_export_configuration)
 
 Returns
-[GetClassificationExportConfigurationResponseResponseTypeDef](./type_defs.md#getclassificationexportconfigurationresponseresponsetypedef).
+[GetClassificationExportConfigurationResponseTypeDef](./type_defs.md#getclassificationexportconfigurationresponsetypedef).
 
 ### get_custom_data_identifier
 
@@ -659,14 +671,14 @@ Boto3 documentation:
 [Macie2.Client.get_custom_data_identifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_custom_data_identifier)
 
 Arguments mapping described in
-[GetCustomDataIdentifierRequestTypeDef](./type_defs.md#getcustomdataidentifierrequesttypedef).
+[GetCustomDataIdentifierRequestRequestTypeDef](./type_defs.md#getcustomdataidentifierrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
 Returns
-[GetCustomDataIdentifierResponseResponseTypeDef](./type_defs.md#getcustomdataidentifierresponseresponsetypedef).
+[GetCustomDataIdentifierResponseTypeDef](./type_defs.md#getcustomdataidentifierresponsetypedef).
 
 ### get_finding_statistics
 
@@ -678,7 +690,7 @@ Boto3 documentation:
 [Macie2.Client.get_finding_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_finding_statistics)
 
 Arguments mapping described in
-[GetFindingStatisticsRequestTypeDef](./type_defs.md#getfindingstatisticsrequesttypedef).
+[GetFindingStatisticsRequestRequestTypeDef](./type_defs.md#getfindingstatisticsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -690,7 +702,7 @@ Keyword-only arguments:
   [FindingStatisticsSortCriteriaTypeDef](./type_defs.md#findingstatisticssortcriteriatypedef)
 
 Returns
-[GetFindingStatisticsResponseResponseTypeDef](./type_defs.md#getfindingstatisticsresponseresponsetypedef).
+[GetFindingStatisticsResponseTypeDef](./type_defs.md#getfindingstatisticsresponsetypedef).
 
 ### get_findings
 
@@ -702,7 +714,7 @@ Boto3 documentation:
 [Macie2.Client.get_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_findings)
 
 Arguments mapping described in
-[GetFindingsRequestTypeDef](./type_defs.md#getfindingsrequesttypedef).
+[GetFindingsRequestRequestTypeDef](./type_defs.md#getfindingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -710,7 +722,7 @@ Keyword-only arguments:
 - `sortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 
 Returns
-[GetFindingsResponseResponseTypeDef](./type_defs.md#getfindingsresponseresponsetypedef).
+[GetFindingsResponseTypeDef](./type_defs.md#getfindingsresponsetypedef).
 
 ### get_findings_filter
 
@@ -722,14 +734,14 @@ Boto3 documentation:
 [Macie2.Client.get_findings_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_findings_filter)
 
 Arguments mapping described in
-[GetFindingsFilterRequestTypeDef](./type_defs.md#getfindingsfilterrequesttypedef).
+[GetFindingsFilterRequestRequestTypeDef](./type_defs.md#getfindingsfilterrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
 Returns
-[GetFindingsFilterResponseResponseTypeDef](./type_defs.md#getfindingsfilterresponseresponsetypedef).
+[GetFindingsFilterResponseTypeDef](./type_defs.md#getfindingsfilterresponsetypedef).
 
 ### get_findings_publication_configuration
 
@@ -743,7 +755,7 @@ Boto3 documentation:
 [Macie2.Client.get_findings_publication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_findings_publication_configuration)
 
 Returns
-[GetFindingsPublicationConfigurationResponseResponseTypeDef](./type_defs.md#getfindingspublicationconfigurationresponseresponsetypedef).
+[GetFindingsPublicationConfigurationResponseTypeDef](./type_defs.md#getfindingspublicationconfigurationresponsetypedef).
 
 ### get_invitations_count
 
@@ -756,7 +768,7 @@ Boto3 documentation:
 [Macie2.Client.get_invitations_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_invitations_count)
 
 Returns
-[GetInvitationsCountResponseResponseTypeDef](./type_defs.md#getinvitationscountresponseresponsetypedef).
+[GetInvitationsCountResponseTypeDef](./type_defs.md#getinvitationscountresponsetypedef).
 
 ### get_macie_session
 
@@ -769,7 +781,7 @@ Boto3 documentation:
 [Macie2.Client.get_macie_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_macie_session)
 
 Returns
-[GetMacieSessionResponseResponseTypeDef](./type_defs.md#getmaciesessionresponseresponsetypedef).
+[GetMacieSessionResponseTypeDef](./type_defs.md#getmaciesessionresponsetypedef).
 
 ### get_master_account
 
@@ -782,7 +794,7 @@ Boto3 documentation:
 [Macie2.Client.get_master_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_master_account)
 
 Returns
-[GetMasterAccountResponseResponseTypeDef](./type_defs.md#getmasteraccountresponseresponsetypedef).
+[GetMasterAccountResponseTypeDef](./type_defs.md#getmasteraccountresponsetypedef).
 
 ### get_member
 
@@ -795,14 +807,13 @@ Boto3 documentation:
 [Macie2.Client.get_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_member)
 
 Arguments mapping described in
-[GetMemberRequestTypeDef](./type_defs.md#getmemberrequesttypedef).
+[GetMemberRequestRequestTypeDef](./type_defs.md#getmemberrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
-Returns
-[GetMemberResponseResponseTypeDef](./type_defs.md#getmemberresponseresponsetypedef).
+Returns [GetMemberResponseTypeDef](./type_defs.md#getmemberresponsetypedef).
 
 ### get_usage_statistics
 
@@ -814,7 +825,7 @@ Boto3 documentation:
 [Macie2.Client.get_usage_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_usage_statistics)
 
 Arguments mapping described in
-[GetUsageStatisticsRequestTypeDef](./type_defs.md#getusagestatisticsrequesttypedef).
+[GetUsageStatisticsRequestRequestTypeDef](./type_defs.md#getusagestatisticsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -827,7 +838,7 @@ Keyword-only arguments:
 - `timeRange`: [TimeRangeType](./literals.md#timerangetype)
 
 Returns
-[GetUsageStatisticsResponseResponseTypeDef](./type_defs.md#getusagestatisticsresponseresponsetypedef).
+[GetUsageStatisticsResponseTypeDef](./type_defs.md#getusagestatisticsresponsetypedef).
 
 ### get_usage_totals
 
@@ -839,14 +850,14 @@ Boto3 documentation:
 [Macie2.Client.get_usage_totals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_usage_totals)
 
 Arguments mapping described in
-[GetUsageTotalsRequestTypeDef](./type_defs.md#getusagetotalsrequesttypedef).
+[GetUsageTotalsRequestRequestTypeDef](./type_defs.md#getusagetotalsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `timeRange`: `str`
 
 Returns
-[GetUsageTotalsResponseResponseTypeDef](./type_defs.md#getusagetotalsresponseresponsetypedef).
+[GetUsageTotalsResponseTypeDef](./type_defs.md#getusagetotalsresponsetypedef).
 
 ### list_classification_jobs
 
@@ -858,7 +869,7 @@ Boto3 documentation:
 [Macie2.Client.list_classification_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_classification_jobs)
 
 Arguments mapping described in
-[ListClassificationJobsRequestTypeDef](./type_defs.md#listclassificationjobsrequesttypedef).
+[ListClassificationJobsRequestRequestTypeDef](./type_defs.md#listclassificationjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -870,7 +881,7 @@ Keyword-only arguments:
   [ListJobsSortCriteriaTypeDef](./type_defs.md#listjobssortcriteriatypedef)
 
 Returns
-[ListClassificationJobsResponseResponseTypeDef](./type_defs.md#listclassificationjobsresponseresponsetypedef).
+[ListClassificationJobsResponseTypeDef](./type_defs.md#listclassificationjobsresponsetypedef).
 
 ### list_custom_data_identifiers
 
@@ -884,7 +895,7 @@ Boto3 documentation:
 [Macie2.Client.list_custom_data_identifiers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_custom_data_identifiers)
 
 Arguments mapping described in
-[ListCustomDataIdentifiersRequestTypeDef](./type_defs.md#listcustomdataidentifiersrequesttypedef).
+[ListCustomDataIdentifiersRequestRequestTypeDef](./type_defs.md#listcustomdataidentifiersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -892,7 +903,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListCustomDataIdentifiersResponseResponseTypeDef](./type_defs.md#listcustomdataidentifiersresponseresponsetypedef).
+[ListCustomDataIdentifiersResponseTypeDef](./type_defs.md#listcustomdataidentifiersresponsetypedef).
 
 ### list_findings
 
@@ -904,7 +915,7 @@ Boto3 documentation:
 [Macie2.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_findings)
 
 Arguments mapping described in
-[ListFindingsRequestTypeDef](./type_defs.md#listfindingsrequesttypedef).
+[ListFindingsRequestRequestTypeDef](./type_defs.md#listfindingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -915,7 +926,7 @@ Keyword-only arguments:
 - `sortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 
 Returns
-[ListFindingsResponseResponseTypeDef](./type_defs.md#listfindingsresponseresponsetypedef).
+[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef).
 
 ### list_findings_filters
 
@@ -928,7 +939,7 @@ Boto3 documentation:
 [Macie2.Client.list_findings_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_findings_filters)
 
 Arguments mapping described in
-[ListFindingsFiltersRequestTypeDef](./type_defs.md#listfindingsfiltersrequesttypedef).
+[ListFindingsFiltersRequestRequestTypeDef](./type_defs.md#listfindingsfiltersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -936,7 +947,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListFindingsFiltersResponseResponseTypeDef](./type_defs.md#listfindingsfiltersresponseresponsetypedef).
+[ListFindingsFiltersResponseTypeDef](./type_defs.md#listfindingsfiltersresponsetypedef).
 
 ### list_invitations
 
@@ -949,7 +960,7 @@ Boto3 documentation:
 [Macie2.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_invitations)
 
 Arguments mapping described in
-[ListInvitationsRequestTypeDef](./type_defs.md#listinvitationsrequesttypedef).
+[ListInvitationsRequestRequestTypeDef](./type_defs.md#listinvitationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -957,7 +968,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListInvitationsResponseResponseTypeDef](./type_defs.md#listinvitationsresponseresponsetypedef).
+[ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef).
 
 ### list_members
 
@@ -970,7 +981,7 @@ Boto3 documentation:
 [Macie2.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_members)
 
 Arguments mapping described in
-[ListMembersRequestTypeDef](./type_defs.md#listmembersrequesttypedef).
+[ListMembersRequestRequestTypeDef](./type_defs.md#listmembersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -979,7 +990,7 @@ Keyword-only arguments:
 - `onlyAssociated`: `str`
 
 Returns
-[ListMembersResponseResponseTypeDef](./type_defs.md#listmembersresponseresponsetypedef).
+[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef).
 
 ### list_organization_admin_accounts
 
@@ -993,7 +1004,7 @@ Boto3 documentation:
 [Macie2.Client.list_organization_admin_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_organization_admin_accounts)
 
 Arguments mapping described in
-[ListOrganizationAdminAccountsRequestTypeDef](./type_defs.md#listorganizationadminaccountsrequesttypedef).
+[ListOrganizationAdminAccountsRequestRequestTypeDef](./type_defs.md#listorganizationadminaccountsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1001,7 +1012,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListOrganizationAdminAccountsResponseResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponseresponsetypedef).
+[ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -1014,14 +1025,14 @@ Boto3 documentation:
 [Macie2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_classification_export_configuration
 
@@ -1035,7 +1046,7 @@ Boto3 documentation:
 [Macie2.Client.put_classification_export_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.put_classification_export_configuration)
 
 Arguments mapping described in
-[PutClassificationExportConfigurationRequestTypeDef](./type_defs.md#putclassificationexportconfigurationrequesttypedef).
+[PutClassificationExportConfigurationRequestRequestTypeDef](./type_defs.md#putclassificationexportconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1044,7 +1055,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutClassificationExportConfigurationResponseResponseTypeDef](./type_defs.md#putclassificationexportconfigurationresponseresponsetypedef).
+[PutClassificationExportConfigurationResponseTypeDef](./type_defs.md#putclassificationexportconfigurationresponsetypedef).
 
 ### put_findings_publication_configuration
 
@@ -1057,7 +1068,7 @@ Boto3 documentation:
 [Macie2.Client.put_findings_publication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.put_findings_publication_configuration)
 
 Arguments mapping described in
-[PutFindingsPublicationConfigurationRequestTypeDef](./type_defs.md#putfindingspublicationconfigurationrequesttypedef).
+[PutFindingsPublicationConfigurationRequestRequestTypeDef](./type_defs.md#putfindingspublicationconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1078,7 +1089,7 @@ Boto3 documentation:
 [Macie2.Client.search_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.search_resources)
 
 Arguments mapping described in
-[SearchResourcesRequestTypeDef](./type_defs.md#searchresourcesrequesttypedef).
+[SearchResourcesRequestRequestTypeDef](./type_defs.md#searchresourcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1090,7 +1101,7 @@ Keyword-only arguments:
   [SearchResourcesSortCriteriaTypeDef](./type_defs.md#searchresourcessortcriteriatypedef)
 
 Returns
-[SearchResourcesResponseResponseTypeDef](./type_defs.md#searchresourcesresponseresponsetypedef).
+[SearchResourcesResponseTypeDef](./type_defs.md#searchresourcesresponsetypedef).
 
 ### tag_resource
 
@@ -1103,7 +1114,7 @@ Boto3 documentation:
 [Macie2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1123,7 +1134,7 @@ Boto3 documentation:
 [Macie2.Client.test_custom_data_identifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.test_custom_data_identifier)
 
 Arguments mapping described in
-[TestCustomDataIdentifierRequestTypeDef](./type_defs.md#testcustomdataidentifierrequesttypedef).
+[TestCustomDataIdentifierRequestRequestTypeDef](./type_defs.md#testcustomdataidentifierrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1134,7 +1145,7 @@ Keyword-only arguments:
 - `maximumMatchDistance`: `int`
 
 Returns
-[TestCustomDataIdentifierResponseResponseTypeDef](./type_defs.md#testcustomdataidentifierresponseresponsetypedef).
+[TestCustomDataIdentifierResponseTypeDef](./type_defs.md#testcustomdataidentifierresponsetypedef).
 
 ### untag_resource
 
@@ -1147,7 +1158,7 @@ Boto3 documentation:
 [Macie2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1166,7 +1177,7 @@ Boto3 documentation:
 [Macie2.Client.update_classification_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_classification_job)
 
 Arguments mapping described in
-[UpdateClassificationJobRequestTypeDef](./type_defs.md#updateclassificationjobrequesttypedef).
+[UpdateClassificationJobRequestRequestTypeDef](./type_defs.md#updateclassificationjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1185,7 +1196,7 @@ Boto3 documentation:
 [Macie2.Client.update_findings_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_findings_filter)
 
 Arguments mapping described in
-[UpdateFindingsFilterRequestTypeDef](./type_defs.md#updatefindingsfilterrequesttypedef).
+[UpdateFindingsFilterRequestRequestTypeDef](./type_defs.md#updatefindingsfilterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1199,7 +1210,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[UpdateFindingsFilterResponseResponseTypeDef](./type_defs.md#updatefindingsfilterresponseresponsetypedef).
+[UpdateFindingsFilterResponseTypeDef](./type_defs.md#updatefindingsfilterresponsetypedef).
 
 ### update_macie_session
 
@@ -1212,7 +1223,7 @@ Boto3 documentation:
 [Macie2.Client.update_macie_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_macie_session)
 
 Arguments mapping described in
-[UpdateMacieSessionRequestTypeDef](./type_defs.md#updatemaciesessionrequesttypedef).
+[UpdateMacieSessionRequestRequestTypeDef](./type_defs.md#updatemaciesessionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1232,7 +1243,7 @@ Boto3 documentation:
 [Macie2.Client.update_member_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_member_session)
 
 Arguments mapping described in
-[UpdateMemberSessionRequestTypeDef](./type_defs.md#updatemembersessionrequesttypedef).
+[UpdateMemberSessionRequestRequestTypeDef](./type_defs.md#updatemembersessionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1252,7 +1263,7 @@ Boto3 documentation:
 [Macie2.Client.update_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_organization_configuration)
 
 Arguments mapping described in
-[UpdateOrganizationConfigurationRequestTypeDef](./type_defs.md#updateorganizationconfigurationrequesttypedef).
+[UpdateOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#updateorganizationconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 

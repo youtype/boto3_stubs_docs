@@ -46,7 +46,7 @@ Arguments for `DescribeBatchPredictionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeBatchPredictionsPaginator.paginate` returns
-`Iterator`\[[DescribeBatchPredictionsOutputResponseTypeDef](./type_defs.md#describebatchpredictionsoutputresponsetypedef)\].
+`Iterator`\[[DescribeBatchPredictionsOutputTypeDef](./type_defs.md#describebatchpredictionsoutputtypedef)\].
 
 ## DescribeDataSourcesPaginator
 
@@ -81,7 +81,7 @@ Arguments for `DescribeDataSourcesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDataSourcesPaginator.paginate` returns
-`Iterator`\[[DescribeDataSourcesOutputResponseTypeDef](./type_defs.md#describedatasourcesoutputresponsetypedef)\].
+`Iterator`\[[DescribeDataSourcesOutputTypeDef](./type_defs.md#describedatasourcesoutputtypedef)\].
 
 ## DescribeEvaluationsPaginator
 
@@ -116,7 +116,7 @@ Arguments for `DescribeEvaluationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEvaluationsPaginator.paginate` returns
-`Iterator`\[[DescribeEvaluationsOutputResponseTypeDef](./type_defs.md#describeevaluationsoutputresponsetypedef)\].
+`Iterator`\[[DescribeEvaluationsOutputTypeDef](./type_defs.md#describeevaluationsoutputtypedef)\].
 
 ## DescribeMLModelsPaginator
 
@@ -151,4 +151,4 @@ Arguments for `DescribeMLModelsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMLModelsPaginator.paginate` returns
-`Iterator`\[[DescribeMLModelsOutputResponseTypeDef](./type_defs.md#describemlmodelsoutputresponsetypedef)\].
+`Iterator`\[[DescribeMLModelsOutputTypeDef](./type_defs.md#describemlmodelsoutputtypedef)\].

@@ -11,6 +11,7 @@ type annotations stubs module
   - [NetworkFirewallClient](#networkfirewallclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_firewall_policy](#associate_firewall_policy)
     - [associate_subnets](#associate_subnets)
     - [can_paginate](#can_paginate)
@@ -90,6 +91,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+NetworkFirewallClient exceptions.
+
+Type annotations for `boto3.client("network-firewall").exceptions` method.
+
+Boto3 documentation:
+[NetworkFirewall.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_firewall_policy
 
 Associates a FirewallPolicy to a Firewall .
@@ -101,7 +113,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.associate_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.associate_firewall_policy)
 
 Arguments mapping described in
-[AssociateFirewallPolicyRequestTypeDef](./type_defs.md#associatefirewallpolicyrequesttypedef).
+[AssociateFirewallPolicyRequestRequestTypeDef](./type_defs.md#associatefirewallpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -111,7 +123,7 @@ Keyword-only arguments:
 - `FirewallName`: `str`
 
 Returns
-[AssociateFirewallPolicyResponseResponseTypeDef](./type_defs.md#associatefirewallpolicyresponseresponsetypedef).
+[AssociateFirewallPolicyResponseTypeDef](./type_defs.md#associatefirewallpolicyresponsetypedef).
 
 ### associate_subnets
 
@@ -124,7 +136,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.associate_subnets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.associate_subnets)
 
 Arguments mapping described in
-[AssociateSubnetsRequestTypeDef](./type_defs.md#associatesubnetsrequesttypedef).
+[AssociateSubnetsRequestRequestTypeDef](./type_defs.md#associatesubnetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -136,7 +148,7 @@ Keyword-only arguments:
 - `FirewallName`: `str`
 
 Returns
-[AssociateSubnetsResponseResponseTypeDef](./type_defs.md#associatesubnetsresponseresponsetypedef).
+[AssociateSubnetsResponseTypeDef](./type_defs.md#associatesubnetsresponsetypedef).
 
 ### can_paginate
 
@@ -164,7 +176,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.create_firewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.create_firewall)
 
 Arguments mapping described in
-[CreateFirewallRequestTypeDef](./type_defs.md#createfirewallrequesttypedef).
+[CreateFirewallRequestRequestTypeDef](./type_defs.md#createfirewallrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -181,7 +193,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateFirewallResponseResponseTypeDef](./type_defs.md#createfirewallresponseresponsetypedef).
+[CreateFirewallResponseTypeDef](./type_defs.md#createfirewallresponsetypedef).
 
 ### create_firewall_policy
 
@@ -194,7 +206,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.create_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.create_firewall_policy)
 
 Arguments mapping described in
-[CreateFirewallPolicyRequestTypeDef](./type_defs.md#createfirewallpolicyrequesttypedef).
+[CreateFirewallPolicyRequestRequestTypeDef](./type_defs.md#createfirewallpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -206,7 +218,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateFirewallPolicyResponseResponseTypeDef](./type_defs.md#createfirewallpolicyresponseresponsetypedef).
+[CreateFirewallPolicyResponseTypeDef](./type_defs.md#createfirewallpolicyresponsetypedef).
 
 ### create_rule_group
 
@@ -220,7 +232,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.create_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.create_rule_group)
 
 Arguments mapping described in
-[CreateRuleGroupRequestTypeDef](./type_defs.md#createrulegrouprequesttypedef).
+[CreateRuleGroupRequestRequestTypeDef](./type_defs.md#createrulegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -234,7 +246,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateRuleGroupResponseResponseTypeDef](./type_defs.md#createrulegroupresponseresponsetypedef).
+[CreateRuleGroupResponseTypeDef](./type_defs.md#createrulegroupresponsetypedef).
 
 ### delete_firewall
 
@@ -246,7 +258,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.delete_firewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_firewall)
 
 Arguments mapping described in
-[DeleteFirewallRequestTypeDef](./type_defs.md#deletefirewallrequesttypedef).
+[DeleteFirewallRequestRequestTypeDef](./type_defs.md#deletefirewallrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -254,7 +266,7 @@ Keyword-only arguments:
 - `FirewallArn`: `str`
 
 Returns
-[DeleteFirewallResponseResponseTypeDef](./type_defs.md#deletefirewallresponseresponsetypedef).
+[DeleteFirewallResponseTypeDef](./type_defs.md#deletefirewallresponsetypedef).
 
 ### delete_firewall_policy
 
@@ -267,7 +279,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.delete_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_firewall_policy)
 
 Arguments mapping described in
-[DeleteFirewallPolicyRequestTypeDef](./type_defs.md#deletefirewallpolicyrequesttypedef).
+[DeleteFirewallPolicyRequestRequestTypeDef](./type_defs.md#deletefirewallpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -275,7 +287,7 @@ Keyword-only arguments:
 - `FirewallPolicyArn`: `str`
 
 Returns
-[DeleteFirewallPolicyResponseResponseTypeDef](./type_defs.md#deletefirewallpolicyresponseresponsetypedef).
+[DeleteFirewallPolicyResponseTypeDef](./type_defs.md#deletefirewallpolicyresponsetypedef).
 
 ### delete_resource_policy
 
@@ -288,7 +300,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_resource_policy)
 
 Arguments mapping described in
-[DeleteResourcePolicyRequestTypeDef](./type_defs.md#deleteresourcepolicyrequesttypedef).
+[DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -307,7 +319,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.delete_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_rule_group)
 
 Arguments mapping described in
-[DeleteRuleGroupRequestTypeDef](./type_defs.md#deleterulegrouprequesttypedef).
+[DeleteRuleGroupRequestRequestTypeDef](./type_defs.md#deleterulegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -316,7 +328,7 @@ Keyword-only arguments:
 - `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype)
 
 Returns
-[DeleteRuleGroupResponseResponseTypeDef](./type_defs.md#deleterulegroupresponseresponsetypedef).
+[DeleteRuleGroupResponseTypeDef](./type_defs.md#deleterulegroupresponsetypedef).
 
 ### describe_firewall
 
@@ -329,7 +341,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.describe_firewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_firewall)
 
 Arguments mapping described in
-[DescribeFirewallRequestTypeDef](./type_defs.md#describefirewallrequesttypedef).
+[DescribeFirewallRequestRequestTypeDef](./type_defs.md#describefirewallrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -337,7 +349,7 @@ Keyword-only arguments:
 - `FirewallArn`: `str`
 
 Returns
-[DescribeFirewallResponseResponseTypeDef](./type_defs.md#describefirewallresponseresponsetypedef).
+[DescribeFirewallResponseTypeDef](./type_defs.md#describefirewallresponsetypedef).
 
 ### describe_firewall_policy
 
@@ -350,7 +362,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.describe_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_firewall_policy)
 
 Arguments mapping described in
-[DescribeFirewallPolicyRequestTypeDef](./type_defs.md#describefirewallpolicyrequesttypedef).
+[DescribeFirewallPolicyRequestRequestTypeDef](./type_defs.md#describefirewallpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -358,7 +370,7 @@ Keyword-only arguments:
 - `FirewallPolicyArn`: `str`
 
 Returns
-[DescribeFirewallPolicyResponseResponseTypeDef](./type_defs.md#describefirewallpolicyresponseresponsetypedef).
+[DescribeFirewallPolicyResponseTypeDef](./type_defs.md#describefirewallpolicyresponsetypedef).
 
 ### describe_logging_configuration
 
@@ -371,7 +383,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.describe_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_logging_configuration)
 
 Arguments mapping described in
-[DescribeLoggingConfigurationRequestTypeDef](./type_defs.md#describeloggingconfigurationrequesttypedef).
+[DescribeLoggingConfigurationRequestRequestTypeDef](./type_defs.md#describeloggingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -379,7 +391,7 @@ Keyword-only arguments:
 - `FirewallName`: `str`
 
 Returns
-[DescribeLoggingConfigurationResponseResponseTypeDef](./type_defs.md#describeloggingconfigurationresponseresponsetypedef).
+[DescribeLoggingConfigurationResponseTypeDef](./type_defs.md#describeloggingconfigurationresponsetypedef).
 
 ### describe_resource_policy
 
@@ -392,14 +404,14 @@ Boto3 documentation:
 [NetworkFirewall.Client.describe_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_resource_policy)
 
 Arguments mapping described in
-[DescribeResourcePolicyRequestTypeDef](./type_defs.md#describeresourcepolicyrequesttypedef).
+[DescribeResourcePolicyRequestRequestTypeDef](./type_defs.md#describeresourcepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[DescribeResourcePolicyResponseResponseTypeDef](./type_defs.md#describeresourcepolicyresponseresponsetypedef).
+[DescribeResourcePolicyResponseTypeDef](./type_defs.md#describeresourcepolicyresponsetypedef).
 
 ### describe_rule_group
 
@@ -412,7 +424,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.describe_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_rule_group)
 
 Arguments mapping described in
-[DescribeRuleGroupRequestTypeDef](./type_defs.md#describerulegrouprequesttypedef).
+[DescribeRuleGroupRequestRequestTypeDef](./type_defs.md#describerulegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -421,7 +433,7 @@ Keyword-only arguments:
 - `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype)
 
 Returns
-[DescribeRuleGroupResponseResponseTypeDef](./type_defs.md#describerulegroupresponseresponsetypedef).
+[DescribeRuleGroupResponseTypeDef](./type_defs.md#describerulegroupresponsetypedef).
 
 ### disassociate_subnets
 
@@ -434,7 +446,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.disassociate_subnets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.disassociate_subnets)
 
 Arguments mapping described in
-[DisassociateSubnetsRequestTypeDef](./type_defs.md#disassociatesubnetsrequesttypedef).
+[DisassociateSubnetsRequestRequestTypeDef](./type_defs.md#disassociatesubnetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -444,7 +456,7 @@ Keyword-only arguments:
 - `FirewallName`: `str`
 
 Returns
-[DisassociateSubnetsResponseResponseTypeDef](./type_defs.md#disassociatesubnetsresponseresponsetypedef).
+[DisassociateSubnetsResponseTypeDef](./type_defs.md#disassociatesubnetsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -476,7 +488,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.list_firewall_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_firewall_policies)
 
 Arguments mapping described in
-[ListFirewallPoliciesRequestTypeDef](./type_defs.md#listfirewallpoliciesrequesttypedef).
+[ListFirewallPoliciesRequestRequestTypeDef](./type_defs.md#listfirewallpoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -484,7 +496,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListFirewallPoliciesResponseResponseTypeDef](./type_defs.md#listfirewallpoliciesresponseresponsetypedef).
+[ListFirewallPoliciesResponseTypeDef](./type_defs.md#listfirewallpoliciesresponsetypedef).
 
 ### list_firewalls
 
@@ -496,7 +508,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.list_firewalls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_firewalls)
 
 Arguments mapping described in
-[ListFirewallsRequestTypeDef](./type_defs.md#listfirewallsrequesttypedef).
+[ListFirewallsRequestRequestTypeDef](./type_defs.md#listfirewallsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -505,7 +517,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListFirewallsResponseResponseTypeDef](./type_defs.md#listfirewallsresponseresponsetypedef).
+[ListFirewallsResponseTypeDef](./type_defs.md#listfirewallsresponsetypedef).
 
 ### list_rule_groups
 
@@ -518,7 +530,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.list_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_rule_groups)
 
 Arguments mapping described in
-[ListRuleGroupsRequestTypeDef](./type_defs.md#listrulegroupsrequesttypedef).
+[ListRuleGroupsRequestRequestTypeDef](./type_defs.md#listrulegroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -526,7 +538,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListRuleGroupsResponseResponseTypeDef](./type_defs.md#listrulegroupsresponseresponsetypedef).
+[ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -539,7 +551,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -548,7 +560,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_resource_policy
 
@@ -562,7 +574,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.put_resource_policy)
 
 Arguments mapping described in
-[PutResourcePolicyRequestTypeDef](./type_defs.md#putresourcepolicyrequesttypedef).
+[PutResourcePolicyRequestRequestTypeDef](./type_defs.md#putresourcepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -581,7 +593,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -600,7 +612,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -621,7 +633,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.update_firewall_delete_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_delete_protection)
 
 Arguments mapping described in
-[UpdateFirewallDeleteProtectionRequestTypeDef](./type_defs.md#updatefirewalldeleteprotectionrequesttypedef).
+[UpdateFirewallDeleteProtectionRequestRequestTypeDef](./type_defs.md#updatefirewalldeleteprotectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -631,7 +643,7 @@ Keyword-only arguments:
 - `FirewallName`: `str`
 
 Returns
-[UpdateFirewallDeleteProtectionResponseResponseTypeDef](./type_defs.md#updatefirewalldeleteprotectionresponseresponsetypedef).
+[UpdateFirewallDeleteProtectionResponseTypeDef](./type_defs.md#updatefirewalldeleteprotectionresponsetypedef).
 
 ### update_firewall_description
 
@@ -644,7 +656,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.update_firewall_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_description)
 
 Arguments mapping described in
-[UpdateFirewallDescriptionRequestTypeDef](./type_defs.md#updatefirewalldescriptionrequesttypedef).
+[UpdateFirewallDescriptionRequestRequestTypeDef](./type_defs.md#updatefirewalldescriptionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -654,7 +666,7 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[UpdateFirewallDescriptionResponseResponseTypeDef](./type_defs.md#updatefirewalldescriptionresponseresponsetypedef).
+[UpdateFirewallDescriptionResponseTypeDef](./type_defs.md#updatefirewalldescriptionresponsetypedef).
 
 ### update_firewall_policy
 
@@ -667,7 +679,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.update_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_policy)
 
 Arguments mapping described in
-[UpdateFirewallPolicyRequestTypeDef](./type_defs.md#updatefirewallpolicyrequesttypedef).
+[UpdateFirewallPolicyRequestRequestTypeDef](./type_defs.md#updatefirewallpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -680,7 +692,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[UpdateFirewallPolicyResponseResponseTypeDef](./type_defs.md#updatefirewallpolicyresponseresponsetypedef).
+[UpdateFirewallPolicyResponseTypeDef](./type_defs.md#updatefirewallpolicyresponsetypedef).
 
 ### update_firewall_policy_change_protection
 
@@ -697,7 +709,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.update_firewall_policy_change_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_policy_change_protection)
 
 Arguments mapping described in
-[UpdateFirewallPolicyChangeProtectionRequestTypeDef](./type_defs.md#updatefirewallpolicychangeprotectionrequesttypedef).
+[UpdateFirewallPolicyChangeProtectionRequestRequestTypeDef](./type_defs.md#updatefirewallpolicychangeprotectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -707,7 +719,7 @@ Keyword-only arguments:
 - `FirewallName`: `str`
 
 Returns
-[UpdateFirewallPolicyChangeProtectionResponseResponseTypeDef](./type_defs.md#updatefirewallpolicychangeprotectionresponseresponsetypedef).
+[UpdateFirewallPolicyChangeProtectionResponseTypeDef](./type_defs.md#updatefirewallpolicychangeprotectionresponsetypedef).
 
 ### update_logging_configuration
 
@@ -720,7 +732,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.update_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_logging_configuration)
 
 Arguments mapping described in
-[UpdateLoggingConfigurationRequestTypeDef](./type_defs.md#updateloggingconfigurationrequesttypedef).
+[UpdateLoggingConfigurationRequestRequestTypeDef](./type_defs.md#updateloggingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -730,7 +742,7 @@ Keyword-only arguments:
   [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
 
 Returns
-[UpdateLoggingConfigurationResponseResponseTypeDef](./type_defs.md#updateloggingconfigurationresponseresponsetypedef).
+[UpdateLoggingConfigurationResponseTypeDef](./type_defs.md#updateloggingconfigurationresponsetypedef).
 
 ### update_rule_group
 
@@ -743,7 +755,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.update_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_rule_group)
 
 Arguments mapping described in
-[UpdateRuleGroupRequestTypeDef](./type_defs.md#updaterulegrouprequesttypedef).
+[UpdateRuleGroupRequestRequestTypeDef](./type_defs.md#updaterulegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -757,7 +769,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[UpdateRuleGroupResponseResponseTypeDef](./type_defs.md#updaterulegroupresponseresponsetypedef).
+[UpdateRuleGroupResponseTypeDef](./type_defs.md#updaterulegroupresponsetypedef).
 
 ### update_subnet_change_protection
 
@@ -773,7 +785,7 @@ Boto3 documentation:
 [NetworkFirewall.Client.update_subnet_change_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_subnet_change_protection)
 
 Arguments mapping described in
-[UpdateSubnetChangeProtectionRequestTypeDef](./type_defs.md#updatesubnetchangeprotectionrequesttypedef).
+[UpdateSubnetChangeProtectionRequestRequestTypeDef](./type_defs.md#updatesubnetchangeprotectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -783,7 +795,7 @@ Keyword-only arguments:
 - `FirewallName`: `str`
 
 Returns
-[UpdateSubnetChangeProtectionResponseResponseTypeDef](./type_defs.md#updatesubnetchangeprotectionresponseresponsetypedef).
+[UpdateSubnetChangeProtectionResponseTypeDef](./type_defs.md#updatesubnetchangeprotectionresponsetypedef).
 
 ### get_paginator
 

@@ -11,6 +11,7 @@ type annotations stubs module
   - [DetectiveClient](#detectiveclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [accept_invitation](#accept_invitation)
     - [can_paginate](#can_paginate)
     - [create_graph](#create_graph)
@@ -68,6 +69,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+DetectiveClient exceptions.
+
+Type annotations for `boto3.client("detective").exceptions` method.
+
+Boto3 documentation:
+[Detective.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### accept_invitation
 
 Accepts an invitation for the member account to contribute data to a behavior
@@ -79,7 +91,7 @@ Boto3 documentation:
 [Detective.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.accept_invitation)
 
 Arguments mapping described in
-[AcceptInvitationRequestTypeDef](./type_defs.md#acceptinvitationrequesttypedef).
+[AcceptInvitationRequestRequestTypeDef](./type_defs.md#acceptinvitationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -111,14 +123,14 @@ Boto3 documentation:
 [Detective.Client.create_graph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.create_graph)
 
 Arguments mapping described in
-[CreateGraphRequestTypeDef](./type_defs.md#creategraphrequesttypedef).
+[CreateGraphRequestRequestTypeDef](./type_defs.md#creategraphrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateGraphResponseResponseTypeDef](./type_defs.md#creategraphresponseresponsetypedef).
+[CreateGraphResponseTypeDef](./type_defs.md#creategraphresponsetypedef).
 
 ### create_members
 
@@ -131,7 +143,7 @@ Boto3 documentation:
 [Detective.Client.create_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.create_members)
 
 Arguments mapping described in
-[CreateMembersRequestTypeDef](./type_defs.md#createmembersrequesttypedef).
+[CreateMembersRequestRequestTypeDef](./type_defs.md#createmembersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -142,7 +154,7 @@ Keyword-only arguments:
 - `DisableEmailNotification`: `bool`
 
 Returns
-[CreateMembersResponseResponseTypeDef](./type_defs.md#createmembersresponseresponsetypedef).
+[CreateMembersResponseTypeDef](./type_defs.md#createmembersresponsetypedef).
 
 ### delete_graph
 
@@ -154,7 +166,7 @@ Boto3 documentation:
 [Detective.Client.delete_graph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.delete_graph)
 
 Arguments mapping described in
-[DeleteGraphRequestTypeDef](./type_defs.md#deletegraphrequesttypedef).
+[DeleteGraphRequestRequestTypeDef](./type_defs.md#deletegraphrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -171,7 +183,7 @@ Boto3 documentation:
 [Detective.Client.delete_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.delete_members)
 
 Arguments mapping described in
-[DeleteMembersRequestTypeDef](./type_defs.md#deletemembersrequesttypedef).
+[DeleteMembersRequestRequestTypeDef](./type_defs.md#deletemembersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -179,7 +191,7 @@ Keyword-only arguments:
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DeleteMembersResponseResponseTypeDef](./type_defs.md#deletemembersresponseresponsetypedef).
+[DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef).
 
 ### disassociate_membership
 
@@ -192,7 +204,7 @@ Boto3 documentation:
 [Detective.Client.disassociate_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.disassociate_membership)
 
 Arguments mapping described in
-[DisassociateMembershipRequestTypeDef](./type_defs.md#disassociatemembershiprequesttypedef).
+[DisassociateMembershipRequestRequestTypeDef](./type_defs.md#disassociatemembershiprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -227,15 +239,14 @@ Boto3 documentation:
 [Detective.Client.get_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.get_members)
 
 Arguments mapping described in
-[GetMembersRequestTypeDef](./type_defs.md#getmembersrequesttypedef).
+[GetMembersRequestRequestTypeDef](./type_defs.md#getmembersrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `GraphArn`: `str` *(required)*
 - `AccountIds`: `List`\[`str`\] *(required)*
 
-Returns
-[GetMembersResponseResponseTypeDef](./type_defs.md#getmembersresponseresponsetypedef).
+Returns [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef).
 
 ### list_graphs
 
@@ -248,15 +259,14 @@ Boto3 documentation:
 [Detective.Client.list_graphs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_graphs)
 
 Arguments mapping described in
-[ListGraphsRequestTypeDef](./type_defs.md#listgraphsrequesttypedef).
+[ListGraphsRequestRequestTypeDef](./type_defs.md#listgraphsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListGraphsResponseResponseTypeDef](./type_defs.md#listgraphsresponseresponsetypedef).
+Returns [ListGraphsResponseTypeDef](./type_defs.md#listgraphsresponsetypedef).
 
 ### list_invitations
 
@@ -269,7 +279,7 @@ Boto3 documentation:
 [Detective.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_invitations)
 
 Arguments mapping described in
-[ListInvitationsRequestTypeDef](./type_defs.md#listinvitationsrequesttypedef).
+[ListInvitationsRequestRequestTypeDef](./type_defs.md#listinvitationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -277,7 +287,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListInvitationsResponseResponseTypeDef](./type_defs.md#listinvitationsresponseresponsetypedef).
+[ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef).
 
 ### list_members
 
@@ -289,7 +299,7 @@ Boto3 documentation:
 [Detective.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_members)
 
 Arguments mapping described in
-[ListMembersRequestTypeDef](./type_defs.md#listmembersrequesttypedef).
+[ListMembersRequestRequestTypeDef](./type_defs.md#listmembersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -298,7 +308,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListMembersResponseResponseTypeDef](./type_defs.md#listmembersresponseresponsetypedef).
+[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -310,14 +320,14 @@ Boto3 documentation:
 [Detective.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### reject_invitation
 
@@ -329,7 +339,7 @@ Boto3 documentation:
 [Detective.Client.reject_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.reject_invitation)
 
 Arguments mapping described in
-[RejectInvitationRequestTypeDef](./type_defs.md#rejectinvitationrequesttypedef).
+[RejectInvitationRequestRequestTypeDef](./type_defs.md#rejectinvitationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -347,7 +357,7 @@ Boto3 documentation:
 [Detective.Client.start_monitoring_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.start_monitoring_member)
 
 Arguments mapping described in
-[StartMonitoringMemberRequestTypeDef](./type_defs.md#startmonitoringmemberrequesttypedef).
+[StartMonitoringMemberRequestRequestTypeDef](./type_defs.md#startmonitoringmemberrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -364,7 +374,7 @@ Boto3 documentation:
 [Detective.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -383,7 +393,7 @@ Boto3 documentation:
 [Detective.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 

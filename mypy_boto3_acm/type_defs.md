@@ -8,48 +8,48 @@ type annotations stubs module
 [mypy_boto3_acm](https://pypi.org/project/mypy-boto3-acm/).
 
 - [Typed dictionaries for boto3 ACM module](#typed-dictionaries-for-boto3-acm-module)
-  - [AddTagsToCertificateRequestTypeDef](#addtagstocertificaterequesttypedef)
+  - [AddTagsToCertificateRequestRequestTypeDef](#addtagstocertificaterequestrequesttypedef)
   - [CertificateDetailTypeDef](#certificatedetailtypedef)
   - [CertificateOptionsTypeDef](#certificateoptionstypedef)
   - [CertificateSummaryTypeDef](#certificatesummarytypedef)
-  - [DeleteCertificateRequestTypeDef](#deletecertificaterequesttypedef)
-  - [DescribeCertificateRequestTypeDef](#describecertificaterequesttypedef)
-  - [DescribeCertificateResponseResponseTypeDef](#describecertificateresponseresponsetypedef)
+  - [DeleteCertificateRequestRequestTypeDef](#deletecertificaterequestrequesttypedef)
+  - [DescribeCertificateRequestRequestTypeDef](#describecertificaterequestrequesttypedef)
+  - [DescribeCertificateResponseTypeDef](#describecertificateresponsetypedef)
   - [DomainValidationOptionTypeDef](#domainvalidationoptiontypedef)
   - [DomainValidationTypeDef](#domainvalidationtypedef)
   - [ExpiryEventsConfigurationTypeDef](#expiryeventsconfigurationtypedef)
-  - [ExportCertificateRequestTypeDef](#exportcertificaterequesttypedef)
-  - [ExportCertificateResponseResponseTypeDef](#exportcertificateresponseresponsetypedef)
+  - [ExportCertificateRequestRequestTypeDef](#exportcertificaterequestrequesttypedef)
+  - [ExportCertificateResponseTypeDef](#exportcertificateresponsetypedef)
   - [ExtendedKeyUsageTypeDef](#extendedkeyusagetypedef)
   - [FiltersTypeDef](#filterstypedef)
-  - [GetAccountConfigurationResponseResponseTypeDef](#getaccountconfigurationresponseresponsetypedef)
-  - [GetCertificateRequestTypeDef](#getcertificaterequesttypedef)
-  - [GetCertificateResponseResponseTypeDef](#getcertificateresponseresponsetypedef)
-  - [ImportCertificateRequestTypeDef](#importcertificaterequesttypedef)
-  - [ImportCertificateResponseResponseTypeDef](#importcertificateresponseresponsetypedef)
+  - [GetAccountConfigurationResponseTypeDef](#getaccountconfigurationresponsetypedef)
+  - [GetCertificateRequestRequestTypeDef](#getcertificaterequestrequesttypedef)
+  - [GetCertificateResponseTypeDef](#getcertificateresponsetypedef)
+  - [ImportCertificateRequestRequestTypeDef](#importcertificaterequestrequesttypedef)
+  - [ImportCertificateResponseTypeDef](#importcertificateresponsetypedef)
   - [KeyUsageTypeDef](#keyusagetypedef)
-  - [ListCertificatesRequestTypeDef](#listcertificatesrequesttypedef)
-  - [ListCertificatesResponseResponseTypeDef](#listcertificatesresponseresponsetypedef)
-  - [ListTagsForCertificateRequestTypeDef](#listtagsforcertificaterequesttypedef)
-  - [ListTagsForCertificateResponseResponseTypeDef](#listtagsforcertificateresponseresponsetypedef)
+  - [ListCertificatesRequestRequestTypeDef](#listcertificatesrequestrequesttypedef)
+  - [ListCertificatesResponseTypeDef](#listcertificatesresponsetypedef)
+  - [ListTagsForCertificateRequestRequestTypeDef](#listtagsforcertificaterequestrequesttypedef)
+  - [ListTagsForCertificateResponseTypeDef](#listtagsforcertificateresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutAccountConfigurationRequestTypeDef](#putaccountconfigurationrequesttypedef)
-  - [RemoveTagsFromCertificateRequestTypeDef](#removetagsfromcertificaterequesttypedef)
-  - [RenewCertificateRequestTypeDef](#renewcertificaterequesttypedef)
+  - [PutAccountConfigurationRequestRequestTypeDef](#putaccountconfigurationrequestrequesttypedef)
+  - [RemoveTagsFromCertificateRequestRequestTypeDef](#removetagsfromcertificaterequestrequesttypedef)
+  - [RenewCertificateRequestRequestTypeDef](#renewcertificaterequestrequesttypedef)
   - [RenewalSummaryTypeDef](#renewalsummarytypedef)
-  - [RequestCertificateRequestTypeDef](#requestcertificaterequesttypedef)
-  - [RequestCertificateResponseResponseTypeDef](#requestcertificateresponseresponsetypedef)
-  - [ResendValidationEmailRequestTypeDef](#resendvalidationemailrequesttypedef)
+  - [RequestCertificateRequestRequestTypeDef](#requestcertificaterequestrequesttypedef)
+  - [RequestCertificateResponseTypeDef](#requestcertificateresponsetypedef)
+  - [ResendValidationEmailRequestRequestTypeDef](#resendvalidationemailrequestrequesttypedef)
   - [ResourceRecordTypeDef](#resourcerecordtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UpdateCertificateOptionsRequestTypeDef](#updatecertificateoptionsrequesttypedef)
+  - [UpdateCertificateOptionsRequestRequestTypeDef](#updatecertificateoptionsrequestrequesttypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
-## AddTagsToCertificateRequestTypeDef
+## AddTagsToCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm.type_defs import AddTagsToCertificateRequestTypeDef
+from mypy_boto3_acm.type_defs import AddTagsToCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -120,30 +120,30 @@ Optional fields:
 - `CertificateArn`: `str`
 - `DomainName`: `str`
 
-## DeleteCertificateRequestTypeDef
+## DeleteCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm.type_defs import DeleteCertificateRequestTypeDef
+from mypy_boto3_acm.type_defs import DeleteCertificateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `CertificateArn`: `str`
 
-## DescribeCertificateRequestTypeDef
+## DescribeCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm.type_defs import DescribeCertificateRequestTypeDef
+from mypy_boto3_acm.type_defs import DescribeCertificateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `CertificateArn`: `str`
 
-## DescribeCertificateResponseResponseTypeDef
+## DescribeCertificateResponseTypeDef
 
 ```python
-from mypy_boto3_acm.type_defs import DescribeCertificateResponseResponseTypeDef
+from mypy_boto3_acm.type_defs import DescribeCertificateResponseTypeDef
 ```
 
 Required fields:
@@ -194,10 +194,10 @@ Optional fields:
 
 - `DaysBeforeExpiry`: `int`
 
-## ExportCertificateRequestTypeDef
+## ExportCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm.type_defs import ExportCertificateRequestTypeDef
+from mypy_boto3_acm.type_defs import ExportCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -205,10 +205,10 @@ Required fields:
 - `CertificateArn`: `str`
 - `Passphrase`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
-## ExportCertificateResponseResponseTypeDef
+## ExportCertificateResponseTypeDef
 
 ```python
-from mypy_boto3_acm.type_defs import ExportCertificateResponseResponseTypeDef
+from mypy_boto3_acm.type_defs import ExportCertificateResponseTypeDef
 ```
 
 Required fields:
@@ -243,10 +243,10 @@ Optional fields:
 - `keyUsage`: `List`\[[KeyUsageNameType](./literals.md#keyusagenametype)\]
 - `keyTypes`: `List`\[[KeyAlgorithmType](./literals.md#keyalgorithmtype)\]
 
-## GetAccountConfigurationResponseResponseTypeDef
+## GetAccountConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_acm.type_defs import GetAccountConfigurationResponseResponseTypeDef
+from mypy_boto3_acm.type_defs import GetAccountConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -256,20 +256,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCertificateRequestTypeDef
+## GetCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm.type_defs import GetCertificateRequestTypeDef
+from mypy_boto3_acm.type_defs import GetCertificateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `CertificateArn`: `str`
 
-## GetCertificateResponseResponseTypeDef
+## GetCertificateResponseTypeDef
 
 ```python
-from mypy_boto3_acm.type_defs import GetCertificateResponseResponseTypeDef
+from mypy_boto3_acm.type_defs import GetCertificateResponseTypeDef
 ```
 
 Required fields:
@@ -279,10 +279,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ImportCertificateRequestTypeDef
+## ImportCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm.type_defs import ImportCertificateRequestTypeDef
+from mypy_boto3_acm.type_defs import ImportCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -296,10 +296,10 @@ Optional fields:
 - `CertificateChain`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## ImportCertificateResponseResponseTypeDef
+## ImportCertificateResponseTypeDef
 
 ```python
-from mypy_boto3_acm.type_defs import ImportCertificateResponseResponseTypeDef
+from mypy_boto3_acm.type_defs import ImportCertificateResponseTypeDef
 ```
 
 Required fields:
@@ -318,10 +318,10 @@ Optional fields:
 
 - `Name`: [KeyUsageNameType](./literals.md#keyusagenametype)
 
-## ListCertificatesRequestTypeDef
+## ListCertificatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm.type_defs import ListCertificatesRequestTypeDef
+from mypy_boto3_acm.type_defs import ListCertificatesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -332,10 +332,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxItems`: `int`
 
-## ListCertificatesResponseResponseTypeDef
+## ListCertificatesResponseTypeDef
 
 ```python
-from mypy_boto3_acm.type_defs import ListCertificatesResponseResponseTypeDef
+from mypy_boto3_acm.type_defs import ListCertificatesResponseTypeDef
 ```
 
 Required fields:
@@ -346,20 +346,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForCertificateRequestTypeDef
+## ListTagsForCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm.type_defs import ListTagsForCertificateRequestTypeDef
+from mypy_boto3_acm.type_defs import ListTagsForCertificateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `CertificateArn`: `str`
 
-## ListTagsForCertificateResponseResponseTypeDef
+## ListTagsForCertificateResponseTypeDef
 
 ```python
-from mypy_boto3_acm.type_defs import ListTagsForCertificateResponseResponseTypeDef
+from mypy_boto3_acm.type_defs import ListTagsForCertificateResponseTypeDef
 ```
 
 Required fields:
@@ -380,10 +380,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PutAccountConfigurationRequestTypeDef
+## PutAccountConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm.type_defs import PutAccountConfigurationRequestTypeDef
+from mypy_boto3_acm.type_defs import PutAccountConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -395,10 +395,10 @@ Optional fields:
 - `ExpiryEvents`:
   [ExpiryEventsConfigurationTypeDef](./type_defs.md#expiryeventsconfigurationtypedef)
 
-## RemoveTagsFromCertificateRequestTypeDef
+## RemoveTagsFromCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm.type_defs import RemoveTagsFromCertificateRequestTypeDef
+from mypy_boto3_acm.type_defs import RemoveTagsFromCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -406,10 +406,10 @@ Required fields:
 - `CertificateArn`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## RenewCertificateRequestTypeDef
+## RenewCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm.type_defs import RenewCertificateRequestTypeDef
+from mypy_boto3_acm.type_defs import RenewCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -433,10 +433,10 @@ Optional fields:
 
 - `RenewalStatusReason`: [FailureReasonType](./literals.md#failurereasontype)
 
-## RequestCertificateRequestTypeDef
+## RequestCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm.type_defs import RequestCertificateRequestTypeDef
+from mypy_boto3_acm.type_defs import RequestCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -456,10 +456,10 @@ Optional fields:
 - `CertificateAuthorityArn`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## RequestCertificateResponseResponseTypeDef
+## RequestCertificateResponseTypeDef
 
 ```python
-from mypy_boto3_acm.type_defs import RequestCertificateResponseResponseTypeDef
+from mypy_boto3_acm.type_defs import RequestCertificateResponseTypeDef
 ```
 
 Required fields:
@@ -468,10 +468,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ResendValidationEmailRequestTypeDef
+## ResendValidationEmailRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm.type_defs import ResendValidationEmailRequestTypeDef
+from mypy_boto3_acm.type_defs import ResendValidationEmailRequestRequestTypeDef
 ```
 
 Required fields:
@@ -521,10 +521,10 @@ Optional fields:
 
 - `Value`: `str`
 
-## UpdateCertificateOptionsRequestTypeDef
+## UpdateCertificateOptionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm.type_defs import UpdateCertificateOptionsRequestTypeDef
+from mypy_boto3_acm.type_defs import UpdateCertificateOptionsRequestRequestTypeDef
 ```
 
 Required fields:

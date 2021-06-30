@@ -11,6 +11,7 @@ type annotations stubs module
   - [RedshiftDataAPIServiceClient](#redshiftdataapiserviceclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [cancel_statement](#cancel_statement)
     - [describe_statement](#describe_statement)
@@ -63,6 +64,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+RedshiftDataAPIServiceClient exceptions.
+
+Type annotations for `boto3.client("redshift-data").exceptions` method.
+
+Boto3 documentation:
+[RedshiftDataAPIService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -88,14 +100,14 @@ Boto3 documentation:
 [RedshiftDataAPIService.Client.cancel_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.cancel_statement)
 
 Arguments mapping described in
-[CancelStatementRequestTypeDef](./type_defs.md#cancelstatementrequesttypedef).
+[CancelStatementRequestRequestTypeDef](./type_defs.md#cancelstatementrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[CancelStatementResponseResponseTypeDef](./type_defs.md#cancelstatementresponseresponsetypedef).
+[CancelStatementResponseTypeDef](./type_defs.md#cancelstatementresponsetypedef).
 
 ### describe_statement
 
@@ -108,14 +120,14 @@ Boto3 documentation:
 [RedshiftDataAPIService.Client.describe_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.describe_statement)
 
 Arguments mapping described in
-[DescribeStatementRequestTypeDef](./type_defs.md#describestatementrequesttypedef).
+[DescribeStatementRequestRequestTypeDef](./type_defs.md#describestatementrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeStatementResponseResponseTypeDef](./type_defs.md#describestatementresponseresponsetypedef).
+[DescribeStatementResponseTypeDef](./type_defs.md#describestatementresponsetypedef).
 
 ### describe_table
 
@@ -127,7 +139,7 @@ Boto3 documentation:
 [RedshiftDataAPIService.Client.describe_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.describe_table)
 
 Arguments mapping described in
-[DescribeTableRequestTypeDef](./type_defs.md#describetablerequesttypedef).
+[DescribeTableRequestRequestTypeDef](./type_defs.md#describetablerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -142,7 +154,7 @@ Keyword-only arguments:
 - `Table`: `str`
 
 Returns
-[DescribeTableResponseResponseTypeDef](./type_defs.md#describetableresponseresponsetypedef).
+[DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef).
 
 ### execute_statement
 
@@ -155,7 +167,7 @@ Boto3 documentation:
 [RedshiftDataAPIService.Client.execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.execute_statement)
 
 Arguments mapping described in
-[ExecuteStatementInputTypeDef](./type_defs.md#executestatementinputtypedef).
+[ExecuteStatementInputRequestTypeDef](./type_defs.md#executestatementinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -170,7 +182,7 @@ Keyword-only arguments:
 - `WithEvent`: `bool`
 
 Returns
-[ExecuteStatementOutputResponseTypeDef](./type_defs.md#executestatementoutputresponsetypedef).
+[ExecuteStatementOutputTypeDef](./type_defs.md#executestatementoutputtypedef).
 
 ### generate_presigned_url
 
@@ -202,7 +214,7 @@ Boto3 documentation:
 [RedshiftDataAPIService.Client.get_statement_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.get_statement_result)
 
 Arguments mapping described in
-[GetStatementResultRequestTypeDef](./type_defs.md#getstatementresultrequesttypedef).
+[GetStatementResultRequestRequestTypeDef](./type_defs.md#getstatementresultrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -210,7 +222,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetStatementResultResponseResponseTypeDef](./type_defs.md#getstatementresultresponseresponsetypedef).
+[GetStatementResultResponseTypeDef](./type_defs.md#getstatementresultresponsetypedef).
 
 ### list_databases
 
@@ -222,7 +234,7 @@ Boto3 documentation:
 [RedshiftDataAPIService.Client.list_databases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_databases)
 
 Arguments mapping described in
-[ListDatabasesRequestTypeDef](./type_defs.md#listdatabasesrequesttypedef).
+[ListDatabasesRequestRequestTypeDef](./type_defs.md#listdatabasesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -234,7 +246,7 @@ Keyword-only arguments:
 - `SecretArn`: `str`
 
 Returns
-[ListDatabasesResponseResponseTypeDef](./type_defs.md#listdatabasesresponseresponsetypedef).
+[ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef).
 
 ### list_schemas
 
@@ -246,7 +258,7 @@ Boto3 documentation:
 [RedshiftDataAPIService.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_schemas)
 
 Arguments mapping described in
-[ListSchemasRequestTypeDef](./type_defs.md#listschemasrequesttypedef).
+[ListSchemasRequestRequestTypeDef](./type_defs.md#listschemasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -260,7 +272,7 @@ Keyword-only arguments:
 - `SecretArn`: `str`
 
 Returns
-[ListSchemasResponseResponseTypeDef](./type_defs.md#listschemasresponseresponsetypedef).
+[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef).
 
 ### list_statements
 
@@ -272,7 +284,7 @@ Boto3 documentation:
 [RedshiftDataAPIService.Client.list_statements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_statements)
 
 Arguments mapping described in
-[ListStatementsRequestTypeDef](./type_defs.md#liststatementsrequesttypedef).
+[ListStatementsRequestRequestTypeDef](./type_defs.md#liststatementsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -283,7 +295,7 @@ Keyword-only arguments:
 - `Status`: [StatusStringType](./literals.md#statusstringtype)
 
 Returns
-[ListStatementsResponseResponseTypeDef](./type_defs.md#liststatementsresponseresponsetypedef).
+[ListStatementsResponseTypeDef](./type_defs.md#liststatementsresponsetypedef).
 
 ### list_tables
 
@@ -295,7 +307,7 @@ Boto3 documentation:
 [RedshiftDataAPIService.Client.list_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_tables)
 
 Arguments mapping described in
-[ListTablesRequestTypeDef](./type_defs.md#listtablesrequesttypedef).
+[ListTablesRequestRequestTypeDef](./type_defs.md#listtablesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -309,8 +321,7 @@ Keyword-only arguments:
 - `SecretArn`: `str`
 - `TablePattern`: `str`
 
-Returns
-[ListTablesResponseResponseTypeDef](./type_defs.md#listtablesresponseresponsetypedef).
+Returns [ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef).
 
 ### get_paginator
 

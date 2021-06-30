@@ -8,23 +8,23 @@ type annotations stubs module
 [mypy_boto3_iot_jobs_data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
 
 - [Typed dictionaries for boto3 IoTJobsDataPlane module](#typed-dictionaries-for-boto3-iotjobsdataplane-module)
-  - [DescribeJobExecutionRequestTypeDef](#describejobexecutionrequesttypedef)
-  - [DescribeJobExecutionResponseResponseTypeDef](#describejobexecutionresponseresponsetypedef)
-  - [GetPendingJobExecutionsRequestTypeDef](#getpendingjobexecutionsrequesttypedef)
-  - [GetPendingJobExecutionsResponseResponseTypeDef](#getpendingjobexecutionsresponseresponsetypedef)
+  - [DescribeJobExecutionRequestRequestTypeDef](#describejobexecutionrequestrequesttypedef)
+  - [DescribeJobExecutionResponseTypeDef](#describejobexecutionresponsetypedef)
+  - [GetPendingJobExecutionsRequestRequestTypeDef](#getpendingjobexecutionsrequestrequesttypedef)
+  - [GetPendingJobExecutionsResponseTypeDef](#getpendingjobexecutionsresponsetypedef)
   - [JobExecutionStateTypeDef](#jobexecutionstatetypedef)
   - [JobExecutionSummaryTypeDef](#jobexecutionsummarytypedef)
   - [JobExecutionTypeDef](#jobexecutiontypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartNextPendingJobExecutionRequestTypeDef](#startnextpendingjobexecutionrequesttypedef)
-  - [StartNextPendingJobExecutionResponseResponseTypeDef](#startnextpendingjobexecutionresponseresponsetypedef)
-  - [UpdateJobExecutionRequestTypeDef](#updatejobexecutionrequesttypedef)
-  - [UpdateJobExecutionResponseResponseTypeDef](#updatejobexecutionresponseresponsetypedef)
+  - [StartNextPendingJobExecutionRequestRequestTypeDef](#startnextpendingjobexecutionrequestrequesttypedef)
+  - [StartNextPendingJobExecutionResponseTypeDef](#startnextpendingjobexecutionresponsetypedef)
+  - [UpdateJobExecutionRequestRequestTypeDef](#updatejobexecutionrequestrequesttypedef)
+  - [UpdateJobExecutionResponseTypeDef](#updatejobexecutionresponsetypedef)
 
-## DescribeJobExecutionRequestTypeDef
+## DescribeJobExecutionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot_jobs_data.type_defs import DescribeJobExecutionRequestTypeDef
+from mypy_boto3_iot_jobs_data.type_defs import DescribeJobExecutionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -37,10 +37,10 @@ Optional fields:
 - `includeJobDocument`: `bool`
 - `executionNumber`: `int`
 
-## DescribeJobExecutionResponseResponseTypeDef
+## DescribeJobExecutionResponseTypeDef
 
 ```python
-from mypy_boto3_iot_jobs_data.type_defs import DescribeJobExecutionResponseResponseTypeDef
+from mypy_boto3_iot_jobs_data.type_defs import DescribeJobExecutionResponseTypeDef
 ```
 
 Required fields:
@@ -49,20 +49,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPendingJobExecutionsRequestTypeDef
+## GetPendingJobExecutionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot_jobs_data.type_defs import GetPendingJobExecutionsRequestTypeDef
+from mypy_boto3_iot_jobs_data.type_defs import GetPendingJobExecutionsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `thingName`: `str`
 
-## GetPendingJobExecutionsResponseResponseTypeDef
+## GetPendingJobExecutionsResponseTypeDef
 
 ```python
-from mypy_boto3_iot_jobs_data.type_defs import GetPendingJobExecutionsResponseResponseTypeDef
+from mypy_boto3_iot_jobs_data.type_defs import GetPendingJobExecutionsResponseTypeDef
 ```
 
 Required fields:
@@ -135,10 +135,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## StartNextPendingJobExecutionRequestTypeDef
+## StartNextPendingJobExecutionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot_jobs_data.type_defs import StartNextPendingJobExecutionRequestTypeDef
+from mypy_boto3_iot_jobs_data.type_defs import StartNextPendingJobExecutionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -150,10 +150,10 @@ Optional fields:
 - `statusDetails`: `Dict`\[`str`, `str`\]
 - `stepTimeoutInMinutes`: `int`
 
-## StartNextPendingJobExecutionResponseResponseTypeDef
+## StartNextPendingJobExecutionResponseTypeDef
 
 ```python
-from mypy_boto3_iot_jobs_data.type_defs import StartNextPendingJobExecutionResponseResponseTypeDef
+from mypy_boto3_iot_jobs_data.type_defs import StartNextPendingJobExecutionResponseTypeDef
 ```
 
 Required fields:
@@ -162,10 +162,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateJobExecutionRequestTypeDef
+## UpdateJobExecutionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot_jobs_data.type_defs import UpdateJobExecutionRequestTypeDef
+from mypy_boto3_iot_jobs_data.type_defs import UpdateJobExecutionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -183,10 +183,10 @@ Optional fields:
 - `includeJobDocument`: `bool`
 - `executionNumber`: `int`
 
-## UpdateJobExecutionResponseResponseTypeDef
+## UpdateJobExecutionResponseTypeDef
 
 ```python
-from mypy_boto3_iot_jobs_data.type_defs import UpdateJobExecutionResponseResponseTypeDef
+from mypy_boto3_iot_jobs_data.type_defs import UpdateJobExecutionResponseTypeDef
 ```
 
 Required fields:

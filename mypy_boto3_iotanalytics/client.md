@@ -11,6 +11,7 @@ type annotations stubs module
   - [IoTAnalyticsClient](#iotanalyticsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [batch_put_message](#batch_put_message)
     - [can_paginate](#can_paginate)
     - [cancel_pipeline_reprocessing](#cancel_pipeline_reprocessing)
@@ -90,6 +91,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+IoTAnalyticsClient exceptions.
+
+Type annotations for `boto3.client("iotanalytics").exceptions` method.
+
+Boto3 documentation:
+[IoTAnalytics.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### batch_put_message
 
 Sends messages to a channel.
@@ -100,7 +112,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.batch_put_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.batch_put_message)
 
 Arguments mapping described in
-[BatchPutMessageRequestTypeDef](./type_defs.md#batchputmessagerequesttypedef).
+[BatchPutMessageRequestRequestTypeDef](./type_defs.md#batchputmessagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -109,7 +121,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchPutMessageResponseResponseTypeDef](./type_defs.md#batchputmessageresponseresponsetypedef).
+[BatchPutMessageResponseTypeDef](./type_defs.md#batchputmessageresponsetypedef).
 
 ### can_paginate
 
@@ -137,7 +149,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.cancel_pipeline_reprocessing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.cancel_pipeline_reprocessing)
 
 Arguments mapping described in
-[CancelPipelineReprocessingRequestTypeDef](./type_defs.md#cancelpipelinereprocessingrequesttypedef).
+[CancelPipelineReprocessingRequestRequestTypeDef](./type_defs.md#cancelpipelinereprocessingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -156,7 +168,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.create_channel)
 
 Arguments mapping described in
-[CreateChannelRequestTypeDef](./type_defs.md#createchannelrequesttypedef).
+[CreateChannelRequestRequestTypeDef](./type_defs.md#createchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -168,7 +180,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateChannelResponseResponseTypeDef](./type_defs.md#createchannelresponseresponsetypedef).
+[CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
 
 ### create_dataset
 
@@ -180,7 +192,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.create_dataset)
 
 Arguments mapping described in
-[CreateDatasetRequestTypeDef](./type_defs.md#createdatasetrequesttypedef).
+[CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -201,7 +213,7 @@ Keyword-only arguments:
   `List`\[[LateDataRuleTypeDef](./type_defs.md#latedataruletypedef)\]
 
 Returns
-[CreateDatasetResponseResponseTypeDef](./type_defs.md#createdatasetresponseresponsetypedef).
+[CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
 ### create_dataset_content
 
@@ -215,7 +227,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.create_dataset_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.create_dataset_content)
 
 Arguments mapping described in
-[CreateDatasetContentRequestTypeDef](./type_defs.md#createdatasetcontentrequesttypedef).
+[CreateDatasetContentRequestRequestTypeDef](./type_defs.md#createdatasetcontentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -223,7 +235,7 @@ Keyword-only arguments:
 - `versionId`: `str`
 
 Returns
-[CreateDatasetContentResponseResponseTypeDef](./type_defs.md#createdatasetcontentresponseresponsetypedef).
+[CreateDatasetContentResponseTypeDef](./type_defs.md#createdatasetcontentresponsetypedef).
 
 ### create_datastore
 
@@ -235,7 +247,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.create_datastore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.create_datastore)
 
 Arguments mapping described in
-[CreateDatastoreRequestTypeDef](./type_defs.md#createdatastorerequesttypedef).
+[CreateDatastoreRequestRequestTypeDef](./type_defs.md#createdatastorerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -251,7 +263,7 @@ Keyword-only arguments:
   [DatastorePartitionsTypeDef](./type_defs.md#datastorepartitionstypedef)
 
 Returns
-[CreateDatastoreResponseResponseTypeDef](./type_defs.md#createdatastoreresponseresponsetypedef).
+[CreateDatastoreResponseTypeDef](./type_defs.md#createdatastoreresponsetypedef).
 
 ### create_pipeline
 
@@ -263,7 +275,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.create_pipeline)
 
 Arguments mapping described in
-[CreatePipelineRequestTypeDef](./type_defs.md#createpipelinerequesttypedef).
+[CreatePipelineRequestRequestTypeDef](./type_defs.md#createpipelinerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -274,7 +286,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreatePipelineResponseResponseTypeDef](./type_defs.md#createpipelineresponseresponsetypedef).
+[CreatePipelineResponseTypeDef](./type_defs.md#createpipelineresponsetypedef).
 
 ### delete_channel
 
@@ -286,7 +298,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.delete_channel)
 
 Arguments mapping described in
-[DeleteChannelRequestTypeDef](./type_defs.md#deletechannelrequesttypedef).
+[DeleteChannelRequestRequestTypeDef](./type_defs.md#deletechannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -302,7 +314,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.delete_dataset)
 
 Arguments mapping described in
-[DeleteDatasetRequestTypeDef](./type_defs.md#deletedatasetrequesttypedef).
+[DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -319,7 +331,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.delete_dataset_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.delete_dataset_content)
 
 Arguments mapping described in
-[DeleteDatasetContentRequestTypeDef](./type_defs.md#deletedatasetcontentrequesttypedef).
+[DeleteDatasetContentRequestRequestTypeDef](./type_defs.md#deletedatasetcontentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -336,7 +348,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.delete_datastore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.delete_datastore)
 
 Arguments mapping described in
-[DeleteDatastoreRequestTypeDef](./type_defs.md#deletedatastorerequesttypedef).
+[DeleteDatastoreRequestRequestTypeDef](./type_defs.md#deletedatastorerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -352,7 +364,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.delete_pipeline)
 
 Arguments mapping described in
-[DeletePipelineRequestTypeDef](./type_defs.md#deletepipelinerequesttypedef).
+[DeletePipelineRequestRequestTypeDef](./type_defs.md#deletepipelinerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -368,7 +380,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.describe_channel)
 
 Arguments mapping described in
-[DescribeChannelRequestTypeDef](./type_defs.md#describechannelrequesttypedef).
+[DescribeChannelRequestRequestTypeDef](./type_defs.md#describechannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -376,7 +388,7 @@ Keyword-only arguments:
 - `includeStatistics`: `bool`
 
 Returns
-[DescribeChannelResponseResponseTypeDef](./type_defs.md#describechannelresponseresponsetypedef).
+[DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
 
 ### describe_dataset
 
@@ -388,14 +400,14 @@ Boto3 documentation:
 [IoTAnalytics.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.describe_dataset)
 
 Arguments mapping described in
-[DescribeDatasetRequestTypeDef](./type_defs.md#describedatasetrequesttypedef).
+[DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `datasetName`: `str` *(required)*
 
 Returns
-[DescribeDatasetResponseResponseTypeDef](./type_defs.md#describedatasetresponseresponsetypedef).
+[DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
 
 ### describe_datastore
 
@@ -407,7 +419,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.describe_datastore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.describe_datastore)
 
 Arguments mapping described in
-[DescribeDatastoreRequestTypeDef](./type_defs.md#describedatastorerequesttypedef).
+[DescribeDatastoreRequestRequestTypeDef](./type_defs.md#describedatastorerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -415,7 +427,7 @@ Keyword-only arguments:
 - `includeStatistics`: `bool`
 
 Returns
-[DescribeDatastoreResponseResponseTypeDef](./type_defs.md#describedatastoreresponseresponsetypedef).
+[DescribeDatastoreResponseTypeDef](./type_defs.md#describedatastoreresponsetypedef).
 
 ### describe_logging_options
 
@@ -428,7 +440,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.describe_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.describe_logging_options)
 
 Returns
-[DescribeLoggingOptionsResponseResponseTypeDef](./type_defs.md#describeloggingoptionsresponseresponsetypedef).
+[DescribeLoggingOptionsResponseTypeDef](./type_defs.md#describeloggingoptionsresponsetypedef).
 
 ### describe_pipeline
 
@@ -440,14 +452,14 @@ Boto3 documentation:
 [IoTAnalytics.Client.describe_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.describe_pipeline)
 
 Arguments mapping described in
-[DescribePipelineRequestTypeDef](./type_defs.md#describepipelinerequesttypedef).
+[DescribePipelineRequestRequestTypeDef](./type_defs.md#describepipelinerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `pipelineName`: `str` *(required)*
 
 Returns
-[DescribePipelineResponseResponseTypeDef](./type_defs.md#describepipelineresponseresponsetypedef).
+[DescribePipelineResponseTypeDef](./type_defs.md#describepipelineresponsetypedef).
 
 ### generate_presigned_url
 
@@ -478,7 +490,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.get_dataset_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.get_dataset_content)
 
 Arguments mapping described in
-[GetDatasetContentRequestTypeDef](./type_defs.md#getdatasetcontentrequesttypedef).
+[GetDatasetContentRequestRequestTypeDef](./type_defs.md#getdatasetcontentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -486,7 +498,7 @@ Keyword-only arguments:
 - `versionId`: `str`
 
 Returns
-[GetDatasetContentResponseResponseTypeDef](./type_defs.md#getdatasetcontentresponseresponsetypedef).
+[GetDatasetContentResponseTypeDef](./type_defs.md#getdatasetcontentresponsetypedef).
 
 ### list_channels
 
@@ -498,7 +510,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.list_channels)
 
 Arguments mapping described in
-[ListChannelsRequestTypeDef](./type_defs.md#listchannelsrequesttypedef).
+[ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -506,7 +518,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListChannelsResponseResponseTypeDef](./type_defs.md#listchannelsresponseresponsetypedef).
+[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
 
 ### list_dataset_contents
 
@@ -519,7 +531,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.list_dataset_contents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.list_dataset_contents)
 
 Arguments mapping described in
-[ListDatasetContentsRequestTypeDef](./type_defs.md#listdatasetcontentsrequesttypedef).
+[ListDatasetContentsRequestRequestTypeDef](./type_defs.md#listdatasetcontentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -530,7 +542,7 @@ Keyword-only arguments:
 - `scheduledBefore`: `Union`\[`datetime`, `str`\]
 
 Returns
-[ListDatasetContentsResponseResponseTypeDef](./type_defs.md#listdatasetcontentsresponseresponsetypedef).
+[ListDatasetContentsResponseTypeDef](./type_defs.md#listdatasetcontentsresponsetypedef).
 
 ### list_datasets
 
@@ -542,7 +554,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.list_datasets)
 
 Arguments mapping described in
-[ListDatasetsRequestTypeDef](./type_defs.md#listdatasetsrequesttypedef).
+[ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -550,7 +562,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDatasetsResponseResponseTypeDef](./type_defs.md#listdatasetsresponseresponsetypedef).
+[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
 
 ### list_datastores
 
@@ -562,7 +574,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.list_datastores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.list_datastores)
 
 Arguments mapping described in
-[ListDatastoresRequestTypeDef](./type_defs.md#listdatastoresrequesttypedef).
+[ListDatastoresRequestRequestTypeDef](./type_defs.md#listdatastoresrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -570,7 +582,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDatastoresResponseResponseTypeDef](./type_defs.md#listdatastoresresponseresponsetypedef).
+[ListDatastoresResponseTypeDef](./type_defs.md#listdatastoresresponsetypedef).
 
 ### list_pipelines
 
@@ -582,7 +594,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.list_pipelines)
 
 Arguments mapping described in
-[ListPipelinesRequestTypeDef](./type_defs.md#listpipelinesrequesttypedef).
+[ListPipelinesRequestRequestTypeDef](./type_defs.md#listpipelinesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -590,7 +602,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListPipelinesResponseResponseTypeDef](./type_defs.md#listpipelinesresponseresponsetypedef).
+[ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -603,14 +615,14 @@ Boto3 documentation:
 [IoTAnalytics.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_logging_options
 
@@ -622,7 +634,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.put_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.put_logging_options)
 
 Arguments mapping described in
-[PutLoggingOptionsRequestTypeDef](./type_defs.md#putloggingoptionsrequesttypedef).
+[PutLoggingOptionsRequestRequestTypeDef](./type_defs.md#putloggingoptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -640,7 +652,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.run_pipeline_activity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.run_pipeline_activity)
 
 Arguments mapping described in
-[RunPipelineActivityRequestTypeDef](./type_defs.md#runpipelineactivityrequesttypedef).
+[RunPipelineActivityRequestRequestTypeDef](./type_defs.md#runpipelineactivityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -651,7 +663,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[RunPipelineActivityResponseResponseTypeDef](./type_defs.md#runpipelineactivityresponseresponsetypedef).
+[RunPipelineActivityResponseTypeDef](./type_defs.md#runpipelineactivityresponsetypedef).
 
 ### sample_channel_data
 
@@ -664,7 +676,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.sample_channel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.sample_channel_data)
 
 Arguments mapping described in
-[SampleChannelDataRequestTypeDef](./type_defs.md#samplechanneldatarequesttypedef).
+[SampleChannelDataRequestRequestTypeDef](./type_defs.md#samplechanneldatarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -674,7 +686,7 @@ Keyword-only arguments:
 - `endTime`: `Union`\[`datetime`, `str`\]
 
 Returns
-[SampleChannelDataResponseResponseTypeDef](./type_defs.md#samplechanneldataresponseresponsetypedef).
+[SampleChannelDataResponseTypeDef](./type_defs.md#samplechanneldataresponsetypedef).
 
 ### start_pipeline_reprocessing
 
@@ -687,7 +699,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.start_pipeline_reprocessing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.start_pipeline_reprocessing)
 
 Arguments mapping described in
-[StartPipelineReprocessingRequestTypeDef](./type_defs.md#startpipelinereprocessingrequesttypedef).
+[StartPipelineReprocessingRequestRequestTypeDef](./type_defs.md#startpipelinereprocessingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -698,7 +710,7 @@ Keyword-only arguments:
   [ChannelMessagesTypeDef](./type_defs.md#channelmessagestypedef)
 
 Returns
-[StartPipelineReprocessingResponseResponseTypeDef](./type_defs.md#startpipelinereprocessingresponseresponsetypedef).
+[StartPipelineReprocessingResponseTypeDef](./type_defs.md#startpipelinereprocessingresponsetypedef).
 
 ### tag_resource
 
@@ -710,7 +722,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -729,7 +741,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -748,7 +760,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.update_channel)
 
 Arguments mapping described in
-[UpdateChannelRequestTypeDef](./type_defs.md#updatechannelrequesttypedef).
+[UpdateChannelRequestRequestTypeDef](./type_defs.md#updatechannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -768,7 +780,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.update_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.update_dataset)
 
 Arguments mapping described in
-[UpdateDatasetRequestTypeDef](./type_defs.md#updatedatasetrequesttypedef).
+[UpdateDatasetRequestRequestTypeDef](./type_defs.md#updatedatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -797,7 +809,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.update_datastore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.update_datastore)
 
 Arguments mapping described in
-[UpdateDatastoreRequestTypeDef](./type_defs.md#updatedatastorerequesttypedef).
+[UpdateDatastoreRequestRequestTypeDef](./type_defs.md#updatedatastorerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -819,7 +831,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.update_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.update_pipeline)
 
 Arguments mapping described in
-[UpdatePipelineRequestTypeDef](./type_defs.md#updatepipelinerequesttypedef).
+[UpdatePipelineRequestRequestTypeDef](./type_defs.md#updatepipelinerequestrequesttypedef).
 
 Keyword-only arguments:
 

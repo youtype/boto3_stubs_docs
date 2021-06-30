@@ -13,7 +13,7 @@ type annotations stubs module
   - [AccelerationSettingsTypeDef](#accelerationsettingstypedef)
   - [AiffSettingsTypeDef](#aiffsettingstypedef)
   - [AncillarySourceSettingsTypeDef](#ancillarysourcesettingstypedef)
-  - [AssociateCertificateRequestTypeDef](#associatecertificaterequesttypedef)
+  - [AssociateCertificateRequestRequestTypeDef](#associatecertificaterequestrequesttypedef)
   - [AudioChannelTaggingSettingsTypeDef](#audiochanneltaggingsettingstypedef)
   - [AudioCodecSettingsTypeDef](#audiocodecsettingstypedef)
   - [AudioDescriptionTypeDef](#audiodescriptiontypedef)
@@ -28,7 +28,7 @@ type annotations stubs module
   - [AvcIntraSettingsTypeDef](#avcintrasettingstypedef)
   - [AvcIntraUhdSettingsTypeDef](#avcintrauhdsettingstypedef)
   - [BurninDestinationSettingsTypeDef](#burnindestinationsettingstypedef)
-  - [CancelJobRequestTypeDef](#canceljobrequesttypedef)
+  - [CancelJobRequestRequestTypeDef](#canceljobrequestrequesttypedef)
   - [CaptionDescriptionPresetTypeDef](#captiondescriptionpresettypedef)
   - [CaptionDescriptionTypeDef](#captiondescriptiontypedef)
   - [CaptionDestinationSettingsTypeDef](#captiondestinationsettingstypedef)
@@ -42,25 +42,25 @@ type annotations stubs module
   - [CmfcSettingsTypeDef](#cmfcsettingstypedef)
   - [ColorCorrectorTypeDef](#colorcorrectortypedef)
   - [ContainerSettingsTypeDef](#containersettingstypedef)
-  - [CreateJobRequestTypeDef](#createjobrequesttypedef)
-  - [CreateJobResponseResponseTypeDef](#createjobresponseresponsetypedef)
-  - [CreateJobTemplateRequestTypeDef](#createjobtemplaterequesttypedef)
-  - [CreateJobTemplateResponseResponseTypeDef](#createjobtemplateresponseresponsetypedef)
-  - [CreatePresetRequestTypeDef](#createpresetrequesttypedef)
-  - [CreatePresetResponseResponseTypeDef](#createpresetresponseresponsetypedef)
-  - [CreateQueueRequestTypeDef](#createqueuerequesttypedef)
-  - [CreateQueueResponseResponseTypeDef](#createqueueresponseresponsetypedef)
+  - [CreateJobRequestRequestTypeDef](#createjobrequestrequesttypedef)
+  - [CreateJobResponseTypeDef](#createjobresponsetypedef)
+  - [CreateJobTemplateRequestRequestTypeDef](#createjobtemplaterequestrequesttypedef)
+  - [CreateJobTemplateResponseTypeDef](#createjobtemplateresponsetypedef)
+  - [CreatePresetRequestRequestTypeDef](#createpresetrequestrequesttypedef)
+  - [CreatePresetResponseTypeDef](#createpresetresponsetypedef)
+  - [CreateQueueRequestRequestTypeDef](#createqueuerequestrequesttypedef)
+  - [CreateQueueResponseTypeDef](#createqueueresponsetypedef)
   - [DashAdditionalManifestTypeDef](#dashadditionalmanifesttypedef)
   - [DashIsoEncryptionSettingsTypeDef](#dashisoencryptionsettingstypedef)
   - [DashIsoGroupSettingsTypeDef](#dashisogroupsettingstypedef)
   - [DeinterlacerTypeDef](#deinterlacertypedef)
-  - [DeleteJobTemplateRequestTypeDef](#deletejobtemplaterequesttypedef)
-  - [DeletePresetRequestTypeDef](#deletepresetrequesttypedef)
-  - [DeleteQueueRequestTypeDef](#deletequeuerequesttypedef)
-  - [DescribeEndpointsRequestTypeDef](#describeendpointsrequesttypedef)
-  - [DescribeEndpointsResponseResponseTypeDef](#describeendpointsresponseresponsetypedef)
+  - [DeleteJobTemplateRequestRequestTypeDef](#deletejobtemplaterequestrequesttypedef)
+  - [DeletePresetRequestRequestTypeDef](#deletepresetrequestrequesttypedef)
+  - [DeleteQueueRequestRequestTypeDef](#deletequeuerequestrequesttypedef)
+  - [DescribeEndpointsRequestRequestTypeDef](#describeendpointsrequestrequesttypedef)
+  - [DescribeEndpointsResponseTypeDef](#describeendpointsresponsetypedef)
   - [DestinationSettingsTypeDef](#destinationsettingstypedef)
-  - [DisassociateCertificateRequestTypeDef](#disassociatecertificaterequesttypedef)
+  - [DisassociateCertificateRequestRequestTypeDef](#disassociatecertificaterequestrequesttypedef)
   - [DolbyVisionLevel6MetadataTypeDef](#dolbyvisionlevel6metadatatypedef)
   - [DolbyVisionTypeDef](#dolbyvisiontypedef)
   - [DvbNitSettingsTypeDef](#dvbnitsettingstypedef)
@@ -80,14 +80,14 @@ type annotations stubs module
   - [FileGroupSettingsTypeDef](#filegroupsettingstypedef)
   - [FileSourceSettingsTypeDef](#filesourcesettingstypedef)
   - [FrameCaptureSettingsTypeDef](#framecapturesettingstypedef)
-  - [GetJobRequestTypeDef](#getjobrequesttypedef)
-  - [GetJobResponseResponseTypeDef](#getjobresponseresponsetypedef)
-  - [GetJobTemplateRequestTypeDef](#getjobtemplaterequesttypedef)
-  - [GetJobTemplateResponseResponseTypeDef](#getjobtemplateresponseresponsetypedef)
-  - [GetPresetRequestTypeDef](#getpresetrequesttypedef)
-  - [GetPresetResponseResponseTypeDef](#getpresetresponseresponsetypedef)
-  - [GetQueueRequestTypeDef](#getqueuerequesttypedef)
-  - [GetQueueResponseResponseTypeDef](#getqueueresponseresponsetypedef)
+  - [GetJobRequestRequestTypeDef](#getjobrequestrequesttypedef)
+  - [GetJobResponseTypeDef](#getjobresponsetypedef)
+  - [GetJobTemplateRequestRequestTypeDef](#getjobtemplaterequestrequesttypedef)
+  - [GetJobTemplateResponseTypeDef](#getjobtemplateresponsetypedef)
+  - [GetPresetRequestRequestTypeDef](#getpresetrequestrequesttypedef)
+  - [GetPresetResponseTypeDef](#getpresetresponsetypedef)
+  - [GetQueueRequestRequestTypeDef](#getqueuerequestrequesttypedef)
+  - [GetQueueResponseTypeDef](#getqueueresponsetypedef)
   - [H264QvbrSettingsTypeDef](#h264qvbrsettingstypedef)
   - [H264SettingsTypeDef](#h264settingstypedef)
   - [H265QvbrSettingsTypeDef](#h265qvbrsettingstypedef)
@@ -115,16 +115,16 @@ type annotations stubs module
   - [JobTemplateTypeDef](#jobtemplatetypedef)
   - [JobTypeDef](#jobtypedef)
   - [KantarWatermarkSettingsTypeDef](#kantarwatermarksettingstypedef)
-  - [ListJobTemplatesRequestTypeDef](#listjobtemplatesrequesttypedef)
-  - [ListJobTemplatesResponseResponseTypeDef](#listjobtemplatesresponseresponsetypedef)
-  - [ListJobsRequestTypeDef](#listjobsrequesttypedef)
-  - [ListJobsResponseResponseTypeDef](#listjobsresponseresponsetypedef)
-  - [ListPresetsRequestTypeDef](#listpresetsrequesttypedef)
-  - [ListPresetsResponseResponseTypeDef](#listpresetsresponseresponsetypedef)
-  - [ListQueuesRequestTypeDef](#listqueuesrequesttypedef)
-  - [ListQueuesResponseResponseTypeDef](#listqueuesresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListJobTemplatesRequestRequestTypeDef](#listjobtemplatesrequestrequesttypedef)
+  - [ListJobTemplatesResponseTypeDef](#listjobtemplatesresponsetypedef)
+  - [ListJobsRequestRequestTypeDef](#listjobsrequestrequesttypedef)
+  - [ListJobsResponseTypeDef](#listjobsresponsetypedef)
+  - [ListPresetsRequestRequestTypeDef](#listpresetsrequestrequesttypedef)
+  - [ListPresetsResponseTypeDef](#listpresetsresponsetypedef)
+  - [ListQueuesRequestRequestTypeDef](#listqueuesrequestrequesttypedef)
+  - [ListQueuesResponseTypeDef](#listqueuesresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [M2tsScte35EsamTypeDef](#m2tsscte35esamtypedef)
   - [M2tsSettingsTypeDef](#m2tssettingstypedef)
   - [M3u8SettingsTypeDef](#m3u8settingstypedef)
@@ -177,7 +177,7 @@ type annotations stubs module
   - [SpekeKeyProviderCmafTypeDef](#spekekeyprovidercmaftypedef)
   - [SpekeKeyProviderTypeDef](#spekekeyprovidertypedef)
   - [StaticKeyProviderTypeDef](#statickeyprovidertypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TeletextDestinationSettingsTypeDef](#teletextdestinationsettingstypedef)
   - [TeletextSourceSettingsTypeDef](#teletextsourcesettingstypedef)
   - [TimecodeBurninTypeDef](#timecodeburnintypedef)
@@ -186,13 +186,13 @@ type annotations stubs module
   - [TimingTypeDef](#timingtypedef)
   - [TrackSourceSettingsTypeDef](#tracksourcesettingstypedef)
   - [TtmlDestinationSettingsTypeDef](#ttmldestinationsettingstypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateJobTemplateRequestTypeDef](#updatejobtemplaterequesttypedef)
-  - [UpdateJobTemplateResponseResponseTypeDef](#updatejobtemplateresponseresponsetypedef)
-  - [UpdatePresetRequestTypeDef](#updatepresetrequesttypedef)
-  - [UpdatePresetResponseResponseTypeDef](#updatepresetresponseresponsetypedef)
-  - [UpdateQueueRequestTypeDef](#updatequeuerequesttypedef)
-  - [UpdateQueueResponseResponseTypeDef](#updatequeueresponseresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateJobTemplateRequestRequestTypeDef](#updatejobtemplaterequestrequesttypedef)
+  - [UpdateJobTemplateResponseTypeDef](#updatejobtemplateresponsetypedef)
+  - [UpdatePresetRequestRequestTypeDef](#updatepresetrequestrequesttypedef)
+  - [UpdatePresetResponseTypeDef](#updatepresetresponsetypedef)
+  - [UpdateQueueRequestRequestTypeDef](#updatequeuerequestrequesttypedef)
+  - [UpdateQueueResponseTypeDef](#updatequeueresponsetypedef)
   - [Vc3SettingsTypeDef](#vc3settingstypedef)
   - [VideoCodecSettingsTypeDef](#videocodecsettingstypedef)
   - [VideoDescriptionTypeDef](#videodescriptiontypedef)
@@ -291,10 +291,10 @@ Optional fields:
 - `TerminateCaptions`:
   [AncillaryTerminateCaptionsType](./literals.md#ancillaryterminatecaptionstype)
 
-## AssociateCertificateRequestTypeDef
+## AssociateCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import AssociateCertificateRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import AssociateCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -547,10 +547,10 @@ Optional fields:
 - `XPosition`: `int`
 - `YPosition`: `int`
 
-## CancelJobRequestTypeDef
+## CancelJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import CancelJobRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import CancelJobRequestRequestTypeDef
 ```
 
 Required fields:
@@ -801,10 +801,10 @@ Optional fields:
 - `MpdSettings`: [MpdSettingsTypeDef](./type_defs.md#mpdsettingstypedef)
 - `MxfSettings`: [MxfSettingsTypeDef](./type_defs.md#mxfsettingstypedef)
 
-## CreateJobRequestTypeDef
+## CreateJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import CreateJobRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import CreateJobRequestRequestTypeDef
 ```
 
 Required fields:
@@ -831,10 +831,10 @@ Optional fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `UserMetadata`: `Dict`\[`str`, `str`\]
 
-## CreateJobResponseResponseTypeDef
+## CreateJobResponseTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import CreateJobResponseResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import CreateJobResponseTypeDef
 ```
 
 Required fields:
@@ -843,10 +843,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateJobTemplateRequestTypeDef
+## CreateJobTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import CreateJobTemplateRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import CreateJobTemplateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -869,10 +869,10 @@ Optional fields:
   [StatusUpdateIntervalType](./literals.md#statusupdateintervaltype)
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateJobTemplateResponseResponseTypeDef
+## CreateJobTemplateResponseTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import CreateJobTemplateResponseResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import CreateJobTemplateResponseTypeDef
 ```
 
 Required fields:
@@ -881,10 +881,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePresetRequestTypeDef
+## CreatePresetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import CreatePresetRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import CreatePresetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -898,10 +898,10 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreatePresetResponseResponseTypeDef
+## CreatePresetResponseTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import CreatePresetResponseResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import CreatePresetResponseTypeDef
 ```
 
 Required fields:
@@ -910,10 +910,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateQueueRequestTypeDef
+## CreateQueueRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import CreateQueueRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import CreateQueueRequestRequestTypeDef
 ```
 
 Required fields:
@@ -929,10 +929,10 @@ Optional fields:
 - `Status`: [QueueStatusType](./literals.md#queuestatustype)
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateQueueResponseResponseTypeDef
+## CreateQueueResponseTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import CreateQueueResponseResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import CreateQueueResponseTypeDef
 ```
 
 Required fields:
@@ -1012,40 +1012,40 @@ Optional fields:
 - `Control`: [DeinterlacerControlType](./literals.md#deinterlacercontroltype)
 - `Mode`: [DeinterlacerModeType](./literals.md#deinterlacermodetype)
 
-## DeleteJobTemplateRequestTypeDef
+## DeleteJobTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import DeleteJobTemplateRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import DeleteJobTemplateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DeletePresetRequestTypeDef
+## DeletePresetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import DeletePresetRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import DeletePresetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DeleteQueueRequestTypeDef
+## DeleteQueueRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import DeleteQueueRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import DeleteQueueRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DescribeEndpointsRequestTypeDef
+## DescribeEndpointsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import DescribeEndpointsRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import DescribeEndpointsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1054,10 +1054,10 @@ Optional fields:
 - `Mode`: [DescribeEndpointsModeType](./literals.md#describeendpointsmodetype)
 - `NextToken`: `str`
 
-## DescribeEndpointsResponseResponseTypeDef
+## DescribeEndpointsResponseTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import DescribeEndpointsResponseResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import DescribeEndpointsResponseTypeDef
 ```
 
 Required fields:
@@ -1078,10 +1078,10 @@ Optional fields:
 - `S3Settings`:
   [S3DestinationSettingsTypeDef](./type_defs.md#s3destinationsettingstypedef)
 
-## DisassociateCertificateRequestTypeDef
+## DisassociateCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import DisassociateCertificateRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import DisassociateCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1390,20 +1390,20 @@ Optional fields:
 - `MaxCaptures`: `int`
 - `Quality`: `int`
 
-## GetJobRequestTypeDef
+## GetJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import GetJobRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import GetJobRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Id`: `str`
 
-## GetJobResponseResponseTypeDef
+## GetJobResponseTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import GetJobResponseResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import GetJobResponseTypeDef
 ```
 
 Required fields:
@@ -1412,20 +1412,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetJobTemplateRequestTypeDef
+## GetJobTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import GetJobTemplateRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import GetJobTemplateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## GetJobTemplateResponseResponseTypeDef
+## GetJobTemplateResponseTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import GetJobTemplateResponseResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import GetJobTemplateResponseTypeDef
 ```
 
 Required fields:
@@ -1434,20 +1434,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPresetRequestTypeDef
+## GetPresetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import GetPresetRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import GetPresetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## GetPresetResponseResponseTypeDef
+## GetPresetResponseTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import GetPresetResponseResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import GetPresetResponseTypeDef
 ```
 
 Required fields:
@@ -1456,20 +1456,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetQueueRequestTypeDef
+## GetQueueRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import GetQueueRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import GetQueueRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## GetQueueResponseResponseTypeDef
+## GetQueueResponseTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import GetQueueResponseResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import GetQueueResponseTypeDef
 ```
 
 Required fields:
@@ -2110,10 +2110,10 @@ Optional fields:
 - `Metadata7`: `str`
 - `Metadata8`: `str`
 
-## ListJobTemplatesRequestTypeDef
+## ListJobTemplatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import ListJobTemplatesRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import ListJobTemplatesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2124,10 +2124,10 @@ Optional fields:
 - `NextToken`: `str`
 - `Order`: [OrderType](./literals.md#ordertype)
 
-## ListJobTemplatesResponseResponseTypeDef
+## ListJobTemplatesResponseTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import ListJobTemplatesResponseResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import ListJobTemplatesResponseTypeDef
 ```
 
 Required fields:
@@ -2138,10 +2138,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListJobsRequestTypeDef
+## ListJobsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import ListJobsRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import ListJobsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2152,10 +2152,10 @@ Optional fields:
 - `Queue`: `str`
 - `Status`: [JobStatusType](./literals.md#jobstatustype)
 
-## ListJobsResponseResponseTypeDef
+## ListJobsResponseTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import ListJobsResponseResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import ListJobsResponseTypeDef
 ```
 
 Required fields:
@@ -2165,10 +2165,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPresetsRequestTypeDef
+## ListPresetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import ListPresetsRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import ListPresetsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2179,10 +2179,10 @@ Optional fields:
 - `NextToken`: `str`
 - `Order`: [OrderType](./literals.md#ordertype)
 
-## ListPresetsResponseResponseTypeDef
+## ListPresetsResponseTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import ListPresetsResponseResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import ListPresetsResponseTypeDef
 ```
 
 Required fields:
@@ -2192,10 +2192,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListQueuesRequestTypeDef
+## ListQueuesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import ListQueuesRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import ListQueuesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2205,10 +2205,10 @@ Optional fields:
 - `NextToken`: `str`
 - `Order`: [OrderType](./literals.md#ordertype)
 
-## ListQueuesResponseResponseTypeDef
+## ListQueuesResponseTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import ListQueuesResponseResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import ListQueuesResponseTypeDef
 ```
 
 Required fields:
@@ -2218,20 +2218,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Arn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -3070,10 +3070,10 @@ Optional fields:
 - `StaticKeyValue`: `str`
 - `Url`: `str`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3173,10 +3173,10 @@ Optional fields:
 - `StylePassthrough`:
   [TtmlStylePassthroughType](./literals.md#ttmlstylepassthroughtype)
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3187,10 +3187,10 @@ Optional fields:
 
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateJobTemplateRequestTypeDef
+## UpdateJobTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import UpdateJobTemplateRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import UpdateJobTemplateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3212,10 +3212,10 @@ Optional fields:
 - `StatusUpdateInterval`:
   [StatusUpdateIntervalType](./literals.md#statusupdateintervaltype)
 
-## UpdateJobTemplateResponseResponseTypeDef
+## UpdateJobTemplateResponseTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import UpdateJobTemplateResponseResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import UpdateJobTemplateResponseTypeDef
 ```
 
 Required fields:
@@ -3224,10 +3224,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdatePresetRequestTypeDef
+## UpdatePresetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import UpdatePresetRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import UpdatePresetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3240,10 +3240,10 @@ Optional fields:
 - `Description`: `str`
 - `Settings`: [PresetSettingsTypeDef](./type_defs.md#presetsettingstypedef)
 
-## UpdatePresetResponseResponseTypeDef
+## UpdatePresetResponseTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import UpdatePresetResponseResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import UpdatePresetResponseTypeDef
 ```
 
 Required fields:
@@ -3252,10 +3252,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateQueueRequestTypeDef
+## UpdateQueueRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import UpdateQueueRequestTypeDef
+from mypy_boto3_mediaconvert.type_defs import UpdateQueueRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3269,10 +3269,10 @@ Optional fields:
   [ReservationPlanSettingsTypeDef](./type_defs.md#reservationplansettingstypedef)
 - `Status`: [QueueStatusType](./literals.md#queuestatustype)
 
-## UpdateQueueResponseResponseTypeDef
+## UpdateQueueResponseTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import UpdateQueueResponseResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import UpdateQueueResponseTypeDef
 ```
 
 Required fields:

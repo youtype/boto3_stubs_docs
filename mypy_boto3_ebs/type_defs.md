@@ -10,19 +10,19 @@ type annotations stubs module
 - [Typed dictionaries for boto3 EBS module](#typed-dictionaries-for-boto3-ebs-module)
   - [BlockTypeDef](#blocktypedef)
   - [ChangedBlockTypeDef](#changedblocktypedef)
-  - [CompleteSnapshotRequestTypeDef](#completesnapshotrequesttypedef)
-  - [CompleteSnapshotResponseResponseTypeDef](#completesnapshotresponseresponsetypedef)
-  - [GetSnapshotBlockRequestTypeDef](#getsnapshotblockrequesttypedef)
-  - [GetSnapshotBlockResponseResponseTypeDef](#getsnapshotblockresponseresponsetypedef)
-  - [ListChangedBlocksRequestTypeDef](#listchangedblocksrequesttypedef)
-  - [ListChangedBlocksResponseResponseTypeDef](#listchangedblocksresponseresponsetypedef)
-  - [ListSnapshotBlocksRequestTypeDef](#listsnapshotblocksrequesttypedef)
-  - [ListSnapshotBlocksResponseResponseTypeDef](#listsnapshotblocksresponseresponsetypedef)
-  - [PutSnapshotBlockRequestTypeDef](#putsnapshotblockrequesttypedef)
-  - [PutSnapshotBlockResponseResponseTypeDef](#putsnapshotblockresponseresponsetypedef)
+  - [CompleteSnapshotRequestRequestTypeDef](#completesnapshotrequestrequesttypedef)
+  - [CompleteSnapshotResponseTypeDef](#completesnapshotresponsetypedef)
+  - [GetSnapshotBlockRequestRequestTypeDef](#getsnapshotblockrequestrequesttypedef)
+  - [GetSnapshotBlockResponseTypeDef](#getsnapshotblockresponsetypedef)
+  - [ListChangedBlocksRequestRequestTypeDef](#listchangedblocksrequestrequesttypedef)
+  - [ListChangedBlocksResponseTypeDef](#listchangedblocksresponsetypedef)
+  - [ListSnapshotBlocksRequestRequestTypeDef](#listsnapshotblocksrequestrequesttypedef)
+  - [ListSnapshotBlocksResponseTypeDef](#listsnapshotblocksresponsetypedef)
+  - [PutSnapshotBlockRequestRequestTypeDef](#putsnapshotblockrequestrequesttypedef)
+  - [PutSnapshotBlockResponseTypeDef](#putsnapshotblockresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartSnapshotRequestTypeDef](#startsnapshotrequesttypedef)
-  - [StartSnapshotResponseResponseTypeDef](#startsnapshotresponseresponsetypedef)
+  - [StartSnapshotRequestRequestTypeDef](#startsnapshotrequestrequesttypedef)
+  - [StartSnapshotResponseTypeDef](#startsnapshotresponsetypedef)
   - [TagTypeDef](#tagtypedef)
 
 ## BlockTypeDef
@@ -48,10 +48,10 @@ Optional fields:
 - `FirstBlockToken`: `str`
 - `SecondBlockToken`: `str`
 
-## CompleteSnapshotRequestTypeDef
+## CompleteSnapshotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ebs.type_defs import CompleteSnapshotRequestTypeDef
+from mypy_boto3_ebs.type_defs import CompleteSnapshotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -67,10 +67,10 @@ Optional fields:
 - `ChecksumAggregationMethod`: `Literal['LINEAR']` (see
   [ChecksumAggregationMethodType](./literals.md#checksumaggregationmethodtype))
 
-## CompleteSnapshotResponseResponseTypeDef
+## CompleteSnapshotResponseTypeDef
 
 ```python
-from mypy_boto3_ebs.type_defs import CompleteSnapshotResponseResponseTypeDef
+from mypy_boto3_ebs.type_defs import CompleteSnapshotResponseTypeDef
 ```
 
 Required fields:
@@ -79,10 +79,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSnapshotBlockRequestTypeDef
+## GetSnapshotBlockRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ebs.type_defs import GetSnapshotBlockRequestTypeDef
+from mypy_boto3_ebs.type_defs import GetSnapshotBlockRequestRequestTypeDef
 ```
 
 Required fields:
@@ -91,10 +91,10 @@ Required fields:
 - `BlockIndex`: `int`
 - `BlockToken`: `str`
 
-## GetSnapshotBlockResponseResponseTypeDef
+## GetSnapshotBlockResponseTypeDef
 
 ```python
-from mypy_boto3_ebs.type_defs import GetSnapshotBlockResponseResponseTypeDef
+from mypy_boto3_ebs.type_defs import GetSnapshotBlockResponseTypeDef
 ```
 
 Required fields:
@@ -107,10 +107,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListChangedBlocksRequestTypeDef
+## ListChangedBlocksRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ebs.type_defs import ListChangedBlocksRequestTypeDef
+from mypy_boto3_ebs.type_defs import ListChangedBlocksRequestRequestTypeDef
 ```
 
 Required fields:
@@ -124,10 +124,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `StartingBlockIndex`: `int`
 
-## ListChangedBlocksResponseResponseTypeDef
+## ListChangedBlocksResponseTypeDef
 
 ```python
-from mypy_boto3_ebs.type_defs import ListChangedBlocksResponseResponseTypeDef
+from mypy_boto3_ebs.type_defs import ListChangedBlocksResponseTypeDef
 ```
 
 Required fields:
@@ -141,10 +141,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSnapshotBlocksRequestTypeDef
+## ListSnapshotBlocksRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ebs.type_defs import ListSnapshotBlocksRequestTypeDef
+from mypy_boto3_ebs.type_defs import ListSnapshotBlocksRequestRequestTypeDef
 ```
 
 Required fields:
@@ -157,10 +157,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `StartingBlockIndex`: `int`
 
-## ListSnapshotBlocksResponseResponseTypeDef
+## ListSnapshotBlocksResponseTypeDef
 
 ```python
-from mypy_boto3_ebs.type_defs import ListSnapshotBlocksResponseResponseTypeDef
+from mypy_boto3_ebs.type_defs import ListSnapshotBlocksResponseTypeDef
 ```
 
 Required fields:
@@ -173,10 +173,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutSnapshotBlockRequestTypeDef
+## PutSnapshotBlockRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ebs.type_defs import PutSnapshotBlockRequestTypeDef
+from mypy_boto3_ebs.type_defs import PutSnapshotBlockRequestRequestTypeDef
 ```
 
 Required fields:
@@ -193,10 +193,10 @@ Optional fields:
 
 - `Progress`: `int`
 
-## PutSnapshotBlockResponseResponseTypeDef
+## PutSnapshotBlockResponseTypeDef
 
 ```python
-from mypy_boto3_ebs.type_defs import PutSnapshotBlockResponseResponseTypeDef
+from mypy_boto3_ebs.type_defs import PutSnapshotBlockResponseTypeDef
 ```
 
 Required fields:
@@ -221,10 +221,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## StartSnapshotRequestTypeDef
+## StartSnapshotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ebs.type_defs import StartSnapshotRequestTypeDef
+from mypy_boto3_ebs.type_defs import StartSnapshotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -241,10 +241,10 @@ Optional fields:
 - `KmsKeyArn`: `str`
 - `Timeout`: `int`
 
-## StartSnapshotResponseResponseTypeDef
+## StartSnapshotResponseTypeDef
 
 ```python
-from mypy_boto3_ebs.type_defs import StartSnapshotResponseResponseTypeDef
+from mypy_boto3_ebs.type_defs import StartSnapshotResponseTypeDef
 ```
 
 Required fields:

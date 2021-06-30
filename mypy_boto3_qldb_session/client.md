@@ -11,6 +11,7 @@ type annotations stubs module
   - [QLDBSessionClient](#qldbsessionclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [generate_presigned_url](#generate_presigned_url)
     - [send_command](#send_command)
@@ -54,6 +55,17 @@ Exceptions:
 - `Exceptions.RateExceededException`
 
 ## Methods
+
+### exceptions
+
+QLDBSessionClient exceptions.
+
+Type annotations for `boto3.client("qldb-session").exceptions` method.
+
+Boto3 documentation:
+[QLDBSession.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
 
 ### can_paginate
 
@@ -99,7 +111,7 @@ Boto3 documentation:
 [QLDBSession.Client.send_command](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client.send_command)
 
 Arguments mapping described in
-[SendCommandRequestTypeDef](./type_defs.md#sendcommandrequesttypedef).
+[SendCommandRequestRequestTypeDef](./type_defs.md#sendcommandrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -116,5 +128,4 @@ Keyword-only arguments:
 - `FetchPage`:
   [FetchPageRequestTypeDef](./type_defs.md#fetchpagerequesttypedef)
 
-Returns
-[SendCommandResultResponseTypeDef](./type_defs.md#sendcommandresultresponsetypedef).
+Returns [SendCommandResultTypeDef](./type_defs.md#sendcommandresulttypedef).

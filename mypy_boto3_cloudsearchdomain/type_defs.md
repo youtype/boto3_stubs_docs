@@ -15,16 +15,16 @@ type annotations stubs module
   - [HitTypeDef](#hittypedef)
   - [HitsTypeDef](#hitstypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SearchRequestTypeDef](#searchrequesttypedef)
-  - [SearchResponseResponseTypeDef](#searchresponseresponsetypedef)
+  - [SearchRequestRequestTypeDef](#searchrequestrequesttypedef)
+  - [SearchResponseTypeDef](#searchresponsetypedef)
   - [SearchStatusTypeDef](#searchstatustypedef)
   - [SuggestModelTypeDef](#suggestmodeltypedef)
-  - [SuggestRequestTypeDef](#suggestrequesttypedef)
-  - [SuggestResponseResponseTypeDef](#suggestresponseresponsetypedef)
+  - [SuggestRequestRequestTypeDef](#suggestrequestrequesttypedef)
+  - [SuggestResponseTypeDef](#suggestresponsetypedef)
   - [SuggestStatusTypeDef](#suggeststatustypedef)
   - [SuggestionMatchTypeDef](#suggestionmatchtypedef)
-  - [UploadDocumentsRequestTypeDef](#uploaddocumentsrequesttypedef)
-  - [UploadDocumentsResponseResponseTypeDef](#uploaddocumentsresponseresponsetypedef)
+  - [UploadDocumentsRequestRequestTypeDef](#uploaddocumentsrequestrequesttypedef)
+  - [UploadDocumentsResponseTypeDef](#uploaddocumentsresponsetypedef)
 
 ## BucketInfoTypeDef
 
@@ -114,10 +114,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## SearchRequestTypeDef
+## SearchRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearchdomain.type_defs import SearchRequestTypeDef
+from mypy_boto3_cloudsearchdomain.type_defs import SearchRequestRequestTypeDef
 ```
 
 Required fields:
@@ -140,10 +140,10 @@ Optional fields:
 - `start`: `int`
 - `stats`: `str`
 
-## SearchResponseResponseTypeDef
+## SearchResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearchdomain.type_defs import SearchResponseResponseTypeDef
+from mypy_boto3_cloudsearchdomain.type_defs import SearchResponseTypeDef
 ```
 
 Required fields:
@@ -181,10 +181,10 @@ Optional fields:
 - `suggestions`:
   `List`\[[SuggestionMatchTypeDef](./type_defs.md#suggestionmatchtypedef)\]
 
-## SuggestRequestTypeDef
+## SuggestRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearchdomain.type_defs import SuggestRequestTypeDef
+from mypy_boto3_cloudsearchdomain.type_defs import SuggestRequestRequestTypeDef
 ```
 
 Required fields:
@@ -196,10 +196,10 @@ Optional fields:
 
 - `size`: `int`
 
-## SuggestResponseResponseTypeDef
+## SuggestResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearchdomain.type_defs import SuggestResponseResponseTypeDef
+from mypy_boto3_cloudsearchdomain.type_defs import SuggestResponseTypeDef
 ```
 
 Required fields:
@@ -232,10 +232,10 @@ Optional fields:
 - `score`: `int`
 - `id`: `str`
 
-## UploadDocumentsRequestTypeDef
+## UploadDocumentsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearchdomain.type_defs import UploadDocumentsRequestTypeDef
+from mypy_boto3_cloudsearchdomain.type_defs import UploadDocumentsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -243,10 +243,10 @@ Required fields:
 - `documents`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `contentType`: [ContentTypeType](./literals.md#contenttypetype)
 
-## UploadDocumentsResponseResponseTypeDef
+## UploadDocumentsResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearchdomain.type_defs import UploadDocumentsResponseResponseTypeDef
+from mypy_boto3_cloudsearchdomain.type_defs import UploadDocumentsResponseTypeDef
 ```
 
 Required fields:

@@ -8,13 +8,13 @@ type annotations stubs module
 [mypy_boto3_emr](https://pypi.org/project/mypy-boto3-emr/).
 
 - [Typed dictionaries for boto3 EMR module](#typed-dictionaries-for-boto3-emr-module)
-  - [AddInstanceFleetInputTypeDef](#addinstancefleetinputtypedef)
-  - [AddInstanceFleetOutputResponseTypeDef](#addinstancefleetoutputresponsetypedef)
-  - [AddInstanceGroupsInputTypeDef](#addinstancegroupsinputtypedef)
-  - [AddInstanceGroupsOutputResponseTypeDef](#addinstancegroupsoutputresponsetypedef)
-  - [AddJobFlowStepsInputTypeDef](#addjobflowstepsinputtypedef)
-  - [AddJobFlowStepsOutputResponseTypeDef](#addjobflowstepsoutputresponsetypedef)
-  - [AddTagsInputTypeDef](#addtagsinputtypedef)
+  - [AddInstanceFleetInputRequestTypeDef](#addinstancefleetinputrequesttypedef)
+  - [AddInstanceFleetOutputTypeDef](#addinstancefleetoutputtypedef)
+  - [AddInstanceGroupsInputRequestTypeDef](#addinstancegroupsinputrequesttypedef)
+  - [AddInstanceGroupsOutputTypeDef](#addinstancegroupsoutputtypedef)
+  - [AddJobFlowStepsInputRequestTypeDef](#addjobflowstepsinputrequesttypedef)
+  - [AddJobFlowStepsOutputTypeDef](#addjobflowstepsoutputtypedef)
+  - [AddTagsInputRequestTypeDef](#addtagsinputrequesttypedef)
   - [ApplicationTypeDef](#applicationtypedef)
   - [AutoScalingPolicyDescriptionTypeDef](#autoscalingpolicydescriptiontypedef)
   - [AutoScalingPolicyStateChangeReasonTypeDef](#autoscalingpolicystatechangereasontypedef)
@@ -25,8 +25,8 @@ type annotations stubs module
   - [BootstrapActionConfigTypeDef](#bootstrapactionconfigtypedef)
   - [BootstrapActionDetailTypeDef](#bootstrapactiondetailtypedef)
   - [CancelStepsInfoTypeDef](#cancelstepsinfotypedef)
-  - [CancelStepsInputTypeDef](#cancelstepsinputtypedef)
-  - [CancelStepsOutputResponseTypeDef](#cancelstepsoutputresponsetypedef)
+  - [CancelStepsInputRequestTypeDef](#cancelstepsinputrequesttypedef)
+  - [CancelStepsOutputTypeDef](#cancelstepsoutputtypedef)
   - [CloudWatchAlarmDefinitionTypeDef](#cloudwatchalarmdefinitiontypedef)
   - [ClusterStateChangeReasonTypeDef](#clusterstatechangereasontypedef)
   - [ClusterStatusTypeDef](#clusterstatustypedef)
@@ -36,26 +36,26 @@ type annotations stubs module
   - [CommandTypeDef](#commandtypedef)
   - [ComputeLimitsTypeDef](#computelimitstypedef)
   - [ConfigurationTypeDef](#configurationtypedef)
-  - [CreateSecurityConfigurationInputTypeDef](#createsecurityconfigurationinputtypedef)
-  - [CreateSecurityConfigurationOutputResponseTypeDef](#createsecurityconfigurationoutputresponsetypedef)
-  - [CreateStudioInputTypeDef](#createstudioinputtypedef)
-  - [CreateStudioOutputResponseTypeDef](#createstudiooutputresponsetypedef)
-  - [CreateStudioSessionMappingInputTypeDef](#createstudiosessionmappinginputtypedef)
-  - [DeleteSecurityConfigurationInputTypeDef](#deletesecurityconfigurationinputtypedef)
-  - [DeleteStudioInputTypeDef](#deletestudioinputtypedef)
-  - [DeleteStudioSessionMappingInputTypeDef](#deletestudiosessionmappinginputtypedef)
-  - [DescribeClusterInputTypeDef](#describeclusterinputtypedef)
-  - [DescribeClusterOutputResponseTypeDef](#describeclusteroutputresponsetypedef)
-  - [DescribeJobFlowsInputTypeDef](#describejobflowsinputtypedef)
-  - [DescribeJobFlowsOutputResponseTypeDef](#describejobflowsoutputresponsetypedef)
-  - [DescribeNotebookExecutionInputTypeDef](#describenotebookexecutioninputtypedef)
-  - [DescribeNotebookExecutionOutputResponseTypeDef](#describenotebookexecutionoutputresponsetypedef)
-  - [DescribeSecurityConfigurationInputTypeDef](#describesecurityconfigurationinputtypedef)
-  - [DescribeSecurityConfigurationOutputResponseTypeDef](#describesecurityconfigurationoutputresponsetypedef)
-  - [DescribeStepInputTypeDef](#describestepinputtypedef)
-  - [DescribeStepOutputResponseTypeDef](#describestepoutputresponsetypedef)
-  - [DescribeStudioInputTypeDef](#describestudioinputtypedef)
-  - [DescribeStudioOutputResponseTypeDef](#describestudiooutputresponsetypedef)
+  - [CreateSecurityConfigurationInputRequestTypeDef](#createsecurityconfigurationinputrequesttypedef)
+  - [CreateSecurityConfigurationOutputTypeDef](#createsecurityconfigurationoutputtypedef)
+  - [CreateStudioInputRequestTypeDef](#createstudioinputrequesttypedef)
+  - [CreateStudioOutputTypeDef](#createstudiooutputtypedef)
+  - [CreateStudioSessionMappingInputRequestTypeDef](#createstudiosessionmappinginputrequesttypedef)
+  - [DeleteSecurityConfigurationInputRequestTypeDef](#deletesecurityconfigurationinputrequesttypedef)
+  - [DeleteStudioInputRequestTypeDef](#deletestudioinputrequesttypedef)
+  - [DeleteStudioSessionMappingInputRequestTypeDef](#deletestudiosessionmappinginputrequesttypedef)
+  - [DescribeClusterInputRequestTypeDef](#describeclusterinputrequesttypedef)
+  - [DescribeClusterOutputTypeDef](#describeclusteroutputtypedef)
+  - [DescribeJobFlowsInputRequestTypeDef](#describejobflowsinputrequesttypedef)
+  - [DescribeJobFlowsOutputTypeDef](#describejobflowsoutputtypedef)
+  - [DescribeNotebookExecutionInputRequestTypeDef](#describenotebookexecutioninputrequesttypedef)
+  - [DescribeNotebookExecutionOutputTypeDef](#describenotebookexecutionoutputtypedef)
+  - [DescribeSecurityConfigurationInputRequestTypeDef](#describesecurityconfigurationinputrequesttypedef)
+  - [DescribeSecurityConfigurationOutputTypeDef](#describesecurityconfigurationoutputtypedef)
+  - [DescribeStepInputRequestTypeDef](#describestepinputrequesttypedef)
+  - [DescribeStepOutputTypeDef](#describestepoutputtypedef)
+  - [DescribeStudioInputRequestTypeDef](#describestudioinputrequesttypedef)
+  - [DescribeStudioOutputTypeDef](#describestudiooutputtypedef)
   - [EbsBlockDeviceConfigTypeDef](#ebsblockdeviceconfigtypedef)
   - [EbsBlockDeviceTypeDef](#ebsblockdevicetypedef)
   - [EbsConfigurationTypeDef](#ebsconfigurationtypedef)
@@ -63,11 +63,11 @@ type annotations stubs module
   - [Ec2InstanceAttributesTypeDef](#ec2instanceattributestypedef)
   - [ExecutionEngineConfigTypeDef](#executionengineconfigtypedef)
   - [FailureDetailsTypeDef](#failuredetailstypedef)
-  - [GetBlockPublicAccessConfigurationOutputResponseTypeDef](#getblockpublicaccessconfigurationoutputresponsetypedef)
-  - [GetManagedScalingPolicyInputTypeDef](#getmanagedscalingpolicyinputtypedef)
-  - [GetManagedScalingPolicyOutputResponseTypeDef](#getmanagedscalingpolicyoutputresponsetypedef)
-  - [GetStudioSessionMappingInputTypeDef](#getstudiosessionmappinginputtypedef)
-  - [GetStudioSessionMappingOutputResponseTypeDef](#getstudiosessionmappingoutputresponsetypedef)
+  - [GetBlockPublicAccessConfigurationOutputTypeDef](#getblockpublicaccessconfigurationoutputtypedef)
+  - [GetManagedScalingPolicyInputRequestTypeDef](#getmanagedscalingpolicyinputrequesttypedef)
+  - [GetManagedScalingPolicyOutputTypeDef](#getmanagedscalingpolicyoutputtypedef)
+  - [GetStudioSessionMappingInputRequestTypeDef](#getstudiosessionmappinginputrequesttypedef)
+  - [GetStudioSessionMappingOutputTypeDef](#getstudiosessionmappingoutputtypedef)
   - [HadoopJarStepConfigTypeDef](#hadoopjarstepconfigtypedef)
   - [HadoopStepConfigTypeDef](#hadoopstepconfigtypedef)
   - [InstanceFleetConfigTypeDef](#instancefleetconfigtypedef)
@@ -97,32 +97,32 @@ type annotations stubs module
   - [JobFlowInstancesDetailTypeDef](#jobflowinstancesdetailtypedef)
   - [KerberosAttributesTypeDef](#kerberosattributestypedef)
   - [KeyValueTypeDef](#keyvaluetypedef)
-  - [ListBootstrapActionsInputTypeDef](#listbootstrapactionsinputtypedef)
-  - [ListBootstrapActionsOutputResponseTypeDef](#listbootstrapactionsoutputresponsetypedef)
-  - [ListClustersInputTypeDef](#listclustersinputtypedef)
-  - [ListClustersOutputResponseTypeDef](#listclustersoutputresponsetypedef)
-  - [ListInstanceFleetsInputTypeDef](#listinstancefleetsinputtypedef)
-  - [ListInstanceFleetsOutputResponseTypeDef](#listinstancefleetsoutputresponsetypedef)
-  - [ListInstanceGroupsInputTypeDef](#listinstancegroupsinputtypedef)
-  - [ListInstanceGroupsOutputResponseTypeDef](#listinstancegroupsoutputresponsetypedef)
-  - [ListInstancesInputTypeDef](#listinstancesinputtypedef)
-  - [ListInstancesOutputResponseTypeDef](#listinstancesoutputresponsetypedef)
-  - [ListNotebookExecutionsInputTypeDef](#listnotebookexecutionsinputtypedef)
-  - [ListNotebookExecutionsOutputResponseTypeDef](#listnotebookexecutionsoutputresponsetypedef)
-  - [ListSecurityConfigurationsInputTypeDef](#listsecurityconfigurationsinputtypedef)
-  - [ListSecurityConfigurationsOutputResponseTypeDef](#listsecurityconfigurationsoutputresponsetypedef)
-  - [ListStepsInputTypeDef](#liststepsinputtypedef)
-  - [ListStepsOutputResponseTypeDef](#liststepsoutputresponsetypedef)
-  - [ListStudioSessionMappingsInputTypeDef](#liststudiosessionmappingsinputtypedef)
-  - [ListStudioSessionMappingsOutputResponseTypeDef](#liststudiosessionmappingsoutputresponsetypedef)
-  - [ListStudiosInputTypeDef](#liststudiosinputtypedef)
-  - [ListStudiosOutputResponseTypeDef](#liststudiosoutputresponsetypedef)
+  - [ListBootstrapActionsInputRequestTypeDef](#listbootstrapactionsinputrequesttypedef)
+  - [ListBootstrapActionsOutputTypeDef](#listbootstrapactionsoutputtypedef)
+  - [ListClustersInputRequestTypeDef](#listclustersinputrequesttypedef)
+  - [ListClustersOutputTypeDef](#listclustersoutputtypedef)
+  - [ListInstanceFleetsInputRequestTypeDef](#listinstancefleetsinputrequesttypedef)
+  - [ListInstanceFleetsOutputTypeDef](#listinstancefleetsoutputtypedef)
+  - [ListInstanceGroupsInputRequestTypeDef](#listinstancegroupsinputrequesttypedef)
+  - [ListInstanceGroupsOutputTypeDef](#listinstancegroupsoutputtypedef)
+  - [ListInstancesInputRequestTypeDef](#listinstancesinputrequesttypedef)
+  - [ListInstancesOutputTypeDef](#listinstancesoutputtypedef)
+  - [ListNotebookExecutionsInputRequestTypeDef](#listnotebookexecutionsinputrequesttypedef)
+  - [ListNotebookExecutionsOutputTypeDef](#listnotebookexecutionsoutputtypedef)
+  - [ListSecurityConfigurationsInputRequestTypeDef](#listsecurityconfigurationsinputrequesttypedef)
+  - [ListSecurityConfigurationsOutputTypeDef](#listsecurityconfigurationsoutputtypedef)
+  - [ListStepsInputRequestTypeDef](#liststepsinputrequesttypedef)
+  - [ListStepsOutputTypeDef](#liststepsoutputtypedef)
+  - [ListStudioSessionMappingsInputRequestTypeDef](#liststudiosessionmappingsinputrequesttypedef)
+  - [ListStudioSessionMappingsOutputTypeDef](#liststudiosessionmappingsoutputtypedef)
+  - [ListStudiosInputRequestTypeDef](#liststudiosinputrequesttypedef)
+  - [ListStudiosOutputTypeDef](#liststudiosoutputtypedef)
   - [ManagedScalingPolicyTypeDef](#managedscalingpolicytypedef)
   - [MetricDimensionTypeDef](#metricdimensiontypedef)
-  - [ModifyClusterInputTypeDef](#modifyclusterinputtypedef)
-  - [ModifyClusterOutputResponseTypeDef](#modifyclusteroutputresponsetypedef)
-  - [ModifyInstanceFleetInputTypeDef](#modifyinstancefleetinputtypedef)
-  - [ModifyInstanceGroupsInputTypeDef](#modifyinstancegroupsinputtypedef)
+  - [ModifyClusterInputRequestTypeDef](#modifyclusterinputrequesttypedef)
+  - [ModifyClusterOutputTypeDef](#modifyclusteroutputtypedef)
+  - [ModifyInstanceFleetInputRequestTypeDef](#modifyinstancefleetinputrequesttypedef)
+  - [ModifyInstanceGroupsInputRequestTypeDef](#modifyinstancegroupsinputrequesttypedef)
   - [NotebookExecutionSummaryTypeDef](#notebookexecutionsummarytypedef)
   - [NotebookExecutionTypeDef](#notebookexecutiontypedef)
   - [OnDemandCapacityReservationOptionsTypeDef](#ondemandcapacityreservationoptionstypedef)
@@ -131,16 +131,16 @@ type annotations stubs module
   - [PlacementGroupConfigTypeDef](#placementgroupconfigtypedef)
   - [PlacementTypeTypeDef](#placementtypetypedef)
   - [PortRangeTypeDef](#portrangetypedef)
-  - [PutAutoScalingPolicyInputTypeDef](#putautoscalingpolicyinputtypedef)
-  - [PutAutoScalingPolicyOutputResponseTypeDef](#putautoscalingpolicyoutputresponsetypedef)
-  - [PutBlockPublicAccessConfigurationInputTypeDef](#putblockpublicaccessconfigurationinputtypedef)
-  - [PutManagedScalingPolicyInputTypeDef](#putmanagedscalingpolicyinputtypedef)
-  - [RemoveAutoScalingPolicyInputTypeDef](#removeautoscalingpolicyinputtypedef)
-  - [RemoveManagedScalingPolicyInputTypeDef](#removemanagedscalingpolicyinputtypedef)
-  - [RemoveTagsInputTypeDef](#removetagsinputtypedef)
+  - [PutAutoScalingPolicyInputRequestTypeDef](#putautoscalingpolicyinputrequesttypedef)
+  - [PutAutoScalingPolicyOutputTypeDef](#putautoscalingpolicyoutputtypedef)
+  - [PutBlockPublicAccessConfigurationInputRequestTypeDef](#putblockpublicaccessconfigurationinputrequesttypedef)
+  - [PutManagedScalingPolicyInputRequestTypeDef](#putmanagedscalingpolicyinputrequesttypedef)
+  - [RemoveAutoScalingPolicyInputRequestTypeDef](#removeautoscalingpolicyinputrequesttypedef)
+  - [RemoveManagedScalingPolicyInputRequestTypeDef](#removemanagedscalingpolicyinputrequesttypedef)
+  - [RemoveTagsInputRequestTypeDef](#removetagsinputrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RunJobFlowInputTypeDef](#runjobflowinputtypedef)
-  - [RunJobFlowOutputResponseTypeDef](#runjobflowoutputresponsetypedef)
+  - [RunJobFlowInputRequestTypeDef](#runjobflowinputrequesttypedef)
+  - [RunJobFlowOutputTypeDef](#runjobflowoutputtypedef)
   - [ScalingActionTypeDef](#scalingactiontypedef)
   - [ScalingConstraintsTypeDef](#scalingconstraintstypedef)
   - [ScalingRuleTypeDef](#scalingruletypedef)
@@ -149,13 +149,13 @@ type annotations stubs module
   - [SecurityConfigurationSummaryTypeDef](#securityconfigurationsummarytypedef)
   - [SessionMappingDetailTypeDef](#sessionmappingdetailtypedef)
   - [SessionMappingSummaryTypeDef](#sessionmappingsummarytypedef)
-  - [SetTerminationProtectionInputTypeDef](#setterminationprotectioninputtypedef)
-  - [SetVisibleToAllUsersInputTypeDef](#setvisibletoallusersinputtypedef)
+  - [SetTerminationProtectionInputRequestTypeDef](#setterminationprotectioninputrequesttypedef)
+  - [SetVisibleToAllUsersInputRequestTypeDef](#setvisibletoallusersinputrequesttypedef)
   - [ShrinkPolicyTypeDef](#shrinkpolicytypedef)
   - [SimpleScalingPolicyConfigurationTypeDef](#simplescalingpolicyconfigurationtypedef)
   - [SpotProvisioningSpecificationTypeDef](#spotprovisioningspecificationtypedef)
-  - [StartNotebookExecutionInputTypeDef](#startnotebookexecutioninputtypedef)
-  - [StartNotebookExecutionOutputResponseTypeDef](#startnotebookexecutionoutputresponsetypedef)
+  - [StartNotebookExecutionInputRequestTypeDef](#startnotebookexecutioninputrequesttypedef)
+  - [StartNotebookExecutionOutputTypeDef](#startnotebookexecutionoutputtypedef)
   - [StepConfigTypeDef](#stepconfigtypedef)
   - [StepDetailTypeDef](#stepdetailtypedef)
   - [StepExecutionStatusDetailTypeDef](#stepexecutionstatusdetailtypedef)
@@ -164,21 +164,21 @@ type annotations stubs module
   - [StepSummaryTypeDef](#stepsummarytypedef)
   - [StepTimelineTypeDef](#steptimelinetypedef)
   - [StepTypeDef](#steptypedef)
-  - [StopNotebookExecutionInputTypeDef](#stopnotebookexecutioninputtypedef)
+  - [StopNotebookExecutionInputRequestTypeDef](#stopnotebookexecutioninputrequesttypedef)
   - [StudioSummaryTypeDef](#studiosummarytypedef)
   - [StudioTypeDef](#studiotypedef)
   - [SupportedProductConfigTypeDef](#supportedproductconfigtypedef)
   - [TagTypeDef](#tagtypedef)
-  - [TerminateJobFlowsInputTypeDef](#terminatejobflowsinputtypedef)
-  - [UpdateStudioInputTypeDef](#updatestudioinputtypedef)
-  - [UpdateStudioSessionMappingInputTypeDef](#updatestudiosessionmappinginputtypedef)
+  - [TerminateJobFlowsInputRequestTypeDef](#terminatejobflowsinputrequesttypedef)
+  - [UpdateStudioInputRequestTypeDef](#updatestudioinputrequesttypedef)
+  - [UpdateStudioSessionMappingInputRequestTypeDef](#updatestudiosessionmappinginputrequesttypedef)
   - [VolumeSpecificationTypeDef](#volumespecificationtypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
-## AddInstanceFleetInputTypeDef
+## AddInstanceFleetInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import AddInstanceFleetInputTypeDef
+from mypy_boto3_emr.type_defs import AddInstanceFleetInputRequestTypeDef
 ```
 
 Required fields:
@@ -187,10 +187,10 @@ Required fields:
 - `InstanceFleet`:
   [InstanceFleetConfigTypeDef](./type_defs.md#instancefleetconfigtypedef)
 
-## AddInstanceFleetOutputResponseTypeDef
+## AddInstanceFleetOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import AddInstanceFleetOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import AddInstanceFleetOutputTypeDef
 ```
 
 Required fields:
@@ -201,10 +201,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AddInstanceGroupsInputTypeDef
+## AddInstanceGroupsInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import AddInstanceGroupsInputTypeDef
+from mypy_boto3_emr.type_defs import AddInstanceGroupsInputRequestTypeDef
 ```
 
 Required fields:
@@ -213,10 +213,10 @@ Required fields:
   `List`\[[InstanceGroupConfigTypeDef](./type_defs.md#instancegroupconfigtypedef)\]
 - `JobFlowId`: `str`
 
-## AddInstanceGroupsOutputResponseTypeDef
+## AddInstanceGroupsOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import AddInstanceGroupsOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import AddInstanceGroupsOutputTypeDef
 ```
 
 Required fields:
@@ -227,10 +227,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AddJobFlowStepsInputTypeDef
+## AddJobFlowStepsInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import AddJobFlowStepsInputTypeDef
+from mypy_boto3_emr.type_defs import AddJobFlowStepsInputRequestTypeDef
 ```
 
 Required fields:
@@ -238,10 +238,10 @@ Required fields:
 - `JobFlowId`: `str`
 - `Steps`: `List`\[[StepConfigTypeDef](./type_defs.md#stepconfigtypedef)\]
 
-## AddJobFlowStepsOutputResponseTypeDef
+## AddJobFlowStepsOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import AddJobFlowStepsOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import AddJobFlowStepsOutputTypeDef
 ```
 
 Required fields:
@@ -250,10 +250,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AddTagsInputTypeDef
+## AddTagsInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import AddTagsInputTypeDef
+from mypy_boto3_emr.type_defs import AddTagsInputRequestTypeDef
 ```
 
 Required fields:
@@ -387,10 +387,10 @@ Optional fields:
   [CancelStepsRequestStatusType](./literals.md#cancelstepsrequeststatustype)
 - `Reason`: `str`
 
-## CancelStepsInputTypeDef
+## CancelStepsInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import CancelStepsInputTypeDef
+from mypy_boto3_emr.type_defs import CancelStepsInputRequestTypeDef
 ```
 
 Required fields:
@@ -403,10 +403,10 @@ Optional fields:
 - `StepCancellationOption`:
   [StepCancellationOptionType](./literals.md#stepcancellationoptiontype)
 
-## CancelStepsOutputResponseTypeDef
+## CancelStepsOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import CancelStepsOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import CancelStepsOutputTypeDef
 ```
 
 Required fields:
@@ -581,10 +581,10 @@ Optional fields:
   `List`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 - `Properties`: `Dict`\[`str`, `str`\]
 
-## CreateSecurityConfigurationInputTypeDef
+## CreateSecurityConfigurationInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import CreateSecurityConfigurationInputTypeDef
+from mypy_boto3_emr.type_defs import CreateSecurityConfigurationInputRequestTypeDef
 ```
 
 Required fields:
@@ -592,10 +592,10 @@ Required fields:
 - `Name`: `str`
 - `SecurityConfiguration`: `str`
 
-## CreateSecurityConfigurationOutputResponseTypeDef
+## CreateSecurityConfigurationOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import CreateSecurityConfigurationOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import CreateSecurityConfigurationOutputTypeDef
 ```
 
 Required fields:
@@ -605,10 +605,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateStudioInputTypeDef
+## CreateStudioInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import CreateStudioInputTypeDef
+from mypy_boto3_emr.type_defs import CreateStudioInputRequestTypeDef
 ```
 
 Required fields:
@@ -628,10 +628,10 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateStudioOutputResponseTypeDef
+## CreateStudioOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import CreateStudioOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import CreateStudioOutputTypeDef
 ```
 
 Required fields:
@@ -641,10 +641,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateStudioSessionMappingInputTypeDef
+## CreateStudioSessionMappingInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import CreateStudioSessionMappingInputTypeDef
+from mypy_boto3_emr.type_defs import CreateStudioSessionMappingInputRequestTypeDef
 ```
 
 Required fields:
@@ -658,30 +658,30 @@ Optional fields:
 - `IdentityId`: `str`
 - `IdentityName`: `str`
 
-## DeleteSecurityConfigurationInputTypeDef
+## DeleteSecurityConfigurationInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import DeleteSecurityConfigurationInputTypeDef
+from mypy_boto3_emr.type_defs import DeleteSecurityConfigurationInputRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DeleteStudioInputTypeDef
+## DeleteStudioInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import DeleteStudioInputTypeDef
+from mypy_boto3_emr.type_defs import DeleteStudioInputRequestTypeDef
 ```
 
 Required fields:
 
 - `StudioId`: `str`
 
-## DeleteStudioSessionMappingInputTypeDef
+## DeleteStudioSessionMappingInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import DeleteStudioSessionMappingInputTypeDef
+from mypy_boto3_emr.type_defs import DeleteStudioSessionMappingInputRequestTypeDef
 ```
 
 Required fields:
@@ -694,20 +694,20 @@ Optional fields:
 - `IdentityId`: `str`
 - `IdentityName`: `str`
 
-## DescribeClusterInputTypeDef
+## DescribeClusterInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import DescribeClusterInputTypeDef
+from mypy_boto3_emr.type_defs import DescribeClusterInputRequestTypeDef
 ```
 
 Required fields:
 
 - `ClusterId`: `str`
 
-## DescribeClusterOutputResponseTypeDef
+## DescribeClusterOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import DescribeClusterOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import DescribeClusterOutputTypeDef
 ```
 
 Required fields:
@@ -716,10 +716,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeJobFlowsInputTypeDef
+## DescribeJobFlowsInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import DescribeJobFlowsInputTypeDef
+from mypy_boto3_emr.type_defs import DescribeJobFlowsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -730,10 +730,10 @@ Optional fields:
 - `JobFlowStates`:
   `List`\[[JobFlowExecutionStateType](./literals.md#jobflowexecutionstatetype)\]
 
-## DescribeJobFlowsOutputResponseTypeDef
+## DescribeJobFlowsOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import DescribeJobFlowsOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import DescribeJobFlowsOutputTypeDef
 ```
 
 Required fields:
@@ -743,20 +743,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeNotebookExecutionInputTypeDef
+## DescribeNotebookExecutionInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import DescribeNotebookExecutionInputTypeDef
+from mypy_boto3_emr.type_defs import DescribeNotebookExecutionInputRequestTypeDef
 ```
 
 Required fields:
 
 - `NotebookExecutionId`: `str`
 
-## DescribeNotebookExecutionOutputResponseTypeDef
+## DescribeNotebookExecutionOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import DescribeNotebookExecutionOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import DescribeNotebookExecutionOutputTypeDef
 ```
 
 Required fields:
@@ -766,20 +766,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSecurityConfigurationInputTypeDef
+## DescribeSecurityConfigurationInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import DescribeSecurityConfigurationInputTypeDef
+from mypy_boto3_emr.type_defs import DescribeSecurityConfigurationInputRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DescribeSecurityConfigurationOutputResponseTypeDef
+## DescribeSecurityConfigurationOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import DescribeSecurityConfigurationOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import DescribeSecurityConfigurationOutputTypeDef
 ```
 
 Required fields:
@@ -790,10 +790,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStepInputTypeDef
+## DescribeStepInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import DescribeStepInputTypeDef
+from mypy_boto3_emr.type_defs import DescribeStepInputRequestTypeDef
 ```
 
 Required fields:
@@ -801,10 +801,10 @@ Required fields:
 - `ClusterId`: `str`
 - `StepId`: `str`
 
-## DescribeStepOutputResponseTypeDef
+## DescribeStepOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import DescribeStepOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import DescribeStepOutputTypeDef
 ```
 
 Required fields:
@@ -813,20 +813,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStudioInputTypeDef
+## DescribeStudioInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import DescribeStudioInputTypeDef
+from mypy_boto3_emr.type_defs import DescribeStudioInputRequestTypeDef
 ```
 
 Required fields:
 
 - `StudioId`: `str`
 
-## DescribeStudioOutputResponseTypeDef
+## DescribeStudioOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import DescribeStudioOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import DescribeStudioOutputTypeDef
 ```
 
 Required fields:
@@ -933,10 +933,10 @@ Optional fields:
 - `Message`: `str`
 - `LogFile`: `str`
 
-## GetBlockPublicAccessConfigurationOutputResponseTypeDef
+## GetBlockPublicAccessConfigurationOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import GetBlockPublicAccessConfigurationOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import GetBlockPublicAccessConfigurationOutputTypeDef
 ```
 
 Required fields:
@@ -948,20 +948,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetManagedScalingPolicyInputTypeDef
+## GetManagedScalingPolicyInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import GetManagedScalingPolicyInputTypeDef
+from mypy_boto3_emr.type_defs import GetManagedScalingPolicyInputRequestTypeDef
 ```
 
 Required fields:
 
 - `ClusterId`: `str`
 
-## GetManagedScalingPolicyOutputResponseTypeDef
+## GetManagedScalingPolicyOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import GetManagedScalingPolicyOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import GetManagedScalingPolicyOutputTypeDef
 ```
 
 Required fields:
@@ -971,10 +971,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetStudioSessionMappingInputTypeDef
+## GetStudioSessionMappingInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import GetStudioSessionMappingInputTypeDef
+from mypy_boto3_emr.type_defs import GetStudioSessionMappingInputRequestTypeDef
 ```
 
 Required fields:
@@ -987,10 +987,10 @@ Optional fields:
 - `IdentityId`: `str`
 - `IdentityName`: `str`
 
-## GetStudioSessionMappingOutputResponseTypeDef
+## GetStudioSessionMappingOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import GetStudioSessionMappingOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import GetStudioSessionMappingOutputTypeDef
 ```
 
 Required fields:
@@ -1516,10 +1516,10 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## ListBootstrapActionsInputTypeDef
+## ListBootstrapActionsInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ListBootstrapActionsInputTypeDef
+from mypy_boto3_emr.type_defs import ListBootstrapActionsInputRequestTypeDef
 ```
 
 Required fields:
@@ -1530,10 +1530,10 @@ Optional fields:
 
 - `Marker`: `str`
 
-## ListBootstrapActionsOutputResponseTypeDef
+## ListBootstrapActionsOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ListBootstrapActionsOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import ListBootstrapActionsOutputTypeDef
 ```
 
 Required fields:
@@ -1543,10 +1543,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListClustersInputTypeDef
+## ListClustersInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ListClustersInputTypeDef
+from mypy_boto3_emr.type_defs import ListClustersInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1556,10 +1556,10 @@ Optional fields:
 - `ClusterStates`: `List`\[[ClusterStateType](./literals.md#clusterstatetype)\]
 - `Marker`: `str`
 
-## ListClustersOutputResponseTypeDef
+## ListClustersOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ListClustersOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import ListClustersOutputTypeDef
 ```
 
 Required fields:
@@ -1570,10 +1570,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInstanceFleetsInputTypeDef
+## ListInstanceFleetsInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ListInstanceFleetsInputTypeDef
+from mypy_boto3_emr.type_defs import ListInstanceFleetsInputRequestTypeDef
 ```
 
 Required fields:
@@ -1584,10 +1584,10 @@ Optional fields:
 
 - `Marker`: `str`
 
-## ListInstanceFleetsOutputResponseTypeDef
+## ListInstanceFleetsOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ListInstanceFleetsOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import ListInstanceFleetsOutputTypeDef
 ```
 
 Required fields:
@@ -1598,10 +1598,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInstanceGroupsInputTypeDef
+## ListInstanceGroupsInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ListInstanceGroupsInputTypeDef
+from mypy_boto3_emr.type_defs import ListInstanceGroupsInputRequestTypeDef
 ```
 
 Required fields:
@@ -1612,10 +1612,10 @@ Optional fields:
 
 - `Marker`: `str`
 
-## ListInstanceGroupsOutputResponseTypeDef
+## ListInstanceGroupsOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ListInstanceGroupsOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import ListInstanceGroupsOutputTypeDef
 ```
 
 Required fields:
@@ -1626,10 +1626,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInstancesInputTypeDef
+## ListInstancesInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ListInstancesInputTypeDef
+from mypy_boto3_emr.type_defs import ListInstancesInputRequestTypeDef
 ```
 
 Required fields:
@@ -1648,10 +1648,10 @@ Optional fields:
   `List`\[[InstanceStateType](./literals.md#instancestatetype)\]
 - `Marker`: `str`
 
-## ListInstancesOutputResponseTypeDef
+## ListInstancesOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ListInstancesOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import ListInstancesOutputTypeDef
 ```
 
 Required fields:
@@ -1661,10 +1661,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListNotebookExecutionsInputTypeDef
+## ListNotebookExecutionsInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ListNotebookExecutionsInputTypeDef
+from mypy_boto3_emr.type_defs import ListNotebookExecutionsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1676,10 +1676,10 @@ Optional fields:
 - `To`: `Union`\[`datetime`, `str`\]
 - `Marker`: `str`
 
-## ListNotebookExecutionsOutputResponseTypeDef
+## ListNotebookExecutionsOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ListNotebookExecutionsOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import ListNotebookExecutionsOutputTypeDef
 ```
 
 Required fields:
@@ -1690,20 +1690,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSecurityConfigurationsInputTypeDef
+## ListSecurityConfigurationsInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ListSecurityConfigurationsInputTypeDef
+from mypy_boto3_emr.type_defs import ListSecurityConfigurationsInputRequestTypeDef
 ```
 
 Optional fields:
 
 - `Marker`: `str`
 
-## ListSecurityConfigurationsOutputResponseTypeDef
+## ListSecurityConfigurationsOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ListSecurityConfigurationsOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import ListSecurityConfigurationsOutputTypeDef
 ```
 
 Required fields:
@@ -1714,10 +1714,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStepsInputTypeDef
+## ListStepsInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ListStepsInputTypeDef
+from mypy_boto3_emr.type_defs import ListStepsInputRequestTypeDef
 ```
 
 Required fields:
@@ -1730,10 +1730,10 @@ Optional fields:
 - `StepIds`: `List`\[`str`\]
 - `Marker`: `str`
 
-## ListStepsOutputResponseTypeDef
+## ListStepsOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ListStepsOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import ListStepsOutputTypeDef
 ```
 
 Required fields:
@@ -1743,10 +1743,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStudioSessionMappingsInputTypeDef
+## ListStudioSessionMappingsInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ListStudioSessionMappingsInputTypeDef
+from mypy_boto3_emr.type_defs import ListStudioSessionMappingsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1755,10 +1755,10 @@ Optional fields:
 - `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
 - `Marker`: `str`
 
-## ListStudioSessionMappingsOutputResponseTypeDef
+## ListStudioSessionMappingsOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ListStudioSessionMappingsOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import ListStudioSessionMappingsOutputTypeDef
 ```
 
 Required fields:
@@ -1769,20 +1769,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStudiosInputTypeDef
+## ListStudiosInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ListStudiosInputTypeDef
+from mypy_boto3_emr.type_defs import ListStudiosInputRequestTypeDef
 ```
 
 Optional fields:
 
 - `Marker`: `str`
 
-## ListStudiosOutputResponseTypeDef
+## ListStudiosOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ListStudiosOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import ListStudiosOutputTypeDef
 ```
 
 Required fields:
@@ -1814,10 +1814,10 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## ModifyClusterInputTypeDef
+## ModifyClusterInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ModifyClusterInputTypeDef
+from mypy_boto3_emr.type_defs import ModifyClusterInputRequestTypeDef
 ```
 
 Required fields:
@@ -1828,10 +1828,10 @@ Optional fields:
 
 - `StepConcurrencyLevel`: `int`
 
-## ModifyClusterOutputResponseTypeDef
+## ModifyClusterOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ModifyClusterOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import ModifyClusterOutputTypeDef
 ```
 
 Required fields:
@@ -1840,10 +1840,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyInstanceFleetInputTypeDef
+## ModifyInstanceFleetInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ModifyInstanceFleetInputTypeDef
+from mypy_boto3_emr.type_defs import ModifyInstanceFleetInputRequestTypeDef
 ```
 
 Required fields:
@@ -1852,10 +1852,10 @@ Required fields:
 - `InstanceFleet`:
   [InstanceFleetModifyConfigTypeDef](./type_defs.md#instancefleetmodifyconfigtypedef)
 
-## ModifyInstanceGroupsInputTypeDef
+## ModifyInstanceGroupsInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import ModifyInstanceGroupsInputTypeDef
+from mypy_boto3_emr.type_defs import ModifyInstanceGroupsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1986,10 +1986,10 @@ Optional fields:
 
 - `MaxRange`: `int`
 
-## PutAutoScalingPolicyInputTypeDef
+## PutAutoScalingPolicyInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import PutAutoScalingPolicyInputTypeDef
+from mypy_boto3_emr.type_defs import PutAutoScalingPolicyInputRequestTypeDef
 ```
 
 Required fields:
@@ -1999,10 +1999,10 @@ Required fields:
 - `AutoScalingPolicy`:
   [AutoScalingPolicyTypeDef](./type_defs.md#autoscalingpolicytypedef)
 
-## PutAutoScalingPolicyOutputResponseTypeDef
+## PutAutoScalingPolicyOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import PutAutoScalingPolicyOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import PutAutoScalingPolicyOutputTypeDef
 ```
 
 Required fields:
@@ -2015,10 +2015,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutBlockPublicAccessConfigurationInputTypeDef
+## PutBlockPublicAccessConfigurationInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import PutBlockPublicAccessConfigurationInputTypeDef
+from mypy_boto3_emr.type_defs import PutBlockPublicAccessConfigurationInputRequestTypeDef
 ```
 
 Required fields:
@@ -2026,10 +2026,10 @@ Required fields:
 - `BlockPublicAccessConfiguration`:
   [BlockPublicAccessConfigurationTypeDef](./type_defs.md#blockpublicaccessconfigurationtypedef)
 
-## PutManagedScalingPolicyInputTypeDef
+## PutManagedScalingPolicyInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import PutManagedScalingPolicyInputTypeDef
+from mypy_boto3_emr.type_defs import PutManagedScalingPolicyInputRequestTypeDef
 ```
 
 Required fields:
@@ -2038,10 +2038,10 @@ Required fields:
 - `ManagedScalingPolicy`:
   [ManagedScalingPolicyTypeDef](./type_defs.md#managedscalingpolicytypedef)
 
-## RemoveAutoScalingPolicyInputTypeDef
+## RemoveAutoScalingPolicyInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import RemoveAutoScalingPolicyInputTypeDef
+from mypy_boto3_emr.type_defs import RemoveAutoScalingPolicyInputRequestTypeDef
 ```
 
 Required fields:
@@ -2049,20 +2049,20 @@ Required fields:
 - `ClusterId`: `str`
 - `InstanceGroupId`: `str`
 
-## RemoveManagedScalingPolicyInputTypeDef
+## RemoveManagedScalingPolicyInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import RemoveManagedScalingPolicyInputTypeDef
+from mypy_boto3_emr.type_defs import RemoveManagedScalingPolicyInputRequestTypeDef
 ```
 
 Required fields:
 
 - `ClusterId`: `str`
 
-## RemoveTagsInputTypeDef
+## RemoveTagsInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import RemoveTagsInputTypeDef
+from mypy_boto3_emr.type_defs import RemoveTagsInputRequestTypeDef
 ```
 
 Required fields:
@@ -2084,10 +2084,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## RunJobFlowInputTypeDef
+## RunJobFlowInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import RunJobFlowInputTypeDef
+from mypy_boto3_emr.type_defs import RunJobFlowInputRequestTypeDef
 ```
 
 Required fields:
@@ -2133,10 +2133,10 @@ Optional fields:
 - `PlacementGroupConfigs`:
   `List`\[[PlacementGroupConfigTypeDef](./type_defs.md#placementgroupconfigtypedef)\]
 
-## RunJobFlowOutputResponseTypeDef
+## RunJobFlowOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import RunJobFlowOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import RunJobFlowOutputTypeDef
 ```
 
 Required fields:
@@ -2255,10 +2255,10 @@ Optional fields:
 - `SessionPolicyArn`: `str`
 - `CreationTime`: `datetime`
 
-## SetTerminationProtectionInputTypeDef
+## SetTerminationProtectionInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import SetTerminationProtectionInputTypeDef
+from mypy_boto3_emr.type_defs import SetTerminationProtectionInputRequestTypeDef
 ```
 
 Required fields:
@@ -2266,10 +2266,10 @@ Required fields:
 - `JobFlowIds`: `List`\[`str`\]
 - `TerminationProtected`: `bool`
 
-## SetVisibleToAllUsersInputTypeDef
+## SetVisibleToAllUsersInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import SetVisibleToAllUsersInputTypeDef
+from mypy_boto3_emr.type_defs import SetVisibleToAllUsersInputRequestTypeDef
 ```
 
 Required fields:
@@ -2322,10 +2322,10 @@ Optional fields:
 - `AllocationStrategy`: `Literal['capacity-optimized']` (see
   [SpotProvisioningAllocationStrategyType](./literals.md#spotprovisioningallocationstrategytype))
 
-## StartNotebookExecutionInputTypeDef
+## StartNotebookExecutionInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import StartNotebookExecutionInputTypeDef
+from mypy_boto3_emr.type_defs import StartNotebookExecutionInputRequestTypeDef
 ```
 
 Required fields:
@@ -2343,10 +2343,10 @@ Optional fields:
 - `NotebookInstanceSecurityGroupId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## StartNotebookExecutionOutputResponseTypeDef
+## StartNotebookExecutionOutputTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import StartNotebookExecutionOutputResponseTypeDef
+from mypy_boto3_emr.type_defs import StartNotebookExecutionOutputTypeDef
 ```
 
 Required fields:
@@ -2467,10 +2467,10 @@ Optional fields:
 - `ActionOnFailure`: [ActionOnFailureType](./literals.md#actiononfailuretype)
 - `Status`: [StepStatusTypeDef](./type_defs.md#stepstatustypedef)
 
-## StopNotebookExecutionInputTypeDef
+## StopNotebookExecutionInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import StopNotebookExecutionInputTypeDef
+from mypy_boto3_emr.type_defs import StopNotebookExecutionInputRequestTypeDef
 ```
 
 Required fields:
@@ -2538,20 +2538,20 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## TerminateJobFlowsInputTypeDef
+## TerminateJobFlowsInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import TerminateJobFlowsInputTypeDef
+from mypy_boto3_emr.type_defs import TerminateJobFlowsInputRequestTypeDef
 ```
 
 Required fields:
 
 - `JobFlowIds`: `List`\[`str`\]
 
-## UpdateStudioInputTypeDef
+## UpdateStudioInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import UpdateStudioInputTypeDef
+from mypy_boto3_emr.type_defs import UpdateStudioInputRequestTypeDef
 ```
 
 Required fields:
@@ -2565,10 +2565,10 @@ Optional fields:
 - `SubnetIds`: `List`\[`str`\]
 - `DefaultS3Location`: `str`
 
-## UpdateStudioSessionMappingInputTypeDef
+## UpdateStudioSessionMappingInputRequestTypeDef
 
 ```python
-from mypy_boto3_emr.type_defs import UpdateStudioSessionMappingInputTypeDef
+from mypy_boto3_emr.type_defs import UpdateStudioSessionMappingInputRequestTypeDef
 ```
 
 Required fields:

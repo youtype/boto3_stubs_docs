@@ -11,6 +11,7 @@ type annotations stubs module
   - [ResourceGroupsTaggingAPIClient](#resourcegroupstaggingapiclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [describe_report_creation](#describe_report_creation)
     - [generate_presigned_url](#generate_presigned_url)
@@ -63,6 +64,18 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ResourceGroupsTaggingAPIClient exceptions.
+
+Type annotations for `boto3.client("resourcegroupstaggingapi").exceptions`
+method.
+
+Boto3 documentation:
+[ResourceGroupsTaggingAPI.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -90,7 +103,7 @@ Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.describe_report_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.describe_report_creation)
 
 Returns
-[DescribeReportCreationOutputResponseTypeDef](./type_defs.md#describereportcreationoutputresponsetypedef).
+[DescribeReportCreationOutputTypeDef](./type_defs.md#describereportcreationoutputtypedef).
 
 ### generate_presigned_url
 
@@ -123,7 +136,7 @@ Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.get_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_compliance_summary)
 
 Arguments mapping described in
-[GetComplianceSummaryInputTypeDef](./type_defs.md#getcompliancesummaryinputtypedef).
+[GetComplianceSummaryInputRequestTypeDef](./type_defs.md#getcompliancesummaryinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -137,7 +150,7 @@ Keyword-only arguments:
 - `PaginationToken`: `str`
 
 Returns
-[GetComplianceSummaryOutputResponseTypeDef](./type_defs.md#getcompliancesummaryoutputresponsetypedef).
+[GetComplianceSummaryOutputTypeDef](./type_defs.md#getcompliancesummaryoutputtypedef).
 
 ### get_resources
 
@@ -151,7 +164,7 @@ Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.get_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_resources)
 
 Arguments mapping described in
-[GetResourcesInputTypeDef](./type_defs.md#getresourcesinputtypedef).
+[GetResourcesInputRequestTypeDef](./type_defs.md#getresourcesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -164,8 +177,7 @@ Keyword-only arguments:
 - `ExcludeCompliantResources`: `bool`
 - `ResourceARNList`: `List`\[`str`\]
 
-Returns
-[GetResourcesOutputResponseTypeDef](./type_defs.md#getresourcesoutputresponsetypedef).
+Returns [GetResourcesOutputTypeDef](./type_defs.md#getresourcesoutputtypedef).
 
 ### get_tag_keys
 
@@ -179,14 +191,13 @@ Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.get_tag_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_tag_keys)
 
 Arguments mapping described in
-[GetTagKeysInputTypeDef](./type_defs.md#gettagkeysinputtypedef).
+[GetTagKeysInputRequestTypeDef](./type_defs.md#gettagkeysinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `PaginationToken`: `str`
 
-Returns
-[GetTagKeysOutputResponseTypeDef](./type_defs.md#gettagkeysoutputresponsetypedef).
+Returns [GetTagKeysOutputTypeDef](./type_defs.md#gettagkeysoutputtypedef).
 
 ### get_tag_values
 
@@ -200,15 +211,14 @@ Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.get_tag_values](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_tag_values)
 
 Arguments mapping described in
-[GetTagValuesInputTypeDef](./type_defs.md#gettagvaluesinputtypedef).
+[GetTagValuesInputRequestTypeDef](./type_defs.md#gettagvaluesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `Key`: `str` *(required)*
 - `PaginationToken`: `str`
 
-Returns
-[GetTagValuesOutputResponseTypeDef](./type_defs.md#gettagvaluesoutputresponsetypedef).
+Returns [GetTagValuesOutputTypeDef](./type_defs.md#gettagvaluesoutputtypedef).
 
 ### start_report_creation
 
@@ -223,7 +233,7 @@ Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.start_report_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.start_report_creation)
 
 Arguments mapping described in
-[StartReportCreationInputTypeDef](./type_defs.md#startreportcreationinputtypedef).
+[StartReportCreationInputRequestTypeDef](./type_defs.md#startreportcreationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -242,15 +252,14 @@ Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.tag_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.tag_resources)
 
 Arguments mapping described in
-[TagResourcesInputTypeDef](./type_defs.md#tagresourcesinputtypedef).
+[TagResourcesInputRequestTypeDef](./type_defs.md#tagresourcesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceARNList`: `List`\[`str`\] *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
 
-Returns
-[TagResourcesOutputResponseTypeDef](./type_defs.md#tagresourcesoutputresponsetypedef).
+Returns [TagResourcesOutputTypeDef](./type_defs.md#tagresourcesoutputtypedef).
 
 ### untag_resources
 
@@ -263,7 +272,7 @@ Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.untag_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.untag_resources)
 
 Arguments mapping described in
-[UntagResourcesInputTypeDef](./type_defs.md#untagresourcesinputtypedef).
+[UntagResourcesInputRequestTypeDef](./type_defs.md#untagresourcesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -271,7 +280,7 @@ Keyword-only arguments:
 - `TagKeys`: `List`\[`str`\] *(required)*
 
 Returns
-[UntagResourcesOutputResponseTypeDef](./type_defs.md#untagresourcesoutputresponsetypedef).
+[UntagResourcesOutputTypeDef](./type_defs.md#untagresourcesoutputtypedef).
 
 ### get_paginator
 

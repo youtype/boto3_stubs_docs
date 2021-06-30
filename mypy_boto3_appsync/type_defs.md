@@ -15,69 +15,69 @@ type annotations stubs module
   - [AwsIamConfigTypeDef](#awsiamconfigtypedef)
   - [CachingConfigTypeDef](#cachingconfigtypedef)
   - [CognitoUserPoolConfigTypeDef](#cognitouserpoolconfigtypedef)
-  - [CreateApiCacheRequestTypeDef](#createapicacherequesttypedef)
-  - [CreateApiCacheResponseResponseTypeDef](#createapicacheresponseresponsetypedef)
-  - [CreateApiKeyRequestTypeDef](#createapikeyrequesttypedef)
-  - [CreateApiKeyResponseResponseTypeDef](#createapikeyresponseresponsetypedef)
-  - [CreateDataSourceRequestTypeDef](#createdatasourcerequesttypedef)
-  - [CreateDataSourceResponseResponseTypeDef](#createdatasourceresponseresponsetypedef)
-  - [CreateFunctionRequestTypeDef](#createfunctionrequesttypedef)
-  - [CreateFunctionResponseResponseTypeDef](#createfunctionresponseresponsetypedef)
-  - [CreateGraphqlApiRequestTypeDef](#creategraphqlapirequesttypedef)
-  - [CreateGraphqlApiResponseResponseTypeDef](#creategraphqlapiresponseresponsetypedef)
-  - [CreateResolverRequestTypeDef](#createresolverrequesttypedef)
-  - [CreateResolverResponseResponseTypeDef](#createresolverresponseresponsetypedef)
-  - [CreateTypeRequestTypeDef](#createtyperequesttypedef)
-  - [CreateTypeResponseResponseTypeDef](#createtyperesponseresponsetypedef)
+  - [CreateApiCacheRequestRequestTypeDef](#createapicacherequestrequesttypedef)
+  - [CreateApiCacheResponseTypeDef](#createapicacheresponsetypedef)
+  - [CreateApiKeyRequestRequestTypeDef](#createapikeyrequestrequesttypedef)
+  - [CreateApiKeyResponseTypeDef](#createapikeyresponsetypedef)
+  - [CreateDataSourceRequestRequestTypeDef](#createdatasourcerequestrequesttypedef)
+  - [CreateDataSourceResponseTypeDef](#createdatasourceresponsetypedef)
+  - [CreateFunctionRequestRequestTypeDef](#createfunctionrequestrequesttypedef)
+  - [CreateFunctionResponseTypeDef](#createfunctionresponsetypedef)
+  - [CreateGraphqlApiRequestRequestTypeDef](#creategraphqlapirequestrequesttypedef)
+  - [CreateGraphqlApiResponseTypeDef](#creategraphqlapiresponsetypedef)
+  - [CreateResolverRequestRequestTypeDef](#createresolverrequestrequesttypedef)
+  - [CreateResolverResponseTypeDef](#createresolverresponsetypedef)
+  - [CreateTypeRequestRequestTypeDef](#createtyperequestrequesttypedef)
+  - [CreateTypeResponseTypeDef](#createtyperesponsetypedef)
   - [DataSourceTypeDef](#datasourcetypedef)
-  - [DeleteApiCacheRequestTypeDef](#deleteapicacherequesttypedef)
-  - [DeleteApiKeyRequestTypeDef](#deleteapikeyrequesttypedef)
-  - [DeleteDataSourceRequestTypeDef](#deletedatasourcerequesttypedef)
-  - [DeleteFunctionRequestTypeDef](#deletefunctionrequesttypedef)
-  - [DeleteGraphqlApiRequestTypeDef](#deletegraphqlapirequesttypedef)
-  - [DeleteResolverRequestTypeDef](#deleteresolverrequesttypedef)
-  - [DeleteTypeRequestTypeDef](#deletetyperequesttypedef)
+  - [DeleteApiCacheRequestRequestTypeDef](#deleteapicacherequestrequesttypedef)
+  - [DeleteApiKeyRequestRequestTypeDef](#deleteapikeyrequestrequesttypedef)
+  - [DeleteDataSourceRequestRequestTypeDef](#deletedatasourcerequestrequesttypedef)
+  - [DeleteFunctionRequestRequestTypeDef](#deletefunctionrequestrequesttypedef)
+  - [DeleteGraphqlApiRequestRequestTypeDef](#deletegraphqlapirequestrequesttypedef)
+  - [DeleteResolverRequestRequestTypeDef](#deleteresolverrequestrequesttypedef)
+  - [DeleteTypeRequestRequestTypeDef](#deletetyperequestrequesttypedef)
   - [DeltaSyncConfigTypeDef](#deltasyncconfigtypedef)
   - [DynamodbDataSourceConfigTypeDef](#dynamodbdatasourceconfigtypedef)
   - [ElasticsearchDataSourceConfigTypeDef](#elasticsearchdatasourceconfigtypedef)
-  - [FlushApiCacheRequestTypeDef](#flushapicacherequesttypedef)
+  - [FlushApiCacheRequestRequestTypeDef](#flushapicacherequestrequesttypedef)
   - [FunctionConfigurationTypeDef](#functionconfigurationtypedef)
-  - [GetApiCacheRequestTypeDef](#getapicacherequesttypedef)
-  - [GetApiCacheResponseResponseTypeDef](#getapicacheresponseresponsetypedef)
-  - [GetDataSourceRequestTypeDef](#getdatasourcerequesttypedef)
-  - [GetDataSourceResponseResponseTypeDef](#getdatasourceresponseresponsetypedef)
-  - [GetFunctionRequestTypeDef](#getfunctionrequesttypedef)
-  - [GetFunctionResponseResponseTypeDef](#getfunctionresponseresponsetypedef)
-  - [GetGraphqlApiRequestTypeDef](#getgraphqlapirequesttypedef)
-  - [GetGraphqlApiResponseResponseTypeDef](#getgraphqlapiresponseresponsetypedef)
-  - [GetIntrospectionSchemaRequestTypeDef](#getintrospectionschemarequesttypedef)
-  - [GetIntrospectionSchemaResponseResponseTypeDef](#getintrospectionschemaresponseresponsetypedef)
-  - [GetResolverRequestTypeDef](#getresolverrequesttypedef)
-  - [GetResolverResponseResponseTypeDef](#getresolverresponseresponsetypedef)
-  - [GetSchemaCreationStatusRequestTypeDef](#getschemacreationstatusrequesttypedef)
-  - [GetSchemaCreationStatusResponseResponseTypeDef](#getschemacreationstatusresponseresponsetypedef)
-  - [GetTypeRequestTypeDef](#gettyperequesttypedef)
-  - [GetTypeResponseResponseTypeDef](#gettyperesponseresponsetypedef)
+  - [GetApiCacheRequestRequestTypeDef](#getapicacherequestrequesttypedef)
+  - [GetApiCacheResponseTypeDef](#getapicacheresponsetypedef)
+  - [GetDataSourceRequestRequestTypeDef](#getdatasourcerequestrequesttypedef)
+  - [GetDataSourceResponseTypeDef](#getdatasourceresponsetypedef)
+  - [GetFunctionRequestRequestTypeDef](#getfunctionrequestrequesttypedef)
+  - [GetFunctionResponseTypeDef](#getfunctionresponsetypedef)
+  - [GetGraphqlApiRequestRequestTypeDef](#getgraphqlapirequestrequesttypedef)
+  - [GetGraphqlApiResponseTypeDef](#getgraphqlapiresponsetypedef)
+  - [GetIntrospectionSchemaRequestRequestTypeDef](#getintrospectionschemarequestrequesttypedef)
+  - [GetIntrospectionSchemaResponseTypeDef](#getintrospectionschemaresponsetypedef)
+  - [GetResolverRequestRequestTypeDef](#getresolverrequestrequesttypedef)
+  - [GetResolverResponseTypeDef](#getresolverresponsetypedef)
+  - [GetSchemaCreationStatusRequestRequestTypeDef](#getschemacreationstatusrequestrequesttypedef)
+  - [GetSchemaCreationStatusResponseTypeDef](#getschemacreationstatusresponsetypedef)
+  - [GetTypeRequestRequestTypeDef](#gettyperequestrequesttypedef)
+  - [GetTypeResponseTypeDef](#gettyperesponsetypedef)
   - [GraphqlApiTypeDef](#graphqlapitypedef)
   - [HttpDataSourceConfigTypeDef](#httpdatasourceconfigtypedef)
   - [LambdaConflictHandlerConfigTypeDef](#lambdaconflicthandlerconfigtypedef)
   - [LambdaDataSourceConfigTypeDef](#lambdadatasourceconfigtypedef)
-  - [ListApiKeysRequestTypeDef](#listapikeysrequesttypedef)
-  - [ListApiKeysResponseResponseTypeDef](#listapikeysresponseresponsetypedef)
-  - [ListDataSourcesRequestTypeDef](#listdatasourcesrequesttypedef)
-  - [ListDataSourcesResponseResponseTypeDef](#listdatasourcesresponseresponsetypedef)
-  - [ListFunctionsRequestTypeDef](#listfunctionsrequesttypedef)
-  - [ListFunctionsResponseResponseTypeDef](#listfunctionsresponseresponsetypedef)
-  - [ListGraphqlApisRequestTypeDef](#listgraphqlapisrequesttypedef)
-  - [ListGraphqlApisResponseResponseTypeDef](#listgraphqlapisresponseresponsetypedef)
-  - [ListResolversByFunctionRequestTypeDef](#listresolversbyfunctionrequesttypedef)
-  - [ListResolversByFunctionResponseResponseTypeDef](#listresolversbyfunctionresponseresponsetypedef)
-  - [ListResolversRequestTypeDef](#listresolversrequesttypedef)
-  - [ListResolversResponseResponseTypeDef](#listresolversresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
-  - [ListTypesRequestTypeDef](#listtypesrequesttypedef)
-  - [ListTypesResponseResponseTypeDef](#listtypesresponseresponsetypedef)
+  - [ListApiKeysRequestRequestTypeDef](#listapikeysrequestrequesttypedef)
+  - [ListApiKeysResponseTypeDef](#listapikeysresponsetypedef)
+  - [ListDataSourcesRequestRequestTypeDef](#listdatasourcesrequestrequesttypedef)
+  - [ListDataSourcesResponseTypeDef](#listdatasourcesresponsetypedef)
+  - [ListFunctionsRequestRequestTypeDef](#listfunctionsrequestrequesttypedef)
+  - [ListFunctionsResponseTypeDef](#listfunctionsresponsetypedef)
+  - [ListGraphqlApisRequestRequestTypeDef](#listgraphqlapisrequestrequesttypedef)
+  - [ListGraphqlApisResponseTypeDef](#listgraphqlapisresponsetypedef)
+  - [ListResolversByFunctionRequestRequestTypeDef](#listresolversbyfunctionrequestrequesttypedef)
+  - [ListResolversByFunctionResponseTypeDef](#listresolversbyfunctionresponsetypedef)
+  - [ListResolversRequestRequestTypeDef](#listresolversrequestrequesttypedef)
+  - [ListResolversResponseTypeDef](#listresolversresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListTypesRequestRequestTypeDef](#listtypesrequestrequesttypedef)
+  - [ListTypesResponseTypeDef](#listtypesresponsetypedef)
   - [LogConfigTypeDef](#logconfigtypedef)
   - [OpenIDConnectConfigTypeDef](#openidconnectconfigtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
@@ -86,26 +86,26 @@ type annotations stubs module
   - [RelationalDatabaseDataSourceConfigTypeDef](#relationaldatabasedatasourceconfigtypedef)
   - [ResolverTypeDef](#resolvertypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartSchemaCreationRequestTypeDef](#startschemacreationrequesttypedef)
-  - [StartSchemaCreationResponseResponseTypeDef](#startschemacreationresponseresponsetypedef)
+  - [StartSchemaCreationRequestRequestTypeDef](#startschemacreationrequestrequesttypedef)
+  - [StartSchemaCreationResponseTypeDef](#startschemacreationresponsetypedef)
   - [SyncConfigTypeDef](#syncconfigtypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TypeTypeDef](#typetypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateApiCacheRequestTypeDef](#updateapicacherequesttypedef)
-  - [UpdateApiCacheResponseResponseTypeDef](#updateapicacheresponseresponsetypedef)
-  - [UpdateApiKeyRequestTypeDef](#updateapikeyrequesttypedef)
-  - [UpdateApiKeyResponseResponseTypeDef](#updateapikeyresponseresponsetypedef)
-  - [UpdateDataSourceRequestTypeDef](#updatedatasourcerequesttypedef)
-  - [UpdateDataSourceResponseResponseTypeDef](#updatedatasourceresponseresponsetypedef)
-  - [UpdateFunctionRequestTypeDef](#updatefunctionrequesttypedef)
-  - [UpdateFunctionResponseResponseTypeDef](#updatefunctionresponseresponsetypedef)
-  - [UpdateGraphqlApiRequestTypeDef](#updategraphqlapirequesttypedef)
-  - [UpdateGraphqlApiResponseResponseTypeDef](#updategraphqlapiresponseresponsetypedef)
-  - [UpdateResolverRequestTypeDef](#updateresolverrequesttypedef)
-  - [UpdateResolverResponseResponseTypeDef](#updateresolverresponseresponsetypedef)
-  - [UpdateTypeRequestTypeDef](#updatetyperequesttypedef)
-  - [UpdateTypeResponseResponseTypeDef](#updatetyperesponseresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateApiCacheRequestRequestTypeDef](#updateapicacherequestrequesttypedef)
+  - [UpdateApiCacheResponseTypeDef](#updateapicacheresponsetypedef)
+  - [UpdateApiKeyRequestRequestTypeDef](#updateapikeyrequestrequesttypedef)
+  - [UpdateApiKeyResponseTypeDef](#updateapikeyresponsetypedef)
+  - [UpdateDataSourceRequestRequestTypeDef](#updatedatasourcerequestrequesttypedef)
+  - [UpdateDataSourceResponseTypeDef](#updatedatasourceresponsetypedef)
+  - [UpdateFunctionRequestRequestTypeDef](#updatefunctionrequestrequesttypedef)
+  - [UpdateFunctionResponseTypeDef](#updatefunctionresponsetypedef)
+  - [UpdateGraphqlApiRequestRequestTypeDef](#updategraphqlapirequestrequesttypedef)
+  - [UpdateGraphqlApiResponseTypeDef](#updategraphqlapiresponsetypedef)
+  - [UpdateResolverRequestRequestTypeDef](#updateresolverrequestrequesttypedef)
+  - [UpdateResolverResponseTypeDef](#updateresolverresponsetypedef)
+  - [UpdateTypeRequestRequestTypeDef](#updatetyperequestrequesttypedef)
+  - [UpdateTypeResponseTypeDef](#updatetyperesponsetypedef)
   - [UserPoolConfigTypeDef](#userpoolconfigtypedef)
 
 ## AdditionalAuthenticationProviderTypeDef
@@ -204,10 +204,10 @@ Optional fields:
 
 - `appIdClientRegex`: `str`
 
-## CreateApiCacheRequestTypeDef
+## CreateApiCacheRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import CreateApiCacheRequestTypeDef
+from mypy_boto3_appsync.type_defs import CreateApiCacheRequestRequestTypeDef
 ```
 
 Required fields:
@@ -223,10 +223,10 @@ Optional fields:
 - `transitEncryptionEnabled`: `bool`
 - `atRestEncryptionEnabled`: `bool`
 
-## CreateApiCacheResponseResponseTypeDef
+## CreateApiCacheResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import CreateApiCacheResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import CreateApiCacheResponseTypeDef
 ```
 
 Required fields:
@@ -235,10 +235,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateApiKeyRequestTypeDef
+## CreateApiKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import CreateApiKeyRequestTypeDef
+from mypy_boto3_appsync.type_defs import CreateApiKeyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -250,10 +250,10 @@ Optional fields:
 - `description`: `str`
 - `expires`: `int`
 
-## CreateApiKeyResponseResponseTypeDef
+## CreateApiKeyResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import CreateApiKeyResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import CreateApiKeyResponseTypeDef
 ```
 
 Required fields:
@@ -262,10 +262,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDataSourceRequestTypeDef
+## CreateDataSourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import CreateDataSourceRequestTypeDef
+from mypy_boto3_appsync.type_defs import CreateDataSourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -289,10 +289,10 @@ Optional fields:
 - `relationalDatabaseConfig`:
   [RelationalDatabaseDataSourceConfigTypeDef](./type_defs.md#relationaldatabasedatasourceconfigtypedef)
 
-## CreateDataSourceResponseResponseTypeDef
+## CreateDataSourceResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import CreateDataSourceResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import CreateDataSourceResponseTypeDef
 ```
 
 Required fields:
@@ -301,10 +301,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateFunctionRequestTypeDef
+## CreateFunctionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import CreateFunctionRequestTypeDef
+from mypy_boto3_appsync.type_defs import CreateFunctionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -321,10 +321,10 @@ Optional fields:
 - `responseMappingTemplate`: `str`
 - `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
 
-## CreateFunctionResponseResponseTypeDef
+## CreateFunctionResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import CreateFunctionResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import CreateFunctionResponseTypeDef
 ```
 
 Required fields:
@@ -334,10 +334,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateGraphqlApiRequestTypeDef
+## CreateGraphqlApiRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import CreateGraphqlApiRequestTypeDef
+from mypy_boto3_appsync.type_defs import CreateGraphqlApiRequestRequestTypeDef
 ```
 
 Required fields:
@@ -358,10 +358,10 @@ Optional fields:
   `List`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
 - `xrayEnabled`: `bool`
 
-## CreateGraphqlApiResponseResponseTypeDef
+## CreateGraphqlApiResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import CreateGraphqlApiResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import CreateGraphqlApiResponseTypeDef
 ```
 
 Required fields:
@@ -370,10 +370,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateResolverRequestTypeDef
+## CreateResolverRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import CreateResolverRequestTypeDef
+from mypy_boto3_appsync.type_defs import CreateResolverRequestRequestTypeDef
 ```
 
 Required fields:
@@ -393,10 +393,10 @@ Optional fields:
 - `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
 - `cachingConfig`: [CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef)
 
-## CreateResolverResponseResponseTypeDef
+## CreateResolverResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import CreateResolverResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import CreateResolverResponseTypeDef
 ```
 
 Required fields:
@@ -405,10 +405,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTypeRequestTypeDef
+## CreateTypeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import CreateTypeRequestTypeDef
+from mypy_boto3_appsync.type_defs import CreateTypeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -417,10 +417,10 @@ Required fields:
 - `definition`: `str`
 - `format`: [TypeDefinitionFormatType](./literals.md#typedefinitionformattype)
 
-## CreateTypeResponseResponseTypeDef
+## CreateTypeResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import CreateTypeResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import CreateTypeResponseTypeDef
 ```
 
 Required fields:
@@ -453,20 +453,20 @@ Optional fields:
 - `relationalDatabaseConfig`:
   [RelationalDatabaseDataSourceConfigTypeDef](./type_defs.md#relationaldatabasedatasourceconfigtypedef)
 
-## DeleteApiCacheRequestTypeDef
+## DeleteApiCacheRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import DeleteApiCacheRequestTypeDef
+from mypy_boto3_appsync.type_defs import DeleteApiCacheRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `apiId`: `str`
 
-## DeleteApiKeyRequestTypeDef
+## DeleteApiKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import DeleteApiKeyRequestTypeDef
+from mypy_boto3_appsync.type_defs import DeleteApiKeyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -474,10 +474,10 @@ Required fields:
 - `apiId`: `str`
 - `id`: `str`
 
-## DeleteDataSourceRequestTypeDef
+## DeleteDataSourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import DeleteDataSourceRequestTypeDef
+from mypy_boto3_appsync.type_defs import DeleteDataSourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -485,10 +485,10 @@ Required fields:
 - `apiId`: `str`
 - `name`: `str`
 
-## DeleteFunctionRequestTypeDef
+## DeleteFunctionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import DeleteFunctionRequestTypeDef
+from mypy_boto3_appsync.type_defs import DeleteFunctionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -496,20 +496,20 @@ Required fields:
 - `apiId`: `str`
 - `functionId`: `str`
 
-## DeleteGraphqlApiRequestTypeDef
+## DeleteGraphqlApiRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import DeleteGraphqlApiRequestTypeDef
+from mypy_boto3_appsync.type_defs import DeleteGraphqlApiRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `apiId`: `str`
 
-## DeleteResolverRequestTypeDef
+## DeleteResolverRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import DeleteResolverRequestTypeDef
+from mypy_boto3_appsync.type_defs import DeleteResolverRequestRequestTypeDef
 ```
 
 Required fields:
@@ -518,10 +518,10 @@ Required fields:
 - `typeName`: `str`
 - `fieldName`: `str`
 
-## DeleteTypeRequestTypeDef
+## DeleteTypeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import DeleteTypeRequestTypeDef
+from mypy_boto3_appsync.type_defs import DeleteTypeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -570,10 +570,10 @@ Required fields:
 - `endpoint`: `str`
 - `awsRegion`: `str`
 
-## FlushApiCacheRequestTypeDef
+## FlushApiCacheRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import FlushApiCacheRequestTypeDef
+from mypy_boto3_appsync.type_defs import FlushApiCacheRequestRequestTypeDef
 ```
 
 Required fields:
@@ -598,20 +598,20 @@ Optional fields:
 - `functionVersion`: `str`
 - `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
 
-## GetApiCacheRequestTypeDef
+## GetApiCacheRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import GetApiCacheRequestTypeDef
+from mypy_boto3_appsync.type_defs import GetApiCacheRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `apiId`: `str`
 
-## GetApiCacheResponseResponseTypeDef
+## GetApiCacheResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import GetApiCacheResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import GetApiCacheResponseTypeDef
 ```
 
 Required fields:
@@ -620,10 +620,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDataSourceRequestTypeDef
+## GetDataSourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import GetDataSourceRequestTypeDef
+from mypy_boto3_appsync.type_defs import GetDataSourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -631,10 +631,10 @@ Required fields:
 - `apiId`: `str`
 - `name`: `str`
 
-## GetDataSourceResponseResponseTypeDef
+## GetDataSourceResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import GetDataSourceResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import GetDataSourceResponseTypeDef
 ```
 
 Required fields:
@@ -643,10 +643,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFunctionRequestTypeDef
+## GetFunctionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import GetFunctionRequestTypeDef
+from mypy_boto3_appsync.type_defs import GetFunctionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -654,10 +654,10 @@ Required fields:
 - `apiId`: `str`
 - `functionId`: `str`
 
-## GetFunctionResponseResponseTypeDef
+## GetFunctionResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import GetFunctionResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import GetFunctionResponseTypeDef
 ```
 
 Required fields:
@@ -667,20 +667,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetGraphqlApiRequestTypeDef
+## GetGraphqlApiRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import GetGraphqlApiRequestTypeDef
+from mypy_boto3_appsync.type_defs import GetGraphqlApiRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `apiId`: `str`
 
-## GetGraphqlApiResponseResponseTypeDef
+## GetGraphqlApiResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import GetGraphqlApiResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import GetGraphqlApiResponseTypeDef
 ```
 
 Required fields:
@@ -689,10 +689,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetIntrospectionSchemaRequestTypeDef
+## GetIntrospectionSchemaRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import GetIntrospectionSchemaRequestTypeDef
+from mypy_boto3_appsync.type_defs import GetIntrospectionSchemaRequestRequestTypeDef
 ```
 
 Required fields:
@@ -704,10 +704,10 @@ Optional fields:
 
 - `includeDirectives`: `bool`
 
-## GetIntrospectionSchemaResponseResponseTypeDef
+## GetIntrospectionSchemaResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import GetIntrospectionSchemaResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import GetIntrospectionSchemaResponseTypeDef
 ```
 
 Required fields:
@@ -716,10 +716,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResolverRequestTypeDef
+## GetResolverRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import GetResolverRequestTypeDef
+from mypy_boto3_appsync.type_defs import GetResolverRequestRequestTypeDef
 ```
 
 Required fields:
@@ -728,10 +728,10 @@ Required fields:
 - `typeName`: `str`
 - `fieldName`: `str`
 
-## GetResolverResponseResponseTypeDef
+## GetResolverResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import GetResolverResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import GetResolverResponseTypeDef
 ```
 
 Required fields:
@@ -740,20 +740,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSchemaCreationStatusRequestTypeDef
+## GetSchemaCreationStatusRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import GetSchemaCreationStatusRequestTypeDef
+from mypy_boto3_appsync.type_defs import GetSchemaCreationStatusRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `apiId`: `str`
 
-## GetSchemaCreationStatusResponseResponseTypeDef
+## GetSchemaCreationStatusResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import GetSchemaCreationStatusResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import GetSchemaCreationStatusResponseTypeDef
 ```
 
 Required fields:
@@ -763,10 +763,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTypeRequestTypeDef
+## GetTypeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import GetTypeRequestTypeDef
+from mypy_boto3_appsync.type_defs import GetTypeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -775,10 +775,10 @@ Required fields:
 - `typeName`: `str`
 - `format`: [TypeDefinitionFormatType](./literals.md#typedefinitionformattype)
 
-## GetTypeResponseResponseTypeDef
+## GetTypeResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import GetTypeResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import GetTypeResponseTypeDef
 ```
 
 Required fields:
@@ -844,10 +844,10 @@ Required fields:
 
 - `lambdaFunctionArn`: `str`
 
-## ListApiKeysRequestTypeDef
+## ListApiKeysRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import ListApiKeysRequestTypeDef
+from mypy_boto3_appsync.type_defs import ListApiKeysRequestRequestTypeDef
 ```
 
 Required fields:
@@ -859,10 +859,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListApiKeysResponseResponseTypeDef
+## ListApiKeysResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import ListApiKeysResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import ListApiKeysResponseTypeDef
 ```
 
 Required fields:
@@ -872,10 +872,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDataSourcesRequestTypeDef
+## ListDataSourcesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import ListDataSourcesRequestTypeDef
+from mypy_boto3_appsync.type_defs import ListDataSourcesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -887,10 +887,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListDataSourcesResponseResponseTypeDef
+## ListDataSourcesResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import ListDataSourcesResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import ListDataSourcesResponseTypeDef
 ```
 
 Required fields:
@@ -901,10 +901,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFunctionsRequestTypeDef
+## ListFunctionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import ListFunctionsRequestTypeDef
+from mypy_boto3_appsync.type_defs import ListFunctionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -916,10 +916,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListFunctionsResponseResponseTypeDef
+## ListFunctionsResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import ListFunctionsResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import ListFunctionsResponseTypeDef
 ```
 
 Required fields:
@@ -930,10 +930,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListGraphqlApisRequestTypeDef
+## ListGraphqlApisRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import ListGraphqlApisRequestTypeDef
+from mypy_boto3_appsync.type_defs import ListGraphqlApisRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -941,10 +941,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListGraphqlApisResponseResponseTypeDef
+## ListGraphqlApisResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import ListGraphqlApisResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import ListGraphqlApisResponseTypeDef
 ```
 
 Required fields:
@@ -955,10 +955,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResolversByFunctionRequestTypeDef
+## ListResolversByFunctionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import ListResolversByFunctionRequestTypeDef
+from mypy_boto3_appsync.type_defs import ListResolversByFunctionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -971,10 +971,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListResolversByFunctionResponseResponseTypeDef
+## ListResolversByFunctionResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import ListResolversByFunctionResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import ListResolversByFunctionResponseTypeDef
 ```
 
 Required fields:
@@ -984,10 +984,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResolversRequestTypeDef
+## ListResolversRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import ListResolversRequestTypeDef
+from mypy_boto3_appsync.type_defs import ListResolversRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1000,10 +1000,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListResolversResponseResponseTypeDef
+## ListResolversResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import ListResolversResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import ListResolversResponseTypeDef
 ```
 
 Required fields:
@@ -1013,20 +1013,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_appsync.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -1035,10 +1035,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTypesRequestTypeDef
+## ListTypesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import ListTypesRequestTypeDef
+from mypy_boto3_appsync.type_defs import ListTypesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1051,10 +1051,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListTypesResponseResponseTypeDef
+## ListTypesResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import ListTypesResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import ListTypesResponseTypeDef
 ```
 
 Required fields:
@@ -1178,10 +1178,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## StartSchemaCreationRequestTypeDef
+## StartSchemaCreationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import StartSchemaCreationRequestTypeDef
+from mypy_boto3_appsync.type_defs import StartSchemaCreationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1189,10 +1189,10 @@ Required fields:
 - `apiId`: `str`
 - `definition`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
-## StartSchemaCreationResponseResponseTypeDef
+## StartSchemaCreationResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import StartSchemaCreationResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import StartSchemaCreationResponseTypeDef
 ```
 
 Required fields:
@@ -1216,10 +1216,10 @@ Optional fields:
 - `lambdaConflictHandlerConfig`:
   [LambdaConflictHandlerConfigTypeDef](./type_defs.md#lambdaconflicthandlerconfigtypedef)
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_appsync.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1241,10 +1241,10 @@ Optional fields:
 - `definition`: `str`
 - `format`: [TypeDefinitionFormatType](./literals.md#typedefinitionformattype)
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_appsync.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1252,10 +1252,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tagKeys`: `List`\[`str`\]
 
-## UpdateApiCacheRequestTypeDef
+## UpdateApiCacheRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import UpdateApiCacheRequestTypeDef
+from mypy_boto3_appsync.type_defs import UpdateApiCacheRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1266,10 +1266,10 @@ Required fields:
   [ApiCachingBehaviorType](./literals.md#apicachingbehaviortype)
 - `type`: [ApiCacheTypeType](./literals.md#apicachetypetype)
 
-## UpdateApiCacheResponseResponseTypeDef
+## UpdateApiCacheResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import UpdateApiCacheResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import UpdateApiCacheResponseTypeDef
 ```
 
 Required fields:
@@ -1278,10 +1278,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateApiKeyRequestTypeDef
+## UpdateApiKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import UpdateApiKeyRequestTypeDef
+from mypy_boto3_appsync.type_defs import UpdateApiKeyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1294,10 +1294,10 @@ Optional fields:
 - `description`: `str`
 - `expires`: `int`
 
-## UpdateApiKeyResponseResponseTypeDef
+## UpdateApiKeyResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import UpdateApiKeyResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import UpdateApiKeyResponseTypeDef
 ```
 
 Required fields:
@@ -1306,10 +1306,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDataSourceRequestTypeDef
+## UpdateDataSourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import UpdateDataSourceRequestTypeDef
+from mypy_boto3_appsync.type_defs import UpdateDataSourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1333,10 +1333,10 @@ Optional fields:
 - `relationalDatabaseConfig`:
   [RelationalDatabaseDataSourceConfigTypeDef](./type_defs.md#relationaldatabasedatasourceconfigtypedef)
 
-## UpdateDataSourceResponseResponseTypeDef
+## UpdateDataSourceResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import UpdateDataSourceResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import UpdateDataSourceResponseTypeDef
 ```
 
 Required fields:
@@ -1345,10 +1345,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateFunctionRequestTypeDef
+## UpdateFunctionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import UpdateFunctionRequestTypeDef
+from mypy_boto3_appsync.type_defs import UpdateFunctionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1366,10 +1366,10 @@ Optional fields:
 - `responseMappingTemplate`: `str`
 - `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
 
-## UpdateFunctionResponseResponseTypeDef
+## UpdateFunctionResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import UpdateFunctionResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import UpdateFunctionResponseTypeDef
 ```
 
 Required fields:
@@ -1379,10 +1379,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateGraphqlApiRequestTypeDef
+## UpdateGraphqlApiRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import UpdateGraphqlApiRequestTypeDef
+from mypy_boto3_appsync.type_defs import UpdateGraphqlApiRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1403,10 +1403,10 @@ Optional fields:
   `List`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
 - `xrayEnabled`: `bool`
 
-## UpdateGraphqlApiResponseResponseTypeDef
+## UpdateGraphqlApiResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import UpdateGraphqlApiResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import UpdateGraphqlApiResponseTypeDef
 ```
 
 Required fields:
@@ -1415,10 +1415,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateResolverRequestTypeDef
+## UpdateResolverRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import UpdateResolverRequestTypeDef
+from mypy_boto3_appsync.type_defs import UpdateResolverRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1438,10 +1438,10 @@ Optional fields:
 - `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
 - `cachingConfig`: [CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef)
 
-## UpdateResolverResponseResponseTypeDef
+## UpdateResolverResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import UpdateResolverResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import UpdateResolverResponseTypeDef
 ```
 
 Required fields:
@@ -1450,10 +1450,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateTypeRequestTypeDef
+## UpdateTypeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import UpdateTypeRequestTypeDef
+from mypy_boto3_appsync.type_defs import UpdateTypeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1466,10 +1466,10 @@ Optional fields:
 
 - `definition`: `str`
 
-## UpdateTypeResponseResponseTypeDef
+## UpdateTypeResponseTypeDef
 
 ```python
-from mypy_boto3_appsync.type_defs import UpdateTypeResponseResponseTypeDef
+from mypy_boto3_appsync.type_defs import UpdateTypeResponseTypeDef
 ```
 
 Required fields:

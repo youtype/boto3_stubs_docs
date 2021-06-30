@@ -11,6 +11,7 @@ type annotations stubs module
   - [ComprehendClient](#comprehendclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [batch_detect_dominant_language](#batch_detect_dominant_language)
     - [batch_detect_entities](#batch_detect_entities)
     - [batch_detect_key_phrases](#batch_detect_key_phrases)
@@ -126,6 +127,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ComprehendClient exceptions.
+
+Type annotations for `boto3.client("comprehend").exceptions` method.
+
+Boto3 documentation:
+[Comprehend.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### batch_detect_dominant_language
 
 Determines the dominant language of the input text for a batch of documents.
@@ -137,14 +149,14 @@ Boto3 documentation:
 [Comprehend.Client.batch_detect_dominant_language](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_dominant_language)
 
 Arguments mapping described in
-[BatchDetectDominantLanguageRequestTypeDef](./type_defs.md#batchdetectdominantlanguagerequesttypedef).
+[BatchDetectDominantLanguageRequestRequestTypeDef](./type_defs.md#batchdetectdominantlanguagerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TextList`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDetectDominantLanguageResponseResponseTypeDef](./type_defs.md#batchdetectdominantlanguageresponseresponsetypedef).
+[BatchDetectDominantLanguageResponseTypeDef](./type_defs.md#batchdetectdominantlanguageresponsetypedef).
 
 ### batch_detect_entities
 
@@ -157,7 +169,7 @@ Boto3 documentation:
 [Comprehend.Client.batch_detect_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_entities)
 
 Arguments mapping described in
-[BatchDetectEntitiesRequestTypeDef](./type_defs.md#batchdetectentitiesrequesttypedef).
+[BatchDetectEntitiesRequestRequestTypeDef](./type_defs.md#batchdetectentitiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -166,7 +178,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchDetectEntitiesResponseResponseTypeDef](./type_defs.md#batchdetectentitiesresponseresponsetypedef).
+[BatchDetectEntitiesResponseTypeDef](./type_defs.md#batchdetectentitiesresponsetypedef).
 
 ### batch_detect_key_phrases
 
@@ -179,7 +191,7 @@ Boto3 documentation:
 [Comprehend.Client.batch_detect_key_phrases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_key_phrases)
 
 Arguments mapping described in
-[BatchDetectKeyPhrasesRequestTypeDef](./type_defs.md#batchdetectkeyphrasesrequesttypedef).
+[BatchDetectKeyPhrasesRequestRequestTypeDef](./type_defs.md#batchdetectkeyphrasesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -188,7 +200,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchDetectKeyPhrasesResponseResponseTypeDef](./type_defs.md#batchdetectkeyphrasesresponseresponsetypedef).
+[BatchDetectKeyPhrasesResponseTypeDef](./type_defs.md#batchdetectkeyphrasesresponsetypedef).
 
 ### batch_detect_sentiment
 
@@ -202,7 +214,7 @@ Boto3 documentation:
 [Comprehend.Client.batch_detect_sentiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_sentiment)
 
 Arguments mapping described in
-[BatchDetectSentimentRequestTypeDef](./type_defs.md#batchdetectsentimentrequesttypedef).
+[BatchDetectSentimentRequestRequestTypeDef](./type_defs.md#batchdetectsentimentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -211,7 +223,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchDetectSentimentResponseResponseTypeDef](./type_defs.md#batchdetectsentimentresponseresponsetypedef).
+[BatchDetectSentimentResponseTypeDef](./type_defs.md#batchdetectsentimentresponsetypedef).
 
 ### batch_detect_syntax
 
@@ -224,7 +236,7 @@ Boto3 documentation:
 [Comprehend.Client.batch_detect_syntax](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_syntax)
 
 Arguments mapping described in
-[BatchDetectSyntaxRequestTypeDef](./type_defs.md#batchdetectsyntaxrequesttypedef).
+[BatchDetectSyntaxRequestRequestTypeDef](./type_defs.md#batchdetectsyntaxrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -233,7 +245,7 @@ Keyword-only arguments:
   [SyntaxLanguageCodeType](./literals.md#syntaxlanguagecodetype) *(required)*
 
 Returns
-[BatchDetectSyntaxResponseResponseTypeDef](./type_defs.md#batchdetectsyntaxresponseresponsetypedef).
+[BatchDetectSyntaxResponseTypeDef](./type_defs.md#batchdetectsyntaxresponsetypedef).
 
 ### can_paginate
 
@@ -261,7 +273,7 @@ Boto3 documentation:
 [Comprehend.Client.classify_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.classify_document)
 
 Arguments mapping described in
-[ClassifyDocumentRequestTypeDef](./type_defs.md#classifydocumentrequesttypedef).
+[ClassifyDocumentRequestRequestTypeDef](./type_defs.md#classifydocumentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -269,7 +281,7 @@ Keyword-only arguments:
 - `EndpointArn`: `str` *(required)*
 
 Returns
-[ClassifyDocumentResponseResponseTypeDef](./type_defs.md#classifydocumentresponseresponsetypedef).
+[ClassifyDocumentResponseTypeDef](./type_defs.md#classifydocumentresponsetypedef).
 
 ### contains_pii_entities
 
@@ -283,7 +295,7 @@ Boto3 documentation:
 [Comprehend.Client.contains_pii_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.contains_pii_entities)
 
 Arguments mapping described in
-[ContainsPiiEntitiesRequestTypeDef](./type_defs.md#containspiientitiesrequesttypedef).
+[ContainsPiiEntitiesRequestRequestTypeDef](./type_defs.md#containspiientitiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -292,7 +304,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[ContainsPiiEntitiesResponseResponseTypeDef](./type_defs.md#containspiientitiesresponseresponsetypedef).
+[ContainsPiiEntitiesResponseTypeDef](./type_defs.md#containspiientitiesresponsetypedef).
 
 ### create_document_classifier
 
@@ -305,7 +317,7 @@ Boto3 documentation:
 [Comprehend.Client.create_document_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.create_document_classifier)
 
 Arguments mapping described in
-[CreateDocumentClassifierRequestTypeDef](./type_defs.md#createdocumentclassifierrequesttypedef).
+[CreateDocumentClassifierRequestRequestTypeDef](./type_defs.md#createdocumentclassifierrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -327,7 +339,7 @@ Keyword-only arguments:
 - `ModelKmsKeyId`: `str`
 
 Returns
-[CreateDocumentClassifierResponseResponseTypeDef](./type_defs.md#createdocumentclassifierresponseresponsetypedef).
+[CreateDocumentClassifierResponseTypeDef](./type_defs.md#createdocumentclassifierresponsetypedef).
 
 ### create_endpoint
 
@@ -342,7 +354,7 @@ Boto3 documentation:
 [Comprehend.Client.create_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.create_endpoint)
 
 Arguments mapping described in
-[CreateEndpointRequestTypeDef](./type_defs.md#createendpointrequesttypedef).
+[CreateEndpointRequestRequestTypeDef](./type_defs.md#createendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -354,7 +366,7 @@ Keyword-only arguments:
 - `DataAccessRoleArn`: `str`
 
 Returns
-[CreateEndpointResponseResponseTypeDef](./type_defs.md#createendpointresponseresponsetypedef).
+[CreateEndpointResponseTypeDef](./type_defs.md#createendpointresponsetypedef).
 
 ### create_entity_recognizer
 
@@ -367,7 +379,7 @@ Boto3 documentation:
 [Comprehend.Client.create_entity_recognizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.create_entity_recognizer)
 
 Arguments mapping described in
-[CreateEntityRecognizerRequestTypeDef](./type_defs.md#createentityrecognizerrequesttypedef).
+[CreateEntityRecognizerRequestRequestTypeDef](./type_defs.md#createentityrecognizerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -385,7 +397,7 @@ Keyword-only arguments:
 - `ModelKmsKeyId`: `str`
 
 Returns
-[CreateEntityRecognizerResponseResponseTypeDef](./type_defs.md#createentityrecognizerresponseresponsetypedef).
+[CreateEntityRecognizerResponseTypeDef](./type_defs.md#createentityrecognizerresponsetypedef).
 
 ### delete_document_classifier
 
@@ -399,7 +411,7 @@ Boto3 documentation:
 [Comprehend.Client.delete_document_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.delete_document_classifier)
 
 Arguments mapping described in
-[DeleteDocumentClassifierRequestTypeDef](./type_defs.md#deletedocumentclassifierrequesttypedef).
+[DeleteDocumentClassifierRequestRequestTypeDef](./type_defs.md#deletedocumentclassifierrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -417,7 +429,7 @@ Boto3 documentation:
 [Comprehend.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.delete_endpoint)
 
 Arguments mapping described in
-[DeleteEndpointRequestTypeDef](./type_defs.md#deleteendpointrequesttypedef).
+[DeleteEndpointRequestRequestTypeDef](./type_defs.md#deleteendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -436,7 +448,7 @@ Boto3 documentation:
 [Comprehend.Client.delete_entity_recognizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.delete_entity_recognizer)
 
 Arguments mapping described in
-[DeleteEntityRecognizerRequestTypeDef](./type_defs.md#deleteentityrecognizerrequesttypedef).
+[DeleteEntityRecognizerRequestRequestTypeDef](./type_defs.md#deleteentityrecognizerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -455,14 +467,14 @@ Boto3 documentation:
 [Comprehend.Client.describe_document_classification_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_document_classification_job)
 
 Arguments mapping described in
-[DescribeDocumentClassificationJobRequestTypeDef](./type_defs.md#describedocumentclassificationjobrequesttypedef).
+[DescribeDocumentClassificationJobRequestRequestTypeDef](./type_defs.md#describedocumentclassificationjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeDocumentClassificationJobResponseResponseTypeDef](./type_defs.md#describedocumentclassificationjobresponseresponsetypedef).
+[DescribeDocumentClassificationJobResponseTypeDef](./type_defs.md#describedocumentclassificationjobresponsetypedef).
 
 ### describe_document_classifier
 
@@ -475,14 +487,14 @@ Boto3 documentation:
 [Comprehend.Client.describe_document_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_document_classifier)
 
 Arguments mapping described in
-[DescribeDocumentClassifierRequestTypeDef](./type_defs.md#describedocumentclassifierrequesttypedef).
+[DescribeDocumentClassifierRequestRequestTypeDef](./type_defs.md#describedocumentclassifierrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DocumentClassifierArn`: `str` *(required)*
 
 Returns
-[DescribeDocumentClassifierResponseResponseTypeDef](./type_defs.md#describedocumentclassifierresponseresponsetypedef).
+[DescribeDocumentClassifierResponseTypeDef](./type_defs.md#describedocumentclassifierresponsetypedef).
 
 ### describe_dominant_language_detection_job
 
@@ -495,14 +507,14 @@ Boto3 documentation:
 [Comprehend.Client.describe_dominant_language_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_dominant_language_detection_job)
 
 Arguments mapping described in
-[DescribeDominantLanguageDetectionJobRequestTypeDef](./type_defs.md#describedominantlanguagedetectionjobrequesttypedef).
+[DescribeDominantLanguageDetectionJobRequestRequestTypeDef](./type_defs.md#describedominantlanguagedetectionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeDominantLanguageDetectionJobResponseResponseTypeDef](./type_defs.md#describedominantlanguagedetectionjobresponseresponsetypedef).
+[DescribeDominantLanguageDetectionJobResponseTypeDef](./type_defs.md#describedominantlanguagedetectionjobresponsetypedef).
 
 ### describe_endpoint
 
@@ -514,14 +526,14 @@ Boto3 documentation:
 [Comprehend.Client.describe_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_endpoint)
 
 Arguments mapping described in
-[DescribeEndpointRequestTypeDef](./type_defs.md#describeendpointrequesttypedef).
+[DescribeEndpointRequestRequestTypeDef](./type_defs.md#describeendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `EndpointArn`: `str` *(required)*
 
 Returns
-[DescribeEndpointResponseResponseTypeDef](./type_defs.md#describeendpointresponseresponsetypedef).
+[DescribeEndpointResponseTypeDef](./type_defs.md#describeendpointresponsetypedef).
 
 ### describe_entities_detection_job
 
@@ -534,14 +546,14 @@ Boto3 documentation:
 [Comprehend.Client.describe_entities_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_entities_detection_job)
 
 Arguments mapping described in
-[DescribeEntitiesDetectionJobRequestTypeDef](./type_defs.md#describeentitiesdetectionjobrequesttypedef).
+[DescribeEntitiesDetectionJobRequestRequestTypeDef](./type_defs.md#describeentitiesdetectionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeEntitiesDetectionJobResponseResponseTypeDef](./type_defs.md#describeentitiesdetectionjobresponseresponsetypedef).
+[DescribeEntitiesDetectionJobResponseTypeDef](./type_defs.md#describeentitiesdetectionjobresponsetypedef).
 
 ### describe_entity_recognizer
 
@@ -555,14 +567,14 @@ Boto3 documentation:
 [Comprehend.Client.describe_entity_recognizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_entity_recognizer)
 
 Arguments mapping described in
-[DescribeEntityRecognizerRequestTypeDef](./type_defs.md#describeentityrecognizerrequesttypedef).
+[DescribeEntityRecognizerRequestRequestTypeDef](./type_defs.md#describeentityrecognizerrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `EntityRecognizerArn`: `str` *(required)*
 
 Returns
-[DescribeEntityRecognizerResponseResponseTypeDef](./type_defs.md#describeentityrecognizerresponseresponsetypedef).
+[DescribeEntityRecognizerResponseTypeDef](./type_defs.md#describeentityrecognizerresponsetypedef).
 
 ### describe_events_detection_job
 
@@ -575,14 +587,14 @@ Boto3 documentation:
 [Comprehend.Client.describe_events_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_events_detection_job)
 
 Arguments mapping described in
-[DescribeEventsDetectionJobRequestTypeDef](./type_defs.md#describeeventsdetectionjobrequesttypedef).
+[DescribeEventsDetectionJobRequestRequestTypeDef](./type_defs.md#describeeventsdetectionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeEventsDetectionJobResponseResponseTypeDef](./type_defs.md#describeeventsdetectionjobresponseresponsetypedef).
+[DescribeEventsDetectionJobResponseTypeDef](./type_defs.md#describeeventsdetectionjobresponsetypedef).
 
 ### describe_key_phrases_detection_job
 
@@ -595,14 +607,14 @@ Boto3 documentation:
 [Comprehend.Client.describe_key_phrases_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_key_phrases_detection_job)
 
 Arguments mapping described in
-[DescribeKeyPhrasesDetectionJobRequestTypeDef](./type_defs.md#describekeyphrasesdetectionjobrequesttypedef).
+[DescribeKeyPhrasesDetectionJobRequestRequestTypeDef](./type_defs.md#describekeyphrasesdetectionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeKeyPhrasesDetectionJobResponseResponseTypeDef](./type_defs.md#describekeyphrasesdetectionjobresponseresponsetypedef).
+[DescribeKeyPhrasesDetectionJobResponseTypeDef](./type_defs.md#describekeyphrasesdetectionjobresponsetypedef).
 
 ### describe_pii_entities_detection_job
 
@@ -615,14 +627,14 @@ Boto3 documentation:
 [Comprehend.Client.describe_pii_entities_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_pii_entities_detection_job)
 
 Arguments mapping described in
-[DescribePiiEntitiesDetectionJobRequestTypeDef](./type_defs.md#describepiientitiesdetectionjobrequesttypedef).
+[DescribePiiEntitiesDetectionJobRequestRequestTypeDef](./type_defs.md#describepiientitiesdetectionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribePiiEntitiesDetectionJobResponseResponseTypeDef](./type_defs.md#describepiientitiesdetectionjobresponseresponsetypedef).
+[DescribePiiEntitiesDetectionJobResponseTypeDef](./type_defs.md#describepiientitiesdetectionjobresponsetypedef).
 
 ### describe_sentiment_detection_job
 
@@ -635,14 +647,14 @@ Boto3 documentation:
 [Comprehend.Client.describe_sentiment_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_sentiment_detection_job)
 
 Arguments mapping described in
-[DescribeSentimentDetectionJobRequestTypeDef](./type_defs.md#describesentimentdetectionjobrequesttypedef).
+[DescribeSentimentDetectionJobRequestRequestTypeDef](./type_defs.md#describesentimentdetectionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeSentimentDetectionJobResponseResponseTypeDef](./type_defs.md#describesentimentdetectionjobresponseresponsetypedef).
+[DescribeSentimentDetectionJobResponseTypeDef](./type_defs.md#describesentimentdetectionjobresponsetypedef).
 
 ### describe_topics_detection_job
 
@@ -655,14 +667,14 @@ Boto3 documentation:
 [Comprehend.Client.describe_topics_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_topics_detection_job)
 
 Arguments mapping described in
-[DescribeTopicsDetectionJobRequestTypeDef](./type_defs.md#describetopicsdetectionjobrequesttypedef).
+[DescribeTopicsDetectionJobRequestRequestTypeDef](./type_defs.md#describetopicsdetectionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeTopicsDetectionJobResponseResponseTypeDef](./type_defs.md#describetopicsdetectionjobresponseresponsetypedef).
+[DescribeTopicsDetectionJobResponseTypeDef](./type_defs.md#describetopicsdetectionjobresponsetypedef).
 
 ### detect_dominant_language
 
@@ -675,14 +687,14 @@ Boto3 documentation:
 [Comprehend.Client.detect_dominant_language](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_dominant_language)
 
 Arguments mapping described in
-[DetectDominantLanguageRequestTypeDef](./type_defs.md#detectdominantlanguagerequesttypedef).
+[DetectDominantLanguageRequestRequestTypeDef](./type_defs.md#detectdominantlanguagerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Text`: `str` *(required)*
 
 Returns
-[DetectDominantLanguageResponseResponseTypeDef](./type_defs.md#detectdominantlanguageresponseresponsetypedef).
+[DetectDominantLanguageResponseTypeDef](./type_defs.md#detectdominantlanguageresponsetypedef).
 
 ### detect_entities
 
@@ -694,7 +706,7 @@ Boto3 documentation:
 [Comprehend.Client.detect_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_entities)
 
 Arguments mapping described in
-[DetectEntitiesRequestTypeDef](./type_defs.md#detectentitiesrequesttypedef).
+[DetectEntitiesRequestRequestTypeDef](./type_defs.md#detectentitiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -703,7 +715,7 @@ Keyword-only arguments:
 - `EndpointArn`: `str`
 
 Returns
-[DetectEntitiesResponseResponseTypeDef](./type_defs.md#detectentitiesresponseresponsetypedef).
+[DetectEntitiesResponseTypeDef](./type_defs.md#detectentitiesresponsetypedef).
 
 ### detect_key_phrases
 
@@ -715,7 +727,7 @@ Boto3 documentation:
 [Comprehend.Client.detect_key_phrases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_key_phrases)
 
 Arguments mapping described in
-[DetectKeyPhrasesRequestTypeDef](./type_defs.md#detectkeyphrasesrequesttypedef).
+[DetectKeyPhrasesRequestRequestTypeDef](./type_defs.md#detectkeyphrasesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -724,7 +736,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[DetectKeyPhrasesResponseResponseTypeDef](./type_defs.md#detectkeyphrasesresponseresponsetypedef).
+[DetectKeyPhrasesResponseTypeDef](./type_defs.md#detectkeyphrasesresponsetypedef).
 
 ### detect_pii_entities
 
@@ -737,7 +749,7 @@ Boto3 documentation:
 [Comprehend.Client.detect_pii_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_pii_entities)
 
 Arguments mapping described in
-[DetectPiiEntitiesRequestTypeDef](./type_defs.md#detectpiientitiesrequesttypedef).
+[DetectPiiEntitiesRequestRequestTypeDef](./type_defs.md#detectpiientitiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -746,7 +758,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[DetectPiiEntitiesResponseResponseTypeDef](./type_defs.md#detectpiientitiesresponseresponsetypedef).
+[DetectPiiEntitiesResponseTypeDef](./type_defs.md#detectpiientitiesresponsetypedef).
 
 ### detect_sentiment
 
@@ -759,7 +771,7 @@ Boto3 documentation:
 [Comprehend.Client.detect_sentiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_sentiment)
 
 Arguments mapping described in
-[DetectSentimentRequestTypeDef](./type_defs.md#detectsentimentrequesttypedef).
+[DetectSentimentRequestRequestTypeDef](./type_defs.md#detectsentimentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -768,7 +780,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[DetectSentimentResponseResponseTypeDef](./type_defs.md#detectsentimentresponseresponsetypedef).
+[DetectSentimentResponseTypeDef](./type_defs.md#detectsentimentresponsetypedef).
 
 ### detect_syntax
 
@@ -780,7 +792,7 @@ Boto3 documentation:
 [Comprehend.Client.detect_syntax](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_syntax)
 
 Arguments mapping described in
-[DetectSyntaxRequestTypeDef](./type_defs.md#detectsyntaxrequesttypedef).
+[DetectSyntaxRequestRequestTypeDef](./type_defs.md#detectsyntaxrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -789,7 +801,7 @@ Keyword-only arguments:
   [SyntaxLanguageCodeType](./literals.md#syntaxlanguagecodetype) *(required)*
 
 Returns
-[DetectSyntaxResponseResponseTypeDef](./type_defs.md#detectsyntaxresponseresponsetypedef).
+[DetectSyntaxResponseTypeDef](./type_defs.md#detectsyntaxresponsetypedef).
 
 ### generate_presigned_url
 
@@ -821,7 +833,7 @@ Boto3 documentation:
 [Comprehend.Client.list_document_classification_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_document_classification_jobs)
 
 Arguments mapping described in
-[ListDocumentClassificationJobsRequestTypeDef](./type_defs.md#listdocumentclassificationjobsrequesttypedef).
+[ListDocumentClassificationJobsRequestRequestTypeDef](./type_defs.md#listdocumentclassificationjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -831,7 +843,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDocumentClassificationJobsResponseResponseTypeDef](./type_defs.md#listdocumentclassificationjobsresponseresponsetypedef).
+[ListDocumentClassificationJobsResponseTypeDef](./type_defs.md#listdocumentclassificationjobsresponsetypedef).
 
 ### list_document_classifiers
 
@@ -844,7 +856,7 @@ Boto3 documentation:
 [Comprehend.Client.list_document_classifiers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_document_classifiers)
 
 Arguments mapping described in
-[ListDocumentClassifiersRequestTypeDef](./type_defs.md#listdocumentclassifiersrequesttypedef).
+[ListDocumentClassifiersRequestRequestTypeDef](./type_defs.md#listdocumentclassifiersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -854,7 +866,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDocumentClassifiersResponseResponseTypeDef](./type_defs.md#listdocumentclassifiersresponseresponsetypedef).
+[ListDocumentClassifiersResponseTypeDef](./type_defs.md#listdocumentclassifiersresponsetypedef).
 
 ### list_dominant_language_detection_jobs
 
@@ -867,7 +879,7 @@ Boto3 documentation:
 [Comprehend.Client.list_dominant_language_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_dominant_language_detection_jobs)
 
 Arguments mapping described in
-[ListDominantLanguageDetectionJobsRequestTypeDef](./type_defs.md#listdominantlanguagedetectionjobsrequesttypedef).
+[ListDominantLanguageDetectionJobsRequestRequestTypeDef](./type_defs.md#listdominantlanguagedetectionjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -877,7 +889,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDominantLanguageDetectionJobsResponseResponseTypeDef](./type_defs.md#listdominantlanguagedetectionjobsresponseresponsetypedef).
+[ListDominantLanguageDetectionJobsResponseTypeDef](./type_defs.md#listdominantlanguagedetectionjobsresponsetypedef).
 
 ### list_endpoints
 
@@ -889,7 +901,7 @@ Boto3 documentation:
 [Comprehend.Client.list_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_endpoints)
 
 Arguments mapping described in
-[ListEndpointsRequestTypeDef](./type_defs.md#listendpointsrequesttypedef).
+[ListEndpointsRequestRequestTypeDef](./type_defs.md#listendpointsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -898,7 +910,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListEndpointsResponseResponseTypeDef](./type_defs.md#listendpointsresponseresponsetypedef).
+[ListEndpointsResponseTypeDef](./type_defs.md#listendpointsresponsetypedef).
 
 ### list_entities_detection_jobs
 
@@ -911,7 +923,7 @@ Boto3 documentation:
 [Comprehend.Client.list_entities_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_entities_detection_jobs)
 
 Arguments mapping described in
-[ListEntitiesDetectionJobsRequestTypeDef](./type_defs.md#listentitiesdetectionjobsrequesttypedef).
+[ListEntitiesDetectionJobsRequestRequestTypeDef](./type_defs.md#listentitiesdetectionjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -921,7 +933,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListEntitiesDetectionJobsResponseResponseTypeDef](./type_defs.md#listentitiesdetectionjobsresponseresponsetypedef).
+[ListEntitiesDetectionJobsResponseTypeDef](./type_defs.md#listentitiesdetectionjobsresponsetypedef).
 
 ### list_entity_recognizers
 
@@ -935,7 +947,7 @@ Boto3 documentation:
 [Comprehend.Client.list_entity_recognizers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_entity_recognizers)
 
 Arguments mapping described in
-[ListEntityRecognizersRequestTypeDef](./type_defs.md#listentityrecognizersrequesttypedef).
+[ListEntityRecognizersRequestRequestTypeDef](./type_defs.md#listentityrecognizersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -945,7 +957,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListEntityRecognizersResponseResponseTypeDef](./type_defs.md#listentityrecognizersresponseresponsetypedef).
+[ListEntityRecognizersResponseTypeDef](./type_defs.md#listentityrecognizersresponsetypedef).
 
 ### list_events_detection_jobs
 
@@ -958,7 +970,7 @@ Boto3 documentation:
 [Comprehend.Client.list_events_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_events_detection_jobs)
 
 Arguments mapping described in
-[ListEventsDetectionJobsRequestTypeDef](./type_defs.md#listeventsdetectionjobsrequesttypedef).
+[ListEventsDetectionJobsRequestRequestTypeDef](./type_defs.md#listeventsdetectionjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -968,7 +980,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListEventsDetectionJobsResponseResponseTypeDef](./type_defs.md#listeventsdetectionjobsresponseresponsetypedef).
+[ListEventsDetectionJobsResponseTypeDef](./type_defs.md#listeventsdetectionjobsresponsetypedef).
 
 ### list_key_phrases_detection_jobs
 
@@ -981,7 +993,7 @@ Boto3 documentation:
 [Comprehend.Client.list_key_phrases_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_key_phrases_detection_jobs)
 
 Arguments mapping described in
-[ListKeyPhrasesDetectionJobsRequestTypeDef](./type_defs.md#listkeyphrasesdetectionjobsrequesttypedef).
+[ListKeyPhrasesDetectionJobsRequestRequestTypeDef](./type_defs.md#listkeyphrasesdetectionjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -991,7 +1003,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListKeyPhrasesDetectionJobsResponseResponseTypeDef](./type_defs.md#listkeyphrasesdetectionjobsresponseresponsetypedef).
+[ListKeyPhrasesDetectionJobsResponseTypeDef](./type_defs.md#listkeyphrasesdetectionjobsresponsetypedef).
 
 ### list_pii_entities_detection_jobs
 
@@ -1004,7 +1016,7 @@ Boto3 documentation:
 [Comprehend.Client.list_pii_entities_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_pii_entities_detection_jobs)
 
 Arguments mapping described in
-[ListPiiEntitiesDetectionJobsRequestTypeDef](./type_defs.md#listpiientitiesdetectionjobsrequesttypedef).
+[ListPiiEntitiesDetectionJobsRequestRequestTypeDef](./type_defs.md#listpiientitiesdetectionjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1014,7 +1026,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPiiEntitiesDetectionJobsResponseResponseTypeDef](./type_defs.md#listpiientitiesdetectionjobsresponseresponsetypedef).
+[ListPiiEntitiesDetectionJobsResponseTypeDef](./type_defs.md#listpiientitiesdetectionjobsresponsetypedef).
 
 ### list_sentiment_detection_jobs
 
@@ -1027,7 +1039,7 @@ Boto3 documentation:
 [Comprehend.Client.list_sentiment_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_sentiment_detection_jobs)
 
 Arguments mapping described in
-[ListSentimentDetectionJobsRequestTypeDef](./type_defs.md#listsentimentdetectionjobsrequesttypedef).
+[ListSentimentDetectionJobsRequestRequestTypeDef](./type_defs.md#listsentimentdetectionjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1037,7 +1049,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListSentimentDetectionJobsResponseResponseTypeDef](./type_defs.md#listsentimentdetectionjobsresponseresponsetypedef).
+[ListSentimentDetectionJobsResponseTypeDef](./type_defs.md#listsentimentdetectionjobsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -1050,14 +1062,14 @@ Boto3 documentation:
 [Comprehend.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_topics_detection_jobs
 
@@ -1070,7 +1082,7 @@ Boto3 documentation:
 [Comprehend.Client.list_topics_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_topics_detection_jobs)
 
 Arguments mapping described in
-[ListTopicsDetectionJobsRequestTypeDef](./type_defs.md#listtopicsdetectionjobsrequesttypedef).
+[ListTopicsDetectionJobsRequestRequestTypeDef](./type_defs.md#listtopicsdetectionjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1080,7 +1092,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTopicsDetectionJobsResponseResponseTypeDef](./type_defs.md#listtopicsdetectionjobsresponseresponsetypedef).
+[ListTopicsDetectionJobsResponseTypeDef](./type_defs.md#listtopicsdetectionjobsresponsetypedef).
 
 ### start_document_classification_job
 
@@ -1093,7 +1105,7 @@ Boto3 documentation:
 [Comprehend.Client.start_document_classification_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_document_classification_job)
 
 Arguments mapping described in
-[StartDocumentClassificationJobRequestTypeDef](./type_defs.md#startdocumentclassificationjobrequesttypedef).
+[StartDocumentClassificationJobRequestRequestTypeDef](./type_defs.md#startdocumentclassificationjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1110,7 +1122,7 @@ Keyword-only arguments:
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 
 Returns
-[StartDocumentClassificationJobResponseResponseTypeDef](./type_defs.md#startdocumentclassificationjobresponseresponsetypedef).
+[StartDocumentClassificationJobResponseTypeDef](./type_defs.md#startdocumentclassificationjobresponsetypedef).
 
 ### start_dominant_language_detection_job
 
@@ -1124,7 +1136,7 @@ Boto3 documentation:
 [Comprehend.Client.start_dominant_language_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_dominant_language_detection_job)
 
 Arguments mapping described in
-[StartDominantLanguageDetectionJobRequestTypeDef](./type_defs.md#startdominantlanguagedetectionjobrequesttypedef).
+[StartDominantLanguageDetectionJobRequestRequestTypeDef](./type_defs.md#startdominantlanguagedetectionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1140,7 +1152,7 @@ Keyword-only arguments:
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 
 Returns
-[StartDominantLanguageDetectionJobResponseResponseTypeDef](./type_defs.md#startdominantlanguagedetectionjobresponseresponsetypedef).
+[StartDominantLanguageDetectionJobResponseTypeDef](./type_defs.md#startdominantlanguagedetectionjobresponsetypedef).
 
 ### start_entities_detection_job
 
@@ -1153,7 +1165,7 @@ Boto3 documentation:
 [Comprehend.Client.start_entities_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_entities_detection_job)
 
 Arguments mapping described in
-[StartEntitiesDetectionJobRequestTypeDef](./type_defs.md#startentitiesdetectionjobrequesttypedef).
+[StartEntitiesDetectionJobRequestRequestTypeDef](./type_defs.md#startentitiesdetectionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1172,7 +1184,7 @@ Keyword-only arguments:
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 
 Returns
-[StartEntitiesDetectionJobResponseResponseTypeDef](./type_defs.md#startentitiesdetectionjobresponseresponsetypedef).
+[StartEntitiesDetectionJobResponseTypeDef](./type_defs.md#startentitiesdetectionjobresponsetypedef).
 
 ### start_events_detection_job
 
@@ -1185,7 +1197,7 @@ Boto3 documentation:
 [Comprehend.Client.start_events_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_events_detection_job)
 
 Arguments mapping described in
-[StartEventsDetectionJobRequestTypeDef](./type_defs.md#starteventsdetectionjobrequesttypedef).
+[StartEventsDetectionJobRequestRequestTypeDef](./type_defs.md#starteventsdetectionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1202,7 +1214,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[StartEventsDetectionJobResponseResponseTypeDef](./type_defs.md#starteventsdetectionjobresponseresponsetypedef).
+[StartEventsDetectionJobResponseTypeDef](./type_defs.md#starteventsdetectionjobresponsetypedef).
 
 ### start_key_phrases_detection_job
 
@@ -1215,7 +1227,7 @@ Boto3 documentation:
 [Comprehend.Client.start_key_phrases_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_key_phrases_detection_job)
 
 Arguments mapping described in
-[StartKeyPhrasesDetectionJobRequestTypeDef](./type_defs.md#startkeyphrasesdetectionjobrequesttypedef).
+[StartKeyPhrasesDetectionJobRequestRequestTypeDef](./type_defs.md#startkeyphrasesdetectionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1233,7 +1245,7 @@ Keyword-only arguments:
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 
 Returns
-[StartKeyPhrasesDetectionJobResponseResponseTypeDef](./type_defs.md#startkeyphrasesdetectionjobresponseresponsetypedef).
+[StartKeyPhrasesDetectionJobResponseTypeDef](./type_defs.md#startkeyphrasesdetectionjobresponsetypedef).
 
 ### start_pii_entities_detection_job
 
@@ -1246,7 +1258,7 @@ Boto3 documentation:
 [Comprehend.Client.start_pii_entities_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_pii_entities_detection_job)
 
 Arguments mapping described in
-[StartPiiEntitiesDetectionJobRequestTypeDef](./type_defs.md#startpiientitiesdetectionjobrequesttypedef).
+[StartPiiEntitiesDetectionJobRequestRequestTypeDef](./type_defs.md#startpiientitiesdetectionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1267,7 +1279,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[StartPiiEntitiesDetectionJobResponseResponseTypeDef](./type_defs.md#startpiientitiesdetectionjobresponseresponsetypedef).
+[StartPiiEntitiesDetectionJobResponseTypeDef](./type_defs.md#startpiientitiesdetectionjobresponsetypedef).
 
 ### start_sentiment_detection_job
 
@@ -1280,7 +1292,7 @@ Boto3 documentation:
 [Comprehend.Client.start_sentiment_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_sentiment_detection_job)
 
 Arguments mapping described in
-[StartSentimentDetectionJobRequestTypeDef](./type_defs.md#startsentimentdetectionjobrequesttypedef).
+[StartSentimentDetectionJobRequestRequestTypeDef](./type_defs.md#startsentimentdetectionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1298,7 +1310,7 @@ Keyword-only arguments:
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 
 Returns
-[StartSentimentDetectionJobResponseResponseTypeDef](./type_defs.md#startsentimentdetectionjobresponseresponsetypedef).
+[StartSentimentDetectionJobResponseTypeDef](./type_defs.md#startsentimentdetectionjobresponsetypedef).
 
 ### start_topics_detection_job
 
@@ -1311,7 +1323,7 @@ Boto3 documentation:
 [Comprehend.Client.start_topics_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_topics_detection_job)
 
 Arguments mapping described in
-[StartTopicsDetectionJobRequestTypeDef](./type_defs.md#starttopicsdetectionjobrequesttypedef).
+[StartTopicsDetectionJobRequestRequestTypeDef](./type_defs.md#starttopicsdetectionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1328,7 +1340,7 @@ Keyword-only arguments:
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 
 Returns
-[StartTopicsDetectionJobResponseResponseTypeDef](./type_defs.md#starttopicsdetectionjobresponseresponsetypedef).
+[StartTopicsDetectionJobResponseTypeDef](./type_defs.md#starttopicsdetectionjobresponsetypedef).
 
 ### stop_dominant_language_detection_job
 
@@ -1341,14 +1353,14 @@ Boto3 documentation:
 [Comprehend.Client.stop_dominant_language_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_dominant_language_detection_job)
 
 Arguments mapping described in
-[StopDominantLanguageDetectionJobRequestTypeDef](./type_defs.md#stopdominantlanguagedetectionjobrequesttypedef).
+[StopDominantLanguageDetectionJobRequestRequestTypeDef](./type_defs.md#stopdominantlanguagedetectionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[StopDominantLanguageDetectionJobResponseResponseTypeDef](./type_defs.md#stopdominantlanguagedetectionjobresponseresponsetypedef).
+[StopDominantLanguageDetectionJobResponseTypeDef](./type_defs.md#stopdominantlanguagedetectionjobresponsetypedef).
 
 ### stop_entities_detection_job
 
@@ -1361,14 +1373,14 @@ Boto3 documentation:
 [Comprehend.Client.stop_entities_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_entities_detection_job)
 
 Arguments mapping described in
-[StopEntitiesDetectionJobRequestTypeDef](./type_defs.md#stopentitiesdetectionjobrequesttypedef).
+[StopEntitiesDetectionJobRequestRequestTypeDef](./type_defs.md#stopentitiesdetectionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[StopEntitiesDetectionJobResponseResponseTypeDef](./type_defs.md#stopentitiesdetectionjobresponseresponsetypedef).
+[StopEntitiesDetectionJobResponseTypeDef](./type_defs.md#stopentitiesdetectionjobresponsetypedef).
 
 ### stop_events_detection_job
 
@@ -1381,14 +1393,14 @@ Boto3 documentation:
 [Comprehend.Client.stop_events_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_events_detection_job)
 
 Arguments mapping described in
-[StopEventsDetectionJobRequestTypeDef](./type_defs.md#stopeventsdetectionjobrequesttypedef).
+[StopEventsDetectionJobRequestRequestTypeDef](./type_defs.md#stopeventsdetectionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[StopEventsDetectionJobResponseResponseTypeDef](./type_defs.md#stopeventsdetectionjobresponseresponsetypedef).
+[StopEventsDetectionJobResponseTypeDef](./type_defs.md#stopeventsdetectionjobresponsetypedef).
 
 ### stop_key_phrases_detection_job
 
@@ -1401,14 +1413,14 @@ Boto3 documentation:
 [Comprehend.Client.stop_key_phrases_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_key_phrases_detection_job)
 
 Arguments mapping described in
-[StopKeyPhrasesDetectionJobRequestTypeDef](./type_defs.md#stopkeyphrasesdetectionjobrequesttypedef).
+[StopKeyPhrasesDetectionJobRequestRequestTypeDef](./type_defs.md#stopkeyphrasesdetectionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[StopKeyPhrasesDetectionJobResponseResponseTypeDef](./type_defs.md#stopkeyphrasesdetectionjobresponseresponsetypedef).
+[StopKeyPhrasesDetectionJobResponseTypeDef](./type_defs.md#stopkeyphrasesdetectionjobresponsetypedef).
 
 ### stop_pii_entities_detection_job
 
@@ -1421,14 +1433,14 @@ Boto3 documentation:
 [Comprehend.Client.stop_pii_entities_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_pii_entities_detection_job)
 
 Arguments mapping described in
-[StopPiiEntitiesDetectionJobRequestTypeDef](./type_defs.md#stoppiientitiesdetectionjobrequesttypedef).
+[StopPiiEntitiesDetectionJobRequestRequestTypeDef](./type_defs.md#stoppiientitiesdetectionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[StopPiiEntitiesDetectionJobResponseResponseTypeDef](./type_defs.md#stoppiientitiesdetectionjobresponseresponsetypedef).
+[StopPiiEntitiesDetectionJobResponseTypeDef](./type_defs.md#stoppiientitiesdetectionjobresponsetypedef).
 
 ### stop_sentiment_detection_job
 
@@ -1441,14 +1453,14 @@ Boto3 documentation:
 [Comprehend.Client.stop_sentiment_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_sentiment_detection_job)
 
 Arguments mapping described in
-[StopSentimentDetectionJobRequestTypeDef](./type_defs.md#stopsentimentdetectionjobrequesttypedef).
+[StopSentimentDetectionJobRequestRequestTypeDef](./type_defs.md#stopsentimentdetectionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[StopSentimentDetectionJobResponseResponseTypeDef](./type_defs.md#stopsentimentdetectionjobresponseresponsetypedef).
+[StopSentimentDetectionJobResponseTypeDef](./type_defs.md#stopsentimentdetectionjobresponsetypedef).
 
 ### stop_training_document_classifier
 
@@ -1461,7 +1473,7 @@ Boto3 documentation:
 [Comprehend.Client.stop_training_document_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_training_document_classifier)
 
 Arguments mapping described in
-[StopTrainingDocumentClassifierRequestTypeDef](./type_defs.md#stoptrainingdocumentclassifierrequesttypedef).
+[StopTrainingDocumentClassifierRequestRequestTypeDef](./type_defs.md#stoptrainingdocumentclassifierrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1480,7 +1492,7 @@ Boto3 documentation:
 [Comprehend.Client.stop_training_entity_recognizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_training_entity_recognizer)
 
 Arguments mapping described in
-[StopTrainingEntityRecognizerRequestTypeDef](./type_defs.md#stoptrainingentityrecognizerrequesttypedef).
+[StopTrainingEntityRecognizerRequestRequestTypeDef](./type_defs.md#stoptrainingentityrecognizerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1498,7 +1510,7 @@ Boto3 documentation:
 [Comprehend.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1517,7 +1529,7 @@ Boto3 documentation:
 [Comprehend.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1536,7 +1548,7 @@ Boto3 documentation:
 [Comprehend.Client.update_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.update_endpoint)
 
 Arguments mapping described in
-[UpdateEndpointRequestTypeDef](./type_defs.md#updateendpointrequesttypedef).
+[UpdateEndpointRequestRequestTypeDef](./type_defs.md#updateendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 

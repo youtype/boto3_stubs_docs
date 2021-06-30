@@ -33,6 +33,7 @@ from mypy_boto3_appintegrations.client import AppIntegrationsServiceClient
 - [can_paginate](./client.md#can_paginate)
 - [create_event_integration](./client.md#create_event_integration)
 - [delete_event_integration](./client.md#delete_event_integration)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_event_integration](./client.md#get_event_integration)
 - [list_event_integration_associations](./client.md#list_event_integration_associations)
@@ -63,24 +64,24 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_appintegrations.type_defs import CreateEventIntegrationRequestTypeDef, ...
+from mypy_boto3_appintegrations.type_defs import CreateEventIntegrationRequestRequestTypeDef, ...
 ```
 
-- [CreateEventIntegrationRequestTypeDef](./type_defs.md#createeventintegrationrequesttypedef)
-- [CreateEventIntegrationResponseResponseTypeDef](./type_defs.md#createeventintegrationresponseresponsetypedef)
-- [DeleteEventIntegrationRequestTypeDef](./type_defs.md#deleteeventintegrationrequesttypedef)
+- [CreateEventIntegrationRequestRequestTypeDef](./type_defs.md#createeventintegrationrequestrequesttypedef)
+- [CreateEventIntegrationResponseTypeDef](./type_defs.md#createeventintegrationresponsetypedef)
+- [DeleteEventIntegrationRequestRequestTypeDef](./type_defs.md#deleteeventintegrationrequestrequesttypedef)
 - [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
 - [EventIntegrationAssociationTypeDef](./type_defs.md#eventintegrationassociationtypedef)
 - [EventIntegrationTypeDef](./type_defs.md#eventintegrationtypedef)
-- [GetEventIntegrationRequestTypeDef](./type_defs.md#geteventintegrationrequesttypedef)
-- [GetEventIntegrationResponseResponseTypeDef](./type_defs.md#geteventintegrationresponseresponsetypedef)
-- [ListEventIntegrationAssociationsRequestTypeDef](./type_defs.md#listeventintegrationassociationsrequesttypedef)
-- [ListEventIntegrationAssociationsResponseResponseTypeDef](./type_defs.md#listeventintegrationassociationsresponseresponsetypedef)
-- [ListEventIntegrationsRequestTypeDef](./type_defs.md#listeventintegrationsrequesttypedef)
-- [ListEventIntegrationsResponseResponseTypeDef](./type_defs.md#listeventintegrationsresponseresponsetypedef)
-- [ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef)
-- [ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef)
+- [GetEventIntegrationRequestRequestTypeDef](./type_defs.md#geteventintegrationrequestrequesttypedef)
+- [GetEventIntegrationResponseTypeDef](./type_defs.md#geteventintegrationresponsetypedef)
+- [ListEventIntegrationAssociationsRequestRequestTypeDef](./type_defs.md#listeventintegrationassociationsrequestrequesttypedef)
+- [ListEventIntegrationAssociationsResponseTypeDef](./type_defs.md#listeventintegrationassociationsresponsetypedef)
+- [ListEventIntegrationsRequestRequestTypeDef](./type_defs.md#listeventintegrationsrequestrequesttypedef)
+- [ListEventIntegrationsResponseTypeDef](./type_defs.md#listeventintegrationsresponsetypedef)
+- [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
+- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef)
-- [UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef)
-- [UpdateEventIntegrationRequestTypeDef](./type_defs.md#updateeventintegrationrequesttypedef)
+- [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
+- [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
+- [UpdateEventIntegrationRequestRequestTypeDef](./type_defs.md#updateeventintegrationrequestrequesttypedef)

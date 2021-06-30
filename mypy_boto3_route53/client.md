@@ -11,6 +11,7 @@ type annotations stubs module
   - [Route53Client](#route53client)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [activate_key_signing_key](#activate_key_signing_key)
     - [associate_vpc_with_hosted_zone](#associate_vpc_with_hosted_zone)
     - [can_paginate](#can_paginate)
@@ -177,6 +178,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+Route53Client exceptions.
+
+Type annotations for `boto3.client("route53").exceptions` method.
+
+Boto3 documentation:
+[Route53.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### activate_key_signing_key
 
 Activates a key-signing key (KSK) so that it can be used for signing by DNSSEC.
@@ -187,7 +199,7 @@ Boto3 documentation:
 [Route53.Client.activate_key_signing_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.activate_key_signing_key)
 
 Arguments mapping described in
-[ActivateKeySigningKeyRequestTypeDef](./type_defs.md#activatekeysigningkeyrequesttypedef).
+[ActivateKeySigningKeyRequestRequestTypeDef](./type_defs.md#activatekeysigningkeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -195,7 +207,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[ActivateKeySigningKeyResponseResponseTypeDef](./type_defs.md#activatekeysigningkeyresponseresponsetypedef).
+[ActivateKeySigningKeyResponseTypeDef](./type_defs.md#activatekeysigningkeyresponsetypedef).
 
 ### associate_vpc_with_hosted_zone
 
@@ -208,7 +220,7 @@ Boto3 documentation:
 [Route53.Client.associate_vpc_with_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.associate_vpc_with_hosted_zone)
 
 Arguments mapping described in
-[AssociateVPCWithHostedZoneRequestTypeDef](./type_defs.md#associatevpcwithhostedzonerequesttypedef).
+[AssociateVPCWithHostedZoneRequestRequestTypeDef](./type_defs.md#associatevpcwithhostedzonerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -217,7 +229,7 @@ Keyword-only arguments:
 - `Comment`: `str`
 
 Returns
-[AssociateVPCWithHostedZoneResponseResponseTypeDef](./type_defs.md#associatevpcwithhostedzoneresponseresponsetypedef).
+[AssociateVPCWithHostedZoneResponseTypeDef](./type_defs.md#associatevpcwithhostedzoneresponsetypedef).
 
 ### can_paginate
 
@@ -246,7 +258,7 @@ Boto3 documentation:
 [Route53.Client.change_resource_record_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.change_resource_record_sets)
 
 Arguments mapping described in
-[ChangeResourceRecordSetsRequestTypeDef](./type_defs.md#changeresourcerecordsetsrequesttypedef).
+[ChangeResourceRecordSetsRequestRequestTypeDef](./type_defs.md#changeresourcerecordsetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -255,7 +267,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[ChangeResourceRecordSetsResponseResponseTypeDef](./type_defs.md#changeresourcerecordsetsresponseresponsetypedef).
+[ChangeResourceRecordSetsResponseTypeDef](./type_defs.md#changeresourcerecordsetsresponsetypedef).
 
 ### change_tags_for_resource
 
@@ -267,7 +279,7 @@ Boto3 documentation:
 [Route53.Client.change_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.change_tags_for_resource)
 
 Arguments mapping described in
-[ChangeTagsForResourceRequestTypeDef](./type_defs.md#changetagsforresourcerequesttypedef).
+[ChangeTagsForResourceRequestRequestTypeDef](./type_defs.md#changetagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -289,7 +301,7 @@ Boto3 documentation:
 [Route53.Client.create_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_health_check)
 
 Arguments mapping described in
-[CreateHealthCheckRequestTypeDef](./type_defs.md#createhealthcheckrequesttypedef).
+[CreateHealthCheckRequestRequestTypeDef](./type_defs.md#createhealthcheckrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -299,7 +311,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateHealthCheckResponseResponseTypeDef](./type_defs.md#createhealthcheckresponseresponsetypedef).
+[CreateHealthCheckResponseTypeDef](./type_defs.md#createhealthcheckresponsetypedef).
 
 ### create_hosted_zone
 
@@ -311,7 +323,7 @@ Boto3 documentation:
 [Route53.Client.create_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_hosted_zone)
 
 Arguments mapping described in
-[CreateHostedZoneRequestTypeDef](./type_defs.md#createhostedzonerequesttypedef).
+[CreateHostedZoneRequestRequestTypeDef](./type_defs.md#createhostedzonerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -323,7 +335,7 @@ Keyword-only arguments:
 - `DelegationSetId`: `str`
 
 Returns
-[CreateHostedZoneResponseResponseTypeDef](./type_defs.md#createhostedzoneresponseresponsetypedef).
+[CreateHostedZoneResponseTypeDef](./type_defs.md#createhostedzoneresponsetypedef).
 
 ### create_key_signing_key
 
@@ -335,7 +347,7 @@ Boto3 documentation:
 [Route53.Client.create_key_signing_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_key_signing_key)
 
 Arguments mapping described in
-[CreateKeySigningKeyRequestTypeDef](./type_defs.md#createkeysigningkeyrequesttypedef).
+[CreateKeySigningKeyRequestRequestTypeDef](./type_defs.md#createkeysigningkeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -346,7 +358,7 @@ Keyword-only arguments:
 - `Status`: `str` *(required)*
 
 Returns
-[CreateKeySigningKeyResponseResponseTypeDef](./type_defs.md#createkeysigningkeyresponseresponsetypedef).
+[CreateKeySigningKeyResponseTypeDef](./type_defs.md#createkeysigningkeyresponsetypedef).
 
 ### create_query_logging_config
 
@@ -359,7 +371,7 @@ Boto3 documentation:
 [Route53.Client.create_query_logging_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_query_logging_config)
 
 Arguments mapping described in
-[CreateQueryLoggingConfigRequestTypeDef](./type_defs.md#createqueryloggingconfigrequesttypedef).
+[CreateQueryLoggingConfigRequestRequestTypeDef](./type_defs.md#createqueryloggingconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -367,7 +379,7 @@ Keyword-only arguments:
 - `CloudWatchLogsLogGroupArn`: `str` *(required)*
 
 Returns
-[CreateQueryLoggingConfigResponseResponseTypeDef](./type_defs.md#createqueryloggingconfigresponseresponsetypedef).
+[CreateQueryLoggingConfigResponseTypeDef](./type_defs.md#createqueryloggingconfigresponsetypedef).
 
 ### create_reusable_delegation_set
 
@@ -381,7 +393,7 @@ Boto3 documentation:
 [Route53.Client.create_reusable_delegation_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_reusable_delegation_set)
 
 Arguments mapping described in
-[CreateReusableDelegationSetRequestTypeDef](./type_defs.md#createreusabledelegationsetrequesttypedef).
+[CreateReusableDelegationSetRequestRequestTypeDef](./type_defs.md#createreusabledelegationsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -389,7 +401,7 @@ Keyword-only arguments:
 - `HostedZoneId`: `str`
 
 Returns
-[CreateReusableDelegationSetResponseResponseTypeDef](./type_defs.md#createreusabledelegationsetresponseresponsetypedef).
+[CreateReusableDelegationSetResponseTypeDef](./type_defs.md#createreusabledelegationsetresponsetypedef).
 
 ### create_traffic_policy
 
@@ -403,7 +415,7 @@ Boto3 documentation:
 [Route53.Client.create_traffic_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy)
 
 Arguments mapping described in
-[CreateTrafficPolicyRequestTypeDef](./type_defs.md#createtrafficpolicyrequesttypedef).
+[CreateTrafficPolicyRequestRequestTypeDef](./type_defs.md#createtrafficpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -412,7 +424,7 @@ Keyword-only arguments:
 - `Comment`: `str`
 
 Returns
-[CreateTrafficPolicyResponseResponseTypeDef](./type_defs.md#createtrafficpolicyresponseresponsetypedef).
+[CreateTrafficPolicyResponseTypeDef](./type_defs.md#createtrafficpolicyresponsetypedef).
 
 ### create_traffic_policy_instance
 
@@ -426,7 +438,7 @@ Boto3 documentation:
 [Route53.Client.create_traffic_policy_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy_instance)
 
 Arguments mapping described in
-[CreateTrafficPolicyInstanceRequestTypeDef](./type_defs.md#createtrafficpolicyinstancerequesttypedef).
+[CreateTrafficPolicyInstanceRequestRequestTypeDef](./type_defs.md#createtrafficpolicyinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -437,7 +449,7 @@ Keyword-only arguments:
 - `TrafficPolicyVersion`: `int` *(required)*
 
 Returns
-[CreateTrafficPolicyInstanceResponseResponseTypeDef](./type_defs.md#createtrafficpolicyinstanceresponseresponsetypedef).
+[CreateTrafficPolicyInstanceResponseTypeDef](./type_defs.md#createtrafficpolicyinstanceresponsetypedef).
 
 ### create_traffic_policy_version
 
@@ -450,7 +462,7 @@ Boto3 documentation:
 [Route53.Client.create_traffic_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy_version)
 
 Arguments mapping described in
-[CreateTrafficPolicyVersionRequestTypeDef](./type_defs.md#createtrafficpolicyversionrequesttypedef).
+[CreateTrafficPolicyVersionRequestRequestTypeDef](./type_defs.md#createtrafficpolicyversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -459,7 +471,7 @@ Keyword-only arguments:
 - `Comment`: `str`
 
 Returns
-[CreateTrafficPolicyVersionResponseResponseTypeDef](./type_defs.md#createtrafficpolicyversionresponseresponsetypedef).
+[CreateTrafficPolicyVersionResponseTypeDef](./type_defs.md#createtrafficpolicyversionresponsetypedef).
 
 ### create_vpc_association_authorization
 
@@ -474,7 +486,7 @@ Boto3 documentation:
 [Route53.Client.create_vpc_association_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_vpc_association_authorization)
 
 Arguments mapping described in
-[CreateVPCAssociationAuthorizationRequestTypeDef](./type_defs.md#createvpcassociationauthorizationrequesttypedef).
+[CreateVPCAssociationAuthorizationRequestRequestTypeDef](./type_defs.md#createvpcassociationauthorizationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -482,7 +494,7 @@ Keyword-only arguments:
 - `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef) *(required)*
 
 Returns
-[CreateVPCAssociationAuthorizationResponseResponseTypeDef](./type_defs.md#createvpcassociationauthorizationresponseresponsetypedef).
+[CreateVPCAssociationAuthorizationResponseTypeDef](./type_defs.md#createvpcassociationauthorizationresponsetypedef).
 
 ### deactivate_key_signing_key
 
@@ -496,7 +508,7 @@ Boto3 documentation:
 [Route53.Client.deactivate_key_signing_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.deactivate_key_signing_key)
 
 Arguments mapping described in
-[DeactivateKeySigningKeyRequestTypeDef](./type_defs.md#deactivatekeysigningkeyrequesttypedef).
+[DeactivateKeySigningKeyRequestRequestTypeDef](./type_defs.md#deactivatekeysigningkeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -504,7 +516,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[DeactivateKeySigningKeyResponseResponseTypeDef](./type_defs.md#deactivatekeysigningkeyresponseresponsetypedef).
+[DeactivateKeySigningKeyResponseTypeDef](./type_defs.md#deactivatekeysigningkeyresponsetypedef).
 
 ### delete_health_check
 
@@ -516,7 +528,7 @@ Boto3 documentation:
 [Route53.Client.delete_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_health_check)
 
 Arguments mapping described in
-[DeleteHealthCheckRequestTypeDef](./type_defs.md#deletehealthcheckrequesttypedef).
+[DeleteHealthCheckRequestRequestTypeDef](./type_defs.md#deletehealthcheckrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -534,14 +546,14 @@ Boto3 documentation:
 [Route53.Client.delete_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_hosted_zone)
 
 Arguments mapping described in
-[DeleteHostedZoneRequestTypeDef](./type_defs.md#deletehostedzonerequesttypedef).
+[DeleteHostedZoneRequestRequestTypeDef](./type_defs.md#deletehostedzonerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[DeleteHostedZoneResponseResponseTypeDef](./type_defs.md#deletehostedzoneresponseresponsetypedef).
+[DeleteHostedZoneResponseTypeDef](./type_defs.md#deletehostedzoneresponsetypedef).
 
 ### delete_key_signing_key
 
@@ -553,7 +565,7 @@ Boto3 documentation:
 [Route53.Client.delete_key_signing_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_key_signing_key)
 
 Arguments mapping described in
-[DeleteKeySigningKeyRequestTypeDef](./type_defs.md#deletekeysigningkeyrequesttypedef).
+[DeleteKeySigningKeyRequestRequestTypeDef](./type_defs.md#deletekeysigningkeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -561,7 +573,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[DeleteKeySigningKeyResponseResponseTypeDef](./type_defs.md#deletekeysigningkeyresponseresponsetypedef).
+[DeleteKeySigningKeyResponseTypeDef](./type_defs.md#deletekeysigningkeyresponsetypedef).
 
 ### delete_query_logging_config
 
@@ -574,7 +586,7 @@ Boto3 documentation:
 [Route53.Client.delete_query_logging_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_query_logging_config)
 
 Arguments mapping described in
-[DeleteQueryLoggingConfigRequestTypeDef](./type_defs.md#deletequeryloggingconfigrequesttypedef).
+[DeleteQueryLoggingConfigRequestRequestTypeDef](./type_defs.md#deletequeryloggingconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -593,7 +605,7 @@ Boto3 documentation:
 [Route53.Client.delete_reusable_delegation_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_reusable_delegation_set)
 
 Arguments mapping described in
-[DeleteReusableDelegationSetRequestTypeDef](./type_defs.md#deletereusabledelegationsetrequesttypedef).
+[DeleteReusableDelegationSetRequestRequestTypeDef](./type_defs.md#deletereusabledelegationsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -611,7 +623,7 @@ Boto3 documentation:
 [Route53.Client.delete_traffic_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_traffic_policy)
 
 Arguments mapping described in
-[DeleteTrafficPolicyRequestTypeDef](./type_defs.md#deletetrafficpolicyrequesttypedef).
+[DeleteTrafficPolicyRequestRequestTypeDef](./type_defs.md#deletetrafficpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -632,7 +644,7 @@ Boto3 documentation:
 [Route53.Client.delete_traffic_policy_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_traffic_policy_instance)
 
 Arguments mapping described in
-[DeleteTrafficPolicyInstanceRequestTypeDef](./type_defs.md#deletetrafficpolicyinstancerequesttypedef).
+[DeleteTrafficPolicyInstanceRequestRequestTypeDef](./type_defs.md#deletetrafficpolicyinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -653,7 +665,7 @@ Boto3 documentation:
 [Route53.Client.delete_vpc_association_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_vpc_association_authorization)
 
 Arguments mapping described in
-[DeleteVPCAssociationAuthorizationRequestTypeDef](./type_defs.md#deletevpcassociationauthorizationrequesttypedef).
+[DeleteVPCAssociationAuthorizationRequestRequestTypeDef](./type_defs.md#deletevpcassociationauthorizationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -673,14 +685,14 @@ Boto3 documentation:
 [Route53.Client.disable_hosted_zone_dnssec](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.disable_hosted_zone_dnssec)
 
 Arguments mapping described in
-[DisableHostedZoneDNSSECRequestTypeDef](./type_defs.md#disablehostedzonednssecrequesttypedef).
+[DisableHostedZoneDNSSECRequestRequestTypeDef](./type_defs.md#disablehostedzonednssecrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `HostedZoneId`: `str` *(required)*
 
 Returns
-[DisableHostedZoneDNSSECResponseResponseTypeDef](./type_defs.md#disablehostedzonednssecresponseresponsetypedef).
+[DisableHostedZoneDNSSECResponseTypeDef](./type_defs.md#disablehostedzonednssecresponsetypedef).
 
 ### disassociate_vpc_from_hosted_zone
 
@@ -694,7 +706,7 @@ Boto3 documentation:
 [Route53.Client.disassociate_vpc_from_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.disassociate_vpc_from_hosted_zone)
 
 Arguments mapping described in
-[DisassociateVPCFromHostedZoneRequestTypeDef](./type_defs.md#disassociatevpcfromhostedzonerequesttypedef).
+[DisassociateVPCFromHostedZoneRequestRequestTypeDef](./type_defs.md#disassociatevpcfromhostedzonerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -703,7 +715,7 @@ Keyword-only arguments:
 - `Comment`: `str`
 
 Returns
-[DisassociateVPCFromHostedZoneResponseResponseTypeDef](./type_defs.md#disassociatevpcfromhostedzoneresponseresponsetypedef).
+[DisassociateVPCFromHostedZoneResponseTypeDef](./type_defs.md#disassociatevpcfromhostedzoneresponsetypedef).
 
 ### enable_hosted_zone_dnssec
 
@@ -716,14 +728,14 @@ Boto3 documentation:
 [Route53.Client.enable_hosted_zone_dnssec](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.enable_hosted_zone_dnssec)
 
 Arguments mapping described in
-[EnableHostedZoneDNSSECRequestTypeDef](./type_defs.md#enablehostedzonednssecrequesttypedef).
+[EnableHostedZoneDNSSECRequestRequestTypeDef](./type_defs.md#enablehostedzonednssecrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `HostedZoneId`: `str` *(required)*
 
 Returns
-[EnableHostedZoneDNSSECResponseResponseTypeDef](./type_defs.md#enablehostedzonednssecresponseresponsetypedef).
+[EnableHostedZoneDNSSECResponseTypeDef](./type_defs.md#enablehostedzonednssecresponsetypedef).
 
 ### generate_presigned_url
 
@@ -754,7 +766,7 @@ Boto3 documentation:
 [Route53.Client.get_account_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_account_limit)
 
 Arguments mapping described in
-[GetAccountLimitRequestTypeDef](./type_defs.md#getaccountlimitrequesttypedef).
+[GetAccountLimitRequestRequestTypeDef](./type_defs.md#getaccountlimitrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -762,7 +774,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[GetAccountLimitResponseResponseTypeDef](./type_defs.md#getaccountlimitresponseresponsetypedef).
+[GetAccountLimitResponseTypeDef](./type_defs.md#getaccountlimitresponsetypedef).
 
 ### get_change
 
@@ -774,14 +786,13 @@ Boto3 documentation:
 [Route53.Client.get_change](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_change)
 
 Arguments mapping described in
-[GetChangeRequestTypeDef](./type_defs.md#getchangerequesttypedef).
+[GetChangeRequestRequestTypeDef](./type_defs.md#getchangerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
-Returns
-[GetChangeResponseResponseTypeDef](./type_defs.md#getchangeresponseresponsetypedef).
+Returns [GetChangeResponseTypeDef](./type_defs.md#getchangeresponsetypedef).
 
 ### get_checker_ip_ranges
 
@@ -794,7 +805,7 @@ Boto3 documentation:
 [Route53.Client.get_checker_ip_ranges](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_checker_ip_ranges)
 
 Returns
-[GetCheckerIpRangesResponseResponseTypeDef](./type_defs.md#getcheckeriprangesresponseresponsetypedef).
+[GetCheckerIpRangesResponseTypeDef](./type_defs.md#getcheckeriprangesresponsetypedef).
 
 ### get_dnssec
 
@@ -807,14 +818,13 @@ Boto3 documentation:
 [Route53.Client.get_dnssec](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_dnssec)
 
 Arguments mapping described in
-[GetDNSSECRequestTypeDef](./type_defs.md#getdnssecrequesttypedef).
+[GetDNSSECRequestRequestTypeDef](./type_defs.md#getdnssecrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `HostedZoneId`: `str` *(required)*
 
-Returns
-[GetDNSSECResponseResponseTypeDef](./type_defs.md#getdnssecresponseresponsetypedef).
+Returns [GetDNSSECResponseTypeDef](./type_defs.md#getdnssecresponsetypedef).
 
 ### get_geo_location
 
@@ -827,7 +837,7 @@ Boto3 documentation:
 [Route53.Client.get_geo_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_geo_location)
 
 Arguments mapping described in
-[GetGeoLocationRequestTypeDef](./type_defs.md#getgeolocationrequesttypedef).
+[GetGeoLocationRequestRequestTypeDef](./type_defs.md#getgeolocationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -836,7 +846,7 @@ Keyword-only arguments:
 - `SubdivisionCode`: `str`
 
 Returns
-[GetGeoLocationResponseResponseTypeDef](./type_defs.md#getgeolocationresponseresponsetypedef).
+[GetGeoLocationResponseTypeDef](./type_defs.md#getgeolocationresponsetypedef).
 
 ### get_health_check
 
@@ -848,14 +858,14 @@ Boto3 documentation:
 [Route53.Client.get_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check)
 
 Arguments mapping described in
-[GetHealthCheckRequestTypeDef](./type_defs.md#gethealthcheckrequesttypedef).
+[GetHealthCheckRequestRequestTypeDef](./type_defs.md#gethealthcheckrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `HealthCheckId`: `str` *(required)*
 
 Returns
-[GetHealthCheckResponseResponseTypeDef](./type_defs.md#gethealthcheckresponseresponsetypedef).
+[GetHealthCheckResponseTypeDef](./type_defs.md#gethealthcheckresponsetypedef).
 
 ### get_health_check_count
 
@@ -868,7 +878,7 @@ Boto3 documentation:
 [Route53.Client.get_health_check_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check_count)
 
 Returns
-[GetHealthCheckCountResponseResponseTypeDef](./type_defs.md#gethealthcheckcountresponseresponsetypedef).
+[GetHealthCheckCountResponseTypeDef](./type_defs.md#gethealthcheckcountresponsetypedef).
 
 ### get_health_check_last_failure_reason
 
@@ -881,14 +891,14 @@ Boto3 documentation:
 [Route53.Client.get_health_check_last_failure_reason](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check_last_failure_reason)
 
 Arguments mapping described in
-[GetHealthCheckLastFailureReasonRequestTypeDef](./type_defs.md#gethealthchecklastfailurereasonrequesttypedef).
+[GetHealthCheckLastFailureReasonRequestRequestTypeDef](./type_defs.md#gethealthchecklastfailurereasonrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `HealthCheckId`: `str` *(required)*
 
 Returns
-[GetHealthCheckLastFailureReasonResponseResponseTypeDef](./type_defs.md#gethealthchecklastfailurereasonresponseresponsetypedef).
+[GetHealthCheckLastFailureReasonResponseTypeDef](./type_defs.md#gethealthchecklastfailurereasonresponsetypedef).
 
 ### get_health_check_status
 
@@ -900,14 +910,14 @@ Boto3 documentation:
 [Route53.Client.get_health_check_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check_status)
 
 Arguments mapping described in
-[GetHealthCheckStatusRequestTypeDef](./type_defs.md#gethealthcheckstatusrequesttypedef).
+[GetHealthCheckStatusRequestRequestTypeDef](./type_defs.md#gethealthcheckstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `HealthCheckId`: `str` *(required)*
 
 Returns
-[GetHealthCheckStatusResponseResponseTypeDef](./type_defs.md#gethealthcheckstatusresponseresponsetypedef).
+[GetHealthCheckStatusResponseTypeDef](./type_defs.md#gethealthcheckstatusresponsetypedef).
 
 ### get_hosted_zone
 
@@ -920,14 +930,14 @@ Boto3 documentation:
 [Route53.Client.get_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_hosted_zone)
 
 Arguments mapping described in
-[GetHostedZoneRequestTypeDef](./type_defs.md#gethostedzonerequesttypedef).
+[GetHostedZoneRequestRequestTypeDef](./type_defs.md#gethostedzonerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetHostedZoneResponseResponseTypeDef](./type_defs.md#gethostedzoneresponseresponsetypedef).
+[GetHostedZoneResponseTypeDef](./type_defs.md#gethostedzoneresponsetypedef).
 
 ### get_hosted_zone_count
 
@@ -940,7 +950,7 @@ Boto3 documentation:
 [Route53.Client.get_hosted_zone_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_hosted_zone_count)
 
 Returns
-[GetHostedZoneCountResponseResponseTypeDef](./type_defs.md#gethostedzonecountresponseresponsetypedef).
+[GetHostedZoneCountResponseTypeDef](./type_defs.md#gethostedzonecountresponsetypedef).
 
 ### get_hosted_zone_limit
 
@@ -953,7 +963,7 @@ Boto3 documentation:
 [Route53.Client.get_hosted_zone_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_hosted_zone_limit)
 
 Arguments mapping described in
-[GetHostedZoneLimitRequestTypeDef](./type_defs.md#gethostedzonelimitrequesttypedef).
+[GetHostedZoneLimitRequestRequestTypeDef](./type_defs.md#gethostedzonelimitrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -962,7 +972,7 @@ Keyword-only arguments:
 - `HostedZoneId`: `str` *(required)*
 
 Returns
-[GetHostedZoneLimitResponseResponseTypeDef](./type_defs.md#gethostedzonelimitresponseresponsetypedef).
+[GetHostedZoneLimitResponseTypeDef](./type_defs.md#gethostedzonelimitresponsetypedef).
 
 ### get_query_logging_config
 
@@ -974,14 +984,14 @@ Boto3 documentation:
 [Route53.Client.get_query_logging_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_query_logging_config)
 
 Arguments mapping described in
-[GetQueryLoggingConfigRequestTypeDef](./type_defs.md#getqueryloggingconfigrequesttypedef).
+[GetQueryLoggingConfigRequestRequestTypeDef](./type_defs.md#getqueryloggingconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetQueryLoggingConfigResponseResponseTypeDef](./type_defs.md#getqueryloggingconfigresponseresponsetypedef).
+[GetQueryLoggingConfigResponseTypeDef](./type_defs.md#getqueryloggingconfigresponsetypedef).
 
 ### get_reusable_delegation_set
 
@@ -995,14 +1005,14 @@ Boto3 documentation:
 [Route53.Client.get_reusable_delegation_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_reusable_delegation_set)
 
 Arguments mapping described in
-[GetReusableDelegationSetRequestTypeDef](./type_defs.md#getreusabledelegationsetrequesttypedef).
+[GetReusableDelegationSetRequestRequestTypeDef](./type_defs.md#getreusabledelegationsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetReusableDelegationSetResponseResponseTypeDef](./type_defs.md#getreusabledelegationsetresponseresponsetypedef).
+[GetReusableDelegationSetResponseTypeDef](./type_defs.md#getreusabledelegationsetresponsetypedef).
 
 ### get_reusable_delegation_set_limit
 
@@ -1016,7 +1026,7 @@ Boto3 documentation:
 [Route53.Client.get_reusable_delegation_set_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_reusable_delegation_set_limit)
 
 Arguments mapping described in
-[GetReusableDelegationSetLimitRequestTypeDef](./type_defs.md#getreusabledelegationsetlimitrequesttypedef).
+[GetReusableDelegationSetLimitRequestRequestTypeDef](./type_defs.md#getreusabledelegationsetlimitrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1026,7 +1036,7 @@ Keyword-only arguments:
 - `DelegationSetId`: `str` *(required)*
 
 Returns
-[GetReusableDelegationSetLimitResponseResponseTypeDef](./type_defs.md#getreusabledelegationsetlimitresponseresponsetypedef).
+[GetReusableDelegationSetLimitResponseTypeDef](./type_defs.md#getreusabledelegationsetlimitresponsetypedef).
 
 ### get_traffic_policy
 
@@ -1038,7 +1048,7 @@ Boto3 documentation:
 [Route53.Client.get_traffic_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_traffic_policy)
 
 Arguments mapping described in
-[GetTrafficPolicyRequestTypeDef](./type_defs.md#gettrafficpolicyrequesttypedef).
+[GetTrafficPolicyRequestRequestTypeDef](./type_defs.md#gettrafficpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1046,7 +1056,7 @@ Keyword-only arguments:
 - `Version`: `int` *(required)*
 
 Returns
-[GetTrafficPolicyResponseResponseTypeDef](./type_defs.md#gettrafficpolicyresponseresponsetypedef).
+[GetTrafficPolicyResponseTypeDef](./type_defs.md#gettrafficpolicyresponsetypedef).
 
 ### get_traffic_policy_instance
 
@@ -1059,14 +1069,14 @@ Boto3 documentation:
 [Route53.Client.get_traffic_policy_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_traffic_policy_instance)
 
 Arguments mapping described in
-[GetTrafficPolicyInstanceRequestTypeDef](./type_defs.md#gettrafficpolicyinstancerequesttypedef).
+[GetTrafficPolicyInstanceRequestRequestTypeDef](./type_defs.md#gettrafficpolicyinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetTrafficPolicyInstanceResponseResponseTypeDef](./type_defs.md#gettrafficpolicyinstanceresponseresponsetypedef).
+[GetTrafficPolicyInstanceResponseTypeDef](./type_defs.md#gettrafficpolicyinstanceresponsetypedef).
 
 ### get_traffic_policy_instance_count
 
@@ -1080,7 +1090,7 @@ Boto3 documentation:
 [Route53.Client.get_traffic_policy_instance_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_traffic_policy_instance_count)
 
 Returns
-[GetTrafficPolicyInstanceCountResponseResponseTypeDef](./type_defs.md#gettrafficpolicyinstancecountresponseresponsetypedef).
+[GetTrafficPolicyInstanceCountResponseTypeDef](./type_defs.md#gettrafficpolicyinstancecountresponsetypedef).
 
 ### list_geo_locations
 
@@ -1092,7 +1102,7 @@ Boto3 documentation:
 [Route53.Client.list_geo_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_geo_locations)
 
 Arguments mapping described in
-[ListGeoLocationsRequestTypeDef](./type_defs.md#listgeolocationsrequesttypedef).
+[ListGeoLocationsRequestRequestTypeDef](./type_defs.md#listgeolocationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1102,7 +1112,7 @@ Keyword-only arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListGeoLocationsResponseResponseTypeDef](./type_defs.md#listgeolocationsresponseresponsetypedef).
+[ListGeoLocationsResponseTypeDef](./type_defs.md#listgeolocationsresponsetypedef).
 
 ### list_health_checks
 
@@ -1115,7 +1125,7 @@ Boto3 documentation:
 [Route53.Client.list_health_checks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_health_checks)
 
 Arguments mapping described in
-[ListHealthChecksRequestTypeDef](./type_defs.md#listhealthchecksrequesttypedef).
+[ListHealthChecksRequestRequestTypeDef](./type_defs.md#listhealthchecksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1123,7 +1133,7 @@ Keyword-only arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListHealthChecksResponseResponseTypeDef](./type_defs.md#listhealthchecksresponseresponsetypedef).
+[ListHealthChecksResponseTypeDef](./type_defs.md#listhealthchecksresponsetypedef).
 
 ### list_hosted_zones
 
@@ -1136,7 +1146,7 @@ Boto3 documentation:
 [Route53.Client.list_hosted_zones](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones)
 
 Arguments mapping described in
-[ListHostedZonesRequestTypeDef](./type_defs.md#listhostedzonesrequesttypedef).
+[ListHostedZonesRequestRequestTypeDef](./type_defs.md#listhostedzonesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1145,7 +1155,7 @@ Keyword-only arguments:
 - `DelegationSetId`: `str`
 
 Returns
-[ListHostedZonesResponseResponseTypeDef](./type_defs.md#listhostedzonesresponseresponsetypedef).
+[ListHostedZonesResponseTypeDef](./type_defs.md#listhostedzonesresponsetypedef).
 
 ### list_hosted_zones_by_name
 
@@ -1158,7 +1168,7 @@ Boto3 documentation:
 [Route53.Client.list_hosted_zones_by_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones_by_name)
 
 Arguments mapping described in
-[ListHostedZonesByNameRequestTypeDef](./type_defs.md#listhostedzonesbynamerequesttypedef).
+[ListHostedZonesByNameRequestRequestTypeDef](./type_defs.md#listhostedzonesbynamerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1167,7 +1177,7 @@ Keyword-only arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListHostedZonesByNameResponseResponseTypeDef](./type_defs.md#listhostedzonesbynameresponseresponsetypedef).
+[ListHostedZonesByNameResponseTypeDef](./type_defs.md#listhostedzonesbynameresponsetypedef).
 
 ### list_hosted_zones_by_vpc
 
@@ -1180,7 +1190,7 @@ Boto3 documentation:
 [Route53.Client.list_hosted_zones_by_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones_by_vpc)
 
 Arguments mapping described in
-[ListHostedZonesByVPCRequestTypeDef](./type_defs.md#listhostedzonesbyvpcrequesttypedef).
+[ListHostedZonesByVPCRequestRequestTypeDef](./type_defs.md#listhostedzonesbyvpcrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1190,7 +1200,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListHostedZonesByVPCResponseResponseTypeDef](./type_defs.md#listhostedzonesbyvpcresponseresponsetypedef).
+[ListHostedZonesByVPCResponseTypeDef](./type_defs.md#listhostedzonesbyvpcresponsetypedef).
 
 ### list_query_logging_configs
 
@@ -1205,7 +1215,7 @@ Boto3 documentation:
 [Route53.Client.list_query_logging_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_query_logging_configs)
 
 Arguments mapping described in
-[ListQueryLoggingConfigsRequestTypeDef](./type_defs.md#listqueryloggingconfigsrequesttypedef).
+[ListQueryLoggingConfigsRequestRequestTypeDef](./type_defs.md#listqueryloggingconfigsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1214,7 +1224,7 @@ Keyword-only arguments:
 - `MaxResults`: `str`
 
 Returns
-[ListQueryLoggingConfigsResponseResponseTypeDef](./type_defs.md#listqueryloggingconfigsresponseresponsetypedef).
+[ListQueryLoggingConfigsResponseTypeDef](./type_defs.md#listqueryloggingconfigsresponsetypedef).
 
 ### list_resource_record_sets
 
@@ -1227,7 +1237,7 @@ Boto3 documentation:
 [Route53.Client.list_resource_record_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_resource_record_sets)
 
 Arguments mapping described in
-[ListResourceRecordSetsRequestTypeDef](./type_defs.md#listresourcerecordsetsrequesttypedef).
+[ListResourceRecordSetsRequestRequestTypeDef](./type_defs.md#listresourcerecordsetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1238,7 +1248,7 @@ Keyword-only arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListResourceRecordSetsResponseResponseTypeDef](./type_defs.md#listresourcerecordsetsresponseresponsetypedef).
+[ListResourceRecordSetsResponseTypeDef](./type_defs.md#listresourcerecordsetsresponsetypedef).
 
 ### list_reusable_delegation_sets
 
@@ -1252,7 +1262,7 @@ Boto3 documentation:
 [Route53.Client.list_reusable_delegation_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_reusable_delegation_sets)
 
 Arguments mapping described in
-[ListReusableDelegationSetsRequestTypeDef](./type_defs.md#listreusabledelegationsetsrequesttypedef).
+[ListReusableDelegationSetsRequestRequestTypeDef](./type_defs.md#listreusabledelegationsetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1260,7 +1270,7 @@ Keyword-only arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListReusableDelegationSetsResponseResponseTypeDef](./type_defs.md#listreusabledelegationsetsresponseresponsetypedef).
+[ListReusableDelegationSetsResponseTypeDef](./type_defs.md#listreusabledelegationsetsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -1272,7 +1282,7 @@ Boto3 documentation:
 [Route53.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1281,7 +1291,7 @@ Keyword-only arguments:
 - `ResourceId`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_tags_for_resources
 
@@ -1293,7 +1303,7 @@ Boto3 documentation:
 [Route53.Client.list_tags_for_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_tags_for_resources)
 
 Arguments mapping described in
-[ListTagsForResourcesRequestTypeDef](./type_defs.md#listtagsforresourcesrequesttypedef).
+[ListTagsForResourcesRequestRequestTypeDef](./type_defs.md#listtagsforresourcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1302,7 +1312,7 @@ Keyword-only arguments:
 - `ResourceIds`: `List`\[`str`\] *(required)*
 
 Returns
-[ListTagsForResourcesResponseResponseTypeDef](./type_defs.md#listtagsforresourcesresponseresponsetypedef).
+[ListTagsForResourcesResponseTypeDef](./type_defs.md#listtagsforresourcesresponsetypedef).
 
 ### list_traffic_policies
 
@@ -1315,7 +1325,7 @@ Boto3 documentation:
 [Route53.Client.list_traffic_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policies)
 
 Arguments mapping described in
-[ListTrafficPoliciesRequestTypeDef](./type_defs.md#listtrafficpoliciesrequesttypedef).
+[ListTrafficPoliciesRequestRequestTypeDef](./type_defs.md#listtrafficpoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1323,7 +1333,7 @@ Keyword-only arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListTrafficPoliciesResponseResponseTypeDef](./type_defs.md#listtrafficpoliciesresponseresponsetypedef).
+[ListTrafficPoliciesResponseTypeDef](./type_defs.md#listtrafficpoliciesresponsetypedef).
 
 ### list_traffic_policy_instances
 
@@ -1337,7 +1347,7 @@ Boto3 documentation:
 [Route53.Client.list_traffic_policy_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances)
 
 Arguments mapping described in
-[ListTrafficPolicyInstancesRequestTypeDef](./type_defs.md#listtrafficpolicyinstancesrequesttypedef).
+[ListTrafficPolicyInstancesRequestRequestTypeDef](./type_defs.md#listtrafficpolicyinstancesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1347,7 +1357,7 @@ Keyword-only arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListTrafficPolicyInstancesResponseResponseTypeDef](./type_defs.md#listtrafficpolicyinstancesresponseresponsetypedef).
+[ListTrafficPolicyInstancesResponseTypeDef](./type_defs.md#listtrafficpolicyinstancesresponsetypedef).
 
 ### list_traffic_policy_instances_by_hosted_zone
 
@@ -1361,7 +1371,7 @@ Boto3 documentation:
 [Route53.Client.list_traffic_policy_instances_by_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances_by_hosted_zone)
 
 Arguments mapping described in
-[ListTrafficPolicyInstancesByHostedZoneRequestTypeDef](./type_defs.md#listtrafficpolicyinstancesbyhostedzonerequesttypedef).
+[ListTrafficPolicyInstancesByHostedZoneRequestRequestTypeDef](./type_defs.md#listtrafficpolicyinstancesbyhostedzonerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1371,7 +1381,7 @@ Keyword-only arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListTrafficPolicyInstancesByHostedZoneResponseResponseTypeDef](./type_defs.md#listtrafficpolicyinstancesbyhostedzoneresponseresponsetypedef).
+[ListTrafficPolicyInstancesByHostedZoneResponseTypeDef](./type_defs.md#listtrafficpolicyinstancesbyhostedzoneresponsetypedef).
 
 ### list_traffic_policy_instances_by_policy
 
@@ -1385,7 +1395,7 @@ Boto3 documentation:
 [Route53.Client.list_traffic_policy_instances_by_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances_by_policy)
 
 Arguments mapping described in
-[ListTrafficPolicyInstancesByPolicyRequestTypeDef](./type_defs.md#listtrafficpolicyinstancesbypolicyrequesttypedef).
+[ListTrafficPolicyInstancesByPolicyRequestRequestTypeDef](./type_defs.md#listtrafficpolicyinstancesbypolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1397,7 +1407,7 @@ Keyword-only arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListTrafficPolicyInstancesByPolicyResponseResponseTypeDef](./type_defs.md#listtrafficpolicyinstancesbypolicyresponseresponsetypedef).
+[ListTrafficPolicyInstancesByPolicyResponseTypeDef](./type_defs.md#listtrafficpolicyinstancesbypolicyresponsetypedef).
 
 ### list_traffic_policy_versions
 
@@ -1410,7 +1420,7 @@ Boto3 documentation:
 [Route53.Client.list_traffic_policy_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_versions)
 
 Arguments mapping described in
-[ListTrafficPolicyVersionsRequestTypeDef](./type_defs.md#listtrafficpolicyversionsrequesttypedef).
+[ListTrafficPolicyVersionsRequestRequestTypeDef](./type_defs.md#listtrafficpolicyversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1419,7 +1429,7 @@ Keyword-only arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListTrafficPolicyVersionsResponseResponseTypeDef](./type_defs.md#listtrafficpolicyversionsresponseresponsetypedef).
+[ListTrafficPolicyVersionsResponseTypeDef](./type_defs.md#listtrafficpolicyversionsresponsetypedef).
 
 ### list_vpc_association_authorizations
 
@@ -1434,7 +1444,7 @@ Boto3 documentation:
 [Route53.Client.list_vpc_association_authorizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_vpc_association_authorizations)
 
 Arguments mapping described in
-[ListVPCAssociationAuthorizationsRequestTypeDef](./type_defs.md#listvpcassociationauthorizationsrequesttypedef).
+[ListVPCAssociationAuthorizationsRequestRequestTypeDef](./type_defs.md#listvpcassociationauthorizationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1443,7 +1453,7 @@ Keyword-only arguments:
 - `MaxResults`: `str`
 
 Returns
-[ListVPCAssociationAuthorizationsResponseResponseTypeDef](./type_defs.md#listvpcassociationauthorizationsresponseresponsetypedef).
+[ListVPCAssociationAuthorizationsResponseTypeDef](./type_defs.md#listvpcassociationauthorizationsresponsetypedef).
 
 ### test_dns_answer
 
@@ -1456,7 +1466,7 @@ Boto3 documentation:
 [Route53.Client.test_dns_answer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.test_dns_answer)
 
 Arguments mapping described in
-[TestDNSAnswerRequestTypeDef](./type_defs.md#testdnsanswerrequesttypedef).
+[TestDNSAnswerRequestRequestTypeDef](./type_defs.md#testdnsanswerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1468,7 +1478,7 @@ Keyword-only arguments:
 - `EDNS0ClientSubnetMask`: `str`
 
 Returns
-[TestDNSAnswerResponseResponseTypeDef](./type_defs.md#testdnsanswerresponseresponsetypedef).
+[TestDNSAnswerResponseTypeDef](./type_defs.md#testdnsanswerresponsetypedef).
 
 ### update_health_check
 
@@ -1480,7 +1490,7 @@ Boto3 documentation:
 [Route53.Client.update_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_health_check)
 
 Arguments mapping described in
-[UpdateHealthCheckRequestTypeDef](./type_defs.md#updatehealthcheckrequesttypedef).
+[UpdateHealthCheckRequestRequestTypeDef](./type_defs.md#updatehealthcheckrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1507,7 +1517,7 @@ Keyword-only arguments:
   `List`\[[ResettableElementNameType](./literals.md#resettableelementnametype)\]
 
 Returns
-[UpdateHealthCheckResponseResponseTypeDef](./type_defs.md#updatehealthcheckresponseresponsetypedef).
+[UpdateHealthCheckResponseTypeDef](./type_defs.md#updatehealthcheckresponsetypedef).
 
 ### update_hosted_zone_comment
 
@@ -1520,7 +1530,7 @@ Boto3 documentation:
 [Route53.Client.update_hosted_zone_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_hosted_zone_comment)
 
 Arguments mapping described in
-[UpdateHostedZoneCommentRequestTypeDef](./type_defs.md#updatehostedzonecommentrequesttypedef).
+[UpdateHostedZoneCommentRequestRequestTypeDef](./type_defs.md#updatehostedzonecommentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1528,7 +1538,7 @@ Keyword-only arguments:
 - `Comment`: `str`
 
 Returns
-[UpdateHostedZoneCommentResponseResponseTypeDef](./type_defs.md#updatehostedzonecommentresponseresponsetypedef).
+[UpdateHostedZoneCommentResponseTypeDef](./type_defs.md#updatehostedzonecommentresponsetypedef).
 
 ### update_traffic_policy_comment
 
@@ -1541,7 +1551,7 @@ Boto3 documentation:
 [Route53.Client.update_traffic_policy_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_traffic_policy_comment)
 
 Arguments mapping described in
-[UpdateTrafficPolicyCommentRequestTypeDef](./type_defs.md#updatetrafficpolicycommentrequesttypedef).
+[UpdateTrafficPolicyCommentRequestRequestTypeDef](./type_defs.md#updatetrafficpolicycommentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1550,7 +1560,7 @@ Keyword-only arguments:
 - `Comment`: `str` *(required)*
 
 Returns
-[UpdateTrafficPolicyCommentResponseResponseTypeDef](./type_defs.md#updatetrafficpolicycommentresponseresponsetypedef).
+[UpdateTrafficPolicyCommentResponseTypeDef](./type_defs.md#updatetrafficpolicycommentresponsetypedef).
 
 ### update_traffic_policy_instance
 
@@ -1564,7 +1574,7 @@ Boto3 documentation:
 [Route53.Client.update_traffic_policy_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_traffic_policy_instance)
 
 Arguments mapping described in
-[UpdateTrafficPolicyInstanceRequestTypeDef](./type_defs.md#updatetrafficpolicyinstancerequesttypedef).
+[UpdateTrafficPolicyInstanceRequestRequestTypeDef](./type_defs.md#updatetrafficpolicyinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1574,7 +1584,7 @@ Keyword-only arguments:
 - `TrafficPolicyVersion`: `int` *(required)*
 
 Returns
-[UpdateTrafficPolicyInstanceResponseResponseTypeDef](./type_defs.md#updatetrafficpolicyinstanceresponseresponsetypedef).
+[UpdateTrafficPolicyInstanceResponseTypeDef](./type_defs.md#updatetrafficpolicyinstanceresponsetypedef).
 
 ### get_paginator
 

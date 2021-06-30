@@ -33,6 +33,7 @@ from mypy_boto3_meteringmarketplace.client import MarketplaceMeteringClient
 
 - [batch_meter_usage](./client.md#batch_meter_usage)
 - [can_paginate](./client.md#can_paginate)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [meter_usage](./client.md#meter_usage)
 - [register_usage](./client.md#register_usage)
@@ -81,17 +82,17 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_meteringmarketplace.type_defs import BatchMeterUsageRequestTypeDef, ...
+from mypy_boto3_meteringmarketplace.type_defs import BatchMeterUsageRequestRequestTypeDef, ...
 ```
 
-- [BatchMeterUsageRequestTypeDef](./type_defs.md#batchmeterusagerequesttypedef)
-- [BatchMeterUsageResultResponseTypeDef](./type_defs.md#batchmeterusageresultresponsetypedef)
-- [MeterUsageRequestTypeDef](./type_defs.md#meterusagerequesttypedef)
-- [MeterUsageResultResponseTypeDef](./type_defs.md#meterusageresultresponsetypedef)
-- [RegisterUsageRequestTypeDef](./type_defs.md#registerusagerequesttypedef)
-- [RegisterUsageResultResponseTypeDef](./type_defs.md#registerusageresultresponsetypedef)
-- [ResolveCustomerRequestTypeDef](./type_defs.md#resolvecustomerrequesttypedef)
-- [ResolveCustomerResultResponseTypeDef](./type_defs.md#resolvecustomerresultresponsetypedef)
+- [BatchMeterUsageRequestRequestTypeDef](./type_defs.md#batchmeterusagerequestrequesttypedef)
+- [BatchMeterUsageResultTypeDef](./type_defs.md#batchmeterusageresulttypedef)
+- [MeterUsageRequestRequestTypeDef](./type_defs.md#meterusagerequestrequesttypedef)
+- [MeterUsageResultTypeDef](./type_defs.md#meterusageresulttypedef)
+- [RegisterUsageRequestRequestTypeDef](./type_defs.md#registerusagerequestrequesttypedef)
+- [RegisterUsageResultTypeDef](./type_defs.md#registerusageresulttypedef)
+- [ResolveCustomerRequestRequestTypeDef](./type_defs.md#resolvecustomerrequestrequesttypedef)
+- [ResolveCustomerResultTypeDef](./type_defs.md#resolvecustomerresulttypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [UsageAllocationTypeDef](./type_defs.md#usageallocationtypedef)

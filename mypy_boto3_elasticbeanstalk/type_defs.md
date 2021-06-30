@@ -8,88 +8,90 @@ type annotations stubs module
 [mypy_boto3_elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
 
 - [Typed dictionaries for boto3 ElasticBeanstalk module](#typed-dictionaries-for-boto3-elasticbeanstalk-module)
-  - [AbortEnvironmentUpdateMessageTypeDef](#abortenvironmentupdatemessagetypedef)
-  - [ApplicationDescriptionMessageResponseTypeDef](#applicationdescriptionmessageresponsetypedef)
+  - [AbortEnvironmentUpdateMessageRequestTypeDef](#abortenvironmentupdatemessagerequesttypedef)
+  - [ApplicationDescriptionMessageTypeDef](#applicationdescriptionmessagetypedef)
   - [ApplicationDescriptionTypeDef](#applicationdescriptiontypedef)
-  - [ApplicationDescriptionsMessageResponseTypeDef](#applicationdescriptionsmessageresponsetypedef)
+  - [ApplicationDescriptionsMessageTypeDef](#applicationdescriptionsmessagetypedef)
   - [ApplicationMetricsTypeDef](#applicationmetricstypedef)
   - [ApplicationResourceLifecycleConfigTypeDef](#applicationresourcelifecycleconfigtypedef)
-  - [ApplicationResourceLifecycleDescriptionMessageResponseTypeDef](#applicationresourcelifecycledescriptionmessageresponsetypedef)
-  - [ApplicationVersionDescriptionMessageResponseTypeDef](#applicationversiondescriptionmessageresponsetypedef)
+  - [ApplicationResourceLifecycleDescriptionMessageTypeDef](#applicationresourcelifecycledescriptionmessagetypedef)
+  - [ApplicationVersionDescriptionMessageTypeDef](#applicationversiondescriptionmessagetypedef)
   - [ApplicationVersionDescriptionTypeDef](#applicationversiondescriptiontypedef)
-  - [ApplicationVersionDescriptionsMessageResponseTypeDef](#applicationversiondescriptionsmessageresponsetypedef)
+  - [ApplicationVersionDescriptionsMessageTypeDef](#applicationversiondescriptionsmessagetypedef)
   - [ApplicationVersionLifecycleConfigTypeDef](#applicationversionlifecycleconfigtypedef)
-  - [ApplyEnvironmentManagedActionRequestTypeDef](#applyenvironmentmanagedactionrequesttypedef)
-  - [ApplyEnvironmentManagedActionResultResponseTypeDef](#applyenvironmentmanagedactionresultresponsetypedef)
-  - [AssociateEnvironmentOperationsRoleMessageTypeDef](#associateenvironmentoperationsrolemessagetypedef)
+  - [ApplyEnvironmentManagedActionRequestRequestTypeDef](#applyenvironmentmanagedactionrequestrequesttypedef)
+  - [ApplyEnvironmentManagedActionResultTypeDef](#applyenvironmentmanagedactionresulttypedef)
+  - [AssociateEnvironmentOperationsRoleMessageRequestTypeDef](#associateenvironmentoperationsrolemessagerequesttypedef)
   - [AutoScalingGroupTypeDef](#autoscalinggrouptypedef)
   - [BuildConfigurationTypeDef](#buildconfigurationtypedef)
   - [BuilderTypeDef](#buildertypedef)
   - [CPUUtilizationTypeDef](#cpuutilizationtypedef)
-  - [CheckDNSAvailabilityMessageTypeDef](#checkdnsavailabilitymessagetypedef)
-  - [CheckDNSAvailabilityResultMessageResponseTypeDef](#checkdnsavailabilityresultmessageresponsetypedef)
-  - [ComposeEnvironmentsMessageTypeDef](#composeenvironmentsmessagetypedef)
+  - [CheckDNSAvailabilityMessageRequestTypeDef](#checkdnsavailabilitymessagerequesttypedef)
+  - [CheckDNSAvailabilityResultMessageTypeDef](#checkdnsavailabilityresultmessagetypedef)
+  - [ComposeEnvironmentsMessageRequestTypeDef](#composeenvironmentsmessagerequesttypedef)
   - [ConfigurationOptionDescriptionTypeDef](#configurationoptiondescriptiontypedef)
   - [ConfigurationOptionSettingTypeDef](#configurationoptionsettingtypedef)
-  - [ConfigurationOptionsDescriptionResponseTypeDef](#configurationoptionsdescriptionresponsetypedef)
-  - [ConfigurationSettingsDescriptionResponseTypeDef](#configurationsettingsdescriptionresponsetypedef)
-  - [ConfigurationSettingsDescriptionsResponseTypeDef](#configurationsettingsdescriptionsresponsetypedef)
-  - [ConfigurationSettingsValidationMessagesResponseTypeDef](#configurationsettingsvalidationmessagesresponsetypedef)
-  - [CreateApplicationMessageTypeDef](#createapplicationmessagetypedef)
-  - [CreateApplicationVersionMessageTypeDef](#createapplicationversionmessagetypedef)
-  - [CreateConfigurationTemplateMessageTypeDef](#createconfigurationtemplatemessagetypedef)
-  - [CreateEnvironmentMessageTypeDef](#createenvironmentmessagetypedef)
-  - [CreatePlatformVersionRequestTypeDef](#createplatformversionrequesttypedef)
-  - [CreatePlatformVersionResultResponseTypeDef](#createplatformversionresultresponsetypedef)
-  - [CreateStorageLocationResultMessageResponseTypeDef](#createstoragelocationresultmessageresponsetypedef)
+  - [ConfigurationOptionsDescriptionTypeDef](#configurationoptionsdescriptiontypedef)
+  - [ConfigurationSettingsDescriptionResponseMetadataTypeDef](#configurationsettingsdescriptionresponsemetadatatypedef)
+  - [ConfigurationSettingsDescriptionTypeDef](#configurationsettingsdescriptiontypedef)
+  - [ConfigurationSettingsDescriptionsTypeDef](#configurationsettingsdescriptionstypedef)
+  - [ConfigurationSettingsValidationMessagesTypeDef](#configurationsettingsvalidationmessagestypedef)
+  - [CreateApplicationMessageRequestTypeDef](#createapplicationmessagerequesttypedef)
+  - [CreateApplicationVersionMessageRequestTypeDef](#createapplicationversionmessagerequesttypedef)
+  - [CreateConfigurationTemplateMessageRequestTypeDef](#createconfigurationtemplatemessagerequesttypedef)
+  - [CreateEnvironmentMessageRequestTypeDef](#createenvironmentmessagerequesttypedef)
+  - [CreatePlatformVersionRequestRequestTypeDef](#createplatformversionrequestrequesttypedef)
+  - [CreatePlatformVersionResultTypeDef](#createplatformversionresulttypedef)
+  - [CreateStorageLocationResultMessageTypeDef](#createstoragelocationresultmessagetypedef)
   - [CustomAmiTypeDef](#customamitypedef)
-  - [DeleteApplicationMessageTypeDef](#deleteapplicationmessagetypedef)
-  - [DeleteApplicationVersionMessageTypeDef](#deleteapplicationversionmessagetypedef)
-  - [DeleteConfigurationTemplateMessageTypeDef](#deleteconfigurationtemplatemessagetypedef)
-  - [DeleteEnvironmentConfigurationMessageTypeDef](#deleteenvironmentconfigurationmessagetypedef)
-  - [DeletePlatformVersionRequestTypeDef](#deleteplatformversionrequesttypedef)
-  - [DeletePlatformVersionResultResponseTypeDef](#deleteplatformversionresultresponsetypedef)
+  - [DeleteApplicationMessageRequestTypeDef](#deleteapplicationmessagerequesttypedef)
+  - [DeleteApplicationVersionMessageRequestTypeDef](#deleteapplicationversionmessagerequesttypedef)
+  - [DeleteConfigurationTemplateMessageRequestTypeDef](#deleteconfigurationtemplatemessagerequesttypedef)
+  - [DeleteEnvironmentConfigurationMessageRequestTypeDef](#deleteenvironmentconfigurationmessagerequesttypedef)
+  - [DeletePlatformVersionRequestRequestTypeDef](#deleteplatformversionrequestrequesttypedef)
+  - [DeletePlatformVersionResultTypeDef](#deleteplatformversionresulttypedef)
   - [DeploymentTypeDef](#deploymenttypedef)
-  - [DescribeAccountAttributesResultResponseTypeDef](#describeaccountattributesresultresponsetypedef)
-  - [DescribeApplicationVersionsMessageTypeDef](#describeapplicationversionsmessagetypedef)
-  - [DescribeApplicationsMessageTypeDef](#describeapplicationsmessagetypedef)
-  - [DescribeConfigurationOptionsMessageTypeDef](#describeconfigurationoptionsmessagetypedef)
-  - [DescribeConfigurationSettingsMessageTypeDef](#describeconfigurationsettingsmessagetypedef)
-  - [DescribeEnvironmentHealthRequestTypeDef](#describeenvironmenthealthrequesttypedef)
-  - [DescribeEnvironmentHealthResultResponseTypeDef](#describeenvironmenthealthresultresponsetypedef)
-  - [DescribeEnvironmentManagedActionHistoryRequestTypeDef](#describeenvironmentmanagedactionhistoryrequesttypedef)
-  - [DescribeEnvironmentManagedActionHistoryResultResponseTypeDef](#describeenvironmentmanagedactionhistoryresultresponsetypedef)
-  - [DescribeEnvironmentManagedActionsRequestTypeDef](#describeenvironmentmanagedactionsrequesttypedef)
-  - [DescribeEnvironmentManagedActionsResultResponseTypeDef](#describeenvironmentmanagedactionsresultresponsetypedef)
-  - [DescribeEnvironmentResourcesMessageTypeDef](#describeenvironmentresourcesmessagetypedef)
-  - [DescribeEnvironmentsMessageTypeDef](#describeenvironmentsmessagetypedef)
-  - [DescribeEventsMessageTypeDef](#describeeventsmessagetypedef)
-  - [DescribeInstancesHealthRequestTypeDef](#describeinstanceshealthrequesttypedef)
-  - [DescribeInstancesHealthResultResponseTypeDef](#describeinstanceshealthresultresponsetypedef)
-  - [DescribePlatformVersionRequestTypeDef](#describeplatformversionrequesttypedef)
-  - [DescribePlatformVersionResultResponseTypeDef](#describeplatformversionresultresponsetypedef)
-  - [DisassociateEnvironmentOperationsRoleMessageTypeDef](#disassociateenvironmentoperationsrolemessagetypedef)
+  - [DescribeAccountAttributesResultTypeDef](#describeaccountattributesresulttypedef)
+  - [DescribeApplicationVersionsMessageRequestTypeDef](#describeapplicationversionsmessagerequesttypedef)
+  - [DescribeApplicationsMessageRequestTypeDef](#describeapplicationsmessagerequesttypedef)
+  - [DescribeConfigurationOptionsMessageRequestTypeDef](#describeconfigurationoptionsmessagerequesttypedef)
+  - [DescribeConfigurationSettingsMessageRequestTypeDef](#describeconfigurationsettingsmessagerequesttypedef)
+  - [DescribeEnvironmentHealthRequestRequestTypeDef](#describeenvironmenthealthrequestrequesttypedef)
+  - [DescribeEnvironmentHealthResultTypeDef](#describeenvironmenthealthresulttypedef)
+  - [DescribeEnvironmentManagedActionHistoryRequestRequestTypeDef](#describeenvironmentmanagedactionhistoryrequestrequesttypedef)
+  - [DescribeEnvironmentManagedActionHistoryResultTypeDef](#describeenvironmentmanagedactionhistoryresulttypedef)
+  - [DescribeEnvironmentManagedActionsRequestRequestTypeDef](#describeenvironmentmanagedactionsrequestrequesttypedef)
+  - [DescribeEnvironmentManagedActionsResultTypeDef](#describeenvironmentmanagedactionsresulttypedef)
+  - [DescribeEnvironmentResourcesMessageRequestTypeDef](#describeenvironmentresourcesmessagerequesttypedef)
+  - [DescribeEnvironmentsMessageRequestTypeDef](#describeenvironmentsmessagerequesttypedef)
+  - [DescribeEventsMessageRequestTypeDef](#describeeventsmessagerequesttypedef)
+  - [DescribeInstancesHealthRequestRequestTypeDef](#describeinstanceshealthrequestrequesttypedef)
+  - [DescribeInstancesHealthResultTypeDef](#describeinstanceshealthresulttypedef)
+  - [DescribePlatformVersionRequestRequestTypeDef](#describeplatformversionrequestrequesttypedef)
+  - [DescribePlatformVersionResultTypeDef](#describeplatformversionresulttypedef)
+  - [DisassociateEnvironmentOperationsRoleMessageRequestTypeDef](#disassociateenvironmentoperationsrolemessagerequesttypedef)
+  - [EnvironmentDescriptionResponseMetadataTypeDef](#environmentdescriptionresponsemetadatatypedef)
   - [EnvironmentDescriptionTypeDef](#environmentdescriptiontypedef)
-  - [EnvironmentDescriptionsMessageResponseTypeDef](#environmentdescriptionsmessageresponsetypedef)
+  - [EnvironmentDescriptionsMessageTypeDef](#environmentdescriptionsmessagetypedef)
   - [EnvironmentInfoDescriptionTypeDef](#environmentinfodescriptiontypedef)
   - [EnvironmentLinkTypeDef](#environmentlinktypedef)
   - [EnvironmentResourceDescriptionTypeDef](#environmentresourcedescriptiontypedef)
-  - [EnvironmentResourceDescriptionsMessageResponseTypeDef](#environmentresourcedescriptionsmessageresponsetypedef)
+  - [EnvironmentResourceDescriptionsMessageTypeDef](#environmentresourcedescriptionsmessagetypedef)
   - [EnvironmentResourcesDescriptionTypeDef](#environmentresourcesdescriptiontypedef)
   - [EnvironmentTierTypeDef](#environmenttiertypedef)
   - [EventDescriptionTypeDef](#eventdescriptiontypedef)
-  - [EventDescriptionsMessageResponseTypeDef](#eventdescriptionsmessageresponsetypedef)
+  - [EventDescriptionsMessageTypeDef](#eventdescriptionsmessagetypedef)
   - [InstanceHealthSummaryTypeDef](#instancehealthsummarytypedef)
   - [InstanceTypeDef](#instancetypedef)
   - [LatencyTypeDef](#latencytypedef)
   - [LaunchConfigurationTypeDef](#launchconfigurationtypedef)
   - [LaunchTemplateTypeDef](#launchtemplatetypedef)
-  - [ListAvailableSolutionStacksResultMessageResponseTypeDef](#listavailablesolutionstacksresultmessageresponsetypedef)
-  - [ListPlatformBranchesRequestTypeDef](#listplatformbranchesrequesttypedef)
-  - [ListPlatformBranchesResultResponseTypeDef](#listplatformbranchesresultresponsetypedef)
-  - [ListPlatformVersionsRequestTypeDef](#listplatformversionsrequesttypedef)
-  - [ListPlatformVersionsResultResponseTypeDef](#listplatformversionsresultresponsetypedef)
-  - [ListTagsForResourceMessageTypeDef](#listtagsforresourcemessagetypedef)
+  - [ListAvailableSolutionStacksResultMessageTypeDef](#listavailablesolutionstacksresultmessagetypedef)
+  - [ListPlatformBranchesRequestRequestTypeDef](#listplatformbranchesrequestrequesttypedef)
+  - [ListPlatformBranchesResultTypeDef](#listplatformbranchesresulttypedef)
+  - [ListPlatformVersionsRequestRequestTypeDef](#listplatformversionsrequestrequesttypedef)
+  - [ListPlatformVersionsResultTypeDef](#listplatformversionsresulttypedef)
+  - [ListTagsForResourceMessageRequestTypeDef](#listtagsforresourcemessagerequesttypedef)
   - [ListenerTypeDef](#listenertypedef)
   - [LoadBalancerDescriptionTypeDef](#loadbalancerdescriptiontypedef)
   - [LoadBalancerTypeDef](#loadbalancertypedef)
@@ -107,15 +109,15 @@ type annotations stubs module
   - [PlatformProgrammingLanguageTypeDef](#platformprogramminglanguagetypedef)
   - [PlatformSummaryTypeDef](#platformsummarytypedef)
   - [QueueTypeDef](#queuetypedef)
-  - [RebuildEnvironmentMessageTypeDef](#rebuildenvironmentmessagetypedef)
-  - [RequestEnvironmentInfoMessageTypeDef](#requestenvironmentinfomessagetypedef)
+  - [RebuildEnvironmentMessageRequestTypeDef](#rebuildenvironmentmessagerequesttypedef)
+  - [RequestEnvironmentInfoMessageRequestTypeDef](#requestenvironmentinfomessagerequesttypedef)
   - [ResourceQuotaTypeDef](#resourcequotatypedef)
   - [ResourceQuotasTypeDef](#resourcequotastypedef)
-  - [ResourceTagsDescriptionMessageResponseTypeDef](#resourcetagsdescriptionmessageresponsetypedef)
+  - [ResourceTagsDescriptionMessageTypeDef](#resourcetagsdescriptionmessagetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestartAppServerMessageTypeDef](#restartappservermessagetypedef)
-  - [RetrieveEnvironmentInfoMessageTypeDef](#retrieveenvironmentinfomessagetypedef)
-  - [RetrieveEnvironmentInfoResultMessageResponseTypeDef](#retrieveenvironmentinforesultmessageresponsetypedef)
+  - [RestartAppServerMessageRequestTypeDef](#restartappservermessagerequesttypedef)
+  - [RetrieveEnvironmentInfoMessageRequestTypeDef](#retrieveenvironmentinfomessagerequesttypedef)
+  - [RetrieveEnvironmentInfoResultMessageTypeDef](#retrieveenvironmentinforesultmessagetypedef)
   - [S3LocationTypeDef](#s3locationtypedef)
   - [SearchFilterTypeDef](#searchfiltertypedef)
   - [SingleInstanceHealthTypeDef](#singleinstancehealthtypedef)
@@ -123,25 +125,25 @@ type annotations stubs module
   - [SourceBuildInformationTypeDef](#sourcebuildinformationtypedef)
   - [SourceConfigurationTypeDef](#sourceconfigurationtypedef)
   - [StatusCodesTypeDef](#statuscodestypedef)
-  - [SwapEnvironmentCNAMEsMessageTypeDef](#swapenvironmentcnamesmessagetypedef)
+  - [SwapEnvironmentCNAMEsMessageRequestTypeDef](#swapenvironmentcnamesmessagerequesttypedef)
   - [SystemStatusTypeDef](#systemstatustypedef)
   - [TagTypeDef](#tagtypedef)
-  - [TerminateEnvironmentMessageTypeDef](#terminateenvironmentmessagetypedef)
+  - [TerminateEnvironmentMessageRequestTypeDef](#terminateenvironmentmessagerequesttypedef)
   - [TriggerTypeDef](#triggertypedef)
-  - [UpdateApplicationMessageTypeDef](#updateapplicationmessagetypedef)
-  - [UpdateApplicationResourceLifecycleMessageTypeDef](#updateapplicationresourcelifecyclemessagetypedef)
-  - [UpdateApplicationVersionMessageTypeDef](#updateapplicationversionmessagetypedef)
-  - [UpdateConfigurationTemplateMessageTypeDef](#updateconfigurationtemplatemessagetypedef)
-  - [UpdateEnvironmentMessageTypeDef](#updateenvironmentmessagetypedef)
-  - [UpdateTagsForResourceMessageTypeDef](#updatetagsforresourcemessagetypedef)
-  - [ValidateConfigurationSettingsMessageTypeDef](#validateconfigurationsettingsmessagetypedef)
+  - [UpdateApplicationMessageRequestTypeDef](#updateapplicationmessagerequesttypedef)
+  - [UpdateApplicationResourceLifecycleMessageRequestTypeDef](#updateapplicationresourcelifecyclemessagerequesttypedef)
+  - [UpdateApplicationVersionMessageRequestTypeDef](#updateapplicationversionmessagerequesttypedef)
+  - [UpdateConfigurationTemplateMessageRequestTypeDef](#updateconfigurationtemplatemessagerequesttypedef)
+  - [UpdateEnvironmentMessageRequestTypeDef](#updateenvironmentmessagerequesttypedef)
+  - [UpdateTagsForResourceMessageRequestTypeDef](#updatetagsforresourcemessagerequesttypedef)
+  - [ValidateConfigurationSettingsMessageRequestTypeDef](#validateconfigurationsettingsmessagerequesttypedef)
   - [ValidationMessageTypeDef](#validationmessagetypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
-## AbortEnvironmentUpdateMessageTypeDef
+## AbortEnvironmentUpdateMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import AbortEnvironmentUpdateMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import AbortEnvironmentUpdateMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -149,10 +151,10 @@ Optional fields:
 - `EnvironmentId`: `str`
 - `EnvironmentName`: `str`
 
-## ApplicationDescriptionMessageResponseTypeDef
+## ApplicationDescriptionMessageTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import ApplicationDescriptionMessageResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import ApplicationDescriptionMessageTypeDef
 ```
 
 Required fields:
@@ -180,10 +182,10 @@ Optional fields:
 - `ResourceLifecycleConfig`:
   [ApplicationResourceLifecycleConfigTypeDef](./type_defs.md#applicationresourcelifecycleconfigtypedef)
 
-## ApplicationDescriptionsMessageResponseTypeDef
+## ApplicationDescriptionsMessageTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import ApplicationDescriptionsMessageResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import ApplicationDescriptionsMessageTypeDef
 ```
 
 Required fields:
@@ -218,10 +220,10 @@ Optional fields:
 - `VersionLifecycleConfig`:
   [ApplicationVersionLifecycleConfigTypeDef](./type_defs.md#applicationversionlifecycleconfigtypedef)
 
-## ApplicationResourceLifecycleDescriptionMessageResponseTypeDef
+## ApplicationResourceLifecycleDescriptionMessageTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import ApplicationResourceLifecycleDescriptionMessageResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import ApplicationResourceLifecycleDescriptionMessageTypeDef
 ```
 
 Required fields:
@@ -232,10 +234,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ApplicationVersionDescriptionMessageResponseTypeDef
+## ApplicationVersionDescriptionMessageTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import ApplicationVersionDescriptionMessageResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import ApplicationVersionDescriptionMessageTypeDef
 ```
 
 Required fields:
@@ -266,10 +268,10 @@ Optional fields:
 - `Status`:
   [ApplicationVersionStatusType](./literals.md#applicationversionstatustype)
 
-## ApplicationVersionDescriptionsMessageResponseTypeDef
+## ApplicationVersionDescriptionsMessageTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import ApplicationVersionDescriptionsMessageResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import ApplicationVersionDescriptionsMessageTypeDef
 ```
 
 Required fields:
@@ -291,10 +293,10 @@ Optional fields:
 - `MaxCountRule`: [MaxCountRuleTypeDef](./type_defs.md#maxcountruletypedef)
 - `MaxAgeRule`: [MaxAgeRuleTypeDef](./type_defs.md#maxageruletypedef)
 
-## ApplyEnvironmentManagedActionRequestTypeDef
+## ApplyEnvironmentManagedActionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import ApplyEnvironmentManagedActionRequestTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import ApplyEnvironmentManagedActionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -306,10 +308,10 @@ Optional fields:
 - `EnvironmentName`: `str`
 - `EnvironmentId`: `str`
 
-## ApplyEnvironmentManagedActionResultResponseTypeDef
+## ApplyEnvironmentManagedActionResultTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import ApplyEnvironmentManagedActionResultResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import ApplyEnvironmentManagedActionResultTypeDef
 ```
 
 Required fields:
@@ -321,10 +323,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateEnvironmentOperationsRoleMessageTypeDef
+## AssociateEnvironmentOperationsRoleMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import AssociateEnvironmentOperationsRoleMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import AssociateEnvironmentOperationsRoleMessageRequestTypeDef
 ```
 
 Required fields:
@@ -386,20 +388,20 @@ Optional fields:
 - `SoftIRQ`: `float`
 - `Privileged`: `float`
 
-## CheckDNSAvailabilityMessageTypeDef
+## CheckDNSAvailabilityMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import CheckDNSAvailabilityMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import CheckDNSAvailabilityMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `CNAMEPrefix`: `str`
 
-## CheckDNSAvailabilityResultMessageResponseTypeDef
+## CheckDNSAvailabilityResultMessageTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import CheckDNSAvailabilityResultMessageResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import CheckDNSAvailabilityResultMessageTypeDef
 ```
 
 Required fields:
@@ -409,10 +411,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ComposeEnvironmentsMessageTypeDef
+## ComposeEnvironmentsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import ComposeEnvironmentsMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import ComposeEnvironmentsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -456,10 +458,10 @@ Optional fields:
 - `OptionName`: `str`
 - `Value`: `str`
 
-## ConfigurationOptionsDescriptionResponseTypeDef
+## ConfigurationOptionsDescriptionTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import ConfigurationOptionsDescriptionResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import ConfigurationOptionsDescriptionTypeDef
 ```
 
 Required fields:
@@ -471,10 +473,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ConfigurationSettingsDescriptionResponseTypeDef
+## ConfigurationSettingsDescriptionResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import ConfigurationSettingsDescriptionResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import ConfigurationSettingsDescriptionResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -494,23 +496,44 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ConfigurationSettingsDescriptionsResponseTypeDef
+## ConfigurationSettingsDescriptionTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import ConfigurationSettingsDescriptionsResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import ConfigurationSettingsDescriptionTypeDef
+```
+
+Optional fields:
+
+- `SolutionStackName`: `str`
+- `PlatformArn`: `str`
+- `ApplicationName`: `str`
+- `TemplateName`: `str`
+- `Description`: `str`
+- `EnvironmentName`: `str`
+- `DeploymentStatus`:
+  [ConfigurationDeploymentStatusType](./literals.md#configurationdeploymentstatustype)
+- `DateCreated`: `datetime`
+- `DateUpdated`: `datetime`
+- `OptionSettings`:
+  `List`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
+
+## ConfigurationSettingsDescriptionsTypeDef
+
+```python
+from mypy_boto3_elasticbeanstalk.type_defs import ConfigurationSettingsDescriptionsTypeDef
 ```
 
 Required fields:
 
 - `ConfigurationSettings`:
-  `List`\[[ConfigurationSettingsDescriptionResponseTypeDef](./type_defs.md#configurationsettingsdescriptionresponsetypedef)\]
+  `List`\[[ConfigurationSettingsDescriptionTypeDef](./type_defs.md#configurationsettingsdescriptiontypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ConfigurationSettingsValidationMessagesResponseTypeDef
+## ConfigurationSettingsValidationMessagesTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import ConfigurationSettingsValidationMessagesResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import ConfigurationSettingsValidationMessagesTypeDef
 ```
 
 Required fields:
@@ -520,10 +543,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateApplicationMessageTypeDef
+## CreateApplicationMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import CreateApplicationMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import CreateApplicationMessageRequestTypeDef
 ```
 
 Required fields:
@@ -537,10 +560,10 @@ Optional fields:
   [ApplicationResourceLifecycleConfigTypeDef](./type_defs.md#applicationresourcelifecycleconfigtypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateApplicationVersionMessageTypeDef
+## CreateApplicationVersionMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import CreateApplicationVersionMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import CreateApplicationVersionMessageRequestTypeDef
 ```
 
 Required fields:
@@ -560,10 +583,10 @@ Optional fields:
 - `Process`: `bool`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateConfigurationTemplateMessageTypeDef
+## CreateConfigurationTemplateMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import CreateConfigurationTemplateMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import CreateConfigurationTemplateMessageRequestTypeDef
 ```
 
 Required fields:
@@ -583,10 +606,10 @@ Optional fields:
   `List`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateEnvironmentMessageTypeDef
+## CreateEnvironmentMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import CreateEnvironmentMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import CreateEnvironmentMessageRequestTypeDef
 ```
 
 Required fields:
@@ -611,10 +634,10 @@ Optional fields:
   `List`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
 - `OperationsRole`: `str`
 
-## CreatePlatformVersionRequestTypeDef
+## CreatePlatformVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import CreatePlatformVersionRequestTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import CreatePlatformVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -631,10 +654,10 @@ Optional fields:
   `List`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreatePlatformVersionResultResponseTypeDef
+## CreatePlatformVersionResultTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import CreatePlatformVersionResultResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import CreatePlatformVersionResultTypeDef
 ```
 
 Required fields:
@@ -645,10 +668,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateStorageLocationResultMessageResponseTypeDef
+## CreateStorageLocationResultMessageTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import CreateStorageLocationResultMessageResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import CreateStorageLocationResultMessageTypeDef
 ```
 
 Required fields:
@@ -668,10 +691,10 @@ Optional fields:
 - `VirtualizationType`: `str`
 - `ImageId`: `str`
 
-## DeleteApplicationMessageTypeDef
+## DeleteApplicationMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DeleteApplicationMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DeleteApplicationMessageRequestTypeDef
 ```
 
 Required fields:
@@ -682,10 +705,10 @@ Optional fields:
 
 - `TerminateEnvByForce`: `bool`
 
-## DeleteApplicationVersionMessageTypeDef
+## DeleteApplicationVersionMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DeleteApplicationVersionMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DeleteApplicationVersionMessageRequestTypeDef
 ```
 
 Required fields:
@@ -697,10 +720,10 @@ Optional fields:
 
 - `DeleteSourceBundle`: `bool`
 
-## DeleteConfigurationTemplateMessageTypeDef
+## DeleteConfigurationTemplateMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DeleteConfigurationTemplateMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DeleteConfigurationTemplateMessageRequestTypeDef
 ```
 
 Required fields:
@@ -708,10 +731,10 @@ Required fields:
 - `ApplicationName`: `str`
 - `TemplateName`: `str`
 
-## DeleteEnvironmentConfigurationMessageTypeDef
+## DeleteEnvironmentConfigurationMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DeleteEnvironmentConfigurationMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DeleteEnvironmentConfigurationMessageRequestTypeDef
 ```
 
 Required fields:
@@ -719,20 +742,20 @@ Required fields:
 - `ApplicationName`: `str`
 - `EnvironmentName`: `str`
 
-## DeletePlatformVersionRequestTypeDef
+## DeletePlatformVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DeletePlatformVersionRequestTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DeletePlatformVersionRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `PlatformArn`: `str`
 
-## DeletePlatformVersionResultResponseTypeDef
+## DeletePlatformVersionResultTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DeletePlatformVersionResultResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DeletePlatformVersionResultTypeDef
 ```
 
 Required fields:
@@ -755,10 +778,10 @@ Optional fields:
 - `Status`: `str`
 - `DeploymentTime`: `datetime`
 
-## DescribeAccountAttributesResultResponseTypeDef
+## DescribeAccountAttributesResultTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DescribeAccountAttributesResultResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DescribeAccountAttributesResultTypeDef
 ```
 
 Required fields:
@@ -768,10 +791,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeApplicationVersionsMessageTypeDef
+## DescribeApplicationVersionsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DescribeApplicationVersionsMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DescribeApplicationVersionsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -781,20 +804,20 @@ Optional fields:
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
-## DescribeApplicationsMessageTypeDef
+## DescribeApplicationsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DescribeApplicationsMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DescribeApplicationsMessageRequestTypeDef
 ```
 
 Optional fields:
 
 - `ApplicationNames`: `List`\[`str`\]
 
-## DescribeConfigurationOptionsMessageTypeDef
+## DescribeConfigurationOptionsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DescribeConfigurationOptionsMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DescribeConfigurationOptionsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -807,10 +830,10 @@ Optional fields:
 - `Options`:
   `List`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
 
-## DescribeConfigurationSettingsMessageTypeDef
+## DescribeConfigurationSettingsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DescribeConfigurationSettingsMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DescribeConfigurationSettingsMessageRequestTypeDef
 ```
 
 Required fields:
@@ -822,10 +845,10 @@ Optional fields:
 - `TemplateName`: `str`
 - `EnvironmentName`: `str`
 
-## DescribeEnvironmentHealthRequestTypeDef
+## DescribeEnvironmentHealthRequestRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentHealthRequestTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentHealthRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -835,10 +858,10 @@ Optional fields:
 - `AttributeNames`:
   `List`\[[EnvironmentHealthAttributeType](./literals.md#environmenthealthattributetype)\]
 
-## DescribeEnvironmentHealthResultResponseTypeDef
+## DescribeEnvironmentHealthResultTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentHealthResultResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentHealthResultTypeDef
 ```
 
 Required fields:
@@ -856,10 +879,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEnvironmentManagedActionHistoryRequestTypeDef
+## DescribeEnvironmentManagedActionHistoryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentManagedActionHistoryRequestTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentManagedActionHistoryRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -869,10 +892,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxItems`: `int`
 
-## DescribeEnvironmentManagedActionHistoryResultResponseTypeDef
+## DescribeEnvironmentManagedActionHistoryResultTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentManagedActionHistoryResultResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentManagedActionHistoryResultTypeDef
 ```
 
 Required fields:
@@ -883,10 +906,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEnvironmentManagedActionsRequestTypeDef
+## DescribeEnvironmentManagedActionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentManagedActionsRequestTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentManagedActionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -895,10 +918,10 @@ Optional fields:
 - `EnvironmentId`: `str`
 - `Status`: [ActionStatusType](./literals.md#actionstatustype)
 
-## DescribeEnvironmentManagedActionsResultResponseTypeDef
+## DescribeEnvironmentManagedActionsResultTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentManagedActionsResultResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentManagedActionsResultTypeDef
 ```
 
 Required fields:
@@ -908,10 +931,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEnvironmentResourcesMessageTypeDef
+## DescribeEnvironmentResourcesMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentResourcesMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentResourcesMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -919,10 +942,10 @@ Optional fields:
 - `EnvironmentId`: `str`
 - `EnvironmentName`: `str`
 
-## DescribeEnvironmentsMessageTypeDef
+## DescribeEnvironmentsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentsMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -936,10 +959,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
-## DescribeEventsMessageTypeDef
+## DescribeEventsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DescribeEventsMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DescribeEventsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -957,10 +980,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
-## DescribeInstancesHealthRequestTypeDef
+## DescribeInstancesHealthRequestRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DescribeInstancesHealthRequestTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DescribeInstancesHealthRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -971,10 +994,10 @@ Optional fields:
   `List`\[[InstancesHealthAttributeType](./literals.md#instanceshealthattributetype)\]
 - `NextToken`: `str`
 
-## DescribeInstancesHealthResultResponseTypeDef
+## DescribeInstancesHealthResultTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DescribeInstancesHealthResultResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DescribeInstancesHealthResultTypeDef
 ```
 
 Required fields:
@@ -986,20 +1009,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePlatformVersionRequestTypeDef
+## DescribePlatformVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DescribePlatformVersionRequestTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DescribePlatformVersionRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `PlatformArn`: `str`
 
-## DescribePlatformVersionResultResponseTypeDef
+## DescribePlatformVersionResultTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DescribePlatformVersionResultResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DescribePlatformVersionResultTypeDef
 ```
 
 Required fields:
@@ -1009,15 +1032,50 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateEnvironmentOperationsRoleMessageTypeDef
+## DisassociateEnvironmentOperationsRoleMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import DisassociateEnvironmentOperationsRoleMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import DisassociateEnvironmentOperationsRoleMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `EnvironmentName`: `str`
+
+## EnvironmentDescriptionResponseMetadataTypeDef
+
+```python
+from mypy_boto3_elasticbeanstalk.type_defs import EnvironmentDescriptionResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `EnvironmentName`: `str`
+- `EnvironmentId`: `str`
+- `ApplicationName`: `str`
+- `VersionLabel`: `str`
+- `SolutionStackName`: `str`
+- `PlatformArn`: `str`
+- `TemplateName`: `str`
+- `Description`: `str`
+- `EndpointURL`: `str`
+- `CNAME`: `str`
+- `DateCreated`: `datetime`
+- `DateUpdated`: `datetime`
+- `Status`: [EnvironmentStatusType](./literals.md#environmentstatustype)
+- `AbortableOperationInProgress`: `bool`
+- `Health`: [EnvironmentHealthType](./literals.md#environmenthealthtype)
+- `HealthStatus`:
+  [EnvironmentHealthStatusType](./literals.md#environmenthealthstatustype)
+- `Resources`:
+  [EnvironmentResourcesDescriptionTypeDef](./type_defs.md#environmentresourcesdescriptiontypedef)
+- `Tier`: [EnvironmentTierTypeDef](./type_defs.md#environmenttiertypedef)
+- `EnvironmentLinks`:
+  `List`\[[EnvironmentLinkTypeDef](./type_defs.md#environmentlinktypedef)\]
+- `EnvironmentArn`: `str`
+- `OperationsRole`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EnvironmentDescriptionTypeDef
 
@@ -1052,10 +1110,10 @@ Optional fields:
 - `EnvironmentArn`: `str`
 - `OperationsRole`: `str`
 
-## EnvironmentDescriptionsMessageResponseTypeDef
+## EnvironmentDescriptionsMessageTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import EnvironmentDescriptionsMessageResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import EnvironmentDescriptionsMessageTypeDef
 ```
 
 Required fields:
@@ -1111,10 +1169,10 @@ Optional fields:
 - `Triggers`: `List`\[[TriggerTypeDef](./type_defs.md#triggertypedef)\]
 - `Queues`: `List`\[[QueueTypeDef](./type_defs.md#queuetypedef)\]
 
-## EnvironmentResourceDescriptionsMessageResponseTypeDef
+## EnvironmentResourceDescriptionsMessageTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import EnvironmentResourceDescriptionsMessageResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import EnvironmentResourceDescriptionsMessageTypeDef
 ```
 
 Required fields:
@@ -1165,10 +1223,10 @@ Optional fields:
 - `RequestId`: `str`
 - `Severity`: [EventSeverityType](./literals.md#eventseveritytype)
 
-## EventDescriptionsMessageResponseTypeDef
+## EventDescriptionsMessageTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import EventDescriptionsMessageResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import EventDescriptionsMessageTypeDef
 ```
 
 Required fields:
@@ -1243,10 +1301,10 @@ Optional fields:
 
 - `Id`: `str`
 
-## ListAvailableSolutionStacksResultMessageResponseTypeDef
+## ListAvailableSolutionStacksResultMessageTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import ListAvailableSolutionStacksResultMessageResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import ListAvailableSolutionStacksResultMessageTypeDef
 ```
 
 Required fields:
@@ -1257,10 +1315,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPlatformBranchesRequestTypeDef
+## ListPlatformBranchesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import ListPlatformBranchesRequestTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import ListPlatformBranchesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1270,10 +1328,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
-## ListPlatformBranchesResultResponseTypeDef
+## ListPlatformBranchesResultTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import ListPlatformBranchesResultResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import ListPlatformBranchesResultTypeDef
 ```
 
 Required fields:
@@ -1284,10 +1342,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPlatformVersionsRequestTypeDef
+## ListPlatformVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import ListPlatformVersionsRequestTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import ListPlatformVersionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1297,10 +1355,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
-## ListPlatformVersionsResultResponseTypeDef
+## ListPlatformVersionsResultTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import ListPlatformVersionsResultResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import ListPlatformVersionsResultTypeDef
 ```
 
 Required fields:
@@ -1311,10 +1369,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceMessageTypeDef
+## ListTagsForResourceMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import ListTagsForResourceMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import ListTagsForResourceMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1563,10 +1621,10 @@ Optional fields:
 - `Name`: `str`
 - `URL`: `str`
 
-## RebuildEnvironmentMessageTypeDef
+## RebuildEnvironmentMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import RebuildEnvironmentMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import RebuildEnvironmentMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1574,10 +1632,10 @@ Optional fields:
 - `EnvironmentId`: `str`
 - `EnvironmentName`: `str`
 
-## RequestEnvironmentInfoMessageTypeDef
+## RequestEnvironmentInfoMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import RequestEnvironmentInfoMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import RequestEnvironmentInfoMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1618,10 +1676,10 @@ Optional fields:
 - `CustomPlatformQuota`:
   [ResourceQuotaTypeDef](./type_defs.md#resourcequotatypedef)
 
-## ResourceTagsDescriptionMessageResponseTypeDef
+## ResourceTagsDescriptionMessageTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import ResourceTagsDescriptionMessageResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import ResourceTagsDescriptionMessageTypeDef
 ```
 
 Required fields:
@@ -1645,10 +1703,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## RestartAppServerMessageTypeDef
+## RestartAppServerMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import RestartAppServerMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import RestartAppServerMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1656,10 +1714,10 @@ Optional fields:
 - `EnvironmentId`: `str`
 - `EnvironmentName`: `str`
 
-## RetrieveEnvironmentInfoMessageTypeDef
+## RetrieveEnvironmentInfoMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import RetrieveEnvironmentInfoMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import RetrieveEnvironmentInfoMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1671,10 +1729,10 @@ Optional fields:
 - `EnvironmentId`: `str`
 - `EnvironmentName`: `str`
 
-## RetrieveEnvironmentInfoResultMessageResponseTypeDef
+## RetrieveEnvironmentInfoResultMessageTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import RetrieveEnvironmentInfoResultMessageResponseTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import RetrieveEnvironmentInfoResultMessageTypeDef
 ```
 
 Required fields:
@@ -1775,10 +1833,10 @@ Optional fields:
 - `Status4xx`: `int`
 - `Status5xx`: `int`
 
-## SwapEnvironmentCNAMEsMessageTypeDef
+## SwapEnvironmentCNAMEsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import SwapEnvironmentCNAMEsMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import SwapEnvironmentCNAMEsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1811,10 +1869,10 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## TerminateEnvironmentMessageTypeDef
+## TerminateEnvironmentMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import TerminateEnvironmentMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import TerminateEnvironmentMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1834,10 +1892,10 @@ Optional fields:
 
 - `Name`: `str`
 
-## UpdateApplicationMessageTypeDef
+## UpdateApplicationMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import UpdateApplicationMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import UpdateApplicationMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1848,10 +1906,10 @@ Optional fields:
 
 - `Description`: `str`
 
-## UpdateApplicationResourceLifecycleMessageTypeDef
+## UpdateApplicationResourceLifecycleMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import UpdateApplicationResourceLifecycleMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import UpdateApplicationResourceLifecycleMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1860,10 +1918,10 @@ Required fields:
 - `ResourceLifecycleConfig`:
   [ApplicationResourceLifecycleConfigTypeDef](./type_defs.md#applicationresourcelifecycleconfigtypedef)
 
-## UpdateApplicationVersionMessageTypeDef
+## UpdateApplicationVersionMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import UpdateApplicationVersionMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import UpdateApplicationVersionMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1875,10 +1933,10 @@ Optional fields:
 
 - `Description`: `str`
 
-## UpdateConfigurationTemplateMessageTypeDef
+## UpdateConfigurationTemplateMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import UpdateConfigurationTemplateMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import UpdateConfigurationTemplateMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1894,10 +1952,10 @@ Optional fields:
 - `OptionsToRemove`:
   `List`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
 
-## UpdateEnvironmentMessageTypeDef
+## UpdateEnvironmentMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import UpdateEnvironmentMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import UpdateEnvironmentMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1917,10 +1975,10 @@ Optional fields:
 - `OptionsToRemove`:
   `List`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
 
-## UpdateTagsForResourceMessageTypeDef
+## UpdateTagsForResourceMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import UpdateTagsForResourceMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import UpdateTagsForResourceMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1932,10 +1990,10 @@ Optional fields:
 - `TagsToAdd`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `TagsToRemove`: `List`\[`str`\]
 
-## ValidateConfigurationSettingsMessageTypeDef
+## ValidateConfigurationSettingsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_elasticbeanstalk.type_defs import ValidateConfigurationSettingsMessageTypeDef
+from mypy_boto3_elasticbeanstalk.type_defs import ValidateConfigurationSettingsMessageRequestTypeDef
 ```
 
 Required fields:

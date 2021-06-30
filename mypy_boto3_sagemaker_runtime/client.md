@@ -11,6 +11,7 @@ type annotations stubs module
   - [SageMakerRuntimeClient](#sagemakerruntimeclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [generate_presigned_url](#generate_presigned_url)
     - [invoke_endpoint](#invoke_endpoint)
@@ -52,6 +53,17 @@ Exceptions:
 - `Exceptions.ValidationError`
 
 ## Methods
+
+### exceptions
+
+SageMakerRuntimeClient exceptions.
+
+Type annotations for `boto3.client("sagemaker-runtime").exceptions` method.
+
+Boto3 documentation:
+[SageMakerRuntime.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
 
 ### can_paginate
 
@@ -100,7 +112,7 @@ Boto3 documentation:
 [SageMakerRuntime.Client.invoke_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client.invoke_endpoint)
 
 Arguments mapping described in
-[InvokeEndpointInputTypeDef](./type_defs.md#invokeendpointinputtypedef).
+[InvokeEndpointInputRequestTypeDef](./type_defs.md#invokeendpointinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -115,4 +127,4 @@ Keyword-only arguments:
 - `InferenceId`: `str`
 
 Returns
-[InvokeEndpointOutputResponseTypeDef](./type_defs.md#invokeendpointoutputresponsetypedef).
+[InvokeEndpointOutputTypeDef](./type_defs.md#invokeendpointoutputtypedef).

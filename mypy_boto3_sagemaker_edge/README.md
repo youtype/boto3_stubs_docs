@@ -31,6 +31,7 @@ from mypy_boto3_sagemaker_edge.client import SagemakerEdgeManagerClient
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_device_registration](./client.md#get_device_registration)
 - [send_heartbeat](./client.md#send_heartbeat)
@@ -54,8 +55,8 @@ from mypy_boto3_sagemaker_edge.type_defs import EdgeMetricTypeDef, ...
 ```
 
 - [EdgeMetricTypeDef](./type_defs.md#edgemetrictypedef)
-- [GetDeviceRegistrationRequestTypeDef](./type_defs.md#getdeviceregistrationrequesttypedef)
-- [GetDeviceRegistrationResultResponseTypeDef](./type_defs.md#getdeviceregistrationresultresponsetypedef)
+- [GetDeviceRegistrationRequestRequestTypeDef](./type_defs.md#getdeviceregistrationrequestrequesttypedef)
+- [GetDeviceRegistrationResultTypeDef](./type_defs.md#getdeviceregistrationresulttypedef)
 - [ModelTypeDef](./type_defs.md#modeltypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [SendHeartbeatRequestTypeDef](./type_defs.md#sendheartbeatrequesttypedef)
+- [SendHeartbeatRequestRequestTypeDef](./type_defs.md#sendheartbeatrequestrequesttypedef)

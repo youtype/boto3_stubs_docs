@@ -37,7 +37,7 @@ Arguments for `DescribeComputeEnvironmentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeComputeEnvironmentsPaginator.paginate` returns
-`Iterator`\[[DescribeComputeEnvironmentsResponseResponseTypeDef](./type_defs.md#describecomputeenvironmentsresponseresponsetypedef)\].
+`Iterator`\[[DescribeComputeEnvironmentsResponseTypeDef](./type_defs.md#describecomputeenvironmentsresponsetypedef)\].
 
 ## DescribeJobDefinitionsPaginator
 
@@ -65,7 +65,7 @@ Arguments for `DescribeJobDefinitionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeJobDefinitionsPaginator.paginate` returns
-`Iterator`\[[DescribeJobDefinitionsResponseResponseTypeDef](./type_defs.md#describejobdefinitionsresponseresponsetypedef)\].
+`Iterator`\[[DescribeJobDefinitionsResponseTypeDef](./type_defs.md#describejobdefinitionsresponsetypedef)\].
 
 ## DescribeJobQueuesPaginator
 
@@ -91,7 +91,7 @@ Arguments for `DescribeJobQueuesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeJobQueuesPaginator.paginate` returns
-`Iterator`\[[DescribeJobQueuesResponseResponseTypeDef](./type_defs.md#describejobqueuesresponseresponsetypedef)\].
+`Iterator`\[[DescribeJobQueuesResponseTypeDef](./type_defs.md#describejobqueuesresponsetypedef)\].
 
 ## ListJobsPaginator
 
@@ -119,4 +119,4 @@ Arguments for `ListJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobsPaginator.paginate` returns
-`Iterator`\[[ListJobsResponseResponseTypeDef](./type_defs.md#listjobsresponseresponsetypedef)\].
+`Iterator`\[[ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)\].

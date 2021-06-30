@@ -36,7 +36,7 @@ Arguments for `ListAgentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAgentsPaginator.paginate` returns
-`Iterator`\[[ListAgentsResponseResponseTypeDef](./type_defs.md#listagentsresponseresponsetypedef)\].
+`Iterator`\[[ListAgentsResponseTypeDef](./type_defs.md#listagentsresponsetypedef)\].
 
 ## ListLocationsPaginator
 
@@ -63,7 +63,7 @@ Arguments for `ListLocationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLocationsPaginator.paginate` returns
-`Iterator`\[[ListLocationsResponseResponseTypeDef](./type_defs.md#listlocationsresponseresponsetypedef)\].
+`Iterator`\[[ListLocationsResponseTypeDef](./type_defs.md#listlocationsresponsetypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -89,7 +89,7 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef)\].
+`Iterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
 
 ## ListTaskExecutionsPaginator
 
@@ -115,7 +115,7 @@ Arguments for `ListTaskExecutionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTaskExecutionsPaginator.paginate` returns
-`Iterator`\[[ListTaskExecutionsResponseResponseTypeDef](./type_defs.md#listtaskexecutionsresponseresponsetypedef)\].
+`Iterator`\[[ListTaskExecutionsResponseTypeDef](./type_defs.md#listtaskexecutionsresponsetypedef)\].
 
 ## ListTasksPaginator
 
@@ -140,4 +140,4 @@ Arguments for `ListTasksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTasksPaginator.paginate` returns
-`Iterator`\[[ListTasksResponseResponseTypeDef](./type_defs.md#listtasksresponseresponsetypedef)\].
+`Iterator`\[[ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef)\].

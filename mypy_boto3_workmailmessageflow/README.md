@@ -31,6 +31,7 @@ from mypy_boto3_workmailmessageflow.client import WorkMailMessageFlowClient
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_raw_message_content](./client.md#get_raw_message_content)
 - [put_raw_message_content](./client.md#put_raw_message_content)
@@ -53,12 +54,12 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_workmailmessageflow.type_defs import GetRawMessageContentRequestTypeDef, ...
+from mypy_boto3_workmailmessageflow.type_defs import GetRawMessageContentRequestRequestTypeDef, ...
 ```
 
-- [GetRawMessageContentRequestTypeDef](./type_defs.md#getrawmessagecontentrequesttypedef)
-- [GetRawMessageContentResponseResponseTypeDef](./type_defs.md#getrawmessagecontentresponseresponsetypedef)
-- [PutRawMessageContentRequestTypeDef](./type_defs.md#putrawmessagecontentrequesttypedef)
+- [GetRawMessageContentRequestRequestTypeDef](./type_defs.md#getrawmessagecontentrequestrequesttypedef)
+- [GetRawMessageContentResponseTypeDef](./type_defs.md#getrawmessagecontentresponsetypedef)
+- [PutRawMessageContentRequestRequestTypeDef](./type_defs.md#putrawmessagecontentrequestrequesttypedef)
 - [RawMessageContentTypeDef](./type_defs.md#rawmessagecontenttypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3ReferenceTypeDef](./type_defs.md#s3referencetypedef)

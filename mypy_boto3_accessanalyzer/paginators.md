@@ -44,7 +44,7 @@ Arguments for `ListAccessPreviewFindingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAccessPreviewFindingsPaginator.paginate` returns
-`Iterator`\[[ListAccessPreviewFindingsResponseResponseTypeDef](./type_defs.md#listaccesspreviewfindingsresponseresponsetypedef)\].
+`Iterator`\[[ListAccessPreviewFindingsResponseTypeDef](./type_defs.md#listaccesspreviewfindingsresponsetypedef)\].
 
 ## ListAccessPreviewsPaginator
 
@@ -70,7 +70,7 @@ Arguments for `ListAccessPreviewsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAccessPreviewsPaginator.paginate` returns
-`Iterator`\[[ListAccessPreviewsResponseResponseTypeDef](./type_defs.md#listaccesspreviewsresponseresponsetypedef)\].
+`Iterator`\[[ListAccessPreviewsResponseTypeDef](./type_defs.md#listaccesspreviewsresponsetypedef)\].
 
 ## ListAnalyzedResourcesPaginator
 
@@ -97,7 +97,7 @@ Arguments for `ListAnalyzedResourcesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAnalyzedResourcesPaginator.paginate` returns
-`Iterator`\[[ListAnalyzedResourcesResponseResponseTypeDef](./type_defs.md#listanalyzedresourcesresponseresponsetypedef)\].
+`Iterator`\[[ListAnalyzedResourcesResponseTypeDef](./type_defs.md#listanalyzedresourcesresponsetypedef)\].
 
 ## ListAnalyzersPaginator
 
@@ -123,7 +123,7 @@ Arguments for `ListAnalyzersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAnalyzersPaginator.paginate` returns
-`Iterator`\[[ListAnalyzersResponseResponseTypeDef](./type_defs.md#listanalyzersresponseresponsetypedef)\].
+`Iterator`\[[ListAnalyzersResponseTypeDef](./type_defs.md#listanalyzersresponsetypedef)\].
 
 ## ListArchiveRulesPaginator
 
@@ -149,7 +149,7 @@ Arguments for `ListArchiveRulesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListArchiveRulesPaginator.paginate` returns
-`Iterator`\[[ListArchiveRulesResponseResponseTypeDef](./type_defs.md#listarchiverulesresponseresponsetypedef)\].
+`Iterator`\[[ListArchiveRulesResponseTypeDef](./type_defs.md#listarchiverulesresponsetypedef)\].
 
 ## ListFindingsPaginator
 
@@ -178,7 +178,7 @@ Arguments for `ListFindingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFindingsPaginator.paginate` returns
-`Iterator`\[[ListFindingsResponseResponseTypeDef](./type_defs.md#listfindingsresponseresponsetypedef)\].
+`Iterator`\[[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef)\].
 
 ## ListPolicyGenerationsPaginator
 
@@ -204,7 +204,7 @@ Arguments for `ListPolicyGenerationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPolicyGenerationsPaginator.paginate` returns
-`Iterator`\[[ListPolicyGenerationsResponseResponseTypeDef](./type_defs.md#listpolicygenerationsresponseresponsetypedef)\].
+`Iterator`\[[ListPolicyGenerationsResponseTypeDef](./type_defs.md#listpolicygenerationsresponsetypedef)\].
 
 ## ValidatePolicyPaginator
 
@@ -232,4 +232,4 @@ Arguments for `ValidatePolicyPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ValidatePolicyPaginator.paginate` returns
-`Iterator`\[[ValidatePolicyResponseResponseTypeDef](./type_defs.md#validatepolicyresponseresponsetypedef)\].
+`Iterator`\[[ValidatePolicyResponseTypeDef](./type_defs.md#validatepolicyresponsetypedef)\].

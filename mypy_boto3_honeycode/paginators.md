@@ -38,7 +38,7 @@ Arguments for `ListTableColumnsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTableColumnsPaginator.paginate` returns
-`Iterator`\[[ListTableColumnsResultResponseTypeDef](./type_defs.md#listtablecolumnsresultresponsetypedef)\].
+`Iterator`\[[ListTableColumnsResultTypeDef](./type_defs.md#listtablecolumnsresulttypedef)\].
 
 ## ListTableRowsPaginator
 
@@ -66,7 +66,7 @@ Arguments for `ListTableRowsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTableRowsPaginator.paginate` returns
-`Iterator`\[[ListTableRowsResultResponseTypeDef](./type_defs.md#listtablerowsresultresponsetypedef)\].
+`Iterator`\[[ListTableRowsResultTypeDef](./type_defs.md#listtablerowsresulttypedef)\].
 
 ## ListTablesPaginator
 
@@ -91,7 +91,7 @@ Arguments for `ListTablesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTablesPaginator.paginate` returns
-`Iterator`\[[ListTablesResultResponseTypeDef](./type_defs.md#listtablesresultresponsetypedef)\].
+`Iterator`\[[ListTablesResultTypeDef](./type_defs.md#listtablesresulttypedef)\].
 
 ## QueryTableRowsPaginator
 
@@ -119,4 +119,4 @@ Arguments for `QueryTableRowsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `QueryTableRowsPaginator.paginate` returns
-`Iterator`\[[QueryTableRowsResultResponseTypeDef](./type_defs.md#querytablerowsresultresponsetypedef)\].
+`Iterator`\[[QueryTableRowsResultTypeDef](./type_defs.md#querytablerowsresulttypedef)\].

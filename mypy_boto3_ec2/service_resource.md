@@ -1451,7 +1451,7 @@ Keyword-only arguments:
 - `PrivateIpAddress`: `str`
 
 Returns
-[AssociateAddressResultResponseTypeDef](./type_defs.md#associateaddressresultresponsetypedef).
+[AssociateAddressResultTypeDef](./type_defs.md#associateaddressresulttypedef).
 
 #### ClassicAddress.disassociate method
 
@@ -1739,8 +1739,7 @@ Keyword-only arguments:
   *(required)*
 - `DryRun`: `bool`
 
-Returns
-[ImageAttributeResponseTypeDef](./type_defs.md#imageattributeresponsetypedef).
+Returns [ImageAttributeTypeDef](./type_defs.md#imageattributetypedef).
 
 #### Image.get_available_subresources method
 
@@ -1968,7 +1967,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[AttachClassicLinkVpcResultResponseTypeDef](./type_defs.md#attachclassiclinkvpcresultresponsetypedef).
+[AttachClassicLinkVpcResultTypeDef](./type_defs.md#attachclassiclinkvpcresulttypedef).
 
 #### Instance.attach_volume method
 
@@ -1990,7 +1989,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[VolumeAttachmentResponseTypeDef](./type_defs.md#volumeattachmentresponsetypedef).
+[VolumeAttachmentResponseMetadataTypeDef](./type_defs.md#volumeattachmentresponsemetadatatypedef).
 
 #### Instance.console_output method
 
@@ -2010,7 +2009,7 @@ Keyword-only arguments:
 - `Latest`: `bool`
 
 Returns
-[GetConsoleOutputResultResponseTypeDef](./type_defs.md#getconsoleoutputresultresponsetypedef).
+[GetConsoleOutputResultTypeDef](./type_defs.md#getconsoleoutputresulttypedef).
 
 #### Instance.create_image method
 
@@ -2095,8 +2094,7 @@ Keyword-only arguments:
   *(required)*
 - `DryRun`: `bool`
 
-Returns
-[InstanceAttributeResponseTypeDef](./type_defs.md#instanceattributeresponsetypedef).
+Returns [InstanceAttributeTypeDef](./type_defs.md#instanceattributetypedef).
 
 #### Instance.detach_classic_link_vpc method
 
@@ -2116,7 +2114,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DetachClassicLinkVpcResultResponseTypeDef](./type_defs.md#detachclassiclinkvpcresultresponsetypedef).
+[DetachClassicLinkVpcResultTypeDef](./type_defs.md#detachclassiclinkvpcresulttypedef).
 
 #### Instance.detach_volume method
 
@@ -2138,7 +2136,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[VolumeAttachmentResponseTypeDef](./type_defs.md#volumeattachmentresponsetypedef).
+[VolumeAttachmentResponseMetadataTypeDef](./type_defs.md#volumeattachmentresponsemetadatatypedef).
 
 #### Instance.get_available_subresources method
 
@@ -2217,7 +2215,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[MonitorInstancesResultResponseTypeDef](./type_defs.md#monitorinstancesresultresponsetypedef).
+[MonitorInstancesResultTypeDef](./type_defs.md#monitorinstancesresulttypedef).
 
 #### Instance.password_data method
 
@@ -2236,7 +2234,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[GetPasswordDataResultResponseTypeDef](./type_defs.md#getpassworddataresultresponsetypedef).
+[GetPasswordDataResultTypeDef](./type_defs.md#getpassworddataresulttypedef).
 
 #### Instance.reboot method
 
@@ -2382,7 +2380,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[StartInstancesResultResponseTypeDef](./type_defs.md#startinstancesresultresponsetypedef).
+[StartInstancesResultTypeDef](./type_defs.md#startinstancesresulttypedef).
 
 #### Instance.stop method
 
@@ -2403,7 +2401,7 @@ Keyword-only arguments:
 - `Force`: `bool`
 
 Returns
-[StopInstancesResultResponseTypeDef](./type_defs.md#stopinstancesresultresponsetypedef).
+[StopInstancesResultTypeDef](./type_defs.md#stopinstancesresulttypedef).
 
 #### Instance.terminate method
 
@@ -2422,7 +2420,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[TerminateInstancesResultResponseTypeDef](./type_defs.md#terminateinstancesresultresponsetypedef).
+[TerminateInstancesResultTypeDef](./type_defs.md#terminateinstancesresulttypedef).
 
 #### Instance.unmonitor method
 
@@ -2441,7 +2439,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[UnmonitorInstancesResultResponseTypeDef](./type_defs.md#unmonitorinstancesresultresponsetypedef).
+[UnmonitorInstancesResultTypeDef](./type_defs.md#unmonitorinstancesresulttypedef).
 
 #### Instance.wait_until_exists method
 
@@ -2897,7 +2895,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ReplaceNetworkAclAssociationResultResponseTypeDef](./type_defs.md#replacenetworkaclassociationresultresponsetypedef).
+[ReplaceNetworkAclAssociationResultTypeDef](./type_defs.md#replacenetworkaclassociationresulttypedef).
 
 #### NetworkAcl.replace_entry method
 
@@ -2990,7 +2988,7 @@ Keyword-only arguments:
 - `SecondaryPrivateIpAddressCount`: `int`
 
 Returns
-[AssignPrivateIpAddressesResultResponseTypeDef](./type_defs.md#assignprivateipaddressesresultresponsetypedef).
+[AssignPrivateIpAddressesResultTypeDef](./type_defs.md#assignprivateipaddressesresulttypedef).
 
 #### NetworkInterface.attach method
 
@@ -3012,7 +3010,7 @@ Keyword-only arguments:
 - `NetworkCardIndex`: `int`
 
 Returns
-[AttachNetworkInterfaceResultResponseTypeDef](./type_defs.md#attachnetworkinterfaceresultresponsetypedef).
+[AttachNetworkInterfaceResultTypeDef](./type_defs.md#attachnetworkinterfaceresulttypedef).
 
 #### NetworkInterface.create_tags method
 
@@ -3070,7 +3068,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeNetworkInterfaceAttributeResultResponseTypeDef](./type_defs.md#describenetworkinterfaceattributeresultresponsetypedef).
+[DescribeNetworkInterfaceAttributeResultTypeDef](./type_defs.md#describenetworkinterfaceattributeresulttypedef).
 
 #### NetworkInterface.detach method
 
@@ -3856,7 +3854,7 @@ Keyword-only arguments:
 - `SourceSecurityGroupOwnerId`: `str`
 
 Returns
-[RevokeSecurityGroupEgressResultResponseTypeDef](./type_defs.md#revokesecuritygroupegressresultresponsetypedef).
+[RevokeSecurityGroupEgressResultTypeDef](./type_defs.md#revokesecuritygroupegressresulttypedef).
 
 #### SecurityGroup.revoke_ingress method
 
@@ -3884,7 +3882,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[RevokeSecurityGroupIngressResultResponseTypeDef](./type_defs.md#revokesecuritygroupingressresultresponsetypedef).
+[RevokeSecurityGroupIngressResultTypeDef](./type_defs.md#revokesecuritygroupingressresulttypedef).
 
 ## Snapshot
 
@@ -3949,8 +3947,7 @@ Keyword-only arguments:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
-Returns
-[CopySnapshotResultResponseTypeDef](./type_defs.md#copysnapshotresultresponsetypedef).
+Returns [CopySnapshotResultTypeDef](./type_defs.md#copysnapshotresulttypedef).
 
 #### Snapshot.create_tags method
 
@@ -4009,7 +4006,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeSnapshotAttributeResultResponseTypeDef](./type_defs.md#describesnapshotattributeresultresponsetypedef).
+[DescribeSnapshotAttributeResultTypeDef](./type_defs.md#describesnapshotattributeresulttypedef).
 
 #### Snapshot.get_available_subresources method
 
@@ -4501,7 +4498,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[VolumeAttachmentResponseTypeDef](./type_defs.md#volumeattachmentresponsetypedef).
+[VolumeAttachmentResponseMetadataTypeDef](./type_defs.md#volumeattachmentresponsemetadatatypedef).
 
 #### Volume.create_snapshot method
 
@@ -4581,7 +4578,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeVolumeAttributeResultResponseTypeDef](./type_defs.md#describevolumeattributeresultresponsetypedef).
+[DescribeVolumeAttributeResultTypeDef](./type_defs.md#describevolumeattributeresulttypedef).
 
 #### Volume.describe_status method
 
@@ -4603,7 +4600,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeVolumeStatusResultResponseTypeDef](./type_defs.md#describevolumestatusresultresponsetypedef).
+[DescribeVolumeStatusResultTypeDef](./type_defs.md#describevolumestatusresulttypedef).
 
 #### Volume.detach_from_instance method
 
@@ -4625,7 +4622,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[VolumeAttachmentResponseTypeDef](./type_defs.md#volumeattachmentresponsetypedef).
+[VolumeAttachmentResponseMetadataTypeDef](./type_defs.md#volumeattachmentresponsemetadatatypedef).
 
 #### Volume.enable_io method
 
@@ -4957,7 +4954,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[AttachClassicLinkVpcResultResponseTypeDef](./type_defs.md#attachclassiclinkvpcresultresponsetypedef).
+[AttachClassicLinkVpcResultTypeDef](./type_defs.md#attachclassiclinkvpcresulttypedef).
 
 #### Vpc.attach_internet_gateway method
 
@@ -5120,7 +5117,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeVpcAttributeResultResponseTypeDef](./type_defs.md#describevpcattributeresultresponsetypedef).
+[DescribeVpcAttributeResultTypeDef](./type_defs.md#describevpcattributeresulttypedef).
 
 #### Vpc.detach_classic_link_instance method
 
@@ -5141,7 +5138,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DetachClassicLinkVpcResultResponseTypeDef](./type_defs.md#detachclassiclinkvpcresultresponsetypedef).
+[DetachClassicLinkVpcResultTypeDef](./type_defs.md#detachclassiclinkvpcresulttypedef).
 
 #### Vpc.detach_internet_gateway method
 
@@ -5178,7 +5175,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DisableVpcClassicLinkResultResponseTypeDef](./type_defs.md#disablevpcclassiclinkresultresponsetypedef).
+[DisableVpcClassicLinkResultTypeDef](./type_defs.md#disablevpcclassiclinkresulttypedef).
 
 #### Vpc.enable_classic_link method
 
@@ -5197,7 +5194,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[EnableVpcClassicLinkResultResponseTypeDef](./type_defs.md#enablevpcclassiclinkresultresponsetypedef).
+[EnableVpcClassicLinkResultTypeDef](./type_defs.md#enablevpcclassiclinkresulttypedef).
 
 #### Vpc.get_available_subresources method
 
@@ -5339,7 +5336,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[AcceptVpcPeeringConnectionResultResponseTypeDef](./type_defs.md#acceptvpcpeeringconnectionresultresponsetypedef).
+[AcceptVpcPeeringConnectionResultTypeDef](./type_defs.md#acceptvpcpeeringconnectionresulttypedef).
 
 #### VpcPeeringConnection.delete method
 
@@ -5358,7 +5355,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeleteVpcPeeringConnectionResultResponseTypeDef](./type_defs.md#deletevpcpeeringconnectionresultresponsetypedef).
+[DeleteVpcPeeringConnectionResultTypeDef](./type_defs.md#deletevpcpeeringconnectionresulttypedef).
 
 #### VpcPeeringConnection.get_available_subresources method
 
@@ -5398,7 +5395,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[RejectVpcPeeringConnectionResultResponseTypeDef](./type_defs.md#rejectvpcpeeringconnectionresultresponsetypedef).
+[RejectVpcPeeringConnectionResultTypeDef](./type_defs.md#rejectvpcpeeringconnectionresulttypedef).
 
 #### VpcPeeringConnection.reload method
 
@@ -5478,7 +5475,7 @@ Keyword-only arguments:
 - `PrivateIpAddress`: `str`
 
 Returns
-[AssociateAddressResultResponseTypeDef](./type_defs.md#associateaddressresultresponsetypedef).
+[AssociateAddressResultTypeDef](./type_defs.md#associateaddressresulttypedef).
 
 #### VpcAddress.get_available_subresources method
 

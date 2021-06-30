@@ -10,8 +10,8 @@ type annotations stubs module
 - [Typed dictionaries for boto3 imagebuilder module](#typed-dictionaries-for-boto3-imagebuilder-module)
   - [AmiDistributionConfigurationTypeDef](#amidistributionconfigurationtypedef)
   - [AmiTypeDef](#amitypedef)
-  - [CancelImageCreationRequestTypeDef](#cancelimagecreationrequesttypedef)
-  - [CancelImageCreationResponseResponseTypeDef](#cancelimagecreationresponseresponsetypedef)
+  - [CancelImageCreationRequestRequestTypeDef](#cancelimagecreationrequestrequesttypedef)
+  - [CancelImageCreationResponseTypeDef](#cancelimagecreationresponsetypedef)
   - [ComponentConfigurationTypeDef](#componentconfigurationtypedef)
   - [ComponentSummaryTypeDef](#componentsummarytypedef)
   - [ComponentTypeDef](#componenttypedef)
@@ -20,61 +20,61 @@ type annotations stubs module
   - [ContainerRecipeSummaryTypeDef](#containerrecipesummarytypedef)
   - [ContainerRecipeTypeDef](#containerrecipetypedef)
   - [ContainerTypeDef](#containertypedef)
-  - [CreateComponentRequestTypeDef](#createcomponentrequesttypedef)
-  - [CreateComponentResponseResponseTypeDef](#createcomponentresponseresponsetypedef)
-  - [CreateContainerRecipeRequestTypeDef](#createcontainerreciperequesttypedef)
-  - [CreateContainerRecipeResponseResponseTypeDef](#createcontainerreciperesponseresponsetypedef)
-  - [CreateDistributionConfigurationRequestTypeDef](#createdistributionconfigurationrequesttypedef)
-  - [CreateDistributionConfigurationResponseResponseTypeDef](#createdistributionconfigurationresponseresponsetypedef)
-  - [CreateImagePipelineRequestTypeDef](#createimagepipelinerequesttypedef)
-  - [CreateImagePipelineResponseResponseTypeDef](#createimagepipelineresponseresponsetypedef)
-  - [CreateImageRecipeRequestTypeDef](#createimagereciperequesttypedef)
-  - [CreateImageRecipeResponseResponseTypeDef](#createimagereciperesponseresponsetypedef)
-  - [CreateImageRequestTypeDef](#createimagerequesttypedef)
-  - [CreateImageResponseResponseTypeDef](#createimageresponseresponsetypedef)
-  - [CreateInfrastructureConfigurationRequestTypeDef](#createinfrastructureconfigurationrequesttypedef)
-  - [CreateInfrastructureConfigurationResponseResponseTypeDef](#createinfrastructureconfigurationresponseresponsetypedef)
-  - [DeleteComponentRequestTypeDef](#deletecomponentrequesttypedef)
-  - [DeleteComponentResponseResponseTypeDef](#deletecomponentresponseresponsetypedef)
-  - [DeleteContainerRecipeRequestTypeDef](#deletecontainerreciperequesttypedef)
-  - [DeleteContainerRecipeResponseResponseTypeDef](#deletecontainerreciperesponseresponsetypedef)
-  - [DeleteDistributionConfigurationRequestTypeDef](#deletedistributionconfigurationrequesttypedef)
-  - [DeleteDistributionConfigurationResponseResponseTypeDef](#deletedistributionconfigurationresponseresponsetypedef)
-  - [DeleteImagePipelineRequestTypeDef](#deleteimagepipelinerequesttypedef)
-  - [DeleteImagePipelineResponseResponseTypeDef](#deleteimagepipelineresponseresponsetypedef)
-  - [DeleteImageRecipeRequestTypeDef](#deleteimagereciperequesttypedef)
-  - [DeleteImageRecipeResponseResponseTypeDef](#deleteimagereciperesponseresponsetypedef)
-  - [DeleteImageRequestTypeDef](#deleteimagerequesttypedef)
-  - [DeleteImageResponseResponseTypeDef](#deleteimageresponseresponsetypedef)
-  - [DeleteInfrastructureConfigurationRequestTypeDef](#deleteinfrastructureconfigurationrequesttypedef)
-  - [DeleteInfrastructureConfigurationResponseResponseTypeDef](#deleteinfrastructureconfigurationresponseresponsetypedef)
+  - [CreateComponentRequestRequestTypeDef](#createcomponentrequestrequesttypedef)
+  - [CreateComponentResponseTypeDef](#createcomponentresponsetypedef)
+  - [CreateContainerRecipeRequestRequestTypeDef](#createcontainerreciperequestrequesttypedef)
+  - [CreateContainerRecipeResponseTypeDef](#createcontainerreciperesponsetypedef)
+  - [CreateDistributionConfigurationRequestRequestTypeDef](#createdistributionconfigurationrequestrequesttypedef)
+  - [CreateDistributionConfigurationResponseTypeDef](#createdistributionconfigurationresponsetypedef)
+  - [CreateImagePipelineRequestRequestTypeDef](#createimagepipelinerequestrequesttypedef)
+  - [CreateImagePipelineResponseTypeDef](#createimagepipelineresponsetypedef)
+  - [CreateImageRecipeRequestRequestTypeDef](#createimagereciperequestrequesttypedef)
+  - [CreateImageRecipeResponseTypeDef](#createimagereciperesponsetypedef)
+  - [CreateImageRequestRequestTypeDef](#createimagerequestrequesttypedef)
+  - [CreateImageResponseTypeDef](#createimageresponsetypedef)
+  - [CreateInfrastructureConfigurationRequestRequestTypeDef](#createinfrastructureconfigurationrequestrequesttypedef)
+  - [CreateInfrastructureConfigurationResponseTypeDef](#createinfrastructureconfigurationresponsetypedef)
+  - [DeleteComponentRequestRequestTypeDef](#deletecomponentrequestrequesttypedef)
+  - [DeleteComponentResponseTypeDef](#deletecomponentresponsetypedef)
+  - [DeleteContainerRecipeRequestRequestTypeDef](#deletecontainerreciperequestrequesttypedef)
+  - [DeleteContainerRecipeResponseTypeDef](#deletecontainerreciperesponsetypedef)
+  - [DeleteDistributionConfigurationRequestRequestTypeDef](#deletedistributionconfigurationrequestrequesttypedef)
+  - [DeleteDistributionConfigurationResponseTypeDef](#deletedistributionconfigurationresponsetypedef)
+  - [DeleteImagePipelineRequestRequestTypeDef](#deleteimagepipelinerequestrequesttypedef)
+  - [DeleteImagePipelineResponseTypeDef](#deleteimagepipelineresponsetypedef)
+  - [DeleteImageRecipeRequestRequestTypeDef](#deleteimagereciperequestrequesttypedef)
+  - [DeleteImageRecipeResponseTypeDef](#deleteimagereciperesponsetypedef)
+  - [DeleteImageRequestRequestTypeDef](#deleteimagerequestrequesttypedef)
+  - [DeleteImageResponseTypeDef](#deleteimageresponsetypedef)
+  - [DeleteInfrastructureConfigurationRequestRequestTypeDef](#deleteinfrastructureconfigurationrequestrequesttypedef)
+  - [DeleteInfrastructureConfigurationResponseTypeDef](#deleteinfrastructureconfigurationresponsetypedef)
   - [DistributionConfigurationSummaryTypeDef](#distributionconfigurationsummarytypedef)
   - [DistributionConfigurationTypeDef](#distributionconfigurationtypedef)
   - [DistributionTypeDef](#distributiontypedef)
   - [EbsInstanceBlockDeviceSpecificationTypeDef](#ebsinstanceblockdevicespecificationtypedef)
   - [FilterTypeDef](#filtertypedef)
-  - [GetComponentPolicyRequestTypeDef](#getcomponentpolicyrequesttypedef)
-  - [GetComponentPolicyResponseResponseTypeDef](#getcomponentpolicyresponseresponsetypedef)
-  - [GetComponentRequestTypeDef](#getcomponentrequesttypedef)
-  - [GetComponentResponseResponseTypeDef](#getcomponentresponseresponsetypedef)
-  - [GetContainerRecipePolicyRequestTypeDef](#getcontainerrecipepolicyrequesttypedef)
-  - [GetContainerRecipePolicyResponseResponseTypeDef](#getcontainerrecipepolicyresponseresponsetypedef)
-  - [GetContainerRecipeRequestTypeDef](#getcontainerreciperequesttypedef)
-  - [GetContainerRecipeResponseResponseTypeDef](#getcontainerreciperesponseresponsetypedef)
-  - [GetDistributionConfigurationRequestTypeDef](#getdistributionconfigurationrequesttypedef)
-  - [GetDistributionConfigurationResponseResponseTypeDef](#getdistributionconfigurationresponseresponsetypedef)
-  - [GetImagePipelineRequestTypeDef](#getimagepipelinerequesttypedef)
-  - [GetImagePipelineResponseResponseTypeDef](#getimagepipelineresponseresponsetypedef)
-  - [GetImagePolicyRequestTypeDef](#getimagepolicyrequesttypedef)
-  - [GetImagePolicyResponseResponseTypeDef](#getimagepolicyresponseresponsetypedef)
-  - [GetImageRecipePolicyRequestTypeDef](#getimagerecipepolicyrequesttypedef)
-  - [GetImageRecipePolicyResponseResponseTypeDef](#getimagerecipepolicyresponseresponsetypedef)
-  - [GetImageRecipeRequestTypeDef](#getimagereciperequesttypedef)
-  - [GetImageRecipeResponseResponseTypeDef](#getimagereciperesponseresponsetypedef)
-  - [GetImageRequestTypeDef](#getimagerequesttypedef)
-  - [GetImageResponseResponseTypeDef](#getimageresponseresponsetypedef)
-  - [GetInfrastructureConfigurationRequestTypeDef](#getinfrastructureconfigurationrequesttypedef)
-  - [GetInfrastructureConfigurationResponseResponseTypeDef](#getinfrastructureconfigurationresponseresponsetypedef)
+  - [GetComponentPolicyRequestRequestTypeDef](#getcomponentpolicyrequestrequesttypedef)
+  - [GetComponentPolicyResponseTypeDef](#getcomponentpolicyresponsetypedef)
+  - [GetComponentRequestRequestTypeDef](#getcomponentrequestrequesttypedef)
+  - [GetComponentResponseTypeDef](#getcomponentresponsetypedef)
+  - [GetContainerRecipePolicyRequestRequestTypeDef](#getcontainerrecipepolicyrequestrequesttypedef)
+  - [GetContainerRecipePolicyResponseTypeDef](#getcontainerrecipepolicyresponsetypedef)
+  - [GetContainerRecipeRequestRequestTypeDef](#getcontainerreciperequestrequesttypedef)
+  - [GetContainerRecipeResponseTypeDef](#getcontainerreciperesponsetypedef)
+  - [GetDistributionConfigurationRequestRequestTypeDef](#getdistributionconfigurationrequestrequesttypedef)
+  - [GetDistributionConfigurationResponseTypeDef](#getdistributionconfigurationresponsetypedef)
+  - [GetImagePipelineRequestRequestTypeDef](#getimagepipelinerequestrequesttypedef)
+  - [GetImagePipelineResponseTypeDef](#getimagepipelineresponsetypedef)
+  - [GetImagePolicyRequestRequestTypeDef](#getimagepolicyrequestrequesttypedef)
+  - [GetImagePolicyResponseTypeDef](#getimagepolicyresponsetypedef)
+  - [GetImageRecipePolicyRequestRequestTypeDef](#getimagerecipepolicyrequestrequesttypedef)
+  - [GetImageRecipePolicyResponseTypeDef](#getimagerecipepolicyresponsetypedef)
+  - [GetImageRecipeRequestRequestTypeDef](#getimagereciperequestrequesttypedef)
+  - [GetImageRecipeResponseTypeDef](#getimagereciperesponsetypedef)
+  - [GetImageRequestRequestTypeDef](#getimagerequestrequesttypedef)
+  - [GetImageResponseTypeDef](#getimageresponsetypedef)
+  - [GetInfrastructureConfigurationRequestRequestTypeDef](#getinfrastructureconfigurationrequestrequesttypedef)
+  - [GetInfrastructureConfigurationResponseTypeDef](#getinfrastructureconfigurationresponsetypedef)
   - [ImagePackageTypeDef](#imagepackagetypedef)
   - [ImagePipelineTypeDef](#imagepipelinetypedef)
   - [ImageRecipeSummaryTypeDef](#imagerecipesummarytypedef)
@@ -84,62 +84,62 @@ type annotations stubs module
   - [ImageTestsConfigurationTypeDef](#imagetestsconfigurationtypedef)
   - [ImageTypeDef](#imagetypedef)
   - [ImageVersionTypeDef](#imageversiontypedef)
-  - [ImportComponentRequestTypeDef](#importcomponentrequesttypedef)
-  - [ImportComponentResponseResponseTypeDef](#importcomponentresponseresponsetypedef)
+  - [ImportComponentRequestRequestTypeDef](#importcomponentrequestrequesttypedef)
+  - [ImportComponentResponseTypeDef](#importcomponentresponsetypedef)
   - [InfrastructureConfigurationSummaryTypeDef](#infrastructureconfigurationsummarytypedef)
   - [InfrastructureConfigurationTypeDef](#infrastructureconfigurationtypedef)
   - [InstanceBlockDeviceMappingTypeDef](#instanceblockdevicemappingtypedef)
   - [InstanceConfigurationTypeDef](#instanceconfigurationtypedef)
   - [LaunchPermissionConfigurationTypeDef](#launchpermissionconfigurationtypedef)
   - [LaunchTemplateConfigurationTypeDef](#launchtemplateconfigurationtypedef)
-  - [ListComponentBuildVersionsRequestTypeDef](#listcomponentbuildversionsrequesttypedef)
-  - [ListComponentBuildVersionsResponseResponseTypeDef](#listcomponentbuildversionsresponseresponsetypedef)
-  - [ListComponentsRequestTypeDef](#listcomponentsrequesttypedef)
-  - [ListComponentsResponseResponseTypeDef](#listcomponentsresponseresponsetypedef)
-  - [ListContainerRecipesRequestTypeDef](#listcontainerrecipesrequesttypedef)
-  - [ListContainerRecipesResponseResponseTypeDef](#listcontainerrecipesresponseresponsetypedef)
-  - [ListDistributionConfigurationsRequestTypeDef](#listdistributionconfigurationsrequesttypedef)
-  - [ListDistributionConfigurationsResponseResponseTypeDef](#listdistributionconfigurationsresponseresponsetypedef)
-  - [ListImageBuildVersionsRequestTypeDef](#listimagebuildversionsrequesttypedef)
-  - [ListImageBuildVersionsResponseResponseTypeDef](#listimagebuildversionsresponseresponsetypedef)
-  - [ListImagePackagesRequestTypeDef](#listimagepackagesrequesttypedef)
-  - [ListImagePackagesResponseResponseTypeDef](#listimagepackagesresponseresponsetypedef)
-  - [ListImagePipelineImagesRequestTypeDef](#listimagepipelineimagesrequesttypedef)
-  - [ListImagePipelineImagesResponseResponseTypeDef](#listimagepipelineimagesresponseresponsetypedef)
-  - [ListImagePipelinesRequestTypeDef](#listimagepipelinesrequesttypedef)
-  - [ListImagePipelinesResponseResponseTypeDef](#listimagepipelinesresponseresponsetypedef)
-  - [ListImageRecipesRequestTypeDef](#listimagerecipesrequesttypedef)
-  - [ListImageRecipesResponseResponseTypeDef](#listimagerecipesresponseresponsetypedef)
-  - [ListImagesRequestTypeDef](#listimagesrequesttypedef)
-  - [ListImagesResponseResponseTypeDef](#listimagesresponseresponsetypedef)
-  - [ListInfrastructureConfigurationsRequestTypeDef](#listinfrastructureconfigurationsrequesttypedef)
-  - [ListInfrastructureConfigurationsResponseResponseTypeDef](#listinfrastructureconfigurationsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListComponentBuildVersionsRequestRequestTypeDef](#listcomponentbuildversionsrequestrequesttypedef)
+  - [ListComponentBuildVersionsResponseTypeDef](#listcomponentbuildversionsresponsetypedef)
+  - [ListComponentsRequestRequestTypeDef](#listcomponentsrequestrequesttypedef)
+  - [ListComponentsResponseTypeDef](#listcomponentsresponsetypedef)
+  - [ListContainerRecipesRequestRequestTypeDef](#listcontainerrecipesrequestrequesttypedef)
+  - [ListContainerRecipesResponseTypeDef](#listcontainerrecipesresponsetypedef)
+  - [ListDistributionConfigurationsRequestRequestTypeDef](#listdistributionconfigurationsrequestrequesttypedef)
+  - [ListDistributionConfigurationsResponseTypeDef](#listdistributionconfigurationsresponsetypedef)
+  - [ListImageBuildVersionsRequestRequestTypeDef](#listimagebuildversionsrequestrequesttypedef)
+  - [ListImageBuildVersionsResponseTypeDef](#listimagebuildversionsresponsetypedef)
+  - [ListImagePackagesRequestRequestTypeDef](#listimagepackagesrequestrequesttypedef)
+  - [ListImagePackagesResponseTypeDef](#listimagepackagesresponsetypedef)
+  - [ListImagePipelineImagesRequestRequestTypeDef](#listimagepipelineimagesrequestrequesttypedef)
+  - [ListImagePipelineImagesResponseTypeDef](#listimagepipelineimagesresponsetypedef)
+  - [ListImagePipelinesRequestRequestTypeDef](#listimagepipelinesrequestrequesttypedef)
+  - [ListImagePipelinesResponseTypeDef](#listimagepipelinesresponsetypedef)
+  - [ListImageRecipesRequestRequestTypeDef](#listimagerecipesrequestrequesttypedef)
+  - [ListImageRecipesResponseTypeDef](#listimagerecipesresponsetypedef)
+  - [ListImagesRequestRequestTypeDef](#listimagesrequestrequesttypedef)
+  - [ListImagesResponseTypeDef](#listimagesresponsetypedef)
+  - [ListInfrastructureConfigurationsRequestRequestTypeDef](#listinfrastructureconfigurationsrequestrequesttypedef)
+  - [ListInfrastructureConfigurationsResponseTypeDef](#listinfrastructureconfigurationsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [LoggingTypeDef](#loggingtypedef)
   - [OutputResourcesTypeDef](#outputresourcestypedef)
-  - [PutComponentPolicyRequestTypeDef](#putcomponentpolicyrequesttypedef)
-  - [PutComponentPolicyResponseResponseTypeDef](#putcomponentpolicyresponseresponsetypedef)
-  - [PutContainerRecipePolicyRequestTypeDef](#putcontainerrecipepolicyrequesttypedef)
-  - [PutContainerRecipePolicyResponseResponseTypeDef](#putcontainerrecipepolicyresponseresponsetypedef)
-  - [PutImagePolicyRequestTypeDef](#putimagepolicyrequesttypedef)
-  - [PutImagePolicyResponseResponseTypeDef](#putimagepolicyresponseresponsetypedef)
-  - [PutImageRecipePolicyRequestTypeDef](#putimagerecipepolicyrequesttypedef)
-  - [PutImageRecipePolicyResponseResponseTypeDef](#putimagerecipepolicyresponseresponsetypedef)
+  - [PutComponentPolicyRequestRequestTypeDef](#putcomponentpolicyrequestrequesttypedef)
+  - [PutComponentPolicyResponseTypeDef](#putcomponentpolicyresponsetypedef)
+  - [PutContainerRecipePolicyRequestRequestTypeDef](#putcontainerrecipepolicyrequestrequesttypedef)
+  - [PutContainerRecipePolicyResponseTypeDef](#putcontainerrecipepolicyresponsetypedef)
+  - [PutImagePolicyRequestRequestTypeDef](#putimagepolicyrequestrequesttypedef)
+  - [PutImagePolicyResponseTypeDef](#putimagepolicyresponsetypedef)
+  - [PutImageRecipePolicyRequestRequestTypeDef](#putimagerecipepolicyrequestrequesttypedef)
+  - [PutImageRecipePolicyResponseTypeDef](#putimagerecipepolicyresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3LogsTypeDef](#s3logstypedef)
   - [ScheduleTypeDef](#scheduletypedef)
-  - [StartImagePipelineExecutionRequestTypeDef](#startimagepipelineexecutionrequesttypedef)
-  - [StartImagePipelineExecutionResponseResponseTypeDef](#startimagepipelineexecutionresponseresponsetypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [StartImagePipelineExecutionRequestRequestTypeDef](#startimagepipelineexecutionrequestrequesttypedef)
+  - [StartImagePipelineExecutionResponseTypeDef](#startimagepipelineexecutionresponsetypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TargetContainerRepositoryTypeDef](#targetcontainerrepositorytypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateDistributionConfigurationRequestTypeDef](#updatedistributionconfigurationrequesttypedef)
-  - [UpdateDistributionConfigurationResponseResponseTypeDef](#updatedistributionconfigurationresponseresponsetypedef)
-  - [UpdateImagePipelineRequestTypeDef](#updateimagepipelinerequesttypedef)
-  - [UpdateImagePipelineResponseResponseTypeDef](#updateimagepipelineresponseresponsetypedef)
-  - [UpdateInfrastructureConfigurationRequestTypeDef](#updateinfrastructureconfigurationrequesttypedef)
-  - [UpdateInfrastructureConfigurationResponseResponseTypeDef](#updateinfrastructureconfigurationresponseresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateDistributionConfigurationRequestRequestTypeDef](#updatedistributionconfigurationrequestrequesttypedef)
+  - [UpdateDistributionConfigurationResponseTypeDef](#updatedistributionconfigurationresponsetypedef)
+  - [UpdateImagePipelineRequestRequestTypeDef](#updateimagepipelinerequestrequesttypedef)
+  - [UpdateImagePipelineResponseTypeDef](#updateimagepipelineresponsetypedef)
+  - [UpdateInfrastructureConfigurationRequestRequestTypeDef](#updateinfrastructureconfigurationrequestrequesttypedef)
+  - [UpdateInfrastructureConfigurationResponseTypeDef](#updateinfrastructureconfigurationresponsetypedef)
 
 ## AmiDistributionConfigurationTypeDef
 
@@ -172,10 +172,10 @@ Optional fields:
 - `state`: [ImageStateTypeDef](./type_defs.md#imagestatetypedef)
 - `accountId`: `str`
 
-## CancelImageCreationRequestTypeDef
+## CancelImageCreationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import CancelImageCreationRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import CancelImageCreationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -183,10 +183,10 @@ Required fields:
 - `imageBuildVersionArn`: `str`
 - `clientToken`: `str`
 
-## CancelImageCreationResponseResponseTypeDef
+## CancelImageCreationResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import CancelImageCreationResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import CancelImageCreationResponseTypeDef
 ```
 
 Required fields:
@@ -343,10 +343,10 @@ Optional fields:
 - `region`: `str`
 - `imageUris`: `List`\[`str`\]
 
-## CreateComponentRequestTypeDef
+## CreateComponentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import CreateComponentRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import CreateComponentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -366,10 +366,10 @@ Optional fields:
 - `kmsKeyId`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateComponentResponseResponseTypeDef
+## CreateComponentResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import CreateComponentResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import CreateComponentResponseTypeDef
 ```
 
 Required fields:
@@ -380,10 +380,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateContainerRecipeRequestTypeDef
+## CreateContainerRecipeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import CreateContainerRecipeRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import CreateContainerRecipeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -412,10 +412,10 @@ Optional fields:
 - `workingDirectory`: `str`
 - `kmsKeyId`: `str`
 
-## CreateContainerRecipeResponseResponseTypeDef
+## CreateContainerRecipeResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import CreateContainerRecipeResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import CreateContainerRecipeResponseTypeDef
 ```
 
 Required fields:
@@ -426,10 +426,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDistributionConfigurationRequestTypeDef
+## CreateDistributionConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import CreateDistributionConfigurationRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import CreateDistributionConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -444,10 +444,10 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateDistributionConfigurationResponseResponseTypeDef
+## CreateDistributionConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import CreateDistributionConfigurationResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import CreateDistributionConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -458,10 +458,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateImagePipelineRequestTypeDef
+## CreateImagePipelineRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import CreateImagePipelineRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import CreateImagePipelineRequestRequestTypeDef
 ```
 
 Required fields:
@@ -483,10 +483,10 @@ Optional fields:
 - `status`: [PipelineStatusType](./literals.md#pipelinestatustype)
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateImagePipelineResponseResponseTypeDef
+## CreateImagePipelineResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import CreateImagePipelineResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import CreateImagePipelineResponseTypeDef
 ```
 
 Required fields:
@@ -497,10 +497,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateImageRecipeRequestTypeDef
+## CreateImageRecipeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import CreateImageRecipeRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import CreateImageRecipeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -520,10 +520,10 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `workingDirectory`: `str`
 
-## CreateImageRecipeResponseResponseTypeDef
+## CreateImageRecipeResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import CreateImageRecipeResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import CreateImageRecipeResponseTypeDef
 ```
 
 Required fields:
@@ -534,10 +534,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateImageRequestTypeDef
+## CreateImageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import CreateImageRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import CreateImageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -555,10 +555,10 @@ Optional fields:
 - `enhancedImageMetadataEnabled`: `bool`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateImageResponseResponseTypeDef
+## CreateImageResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import CreateImageResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import CreateImageResponseTypeDef
 ```
 
 Required fields:
@@ -569,10 +569,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateInfrastructureConfigurationRequestTypeDef
+## CreateInfrastructureConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import CreateInfrastructureConfigurationRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import CreateInfrastructureConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -594,10 +594,10 @@ Optional fields:
 - `resourceTags`: `Dict`\[`str`, `str`\]
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateInfrastructureConfigurationResponseResponseTypeDef
+## CreateInfrastructureConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import CreateInfrastructureConfigurationResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import CreateInfrastructureConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -608,20 +608,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteComponentRequestTypeDef
+## DeleteComponentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import DeleteComponentRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import DeleteComponentRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `componentBuildVersionArn`: `str`
 
-## DeleteComponentResponseResponseTypeDef
+## DeleteComponentResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import DeleteComponentResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import DeleteComponentResponseTypeDef
 ```
 
 Required fields:
@@ -631,20 +631,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteContainerRecipeRequestTypeDef
+## DeleteContainerRecipeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import DeleteContainerRecipeRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import DeleteContainerRecipeRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `containerRecipeArn`: `str`
 
-## DeleteContainerRecipeResponseResponseTypeDef
+## DeleteContainerRecipeResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import DeleteContainerRecipeResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import DeleteContainerRecipeResponseTypeDef
 ```
 
 Required fields:
@@ -654,20 +654,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDistributionConfigurationRequestTypeDef
+## DeleteDistributionConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import DeleteDistributionConfigurationRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import DeleteDistributionConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `distributionConfigurationArn`: `str`
 
-## DeleteDistributionConfigurationResponseResponseTypeDef
+## DeleteDistributionConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import DeleteDistributionConfigurationResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import DeleteDistributionConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -677,20 +677,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteImagePipelineRequestTypeDef
+## DeleteImagePipelineRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import DeleteImagePipelineRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import DeleteImagePipelineRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `imagePipelineArn`: `str`
 
-## DeleteImagePipelineResponseResponseTypeDef
+## DeleteImagePipelineResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import DeleteImagePipelineResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import DeleteImagePipelineResponseTypeDef
 ```
 
 Required fields:
@@ -700,20 +700,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteImageRecipeRequestTypeDef
+## DeleteImageRecipeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import DeleteImageRecipeRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import DeleteImageRecipeRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `imageRecipeArn`: `str`
 
-## DeleteImageRecipeResponseResponseTypeDef
+## DeleteImageRecipeResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import DeleteImageRecipeResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import DeleteImageRecipeResponseTypeDef
 ```
 
 Required fields:
@@ -723,20 +723,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteImageRequestTypeDef
+## DeleteImageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import DeleteImageRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import DeleteImageRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `imageBuildVersionArn`: `str`
 
-## DeleteImageResponseResponseTypeDef
+## DeleteImageResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import DeleteImageResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import DeleteImageResponseTypeDef
 ```
 
 Required fields:
@@ -746,20 +746,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteInfrastructureConfigurationRequestTypeDef
+## DeleteInfrastructureConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import DeleteInfrastructureConfigurationRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import DeleteInfrastructureConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `infrastructureConfigurationArn`: `str`
 
-## DeleteInfrastructureConfigurationResponseResponseTypeDef
+## DeleteInfrastructureConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import DeleteInfrastructureConfigurationResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import DeleteInfrastructureConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -853,20 +853,20 @@ Optional fields:
 - `name`: `str`
 - `values`: `List`\[`str`\]
 
-## GetComponentPolicyRequestTypeDef
+## GetComponentPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import GetComponentPolicyRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetComponentPolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `componentArn`: `str`
 
-## GetComponentPolicyResponseResponseTypeDef
+## GetComponentPolicyResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import GetComponentPolicyResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetComponentPolicyResponseTypeDef
 ```
 
 Required fields:
@@ -876,20 +876,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetComponentRequestTypeDef
+## GetComponentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import GetComponentRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetComponentRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `componentBuildVersionArn`: `str`
 
-## GetComponentResponseResponseTypeDef
+## GetComponentResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import GetComponentResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetComponentResponseTypeDef
 ```
 
 Required fields:
@@ -899,20 +899,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetContainerRecipePolicyRequestTypeDef
+## GetContainerRecipePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import GetContainerRecipePolicyRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetContainerRecipePolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `containerRecipeArn`: `str`
 
-## GetContainerRecipePolicyResponseResponseTypeDef
+## GetContainerRecipePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import GetContainerRecipePolicyResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetContainerRecipePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -922,20 +922,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetContainerRecipeRequestTypeDef
+## GetContainerRecipeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import GetContainerRecipeRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetContainerRecipeRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `containerRecipeArn`: `str`
 
-## GetContainerRecipeResponseResponseTypeDef
+## GetContainerRecipeResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import GetContainerRecipeResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetContainerRecipeResponseTypeDef
 ```
 
 Required fields:
@@ -946,20 +946,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDistributionConfigurationRequestTypeDef
+## GetDistributionConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import GetDistributionConfigurationRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetDistributionConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `distributionConfigurationArn`: `str`
 
-## GetDistributionConfigurationResponseResponseTypeDef
+## GetDistributionConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import GetDistributionConfigurationResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetDistributionConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -970,20 +970,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetImagePipelineRequestTypeDef
+## GetImagePipelineRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import GetImagePipelineRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetImagePipelineRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `imagePipelineArn`: `str`
 
-## GetImagePipelineResponseResponseTypeDef
+## GetImagePipelineResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import GetImagePipelineResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetImagePipelineResponseTypeDef
 ```
 
 Required fields:
@@ -993,20 +993,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetImagePolicyRequestTypeDef
+## GetImagePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import GetImagePolicyRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetImagePolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `imageArn`: `str`
 
-## GetImagePolicyResponseResponseTypeDef
+## GetImagePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import GetImagePolicyResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetImagePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -1016,20 +1016,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetImageRecipePolicyRequestTypeDef
+## GetImageRecipePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import GetImageRecipePolicyRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetImageRecipePolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `imageRecipeArn`: `str`
 
-## GetImageRecipePolicyResponseResponseTypeDef
+## GetImageRecipePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import GetImageRecipePolicyResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetImageRecipePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -1039,20 +1039,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetImageRecipeRequestTypeDef
+## GetImageRecipeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import GetImageRecipeRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetImageRecipeRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `imageRecipeArn`: `str`
 
-## GetImageRecipeResponseResponseTypeDef
+## GetImageRecipeResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import GetImageRecipeResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetImageRecipeResponseTypeDef
 ```
 
 Required fields:
@@ -1062,20 +1062,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetImageRequestTypeDef
+## GetImageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import GetImageRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetImageRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `imageBuildVersionArn`: `str`
 
-## GetImageResponseResponseTypeDef
+## GetImageResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import GetImageResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetImageResponseTypeDef
 ```
 
 Required fields:
@@ -1085,20 +1085,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetInfrastructureConfigurationRequestTypeDef
+## GetInfrastructureConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import GetInfrastructureConfigurationRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetInfrastructureConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `infrastructureConfigurationArn`: `str`
 
-## GetInfrastructureConfigurationResponseResponseTypeDef
+## GetInfrastructureConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import GetInfrastructureConfigurationResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import GetInfrastructureConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -1279,10 +1279,10 @@ Optional fields:
 - `owner`: `str`
 - `dateCreated`: `str`
 
-## ImportComponentRequestTypeDef
+## ImportComponentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ImportComponentRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import ImportComponentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1304,10 +1304,10 @@ Optional fields:
 - `kmsKeyId`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## ImportComponentResponseResponseTypeDef
+## ImportComponentResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ImportComponentResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import ImportComponentResponseTypeDef
 ```
 
 Required fields:
@@ -1412,10 +1412,10 @@ Optional fields:
 - `accountId`: `str`
 - `setDefaultVersion`: `bool`
 
-## ListComponentBuildVersionsRequestTypeDef
+## ListComponentBuildVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListComponentBuildVersionsRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListComponentBuildVersionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1427,10 +1427,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListComponentBuildVersionsResponseResponseTypeDef
+## ListComponentBuildVersionsResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListComponentBuildVersionsResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListComponentBuildVersionsResponseTypeDef
 ```
 
 Required fields:
@@ -1442,10 +1442,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListComponentsRequestTypeDef
+## ListComponentsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListComponentsRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListComponentsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1456,10 +1456,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListComponentsResponseResponseTypeDef
+## ListComponentsResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListComponentsResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListComponentsResponseTypeDef
 ```
 
 Required fields:
@@ -1471,10 +1471,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListContainerRecipesRequestTypeDef
+## ListContainerRecipesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListContainerRecipesRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListContainerRecipesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1484,10 +1484,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListContainerRecipesResponseResponseTypeDef
+## ListContainerRecipesResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListContainerRecipesResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListContainerRecipesResponseTypeDef
 ```
 
 Required fields:
@@ -1499,10 +1499,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDistributionConfigurationsRequestTypeDef
+## ListDistributionConfigurationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListDistributionConfigurationsRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListDistributionConfigurationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1511,10 +1511,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListDistributionConfigurationsResponseResponseTypeDef
+## ListDistributionConfigurationsResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListDistributionConfigurationsResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListDistributionConfigurationsResponseTypeDef
 ```
 
 Required fields:
@@ -1526,10 +1526,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListImageBuildVersionsRequestTypeDef
+## ListImageBuildVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListImageBuildVersionsRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListImageBuildVersionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1542,10 +1542,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListImageBuildVersionsResponseResponseTypeDef
+## ListImageBuildVersionsResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListImageBuildVersionsResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListImageBuildVersionsResponseTypeDef
 ```
 
 Required fields:
@@ -1557,10 +1557,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListImagePackagesRequestTypeDef
+## ListImagePackagesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListImagePackagesRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListImagePackagesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1572,10 +1572,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListImagePackagesResponseResponseTypeDef
+## ListImagePackagesResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListImagePackagesResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListImagePackagesResponseTypeDef
 ```
 
 Required fields:
@@ -1587,10 +1587,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListImagePipelineImagesRequestTypeDef
+## ListImagePipelineImagesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListImagePipelineImagesRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListImagePipelineImagesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1603,10 +1603,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListImagePipelineImagesResponseResponseTypeDef
+## ListImagePipelineImagesResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListImagePipelineImagesResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListImagePipelineImagesResponseTypeDef
 ```
 
 Required fields:
@@ -1618,10 +1618,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListImagePipelinesRequestTypeDef
+## ListImagePipelinesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListImagePipelinesRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListImagePipelinesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1630,10 +1630,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListImagePipelinesResponseResponseTypeDef
+## ListImagePipelinesResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListImagePipelinesResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListImagePipelinesResponseTypeDef
 ```
 
 Required fields:
@@ -1645,10 +1645,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListImageRecipesRequestTypeDef
+## ListImageRecipesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListImageRecipesRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListImageRecipesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1658,10 +1658,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListImageRecipesResponseResponseTypeDef
+## ListImageRecipesResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListImageRecipesResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListImageRecipesResponseTypeDef
 ```
 
 Required fields:
@@ -1673,10 +1673,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListImagesRequestTypeDef
+## ListImagesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListImagesRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListImagesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1688,10 +1688,10 @@ Optional fields:
 - `nextToken`: `str`
 - `includeDeprecated`: `bool`
 
-## ListImagesResponseResponseTypeDef
+## ListImagesResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListImagesResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListImagesResponseTypeDef
 ```
 
 Required fields:
@@ -1703,10 +1703,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInfrastructureConfigurationsRequestTypeDef
+## ListInfrastructureConfigurationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListInfrastructureConfigurationsRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListInfrastructureConfigurationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1715,10 +1715,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListInfrastructureConfigurationsResponseResponseTypeDef
+## ListInfrastructureConfigurationsResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListInfrastructureConfigurationsResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListInfrastructureConfigurationsResponseTypeDef
 ```
 
 Required fields:
@@ -1730,20 +1730,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -1773,10 +1773,10 @@ Optional fields:
 - `amis`: `List`\[[AmiTypeDef](./type_defs.md#amitypedef)\]
 - `containers`: `List`\[[ContainerTypeDef](./type_defs.md#containertypedef)\]
 
-## PutComponentPolicyRequestTypeDef
+## PutComponentPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import PutComponentPolicyRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import PutComponentPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1784,10 +1784,10 @@ Required fields:
 - `componentArn`: `str`
 - `policy`: `str`
 
-## PutComponentPolicyResponseResponseTypeDef
+## PutComponentPolicyResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import PutComponentPolicyResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import PutComponentPolicyResponseTypeDef
 ```
 
 Required fields:
@@ -1797,10 +1797,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutContainerRecipePolicyRequestTypeDef
+## PutContainerRecipePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import PutContainerRecipePolicyRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import PutContainerRecipePolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1808,10 +1808,10 @@ Required fields:
 - `containerRecipeArn`: `str`
 - `policy`: `str`
 
-## PutContainerRecipePolicyResponseResponseTypeDef
+## PutContainerRecipePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import PutContainerRecipePolicyResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import PutContainerRecipePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -1821,10 +1821,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutImagePolicyRequestTypeDef
+## PutImagePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import PutImagePolicyRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import PutImagePolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1832,10 +1832,10 @@ Required fields:
 - `imageArn`: `str`
 - `policy`: `str`
 
-## PutImagePolicyResponseResponseTypeDef
+## PutImagePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import PutImagePolicyResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import PutImagePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -1845,10 +1845,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutImageRecipePolicyRequestTypeDef
+## PutImageRecipePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import PutImageRecipePolicyRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import PutImageRecipePolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1856,10 +1856,10 @@ Required fields:
 - `imageRecipeArn`: `str`
 - `policy`: `str`
 
-## PutImageRecipePolicyResponseResponseTypeDef
+## PutImageRecipePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import PutImageRecipePolicyResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import PutImageRecipePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -1907,10 +1907,10 @@ Optional fields:
 - `pipelineExecutionStartCondition`:
   [PipelineExecutionStartConditionType](./literals.md#pipelineexecutionstartconditiontype)
 
-## StartImagePipelineExecutionRequestTypeDef
+## StartImagePipelineExecutionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import StartImagePipelineExecutionRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import StartImagePipelineExecutionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1918,10 +1918,10 @@ Required fields:
 - `imagePipelineArn`: `str`
 - `clientToken`: `str`
 
-## StartImagePipelineExecutionResponseResponseTypeDef
+## StartImagePipelineExecutionResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import StartImagePipelineExecutionResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import StartImagePipelineExecutionResponseTypeDef
 ```
 
 Required fields:
@@ -1932,10 +1932,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1955,10 +1955,10 @@ Required fields:
   [ContainerRepositoryServiceType](./literals.md#containerrepositoryservicetype))
 - `repositoryName`: `str`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1966,10 +1966,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tagKeys`: `List`\[`str`\]
 
-## UpdateDistributionConfigurationRequestTypeDef
+## UpdateDistributionConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import UpdateDistributionConfigurationRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import UpdateDistributionConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1983,10 +1983,10 @@ Optional fields:
 
 - `description`: `str`
 
-## UpdateDistributionConfigurationResponseResponseTypeDef
+## UpdateDistributionConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import UpdateDistributionConfigurationResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import UpdateDistributionConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -1997,10 +1997,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateImagePipelineRequestTypeDef
+## UpdateImagePipelineRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import UpdateImagePipelineRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import UpdateImagePipelineRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2021,10 +2021,10 @@ Optional fields:
 - `schedule`: [ScheduleTypeDef](./type_defs.md#scheduletypedef)
 - `status`: [PipelineStatusType](./literals.md#pipelinestatustype)
 
-## UpdateImagePipelineResponseResponseTypeDef
+## UpdateImagePipelineResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import UpdateImagePipelineResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import UpdateImagePipelineResponseTypeDef
 ```
 
 Required fields:
@@ -2035,10 +2035,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateInfrastructureConfigurationRequestTypeDef
+## UpdateInfrastructureConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import UpdateInfrastructureConfigurationRequestTypeDef
+from mypy_boto3_imagebuilder.type_defs import UpdateInfrastructureConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2059,10 +2059,10 @@ Optional fields:
 - `snsTopicArn`: `str`
 - `resourceTags`: `Dict`\[`str`, `str`\]
 
-## UpdateInfrastructureConfigurationResponseResponseTypeDef
+## UpdateInfrastructureConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import UpdateInfrastructureConfigurationResponseResponseTypeDef
+from mypy_boto3_imagebuilder.type_defs import UpdateInfrastructureConfigurationResponseTypeDef
 ```
 
 Required fields:

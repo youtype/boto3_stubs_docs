@@ -11,6 +11,7 @@ type annotations stubs module
   - [CloudHSMClient](#cloudhsmclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_tags_to_resource](#add_tags_to_resource)
     - [can_paginate](#can_paginate)
     - [create_hapg](#create_hapg)
@@ -72,6 +73,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+CloudHSMClient exceptions.
+
+Type annotations for `boto3.client("cloudhsm").exceptions` method.
+
+Boto3 documentation:
+[CloudHSM.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_tags_to_resource
 
 This is documentation for **AWS CloudHSM Classic**.
@@ -82,7 +94,7 @@ Boto3 documentation:
 [CloudHSM.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.add_tags_to_resource)
 
 Arguments mapping described in
-[AddTagsToResourceRequestTypeDef](./type_defs.md#addtagstoresourcerequesttypedef).
+[AddTagsToResourceRequestRequestTypeDef](./type_defs.md#addtagstoresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -90,7 +102,7 @@ Keyword-only arguments:
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns
-[AddTagsToResourceResponseResponseTypeDef](./type_defs.md#addtagstoresourceresponseresponsetypedef).
+[AddTagsToResourceResponseTypeDef](./type_defs.md#addtagstoresourceresponsetypedef).
 
 ### can_paginate
 
@@ -117,14 +129,13 @@ Boto3 documentation:
 [CloudHSM.Client.create_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_hapg)
 
 Arguments mapping described in
-[CreateHapgRequestTypeDef](./type_defs.md#createhapgrequesttypedef).
+[CreateHapgRequestRequestTypeDef](./type_defs.md#createhapgrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Label`: `str` *(required)*
 
-Returns
-[CreateHapgResponseResponseTypeDef](./type_defs.md#createhapgresponseresponsetypedef).
+Returns [CreateHapgResponseTypeDef](./type_defs.md#createhapgresponsetypedef).
 
 ### create_hsm
 
@@ -136,7 +147,7 @@ Boto3 documentation:
 [CloudHSM.Client.create_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_hsm)
 
 Arguments mapping described in
-[CreateHsmRequestTypeDef](./type_defs.md#createhsmrequesttypedef).
+[CreateHsmRequestRequestTypeDef](./type_defs.md#createhsmrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -150,8 +161,7 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 - `SyslogIp`: `str`
 
-Returns
-[CreateHsmResponseResponseTypeDef](./type_defs.md#createhsmresponseresponsetypedef).
+Returns [CreateHsmResponseTypeDef](./type_defs.md#createhsmresponsetypedef).
 
 ### create_luna_client
 
@@ -163,7 +173,7 @@ Boto3 documentation:
 [CloudHSM.Client.create_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_luna_client)
 
 Arguments mapping described in
-[CreateLunaClientRequestTypeDef](./type_defs.md#createlunaclientrequesttypedef).
+[CreateLunaClientRequestRequestTypeDef](./type_defs.md#createlunaclientrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -171,7 +181,7 @@ Keyword-only arguments:
 - `Label`: `str`
 
 Returns
-[CreateLunaClientResponseResponseTypeDef](./type_defs.md#createlunaclientresponseresponsetypedef).
+[CreateLunaClientResponseTypeDef](./type_defs.md#createlunaclientresponsetypedef).
 
 ### delete_hapg
 
@@ -183,14 +193,13 @@ Boto3 documentation:
 [CloudHSM.Client.delete_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_hapg)
 
 Arguments mapping described in
-[DeleteHapgRequestTypeDef](./type_defs.md#deletehapgrequesttypedef).
+[DeleteHapgRequestRequestTypeDef](./type_defs.md#deletehapgrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `HapgArn`: `str` *(required)*
 
-Returns
-[DeleteHapgResponseResponseTypeDef](./type_defs.md#deletehapgresponseresponsetypedef).
+Returns [DeleteHapgResponseTypeDef](./type_defs.md#deletehapgresponsetypedef).
 
 ### delete_hsm
 
@@ -202,14 +211,13 @@ Boto3 documentation:
 [CloudHSM.Client.delete_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_hsm)
 
 Arguments mapping described in
-[DeleteHsmRequestTypeDef](./type_defs.md#deletehsmrequesttypedef).
+[DeleteHsmRequestRequestTypeDef](./type_defs.md#deletehsmrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `HsmArn`: `str` *(required)*
 
-Returns
-[DeleteHsmResponseResponseTypeDef](./type_defs.md#deletehsmresponseresponsetypedef).
+Returns [DeleteHsmResponseTypeDef](./type_defs.md#deletehsmresponsetypedef).
 
 ### delete_luna_client
 
@@ -221,14 +229,14 @@ Boto3 documentation:
 [CloudHSM.Client.delete_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_luna_client)
 
 Arguments mapping described in
-[DeleteLunaClientRequestTypeDef](./type_defs.md#deletelunaclientrequesttypedef).
+[DeleteLunaClientRequestRequestTypeDef](./type_defs.md#deletelunaclientrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ClientArn`: `str` *(required)*
 
 Returns
-[DeleteLunaClientResponseResponseTypeDef](./type_defs.md#deletelunaclientresponseresponsetypedef).
+[DeleteLunaClientResponseTypeDef](./type_defs.md#deletelunaclientresponsetypedef).
 
 ### describe_hapg
 
@@ -240,14 +248,14 @@ Boto3 documentation:
 [CloudHSM.Client.describe_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_hapg)
 
 Arguments mapping described in
-[DescribeHapgRequestTypeDef](./type_defs.md#describehapgrequesttypedef).
+[DescribeHapgRequestRequestTypeDef](./type_defs.md#describehapgrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `HapgArn`: `str` *(required)*
 
 Returns
-[DescribeHapgResponseResponseTypeDef](./type_defs.md#describehapgresponseresponsetypedef).
+[DescribeHapgResponseTypeDef](./type_defs.md#describehapgresponsetypedef).
 
 ### describe_hsm
 
@@ -259,7 +267,7 @@ Boto3 documentation:
 [CloudHSM.Client.describe_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_hsm)
 
 Arguments mapping described in
-[DescribeHsmRequestTypeDef](./type_defs.md#describehsmrequesttypedef).
+[DescribeHsmRequestRequestTypeDef](./type_defs.md#describehsmrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -267,7 +275,7 @@ Keyword-only arguments:
 - `HsmSerialNumber`: `str`
 
 Returns
-[DescribeHsmResponseResponseTypeDef](./type_defs.md#describehsmresponseresponsetypedef).
+[DescribeHsmResponseTypeDef](./type_defs.md#describehsmresponsetypedef).
 
 ### describe_luna_client
 
@@ -279,7 +287,7 @@ Boto3 documentation:
 [CloudHSM.Client.describe_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_luna_client)
 
 Arguments mapping described in
-[DescribeLunaClientRequestTypeDef](./type_defs.md#describelunaclientrequesttypedef).
+[DescribeLunaClientRequestRequestTypeDef](./type_defs.md#describelunaclientrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -287,7 +295,7 @@ Keyword-only arguments:
 - `CertificateFingerprint`: `str`
 
 Returns
-[DescribeLunaClientResponseResponseTypeDef](./type_defs.md#describelunaclientresponseresponsetypedef).
+[DescribeLunaClientResponseTypeDef](./type_defs.md#describelunaclientresponsetypedef).
 
 ### generate_presigned_url
 
@@ -317,7 +325,7 @@ Boto3 documentation:
 [CloudHSM.Client.get_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.get_config)
 
 Arguments mapping described in
-[GetConfigRequestTypeDef](./type_defs.md#getconfigrequesttypedef).
+[GetConfigRequestRequestTypeDef](./type_defs.md#getconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -326,8 +334,7 @@ Keyword-only arguments:
   *(required)*
 - `HapgList`: `List`\[`str`\] *(required)*
 
-Returns
-[GetConfigResponseResponseTypeDef](./type_defs.md#getconfigresponseresponsetypedef).
+Returns [GetConfigResponseTypeDef](./type_defs.md#getconfigresponsetypedef).
 
 ### list_available_zones
 
@@ -339,7 +346,7 @@ Boto3 documentation:
 [CloudHSM.Client.list_available_zones](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_available_zones)
 
 Returns
-[ListAvailableZonesResponseResponseTypeDef](./type_defs.md#listavailablezonesresponseresponsetypedef).
+[ListAvailableZonesResponseTypeDef](./type_defs.md#listavailablezonesresponsetypedef).
 
 ### list_hapgs
 
@@ -351,14 +358,13 @@ Boto3 documentation:
 [CloudHSM.Client.list_hapgs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_hapgs)
 
 Arguments mapping described in
-[ListHapgsRequestTypeDef](./type_defs.md#listhapgsrequesttypedef).
+[ListHapgsRequestRequestTypeDef](./type_defs.md#listhapgsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
-Returns
-[ListHapgsResponseResponseTypeDef](./type_defs.md#listhapgsresponseresponsetypedef).
+Returns [ListHapgsResponseTypeDef](./type_defs.md#listhapgsresponsetypedef).
 
 ### list_hsms
 
@@ -370,14 +376,13 @@ Boto3 documentation:
 [CloudHSM.Client.list_hsms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_hsms)
 
 Arguments mapping described in
-[ListHsmsRequestTypeDef](./type_defs.md#listhsmsrequesttypedef).
+[ListHsmsRequestRequestTypeDef](./type_defs.md#listhsmsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
-Returns
-[ListHsmsResponseResponseTypeDef](./type_defs.md#listhsmsresponseresponsetypedef).
+Returns [ListHsmsResponseTypeDef](./type_defs.md#listhsmsresponsetypedef).
 
 ### list_luna_clients
 
@@ -389,14 +394,14 @@ Boto3 documentation:
 [CloudHSM.Client.list_luna_clients](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_luna_clients)
 
 Arguments mapping described in
-[ListLunaClientsRequestTypeDef](./type_defs.md#listlunaclientsrequesttypedef).
+[ListLunaClientsRequestRequestTypeDef](./type_defs.md#listlunaclientsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
 Returns
-[ListLunaClientsResponseResponseTypeDef](./type_defs.md#listlunaclientsresponseresponsetypedef).
+[ListLunaClientsResponseTypeDef](./type_defs.md#listlunaclientsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -408,14 +413,14 @@ Boto3 documentation:
 [CloudHSM.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### modify_hapg
 
@@ -427,7 +432,7 @@ Boto3 documentation:
 [CloudHSM.Client.modify_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_hapg)
 
 Arguments mapping described in
-[ModifyHapgRequestTypeDef](./type_defs.md#modifyhapgrequesttypedef).
+[ModifyHapgRequestRequestTypeDef](./type_defs.md#modifyhapgrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -435,8 +440,7 @@ Keyword-only arguments:
 - `Label`: `str`
 - `PartitionSerialList`: `List`\[`str`\]
 
-Returns
-[ModifyHapgResponseResponseTypeDef](./type_defs.md#modifyhapgresponseresponsetypedef).
+Returns [ModifyHapgResponseTypeDef](./type_defs.md#modifyhapgresponsetypedef).
 
 ### modify_hsm
 
@@ -448,7 +452,7 @@ Boto3 documentation:
 [CloudHSM.Client.modify_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_hsm)
 
 Arguments mapping described in
-[ModifyHsmRequestTypeDef](./type_defs.md#modifyhsmrequesttypedef).
+[ModifyHsmRequestRequestTypeDef](./type_defs.md#modifyhsmrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -459,8 +463,7 @@ Keyword-only arguments:
 - `ExternalId`: `str`
 - `SyslogIp`: `str`
 
-Returns
-[ModifyHsmResponseResponseTypeDef](./type_defs.md#modifyhsmresponseresponsetypedef).
+Returns [ModifyHsmResponseTypeDef](./type_defs.md#modifyhsmresponsetypedef).
 
 ### modify_luna_client
 
@@ -472,7 +475,7 @@ Boto3 documentation:
 [CloudHSM.Client.modify_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_luna_client)
 
 Arguments mapping described in
-[ModifyLunaClientRequestTypeDef](./type_defs.md#modifylunaclientrequesttypedef).
+[ModifyLunaClientRequestRequestTypeDef](./type_defs.md#modifylunaclientrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -480,7 +483,7 @@ Keyword-only arguments:
 - `Certificate`: `str` *(required)*
 
 Returns
-[ModifyLunaClientResponseResponseTypeDef](./type_defs.md#modifylunaclientresponseresponsetypedef).
+[ModifyLunaClientResponseTypeDef](./type_defs.md#modifylunaclientresponsetypedef).
 
 ### remove_tags_from_resource
 
@@ -493,7 +496,7 @@ Boto3 documentation:
 [CloudHSM.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.remove_tags_from_resource)
 
 Arguments mapping described in
-[RemoveTagsFromResourceRequestTypeDef](./type_defs.md#removetagsfromresourcerequesttypedef).
+[RemoveTagsFromResourceRequestRequestTypeDef](./type_defs.md#removetagsfromresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -501,7 +504,7 @@ Keyword-only arguments:
 - `TagKeyList`: `List`\[`str`\] *(required)*
 
 Returns
-[RemoveTagsFromResourceResponseResponseTypeDef](./type_defs.md#removetagsfromresourceresponseresponsetypedef).
+[RemoveTagsFromResourceResponseTypeDef](./type_defs.md#removetagsfromresourceresponsetypedef).
 
 ### get_paginator
 

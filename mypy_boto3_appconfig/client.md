@@ -11,6 +11,7 @@ type annotations stubs module
   - [AppConfigClient](#appconfigclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_application](#create_application)
     - [create_configuration_profile](#create_configuration_profile)
@@ -87,6 +88,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+AppConfigClient exceptions.
+
+Type annotations for `boto3.client("appconfig").exceptions` method.
+
+Boto3 documentation:
+[AppConfig.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -113,7 +125,7 @@ Boto3 documentation:
 [AppConfig.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_application)
 
 Arguments mapping described in
-[CreateApplicationRequestTypeDef](./type_defs.md#createapplicationrequesttypedef).
+[CreateApplicationRequestRequestTypeDef](./type_defs.md#createapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -122,7 +134,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[ApplicationResponseTypeDef](./type_defs.md#applicationresponsetypedef).
+[ApplicationResponseMetadataTypeDef](./type_defs.md#applicationresponsemetadatatypedef).
 
 ### create_configuration_profile
 
@@ -135,7 +147,7 @@ Boto3 documentation:
 [AppConfig.Client.create_configuration_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_configuration_profile)
 
 Arguments mapping described in
-[CreateConfigurationProfileRequestTypeDef](./type_defs.md#createconfigurationprofilerequesttypedef).
+[CreateConfigurationProfileRequestRequestTypeDef](./type_defs.md#createconfigurationprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -148,7 +160,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[ConfigurationProfileResponseTypeDef](./type_defs.md#configurationprofileresponsetypedef).
+[ConfigurationProfileTypeDef](./type_defs.md#configurationprofiletypedef).
 
 ### create_deployment_strategy
 
@@ -162,7 +174,7 @@ Boto3 documentation:
 [AppConfig.Client.create_deployment_strategy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_deployment_strategy)
 
 Arguments mapping described in
-[CreateDeploymentStrategyRequestTypeDef](./type_defs.md#createdeploymentstrategyrequesttypedef).
+[CreateDeploymentStrategyRequestRequestTypeDef](./type_defs.md#createdeploymentstrategyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -176,7 +188,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[DeploymentStrategyResponseTypeDef](./type_defs.md#deploymentstrategyresponsetypedef).
+[DeploymentStrategyResponseMetadataTypeDef](./type_defs.md#deploymentstrategyresponsemetadatatypedef).
 
 ### create_environment
 
@@ -188,7 +200,7 @@ Boto3 documentation:
 [AppConfig.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_environment)
 
 Arguments mapping described in
-[CreateEnvironmentRequestTypeDef](./type_defs.md#createenvironmentrequesttypedef).
+[CreateEnvironmentRequestRequestTypeDef](./type_defs.md#createenvironmentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -199,7 +211,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[EnvironmentResponseTypeDef](./type_defs.md#environmentresponsetypedef).
+[EnvironmentResponseMetadataTypeDef](./type_defs.md#environmentresponsemetadatatypedef).
 
 ### create_hosted_configuration_version
 
@@ -212,7 +224,7 @@ Boto3 documentation:
 [AppConfig.Client.create_hosted_configuration_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_hosted_configuration_version)
 
 Arguments mapping described in
-[CreateHostedConfigurationVersionRequestTypeDef](./type_defs.md#createhostedconfigurationversionrequesttypedef).
+[CreateHostedConfigurationVersionRequestRequestTypeDef](./type_defs.md#createhostedconfigurationversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -224,7 +236,7 @@ Keyword-only arguments:
 - `LatestVersionNumber`: `int`
 
 Returns
-[HostedConfigurationVersionResponseTypeDef](./type_defs.md#hostedconfigurationversionresponsetypedef).
+[HostedConfigurationVersionTypeDef](./type_defs.md#hostedconfigurationversiontypedef).
 
 ### delete_application
 
@@ -236,7 +248,7 @@ Boto3 documentation:
 [AppConfig.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_application)
 
 Arguments mapping described in
-[DeleteApplicationRequestTypeDef](./type_defs.md#deleteapplicationrequesttypedef).
+[DeleteApplicationRequestRequestTypeDef](./type_defs.md#deleteapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -253,7 +265,7 @@ Boto3 documentation:
 [AppConfig.Client.delete_configuration_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_configuration_profile)
 
 Arguments mapping described in
-[DeleteConfigurationProfileRequestTypeDef](./type_defs.md#deleteconfigurationprofilerequesttypedef).
+[DeleteConfigurationProfileRequestRequestTypeDef](./type_defs.md#deleteconfigurationprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -271,7 +283,7 @@ Boto3 documentation:
 [AppConfig.Client.delete_deployment_strategy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_deployment_strategy)
 
 Arguments mapping described in
-[DeleteDeploymentStrategyRequestTypeDef](./type_defs.md#deletedeploymentstrategyrequesttypedef).
+[DeleteDeploymentStrategyRequestRequestTypeDef](./type_defs.md#deletedeploymentstrategyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -287,7 +299,7 @@ Boto3 documentation:
 [AppConfig.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_environment)
 
 Arguments mapping described in
-[DeleteEnvironmentRequestTypeDef](./type_defs.md#deleteenvironmentrequesttypedef).
+[DeleteEnvironmentRequestRequestTypeDef](./type_defs.md#deleteenvironmentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -305,7 +317,7 @@ Boto3 documentation:
 [AppConfig.Client.delete_hosted_configuration_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_hosted_configuration_version)
 
 Arguments mapping described in
-[DeleteHostedConfigurationVersionRequestTypeDef](./type_defs.md#deletehostedconfigurationversionrequesttypedef).
+[DeleteHostedConfigurationVersionRequestRequestTypeDef](./type_defs.md#deletehostedconfigurationversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -341,14 +353,14 @@ Boto3 documentation:
 [AppConfig.Client.get_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_application)
 
 Arguments mapping described in
-[GetApplicationRequestTypeDef](./type_defs.md#getapplicationrequesttypedef).
+[GetApplicationRequestRequestTypeDef](./type_defs.md#getapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[ApplicationResponseTypeDef](./type_defs.md#applicationresponsetypedef).
+[ApplicationResponseMetadataTypeDef](./type_defs.md#applicationresponsemetadatatypedef).
 
 ### get_configuration
 
@@ -360,7 +372,7 @@ Boto3 documentation:
 [AppConfig.Client.get_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_configuration)
 
 Arguments mapping described in
-[GetConfigurationRequestTypeDef](./type_defs.md#getconfigurationrequesttypedef).
+[GetConfigurationRequestRequestTypeDef](./type_defs.md#getconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -370,8 +382,7 @@ Keyword-only arguments:
 - `ClientId`: `str` *(required)*
 - `ClientConfigurationVersion`: `str`
 
-Returns
-[ConfigurationResponseTypeDef](./type_defs.md#configurationresponsetypedef).
+Returns [ConfigurationTypeDef](./type_defs.md#configurationtypedef).
 
 ### get_configuration_profile
 
@@ -384,7 +395,7 @@ Boto3 documentation:
 [AppConfig.Client.get_configuration_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_configuration_profile)
 
 Arguments mapping described in
-[GetConfigurationProfileRequestTypeDef](./type_defs.md#getconfigurationprofilerequesttypedef).
+[GetConfigurationProfileRequestRequestTypeDef](./type_defs.md#getconfigurationprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -392,7 +403,7 @@ Keyword-only arguments:
 - `ConfigurationProfileId`: `str` *(required)*
 
 Returns
-[ConfigurationProfileResponseTypeDef](./type_defs.md#configurationprofileresponsetypedef).
+[ConfigurationProfileTypeDef](./type_defs.md#configurationprofiletypedef).
 
 ### get_deployment
 
@@ -404,7 +415,7 @@ Boto3 documentation:
 [AppConfig.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_deployment)
 
 Arguments mapping described in
-[GetDeploymentRequestTypeDef](./type_defs.md#getdeploymentrequesttypedef).
+[GetDeploymentRequestRequestTypeDef](./type_defs.md#getdeploymentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -412,7 +423,7 @@ Keyword-only arguments:
 - `EnvironmentId`: `str` *(required)*
 - `DeploymentNumber`: `int` *(required)*
 
-Returns [DeploymentResponseTypeDef](./type_defs.md#deploymentresponsetypedef).
+Returns [DeploymentTypeDef](./type_defs.md#deploymenttypedef).
 
 ### get_deployment_strategy
 
@@ -425,14 +436,14 @@ Boto3 documentation:
 [AppConfig.Client.get_deployment_strategy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_deployment_strategy)
 
 Arguments mapping described in
-[GetDeploymentStrategyRequestTypeDef](./type_defs.md#getdeploymentstrategyrequesttypedef).
+[GetDeploymentStrategyRequestRequestTypeDef](./type_defs.md#getdeploymentstrategyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DeploymentStrategyId`: `str` *(required)*
 
 Returns
-[DeploymentStrategyResponseTypeDef](./type_defs.md#deploymentstrategyresponsetypedef).
+[DeploymentStrategyResponseMetadataTypeDef](./type_defs.md#deploymentstrategyresponsemetadatatypedef).
 
 ### get_environment
 
@@ -444,7 +455,7 @@ Boto3 documentation:
 [AppConfig.Client.get_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_environment)
 
 Arguments mapping described in
-[GetEnvironmentRequestTypeDef](./type_defs.md#getenvironmentrequesttypedef).
+[GetEnvironmentRequestRequestTypeDef](./type_defs.md#getenvironmentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -452,7 +463,7 @@ Keyword-only arguments:
 - `EnvironmentId`: `str` *(required)*
 
 Returns
-[EnvironmentResponseTypeDef](./type_defs.md#environmentresponsetypedef).
+[EnvironmentResponseMetadataTypeDef](./type_defs.md#environmentresponsemetadatatypedef).
 
 ### get_hosted_configuration_version
 
@@ -465,7 +476,7 @@ Boto3 documentation:
 [AppConfig.Client.get_hosted_configuration_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_hosted_configuration_version)
 
 Arguments mapping described in
-[GetHostedConfigurationVersionRequestTypeDef](./type_defs.md#gethostedconfigurationversionrequesttypedef).
+[GetHostedConfigurationVersionRequestRequestTypeDef](./type_defs.md#gethostedconfigurationversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -474,7 +485,7 @@ Keyword-only arguments:
 - `VersionNumber`: `int` *(required)*
 
 Returns
-[HostedConfigurationVersionResponseTypeDef](./type_defs.md#hostedconfigurationversionresponsetypedef).
+[HostedConfigurationVersionTypeDef](./type_defs.md#hostedconfigurationversiontypedef).
 
 ### list_applications
 
@@ -486,15 +497,14 @@ Boto3 documentation:
 [AppConfig.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_applications)
 
 Arguments mapping described in
-[ListApplicationsRequestTypeDef](./type_defs.md#listapplicationsrequesttypedef).
+[ListApplicationsRequestRequestTypeDef](./type_defs.md#listapplicationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ApplicationsResponseTypeDef](./type_defs.md#applicationsresponsetypedef).
+Returns [ApplicationsTypeDef](./type_defs.md#applicationstypedef).
 
 ### list_configuration_profiles
 
@@ -507,7 +517,7 @@ Boto3 documentation:
 [AppConfig.Client.list_configuration_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_configuration_profiles)
 
 Arguments mapping described in
-[ListConfigurationProfilesRequestTypeDef](./type_defs.md#listconfigurationprofilesrequesttypedef).
+[ListConfigurationProfilesRequestRequestTypeDef](./type_defs.md#listconfigurationprofilesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -516,7 +526,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ConfigurationProfilesResponseTypeDef](./type_defs.md#configurationprofilesresponsetypedef).
+[ConfigurationProfilesTypeDef](./type_defs.md#configurationprofilestypedef).
 
 ### list_deployment_strategies
 
@@ -529,7 +539,7 @@ Boto3 documentation:
 [AppConfig.Client.list_deployment_strategies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_deployment_strategies)
 
 Arguments mapping described in
-[ListDeploymentStrategiesRequestTypeDef](./type_defs.md#listdeploymentstrategiesrequesttypedef).
+[ListDeploymentStrategiesRequestRequestTypeDef](./type_defs.md#listdeploymentstrategiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -537,7 +547,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DeploymentStrategiesResponseTypeDef](./type_defs.md#deploymentstrategiesresponsetypedef).
+[DeploymentStrategiesTypeDef](./type_defs.md#deploymentstrategiestypedef).
 
 ### list_deployments
 
@@ -549,7 +559,7 @@ Boto3 documentation:
 [AppConfig.Client.list_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_deployments)
 
 Arguments mapping described in
-[ListDeploymentsRequestTypeDef](./type_defs.md#listdeploymentsrequesttypedef).
+[ListDeploymentsRequestRequestTypeDef](./type_defs.md#listdeploymentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -558,8 +568,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[DeploymentsResponseTypeDef](./type_defs.md#deploymentsresponsetypedef).
+Returns [DeploymentsTypeDef](./type_defs.md#deploymentstypedef).
 
 ### list_environments
 
@@ -571,7 +580,7 @@ Boto3 documentation:
 [AppConfig.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_environments)
 
 Arguments mapping described in
-[ListEnvironmentsRequestTypeDef](./type_defs.md#listenvironmentsrequesttypedef).
+[ListEnvironmentsRequestRequestTypeDef](./type_defs.md#listenvironmentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -579,8 +588,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[EnvironmentsResponseTypeDef](./type_defs.md#environmentsresponsetypedef).
+Returns [EnvironmentsTypeDef](./type_defs.md#environmentstypedef).
 
 ### list_hosted_configuration_versions
 
@@ -594,7 +602,7 @@ Boto3 documentation:
 [AppConfig.Client.list_hosted_configuration_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_hosted_configuration_versions)
 
 Arguments mapping described in
-[ListHostedConfigurationVersionsRequestTypeDef](./type_defs.md#listhostedconfigurationversionsrequesttypedef).
+[ListHostedConfigurationVersionsRequestRequestTypeDef](./type_defs.md#listhostedconfigurationversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -604,7 +612,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[HostedConfigurationVersionsResponseTypeDef](./type_defs.md#hostedconfigurationversionsresponsetypedef).
+[HostedConfigurationVersionsTypeDef](./type_defs.md#hostedconfigurationversionstypedef).
 
 ### list_tags_for_resource
 
@@ -616,14 +624,13 @@ Boto3 documentation:
 [AppConfig.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
-Returns
-[ResourceTagsResponseTypeDef](./type_defs.md#resourcetagsresponsetypedef).
+Returns [ResourceTagsTypeDef](./type_defs.md#resourcetagstypedef).
 
 ### start_deployment
 
@@ -635,7 +642,7 @@ Boto3 documentation:
 [AppConfig.Client.start_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.start_deployment)
 
 Arguments mapping described in
-[StartDeploymentRequestTypeDef](./type_defs.md#startdeploymentrequesttypedef).
+[StartDeploymentRequestRequestTypeDef](./type_defs.md#startdeploymentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -647,7 +654,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-Returns [DeploymentResponseTypeDef](./type_defs.md#deploymentresponsetypedef).
+Returns [DeploymentTypeDef](./type_defs.md#deploymenttypedef).
 
 ### stop_deployment
 
@@ -659,7 +666,7 @@ Boto3 documentation:
 [AppConfig.Client.stop_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.stop_deployment)
 
 Arguments mapping described in
-[StopDeploymentRequestTypeDef](./type_defs.md#stopdeploymentrequesttypedef).
+[StopDeploymentRequestRequestTypeDef](./type_defs.md#stopdeploymentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -667,7 +674,7 @@ Keyword-only arguments:
 - `EnvironmentId`: `str` *(required)*
 - `DeploymentNumber`: `int` *(required)*
 
-Returns [DeploymentResponseTypeDef](./type_defs.md#deploymentresponsetypedef).
+Returns [DeploymentTypeDef](./type_defs.md#deploymenttypedef).
 
 ### tag_resource
 
@@ -679,7 +686,7 @@ Boto3 documentation:
 [AppConfig.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -696,7 +703,7 @@ Boto3 documentation:
 [AppConfig.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -713,7 +720,7 @@ Boto3 documentation:
 [AppConfig.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_application)
 
 Arguments mapping described in
-[UpdateApplicationRequestTypeDef](./type_defs.md#updateapplicationrequesttypedef).
+[UpdateApplicationRequestRequestTypeDef](./type_defs.md#updateapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -722,7 +729,7 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[ApplicationResponseTypeDef](./type_defs.md#applicationresponsetypedef).
+[ApplicationResponseMetadataTypeDef](./type_defs.md#applicationresponsemetadatatypedef).
 
 ### update_configuration_profile
 
@@ -735,7 +742,7 @@ Boto3 documentation:
 [AppConfig.Client.update_configuration_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_configuration_profile)
 
 Arguments mapping described in
-[UpdateConfigurationProfileRequestTypeDef](./type_defs.md#updateconfigurationprofilerequesttypedef).
+[UpdateConfigurationProfileRequestRequestTypeDef](./type_defs.md#updateconfigurationprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -747,7 +754,7 @@ Keyword-only arguments:
 - `Validators`: `List`\[[ValidatorTypeDef](./type_defs.md#validatortypedef)\]
 
 Returns
-[ConfigurationProfileResponseTypeDef](./type_defs.md#configurationprofileresponsetypedef).
+[ConfigurationProfileTypeDef](./type_defs.md#configurationprofiletypedef).
 
 ### update_deployment_strategy
 
@@ -760,7 +767,7 @@ Boto3 documentation:
 [AppConfig.Client.update_deployment_strategy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_deployment_strategy)
 
 Arguments mapping described in
-[UpdateDeploymentStrategyRequestTypeDef](./type_defs.md#updatedeploymentstrategyrequesttypedef).
+[UpdateDeploymentStrategyRequestRequestTypeDef](./type_defs.md#updatedeploymentstrategyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -772,7 +779,7 @@ Keyword-only arguments:
 - `GrowthType`: [GrowthTypeType](./literals.md#growthtypetype)
 
 Returns
-[DeploymentStrategyResponseTypeDef](./type_defs.md#deploymentstrategyresponsetypedef).
+[DeploymentStrategyResponseMetadataTypeDef](./type_defs.md#deploymentstrategyresponsemetadatatypedef).
 
 ### update_environment
 
@@ -784,7 +791,7 @@ Boto3 documentation:
 [AppConfig.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_environment)
 
 Arguments mapping described in
-[UpdateEnvironmentRequestTypeDef](./type_defs.md#updateenvironmentrequesttypedef).
+[UpdateEnvironmentRequestRequestTypeDef](./type_defs.md#updateenvironmentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -795,7 +802,7 @@ Keyword-only arguments:
 - `Monitors`: `List`\[[MonitorTypeDef](./type_defs.md#monitortypedef)\]
 
 Returns
-[EnvironmentResponseTypeDef](./type_defs.md#environmentresponsetypedef).
+[EnvironmentResponseMetadataTypeDef](./type_defs.md#environmentresponsemetadatatypedef).
 
 ### validate_configuration
 
@@ -807,7 +814,7 @@ Boto3 documentation:
 [AppConfig.Client.validate_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.validate_configuration)
 
 Arguments mapping described in
-[ValidateConfigurationRequestTypeDef](./type_defs.md#validateconfigurationrequesttypedef).
+[ValidateConfigurationRequestRequestTypeDef](./type_defs.md#validateconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 

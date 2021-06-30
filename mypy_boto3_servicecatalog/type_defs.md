@@ -8,136 +8,136 @@ type annotations stubs module
 [mypy_boto3_servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
 
 - [Typed dictionaries for boto3 ServiceCatalog module](#typed-dictionaries-for-boto3-servicecatalog-module)
-  - [AcceptPortfolioShareInputTypeDef](#acceptportfolioshareinputtypedef)
+  - [AcceptPortfolioShareInputRequestTypeDef](#acceptportfolioshareinputrequesttypedef)
   - [AccessLevelFilterTypeDef](#accesslevelfiltertypedef)
-  - [AssociateBudgetWithResourceInputTypeDef](#associatebudgetwithresourceinputtypedef)
-  - [AssociatePrincipalWithPortfolioInputTypeDef](#associateprincipalwithportfolioinputtypedef)
-  - [AssociateProductWithPortfolioInputTypeDef](#associateproductwithportfolioinputtypedef)
-  - [AssociateServiceActionWithProvisioningArtifactInputTypeDef](#associateserviceactionwithprovisioningartifactinputtypedef)
-  - [AssociateTagOptionWithResourceInputTypeDef](#associatetagoptionwithresourceinputtypedef)
-  - [BatchAssociateServiceActionWithProvisioningArtifactInputTypeDef](#batchassociateserviceactionwithprovisioningartifactinputtypedef)
-  - [BatchAssociateServiceActionWithProvisioningArtifactOutputResponseTypeDef](#batchassociateserviceactionwithprovisioningartifactoutputresponsetypedef)
-  - [BatchDisassociateServiceActionFromProvisioningArtifactInputTypeDef](#batchdisassociateserviceactionfromprovisioningartifactinputtypedef)
-  - [BatchDisassociateServiceActionFromProvisioningArtifactOutputResponseTypeDef](#batchdisassociateserviceactionfromprovisioningartifactoutputresponsetypedef)
+  - [AssociateBudgetWithResourceInputRequestTypeDef](#associatebudgetwithresourceinputrequesttypedef)
+  - [AssociatePrincipalWithPortfolioInputRequestTypeDef](#associateprincipalwithportfolioinputrequesttypedef)
+  - [AssociateProductWithPortfolioInputRequestTypeDef](#associateproductwithportfolioinputrequesttypedef)
+  - [AssociateServiceActionWithProvisioningArtifactInputRequestTypeDef](#associateserviceactionwithprovisioningartifactinputrequesttypedef)
+  - [AssociateTagOptionWithResourceInputRequestTypeDef](#associatetagoptionwithresourceinputrequesttypedef)
+  - [BatchAssociateServiceActionWithProvisioningArtifactInputRequestTypeDef](#batchassociateserviceactionwithprovisioningartifactinputrequesttypedef)
+  - [BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef](#batchassociateserviceactionwithprovisioningartifactoutputtypedef)
+  - [BatchDisassociateServiceActionFromProvisioningArtifactInputRequestTypeDef](#batchdisassociateserviceactionfromprovisioningartifactinputrequesttypedef)
+  - [BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef](#batchdisassociateserviceactionfromprovisioningartifactoutputtypedef)
   - [BudgetDetailTypeDef](#budgetdetailtypedef)
   - [CloudWatchDashboardTypeDef](#cloudwatchdashboardtypedef)
   - [ConstraintDetailTypeDef](#constraintdetailtypedef)
   - [ConstraintSummaryTypeDef](#constraintsummarytypedef)
-  - [CopyProductInputTypeDef](#copyproductinputtypedef)
-  - [CopyProductOutputResponseTypeDef](#copyproductoutputresponsetypedef)
-  - [CreateConstraintInputTypeDef](#createconstraintinputtypedef)
-  - [CreateConstraintOutputResponseTypeDef](#createconstraintoutputresponsetypedef)
-  - [CreatePortfolioInputTypeDef](#createportfolioinputtypedef)
-  - [CreatePortfolioOutputResponseTypeDef](#createportfoliooutputresponsetypedef)
-  - [CreatePortfolioShareInputTypeDef](#createportfolioshareinputtypedef)
-  - [CreatePortfolioShareOutputResponseTypeDef](#createportfolioshareoutputresponsetypedef)
-  - [CreateProductInputTypeDef](#createproductinputtypedef)
-  - [CreateProductOutputResponseTypeDef](#createproductoutputresponsetypedef)
-  - [CreateProvisionedProductPlanInputTypeDef](#createprovisionedproductplaninputtypedef)
-  - [CreateProvisionedProductPlanOutputResponseTypeDef](#createprovisionedproductplanoutputresponsetypedef)
-  - [CreateProvisioningArtifactInputTypeDef](#createprovisioningartifactinputtypedef)
-  - [CreateProvisioningArtifactOutputResponseTypeDef](#createprovisioningartifactoutputresponsetypedef)
-  - [CreateServiceActionInputTypeDef](#createserviceactioninputtypedef)
-  - [CreateServiceActionOutputResponseTypeDef](#createserviceactionoutputresponsetypedef)
-  - [CreateTagOptionInputTypeDef](#createtagoptioninputtypedef)
-  - [CreateTagOptionOutputResponseTypeDef](#createtagoptionoutputresponsetypedef)
-  - [DeleteConstraintInputTypeDef](#deleteconstraintinputtypedef)
-  - [DeletePortfolioInputTypeDef](#deleteportfolioinputtypedef)
-  - [DeletePortfolioShareInputTypeDef](#deleteportfolioshareinputtypedef)
-  - [DeletePortfolioShareOutputResponseTypeDef](#deleteportfolioshareoutputresponsetypedef)
-  - [DeleteProductInputTypeDef](#deleteproductinputtypedef)
-  - [DeleteProvisionedProductPlanInputTypeDef](#deleteprovisionedproductplaninputtypedef)
-  - [DeleteProvisioningArtifactInputTypeDef](#deleteprovisioningartifactinputtypedef)
-  - [DeleteServiceActionInputTypeDef](#deleteserviceactioninputtypedef)
-  - [DeleteTagOptionInputTypeDef](#deletetagoptioninputtypedef)
-  - [DescribeConstraintInputTypeDef](#describeconstraintinputtypedef)
-  - [DescribeConstraintOutputResponseTypeDef](#describeconstraintoutputresponsetypedef)
-  - [DescribeCopyProductStatusInputTypeDef](#describecopyproductstatusinputtypedef)
-  - [DescribeCopyProductStatusOutputResponseTypeDef](#describecopyproductstatusoutputresponsetypedef)
-  - [DescribePortfolioInputTypeDef](#describeportfolioinputtypedef)
-  - [DescribePortfolioOutputResponseTypeDef](#describeportfoliooutputresponsetypedef)
-  - [DescribePortfolioShareStatusInputTypeDef](#describeportfoliosharestatusinputtypedef)
-  - [DescribePortfolioShareStatusOutputResponseTypeDef](#describeportfoliosharestatusoutputresponsetypedef)
-  - [DescribePortfolioSharesInputTypeDef](#describeportfoliosharesinputtypedef)
-  - [DescribePortfolioSharesOutputResponseTypeDef](#describeportfoliosharesoutputresponsetypedef)
-  - [DescribeProductAsAdminInputTypeDef](#describeproductasadmininputtypedef)
-  - [DescribeProductAsAdminOutputResponseTypeDef](#describeproductasadminoutputresponsetypedef)
-  - [DescribeProductInputTypeDef](#describeproductinputtypedef)
-  - [DescribeProductOutputResponseTypeDef](#describeproductoutputresponsetypedef)
-  - [DescribeProductViewInputTypeDef](#describeproductviewinputtypedef)
-  - [DescribeProductViewOutputResponseTypeDef](#describeproductviewoutputresponsetypedef)
-  - [DescribeProvisionedProductInputTypeDef](#describeprovisionedproductinputtypedef)
-  - [DescribeProvisionedProductOutputResponseTypeDef](#describeprovisionedproductoutputresponsetypedef)
-  - [DescribeProvisionedProductPlanInputTypeDef](#describeprovisionedproductplaninputtypedef)
-  - [DescribeProvisionedProductPlanOutputResponseTypeDef](#describeprovisionedproductplanoutputresponsetypedef)
-  - [DescribeProvisioningArtifactInputTypeDef](#describeprovisioningartifactinputtypedef)
-  - [DescribeProvisioningArtifactOutputResponseTypeDef](#describeprovisioningartifactoutputresponsetypedef)
-  - [DescribeProvisioningParametersInputTypeDef](#describeprovisioningparametersinputtypedef)
-  - [DescribeProvisioningParametersOutputResponseTypeDef](#describeprovisioningparametersoutputresponsetypedef)
-  - [DescribeRecordInputTypeDef](#describerecordinputtypedef)
-  - [DescribeRecordOutputResponseTypeDef](#describerecordoutputresponsetypedef)
-  - [DescribeServiceActionExecutionParametersInputTypeDef](#describeserviceactionexecutionparametersinputtypedef)
-  - [DescribeServiceActionExecutionParametersOutputResponseTypeDef](#describeserviceactionexecutionparametersoutputresponsetypedef)
-  - [DescribeServiceActionInputTypeDef](#describeserviceactioninputtypedef)
-  - [DescribeServiceActionOutputResponseTypeDef](#describeserviceactionoutputresponsetypedef)
-  - [DescribeTagOptionInputTypeDef](#describetagoptioninputtypedef)
-  - [DescribeTagOptionOutputResponseTypeDef](#describetagoptionoutputresponsetypedef)
-  - [DisassociateBudgetFromResourceInputTypeDef](#disassociatebudgetfromresourceinputtypedef)
-  - [DisassociatePrincipalFromPortfolioInputTypeDef](#disassociateprincipalfromportfolioinputtypedef)
-  - [DisassociateProductFromPortfolioInputTypeDef](#disassociateproductfromportfolioinputtypedef)
-  - [DisassociateServiceActionFromProvisioningArtifactInputTypeDef](#disassociateserviceactionfromprovisioningartifactinputtypedef)
-  - [DisassociateTagOptionFromResourceInputTypeDef](#disassociatetagoptionfromresourceinputtypedef)
-  - [ExecuteProvisionedProductPlanInputTypeDef](#executeprovisionedproductplaninputtypedef)
-  - [ExecuteProvisionedProductPlanOutputResponseTypeDef](#executeprovisionedproductplanoutputresponsetypedef)
-  - [ExecuteProvisionedProductServiceActionInputTypeDef](#executeprovisionedproductserviceactioninputtypedef)
-  - [ExecuteProvisionedProductServiceActionOutputResponseTypeDef](#executeprovisionedproductserviceactionoutputresponsetypedef)
+  - [CopyProductInputRequestTypeDef](#copyproductinputrequesttypedef)
+  - [CopyProductOutputTypeDef](#copyproductoutputtypedef)
+  - [CreateConstraintInputRequestTypeDef](#createconstraintinputrequesttypedef)
+  - [CreateConstraintOutputTypeDef](#createconstraintoutputtypedef)
+  - [CreatePortfolioInputRequestTypeDef](#createportfolioinputrequesttypedef)
+  - [CreatePortfolioOutputTypeDef](#createportfoliooutputtypedef)
+  - [CreatePortfolioShareInputRequestTypeDef](#createportfolioshareinputrequesttypedef)
+  - [CreatePortfolioShareOutputTypeDef](#createportfolioshareoutputtypedef)
+  - [CreateProductInputRequestTypeDef](#createproductinputrequesttypedef)
+  - [CreateProductOutputTypeDef](#createproductoutputtypedef)
+  - [CreateProvisionedProductPlanInputRequestTypeDef](#createprovisionedproductplaninputrequesttypedef)
+  - [CreateProvisionedProductPlanOutputTypeDef](#createprovisionedproductplanoutputtypedef)
+  - [CreateProvisioningArtifactInputRequestTypeDef](#createprovisioningartifactinputrequesttypedef)
+  - [CreateProvisioningArtifactOutputTypeDef](#createprovisioningartifactoutputtypedef)
+  - [CreateServiceActionInputRequestTypeDef](#createserviceactioninputrequesttypedef)
+  - [CreateServiceActionOutputTypeDef](#createserviceactionoutputtypedef)
+  - [CreateTagOptionInputRequestTypeDef](#createtagoptioninputrequesttypedef)
+  - [CreateTagOptionOutputTypeDef](#createtagoptionoutputtypedef)
+  - [DeleteConstraintInputRequestTypeDef](#deleteconstraintinputrequesttypedef)
+  - [DeletePortfolioInputRequestTypeDef](#deleteportfolioinputrequesttypedef)
+  - [DeletePortfolioShareInputRequestTypeDef](#deleteportfolioshareinputrequesttypedef)
+  - [DeletePortfolioShareOutputTypeDef](#deleteportfolioshareoutputtypedef)
+  - [DeleteProductInputRequestTypeDef](#deleteproductinputrequesttypedef)
+  - [DeleteProvisionedProductPlanInputRequestTypeDef](#deleteprovisionedproductplaninputrequesttypedef)
+  - [DeleteProvisioningArtifactInputRequestTypeDef](#deleteprovisioningartifactinputrequesttypedef)
+  - [DeleteServiceActionInputRequestTypeDef](#deleteserviceactioninputrequesttypedef)
+  - [DeleteTagOptionInputRequestTypeDef](#deletetagoptioninputrequesttypedef)
+  - [DescribeConstraintInputRequestTypeDef](#describeconstraintinputrequesttypedef)
+  - [DescribeConstraintOutputTypeDef](#describeconstraintoutputtypedef)
+  - [DescribeCopyProductStatusInputRequestTypeDef](#describecopyproductstatusinputrequesttypedef)
+  - [DescribeCopyProductStatusOutputTypeDef](#describecopyproductstatusoutputtypedef)
+  - [DescribePortfolioInputRequestTypeDef](#describeportfolioinputrequesttypedef)
+  - [DescribePortfolioOutputTypeDef](#describeportfoliooutputtypedef)
+  - [DescribePortfolioShareStatusInputRequestTypeDef](#describeportfoliosharestatusinputrequesttypedef)
+  - [DescribePortfolioShareStatusOutputTypeDef](#describeportfoliosharestatusoutputtypedef)
+  - [DescribePortfolioSharesInputRequestTypeDef](#describeportfoliosharesinputrequesttypedef)
+  - [DescribePortfolioSharesOutputTypeDef](#describeportfoliosharesoutputtypedef)
+  - [DescribeProductAsAdminInputRequestTypeDef](#describeproductasadmininputrequesttypedef)
+  - [DescribeProductAsAdminOutputTypeDef](#describeproductasadminoutputtypedef)
+  - [DescribeProductInputRequestTypeDef](#describeproductinputrequesttypedef)
+  - [DescribeProductOutputTypeDef](#describeproductoutputtypedef)
+  - [DescribeProductViewInputRequestTypeDef](#describeproductviewinputrequesttypedef)
+  - [DescribeProductViewOutputTypeDef](#describeproductviewoutputtypedef)
+  - [DescribeProvisionedProductInputRequestTypeDef](#describeprovisionedproductinputrequesttypedef)
+  - [DescribeProvisionedProductOutputTypeDef](#describeprovisionedproductoutputtypedef)
+  - [DescribeProvisionedProductPlanInputRequestTypeDef](#describeprovisionedproductplaninputrequesttypedef)
+  - [DescribeProvisionedProductPlanOutputTypeDef](#describeprovisionedproductplanoutputtypedef)
+  - [DescribeProvisioningArtifactInputRequestTypeDef](#describeprovisioningartifactinputrequesttypedef)
+  - [DescribeProvisioningArtifactOutputTypeDef](#describeprovisioningartifactoutputtypedef)
+  - [DescribeProvisioningParametersInputRequestTypeDef](#describeprovisioningparametersinputrequesttypedef)
+  - [DescribeProvisioningParametersOutputTypeDef](#describeprovisioningparametersoutputtypedef)
+  - [DescribeRecordInputRequestTypeDef](#describerecordinputrequesttypedef)
+  - [DescribeRecordOutputTypeDef](#describerecordoutputtypedef)
+  - [DescribeServiceActionExecutionParametersInputRequestTypeDef](#describeserviceactionexecutionparametersinputrequesttypedef)
+  - [DescribeServiceActionExecutionParametersOutputTypeDef](#describeserviceactionexecutionparametersoutputtypedef)
+  - [DescribeServiceActionInputRequestTypeDef](#describeserviceactioninputrequesttypedef)
+  - [DescribeServiceActionOutputTypeDef](#describeserviceactionoutputtypedef)
+  - [DescribeTagOptionInputRequestTypeDef](#describetagoptioninputrequesttypedef)
+  - [DescribeTagOptionOutputTypeDef](#describetagoptionoutputtypedef)
+  - [DisassociateBudgetFromResourceInputRequestTypeDef](#disassociatebudgetfromresourceinputrequesttypedef)
+  - [DisassociatePrincipalFromPortfolioInputRequestTypeDef](#disassociateprincipalfromportfolioinputrequesttypedef)
+  - [DisassociateProductFromPortfolioInputRequestTypeDef](#disassociateproductfromportfolioinputrequesttypedef)
+  - [DisassociateServiceActionFromProvisioningArtifactInputRequestTypeDef](#disassociateserviceactionfromprovisioningartifactinputrequesttypedef)
+  - [DisassociateTagOptionFromResourceInputRequestTypeDef](#disassociatetagoptionfromresourceinputrequesttypedef)
+  - [ExecuteProvisionedProductPlanInputRequestTypeDef](#executeprovisionedproductplaninputrequesttypedef)
+  - [ExecuteProvisionedProductPlanOutputTypeDef](#executeprovisionedproductplanoutputtypedef)
+  - [ExecuteProvisionedProductServiceActionInputRequestTypeDef](#executeprovisionedproductserviceactioninputrequesttypedef)
+  - [ExecuteProvisionedProductServiceActionOutputTypeDef](#executeprovisionedproductserviceactionoutputtypedef)
   - [ExecutionParameterTypeDef](#executionparametertypedef)
   - [FailedServiceActionAssociationTypeDef](#failedserviceactionassociationtypedef)
-  - [GetAWSOrganizationsAccessStatusOutputResponseTypeDef](#getawsorganizationsaccessstatusoutputresponsetypedef)
-  - [GetProvisionedProductOutputsInputTypeDef](#getprovisionedproductoutputsinputtypedef)
-  - [GetProvisionedProductOutputsOutputResponseTypeDef](#getprovisionedproductoutputsoutputresponsetypedef)
-  - [ImportAsProvisionedProductInputTypeDef](#importasprovisionedproductinputtypedef)
-  - [ImportAsProvisionedProductOutputResponseTypeDef](#importasprovisionedproductoutputresponsetypedef)
+  - [GetAWSOrganizationsAccessStatusOutputTypeDef](#getawsorganizationsaccessstatusoutputtypedef)
+  - [GetProvisionedProductOutputsInputRequestTypeDef](#getprovisionedproductoutputsinputrequesttypedef)
+  - [GetProvisionedProductOutputsOutputTypeDef](#getprovisionedproductoutputsoutputtypedef)
+  - [ImportAsProvisionedProductInputRequestTypeDef](#importasprovisionedproductinputrequesttypedef)
+  - [ImportAsProvisionedProductOutputTypeDef](#importasprovisionedproductoutputtypedef)
   - [LaunchPathSummaryTypeDef](#launchpathsummarytypedef)
   - [LaunchPathTypeDef](#launchpathtypedef)
-  - [ListAcceptedPortfolioSharesInputTypeDef](#listacceptedportfoliosharesinputtypedef)
-  - [ListAcceptedPortfolioSharesOutputResponseTypeDef](#listacceptedportfoliosharesoutputresponsetypedef)
-  - [ListBudgetsForResourceInputTypeDef](#listbudgetsforresourceinputtypedef)
-  - [ListBudgetsForResourceOutputResponseTypeDef](#listbudgetsforresourceoutputresponsetypedef)
-  - [ListConstraintsForPortfolioInputTypeDef](#listconstraintsforportfolioinputtypedef)
-  - [ListConstraintsForPortfolioOutputResponseTypeDef](#listconstraintsforportfoliooutputresponsetypedef)
-  - [ListLaunchPathsInputTypeDef](#listlaunchpathsinputtypedef)
-  - [ListLaunchPathsOutputResponseTypeDef](#listlaunchpathsoutputresponsetypedef)
-  - [ListOrganizationPortfolioAccessInputTypeDef](#listorganizationportfolioaccessinputtypedef)
-  - [ListOrganizationPortfolioAccessOutputResponseTypeDef](#listorganizationportfolioaccessoutputresponsetypedef)
-  - [ListPortfolioAccessInputTypeDef](#listportfolioaccessinputtypedef)
-  - [ListPortfolioAccessOutputResponseTypeDef](#listportfolioaccessoutputresponsetypedef)
-  - [ListPortfoliosForProductInputTypeDef](#listportfoliosforproductinputtypedef)
-  - [ListPortfoliosForProductOutputResponseTypeDef](#listportfoliosforproductoutputresponsetypedef)
-  - [ListPortfoliosInputTypeDef](#listportfoliosinputtypedef)
-  - [ListPortfoliosOutputResponseTypeDef](#listportfoliosoutputresponsetypedef)
-  - [ListPrincipalsForPortfolioInputTypeDef](#listprincipalsforportfolioinputtypedef)
-  - [ListPrincipalsForPortfolioOutputResponseTypeDef](#listprincipalsforportfoliooutputresponsetypedef)
-  - [ListProvisionedProductPlansInputTypeDef](#listprovisionedproductplansinputtypedef)
-  - [ListProvisionedProductPlansOutputResponseTypeDef](#listprovisionedproductplansoutputresponsetypedef)
-  - [ListProvisioningArtifactsForServiceActionInputTypeDef](#listprovisioningartifactsforserviceactioninputtypedef)
-  - [ListProvisioningArtifactsForServiceActionOutputResponseTypeDef](#listprovisioningartifactsforserviceactionoutputresponsetypedef)
-  - [ListProvisioningArtifactsInputTypeDef](#listprovisioningartifactsinputtypedef)
-  - [ListProvisioningArtifactsOutputResponseTypeDef](#listprovisioningartifactsoutputresponsetypedef)
-  - [ListRecordHistoryInputTypeDef](#listrecordhistoryinputtypedef)
-  - [ListRecordHistoryOutputResponseTypeDef](#listrecordhistoryoutputresponsetypedef)
+  - [ListAcceptedPortfolioSharesInputRequestTypeDef](#listacceptedportfoliosharesinputrequesttypedef)
+  - [ListAcceptedPortfolioSharesOutputTypeDef](#listacceptedportfoliosharesoutputtypedef)
+  - [ListBudgetsForResourceInputRequestTypeDef](#listbudgetsforresourceinputrequesttypedef)
+  - [ListBudgetsForResourceOutputTypeDef](#listbudgetsforresourceoutputtypedef)
+  - [ListConstraintsForPortfolioInputRequestTypeDef](#listconstraintsforportfolioinputrequesttypedef)
+  - [ListConstraintsForPortfolioOutputTypeDef](#listconstraintsforportfoliooutputtypedef)
+  - [ListLaunchPathsInputRequestTypeDef](#listlaunchpathsinputrequesttypedef)
+  - [ListLaunchPathsOutputTypeDef](#listlaunchpathsoutputtypedef)
+  - [ListOrganizationPortfolioAccessInputRequestTypeDef](#listorganizationportfolioaccessinputrequesttypedef)
+  - [ListOrganizationPortfolioAccessOutputTypeDef](#listorganizationportfolioaccessoutputtypedef)
+  - [ListPortfolioAccessInputRequestTypeDef](#listportfolioaccessinputrequesttypedef)
+  - [ListPortfolioAccessOutputTypeDef](#listportfolioaccessoutputtypedef)
+  - [ListPortfoliosForProductInputRequestTypeDef](#listportfoliosforproductinputrequesttypedef)
+  - [ListPortfoliosForProductOutputTypeDef](#listportfoliosforproductoutputtypedef)
+  - [ListPortfoliosInputRequestTypeDef](#listportfoliosinputrequesttypedef)
+  - [ListPortfoliosOutputTypeDef](#listportfoliosoutputtypedef)
+  - [ListPrincipalsForPortfolioInputRequestTypeDef](#listprincipalsforportfolioinputrequesttypedef)
+  - [ListPrincipalsForPortfolioOutputTypeDef](#listprincipalsforportfoliooutputtypedef)
+  - [ListProvisionedProductPlansInputRequestTypeDef](#listprovisionedproductplansinputrequesttypedef)
+  - [ListProvisionedProductPlansOutputTypeDef](#listprovisionedproductplansoutputtypedef)
+  - [ListProvisioningArtifactsForServiceActionInputRequestTypeDef](#listprovisioningartifactsforserviceactioninputrequesttypedef)
+  - [ListProvisioningArtifactsForServiceActionOutputTypeDef](#listprovisioningartifactsforserviceactionoutputtypedef)
+  - [ListProvisioningArtifactsInputRequestTypeDef](#listprovisioningartifactsinputrequesttypedef)
+  - [ListProvisioningArtifactsOutputTypeDef](#listprovisioningartifactsoutputtypedef)
+  - [ListRecordHistoryInputRequestTypeDef](#listrecordhistoryinputrequesttypedef)
+  - [ListRecordHistoryOutputTypeDef](#listrecordhistoryoutputtypedef)
   - [ListRecordHistorySearchFilterTypeDef](#listrecordhistorysearchfiltertypedef)
-  - [ListResourcesForTagOptionInputTypeDef](#listresourcesfortagoptioninputtypedef)
-  - [ListResourcesForTagOptionOutputResponseTypeDef](#listresourcesfortagoptionoutputresponsetypedef)
-  - [ListServiceActionsForProvisioningArtifactInputTypeDef](#listserviceactionsforprovisioningartifactinputtypedef)
-  - [ListServiceActionsForProvisioningArtifactOutputResponseTypeDef](#listserviceactionsforprovisioningartifactoutputresponsetypedef)
-  - [ListServiceActionsInputTypeDef](#listserviceactionsinputtypedef)
-  - [ListServiceActionsOutputResponseTypeDef](#listserviceactionsoutputresponsetypedef)
-  - [ListStackInstancesForProvisionedProductInputTypeDef](#liststackinstancesforprovisionedproductinputtypedef)
-  - [ListStackInstancesForProvisionedProductOutputResponseTypeDef](#liststackinstancesforprovisionedproductoutputresponsetypedef)
+  - [ListResourcesForTagOptionInputRequestTypeDef](#listresourcesfortagoptioninputrequesttypedef)
+  - [ListResourcesForTagOptionOutputTypeDef](#listresourcesfortagoptionoutputtypedef)
+  - [ListServiceActionsForProvisioningArtifactInputRequestTypeDef](#listserviceactionsforprovisioningartifactinputrequesttypedef)
+  - [ListServiceActionsForProvisioningArtifactOutputTypeDef](#listserviceactionsforprovisioningartifactoutputtypedef)
+  - [ListServiceActionsInputRequestTypeDef](#listserviceactionsinputrequesttypedef)
+  - [ListServiceActionsOutputTypeDef](#listserviceactionsoutputtypedef)
+  - [ListStackInstancesForProvisionedProductInputRequestTypeDef](#liststackinstancesforprovisionedproductinputrequesttypedef)
+  - [ListStackInstancesForProvisionedProductOutputTypeDef](#liststackinstancesforprovisionedproductoutputtypedef)
   - [ListTagOptionsFiltersTypeDef](#listtagoptionsfilterstypedef)
-  - [ListTagOptionsInputTypeDef](#listtagoptionsinputtypedef)
-  - [ListTagOptionsOutputResponseTypeDef](#listtagoptionsoutputresponsetypedef)
+  - [ListTagOptionsInputRequestTypeDef](#listtagoptionsinputrequesttypedef)
+  - [ListTagOptionsOutputTypeDef](#listtagoptionsoutputtypedef)
   - [OrganizationNodeTypeDef](#organizationnodetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ParameterConstraintsTypeDef](#parameterconstraintstypedef)
@@ -147,8 +147,8 @@ type annotations stubs module
   - [ProductViewAggregationValueTypeDef](#productviewaggregationvaluetypedef)
   - [ProductViewDetailTypeDef](#productviewdetailtypedef)
   - [ProductViewSummaryTypeDef](#productviewsummarytypedef)
-  - [ProvisionProductInputTypeDef](#provisionproductinputtypedef)
-  - [ProvisionProductOutputResponseTypeDef](#provisionproductoutputresponsetypedef)
+  - [ProvisionProductInputRequestTypeDef](#provisionproductinputrequesttypedef)
+  - [ProvisionProductOutputTypeDef](#provisionproductoutputtypedef)
   - [ProvisionedProductAttributeTypeDef](#provisionedproductattributetypedef)
   - [ProvisionedProductDetailTypeDef](#provisionedproductdetailtypedef)
   - [ProvisionedProductPlanDetailsTypeDef](#provisionedproductplandetailstypedef)
@@ -167,20 +167,20 @@ type annotations stubs module
   - [RecordErrorTypeDef](#recorderrortypedef)
   - [RecordOutputTypeDef](#recordoutputtypedef)
   - [RecordTagTypeDef](#recordtagtypedef)
-  - [RejectPortfolioShareInputTypeDef](#rejectportfolioshareinputtypedef)
+  - [RejectPortfolioShareInputRequestTypeDef](#rejectportfolioshareinputrequesttypedef)
   - [ResourceChangeDetailTypeDef](#resourcechangedetailtypedef)
   - [ResourceChangeTypeDef](#resourcechangetypedef)
   - [ResourceDetailTypeDef](#resourcedetailtypedef)
   - [ResourceTargetDefinitionTypeDef](#resourcetargetdefinitiontypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ScanProvisionedProductsInputTypeDef](#scanprovisionedproductsinputtypedef)
-  - [ScanProvisionedProductsOutputResponseTypeDef](#scanprovisionedproductsoutputresponsetypedef)
-  - [SearchProductsAsAdminInputTypeDef](#searchproductsasadmininputtypedef)
-  - [SearchProductsAsAdminOutputResponseTypeDef](#searchproductsasadminoutputresponsetypedef)
-  - [SearchProductsInputTypeDef](#searchproductsinputtypedef)
-  - [SearchProductsOutputResponseTypeDef](#searchproductsoutputresponsetypedef)
-  - [SearchProvisionedProductsInputTypeDef](#searchprovisionedproductsinputtypedef)
-  - [SearchProvisionedProductsOutputResponseTypeDef](#searchprovisionedproductsoutputresponsetypedef)
+  - [ScanProvisionedProductsInputRequestTypeDef](#scanprovisionedproductsinputrequesttypedef)
+  - [ScanProvisionedProductsOutputTypeDef](#scanprovisionedproductsoutputtypedef)
+  - [SearchProductsAsAdminInputRequestTypeDef](#searchproductsasadmininputrequesttypedef)
+  - [SearchProductsAsAdminOutputTypeDef](#searchproductsasadminoutputtypedef)
+  - [SearchProductsInputRequestTypeDef](#searchproductsinputrequesttypedef)
+  - [SearchProductsOutputTypeDef](#searchproductsoutputtypedef)
+  - [SearchProvisionedProductsInputRequestTypeDef](#searchprovisionedproductsinputrequesttypedef)
+  - [SearchProvisionedProductsOutputTypeDef](#searchprovisionedproductsoutputtypedef)
   - [ServiceActionAssociationTypeDef](#serviceactionassociationtypedef)
   - [ServiceActionDetailTypeDef](#serviceactiondetailtypedef)
   - [ServiceActionSummaryTypeDef](#serviceactionsummarytypedef)
@@ -190,34 +190,34 @@ type annotations stubs module
   - [TagOptionDetailTypeDef](#tagoptiondetailtypedef)
   - [TagOptionSummaryTypeDef](#tagoptionsummarytypedef)
   - [TagTypeDef](#tagtypedef)
-  - [TerminateProvisionedProductInputTypeDef](#terminateprovisionedproductinputtypedef)
-  - [TerminateProvisionedProductOutputResponseTypeDef](#terminateprovisionedproductoutputresponsetypedef)
-  - [UpdateConstraintInputTypeDef](#updateconstraintinputtypedef)
-  - [UpdateConstraintOutputResponseTypeDef](#updateconstraintoutputresponsetypedef)
-  - [UpdatePortfolioInputTypeDef](#updateportfolioinputtypedef)
-  - [UpdatePortfolioOutputResponseTypeDef](#updateportfoliooutputresponsetypedef)
-  - [UpdatePortfolioShareInputTypeDef](#updateportfolioshareinputtypedef)
-  - [UpdatePortfolioShareOutputResponseTypeDef](#updateportfolioshareoutputresponsetypedef)
-  - [UpdateProductInputTypeDef](#updateproductinputtypedef)
-  - [UpdateProductOutputResponseTypeDef](#updateproductoutputresponsetypedef)
-  - [UpdateProvisionedProductInputTypeDef](#updateprovisionedproductinputtypedef)
-  - [UpdateProvisionedProductOutputResponseTypeDef](#updateprovisionedproductoutputresponsetypedef)
-  - [UpdateProvisionedProductPropertiesInputTypeDef](#updateprovisionedproductpropertiesinputtypedef)
-  - [UpdateProvisionedProductPropertiesOutputResponseTypeDef](#updateprovisionedproductpropertiesoutputresponsetypedef)
-  - [UpdateProvisioningArtifactInputTypeDef](#updateprovisioningartifactinputtypedef)
-  - [UpdateProvisioningArtifactOutputResponseTypeDef](#updateprovisioningartifactoutputresponsetypedef)
+  - [TerminateProvisionedProductInputRequestTypeDef](#terminateprovisionedproductinputrequesttypedef)
+  - [TerminateProvisionedProductOutputTypeDef](#terminateprovisionedproductoutputtypedef)
+  - [UpdateConstraintInputRequestTypeDef](#updateconstraintinputrequesttypedef)
+  - [UpdateConstraintOutputTypeDef](#updateconstraintoutputtypedef)
+  - [UpdatePortfolioInputRequestTypeDef](#updateportfolioinputrequesttypedef)
+  - [UpdatePortfolioOutputTypeDef](#updateportfoliooutputtypedef)
+  - [UpdatePortfolioShareInputRequestTypeDef](#updateportfolioshareinputrequesttypedef)
+  - [UpdatePortfolioShareOutputTypeDef](#updateportfolioshareoutputtypedef)
+  - [UpdateProductInputRequestTypeDef](#updateproductinputrequesttypedef)
+  - [UpdateProductOutputTypeDef](#updateproductoutputtypedef)
+  - [UpdateProvisionedProductInputRequestTypeDef](#updateprovisionedproductinputrequesttypedef)
+  - [UpdateProvisionedProductOutputTypeDef](#updateprovisionedproductoutputtypedef)
+  - [UpdateProvisionedProductPropertiesInputRequestTypeDef](#updateprovisionedproductpropertiesinputrequesttypedef)
+  - [UpdateProvisionedProductPropertiesOutputTypeDef](#updateprovisionedproductpropertiesoutputtypedef)
+  - [UpdateProvisioningArtifactInputRequestTypeDef](#updateprovisioningartifactinputrequesttypedef)
+  - [UpdateProvisioningArtifactOutputTypeDef](#updateprovisioningartifactoutputtypedef)
   - [UpdateProvisioningParameterTypeDef](#updateprovisioningparametertypedef)
   - [UpdateProvisioningPreferencesTypeDef](#updateprovisioningpreferencestypedef)
-  - [UpdateServiceActionInputTypeDef](#updateserviceactioninputtypedef)
-  - [UpdateServiceActionOutputResponseTypeDef](#updateserviceactionoutputresponsetypedef)
-  - [UpdateTagOptionInputTypeDef](#updatetagoptioninputtypedef)
-  - [UpdateTagOptionOutputResponseTypeDef](#updatetagoptionoutputresponsetypedef)
+  - [UpdateServiceActionInputRequestTypeDef](#updateserviceactioninputrequesttypedef)
+  - [UpdateServiceActionOutputTypeDef](#updateserviceactionoutputtypedef)
+  - [UpdateTagOptionInputRequestTypeDef](#updatetagoptioninputrequesttypedef)
+  - [UpdateTagOptionOutputTypeDef](#updatetagoptionoutputtypedef)
   - [UsageInstructionTypeDef](#usageinstructiontypedef)
 
-## AcceptPortfolioShareInputTypeDef
+## AcceptPortfolioShareInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import AcceptPortfolioShareInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import AcceptPortfolioShareInputRequestTypeDef
 ```
 
 Required fields:
@@ -241,10 +241,10 @@ Optional fields:
 - `Key`: [AccessLevelFilterKeyType](./literals.md#accesslevelfilterkeytype)
 - `Value`: `str`
 
-## AssociateBudgetWithResourceInputTypeDef
+## AssociateBudgetWithResourceInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import AssociateBudgetWithResourceInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import AssociateBudgetWithResourceInputRequestTypeDef
 ```
 
 Required fields:
@@ -252,10 +252,10 @@ Required fields:
 - `BudgetName`: `str`
 - `ResourceId`: `str`
 
-## AssociatePrincipalWithPortfolioInputTypeDef
+## AssociatePrincipalWithPortfolioInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import AssociatePrincipalWithPortfolioInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import AssociatePrincipalWithPortfolioInputRequestTypeDef
 ```
 
 Required fields:
@@ -269,10 +269,10 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 
-## AssociateProductWithPortfolioInputTypeDef
+## AssociateProductWithPortfolioInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import AssociateProductWithPortfolioInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import AssociateProductWithPortfolioInputRequestTypeDef
 ```
 
 Required fields:
@@ -285,10 +285,10 @@ Optional fields:
 - `AcceptLanguage`: `str`
 - `SourcePortfolioId`: `str`
 
-## AssociateServiceActionWithProvisioningArtifactInputTypeDef
+## AssociateServiceActionWithProvisioningArtifactInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import AssociateServiceActionWithProvisioningArtifactInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import AssociateServiceActionWithProvisioningArtifactInputRequestTypeDef
 ```
 
 Required fields:
@@ -301,10 +301,10 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 
-## AssociateTagOptionWithResourceInputTypeDef
+## AssociateTagOptionWithResourceInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import AssociateTagOptionWithResourceInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import AssociateTagOptionWithResourceInputRequestTypeDef
 ```
 
 Required fields:
@@ -312,10 +312,10 @@ Required fields:
 - `ResourceId`: `str`
 - `TagOptionId`: `str`
 
-## BatchAssociateServiceActionWithProvisioningArtifactInputTypeDef
+## BatchAssociateServiceActionWithProvisioningArtifactInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import BatchAssociateServiceActionWithProvisioningArtifactInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import BatchAssociateServiceActionWithProvisioningArtifactInputRequestTypeDef
 ```
 
 Required fields:
@@ -327,10 +327,10 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 
-## BatchAssociateServiceActionWithProvisioningArtifactOutputResponseTypeDef
+## BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import BatchAssociateServiceActionWithProvisioningArtifactOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef
 ```
 
 Required fields:
@@ -340,10 +340,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchDisassociateServiceActionFromProvisioningArtifactInputTypeDef
+## BatchDisassociateServiceActionFromProvisioningArtifactInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import BatchDisassociateServiceActionFromProvisioningArtifactInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import BatchDisassociateServiceActionFromProvisioningArtifactInputRequestTypeDef
 ```
 
 Required fields:
@@ -355,10 +355,10 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 
-## BatchDisassociateServiceActionFromProvisioningArtifactOutputResponseTypeDef
+## BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import BatchDisassociateServiceActionFromProvisioningArtifactOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef
 ```
 
 Required fields:
@@ -414,10 +414,10 @@ Optional fields:
 - `Type`: `str`
 - `Description`: `str`
 
-## CopyProductInputTypeDef
+## CopyProductInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import CopyProductInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import CopyProductInputRequestTypeDef
 ```
 
 Required fields:
@@ -436,10 +436,10 @@ Optional fields:
 - `CopyOptions`: `List`\[`Literal['CopyTags']` (see
   [CopyOptionType](./literals.md#copyoptiontype))\]
 
-## CopyProductOutputResponseTypeDef
+## CopyProductOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import CopyProductOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import CopyProductOutputTypeDef
 ```
 
 Required fields:
@@ -448,10 +448,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateConstraintInputTypeDef
+## CreateConstraintInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import CreateConstraintInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import CreateConstraintInputRequestTypeDef
 ```
 
 Required fields:
@@ -467,10 +467,10 @@ Optional fields:
 - `AcceptLanguage`: `str`
 - `Description`: `str`
 
-## CreateConstraintOutputResponseTypeDef
+## CreateConstraintOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import CreateConstraintOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import CreateConstraintOutputTypeDef
 ```
 
 Required fields:
@@ -482,10 +482,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePortfolioInputTypeDef
+## CreatePortfolioInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import CreatePortfolioInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import CreatePortfolioInputRequestTypeDef
 ```
 
 Required fields:
@@ -500,10 +500,10 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreatePortfolioOutputResponseTypeDef
+## CreatePortfolioOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import CreatePortfolioOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import CreatePortfolioOutputTypeDef
 ```
 
 Required fields:
@@ -514,10 +514,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePortfolioShareInputTypeDef
+## CreatePortfolioShareInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import CreatePortfolioShareInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import CreatePortfolioShareInputRequestTypeDef
 ```
 
 Required fields:
@@ -532,10 +532,10 @@ Optional fields:
   [OrganizationNodeTypeDef](./type_defs.md#organizationnodetypedef)
 - `ShareTagOptions`: `bool`
 
-## CreatePortfolioShareOutputResponseTypeDef
+## CreatePortfolioShareOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import CreatePortfolioShareOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import CreatePortfolioShareOutputTypeDef
 ```
 
 Required fields:
@@ -544,10 +544,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateProductInputTypeDef
+## CreateProductInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import CreateProductInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import CreateProductInputRequestTypeDef
 ```
 
 Required fields:
@@ -569,10 +569,10 @@ Optional fields:
 - `SupportUrl`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateProductOutputResponseTypeDef
+## CreateProductOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import CreateProductOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import CreateProductOutputTypeDef
 ```
 
 Required fields:
@@ -585,10 +585,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateProvisionedProductPlanInputTypeDef
+## CreateProvisionedProductPlanInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import CreateProvisionedProductPlanInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import CreateProvisionedProductPlanInputRequestTypeDef
 ```
 
 Required fields:
@@ -610,10 +610,10 @@ Optional fields:
   `List`\[[UpdateProvisioningParameterTypeDef](./type_defs.md#updateprovisioningparametertypedef)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateProvisionedProductPlanOutputResponseTypeDef
+## CreateProvisionedProductPlanOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import CreateProvisionedProductPlanOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import CreateProvisionedProductPlanOutputTypeDef
 ```
 
 Required fields:
@@ -626,10 +626,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateProvisioningArtifactInputTypeDef
+## CreateProvisioningArtifactInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import CreateProvisioningArtifactInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import CreateProvisioningArtifactInputRequestTypeDef
 ```
 
 Required fields:
@@ -643,10 +643,10 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 
-## CreateProvisioningArtifactOutputResponseTypeDef
+## CreateProvisioningArtifactOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import CreateProvisioningArtifactOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import CreateProvisioningArtifactOutputTypeDef
 ```
 
 Required fields:
@@ -658,10 +658,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateServiceActionInputTypeDef
+## CreateServiceActionInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import CreateServiceActionInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import CreateServiceActionInputRequestTypeDef
 ```
 
 Required fields:
@@ -679,10 +679,10 @@ Optional fields:
 - `Description`: `str`
 - `AcceptLanguage`: `str`
 
-## CreateServiceActionOutputResponseTypeDef
+## CreateServiceActionOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import CreateServiceActionOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import CreateServiceActionOutputTypeDef
 ```
 
 Required fields:
@@ -692,10 +692,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTagOptionInputTypeDef
+## CreateTagOptionInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import CreateTagOptionInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import CreateTagOptionInputRequestTypeDef
 ```
 
 Required fields:
@@ -703,10 +703,10 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## CreateTagOptionOutputResponseTypeDef
+## CreateTagOptionOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import CreateTagOptionOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import CreateTagOptionOutputTypeDef
 ```
 
 Required fields:
@@ -716,10 +716,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteConstraintInputTypeDef
+## DeleteConstraintInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DeleteConstraintInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DeleteConstraintInputRequestTypeDef
 ```
 
 Required fields:
@@ -730,10 +730,10 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 
-## DeletePortfolioInputTypeDef
+## DeletePortfolioInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DeletePortfolioInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DeletePortfolioInputRequestTypeDef
 ```
 
 Required fields:
@@ -744,10 +744,10 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 
-## DeletePortfolioShareInputTypeDef
+## DeletePortfolioShareInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DeletePortfolioShareInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DeletePortfolioShareInputRequestTypeDef
 ```
 
 Required fields:
@@ -761,10 +761,10 @@ Optional fields:
 - `OrganizationNode`:
   [OrganizationNodeTypeDef](./type_defs.md#organizationnodetypedef)
 
-## DeletePortfolioShareOutputResponseTypeDef
+## DeletePortfolioShareOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DeletePortfolioShareOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import DeletePortfolioShareOutputTypeDef
 ```
 
 Required fields:
@@ -773,10 +773,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteProductInputTypeDef
+## DeleteProductInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DeleteProductInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DeleteProductInputRequestTypeDef
 ```
 
 Required fields:
@@ -787,10 +787,10 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 
-## DeleteProvisionedProductPlanInputTypeDef
+## DeleteProvisionedProductPlanInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DeleteProvisionedProductPlanInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DeleteProvisionedProductPlanInputRequestTypeDef
 ```
 
 Required fields:
@@ -802,10 +802,10 @@ Optional fields:
 - `AcceptLanguage`: `str`
 - `IgnoreErrors`: `bool`
 
-## DeleteProvisioningArtifactInputTypeDef
+## DeleteProvisioningArtifactInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DeleteProvisioningArtifactInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DeleteProvisioningArtifactInputRequestTypeDef
 ```
 
 Required fields:
@@ -817,10 +817,10 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 
-## DeleteServiceActionInputTypeDef
+## DeleteServiceActionInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DeleteServiceActionInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DeleteServiceActionInputRequestTypeDef
 ```
 
 Required fields:
@@ -831,20 +831,20 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 
-## DeleteTagOptionInputTypeDef
+## DeleteTagOptionInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DeleteTagOptionInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DeleteTagOptionInputRequestTypeDef
 ```
 
 Required fields:
 
 - `Id`: `str`
 
-## DescribeConstraintInputTypeDef
+## DescribeConstraintInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeConstraintInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeConstraintInputRequestTypeDef
 ```
 
 Required fields:
@@ -855,10 +855,10 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 
-## DescribeConstraintOutputResponseTypeDef
+## DescribeConstraintOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeConstraintOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeConstraintOutputTypeDef
 ```
 
 Required fields:
@@ -870,10 +870,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCopyProductStatusInputTypeDef
+## DescribeCopyProductStatusInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeCopyProductStatusInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeCopyProductStatusInputRequestTypeDef
 ```
 
 Required fields:
@@ -884,10 +884,10 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 
-## DescribeCopyProductStatusOutputResponseTypeDef
+## DescribeCopyProductStatusOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeCopyProductStatusOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeCopyProductStatusOutputTypeDef
 ```
 
 Required fields:
@@ -899,10 +899,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePortfolioInputTypeDef
+## DescribePortfolioInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribePortfolioInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribePortfolioInputRequestTypeDef
 ```
 
 Required fields:
@@ -913,10 +913,10 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 
-## DescribePortfolioOutputResponseTypeDef
+## DescribePortfolioOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribePortfolioOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribePortfolioOutputTypeDef
 ```
 
 Required fields:
@@ -931,20 +931,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePortfolioShareStatusInputTypeDef
+## DescribePortfolioShareStatusInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribePortfolioShareStatusInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribePortfolioShareStatusInputRequestTypeDef
 ```
 
 Required fields:
 
 - `PortfolioShareToken`: `str`
 
-## DescribePortfolioShareStatusOutputResponseTypeDef
+## DescribePortfolioShareStatusOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribePortfolioShareStatusOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribePortfolioShareStatusOutputTypeDef
 ```
 
 Required fields:
@@ -957,10 +957,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePortfolioSharesInputTypeDef
+## DescribePortfolioSharesInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribePortfolioSharesInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribePortfolioSharesInputRequestTypeDef
 ```
 
 Required fields:
@@ -974,10 +974,10 @@ Optional fields:
 - `PageToken`: `str`
 - `PageSize`: `int`
 
-## DescribePortfolioSharesOutputResponseTypeDef
+## DescribePortfolioSharesOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribePortfolioSharesOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribePortfolioSharesOutputTypeDef
 ```
 
 Required fields:
@@ -988,10 +988,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeProductAsAdminInputTypeDef
+## DescribeProductAsAdminInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeProductAsAdminInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeProductAsAdminInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1001,10 +1001,10 @@ Optional fields:
 - `Name`: `str`
 - `SourcePortfolioId`: `str`
 
-## DescribeProductAsAdminOutputResponseTypeDef
+## DescribeProductAsAdminOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeProductAsAdminOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeProductAsAdminOutputTypeDef
 ```
 
 Required fields:
@@ -1021,10 +1021,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeProductInputTypeDef
+## DescribeProductInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeProductInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeProductInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1033,10 +1033,10 @@ Optional fields:
 - `Id`: `str`
 - `Name`: `str`
 
-## DescribeProductOutputResponseTypeDef
+## DescribeProductOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeProductOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeProductOutputTypeDef
 ```
 
 Required fields:
@@ -1052,10 +1052,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeProductViewInputTypeDef
+## DescribeProductViewInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeProductViewInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeProductViewInputRequestTypeDef
 ```
 
 Required fields:
@@ -1066,10 +1066,10 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 
-## DescribeProductViewOutputResponseTypeDef
+## DescribeProductViewOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeProductViewOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeProductViewOutputTypeDef
 ```
 
 Required fields:
@@ -1081,10 +1081,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeProvisionedProductInputTypeDef
+## DescribeProvisionedProductInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeProvisionedProductInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeProvisionedProductInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1093,10 +1093,10 @@ Optional fields:
 - `Id`: `str`
 - `Name`: `str`
 
-## DescribeProvisionedProductOutputResponseTypeDef
+## DescribeProvisionedProductOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeProvisionedProductOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeProvisionedProductOutputTypeDef
 ```
 
 Required fields:
@@ -1108,10 +1108,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeProvisionedProductPlanInputTypeDef
+## DescribeProvisionedProductPlanInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeProvisionedProductPlanInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeProvisionedProductPlanInputRequestTypeDef
 ```
 
 Required fields:
@@ -1124,10 +1124,10 @@ Optional fields:
 - `PageSize`: `int`
 - `PageToken`: `str`
 
-## DescribeProvisionedProductPlanOutputResponseTypeDef
+## DescribeProvisionedProductPlanOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeProvisionedProductPlanOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeProvisionedProductPlanOutputTypeDef
 ```
 
 Required fields:
@@ -1140,10 +1140,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeProvisioningArtifactInputTypeDef
+## DescribeProvisioningArtifactInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeProvisioningArtifactInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeProvisioningArtifactInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1155,10 +1155,10 @@ Optional fields:
 - `ProductName`: `str`
 - `Verbose`: `bool`
 
-## DescribeProvisioningArtifactOutputResponseTypeDef
+## DescribeProvisioningArtifactOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeProvisioningArtifactOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeProvisioningArtifactOutputTypeDef
 ```
 
 Required fields:
@@ -1170,10 +1170,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeProvisioningParametersInputTypeDef
+## DescribeProvisioningParametersInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeProvisioningParametersInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeProvisioningParametersInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1186,10 +1186,10 @@ Optional fields:
 - `PathId`: `str`
 - `PathName`: `str`
 
-## DescribeProvisioningParametersOutputResponseTypeDef
+## DescribeProvisioningParametersOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeProvisioningParametersOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeProvisioningParametersOutputTypeDef
 ```
 
 Required fields:
@@ -1209,10 +1209,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRecordInputTypeDef
+## DescribeRecordInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeRecordInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeRecordInputRequestTypeDef
 ```
 
 Required fields:
@@ -1225,10 +1225,10 @@ Optional fields:
 - `PageToken`: `str`
 - `PageSize`: `int`
 
-## DescribeRecordOutputResponseTypeDef
+## DescribeRecordOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeRecordOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeRecordOutputTypeDef
 ```
 
 Required fields:
@@ -1240,10 +1240,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeServiceActionExecutionParametersInputTypeDef
+## DescribeServiceActionExecutionParametersInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeServiceActionExecutionParametersInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeServiceActionExecutionParametersInputRequestTypeDef
 ```
 
 Required fields:
@@ -1255,10 +1255,10 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 
-## DescribeServiceActionExecutionParametersOutputResponseTypeDef
+## DescribeServiceActionExecutionParametersOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeServiceActionExecutionParametersOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeServiceActionExecutionParametersOutputTypeDef
 ```
 
 Required fields:
@@ -1268,10 +1268,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeServiceActionInputTypeDef
+## DescribeServiceActionInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeServiceActionInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeServiceActionInputRequestTypeDef
 ```
 
 Required fields:
@@ -1282,10 +1282,10 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 
-## DescribeServiceActionOutputResponseTypeDef
+## DescribeServiceActionOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeServiceActionOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeServiceActionOutputTypeDef
 ```
 
 Required fields:
@@ -1295,20 +1295,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTagOptionInputTypeDef
+## DescribeTagOptionInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeTagOptionInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeTagOptionInputRequestTypeDef
 ```
 
 Required fields:
 
 - `Id`: `str`
 
-## DescribeTagOptionOutputResponseTypeDef
+## DescribeTagOptionOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DescribeTagOptionOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import DescribeTagOptionOutputTypeDef
 ```
 
 Required fields:
@@ -1318,10 +1318,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateBudgetFromResourceInputTypeDef
+## DisassociateBudgetFromResourceInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DisassociateBudgetFromResourceInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DisassociateBudgetFromResourceInputRequestTypeDef
 ```
 
 Required fields:
@@ -1329,10 +1329,10 @@ Required fields:
 - `BudgetName`: `str`
 - `ResourceId`: `str`
 
-## DisassociatePrincipalFromPortfolioInputTypeDef
+## DisassociatePrincipalFromPortfolioInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DisassociatePrincipalFromPortfolioInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DisassociatePrincipalFromPortfolioInputRequestTypeDef
 ```
 
 Required fields:
@@ -1344,10 +1344,10 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 
-## DisassociateProductFromPortfolioInputTypeDef
+## DisassociateProductFromPortfolioInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DisassociateProductFromPortfolioInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DisassociateProductFromPortfolioInputRequestTypeDef
 ```
 
 Required fields:
@@ -1359,10 +1359,10 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 
-## DisassociateServiceActionFromProvisioningArtifactInputTypeDef
+## DisassociateServiceActionFromProvisioningArtifactInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DisassociateServiceActionFromProvisioningArtifactInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DisassociateServiceActionFromProvisioningArtifactInputRequestTypeDef
 ```
 
 Required fields:
@@ -1375,10 +1375,10 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 
-## DisassociateTagOptionFromResourceInputTypeDef
+## DisassociateTagOptionFromResourceInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import DisassociateTagOptionFromResourceInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import DisassociateTagOptionFromResourceInputRequestTypeDef
 ```
 
 Required fields:
@@ -1386,10 +1386,10 @@ Required fields:
 - `ResourceId`: `str`
 - `TagOptionId`: `str`
 
-## ExecuteProvisionedProductPlanInputTypeDef
+## ExecuteProvisionedProductPlanInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ExecuteProvisionedProductPlanInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ExecuteProvisionedProductPlanInputRequestTypeDef
 ```
 
 Required fields:
@@ -1401,10 +1401,10 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 
-## ExecuteProvisionedProductPlanOutputResponseTypeDef
+## ExecuteProvisionedProductPlanOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ExecuteProvisionedProductPlanOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import ExecuteProvisionedProductPlanOutputTypeDef
 ```
 
 Required fields:
@@ -1413,10 +1413,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ExecuteProvisionedProductServiceActionInputTypeDef
+## ExecuteProvisionedProductServiceActionInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ExecuteProvisionedProductServiceActionInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ExecuteProvisionedProductServiceActionInputRequestTypeDef
 ```
 
 Required fields:
@@ -1430,10 +1430,10 @@ Optional fields:
 - `AcceptLanguage`: `str`
 - `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
 
-## ExecuteProvisionedProductServiceActionOutputResponseTypeDef
+## ExecuteProvisionedProductServiceActionOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ExecuteProvisionedProductServiceActionOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import ExecuteProvisionedProductServiceActionOutputTypeDef
 ```
 
 Required fields:
@@ -1469,10 +1469,10 @@ Optional fields:
   [ServiceActionAssociationErrorCodeType](./literals.md#serviceactionassociationerrorcodetype)
 - `ErrorMessage`: `str`
 
-## GetAWSOrganizationsAccessStatusOutputResponseTypeDef
+## GetAWSOrganizationsAccessStatusOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import GetAWSOrganizationsAccessStatusOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import GetAWSOrganizationsAccessStatusOutputTypeDef
 ```
 
 Required fields:
@@ -1481,10 +1481,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetProvisionedProductOutputsInputTypeDef
+## GetProvisionedProductOutputsInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import GetProvisionedProductOutputsInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import GetProvisionedProductOutputsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1496,10 +1496,10 @@ Optional fields:
 - `PageSize`: `int`
 - `PageToken`: `str`
 
-## GetProvisionedProductOutputsOutputResponseTypeDef
+## GetProvisionedProductOutputsOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import GetProvisionedProductOutputsOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import GetProvisionedProductOutputsOutputTypeDef
 ```
 
 Required fields:
@@ -1510,10 +1510,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ImportAsProvisionedProductInputTypeDef
+## ImportAsProvisionedProductInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ImportAsProvisionedProductInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ImportAsProvisionedProductInputRequestTypeDef
 ```
 
 Required fields:
@@ -1528,10 +1528,10 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 
-## ImportAsProvisionedProductOutputResponseTypeDef
+## ImportAsProvisionedProductOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ImportAsProvisionedProductOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import ImportAsProvisionedProductOutputTypeDef
 ```
 
 Required fields:
@@ -1565,10 +1565,10 @@ Optional fields:
 - `Id`: `str`
 - `Name`: `str`
 
-## ListAcceptedPortfolioSharesInputTypeDef
+## ListAcceptedPortfolioSharesInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListAcceptedPortfolioSharesInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListAcceptedPortfolioSharesInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1579,10 +1579,10 @@ Optional fields:
 - `PortfolioShareType`:
   [PortfolioShareTypeType](./literals.md#portfoliosharetypetype)
 
-## ListAcceptedPortfolioSharesOutputResponseTypeDef
+## ListAcceptedPortfolioSharesOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListAcceptedPortfolioSharesOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListAcceptedPortfolioSharesOutputTypeDef
 ```
 
 Required fields:
@@ -1593,10 +1593,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBudgetsForResourceInputTypeDef
+## ListBudgetsForResourceInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListBudgetsForResourceInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListBudgetsForResourceInputRequestTypeDef
 ```
 
 Required fields:
@@ -1609,10 +1609,10 @@ Optional fields:
 - `PageSize`: `int`
 - `PageToken`: `str`
 
-## ListBudgetsForResourceOutputResponseTypeDef
+## ListBudgetsForResourceOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListBudgetsForResourceOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListBudgetsForResourceOutputTypeDef
 ```
 
 Required fields:
@@ -1623,10 +1623,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListConstraintsForPortfolioInputTypeDef
+## ListConstraintsForPortfolioInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListConstraintsForPortfolioInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListConstraintsForPortfolioInputRequestTypeDef
 ```
 
 Required fields:
@@ -1640,10 +1640,10 @@ Optional fields:
 - `PageSize`: `int`
 - `PageToken`: `str`
 
-## ListConstraintsForPortfolioOutputResponseTypeDef
+## ListConstraintsForPortfolioOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListConstraintsForPortfolioOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListConstraintsForPortfolioOutputTypeDef
 ```
 
 Required fields:
@@ -1654,10 +1654,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListLaunchPathsInputTypeDef
+## ListLaunchPathsInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListLaunchPathsInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListLaunchPathsInputRequestTypeDef
 ```
 
 Required fields:
@@ -1670,10 +1670,10 @@ Optional fields:
 - `PageSize`: `int`
 - `PageToken`: `str`
 
-## ListLaunchPathsOutputResponseTypeDef
+## ListLaunchPathsOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListLaunchPathsOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListLaunchPathsOutputTypeDef
 ```
 
 Required fields:
@@ -1684,10 +1684,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListOrganizationPortfolioAccessInputTypeDef
+## ListOrganizationPortfolioAccessInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListOrganizationPortfolioAccessInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListOrganizationPortfolioAccessInputRequestTypeDef
 ```
 
 Required fields:
@@ -1702,10 +1702,10 @@ Optional fields:
 - `PageToken`: `str`
 - `PageSize`: `int`
 
-## ListOrganizationPortfolioAccessOutputResponseTypeDef
+## ListOrganizationPortfolioAccessOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListOrganizationPortfolioAccessOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListOrganizationPortfolioAccessOutputTypeDef
 ```
 
 Required fields:
@@ -1716,10 +1716,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPortfolioAccessInputTypeDef
+## ListPortfolioAccessInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListPortfolioAccessInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListPortfolioAccessInputRequestTypeDef
 ```
 
 Required fields:
@@ -1733,10 +1733,10 @@ Optional fields:
 - `PageToken`: `str`
 - `PageSize`: `int`
 
-## ListPortfolioAccessOutputResponseTypeDef
+## ListPortfolioAccessOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListPortfolioAccessOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListPortfolioAccessOutputTypeDef
 ```
 
 Required fields:
@@ -1746,10 +1746,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPortfoliosForProductInputTypeDef
+## ListPortfoliosForProductInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListPortfoliosForProductInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListPortfoliosForProductInputRequestTypeDef
 ```
 
 Required fields:
@@ -1762,10 +1762,10 @@ Optional fields:
 - `PageToken`: `str`
 - `PageSize`: `int`
 
-## ListPortfoliosForProductOutputResponseTypeDef
+## ListPortfoliosForProductOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListPortfoliosForProductOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListPortfoliosForProductOutputTypeDef
 ```
 
 Required fields:
@@ -1776,10 +1776,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPortfoliosInputTypeDef
+## ListPortfoliosInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListPortfoliosInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListPortfoliosInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1788,10 +1788,10 @@ Optional fields:
 - `PageToken`: `str`
 - `PageSize`: `int`
 
-## ListPortfoliosOutputResponseTypeDef
+## ListPortfoliosOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListPortfoliosOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListPortfoliosOutputTypeDef
 ```
 
 Required fields:
@@ -1802,10 +1802,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPrincipalsForPortfolioInputTypeDef
+## ListPrincipalsForPortfolioInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListPrincipalsForPortfolioInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListPrincipalsForPortfolioInputRequestTypeDef
 ```
 
 Required fields:
@@ -1818,10 +1818,10 @@ Optional fields:
 - `PageSize`: `int`
 - `PageToken`: `str`
 
-## ListPrincipalsForPortfolioOutputResponseTypeDef
+## ListPrincipalsForPortfolioOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListPrincipalsForPortfolioOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListPrincipalsForPortfolioOutputTypeDef
 ```
 
 Required fields:
@@ -1831,10 +1831,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProvisionedProductPlansInputTypeDef
+## ListProvisionedProductPlansInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListProvisionedProductPlansInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListProvisionedProductPlansInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1846,10 +1846,10 @@ Optional fields:
 - `AccessLevelFilter`:
   [AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef)
 
-## ListProvisionedProductPlansOutputResponseTypeDef
+## ListProvisionedProductPlansOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListProvisionedProductPlansOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListProvisionedProductPlansOutputTypeDef
 ```
 
 Required fields:
@@ -1860,10 +1860,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProvisioningArtifactsForServiceActionInputTypeDef
+## ListProvisioningArtifactsForServiceActionInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListProvisioningArtifactsForServiceActionInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListProvisioningArtifactsForServiceActionInputRequestTypeDef
 ```
 
 Required fields:
@@ -1876,10 +1876,10 @@ Optional fields:
 - `PageToken`: `str`
 - `AcceptLanguage`: `str`
 
-## ListProvisioningArtifactsForServiceActionOutputResponseTypeDef
+## ListProvisioningArtifactsForServiceActionOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListProvisioningArtifactsForServiceActionOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListProvisioningArtifactsForServiceActionOutputTypeDef
 ```
 
 Required fields:
@@ -1890,10 +1890,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProvisioningArtifactsInputTypeDef
+## ListProvisioningArtifactsInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListProvisioningArtifactsInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListProvisioningArtifactsInputRequestTypeDef
 ```
 
 Required fields:
@@ -1904,10 +1904,10 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 
-## ListProvisioningArtifactsOutputResponseTypeDef
+## ListProvisioningArtifactsOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListProvisioningArtifactsOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListProvisioningArtifactsOutputTypeDef
 ```
 
 Required fields:
@@ -1918,10 +1918,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRecordHistoryInputTypeDef
+## ListRecordHistoryInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListRecordHistoryInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListRecordHistoryInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1934,10 +1934,10 @@ Optional fields:
 - `PageSize`: `int`
 - `PageToken`: `str`
 
-## ListRecordHistoryOutputResponseTypeDef
+## ListRecordHistoryOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListRecordHistoryOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListRecordHistoryOutputTypeDef
 ```
 
 Required fields:
@@ -1959,10 +1959,10 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## ListResourcesForTagOptionInputTypeDef
+## ListResourcesForTagOptionInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListResourcesForTagOptionInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListResourcesForTagOptionInputRequestTypeDef
 ```
 
 Required fields:
@@ -1975,10 +1975,10 @@ Optional fields:
 - `PageSize`: `int`
 - `PageToken`: `str`
 
-## ListResourcesForTagOptionOutputResponseTypeDef
+## ListResourcesForTagOptionOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListResourcesForTagOptionOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListResourcesForTagOptionOutputTypeDef
 ```
 
 Required fields:
@@ -1989,10 +1989,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListServiceActionsForProvisioningArtifactInputTypeDef
+## ListServiceActionsForProvisioningArtifactInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListServiceActionsForProvisioningArtifactInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListServiceActionsForProvisioningArtifactInputRequestTypeDef
 ```
 
 Required fields:
@@ -2006,10 +2006,10 @@ Optional fields:
 - `PageToken`: `str`
 - `AcceptLanguage`: `str`
 
-## ListServiceActionsForProvisioningArtifactOutputResponseTypeDef
+## ListServiceActionsForProvisioningArtifactOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListServiceActionsForProvisioningArtifactOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListServiceActionsForProvisioningArtifactOutputTypeDef
 ```
 
 Required fields:
@@ -2020,10 +2020,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListServiceActionsInputTypeDef
+## ListServiceActionsInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListServiceActionsInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListServiceActionsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -2032,10 +2032,10 @@ Optional fields:
 - `PageSize`: `int`
 - `PageToken`: `str`
 
-## ListServiceActionsOutputResponseTypeDef
+## ListServiceActionsOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListServiceActionsOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListServiceActionsOutputTypeDef
 ```
 
 Required fields:
@@ -2046,10 +2046,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStackInstancesForProvisionedProductInputTypeDef
+## ListStackInstancesForProvisionedProductInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListStackInstancesForProvisionedProductInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListStackInstancesForProvisionedProductInputRequestTypeDef
 ```
 
 Required fields:
@@ -2062,10 +2062,10 @@ Optional fields:
 - `PageToken`: `str`
 - `PageSize`: `int`
 
-## ListStackInstancesForProvisionedProductOutputResponseTypeDef
+## ListStackInstancesForProvisionedProductOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListStackInstancesForProvisionedProductOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListStackInstancesForProvisionedProductOutputTypeDef
 ```
 
 Required fields:
@@ -2088,10 +2088,10 @@ Optional fields:
 - `Value`: `str`
 - `Active`: `bool`
 
-## ListTagOptionsInputTypeDef
+## ListTagOptionsInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListTagOptionsInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListTagOptionsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -2101,10 +2101,10 @@ Optional fields:
 - `PageSize`: `int`
 - `PageToken`: `str`
 
-## ListTagOptionsOutputResponseTypeDef
+## ListTagOptionsOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ListTagOptionsOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import ListTagOptionsOutputTypeDef
 ```
 
 Required fields:
@@ -2240,10 +2240,10 @@ Optional fields:
 - `SupportDescription`: `str`
 - `SupportUrl`: `str`
 
-## ProvisionProductInputTypeDef
+## ProvisionProductInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ProvisionProductInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ProvisionProductInputRequestTypeDef
 ```
 
 Required fields:
@@ -2267,10 +2267,10 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NotificationArns`: `List`\[`str`\]
 
-## ProvisionProductOutputResponseTypeDef
+## ProvisionProductOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ProvisionProductOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import ProvisionProductOutputTypeDef
 ```
 
 Required fields:
@@ -2575,10 +2575,10 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## RejectPortfolioShareInputTypeDef
+## RejectPortfolioShareInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import RejectPortfolioShareInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import RejectPortfolioShareInputRequestTypeDef
 ```
 
 Required fields:
@@ -2663,10 +2663,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## ScanProvisionedProductsInputTypeDef
+## ScanProvisionedProductsInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ScanProvisionedProductsInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import ScanProvisionedProductsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -2677,10 +2677,10 @@ Optional fields:
 - `PageSize`: `int`
 - `PageToken`: `str`
 
-## ScanProvisionedProductsOutputResponseTypeDef
+## ScanProvisionedProductsOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import ScanProvisionedProductsOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import ScanProvisionedProductsOutputTypeDef
 ```
 
 Required fields:
@@ -2691,10 +2691,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SearchProductsAsAdminInputTypeDef
+## SearchProductsAsAdminInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import SearchProductsAsAdminInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import SearchProductsAsAdminInputRequestTypeDef
 ```
 
 Optional fields:
@@ -2711,10 +2711,10 @@ Optional fields:
 - `ProductSource`: `Literal['ACCOUNT']` (see
   [ProductSourceType](./literals.md#productsourcetype))
 
-## SearchProductsAsAdminOutputResponseTypeDef
+## SearchProductsAsAdminOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import SearchProductsAsAdminOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import SearchProductsAsAdminOutputTypeDef
 ```
 
 Required fields:
@@ -2725,10 +2725,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SearchProductsInputTypeDef
+## SearchProductsInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import SearchProductsInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import SearchProductsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -2742,10 +2742,10 @@ Optional fields:
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PageToken`: `str`
 
-## SearchProductsOutputResponseTypeDef
+## SearchProductsOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import SearchProductsOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import SearchProductsOutputTypeDef
 ```
 
 Required fields:
@@ -2758,10 +2758,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SearchProvisionedProductsInputTypeDef
+## SearchProvisionedProductsInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import SearchProvisionedProductsInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import SearchProvisionedProductsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -2777,10 +2777,10 @@ Optional fields:
 - `PageSize`: `int`
 - `PageToken`: `str`
 
-## SearchProvisionedProductsOutputResponseTypeDef
+## SearchProvisionedProductsOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import SearchProvisionedProductsOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import SearchProvisionedProductsOutputTypeDef
 ```
 
 Required fields:
@@ -2905,10 +2905,10 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## TerminateProvisionedProductInputTypeDef
+## TerminateProvisionedProductInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import TerminateProvisionedProductInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import TerminateProvisionedProductInputRequestTypeDef
 ```
 
 Required fields:
@@ -2923,10 +2923,10 @@ Optional fields:
 - `AcceptLanguage`: `str`
 - `RetainPhysicalResources`: `bool`
 
-## TerminateProvisionedProductOutputResponseTypeDef
+## TerminateProvisionedProductOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import TerminateProvisionedProductOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import TerminateProvisionedProductOutputTypeDef
 ```
 
 Required fields:
@@ -2935,10 +2935,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateConstraintInputTypeDef
+## UpdateConstraintInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import UpdateConstraintInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import UpdateConstraintInputRequestTypeDef
 ```
 
 Required fields:
@@ -2951,10 +2951,10 @@ Optional fields:
 - `Description`: `str`
 - `Parameters`: `str`
 
-## UpdateConstraintOutputResponseTypeDef
+## UpdateConstraintOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import UpdateConstraintOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import UpdateConstraintOutputTypeDef
 ```
 
 Required fields:
@@ -2966,10 +2966,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdatePortfolioInputTypeDef
+## UpdatePortfolioInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import UpdatePortfolioInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import UpdatePortfolioInputRequestTypeDef
 ```
 
 Required fields:
@@ -2985,10 +2985,10 @@ Optional fields:
 - `AddTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `RemoveTags`: `List`\[`str`\]
 
-## UpdatePortfolioOutputResponseTypeDef
+## UpdatePortfolioOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import UpdatePortfolioOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import UpdatePortfolioOutputTypeDef
 ```
 
 Required fields:
@@ -2999,10 +2999,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdatePortfolioShareInputTypeDef
+## UpdatePortfolioShareInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import UpdatePortfolioShareInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import UpdatePortfolioShareInputRequestTypeDef
 ```
 
 Required fields:
@@ -3017,10 +3017,10 @@ Optional fields:
   [OrganizationNodeTypeDef](./type_defs.md#organizationnodetypedef)
 - `ShareTagOptions`: `bool`
 
-## UpdatePortfolioShareOutputResponseTypeDef
+## UpdatePortfolioShareOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import UpdatePortfolioShareOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import UpdatePortfolioShareOutputTypeDef
 ```
 
 Required fields:
@@ -3030,10 +3030,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateProductInputTypeDef
+## UpdateProductInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import UpdateProductInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import UpdateProductInputRequestTypeDef
 ```
 
 Required fields:
@@ -3053,10 +3053,10 @@ Optional fields:
 - `AddTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `RemoveTags`: `List`\[`str`\]
 
-## UpdateProductOutputResponseTypeDef
+## UpdateProductOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import UpdateProductOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import UpdateProductOutputTypeDef
 ```
 
 Required fields:
@@ -3067,10 +3067,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateProvisionedProductInputTypeDef
+## UpdateProvisionedProductInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import UpdateProvisionedProductInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import UpdateProvisionedProductInputRequestTypeDef
 ```
 
 Required fields:
@@ -3094,10 +3094,10 @@ Optional fields:
   [UpdateProvisioningPreferencesTypeDef](./type_defs.md#updateprovisioningpreferencestypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## UpdateProvisionedProductOutputResponseTypeDef
+## UpdateProvisionedProductOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import UpdateProvisionedProductOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import UpdateProvisionedProductOutputTypeDef
 ```
 
 Required fields:
@@ -3106,10 +3106,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateProvisionedProductPropertiesInputTypeDef
+## UpdateProvisionedProductPropertiesInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import UpdateProvisionedProductPropertiesInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import UpdateProvisionedProductPropertiesInputRequestTypeDef
 ```
 
 Required fields:
@@ -3123,10 +3123,10 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 
-## UpdateProvisionedProductPropertiesOutputResponseTypeDef
+## UpdateProvisionedProductPropertiesOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import UpdateProvisionedProductPropertiesOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import UpdateProvisionedProductPropertiesOutputTypeDef
 ```
 
 Required fields:
@@ -3139,10 +3139,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateProvisioningArtifactInputTypeDef
+## UpdateProvisioningArtifactInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import UpdateProvisioningArtifactInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import UpdateProvisioningArtifactInputRequestTypeDef
 ```
 
 Required fields:
@@ -3159,10 +3159,10 @@ Optional fields:
 - `Guidance`:
   [ProvisioningArtifactGuidanceType](./literals.md#provisioningartifactguidancetype)
 
-## UpdateProvisioningArtifactOutputResponseTypeDef
+## UpdateProvisioningArtifactOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import UpdateProvisioningArtifactOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import UpdateProvisioningArtifactOutputTypeDef
 ```
 
 Required fields:
@@ -3203,10 +3203,10 @@ Optional fields:
 - `StackSetOperationType`:
   [StackSetOperationTypeType](./literals.md#stacksetoperationtypetype)
 
-## UpdateServiceActionInputTypeDef
+## UpdateServiceActionInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import UpdateServiceActionInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import UpdateServiceActionInputRequestTypeDef
 ```
 
 Required fields:
@@ -3222,10 +3222,10 @@ Optional fields:
 - `Description`: `str`
 - `AcceptLanguage`: `str`
 
-## UpdateServiceActionOutputResponseTypeDef
+## UpdateServiceActionOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import UpdateServiceActionOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import UpdateServiceActionOutputTypeDef
 ```
 
 Required fields:
@@ -3235,10 +3235,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateTagOptionInputTypeDef
+## UpdateTagOptionInputRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import UpdateTagOptionInputTypeDef
+from mypy_boto3_servicecatalog.type_defs import UpdateTagOptionInputRequestTypeDef
 ```
 
 Required fields:
@@ -3250,10 +3250,10 @@ Optional fields:
 - `Value`: `str`
 - `Active`: `bool`
 
-## UpdateTagOptionOutputResponseTypeDef
+## UpdateTagOptionOutputTypeDef
 
 ```python
-from mypy_boto3_servicecatalog.type_defs import UpdateTagOptionOutputResponseTypeDef
+from mypy_boto3_servicecatalog.type_defs import UpdateTagOptionOutputTypeDef
 ```
 
 Required fields:

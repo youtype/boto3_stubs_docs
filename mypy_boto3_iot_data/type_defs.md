@@ -8,21 +8,21 @@ type annotations stubs module
 [mypy_boto3_iot_data](https://pypi.org/project/mypy-boto3-iot-data/).
 
 - [Typed dictionaries for boto3 IoTDataPlane module](#typed-dictionaries-for-boto3-iotdataplane-module)
-  - [DeleteThingShadowRequestTypeDef](#deletethingshadowrequesttypedef)
-  - [DeleteThingShadowResponseResponseTypeDef](#deletethingshadowresponseresponsetypedef)
-  - [GetThingShadowRequestTypeDef](#getthingshadowrequesttypedef)
-  - [GetThingShadowResponseResponseTypeDef](#getthingshadowresponseresponsetypedef)
-  - [ListNamedShadowsForThingRequestTypeDef](#listnamedshadowsforthingrequesttypedef)
-  - [ListNamedShadowsForThingResponseResponseTypeDef](#listnamedshadowsforthingresponseresponsetypedef)
-  - [PublishRequestTypeDef](#publishrequesttypedef)
+  - [DeleteThingShadowRequestRequestTypeDef](#deletethingshadowrequestrequesttypedef)
+  - [DeleteThingShadowResponseTypeDef](#deletethingshadowresponsetypedef)
+  - [GetThingShadowRequestRequestTypeDef](#getthingshadowrequestrequesttypedef)
+  - [GetThingShadowResponseTypeDef](#getthingshadowresponsetypedef)
+  - [ListNamedShadowsForThingRequestRequestTypeDef](#listnamedshadowsforthingrequestrequesttypedef)
+  - [ListNamedShadowsForThingResponseTypeDef](#listnamedshadowsforthingresponsetypedef)
+  - [PublishRequestRequestTypeDef](#publishrequestrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [UpdateThingShadowRequestTypeDef](#updatethingshadowrequesttypedef)
-  - [UpdateThingShadowResponseResponseTypeDef](#updatethingshadowresponseresponsetypedef)
+  - [UpdateThingShadowRequestRequestTypeDef](#updatethingshadowrequestrequesttypedef)
+  - [UpdateThingShadowResponseTypeDef](#updatethingshadowresponsetypedef)
 
-## DeleteThingShadowRequestTypeDef
+## DeleteThingShadowRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot_data.type_defs import DeleteThingShadowRequestTypeDef
+from mypy_boto3_iot_data.type_defs import DeleteThingShadowRequestRequestTypeDef
 ```
 
 Required fields:
@@ -33,10 +33,10 @@ Optional fields:
 
 - `shadowName`: `str`
 
-## DeleteThingShadowResponseResponseTypeDef
+## DeleteThingShadowResponseTypeDef
 
 ```python
-from mypy_boto3_iot_data.type_defs import DeleteThingShadowResponseResponseTypeDef
+from mypy_boto3_iot_data.type_defs import DeleteThingShadowResponseTypeDef
 ```
 
 Required fields:
@@ -45,10 +45,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetThingShadowRequestTypeDef
+## GetThingShadowRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot_data.type_defs import GetThingShadowRequestTypeDef
+from mypy_boto3_iot_data.type_defs import GetThingShadowRequestRequestTypeDef
 ```
 
 Required fields:
@@ -59,10 +59,10 @@ Optional fields:
 
 - `shadowName`: `str`
 
-## GetThingShadowResponseResponseTypeDef
+## GetThingShadowResponseTypeDef
 
 ```python
-from mypy_boto3_iot_data.type_defs import GetThingShadowResponseResponseTypeDef
+from mypy_boto3_iot_data.type_defs import GetThingShadowResponseTypeDef
 ```
 
 Required fields:
@@ -71,10 +71,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListNamedShadowsForThingRequestTypeDef
+## ListNamedShadowsForThingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot_data.type_defs import ListNamedShadowsForThingRequestTypeDef
+from mypy_boto3_iot_data.type_defs import ListNamedShadowsForThingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -86,10 +86,10 @@ Optional fields:
 - `nextToken`: `str`
 - `pageSize`: `int`
 
-## ListNamedShadowsForThingResponseResponseTypeDef
+## ListNamedShadowsForThingResponseTypeDef
 
 ```python
-from mypy_boto3_iot_data.type_defs import ListNamedShadowsForThingResponseResponseTypeDef
+from mypy_boto3_iot_data.type_defs import ListNamedShadowsForThingResponseTypeDef
 ```
 
 Required fields:
@@ -100,10 +100,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PublishRequestTypeDef
+## PublishRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot_data.type_defs import PublishRequestTypeDef
+from mypy_boto3_iot_data.type_defs import PublishRequestRequestTypeDef
 ```
 
 Required fields:
@@ -129,10 +129,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## UpdateThingShadowRequestTypeDef
+## UpdateThingShadowRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot_data.type_defs import UpdateThingShadowRequestTypeDef
+from mypy_boto3_iot_data.type_defs import UpdateThingShadowRequestRequestTypeDef
 ```
 
 Required fields:
@@ -144,10 +144,10 @@ Optional fields:
 
 - `shadowName`: `str`
 
-## UpdateThingShadowResponseResponseTypeDef
+## UpdateThingShadowResponseTypeDef
 
 ```python
-from mypy_boto3_iot_data.type_defs import UpdateThingShadowResponseResponseTypeDef
+from mypy_boto3_iot_data.type_defs import UpdateThingShadowResponseTypeDef
 ```
 
 Required fields:

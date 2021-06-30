@@ -32,6 +32,7 @@ from mypy_boto3_iot_data.client import IoTDataPlaneClient
 
 - [can_paginate](./client.md#can_paginate)
 - [delete_thing_shadow](./client.md#delete_thing_shadow)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_thing_shadow](./client.md#get_thing_shadow)
 - [list_named_shadows_for_thing](./client.md#list_named_shadows_for_thing)
@@ -62,16 +63,16 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_iot_data.type_defs import DeleteThingShadowRequestTypeDef, ...
+from mypy_boto3_iot_data.type_defs import DeleteThingShadowRequestRequestTypeDef, ...
 ```
 
-- [DeleteThingShadowRequestTypeDef](./type_defs.md#deletethingshadowrequesttypedef)
-- [DeleteThingShadowResponseResponseTypeDef](./type_defs.md#deletethingshadowresponseresponsetypedef)
-- [GetThingShadowRequestTypeDef](./type_defs.md#getthingshadowrequesttypedef)
-- [GetThingShadowResponseResponseTypeDef](./type_defs.md#getthingshadowresponseresponsetypedef)
-- [ListNamedShadowsForThingRequestTypeDef](./type_defs.md#listnamedshadowsforthingrequesttypedef)
-- [ListNamedShadowsForThingResponseResponseTypeDef](./type_defs.md#listnamedshadowsforthingresponseresponsetypedef)
-- [PublishRequestTypeDef](./type_defs.md#publishrequesttypedef)
+- [DeleteThingShadowRequestRequestTypeDef](./type_defs.md#deletethingshadowrequestrequesttypedef)
+- [DeleteThingShadowResponseTypeDef](./type_defs.md#deletethingshadowresponsetypedef)
+- [GetThingShadowRequestRequestTypeDef](./type_defs.md#getthingshadowrequestrequesttypedef)
+- [GetThingShadowResponseTypeDef](./type_defs.md#getthingshadowresponsetypedef)
+- [ListNamedShadowsForThingRequestRequestTypeDef](./type_defs.md#listnamedshadowsforthingrequestrequesttypedef)
+- [ListNamedShadowsForThingResponseTypeDef](./type_defs.md#listnamedshadowsforthingresponsetypedef)
+- [PublishRequestRequestTypeDef](./type_defs.md#publishrequestrequesttypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [UpdateThingShadowRequestTypeDef](./type_defs.md#updatethingshadowrequesttypedef)
-- [UpdateThingShadowResponseResponseTypeDef](./type_defs.md#updatethingshadowresponseresponsetypedef)
+- [UpdateThingShadowRequestRequestTypeDef](./type_defs.md#updatethingshadowrequestrequesttypedef)
+- [UpdateThingShadowResponseTypeDef](./type_defs.md#updatethingshadowresponsetypedef)

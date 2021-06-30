@@ -11,6 +11,7 @@ type annotations stubs module
   - [TransferClient](#transferclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_access](#create_access)
     - [create_server](#create_server)
@@ -83,6 +84,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+TransferClient exceptions.
+
+Type annotations for `boto3.client("transfer").exceptions` method.
+
+Boto3 documentation:
+[Transfer.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -110,7 +122,7 @@ Boto3 documentation:
 [Transfer.Client.create_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_access)
 
 Arguments mapping described in
-[CreateAccessRequestTypeDef](./type_defs.md#createaccessrequesttypedef).
+[CreateAccessRequestRequestTypeDef](./type_defs.md#createaccessrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -126,7 +138,7 @@ Keyword-only arguments:
 - `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
 
 Returns
-[CreateAccessResponseResponseTypeDef](./type_defs.md#createaccessresponseresponsetypedef).
+[CreateAccessResponseTypeDef](./type_defs.md#createaccessresponsetypedef).
 
 ### create_server
 
@@ -139,7 +151,7 @@ Boto3 documentation:
 [Transfer.Client.create_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_server)
 
 Arguments mapping described in
-[CreateServerRequestTypeDef](./type_defs.md#createserverrequesttypedef).
+[CreateServerRequestRequestTypeDef](./type_defs.md#createserverrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -159,7 +171,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateServerResponseResponseTypeDef](./type_defs.md#createserverresponseresponsetypedef).
+[CreateServerResponseTypeDef](./type_defs.md#createserverresponsetypedef).
 
 ### create_user
 
@@ -172,7 +184,7 @@ Boto3 documentation:
 [Transfer.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_user)
 
 Arguments mapping described in
-[CreateUserRequestTypeDef](./type_defs.md#createuserrequesttypedef).
+[CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -189,8 +201,7 @@ Keyword-only arguments:
 - `SshPublicKeyBody`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateUserResponseResponseTypeDef](./type_defs.md#createuserresponseresponsetypedef).
+Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
 ### delete_access
 
@@ -203,7 +214,7 @@ Boto3 documentation:
 [Transfer.Client.delete_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_access)
 
 Arguments mapping described in
-[DeleteAccessRequestTypeDef](./type_defs.md#deleteaccessrequesttypedef).
+[DeleteAccessRequestRequestTypeDef](./type_defs.md#deleteaccessrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -220,7 +231,7 @@ Boto3 documentation:
 [Transfer.Client.delete_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_server)
 
 Arguments mapping described in
-[DeleteServerRequestTypeDef](./type_defs.md#deleteserverrequesttypedef).
+[DeleteServerRequestRequestTypeDef](./type_defs.md#deleteserverrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -236,7 +247,7 @@ Boto3 documentation:
 [Transfer.Client.delete_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_ssh_public_key)
 
 Arguments mapping described in
-[DeleteSshPublicKeyRequestTypeDef](./type_defs.md#deletesshpublickeyrequesttypedef).
+[DeleteSshPublicKeyRequestRequestTypeDef](./type_defs.md#deletesshpublickeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -255,7 +266,7 @@ Boto3 documentation:
 [Transfer.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_user)
 
 Arguments mapping described in
-[DeleteUserRequestTypeDef](./type_defs.md#deleteuserrequesttypedef).
+[DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -273,7 +284,7 @@ Boto3 documentation:
 [Transfer.Client.describe_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_access)
 
 Arguments mapping described in
-[DescribeAccessRequestTypeDef](./type_defs.md#describeaccessrequesttypedef).
+[DescribeAccessRequestRequestTypeDef](./type_defs.md#describeaccessrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -281,7 +292,7 @@ Keyword-only arguments:
 - `ExternalId`: `str` *(required)*
 
 Returns
-[DescribeAccessResponseResponseTypeDef](./type_defs.md#describeaccessresponseresponsetypedef).
+[DescribeAccessResponseTypeDef](./type_defs.md#describeaccessresponsetypedef).
 
 ### describe_security_policy
 
@@ -295,14 +306,14 @@ Boto3 documentation:
 [Transfer.Client.describe_security_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_security_policy)
 
 Arguments mapping described in
-[DescribeSecurityPolicyRequestTypeDef](./type_defs.md#describesecuritypolicyrequesttypedef).
+[DescribeSecurityPolicyRequestRequestTypeDef](./type_defs.md#describesecuritypolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SecurityPolicyName`: `str` *(required)*
 
 Returns
-[DescribeSecurityPolicyResponseResponseTypeDef](./type_defs.md#describesecuritypolicyresponseresponsetypedef).
+[DescribeSecurityPolicyResponseTypeDef](./type_defs.md#describesecuritypolicyresponsetypedef).
 
 ### describe_server
 
@@ -315,14 +326,14 @@ Boto3 documentation:
 [Transfer.Client.describe_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_server)
 
 Arguments mapping described in
-[DescribeServerRequestTypeDef](./type_defs.md#describeserverrequesttypedef).
+[DescribeServerRequestRequestTypeDef](./type_defs.md#describeserverrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ServerId`: `str` *(required)*
 
 Returns
-[DescribeServerResponseResponseTypeDef](./type_defs.md#describeserverresponseresponsetypedef).
+[DescribeServerResponseTypeDef](./type_defs.md#describeserverresponsetypedef).
 
 ### describe_user
 
@@ -335,7 +346,7 @@ Boto3 documentation:
 [Transfer.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_user)
 
 Arguments mapping described in
-[DescribeUserRequestTypeDef](./type_defs.md#describeuserrequesttypedef).
+[DescribeUserRequestRequestTypeDef](./type_defs.md#describeuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -343,7 +354,7 @@ Keyword-only arguments:
 - `UserName`: `str` *(required)*
 
 Returns
-[DescribeUserResponseResponseTypeDef](./type_defs.md#describeuserresponseresponsetypedef).
+[DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
 
 ### generate_presigned_url
 
@@ -375,7 +386,7 @@ Boto3 documentation:
 [Transfer.Client.import_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.import_ssh_public_key)
 
 Arguments mapping described in
-[ImportSshPublicKeyRequestTypeDef](./type_defs.md#importsshpublickeyrequesttypedef).
+[ImportSshPublicKeyRequestRequestTypeDef](./type_defs.md#importsshpublickeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -384,7 +395,7 @@ Keyword-only arguments:
 - `UserName`: `str` *(required)*
 
 Returns
-[ImportSshPublicKeyResponseResponseTypeDef](./type_defs.md#importsshpublickeyresponseresponsetypedef).
+[ImportSshPublicKeyResponseTypeDef](./type_defs.md#importsshpublickeyresponsetypedef).
 
 ### list_accesses
 
@@ -396,7 +407,7 @@ Boto3 documentation:
 [Transfer.Client.list_accesses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_accesses)
 
 Arguments mapping described in
-[ListAccessesRequestTypeDef](./type_defs.md#listaccessesrequesttypedef).
+[ListAccessesRequestRequestTypeDef](./type_defs.md#listaccessesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -405,7 +416,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAccessesResponseResponseTypeDef](./type_defs.md#listaccessesresponseresponsetypedef).
+[ListAccessesResponseTypeDef](./type_defs.md#listaccessesresponsetypedef).
 
 ### list_security_policies
 
@@ -418,7 +429,7 @@ Boto3 documentation:
 [Transfer.Client.list_security_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_security_policies)
 
 Arguments mapping described in
-[ListSecurityPoliciesRequestTypeDef](./type_defs.md#listsecuritypoliciesrequesttypedef).
+[ListSecurityPoliciesRequestRequestTypeDef](./type_defs.md#listsecuritypoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -426,7 +437,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSecurityPoliciesResponseResponseTypeDef](./type_defs.md#listsecuritypoliciesresponseresponsetypedef).
+[ListSecurityPoliciesResponseTypeDef](./type_defs.md#listsecuritypoliciesresponsetypedef).
 
 ### list_servers
 
@@ -439,7 +450,7 @@ Boto3 documentation:
 [Transfer.Client.list_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_servers)
 
 Arguments mapping described in
-[ListServersRequestTypeDef](./type_defs.md#listserversrequesttypedef).
+[ListServersRequestRequestTypeDef](./type_defs.md#listserversrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -447,7 +458,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListServersResponseResponseTypeDef](./type_defs.md#listserversresponseresponsetypedef).
+[ListServersResponseTypeDef](./type_defs.md#listserversresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -460,7 +471,7 @@ Boto3 documentation:
 [Transfer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -469,7 +480,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_users
 
@@ -482,7 +493,7 @@ Boto3 documentation:
 [Transfer.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_users)
 
 Arguments mapping described in
-[ListUsersRequestTypeDef](./type_defs.md#listusersrequesttypedef).
+[ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -490,8 +501,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListUsersResponseResponseTypeDef](./type_defs.md#listusersresponseresponsetypedef).
+Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 
 ### start_server
 
@@ -504,7 +514,7 @@ Boto3 documentation:
 [Transfer.Client.start_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.start_server)
 
 Arguments mapping described in
-[StartServerRequestTypeDef](./type_defs.md#startserverrequesttypedef).
+[StartServerRequestRequestTypeDef](./type_defs.md#startserverrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -521,7 +531,7 @@ Boto3 documentation:
 [Transfer.Client.stop_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.stop_server)
 
 Arguments mapping described in
-[StopServerRequestTypeDef](./type_defs.md#stopserverrequesttypedef).
+[StopServerRequestRequestTypeDef](./type_defs.md#stopserverrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -538,7 +548,7 @@ Boto3 documentation:
 [Transfer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -557,7 +567,7 @@ Boto3 documentation:
 [Transfer.Client.test_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.test_identity_provider)
 
 Arguments mapping described in
-[TestIdentityProviderRequestTypeDef](./type_defs.md#testidentityproviderrequesttypedef).
+[TestIdentityProviderRequestRequestTypeDef](./type_defs.md#testidentityproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -568,7 +578,7 @@ Keyword-only arguments:
 - `UserPassword`: `str`
 
 Returns
-[TestIdentityProviderResponseResponseTypeDef](./type_defs.md#testidentityproviderresponseresponsetypedef).
+[TestIdentityProviderResponseTypeDef](./type_defs.md#testidentityproviderresponsetypedef).
 
 ### untag_resource
 
@@ -581,7 +591,7 @@ Boto3 documentation:
 [Transfer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -599,7 +609,7 @@ Boto3 documentation:
 [Transfer.Client.update_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_access)
 
 Arguments mapping described in
-[UpdateAccessRequestTypeDef](./type_defs.md#updateaccessrequesttypedef).
+[UpdateAccessRequestRequestTypeDef](./type_defs.md#updateaccessrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -615,7 +625,7 @@ Keyword-only arguments:
 - `Role`: `str`
 
 Returns
-[UpdateAccessResponseResponseTypeDef](./type_defs.md#updateaccessresponseresponsetypedef).
+[UpdateAccessResponseTypeDef](./type_defs.md#updateaccessresponsetypedef).
 
 ### update_server
 
@@ -628,7 +638,7 @@ Boto3 documentation:
 [Transfer.Client.update_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_server)
 
 Arguments mapping described in
-[UpdateServerRequestTypeDef](./type_defs.md#updateserverrequesttypedef).
+[UpdateServerRequestRequestTypeDef](./type_defs.md#updateserverrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -647,7 +657,7 @@ Keyword-only arguments:
 - `SecurityPolicyName`: `str`
 
 Returns
-[UpdateServerResponseResponseTypeDef](./type_defs.md#updateserverresponseresponsetypedef).
+[UpdateServerResponseTypeDef](./type_defs.md#updateserverresponsetypedef).
 
 ### update_user
 
@@ -659,7 +669,7 @@ Boto3 documentation:
 [Transfer.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_user)
 
 Arguments mapping described in
-[UpdateUserRequestTypeDef](./type_defs.md#updateuserrequesttypedef).
+[UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -674,8 +684,7 @@ Keyword-only arguments:
 - `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
 - `Role`: `str`
 
-Returns
-[UpdateUserResponseResponseTypeDef](./type_defs.md#updateuserresponseresponsetypedef).
+Returns [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef).
 
 ### get_paginator
 

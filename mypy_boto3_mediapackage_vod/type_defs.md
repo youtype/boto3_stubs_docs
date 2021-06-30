@@ -12,39 +12,39 @@ type annotations stubs module
   - [AuthorizationTypeDef](#authorizationtypedef)
   - [CmafEncryptionTypeDef](#cmafencryptiontypedef)
   - [CmafPackageTypeDef](#cmafpackagetypedef)
-  - [ConfigureLogsRequestTypeDef](#configurelogsrequesttypedef)
-  - [ConfigureLogsResponseResponseTypeDef](#configurelogsresponseresponsetypedef)
-  - [CreateAssetRequestTypeDef](#createassetrequesttypedef)
-  - [CreateAssetResponseResponseTypeDef](#createassetresponseresponsetypedef)
-  - [CreatePackagingConfigurationRequestTypeDef](#createpackagingconfigurationrequesttypedef)
-  - [CreatePackagingConfigurationResponseResponseTypeDef](#createpackagingconfigurationresponseresponsetypedef)
-  - [CreatePackagingGroupRequestTypeDef](#createpackaginggrouprequesttypedef)
-  - [CreatePackagingGroupResponseResponseTypeDef](#createpackaginggroupresponseresponsetypedef)
+  - [ConfigureLogsRequestRequestTypeDef](#configurelogsrequestrequesttypedef)
+  - [ConfigureLogsResponseTypeDef](#configurelogsresponsetypedef)
+  - [CreateAssetRequestRequestTypeDef](#createassetrequestrequesttypedef)
+  - [CreateAssetResponseTypeDef](#createassetresponsetypedef)
+  - [CreatePackagingConfigurationRequestRequestTypeDef](#createpackagingconfigurationrequestrequesttypedef)
+  - [CreatePackagingConfigurationResponseTypeDef](#createpackagingconfigurationresponsetypedef)
+  - [CreatePackagingGroupRequestRequestTypeDef](#createpackaginggrouprequestrequesttypedef)
+  - [CreatePackagingGroupResponseTypeDef](#createpackaginggroupresponsetypedef)
   - [DashEncryptionTypeDef](#dashencryptiontypedef)
   - [DashManifestTypeDef](#dashmanifesttypedef)
   - [DashPackageTypeDef](#dashpackagetypedef)
-  - [DeleteAssetRequestTypeDef](#deleteassetrequesttypedef)
-  - [DeletePackagingConfigurationRequestTypeDef](#deletepackagingconfigurationrequesttypedef)
-  - [DeletePackagingGroupRequestTypeDef](#deletepackaginggrouprequesttypedef)
-  - [DescribeAssetRequestTypeDef](#describeassetrequesttypedef)
-  - [DescribeAssetResponseResponseTypeDef](#describeassetresponseresponsetypedef)
-  - [DescribePackagingConfigurationRequestTypeDef](#describepackagingconfigurationrequesttypedef)
-  - [DescribePackagingConfigurationResponseResponseTypeDef](#describepackagingconfigurationresponseresponsetypedef)
-  - [DescribePackagingGroupRequestTypeDef](#describepackaginggrouprequesttypedef)
-  - [DescribePackagingGroupResponseResponseTypeDef](#describepackaginggroupresponseresponsetypedef)
+  - [DeleteAssetRequestRequestTypeDef](#deleteassetrequestrequesttypedef)
+  - [DeletePackagingConfigurationRequestRequestTypeDef](#deletepackagingconfigurationrequestrequesttypedef)
+  - [DeletePackagingGroupRequestRequestTypeDef](#deletepackaginggrouprequestrequesttypedef)
+  - [DescribeAssetRequestRequestTypeDef](#describeassetrequestrequesttypedef)
+  - [DescribeAssetResponseTypeDef](#describeassetresponsetypedef)
+  - [DescribePackagingConfigurationRequestRequestTypeDef](#describepackagingconfigurationrequestrequesttypedef)
+  - [DescribePackagingConfigurationResponseTypeDef](#describepackagingconfigurationresponsetypedef)
+  - [DescribePackagingGroupRequestRequestTypeDef](#describepackaginggrouprequestrequesttypedef)
+  - [DescribePackagingGroupResponseTypeDef](#describepackaginggroupresponsetypedef)
   - [EgressAccessLogsTypeDef](#egressaccesslogstypedef)
   - [EgressEndpointTypeDef](#egressendpointtypedef)
   - [HlsEncryptionTypeDef](#hlsencryptiontypedef)
   - [HlsManifestTypeDef](#hlsmanifesttypedef)
   - [HlsPackageTypeDef](#hlspackagetypedef)
-  - [ListAssetsRequestTypeDef](#listassetsrequesttypedef)
-  - [ListAssetsResponseResponseTypeDef](#listassetsresponseresponsetypedef)
-  - [ListPackagingConfigurationsRequestTypeDef](#listpackagingconfigurationsrequesttypedef)
-  - [ListPackagingConfigurationsResponseResponseTypeDef](#listpackagingconfigurationsresponseresponsetypedef)
-  - [ListPackagingGroupsRequestTypeDef](#listpackaginggroupsrequesttypedef)
-  - [ListPackagingGroupsResponseResponseTypeDef](#listpackaginggroupsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListAssetsRequestRequestTypeDef](#listassetsrequestrequesttypedef)
+  - [ListAssetsResponseTypeDef](#listassetsresponsetypedef)
+  - [ListPackagingConfigurationsRequestRequestTypeDef](#listpackagingconfigurationsrequestrequesttypedef)
+  - [ListPackagingConfigurationsResponseTypeDef](#listpackagingconfigurationsresponsetypedef)
+  - [ListPackagingGroupsRequestRequestTypeDef](#listpackaginggroupsrequestrequesttypedef)
+  - [ListPackagingGroupsResponseTypeDef](#listpackaginggroupsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [MssEncryptionTypeDef](#mssencryptiontypedef)
   - [MssManifestTypeDef](#mssmanifesttypedef)
   - [MssPackageTypeDef](#msspackagetypedef)
@@ -54,10 +54,10 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SpekeKeyProviderTypeDef](#spekekeyprovidertypedef)
   - [StreamSelectionTypeDef](#streamselectiontypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdatePackagingGroupRequestTypeDef](#updatepackaginggrouprequesttypedef)
-  - [UpdatePackagingGroupResponseResponseTypeDef](#updatepackaginggroupresponseresponsetypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdatePackagingGroupRequestRequestTypeDef](#updatepackaginggrouprequestrequesttypedef)
+  - [UpdatePackagingGroupResponseTypeDef](#updatepackaginggroupresponsetypedef)
 
 ## AssetShallowTypeDef
 
@@ -98,6 +98,10 @@ Required fields:
 - `SpekeKeyProvider`:
   [SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef)
 
+Optional fields:
+
+- `ConstantInitializationVector`: `str`
+
 ## CmafPackageTypeDef
 
 ```python
@@ -115,10 +119,10 @@ Optional fields:
 - `IncludeEncoderConfigurationInSegments`: `bool`
 - `SegmentDurationSeconds`: `int`
 
-## ConfigureLogsRequestTypeDef
+## ConfigureLogsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import ConfigureLogsRequestTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import ConfigureLogsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -130,10 +134,10 @@ Optional fields:
 - `EgressAccessLogs`:
   [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
 
-## ConfigureLogsResponseResponseTypeDef
+## ConfigureLogsResponseTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import ConfigureLogsResponseResponseTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import ConfigureLogsResponseTypeDef
 ```
 
 Required fields:
@@ -148,10 +152,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateAssetRequestTypeDef
+## CreateAssetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import CreateAssetRequestTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import CreateAssetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -166,10 +170,10 @@ Optional fields:
 - `ResourceId`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateAssetResponseResponseTypeDef
+## CreateAssetResponseTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import CreateAssetResponseResponseTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import CreateAssetResponseTypeDef
 ```
 
 Required fields:
@@ -187,10 +191,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePackagingConfigurationRequestTypeDef
+## CreatePackagingConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import CreatePackagingConfigurationRequestTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import CreatePackagingConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -206,10 +210,10 @@ Optional fields:
 - `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreatePackagingConfigurationResponseResponseTypeDef
+## CreatePackagingConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import CreatePackagingConfigurationResponseResponseTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import CreatePackagingConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -225,10 +229,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePackagingGroupRequestTypeDef
+## CreatePackagingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import CreatePackagingGroupRequestTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import CreatePackagingGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -242,10 +246,10 @@ Optional fields:
   [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreatePackagingGroupResponseResponseTypeDef
+## CreatePackagingGroupResponseTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import CreatePackagingGroupResponseResponseTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import CreatePackagingGroupResponseTypeDef
 ```
 
 Required fields:
@@ -307,50 +311,50 @@ Optional fields:
 - `SegmentTemplateFormat`:
   [SegmentTemplateFormatType](./literals.md#segmenttemplateformattype)
 
-## DeleteAssetRequestTypeDef
+## DeleteAssetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import DeleteAssetRequestTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import DeleteAssetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Id`: `str`
 
-## DeletePackagingConfigurationRequestTypeDef
+## DeletePackagingConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import DeletePackagingConfigurationRequestTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import DeletePackagingConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Id`: `str`
 
-## DeletePackagingGroupRequestTypeDef
+## DeletePackagingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import DeletePackagingGroupRequestTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import DeletePackagingGroupRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Id`: `str`
 
-## DescribeAssetRequestTypeDef
+## DescribeAssetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import DescribeAssetRequestTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import DescribeAssetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Id`: `str`
 
-## DescribeAssetResponseResponseTypeDef
+## DescribeAssetResponseTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import DescribeAssetResponseResponseTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import DescribeAssetResponseTypeDef
 ```
 
 Required fields:
@@ -368,20 +372,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePackagingConfigurationRequestTypeDef
+## DescribePackagingConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import DescribePackagingConfigurationRequestTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import DescribePackagingConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Id`: `str`
 
-## DescribePackagingConfigurationResponseResponseTypeDef
+## DescribePackagingConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import DescribePackagingConfigurationResponseResponseTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import DescribePackagingConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -397,20 +401,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePackagingGroupRequestTypeDef
+## DescribePackagingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import DescribePackagingGroupRequestTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import DescribePackagingGroupRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Id`: `str`
 
-## DescribePackagingGroupResponseResponseTypeDef
+## DescribePackagingGroupResponseTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import DescribePackagingGroupResponseResponseTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import DescribePackagingGroupResponseTypeDef
 ```
 
 Required fields:
@@ -496,10 +500,10 @@ Optional fields:
 - `SegmentDurationSeconds`: `int`
 - `UseAudioRenditionGroup`: `bool`
 
-## ListAssetsRequestTypeDef
+## ListAssetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import ListAssetsRequestTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import ListAssetsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -508,10 +512,10 @@ Optional fields:
 - `NextToken`: `str`
 - `PackagingGroupId`: `str`
 
-## ListAssetsResponseResponseTypeDef
+## ListAssetsResponseTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import ListAssetsResponseResponseTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import ListAssetsResponseTypeDef
 ```
 
 Required fields:
@@ -521,10 +525,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPackagingConfigurationsRequestTypeDef
+## ListPackagingConfigurationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import ListPackagingConfigurationsRequestTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import ListPackagingConfigurationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -533,10 +537,10 @@ Optional fields:
 - `NextToken`: `str`
 - `PackagingGroupId`: `str`
 
-## ListPackagingConfigurationsResponseResponseTypeDef
+## ListPackagingConfigurationsResponseTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import ListPackagingConfigurationsResponseResponseTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import ListPackagingConfigurationsResponseTypeDef
 ```
 
 Required fields:
@@ -547,10 +551,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPackagingGroupsRequestTypeDef
+## ListPackagingGroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import ListPackagingGroupsRequestTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import ListPackagingGroupsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -558,10 +562,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListPackagingGroupsResponseResponseTypeDef
+## ListPackagingGroupsResponseTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import ListPackagingGroupsResponseResponseTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import ListPackagingGroupsResponseTypeDef
 ```
 
 Required fields:
@@ -572,20 +576,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -716,10 +720,10 @@ Optional fields:
 - `MinVideoBitsPerSecond`: `int`
 - `StreamOrder`: [StreamOrderType](./literals.md#streamordertype)
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -727,10 +731,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -738,10 +742,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdatePackagingGroupRequestTypeDef
+## UpdatePackagingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import UpdatePackagingGroupRequestTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import UpdatePackagingGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -752,10 +756,10 @@ Optional fields:
 
 - `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
 
-## UpdatePackagingGroupResponseResponseTypeDef
+## UpdatePackagingGroupResponseTypeDef
 
 ```python
-from mypy_boto3_mediapackage_vod.type_defs import UpdatePackagingGroupResponseResponseTypeDef
+from mypy_boto3_mediapackage_vod.type_defs import UpdatePackagingGroupResponseTypeDef
 ```
 
 Required fields:

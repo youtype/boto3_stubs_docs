@@ -32,6 +32,7 @@ from mypy_boto3_sso.client import SSOClient
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_paginator](./client.md#get_paginator)
 - [get_role_credentials](./client.md#get_role_credentials)
@@ -88,13 +89,13 @@ from mypy_boto3_sso.type_defs import AccountInfoTypeDef, ...
 ```
 
 - [AccountInfoTypeDef](./type_defs.md#accountinfotypedef)
-- [GetRoleCredentialsRequestTypeDef](./type_defs.md#getrolecredentialsrequesttypedef)
-- [GetRoleCredentialsResponseResponseTypeDef](./type_defs.md#getrolecredentialsresponseresponsetypedef)
-- [ListAccountRolesRequestTypeDef](./type_defs.md#listaccountrolesrequesttypedef)
-- [ListAccountRolesResponseResponseTypeDef](./type_defs.md#listaccountrolesresponseresponsetypedef)
-- [ListAccountsRequestTypeDef](./type_defs.md#listaccountsrequesttypedef)
-- [ListAccountsResponseResponseTypeDef](./type_defs.md#listaccountsresponseresponsetypedef)
-- [LogoutRequestTypeDef](./type_defs.md#logoutrequesttypedef)
+- [GetRoleCredentialsRequestRequestTypeDef](./type_defs.md#getrolecredentialsrequestrequesttypedef)
+- [GetRoleCredentialsResponseTypeDef](./type_defs.md#getrolecredentialsresponsetypedef)
+- [ListAccountRolesRequestRequestTypeDef](./type_defs.md#listaccountrolesrequestrequesttypedef)
+- [ListAccountRolesResponseTypeDef](./type_defs.md#listaccountrolesresponsetypedef)
+- [ListAccountsRequestRequestTypeDef](./type_defs.md#listaccountsrequestrequesttypedef)
+- [ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef)
+- [LogoutRequestRequestTypeDef](./type_defs.md#logoutrequestrequesttypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RoleCredentialsTypeDef](./type_defs.md#rolecredentialstypedef)

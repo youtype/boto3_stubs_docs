@@ -11,6 +11,7 @@ type annotations stubs module
   - [AppMeshClient](#appmeshclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_gateway_route](#create_gateway_route)
     - [create_mesh](#create_mesh)
@@ -97,6 +98,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+AppMeshClient exceptions.
+
+Type annotations for `boto3.client("appmesh").exceptions` method.
+
+Boto3 documentation:
+[AppMesh.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -122,7 +134,7 @@ Boto3 documentation:
 [AppMesh.Client.create_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_gateway_route)
 
 Arguments mapping described in
-[CreateGatewayRouteInputTypeDef](./type_defs.md#creategatewayrouteinputtypedef).
+[CreateGatewayRouteInputRequestTypeDef](./type_defs.md#creategatewayrouteinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -136,7 +148,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 Returns
-[CreateGatewayRouteOutputResponseTypeDef](./type_defs.md#creategatewayrouteoutputresponsetypedef).
+[CreateGatewayRouteOutputTypeDef](./type_defs.md#creategatewayrouteoutputtypedef).
 
 ### create_mesh
 
@@ -148,7 +160,7 @@ Boto3 documentation:
 [AppMesh.Client.create_mesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_mesh)
 
 Arguments mapping described in
-[CreateMeshInputTypeDef](./type_defs.md#createmeshinputtypedef).
+[CreateMeshInputRequestTypeDef](./type_defs.md#createmeshinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -157,8 +169,7 @@ Keyword-only arguments:
 - `spec`: [MeshSpecTypeDef](./type_defs.md#meshspectypedef)
 - `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
-Returns
-[CreateMeshOutputResponseTypeDef](./type_defs.md#createmeshoutputresponsetypedef).
+Returns [CreateMeshOutputTypeDef](./type_defs.md#createmeshoutputtypedef).
 
 ### create_route
 
@@ -170,7 +181,7 @@ Boto3 documentation:
 [AppMesh.Client.create_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_route)
 
 Arguments mapping described in
-[CreateRouteInputTypeDef](./type_defs.md#createrouteinputtypedef).
+[CreateRouteInputRequestTypeDef](./type_defs.md#createrouteinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -182,8 +193,7 @@ Keyword-only arguments:
 - `meshOwner`: `str`
 - `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
-Returns
-[CreateRouteOutputResponseTypeDef](./type_defs.md#createrouteoutputresponsetypedef).
+Returns [CreateRouteOutputTypeDef](./type_defs.md#createrouteoutputtypedef).
 
 ### create_virtual_gateway
 
@@ -195,7 +205,7 @@ Boto3 documentation:
 [AppMesh.Client.create_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_gateway)
 
 Arguments mapping described in
-[CreateVirtualGatewayInputTypeDef](./type_defs.md#createvirtualgatewayinputtypedef).
+[CreateVirtualGatewayInputRequestTypeDef](./type_defs.md#createvirtualgatewayinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -208,7 +218,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 Returns
-[CreateVirtualGatewayOutputResponseTypeDef](./type_defs.md#createvirtualgatewayoutputresponsetypedef).
+[CreateVirtualGatewayOutputTypeDef](./type_defs.md#createvirtualgatewayoutputtypedef).
 
 ### create_virtual_node
 
@@ -220,7 +230,7 @@ Boto3 documentation:
 [AppMesh.Client.create_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_node)
 
 Arguments mapping described in
-[CreateVirtualNodeInputTypeDef](./type_defs.md#createvirtualnodeinputtypedef).
+[CreateVirtualNodeInputRequestTypeDef](./type_defs.md#createvirtualnodeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -233,7 +243,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 Returns
-[CreateVirtualNodeOutputResponseTypeDef](./type_defs.md#createvirtualnodeoutputresponsetypedef).
+[CreateVirtualNodeOutputTypeDef](./type_defs.md#createvirtualnodeoutputtypedef).
 
 ### create_virtual_router
 
@@ -245,7 +255,7 @@ Boto3 documentation:
 [AppMesh.Client.create_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_router)
 
 Arguments mapping described in
-[CreateVirtualRouterInputTypeDef](./type_defs.md#createvirtualrouterinputtypedef).
+[CreateVirtualRouterInputRequestTypeDef](./type_defs.md#createvirtualrouterinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -258,7 +268,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 Returns
-[CreateVirtualRouterOutputResponseTypeDef](./type_defs.md#createvirtualrouteroutputresponsetypedef).
+[CreateVirtualRouterOutputTypeDef](./type_defs.md#createvirtualrouteroutputtypedef).
 
 ### create_virtual_service
 
@@ -270,7 +280,7 @@ Boto3 documentation:
 [AppMesh.Client.create_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_service)
 
 Arguments mapping described in
-[CreateVirtualServiceInputTypeDef](./type_defs.md#createvirtualserviceinputtypedef).
+[CreateVirtualServiceInputRequestTypeDef](./type_defs.md#createvirtualserviceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -283,7 +293,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 Returns
-[CreateVirtualServiceOutputResponseTypeDef](./type_defs.md#createvirtualserviceoutputresponsetypedef).
+[CreateVirtualServiceOutputTypeDef](./type_defs.md#createvirtualserviceoutputtypedef).
 
 ### delete_gateway_route
 
@@ -295,7 +305,7 @@ Boto3 documentation:
 [AppMesh.Client.delete_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_gateway_route)
 
 Arguments mapping described in
-[DeleteGatewayRouteInputTypeDef](./type_defs.md#deletegatewayrouteinputtypedef).
+[DeleteGatewayRouteInputRequestTypeDef](./type_defs.md#deletegatewayrouteinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -305,7 +315,7 @@ Keyword-only arguments:
 - `meshOwner`: `str`
 
 Returns
-[DeleteGatewayRouteOutputResponseTypeDef](./type_defs.md#deletegatewayrouteoutputresponsetypedef).
+[DeleteGatewayRouteOutputTypeDef](./type_defs.md#deletegatewayrouteoutputtypedef).
 
 ### delete_mesh
 
@@ -317,14 +327,13 @@ Boto3 documentation:
 [AppMesh.Client.delete_mesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_mesh)
 
 Arguments mapping described in
-[DeleteMeshInputTypeDef](./type_defs.md#deletemeshinputtypedef).
+[DeleteMeshInputRequestTypeDef](./type_defs.md#deletemeshinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 
-Returns
-[DeleteMeshOutputResponseTypeDef](./type_defs.md#deletemeshoutputresponsetypedef).
+Returns [DeleteMeshOutputTypeDef](./type_defs.md#deletemeshoutputtypedef).
 
 ### delete_route
 
@@ -336,7 +345,7 @@ Boto3 documentation:
 [AppMesh.Client.delete_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_route)
 
 Arguments mapping described in
-[DeleteRouteInputTypeDef](./type_defs.md#deleterouteinputtypedef).
+[DeleteRouteInputRequestTypeDef](./type_defs.md#deleterouteinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -345,8 +354,7 @@ Keyword-only arguments:
 - `virtualRouterName`: `str` *(required)*
 - `meshOwner`: `str`
 
-Returns
-[DeleteRouteOutputResponseTypeDef](./type_defs.md#deleterouteoutputresponsetypedef).
+Returns [DeleteRouteOutputTypeDef](./type_defs.md#deleterouteoutputtypedef).
 
 ### delete_virtual_gateway
 
@@ -358,7 +366,7 @@ Boto3 documentation:
 [AppMesh.Client.delete_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_gateway)
 
 Arguments mapping described in
-[DeleteVirtualGatewayInputTypeDef](./type_defs.md#deletevirtualgatewayinputtypedef).
+[DeleteVirtualGatewayInputRequestTypeDef](./type_defs.md#deletevirtualgatewayinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -367,7 +375,7 @@ Keyword-only arguments:
 - `meshOwner`: `str`
 
 Returns
-[DeleteVirtualGatewayOutputResponseTypeDef](./type_defs.md#deletevirtualgatewayoutputresponsetypedef).
+[DeleteVirtualGatewayOutputTypeDef](./type_defs.md#deletevirtualgatewayoutputtypedef).
 
 ### delete_virtual_node
 
@@ -379,7 +387,7 @@ Boto3 documentation:
 [AppMesh.Client.delete_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_node)
 
 Arguments mapping described in
-[DeleteVirtualNodeInputTypeDef](./type_defs.md#deletevirtualnodeinputtypedef).
+[DeleteVirtualNodeInputRequestTypeDef](./type_defs.md#deletevirtualnodeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -388,7 +396,7 @@ Keyword-only arguments:
 - `meshOwner`: `str`
 
 Returns
-[DeleteVirtualNodeOutputResponseTypeDef](./type_defs.md#deletevirtualnodeoutputresponsetypedef).
+[DeleteVirtualNodeOutputTypeDef](./type_defs.md#deletevirtualnodeoutputtypedef).
 
 ### delete_virtual_router
 
@@ -400,7 +408,7 @@ Boto3 documentation:
 [AppMesh.Client.delete_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_router)
 
 Arguments mapping described in
-[DeleteVirtualRouterInputTypeDef](./type_defs.md#deletevirtualrouterinputtypedef).
+[DeleteVirtualRouterInputRequestTypeDef](./type_defs.md#deletevirtualrouterinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -409,7 +417,7 @@ Keyword-only arguments:
 - `meshOwner`: `str`
 
 Returns
-[DeleteVirtualRouterOutputResponseTypeDef](./type_defs.md#deletevirtualrouteroutputresponsetypedef).
+[DeleteVirtualRouterOutputTypeDef](./type_defs.md#deletevirtualrouteroutputtypedef).
 
 ### delete_virtual_service
 
@@ -421,7 +429,7 @@ Boto3 documentation:
 [AppMesh.Client.delete_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_service)
 
 Arguments mapping described in
-[DeleteVirtualServiceInputTypeDef](./type_defs.md#deletevirtualserviceinputtypedef).
+[DeleteVirtualServiceInputRequestTypeDef](./type_defs.md#deletevirtualserviceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -430,7 +438,7 @@ Keyword-only arguments:
 - `meshOwner`: `str`
 
 Returns
-[DeleteVirtualServiceOutputResponseTypeDef](./type_defs.md#deletevirtualserviceoutputresponsetypedef).
+[DeleteVirtualServiceOutputTypeDef](./type_defs.md#deletevirtualserviceoutputtypedef).
 
 ### describe_gateway_route
 
@@ -442,7 +450,7 @@ Boto3 documentation:
 [AppMesh.Client.describe_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_gateway_route)
 
 Arguments mapping described in
-[DescribeGatewayRouteInputTypeDef](./type_defs.md#describegatewayrouteinputtypedef).
+[DescribeGatewayRouteInputRequestTypeDef](./type_defs.md#describegatewayrouteinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -452,7 +460,7 @@ Keyword-only arguments:
 - `meshOwner`: `str`
 
 Returns
-[DescribeGatewayRouteOutputResponseTypeDef](./type_defs.md#describegatewayrouteoutputresponsetypedef).
+[DescribeGatewayRouteOutputTypeDef](./type_defs.md#describegatewayrouteoutputtypedef).
 
 ### describe_mesh
 
@@ -464,15 +472,14 @@ Boto3 documentation:
 [AppMesh.Client.describe_mesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_mesh)
 
 Arguments mapping described in
-[DescribeMeshInputTypeDef](./type_defs.md#describemeshinputtypedef).
+[DescribeMeshInputRequestTypeDef](./type_defs.md#describemeshinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `meshOwner`: `str`
 
-Returns
-[DescribeMeshOutputResponseTypeDef](./type_defs.md#describemeshoutputresponsetypedef).
+Returns [DescribeMeshOutputTypeDef](./type_defs.md#describemeshoutputtypedef).
 
 ### describe_route
 
@@ -484,7 +491,7 @@ Boto3 documentation:
 [AppMesh.Client.describe_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_route)
 
 Arguments mapping described in
-[DescribeRouteInputTypeDef](./type_defs.md#describerouteinputtypedef).
+[DescribeRouteInputRequestTypeDef](./type_defs.md#describerouteinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -494,7 +501,7 @@ Keyword-only arguments:
 - `meshOwner`: `str`
 
 Returns
-[DescribeRouteOutputResponseTypeDef](./type_defs.md#describerouteoutputresponsetypedef).
+[DescribeRouteOutputTypeDef](./type_defs.md#describerouteoutputtypedef).
 
 ### describe_virtual_gateway
 
@@ -506,7 +513,7 @@ Boto3 documentation:
 [AppMesh.Client.describe_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_gateway)
 
 Arguments mapping described in
-[DescribeVirtualGatewayInputTypeDef](./type_defs.md#describevirtualgatewayinputtypedef).
+[DescribeVirtualGatewayInputRequestTypeDef](./type_defs.md#describevirtualgatewayinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -515,7 +522,7 @@ Keyword-only arguments:
 - `meshOwner`: `str`
 
 Returns
-[DescribeVirtualGatewayOutputResponseTypeDef](./type_defs.md#describevirtualgatewayoutputresponsetypedef).
+[DescribeVirtualGatewayOutputTypeDef](./type_defs.md#describevirtualgatewayoutputtypedef).
 
 ### describe_virtual_node
 
@@ -527,7 +534,7 @@ Boto3 documentation:
 [AppMesh.Client.describe_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_node)
 
 Arguments mapping described in
-[DescribeVirtualNodeInputTypeDef](./type_defs.md#describevirtualnodeinputtypedef).
+[DescribeVirtualNodeInputRequestTypeDef](./type_defs.md#describevirtualnodeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -536,7 +543,7 @@ Keyword-only arguments:
 - `meshOwner`: `str`
 
 Returns
-[DescribeVirtualNodeOutputResponseTypeDef](./type_defs.md#describevirtualnodeoutputresponsetypedef).
+[DescribeVirtualNodeOutputTypeDef](./type_defs.md#describevirtualnodeoutputtypedef).
 
 ### describe_virtual_router
 
@@ -548,7 +555,7 @@ Boto3 documentation:
 [AppMesh.Client.describe_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_router)
 
 Arguments mapping described in
-[DescribeVirtualRouterInputTypeDef](./type_defs.md#describevirtualrouterinputtypedef).
+[DescribeVirtualRouterInputRequestTypeDef](./type_defs.md#describevirtualrouterinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -557,7 +564,7 @@ Keyword-only arguments:
 - `meshOwner`: `str`
 
 Returns
-[DescribeVirtualRouterOutputResponseTypeDef](./type_defs.md#describevirtualrouteroutputresponsetypedef).
+[DescribeVirtualRouterOutputTypeDef](./type_defs.md#describevirtualrouteroutputtypedef).
 
 ### describe_virtual_service
 
@@ -569,7 +576,7 @@ Boto3 documentation:
 [AppMesh.Client.describe_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_service)
 
 Arguments mapping described in
-[DescribeVirtualServiceInputTypeDef](./type_defs.md#describevirtualserviceinputtypedef).
+[DescribeVirtualServiceInputRequestTypeDef](./type_defs.md#describevirtualserviceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -578,7 +585,7 @@ Keyword-only arguments:
 - `meshOwner`: `str`
 
 Returns
-[DescribeVirtualServiceOutputResponseTypeDef](./type_defs.md#describevirtualserviceoutputresponsetypedef).
+[DescribeVirtualServiceOutputTypeDef](./type_defs.md#describevirtualserviceoutputtypedef).
 
 ### generate_presigned_url
 
@@ -609,7 +616,7 @@ Boto3 documentation:
 [AppMesh.Client.list_gateway_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_gateway_routes)
 
 Arguments mapping described in
-[ListGatewayRoutesInputTypeDef](./type_defs.md#listgatewayroutesinputtypedef).
+[ListGatewayRoutesInputRequestTypeDef](./type_defs.md#listgatewayroutesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -620,7 +627,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListGatewayRoutesOutputResponseTypeDef](./type_defs.md#listgatewayroutesoutputresponsetypedef).
+[ListGatewayRoutesOutputTypeDef](./type_defs.md#listgatewayroutesoutputtypedef).
 
 ### list_meshes
 
@@ -632,15 +639,14 @@ Boto3 documentation:
 [AppMesh.Client.list_meshes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_meshes)
 
 Arguments mapping described in
-[ListMeshesInputTypeDef](./type_defs.md#listmeshesinputtypedef).
+[ListMeshesInputRequestTypeDef](./type_defs.md#listmeshesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `limit`: `int`
 - `nextToken`: `str`
 
-Returns
-[ListMeshesOutputResponseTypeDef](./type_defs.md#listmeshesoutputresponsetypedef).
+Returns [ListMeshesOutputTypeDef](./type_defs.md#listmeshesoutputtypedef).
 
 ### list_routes
 
@@ -652,7 +658,7 @@ Boto3 documentation:
 [AppMesh.Client.list_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_routes)
 
 Arguments mapping described in
-[ListRoutesInputTypeDef](./type_defs.md#listroutesinputtypedef).
+[ListRoutesInputRequestTypeDef](./type_defs.md#listroutesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -662,8 +668,7 @@ Keyword-only arguments:
 - `meshOwner`: `str`
 - `nextToken`: `str`
 
-Returns
-[ListRoutesOutputResponseTypeDef](./type_defs.md#listroutesoutputresponsetypedef).
+Returns [ListRoutesOutputTypeDef](./type_defs.md#listroutesoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -675,7 +680,7 @@ Boto3 documentation:
 [AppMesh.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceInputTypeDef](./type_defs.md#listtagsforresourceinputtypedef).
+[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -684,7 +689,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef).
+[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
 ### list_virtual_gateways
 
@@ -696,7 +701,7 @@ Boto3 documentation:
 [AppMesh.Client.list_virtual_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_gateways)
 
 Arguments mapping described in
-[ListVirtualGatewaysInputTypeDef](./type_defs.md#listvirtualgatewaysinputtypedef).
+[ListVirtualGatewaysInputRequestTypeDef](./type_defs.md#listvirtualgatewaysinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -706,7 +711,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListVirtualGatewaysOutputResponseTypeDef](./type_defs.md#listvirtualgatewaysoutputresponsetypedef).
+[ListVirtualGatewaysOutputTypeDef](./type_defs.md#listvirtualgatewaysoutputtypedef).
 
 ### list_virtual_nodes
 
@@ -718,7 +723,7 @@ Boto3 documentation:
 [AppMesh.Client.list_virtual_nodes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_nodes)
 
 Arguments mapping described in
-[ListVirtualNodesInputTypeDef](./type_defs.md#listvirtualnodesinputtypedef).
+[ListVirtualNodesInputRequestTypeDef](./type_defs.md#listvirtualnodesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -728,7 +733,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListVirtualNodesOutputResponseTypeDef](./type_defs.md#listvirtualnodesoutputresponsetypedef).
+[ListVirtualNodesOutputTypeDef](./type_defs.md#listvirtualnodesoutputtypedef).
 
 ### list_virtual_routers
 
@@ -740,7 +745,7 @@ Boto3 documentation:
 [AppMesh.Client.list_virtual_routers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_routers)
 
 Arguments mapping described in
-[ListVirtualRoutersInputTypeDef](./type_defs.md#listvirtualroutersinputtypedef).
+[ListVirtualRoutersInputRequestTypeDef](./type_defs.md#listvirtualroutersinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -750,7 +755,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListVirtualRoutersOutputResponseTypeDef](./type_defs.md#listvirtualroutersoutputresponsetypedef).
+[ListVirtualRoutersOutputTypeDef](./type_defs.md#listvirtualroutersoutputtypedef).
 
 ### list_virtual_services
 
@@ -762,7 +767,7 @@ Boto3 documentation:
 [AppMesh.Client.list_virtual_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_services)
 
 Arguments mapping described in
-[ListVirtualServicesInputTypeDef](./type_defs.md#listvirtualservicesinputtypedef).
+[ListVirtualServicesInputRequestTypeDef](./type_defs.md#listvirtualservicesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -772,7 +777,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListVirtualServicesOutputResponseTypeDef](./type_defs.md#listvirtualservicesoutputresponsetypedef).
+[ListVirtualServicesOutputTypeDef](./type_defs.md#listvirtualservicesoutputtypedef).
 
 ### tag_resource
 
@@ -784,7 +789,7 @@ Boto3 documentation:
 [AppMesh.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceInputTypeDef](./type_defs.md#tagresourceinputtypedef).
+[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -803,7 +808,7 @@ Boto3 documentation:
 [AppMesh.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceInputTypeDef](./type_defs.md#untagresourceinputtypedef).
+[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -823,7 +828,7 @@ Boto3 documentation:
 [AppMesh.Client.update_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_gateway_route)
 
 Arguments mapping described in
-[UpdateGatewayRouteInputTypeDef](./type_defs.md#updategatewayrouteinputtypedef).
+[UpdateGatewayRouteInputRequestTypeDef](./type_defs.md#updategatewayrouteinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -836,7 +841,7 @@ Keyword-only arguments:
 - `meshOwner`: `str`
 
 Returns
-[UpdateGatewayRouteOutputResponseTypeDef](./type_defs.md#updategatewayrouteoutputresponsetypedef).
+[UpdateGatewayRouteOutputTypeDef](./type_defs.md#updategatewayrouteoutputtypedef).
 
 ### update_mesh
 
@@ -848,7 +853,7 @@ Boto3 documentation:
 [AppMesh.Client.update_mesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_mesh)
 
 Arguments mapping described in
-[UpdateMeshInputTypeDef](./type_defs.md#updatemeshinputtypedef).
+[UpdateMeshInputRequestTypeDef](./type_defs.md#updatemeshinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -856,8 +861,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 - `spec`: [MeshSpecTypeDef](./type_defs.md#meshspectypedef)
 
-Returns
-[UpdateMeshOutputResponseTypeDef](./type_defs.md#updatemeshoutputresponsetypedef).
+Returns [UpdateMeshOutputTypeDef](./type_defs.md#updatemeshoutputtypedef).
 
 ### update_route
 
@@ -869,7 +873,7 @@ Boto3 documentation:
 [AppMesh.Client.update_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_route)
 
 Arguments mapping described in
-[UpdateRouteInputTypeDef](./type_defs.md#updaterouteinputtypedef).
+[UpdateRouteInputRequestTypeDef](./type_defs.md#updaterouteinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -880,8 +884,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 - `meshOwner`: `str`
 
-Returns
-[UpdateRouteOutputResponseTypeDef](./type_defs.md#updaterouteoutputresponsetypedef).
+Returns [UpdateRouteOutputTypeDef](./type_defs.md#updaterouteoutputtypedef).
 
 ### update_virtual_gateway
 
@@ -893,7 +896,7 @@ Boto3 documentation:
 [AppMesh.Client.update_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_gateway)
 
 Arguments mapping described in
-[UpdateVirtualGatewayInputTypeDef](./type_defs.md#updatevirtualgatewayinputtypedef).
+[UpdateVirtualGatewayInputRequestTypeDef](./type_defs.md#updatevirtualgatewayinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -905,7 +908,7 @@ Keyword-only arguments:
 - `meshOwner`: `str`
 
 Returns
-[UpdateVirtualGatewayOutputResponseTypeDef](./type_defs.md#updatevirtualgatewayoutputresponsetypedef).
+[UpdateVirtualGatewayOutputTypeDef](./type_defs.md#updatevirtualgatewayoutputtypedef).
 
 ### update_virtual_node
 
@@ -917,7 +920,7 @@ Boto3 documentation:
 [AppMesh.Client.update_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_node)
 
 Arguments mapping described in
-[UpdateVirtualNodeInputTypeDef](./type_defs.md#updatevirtualnodeinputtypedef).
+[UpdateVirtualNodeInputRequestTypeDef](./type_defs.md#updatevirtualnodeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -929,7 +932,7 @@ Keyword-only arguments:
 - `meshOwner`: `str`
 
 Returns
-[UpdateVirtualNodeOutputResponseTypeDef](./type_defs.md#updatevirtualnodeoutputresponsetypedef).
+[UpdateVirtualNodeOutputTypeDef](./type_defs.md#updatevirtualnodeoutputtypedef).
 
 ### update_virtual_router
 
@@ -941,7 +944,7 @@ Boto3 documentation:
 [AppMesh.Client.update_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_router)
 
 Arguments mapping described in
-[UpdateVirtualRouterInputTypeDef](./type_defs.md#updatevirtualrouterinputtypedef).
+[UpdateVirtualRouterInputRequestTypeDef](./type_defs.md#updatevirtualrouterinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -953,7 +956,7 @@ Keyword-only arguments:
 - `meshOwner`: `str`
 
 Returns
-[UpdateVirtualRouterOutputResponseTypeDef](./type_defs.md#updatevirtualrouteroutputresponsetypedef).
+[UpdateVirtualRouterOutputTypeDef](./type_defs.md#updatevirtualrouteroutputtypedef).
 
 ### update_virtual_service
 
@@ -965,7 +968,7 @@ Boto3 documentation:
 [AppMesh.Client.update_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_service)
 
 Arguments mapping described in
-[UpdateVirtualServiceInputTypeDef](./type_defs.md#updatevirtualserviceinputtypedef).
+[UpdateVirtualServiceInputRequestTypeDef](./type_defs.md#updatevirtualserviceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -977,7 +980,7 @@ Keyword-only arguments:
 - `meshOwner`: `str`
 
 Returns
-[UpdateVirtualServiceOutputResponseTypeDef](./type_defs.md#updatevirtualserviceoutputresponsetypedef).
+[UpdateVirtualServiceOutputTypeDef](./type_defs.md#updatevirtualserviceoutputtypedef).
 
 ### get_paginator
 

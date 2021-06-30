@@ -39,7 +39,7 @@ Arguments for `GetExecutionHistoryPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetExecutionHistoryPaginator.paginate` returns
-`Iterator`\[[GetExecutionHistoryOutputResponseTypeDef](./type_defs.md#getexecutionhistoryoutputresponsetypedef)\].
+`Iterator`\[[GetExecutionHistoryOutputTypeDef](./type_defs.md#getexecutionhistoryoutputtypedef)\].
 
 ## ListActivitiesPaginator
 
@@ -64,7 +64,7 @@ Arguments for `ListActivitiesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListActivitiesPaginator.paginate` returns
-`Iterator`\[[ListActivitiesOutputResponseTypeDef](./type_defs.md#listactivitiesoutputresponsetypedef)\].
+`Iterator`\[[ListActivitiesOutputTypeDef](./type_defs.md#listactivitiesoutputtypedef)\].
 
 ## ListExecutionsPaginator
 
@@ -91,7 +91,7 @@ Arguments for `ListExecutionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListExecutionsPaginator.paginate` returns
-`Iterator`\[[ListExecutionsOutputResponseTypeDef](./type_defs.md#listexecutionsoutputresponsetypedef)\].
+`Iterator`\[[ListExecutionsOutputTypeDef](./type_defs.md#listexecutionsoutputtypedef)\].
 
 ## ListStateMachinesPaginator
 
@@ -116,4 +116,4 @@ Arguments for `ListStateMachinesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStateMachinesPaginator.paginate` returns
-`Iterator`\[[ListStateMachinesOutputResponseTypeDef](./type_defs.md#liststatemachinesoutputresponsetypedef)\].
+`Iterator`\[[ListStateMachinesOutputTypeDef](./type_defs.md#liststatemachinesoutputtypedef)\].

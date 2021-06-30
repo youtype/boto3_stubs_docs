@@ -43,7 +43,7 @@ Arguments for `ListBootstrapActionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBootstrapActionsPaginator.paginate` returns
-`Iterator`\[[ListBootstrapActionsOutputResponseTypeDef](./type_defs.md#listbootstrapactionsoutputresponsetypedef)\].
+`Iterator`\[[ListBootstrapActionsOutputTypeDef](./type_defs.md#listbootstrapactionsoutputtypedef)\].
 
 ## ListClustersPaginator
 
@@ -70,7 +70,7 @@ Arguments for `ListClustersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListClustersPaginator.paginate` returns
-`Iterator`\[[ListClustersOutputResponseTypeDef](./type_defs.md#listclustersoutputresponsetypedef)\].
+`Iterator`\[[ListClustersOutputTypeDef](./type_defs.md#listclustersoutputtypedef)\].
 
 ## ListInstanceFleetsPaginator
 
@@ -96,7 +96,7 @@ Arguments for `ListInstanceFleetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInstanceFleetsPaginator.paginate` returns
-`Iterator`\[[ListInstanceFleetsOutputResponseTypeDef](./type_defs.md#listinstancefleetsoutputresponsetypedef)\].
+`Iterator`\[[ListInstanceFleetsOutputTypeDef](./type_defs.md#listinstancefleetsoutputtypedef)\].
 
 ## ListInstanceGroupsPaginator
 
@@ -122,7 +122,7 @@ Arguments for `ListInstanceGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInstanceGroupsPaginator.paginate` returns
-`Iterator`\[[ListInstanceGroupsOutputResponseTypeDef](./type_defs.md#listinstancegroupsoutputresponsetypedef)\].
+`Iterator`\[[ListInstanceGroupsOutputTypeDef](./type_defs.md#listinstancegroupsoutputtypedef)\].
 
 ## ListInstancesPaginator
 
@@ -155,7 +155,7 @@ Arguments for `ListInstancesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInstancesPaginator.paginate` returns
-`Iterator`\[[ListInstancesOutputResponseTypeDef](./type_defs.md#listinstancesoutputresponsetypedef)\].
+`Iterator`\[[ListInstancesOutputTypeDef](./type_defs.md#listinstancesoutputtypedef)\].
 
 ## ListNotebookExecutionsPaginator
 
@@ -185,7 +185,7 @@ Arguments for `ListNotebookExecutionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListNotebookExecutionsPaginator.paginate` returns
-`Iterator`\[[ListNotebookExecutionsOutputResponseTypeDef](./type_defs.md#listnotebookexecutionsoutputresponsetypedef)\].
+`Iterator`\[[ListNotebookExecutionsOutputTypeDef](./type_defs.md#listnotebookexecutionsoutputtypedef)\].
 
 ## ListSecurityConfigurationsPaginator
 
@@ -210,7 +210,7 @@ Arguments for `ListSecurityConfigurationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSecurityConfigurationsPaginator.paginate` returns
-`Iterator`\[[ListSecurityConfigurationsOutputResponseTypeDef](./type_defs.md#listsecurityconfigurationsoutputresponsetypedef)\].
+`Iterator`\[[ListSecurityConfigurationsOutputTypeDef](./type_defs.md#listsecurityconfigurationsoutputtypedef)\].
 
 ## ListStepsPaginator
 
@@ -237,7 +237,7 @@ Arguments for `ListStepsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStepsPaginator.paginate` returns
-`Iterator`\[[ListStepsOutputResponseTypeDef](./type_defs.md#liststepsoutputresponsetypedef)\].
+`Iterator`\[[ListStepsOutputTypeDef](./type_defs.md#liststepsoutputtypedef)\].
 
 ## ListStudioSessionMappingsPaginator
 
@@ -264,7 +264,7 @@ Arguments for `ListStudioSessionMappingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStudioSessionMappingsPaginator.paginate` returns
-`Iterator`\[[ListStudioSessionMappingsOutputResponseTypeDef](./type_defs.md#liststudiosessionmappingsoutputresponsetypedef)\].
+`Iterator`\[[ListStudioSessionMappingsOutputTypeDef](./type_defs.md#liststudiosessionmappingsoutputtypedef)\].
 
 ## ListStudiosPaginator
 
@@ -288,4 +288,4 @@ Arguments for `ListStudiosPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStudiosPaginator.paginate` returns
-`Iterator`\[[ListStudiosOutputResponseTypeDef](./type_defs.md#liststudiosoutputresponsetypedef)\].
+`Iterator`\[[ListStudiosOutputTypeDef](./type_defs.md#liststudiosoutputtypedef)\].

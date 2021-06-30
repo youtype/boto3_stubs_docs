@@ -8,43 +8,43 @@ type annotations stubs module
 [mypy_boto3_timestream_write](https://pypi.org/project/mypy-boto3-timestream-write/).
 
 - [Typed dictionaries for boto3 TimestreamWrite module](#typed-dictionaries-for-boto3-timestreamwrite-module)
-  - [CreateDatabaseRequestTypeDef](#createdatabaserequesttypedef)
-  - [CreateDatabaseResponseResponseTypeDef](#createdatabaseresponseresponsetypedef)
-  - [CreateTableRequestTypeDef](#createtablerequesttypedef)
-  - [CreateTableResponseResponseTypeDef](#createtableresponseresponsetypedef)
+  - [CreateDatabaseRequestRequestTypeDef](#createdatabaserequestrequesttypedef)
+  - [CreateDatabaseResponseTypeDef](#createdatabaseresponsetypedef)
+  - [CreateTableRequestRequestTypeDef](#createtablerequestrequesttypedef)
+  - [CreateTableResponseTypeDef](#createtableresponsetypedef)
   - [DatabaseTypeDef](#databasetypedef)
-  - [DeleteDatabaseRequestTypeDef](#deletedatabaserequesttypedef)
-  - [DeleteTableRequestTypeDef](#deletetablerequesttypedef)
-  - [DescribeDatabaseRequestTypeDef](#describedatabaserequesttypedef)
-  - [DescribeDatabaseResponseResponseTypeDef](#describedatabaseresponseresponsetypedef)
-  - [DescribeEndpointsResponseResponseTypeDef](#describeendpointsresponseresponsetypedef)
-  - [DescribeTableRequestTypeDef](#describetablerequesttypedef)
-  - [DescribeTableResponseResponseTypeDef](#describetableresponseresponsetypedef)
+  - [DeleteDatabaseRequestRequestTypeDef](#deletedatabaserequestrequesttypedef)
+  - [DeleteTableRequestRequestTypeDef](#deletetablerequestrequesttypedef)
+  - [DescribeDatabaseRequestRequestTypeDef](#describedatabaserequestrequesttypedef)
+  - [DescribeDatabaseResponseTypeDef](#describedatabaseresponsetypedef)
+  - [DescribeEndpointsResponseTypeDef](#describeendpointsresponsetypedef)
+  - [DescribeTableRequestRequestTypeDef](#describetablerequestrequesttypedef)
+  - [DescribeTableResponseTypeDef](#describetableresponsetypedef)
   - [DimensionTypeDef](#dimensiontypedef)
   - [EndpointTypeDef](#endpointtypedef)
-  - [ListDatabasesRequestTypeDef](#listdatabasesrequesttypedef)
-  - [ListDatabasesResponseResponseTypeDef](#listdatabasesresponseresponsetypedef)
-  - [ListTablesRequestTypeDef](#listtablesrequesttypedef)
-  - [ListTablesResponseResponseTypeDef](#listtablesresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListDatabasesRequestRequestTypeDef](#listdatabasesrequestrequesttypedef)
+  - [ListDatabasesResponseTypeDef](#listdatabasesresponsetypedef)
+  - [ListTablesRequestRequestTypeDef](#listtablesrequestrequesttypedef)
+  - [ListTablesResponseTypeDef](#listtablesresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [RecordTypeDef](#recordtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RetentionPropertiesTypeDef](#retentionpropertiestypedef)
   - [TableTypeDef](#tabletypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateDatabaseRequestTypeDef](#updatedatabaserequesttypedef)
-  - [UpdateDatabaseResponseResponseTypeDef](#updatedatabaseresponseresponsetypedef)
-  - [UpdateTableRequestTypeDef](#updatetablerequesttypedef)
-  - [UpdateTableResponseResponseTypeDef](#updatetableresponseresponsetypedef)
-  - [WriteRecordsRequestTypeDef](#writerecordsrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateDatabaseRequestRequestTypeDef](#updatedatabaserequestrequesttypedef)
+  - [UpdateDatabaseResponseTypeDef](#updatedatabaseresponsetypedef)
+  - [UpdateTableRequestRequestTypeDef](#updatetablerequestrequesttypedef)
+  - [UpdateTableResponseTypeDef](#updatetableresponsetypedef)
+  - [WriteRecordsRequestRequestTypeDef](#writerecordsrequestrequesttypedef)
 
-## CreateDatabaseRequestTypeDef
+## CreateDatabaseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import CreateDatabaseRequestTypeDef
+from mypy_boto3_timestream_write.type_defs import CreateDatabaseRequestRequestTypeDef
 ```
 
 Required fields:
@@ -56,10 +56,10 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateDatabaseResponseResponseTypeDef
+## CreateDatabaseResponseTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import CreateDatabaseResponseResponseTypeDef
+from mypy_boto3_timestream_write.type_defs import CreateDatabaseResponseTypeDef
 ```
 
 Required fields:
@@ -68,10 +68,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTableRequestTypeDef
+## CreateTableRequestRequestTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import CreateTableRequestTypeDef
+from mypy_boto3_timestream_write.type_defs import CreateTableRequestRequestTypeDef
 ```
 
 Required fields:
@@ -85,10 +85,10 @@ Optional fields:
   [RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateTableResponseResponseTypeDef
+## CreateTableResponseTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import CreateTableResponseResponseTypeDef
+from mypy_boto3_timestream_write.type_defs import CreateTableResponseTypeDef
 ```
 
 Required fields:
@@ -112,20 +112,20 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
 
-## DeleteDatabaseRequestTypeDef
+## DeleteDatabaseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import DeleteDatabaseRequestTypeDef
+from mypy_boto3_timestream_write.type_defs import DeleteDatabaseRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DatabaseName`: `str`
 
-## DeleteTableRequestTypeDef
+## DeleteTableRequestRequestTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import DeleteTableRequestTypeDef
+from mypy_boto3_timestream_write.type_defs import DeleteTableRequestRequestTypeDef
 ```
 
 Required fields:
@@ -133,20 +133,20 @@ Required fields:
 - `DatabaseName`: `str`
 - `TableName`: `str`
 
-## DescribeDatabaseRequestTypeDef
+## DescribeDatabaseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import DescribeDatabaseRequestTypeDef
+from mypy_boto3_timestream_write.type_defs import DescribeDatabaseRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DatabaseName`: `str`
 
-## DescribeDatabaseResponseResponseTypeDef
+## DescribeDatabaseResponseTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import DescribeDatabaseResponseResponseTypeDef
+from mypy_boto3_timestream_write.type_defs import DescribeDatabaseResponseTypeDef
 ```
 
 Required fields:
@@ -155,10 +155,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEndpointsResponseResponseTypeDef
+## DescribeEndpointsResponseTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import DescribeEndpointsResponseResponseTypeDef
+from mypy_boto3_timestream_write.type_defs import DescribeEndpointsResponseTypeDef
 ```
 
 Required fields:
@@ -167,10 +167,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTableRequestTypeDef
+## DescribeTableRequestRequestTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import DescribeTableRequestTypeDef
+from mypy_boto3_timestream_write.type_defs import DescribeTableRequestRequestTypeDef
 ```
 
 Required fields:
@@ -178,10 +178,10 @@ Required fields:
 - `DatabaseName`: `str`
 - `TableName`: `str`
 
-## DescribeTableResponseResponseTypeDef
+## DescribeTableResponseTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import DescribeTableResponseResponseTypeDef
+from mypy_boto3_timestream_write.type_defs import DescribeTableResponseTypeDef
 ```
 
 Required fields:
@@ -217,10 +217,10 @@ Required fields:
 - `Address`: `str`
 - `CachePeriodInMinutes`: `int`
 
-## ListDatabasesRequestTypeDef
+## ListDatabasesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import ListDatabasesRequestTypeDef
+from mypy_boto3_timestream_write.type_defs import ListDatabasesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -228,10 +228,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListDatabasesResponseResponseTypeDef
+## ListDatabasesResponseTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import ListDatabasesResponseResponseTypeDef
+from mypy_boto3_timestream_write.type_defs import ListDatabasesResponseTypeDef
 ```
 
 Required fields:
@@ -241,10 +241,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTablesRequestTypeDef
+## ListTablesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import ListTablesRequestTypeDef
+from mypy_boto3_timestream_write.type_defs import ListTablesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -253,10 +253,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListTablesResponseResponseTypeDef
+## ListTablesResponseTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import ListTablesResponseResponseTypeDef
+from mypy_boto3_timestream_write.type_defs import ListTablesResponseTypeDef
 ```
 
 Required fields:
@@ -266,20 +266,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_timestream_write.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceARN`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_timestream_write.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -347,10 +347,10 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_timestream_write.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -369,10 +369,10 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_timestream_write.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -380,10 +380,10 @@ Required fields:
 - `ResourceARN`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateDatabaseRequestTypeDef
+## UpdateDatabaseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import UpdateDatabaseRequestTypeDef
+from mypy_boto3_timestream_write.type_defs import UpdateDatabaseRequestRequestTypeDef
 ```
 
 Required fields:
@@ -391,10 +391,10 @@ Required fields:
 - `DatabaseName`: `str`
 - `KmsKeyId`: `str`
 
-## UpdateDatabaseResponseResponseTypeDef
+## UpdateDatabaseResponseTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import UpdateDatabaseResponseResponseTypeDef
+from mypy_boto3_timestream_write.type_defs import UpdateDatabaseResponseTypeDef
 ```
 
 Required fields:
@@ -403,10 +403,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateTableRequestTypeDef
+## UpdateTableRequestRequestTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import UpdateTableRequestTypeDef
+from mypy_boto3_timestream_write.type_defs import UpdateTableRequestRequestTypeDef
 ```
 
 Required fields:
@@ -416,10 +416,10 @@ Required fields:
 - `RetentionProperties`:
   [RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef)
 
-## UpdateTableResponseResponseTypeDef
+## UpdateTableResponseTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import UpdateTableResponseResponseTypeDef
+from mypy_boto3_timestream_write.type_defs import UpdateTableResponseTypeDef
 ```
 
 Required fields:
@@ -428,10 +428,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## WriteRecordsRequestTypeDef
+## WriteRecordsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_timestream_write.type_defs import WriteRecordsRequestTypeDef
+from mypy_boto3_timestream_write.type_defs import WriteRecordsRequestRequestTypeDef
 ```
 
 Required fields:

@@ -11,6 +11,7 @@ type annotations stubs module
   - [IoT1ClickDevicesServiceClient](#iot1clickdevicesserviceclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [claim_devices_by_claim_code](#claim_devices_by_claim_code)
     - [describe_device](#describe_device)
@@ -69,6 +70,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+IoT1ClickDevicesServiceClient exceptions.
+
+Type annotations for `boto3.client("iot1click-devices").exceptions` method.
+
+Boto3 documentation:
+[IoT1ClickDevicesService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -96,14 +108,14 @@ Boto3 documentation:
 [IoT1ClickDevicesService.Client.claim_devices_by_claim_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.claim_devices_by_claim_code)
 
 Arguments mapping described in
-[ClaimDevicesByClaimCodeRequestTypeDef](./type_defs.md#claimdevicesbyclaimcoderequesttypedef).
+[ClaimDevicesByClaimCodeRequestRequestTypeDef](./type_defs.md#claimdevicesbyclaimcoderequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ClaimCode`: `str` *(required)*
 
 Returns
-[ClaimDevicesByClaimCodeResponseResponseTypeDef](./type_defs.md#claimdevicesbyclaimcoderesponseresponsetypedef).
+[ClaimDevicesByClaimCodeResponseTypeDef](./type_defs.md#claimdevicesbyclaimcoderesponsetypedef).
 
 ### describe_device
 
@@ -117,14 +129,14 @@ Boto3 documentation:
 [IoT1ClickDevicesService.Client.describe_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.describe_device)
 
 Arguments mapping described in
-[DescribeDeviceRequestTypeDef](./type_defs.md#describedevicerequesttypedef).
+[DescribeDeviceRequestRequestTypeDef](./type_defs.md#describedevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DeviceId`: `str` *(required)*
 
 Returns
-[DescribeDeviceResponseResponseTypeDef](./type_defs.md#describedeviceresponseresponsetypedef).
+[DescribeDeviceResponseTypeDef](./type_defs.md#describedeviceresponsetypedef).
 
 ### finalize_device_claim
 
@@ -137,7 +149,7 @@ Boto3 documentation:
 [IoT1ClickDevicesService.Client.finalize_device_claim](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.finalize_device_claim)
 
 Arguments mapping described in
-[FinalizeDeviceClaimRequestTypeDef](./type_defs.md#finalizedeviceclaimrequesttypedef).
+[FinalizeDeviceClaimRequestRequestTypeDef](./type_defs.md#finalizedeviceclaimrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -145,7 +157,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[FinalizeDeviceClaimResponseResponseTypeDef](./type_defs.md#finalizedeviceclaimresponseresponsetypedef).
+[FinalizeDeviceClaimResponseTypeDef](./type_defs.md#finalizedeviceclaimresponsetypedef).
 
 ### generate_presigned_url
 
@@ -177,14 +189,14 @@ Boto3 documentation:
 [IoT1ClickDevicesService.Client.get_device_methods](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.get_device_methods)
 
 Arguments mapping described in
-[GetDeviceMethodsRequestTypeDef](./type_defs.md#getdevicemethodsrequesttypedef).
+[GetDeviceMethodsRequestRequestTypeDef](./type_defs.md#getdevicemethodsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DeviceId`: `str` *(required)*
 
 Returns
-[GetDeviceMethodsResponseResponseTypeDef](./type_defs.md#getdevicemethodsresponseresponsetypedef).
+[GetDeviceMethodsResponseTypeDef](./type_defs.md#getdevicemethodsresponsetypedef).
 
 ### initiate_device_claim
 
@@ -197,14 +209,14 @@ Boto3 documentation:
 [IoT1ClickDevicesService.Client.initiate_device_claim](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.initiate_device_claim)
 
 Arguments mapping described in
-[InitiateDeviceClaimRequestTypeDef](./type_defs.md#initiatedeviceclaimrequesttypedef).
+[InitiateDeviceClaimRequestRequestTypeDef](./type_defs.md#initiatedeviceclaimrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DeviceId`: `str` *(required)*
 
 Returns
-[InitiateDeviceClaimResponseResponseTypeDef](./type_defs.md#initiatedeviceclaimresponseresponsetypedef).
+[InitiateDeviceClaimResponseTypeDef](./type_defs.md#initiatedeviceclaimresponsetypedef).
 
 ### invoke_device_method
 
@@ -218,7 +230,7 @@ Boto3 documentation:
 [IoT1ClickDevicesService.Client.invoke_device_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.invoke_device_method)
 
 Arguments mapping described in
-[InvokeDeviceMethodRequestTypeDef](./type_defs.md#invokedevicemethodrequesttypedef).
+[InvokeDeviceMethodRequestRequestTypeDef](./type_defs.md#invokedevicemethodrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -227,7 +239,7 @@ Keyword-only arguments:
 - `DeviceMethodParameters`: `str`
 
 Returns
-[InvokeDeviceMethodResponseResponseTypeDef](./type_defs.md#invokedevicemethodresponseresponsetypedef).
+[InvokeDeviceMethodResponseTypeDef](./type_defs.md#invokedevicemethodresponsetypedef).
 
 ### list_device_events
 
@@ -241,7 +253,7 @@ Boto3 documentation:
 [IoT1ClickDevicesService.Client.list_device_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_device_events)
 
 Arguments mapping described in
-[ListDeviceEventsRequestTypeDef](./type_defs.md#listdeviceeventsrequesttypedef).
+[ListDeviceEventsRequestRequestTypeDef](./type_defs.md#listdeviceeventsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -252,7 +264,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListDeviceEventsResponseResponseTypeDef](./type_defs.md#listdeviceeventsresponseresponsetypedef).
+[ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef).
 
 ### list_devices
 
@@ -264,7 +276,7 @@ Boto3 documentation:
 [IoT1ClickDevicesService.Client.list_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_devices)
 
 Arguments mapping described in
-[ListDevicesRequestTypeDef](./type_defs.md#listdevicesrequesttypedef).
+[ListDevicesRequestRequestTypeDef](./type_defs.md#listdevicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -273,7 +285,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListDevicesResponseResponseTypeDef](./type_defs.md#listdevicesresponseresponsetypedef).
+[ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -286,14 +298,14 @@ Boto3 documentation:
 [IoT1ClickDevicesService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -305,7 +317,7 @@ Boto3 documentation:
 [IoT1ClickDevicesService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -322,14 +334,14 @@ Boto3 documentation:
 [IoT1ClickDevicesService.Client.unclaim_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.unclaim_device)
 
 Arguments mapping described in
-[UnclaimDeviceRequestTypeDef](./type_defs.md#unclaimdevicerequesttypedef).
+[UnclaimDeviceRequestRequestTypeDef](./type_defs.md#unclaimdevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DeviceId`: `str` *(required)*
 
 Returns
-[UnclaimDeviceResponseResponseTypeDef](./type_defs.md#unclaimdeviceresponseresponsetypedef).
+[UnclaimDeviceResponseTypeDef](./type_defs.md#unclaimdeviceresponsetypedef).
 
 ### untag_resource
 
@@ -342,7 +354,7 @@ Boto3 documentation:
 [IoT1ClickDevicesService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -361,7 +373,7 @@ Boto3 documentation:
 [IoT1ClickDevicesService.Client.update_device_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.update_device_state)
 
 Arguments mapping described in
-[UpdateDeviceStateRequestTypeDef](./type_defs.md#updatedevicestaterequesttypedef).
+[UpdateDeviceStateRequestRequestTypeDef](./type_defs.md#updatedevicestaterequestrequesttypedef).
 
 Keyword-only arguments:
 

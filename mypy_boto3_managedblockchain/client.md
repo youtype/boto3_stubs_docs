@@ -11,6 +11,7 @@ type annotations stubs module
   - [ManagedBlockchainClient](#managedblockchainclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_member](#create_member)
     - [create_network](#create_network)
@@ -81,6 +82,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ManagedBlockchainClient exceptions.
+
+Type annotations for `boto3.client("managedblockchain").exceptions` method.
+
+Boto3 documentation:
+[ManagedBlockchain.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -106,7 +118,7 @@ Boto3 documentation:
 [ManagedBlockchain.Client.create_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_member)
 
 Arguments mapping described in
-[CreateMemberInputTypeDef](./type_defs.md#creatememberinputtypedef).
+[CreateMemberInputRequestTypeDef](./type_defs.md#creatememberinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -117,8 +129,7 @@ Keyword-only arguments:
   [MemberConfigurationTypeDef](./type_defs.md#memberconfigurationtypedef)
   *(required)*
 
-Returns
-[CreateMemberOutputResponseTypeDef](./type_defs.md#creatememberoutputresponsetypedef).
+Returns [CreateMemberOutputTypeDef](./type_defs.md#creatememberoutputtypedef).
 
 ### create_network
 
@@ -130,7 +141,7 @@ Boto3 documentation:
 [ManagedBlockchain.Client.create_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_network)
 
 Arguments mapping described in
-[CreateNetworkInputTypeDef](./type_defs.md#createnetworkinputtypedef).
+[CreateNetworkInputRequestTypeDef](./type_defs.md#createnetworkinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -149,7 +160,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateNetworkOutputResponseTypeDef](./type_defs.md#createnetworkoutputresponsetypedef).
+[CreateNetworkOutputTypeDef](./type_defs.md#createnetworkoutputtypedef).
 
 ### create_node
 
@@ -161,7 +172,7 @@ Boto3 documentation:
 [ManagedBlockchain.Client.create_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_node)
 
 Arguments mapping described in
-[CreateNodeInputTypeDef](./type_defs.md#createnodeinputtypedef).
+[CreateNodeInputRequestTypeDef](./type_defs.md#createnodeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -173,8 +184,7 @@ Keyword-only arguments:
 - `MemberId`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-Returns
-[CreateNodeOutputResponseTypeDef](./type_defs.md#createnodeoutputresponsetypedef).
+Returns [CreateNodeOutputTypeDef](./type_defs.md#createnodeoutputtypedef).
 
 ### create_proposal
 
@@ -189,7 +199,7 @@ Boto3 documentation:
 [ManagedBlockchain.Client.create_proposal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_proposal)
 
 Arguments mapping described in
-[CreateProposalInputTypeDef](./type_defs.md#createproposalinputtypedef).
+[CreateProposalInputRequestTypeDef](./type_defs.md#createproposalinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -202,7 +212,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateProposalOutputResponseTypeDef](./type_defs.md#createproposaloutputresponsetypedef).
+[CreateProposalOutputTypeDef](./type_defs.md#createproposaloutputtypedef).
 
 ### delete_member
 
@@ -214,7 +224,7 @@ Boto3 documentation:
 [ManagedBlockchain.Client.delete_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.delete_member)
 
 Arguments mapping described in
-[DeleteMemberInputTypeDef](./type_defs.md#deletememberinputtypedef).
+[DeleteMemberInputRequestTypeDef](./type_defs.md#deletememberinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -233,7 +243,7 @@ Boto3 documentation:
 [ManagedBlockchain.Client.delete_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.delete_node)
 
 Arguments mapping described in
-[DeleteNodeInputTypeDef](./type_defs.md#deletenodeinputtypedef).
+[DeleteNodeInputRequestTypeDef](./type_defs.md#deletenodeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -272,15 +282,14 @@ Boto3 documentation:
 [ManagedBlockchain.Client.get_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_member)
 
 Arguments mapping described in
-[GetMemberInputTypeDef](./type_defs.md#getmemberinputtypedef).
+[GetMemberInputRequestTypeDef](./type_defs.md#getmemberinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `NetworkId`: `str` *(required)*
 - `MemberId`: `str` *(required)*
 
-Returns
-[GetMemberOutputResponseTypeDef](./type_defs.md#getmemberoutputresponsetypedef).
+Returns [GetMemberOutputTypeDef](./type_defs.md#getmemberoutputtypedef).
 
 ### get_network
 
@@ -292,14 +301,13 @@ Boto3 documentation:
 [ManagedBlockchain.Client.get_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_network)
 
 Arguments mapping described in
-[GetNetworkInputTypeDef](./type_defs.md#getnetworkinputtypedef).
+[GetNetworkInputRequestTypeDef](./type_defs.md#getnetworkinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `NetworkId`: `str` *(required)*
 
-Returns
-[GetNetworkOutputResponseTypeDef](./type_defs.md#getnetworkoutputresponsetypedef).
+Returns [GetNetworkOutputTypeDef](./type_defs.md#getnetworkoutputtypedef).
 
 ### get_node
 
@@ -311,7 +319,7 @@ Boto3 documentation:
 [ManagedBlockchain.Client.get_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_node)
 
 Arguments mapping described in
-[GetNodeInputTypeDef](./type_defs.md#getnodeinputtypedef).
+[GetNodeInputRequestTypeDef](./type_defs.md#getnodeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -319,8 +327,7 @@ Keyword-only arguments:
 - `NodeId`: `str` *(required)*
 - `MemberId`: `str`
 
-Returns
-[GetNodeOutputResponseTypeDef](./type_defs.md#getnodeoutputresponsetypedef).
+Returns [GetNodeOutputTypeDef](./type_defs.md#getnodeoutputtypedef).
 
 ### get_proposal
 
@@ -332,15 +339,14 @@ Boto3 documentation:
 [ManagedBlockchain.Client.get_proposal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_proposal)
 
 Arguments mapping described in
-[GetProposalInputTypeDef](./type_defs.md#getproposalinputtypedef).
+[GetProposalInputRequestTypeDef](./type_defs.md#getproposalinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `NetworkId`: `str` *(required)*
 - `ProposalId`: `str` *(required)*
 
-Returns
-[GetProposalOutputResponseTypeDef](./type_defs.md#getproposaloutputresponsetypedef).
+Returns [GetProposalOutputTypeDef](./type_defs.md#getproposaloutputtypedef).
 
 ### list_invitations
 
@@ -353,7 +359,7 @@ Boto3 documentation:
 [ManagedBlockchain.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_invitations)
 
 Arguments mapping described in
-[ListInvitationsInputTypeDef](./type_defs.md#listinvitationsinputtypedef).
+[ListInvitationsInputRequestTypeDef](./type_defs.md#listinvitationsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -361,7 +367,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListInvitationsOutputResponseTypeDef](./type_defs.md#listinvitationsoutputresponsetypedef).
+[ListInvitationsOutputTypeDef](./type_defs.md#listinvitationsoutputtypedef).
 
 ### list_members
 
@@ -374,7 +380,7 @@ Boto3 documentation:
 [ManagedBlockchain.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_members)
 
 Arguments mapping described in
-[ListMembersInputTypeDef](./type_defs.md#listmembersinputtypedef).
+[ListMembersInputRequestTypeDef](./type_defs.md#listmembersinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -385,8 +391,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListMembersOutputResponseTypeDef](./type_defs.md#listmembersoutputresponsetypedef).
+Returns [ListMembersOutputTypeDef](./type_defs.md#listmembersoutputtypedef).
 
 ### list_networks
 
@@ -399,7 +404,7 @@ Boto3 documentation:
 [ManagedBlockchain.Client.list_networks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_networks)
 
 Arguments mapping described in
-[ListNetworksInputTypeDef](./type_defs.md#listnetworksinputtypedef).
+[ListNetworksInputRequestTypeDef](./type_defs.md#listnetworksinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -409,8 +414,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListNetworksOutputResponseTypeDef](./type_defs.md#listnetworksoutputresponsetypedef).
+Returns [ListNetworksOutputTypeDef](./type_defs.md#listnetworksoutputtypedef).
 
 ### list_nodes
 
@@ -422,7 +426,7 @@ Boto3 documentation:
 [ManagedBlockchain.Client.list_nodes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_nodes)
 
 Arguments mapping described in
-[ListNodesInputTypeDef](./type_defs.md#listnodesinputtypedef).
+[ListNodesInputRequestTypeDef](./type_defs.md#listnodesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -432,8 +436,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListNodesOutputResponseTypeDef](./type_defs.md#listnodesoutputresponsetypedef).
+Returns [ListNodesOutputTypeDef](./type_defs.md#listnodesoutputtypedef).
 
 ### list_proposal_votes
 
@@ -447,7 +450,7 @@ Boto3 documentation:
 [ManagedBlockchain.Client.list_proposal_votes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_proposal_votes)
 
 Arguments mapping described in
-[ListProposalVotesInputTypeDef](./type_defs.md#listproposalvotesinputtypedef).
+[ListProposalVotesInputRequestTypeDef](./type_defs.md#listproposalvotesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -457,7 +460,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListProposalVotesOutputResponseTypeDef](./type_defs.md#listproposalvotesoutputresponsetypedef).
+[ListProposalVotesOutputTypeDef](./type_defs.md#listproposalvotesoutputtypedef).
 
 ### list_proposals
 
@@ -469,7 +472,7 @@ Boto3 documentation:
 [ManagedBlockchain.Client.list_proposals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_proposals)
 
 Arguments mapping described in
-[ListProposalsInputTypeDef](./type_defs.md#listproposalsinputtypedef).
+[ListProposalsInputRequestTypeDef](./type_defs.md#listproposalsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -478,7 +481,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListProposalsOutputResponseTypeDef](./type_defs.md#listproposalsoutputresponsetypedef).
+[ListProposalsOutputTypeDef](./type_defs.md#listproposalsoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -491,14 +494,14 @@ Boto3 documentation:
 [ManagedBlockchain.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### reject_invitation
 
@@ -511,7 +514,7 @@ Boto3 documentation:
 [ManagedBlockchain.Client.reject_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.reject_invitation)
 
 Arguments mapping described in
-[RejectInvitationInputTypeDef](./type_defs.md#rejectinvitationinputtypedef).
+[RejectInvitationInputRequestTypeDef](./type_defs.md#rejectinvitationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -530,7 +533,7 @@ Boto3 documentation:
 [ManagedBlockchain.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -549,7 +552,7 @@ Boto3 documentation:
 [ManagedBlockchain.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -568,7 +571,7 @@ Boto3 documentation:
 [ManagedBlockchain.Client.update_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.update_member)
 
 Arguments mapping described in
-[UpdateMemberInputTypeDef](./type_defs.md#updatememberinputtypedef).
+[UpdateMemberInputRequestTypeDef](./type_defs.md#updatememberinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -589,7 +592,7 @@ Boto3 documentation:
 [ManagedBlockchain.Client.update_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.update_node)
 
 Arguments mapping described in
-[UpdateNodeInputTypeDef](./type_defs.md#updatenodeinputtypedef).
+[UpdateNodeInputRequestTypeDef](./type_defs.md#updatenodeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -612,7 +615,7 @@ Boto3 documentation:
 [ManagedBlockchain.Client.vote_on_proposal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.vote_on_proposal)
 
 Arguments mapping described in
-[VoteOnProposalInputTypeDef](./type_defs.md#voteonproposalinputtypedef).
+[VoteOnProposalInputRequestTypeDef](./type_defs.md#voteonproposalinputrequesttypedef).
 
 Keyword-only arguments:
 

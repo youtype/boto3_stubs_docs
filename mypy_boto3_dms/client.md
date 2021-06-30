@@ -11,6 +11,7 @@ type annotations stubs module
   - [DatabaseMigrationServiceClient](#databasemigrationserviceclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_tags_to_resource](#add_tags_to_resource)
     - [apply_pending_maintenance_action](#apply_pending_maintenance_action)
     - [can_paginate](#can_paginate)
@@ -128,6 +129,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+DatabaseMigrationServiceClient exceptions.
+
+Type annotations for `boto3.client("dms").exceptions` method.
+
+Boto3 documentation:
+[DatabaseMigrationService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_tags_to_resource
 
 .
@@ -138,7 +150,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.add_tags_to_resource)
 
 Arguments mapping described in
-[AddTagsToResourceMessageTypeDef](./type_defs.md#addtagstoresourcemessagetypedef).
+[AddTagsToResourceMessageRequestTypeDef](./type_defs.md#addtagstoresourcemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -159,7 +171,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.apply_pending_maintenance_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.apply_pending_maintenance_action)
 
 Arguments mapping described in
-[ApplyPendingMaintenanceActionMessageTypeDef](./type_defs.md#applypendingmaintenanceactionmessagetypedef).
+[ApplyPendingMaintenanceActionMessageRequestTypeDef](./type_defs.md#applypendingmaintenanceactionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -168,7 +180,7 @@ Keyword-only arguments:
 - `OptInType`: `str` *(required)*
 
 Returns
-[ApplyPendingMaintenanceActionResponseResponseTypeDef](./type_defs.md#applypendingmaintenanceactionresponseresponsetypedef).
+[ApplyPendingMaintenanceActionResponseTypeDef](./type_defs.md#applypendingmaintenanceactionresponsetypedef).
 
 ### can_paginate
 
@@ -196,14 +208,14 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.cancel_replication_task_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.cancel_replication_task_assessment_run)
 
 Arguments mapping described in
-[CancelReplicationTaskAssessmentRunMessageTypeDef](./type_defs.md#cancelreplicationtaskassessmentrunmessagetypedef).
+[CancelReplicationTaskAssessmentRunMessageRequestTypeDef](./type_defs.md#cancelreplicationtaskassessmentrunmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ReplicationTaskAssessmentRunArn`: `str` *(required)*
 
 Returns
-[CancelReplicationTaskAssessmentRunResponseResponseTypeDef](./type_defs.md#cancelreplicationtaskassessmentrunresponseresponsetypedef).
+[CancelReplicationTaskAssessmentRunResponseTypeDef](./type_defs.md#cancelreplicationtaskassessmentrunresponsetypedef).
 
 ### create_endpoint
 
@@ -215,7 +227,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.create_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_endpoint)
 
 Arguments mapping described in
-[CreateEndpointMessageTypeDef](./type_defs.md#createendpointmessagetypedef).
+[CreateEndpointMessageRequestTypeDef](./type_defs.md#createendpointmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -267,7 +279,7 @@ Keyword-only arguments:
 - `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
 
 Returns
-[CreateEndpointResponseResponseTypeDef](./type_defs.md#createendpointresponseresponsetypedef).
+[CreateEndpointResponseTypeDef](./type_defs.md#createendpointresponsetypedef).
 
 ### create_event_subscription
 
@@ -279,7 +291,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.create_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_event_subscription)
 
 Arguments mapping described in
-[CreateEventSubscriptionMessageTypeDef](./type_defs.md#createeventsubscriptionmessagetypedef).
+[CreateEventSubscriptionMessageRequestTypeDef](./type_defs.md#createeventsubscriptionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -292,7 +304,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateEventSubscriptionResponseResponseTypeDef](./type_defs.md#createeventsubscriptionresponseresponsetypedef).
+[CreateEventSubscriptionResponseTypeDef](./type_defs.md#createeventsubscriptionresponsetypedef).
 
 ### create_replication_instance
 
@@ -304,7 +316,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.create_replication_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_instance)
 
 Arguments mapping described in
-[CreateReplicationInstanceMessageTypeDef](./type_defs.md#createreplicationinstancemessagetypedef).
+[CreateReplicationInstanceMessageRequestTypeDef](./type_defs.md#createreplicationinstancemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -325,7 +337,7 @@ Keyword-only arguments:
 - `ResourceIdentifier`: `str`
 
 Returns
-[CreateReplicationInstanceResponseResponseTypeDef](./type_defs.md#createreplicationinstanceresponseresponsetypedef).
+[CreateReplicationInstanceResponseTypeDef](./type_defs.md#createreplicationinstanceresponsetypedef).
 
 ### create_replication_subnet_group
 
@@ -338,7 +350,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.create_replication_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_subnet_group)
 
 Arguments mapping described in
-[CreateReplicationSubnetGroupMessageTypeDef](./type_defs.md#createreplicationsubnetgroupmessagetypedef).
+[CreateReplicationSubnetGroupMessageRequestTypeDef](./type_defs.md#createreplicationsubnetgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -348,7 +360,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateReplicationSubnetGroupResponseResponseTypeDef](./type_defs.md#createreplicationsubnetgroupresponseresponsetypedef).
+[CreateReplicationSubnetGroupResponseTypeDef](./type_defs.md#createreplicationsubnetgroupresponsetypedef).
 
 ### create_replication_task
 
@@ -360,7 +372,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.create_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_task)
 
 Arguments mapping described in
-[CreateReplicationTaskMessageTypeDef](./type_defs.md#createreplicationtaskmessagetypedef).
+[CreateReplicationTaskMessageRequestTypeDef](./type_defs.md#createreplicationtaskmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -380,7 +392,7 @@ Keyword-only arguments:
 - `ResourceIdentifier`: `str`
 
 Returns
-[CreateReplicationTaskResponseResponseTypeDef](./type_defs.md#createreplicationtaskresponseresponsetypedef).
+[CreateReplicationTaskResponseTypeDef](./type_defs.md#createreplicationtaskresponsetypedef).
 
 ### delete_certificate
 
@@ -392,14 +404,14 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.delete_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_certificate)
 
 Arguments mapping described in
-[DeleteCertificateMessageTypeDef](./type_defs.md#deletecertificatemessagetypedef).
+[DeleteCertificateMessageRequestTypeDef](./type_defs.md#deletecertificatemessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
 
 Returns
-[DeleteCertificateResponseResponseTypeDef](./type_defs.md#deletecertificateresponseresponsetypedef).
+[DeleteCertificateResponseTypeDef](./type_defs.md#deletecertificateresponsetypedef).
 
 ### delete_connection
 
@@ -411,7 +423,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_connection)
 
 Arguments mapping described in
-[DeleteConnectionMessageTypeDef](./type_defs.md#deleteconnectionmessagetypedef).
+[DeleteConnectionMessageRequestTypeDef](./type_defs.md#deleteconnectionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -419,7 +431,7 @@ Keyword-only arguments:
 - `ReplicationInstanceArn`: `str` *(required)*
 
 Returns
-[DeleteConnectionResponseResponseTypeDef](./type_defs.md#deleteconnectionresponseresponsetypedef).
+[DeleteConnectionResponseTypeDef](./type_defs.md#deleteconnectionresponsetypedef).
 
 ### delete_endpoint
 
@@ -431,14 +443,14 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_endpoint)
 
 Arguments mapping described in
-[DeleteEndpointMessageTypeDef](./type_defs.md#deleteendpointmessagetypedef).
+[DeleteEndpointMessageRequestTypeDef](./type_defs.md#deleteendpointmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `EndpointArn`: `str` *(required)*
 
 Returns
-[DeleteEndpointResponseResponseTypeDef](./type_defs.md#deleteendpointresponseresponsetypedef).
+[DeleteEndpointResponseTypeDef](./type_defs.md#deleteendpointresponsetypedef).
 
 ### delete_event_subscription
 
@@ -450,14 +462,14 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.delete_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_event_subscription)
 
 Arguments mapping described in
-[DeleteEventSubscriptionMessageTypeDef](./type_defs.md#deleteeventsubscriptionmessagetypedef).
+[DeleteEventSubscriptionMessageRequestTypeDef](./type_defs.md#deleteeventsubscriptionmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `SubscriptionName`: `str` *(required)*
 
 Returns
-[DeleteEventSubscriptionResponseResponseTypeDef](./type_defs.md#deleteeventsubscriptionresponseresponsetypedef).
+[DeleteEventSubscriptionResponseTypeDef](./type_defs.md#deleteeventsubscriptionresponsetypedef).
 
 ### delete_replication_instance
 
@@ -469,14 +481,14 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.delete_replication_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_instance)
 
 Arguments mapping described in
-[DeleteReplicationInstanceMessageTypeDef](./type_defs.md#deletereplicationinstancemessagetypedef).
+[DeleteReplicationInstanceMessageRequestTypeDef](./type_defs.md#deletereplicationinstancemessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ReplicationInstanceArn`: `str` *(required)*
 
 Returns
-[DeleteReplicationInstanceResponseResponseTypeDef](./type_defs.md#deletereplicationinstanceresponseresponsetypedef).
+[DeleteReplicationInstanceResponseTypeDef](./type_defs.md#deletereplicationinstanceresponsetypedef).
 
 ### delete_replication_subnet_group
 
@@ -489,7 +501,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.delete_replication_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_subnet_group)
 
 Arguments mapping described in
-[DeleteReplicationSubnetGroupMessageTypeDef](./type_defs.md#deletereplicationsubnetgroupmessagetypedef).
+[DeleteReplicationSubnetGroupMessageRequestTypeDef](./type_defs.md#deletereplicationsubnetgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -507,14 +519,14 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.delete_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_task)
 
 Arguments mapping described in
-[DeleteReplicationTaskMessageTypeDef](./type_defs.md#deletereplicationtaskmessagetypedef).
+[DeleteReplicationTaskMessageRequestTypeDef](./type_defs.md#deletereplicationtaskmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ReplicationTaskArn`: `str` *(required)*
 
 Returns
-[DeleteReplicationTaskResponseResponseTypeDef](./type_defs.md#deletereplicationtaskresponseresponsetypedef).
+[DeleteReplicationTaskResponseTypeDef](./type_defs.md#deletereplicationtaskresponsetypedef).
 
 ### delete_replication_task_assessment_run
 
@@ -527,14 +539,14 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.delete_replication_task_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_task_assessment_run)
 
 Arguments mapping described in
-[DeleteReplicationTaskAssessmentRunMessageTypeDef](./type_defs.md#deletereplicationtaskassessmentrunmessagetypedef).
+[DeleteReplicationTaskAssessmentRunMessageRequestTypeDef](./type_defs.md#deletereplicationtaskassessmentrunmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ReplicationTaskAssessmentRunArn`: `str` *(required)*
 
 Returns
-[DeleteReplicationTaskAssessmentRunResponseResponseTypeDef](./type_defs.md#deletereplicationtaskassessmentrunresponseresponsetypedef).
+[DeleteReplicationTaskAssessmentRunResponseTypeDef](./type_defs.md#deletereplicationtaskassessmentrunresponsetypedef).
 
 ### describe_account_attributes
 
@@ -546,7 +558,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_account_attributes)
 
 Returns
-[DescribeAccountAttributesResponseResponseTypeDef](./type_defs.md#describeaccountattributesresponseresponsetypedef).
+[DescribeAccountAttributesResponseTypeDef](./type_defs.md#describeaccountattributesresponsetypedef).
 
 ### describe_applicable_individual_assessments
 
@@ -560,7 +572,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.describe_applicable_individual_assessments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_applicable_individual_assessments)
 
 Arguments mapping described in
-[DescribeApplicableIndividualAssessmentsMessageTypeDef](./type_defs.md#describeapplicableindividualassessmentsmessagetypedef).
+[DescribeApplicableIndividualAssessmentsMessageRequestTypeDef](./type_defs.md#describeapplicableindividualassessmentsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -574,7 +586,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeApplicableIndividualAssessmentsResponseResponseTypeDef](./type_defs.md#describeapplicableindividualassessmentsresponseresponsetypedef).
+[DescribeApplicableIndividualAssessmentsResponseTypeDef](./type_defs.md#describeapplicableindividualassessmentsresponsetypedef).
 
 ### describe_certificates
 
@@ -586,7 +598,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.describe_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_certificates)
 
 Arguments mapping described in
-[DescribeCertificatesMessageTypeDef](./type_defs.md#describecertificatesmessagetypedef).
+[DescribeCertificatesMessageRequestTypeDef](./type_defs.md#describecertificatesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -595,7 +607,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeCertificatesResponseResponseTypeDef](./type_defs.md#describecertificatesresponseresponsetypedef).
+[DescribeCertificatesResponseTypeDef](./type_defs.md#describecertificatesresponsetypedef).
 
 ### describe_connections
 
@@ -608,7 +620,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.describe_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_connections)
 
 Arguments mapping described in
-[DescribeConnectionsMessageTypeDef](./type_defs.md#describeconnectionsmessagetypedef).
+[DescribeConnectionsMessageRequestTypeDef](./type_defs.md#describeconnectionsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -617,7 +629,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeConnectionsResponseResponseTypeDef](./type_defs.md#describeconnectionsresponseresponsetypedef).
+[DescribeConnectionsResponseTypeDef](./type_defs.md#describeconnectionsresponsetypedef).
 
 ### describe_endpoint_settings
 
@@ -630,7 +642,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.describe_endpoint_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoint_settings)
 
 Arguments mapping described in
-[DescribeEndpointSettingsMessageTypeDef](./type_defs.md#describeendpointsettingsmessagetypedef).
+[DescribeEndpointSettingsMessageRequestTypeDef](./type_defs.md#describeendpointsettingsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -639,7 +651,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeEndpointSettingsResponseResponseTypeDef](./type_defs.md#describeendpointsettingsresponseresponsetypedef).
+[DescribeEndpointSettingsResponseTypeDef](./type_defs.md#describeendpointsettingsresponsetypedef).
 
 ### describe_endpoint_types
 
@@ -651,7 +663,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.describe_endpoint_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoint_types)
 
 Arguments mapping described in
-[DescribeEndpointTypesMessageTypeDef](./type_defs.md#describeendpointtypesmessagetypedef).
+[DescribeEndpointTypesMessageRequestTypeDef](./type_defs.md#describeendpointtypesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -660,7 +672,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeEndpointTypesResponseResponseTypeDef](./type_defs.md#describeendpointtypesresponseresponsetypedef).
+[DescribeEndpointTypesResponseTypeDef](./type_defs.md#describeendpointtypesresponsetypedef).
 
 ### describe_endpoints
 
@@ -672,7 +684,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoints)
 
 Arguments mapping described in
-[DescribeEndpointsMessageTypeDef](./type_defs.md#describeendpointsmessagetypedef).
+[DescribeEndpointsMessageRequestTypeDef](./type_defs.md#describeendpointsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -681,7 +693,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeEndpointsResponseResponseTypeDef](./type_defs.md#describeendpointsresponseresponsetypedef).
+[DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
 
 ### describe_event_categories
 
@@ -693,7 +705,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.describe_event_categories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_event_categories)
 
 Arguments mapping described in
-[DescribeEventCategoriesMessageTypeDef](./type_defs.md#describeeventcategoriesmessagetypedef).
+[DescribeEventCategoriesMessageRequestTypeDef](./type_defs.md#describeeventcategoriesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -701,7 +713,7 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[DescribeEventCategoriesResponseResponseTypeDef](./type_defs.md#describeeventcategoriesresponseresponsetypedef).
+[DescribeEventCategoriesResponseTypeDef](./type_defs.md#describeeventcategoriesresponsetypedef).
 
 ### describe_event_subscriptions
 
@@ -713,7 +725,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.describe_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_event_subscriptions)
 
 Arguments mapping described in
-[DescribeEventSubscriptionsMessageTypeDef](./type_defs.md#describeeventsubscriptionsmessagetypedef).
+[DescribeEventSubscriptionsMessageRequestTypeDef](./type_defs.md#describeeventsubscriptionsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -723,7 +735,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeEventSubscriptionsResponseResponseTypeDef](./type_defs.md#describeeventsubscriptionsresponseresponsetypedef).
+[DescribeEventSubscriptionsResponseTypeDef](./type_defs.md#describeeventsubscriptionsresponsetypedef).
 
 ### describe_events
 
@@ -735,7 +747,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_events)
 
 Arguments mapping described in
-[DescribeEventsMessageTypeDef](./type_defs.md#describeeventsmessagetypedef).
+[DescribeEventsMessageRequestTypeDef](./type_defs.md#describeeventsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -751,7 +763,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeEventsResponseResponseTypeDef](./type_defs.md#describeeventsresponseresponsetypedef).
+[DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef).
 
 ### describe_orderable_replication_instances
 
@@ -765,7 +777,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.describe_orderable_replication_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_orderable_replication_instances)
 
 Arguments mapping described in
-[DescribeOrderableReplicationInstancesMessageTypeDef](./type_defs.md#describeorderablereplicationinstancesmessagetypedef).
+[DescribeOrderableReplicationInstancesMessageRequestTypeDef](./type_defs.md#describeorderablereplicationinstancesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -773,7 +785,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeOrderableReplicationInstancesResponseResponseTypeDef](./type_defs.md#describeorderablereplicationinstancesresponseresponsetypedef).
+[DescribeOrderableReplicationInstancesResponseTypeDef](./type_defs.md#describeorderablereplicationinstancesresponsetypedef).
 
 ### describe_pending_maintenance_actions
 
@@ -789,7 +801,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.describe_pending_maintenance_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_pending_maintenance_actions)
 
 Arguments mapping described in
-[DescribePendingMaintenanceActionsMessageTypeDef](./type_defs.md#describependingmaintenanceactionsmessagetypedef).
+[DescribePendingMaintenanceActionsMessageRequestTypeDef](./type_defs.md#describependingmaintenanceactionsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -799,7 +811,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 
 Returns
-[DescribePendingMaintenanceActionsResponseResponseTypeDef](./type_defs.md#describependingmaintenanceactionsresponseresponsetypedef).
+[DescribePendingMaintenanceActionsResponseTypeDef](./type_defs.md#describependingmaintenanceactionsresponsetypedef).
 
 ### describe_refresh_schemas_status
 
@@ -812,14 +824,14 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.describe_refresh_schemas_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_refresh_schemas_status)
 
 Arguments mapping described in
-[DescribeRefreshSchemasStatusMessageTypeDef](./type_defs.md#describerefreshschemasstatusmessagetypedef).
+[DescribeRefreshSchemasStatusMessageRequestTypeDef](./type_defs.md#describerefreshschemasstatusmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `EndpointArn`: `str` *(required)*
 
 Returns
-[DescribeRefreshSchemasStatusResponseResponseTypeDef](./type_defs.md#describerefreshschemasstatusresponseresponsetypedef).
+[DescribeRefreshSchemasStatusResponseTypeDef](./type_defs.md#describerefreshschemasstatusresponsetypedef).
 
 ### describe_replication_instance_task_logs
 
@@ -832,7 +844,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.describe_replication_instance_task_logs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_instance_task_logs)
 
 Arguments mapping described in
-[DescribeReplicationInstanceTaskLogsMessageTypeDef](./type_defs.md#describereplicationinstancetasklogsmessagetypedef).
+[DescribeReplicationInstanceTaskLogsMessageRequestTypeDef](./type_defs.md#describereplicationinstancetasklogsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -841,7 +853,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeReplicationInstanceTaskLogsResponseResponseTypeDef](./type_defs.md#describereplicationinstancetasklogsresponseresponsetypedef).
+[DescribeReplicationInstanceTaskLogsResponseTypeDef](./type_defs.md#describereplicationinstancetasklogsresponsetypedef).
 
 ### describe_replication_instances
 
@@ -855,7 +867,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.describe_replication_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_instances)
 
 Arguments mapping described in
-[DescribeReplicationInstancesMessageTypeDef](./type_defs.md#describereplicationinstancesmessagetypedef).
+[DescribeReplicationInstancesMessageRequestTypeDef](./type_defs.md#describereplicationinstancesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -864,7 +876,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeReplicationInstancesResponseResponseTypeDef](./type_defs.md#describereplicationinstancesresponseresponsetypedef).
+[DescribeReplicationInstancesResponseTypeDef](./type_defs.md#describereplicationinstancesresponsetypedef).
 
 ### describe_replication_subnet_groups
 
@@ -877,7 +889,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.describe_replication_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_subnet_groups)
 
 Arguments mapping described in
-[DescribeReplicationSubnetGroupsMessageTypeDef](./type_defs.md#describereplicationsubnetgroupsmessagetypedef).
+[DescribeReplicationSubnetGroupsMessageRequestTypeDef](./type_defs.md#describereplicationsubnetgroupsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -886,7 +898,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeReplicationSubnetGroupsResponseResponseTypeDef](./type_defs.md#describereplicationsubnetgroupsresponseresponsetypedef).
+[DescribeReplicationSubnetGroupsResponseTypeDef](./type_defs.md#describereplicationsubnetgroupsresponsetypedef).
 
 ### describe_replication_task_assessment_results
 
@@ -899,7 +911,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.describe_replication_task_assessment_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_assessment_results)
 
 Arguments mapping described in
-[DescribeReplicationTaskAssessmentResultsMessageTypeDef](./type_defs.md#describereplicationtaskassessmentresultsmessagetypedef).
+[DescribeReplicationTaskAssessmentResultsMessageRequestTypeDef](./type_defs.md#describereplicationtaskassessmentresultsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -908,7 +920,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeReplicationTaskAssessmentResultsResponseResponseTypeDef](./type_defs.md#describereplicationtaskassessmentresultsresponseresponsetypedef).
+[DescribeReplicationTaskAssessmentResultsResponseTypeDef](./type_defs.md#describereplicationtaskassessmentresultsresponsetypedef).
 
 ### describe_replication_task_assessment_runs
 
@@ -922,7 +934,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.describe_replication_task_assessment_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_assessment_runs)
 
 Arguments mapping described in
-[DescribeReplicationTaskAssessmentRunsMessageTypeDef](./type_defs.md#describereplicationtaskassessmentrunsmessagetypedef).
+[DescribeReplicationTaskAssessmentRunsMessageRequestTypeDef](./type_defs.md#describereplicationtaskassessmentrunsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -931,7 +943,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeReplicationTaskAssessmentRunsResponseResponseTypeDef](./type_defs.md#describereplicationtaskassessmentrunsresponseresponsetypedef).
+[DescribeReplicationTaskAssessmentRunsResponseTypeDef](./type_defs.md#describereplicationtaskassessmentrunsresponsetypedef).
 
 ### describe_replication_task_individual_assessments
 
@@ -944,7 +956,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.describe_replication_task_individual_assessments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_individual_assessments)
 
 Arguments mapping described in
-[DescribeReplicationTaskIndividualAssessmentsMessageTypeDef](./type_defs.md#describereplicationtaskindividualassessmentsmessagetypedef).
+[DescribeReplicationTaskIndividualAssessmentsMessageRequestTypeDef](./type_defs.md#describereplicationtaskindividualassessmentsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -953,7 +965,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeReplicationTaskIndividualAssessmentsResponseResponseTypeDef](./type_defs.md#describereplicationtaskindividualassessmentsresponseresponsetypedef).
+[DescribeReplicationTaskIndividualAssessmentsResponseTypeDef](./type_defs.md#describereplicationtaskindividualassessmentsresponsetypedef).
 
 ### describe_replication_tasks
 
@@ -965,7 +977,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.describe_replication_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_tasks)
 
 Arguments mapping described in
-[DescribeReplicationTasksMessageTypeDef](./type_defs.md#describereplicationtasksmessagetypedef).
+[DescribeReplicationTasksMessageRequestTypeDef](./type_defs.md#describereplicationtasksmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -975,7 +987,7 @@ Keyword-only arguments:
 - `WithoutSettings`: `bool`
 
 Returns
-[DescribeReplicationTasksResponseResponseTypeDef](./type_defs.md#describereplicationtasksresponseresponsetypedef).
+[DescribeReplicationTasksResponseTypeDef](./type_defs.md#describereplicationtasksresponsetypedef).
 
 ### describe_schemas
 
@@ -987,7 +999,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.describe_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_schemas)
 
 Arguments mapping described in
-[DescribeSchemasMessageTypeDef](./type_defs.md#describeschemasmessagetypedef).
+[DescribeSchemasMessageRequestTypeDef](./type_defs.md#describeschemasmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -996,7 +1008,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeSchemasResponseResponseTypeDef](./type_defs.md#describeschemasresponseresponsetypedef).
+[DescribeSchemasResponseTypeDef](./type_defs.md#describeschemasresponsetypedef).
 
 ### describe_table_statistics
 
@@ -1009,7 +1021,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.describe_table_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_table_statistics)
 
 Arguments mapping described in
-[DescribeTableStatisticsMessageTypeDef](./type_defs.md#describetablestatisticsmessagetypedef).
+[DescribeTableStatisticsMessageRequestTypeDef](./type_defs.md#describetablestatisticsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1019,7 +1031,7 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[DescribeTableStatisticsResponseResponseTypeDef](./type_defs.md#describetablestatisticsresponseresponsetypedef).
+[DescribeTableStatisticsResponseTypeDef](./type_defs.md#describetablestatisticsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -1049,7 +1061,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.import_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.import_certificate)
 
 Arguments mapping described in
-[ImportCertificateMessageTypeDef](./type_defs.md#importcertificatemessagetypedef).
+[ImportCertificateMessageRequestTypeDef](./type_defs.md#importcertificatemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1059,7 +1071,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[ImportCertificateResponseResponseTypeDef](./type_defs.md#importcertificateresponseresponsetypedef).
+[ImportCertificateResponseTypeDef](./type_defs.md#importcertificateresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -1071,14 +1083,14 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceMessageTypeDef](./type_defs.md#listtagsforresourcemessagetypedef).
+[ListTagsForResourceMessageRequestTypeDef](./type_defs.md#listtagsforresourcemessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### modify_endpoint
 
@@ -1090,7 +1102,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.modify_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_endpoint)
 
 Arguments mapping described in
-[ModifyEndpointMessageTypeDef](./type_defs.md#modifyendpointmessagetypedef).
+[ModifyEndpointMessageRequestTypeDef](./type_defs.md#modifyendpointmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1139,7 +1151,7 @@ Keyword-only arguments:
 - `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
 
 Returns
-[ModifyEndpointResponseResponseTypeDef](./type_defs.md#modifyendpointresponseresponsetypedef).
+[ModifyEndpointResponseTypeDef](./type_defs.md#modifyendpointresponsetypedef).
 
 ### modify_event_subscription
 
@@ -1151,7 +1163,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.modify_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_event_subscription)
 
 Arguments mapping described in
-[ModifyEventSubscriptionMessageTypeDef](./type_defs.md#modifyeventsubscriptionmessagetypedef).
+[ModifyEventSubscriptionMessageRequestTypeDef](./type_defs.md#modifyeventsubscriptionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1162,7 +1174,7 @@ Keyword-only arguments:
 - `Enabled`: `bool`
 
 Returns
-[ModifyEventSubscriptionResponseResponseTypeDef](./type_defs.md#modifyeventsubscriptionresponseresponsetypedef).
+[ModifyEventSubscriptionResponseTypeDef](./type_defs.md#modifyeventsubscriptionresponsetypedef).
 
 ### modify_replication_instance
 
@@ -1174,7 +1186,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.modify_replication_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_instance)
 
 Arguments mapping described in
-[ModifyReplicationInstanceMessageTypeDef](./type_defs.md#modifyreplicationinstancemessagetypedef).
+[ModifyReplicationInstanceMessageRequestTypeDef](./type_defs.md#modifyreplicationinstancemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1191,7 +1203,7 @@ Keyword-only arguments:
 - `ReplicationInstanceIdentifier`: `str`
 
 Returns
-[ModifyReplicationInstanceResponseResponseTypeDef](./type_defs.md#modifyreplicationinstanceresponseresponsetypedef).
+[ModifyReplicationInstanceResponseTypeDef](./type_defs.md#modifyreplicationinstanceresponsetypedef).
 
 ### modify_replication_subnet_group
 
@@ -1204,7 +1216,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.modify_replication_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_subnet_group)
 
 Arguments mapping described in
-[ModifyReplicationSubnetGroupMessageTypeDef](./type_defs.md#modifyreplicationsubnetgroupmessagetypedef).
+[ModifyReplicationSubnetGroupMessageRequestTypeDef](./type_defs.md#modifyreplicationsubnetgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1213,7 +1225,7 @@ Keyword-only arguments:
 - `ReplicationSubnetGroupDescription`: `str`
 
 Returns
-[ModifyReplicationSubnetGroupResponseResponseTypeDef](./type_defs.md#modifyreplicationsubnetgroupresponseresponsetypedef).
+[ModifyReplicationSubnetGroupResponseTypeDef](./type_defs.md#modifyreplicationsubnetgroupresponsetypedef).
 
 ### modify_replication_task
 
@@ -1225,7 +1237,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.modify_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_task)
 
 Arguments mapping described in
-[ModifyReplicationTaskMessageTypeDef](./type_defs.md#modifyreplicationtaskmessagetypedef).
+[ModifyReplicationTaskMessageRequestTypeDef](./type_defs.md#modifyreplicationtaskmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1241,7 +1253,7 @@ Keyword-only arguments:
 - `TaskData`: `str`
 
 Returns
-[ModifyReplicationTaskResponseResponseTypeDef](./type_defs.md#modifyreplicationtaskresponseresponsetypedef).
+[ModifyReplicationTaskResponseTypeDef](./type_defs.md#modifyreplicationtaskresponsetypedef).
 
 ### move_replication_task
 
@@ -1253,7 +1265,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.move_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.move_replication_task)
 
 Arguments mapping described in
-[MoveReplicationTaskMessageTypeDef](./type_defs.md#movereplicationtaskmessagetypedef).
+[MoveReplicationTaskMessageRequestTypeDef](./type_defs.md#movereplicationtaskmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1261,7 +1273,7 @@ Keyword-only arguments:
 - `TargetReplicationInstanceArn`: `str` *(required)*
 
 Returns
-[MoveReplicationTaskResponseResponseTypeDef](./type_defs.md#movereplicationtaskresponseresponsetypedef).
+[MoveReplicationTaskResponseTypeDef](./type_defs.md#movereplicationtaskresponsetypedef).
 
 ### reboot_replication_instance
 
@@ -1273,7 +1285,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.reboot_replication_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.reboot_replication_instance)
 
 Arguments mapping described in
-[RebootReplicationInstanceMessageTypeDef](./type_defs.md#rebootreplicationinstancemessagetypedef).
+[RebootReplicationInstanceMessageRequestTypeDef](./type_defs.md#rebootreplicationinstancemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1281,7 +1293,7 @@ Keyword-only arguments:
 - `ForceFailover`: `bool`
 
 Returns
-[RebootReplicationInstanceResponseResponseTypeDef](./type_defs.md#rebootreplicationinstanceresponseresponsetypedef).
+[RebootReplicationInstanceResponseTypeDef](./type_defs.md#rebootreplicationinstanceresponsetypedef).
 
 ### refresh_schemas
 
@@ -1293,7 +1305,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.refresh_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.refresh_schemas)
 
 Arguments mapping described in
-[RefreshSchemasMessageTypeDef](./type_defs.md#refreshschemasmessagetypedef).
+[RefreshSchemasMessageRequestTypeDef](./type_defs.md#refreshschemasmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1301,7 +1313,7 @@ Keyword-only arguments:
 - `ReplicationInstanceArn`: `str` *(required)*
 
 Returns
-[RefreshSchemasResponseResponseTypeDef](./type_defs.md#refreshschemasresponseresponsetypedef).
+[RefreshSchemasResponseTypeDef](./type_defs.md#refreshschemasresponsetypedef).
 
 ### reload_tables
 
@@ -1313,7 +1325,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.reload_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.reload_tables)
 
 Arguments mapping described in
-[ReloadTablesMessageTypeDef](./type_defs.md#reloadtablesmessagetypedef).
+[ReloadTablesMessageRequestTypeDef](./type_defs.md#reloadtablesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1324,7 +1336,7 @@ Keyword-only arguments:
 - `ReloadOption`: [ReloadOptionValueType](./literals.md#reloadoptionvaluetype)
 
 Returns
-[ReloadTablesResponseResponseTypeDef](./type_defs.md#reloadtablesresponseresponsetypedef).
+[ReloadTablesResponseTypeDef](./type_defs.md#reloadtablesresponsetypedef).
 
 ### remove_tags_from_resource
 
@@ -1336,7 +1348,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.remove_tags_from_resource)
 
 Arguments mapping described in
-[RemoveTagsFromResourceMessageTypeDef](./type_defs.md#removetagsfromresourcemessagetypedef).
+[RemoveTagsFromResourceMessageRequestTypeDef](./type_defs.md#removetagsfromresourcemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1355,7 +1367,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.start_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task)
 
 Arguments mapping described in
-[StartReplicationTaskMessageTypeDef](./type_defs.md#startreplicationtaskmessagetypedef).
+[StartReplicationTaskMessageRequestTypeDef](./type_defs.md#startreplicationtaskmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1368,7 +1380,7 @@ Keyword-only arguments:
 - `CdcStopPosition`: `str`
 
 Returns
-[StartReplicationTaskResponseResponseTypeDef](./type_defs.md#startreplicationtaskresponseresponsetypedef).
+[StartReplicationTaskResponseTypeDef](./type_defs.md#startreplicationtaskresponsetypedef).
 
 ### start_replication_task_assessment
 
@@ -1381,14 +1393,14 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.start_replication_task_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task_assessment)
 
 Arguments mapping described in
-[StartReplicationTaskAssessmentMessageTypeDef](./type_defs.md#startreplicationtaskassessmentmessagetypedef).
+[StartReplicationTaskAssessmentMessageRequestTypeDef](./type_defs.md#startreplicationtaskassessmentmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ReplicationTaskArn`: `str` *(required)*
 
 Returns
-[StartReplicationTaskAssessmentResponseResponseTypeDef](./type_defs.md#startreplicationtaskassessmentresponseresponsetypedef).
+[StartReplicationTaskAssessmentResponseTypeDef](./type_defs.md#startreplicationtaskassessmentresponsetypedef).
 
 ### start_replication_task_assessment_run
 
@@ -1402,7 +1414,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.start_replication_task_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task_assessment_run)
 
 Arguments mapping described in
-[StartReplicationTaskAssessmentRunMessageTypeDef](./type_defs.md#startreplicationtaskassessmentrunmessagetypedef).
+[StartReplicationTaskAssessmentRunMessageRequestTypeDef](./type_defs.md#startreplicationtaskassessmentrunmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1417,7 +1429,7 @@ Keyword-only arguments:
 - `Exclude`: `List`\[`str`\]
 
 Returns
-[StartReplicationTaskAssessmentRunResponseResponseTypeDef](./type_defs.md#startreplicationtaskassessmentrunresponseresponsetypedef).
+[StartReplicationTaskAssessmentRunResponseTypeDef](./type_defs.md#startreplicationtaskassessmentrunresponsetypedef).
 
 ### stop_replication_task
 
@@ -1429,14 +1441,14 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.stop_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.stop_replication_task)
 
 Arguments mapping described in
-[StopReplicationTaskMessageTypeDef](./type_defs.md#stopreplicationtaskmessagetypedef).
+[StopReplicationTaskMessageRequestTypeDef](./type_defs.md#stopreplicationtaskmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ReplicationTaskArn`: `str` *(required)*
 
 Returns
-[StopReplicationTaskResponseResponseTypeDef](./type_defs.md#stopreplicationtaskresponseresponsetypedef).
+[StopReplicationTaskResponseTypeDef](./type_defs.md#stopreplicationtaskresponsetypedef).
 
 ### test_connection
 
@@ -1448,7 +1460,7 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.test_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.test_connection)
 
 Arguments mapping described in
-[TestConnectionMessageTypeDef](./type_defs.md#testconnectionmessagetypedef).
+[TestConnectionMessageRequestTypeDef](./type_defs.md#testconnectionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1456,7 +1468,7 @@ Keyword-only arguments:
 - `EndpointArn`: `str` *(required)*
 
 Returns
-[TestConnectionResponseResponseTypeDef](./type_defs.md#testconnectionresponseresponsetypedef).
+[TestConnectionResponseTypeDef](./type_defs.md#testconnectionresponsetypedef).
 
 ### get_paginator
 

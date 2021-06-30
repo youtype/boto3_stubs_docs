@@ -9,11 +9,11 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 SagemakerEdgeManager module](#typed-dictionaries-for-boto3-sagemakeredgemanager-module)
   - [EdgeMetricTypeDef](#edgemetrictypedef)
-  - [GetDeviceRegistrationRequestTypeDef](#getdeviceregistrationrequesttypedef)
-  - [GetDeviceRegistrationResultResponseTypeDef](#getdeviceregistrationresultresponsetypedef)
+  - [GetDeviceRegistrationRequestRequestTypeDef](#getdeviceregistrationrequestrequesttypedef)
+  - [GetDeviceRegistrationResultTypeDef](#getdeviceregistrationresulttypedef)
   - [ModelTypeDef](#modeltypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SendHeartbeatRequestTypeDef](#sendheartbeatrequesttypedef)
+  - [SendHeartbeatRequestRequestTypeDef](#sendheartbeatrequestrequesttypedef)
 
 ## EdgeMetricTypeDef
 
@@ -28,10 +28,10 @@ Optional fields:
 - `Value`: `float`
 - `Timestamp`: `Union`\[`datetime`, `str`\]
 
-## GetDeviceRegistrationRequestTypeDef
+## GetDeviceRegistrationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sagemaker_edge.type_defs import GetDeviceRegistrationRequestTypeDef
+from mypy_boto3_sagemaker_edge.type_defs import GetDeviceRegistrationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -39,10 +39,10 @@ Required fields:
 - `DeviceName`: `str`
 - `DeviceFleetName`: `str`
 
-## GetDeviceRegistrationResultResponseTypeDef
+## GetDeviceRegistrationResultTypeDef
 
 ```python
-from mypy_boto3_sagemaker_edge.type_defs import GetDeviceRegistrationResultResponseTypeDef
+from mypy_boto3_sagemaker_edge.type_defs import GetDeviceRegistrationResultTypeDef
 ```
 
 Required fields:
@@ -81,10 +81,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## SendHeartbeatRequestTypeDef
+## SendHeartbeatRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sagemaker_edge.type_defs import SendHeartbeatRequestTypeDef
+from mypy_boto3_sagemaker_edge.type_defs import SendHeartbeatRequestRequestTypeDef
 ```
 
 Required fields:

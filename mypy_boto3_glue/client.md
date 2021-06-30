@@ -11,6 +11,7 @@ type annotations stubs module
   - [GlueClient](#glueclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [batch_create_partition](#batch_create_partition)
     - [batch_delete_connection](#batch_delete_connection)
     - [batch_delete_partition](#batch_delete_partition)
@@ -230,6 +231,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+GlueClient exceptions.
+
+Type annotations for `boto3.client("glue").exceptions` method.
+
+Boto3 documentation:
+[Glue.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### batch_create_partition
 
 Creates one or more partitions in a batch operation.
@@ -240,7 +252,7 @@ Boto3 documentation:
 [Glue.Client.batch_create_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_create_partition)
 
 Arguments mapping described in
-[BatchCreatePartitionRequestTypeDef](./type_defs.md#batchcreatepartitionrequesttypedef).
+[BatchCreatePartitionRequestRequestTypeDef](./type_defs.md#batchcreatepartitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -252,7 +264,7 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[BatchCreatePartitionResponseResponseTypeDef](./type_defs.md#batchcreatepartitionresponseresponsetypedef).
+[BatchCreatePartitionResponseTypeDef](./type_defs.md#batchcreatepartitionresponsetypedef).
 
 ### batch_delete_connection
 
@@ -264,7 +276,7 @@ Boto3 documentation:
 [Glue.Client.batch_delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_connection)
 
 Arguments mapping described in
-[BatchDeleteConnectionRequestTypeDef](./type_defs.md#batchdeleteconnectionrequesttypedef).
+[BatchDeleteConnectionRequestRequestTypeDef](./type_defs.md#batchdeleteconnectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -272,7 +284,7 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[BatchDeleteConnectionResponseResponseTypeDef](./type_defs.md#batchdeleteconnectionresponseresponsetypedef).
+[BatchDeleteConnectionResponseTypeDef](./type_defs.md#batchdeleteconnectionresponsetypedef).
 
 ### batch_delete_partition
 
@@ -284,7 +296,7 @@ Boto3 documentation:
 [Glue.Client.batch_delete_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_partition)
 
 Arguments mapping described in
-[BatchDeletePartitionRequestTypeDef](./type_defs.md#batchdeletepartitionrequesttypedef).
+[BatchDeletePartitionRequestRequestTypeDef](./type_defs.md#batchdeletepartitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -296,7 +308,7 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[BatchDeletePartitionResponseResponseTypeDef](./type_defs.md#batchdeletepartitionresponseresponsetypedef).
+[BatchDeletePartitionResponseTypeDef](./type_defs.md#batchdeletepartitionresponsetypedef).
 
 ### batch_delete_table
 
@@ -308,7 +320,7 @@ Boto3 documentation:
 [Glue.Client.batch_delete_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_table)
 
 Arguments mapping described in
-[BatchDeleteTableRequestTypeDef](./type_defs.md#batchdeletetablerequesttypedef).
+[BatchDeleteTableRequestRequestTypeDef](./type_defs.md#batchdeletetablerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -317,7 +329,7 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[BatchDeleteTableResponseResponseTypeDef](./type_defs.md#batchdeletetableresponseresponsetypedef).
+[BatchDeleteTableResponseTypeDef](./type_defs.md#batchdeletetableresponsetypedef).
 
 ### batch_delete_table_version
 
@@ -329,7 +341,7 @@ Boto3 documentation:
 [Glue.Client.batch_delete_table_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_table_version)
 
 Arguments mapping described in
-[BatchDeleteTableVersionRequestTypeDef](./type_defs.md#batchdeletetableversionrequesttypedef).
+[BatchDeleteTableVersionRequestRequestTypeDef](./type_defs.md#batchdeletetableversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -339,7 +351,7 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[BatchDeleteTableVersionResponseResponseTypeDef](./type_defs.md#batchdeletetableversionresponseresponsetypedef).
+[BatchDeleteTableVersionResponseTypeDef](./type_defs.md#batchdeletetableversionresponsetypedef).
 
 ### batch_get_crawlers
 
@@ -351,14 +363,14 @@ Boto3 documentation:
 [Glue.Client.batch_get_crawlers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_crawlers)
 
 Arguments mapping described in
-[BatchGetCrawlersRequestTypeDef](./type_defs.md#batchgetcrawlersrequesttypedef).
+[BatchGetCrawlersRequestRequestTypeDef](./type_defs.md#batchgetcrawlersrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `CrawlerNames`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetCrawlersResponseResponseTypeDef](./type_defs.md#batchgetcrawlersresponseresponsetypedef).
+[BatchGetCrawlersResponseTypeDef](./type_defs.md#batchgetcrawlersresponsetypedef).
 
 ### batch_get_dev_endpoints
 
@@ -371,14 +383,14 @@ Boto3 documentation:
 [Glue.Client.batch_get_dev_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_dev_endpoints)
 
 Arguments mapping described in
-[BatchGetDevEndpointsRequestTypeDef](./type_defs.md#batchgetdevendpointsrequesttypedef).
+[BatchGetDevEndpointsRequestRequestTypeDef](./type_defs.md#batchgetdevendpointsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DevEndpointNames`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetDevEndpointsResponseResponseTypeDef](./type_defs.md#batchgetdevendpointsresponseresponsetypedef).
+[BatchGetDevEndpointsResponseTypeDef](./type_defs.md#batchgetdevendpointsresponsetypedef).
 
 ### batch_get_jobs
 
@@ -390,14 +402,14 @@ Boto3 documentation:
 [Glue.Client.batch_get_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_jobs)
 
 Arguments mapping described in
-[BatchGetJobsRequestTypeDef](./type_defs.md#batchgetjobsrequesttypedef).
+[BatchGetJobsRequestRequestTypeDef](./type_defs.md#batchgetjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobNames`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetJobsResponseResponseTypeDef](./type_defs.md#batchgetjobsresponseresponsetypedef).
+[BatchGetJobsResponseTypeDef](./type_defs.md#batchgetjobsresponsetypedef).
 
 ### batch_get_partition
 
@@ -409,7 +421,7 @@ Boto3 documentation:
 [Glue.Client.batch_get_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_partition)
 
 Arguments mapping described in
-[BatchGetPartitionRequestTypeDef](./type_defs.md#batchgetpartitionrequesttypedef).
+[BatchGetPartitionRequestRequestTypeDef](./type_defs.md#batchgetpartitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -421,7 +433,7 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[BatchGetPartitionResponseResponseTypeDef](./type_defs.md#batchgetpartitionresponseresponsetypedef).
+[BatchGetPartitionResponseTypeDef](./type_defs.md#batchgetpartitionresponsetypedef).
 
 ### batch_get_triggers
 
@@ -433,14 +445,14 @@ Boto3 documentation:
 [Glue.Client.batch_get_triggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_triggers)
 
 Arguments mapping described in
-[BatchGetTriggersRequestTypeDef](./type_defs.md#batchgettriggersrequesttypedef).
+[BatchGetTriggersRequestRequestTypeDef](./type_defs.md#batchgettriggersrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TriggerNames`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetTriggersResponseResponseTypeDef](./type_defs.md#batchgettriggersresponseresponsetypedef).
+[BatchGetTriggersResponseTypeDef](./type_defs.md#batchgettriggersresponsetypedef).
 
 ### batch_get_workflows
 
@@ -452,7 +464,7 @@ Boto3 documentation:
 [Glue.Client.batch_get_workflows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_workflows)
 
 Arguments mapping described in
-[BatchGetWorkflowsRequestTypeDef](./type_defs.md#batchgetworkflowsrequesttypedef).
+[BatchGetWorkflowsRequestRequestTypeDef](./type_defs.md#batchgetworkflowsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -460,7 +472,7 @@ Keyword-only arguments:
 - `IncludeGraph`: `bool`
 
 Returns
-[BatchGetWorkflowsResponseResponseTypeDef](./type_defs.md#batchgetworkflowsresponseresponsetypedef).
+[BatchGetWorkflowsResponseTypeDef](./type_defs.md#batchgetworkflowsresponsetypedef).
 
 ### batch_stop_job_run
 
@@ -472,7 +484,7 @@ Boto3 documentation:
 [Glue.Client.batch_stop_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_stop_job_run)
 
 Arguments mapping described in
-[BatchStopJobRunRequestTypeDef](./type_defs.md#batchstopjobrunrequesttypedef).
+[BatchStopJobRunRequestRequestTypeDef](./type_defs.md#batchstopjobrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -480,7 +492,7 @@ Keyword-only arguments:
 - `JobRunIds`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchStopJobRunResponseResponseTypeDef](./type_defs.md#batchstopjobrunresponseresponsetypedef).
+[BatchStopJobRunResponseTypeDef](./type_defs.md#batchstopjobrunresponsetypedef).
 
 ### batch_update_partition
 
@@ -492,7 +504,7 @@ Boto3 documentation:
 [Glue.Client.batch_update_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_update_partition)
 
 Arguments mapping described in
-[BatchUpdatePartitionRequestTypeDef](./type_defs.md#batchupdatepartitionrequesttypedef).
+[BatchUpdatePartitionRequestRequestTypeDef](./type_defs.md#batchupdatepartitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -504,7 +516,7 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[BatchUpdatePartitionResponseResponseTypeDef](./type_defs.md#batchupdatepartitionresponseresponsetypedef).
+[BatchUpdatePartitionResponseTypeDef](./type_defs.md#batchupdatepartitionresponsetypedef).
 
 ### can_paginate
 
@@ -531,7 +543,7 @@ Boto3 documentation:
 [Glue.Client.cancel_ml_task_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.cancel_ml_task_run)
 
 Arguments mapping described in
-[CancelMLTaskRunRequestTypeDef](./type_defs.md#cancelmltaskrunrequesttypedef).
+[CancelMLTaskRunRequestRequestTypeDef](./type_defs.md#cancelmltaskrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -539,7 +551,7 @@ Keyword-only arguments:
 - `TaskRunId`: `str` *(required)*
 
 Returns
-[CancelMLTaskRunResponseResponseTypeDef](./type_defs.md#cancelmltaskrunresponseresponsetypedef).
+[CancelMLTaskRunResponseTypeDef](./type_defs.md#cancelmltaskrunresponsetypedef).
 
 ### check_schema_version_validity
 
@@ -552,7 +564,7 @@ Boto3 documentation:
 [Glue.Client.check_schema_version_validity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.check_schema_version_validity)
 
 Arguments mapping described in
-[CheckSchemaVersionValidityInputTypeDef](./type_defs.md#checkschemaversionvalidityinputtypedef).
+[CheckSchemaVersionValidityInputRequestTypeDef](./type_defs.md#checkschemaversionvalidityinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -560,7 +572,7 @@ Keyword-only arguments:
 - `SchemaDefinition`: `str` *(required)*
 
 Returns
-[CheckSchemaVersionValidityResponseResponseTypeDef](./type_defs.md#checkschemaversionvalidityresponseresponsetypedef).
+[CheckSchemaVersionValidityResponseTypeDef](./type_defs.md#checkschemaversionvalidityresponsetypedef).
 
 ### create_classifier
 
@@ -572,7 +584,7 @@ Boto3 documentation:
 [Glue.Client.create_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_classifier)
 
 Arguments mapping described in
-[CreateClassifierRequestTypeDef](./type_defs.md#createclassifierrequesttypedef).
+[CreateClassifierRequestRequestTypeDef](./type_defs.md#createclassifierrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -597,7 +609,7 @@ Boto3 documentation:
 [Glue.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_connection)
 
 Arguments mapping described in
-[CreateConnectionRequestTypeDef](./type_defs.md#createconnectionrequesttypedef).
+[CreateConnectionRequestRequestTypeDef](./type_defs.md#createconnectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -618,7 +630,7 @@ Boto3 documentation:
 [Glue.Client.create_crawler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_crawler)
 
 Arguments mapping described in
-[CreateCrawlerRequestTypeDef](./type_defs.md#createcrawlerrequesttypedef).
+[CreateCrawlerRequestRequestTypeDef](./type_defs.md#createcrawlerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -652,7 +664,7 @@ Boto3 documentation:
 [Glue.Client.create_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_database)
 
 Arguments mapping described in
-[CreateDatabaseRequestTypeDef](./type_defs.md#createdatabaserequesttypedef).
+[CreateDatabaseRequestRequestTypeDef](./type_defs.md#createdatabaserequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -672,7 +684,7 @@ Boto3 documentation:
 [Glue.Client.create_dev_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_dev_endpoint)
 
 Arguments mapping described in
-[CreateDevEndpointRequestTypeDef](./type_defs.md#createdevendpointrequesttypedef).
+[CreateDevEndpointRequestRequestTypeDef](./type_defs.md#createdevendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -693,7 +705,7 @@ Keyword-only arguments:
 - `Arguments`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDevEndpointResponseResponseTypeDef](./type_defs.md#createdevendpointresponseresponsetypedef).
+[CreateDevEndpointResponseTypeDef](./type_defs.md#createdevendpointresponsetypedef).
 
 ### create_job
 
@@ -705,7 +717,7 @@ Boto3 documentation:
 [Glue.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_job)
 
 Arguments mapping described in
-[CreateJobRequestTypeDef](./type_defs.md#createjobrequesttypedef).
+[CreateJobRequestRequestTypeDef](./type_defs.md#createjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -732,8 +744,7 @@ Keyword-only arguments:
 - `NumberOfWorkers`: `int`
 - `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
 
-Returns
-[CreateJobResponseResponseTypeDef](./type_defs.md#createjobresponseresponsetypedef).
+Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
 
 ### create_ml_transform
 
@@ -745,7 +756,7 @@ Boto3 documentation:
 [Glue.Client.create_ml_transform](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_ml_transform)
 
 Arguments mapping described in
-[CreateMLTransformRequestTypeDef](./type_defs.md#createmltransformrequesttypedef).
+[CreateMLTransformRequestRequestTypeDef](./type_defs.md#createmltransformrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -768,7 +779,7 @@ Keyword-only arguments:
   [TransformEncryptionTypeDef](./type_defs.md#transformencryptiontypedef)
 
 Returns
-[CreateMLTransformResponseResponseTypeDef](./type_defs.md#createmltransformresponseresponsetypedef).
+[CreateMLTransformResponseTypeDef](./type_defs.md#createmltransformresponsetypedef).
 
 ### create_partition
 
@@ -780,7 +791,7 @@ Boto3 documentation:
 [Glue.Client.create_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_partition)
 
 Arguments mapping described in
-[CreatePartitionRequestTypeDef](./type_defs.md#createpartitionrequesttypedef).
+[CreatePartitionRequestRequestTypeDef](./type_defs.md#createpartitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -802,7 +813,7 @@ Boto3 documentation:
 [Glue.Client.create_partition_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_partition_index)
 
 Arguments mapping described in
-[CreatePartitionIndexRequestTypeDef](./type_defs.md#createpartitionindexrequesttypedef).
+[CreatePartitionIndexRequestRequestTypeDef](./type_defs.md#createpartitionindexrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -824,7 +835,7 @@ Boto3 documentation:
 [Glue.Client.create_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_registry)
 
 Arguments mapping described in
-[CreateRegistryInputTypeDef](./type_defs.md#createregistryinputtypedef).
+[CreateRegistryInputRequestTypeDef](./type_defs.md#createregistryinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -833,7 +844,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateRegistryResponseResponseTypeDef](./type_defs.md#createregistryresponseresponsetypedef).
+[CreateRegistryResponseTypeDef](./type_defs.md#createregistryresponsetypedef).
 
 ### create_schema
 
@@ -845,7 +856,7 @@ Boto3 documentation:
 [Glue.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_schema)
 
 Arguments mapping described in
-[CreateSchemaInputTypeDef](./type_defs.md#createschemainputtypedef).
+[CreateSchemaInputRequestTypeDef](./type_defs.md#createschemainputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -858,7 +869,7 @@ Keyword-only arguments:
 - `SchemaDefinition`: `str`
 
 Returns
-[CreateSchemaResponseResponseTypeDef](./type_defs.md#createschemaresponseresponsetypedef).
+[CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef).
 
 ### create_script
 
@@ -870,7 +881,7 @@ Boto3 documentation:
 [Glue.Client.create_script](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_script)
 
 Arguments mapping described in
-[CreateScriptRequestTypeDef](./type_defs.md#createscriptrequesttypedef).
+[CreateScriptRequestRequestTypeDef](./type_defs.md#createscriptrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -879,7 +890,7 @@ Keyword-only arguments:
 - `Language`: [LanguageType](./literals.md#languagetype)
 
 Returns
-[CreateScriptResponseResponseTypeDef](./type_defs.md#createscriptresponseresponsetypedef).
+[CreateScriptResponseTypeDef](./type_defs.md#createscriptresponsetypedef).
 
 ### create_security_configuration
 
@@ -892,7 +903,7 @@ Boto3 documentation:
 [Glue.Client.create_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_security_configuration)
 
 Arguments mapping described in
-[CreateSecurityConfigurationRequestTypeDef](./type_defs.md#createsecurityconfigurationrequesttypedef).
+[CreateSecurityConfigurationRequestRequestTypeDef](./type_defs.md#createsecurityconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -902,7 +913,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateSecurityConfigurationResponseResponseTypeDef](./type_defs.md#createsecurityconfigurationresponseresponsetypedef).
+[CreateSecurityConfigurationResponseTypeDef](./type_defs.md#createsecurityconfigurationresponsetypedef).
 
 ### create_table
 
@@ -914,7 +925,7 @@ Boto3 documentation:
 [Glue.Client.create_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_table)
 
 Arguments mapping described in
-[CreateTableRequestTypeDef](./type_defs.md#createtablerequesttypedef).
+[CreateTableRequestRequestTypeDef](./type_defs.md#createtablerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -937,7 +948,7 @@ Boto3 documentation:
 [Glue.Client.create_trigger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_trigger)
 
 Arguments mapping described in
-[CreateTriggerRequestTypeDef](./type_defs.md#createtriggerrequesttypedef).
+[CreateTriggerRequestRequestTypeDef](./type_defs.md#createtriggerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -953,7 +964,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateTriggerResponseResponseTypeDef](./type_defs.md#createtriggerresponseresponsetypedef).
+[CreateTriggerResponseTypeDef](./type_defs.md#createtriggerresponsetypedef).
 
 ### create_user_defined_function
 
@@ -966,7 +977,7 @@ Boto3 documentation:
 [Glue.Client.create_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_user_defined_function)
 
 Arguments mapping described in
-[CreateUserDefinedFunctionRequestTypeDef](./type_defs.md#createuserdefinedfunctionrequesttypedef).
+[CreateUserDefinedFunctionRequestRequestTypeDef](./type_defs.md#createuserdefinedfunctionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -988,7 +999,7 @@ Boto3 documentation:
 [Glue.Client.create_workflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_workflow)
 
 Arguments mapping described in
-[CreateWorkflowRequestTypeDef](./type_defs.md#createworkflowrequesttypedef).
+[CreateWorkflowRequestRequestTypeDef](./type_defs.md#createworkflowrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -999,7 +1010,7 @@ Keyword-only arguments:
 - `MaxConcurrentRuns`: `int`
 
 Returns
-[CreateWorkflowResponseResponseTypeDef](./type_defs.md#createworkflowresponseresponsetypedef).
+[CreateWorkflowResponseTypeDef](./type_defs.md#createworkflowresponsetypedef).
 
 ### delete_classifier
 
@@ -1011,7 +1022,7 @@ Boto3 documentation:
 [Glue.Client.delete_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_classifier)
 
 Arguments mapping described in
-[DeleteClassifierRequestTypeDef](./type_defs.md#deleteclassifierrequesttypedef).
+[DeleteClassifierRequestRequestTypeDef](./type_defs.md#deleteclassifierrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1030,7 +1041,7 @@ Boto3 documentation:
 [Glue.Client.delete_column_statistics_for_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_column_statistics_for_partition)
 
 Arguments mapping described in
-[DeleteColumnStatisticsForPartitionRequestTypeDef](./type_defs.md#deletecolumnstatisticsforpartitionrequesttypedef).
+[DeleteColumnStatisticsForPartitionRequestRequestTypeDef](./type_defs.md#deletecolumnstatisticsforpartitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1053,7 +1064,7 @@ Boto3 documentation:
 [Glue.Client.delete_column_statistics_for_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_column_statistics_for_table)
 
 Arguments mapping described in
-[DeleteColumnStatisticsForTableRequestTypeDef](./type_defs.md#deletecolumnstatisticsfortablerequesttypedef).
+[DeleteColumnStatisticsForTableRequestRequestTypeDef](./type_defs.md#deletecolumnstatisticsfortablerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1074,7 +1085,7 @@ Boto3 documentation:
 [Glue.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_connection)
 
 Arguments mapping described in
-[DeleteConnectionRequestTypeDef](./type_defs.md#deleteconnectionrequesttypedef).
+[DeleteConnectionRequestRequestTypeDef](./type_defs.md#deleteconnectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1094,7 +1105,7 @@ Boto3 documentation:
 [Glue.Client.delete_crawler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_crawler)
 
 Arguments mapping described in
-[DeleteCrawlerRequestTypeDef](./type_defs.md#deletecrawlerrequesttypedef).
+[DeleteCrawlerRequestRequestTypeDef](./type_defs.md#deletecrawlerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1112,7 +1123,7 @@ Boto3 documentation:
 [Glue.Client.delete_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_database)
 
 Arguments mapping described in
-[DeleteDatabaseRequestTypeDef](./type_defs.md#deletedatabaserequesttypedef).
+[DeleteDatabaseRequestRequestTypeDef](./type_defs.md#deletedatabaserequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1131,7 +1142,7 @@ Boto3 documentation:
 [Glue.Client.delete_dev_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_dev_endpoint)
 
 Arguments mapping described in
-[DeleteDevEndpointRequestTypeDef](./type_defs.md#deletedevendpointrequesttypedef).
+[DeleteDevEndpointRequestRequestTypeDef](./type_defs.md#deletedevendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1149,14 +1160,13 @@ Boto3 documentation:
 [Glue.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_job)
 
 Arguments mapping described in
-[DeleteJobRequestTypeDef](./type_defs.md#deletejobrequesttypedef).
+[DeleteJobRequestRequestTypeDef](./type_defs.md#deletejobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobName`: `str` *(required)*
 
-Returns
-[DeleteJobResponseResponseTypeDef](./type_defs.md#deletejobresponseresponsetypedef).
+Returns [DeleteJobResponseTypeDef](./type_defs.md#deletejobresponsetypedef).
 
 ### delete_ml_transform
 
@@ -1168,14 +1178,14 @@ Boto3 documentation:
 [Glue.Client.delete_ml_transform](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_ml_transform)
 
 Arguments mapping described in
-[DeleteMLTransformRequestTypeDef](./type_defs.md#deletemltransformrequesttypedef).
+[DeleteMLTransformRequestRequestTypeDef](./type_defs.md#deletemltransformrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TransformId`: `str` *(required)*
 
 Returns
-[DeleteMLTransformResponseResponseTypeDef](./type_defs.md#deletemltransformresponseresponsetypedef).
+[DeleteMLTransformResponseTypeDef](./type_defs.md#deletemltransformresponsetypedef).
 
 ### delete_partition
 
@@ -1187,7 +1197,7 @@ Boto3 documentation:
 [Glue.Client.delete_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_partition)
 
 Arguments mapping described in
-[DeletePartitionRequestTypeDef](./type_defs.md#deletepartitionrequesttypedef).
+[DeletePartitionRequestRequestTypeDef](./type_defs.md#deletepartitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1208,7 +1218,7 @@ Boto3 documentation:
 [Glue.Client.delete_partition_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_partition_index)
 
 Arguments mapping described in
-[DeletePartitionIndexRequestTypeDef](./type_defs.md#deletepartitionindexrequesttypedef).
+[DeletePartitionIndexRequestRequestTypeDef](./type_defs.md#deletepartitionindexrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1229,7 +1239,7 @@ Boto3 documentation:
 [Glue.Client.delete_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_registry)
 
 Arguments mapping described in
-[DeleteRegistryInputTypeDef](./type_defs.md#deleteregistryinputtypedef).
+[DeleteRegistryInputRequestTypeDef](./type_defs.md#deleteregistryinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1237,7 +1247,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[DeleteRegistryResponseResponseTypeDef](./type_defs.md#deleteregistryresponseresponsetypedef).
+[DeleteRegistryResponseTypeDef](./type_defs.md#deleteregistryresponsetypedef).
 
 ### delete_resource_policy
 
@@ -1249,7 +1259,7 @@ Boto3 documentation:
 [Glue.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_resource_policy)
 
 Arguments mapping described in
-[DeleteResourcePolicyRequestTypeDef](./type_defs.md#deleteresourcepolicyrequesttypedef).
+[DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1269,14 +1279,14 @@ Boto3 documentation:
 [Glue.Client.delete_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_schema)
 
 Arguments mapping described in
-[DeleteSchemaInputTypeDef](./type_defs.md#deleteschemainputtypedef).
+[DeleteSchemaInputRequestTypeDef](./type_defs.md#deleteschemainputrequesttypedef).
 
 Keyword-only arguments:
 
 - `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
 
 Returns
-[DeleteSchemaResponseResponseTypeDef](./type_defs.md#deleteschemaresponseresponsetypedef).
+[DeleteSchemaResponseTypeDef](./type_defs.md#deleteschemaresponsetypedef).
 
 ### delete_schema_versions
 
@@ -1288,7 +1298,7 @@ Boto3 documentation:
 [Glue.Client.delete_schema_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_schema_versions)
 
 Arguments mapping described in
-[DeleteSchemaVersionsInputTypeDef](./type_defs.md#deleteschemaversionsinputtypedef).
+[DeleteSchemaVersionsInputRequestTypeDef](./type_defs.md#deleteschemaversionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1296,7 +1306,7 @@ Keyword-only arguments:
 - `Versions`: `str` *(required)*
 
 Returns
-[DeleteSchemaVersionsResponseResponseTypeDef](./type_defs.md#deleteschemaversionsresponseresponsetypedef).
+[DeleteSchemaVersionsResponseTypeDef](./type_defs.md#deleteschemaversionsresponsetypedef).
 
 ### delete_security_configuration
 
@@ -1309,7 +1319,7 @@ Boto3 documentation:
 [Glue.Client.delete_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_security_configuration)
 
 Arguments mapping described in
-[DeleteSecurityConfigurationRequestTypeDef](./type_defs.md#deletesecurityconfigurationrequesttypedef).
+[DeleteSecurityConfigurationRequestRequestTypeDef](./type_defs.md#deletesecurityconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1327,7 +1337,7 @@ Boto3 documentation:
 [Glue.Client.delete_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_table)
 
 Arguments mapping described in
-[DeleteTableRequestTypeDef](./type_defs.md#deletetablerequesttypedef).
+[DeleteTableRequestRequestTypeDef](./type_defs.md#deletetablerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1347,7 +1357,7 @@ Boto3 documentation:
 [Glue.Client.delete_table_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_table_version)
 
 Arguments mapping described in
-[DeleteTableVersionRequestTypeDef](./type_defs.md#deletetableversionrequesttypedef).
+[DeleteTableVersionRequestRequestTypeDef](./type_defs.md#deletetableversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1368,14 +1378,14 @@ Boto3 documentation:
 [Glue.Client.delete_trigger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_trigger)
 
 Arguments mapping described in
-[DeleteTriggerRequestTypeDef](./type_defs.md#deletetriggerrequesttypedef).
+[DeleteTriggerRequestRequestTypeDef](./type_defs.md#deletetriggerrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[DeleteTriggerResponseResponseTypeDef](./type_defs.md#deletetriggerresponseresponsetypedef).
+[DeleteTriggerResponseTypeDef](./type_defs.md#deletetriggerresponsetypedef).
 
 ### delete_user_defined_function
 
@@ -1388,7 +1398,7 @@ Boto3 documentation:
 [Glue.Client.delete_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_user_defined_function)
 
 Arguments mapping described in
-[DeleteUserDefinedFunctionRequestTypeDef](./type_defs.md#deleteuserdefinedfunctionrequesttypedef).
+[DeleteUserDefinedFunctionRequestRequestTypeDef](./type_defs.md#deleteuserdefinedfunctionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1408,14 +1418,14 @@ Boto3 documentation:
 [Glue.Client.delete_workflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_workflow)
 
 Arguments mapping described in
-[DeleteWorkflowRequestTypeDef](./type_defs.md#deleteworkflowrequesttypedef).
+[DeleteWorkflowRequestRequestTypeDef](./type_defs.md#deleteworkflowrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[DeleteWorkflowResponseResponseTypeDef](./type_defs.md#deleteworkflowresponseresponsetypedef).
+[DeleteWorkflowResponseTypeDef](./type_defs.md#deleteworkflowresponsetypedef).
 
 ### generate_presigned_url
 
@@ -1445,14 +1455,14 @@ Boto3 documentation:
 [Glue.Client.get_catalog_import_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_catalog_import_status)
 
 Arguments mapping described in
-[GetCatalogImportStatusRequestTypeDef](./type_defs.md#getcatalogimportstatusrequesttypedef).
+[GetCatalogImportStatusRequestRequestTypeDef](./type_defs.md#getcatalogimportstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `CatalogId`: `str`
 
 Returns
-[GetCatalogImportStatusResponseResponseTypeDef](./type_defs.md#getcatalogimportstatusresponseresponsetypedef).
+[GetCatalogImportStatusResponseTypeDef](./type_defs.md#getcatalogimportstatusresponsetypedef).
 
 ### get_classifier
 
@@ -1464,14 +1474,14 @@ Boto3 documentation:
 [Glue.Client.get_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_classifier)
 
 Arguments mapping described in
-[GetClassifierRequestTypeDef](./type_defs.md#getclassifierrequesttypedef).
+[GetClassifierRequestRequestTypeDef](./type_defs.md#getclassifierrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[GetClassifierResponseResponseTypeDef](./type_defs.md#getclassifierresponseresponsetypedef).
+[GetClassifierResponseTypeDef](./type_defs.md#getclassifierresponsetypedef).
 
 ### get_classifiers
 
@@ -1483,7 +1493,7 @@ Boto3 documentation:
 [Glue.Client.get_classifiers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_classifiers)
 
 Arguments mapping described in
-[GetClassifiersRequestTypeDef](./type_defs.md#getclassifiersrequesttypedef).
+[GetClassifiersRequestRequestTypeDef](./type_defs.md#getclassifiersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1491,7 +1501,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetClassifiersResponseResponseTypeDef](./type_defs.md#getclassifiersresponseresponsetypedef).
+[GetClassifiersResponseTypeDef](./type_defs.md#getclassifiersresponsetypedef).
 
 ### get_column_statistics_for_partition
 
@@ -1504,7 +1514,7 @@ Boto3 documentation:
 [Glue.Client.get_column_statistics_for_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_column_statistics_for_partition)
 
 Arguments mapping described in
-[GetColumnStatisticsForPartitionRequestTypeDef](./type_defs.md#getcolumnstatisticsforpartitionrequesttypedef).
+[GetColumnStatisticsForPartitionRequestRequestTypeDef](./type_defs.md#getcolumnstatisticsforpartitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1515,7 +1525,7 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[GetColumnStatisticsForPartitionResponseResponseTypeDef](./type_defs.md#getcolumnstatisticsforpartitionresponseresponsetypedef).
+[GetColumnStatisticsForPartitionResponseTypeDef](./type_defs.md#getcolumnstatisticsforpartitionresponsetypedef).
 
 ### get_column_statistics_for_table
 
@@ -1528,7 +1538,7 @@ Boto3 documentation:
 [Glue.Client.get_column_statistics_for_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_column_statistics_for_table)
 
 Arguments mapping described in
-[GetColumnStatisticsForTableRequestTypeDef](./type_defs.md#getcolumnstatisticsfortablerequesttypedef).
+[GetColumnStatisticsForTableRequestRequestTypeDef](./type_defs.md#getcolumnstatisticsfortablerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1538,7 +1548,7 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[GetColumnStatisticsForTableResponseResponseTypeDef](./type_defs.md#getcolumnstatisticsfortableresponseresponsetypedef).
+[GetColumnStatisticsForTableResponseTypeDef](./type_defs.md#getcolumnstatisticsfortableresponsetypedef).
 
 ### get_connection
 
@@ -1550,7 +1560,7 @@ Boto3 documentation:
 [Glue.Client.get_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_connection)
 
 Arguments mapping described in
-[GetConnectionRequestTypeDef](./type_defs.md#getconnectionrequesttypedef).
+[GetConnectionRequestRequestTypeDef](./type_defs.md#getconnectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1559,7 +1569,7 @@ Keyword-only arguments:
 - `HidePassword`: `bool`
 
 Returns
-[GetConnectionResponseResponseTypeDef](./type_defs.md#getconnectionresponseresponsetypedef).
+[GetConnectionResponseTypeDef](./type_defs.md#getconnectionresponsetypedef).
 
 ### get_connections
 
@@ -1571,7 +1581,7 @@ Boto3 documentation:
 [Glue.Client.get_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_connections)
 
 Arguments mapping described in
-[GetConnectionsRequestTypeDef](./type_defs.md#getconnectionsrequesttypedef).
+[GetConnectionsRequestRequestTypeDef](./type_defs.md#getconnectionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1583,7 +1593,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetConnectionsResponseResponseTypeDef](./type_defs.md#getconnectionsresponseresponsetypedef).
+[GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef).
 
 ### get_crawler
 
@@ -1595,14 +1605,13 @@ Boto3 documentation:
 [Glue.Client.get_crawler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_crawler)
 
 Arguments mapping described in
-[GetCrawlerRequestTypeDef](./type_defs.md#getcrawlerrequesttypedef).
+[GetCrawlerRequestRequestTypeDef](./type_defs.md#getcrawlerrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
-Returns
-[GetCrawlerResponseResponseTypeDef](./type_defs.md#getcrawlerresponseresponsetypedef).
+Returns [GetCrawlerResponseTypeDef](./type_defs.md#getcrawlerresponsetypedef).
 
 ### get_crawler_metrics
 
@@ -1614,7 +1623,7 @@ Boto3 documentation:
 [Glue.Client.get_crawler_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_crawler_metrics)
 
 Arguments mapping described in
-[GetCrawlerMetricsRequestTypeDef](./type_defs.md#getcrawlermetricsrequesttypedef).
+[GetCrawlerMetricsRequestRequestTypeDef](./type_defs.md#getcrawlermetricsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1623,7 +1632,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetCrawlerMetricsResponseResponseTypeDef](./type_defs.md#getcrawlermetricsresponseresponsetypedef).
+[GetCrawlerMetricsResponseTypeDef](./type_defs.md#getcrawlermetricsresponsetypedef).
 
 ### get_crawlers
 
@@ -1635,7 +1644,7 @@ Boto3 documentation:
 [Glue.Client.get_crawlers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_crawlers)
 
 Arguments mapping described in
-[GetCrawlersRequestTypeDef](./type_defs.md#getcrawlersrequesttypedef).
+[GetCrawlersRequestRequestTypeDef](./type_defs.md#getcrawlersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1643,7 +1652,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetCrawlersResponseResponseTypeDef](./type_defs.md#getcrawlersresponseresponsetypedef).
+[GetCrawlersResponseTypeDef](./type_defs.md#getcrawlersresponsetypedef).
 
 ### get_data_catalog_encryption_settings
 
@@ -1656,14 +1665,14 @@ Boto3 documentation:
 [Glue.Client.get_data_catalog_encryption_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_data_catalog_encryption_settings)
 
 Arguments mapping described in
-[GetDataCatalogEncryptionSettingsRequestTypeDef](./type_defs.md#getdatacatalogencryptionsettingsrequesttypedef).
+[GetDataCatalogEncryptionSettingsRequestRequestTypeDef](./type_defs.md#getdatacatalogencryptionsettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `CatalogId`: `str`
 
 Returns
-[GetDataCatalogEncryptionSettingsResponseResponseTypeDef](./type_defs.md#getdatacatalogencryptionsettingsresponseresponsetypedef).
+[GetDataCatalogEncryptionSettingsResponseTypeDef](./type_defs.md#getdatacatalogencryptionsettingsresponsetypedef).
 
 ### get_database
 
@@ -1675,7 +1684,7 @@ Boto3 documentation:
 [Glue.Client.get_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_database)
 
 Arguments mapping described in
-[GetDatabaseRequestTypeDef](./type_defs.md#getdatabaserequesttypedef).
+[GetDatabaseRequestRequestTypeDef](./type_defs.md#getdatabaserequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1683,7 +1692,7 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[GetDatabaseResponseResponseTypeDef](./type_defs.md#getdatabaseresponseresponsetypedef).
+[GetDatabaseResponseTypeDef](./type_defs.md#getdatabaseresponsetypedef).
 
 ### get_databases
 
@@ -1695,7 +1704,7 @@ Boto3 documentation:
 [Glue.Client.get_databases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_databases)
 
 Arguments mapping described in
-[GetDatabasesRequestTypeDef](./type_defs.md#getdatabasesrequesttypedef).
+[GetDatabasesRequestRequestTypeDef](./type_defs.md#getdatabasesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1706,7 +1715,7 @@ Keyword-only arguments:
   [ResourceShareTypeType](./literals.md#resourcesharetypetype)
 
 Returns
-[GetDatabasesResponseResponseTypeDef](./type_defs.md#getdatabasesresponseresponsetypedef).
+[GetDatabasesResponseTypeDef](./type_defs.md#getdatabasesresponsetypedef).
 
 ### get_dataflow_graph
 
@@ -1718,14 +1727,14 @@ Boto3 documentation:
 [Glue.Client.get_dataflow_graph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_dataflow_graph)
 
 Arguments mapping described in
-[GetDataflowGraphRequestTypeDef](./type_defs.md#getdataflowgraphrequesttypedef).
+[GetDataflowGraphRequestRequestTypeDef](./type_defs.md#getdataflowgraphrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `PythonScript`: `str`
 
 Returns
-[GetDataflowGraphResponseResponseTypeDef](./type_defs.md#getdataflowgraphresponseresponsetypedef).
+[GetDataflowGraphResponseTypeDef](./type_defs.md#getdataflowgraphresponsetypedef).
 
 ### get_dev_endpoint
 
@@ -1737,14 +1746,14 @@ Boto3 documentation:
 [Glue.Client.get_dev_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_dev_endpoint)
 
 Arguments mapping described in
-[GetDevEndpointRequestTypeDef](./type_defs.md#getdevendpointrequesttypedef).
+[GetDevEndpointRequestRequestTypeDef](./type_defs.md#getdevendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `EndpointName`: `str` *(required)*
 
 Returns
-[GetDevEndpointResponseResponseTypeDef](./type_defs.md#getdevendpointresponseresponsetypedef).
+[GetDevEndpointResponseTypeDef](./type_defs.md#getdevendpointresponsetypedef).
 
 ### get_dev_endpoints
 
@@ -1756,7 +1765,7 @@ Boto3 documentation:
 [Glue.Client.get_dev_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_dev_endpoints)
 
 Arguments mapping described in
-[GetDevEndpointsRequestTypeDef](./type_defs.md#getdevendpointsrequesttypedef).
+[GetDevEndpointsRequestRequestTypeDef](./type_defs.md#getdevendpointsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1764,7 +1773,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetDevEndpointsResponseResponseTypeDef](./type_defs.md#getdevendpointsresponseresponsetypedef).
+[GetDevEndpointsResponseTypeDef](./type_defs.md#getdevendpointsresponsetypedef).
 
 ### get_job
 
@@ -1776,14 +1785,13 @@ Boto3 documentation:
 [Glue.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job)
 
 Arguments mapping described in
-[GetJobRequestTypeDef](./type_defs.md#getjobrequesttypedef).
+[GetJobRequestRequestTypeDef](./type_defs.md#getjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobName`: `str` *(required)*
 
-Returns
-[GetJobResponseResponseTypeDef](./type_defs.md#getjobresponseresponsetypedef).
+Returns [GetJobResponseTypeDef](./type_defs.md#getjobresponsetypedef).
 
 ### get_job_bookmark
 
@@ -1795,7 +1803,7 @@ Boto3 documentation:
 [Glue.Client.get_job_bookmark](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job_bookmark)
 
 Arguments mapping described in
-[GetJobBookmarkRequestTypeDef](./type_defs.md#getjobbookmarkrequesttypedef).
+[GetJobBookmarkRequestRequestTypeDef](./type_defs.md#getjobbookmarkrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1803,7 +1811,7 @@ Keyword-only arguments:
 - `RunId`: `str`
 
 Returns
-[GetJobBookmarkResponseResponseTypeDef](./type_defs.md#getjobbookmarkresponseresponsetypedef).
+[GetJobBookmarkResponseTypeDef](./type_defs.md#getjobbookmarkresponsetypedef).
 
 ### get_job_run
 
@@ -1815,7 +1823,7 @@ Boto3 documentation:
 [Glue.Client.get_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job_run)
 
 Arguments mapping described in
-[GetJobRunRequestTypeDef](./type_defs.md#getjobrunrequesttypedef).
+[GetJobRunRequestRequestTypeDef](./type_defs.md#getjobrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1823,8 +1831,7 @@ Keyword-only arguments:
 - `RunId`: `str` *(required)*
 - `PredecessorsIncluded`: `bool`
 
-Returns
-[GetJobRunResponseResponseTypeDef](./type_defs.md#getjobrunresponseresponsetypedef).
+Returns [GetJobRunResponseTypeDef](./type_defs.md#getjobrunresponsetypedef).
 
 ### get_job_runs
 
@@ -1836,7 +1843,7 @@ Boto3 documentation:
 [Glue.Client.get_job_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job_runs)
 
 Arguments mapping described in
-[GetJobRunsRequestTypeDef](./type_defs.md#getjobrunsrequesttypedef).
+[GetJobRunsRequestRequestTypeDef](./type_defs.md#getjobrunsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1844,8 +1851,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[GetJobRunsResponseResponseTypeDef](./type_defs.md#getjobrunsresponseresponsetypedef).
+Returns [GetJobRunsResponseTypeDef](./type_defs.md#getjobrunsresponsetypedef).
 
 ### get_jobs
 
@@ -1857,15 +1863,14 @@ Boto3 documentation:
 [Glue.Client.get_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_jobs)
 
 Arguments mapping described in
-[GetJobsRequestTypeDef](./type_defs.md#getjobsrequesttypedef).
+[GetJobsRequestRequestTypeDef](./type_defs.md#getjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[GetJobsResponseResponseTypeDef](./type_defs.md#getjobsresponseresponsetypedef).
+Returns [GetJobsResponseTypeDef](./type_defs.md#getjobsresponsetypedef).
 
 ### get_mapping
 
@@ -1877,7 +1882,7 @@ Boto3 documentation:
 [Glue.Client.get_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_mapping)
 
 Arguments mapping described in
-[GetMappingRequestTypeDef](./type_defs.md#getmappingrequesttypedef).
+[GetMappingRequestRequestTypeDef](./type_defs.md#getmappingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1886,8 +1891,7 @@ Keyword-only arguments:
 - `Sinks`: `List`\[[CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)\]
 - `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 
-Returns
-[GetMappingResponseResponseTypeDef](./type_defs.md#getmappingresponseresponsetypedef).
+Returns [GetMappingResponseTypeDef](./type_defs.md#getmappingresponsetypedef).
 
 ### get_ml_task_run
 
@@ -1899,7 +1903,7 @@ Boto3 documentation:
 [Glue.Client.get_ml_task_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_task_run)
 
 Arguments mapping described in
-[GetMLTaskRunRequestTypeDef](./type_defs.md#getmltaskrunrequesttypedef).
+[GetMLTaskRunRequestRequestTypeDef](./type_defs.md#getmltaskrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1907,7 +1911,7 @@ Keyword-only arguments:
 - `TaskRunId`: `str` *(required)*
 
 Returns
-[GetMLTaskRunResponseResponseTypeDef](./type_defs.md#getmltaskrunresponseresponsetypedef).
+[GetMLTaskRunResponseTypeDef](./type_defs.md#getmltaskrunresponsetypedef).
 
 ### get_ml_task_runs
 
@@ -1919,7 +1923,7 @@ Boto3 documentation:
 [Glue.Client.get_ml_task_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_task_runs)
 
 Arguments mapping described in
-[GetMLTaskRunsRequestTypeDef](./type_defs.md#getmltaskrunsrequesttypedef).
+[GetMLTaskRunsRequestRequestTypeDef](./type_defs.md#getmltaskrunsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1932,7 +1936,7 @@ Keyword-only arguments:
   [TaskRunSortCriteriaTypeDef](./type_defs.md#taskrunsortcriteriatypedef)
 
 Returns
-[GetMLTaskRunsResponseResponseTypeDef](./type_defs.md#getmltaskrunsresponseresponsetypedef).
+[GetMLTaskRunsResponseTypeDef](./type_defs.md#getmltaskrunsresponsetypedef).
 
 ### get_ml_transform
 
@@ -1945,14 +1949,14 @@ Boto3 documentation:
 [Glue.Client.get_ml_transform](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_transform)
 
 Arguments mapping described in
-[GetMLTransformRequestTypeDef](./type_defs.md#getmltransformrequesttypedef).
+[GetMLTransformRequestRequestTypeDef](./type_defs.md#getmltransformrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TransformId`: `str` *(required)*
 
 Returns
-[GetMLTransformResponseResponseTypeDef](./type_defs.md#getmltransformresponseresponsetypedef).
+[GetMLTransformResponseTypeDef](./type_defs.md#getmltransformresponsetypedef).
 
 ### get_ml_transforms
 
@@ -1964,7 +1968,7 @@ Boto3 documentation:
 [Glue.Client.get_ml_transforms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_transforms)
 
 Arguments mapping described in
-[GetMLTransformsRequestTypeDef](./type_defs.md#getmltransformsrequesttypedef).
+[GetMLTransformsRequestRequestTypeDef](./type_defs.md#getmltransformsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1976,7 +1980,7 @@ Keyword-only arguments:
   [TransformSortCriteriaTypeDef](./type_defs.md#transformsortcriteriatypedef)
 
 Returns
-[GetMLTransformsResponseResponseTypeDef](./type_defs.md#getmltransformsresponseresponsetypedef).
+[GetMLTransformsResponseTypeDef](./type_defs.md#getmltransformsresponsetypedef).
 
 ### get_partition
 
@@ -1988,7 +1992,7 @@ Boto3 documentation:
 [Glue.Client.get_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partition)
 
 Arguments mapping described in
-[GetPartitionRequestTypeDef](./type_defs.md#getpartitionrequesttypedef).
+[GetPartitionRequestRequestTypeDef](./type_defs.md#getpartitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1998,7 +2002,7 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[GetPartitionResponseResponseTypeDef](./type_defs.md#getpartitionresponseresponsetypedef).
+[GetPartitionResponseTypeDef](./type_defs.md#getpartitionresponsetypedef).
 
 ### get_partition_indexes
 
@@ -2010,7 +2014,7 @@ Boto3 documentation:
 [Glue.Client.get_partition_indexes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partition_indexes)
 
 Arguments mapping described in
-[GetPartitionIndexesRequestTypeDef](./type_defs.md#getpartitionindexesrequesttypedef).
+[GetPartitionIndexesRequestRequestTypeDef](./type_defs.md#getpartitionindexesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2020,7 +2024,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetPartitionIndexesResponseResponseTypeDef](./type_defs.md#getpartitionindexesresponseresponsetypedef).
+[GetPartitionIndexesResponseTypeDef](./type_defs.md#getpartitionindexesresponsetypedef).
 
 ### get_partitions
 
@@ -2032,7 +2036,7 @@ Boto3 documentation:
 [Glue.Client.get_partitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partitions)
 
 Arguments mapping described in
-[GetPartitionsRequestTypeDef](./type_defs.md#getpartitionsrequesttypedef).
+[GetPartitionsRequestRequestTypeDef](./type_defs.md#getpartitionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2046,7 +2050,7 @@ Keyword-only arguments:
 - `ExcludeColumnSchema`: `bool`
 
 Returns
-[GetPartitionsResponseResponseTypeDef](./type_defs.md#getpartitionsresponseresponsetypedef).
+[GetPartitionsResponseTypeDef](./type_defs.md#getpartitionsresponsetypedef).
 
 ### get_plan
 
@@ -2058,7 +2062,7 @@ Boto3 documentation:
 [Glue.Client.get_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_plan)
 
 Arguments mapping described in
-[GetPlanRequestTypeDef](./type_defs.md#getplanrequesttypedef).
+[GetPlanRequestRequestTypeDef](./type_defs.md#getplanrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2072,8 +2076,7 @@ Keyword-only arguments:
 - `Language`: [LanguageType](./literals.md#languagetype)
 - `AdditionalPlanOptionsMap`: `Dict`\[`str`, `str`\]
 
-Returns
-[GetPlanResponseResponseTypeDef](./type_defs.md#getplanresponseresponsetypedef).
+Returns [GetPlanResponseTypeDef](./type_defs.md#getplanresponsetypedef).
 
 ### get_registry
 
@@ -2085,7 +2088,7 @@ Boto3 documentation:
 [Glue.Client.get_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_registry)
 
 Arguments mapping described in
-[GetRegistryInputTypeDef](./type_defs.md#getregistryinputtypedef).
+[GetRegistryInputRequestTypeDef](./type_defs.md#getregistryinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2093,7 +2096,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[GetRegistryResponseResponseTypeDef](./type_defs.md#getregistryresponseresponsetypedef).
+[GetRegistryResponseTypeDef](./type_defs.md#getregistryresponsetypedef).
 
 ### get_resource_policies
 
@@ -2106,7 +2109,7 @@ Boto3 documentation:
 [Glue.Client.get_resource_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_resource_policies)
 
 Arguments mapping described in
-[GetResourcePoliciesRequestTypeDef](./type_defs.md#getresourcepoliciesrequesttypedef).
+[GetResourcePoliciesRequestRequestTypeDef](./type_defs.md#getresourcepoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2114,7 +2117,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetResourcePoliciesResponseResponseTypeDef](./type_defs.md#getresourcepoliciesresponseresponsetypedef).
+[GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef).
 
 ### get_resource_policy
 
@@ -2126,14 +2129,14 @@ Boto3 documentation:
 [Glue.Client.get_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_resource_policy)
 
 Arguments mapping described in
-[GetResourcePolicyRequestTypeDef](./type_defs.md#getresourcepolicyrequesttypedef).
+[GetResourcePolicyRequestRequestTypeDef](./type_defs.md#getresourcepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str`
 
 Returns
-[GetResourcePolicyResponseResponseTypeDef](./type_defs.md#getresourcepolicyresponseresponsetypedef).
+[GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef).
 
 ### get_schema
 
@@ -2145,14 +2148,13 @@ Boto3 documentation:
 [Glue.Client.get_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema)
 
 Arguments mapping described in
-[GetSchemaInputTypeDef](./type_defs.md#getschemainputtypedef).
+[GetSchemaInputRequestTypeDef](./type_defs.md#getschemainputrequesttypedef).
 
 Keyword-only arguments:
 
 - `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
 
-Returns
-[GetSchemaResponseResponseTypeDef](./type_defs.md#getschemaresponseresponsetypedef).
+Returns [GetSchemaResponseTypeDef](./type_defs.md#getschemaresponsetypedef).
 
 ### get_schema_by_definition
 
@@ -2164,7 +2166,7 @@ Boto3 documentation:
 [Glue.Client.get_schema_by_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema_by_definition)
 
 Arguments mapping described in
-[GetSchemaByDefinitionInputTypeDef](./type_defs.md#getschemabydefinitioninputtypedef).
+[GetSchemaByDefinitionInputRequestTypeDef](./type_defs.md#getschemabydefinitioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2172,7 +2174,7 @@ Keyword-only arguments:
 - `SchemaDefinition`: `str` *(required)*
 
 Returns
-[GetSchemaByDefinitionResponseResponseTypeDef](./type_defs.md#getschemabydefinitionresponseresponsetypedef).
+[GetSchemaByDefinitionResponseTypeDef](./type_defs.md#getschemabydefinitionresponsetypedef).
 
 ### get_schema_version
 
@@ -2185,7 +2187,7 @@ Boto3 documentation:
 [Glue.Client.get_schema_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema_version)
 
 Arguments mapping described in
-[GetSchemaVersionInputTypeDef](./type_defs.md#getschemaversioninputtypedef).
+[GetSchemaVersionInputRequestTypeDef](./type_defs.md#getschemaversioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2195,7 +2197,7 @@ Keyword-only arguments:
   [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
 
 Returns
-[GetSchemaVersionResponseResponseTypeDef](./type_defs.md#getschemaversionresponseresponsetypedef).
+[GetSchemaVersionResponseTypeDef](./type_defs.md#getschemaversionresponsetypedef).
 
 ### get_schema_versions_diff
 
@@ -2208,7 +2210,7 @@ Boto3 documentation:
 [Glue.Client.get_schema_versions_diff](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema_versions_diff)
 
 Arguments mapping described in
-[GetSchemaVersionsDiffInputTypeDef](./type_defs.md#getschemaversionsdiffinputtypedef).
+[GetSchemaVersionsDiffInputRequestTypeDef](./type_defs.md#getschemaversionsdiffinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2223,7 +2225,7 @@ Keyword-only arguments:
   [SchemaDiffTypeType](./literals.md#schemadifftypetype)) *(required)*
 
 Returns
-[GetSchemaVersionsDiffResponseResponseTypeDef](./type_defs.md#getschemaversionsdiffresponseresponsetypedef).
+[GetSchemaVersionsDiffResponseTypeDef](./type_defs.md#getschemaversionsdiffresponsetypedef).
 
 ### get_security_configuration
 
@@ -2235,14 +2237,14 @@ Boto3 documentation:
 [Glue.Client.get_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_security_configuration)
 
 Arguments mapping described in
-[GetSecurityConfigurationRequestTypeDef](./type_defs.md#getsecurityconfigurationrequesttypedef).
+[GetSecurityConfigurationRequestRequestTypeDef](./type_defs.md#getsecurityconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[GetSecurityConfigurationResponseResponseTypeDef](./type_defs.md#getsecurityconfigurationresponseresponsetypedef).
+[GetSecurityConfigurationResponseTypeDef](./type_defs.md#getsecurityconfigurationresponsetypedef).
 
 ### get_security_configurations
 
@@ -2254,7 +2256,7 @@ Boto3 documentation:
 [Glue.Client.get_security_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_security_configurations)
 
 Arguments mapping described in
-[GetSecurityConfigurationsRequestTypeDef](./type_defs.md#getsecurityconfigurationsrequesttypedef).
+[GetSecurityConfigurationsRequestRequestTypeDef](./type_defs.md#getsecurityconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2262,7 +2264,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetSecurityConfigurationsResponseResponseTypeDef](./type_defs.md#getsecurityconfigurationsresponseresponsetypedef).
+[GetSecurityConfigurationsResponseTypeDef](./type_defs.md#getsecurityconfigurationsresponsetypedef).
 
 ### get_table
 
@@ -2274,7 +2276,7 @@ Boto3 documentation:
 [Glue.Client.get_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table)
 
 Arguments mapping described in
-[GetTableRequestTypeDef](./type_defs.md#gettablerequesttypedef).
+[GetTableRequestRequestTypeDef](./type_defs.md#gettablerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2282,8 +2284,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `CatalogId`: `str`
 
-Returns
-[GetTableResponseResponseTypeDef](./type_defs.md#gettableresponseresponsetypedef).
+Returns [GetTableResponseTypeDef](./type_defs.md#gettableresponsetypedef).
 
 ### get_table_version
 
@@ -2295,7 +2296,7 @@ Boto3 documentation:
 [Glue.Client.get_table_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table_version)
 
 Arguments mapping described in
-[GetTableVersionRequestTypeDef](./type_defs.md#gettableversionrequesttypedef).
+[GetTableVersionRequestRequestTypeDef](./type_defs.md#gettableversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2305,7 +2306,7 @@ Keyword-only arguments:
 - `VersionId`: `str`
 
 Returns
-[GetTableVersionResponseResponseTypeDef](./type_defs.md#gettableversionresponseresponsetypedef).
+[GetTableVersionResponseTypeDef](./type_defs.md#gettableversionresponsetypedef).
 
 ### get_table_versions
 
@@ -2318,7 +2319,7 @@ Boto3 documentation:
 [Glue.Client.get_table_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table_versions)
 
 Arguments mapping described in
-[GetTableVersionsRequestTypeDef](./type_defs.md#gettableversionsrequesttypedef).
+[GetTableVersionsRequestRequestTypeDef](./type_defs.md#gettableversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2329,7 +2330,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetTableVersionsResponseResponseTypeDef](./type_defs.md#gettableversionsresponseresponsetypedef).
+[GetTableVersionsResponseTypeDef](./type_defs.md#gettableversionsresponsetypedef).
 
 ### get_tables
 
@@ -2341,7 +2342,7 @@ Boto3 documentation:
 [Glue.Client.get_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_tables)
 
 Arguments mapping described in
-[GetTablesRequestTypeDef](./type_defs.md#gettablesrequesttypedef).
+[GetTablesRequestRequestTypeDef](./type_defs.md#gettablesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2351,8 +2352,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[GetTablesResponseResponseTypeDef](./type_defs.md#gettablesresponseresponsetypedef).
+Returns [GetTablesResponseTypeDef](./type_defs.md#gettablesresponsetypedef).
 
 ### get_tags
 
@@ -2364,14 +2364,13 @@ Boto3 documentation:
 [Glue.Client.get_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_tags)
 
 Arguments mapping described in
-[GetTagsRequestTypeDef](./type_defs.md#gettagsrequesttypedef).
+[GetTagsRequestRequestTypeDef](./type_defs.md#gettagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
-Returns
-[GetTagsResponseResponseTypeDef](./type_defs.md#gettagsresponseresponsetypedef).
+Returns [GetTagsResponseTypeDef](./type_defs.md#gettagsresponsetypedef).
 
 ### get_trigger
 
@@ -2383,14 +2382,13 @@ Boto3 documentation:
 [Glue.Client.get_trigger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_trigger)
 
 Arguments mapping described in
-[GetTriggerRequestTypeDef](./type_defs.md#gettriggerrequesttypedef).
+[GetTriggerRequestRequestTypeDef](./type_defs.md#gettriggerrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
-Returns
-[GetTriggerResponseResponseTypeDef](./type_defs.md#gettriggerresponseresponsetypedef).
+Returns [GetTriggerResponseTypeDef](./type_defs.md#gettriggerresponsetypedef).
 
 ### get_triggers
 
@@ -2402,7 +2400,7 @@ Boto3 documentation:
 [Glue.Client.get_triggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_triggers)
 
 Arguments mapping described in
-[GetTriggersRequestTypeDef](./type_defs.md#gettriggersrequesttypedef).
+[GetTriggersRequestRequestTypeDef](./type_defs.md#gettriggersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2411,7 +2409,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetTriggersResponseResponseTypeDef](./type_defs.md#gettriggersresponseresponsetypedef).
+[GetTriggersResponseTypeDef](./type_defs.md#gettriggersresponsetypedef).
 
 ### get_user_defined_function
 
@@ -2423,7 +2421,7 @@ Boto3 documentation:
 [Glue.Client.get_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_user_defined_function)
 
 Arguments mapping described in
-[GetUserDefinedFunctionRequestTypeDef](./type_defs.md#getuserdefinedfunctionrequesttypedef).
+[GetUserDefinedFunctionRequestRequestTypeDef](./type_defs.md#getuserdefinedfunctionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2432,7 +2430,7 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[GetUserDefinedFunctionResponseResponseTypeDef](./type_defs.md#getuserdefinedfunctionresponseresponsetypedef).
+[GetUserDefinedFunctionResponseTypeDef](./type_defs.md#getuserdefinedfunctionresponsetypedef).
 
 ### get_user_defined_functions
 
@@ -2444,7 +2442,7 @@ Boto3 documentation:
 [Glue.Client.get_user_defined_functions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_user_defined_functions)
 
 Arguments mapping described in
-[GetUserDefinedFunctionsRequestTypeDef](./type_defs.md#getuserdefinedfunctionsrequesttypedef).
+[GetUserDefinedFunctionsRequestRequestTypeDef](./type_defs.md#getuserdefinedfunctionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2455,7 +2453,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetUserDefinedFunctionsResponseResponseTypeDef](./type_defs.md#getuserdefinedfunctionsresponseresponsetypedef).
+[GetUserDefinedFunctionsResponseTypeDef](./type_defs.md#getuserdefinedfunctionsresponsetypedef).
 
 ### get_workflow
 
@@ -2467,7 +2465,7 @@ Boto3 documentation:
 [Glue.Client.get_workflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow)
 
 Arguments mapping described in
-[GetWorkflowRequestTypeDef](./type_defs.md#getworkflowrequesttypedef).
+[GetWorkflowRequestRequestTypeDef](./type_defs.md#getworkflowrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2475,7 +2473,7 @@ Keyword-only arguments:
 - `IncludeGraph`: `bool`
 
 Returns
-[GetWorkflowResponseResponseTypeDef](./type_defs.md#getworkflowresponseresponsetypedef).
+[GetWorkflowResponseTypeDef](./type_defs.md#getworkflowresponsetypedef).
 
 ### get_workflow_run
 
@@ -2487,7 +2485,7 @@ Boto3 documentation:
 [Glue.Client.get_workflow_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow_run)
 
 Arguments mapping described in
-[GetWorkflowRunRequestTypeDef](./type_defs.md#getworkflowrunrequesttypedef).
+[GetWorkflowRunRequestRequestTypeDef](./type_defs.md#getworkflowrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2496,7 +2494,7 @@ Keyword-only arguments:
 - `IncludeGraph`: `bool`
 
 Returns
-[GetWorkflowRunResponseResponseTypeDef](./type_defs.md#getworkflowrunresponseresponsetypedef).
+[GetWorkflowRunResponseTypeDef](./type_defs.md#getworkflowrunresponsetypedef).
 
 ### get_workflow_run_properties
 
@@ -2508,7 +2506,7 @@ Boto3 documentation:
 [Glue.Client.get_workflow_run_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow_run_properties)
 
 Arguments mapping described in
-[GetWorkflowRunPropertiesRequestTypeDef](./type_defs.md#getworkflowrunpropertiesrequesttypedef).
+[GetWorkflowRunPropertiesRequestRequestTypeDef](./type_defs.md#getworkflowrunpropertiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2516,7 +2514,7 @@ Keyword-only arguments:
 - `RunId`: `str` *(required)*
 
 Returns
-[GetWorkflowRunPropertiesResponseResponseTypeDef](./type_defs.md#getworkflowrunpropertiesresponseresponsetypedef).
+[GetWorkflowRunPropertiesResponseTypeDef](./type_defs.md#getworkflowrunpropertiesresponsetypedef).
 
 ### get_workflow_runs
 
@@ -2528,7 +2526,7 @@ Boto3 documentation:
 [Glue.Client.get_workflow_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow_runs)
 
 Arguments mapping described in
-[GetWorkflowRunsRequestTypeDef](./type_defs.md#getworkflowrunsrequesttypedef).
+[GetWorkflowRunsRequestRequestTypeDef](./type_defs.md#getworkflowrunsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2538,7 +2536,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetWorkflowRunsResponseResponseTypeDef](./type_defs.md#getworkflowrunsresponseresponsetypedef).
+[GetWorkflowRunsResponseTypeDef](./type_defs.md#getworkflowrunsresponsetypedef).
 
 ### import_catalog_to_glue
 
@@ -2550,7 +2548,7 @@ Boto3 documentation:
 [Glue.Client.import_catalog_to_glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.import_catalog_to_glue)
 
 Arguments mapping described in
-[ImportCatalogToGlueRequestTypeDef](./type_defs.md#importcatalogtogluerequesttypedef).
+[ImportCatalogToGlueRequestRequestTypeDef](./type_defs.md#importcatalogtogluerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2569,7 +2567,7 @@ Boto3 documentation:
 [Glue.Client.list_crawlers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_crawlers)
 
 Arguments mapping described in
-[ListCrawlersRequestTypeDef](./type_defs.md#listcrawlersrequesttypedef).
+[ListCrawlersRequestRequestTypeDef](./type_defs.md#listcrawlersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2578,7 +2576,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[ListCrawlersResponseResponseTypeDef](./type_defs.md#listcrawlersresponseresponsetypedef).
+[ListCrawlersResponseTypeDef](./type_defs.md#listcrawlersresponsetypedef).
 
 ### list_dev_endpoints
 
@@ -2591,7 +2589,7 @@ Boto3 documentation:
 [Glue.Client.list_dev_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_dev_endpoints)
 
 Arguments mapping described in
-[ListDevEndpointsRequestTypeDef](./type_defs.md#listdevendpointsrequesttypedef).
+[ListDevEndpointsRequestRequestTypeDef](./type_defs.md#listdevendpointsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2600,7 +2598,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[ListDevEndpointsResponseResponseTypeDef](./type_defs.md#listdevendpointsresponseresponsetypedef).
+[ListDevEndpointsResponseTypeDef](./type_defs.md#listdevendpointsresponsetypedef).
 
 ### list_jobs
 
@@ -2613,7 +2611,7 @@ Boto3 documentation:
 [Glue.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_jobs)
 
 Arguments mapping described in
-[ListJobsRequestTypeDef](./type_defs.md#listjobsrequesttypedef).
+[ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2621,8 +2619,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-Returns
-[ListJobsResponseResponseTypeDef](./type_defs.md#listjobsresponseresponsetypedef).
+Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
 
 ### list_ml_transforms
 
@@ -2636,7 +2633,7 @@ Boto3 documentation:
 [Glue.Client.list_ml_transforms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_ml_transforms)
 
 Arguments mapping described in
-[ListMLTransformsRequestTypeDef](./type_defs.md#listmltransformsrequesttypedef).
+[ListMLTransformsRequestRequestTypeDef](./type_defs.md#listmltransformsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2649,7 +2646,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[ListMLTransformsResponseResponseTypeDef](./type_defs.md#listmltransformsresponseresponsetypedef).
+[ListMLTransformsResponseTypeDef](./type_defs.md#listmltransformsresponsetypedef).
 
 ### list_registries
 
@@ -2662,7 +2659,7 @@ Boto3 documentation:
 [Glue.Client.list_registries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_registries)
 
 Arguments mapping described in
-[ListRegistriesInputTypeDef](./type_defs.md#listregistriesinputtypedef).
+[ListRegistriesInputRequestTypeDef](./type_defs.md#listregistriesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2670,7 +2667,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListRegistriesResponseResponseTypeDef](./type_defs.md#listregistriesresponseresponsetypedef).
+[ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef).
 
 ### list_schema_versions
 
@@ -2683,7 +2680,7 @@ Boto3 documentation:
 [Glue.Client.list_schema_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_schema_versions)
 
 Arguments mapping described in
-[ListSchemaVersionsInputTypeDef](./type_defs.md#listschemaversionsinputtypedef).
+[ListSchemaVersionsInputRequestTypeDef](./type_defs.md#listschemaversionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2692,7 +2689,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSchemaVersionsResponseResponseTypeDef](./type_defs.md#listschemaversionsresponseresponsetypedef).
+[ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef).
 
 ### list_schemas
 
@@ -2704,7 +2701,7 @@ Boto3 documentation:
 [Glue.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_schemas)
 
 Arguments mapping described in
-[ListSchemasInputTypeDef](./type_defs.md#listschemasinputtypedef).
+[ListSchemasInputRequestTypeDef](./type_defs.md#listschemasinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2713,7 +2710,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSchemasResponseResponseTypeDef](./type_defs.md#listschemasresponseresponsetypedef).
+[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef).
 
 ### list_triggers
 
@@ -2726,7 +2723,7 @@ Boto3 documentation:
 [Glue.Client.list_triggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_triggers)
 
 Arguments mapping described in
-[ListTriggersRequestTypeDef](./type_defs.md#listtriggersrequesttypedef).
+[ListTriggersRequestRequestTypeDef](./type_defs.md#listtriggersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2736,7 +2733,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[ListTriggersResponseResponseTypeDef](./type_defs.md#listtriggersresponseresponsetypedef).
+[ListTriggersResponseTypeDef](./type_defs.md#listtriggersresponsetypedef).
 
 ### list_workflows
 
@@ -2748,7 +2745,7 @@ Boto3 documentation:
 [Glue.Client.list_workflows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_workflows)
 
 Arguments mapping described in
-[ListWorkflowsRequestTypeDef](./type_defs.md#listworkflowsrequesttypedef).
+[ListWorkflowsRequestRequestTypeDef](./type_defs.md#listworkflowsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2756,7 +2753,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListWorkflowsResponseResponseTypeDef](./type_defs.md#listworkflowsresponseresponsetypedef).
+[ListWorkflowsResponseTypeDef](./type_defs.md#listworkflowsresponsetypedef).
 
 ### put_data_catalog_encryption_settings
 
@@ -2769,7 +2766,7 @@ Boto3 documentation:
 [Glue.Client.put_data_catalog_encryption_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_data_catalog_encryption_settings)
 
 Arguments mapping described in
-[PutDataCatalogEncryptionSettingsRequestTypeDef](./type_defs.md#putdatacatalogencryptionsettingsrequesttypedef).
+[PutDataCatalogEncryptionSettingsRequestRequestTypeDef](./type_defs.md#putdatacatalogencryptionsettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2790,7 +2787,7 @@ Boto3 documentation:
 [Glue.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_resource_policy)
 
 Arguments mapping described in
-[PutResourcePolicyRequestTypeDef](./type_defs.md#putresourcepolicyrequesttypedef).
+[PutResourcePolicyRequestRequestTypeDef](./type_defs.md#putresourcepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2803,7 +2800,7 @@ Keyword-only arguments:
   [EnableHybridValuesType](./literals.md#enablehybridvaluestype)
 
 Returns
-[PutResourcePolicyResponseResponseTypeDef](./type_defs.md#putresourcepolicyresponseresponsetypedef).
+[PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef).
 
 ### put_schema_version_metadata
 
@@ -2815,7 +2812,7 @@ Boto3 documentation:
 [Glue.Client.put_schema_version_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_schema_version_metadata)
 
 Arguments mapping described in
-[PutSchemaVersionMetadataInputTypeDef](./type_defs.md#putschemaversionmetadatainputtypedef).
+[PutSchemaVersionMetadataInputRequestTypeDef](./type_defs.md#putschemaversionmetadatainputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2828,7 +2825,7 @@ Keyword-only arguments:
 - `SchemaVersionId`: `str`
 
 Returns
-[PutSchemaVersionMetadataResponseResponseTypeDef](./type_defs.md#putschemaversionmetadataresponseresponsetypedef).
+[PutSchemaVersionMetadataResponseTypeDef](./type_defs.md#putschemaversionmetadataresponsetypedef).
 
 ### put_workflow_run_properties
 
@@ -2840,7 +2837,7 @@ Boto3 documentation:
 [Glue.Client.put_workflow_run_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_workflow_run_properties)
 
 Arguments mapping described in
-[PutWorkflowRunPropertiesRequestTypeDef](./type_defs.md#putworkflowrunpropertiesrequesttypedef).
+[PutWorkflowRunPropertiesRequestRequestTypeDef](./type_defs.md#putworkflowrunpropertiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2861,7 +2858,7 @@ Boto3 documentation:
 [Glue.Client.query_schema_version_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.query_schema_version_metadata)
 
 Arguments mapping described in
-[QuerySchemaVersionMetadataInputTypeDef](./type_defs.md#queryschemaversionmetadatainputtypedef).
+[QuerySchemaVersionMetadataInputRequestTypeDef](./type_defs.md#queryschemaversionmetadatainputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2875,7 +2872,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[QuerySchemaVersionMetadataResponseResponseTypeDef](./type_defs.md#queryschemaversionmetadataresponseresponsetypedef).
+[QuerySchemaVersionMetadataResponseTypeDef](./type_defs.md#queryschemaversionmetadataresponsetypedef).
 
 ### register_schema_version
 
@@ -2887,7 +2884,7 @@ Boto3 documentation:
 [Glue.Client.register_schema_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.register_schema_version)
 
 Arguments mapping described in
-[RegisterSchemaVersionInputTypeDef](./type_defs.md#registerschemaversioninputtypedef).
+[RegisterSchemaVersionInputRequestTypeDef](./type_defs.md#registerschemaversioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2895,7 +2892,7 @@ Keyword-only arguments:
 - `SchemaDefinition`: `str` *(required)*
 
 Returns
-[RegisterSchemaVersionResponseResponseTypeDef](./type_defs.md#registerschemaversionresponseresponsetypedef).
+[RegisterSchemaVersionResponseTypeDef](./type_defs.md#registerschemaversionresponsetypedef).
 
 ### remove_schema_version_metadata
 
@@ -2909,7 +2906,7 @@ Boto3 documentation:
 [Glue.Client.remove_schema_version_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.remove_schema_version_metadata)
 
 Arguments mapping described in
-[RemoveSchemaVersionMetadataInputTypeDef](./type_defs.md#removeschemaversionmetadatainputtypedef).
+[RemoveSchemaVersionMetadataInputRequestTypeDef](./type_defs.md#removeschemaversionmetadatainputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2922,7 +2919,7 @@ Keyword-only arguments:
 - `SchemaVersionId`: `str`
 
 Returns
-[RemoveSchemaVersionMetadataResponseResponseTypeDef](./type_defs.md#removeschemaversionmetadataresponseresponsetypedef).
+[RemoveSchemaVersionMetadataResponseTypeDef](./type_defs.md#removeschemaversionmetadataresponsetypedef).
 
 ### reset_job_bookmark
 
@@ -2934,7 +2931,7 @@ Boto3 documentation:
 [Glue.Client.reset_job_bookmark](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.reset_job_bookmark)
 
 Arguments mapping described in
-[ResetJobBookmarkRequestTypeDef](./type_defs.md#resetjobbookmarkrequesttypedef).
+[ResetJobBookmarkRequestRequestTypeDef](./type_defs.md#resetjobbookmarkrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2942,7 +2939,7 @@ Keyword-only arguments:
 - `RunId`: `str`
 
 Returns
-[ResetJobBookmarkResponseResponseTypeDef](./type_defs.md#resetjobbookmarkresponseresponsetypedef).
+[ResetJobBookmarkResponseTypeDef](./type_defs.md#resetjobbookmarkresponsetypedef).
 
 ### resume_workflow_run
 
@@ -2955,7 +2952,7 @@ Boto3 documentation:
 [Glue.Client.resume_workflow_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.resume_workflow_run)
 
 Arguments mapping described in
-[ResumeWorkflowRunRequestTypeDef](./type_defs.md#resumeworkflowrunrequesttypedef).
+[ResumeWorkflowRunRequestRequestTypeDef](./type_defs.md#resumeworkflowrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2964,7 +2961,7 @@ Keyword-only arguments:
 - `NodeIds`: `List`\[`str`\] *(required)*
 
 Returns
-[ResumeWorkflowRunResponseResponseTypeDef](./type_defs.md#resumeworkflowrunresponseresponsetypedef).
+[ResumeWorkflowRunResponseTypeDef](./type_defs.md#resumeworkflowrunresponsetypedef).
 
 ### search_tables
 
@@ -2977,7 +2974,7 @@ Boto3 documentation:
 [Glue.Client.search_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.search_tables)
 
 Arguments mapping described in
-[SearchTablesRequestTypeDef](./type_defs.md#searchtablesrequesttypedef).
+[SearchTablesRequestRequestTypeDef](./type_defs.md#searchtablesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2993,7 +2990,7 @@ Keyword-only arguments:
   [ResourceShareTypeType](./literals.md#resourcesharetypetype)
 
 Returns
-[SearchTablesResponseResponseTypeDef](./type_defs.md#searchtablesresponseresponsetypedef).
+[SearchTablesResponseTypeDef](./type_defs.md#searchtablesresponsetypedef).
 
 ### start_crawler
 
@@ -3005,7 +3002,7 @@ Boto3 documentation:
 [Glue.Client.start_crawler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_crawler)
 
 Arguments mapping described in
-[StartCrawlerRequestTypeDef](./type_defs.md#startcrawlerrequesttypedef).
+[StartCrawlerRequestRequestTypeDef](./type_defs.md#startcrawlerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3024,7 +3021,7 @@ Boto3 documentation:
 [Glue.Client.start_crawler_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_crawler_schedule)
 
 Arguments mapping described in
-[StartCrawlerScheduleRequestTypeDef](./type_defs.md#startcrawlerschedulerequesttypedef).
+[StartCrawlerScheduleRequestRequestTypeDef](./type_defs.md#startcrawlerschedulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3044,7 +3041,7 @@ Boto3 documentation:
 [Glue.Client.start_export_labels_task_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_export_labels_task_run)
 
 Arguments mapping described in
-[StartExportLabelsTaskRunRequestTypeDef](./type_defs.md#startexportlabelstaskrunrequesttypedef).
+[StartExportLabelsTaskRunRequestRequestTypeDef](./type_defs.md#startexportlabelstaskrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3052,7 +3049,7 @@ Keyword-only arguments:
 - `OutputS3Path`: `str` *(required)*
 
 Returns
-[StartExportLabelsTaskRunResponseResponseTypeDef](./type_defs.md#startexportlabelstaskrunresponseresponsetypedef).
+[StartExportLabelsTaskRunResponseTypeDef](./type_defs.md#startexportlabelstaskrunresponsetypedef).
 
 ### start_import_labels_task_run
 
@@ -3066,7 +3063,7 @@ Boto3 documentation:
 [Glue.Client.start_import_labels_task_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_import_labels_task_run)
 
 Arguments mapping described in
-[StartImportLabelsTaskRunRequestTypeDef](./type_defs.md#startimportlabelstaskrunrequesttypedef).
+[StartImportLabelsTaskRunRequestRequestTypeDef](./type_defs.md#startimportlabelstaskrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3075,7 +3072,7 @@ Keyword-only arguments:
 - `ReplaceAllLabels`: `bool`
 
 Returns
-[StartImportLabelsTaskRunResponseResponseTypeDef](./type_defs.md#startimportlabelstaskrunresponseresponsetypedef).
+[StartImportLabelsTaskRunResponseTypeDef](./type_defs.md#startimportlabelstaskrunresponsetypedef).
 
 ### start_job_run
 
@@ -3087,7 +3084,7 @@ Boto3 documentation:
 [Glue.Client.start_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_job_run)
 
 Arguments mapping described in
-[StartJobRunRequestTypeDef](./type_defs.md#startjobrunrequesttypedef).
+[StartJobRunRequestRequestTypeDef](./type_defs.md#startjobrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3104,7 +3101,7 @@ Keyword-only arguments:
 - `NumberOfWorkers`: `int`
 
 Returns
-[StartJobRunResponseResponseTypeDef](./type_defs.md#startjobrunresponseresponsetypedef).
+[StartJobRunResponseTypeDef](./type_defs.md#startjobrunresponsetypedef).
 
 ### start_ml_evaluation_task_run
 
@@ -3117,14 +3114,14 @@ Boto3 documentation:
 [Glue.Client.start_ml_evaluation_task_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_ml_evaluation_task_run)
 
 Arguments mapping described in
-[StartMLEvaluationTaskRunRequestTypeDef](./type_defs.md#startmlevaluationtaskrunrequesttypedef).
+[StartMLEvaluationTaskRunRequestRequestTypeDef](./type_defs.md#startmlevaluationtaskrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TransformId`: `str` *(required)*
 
 Returns
-[StartMLEvaluationTaskRunResponseResponseTypeDef](./type_defs.md#startmlevaluationtaskrunresponseresponsetypedef).
+[StartMLEvaluationTaskRunResponseTypeDef](./type_defs.md#startmlevaluationtaskrunresponsetypedef).
 
 ### start_ml_labeling_set_generation_task_run
 
@@ -3138,7 +3135,7 @@ Boto3 documentation:
 [Glue.Client.start_ml_labeling_set_generation_task_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_ml_labeling_set_generation_task_run)
 
 Arguments mapping described in
-[StartMLLabelingSetGenerationTaskRunRequestTypeDef](./type_defs.md#startmllabelingsetgenerationtaskrunrequesttypedef).
+[StartMLLabelingSetGenerationTaskRunRequestRequestTypeDef](./type_defs.md#startmllabelingsetgenerationtaskrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3146,7 +3143,7 @@ Keyword-only arguments:
 - `OutputS3Path`: `str` *(required)*
 
 Returns
-[StartMLLabelingSetGenerationTaskRunResponseResponseTypeDef](./type_defs.md#startmllabelingsetgenerationtaskrunresponseresponsetypedef).
+[StartMLLabelingSetGenerationTaskRunResponseTypeDef](./type_defs.md#startmllabelingsetgenerationtaskrunresponsetypedef).
 
 ### start_trigger
 
@@ -3158,14 +3155,14 @@ Boto3 documentation:
 [Glue.Client.start_trigger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_trigger)
 
 Arguments mapping described in
-[StartTriggerRequestTypeDef](./type_defs.md#starttriggerrequesttypedef).
+[StartTriggerRequestRequestTypeDef](./type_defs.md#starttriggerrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[StartTriggerResponseResponseTypeDef](./type_defs.md#starttriggerresponseresponsetypedef).
+[StartTriggerResponseTypeDef](./type_defs.md#starttriggerresponsetypedef).
 
 ### start_workflow_run
 
@@ -3177,14 +3174,14 @@ Boto3 documentation:
 [Glue.Client.start_workflow_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_workflow_run)
 
 Arguments mapping described in
-[StartWorkflowRunRequestTypeDef](./type_defs.md#startworkflowrunrequesttypedef).
+[StartWorkflowRunRequestRequestTypeDef](./type_defs.md#startworkflowrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[StartWorkflowRunResponseResponseTypeDef](./type_defs.md#startworkflowrunresponseresponsetypedef).
+[StartWorkflowRunResponseTypeDef](./type_defs.md#startworkflowrunresponsetypedef).
 
 ### stop_crawler
 
@@ -3196,7 +3193,7 @@ Boto3 documentation:
 [Glue.Client.stop_crawler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_crawler)
 
 Arguments mapping described in
-[StopCrawlerRequestTypeDef](./type_defs.md#stopcrawlerrequesttypedef).
+[StopCrawlerRequestRequestTypeDef](./type_defs.md#stopcrawlerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3215,7 +3212,7 @@ Boto3 documentation:
 [Glue.Client.stop_crawler_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_crawler_schedule)
 
 Arguments mapping described in
-[StopCrawlerScheduleRequestTypeDef](./type_defs.md#stopcrawlerschedulerequesttypedef).
+[StopCrawlerScheduleRequestRequestTypeDef](./type_defs.md#stopcrawlerschedulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3233,14 +3230,14 @@ Boto3 documentation:
 [Glue.Client.stop_trigger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_trigger)
 
 Arguments mapping described in
-[StopTriggerRequestTypeDef](./type_defs.md#stoptriggerrequesttypedef).
+[StopTriggerRequestRequestTypeDef](./type_defs.md#stoptriggerrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[StopTriggerResponseResponseTypeDef](./type_defs.md#stoptriggerresponseresponsetypedef).
+[StopTriggerResponseTypeDef](./type_defs.md#stoptriggerresponsetypedef).
 
 ### stop_workflow_run
 
@@ -3252,7 +3249,7 @@ Boto3 documentation:
 [Glue.Client.stop_workflow_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_workflow_run)
 
 Arguments mapping described in
-[StopWorkflowRunRequestTypeDef](./type_defs.md#stopworkflowrunrequesttypedef).
+[StopWorkflowRunRequestRequestTypeDef](./type_defs.md#stopworkflowrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3271,7 +3268,7 @@ Boto3 documentation:
 [Glue.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3290,7 +3287,7 @@ Boto3 documentation:
 [Glue.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3310,7 +3307,7 @@ Boto3 documentation:
 [Glue.Client.update_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_classifier)
 
 Arguments mapping described in
-[UpdateClassifierRequestTypeDef](./type_defs.md#updateclassifierrequesttypedef).
+[UpdateClassifierRequestRequestTypeDef](./type_defs.md#updateclassifierrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3336,7 +3333,7 @@ Boto3 documentation:
 [Glue.Client.update_column_statistics_for_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_column_statistics_for_partition)
 
 Arguments mapping described in
-[UpdateColumnStatisticsForPartitionRequestTypeDef](./type_defs.md#updatecolumnstatisticsforpartitionrequesttypedef).
+[UpdateColumnStatisticsForPartitionRequestRequestTypeDef](./type_defs.md#updatecolumnstatisticsforpartitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3349,7 +3346,7 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[UpdateColumnStatisticsForPartitionResponseResponseTypeDef](./type_defs.md#updatecolumnstatisticsforpartitionresponseresponsetypedef).
+[UpdateColumnStatisticsForPartitionResponseTypeDef](./type_defs.md#updatecolumnstatisticsforpartitionresponsetypedef).
 
 ### update_column_statistics_for_table
 
@@ -3362,7 +3359,7 @@ Boto3 documentation:
 [Glue.Client.update_column_statistics_for_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_column_statistics_for_table)
 
 Arguments mapping described in
-[UpdateColumnStatisticsForTableRequestTypeDef](./type_defs.md#updatecolumnstatisticsfortablerequesttypedef).
+[UpdateColumnStatisticsForTableRequestRequestTypeDef](./type_defs.md#updatecolumnstatisticsfortablerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3374,7 +3371,7 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[UpdateColumnStatisticsForTableResponseResponseTypeDef](./type_defs.md#updatecolumnstatisticsfortableresponseresponsetypedef).
+[UpdateColumnStatisticsForTableResponseTypeDef](./type_defs.md#updatecolumnstatisticsfortableresponsetypedef).
 
 ### update_connection
 
@@ -3386,7 +3383,7 @@ Boto3 documentation:
 [Glue.Client.update_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_connection)
 
 Arguments mapping described in
-[UpdateConnectionRequestTypeDef](./type_defs.md#updateconnectionrequesttypedef).
+[UpdateConnectionRequestRequestTypeDef](./type_defs.md#updateconnectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3407,7 +3404,7 @@ Boto3 documentation:
 [Glue.Client.update_crawler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_crawler)
 
 Arguments mapping described in
-[UpdateCrawlerRequestTypeDef](./type_defs.md#updatecrawlerrequesttypedef).
+[UpdateCrawlerRequestRequestTypeDef](./type_defs.md#updatecrawlerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3439,7 +3436,7 @@ Boto3 documentation:
 [Glue.Client.update_crawler_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_crawler_schedule)
 
 Arguments mapping described in
-[UpdateCrawlerScheduleRequestTypeDef](./type_defs.md#updatecrawlerschedulerequesttypedef).
+[UpdateCrawlerScheduleRequestRequestTypeDef](./type_defs.md#updatecrawlerschedulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3458,7 +3455,7 @@ Boto3 documentation:
 [Glue.Client.update_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_database)
 
 Arguments mapping described in
-[UpdateDatabaseRequestTypeDef](./type_defs.md#updatedatabaserequesttypedef).
+[UpdateDatabaseRequestRequestTypeDef](./type_defs.md#updatedatabaserequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3479,7 +3476,7 @@ Boto3 documentation:
 [Glue.Client.update_dev_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_dev_endpoint)
 
 Arguments mapping described in
-[UpdateDevEndpointRequestTypeDef](./type_defs.md#updatedevendpointrequesttypedef).
+[UpdateDevEndpointRequestRequestTypeDef](./type_defs.md#updatedevendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3505,15 +3502,14 @@ Boto3 documentation:
 [Glue.Client.update_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_job)
 
 Arguments mapping described in
-[UpdateJobRequestTypeDef](./type_defs.md#updatejobrequesttypedef).
+[UpdateJobRequestRequestTypeDef](./type_defs.md#updatejobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobName`: `str` *(required)*
 - `JobUpdate`: [JobUpdateTypeDef](./type_defs.md#jobupdatetypedef) *(required)*
 
-Returns
-[UpdateJobResponseResponseTypeDef](./type_defs.md#updatejobresponseresponsetypedef).
+Returns [UpdateJobResponseTypeDef](./type_defs.md#updatejobresponsetypedef).
 
 ### update_ml_transform
 
@@ -3525,7 +3521,7 @@ Boto3 documentation:
 [Glue.Client.update_ml_transform](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_ml_transform)
 
 Arguments mapping described in
-[UpdateMLTransformRequestTypeDef](./type_defs.md#updatemltransformrequesttypedef).
+[UpdateMLTransformRequestRequestTypeDef](./type_defs.md#updatemltransformrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3543,7 +3539,7 @@ Keyword-only arguments:
 - `MaxRetries`: `int`
 
 Returns
-[UpdateMLTransformResponseResponseTypeDef](./type_defs.md#updatemltransformresponseresponsetypedef).
+[UpdateMLTransformResponseTypeDef](./type_defs.md#updatemltransformresponsetypedef).
 
 ### update_partition
 
@@ -3555,7 +3551,7 @@ Boto3 documentation:
 [Glue.Client.update_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_partition)
 
 Arguments mapping described in
-[UpdatePartitionRequestTypeDef](./type_defs.md#updatepartitionrequesttypedef).
+[UpdatePartitionRequestRequestTypeDef](./type_defs.md#updatepartitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3578,7 +3574,7 @@ Boto3 documentation:
 [Glue.Client.update_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_registry)
 
 Arguments mapping described in
-[UpdateRegistryInputTypeDef](./type_defs.md#updateregistryinputtypedef).
+[UpdateRegistryInputRequestTypeDef](./type_defs.md#updateregistryinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3587,7 +3583,7 @@ Keyword-only arguments:
 - `Description`: `str` *(required)*
 
 Returns
-[UpdateRegistryResponseResponseTypeDef](./type_defs.md#updateregistryresponseresponsetypedef).
+[UpdateRegistryResponseTypeDef](./type_defs.md#updateregistryresponsetypedef).
 
 ### update_schema
 
@@ -3600,7 +3596,7 @@ Boto3 documentation:
 [Glue.Client.update_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_schema)
 
 Arguments mapping described in
-[UpdateSchemaInputTypeDef](./type_defs.md#updateschemainputtypedef).
+[UpdateSchemaInputRequestTypeDef](./type_defs.md#updateschemainputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3611,7 +3607,7 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[UpdateSchemaResponseResponseTypeDef](./type_defs.md#updateschemaresponseresponsetypedef).
+[UpdateSchemaResponseTypeDef](./type_defs.md#updateschemaresponsetypedef).
 
 ### update_table
 
@@ -3623,7 +3619,7 @@ Boto3 documentation:
 [Glue.Client.update_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_table)
 
 Arguments mapping described in
-[UpdateTableRequestTypeDef](./type_defs.md#updatetablerequesttypedef).
+[UpdateTableRequestRequestTypeDef](./type_defs.md#updatetablerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3645,7 +3641,7 @@ Boto3 documentation:
 [Glue.Client.update_trigger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_trigger)
 
 Arguments mapping described in
-[UpdateTriggerRequestTypeDef](./type_defs.md#updatetriggerrequesttypedef).
+[UpdateTriggerRequestRequestTypeDef](./type_defs.md#updatetriggerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3654,7 +3650,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateTriggerResponseResponseTypeDef](./type_defs.md#updatetriggerresponseresponsetypedef).
+[UpdateTriggerResponseTypeDef](./type_defs.md#updatetriggerresponsetypedef).
 
 ### update_user_defined_function
 
@@ -3667,7 +3663,7 @@ Boto3 documentation:
 [Glue.Client.update_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_user_defined_function)
 
 Arguments mapping described in
-[UpdateUserDefinedFunctionRequestTypeDef](./type_defs.md#updateuserdefinedfunctionrequesttypedef).
+[UpdateUserDefinedFunctionRequestRequestTypeDef](./type_defs.md#updateuserdefinedfunctionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3690,7 +3686,7 @@ Boto3 documentation:
 [Glue.Client.update_workflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_workflow)
 
 Arguments mapping described in
-[UpdateWorkflowRequestTypeDef](./type_defs.md#updateworkflowrequesttypedef).
+[UpdateWorkflowRequestRequestTypeDef](./type_defs.md#updateworkflowrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3700,7 +3696,7 @@ Keyword-only arguments:
 - `MaxConcurrentRuns`: `int`
 
 Returns
-[UpdateWorkflowResponseResponseTypeDef](./type_defs.md#updateworkflowresponseresponsetypedef).
+[UpdateWorkflowResponseTypeDef](./type_defs.md#updateworkflowresponsetypedef).
 
 ### get_paginator
 

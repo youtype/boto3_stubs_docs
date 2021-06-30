@@ -11,6 +11,7 @@ type annotations stubs module
   - [ElasticInferenceClient](#elasticinferenceclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [describe_accelerator_offerings](#describe_accelerator_offerings)
     - [describe_accelerator_types](#describe_accelerator_types)
@@ -58,6 +59,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ElasticInferenceClient exceptions.
+
+Type annotations for `boto3.client("elastic-inference").exceptions` method.
+
+Boto3 documentation:
+[ElasticInference.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -85,7 +97,7 @@ Boto3 documentation:
 [ElasticInference.Client.describe_accelerator_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerator_offerings)
 
 Arguments mapping described in
-[DescribeAcceleratorOfferingsRequestTypeDef](./type_defs.md#describeacceleratorofferingsrequesttypedef).
+[DescribeAcceleratorOfferingsRequestRequestTypeDef](./type_defs.md#describeacceleratorofferingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -94,7 +106,7 @@ Keyword-only arguments:
 - `acceleratorTypes`: `List`\[`str`\]
 
 Returns
-[DescribeAcceleratorOfferingsResponseResponseTypeDef](./type_defs.md#describeacceleratorofferingsresponseresponsetypedef).
+[DescribeAcceleratorOfferingsResponseTypeDef](./type_defs.md#describeacceleratorofferingsresponsetypedef).
 
 ### describe_accelerator_types
 
@@ -108,7 +120,7 @@ Boto3 documentation:
 [ElasticInference.Client.describe_accelerator_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerator_types)
 
 Returns
-[DescribeAcceleratorTypesResponseResponseTypeDef](./type_defs.md#describeacceleratortypesresponseresponsetypedef).
+[DescribeAcceleratorTypesResponseTypeDef](./type_defs.md#describeacceleratortypesresponsetypedef).
 
 ### describe_accelerators
 
@@ -122,7 +134,7 @@ Boto3 documentation:
 [ElasticInference.Client.describe_accelerators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerators)
 
 Arguments mapping described in
-[DescribeAcceleratorsRequestTypeDef](./type_defs.md#describeacceleratorsrequesttypedef).
+[DescribeAcceleratorsRequestRequestTypeDef](./type_defs.md#describeacceleratorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -132,7 +144,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeAcceleratorsResponseResponseTypeDef](./type_defs.md#describeacceleratorsresponseresponsetypedef).
+[DescribeAcceleratorsResponseTypeDef](./type_defs.md#describeacceleratorsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -164,14 +176,14 @@ Boto3 documentation:
 [ElasticInference.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResultResponseTypeDef](./type_defs.md#listtagsforresourceresultresponsetypedef).
+[ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
 
 ### tag_resource
 
@@ -183,7 +195,7 @@ Boto3 documentation:
 [ElasticInference.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -202,7 +214,7 @@ Boto3 documentation:
 [ElasticInference.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 

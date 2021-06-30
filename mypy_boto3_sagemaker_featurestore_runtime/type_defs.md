@@ -10,14 +10,14 @@ type annotations stubs module
 - [Typed dictionaries for boto3 SageMakerFeatureStoreRuntime module](#typed-dictionaries-for-boto3-sagemakerfeaturestoreruntime-module)
   - [BatchGetRecordErrorTypeDef](#batchgetrecorderrortypedef)
   - [BatchGetRecordIdentifierTypeDef](#batchgetrecordidentifiertypedef)
-  - [BatchGetRecordRequestTypeDef](#batchgetrecordrequesttypedef)
-  - [BatchGetRecordResponseResponseTypeDef](#batchgetrecordresponseresponsetypedef)
+  - [BatchGetRecordRequestRequestTypeDef](#batchgetrecordrequestrequesttypedef)
+  - [BatchGetRecordResponseTypeDef](#batchgetrecordresponsetypedef)
   - [BatchGetRecordResultDetailTypeDef](#batchgetrecordresultdetailtypedef)
-  - [DeleteRecordRequestTypeDef](#deleterecordrequesttypedef)
+  - [DeleteRecordRequestRequestTypeDef](#deleterecordrequestrequesttypedef)
   - [FeatureValueTypeDef](#featurevaluetypedef)
-  - [GetRecordRequestTypeDef](#getrecordrequesttypedef)
-  - [GetRecordResponseResponseTypeDef](#getrecordresponseresponsetypedef)
-  - [PutRecordRequestTypeDef](#putrecordrequesttypedef)
+  - [GetRecordRequestRequestTypeDef](#getrecordrequestrequesttypedef)
+  - [GetRecordResponseTypeDef](#getrecordresponsetypedef)
+  - [PutRecordRequestRequestTypeDef](#putrecordrequestrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
 
 ## BatchGetRecordErrorTypeDef
@@ -48,10 +48,10 @@ Optional fields:
 
 - `FeatureNames`: `List`\[`str`\]
 
-## BatchGetRecordRequestTypeDef
+## BatchGetRecordRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sagemaker_featurestore_runtime.type_defs import BatchGetRecordRequestTypeDef
+from mypy_boto3_sagemaker_featurestore_runtime.type_defs import BatchGetRecordRequestRequestTypeDef
 ```
 
 Required fields:
@@ -59,10 +59,10 @@ Required fields:
 - `Identifiers`:
   `List`\[[BatchGetRecordIdentifierTypeDef](./type_defs.md#batchgetrecordidentifiertypedef)\]
 
-## BatchGetRecordResponseResponseTypeDef
+## BatchGetRecordResponseTypeDef
 
 ```python
-from mypy_boto3_sagemaker_featurestore_runtime.type_defs import BatchGetRecordResponseResponseTypeDef
+from mypy_boto3_sagemaker_featurestore_runtime.type_defs import BatchGetRecordResponseTypeDef
 ```
 
 Required fields:
@@ -88,10 +88,10 @@ Required fields:
 - `RecordIdentifierValueAsString`: `str`
 - `Record`: `List`\[[FeatureValueTypeDef](./type_defs.md#featurevaluetypedef)\]
 
-## DeleteRecordRequestTypeDef
+## DeleteRecordRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sagemaker_featurestore_runtime.type_defs import DeleteRecordRequestTypeDef
+from mypy_boto3_sagemaker_featurestore_runtime.type_defs import DeleteRecordRequestRequestTypeDef
 ```
 
 Required fields:
@@ -111,10 +111,10 @@ Required fields:
 - `FeatureName`: `str`
 - `ValueAsString`: `str`
 
-## GetRecordRequestTypeDef
+## GetRecordRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sagemaker_featurestore_runtime.type_defs import GetRecordRequestTypeDef
+from mypy_boto3_sagemaker_featurestore_runtime.type_defs import GetRecordRequestRequestTypeDef
 ```
 
 Required fields:
@@ -126,10 +126,10 @@ Optional fields:
 
 - `FeatureNames`: `List`\[`str`\]
 
-## GetRecordResponseResponseTypeDef
+## GetRecordResponseTypeDef
 
 ```python
-from mypy_boto3_sagemaker_featurestore_runtime.type_defs import GetRecordResponseResponseTypeDef
+from mypy_boto3_sagemaker_featurestore_runtime.type_defs import GetRecordResponseTypeDef
 ```
 
 Required fields:
@@ -138,10 +138,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutRecordRequestTypeDef
+## PutRecordRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sagemaker_featurestore_runtime.type_defs import PutRecordRequestTypeDef
+from mypy_boto3_sagemaker_featurestore_runtime.type_defs import PutRecordRequestRequestTypeDef
 ```
 
 Required fields:

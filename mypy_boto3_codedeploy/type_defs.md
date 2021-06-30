@@ -8,46 +8,46 @@ type annotations stubs module
 [mypy_boto3_codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
 
 - [Typed dictionaries for boto3 CodeDeploy module](#typed-dictionaries-for-boto3-codedeploy-module)
-  - [AddTagsToOnPremisesInstancesInputTypeDef](#addtagstoonpremisesinstancesinputtypedef)
+  - [AddTagsToOnPremisesInstancesInputRequestTypeDef](#addtagstoonpremisesinstancesinputrequesttypedef)
   - [AlarmConfigurationTypeDef](#alarmconfigurationtypedef)
   - [AlarmTypeDef](#alarmtypedef)
   - [AppSpecContentTypeDef](#appspeccontenttypedef)
   - [ApplicationInfoTypeDef](#applicationinfotypedef)
   - [AutoRollbackConfigurationTypeDef](#autorollbackconfigurationtypedef)
   - [AutoScalingGroupTypeDef](#autoscalinggrouptypedef)
-  - [BatchGetApplicationRevisionsInputTypeDef](#batchgetapplicationrevisionsinputtypedef)
-  - [BatchGetApplicationRevisionsOutputResponseTypeDef](#batchgetapplicationrevisionsoutputresponsetypedef)
-  - [BatchGetApplicationsInputTypeDef](#batchgetapplicationsinputtypedef)
-  - [BatchGetApplicationsOutputResponseTypeDef](#batchgetapplicationsoutputresponsetypedef)
-  - [BatchGetDeploymentGroupsInputTypeDef](#batchgetdeploymentgroupsinputtypedef)
-  - [BatchGetDeploymentGroupsOutputResponseTypeDef](#batchgetdeploymentgroupsoutputresponsetypedef)
-  - [BatchGetDeploymentInstancesInputTypeDef](#batchgetdeploymentinstancesinputtypedef)
-  - [BatchGetDeploymentInstancesOutputResponseTypeDef](#batchgetdeploymentinstancesoutputresponsetypedef)
-  - [BatchGetDeploymentTargetsInputTypeDef](#batchgetdeploymenttargetsinputtypedef)
-  - [BatchGetDeploymentTargetsOutputResponseTypeDef](#batchgetdeploymenttargetsoutputresponsetypedef)
-  - [BatchGetDeploymentsInputTypeDef](#batchgetdeploymentsinputtypedef)
-  - [BatchGetDeploymentsOutputResponseTypeDef](#batchgetdeploymentsoutputresponsetypedef)
-  - [BatchGetOnPremisesInstancesInputTypeDef](#batchgetonpremisesinstancesinputtypedef)
-  - [BatchGetOnPremisesInstancesOutputResponseTypeDef](#batchgetonpremisesinstancesoutputresponsetypedef)
+  - [BatchGetApplicationRevisionsInputRequestTypeDef](#batchgetapplicationrevisionsinputrequesttypedef)
+  - [BatchGetApplicationRevisionsOutputTypeDef](#batchgetapplicationrevisionsoutputtypedef)
+  - [BatchGetApplicationsInputRequestTypeDef](#batchgetapplicationsinputrequesttypedef)
+  - [BatchGetApplicationsOutputTypeDef](#batchgetapplicationsoutputtypedef)
+  - [BatchGetDeploymentGroupsInputRequestTypeDef](#batchgetdeploymentgroupsinputrequesttypedef)
+  - [BatchGetDeploymentGroupsOutputTypeDef](#batchgetdeploymentgroupsoutputtypedef)
+  - [BatchGetDeploymentInstancesInputRequestTypeDef](#batchgetdeploymentinstancesinputrequesttypedef)
+  - [BatchGetDeploymentInstancesOutputTypeDef](#batchgetdeploymentinstancesoutputtypedef)
+  - [BatchGetDeploymentTargetsInputRequestTypeDef](#batchgetdeploymenttargetsinputrequesttypedef)
+  - [BatchGetDeploymentTargetsOutputTypeDef](#batchgetdeploymenttargetsoutputtypedef)
+  - [BatchGetDeploymentsInputRequestTypeDef](#batchgetdeploymentsinputrequesttypedef)
+  - [BatchGetDeploymentsOutputTypeDef](#batchgetdeploymentsoutputtypedef)
+  - [BatchGetOnPremisesInstancesInputRequestTypeDef](#batchgetonpremisesinstancesinputrequesttypedef)
+  - [BatchGetOnPremisesInstancesOutputTypeDef](#batchgetonpremisesinstancesoutputtypedef)
   - [BlueGreenDeploymentConfigurationTypeDef](#bluegreendeploymentconfigurationtypedef)
   - [BlueInstanceTerminationOptionTypeDef](#blueinstanceterminationoptiontypedef)
   - [CloudFormationTargetTypeDef](#cloudformationtargettypedef)
-  - [ContinueDeploymentInputTypeDef](#continuedeploymentinputtypedef)
-  - [CreateApplicationInputTypeDef](#createapplicationinputtypedef)
-  - [CreateApplicationOutputResponseTypeDef](#createapplicationoutputresponsetypedef)
-  - [CreateDeploymentConfigInputTypeDef](#createdeploymentconfiginputtypedef)
-  - [CreateDeploymentConfigOutputResponseTypeDef](#createdeploymentconfigoutputresponsetypedef)
-  - [CreateDeploymentGroupInputTypeDef](#createdeploymentgroupinputtypedef)
-  - [CreateDeploymentGroupOutputResponseTypeDef](#createdeploymentgroupoutputresponsetypedef)
-  - [CreateDeploymentInputTypeDef](#createdeploymentinputtypedef)
-  - [CreateDeploymentOutputResponseTypeDef](#createdeploymentoutputresponsetypedef)
-  - [DeleteApplicationInputTypeDef](#deleteapplicationinputtypedef)
-  - [DeleteDeploymentConfigInputTypeDef](#deletedeploymentconfiginputtypedef)
-  - [DeleteDeploymentGroupInputTypeDef](#deletedeploymentgroupinputtypedef)
-  - [DeleteDeploymentGroupOutputResponseTypeDef](#deletedeploymentgroupoutputresponsetypedef)
-  - [DeleteGitHubAccountTokenInputTypeDef](#deletegithubaccounttokeninputtypedef)
-  - [DeleteGitHubAccountTokenOutputResponseTypeDef](#deletegithubaccounttokenoutputresponsetypedef)
-  - [DeleteResourcesByExternalIdInputTypeDef](#deleteresourcesbyexternalidinputtypedef)
+  - [ContinueDeploymentInputRequestTypeDef](#continuedeploymentinputrequesttypedef)
+  - [CreateApplicationInputRequestTypeDef](#createapplicationinputrequesttypedef)
+  - [CreateApplicationOutputTypeDef](#createapplicationoutputtypedef)
+  - [CreateDeploymentConfigInputRequestTypeDef](#createdeploymentconfiginputrequesttypedef)
+  - [CreateDeploymentConfigOutputTypeDef](#createdeploymentconfigoutputtypedef)
+  - [CreateDeploymentGroupInputRequestTypeDef](#createdeploymentgroupinputrequesttypedef)
+  - [CreateDeploymentGroupOutputTypeDef](#createdeploymentgroupoutputtypedef)
+  - [CreateDeploymentInputRequestTypeDef](#createdeploymentinputrequesttypedef)
+  - [CreateDeploymentOutputTypeDef](#createdeploymentoutputtypedef)
+  - [DeleteApplicationInputRequestTypeDef](#deleteapplicationinputrequesttypedef)
+  - [DeleteDeploymentConfigInputRequestTypeDef](#deletedeploymentconfiginputrequesttypedef)
+  - [DeleteDeploymentGroupInputRequestTypeDef](#deletedeploymentgroupinputrequesttypedef)
+  - [DeleteDeploymentGroupOutputTypeDef](#deletedeploymentgroupoutputtypedef)
+  - [DeleteGitHubAccountTokenInputRequestTypeDef](#deletegithubaccounttokeninputrequesttypedef)
+  - [DeleteGitHubAccountTokenOutputTypeDef](#deletegithubaccounttokenoutputtypedef)
+  - [DeleteResourcesByExternalIdInputRequestTypeDef](#deleteresourcesbyexternalidinputrequesttypedef)
   - [DeploymentConfigInfoTypeDef](#deploymentconfiginfotypedef)
   - [DeploymentGroupInfoTypeDef](#deploymentgroupinfotypedef)
   - [DeploymentInfoTypeDef](#deploymentinfotypedef)
@@ -55,7 +55,7 @@ type annotations stubs module
   - [DeploymentReadyOptionTypeDef](#deploymentreadyoptiontypedef)
   - [DeploymentStyleTypeDef](#deploymentstyletypedef)
   - [DeploymentTargetTypeDef](#deploymenttargettypedef)
-  - [DeregisterOnPremisesInstanceInputTypeDef](#deregisteronpremisesinstanceinputtypedef)
+  - [DeregisterOnPremisesInstanceInputRequestTypeDef](#deregisteronpremisesinstanceinputrequesttypedef)
   - [DiagnosticsTypeDef](#diagnosticstypedef)
   - [EC2TagFilterTypeDef](#ec2tagfiltertypedef)
   - [EC2TagSetTypeDef](#ec2tagsettypedef)
@@ -65,22 +65,22 @@ type annotations stubs module
   - [ELBInfoTypeDef](#elbinfotypedef)
   - [ErrorInformationTypeDef](#errorinformationtypedef)
   - [GenericRevisionInfoTypeDef](#genericrevisioninfotypedef)
-  - [GetApplicationInputTypeDef](#getapplicationinputtypedef)
-  - [GetApplicationOutputResponseTypeDef](#getapplicationoutputresponsetypedef)
-  - [GetApplicationRevisionInputTypeDef](#getapplicationrevisioninputtypedef)
-  - [GetApplicationRevisionOutputResponseTypeDef](#getapplicationrevisionoutputresponsetypedef)
-  - [GetDeploymentConfigInputTypeDef](#getdeploymentconfiginputtypedef)
-  - [GetDeploymentConfigOutputResponseTypeDef](#getdeploymentconfigoutputresponsetypedef)
-  - [GetDeploymentGroupInputTypeDef](#getdeploymentgroupinputtypedef)
-  - [GetDeploymentGroupOutputResponseTypeDef](#getdeploymentgroupoutputresponsetypedef)
-  - [GetDeploymentInputTypeDef](#getdeploymentinputtypedef)
-  - [GetDeploymentInstanceInputTypeDef](#getdeploymentinstanceinputtypedef)
-  - [GetDeploymentInstanceOutputResponseTypeDef](#getdeploymentinstanceoutputresponsetypedef)
-  - [GetDeploymentOutputResponseTypeDef](#getdeploymentoutputresponsetypedef)
-  - [GetDeploymentTargetInputTypeDef](#getdeploymenttargetinputtypedef)
-  - [GetDeploymentTargetOutputResponseTypeDef](#getdeploymenttargetoutputresponsetypedef)
-  - [GetOnPremisesInstanceInputTypeDef](#getonpremisesinstanceinputtypedef)
-  - [GetOnPremisesInstanceOutputResponseTypeDef](#getonpremisesinstanceoutputresponsetypedef)
+  - [GetApplicationInputRequestTypeDef](#getapplicationinputrequesttypedef)
+  - [GetApplicationOutputTypeDef](#getapplicationoutputtypedef)
+  - [GetApplicationRevisionInputRequestTypeDef](#getapplicationrevisioninputrequesttypedef)
+  - [GetApplicationRevisionOutputTypeDef](#getapplicationrevisionoutputtypedef)
+  - [GetDeploymentConfigInputRequestTypeDef](#getdeploymentconfiginputrequesttypedef)
+  - [GetDeploymentConfigOutputTypeDef](#getdeploymentconfigoutputtypedef)
+  - [GetDeploymentGroupInputRequestTypeDef](#getdeploymentgroupinputrequesttypedef)
+  - [GetDeploymentGroupOutputTypeDef](#getdeploymentgroupoutputtypedef)
+  - [GetDeploymentInputRequestTypeDef](#getdeploymentinputrequesttypedef)
+  - [GetDeploymentInstanceInputRequestTypeDef](#getdeploymentinstanceinputrequesttypedef)
+  - [GetDeploymentInstanceOutputTypeDef](#getdeploymentinstanceoutputtypedef)
+  - [GetDeploymentOutputTypeDef](#getdeploymentoutputtypedef)
+  - [GetDeploymentTargetInputRequestTypeDef](#getdeploymenttargetinputrequesttypedef)
+  - [GetDeploymentTargetOutputTypeDef](#getdeploymenttargetoutputtypedef)
+  - [GetOnPremisesInstanceInputRequestTypeDef](#getonpremisesinstanceinputrequesttypedef)
+  - [GetOnPremisesInstanceOutputTypeDef](#getonpremisesinstanceoutputtypedef)
   - [GitHubLocationTypeDef](#githublocationtypedef)
   - [GreenFleetProvisioningOptionTypeDef](#greenfleetprovisioningoptiontypedef)
   - [InstanceInfoTypeDef](#instanceinfotypedef)
@@ -90,47 +90,47 @@ type annotations stubs module
   - [LambdaTargetTypeDef](#lambdatargettypedef)
   - [LastDeploymentInfoTypeDef](#lastdeploymentinfotypedef)
   - [LifecycleEventTypeDef](#lifecycleeventtypedef)
-  - [ListApplicationRevisionsInputTypeDef](#listapplicationrevisionsinputtypedef)
-  - [ListApplicationRevisionsOutputResponseTypeDef](#listapplicationrevisionsoutputresponsetypedef)
-  - [ListApplicationsInputTypeDef](#listapplicationsinputtypedef)
-  - [ListApplicationsOutputResponseTypeDef](#listapplicationsoutputresponsetypedef)
-  - [ListDeploymentConfigsInputTypeDef](#listdeploymentconfigsinputtypedef)
-  - [ListDeploymentConfigsOutputResponseTypeDef](#listdeploymentconfigsoutputresponsetypedef)
-  - [ListDeploymentGroupsInputTypeDef](#listdeploymentgroupsinputtypedef)
-  - [ListDeploymentGroupsOutputResponseTypeDef](#listdeploymentgroupsoutputresponsetypedef)
-  - [ListDeploymentInstancesInputTypeDef](#listdeploymentinstancesinputtypedef)
-  - [ListDeploymentInstancesOutputResponseTypeDef](#listdeploymentinstancesoutputresponsetypedef)
-  - [ListDeploymentTargetsInputTypeDef](#listdeploymenttargetsinputtypedef)
-  - [ListDeploymentTargetsOutputResponseTypeDef](#listdeploymenttargetsoutputresponsetypedef)
-  - [ListDeploymentsInputTypeDef](#listdeploymentsinputtypedef)
-  - [ListDeploymentsOutputResponseTypeDef](#listdeploymentsoutputresponsetypedef)
-  - [ListGitHubAccountTokenNamesInputTypeDef](#listgithubaccounttokennamesinputtypedef)
-  - [ListGitHubAccountTokenNamesOutputResponseTypeDef](#listgithubaccounttokennamesoutputresponsetypedef)
-  - [ListOnPremisesInstancesInputTypeDef](#listonpremisesinstancesinputtypedef)
-  - [ListOnPremisesInstancesOutputResponseTypeDef](#listonpremisesinstancesoutputresponsetypedef)
-  - [ListTagsForResourceInputTypeDef](#listtagsforresourceinputtypedef)
-  - [ListTagsForResourceOutputResponseTypeDef](#listtagsforresourceoutputresponsetypedef)
+  - [ListApplicationRevisionsInputRequestTypeDef](#listapplicationrevisionsinputrequesttypedef)
+  - [ListApplicationRevisionsOutputTypeDef](#listapplicationrevisionsoutputtypedef)
+  - [ListApplicationsInputRequestTypeDef](#listapplicationsinputrequesttypedef)
+  - [ListApplicationsOutputTypeDef](#listapplicationsoutputtypedef)
+  - [ListDeploymentConfigsInputRequestTypeDef](#listdeploymentconfigsinputrequesttypedef)
+  - [ListDeploymentConfigsOutputTypeDef](#listdeploymentconfigsoutputtypedef)
+  - [ListDeploymentGroupsInputRequestTypeDef](#listdeploymentgroupsinputrequesttypedef)
+  - [ListDeploymentGroupsOutputTypeDef](#listdeploymentgroupsoutputtypedef)
+  - [ListDeploymentInstancesInputRequestTypeDef](#listdeploymentinstancesinputrequesttypedef)
+  - [ListDeploymentInstancesOutputTypeDef](#listdeploymentinstancesoutputtypedef)
+  - [ListDeploymentTargetsInputRequestTypeDef](#listdeploymenttargetsinputrequesttypedef)
+  - [ListDeploymentTargetsOutputTypeDef](#listdeploymenttargetsoutputtypedef)
+  - [ListDeploymentsInputRequestTypeDef](#listdeploymentsinputrequesttypedef)
+  - [ListDeploymentsOutputTypeDef](#listdeploymentsoutputtypedef)
+  - [ListGitHubAccountTokenNamesInputRequestTypeDef](#listgithubaccounttokennamesinputrequesttypedef)
+  - [ListGitHubAccountTokenNamesOutputTypeDef](#listgithubaccounttokennamesoutputtypedef)
+  - [ListOnPremisesInstancesInputRequestTypeDef](#listonpremisesinstancesinputrequesttypedef)
+  - [ListOnPremisesInstancesOutputTypeDef](#listonpremisesinstancesoutputtypedef)
+  - [ListTagsForResourceInputRequestTypeDef](#listtagsforresourceinputrequesttypedef)
+  - [ListTagsForResourceOutputTypeDef](#listtagsforresourceoutputtypedef)
   - [LoadBalancerInfoTypeDef](#loadbalancerinfotypedef)
   - [MinimumHealthyHostsTypeDef](#minimumhealthyhoststypedef)
   - [OnPremisesTagSetTypeDef](#onpremisestagsettypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutLifecycleEventHookExecutionStatusInputTypeDef](#putlifecycleeventhookexecutionstatusinputtypedef)
-  - [PutLifecycleEventHookExecutionStatusOutputResponseTypeDef](#putlifecycleeventhookexecutionstatusoutputresponsetypedef)
+  - [PutLifecycleEventHookExecutionStatusInputRequestTypeDef](#putlifecycleeventhookexecutionstatusinputrequesttypedef)
+  - [PutLifecycleEventHookExecutionStatusOutputTypeDef](#putlifecycleeventhookexecutionstatusoutputtypedef)
   - [RawStringTypeDef](#rawstringtypedef)
-  - [RegisterApplicationRevisionInputTypeDef](#registerapplicationrevisioninputtypedef)
-  - [RegisterOnPremisesInstanceInputTypeDef](#registeronpremisesinstanceinputtypedef)
+  - [RegisterApplicationRevisionInputRequestTypeDef](#registerapplicationrevisioninputrequesttypedef)
+  - [RegisterOnPremisesInstanceInputRequestTypeDef](#registeronpremisesinstanceinputrequesttypedef)
   - [RelatedDeploymentsTypeDef](#relateddeploymentstypedef)
-  - [RemoveTagsFromOnPremisesInstancesInputTypeDef](#removetagsfromonpremisesinstancesinputtypedef)
+  - [RemoveTagsFromOnPremisesInstancesInputRequestTypeDef](#removetagsfromonpremisesinstancesinputrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RevisionInfoTypeDef](#revisioninfotypedef)
   - [RevisionLocationTypeDef](#revisionlocationtypedef)
   - [RollbackInfoTypeDef](#rollbackinfotypedef)
   - [S3LocationTypeDef](#s3locationtypedef)
-  - [SkipWaitTimeForInstanceTerminationInputTypeDef](#skipwaittimeforinstanceterminationinputtypedef)
-  - [StopDeploymentInputTypeDef](#stopdeploymentinputtypedef)
-  - [StopDeploymentOutputResponseTypeDef](#stopdeploymentoutputresponsetypedef)
+  - [SkipWaitTimeForInstanceTerminationInputRequestTypeDef](#skipwaittimeforinstanceterminationinputrequesttypedef)
+  - [StopDeploymentInputRequestTypeDef](#stopdeploymentinputrequesttypedef)
+  - [StopDeploymentOutputTypeDef](#stopdeploymentoutputtypedef)
   - [TagFilterTypeDef](#tagfiltertypedef)
-  - [TagResourceInputTypeDef](#tagresourceinputtypedef)
+  - [TagResourceInputRequestTypeDef](#tagresourceinputrequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TargetGroupInfoTypeDef](#targetgroupinfotypedef)
   - [TargetGroupPairInfoTypeDef](#targetgrouppairinfotypedef)
@@ -141,16 +141,16 @@ type annotations stubs module
   - [TrafficRouteTypeDef](#trafficroutetypedef)
   - [TrafficRoutingConfigTypeDef](#trafficroutingconfigtypedef)
   - [TriggerConfigTypeDef](#triggerconfigtypedef)
-  - [UntagResourceInputTypeDef](#untagresourceinputtypedef)
-  - [UpdateApplicationInputTypeDef](#updateapplicationinputtypedef)
-  - [UpdateDeploymentGroupInputTypeDef](#updatedeploymentgroupinputtypedef)
-  - [UpdateDeploymentGroupOutputResponseTypeDef](#updatedeploymentgroupoutputresponsetypedef)
+  - [UntagResourceInputRequestTypeDef](#untagresourceinputrequesttypedef)
+  - [UpdateApplicationInputRequestTypeDef](#updateapplicationinputrequesttypedef)
+  - [UpdateDeploymentGroupInputRequestTypeDef](#updatedeploymentgroupinputrequesttypedef)
+  - [UpdateDeploymentGroupOutputTypeDef](#updatedeploymentgroupoutputtypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
-## AddTagsToOnPremisesInstancesInputTypeDef
+## AddTagsToOnPremisesInstancesInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import AddTagsToOnPremisesInstancesInputTypeDef
+from mypy_boto3_codedeploy.type_defs import AddTagsToOnPremisesInstancesInputRequestTypeDef
 ```
 
 Required fields:
@@ -229,10 +229,10 @@ Optional fields:
 - `name`: `str`
 - `hook`: `str`
 
-## BatchGetApplicationRevisionsInputTypeDef
+## BatchGetApplicationRevisionsInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import BatchGetApplicationRevisionsInputTypeDef
+from mypy_boto3_codedeploy.type_defs import BatchGetApplicationRevisionsInputRequestTypeDef
 ```
 
 Required fields:
@@ -241,10 +241,10 @@ Required fields:
 - `revisions`:
   `List`\[[RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef)\]
 
-## BatchGetApplicationRevisionsOutputResponseTypeDef
+## BatchGetApplicationRevisionsOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import BatchGetApplicationRevisionsOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import BatchGetApplicationRevisionsOutputTypeDef
 ```
 
 Required fields:
@@ -256,20 +256,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchGetApplicationsInputTypeDef
+## BatchGetApplicationsInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import BatchGetApplicationsInputTypeDef
+from mypy_boto3_codedeploy.type_defs import BatchGetApplicationsInputRequestTypeDef
 ```
 
 Required fields:
 
 - `applicationNames`: `List`\[`str`\]
 
-## BatchGetApplicationsOutputResponseTypeDef
+## BatchGetApplicationsOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import BatchGetApplicationsOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import BatchGetApplicationsOutputTypeDef
 ```
 
 Required fields:
@@ -279,10 +279,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchGetDeploymentGroupsInputTypeDef
+## BatchGetDeploymentGroupsInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentGroupsInputTypeDef
+from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentGroupsInputRequestTypeDef
 ```
 
 Required fields:
@@ -290,10 +290,10 @@ Required fields:
 - `applicationName`: `str`
 - `deploymentGroupNames`: `List`\[`str`\]
 
-## BatchGetDeploymentGroupsOutputResponseTypeDef
+## BatchGetDeploymentGroupsOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentGroupsOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentGroupsOutputTypeDef
 ```
 
 Required fields:
@@ -304,10 +304,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchGetDeploymentInstancesInputTypeDef
+## BatchGetDeploymentInstancesInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentInstancesInputTypeDef
+from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentInstancesInputRequestTypeDef
 ```
 
 Required fields:
@@ -315,10 +315,10 @@ Required fields:
 - `deploymentId`: `str`
 - `instanceIds`: `List`\[`str`\]
 
-## BatchGetDeploymentInstancesOutputResponseTypeDef
+## BatchGetDeploymentInstancesOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentInstancesOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentInstancesOutputTypeDef
 ```
 
 Required fields:
@@ -329,10 +329,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchGetDeploymentTargetsInputTypeDef
+## BatchGetDeploymentTargetsInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentTargetsInputTypeDef
+from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentTargetsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -340,10 +340,10 @@ Optional fields:
 - `deploymentId`: `str`
 - `targetIds`: `List`\[`str`\]
 
-## BatchGetDeploymentTargetsOutputResponseTypeDef
+## BatchGetDeploymentTargetsOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentTargetsOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentTargetsOutputTypeDef
 ```
 
 Required fields:
@@ -353,20 +353,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchGetDeploymentsInputTypeDef
+## BatchGetDeploymentsInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentsInputTypeDef
+from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentsInputRequestTypeDef
 ```
 
 Required fields:
 
 - `deploymentIds`: `List`\[`str`\]
 
-## BatchGetDeploymentsOutputResponseTypeDef
+## BatchGetDeploymentsOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentsOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentsOutputTypeDef
 ```
 
 Required fields:
@@ -376,20 +376,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchGetOnPremisesInstancesInputTypeDef
+## BatchGetOnPremisesInstancesInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import BatchGetOnPremisesInstancesInputTypeDef
+from mypy_boto3_codedeploy.type_defs import BatchGetOnPremisesInstancesInputRequestTypeDef
 ```
 
 Required fields:
 
 - `instanceNames`: `List`\[`str`\]
 
-## BatchGetOnPremisesInstancesOutputResponseTypeDef
+## BatchGetOnPremisesInstancesOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import BatchGetOnPremisesInstancesOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import BatchGetOnPremisesInstancesOutputTypeDef
 ```
 
 Required fields:
@@ -442,10 +442,10 @@ Optional fields:
 - `resourceType`: `str`
 - `targetVersionWeight`: `float`
 
-## ContinueDeploymentInputTypeDef
+## ContinueDeploymentInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import ContinueDeploymentInputTypeDef
+from mypy_boto3_codedeploy.type_defs import ContinueDeploymentInputRequestTypeDef
 ```
 
 Optional fields:
@@ -454,10 +454,10 @@ Optional fields:
 - `deploymentWaitType`:
   [DeploymentWaitTypeType](./literals.md#deploymentwaittypetype)
 
-## CreateApplicationInputTypeDef
+## CreateApplicationInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import CreateApplicationInputTypeDef
+from mypy_boto3_codedeploy.type_defs import CreateApplicationInputRequestTypeDef
 ```
 
 Required fields:
@@ -469,10 +469,10 @@ Optional fields:
 - `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateApplicationOutputResponseTypeDef
+## CreateApplicationOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import CreateApplicationOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import CreateApplicationOutputTypeDef
 ```
 
 Required fields:
@@ -481,10 +481,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDeploymentConfigInputTypeDef
+## CreateDeploymentConfigInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import CreateDeploymentConfigInputTypeDef
+from mypy_boto3_codedeploy.type_defs import CreateDeploymentConfigInputRequestTypeDef
 ```
 
 Required fields:
@@ -499,10 +499,10 @@ Optional fields:
   [TrafficRoutingConfigTypeDef](./type_defs.md#trafficroutingconfigtypedef)
 - `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
 
-## CreateDeploymentConfigOutputResponseTypeDef
+## CreateDeploymentConfigOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import CreateDeploymentConfigOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import CreateDeploymentConfigOutputTypeDef
 ```
 
 Required fields:
@@ -511,10 +511,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDeploymentGroupInputTypeDef
+## CreateDeploymentGroupInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import CreateDeploymentGroupInputTypeDef
+from mypy_boto3_codedeploy.type_defs import CreateDeploymentGroupInputRequestTypeDef
 ```
 
 Required fields:
@@ -552,10 +552,10 @@ Optional fields:
   [OnPremisesTagSetTypeDef](./type_defs.md#onpremisestagsettypedef)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateDeploymentGroupOutputResponseTypeDef
+## CreateDeploymentGroupOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import CreateDeploymentGroupOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import CreateDeploymentGroupOutputTypeDef
 ```
 
 Required fields:
@@ -564,10 +564,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDeploymentInputTypeDef
+## CreateDeploymentInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import CreateDeploymentInputTypeDef
+from mypy_boto3_codedeploy.type_defs import CreateDeploymentInputRequestTypeDef
 ```
 
 Required fields:
@@ -589,10 +589,10 @@ Optional fields:
 - `fileExistsBehavior`:
   [FileExistsBehaviorType](./literals.md#fileexistsbehaviortype)
 
-## CreateDeploymentOutputResponseTypeDef
+## CreateDeploymentOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import CreateDeploymentOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import CreateDeploymentOutputTypeDef
 ```
 
 Required fields:
@@ -601,30 +601,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteApplicationInputTypeDef
+## DeleteApplicationInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import DeleteApplicationInputTypeDef
+from mypy_boto3_codedeploy.type_defs import DeleteApplicationInputRequestTypeDef
 ```
 
 Required fields:
 
 - `applicationName`: `str`
 
-## DeleteDeploymentConfigInputTypeDef
+## DeleteDeploymentConfigInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import DeleteDeploymentConfigInputTypeDef
+from mypy_boto3_codedeploy.type_defs import DeleteDeploymentConfigInputRequestTypeDef
 ```
 
 Required fields:
 
 - `deploymentConfigName`: `str`
 
-## DeleteDeploymentGroupInputTypeDef
+## DeleteDeploymentGroupInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import DeleteDeploymentGroupInputTypeDef
+from mypy_boto3_codedeploy.type_defs import DeleteDeploymentGroupInputRequestTypeDef
 ```
 
 Required fields:
@@ -632,10 +632,10 @@ Required fields:
 - `applicationName`: `str`
 - `deploymentGroupName`: `str`
 
-## DeleteDeploymentGroupOutputResponseTypeDef
+## DeleteDeploymentGroupOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import DeleteDeploymentGroupOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import DeleteDeploymentGroupOutputTypeDef
 ```
 
 Required fields:
@@ -645,20 +645,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteGitHubAccountTokenInputTypeDef
+## DeleteGitHubAccountTokenInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import DeleteGitHubAccountTokenInputTypeDef
+from mypy_boto3_codedeploy.type_defs import DeleteGitHubAccountTokenInputRequestTypeDef
 ```
 
 Optional fields:
 
 - `tokenName`: `str`
 
-## DeleteGitHubAccountTokenOutputResponseTypeDef
+## DeleteGitHubAccountTokenOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import DeleteGitHubAccountTokenOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import DeleteGitHubAccountTokenOutputTypeDef
 ```
 
 Required fields:
@@ -667,10 +667,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteResourcesByExternalIdInputTypeDef
+## DeleteResourcesByExternalIdInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import DeleteResourcesByExternalIdInputTypeDef
+from mypy_boto3_codedeploy.type_defs import DeleteResourcesByExternalIdInputRequestTypeDef
 ```
 
 Optional fields:
@@ -844,10 +844,10 @@ Optional fields:
 - `cloudFormationTarget`:
   [CloudFormationTargetTypeDef](./type_defs.md#cloudformationtargettypedef)
 
-## DeregisterOnPremisesInstanceInputTypeDef
+## DeregisterOnPremisesInstanceInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import DeregisterOnPremisesInstanceInputTypeDef
+from mypy_boto3_codedeploy.type_defs import DeregisterOnPremisesInstanceInputRequestTypeDef
 ```
 
 Required fields:
@@ -972,20 +972,20 @@ Optional fields:
 - `lastUsedTime`: `datetime`
 - `registerTime`: `datetime`
 
-## GetApplicationInputTypeDef
+## GetApplicationInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import GetApplicationInputTypeDef
+from mypy_boto3_codedeploy.type_defs import GetApplicationInputRequestTypeDef
 ```
 
 Required fields:
 
 - `applicationName`: `str`
 
-## GetApplicationOutputResponseTypeDef
+## GetApplicationOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import GetApplicationOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import GetApplicationOutputTypeDef
 ```
 
 Required fields:
@@ -995,10 +995,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetApplicationRevisionInputTypeDef
+## GetApplicationRevisionInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import GetApplicationRevisionInputTypeDef
+from mypy_boto3_codedeploy.type_defs import GetApplicationRevisionInputRequestTypeDef
 ```
 
 Required fields:
@@ -1006,10 +1006,10 @@ Required fields:
 - `applicationName`: `str`
 - `revision`: [RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef)
 
-## GetApplicationRevisionOutputResponseTypeDef
+## GetApplicationRevisionOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import GetApplicationRevisionOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import GetApplicationRevisionOutputTypeDef
 ```
 
 Required fields:
@@ -1021,20 +1021,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDeploymentConfigInputTypeDef
+## GetDeploymentConfigInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import GetDeploymentConfigInputTypeDef
+from mypy_boto3_codedeploy.type_defs import GetDeploymentConfigInputRequestTypeDef
 ```
 
 Required fields:
 
 - `deploymentConfigName`: `str`
 
-## GetDeploymentConfigOutputResponseTypeDef
+## GetDeploymentConfigOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import GetDeploymentConfigOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import GetDeploymentConfigOutputTypeDef
 ```
 
 Required fields:
@@ -1044,10 +1044,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDeploymentGroupInputTypeDef
+## GetDeploymentGroupInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import GetDeploymentGroupInputTypeDef
+from mypy_boto3_codedeploy.type_defs import GetDeploymentGroupInputRequestTypeDef
 ```
 
 Required fields:
@@ -1055,10 +1055,10 @@ Required fields:
 - `applicationName`: `str`
 - `deploymentGroupName`: `str`
 
-## GetDeploymentGroupOutputResponseTypeDef
+## GetDeploymentGroupOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import GetDeploymentGroupOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import GetDeploymentGroupOutputTypeDef
 ```
 
 Required fields:
@@ -1068,20 +1068,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDeploymentInputTypeDef
+## GetDeploymentInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import GetDeploymentInputTypeDef
+from mypy_boto3_codedeploy.type_defs import GetDeploymentInputRequestTypeDef
 ```
 
 Required fields:
 
 - `deploymentId`: `str`
 
-## GetDeploymentInstanceInputTypeDef
+## GetDeploymentInstanceInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import GetDeploymentInstanceInputTypeDef
+from mypy_boto3_codedeploy.type_defs import GetDeploymentInstanceInputRequestTypeDef
 ```
 
 Required fields:
@@ -1089,10 +1089,10 @@ Required fields:
 - `deploymentId`: `str`
 - `instanceId`: `str`
 
-## GetDeploymentInstanceOutputResponseTypeDef
+## GetDeploymentInstanceOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import GetDeploymentInstanceOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import GetDeploymentInstanceOutputTypeDef
 ```
 
 Required fields:
@@ -1102,10 +1102,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDeploymentOutputResponseTypeDef
+## GetDeploymentOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import GetDeploymentOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import GetDeploymentOutputTypeDef
 ```
 
 Required fields:
@@ -1115,10 +1115,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDeploymentTargetInputTypeDef
+## GetDeploymentTargetInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import GetDeploymentTargetInputTypeDef
+from mypy_boto3_codedeploy.type_defs import GetDeploymentTargetInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1126,10 +1126,10 @@ Optional fields:
 - `deploymentId`: `str`
 - `targetId`: `str`
 
-## GetDeploymentTargetOutputResponseTypeDef
+## GetDeploymentTargetOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import GetDeploymentTargetOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import GetDeploymentTargetOutputTypeDef
 ```
 
 Required fields:
@@ -1139,20 +1139,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetOnPremisesInstanceInputTypeDef
+## GetOnPremisesInstanceInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import GetOnPremisesInstanceInputTypeDef
+from mypy_boto3_codedeploy.type_defs import GetOnPremisesInstanceInputRequestTypeDef
 ```
 
 Required fields:
 
 - `instanceName`: `str`
 
-## GetOnPremisesInstanceOutputResponseTypeDef
+## GetOnPremisesInstanceOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import GetOnPremisesInstanceOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import GetOnPremisesInstanceOutputTypeDef
 ```
 
 Required fields:
@@ -1291,10 +1291,10 @@ Optional fields:
 - `endTime`: `datetime`
 - `status`: [LifecycleEventStatusType](./literals.md#lifecycleeventstatustype)
 
-## ListApplicationRevisionsInputTypeDef
+## ListApplicationRevisionsInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import ListApplicationRevisionsInputTypeDef
+from mypy_boto3_codedeploy.type_defs import ListApplicationRevisionsInputRequestTypeDef
 ```
 
 Required fields:
@@ -1312,10 +1312,10 @@ Optional fields:
   [ListStateFilterActionType](./literals.md#liststatefilteractiontype)
 - `nextToken`: `str`
 
-## ListApplicationRevisionsOutputResponseTypeDef
+## ListApplicationRevisionsOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import ListApplicationRevisionsOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import ListApplicationRevisionsOutputTypeDef
 ```
 
 Required fields:
@@ -1326,20 +1326,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListApplicationsInputTypeDef
+## ListApplicationsInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import ListApplicationsInputTypeDef
+from mypy_boto3_codedeploy.type_defs import ListApplicationsInputRequestTypeDef
 ```
 
 Optional fields:
 
 - `nextToken`: `str`
 
-## ListApplicationsOutputResponseTypeDef
+## ListApplicationsOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import ListApplicationsOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import ListApplicationsOutputTypeDef
 ```
 
 Required fields:
@@ -1349,20 +1349,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDeploymentConfigsInputTypeDef
+## ListDeploymentConfigsInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import ListDeploymentConfigsInputTypeDef
+from mypy_boto3_codedeploy.type_defs import ListDeploymentConfigsInputRequestTypeDef
 ```
 
 Optional fields:
 
 - `nextToken`: `str`
 
-## ListDeploymentConfigsOutputResponseTypeDef
+## ListDeploymentConfigsOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import ListDeploymentConfigsOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import ListDeploymentConfigsOutputTypeDef
 ```
 
 Required fields:
@@ -1372,10 +1372,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDeploymentGroupsInputTypeDef
+## ListDeploymentGroupsInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import ListDeploymentGroupsInputTypeDef
+from mypy_boto3_codedeploy.type_defs import ListDeploymentGroupsInputRequestTypeDef
 ```
 
 Required fields:
@@ -1386,10 +1386,10 @@ Optional fields:
 
 - `nextToken`: `str`
 
-## ListDeploymentGroupsOutputResponseTypeDef
+## ListDeploymentGroupsOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import ListDeploymentGroupsOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import ListDeploymentGroupsOutputTypeDef
 ```
 
 Required fields:
@@ -1400,10 +1400,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDeploymentInstancesInputTypeDef
+## ListDeploymentInstancesInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import ListDeploymentInstancesInputTypeDef
+from mypy_boto3_codedeploy.type_defs import ListDeploymentInstancesInputRequestTypeDef
 ```
 
 Required fields:
@@ -1418,10 +1418,10 @@ Optional fields:
 - `instanceTypeFilter`:
   `List`\[[InstanceTypeType](./literals.md#instancetypetype)\]
 
-## ListDeploymentInstancesOutputResponseTypeDef
+## ListDeploymentInstancesOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import ListDeploymentInstancesOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import ListDeploymentInstancesOutputTypeDef
 ```
 
 Required fields:
@@ -1431,10 +1431,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDeploymentTargetsInputTypeDef
+## ListDeploymentTargetsInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import ListDeploymentTargetsInputTypeDef
+from mypy_boto3_codedeploy.type_defs import ListDeploymentTargetsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1445,10 +1445,10 @@ Optional fields:
   `Dict`\[[TargetFilterNameType](./literals.md#targetfilternametype),
   `List`\[`str`\]\]
 
-## ListDeploymentTargetsOutputResponseTypeDef
+## ListDeploymentTargetsOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import ListDeploymentTargetsOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import ListDeploymentTargetsOutputTypeDef
 ```
 
 Required fields:
@@ -1458,10 +1458,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDeploymentsInputTypeDef
+## ListDeploymentsInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import ListDeploymentsInputTypeDef
+from mypy_boto3_codedeploy.type_defs import ListDeploymentsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1474,10 +1474,10 @@ Optional fields:
 - `createTimeRange`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
 - `nextToken`: `str`
 
-## ListDeploymentsOutputResponseTypeDef
+## ListDeploymentsOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import ListDeploymentsOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import ListDeploymentsOutputTypeDef
 ```
 
 Required fields:
@@ -1487,20 +1487,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListGitHubAccountTokenNamesInputTypeDef
+## ListGitHubAccountTokenNamesInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import ListGitHubAccountTokenNamesInputTypeDef
+from mypy_boto3_codedeploy.type_defs import ListGitHubAccountTokenNamesInputRequestTypeDef
 ```
 
 Optional fields:
 
 - `nextToken`: `str`
 
-## ListGitHubAccountTokenNamesOutputResponseTypeDef
+## ListGitHubAccountTokenNamesOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import ListGitHubAccountTokenNamesOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import ListGitHubAccountTokenNamesOutputTypeDef
 ```
 
 Required fields:
@@ -1510,10 +1510,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListOnPremisesInstancesInputTypeDef
+## ListOnPremisesInstancesInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import ListOnPremisesInstancesInputTypeDef
+from mypy_boto3_codedeploy.type_defs import ListOnPremisesInstancesInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1523,10 +1523,10 @@ Optional fields:
 - `tagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `nextToken`: `str`
 
-## ListOnPremisesInstancesOutputResponseTypeDef
+## ListOnPremisesInstancesOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import ListOnPremisesInstancesOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import ListOnPremisesInstancesOutputTypeDef
 ```
 
 Required fields:
@@ -1536,10 +1536,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceInputTypeDef
+## ListTagsForResourceInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import ListTagsForResourceInputTypeDef
+from mypy_boto3_codedeploy.type_defs import ListTagsForResourceInputRequestTypeDef
 ```
 
 Required fields:
@@ -1550,10 +1550,10 @@ Optional fields:
 
 - `NextToken`: `str`
 
-## ListTagsForResourceOutputResponseTypeDef
+## ListTagsForResourceOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import ListTagsForResourceOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import ListTagsForResourceOutputTypeDef
 ```
 
 Required fields:
@@ -1612,10 +1612,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PutLifecycleEventHookExecutionStatusInputTypeDef
+## PutLifecycleEventHookExecutionStatusInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import PutLifecycleEventHookExecutionStatusInputTypeDef
+from mypy_boto3_codedeploy.type_defs import PutLifecycleEventHookExecutionStatusInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1624,10 +1624,10 @@ Optional fields:
 - `lifecycleEventHookExecutionId`: `str`
 - `status`: [LifecycleEventStatusType](./literals.md#lifecycleeventstatustype)
 
-## PutLifecycleEventHookExecutionStatusOutputResponseTypeDef
+## PutLifecycleEventHookExecutionStatusOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import PutLifecycleEventHookExecutionStatusOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import PutLifecycleEventHookExecutionStatusOutputTypeDef
 ```
 
 Required fields:
@@ -1647,10 +1647,10 @@ Optional fields:
 - `content`: `str`
 - `sha256`: `str`
 
-## RegisterApplicationRevisionInputTypeDef
+## RegisterApplicationRevisionInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import RegisterApplicationRevisionInputTypeDef
+from mypy_boto3_codedeploy.type_defs import RegisterApplicationRevisionInputRequestTypeDef
 ```
 
 Required fields:
@@ -1662,10 +1662,10 @@ Optional fields:
 
 - `description`: `str`
 
-## RegisterOnPremisesInstanceInputTypeDef
+## RegisterOnPremisesInstanceInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import RegisterOnPremisesInstanceInputTypeDef
+from mypy_boto3_codedeploy.type_defs import RegisterOnPremisesInstanceInputRequestTypeDef
 ```
 
 Required fields:
@@ -1688,10 +1688,10 @@ Optional fields:
 - `autoUpdateOutdatedInstancesRootDeploymentId`: `str`
 - `autoUpdateOutdatedInstancesDeploymentIds`: `List`\[`str`\]
 
-## RemoveTagsFromOnPremisesInstancesInputTypeDef
+## RemoveTagsFromOnPremisesInstancesInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import RemoveTagsFromOnPremisesInstancesInputTypeDef
+from mypy_boto3_codedeploy.type_defs import RemoveTagsFromOnPremisesInstancesInputRequestTypeDef
 ```
 
 Required fields:
@@ -1769,20 +1769,20 @@ Optional fields:
 - `version`: `str`
 - `eTag`: `str`
 
-## SkipWaitTimeForInstanceTerminationInputTypeDef
+## SkipWaitTimeForInstanceTerminationInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import SkipWaitTimeForInstanceTerminationInputTypeDef
+from mypy_boto3_codedeploy.type_defs import SkipWaitTimeForInstanceTerminationInputRequestTypeDef
 ```
 
 Optional fields:
 
 - `deploymentId`: `str`
 
-## StopDeploymentInputTypeDef
+## StopDeploymentInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import StopDeploymentInputTypeDef
+from mypy_boto3_codedeploy.type_defs import StopDeploymentInputRequestTypeDef
 ```
 
 Required fields:
@@ -1793,10 +1793,10 @@ Optional fields:
 
 - `autoRollbackEnabled`: `bool`
 
-## StopDeploymentOutputResponseTypeDef
+## StopDeploymentOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import StopDeploymentOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import StopDeploymentOutputTypeDef
 ```
 
 Required fields:
@@ -1818,10 +1818,10 @@ Optional fields:
 - `Value`: `str`
 - `Type`: [TagFilterTypeType](./literals.md#tagfiltertypetype)
 
-## TagResourceInputTypeDef
+## TagResourceInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import TagResourceInputTypeDef
+from mypy_boto3_codedeploy.type_defs import TagResourceInputRequestTypeDef
 ```
 
 Required fields:
@@ -1946,10 +1946,10 @@ Optional fields:
 - `triggerEvents`:
   `List`\[[TriggerEventTypeType](./literals.md#triggereventtypetype)\]
 
-## UntagResourceInputTypeDef
+## UntagResourceInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import UntagResourceInputTypeDef
+from mypy_boto3_codedeploy.type_defs import UntagResourceInputRequestTypeDef
 ```
 
 Required fields:
@@ -1957,10 +1957,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateApplicationInputTypeDef
+## UpdateApplicationInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import UpdateApplicationInputTypeDef
+from mypy_boto3_codedeploy.type_defs import UpdateApplicationInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1968,10 +1968,10 @@ Optional fields:
 - `applicationName`: `str`
 - `newApplicationName`: `str`
 
-## UpdateDeploymentGroupInputTypeDef
+## UpdateDeploymentGroupInputRequestTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import UpdateDeploymentGroupInputTypeDef
+from mypy_boto3_codedeploy.type_defs import UpdateDeploymentGroupInputRequestTypeDef
 ```
 
 Required fields:
@@ -2009,10 +2009,10 @@ Optional fields:
 - `onPremisesTagSet`:
   [OnPremisesTagSetTypeDef](./type_defs.md#onpremisestagsettypedef)
 
-## UpdateDeploymentGroupOutputResponseTypeDef
+## UpdateDeploymentGroupOutputTypeDef
 
 ```python
-from mypy_boto3_codedeploy.type_defs import UpdateDeploymentGroupOutputResponseTypeDef
+from mypy_boto3_codedeploy.type_defs import UpdateDeploymentGroupOutputTypeDef
 ```
 
 Required fields:

@@ -11,6 +11,7 @@ type annotations stubs module
   - [DocDBClient](#docdbclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_source_identifier_to_subscription](#add_source_identifier_to_subscription)
     - [add_tags_to_resource](#add_tags_to_resource)
     - [apply_pending_maintenance_action](#apply_pending_maintenance_action)
@@ -160,6 +161,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+DocDBClient exceptions.
+
+Type annotations for `boto3.client("docdb").exceptions` method.
+
+Boto3 documentation:
+[DocDB.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_source_identifier_to_subscription
 
 Adds a source identifier to an existing event notification subscription.
@@ -171,7 +183,7 @@ Boto3 documentation:
 [DocDB.Client.add_source_identifier_to_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.add_source_identifier_to_subscription)
 
 Arguments mapping described in
-[AddSourceIdentifierToSubscriptionMessageTypeDef](./type_defs.md#addsourceidentifiertosubscriptionmessagetypedef).
+[AddSourceIdentifierToSubscriptionMessageRequestTypeDef](./type_defs.md#addsourceidentifiertosubscriptionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -179,7 +191,7 @@ Keyword-only arguments:
 - `SourceIdentifier`: `str` *(required)*
 
 Returns
-[AddSourceIdentifierToSubscriptionResultResponseTypeDef](./type_defs.md#addsourceidentifiertosubscriptionresultresponsetypedef).
+[AddSourceIdentifierToSubscriptionResultTypeDef](./type_defs.md#addsourceidentifiertosubscriptionresulttypedef).
 
 ### add_tags_to_resource
 
@@ -191,7 +203,7 @@ Boto3 documentation:
 [DocDB.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.add_tags_to_resource)
 
 Arguments mapping described in
-[AddTagsToResourceMessageTypeDef](./type_defs.md#addtagstoresourcemessagetypedef).
+[AddTagsToResourceMessageRequestTypeDef](./type_defs.md#addtagstoresourcemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -210,7 +222,7 @@ Boto3 documentation:
 [DocDB.Client.apply_pending_maintenance_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.apply_pending_maintenance_action)
 
 Arguments mapping described in
-[ApplyPendingMaintenanceActionMessageTypeDef](./type_defs.md#applypendingmaintenanceactionmessagetypedef).
+[ApplyPendingMaintenanceActionMessageRequestTypeDef](./type_defs.md#applypendingmaintenanceactionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -219,7 +231,7 @@ Keyword-only arguments:
 - `OptInType`: `str` *(required)*
 
 Returns
-[ApplyPendingMaintenanceActionResultResponseTypeDef](./type_defs.md#applypendingmaintenanceactionresultresponsetypedef).
+[ApplyPendingMaintenanceActionResultTypeDef](./type_defs.md#applypendingmaintenanceactionresulttypedef).
 
 ### can_paginate
 
@@ -247,7 +259,7 @@ Boto3 documentation:
 [DocDB.Client.copy_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.copy_db_cluster_parameter_group)
 
 Arguments mapping described in
-[CopyDBClusterParameterGroupMessageTypeDef](./type_defs.md#copydbclusterparametergroupmessagetypedef).
+[CopyDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#copydbclusterparametergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -257,7 +269,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CopyDBClusterParameterGroupResultResponseTypeDef](./type_defs.md#copydbclusterparametergroupresultresponsetypedef).
+[CopyDBClusterParameterGroupResultTypeDef](./type_defs.md#copydbclusterparametergroupresulttypedef).
 
 ### copy_db_cluster_snapshot
 
@@ -269,7 +281,7 @@ Boto3 documentation:
 [DocDB.Client.copy_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.copy_db_cluster_snapshot)
 
 Arguments mapping described in
-[CopyDBClusterSnapshotMessageTypeDef](./type_defs.md#copydbclustersnapshotmessagetypedef).
+[CopyDBClusterSnapshotMessageRequestTypeDef](./type_defs.md#copydbclustersnapshotmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -282,7 +294,7 @@ Keyword-only arguments:
 - `SourceRegion`: `str`
 
 Returns
-[CopyDBClusterSnapshotResultResponseTypeDef](./type_defs.md#copydbclustersnapshotresultresponsetypedef).
+[CopyDBClusterSnapshotResultTypeDef](./type_defs.md#copydbclustersnapshotresulttypedef).
 
 ### create_db_cluster
 
@@ -294,7 +306,7 @@ Boto3 documentation:
 [DocDB.Client.create_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_db_cluster)
 
 Arguments mapping described in
-[CreateDBClusterMessageTypeDef](./type_defs.md#createdbclustermessagetypedef).
+[CreateDBClusterMessageRequestTypeDef](./type_defs.md#createdbclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -321,7 +333,7 @@ Keyword-only arguments:
 - `SourceRegion`: `str`
 
 Returns
-[CreateDBClusterResultResponseTypeDef](./type_defs.md#createdbclusterresultresponsetypedef).
+[CreateDBClusterResultTypeDef](./type_defs.md#createdbclusterresulttypedef).
 
 ### create_db_cluster_parameter_group
 
@@ -334,7 +346,7 @@ Boto3 documentation:
 [DocDB.Client.create_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_db_cluster_parameter_group)
 
 Arguments mapping described in
-[CreateDBClusterParameterGroupMessageTypeDef](./type_defs.md#createdbclusterparametergroupmessagetypedef).
+[CreateDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#createdbclusterparametergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -344,7 +356,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDBClusterParameterGroupResultResponseTypeDef](./type_defs.md#createdbclusterparametergroupresultresponsetypedef).
+[CreateDBClusterParameterGroupResultTypeDef](./type_defs.md#createdbclusterparametergroupresulttypedef).
 
 ### create_db_cluster_snapshot
 
@@ -356,7 +368,7 @@ Boto3 documentation:
 [DocDB.Client.create_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_db_cluster_snapshot)
 
 Arguments mapping described in
-[CreateDBClusterSnapshotMessageTypeDef](./type_defs.md#createdbclustersnapshotmessagetypedef).
+[CreateDBClusterSnapshotMessageRequestTypeDef](./type_defs.md#createdbclustersnapshotmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -365,7 +377,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDBClusterSnapshotResultResponseTypeDef](./type_defs.md#createdbclustersnapshotresultresponsetypedef).
+[CreateDBClusterSnapshotResultTypeDef](./type_defs.md#createdbclustersnapshotresulttypedef).
 
 ### create_db_instance
 
@@ -377,7 +389,7 @@ Boto3 documentation:
 [DocDB.Client.create_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_db_instance)
 
 Arguments mapping described in
-[CreateDBInstanceMessageTypeDef](./type_defs.md#createdbinstancemessagetypedef).
+[CreateDBInstanceMessageRequestTypeDef](./type_defs.md#createdbinstancemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -392,7 +404,7 @@ Keyword-only arguments:
 - `PromotionTier`: `int`
 
 Returns
-[CreateDBInstanceResultResponseTypeDef](./type_defs.md#createdbinstanceresultresponsetypedef).
+[CreateDBInstanceResultTypeDef](./type_defs.md#createdbinstanceresulttypedef).
 
 ### create_db_subnet_group
 
@@ -404,7 +416,7 @@ Boto3 documentation:
 [DocDB.Client.create_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_db_subnet_group)
 
 Arguments mapping described in
-[CreateDBSubnetGroupMessageTypeDef](./type_defs.md#createdbsubnetgroupmessagetypedef).
+[CreateDBSubnetGroupMessageRequestTypeDef](./type_defs.md#createdbsubnetgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -414,7 +426,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDBSubnetGroupResultResponseTypeDef](./type_defs.md#createdbsubnetgroupresultresponsetypedef).
+[CreateDBSubnetGroupResultTypeDef](./type_defs.md#createdbsubnetgroupresulttypedef).
 
 ### create_event_subscription
 
@@ -426,7 +438,7 @@ Boto3 documentation:
 [DocDB.Client.create_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_event_subscription)
 
 Arguments mapping described in
-[CreateEventSubscriptionMessageTypeDef](./type_defs.md#createeventsubscriptionmessagetypedef).
+[CreateEventSubscriptionMessageRequestTypeDef](./type_defs.md#createeventsubscriptionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -439,7 +451,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateEventSubscriptionResultResponseTypeDef](./type_defs.md#createeventsubscriptionresultresponsetypedef).
+[CreateEventSubscriptionResultTypeDef](./type_defs.md#createeventsubscriptionresulttypedef).
 
 ### create_global_cluster
 
@@ -452,7 +464,7 @@ Boto3 documentation:
 [DocDB.Client.create_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_global_cluster)
 
 Arguments mapping described in
-[CreateGlobalClusterMessageTypeDef](./type_defs.md#createglobalclustermessagetypedef).
+[CreateGlobalClusterMessageRequestTypeDef](./type_defs.md#createglobalclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -465,7 +477,7 @@ Keyword-only arguments:
 - `StorageEncrypted`: `bool`
 
 Returns
-[CreateGlobalClusterResultResponseTypeDef](./type_defs.md#createglobalclusterresultresponsetypedef).
+[CreateGlobalClusterResultTypeDef](./type_defs.md#createglobalclusterresulttypedef).
 
 ### delete_db_cluster
 
@@ -477,7 +489,7 @@ Boto3 documentation:
 [DocDB.Client.delete_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_cluster)
 
 Arguments mapping described in
-[DeleteDBClusterMessageTypeDef](./type_defs.md#deletedbclustermessagetypedef).
+[DeleteDBClusterMessageRequestTypeDef](./type_defs.md#deletedbclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -486,7 +498,7 @@ Keyword-only arguments:
 - `FinalDBSnapshotIdentifier`: `str`
 
 Returns
-[DeleteDBClusterResultResponseTypeDef](./type_defs.md#deletedbclusterresultresponsetypedef).
+[DeleteDBClusterResultTypeDef](./type_defs.md#deletedbclusterresulttypedef).
 
 ### delete_db_cluster_parameter_group
 
@@ -499,7 +511,7 @@ Boto3 documentation:
 [DocDB.Client.delete_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_cluster_parameter_group)
 
 Arguments mapping described in
-[DeleteDBClusterParameterGroupMessageTypeDef](./type_defs.md#deletedbclusterparametergroupmessagetypedef).
+[DeleteDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#deletedbclusterparametergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -515,14 +527,14 @@ Boto3 documentation:
 [DocDB.Client.delete_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_cluster_snapshot)
 
 Arguments mapping described in
-[DeleteDBClusterSnapshotMessageTypeDef](./type_defs.md#deletedbclustersnapshotmessagetypedef).
+[DeleteDBClusterSnapshotMessageRequestTypeDef](./type_defs.md#deletedbclustersnapshotmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `DBClusterSnapshotIdentifier`: `str` *(required)*
 
 Returns
-[DeleteDBClusterSnapshotResultResponseTypeDef](./type_defs.md#deletedbclustersnapshotresultresponsetypedef).
+[DeleteDBClusterSnapshotResultTypeDef](./type_defs.md#deletedbclustersnapshotresulttypedef).
 
 ### delete_db_instance
 
@@ -534,14 +546,14 @@ Boto3 documentation:
 [DocDB.Client.delete_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_instance)
 
 Arguments mapping described in
-[DeleteDBInstanceMessageTypeDef](./type_defs.md#deletedbinstancemessagetypedef).
+[DeleteDBInstanceMessageRequestTypeDef](./type_defs.md#deletedbinstancemessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `DBInstanceIdentifier`: `str` *(required)*
 
 Returns
-[DeleteDBInstanceResultResponseTypeDef](./type_defs.md#deletedbinstanceresultresponsetypedef).
+[DeleteDBInstanceResultTypeDef](./type_defs.md#deletedbinstanceresulttypedef).
 
 ### delete_db_subnet_group
 
@@ -553,7 +565,7 @@ Boto3 documentation:
 [DocDB.Client.delete_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_subnet_group)
 
 Arguments mapping described in
-[DeleteDBSubnetGroupMessageTypeDef](./type_defs.md#deletedbsubnetgroupmessagetypedef).
+[DeleteDBSubnetGroupMessageRequestTypeDef](./type_defs.md#deletedbsubnetgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -569,14 +581,14 @@ Boto3 documentation:
 [DocDB.Client.delete_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_event_subscription)
 
 Arguments mapping described in
-[DeleteEventSubscriptionMessageTypeDef](./type_defs.md#deleteeventsubscriptionmessagetypedef).
+[DeleteEventSubscriptionMessageRequestTypeDef](./type_defs.md#deleteeventsubscriptionmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `SubscriptionName`: `str` *(required)*
 
 Returns
-[DeleteEventSubscriptionResultResponseTypeDef](./type_defs.md#deleteeventsubscriptionresultresponsetypedef).
+[DeleteEventSubscriptionResultTypeDef](./type_defs.md#deleteeventsubscriptionresulttypedef).
 
 ### delete_global_cluster
 
@@ -588,14 +600,14 @@ Boto3 documentation:
 [DocDB.Client.delete_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_global_cluster)
 
 Arguments mapping described in
-[DeleteGlobalClusterMessageTypeDef](./type_defs.md#deleteglobalclustermessagetypedef).
+[DeleteGlobalClusterMessageRequestTypeDef](./type_defs.md#deleteglobalclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `GlobalClusterIdentifier`: `str` *(required)*
 
 Returns
-[DeleteGlobalClusterResultResponseTypeDef](./type_defs.md#deleteglobalclusterresultresponsetypedef).
+[DeleteGlobalClusterResultTypeDef](./type_defs.md#deleteglobalclusterresulttypedef).
 
 ### describe_certificates
 
@@ -608,7 +620,7 @@ Boto3 documentation:
 [DocDB.Client.describe_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_certificates)
 
 Arguments mapping described in
-[DescribeCertificatesMessageTypeDef](./type_defs.md#describecertificatesmessagetypedef).
+[DescribeCertificatesMessageRequestTypeDef](./type_defs.md#describecertificatesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -617,8 +629,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-Returns
-[CertificateMessageResponseTypeDef](./type_defs.md#certificatemessageresponsetypedef).
+Returns [CertificateMessageTypeDef](./type_defs.md#certificatemessagetypedef).
 
 ### describe_db_cluster_parameter_groups
 
@@ -631,7 +642,7 @@ Boto3 documentation:
 [DocDB.Client.describe_db_cluster_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_cluster_parameter_groups)
 
 Arguments mapping described in
-[DescribeDBClusterParameterGroupsMessageTypeDef](./type_defs.md#describedbclusterparametergroupsmessagetypedef).
+[DescribeDBClusterParameterGroupsMessageRequestTypeDef](./type_defs.md#describedbclusterparametergroupsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -641,7 +652,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DBClusterParameterGroupsMessageResponseTypeDef](./type_defs.md#dbclusterparametergroupsmessageresponsetypedef).
+[DBClusterParameterGroupsMessageTypeDef](./type_defs.md#dbclusterparametergroupsmessagetypedef).
 
 ### describe_db_cluster_parameters
 
@@ -654,7 +665,7 @@ Boto3 documentation:
 [DocDB.Client.describe_db_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_cluster_parameters)
 
 Arguments mapping described in
-[DescribeDBClusterParametersMessageTypeDef](./type_defs.md#describedbclusterparametersmessagetypedef).
+[DescribeDBClusterParametersMessageRequestTypeDef](./type_defs.md#describedbclusterparametersmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -665,7 +676,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DBClusterParameterGroupDetailsResponseTypeDef](./type_defs.md#dbclusterparametergroupdetailsresponsetypedef).
+[DBClusterParameterGroupDetailsTypeDef](./type_defs.md#dbclusterparametergroupdetailstypedef).
 
 ### describe_db_cluster_snapshot_attributes
 
@@ -679,14 +690,14 @@ Boto3 documentation:
 [DocDB.Client.describe_db_cluster_snapshot_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_cluster_snapshot_attributes)
 
 Arguments mapping described in
-[DescribeDBClusterSnapshotAttributesMessageTypeDef](./type_defs.md#describedbclustersnapshotattributesmessagetypedef).
+[DescribeDBClusterSnapshotAttributesMessageRequestTypeDef](./type_defs.md#describedbclustersnapshotattributesmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `DBClusterSnapshotIdentifier`: `str` *(required)*
 
 Returns
-[DescribeDBClusterSnapshotAttributesResultResponseTypeDef](./type_defs.md#describedbclustersnapshotattributesresultresponsetypedef).
+[DescribeDBClusterSnapshotAttributesResultTypeDef](./type_defs.md#describedbclustersnapshotattributesresulttypedef).
 
 ### describe_db_cluster_snapshots
 
@@ -699,7 +710,7 @@ Boto3 documentation:
 [DocDB.Client.describe_db_cluster_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_cluster_snapshots)
 
 Arguments mapping described in
-[DescribeDBClusterSnapshotsMessageTypeDef](./type_defs.md#describedbclustersnapshotsmessagetypedef).
+[DescribeDBClusterSnapshotsMessageRequestTypeDef](./type_defs.md#describedbclustersnapshotsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -713,7 +724,7 @@ Keyword-only arguments:
 - `IncludePublic`: `bool`
 
 Returns
-[DBClusterSnapshotMessageResponseTypeDef](./type_defs.md#dbclustersnapshotmessageresponsetypedef).
+[DBClusterSnapshotMessageTypeDef](./type_defs.md#dbclustersnapshotmessagetypedef).
 
 ### describe_db_clusters
 
@@ -725,7 +736,7 @@ Boto3 documentation:
 [DocDB.Client.describe_db_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_clusters)
 
 Arguments mapping described in
-[DescribeDBClustersMessageTypeDef](./type_defs.md#describedbclustersmessagetypedef).
+[DescribeDBClustersMessageRequestTypeDef](./type_defs.md#describedbclustersmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -734,8 +745,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-Returns
-[DBClusterMessageResponseTypeDef](./type_defs.md#dbclustermessageresponsetypedef).
+Returns [DBClusterMessageTypeDef](./type_defs.md#dbclustermessagetypedef).
 
 ### describe_db_engine_versions
 
@@ -748,7 +758,7 @@ Boto3 documentation:
 [DocDB.Client.describe_db_engine_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_engine_versions)
 
 Arguments mapping described in
-[DescribeDBEngineVersionsMessageTypeDef](./type_defs.md#describedbengineversionsmessagetypedef).
+[DescribeDBEngineVersionsMessageRequestTypeDef](./type_defs.md#describedbengineversionsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -763,7 +773,7 @@ Keyword-only arguments:
 - `ListSupportedTimezones`: `bool`
 
 Returns
-[DBEngineVersionMessageResponseTypeDef](./type_defs.md#dbengineversionmessageresponsetypedef).
+[DBEngineVersionMessageTypeDef](./type_defs.md#dbengineversionmessagetypedef).
 
 ### describe_db_instances
 
@@ -775,7 +785,7 @@ Boto3 documentation:
 [DocDB.Client.describe_db_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_instances)
 
 Arguments mapping described in
-[DescribeDBInstancesMessageTypeDef](./type_defs.md#describedbinstancesmessagetypedef).
+[DescribeDBInstancesMessageRequestTypeDef](./type_defs.md#describedbinstancesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -784,8 +794,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-Returns
-[DBInstanceMessageResponseTypeDef](./type_defs.md#dbinstancemessageresponsetypedef).
+Returns [DBInstanceMessageTypeDef](./type_defs.md#dbinstancemessagetypedef).
 
 ### describe_db_subnet_groups
 
@@ -797,7 +806,7 @@ Boto3 documentation:
 [DocDB.Client.describe_db_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_subnet_groups)
 
 Arguments mapping described in
-[DescribeDBSubnetGroupsMessageTypeDef](./type_defs.md#describedbsubnetgroupsmessagetypedef).
+[DescribeDBSubnetGroupsMessageRequestTypeDef](./type_defs.md#describedbsubnetgroupsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -807,7 +816,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DBSubnetGroupMessageResponseTypeDef](./type_defs.md#dbsubnetgroupmessageresponsetypedef).
+[DBSubnetGroupMessageTypeDef](./type_defs.md#dbsubnetgroupmessagetypedef).
 
 ### describe_engine_default_cluster_parameters
 
@@ -821,7 +830,7 @@ Boto3 documentation:
 [DocDB.Client.describe_engine_default_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_engine_default_cluster_parameters)
 
 Arguments mapping described in
-[DescribeEngineDefaultClusterParametersMessageTypeDef](./type_defs.md#describeenginedefaultclusterparametersmessagetypedef).
+[DescribeEngineDefaultClusterParametersMessageRequestTypeDef](./type_defs.md#describeenginedefaultclusterparametersmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -831,7 +840,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeEngineDefaultClusterParametersResultResponseTypeDef](./type_defs.md#describeenginedefaultclusterparametersresultresponsetypedef).
+[DescribeEngineDefaultClusterParametersResultTypeDef](./type_defs.md#describeenginedefaultclusterparametersresulttypedef).
 
 ### describe_event_categories
 
@@ -844,7 +853,7 @@ Boto3 documentation:
 [DocDB.Client.describe_event_categories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_event_categories)
 
 Arguments mapping described in
-[DescribeEventCategoriesMessageTypeDef](./type_defs.md#describeeventcategoriesmessagetypedef).
+[DescribeEventCategoriesMessageRequestTypeDef](./type_defs.md#describeeventcategoriesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -852,7 +861,7 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[EventCategoriesMessageResponseTypeDef](./type_defs.md#eventcategoriesmessageresponsetypedef).
+[EventCategoriesMessageTypeDef](./type_defs.md#eventcategoriesmessagetypedef).
 
 ### describe_event_subscriptions
 
@@ -865,7 +874,7 @@ Boto3 documentation:
 [DocDB.Client.describe_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_event_subscriptions)
 
 Arguments mapping described in
-[DescribeEventSubscriptionsMessageTypeDef](./type_defs.md#describeeventsubscriptionsmessagetypedef).
+[DescribeEventSubscriptionsMessageRequestTypeDef](./type_defs.md#describeeventsubscriptionsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -875,7 +884,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[EventSubscriptionsMessageResponseTypeDef](./type_defs.md#eventsubscriptionsmessageresponsetypedef).
+[EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef).
 
 ### describe_events
 
@@ -888,7 +897,7 @@ Boto3 documentation:
 [DocDB.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_events)
 
 Arguments mapping described in
-[DescribeEventsMessageTypeDef](./type_defs.md#describeeventsmessagetypedef).
+[DescribeEventsMessageRequestTypeDef](./type_defs.md#describeeventsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -902,8 +911,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-Returns
-[EventsMessageResponseTypeDef](./type_defs.md#eventsmessageresponsetypedef).
+Returns [EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef).
 
 ### describe_global_clusters
 
@@ -915,7 +923,7 @@ Boto3 documentation:
 [DocDB.Client.describe_global_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_global_clusters)
 
 Arguments mapping described in
-[DescribeGlobalClustersMessageTypeDef](./type_defs.md#describeglobalclustersmessagetypedef).
+[DescribeGlobalClustersMessageRequestTypeDef](./type_defs.md#describeglobalclustersmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -925,7 +933,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[GlobalClustersMessageResponseTypeDef](./type_defs.md#globalclustersmessageresponsetypedef).
+[GlobalClustersMessageTypeDef](./type_defs.md#globalclustersmessagetypedef).
 
 ### describe_orderable_db_instance_options
 
@@ -938,7 +946,7 @@ Boto3 documentation:
 [DocDB.Client.describe_orderable_db_instance_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_orderable_db_instance_options)
 
 Arguments mapping described in
-[DescribeOrderableDBInstanceOptionsMessageTypeDef](./type_defs.md#describeorderabledbinstanceoptionsmessagetypedef).
+[DescribeOrderableDBInstanceOptionsMessageRequestTypeDef](./type_defs.md#describeorderabledbinstanceoptionsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -952,7 +960,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[OrderableDBInstanceOptionsMessageResponseTypeDef](./type_defs.md#orderabledbinstanceoptionsmessageresponsetypedef).
+[OrderableDBInstanceOptionsMessageTypeDef](./type_defs.md#orderabledbinstanceoptionsmessagetypedef).
 
 ### describe_pending_maintenance_actions
 
@@ -966,7 +974,7 @@ Boto3 documentation:
 [DocDB.Client.describe_pending_maintenance_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_pending_maintenance_actions)
 
 Arguments mapping described in
-[DescribePendingMaintenanceActionsMessageTypeDef](./type_defs.md#describependingmaintenanceactionsmessagetypedef).
+[DescribePendingMaintenanceActionsMessageRequestTypeDef](./type_defs.md#describependingmaintenanceactionsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -976,7 +984,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 
 Returns
-[PendingMaintenanceActionsMessageResponseTypeDef](./type_defs.md#pendingmaintenanceactionsmessageresponsetypedef).
+[PendingMaintenanceActionsMessageTypeDef](./type_defs.md#pendingmaintenanceactionsmessagetypedef).
 
 ### failover_db_cluster
 
@@ -988,7 +996,7 @@ Boto3 documentation:
 [DocDB.Client.failover_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.failover_db_cluster)
 
 Arguments mapping described in
-[FailoverDBClusterMessageTypeDef](./type_defs.md#failoverdbclustermessagetypedef).
+[FailoverDBClusterMessageRequestTypeDef](./type_defs.md#failoverdbclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -996,7 +1004,7 @@ Keyword-only arguments:
 - `TargetDBInstanceIdentifier`: `str`
 
 Returns
-[FailoverDBClusterResultResponseTypeDef](./type_defs.md#failoverdbclusterresultresponsetypedef).
+[FailoverDBClusterResultTypeDef](./type_defs.md#failoverdbclusterresulttypedef).
 
 ### generate_presigned_url
 
@@ -1026,15 +1034,14 @@ Boto3 documentation:
 [DocDB.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceMessageTypeDef](./type_defs.md#listtagsforresourcemessagetypedef).
+[ListTagsForResourceMessageRequestTypeDef](./type_defs.md#listtagsforresourcemessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
-Returns
-[TagListMessageResponseTypeDef](./type_defs.md#taglistmessageresponsetypedef).
+Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
 
 ### modify_db_cluster
 
@@ -1046,7 +1053,7 @@ Boto3 documentation:
 [DocDB.Client.modify_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_db_cluster)
 
 Arguments mapping described in
-[ModifyDBClusterMessageTypeDef](./type_defs.md#modifydbclustermessagetypedef).
+[ModifyDBClusterMessageRequestTypeDef](./type_defs.md#modifydbclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1066,7 +1073,7 @@ Keyword-only arguments:
 - `DeletionProtection`: `bool`
 
 Returns
-[ModifyDBClusterResultResponseTypeDef](./type_defs.md#modifydbclusterresultresponsetypedef).
+[ModifyDBClusterResultTypeDef](./type_defs.md#modifydbclusterresulttypedef).
 
 ### modify_db_cluster_parameter_group
 
@@ -1079,7 +1086,7 @@ Boto3 documentation:
 [DocDB.Client.modify_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_db_cluster_parameter_group)
 
 Arguments mapping described in
-[ModifyDBClusterParameterGroupMessageTypeDef](./type_defs.md#modifydbclusterparametergroupmessagetypedef).
+[ModifyDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#modifydbclusterparametergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1088,7 +1095,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[DBClusterParameterGroupNameMessageResponseTypeDef](./type_defs.md#dbclusterparametergroupnamemessageresponsetypedef).
+[DBClusterParameterGroupNameMessageTypeDef](./type_defs.md#dbclusterparametergroupnamemessagetypedef).
 
 ### modify_db_cluster_snapshot_attribute
 
@@ -1102,7 +1109,7 @@ Boto3 documentation:
 [DocDB.Client.modify_db_cluster_snapshot_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_db_cluster_snapshot_attribute)
 
 Arguments mapping described in
-[ModifyDBClusterSnapshotAttributeMessageTypeDef](./type_defs.md#modifydbclustersnapshotattributemessagetypedef).
+[ModifyDBClusterSnapshotAttributeMessageRequestTypeDef](./type_defs.md#modifydbclustersnapshotattributemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1112,7 +1119,7 @@ Keyword-only arguments:
 - `ValuesToRemove`: `List`\[`str`\]
 
 Returns
-[ModifyDBClusterSnapshotAttributeResultResponseTypeDef](./type_defs.md#modifydbclustersnapshotattributeresultresponsetypedef).
+[ModifyDBClusterSnapshotAttributeResultTypeDef](./type_defs.md#modifydbclustersnapshotattributeresulttypedef).
 
 ### modify_db_instance
 
@@ -1124,7 +1131,7 @@ Boto3 documentation:
 [DocDB.Client.modify_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_db_instance)
 
 Arguments mapping described in
-[ModifyDBInstanceMessageTypeDef](./type_defs.md#modifydbinstancemessagetypedef).
+[ModifyDBInstanceMessageRequestTypeDef](./type_defs.md#modifydbinstancemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1138,7 +1145,7 @@ Keyword-only arguments:
 - `PromotionTier`: `int`
 
 Returns
-[ModifyDBInstanceResultResponseTypeDef](./type_defs.md#modifydbinstanceresultresponsetypedef).
+[ModifyDBInstanceResultTypeDef](./type_defs.md#modifydbinstanceresulttypedef).
 
 ### modify_db_subnet_group
 
@@ -1150,7 +1157,7 @@ Boto3 documentation:
 [DocDB.Client.modify_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_db_subnet_group)
 
 Arguments mapping described in
-[ModifyDBSubnetGroupMessageTypeDef](./type_defs.md#modifydbsubnetgroupmessagetypedef).
+[ModifyDBSubnetGroupMessageRequestTypeDef](./type_defs.md#modifydbsubnetgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1159,7 +1166,7 @@ Keyword-only arguments:
 - `DBSubnetGroupDescription`: `str`
 
 Returns
-[ModifyDBSubnetGroupResultResponseTypeDef](./type_defs.md#modifydbsubnetgroupresultresponsetypedef).
+[ModifyDBSubnetGroupResultTypeDef](./type_defs.md#modifydbsubnetgroupresulttypedef).
 
 ### modify_event_subscription
 
@@ -1171,7 +1178,7 @@ Boto3 documentation:
 [DocDB.Client.modify_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_event_subscription)
 
 Arguments mapping described in
-[ModifyEventSubscriptionMessageTypeDef](./type_defs.md#modifyeventsubscriptionmessagetypedef).
+[ModifyEventSubscriptionMessageRequestTypeDef](./type_defs.md#modifyeventsubscriptionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1182,7 +1189,7 @@ Keyword-only arguments:
 - `Enabled`: `bool`
 
 Returns
-[ModifyEventSubscriptionResultResponseTypeDef](./type_defs.md#modifyeventsubscriptionresultresponsetypedef).
+[ModifyEventSubscriptionResultTypeDef](./type_defs.md#modifyeventsubscriptionresulttypedef).
 
 ### modify_global_cluster
 
@@ -1194,7 +1201,7 @@ Boto3 documentation:
 [DocDB.Client.modify_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_global_cluster)
 
 Arguments mapping described in
-[ModifyGlobalClusterMessageTypeDef](./type_defs.md#modifyglobalclustermessagetypedef).
+[ModifyGlobalClusterMessageRequestTypeDef](./type_defs.md#modifyglobalclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1203,7 +1210,7 @@ Keyword-only arguments:
 - `DeletionProtection`: `bool`
 
 Returns
-[ModifyGlobalClusterResultResponseTypeDef](./type_defs.md#modifyglobalclusterresultresponsetypedef).
+[ModifyGlobalClusterResultTypeDef](./type_defs.md#modifyglobalclusterresulttypedef).
 
 ### reboot_db_instance
 
@@ -1215,7 +1222,7 @@ Boto3 documentation:
 [DocDB.Client.reboot_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.reboot_db_instance)
 
 Arguments mapping described in
-[RebootDBInstanceMessageTypeDef](./type_defs.md#rebootdbinstancemessagetypedef).
+[RebootDBInstanceMessageRequestTypeDef](./type_defs.md#rebootdbinstancemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1223,7 +1230,7 @@ Keyword-only arguments:
 - `ForceFailover`: `bool`
 
 Returns
-[RebootDBInstanceResultResponseTypeDef](./type_defs.md#rebootdbinstanceresultresponsetypedef).
+[RebootDBInstanceResultTypeDef](./type_defs.md#rebootdbinstanceresulttypedef).
 
 ### remove_from_global_cluster
 
@@ -1235,7 +1242,7 @@ Boto3 documentation:
 [DocDB.Client.remove_from_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.remove_from_global_cluster)
 
 Arguments mapping described in
-[RemoveFromGlobalClusterMessageTypeDef](./type_defs.md#removefromglobalclustermessagetypedef).
+[RemoveFromGlobalClusterMessageRequestTypeDef](./type_defs.md#removefromglobalclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1243,7 +1250,7 @@ Keyword-only arguments:
 - `DbClusterIdentifier`: `str` *(required)*
 
 Returns
-[RemoveFromGlobalClusterResultResponseTypeDef](./type_defs.md#removefromglobalclusterresultresponsetypedef).
+[RemoveFromGlobalClusterResultTypeDef](./type_defs.md#removefromglobalclusterresulttypedef).
 
 ### remove_source_identifier_from_subscription
 
@@ -1257,7 +1264,7 @@ Boto3 documentation:
 [DocDB.Client.remove_source_identifier_from_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.remove_source_identifier_from_subscription)
 
 Arguments mapping described in
-[RemoveSourceIdentifierFromSubscriptionMessageTypeDef](./type_defs.md#removesourceidentifierfromsubscriptionmessagetypedef).
+[RemoveSourceIdentifierFromSubscriptionMessageRequestTypeDef](./type_defs.md#removesourceidentifierfromsubscriptionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1265,7 +1272,7 @@ Keyword-only arguments:
 - `SourceIdentifier`: `str` *(required)*
 
 Returns
-[RemoveSourceIdentifierFromSubscriptionResultResponseTypeDef](./type_defs.md#removesourceidentifierfromsubscriptionresultresponsetypedef).
+[RemoveSourceIdentifierFromSubscriptionResultTypeDef](./type_defs.md#removesourceidentifierfromsubscriptionresulttypedef).
 
 ### remove_tags_from_resource
 
@@ -1277,7 +1284,7 @@ Boto3 documentation:
 [DocDB.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.remove_tags_from_resource)
 
 Arguments mapping described in
-[RemoveTagsFromResourceMessageTypeDef](./type_defs.md#removetagsfromresourcemessagetypedef).
+[RemoveTagsFromResourceMessageRequestTypeDef](./type_defs.md#removetagsfromresourcemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1295,7 +1302,7 @@ Boto3 documentation:
 [DocDB.Client.reset_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.reset_db_cluster_parameter_group)
 
 Arguments mapping described in
-[ResetDBClusterParameterGroupMessageTypeDef](./type_defs.md#resetdbclusterparametergroupmessagetypedef).
+[ResetDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#resetdbclusterparametergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1304,7 +1311,7 @@ Keyword-only arguments:
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 Returns
-[DBClusterParameterGroupNameMessageResponseTypeDef](./type_defs.md#dbclusterparametergroupnamemessageresponsetypedef).
+[DBClusterParameterGroupNameMessageTypeDef](./type_defs.md#dbclusterparametergroupnamemessagetypedef).
 
 ### restore_db_cluster_from_snapshot
 
@@ -1317,7 +1324,7 @@ Boto3 documentation:
 [DocDB.Client.restore_db_cluster_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.restore_db_cluster_from_snapshot)
 
 Arguments mapping described in
-[RestoreDBClusterFromSnapshotMessageTypeDef](./type_defs.md#restoredbclusterfromsnapshotmessagetypedef).
+[RestoreDBClusterFromSnapshotMessageRequestTypeDef](./type_defs.md#restoredbclusterfromsnapshotmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1335,7 +1342,7 @@ Keyword-only arguments:
 - `DeletionProtection`: `bool`
 
 Returns
-[RestoreDBClusterFromSnapshotResultResponseTypeDef](./type_defs.md#restoredbclusterfromsnapshotresultresponsetypedef).
+[RestoreDBClusterFromSnapshotResultTypeDef](./type_defs.md#restoredbclusterfromsnapshotresulttypedef).
 
 ### restore_db_cluster_to_point_in_time
 
@@ -1348,7 +1355,7 @@ Boto3 documentation:
 [DocDB.Client.restore_db_cluster_to_point_in_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.restore_db_cluster_to_point_in_time)
 
 Arguments mapping described in
-[RestoreDBClusterToPointInTimeMessageTypeDef](./type_defs.md#restoredbclustertopointintimemessagetypedef).
+[RestoreDBClusterToPointInTimeMessageRequestTypeDef](./type_defs.md#restoredbclustertopointintimemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1365,7 +1372,7 @@ Keyword-only arguments:
 - `DeletionProtection`: `bool`
 
 Returns
-[RestoreDBClusterToPointInTimeResultResponseTypeDef](./type_defs.md#restoredbclustertopointintimeresultresponsetypedef).
+[RestoreDBClusterToPointInTimeResultTypeDef](./type_defs.md#restoredbclustertopointintimeresulttypedef).
 
 ### start_db_cluster
 
@@ -1377,14 +1384,14 @@ Boto3 documentation:
 [DocDB.Client.start_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.start_db_cluster)
 
 Arguments mapping described in
-[StartDBClusterMessageTypeDef](./type_defs.md#startdbclustermessagetypedef).
+[StartDBClusterMessageRequestTypeDef](./type_defs.md#startdbclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 
 Returns
-[StartDBClusterResultResponseTypeDef](./type_defs.md#startdbclusterresultresponsetypedef).
+[StartDBClusterResultTypeDef](./type_defs.md#startdbclusterresulttypedef).
 
 ### stop_db_cluster
 
@@ -1396,14 +1403,14 @@ Boto3 documentation:
 [DocDB.Client.stop_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.stop_db_cluster)
 
 Arguments mapping described in
-[StopDBClusterMessageTypeDef](./type_defs.md#stopdbclustermessagetypedef).
+[StopDBClusterMessageRequestTypeDef](./type_defs.md#stopdbclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 
 Returns
-[StopDBClusterResultResponseTypeDef](./type_defs.md#stopdbclusterresultresponsetypedef).
+[StopDBClusterResultTypeDef](./type_defs.md#stopdbclusterresulttypedef).
 
 ### get_paginator
 

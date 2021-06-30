@@ -11,6 +11,7 @@ type annotations stubs module
   - [Route53ResolverClient](#route53resolverclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_firewall_rule_group](#associate_firewall_rule_group)
     - [associate_resolver_endpoint_ip_address](#associate_resolver_endpoint_ip_address)
     - [associate_resolver_query_log_config](#associate_resolver_query_log_config)
@@ -125,6 +126,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+Route53ResolverClient exceptions.
+
+Type annotations for `boto3.client("route53resolver").exceptions` method.
+
+Boto3 documentation:
+[Route53Resolver.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_firewall_rule_group
 
 Associates a FirewallRuleGroup with a VPC, to provide DNS filtering for the
@@ -137,7 +149,7 @@ Boto3 documentation:
 [Route53Resolver.Client.associate_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_firewall_rule_group)
 
 Arguments mapping described in
-[AssociateFirewallRuleGroupRequestTypeDef](./type_defs.md#associatefirewallrulegrouprequesttypedef).
+[AssociateFirewallRuleGroupRequestRequestTypeDef](./type_defs.md#associatefirewallrulegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -151,7 +163,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[AssociateFirewallRuleGroupResponseResponseTypeDef](./type_defs.md#associatefirewallrulegroupresponseresponsetypedef).
+[AssociateFirewallRuleGroupResponseTypeDef](./type_defs.md#associatefirewallrulegroupresponsetypedef).
 
 ### associate_resolver_endpoint_ip_address
 
@@ -165,7 +177,7 @@ Boto3 documentation:
 [Route53Resolver.Client.associate_resolver_endpoint_ip_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_endpoint_ip_address)
 
 Arguments mapping described in
-[AssociateResolverEndpointIpAddressRequestTypeDef](./type_defs.md#associateresolverendpointipaddressrequesttypedef).
+[AssociateResolverEndpointIpAddressRequestRequestTypeDef](./type_defs.md#associateresolverendpointipaddressrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -174,7 +186,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[AssociateResolverEndpointIpAddressResponseResponseTypeDef](./type_defs.md#associateresolverendpointipaddressresponseresponsetypedef).
+[AssociateResolverEndpointIpAddressResponseTypeDef](./type_defs.md#associateresolverendpointipaddressresponsetypedef).
 
 ### associate_resolver_query_log_config
 
@@ -187,7 +199,7 @@ Boto3 documentation:
 [Route53Resolver.Client.associate_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_query_log_config)
 
 Arguments mapping described in
-[AssociateResolverQueryLogConfigRequestTypeDef](./type_defs.md#associateresolverquerylogconfigrequesttypedef).
+[AssociateResolverQueryLogConfigRequestRequestTypeDef](./type_defs.md#associateresolverquerylogconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -195,7 +207,7 @@ Keyword-only arguments:
 - `ResourceId`: `str` *(required)*
 
 Returns
-[AssociateResolverQueryLogConfigResponseResponseTypeDef](./type_defs.md#associateresolverquerylogconfigresponseresponsetypedef).
+[AssociateResolverQueryLogConfigResponseTypeDef](./type_defs.md#associateresolverquerylogconfigresponsetypedef).
 
 ### associate_resolver_rule
 
@@ -208,7 +220,7 @@ Boto3 documentation:
 [Route53Resolver.Client.associate_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_rule)
 
 Arguments mapping described in
-[AssociateResolverRuleRequestTypeDef](./type_defs.md#associateresolverrulerequesttypedef).
+[AssociateResolverRuleRequestRequestTypeDef](./type_defs.md#associateresolverrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -217,7 +229,7 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns
-[AssociateResolverRuleResponseResponseTypeDef](./type_defs.md#associateresolverruleresponseresponsetypedef).
+[AssociateResolverRuleResponseTypeDef](./type_defs.md#associateresolverruleresponsetypedef).
 
 ### can_paginate
 
@@ -245,7 +257,7 @@ Boto3 documentation:
 [Route53Resolver.Client.create_firewall_domain_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_domain_list)
 
 Arguments mapping described in
-[CreateFirewallDomainListRequestTypeDef](./type_defs.md#createfirewalldomainlistrequesttypedef).
+[CreateFirewallDomainListRequestRequestTypeDef](./type_defs.md#createfirewalldomainlistrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -254,7 +266,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateFirewallDomainListResponseResponseTypeDef](./type_defs.md#createfirewalldomainlistresponseresponsetypedef).
+[CreateFirewallDomainListResponseTypeDef](./type_defs.md#createfirewalldomainlistresponsetypedef).
 
 ### create_firewall_rule
 
@@ -268,7 +280,7 @@ Boto3 documentation:
 [Route53Resolver.Client.create_firewall_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_rule)
 
 Arguments mapping described in
-[CreateFirewallRuleRequestTypeDef](./type_defs.md#createfirewallrulerequesttypedef).
+[CreateFirewallRuleRequestRequestTypeDef](./type_defs.md#createfirewallrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -285,7 +297,7 @@ Keyword-only arguments:
 - `BlockOverrideTtl`: `int`
 
 Returns
-[CreateFirewallRuleResponseResponseTypeDef](./type_defs.md#createfirewallruleresponseresponsetypedef).
+[CreateFirewallRuleResponseTypeDef](./type_defs.md#createfirewallruleresponsetypedef).
 
 ### create_firewall_rule_group
 
@@ -299,7 +311,7 @@ Boto3 documentation:
 [Route53Resolver.Client.create_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_rule_group)
 
 Arguments mapping described in
-[CreateFirewallRuleGroupRequestTypeDef](./type_defs.md#createfirewallrulegrouprequesttypedef).
+[CreateFirewallRuleGroupRequestRequestTypeDef](./type_defs.md#createfirewallrulegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -308,7 +320,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateFirewallRuleGroupResponseResponseTypeDef](./type_defs.md#createfirewallrulegroupresponseresponsetypedef).
+[CreateFirewallRuleGroupResponseTypeDef](./type_defs.md#createfirewallrulegroupresponsetypedef).
 
 ### create_resolver_endpoint
 
@@ -321,7 +333,7 @@ Boto3 documentation:
 [Route53Resolver.Client.create_resolver_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_endpoint)
 
 Arguments mapping described in
-[CreateResolverEndpointRequestTypeDef](./type_defs.md#createresolverendpointrequesttypedef).
+[CreateResolverEndpointRequestRequestTypeDef](./type_defs.md#createresolverendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -337,7 +349,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateResolverEndpointResponseResponseTypeDef](./type_defs.md#createresolverendpointresponseresponsetypedef).
+[CreateResolverEndpointResponseTypeDef](./type_defs.md#createresolverendpointresponsetypedef).
 
 ### create_resolver_query_log_config
 
@@ -351,7 +363,7 @@ Boto3 documentation:
 [Route53Resolver.Client.create_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_query_log_config)
 
 Arguments mapping described in
-[CreateResolverQueryLogConfigRequestTypeDef](./type_defs.md#createresolverquerylogconfigrequesttypedef).
+[CreateResolverQueryLogConfigRequestRequestTypeDef](./type_defs.md#createresolverquerylogconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -361,7 +373,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateResolverQueryLogConfigResponseResponseTypeDef](./type_defs.md#createresolverquerylogconfigresponseresponsetypedef).
+[CreateResolverQueryLogConfigResponseTypeDef](./type_defs.md#createresolverquerylogconfigresponsetypedef).
 
 ### create_resolver_rule
 
@@ -376,7 +388,7 @@ Boto3 documentation:
 [Route53Resolver.Client.create_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_rule)
 
 Arguments mapping described in
-[CreateResolverRuleRequestTypeDef](./type_defs.md#createresolverrulerequesttypedef).
+[CreateResolverRuleRequestRequestTypeDef](./type_defs.md#createresolverrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -391,7 +403,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateResolverRuleResponseResponseTypeDef](./type_defs.md#createresolverruleresponseresponsetypedef).
+[CreateResolverRuleResponseTypeDef](./type_defs.md#createresolverruleresponsetypedef).
 
 ### delete_firewall_domain_list
 
@@ -404,14 +416,14 @@ Boto3 documentation:
 [Route53Resolver.Client.delete_firewall_domain_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_domain_list)
 
 Arguments mapping described in
-[DeleteFirewallDomainListRequestTypeDef](./type_defs.md#deletefirewalldomainlistrequesttypedef).
+[DeleteFirewallDomainListRequestRequestTypeDef](./type_defs.md#deletefirewalldomainlistrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FirewallDomainListId`: `str` *(required)*
 
 Returns
-[DeleteFirewallDomainListResponseResponseTypeDef](./type_defs.md#deletefirewalldomainlistresponseresponsetypedef).
+[DeleteFirewallDomainListResponseTypeDef](./type_defs.md#deletefirewalldomainlistresponsetypedef).
 
 ### delete_firewall_rule
 
@@ -424,7 +436,7 @@ Boto3 documentation:
 [Route53Resolver.Client.delete_firewall_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_rule)
 
 Arguments mapping described in
-[DeleteFirewallRuleRequestTypeDef](./type_defs.md#deletefirewallrulerequesttypedef).
+[DeleteFirewallRuleRequestRequestTypeDef](./type_defs.md#deletefirewallrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -432,7 +444,7 @@ Keyword-only arguments:
 - `FirewallDomainListId`: `str` *(required)*
 
 Returns
-[DeleteFirewallRuleResponseResponseTypeDef](./type_defs.md#deletefirewallruleresponseresponsetypedef).
+[DeleteFirewallRuleResponseTypeDef](./type_defs.md#deletefirewallruleresponsetypedef).
 
 ### delete_firewall_rule_group
 
@@ -445,14 +457,14 @@ Boto3 documentation:
 [Route53Resolver.Client.delete_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_rule_group)
 
 Arguments mapping described in
-[DeleteFirewallRuleGroupRequestTypeDef](./type_defs.md#deletefirewallrulegrouprequesttypedef).
+[DeleteFirewallRuleGroupRequestRequestTypeDef](./type_defs.md#deletefirewallrulegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FirewallRuleGroupId`: `str` *(required)*
 
 Returns
-[DeleteFirewallRuleGroupResponseResponseTypeDef](./type_defs.md#deletefirewallrulegroupresponseresponsetypedef).
+[DeleteFirewallRuleGroupResponseTypeDef](./type_defs.md#deletefirewallrulegroupresponsetypedef).
 
 ### delete_resolver_endpoint
 
@@ -465,14 +477,14 @@ Boto3 documentation:
 [Route53Resolver.Client.delete_resolver_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_endpoint)
 
 Arguments mapping described in
-[DeleteResolverEndpointRequestTypeDef](./type_defs.md#deleteresolverendpointrequesttypedef).
+[DeleteResolverEndpointRequestRequestTypeDef](./type_defs.md#deleteresolverendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResolverEndpointId`: `str` *(required)*
 
 Returns
-[DeleteResolverEndpointResponseResponseTypeDef](./type_defs.md#deleteresolverendpointresponseresponsetypedef).
+[DeleteResolverEndpointResponseTypeDef](./type_defs.md#deleteresolverendpointresponsetypedef).
 
 ### delete_resolver_query_log_config
 
@@ -485,14 +497,14 @@ Boto3 documentation:
 [Route53Resolver.Client.delete_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_query_log_config)
 
 Arguments mapping described in
-[DeleteResolverQueryLogConfigRequestTypeDef](./type_defs.md#deleteresolverquerylogconfigrequesttypedef).
+[DeleteResolverQueryLogConfigRequestRequestTypeDef](./type_defs.md#deleteresolverquerylogconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResolverQueryLogConfigId`: `str` *(required)*
 
 Returns
-[DeleteResolverQueryLogConfigResponseResponseTypeDef](./type_defs.md#deleteresolverquerylogconfigresponseresponsetypedef).
+[DeleteResolverQueryLogConfigResponseTypeDef](./type_defs.md#deleteresolverquerylogconfigresponsetypedef).
 
 ### delete_resolver_rule
 
@@ -505,14 +517,14 @@ Boto3 documentation:
 [Route53Resolver.Client.delete_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_rule)
 
 Arguments mapping described in
-[DeleteResolverRuleRequestTypeDef](./type_defs.md#deleteresolverrulerequesttypedef).
+[DeleteResolverRuleRequestRequestTypeDef](./type_defs.md#deleteresolverrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResolverRuleId`: `str` *(required)*
 
 Returns
-[DeleteResolverRuleResponseResponseTypeDef](./type_defs.md#deleteresolverruleresponseresponsetypedef).
+[DeleteResolverRuleResponseTypeDef](./type_defs.md#deleteresolverruleresponsetypedef).
 
 ### disassociate_firewall_rule_group
 
@@ -526,14 +538,14 @@ Boto3 documentation:
 [Route53Resolver.Client.disassociate_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_firewall_rule_group)
 
 Arguments mapping described in
-[DisassociateFirewallRuleGroupRequestTypeDef](./type_defs.md#disassociatefirewallrulegrouprequesttypedef).
+[DisassociateFirewallRuleGroupRequestRequestTypeDef](./type_defs.md#disassociatefirewallrulegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FirewallRuleGroupAssociationId`: `str` *(required)*
 
 Returns
-[DisassociateFirewallRuleGroupResponseResponseTypeDef](./type_defs.md#disassociatefirewallrulegroupresponseresponsetypedef).
+[DisassociateFirewallRuleGroupResponseTypeDef](./type_defs.md#disassociatefirewallrulegroupresponsetypedef).
 
 ### disassociate_resolver_endpoint_ip_address
 
@@ -547,7 +559,7 @@ Boto3 documentation:
 [Route53Resolver.Client.disassociate_resolver_endpoint_ip_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_endpoint_ip_address)
 
 Arguments mapping described in
-[DisassociateResolverEndpointIpAddressRequestTypeDef](./type_defs.md#disassociateresolverendpointipaddressrequesttypedef).
+[DisassociateResolverEndpointIpAddressRequestRequestTypeDef](./type_defs.md#disassociateresolverendpointipaddressrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -556,7 +568,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[DisassociateResolverEndpointIpAddressResponseResponseTypeDef](./type_defs.md#disassociateresolverendpointipaddressresponseresponsetypedef).
+[DisassociateResolverEndpointIpAddressResponseTypeDef](./type_defs.md#disassociateresolverendpointipaddressresponsetypedef).
 
 ### disassociate_resolver_query_log_config
 
@@ -570,7 +582,7 @@ Boto3 documentation:
 [Route53Resolver.Client.disassociate_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_query_log_config)
 
 Arguments mapping described in
-[DisassociateResolverQueryLogConfigRequestTypeDef](./type_defs.md#disassociateresolverquerylogconfigrequesttypedef).
+[DisassociateResolverQueryLogConfigRequestRequestTypeDef](./type_defs.md#disassociateresolverquerylogconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -578,7 +590,7 @@ Keyword-only arguments:
 - `ResourceId`: `str` *(required)*
 
 Returns
-[DisassociateResolverQueryLogConfigResponseResponseTypeDef](./type_defs.md#disassociateresolverquerylogconfigresponseresponsetypedef).
+[DisassociateResolverQueryLogConfigResponseTypeDef](./type_defs.md#disassociateresolverquerylogconfigresponsetypedef).
 
 ### disassociate_resolver_rule
 
@@ -591,7 +603,7 @@ Boto3 documentation:
 [Route53Resolver.Client.disassociate_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_rule)
 
 Arguments mapping described in
-[DisassociateResolverRuleRequestTypeDef](./type_defs.md#disassociateresolverrulerequesttypedef).
+[DisassociateResolverRuleRequestRequestTypeDef](./type_defs.md#disassociateresolverrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -599,7 +611,7 @@ Keyword-only arguments:
 - `ResolverRuleId`: `str` *(required)*
 
 Returns
-[DisassociateResolverRuleResponseResponseTypeDef](./type_defs.md#disassociateresolverruleresponseresponsetypedef).
+[DisassociateResolverRuleResponseTypeDef](./type_defs.md#disassociateresolverruleresponsetypedef).
 
 ### generate_presigned_url
 
@@ -632,14 +644,14 @@ Boto3 documentation:
 [Route53Resolver.Client.get_firewall_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_config)
 
 Arguments mapping described in
-[GetFirewallConfigRequestTypeDef](./type_defs.md#getfirewallconfigrequesttypedef).
+[GetFirewallConfigRequestRequestTypeDef](./type_defs.md#getfirewallconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 
 Returns
-[GetFirewallConfigResponseResponseTypeDef](./type_defs.md#getfirewallconfigresponseresponsetypedef).
+[GetFirewallConfigResponseTypeDef](./type_defs.md#getfirewallconfigresponsetypedef).
 
 ### get_firewall_domain_list
 
@@ -652,14 +664,14 @@ Boto3 documentation:
 [Route53Resolver.Client.get_firewall_domain_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_domain_list)
 
 Arguments mapping described in
-[GetFirewallDomainListRequestTypeDef](./type_defs.md#getfirewalldomainlistrequesttypedef).
+[GetFirewallDomainListRequestRequestTypeDef](./type_defs.md#getfirewalldomainlistrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FirewallDomainListId`: `str` *(required)*
 
 Returns
-[GetFirewallDomainListResponseResponseTypeDef](./type_defs.md#getfirewalldomainlistresponseresponsetypedef).
+[GetFirewallDomainListResponseTypeDef](./type_defs.md#getfirewalldomainlistresponsetypedef).
 
 ### get_firewall_rule_group
 
@@ -672,14 +684,14 @@ Boto3 documentation:
 [Route53Resolver.Client.get_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group)
 
 Arguments mapping described in
-[GetFirewallRuleGroupRequestTypeDef](./type_defs.md#getfirewallrulegrouprequesttypedef).
+[GetFirewallRuleGroupRequestRequestTypeDef](./type_defs.md#getfirewallrulegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FirewallRuleGroupId`: `str` *(required)*
 
 Returns
-[GetFirewallRuleGroupResponseResponseTypeDef](./type_defs.md#getfirewallrulegroupresponseresponsetypedef).
+[GetFirewallRuleGroupResponseTypeDef](./type_defs.md#getfirewallrulegroupresponsetypedef).
 
 ### get_firewall_rule_group_association
 
@@ -693,14 +705,14 @@ Boto3 documentation:
 [Route53Resolver.Client.get_firewall_rule_group_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group_association)
 
 Arguments mapping described in
-[GetFirewallRuleGroupAssociationRequestTypeDef](./type_defs.md#getfirewallrulegroupassociationrequesttypedef).
+[GetFirewallRuleGroupAssociationRequestRequestTypeDef](./type_defs.md#getfirewallrulegroupassociationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FirewallRuleGroupAssociationId`: `str` *(required)*
 
 Returns
-[GetFirewallRuleGroupAssociationResponseResponseTypeDef](./type_defs.md#getfirewallrulegroupassociationresponseresponsetypedef).
+[GetFirewallRuleGroupAssociationResponseTypeDef](./type_defs.md#getfirewallrulegroupassociationresponsetypedef).
 
 ### get_firewall_rule_group_policy
 
@@ -714,14 +726,14 @@ Boto3 documentation:
 [Route53Resolver.Client.get_firewall_rule_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group_policy)
 
 Arguments mapping described in
-[GetFirewallRuleGroupPolicyRequestTypeDef](./type_defs.md#getfirewallrulegrouppolicyrequesttypedef).
+[GetFirewallRuleGroupPolicyRequestRequestTypeDef](./type_defs.md#getfirewallrulegrouppolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
 Returns
-[GetFirewallRuleGroupPolicyResponseResponseTypeDef](./type_defs.md#getfirewallrulegrouppolicyresponseresponsetypedef).
+[GetFirewallRuleGroupPolicyResponseTypeDef](./type_defs.md#getfirewallrulegrouppolicyresponsetypedef).
 
 ### get_resolver_dnssec_config
 
@@ -734,14 +746,14 @@ Boto3 documentation:
 [Route53Resolver.Client.get_resolver_dnssec_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_dnssec_config)
 
 Arguments mapping described in
-[GetResolverDnssecConfigRequestTypeDef](./type_defs.md#getresolverdnssecconfigrequesttypedef).
+[GetResolverDnssecConfigRequestRequestTypeDef](./type_defs.md#getresolverdnssecconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 
 Returns
-[GetResolverDnssecConfigResponseResponseTypeDef](./type_defs.md#getresolverdnssecconfigresponseresponsetypedef).
+[GetResolverDnssecConfigResponseTypeDef](./type_defs.md#getresolverdnssecconfigresponsetypedef).
 
 ### get_resolver_endpoint
 
@@ -756,14 +768,14 @@ Boto3 documentation:
 [Route53Resolver.Client.get_resolver_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_endpoint)
 
 Arguments mapping described in
-[GetResolverEndpointRequestTypeDef](./type_defs.md#getresolverendpointrequesttypedef).
+[GetResolverEndpointRequestRequestTypeDef](./type_defs.md#getresolverendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResolverEndpointId`: `str` *(required)*
 
 Returns
-[GetResolverEndpointResponseResponseTypeDef](./type_defs.md#getresolverendpointresponseresponsetypedef).
+[GetResolverEndpointResponseTypeDef](./type_defs.md#getresolverendpointresponsetypedef).
 
 ### get_resolver_query_log_config
 
@@ -778,14 +790,14 @@ Boto3 documentation:
 [Route53Resolver.Client.get_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config)
 
 Arguments mapping described in
-[GetResolverQueryLogConfigRequestTypeDef](./type_defs.md#getresolverquerylogconfigrequesttypedef).
+[GetResolverQueryLogConfigRequestRequestTypeDef](./type_defs.md#getresolverquerylogconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResolverQueryLogConfigId`: `str` *(required)*
 
 Returns
-[GetResolverQueryLogConfigResponseResponseTypeDef](./type_defs.md#getresolverquerylogconfigresponseresponsetypedef).
+[GetResolverQueryLogConfigResponseTypeDef](./type_defs.md#getresolverquerylogconfigresponsetypedef).
 
 ### get_resolver_query_log_config_association
 
@@ -800,14 +812,14 @@ Boto3 documentation:
 [Route53Resolver.Client.get_resolver_query_log_config_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config_association)
 
 Arguments mapping described in
-[GetResolverQueryLogConfigAssociationRequestTypeDef](./type_defs.md#getresolverquerylogconfigassociationrequesttypedef).
+[GetResolverQueryLogConfigAssociationRequestRequestTypeDef](./type_defs.md#getresolverquerylogconfigassociationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResolverQueryLogConfigAssociationId`: `str` *(required)*
 
 Returns
-[GetResolverQueryLogConfigAssociationResponseResponseTypeDef](./type_defs.md#getresolverquerylogconfigassociationresponseresponsetypedef).
+[GetResolverQueryLogConfigAssociationResponseTypeDef](./type_defs.md#getresolverquerylogconfigassociationresponsetypedef).
 
 ### get_resolver_query_log_config_policy
 
@@ -820,14 +832,14 @@ Boto3 documentation:
 [Route53Resolver.Client.get_resolver_query_log_config_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config_policy)
 
 Arguments mapping described in
-[GetResolverQueryLogConfigPolicyRequestTypeDef](./type_defs.md#getresolverquerylogconfigpolicyrequesttypedef).
+[GetResolverQueryLogConfigPolicyRequestRequestTypeDef](./type_defs.md#getresolverquerylogconfigpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
 Returns
-[GetResolverQueryLogConfigPolicyResponseResponseTypeDef](./type_defs.md#getresolverquerylogconfigpolicyresponseresponsetypedef).
+[GetResolverQueryLogConfigPolicyResponseTypeDef](./type_defs.md#getresolverquerylogconfigpolicyresponsetypedef).
 
 ### get_resolver_rule
 
@@ -842,14 +854,14 @@ Boto3 documentation:
 [Route53Resolver.Client.get_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule)
 
 Arguments mapping described in
-[GetResolverRuleRequestTypeDef](./type_defs.md#getresolverrulerequesttypedef).
+[GetResolverRuleRequestRequestTypeDef](./type_defs.md#getresolverrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResolverRuleId`: `str` *(required)*
 
 Returns
-[GetResolverRuleResponseResponseTypeDef](./type_defs.md#getresolverruleresponseresponsetypedef).
+[GetResolverRuleResponseTypeDef](./type_defs.md#getresolverruleresponsetypedef).
 
 ### get_resolver_rule_association
 
@@ -863,14 +875,14 @@ Boto3 documentation:
 [Route53Resolver.Client.get_resolver_rule_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule_association)
 
 Arguments mapping described in
-[GetResolverRuleAssociationRequestTypeDef](./type_defs.md#getresolverruleassociationrequesttypedef).
+[GetResolverRuleAssociationRequestRequestTypeDef](./type_defs.md#getresolverruleassociationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResolverRuleAssociationId`: `str` *(required)*
 
 Returns
-[GetResolverRuleAssociationResponseResponseTypeDef](./type_defs.md#getresolverruleassociationresponseresponsetypedef).
+[GetResolverRuleAssociationResponseTypeDef](./type_defs.md#getresolverruleassociationresponsetypedef).
 
 ### get_resolver_rule_policy
 
@@ -883,14 +895,14 @@ Boto3 documentation:
 [Route53Resolver.Client.get_resolver_rule_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule_policy)
 
 Arguments mapping described in
-[GetResolverRulePolicyRequestTypeDef](./type_defs.md#getresolverrulepolicyrequesttypedef).
+[GetResolverRulePolicyRequestRequestTypeDef](./type_defs.md#getresolverrulepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
 Returns
-[GetResolverRulePolicyResponseResponseTypeDef](./type_defs.md#getresolverrulepolicyresponseresponsetypedef).
+[GetResolverRulePolicyResponseTypeDef](./type_defs.md#getresolverrulepolicyresponsetypedef).
 
 ### import_firewall_domains
 
@@ -904,7 +916,7 @@ Boto3 documentation:
 [Route53Resolver.Client.import_firewall_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.import_firewall_domains)
 
 Arguments mapping described in
-[ImportFirewallDomainsRequestTypeDef](./type_defs.md#importfirewalldomainsrequesttypedef).
+[ImportFirewallDomainsRequestRequestTypeDef](./type_defs.md#importfirewalldomainsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -915,7 +927,7 @@ Keyword-only arguments:
 - `DomainFileUrl`: `str` *(required)*
 
 Returns
-[ImportFirewallDomainsResponseResponseTypeDef](./type_defs.md#importfirewalldomainsresponseresponsetypedef).
+[ImportFirewallDomainsResponseTypeDef](./type_defs.md#importfirewalldomainsresponsetypedef).
 
 ### list_firewall_configs
 
@@ -928,7 +940,7 @@ Boto3 documentation:
 [Route53Resolver.Client.list_firewall_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_configs)
 
 Arguments mapping described in
-[ListFirewallConfigsRequestTypeDef](./type_defs.md#listfirewallconfigsrequesttypedef).
+[ListFirewallConfigsRequestRequestTypeDef](./type_defs.md#listfirewallconfigsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -936,7 +948,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListFirewallConfigsResponseResponseTypeDef](./type_defs.md#listfirewallconfigsresponseresponsetypedef).
+[ListFirewallConfigsResponseTypeDef](./type_defs.md#listfirewallconfigsresponsetypedef).
 
 ### list_firewall_domain_lists
 
@@ -949,7 +961,7 @@ Boto3 documentation:
 [Route53Resolver.Client.list_firewall_domain_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_domain_lists)
 
 Arguments mapping described in
-[ListFirewallDomainListsRequestTypeDef](./type_defs.md#listfirewalldomainlistsrequesttypedef).
+[ListFirewallDomainListsRequestRequestTypeDef](./type_defs.md#listfirewalldomainlistsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -957,7 +969,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListFirewallDomainListsResponseResponseTypeDef](./type_defs.md#listfirewalldomainlistsresponseresponsetypedef).
+[ListFirewallDomainListsResponseTypeDef](./type_defs.md#listfirewalldomainlistsresponsetypedef).
 
 ### list_firewall_domains
 
@@ -971,7 +983,7 @@ Boto3 documentation:
 [Route53Resolver.Client.list_firewall_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_domains)
 
 Arguments mapping described in
-[ListFirewallDomainsRequestTypeDef](./type_defs.md#listfirewalldomainsrequesttypedef).
+[ListFirewallDomainsRequestRequestTypeDef](./type_defs.md#listfirewalldomainsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -980,7 +992,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListFirewallDomainsResponseResponseTypeDef](./type_defs.md#listfirewalldomainsresponseresponsetypedef).
+[ListFirewallDomainsResponseTypeDef](./type_defs.md#listfirewalldomainsresponsetypedef).
 
 ### list_firewall_rule_group_associations
 
@@ -993,7 +1005,7 @@ Boto3 documentation:
 [Route53Resolver.Client.list_firewall_rule_group_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rule_group_associations)
 
 Arguments mapping described in
-[ListFirewallRuleGroupAssociationsRequestTypeDef](./type_defs.md#listfirewallrulegroupassociationsrequesttypedef).
+[ListFirewallRuleGroupAssociationsRequestRequestTypeDef](./type_defs.md#listfirewallrulegroupassociationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1006,7 +1018,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListFirewallRuleGroupAssociationsResponseResponseTypeDef](./type_defs.md#listfirewallrulegroupassociationsresponseresponsetypedef).
+[ListFirewallRuleGroupAssociationsResponseTypeDef](./type_defs.md#listfirewallrulegroupassociationsresponsetypedef).
 
 ### list_firewall_rule_groups
 
@@ -1020,7 +1032,7 @@ Boto3 documentation:
 [Route53Resolver.Client.list_firewall_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rule_groups)
 
 Arguments mapping described in
-[ListFirewallRuleGroupsRequestTypeDef](./type_defs.md#listfirewallrulegroupsrequesttypedef).
+[ListFirewallRuleGroupsRequestRequestTypeDef](./type_defs.md#listfirewallrulegroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1028,7 +1040,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListFirewallRuleGroupsResponseResponseTypeDef](./type_defs.md#listfirewallrulegroupsresponseresponsetypedef).
+[ListFirewallRuleGroupsResponseTypeDef](./type_defs.md#listfirewallrulegroupsresponsetypedef).
 
 ### list_firewall_rules
 
@@ -1042,7 +1054,7 @@ Boto3 documentation:
 [Route53Resolver.Client.list_firewall_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rules)
 
 Arguments mapping described in
-[ListFirewallRulesRequestTypeDef](./type_defs.md#listfirewallrulesrequesttypedef).
+[ListFirewallRulesRequestRequestTypeDef](./type_defs.md#listfirewallrulesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1053,7 +1065,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListFirewallRulesResponseResponseTypeDef](./type_defs.md#listfirewallrulesresponseresponsetypedef).
+[ListFirewallRulesResponseTypeDef](./type_defs.md#listfirewallrulesresponsetypedef).
 
 ### list_resolver_dnssec_configs
 
@@ -1067,7 +1079,7 @@ Boto3 documentation:
 [Route53Resolver.Client.list_resolver_dnssec_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_dnssec_configs)
 
 Arguments mapping described in
-[ListResolverDnssecConfigsRequestTypeDef](./type_defs.md#listresolverdnssecconfigsrequesttypedef).
+[ListResolverDnssecConfigsRequestRequestTypeDef](./type_defs.md#listresolverdnssecconfigsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1076,7 +1088,7 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListResolverDnssecConfigsResponseResponseTypeDef](./type_defs.md#listresolverdnssecconfigsresponseresponsetypedef).
+[ListResolverDnssecConfigsResponseTypeDef](./type_defs.md#listresolverdnssecconfigsresponsetypedef).
 
 ### list_resolver_endpoint_ip_addresses
 
@@ -1089,7 +1101,7 @@ Boto3 documentation:
 [Route53Resolver.Client.list_resolver_endpoint_ip_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_endpoint_ip_addresses)
 
 Arguments mapping described in
-[ListResolverEndpointIpAddressesRequestTypeDef](./type_defs.md#listresolverendpointipaddressesrequesttypedef).
+[ListResolverEndpointIpAddressesRequestRequestTypeDef](./type_defs.md#listresolverendpointipaddressesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1098,7 +1110,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListResolverEndpointIpAddressesResponseResponseTypeDef](./type_defs.md#listresolverendpointipaddressesresponseresponsetypedef).
+[ListResolverEndpointIpAddressesResponseTypeDef](./type_defs.md#listresolverendpointipaddressesresponsetypedef).
 
 ### list_resolver_endpoints
 
@@ -1112,7 +1124,7 @@ Boto3 documentation:
 [Route53Resolver.Client.list_resolver_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_endpoints)
 
 Arguments mapping described in
-[ListResolverEndpointsRequestTypeDef](./type_defs.md#listresolverendpointsrequesttypedef).
+[ListResolverEndpointsRequestRequestTypeDef](./type_defs.md#listresolverendpointsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1121,7 +1133,7 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListResolverEndpointsResponseResponseTypeDef](./type_defs.md#listresolverendpointsresponseresponsetypedef).
+[ListResolverEndpointsResponseTypeDef](./type_defs.md#listresolverendpointsresponsetypedef).
 
 ### list_resolver_query_log_config_associations
 
@@ -1136,7 +1148,7 @@ Boto3 documentation:
 [Route53Resolver.Client.list_resolver_query_log_config_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_query_log_config_associations)
 
 Arguments mapping described in
-[ListResolverQueryLogConfigAssociationsRequestTypeDef](./type_defs.md#listresolverquerylogconfigassociationsrequesttypedef).
+[ListResolverQueryLogConfigAssociationsRequestRequestTypeDef](./type_defs.md#listresolverquerylogconfigassociationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1147,7 +1159,7 @@ Keyword-only arguments:
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
 Returns
-[ListResolverQueryLogConfigAssociationsResponseResponseTypeDef](./type_defs.md#listresolverquerylogconfigassociationsresponseresponsetypedef).
+[ListResolverQueryLogConfigAssociationsResponseTypeDef](./type_defs.md#listresolverquerylogconfigassociationsresponsetypedef).
 
 ### list_resolver_query_log_configs
 
@@ -1160,7 +1172,7 @@ Boto3 documentation:
 [Route53Resolver.Client.list_resolver_query_log_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_query_log_configs)
 
 Arguments mapping described in
-[ListResolverQueryLogConfigsRequestTypeDef](./type_defs.md#listresolverquerylogconfigsrequesttypedef).
+[ListResolverQueryLogConfigsRequestRequestTypeDef](./type_defs.md#listresolverquerylogconfigsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1171,7 +1183,7 @@ Keyword-only arguments:
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
 Returns
-[ListResolverQueryLogConfigsResponseResponseTypeDef](./type_defs.md#listresolverquerylogconfigsresponseresponsetypedef).
+[ListResolverQueryLogConfigsResponseTypeDef](./type_defs.md#listresolverquerylogconfigsresponsetypedef).
 
 ### list_resolver_rule_associations
 
@@ -1185,7 +1197,7 @@ Boto3 documentation:
 [Route53Resolver.Client.list_resolver_rule_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_rule_associations)
 
 Arguments mapping described in
-[ListResolverRuleAssociationsRequestTypeDef](./type_defs.md#listresolverruleassociationsrequesttypedef).
+[ListResolverRuleAssociationsRequestRequestTypeDef](./type_defs.md#listresolverruleassociationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1194,7 +1206,7 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListResolverRuleAssociationsResponseResponseTypeDef](./type_defs.md#listresolverruleassociationsresponseresponsetypedef).
+[ListResolverRuleAssociationsResponseTypeDef](./type_defs.md#listresolverruleassociationsresponsetypedef).
 
 ### list_resolver_rules
 
@@ -1207,7 +1219,7 @@ Boto3 documentation:
 [Route53Resolver.Client.list_resolver_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_rules)
 
 Arguments mapping described in
-[ListResolverRulesRequestTypeDef](./type_defs.md#listresolverrulesrequesttypedef).
+[ListResolverRulesRequestRequestTypeDef](./type_defs.md#listresolverrulesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1216,7 +1228,7 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListResolverRulesResponseResponseTypeDef](./type_defs.md#listresolverrulesresponseresponsetypedef).
+[ListResolverRulesResponseTypeDef](./type_defs.md#listresolverrulesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -1229,7 +1241,7 @@ Boto3 documentation:
 [Route53Resolver.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1238,7 +1250,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_firewall_rule_group_policy
 
@@ -1252,7 +1264,7 @@ Boto3 documentation:
 [Route53Resolver.Client.put_firewall_rule_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_firewall_rule_group_policy)
 
 Arguments mapping described in
-[PutFirewallRuleGroupPolicyRequestTypeDef](./type_defs.md#putfirewallrulegrouppolicyrequesttypedef).
+[PutFirewallRuleGroupPolicyRequestRequestTypeDef](./type_defs.md#putfirewallrulegrouppolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1260,7 +1272,7 @@ Keyword-only arguments:
 - `FirewallRuleGroupPolicy`: `str` *(required)*
 
 Returns
-[PutFirewallRuleGroupPolicyResponseResponseTypeDef](./type_defs.md#putfirewallrulegrouppolicyresponseresponsetypedef).
+[PutFirewallRuleGroupPolicyResponseTypeDef](./type_defs.md#putfirewallrulegrouppolicyresponsetypedef).
 
 ### put_resolver_query_log_config_policy
 
@@ -1276,7 +1288,7 @@ Boto3 documentation:
 [Route53Resolver.Client.put_resolver_query_log_config_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_resolver_query_log_config_policy)
 
 Arguments mapping described in
-[PutResolverQueryLogConfigPolicyRequestTypeDef](./type_defs.md#putresolverquerylogconfigpolicyrequesttypedef).
+[PutResolverQueryLogConfigPolicyRequestRequestTypeDef](./type_defs.md#putresolverquerylogconfigpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1284,7 +1296,7 @@ Keyword-only arguments:
 - `ResolverQueryLogConfigPolicy`: `str` *(required)*
 
 Returns
-[PutResolverQueryLogConfigPolicyResponseResponseTypeDef](./type_defs.md#putresolverquerylogconfigpolicyresponseresponsetypedef).
+[PutResolverQueryLogConfigPolicyResponseTypeDef](./type_defs.md#putresolverquerylogconfigpolicyresponsetypedef).
 
 ### put_resolver_rule_policy
 
@@ -1299,7 +1311,7 @@ Boto3 documentation:
 [Route53Resolver.Client.put_resolver_rule_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_resolver_rule_policy)
 
 Arguments mapping described in
-[PutResolverRulePolicyRequestTypeDef](./type_defs.md#putresolverrulepolicyrequesttypedef).
+[PutResolverRulePolicyRequestRequestTypeDef](./type_defs.md#putresolverrulepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1307,7 +1319,7 @@ Keyword-only arguments:
 - `ResolverRulePolicy`: `str` *(required)*
 
 Returns
-[PutResolverRulePolicyResponseResponseTypeDef](./type_defs.md#putresolverrulepolicyresponseresponsetypedef).
+[PutResolverRulePolicyResponseTypeDef](./type_defs.md#putresolverrulepolicyresponsetypedef).
 
 ### tag_resource
 
@@ -1319,7 +1331,7 @@ Boto3 documentation:
 [Route53Resolver.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1338,7 +1350,7 @@ Boto3 documentation:
 [Route53Resolver.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1359,7 +1371,7 @@ Boto3 documentation:
 [Route53Resolver.Client.update_firewall_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_config)
 
 Arguments mapping described in
-[UpdateFirewallConfigRequestTypeDef](./type_defs.md#updatefirewallconfigrequesttypedef).
+[UpdateFirewallConfigRequestRequestTypeDef](./type_defs.md#updatefirewallconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1369,7 +1381,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateFirewallConfigResponseResponseTypeDef](./type_defs.md#updatefirewallconfigresponseresponsetypedef).
+[UpdateFirewallConfigResponseTypeDef](./type_defs.md#updatefirewallconfigresponsetypedef).
 
 ### update_firewall_domains
 
@@ -1382,7 +1394,7 @@ Boto3 documentation:
 [Route53Resolver.Client.update_firewall_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_domains)
 
 Arguments mapping described in
-[UpdateFirewallDomainsRequestTypeDef](./type_defs.md#updatefirewalldomainsrequesttypedef).
+[UpdateFirewallDomainsRequestRequestTypeDef](./type_defs.md#updatefirewalldomainsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1393,7 +1405,7 @@ Keyword-only arguments:
 - `Domains`: `List`\[`str`\] *(required)*
 
 Returns
-[UpdateFirewallDomainsResponseResponseTypeDef](./type_defs.md#updatefirewalldomainsresponseresponsetypedef).
+[UpdateFirewallDomainsResponseTypeDef](./type_defs.md#updatefirewalldomainsresponsetypedef).
 
 ### update_firewall_rule
 
@@ -1406,7 +1418,7 @@ Boto3 documentation:
 [Route53Resolver.Client.update_firewall_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_rule)
 
 Arguments mapping described in
-[UpdateFirewallRuleRequestTypeDef](./type_defs.md#updatefirewallrulerequesttypedef).
+[UpdateFirewallRuleRequestRequestTypeDef](./type_defs.md#updatefirewallrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1422,7 +1434,7 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns
-[UpdateFirewallRuleResponseResponseTypeDef](./type_defs.md#updatefirewallruleresponseresponsetypedef).
+[UpdateFirewallRuleResponseTypeDef](./type_defs.md#updatefirewallruleresponsetypedef).
 
 ### update_firewall_rule_group_association
 
@@ -1436,7 +1448,7 @@ Boto3 documentation:
 [Route53Resolver.Client.update_firewall_rule_group_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_rule_group_association)
 
 Arguments mapping described in
-[UpdateFirewallRuleGroupAssociationRequestTypeDef](./type_defs.md#updatefirewallrulegroupassociationrequesttypedef).
+[UpdateFirewallRuleGroupAssociationRequestRequestTypeDef](./type_defs.md#updatefirewallrulegroupassociationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1447,7 +1459,7 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns
-[UpdateFirewallRuleGroupAssociationResponseResponseTypeDef](./type_defs.md#updatefirewallrulegroupassociationresponseresponsetypedef).
+[UpdateFirewallRuleGroupAssociationResponseTypeDef](./type_defs.md#updatefirewallrulegroupassociationresponsetypedef).
 
 ### update_resolver_dnssec_config
 
@@ -1460,7 +1472,7 @@ Boto3 documentation:
 [Route53Resolver.Client.update_resolver_dnssec_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_dnssec_config)
 
 Arguments mapping described in
-[UpdateResolverDnssecConfigRequestTypeDef](./type_defs.md#updateresolverdnssecconfigrequesttypedef).
+[UpdateResolverDnssecConfigRequestRequestTypeDef](./type_defs.md#updateresolverdnssecconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1468,7 +1480,7 @@ Keyword-only arguments:
 - `Validation`: [ValidationType](./literals.md#validationtype) *(required)*
 
 Returns
-[UpdateResolverDnssecConfigResponseResponseTypeDef](./type_defs.md#updateresolverdnssecconfigresponseresponsetypedef).
+[UpdateResolverDnssecConfigResponseTypeDef](./type_defs.md#updateresolverdnssecconfigresponsetypedef).
 
 ### update_resolver_endpoint
 
@@ -1481,7 +1493,7 @@ Boto3 documentation:
 [Route53Resolver.Client.update_resolver_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_endpoint)
 
 Arguments mapping described in
-[UpdateResolverEndpointRequestTypeDef](./type_defs.md#updateresolverendpointrequesttypedef).
+[UpdateResolverEndpointRequestRequestTypeDef](./type_defs.md#updateresolverendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1489,7 +1501,7 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns
-[UpdateResolverEndpointResponseResponseTypeDef](./type_defs.md#updateresolverendpointresponseresponsetypedef).
+[UpdateResolverEndpointResponseTypeDef](./type_defs.md#updateresolverendpointresponsetypedef).
 
 ### update_resolver_rule
 
@@ -1502,7 +1514,7 @@ Boto3 documentation:
 [Route53Resolver.Client.update_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_rule)
 
 Arguments mapping described in
-[UpdateResolverRuleRequestTypeDef](./type_defs.md#updateresolverrulerequesttypedef).
+[UpdateResolverRuleRequestRequestTypeDef](./type_defs.md#updateresolverrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1512,7 +1524,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateResolverRuleResponseResponseTypeDef](./type_defs.md#updateresolverruleresponseresponsetypedef).
+[UpdateResolverRuleResponseTypeDef](./type_defs.md#updateresolverruleresponsetypedef).
 
 ### get_paginator
 

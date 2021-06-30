@@ -10,7 +10,7 @@ type annotations stubs module
 - [Typed dictionaries for boto3 MediaLive module](#typed-dictionaries-for-boto3-medialive-module)
   - [AacSettingsTypeDef](#aacsettingstypedef)
   - [Ac3SettingsTypeDef](#ac3settingstypedef)
-  - [AcceptInputDeviceTransferRequestTypeDef](#acceptinputdevicetransferrequesttypedef)
+  - [AcceptInputDeviceTransferRequestRequestTypeDef](#acceptinputdevicetransferrequestrequesttypedef)
   - [AncillarySourceSettingsTypeDef](#ancillarysourcesettingstypedef)
   - [ArchiveCdnSettingsTypeDef](#archivecdnsettingstypedef)
   - [ArchiveContainerSettingsTypeDef](#archivecontainersettingstypedef)
@@ -33,23 +33,23 @@ type annotations stubs module
   - [AvailBlankingTypeDef](#availblankingtypedef)
   - [AvailConfigurationTypeDef](#availconfigurationtypedef)
   - [AvailSettingsTypeDef](#availsettingstypedef)
-  - [BatchDeleteRequestTypeDef](#batchdeleterequesttypedef)
-  - [BatchDeleteResponseResponseTypeDef](#batchdeleteresponseresponsetypedef)
+  - [BatchDeleteRequestRequestTypeDef](#batchdeleterequestrequesttypedef)
+  - [BatchDeleteResponseTypeDef](#batchdeleteresponsetypedef)
   - [BatchFailedResultModelTypeDef](#batchfailedresultmodeltypedef)
   - [BatchScheduleActionCreateRequestTypeDef](#batchscheduleactioncreaterequesttypedef)
   - [BatchScheduleActionCreateResultTypeDef](#batchscheduleactioncreateresulttypedef)
   - [BatchScheduleActionDeleteRequestTypeDef](#batchscheduleactiondeleterequesttypedef)
   - [BatchScheduleActionDeleteResultTypeDef](#batchscheduleactiondeleteresulttypedef)
-  - [BatchStartRequestTypeDef](#batchstartrequesttypedef)
-  - [BatchStartResponseResponseTypeDef](#batchstartresponseresponsetypedef)
-  - [BatchStopRequestTypeDef](#batchstoprequesttypedef)
-  - [BatchStopResponseResponseTypeDef](#batchstopresponseresponsetypedef)
+  - [BatchStartRequestRequestTypeDef](#batchstartrequestrequesttypedef)
+  - [BatchStartResponseTypeDef](#batchstartresponsetypedef)
+  - [BatchStopRequestRequestTypeDef](#batchstoprequestrequesttypedef)
+  - [BatchStopResponseTypeDef](#batchstopresponsetypedef)
   - [BatchSuccessfulResultModelTypeDef](#batchsuccessfulresultmodeltypedef)
-  - [BatchUpdateScheduleRequestTypeDef](#batchupdateschedulerequesttypedef)
-  - [BatchUpdateScheduleResponseResponseTypeDef](#batchupdatescheduleresponseresponsetypedef)
+  - [BatchUpdateScheduleRequestRequestTypeDef](#batchupdateschedulerequestrequesttypedef)
+  - [BatchUpdateScheduleResponseTypeDef](#batchupdatescheduleresponsetypedef)
   - [BlackoutSlateTypeDef](#blackoutslatetypedef)
   - [BurnInDestinationSettingsTypeDef](#burnindestinationsettingstypedef)
-  - [CancelInputDeviceTransferRequestTypeDef](#cancelinputdevicetransferrequesttypedef)
+  - [CancelInputDeviceTransferRequestRequestTypeDef](#cancelinputdevicetransferrequestrequesttypedef)
   - [CaptionDescriptionTypeDef](#captiondescriptiontypedef)
   - [CaptionDestinationSettingsTypeDef](#captiondestinationsettingstypedef)
   - [CaptionLanguageMappingTypeDef](#captionlanguagemappingtypedef)
@@ -60,51 +60,51 @@ type annotations stubs module
   - [ChannelEgressEndpointTypeDef](#channelegressendpointtypedef)
   - [ChannelSummaryTypeDef](#channelsummarytypedef)
   - [ChannelTypeDef](#channeltypedef)
-  - [CreateChannelRequestTypeDef](#createchannelrequesttypedef)
-  - [CreateChannelResponseResponseTypeDef](#createchannelresponseresponsetypedef)
-  - [CreateInputRequestTypeDef](#createinputrequesttypedef)
-  - [CreateInputResponseResponseTypeDef](#createinputresponseresponsetypedef)
-  - [CreateInputSecurityGroupRequestTypeDef](#createinputsecuritygrouprequesttypedef)
-  - [CreateInputSecurityGroupResponseResponseTypeDef](#createinputsecuritygroupresponseresponsetypedef)
-  - [CreateMultiplexProgramRequestTypeDef](#createmultiplexprogramrequesttypedef)
-  - [CreateMultiplexProgramResponseResponseTypeDef](#createmultiplexprogramresponseresponsetypedef)
-  - [CreateMultiplexRequestTypeDef](#createmultiplexrequesttypedef)
-  - [CreateMultiplexResponseResponseTypeDef](#createmultiplexresponseresponsetypedef)
-  - [CreatePartnerInputRequestTypeDef](#createpartnerinputrequesttypedef)
-  - [CreatePartnerInputResponseResponseTypeDef](#createpartnerinputresponseresponsetypedef)
-  - [CreateTagsRequestTypeDef](#createtagsrequesttypedef)
-  - [DeleteChannelRequestTypeDef](#deletechannelrequesttypedef)
-  - [DeleteChannelResponseResponseTypeDef](#deletechannelresponseresponsetypedef)
-  - [DeleteInputRequestTypeDef](#deleteinputrequesttypedef)
-  - [DeleteInputSecurityGroupRequestTypeDef](#deleteinputsecuritygrouprequesttypedef)
-  - [DeleteMultiplexProgramRequestTypeDef](#deletemultiplexprogramrequesttypedef)
-  - [DeleteMultiplexProgramResponseResponseTypeDef](#deletemultiplexprogramresponseresponsetypedef)
-  - [DeleteMultiplexRequestTypeDef](#deletemultiplexrequesttypedef)
-  - [DeleteMultiplexResponseResponseTypeDef](#deletemultiplexresponseresponsetypedef)
-  - [DeleteReservationRequestTypeDef](#deletereservationrequesttypedef)
-  - [DeleteReservationResponseResponseTypeDef](#deletereservationresponseresponsetypedef)
-  - [DeleteScheduleRequestTypeDef](#deleteschedulerequesttypedef)
-  - [DeleteTagsRequestTypeDef](#deletetagsrequesttypedef)
-  - [DescribeChannelRequestTypeDef](#describechannelrequesttypedef)
-  - [DescribeChannelResponseResponseTypeDef](#describechannelresponseresponsetypedef)
-  - [DescribeInputDeviceRequestTypeDef](#describeinputdevicerequesttypedef)
-  - [DescribeInputDeviceResponseResponseTypeDef](#describeinputdeviceresponseresponsetypedef)
-  - [DescribeInputDeviceThumbnailRequestTypeDef](#describeinputdevicethumbnailrequesttypedef)
-  - [DescribeInputDeviceThumbnailResponseResponseTypeDef](#describeinputdevicethumbnailresponseresponsetypedef)
-  - [DescribeInputRequestTypeDef](#describeinputrequesttypedef)
-  - [DescribeInputResponseResponseTypeDef](#describeinputresponseresponsetypedef)
-  - [DescribeInputSecurityGroupRequestTypeDef](#describeinputsecuritygrouprequesttypedef)
-  - [DescribeInputSecurityGroupResponseResponseTypeDef](#describeinputsecuritygroupresponseresponsetypedef)
-  - [DescribeMultiplexProgramRequestTypeDef](#describemultiplexprogramrequesttypedef)
-  - [DescribeMultiplexProgramResponseResponseTypeDef](#describemultiplexprogramresponseresponsetypedef)
-  - [DescribeMultiplexRequestTypeDef](#describemultiplexrequesttypedef)
-  - [DescribeMultiplexResponseResponseTypeDef](#describemultiplexresponseresponsetypedef)
-  - [DescribeOfferingRequestTypeDef](#describeofferingrequesttypedef)
-  - [DescribeOfferingResponseResponseTypeDef](#describeofferingresponseresponsetypedef)
-  - [DescribeReservationRequestTypeDef](#describereservationrequesttypedef)
-  - [DescribeReservationResponseResponseTypeDef](#describereservationresponseresponsetypedef)
-  - [DescribeScheduleRequestTypeDef](#describeschedulerequesttypedef)
-  - [DescribeScheduleResponseResponseTypeDef](#describescheduleresponseresponsetypedef)
+  - [CreateChannelRequestRequestTypeDef](#createchannelrequestrequesttypedef)
+  - [CreateChannelResponseTypeDef](#createchannelresponsetypedef)
+  - [CreateInputRequestRequestTypeDef](#createinputrequestrequesttypedef)
+  - [CreateInputResponseTypeDef](#createinputresponsetypedef)
+  - [CreateInputSecurityGroupRequestRequestTypeDef](#createinputsecuritygrouprequestrequesttypedef)
+  - [CreateInputSecurityGroupResponseTypeDef](#createinputsecuritygroupresponsetypedef)
+  - [CreateMultiplexProgramRequestRequestTypeDef](#createmultiplexprogramrequestrequesttypedef)
+  - [CreateMultiplexProgramResponseTypeDef](#createmultiplexprogramresponsetypedef)
+  - [CreateMultiplexRequestRequestTypeDef](#createmultiplexrequestrequesttypedef)
+  - [CreateMultiplexResponseTypeDef](#createmultiplexresponsetypedef)
+  - [CreatePartnerInputRequestRequestTypeDef](#createpartnerinputrequestrequesttypedef)
+  - [CreatePartnerInputResponseTypeDef](#createpartnerinputresponsetypedef)
+  - [CreateTagsRequestRequestTypeDef](#createtagsrequestrequesttypedef)
+  - [DeleteChannelRequestRequestTypeDef](#deletechannelrequestrequesttypedef)
+  - [DeleteChannelResponseTypeDef](#deletechannelresponsetypedef)
+  - [DeleteInputRequestRequestTypeDef](#deleteinputrequestrequesttypedef)
+  - [DeleteInputSecurityGroupRequestRequestTypeDef](#deleteinputsecuritygrouprequestrequesttypedef)
+  - [DeleteMultiplexProgramRequestRequestTypeDef](#deletemultiplexprogramrequestrequesttypedef)
+  - [DeleteMultiplexProgramResponseTypeDef](#deletemultiplexprogramresponsetypedef)
+  - [DeleteMultiplexRequestRequestTypeDef](#deletemultiplexrequestrequesttypedef)
+  - [DeleteMultiplexResponseTypeDef](#deletemultiplexresponsetypedef)
+  - [DeleteReservationRequestRequestTypeDef](#deletereservationrequestrequesttypedef)
+  - [DeleteReservationResponseTypeDef](#deletereservationresponsetypedef)
+  - [DeleteScheduleRequestRequestTypeDef](#deleteschedulerequestrequesttypedef)
+  - [DeleteTagsRequestRequestTypeDef](#deletetagsrequestrequesttypedef)
+  - [DescribeChannelRequestRequestTypeDef](#describechannelrequestrequesttypedef)
+  - [DescribeChannelResponseTypeDef](#describechannelresponsetypedef)
+  - [DescribeInputDeviceRequestRequestTypeDef](#describeinputdevicerequestrequesttypedef)
+  - [DescribeInputDeviceResponseTypeDef](#describeinputdeviceresponsetypedef)
+  - [DescribeInputDeviceThumbnailRequestRequestTypeDef](#describeinputdevicethumbnailrequestrequesttypedef)
+  - [DescribeInputDeviceThumbnailResponseTypeDef](#describeinputdevicethumbnailresponsetypedef)
+  - [DescribeInputRequestRequestTypeDef](#describeinputrequestrequesttypedef)
+  - [DescribeInputResponseTypeDef](#describeinputresponsetypedef)
+  - [DescribeInputSecurityGroupRequestRequestTypeDef](#describeinputsecuritygrouprequestrequesttypedef)
+  - [DescribeInputSecurityGroupResponseTypeDef](#describeinputsecuritygroupresponsetypedef)
+  - [DescribeMultiplexProgramRequestRequestTypeDef](#describemultiplexprogramrequestrequesttypedef)
+  - [DescribeMultiplexProgramResponseTypeDef](#describemultiplexprogramresponsetypedef)
+  - [DescribeMultiplexRequestRequestTypeDef](#describemultiplexrequestrequesttypedef)
+  - [DescribeMultiplexResponseTypeDef](#describemultiplexresponsetypedef)
+  - [DescribeOfferingRequestRequestTypeDef](#describeofferingrequestrequesttypedef)
+  - [DescribeOfferingResponseTypeDef](#describeofferingresponsetypedef)
+  - [DescribeReservationRequestRequestTypeDef](#describereservationrequestrequesttypedef)
+  - [DescribeReservationResponseTypeDef](#describereservationresponsetypedef)
+  - [DescribeScheduleRequestRequestTypeDef](#describeschedulerequestrequesttypedef)
+  - [DescribeScheduleResponseTypeDef](#describescheduleresponsetypedef)
   - [DvbNitSettingsTypeDef](#dvbnitsettingstypedef)
   - [DvbSdtSettingsTypeDef](#dvbsdtsettingstypedef)
   - [DvbSubDestinationSettingsTypeDef](#dvbsubdestinationsettingstypedef)
@@ -174,26 +174,26 @@ type annotations stubs module
   - [InputWhitelistRuleCidrTypeDef](#inputwhitelistrulecidrtypedef)
   - [InputWhitelistRuleTypeDef](#inputwhitelistruletypedef)
   - [KeyProviderSettingsTypeDef](#keyprovidersettingstypedef)
-  - [ListChannelsRequestTypeDef](#listchannelsrequesttypedef)
-  - [ListChannelsResponseResponseTypeDef](#listchannelsresponseresponsetypedef)
-  - [ListInputDeviceTransfersRequestTypeDef](#listinputdevicetransfersrequesttypedef)
-  - [ListInputDeviceTransfersResponseResponseTypeDef](#listinputdevicetransfersresponseresponsetypedef)
-  - [ListInputDevicesRequestTypeDef](#listinputdevicesrequesttypedef)
-  - [ListInputDevicesResponseResponseTypeDef](#listinputdevicesresponseresponsetypedef)
-  - [ListInputSecurityGroupsRequestTypeDef](#listinputsecuritygroupsrequesttypedef)
-  - [ListInputSecurityGroupsResponseResponseTypeDef](#listinputsecuritygroupsresponseresponsetypedef)
-  - [ListInputsRequestTypeDef](#listinputsrequesttypedef)
-  - [ListInputsResponseResponseTypeDef](#listinputsresponseresponsetypedef)
-  - [ListMultiplexProgramsRequestTypeDef](#listmultiplexprogramsrequesttypedef)
-  - [ListMultiplexProgramsResponseResponseTypeDef](#listmultiplexprogramsresponseresponsetypedef)
-  - [ListMultiplexesRequestTypeDef](#listmultiplexesrequesttypedef)
-  - [ListMultiplexesResponseResponseTypeDef](#listmultiplexesresponseresponsetypedef)
-  - [ListOfferingsRequestTypeDef](#listofferingsrequesttypedef)
-  - [ListOfferingsResponseResponseTypeDef](#listofferingsresponseresponsetypedef)
-  - [ListReservationsRequestTypeDef](#listreservationsrequesttypedef)
-  - [ListReservationsResponseResponseTypeDef](#listreservationsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListChannelsRequestRequestTypeDef](#listchannelsrequestrequesttypedef)
+  - [ListChannelsResponseTypeDef](#listchannelsresponsetypedef)
+  - [ListInputDeviceTransfersRequestRequestTypeDef](#listinputdevicetransfersrequestrequesttypedef)
+  - [ListInputDeviceTransfersResponseTypeDef](#listinputdevicetransfersresponsetypedef)
+  - [ListInputDevicesRequestRequestTypeDef](#listinputdevicesrequestrequesttypedef)
+  - [ListInputDevicesResponseTypeDef](#listinputdevicesresponsetypedef)
+  - [ListInputSecurityGroupsRequestRequestTypeDef](#listinputsecuritygroupsrequestrequesttypedef)
+  - [ListInputSecurityGroupsResponseTypeDef](#listinputsecuritygroupsresponsetypedef)
+  - [ListInputsRequestRequestTypeDef](#listinputsrequestrequesttypedef)
+  - [ListInputsResponseTypeDef](#listinputsresponsetypedef)
+  - [ListMultiplexProgramsRequestRequestTypeDef](#listmultiplexprogramsrequestrequesttypedef)
+  - [ListMultiplexProgramsResponseTypeDef](#listmultiplexprogramsresponsetypedef)
+  - [ListMultiplexesRequestRequestTypeDef](#listmultiplexesrequestrequesttypedef)
+  - [ListMultiplexesResponseTypeDef](#listmultiplexesresponsetypedef)
+  - [ListOfferingsRequestRequestTypeDef](#listofferingsrequestrequesttypedef)
+  - [ListOfferingsResponseTypeDef](#listofferingsresponsetypedef)
+  - [ListReservationsRequestRequestTypeDef](#listreservationsrequestrequesttypedef)
+  - [ListReservationsResponseTypeDef](#listreservationsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [M2tsSettingsTypeDef](#m2tssettingstypedef)
   - [M3u8SettingsTypeDef](#m3u8settingstypedef)
   - [MediaConnectFlowRequestTypeDef](#mediaconnectflowrequesttypedef)
@@ -238,9 +238,9 @@ type annotations stubs module
   - [PauseStateScheduleActionSettingsTypeDef](#pausestatescheduleactionsettingstypedef)
   - [PipelineDetailTypeDef](#pipelinedetailtypedef)
   - [PipelinePauseStateSettingsTypeDef](#pipelinepausestatesettingstypedef)
-  - [PurchaseOfferingRequestTypeDef](#purchaseofferingrequesttypedef)
-  - [PurchaseOfferingResponseResponseTypeDef](#purchaseofferingresponseresponsetypedef)
-  - [RejectInputDeviceTransferRequestTypeDef](#rejectinputdevicetransferrequesttypedef)
+  - [PurchaseOfferingRequestRequestTypeDef](#purchaseofferingrequestrequesttypedef)
+  - [PurchaseOfferingResponseTypeDef](#purchaseofferingresponsetypedef)
+  - [RejectInputDeviceTransferRequestRequestTypeDef](#rejectinputdevicetransferrequestrequesttypedef)
   - [RemixSettingsTypeDef](#remixsettingstypedef)
   - [ReservationResourceSpecificationTypeDef](#reservationresourcespecificationtypedef)
   - [ReservationTypeDef](#reservationtypedef)
@@ -262,44 +262,44 @@ type annotations stubs module
   - [Scte35TimeSignalAposTypeDef](#scte35timesignalapostypedef)
   - [Scte35TimeSignalScheduleActionSettingsTypeDef](#scte35timesignalscheduleactionsettingstypedef)
   - [StandardHlsSettingsTypeDef](#standardhlssettingstypedef)
-  - [StartChannelRequestTypeDef](#startchannelrequesttypedef)
-  - [StartChannelResponseResponseTypeDef](#startchannelresponseresponsetypedef)
-  - [StartMultiplexRequestTypeDef](#startmultiplexrequesttypedef)
-  - [StartMultiplexResponseResponseTypeDef](#startmultiplexresponseresponsetypedef)
+  - [StartChannelRequestRequestTypeDef](#startchannelrequestrequesttypedef)
+  - [StartChannelResponseTypeDef](#startchannelresponsetypedef)
+  - [StartMultiplexRequestRequestTypeDef](#startmultiplexrequestrequesttypedef)
+  - [StartMultiplexResponseTypeDef](#startmultiplexresponsetypedef)
   - [StartTimecodeTypeDef](#starttimecodetypedef)
   - [StaticImageActivateScheduleActionSettingsTypeDef](#staticimageactivatescheduleactionsettingstypedef)
   - [StaticImageDeactivateScheduleActionSettingsTypeDef](#staticimagedeactivatescheduleactionsettingstypedef)
   - [StaticKeySettingsTypeDef](#statickeysettingstypedef)
-  - [StopChannelRequestTypeDef](#stopchannelrequesttypedef)
-  - [StopChannelResponseResponseTypeDef](#stopchannelresponseresponsetypedef)
-  - [StopMultiplexRequestTypeDef](#stopmultiplexrequesttypedef)
-  - [StopMultiplexResponseResponseTypeDef](#stopmultiplexresponseresponsetypedef)
+  - [StopChannelRequestRequestTypeDef](#stopchannelrequestrequesttypedef)
+  - [StopChannelResponseTypeDef](#stopchannelresponsetypedef)
+  - [StopMultiplexRequestRequestTypeDef](#stopmultiplexrequestrequesttypedef)
+  - [StopMultiplexResponseTypeDef](#stopmultiplexresponsetypedef)
   - [StopTimecodeTypeDef](#stoptimecodetypedef)
   - [TeletextSourceSettingsTypeDef](#teletextsourcesettingstypedef)
   - [TemporalFilterSettingsTypeDef](#temporalfiltersettingstypedef)
   - [TimecodeConfigTypeDef](#timecodeconfigtypedef)
-  - [TransferInputDeviceRequestTypeDef](#transferinputdevicerequesttypedef)
+  - [TransferInputDeviceRequestRequestTypeDef](#transferinputdevicerequestrequesttypedef)
   - [TransferringInputDeviceSummaryTypeDef](#transferringinputdevicesummarytypedef)
   - [TtmlDestinationSettingsTypeDef](#ttmldestinationsettingstypedef)
   - [UdpContainerSettingsTypeDef](#udpcontainersettingstypedef)
   - [UdpGroupSettingsTypeDef](#udpgroupsettingstypedef)
   - [UdpOutputSettingsTypeDef](#udpoutputsettingstypedef)
-  - [UpdateChannelClassRequestTypeDef](#updatechannelclassrequesttypedef)
-  - [UpdateChannelClassResponseResponseTypeDef](#updatechannelclassresponseresponsetypedef)
-  - [UpdateChannelRequestTypeDef](#updatechannelrequesttypedef)
-  - [UpdateChannelResponseResponseTypeDef](#updatechannelresponseresponsetypedef)
-  - [UpdateInputDeviceRequestTypeDef](#updateinputdevicerequesttypedef)
-  - [UpdateInputDeviceResponseResponseTypeDef](#updateinputdeviceresponseresponsetypedef)
-  - [UpdateInputRequestTypeDef](#updateinputrequesttypedef)
-  - [UpdateInputResponseResponseTypeDef](#updateinputresponseresponsetypedef)
-  - [UpdateInputSecurityGroupRequestTypeDef](#updateinputsecuritygrouprequesttypedef)
-  - [UpdateInputSecurityGroupResponseResponseTypeDef](#updateinputsecuritygroupresponseresponsetypedef)
-  - [UpdateMultiplexProgramRequestTypeDef](#updatemultiplexprogramrequesttypedef)
-  - [UpdateMultiplexProgramResponseResponseTypeDef](#updatemultiplexprogramresponseresponsetypedef)
-  - [UpdateMultiplexRequestTypeDef](#updatemultiplexrequesttypedef)
-  - [UpdateMultiplexResponseResponseTypeDef](#updatemultiplexresponseresponsetypedef)
-  - [UpdateReservationRequestTypeDef](#updatereservationrequesttypedef)
-  - [UpdateReservationResponseResponseTypeDef](#updatereservationresponseresponsetypedef)
+  - [UpdateChannelClassRequestRequestTypeDef](#updatechannelclassrequestrequesttypedef)
+  - [UpdateChannelClassResponseTypeDef](#updatechannelclassresponsetypedef)
+  - [UpdateChannelRequestRequestTypeDef](#updatechannelrequestrequesttypedef)
+  - [UpdateChannelResponseTypeDef](#updatechannelresponsetypedef)
+  - [UpdateInputDeviceRequestRequestTypeDef](#updateinputdevicerequestrequesttypedef)
+  - [UpdateInputDeviceResponseTypeDef](#updateinputdeviceresponsetypedef)
+  - [UpdateInputRequestRequestTypeDef](#updateinputrequestrequesttypedef)
+  - [UpdateInputResponseTypeDef](#updateinputresponsetypedef)
+  - [UpdateInputSecurityGroupRequestRequestTypeDef](#updateinputsecuritygrouprequestrequesttypedef)
+  - [UpdateInputSecurityGroupResponseTypeDef](#updateinputsecuritygroupresponsetypedef)
+  - [UpdateMultiplexProgramRequestRequestTypeDef](#updatemultiplexprogramrequestrequesttypedef)
+  - [UpdateMultiplexProgramResponseTypeDef](#updatemultiplexprogramresponsetypedef)
+  - [UpdateMultiplexRequestRequestTypeDef](#updatemultiplexrequestrequesttypedef)
+  - [UpdateMultiplexResponseTypeDef](#updatemultiplexresponsetypedef)
+  - [UpdateReservationRequestRequestTypeDef](#updatereservationrequestrequesttypedef)
+  - [UpdateReservationResponseTypeDef](#updatereservationresponsetypedef)
   - [VideoBlackFailoverSettingsTypeDef](#videoblackfailoversettingstypedef)
   - [VideoCodecSettingsTypeDef](#videocodecsettingstypedef)
   - [VideoDescriptionTypeDef](#videodescriptiontypedef)
@@ -349,10 +349,10 @@ Optional fields:
 - `MetadataControl`:
   [Ac3MetadataControlType](./literals.md#ac3metadatacontroltype)
 
-## AcceptInputDeviceTransferRequestTypeDef
+## AcceptInputDeviceTransferRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import AcceptInputDeviceTransferRequestTypeDef
+from mypy_boto3_medialive.type_defs import AcceptInputDeviceTransferRequestRequestTypeDef
 ```
 
 Required fields:
@@ -657,10 +657,10 @@ Optional fields:
 - `Scte35TimeSignalApos`:
   [Scte35TimeSignalAposTypeDef](./type_defs.md#scte35timesignalapostypedef)
 
-## BatchDeleteRequestTypeDef
+## BatchDeleteRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import BatchDeleteRequestTypeDef
+from mypy_boto3_medialive.type_defs import BatchDeleteRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -670,10 +670,10 @@ Optional fields:
 - `InputSecurityGroupIds`: `List`\[`str`\]
 - `MultiplexIds`: `List`\[`str`\]
 
-## BatchDeleteResponseResponseTypeDef
+## BatchDeleteResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import BatchDeleteResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import BatchDeleteResponseTypeDef
 ```
 
 Required fields:
@@ -741,10 +741,10 @@ Required fields:
 - `ScheduleActions`:
   `List`\[[ScheduleActionTypeDef](./type_defs.md#scheduleactiontypedef)\]
 
-## BatchStartRequestTypeDef
+## BatchStartRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import BatchStartRequestTypeDef
+from mypy_boto3_medialive.type_defs import BatchStartRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -752,10 +752,10 @@ Optional fields:
 - `ChannelIds`: `List`\[`str`\]
 - `MultiplexIds`: `List`\[`str`\]
 
-## BatchStartResponseResponseTypeDef
+## BatchStartResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import BatchStartResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import BatchStartResponseTypeDef
 ```
 
 Required fields:
@@ -767,10 +767,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchStopRequestTypeDef
+## BatchStopRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import BatchStopRequestTypeDef
+from mypy_boto3_medialive.type_defs import BatchStopRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -778,10 +778,10 @@ Optional fields:
 - `ChannelIds`: `List`\[`str`\]
 - `MultiplexIds`: `List`\[`str`\]
 
-## BatchStopResponseResponseTypeDef
+## BatchStopResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import BatchStopResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import BatchStopResponseTypeDef
 ```
 
 Required fields:
@@ -805,10 +805,10 @@ Optional fields:
 - `Id`: `str`
 - `State`: `str`
 
-## BatchUpdateScheduleRequestTypeDef
+## BatchUpdateScheduleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import BatchUpdateScheduleRequestTypeDef
+from mypy_boto3_medialive.type_defs import BatchUpdateScheduleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -822,10 +822,10 @@ Optional fields:
 - `Deletes`:
   [BatchScheduleActionDeleteRequestTypeDef](./type_defs.md#batchscheduleactiondeleterequesttypedef)
 
-## BatchUpdateScheduleResponseResponseTypeDef
+## BatchUpdateScheduleResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import BatchUpdateScheduleResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import BatchUpdateScheduleResponseTypeDef
 ```
 
 Required fields:
@@ -883,10 +883,10 @@ Optional fields:
 - `XPosition`: `int`
 - `YPosition`: `int`
 
-## CancelInputDeviceTransferRequestTypeDef
+## CancelInputDeviceTransferRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import CancelInputDeviceTransferRequestTypeDef
+from mypy_boto3_medialive.type_defs import CancelInputDeviceTransferRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1084,10 +1084,10 @@ Optional fields:
 - `Vpc`:
   [VpcOutputSettingsDescriptionTypeDef](./type_defs.md#vpcoutputsettingsdescriptiontypedef)
 
-## CreateChannelRequestTypeDef
+## CreateChannelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import CreateChannelRequestTypeDef
+from mypy_boto3_medialive.type_defs import CreateChannelRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1111,10 +1111,10 @@ Optional fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Vpc`: [VpcOutputSettingsTypeDef](./type_defs.md#vpcoutputsettingstypedef)
 
-## CreateChannelResponseResponseTypeDef
+## CreateChannelResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import CreateChannelResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import CreateChannelResponseTypeDef
 ```
 
 Required fields:
@@ -1123,10 +1123,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateInputRequestTypeDef
+## CreateInputRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import CreateInputRequestTypeDef
+from mypy_boto3_medialive.type_defs import CreateInputRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1147,10 +1147,10 @@ Optional fields:
 - `Type`: [InputTypeType](./literals.md#inputtypetype)
 - `Vpc`: [InputVpcRequestTypeDef](./type_defs.md#inputvpcrequesttypedef)
 
-## CreateInputResponseResponseTypeDef
+## CreateInputResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import CreateInputResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import CreateInputResponseTypeDef
 ```
 
 Required fields:
@@ -1159,10 +1159,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateInputSecurityGroupRequestTypeDef
+## CreateInputSecurityGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import CreateInputSecurityGroupRequestTypeDef
+from mypy_boto3_medialive.type_defs import CreateInputSecurityGroupRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1171,10 +1171,10 @@ Optional fields:
 - `WhitelistRules`:
   `List`\[[InputWhitelistRuleCidrTypeDef](./type_defs.md#inputwhitelistrulecidrtypedef)\]
 
-## CreateInputSecurityGroupResponseResponseTypeDef
+## CreateInputSecurityGroupResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import CreateInputSecurityGroupResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import CreateInputSecurityGroupResponseTypeDef
 ```
 
 Required fields:
@@ -1184,10 +1184,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateMultiplexProgramRequestTypeDef
+## CreateMultiplexProgramRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import CreateMultiplexProgramRequestTypeDef
+from mypy_boto3_medialive.type_defs import CreateMultiplexProgramRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1198,10 +1198,10 @@ Required fields:
 - `ProgramName`: `str`
 - `RequestId`: `str`
 
-## CreateMultiplexProgramResponseResponseTypeDef
+## CreateMultiplexProgramResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import CreateMultiplexProgramResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import CreateMultiplexProgramResponseTypeDef
 ```
 
 Required fields:
@@ -1211,10 +1211,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateMultiplexRequestTypeDef
+## CreateMultiplexRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import CreateMultiplexRequestTypeDef
+from mypy_boto3_medialive.type_defs import CreateMultiplexRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1229,10 +1229,10 @@ Optional fields:
 
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateMultiplexResponseResponseTypeDef
+## CreateMultiplexResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import CreateMultiplexResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import CreateMultiplexResponseTypeDef
 ```
 
 Required fields:
@@ -1241,10 +1241,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePartnerInputRequestTypeDef
+## CreatePartnerInputRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import CreatePartnerInputRequestTypeDef
+from mypy_boto3_medialive.type_defs import CreatePartnerInputRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1256,10 +1256,10 @@ Optional fields:
 - `RequestId`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreatePartnerInputResponseResponseTypeDef
+## CreatePartnerInputResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import CreatePartnerInputResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import CreatePartnerInputResponseTypeDef
 ```
 
 Required fields:
@@ -1268,10 +1268,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTagsRequestTypeDef
+## CreateTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import CreateTagsRequestTypeDef
+from mypy_boto3_medialive.type_defs import CreateTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1282,20 +1282,20 @@ Optional fields:
 
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## DeleteChannelRequestTypeDef
+## DeleteChannelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DeleteChannelRequestTypeDef
+from mypy_boto3_medialive.type_defs import DeleteChannelRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ChannelId`: `str`
 
-## DeleteChannelResponseResponseTypeDef
+## DeleteChannelResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DeleteChannelResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import DeleteChannelResponseTypeDef
 ```
 
 Required fields:
@@ -1328,30 +1328,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteInputRequestTypeDef
+## DeleteInputRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DeleteInputRequestTypeDef
+from mypy_boto3_medialive.type_defs import DeleteInputRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `InputId`: `str`
 
-## DeleteInputSecurityGroupRequestTypeDef
+## DeleteInputSecurityGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DeleteInputSecurityGroupRequestTypeDef
+from mypy_boto3_medialive.type_defs import DeleteInputSecurityGroupRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `InputSecurityGroupId`: `str`
 
-## DeleteMultiplexProgramRequestTypeDef
+## DeleteMultiplexProgramRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DeleteMultiplexProgramRequestTypeDef
+from mypy_boto3_medialive.type_defs import DeleteMultiplexProgramRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1359,10 +1359,10 @@ Required fields:
 - `MultiplexId`: `str`
 - `ProgramName`: `str`
 
-## DeleteMultiplexProgramResponseResponseTypeDef
+## DeleteMultiplexProgramResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DeleteMultiplexProgramResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import DeleteMultiplexProgramResponseTypeDef
 ```
 
 Required fields:
@@ -1378,20 +1378,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteMultiplexRequestTypeDef
+## DeleteMultiplexRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DeleteMultiplexRequestTypeDef
+from mypy_boto3_medialive.type_defs import DeleteMultiplexRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `MultiplexId`: `str`
 
-## DeleteMultiplexResponseResponseTypeDef
+## DeleteMultiplexResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DeleteMultiplexResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import DeleteMultiplexResponseTypeDef
 ```
 
 Required fields:
@@ -1411,20 +1411,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteReservationRequestTypeDef
+## DeleteReservationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DeleteReservationRequestTypeDef
+from mypy_boto3_medialive.type_defs import DeleteReservationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ReservationId`: `str`
 
-## DeleteReservationResponseResponseTypeDef
+## DeleteReservationResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DeleteReservationResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import DeleteReservationResponseTypeDef
 ```
 
 Required fields:
@@ -1453,20 +1453,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteScheduleRequestTypeDef
+## DeleteScheduleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DeleteScheduleRequestTypeDef
+from mypy_boto3_medialive.type_defs import DeleteScheduleRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ChannelId`: `str`
 
-## DeleteTagsRequestTypeDef
+## DeleteTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DeleteTagsRequestTypeDef
+from mypy_boto3_medialive.type_defs import DeleteTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1474,20 +1474,20 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## DescribeChannelRequestTypeDef
+## DescribeChannelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DescribeChannelRequestTypeDef
+from mypy_boto3_medialive.type_defs import DescribeChannelRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ChannelId`: `str`
 
-## DescribeChannelResponseResponseTypeDef
+## DescribeChannelResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DescribeChannelResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import DescribeChannelResponseTypeDef
 ```
 
 Required fields:
@@ -1520,20 +1520,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInputDeviceRequestTypeDef
+## DescribeInputDeviceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DescribeInputDeviceRequestTypeDef
+from mypy_boto3_medialive.type_defs import DescribeInputDeviceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `InputDeviceId`: `str`
 
-## DescribeInputDeviceResponseResponseTypeDef
+## DescribeInputDeviceResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DescribeInputDeviceResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import DescribeInputDeviceResponseTypeDef
 ```
 
 Required fields:
@@ -1560,10 +1560,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInputDeviceThumbnailRequestTypeDef
+## DescribeInputDeviceThumbnailRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DescribeInputDeviceThumbnailRequestTypeDef
+from mypy_boto3_medialive.type_defs import DescribeInputDeviceThumbnailRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1572,10 +1572,10 @@ Required fields:
 - `Accept`: `Literal['image/jpeg']` (see
   [AcceptHeaderType](./literals.md#acceptheadertype))
 
-## DescribeInputDeviceThumbnailResponseResponseTypeDef
+## DescribeInputDeviceThumbnailResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DescribeInputDeviceThumbnailResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import DescribeInputDeviceThumbnailResponseTypeDef
 ```
 
 Required fields:
@@ -1589,20 +1589,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInputRequestTypeDef
+## DescribeInputRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DescribeInputRequestTypeDef
+from mypy_boto3_medialive.type_defs import DescribeInputRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `InputId`: `str`
 
-## DescribeInputResponseResponseTypeDef
+## DescribeInputResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DescribeInputResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import DescribeInputResponseTypeDef
 ```
 
 Required fields:
@@ -1629,20 +1629,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInputSecurityGroupRequestTypeDef
+## DescribeInputSecurityGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DescribeInputSecurityGroupRequestTypeDef
+from mypy_boto3_medialive.type_defs import DescribeInputSecurityGroupRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `InputSecurityGroupId`: `str`
 
-## DescribeInputSecurityGroupResponseResponseTypeDef
+## DescribeInputSecurityGroupResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DescribeInputSecurityGroupResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import DescribeInputSecurityGroupResponseTypeDef
 ```
 
 Required fields:
@@ -1658,10 +1658,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMultiplexProgramRequestTypeDef
+## DescribeMultiplexProgramRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DescribeMultiplexProgramRequestTypeDef
+from mypy_boto3_medialive.type_defs import DescribeMultiplexProgramRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1669,10 +1669,10 @@ Required fields:
 - `MultiplexId`: `str`
 - `ProgramName`: `str`
 
-## DescribeMultiplexProgramResponseResponseTypeDef
+## DescribeMultiplexProgramResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DescribeMultiplexProgramResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import DescribeMultiplexProgramResponseTypeDef
 ```
 
 Required fields:
@@ -1688,20 +1688,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMultiplexRequestTypeDef
+## DescribeMultiplexRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DescribeMultiplexRequestTypeDef
+from mypy_boto3_medialive.type_defs import DescribeMultiplexRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `MultiplexId`: `str`
 
-## DescribeMultiplexResponseResponseTypeDef
+## DescribeMultiplexResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DescribeMultiplexResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import DescribeMultiplexResponseTypeDef
 ```
 
 Required fields:
@@ -1721,20 +1721,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeOfferingRequestTypeDef
+## DescribeOfferingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DescribeOfferingRequestTypeDef
+from mypy_boto3_medialive.type_defs import DescribeOfferingRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `OfferingId`: `str`
 
-## DescribeOfferingResponseResponseTypeDef
+## DescribeOfferingResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DescribeOfferingResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import DescribeOfferingResponseTypeDef
 ```
 
 Required fields:
@@ -1756,20 +1756,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeReservationRequestTypeDef
+## DescribeReservationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DescribeReservationRequestTypeDef
+from mypy_boto3_medialive.type_defs import DescribeReservationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ReservationId`: `str`
 
-## DescribeReservationResponseResponseTypeDef
+## DescribeReservationResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DescribeReservationResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import DescribeReservationResponseTypeDef
 ```
 
 Required fields:
@@ -1798,10 +1798,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeScheduleRequestTypeDef
+## DescribeScheduleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DescribeScheduleRequestTypeDef
+from mypy_boto3_medialive.type_defs import DescribeScheduleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1813,10 +1813,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## DescribeScheduleResponseResponseTypeDef
+## DescribeScheduleResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import DescribeScheduleResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import DescribeScheduleResponseTypeDef
 ```
 
 Required fields:
@@ -2978,10 +2978,10 @@ Optional fields:
 - `StaticKeySettings`:
   [StaticKeySettingsTypeDef](./type_defs.md#statickeysettingstypedef)
 
-## ListChannelsRequestTypeDef
+## ListChannelsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import ListChannelsRequestTypeDef
+from mypy_boto3_medialive.type_defs import ListChannelsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2989,10 +2989,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListChannelsResponseResponseTypeDef
+## ListChannelsResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import ListChannelsResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import ListChannelsResponseTypeDef
 ```
 
 Required fields:
@@ -3003,10 +3003,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInputDeviceTransfersRequestTypeDef
+## ListInputDeviceTransfersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import ListInputDeviceTransfersRequestTypeDef
+from mypy_boto3_medialive.type_defs import ListInputDeviceTransfersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3018,10 +3018,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListInputDeviceTransfersResponseResponseTypeDef
+## ListInputDeviceTransfersResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import ListInputDeviceTransfersResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import ListInputDeviceTransfersResponseTypeDef
 ```
 
 Required fields:
@@ -3032,10 +3032,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInputDevicesRequestTypeDef
+## ListInputDevicesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import ListInputDevicesRequestTypeDef
+from mypy_boto3_medialive.type_defs import ListInputDevicesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3043,10 +3043,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListInputDevicesResponseResponseTypeDef
+## ListInputDevicesResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import ListInputDevicesResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import ListInputDevicesResponseTypeDef
 ```
 
 Required fields:
@@ -3057,10 +3057,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInputSecurityGroupsRequestTypeDef
+## ListInputSecurityGroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import ListInputSecurityGroupsRequestTypeDef
+from mypy_boto3_medialive.type_defs import ListInputSecurityGroupsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3068,10 +3068,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListInputSecurityGroupsResponseResponseTypeDef
+## ListInputSecurityGroupsResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import ListInputSecurityGroupsResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import ListInputSecurityGroupsResponseTypeDef
 ```
 
 Required fields:
@@ -3082,10 +3082,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInputsRequestTypeDef
+## ListInputsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import ListInputsRequestTypeDef
+from mypy_boto3_medialive.type_defs import ListInputsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3093,10 +3093,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListInputsResponseResponseTypeDef
+## ListInputsResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import ListInputsResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import ListInputsResponseTypeDef
 ```
 
 Required fields:
@@ -3106,10 +3106,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMultiplexProgramsRequestTypeDef
+## ListMultiplexProgramsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import ListMultiplexProgramsRequestTypeDef
+from mypy_boto3_medialive.type_defs import ListMultiplexProgramsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3121,10 +3121,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListMultiplexProgramsResponseResponseTypeDef
+## ListMultiplexProgramsResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import ListMultiplexProgramsResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import ListMultiplexProgramsResponseTypeDef
 ```
 
 Required fields:
@@ -3135,10 +3135,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMultiplexesRequestTypeDef
+## ListMultiplexesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import ListMultiplexesRequestTypeDef
+from mypy_boto3_medialive.type_defs import ListMultiplexesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3146,10 +3146,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListMultiplexesResponseResponseTypeDef
+## ListMultiplexesResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import ListMultiplexesResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import ListMultiplexesResponseTypeDef
 ```
 
 Required fields:
@@ -3160,10 +3160,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListOfferingsRequestTypeDef
+## ListOfferingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import ListOfferingsRequestTypeDef
+from mypy_boto3_medialive.type_defs import ListOfferingsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3181,10 +3181,10 @@ Optional fields:
 - `SpecialFeature`: `str`
 - `VideoQuality`: `str`
 
-## ListOfferingsResponseResponseTypeDef
+## ListOfferingsResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import ListOfferingsResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import ListOfferingsResponseTypeDef
 ```
 
 Required fields:
@@ -3194,10 +3194,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListReservationsRequestTypeDef
+## ListReservationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import ListReservationsRequestTypeDef
+from mypy_boto3_medialive.type_defs import ListReservationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3213,10 +3213,10 @@ Optional fields:
 - `SpecialFeature`: `str`
 - `VideoQuality`: `str`
 
-## ListReservationsResponseResponseTypeDef
+## ListReservationsResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import ListReservationsResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import ListReservationsResponseTypeDef
 ```
 
 Required fields:
@@ -3227,20 +3227,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_medialive.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -3975,10 +3975,10 @@ Required fields:
 
 - `PipelineId`: [PipelineIdType](./literals.md#pipelineidtype)
 
-## PurchaseOfferingRequestTypeDef
+## PurchaseOfferingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import PurchaseOfferingRequestTypeDef
+from mypy_boto3_medialive.type_defs import PurchaseOfferingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3993,10 +3993,10 @@ Optional fields:
 - `Start`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## PurchaseOfferingResponseResponseTypeDef
+## PurchaseOfferingResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import PurchaseOfferingResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import PurchaseOfferingResponseTypeDef
 ```
 
 Required fields:
@@ -4005,10 +4005,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RejectInputDeviceTransferRequestTypeDef
+## RejectInputDeviceTransferRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import RejectInputDeviceTransferRequestTypeDef
+from mypy_boto3_medialive.type_defs import RejectInputDeviceTransferRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4360,20 +4360,20 @@ Optional fields:
 
 - `AudioRenditionSets`: `str`
 
-## StartChannelRequestTypeDef
+## StartChannelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import StartChannelRequestTypeDef
+from mypy_boto3_medialive.type_defs import StartChannelRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ChannelId`: `str`
 
-## StartChannelResponseResponseTypeDef
+## StartChannelResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import StartChannelResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import StartChannelResponseTypeDef
 ```
 
 Required fields:
@@ -4406,20 +4406,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartMultiplexRequestTypeDef
+## StartMultiplexRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import StartMultiplexRequestTypeDef
+from mypy_boto3_medialive.type_defs import StartMultiplexRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `MultiplexId`: `str`
 
-## StartMultiplexResponseResponseTypeDef
+## StartMultiplexResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import StartMultiplexResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import StartMultiplexResponseTypeDef
 ```
 
 Required fields:
@@ -4497,20 +4497,20 @@ Optional fields:
 - `KeyProviderServer`:
   [InputLocationTypeDef](./type_defs.md#inputlocationtypedef)
 
-## StopChannelRequestTypeDef
+## StopChannelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import StopChannelRequestTypeDef
+from mypy_boto3_medialive.type_defs import StopChannelRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ChannelId`: `str`
 
-## StopChannelResponseResponseTypeDef
+## StopChannelResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import StopChannelResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import StopChannelResponseTypeDef
 ```
 
 Required fields:
@@ -4543,20 +4543,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopMultiplexRequestTypeDef
+## StopMultiplexRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import StopMultiplexRequestTypeDef
+from mypy_boto3_medialive.type_defs import StopMultiplexRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `MultiplexId`: `str`
 
-## StopMultiplexResponseResponseTypeDef
+## StopMultiplexResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import StopMultiplexResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import StopMultiplexResponseTypeDef
 ```
 
 Required fields:
@@ -4627,10 +4627,10 @@ Optional fields:
 
 - `SyncThreshold`: `int`
 
-## TransferInputDeviceRequestTypeDef
+## TransferInputDeviceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import TransferInputDeviceRequestTypeDef
+from mypy_boto3_medialive.type_defs import TransferInputDeviceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4711,10 +4711,10 @@ Optional fields:
 - `FecOutputSettings`:
   [FecOutputSettingsTypeDef](./type_defs.md#fecoutputsettingstypedef)
 
-## UpdateChannelClassRequestTypeDef
+## UpdateChannelClassRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import UpdateChannelClassRequestTypeDef
+from mypy_boto3_medialive.type_defs import UpdateChannelClassRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4727,10 +4727,10 @@ Optional fields:
 - `Destinations`:
   `List`\[[OutputDestinationTypeDef](./type_defs.md#outputdestinationtypedef)\]
 
-## UpdateChannelClassResponseResponseTypeDef
+## UpdateChannelClassResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import UpdateChannelClassResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import UpdateChannelClassResponseTypeDef
 ```
 
 Required fields:
@@ -4739,10 +4739,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateChannelRequestTypeDef
+## UpdateChannelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import UpdateChannelRequestTypeDef
+from mypy_boto3_medialive.type_defs import UpdateChannelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4765,10 +4765,10 @@ Optional fields:
 - `Name`: `str`
 - `RoleArn`: `str`
 
-## UpdateChannelResponseResponseTypeDef
+## UpdateChannelResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import UpdateChannelResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import UpdateChannelResponseTypeDef
 ```
 
 Required fields:
@@ -4777,10 +4777,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateInputDeviceRequestTypeDef
+## UpdateInputDeviceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import UpdateInputDeviceRequestTypeDef
+from mypy_boto3_medialive.type_defs import UpdateInputDeviceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4795,10 +4795,10 @@ Optional fields:
 - `UhdDeviceSettings`:
   [InputDeviceConfigurableSettingsTypeDef](./type_defs.md#inputdeviceconfigurablesettingstypedef)
 
-## UpdateInputDeviceResponseResponseTypeDef
+## UpdateInputDeviceResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import UpdateInputDeviceResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import UpdateInputDeviceResponseTypeDef
 ```
 
 Required fields:
@@ -4825,10 +4825,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateInputRequestTypeDef
+## UpdateInputRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import UpdateInputRequestTypeDef
+from mypy_boto3_medialive.type_defs import UpdateInputRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4849,10 +4849,10 @@ Optional fields:
 - `Sources`:
   `List`\[[InputSourceRequestTypeDef](./type_defs.md#inputsourcerequesttypedef)\]
 
-## UpdateInputResponseResponseTypeDef
+## UpdateInputResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import UpdateInputResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import UpdateInputResponseTypeDef
 ```
 
 Required fields:
@@ -4861,10 +4861,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateInputSecurityGroupRequestTypeDef
+## UpdateInputSecurityGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import UpdateInputSecurityGroupRequestTypeDef
+from mypy_boto3_medialive.type_defs import UpdateInputSecurityGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4877,10 +4877,10 @@ Optional fields:
 - `WhitelistRules`:
   `List`\[[InputWhitelistRuleCidrTypeDef](./type_defs.md#inputwhitelistrulecidrtypedef)\]
 
-## UpdateInputSecurityGroupResponseResponseTypeDef
+## UpdateInputSecurityGroupResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import UpdateInputSecurityGroupResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import UpdateInputSecurityGroupResponseTypeDef
 ```
 
 Required fields:
@@ -4890,10 +4890,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateMultiplexProgramRequestTypeDef
+## UpdateMultiplexProgramRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import UpdateMultiplexProgramRequestTypeDef
+from mypy_boto3_medialive.type_defs import UpdateMultiplexProgramRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4906,10 +4906,10 @@ Optional fields:
 - `MultiplexProgramSettings`:
   [MultiplexProgramSettingsTypeDef](./type_defs.md#multiplexprogramsettingstypedef)
 
-## UpdateMultiplexProgramResponseResponseTypeDef
+## UpdateMultiplexProgramResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import UpdateMultiplexProgramResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import UpdateMultiplexProgramResponseTypeDef
 ```
 
 Required fields:
@@ -4919,10 +4919,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateMultiplexRequestTypeDef
+## UpdateMultiplexRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import UpdateMultiplexRequestTypeDef
+from mypy_boto3_medialive.type_defs import UpdateMultiplexRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4935,10 +4935,10 @@ Optional fields:
   [MultiplexSettingsTypeDef](./type_defs.md#multiplexsettingstypedef)
 - `Name`: `str`
 
-## UpdateMultiplexResponseResponseTypeDef
+## UpdateMultiplexResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import UpdateMultiplexResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import UpdateMultiplexResponseTypeDef
 ```
 
 Required fields:
@@ -4947,10 +4947,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateReservationRequestTypeDef
+## UpdateReservationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import UpdateReservationRequestTypeDef
+from mypy_boto3_medialive.type_defs import UpdateReservationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4961,10 +4961,10 @@ Optional fields:
 
 - `Name`: `str`
 
-## UpdateReservationResponseResponseTypeDef
+## UpdateReservationResponseTypeDef
 
 ```python
-from mypy_boto3_medialive.type_defs import UpdateReservationResponseResponseTypeDef
+from mypy_boto3_medialive.type_defs import UpdateReservationResponseTypeDef
 ```
 
 Required fields:

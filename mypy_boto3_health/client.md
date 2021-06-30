@@ -11,6 +11,7 @@ type annotations stubs module
   - [HealthClient](#healthclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [describe_affected_accounts_for_organization](#describe_affected_accounts_for_organization)
     - [describe_affected_entities](#describe_affected_entities)
@@ -65,6 +66,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+HealthClient exceptions.
+
+Type annotations for `boto3.client("health").exceptions` method.
+
+Boto3 documentation:
+[Health.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -92,7 +104,7 @@ Boto3 documentation:
 [Health.Client.describe_affected_accounts_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_accounts_for_organization)
 
 Arguments mapping described in
-[DescribeAffectedAccountsForOrganizationRequestTypeDef](./type_defs.md#describeaffectedaccountsfororganizationrequesttypedef).
+[DescribeAffectedAccountsForOrganizationRequestRequestTypeDef](./type_defs.md#describeaffectedaccountsfororganizationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -101,7 +113,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeAffectedAccountsForOrganizationResponseResponseTypeDef](./type_defs.md#describeaffectedaccountsfororganizationresponseresponsetypedef).
+[DescribeAffectedAccountsForOrganizationResponseTypeDef](./type_defs.md#describeaffectedaccountsfororganizationresponsetypedef).
 
 ### describe_affected_entities
 
@@ -115,7 +127,7 @@ Boto3 documentation:
 [Health.Client.describe_affected_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_entities)
 
 Arguments mapping described in
-[DescribeAffectedEntitiesRequestTypeDef](./type_defs.md#describeaffectedentitiesrequesttypedef).
+[DescribeAffectedEntitiesRequestRequestTypeDef](./type_defs.md#describeaffectedentitiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -126,7 +138,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeAffectedEntitiesResponseResponseTypeDef](./type_defs.md#describeaffectedentitiesresponseresponsetypedef).
+[DescribeAffectedEntitiesResponseTypeDef](./type_defs.md#describeaffectedentitiesresponsetypedef).
 
 ### describe_affected_entities_for_organization
 
@@ -141,7 +153,7 @@ Boto3 documentation:
 [Health.Client.describe_affected_entities_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_entities_for_organization)
 
 Arguments mapping described in
-[DescribeAffectedEntitiesForOrganizationRequestTypeDef](./type_defs.md#describeaffectedentitiesfororganizationrequesttypedef).
+[DescribeAffectedEntitiesForOrganizationRequestRequestTypeDef](./type_defs.md#describeaffectedentitiesfororganizationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -153,7 +165,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeAffectedEntitiesForOrganizationResponseResponseTypeDef](./type_defs.md#describeaffectedentitiesfororganizationresponseresponsetypedef).
+[DescribeAffectedEntitiesForOrganizationResponseTypeDef](./type_defs.md#describeaffectedentitiesfororganizationresponsetypedef).
 
 ### describe_entity_aggregates
 
@@ -167,14 +179,14 @@ Boto3 documentation:
 [Health.Client.describe_entity_aggregates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_entity_aggregates)
 
 Arguments mapping described in
-[DescribeEntityAggregatesRequestTypeDef](./type_defs.md#describeentityaggregatesrequesttypedef).
+[DescribeEntityAggregatesRequestRequestTypeDef](./type_defs.md#describeentityaggregatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `eventArns`: `List`\[`str`\]
 
 Returns
-[DescribeEntityAggregatesResponseResponseTypeDef](./type_defs.md#describeentityaggregatesresponseresponsetypedef).
+[DescribeEntityAggregatesResponseTypeDef](./type_defs.md#describeentityaggregatesresponsetypedef).
 
 ### describe_event_aggregates
 
@@ -187,7 +199,7 @@ Boto3 documentation:
 [Health.Client.describe_event_aggregates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_aggregates)
 
 Arguments mapping described in
-[DescribeEventAggregatesRequestTypeDef](./type_defs.md#describeeventaggregatesrequesttypedef).
+[DescribeEventAggregatesRequestRequestTypeDef](./type_defs.md#describeeventaggregatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -199,7 +211,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeEventAggregatesResponseResponseTypeDef](./type_defs.md#describeeventaggregatesresponseresponsetypedef).
+[DescribeEventAggregatesResponseTypeDef](./type_defs.md#describeeventaggregatesresponsetypedef).
 
 ### describe_event_details
 
@@ -211,7 +223,7 @@ Boto3 documentation:
 [Health.Client.describe_event_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_details)
 
 Arguments mapping described in
-[DescribeEventDetailsRequestTypeDef](./type_defs.md#describeeventdetailsrequesttypedef).
+[DescribeEventDetailsRequestRequestTypeDef](./type_defs.md#describeeventdetailsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -219,7 +231,7 @@ Keyword-only arguments:
 - `locale`: `str`
 
 Returns
-[DescribeEventDetailsResponseResponseTypeDef](./type_defs.md#describeeventdetailsresponseresponsetypedef).
+[DescribeEventDetailsResponseTypeDef](./type_defs.md#describeeventdetailsresponsetypedef).
 
 ### describe_event_details_for_organization
 
@@ -233,7 +245,7 @@ Boto3 documentation:
 [Health.Client.describe_event_details_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_details_for_organization)
 
 Arguments mapping described in
-[DescribeEventDetailsForOrganizationRequestTypeDef](./type_defs.md#describeeventdetailsfororganizationrequesttypedef).
+[DescribeEventDetailsForOrganizationRequestRequestTypeDef](./type_defs.md#describeeventdetailsfororganizationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -243,7 +255,7 @@ Keyword-only arguments:
 - `locale`: `str`
 
 Returns
-[DescribeEventDetailsForOrganizationResponseResponseTypeDef](./type_defs.md#describeeventdetailsfororganizationresponseresponsetypedef).
+[DescribeEventDetailsForOrganizationResponseTypeDef](./type_defs.md#describeeventdetailsfororganizationresponsetypedef).
 
 ### describe_event_types
 
@@ -255,7 +267,7 @@ Boto3 documentation:
 [Health.Client.describe_event_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_types)
 
 Arguments mapping described in
-[DescribeEventTypesRequestTypeDef](./type_defs.md#describeeventtypesrequesttypedef).
+[DescribeEventTypesRequestRequestTypeDef](./type_defs.md#describeeventtypesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -265,7 +277,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeEventTypesResponseResponseTypeDef](./type_defs.md#describeeventtypesresponseresponsetypedef).
+[DescribeEventTypesResponseTypeDef](./type_defs.md#describeeventtypesresponsetypedef).
 
 ### describe_events
 
@@ -277,7 +289,7 @@ Boto3 documentation:
 [Health.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_events)
 
 Arguments mapping described in
-[DescribeEventsRequestTypeDef](./type_defs.md#describeeventsrequesttypedef).
+[DescribeEventsRequestRequestTypeDef](./type_defs.md#describeeventsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -287,7 +299,7 @@ Keyword-only arguments:
 - `locale`: `str`
 
 Returns
-[DescribeEventsResponseResponseTypeDef](./type_defs.md#describeeventsresponseresponsetypedef).
+[DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef).
 
 ### describe_events_for_organization
 
@@ -300,7 +312,7 @@ Boto3 documentation:
 [Health.Client.describe_events_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_events_for_organization)
 
 Arguments mapping described in
-[DescribeEventsForOrganizationRequestTypeDef](./type_defs.md#describeeventsfororganizationrequesttypedef).
+[DescribeEventsForOrganizationRequestRequestTypeDef](./type_defs.md#describeeventsfororganizationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -311,7 +323,7 @@ Keyword-only arguments:
 - `locale`: `str`
 
 Returns
-[DescribeEventsForOrganizationResponseResponseTypeDef](./type_defs.md#describeeventsfororganizationresponseresponsetypedef).
+[DescribeEventsForOrganizationResponseTypeDef](./type_defs.md#describeeventsfororganizationresponsetypedef).
 
 ### describe_health_service_status_for_organization
 
@@ -326,7 +338,7 @@ Boto3 documentation:
 [Health.Client.describe_health_service_status_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_health_service_status_for_organization)
 
 Returns
-[DescribeHealthServiceStatusForOrganizationResponseResponseTypeDef](./type_defs.md#describehealthservicestatusfororganizationresponseresponsetypedef).
+[DescribeHealthServiceStatusForOrganizationResponseTypeDef](./type_defs.md#describehealthservicestatusfororganizationresponsetypedef).
 
 ### disable_health_service_access_for_organization
 

@@ -10,45 +10,45 @@ type annotations stubs module
 - [Typed dictionaries for boto3 Glue module](#typed-dictionaries-for-boto3-glue-module)
   - [ActionTypeDef](#actiontypedef)
   - [BackfillErrorTypeDef](#backfillerrortypedef)
-  - [BatchCreatePartitionRequestTypeDef](#batchcreatepartitionrequesttypedef)
-  - [BatchCreatePartitionResponseResponseTypeDef](#batchcreatepartitionresponseresponsetypedef)
-  - [BatchDeleteConnectionRequestTypeDef](#batchdeleteconnectionrequesttypedef)
-  - [BatchDeleteConnectionResponseResponseTypeDef](#batchdeleteconnectionresponseresponsetypedef)
-  - [BatchDeletePartitionRequestTypeDef](#batchdeletepartitionrequesttypedef)
-  - [BatchDeletePartitionResponseResponseTypeDef](#batchdeletepartitionresponseresponsetypedef)
-  - [BatchDeleteTableRequestTypeDef](#batchdeletetablerequesttypedef)
-  - [BatchDeleteTableResponseResponseTypeDef](#batchdeletetableresponseresponsetypedef)
-  - [BatchDeleteTableVersionRequestTypeDef](#batchdeletetableversionrequesttypedef)
-  - [BatchDeleteTableVersionResponseResponseTypeDef](#batchdeletetableversionresponseresponsetypedef)
-  - [BatchGetCrawlersRequestTypeDef](#batchgetcrawlersrequesttypedef)
-  - [BatchGetCrawlersResponseResponseTypeDef](#batchgetcrawlersresponseresponsetypedef)
-  - [BatchGetDevEndpointsRequestTypeDef](#batchgetdevendpointsrequesttypedef)
-  - [BatchGetDevEndpointsResponseResponseTypeDef](#batchgetdevendpointsresponseresponsetypedef)
-  - [BatchGetJobsRequestTypeDef](#batchgetjobsrequesttypedef)
-  - [BatchGetJobsResponseResponseTypeDef](#batchgetjobsresponseresponsetypedef)
-  - [BatchGetPartitionRequestTypeDef](#batchgetpartitionrequesttypedef)
-  - [BatchGetPartitionResponseResponseTypeDef](#batchgetpartitionresponseresponsetypedef)
-  - [BatchGetTriggersRequestTypeDef](#batchgettriggersrequesttypedef)
-  - [BatchGetTriggersResponseResponseTypeDef](#batchgettriggersresponseresponsetypedef)
-  - [BatchGetWorkflowsRequestTypeDef](#batchgetworkflowsrequesttypedef)
-  - [BatchGetWorkflowsResponseResponseTypeDef](#batchgetworkflowsresponseresponsetypedef)
+  - [BatchCreatePartitionRequestRequestTypeDef](#batchcreatepartitionrequestrequesttypedef)
+  - [BatchCreatePartitionResponseTypeDef](#batchcreatepartitionresponsetypedef)
+  - [BatchDeleteConnectionRequestRequestTypeDef](#batchdeleteconnectionrequestrequesttypedef)
+  - [BatchDeleteConnectionResponseTypeDef](#batchdeleteconnectionresponsetypedef)
+  - [BatchDeletePartitionRequestRequestTypeDef](#batchdeletepartitionrequestrequesttypedef)
+  - [BatchDeletePartitionResponseTypeDef](#batchdeletepartitionresponsetypedef)
+  - [BatchDeleteTableRequestRequestTypeDef](#batchdeletetablerequestrequesttypedef)
+  - [BatchDeleteTableResponseTypeDef](#batchdeletetableresponsetypedef)
+  - [BatchDeleteTableVersionRequestRequestTypeDef](#batchdeletetableversionrequestrequesttypedef)
+  - [BatchDeleteTableVersionResponseTypeDef](#batchdeletetableversionresponsetypedef)
+  - [BatchGetCrawlersRequestRequestTypeDef](#batchgetcrawlersrequestrequesttypedef)
+  - [BatchGetCrawlersResponseTypeDef](#batchgetcrawlersresponsetypedef)
+  - [BatchGetDevEndpointsRequestRequestTypeDef](#batchgetdevendpointsrequestrequesttypedef)
+  - [BatchGetDevEndpointsResponseTypeDef](#batchgetdevendpointsresponsetypedef)
+  - [BatchGetJobsRequestRequestTypeDef](#batchgetjobsrequestrequesttypedef)
+  - [BatchGetJobsResponseTypeDef](#batchgetjobsresponsetypedef)
+  - [BatchGetPartitionRequestRequestTypeDef](#batchgetpartitionrequestrequesttypedef)
+  - [BatchGetPartitionResponseTypeDef](#batchgetpartitionresponsetypedef)
+  - [BatchGetTriggersRequestRequestTypeDef](#batchgettriggersrequestrequesttypedef)
+  - [BatchGetTriggersResponseTypeDef](#batchgettriggersresponsetypedef)
+  - [BatchGetWorkflowsRequestRequestTypeDef](#batchgetworkflowsrequestrequesttypedef)
+  - [BatchGetWorkflowsResponseTypeDef](#batchgetworkflowsresponsetypedef)
   - [BatchStopJobRunErrorTypeDef](#batchstopjobrunerrortypedef)
-  - [BatchStopJobRunRequestTypeDef](#batchstopjobrunrequesttypedef)
-  - [BatchStopJobRunResponseResponseTypeDef](#batchstopjobrunresponseresponsetypedef)
+  - [BatchStopJobRunRequestRequestTypeDef](#batchstopjobrunrequestrequesttypedef)
+  - [BatchStopJobRunResponseTypeDef](#batchstopjobrunresponsetypedef)
   - [BatchStopJobRunSuccessfulSubmissionTypeDef](#batchstopjobrunsuccessfulsubmissiontypedef)
   - [BatchUpdatePartitionFailureEntryTypeDef](#batchupdatepartitionfailureentrytypedef)
   - [BatchUpdatePartitionRequestEntryTypeDef](#batchupdatepartitionrequestentrytypedef)
-  - [BatchUpdatePartitionRequestTypeDef](#batchupdatepartitionrequesttypedef)
-  - [BatchUpdatePartitionResponseResponseTypeDef](#batchupdatepartitionresponseresponsetypedef)
+  - [BatchUpdatePartitionRequestRequestTypeDef](#batchupdatepartitionrequestrequesttypedef)
+  - [BatchUpdatePartitionResponseTypeDef](#batchupdatepartitionresponsetypedef)
   - [BinaryColumnStatisticsDataTypeDef](#binarycolumnstatisticsdatatypedef)
   - [BooleanColumnStatisticsDataTypeDef](#booleancolumnstatisticsdatatypedef)
-  - [CancelMLTaskRunRequestTypeDef](#cancelmltaskrunrequesttypedef)
-  - [CancelMLTaskRunResponseResponseTypeDef](#cancelmltaskrunresponseresponsetypedef)
+  - [CancelMLTaskRunRequestRequestTypeDef](#cancelmltaskrunrequestrequesttypedef)
+  - [CancelMLTaskRunResponseTypeDef](#cancelmltaskrunresponsetypedef)
   - [CatalogEntryTypeDef](#catalogentrytypedef)
   - [CatalogImportStatusTypeDef](#catalogimportstatustypedef)
   - [CatalogTargetTypeDef](#catalogtargettypedef)
-  - [CheckSchemaVersionValidityInputTypeDef](#checkschemaversionvalidityinputtypedef)
-  - [CheckSchemaVersionValidityResponseResponseTypeDef](#checkschemaversionvalidityresponseresponsetypedef)
+  - [CheckSchemaVersionValidityInputRequestTypeDef](#checkschemaversionvalidityinputrequesttypedef)
+  - [CheckSchemaVersionValidityResponseTypeDef](#checkschemaversionvalidityresponsetypedef)
   - [ClassifierTypeDef](#classifiertypedef)
   - [CloudWatchEncryptionTypeDef](#cloudwatchencryptiontypedef)
   - [CodeGenEdgeTypeDef](#codegenedgetypedef)
@@ -71,35 +71,35 @@ type annotations stubs module
   - [CrawlerNodeDetailsTypeDef](#crawlernodedetailstypedef)
   - [CrawlerTargetsTypeDef](#crawlertargetstypedef)
   - [CrawlerTypeDef](#crawlertypedef)
-  - [CreateClassifierRequestTypeDef](#createclassifierrequesttypedef)
-  - [CreateConnectionRequestTypeDef](#createconnectionrequesttypedef)
-  - [CreateCrawlerRequestTypeDef](#createcrawlerrequesttypedef)
+  - [CreateClassifierRequestRequestTypeDef](#createclassifierrequestrequesttypedef)
+  - [CreateConnectionRequestRequestTypeDef](#createconnectionrequestrequesttypedef)
+  - [CreateCrawlerRequestRequestTypeDef](#createcrawlerrequestrequesttypedef)
   - [CreateCsvClassifierRequestTypeDef](#createcsvclassifierrequesttypedef)
-  - [CreateDatabaseRequestTypeDef](#createdatabaserequesttypedef)
-  - [CreateDevEndpointRequestTypeDef](#createdevendpointrequesttypedef)
-  - [CreateDevEndpointResponseResponseTypeDef](#createdevendpointresponseresponsetypedef)
+  - [CreateDatabaseRequestRequestTypeDef](#createdatabaserequestrequesttypedef)
+  - [CreateDevEndpointRequestRequestTypeDef](#createdevendpointrequestrequesttypedef)
+  - [CreateDevEndpointResponseTypeDef](#createdevendpointresponsetypedef)
   - [CreateGrokClassifierRequestTypeDef](#creategrokclassifierrequesttypedef)
-  - [CreateJobRequestTypeDef](#createjobrequesttypedef)
-  - [CreateJobResponseResponseTypeDef](#createjobresponseresponsetypedef)
+  - [CreateJobRequestRequestTypeDef](#createjobrequestrequesttypedef)
+  - [CreateJobResponseTypeDef](#createjobresponsetypedef)
   - [CreateJsonClassifierRequestTypeDef](#createjsonclassifierrequesttypedef)
-  - [CreateMLTransformRequestTypeDef](#createmltransformrequesttypedef)
-  - [CreateMLTransformResponseResponseTypeDef](#createmltransformresponseresponsetypedef)
-  - [CreatePartitionIndexRequestTypeDef](#createpartitionindexrequesttypedef)
-  - [CreatePartitionRequestTypeDef](#createpartitionrequesttypedef)
-  - [CreateRegistryInputTypeDef](#createregistryinputtypedef)
-  - [CreateRegistryResponseResponseTypeDef](#createregistryresponseresponsetypedef)
-  - [CreateSchemaInputTypeDef](#createschemainputtypedef)
-  - [CreateSchemaResponseResponseTypeDef](#createschemaresponseresponsetypedef)
-  - [CreateScriptRequestTypeDef](#createscriptrequesttypedef)
-  - [CreateScriptResponseResponseTypeDef](#createscriptresponseresponsetypedef)
-  - [CreateSecurityConfigurationRequestTypeDef](#createsecurityconfigurationrequesttypedef)
-  - [CreateSecurityConfigurationResponseResponseTypeDef](#createsecurityconfigurationresponseresponsetypedef)
-  - [CreateTableRequestTypeDef](#createtablerequesttypedef)
-  - [CreateTriggerRequestTypeDef](#createtriggerrequesttypedef)
-  - [CreateTriggerResponseResponseTypeDef](#createtriggerresponseresponsetypedef)
-  - [CreateUserDefinedFunctionRequestTypeDef](#createuserdefinedfunctionrequesttypedef)
-  - [CreateWorkflowRequestTypeDef](#createworkflowrequesttypedef)
-  - [CreateWorkflowResponseResponseTypeDef](#createworkflowresponseresponsetypedef)
+  - [CreateMLTransformRequestRequestTypeDef](#createmltransformrequestrequesttypedef)
+  - [CreateMLTransformResponseTypeDef](#createmltransformresponsetypedef)
+  - [CreatePartitionIndexRequestRequestTypeDef](#createpartitionindexrequestrequesttypedef)
+  - [CreatePartitionRequestRequestTypeDef](#createpartitionrequestrequesttypedef)
+  - [CreateRegistryInputRequestTypeDef](#createregistryinputrequesttypedef)
+  - [CreateRegistryResponseTypeDef](#createregistryresponsetypedef)
+  - [CreateSchemaInputRequestTypeDef](#createschemainputrequesttypedef)
+  - [CreateSchemaResponseTypeDef](#createschemaresponsetypedef)
+  - [CreateScriptRequestRequestTypeDef](#createscriptrequestrequesttypedef)
+  - [CreateScriptResponseTypeDef](#createscriptresponsetypedef)
+  - [CreateSecurityConfigurationRequestRequestTypeDef](#createsecurityconfigurationrequestrequesttypedef)
+  - [CreateSecurityConfigurationResponseTypeDef](#createsecurityconfigurationresponsetypedef)
+  - [CreateTableRequestRequestTypeDef](#createtablerequestrequesttypedef)
+  - [CreateTriggerRequestRequestTypeDef](#createtriggerrequestrequesttypedef)
+  - [CreateTriggerResponseTypeDef](#createtriggerresponsetypedef)
+  - [CreateUserDefinedFunctionRequestRequestTypeDef](#createuserdefinedfunctionrequestrequesttypedef)
+  - [CreateWorkflowRequestRequestTypeDef](#createworkflowrequestrequesttypedef)
+  - [CreateWorkflowResponseTypeDef](#createworkflowresponsetypedef)
   - [CreateXMLClassifierRequestTypeDef](#createxmlclassifierrequesttypedef)
   - [CsvClassifierTypeDef](#csvclassifiertypedef)
   - [DataCatalogEncryptionSettingsTypeDef](#datacatalogencryptionsettingstypedef)
@@ -110,34 +110,34 @@ type annotations stubs module
   - [DateColumnStatisticsDataTypeDef](#datecolumnstatisticsdatatypedef)
   - [DecimalColumnStatisticsDataTypeDef](#decimalcolumnstatisticsdatatypedef)
   - [DecimalNumberTypeDef](#decimalnumbertypedef)
-  - [DeleteClassifierRequestTypeDef](#deleteclassifierrequesttypedef)
-  - [DeleteColumnStatisticsForPartitionRequestTypeDef](#deletecolumnstatisticsforpartitionrequesttypedef)
-  - [DeleteColumnStatisticsForTableRequestTypeDef](#deletecolumnstatisticsfortablerequesttypedef)
-  - [DeleteConnectionRequestTypeDef](#deleteconnectionrequesttypedef)
-  - [DeleteCrawlerRequestTypeDef](#deletecrawlerrequesttypedef)
-  - [DeleteDatabaseRequestTypeDef](#deletedatabaserequesttypedef)
-  - [DeleteDevEndpointRequestTypeDef](#deletedevendpointrequesttypedef)
-  - [DeleteJobRequestTypeDef](#deletejobrequesttypedef)
-  - [DeleteJobResponseResponseTypeDef](#deletejobresponseresponsetypedef)
-  - [DeleteMLTransformRequestTypeDef](#deletemltransformrequesttypedef)
-  - [DeleteMLTransformResponseResponseTypeDef](#deletemltransformresponseresponsetypedef)
-  - [DeletePartitionIndexRequestTypeDef](#deletepartitionindexrequesttypedef)
-  - [DeletePartitionRequestTypeDef](#deletepartitionrequesttypedef)
-  - [DeleteRegistryInputTypeDef](#deleteregistryinputtypedef)
-  - [DeleteRegistryResponseResponseTypeDef](#deleteregistryresponseresponsetypedef)
-  - [DeleteResourcePolicyRequestTypeDef](#deleteresourcepolicyrequesttypedef)
-  - [DeleteSchemaInputTypeDef](#deleteschemainputtypedef)
-  - [DeleteSchemaResponseResponseTypeDef](#deleteschemaresponseresponsetypedef)
-  - [DeleteSchemaVersionsInputTypeDef](#deleteschemaversionsinputtypedef)
-  - [DeleteSchemaVersionsResponseResponseTypeDef](#deleteschemaversionsresponseresponsetypedef)
-  - [DeleteSecurityConfigurationRequestTypeDef](#deletesecurityconfigurationrequesttypedef)
-  - [DeleteTableRequestTypeDef](#deletetablerequesttypedef)
-  - [DeleteTableVersionRequestTypeDef](#deletetableversionrequesttypedef)
-  - [DeleteTriggerRequestTypeDef](#deletetriggerrequesttypedef)
-  - [DeleteTriggerResponseResponseTypeDef](#deletetriggerresponseresponsetypedef)
-  - [DeleteUserDefinedFunctionRequestTypeDef](#deleteuserdefinedfunctionrequesttypedef)
-  - [DeleteWorkflowRequestTypeDef](#deleteworkflowrequesttypedef)
-  - [DeleteWorkflowResponseResponseTypeDef](#deleteworkflowresponseresponsetypedef)
+  - [DeleteClassifierRequestRequestTypeDef](#deleteclassifierrequestrequesttypedef)
+  - [DeleteColumnStatisticsForPartitionRequestRequestTypeDef](#deletecolumnstatisticsforpartitionrequestrequesttypedef)
+  - [DeleteColumnStatisticsForTableRequestRequestTypeDef](#deletecolumnstatisticsfortablerequestrequesttypedef)
+  - [DeleteConnectionRequestRequestTypeDef](#deleteconnectionrequestrequesttypedef)
+  - [DeleteCrawlerRequestRequestTypeDef](#deletecrawlerrequestrequesttypedef)
+  - [DeleteDatabaseRequestRequestTypeDef](#deletedatabaserequestrequesttypedef)
+  - [DeleteDevEndpointRequestRequestTypeDef](#deletedevendpointrequestrequesttypedef)
+  - [DeleteJobRequestRequestTypeDef](#deletejobrequestrequesttypedef)
+  - [DeleteJobResponseTypeDef](#deletejobresponsetypedef)
+  - [DeleteMLTransformRequestRequestTypeDef](#deletemltransformrequestrequesttypedef)
+  - [DeleteMLTransformResponseTypeDef](#deletemltransformresponsetypedef)
+  - [DeletePartitionIndexRequestRequestTypeDef](#deletepartitionindexrequestrequesttypedef)
+  - [DeletePartitionRequestRequestTypeDef](#deletepartitionrequestrequesttypedef)
+  - [DeleteRegistryInputRequestTypeDef](#deleteregistryinputrequesttypedef)
+  - [DeleteRegistryResponseTypeDef](#deleteregistryresponsetypedef)
+  - [DeleteResourcePolicyRequestRequestTypeDef](#deleteresourcepolicyrequestrequesttypedef)
+  - [DeleteSchemaInputRequestTypeDef](#deleteschemainputrequesttypedef)
+  - [DeleteSchemaResponseTypeDef](#deleteschemaresponsetypedef)
+  - [DeleteSchemaVersionsInputRequestTypeDef](#deleteschemaversionsinputrequesttypedef)
+  - [DeleteSchemaVersionsResponseTypeDef](#deleteschemaversionsresponsetypedef)
+  - [DeleteSecurityConfigurationRequestRequestTypeDef](#deletesecurityconfigurationrequestrequesttypedef)
+  - [DeleteTableRequestRequestTypeDef](#deletetablerequestrequesttypedef)
+  - [DeleteTableVersionRequestRequestTypeDef](#deletetableversionrequestrequesttypedef)
+  - [DeleteTriggerRequestRequestTypeDef](#deletetriggerrequestrequesttypedef)
+  - [DeleteTriggerResponseTypeDef](#deletetriggerresponsetypedef)
+  - [DeleteUserDefinedFunctionRequestRequestTypeDef](#deleteuserdefinedfunctionrequestrequesttypedef)
+  - [DeleteWorkflowRequestRequestTypeDef](#deleteworkflowrequestrequesttypedef)
+  - [DeleteWorkflowResponseTypeDef](#deleteworkflowresponsetypedef)
   - [DevEndpointCustomLibrariesTypeDef](#devendpointcustomlibrariestypedef)
   - [DevEndpointTypeDef](#devendpointtypedef)
   - [DoubleColumnStatisticsDataTypeDef](#doublecolumnstatisticsdatatypedef)
@@ -153,115 +153,115 @@ type annotations stubs module
   - [FindMatchesMetricsTypeDef](#findmatchesmetricstypedef)
   - [FindMatchesParametersTypeDef](#findmatchesparameterstypedef)
   - [FindMatchesTaskRunPropertiesTypeDef](#findmatchestaskrunpropertiestypedef)
-  - [GetCatalogImportStatusRequestTypeDef](#getcatalogimportstatusrequesttypedef)
-  - [GetCatalogImportStatusResponseResponseTypeDef](#getcatalogimportstatusresponseresponsetypedef)
-  - [GetClassifierRequestTypeDef](#getclassifierrequesttypedef)
-  - [GetClassifierResponseResponseTypeDef](#getclassifierresponseresponsetypedef)
-  - [GetClassifiersRequestTypeDef](#getclassifiersrequesttypedef)
-  - [GetClassifiersResponseResponseTypeDef](#getclassifiersresponseresponsetypedef)
-  - [GetColumnStatisticsForPartitionRequestTypeDef](#getcolumnstatisticsforpartitionrequesttypedef)
-  - [GetColumnStatisticsForPartitionResponseResponseTypeDef](#getcolumnstatisticsforpartitionresponseresponsetypedef)
-  - [GetColumnStatisticsForTableRequestTypeDef](#getcolumnstatisticsfortablerequesttypedef)
-  - [GetColumnStatisticsForTableResponseResponseTypeDef](#getcolumnstatisticsfortableresponseresponsetypedef)
-  - [GetConnectionRequestTypeDef](#getconnectionrequesttypedef)
-  - [GetConnectionResponseResponseTypeDef](#getconnectionresponseresponsetypedef)
+  - [GetCatalogImportStatusRequestRequestTypeDef](#getcatalogimportstatusrequestrequesttypedef)
+  - [GetCatalogImportStatusResponseTypeDef](#getcatalogimportstatusresponsetypedef)
+  - [GetClassifierRequestRequestTypeDef](#getclassifierrequestrequesttypedef)
+  - [GetClassifierResponseTypeDef](#getclassifierresponsetypedef)
+  - [GetClassifiersRequestRequestTypeDef](#getclassifiersrequestrequesttypedef)
+  - [GetClassifiersResponseTypeDef](#getclassifiersresponsetypedef)
+  - [GetColumnStatisticsForPartitionRequestRequestTypeDef](#getcolumnstatisticsforpartitionrequestrequesttypedef)
+  - [GetColumnStatisticsForPartitionResponseTypeDef](#getcolumnstatisticsforpartitionresponsetypedef)
+  - [GetColumnStatisticsForTableRequestRequestTypeDef](#getcolumnstatisticsfortablerequestrequesttypedef)
+  - [GetColumnStatisticsForTableResponseTypeDef](#getcolumnstatisticsfortableresponsetypedef)
+  - [GetConnectionRequestRequestTypeDef](#getconnectionrequestrequesttypedef)
+  - [GetConnectionResponseTypeDef](#getconnectionresponsetypedef)
   - [GetConnectionsFilterTypeDef](#getconnectionsfiltertypedef)
-  - [GetConnectionsRequestTypeDef](#getconnectionsrequesttypedef)
-  - [GetConnectionsResponseResponseTypeDef](#getconnectionsresponseresponsetypedef)
-  - [GetCrawlerMetricsRequestTypeDef](#getcrawlermetricsrequesttypedef)
-  - [GetCrawlerMetricsResponseResponseTypeDef](#getcrawlermetricsresponseresponsetypedef)
-  - [GetCrawlerRequestTypeDef](#getcrawlerrequesttypedef)
-  - [GetCrawlerResponseResponseTypeDef](#getcrawlerresponseresponsetypedef)
-  - [GetCrawlersRequestTypeDef](#getcrawlersrequesttypedef)
-  - [GetCrawlersResponseResponseTypeDef](#getcrawlersresponseresponsetypedef)
-  - [GetDataCatalogEncryptionSettingsRequestTypeDef](#getdatacatalogencryptionsettingsrequesttypedef)
-  - [GetDataCatalogEncryptionSettingsResponseResponseTypeDef](#getdatacatalogencryptionsettingsresponseresponsetypedef)
-  - [GetDatabaseRequestTypeDef](#getdatabaserequesttypedef)
-  - [GetDatabaseResponseResponseTypeDef](#getdatabaseresponseresponsetypedef)
-  - [GetDatabasesRequestTypeDef](#getdatabasesrequesttypedef)
-  - [GetDatabasesResponseResponseTypeDef](#getdatabasesresponseresponsetypedef)
-  - [GetDataflowGraphRequestTypeDef](#getdataflowgraphrequesttypedef)
-  - [GetDataflowGraphResponseResponseTypeDef](#getdataflowgraphresponseresponsetypedef)
-  - [GetDevEndpointRequestTypeDef](#getdevendpointrequesttypedef)
-  - [GetDevEndpointResponseResponseTypeDef](#getdevendpointresponseresponsetypedef)
-  - [GetDevEndpointsRequestTypeDef](#getdevendpointsrequesttypedef)
-  - [GetDevEndpointsResponseResponseTypeDef](#getdevendpointsresponseresponsetypedef)
-  - [GetJobBookmarkRequestTypeDef](#getjobbookmarkrequesttypedef)
-  - [GetJobBookmarkResponseResponseTypeDef](#getjobbookmarkresponseresponsetypedef)
-  - [GetJobRequestTypeDef](#getjobrequesttypedef)
-  - [GetJobResponseResponseTypeDef](#getjobresponseresponsetypedef)
-  - [GetJobRunRequestTypeDef](#getjobrunrequesttypedef)
-  - [GetJobRunResponseResponseTypeDef](#getjobrunresponseresponsetypedef)
-  - [GetJobRunsRequestTypeDef](#getjobrunsrequesttypedef)
-  - [GetJobRunsResponseResponseTypeDef](#getjobrunsresponseresponsetypedef)
-  - [GetJobsRequestTypeDef](#getjobsrequesttypedef)
-  - [GetJobsResponseResponseTypeDef](#getjobsresponseresponsetypedef)
-  - [GetMLTaskRunRequestTypeDef](#getmltaskrunrequesttypedef)
-  - [GetMLTaskRunResponseResponseTypeDef](#getmltaskrunresponseresponsetypedef)
-  - [GetMLTaskRunsRequestTypeDef](#getmltaskrunsrequesttypedef)
-  - [GetMLTaskRunsResponseResponseTypeDef](#getmltaskrunsresponseresponsetypedef)
-  - [GetMLTransformRequestTypeDef](#getmltransformrequesttypedef)
-  - [GetMLTransformResponseResponseTypeDef](#getmltransformresponseresponsetypedef)
-  - [GetMLTransformsRequestTypeDef](#getmltransformsrequesttypedef)
-  - [GetMLTransformsResponseResponseTypeDef](#getmltransformsresponseresponsetypedef)
-  - [GetMappingRequestTypeDef](#getmappingrequesttypedef)
-  - [GetMappingResponseResponseTypeDef](#getmappingresponseresponsetypedef)
-  - [GetPartitionIndexesRequestTypeDef](#getpartitionindexesrequesttypedef)
-  - [GetPartitionIndexesResponseResponseTypeDef](#getpartitionindexesresponseresponsetypedef)
-  - [GetPartitionRequestTypeDef](#getpartitionrequesttypedef)
-  - [GetPartitionResponseResponseTypeDef](#getpartitionresponseresponsetypedef)
-  - [GetPartitionsRequestTypeDef](#getpartitionsrequesttypedef)
-  - [GetPartitionsResponseResponseTypeDef](#getpartitionsresponseresponsetypedef)
-  - [GetPlanRequestTypeDef](#getplanrequesttypedef)
-  - [GetPlanResponseResponseTypeDef](#getplanresponseresponsetypedef)
-  - [GetRegistryInputTypeDef](#getregistryinputtypedef)
-  - [GetRegistryResponseResponseTypeDef](#getregistryresponseresponsetypedef)
-  - [GetResourcePoliciesRequestTypeDef](#getresourcepoliciesrequesttypedef)
-  - [GetResourcePoliciesResponseResponseTypeDef](#getresourcepoliciesresponseresponsetypedef)
-  - [GetResourcePolicyRequestTypeDef](#getresourcepolicyrequesttypedef)
-  - [GetResourcePolicyResponseResponseTypeDef](#getresourcepolicyresponseresponsetypedef)
-  - [GetSchemaByDefinitionInputTypeDef](#getschemabydefinitioninputtypedef)
-  - [GetSchemaByDefinitionResponseResponseTypeDef](#getschemabydefinitionresponseresponsetypedef)
-  - [GetSchemaInputTypeDef](#getschemainputtypedef)
-  - [GetSchemaResponseResponseTypeDef](#getschemaresponseresponsetypedef)
-  - [GetSchemaVersionInputTypeDef](#getschemaversioninputtypedef)
-  - [GetSchemaVersionResponseResponseTypeDef](#getschemaversionresponseresponsetypedef)
-  - [GetSchemaVersionsDiffInputTypeDef](#getschemaversionsdiffinputtypedef)
-  - [GetSchemaVersionsDiffResponseResponseTypeDef](#getschemaversionsdiffresponseresponsetypedef)
-  - [GetSecurityConfigurationRequestTypeDef](#getsecurityconfigurationrequesttypedef)
-  - [GetSecurityConfigurationResponseResponseTypeDef](#getsecurityconfigurationresponseresponsetypedef)
-  - [GetSecurityConfigurationsRequestTypeDef](#getsecurityconfigurationsrequesttypedef)
-  - [GetSecurityConfigurationsResponseResponseTypeDef](#getsecurityconfigurationsresponseresponsetypedef)
-  - [GetTableRequestTypeDef](#gettablerequesttypedef)
-  - [GetTableResponseResponseTypeDef](#gettableresponseresponsetypedef)
-  - [GetTableVersionRequestTypeDef](#gettableversionrequesttypedef)
-  - [GetTableVersionResponseResponseTypeDef](#gettableversionresponseresponsetypedef)
-  - [GetTableVersionsRequestTypeDef](#gettableversionsrequesttypedef)
-  - [GetTableVersionsResponseResponseTypeDef](#gettableversionsresponseresponsetypedef)
-  - [GetTablesRequestTypeDef](#gettablesrequesttypedef)
-  - [GetTablesResponseResponseTypeDef](#gettablesresponseresponsetypedef)
-  - [GetTagsRequestTypeDef](#gettagsrequesttypedef)
-  - [GetTagsResponseResponseTypeDef](#gettagsresponseresponsetypedef)
-  - [GetTriggerRequestTypeDef](#gettriggerrequesttypedef)
-  - [GetTriggerResponseResponseTypeDef](#gettriggerresponseresponsetypedef)
-  - [GetTriggersRequestTypeDef](#gettriggersrequesttypedef)
-  - [GetTriggersResponseResponseTypeDef](#gettriggersresponseresponsetypedef)
-  - [GetUserDefinedFunctionRequestTypeDef](#getuserdefinedfunctionrequesttypedef)
-  - [GetUserDefinedFunctionResponseResponseTypeDef](#getuserdefinedfunctionresponseresponsetypedef)
-  - [GetUserDefinedFunctionsRequestTypeDef](#getuserdefinedfunctionsrequesttypedef)
-  - [GetUserDefinedFunctionsResponseResponseTypeDef](#getuserdefinedfunctionsresponseresponsetypedef)
-  - [GetWorkflowRequestTypeDef](#getworkflowrequesttypedef)
-  - [GetWorkflowResponseResponseTypeDef](#getworkflowresponseresponsetypedef)
-  - [GetWorkflowRunPropertiesRequestTypeDef](#getworkflowrunpropertiesrequesttypedef)
-  - [GetWorkflowRunPropertiesResponseResponseTypeDef](#getworkflowrunpropertiesresponseresponsetypedef)
-  - [GetWorkflowRunRequestTypeDef](#getworkflowrunrequesttypedef)
-  - [GetWorkflowRunResponseResponseTypeDef](#getworkflowrunresponseresponsetypedef)
-  - [GetWorkflowRunsRequestTypeDef](#getworkflowrunsrequesttypedef)
-  - [GetWorkflowRunsResponseResponseTypeDef](#getworkflowrunsresponseresponsetypedef)
+  - [GetConnectionsRequestRequestTypeDef](#getconnectionsrequestrequesttypedef)
+  - [GetConnectionsResponseTypeDef](#getconnectionsresponsetypedef)
+  - [GetCrawlerMetricsRequestRequestTypeDef](#getcrawlermetricsrequestrequesttypedef)
+  - [GetCrawlerMetricsResponseTypeDef](#getcrawlermetricsresponsetypedef)
+  - [GetCrawlerRequestRequestTypeDef](#getcrawlerrequestrequesttypedef)
+  - [GetCrawlerResponseTypeDef](#getcrawlerresponsetypedef)
+  - [GetCrawlersRequestRequestTypeDef](#getcrawlersrequestrequesttypedef)
+  - [GetCrawlersResponseTypeDef](#getcrawlersresponsetypedef)
+  - [GetDataCatalogEncryptionSettingsRequestRequestTypeDef](#getdatacatalogencryptionsettingsrequestrequesttypedef)
+  - [GetDataCatalogEncryptionSettingsResponseTypeDef](#getdatacatalogencryptionsettingsresponsetypedef)
+  - [GetDatabaseRequestRequestTypeDef](#getdatabaserequestrequesttypedef)
+  - [GetDatabaseResponseTypeDef](#getdatabaseresponsetypedef)
+  - [GetDatabasesRequestRequestTypeDef](#getdatabasesrequestrequesttypedef)
+  - [GetDatabasesResponseTypeDef](#getdatabasesresponsetypedef)
+  - [GetDataflowGraphRequestRequestTypeDef](#getdataflowgraphrequestrequesttypedef)
+  - [GetDataflowGraphResponseTypeDef](#getdataflowgraphresponsetypedef)
+  - [GetDevEndpointRequestRequestTypeDef](#getdevendpointrequestrequesttypedef)
+  - [GetDevEndpointResponseTypeDef](#getdevendpointresponsetypedef)
+  - [GetDevEndpointsRequestRequestTypeDef](#getdevendpointsrequestrequesttypedef)
+  - [GetDevEndpointsResponseTypeDef](#getdevendpointsresponsetypedef)
+  - [GetJobBookmarkRequestRequestTypeDef](#getjobbookmarkrequestrequesttypedef)
+  - [GetJobBookmarkResponseTypeDef](#getjobbookmarkresponsetypedef)
+  - [GetJobRequestRequestTypeDef](#getjobrequestrequesttypedef)
+  - [GetJobResponseTypeDef](#getjobresponsetypedef)
+  - [GetJobRunRequestRequestTypeDef](#getjobrunrequestrequesttypedef)
+  - [GetJobRunResponseTypeDef](#getjobrunresponsetypedef)
+  - [GetJobRunsRequestRequestTypeDef](#getjobrunsrequestrequesttypedef)
+  - [GetJobRunsResponseTypeDef](#getjobrunsresponsetypedef)
+  - [GetJobsRequestRequestTypeDef](#getjobsrequestrequesttypedef)
+  - [GetJobsResponseTypeDef](#getjobsresponsetypedef)
+  - [GetMLTaskRunRequestRequestTypeDef](#getmltaskrunrequestrequesttypedef)
+  - [GetMLTaskRunResponseTypeDef](#getmltaskrunresponsetypedef)
+  - [GetMLTaskRunsRequestRequestTypeDef](#getmltaskrunsrequestrequesttypedef)
+  - [GetMLTaskRunsResponseTypeDef](#getmltaskrunsresponsetypedef)
+  - [GetMLTransformRequestRequestTypeDef](#getmltransformrequestrequesttypedef)
+  - [GetMLTransformResponseTypeDef](#getmltransformresponsetypedef)
+  - [GetMLTransformsRequestRequestTypeDef](#getmltransformsrequestrequesttypedef)
+  - [GetMLTransformsResponseTypeDef](#getmltransformsresponsetypedef)
+  - [GetMappingRequestRequestTypeDef](#getmappingrequestrequesttypedef)
+  - [GetMappingResponseTypeDef](#getmappingresponsetypedef)
+  - [GetPartitionIndexesRequestRequestTypeDef](#getpartitionindexesrequestrequesttypedef)
+  - [GetPartitionIndexesResponseTypeDef](#getpartitionindexesresponsetypedef)
+  - [GetPartitionRequestRequestTypeDef](#getpartitionrequestrequesttypedef)
+  - [GetPartitionResponseTypeDef](#getpartitionresponsetypedef)
+  - [GetPartitionsRequestRequestTypeDef](#getpartitionsrequestrequesttypedef)
+  - [GetPartitionsResponseTypeDef](#getpartitionsresponsetypedef)
+  - [GetPlanRequestRequestTypeDef](#getplanrequestrequesttypedef)
+  - [GetPlanResponseTypeDef](#getplanresponsetypedef)
+  - [GetRegistryInputRequestTypeDef](#getregistryinputrequesttypedef)
+  - [GetRegistryResponseTypeDef](#getregistryresponsetypedef)
+  - [GetResourcePoliciesRequestRequestTypeDef](#getresourcepoliciesrequestrequesttypedef)
+  - [GetResourcePoliciesResponseTypeDef](#getresourcepoliciesresponsetypedef)
+  - [GetResourcePolicyRequestRequestTypeDef](#getresourcepolicyrequestrequesttypedef)
+  - [GetResourcePolicyResponseTypeDef](#getresourcepolicyresponsetypedef)
+  - [GetSchemaByDefinitionInputRequestTypeDef](#getschemabydefinitioninputrequesttypedef)
+  - [GetSchemaByDefinitionResponseTypeDef](#getschemabydefinitionresponsetypedef)
+  - [GetSchemaInputRequestTypeDef](#getschemainputrequesttypedef)
+  - [GetSchemaResponseTypeDef](#getschemaresponsetypedef)
+  - [GetSchemaVersionInputRequestTypeDef](#getschemaversioninputrequesttypedef)
+  - [GetSchemaVersionResponseTypeDef](#getschemaversionresponsetypedef)
+  - [GetSchemaVersionsDiffInputRequestTypeDef](#getschemaversionsdiffinputrequesttypedef)
+  - [GetSchemaVersionsDiffResponseTypeDef](#getschemaversionsdiffresponsetypedef)
+  - [GetSecurityConfigurationRequestRequestTypeDef](#getsecurityconfigurationrequestrequesttypedef)
+  - [GetSecurityConfigurationResponseTypeDef](#getsecurityconfigurationresponsetypedef)
+  - [GetSecurityConfigurationsRequestRequestTypeDef](#getsecurityconfigurationsrequestrequesttypedef)
+  - [GetSecurityConfigurationsResponseTypeDef](#getsecurityconfigurationsresponsetypedef)
+  - [GetTableRequestRequestTypeDef](#gettablerequestrequesttypedef)
+  - [GetTableResponseTypeDef](#gettableresponsetypedef)
+  - [GetTableVersionRequestRequestTypeDef](#gettableversionrequestrequesttypedef)
+  - [GetTableVersionResponseTypeDef](#gettableversionresponsetypedef)
+  - [GetTableVersionsRequestRequestTypeDef](#gettableversionsrequestrequesttypedef)
+  - [GetTableVersionsResponseTypeDef](#gettableversionsresponsetypedef)
+  - [GetTablesRequestRequestTypeDef](#gettablesrequestrequesttypedef)
+  - [GetTablesResponseTypeDef](#gettablesresponsetypedef)
+  - [GetTagsRequestRequestTypeDef](#gettagsrequestrequesttypedef)
+  - [GetTagsResponseTypeDef](#gettagsresponsetypedef)
+  - [GetTriggerRequestRequestTypeDef](#gettriggerrequestrequesttypedef)
+  - [GetTriggerResponseTypeDef](#gettriggerresponsetypedef)
+  - [GetTriggersRequestRequestTypeDef](#gettriggersrequestrequesttypedef)
+  - [GetTriggersResponseTypeDef](#gettriggersresponsetypedef)
+  - [GetUserDefinedFunctionRequestRequestTypeDef](#getuserdefinedfunctionrequestrequesttypedef)
+  - [GetUserDefinedFunctionResponseTypeDef](#getuserdefinedfunctionresponsetypedef)
+  - [GetUserDefinedFunctionsRequestRequestTypeDef](#getuserdefinedfunctionsrequestrequesttypedef)
+  - [GetUserDefinedFunctionsResponseTypeDef](#getuserdefinedfunctionsresponsetypedef)
+  - [GetWorkflowRequestRequestTypeDef](#getworkflowrequestrequesttypedef)
+  - [GetWorkflowResponseTypeDef](#getworkflowresponsetypedef)
+  - [GetWorkflowRunPropertiesRequestRequestTypeDef](#getworkflowrunpropertiesrequestrequesttypedef)
+  - [GetWorkflowRunPropertiesResponseTypeDef](#getworkflowrunpropertiesresponsetypedef)
+  - [GetWorkflowRunRequestRequestTypeDef](#getworkflowrunrequestrequesttypedef)
+  - [GetWorkflowRunResponseTypeDef](#getworkflowrunresponsetypedef)
+  - [GetWorkflowRunsRequestRequestTypeDef](#getworkflowrunsrequestrequesttypedef)
+  - [GetWorkflowRunsResponseTypeDef](#getworkflowrunsresponsetypedef)
   - [GluePolicyTypeDef](#gluepolicytypedef)
   - [GlueTableTypeDef](#gluetabletypedef)
   - [GrokClassifierTypeDef](#grokclassifiertypedef)
-  - [ImportCatalogToGlueRequestTypeDef](#importcatalogtogluerequesttypedef)
+  - [ImportCatalogToGlueRequestRequestTypeDef](#importcatalogtogluerequestrequesttypedef)
   - [ImportLabelsTaskRunPropertiesTypeDef](#importlabelstaskrunpropertiestypedef)
   - [JdbcTargetTypeDef](#jdbctargettypedef)
   - [JobBookmarkEntryTypeDef](#jobbookmarkentrytypedef)
@@ -276,24 +276,24 @@ type annotations stubs module
   - [LabelingSetGenerationTaskRunPropertiesTypeDef](#labelingsetgenerationtaskrunpropertiestypedef)
   - [LastCrawlInfoTypeDef](#lastcrawlinfotypedef)
   - [LineageConfigurationTypeDef](#lineageconfigurationtypedef)
-  - [ListCrawlersRequestTypeDef](#listcrawlersrequesttypedef)
-  - [ListCrawlersResponseResponseTypeDef](#listcrawlersresponseresponsetypedef)
-  - [ListDevEndpointsRequestTypeDef](#listdevendpointsrequesttypedef)
-  - [ListDevEndpointsResponseResponseTypeDef](#listdevendpointsresponseresponsetypedef)
-  - [ListJobsRequestTypeDef](#listjobsrequesttypedef)
-  - [ListJobsResponseResponseTypeDef](#listjobsresponseresponsetypedef)
-  - [ListMLTransformsRequestTypeDef](#listmltransformsrequesttypedef)
-  - [ListMLTransformsResponseResponseTypeDef](#listmltransformsresponseresponsetypedef)
-  - [ListRegistriesInputTypeDef](#listregistriesinputtypedef)
-  - [ListRegistriesResponseResponseTypeDef](#listregistriesresponseresponsetypedef)
-  - [ListSchemaVersionsInputTypeDef](#listschemaversionsinputtypedef)
-  - [ListSchemaVersionsResponseResponseTypeDef](#listschemaversionsresponseresponsetypedef)
-  - [ListSchemasInputTypeDef](#listschemasinputtypedef)
-  - [ListSchemasResponseResponseTypeDef](#listschemasresponseresponsetypedef)
-  - [ListTriggersRequestTypeDef](#listtriggersrequesttypedef)
-  - [ListTriggersResponseResponseTypeDef](#listtriggersresponseresponsetypedef)
-  - [ListWorkflowsRequestTypeDef](#listworkflowsrequesttypedef)
-  - [ListWorkflowsResponseResponseTypeDef](#listworkflowsresponseresponsetypedef)
+  - [ListCrawlersRequestRequestTypeDef](#listcrawlersrequestrequesttypedef)
+  - [ListCrawlersResponseTypeDef](#listcrawlersresponsetypedef)
+  - [ListDevEndpointsRequestRequestTypeDef](#listdevendpointsrequestrequesttypedef)
+  - [ListDevEndpointsResponseTypeDef](#listdevendpointsresponsetypedef)
+  - [ListJobsRequestRequestTypeDef](#listjobsrequestrequesttypedef)
+  - [ListJobsResponseTypeDef](#listjobsresponsetypedef)
+  - [ListMLTransformsRequestRequestTypeDef](#listmltransformsrequestrequesttypedef)
+  - [ListMLTransformsResponseTypeDef](#listmltransformsresponsetypedef)
+  - [ListRegistriesInputRequestTypeDef](#listregistriesinputrequesttypedef)
+  - [ListRegistriesResponseTypeDef](#listregistriesresponsetypedef)
+  - [ListSchemaVersionsInputRequestTypeDef](#listschemaversionsinputrequesttypedef)
+  - [ListSchemaVersionsResponseTypeDef](#listschemaversionsresponsetypedef)
+  - [ListSchemasInputRequestTypeDef](#listschemasinputrequesttypedef)
+  - [ListSchemasResponseTypeDef](#listschemasresponsetypedef)
+  - [ListTriggersRequestRequestTypeDef](#listtriggersrequestrequesttypedef)
+  - [ListTriggersResponseTypeDef](#listtriggersresponsetypedef)
+  - [ListWorkflowsRequestRequestTypeDef](#listworkflowsrequestrequesttypedef)
+  - [ListWorkflowsResponseTypeDef](#listworkflowsresponsetypedef)
   - [LocationTypeDef](#locationtypedef)
   - [LongColumnStatisticsDataTypeDef](#longcolumnstatisticsdatatypedef)
   - [MLTransformTypeDef](#mltransformtypedef)
@@ -318,27 +318,27 @@ type annotations stubs module
   - [PredicateTypeDef](#predicatetypedef)
   - [PrincipalPermissionsTypeDef](#principalpermissionstypedef)
   - [PropertyPredicateTypeDef](#propertypredicatetypedef)
-  - [PutDataCatalogEncryptionSettingsRequestTypeDef](#putdatacatalogencryptionsettingsrequesttypedef)
-  - [PutResourcePolicyRequestTypeDef](#putresourcepolicyrequesttypedef)
-  - [PutResourcePolicyResponseResponseTypeDef](#putresourcepolicyresponseresponsetypedef)
-  - [PutSchemaVersionMetadataInputTypeDef](#putschemaversionmetadatainputtypedef)
-  - [PutSchemaVersionMetadataResponseResponseTypeDef](#putschemaversionmetadataresponseresponsetypedef)
-  - [PutWorkflowRunPropertiesRequestTypeDef](#putworkflowrunpropertiesrequesttypedef)
-  - [QuerySchemaVersionMetadataInputTypeDef](#queryschemaversionmetadatainputtypedef)
-  - [QuerySchemaVersionMetadataResponseResponseTypeDef](#queryschemaversionmetadataresponseresponsetypedef)
+  - [PutDataCatalogEncryptionSettingsRequestRequestTypeDef](#putdatacatalogencryptionsettingsrequestrequesttypedef)
+  - [PutResourcePolicyRequestRequestTypeDef](#putresourcepolicyrequestrequesttypedef)
+  - [PutResourcePolicyResponseTypeDef](#putresourcepolicyresponsetypedef)
+  - [PutSchemaVersionMetadataInputRequestTypeDef](#putschemaversionmetadatainputrequesttypedef)
+  - [PutSchemaVersionMetadataResponseTypeDef](#putschemaversionmetadataresponsetypedef)
+  - [PutWorkflowRunPropertiesRequestRequestTypeDef](#putworkflowrunpropertiesrequestrequesttypedef)
+  - [QuerySchemaVersionMetadataInputRequestTypeDef](#queryschemaversionmetadatainputrequesttypedef)
+  - [QuerySchemaVersionMetadataResponseTypeDef](#queryschemaversionmetadataresponsetypedef)
   - [RecrawlPolicyTypeDef](#recrawlpolicytypedef)
-  - [RegisterSchemaVersionInputTypeDef](#registerschemaversioninputtypedef)
-  - [RegisterSchemaVersionResponseResponseTypeDef](#registerschemaversionresponseresponsetypedef)
+  - [RegisterSchemaVersionInputRequestTypeDef](#registerschemaversioninputrequesttypedef)
+  - [RegisterSchemaVersionResponseTypeDef](#registerschemaversionresponsetypedef)
   - [RegistryIdTypeDef](#registryidtypedef)
   - [RegistryListItemTypeDef](#registrylistitemtypedef)
-  - [RemoveSchemaVersionMetadataInputTypeDef](#removeschemaversionmetadatainputtypedef)
-  - [RemoveSchemaVersionMetadataResponseResponseTypeDef](#removeschemaversionmetadataresponseresponsetypedef)
-  - [ResetJobBookmarkRequestTypeDef](#resetjobbookmarkrequesttypedef)
-  - [ResetJobBookmarkResponseResponseTypeDef](#resetjobbookmarkresponseresponsetypedef)
+  - [RemoveSchemaVersionMetadataInputRequestTypeDef](#removeschemaversionmetadatainputrequesttypedef)
+  - [RemoveSchemaVersionMetadataResponseTypeDef](#removeschemaversionmetadataresponsetypedef)
+  - [ResetJobBookmarkRequestRequestTypeDef](#resetjobbookmarkrequestrequesttypedef)
+  - [ResetJobBookmarkResponseTypeDef](#resetjobbookmarkresponsetypedef)
   - [ResourceUriTypeDef](#resourceuritypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ResumeWorkflowRunRequestTypeDef](#resumeworkflowrunrequesttypedef)
-  - [ResumeWorkflowRunResponseResponseTypeDef](#resumeworkflowrunresponseresponsetypedef)
+  - [ResumeWorkflowRunRequestRequestTypeDef](#resumeworkflowrunrequestrequesttypedef)
+  - [ResumeWorkflowRunResponseTypeDef](#resumeworkflowrunresponsetypedef)
   - [S3EncryptionTypeDef](#s3encryptiontypedef)
   - [S3TargetTypeDef](#s3targettypedef)
   - [ScheduleTypeDef](#scheduletypedef)
@@ -350,34 +350,34 @@ type annotations stubs module
   - [SchemaVersionErrorItemTypeDef](#schemaversionerroritemtypedef)
   - [SchemaVersionListItemTypeDef](#schemaversionlistitemtypedef)
   - [SchemaVersionNumberTypeDef](#schemaversionnumbertypedef)
-  - [SearchTablesRequestTypeDef](#searchtablesrequesttypedef)
-  - [SearchTablesResponseResponseTypeDef](#searchtablesresponseresponsetypedef)
+  - [SearchTablesRequestRequestTypeDef](#searchtablesrequestrequesttypedef)
+  - [SearchTablesResponseTypeDef](#searchtablesresponsetypedef)
   - [SecurityConfigurationTypeDef](#securityconfigurationtypedef)
   - [SegmentTypeDef](#segmenttypedef)
   - [SerDeInfoTypeDef](#serdeinfotypedef)
   - [SkewedInfoTypeDef](#skewedinfotypedef)
   - [SortCriterionTypeDef](#sortcriteriontypedef)
-  - [StartCrawlerRequestTypeDef](#startcrawlerrequesttypedef)
-  - [StartCrawlerScheduleRequestTypeDef](#startcrawlerschedulerequesttypedef)
-  - [StartExportLabelsTaskRunRequestTypeDef](#startexportlabelstaskrunrequesttypedef)
-  - [StartExportLabelsTaskRunResponseResponseTypeDef](#startexportlabelstaskrunresponseresponsetypedef)
-  - [StartImportLabelsTaskRunRequestTypeDef](#startimportlabelstaskrunrequesttypedef)
-  - [StartImportLabelsTaskRunResponseResponseTypeDef](#startimportlabelstaskrunresponseresponsetypedef)
-  - [StartJobRunRequestTypeDef](#startjobrunrequesttypedef)
-  - [StartJobRunResponseResponseTypeDef](#startjobrunresponseresponsetypedef)
-  - [StartMLEvaluationTaskRunRequestTypeDef](#startmlevaluationtaskrunrequesttypedef)
-  - [StartMLEvaluationTaskRunResponseResponseTypeDef](#startmlevaluationtaskrunresponseresponsetypedef)
-  - [StartMLLabelingSetGenerationTaskRunRequestTypeDef](#startmllabelingsetgenerationtaskrunrequesttypedef)
-  - [StartMLLabelingSetGenerationTaskRunResponseResponseTypeDef](#startmllabelingsetgenerationtaskrunresponseresponsetypedef)
-  - [StartTriggerRequestTypeDef](#starttriggerrequesttypedef)
-  - [StartTriggerResponseResponseTypeDef](#starttriggerresponseresponsetypedef)
-  - [StartWorkflowRunRequestTypeDef](#startworkflowrunrequesttypedef)
-  - [StartWorkflowRunResponseResponseTypeDef](#startworkflowrunresponseresponsetypedef)
-  - [StopCrawlerRequestTypeDef](#stopcrawlerrequesttypedef)
-  - [StopCrawlerScheduleRequestTypeDef](#stopcrawlerschedulerequesttypedef)
-  - [StopTriggerRequestTypeDef](#stoptriggerrequesttypedef)
-  - [StopTriggerResponseResponseTypeDef](#stoptriggerresponseresponsetypedef)
-  - [StopWorkflowRunRequestTypeDef](#stopworkflowrunrequesttypedef)
+  - [StartCrawlerRequestRequestTypeDef](#startcrawlerrequestrequesttypedef)
+  - [StartCrawlerScheduleRequestRequestTypeDef](#startcrawlerschedulerequestrequesttypedef)
+  - [StartExportLabelsTaskRunRequestRequestTypeDef](#startexportlabelstaskrunrequestrequesttypedef)
+  - [StartExportLabelsTaskRunResponseTypeDef](#startexportlabelstaskrunresponsetypedef)
+  - [StartImportLabelsTaskRunRequestRequestTypeDef](#startimportlabelstaskrunrequestrequesttypedef)
+  - [StartImportLabelsTaskRunResponseTypeDef](#startimportlabelstaskrunresponsetypedef)
+  - [StartJobRunRequestRequestTypeDef](#startjobrunrequestrequesttypedef)
+  - [StartJobRunResponseTypeDef](#startjobrunresponsetypedef)
+  - [StartMLEvaluationTaskRunRequestRequestTypeDef](#startmlevaluationtaskrunrequestrequesttypedef)
+  - [StartMLEvaluationTaskRunResponseTypeDef](#startmlevaluationtaskrunresponsetypedef)
+  - [StartMLLabelingSetGenerationTaskRunRequestRequestTypeDef](#startmllabelingsetgenerationtaskrunrequestrequesttypedef)
+  - [StartMLLabelingSetGenerationTaskRunResponseTypeDef](#startmllabelingsetgenerationtaskrunresponsetypedef)
+  - [StartTriggerRequestRequestTypeDef](#starttriggerrequestrequesttypedef)
+  - [StartTriggerResponseTypeDef](#starttriggerresponsetypedef)
+  - [StartWorkflowRunRequestRequestTypeDef](#startworkflowrunrequestrequesttypedef)
+  - [StartWorkflowRunResponseTypeDef](#startworkflowrunresponsetypedef)
+  - [StopCrawlerRequestRequestTypeDef](#stopcrawlerrequestrequesttypedef)
+  - [StopCrawlerScheduleRequestRequestTypeDef](#stopcrawlerschedulerequestrequesttypedef)
+  - [StopTriggerRequestRequestTypeDef](#stoptriggerrequestrequesttypedef)
+  - [StopTriggerResponseTypeDef](#stoptriggerresponsetypedef)
+  - [StopWorkflowRunRequestRequestTypeDef](#stopworkflowrunrequestrequesttypedef)
   - [StorageDescriptorTypeDef](#storagedescriptortypedef)
   - [StringColumnStatisticsDataTypeDef](#stringcolumnstatisticsdatatypedef)
   - [TableErrorTypeDef](#tableerrortypedef)
@@ -386,7 +386,7 @@ type annotations stubs module
   - [TableTypeDef](#tabletypedef)
   - [TableVersionErrorTypeDef](#tableversionerrortypedef)
   - [TableVersionTypeDef](#tableversiontypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TaskRunFilterCriteriaTypeDef](#taskrunfiltercriteriatypedef)
   - [TaskRunPropertiesTypeDef](#taskrunpropertiestypedef)
   - [TaskRunSortCriteriaTypeDef](#taskrunsortcriteriatypedef)
@@ -398,35 +398,35 @@ type annotations stubs module
   - [TriggerNodeDetailsTypeDef](#triggernodedetailstypedef)
   - [TriggerTypeDef](#triggertypedef)
   - [TriggerUpdateTypeDef](#triggerupdatetypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateClassifierRequestTypeDef](#updateclassifierrequesttypedef)
-  - [UpdateColumnStatisticsForPartitionRequestTypeDef](#updatecolumnstatisticsforpartitionrequesttypedef)
-  - [UpdateColumnStatisticsForPartitionResponseResponseTypeDef](#updatecolumnstatisticsforpartitionresponseresponsetypedef)
-  - [UpdateColumnStatisticsForTableRequestTypeDef](#updatecolumnstatisticsfortablerequesttypedef)
-  - [UpdateColumnStatisticsForTableResponseResponseTypeDef](#updatecolumnstatisticsfortableresponseresponsetypedef)
-  - [UpdateConnectionRequestTypeDef](#updateconnectionrequesttypedef)
-  - [UpdateCrawlerRequestTypeDef](#updatecrawlerrequesttypedef)
-  - [UpdateCrawlerScheduleRequestTypeDef](#updatecrawlerschedulerequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateClassifierRequestRequestTypeDef](#updateclassifierrequestrequesttypedef)
+  - [UpdateColumnStatisticsForPartitionRequestRequestTypeDef](#updatecolumnstatisticsforpartitionrequestrequesttypedef)
+  - [UpdateColumnStatisticsForPartitionResponseTypeDef](#updatecolumnstatisticsforpartitionresponsetypedef)
+  - [UpdateColumnStatisticsForTableRequestRequestTypeDef](#updatecolumnstatisticsfortablerequestrequesttypedef)
+  - [UpdateColumnStatisticsForTableResponseTypeDef](#updatecolumnstatisticsfortableresponsetypedef)
+  - [UpdateConnectionRequestRequestTypeDef](#updateconnectionrequestrequesttypedef)
+  - [UpdateCrawlerRequestRequestTypeDef](#updatecrawlerrequestrequesttypedef)
+  - [UpdateCrawlerScheduleRequestRequestTypeDef](#updatecrawlerschedulerequestrequesttypedef)
   - [UpdateCsvClassifierRequestTypeDef](#updatecsvclassifierrequesttypedef)
-  - [UpdateDatabaseRequestTypeDef](#updatedatabaserequesttypedef)
-  - [UpdateDevEndpointRequestTypeDef](#updatedevendpointrequesttypedef)
+  - [UpdateDatabaseRequestRequestTypeDef](#updatedatabaserequestrequesttypedef)
+  - [UpdateDevEndpointRequestRequestTypeDef](#updatedevendpointrequestrequesttypedef)
   - [UpdateGrokClassifierRequestTypeDef](#updategrokclassifierrequesttypedef)
-  - [UpdateJobRequestTypeDef](#updatejobrequesttypedef)
-  - [UpdateJobResponseResponseTypeDef](#updatejobresponseresponsetypedef)
+  - [UpdateJobRequestRequestTypeDef](#updatejobrequestrequesttypedef)
+  - [UpdateJobResponseTypeDef](#updatejobresponsetypedef)
   - [UpdateJsonClassifierRequestTypeDef](#updatejsonclassifierrequesttypedef)
-  - [UpdateMLTransformRequestTypeDef](#updatemltransformrequesttypedef)
-  - [UpdateMLTransformResponseResponseTypeDef](#updatemltransformresponseresponsetypedef)
-  - [UpdatePartitionRequestTypeDef](#updatepartitionrequesttypedef)
-  - [UpdateRegistryInputTypeDef](#updateregistryinputtypedef)
-  - [UpdateRegistryResponseResponseTypeDef](#updateregistryresponseresponsetypedef)
-  - [UpdateSchemaInputTypeDef](#updateschemainputtypedef)
-  - [UpdateSchemaResponseResponseTypeDef](#updateschemaresponseresponsetypedef)
-  - [UpdateTableRequestTypeDef](#updatetablerequesttypedef)
-  - [UpdateTriggerRequestTypeDef](#updatetriggerrequesttypedef)
-  - [UpdateTriggerResponseResponseTypeDef](#updatetriggerresponseresponsetypedef)
-  - [UpdateUserDefinedFunctionRequestTypeDef](#updateuserdefinedfunctionrequesttypedef)
-  - [UpdateWorkflowRequestTypeDef](#updateworkflowrequesttypedef)
-  - [UpdateWorkflowResponseResponseTypeDef](#updateworkflowresponseresponsetypedef)
+  - [UpdateMLTransformRequestRequestTypeDef](#updatemltransformrequestrequesttypedef)
+  - [UpdateMLTransformResponseTypeDef](#updatemltransformresponsetypedef)
+  - [UpdatePartitionRequestRequestTypeDef](#updatepartitionrequestrequesttypedef)
+  - [UpdateRegistryInputRequestTypeDef](#updateregistryinputrequesttypedef)
+  - [UpdateRegistryResponseTypeDef](#updateregistryresponsetypedef)
+  - [UpdateSchemaInputRequestTypeDef](#updateschemainputrequesttypedef)
+  - [UpdateSchemaResponseTypeDef](#updateschemaresponsetypedef)
+  - [UpdateTableRequestRequestTypeDef](#updatetablerequestrequesttypedef)
+  - [UpdateTriggerRequestRequestTypeDef](#updatetriggerrequestrequesttypedef)
+  - [UpdateTriggerResponseTypeDef](#updatetriggerresponsetypedef)
+  - [UpdateUserDefinedFunctionRequestRequestTypeDef](#updateuserdefinedfunctionrequestrequesttypedef)
+  - [UpdateWorkflowRequestRequestTypeDef](#updateworkflowrequestrequesttypedef)
+  - [UpdateWorkflowResponseTypeDef](#updateworkflowresponsetypedef)
   - [UpdateXMLClassifierRequestTypeDef](#updatexmlclassifierrequesttypedef)
   - [UserDefinedFunctionInputTypeDef](#userdefinedfunctioninputtypedef)
   - [UserDefinedFunctionTypeDef](#userdefinedfunctiontypedef)
@@ -464,10 +464,10 @@ Optional fields:
 - `Partitions`:
   `List`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
 
-## BatchCreatePartitionRequestTypeDef
+## BatchCreatePartitionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchCreatePartitionRequestTypeDef
+from mypy_boto3_glue.type_defs import BatchCreatePartitionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -481,10 +481,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## BatchCreatePartitionResponseResponseTypeDef
+## BatchCreatePartitionResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchCreatePartitionResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import BatchCreatePartitionResponseTypeDef
 ```
 
 Required fields:
@@ -494,10 +494,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchDeleteConnectionRequestTypeDef
+## BatchDeleteConnectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchDeleteConnectionRequestTypeDef
+from mypy_boto3_glue.type_defs import BatchDeleteConnectionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -508,10 +508,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## BatchDeleteConnectionResponseResponseTypeDef
+## BatchDeleteConnectionResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchDeleteConnectionResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import BatchDeleteConnectionResponseTypeDef
 ```
 
 Required fields:
@@ -522,10 +522,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchDeletePartitionRequestTypeDef
+## BatchDeletePartitionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchDeletePartitionRequestTypeDef
+from mypy_boto3_glue.type_defs import BatchDeletePartitionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -539,10 +539,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## BatchDeletePartitionResponseResponseTypeDef
+## BatchDeletePartitionResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchDeletePartitionResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import BatchDeletePartitionResponseTypeDef
 ```
 
 Required fields:
@@ -552,10 +552,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchDeleteTableRequestTypeDef
+## BatchDeleteTableRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchDeleteTableRequestTypeDef
+from mypy_boto3_glue.type_defs import BatchDeleteTableRequestRequestTypeDef
 ```
 
 Required fields:
@@ -567,10 +567,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## BatchDeleteTableResponseResponseTypeDef
+## BatchDeleteTableResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchDeleteTableResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import BatchDeleteTableResponseTypeDef
 ```
 
 Required fields:
@@ -579,10 +579,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchDeleteTableVersionRequestTypeDef
+## BatchDeleteTableVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchDeleteTableVersionRequestTypeDef
+from mypy_boto3_glue.type_defs import BatchDeleteTableVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -595,10 +595,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## BatchDeleteTableVersionResponseResponseTypeDef
+## BatchDeleteTableVersionResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchDeleteTableVersionResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import BatchDeleteTableVersionResponseTypeDef
 ```
 
 Required fields:
@@ -608,20 +608,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchGetCrawlersRequestTypeDef
+## BatchGetCrawlersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchGetCrawlersRequestTypeDef
+from mypy_boto3_glue.type_defs import BatchGetCrawlersRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `CrawlerNames`: `List`\[`str`\]
 
-## BatchGetCrawlersResponseResponseTypeDef
+## BatchGetCrawlersResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchGetCrawlersResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import BatchGetCrawlersResponseTypeDef
 ```
 
 Required fields:
@@ -631,20 +631,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchGetDevEndpointsRequestTypeDef
+## BatchGetDevEndpointsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchGetDevEndpointsRequestTypeDef
+from mypy_boto3_glue.type_defs import BatchGetDevEndpointsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DevEndpointNames`: `List`\[`str`\]
 
-## BatchGetDevEndpointsResponseResponseTypeDef
+## BatchGetDevEndpointsResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchGetDevEndpointsResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import BatchGetDevEndpointsResponseTypeDef
 ```
 
 Required fields:
@@ -655,20 +655,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchGetJobsRequestTypeDef
+## BatchGetJobsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchGetJobsRequestTypeDef
+from mypy_boto3_glue.type_defs import BatchGetJobsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `JobNames`: `List`\[`str`\]
 
-## BatchGetJobsResponseResponseTypeDef
+## BatchGetJobsResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchGetJobsResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import BatchGetJobsResponseTypeDef
 ```
 
 Required fields:
@@ -678,10 +678,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchGetPartitionRequestTypeDef
+## BatchGetPartitionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchGetPartitionRequestTypeDef
+from mypy_boto3_glue.type_defs import BatchGetPartitionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -695,10 +695,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## BatchGetPartitionResponseResponseTypeDef
+## BatchGetPartitionResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchGetPartitionResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import BatchGetPartitionResponseTypeDef
 ```
 
 Required fields:
@@ -709,20 +709,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchGetTriggersRequestTypeDef
+## BatchGetTriggersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchGetTriggersRequestTypeDef
+from mypy_boto3_glue.type_defs import BatchGetTriggersRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `TriggerNames`: `List`\[`str`\]
 
-## BatchGetTriggersResponseResponseTypeDef
+## BatchGetTriggersResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchGetTriggersResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import BatchGetTriggersResponseTypeDef
 ```
 
 Required fields:
@@ -732,10 +732,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchGetWorkflowsRequestTypeDef
+## BatchGetWorkflowsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchGetWorkflowsRequestTypeDef
+from mypy_boto3_glue.type_defs import BatchGetWorkflowsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -746,10 +746,10 @@ Optional fields:
 
 - `IncludeGraph`: `bool`
 
-## BatchGetWorkflowsResponseResponseTypeDef
+## BatchGetWorkflowsResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchGetWorkflowsResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import BatchGetWorkflowsResponseTypeDef
 ```
 
 Required fields:
@@ -771,10 +771,10 @@ Optional fields:
 - `JobRunId`: `str`
 - `ErrorDetail`: [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)
 
-## BatchStopJobRunRequestTypeDef
+## BatchStopJobRunRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchStopJobRunRequestTypeDef
+from mypy_boto3_glue.type_defs import BatchStopJobRunRequestRequestTypeDef
 ```
 
 Required fields:
@@ -782,10 +782,10 @@ Required fields:
 - `JobName`: `str`
 - `JobRunIds`: `List`\[`str`\]
 
-## BatchStopJobRunResponseResponseTypeDef
+## BatchStopJobRunResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchStopJobRunResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import BatchStopJobRunResponseTypeDef
 ```
 
 Required fields:
@@ -831,10 +831,10 @@ Required fields:
 - `PartitionInput`:
   [PartitionInputTypeDef](./type_defs.md#partitioninputtypedef)
 
-## BatchUpdatePartitionRequestTypeDef
+## BatchUpdatePartitionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchUpdatePartitionRequestTypeDef
+from mypy_boto3_glue.type_defs import BatchUpdatePartitionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -848,10 +848,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## BatchUpdatePartitionResponseResponseTypeDef
+## BatchUpdatePartitionResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import BatchUpdatePartitionResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import BatchUpdatePartitionResponseTypeDef
 ```
 
 Required fields:
@@ -885,10 +885,10 @@ Required fields:
 - `NumberOfFalses`: `int`
 - `NumberOfNulls`: `int`
 
-## CancelMLTaskRunRequestTypeDef
+## CancelMLTaskRunRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CancelMLTaskRunRequestTypeDef
+from mypy_boto3_glue.type_defs import CancelMLTaskRunRequestRequestTypeDef
 ```
 
 Required fields:
@@ -896,10 +896,10 @@ Required fields:
 - `TransformId`: `str`
 - `TaskRunId`: `str`
 
-## CancelMLTaskRunResponseResponseTypeDef
+## CancelMLTaskRunResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CancelMLTaskRunResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import CancelMLTaskRunResponseTypeDef
 ```
 
 Required fields:
@@ -944,10 +944,10 @@ Required fields:
 - `DatabaseName`: `str`
 - `Tables`: `List`\[`str`\]
 
-## CheckSchemaVersionValidityInputTypeDef
+## CheckSchemaVersionValidityInputRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CheckSchemaVersionValidityInputTypeDef
+from mypy_boto3_glue.type_defs import CheckSchemaVersionValidityInputRequestTypeDef
 ```
 
 Required fields:
@@ -955,10 +955,10 @@ Required fields:
 - `DataFormat`: [DataFormatType](./literals.md#dataformattype)
 - `SchemaDefinition`: `str`
 
-## CheckSchemaVersionValidityResponseResponseTypeDef
+## CheckSchemaVersionValidityResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CheckSchemaVersionValidityResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import CheckSchemaVersionValidityResponseTypeDef
 ```
 
 Required fields:
@@ -1317,10 +1317,10 @@ Optional fields:
 - `Configuration`: `str`
 - `CrawlerSecurityConfiguration`: `str`
 
-## CreateClassifierRequestTypeDef
+## CreateClassifierRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateClassifierRequestTypeDef
+from mypy_boto3_glue.type_defs import CreateClassifierRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1334,10 +1334,10 @@ Optional fields:
 - `CsvClassifier`:
   [CreateCsvClassifierRequestTypeDef](./type_defs.md#createcsvclassifierrequesttypedef)
 
-## CreateConnectionRequestTypeDef
+## CreateConnectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateConnectionRequestTypeDef
+from mypy_boto3_glue.type_defs import CreateConnectionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1349,10 +1349,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## CreateCrawlerRequestTypeDef
+## CreateCrawlerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateCrawlerRequestTypeDef
+from mypy_boto3_glue.type_defs import CreateCrawlerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1396,10 +1396,10 @@ Optional fields:
 - `DisableValueTrimming`: `bool`
 - `AllowSingleColumn`: `bool`
 
-## CreateDatabaseRequestTypeDef
+## CreateDatabaseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateDatabaseRequestTypeDef
+from mypy_boto3_glue.type_defs import CreateDatabaseRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1410,10 +1410,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## CreateDevEndpointRequestTypeDef
+## CreateDevEndpointRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateDevEndpointRequestTypeDef
+from mypy_boto3_glue.type_defs import CreateDevEndpointRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1437,10 +1437,10 @@ Optional fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Arguments`: `Dict`\[`str`, `str`\]
 
-## CreateDevEndpointResponseResponseTypeDef
+## CreateDevEndpointResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateDevEndpointResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import CreateDevEndpointResponseTypeDef
 ```
 
 Required fields:
@@ -1483,10 +1483,10 @@ Optional fields:
 
 - `CustomPatterns`: `str`
 
-## CreateJobRequestTypeDef
+## CreateJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateJobRequestTypeDef
+from mypy_boto3_glue.type_defs import CreateJobRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1517,10 +1517,10 @@ Optional fields:
 - `NumberOfWorkers`: `int`
 - `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
 
-## CreateJobResponseResponseTypeDef
+## CreateJobResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateJobResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import CreateJobResponseTypeDef
 ```
 
 Required fields:
@@ -1540,10 +1540,10 @@ Required fields:
 - `Name`: `str`
 - `JsonPath`: `str`
 
-## CreateMLTransformRequestTypeDef
+## CreateMLTransformRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateMLTransformRequestTypeDef
+from mypy_boto3_glue.type_defs import CreateMLTransformRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1568,10 +1568,10 @@ Optional fields:
 - `TransformEncryption`:
   [TransformEncryptionTypeDef](./type_defs.md#transformencryptiontypedef)
 
-## CreateMLTransformResponseResponseTypeDef
+## CreateMLTransformResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateMLTransformResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import CreateMLTransformResponseTypeDef
 ```
 
 Required fields:
@@ -1580,10 +1580,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePartitionIndexRequestTypeDef
+## CreatePartitionIndexRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreatePartitionIndexRequestTypeDef
+from mypy_boto3_glue.type_defs import CreatePartitionIndexRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1597,10 +1597,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## CreatePartitionRequestTypeDef
+## CreatePartitionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreatePartitionRequestTypeDef
+from mypy_boto3_glue.type_defs import CreatePartitionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1614,10 +1614,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## CreateRegistryInputTypeDef
+## CreateRegistryInputRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateRegistryInputTypeDef
+from mypy_boto3_glue.type_defs import CreateRegistryInputRequestTypeDef
 ```
 
 Required fields:
@@ -1629,10 +1629,10 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateRegistryResponseResponseTypeDef
+## CreateRegistryResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateRegistryResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import CreateRegistryResponseTypeDef
 ```
 
 Required fields:
@@ -1644,10 +1644,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSchemaInputTypeDef
+## CreateSchemaInputRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateSchemaInputTypeDef
+from mypy_boto3_glue.type_defs import CreateSchemaInputRequestTypeDef
 ```
 
 Required fields:
@@ -1663,10 +1663,10 @@ Optional fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `SchemaDefinition`: `str`
 
-## CreateSchemaResponseResponseTypeDef
+## CreateSchemaResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateSchemaResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import CreateSchemaResponseTypeDef
 ```
 
 Required fields:
@@ -1689,10 +1689,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateScriptRequestTypeDef
+## CreateScriptRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateScriptRequestTypeDef
+from mypy_boto3_glue.type_defs import CreateScriptRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1701,10 +1701,10 @@ Optional fields:
 - `DagEdges`: `List`\[[CodeGenEdgeTypeDef](./type_defs.md#codegenedgetypedef)\]
 - `Language`: [LanguageType](./literals.md#languagetype)
 
-## CreateScriptResponseResponseTypeDef
+## CreateScriptResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateScriptResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import CreateScriptResponseTypeDef
 ```
 
 Required fields:
@@ -1714,10 +1714,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSecurityConfigurationRequestTypeDef
+## CreateSecurityConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateSecurityConfigurationRequestTypeDef
+from mypy_boto3_glue.type_defs import CreateSecurityConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1726,10 +1726,10 @@ Required fields:
 - `EncryptionConfiguration`:
   [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 
-## CreateSecurityConfigurationResponseResponseTypeDef
+## CreateSecurityConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateSecurityConfigurationResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import CreateSecurityConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -1739,10 +1739,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTableRequestTypeDef
+## CreateTableRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateTableRequestTypeDef
+from mypy_boto3_glue.type_defs import CreateTableRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1756,10 +1756,10 @@ Optional fields:
 - `PartitionIndexes`:
   `List`\[[PartitionIndexTypeDef](./type_defs.md#partitionindextypedef)\]
 
-## CreateTriggerRequestTypeDef
+## CreateTriggerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateTriggerRequestTypeDef
+from mypy_boto3_glue.type_defs import CreateTriggerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1777,10 +1777,10 @@ Optional fields:
 - `StartOnCreation`: `bool`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateTriggerResponseResponseTypeDef
+## CreateTriggerResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateTriggerResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import CreateTriggerResponseTypeDef
 ```
 
 Required fields:
@@ -1789,10 +1789,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateUserDefinedFunctionRequestTypeDef
+## CreateUserDefinedFunctionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateUserDefinedFunctionRequestTypeDef
+from mypy_boto3_glue.type_defs import CreateUserDefinedFunctionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1805,10 +1805,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## CreateWorkflowRequestTypeDef
+## CreateWorkflowRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateWorkflowRequestTypeDef
+from mypy_boto3_glue.type_defs import CreateWorkflowRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1822,10 +1822,10 @@ Optional fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `MaxConcurrentRuns`: `int`
 
-## CreateWorkflowResponseResponseTypeDef
+## CreateWorkflowResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import CreateWorkflowResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import CreateWorkflowResponseTypeDef
 ```
 
 Required fields:
@@ -1990,20 +1990,20 @@ Required fields:
 - `UnscaledValue`: `bytes`
 - `Scale`: `int`
 
-## DeleteClassifierRequestTypeDef
+## DeleteClassifierRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteClassifierRequestTypeDef
+from mypy_boto3_glue.type_defs import DeleteClassifierRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DeleteColumnStatisticsForPartitionRequestTypeDef
+## DeleteColumnStatisticsForPartitionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteColumnStatisticsForPartitionRequestTypeDef
+from mypy_boto3_glue.type_defs import DeleteColumnStatisticsForPartitionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2017,10 +2017,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## DeleteColumnStatisticsForTableRequestTypeDef
+## DeleteColumnStatisticsForTableRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteColumnStatisticsForTableRequestTypeDef
+from mypy_boto3_glue.type_defs import DeleteColumnStatisticsForTableRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2033,10 +2033,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## DeleteConnectionRequestTypeDef
+## DeleteConnectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteConnectionRequestTypeDef
+from mypy_boto3_glue.type_defs import DeleteConnectionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2047,20 +2047,20 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## DeleteCrawlerRequestTypeDef
+## DeleteCrawlerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteCrawlerRequestTypeDef
+from mypy_boto3_glue.type_defs import DeleteCrawlerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DeleteDatabaseRequestTypeDef
+## DeleteDatabaseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteDatabaseRequestTypeDef
+from mypy_boto3_glue.type_defs import DeleteDatabaseRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2071,30 +2071,30 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## DeleteDevEndpointRequestTypeDef
+## DeleteDevEndpointRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteDevEndpointRequestTypeDef
+from mypy_boto3_glue.type_defs import DeleteDevEndpointRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `EndpointName`: `str`
 
-## DeleteJobRequestTypeDef
+## DeleteJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteJobRequestTypeDef
+from mypy_boto3_glue.type_defs import DeleteJobRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `JobName`: `str`
 
-## DeleteJobResponseResponseTypeDef
+## DeleteJobResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteJobResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import DeleteJobResponseTypeDef
 ```
 
 Required fields:
@@ -2103,20 +2103,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteMLTransformRequestTypeDef
+## DeleteMLTransformRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteMLTransformRequestTypeDef
+from mypy_boto3_glue.type_defs import DeleteMLTransformRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `TransformId`: `str`
 
-## DeleteMLTransformResponseResponseTypeDef
+## DeleteMLTransformResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteMLTransformResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import DeleteMLTransformResponseTypeDef
 ```
 
 Required fields:
@@ -2125,10 +2125,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeletePartitionIndexRequestTypeDef
+## DeletePartitionIndexRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeletePartitionIndexRequestTypeDef
+from mypy_boto3_glue.type_defs import DeletePartitionIndexRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2141,10 +2141,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## DeletePartitionRequestTypeDef
+## DeletePartitionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeletePartitionRequestTypeDef
+from mypy_boto3_glue.type_defs import DeletePartitionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2157,20 +2157,20 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## DeleteRegistryInputTypeDef
+## DeleteRegistryInputRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteRegistryInputTypeDef
+from mypy_boto3_glue.type_defs import DeleteRegistryInputRequestTypeDef
 ```
 
 Required fields:
 
 - `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
 
-## DeleteRegistryResponseResponseTypeDef
+## DeleteRegistryResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteRegistryResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import DeleteRegistryResponseTypeDef
 ```
 
 Required fields:
@@ -2181,10 +2181,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteResourcePolicyRequestTypeDef
+## DeleteResourcePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteResourcePolicyRequestTypeDef
+from mypy_boto3_glue.type_defs import DeleteResourcePolicyRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2192,20 +2192,20 @@ Optional fields:
 - `PolicyHashCondition`: `str`
 - `ResourceArn`: `str`
 
-## DeleteSchemaInputTypeDef
+## DeleteSchemaInputRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteSchemaInputTypeDef
+from mypy_boto3_glue.type_defs import DeleteSchemaInputRequestTypeDef
 ```
 
 Required fields:
 
 - `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
 
-## DeleteSchemaResponseResponseTypeDef
+## DeleteSchemaResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteSchemaResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import DeleteSchemaResponseTypeDef
 ```
 
 Required fields:
@@ -2216,10 +2216,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteSchemaVersionsInputTypeDef
+## DeleteSchemaVersionsInputRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteSchemaVersionsInputTypeDef
+from mypy_boto3_glue.type_defs import DeleteSchemaVersionsInputRequestTypeDef
 ```
 
 Required fields:
@@ -2227,10 +2227,10 @@ Required fields:
 - `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
 - `Versions`: `str`
 
-## DeleteSchemaVersionsResponseResponseTypeDef
+## DeleteSchemaVersionsResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteSchemaVersionsResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import DeleteSchemaVersionsResponseTypeDef
 ```
 
 Required fields:
@@ -2240,20 +2240,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteSecurityConfigurationRequestTypeDef
+## DeleteSecurityConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteSecurityConfigurationRequestTypeDef
+from mypy_boto3_glue.type_defs import DeleteSecurityConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DeleteTableRequestTypeDef
+## DeleteTableRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteTableRequestTypeDef
+from mypy_boto3_glue.type_defs import DeleteTableRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2265,10 +2265,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## DeleteTableVersionRequestTypeDef
+## DeleteTableVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteTableVersionRequestTypeDef
+from mypy_boto3_glue.type_defs import DeleteTableVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2281,20 +2281,20 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## DeleteTriggerRequestTypeDef
+## DeleteTriggerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteTriggerRequestTypeDef
+from mypy_boto3_glue.type_defs import DeleteTriggerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DeleteTriggerResponseResponseTypeDef
+## DeleteTriggerResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteTriggerResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import DeleteTriggerResponseTypeDef
 ```
 
 Required fields:
@@ -2303,10 +2303,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteUserDefinedFunctionRequestTypeDef
+## DeleteUserDefinedFunctionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteUserDefinedFunctionRequestTypeDef
+from mypy_boto3_glue.type_defs import DeleteUserDefinedFunctionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2318,20 +2318,20 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## DeleteWorkflowRequestTypeDef
+## DeleteWorkflowRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteWorkflowRequestTypeDef
+from mypy_boto3_glue.type_defs import DeleteWorkflowRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DeleteWorkflowResponseResponseTypeDef
+## DeleteWorkflowResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import DeleteWorkflowResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import DeleteWorkflowResponseTypeDef
 ```
 
 Required fields:
@@ -2554,20 +2554,20 @@ Optional fields:
 - `JobName`: `str`
 - `JobRunId`: `str`
 
-## GetCatalogImportStatusRequestTypeDef
+## GetCatalogImportStatusRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetCatalogImportStatusRequestTypeDef
+from mypy_boto3_glue.type_defs import GetCatalogImportStatusRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `CatalogId`: `str`
 
-## GetCatalogImportStatusResponseResponseTypeDef
+## GetCatalogImportStatusResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetCatalogImportStatusResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetCatalogImportStatusResponseTypeDef
 ```
 
 Required fields:
@@ -2577,20 +2577,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetClassifierRequestTypeDef
+## GetClassifierRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetClassifierRequestTypeDef
+from mypy_boto3_glue.type_defs import GetClassifierRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## GetClassifierResponseResponseTypeDef
+## GetClassifierResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetClassifierResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetClassifierResponseTypeDef
 ```
 
 Required fields:
@@ -2599,10 +2599,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetClassifiersRequestTypeDef
+## GetClassifiersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetClassifiersRequestTypeDef
+from mypy_boto3_glue.type_defs import GetClassifiersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2610,10 +2610,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## GetClassifiersResponseResponseTypeDef
+## GetClassifiersResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetClassifiersResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetClassifiersResponseTypeDef
 ```
 
 Required fields:
@@ -2624,10 +2624,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetColumnStatisticsForPartitionRequestTypeDef
+## GetColumnStatisticsForPartitionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetColumnStatisticsForPartitionRequestTypeDef
+from mypy_boto3_glue.type_defs import GetColumnStatisticsForPartitionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2641,10 +2641,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## GetColumnStatisticsForPartitionResponseResponseTypeDef
+## GetColumnStatisticsForPartitionResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetColumnStatisticsForPartitionResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetColumnStatisticsForPartitionResponseTypeDef
 ```
 
 Required fields:
@@ -2655,10 +2655,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetColumnStatisticsForTableRequestTypeDef
+## GetColumnStatisticsForTableRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetColumnStatisticsForTableRequestTypeDef
+from mypy_boto3_glue.type_defs import GetColumnStatisticsForTableRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2671,10 +2671,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## GetColumnStatisticsForTableResponseResponseTypeDef
+## GetColumnStatisticsForTableResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetColumnStatisticsForTableResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetColumnStatisticsForTableResponseTypeDef
 ```
 
 Required fields:
@@ -2685,10 +2685,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetConnectionRequestTypeDef
+## GetConnectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetConnectionRequestTypeDef
+from mypy_boto3_glue.type_defs import GetConnectionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2700,10 +2700,10 @@ Optional fields:
 - `CatalogId`: `str`
 - `HidePassword`: `bool`
 
-## GetConnectionResponseResponseTypeDef
+## GetConnectionResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetConnectionResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetConnectionResponseTypeDef
 ```
 
 Required fields:
@@ -2723,10 +2723,10 @@ Optional fields:
 - `MatchCriteria`: `List`\[`str`\]
 - `ConnectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
 
-## GetConnectionsRequestTypeDef
+## GetConnectionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetConnectionsRequestTypeDef
+from mypy_boto3_glue.type_defs import GetConnectionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2738,10 +2738,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## GetConnectionsResponseResponseTypeDef
+## GetConnectionsResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetConnectionsResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetConnectionsResponseTypeDef
 ```
 
 Required fields:
@@ -2752,10 +2752,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCrawlerMetricsRequestTypeDef
+## GetCrawlerMetricsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetCrawlerMetricsRequestTypeDef
+from mypy_boto3_glue.type_defs import GetCrawlerMetricsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2764,10 +2764,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## GetCrawlerMetricsResponseResponseTypeDef
+## GetCrawlerMetricsResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetCrawlerMetricsResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetCrawlerMetricsResponseTypeDef
 ```
 
 Required fields:
@@ -2778,20 +2778,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCrawlerRequestTypeDef
+## GetCrawlerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetCrawlerRequestTypeDef
+from mypy_boto3_glue.type_defs import GetCrawlerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## GetCrawlerResponseResponseTypeDef
+## GetCrawlerResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetCrawlerResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetCrawlerResponseTypeDef
 ```
 
 Required fields:
@@ -2800,10 +2800,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCrawlersRequestTypeDef
+## GetCrawlersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetCrawlersRequestTypeDef
+from mypy_boto3_glue.type_defs import GetCrawlersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2811,10 +2811,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## GetCrawlersResponseResponseTypeDef
+## GetCrawlersResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetCrawlersResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetCrawlersResponseTypeDef
 ```
 
 Required fields:
@@ -2824,20 +2824,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDataCatalogEncryptionSettingsRequestTypeDef
+## GetDataCatalogEncryptionSettingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetDataCatalogEncryptionSettingsRequestTypeDef
+from mypy_boto3_glue.type_defs import GetDataCatalogEncryptionSettingsRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `CatalogId`: `str`
 
-## GetDataCatalogEncryptionSettingsResponseResponseTypeDef
+## GetDataCatalogEncryptionSettingsResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetDataCatalogEncryptionSettingsResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetDataCatalogEncryptionSettingsResponseTypeDef
 ```
 
 Required fields:
@@ -2847,10 +2847,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDatabaseRequestTypeDef
+## GetDatabaseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetDatabaseRequestTypeDef
+from mypy_boto3_glue.type_defs import GetDatabaseRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2861,10 +2861,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## GetDatabaseResponseResponseTypeDef
+## GetDatabaseResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetDatabaseResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetDatabaseResponseTypeDef
 ```
 
 Required fields:
@@ -2873,10 +2873,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDatabasesRequestTypeDef
+## GetDatabasesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetDatabasesRequestTypeDef
+from mypy_boto3_glue.type_defs import GetDatabasesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2887,10 +2887,10 @@ Optional fields:
 - `ResourceShareType`:
   [ResourceShareTypeType](./literals.md#resourcesharetypetype)
 
-## GetDatabasesResponseResponseTypeDef
+## GetDatabasesResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetDatabasesResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetDatabasesResponseTypeDef
 ```
 
 Required fields:
@@ -2900,20 +2900,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDataflowGraphRequestTypeDef
+## GetDataflowGraphRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetDataflowGraphRequestTypeDef
+from mypy_boto3_glue.type_defs import GetDataflowGraphRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `PythonScript`: `str`
 
-## GetDataflowGraphResponseResponseTypeDef
+## GetDataflowGraphResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetDataflowGraphResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetDataflowGraphResponseTypeDef
 ```
 
 Required fields:
@@ -2923,20 +2923,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDevEndpointRequestTypeDef
+## GetDevEndpointRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetDevEndpointRequestTypeDef
+from mypy_boto3_glue.type_defs import GetDevEndpointRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `EndpointName`: `str`
 
-## GetDevEndpointResponseResponseTypeDef
+## GetDevEndpointResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetDevEndpointResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetDevEndpointResponseTypeDef
 ```
 
 Required fields:
@@ -2945,10 +2945,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDevEndpointsRequestTypeDef
+## GetDevEndpointsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetDevEndpointsRequestTypeDef
+from mypy_boto3_glue.type_defs import GetDevEndpointsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2956,10 +2956,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## GetDevEndpointsResponseResponseTypeDef
+## GetDevEndpointsResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetDevEndpointsResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetDevEndpointsResponseTypeDef
 ```
 
 Required fields:
@@ -2970,10 +2970,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetJobBookmarkRequestTypeDef
+## GetJobBookmarkRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetJobBookmarkRequestTypeDef
+from mypy_boto3_glue.type_defs import GetJobBookmarkRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2984,10 +2984,10 @@ Optional fields:
 
 - `RunId`: `str`
 
-## GetJobBookmarkResponseResponseTypeDef
+## GetJobBookmarkResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetJobBookmarkResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetJobBookmarkResponseTypeDef
 ```
 
 Required fields:
@@ -2997,20 +2997,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetJobRequestTypeDef
+## GetJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetJobRequestTypeDef
+from mypy_boto3_glue.type_defs import GetJobRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `JobName`: `str`
 
-## GetJobResponseResponseTypeDef
+## GetJobResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetJobResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetJobResponseTypeDef
 ```
 
 Required fields:
@@ -3019,10 +3019,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetJobRunRequestTypeDef
+## GetJobRunRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetJobRunRequestTypeDef
+from mypy_boto3_glue.type_defs import GetJobRunRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3034,10 +3034,10 @@ Optional fields:
 
 - `PredecessorsIncluded`: `bool`
 
-## GetJobRunResponseResponseTypeDef
+## GetJobRunResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetJobRunResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetJobRunResponseTypeDef
 ```
 
 Required fields:
@@ -3046,10 +3046,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetJobRunsRequestTypeDef
+## GetJobRunsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetJobRunsRequestTypeDef
+from mypy_boto3_glue.type_defs import GetJobRunsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3061,10 +3061,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## GetJobRunsResponseResponseTypeDef
+## GetJobRunsResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetJobRunsResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetJobRunsResponseTypeDef
 ```
 
 Required fields:
@@ -3074,10 +3074,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetJobsRequestTypeDef
+## GetJobsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetJobsRequestTypeDef
+from mypy_boto3_glue.type_defs import GetJobsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3085,10 +3085,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## GetJobsResponseResponseTypeDef
+## GetJobsResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetJobsResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetJobsResponseTypeDef
 ```
 
 Required fields:
@@ -3098,10 +3098,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMLTaskRunRequestTypeDef
+## GetMLTaskRunRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetMLTaskRunRequestTypeDef
+from mypy_boto3_glue.type_defs import GetMLTaskRunRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3109,10 +3109,10 @@ Required fields:
 - `TransformId`: `str`
 - `TaskRunId`: `str`
 
-## GetMLTaskRunResponseResponseTypeDef
+## GetMLTaskRunResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetMLTaskRunResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetMLTaskRunResponseTypeDef
 ```
 
 Required fields:
@@ -3131,10 +3131,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMLTaskRunsRequestTypeDef
+## GetMLTaskRunsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetMLTaskRunsRequestTypeDef
+from mypy_boto3_glue.type_defs import GetMLTaskRunsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3150,10 +3150,10 @@ Optional fields:
 - `Sort`:
   [TaskRunSortCriteriaTypeDef](./type_defs.md#taskrunsortcriteriatypedef)
 
-## GetMLTaskRunsResponseResponseTypeDef
+## GetMLTaskRunsResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetMLTaskRunsResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetMLTaskRunsResponseTypeDef
 ```
 
 Required fields:
@@ -3163,20 +3163,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMLTransformRequestTypeDef
+## GetMLTransformRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetMLTransformRequestTypeDef
+from mypy_boto3_glue.type_defs import GetMLTransformRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `TransformId`: `str`
 
-## GetMLTransformResponseResponseTypeDef
+## GetMLTransformResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetMLTransformResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetMLTransformResponseTypeDef
 ```
 
 Required fields:
@@ -3207,10 +3207,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMLTransformsRequestTypeDef
+## GetMLTransformsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetMLTransformsRequestTypeDef
+from mypy_boto3_glue.type_defs import GetMLTransformsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3222,10 +3222,10 @@ Optional fields:
 - `Sort`:
   [TransformSortCriteriaTypeDef](./type_defs.md#transformsortcriteriatypedef)
 
-## GetMLTransformsResponseResponseTypeDef
+## GetMLTransformsResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetMLTransformsResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetMLTransformsResponseTypeDef
 ```
 
 Required fields:
@@ -3236,10 +3236,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMappingRequestTypeDef
+## GetMappingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetMappingRequestTypeDef
+from mypy_boto3_glue.type_defs import GetMappingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3251,10 +3251,10 @@ Optional fields:
 - `Sinks`: `List`\[[CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)\]
 - `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 
-## GetMappingResponseResponseTypeDef
+## GetMappingResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetMappingResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetMappingResponseTypeDef
 ```
 
 Required fields:
@@ -3264,10 +3264,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPartitionIndexesRequestTypeDef
+## GetPartitionIndexesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetPartitionIndexesRequestTypeDef
+from mypy_boto3_glue.type_defs import GetPartitionIndexesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3280,10 +3280,10 @@ Optional fields:
 - `CatalogId`: `str`
 - `NextToken`: `str`
 
-## GetPartitionIndexesResponseResponseTypeDef
+## GetPartitionIndexesResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetPartitionIndexesResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetPartitionIndexesResponseTypeDef
 ```
 
 Required fields:
@@ -3294,10 +3294,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPartitionRequestTypeDef
+## GetPartitionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetPartitionRequestTypeDef
+from mypy_boto3_glue.type_defs import GetPartitionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3310,10 +3310,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## GetPartitionResponseResponseTypeDef
+## GetPartitionResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetPartitionResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetPartitionResponseTypeDef
 ```
 
 Required fields:
@@ -3322,10 +3322,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPartitionsRequestTypeDef
+## GetPartitionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetPartitionsRequestTypeDef
+from mypy_boto3_glue.type_defs import GetPartitionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3342,10 +3342,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `ExcludeColumnSchema`: `bool`
 
-## GetPartitionsResponseResponseTypeDef
+## GetPartitionsResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetPartitionsResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetPartitionsResponseTypeDef
 ```
 
 Required fields:
@@ -3355,10 +3355,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPlanRequestTypeDef
+## GetPlanRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetPlanRequestTypeDef
+from mypy_boto3_glue.type_defs import GetPlanRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3374,10 +3374,10 @@ Optional fields:
 - `Language`: [LanguageType](./literals.md#languagetype)
 - `AdditionalPlanOptionsMap`: `Dict`\[`str`, `str`\]
 
-## GetPlanResponseResponseTypeDef
+## GetPlanResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetPlanResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetPlanResponseTypeDef
 ```
 
 Required fields:
@@ -3387,20 +3387,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRegistryInputTypeDef
+## GetRegistryInputRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetRegistryInputTypeDef
+from mypy_boto3_glue.type_defs import GetRegistryInputRequestTypeDef
 ```
 
 Required fields:
 
 - `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
 
-## GetRegistryResponseResponseTypeDef
+## GetRegistryResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetRegistryResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetRegistryResponseTypeDef
 ```
 
 Required fields:
@@ -3414,10 +3414,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResourcePoliciesRequestTypeDef
+## GetResourcePoliciesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetResourcePoliciesRequestTypeDef
+from mypy_boto3_glue.type_defs import GetResourcePoliciesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3425,10 +3425,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## GetResourcePoliciesResponseResponseTypeDef
+## GetResourcePoliciesResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetResourcePoliciesResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetResourcePoliciesResponseTypeDef
 ```
 
 Required fields:
@@ -3439,20 +3439,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResourcePolicyRequestTypeDef
+## GetResourcePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetResourcePolicyRequestTypeDef
+from mypy_boto3_glue.type_defs import GetResourcePolicyRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `ResourceArn`: `str`
 
-## GetResourcePolicyResponseResponseTypeDef
+## GetResourcePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetResourcePolicyResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetResourcePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -3464,10 +3464,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSchemaByDefinitionInputTypeDef
+## GetSchemaByDefinitionInputRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetSchemaByDefinitionInputTypeDef
+from mypy_boto3_glue.type_defs import GetSchemaByDefinitionInputRequestTypeDef
 ```
 
 Required fields:
@@ -3475,10 +3475,10 @@ Required fields:
 - `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
 - `SchemaDefinition`: `str`
 
-## GetSchemaByDefinitionResponseResponseTypeDef
+## GetSchemaByDefinitionResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetSchemaByDefinitionResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetSchemaByDefinitionResponseTypeDef
 ```
 
 Required fields:
@@ -3491,20 +3491,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSchemaInputTypeDef
+## GetSchemaInputRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetSchemaInputTypeDef
+from mypy_boto3_glue.type_defs import GetSchemaInputRequestTypeDef
 ```
 
 Required fields:
 
 - `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
 
-## GetSchemaResponseResponseTypeDef
+## GetSchemaResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetSchemaResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetSchemaResponseTypeDef
 ```
 
 Required fields:
@@ -3525,10 +3525,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSchemaVersionInputTypeDef
+## GetSchemaVersionInputRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetSchemaVersionInputTypeDef
+from mypy_boto3_glue.type_defs import GetSchemaVersionInputRequestTypeDef
 ```
 
 Optional fields:
@@ -3538,10 +3538,10 @@ Optional fields:
 - `SchemaVersionNumber`:
   [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
 
-## GetSchemaVersionResponseResponseTypeDef
+## GetSchemaVersionResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetSchemaVersionResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetSchemaVersionResponseTypeDef
 ```
 
 Required fields:
@@ -3556,10 +3556,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSchemaVersionsDiffInputTypeDef
+## GetSchemaVersionsDiffInputRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetSchemaVersionsDiffInputTypeDef
+from mypy_boto3_glue.type_defs import GetSchemaVersionsDiffInputRequestTypeDef
 ```
 
 Required fields:
@@ -3572,10 +3572,10 @@ Required fields:
 - `SchemaDiffType`: `Literal['SYNTAX_DIFF']` (see
   [SchemaDiffTypeType](./literals.md#schemadifftypetype))
 
-## GetSchemaVersionsDiffResponseResponseTypeDef
+## GetSchemaVersionsDiffResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetSchemaVersionsDiffResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetSchemaVersionsDiffResponseTypeDef
 ```
 
 Required fields:
@@ -3584,20 +3584,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSecurityConfigurationRequestTypeDef
+## GetSecurityConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetSecurityConfigurationRequestTypeDef
+from mypy_boto3_glue.type_defs import GetSecurityConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## GetSecurityConfigurationResponseResponseTypeDef
+## GetSecurityConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetSecurityConfigurationResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetSecurityConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -3607,10 +3607,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSecurityConfigurationsRequestTypeDef
+## GetSecurityConfigurationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetSecurityConfigurationsRequestTypeDef
+from mypy_boto3_glue.type_defs import GetSecurityConfigurationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3618,10 +3618,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## GetSecurityConfigurationsResponseResponseTypeDef
+## GetSecurityConfigurationsResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetSecurityConfigurationsResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetSecurityConfigurationsResponseTypeDef
 ```
 
 Required fields:
@@ -3632,10 +3632,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTableRequestTypeDef
+## GetTableRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetTableRequestTypeDef
+from mypy_boto3_glue.type_defs import GetTableRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3647,10 +3647,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## GetTableResponseResponseTypeDef
+## GetTableResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetTableResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetTableResponseTypeDef
 ```
 
 Required fields:
@@ -3659,10 +3659,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTableVersionRequestTypeDef
+## GetTableVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetTableVersionRequestTypeDef
+from mypy_boto3_glue.type_defs import GetTableVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3675,10 +3675,10 @@ Optional fields:
 - `CatalogId`: `str`
 - `VersionId`: `str`
 
-## GetTableVersionResponseResponseTypeDef
+## GetTableVersionResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetTableVersionResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetTableVersionResponseTypeDef
 ```
 
 Required fields:
@@ -3687,10 +3687,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTableVersionsRequestTypeDef
+## GetTableVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetTableVersionsRequestTypeDef
+from mypy_boto3_glue.type_defs import GetTableVersionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3704,10 +3704,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## GetTableVersionsResponseResponseTypeDef
+## GetTableVersionsResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetTableVersionsResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetTableVersionsResponseTypeDef
 ```
 
 Required fields:
@@ -3718,10 +3718,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTablesRequestTypeDef
+## GetTablesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetTablesRequestTypeDef
+from mypy_boto3_glue.type_defs import GetTablesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3735,10 +3735,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## GetTablesResponseResponseTypeDef
+## GetTablesResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetTablesResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetTablesResponseTypeDef
 ```
 
 Required fields:
@@ -3748,20 +3748,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTagsRequestTypeDef
+## GetTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetTagsRequestTypeDef
+from mypy_boto3_glue.type_defs import GetTagsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## GetTagsResponseResponseTypeDef
+## GetTagsResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetTagsResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetTagsResponseTypeDef
 ```
 
 Required fields:
@@ -3770,20 +3770,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTriggerRequestTypeDef
+## GetTriggerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetTriggerRequestTypeDef
+from mypy_boto3_glue.type_defs import GetTriggerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## GetTriggerResponseResponseTypeDef
+## GetTriggerResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetTriggerResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetTriggerResponseTypeDef
 ```
 
 Required fields:
@@ -3792,10 +3792,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTriggersRequestTypeDef
+## GetTriggersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetTriggersRequestTypeDef
+from mypy_boto3_glue.type_defs import GetTriggersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3804,10 +3804,10 @@ Optional fields:
 - `DependentJobName`: `str`
 - `MaxResults`: `int`
 
-## GetTriggersResponseResponseTypeDef
+## GetTriggersResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetTriggersResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetTriggersResponseTypeDef
 ```
 
 Required fields:
@@ -3817,10 +3817,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetUserDefinedFunctionRequestTypeDef
+## GetUserDefinedFunctionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetUserDefinedFunctionRequestTypeDef
+from mypy_boto3_glue.type_defs import GetUserDefinedFunctionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3832,10 +3832,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## GetUserDefinedFunctionResponseResponseTypeDef
+## GetUserDefinedFunctionResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetUserDefinedFunctionResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetUserDefinedFunctionResponseTypeDef
 ```
 
 Required fields:
@@ -3845,10 +3845,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetUserDefinedFunctionsRequestTypeDef
+## GetUserDefinedFunctionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetUserDefinedFunctionsRequestTypeDef
+from mypy_boto3_glue.type_defs import GetUserDefinedFunctionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3862,10 +3862,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## GetUserDefinedFunctionsResponseResponseTypeDef
+## GetUserDefinedFunctionsResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetUserDefinedFunctionsResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetUserDefinedFunctionsResponseTypeDef
 ```
 
 Required fields:
@@ -3876,10 +3876,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetWorkflowRequestTypeDef
+## GetWorkflowRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetWorkflowRequestTypeDef
+from mypy_boto3_glue.type_defs import GetWorkflowRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3890,10 +3890,10 @@ Optional fields:
 
 - `IncludeGraph`: `bool`
 
-## GetWorkflowResponseResponseTypeDef
+## GetWorkflowResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetWorkflowResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetWorkflowResponseTypeDef
 ```
 
 Required fields:
@@ -3902,10 +3902,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetWorkflowRunPropertiesRequestTypeDef
+## GetWorkflowRunPropertiesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetWorkflowRunPropertiesRequestTypeDef
+from mypy_boto3_glue.type_defs import GetWorkflowRunPropertiesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3913,10 +3913,10 @@ Required fields:
 - `Name`: `str`
 - `RunId`: `str`
 
-## GetWorkflowRunPropertiesResponseResponseTypeDef
+## GetWorkflowRunPropertiesResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetWorkflowRunPropertiesResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetWorkflowRunPropertiesResponseTypeDef
 ```
 
 Required fields:
@@ -3925,10 +3925,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetWorkflowRunRequestTypeDef
+## GetWorkflowRunRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetWorkflowRunRequestTypeDef
+from mypy_boto3_glue.type_defs import GetWorkflowRunRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3940,10 +3940,10 @@ Optional fields:
 
 - `IncludeGraph`: `bool`
 
-## GetWorkflowRunResponseResponseTypeDef
+## GetWorkflowRunResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetWorkflowRunResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetWorkflowRunResponseTypeDef
 ```
 
 Required fields:
@@ -3952,10 +3952,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetWorkflowRunsRequestTypeDef
+## GetWorkflowRunsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetWorkflowRunsRequestTypeDef
+from mypy_boto3_glue.type_defs import GetWorkflowRunsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3968,10 +3968,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## GetWorkflowRunsResponseResponseTypeDef
+## GetWorkflowRunsResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import GetWorkflowRunsResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import GetWorkflowRunsResponseTypeDef
 ```
 
 Required fields:
@@ -4029,10 +4029,10 @@ Optional fields:
 - `Version`: `int`
 - `CustomPatterns`: `str`
 
-## ImportCatalogToGlueRequestTypeDef
+## ImportCatalogToGlueRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import ImportCatalogToGlueRequestTypeDef
+from mypy_boto3_glue.type_defs import ImportCatalogToGlueRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -4270,10 +4270,10 @@ Optional fields:
 - `CrawlerLineageSettings`:
   [CrawlerLineageSettingsType](./literals.md#crawlerlineagesettingstype)
 
-## ListCrawlersRequestTypeDef
+## ListCrawlersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import ListCrawlersRequestTypeDef
+from mypy_boto3_glue.type_defs import ListCrawlersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -4282,10 +4282,10 @@ Optional fields:
 - `NextToken`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## ListCrawlersResponseResponseTypeDef
+## ListCrawlersResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import ListCrawlersResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import ListCrawlersResponseTypeDef
 ```
 
 Required fields:
@@ -4295,10 +4295,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDevEndpointsRequestTypeDef
+## ListDevEndpointsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import ListDevEndpointsRequestTypeDef
+from mypy_boto3_glue.type_defs import ListDevEndpointsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -4307,10 +4307,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## ListDevEndpointsResponseResponseTypeDef
+## ListDevEndpointsResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import ListDevEndpointsResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import ListDevEndpointsResponseTypeDef
 ```
 
 Required fields:
@@ -4320,10 +4320,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListJobsRequestTypeDef
+## ListJobsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import ListJobsRequestTypeDef
+from mypy_boto3_glue.type_defs import ListJobsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -4332,10 +4332,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## ListJobsResponseResponseTypeDef
+## ListJobsResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import ListJobsResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import ListJobsResponseTypeDef
 ```
 
 Required fields:
@@ -4345,10 +4345,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMLTransformsRequestTypeDef
+## ListMLTransformsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import ListMLTransformsRequestTypeDef
+from mypy_boto3_glue.type_defs import ListMLTransformsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -4361,10 +4361,10 @@ Optional fields:
   [TransformSortCriteriaTypeDef](./type_defs.md#transformsortcriteriatypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## ListMLTransformsResponseResponseTypeDef
+## ListMLTransformsResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import ListMLTransformsResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import ListMLTransformsResponseTypeDef
 ```
 
 Required fields:
@@ -4374,10 +4374,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRegistriesInputTypeDef
+## ListRegistriesInputRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import ListRegistriesInputTypeDef
+from mypy_boto3_glue.type_defs import ListRegistriesInputRequestTypeDef
 ```
 
 Optional fields:
@@ -4385,10 +4385,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListRegistriesResponseResponseTypeDef
+## ListRegistriesResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import ListRegistriesResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import ListRegistriesResponseTypeDef
 ```
 
 Required fields:
@@ -4399,10 +4399,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSchemaVersionsInputTypeDef
+## ListSchemaVersionsInputRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import ListSchemaVersionsInputTypeDef
+from mypy_boto3_glue.type_defs import ListSchemaVersionsInputRequestTypeDef
 ```
 
 Required fields:
@@ -4414,10 +4414,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListSchemaVersionsResponseResponseTypeDef
+## ListSchemaVersionsResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import ListSchemaVersionsResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import ListSchemaVersionsResponseTypeDef
 ```
 
 Required fields:
@@ -4428,10 +4428,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSchemasInputTypeDef
+## ListSchemasInputRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import ListSchemasInputTypeDef
+from mypy_boto3_glue.type_defs import ListSchemasInputRequestTypeDef
 ```
 
 Optional fields:
@@ -4440,10 +4440,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListSchemasResponseResponseTypeDef
+## ListSchemasResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import ListSchemasResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import ListSchemasResponseTypeDef
 ```
 
 Required fields:
@@ -4454,10 +4454,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTriggersRequestTypeDef
+## ListTriggersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import ListTriggersRequestTypeDef
+from mypy_boto3_glue.type_defs import ListTriggersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -4467,10 +4467,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## ListTriggersResponseResponseTypeDef
+## ListTriggersResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import ListTriggersResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import ListTriggersResponseTypeDef
 ```
 
 Required fields:
@@ -4480,10 +4480,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListWorkflowsRequestTypeDef
+## ListWorkflowsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import ListWorkflowsRequestTypeDef
+from mypy_boto3_glue.type_defs import ListWorkflowsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -4491,10 +4491,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListWorkflowsResponseResponseTypeDef
+## ListWorkflowsResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import ListWorkflowsResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import ListWorkflowsResponseTypeDef
 ```
 
 Required fields:
@@ -4836,10 +4836,10 @@ Optional fields:
 - `Value`: `str`
 - `Comparator`: [ComparatorType](./literals.md#comparatortype)
 
-## PutDataCatalogEncryptionSettingsRequestTypeDef
+## PutDataCatalogEncryptionSettingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import PutDataCatalogEncryptionSettingsRequestTypeDef
+from mypy_boto3_glue.type_defs import PutDataCatalogEncryptionSettingsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4851,10 +4851,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## PutResourcePolicyRequestTypeDef
+## PutResourcePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import PutResourcePolicyRequestTypeDef
+from mypy_boto3_glue.type_defs import PutResourcePolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4870,10 +4870,10 @@ Optional fields:
 - `EnableHybrid`:
   [EnableHybridValuesType](./literals.md#enablehybridvaluestype)
 
-## PutResourcePolicyResponseResponseTypeDef
+## PutResourcePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import PutResourcePolicyResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import PutResourcePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -4882,10 +4882,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutSchemaVersionMetadataInputTypeDef
+## PutSchemaVersionMetadataInputRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import PutSchemaVersionMetadataInputTypeDef
+from mypy_boto3_glue.type_defs import PutSchemaVersionMetadataInputRequestTypeDef
 ```
 
 Required fields:
@@ -4900,10 +4900,10 @@ Optional fields:
   [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
 - `SchemaVersionId`: `str`
 
-## PutSchemaVersionMetadataResponseResponseTypeDef
+## PutSchemaVersionMetadataResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import PutSchemaVersionMetadataResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import PutSchemaVersionMetadataResponseTypeDef
 ```
 
 Required fields:
@@ -4919,10 +4919,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutWorkflowRunPropertiesRequestTypeDef
+## PutWorkflowRunPropertiesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import PutWorkflowRunPropertiesRequestTypeDef
+from mypy_boto3_glue.type_defs import PutWorkflowRunPropertiesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4931,10 +4931,10 @@ Required fields:
 - `RunId`: `str`
 - `RunProperties`: `Dict`\[`str`, `str`\]
 
-## QuerySchemaVersionMetadataInputTypeDef
+## QuerySchemaVersionMetadataInputRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import QuerySchemaVersionMetadataInputTypeDef
+from mypy_boto3_glue.type_defs import QuerySchemaVersionMetadataInputRequestTypeDef
 ```
 
 Optional fields:
@@ -4948,10 +4948,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## QuerySchemaVersionMetadataResponseResponseTypeDef
+## QuerySchemaVersionMetadataResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import QuerySchemaVersionMetadataResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import QuerySchemaVersionMetadataResponseTypeDef
 ```
 
 Required fields:
@@ -4973,10 +4973,10 @@ Optional fields:
 
 - `RecrawlBehavior`: [RecrawlBehaviorType](./literals.md#recrawlbehaviortype)
 
-## RegisterSchemaVersionInputTypeDef
+## RegisterSchemaVersionInputRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import RegisterSchemaVersionInputTypeDef
+from mypy_boto3_glue.type_defs import RegisterSchemaVersionInputRequestTypeDef
 ```
 
 Required fields:
@@ -4984,10 +4984,10 @@ Required fields:
 - `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
 - `SchemaDefinition`: `str`
 
-## RegisterSchemaVersionResponseResponseTypeDef
+## RegisterSchemaVersionResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import RegisterSchemaVersionResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import RegisterSchemaVersionResponseTypeDef
 ```
 
 Required fields:
@@ -5024,10 +5024,10 @@ Optional fields:
 - `CreatedTime`: `str`
 - `UpdatedTime`: `str`
 
-## RemoveSchemaVersionMetadataInputTypeDef
+## RemoveSchemaVersionMetadataInputRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import RemoveSchemaVersionMetadataInputTypeDef
+from mypy_boto3_glue.type_defs import RemoveSchemaVersionMetadataInputRequestTypeDef
 ```
 
 Required fields:
@@ -5042,10 +5042,10 @@ Optional fields:
   [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
 - `SchemaVersionId`: `str`
 
-## RemoveSchemaVersionMetadataResponseResponseTypeDef
+## RemoveSchemaVersionMetadataResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import RemoveSchemaVersionMetadataResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import RemoveSchemaVersionMetadataResponseTypeDef
 ```
 
 Required fields:
@@ -5061,10 +5061,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ResetJobBookmarkRequestTypeDef
+## ResetJobBookmarkRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import ResetJobBookmarkRequestTypeDef
+from mypy_boto3_glue.type_defs import ResetJobBookmarkRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5075,10 +5075,10 @@ Optional fields:
 
 - `RunId`: `str`
 
-## ResetJobBookmarkResponseResponseTypeDef
+## ResetJobBookmarkResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import ResetJobBookmarkResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import ResetJobBookmarkResponseTypeDef
 ```
 
 Required fields:
@@ -5113,10 +5113,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## ResumeWorkflowRunRequestTypeDef
+## ResumeWorkflowRunRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import ResumeWorkflowRunRequestTypeDef
+from mypy_boto3_glue.type_defs import ResumeWorkflowRunRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5125,10 +5125,10 @@ Required fields:
 - `RunId`: `str`
 - `NodeIds`: `List`\[`str`\]
 
-## ResumeWorkflowRunResponseResponseTypeDef
+## ResumeWorkflowRunResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import ResumeWorkflowRunResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import ResumeWorkflowRunResponseTypeDef
 ```
 
 Required fields:
@@ -5272,10 +5272,10 @@ Optional fields:
 - `LatestVersion`: `bool`
 - `VersionNumber`: `int`
 
-## SearchTablesRequestTypeDef
+## SearchTablesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import SearchTablesRequestTypeDef
+from mypy_boto3_glue.type_defs import SearchTablesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -5291,10 +5291,10 @@ Optional fields:
 - `ResourceShareType`:
   [ResourceShareTypeType](./literals.md#resourcesharetypetype)
 
-## SearchTablesResponseResponseTypeDef
+## SearchTablesResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import SearchTablesResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import SearchTablesResponseTypeDef
 ```
 
 Required fields:
@@ -5363,30 +5363,30 @@ Optional fields:
 - `FieldName`: `str`
 - `Sort`: [SortType](./literals.md#sorttype)
 
-## StartCrawlerRequestTypeDef
+## StartCrawlerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import StartCrawlerRequestTypeDef
+from mypy_boto3_glue.type_defs import StartCrawlerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## StartCrawlerScheduleRequestTypeDef
+## StartCrawlerScheduleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import StartCrawlerScheduleRequestTypeDef
+from mypy_boto3_glue.type_defs import StartCrawlerScheduleRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `CrawlerName`: `str`
 
-## StartExportLabelsTaskRunRequestTypeDef
+## StartExportLabelsTaskRunRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import StartExportLabelsTaskRunRequestTypeDef
+from mypy_boto3_glue.type_defs import StartExportLabelsTaskRunRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5394,10 +5394,10 @@ Required fields:
 - `TransformId`: `str`
 - `OutputS3Path`: `str`
 
-## StartExportLabelsTaskRunResponseResponseTypeDef
+## StartExportLabelsTaskRunResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import StartExportLabelsTaskRunResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import StartExportLabelsTaskRunResponseTypeDef
 ```
 
 Required fields:
@@ -5406,10 +5406,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartImportLabelsTaskRunRequestTypeDef
+## StartImportLabelsTaskRunRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import StartImportLabelsTaskRunRequestTypeDef
+from mypy_boto3_glue.type_defs import StartImportLabelsTaskRunRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5421,10 +5421,10 @@ Optional fields:
 
 - `ReplaceAllLabels`: `bool`
 
-## StartImportLabelsTaskRunResponseResponseTypeDef
+## StartImportLabelsTaskRunResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import StartImportLabelsTaskRunResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import StartImportLabelsTaskRunResponseTypeDef
 ```
 
 Required fields:
@@ -5433,10 +5433,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartJobRunRequestTypeDef
+## StartJobRunRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import StartJobRunRequestTypeDef
+from mypy_boto3_glue.type_defs import StartJobRunRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5456,10 +5456,10 @@ Optional fields:
 - `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
 - `NumberOfWorkers`: `int`
 
-## StartJobRunResponseResponseTypeDef
+## StartJobRunResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import StartJobRunResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import StartJobRunResponseTypeDef
 ```
 
 Required fields:
@@ -5468,20 +5468,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartMLEvaluationTaskRunRequestTypeDef
+## StartMLEvaluationTaskRunRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import StartMLEvaluationTaskRunRequestTypeDef
+from mypy_boto3_glue.type_defs import StartMLEvaluationTaskRunRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `TransformId`: `str`
 
-## StartMLEvaluationTaskRunResponseResponseTypeDef
+## StartMLEvaluationTaskRunResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import StartMLEvaluationTaskRunResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import StartMLEvaluationTaskRunResponseTypeDef
 ```
 
 Required fields:
@@ -5490,10 +5490,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartMLLabelingSetGenerationTaskRunRequestTypeDef
+## StartMLLabelingSetGenerationTaskRunRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import StartMLLabelingSetGenerationTaskRunRequestTypeDef
+from mypy_boto3_glue.type_defs import StartMLLabelingSetGenerationTaskRunRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5501,10 +5501,10 @@ Required fields:
 - `TransformId`: `str`
 - `OutputS3Path`: `str`
 
-## StartMLLabelingSetGenerationTaskRunResponseResponseTypeDef
+## StartMLLabelingSetGenerationTaskRunResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import StartMLLabelingSetGenerationTaskRunResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import StartMLLabelingSetGenerationTaskRunResponseTypeDef
 ```
 
 Required fields:
@@ -5513,20 +5513,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartTriggerRequestTypeDef
+## StartTriggerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import StartTriggerRequestTypeDef
+from mypy_boto3_glue.type_defs import StartTriggerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## StartTriggerResponseResponseTypeDef
+## StartTriggerResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import StartTriggerResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import StartTriggerResponseTypeDef
 ```
 
 Required fields:
@@ -5535,20 +5535,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartWorkflowRunRequestTypeDef
+## StartWorkflowRunRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import StartWorkflowRunRequestTypeDef
+from mypy_boto3_glue.type_defs import StartWorkflowRunRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## StartWorkflowRunResponseResponseTypeDef
+## StartWorkflowRunResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import StartWorkflowRunResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import StartWorkflowRunResponseTypeDef
 ```
 
 Required fields:
@@ -5557,40 +5557,40 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopCrawlerRequestTypeDef
+## StopCrawlerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import StopCrawlerRequestTypeDef
+from mypy_boto3_glue.type_defs import StopCrawlerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## StopCrawlerScheduleRequestTypeDef
+## StopCrawlerScheduleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import StopCrawlerScheduleRequestTypeDef
+from mypy_boto3_glue.type_defs import StopCrawlerScheduleRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `CrawlerName`: `str`
 
-## StopTriggerRequestTypeDef
+## StopTriggerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import StopTriggerRequestTypeDef
+from mypy_boto3_glue.type_defs import StopTriggerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## StopTriggerResponseResponseTypeDef
+## StopTriggerResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import StopTriggerResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import StopTriggerResponseTypeDef
 ```
 
 Required fields:
@@ -5599,10 +5599,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopWorkflowRunRequestTypeDef
+## StopWorkflowRunRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import StopWorkflowRunRequestTypeDef
+from mypy_boto3_glue.type_defs import StopWorkflowRunRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5752,10 +5752,10 @@ Optional fields:
 - `Table`: [TableTypeDef](./type_defs.md#tabletypedef)
 - `VersionId`: `str`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_glue.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5927,10 +5927,10 @@ Optional fields:
 - `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 - `Predicate`: [PredicateTypeDef](./type_defs.md#predicatetypedef)
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_glue.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5938,10 +5938,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagsToRemove`: `List`\[`str`\]
 
-## UpdateClassifierRequestTypeDef
+## UpdateClassifierRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateClassifierRequestTypeDef
+from mypy_boto3_glue.type_defs import UpdateClassifierRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -5955,10 +5955,10 @@ Optional fields:
 - `CsvClassifier`:
   [UpdateCsvClassifierRequestTypeDef](./type_defs.md#updatecsvclassifierrequesttypedef)
 
-## UpdateColumnStatisticsForPartitionRequestTypeDef
+## UpdateColumnStatisticsForPartitionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateColumnStatisticsForPartitionRequestTypeDef
+from mypy_boto3_glue.type_defs import UpdateColumnStatisticsForPartitionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5973,10 +5973,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## UpdateColumnStatisticsForPartitionResponseResponseTypeDef
+## UpdateColumnStatisticsForPartitionResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateColumnStatisticsForPartitionResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import UpdateColumnStatisticsForPartitionResponseTypeDef
 ```
 
 Required fields:
@@ -5986,10 +5986,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateColumnStatisticsForTableRequestTypeDef
+## UpdateColumnStatisticsForTableRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateColumnStatisticsForTableRequestTypeDef
+from mypy_boto3_glue.type_defs import UpdateColumnStatisticsForTableRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6003,10 +6003,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## UpdateColumnStatisticsForTableResponseResponseTypeDef
+## UpdateColumnStatisticsForTableResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateColumnStatisticsForTableResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import UpdateColumnStatisticsForTableResponseTypeDef
 ```
 
 Required fields:
@@ -6016,10 +6016,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateConnectionRequestTypeDef
+## UpdateConnectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateConnectionRequestTypeDef
+from mypy_boto3_glue.type_defs import UpdateConnectionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6032,10 +6032,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## UpdateCrawlerRequestTypeDef
+## UpdateCrawlerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateCrawlerRequestTypeDef
+from mypy_boto3_glue.type_defs import UpdateCrawlerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6059,10 +6059,10 @@ Optional fields:
 - `Configuration`: `str`
 - `CrawlerSecurityConfiguration`: `str`
 
-## UpdateCrawlerScheduleRequestTypeDef
+## UpdateCrawlerScheduleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateCrawlerScheduleRequestTypeDef
+from mypy_boto3_glue.type_defs import UpdateCrawlerScheduleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6092,10 +6092,10 @@ Optional fields:
 - `DisableValueTrimming`: `bool`
 - `AllowSingleColumn`: `bool`
 
-## UpdateDatabaseRequestTypeDef
+## UpdateDatabaseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateDatabaseRequestTypeDef
+from mypy_boto3_glue.type_defs import UpdateDatabaseRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6107,10 +6107,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## UpdateDevEndpointRequestTypeDef
+## UpdateDevEndpointRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateDevEndpointRequestTypeDef
+from mypy_boto3_glue.type_defs import UpdateDevEndpointRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6144,10 +6144,10 @@ Optional fields:
 - `GrokPattern`: `str`
 - `CustomPatterns`: `str`
 
-## UpdateJobRequestTypeDef
+## UpdateJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateJobRequestTypeDef
+from mypy_boto3_glue.type_defs import UpdateJobRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6155,10 +6155,10 @@ Required fields:
 - `JobName`: `str`
 - `JobUpdate`: [JobUpdateTypeDef](./type_defs.md#jobupdatetypedef)
 
-## UpdateJobResponseResponseTypeDef
+## UpdateJobResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateJobResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import UpdateJobResponseTypeDef
 ```
 
 Required fields:
@@ -6181,10 +6181,10 @@ Optional fields:
 
 - `JsonPath`: `str`
 
-## UpdateMLTransformRequestTypeDef
+## UpdateMLTransformRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateMLTransformRequestTypeDef
+from mypy_boto3_glue.type_defs import UpdateMLTransformRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6205,10 +6205,10 @@ Optional fields:
 - `Timeout`: `int`
 - `MaxRetries`: `int`
 
-## UpdateMLTransformResponseResponseTypeDef
+## UpdateMLTransformResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateMLTransformResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import UpdateMLTransformResponseTypeDef
 ```
 
 Required fields:
@@ -6217,10 +6217,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdatePartitionRequestTypeDef
+## UpdatePartitionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdatePartitionRequestTypeDef
+from mypy_boto3_glue.type_defs import UpdatePartitionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6235,10 +6235,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## UpdateRegistryInputTypeDef
+## UpdateRegistryInputRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateRegistryInputTypeDef
+from mypy_boto3_glue.type_defs import UpdateRegistryInputRequestTypeDef
 ```
 
 Required fields:
@@ -6246,10 +6246,10 @@ Required fields:
 - `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
 - `Description`: `str`
 
-## UpdateRegistryResponseResponseTypeDef
+## UpdateRegistryResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateRegistryResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import UpdateRegistryResponseTypeDef
 ```
 
 Required fields:
@@ -6259,10 +6259,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateSchemaInputTypeDef
+## UpdateSchemaInputRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateSchemaInputTypeDef
+from mypy_boto3_glue.type_defs import UpdateSchemaInputRequestTypeDef
 ```
 
 Required fields:
@@ -6276,10 +6276,10 @@ Optional fields:
 - `Compatibility`: [CompatibilityType](./literals.md#compatibilitytype)
 - `Description`: `str`
 
-## UpdateSchemaResponseResponseTypeDef
+## UpdateSchemaResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateSchemaResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import UpdateSchemaResponseTypeDef
 ```
 
 Required fields:
@@ -6290,10 +6290,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateTableRequestTypeDef
+## UpdateTableRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateTableRequestTypeDef
+from mypy_boto3_glue.type_defs import UpdateTableRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6306,10 +6306,10 @@ Optional fields:
 - `CatalogId`: `str`
 - `SkipArchive`: `bool`
 
-## UpdateTriggerRequestTypeDef
+## UpdateTriggerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateTriggerRequestTypeDef
+from mypy_boto3_glue.type_defs import UpdateTriggerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6317,10 +6317,10 @@ Required fields:
 - `Name`: `str`
 - `TriggerUpdate`: [TriggerUpdateTypeDef](./type_defs.md#triggerupdatetypedef)
 
-## UpdateTriggerResponseResponseTypeDef
+## UpdateTriggerResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateTriggerResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import UpdateTriggerResponseTypeDef
 ```
 
 Required fields:
@@ -6329,10 +6329,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateUserDefinedFunctionRequestTypeDef
+## UpdateUserDefinedFunctionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateUserDefinedFunctionRequestTypeDef
+from mypy_boto3_glue.type_defs import UpdateUserDefinedFunctionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6346,10 +6346,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## UpdateWorkflowRequestTypeDef
+## UpdateWorkflowRequestRequestTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateWorkflowRequestTypeDef
+from mypy_boto3_glue.type_defs import UpdateWorkflowRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6362,10 +6362,10 @@ Optional fields:
 - `DefaultRunProperties`: `Dict`\[`str`, `str`\]
 - `MaxConcurrentRuns`: `int`
 
-## UpdateWorkflowResponseResponseTypeDef
+## UpdateWorkflowResponseTypeDef
 
 ```python
-from mypy_boto3_glue.type_defs import UpdateWorkflowResponseResponseTypeDef
+from mypy_boto3_glue.type_defs import UpdateWorkflowResponseTypeDef
 ```
 
 Required fields:

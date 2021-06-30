@@ -8,73 +8,73 @@ type annotations stubs module
 [mypy_boto3_codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
 
 - [Typed dictionaries for boto3 CodeGuruProfiler module](#typed-dictionaries-for-boto3-codeguruprofiler-module)
-  - [AddNotificationChannelsRequestTypeDef](#addnotificationchannelsrequesttypedef)
-  - [AddNotificationChannelsResponseResponseTypeDef](#addnotificationchannelsresponseresponsetypedef)
+  - [AddNotificationChannelsRequestRequestTypeDef](#addnotificationchannelsrequestrequesttypedef)
+  - [AddNotificationChannelsResponseTypeDef](#addnotificationchannelsresponsetypedef)
   - [AgentConfigurationTypeDef](#agentconfigurationtypedef)
   - [AgentOrchestrationConfigTypeDef](#agentorchestrationconfigtypedef)
   - [AggregatedProfileTimeTypeDef](#aggregatedprofiletimetypedef)
   - [AnomalyInstanceTypeDef](#anomalyinstancetypedef)
   - [AnomalyTypeDef](#anomalytypedef)
-  - [BatchGetFrameMetricDataRequestTypeDef](#batchgetframemetricdatarequesttypedef)
-  - [BatchGetFrameMetricDataResponseResponseTypeDef](#batchgetframemetricdataresponseresponsetypedef)
+  - [BatchGetFrameMetricDataRequestRequestTypeDef](#batchgetframemetricdatarequestrequesttypedef)
+  - [BatchGetFrameMetricDataResponseTypeDef](#batchgetframemetricdataresponsetypedef)
   - [ChannelTypeDef](#channeltypedef)
-  - [ConfigureAgentRequestTypeDef](#configureagentrequesttypedef)
-  - [ConfigureAgentResponseResponseTypeDef](#configureagentresponseresponsetypedef)
-  - [CreateProfilingGroupRequestTypeDef](#createprofilinggrouprequesttypedef)
-  - [CreateProfilingGroupResponseResponseTypeDef](#createprofilinggroupresponseresponsetypedef)
-  - [DeleteProfilingGroupRequestTypeDef](#deleteprofilinggrouprequesttypedef)
-  - [DescribeProfilingGroupRequestTypeDef](#describeprofilinggrouprequesttypedef)
-  - [DescribeProfilingGroupResponseResponseTypeDef](#describeprofilinggroupresponseresponsetypedef)
+  - [ConfigureAgentRequestRequestTypeDef](#configureagentrequestrequesttypedef)
+  - [ConfigureAgentResponseTypeDef](#configureagentresponsetypedef)
+  - [CreateProfilingGroupRequestRequestTypeDef](#createprofilinggrouprequestrequesttypedef)
+  - [CreateProfilingGroupResponseTypeDef](#createprofilinggroupresponsetypedef)
+  - [DeleteProfilingGroupRequestRequestTypeDef](#deleteprofilinggrouprequestrequesttypedef)
+  - [DescribeProfilingGroupRequestRequestTypeDef](#describeprofilinggrouprequestrequesttypedef)
+  - [DescribeProfilingGroupResponseTypeDef](#describeprofilinggroupresponsetypedef)
   - [FindingsReportSummaryTypeDef](#findingsreportsummarytypedef)
   - [FrameMetricDatumTypeDef](#framemetricdatumtypedef)
   - [FrameMetricTypeDef](#framemetrictypedef)
-  - [GetFindingsReportAccountSummaryRequestTypeDef](#getfindingsreportaccountsummaryrequesttypedef)
-  - [GetFindingsReportAccountSummaryResponseResponseTypeDef](#getfindingsreportaccountsummaryresponseresponsetypedef)
-  - [GetNotificationConfigurationRequestTypeDef](#getnotificationconfigurationrequesttypedef)
-  - [GetNotificationConfigurationResponseResponseTypeDef](#getnotificationconfigurationresponseresponsetypedef)
-  - [GetPolicyRequestTypeDef](#getpolicyrequesttypedef)
-  - [GetPolicyResponseResponseTypeDef](#getpolicyresponseresponsetypedef)
-  - [GetProfileRequestTypeDef](#getprofilerequesttypedef)
-  - [GetProfileResponseResponseTypeDef](#getprofileresponseresponsetypedef)
-  - [GetRecommendationsRequestTypeDef](#getrecommendationsrequesttypedef)
-  - [GetRecommendationsResponseResponseTypeDef](#getrecommendationsresponseresponsetypedef)
-  - [ListFindingsReportsRequestTypeDef](#listfindingsreportsrequesttypedef)
-  - [ListFindingsReportsResponseResponseTypeDef](#listfindingsreportsresponseresponsetypedef)
-  - [ListProfileTimesRequestTypeDef](#listprofiletimesrequesttypedef)
-  - [ListProfileTimesResponseResponseTypeDef](#listprofiletimesresponseresponsetypedef)
-  - [ListProfilingGroupsRequestTypeDef](#listprofilinggroupsrequesttypedef)
-  - [ListProfilingGroupsResponseResponseTypeDef](#listprofilinggroupsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [GetFindingsReportAccountSummaryRequestRequestTypeDef](#getfindingsreportaccountsummaryrequestrequesttypedef)
+  - [GetFindingsReportAccountSummaryResponseTypeDef](#getfindingsreportaccountsummaryresponsetypedef)
+  - [GetNotificationConfigurationRequestRequestTypeDef](#getnotificationconfigurationrequestrequesttypedef)
+  - [GetNotificationConfigurationResponseTypeDef](#getnotificationconfigurationresponsetypedef)
+  - [GetPolicyRequestRequestTypeDef](#getpolicyrequestrequesttypedef)
+  - [GetPolicyResponseTypeDef](#getpolicyresponsetypedef)
+  - [GetProfileRequestRequestTypeDef](#getprofilerequestrequesttypedef)
+  - [GetProfileResponseTypeDef](#getprofileresponsetypedef)
+  - [GetRecommendationsRequestRequestTypeDef](#getrecommendationsrequestrequesttypedef)
+  - [GetRecommendationsResponseTypeDef](#getrecommendationsresponsetypedef)
+  - [ListFindingsReportsRequestRequestTypeDef](#listfindingsreportsrequestrequesttypedef)
+  - [ListFindingsReportsResponseTypeDef](#listfindingsreportsresponsetypedef)
+  - [ListProfileTimesRequestRequestTypeDef](#listprofiletimesrequestrequesttypedef)
+  - [ListProfileTimesResponseTypeDef](#listprofiletimesresponsetypedef)
+  - [ListProfilingGroupsRequestRequestTypeDef](#listprofilinggroupsrequestrequesttypedef)
+  - [ListProfilingGroupsResponseTypeDef](#listprofilinggroupsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [MatchTypeDef](#matchtypedef)
   - [MetricTypeDef](#metrictypedef)
   - [NotificationConfigurationTypeDef](#notificationconfigurationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PatternTypeDef](#patterntypedef)
-  - [PostAgentProfileRequestTypeDef](#postagentprofilerequesttypedef)
+  - [PostAgentProfileRequestRequestTypeDef](#postagentprofilerequestrequesttypedef)
   - [ProfileTimeTypeDef](#profiletimetypedef)
   - [ProfilingGroupDescriptionTypeDef](#profilinggroupdescriptiontypedef)
   - [ProfilingStatusTypeDef](#profilingstatustypedef)
-  - [PutPermissionRequestTypeDef](#putpermissionrequesttypedef)
-  - [PutPermissionResponseResponseTypeDef](#putpermissionresponseresponsetypedef)
+  - [PutPermissionRequestRequestTypeDef](#putpermissionrequestrequesttypedef)
+  - [PutPermissionResponseTypeDef](#putpermissionresponsetypedef)
   - [RecommendationTypeDef](#recommendationtypedef)
-  - [RemoveNotificationChannelRequestTypeDef](#removenotificationchannelrequesttypedef)
-  - [RemoveNotificationChannelResponseResponseTypeDef](#removenotificationchannelresponseresponsetypedef)
-  - [RemovePermissionRequestTypeDef](#removepermissionrequesttypedef)
-  - [RemovePermissionResponseResponseTypeDef](#removepermissionresponseresponsetypedef)
+  - [RemoveNotificationChannelRequestRequestTypeDef](#removenotificationchannelrequestrequesttypedef)
+  - [RemoveNotificationChannelResponseTypeDef](#removenotificationchannelresponsetypedef)
+  - [RemovePermissionRequestRequestTypeDef](#removepermissionrequestrequesttypedef)
+  - [RemovePermissionResponseTypeDef](#removepermissionresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SubmitFeedbackRequestTypeDef](#submitfeedbackrequesttypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [SubmitFeedbackRequestRequestTypeDef](#submitfeedbackrequestrequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TimestampStructureTypeDef](#timestampstructuretypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateProfilingGroupRequestTypeDef](#updateprofilinggrouprequesttypedef)
-  - [UpdateProfilingGroupResponseResponseTypeDef](#updateprofilinggroupresponseresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateProfilingGroupRequestRequestTypeDef](#updateprofilinggrouprequestrequesttypedef)
+  - [UpdateProfilingGroupResponseTypeDef](#updateprofilinggroupresponsetypedef)
   - [UserFeedbackTypeDef](#userfeedbacktypedef)
 
-## AddNotificationChannelsRequestTypeDef
+## AddNotificationChannelsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import AddNotificationChannelsRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import AddNotificationChannelsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -82,10 +82,10 @@ Required fields:
 - `channels`: `List`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
 - `profilingGroupName`: `str`
 
-## AddNotificationChannelsResponseResponseTypeDef
+## AddNotificationChannelsResponseTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import AddNotificationChannelsResponseResponseTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import AddNotificationChannelsResponseTypeDef
 ```
 
 Required fields:
@@ -162,10 +162,10 @@ Required fields:
 - `metric`: [MetricTypeDef](./type_defs.md#metrictypedef)
 - `reason`: `str`
 
-## BatchGetFrameMetricDataRequestTypeDef
+## BatchGetFrameMetricDataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import BatchGetFrameMetricDataRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import BatchGetFrameMetricDataRequestRequestTypeDef
 ```
 
 Required fields:
@@ -182,10 +182,10 @@ Optional fields:
 - `targetResolution`:
   [AggregationPeriodType](./literals.md#aggregationperiodtype)
 
-## BatchGetFrameMetricDataResponseResponseTypeDef
+## BatchGetFrameMetricDataResponseTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import BatchGetFrameMetricDataResponseResponseTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import BatchGetFrameMetricDataResponseTypeDef
 ```
 
 Required fields:
@@ -218,10 +218,10 @@ Optional fields:
 
 - `id`: `str`
 
-## ConfigureAgentRequestTypeDef
+## ConfigureAgentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import ConfigureAgentRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import ConfigureAgentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -234,10 +234,10 @@ Optional fields:
 - `metadata`: `Dict`\[[MetadataFieldType](./literals.md#metadatafieldtype),
   `str`\]
 
-## ConfigureAgentResponseResponseTypeDef
+## ConfigureAgentResponseTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import ConfigureAgentResponseResponseTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import ConfigureAgentResponseTypeDef
 ```
 
 Required fields:
@@ -247,10 +247,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateProfilingGroupRequestTypeDef
+## CreateProfilingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import CreateProfilingGroupRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import CreateProfilingGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -265,10 +265,10 @@ Optional fields:
 - `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateProfilingGroupResponseResponseTypeDef
+## CreateProfilingGroupResponseTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import CreateProfilingGroupResponseResponseTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import CreateProfilingGroupResponseTypeDef
 ```
 
 Required fields:
@@ -278,30 +278,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteProfilingGroupRequestTypeDef
+## DeleteProfilingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import DeleteProfilingGroupRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import DeleteProfilingGroupRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `profilingGroupName`: `str`
 
-## DescribeProfilingGroupRequestTypeDef
+## DescribeProfilingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import DescribeProfilingGroupRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import DescribeProfilingGroupRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `profilingGroupName`: `str`
 
-## DescribeProfilingGroupResponseResponseTypeDef
+## DescribeProfilingGroupResponseTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import DescribeProfilingGroupResponseResponseTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import DescribeProfilingGroupResponseTypeDef
 ```
 
 Required fields:
@@ -349,10 +349,10 @@ Required fields:
 - `type`: `Literal['AggregatedRelativeTotalTime']` (see
   [MetricTypeType](./literals.md#metrictypetype))
 
-## GetFindingsReportAccountSummaryRequestTypeDef
+## GetFindingsReportAccountSummaryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import GetFindingsReportAccountSummaryRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import GetFindingsReportAccountSummaryRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -361,10 +361,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## GetFindingsReportAccountSummaryResponseResponseTypeDef
+## GetFindingsReportAccountSummaryResponseTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import GetFindingsReportAccountSummaryResponseResponseTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import GetFindingsReportAccountSummaryResponseTypeDef
 ```
 
 Required fields:
@@ -375,20 +375,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetNotificationConfigurationRequestTypeDef
+## GetNotificationConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import GetNotificationConfigurationRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import GetNotificationConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `profilingGroupName`: `str`
 
-## GetNotificationConfigurationResponseResponseTypeDef
+## GetNotificationConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import GetNotificationConfigurationResponseResponseTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import GetNotificationConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -398,20 +398,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPolicyRequestTypeDef
+## GetPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import GetPolicyRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import GetPolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `profilingGroupName`: `str`
 
-## GetPolicyResponseResponseTypeDef
+## GetPolicyResponseTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import GetPolicyResponseResponseTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import GetPolicyResponseTypeDef
 ```
 
 Required fields:
@@ -421,10 +421,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetProfileRequestTypeDef
+## GetProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import GetProfileRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import GetProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -439,10 +439,10 @@ Optional fields:
 - `period`: `str`
 - `startTime`: `Union`\[`datetime`, `str`\]
 
-## GetProfileResponseResponseTypeDef
+## GetProfileResponseTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import GetProfileResponseResponseTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import GetProfileResponseTypeDef
 ```
 
 Required fields:
@@ -453,10 +453,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRecommendationsRequestTypeDef
+## GetRecommendationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import GetRecommendationsRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import GetRecommendationsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -469,10 +469,10 @@ Optional fields:
 
 - `locale`: `str`
 
-## GetRecommendationsResponseResponseTypeDef
+## GetRecommendationsResponseTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import GetRecommendationsResponseResponseTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import GetRecommendationsResponseTypeDef
 ```
 
 Required fields:
@@ -486,10 +486,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFindingsReportsRequestTypeDef
+## ListFindingsReportsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import ListFindingsReportsRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import ListFindingsReportsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -504,10 +504,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListFindingsReportsResponseResponseTypeDef
+## ListFindingsReportsResponseTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import ListFindingsReportsResponseResponseTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import ListFindingsReportsResponseTypeDef
 ```
 
 Required fields:
@@ -518,10 +518,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProfileTimesRequestTypeDef
+## ListProfileTimesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import ListProfileTimesRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import ListProfileTimesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -537,10 +537,10 @@ Optional fields:
 - `nextToken`: `str`
 - `orderBy`: [OrderByType](./literals.md#orderbytype)
 
-## ListProfileTimesResponseResponseTypeDef
+## ListProfileTimesResponseTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import ListProfileTimesResponseResponseTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import ListProfileTimesResponseTypeDef
 ```
 
 Required fields:
@@ -551,10 +551,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProfilingGroupsRequestTypeDef
+## ListProfilingGroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import ListProfilingGroupsRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import ListProfilingGroupsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -563,10 +563,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListProfilingGroupsResponseResponseTypeDef
+## ListProfilingGroupsResponseTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import ListProfilingGroupsResponseResponseTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import ListProfilingGroupsResponseTypeDef
 ```
 
 Required fields:
@@ -578,20 +578,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -663,10 +663,10 @@ Optional fields:
 - `targetFrames`: `List`\[`List`\[`str`\]\]
 - `thresholdPercent`: `float`
 
-## PostAgentProfileRequestTypeDef
+## PostAgentProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import PostAgentProfileRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import PostAgentProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -721,10 +721,10 @@ Optional fields:
 - `latestAggregatedProfile`:
   [AggregatedProfileTimeTypeDef](./type_defs.md#aggregatedprofiletimetypedef)
 
-## PutPermissionRequestTypeDef
+## PutPermissionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import PutPermissionRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import PutPermissionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -738,10 +738,10 @@ Optional fields:
 
 - `revisionId`: `str`
 
-## PutPermissionResponseResponseTypeDef
+## PutPermissionResponseTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import PutPermissionResponseResponseTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import PutPermissionResponseTypeDef
 ```
 
 Required fields:
@@ -766,10 +766,10 @@ Required fields:
 - `startTime`: `datetime`
 - `topMatches`: `List`\[[MatchTypeDef](./type_defs.md#matchtypedef)\]
 
-## RemoveNotificationChannelRequestTypeDef
+## RemoveNotificationChannelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import RemoveNotificationChannelRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import RemoveNotificationChannelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -777,10 +777,10 @@ Required fields:
 - `channelId`: `str`
 - `profilingGroupName`: `str`
 
-## RemoveNotificationChannelResponseResponseTypeDef
+## RemoveNotificationChannelResponseTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import RemoveNotificationChannelResponseResponseTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import RemoveNotificationChannelResponseTypeDef
 ```
 
 Required fields:
@@ -790,10 +790,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RemovePermissionRequestTypeDef
+## RemovePermissionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import RemovePermissionRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import RemovePermissionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -803,10 +803,10 @@ Required fields:
 - `profilingGroupName`: `str`
 - `revisionId`: `str`
 
-## RemovePermissionResponseResponseTypeDef
+## RemovePermissionResponseTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import RemovePermissionResponseResponseTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import RemovePermissionResponseTypeDef
 ```
 
 Required fields:
@@ -830,10 +830,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## SubmitFeedbackRequestTypeDef
+## SubmitFeedbackRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import SubmitFeedbackRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import SubmitFeedbackRequestRequestTypeDef
 ```
 
 Required fields:
@@ -846,10 +846,10 @@ Optional fields:
 
 - `comment`: `str`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -867,10 +867,10 @@ Required fields:
 
 - `value`: `datetime`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -878,10 +878,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tagKeys`: `List`\[`str`\]
 
-## UpdateProfilingGroupRequestTypeDef
+## UpdateProfilingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import UpdateProfilingGroupRequestTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import UpdateProfilingGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -890,10 +890,10 @@ Required fields:
   [AgentOrchestrationConfigTypeDef](./type_defs.md#agentorchestrationconfigtypedef)
 - `profilingGroupName`: `str`
 
-## UpdateProfilingGroupResponseResponseTypeDef
+## UpdateProfilingGroupResponseTypeDef
 
 ```python
-from mypy_boto3_codeguruprofiler.type_defs import UpdateProfilingGroupResponseResponseTypeDef
+from mypy_boto3_codeguruprofiler.type_defs import UpdateProfilingGroupResponseTypeDef
 ```
 
 Required fields:

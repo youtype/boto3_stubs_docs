@@ -25,51 +25,51 @@ type annotations stubs module
   - [ContainerOverrideTypeDef](#containeroverridetypedef)
   - [ContainerStateChangeTypeDef](#containerstatechangetypedef)
   - [ContainerTypeDef](#containertypedef)
-  - [CreateCapacityProviderRequestTypeDef](#createcapacityproviderrequesttypedef)
-  - [CreateCapacityProviderResponseResponseTypeDef](#createcapacityproviderresponseresponsetypedef)
-  - [CreateClusterRequestTypeDef](#createclusterrequesttypedef)
-  - [CreateClusterResponseResponseTypeDef](#createclusterresponseresponsetypedef)
-  - [CreateServiceRequestTypeDef](#createservicerequesttypedef)
-  - [CreateServiceResponseResponseTypeDef](#createserviceresponseresponsetypedef)
-  - [CreateTaskSetRequestTypeDef](#createtasksetrequesttypedef)
-  - [CreateTaskSetResponseResponseTypeDef](#createtasksetresponseresponsetypedef)
-  - [DeleteAccountSettingRequestTypeDef](#deleteaccountsettingrequesttypedef)
-  - [DeleteAccountSettingResponseResponseTypeDef](#deleteaccountsettingresponseresponsetypedef)
-  - [DeleteAttributesRequestTypeDef](#deleteattributesrequesttypedef)
-  - [DeleteAttributesResponseResponseTypeDef](#deleteattributesresponseresponsetypedef)
-  - [DeleteCapacityProviderRequestTypeDef](#deletecapacityproviderrequesttypedef)
-  - [DeleteCapacityProviderResponseResponseTypeDef](#deletecapacityproviderresponseresponsetypedef)
-  - [DeleteClusterRequestTypeDef](#deleteclusterrequesttypedef)
-  - [DeleteClusterResponseResponseTypeDef](#deleteclusterresponseresponsetypedef)
-  - [DeleteServiceRequestTypeDef](#deleteservicerequesttypedef)
-  - [DeleteServiceResponseResponseTypeDef](#deleteserviceresponseresponsetypedef)
-  - [DeleteTaskSetRequestTypeDef](#deletetasksetrequesttypedef)
-  - [DeleteTaskSetResponseResponseTypeDef](#deletetasksetresponseresponsetypedef)
+  - [CreateCapacityProviderRequestRequestTypeDef](#createcapacityproviderrequestrequesttypedef)
+  - [CreateCapacityProviderResponseTypeDef](#createcapacityproviderresponsetypedef)
+  - [CreateClusterRequestRequestTypeDef](#createclusterrequestrequesttypedef)
+  - [CreateClusterResponseTypeDef](#createclusterresponsetypedef)
+  - [CreateServiceRequestRequestTypeDef](#createservicerequestrequesttypedef)
+  - [CreateServiceResponseTypeDef](#createserviceresponsetypedef)
+  - [CreateTaskSetRequestRequestTypeDef](#createtasksetrequestrequesttypedef)
+  - [CreateTaskSetResponseTypeDef](#createtasksetresponsetypedef)
+  - [DeleteAccountSettingRequestRequestTypeDef](#deleteaccountsettingrequestrequesttypedef)
+  - [DeleteAccountSettingResponseTypeDef](#deleteaccountsettingresponsetypedef)
+  - [DeleteAttributesRequestRequestTypeDef](#deleteattributesrequestrequesttypedef)
+  - [DeleteAttributesResponseTypeDef](#deleteattributesresponsetypedef)
+  - [DeleteCapacityProviderRequestRequestTypeDef](#deletecapacityproviderrequestrequesttypedef)
+  - [DeleteCapacityProviderResponseTypeDef](#deletecapacityproviderresponsetypedef)
+  - [DeleteClusterRequestRequestTypeDef](#deleteclusterrequestrequesttypedef)
+  - [DeleteClusterResponseTypeDef](#deleteclusterresponsetypedef)
+  - [DeleteServiceRequestRequestTypeDef](#deleteservicerequestrequesttypedef)
+  - [DeleteServiceResponseTypeDef](#deleteserviceresponsetypedef)
+  - [DeleteTaskSetRequestRequestTypeDef](#deletetasksetrequestrequesttypedef)
+  - [DeleteTaskSetResponseTypeDef](#deletetasksetresponsetypedef)
   - [DeploymentCircuitBreakerTypeDef](#deploymentcircuitbreakertypedef)
   - [DeploymentConfigurationTypeDef](#deploymentconfigurationtypedef)
   - [DeploymentControllerTypeDef](#deploymentcontrollertypedef)
   - [DeploymentTypeDef](#deploymenttypedef)
-  - [DeregisterContainerInstanceRequestTypeDef](#deregistercontainerinstancerequesttypedef)
-  - [DeregisterContainerInstanceResponseResponseTypeDef](#deregistercontainerinstanceresponseresponsetypedef)
-  - [DeregisterTaskDefinitionRequestTypeDef](#deregistertaskdefinitionrequesttypedef)
-  - [DeregisterTaskDefinitionResponseResponseTypeDef](#deregistertaskdefinitionresponseresponsetypedef)
-  - [DescribeCapacityProvidersRequestTypeDef](#describecapacityprovidersrequesttypedef)
-  - [DescribeCapacityProvidersResponseResponseTypeDef](#describecapacityprovidersresponseresponsetypedef)
-  - [DescribeClustersRequestTypeDef](#describeclustersrequesttypedef)
-  - [DescribeClustersResponseResponseTypeDef](#describeclustersresponseresponsetypedef)
-  - [DescribeContainerInstancesRequestTypeDef](#describecontainerinstancesrequesttypedef)
-  - [DescribeContainerInstancesResponseResponseTypeDef](#describecontainerinstancesresponseresponsetypedef)
-  - [DescribeServicesRequestTypeDef](#describeservicesrequesttypedef)
-  - [DescribeServicesResponseResponseTypeDef](#describeservicesresponseresponsetypedef)
-  - [DescribeTaskDefinitionRequestTypeDef](#describetaskdefinitionrequesttypedef)
-  - [DescribeTaskDefinitionResponseResponseTypeDef](#describetaskdefinitionresponseresponsetypedef)
-  - [DescribeTaskSetsRequestTypeDef](#describetasksetsrequesttypedef)
-  - [DescribeTaskSetsResponseResponseTypeDef](#describetasksetsresponseresponsetypedef)
-  - [DescribeTasksRequestTypeDef](#describetasksrequesttypedef)
-  - [DescribeTasksResponseResponseTypeDef](#describetasksresponseresponsetypedef)
+  - [DeregisterContainerInstanceRequestRequestTypeDef](#deregistercontainerinstancerequestrequesttypedef)
+  - [DeregisterContainerInstanceResponseTypeDef](#deregistercontainerinstanceresponsetypedef)
+  - [DeregisterTaskDefinitionRequestRequestTypeDef](#deregistertaskdefinitionrequestrequesttypedef)
+  - [DeregisterTaskDefinitionResponseTypeDef](#deregistertaskdefinitionresponsetypedef)
+  - [DescribeCapacityProvidersRequestRequestTypeDef](#describecapacityprovidersrequestrequesttypedef)
+  - [DescribeCapacityProvidersResponseTypeDef](#describecapacityprovidersresponsetypedef)
+  - [DescribeClustersRequestRequestTypeDef](#describeclustersrequestrequesttypedef)
+  - [DescribeClustersResponseTypeDef](#describeclustersresponsetypedef)
+  - [DescribeContainerInstancesRequestRequestTypeDef](#describecontainerinstancesrequestrequesttypedef)
+  - [DescribeContainerInstancesResponseTypeDef](#describecontainerinstancesresponsetypedef)
+  - [DescribeServicesRequestRequestTypeDef](#describeservicesrequestrequesttypedef)
+  - [DescribeServicesResponseTypeDef](#describeservicesresponsetypedef)
+  - [DescribeTaskDefinitionRequestRequestTypeDef](#describetaskdefinitionrequestrequesttypedef)
+  - [DescribeTaskDefinitionResponseTypeDef](#describetaskdefinitionresponsetypedef)
+  - [DescribeTaskSetsRequestRequestTypeDef](#describetasksetsrequestrequesttypedef)
+  - [DescribeTaskSetsResponseTypeDef](#describetasksetsresponsetypedef)
+  - [DescribeTasksRequestRequestTypeDef](#describetasksrequestrequesttypedef)
+  - [DescribeTasksResponseTypeDef](#describetasksresponsetypedef)
   - [DeviceTypeDef](#devicetypedef)
-  - [DiscoverPollEndpointRequestTypeDef](#discoverpollendpointrequesttypedef)
-  - [DiscoverPollEndpointResponseResponseTypeDef](#discoverpollendpointresponseresponsetypedef)
+  - [DiscoverPollEndpointRequestRequestTypeDef](#discoverpollendpointrequestrequesttypedef)
+  - [DiscoverPollEndpointResponseTypeDef](#discoverpollendpointresponsetypedef)
   - [DockerVolumeConfigurationTypeDef](#dockervolumeconfigurationtypedef)
   - [EFSAuthorizationConfigTypeDef](#efsauthorizationconfigtypedef)
   - [EFSVolumeConfigurationTypeDef](#efsvolumeconfigurationtypedef)
@@ -77,8 +77,8 @@ type annotations stubs module
   - [EphemeralStorageTypeDef](#ephemeralstoragetypedef)
   - [ExecuteCommandConfigurationTypeDef](#executecommandconfigurationtypedef)
   - [ExecuteCommandLogConfigurationTypeDef](#executecommandlogconfigurationtypedef)
-  - [ExecuteCommandRequestTypeDef](#executecommandrequesttypedef)
-  - [ExecuteCommandResponseResponseTypeDef](#executecommandresponseresponsetypedef)
+  - [ExecuteCommandRequestRequestTypeDef](#executecommandrequestrequesttypedef)
+  - [ExecuteCommandResponseTypeDef](#executecommandresponsetypedef)
   - [FSxWindowsFileServerAuthorizationConfigTypeDef](#fsxwindowsfileserverauthorizationconfigtypedef)
   - [FSxWindowsFileServerVolumeConfigurationTypeDef](#fsxwindowsfileservervolumeconfigurationtypedef)
   - [FailureTypeDef](#failuretypedef)
@@ -91,24 +91,24 @@ type annotations stubs module
   - [KernelCapabilitiesTypeDef](#kernelcapabilitiestypedef)
   - [KeyValuePairTypeDef](#keyvaluepairtypedef)
   - [LinuxParametersTypeDef](#linuxparameterstypedef)
-  - [ListAccountSettingsRequestTypeDef](#listaccountsettingsrequesttypedef)
-  - [ListAccountSettingsResponseResponseTypeDef](#listaccountsettingsresponseresponsetypedef)
-  - [ListAttributesRequestTypeDef](#listattributesrequesttypedef)
-  - [ListAttributesResponseResponseTypeDef](#listattributesresponseresponsetypedef)
-  - [ListClustersRequestTypeDef](#listclustersrequesttypedef)
-  - [ListClustersResponseResponseTypeDef](#listclustersresponseresponsetypedef)
-  - [ListContainerInstancesRequestTypeDef](#listcontainerinstancesrequesttypedef)
-  - [ListContainerInstancesResponseResponseTypeDef](#listcontainerinstancesresponseresponsetypedef)
-  - [ListServicesRequestTypeDef](#listservicesrequesttypedef)
-  - [ListServicesResponseResponseTypeDef](#listservicesresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
-  - [ListTaskDefinitionFamiliesRequestTypeDef](#listtaskdefinitionfamiliesrequesttypedef)
-  - [ListTaskDefinitionFamiliesResponseResponseTypeDef](#listtaskdefinitionfamiliesresponseresponsetypedef)
-  - [ListTaskDefinitionsRequestTypeDef](#listtaskdefinitionsrequesttypedef)
-  - [ListTaskDefinitionsResponseResponseTypeDef](#listtaskdefinitionsresponseresponsetypedef)
-  - [ListTasksRequestTypeDef](#listtasksrequesttypedef)
-  - [ListTasksResponseResponseTypeDef](#listtasksresponseresponsetypedef)
+  - [ListAccountSettingsRequestRequestTypeDef](#listaccountsettingsrequestrequesttypedef)
+  - [ListAccountSettingsResponseTypeDef](#listaccountsettingsresponsetypedef)
+  - [ListAttributesRequestRequestTypeDef](#listattributesrequestrequesttypedef)
+  - [ListAttributesResponseTypeDef](#listattributesresponsetypedef)
+  - [ListClustersRequestRequestTypeDef](#listclustersrequestrequesttypedef)
+  - [ListClustersResponseTypeDef](#listclustersresponsetypedef)
+  - [ListContainerInstancesRequestRequestTypeDef](#listcontainerinstancesrequestrequesttypedef)
+  - [ListContainerInstancesResponseTypeDef](#listcontainerinstancesresponsetypedef)
+  - [ListServicesRequestRequestTypeDef](#listservicesrequestrequesttypedef)
+  - [ListServicesResponseTypeDef](#listservicesresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListTaskDefinitionFamiliesRequestRequestTypeDef](#listtaskdefinitionfamiliesrequestrequesttypedef)
+  - [ListTaskDefinitionFamiliesResponseTypeDef](#listtaskdefinitionfamiliesresponsetypedef)
+  - [ListTaskDefinitionsRequestRequestTypeDef](#listtaskdefinitionsrequestrequesttypedef)
+  - [ListTaskDefinitionsResponseTypeDef](#listtaskdefinitionsresponsetypedef)
+  - [ListTasksRequestRequestTypeDef](#listtasksrequestrequesttypedef)
+  - [ListTasksResponseTypeDef](#listtasksresponsetypedef)
   - [LoadBalancerTypeDef](#loadbalancertypedef)
   - [LogConfigurationTypeDef](#logconfigurationtypedef)
   - [ManagedAgentStateChangeTypeDef](#managedagentstatechangetypedef)
@@ -124,24 +124,24 @@ type annotations stubs module
   - [PlatformDeviceTypeDef](#platformdevicetypedef)
   - [PortMappingTypeDef](#portmappingtypedef)
   - [ProxyConfigurationTypeDef](#proxyconfigurationtypedef)
-  - [PutAccountSettingDefaultRequestTypeDef](#putaccountsettingdefaultrequesttypedef)
-  - [PutAccountSettingDefaultResponseResponseTypeDef](#putaccountsettingdefaultresponseresponsetypedef)
-  - [PutAccountSettingRequestTypeDef](#putaccountsettingrequesttypedef)
-  - [PutAccountSettingResponseResponseTypeDef](#putaccountsettingresponseresponsetypedef)
-  - [PutAttributesRequestTypeDef](#putattributesrequesttypedef)
-  - [PutAttributesResponseResponseTypeDef](#putattributesresponseresponsetypedef)
-  - [PutClusterCapacityProvidersRequestTypeDef](#putclustercapacityprovidersrequesttypedef)
-  - [PutClusterCapacityProvidersResponseResponseTypeDef](#putclustercapacityprovidersresponseresponsetypedef)
-  - [RegisterContainerInstanceRequestTypeDef](#registercontainerinstancerequesttypedef)
-  - [RegisterContainerInstanceResponseResponseTypeDef](#registercontainerinstanceresponseresponsetypedef)
-  - [RegisterTaskDefinitionRequestTypeDef](#registertaskdefinitionrequesttypedef)
-  - [RegisterTaskDefinitionResponseResponseTypeDef](#registertaskdefinitionresponseresponsetypedef)
+  - [PutAccountSettingDefaultRequestRequestTypeDef](#putaccountsettingdefaultrequestrequesttypedef)
+  - [PutAccountSettingDefaultResponseTypeDef](#putaccountsettingdefaultresponsetypedef)
+  - [PutAccountSettingRequestRequestTypeDef](#putaccountsettingrequestrequesttypedef)
+  - [PutAccountSettingResponseTypeDef](#putaccountsettingresponsetypedef)
+  - [PutAttributesRequestRequestTypeDef](#putattributesrequestrequesttypedef)
+  - [PutAttributesResponseTypeDef](#putattributesresponsetypedef)
+  - [PutClusterCapacityProvidersRequestRequestTypeDef](#putclustercapacityprovidersrequestrequesttypedef)
+  - [PutClusterCapacityProvidersResponseTypeDef](#putclustercapacityprovidersresponsetypedef)
+  - [RegisterContainerInstanceRequestRequestTypeDef](#registercontainerinstancerequestrequesttypedef)
+  - [RegisterContainerInstanceResponseTypeDef](#registercontainerinstanceresponsetypedef)
+  - [RegisterTaskDefinitionRequestRequestTypeDef](#registertaskdefinitionrequestrequesttypedef)
+  - [RegisterTaskDefinitionResponseTypeDef](#registertaskdefinitionresponsetypedef)
   - [RepositoryCredentialsTypeDef](#repositorycredentialstypedef)
   - [ResourceRequirementTypeDef](#resourcerequirementtypedef)
   - [ResourceTypeDef](#resourcetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RunTaskRequestTypeDef](#runtaskrequesttypedef)
-  - [RunTaskResponseResponseTypeDef](#runtaskresponseresponsetypedef)
+  - [RunTaskRequestRequestTypeDef](#runtaskrequestrequesttypedef)
+  - [RunTaskResponseTypeDef](#runtaskresponsetypedef)
   - [ScaleTypeDef](#scaletypedef)
   - [SecretTypeDef](#secrettypedef)
   - [ServiceEventTypeDef](#serviceeventtypedef)
@@ -149,18 +149,18 @@ type annotations stubs module
   - [ServiceTypeDef](#servicetypedef)
   - [SessionTypeDef](#sessiontypedef)
   - [SettingTypeDef](#settingtypedef)
-  - [StartTaskRequestTypeDef](#starttaskrequesttypedef)
-  - [StartTaskResponseResponseTypeDef](#starttaskresponseresponsetypedef)
-  - [StopTaskRequestTypeDef](#stoptaskrequesttypedef)
-  - [StopTaskResponseResponseTypeDef](#stoptaskresponseresponsetypedef)
-  - [SubmitAttachmentStateChangesRequestTypeDef](#submitattachmentstatechangesrequesttypedef)
-  - [SubmitAttachmentStateChangesResponseResponseTypeDef](#submitattachmentstatechangesresponseresponsetypedef)
-  - [SubmitContainerStateChangeRequestTypeDef](#submitcontainerstatechangerequesttypedef)
-  - [SubmitContainerStateChangeResponseResponseTypeDef](#submitcontainerstatechangeresponseresponsetypedef)
-  - [SubmitTaskStateChangeRequestTypeDef](#submittaskstatechangerequesttypedef)
-  - [SubmitTaskStateChangeResponseResponseTypeDef](#submittaskstatechangeresponseresponsetypedef)
+  - [StartTaskRequestRequestTypeDef](#starttaskrequestrequesttypedef)
+  - [StartTaskResponseTypeDef](#starttaskresponsetypedef)
+  - [StopTaskRequestRequestTypeDef](#stoptaskrequestrequesttypedef)
+  - [StopTaskResponseTypeDef](#stoptaskresponsetypedef)
+  - [SubmitAttachmentStateChangesRequestRequestTypeDef](#submitattachmentstatechangesrequestrequesttypedef)
+  - [SubmitAttachmentStateChangesResponseTypeDef](#submitattachmentstatechangesresponsetypedef)
+  - [SubmitContainerStateChangeRequestRequestTypeDef](#submitcontainerstatechangerequestrequesttypedef)
+  - [SubmitContainerStateChangeResponseTypeDef](#submitcontainerstatechangeresponsetypedef)
+  - [SubmitTaskStateChangeRequestRequestTypeDef](#submittaskstatechangerequestrequesttypedef)
+  - [SubmitTaskStateChangeResponseTypeDef](#submittaskstatechangeresponsetypedef)
   - [SystemControlTypeDef](#systemcontroltypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TaskDefinitionPlacementConstraintTypeDef](#taskdefinitionplacementconstrainttypedef)
   - [TaskDefinitionTypeDef](#taskdefinitiontypedef)
@@ -169,23 +169,23 @@ type annotations stubs module
   - [TaskTypeDef](#tasktypedef)
   - [TmpfsTypeDef](#tmpfstypedef)
   - [UlimitTypeDef](#ulimittypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateCapacityProviderRequestTypeDef](#updatecapacityproviderrequesttypedef)
-  - [UpdateCapacityProviderResponseResponseTypeDef](#updatecapacityproviderresponseresponsetypedef)
-  - [UpdateClusterRequestTypeDef](#updateclusterrequesttypedef)
-  - [UpdateClusterResponseResponseTypeDef](#updateclusterresponseresponsetypedef)
-  - [UpdateClusterSettingsRequestTypeDef](#updateclustersettingsrequesttypedef)
-  - [UpdateClusterSettingsResponseResponseTypeDef](#updateclustersettingsresponseresponsetypedef)
-  - [UpdateContainerAgentRequestTypeDef](#updatecontaineragentrequesttypedef)
-  - [UpdateContainerAgentResponseResponseTypeDef](#updatecontaineragentresponseresponsetypedef)
-  - [UpdateContainerInstancesStateRequestTypeDef](#updatecontainerinstancesstaterequesttypedef)
-  - [UpdateContainerInstancesStateResponseResponseTypeDef](#updatecontainerinstancesstateresponseresponsetypedef)
-  - [UpdateServicePrimaryTaskSetRequestTypeDef](#updateserviceprimarytasksetrequesttypedef)
-  - [UpdateServicePrimaryTaskSetResponseResponseTypeDef](#updateserviceprimarytasksetresponseresponsetypedef)
-  - [UpdateServiceRequestTypeDef](#updateservicerequesttypedef)
-  - [UpdateServiceResponseResponseTypeDef](#updateserviceresponseresponsetypedef)
-  - [UpdateTaskSetRequestTypeDef](#updatetasksetrequesttypedef)
-  - [UpdateTaskSetResponseResponseTypeDef](#updatetasksetresponseresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateCapacityProviderRequestRequestTypeDef](#updatecapacityproviderrequestrequesttypedef)
+  - [UpdateCapacityProviderResponseTypeDef](#updatecapacityproviderresponsetypedef)
+  - [UpdateClusterRequestRequestTypeDef](#updateclusterrequestrequesttypedef)
+  - [UpdateClusterResponseTypeDef](#updateclusterresponsetypedef)
+  - [UpdateClusterSettingsRequestRequestTypeDef](#updateclustersettingsrequestrequesttypedef)
+  - [UpdateClusterSettingsResponseTypeDef](#updateclustersettingsresponsetypedef)
+  - [UpdateContainerAgentRequestRequestTypeDef](#updatecontaineragentrequestrequesttypedef)
+  - [UpdateContainerAgentResponseTypeDef](#updatecontaineragentresponsetypedef)
+  - [UpdateContainerInstancesStateRequestRequestTypeDef](#updatecontainerinstancesstaterequestrequesttypedef)
+  - [UpdateContainerInstancesStateResponseTypeDef](#updatecontainerinstancesstateresponsetypedef)
+  - [UpdateServicePrimaryTaskSetRequestRequestTypeDef](#updateserviceprimarytasksetrequestrequesttypedef)
+  - [UpdateServicePrimaryTaskSetResponseTypeDef](#updateserviceprimarytasksetresponsetypedef)
+  - [UpdateServiceRequestRequestTypeDef](#updateservicerequestrequesttypedef)
+  - [UpdateServiceResponseTypeDef](#updateserviceresponsetypedef)
+  - [UpdateTaskSetRequestRequestTypeDef](#updatetasksetrequestrequesttypedef)
+  - [UpdateTaskSetResponseTypeDef](#updatetasksetresponsetypedef)
   - [VersionInfoTypeDef](#versioninfotypedef)
   - [VolumeFromTypeDef](#volumefromtypedef)
   - [VolumeTypeDef](#volumetypedef)
@@ -531,10 +531,10 @@ Optional fields:
 - `memoryReservation`: `str`
 - `gpuIds`: `List`\[`str`\]
 
-## CreateCapacityProviderRequestTypeDef
+## CreateCapacityProviderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import CreateCapacityProviderRequestTypeDef
+from mypy_boto3_ecs.type_defs import CreateCapacityProviderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -547,10 +547,10 @@ Optional fields:
 
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateCapacityProviderResponseResponseTypeDef
+## CreateCapacityProviderResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import CreateCapacityProviderResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import CreateCapacityProviderResponseTypeDef
 ```
 
 Required fields:
@@ -560,10 +560,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateClusterRequestTypeDef
+## CreateClusterRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import CreateClusterRequestTypeDef
+from mypy_boto3_ecs.type_defs import CreateClusterRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -578,10 +578,10 @@ Optional fields:
 - `defaultCapacityProviderStrategy`:
   `List`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
 
-## CreateClusterResponseResponseTypeDef
+## CreateClusterResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import CreateClusterResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import CreateClusterResponseTypeDef
 ```
 
 Required fields:
@@ -590,10 +590,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateServiceRequestTypeDef
+## CreateServiceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import CreateServiceRequestTypeDef
+from mypy_boto3_ecs.type_defs import CreateServiceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -633,10 +633,10 @@ Optional fields:
 - `propagateTags`: [PropagateTagsType](./literals.md#propagatetagstype)
 - `enableExecuteCommand`: `bool`
 
-## CreateServiceResponseResponseTypeDef
+## CreateServiceResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import CreateServiceResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import CreateServiceResponseTypeDef
 ```
 
 Required fields:
@@ -645,10 +645,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTaskSetRequestTypeDef
+## CreateTaskSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import CreateTaskSetRequestTypeDef
+from mypy_boto3_ecs.type_defs import CreateTaskSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -674,10 +674,10 @@ Optional fields:
 - `clientToken`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateTaskSetResponseResponseTypeDef
+## CreateTaskSetResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import CreateTaskSetResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import CreateTaskSetResponseTypeDef
 ```
 
 Required fields:
@@ -686,10 +686,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteAccountSettingRequestTypeDef
+## DeleteAccountSettingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DeleteAccountSettingRequestTypeDef
+from mypy_boto3_ecs.type_defs import DeleteAccountSettingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -700,10 +700,10 @@ Optional fields:
 
 - `principalArn`: `str`
 
-## DeleteAccountSettingResponseResponseTypeDef
+## DeleteAccountSettingResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DeleteAccountSettingResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import DeleteAccountSettingResponseTypeDef
 ```
 
 Required fields:
@@ -712,10 +712,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteAttributesRequestTypeDef
+## DeleteAttributesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DeleteAttributesRequestTypeDef
+from mypy_boto3_ecs.type_defs import DeleteAttributesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -726,10 +726,10 @@ Optional fields:
 
 - `cluster`: `str`
 
-## DeleteAttributesResponseResponseTypeDef
+## DeleteAttributesResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DeleteAttributesResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import DeleteAttributesResponseTypeDef
 ```
 
 Required fields:
@@ -738,20 +738,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteCapacityProviderRequestTypeDef
+## DeleteCapacityProviderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DeleteCapacityProviderRequestTypeDef
+from mypy_boto3_ecs.type_defs import DeleteCapacityProviderRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `capacityProvider`: `str`
 
-## DeleteCapacityProviderResponseResponseTypeDef
+## DeleteCapacityProviderResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DeleteCapacityProviderResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import DeleteCapacityProviderResponseTypeDef
 ```
 
 Required fields:
@@ -761,20 +761,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteClusterRequestTypeDef
+## DeleteClusterRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DeleteClusterRequestTypeDef
+from mypy_boto3_ecs.type_defs import DeleteClusterRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `cluster`: `str`
 
-## DeleteClusterResponseResponseTypeDef
+## DeleteClusterResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DeleteClusterResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import DeleteClusterResponseTypeDef
 ```
 
 Required fields:
@@ -783,10 +783,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteServiceRequestTypeDef
+## DeleteServiceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DeleteServiceRequestTypeDef
+from mypy_boto3_ecs.type_defs import DeleteServiceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -798,10 +798,10 @@ Optional fields:
 - `cluster`: `str`
 - `force`: `bool`
 
-## DeleteServiceResponseResponseTypeDef
+## DeleteServiceResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DeleteServiceResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import DeleteServiceResponseTypeDef
 ```
 
 Required fields:
@@ -810,10 +810,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteTaskSetRequestTypeDef
+## DeleteTaskSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DeleteTaskSetRequestTypeDef
+from mypy_boto3_ecs.type_defs import DeleteTaskSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -826,10 +826,10 @@ Optional fields:
 
 - `force`: `bool`
 
-## DeleteTaskSetResponseResponseTypeDef
+## DeleteTaskSetResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DeleteTaskSetResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import DeleteTaskSetResponseTypeDef
 ```
 
 Required fields:
@@ -900,10 +900,10 @@ Optional fields:
   [DeploymentRolloutStateType](./literals.md#deploymentrolloutstatetype)
 - `rolloutStateReason`: `str`
 
-## DeregisterContainerInstanceRequestTypeDef
+## DeregisterContainerInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DeregisterContainerInstanceRequestTypeDef
+from mypy_boto3_ecs.type_defs import DeregisterContainerInstanceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -915,10 +915,10 @@ Optional fields:
 - `cluster`: `str`
 - `force`: `bool`
 
-## DeregisterContainerInstanceResponseResponseTypeDef
+## DeregisterContainerInstanceResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DeregisterContainerInstanceResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import DeregisterContainerInstanceResponseTypeDef
 ```
 
 Required fields:
@@ -928,20 +928,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeregisterTaskDefinitionRequestTypeDef
+## DeregisterTaskDefinitionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DeregisterTaskDefinitionRequestTypeDef
+from mypy_boto3_ecs.type_defs import DeregisterTaskDefinitionRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `taskDefinition`: `str`
 
-## DeregisterTaskDefinitionResponseResponseTypeDef
+## DeregisterTaskDefinitionResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DeregisterTaskDefinitionResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import DeregisterTaskDefinitionResponseTypeDef
 ```
 
 Required fields:
@@ -951,10 +951,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCapacityProvidersRequestTypeDef
+## DescribeCapacityProvidersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DescribeCapacityProvidersRequestTypeDef
+from mypy_boto3_ecs.type_defs import DescribeCapacityProvidersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -965,10 +965,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## DescribeCapacityProvidersResponseResponseTypeDef
+## DescribeCapacityProvidersResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DescribeCapacityProvidersResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import DescribeCapacityProvidersResponseTypeDef
 ```
 
 Required fields:
@@ -980,10 +980,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeClustersRequestTypeDef
+## DescribeClustersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DescribeClustersRequestTypeDef
+from mypy_boto3_ecs.type_defs import DescribeClustersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -991,10 +991,10 @@ Optional fields:
 - `clusters`: `List`\[`str`\]
 - `include`: `List`\[[ClusterFieldType](./literals.md#clusterfieldtype)\]
 
-## DescribeClustersResponseResponseTypeDef
+## DescribeClustersResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DescribeClustersResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import DescribeClustersResponseTypeDef
 ```
 
 Required fields:
@@ -1004,10 +1004,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeContainerInstancesRequestTypeDef
+## DescribeContainerInstancesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DescribeContainerInstancesRequestTypeDef
+from mypy_boto3_ecs.type_defs import DescribeContainerInstancesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1020,10 +1020,10 @@ Optional fields:
 - `include`: `List`\[`Literal['TAGS']` (see
   [ContainerInstanceFieldType](./literals.md#containerinstancefieldtype))\]
 
-## DescribeContainerInstancesResponseResponseTypeDef
+## DescribeContainerInstancesResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DescribeContainerInstancesResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import DescribeContainerInstancesResponseTypeDef
 ```
 
 Required fields:
@@ -1034,10 +1034,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeServicesRequestTypeDef
+## DescribeServicesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DescribeServicesRequestTypeDef
+from mypy_boto3_ecs.type_defs import DescribeServicesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1050,10 +1050,10 @@ Optional fields:
 - `include`: `List`\[`Literal['TAGS']` (see
   [ServiceFieldType](./literals.md#servicefieldtype))\]
 
-## DescribeServicesResponseResponseTypeDef
+## DescribeServicesResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DescribeServicesResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import DescribeServicesResponseTypeDef
 ```
 
 Required fields:
@@ -1063,10 +1063,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTaskDefinitionRequestTypeDef
+## DescribeTaskDefinitionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DescribeTaskDefinitionRequestTypeDef
+from mypy_boto3_ecs.type_defs import DescribeTaskDefinitionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1078,10 +1078,10 @@ Optional fields:
 - `include`: `List`\[`Literal['TAGS']` (see
   [TaskDefinitionFieldType](./literals.md#taskdefinitionfieldtype))\]
 
-## DescribeTaskDefinitionResponseResponseTypeDef
+## DescribeTaskDefinitionResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DescribeTaskDefinitionResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import DescribeTaskDefinitionResponseTypeDef
 ```
 
 Required fields:
@@ -1092,10 +1092,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTaskSetsRequestTypeDef
+## DescribeTaskSetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DescribeTaskSetsRequestTypeDef
+from mypy_boto3_ecs.type_defs import DescribeTaskSetsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1109,10 +1109,10 @@ Optional fields:
 - `include`: `List`\[`Literal['TAGS']` (see
   [TaskSetFieldType](./literals.md#tasksetfieldtype))\]
 
-## DescribeTaskSetsResponseResponseTypeDef
+## DescribeTaskSetsResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DescribeTaskSetsResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import DescribeTaskSetsResponseTypeDef
 ```
 
 Required fields:
@@ -1122,10 +1122,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTasksRequestTypeDef
+## DescribeTasksRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DescribeTasksRequestTypeDef
+from mypy_boto3_ecs.type_defs import DescribeTasksRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1138,10 +1138,10 @@ Optional fields:
 - `include`: `List`\[`Literal['TAGS']` (see
   [TaskFieldType](./literals.md#taskfieldtype))\]
 
-## DescribeTasksResponseResponseTypeDef
+## DescribeTasksResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DescribeTasksResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import DescribeTasksResponseTypeDef
 ```
 
 Required fields:
@@ -1167,10 +1167,10 @@ Optional fields:
 - `permissions`:
   `List`\[[DeviceCgroupPermissionType](./literals.md#devicecgrouppermissiontype)\]
 
-## DiscoverPollEndpointRequestTypeDef
+## DiscoverPollEndpointRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DiscoverPollEndpointRequestTypeDef
+from mypy_boto3_ecs.type_defs import DiscoverPollEndpointRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1178,10 +1178,10 @@ Optional fields:
 - `containerInstance`: `str`
 - `cluster`: `str`
 
-## DiscoverPollEndpointResponseResponseTypeDef
+## DiscoverPollEndpointResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import DiscoverPollEndpointResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import DiscoverPollEndpointResponseTypeDef
 ```
 
 Required fields:
@@ -1286,10 +1286,10 @@ Optional fields:
 - `s3EncryptionEnabled`: `bool`
 - `s3KeyPrefix`: `str`
 
-## ExecuteCommandRequestTypeDef
+## ExecuteCommandRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import ExecuteCommandRequestTypeDef
+from mypy_boto3_ecs.type_defs import ExecuteCommandRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1303,10 +1303,10 @@ Optional fields:
 - `cluster`: `str`
 - `container`: `str`
 
-## ExecuteCommandResponseResponseTypeDef
+## ExecuteCommandResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import ExecuteCommandResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import ExecuteCommandResponseTypeDef
 ```
 
 Required fields:
@@ -1470,10 +1470,10 @@ Optional fields:
 - `maxSwap`: `int`
 - `swappiness`: `int`
 
-## ListAccountSettingsRequestTypeDef
+## ListAccountSettingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import ListAccountSettingsRequestTypeDef
+from mypy_boto3_ecs.type_defs import ListAccountSettingsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1485,10 +1485,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListAccountSettingsResponseResponseTypeDef
+## ListAccountSettingsResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import ListAccountSettingsResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import ListAccountSettingsResponseTypeDef
 ```
 
 Required fields:
@@ -1498,10 +1498,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAttributesRequestTypeDef
+## ListAttributesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import ListAttributesRequestTypeDef
+from mypy_boto3_ecs.type_defs import ListAttributesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1517,10 +1517,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListAttributesResponseResponseTypeDef
+## ListAttributesResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import ListAttributesResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import ListAttributesResponseTypeDef
 ```
 
 Required fields:
@@ -1530,10 +1530,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListClustersRequestTypeDef
+## ListClustersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import ListClustersRequestTypeDef
+from mypy_boto3_ecs.type_defs import ListClustersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1541,10 +1541,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListClustersResponseResponseTypeDef
+## ListClustersResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import ListClustersResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import ListClustersResponseTypeDef
 ```
 
 Required fields:
@@ -1554,10 +1554,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListContainerInstancesRequestTypeDef
+## ListContainerInstancesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import ListContainerInstancesRequestTypeDef
+from mypy_boto3_ecs.type_defs import ListContainerInstancesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1569,10 +1569,10 @@ Optional fields:
 - `status`:
   [ContainerInstanceStatusType](./literals.md#containerinstancestatustype)
 
-## ListContainerInstancesResponseResponseTypeDef
+## ListContainerInstancesResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import ListContainerInstancesResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import ListContainerInstancesResponseTypeDef
 ```
 
 Required fields:
@@ -1582,10 +1582,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListServicesRequestTypeDef
+## ListServicesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import ListServicesRequestTypeDef
+from mypy_boto3_ecs.type_defs import ListServicesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1597,10 +1597,10 @@ Optional fields:
 - `schedulingStrategy`:
   [SchedulingStrategyType](./literals.md#schedulingstrategytype)
 
-## ListServicesResponseResponseTypeDef
+## ListServicesResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import ListServicesResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import ListServicesResponseTypeDef
 ```
 
 Required fields:
@@ -1610,20 +1610,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_ecs.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -1632,10 +1632,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTaskDefinitionFamiliesRequestTypeDef
+## ListTaskDefinitionFamiliesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import ListTaskDefinitionFamiliesRequestTypeDef
+from mypy_boto3_ecs.type_defs import ListTaskDefinitionFamiliesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1646,10 +1646,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListTaskDefinitionFamiliesResponseResponseTypeDef
+## ListTaskDefinitionFamiliesResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import ListTaskDefinitionFamiliesResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import ListTaskDefinitionFamiliesResponseTypeDef
 ```
 
 Required fields:
@@ -1659,10 +1659,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTaskDefinitionsRequestTypeDef
+## ListTaskDefinitionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import ListTaskDefinitionsRequestTypeDef
+from mypy_boto3_ecs.type_defs import ListTaskDefinitionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1673,10 +1673,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListTaskDefinitionsResponseResponseTypeDef
+## ListTaskDefinitionsResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import ListTaskDefinitionsResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import ListTaskDefinitionsResponseTypeDef
 ```
 
 Required fields:
@@ -1686,10 +1686,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTasksRequestTypeDef
+## ListTasksRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import ListTasksRequestTypeDef
+from mypy_boto3_ecs.type_defs import ListTasksRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1704,10 +1704,10 @@ Optional fields:
 - `desiredStatus`: [DesiredStatusType](./literals.md#desiredstatustype)
 - `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
 
-## ListTasksResponseResponseTypeDef
+## ListTasksResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import ListTasksResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import ListTasksResponseTypeDef
 ```
 
 Required fields:
@@ -1914,10 +1914,10 @@ Optional fields:
 - `properties`:
   `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
 
-## PutAccountSettingDefaultRequestTypeDef
+## PutAccountSettingDefaultRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import PutAccountSettingDefaultRequestTypeDef
+from mypy_boto3_ecs.type_defs import PutAccountSettingDefaultRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1925,10 +1925,10 @@ Required fields:
 - `name`: [SettingNameType](./literals.md#settingnametype)
 - `value`: `str`
 
-## PutAccountSettingDefaultResponseResponseTypeDef
+## PutAccountSettingDefaultResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import PutAccountSettingDefaultResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import PutAccountSettingDefaultResponseTypeDef
 ```
 
 Required fields:
@@ -1937,10 +1937,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutAccountSettingRequestTypeDef
+## PutAccountSettingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import PutAccountSettingRequestTypeDef
+from mypy_boto3_ecs.type_defs import PutAccountSettingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1952,10 +1952,10 @@ Optional fields:
 
 - `principalArn`: `str`
 
-## PutAccountSettingResponseResponseTypeDef
+## PutAccountSettingResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import PutAccountSettingResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import PutAccountSettingResponseTypeDef
 ```
 
 Required fields:
@@ -1964,10 +1964,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutAttributesRequestTypeDef
+## PutAttributesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import PutAttributesRequestTypeDef
+from mypy_boto3_ecs.type_defs import PutAttributesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1978,10 +1978,10 @@ Optional fields:
 
 - `cluster`: `str`
 
-## PutAttributesResponseResponseTypeDef
+## PutAttributesResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import PutAttributesResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import PutAttributesResponseTypeDef
 ```
 
 Required fields:
@@ -1990,10 +1990,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutClusterCapacityProvidersRequestTypeDef
+## PutClusterCapacityProvidersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import PutClusterCapacityProvidersRequestTypeDef
+from mypy_boto3_ecs.type_defs import PutClusterCapacityProvidersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2003,10 +2003,10 @@ Required fields:
 - `defaultCapacityProviderStrategy`:
   `List`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
 
-## PutClusterCapacityProvidersResponseResponseTypeDef
+## PutClusterCapacityProvidersResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import PutClusterCapacityProvidersResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import PutClusterCapacityProvidersResponseTypeDef
 ```
 
 Required fields:
@@ -2015,10 +2015,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RegisterContainerInstanceRequestTypeDef
+## RegisterContainerInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import RegisterContainerInstanceRequestTypeDef
+from mypy_boto3_ecs.type_defs import RegisterContainerInstanceRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2034,10 +2034,10 @@ Optional fields:
   `List`\[[PlatformDeviceTypeDef](./type_defs.md#platformdevicetypedef)\]
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## RegisterContainerInstanceResponseResponseTypeDef
+## RegisterContainerInstanceResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import RegisterContainerInstanceResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import RegisterContainerInstanceResponseTypeDef
 ```
 
 Required fields:
@@ -2047,10 +2047,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RegisterTaskDefinitionRequestTypeDef
+## RegisterTaskDefinitionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import RegisterTaskDefinitionRequestTypeDef
+from mypy_boto3_ecs.type_defs import RegisterTaskDefinitionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2081,10 +2081,10 @@ Optional fields:
 - `ephemeralStorage`:
   [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
 
-## RegisterTaskDefinitionResponseResponseTypeDef
+## RegisterTaskDefinitionResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import RegisterTaskDefinitionResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import RegisterTaskDefinitionResponseTypeDef
 ```
 
 Required fields:
@@ -2145,10 +2145,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## RunTaskRequestTypeDef
+## RunTaskRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import RunTaskRequestTypeDef
+from mypy_boto3_ecs.type_defs import RunTaskRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2178,10 +2178,10 @@ Optional fields:
 - `startedBy`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## RunTaskResponseResponseTypeDef
+## RunTaskResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import RunTaskResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import RunTaskResponseTypeDef
 ```
 
 Required fields:
@@ -2312,10 +2312,10 @@ Optional fields:
 - `value`: `str`
 - `principalArn`: `str`
 
-## StartTaskRequestTypeDef
+## StartTaskRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import StartTaskRequestTypeDef
+from mypy_boto3_ecs.type_defs import StartTaskRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2337,10 +2337,10 @@ Optional fields:
 - `startedBy`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## StartTaskResponseResponseTypeDef
+## StartTaskResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import StartTaskResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import StartTaskResponseTypeDef
 ```
 
 Required fields:
@@ -2350,10 +2350,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopTaskRequestTypeDef
+## StopTaskRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import StopTaskRequestTypeDef
+from mypy_boto3_ecs.type_defs import StopTaskRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2365,10 +2365,10 @@ Optional fields:
 - `cluster`: `str`
 - `reason`: `str`
 
-## StopTaskResponseResponseTypeDef
+## StopTaskResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import StopTaskResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import StopTaskResponseTypeDef
 ```
 
 Required fields:
@@ -2377,10 +2377,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SubmitAttachmentStateChangesRequestTypeDef
+## SubmitAttachmentStateChangesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import SubmitAttachmentStateChangesRequestTypeDef
+from mypy_boto3_ecs.type_defs import SubmitAttachmentStateChangesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2392,10 +2392,10 @@ Optional fields:
 
 - `cluster`: `str`
 
-## SubmitAttachmentStateChangesResponseResponseTypeDef
+## SubmitAttachmentStateChangesResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import SubmitAttachmentStateChangesResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import SubmitAttachmentStateChangesResponseTypeDef
 ```
 
 Required fields:
@@ -2404,10 +2404,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SubmitContainerStateChangeRequestTypeDef
+## SubmitContainerStateChangeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import SubmitContainerStateChangeRequestTypeDef
+from mypy_boto3_ecs.type_defs import SubmitContainerStateChangeRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2422,10 +2422,10 @@ Optional fields:
 - `networkBindings`:
   `List`\[[NetworkBindingTypeDef](./type_defs.md#networkbindingtypedef)\]
 
-## SubmitContainerStateChangeResponseResponseTypeDef
+## SubmitContainerStateChangeResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import SubmitContainerStateChangeResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import SubmitContainerStateChangeResponseTypeDef
 ```
 
 Required fields:
@@ -2434,10 +2434,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SubmitTaskStateChangeRequestTypeDef
+## SubmitTaskStateChangeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import SubmitTaskStateChangeRequestTypeDef
+from mypy_boto3_ecs.type_defs import SubmitTaskStateChangeRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2456,10 +2456,10 @@ Optional fields:
 - `pullStoppedAt`: `Union`\[`datetime`, `str`\]
 - `executionStoppedAt`: `Union`\[`datetime`, `str`\]
 
-## SubmitTaskStateChangeResponseResponseTypeDef
+## SubmitTaskStateChangeResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import SubmitTaskStateChangeResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import SubmitTaskStateChangeResponseTypeDef
 ```
 
 Required fields:
@@ -2479,10 +2479,10 @@ Optional fields:
 - `namespace`: `str`
 - `value`: `str`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_ecs.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2682,10 +2682,10 @@ Required fields:
 - `softLimit`: `int`
 - `hardLimit`: `int`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_ecs.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2693,10 +2693,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tagKeys`: `List`\[`str`\]
 
-## UpdateCapacityProviderRequestTypeDef
+## UpdateCapacityProviderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import UpdateCapacityProviderRequestTypeDef
+from mypy_boto3_ecs.type_defs import UpdateCapacityProviderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2705,10 +2705,10 @@ Required fields:
 - `autoScalingGroupProvider`:
   [AutoScalingGroupProviderUpdateTypeDef](./type_defs.md#autoscalinggroupproviderupdatetypedef)
 
-## UpdateCapacityProviderResponseResponseTypeDef
+## UpdateCapacityProviderResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import UpdateCapacityProviderResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import UpdateCapacityProviderResponseTypeDef
 ```
 
 Required fields:
@@ -2718,10 +2718,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateClusterRequestTypeDef
+## UpdateClusterRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import UpdateClusterRequestTypeDef
+from mypy_boto3_ecs.type_defs import UpdateClusterRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2735,10 +2735,10 @@ Optional fields:
 - `configuration`:
   [ClusterConfigurationTypeDef](./type_defs.md#clusterconfigurationtypedef)
 
-## UpdateClusterResponseResponseTypeDef
+## UpdateClusterResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import UpdateClusterResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import UpdateClusterResponseTypeDef
 ```
 
 Required fields:
@@ -2747,10 +2747,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateClusterSettingsRequestTypeDef
+## UpdateClusterSettingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import UpdateClusterSettingsRequestTypeDef
+from mypy_boto3_ecs.type_defs import UpdateClusterSettingsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2759,10 +2759,10 @@ Required fields:
 - `settings`:
   `List`\[[ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef)\]
 
-## UpdateClusterSettingsResponseResponseTypeDef
+## UpdateClusterSettingsResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import UpdateClusterSettingsResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import UpdateClusterSettingsResponseTypeDef
 ```
 
 Required fields:
@@ -2771,10 +2771,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateContainerAgentRequestTypeDef
+## UpdateContainerAgentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import UpdateContainerAgentRequestTypeDef
+from mypy_boto3_ecs.type_defs import UpdateContainerAgentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2785,10 +2785,10 @@ Optional fields:
 
 - `cluster`: `str`
 
-## UpdateContainerAgentResponseResponseTypeDef
+## UpdateContainerAgentResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import UpdateContainerAgentResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import UpdateContainerAgentResponseTypeDef
 ```
 
 Required fields:
@@ -2798,10 +2798,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateContainerInstancesStateRequestTypeDef
+## UpdateContainerInstancesStateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import UpdateContainerInstancesStateRequestTypeDef
+from mypy_boto3_ecs.type_defs import UpdateContainerInstancesStateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2814,10 +2814,10 @@ Optional fields:
 
 - `cluster`: `str`
 
-## UpdateContainerInstancesStateResponseResponseTypeDef
+## UpdateContainerInstancesStateResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import UpdateContainerInstancesStateResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import UpdateContainerInstancesStateResponseTypeDef
 ```
 
 Required fields:
@@ -2828,10 +2828,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateServicePrimaryTaskSetRequestTypeDef
+## UpdateServicePrimaryTaskSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import UpdateServicePrimaryTaskSetRequestTypeDef
+from mypy_boto3_ecs.type_defs import UpdateServicePrimaryTaskSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2840,10 +2840,10 @@ Required fields:
 - `service`: `str`
 - `primaryTaskSet`: `str`
 
-## UpdateServicePrimaryTaskSetResponseResponseTypeDef
+## UpdateServicePrimaryTaskSetResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import UpdateServicePrimaryTaskSetResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import UpdateServicePrimaryTaskSetResponseTypeDef
 ```
 
 Required fields:
@@ -2852,10 +2852,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateServiceRequestTypeDef
+## UpdateServiceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import UpdateServiceRequestTypeDef
+from mypy_boto3_ecs.type_defs import UpdateServiceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2882,10 +2882,10 @@ Optional fields:
 - `healthCheckGracePeriodSeconds`: `int`
 - `enableExecuteCommand`: `bool`
 
-## UpdateServiceResponseResponseTypeDef
+## UpdateServiceResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import UpdateServiceResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import UpdateServiceResponseTypeDef
 ```
 
 Required fields:
@@ -2894,10 +2894,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateTaskSetRequestTypeDef
+## UpdateTaskSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import UpdateTaskSetRequestTypeDef
+from mypy_boto3_ecs.type_defs import UpdateTaskSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2907,10 +2907,10 @@ Required fields:
 - `taskSet`: `str`
 - `scale`: [ScaleTypeDef](./type_defs.md#scaletypedef)
 
-## UpdateTaskSetResponseResponseTypeDef
+## UpdateTaskSetResponseTypeDef
 
 ```python
-from mypy_boto3_ecs.type_defs import UpdateTaskSetResponseResponseTypeDef
+from mypy_boto3_ecs.type_defs import UpdateTaskSetResponseTypeDef
 ```
 
 Required fields:

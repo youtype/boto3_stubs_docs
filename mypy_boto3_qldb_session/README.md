@@ -31,6 +31,7 @@ from mypy_boto3_qldb_session.client import QLDBSessionClient
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [send_command](./client.md#send_command)
 
@@ -68,8 +69,8 @@ from mypy_boto3_qldb_session.type_defs import AbortTransactionResultTypeDef, ...
 - [IOUsageTypeDef](./type_defs.md#iousagetypedef)
 - [PageTypeDef](./type_defs.md#pagetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [SendCommandRequestTypeDef](./type_defs.md#sendcommandrequesttypedef)
-- [SendCommandResultResponseTypeDef](./type_defs.md#sendcommandresultresponsetypedef)
+- [SendCommandRequestRequestTypeDef](./type_defs.md#sendcommandrequestrequesttypedef)
+- [SendCommandResultTypeDef](./type_defs.md#sendcommandresulttypedef)
 - [StartSessionRequestTypeDef](./type_defs.md#startsessionrequesttypedef)
 - [StartSessionResultTypeDef](./type_defs.md#startsessionresulttypedef)
 - [StartTransactionResultTypeDef](./type_defs.md#starttransactionresulttypedef)

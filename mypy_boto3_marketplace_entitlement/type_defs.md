@@ -10,8 +10,8 @@ type annotations stubs module
 - [Typed dictionaries for boto3 MarketplaceEntitlementService module](#typed-dictionaries-for-boto3-marketplaceentitlementservice-module)
   - [EntitlementTypeDef](#entitlementtypedef)
   - [EntitlementValueTypeDef](#entitlementvaluetypedef)
-  - [GetEntitlementsRequestTypeDef](#getentitlementsrequesttypedef)
-  - [GetEntitlementsResultResponseTypeDef](#getentitlementsresultresponsetypedef)
+  - [GetEntitlementsRequestRequestTypeDef](#getentitlementsrequestrequesttypedef)
+  - [GetEntitlementsResultTypeDef](#getentitlementsresulttypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
 
@@ -42,10 +42,10 @@ Optional fields:
 - `BooleanValue`: `bool`
 - `StringValue`: `str`
 
-## GetEntitlementsRequestTypeDef
+## GetEntitlementsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_marketplace_entitlement.type_defs import GetEntitlementsRequestTypeDef
+from mypy_boto3_marketplace_entitlement.type_defs import GetEntitlementsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -60,10 +60,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## GetEntitlementsResultResponseTypeDef
+## GetEntitlementsResultTypeDef
 
 ```python
-from mypy_boto3_marketplace_entitlement.type_defs import GetEntitlementsResultResponseTypeDef
+from mypy_boto3_marketplace_entitlement.type_defs import GetEntitlementsResultTypeDef
 ```
 
 Required fields:

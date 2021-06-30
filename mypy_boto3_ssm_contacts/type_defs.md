@@ -8,68 +8,68 @@ type annotations stubs module
 [mypy_boto3_ssm_contacts](https://pypi.org/project/mypy-boto3-ssm-contacts/).
 
 - [Typed dictionaries for boto3 SSMContacts module](#typed-dictionaries-for-boto3-ssmcontacts-module)
-  - [AcceptPageRequestTypeDef](#acceptpagerequesttypedef)
-  - [ActivateContactChannelRequestTypeDef](#activatecontactchannelrequesttypedef)
+  - [AcceptPageRequestRequestTypeDef](#acceptpagerequestrequesttypedef)
+  - [ActivateContactChannelRequestRequestTypeDef](#activatecontactchannelrequestrequesttypedef)
   - [ChannelTargetInfoTypeDef](#channeltargetinfotypedef)
   - [ContactChannelAddressTypeDef](#contactchanneladdresstypedef)
   - [ContactChannelTypeDef](#contactchanneltypedef)
   - [ContactTargetInfoTypeDef](#contacttargetinfotypedef)
   - [ContactTypeDef](#contacttypedef)
-  - [CreateContactChannelRequestTypeDef](#createcontactchannelrequesttypedef)
-  - [CreateContactChannelResultResponseTypeDef](#createcontactchannelresultresponsetypedef)
-  - [CreateContactRequestTypeDef](#createcontactrequesttypedef)
-  - [CreateContactResultResponseTypeDef](#createcontactresultresponsetypedef)
-  - [DeactivateContactChannelRequestTypeDef](#deactivatecontactchannelrequesttypedef)
-  - [DeleteContactChannelRequestTypeDef](#deletecontactchannelrequesttypedef)
-  - [DeleteContactRequestTypeDef](#deletecontactrequesttypedef)
-  - [DescribeEngagementRequestTypeDef](#describeengagementrequesttypedef)
-  - [DescribeEngagementResultResponseTypeDef](#describeengagementresultresponsetypedef)
-  - [DescribePageRequestTypeDef](#describepagerequesttypedef)
-  - [DescribePageResultResponseTypeDef](#describepageresultresponsetypedef)
+  - [CreateContactChannelRequestRequestTypeDef](#createcontactchannelrequestrequesttypedef)
+  - [CreateContactChannelResultTypeDef](#createcontactchannelresulttypedef)
+  - [CreateContactRequestRequestTypeDef](#createcontactrequestrequesttypedef)
+  - [CreateContactResultTypeDef](#createcontactresulttypedef)
+  - [DeactivateContactChannelRequestRequestTypeDef](#deactivatecontactchannelrequestrequesttypedef)
+  - [DeleteContactChannelRequestRequestTypeDef](#deletecontactchannelrequestrequesttypedef)
+  - [DeleteContactRequestRequestTypeDef](#deletecontactrequestrequesttypedef)
+  - [DescribeEngagementRequestRequestTypeDef](#describeengagementrequestrequesttypedef)
+  - [DescribeEngagementResultTypeDef](#describeengagementresulttypedef)
+  - [DescribePageRequestRequestTypeDef](#describepagerequestrequesttypedef)
+  - [DescribePageResultTypeDef](#describepageresulttypedef)
   - [EngagementTypeDef](#engagementtypedef)
-  - [GetContactChannelRequestTypeDef](#getcontactchannelrequesttypedef)
-  - [GetContactChannelResultResponseTypeDef](#getcontactchannelresultresponsetypedef)
-  - [GetContactPolicyRequestTypeDef](#getcontactpolicyrequesttypedef)
-  - [GetContactPolicyResultResponseTypeDef](#getcontactpolicyresultresponsetypedef)
-  - [GetContactRequestTypeDef](#getcontactrequesttypedef)
-  - [GetContactResultResponseTypeDef](#getcontactresultresponsetypedef)
-  - [ListContactChannelsRequestTypeDef](#listcontactchannelsrequesttypedef)
-  - [ListContactChannelsResultResponseTypeDef](#listcontactchannelsresultresponsetypedef)
-  - [ListContactsRequestTypeDef](#listcontactsrequesttypedef)
-  - [ListContactsResultResponseTypeDef](#listcontactsresultresponsetypedef)
-  - [ListEngagementsRequestTypeDef](#listengagementsrequesttypedef)
-  - [ListEngagementsResultResponseTypeDef](#listengagementsresultresponsetypedef)
-  - [ListPageReceiptsRequestTypeDef](#listpagereceiptsrequesttypedef)
-  - [ListPageReceiptsResultResponseTypeDef](#listpagereceiptsresultresponsetypedef)
-  - [ListPagesByContactRequestTypeDef](#listpagesbycontactrequesttypedef)
-  - [ListPagesByContactResultResponseTypeDef](#listpagesbycontactresultresponsetypedef)
-  - [ListPagesByEngagementRequestTypeDef](#listpagesbyengagementrequesttypedef)
-  - [ListPagesByEngagementResultResponseTypeDef](#listpagesbyengagementresultresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResultResponseTypeDef](#listtagsforresourceresultresponsetypedef)
+  - [GetContactChannelRequestRequestTypeDef](#getcontactchannelrequestrequesttypedef)
+  - [GetContactChannelResultTypeDef](#getcontactchannelresulttypedef)
+  - [GetContactPolicyRequestRequestTypeDef](#getcontactpolicyrequestrequesttypedef)
+  - [GetContactPolicyResultTypeDef](#getcontactpolicyresulttypedef)
+  - [GetContactRequestRequestTypeDef](#getcontactrequestrequesttypedef)
+  - [GetContactResultTypeDef](#getcontactresulttypedef)
+  - [ListContactChannelsRequestRequestTypeDef](#listcontactchannelsrequestrequesttypedef)
+  - [ListContactChannelsResultTypeDef](#listcontactchannelsresulttypedef)
+  - [ListContactsRequestRequestTypeDef](#listcontactsrequestrequesttypedef)
+  - [ListContactsResultTypeDef](#listcontactsresulttypedef)
+  - [ListEngagementsRequestRequestTypeDef](#listengagementsrequestrequesttypedef)
+  - [ListEngagementsResultTypeDef](#listengagementsresulttypedef)
+  - [ListPageReceiptsRequestRequestTypeDef](#listpagereceiptsrequestrequesttypedef)
+  - [ListPageReceiptsResultTypeDef](#listpagereceiptsresulttypedef)
+  - [ListPagesByContactRequestRequestTypeDef](#listpagesbycontactrequestrequesttypedef)
+  - [ListPagesByContactResultTypeDef](#listpagesbycontactresulttypedef)
+  - [ListPagesByEngagementRequestRequestTypeDef](#listpagesbyengagementrequestrequesttypedef)
+  - [ListPagesByEngagementResultTypeDef](#listpagesbyengagementresulttypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResultTypeDef](#listtagsforresourceresulttypedef)
   - [PageTypeDef](#pagetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PlanTypeDef](#plantypedef)
-  - [PutContactPolicyRequestTypeDef](#putcontactpolicyrequesttypedef)
+  - [PutContactPolicyRequestRequestTypeDef](#putcontactpolicyrequestrequesttypedef)
   - [ReceiptTypeDef](#receipttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SendActivationCodeRequestTypeDef](#sendactivationcoderequesttypedef)
+  - [SendActivationCodeRequestRequestTypeDef](#sendactivationcoderequestrequesttypedef)
   - [StageTypeDef](#stagetypedef)
-  - [StartEngagementRequestTypeDef](#startengagementrequesttypedef)
-  - [StartEngagementResultResponseTypeDef](#startengagementresultresponsetypedef)
-  - [StopEngagementRequestTypeDef](#stopengagementrequesttypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [StartEngagementRequestRequestTypeDef](#startengagementrequestrequesttypedef)
+  - [StartEngagementResultTypeDef](#startengagementresulttypedef)
+  - [StopEngagementRequestRequestTypeDef](#stopengagementrequestrequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TargetTypeDef](#targettypedef)
   - [TimeRangeTypeDef](#timerangetypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateContactChannelRequestTypeDef](#updatecontactchannelrequesttypedef)
-  - [UpdateContactRequestTypeDef](#updatecontactrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateContactChannelRequestRequestTypeDef](#updatecontactchannelrequestrequesttypedef)
+  - [UpdateContactRequestRequestTypeDef](#updatecontactrequestrequesttypedef)
 
-## AcceptPageRequestTypeDef
+## AcceptPageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import AcceptPageRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import AcceptPageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -83,10 +83,10 @@ Optional fields:
 - `ContactChannelId`: `str`
 - `Note`: `str`
 
-## ActivateContactChannelRequestTypeDef
+## ActivateContactChannelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import ActivateContactChannelRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import ActivateContactChannelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -168,10 +168,10 @@ Optional fields:
 
 - `DisplayName`: `str`
 
-## CreateContactChannelRequestTypeDef
+## CreateContactChannelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import CreateContactChannelRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import CreateContactChannelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -187,10 +187,10 @@ Optional fields:
 - `DeferActivation`: `bool`
 - `IdempotencyToken`: `str`
 
-## CreateContactChannelResultResponseTypeDef
+## CreateContactChannelResultTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import CreateContactChannelResultResponseTypeDef
+from mypy_boto3_ssm_contacts.type_defs import CreateContactChannelResultTypeDef
 ```
 
 Required fields:
@@ -199,10 +199,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateContactRequestTypeDef
+## CreateContactRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import CreateContactRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import CreateContactRequestRequestTypeDef
 ```
 
 Required fields:
@@ -217,10 +217,10 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `IdempotencyToken`: `str`
 
-## CreateContactResultResponseTypeDef
+## CreateContactResultTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import CreateContactResultResponseTypeDef
+from mypy_boto3_ssm_contacts.type_defs import CreateContactResultTypeDef
 ```
 
 Required fields:
@@ -229,50 +229,50 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeactivateContactChannelRequestTypeDef
+## DeactivateContactChannelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import DeactivateContactChannelRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import DeactivateContactChannelRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ContactChannelId`: `str`
 
-## DeleteContactChannelRequestTypeDef
+## DeleteContactChannelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import DeleteContactChannelRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import DeleteContactChannelRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ContactChannelId`: `str`
 
-## DeleteContactRequestTypeDef
+## DeleteContactRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import DeleteContactRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import DeleteContactRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ContactId`: `str`
 
-## DescribeEngagementRequestTypeDef
+## DescribeEngagementRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import DescribeEngagementRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import DescribeEngagementRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `EngagementId`: `str`
 
-## DescribeEngagementResultResponseTypeDef
+## DescribeEngagementResultTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import DescribeEngagementResultResponseTypeDef
+from mypy_boto3_ssm_contacts.type_defs import DescribeEngagementResultTypeDef
 ```
 
 Required fields:
@@ -290,20 +290,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePageRequestTypeDef
+## DescribePageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import DescribePageRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import DescribePageRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `PageId`: `str`
 
-## DescribePageResultResponseTypeDef
+## DescribePageResultTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import DescribePageResultResponseTypeDef
+from mypy_boto3_ssm_contacts.type_defs import DescribePageResultTypeDef
 ```
 
 Required fields:
@@ -341,20 +341,20 @@ Optional fields:
 - `StartTime`: `datetime`
 - `StopTime`: `datetime`
 
-## GetContactChannelRequestTypeDef
+## GetContactChannelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import GetContactChannelRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import GetContactChannelRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ContactChannelId`: `str`
 
-## GetContactChannelResultResponseTypeDef
+## GetContactChannelResultTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import GetContactChannelResultResponseTypeDef
+from mypy_boto3_ssm_contacts.type_defs import GetContactChannelResultTypeDef
 ```
 
 Required fields:
@@ -370,20 +370,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetContactPolicyRequestTypeDef
+## GetContactPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import GetContactPolicyRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import GetContactPolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ContactArn`: `str`
 
-## GetContactPolicyResultResponseTypeDef
+## GetContactPolicyResultTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import GetContactPolicyResultResponseTypeDef
+from mypy_boto3_ssm_contacts.type_defs import GetContactPolicyResultTypeDef
 ```
 
 Required fields:
@@ -393,20 +393,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetContactRequestTypeDef
+## GetContactRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import GetContactRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import GetContactRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ContactId`: `str`
 
-## GetContactResultResponseTypeDef
+## GetContactResultTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import GetContactResultResponseTypeDef
+from mypy_boto3_ssm_contacts.type_defs import GetContactResultTypeDef
 ```
 
 Required fields:
@@ -419,10 +419,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListContactChannelsRequestTypeDef
+## ListContactChannelsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import ListContactChannelsRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import ListContactChannelsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -434,10 +434,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListContactChannelsResultResponseTypeDef
+## ListContactChannelsResultTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import ListContactChannelsResultResponseTypeDef
+from mypy_boto3_ssm_contacts.type_defs import ListContactChannelsResultTypeDef
 ```
 
 Required fields:
@@ -448,10 +448,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListContactsRequestTypeDef
+## ListContactsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import ListContactsRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import ListContactsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -461,10 +461,10 @@ Optional fields:
 - `AliasPrefix`: `str`
 - `Type`: [ContactTypeType](./literals.md#contacttypetype)
 
-## ListContactsResultResponseTypeDef
+## ListContactsResultTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import ListContactsResultResponseTypeDef
+from mypy_boto3_ssm_contacts.type_defs import ListContactsResultTypeDef
 ```
 
 Required fields:
@@ -474,10 +474,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListEngagementsRequestTypeDef
+## ListEngagementsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import ListEngagementsRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import ListEngagementsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -487,10 +487,10 @@ Optional fields:
 - `IncidentId`: `str`
 - `TimeRangeValue`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
 
-## ListEngagementsResultResponseTypeDef
+## ListEngagementsResultTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import ListEngagementsResultResponseTypeDef
+from mypy_boto3_ssm_contacts.type_defs import ListEngagementsResultTypeDef
 ```
 
 Required fields:
@@ -501,10 +501,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPageReceiptsRequestTypeDef
+## ListPageReceiptsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import ListPageReceiptsRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import ListPageReceiptsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -516,10 +516,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListPageReceiptsResultResponseTypeDef
+## ListPageReceiptsResultTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import ListPageReceiptsResultResponseTypeDef
+from mypy_boto3_ssm_contacts.type_defs import ListPageReceiptsResultTypeDef
 ```
 
 Required fields:
@@ -529,10 +529,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPagesByContactRequestTypeDef
+## ListPagesByContactRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import ListPagesByContactRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import ListPagesByContactRequestRequestTypeDef
 ```
 
 Required fields:
@@ -544,10 +544,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListPagesByContactResultResponseTypeDef
+## ListPagesByContactResultTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import ListPagesByContactResultResponseTypeDef
+from mypy_boto3_ssm_contacts.type_defs import ListPagesByContactResultTypeDef
 ```
 
 Required fields:
@@ -557,10 +557,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPagesByEngagementRequestTypeDef
+## ListPagesByEngagementRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import ListPagesByEngagementRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import ListPagesByEngagementRequestRequestTypeDef
 ```
 
 Required fields:
@@ -572,10 +572,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListPagesByEngagementResultResponseTypeDef
+## ListPagesByEngagementResultTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import ListPagesByEngagementResultResponseTypeDef
+from mypy_boto3_ssm_contacts.type_defs import ListPagesByEngagementResultTypeDef
 ```
 
 Required fields:
@@ -585,20 +585,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceARN`: `str`
 
-## ListTagsForResourceResultResponseTypeDef
+## ListTagsForResourceResultTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import ListTagsForResourceResultResponseTypeDef
+from mypy_boto3_ssm_contacts.type_defs import ListTagsForResourceResultTypeDef
 ```
 
 Required fields:
@@ -649,10 +649,10 @@ Required fields:
 
 - `Stages`: `List`\[[StageTypeDef](./type_defs.md#stagetypedef)\]
 
-## PutContactPolicyRequestTypeDef
+## PutContactPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import PutContactPolicyRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import PutContactPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -690,10 +690,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## SendActivationCodeRequestTypeDef
+## SendActivationCodeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import SendActivationCodeRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import SendActivationCodeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -711,10 +711,10 @@ Required fields:
 - `DurationInMinutes`: `int`
 - `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 
-## StartEngagementRequestTypeDef
+## StartEngagementRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import StartEngagementRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import StartEngagementRequestRequestTypeDef
 ```
 
 Required fields:
@@ -731,10 +731,10 @@ Optional fields:
 - `IncidentId`: `str`
 - `IdempotencyToken`: `str`
 
-## StartEngagementResultResponseTypeDef
+## StartEngagementResultTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import StartEngagementResultResponseTypeDef
+from mypy_boto3_ssm_contacts.type_defs import StartEngagementResultTypeDef
 ```
 
 Required fields:
@@ -743,10 +743,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopEngagementRequestTypeDef
+## StopEngagementRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import StopEngagementRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import StopEngagementRequestRequestTypeDef
 ```
 
 Required fields:
@@ -757,10 +757,10 @@ Optional fields:
 
 - `Reason`: `str`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -803,10 +803,10 @@ Optional fields:
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -814,10 +814,10 @@ Required fields:
 - `ResourceARN`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateContactChannelRequestTypeDef
+## UpdateContactChannelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import UpdateContactChannelRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import UpdateContactChannelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -830,10 +830,10 @@ Optional fields:
 - `DeliveryAddress`:
   [ContactChannelAddressTypeDef](./type_defs.md#contactchanneladdresstypedef)
 
-## UpdateContactRequestTypeDef
+## UpdateContactRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_contacts.type_defs import UpdateContactRequestTypeDef
+from mypy_boto3_ssm_contacts.type_defs import UpdateContactRequestRequestTypeDef
 ```
 
 Required fields:

@@ -85,7 +85,7 @@ Arguments for `GetBehaviorModelTrainingSummariesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetBehaviorModelTrainingSummariesPaginator.paginate` returns
-`Iterator`\[[GetBehaviorModelTrainingSummariesResponseResponseTypeDef](./type_defs.md#getbehaviormodeltrainingsummariesresponseresponsetypedef)\].
+`Iterator`\[[GetBehaviorModelTrainingSummariesResponseTypeDef](./type_defs.md#getbehaviormodeltrainingsummariesresponsetypedef)\].
 
 ## ListActiveViolationsPaginator
 
@@ -115,7 +115,7 @@ Arguments for `ListActiveViolationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListActiveViolationsPaginator.paginate` returns
-`Iterator`\[[ListActiveViolationsResponseResponseTypeDef](./type_defs.md#listactiveviolationsresponseresponsetypedef)\].
+`Iterator`\[[ListActiveViolationsResponseTypeDef](./type_defs.md#listactiveviolationsresponsetypedef)\].
 
 ## ListAttachedPoliciesPaginator
 
@@ -142,7 +142,7 @@ Arguments for `ListAttachedPoliciesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAttachedPoliciesPaginator.paginate` returns
-`Iterator`\[[ListAttachedPoliciesResponseResponseTypeDef](./type_defs.md#listattachedpoliciesresponseresponsetypedef)\].
+`Iterator`\[[ListAttachedPoliciesResponseTypeDef](./type_defs.md#listattachedpoliciesresponsetypedef)\].
 
 ## ListAuditFindingsPaginator
 
@@ -174,7 +174,7 @@ Arguments for `ListAuditFindingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAuditFindingsPaginator.paginate` returns
-`Iterator`\[[ListAuditFindingsResponseResponseTypeDef](./type_defs.md#listauditfindingsresponseresponsetypedef)\].
+`Iterator`\[[ListAuditFindingsResponseTypeDef](./type_defs.md#listauditfindingsresponsetypedef)\].
 
 ## ListAuditMitigationActionsExecutionsPaginator
 
@@ -203,7 +203,7 @@ Arguments for `ListAuditMitigationActionsExecutionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAuditMitigationActionsExecutionsPaginator.paginate` returns
-`Iterator`\[[ListAuditMitigationActionsExecutionsResponseResponseTypeDef](./type_defs.md#listauditmitigationactionsexecutionsresponseresponsetypedef)\].
+`Iterator`\[[ListAuditMitigationActionsExecutionsResponseTypeDef](./type_defs.md#listauditmitigationactionsexecutionsresponsetypedef)\].
 
 ## ListAuditMitigationActionsTasksPaginator
 
@@ -234,7 +234,7 @@ Arguments for `ListAuditMitigationActionsTasksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAuditMitigationActionsTasksPaginator.paginate` returns
-`Iterator`\[[ListAuditMitigationActionsTasksResponseResponseTypeDef](./type_defs.md#listauditmitigationactionstasksresponseresponsetypedef)\].
+`Iterator`\[[ListAuditMitigationActionsTasksResponseTypeDef](./type_defs.md#listauditmitigationactionstasksresponsetypedef)\].
 
 ## ListAuditSuppressionsPaginator
 
@@ -263,7 +263,7 @@ Arguments for `ListAuditSuppressionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAuditSuppressionsPaginator.paginate` returns
-`Iterator`\[[ListAuditSuppressionsResponseResponseTypeDef](./type_defs.md#listauditsuppressionsresponseresponsetypedef)\].
+`Iterator`\[[ListAuditSuppressionsResponseTypeDef](./type_defs.md#listauditsuppressionsresponsetypedef)\].
 
 ## ListAuditTasksPaginator
 
@@ -291,7 +291,7 @@ Arguments for `ListAuditTasksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAuditTasksPaginator.paginate` returns
-`Iterator`\[[ListAuditTasksResponseResponseTypeDef](./type_defs.md#listaudittasksresponseresponsetypedef)\].
+`Iterator`\[[ListAuditTasksResponseTypeDef](./type_defs.md#listaudittasksresponsetypedef)\].
 
 ## ListAuthorizersPaginator
 
@@ -317,7 +317,7 @@ Arguments for `ListAuthorizersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAuthorizersPaginator.paginate` returns
-`Iterator`\[[ListAuthorizersResponseResponseTypeDef](./type_defs.md#listauthorizersresponseresponsetypedef)\].
+`Iterator`\[[ListAuthorizersResponseTypeDef](./type_defs.md#listauthorizersresponsetypedef)\].
 
 ## ListBillingGroupsPaginator
 
@@ -343,7 +343,7 @@ Arguments for `ListBillingGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBillingGroupsPaginator.paginate` returns
-`Iterator`\[[ListBillingGroupsResponseResponseTypeDef](./type_defs.md#listbillinggroupsresponseresponsetypedef)\].
+`Iterator`\[[ListBillingGroupsResponseTypeDef](./type_defs.md#listbillinggroupsresponsetypedef)\].
 
 ## ListCACertificatesPaginator
 
@@ -369,7 +369,7 @@ Arguments for `ListCACertificatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCACertificatesPaginator.paginate` returns
-`Iterator`\[[ListCACertificatesResponseResponseTypeDef](./type_defs.md#listcacertificatesresponseresponsetypedef)\].
+`Iterator`\[[ListCACertificatesResponseTypeDef](./type_defs.md#listcacertificatesresponsetypedef)\].
 
 ## ListCertificatesPaginator
 
@@ -394,7 +394,7 @@ Arguments for `ListCertificatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCertificatesPaginator.paginate` returns
-`Iterator`\[[ListCertificatesResponseResponseTypeDef](./type_defs.md#listcertificatesresponseresponsetypedef)\].
+`Iterator`\[[ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef)\].
 
 ## ListCertificatesByCAPaginator
 
@@ -421,7 +421,7 @@ Arguments for `ListCertificatesByCAPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCertificatesByCAPaginator.paginate` returns
-`Iterator`\[[ListCertificatesByCAResponseResponseTypeDef](./type_defs.md#listcertificatesbycaresponseresponsetypedef)\].
+`Iterator`\[[ListCertificatesByCAResponseTypeDef](./type_defs.md#listcertificatesbycaresponsetypedef)\].
 
 ## ListCustomMetricsPaginator
 
@@ -446,7 +446,7 @@ Arguments for `ListCustomMetricsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCustomMetricsPaginator.paginate` returns
-`Iterator`\[[ListCustomMetricsResponseResponseTypeDef](./type_defs.md#listcustommetricsresponseresponsetypedef)\].
+`Iterator`\[[ListCustomMetricsResponseTypeDef](./type_defs.md#listcustommetricsresponsetypedef)\].
 
 ## ListDetectMitigationActionsExecutionsPaginator
 
@@ -476,7 +476,7 @@ Arguments for `ListDetectMitigationActionsExecutionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDetectMitigationActionsExecutionsPaginator.paginate` returns
-`Iterator`\[[ListDetectMitigationActionsExecutionsResponseResponseTypeDef](./type_defs.md#listdetectmitigationactionsexecutionsresponseresponsetypedef)\].
+`Iterator`\[[ListDetectMitigationActionsExecutionsResponseTypeDef](./type_defs.md#listdetectmitigationactionsexecutionsresponsetypedef)\].
 
 ## ListDetectMitigationActionsTasksPaginator
 
@@ -503,7 +503,7 @@ Arguments for `ListDetectMitigationActionsTasksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDetectMitigationActionsTasksPaginator.paginate` returns
-`Iterator`\[[ListDetectMitigationActionsTasksResponseResponseTypeDef](./type_defs.md#listdetectmitigationactionstasksresponseresponsetypedef)\].
+`Iterator`\[[ListDetectMitigationActionsTasksResponseTypeDef](./type_defs.md#listdetectmitigationactionstasksresponsetypedef)\].
 
 ## ListDimensionsPaginator
 
@@ -527,7 +527,7 @@ Arguments for `ListDimensionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDimensionsPaginator.paginate` returns
-`Iterator`\[[ListDimensionsResponseResponseTypeDef](./type_defs.md#listdimensionsresponseresponsetypedef)\].
+`Iterator`\[[ListDimensionsResponseTypeDef](./type_defs.md#listdimensionsresponsetypedef)\].
 
 ## ListDomainConfigurationsPaginator
 
@@ -553,7 +553,7 @@ Arguments for `ListDomainConfigurationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDomainConfigurationsPaginator.paginate` returns
-`Iterator`\[[ListDomainConfigurationsResponseResponseTypeDef](./type_defs.md#listdomainconfigurationsresponseresponsetypedef)\].
+`Iterator`\[[ListDomainConfigurationsResponseTypeDef](./type_defs.md#listdomainconfigurationsresponsetypedef)\].
 
 ## ListIndicesPaginator
 
@@ -577,7 +577,7 @@ Arguments for `ListIndicesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListIndicesPaginator.paginate` returns
-`Iterator`\[[ListIndicesResponseResponseTypeDef](./type_defs.md#listindicesresponseresponsetypedef)\].
+`Iterator`\[[ListIndicesResponseTypeDef](./type_defs.md#listindicesresponsetypedef)\].
 
 ## ListJobExecutionsForJobPaginator
 
@@ -604,7 +604,7 @@ Arguments for `ListJobExecutionsForJobPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobExecutionsForJobPaginator.paginate` returns
-`Iterator`\[[ListJobExecutionsForJobResponseResponseTypeDef](./type_defs.md#listjobexecutionsforjobresponseresponsetypedef)\].
+`Iterator`\[[ListJobExecutionsForJobResponseTypeDef](./type_defs.md#listjobexecutionsforjobresponsetypedef)\].
 
 ## ListJobExecutionsForThingPaginator
 
@@ -632,7 +632,7 @@ Arguments for `ListJobExecutionsForThingPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobExecutionsForThingPaginator.paginate` returns
-`Iterator`\[[ListJobExecutionsForThingResponseResponseTypeDef](./type_defs.md#listjobexecutionsforthingresponseresponsetypedef)\].
+`Iterator`\[[ListJobExecutionsForThingResponseTypeDef](./type_defs.md#listjobexecutionsforthingresponsetypedef)\].
 
 ## ListJobsPaginator
 
@@ -661,7 +661,7 @@ Arguments for `ListJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobsPaginator.paginate` returns
-`Iterator`\[[ListJobsResponseResponseTypeDef](./type_defs.md#listjobsresponseresponsetypedef)\].
+`Iterator`\[[ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)\].
 
 ## ListMitigationActionsPaginator
 
@@ -688,7 +688,7 @@ Arguments for `ListMitigationActionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMitigationActionsPaginator.paginate` returns
-`Iterator`\[[ListMitigationActionsResponseResponseTypeDef](./type_defs.md#listmitigationactionsresponseresponsetypedef)\].
+`Iterator`\[[ListMitigationActionsResponseTypeDef](./type_defs.md#listmitigationactionsresponsetypedef)\].
 
 ## ListOTAUpdatesPaginator
 
@@ -713,7 +713,7 @@ Arguments for `ListOTAUpdatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOTAUpdatesPaginator.paginate` returns
-`Iterator`\[[ListOTAUpdatesResponseResponseTypeDef](./type_defs.md#listotaupdatesresponseresponsetypedef)\].
+`Iterator`\[[ListOTAUpdatesResponseTypeDef](./type_defs.md#listotaupdatesresponsetypedef)\].
 
 ## ListOutgoingCertificatesPaginator
 
@@ -739,7 +739,7 @@ Arguments for `ListOutgoingCertificatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOutgoingCertificatesPaginator.paginate` returns
-`Iterator`\[[ListOutgoingCertificatesResponseResponseTypeDef](./type_defs.md#listoutgoingcertificatesresponseresponsetypedef)\].
+`Iterator`\[[ListOutgoingCertificatesResponseTypeDef](./type_defs.md#listoutgoingcertificatesresponsetypedef)\].
 
 ## ListPoliciesPaginator
 
@@ -764,7 +764,7 @@ Arguments for `ListPoliciesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPoliciesPaginator.paginate` returns
-`Iterator`\[[ListPoliciesResponseResponseTypeDef](./type_defs.md#listpoliciesresponseresponsetypedef)\].
+`Iterator`\[[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef)\].
 
 ## ListPolicyPrincipalsPaginator
 
@@ -791,7 +791,7 @@ Arguments for `ListPolicyPrincipalsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPolicyPrincipalsPaginator.paginate` returns
-`Iterator`\[[ListPolicyPrincipalsResponseResponseTypeDef](./type_defs.md#listpolicyprincipalsresponseresponsetypedef)\].
+`Iterator`\[[ListPolicyPrincipalsResponseTypeDef](./type_defs.md#listpolicyprincipalsresponsetypedef)\].
 
 ## ListPrincipalPoliciesPaginator
 
@@ -818,7 +818,7 @@ Arguments for `ListPrincipalPoliciesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPrincipalPoliciesPaginator.paginate` returns
-`Iterator`\[[ListPrincipalPoliciesResponseResponseTypeDef](./type_defs.md#listprincipalpoliciesresponseresponsetypedef)\].
+`Iterator`\[[ListPrincipalPoliciesResponseTypeDef](./type_defs.md#listprincipalpoliciesresponsetypedef)\].
 
 ## ListPrincipalThingsPaginator
 
@@ -844,7 +844,7 @@ Arguments for `ListPrincipalThingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPrincipalThingsPaginator.paginate` returns
-`Iterator`\[[ListPrincipalThingsResponseResponseTypeDef](./type_defs.md#listprincipalthingsresponseresponsetypedef)\].
+`Iterator`\[[ListPrincipalThingsResponseTypeDef](./type_defs.md#listprincipalthingsresponsetypedef)\].
 
 ## ListProvisioningTemplateVersionsPaginator
 
@@ -870,7 +870,7 @@ Arguments for `ListProvisioningTemplateVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProvisioningTemplateVersionsPaginator.paginate` returns
-`Iterator`\[[ListProvisioningTemplateVersionsResponseResponseTypeDef](./type_defs.md#listprovisioningtemplateversionsresponseresponsetypedef)\].
+`Iterator`\[[ListProvisioningTemplateVersionsResponseTypeDef](./type_defs.md#listprovisioningtemplateversionsresponsetypedef)\].
 
 ## ListProvisioningTemplatesPaginator
 
@@ -895,7 +895,7 @@ Arguments for `ListProvisioningTemplatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProvisioningTemplatesPaginator.paginate` returns
-`Iterator`\[[ListProvisioningTemplatesResponseResponseTypeDef](./type_defs.md#listprovisioningtemplatesresponseresponsetypedef)\].
+`Iterator`\[[ListProvisioningTemplatesResponseTypeDef](./type_defs.md#listprovisioningtemplatesresponsetypedef)\].
 
 ## ListRoleAliasesPaginator
 
@@ -920,7 +920,7 @@ Arguments for `ListRoleAliasesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRoleAliasesPaginator.paginate` returns
-`Iterator`\[[ListRoleAliasesResponseResponseTypeDef](./type_defs.md#listrolealiasesresponseresponsetypedef)\].
+`Iterator`\[[ListRoleAliasesResponseTypeDef](./type_defs.md#listrolealiasesresponsetypedef)\].
 
 ## ListScheduledAuditsPaginator
 
@@ -945,7 +945,7 @@ Arguments for `ListScheduledAuditsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListScheduledAuditsPaginator.paginate` returns
-`Iterator`\[[ListScheduledAuditsResponseResponseTypeDef](./type_defs.md#listscheduledauditsresponseresponsetypedef)\].
+`Iterator`\[[ListScheduledAuditsResponseTypeDef](./type_defs.md#listscheduledauditsresponsetypedef)\].
 
 ## ListSecurityProfilesPaginator
 
@@ -972,7 +972,7 @@ Arguments for `ListSecurityProfilesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSecurityProfilesPaginator.paginate` returns
-`Iterator`\[[ListSecurityProfilesResponseResponseTypeDef](./type_defs.md#listsecurityprofilesresponseresponsetypedef)\].
+`Iterator`\[[ListSecurityProfilesResponseTypeDef](./type_defs.md#listsecurityprofilesresponsetypedef)\].
 
 ## ListSecurityProfilesForTargetPaginator
 
@@ -999,7 +999,7 @@ Arguments for `ListSecurityProfilesForTargetPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSecurityProfilesForTargetPaginator.paginate` returns
-`Iterator`\[[ListSecurityProfilesForTargetResponseResponseTypeDef](./type_defs.md#listsecurityprofilesfortargetresponseresponsetypedef)\].
+`Iterator`\[[ListSecurityProfilesForTargetResponseTypeDef](./type_defs.md#listsecurityprofilesfortargetresponsetypedef)\].
 
 ## ListStreamsPaginator
 
@@ -1024,7 +1024,7 @@ Arguments for `ListStreamsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStreamsPaginator.paginate` returns
-`Iterator`\[[ListStreamsResponseResponseTypeDef](./type_defs.md#liststreamsresponseresponsetypedef)\].
+`Iterator`\[[ListStreamsResponseTypeDef](./type_defs.md#liststreamsresponsetypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -1050,7 +1050,7 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef)\].
+`Iterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
 
 ## ListTargetsForPolicyPaginator
 
@@ -1076,7 +1076,7 @@ Arguments for `ListTargetsForPolicyPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTargetsForPolicyPaginator.paginate` returns
-`Iterator`\[[ListTargetsForPolicyResponseResponseTypeDef](./type_defs.md#listtargetsforpolicyresponseresponsetypedef)\].
+`Iterator`\[[ListTargetsForPolicyResponseTypeDef](./type_defs.md#listtargetsforpolicyresponsetypedef)\].
 
 ## ListTargetsForSecurityProfilePaginator
 
@@ -1102,7 +1102,7 @@ Arguments for `ListTargetsForSecurityProfilePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTargetsForSecurityProfilePaginator.paginate` returns
-`Iterator`\[[ListTargetsForSecurityProfileResponseResponseTypeDef](./type_defs.md#listtargetsforsecurityprofileresponseresponsetypedef)\].
+`Iterator`\[[ListTargetsForSecurityProfileResponseTypeDef](./type_defs.md#listtargetsforsecurityprofileresponsetypedef)\].
 
 ## ListThingGroupsPaginator
 
@@ -1129,7 +1129,7 @@ Arguments for `ListThingGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListThingGroupsPaginator.paginate` returns
-`Iterator`\[[ListThingGroupsResponseResponseTypeDef](./type_defs.md#listthinggroupsresponseresponsetypedef)\].
+`Iterator`\[[ListThingGroupsResponseTypeDef](./type_defs.md#listthinggroupsresponsetypedef)\].
 
 ## ListThingGroupsForThingPaginator
 
@@ -1155,7 +1155,7 @@ Arguments for `ListThingGroupsForThingPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListThingGroupsForThingPaginator.paginate` returns
-`Iterator`\[[ListThingGroupsForThingResponseResponseTypeDef](./type_defs.md#listthinggroupsforthingresponseresponsetypedef)\].
+`Iterator`\[[ListThingGroupsForThingResponseTypeDef](./type_defs.md#listthinggroupsforthingresponsetypedef)\].
 
 ## ListThingPrincipalsPaginator
 
@@ -1181,7 +1181,7 @@ Arguments for `ListThingPrincipalsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListThingPrincipalsPaginator.paginate` returns
-`Iterator`\[[ListThingPrincipalsResponseResponseTypeDef](./type_defs.md#listthingprincipalsresponseresponsetypedef)\].
+`Iterator`\[[ListThingPrincipalsResponseTypeDef](./type_defs.md#listthingprincipalsresponsetypedef)\].
 
 ## ListThingRegistrationTaskReportsPaginator
 
@@ -1208,7 +1208,7 @@ Arguments for `ListThingRegistrationTaskReportsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListThingRegistrationTaskReportsPaginator.paginate` returns
-`Iterator`\[[ListThingRegistrationTaskReportsResponseResponseTypeDef](./type_defs.md#listthingregistrationtaskreportsresponseresponsetypedef)\].
+`Iterator`\[[ListThingRegistrationTaskReportsResponseTypeDef](./type_defs.md#listthingregistrationtaskreportsresponsetypedef)\].
 
 ## ListThingRegistrationTasksPaginator
 
@@ -1234,7 +1234,7 @@ Arguments for `ListThingRegistrationTasksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListThingRegistrationTasksPaginator.paginate` returns
-`Iterator`\[[ListThingRegistrationTasksResponseResponseTypeDef](./type_defs.md#listthingregistrationtasksresponseresponsetypedef)\].
+`Iterator`\[[ListThingRegistrationTasksResponseTypeDef](./type_defs.md#listthingregistrationtasksresponsetypedef)\].
 
 ## ListThingTypesPaginator
 
@@ -1259,7 +1259,7 @@ Arguments for `ListThingTypesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListThingTypesPaginator.paginate` returns
-`Iterator`\[[ListThingTypesResponseResponseTypeDef](./type_defs.md#listthingtypesresponseresponsetypedef)\].
+`Iterator`\[[ListThingTypesResponseTypeDef](./type_defs.md#listthingtypesresponsetypedef)\].
 
 ## ListThingsPaginator
 
@@ -1287,7 +1287,7 @@ Arguments for `ListThingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListThingsPaginator.paginate` returns
-`Iterator`\[[ListThingsResponseResponseTypeDef](./type_defs.md#listthingsresponseresponsetypedef)\].
+`Iterator`\[[ListThingsResponseTypeDef](./type_defs.md#listthingsresponsetypedef)\].
 
 ## ListThingsInBillingGroupPaginator
 
@@ -1313,7 +1313,7 @@ Arguments for `ListThingsInBillingGroupPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListThingsInBillingGroupPaginator.paginate` returns
-`Iterator`\[[ListThingsInBillingGroupResponseResponseTypeDef](./type_defs.md#listthingsinbillinggroupresponseresponsetypedef)\].
+`Iterator`\[[ListThingsInBillingGroupResponseTypeDef](./type_defs.md#listthingsinbillinggroupresponsetypedef)\].
 
 ## ListThingsInThingGroupPaginator
 
@@ -1340,7 +1340,7 @@ Arguments for `ListThingsInThingGroupPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListThingsInThingGroupPaginator.paginate` returns
-`Iterator`\[[ListThingsInThingGroupResponseResponseTypeDef](./type_defs.md#listthingsinthinggroupresponseresponsetypedef)\].
+`Iterator`\[[ListThingsInThingGroupResponseTypeDef](./type_defs.md#listthingsinthinggroupresponsetypedef)\].
 
 ## ListTopicRuleDestinationsPaginator
 
@@ -1365,7 +1365,7 @@ Arguments for `ListTopicRuleDestinationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTopicRuleDestinationsPaginator.paginate` returns
-`Iterator`\[[ListTopicRuleDestinationsResponseResponseTypeDef](./type_defs.md#listtopicruledestinationsresponseresponsetypedef)\].
+`Iterator`\[[ListTopicRuleDestinationsResponseTypeDef](./type_defs.md#listtopicruledestinationsresponsetypedef)\].
 
 ## ListTopicRulesPaginator
 
@@ -1391,7 +1391,7 @@ Arguments for `ListTopicRulesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTopicRulesPaginator.paginate` returns
-`Iterator`\[[ListTopicRulesResponseResponseTypeDef](./type_defs.md#listtopicrulesresponseresponsetypedef)\].
+`Iterator`\[[ListTopicRulesResponseTypeDef](./type_defs.md#listtopicrulesresponsetypedef)\].
 
 ## ListV2LoggingLevelsPaginator
 
@@ -1417,7 +1417,7 @@ Arguments for `ListV2LoggingLevelsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListV2LoggingLevelsPaginator.paginate` returns
-`Iterator`\[[ListV2LoggingLevelsResponseResponseTypeDef](./type_defs.md#listv2logginglevelsresponseresponsetypedef)\].
+`Iterator`\[[ListV2LoggingLevelsResponseTypeDef](./type_defs.md#listv2logginglevelsresponsetypedef)\].
 
 ## ListViolationEventsPaginator
 
@@ -1449,4 +1449,4 @@ Arguments for `ListViolationEventsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListViolationEventsPaginator.paginate` returns
-`Iterator`\[[ListViolationEventsResponseResponseTypeDef](./type_defs.md#listviolationeventsresponseresponsetypedef)\].
+`Iterator`\[[ListViolationEventsResponseTypeDef](./type_defs.md#listviolationeventsresponsetypedef)\].

@@ -11,6 +11,7 @@ type annotations stubs module
   - [ForecastQueryServiceClient](#forecastqueryserviceclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [generate_presigned_url](#generate_presigned_url)
     - [query_forecast](#query_forecast)
@@ -53,6 +54,17 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 
 ## Methods
+
+### exceptions
+
+ForecastQueryServiceClient exceptions.
+
+Type annotations for `boto3.client("forecastquery").exceptions` method.
+
+Boto3 documentation:
+[ForecastQueryService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
 
 ### can_paginate
 
@@ -98,7 +110,7 @@ Boto3 documentation:
 [ForecastQueryService.Client.query_forecast](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client.query_forecast)
 
 Arguments mapping described in
-[QueryForecastRequestTypeDef](./type_defs.md#queryforecastrequesttypedef).
+[QueryForecastRequestRequestTypeDef](./type_defs.md#queryforecastrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -109,4 +121,4 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[QueryForecastResponseResponseTypeDef](./type_defs.md#queryforecastresponseresponsetypedef).
+[QueryForecastResponseTypeDef](./type_defs.md#queryforecastresponsetypedef).

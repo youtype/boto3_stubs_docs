@@ -11,6 +11,7 @@ type annotations stubs module
   - [FirehoseClient](#firehoseclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_delivery_stream](#create_delivery_stream)
     - [delete_delivery_stream](#delete_delivery_stream)
@@ -67,6 +68,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+FirehoseClient exceptions.
+
+Type annotations for `boto3.client("firehose").exceptions` method.
+
+Boto3 documentation:
+[Firehose.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -92,7 +104,7 @@ Boto3 documentation:
 [Firehose.Client.create_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.create_delivery_stream)
 
 Arguments mapping described in
-[CreateDeliveryStreamInputTypeDef](./type_defs.md#createdeliverystreaminputtypedef).
+[CreateDeliveryStreamInputRequestTypeDef](./type_defs.md#createdeliverystreaminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -118,7 +130,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDeliveryStreamOutputResponseTypeDef](./type_defs.md#createdeliverystreamoutputresponsetypedef).
+[CreateDeliveryStreamOutputTypeDef](./type_defs.md#createdeliverystreamoutputtypedef).
 
 ### delete_delivery_stream
 
@@ -130,7 +142,7 @@ Boto3 documentation:
 [Firehose.Client.delete_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.delete_delivery_stream)
 
 Arguments mapping described in
-[DeleteDeliveryStreamInputTypeDef](./type_defs.md#deletedeliverystreaminputtypedef).
+[DeleteDeliveryStreamInputRequestTypeDef](./type_defs.md#deletedeliverystreaminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -150,7 +162,7 @@ Boto3 documentation:
 [Firehose.Client.describe_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.describe_delivery_stream)
 
 Arguments mapping described in
-[DescribeDeliveryStreamInputTypeDef](./type_defs.md#describedeliverystreaminputtypedef).
+[DescribeDeliveryStreamInputRequestTypeDef](./type_defs.md#describedeliverystreaminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -159,7 +171,7 @@ Keyword-only arguments:
 - `ExclusiveStartDestinationId`: `str`
 
 Returns
-[DescribeDeliveryStreamOutputResponseTypeDef](./type_defs.md#describedeliverystreamoutputresponsetypedef).
+[DescribeDeliveryStreamOutputTypeDef](./type_defs.md#describedeliverystreamoutputtypedef).
 
 ### generate_presigned_url
 
@@ -189,7 +201,7 @@ Boto3 documentation:
 [Firehose.Client.list_delivery_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.list_delivery_streams)
 
 Arguments mapping described in
-[ListDeliveryStreamsInputTypeDef](./type_defs.md#listdeliverystreamsinputtypedef).
+[ListDeliveryStreamsInputRequestTypeDef](./type_defs.md#listdeliverystreamsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -199,7 +211,7 @@ Keyword-only arguments:
 - `ExclusiveStartDeliveryStreamName`: `str`
 
 Returns
-[ListDeliveryStreamsOutputResponseTypeDef](./type_defs.md#listdeliverystreamsoutputresponsetypedef).
+[ListDeliveryStreamsOutputTypeDef](./type_defs.md#listdeliverystreamsoutputtypedef).
 
 ### list_tags_for_delivery_stream
 
@@ -212,7 +224,7 @@ Boto3 documentation:
 [Firehose.Client.list_tags_for_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.list_tags_for_delivery_stream)
 
 Arguments mapping described in
-[ListTagsForDeliveryStreamInputTypeDef](./type_defs.md#listtagsfordeliverystreaminputtypedef).
+[ListTagsForDeliveryStreamInputRequestTypeDef](./type_defs.md#listtagsfordeliverystreaminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -221,7 +233,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListTagsForDeliveryStreamOutputResponseTypeDef](./type_defs.md#listtagsfordeliverystreamoutputresponsetypedef).
+[ListTagsForDeliveryStreamOutputTypeDef](./type_defs.md#listtagsfordeliverystreamoutputtypedef).
 
 ### put_record
 
@@ -234,15 +246,14 @@ Boto3 documentation:
 [Firehose.Client.put_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.put_record)
 
 Arguments mapping described in
-[PutRecordInputTypeDef](./type_defs.md#putrecordinputtypedef).
+[PutRecordInputRequestTypeDef](./type_defs.md#putrecordinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `DeliveryStreamName`: `str` *(required)*
 - `Record`: [RecordTypeDef](./type_defs.md#recordtypedef) *(required)*
 
-Returns
-[PutRecordOutputResponseTypeDef](./type_defs.md#putrecordoutputresponsetypedef).
+Returns [PutRecordOutputTypeDef](./type_defs.md#putrecordoutputtypedef).
 
 ### put_record_batch
 
@@ -255,7 +266,7 @@ Boto3 documentation:
 [Firehose.Client.put_record_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.put_record_batch)
 
 Arguments mapping described in
-[PutRecordBatchInputTypeDef](./type_defs.md#putrecordbatchinputtypedef).
+[PutRecordBatchInputRequestTypeDef](./type_defs.md#putrecordbatchinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -264,7 +275,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutRecordBatchOutputResponseTypeDef](./type_defs.md#putrecordbatchoutputresponsetypedef).
+[PutRecordBatchOutputTypeDef](./type_defs.md#putrecordbatchoutputtypedef).
 
 ### start_delivery_stream_encryption
 
@@ -277,7 +288,7 @@ Boto3 documentation:
 [Firehose.Client.start_delivery_stream_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.start_delivery_stream_encryption)
 
 Arguments mapping described in
-[StartDeliveryStreamEncryptionInputTypeDef](./type_defs.md#startdeliverystreamencryptioninputtypedef).
+[StartDeliveryStreamEncryptionInputRequestTypeDef](./type_defs.md#startdeliverystreamencryptioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -298,7 +309,7 @@ Boto3 documentation:
 [Firehose.Client.stop_delivery_stream_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.stop_delivery_stream_encryption)
 
 Arguments mapping described in
-[StopDeliveryStreamEncryptionInputTypeDef](./type_defs.md#stopdeliverystreamencryptioninputtypedef).
+[StopDeliveryStreamEncryptionInputRequestTypeDef](./type_defs.md#stopdeliverystreamencryptioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -316,7 +327,7 @@ Boto3 documentation:
 [Firehose.Client.tag_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.tag_delivery_stream)
 
 Arguments mapping described in
-[TagDeliveryStreamInputTypeDef](./type_defs.md#tagdeliverystreaminputtypedef).
+[TagDeliveryStreamInputRequestTypeDef](./type_defs.md#tagdeliverystreaminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -335,7 +346,7 @@ Boto3 documentation:
 [Firehose.Client.untag_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.untag_delivery_stream)
 
 Arguments mapping described in
-[UntagDeliveryStreamInputTypeDef](./type_defs.md#untagdeliverystreaminputtypedef).
+[UntagDeliveryStreamInputRequestTypeDef](./type_defs.md#untagdeliverystreaminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -354,7 +365,7 @@ Boto3 documentation:
 [Firehose.Client.update_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.update_destination)
 
 Arguments mapping described in
-[UpdateDestinationInputTypeDef](./type_defs.md#updatedestinationinputtypedef).
+[UpdateDestinationInputRequestTypeDef](./type_defs.md#updatedestinationinputrequesttypedef).
 
 Keyword-only arguments:
 

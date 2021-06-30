@@ -9,37 +9,37 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 mgn module](#typed-dictionaries-for-boto3-mgn-module)
   - [CPUTypeDef](#cputypedef)
-  - [ChangeServerLifeCycleStateRequestTypeDef](#changeserverlifecyclestaterequesttypedef)
+  - [ChangeServerLifeCycleStateRequestRequestTypeDef](#changeserverlifecyclestaterequestrequesttypedef)
   - [ChangeServerLifeCycleStateSourceServerLifecycleTypeDef](#changeserverlifecyclestatesourceserverlifecycletypedef)
-  - [CreateReplicationConfigurationTemplateRequestTypeDef](#createreplicationconfigurationtemplaterequesttypedef)
+  - [CreateReplicationConfigurationTemplateRequestRequestTypeDef](#createreplicationconfigurationtemplaterequestrequesttypedef)
   - [DataReplicationErrorTypeDef](#datareplicationerrortypedef)
   - [DataReplicationInfoReplicatedDiskTypeDef](#datareplicationinforeplicateddisktypedef)
   - [DataReplicationInfoTypeDef](#datareplicationinfotypedef)
   - [DataReplicationInitiationStepTypeDef](#datareplicationinitiationsteptypedef)
   - [DataReplicationInitiationTypeDef](#datareplicationinitiationtypedef)
-  - [DeleteJobRequestTypeDef](#deletejobrequesttypedef)
-  - [DeleteReplicationConfigurationTemplateRequestTypeDef](#deletereplicationconfigurationtemplaterequesttypedef)
-  - [DeleteSourceServerRequestTypeDef](#deletesourceserverrequesttypedef)
-  - [DescribeJobLogItemsRequestTypeDef](#describejoblogitemsrequesttypedef)
-  - [DescribeJobLogItemsResponseResponseTypeDef](#describejoblogitemsresponseresponsetypedef)
+  - [DeleteJobRequestRequestTypeDef](#deletejobrequestrequesttypedef)
+  - [DeleteReplicationConfigurationTemplateRequestRequestTypeDef](#deletereplicationconfigurationtemplaterequestrequesttypedef)
+  - [DeleteSourceServerRequestRequestTypeDef](#deletesourceserverrequestrequesttypedef)
+  - [DescribeJobLogItemsRequestRequestTypeDef](#describejoblogitemsrequestrequesttypedef)
+  - [DescribeJobLogItemsResponseTypeDef](#describejoblogitemsresponsetypedef)
   - [DescribeJobsRequestFiltersTypeDef](#describejobsrequestfilterstypedef)
-  - [DescribeJobsRequestTypeDef](#describejobsrequesttypedef)
-  - [DescribeJobsResponseResponseTypeDef](#describejobsresponseresponsetypedef)
-  - [DescribeReplicationConfigurationTemplatesRequestTypeDef](#describereplicationconfigurationtemplatesrequesttypedef)
-  - [DescribeReplicationConfigurationTemplatesResponseResponseTypeDef](#describereplicationconfigurationtemplatesresponseresponsetypedef)
+  - [DescribeJobsRequestRequestTypeDef](#describejobsrequestrequesttypedef)
+  - [DescribeJobsResponseTypeDef](#describejobsresponsetypedef)
+  - [DescribeReplicationConfigurationTemplatesRequestRequestTypeDef](#describereplicationconfigurationtemplatesrequestrequesttypedef)
+  - [DescribeReplicationConfigurationTemplatesResponseTypeDef](#describereplicationconfigurationtemplatesresponsetypedef)
   - [DescribeSourceServersRequestFiltersTypeDef](#describesourceserversrequestfilterstypedef)
-  - [DescribeSourceServersRequestTypeDef](#describesourceserversrequesttypedef)
-  - [DescribeSourceServersResponseResponseTypeDef](#describesourceserversresponseresponsetypedef)
-  - [DisconnectFromServiceRequestTypeDef](#disconnectfromservicerequesttypedef)
+  - [DescribeSourceServersRequestRequestTypeDef](#describesourceserversrequestrequesttypedef)
+  - [DescribeSourceServersResponseTypeDef](#describesourceserversresponsetypedef)
+  - [DisconnectFromServiceRequestRequestTypeDef](#disconnectfromservicerequestrequesttypedef)
   - [DiskTypeDef](#disktypedef)
-  - [FinalizeCutoverRequestTypeDef](#finalizecutoverrequesttypedef)
-  - [GetLaunchConfigurationRequestTypeDef](#getlaunchconfigurationrequesttypedef)
-  - [GetReplicationConfigurationRequestTypeDef](#getreplicationconfigurationrequesttypedef)
+  - [FinalizeCutoverRequestRequestTypeDef](#finalizecutoverrequestrequesttypedef)
+  - [GetLaunchConfigurationRequestRequestTypeDef](#getlaunchconfigurationrequestrequesttypedef)
+  - [GetReplicationConfigurationRequestRequestTypeDef](#getreplicationconfigurationrequestrequesttypedef)
   - [IdentificationHintsTypeDef](#identificationhintstypedef)
   - [JobLogEventDataTypeDef](#joblogeventdatatypedef)
   - [JobLogTypeDef](#joblogtypedef)
   - [JobTypeDef](#jobtypedef)
-  - [LaunchConfigurationResponseTypeDef](#launchconfigurationresponsetypedef)
+  - [LaunchConfigurationTypeDef](#launchconfigurationtypedef)
   - [LaunchedInstanceTypeDef](#launchedinstancetypedef)
   - [LicensingTypeDef](#licensingtypedef)
   - [LifeCycleLastCutoverFinalizedTypeDef](#lifecyclelastcutoverfinalizedtypedef)
@@ -51,31 +51,33 @@ type annotations stubs module
   - [LifeCycleLastTestRevertedTypeDef](#lifecyclelasttestrevertedtypedef)
   - [LifeCycleLastTestTypeDef](#lifecyclelasttesttypedef)
   - [LifeCycleTypeDef](#lifecycletypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
-  - [MarkAsArchivedRequestTypeDef](#markasarchivedrequesttypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [MarkAsArchivedRequestRequestTypeDef](#markasarchivedrequestrequesttypedef)
   - [NetworkInterfaceTypeDef](#networkinterfacetypedef)
   - [OSTypeDef](#ostypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ParticipatingServerTypeDef](#participatingservertypedef)
   - [ReplicationConfigurationReplicatedDiskTypeDef](#replicationconfigurationreplicateddisktypedef)
-  - [ReplicationConfigurationResponseTypeDef](#replicationconfigurationresponsetypedef)
-  - [ReplicationConfigurationTemplateResponseTypeDef](#replicationconfigurationtemplateresponsetypedef)
+  - [ReplicationConfigurationTemplateResponseMetadataTypeDef](#replicationconfigurationtemplateresponsemetadatatypedef)
+  - [ReplicationConfigurationTemplateTypeDef](#replicationconfigurationtemplatetypedef)
+  - [ReplicationConfigurationTypeDef](#replicationconfigurationtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RetryDataReplicationRequestTypeDef](#retrydatareplicationrequesttypedef)
+  - [RetryDataReplicationRequestRequestTypeDef](#retrydatareplicationrequestrequesttypedef)
   - [SourcePropertiesTypeDef](#sourcepropertiestypedef)
-  - [SourceServerResponseTypeDef](#sourceserverresponsetypedef)
-  - [StartCutoverRequestTypeDef](#startcutoverrequesttypedef)
-  - [StartCutoverResponseResponseTypeDef](#startcutoverresponseresponsetypedef)
-  - [StartTestRequestTypeDef](#starttestrequesttypedef)
-  - [StartTestResponseResponseTypeDef](#starttestresponseresponsetypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
-  - [TerminateTargetInstancesRequestTypeDef](#terminatetargetinstancesrequesttypedef)
-  - [TerminateTargetInstancesResponseResponseTypeDef](#terminatetargetinstancesresponseresponsetypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateLaunchConfigurationRequestTypeDef](#updatelaunchconfigurationrequesttypedef)
-  - [UpdateReplicationConfigurationRequestTypeDef](#updatereplicationconfigurationrequesttypedef)
-  - [UpdateReplicationConfigurationTemplateRequestTypeDef](#updatereplicationconfigurationtemplaterequesttypedef)
+  - [SourceServerResponseMetadataTypeDef](#sourceserverresponsemetadatatypedef)
+  - [SourceServerTypeDef](#sourceservertypedef)
+  - [StartCutoverRequestRequestTypeDef](#startcutoverrequestrequesttypedef)
+  - [StartCutoverResponseTypeDef](#startcutoverresponsetypedef)
+  - [StartTestRequestRequestTypeDef](#starttestrequestrequesttypedef)
+  - [StartTestResponseTypeDef](#starttestresponsetypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [TerminateTargetInstancesRequestRequestTypeDef](#terminatetargetinstancesrequestrequesttypedef)
+  - [TerminateTargetInstancesResponseTypeDef](#terminatetargetinstancesresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateLaunchConfigurationRequestRequestTypeDef](#updatelaunchconfigurationrequestrequesttypedef)
+  - [UpdateReplicationConfigurationRequestRequestTypeDef](#updatereplicationconfigurationrequestrequesttypedef)
+  - [UpdateReplicationConfigurationTemplateRequestRequestTypeDef](#updatereplicationconfigurationtemplaterequestrequesttypedef)
 
 ## CPUTypeDef
 
@@ -88,10 +90,10 @@ Optional fields:
 - `cores`: `int`
 - `modelName`: `str`
 
-## ChangeServerLifeCycleStateRequestTypeDef
+## ChangeServerLifeCycleStateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import ChangeServerLifeCycleStateRequestTypeDef
+from mypy_boto3_mgn.type_defs import ChangeServerLifeCycleStateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -111,10 +113,10 @@ Required fields:
 - `state`:
   [ChangeServerLifeCycleStateSourceServerLifecycleStateType](./literals.md#changeserverlifecyclestatesourceserverlifecyclestatetype)
 
-## CreateReplicationConfigurationTemplateRequestTypeDef
+## CreateReplicationConfigurationTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import CreateReplicationConfigurationTemplateRequestTypeDef
+from mypy_boto3_mgn.type_defs import CreateReplicationConfigurationTemplateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -210,40 +212,40 @@ Optional fields:
 - `steps`:
   `List`\[[DataReplicationInitiationStepTypeDef](./type_defs.md#datareplicationinitiationsteptypedef)\]
 
-## DeleteJobRequestTypeDef
+## DeleteJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import DeleteJobRequestTypeDef
+from mypy_boto3_mgn.type_defs import DeleteJobRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `jobID`: `str`
 
-## DeleteReplicationConfigurationTemplateRequestTypeDef
+## DeleteReplicationConfigurationTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import DeleteReplicationConfigurationTemplateRequestTypeDef
+from mypy_boto3_mgn.type_defs import DeleteReplicationConfigurationTemplateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `replicationConfigurationTemplateID`: `str`
 
-## DeleteSourceServerRequestTypeDef
+## DeleteSourceServerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import DeleteSourceServerRequestTypeDef
+from mypy_boto3_mgn.type_defs import DeleteSourceServerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `sourceServerID`: `str`
 
-## DescribeJobLogItemsRequestTypeDef
+## DescribeJobLogItemsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import DescribeJobLogItemsRequestTypeDef
+from mypy_boto3_mgn.type_defs import DescribeJobLogItemsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -255,10 +257,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## DescribeJobLogItemsResponseResponseTypeDef
+## DescribeJobLogItemsResponseTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import DescribeJobLogItemsResponseResponseTypeDef
+from mypy_boto3_mgn.type_defs import DescribeJobLogItemsResponseTypeDef
 ```
 
 Required fields:
@@ -280,10 +282,10 @@ Optional fields:
 - `jobIDs`: `List`\[`str`\]
 - `toDate`: `str`
 
-## DescribeJobsRequestTypeDef
+## DescribeJobsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import DescribeJobsRequestTypeDef
+from mypy_boto3_mgn.type_defs import DescribeJobsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -296,10 +298,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## DescribeJobsResponseResponseTypeDef
+## DescribeJobsResponseTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import DescribeJobsResponseResponseTypeDef
+from mypy_boto3_mgn.type_defs import DescribeJobsResponseTypeDef
 ```
 
 Required fields:
@@ -309,10 +311,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeReplicationConfigurationTemplatesRequestTypeDef
+## DescribeReplicationConfigurationTemplatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import DescribeReplicationConfigurationTemplatesRequestTypeDef
+from mypy_boto3_mgn.type_defs import DescribeReplicationConfigurationTemplatesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -324,16 +326,16 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## DescribeReplicationConfigurationTemplatesResponseResponseTypeDef
+## DescribeReplicationConfigurationTemplatesResponseTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import DescribeReplicationConfigurationTemplatesResponseResponseTypeDef
+from mypy_boto3_mgn.type_defs import DescribeReplicationConfigurationTemplatesResponseTypeDef
 ```
 
 Required fields:
 
 - `items`:
-  `List`\[[ReplicationConfigurationTemplateResponseTypeDef](./type_defs.md#replicationconfigurationtemplateresponsetypedef)\]
+  `List`\[[ReplicationConfigurationTemplateTypeDef](./type_defs.md#replicationconfigurationtemplatetypedef)\]
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -349,10 +351,10 @@ Optional fields:
 - `isArchived`: `bool`
 - `sourceServerIDs`: `List`\[`str`\]
 
-## DescribeSourceServersRequestTypeDef
+## DescribeSourceServersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import DescribeSourceServersRequestTypeDef
+from mypy_boto3_mgn.type_defs import DescribeSourceServersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -365,24 +367,23 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## DescribeSourceServersResponseResponseTypeDef
+## DescribeSourceServersResponseTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import DescribeSourceServersResponseResponseTypeDef
+from mypy_boto3_mgn.type_defs import DescribeSourceServersResponseTypeDef
 ```
 
 Required fields:
 
-- `items`:
-  `List`\[[SourceServerResponseTypeDef](./type_defs.md#sourceserverresponsetypedef)\]
+- `items`: `List`\[[SourceServerTypeDef](./type_defs.md#sourceservertypedef)\]
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisconnectFromServiceRequestTypeDef
+## DisconnectFromServiceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import DisconnectFromServiceRequestTypeDef
+from mypy_boto3_mgn.type_defs import DisconnectFromServiceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -400,30 +401,30 @@ Optional fields:
 - `bytes`: `int`
 - `deviceName`: `str`
 
-## FinalizeCutoverRequestTypeDef
+## FinalizeCutoverRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import FinalizeCutoverRequestTypeDef
+from mypy_boto3_mgn.type_defs import FinalizeCutoverRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `sourceServerID`: `str`
 
-## GetLaunchConfigurationRequestTypeDef
+## GetLaunchConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import GetLaunchConfigurationRequestTypeDef
+from mypy_boto3_mgn.type_defs import GetLaunchConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `sourceServerID`: `str`
 
-## GetReplicationConfigurationRequestTypeDef
+## GetReplicationConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import GetReplicationConfigurationRequestTypeDef
+from mypy_boto3_mgn.type_defs import GetReplicationConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -490,10 +491,10 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `type`: [JobTypeType](./literals.md#jobtypetype)
 
-## LaunchConfigurationResponseTypeDef
+## LaunchConfigurationTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import LaunchConfigurationResponseTypeDef
+from mypy_boto3_mgn.type_defs import LaunchConfigurationTypeDef
 ```
 
 Required fields:
@@ -643,20 +644,20 @@ Optional fields:
   [LifeCycleLastTestTypeDef](./type_defs.md#lifecyclelasttesttypedef)
 - `state`: [LifeCycleStateType](./literals.md#lifecyclestatetype)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_mgn.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_mgn.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -665,10 +666,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## MarkAsArchivedRequestTypeDef
+## MarkAsArchivedRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import MarkAsArchivedRequestTypeDef
+from mypy_boto3_mgn.type_defs import MarkAsArchivedRequestRequestTypeDef
 ```
 
 Required fields:
@@ -734,40 +735,10 @@ Optional fields:
 - `stagingDiskType`:
   [ReplicationConfigurationReplicatedDiskStagingDiskTypeType](./literals.md#replicationconfigurationreplicateddiskstagingdisktypetype)
 
-## ReplicationConfigurationResponseTypeDef
+## ReplicationConfigurationTemplateResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import ReplicationConfigurationResponseTypeDef
-```
-
-Required fields:
-
-- `associateDefaultSecurityGroup`: `bool`
-- `bandwidthThrottling`: `int`
-- `createPublicIP`: `bool`
-- `dataPlaneRouting`:
-  [ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype)
-- `defaultLargeStagingDiskType`:
-  [ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype)
-- `ebsEncryption`:
-  [ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype)
-- `ebsEncryptionKeyArn`: `str`
-- `name`: `str`
-- `replicatedDisks`:
-  `List`\[[ReplicationConfigurationReplicatedDiskTypeDef](./type_defs.md#replicationconfigurationreplicateddisktypedef)\]
-- `replicationServerInstanceType`: `str`
-- `replicationServersSecurityGroupsIDs`: `List`\[`str`\]
-- `sourceServerID`: `str`
-- `stagingAreaSubnetId`: `str`
-- `stagingAreaTags`: `Dict`\[`str`, `str`\]
-- `useDedicatedReplicationServer`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-## ReplicationConfigurationTemplateResponseTypeDef
-
-```python
-from mypy_boto3_mgn.type_defs import ReplicationConfigurationTemplateResponseTypeDef
+from mypy_boto3_mgn.type_defs import ReplicationConfigurationTemplateResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -793,6 +764,66 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ReplicationConfigurationTemplateTypeDef
+
+```python
+from mypy_boto3_mgn.type_defs import ReplicationConfigurationTemplateTypeDef
+```
+
+Required fields:
+
+- `replicationConfigurationTemplateID`: `str`
+
+Optional fields:
+
+- `arn`: `str`
+- `associateDefaultSecurityGroup`: `bool`
+- `bandwidthThrottling`: `int`
+- `createPublicIP`: `bool`
+- `dataPlaneRouting`:
+  [ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype)
+- `defaultLargeStagingDiskType`:
+  [ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype)
+- `ebsEncryption`:
+  [ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype)
+- `ebsEncryptionKeyArn`: `str`
+- `replicationServerInstanceType`: `str`
+- `replicationServersSecurityGroupsIDs`: `List`\[`str`\]
+- `stagingAreaSubnetId`: `str`
+- `stagingAreaTags`: `Dict`\[`str`, `str`\]
+- `tags`: `Dict`\[`str`, `str`\]
+- `useDedicatedReplicationServer`: `bool`
+
+## ReplicationConfigurationTypeDef
+
+```python
+from mypy_boto3_mgn.type_defs import ReplicationConfigurationTypeDef
+```
+
+Required fields:
+
+- `associateDefaultSecurityGroup`: `bool`
+- `bandwidthThrottling`: `int`
+- `createPublicIP`: `bool`
+- `dataPlaneRouting`:
+  [ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype)
+- `defaultLargeStagingDiskType`:
+  [ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype)
+- `ebsEncryption`:
+  [ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype)
+- `ebsEncryptionKeyArn`: `str`
+- `name`: `str`
+- `replicatedDisks`:
+  `List`\[[ReplicationConfigurationReplicatedDiskTypeDef](./type_defs.md#replicationconfigurationreplicateddisktypedef)\]
+- `replicationServerInstanceType`: `str`
+- `replicationServersSecurityGroupsIDs`: `List`\[`str`\]
+- `sourceServerID`: `str`
+- `stagingAreaSubnetId`: `str`
+- `stagingAreaTags`: `Dict`\[`str`, `str`\]
+- `useDedicatedReplicationServer`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -807,10 +838,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## RetryDataReplicationRequestTypeDef
+## RetryDataReplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import RetryDataReplicationRequestTypeDef
+from mypy_boto3_mgn.type_defs import RetryDataReplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -836,10 +867,10 @@ Optional fields:
 - `ramBytes`: `int`
 - `recommendedInstanceType`: `str`
 
-## SourceServerResponseTypeDef
+## SourceServerResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import SourceServerResponseTypeDef
+from mypy_boto3_mgn.type_defs import SourceServerResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -858,10 +889,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartCutoverRequestTypeDef
+## SourceServerTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import StartCutoverRequestTypeDef
+from mypy_boto3_mgn.type_defs import SourceServerTypeDef
+```
+
+Optional fields:
+
+- `arn`: `str`
+- `dataReplicationInfo`:
+  [DataReplicationInfoTypeDef](./type_defs.md#datareplicationinfotypedef)
+- `isArchived`: `bool`
+- `launchedInstance`:
+  [LaunchedInstanceTypeDef](./type_defs.md#launchedinstancetypedef)
+- `lifeCycle`: [LifeCycleTypeDef](./type_defs.md#lifecycletypedef)
+- `sourceProperties`:
+  [SourcePropertiesTypeDef](./type_defs.md#sourcepropertiestypedef)
+- `sourceServerID`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## StartCutoverRequestRequestTypeDef
+
+```python
+from mypy_boto3_mgn.type_defs import StartCutoverRequestRequestTypeDef
 ```
 
 Required fields:
@@ -872,10 +923,10 @@ Optional fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
 
-## StartCutoverResponseResponseTypeDef
+## StartCutoverResponseTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import StartCutoverResponseResponseTypeDef
+from mypy_boto3_mgn.type_defs import StartCutoverResponseTypeDef
 ```
 
 Required fields:
@@ -884,10 +935,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartTestRequestTypeDef
+## StartTestRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import StartTestRequestTypeDef
+from mypy_boto3_mgn.type_defs import StartTestRequestRequestTypeDef
 ```
 
 Required fields:
@@ -898,10 +949,10 @@ Optional fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
 
-## StartTestResponseResponseTypeDef
+## StartTestResponseTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import StartTestResponseResponseTypeDef
+from mypy_boto3_mgn.type_defs import StartTestResponseTypeDef
 ```
 
 Required fields:
@@ -910,10 +961,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_mgn.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -921,10 +972,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## TerminateTargetInstancesRequestTypeDef
+## TerminateTargetInstancesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import TerminateTargetInstancesRequestTypeDef
+from mypy_boto3_mgn.type_defs import TerminateTargetInstancesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -935,10 +986,10 @@ Optional fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
 
-## TerminateTargetInstancesResponseResponseTypeDef
+## TerminateTargetInstancesResponseTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import TerminateTargetInstancesResponseResponseTypeDef
+from mypy_boto3_mgn.type_defs import TerminateTargetInstancesResponseTypeDef
 ```
 
 Required fields:
@@ -947,10 +998,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_mgn.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -958,10 +1009,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tagKeys`: `List`\[`str`\]
 
-## UpdateLaunchConfigurationRequestTypeDef
+## UpdateLaunchConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import UpdateLaunchConfigurationRequestTypeDef
+from mypy_boto3_mgn.type_defs import UpdateLaunchConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -979,10 +1030,10 @@ Optional fields:
 - `targetInstanceTypeRightSizingMethod`:
   [TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype)
 
-## UpdateReplicationConfigurationRequestTypeDef
+## UpdateReplicationConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import UpdateReplicationConfigurationRequestTypeDef
+from mypy_boto3_mgn.type_defs import UpdateReplicationConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1010,10 +1061,10 @@ Optional fields:
 - `stagingAreaTags`: `Dict`\[`str`, `str`\]
 - `useDedicatedReplicationServer`: `bool`
 
-## UpdateReplicationConfigurationTemplateRequestTypeDef
+## UpdateReplicationConfigurationTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mgn.type_defs import UpdateReplicationConfigurationTemplateRequestTypeDef
+from mypy_boto3_mgn.type_defs import UpdateReplicationConfigurationTemplateRequestRequestTypeDef
 ```
 
 Required fields:

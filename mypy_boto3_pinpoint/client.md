@@ -11,6 +11,7 @@ type annotations stubs module
   - [PinpointClient](#pinpointclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_app](#create_app)
     - [create_campaign](#create_campaign)
@@ -168,6 +169,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+PinpointClient exceptions.
+
+Type annotations for `boto3.client("pinpoint").exceptions` method.
+
+Boto3 documentation:
+[Pinpoint.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -193,7 +205,7 @@ Boto3 documentation:
 [Pinpoint.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_app)
 
 Arguments mapping described in
-[CreateAppRequestTypeDef](./type_defs.md#createapprequesttypedef).
+[CreateAppRequestRequestTypeDef](./type_defs.md#createapprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -201,8 +213,7 @@ Keyword-only arguments:
   [CreateApplicationRequestTypeDef](./type_defs.md#createapplicationrequesttypedef)
   *(required)*
 
-Returns
-[CreateAppResponseResponseTypeDef](./type_defs.md#createappresponseresponsetypedef).
+Returns [CreateAppResponseTypeDef](./type_defs.md#createappresponsetypedef).
 
 ### create_campaign
 
@@ -215,7 +226,7 @@ Boto3 documentation:
 [Pinpoint.Client.create_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_campaign)
 
 Arguments mapping described in
-[CreateCampaignRequestTypeDef](./type_defs.md#createcampaignrequesttypedef).
+[CreateCampaignRequestRequestTypeDef](./type_defs.md#createcampaignrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -225,7 +236,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateCampaignResponseResponseTypeDef](./type_defs.md#createcampaignresponseresponsetypedef).
+[CreateCampaignResponseTypeDef](./type_defs.md#createcampaignresponsetypedef).
 
 ### create_email_template
 
@@ -238,7 +249,7 @@ Boto3 documentation:
 [Pinpoint.Client.create_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_email_template)
 
 Arguments mapping described in
-[CreateEmailTemplateRequestTypeDef](./type_defs.md#createemailtemplaterequesttypedef).
+[CreateEmailTemplateRequestRequestTypeDef](./type_defs.md#createemailtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -248,7 +259,7 @@ Keyword-only arguments:
 - `TemplateName`: `str` *(required)*
 
 Returns
-[CreateEmailTemplateResponseResponseTypeDef](./type_defs.md#createemailtemplateresponseresponsetypedef).
+[CreateEmailTemplateResponseTypeDef](./type_defs.md#createemailtemplateresponsetypedef).
 
 ### create_export_job
 
@@ -260,7 +271,7 @@ Boto3 documentation:
 [Pinpoint.Client.create_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_export_job)
 
 Arguments mapping described in
-[CreateExportJobRequestTypeDef](./type_defs.md#createexportjobrequesttypedef).
+[CreateExportJobRequestRequestTypeDef](./type_defs.md#createexportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -270,7 +281,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateExportJobResponseResponseTypeDef](./type_defs.md#createexportjobresponseresponsetypedef).
+[CreateExportJobResponseTypeDef](./type_defs.md#createexportjobresponsetypedef).
 
 ### create_import_job
 
@@ -282,7 +293,7 @@ Boto3 documentation:
 [Pinpoint.Client.create_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_import_job)
 
 Arguments mapping described in
-[CreateImportJobRequestTypeDef](./type_defs.md#createimportjobrequesttypedef).
+[CreateImportJobRequestRequestTypeDef](./type_defs.md#createimportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -292,7 +303,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateImportJobResponseResponseTypeDef](./type_defs.md#createimportjobresponseresponsetypedef).
+[CreateImportJobResponseTypeDef](./type_defs.md#createimportjobresponsetypedef).
 
 ### create_journey
 
@@ -304,7 +315,7 @@ Boto3 documentation:
 [Pinpoint.Client.create_journey](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_journey)
 
 Arguments mapping described in
-[CreateJourneyRequestTypeDef](./type_defs.md#createjourneyrequesttypedef).
+[CreateJourneyRequestRequestTypeDef](./type_defs.md#createjourneyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -314,7 +325,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateJourneyResponseResponseTypeDef](./type_defs.md#createjourneyresponseresponsetypedef).
+[CreateJourneyResponseTypeDef](./type_defs.md#createjourneyresponsetypedef).
 
 ### create_push_template
 
@@ -327,7 +338,7 @@ Boto3 documentation:
 [Pinpoint.Client.create_push_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_push_template)
 
 Arguments mapping described in
-[CreatePushTemplateRequestTypeDef](./type_defs.md#createpushtemplaterequesttypedef).
+[CreatePushTemplateRequestRequestTypeDef](./type_defs.md#createpushtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -337,7 +348,7 @@ Keyword-only arguments:
 - `TemplateName`: `str` *(required)*
 
 Returns
-[CreatePushTemplateResponseResponseTypeDef](./type_defs.md#createpushtemplateresponseresponsetypedef).
+[CreatePushTemplateResponseTypeDef](./type_defs.md#createpushtemplateresponsetypedef).
 
 ### create_recommender_configuration
 
@@ -350,7 +361,7 @@ Boto3 documentation:
 [Pinpoint.Client.create_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_recommender_configuration)
 
 Arguments mapping described in
-[CreateRecommenderConfigurationRequestTypeDef](./type_defs.md#createrecommenderconfigurationrequesttypedef).
+[CreateRecommenderConfigurationRequestRequestTypeDef](./type_defs.md#createrecommenderconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -359,7 +370,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateRecommenderConfigurationResponseResponseTypeDef](./type_defs.md#createrecommenderconfigurationresponseresponsetypedef).
+[CreateRecommenderConfigurationResponseTypeDef](./type_defs.md#createrecommenderconfigurationresponsetypedef).
 
 ### create_segment
 
@@ -373,7 +384,7 @@ Boto3 documentation:
 [Pinpoint.Client.create_segment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_segment)
 
 Arguments mapping described in
-[CreateSegmentRequestTypeDef](./type_defs.md#createsegmentrequesttypedef).
+[CreateSegmentRequestRequestTypeDef](./type_defs.md#createsegmentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -383,7 +394,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateSegmentResponseResponseTypeDef](./type_defs.md#createsegmentresponseresponsetypedef).
+[CreateSegmentResponseTypeDef](./type_defs.md#createsegmentresponsetypedef).
 
 ### create_sms_template
 
@@ -395,7 +406,7 @@ Boto3 documentation:
 [Pinpoint.Client.create_sms_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_sms_template)
 
 Arguments mapping described in
-[CreateSmsTemplateRequestTypeDef](./type_defs.md#createsmstemplaterequesttypedef).
+[CreateSmsTemplateRequestRequestTypeDef](./type_defs.md#createsmstemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -405,7 +416,7 @@ Keyword-only arguments:
 - `TemplateName`: `str` *(required)*
 
 Returns
-[CreateSmsTemplateResponseResponseTypeDef](./type_defs.md#createsmstemplateresponseresponsetypedef).
+[CreateSmsTemplateResponseTypeDef](./type_defs.md#createsmstemplateresponsetypedef).
 
 ### create_voice_template
 
@@ -418,7 +429,7 @@ Boto3 documentation:
 [Pinpoint.Client.create_voice_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_voice_template)
 
 Arguments mapping described in
-[CreateVoiceTemplateRequestTypeDef](./type_defs.md#createvoicetemplaterequesttypedef).
+[CreateVoiceTemplateRequestRequestTypeDef](./type_defs.md#createvoicetemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -428,7 +439,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateVoiceTemplateResponseResponseTypeDef](./type_defs.md#createvoicetemplateresponseresponsetypedef).
+[CreateVoiceTemplateResponseTypeDef](./type_defs.md#createvoicetemplateresponsetypedef).
 
 ### delete_adm_channel
 
@@ -441,14 +452,14 @@ Boto3 documentation:
 [Pinpoint.Client.delete_adm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_adm_channel)
 
 Arguments mapping described in
-[DeleteAdmChannelRequestTypeDef](./type_defs.md#deleteadmchannelrequesttypedef).
+[DeleteAdmChannelRequestRequestTypeDef](./type_defs.md#deleteadmchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[DeleteAdmChannelResponseResponseTypeDef](./type_defs.md#deleteadmchannelresponseresponsetypedef).
+[DeleteAdmChannelResponseTypeDef](./type_defs.md#deleteadmchannelresponsetypedef).
 
 ### delete_apns_channel
 
@@ -461,14 +472,14 @@ Boto3 documentation:
 [Pinpoint.Client.delete_apns_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_channel)
 
 Arguments mapping described in
-[DeleteApnsChannelRequestTypeDef](./type_defs.md#deleteapnschannelrequesttypedef).
+[DeleteApnsChannelRequestRequestTypeDef](./type_defs.md#deleteapnschannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[DeleteApnsChannelResponseResponseTypeDef](./type_defs.md#deleteapnschannelresponseresponsetypedef).
+[DeleteApnsChannelResponseTypeDef](./type_defs.md#deleteapnschannelresponsetypedef).
 
 ### delete_apns_sandbox_channel
 
@@ -482,14 +493,14 @@ Boto3 documentation:
 [Pinpoint.Client.delete_apns_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_sandbox_channel)
 
 Arguments mapping described in
-[DeleteApnsSandboxChannelRequestTypeDef](./type_defs.md#deleteapnssandboxchannelrequesttypedef).
+[DeleteApnsSandboxChannelRequestRequestTypeDef](./type_defs.md#deleteapnssandboxchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[DeleteApnsSandboxChannelResponseResponseTypeDef](./type_defs.md#deleteapnssandboxchannelresponseresponsetypedef).
+[DeleteApnsSandboxChannelResponseTypeDef](./type_defs.md#deleteapnssandboxchannelresponsetypedef).
 
 ### delete_apns_voip_channel
 
@@ -503,14 +514,14 @@ Boto3 documentation:
 [Pinpoint.Client.delete_apns_voip_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_voip_channel)
 
 Arguments mapping described in
-[DeleteApnsVoipChannelRequestTypeDef](./type_defs.md#deleteapnsvoipchannelrequesttypedef).
+[DeleteApnsVoipChannelRequestRequestTypeDef](./type_defs.md#deleteapnsvoipchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[DeleteApnsVoipChannelResponseResponseTypeDef](./type_defs.md#deleteapnsvoipchannelresponseresponsetypedef).
+[DeleteApnsVoipChannelResponseTypeDef](./type_defs.md#deleteapnsvoipchannelresponsetypedef).
 
 ### delete_apns_voip_sandbox_channel
 
@@ -524,14 +535,14 @@ Boto3 documentation:
 [Pinpoint.Client.delete_apns_voip_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_voip_sandbox_channel)
 
 Arguments mapping described in
-[DeleteApnsVoipSandboxChannelRequestTypeDef](./type_defs.md#deleteapnsvoipsandboxchannelrequesttypedef).
+[DeleteApnsVoipSandboxChannelRequestRequestTypeDef](./type_defs.md#deleteapnsvoipsandboxchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[DeleteApnsVoipSandboxChannelResponseResponseTypeDef](./type_defs.md#deleteapnsvoipsandboxchannelresponseresponsetypedef).
+[DeleteApnsVoipSandboxChannelResponseTypeDef](./type_defs.md#deleteapnsvoipsandboxchannelresponsetypedef).
 
 ### delete_app
 
@@ -543,14 +554,13 @@ Boto3 documentation:
 [Pinpoint.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_app)
 
 Arguments mapping described in
-[DeleteAppRequestTypeDef](./type_defs.md#deleteapprequesttypedef).
+[DeleteAppRequestRequestTypeDef](./type_defs.md#deleteapprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
-Returns
-[DeleteAppResponseResponseTypeDef](./type_defs.md#deleteappresponseresponsetypedef).
+Returns [DeleteAppResponseTypeDef](./type_defs.md#deleteappresponsetypedef).
 
 ### delete_baidu_channel
 
@@ -563,14 +573,14 @@ Boto3 documentation:
 [Pinpoint.Client.delete_baidu_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_baidu_channel)
 
 Arguments mapping described in
-[DeleteBaiduChannelRequestTypeDef](./type_defs.md#deletebaiduchannelrequesttypedef).
+[DeleteBaiduChannelRequestRequestTypeDef](./type_defs.md#deletebaiduchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[DeleteBaiduChannelResponseResponseTypeDef](./type_defs.md#deletebaiduchannelresponseresponsetypedef).
+[DeleteBaiduChannelResponseTypeDef](./type_defs.md#deletebaiduchannelresponsetypedef).
 
 ### delete_campaign
 
@@ -582,7 +592,7 @@ Boto3 documentation:
 [Pinpoint.Client.delete_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_campaign)
 
 Arguments mapping described in
-[DeleteCampaignRequestTypeDef](./type_defs.md#deletecampaignrequesttypedef).
+[DeleteCampaignRequestRequestTypeDef](./type_defs.md#deletecampaignrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -590,7 +600,7 @@ Keyword-only arguments:
 - `CampaignId`: `str` *(required)*
 
 Returns
-[DeleteCampaignResponseResponseTypeDef](./type_defs.md#deletecampaignresponseresponsetypedef).
+[DeleteCampaignResponseTypeDef](./type_defs.md#deletecampaignresponsetypedef).
 
 ### delete_email_channel
 
@@ -603,14 +613,14 @@ Boto3 documentation:
 [Pinpoint.Client.delete_email_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_email_channel)
 
 Arguments mapping described in
-[DeleteEmailChannelRequestTypeDef](./type_defs.md#deleteemailchannelrequesttypedef).
+[DeleteEmailChannelRequestRequestTypeDef](./type_defs.md#deleteemailchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[DeleteEmailChannelResponseResponseTypeDef](./type_defs.md#deleteemailchannelresponseresponsetypedef).
+[DeleteEmailChannelResponseTypeDef](./type_defs.md#deleteemailchannelresponsetypedef).
 
 ### delete_email_template
 
@@ -623,7 +633,7 @@ Boto3 documentation:
 [Pinpoint.Client.delete_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_email_template)
 
 Arguments mapping described in
-[DeleteEmailTemplateRequestTypeDef](./type_defs.md#deleteemailtemplaterequesttypedef).
+[DeleteEmailTemplateRequestRequestTypeDef](./type_defs.md#deleteemailtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -631,7 +641,7 @@ Keyword-only arguments:
 - `Version`: `str`
 
 Returns
-[DeleteEmailTemplateResponseResponseTypeDef](./type_defs.md#deleteemailtemplateresponseresponsetypedef).
+[DeleteEmailTemplateResponseTypeDef](./type_defs.md#deleteemailtemplateresponsetypedef).
 
 ### delete_endpoint
 
@@ -643,7 +653,7 @@ Boto3 documentation:
 [Pinpoint.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_endpoint)
 
 Arguments mapping described in
-[DeleteEndpointRequestTypeDef](./type_defs.md#deleteendpointrequesttypedef).
+[DeleteEndpointRequestRequestTypeDef](./type_defs.md#deleteendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -651,7 +661,7 @@ Keyword-only arguments:
 - `EndpointId`: `str` *(required)*
 
 Returns
-[DeleteEndpointResponseResponseTypeDef](./type_defs.md#deleteendpointresponseresponsetypedef).
+[DeleteEndpointResponseTypeDef](./type_defs.md#deleteendpointresponsetypedef).
 
 ### delete_event_stream
 
@@ -663,14 +673,14 @@ Boto3 documentation:
 [Pinpoint.Client.delete_event_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_event_stream)
 
 Arguments mapping described in
-[DeleteEventStreamRequestTypeDef](./type_defs.md#deleteeventstreamrequesttypedef).
+[DeleteEventStreamRequestRequestTypeDef](./type_defs.md#deleteeventstreamrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[DeleteEventStreamResponseResponseTypeDef](./type_defs.md#deleteeventstreamresponseresponsetypedef).
+[DeleteEventStreamResponseTypeDef](./type_defs.md#deleteeventstreamresponsetypedef).
 
 ### delete_gcm_channel
 
@@ -683,14 +693,14 @@ Boto3 documentation:
 [Pinpoint.Client.delete_gcm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_gcm_channel)
 
 Arguments mapping described in
-[DeleteGcmChannelRequestTypeDef](./type_defs.md#deletegcmchannelrequesttypedef).
+[DeleteGcmChannelRequestRequestTypeDef](./type_defs.md#deletegcmchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[DeleteGcmChannelResponseResponseTypeDef](./type_defs.md#deletegcmchannelresponseresponsetypedef).
+[DeleteGcmChannelResponseTypeDef](./type_defs.md#deletegcmchannelresponsetypedef).
 
 ### delete_journey
 
@@ -702,7 +712,7 @@ Boto3 documentation:
 [Pinpoint.Client.delete_journey](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_journey)
 
 Arguments mapping described in
-[DeleteJourneyRequestTypeDef](./type_defs.md#deletejourneyrequesttypedef).
+[DeleteJourneyRequestRequestTypeDef](./type_defs.md#deletejourneyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -710,7 +720,7 @@ Keyword-only arguments:
 - `JourneyId`: `str` *(required)*
 
 Returns
-[DeleteJourneyResponseResponseTypeDef](./type_defs.md#deletejourneyresponseresponsetypedef).
+[DeleteJourneyResponseTypeDef](./type_defs.md#deletejourneyresponsetypedef).
 
 ### delete_push_template
 
@@ -723,7 +733,7 @@ Boto3 documentation:
 [Pinpoint.Client.delete_push_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_push_template)
 
 Arguments mapping described in
-[DeletePushTemplateRequestTypeDef](./type_defs.md#deletepushtemplaterequesttypedef).
+[DeletePushTemplateRequestRequestTypeDef](./type_defs.md#deletepushtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -731,7 +741,7 @@ Keyword-only arguments:
 - `Version`: `str`
 
 Returns
-[DeletePushTemplateResponseResponseTypeDef](./type_defs.md#deletepushtemplateresponseresponsetypedef).
+[DeletePushTemplateResponseTypeDef](./type_defs.md#deletepushtemplateresponsetypedef).
 
 ### delete_recommender_configuration
 
@@ -744,14 +754,14 @@ Boto3 documentation:
 [Pinpoint.Client.delete_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_recommender_configuration)
 
 Arguments mapping described in
-[DeleteRecommenderConfigurationRequestTypeDef](./type_defs.md#deleterecommenderconfigurationrequesttypedef).
+[DeleteRecommenderConfigurationRequestRequestTypeDef](./type_defs.md#deleterecommenderconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `RecommenderId`: `str` *(required)*
 
 Returns
-[DeleteRecommenderConfigurationResponseResponseTypeDef](./type_defs.md#deleterecommenderconfigurationresponseresponsetypedef).
+[DeleteRecommenderConfigurationResponseTypeDef](./type_defs.md#deleterecommenderconfigurationresponsetypedef).
 
 ### delete_segment
 
@@ -763,7 +773,7 @@ Boto3 documentation:
 [Pinpoint.Client.delete_segment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_segment)
 
 Arguments mapping described in
-[DeleteSegmentRequestTypeDef](./type_defs.md#deletesegmentrequesttypedef).
+[DeleteSegmentRequestRequestTypeDef](./type_defs.md#deletesegmentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -771,7 +781,7 @@ Keyword-only arguments:
 - `SegmentId`: `str` *(required)*
 
 Returns
-[DeleteSegmentResponseResponseTypeDef](./type_defs.md#deletesegmentresponseresponsetypedef).
+[DeleteSegmentResponseTypeDef](./type_defs.md#deletesegmentresponsetypedef).
 
 ### delete_sms_channel
 
@@ -784,14 +794,14 @@ Boto3 documentation:
 [Pinpoint.Client.delete_sms_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_sms_channel)
 
 Arguments mapping described in
-[DeleteSmsChannelRequestTypeDef](./type_defs.md#deletesmschannelrequesttypedef).
+[DeleteSmsChannelRequestRequestTypeDef](./type_defs.md#deletesmschannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[DeleteSmsChannelResponseResponseTypeDef](./type_defs.md#deletesmschannelresponseresponsetypedef).
+[DeleteSmsChannelResponseTypeDef](./type_defs.md#deletesmschannelresponsetypedef).
 
 ### delete_sms_template
 
@@ -803,7 +813,7 @@ Boto3 documentation:
 [Pinpoint.Client.delete_sms_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_sms_template)
 
 Arguments mapping described in
-[DeleteSmsTemplateRequestTypeDef](./type_defs.md#deletesmstemplaterequesttypedef).
+[DeleteSmsTemplateRequestRequestTypeDef](./type_defs.md#deletesmstemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -811,7 +821,7 @@ Keyword-only arguments:
 - `Version`: `str`
 
 Returns
-[DeleteSmsTemplateResponseResponseTypeDef](./type_defs.md#deletesmstemplateresponseresponsetypedef).
+[DeleteSmsTemplateResponseTypeDef](./type_defs.md#deletesmstemplateresponsetypedef).
 
 ### delete_user_endpoints
 
@@ -823,7 +833,7 @@ Boto3 documentation:
 [Pinpoint.Client.delete_user_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_user_endpoints)
 
 Arguments mapping described in
-[DeleteUserEndpointsRequestTypeDef](./type_defs.md#deleteuserendpointsrequesttypedef).
+[DeleteUserEndpointsRequestRequestTypeDef](./type_defs.md#deleteuserendpointsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -831,7 +841,7 @@ Keyword-only arguments:
 - `UserId`: `str` *(required)*
 
 Returns
-[DeleteUserEndpointsResponseResponseTypeDef](./type_defs.md#deleteuserendpointsresponseresponsetypedef).
+[DeleteUserEndpointsResponseTypeDef](./type_defs.md#deleteuserendpointsresponsetypedef).
 
 ### delete_voice_channel
 
@@ -844,14 +854,14 @@ Boto3 documentation:
 [Pinpoint.Client.delete_voice_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_voice_channel)
 
 Arguments mapping described in
-[DeleteVoiceChannelRequestTypeDef](./type_defs.md#deletevoicechannelrequesttypedef).
+[DeleteVoiceChannelRequestRequestTypeDef](./type_defs.md#deletevoicechannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[DeleteVoiceChannelResponseResponseTypeDef](./type_defs.md#deletevoicechannelresponseresponsetypedef).
+[DeleteVoiceChannelResponseTypeDef](./type_defs.md#deletevoicechannelresponsetypedef).
 
 ### delete_voice_template
 
@@ -864,7 +874,7 @@ Boto3 documentation:
 [Pinpoint.Client.delete_voice_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_voice_template)
 
 Arguments mapping described in
-[DeleteVoiceTemplateRequestTypeDef](./type_defs.md#deletevoicetemplaterequesttypedef).
+[DeleteVoiceTemplateRequestRequestTypeDef](./type_defs.md#deletevoicetemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -872,7 +882,7 @@ Keyword-only arguments:
 - `Version`: `str`
 
 Returns
-[DeleteVoiceTemplateResponseResponseTypeDef](./type_defs.md#deletevoicetemplateresponseresponsetypedef).
+[DeleteVoiceTemplateResponseTypeDef](./type_defs.md#deletevoicetemplateresponsetypedef).
 
 ### generate_presigned_url
 
@@ -903,14 +913,14 @@ Boto3 documentation:
 [Pinpoint.Client.get_adm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_adm_channel)
 
 Arguments mapping described in
-[GetAdmChannelRequestTypeDef](./type_defs.md#getadmchannelrequesttypedef).
+[GetAdmChannelRequestRequestTypeDef](./type_defs.md#getadmchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[GetAdmChannelResponseResponseTypeDef](./type_defs.md#getadmchannelresponseresponsetypedef).
+[GetAdmChannelResponseTypeDef](./type_defs.md#getadmchannelresponsetypedef).
 
 ### get_apns_channel
 
@@ -923,14 +933,14 @@ Boto3 documentation:
 [Pinpoint.Client.get_apns_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_channel)
 
 Arguments mapping described in
-[GetApnsChannelRequestTypeDef](./type_defs.md#getapnschannelrequesttypedef).
+[GetApnsChannelRequestRequestTypeDef](./type_defs.md#getapnschannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[GetApnsChannelResponseResponseTypeDef](./type_defs.md#getapnschannelresponseresponsetypedef).
+[GetApnsChannelResponseTypeDef](./type_defs.md#getapnschannelresponsetypedef).
 
 ### get_apns_sandbox_channel
 
@@ -944,14 +954,14 @@ Boto3 documentation:
 [Pinpoint.Client.get_apns_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_sandbox_channel)
 
 Arguments mapping described in
-[GetApnsSandboxChannelRequestTypeDef](./type_defs.md#getapnssandboxchannelrequesttypedef).
+[GetApnsSandboxChannelRequestRequestTypeDef](./type_defs.md#getapnssandboxchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[GetApnsSandboxChannelResponseResponseTypeDef](./type_defs.md#getapnssandboxchannelresponseresponsetypedef).
+[GetApnsSandboxChannelResponseTypeDef](./type_defs.md#getapnssandboxchannelresponsetypedef).
 
 ### get_apns_voip_channel
 
@@ -964,14 +974,14 @@ Boto3 documentation:
 [Pinpoint.Client.get_apns_voip_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_voip_channel)
 
 Arguments mapping described in
-[GetApnsVoipChannelRequestTypeDef](./type_defs.md#getapnsvoipchannelrequesttypedef).
+[GetApnsVoipChannelRequestRequestTypeDef](./type_defs.md#getapnsvoipchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[GetApnsVoipChannelResponseResponseTypeDef](./type_defs.md#getapnsvoipchannelresponseresponsetypedef).
+[GetApnsVoipChannelResponseTypeDef](./type_defs.md#getapnsvoipchannelresponsetypedef).
 
 ### get_apns_voip_sandbox_channel
 
@@ -985,14 +995,14 @@ Boto3 documentation:
 [Pinpoint.Client.get_apns_voip_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_voip_sandbox_channel)
 
 Arguments mapping described in
-[GetApnsVoipSandboxChannelRequestTypeDef](./type_defs.md#getapnsvoipsandboxchannelrequesttypedef).
+[GetApnsVoipSandboxChannelRequestRequestTypeDef](./type_defs.md#getapnsvoipsandboxchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[GetApnsVoipSandboxChannelResponseResponseTypeDef](./type_defs.md#getapnsvoipsandboxchannelresponseresponsetypedef).
+[GetApnsVoipSandboxChannelResponseTypeDef](./type_defs.md#getapnsvoipsandboxchannelresponsetypedef).
 
 ### get_app
 
@@ -1004,14 +1014,13 @@ Boto3 documentation:
 [Pinpoint.Client.get_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_app)
 
 Arguments mapping described in
-[GetAppRequestTypeDef](./type_defs.md#getapprequesttypedef).
+[GetAppRequestRequestTypeDef](./type_defs.md#getapprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
-Returns
-[GetAppResponseResponseTypeDef](./type_defs.md#getappresponseresponsetypedef).
+Returns [GetAppResponseTypeDef](./type_defs.md#getappresponsetypedef).
 
 ### get_application_date_range_kpi
 
@@ -1025,7 +1034,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_application_date_range_kpi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_application_date_range_kpi)
 
 Arguments mapping described in
-[GetApplicationDateRangeKpiRequestTypeDef](./type_defs.md#getapplicationdaterangekpirequesttypedef).
+[GetApplicationDateRangeKpiRequestRequestTypeDef](./type_defs.md#getapplicationdaterangekpirequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1037,7 +1046,7 @@ Keyword-only arguments:
 - `StartTime`: `Union`\[`datetime`, `str`\]
 
 Returns
-[GetApplicationDateRangeKpiResponseResponseTypeDef](./type_defs.md#getapplicationdaterangekpiresponseresponsetypedef).
+[GetApplicationDateRangeKpiResponseTypeDef](./type_defs.md#getapplicationdaterangekpiresponsetypedef).
 
 ### get_application_settings
 
@@ -1050,14 +1059,14 @@ Boto3 documentation:
 [Pinpoint.Client.get_application_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_application_settings)
 
 Arguments mapping described in
-[GetApplicationSettingsRequestTypeDef](./type_defs.md#getapplicationsettingsrequesttypedef).
+[GetApplicationSettingsRequestRequestTypeDef](./type_defs.md#getapplicationsettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[GetApplicationSettingsResponseResponseTypeDef](./type_defs.md#getapplicationsettingsresponseresponsetypedef).
+[GetApplicationSettingsResponseTypeDef](./type_defs.md#getapplicationsettingsresponsetypedef).
 
 ### get_apps
 
@@ -1070,15 +1079,14 @@ Boto3 documentation:
 [Pinpoint.Client.get_apps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apps)
 
 Arguments mapping described in
-[GetAppsRequestTypeDef](./type_defs.md#getappsrequesttypedef).
+[GetAppsRequestRequestTypeDef](./type_defs.md#getappsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `PageSize`: `str`
 - `Token`: `str`
 
-Returns
-[GetAppsResponseResponseTypeDef](./type_defs.md#getappsresponseresponsetypedef).
+Returns [GetAppsResponseTypeDef](./type_defs.md#getappsresponsetypedef).
 
 ### get_baidu_channel
 
@@ -1091,14 +1099,14 @@ Boto3 documentation:
 [Pinpoint.Client.get_baidu_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_baidu_channel)
 
 Arguments mapping described in
-[GetBaiduChannelRequestTypeDef](./type_defs.md#getbaiduchannelrequesttypedef).
+[GetBaiduChannelRequestRequestTypeDef](./type_defs.md#getbaiduchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[GetBaiduChannelResponseResponseTypeDef](./type_defs.md#getbaiduchannelresponseresponsetypedef).
+[GetBaiduChannelResponseTypeDef](./type_defs.md#getbaiduchannelresponsetypedef).
 
 ### get_campaign
 
@@ -1111,7 +1119,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign)
 
 Arguments mapping described in
-[GetCampaignRequestTypeDef](./type_defs.md#getcampaignrequesttypedef).
+[GetCampaignRequestRequestTypeDef](./type_defs.md#getcampaignrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1119,7 +1127,7 @@ Keyword-only arguments:
 - `CampaignId`: `str` *(required)*
 
 Returns
-[GetCampaignResponseResponseTypeDef](./type_defs.md#getcampaignresponseresponsetypedef).
+[GetCampaignResponseTypeDef](./type_defs.md#getcampaignresponsetypedef).
 
 ### get_campaign_activities
 
@@ -1131,7 +1139,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_campaign_activities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_activities)
 
 Arguments mapping described in
-[GetCampaignActivitiesRequestTypeDef](./type_defs.md#getcampaignactivitiesrequesttypedef).
+[GetCampaignActivitiesRequestRequestTypeDef](./type_defs.md#getcampaignactivitiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1141,7 +1149,7 @@ Keyword-only arguments:
 - `Token`: `str`
 
 Returns
-[GetCampaignActivitiesResponseResponseTypeDef](./type_defs.md#getcampaignactivitiesresponseresponsetypedef).
+[GetCampaignActivitiesResponseTypeDef](./type_defs.md#getcampaignactivitiesresponsetypedef).
 
 ### get_campaign_date_range_kpi
 
@@ -1155,7 +1163,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_campaign_date_range_kpi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_date_range_kpi)
 
 Arguments mapping described in
-[GetCampaignDateRangeKpiRequestTypeDef](./type_defs.md#getcampaigndaterangekpirequesttypedef).
+[GetCampaignDateRangeKpiRequestRequestTypeDef](./type_defs.md#getcampaigndaterangekpirequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1168,7 +1176,7 @@ Keyword-only arguments:
 - `StartTime`: `Union`\[`datetime`, `str`\]
 
 Returns
-[GetCampaignDateRangeKpiResponseResponseTypeDef](./type_defs.md#getcampaigndaterangekpiresponseresponsetypedef).
+[GetCampaignDateRangeKpiResponseTypeDef](./type_defs.md#getcampaigndaterangekpiresponsetypedef).
 
 ### get_campaign_version
 
@@ -1181,7 +1189,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_campaign_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_version)
 
 Arguments mapping described in
-[GetCampaignVersionRequestTypeDef](./type_defs.md#getcampaignversionrequesttypedef).
+[GetCampaignVersionRequestRequestTypeDef](./type_defs.md#getcampaignversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1190,7 +1198,7 @@ Keyword-only arguments:
 - `Version`: `str` *(required)*
 
 Returns
-[GetCampaignVersionResponseResponseTypeDef](./type_defs.md#getcampaignversionresponseresponsetypedef).
+[GetCampaignVersionResponseTypeDef](./type_defs.md#getcampaignversionresponsetypedef).
 
 ### get_campaign_versions
 
@@ -1203,7 +1211,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_campaign_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_versions)
 
 Arguments mapping described in
-[GetCampaignVersionsRequestTypeDef](./type_defs.md#getcampaignversionsrequesttypedef).
+[GetCampaignVersionsRequestRequestTypeDef](./type_defs.md#getcampaignversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1213,7 +1221,7 @@ Keyword-only arguments:
 - `Token`: `str`
 
 Returns
-[GetCampaignVersionsResponseResponseTypeDef](./type_defs.md#getcampaignversionsresponseresponsetypedef).
+[GetCampaignVersionsResponseTypeDef](./type_defs.md#getcampaignversionsresponsetypedef).
 
 ### get_campaigns
 
@@ -1226,7 +1234,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_campaigns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaigns)
 
 Arguments mapping described in
-[GetCampaignsRequestTypeDef](./type_defs.md#getcampaignsrequesttypedef).
+[GetCampaignsRequestRequestTypeDef](./type_defs.md#getcampaignsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1235,7 +1243,7 @@ Keyword-only arguments:
 - `Token`: `str`
 
 Returns
-[GetCampaignsResponseResponseTypeDef](./type_defs.md#getcampaignsresponseresponsetypedef).
+[GetCampaignsResponseTypeDef](./type_defs.md#getcampaignsresponsetypedef).
 
 ### get_channels
 
@@ -1248,14 +1256,14 @@ Boto3 documentation:
 [Pinpoint.Client.get_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_channels)
 
 Arguments mapping described in
-[GetChannelsRequestTypeDef](./type_defs.md#getchannelsrequesttypedef).
+[GetChannelsRequestRequestTypeDef](./type_defs.md#getchannelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[GetChannelsResponseResponseTypeDef](./type_defs.md#getchannelsresponseresponsetypedef).
+[GetChannelsResponseTypeDef](./type_defs.md#getchannelsresponsetypedef).
 
 ### get_email_channel
 
@@ -1268,14 +1276,14 @@ Boto3 documentation:
 [Pinpoint.Client.get_email_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_email_channel)
 
 Arguments mapping described in
-[GetEmailChannelRequestTypeDef](./type_defs.md#getemailchannelrequesttypedef).
+[GetEmailChannelRequestRequestTypeDef](./type_defs.md#getemailchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[GetEmailChannelResponseResponseTypeDef](./type_defs.md#getemailchannelresponseresponsetypedef).
+[GetEmailChannelResponseTypeDef](./type_defs.md#getemailchannelresponsetypedef).
 
 ### get_email_template
 
@@ -1288,7 +1296,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_email_template)
 
 Arguments mapping described in
-[GetEmailTemplateRequestTypeDef](./type_defs.md#getemailtemplaterequesttypedef).
+[GetEmailTemplateRequestRequestTypeDef](./type_defs.md#getemailtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1296,7 +1304,7 @@ Keyword-only arguments:
 - `Version`: `str`
 
 Returns
-[GetEmailTemplateResponseResponseTypeDef](./type_defs.md#getemailtemplateresponseresponsetypedef).
+[GetEmailTemplateResponseTypeDef](./type_defs.md#getemailtemplateresponsetypedef).
 
 ### get_endpoint
 
@@ -1309,7 +1317,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_endpoint)
 
 Arguments mapping described in
-[GetEndpointRequestTypeDef](./type_defs.md#getendpointrequesttypedef).
+[GetEndpointRequestRequestTypeDef](./type_defs.md#getendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1317,7 +1325,7 @@ Keyword-only arguments:
 - `EndpointId`: `str` *(required)*
 
 Returns
-[GetEndpointResponseResponseTypeDef](./type_defs.md#getendpointresponseresponsetypedef).
+[GetEndpointResponseTypeDef](./type_defs.md#getendpointresponsetypedef).
 
 ### get_event_stream
 
@@ -1329,14 +1337,14 @@ Boto3 documentation:
 [Pinpoint.Client.get_event_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_event_stream)
 
 Arguments mapping described in
-[GetEventStreamRequestTypeDef](./type_defs.md#geteventstreamrequesttypedef).
+[GetEventStreamRequestRequestTypeDef](./type_defs.md#geteventstreamrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[GetEventStreamResponseResponseTypeDef](./type_defs.md#geteventstreamresponseresponsetypedef).
+[GetEventStreamResponseTypeDef](./type_defs.md#geteventstreamresponsetypedef).
 
 ### get_export_job
 
@@ -1349,7 +1357,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_export_job)
 
 Arguments mapping described in
-[GetExportJobRequestTypeDef](./type_defs.md#getexportjobrequesttypedef).
+[GetExportJobRequestRequestTypeDef](./type_defs.md#getexportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1357,7 +1365,7 @@ Keyword-only arguments:
 - `JobId`: `str` *(required)*
 
 Returns
-[GetExportJobResponseResponseTypeDef](./type_defs.md#getexportjobresponseresponsetypedef).
+[GetExportJobResponseTypeDef](./type_defs.md#getexportjobresponsetypedef).
 
 ### get_export_jobs
 
@@ -1370,7 +1378,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_export_jobs)
 
 Arguments mapping described in
-[GetExportJobsRequestTypeDef](./type_defs.md#getexportjobsrequesttypedef).
+[GetExportJobsRequestRequestTypeDef](./type_defs.md#getexportjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1379,7 +1387,7 @@ Keyword-only arguments:
 - `Token`: `str`
 
 Returns
-[GetExportJobsResponseResponseTypeDef](./type_defs.md#getexportjobsresponseresponsetypedef).
+[GetExportJobsResponseTypeDef](./type_defs.md#getexportjobsresponsetypedef).
 
 ### get_gcm_channel
 
@@ -1392,14 +1400,14 @@ Boto3 documentation:
 [Pinpoint.Client.get_gcm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_gcm_channel)
 
 Arguments mapping described in
-[GetGcmChannelRequestTypeDef](./type_defs.md#getgcmchannelrequesttypedef).
+[GetGcmChannelRequestRequestTypeDef](./type_defs.md#getgcmchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[GetGcmChannelResponseResponseTypeDef](./type_defs.md#getgcmchannelresponseresponsetypedef).
+[GetGcmChannelResponseTypeDef](./type_defs.md#getgcmchannelresponsetypedef).
 
 ### get_import_job
 
@@ -1412,7 +1420,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_import_job)
 
 Arguments mapping described in
-[GetImportJobRequestTypeDef](./type_defs.md#getimportjobrequesttypedef).
+[GetImportJobRequestRequestTypeDef](./type_defs.md#getimportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1420,7 +1428,7 @@ Keyword-only arguments:
 - `JobId`: `str` *(required)*
 
 Returns
-[GetImportJobResponseResponseTypeDef](./type_defs.md#getimportjobresponseresponsetypedef).
+[GetImportJobResponseTypeDef](./type_defs.md#getimportjobresponsetypedef).
 
 ### get_import_jobs
 
@@ -1433,7 +1441,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_import_jobs)
 
 Arguments mapping described in
-[GetImportJobsRequestTypeDef](./type_defs.md#getimportjobsrequesttypedef).
+[GetImportJobsRequestRequestTypeDef](./type_defs.md#getimportjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1442,7 +1450,7 @@ Keyword-only arguments:
 - `Token`: `str`
 
 Returns
-[GetImportJobsResponseResponseTypeDef](./type_defs.md#getimportjobsresponseresponsetypedef).
+[GetImportJobsResponseTypeDef](./type_defs.md#getimportjobsresponsetypedef).
 
 ### get_journey
 
@@ -1455,15 +1463,14 @@ Boto3 documentation:
 [Pinpoint.Client.get_journey](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey)
 
 Arguments mapping described in
-[GetJourneyRequestTypeDef](./type_defs.md#getjourneyrequesttypedef).
+[GetJourneyRequestRequestTypeDef](./type_defs.md#getjourneyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `JourneyId`: `str` *(required)*
 
-Returns
-[GetJourneyResponseResponseTypeDef](./type_defs.md#getjourneyresponseresponsetypedef).
+Returns [GetJourneyResponseTypeDef](./type_defs.md#getjourneyresponsetypedef).
 
 ### get_journey_date_range_kpi
 
@@ -1477,7 +1484,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_journey_date_range_kpi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_date_range_kpi)
 
 Arguments mapping described in
-[GetJourneyDateRangeKpiRequestTypeDef](./type_defs.md#getjourneydaterangekpirequesttypedef).
+[GetJourneyDateRangeKpiRequestRequestTypeDef](./type_defs.md#getjourneydaterangekpirequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1490,7 +1497,7 @@ Keyword-only arguments:
 - `StartTime`: `Union`\[`datetime`, `str`\]
 
 Returns
-[GetJourneyDateRangeKpiResponseResponseTypeDef](./type_defs.md#getjourneydaterangekpiresponseresponsetypedef).
+[GetJourneyDateRangeKpiResponseTypeDef](./type_defs.md#getjourneydaterangekpiresponsetypedef).
 
 ### get_journey_execution_activity_metrics
 
@@ -1504,7 +1511,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_journey_execution_activity_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_execution_activity_metrics)
 
 Arguments mapping described in
-[GetJourneyExecutionActivityMetricsRequestTypeDef](./type_defs.md#getjourneyexecutionactivitymetricsrequesttypedef).
+[GetJourneyExecutionActivityMetricsRequestRequestTypeDef](./type_defs.md#getjourneyexecutionactivitymetricsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1515,7 +1522,7 @@ Keyword-only arguments:
 - `PageSize`: `str`
 
 Returns
-[GetJourneyExecutionActivityMetricsResponseResponseTypeDef](./type_defs.md#getjourneyexecutionactivitymetricsresponseresponsetypedef).
+[GetJourneyExecutionActivityMetricsResponseTypeDef](./type_defs.md#getjourneyexecutionactivitymetricsresponsetypedef).
 
 ### get_journey_execution_metrics
 
@@ -1529,7 +1536,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_journey_execution_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_execution_metrics)
 
 Arguments mapping described in
-[GetJourneyExecutionMetricsRequestTypeDef](./type_defs.md#getjourneyexecutionmetricsrequesttypedef).
+[GetJourneyExecutionMetricsRequestRequestTypeDef](./type_defs.md#getjourneyexecutionmetricsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1539,7 +1546,7 @@ Keyword-only arguments:
 - `PageSize`: `str`
 
 Returns
-[GetJourneyExecutionMetricsResponseResponseTypeDef](./type_defs.md#getjourneyexecutionmetricsresponseresponsetypedef).
+[GetJourneyExecutionMetricsResponseTypeDef](./type_defs.md#getjourneyexecutionmetricsresponsetypedef).
 
 ### get_push_template
 
@@ -1552,7 +1559,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_push_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_push_template)
 
 Arguments mapping described in
-[GetPushTemplateRequestTypeDef](./type_defs.md#getpushtemplaterequesttypedef).
+[GetPushTemplateRequestRequestTypeDef](./type_defs.md#getpushtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1560,7 +1567,7 @@ Keyword-only arguments:
 - `Version`: `str`
 
 Returns
-[GetPushTemplateResponseResponseTypeDef](./type_defs.md#getpushtemplateresponseresponsetypedef).
+[GetPushTemplateResponseTypeDef](./type_defs.md#getpushtemplateresponsetypedef).
 
 ### get_recommender_configuration
 
@@ -1574,14 +1581,14 @@ Boto3 documentation:
 [Pinpoint.Client.get_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_recommender_configuration)
 
 Arguments mapping described in
-[GetRecommenderConfigurationRequestTypeDef](./type_defs.md#getrecommenderconfigurationrequesttypedef).
+[GetRecommenderConfigurationRequestRequestTypeDef](./type_defs.md#getrecommenderconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `RecommenderId`: `str` *(required)*
 
 Returns
-[GetRecommenderConfigurationResponseResponseTypeDef](./type_defs.md#getrecommenderconfigurationresponseresponsetypedef).
+[GetRecommenderConfigurationResponseTypeDef](./type_defs.md#getrecommenderconfigurationresponsetypedef).
 
 ### get_recommender_configurations
 
@@ -1595,7 +1602,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_recommender_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_recommender_configurations)
 
 Arguments mapping described in
-[GetRecommenderConfigurationsRequestTypeDef](./type_defs.md#getrecommenderconfigurationsrequesttypedef).
+[GetRecommenderConfigurationsRequestRequestTypeDef](./type_defs.md#getrecommenderconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1603,7 +1610,7 @@ Keyword-only arguments:
 - `Token`: `str`
 
 Returns
-[GetRecommenderConfigurationsResponseResponseTypeDef](./type_defs.md#getrecommenderconfigurationsresponseresponsetypedef).
+[GetRecommenderConfigurationsResponseTypeDef](./type_defs.md#getrecommenderconfigurationsresponsetypedef).
 
 ### get_segment
 
@@ -1616,15 +1623,14 @@ Boto3 documentation:
 [Pinpoint.Client.get_segment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment)
 
 Arguments mapping described in
-[GetSegmentRequestTypeDef](./type_defs.md#getsegmentrequesttypedef).
+[GetSegmentRequestRequestTypeDef](./type_defs.md#getsegmentrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `SegmentId`: `str` *(required)*
 
-Returns
-[GetSegmentResponseResponseTypeDef](./type_defs.md#getsegmentresponseresponsetypedef).
+Returns [GetSegmentResponseTypeDef](./type_defs.md#getsegmentresponsetypedef).
 
 ### get_segment_export_jobs
 
@@ -1637,7 +1643,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_segment_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_export_jobs)
 
 Arguments mapping described in
-[GetSegmentExportJobsRequestTypeDef](./type_defs.md#getsegmentexportjobsrequesttypedef).
+[GetSegmentExportJobsRequestRequestTypeDef](./type_defs.md#getsegmentexportjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1647,7 +1653,7 @@ Keyword-only arguments:
 - `Token`: `str`
 
 Returns
-[GetSegmentExportJobsResponseResponseTypeDef](./type_defs.md#getsegmentexportjobsresponseresponsetypedef).
+[GetSegmentExportJobsResponseTypeDef](./type_defs.md#getsegmentexportjobsresponsetypedef).
 
 ### get_segment_import_jobs
 
@@ -1660,7 +1666,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_segment_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_import_jobs)
 
 Arguments mapping described in
-[GetSegmentImportJobsRequestTypeDef](./type_defs.md#getsegmentimportjobsrequesttypedef).
+[GetSegmentImportJobsRequestRequestTypeDef](./type_defs.md#getsegmentimportjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1670,7 +1676,7 @@ Keyword-only arguments:
 - `Token`: `str`
 
 Returns
-[GetSegmentImportJobsResponseResponseTypeDef](./type_defs.md#getsegmentimportjobsresponseresponsetypedef).
+[GetSegmentImportJobsResponseTypeDef](./type_defs.md#getsegmentimportjobsresponsetypedef).
 
 ### get_segment_version
 
@@ -1683,7 +1689,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_segment_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_version)
 
 Arguments mapping described in
-[GetSegmentVersionRequestTypeDef](./type_defs.md#getsegmentversionrequesttypedef).
+[GetSegmentVersionRequestRequestTypeDef](./type_defs.md#getsegmentversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1692,7 +1698,7 @@ Keyword-only arguments:
 - `Version`: `str` *(required)*
 
 Returns
-[GetSegmentVersionResponseResponseTypeDef](./type_defs.md#getsegmentversionresponseresponsetypedef).
+[GetSegmentVersionResponseTypeDef](./type_defs.md#getsegmentversionresponsetypedef).
 
 ### get_segment_versions
 
@@ -1706,7 +1712,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_segment_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_versions)
 
 Arguments mapping described in
-[GetSegmentVersionsRequestTypeDef](./type_defs.md#getsegmentversionsrequesttypedef).
+[GetSegmentVersionsRequestRequestTypeDef](./type_defs.md#getsegmentversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1716,7 +1722,7 @@ Keyword-only arguments:
 - `Token`: `str`
 
 Returns
-[GetSegmentVersionsResponseResponseTypeDef](./type_defs.md#getsegmentversionsresponseresponsetypedef).
+[GetSegmentVersionsResponseTypeDef](./type_defs.md#getsegmentversionsresponsetypedef).
 
 ### get_segments
 
@@ -1729,7 +1735,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_segments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segments)
 
 Arguments mapping described in
-[GetSegmentsRequestTypeDef](./type_defs.md#getsegmentsrequesttypedef).
+[GetSegmentsRequestRequestTypeDef](./type_defs.md#getsegmentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1738,7 +1744,7 @@ Keyword-only arguments:
 - `Token`: `str`
 
 Returns
-[GetSegmentsResponseResponseTypeDef](./type_defs.md#getsegmentsresponseresponsetypedef).
+[GetSegmentsResponseTypeDef](./type_defs.md#getsegmentsresponsetypedef).
 
 ### get_sms_channel
 
@@ -1751,14 +1757,14 @@ Boto3 documentation:
 [Pinpoint.Client.get_sms_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_sms_channel)
 
 Arguments mapping described in
-[GetSmsChannelRequestTypeDef](./type_defs.md#getsmschannelrequesttypedef).
+[GetSmsChannelRequestRequestTypeDef](./type_defs.md#getsmschannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[GetSmsChannelResponseResponseTypeDef](./type_defs.md#getsmschannelresponseresponsetypedef).
+[GetSmsChannelResponseTypeDef](./type_defs.md#getsmschannelresponsetypedef).
 
 ### get_sms_template
 
@@ -1771,7 +1777,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_sms_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_sms_template)
 
 Arguments mapping described in
-[GetSmsTemplateRequestTypeDef](./type_defs.md#getsmstemplaterequesttypedef).
+[GetSmsTemplateRequestRequestTypeDef](./type_defs.md#getsmstemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1779,7 +1785,7 @@ Keyword-only arguments:
 - `Version`: `str`
 
 Returns
-[GetSmsTemplateResponseResponseTypeDef](./type_defs.md#getsmstemplateresponseresponsetypedef).
+[GetSmsTemplateResponseTypeDef](./type_defs.md#getsmstemplateresponsetypedef).
 
 ### get_user_endpoints
 
@@ -1792,7 +1798,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_user_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_user_endpoints)
 
 Arguments mapping described in
-[GetUserEndpointsRequestTypeDef](./type_defs.md#getuserendpointsrequesttypedef).
+[GetUserEndpointsRequestRequestTypeDef](./type_defs.md#getuserendpointsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1800,7 +1806,7 @@ Keyword-only arguments:
 - `UserId`: `str` *(required)*
 
 Returns
-[GetUserEndpointsResponseResponseTypeDef](./type_defs.md#getuserendpointsresponseresponsetypedef).
+[GetUserEndpointsResponseTypeDef](./type_defs.md#getuserendpointsresponsetypedef).
 
 ### get_voice_channel
 
@@ -1813,14 +1819,14 @@ Boto3 documentation:
 [Pinpoint.Client.get_voice_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_voice_channel)
 
 Arguments mapping described in
-[GetVoiceChannelRequestTypeDef](./type_defs.md#getvoicechannelrequesttypedef).
+[GetVoiceChannelRequestRequestTypeDef](./type_defs.md#getvoicechannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[GetVoiceChannelResponseResponseTypeDef](./type_defs.md#getvoicechannelresponseresponsetypedef).
+[GetVoiceChannelResponseTypeDef](./type_defs.md#getvoicechannelresponsetypedef).
 
 ### get_voice_template
 
@@ -1833,7 +1839,7 @@ Boto3 documentation:
 [Pinpoint.Client.get_voice_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_voice_template)
 
 Arguments mapping described in
-[GetVoiceTemplateRequestTypeDef](./type_defs.md#getvoicetemplaterequesttypedef).
+[GetVoiceTemplateRequestRequestTypeDef](./type_defs.md#getvoicetemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1841,7 +1847,7 @@ Keyword-only arguments:
 - `Version`: `str`
 
 Returns
-[GetVoiceTemplateResponseResponseTypeDef](./type_defs.md#getvoicetemplateresponseresponsetypedef).
+[GetVoiceTemplateResponseTypeDef](./type_defs.md#getvoicetemplateresponsetypedef).
 
 ### list_journeys
 
@@ -1854,7 +1860,7 @@ Boto3 documentation:
 [Pinpoint.Client.list_journeys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_journeys)
 
 Arguments mapping described in
-[ListJourneysRequestTypeDef](./type_defs.md#listjourneysrequesttypedef).
+[ListJourneysRequestRequestTypeDef](./type_defs.md#listjourneysrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1863,7 +1869,7 @@ Keyword-only arguments:
 - `Token`: `str`
 
 Returns
-[ListJourneysResponseResponseTypeDef](./type_defs.md#listjourneysresponseresponsetypedef).
+[ListJourneysResponseTypeDef](./type_defs.md#listjourneysresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -1876,14 +1882,14 @@ Boto3 documentation:
 [Pinpoint.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_template_versions
 
@@ -1895,7 +1901,7 @@ Boto3 documentation:
 [Pinpoint.Client.list_template_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_template_versions)
 
 Arguments mapping described in
-[ListTemplateVersionsRequestTypeDef](./type_defs.md#listtemplateversionsrequesttypedef).
+[ListTemplateVersionsRequestRequestTypeDef](./type_defs.md#listtemplateversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1905,7 +1911,7 @@ Keyword-only arguments:
 - `PageSize`: `str`
 
 Returns
-[ListTemplateVersionsResponseResponseTypeDef](./type_defs.md#listtemplateversionsresponseresponsetypedef).
+[ListTemplateVersionsResponseTypeDef](./type_defs.md#listtemplateversionsresponsetypedef).
 
 ### list_templates
 
@@ -1918,7 +1924,7 @@ Boto3 documentation:
 [Pinpoint.Client.list_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_templates)
 
 Arguments mapping described in
-[ListTemplatesRequestTypeDef](./type_defs.md#listtemplatesrequesttypedef).
+[ListTemplatesRequestRequestTypeDef](./type_defs.md#listtemplatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1928,7 +1934,7 @@ Keyword-only arguments:
 - `TemplateType`: `str`
 
 Returns
-[ListTemplatesResponseResponseTypeDef](./type_defs.md#listtemplatesresponseresponsetypedef).
+[ListTemplatesResponseTypeDef](./type_defs.md#listtemplatesresponsetypedef).
 
 ### phone_number_validate
 
@@ -1940,7 +1946,7 @@ Boto3 documentation:
 [Pinpoint.Client.phone_number_validate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.phone_number_validate)
 
 Arguments mapping described in
-[PhoneNumberValidateRequestTypeDef](./type_defs.md#phonenumbervalidaterequesttypedef).
+[PhoneNumberValidateRequestRequestTypeDef](./type_defs.md#phonenumbervalidaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1949,7 +1955,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PhoneNumberValidateResponseResponseTypeDef](./type_defs.md#phonenumbervalidateresponseresponsetypedef).
+[PhoneNumberValidateResponseTypeDef](./type_defs.md#phonenumbervalidateresponsetypedef).
 
 ### put_event_stream
 
@@ -1962,7 +1968,7 @@ Boto3 documentation:
 [Pinpoint.Client.put_event_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.put_event_stream)
 
 Arguments mapping described in
-[PutEventStreamRequestTypeDef](./type_defs.md#puteventstreamrequesttypedef).
+[PutEventStreamRequestRequestTypeDef](./type_defs.md#puteventstreamrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1972,7 +1978,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutEventStreamResponseResponseTypeDef](./type_defs.md#puteventstreamresponseresponsetypedef).
+[PutEventStreamResponseTypeDef](./type_defs.md#puteventstreamresponsetypedef).
 
 ### put_events
 
@@ -1985,7 +1991,7 @@ Boto3 documentation:
 [Pinpoint.Client.put_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.put_events)
 
 Arguments mapping described in
-[PutEventsRequestTypeDef](./type_defs.md#puteventsrequesttypedef).
+[PutEventsRequestRequestTypeDef](./type_defs.md#puteventsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1993,8 +1999,7 @@ Keyword-only arguments:
 - `EventsRequest`: [EventsRequestTypeDef](./type_defs.md#eventsrequesttypedef)
   *(required)*
 
-Returns
-[PutEventsResponseResponseTypeDef](./type_defs.md#puteventsresponseresponsetypedef).
+Returns [PutEventsResponseTypeDef](./type_defs.md#puteventsresponsetypedef).
 
 ### remove_attributes
 
@@ -2007,7 +2012,7 @@ Boto3 documentation:
 [Pinpoint.Client.remove_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.remove_attributes)
 
 Arguments mapping described in
-[RemoveAttributesRequestTypeDef](./type_defs.md#removeattributesrequesttypedef).
+[RemoveAttributesRequestRequestTypeDef](./type_defs.md#removeattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2018,7 +2023,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[RemoveAttributesResponseResponseTypeDef](./type_defs.md#removeattributesresponseresponsetypedef).
+[RemoveAttributesResponseTypeDef](./type_defs.md#removeattributesresponsetypedef).
 
 ### send_messages
 
@@ -2030,7 +2035,7 @@ Boto3 documentation:
 [Pinpoint.Client.send_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.send_messages)
 
 Arguments mapping described in
-[SendMessagesRequestTypeDef](./type_defs.md#sendmessagesrequesttypedef).
+[SendMessagesRequestRequestTypeDef](./type_defs.md#sendmessagesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2039,7 +2044,7 @@ Keyword-only arguments:
   [MessageRequestTypeDef](./type_defs.md#messagerequesttypedef) *(required)*
 
 Returns
-[SendMessagesResponseResponseTypeDef](./type_defs.md#sendmessagesresponseresponsetypedef).
+[SendMessagesResponseTypeDef](./type_defs.md#sendmessagesresponsetypedef).
 
 ### send_users_messages
 
@@ -2051,7 +2056,7 @@ Boto3 documentation:
 [Pinpoint.Client.send_users_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.send_users_messages)
 
 Arguments mapping described in
-[SendUsersMessagesRequestTypeDef](./type_defs.md#sendusersmessagesrequesttypedef).
+[SendUsersMessagesRequestRequestTypeDef](./type_defs.md#sendusersmessagesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2061,7 +2066,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[SendUsersMessagesResponseResponseTypeDef](./type_defs.md#sendusersmessagesresponseresponsetypedef).
+[SendUsersMessagesResponseTypeDef](./type_defs.md#sendusersmessagesresponsetypedef).
 
 ### tag_resource
 
@@ -2074,7 +2079,7 @@ Boto3 documentation:
 [Pinpoint.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2092,7 +2097,7 @@ Boto3 documentation:
 [Pinpoint.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2110,7 +2115,7 @@ Boto3 documentation:
 [Pinpoint.Client.update_adm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_adm_channel)
 
 Arguments mapping described in
-[UpdateAdmChannelRequestTypeDef](./type_defs.md#updateadmchannelrequesttypedef).
+[UpdateAdmChannelRequestRequestTypeDef](./type_defs.md#updateadmchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2120,7 +2125,7 @@ Keyword-only arguments:
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[UpdateAdmChannelResponseResponseTypeDef](./type_defs.md#updateadmchannelresponseresponsetypedef).
+[UpdateAdmChannelResponseTypeDef](./type_defs.md#updateadmchannelresponsetypedef).
 
 ### update_apns_channel
 
@@ -2133,7 +2138,7 @@ Boto3 documentation:
 [Pinpoint.Client.update_apns_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_channel)
 
 Arguments mapping described in
-[UpdateApnsChannelRequestTypeDef](./type_defs.md#updateapnschannelrequesttypedef).
+[UpdateApnsChannelRequestRequestTypeDef](./type_defs.md#updateapnschannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2143,7 +2148,7 @@ Keyword-only arguments:
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[UpdateApnsChannelResponseResponseTypeDef](./type_defs.md#updateapnschannelresponseresponsetypedef).
+[UpdateApnsChannelResponseTypeDef](./type_defs.md#updateapnschannelresponsetypedef).
 
 ### update_apns_sandbox_channel
 
@@ -2157,7 +2162,7 @@ Boto3 documentation:
 [Pinpoint.Client.update_apns_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_sandbox_channel)
 
 Arguments mapping described in
-[UpdateApnsSandboxChannelRequestTypeDef](./type_defs.md#updateapnssandboxchannelrequesttypedef).
+[UpdateApnsSandboxChannelRequestRequestTypeDef](./type_defs.md#updateapnssandboxchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2167,7 +2172,7 @@ Keyword-only arguments:
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[UpdateApnsSandboxChannelResponseResponseTypeDef](./type_defs.md#updateapnssandboxchannelresponseresponsetypedef).
+[UpdateApnsSandboxChannelResponseTypeDef](./type_defs.md#updateapnssandboxchannelresponsetypedef).
 
 ### update_apns_voip_channel
 
@@ -2181,7 +2186,7 @@ Boto3 documentation:
 [Pinpoint.Client.update_apns_voip_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_voip_channel)
 
 Arguments mapping described in
-[UpdateApnsVoipChannelRequestTypeDef](./type_defs.md#updateapnsvoipchannelrequesttypedef).
+[UpdateApnsVoipChannelRequestRequestTypeDef](./type_defs.md#updateapnsvoipchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2191,7 +2196,7 @@ Keyword-only arguments:
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[UpdateApnsVoipChannelResponseResponseTypeDef](./type_defs.md#updateapnsvoipchannelresponseresponsetypedef).
+[UpdateApnsVoipChannelResponseTypeDef](./type_defs.md#updateapnsvoipchannelresponsetypedef).
 
 ### update_apns_voip_sandbox_channel
 
@@ -2205,7 +2210,7 @@ Boto3 documentation:
 [Pinpoint.Client.update_apns_voip_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_voip_sandbox_channel)
 
 Arguments mapping described in
-[UpdateApnsVoipSandboxChannelRequestTypeDef](./type_defs.md#updateapnsvoipsandboxchannelrequesttypedef).
+[UpdateApnsVoipSandboxChannelRequestRequestTypeDef](./type_defs.md#updateapnsvoipsandboxchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2215,7 +2220,7 @@ Keyword-only arguments:
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[UpdateApnsVoipSandboxChannelResponseResponseTypeDef](./type_defs.md#updateapnsvoipsandboxchannelresponseresponsetypedef).
+[UpdateApnsVoipSandboxChannelResponseTypeDef](./type_defs.md#updateapnsvoipsandboxchannelresponsetypedef).
 
 ### update_application_settings
 
@@ -2228,7 +2233,7 @@ Boto3 documentation:
 [Pinpoint.Client.update_application_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_application_settings)
 
 Arguments mapping described in
-[UpdateApplicationSettingsRequestTypeDef](./type_defs.md#updateapplicationsettingsrequesttypedef).
+[UpdateApplicationSettingsRequestRequestTypeDef](./type_defs.md#updateapplicationsettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2238,7 +2243,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateApplicationSettingsResponseResponseTypeDef](./type_defs.md#updateapplicationsettingsresponseresponsetypedef).
+[UpdateApplicationSettingsResponseTypeDef](./type_defs.md#updateapplicationsettingsresponsetypedef).
 
 ### update_baidu_channel
 
@@ -2251,7 +2256,7 @@ Boto3 documentation:
 [Pinpoint.Client.update_baidu_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_baidu_channel)
 
 Arguments mapping described in
-[UpdateBaiduChannelRequestTypeDef](./type_defs.md#updatebaiduchannelrequesttypedef).
+[UpdateBaiduChannelRequestRequestTypeDef](./type_defs.md#updatebaiduchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2261,7 +2266,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateBaiduChannelResponseResponseTypeDef](./type_defs.md#updatebaiduchannelresponseresponsetypedef).
+[UpdateBaiduChannelResponseTypeDef](./type_defs.md#updatebaiduchannelresponsetypedef).
 
 ### update_campaign
 
@@ -2273,7 +2278,7 @@ Boto3 documentation:
 [Pinpoint.Client.update_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_campaign)
 
 Arguments mapping described in
-[UpdateCampaignRequestTypeDef](./type_defs.md#updatecampaignrequesttypedef).
+[UpdateCampaignRequestRequestTypeDef](./type_defs.md#updatecampaignrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2284,7 +2289,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateCampaignResponseResponseTypeDef](./type_defs.md#updatecampaignresponseresponsetypedef).
+[UpdateCampaignResponseTypeDef](./type_defs.md#updatecampaignresponsetypedef).
 
 ### update_email_channel
 
@@ -2297,7 +2302,7 @@ Boto3 documentation:
 [Pinpoint.Client.update_email_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_email_channel)
 
 Arguments mapping described in
-[UpdateEmailChannelRequestTypeDef](./type_defs.md#updateemailchannelrequesttypedef).
+[UpdateEmailChannelRequestRequestTypeDef](./type_defs.md#updateemailchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2307,7 +2312,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateEmailChannelResponseResponseTypeDef](./type_defs.md#updateemailchannelresponseresponsetypedef).
+[UpdateEmailChannelResponseTypeDef](./type_defs.md#updateemailchannelresponsetypedef).
 
 ### update_email_template
 
@@ -2320,7 +2325,7 @@ Boto3 documentation:
 [Pinpoint.Client.update_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_email_template)
 
 Arguments mapping described in
-[UpdateEmailTemplateRequestTypeDef](./type_defs.md#updateemailtemplaterequesttypedef).
+[UpdateEmailTemplateRequestRequestTypeDef](./type_defs.md#updateemailtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2332,7 +2337,7 @@ Keyword-only arguments:
 - `Version`: `str`
 
 Returns
-[UpdateEmailTemplateResponseResponseTypeDef](./type_defs.md#updateemailtemplateresponseresponsetypedef).
+[UpdateEmailTemplateResponseTypeDef](./type_defs.md#updateemailtemplateresponsetypedef).
 
 ### update_endpoint
 
@@ -2345,7 +2350,7 @@ Boto3 documentation:
 [Pinpoint.Client.update_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_endpoint)
 
 Arguments mapping described in
-[UpdateEndpointRequestTypeDef](./type_defs.md#updateendpointrequesttypedef).
+[UpdateEndpointRequestRequestTypeDef](./type_defs.md#updateendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2355,7 +2360,7 @@ Keyword-only arguments:
   [EndpointRequestTypeDef](./type_defs.md#endpointrequesttypedef) *(required)*
 
 Returns
-[UpdateEndpointResponseResponseTypeDef](./type_defs.md#updateendpointresponseresponsetypedef).
+[UpdateEndpointResponseTypeDef](./type_defs.md#updateendpointresponsetypedef).
 
 ### update_endpoints_batch
 
@@ -2368,7 +2373,7 @@ Boto3 documentation:
 [Pinpoint.Client.update_endpoints_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_endpoints_batch)
 
 Arguments mapping described in
-[UpdateEndpointsBatchRequestTypeDef](./type_defs.md#updateendpointsbatchrequesttypedef).
+[UpdateEndpointsBatchRequestRequestTypeDef](./type_defs.md#updateendpointsbatchrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2378,7 +2383,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateEndpointsBatchResponseResponseTypeDef](./type_defs.md#updateendpointsbatchresponseresponsetypedef).
+[UpdateEndpointsBatchResponseTypeDef](./type_defs.md#updateendpointsbatchresponsetypedef).
 
 ### update_gcm_channel
 
@@ -2391,7 +2396,7 @@ Boto3 documentation:
 [Pinpoint.Client.update_gcm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_gcm_channel)
 
 Arguments mapping described in
-[UpdateGcmChannelRequestTypeDef](./type_defs.md#updategcmchannelrequesttypedef).
+[UpdateGcmChannelRequestRequestTypeDef](./type_defs.md#updategcmchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2401,7 +2406,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateGcmChannelResponseResponseTypeDef](./type_defs.md#updategcmchannelresponseresponsetypedef).
+[UpdateGcmChannelResponseTypeDef](./type_defs.md#updategcmchannelresponsetypedef).
 
 ### update_journey
 
@@ -2413,7 +2418,7 @@ Boto3 documentation:
 [Pinpoint.Client.update_journey](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_journey)
 
 Arguments mapping described in
-[UpdateJourneyRequestTypeDef](./type_defs.md#updatejourneyrequesttypedef).
+[UpdateJourneyRequestRequestTypeDef](./type_defs.md#updatejourneyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2424,7 +2429,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateJourneyResponseResponseTypeDef](./type_defs.md#updatejourneyresponseresponsetypedef).
+[UpdateJourneyResponseTypeDef](./type_defs.md#updatejourneyresponsetypedef).
 
 ### update_journey_state
 
@@ -2436,7 +2441,7 @@ Boto3 documentation:
 [Pinpoint.Client.update_journey_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_journey_state)
 
 Arguments mapping described in
-[UpdateJourneyStateRequestTypeDef](./type_defs.md#updatejourneystaterequesttypedef).
+[UpdateJourneyStateRequestRequestTypeDef](./type_defs.md#updatejourneystaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2447,7 +2452,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateJourneyStateResponseResponseTypeDef](./type_defs.md#updatejourneystateresponseresponsetypedef).
+[UpdateJourneyStateResponseTypeDef](./type_defs.md#updatejourneystateresponsetypedef).
 
 ### update_push_template
 
@@ -2460,7 +2465,7 @@ Boto3 documentation:
 [Pinpoint.Client.update_push_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_push_template)
 
 Arguments mapping described in
-[UpdatePushTemplateRequestTypeDef](./type_defs.md#updatepushtemplaterequesttypedef).
+[UpdatePushTemplateRequestRequestTypeDef](./type_defs.md#updatepushtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2472,7 +2477,7 @@ Keyword-only arguments:
 - `Version`: `str`
 
 Returns
-[UpdatePushTemplateResponseResponseTypeDef](./type_defs.md#updatepushtemplateresponseresponsetypedef).
+[UpdatePushTemplateResponseTypeDef](./type_defs.md#updatepushtemplateresponsetypedef).
 
 ### update_recommender_configuration
 
@@ -2485,7 +2490,7 @@ Boto3 documentation:
 [Pinpoint.Client.update_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_recommender_configuration)
 
 Arguments mapping described in
-[UpdateRecommenderConfigurationRequestTypeDef](./type_defs.md#updaterecommenderconfigurationrequesttypedef).
+[UpdateRecommenderConfigurationRequestRequestTypeDef](./type_defs.md#updaterecommenderconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2495,7 +2500,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateRecommenderConfigurationResponseResponseTypeDef](./type_defs.md#updaterecommenderconfigurationresponseresponsetypedef).
+[UpdateRecommenderConfigurationResponseTypeDef](./type_defs.md#updaterecommenderconfigurationresponsetypedef).
 
 ### update_segment
 
@@ -2509,7 +2514,7 @@ Boto3 documentation:
 [Pinpoint.Client.update_segment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_segment)
 
 Arguments mapping described in
-[UpdateSegmentRequestTypeDef](./type_defs.md#updatesegmentrequesttypedef).
+[UpdateSegmentRequestRequestTypeDef](./type_defs.md#updatesegmentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2520,7 +2525,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateSegmentResponseResponseTypeDef](./type_defs.md#updatesegmentresponseresponsetypedef).
+[UpdateSegmentResponseTypeDef](./type_defs.md#updatesegmentresponsetypedef).
 
 ### update_sms_channel
 
@@ -2533,7 +2538,7 @@ Boto3 documentation:
 [Pinpoint.Client.update_sms_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_sms_channel)
 
 Arguments mapping described in
-[UpdateSmsChannelRequestTypeDef](./type_defs.md#updatesmschannelrequesttypedef).
+[UpdateSmsChannelRequestRequestTypeDef](./type_defs.md#updatesmschannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2543,7 +2548,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateSmsChannelResponseResponseTypeDef](./type_defs.md#updatesmschannelresponseresponsetypedef).
+[UpdateSmsChannelResponseTypeDef](./type_defs.md#updatesmschannelresponsetypedef).
 
 ### update_sms_template
 
@@ -2556,7 +2561,7 @@ Boto3 documentation:
 [Pinpoint.Client.update_sms_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_sms_template)
 
 Arguments mapping described in
-[UpdateSmsTemplateRequestTypeDef](./type_defs.md#updatesmstemplaterequesttypedef).
+[UpdateSmsTemplateRequestRequestTypeDef](./type_defs.md#updatesmstemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2568,7 +2573,7 @@ Keyword-only arguments:
 - `Version`: `str`
 
 Returns
-[UpdateSmsTemplateResponseResponseTypeDef](./type_defs.md#updatesmstemplateresponseresponsetypedef).
+[UpdateSmsTemplateResponseTypeDef](./type_defs.md#updatesmstemplateresponsetypedef).
 
 ### update_template_active_version
 
@@ -2581,7 +2586,7 @@ Boto3 documentation:
 [Pinpoint.Client.update_template_active_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_template_active_version)
 
 Arguments mapping described in
-[UpdateTemplateActiveVersionRequestTypeDef](./type_defs.md#updatetemplateactiveversionrequesttypedef).
+[UpdateTemplateActiveVersionRequestRequestTypeDef](./type_defs.md#updatetemplateactiveversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2592,7 +2597,7 @@ Keyword-only arguments:
 - `TemplateType`: `str` *(required)*
 
 Returns
-[UpdateTemplateActiveVersionResponseResponseTypeDef](./type_defs.md#updatetemplateactiveversionresponseresponsetypedef).
+[UpdateTemplateActiveVersionResponseTypeDef](./type_defs.md#updatetemplateactiveversionresponsetypedef).
 
 ### update_voice_channel
 
@@ -2605,7 +2610,7 @@ Boto3 documentation:
 [Pinpoint.Client.update_voice_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_voice_channel)
 
 Arguments mapping described in
-[UpdateVoiceChannelRequestTypeDef](./type_defs.md#updatevoicechannelrequesttypedef).
+[UpdateVoiceChannelRequestRequestTypeDef](./type_defs.md#updatevoicechannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2615,7 +2620,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateVoiceChannelResponseResponseTypeDef](./type_defs.md#updatevoicechannelresponseresponsetypedef).
+[UpdateVoiceChannelResponseTypeDef](./type_defs.md#updatevoicechannelresponsetypedef).
 
 ### update_voice_template
 
@@ -2628,7 +2633,7 @@ Boto3 documentation:
 [Pinpoint.Client.update_voice_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_voice_template)
 
 Arguments mapping described in
-[UpdateVoiceTemplateRequestTypeDef](./type_defs.md#updatevoicetemplaterequesttypedef).
+[UpdateVoiceTemplateRequestRequestTypeDef](./type_defs.md#updatevoicetemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2640,4 +2645,4 @@ Keyword-only arguments:
 - `Version`: `str`
 
 Returns
-[UpdateVoiceTemplateResponseResponseTypeDef](./type_defs.md#updatevoicetemplateresponseresponsetypedef).
+[UpdateVoiceTemplateResponseTypeDef](./type_defs.md#updatevoicetemplateresponsetypedef).

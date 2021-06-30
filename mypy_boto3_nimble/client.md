@@ -11,6 +11,7 @@ type annotations stubs module
   - [NimbleStudioClient](#nimblestudioclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [accept_eulas](#accept_eulas)
     - [can_paginate](#can_paginate)
     - [create_launch_profile](#create_launch_profile)
@@ -101,6 +102,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+NimbleStudioClient exceptions.
+
+Type annotations for `boto3.client("nimble").exceptions` method.
+
+Boto3 documentation:
+[NimbleStudio.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### accept_eulas
 
 Accept EULAs.
@@ -111,7 +123,7 @@ Boto3 documentation:
 [NimbleStudio.Client.accept_eulas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.accept_eulas)
 
 Arguments mapping described in
-[AcceptEulasRequestTypeDef](./type_defs.md#accepteulasrequesttypedef).
+[AcceptEulasRequestRequestTypeDef](./type_defs.md#accepteulasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -120,7 +132,7 @@ Keyword-only arguments:
 - `eulaIds`: `List`\[`str`\]
 
 Returns
-[AcceptEulasResponseResponseTypeDef](./type_defs.md#accepteulasresponseresponsetypedef).
+[AcceptEulasResponseTypeDef](./type_defs.md#accepteulasresponsetypedef).
 
 ### can_paginate
 
@@ -147,7 +159,7 @@ Boto3 documentation:
 [NimbleStudio.Client.create_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_launch_profile)
 
 Arguments mapping described in
-[CreateLaunchProfileRequestTypeDef](./type_defs.md#createlaunchprofilerequesttypedef).
+[CreateLaunchProfileRequestRequestTypeDef](./type_defs.md#createlaunchprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -164,7 +176,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateLaunchProfileResponseResponseTypeDef](./type_defs.md#createlaunchprofileresponseresponsetypedef).
+[CreateLaunchProfileResponseTypeDef](./type_defs.md#createlaunchprofileresponsetypedef).
 
 ### create_streaming_image
 
@@ -176,7 +188,7 @@ Boto3 documentation:
 [NimbleStudio.Client.create_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_image)
 
 Arguments mapping described in
-[CreateStreamingImageRequestTypeDef](./type_defs.md#createstreamingimagerequesttypedef).
+[CreateStreamingImageRequestRequestTypeDef](./type_defs.md#createstreamingimagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -188,7 +200,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateStreamingImageResponseResponseTypeDef](./type_defs.md#createstreamingimageresponseresponsetypedef).
+[CreateStreamingImageResponseTypeDef](./type_defs.md#createstreamingimageresponsetypedef).
 
 ### create_streaming_session
 
@@ -200,7 +212,7 @@ Boto3 documentation:
 [NimbleStudio.Client.create_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_session)
 
 Arguments mapping described in
-[CreateStreamingSessionRequestTypeDef](./type_defs.md#createstreamingsessionrequesttypedef).
+[CreateStreamingSessionRequestRequestTypeDef](./type_defs.md#createstreamingsessionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -213,7 +225,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateStreamingSessionResponseResponseTypeDef](./type_defs.md#createstreamingsessionresponseresponsetypedef).
+[CreateStreamingSessionResponseTypeDef](./type_defs.md#createstreamingsessionresponsetypedef).
 
 ### create_streaming_session_stream
 
@@ -226,7 +238,7 @@ Boto3 documentation:
 [NimbleStudio.Client.create_streaming_session_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_session_stream)
 
 Arguments mapping described in
-[CreateStreamingSessionStreamRequestTypeDef](./type_defs.md#createstreamingsessionstreamrequesttypedef).
+[CreateStreamingSessionStreamRequestRequestTypeDef](./type_defs.md#createstreamingsessionstreamrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -236,7 +248,7 @@ Keyword-only arguments:
 - `expirationInSeconds`: `int`
 
 Returns
-[CreateStreamingSessionStreamResponseResponseTypeDef](./type_defs.md#createstreamingsessionstreamresponseresponsetypedef).
+[CreateStreamingSessionStreamResponseTypeDef](./type_defs.md#createstreamingsessionstreamresponsetypedef).
 
 ### create_studio
 
@@ -248,7 +260,7 @@ Boto3 documentation:
 [NimbleStudio.Client.create_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_studio)
 
 Arguments mapping described in
-[CreateStudioRequestTypeDef](./type_defs.md#createstudiorequesttypedef).
+[CreateStudioRequestRequestTypeDef](./type_defs.md#createstudiorequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -262,7 +274,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateStudioResponseResponseTypeDef](./type_defs.md#createstudioresponseresponsetypedef).
+[CreateStudioResponseTypeDef](./type_defs.md#createstudioresponsetypedef).
 
 ### create_studio_component
 
@@ -274,7 +286,7 @@ Boto3 documentation:
 [NimbleStudio.Client.create_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_studio_component)
 
 Arguments mapping described in
-[CreateStudioComponentRequestTypeDef](./type_defs.md#createstudiocomponentrequesttypedef).
+[CreateStudioComponentRequestRequestTypeDef](./type_defs.md#createstudiocomponentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -296,7 +308,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateStudioComponentResponseResponseTypeDef](./type_defs.md#createstudiocomponentresponseresponsetypedef).
+[CreateStudioComponentResponseTypeDef](./type_defs.md#createstudiocomponentresponsetypedef).
 
 ### delete_launch_profile
 
@@ -308,7 +320,7 @@ Boto3 documentation:
 [NimbleStudio.Client.delete_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_launch_profile)
 
 Arguments mapping described in
-[DeleteLaunchProfileRequestTypeDef](./type_defs.md#deletelaunchprofilerequesttypedef).
+[DeleteLaunchProfileRequestRequestTypeDef](./type_defs.md#deletelaunchprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -317,7 +329,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[DeleteLaunchProfileResponseResponseTypeDef](./type_defs.md#deletelaunchprofileresponseresponsetypedef).
+[DeleteLaunchProfileResponseTypeDef](./type_defs.md#deletelaunchprofileresponsetypedef).
 
 ### delete_launch_profile_member
 
@@ -330,7 +342,7 @@ Boto3 documentation:
 [NimbleStudio.Client.delete_launch_profile_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_launch_profile_member)
 
 Arguments mapping described in
-[DeleteLaunchProfileMemberRequestTypeDef](./type_defs.md#deletelaunchprofilememberrequesttypedef).
+[DeleteLaunchProfileMemberRequestRequestTypeDef](./type_defs.md#deletelaunchprofilememberrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -351,7 +363,7 @@ Boto3 documentation:
 [NimbleStudio.Client.delete_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_streaming_image)
 
 Arguments mapping described in
-[DeleteStreamingImageRequestTypeDef](./type_defs.md#deletestreamingimagerequesttypedef).
+[DeleteStreamingImageRequestRequestTypeDef](./type_defs.md#deletestreamingimagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -360,7 +372,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[DeleteStreamingImageResponseResponseTypeDef](./type_defs.md#deletestreamingimageresponseresponsetypedef).
+[DeleteStreamingImageResponseTypeDef](./type_defs.md#deletestreamingimageresponsetypedef).
 
 ### delete_streaming_session
 
@@ -372,7 +384,7 @@ Boto3 documentation:
 [NimbleStudio.Client.delete_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_streaming_session)
 
 Arguments mapping described in
-[DeleteStreamingSessionRequestTypeDef](./type_defs.md#deletestreamingsessionrequesttypedef).
+[DeleteStreamingSessionRequestRequestTypeDef](./type_defs.md#deletestreamingsessionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -381,7 +393,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[DeleteStreamingSessionResponseResponseTypeDef](./type_defs.md#deletestreamingsessionresponseresponsetypedef).
+[DeleteStreamingSessionResponseTypeDef](./type_defs.md#deletestreamingsessionresponsetypedef).
 
 ### delete_studio
 
@@ -393,7 +405,7 @@ Boto3 documentation:
 [NimbleStudio.Client.delete_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio)
 
 Arguments mapping described in
-[DeleteStudioRequestTypeDef](./type_defs.md#deletestudiorequesttypedef).
+[DeleteStudioRequestRequestTypeDef](./type_defs.md#deletestudiorequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -401,7 +413,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[DeleteStudioResponseResponseTypeDef](./type_defs.md#deletestudioresponseresponsetypedef).
+[DeleteStudioResponseTypeDef](./type_defs.md#deletestudioresponsetypedef).
 
 ### delete_studio_component
 
@@ -413,7 +425,7 @@ Boto3 documentation:
 [NimbleStudio.Client.delete_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio_component)
 
 Arguments mapping described in
-[DeleteStudioComponentRequestTypeDef](./type_defs.md#deletestudiocomponentrequesttypedef).
+[DeleteStudioComponentRequestRequestTypeDef](./type_defs.md#deletestudiocomponentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -422,7 +434,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[DeleteStudioComponentResponseResponseTypeDef](./type_defs.md#deletestudiocomponentresponseresponsetypedef).
+[DeleteStudioComponentResponseTypeDef](./type_defs.md#deletestudiocomponentresponsetypedef).
 
 ### delete_studio_member
 
@@ -434,7 +446,7 @@ Boto3 documentation:
 [NimbleStudio.Client.delete_studio_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio_member)
 
 Arguments mapping described in
-[DeleteStudioMemberRequestTypeDef](./type_defs.md#deletestudiomemberrequesttypedef).
+[DeleteStudioMemberRequestRequestTypeDef](./type_defs.md#deletestudiomemberrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -472,14 +484,13 @@ Boto3 documentation:
 [NimbleStudio.Client.get_eula](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_eula)
 
 Arguments mapping described in
-[GetEulaRequestTypeDef](./type_defs.md#geteularequesttypedef).
+[GetEulaRequestRequestTypeDef](./type_defs.md#geteularequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `eulaId`: `str` *(required)*
 
-Returns
-[GetEulaResponseResponseTypeDef](./type_defs.md#geteularesponseresponsetypedef).
+Returns [GetEulaResponseTypeDef](./type_defs.md#geteularesponsetypedef).
 
 ### get_launch_profile
 
@@ -491,7 +502,7 @@ Boto3 documentation:
 [NimbleStudio.Client.get_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile)
 
 Arguments mapping described in
-[GetLaunchProfileRequestTypeDef](./type_defs.md#getlaunchprofilerequesttypedef).
+[GetLaunchProfileRequestRequestTypeDef](./type_defs.md#getlaunchprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -499,7 +510,7 @@ Keyword-only arguments:
 - `studioId`: `str` *(required)*
 
 Returns
-[GetLaunchProfileResponseResponseTypeDef](./type_defs.md#getlaunchprofileresponseresponsetypedef).
+[GetLaunchProfileResponseTypeDef](./type_defs.md#getlaunchprofileresponsetypedef).
 
 ### get_launch_profile_details
 
@@ -513,7 +524,7 @@ Boto3 documentation:
 [NimbleStudio.Client.get_launch_profile_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_details)
 
 Arguments mapping described in
-[GetLaunchProfileDetailsRequestTypeDef](./type_defs.md#getlaunchprofiledetailsrequesttypedef).
+[GetLaunchProfileDetailsRequestRequestTypeDef](./type_defs.md#getlaunchprofiledetailsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -521,7 +532,7 @@ Keyword-only arguments:
 - `studioId`: `str` *(required)*
 
 Returns
-[GetLaunchProfileDetailsResponseResponseTypeDef](./type_defs.md#getlaunchprofiledetailsresponseresponsetypedef).
+[GetLaunchProfileDetailsResponseTypeDef](./type_defs.md#getlaunchprofiledetailsresponsetypedef).
 
 ### get_launch_profile_initialization
 
@@ -534,7 +545,7 @@ Boto3 documentation:
 [NimbleStudio.Client.get_launch_profile_initialization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_initialization)
 
 Arguments mapping described in
-[GetLaunchProfileInitializationRequestTypeDef](./type_defs.md#getlaunchprofileinitializationrequesttypedef).
+[GetLaunchProfileInitializationRequestRequestTypeDef](./type_defs.md#getlaunchprofileinitializationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -545,7 +556,7 @@ Keyword-only arguments:
 - `studioId`: `str` *(required)*
 
 Returns
-[GetLaunchProfileInitializationResponseResponseTypeDef](./type_defs.md#getlaunchprofileinitializationresponseresponsetypedef).
+[GetLaunchProfileInitializationResponseTypeDef](./type_defs.md#getlaunchprofileinitializationresponsetypedef).
 
 ### get_launch_profile_member
 
@@ -557,7 +568,7 @@ Boto3 documentation:
 [NimbleStudio.Client.get_launch_profile_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_member)
 
 Arguments mapping described in
-[GetLaunchProfileMemberRequestTypeDef](./type_defs.md#getlaunchprofilememberrequesttypedef).
+[GetLaunchProfileMemberRequestRequestTypeDef](./type_defs.md#getlaunchprofilememberrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -566,7 +577,7 @@ Keyword-only arguments:
 - `studioId`: `str` *(required)*
 
 Returns
-[GetLaunchProfileMemberResponseResponseTypeDef](./type_defs.md#getlaunchprofilememberresponseresponsetypedef).
+[GetLaunchProfileMemberResponseTypeDef](./type_defs.md#getlaunchprofilememberresponsetypedef).
 
 ### get_streaming_image
 
@@ -578,7 +589,7 @@ Boto3 documentation:
 [NimbleStudio.Client.get_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_image)
 
 Arguments mapping described in
-[GetStreamingImageRequestTypeDef](./type_defs.md#getstreamingimagerequesttypedef).
+[GetStreamingImageRequestRequestTypeDef](./type_defs.md#getstreamingimagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -586,7 +597,7 @@ Keyword-only arguments:
 - `studioId`: `str` *(required)*
 
 Returns
-[GetStreamingImageResponseResponseTypeDef](./type_defs.md#getstreamingimageresponseresponsetypedef).
+[GetStreamingImageResponseTypeDef](./type_defs.md#getstreamingimageresponsetypedef).
 
 ### get_streaming_session
 
@@ -598,7 +609,7 @@ Boto3 documentation:
 [NimbleStudio.Client.get_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_session)
 
 Arguments mapping described in
-[GetStreamingSessionRequestTypeDef](./type_defs.md#getstreamingsessionrequesttypedef).
+[GetStreamingSessionRequestRequestTypeDef](./type_defs.md#getstreamingsessionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -606,7 +617,7 @@ Keyword-only arguments:
 - `studioId`: `str` *(required)*
 
 Returns
-[GetStreamingSessionResponseResponseTypeDef](./type_defs.md#getstreamingsessionresponseresponsetypedef).
+[GetStreamingSessionResponseTypeDef](./type_defs.md#getstreamingsessionresponsetypedef).
 
 ### get_streaming_session_stream
 
@@ -619,7 +630,7 @@ Boto3 documentation:
 [NimbleStudio.Client.get_streaming_session_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_session_stream)
 
 Arguments mapping described in
-[GetStreamingSessionStreamRequestTypeDef](./type_defs.md#getstreamingsessionstreamrequesttypedef).
+[GetStreamingSessionStreamRequestRequestTypeDef](./type_defs.md#getstreamingsessionstreamrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -628,7 +639,7 @@ Keyword-only arguments:
 - `studioId`: `str` *(required)*
 
 Returns
-[GetStreamingSessionStreamResponseResponseTypeDef](./type_defs.md#getstreamingsessionstreamresponseresponsetypedef).
+[GetStreamingSessionStreamResponseTypeDef](./type_defs.md#getstreamingsessionstreamresponsetypedef).
 
 ### get_studio
 
@@ -640,14 +651,13 @@ Boto3 documentation:
 [NimbleStudio.Client.get_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio)
 
 Arguments mapping described in
-[GetStudioRequestTypeDef](./type_defs.md#getstudiorequesttypedef).
+[GetStudioRequestRequestTypeDef](./type_defs.md#getstudiorequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `studioId`: `str` *(required)*
 
-Returns
-[GetStudioResponseResponseTypeDef](./type_defs.md#getstudioresponseresponsetypedef).
+Returns [GetStudioResponseTypeDef](./type_defs.md#getstudioresponsetypedef).
 
 ### get_studio_component
 
@@ -659,7 +669,7 @@ Boto3 documentation:
 [NimbleStudio.Client.get_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio_component)
 
 Arguments mapping described in
-[GetStudioComponentRequestTypeDef](./type_defs.md#getstudiocomponentrequesttypedef).
+[GetStudioComponentRequestRequestTypeDef](./type_defs.md#getstudiocomponentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -667,7 +677,7 @@ Keyword-only arguments:
 - `studioId`: `str` *(required)*
 
 Returns
-[GetStudioComponentResponseResponseTypeDef](./type_defs.md#getstudiocomponentresponseresponsetypedef).
+[GetStudioComponentResponseTypeDef](./type_defs.md#getstudiocomponentresponsetypedef).
 
 ### get_studio_member
 
@@ -679,7 +689,7 @@ Boto3 documentation:
 [NimbleStudio.Client.get_studio_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio_member)
 
 Arguments mapping described in
-[GetStudioMemberRequestTypeDef](./type_defs.md#getstudiomemberrequesttypedef).
+[GetStudioMemberRequestRequestTypeDef](./type_defs.md#getstudiomemberrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -687,7 +697,7 @@ Keyword-only arguments:
 - `studioId`: `str` *(required)*
 
 Returns
-[GetStudioMemberResponseResponseTypeDef](./type_defs.md#getstudiomemberresponseresponsetypedef).
+[GetStudioMemberResponseTypeDef](./type_defs.md#getstudiomemberresponsetypedef).
 
 ### list_eula_acceptances
 
@@ -699,7 +709,7 @@ Boto3 documentation:
 [NimbleStudio.Client.list_eula_acceptances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_eula_acceptances)
 
 Arguments mapping described in
-[ListEulaAcceptancesRequestTypeDef](./type_defs.md#listeulaacceptancesrequesttypedef).
+[ListEulaAcceptancesRequestRequestTypeDef](./type_defs.md#listeulaacceptancesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -708,7 +718,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListEulaAcceptancesResponseResponseTypeDef](./type_defs.md#listeulaacceptancesresponseresponsetypedef).
+[ListEulaAcceptancesResponseTypeDef](./type_defs.md#listeulaacceptancesresponsetypedef).
 
 ### list_eulas
 
@@ -720,15 +730,14 @@ Boto3 documentation:
 [NimbleStudio.Client.list_eulas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_eulas)
 
 Arguments mapping described in
-[ListEulasRequestTypeDef](./type_defs.md#listeulasrequesttypedef).
+[ListEulasRequestRequestTypeDef](./type_defs.md#listeulasrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `eulaIds`: `List`\[`str`\]
 - `nextToken`: `str`
 
-Returns
-[ListEulasResponseResponseTypeDef](./type_defs.md#listeulasresponseresponsetypedef).
+Returns [ListEulasResponseTypeDef](./type_defs.md#listeulasresponsetypedef).
 
 ### list_launch_profile_members
 
@@ -741,7 +750,7 @@ Boto3 documentation:
 [NimbleStudio.Client.list_launch_profile_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_launch_profile_members)
 
 Arguments mapping described in
-[ListLaunchProfileMembersRequestTypeDef](./type_defs.md#listlaunchprofilemembersrequesttypedef).
+[ListLaunchProfileMembersRequestRequestTypeDef](./type_defs.md#listlaunchprofilemembersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -751,7 +760,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListLaunchProfileMembersResponseResponseTypeDef](./type_defs.md#listlaunchprofilemembersresponseresponsetypedef).
+[ListLaunchProfileMembersResponseTypeDef](./type_defs.md#listlaunchprofilemembersresponsetypedef).
 
 ### list_launch_profiles
 
@@ -763,7 +772,7 @@ Boto3 documentation:
 [NimbleStudio.Client.list_launch_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_launch_profiles)
 
 Arguments mapping described in
-[ListLaunchProfilesRequestTypeDef](./type_defs.md#listlaunchprofilesrequesttypedef).
+[ListLaunchProfilesRequestRequestTypeDef](./type_defs.md#listlaunchprofilesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -774,7 +783,7 @@ Keyword-only arguments:
 - `states`: `List`\[`str`\]
 
 Returns
-[ListLaunchProfilesResponseResponseTypeDef](./type_defs.md#listlaunchprofilesresponseresponsetypedef).
+[ListLaunchProfilesResponseTypeDef](./type_defs.md#listlaunchprofilesresponsetypedef).
 
 ### list_streaming_images
 
@@ -786,7 +795,7 @@ Boto3 documentation:
 [NimbleStudio.Client.list_streaming_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_streaming_images)
 
 Arguments mapping described in
-[ListStreamingImagesRequestTypeDef](./type_defs.md#liststreamingimagesrequesttypedef).
+[ListStreamingImagesRequestRequestTypeDef](./type_defs.md#liststreamingimagesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -795,7 +804,7 @@ Keyword-only arguments:
 - `owner`: `str`
 
 Returns
-[ListStreamingImagesResponseResponseTypeDef](./type_defs.md#liststreamingimagesresponseresponsetypedef).
+[ListStreamingImagesResponseTypeDef](./type_defs.md#liststreamingimagesresponsetypedef).
 
 ### list_streaming_sessions
 
@@ -807,7 +816,7 @@ Boto3 documentation:
 [NimbleStudio.Client.list_streaming_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_streaming_sessions)
 
 Arguments mapping described in
-[ListStreamingSessionsRequestTypeDef](./type_defs.md#liststreamingsessionsrequesttypedef).
+[ListStreamingSessionsRequestRequestTypeDef](./type_defs.md#liststreamingsessionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -817,7 +826,7 @@ Keyword-only arguments:
 - `sessionIds`: `str`
 
 Returns
-[ListStreamingSessionsResponseResponseTypeDef](./type_defs.md#liststreamingsessionsresponseresponsetypedef).
+[ListStreamingSessionsResponseTypeDef](./type_defs.md#liststreamingsessionsresponsetypedef).
 
 ### list_studio_components
 
@@ -829,7 +838,7 @@ Boto3 documentation:
 [NimbleStudio.Client.list_studio_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studio_components)
 
 Arguments mapping described in
-[ListStudioComponentsRequestTypeDef](./type_defs.md#liststudiocomponentsrequesttypedef).
+[ListStudioComponentsRequestRequestTypeDef](./type_defs.md#liststudiocomponentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -840,7 +849,7 @@ Keyword-only arguments:
 - `types`: `List`\[`str`\]
 
 Returns
-[ListStudioComponentsResponseResponseTypeDef](./type_defs.md#liststudiocomponentsresponseresponsetypedef).
+[ListStudioComponentsResponseTypeDef](./type_defs.md#liststudiocomponentsresponsetypedef).
 
 ### list_studio_members
 
@@ -852,7 +861,7 @@ Boto3 documentation:
 [NimbleStudio.Client.list_studio_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studio_members)
 
 Arguments mapping described in
-[ListStudioMembersRequestTypeDef](./type_defs.md#liststudiomembersrequesttypedef).
+[ListStudioMembersRequestRequestTypeDef](./type_defs.md#liststudiomembersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -861,7 +870,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListStudioMembersResponseResponseTypeDef](./type_defs.md#liststudiomembersresponseresponsetypedef).
+[ListStudioMembersResponseTypeDef](./type_defs.md#liststudiomembersresponsetypedef).
 
 ### list_studios
 
@@ -873,14 +882,14 @@ Boto3 documentation:
 [NimbleStudio.Client.list_studios](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studios)
 
 Arguments mapping described in
-[ListStudiosRequestTypeDef](./type_defs.md#liststudiosrequesttypedef).
+[ListStudiosRequestRequestTypeDef](./type_defs.md#liststudiosrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `nextToken`: `str`
 
 Returns
-[ListStudiosResponseResponseTypeDef](./type_defs.md#liststudiosresponseresponsetypedef).
+[ListStudiosResponseTypeDef](./type_defs.md#liststudiosresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -892,14 +901,14 @@ Boto3 documentation:
 [NimbleStudio.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_launch_profile_members
 
@@ -912,7 +921,7 @@ Boto3 documentation:
 [NimbleStudio.Client.put_launch_profile_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.put_launch_profile_members)
 
 Arguments mapping described in
-[PutLaunchProfileMembersRequestTypeDef](./type_defs.md#putlaunchprofilemembersrequesttypedef).
+[PutLaunchProfileMembersRequestRequestTypeDef](./type_defs.md#putlaunchprofilemembersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -936,7 +945,7 @@ Boto3 documentation:
 [NimbleStudio.Client.put_studio_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.put_studio_members)
 
 Arguments mapping described in
-[PutStudioMembersRequestTypeDef](./type_defs.md#putstudiomembersrequesttypedef).
+[PutStudioMembersRequestRequestTypeDef](./type_defs.md#putstudiomembersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -960,7 +969,7 @@ Boto3 documentation:
 [NimbleStudio.Client.start_studio_sso_configuration_repair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.start_studio_sso_configuration_repair)
 
 Arguments mapping described in
-[StartStudioSSOConfigurationRepairRequestTypeDef](./type_defs.md#startstudiossoconfigurationrepairrequesttypedef).
+[StartStudioSSOConfigurationRepairRequestRequestTypeDef](./type_defs.md#startstudiossoconfigurationrepairrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -968,7 +977,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[StartStudioSSOConfigurationRepairResponseResponseTypeDef](./type_defs.md#startstudiossoconfigurationrepairresponseresponsetypedef).
+[StartStudioSSOConfigurationRepairResponseTypeDef](./type_defs.md#startstudiossoconfigurationrepairresponsetypedef).
 
 ### tag_resource
 
@@ -980,7 +989,7 @@ Boto3 documentation:
 [NimbleStudio.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -999,7 +1008,7 @@ Boto3 documentation:
 [NimbleStudio.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1018,7 +1027,7 @@ Boto3 documentation:
 [NimbleStudio.Client.update_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_launch_profile)
 
 Arguments mapping described in
-[UpdateLaunchProfileRequestTypeDef](./type_defs.md#updatelaunchprofilerequesttypedef).
+[UpdateLaunchProfileRequestRequestTypeDef](./type_defs.md#updatelaunchprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1033,7 +1042,7 @@ Keyword-only arguments:
 - `studioComponentIds`: `List`\[`str`\]
 
 Returns
-[UpdateLaunchProfileResponseResponseTypeDef](./type_defs.md#updatelaunchprofileresponseresponsetypedef).
+[UpdateLaunchProfileResponseTypeDef](./type_defs.md#updatelaunchprofileresponsetypedef).
 
 ### update_launch_profile_member
 
@@ -1046,7 +1055,7 @@ Boto3 documentation:
 [NimbleStudio.Client.update_launch_profile_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_launch_profile_member)
 
 Arguments mapping described in
-[UpdateLaunchProfileMemberRequestTypeDef](./type_defs.md#updatelaunchprofilememberrequesttypedef).
+[UpdateLaunchProfileMemberRequestRequestTypeDef](./type_defs.md#updatelaunchprofilememberrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1059,7 +1068,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[UpdateLaunchProfileMemberResponseResponseTypeDef](./type_defs.md#updatelaunchprofilememberresponseresponsetypedef).
+[UpdateLaunchProfileMemberResponseTypeDef](./type_defs.md#updatelaunchprofilememberresponsetypedef).
 
 ### update_streaming_image
 
@@ -1071,7 +1080,7 @@ Boto3 documentation:
 [NimbleStudio.Client.update_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_streaming_image)
 
 Arguments mapping described in
-[UpdateStreamingImageRequestTypeDef](./type_defs.md#updatestreamingimagerequesttypedef).
+[UpdateStreamingImageRequestRequestTypeDef](./type_defs.md#updatestreamingimagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1082,7 +1091,7 @@ Keyword-only arguments:
 - `name`: `str`
 
 Returns
-[UpdateStreamingImageResponseResponseTypeDef](./type_defs.md#updatestreamingimageresponseresponsetypedef).
+[UpdateStreamingImageResponseTypeDef](./type_defs.md#updatestreamingimageresponsetypedef).
 
 ### update_studio
 
@@ -1094,7 +1103,7 @@ Boto3 documentation:
 [NimbleStudio.Client.update_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_studio)
 
 Arguments mapping described in
-[UpdateStudioRequestTypeDef](./type_defs.md#updatestudiorequesttypedef).
+[UpdateStudioRequestRequestTypeDef](./type_defs.md#updatestudiorequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1105,7 +1114,7 @@ Keyword-only arguments:
 - `userRoleArn`: `str`
 
 Returns
-[UpdateStudioResponseResponseTypeDef](./type_defs.md#updatestudioresponseresponsetypedef).
+[UpdateStudioResponseTypeDef](./type_defs.md#updatestudioresponsetypedef).
 
 ### update_studio_component
 
@@ -1117,7 +1126,7 @@ Boto3 documentation:
 [NimbleStudio.Client.update_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_studio_component)
 
 Arguments mapping described in
-[UpdateStudioComponentRequestTypeDef](./type_defs.md#updatestudiocomponentrequesttypedef).
+[UpdateStudioComponentRequestRequestTypeDef](./type_defs.md#updatestudiocomponentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1138,7 +1147,7 @@ Keyword-only arguments:
 - `type`: [StudioComponentTypeType](./literals.md#studiocomponenttypetype)
 
 Returns
-[UpdateStudioComponentResponseResponseTypeDef](./type_defs.md#updatestudiocomponentresponseresponsetypedef).
+[UpdateStudioComponentResponseTypeDef](./type_defs.md#updatestudiocomponentresponsetypedef).
 
 ### get_paginator
 

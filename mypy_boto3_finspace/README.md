@@ -34,6 +34,7 @@ from mypy_boto3_finspace.client import finspaceClient
 - [can_paginate](./client.md#can_paginate)
 - [create_environment](./client.md#create_environment)
 - [delete_environment](./client.md#delete_environment)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_environment](./client.md#get_environment)
 - [list_environments](./client.md#list_environments)
@@ -77,22 +78,22 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_finspace.type_defs import CreateEnvironmentRequestTypeDef, ...
+from mypy_boto3_finspace.type_defs import CreateEnvironmentRequestRequestTypeDef, ...
 ```
 
-- [CreateEnvironmentRequestTypeDef](./type_defs.md#createenvironmentrequesttypedef)
-- [CreateEnvironmentResponseResponseTypeDef](./type_defs.md#createenvironmentresponseresponsetypedef)
-- [DeleteEnvironmentRequestTypeDef](./type_defs.md#deleteenvironmentrequesttypedef)
+- [CreateEnvironmentRequestRequestTypeDef](./type_defs.md#createenvironmentrequestrequesttypedef)
+- [CreateEnvironmentResponseTypeDef](./type_defs.md#createenvironmentresponsetypedef)
+- [DeleteEnvironmentRequestRequestTypeDef](./type_defs.md#deleteenvironmentrequestrequesttypedef)
 - [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 - [FederationParametersTypeDef](./type_defs.md#federationparameterstypedef)
-- [GetEnvironmentRequestTypeDef](./type_defs.md#getenvironmentrequesttypedef)
-- [GetEnvironmentResponseResponseTypeDef](./type_defs.md#getenvironmentresponseresponsetypedef)
-- [ListEnvironmentsRequestTypeDef](./type_defs.md#listenvironmentsrequesttypedef)
-- [ListEnvironmentsResponseResponseTypeDef](./type_defs.md#listenvironmentsresponseresponsetypedef)
-- [ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef)
-- [ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef)
+- [GetEnvironmentRequestRequestTypeDef](./type_defs.md#getenvironmentrequestrequesttypedef)
+- [GetEnvironmentResponseTypeDef](./type_defs.md#getenvironmentresponsetypedef)
+- [ListEnvironmentsRequestRequestTypeDef](./type_defs.md#listenvironmentsrequestrequesttypedef)
+- [ListEnvironmentsResponseTypeDef](./type_defs.md#listenvironmentsresponsetypedef)
+- [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
+- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef)
-- [UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef)
-- [UpdateEnvironmentRequestTypeDef](./type_defs.md#updateenvironmentrequesttypedef)
-- [UpdateEnvironmentResponseResponseTypeDef](./type_defs.md#updateenvironmentresponseresponsetypedef)
+- [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
+- [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
+- [UpdateEnvironmentRequestRequestTypeDef](./type_defs.md#updateenvironmentrequestrequesttypedef)
+- [UpdateEnvironmentResponseTypeDef](./type_defs.md#updateenvironmentresponsetypedef)

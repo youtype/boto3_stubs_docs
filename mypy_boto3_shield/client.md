@@ -11,6 +11,7 @@ type annotations stubs module
   - [ShieldClient](#shieldclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_drt_log_bucket](#associate_drt_log_bucket)
     - [associate_drt_role](#associate_drt_role)
     - [associate_health_check](#associate_health_check)
@@ -95,6 +96,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ShieldClient exceptions.
+
+Type annotations for `boto3.client("shield").exceptions` method.
+
+Boto3 documentation:
+[Shield.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_drt_log_bucket
 
 Authorizes the DDoS Response Team (DRT) to access the specified Amazon S3
@@ -106,7 +118,7 @@ Boto3 documentation:
 [Shield.Client.associate_drt_log_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_drt_log_bucket)
 
 Arguments mapping described in
-[AssociateDRTLogBucketRequestTypeDef](./type_defs.md#associatedrtlogbucketrequesttypedef).
+[AssociateDRTLogBucketRequestRequestTypeDef](./type_defs.md#associatedrtlogbucketrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -126,7 +138,7 @@ Boto3 documentation:
 [Shield.Client.associate_drt_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_drt_role)
 
 Arguments mapping described in
-[AssociateDRTRoleRequestTypeDef](./type_defs.md#associatedrtrolerequesttypedef).
+[AssociateDRTRoleRequestRequestTypeDef](./type_defs.md#associatedrtrolerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -144,7 +156,7 @@ Boto3 documentation:
 [Shield.Client.associate_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_health_check)
 
 Arguments mapping described in
-[AssociateHealthCheckRequestTypeDef](./type_defs.md#associatehealthcheckrequesttypedef).
+[AssociateHealthCheckRequestRequestTypeDef](./type_defs.md#associatehealthcheckrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -165,7 +177,7 @@ Boto3 documentation:
 [Shield.Client.associate_proactive_engagement_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_proactive_engagement_details)
 
 Arguments mapping described in
-[AssociateProactiveEngagementDetailsRequestTypeDef](./type_defs.md#associateproactiveengagementdetailsrequesttypedef).
+[AssociateProactiveEngagementDetailsRequestRequestTypeDef](./type_defs.md#associateproactiveengagementdetailsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -200,7 +212,7 @@ Boto3 documentation:
 [Shield.Client.create_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.create_protection)
 
 Arguments mapping described in
-[CreateProtectionRequestTypeDef](./type_defs.md#createprotectionrequesttypedef).
+[CreateProtectionRequestRequestTypeDef](./type_defs.md#createprotectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -209,7 +221,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateProtectionResponseResponseTypeDef](./type_defs.md#createprotectionresponseresponsetypedef).
+[CreateProtectionResponseTypeDef](./type_defs.md#createprotectionresponsetypedef).
 
 ### create_protection_group
 
@@ -222,7 +234,7 @@ Boto3 documentation:
 [Shield.Client.create_protection_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.create_protection_group)
 
 Arguments mapping described in
-[CreateProtectionGroupRequestTypeDef](./type_defs.md#createprotectiongrouprequesttypedef).
+[CreateProtectionGroupRequestRequestTypeDef](./type_defs.md#createprotectiongrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -261,7 +273,7 @@ Boto3 documentation:
 [Shield.Client.delete_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.delete_protection)
 
 Arguments mapping described in
-[DeleteProtectionRequestTypeDef](./type_defs.md#deleteprotectionrequesttypedef).
+[DeleteProtectionRequestRequestTypeDef](./type_defs.md#deleteprotectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -279,7 +291,7 @@ Boto3 documentation:
 [Shield.Client.delete_protection_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.delete_protection_group)
 
 Arguments mapping described in
-[DeleteProtectionGroupRequestTypeDef](./type_defs.md#deleteprotectiongrouprequesttypedef).
+[DeleteProtectionGroupRequestRequestTypeDef](./type_defs.md#deleteprotectiongrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -308,14 +320,14 @@ Boto3 documentation:
 [Shield.Client.describe_attack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_attack)
 
 Arguments mapping described in
-[DescribeAttackRequestTypeDef](./type_defs.md#describeattackrequesttypedef).
+[DescribeAttackRequestRequestTypeDef](./type_defs.md#describeattackrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AttackId`: `str` *(required)*
 
 Returns
-[DescribeAttackResponseResponseTypeDef](./type_defs.md#describeattackresponseresponsetypedef).
+[DescribeAttackResponseTypeDef](./type_defs.md#describeattackresponsetypedef).
 
 ### describe_attack_statistics
 
@@ -330,7 +342,7 @@ Boto3 documentation:
 [Shield.Client.describe_attack_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_attack_statistics)
 
 Returns
-[DescribeAttackStatisticsResponseResponseTypeDef](./type_defs.md#describeattackstatisticsresponseresponsetypedef).
+[DescribeAttackStatisticsResponseTypeDef](./type_defs.md#describeattackstatisticsresponsetypedef).
 
 ### describe_drt_access
 
@@ -344,7 +356,7 @@ Boto3 documentation:
 [Shield.Client.describe_drt_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_drt_access)
 
 Returns
-[DescribeDRTAccessResponseResponseTypeDef](./type_defs.md#describedrtaccessresponseresponsetypedef).
+[DescribeDRTAccessResponseTypeDef](./type_defs.md#describedrtaccessresponsetypedef).
 
 ### describe_emergency_contact_settings
 
@@ -359,7 +371,7 @@ Boto3 documentation:
 [Shield.Client.describe_emergency_contact_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_emergency_contact_settings)
 
 Returns
-[DescribeEmergencyContactSettingsResponseResponseTypeDef](./type_defs.md#describeemergencycontactsettingsresponseresponsetypedef).
+[DescribeEmergencyContactSettingsResponseTypeDef](./type_defs.md#describeemergencycontactsettingsresponsetypedef).
 
 ### describe_protection
 
@@ -371,7 +383,7 @@ Boto3 documentation:
 [Shield.Client.describe_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_protection)
 
 Arguments mapping described in
-[DescribeProtectionRequestTypeDef](./type_defs.md#describeprotectionrequesttypedef).
+[DescribeProtectionRequestRequestTypeDef](./type_defs.md#describeprotectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -379,7 +391,7 @@ Keyword-only arguments:
 - `ResourceArn`: `str`
 
 Returns
-[DescribeProtectionResponseResponseTypeDef](./type_defs.md#describeprotectionresponseresponsetypedef).
+[DescribeProtectionResponseTypeDef](./type_defs.md#describeprotectionresponsetypedef).
 
 ### describe_protection_group
 
@@ -391,14 +403,14 @@ Boto3 documentation:
 [Shield.Client.describe_protection_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_protection_group)
 
 Arguments mapping described in
-[DescribeProtectionGroupRequestTypeDef](./type_defs.md#describeprotectiongrouprequesttypedef).
+[DescribeProtectionGroupRequestRequestTypeDef](./type_defs.md#describeprotectiongrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ProtectionGroupId`: `str` *(required)*
 
 Returns
-[DescribeProtectionGroupResponseResponseTypeDef](./type_defs.md#describeprotectiongroupresponseresponsetypedef).
+[DescribeProtectionGroupResponseTypeDef](./type_defs.md#describeprotectiongroupresponsetypedef).
 
 ### describe_subscription
 
@@ -410,7 +422,7 @@ Boto3 documentation:
 [Shield.Client.describe_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_subscription)
 
 Returns
-[DescribeSubscriptionResponseResponseTypeDef](./type_defs.md#describesubscriptionresponseresponsetypedef).
+[DescribeSubscriptionResponseTypeDef](./type_defs.md#describesubscriptionresponsetypedef).
 
 ### disable_proactive_engagement
 
@@ -437,7 +449,7 @@ Boto3 documentation:
 [Shield.Client.disassociate_drt_log_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disassociate_drt_log_bucket)
 
 Arguments mapping described in
-[DisassociateDRTLogBucketRequestTypeDef](./type_defs.md#disassociatedrtlogbucketrequesttypedef).
+[DisassociateDRTLogBucketRequestRequestTypeDef](./type_defs.md#disassociatedrtlogbucketrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -467,7 +479,7 @@ Boto3 documentation:
 [Shield.Client.disassociate_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disassociate_health_check)
 
 Arguments mapping described in
-[DisassociateHealthCheckRequestTypeDef](./type_defs.md#disassociatehealthcheckrequesttypedef).
+[DisassociateHealthCheckRequestRequestTypeDef](./type_defs.md#disassociatehealthcheckrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -518,7 +530,7 @@ Boto3 documentation:
 [Shield.Client.get_subscription_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.get_subscription_state)
 
 Returns
-[GetSubscriptionStateResponseResponseTypeDef](./type_defs.md#getsubscriptionstateresponseresponsetypedef).
+[GetSubscriptionStateResponseTypeDef](./type_defs.md#getsubscriptionstateresponsetypedef).
 
 ### list_attacks
 
@@ -531,7 +543,7 @@ Boto3 documentation:
 [Shield.Client.list_attacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_attacks)
 
 Arguments mapping described in
-[ListAttacksRequestTypeDef](./type_defs.md#listattacksrequesttypedef).
+[ListAttacksRequestRequestTypeDef](./type_defs.md#listattacksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -542,7 +554,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAttacksResponseResponseTypeDef](./type_defs.md#listattacksresponseresponsetypedef).
+[ListAttacksResponseTypeDef](./type_defs.md#listattacksresponsetypedef).
 
 ### list_protection_groups
 
@@ -554,7 +566,7 @@ Boto3 documentation:
 [Shield.Client.list_protection_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_protection_groups)
 
 Arguments mapping described in
-[ListProtectionGroupsRequestTypeDef](./type_defs.md#listprotectiongroupsrequesttypedef).
+[ListProtectionGroupsRequestRequestTypeDef](./type_defs.md#listprotectiongroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -562,7 +574,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListProtectionGroupsResponseResponseTypeDef](./type_defs.md#listprotectiongroupsresponseresponsetypedef).
+[ListProtectionGroupsResponseTypeDef](./type_defs.md#listprotectiongroupsresponsetypedef).
 
 ### list_protections
 
@@ -574,7 +586,7 @@ Boto3 documentation:
 [Shield.Client.list_protections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_protections)
 
 Arguments mapping described in
-[ListProtectionsRequestTypeDef](./type_defs.md#listprotectionsrequesttypedef).
+[ListProtectionsRequestRequestTypeDef](./type_defs.md#listprotectionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -582,7 +594,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListProtectionsResponseResponseTypeDef](./type_defs.md#listprotectionsresponseresponsetypedef).
+[ListProtectionsResponseTypeDef](./type_defs.md#listprotectionsresponsetypedef).
 
 ### list_resources_in_protection_group
 
@@ -595,7 +607,7 @@ Boto3 documentation:
 [Shield.Client.list_resources_in_protection_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_resources_in_protection_group)
 
 Arguments mapping described in
-[ListResourcesInProtectionGroupRequestTypeDef](./type_defs.md#listresourcesinprotectiongrouprequesttypedef).
+[ListResourcesInProtectionGroupRequestRequestTypeDef](./type_defs.md#listresourcesinprotectiongrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -604,7 +616,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListResourcesInProtectionGroupResponseResponseTypeDef](./type_defs.md#listresourcesinprotectiongroupresponseresponsetypedef).
+[ListResourcesInProtectionGroupResponseTypeDef](./type_defs.md#listresourcesinprotectiongroupresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -617,14 +629,14 @@ Boto3 documentation:
 [Shield.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -636,7 +648,7 @@ Boto3 documentation:
 [Shield.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -655,7 +667,7 @@ Boto3 documentation:
 [Shield.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -678,7 +690,7 @@ Boto3 documentation:
 [Shield.Client.update_emergency_contact_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.update_emergency_contact_settings)
 
 Arguments mapping described in
-[UpdateEmergencyContactSettingsRequestTypeDef](./type_defs.md#updateemergencycontactsettingsrequesttypedef).
+[UpdateEmergencyContactSettingsRequestRequestTypeDef](./type_defs.md#updateemergencycontactsettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -697,7 +709,7 @@ Boto3 documentation:
 [Shield.Client.update_protection_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.update_protection_group)
 
 Arguments mapping described in
-[UpdateProtectionGroupRequestTypeDef](./type_defs.md#updateprotectiongrouprequesttypedef).
+[UpdateProtectionGroupRequestRequestTypeDef](./type_defs.md#updateprotectiongrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -724,7 +736,7 @@ Boto3 documentation:
 [Shield.Client.update_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.update_subscription)
 
 Arguments mapping described in
-[UpdateSubscriptionRequestTypeDef](./type_defs.md#updatesubscriptionrequesttypedef).
+[UpdateSubscriptionRequestRequestTypeDef](./type_defs.md#updatesubscriptionrequestrequesttypedef).
 
 Keyword-only arguments:
 

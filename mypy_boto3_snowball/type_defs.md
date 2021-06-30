@@ -9,42 +9,42 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 Snowball module](#typed-dictionaries-for-boto3-snowball-module)
   - [AddressTypeDef](#addresstypedef)
-  - [CancelClusterRequestTypeDef](#cancelclusterrequesttypedef)
-  - [CancelJobRequestTypeDef](#canceljobrequesttypedef)
+  - [CancelClusterRequestRequestTypeDef](#cancelclusterrequestrequesttypedef)
+  - [CancelJobRequestRequestTypeDef](#canceljobrequestrequesttypedef)
   - [ClusterListEntryTypeDef](#clusterlistentrytypedef)
   - [ClusterMetadataTypeDef](#clustermetadatatypedef)
   - [CompatibleImageTypeDef](#compatibleimagetypedef)
-  - [CreateAddressRequestTypeDef](#createaddressrequesttypedef)
-  - [CreateAddressResultResponseTypeDef](#createaddressresultresponsetypedef)
-  - [CreateClusterRequestTypeDef](#createclusterrequesttypedef)
-  - [CreateClusterResultResponseTypeDef](#createclusterresultresponsetypedef)
-  - [CreateJobRequestTypeDef](#createjobrequesttypedef)
-  - [CreateJobResultResponseTypeDef](#createjobresultresponsetypedef)
-  - [CreateLongTermPricingRequestTypeDef](#createlongtermpricingrequesttypedef)
-  - [CreateLongTermPricingResultResponseTypeDef](#createlongtermpricingresultresponsetypedef)
-  - [CreateReturnShippingLabelRequestTypeDef](#createreturnshippinglabelrequesttypedef)
-  - [CreateReturnShippingLabelResultResponseTypeDef](#createreturnshippinglabelresultresponsetypedef)
+  - [CreateAddressRequestRequestTypeDef](#createaddressrequestrequesttypedef)
+  - [CreateAddressResultTypeDef](#createaddressresulttypedef)
+  - [CreateClusterRequestRequestTypeDef](#createclusterrequestrequesttypedef)
+  - [CreateClusterResultTypeDef](#createclusterresulttypedef)
+  - [CreateJobRequestRequestTypeDef](#createjobrequestrequesttypedef)
+  - [CreateJobResultTypeDef](#createjobresulttypedef)
+  - [CreateLongTermPricingRequestRequestTypeDef](#createlongtermpricingrequestrequesttypedef)
+  - [CreateLongTermPricingResultTypeDef](#createlongtermpricingresulttypedef)
+  - [CreateReturnShippingLabelRequestRequestTypeDef](#createreturnshippinglabelrequestrequesttypedef)
+  - [CreateReturnShippingLabelResultTypeDef](#createreturnshippinglabelresulttypedef)
   - [DataTransferTypeDef](#datatransfertypedef)
-  - [DescribeAddressRequestTypeDef](#describeaddressrequesttypedef)
-  - [DescribeAddressResultResponseTypeDef](#describeaddressresultresponsetypedef)
-  - [DescribeAddressesRequestTypeDef](#describeaddressesrequesttypedef)
-  - [DescribeAddressesResultResponseTypeDef](#describeaddressesresultresponsetypedef)
-  - [DescribeClusterRequestTypeDef](#describeclusterrequesttypedef)
-  - [DescribeClusterResultResponseTypeDef](#describeclusterresultresponsetypedef)
-  - [DescribeJobRequestTypeDef](#describejobrequesttypedef)
-  - [DescribeJobResultResponseTypeDef](#describejobresultresponsetypedef)
-  - [DescribeReturnShippingLabelRequestTypeDef](#describereturnshippinglabelrequesttypedef)
-  - [DescribeReturnShippingLabelResultResponseTypeDef](#describereturnshippinglabelresultresponsetypedef)
+  - [DescribeAddressRequestRequestTypeDef](#describeaddressrequestrequesttypedef)
+  - [DescribeAddressResultTypeDef](#describeaddressresulttypedef)
+  - [DescribeAddressesRequestRequestTypeDef](#describeaddressesrequestrequesttypedef)
+  - [DescribeAddressesResultTypeDef](#describeaddressesresulttypedef)
+  - [DescribeClusterRequestRequestTypeDef](#describeclusterrequestrequesttypedef)
+  - [DescribeClusterResultTypeDef](#describeclusterresulttypedef)
+  - [DescribeJobRequestRequestTypeDef](#describejobrequestrequesttypedef)
+  - [DescribeJobResultTypeDef](#describejobresulttypedef)
+  - [DescribeReturnShippingLabelRequestRequestTypeDef](#describereturnshippinglabelrequestrequesttypedef)
+  - [DescribeReturnShippingLabelResultTypeDef](#describereturnshippinglabelresulttypedef)
   - [DeviceConfigurationTypeDef](#deviceconfigurationtypedef)
   - [Ec2AmiResourceTypeDef](#ec2amiresourcetypedef)
   - [EventTriggerDefinitionTypeDef](#eventtriggerdefinitiontypedef)
-  - [GetJobManifestRequestTypeDef](#getjobmanifestrequesttypedef)
-  - [GetJobManifestResultResponseTypeDef](#getjobmanifestresultresponsetypedef)
-  - [GetJobUnlockCodeRequestTypeDef](#getjobunlockcoderequesttypedef)
-  - [GetJobUnlockCodeResultResponseTypeDef](#getjobunlockcoderesultresponsetypedef)
-  - [GetSnowballUsageResultResponseTypeDef](#getsnowballusageresultresponsetypedef)
-  - [GetSoftwareUpdatesRequestTypeDef](#getsoftwareupdatesrequesttypedef)
-  - [GetSoftwareUpdatesResultResponseTypeDef](#getsoftwareupdatesresultresponsetypedef)
+  - [GetJobManifestRequestRequestTypeDef](#getjobmanifestrequestrequesttypedef)
+  - [GetJobManifestResultTypeDef](#getjobmanifestresulttypedef)
+  - [GetJobUnlockCodeRequestRequestTypeDef](#getjobunlockcoderequestrequesttypedef)
+  - [GetJobUnlockCodeResultTypeDef](#getjobunlockcoderesulttypedef)
+  - [GetSnowballUsageResultTypeDef](#getsnowballusageresulttypedef)
+  - [GetSoftwareUpdatesRequestRequestTypeDef](#getsoftwareupdatesrequestrequesttypedef)
+  - [GetSoftwareUpdatesResultTypeDef](#getsoftwareupdatesresulttypedef)
   - [INDTaxDocumentsTypeDef](#indtaxdocumentstypedef)
   - [JobListEntryTypeDef](#joblistentrytypedef)
   - [JobLogsTypeDef](#joblogstypedef)
@@ -52,16 +52,16 @@ type annotations stubs module
   - [JobResourceTypeDef](#jobresourcetypedef)
   - [KeyRangeTypeDef](#keyrangetypedef)
   - [LambdaResourceTypeDef](#lambdaresourcetypedef)
-  - [ListClusterJobsRequestTypeDef](#listclusterjobsrequesttypedef)
-  - [ListClusterJobsResultResponseTypeDef](#listclusterjobsresultresponsetypedef)
-  - [ListClustersRequestTypeDef](#listclustersrequesttypedef)
-  - [ListClustersResultResponseTypeDef](#listclustersresultresponsetypedef)
-  - [ListCompatibleImagesRequestTypeDef](#listcompatibleimagesrequesttypedef)
-  - [ListCompatibleImagesResultResponseTypeDef](#listcompatibleimagesresultresponsetypedef)
-  - [ListJobsRequestTypeDef](#listjobsrequesttypedef)
-  - [ListJobsResultResponseTypeDef](#listjobsresultresponsetypedef)
-  - [ListLongTermPricingRequestTypeDef](#listlongtermpricingrequesttypedef)
-  - [ListLongTermPricingResultResponseTypeDef](#listlongtermpricingresultresponsetypedef)
+  - [ListClusterJobsRequestRequestTypeDef](#listclusterjobsrequestrequesttypedef)
+  - [ListClusterJobsResultTypeDef](#listclusterjobsresulttypedef)
+  - [ListClustersRequestRequestTypeDef](#listclustersrequestrequesttypedef)
+  - [ListClustersResultTypeDef](#listclustersresulttypedef)
+  - [ListCompatibleImagesRequestRequestTypeDef](#listcompatibleimagesrequestrequesttypedef)
+  - [ListCompatibleImagesResultTypeDef](#listcompatibleimagesresulttypedef)
+  - [ListJobsRequestRequestTypeDef](#listjobsrequestrequesttypedef)
+  - [ListJobsResultTypeDef](#listjobsresulttypedef)
+  - [ListLongTermPricingRequestRequestTypeDef](#listlongtermpricingrequestrequesttypedef)
+  - [ListLongTermPricingResultTypeDef](#listlongtermpricingresulttypedef)
   - [LongTermPricingListEntryTypeDef](#longtermpricinglistentrytypedef)
   - [NFSOnDeviceServiceConfigurationTypeDef](#nfsondeviceserviceconfigurationtypedef)
   - [NotificationTypeDef](#notificationtypedef)
@@ -74,10 +74,10 @@ type annotations stubs module
   - [SnowconeDeviceConfigurationTypeDef](#snowconedeviceconfigurationtypedef)
   - [TargetOnDeviceServiceTypeDef](#targetondeviceservicetypedef)
   - [TaxDocumentsTypeDef](#taxdocumentstypedef)
-  - [UpdateClusterRequestTypeDef](#updateclusterrequesttypedef)
-  - [UpdateJobRequestTypeDef](#updatejobrequesttypedef)
-  - [UpdateJobShipmentStateRequestTypeDef](#updatejobshipmentstaterequesttypedef)
-  - [UpdateLongTermPricingRequestTypeDef](#updatelongtermpricingrequesttypedef)
+  - [UpdateClusterRequestRequestTypeDef](#updateclusterrequestrequesttypedef)
+  - [UpdateJobRequestRequestTypeDef](#updatejobrequestrequesttypedef)
+  - [UpdateJobShipmentStateRequestRequestTypeDef](#updatejobshipmentstaterequestrequesttypedef)
+  - [UpdateLongTermPricingRequestRequestTypeDef](#updatelongtermpricingrequestrequesttypedef)
   - [WirelessConnectionTypeDef](#wirelessconnectiontypedef)
 
 ## AddressTypeDef
@@ -103,20 +103,20 @@ Optional fields:
 - `PhoneNumber`: `str`
 - `IsRestricted`: `bool`
 
-## CancelClusterRequestTypeDef
+## CancelClusterRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import CancelClusterRequestTypeDef
+from mypy_boto3_snowball.type_defs import CancelClusterRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ClusterId`: `str`
 
-## CancelJobRequestTypeDef
+## CancelJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import CancelJobRequestTypeDef
+from mypy_boto3_snowball.type_defs import CancelJobRequestRequestTypeDef
 ```
 
 Required fields:
@@ -172,20 +172,20 @@ Optional fields:
 - `AmiId`: `str`
 - `Name`: `str`
 
-## CreateAddressRequestTypeDef
+## CreateAddressRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import CreateAddressRequestTypeDef
+from mypy_boto3_snowball.type_defs import CreateAddressRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Address`: [AddressTypeDef](./type_defs.md#addresstypedef)
 
-## CreateAddressResultResponseTypeDef
+## CreateAddressResultTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import CreateAddressResultResponseTypeDef
+from mypy_boto3_snowball.type_defs import CreateAddressResultTypeDef
 ```
 
 Required fields:
@@ -194,10 +194,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateClusterRequestTypeDef
+## CreateClusterRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import CreateClusterRequestTypeDef
+from mypy_boto3_snowball.type_defs import CreateClusterRequestRequestTypeDef
 ```
 
 Required fields:
@@ -221,10 +221,10 @@ Optional fields:
 - `RemoteManagement`:
   [RemoteManagementType](./literals.md#remotemanagementtype)
 
-## CreateClusterResultResponseTypeDef
+## CreateClusterResultTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import CreateClusterResultResponseTypeDef
+from mypy_boto3_snowball.type_defs import CreateClusterResultTypeDef
 ```
 
 Required fields:
@@ -233,10 +233,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateJobRequestTypeDef
+## CreateJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import CreateJobRequestTypeDef
+from mypy_boto3_snowball.type_defs import CreateJobRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -263,10 +263,10 @@ Optional fields:
   [RemoteManagementType](./literals.md#remotemanagementtype)
 - `LongTermPricingId`: `str`
 
-## CreateJobResultResponseTypeDef
+## CreateJobResultTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import CreateJobResultResponseTypeDef
+from mypy_boto3_snowball.type_defs import CreateJobResultTypeDef
 ```
 
 Required fields:
@@ -275,10 +275,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateLongTermPricingRequestTypeDef
+## CreateLongTermPricingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import CreateLongTermPricingRequestTypeDef
+from mypy_boto3_snowball.type_defs import CreateLongTermPricingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -291,10 +291,10 @@ Optional fields:
 - `IsLongTermPricingAutoRenew`: `bool`
 - `SnowballType`: [SnowballTypeType](./literals.md#snowballtypetype)
 
-## CreateLongTermPricingResultResponseTypeDef
+## CreateLongTermPricingResultTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import CreateLongTermPricingResultResponseTypeDef
+from mypy_boto3_snowball.type_defs import CreateLongTermPricingResultTypeDef
 ```
 
 Required fields:
@@ -303,10 +303,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateReturnShippingLabelRequestTypeDef
+## CreateReturnShippingLabelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import CreateReturnShippingLabelRequestTypeDef
+from mypy_boto3_snowball.type_defs import CreateReturnShippingLabelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -317,10 +317,10 @@ Optional fields:
 
 - `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
 
-## CreateReturnShippingLabelResultResponseTypeDef
+## CreateReturnShippingLabelResultTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import CreateReturnShippingLabelResultResponseTypeDef
+from mypy_boto3_snowball.type_defs import CreateReturnShippingLabelResultTypeDef
 ```
 
 Required fields:
@@ -342,20 +342,20 @@ Optional fields:
 - `TotalBytes`: `int`
 - `TotalObjects`: `int`
 
-## DescribeAddressRequestTypeDef
+## DescribeAddressRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import DescribeAddressRequestTypeDef
+from mypy_boto3_snowball.type_defs import DescribeAddressRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AddressId`: `str`
 
-## DescribeAddressResultResponseTypeDef
+## DescribeAddressResultTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import DescribeAddressResultResponseTypeDef
+from mypy_boto3_snowball.type_defs import DescribeAddressResultTypeDef
 ```
 
 Required fields:
@@ -364,10 +364,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAddressesRequestTypeDef
+## DescribeAddressesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import DescribeAddressesRequestTypeDef
+from mypy_boto3_snowball.type_defs import DescribeAddressesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -375,10 +375,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## DescribeAddressesResultResponseTypeDef
+## DescribeAddressesResultTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import DescribeAddressesResultResponseTypeDef
+from mypy_boto3_snowball.type_defs import DescribeAddressesResultTypeDef
 ```
 
 Required fields:
@@ -388,20 +388,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeClusterRequestTypeDef
+## DescribeClusterRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import DescribeClusterRequestTypeDef
+from mypy_boto3_snowball.type_defs import DescribeClusterRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ClusterId`: `str`
 
-## DescribeClusterResultResponseTypeDef
+## DescribeClusterResultTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import DescribeClusterResultResponseTypeDef
+from mypy_boto3_snowball.type_defs import DescribeClusterResultTypeDef
 ```
 
 Required fields:
@@ -411,20 +411,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeJobRequestTypeDef
+## DescribeJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import DescribeJobRequestTypeDef
+from mypy_boto3_snowball.type_defs import DescribeJobRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `JobId`: `str`
 
-## DescribeJobResultResponseTypeDef
+## DescribeJobResultTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import DescribeJobResultResponseTypeDef
+from mypy_boto3_snowball.type_defs import DescribeJobResultTypeDef
 ```
 
 Required fields:
@@ -435,20 +435,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeReturnShippingLabelRequestTypeDef
+## DescribeReturnShippingLabelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import DescribeReturnShippingLabelRequestTypeDef
+from mypy_boto3_snowball.type_defs import DescribeReturnShippingLabelRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `JobId`: `str`
 
-## DescribeReturnShippingLabelResultResponseTypeDef
+## DescribeReturnShippingLabelResultTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import DescribeReturnShippingLabelResultResponseTypeDef
+from mypy_boto3_snowball.type_defs import DescribeReturnShippingLabelResultTypeDef
 ```
 
 Required fields:
@@ -493,20 +493,20 @@ Optional fields:
 
 - `EventResourceARN`: `str`
 
-## GetJobManifestRequestTypeDef
+## GetJobManifestRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import GetJobManifestRequestTypeDef
+from mypy_boto3_snowball.type_defs import GetJobManifestRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `JobId`: `str`
 
-## GetJobManifestResultResponseTypeDef
+## GetJobManifestResultTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import GetJobManifestResultResponseTypeDef
+from mypy_boto3_snowball.type_defs import GetJobManifestResultTypeDef
 ```
 
 Required fields:
@@ -515,20 +515,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetJobUnlockCodeRequestTypeDef
+## GetJobUnlockCodeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import GetJobUnlockCodeRequestTypeDef
+from mypy_boto3_snowball.type_defs import GetJobUnlockCodeRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `JobId`: `str`
 
-## GetJobUnlockCodeResultResponseTypeDef
+## GetJobUnlockCodeResultTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import GetJobUnlockCodeResultResponseTypeDef
+from mypy_boto3_snowball.type_defs import GetJobUnlockCodeResultTypeDef
 ```
 
 Required fields:
@@ -537,10 +537,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSnowballUsageResultResponseTypeDef
+## GetSnowballUsageResultTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import GetSnowballUsageResultResponseTypeDef
+from mypy_boto3_snowball.type_defs import GetSnowballUsageResultTypeDef
 ```
 
 Required fields:
@@ -550,20 +550,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSoftwareUpdatesRequestTypeDef
+## GetSoftwareUpdatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import GetSoftwareUpdatesRequestTypeDef
+from mypy_boto3_snowball.type_defs import GetSoftwareUpdatesRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `JobId`: `str`
 
-## GetSoftwareUpdatesResultResponseTypeDef
+## GetSoftwareUpdatesResultTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import GetSoftwareUpdatesResultResponseTypeDef
+from mypy_boto3_snowball.type_defs import GetSoftwareUpdatesResultTypeDef
 ```
 
 Required fields:
@@ -685,10 +685,10 @@ Optional fields:
 - `EventTriggers`:
   `List`\[[EventTriggerDefinitionTypeDef](./type_defs.md#eventtriggerdefinitiontypedef)\]
 
-## ListClusterJobsRequestTypeDef
+## ListClusterJobsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import ListClusterJobsRequestTypeDef
+from mypy_boto3_snowball.type_defs import ListClusterJobsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -700,10 +700,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListClusterJobsResultResponseTypeDef
+## ListClusterJobsResultTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import ListClusterJobsResultResponseTypeDef
+from mypy_boto3_snowball.type_defs import ListClusterJobsResultTypeDef
 ```
 
 Required fields:
@@ -714,10 +714,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListClustersRequestTypeDef
+## ListClustersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import ListClustersRequestTypeDef
+from mypy_boto3_snowball.type_defs import ListClustersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -725,10 +725,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListClustersResultResponseTypeDef
+## ListClustersResultTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import ListClustersResultResponseTypeDef
+from mypy_boto3_snowball.type_defs import ListClustersResultTypeDef
 ```
 
 Required fields:
@@ -739,10 +739,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListCompatibleImagesRequestTypeDef
+## ListCompatibleImagesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import ListCompatibleImagesRequestTypeDef
+from mypy_boto3_snowball.type_defs import ListCompatibleImagesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -750,10 +750,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListCompatibleImagesResultResponseTypeDef
+## ListCompatibleImagesResultTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import ListCompatibleImagesResultResponseTypeDef
+from mypy_boto3_snowball.type_defs import ListCompatibleImagesResultTypeDef
 ```
 
 Required fields:
@@ -764,10 +764,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListJobsRequestTypeDef
+## ListJobsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import ListJobsRequestTypeDef
+from mypy_boto3_snowball.type_defs import ListJobsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -775,10 +775,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListJobsResultResponseTypeDef
+## ListJobsResultTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import ListJobsResultResponseTypeDef
+from mypy_boto3_snowball.type_defs import ListJobsResultTypeDef
 ```
 
 Required fields:
@@ -789,10 +789,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListLongTermPricingRequestTypeDef
+## ListLongTermPricingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import ListLongTermPricingRequestTypeDef
+from mypy_boto3_snowball.type_defs import ListLongTermPricingRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -800,10 +800,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListLongTermPricingResultResponseTypeDef
+## ListLongTermPricingResultTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import ListLongTermPricingResultResponseTypeDef
+from mypy_boto3_snowball.type_defs import ListLongTermPricingResultTypeDef
 ```
 
 Required fields:
@@ -963,10 +963,10 @@ Optional fields:
 
 - `IND`: [INDTaxDocumentsTypeDef](./type_defs.md#indtaxdocumentstypedef)
 
-## UpdateClusterRequestTypeDef
+## UpdateClusterRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import UpdateClusterRequestTypeDef
+from mypy_boto3_snowball.type_defs import UpdateClusterRequestRequestTypeDef
 ```
 
 Required fields:
@@ -985,10 +985,10 @@ Optional fields:
 - `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
 - `ForwardingAddressId`: `str`
 
-## UpdateJobRequestTypeDef
+## UpdateJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import UpdateJobRequestTypeDef
+from mypy_boto3_snowball.type_defs import UpdateJobRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1009,10 +1009,10 @@ Optional fields:
   [SnowballCapacityType](./literals.md#snowballcapacitytype)
 - `ForwardingAddressId`: `str`
 
-## UpdateJobShipmentStateRequestTypeDef
+## UpdateJobShipmentStateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import UpdateJobShipmentStateRequestTypeDef
+from mypy_boto3_snowball.type_defs import UpdateJobShipmentStateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1020,10 +1020,10 @@ Required fields:
 - `JobId`: `str`
 - `ShipmentState`: [ShipmentStateType](./literals.md#shipmentstatetype)
 
-## UpdateLongTermPricingRequestTypeDef
+## UpdateLongTermPricingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_snowball.type_defs import UpdateLongTermPricingRequestTypeDef
+from mypy_boto3_snowball.type_defs import UpdateLongTermPricingRequestRequestTypeDef
 ```
 
 Required fields:

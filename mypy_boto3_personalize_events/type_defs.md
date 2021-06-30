@@ -10,9 +10,9 @@ type annotations stubs module
 - [Typed dictionaries for boto3 PersonalizeEvents module](#typed-dictionaries-for-boto3-personalizeevents-module)
   - [EventTypeDef](#eventtypedef)
   - [ItemTypeDef](#itemtypedef)
-  - [PutEventsRequestTypeDef](#puteventsrequesttypedef)
-  - [PutItemsRequestTypeDef](#putitemsrequesttypedef)
-  - [PutUsersRequestTypeDef](#putusersrequesttypedef)
+  - [PutEventsRequestRequestTypeDef](#puteventsrequestrequesttypedef)
+  - [PutItemsRequestRequestTypeDef](#putitemsrequestrequesttypedef)
+  - [PutUsersRequestRequestTypeDef](#putusersrequestrequesttypedef)
   - [UserTypeDef](#usertypedef)
 
 ## EventTypeDef
@@ -49,10 +49,10 @@ Optional fields:
 
 - `properties`: `str`
 
-## PutEventsRequestTypeDef
+## PutEventsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_personalize_events.type_defs import PutEventsRequestTypeDef
+from mypy_boto3_personalize_events.type_defs import PutEventsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -65,10 +65,10 @@ Optional fields:
 
 - `userId`: `str`
 
-## PutItemsRequestTypeDef
+## PutItemsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_personalize_events.type_defs import PutItemsRequestTypeDef
+from mypy_boto3_personalize_events.type_defs import PutItemsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -76,10 +76,10 @@ Required fields:
 - `datasetArn`: `str`
 - `items`: `List`\[[ItemTypeDef](./type_defs.md#itemtypedef)\]
 
-## PutUsersRequestTypeDef
+## PutUsersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_personalize_events.type_defs import PutUsersRequestTypeDef
+from mypy_boto3_personalize_events.type_defs import PutUsersRequestRequestTypeDef
 ```
 
 Required fields:

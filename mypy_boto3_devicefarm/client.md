@@ -11,6 +11,7 @@ type annotations stubs module
   - [DeviceFarmClient](#devicefarmclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_device_pool](#create_device_pool)
     - [create_instance_profile](#create_instance_profile)
@@ -138,6 +139,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+DeviceFarmClient exceptions.
+
+Type annotations for `boto3.client("devicefarm").exceptions` method.
+
+Boto3 documentation:
+[DeviceFarm.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -163,7 +175,7 @@ Boto3 documentation:
 [DeviceFarm.Client.create_device_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_device_pool)
 
 Arguments mapping described in
-[CreateDevicePoolRequestTypeDef](./type_defs.md#createdevicepoolrequesttypedef).
+[CreateDevicePoolRequestRequestTypeDef](./type_defs.md#createdevicepoolrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -174,7 +186,7 @@ Keyword-only arguments:
 - `maxDevices`: `int`
 
 Returns
-[CreateDevicePoolResultResponseTypeDef](./type_defs.md#createdevicepoolresultresponsetypedef).
+[CreateDevicePoolResultTypeDef](./type_defs.md#createdevicepoolresulttypedef).
 
 ### create_instance_profile
 
@@ -188,7 +200,7 @@ Boto3 documentation:
 [DeviceFarm.Client.create_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_instance_profile)
 
 Arguments mapping described in
-[CreateInstanceProfileRequestTypeDef](./type_defs.md#createinstanceprofilerequesttypedef).
+[CreateInstanceProfileRequestRequestTypeDef](./type_defs.md#createinstanceprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -199,7 +211,7 @@ Keyword-only arguments:
 - `rebootAfterUse`: `bool`
 
 Returns
-[CreateInstanceProfileResultResponseTypeDef](./type_defs.md#createinstanceprofileresultresponsetypedef).
+[CreateInstanceProfileResultTypeDef](./type_defs.md#createinstanceprofileresulttypedef).
 
 ### create_network_profile
 
@@ -212,7 +224,7 @@ Boto3 documentation:
 [DeviceFarm.Client.create_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_network_profile)
 
 Arguments mapping described in
-[CreateNetworkProfileRequestTypeDef](./type_defs.md#createnetworkprofilerequesttypedef).
+[CreateNetworkProfileRequestRequestTypeDef](./type_defs.md#createnetworkprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -230,7 +242,7 @@ Keyword-only arguments:
 - `downlinkLossPercent`: `int`
 
 Returns
-[CreateNetworkProfileResultResponseTypeDef](./type_defs.md#createnetworkprofileresultresponsetypedef).
+[CreateNetworkProfileResultTypeDef](./type_defs.md#createnetworkprofileresulttypedef).
 
 ### create_project
 
@@ -242,7 +254,7 @@ Boto3 documentation:
 [DeviceFarm.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_project)
 
 Arguments mapping described in
-[CreateProjectRequestTypeDef](./type_defs.md#createprojectrequesttypedef).
+[CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -250,7 +262,7 @@ Keyword-only arguments:
 - `defaultJobTimeoutMinutes`: `int`
 
 Returns
-[CreateProjectResultResponseTypeDef](./type_defs.md#createprojectresultresponsetypedef).
+[CreateProjectResultTypeDef](./type_defs.md#createprojectresulttypedef).
 
 ### create_remote_access_session
 
@@ -263,7 +275,7 @@ Boto3 documentation:
 [DeviceFarm.Client.create_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_remote_access_session)
 
 Arguments mapping described in
-[CreateRemoteAccessSessionRequestTypeDef](./type_defs.md#createremoteaccesssessionrequesttypedef).
+[CreateRemoteAccessSessionRequestRequestTypeDef](./type_defs.md#createremoteaccesssessionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -282,7 +294,7 @@ Keyword-only arguments:
 - `skipAppResign`: `bool`
 
 Returns
-[CreateRemoteAccessSessionResultResponseTypeDef](./type_defs.md#createremoteaccesssessionresultresponsetypedef).
+[CreateRemoteAccessSessionResultTypeDef](./type_defs.md#createremoteaccesssessionresulttypedef).
 
 ### create_test_grid_project
 
@@ -295,7 +307,7 @@ Boto3 documentation:
 [DeviceFarm.Client.create_test_grid_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_test_grid_project)
 
 Arguments mapping described in
-[CreateTestGridProjectRequestTypeDef](./type_defs.md#createtestgridprojectrequesttypedef).
+[CreateTestGridProjectRequestRequestTypeDef](./type_defs.md#createtestgridprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -305,7 +317,7 @@ Keyword-only arguments:
   [TestGridVpcConfigTypeDef](./type_defs.md#testgridvpcconfigtypedef)
 
 Returns
-[CreateTestGridProjectResultResponseTypeDef](./type_defs.md#createtestgridprojectresultresponsetypedef).
+[CreateTestGridProjectResultTypeDef](./type_defs.md#createtestgridprojectresulttypedef).
 
 ### create_test_grid_url
 
@@ -318,7 +330,7 @@ Boto3 documentation:
 [DeviceFarm.Client.create_test_grid_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_test_grid_url)
 
 Arguments mapping described in
-[CreateTestGridUrlRequestTypeDef](./type_defs.md#createtestgridurlrequesttypedef).
+[CreateTestGridUrlRequestRequestTypeDef](./type_defs.md#createtestgridurlrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -326,7 +338,7 @@ Keyword-only arguments:
 - `expiresInSeconds`: `int` *(required)*
 
 Returns
-[CreateTestGridUrlResultResponseTypeDef](./type_defs.md#createtestgridurlresultresponsetypedef).
+[CreateTestGridUrlResultTypeDef](./type_defs.md#createtestgridurlresulttypedef).
 
 ### create_upload
 
@@ -338,7 +350,7 @@ Boto3 documentation:
 [DeviceFarm.Client.create_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_upload)
 
 Arguments mapping described in
-[CreateUploadRequestTypeDef](./type_defs.md#createuploadrequesttypedef).
+[CreateUploadRequestRequestTypeDef](./type_defs.md#createuploadrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -347,8 +359,7 @@ Keyword-only arguments:
 - `type`: [UploadTypeType](./literals.md#uploadtypetype) *(required)*
 - `contentType`: `str`
 
-Returns
-[CreateUploadResultResponseTypeDef](./type_defs.md#createuploadresultresponsetypedef).
+Returns [CreateUploadResultTypeDef](./type_defs.md#createuploadresulttypedef).
 
 ### create_vpce_configuration
 
@@ -362,7 +373,7 @@ Boto3 documentation:
 [DeviceFarm.Client.create_vpce_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_vpce_configuration)
 
 Arguments mapping described in
-[CreateVPCEConfigurationRequestTypeDef](./type_defs.md#createvpceconfigurationrequesttypedef).
+[CreateVPCEConfigurationRequestRequestTypeDef](./type_defs.md#createvpceconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -372,7 +383,7 @@ Keyword-only arguments:
 - `vpceConfigurationDescription`: `str`
 
 Returns
-[CreateVPCEConfigurationResultResponseTypeDef](./type_defs.md#createvpceconfigurationresultresponsetypedef).
+[CreateVPCEConfigurationResultTypeDef](./type_defs.md#createvpceconfigurationresulttypedef).
 
 ### delete_device_pool
 
@@ -384,7 +395,7 @@ Boto3 documentation:
 [DeviceFarm.Client.delete_device_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_device_pool)
 
 Arguments mapping described in
-[DeleteDevicePoolRequestTypeDef](./type_defs.md#deletedevicepoolrequesttypedef).
+[DeleteDevicePoolRequestRequestTypeDef](./type_defs.md#deletedevicepoolrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -403,7 +414,7 @@ Boto3 documentation:
 [DeviceFarm.Client.delete_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_instance_profile)
 
 Arguments mapping described in
-[DeleteInstanceProfileRequestTypeDef](./type_defs.md#deleteinstanceprofilerequesttypedef).
+[DeleteInstanceProfileRequestRequestTypeDef](./type_defs.md#deleteinstanceprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -422,7 +433,7 @@ Boto3 documentation:
 [DeviceFarm.Client.delete_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_network_profile)
 
 Arguments mapping described in
-[DeleteNetworkProfileRequestTypeDef](./type_defs.md#deletenetworkprofilerequesttypedef).
+[DeleteNetworkProfileRequestRequestTypeDef](./type_defs.md#deletenetworkprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -440,7 +451,7 @@ Boto3 documentation:
 [DeviceFarm.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_project)
 
 Arguments mapping described in
-[DeleteProjectRequestTypeDef](./type_defs.md#deleteprojectrequesttypedef).
+[DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -459,7 +470,7 @@ Boto3 documentation:
 [DeviceFarm.Client.delete_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_remote_access_session)
 
 Arguments mapping described in
-[DeleteRemoteAccessSessionRequestTypeDef](./type_defs.md#deleteremoteaccesssessionrequesttypedef).
+[DeleteRemoteAccessSessionRequestRequestTypeDef](./type_defs.md#deleteremoteaccesssessionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -477,7 +488,7 @@ Boto3 documentation:
 [DeviceFarm.Client.delete_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_run)
 
 Arguments mapping described in
-[DeleteRunRequestTypeDef](./type_defs.md#deleterunrequesttypedef).
+[DeleteRunRequestRequestTypeDef](./type_defs.md#deleterunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -496,7 +507,7 @@ Boto3 documentation:
 [DeviceFarm.Client.delete_test_grid_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_test_grid_project)
 
 Arguments mapping described in
-[DeleteTestGridProjectRequestTypeDef](./type_defs.md#deletetestgridprojectrequesttypedef).
+[DeleteTestGridProjectRequestRequestTypeDef](./type_defs.md#deletetestgridprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -514,7 +525,7 @@ Boto3 documentation:
 [DeviceFarm.Client.delete_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_upload)
 
 Arguments mapping described in
-[DeleteUploadRequestTypeDef](./type_defs.md#deleteuploadrequesttypedef).
+[DeleteUploadRequestRequestTypeDef](./type_defs.md#deleteuploadrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -533,7 +544,7 @@ Boto3 documentation:
 [DeviceFarm.Client.delete_vpce_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_vpce_configuration)
 
 Arguments mapping described in
-[DeleteVPCEConfigurationRequestTypeDef](./type_defs.md#deletevpceconfigurationrequesttypedef).
+[DeleteVPCEConfigurationRequestRequestTypeDef](./type_defs.md#deletevpceconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -571,7 +582,7 @@ Boto3 documentation:
 [DeviceFarm.Client.get_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_account_settings)
 
 Returns
-[GetAccountSettingsResultResponseTypeDef](./type_defs.md#getaccountsettingsresultresponsetypedef).
+[GetAccountSettingsResultTypeDef](./type_defs.md#getaccountsettingsresulttypedef).
 
 ### get_device
 
@@ -583,14 +594,13 @@ Boto3 documentation:
 [DeviceFarm.Client.get_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device)
 
 Arguments mapping described in
-[GetDeviceRequestTypeDef](./type_defs.md#getdevicerequesttypedef).
+[GetDeviceRequestRequestTypeDef](./type_defs.md#getdevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
-Returns
-[GetDeviceResultResponseTypeDef](./type_defs.md#getdeviceresultresponsetypedef).
+Returns [GetDeviceResultTypeDef](./type_defs.md#getdeviceresulttypedef).
 
 ### get_device_instance
 
@@ -603,14 +613,14 @@ Boto3 documentation:
 [DeviceFarm.Client.get_device_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device_instance)
 
 Arguments mapping described in
-[GetDeviceInstanceRequestTypeDef](./type_defs.md#getdeviceinstancerequesttypedef).
+[GetDeviceInstanceRequestRequestTypeDef](./type_defs.md#getdeviceinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
 Returns
-[GetDeviceInstanceResultResponseTypeDef](./type_defs.md#getdeviceinstanceresultresponsetypedef).
+[GetDeviceInstanceResultTypeDef](./type_defs.md#getdeviceinstanceresulttypedef).
 
 ### get_device_pool
 
@@ -622,14 +632,14 @@ Boto3 documentation:
 [DeviceFarm.Client.get_device_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device_pool)
 
 Arguments mapping described in
-[GetDevicePoolRequestTypeDef](./type_defs.md#getdevicepoolrequesttypedef).
+[GetDevicePoolRequestRequestTypeDef](./type_defs.md#getdevicepoolrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
 Returns
-[GetDevicePoolResultResponseTypeDef](./type_defs.md#getdevicepoolresultresponsetypedef).
+[GetDevicePoolResultTypeDef](./type_defs.md#getdevicepoolresulttypedef).
 
 ### get_device_pool_compatibility
 
@@ -642,7 +652,7 @@ Boto3 documentation:
 [DeviceFarm.Client.get_device_pool_compatibility](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device_pool_compatibility)
 
 Arguments mapping described in
-[GetDevicePoolCompatibilityRequestTypeDef](./type_defs.md#getdevicepoolcompatibilityrequesttypedef).
+[GetDevicePoolCompatibilityRequestRequestTypeDef](./type_defs.md#getdevicepoolcompatibilityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -654,7 +664,7 @@ Keyword-only arguments:
   [ScheduleRunConfigurationTypeDef](./type_defs.md#schedulerunconfigurationtypedef)
 
 Returns
-[GetDevicePoolCompatibilityResultResponseTypeDef](./type_defs.md#getdevicepoolcompatibilityresultresponsetypedef).
+[GetDevicePoolCompatibilityResultTypeDef](./type_defs.md#getdevicepoolcompatibilityresulttypedef).
 
 ### get_instance_profile
 
@@ -666,14 +676,14 @@ Boto3 documentation:
 [DeviceFarm.Client.get_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_instance_profile)
 
 Arguments mapping described in
-[GetInstanceProfileRequestTypeDef](./type_defs.md#getinstanceprofilerequesttypedef).
+[GetInstanceProfileRequestRequestTypeDef](./type_defs.md#getinstanceprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
 Returns
-[GetInstanceProfileResultResponseTypeDef](./type_defs.md#getinstanceprofileresultresponsetypedef).
+[GetInstanceProfileResultTypeDef](./type_defs.md#getinstanceprofileresulttypedef).
 
 ### get_job
 
@@ -685,14 +695,13 @@ Boto3 documentation:
 [DeviceFarm.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_job)
 
 Arguments mapping described in
-[GetJobRequestTypeDef](./type_defs.md#getjobrequesttypedef).
+[GetJobRequestRequestTypeDef](./type_defs.md#getjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
-Returns
-[GetJobResultResponseTypeDef](./type_defs.md#getjobresultresponsetypedef).
+Returns [GetJobResultTypeDef](./type_defs.md#getjobresulttypedef).
 
 ### get_network_profile
 
@@ -704,14 +713,14 @@ Boto3 documentation:
 [DeviceFarm.Client.get_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_network_profile)
 
 Arguments mapping described in
-[GetNetworkProfileRequestTypeDef](./type_defs.md#getnetworkprofilerequesttypedef).
+[GetNetworkProfileRequestRequestTypeDef](./type_defs.md#getnetworkprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
 Returns
-[GetNetworkProfileResultResponseTypeDef](./type_defs.md#getnetworkprofileresultresponsetypedef).
+[GetNetworkProfileResultTypeDef](./type_defs.md#getnetworkprofileresulttypedef).
 
 ### get_offering_status
 
@@ -724,14 +733,14 @@ Boto3 documentation:
 [DeviceFarm.Client.get_offering_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_offering_status)
 
 Arguments mapping described in
-[GetOfferingStatusRequestTypeDef](./type_defs.md#getofferingstatusrequesttypedef).
+[GetOfferingStatusRequestRequestTypeDef](./type_defs.md#getofferingstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `nextToken`: `str`
 
 Returns
-[GetOfferingStatusResultResponseTypeDef](./type_defs.md#getofferingstatusresultresponsetypedef).
+[GetOfferingStatusResultTypeDef](./type_defs.md#getofferingstatusresulttypedef).
 
 ### get_project
 
@@ -743,14 +752,13 @@ Boto3 documentation:
 [DeviceFarm.Client.get_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_project)
 
 Arguments mapping described in
-[GetProjectRequestTypeDef](./type_defs.md#getprojectrequesttypedef).
+[GetProjectRequestRequestTypeDef](./type_defs.md#getprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
-Returns
-[GetProjectResultResponseTypeDef](./type_defs.md#getprojectresultresponsetypedef).
+Returns [GetProjectResultTypeDef](./type_defs.md#getprojectresulttypedef).
 
 ### get_remote_access_session
 
@@ -763,14 +771,14 @@ Boto3 documentation:
 [DeviceFarm.Client.get_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_remote_access_session)
 
 Arguments mapping described in
-[GetRemoteAccessSessionRequestTypeDef](./type_defs.md#getremoteaccesssessionrequesttypedef).
+[GetRemoteAccessSessionRequestRequestTypeDef](./type_defs.md#getremoteaccesssessionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
 Returns
-[GetRemoteAccessSessionResultResponseTypeDef](./type_defs.md#getremoteaccesssessionresultresponsetypedef).
+[GetRemoteAccessSessionResultTypeDef](./type_defs.md#getremoteaccesssessionresulttypedef).
 
 ### get_run
 
@@ -782,14 +790,13 @@ Boto3 documentation:
 [DeviceFarm.Client.get_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_run)
 
 Arguments mapping described in
-[GetRunRequestTypeDef](./type_defs.md#getrunrequesttypedef).
+[GetRunRequestRequestTypeDef](./type_defs.md#getrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
-Returns
-[GetRunResultResponseTypeDef](./type_defs.md#getrunresultresponsetypedef).
+Returns [GetRunResultTypeDef](./type_defs.md#getrunresulttypedef).
 
 ### get_suite
 
@@ -801,14 +808,13 @@ Boto3 documentation:
 [DeviceFarm.Client.get_suite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_suite)
 
 Arguments mapping described in
-[GetSuiteRequestTypeDef](./type_defs.md#getsuiterequesttypedef).
+[GetSuiteRequestRequestTypeDef](./type_defs.md#getsuiterequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
-Returns
-[GetSuiteResultResponseTypeDef](./type_defs.md#getsuiteresultresponsetypedef).
+Returns [GetSuiteResultTypeDef](./type_defs.md#getsuiteresulttypedef).
 
 ### get_test
 
@@ -820,14 +826,13 @@ Boto3 documentation:
 [DeviceFarm.Client.get_test](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_test)
 
 Arguments mapping described in
-[GetTestRequestTypeDef](./type_defs.md#gettestrequesttypedef).
+[GetTestRequestRequestTypeDef](./type_defs.md#gettestrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
-Returns
-[GetTestResultResponseTypeDef](./type_defs.md#gettestresultresponsetypedef).
+Returns [GetTestResultTypeDef](./type_defs.md#gettestresulttypedef).
 
 ### get_test_grid_project
 
@@ -839,14 +844,14 @@ Boto3 documentation:
 [DeviceFarm.Client.get_test_grid_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_test_grid_project)
 
 Arguments mapping described in
-[GetTestGridProjectRequestTypeDef](./type_defs.md#gettestgridprojectrequesttypedef).
+[GetTestGridProjectRequestRequestTypeDef](./type_defs.md#gettestgridprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `projectArn`: `str` *(required)*
 
 Returns
-[GetTestGridProjectResultResponseTypeDef](./type_defs.md#gettestgridprojectresultresponsetypedef).
+[GetTestGridProjectResultTypeDef](./type_defs.md#gettestgridprojectresulttypedef).
 
 ### get_test_grid_session
 
@@ -859,7 +864,7 @@ Boto3 documentation:
 [DeviceFarm.Client.get_test_grid_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_test_grid_session)
 
 Arguments mapping described in
-[GetTestGridSessionRequestTypeDef](./type_defs.md#gettestgridsessionrequesttypedef).
+[GetTestGridSessionRequestRequestTypeDef](./type_defs.md#gettestgridsessionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -868,7 +873,7 @@ Keyword-only arguments:
 - `sessionArn`: `str`
 
 Returns
-[GetTestGridSessionResultResponseTypeDef](./type_defs.md#gettestgridsessionresultresponsetypedef).
+[GetTestGridSessionResultTypeDef](./type_defs.md#gettestgridsessionresulttypedef).
 
 ### get_upload
 
@@ -880,14 +885,13 @@ Boto3 documentation:
 [DeviceFarm.Client.get_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_upload)
 
 Arguments mapping described in
-[GetUploadRequestTypeDef](./type_defs.md#getuploadrequesttypedef).
+[GetUploadRequestRequestTypeDef](./type_defs.md#getuploadrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
-Returns
-[GetUploadResultResponseTypeDef](./type_defs.md#getuploadresultresponsetypedef).
+Returns [GetUploadResultTypeDef](./type_defs.md#getuploadresulttypedef).
 
 ### get_vpce_configuration
 
@@ -901,14 +905,14 @@ Boto3 documentation:
 [DeviceFarm.Client.get_vpce_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_vpce_configuration)
 
 Arguments mapping described in
-[GetVPCEConfigurationRequestTypeDef](./type_defs.md#getvpceconfigurationrequesttypedef).
+[GetVPCEConfigurationRequestRequestTypeDef](./type_defs.md#getvpceconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
 Returns
-[GetVPCEConfigurationResultResponseTypeDef](./type_defs.md#getvpceconfigurationresultresponsetypedef).
+[GetVPCEConfigurationResultTypeDef](./type_defs.md#getvpceconfigurationresulttypedef).
 
 ### install_to_remote_access_session
 
@@ -921,7 +925,7 @@ Boto3 documentation:
 [DeviceFarm.Client.install_to_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.install_to_remote_access_session)
 
 Arguments mapping described in
-[InstallToRemoteAccessSessionRequestTypeDef](./type_defs.md#installtoremoteaccesssessionrequesttypedef).
+[InstallToRemoteAccessSessionRequestRequestTypeDef](./type_defs.md#installtoremoteaccesssessionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -929,7 +933,7 @@ Keyword-only arguments:
 - `appArn`: `str` *(required)*
 
 Returns
-[InstallToRemoteAccessSessionResultResponseTypeDef](./type_defs.md#installtoremoteaccesssessionresultresponsetypedef).
+[InstallToRemoteAccessSessionResultTypeDef](./type_defs.md#installtoremoteaccesssessionresulttypedef).
 
 ### list_artifacts
 
@@ -941,7 +945,7 @@ Boto3 documentation:
 [DeviceFarm.Client.list_artifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_artifacts)
 
 Arguments mapping described in
-[ListArtifactsRequestTypeDef](./type_defs.md#listartifactsrequesttypedef).
+[ListArtifactsRequestRequestTypeDef](./type_defs.md#listartifactsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -951,7 +955,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListArtifactsResultResponseTypeDef](./type_defs.md#listartifactsresultresponsetypedef).
+[ListArtifactsResultTypeDef](./type_defs.md#listartifactsresulttypedef).
 
 ### list_device_instances
 
@@ -964,7 +968,7 @@ Boto3 documentation:
 [DeviceFarm.Client.list_device_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_device_instances)
 
 Arguments mapping described in
-[ListDeviceInstancesRequestTypeDef](./type_defs.md#listdeviceinstancesrequesttypedef).
+[ListDeviceInstancesRequestRequestTypeDef](./type_defs.md#listdeviceinstancesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -972,7 +976,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListDeviceInstancesResultResponseTypeDef](./type_defs.md#listdeviceinstancesresultresponsetypedef).
+[ListDeviceInstancesResultTypeDef](./type_defs.md#listdeviceinstancesresulttypedef).
 
 ### list_device_pools
 
@@ -984,7 +988,7 @@ Boto3 documentation:
 [DeviceFarm.Client.list_device_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_device_pools)
 
 Arguments mapping described in
-[ListDevicePoolsRequestTypeDef](./type_defs.md#listdevicepoolsrequesttypedef).
+[ListDevicePoolsRequestRequestTypeDef](./type_defs.md#listdevicepoolsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -993,7 +997,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListDevicePoolsResultResponseTypeDef](./type_defs.md#listdevicepoolsresultresponsetypedef).
+[ListDevicePoolsResultTypeDef](./type_defs.md#listdevicepoolsresulttypedef).
 
 ### list_devices
 
@@ -1005,7 +1009,7 @@ Boto3 documentation:
 [DeviceFarm.Client.list_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_devices)
 
 Arguments mapping described in
-[ListDevicesRequestTypeDef](./type_defs.md#listdevicesrequesttypedef).
+[ListDevicesRequestRequestTypeDef](./type_defs.md#listdevicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1014,8 +1018,7 @@ Keyword-only arguments:
 - `filters`:
   `List`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
 
-Returns
-[ListDevicesResultResponseTypeDef](./type_defs.md#listdevicesresultresponsetypedef).
+Returns [ListDevicesResultTypeDef](./type_defs.md#listdevicesresulttypedef).
 
 ### list_instance_profiles
 
@@ -1028,7 +1031,7 @@ Boto3 documentation:
 [DeviceFarm.Client.list_instance_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_instance_profiles)
 
 Arguments mapping described in
-[ListInstanceProfilesRequestTypeDef](./type_defs.md#listinstanceprofilesrequesttypedef).
+[ListInstanceProfilesRequestRequestTypeDef](./type_defs.md#listinstanceprofilesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1036,7 +1039,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListInstanceProfilesResultResponseTypeDef](./type_defs.md#listinstanceprofilesresultresponsetypedef).
+[ListInstanceProfilesResultTypeDef](./type_defs.md#listinstanceprofilesresulttypedef).
 
 ### list_jobs
 
@@ -1048,15 +1051,14 @@ Boto3 documentation:
 [DeviceFarm.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_jobs)
 
 Arguments mapping described in
-[ListJobsRequestTypeDef](./type_defs.md#listjobsrequesttypedef).
+[ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 - `nextToken`: `str`
 
-Returns
-[ListJobsResultResponseTypeDef](./type_defs.md#listjobsresultresponsetypedef).
+Returns [ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef).
 
 ### list_network_profiles
 
@@ -1068,7 +1070,7 @@ Boto3 documentation:
 [DeviceFarm.Client.list_network_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_network_profiles)
 
 Arguments mapping described in
-[ListNetworkProfilesRequestTypeDef](./type_defs.md#listnetworkprofilesrequesttypedef).
+[ListNetworkProfilesRequestRequestTypeDef](./type_defs.md#listnetworkprofilesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1077,7 +1079,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListNetworkProfilesResultResponseTypeDef](./type_defs.md#listnetworkprofilesresultresponsetypedef).
+[ListNetworkProfilesResultTypeDef](./type_defs.md#listnetworkprofilesresulttypedef).
 
 ### list_offering_promotions
 
@@ -1090,14 +1092,14 @@ Boto3 documentation:
 [DeviceFarm.Client.list_offering_promotions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_offering_promotions)
 
 Arguments mapping described in
-[ListOfferingPromotionsRequestTypeDef](./type_defs.md#listofferingpromotionsrequesttypedef).
+[ListOfferingPromotionsRequestRequestTypeDef](./type_defs.md#listofferingpromotionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `nextToken`: `str`
 
 Returns
-[ListOfferingPromotionsResultResponseTypeDef](./type_defs.md#listofferingpromotionsresultresponsetypedef).
+[ListOfferingPromotionsResultTypeDef](./type_defs.md#listofferingpromotionsresulttypedef).
 
 ### list_offering_transactions
 
@@ -1111,14 +1113,14 @@ Boto3 documentation:
 [DeviceFarm.Client.list_offering_transactions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_offering_transactions)
 
 Arguments mapping described in
-[ListOfferingTransactionsRequestTypeDef](./type_defs.md#listofferingtransactionsrequesttypedef).
+[ListOfferingTransactionsRequestRequestTypeDef](./type_defs.md#listofferingtransactionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `nextToken`: `str`
 
 Returns
-[ListOfferingTransactionsResultResponseTypeDef](./type_defs.md#listofferingtransactionsresultresponsetypedef).
+[ListOfferingTransactionsResultTypeDef](./type_defs.md#listofferingtransactionsresulttypedef).
 
 ### list_offerings
 
@@ -1131,14 +1133,14 @@ Boto3 documentation:
 [DeviceFarm.Client.list_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_offerings)
 
 Arguments mapping described in
-[ListOfferingsRequestTypeDef](./type_defs.md#listofferingsrequesttypedef).
+[ListOfferingsRequestRequestTypeDef](./type_defs.md#listofferingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `nextToken`: `str`
 
 Returns
-[ListOfferingsResultResponseTypeDef](./type_defs.md#listofferingsresultresponsetypedef).
+[ListOfferingsResultTypeDef](./type_defs.md#listofferingsresulttypedef).
 
 ### list_projects
 
@@ -1150,15 +1152,14 @@ Boto3 documentation:
 [DeviceFarm.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_projects)
 
 Arguments mapping described in
-[ListProjectsRequestTypeDef](./type_defs.md#listprojectsrequesttypedef).
+[ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str`
 - `nextToken`: `str`
 
-Returns
-[ListProjectsResultResponseTypeDef](./type_defs.md#listprojectsresultresponsetypedef).
+Returns [ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef).
 
 ### list_remote_access_sessions
 
@@ -1171,7 +1172,7 @@ Boto3 documentation:
 [DeviceFarm.Client.list_remote_access_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_remote_access_sessions)
 
 Arguments mapping described in
-[ListRemoteAccessSessionsRequestTypeDef](./type_defs.md#listremoteaccesssessionsrequesttypedef).
+[ListRemoteAccessSessionsRequestRequestTypeDef](./type_defs.md#listremoteaccesssessionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1179,7 +1180,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListRemoteAccessSessionsResultResponseTypeDef](./type_defs.md#listremoteaccesssessionsresultresponsetypedef).
+[ListRemoteAccessSessionsResultTypeDef](./type_defs.md#listremoteaccesssessionsresulttypedef).
 
 ### list_runs
 
@@ -1191,15 +1192,14 @@ Boto3 documentation:
 [DeviceFarm.Client.list_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_runs)
 
 Arguments mapping described in
-[ListRunsRequestTypeDef](./type_defs.md#listrunsrequesttypedef).
+[ListRunsRequestRequestTypeDef](./type_defs.md#listrunsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 - `nextToken`: `str`
 
-Returns
-[ListRunsResultResponseTypeDef](./type_defs.md#listrunsresultresponsetypedef).
+Returns [ListRunsResultTypeDef](./type_defs.md#listrunsresulttypedef).
 
 ### list_samples
 
@@ -1211,15 +1211,14 @@ Boto3 documentation:
 [DeviceFarm.Client.list_samples](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_samples)
 
 Arguments mapping described in
-[ListSamplesRequestTypeDef](./type_defs.md#listsamplesrequesttypedef).
+[ListSamplesRequestRequestTypeDef](./type_defs.md#listsamplesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 - `nextToken`: `str`
 
-Returns
-[ListSamplesResultResponseTypeDef](./type_defs.md#listsamplesresultresponsetypedef).
+Returns [ListSamplesResultTypeDef](./type_defs.md#listsamplesresulttypedef).
 
 ### list_suites
 
@@ -1231,15 +1230,14 @@ Boto3 documentation:
 [DeviceFarm.Client.list_suites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_suites)
 
 Arguments mapping described in
-[ListSuitesRequestTypeDef](./type_defs.md#listsuitesrequesttypedef).
+[ListSuitesRequestRequestTypeDef](./type_defs.md#listsuitesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 - `nextToken`: `str`
 
-Returns
-[ListSuitesResultResponseTypeDef](./type_defs.md#listsuitesresultresponsetypedef).
+Returns [ListSuitesResultTypeDef](./type_defs.md#listsuitesresulttypedef).
 
 ### list_tags_for_resource
 
@@ -1252,14 +1250,14 @@ Boto3 documentation:
 [DeviceFarm.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_test_grid_projects
 
@@ -1272,7 +1270,7 @@ Boto3 documentation:
 [DeviceFarm.Client.list_test_grid_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_projects)
 
 Arguments mapping described in
-[ListTestGridProjectsRequestTypeDef](./type_defs.md#listtestgridprojectsrequesttypedef).
+[ListTestGridProjectsRequestRequestTypeDef](./type_defs.md#listtestgridprojectsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1280,7 +1278,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTestGridProjectsResultResponseTypeDef](./type_defs.md#listtestgridprojectsresultresponsetypedef).
+[ListTestGridProjectsResultTypeDef](./type_defs.md#listtestgridprojectsresulttypedef).
 
 ### list_test_grid_session_actions
 
@@ -1293,7 +1291,7 @@ Boto3 documentation:
 [DeviceFarm.Client.list_test_grid_session_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_session_actions)
 
 Arguments mapping described in
-[ListTestGridSessionActionsRequestTypeDef](./type_defs.md#listtestgridsessionactionsrequesttypedef).
+[ListTestGridSessionActionsRequestRequestTypeDef](./type_defs.md#listtestgridsessionactionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1302,7 +1300,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTestGridSessionActionsResultResponseTypeDef](./type_defs.md#listtestgridsessionactionsresultresponsetypedef).
+[ListTestGridSessionActionsResultTypeDef](./type_defs.md#listtestgridsessionactionsresulttypedef).
 
 ### list_test_grid_session_artifacts
 
@@ -1315,7 +1313,7 @@ Boto3 documentation:
 [DeviceFarm.Client.list_test_grid_session_artifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_session_artifacts)
 
 Arguments mapping described in
-[ListTestGridSessionArtifactsRequestTypeDef](./type_defs.md#listtestgridsessionartifactsrequesttypedef).
+[ListTestGridSessionArtifactsRequestRequestTypeDef](./type_defs.md#listtestgridsessionartifactsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1326,7 +1324,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTestGridSessionArtifactsResultResponseTypeDef](./type_defs.md#listtestgridsessionartifactsresultresponsetypedef).
+[ListTestGridSessionArtifactsResultTypeDef](./type_defs.md#listtestgridsessionartifactsresulttypedef).
 
 ### list_test_grid_sessions
 
@@ -1339,7 +1337,7 @@ Boto3 documentation:
 [DeviceFarm.Client.list_test_grid_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_sessions)
 
 Arguments mapping described in
-[ListTestGridSessionsRequestTypeDef](./type_defs.md#listtestgridsessionsrequesttypedef).
+[ListTestGridSessionsRequestRequestTypeDef](./type_defs.md#listtestgridsessionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1354,7 +1352,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTestGridSessionsResultResponseTypeDef](./type_defs.md#listtestgridsessionsresultresponsetypedef).
+[ListTestGridSessionsResultTypeDef](./type_defs.md#listtestgridsessionsresulttypedef).
 
 ### list_tests
 
@@ -1366,15 +1364,14 @@ Boto3 documentation:
 [DeviceFarm.Client.list_tests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_tests)
 
 Arguments mapping described in
-[ListTestsRequestTypeDef](./type_defs.md#listtestsrequesttypedef).
+[ListTestsRequestRequestTypeDef](./type_defs.md#listtestsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 - `nextToken`: `str`
 
-Returns
-[ListTestsResultResponseTypeDef](./type_defs.md#listtestsresultresponsetypedef).
+Returns [ListTestsResultTypeDef](./type_defs.md#listtestsresulttypedef).
 
 ### list_unique_problems
 
@@ -1386,7 +1383,7 @@ Boto3 documentation:
 [DeviceFarm.Client.list_unique_problems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_unique_problems)
 
 Arguments mapping described in
-[ListUniqueProblemsRequestTypeDef](./type_defs.md#listuniqueproblemsrequesttypedef).
+[ListUniqueProblemsRequestRequestTypeDef](./type_defs.md#listuniqueproblemsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1394,7 +1391,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListUniqueProblemsResultResponseTypeDef](./type_defs.md#listuniqueproblemsresultresponsetypedef).
+[ListUniqueProblemsResultTypeDef](./type_defs.md#listuniqueproblemsresulttypedef).
 
 ### list_uploads
 
@@ -1406,7 +1403,7 @@ Boto3 documentation:
 [DeviceFarm.Client.list_uploads](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_uploads)
 
 Arguments mapping described in
-[ListUploadsRequestTypeDef](./type_defs.md#listuploadsrequesttypedef).
+[ListUploadsRequestRequestTypeDef](./type_defs.md#listuploadsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1414,8 +1411,7 @@ Keyword-only arguments:
 - `type`: [UploadTypeType](./literals.md#uploadtypetype)
 - `nextToken`: `str`
 
-Returns
-[ListUploadsResultResponseTypeDef](./type_defs.md#listuploadsresultresponsetypedef).
+Returns [ListUploadsResultTypeDef](./type_defs.md#listuploadsresulttypedef).
 
 ### list_vpce_configurations
 
@@ -1429,7 +1425,7 @@ Boto3 documentation:
 [DeviceFarm.Client.list_vpce_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_vpce_configurations)
 
 Arguments mapping described in
-[ListVPCEConfigurationsRequestTypeDef](./type_defs.md#listvpceconfigurationsrequesttypedef).
+[ListVPCEConfigurationsRequestRequestTypeDef](./type_defs.md#listvpceconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1437,7 +1433,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListVPCEConfigurationsResultResponseTypeDef](./type_defs.md#listvpceconfigurationsresultresponsetypedef).
+[ListVPCEConfigurationsResultTypeDef](./type_defs.md#listvpceconfigurationsresulttypedef).
 
 ### purchase_offering
 
@@ -1449,7 +1445,7 @@ Boto3 documentation:
 [DeviceFarm.Client.purchase_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.purchase_offering)
 
 Arguments mapping described in
-[PurchaseOfferingRequestTypeDef](./type_defs.md#purchaseofferingrequesttypedef).
+[PurchaseOfferingRequestRequestTypeDef](./type_defs.md#purchaseofferingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1458,7 +1454,7 @@ Keyword-only arguments:
 - `offeringPromotionId`: `str`
 
 Returns
-[PurchaseOfferingResultResponseTypeDef](./type_defs.md#purchaseofferingresultresponsetypedef).
+[PurchaseOfferingResultTypeDef](./type_defs.md#purchaseofferingresulttypedef).
 
 ### renew_offering
 
@@ -1471,7 +1467,7 @@ Boto3 documentation:
 [DeviceFarm.Client.renew_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.renew_offering)
 
 Arguments mapping described in
-[RenewOfferingRequestTypeDef](./type_defs.md#renewofferingrequesttypedef).
+[RenewOfferingRequestRequestTypeDef](./type_defs.md#renewofferingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1479,7 +1475,7 @@ Keyword-only arguments:
 - `quantity`: `int` *(required)*
 
 Returns
-[RenewOfferingResultResponseTypeDef](./type_defs.md#renewofferingresultresponsetypedef).
+[RenewOfferingResultTypeDef](./type_defs.md#renewofferingresulttypedef).
 
 ### schedule_run
 
@@ -1491,7 +1487,7 @@ Boto3 documentation:
 [DeviceFarm.Client.schedule_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.schedule_run)
 
 Arguments mapping described in
-[ScheduleRunRequestTypeDef](./type_defs.md#schedulerunrequesttypedef).
+[ScheduleRunRequestRequestTypeDef](./type_defs.md#schedulerunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1508,8 +1504,7 @@ Keyword-only arguments:
 - `executionConfiguration`:
   [ExecutionConfigurationTypeDef](./type_defs.md#executionconfigurationtypedef)
 
-Returns
-[ScheduleRunResultResponseTypeDef](./type_defs.md#schedulerunresultresponsetypedef).
+Returns [ScheduleRunResultTypeDef](./type_defs.md#schedulerunresulttypedef).
 
 ### stop_job
 
@@ -1521,14 +1516,13 @@ Boto3 documentation:
 [DeviceFarm.Client.stop_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.stop_job)
 
 Arguments mapping described in
-[StopJobRequestTypeDef](./type_defs.md#stopjobrequesttypedef).
+[StopJobRequestRequestTypeDef](./type_defs.md#stopjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
-Returns
-[StopJobResultResponseTypeDef](./type_defs.md#stopjobresultresponsetypedef).
+Returns [StopJobResultTypeDef](./type_defs.md#stopjobresulttypedef).
 
 ### stop_remote_access_session
 
@@ -1541,14 +1535,14 @@ Boto3 documentation:
 [DeviceFarm.Client.stop_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.stop_remote_access_session)
 
 Arguments mapping described in
-[StopRemoteAccessSessionRequestTypeDef](./type_defs.md#stopremoteaccesssessionrequesttypedef).
+[StopRemoteAccessSessionRequestRequestTypeDef](./type_defs.md#stopremoteaccesssessionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
 Returns
-[StopRemoteAccessSessionResultResponseTypeDef](./type_defs.md#stopremoteaccesssessionresultresponsetypedef).
+[StopRemoteAccessSessionResultTypeDef](./type_defs.md#stopremoteaccesssessionresulttypedef).
 
 ### stop_run
 
@@ -1560,14 +1554,13 @@ Boto3 documentation:
 [DeviceFarm.Client.stop_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.stop_run)
 
 Arguments mapping described in
-[StopRunRequestTypeDef](./type_defs.md#stoprunrequesttypedef).
+[StopRunRequestRequestTypeDef](./type_defs.md#stoprunrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
-Returns
-[StopRunResultResponseTypeDef](./type_defs.md#stoprunresultresponsetypedef).
+Returns [StopRunResultTypeDef](./type_defs.md#stoprunresulttypedef).
 
 ### tag_resource
 
@@ -1579,7 +1572,7 @@ Boto3 documentation:
 [DeviceFarm.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1598,7 +1591,7 @@ Boto3 documentation:
 [DeviceFarm.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1618,7 +1611,7 @@ Boto3 documentation:
 [DeviceFarm.Client.update_device_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_device_instance)
 
 Arguments mapping described in
-[UpdateDeviceInstanceRequestTypeDef](./type_defs.md#updatedeviceinstancerequesttypedef).
+[UpdateDeviceInstanceRequestRequestTypeDef](./type_defs.md#updatedeviceinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1627,7 +1620,7 @@ Keyword-only arguments:
 - `labels`: `List`\[`str`\]
 
 Returns
-[UpdateDeviceInstanceResultResponseTypeDef](./type_defs.md#updatedeviceinstanceresultresponsetypedef).
+[UpdateDeviceInstanceResultTypeDef](./type_defs.md#updatedeviceinstanceresulttypedef).
 
 ### update_device_pool
 
@@ -1640,7 +1633,7 @@ Boto3 documentation:
 [DeviceFarm.Client.update_device_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_device_pool)
 
 Arguments mapping described in
-[UpdateDevicePoolRequestTypeDef](./type_defs.md#updatedevicepoolrequesttypedef).
+[UpdateDevicePoolRequestRequestTypeDef](./type_defs.md#updatedevicepoolrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1652,7 +1645,7 @@ Keyword-only arguments:
 - `clearMaxDevices`: `bool`
 
 Returns
-[UpdateDevicePoolResultResponseTypeDef](./type_defs.md#updatedevicepoolresultresponsetypedef).
+[UpdateDevicePoolResultTypeDef](./type_defs.md#updatedevicepoolresulttypedef).
 
 ### update_instance_profile
 
@@ -1665,7 +1658,7 @@ Boto3 documentation:
 [DeviceFarm.Client.update_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_instance_profile)
 
 Arguments mapping described in
-[UpdateInstanceProfileRequestTypeDef](./type_defs.md#updateinstanceprofilerequesttypedef).
+[UpdateInstanceProfileRequestRequestTypeDef](./type_defs.md#updateinstanceprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1677,7 +1670,7 @@ Keyword-only arguments:
 - `rebootAfterUse`: `bool`
 
 Returns
-[UpdateInstanceProfileResultResponseTypeDef](./type_defs.md#updateinstanceprofileresultresponsetypedef).
+[UpdateInstanceProfileResultTypeDef](./type_defs.md#updateinstanceprofileresulttypedef).
 
 ### update_network_profile
 
@@ -1690,7 +1683,7 @@ Boto3 documentation:
 [DeviceFarm.Client.update_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_network_profile)
 
 Arguments mapping described in
-[UpdateNetworkProfileRequestTypeDef](./type_defs.md#updatenetworkprofilerequesttypedef).
+[UpdateNetworkProfileRequestRequestTypeDef](./type_defs.md#updatenetworkprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1708,7 +1701,7 @@ Keyword-only arguments:
 - `downlinkLossPercent`: `int`
 
 Returns
-[UpdateNetworkProfileResultResponseTypeDef](./type_defs.md#updatenetworkprofileresultresponsetypedef).
+[UpdateNetworkProfileResultTypeDef](./type_defs.md#updatenetworkprofileresulttypedef).
 
 ### update_project
 
@@ -1720,7 +1713,7 @@ Boto3 documentation:
 [DeviceFarm.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_project)
 
 Arguments mapping described in
-[UpdateProjectRequestTypeDef](./type_defs.md#updateprojectrequesttypedef).
+[UpdateProjectRequestRequestTypeDef](./type_defs.md#updateprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1729,7 +1722,7 @@ Keyword-only arguments:
 - `defaultJobTimeoutMinutes`: `int`
 
 Returns
-[UpdateProjectResultResponseTypeDef](./type_defs.md#updateprojectresultresponsetypedef).
+[UpdateProjectResultTypeDef](./type_defs.md#updateprojectresulttypedef).
 
 ### update_test_grid_project
 
@@ -1742,7 +1735,7 @@ Boto3 documentation:
 [DeviceFarm.Client.update_test_grid_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_test_grid_project)
 
 Arguments mapping described in
-[UpdateTestGridProjectRequestTypeDef](./type_defs.md#updatetestgridprojectrequesttypedef).
+[UpdateTestGridProjectRequestRequestTypeDef](./type_defs.md#updatetestgridprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1753,7 +1746,7 @@ Keyword-only arguments:
   [TestGridVpcConfigTypeDef](./type_defs.md#testgridvpcconfigtypedef)
 
 Returns
-[UpdateTestGridProjectResultResponseTypeDef](./type_defs.md#updatetestgridprojectresultresponsetypedef).
+[UpdateTestGridProjectResultTypeDef](./type_defs.md#updatetestgridprojectresulttypedef).
 
 ### update_upload
 
@@ -1765,7 +1758,7 @@ Boto3 documentation:
 [DeviceFarm.Client.update_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_upload)
 
 Arguments mapping described in
-[UpdateUploadRequestTypeDef](./type_defs.md#updateuploadrequesttypedef).
+[UpdateUploadRequestRequestTypeDef](./type_defs.md#updateuploadrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1774,8 +1767,7 @@ Keyword-only arguments:
 - `contentType`: `str`
 - `editContent`: `bool`
 
-Returns
-[UpdateUploadResultResponseTypeDef](./type_defs.md#updateuploadresultresponsetypedef).
+Returns [UpdateUploadResultTypeDef](./type_defs.md#updateuploadresulttypedef).
 
 ### update_vpce_configuration
 
@@ -1789,7 +1781,7 @@ Boto3 documentation:
 [DeviceFarm.Client.update_vpce_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_vpce_configuration)
 
 Arguments mapping described in
-[UpdateVPCEConfigurationRequestTypeDef](./type_defs.md#updatevpceconfigurationrequesttypedef).
+[UpdateVPCEConfigurationRequestRequestTypeDef](./type_defs.md#updatevpceconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1800,7 +1792,7 @@ Keyword-only arguments:
 - `vpceConfigurationDescription`: `str`
 
 Returns
-[UpdateVPCEConfigurationResultResponseTypeDef](./type_defs.md#updatevpceconfigurationresultresponsetypedef).
+[UpdateVPCEConfigurationResultTypeDef](./type_defs.md#updatevpceconfigurationresulttypedef).
 
 ### get_paginator
 

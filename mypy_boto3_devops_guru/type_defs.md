@@ -8,8 +8,8 @@ type annotations stubs module
 [mypy_boto3_devops_guru](https://pypi.org/project/mypy-boto3-devops-guru/).
 
 - [Typed dictionaries for boto3 DevOpsGuru module](#typed-dictionaries-for-boto3-devopsguru-module)
-  - [AddNotificationChannelRequestTypeDef](#addnotificationchannelrequesttypedef)
-  - [AddNotificationChannelResponseResponseTypeDef](#addnotificationchannelresponseresponsetypedef)
+  - [AddNotificationChannelRequestRequestTypeDef](#addnotificationchannelrequestrequesttypedef)
+  - [AddNotificationChannelResponseTypeDef](#addnotificationchannelresponsetypedef)
   - [AnomalySourceDetailsTypeDef](#anomalysourcedetailstypedef)
   - [AnomalyTimeRangeTypeDef](#anomalytimerangetypedef)
   - [CloudFormationCollectionFilterTypeDef](#cloudformationcollectionfiltertypedef)
@@ -20,44 +20,44 @@ type annotations stubs module
   - [CloudWatchMetricsDimensionTypeDef](#cloudwatchmetricsdimensiontypedef)
   - [CostEstimationResourceCollectionFilterTypeDef](#costestimationresourcecollectionfiltertypedef)
   - [CostEstimationTimeRangeTypeDef](#costestimationtimerangetypedef)
-  - [DescribeAccountHealthResponseResponseTypeDef](#describeaccounthealthresponseresponsetypedef)
-  - [DescribeAccountOverviewRequestTypeDef](#describeaccountoverviewrequesttypedef)
-  - [DescribeAccountOverviewResponseResponseTypeDef](#describeaccountoverviewresponseresponsetypedef)
-  - [DescribeAnomalyRequestTypeDef](#describeanomalyrequesttypedef)
-  - [DescribeAnomalyResponseResponseTypeDef](#describeanomalyresponseresponsetypedef)
-  - [DescribeFeedbackRequestTypeDef](#describefeedbackrequesttypedef)
-  - [DescribeFeedbackResponseResponseTypeDef](#describefeedbackresponseresponsetypedef)
-  - [DescribeInsightRequestTypeDef](#describeinsightrequesttypedef)
-  - [DescribeInsightResponseResponseTypeDef](#describeinsightresponseresponsetypedef)
-  - [DescribeResourceCollectionHealthRequestTypeDef](#describeresourcecollectionhealthrequesttypedef)
-  - [DescribeResourceCollectionHealthResponseResponseTypeDef](#describeresourcecollectionhealthresponseresponsetypedef)
-  - [DescribeServiceIntegrationResponseResponseTypeDef](#describeserviceintegrationresponseresponsetypedef)
+  - [DescribeAccountHealthResponseTypeDef](#describeaccounthealthresponsetypedef)
+  - [DescribeAccountOverviewRequestRequestTypeDef](#describeaccountoverviewrequestrequesttypedef)
+  - [DescribeAccountOverviewResponseTypeDef](#describeaccountoverviewresponsetypedef)
+  - [DescribeAnomalyRequestRequestTypeDef](#describeanomalyrequestrequesttypedef)
+  - [DescribeAnomalyResponseTypeDef](#describeanomalyresponsetypedef)
+  - [DescribeFeedbackRequestRequestTypeDef](#describefeedbackrequestrequesttypedef)
+  - [DescribeFeedbackResponseTypeDef](#describefeedbackresponsetypedef)
+  - [DescribeInsightRequestRequestTypeDef](#describeinsightrequestrequesttypedef)
+  - [DescribeInsightResponseTypeDef](#describeinsightresponsetypedef)
+  - [DescribeResourceCollectionHealthRequestRequestTypeDef](#describeresourcecollectionhealthrequestrequesttypedef)
+  - [DescribeResourceCollectionHealthResponseTypeDef](#describeresourcecollectionhealthresponsetypedef)
+  - [DescribeServiceIntegrationResponseTypeDef](#describeserviceintegrationresponsetypedef)
   - [EndTimeRangeTypeDef](#endtimerangetypedef)
   - [EventResourceTypeDef](#eventresourcetypedef)
   - [EventTimeRangeTypeDef](#eventtimerangetypedef)
   - [EventTypeDef](#eventtypedef)
-  - [GetCostEstimationRequestTypeDef](#getcostestimationrequesttypedef)
-  - [GetCostEstimationResponseResponseTypeDef](#getcostestimationresponseresponsetypedef)
-  - [GetResourceCollectionRequestTypeDef](#getresourcecollectionrequesttypedef)
-  - [GetResourceCollectionResponseResponseTypeDef](#getresourcecollectionresponseresponsetypedef)
+  - [GetCostEstimationRequestRequestTypeDef](#getcostestimationrequestrequesttypedef)
+  - [GetCostEstimationResponseTypeDef](#getcostestimationresponsetypedef)
+  - [GetResourceCollectionRequestRequestTypeDef](#getresourcecollectionrequestrequesttypedef)
+  - [GetResourceCollectionResponseTypeDef](#getresourcecollectionresponsetypedef)
   - [InsightFeedbackTypeDef](#insightfeedbacktypedef)
   - [InsightHealthTypeDef](#insighthealthtypedef)
   - [InsightTimeRangeTypeDef](#insighttimerangetypedef)
-  - [ListAnomaliesForInsightRequestTypeDef](#listanomaliesforinsightrequesttypedef)
-  - [ListAnomaliesForInsightResponseResponseTypeDef](#listanomaliesforinsightresponseresponsetypedef)
+  - [ListAnomaliesForInsightRequestRequestTypeDef](#listanomaliesforinsightrequestrequesttypedef)
+  - [ListAnomaliesForInsightResponseTypeDef](#listanomaliesforinsightresponsetypedef)
   - [ListEventsFiltersTypeDef](#listeventsfilterstypedef)
-  - [ListEventsRequestTypeDef](#listeventsrequesttypedef)
-  - [ListEventsResponseResponseTypeDef](#listeventsresponseresponsetypedef)
+  - [ListEventsRequestRequestTypeDef](#listeventsrequestrequesttypedef)
+  - [ListEventsResponseTypeDef](#listeventsresponsetypedef)
   - [ListInsightsAnyStatusFilterTypeDef](#listinsightsanystatusfiltertypedef)
   - [ListInsightsClosedStatusFilterTypeDef](#listinsightsclosedstatusfiltertypedef)
   - [ListInsightsOngoingStatusFilterTypeDef](#listinsightsongoingstatusfiltertypedef)
-  - [ListInsightsRequestTypeDef](#listinsightsrequesttypedef)
-  - [ListInsightsResponseResponseTypeDef](#listinsightsresponseresponsetypedef)
+  - [ListInsightsRequestRequestTypeDef](#listinsightsrequestrequesttypedef)
+  - [ListInsightsResponseTypeDef](#listinsightsresponsetypedef)
   - [ListInsightsStatusFilterTypeDef](#listinsightsstatusfiltertypedef)
-  - [ListNotificationChannelsRequestTypeDef](#listnotificationchannelsrequesttypedef)
-  - [ListNotificationChannelsResponseResponseTypeDef](#listnotificationchannelsresponseresponsetypedef)
-  - [ListRecommendationsRequestTypeDef](#listrecommendationsrequesttypedef)
-  - [ListRecommendationsResponseResponseTypeDef](#listrecommendationsresponseresponsetypedef)
+  - [ListNotificationChannelsRequestRequestTypeDef](#listnotificationchannelsrequestrequesttypedef)
+  - [ListNotificationChannelsResponseTypeDef](#listnotificationchannelsresponsetypedef)
+  - [ListRecommendationsRequestRequestTypeDef](#listrecommendationsrequestrequesttypedef)
+  - [ListRecommendationsResponseTypeDef](#listrecommendationsresponsetypedef)
   - [NotificationChannelConfigTypeDef](#notificationchannelconfigtypedef)
   - [NotificationChannelTypeDef](#notificationchanneltypedef)
   - [OpsCenterIntegrationConfigTypeDef](#opscenterintegrationconfigtypedef)
@@ -68,7 +68,7 @@ type annotations stubs module
   - [ProactiveAnomalyTypeDef](#proactiveanomalytypedef)
   - [ProactiveInsightSummaryTypeDef](#proactiveinsightsummarytypedef)
   - [ProactiveInsightTypeDef](#proactiveinsighttypedef)
-  - [PutFeedbackRequestTypeDef](#putfeedbackrequesttypedef)
+  - [PutFeedbackRequestRequestTypeDef](#putfeedbackrequestrequesttypedef)
   - [ReactiveAnomalySummaryTypeDef](#reactiveanomalysummarytypedef)
   - [ReactiveAnomalyTypeDef](#reactiveanomalytypedef)
   - [ReactiveInsightSummaryTypeDef](#reactiveinsightsummarytypedef)
@@ -80,31 +80,31 @@ type annotations stubs module
   - [RecommendationRelatedEventResourceTypeDef](#recommendationrelatedeventresourcetypedef)
   - [RecommendationRelatedEventTypeDef](#recommendationrelatedeventtypedef)
   - [RecommendationTypeDef](#recommendationtypedef)
-  - [RemoveNotificationChannelRequestTypeDef](#removenotificationchannelrequesttypedef)
+  - [RemoveNotificationChannelRequestRequestTypeDef](#removenotificationchannelrequestrequesttypedef)
   - [ResourceCollectionFilterTypeDef](#resourcecollectionfiltertypedef)
   - [ResourceCollectionTypeDef](#resourcecollectiontypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SearchInsightsFiltersTypeDef](#searchinsightsfilterstypedef)
-  - [SearchInsightsRequestTypeDef](#searchinsightsrequesttypedef)
-  - [SearchInsightsResponseResponseTypeDef](#searchinsightsresponseresponsetypedef)
+  - [SearchInsightsRequestRequestTypeDef](#searchinsightsrequestrequesttypedef)
+  - [SearchInsightsResponseTypeDef](#searchinsightsresponsetypedef)
   - [ServiceCollectionTypeDef](#servicecollectiontypedef)
   - [ServiceHealthTypeDef](#servicehealthtypedef)
   - [ServiceInsightHealthTypeDef](#serviceinsighthealthtypedef)
   - [ServiceIntegrationConfigTypeDef](#serviceintegrationconfigtypedef)
   - [ServiceResourceCostTypeDef](#serviceresourcecosttypedef)
   - [SnsChannelConfigTypeDef](#snschannelconfigtypedef)
-  - [StartCostEstimationRequestTypeDef](#startcostestimationrequesttypedef)
+  - [StartCostEstimationRequestRequestTypeDef](#startcostestimationrequestrequesttypedef)
   - [StartTimeRangeTypeDef](#starttimerangetypedef)
   - [UpdateCloudFormationCollectionFilterTypeDef](#updatecloudformationcollectionfiltertypedef)
   - [UpdateResourceCollectionFilterTypeDef](#updateresourcecollectionfiltertypedef)
-  - [UpdateResourceCollectionRequestTypeDef](#updateresourcecollectionrequesttypedef)
+  - [UpdateResourceCollectionRequestRequestTypeDef](#updateresourcecollectionrequestrequesttypedef)
   - [UpdateServiceIntegrationConfigTypeDef](#updateserviceintegrationconfigtypedef)
-  - [UpdateServiceIntegrationRequestTypeDef](#updateserviceintegrationrequesttypedef)
+  - [UpdateServiceIntegrationRequestRequestTypeDef](#updateserviceintegrationrequestrequesttypedef)
 
-## AddNotificationChannelRequestTypeDef
+## AddNotificationChannelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import AddNotificationChannelRequestTypeDef
+from mypy_boto3_devops_guru.type_defs import AddNotificationChannelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -112,10 +112,10 @@ Required fields:
 - `Config`:
   [NotificationChannelConfigTypeDef](./type_defs.md#notificationchannelconfigtypedef)
 
-## AddNotificationChannelResponseResponseTypeDef
+## AddNotificationChannelResponseTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import AddNotificationChannelResponseResponseTypeDef
+from mypy_boto3_devops_guru.type_defs import AddNotificationChannelResponseTypeDef
 ```
 
 Required fields:
@@ -239,10 +239,10 @@ Optional fields:
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 
-## DescribeAccountHealthResponseResponseTypeDef
+## DescribeAccountHealthResponseTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import DescribeAccountHealthResponseResponseTypeDef
+from mypy_boto3_devops_guru.type_defs import DescribeAccountHealthResponseTypeDef
 ```
 
 Required fields:
@@ -254,10 +254,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAccountOverviewRequestTypeDef
+## DescribeAccountOverviewRequestRequestTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import DescribeAccountOverviewRequestTypeDef
+from mypy_boto3_devops_guru.type_defs import DescribeAccountOverviewRequestRequestTypeDef
 ```
 
 Required fields:
@@ -268,10 +268,10 @@ Optional fields:
 
 - `ToTime`: `Union`\[`datetime`, `str`\]
 
-## DescribeAccountOverviewResponseResponseTypeDef
+## DescribeAccountOverviewResponseTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import DescribeAccountOverviewResponseResponseTypeDef
+from mypy_boto3_devops_guru.type_defs import DescribeAccountOverviewResponseTypeDef
 ```
 
 Required fields:
@@ -282,20 +282,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAnomalyRequestTypeDef
+## DescribeAnomalyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import DescribeAnomalyRequestTypeDef
+from mypy_boto3_devops_guru.type_defs import DescribeAnomalyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Id`: `str`
 
-## DescribeAnomalyResponseResponseTypeDef
+## DescribeAnomalyResponseTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import DescribeAnomalyResponseResponseTypeDef
+from mypy_boto3_devops_guru.type_defs import DescribeAnomalyResponseTypeDef
 ```
 
 Required fields:
@@ -307,20 +307,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFeedbackRequestTypeDef
+## DescribeFeedbackRequestRequestTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import DescribeFeedbackRequestTypeDef
+from mypy_boto3_devops_guru.type_defs import DescribeFeedbackRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `InsightId`: `str`
 
-## DescribeFeedbackResponseResponseTypeDef
+## DescribeFeedbackResponseTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import DescribeFeedbackResponseResponseTypeDef
+from mypy_boto3_devops_guru.type_defs import DescribeFeedbackResponseTypeDef
 ```
 
 Required fields:
@@ -330,20 +330,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInsightRequestTypeDef
+## DescribeInsightRequestRequestTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import DescribeInsightRequestTypeDef
+from mypy_boto3_devops_guru.type_defs import DescribeInsightRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Id`: `str`
 
-## DescribeInsightResponseResponseTypeDef
+## DescribeInsightResponseTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import DescribeInsightResponseResponseTypeDef
+from mypy_boto3_devops_guru.type_defs import DescribeInsightResponseTypeDef
 ```
 
 Required fields:
@@ -355,10 +355,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeResourceCollectionHealthRequestTypeDef
+## DescribeResourceCollectionHealthRequestRequestTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import DescribeResourceCollectionHealthRequestTypeDef
+from mypy_boto3_devops_guru.type_defs import DescribeResourceCollectionHealthRequestRequestTypeDef
 ```
 
 Required fields:
@@ -370,10 +370,10 @@ Optional fields:
 
 - `NextToken`: `str`
 
-## DescribeResourceCollectionHealthResponseResponseTypeDef
+## DescribeResourceCollectionHealthResponseTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import DescribeResourceCollectionHealthResponseResponseTypeDef
+from mypy_boto3_devops_guru.type_defs import DescribeResourceCollectionHealthResponseTypeDef
 ```
 
 Required fields:
@@ -386,10 +386,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeServiceIntegrationResponseResponseTypeDef
+## DescribeServiceIntegrationResponseTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import DescribeServiceIntegrationResponseResponseTypeDef
+from mypy_boto3_devops_guru.type_defs import DescribeServiceIntegrationResponseTypeDef
 ```
 
 Required fields:
@@ -452,20 +452,20 @@ Optional fields:
 - `Resources`:
   `List`\[[EventResourceTypeDef](./type_defs.md#eventresourcetypedef)\]
 
-## GetCostEstimationRequestTypeDef
+## GetCostEstimationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import GetCostEstimationRequestTypeDef
+from mypy_boto3_devops_guru.type_defs import GetCostEstimationRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `NextToken`: `str`
 
-## GetCostEstimationResponseResponseTypeDef
+## GetCostEstimationResponseTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import GetCostEstimationResponseResponseTypeDef
+from mypy_boto3_devops_guru.type_defs import GetCostEstimationResponseTypeDef
 ```
 
 Required fields:
@@ -482,10 +482,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResourceCollectionRequestTypeDef
+## GetResourceCollectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import GetResourceCollectionRequestTypeDef
+from mypy_boto3_devops_guru.type_defs import GetResourceCollectionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -497,10 +497,10 @@ Optional fields:
 
 - `NextToken`: `str`
 
-## GetResourceCollectionResponseResponseTypeDef
+## GetResourceCollectionResponseTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import GetResourceCollectionResponseResponseTypeDef
+from mypy_boto3_devops_guru.type_defs import GetResourceCollectionResponseTypeDef
 ```
 
 Required fields:
@@ -549,10 +549,10 @@ Optional fields:
 
 - `EndTime`: `datetime`
 
-## ListAnomaliesForInsightRequestTypeDef
+## ListAnomaliesForInsightRequestRequestTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import ListAnomaliesForInsightRequestTypeDef
+from mypy_boto3_devops_guru.type_defs import ListAnomaliesForInsightRequestRequestTypeDef
 ```
 
 Required fields:
@@ -566,10 +566,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListAnomaliesForInsightResponseResponseTypeDef
+## ListAnomaliesForInsightResponseTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import ListAnomaliesForInsightResponseResponseTypeDef
+from mypy_boto3_devops_guru.type_defs import ListAnomaliesForInsightResponseTypeDef
 ```
 
 Required fields:
@@ -599,10 +599,10 @@ Optional fields:
 - `ResourceCollection`:
   [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 
-## ListEventsRequestTypeDef
+## ListEventsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import ListEventsRequestTypeDef
+from mypy_boto3_devops_guru.type_defs import ListEventsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -615,10 +615,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListEventsResponseResponseTypeDef
+## ListEventsResponseTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import ListEventsResponseResponseTypeDef
+from mypy_boto3_devops_guru.type_defs import ListEventsResponseTypeDef
 ```
 
 Required fields:
@@ -661,10 +661,10 @@ Required fields:
 
 - `Type`: [InsightTypeType](./literals.md#insighttypetype)
 
-## ListInsightsRequestTypeDef
+## ListInsightsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import ListInsightsRequestTypeDef
+from mypy_boto3_devops_guru.type_defs import ListInsightsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -677,10 +677,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListInsightsResponseResponseTypeDef
+## ListInsightsResponseTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import ListInsightsResponseResponseTypeDef
+from mypy_boto3_devops_guru.type_defs import ListInsightsResponseTypeDef
 ```
 
 Required fields:
@@ -708,20 +708,20 @@ Optional fields:
 - `Any`:
   [ListInsightsAnyStatusFilterTypeDef](./type_defs.md#listinsightsanystatusfiltertypedef)
 
-## ListNotificationChannelsRequestTypeDef
+## ListNotificationChannelsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import ListNotificationChannelsRequestTypeDef
+from mypy_boto3_devops_guru.type_defs import ListNotificationChannelsRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `NextToken`: `str`
 
-## ListNotificationChannelsResponseResponseTypeDef
+## ListNotificationChannelsResponseTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import ListNotificationChannelsResponseResponseTypeDef
+from mypy_boto3_devops_guru.type_defs import ListNotificationChannelsResponseTypeDef
 ```
 
 Required fields:
@@ -732,10 +732,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRecommendationsRequestTypeDef
+## ListRecommendationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import ListRecommendationsRequestTypeDef
+from mypy_boto3_devops_guru.type_defs import ListRecommendationsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -747,10 +747,10 @@ Optional fields:
 - `NextToken`: `str`
 - `Locale`: [LocaleType](./literals.md#localetype)
 
-## ListRecommendationsResponseResponseTypeDef
+## ListRecommendationsResponseTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import ListRecommendationsResponseResponseTypeDef
+from mypy_boto3_devops_guru.type_defs import ListRecommendationsResponseTypeDef
 ```
 
 Required fields:
@@ -916,10 +916,10 @@ Optional fields:
   [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 - `SsmOpsItemId`: `str`
 
-## PutFeedbackRequestTypeDef
+## PutFeedbackRequestRequestTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import PutFeedbackRequestTypeDef
+from mypy_boto3_devops_guru.type_defs import PutFeedbackRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1088,10 +1088,10 @@ Optional fields:
 - `RelatedAnomalies`:
   `List`\[[RecommendationRelatedAnomalyTypeDef](./type_defs.md#recommendationrelatedanomalytypedef)\]
 
-## RemoveNotificationChannelRequestTypeDef
+## RemoveNotificationChannelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import RemoveNotificationChannelRequestTypeDef
+from mypy_boto3_devops_guru.type_defs import RemoveNotificationChannelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1150,10 +1150,10 @@ Optional fields:
 - `ServiceCollection`:
   [ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef)
 
-## SearchInsightsRequestTypeDef
+## SearchInsightsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import SearchInsightsRequestTypeDef
+from mypy_boto3_devops_guru.type_defs import SearchInsightsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1169,10 +1169,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## SearchInsightsResponseResponseTypeDef
+## SearchInsightsResponseTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import SearchInsightsResponseResponseTypeDef
+from mypy_boto3_devops_guru.type_defs import SearchInsightsResponseTypeDef
 ```
 
 Required fields:
@@ -1254,10 +1254,10 @@ Optional fields:
 
 - `TopicArn`: `str`
 
-## StartCostEstimationRequestTypeDef
+## StartCostEstimationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import StartCostEstimationRequestTypeDef
+from mypy_boto3_devops_guru.type_defs import StartCostEstimationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1301,10 +1301,10 @@ Optional fields:
 - `CloudFormation`:
   [UpdateCloudFormationCollectionFilterTypeDef](./type_defs.md#updatecloudformationcollectionfiltertypedef)
 
-## UpdateResourceCollectionRequestTypeDef
+## UpdateResourceCollectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import UpdateResourceCollectionRequestTypeDef
+from mypy_boto3_devops_guru.type_defs import UpdateResourceCollectionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1325,10 +1325,10 @@ Optional fields:
 - `OpsCenter`:
   [OpsCenterIntegrationConfigTypeDef](./type_defs.md#opscenterintegrationconfigtypedef)
 
-## UpdateServiceIntegrationRequestTypeDef
+## UpdateServiceIntegrationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_devops_guru.type_defs import UpdateServiceIntegrationRequestTypeDef
+from mypy_boto3_devops_guru.type_defs import UpdateServiceIntegrationRequestRequestTypeDef
 ```
 
 Required fields:

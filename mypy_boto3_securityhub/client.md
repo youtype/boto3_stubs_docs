@@ -11,6 +11,7 @@ type annotations stubs module
   - [SecurityHubClient](#securityhubclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [accept_administrator_invitation](#accept_administrator_invitation)
     - [accept_invitation](#accept_invitation)
     - [batch_disable_standards](#batch_disable_standards)
@@ -107,6 +108,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+SecurityHubClient exceptions.
+
+Type annotations for `boto3.client("securityhub").exceptions` method.
+
+Boto3 documentation:
+[SecurityHub.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### accept_administrator_invitation
 
 Accepts the invitation to be a member account and be monitored by the Security
@@ -119,7 +131,7 @@ Boto3 documentation:
 [SecurityHub.Client.accept_administrator_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.accept_administrator_invitation)
 
 Arguments mapping described in
-[AcceptAdministratorInvitationRequestTypeDef](./type_defs.md#acceptadministratorinvitationrequesttypedef).
+[AcceptAdministratorInvitationRequestRequestTypeDef](./type_defs.md#acceptadministratorinvitationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -138,7 +150,7 @@ Boto3 documentation:
 [SecurityHub.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.accept_invitation)
 
 Arguments mapping described in
-[AcceptInvitationRequestTypeDef](./type_defs.md#acceptinvitationrequesttypedef).
+[AcceptInvitationRequestRequestTypeDef](./type_defs.md#acceptinvitationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -158,14 +170,14 @@ Boto3 documentation:
 [SecurityHub.Client.batch_disable_standards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_disable_standards)
 
 Arguments mapping described in
-[BatchDisableStandardsRequestTypeDef](./type_defs.md#batchdisablestandardsrequesttypedef).
+[BatchDisableStandardsRequestRequestTypeDef](./type_defs.md#batchdisablestandardsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `StandardsSubscriptionArns`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDisableStandardsResponseResponseTypeDef](./type_defs.md#batchdisablestandardsresponseresponsetypedef).
+[BatchDisableStandardsResponseTypeDef](./type_defs.md#batchdisablestandardsresponsetypedef).
 
 ### batch_enable_standards
 
@@ -178,7 +190,7 @@ Boto3 documentation:
 [SecurityHub.Client.batch_enable_standards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_enable_standards)
 
 Arguments mapping described in
-[BatchEnableStandardsRequestTypeDef](./type_defs.md#batchenablestandardsrequesttypedef).
+[BatchEnableStandardsRequestRequestTypeDef](./type_defs.md#batchenablestandardsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -187,7 +199,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchEnableStandardsResponseResponseTypeDef](./type_defs.md#batchenablestandardsresponseresponsetypedef).
+[BatchEnableStandardsResponseTypeDef](./type_defs.md#batchenablestandardsresponsetypedef).
 
 ### batch_import_findings
 
@@ -201,7 +213,7 @@ Boto3 documentation:
 [SecurityHub.Client.batch_import_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_import_findings)
 
 Arguments mapping described in
-[BatchImportFindingsRequestTypeDef](./type_defs.md#batchimportfindingsrequesttypedef).
+[BatchImportFindingsRequestRequestTypeDef](./type_defs.md#batchimportfindingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -210,7 +222,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchImportFindingsResponseResponseTypeDef](./type_defs.md#batchimportfindingsresponseresponsetypedef).
+[BatchImportFindingsResponseTypeDef](./type_defs.md#batchimportfindingsresponsetypedef).
 
 ### batch_update_findings
 
@@ -224,7 +236,7 @@ Boto3 documentation:
 [SecurityHub.Client.batch_update_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_update_findings)
 
 Arguments mapping described in
-[BatchUpdateFindingsRequestTypeDef](./type_defs.md#batchupdatefindingsrequesttypedef).
+[BatchUpdateFindingsRequestRequestTypeDef](./type_defs.md#batchupdatefindingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -244,7 +256,7 @@ Keyword-only arguments:
   `List`\[[RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef)\]
 
 Returns
-[BatchUpdateFindingsResponseResponseTypeDef](./type_defs.md#batchupdatefindingsresponseresponsetypedef).
+[BatchUpdateFindingsResponseTypeDef](./type_defs.md#batchupdatefindingsresponsetypedef).
 
 ### can_paginate
 
@@ -271,7 +283,7 @@ Boto3 documentation:
 [SecurityHub.Client.create_action_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_action_target)
 
 Arguments mapping described in
-[CreateActionTargetRequestTypeDef](./type_defs.md#createactiontargetrequesttypedef).
+[CreateActionTargetRequestRequestTypeDef](./type_defs.md#createactiontargetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -280,7 +292,7 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[CreateActionTargetResponseResponseTypeDef](./type_defs.md#createactiontargetresponseresponsetypedef).
+[CreateActionTargetResponseTypeDef](./type_defs.md#createactiontargetresponsetypedef).
 
 ### create_insight
 
@@ -292,7 +304,7 @@ Boto3 documentation:
 [SecurityHub.Client.create_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_insight)
 
 Arguments mapping described in
-[CreateInsightRequestTypeDef](./type_defs.md#createinsightrequesttypedef).
+[CreateInsightRequestRequestTypeDef](./type_defs.md#createinsightrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -303,7 +315,7 @@ Keyword-only arguments:
 - `GroupByAttribute`: `str` *(required)*
 
 Returns
-[CreateInsightResponseResponseTypeDef](./type_defs.md#createinsightresponseresponsetypedef).
+[CreateInsightResponseTypeDef](./type_defs.md#createinsightresponsetypedef).
 
 ### create_members
 
@@ -316,7 +328,7 @@ Boto3 documentation:
 [SecurityHub.Client.create_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_members)
 
 Arguments mapping described in
-[CreateMembersRequestTypeDef](./type_defs.md#createmembersrequesttypedef).
+[CreateMembersRequestRequestTypeDef](./type_defs.md#createmembersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -325,7 +337,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateMembersResponseResponseTypeDef](./type_defs.md#createmembersresponseresponsetypedef).
+[CreateMembersResponseTypeDef](./type_defs.md#createmembersresponsetypedef).
 
 ### decline_invitations
 
@@ -337,14 +349,14 @@ Boto3 documentation:
 [SecurityHub.Client.decline_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.decline_invitations)
 
 Arguments mapping described in
-[DeclineInvitationsRequestTypeDef](./type_defs.md#declineinvitationsrequesttypedef).
+[DeclineInvitationsRequestRequestTypeDef](./type_defs.md#declineinvitationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DeclineInvitationsResponseResponseTypeDef](./type_defs.md#declineinvitationsresponseresponsetypedef).
+[DeclineInvitationsResponseTypeDef](./type_defs.md#declineinvitationsresponsetypedef).
 
 ### delete_action_target
 
@@ -356,14 +368,14 @@ Boto3 documentation:
 [SecurityHub.Client.delete_action_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_action_target)
 
 Arguments mapping described in
-[DeleteActionTargetRequestTypeDef](./type_defs.md#deleteactiontargetrequesttypedef).
+[DeleteActionTargetRequestRequestTypeDef](./type_defs.md#deleteactiontargetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ActionTargetArn`: `str` *(required)*
 
 Returns
-[DeleteActionTargetResponseResponseTypeDef](./type_defs.md#deleteactiontargetresponseresponsetypedef).
+[DeleteActionTargetResponseTypeDef](./type_defs.md#deleteactiontargetresponsetypedef).
 
 ### delete_insight
 
@@ -375,14 +387,14 @@ Boto3 documentation:
 [SecurityHub.Client.delete_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_insight)
 
 Arguments mapping described in
-[DeleteInsightRequestTypeDef](./type_defs.md#deleteinsightrequesttypedef).
+[DeleteInsightRequestRequestTypeDef](./type_defs.md#deleteinsightrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `InsightArn`: `str` *(required)*
 
 Returns
-[DeleteInsightResponseResponseTypeDef](./type_defs.md#deleteinsightresponseresponsetypedef).
+[DeleteInsightResponseTypeDef](./type_defs.md#deleteinsightresponsetypedef).
 
 ### delete_invitations
 
@@ -394,14 +406,14 @@ Boto3 documentation:
 [SecurityHub.Client.delete_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_invitations)
 
 Arguments mapping described in
-[DeleteInvitationsRequestTypeDef](./type_defs.md#deleteinvitationsrequesttypedef).
+[DeleteInvitationsRequestRequestTypeDef](./type_defs.md#deleteinvitationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DeleteInvitationsResponseResponseTypeDef](./type_defs.md#deleteinvitationsresponseresponsetypedef).
+[DeleteInvitationsResponseTypeDef](./type_defs.md#deleteinvitationsresponsetypedef).
 
 ### delete_members
 
@@ -413,14 +425,14 @@ Boto3 documentation:
 [SecurityHub.Client.delete_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_members)
 
 Arguments mapping described in
-[DeleteMembersRequestTypeDef](./type_defs.md#deletemembersrequesttypedef).
+[DeleteMembersRequestRequestTypeDef](./type_defs.md#deletemembersrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DeleteMembersResponseResponseTypeDef](./type_defs.md#deletemembersresponseresponsetypedef).
+[DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef).
 
 ### describe_action_targets
 
@@ -433,7 +445,7 @@ Boto3 documentation:
 [SecurityHub.Client.describe_action_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_action_targets)
 
 Arguments mapping described in
-[DescribeActionTargetsRequestTypeDef](./type_defs.md#describeactiontargetsrequesttypedef).
+[DescribeActionTargetsRequestRequestTypeDef](./type_defs.md#describeactiontargetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -442,7 +454,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeActionTargetsResponseResponseTypeDef](./type_defs.md#describeactiontargetsresponseresponsetypedef).
+[DescribeActionTargetsResponseTypeDef](./type_defs.md#describeactiontargetsresponsetypedef).
 
 ### describe_hub
 
@@ -455,14 +467,14 @@ Boto3 documentation:
 [SecurityHub.Client.describe_hub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_hub)
 
 Arguments mapping described in
-[DescribeHubRequestTypeDef](./type_defs.md#describehubrequesttypedef).
+[DescribeHubRequestRequestTypeDef](./type_defs.md#describehubrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `HubArn`: `str`
 
 Returns
-[DescribeHubResponseResponseTypeDef](./type_defs.md#describehubresponseresponsetypedef).
+[DescribeHubResponseTypeDef](./type_defs.md#describehubresponsetypedef).
 
 ### describe_organization_configuration
 
@@ -475,7 +487,7 @@ Boto3 documentation:
 [SecurityHub.Client.describe_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_organization_configuration)
 
 Returns
-[DescribeOrganizationConfigurationResponseResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponseresponsetypedef).
+[DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef).
 
 ### describe_products
 
@@ -487,7 +499,7 @@ Boto3 documentation:
 [SecurityHub.Client.describe_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_products)
 
 Arguments mapping described in
-[DescribeProductsRequestTypeDef](./type_defs.md#describeproductsrequesttypedef).
+[DescribeProductsRequestRequestTypeDef](./type_defs.md#describeproductsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -496,7 +508,7 @@ Keyword-only arguments:
 - `ProductArn`: `str`
 
 Returns
-[DescribeProductsResponseResponseTypeDef](./type_defs.md#describeproductsresponseresponsetypedef).
+[DescribeProductsResponseTypeDef](./type_defs.md#describeproductsresponsetypedef).
 
 ### describe_standards
 
@@ -508,7 +520,7 @@ Boto3 documentation:
 [SecurityHub.Client.describe_standards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_standards)
 
 Arguments mapping described in
-[DescribeStandardsRequestTypeDef](./type_defs.md#describestandardsrequesttypedef).
+[DescribeStandardsRequestRequestTypeDef](./type_defs.md#describestandardsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -516,7 +528,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeStandardsResponseResponseTypeDef](./type_defs.md#describestandardsresponseresponsetypedef).
+[DescribeStandardsResponseTypeDef](./type_defs.md#describestandardsresponsetypedef).
 
 ### describe_standards_controls
 
@@ -529,7 +541,7 @@ Boto3 documentation:
 [SecurityHub.Client.describe_standards_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_standards_controls)
 
 Arguments mapping described in
-[DescribeStandardsControlsRequestTypeDef](./type_defs.md#describestandardscontrolsrequesttypedef).
+[DescribeStandardsControlsRequestRequestTypeDef](./type_defs.md#describestandardscontrolsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -538,7 +550,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeStandardsControlsResponseResponseTypeDef](./type_defs.md#describestandardscontrolsresponseresponsetypedef).
+[DescribeStandardsControlsResponseTypeDef](./type_defs.md#describestandardscontrolsresponsetypedef).
 
 ### disable_import_findings_for_product
 
@@ -551,7 +563,7 @@ Boto3 documentation:
 [SecurityHub.Client.disable_import_findings_for_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_import_findings_for_product)
 
 Arguments mapping described in
-[DisableImportFindingsForProductRequestTypeDef](./type_defs.md#disableimportfindingsforproductrequesttypedef).
+[DisableImportFindingsForProductRequestRequestTypeDef](./type_defs.md#disableimportfindingsforproductrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -570,7 +582,7 @@ Boto3 documentation:
 [SecurityHub.Client.disable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_organization_admin_account)
 
 Arguments mapping described in
-[DisableOrganizationAdminAccountRequestTypeDef](./type_defs.md#disableorganizationadminaccountrequesttypedef).
+[DisableOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#disableorganizationadminaccountrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -625,7 +637,7 @@ Boto3 documentation:
 [SecurityHub.Client.disassociate_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disassociate_members)
 
 Arguments mapping described in
-[DisassociateMembersRequestTypeDef](./type_defs.md#disassociatemembersrequesttypedef).
+[DisassociateMembersRequestRequestTypeDef](./type_defs.md#disassociatemembersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -644,14 +656,14 @@ Boto3 documentation:
 [SecurityHub.Client.enable_import_findings_for_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_import_findings_for_product)
 
 Arguments mapping described in
-[EnableImportFindingsForProductRequestTypeDef](./type_defs.md#enableimportfindingsforproductrequesttypedef).
+[EnableImportFindingsForProductRequestRequestTypeDef](./type_defs.md#enableimportfindingsforproductrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ProductArn`: `str` *(required)*
 
 Returns
-[EnableImportFindingsForProductResponseResponseTypeDef](./type_defs.md#enableimportfindingsforproductresponseresponsetypedef).
+[EnableImportFindingsForProductResponseTypeDef](./type_defs.md#enableimportfindingsforproductresponsetypedef).
 
 ### enable_organization_admin_account
 
@@ -664,7 +676,7 @@ Boto3 documentation:
 [SecurityHub.Client.enable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_organization_admin_account)
 
 Arguments mapping described in
-[EnableOrganizationAdminAccountRequestTypeDef](./type_defs.md#enableorganizationadminaccountrequesttypedef).
+[EnableOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#enableorganizationadminaccountrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -683,7 +695,7 @@ Boto3 documentation:
 [SecurityHub.Client.enable_security_hub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_security_hub)
 
 Arguments mapping described in
-[EnableSecurityHubRequestTypeDef](./type_defs.md#enablesecurityhubrequesttypedef).
+[EnableSecurityHubRequestRequestTypeDef](./type_defs.md#enablesecurityhubrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -723,7 +735,7 @@ Boto3 documentation:
 [SecurityHub.Client.get_administrator_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_administrator_account)
 
 Returns
-[GetAdministratorAccountResponseResponseTypeDef](./type_defs.md#getadministratoraccountresponseresponsetypedef).
+[GetAdministratorAccountResponseTypeDef](./type_defs.md#getadministratoraccountresponsetypedef).
 
 ### get_enabled_standards
 
@@ -736,7 +748,7 @@ Boto3 documentation:
 [SecurityHub.Client.get_enabled_standards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_enabled_standards)
 
 Arguments mapping described in
-[GetEnabledStandardsRequestTypeDef](./type_defs.md#getenabledstandardsrequesttypedef).
+[GetEnabledStandardsRequestRequestTypeDef](./type_defs.md#getenabledstandardsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -745,7 +757,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetEnabledStandardsResponseResponseTypeDef](./type_defs.md#getenabledstandardsresponseresponsetypedef).
+[GetEnabledStandardsResponseTypeDef](./type_defs.md#getenabledstandardsresponsetypedef).
 
 ### get_findings
 
@@ -757,7 +769,7 @@ Boto3 documentation:
 [SecurityHub.Client.get_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_findings)
 
 Arguments mapping described in
-[GetFindingsRequestTypeDef](./type_defs.md#getfindingsrequesttypedef).
+[GetFindingsRequestRequestTypeDef](./type_defs.md#getfindingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -769,7 +781,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetFindingsResponseResponseTypeDef](./type_defs.md#getfindingsresponseresponsetypedef).
+[GetFindingsResponseTypeDef](./type_defs.md#getfindingsresponsetypedef).
 
 ### get_insight_results
 
@@ -781,14 +793,14 @@ Boto3 documentation:
 [SecurityHub.Client.get_insight_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_insight_results)
 
 Arguments mapping described in
-[GetInsightResultsRequestTypeDef](./type_defs.md#getinsightresultsrequesttypedef).
+[GetInsightResultsRequestRequestTypeDef](./type_defs.md#getinsightresultsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `InsightArn`: `str` *(required)*
 
 Returns
-[GetInsightResultsResponseResponseTypeDef](./type_defs.md#getinsightresultsresponseresponsetypedef).
+[GetInsightResultsResponseTypeDef](./type_defs.md#getinsightresultsresponsetypedef).
 
 ### get_insights
 
@@ -800,7 +812,7 @@ Boto3 documentation:
 [SecurityHub.Client.get_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_insights)
 
 Arguments mapping described in
-[GetInsightsRequestTypeDef](./type_defs.md#getinsightsrequesttypedef).
+[GetInsightsRequestRequestTypeDef](./type_defs.md#getinsightsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -809,7 +821,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetInsightsResponseResponseTypeDef](./type_defs.md#getinsightsresponseresponsetypedef).
+[GetInsightsResponseTypeDef](./type_defs.md#getinsightsresponsetypedef).
 
 ### get_invitations_count
 
@@ -823,7 +835,7 @@ Boto3 documentation:
 [SecurityHub.Client.get_invitations_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_invitations_count)
 
 Returns
-[GetInvitationsCountResponseResponseTypeDef](./type_defs.md#getinvitationscountresponseresponsetypedef).
+[GetInvitationsCountResponseTypeDef](./type_defs.md#getinvitationscountresponsetypedef).
 
 ### get_master_account
 
@@ -835,7 +847,7 @@ Boto3 documentation:
 [SecurityHub.Client.get_master_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_master_account)
 
 Returns
-[GetMasterAccountResponseResponseTypeDef](./type_defs.md#getmasteraccountresponseresponsetypedef).
+[GetMasterAccountResponseTypeDef](./type_defs.md#getmasteraccountresponsetypedef).
 
 ### get_members
 
@@ -848,14 +860,13 @@ Boto3 documentation:
 [SecurityHub.Client.get_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_members)
 
 Arguments mapping described in
-[GetMembersRequestTypeDef](./type_defs.md#getmembersrequesttypedef).
+[GetMembersRequestRequestTypeDef](./type_defs.md#getmembersrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AccountIds`: `List`\[`str`\] *(required)*
 
-Returns
-[GetMembersResponseResponseTypeDef](./type_defs.md#getmembersresponseresponsetypedef).
+Returns [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef).
 
 ### invite_members
 
@@ -868,14 +879,14 @@ Boto3 documentation:
 [SecurityHub.Client.invite_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.invite_members)
 
 Arguments mapping described in
-[InviteMembersRequestTypeDef](./type_defs.md#invitemembersrequesttypedef).
+[InviteMembersRequestRequestTypeDef](./type_defs.md#invitemembersrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[InviteMembersResponseResponseTypeDef](./type_defs.md#invitemembersresponseresponsetypedef).
+[InviteMembersResponseTypeDef](./type_defs.md#invitemembersresponsetypedef).
 
 ### list_enabled_products_for_import
 
@@ -889,7 +900,7 @@ Boto3 documentation:
 [SecurityHub.Client.list_enabled_products_for_import](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_enabled_products_for_import)
 
 Arguments mapping described in
-[ListEnabledProductsForImportRequestTypeDef](./type_defs.md#listenabledproductsforimportrequesttypedef).
+[ListEnabledProductsForImportRequestRequestTypeDef](./type_defs.md#listenabledproductsforimportrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -897,7 +908,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListEnabledProductsForImportResponseResponseTypeDef](./type_defs.md#listenabledproductsforimportresponseresponsetypedef).
+[ListEnabledProductsForImportResponseTypeDef](./type_defs.md#listenabledproductsforimportresponsetypedef).
 
 ### list_invitations
 
@@ -910,7 +921,7 @@ Boto3 documentation:
 [SecurityHub.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_invitations)
 
 Arguments mapping described in
-[ListInvitationsRequestTypeDef](./type_defs.md#listinvitationsrequesttypedef).
+[ListInvitationsRequestRequestTypeDef](./type_defs.md#listinvitationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -918,7 +929,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListInvitationsResponseResponseTypeDef](./type_defs.md#listinvitationsresponseresponsetypedef).
+[ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef).
 
 ### list_members
 
@@ -931,7 +942,7 @@ Boto3 documentation:
 [SecurityHub.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_members)
 
 Arguments mapping described in
-[ListMembersRequestTypeDef](./type_defs.md#listmembersrequesttypedef).
+[ListMembersRequestRequestTypeDef](./type_defs.md#listmembersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -940,7 +951,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListMembersResponseResponseTypeDef](./type_defs.md#listmembersresponseresponsetypedef).
+[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef).
 
 ### list_organization_admin_accounts
 
@@ -953,7 +964,7 @@ Boto3 documentation:
 [SecurityHub.Client.list_organization_admin_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_organization_admin_accounts)
 
 Arguments mapping described in
-[ListOrganizationAdminAccountsRequestTypeDef](./type_defs.md#listorganizationadminaccountsrequesttypedef).
+[ListOrganizationAdminAccountsRequestRequestTypeDef](./type_defs.md#listorganizationadminaccountsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -961,7 +972,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListOrganizationAdminAccountsResponseResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponseresponsetypedef).
+[ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -974,14 +985,14 @@ Boto3 documentation:
 [SecurityHub.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -993,7 +1004,7 @@ Boto3 documentation:
 [SecurityHub.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1012,7 +1023,7 @@ Boto3 documentation:
 [SecurityHub.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1031,7 +1042,7 @@ Boto3 documentation:
 [SecurityHub.Client.update_action_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_action_target)
 
 Arguments mapping described in
-[UpdateActionTargetRequestTypeDef](./type_defs.md#updateactiontargetrequesttypedef).
+[UpdateActionTargetRequestRequestTypeDef](./type_defs.md#updateactiontargetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1051,7 +1062,7 @@ Boto3 documentation:
 [SecurityHub.Client.update_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_findings)
 
 Arguments mapping described in
-[UpdateFindingsRequestTypeDef](./type_defs.md#updatefindingsrequesttypedef).
+[UpdateFindingsRequestRequestTypeDef](./type_defs.md#updatefindingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1073,7 +1084,7 @@ Boto3 documentation:
 [SecurityHub.Client.update_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_insight)
 
 Arguments mapping described in
-[UpdateInsightRequestTypeDef](./type_defs.md#updateinsightrequesttypedef).
+[UpdateInsightRequestRequestTypeDef](./type_defs.md#updateinsightrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1096,7 +1107,7 @@ Boto3 documentation:
 [SecurityHub.Client.update_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_organization_configuration)
 
 Arguments mapping described in
-[UpdateOrganizationConfigurationRequestTypeDef](./type_defs.md#updateorganizationconfigurationrequesttypedef).
+[UpdateOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#updateorganizationconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1115,7 +1126,7 @@ Boto3 documentation:
 [SecurityHub.Client.update_security_hub_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_security_hub_configuration)
 
 Arguments mapping described in
-[UpdateSecurityHubConfigurationRequestTypeDef](./type_defs.md#updatesecurityhubconfigurationrequesttypedef).
+[UpdateSecurityHubConfigurationRequestRequestTypeDef](./type_defs.md#updatesecurityhubconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1135,7 +1146,7 @@ Boto3 documentation:
 [SecurityHub.Client.update_standards_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_standards_control)
 
 Arguments mapping described in
-[UpdateStandardsControlRequestTypeDef](./type_defs.md#updatestandardscontrolrequesttypedef).
+[UpdateStandardsControlRequestRequestTypeDef](./type_defs.md#updatestandardscontrolrequestrequesttypedef).
 
 Keyword-only arguments:
 

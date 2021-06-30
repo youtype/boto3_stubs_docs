@@ -37,7 +37,7 @@ Arguments for `ListDataSetRevisionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDataSetRevisionsPaginator.paginate` returns
-`Iterator`\[[ListDataSetRevisionsResponseResponseTypeDef](./type_defs.md#listdatasetrevisionsresponseresponsetypedef)\].
+`Iterator`\[[ListDataSetRevisionsResponseTypeDef](./type_defs.md#listdatasetrevisionsresponsetypedef)\].
 
 ## ListDataSetsPaginator
 
@@ -63,7 +63,7 @@ Arguments for `ListDataSetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDataSetsPaginator.paginate` returns
-`Iterator`\[[ListDataSetsResponseResponseTypeDef](./type_defs.md#listdatasetsresponseresponsetypedef)\].
+`Iterator`\[[ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)\].
 
 ## ListJobsPaginator
 
@@ -89,7 +89,7 @@ Arguments for `ListJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobsPaginator.paginate` returns
-`Iterator`\[[ListJobsResponseResponseTypeDef](./type_defs.md#listjobsresponseresponsetypedef)\].
+`Iterator`\[[ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)\].
 
 ## ListRevisionAssetsPaginator
 
@@ -116,4 +116,4 @@ Arguments for `ListRevisionAssetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRevisionAssetsPaginator.paginate` returns
-`Iterator`\[[ListRevisionAssetsResponseResponseTypeDef](./type_defs.md#listrevisionassetsresponseresponsetypedef)\].
+`Iterator`\[[ListRevisionAssetsResponseTypeDef](./type_defs.md#listrevisionassetsresponsetypedef)\].

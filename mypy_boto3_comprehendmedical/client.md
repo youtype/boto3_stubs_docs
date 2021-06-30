@@ -11,6 +11,7 @@ type annotations stubs module
   - [ComprehendMedicalClient](#comprehendmedicalclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [describe_entities_detection_v2_job](#describe_entities_detection_v2_job)
     - [describe_icd10_cm_inference_job](#describe_icd10_cm_inference_job)
@@ -77,6 +78,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ComprehendMedicalClient exceptions.
+
+Type annotations for `boto3.client("comprehendmedical").exceptions` method.
+
+Boto3 documentation:
+[ComprehendMedical.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -103,14 +115,14 @@ Boto3 documentation:
 [ComprehendMedical.Client.describe_entities_detection_v2_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_entities_detection_v2_job)
 
 Arguments mapping described in
-[DescribeEntitiesDetectionV2JobRequestTypeDef](./type_defs.md#describeentitiesdetectionv2jobrequesttypedef).
+[DescribeEntitiesDetectionV2JobRequestRequestTypeDef](./type_defs.md#describeentitiesdetectionv2jobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeEntitiesDetectionV2JobResponseResponseTypeDef](./type_defs.md#describeentitiesdetectionv2jobresponseresponsetypedef).
+[DescribeEntitiesDetectionV2JobResponseTypeDef](./type_defs.md#describeentitiesdetectionv2jobresponsetypedef).
 
 ### describe_icd10_cm_inference_job
 
@@ -123,14 +135,14 @@ Boto3 documentation:
 [ComprehendMedical.Client.describe_icd10_cm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_icd10_cm_inference_job)
 
 Arguments mapping described in
-[DescribeICD10CMInferenceJobRequestTypeDef](./type_defs.md#describeicd10cminferencejobrequesttypedef).
+[DescribeICD10CMInferenceJobRequestRequestTypeDef](./type_defs.md#describeicd10cminferencejobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeICD10CMInferenceJobResponseResponseTypeDef](./type_defs.md#describeicd10cminferencejobresponseresponsetypedef).
+[DescribeICD10CMInferenceJobResponseTypeDef](./type_defs.md#describeicd10cminferencejobresponsetypedef).
 
 ### describe_phi_detection_job
 
@@ -144,14 +156,14 @@ Boto3 documentation:
 [ComprehendMedical.Client.describe_phi_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_phi_detection_job)
 
 Arguments mapping described in
-[DescribePHIDetectionJobRequestTypeDef](./type_defs.md#describephidetectionjobrequesttypedef).
+[DescribePHIDetectionJobRequestRequestTypeDef](./type_defs.md#describephidetectionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribePHIDetectionJobResponseResponseTypeDef](./type_defs.md#describephidetectionjobresponseresponsetypedef).
+[DescribePHIDetectionJobResponseTypeDef](./type_defs.md#describephidetectionjobresponsetypedef).
 
 ### describe_rx_norm_inference_job
 
@@ -164,14 +176,14 @@ Boto3 documentation:
 [ComprehendMedical.Client.describe_rx_norm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_rx_norm_inference_job)
 
 Arguments mapping described in
-[DescribeRxNormInferenceJobRequestTypeDef](./type_defs.md#describerxnorminferencejobrequesttypedef).
+[DescribeRxNormInferenceJobRequestRequestTypeDef](./type_defs.md#describerxnorminferencejobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeRxNormInferenceJobResponseResponseTypeDef](./type_defs.md#describerxnorminferencejobresponseresponsetypedef).
+[DescribeRxNormInferenceJobResponseTypeDef](./type_defs.md#describerxnorminferencejobresponsetypedef).
 
 ### detect_entities
 
@@ -184,14 +196,14 @@ Boto3 documentation:
 [ComprehendMedical.Client.detect_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_entities)
 
 Arguments mapping described in
-[DetectEntitiesRequestTypeDef](./type_defs.md#detectentitiesrequesttypedef).
+[DetectEntitiesRequestRequestTypeDef](./type_defs.md#detectentitiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Text`: `str` *(required)*
 
 Returns
-[DetectEntitiesResponseResponseTypeDef](./type_defs.md#detectentitiesresponseresponsetypedef).
+[DetectEntitiesResponseTypeDef](./type_defs.md#detectentitiesresponsetypedef).
 
 ### detect_entities_v2
 
@@ -206,14 +218,14 @@ Boto3 documentation:
 [ComprehendMedical.Client.detect_entities_v2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_entities_v2)
 
 Arguments mapping described in
-[DetectEntitiesV2RequestTypeDef](./type_defs.md#detectentitiesv2requesttypedef).
+[DetectEntitiesV2RequestRequestTypeDef](./type_defs.md#detectentitiesv2requestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Text`: `str` *(required)*
 
 Returns
-[DetectEntitiesV2ResponseResponseTypeDef](./type_defs.md#detectentitiesv2responseresponsetypedef).
+[DetectEntitiesV2ResponseTypeDef](./type_defs.md#detectentitiesv2responsetypedef).
 
 ### detect_phi
 
@@ -226,14 +238,13 @@ Boto3 documentation:
 [ComprehendMedical.Client.detect_phi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_phi)
 
 Arguments mapping described in
-[DetectPHIRequestTypeDef](./type_defs.md#detectphirequesttypedef).
+[DetectPHIRequestRequestTypeDef](./type_defs.md#detectphirequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Text`: `str` *(required)*
 
-Returns
-[DetectPHIResponseResponseTypeDef](./type_defs.md#detectphiresponseresponsetypedef).
+Returns [DetectPHIResponseTypeDef](./type_defs.md#detectphiresponsetypedef).
 
 ### generate_presigned_url
 
@@ -266,14 +277,14 @@ Boto3 documentation:
 [ComprehendMedical.Client.infer_icd10_cm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.infer_icd10_cm)
 
 Arguments mapping described in
-[InferICD10CMRequestTypeDef](./type_defs.md#infericd10cmrequesttypedef).
+[InferICD10CMRequestRequestTypeDef](./type_defs.md#infericd10cmrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Text`: `str` *(required)*
 
 Returns
-[InferICD10CMResponseResponseTypeDef](./type_defs.md#infericd10cmresponseresponsetypedef).
+[InferICD10CMResponseTypeDef](./type_defs.md#infericd10cmresponsetypedef).
 
 ### infer_rx_norm
 
@@ -287,14 +298,14 @@ Boto3 documentation:
 [ComprehendMedical.Client.infer_rx_norm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.infer_rx_norm)
 
 Arguments mapping described in
-[InferRxNormRequestTypeDef](./type_defs.md#inferrxnormrequesttypedef).
+[InferRxNormRequestRequestTypeDef](./type_defs.md#inferrxnormrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Text`: `str` *(required)*
 
 Returns
-[InferRxNormResponseResponseTypeDef](./type_defs.md#inferrxnormresponseresponsetypedef).
+[InferRxNormResponseTypeDef](./type_defs.md#inferrxnormresponsetypedef).
 
 ### list_entities_detection_v2_jobs
 
@@ -307,7 +318,7 @@ Boto3 documentation:
 [ComprehendMedical.Client.list_entities_detection_v2_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_entities_detection_v2_jobs)
 
 Arguments mapping described in
-[ListEntitiesDetectionV2JobsRequestTypeDef](./type_defs.md#listentitiesdetectionv2jobsrequesttypedef).
+[ListEntitiesDetectionV2JobsRequestRequestTypeDef](./type_defs.md#listentitiesdetectionv2jobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -317,7 +328,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListEntitiesDetectionV2JobsResponseResponseTypeDef](./type_defs.md#listentitiesdetectionv2jobsresponseresponsetypedef).
+[ListEntitiesDetectionV2JobsResponseTypeDef](./type_defs.md#listentitiesdetectionv2jobsresponsetypedef).
 
 ### list_icd10_cm_inference_jobs
 
@@ -330,7 +341,7 @@ Boto3 documentation:
 [ComprehendMedical.Client.list_icd10_cm_inference_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_icd10_cm_inference_jobs)
 
 Arguments mapping described in
-[ListICD10CMInferenceJobsRequestTypeDef](./type_defs.md#listicd10cminferencejobsrequesttypedef).
+[ListICD10CMInferenceJobsRequestRequestTypeDef](./type_defs.md#listicd10cminferencejobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -340,7 +351,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListICD10CMInferenceJobsResponseResponseTypeDef](./type_defs.md#listicd10cminferencejobsresponseresponsetypedef).
+[ListICD10CMInferenceJobsResponseTypeDef](./type_defs.md#listicd10cminferencejobsresponsetypedef).
 
 ### list_phi_detection_jobs
 
@@ -354,7 +365,7 @@ Boto3 documentation:
 [ComprehendMedical.Client.list_phi_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_phi_detection_jobs)
 
 Arguments mapping described in
-[ListPHIDetectionJobsRequestTypeDef](./type_defs.md#listphidetectionjobsrequesttypedef).
+[ListPHIDetectionJobsRequestRequestTypeDef](./type_defs.md#listphidetectionjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -364,7 +375,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPHIDetectionJobsResponseResponseTypeDef](./type_defs.md#listphidetectionjobsresponseresponsetypedef).
+[ListPHIDetectionJobsResponseTypeDef](./type_defs.md#listphidetectionjobsresponsetypedef).
 
 ### list_rx_norm_inference_jobs
 
@@ -377,7 +388,7 @@ Boto3 documentation:
 [ComprehendMedical.Client.list_rx_norm_inference_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_rx_norm_inference_jobs)
 
 Arguments mapping described in
-[ListRxNormInferenceJobsRequestTypeDef](./type_defs.md#listrxnorminferencejobsrequesttypedef).
+[ListRxNormInferenceJobsRequestRequestTypeDef](./type_defs.md#listrxnorminferencejobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -387,7 +398,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListRxNormInferenceJobsResponseResponseTypeDef](./type_defs.md#listrxnorminferencejobsresponseresponsetypedef).
+[ListRxNormInferenceJobsResponseTypeDef](./type_defs.md#listrxnorminferencejobsresponsetypedef).
 
 ### start_entities_detection_v2_job
 
@@ -401,7 +412,7 @@ Boto3 documentation:
 [ComprehendMedical.Client.start_entities_detection_v2_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_entities_detection_v2_job)
 
 Arguments mapping described in
-[StartEntitiesDetectionV2JobRequestTypeDef](./type_defs.md#startentitiesdetectionv2jobrequesttypedef).
+[StartEntitiesDetectionV2JobRequestRequestTypeDef](./type_defs.md#startentitiesdetectionv2jobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -418,7 +429,7 @@ Keyword-only arguments:
 - `KMSKey`: `str`
 
 Returns
-[StartEntitiesDetectionV2JobResponseResponseTypeDef](./type_defs.md#startentitiesdetectionv2jobresponseresponsetypedef).
+[StartEntitiesDetectionV2JobResponseTypeDef](./type_defs.md#startentitiesdetectionv2jobresponsetypedef).
 
 ### start_icd10_cm_inference_job
 
@@ -432,7 +443,7 @@ Boto3 documentation:
 [ComprehendMedical.Client.start_icd10_cm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_icd10_cm_inference_job)
 
 Arguments mapping described in
-[StartICD10CMInferenceJobRequestTypeDef](./type_defs.md#starticd10cminferencejobrequesttypedef).
+[StartICD10CMInferenceJobRequestRequestTypeDef](./type_defs.md#starticd10cminferencejobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -449,7 +460,7 @@ Keyword-only arguments:
 - `KMSKey`: `str`
 
 Returns
-[StartICD10CMInferenceJobResponseResponseTypeDef](./type_defs.md#starticd10cminferencejobresponseresponsetypedef).
+[StartICD10CMInferenceJobResponseTypeDef](./type_defs.md#starticd10cminferencejobresponsetypedef).
 
 ### start_phi_detection_job
 
@@ -462,7 +473,7 @@ Boto3 documentation:
 [ComprehendMedical.Client.start_phi_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_phi_detection_job)
 
 Arguments mapping described in
-[StartPHIDetectionJobRequestTypeDef](./type_defs.md#startphidetectionjobrequesttypedef).
+[StartPHIDetectionJobRequestRequestTypeDef](./type_defs.md#startphidetectionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -479,7 +490,7 @@ Keyword-only arguments:
 - `KMSKey`: `str`
 
 Returns
-[StartPHIDetectionJobResponseResponseTypeDef](./type_defs.md#startphidetectionjobresponseresponsetypedef).
+[StartPHIDetectionJobResponseTypeDef](./type_defs.md#startphidetectionjobresponsetypedef).
 
 ### start_rx_norm_inference_job
 
@@ -493,7 +504,7 @@ Boto3 documentation:
 [ComprehendMedical.Client.start_rx_norm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_rx_norm_inference_job)
 
 Arguments mapping described in
-[StartRxNormInferenceJobRequestTypeDef](./type_defs.md#startrxnorminferencejobrequesttypedef).
+[StartRxNormInferenceJobRequestRequestTypeDef](./type_defs.md#startrxnorminferencejobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -510,7 +521,7 @@ Keyword-only arguments:
 - `KMSKey`: `str`
 
 Returns
-[StartRxNormInferenceJobResponseResponseTypeDef](./type_defs.md#startrxnorminferencejobresponseresponsetypedef).
+[StartRxNormInferenceJobResponseTypeDef](./type_defs.md#startrxnorminferencejobresponsetypedef).
 
 ### stop_entities_detection_v2_job
 
@@ -523,14 +534,14 @@ Boto3 documentation:
 [ComprehendMedical.Client.stop_entities_detection_v2_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_entities_detection_v2_job)
 
 Arguments mapping described in
-[StopEntitiesDetectionV2JobRequestTypeDef](./type_defs.md#stopentitiesdetectionv2jobrequesttypedef).
+[StopEntitiesDetectionV2JobRequestRequestTypeDef](./type_defs.md#stopentitiesdetectionv2jobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[StopEntitiesDetectionV2JobResponseResponseTypeDef](./type_defs.md#stopentitiesdetectionv2jobresponseresponsetypedef).
+[StopEntitiesDetectionV2JobResponseTypeDef](./type_defs.md#stopentitiesdetectionv2jobresponsetypedef).
 
 ### stop_icd10_cm_inference_job
 
@@ -543,14 +554,14 @@ Boto3 documentation:
 [ComprehendMedical.Client.stop_icd10_cm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_icd10_cm_inference_job)
 
 Arguments mapping described in
-[StopICD10CMInferenceJobRequestTypeDef](./type_defs.md#stopicd10cminferencejobrequesttypedef).
+[StopICD10CMInferenceJobRequestRequestTypeDef](./type_defs.md#stopicd10cminferencejobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[StopICD10CMInferenceJobResponseResponseTypeDef](./type_defs.md#stopicd10cminferencejobresponseresponsetypedef).
+[StopICD10CMInferenceJobResponseTypeDef](./type_defs.md#stopicd10cminferencejobresponsetypedef).
 
 ### stop_phi_detection_job
 
@@ -563,14 +574,14 @@ Boto3 documentation:
 [ComprehendMedical.Client.stop_phi_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_phi_detection_job)
 
 Arguments mapping described in
-[StopPHIDetectionJobRequestTypeDef](./type_defs.md#stopphidetectionjobrequesttypedef).
+[StopPHIDetectionJobRequestRequestTypeDef](./type_defs.md#stopphidetectionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[StopPHIDetectionJobResponseResponseTypeDef](./type_defs.md#stopphidetectionjobresponseresponsetypedef).
+[StopPHIDetectionJobResponseTypeDef](./type_defs.md#stopphidetectionjobresponsetypedef).
 
 ### stop_rx_norm_inference_job
 
@@ -583,11 +594,11 @@ Boto3 documentation:
 [ComprehendMedical.Client.stop_rx_norm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_rx_norm_inference_job)
 
 Arguments mapping described in
-[StopRxNormInferenceJobRequestTypeDef](./type_defs.md#stoprxnorminferencejobrequesttypedef).
+[StopRxNormInferenceJobRequestRequestTypeDef](./type_defs.md#stoprxnorminferencejobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[StopRxNormInferenceJobResponseResponseTypeDef](./type_defs.md#stoprxnorminferencejobresponseresponsetypedef).
+[StopRxNormInferenceJobResponseTypeDef](./type_defs.md#stoprxnorminferencejobresponsetypedef).

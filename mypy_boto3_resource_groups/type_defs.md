@@ -8,59 +8,59 @@ type annotations stubs module
 [mypy_boto3_resource_groups](https://pypi.org/project/mypy-boto3-resource-groups/).
 
 - [Typed dictionaries for boto3 ResourceGroups module](#typed-dictionaries-for-boto3-resourcegroups-module)
-  - [CreateGroupInputTypeDef](#creategroupinputtypedef)
-  - [CreateGroupOutputResponseTypeDef](#creategroupoutputresponsetypedef)
-  - [DeleteGroupInputTypeDef](#deletegroupinputtypedef)
-  - [DeleteGroupOutputResponseTypeDef](#deletegroupoutputresponsetypedef)
+  - [CreateGroupInputRequestTypeDef](#creategroupinputrequesttypedef)
+  - [CreateGroupOutputTypeDef](#creategroupoutputtypedef)
+  - [DeleteGroupInputRequestTypeDef](#deletegroupinputrequesttypedef)
+  - [DeleteGroupOutputTypeDef](#deletegroupoutputtypedef)
   - [FailedResourceTypeDef](#failedresourcetypedef)
-  - [GetGroupConfigurationInputTypeDef](#getgroupconfigurationinputtypedef)
-  - [GetGroupConfigurationOutputResponseTypeDef](#getgroupconfigurationoutputresponsetypedef)
-  - [GetGroupInputTypeDef](#getgroupinputtypedef)
-  - [GetGroupOutputResponseTypeDef](#getgroupoutputresponsetypedef)
-  - [GetGroupQueryInputTypeDef](#getgroupqueryinputtypedef)
-  - [GetGroupQueryOutputResponseTypeDef](#getgroupqueryoutputresponsetypedef)
-  - [GetTagsInputTypeDef](#gettagsinputtypedef)
-  - [GetTagsOutputResponseTypeDef](#gettagsoutputresponsetypedef)
+  - [GetGroupConfigurationInputRequestTypeDef](#getgroupconfigurationinputrequesttypedef)
+  - [GetGroupConfigurationOutputTypeDef](#getgroupconfigurationoutputtypedef)
+  - [GetGroupInputRequestTypeDef](#getgroupinputrequesttypedef)
+  - [GetGroupOutputTypeDef](#getgroupoutputtypedef)
+  - [GetGroupQueryInputRequestTypeDef](#getgroupqueryinputrequesttypedef)
+  - [GetGroupQueryOutputTypeDef](#getgroupqueryoutputtypedef)
+  - [GetTagsInputRequestTypeDef](#gettagsinputrequesttypedef)
+  - [GetTagsOutputTypeDef](#gettagsoutputtypedef)
   - [GroupConfigurationItemTypeDef](#groupconfigurationitemtypedef)
   - [GroupConfigurationParameterTypeDef](#groupconfigurationparametertypedef)
   - [GroupConfigurationTypeDef](#groupconfigurationtypedef)
   - [GroupFilterTypeDef](#groupfiltertypedef)
   - [GroupIdentifierTypeDef](#groupidentifiertypedef)
   - [GroupQueryTypeDef](#groupquerytypedef)
-  - [GroupResourcesInputTypeDef](#groupresourcesinputtypedef)
-  - [GroupResourcesOutputResponseTypeDef](#groupresourcesoutputresponsetypedef)
+  - [GroupResourcesInputRequestTypeDef](#groupresourcesinputrequesttypedef)
+  - [GroupResourcesOutputTypeDef](#groupresourcesoutputtypedef)
   - [GroupTypeDef](#grouptypedef)
-  - [ListGroupResourcesInputTypeDef](#listgroupresourcesinputtypedef)
+  - [ListGroupResourcesInputRequestTypeDef](#listgroupresourcesinputrequesttypedef)
   - [ListGroupResourcesItemTypeDef](#listgroupresourcesitemtypedef)
-  - [ListGroupResourcesOutputResponseTypeDef](#listgroupresourcesoutputresponsetypedef)
-  - [ListGroupsInputTypeDef](#listgroupsinputtypedef)
-  - [ListGroupsOutputResponseTypeDef](#listgroupsoutputresponsetypedef)
+  - [ListGroupResourcesOutputTypeDef](#listgroupresourcesoutputtypedef)
+  - [ListGroupsInputRequestTypeDef](#listgroupsinputrequesttypedef)
+  - [ListGroupsOutputTypeDef](#listgroupsoutputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PendingResourceTypeDef](#pendingresourcetypedef)
-  - [PutGroupConfigurationInputTypeDef](#putgroupconfigurationinputtypedef)
+  - [PutGroupConfigurationInputRequestTypeDef](#putgroupconfigurationinputrequesttypedef)
   - [QueryErrorTypeDef](#queryerrortypedef)
   - [ResourceFilterTypeDef](#resourcefiltertypedef)
   - [ResourceIdentifierTypeDef](#resourceidentifiertypedef)
   - [ResourceQueryTypeDef](#resourcequerytypedef)
   - [ResourceStatusTypeDef](#resourcestatustypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SearchResourcesInputTypeDef](#searchresourcesinputtypedef)
-  - [SearchResourcesOutputResponseTypeDef](#searchresourcesoutputresponsetypedef)
-  - [TagInputTypeDef](#taginputtypedef)
-  - [TagOutputResponseTypeDef](#tagoutputresponsetypedef)
-  - [UngroupResourcesInputTypeDef](#ungroupresourcesinputtypedef)
-  - [UngroupResourcesOutputResponseTypeDef](#ungroupresourcesoutputresponsetypedef)
-  - [UntagInputTypeDef](#untaginputtypedef)
-  - [UntagOutputResponseTypeDef](#untagoutputresponsetypedef)
-  - [UpdateGroupInputTypeDef](#updategroupinputtypedef)
-  - [UpdateGroupOutputResponseTypeDef](#updategroupoutputresponsetypedef)
-  - [UpdateGroupQueryInputTypeDef](#updategroupqueryinputtypedef)
-  - [UpdateGroupQueryOutputResponseTypeDef](#updategroupqueryoutputresponsetypedef)
+  - [SearchResourcesInputRequestTypeDef](#searchresourcesinputrequesttypedef)
+  - [SearchResourcesOutputTypeDef](#searchresourcesoutputtypedef)
+  - [TagInputRequestTypeDef](#taginputrequesttypedef)
+  - [TagOutputTypeDef](#tagoutputtypedef)
+  - [UngroupResourcesInputRequestTypeDef](#ungroupresourcesinputrequesttypedef)
+  - [UngroupResourcesOutputTypeDef](#ungroupresourcesoutputtypedef)
+  - [UntagInputRequestTypeDef](#untaginputrequesttypedef)
+  - [UntagOutputTypeDef](#untagoutputtypedef)
+  - [UpdateGroupInputRequestTypeDef](#updategroupinputrequesttypedef)
+  - [UpdateGroupOutputTypeDef](#updategroupoutputtypedef)
+  - [UpdateGroupQueryInputRequestTypeDef](#updategroupqueryinputrequesttypedef)
+  - [UpdateGroupQueryOutputTypeDef](#updategroupqueryoutputtypedef)
 
-## CreateGroupInputTypeDef
+## CreateGroupInputRequestTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import CreateGroupInputTypeDef
+from mypy_boto3_resource_groups.type_defs import CreateGroupInputRequestTypeDef
 ```
 
 Required fields:
@@ -75,10 +75,10 @@ Optional fields:
 - `Configuration`:
   `List`\[[GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef)\]
 
-## CreateGroupOutputResponseTypeDef
+## CreateGroupOutputTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import CreateGroupOutputResponseTypeDef
+from mypy_boto3_resource_groups.type_defs import CreateGroupOutputTypeDef
 ```
 
 Required fields:
@@ -91,10 +91,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteGroupInputTypeDef
+## DeleteGroupInputRequestTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import DeleteGroupInputTypeDef
+from mypy_boto3_resource_groups.type_defs import DeleteGroupInputRequestTypeDef
 ```
 
 Optional fields:
@@ -102,10 +102,10 @@ Optional fields:
 - `GroupName`: `str`
 - `Group`: `str`
 
-## DeleteGroupOutputResponseTypeDef
+## DeleteGroupOutputTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import DeleteGroupOutputResponseTypeDef
+from mypy_boto3_resource_groups.type_defs import DeleteGroupOutputTypeDef
 ```
 
 Required fields:
@@ -126,20 +126,20 @@ Optional fields:
 - `ErrorMessage`: `str`
 - `ErrorCode`: `str`
 
-## GetGroupConfigurationInputTypeDef
+## GetGroupConfigurationInputRequestTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import GetGroupConfigurationInputTypeDef
+from mypy_boto3_resource_groups.type_defs import GetGroupConfigurationInputRequestTypeDef
 ```
 
 Optional fields:
 
 - `Group`: `str`
 
-## GetGroupConfigurationOutputResponseTypeDef
+## GetGroupConfigurationOutputTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import GetGroupConfigurationOutputResponseTypeDef
+from mypy_boto3_resource_groups.type_defs import GetGroupConfigurationOutputTypeDef
 ```
 
 Required fields:
@@ -149,10 +149,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetGroupInputTypeDef
+## GetGroupInputRequestTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import GetGroupInputTypeDef
+from mypy_boto3_resource_groups.type_defs import GetGroupInputRequestTypeDef
 ```
 
 Optional fields:
@@ -160,10 +160,10 @@ Optional fields:
 - `GroupName`: `str`
 - `Group`: `str`
 
-## GetGroupOutputResponseTypeDef
+## GetGroupOutputTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import GetGroupOutputResponseTypeDef
+from mypy_boto3_resource_groups.type_defs import GetGroupOutputTypeDef
 ```
 
 Required fields:
@@ -172,10 +172,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetGroupQueryInputTypeDef
+## GetGroupQueryInputRequestTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import GetGroupQueryInputTypeDef
+from mypy_boto3_resource_groups.type_defs import GetGroupQueryInputRequestTypeDef
 ```
 
 Optional fields:
@@ -183,10 +183,10 @@ Optional fields:
 - `GroupName`: `str`
 - `Group`: `str`
 
-## GetGroupQueryOutputResponseTypeDef
+## GetGroupQueryOutputTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import GetGroupQueryOutputResponseTypeDef
+from mypy_boto3_resource_groups.type_defs import GetGroupQueryOutputTypeDef
 ```
 
 Required fields:
@@ -195,20 +195,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTagsInputTypeDef
+## GetTagsInputRequestTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import GetTagsInputTypeDef
+from mypy_boto3_resource_groups.type_defs import GetTagsInputRequestTypeDef
 ```
 
 Required fields:
 
 - `Arn`: `str`
 
-## GetTagsOutputResponseTypeDef
+## GetTagsOutputTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import GetTagsOutputResponseTypeDef
+from mypy_boto3_resource_groups.type_defs import GetTagsOutputTypeDef
 ```
 
 Required fields:
@@ -296,10 +296,10 @@ Required fields:
 - `GroupName`: `str`
 - `ResourceQuery`: [ResourceQueryTypeDef](./type_defs.md#resourcequerytypedef)
 
-## GroupResourcesInputTypeDef
+## GroupResourcesInputRequestTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import GroupResourcesInputTypeDef
+from mypy_boto3_resource_groups.type_defs import GroupResourcesInputRequestTypeDef
 ```
 
 Required fields:
@@ -307,10 +307,10 @@ Required fields:
 - `Group`: `str`
 - `ResourceArns`: `List`\[`str`\]
 
-## GroupResourcesOutputResponseTypeDef
+## GroupResourcesOutputTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import GroupResourcesOutputResponseTypeDef
+from mypy_boto3_resource_groups.type_defs import GroupResourcesOutputTypeDef
 ```
 
 Required fields:
@@ -338,10 +338,10 @@ Optional fields:
 
 - `Description`: `str`
 
-## ListGroupResourcesInputTypeDef
+## ListGroupResourcesInputRequestTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import ListGroupResourcesInputTypeDef
+from mypy_boto3_resource_groups.type_defs import ListGroupResourcesInputRequestTypeDef
 ```
 
 Optional fields:
@@ -365,10 +365,10 @@ Optional fields:
   [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
 - `Status`: [ResourceStatusTypeDef](./type_defs.md#resourcestatustypedef)
 
-## ListGroupResourcesOutputResponseTypeDef
+## ListGroupResourcesOutputTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import ListGroupResourcesOutputResponseTypeDef
+from mypy_boto3_resource_groups.type_defs import ListGroupResourcesOutputTypeDef
 ```
 
 Required fields:
@@ -383,10 +383,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListGroupsInputTypeDef
+## ListGroupsInputRequestTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import ListGroupsInputTypeDef
+from mypy_boto3_resource_groups.type_defs import ListGroupsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -395,10 +395,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListGroupsOutputResponseTypeDef
+## ListGroupsOutputTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import ListGroupsOutputResponseTypeDef
+from mypy_boto3_resource_groups.type_defs import ListGroupsOutputTypeDef
 ```
 
 Required fields:
@@ -432,10 +432,10 @@ Optional fields:
 
 - `ResourceArn`: `str`
 
-## PutGroupConfigurationInputTypeDef
+## PutGroupConfigurationInputRequestTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import PutGroupConfigurationInputTypeDef
+from mypy_boto3_resource_groups.type_defs import PutGroupConfigurationInputRequestTypeDef
 ```
 
 Optional fields:
@@ -514,10 +514,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## SearchResourcesInputTypeDef
+## SearchResourcesInputRequestTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import SearchResourcesInputTypeDef
+from mypy_boto3_resource_groups.type_defs import SearchResourcesInputRequestTypeDef
 ```
 
 Required fields:
@@ -529,10 +529,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## SearchResourcesOutputResponseTypeDef
+## SearchResourcesOutputTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import SearchResourcesOutputResponseTypeDef
+from mypy_boto3_resource_groups.type_defs import SearchResourcesOutputTypeDef
 ```
 
 Required fields:
@@ -545,10 +545,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## TagInputTypeDef
+## TagInputRequestTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import TagInputTypeDef
+from mypy_boto3_resource_groups.type_defs import TagInputRequestTypeDef
 ```
 
 Required fields:
@@ -556,10 +556,10 @@ Required fields:
 - `Arn`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## TagOutputResponseTypeDef
+## TagOutputTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import TagOutputResponseTypeDef
+from mypy_boto3_resource_groups.type_defs import TagOutputTypeDef
 ```
 
 Required fields:
@@ -569,10 +569,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UngroupResourcesInputTypeDef
+## UngroupResourcesInputRequestTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import UngroupResourcesInputTypeDef
+from mypy_boto3_resource_groups.type_defs import UngroupResourcesInputRequestTypeDef
 ```
 
 Required fields:
@@ -580,10 +580,10 @@ Required fields:
 - `Group`: `str`
 - `ResourceArns`: `List`\[`str`\]
 
-## UngroupResourcesOutputResponseTypeDef
+## UngroupResourcesOutputTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import UngroupResourcesOutputResponseTypeDef
+from mypy_boto3_resource_groups.type_defs import UngroupResourcesOutputTypeDef
 ```
 
 Required fields:
@@ -596,10 +596,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UntagInputTypeDef
+## UntagInputRequestTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import UntagInputTypeDef
+from mypy_boto3_resource_groups.type_defs import UntagInputRequestTypeDef
 ```
 
 Required fields:
@@ -607,10 +607,10 @@ Required fields:
 - `Arn`: `str`
 - `Keys`: `List`\[`str`\]
 
-## UntagOutputResponseTypeDef
+## UntagOutputTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import UntagOutputResponseTypeDef
+from mypy_boto3_resource_groups.type_defs import UntagOutputTypeDef
 ```
 
 Required fields:
@@ -620,10 +620,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateGroupInputTypeDef
+## UpdateGroupInputRequestTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import UpdateGroupInputTypeDef
+from mypy_boto3_resource_groups.type_defs import UpdateGroupInputRequestTypeDef
 ```
 
 Optional fields:
@@ -632,10 +632,10 @@ Optional fields:
 - `Group`: `str`
 - `Description`: `str`
 
-## UpdateGroupOutputResponseTypeDef
+## UpdateGroupOutputTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import UpdateGroupOutputResponseTypeDef
+from mypy_boto3_resource_groups.type_defs import UpdateGroupOutputTypeDef
 ```
 
 Required fields:
@@ -644,10 +644,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateGroupQueryInputTypeDef
+## UpdateGroupQueryInputRequestTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import UpdateGroupQueryInputTypeDef
+from mypy_boto3_resource_groups.type_defs import UpdateGroupQueryInputRequestTypeDef
 ```
 
 Required fields:
@@ -659,10 +659,10 @@ Optional fields:
 - `GroupName`: `str`
 - `Group`: `str`
 
-## UpdateGroupQueryOutputResponseTypeDef
+## UpdateGroupQueryOutputTypeDef
 
 ```python
-from mypy_boto3_resource_groups.type_defs import UpdateGroupQueryOutputResponseTypeDef
+from mypy_boto3_resource_groups.type_defs import UpdateGroupQueryOutputTypeDef
 ```
 
 Required fields:

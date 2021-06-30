@@ -11,6 +11,7 @@ type annotations stubs module
   - [SyntheticsClient](#syntheticsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_canary](#create_canary)
     - [delete_canary](#delete_canary)
@@ -65,6 +66,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+SyntheticsClient exceptions.
+
+Type annotations for `boto3.client("synthetics").exceptions` method.
+
+Boto3 documentation:
+[Synthetics.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -90,7 +102,7 @@ Boto3 documentation:
 [Synthetics.Client.create_canary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.create_canary)
 
 Arguments mapping described in
-[CreateCanaryRequestTypeDef](./type_defs.md#createcanaryrequesttypedef).
+[CreateCanaryRequestRequestTypeDef](./type_defs.md#createcanaryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -111,7 +123,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateCanaryResponseResponseTypeDef](./type_defs.md#createcanaryresponseresponsetypedef).
+[CreateCanaryResponseTypeDef](./type_defs.md#createcanaryresponsetypedef).
 
 ### delete_canary
 
@@ -123,7 +135,7 @@ Boto3 documentation:
 [Synthetics.Client.delete_canary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.delete_canary)
 
 Arguments mapping described in
-[DeleteCanaryRequestTypeDef](./type_defs.md#deletecanaryrequesttypedef).
+[DeleteCanaryRequestRequestTypeDef](./type_defs.md#deletecanaryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -142,7 +154,7 @@ Boto3 documentation:
 [Synthetics.Client.describe_canaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.describe_canaries)
 
 Arguments mapping described in
-[DescribeCanariesRequestTypeDef](./type_defs.md#describecanariesrequesttypedef).
+[DescribeCanariesRequestRequestTypeDef](./type_defs.md#describecanariesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -150,7 +162,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeCanariesResponseResponseTypeDef](./type_defs.md#describecanariesresponseresponsetypedef).
+[DescribeCanariesResponseTypeDef](./type_defs.md#describecanariesresponsetypedef).
 
 ### describe_canaries_last_run
 
@@ -164,7 +176,7 @@ Boto3 documentation:
 [Synthetics.Client.describe_canaries_last_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.describe_canaries_last_run)
 
 Arguments mapping described in
-[DescribeCanariesLastRunRequestTypeDef](./type_defs.md#describecanarieslastrunrequesttypedef).
+[DescribeCanariesLastRunRequestRequestTypeDef](./type_defs.md#describecanarieslastrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -172,7 +184,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeCanariesLastRunResponseResponseTypeDef](./type_defs.md#describecanarieslastrunresponseresponsetypedef).
+[DescribeCanariesLastRunResponseTypeDef](./type_defs.md#describecanarieslastrunresponsetypedef).
 
 ### describe_runtime_versions
 
@@ -185,7 +197,7 @@ Boto3 documentation:
 [Synthetics.Client.describe_runtime_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.describe_runtime_versions)
 
 Arguments mapping described in
-[DescribeRuntimeVersionsRequestTypeDef](./type_defs.md#describeruntimeversionsrequesttypedef).
+[DescribeRuntimeVersionsRequestRequestTypeDef](./type_defs.md#describeruntimeversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -193,7 +205,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeRuntimeVersionsResponseResponseTypeDef](./type_defs.md#describeruntimeversionsresponseresponsetypedef).
+[DescribeRuntimeVersionsResponseTypeDef](./type_defs.md#describeruntimeversionsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -224,14 +236,13 @@ Boto3 documentation:
 [Synthetics.Client.get_canary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.get_canary)
 
 Arguments mapping described in
-[GetCanaryRequestTypeDef](./type_defs.md#getcanaryrequesttypedef).
+[GetCanaryRequestRequestTypeDef](./type_defs.md#getcanaryrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
-Returns
-[GetCanaryResponseResponseTypeDef](./type_defs.md#getcanaryresponseresponsetypedef).
+Returns [GetCanaryResponseTypeDef](./type_defs.md#getcanaryresponsetypedef).
 
 ### get_canary_runs
 
@@ -243,7 +254,7 @@ Boto3 documentation:
 [Synthetics.Client.get_canary_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.get_canary_runs)
 
 Arguments mapping described in
-[GetCanaryRunsRequestTypeDef](./type_defs.md#getcanaryrunsrequesttypedef).
+[GetCanaryRunsRequestRequestTypeDef](./type_defs.md#getcanaryrunsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -252,7 +263,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetCanaryRunsResponseResponseTypeDef](./type_defs.md#getcanaryrunsresponseresponsetypedef).
+[GetCanaryRunsResponseTypeDef](./type_defs.md#getcanaryrunsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -265,14 +276,14 @@ Boto3 documentation:
 [Synthetics.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### start_canary
 
@@ -284,7 +295,7 @@ Boto3 documentation:
 [Synthetics.Client.start_canary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.start_canary)
 
 Arguments mapping described in
-[StartCanaryRequestTypeDef](./type_defs.md#startcanaryrequesttypedef).
+[StartCanaryRequestRequestTypeDef](./type_defs.md#startcanaryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -302,7 +313,7 @@ Boto3 documentation:
 [Synthetics.Client.stop_canary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.stop_canary)
 
 Arguments mapping described in
-[StopCanaryRequestTypeDef](./type_defs.md#stopcanaryrequesttypedef).
+[StopCanaryRequestRequestTypeDef](./type_defs.md#stopcanaryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -320,7 +331,7 @@ Boto3 documentation:
 [Synthetics.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -339,7 +350,7 @@ Boto3 documentation:
 [Synthetics.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -359,7 +370,7 @@ Boto3 documentation:
 [Synthetics.Client.update_canary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.update_canary)
 
 Arguments mapping described in
-[UpdateCanaryRequestTypeDef](./type_defs.md#updatecanaryrequesttypedef).
+[UpdateCanaryRequestRequestTypeDef](./type_defs.md#updatecanaryrequestrequesttypedef).
 
 Keyword-only arguments:
 

@@ -11,6 +11,7 @@ type annotations stubs module
   - [ConfigServiceClient](#configserviceclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [batch_get_aggregate_resource_config](#batch_get_aggregate_resource_config)
     - [batch_get_resource_config](#batch_get_resource_config)
     - [can_paginate](#can_paginate)
@@ -188,6 +189,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ConfigServiceClient exceptions.
+
+Type annotations for `boto3.client("config").exceptions` method.
+
+Boto3 documentation:
+[ConfigService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### batch_get_aggregate_resource_config
 
 Returns the current configuration items for resources that are present in your
@@ -200,7 +212,7 @@ Boto3 documentation:
 [ConfigService.Client.batch_get_aggregate_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.batch_get_aggregate_resource_config)
 
 Arguments mapping described in
-[BatchGetAggregateResourceConfigRequestTypeDef](./type_defs.md#batchgetaggregateresourceconfigrequesttypedef).
+[BatchGetAggregateResourceConfigRequestRequestTypeDef](./type_defs.md#batchgetaggregateresourceconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -210,7 +222,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchGetAggregateResourceConfigResponseResponseTypeDef](./type_defs.md#batchgetaggregateresourceconfigresponseresponsetypedef).
+[BatchGetAggregateResourceConfigResponseTypeDef](./type_defs.md#batchgetaggregateresourceconfigresponsetypedef).
 
 ### batch_get_resource_config
 
@@ -222,7 +234,7 @@ Boto3 documentation:
 [ConfigService.Client.batch_get_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.batch_get_resource_config)
 
 Arguments mapping described in
-[BatchGetResourceConfigRequestTypeDef](./type_defs.md#batchgetresourceconfigrequesttypedef).
+[BatchGetResourceConfigRequestRequestTypeDef](./type_defs.md#batchgetresourceconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -231,7 +243,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchGetResourceConfigResponseResponseTypeDef](./type_defs.md#batchgetresourceconfigresponseresponsetypedef).
+[BatchGetResourceConfigResponseTypeDef](./type_defs.md#batchgetresourceconfigresponsetypedef).
 
 ### can_paginate
 
@@ -260,7 +272,7 @@ Boto3 documentation:
 [ConfigService.Client.delete_aggregation_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_aggregation_authorization)
 
 Arguments mapping described in
-[DeleteAggregationAuthorizationRequestTypeDef](./type_defs.md#deleteaggregationauthorizationrequesttypedef).
+[DeleteAggregationAuthorizationRequestRequestTypeDef](./type_defs.md#deleteaggregationauthorizationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -277,7 +289,7 @@ Boto3 documentation:
 [ConfigService.Client.delete_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_config_rule)
 
 Arguments mapping described in
-[DeleteConfigRuleRequestTypeDef](./type_defs.md#deleteconfigrulerequesttypedef).
+[DeleteConfigRuleRequestRequestTypeDef](./type_defs.md#deleteconfigrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -295,7 +307,7 @@ Boto3 documentation:
 [ConfigService.Client.delete_configuration_aggregator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_configuration_aggregator)
 
 Arguments mapping described in
-[DeleteConfigurationAggregatorRequestTypeDef](./type_defs.md#deleteconfigurationaggregatorrequesttypedef).
+[DeleteConfigurationAggregatorRequestRequestTypeDef](./type_defs.md#deleteconfigurationaggregatorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -312,7 +324,7 @@ Boto3 documentation:
 [ConfigService.Client.delete_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_configuration_recorder)
 
 Arguments mapping described in
-[DeleteConfigurationRecorderRequestTypeDef](./type_defs.md#deleteconfigurationrecorderrequesttypedef).
+[DeleteConfigurationRecorderRequestRequestTypeDef](./type_defs.md#deleteconfigurationrecorderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -329,7 +341,7 @@ Boto3 documentation:
 [ConfigService.Client.delete_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_conformance_pack)
 
 Arguments mapping described in
-[DeleteConformancePackRequestTypeDef](./type_defs.md#deleteconformancepackrequesttypedef).
+[DeleteConformancePackRequestRequestTypeDef](./type_defs.md#deleteconformancepackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -345,7 +357,7 @@ Boto3 documentation:
 [ConfigService.Client.delete_delivery_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_delivery_channel)
 
 Arguments mapping described in
-[DeleteDeliveryChannelRequestTypeDef](./type_defs.md#deletedeliverychannelrequesttypedef).
+[DeleteDeliveryChannelRequestRequestTypeDef](./type_defs.md#deletedeliverychannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -361,7 +373,7 @@ Boto3 documentation:
 [ConfigService.Client.delete_evaluation_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_evaluation_results)
 
 Arguments mapping described in
-[DeleteEvaluationResultsRequestTypeDef](./type_defs.md#deleteevaluationresultsrequesttypedef).
+[DeleteEvaluationResultsRequestRequestTypeDef](./type_defs.md#deleteevaluationresultsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -381,7 +393,7 @@ Boto3 documentation:
 [ConfigService.Client.delete_organization_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_organization_config_rule)
 
 Arguments mapping described in
-[DeleteOrganizationConfigRuleRequestTypeDef](./type_defs.md#deleteorganizationconfigrulerequesttypedef).
+[DeleteOrganizationConfigRuleRequestRequestTypeDef](./type_defs.md#deleteorganizationconfigrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -399,7 +411,7 @@ Boto3 documentation:
 [ConfigService.Client.delete_organization_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_organization_conformance_pack)
 
 Arguments mapping described in
-[DeleteOrganizationConformancePackRequestTypeDef](./type_defs.md#deleteorganizationconformancepackrequesttypedef).
+[DeleteOrganizationConformancePackRequestRequestTypeDef](./type_defs.md#deleteorganizationconformancepackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -417,7 +429,7 @@ Boto3 documentation:
 [ConfigService.Client.delete_pending_aggregation_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_pending_aggregation_request)
 
 Arguments mapping described in
-[DeletePendingAggregationRequestRequestTypeDef](./type_defs.md#deletependingaggregationrequestrequesttypedef).
+[DeletePendingAggregationRequestRequestRequestTypeDef](./type_defs.md#deletependingaggregationrequestrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -435,7 +447,7 @@ Boto3 documentation:
 [ConfigService.Client.delete_remediation_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_remediation_configuration)
 
 Arguments mapping described in
-[DeleteRemediationConfigurationRequestTypeDef](./type_defs.md#deleteremediationconfigurationrequesttypedef).
+[DeleteRemediationConfigurationRequestRequestTypeDef](./type_defs.md#deleteremediationconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -455,7 +467,7 @@ Boto3 documentation:
 [ConfigService.Client.delete_remediation_exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_remediation_exceptions)
 
 Arguments mapping described in
-[DeleteRemediationExceptionsRequestTypeDef](./type_defs.md#deleteremediationexceptionsrequesttypedef).
+[DeleteRemediationExceptionsRequestRequestTypeDef](./type_defs.md#deleteremediationexceptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -465,7 +477,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[DeleteRemediationExceptionsResponseResponseTypeDef](./type_defs.md#deleteremediationexceptionsresponseresponsetypedef).
+[DeleteRemediationExceptionsResponseTypeDef](./type_defs.md#deleteremediationexceptionsresponsetypedef).
 
 ### delete_resource_config
 
@@ -477,7 +489,7 @@ Boto3 documentation:
 [ConfigService.Client.delete_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_resource_config)
 
 Arguments mapping described in
-[DeleteResourceConfigRequestTypeDef](./type_defs.md#deleteresourceconfigrequesttypedef).
+[DeleteResourceConfigRequestRequestTypeDef](./type_defs.md#deleteresourceconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -495,7 +507,7 @@ Boto3 documentation:
 [ConfigService.Client.delete_retention_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_retention_configuration)
 
 Arguments mapping described in
-[DeleteRetentionConfigurationRequestTypeDef](./type_defs.md#deleteretentionconfigurationrequesttypedef).
+[DeleteRetentionConfigurationRequestRequestTypeDef](./type_defs.md#deleteretentionconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -511,7 +523,7 @@ Boto3 documentation:
 [ConfigService.Client.delete_stored_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_stored_query)
 
 Arguments mapping described in
-[DeleteStoredQueryRequestTypeDef](./type_defs.md#deletestoredqueryrequesttypedef).
+[DeleteStoredQueryRequestRequestTypeDef](./type_defs.md#deletestoredqueryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -530,14 +542,14 @@ Boto3 documentation:
 [ConfigService.Client.deliver_config_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.deliver_config_snapshot)
 
 Arguments mapping described in
-[DeliverConfigSnapshotRequestTypeDef](./type_defs.md#deliverconfigsnapshotrequesttypedef).
+[DeliverConfigSnapshotRequestRequestTypeDef](./type_defs.md#deliverconfigsnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `deliveryChannelName`: `str` *(required)*
 
 Returns
-[DeliverConfigSnapshotResponseResponseTypeDef](./type_defs.md#deliverconfigsnapshotresponseresponsetypedef).
+[DeliverConfigSnapshotResponseTypeDef](./type_defs.md#deliverconfigsnapshotresponsetypedef).
 
 ### describe_aggregate_compliance_by_config_rules
 
@@ -551,7 +563,7 @@ Boto3 documentation:
 [ConfigService.Client.describe_aggregate_compliance_by_config_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregate_compliance_by_config_rules)
 
 Arguments mapping described in
-[DescribeAggregateComplianceByConfigRulesRequestTypeDef](./type_defs.md#describeaggregatecompliancebyconfigrulesrequesttypedef).
+[DescribeAggregateComplianceByConfigRulesRequestRequestTypeDef](./type_defs.md#describeaggregatecompliancebyconfigrulesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -562,7 +574,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeAggregateComplianceByConfigRulesResponseResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconfigrulesresponseresponsetypedef).
+[DescribeAggregateComplianceByConfigRulesResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconfigrulesresponsetypedef).
 
 ### describe_aggregate_compliance_by_conformance_packs
 
@@ -578,7 +590,7 @@ Boto3 documentation:
 [ConfigService.Client.describe_aggregate_compliance_by_conformance_packs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregate_compliance_by_conformance_packs)
 
 Arguments mapping described in
-[DescribeAggregateComplianceByConformancePacksRequestTypeDef](./type_defs.md#describeaggregatecompliancebyconformancepacksrequesttypedef).
+[DescribeAggregateComplianceByConformancePacksRequestRequestTypeDef](./type_defs.md#describeaggregatecompliancebyconformancepacksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -589,7 +601,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeAggregateComplianceByConformancePacksResponseResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconformancepacksresponseresponsetypedef).
+[DescribeAggregateComplianceByConformancePacksResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconformancepacksresponsetypedef).
 
 ### describe_aggregation_authorizations
 
@@ -603,7 +615,7 @@ Boto3 documentation:
 [ConfigService.Client.describe_aggregation_authorizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregation_authorizations)
 
 Arguments mapping described in
-[DescribeAggregationAuthorizationsRequestTypeDef](./type_defs.md#describeaggregationauthorizationsrequesttypedef).
+[DescribeAggregationAuthorizationsRequestRequestTypeDef](./type_defs.md#describeaggregationauthorizationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -611,7 +623,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeAggregationAuthorizationsResponseResponseTypeDef](./type_defs.md#describeaggregationauthorizationsresponseresponsetypedef).
+[DescribeAggregationAuthorizationsResponseTypeDef](./type_defs.md#describeaggregationauthorizationsresponsetypedef).
 
 ### describe_compliance_by_config_rule
 
@@ -624,7 +636,7 @@ Boto3 documentation:
 [ConfigService.Client.describe_compliance_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_compliance_by_config_rule)
 
 Arguments mapping described in
-[DescribeComplianceByConfigRuleRequestTypeDef](./type_defs.md#describecompliancebyconfigrulerequesttypedef).
+[DescribeComplianceByConfigRuleRequestRequestTypeDef](./type_defs.md#describecompliancebyconfigrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -634,7 +646,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeComplianceByConfigRuleResponseResponseTypeDef](./type_defs.md#describecompliancebyconfigruleresponseresponsetypedef).
+[DescribeComplianceByConfigRuleResponseTypeDef](./type_defs.md#describecompliancebyconfigruleresponsetypedef).
 
 ### describe_compliance_by_resource
 
@@ -647,7 +659,7 @@ Boto3 documentation:
 [ConfigService.Client.describe_compliance_by_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_compliance_by_resource)
 
 Arguments mapping described in
-[DescribeComplianceByResourceRequestTypeDef](./type_defs.md#describecompliancebyresourcerequesttypedef).
+[DescribeComplianceByResourceRequestRequestTypeDef](./type_defs.md#describecompliancebyresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -659,7 +671,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeComplianceByResourceResponseResponseTypeDef](./type_defs.md#describecompliancebyresourceresponseresponsetypedef).
+[DescribeComplianceByResourceResponseTypeDef](./type_defs.md#describecompliancebyresourceresponsetypedef).
 
 ### describe_config_rule_evaluation_status
 
@@ -672,7 +684,7 @@ Boto3 documentation:
 [ConfigService.Client.describe_config_rule_evaluation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_config_rule_evaluation_status)
 
 Arguments mapping described in
-[DescribeConfigRuleEvaluationStatusRequestTypeDef](./type_defs.md#describeconfigruleevaluationstatusrequesttypedef).
+[DescribeConfigRuleEvaluationStatusRequestRequestTypeDef](./type_defs.md#describeconfigruleevaluationstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -681,7 +693,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeConfigRuleEvaluationStatusResponseResponseTypeDef](./type_defs.md#describeconfigruleevaluationstatusresponseresponsetypedef).
+[DescribeConfigRuleEvaluationStatusResponseTypeDef](./type_defs.md#describeconfigruleevaluationstatusresponsetypedef).
 
 ### describe_config_rules
 
@@ -693,7 +705,7 @@ Boto3 documentation:
 [ConfigService.Client.describe_config_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_config_rules)
 
 Arguments mapping described in
-[DescribeConfigRulesRequestTypeDef](./type_defs.md#describeconfigrulesrequesttypedef).
+[DescribeConfigRulesRequestRequestTypeDef](./type_defs.md#describeconfigrulesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -701,7 +713,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeConfigRulesResponseResponseTypeDef](./type_defs.md#describeconfigrulesresponseresponsetypedef).
+[DescribeConfigRulesResponseTypeDef](./type_defs.md#describeconfigrulesresponsetypedef).
 
 ### describe_configuration_aggregator_sources_status
 
@@ -715,7 +727,7 @@ Boto3 documentation:
 [ConfigService.Client.describe_configuration_aggregator_sources_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_aggregator_sources_status)
 
 Arguments mapping described in
-[DescribeConfigurationAggregatorSourcesStatusRequestTypeDef](./type_defs.md#describeconfigurationaggregatorsourcesstatusrequesttypedef).
+[DescribeConfigurationAggregatorSourcesStatusRequestRequestTypeDef](./type_defs.md#describeconfigurationaggregatorsourcesstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -726,7 +738,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeConfigurationAggregatorSourcesStatusResponseResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsourcesstatusresponseresponsetypedef).
+[DescribeConfigurationAggregatorSourcesStatusResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsourcesstatusresponsetypedef).
 
 ### describe_configuration_aggregators
 
@@ -739,7 +751,7 @@ Boto3 documentation:
 [ConfigService.Client.describe_configuration_aggregators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_aggregators)
 
 Arguments mapping described in
-[DescribeConfigurationAggregatorsRequestTypeDef](./type_defs.md#describeconfigurationaggregatorsrequesttypedef).
+[DescribeConfigurationAggregatorsRequestRequestTypeDef](./type_defs.md#describeconfigurationaggregatorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -748,7 +760,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeConfigurationAggregatorsResponseResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsresponseresponsetypedef).
+[DescribeConfigurationAggregatorsResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsresponsetypedef).
 
 ### describe_configuration_recorder_status
 
@@ -761,14 +773,14 @@ Boto3 documentation:
 [ConfigService.Client.describe_configuration_recorder_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_recorder_status)
 
 Arguments mapping described in
-[DescribeConfigurationRecorderStatusRequestTypeDef](./type_defs.md#describeconfigurationrecorderstatusrequesttypedef).
+[DescribeConfigurationRecorderStatusRequestRequestTypeDef](./type_defs.md#describeconfigurationrecorderstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ConfigurationRecorderNames`: `List`\[`str`\]
 
 Returns
-[DescribeConfigurationRecorderStatusResponseResponseTypeDef](./type_defs.md#describeconfigurationrecorderstatusresponseresponsetypedef).
+[DescribeConfigurationRecorderStatusResponseTypeDef](./type_defs.md#describeconfigurationrecorderstatusresponsetypedef).
 
 ### describe_configuration_recorders
 
@@ -781,14 +793,14 @@ Boto3 documentation:
 [ConfigService.Client.describe_configuration_recorders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_recorders)
 
 Arguments mapping described in
-[DescribeConfigurationRecordersRequestTypeDef](./type_defs.md#describeconfigurationrecordersrequesttypedef).
+[DescribeConfigurationRecordersRequestRequestTypeDef](./type_defs.md#describeconfigurationrecordersrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ConfigurationRecorderNames`: `List`\[`str`\]
 
 Returns
-[DescribeConfigurationRecordersResponseResponseTypeDef](./type_defs.md#describeconfigurationrecordersresponseresponsetypedef).
+[DescribeConfigurationRecordersResponseTypeDef](./type_defs.md#describeconfigurationrecordersresponsetypedef).
 
 ### describe_conformance_pack_compliance
 
@@ -801,7 +813,7 @@ Boto3 documentation:
 [ConfigService.Client.describe_conformance_pack_compliance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_pack_compliance)
 
 Arguments mapping described in
-[DescribeConformancePackComplianceRequestTypeDef](./type_defs.md#describeconformancepackcompliancerequesttypedef).
+[DescribeConformancePackComplianceRequestRequestTypeDef](./type_defs.md#describeconformancepackcompliancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -812,7 +824,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeConformancePackComplianceResponseResponseTypeDef](./type_defs.md#describeconformancepackcomplianceresponseresponsetypedef).
+[DescribeConformancePackComplianceResponseTypeDef](./type_defs.md#describeconformancepackcomplianceresponsetypedef).
 
 ### describe_conformance_pack_status
 
@@ -825,7 +837,7 @@ Boto3 documentation:
 [ConfigService.Client.describe_conformance_pack_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_pack_status)
 
 Arguments mapping described in
-[DescribeConformancePackStatusRequestTypeDef](./type_defs.md#describeconformancepackstatusrequesttypedef).
+[DescribeConformancePackStatusRequestRequestTypeDef](./type_defs.md#describeconformancepackstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -834,7 +846,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeConformancePackStatusResponseResponseTypeDef](./type_defs.md#describeconformancepackstatusresponseresponsetypedef).
+[DescribeConformancePackStatusResponseTypeDef](./type_defs.md#describeconformancepackstatusresponsetypedef).
 
 ### describe_conformance_packs
 
@@ -847,7 +859,7 @@ Boto3 documentation:
 [ConfigService.Client.describe_conformance_packs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_packs)
 
 Arguments mapping described in
-[DescribeConformancePacksRequestTypeDef](./type_defs.md#describeconformancepacksrequesttypedef).
+[DescribeConformancePacksRequestRequestTypeDef](./type_defs.md#describeconformancepacksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -856,7 +868,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeConformancePacksResponseResponseTypeDef](./type_defs.md#describeconformancepacksresponseresponsetypedef).
+[DescribeConformancePacksResponseTypeDef](./type_defs.md#describeconformancepacksresponsetypedef).
 
 ### describe_delivery_channel_status
 
@@ -869,14 +881,14 @@ Boto3 documentation:
 [ConfigService.Client.describe_delivery_channel_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_delivery_channel_status)
 
 Arguments mapping described in
-[DescribeDeliveryChannelStatusRequestTypeDef](./type_defs.md#describedeliverychannelstatusrequesttypedef).
+[DescribeDeliveryChannelStatusRequestRequestTypeDef](./type_defs.md#describedeliverychannelstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DeliveryChannelNames`: `List`\[`str`\]
 
 Returns
-[DescribeDeliveryChannelStatusResponseResponseTypeDef](./type_defs.md#describedeliverychannelstatusresponseresponsetypedef).
+[DescribeDeliveryChannelStatusResponseTypeDef](./type_defs.md#describedeliverychannelstatusresponsetypedef).
 
 ### describe_delivery_channels
 
@@ -889,14 +901,14 @@ Boto3 documentation:
 [ConfigService.Client.describe_delivery_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_delivery_channels)
 
 Arguments mapping described in
-[DescribeDeliveryChannelsRequestTypeDef](./type_defs.md#describedeliverychannelsrequesttypedef).
+[DescribeDeliveryChannelsRequestRequestTypeDef](./type_defs.md#describedeliverychannelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DeliveryChannelNames`: `List`\[`str`\]
 
 Returns
-[DescribeDeliveryChannelsResponseResponseTypeDef](./type_defs.md#describedeliverychannelsresponseresponsetypedef).
+[DescribeDeliveryChannelsResponseTypeDef](./type_defs.md#describedeliverychannelsresponsetypedef).
 
 ### describe_organization_config_rule_statuses
 
@@ -909,7 +921,7 @@ Boto3 documentation:
 [ConfigService.Client.describe_organization_config_rule_statuses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_config_rule_statuses)
 
 Arguments mapping described in
-[DescribeOrganizationConfigRuleStatusesRequestTypeDef](./type_defs.md#describeorganizationconfigrulestatusesrequesttypedef).
+[DescribeOrganizationConfigRuleStatusesRequestRequestTypeDef](./type_defs.md#describeorganizationconfigrulestatusesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -918,7 +930,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeOrganizationConfigRuleStatusesResponseResponseTypeDef](./type_defs.md#describeorganizationconfigrulestatusesresponseresponsetypedef).
+[DescribeOrganizationConfigRuleStatusesResponseTypeDef](./type_defs.md#describeorganizationconfigrulestatusesresponsetypedef).
 
 ### describe_organization_config_rules
 
@@ -931,7 +943,7 @@ Boto3 documentation:
 [ConfigService.Client.describe_organization_config_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_config_rules)
 
 Arguments mapping described in
-[DescribeOrganizationConfigRulesRequestTypeDef](./type_defs.md#describeorganizationconfigrulesrequesttypedef).
+[DescribeOrganizationConfigRulesRequestRequestTypeDef](./type_defs.md#describeorganizationconfigrulesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -940,7 +952,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeOrganizationConfigRulesResponseResponseTypeDef](./type_defs.md#describeorganizationconfigrulesresponseresponsetypedef).
+[DescribeOrganizationConfigRulesResponseTypeDef](./type_defs.md#describeorganizationconfigrulesresponsetypedef).
 
 ### describe_organization_conformance_pack_statuses
 
@@ -954,7 +966,7 @@ Boto3 documentation:
 [ConfigService.Client.describe_organization_conformance_pack_statuses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_conformance_pack_statuses)
 
 Arguments mapping described in
-[DescribeOrganizationConformancePackStatusesRequestTypeDef](./type_defs.md#describeorganizationconformancepackstatusesrequesttypedef).
+[DescribeOrganizationConformancePackStatusesRequestRequestTypeDef](./type_defs.md#describeorganizationconformancepackstatusesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -963,7 +975,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeOrganizationConformancePackStatusesResponseResponseTypeDef](./type_defs.md#describeorganizationconformancepackstatusesresponseresponsetypedef).
+[DescribeOrganizationConformancePackStatusesResponseTypeDef](./type_defs.md#describeorganizationconformancepackstatusesresponsetypedef).
 
 ### describe_organization_conformance_packs
 
@@ -976,7 +988,7 @@ Boto3 documentation:
 [ConfigService.Client.describe_organization_conformance_packs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_conformance_packs)
 
 Arguments mapping described in
-[DescribeOrganizationConformancePacksRequestTypeDef](./type_defs.md#describeorganizationconformancepacksrequesttypedef).
+[DescribeOrganizationConformancePacksRequestRequestTypeDef](./type_defs.md#describeorganizationconformancepacksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -985,7 +997,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeOrganizationConformancePacksResponseResponseTypeDef](./type_defs.md#describeorganizationconformancepacksresponseresponsetypedef).
+[DescribeOrganizationConformancePacksResponseTypeDef](./type_defs.md#describeorganizationconformancepacksresponsetypedef).
 
 ### describe_pending_aggregation_requests
 
@@ -998,7 +1010,7 @@ Boto3 documentation:
 [ConfigService.Client.describe_pending_aggregation_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_pending_aggregation_requests)
 
 Arguments mapping described in
-[DescribePendingAggregationRequestsRequestTypeDef](./type_defs.md#describependingaggregationrequestsrequesttypedef).
+[DescribePendingAggregationRequestsRequestRequestTypeDef](./type_defs.md#describependingaggregationrequestsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1006,7 +1018,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribePendingAggregationRequestsResponseResponseTypeDef](./type_defs.md#describependingaggregationrequestsresponseresponsetypedef).
+[DescribePendingAggregationRequestsResponseTypeDef](./type_defs.md#describependingaggregationrequestsresponsetypedef).
 
 ### describe_remediation_configurations
 
@@ -1019,14 +1031,14 @@ Boto3 documentation:
 [ConfigService.Client.describe_remediation_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_configurations)
 
 Arguments mapping described in
-[DescribeRemediationConfigurationsRequestTypeDef](./type_defs.md#describeremediationconfigurationsrequesttypedef).
+[DescribeRemediationConfigurationsRequestRequestTypeDef](./type_defs.md#describeremediationconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ConfigRuleNames`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeRemediationConfigurationsResponseResponseTypeDef](./type_defs.md#describeremediationconfigurationsresponseresponsetypedef).
+[DescribeRemediationConfigurationsResponseTypeDef](./type_defs.md#describeremediationconfigurationsresponsetypedef).
 
 ### describe_remediation_exceptions
 
@@ -1039,7 +1051,7 @@ Boto3 documentation:
 [ConfigService.Client.describe_remediation_exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_exceptions)
 
 Arguments mapping described in
-[DescribeRemediationExceptionsRequestTypeDef](./type_defs.md#describeremediationexceptionsrequesttypedef).
+[DescribeRemediationExceptionsRequestRequestTypeDef](./type_defs.md#describeremediationexceptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1050,7 +1062,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeRemediationExceptionsResponseResponseTypeDef](./type_defs.md#describeremediationexceptionsresponseresponsetypedef).
+[DescribeRemediationExceptionsResponseTypeDef](./type_defs.md#describeremediationexceptionsresponsetypedef).
 
 ### describe_remediation_execution_status
 
@@ -1065,7 +1077,7 @@ Boto3 documentation:
 [ConfigService.Client.describe_remediation_execution_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_execution_status)
 
 Arguments mapping described in
-[DescribeRemediationExecutionStatusRequestTypeDef](./type_defs.md#describeremediationexecutionstatusrequesttypedef).
+[DescribeRemediationExecutionStatusRequestRequestTypeDef](./type_defs.md#describeremediationexecutionstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1076,7 +1088,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeRemediationExecutionStatusResponseResponseTypeDef](./type_defs.md#describeremediationexecutionstatusresponseresponsetypedef).
+[DescribeRemediationExecutionStatusResponseTypeDef](./type_defs.md#describeremediationexecutionstatusresponsetypedef).
 
 ### describe_retention_configurations
 
@@ -1089,7 +1101,7 @@ Boto3 documentation:
 [ConfigService.Client.describe_retention_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_retention_configurations)
 
 Arguments mapping described in
-[DescribeRetentionConfigurationsRequestTypeDef](./type_defs.md#describeretentionconfigurationsrequesttypedef).
+[DescribeRetentionConfigurationsRequestRequestTypeDef](./type_defs.md#describeretentionconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1097,7 +1109,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeRetentionConfigurationsResponseResponseTypeDef](./type_defs.md#describeretentionconfigurationsresponseresponsetypedef).
+[DescribeRetentionConfigurationsResponseTypeDef](./type_defs.md#describeretentionconfigurationsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -1130,7 +1142,7 @@ Boto3 documentation:
 [ConfigService.Client.get_aggregate_compliance_details_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_compliance_details_by_config_rule)
 
 Arguments mapping described in
-[GetAggregateComplianceDetailsByConfigRuleRequestTypeDef](./type_defs.md#getaggregatecompliancedetailsbyconfigrulerequesttypedef).
+[GetAggregateComplianceDetailsByConfigRuleRequestRequestTypeDef](./type_defs.md#getaggregatecompliancedetailsbyconfigrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1143,7 +1155,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetAggregateComplianceDetailsByConfigRuleResponseResponseTypeDef](./type_defs.md#getaggregatecompliancedetailsbyconfigruleresponseresponsetypedef).
+[GetAggregateComplianceDetailsByConfigRuleResponseTypeDef](./type_defs.md#getaggregatecompliancedetailsbyconfigruleresponsetypedef).
 
 ### get_aggregate_config_rule_compliance_summary
 
@@ -1157,7 +1169,7 @@ Boto3 documentation:
 [ConfigService.Client.get_aggregate_config_rule_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_config_rule_compliance_summary)
 
 Arguments mapping described in
-[GetAggregateConfigRuleComplianceSummaryRequestTypeDef](./type_defs.md#getaggregateconfigrulecompliancesummaryrequesttypedef).
+[GetAggregateConfigRuleComplianceSummaryRequestRequestTypeDef](./type_defs.md#getaggregateconfigrulecompliancesummaryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1170,7 +1182,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetAggregateConfigRuleComplianceSummaryResponseResponseTypeDef](./type_defs.md#getaggregateconfigrulecompliancesummaryresponseresponsetypedef).
+[GetAggregateConfigRuleComplianceSummaryResponseTypeDef](./type_defs.md#getaggregateconfigrulecompliancesummaryresponsetypedef).
 
 ### get_aggregate_conformance_pack_compliance_summary
 
@@ -1185,7 +1197,7 @@ Boto3 documentation:
 [ConfigService.Client.get_aggregate_conformance_pack_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_conformance_pack_compliance_summary)
 
 Arguments mapping described in
-[GetAggregateConformancePackComplianceSummaryRequestTypeDef](./type_defs.md#getaggregateconformancepackcompliancesummaryrequesttypedef).
+[GetAggregateConformancePackComplianceSummaryRequestRequestTypeDef](./type_defs.md#getaggregateconformancepackcompliancesummaryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1198,7 +1210,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetAggregateConformancePackComplianceSummaryResponseResponseTypeDef](./type_defs.md#getaggregateconformancepackcompliancesummaryresponseresponsetypedef).
+[GetAggregateConformancePackComplianceSummaryResponseTypeDef](./type_defs.md#getaggregateconformancepackcompliancesummaryresponsetypedef).
 
 ### get_aggregate_discovered_resource_counts
 
@@ -1212,7 +1224,7 @@ Boto3 documentation:
 [ConfigService.Client.get_aggregate_discovered_resource_counts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_discovered_resource_counts)
 
 Arguments mapping described in
-[GetAggregateDiscoveredResourceCountsRequestTypeDef](./type_defs.md#getaggregatediscoveredresourcecountsrequesttypedef).
+[GetAggregateDiscoveredResourceCountsRequestRequestTypeDef](./type_defs.md#getaggregatediscoveredresourcecountsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1225,7 +1237,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetAggregateDiscoveredResourceCountsResponseResponseTypeDef](./type_defs.md#getaggregatediscoveredresourcecountsresponseresponsetypedef).
+[GetAggregateDiscoveredResourceCountsResponseTypeDef](./type_defs.md#getaggregatediscoveredresourcecountsresponsetypedef).
 
 ### get_aggregate_resource_config
 
@@ -1239,7 +1251,7 @@ Boto3 documentation:
 [ConfigService.Client.get_aggregate_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_resource_config)
 
 Arguments mapping described in
-[GetAggregateResourceConfigRequestTypeDef](./type_defs.md#getaggregateresourceconfigrequesttypedef).
+[GetAggregateResourceConfigRequestRequestTypeDef](./type_defs.md#getaggregateresourceconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1249,7 +1261,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[GetAggregateResourceConfigResponseResponseTypeDef](./type_defs.md#getaggregateresourceconfigresponseresponsetypedef).
+[GetAggregateResourceConfigResponseTypeDef](./type_defs.md#getaggregateresourceconfigresponsetypedef).
 
 ### get_compliance_details_by_config_rule
 
@@ -1262,7 +1274,7 @@ Boto3 documentation:
 [ConfigService.Client.get_compliance_details_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_details_by_config_rule)
 
 Arguments mapping described in
-[GetComplianceDetailsByConfigRuleRequestTypeDef](./type_defs.md#getcompliancedetailsbyconfigrulerequesttypedef).
+[GetComplianceDetailsByConfigRuleRequestRequestTypeDef](./type_defs.md#getcompliancedetailsbyconfigrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1273,7 +1285,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetComplianceDetailsByConfigRuleResponseResponseTypeDef](./type_defs.md#getcompliancedetailsbyconfigruleresponseresponsetypedef).
+[GetComplianceDetailsByConfigRuleResponseTypeDef](./type_defs.md#getcompliancedetailsbyconfigruleresponsetypedef).
 
 ### get_compliance_details_by_resource
 
@@ -1286,7 +1298,7 @@ Boto3 documentation:
 [ConfigService.Client.get_compliance_details_by_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_details_by_resource)
 
 Arguments mapping described in
-[GetComplianceDetailsByResourceRequestTypeDef](./type_defs.md#getcompliancedetailsbyresourcerequesttypedef).
+[GetComplianceDetailsByResourceRequestRequestTypeDef](./type_defs.md#getcompliancedetailsbyresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1297,7 +1309,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetComplianceDetailsByResourceResponseResponseTypeDef](./type_defs.md#getcompliancedetailsbyresourceresponseresponsetypedef).
+[GetComplianceDetailsByResourceResponseTypeDef](./type_defs.md#getcompliancedetailsbyresourceresponsetypedef).
 
 ### get_compliance_summary_by_config_rule
 
@@ -1311,7 +1323,7 @@ Boto3 documentation:
 [ConfigService.Client.get_compliance_summary_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_summary_by_config_rule)
 
 Returns
-[GetComplianceSummaryByConfigRuleResponseResponseTypeDef](./type_defs.md#getcompliancesummarybyconfigruleresponseresponsetypedef).
+[GetComplianceSummaryByConfigRuleResponseTypeDef](./type_defs.md#getcompliancesummarybyconfigruleresponsetypedef).
 
 ### get_compliance_summary_by_resource_type
 
@@ -1325,14 +1337,14 @@ Boto3 documentation:
 [ConfigService.Client.get_compliance_summary_by_resource_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_summary_by_resource_type)
 
 Arguments mapping described in
-[GetComplianceSummaryByResourceTypeRequestTypeDef](./type_defs.md#getcompliancesummarybyresourcetyperequesttypedef).
+[GetComplianceSummaryByResourceTypeRequestRequestTypeDef](./type_defs.md#getcompliancesummarybyresourcetyperequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceTypes`: `List`\[`str`\]
 
 Returns
-[GetComplianceSummaryByResourceTypeResponseResponseTypeDef](./type_defs.md#getcompliancesummarybyresourcetyperesponseresponsetypedef).
+[GetComplianceSummaryByResourceTypeResponseTypeDef](./type_defs.md#getcompliancesummarybyresourcetyperesponsetypedef).
 
 ### get_conformance_pack_compliance_details
 
@@ -1346,7 +1358,7 @@ Boto3 documentation:
 [ConfigService.Client.get_conformance_pack_compliance_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_conformance_pack_compliance_details)
 
 Arguments mapping described in
-[GetConformancePackComplianceDetailsRequestTypeDef](./type_defs.md#getconformancepackcompliancedetailsrequesttypedef).
+[GetConformancePackComplianceDetailsRequestRequestTypeDef](./type_defs.md#getconformancepackcompliancedetailsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1357,7 +1369,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetConformancePackComplianceDetailsResponseResponseTypeDef](./type_defs.md#getconformancepackcompliancedetailsresponseresponsetypedef).
+[GetConformancePackComplianceDetailsResponseTypeDef](./type_defs.md#getconformancepackcompliancedetailsresponsetypedef).
 
 ### get_conformance_pack_compliance_summary
 
@@ -1371,7 +1383,7 @@ Boto3 documentation:
 [ConfigService.Client.get_conformance_pack_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_conformance_pack_compliance_summary)
 
 Arguments mapping described in
-[GetConformancePackComplianceSummaryRequestTypeDef](./type_defs.md#getconformancepackcompliancesummaryrequesttypedef).
+[GetConformancePackComplianceSummaryRequestRequestTypeDef](./type_defs.md#getconformancepackcompliancesummaryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1380,7 +1392,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetConformancePackComplianceSummaryResponseResponseTypeDef](./type_defs.md#getconformancepackcompliancesummaryresponseresponsetypedef).
+[GetConformancePackComplianceSummaryResponseTypeDef](./type_defs.md#getconformancepackcompliancesummaryresponsetypedef).
 
 ### get_discovered_resource_counts
 
@@ -1395,7 +1407,7 @@ Boto3 documentation:
 [ConfigService.Client.get_discovered_resource_counts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_discovered_resource_counts)
 
 Arguments mapping described in
-[GetDiscoveredResourceCountsRequestTypeDef](./type_defs.md#getdiscoveredresourcecountsrequesttypedef).
+[GetDiscoveredResourceCountsRequestRequestTypeDef](./type_defs.md#getdiscoveredresourcecountsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1404,7 +1416,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[GetDiscoveredResourceCountsResponseResponseTypeDef](./type_defs.md#getdiscoveredresourcecountsresponseresponsetypedef).
+[GetDiscoveredResourceCountsResponseTypeDef](./type_defs.md#getdiscoveredresourcecountsresponsetypedef).
 
 ### get_organization_config_rule_detailed_status
 
@@ -1418,7 +1430,7 @@ Boto3 documentation:
 [ConfigService.Client.get_organization_config_rule_detailed_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_organization_config_rule_detailed_status)
 
 Arguments mapping described in
-[GetOrganizationConfigRuleDetailedStatusRequestTypeDef](./type_defs.md#getorganizationconfigruledetailedstatusrequesttypedef).
+[GetOrganizationConfigRuleDetailedStatusRequestRequestTypeDef](./type_defs.md#getorganizationconfigruledetailedstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1429,7 +1441,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetOrganizationConfigRuleDetailedStatusResponseResponseTypeDef](./type_defs.md#getorganizationconfigruledetailedstatusresponseresponsetypedef).
+[GetOrganizationConfigRuleDetailedStatusResponseTypeDef](./type_defs.md#getorganizationconfigruledetailedstatusresponsetypedef).
 
 ### get_organization_conformance_pack_detailed_status
 
@@ -1444,7 +1456,7 @@ Boto3 documentation:
 [ConfigService.Client.get_organization_conformance_pack_detailed_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_organization_conformance_pack_detailed_status)
 
 Arguments mapping described in
-[GetOrganizationConformancePackDetailedStatusRequestTypeDef](./type_defs.md#getorganizationconformancepackdetailedstatusrequesttypedef).
+[GetOrganizationConformancePackDetailedStatusRequestRequestTypeDef](./type_defs.md#getorganizationconformancepackdetailedstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1455,7 +1467,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetOrganizationConformancePackDetailedStatusResponseResponseTypeDef](./type_defs.md#getorganizationconformancepackdetailedstatusresponseresponsetypedef).
+[GetOrganizationConformancePackDetailedStatusResponseTypeDef](./type_defs.md#getorganizationconformancepackdetailedstatusresponsetypedef).
 
 ### get_resource_config_history
 
@@ -1468,7 +1480,7 @@ Boto3 documentation:
 [ConfigService.Client.get_resource_config_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_resource_config_history)
 
 Arguments mapping described in
-[GetResourceConfigHistoryRequestTypeDef](./type_defs.md#getresourceconfighistoryrequesttypedef).
+[GetResourceConfigHistoryRequestRequestTypeDef](./type_defs.md#getresourceconfighistoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1483,7 +1495,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[GetResourceConfigHistoryResponseResponseTypeDef](./type_defs.md#getresourceconfighistoryresponseresponsetypedef).
+[GetResourceConfigHistoryResponseTypeDef](./type_defs.md#getresourceconfighistoryresponsetypedef).
 
 ### get_stored_query
 
@@ -1495,14 +1507,14 @@ Boto3 documentation:
 [ConfigService.Client.get_stored_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_stored_query)
 
 Arguments mapping described in
-[GetStoredQueryRequestTypeDef](./type_defs.md#getstoredqueryrequesttypedef).
+[GetStoredQueryRequestRequestTypeDef](./type_defs.md#getstoredqueryrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `QueryName`: `str` *(required)*
 
 Returns
-[GetStoredQueryResponseResponseTypeDef](./type_defs.md#getstoredqueryresponseresponsetypedef).
+[GetStoredQueryResponseTypeDef](./type_defs.md#getstoredqueryresponsetypedef).
 
 ### list_aggregate_discovered_resources
 
@@ -1516,7 +1528,7 @@ Boto3 documentation:
 [ConfigService.Client.list_aggregate_discovered_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_aggregate_discovered_resources)
 
 Arguments mapping described in
-[ListAggregateDiscoveredResourcesRequestTypeDef](./type_defs.md#listaggregatediscoveredresourcesrequesttypedef).
+[ListAggregateDiscoveredResourcesRequestRequestTypeDef](./type_defs.md#listaggregatediscoveredresourcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1528,7 +1540,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAggregateDiscoveredResourcesResponseResponseTypeDef](./type_defs.md#listaggregatediscoveredresourcesresponseresponsetypedef).
+[ListAggregateDiscoveredResourcesResponseTypeDef](./type_defs.md#listaggregatediscoveredresourcesresponsetypedef).
 
 ### list_discovered_resources
 
@@ -1541,7 +1553,7 @@ Boto3 documentation:
 [ConfigService.Client.list_discovered_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_discovered_resources)
 
 Arguments mapping described in
-[ListDiscoveredResourcesRequestTypeDef](./type_defs.md#listdiscoveredresourcesrequesttypedef).
+[ListDiscoveredResourcesRequestRequestTypeDef](./type_defs.md#listdiscoveredresourcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1554,7 +1566,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListDiscoveredResourcesResponseResponseTypeDef](./type_defs.md#listdiscoveredresourcesresponseresponsetypedef).
+[ListDiscoveredResourcesResponseTypeDef](./type_defs.md#listdiscoveredresourcesresponsetypedef).
 
 ### list_stored_queries
 
@@ -1566,7 +1578,7 @@ Boto3 documentation:
 [ConfigService.Client.list_stored_queries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_stored_queries)
 
 Arguments mapping described in
-[ListStoredQueriesRequestTypeDef](./type_defs.md#liststoredqueriesrequesttypedef).
+[ListStoredQueriesRequestRequestTypeDef](./type_defs.md#liststoredqueriesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1574,7 +1586,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListStoredQueriesResponseResponseTypeDef](./type_defs.md#liststoredqueriesresponseresponsetypedef).
+[ListStoredQueriesResponseTypeDef](./type_defs.md#liststoredqueriesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -1586,7 +1598,7 @@ Boto3 documentation:
 [ConfigService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1595,7 +1607,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_aggregation_authorization
 
@@ -1609,7 +1621,7 @@ Boto3 documentation:
 [ConfigService.Client.put_aggregation_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_aggregation_authorization)
 
 Arguments mapping described in
-[PutAggregationAuthorizationRequestTypeDef](./type_defs.md#putaggregationauthorizationrequesttypedef).
+[PutAggregationAuthorizationRequestRequestTypeDef](./type_defs.md#putaggregationauthorizationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1618,7 +1630,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[PutAggregationAuthorizationResponseResponseTypeDef](./type_defs.md#putaggregationauthorizationresponseresponsetypedef).
+[PutAggregationAuthorizationResponseTypeDef](./type_defs.md#putaggregationauthorizationresponsetypedef).
 
 ### put_config_rule
 
@@ -1631,7 +1643,7 @@ Boto3 documentation:
 [ConfigService.Client.put_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_config_rule)
 
 Arguments mapping described in
-[PutConfigRuleRequestTypeDef](./type_defs.md#putconfigrulerequesttypedef).
+[PutConfigRuleRequestRequestTypeDef](./type_defs.md#putconfigrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1651,7 +1663,7 @@ Boto3 documentation:
 [ConfigService.Client.put_configuration_aggregator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_configuration_aggregator)
 
 Arguments mapping described in
-[PutConfigurationAggregatorRequestTypeDef](./type_defs.md#putconfigurationaggregatorrequesttypedef).
+[PutConfigurationAggregatorRequestRequestTypeDef](./type_defs.md#putconfigurationaggregatorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1663,7 +1675,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[PutConfigurationAggregatorResponseResponseTypeDef](./type_defs.md#putconfigurationaggregatorresponseresponsetypedef).
+[PutConfigurationAggregatorResponseTypeDef](./type_defs.md#putconfigurationaggregatorresponsetypedef).
 
 ### put_configuration_recorder
 
@@ -1677,7 +1689,7 @@ Boto3 documentation:
 [ConfigService.Client.put_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_configuration_recorder)
 
 Arguments mapping described in
-[PutConfigurationRecorderRequestTypeDef](./type_defs.md#putconfigurationrecorderrequesttypedef).
+[PutConfigurationRecorderRequestRequestTypeDef](./type_defs.md#putconfigurationrecorderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1695,7 +1707,7 @@ Boto3 documentation:
 [ConfigService.Client.put_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_conformance_pack)
 
 Arguments mapping described in
-[PutConformancePackRequestTypeDef](./type_defs.md#putconformancepackrequesttypedef).
+[PutConformancePackRequestRequestTypeDef](./type_defs.md#putconformancepackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1708,7 +1720,7 @@ Keyword-only arguments:
   `List`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
 
 Returns
-[PutConformancePackResponseResponseTypeDef](./type_defs.md#putconformancepackresponseresponsetypedef).
+[PutConformancePackResponseTypeDef](./type_defs.md#putconformancepackresponsetypedef).
 
 ### put_delivery_channel
 
@@ -1721,7 +1733,7 @@ Boto3 documentation:
 [ConfigService.Client.put_delivery_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_delivery_channel)
 
 Arguments mapping described in
-[PutDeliveryChannelRequestTypeDef](./type_defs.md#putdeliverychannelrequesttypedef).
+[PutDeliveryChannelRequestRequestTypeDef](./type_defs.md#putdeliverychannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1738,7 +1750,7 @@ Boto3 documentation:
 [ConfigService.Client.put_evaluations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_evaluations)
 
 Arguments mapping described in
-[PutEvaluationsRequestTypeDef](./type_defs.md#putevaluationsrequesttypedef).
+[PutEvaluationsRequestRequestTypeDef](./type_defs.md#putevaluationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1748,7 +1760,7 @@ Keyword-only arguments:
 - `TestMode`: `bool`
 
 Returns
-[PutEvaluationsResponseResponseTypeDef](./type_defs.md#putevaluationsresponseresponsetypedef).
+[PutEvaluationsResponseTypeDef](./type_defs.md#putevaluationsresponsetypedef).
 
 ### put_external_evaluation
 
@@ -1760,7 +1772,7 @@ Boto3 documentation:
 [ConfigService.Client.put_external_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_external_evaluation)
 
 Arguments mapping described in
-[PutExternalEvaluationRequestTypeDef](./type_defs.md#putexternalevaluationrequesttypedef).
+[PutExternalEvaluationRequestRequestTypeDef](./type_defs.md#putexternalevaluationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1783,7 +1795,7 @@ Boto3 documentation:
 [ConfigService.Client.put_organization_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_organization_config_rule)
 
 Arguments mapping described in
-[PutOrganizationConfigRuleRequestTypeDef](./type_defs.md#putorganizationconfigrulerequesttypedef).
+[PutOrganizationConfigRuleRequestRequestTypeDef](./type_defs.md#putorganizationconfigrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1795,7 +1807,7 @@ Keyword-only arguments:
 - `ExcludedAccounts`: `List`\[`str`\]
 
 Returns
-[PutOrganizationConfigRuleResponseResponseTypeDef](./type_defs.md#putorganizationconfigruleresponseresponsetypedef).
+[PutOrganizationConfigRuleResponseTypeDef](./type_defs.md#putorganizationconfigruleresponsetypedef).
 
 ### put_organization_conformance_pack
 
@@ -1808,7 +1820,7 @@ Boto3 documentation:
 [ConfigService.Client.put_organization_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_organization_conformance_pack)
 
 Arguments mapping described in
-[PutOrganizationConformancePackRequestTypeDef](./type_defs.md#putorganizationconformancepackrequesttypedef).
+[PutOrganizationConformancePackRequestRequestTypeDef](./type_defs.md#putorganizationconformancepackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1822,7 +1834,7 @@ Keyword-only arguments:
 - `ExcludedAccounts`: `List`\[`str`\]
 
 Returns
-[PutOrganizationConformancePackResponseResponseTypeDef](./type_defs.md#putorganizationconformancepackresponseresponsetypedef).
+[PutOrganizationConformancePackResponseTypeDef](./type_defs.md#putorganizationconformancepackresponsetypedef).
 
 ### put_remediation_configurations
 
@@ -1836,7 +1848,7 @@ Boto3 documentation:
 [ConfigService.Client.put_remediation_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_remediation_configurations)
 
 Arguments mapping described in
-[PutRemediationConfigurationsRequestTypeDef](./type_defs.md#putremediationconfigurationsrequesttypedef).
+[PutRemediationConfigurationsRequestRequestTypeDef](./type_defs.md#putremediationconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1845,7 +1857,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutRemediationConfigurationsResponseResponseTypeDef](./type_defs.md#putremediationconfigurationsresponseresponsetypedef).
+[PutRemediationConfigurationsResponseTypeDef](./type_defs.md#putremediationconfigurationsresponsetypedef).
 
 ### put_remediation_exceptions
 
@@ -1859,7 +1871,7 @@ Boto3 documentation:
 [ConfigService.Client.put_remediation_exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_remediation_exceptions)
 
 Arguments mapping described in
-[PutRemediationExceptionsRequestTypeDef](./type_defs.md#putremediationexceptionsrequesttypedef).
+[PutRemediationExceptionsRequestRequestTypeDef](./type_defs.md#putremediationexceptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1871,7 +1883,7 @@ Keyword-only arguments:
 - `ExpirationTime`: `Union`\[`datetime`, `str`\]
 
 Returns
-[PutRemediationExceptionsResponseResponseTypeDef](./type_defs.md#putremediationexceptionsresponseresponsetypedef).
+[PutRemediationExceptionsResponseTypeDef](./type_defs.md#putremediationexceptionsresponsetypedef).
 
 ### put_resource_config
 
@@ -1883,7 +1895,7 @@ Boto3 documentation:
 [ConfigService.Client.put_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_resource_config)
 
 Arguments mapping described in
-[PutResourceConfigRequestTypeDef](./type_defs.md#putresourceconfigrequesttypedef).
+[PutResourceConfigRequestRequestTypeDef](./type_defs.md#putresourceconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1906,14 +1918,14 @@ Boto3 documentation:
 [ConfigService.Client.put_retention_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_retention_configuration)
 
 Arguments mapping described in
-[PutRetentionConfigurationRequestTypeDef](./type_defs.md#putretentionconfigurationrequesttypedef).
+[PutRetentionConfigurationRequestRequestTypeDef](./type_defs.md#putretentionconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `RetentionPeriodInDays`: `int` *(required)*
 
 Returns
-[PutRetentionConfigurationResponseResponseTypeDef](./type_defs.md#putretentionconfigurationresponseresponsetypedef).
+[PutRetentionConfigurationResponseTypeDef](./type_defs.md#putretentionconfigurationresponsetypedef).
 
 ### put_stored_query
 
@@ -1925,7 +1937,7 @@ Boto3 documentation:
 [ConfigService.Client.put_stored_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_stored_query)
 
 Arguments mapping described in
-[PutStoredQueryRequestTypeDef](./type_defs.md#putstoredqueryrequesttypedef).
+[PutStoredQueryRequestRequestTypeDef](./type_defs.md#putstoredqueryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1934,7 +1946,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[PutStoredQueryResponseResponseTypeDef](./type_defs.md#putstoredqueryresponseresponsetypedef).
+[PutStoredQueryResponseTypeDef](./type_defs.md#putstoredqueryresponsetypedef).
 
 ### select_aggregate_resource_config
 
@@ -1947,7 +1959,7 @@ Boto3 documentation:
 [ConfigService.Client.select_aggregate_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.select_aggregate_resource_config)
 
 Arguments mapping described in
-[SelectAggregateResourceConfigRequestTypeDef](./type_defs.md#selectaggregateresourceconfigrequesttypedef).
+[SelectAggregateResourceConfigRequestRequestTypeDef](./type_defs.md#selectaggregateresourceconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1958,7 +1970,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[SelectAggregateResourceConfigResponseResponseTypeDef](./type_defs.md#selectaggregateresourceconfigresponseresponsetypedef).
+[SelectAggregateResourceConfigResponseTypeDef](./type_defs.md#selectaggregateresourceconfigresponsetypedef).
 
 ### select_resource_config
 
@@ -1970,7 +1982,7 @@ Boto3 documentation:
 [ConfigService.Client.select_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.select_resource_config)
 
 Arguments mapping described in
-[SelectResourceConfigRequestTypeDef](./type_defs.md#selectresourceconfigrequesttypedef).
+[SelectResourceConfigRequestRequestTypeDef](./type_defs.md#selectresourceconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1979,7 +1991,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[SelectResourceConfigResponseResponseTypeDef](./type_defs.md#selectresourceconfigresponseresponsetypedef).
+[SelectResourceConfigResponseTypeDef](./type_defs.md#selectresourceconfigresponsetypedef).
 
 ### start_config_rules_evaluation
 
@@ -1993,7 +2005,7 @@ Boto3 documentation:
 [ConfigService.Client.start_config_rules_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_config_rules_evaluation)
 
 Arguments mapping described in
-[StartConfigRulesEvaluationRequestTypeDef](./type_defs.md#startconfigrulesevaluationrequesttypedef).
+[StartConfigRulesEvaluationRequestRequestTypeDef](./type_defs.md#startconfigrulesevaluationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2013,7 +2025,7 @@ Boto3 documentation:
 [ConfigService.Client.start_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_configuration_recorder)
 
 Arguments mapping described in
-[StartConfigurationRecorderRequestTypeDef](./type_defs.md#startconfigurationrecorderrequesttypedef).
+[StartConfigurationRecorderRequestRequestTypeDef](./type_defs.md#startconfigurationrecorderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2031,7 +2043,7 @@ Boto3 documentation:
 [ConfigService.Client.start_remediation_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_remediation_execution)
 
 Arguments mapping described in
-[StartRemediationExecutionRequestTypeDef](./type_defs.md#startremediationexecutionrequesttypedef).
+[StartRemediationExecutionRequestRequestTypeDef](./type_defs.md#startremediationexecutionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2041,7 +2053,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[StartRemediationExecutionResponseResponseTypeDef](./type_defs.md#startremediationexecutionresponseresponsetypedef).
+[StartRemediationExecutionResponseTypeDef](./type_defs.md#startremediationexecutionresponsetypedef).
 
 ### stop_configuration_recorder
 
@@ -2055,7 +2067,7 @@ Boto3 documentation:
 [ConfigService.Client.stop_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.stop_configuration_recorder)
 
 Arguments mapping described in
-[StopConfigurationRecorderRequestTypeDef](./type_defs.md#stopconfigurationrecorderrequesttypedef).
+[StopConfigurationRecorderRequestRequestTypeDef](./type_defs.md#stopconfigurationrecorderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2071,7 +2083,7 @@ Boto3 documentation:
 [ConfigService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2088,7 +2100,7 @@ Boto3 documentation:
 [ConfigService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 

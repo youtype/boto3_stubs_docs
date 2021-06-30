@@ -9,40 +9,40 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 ManagedBlockchain module](#typed-dictionaries-for-boto3-managedblockchain-module)
   - [ApprovalThresholdPolicyTypeDef](#approvalthresholdpolicytypedef)
-  - [CreateMemberInputTypeDef](#creatememberinputtypedef)
-  - [CreateMemberOutputResponseTypeDef](#creatememberoutputresponsetypedef)
-  - [CreateNetworkInputTypeDef](#createnetworkinputtypedef)
-  - [CreateNetworkOutputResponseTypeDef](#createnetworkoutputresponsetypedef)
-  - [CreateNodeInputTypeDef](#createnodeinputtypedef)
-  - [CreateNodeOutputResponseTypeDef](#createnodeoutputresponsetypedef)
-  - [CreateProposalInputTypeDef](#createproposalinputtypedef)
-  - [CreateProposalOutputResponseTypeDef](#createproposaloutputresponsetypedef)
-  - [DeleteMemberInputTypeDef](#deletememberinputtypedef)
-  - [DeleteNodeInputTypeDef](#deletenodeinputtypedef)
-  - [GetMemberInputTypeDef](#getmemberinputtypedef)
-  - [GetMemberOutputResponseTypeDef](#getmemberoutputresponsetypedef)
-  - [GetNetworkInputTypeDef](#getnetworkinputtypedef)
-  - [GetNetworkOutputResponseTypeDef](#getnetworkoutputresponsetypedef)
-  - [GetNodeInputTypeDef](#getnodeinputtypedef)
-  - [GetNodeOutputResponseTypeDef](#getnodeoutputresponsetypedef)
-  - [GetProposalInputTypeDef](#getproposalinputtypedef)
-  - [GetProposalOutputResponseTypeDef](#getproposaloutputresponsetypedef)
+  - [CreateMemberInputRequestTypeDef](#creatememberinputrequesttypedef)
+  - [CreateMemberOutputTypeDef](#creatememberoutputtypedef)
+  - [CreateNetworkInputRequestTypeDef](#createnetworkinputrequesttypedef)
+  - [CreateNetworkOutputTypeDef](#createnetworkoutputtypedef)
+  - [CreateNodeInputRequestTypeDef](#createnodeinputrequesttypedef)
+  - [CreateNodeOutputTypeDef](#createnodeoutputtypedef)
+  - [CreateProposalInputRequestTypeDef](#createproposalinputrequesttypedef)
+  - [CreateProposalOutputTypeDef](#createproposaloutputtypedef)
+  - [DeleteMemberInputRequestTypeDef](#deletememberinputrequesttypedef)
+  - [DeleteNodeInputRequestTypeDef](#deletenodeinputrequesttypedef)
+  - [GetMemberInputRequestTypeDef](#getmemberinputrequesttypedef)
+  - [GetMemberOutputTypeDef](#getmemberoutputtypedef)
+  - [GetNetworkInputRequestTypeDef](#getnetworkinputrequesttypedef)
+  - [GetNetworkOutputTypeDef](#getnetworkoutputtypedef)
+  - [GetNodeInputRequestTypeDef](#getnodeinputrequesttypedef)
+  - [GetNodeOutputTypeDef](#getnodeoutputtypedef)
+  - [GetProposalInputRequestTypeDef](#getproposalinputrequesttypedef)
+  - [GetProposalOutputTypeDef](#getproposaloutputtypedef)
   - [InvitationTypeDef](#invitationtypedef)
   - [InviteActionTypeDef](#inviteactiontypedef)
-  - [ListInvitationsInputTypeDef](#listinvitationsinputtypedef)
-  - [ListInvitationsOutputResponseTypeDef](#listinvitationsoutputresponsetypedef)
-  - [ListMembersInputTypeDef](#listmembersinputtypedef)
-  - [ListMembersOutputResponseTypeDef](#listmembersoutputresponsetypedef)
-  - [ListNetworksInputTypeDef](#listnetworksinputtypedef)
-  - [ListNetworksOutputResponseTypeDef](#listnetworksoutputresponsetypedef)
-  - [ListNodesInputTypeDef](#listnodesinputtypedef)
-  - [ListNodesOutputResponseTypeDef](#listnodesoutputresponsetypedef)
-  - [ListProposalVotesInputTypeDef](#listproposalvotesinputtypedef)
-  - [ListProposalVotesOutputResponseTypeDef](#listproposalvotesoutputresponsetypedef)
-  - [ListProposalsInputTypeDef](#listproposalsinputtypedef)
-  - [ListProposalsOutputResponseTypeDef](#listproposalsoutputresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListInvitationsInputRequestTypeDef](#listinvitationsinputrequesttypedef)
+  - [ListInvitationsOutputTypeDef](#listinvitationsoutputtypedef)
+  - [ListMembersInputRequestTypeDef](#listmembersinputrequesttypedef)
+  - [ListMembersOutputTypeDef](#listmembersoutputtypedef)
+  - [ListNetworksInputRequestTypeDef](#listnetworksinputrequesttypedef)
+  - [ListNetworksOutputTypeDef](#listnetworksoutputtypedef)
+  - [ListNodesInputRequestTypeDef](#listnodesinputrequesttypedef)
+  - [ListNodesOutputTypeDef](#listnodesoutputtypedef)
+  - [ListProposalVotesInputRequestTypeDef](#listproposalvotesinputrequesttypedef)
+  - [ListProposalVotesOutputTypeDef](#listproposalvotesoutputtypedef)
+  - [ListProposalsInputRequestTypeDef](#listproposalsinputrequesttypedef)
+  - [ListProposalsOutputTypeDef](#listproposalsoutputtypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [LogConfigurationTypeDef](#logconfigurationtypedef)
   - [LogConfigurationsTypeDef](#logconfigurationstypedef)
   - [MemberConfigurationTypeDef](#memberconfigurationtypedef)
@@ -72,14 +72,14 @@ type annotations stubs module
   - [ProposalActionsTypeDef](#proposalactionstypedef)
   - [ProposalSummaryTypeDef](#proposalsummarytypedef)
   - [ProposalTypeDef](#proposaltypedef)
-  - [RejectInvitationInputTypeDef](#rejectinvitationinputtypedef)
+  - [RejectInvitationInputRequestTypeDef](#rejectinvitationinputrequesttypedef)
   - [RemoveActionTypeDef](#removeactiontypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateMemberInputTypeDef](#updatememberinputtypedef)
-  - [UpdateNodeInputTypeDef](#updatenodeinputtypedef)
-  - [VoteOnProposalInputTypeDef](#voteonproposalinputtypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateMemberInputRequestTypeDef](#updatememberinputrequesttypedef)
+  - [UpdateNodeInputRequestTypeDef](#updatenodeinputrequesttypedef)
+  - [VoteOnProposalInputRequestTypeDef](#voteonproposalinputrequesttypedef)
   - [VoteSummaryTypeDef](#votesummarytypedef)
   - [VotingPolicyTypeDef](#votingpolicytypedef)
 
@@ -96,10 +96,10 @@ Optional fields:
 - `ThresholdComparator`:
   [ThresholdComparatorType](./literals.md#thresholdcomparatortype)
 
-## CreateMemberInputTypeDef
+## CreateMemberInputRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import CreateMemberInputTypeDef
+from mypy_boto3_managedblockchain.type_defs import CreateMemberInputRequestTypeDef
 ```
 
 Required fields:
@@ -110,10 +110,10 @@ Required fields:
 - `MemberConfiguration`:
   [MemberConfigurationTypeDef](./type_defs.md#memberconfigurationtypedef)
 
-## CreateMemberOutputResponseTypeDef
+## CreateMemberOutputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import CreateMemberOutputResponseTypeDef
+from mypy_boto3_managedblockchain.type_defs import CreateMemberOutputTypeDef
 ```
 
 Required fields:
@@ -122,10 +122,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateNetworkInputTypeDef
+## CreateNetworkInputRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import CreateNetworkInputTypeDef
+from mypy_boto3_managedblockchain.type_defs import CreateNetworkInputRequestTypeDef
 ```
 
 Required fields:
@@ -145,10 +145,10 @@ Optional fields:
   [NetworkFrameworkConfigurationTypeDef](./type_defs.md#networkframeworkconfigurationtypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateNetworkOutputResponseTypeDef
+## CreateNetworkOutputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import CreateNetworkOutputResponseTypeDef
+from mypy_boto3_managedblockchain.type_defs import CreateNetworkOutputTypeDef
 ```
 
 Required fields:
@@ -158,10 +158,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateNodeInputTypeDef
+## CreateNodeInputRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import CreateNodeInputTypeDef
+from mypy_boto3_managedblockchain.type_defs import CreateNodeInputRequestTypeDef
 ```
 
 Required fields:
@@ -176,10 +176,10 @@ Optional fields:
 - `MemberId`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateNodeOutputResponseTypeDef
+## CreateNodeOutputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import CreateNodeOutputResponseTypeDef
+from mypy_boto3_managedblockchain.type_defs import CreateNodeOutputTypeDef
 ```
 
 Required fields:
@@ -188,10 +188,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateProposalInputTypeDef
+## CreateProposalInputRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import CreateProposalInputTypeDef
+from mypy_boto3_managedblockchain.type_defs import CreateProposalInputRequestTypeDef
 ```
 
 Required fields:
@@ -206,10 +206,10 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateProposalOutputResponseTypeDef
+## CreateProposalOutputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import CreateProposalOutputResponseTypeDef
+from mypy_boto3_managedblockchain.type_defs import CreateProposalOutputTypeDef
 ```
 
 Required fields:
@@ -218,10 +218,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteMemberInputTypeDef
+## DeleteMemberInputRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import DeleteMemberInputTypeDef
+from mypy_boto3_managedblockchain.type_defs import DeleteMemberInputRequestTypeDef
 ```
 
 Required fields:
@@ -229,10 +229,10 @@ Required fields:
 - `NetworkId`: `str`
 - `MemberId`: `str`
 
-## DeleteNodeInputTypeDef
+## DeleteNodeInputRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import DeleteNodeInputTypeDef
+from mypy_boto3_managedblockchain.type_defs import DeleteNodeInputRequestTypeDef
 ```
 
 Required fields:
@@ -244,10 +244,10 @@ Optional fields:
 
 - `MemberId`: `str`
 
-## GetMemberInputTypeDef
+## GetMemberInputRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import GetMemberInputTypeDef
+from mypy_boto3_managedblockchain.type_defs import GetMemberInputRequestTypeDef
 ```
 
 Required fields:
@@ -255,10 +255,10 @@ Required fields:
 - `NetworkId`: `str`
 - `MemberId`: `str`
 
-## GetMemberOutputResponseTypeDef
+## GetMemberOutputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import GetMemberOutputResponseTypeDef
+from mypy_boto3_managedblockchain.type_defs import GetMemberOutputTypeDef
 ```
 
 Required fields:
@@ -267,20 +267,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetNetworkInputTypeDef
+## GetNetworkInputRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import GetNetworkInputTypeDef
+from mypy_boto3_managedblockchain.type_defs import GetNetworkInputRequestTypeDef
 ```
 
 Required fields:
 
 - `NetworkId`: `str`
 
-## GetNetworkOutputResponseTypeDef
+## GetNetworkOutputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import GetNetworkOutputResponseTypeDef
+from mypy_boto3_managedblockchain.type_defs import GetNetworkOutputTypeDef
 ```
 
 Required fields:
@@ -289,10 +289,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetNodeInputTypeDef
+## GetNodeInputRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import GetNodeInputTypeDef
+from mypy_boto3_managedblockchain.type_defs import GetNodeInputRequestTypeDef
 ```
 
 Required fields:
@@ -304,10 +304,10 @@ Optional fields:
 
 - `MemberId`: `str`
 
-## GetNodeOutputResponseTypeDef
+## GetNodeOutputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import GetNodeOutputResponseTypeDef
+from mypy_boto3_managedblockchain.type_defs import GetNodeOutputTypeDef
 ```
 
 Required fields:
@@ -316,10 +316,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetProposalInputTypeDef
+## GetProposalInputRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import GetProposalInputTypeDef
+from mypy_boto3_managedblockchain.type_defs import GetProposalInputRequestTypeDef
 ```
 
 Required fields:
@@ -327,10 +327,10 @@ Required fields:
 - `NetworkId`: `str`
 - `ProposalId`: `str`
 
-## GetProposalOutputResponseTypeDef
+## GetProposalOutputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import GetProposalOutputResponseTypeDef
+from mypy_boto3_managedblockchain.type_defs import GetProposalOutputTypeDef
 ```
 
 Required fields:
@@ -365,10 +365,10 @@ Required fields:
 
 - `Principal`: `str`
 
-## ListInvitationsInputTypeDef
+## ListInvitationsInputRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import ListInvitationsInputTypeDef
+from mypy_boto3_managedblockchain.type_defs import ListInvitationsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -376,10 +376,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListInvitationsOutputResponseTypeDef
+## ListInvitationsOutputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import ListInvitationsOutputResponseTypeDef
+from mypy_boto3_managedblockchain.type_defs import ListInvitationsOutputTypeDef
 ```
 
 Required fields:
@@ -390,10 +390,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMembersInputTypeDef
+## ListMembersInputRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import ListMembersInputTypeDef
+from mypy_boto3_managedblockchain.type_defs import ListMembersInputRequestTypeDef
 ```
 
 Required fields:
@@ -408,10 +408,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListMembersOutputResponseTypeDef
+## ListMembersOutputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import ListMembersOutputResponseTypeDef
+from mypy_boto3_managedblockchain.type_defs import ListMembersOutputTypeDef
 ```
 
 Required fields:
@@ -422,10 +422,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListNetworksInputTypeDef
+## ListNetworksInputRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import ListNetworksInputTypeDef
+from mypy_boto3_managedblockchain.type_defs import ListNetworksInputRequestTypeDef
 ```
 
 Optional fields:
@@ -436,10 +436,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListNetworksOutputResponseTypeDef
+## ListNetworksOutputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import ListNetworksOutputResponseTypeDef
+from mypy_boto3_managedblockchain.type_defs import ListNetworksOutputTypeDef
 ```
 
 Required fields:
@@ -450,10 +450,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListNodesInputTypeDef
+## ListNodesInputRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import ListNodesInputTypeDef
+from mypy_boto3_managedblockchain.type_defs import ListNodesInputRequestTypeDef
 ```
 
 Required fields:
@@ -467,10 +467,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListNodesOutputResponseTypeDef
+## ListNodesOutputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import ListNodesOutputResponseTypeDef
+from mypy_boto3_managedblockchain.type_defs import ListNodesOutputTypeDef
 ```
 
 Required fields:
@@ -480,10 +480,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProposalVotesInputTypeDef
+## ListProposalVotesInputRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import ListProposalVotesInputTypeDef
+from mypy_boto3_managedblockchain.type_defs import ListProposalVotesInputRequestTypeDef
 ```
 
 Required fields:
@@ -496,10 +496,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListProposalVotesOutputResponseTypeDef
+## ListProposalVotesOutputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import ListProposalVotesOutputResponseTypeDef
+from mypy_boto3_managedblockchain.type_defs import ListProposalVotesOutputTypeDef
 ```
 
 Required fields:
@@ -510,10 +510,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProposalsInputTypeDef
+## ListProposalsInputRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import ListProposalsInputTypeDef
+from mypy_boto3_managedblockchain.type_defs import ListProposalsInputRequestTypeDef
 ```
 
 Required fields:
@@ -525,10 +525,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListProposalsOutputResponseTypeDef
+## ListProposalsOutputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import ListProposalsOutputResponseTypeDef
+from mypy_boto3_managedblockchain.type_defs import ListProposalsOutputTypeDef
 ```
 
 Required fields:
@@ -539,20 +539,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_managedblockchain.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_managedblockchain.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -967,10 +967,10 @@ Optional fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Arn`: `str`
 
-## RejectInvitationInputTypeDef
+## RejectInvitationInputRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import RejectInvitationInputTypeDef
+from mypy_boto3_managedblockchain.type_defs import RejectInvitationInputRequestTypeDef
 ```
 
 Required fields:
@@ -1001,10 +1001,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_managedblockchain.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1012,10 +1012,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_managedblockchain.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1023,10 +1023,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateMemberInputTypeDef
+## UpdateMemberInputRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import UpdateMemberInputTypeDef
+from mypy_boto3_managedblockchain.type_defs import UpdateMemberInputRequestTypeDef
 ```
 
 Required fields:
@@ -1039,10 +1039,10 @@ Optional fields:
 - `LogPublishingConfiguration`:
   [MemberLogPublishingConfigurationTypeDef](./type_defs.md#memberlogpublishingconfigurationtypedef)
 
-## UpdateNodeInputTypeDef
+## UpdateNodeInputRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import UpdateNodeInputTypeDef
+from mypy_boto3_managedblockchain.type_defs import UpdateNodeInputRequestTypeDef
 ```
 
 Required fields:
@@ -1056,10 +1056,10 @@ Optional fields:
 - `LogPublishingConfiguration`:
   [NodeLogPublishingConfigurationTypeDef](./type_defs.md#nodelogpublishingconfigurationtypedef)
 
-## VoteOnProposalInputTypeDef
+## VoteOnProposalInputRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import VoteOnProposalInputTypeDef
+from mypy_boto3_managedblockchain.type_defs import VoteOnProposalInputRequestTypeDef
 ```
 
 Required fields:

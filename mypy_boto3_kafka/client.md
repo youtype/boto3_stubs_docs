@@ -11,6 +11,7 @@ type annotations stubs module
   - [KafkaClient](#kafkaclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [batch_associate_scram_secret](#batch_associate_scram_secret)
     - [batch_disassociate_scram_secret](#batch_disassociate_scram_secret)
     - [can_paginate](#can_paginate)
@@ -87,6 +88,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+KafkaClient exceptions.
+
+Type annotations for `boto3.client("kafka").exceptions` method.
+
+Boto3 documentation:
+[Kafka.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### batch_associate_scram_secret
 
 Associates one or more Scram Secrets with an Amazon MSK cluster.
@@ -98,7 +110,7 @@ Boto3 documentation:
 [Kafka.Client.batch_associate_scram_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.batch_associate_scram_secret)
 
 Arguments mapping described in
-[BatchAssociateScramSecretRequestTypeDef](./type_defs.md#batchassociatescramsecretrequesttypedef).
+[BatchAssociateScramSecretRequestRequestTypeDef](./type_defs.md#batchassociatescramsecretrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -106,7 +118,7 @@ Keyword-only arguments:
 - `SecretArnList`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchAssociateScramSecretResponseResponseTypeDef](./type_defs.md#batchassociatescramsecretresponseresponsetypedef).
+[BatchAssociateScramSecretResponseTypeDef](./type_defs.md#batchassociatescramsecretresponsetypedef).
 
 ### batch_disassociate_scram_secret
 
@@ -119,7 +131,7 @@ Boto3 documentation:
 [Kafka.Client.batch_disassociate_scram_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.batch_disassociate_scram_secret)
 
 Arguments mapping described in
-[BatchDisassociateScramSecretRequestTypeDef](./type_defs.md#batchdisassociatescramsecretrequesttypedef).
+[BatchDisassociateScramSecretRequestRequestTypeDef](./type_defs.md#batchdisassociatescramsecretrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -127,7 +139,7 @@ Keyword-only arguments:
 - `SecretArnList`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDisassociateScramSecretResponseResponseTypeDef](./type_defs.md#batchdisassociatescramsecretresponseresponsetypedef).
+[BatchDisassociateScramSecretResponseTypeDef](./type_defs.md#batchdisassociatescramsecretresponsetypedef).
 
 ### can_paginate
 
@@ -154,7 +166,7 @@ Boto3 documentation:
 [Kafka.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.create_cluster)
 
 Arguments mapping described in
-[CreateClusterRequestTypeDef](./type_defs.md#createclusterrequesttypedef).
+[CreateClusterRequestRequestTypeDef](./type_defs.md#createclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -178,7 +190,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateClusterResponseResponseTypeDef](./type_defs.md#createclusterresponseresponsetypedef).
+[CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
 
 ### create_configuration
 
@@ -190,7 +202,7 @@ Boto3 documentation:
 [Kafka.Client.create_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.create_configuration)
 
 Arguments mapping described in
-[CreateConfigurationRequestTypeDef](./type_defs.md#createconfigurationrequesttypedef).
+[CreateConfigurationRequestRequestTypeDef](./type_defs.md#createconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -201,7 +213,7 @@ Keyword-only arguments:
 - `KafkaVersions`: `List`\[`str`\]
 
 Returns
-[CreateConfigurationResponseResponseTypeDef](./type_defs.md#createconfigurationresponseresponsetypedef).
+[CreateConfigurationResponseTypeDef](./type_defs.md#createconfigurationresponsetypedef).
 
 ### delete_cluster
 
@@ -214,7 +226,7 @@ Boto3 documentation:
 [Kafka.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.delete_cluster)
 
 Arguments mapping described in
-[DeleteClusterRequestTypeDef](./type_defs.md#deleteclusterrequesttypedef).
+[DeleteClusterRequestRequestTypeDef](./type_defs.md#deleteclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -222,7 +234,7 @@ Keyword-only arguments:
 - `CurrentVersion`: `str`
 
 Returns
-[DeleteClusterResponseResponseTypeDef](./type_defs.md#deleteclusterresponseresponsetypedef).
+[DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef).
 
 ### delete_configuration
 
@@ -234,14 +246,14 @@ Boto3 documentation:
 [Kafka.Client.delete_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.delete_configuration)
 
 Arguments mapping described in
-[DeleteConfigurationRequestTypeDef](./type_defs.md#deleteconfigurationrequesttypedef).
+[DeleteConfigurationRequestRequestTypeDef](./type_defs.md#deleteconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
 Returns
-[DeleteConfigurationResponseResponseTypeDef](./type_defs.md#deleteconfigurationresponseresponsetypedef).
+[DeleteConfigurationResponseTypeDef](./type_defs.md#deleteconfigurationresponsetypedef).
 
 ### describe_cluster
 
@@ -254,14 +266,14 @@ Boto3 documentation:
 [Kafka.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_cluster)
 
 Arguments mapping described in
-[DescribeClusterRequestTypeDef](./type_defs.md#describeclusterrequesttypedef).
+[DescribeClusterRequestRequestTypeDef](./type_defs.md#describeclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ClusterArn`: `str` *(required)*
 
 Returns
-[DescribeClusterResponseResponseTypeDef](./type_defs.md#describeclusterresponseresponsetypedef).
+[DescribeClusterResponseTypeDef](./type_defs.md#describeclusterresponsetypedef).
 
 ### describe_cluster_operation
 
@@ -273,14 +285,14 @@ Boto3 documentation:
 [Kafka.Client.describe_cluster_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_cluster_operation)
 
 Arguments mapping described in
-[DescribeClusterOperationRequestTypeDef](./type_defs.md#describeclusteroperationrequesttypedef).
+[DescribeClusterOperationRequestRequestTypeDef](./type_defs.md#describeclusteroperationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ClusterOperationArn`: `str` *(required)*
 
 Returns
-[DescribeClusterOperationResponseResponseTypeDef](./type_defs.md#describeclusteroperationresponseresponsetypedef).
+[DescribeClusterOperationResponseTypeDef](./type_defs.md#describeclusteroperationresponsetypedef).
 
 ### describe_configuration
 
@@ -292,14 +304,14 @@ Boto3 documentation:
 [Kafka.Client.describe_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_configuration)
 
 Arguments mapping described in
-[DescribeConfigurationRequestTypeDef](./type_defs.md#describeconfigurationrequesttypedef).
+[DescribeConfigurationRequestRequestTypeDef](./type_defs.md#describeconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
 Returns
-[DescribeConfigurationResponseResponseTypeDef](./type_defs.md#describeconfigurationresponseresponsetypedef).
+[DescribeConfigurationResponseTypeDef](./type_defs.md#describeconfigurationresponsetypedef).
 
 ### describe_configuration_revision
 
@@ -312,7 +324,7 @@ Boto3 documentation:
 [Kafka.Client.describe_configuration_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_configuration_revision)
 
 Arguments mapping described in
-[DescribeConfigurationRevisionRequestTypeDef](./type_defs.md#describeconfigurationrevisionrequesttypedef).
+[DescribeConfigurationRevisionRequestRequestTypeDef](./type_defs.md#describeconfigurationrevisionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -320,7 +332,7 @@ Keyword-only arguments:
 - `Revision`: `int` *(required)*
 
 Returns
-[DescribeConfigurationRevisionResponseResponseTypeDef](./type_defs.md#describeconfigurationrevisionresponseresponsetypedef).
+[DescribeConfigurationRevisionResponseTypeDef](./type_defs.md#describeconfigurationrevisionresponsetypedef).
 
 ### generate_presigned_url
 
@@ -350,14 +362,14 @@ Boto3 documentation:
 [Kafka.Client.get_bootstrap_brokers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.get_bootstrap_brokers)
 
 Arguments mapping described in
-[GetBootstrapBrokersRequestTypeDef](./type_defs.md#getbootstrapbrokersrequesttypedef).
+[GetBootstrapBrokersRequestRequestTypeDef](./type_defs.md#getbootstrapbrokersrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ClusterArn`: `str` *(required)*
 
 Returns
-[GetBootstrapBrokersResponseResponseTypeDef](./type_defs.md#getbootstrapbrokersresponseresponsetypedef).
+[GetBootstrapBrokersResponseTypeDef](./type_defs.md#getbootstrapbrokersresponsetypedef).
 
 ### get_compatible_kafka_versions
 
@@ -370,14 +382,14 @@ Boto3 documentation:
 [Kafka.Client.get_compatible_kafka_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.get_compatible_kafka_versions)
 
 Arguments mapping described in
-[GetCompatibleKafkaVersionsRequestTypeDef](./type_defs.md#getcompatiblekafkaversionsrequesttypedef).
+[GetCompatibleKafkaVersionsRequestRequestTypeDef](./type_defs.md#getcompatiblekafkaversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ClusterArn`: `str`
 
 Returns
-[GetCompatibleKafkaVersionsResponseResponseTypeDef](./type_defs.md#getcompatiblekafkaversionsresponseresponsetypedef).
+[GetCompatibleKafkaVersionsResponseTypeDef](./type_defs.md#getcompatiblekafkaversionsresponsetypedef).
 
 ### list_cluster_operations
 
@@ -390,7 +402,7 @@ Boto3 documentation:
 [Kafka.Client.list_cluster_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_cluster_operations)
 
 Arguments mapping described in
-[ListClusterOperationsRequestTypeDef](./type_defs.md#listclusteroperationsrequesttypedef).
+[ListClusterOperationsRequestRequestTypeDef](./type_defs.md#listclusteroperationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -399,7 +411,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListClusterOperationsResponseResponseTypeDef](./type_defs.md#listclusteroperationsresponseresponsetypedef).
+[ListClusterOperationsResponseTypeDef](./type_defs.md#listclusteroperationsresponsetypedef).
 
 ### list_clusters
 
@@ -411,7 +423,7 @@ Boto3 documentation:
 [Kafka.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_clusters)
 
 Arguments mapping described in
-[ListClustersRequestTypeDef](./type_defs.md#listclustersrequesttypedef).
+[ListClustersRequestRequestTypeDef](./type_defs.md#listclustersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -420,7 +432,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListClustersResponseResponseTypeDef](./type_defs.md#listclustersresponseresponsetypedef).
+[ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef).
 
 ### list_configuration_revisions
 
@@ -433,7 +445,7 @@ Boto3 documentation:
 [Kafka.Client.list_configuration_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_configuration_revisions)
 
 Arguments mapping described in
-[ListConfigurationRevisionsRequestTypeDef](./type_defs.md#listconfigurationrevisionsrequesttypedef).
+[ListConfigurationRevisionsRequestRequestTypeDef](./type_defs.md#listconfigurationrevisionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -442,7 +454,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListConfigurationRevisionsResponseResponseTypeDef](./type_defs.md#listconfigurationrevisionsresponseresponsetypedef).
+[ListConfigurationRevisionsResponseTypeDef](./type_defs.md#listconfigurationrevisionsresponsetypedef).
 
 ### list_configurations
 
@@ -454,7 +466,7 @@ Boto3 documentation:
 [Kafka.Client.list_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_configurations)
 
 Arguments mapping described in
-[ListConfigurationsRequestTypeDef](./type_defs.md#listconfigurationsrequesttypedef).
+[ListConfigurationsRequestRequestTypeDef](./type_defs.md#listconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -462,7 +474,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListConfigurationsResponseResponseTypeDef](./type_defs.md#listconfigurationsresponseresponsetypedef).
+[ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef).
 
 ### list_kafka_versions
 
@@ -474,7 +486,7 @@ Boto3 documentation:
 [Kafka.Client.list_kafka_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_kafka_versions)
 
 Arguments mapping described in
-[ListKafkaVersionsRequestTypeDef](./type_defs.md#listkafkaversionsrequesttypedef).
+[ListKafkaVersionsRequestRequestTypeDef](./type_defs.md#listkafkaversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -482,7 +494,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListKafkaVersionsResponseResponseTypeDef](./type_defs.md#listkafkaversionsresponseresponsetypedef).
+[ListKafkaVersionsResponseTypeDef](./type_defs.md#listkafkaversionsresponsetypedef).
 
 ### list_nodes
 
@@ -494,7 +506,7 @@ Boto3 documentation:
 [Kafka.Client.list_nodes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_nodes)
 
 Arguments mapping described in
-[ListNodesRequestTypeDef](./type_defs.md#listnodesrequesttypedef).
+[ListNodesRequestRequestTypeDef](./type_defs.md#listnodesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -502,8 +514,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListNodesResponseResponseTypeDef](./type_defs.md#listnodesresponseresponsetypedef).
+Returns [ListNodesResponseTypeDef](./type_defs.md#listnodesresponsetypedef).
 
 ### list_scram_secrets
 
@@ -515,7 +526,7 @@ Boto3 documentation:
 [Kafka.Client.list_scram_secrets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_scram_secrets)
 
 Arguments mapping described in
-[ListScramSecretsRequestTypeDef](./type_defs.md#listscramsecretsrequesttypedef).
+[ListScramSecretsRequestRequestTypeDef](./type_defs.md#listscramsecretsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -524,7 +535,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListScramSecretsResponseResponseTypeDef](./type_defs.md#listscramsecretsresponseresponsetypedef).
+[ListScramSecretsResponseTypeDef](./type_defs.md#listscramsecretsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -536,14 +547,14 @@ Boto3 documentation:
 [Kafka.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### reboot_broker
 
@@ -555,7 +566,7 @@ Boto3 documentation:
 [Kafka.Client.reboot_broker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.reboot_broker)
 
 Arguments mapping described in
-[RebootBrokerRequestTypeDef](./type_defs.md#rebootbrokerrequesttypedef).
+[RebootBrokerRequestRequestTypeDef](./type_defs.md#rebootbrokerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -563,7 +574,7 @@ Keyword-only arguments:
 - `ClusterArn`: `str` *(required)*
 
 Returns
-[RebootBrokerResponseResponseTypeDef](./type_defs.md#rebootbrokerresponseresponsetypedef).
+[RebootBrokerResponseTypeDef](./type_defs.md#rebootbrokerresponsetypedef).
 
 ### tag_resource
 
@@ -575,7 +586,7 @@ Boto3 documentation:
 [Kafka.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -592,7 +603,7 @@ Boto3 documentation:
 [Kafka.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -609,7 +620,7 @@ Boto3 documentation:
 [Kafka.Client.update_broker_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_broker_count)
 
 Arguments mapping described in
-[UpdateBrokerCountRequestTypeDef](./type_defs.md#updatebrokercountrequesttypedef).
+[UpdateBrokerCountRequestRequestTypeDef](./type_defs.md#updatebrokercountrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -618,7 +629,7 @@ Keyword-only arguments:
 - `TargetNumberOfBrokerNodes`: `int` *(required)*
 
 Returns
-[UpdateBrokerCountResponseResponseTypeDef](./type_defs.md#updatebrokercountresponseresponsetypedef).
+[UpdateBrokerCountResponseTypeDef](./type_defs.md#updatebrokercountresponsetypedef).
 
 ### update_broker_storage
 
@@ -630,7 +641,7 @@ Boto3 documentation:
 [Kafka.Client.update_broker_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_broker_storage)
 
 Arguments mapping described in
-[UpdateBrokerStorageRequestTypeDef](./type_defs.md#updatebrokerstoragerequesttypedef).
+[UpdateBrokerStorageRequestRequestTypeDef](./type_defs.md#updatebrokerstoragerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -641,7 +652,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateBrokerStorageResponseResponseTypeDef](./type_defs.md#updatebrokerstorageresponseresponsetypedef).
+[UpdateBrokerStorageResponseTypeDef](./type_defs.md#updatebrokerstorageresponsetypedef).
 
 ### update_broker_type
 
@@ -653,7 +664,7 @@ Boto3 documentation:
 [Kafka.Client.update_broker_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_broker_type)
 
 Arguments mapping described in
-[UpdateBrokerTypeRequestTypeDef](./type_defs.md#updatebrokertyperequesttypedef).
+[UpdateBrokerTypeRequestRequestTypeDef](./type_defs.md#updatebrokertyperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -662,7 +673,7 @@ Keyword-only arguments:
 - `TargetInstanceType`: `str` *(required)*
 
 Returns
-[UpdateBrokerTypeResponseResponseTypeDef](./type_defs.md#updatebrokertyperesponseresponsetypedef).
+[UpdateBrokerTypeResponseTypeDef](./type_defs.md#updatebrokertyperesponsetypedef).
 
 ### update_cluster_configuration
 
@@ -676,7 +687,7 @@ Boto3 documentation:
 [Kafka.Client.update_cluster_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_cluster_configuration)
 
 Arguments mapping described in
-[UpdateClusterConfigurationRequestTypeDef](./type_defs.md#updateclusterconfigurationrequesttypedef).
+[UpdateClusterConfigurationRequestRequestTypeDef](./type_defs.md#updateclusterconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -687,7 +698,7 @@ Keyword-only arguments:
 - `CurrentVersion`: `str` *(required)*
 
 Returns
-[UpdateClusterConfigurationResponseResponseTypeDef](./type_defs.md#updateclusterconfigurationresponseresponsetypedef).
+[UpdateClusterConfigurationResponseTypeDef](./type_defs.md#updateclusterconfigurationresponsetypedef).
 
 ### update_cluster_kafka_version
 
@@ -700,7 +711,7 @@ Boto3 documentation:
 [Kafka.Client.update_cluster_kafka_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_cluster_kafka_version)
 
 Arguments mapping described in
-[UpdateClusterKafkaVersionRequestTypeDef](./type_defs.md#updateclusterkafkaversionrequesttypedef).
+[UpdateClusterKafkaVersionRequestRequestTypeDef](./type_defs.md#updateclusterkafkaversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -711,7 +722,7 @@ Keyword-only arguments:
   [ConfigurationInfoTypeDef](./type_defs.md#configurationinfotypedef)
 
 Returns
-[UpdateClusterKafkaVersionResponseResponseTypeDef](./type_defs.md#updateclusterkafkaversionresponseresponsetypedef).
+[UpdateClusterKafkaVersionResponseTypeDef](./type_defs.md#updateclusterkafkaversionresponsetypedef).
 
 ### update_configuration
 
@@ -723,7 +734,7 @@ Boto3 documentation:
 [Kafka.Client.update_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_configuration)
 
 Arguments mapping described in
-[UpdateConfigurationRequestTypeDef](./type_defs.md#updateconfigurationrequesttypedef).
+[UpdateConfigurationRequestRequestTypeDef](./type_defs.md#updateconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -733,7 +744,7 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[UpdateConfigurationResponseResponseTypeDef](./type_defs.md#updateconfigurationresponseresponsetypedef).
+[UpdateConfigurationResponseTypeDef](./type_defs.md#updateconfigurationresponsetypedef).
 
 ### update_monitoring
 
@@ -745,7 +756,7 @@ Boto3 documentation:
 [Kafka.Client.update_monitoring](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_monitoring)
 
 Arguments mapping described in
-[UpdateMonitoringRequestTypeDef](./type_defs.md#updatemonitoringrequesttypedef).
+[UpdateMonitoringRequestRequestTypeDef](./type_defs.md#updatemonitoringrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -758,7 +769,7 @@ Keyword-only arguments:
 - `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
 
 Returns
-[UpdateMonitoringResponseResponseTypeDef](./type_defs.md#updatemonitoringresponseresponsetypedef).
+[UpdateMonitoringResponseTypeDef](./type_defs.md#updatemonitoringresponsetypedef).
 
 ### get_paginator
 

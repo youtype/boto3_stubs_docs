@@ -10,23 +10,23 @@ type annotations stubs module
 - [Typed dictionaries for boto3 IoT module](#typed-dictionaries-for-boto3-iot-module)
   - [AbortConfigTypeDef](#abortconfigtypedef)
   - [AbortCriteriaTypeDef](#abortcriteriatypedef)
-  - [AcceptCertificateTransferRequestTypeDef](#acceptcertificatetransferrequesttypedef)
+  - [AcceptCertificateTransferRequestRequestTypeDef](#acceptcertificatetransferrequestrequesttypedef)
   - [ActionTypeDef](#actiontypedef)
   - [ActiveViolationTypeDef](#activeviolationtypedef)
-  - [AddThingToBillingGroupRequestTypeDef](#addthingtobillinggrouprequesttypedef)
-  - [AddThingToThingGroupRequestTypeDef](#addthingtothinggrouprequesttypedef)
+  - [AddThingToBillingGroupRequestRequestTypeDef](#addthingtobillinggrouprequestrequesttypedef)
+  - [AddThingToThingGroupRequestRequestTypeDef](#addthingtothinggrouprequestrequesttypedef)
   - [AddThingsToThingGroupParamsTypeDef](#addthingstothinggroupparamstypedef)
   - [AlertTargetTypeDef](#alerttargettypedef)
   - [AllowedTypeDef](#allowedtypedef)
   - [AssetPropertyTimestampTypeDef](#assetpropertytimestamptypedef)
   - [AssetPropertyValueTypeDef](#assetpropertyvaluetypedef)
   - [AssetPropertyVariantTypeDef](#assetpropertyvarianttypedef)
-  - [AssociateTargetsWithJobRequestTypeDef](#associatetargetswithjobrequesttypedef)
-  - [AssociateTargetsWithJobResponseResponseTypeDef](#associatetargetswithjobresponseresponsetypedef)
-  - [AttachPolicyRequestTypeDef](#attachpolicyrequesttypedef)
-  - [AttachPrincipalPolicyRequestTypeDef](#attachprincipalpolicyrequesttypedef)
-  - [AttachSecurityProfileRequestTypeDef](#attachsecurityprofilerequesttypedef)
-  - [AttachThingPrincipalRequestTypeDef](#attachthingprincipalrequesttypedef)
+  - [AssociateTargetsWithJobRequestRequestTypeDef](#associatetargetswithjobrequestrequesttypedef)
+  - [AssociateTargetsWithJobResponseTypeDef](#associatetargetswithjobresponsetypedef)
+  - [AttachPolicyRequestRequestTypeDef](#attachpolicyrequestrequesttypedef)
+  - [AttachPrincipalPolicyRequestRequestTypeDef](#attachprincipalpolicyrequestrequesttypedef)
+  - [AttachSecurityProfileRequestRequestTypeDef](#attachsecurityprofilerequestrequesttypedef)
+  - [AttachThingPrincipalRequestRequestTypeDef](#attachthingprincipalrequestrequesttypedef)
   - [AttributePayloadTypeDef](#attributepayloadtypedef)
   - [AuditCheckConfigurationTypeDef](#auditcheckconfigurationtypedef)
   - [AuditCheckDetailsTypeDef](#auditcheckdetailstypedef)
@@ -56,13 +56,13 @@ type annotations stubs module
   - [BillingGroupPropertiesTypeDef](#billinggrouppropertiestypedef)
   - [CACertificateDescriptionTypeDef](#cacertificatedescriptiontypedef)
   - [CACertificateTypeDef](#cacertificatetypedef)
-  - [CancelAuditMitigationActionsTaskRequestTypeDef](#cancelauditmitigationactionstaskrequesttypedef)
-  - [CancelAuditTaskRequestTypeDef](#cancelaudittaskrequesttypedef)
-  - [CancelCertificateTransferRequestTypeDef](#cancelcertificatetransferrequesttypedef)
-  - [CancelDetectMitigationActionsTaskRequestTypeDef](#canceldetectmitigationactionstaskrequesttypedef)
-  - [CancelJobExecutionRequestTypeDef](#canceljobexecutionrequesttypedef)
-  - [CancelJobRequestTypeDef](#canceljobrequesttypedef)
-  - [CancelJobResponseResponseTypeDef](#canceljobresponseresponsetypedef)
+  - [CancelAuditMitigationActionsTaskRequestRequestTypeDef](#cancelauditmitigationactionstaskrequestrequesttypedef)
+  - [CancelAuditTaskRequestRequestTypeDef](#cancelaudittaskrequestrequesttypedef)
+  - [CancelCertificateTransferRequestRequestTypeDef](#cancelcertificatetransferrequestrequesttypedef)
+  - [CancelDetectMitigationActionsTaskRequestRequestTypeDef](#canceldetectmitigationactionstaskrequestrequesttypedef)
+  - [CancelJobExecutionRequestRequestTypeDef](#canceljobexecutionrequestrequesttypedef)
+  - [CancelJobRequestRequestTypeDef](#canceljobrequestrequesttypedef)
+  - [CancelJobResponseTypeDef](#canceljobresponsetypedef)
   - [CertificateDescriptionTypeDef](#certificatedescriptiontypedef)
   - [CertificateTypeDef](#certificatetypedef)
   - [CertificateValidityTypeDef](#certificatevaliditytypedef)
@@ -73,199 +73,199 @@ type annotations stubs module
   - [CodeSigningSignatureTypeDef](#codesigningsignaturetypedef)
   - [CodeSigningTypeDef](#codesigningtypedef)
   - [ConfigurationTypeDef](#configurationtypedef)
-  - [ConfirmTopicRuleDestinationRequestTypeDef](#confirmtopicruledestinationrequesttypedef)
-  - [CreateAuditSuppressionRequestTypeDef](#createauditsuppressionrequesttypedef)
-  - [CreateAuthorizerRequestTypeDef](#createauthorizerrequesttypedef)
-  - [CreateAuthorizerResponseResponseTypeDef](#createauthorizerresponseresponsetypedef)
-  - [CreateBillingGroupRequestTypeDef](#createbillinggrouprequesttypedef)
-  - [CreateBillingGroupResponseResponseTypeDef](#createbillinggroupresponseresponsetypedef)
-  - [CreateCertificateFromCsrRequestTypeDef](#createcertificatefromcsrrequesttypedef)
-  - [CreateCertificateFromCsrResponseResponseTypeDef](#createcertificatefromcsrresponseresponsetypedef)
-  - [CreateCustomMetricRequestTypeDef](#createcustommetricrequesttypedef)
-  - [CreateCustomMetricResponseResponseTypeDef](#createcustommetricresponseresponsetypedef)
-  - [CreateDimensionRequestTypeDef](#createdimensionrequesttypedef)
-  - [CreateDimensionResponseResponseTypeDef](#createdimensionresponseresponsetypedef)
-  - [CreateDomainConfigurationRequestTypeDef](#createdomainconfigurationrequesttypedef)
-  - [CreateDomainConfigurationResponseResponseTypeDef](#createdomainconfigurationresponseresponsetypedef)
-  - [CreateDynamicThingGroupRequestTypeDef](#createdynamicthinggrouprequesttypedef)
-  - [CreateDynamicThingGroupResponseResponseTypeDef](#createdynamicthinggroupresponseresponsetypedef)
-  - [CreateJobRequestTypeDef](#createjobrequesttypedef)
-  - [CreateJobResponseResponseTypeDef](#createjobresponseresponsetypedef)
-  - [CreateJobTemplateRequestTypeDef](#createjobtemplaterequesttypedef)
-  - [CreateJobTemplateResponseResponseTypeDef](#createjobtemplateresponseresponsetypedef)
-  - [CreateKeysAndCertificateRequestTypeDef](#createkeysandcertificaterequesttypedef)
-  - [CreateKeysAndCertificateResponseResponseTypeDef](#createkeysandcertificateresponseresponsetypedef)
-  - [CreateMitigationActionRequestTypeDef](#createmitigationactionrequesttypedef)
-  - [CreateMitigationActionResponseResponseTypeDef](#createmitigationactionresponseresponsetypedef)
-  - [CreateOTAUpdateRequestTypeDef](#createotaupdaterequesttypedef)
-  - [CreateOTAUpdateResponseResponseTypeDef](#createotaupdateresponseresponsetypedef)
-  - [CreatePolicyRequestTypeDef](#createpolicyrequesttypedef)
-  - [CreatePolicyResponseResponseTypeDef](#createpolicyresponseresponsetypedef)
-  - [CreatePolicyVersionRequestTypeDef](#createpolicyversionrequesttypedef)
-  - [CreatePolicyVersionResponseResponseTypeDef](#createpolicyversionresponseresponsetypedef)
-  - [CreateProvisioningClaimRequestTypeDef](#createprovisioningclaimrequesttypedef)
-  - [CreateProvisioningClaimResponseResponseTypeDef](#createprovisioningclaimresponseresponsetypedef)
-  - [CreateProvisioningTemplateRequestTypeDef](#createprovisioningtemplaterequesttypedef)
-  - [CreateProvisioningTemplateResponseResponseTypeDef](#createprovisioningtemplateresponseresponsetypedef)
-  - [CreateProvisioningTemplateVersionRequestTypeDef](#createprovisioningtemplateversionrequesttypedef)
-  - [CreateProvisioningTemplateVersionResponseResponseTypeDef](#createprovisioningtemplateversionresponseresponsetypedef)
-  - [CreateRoleAliasRequestTypeDef](#createrolealiasrequesttypedef)
-  - [CreateRoleAliasResponseResponseTypeDef](#createrolealiasresponseresponsetypedef)
-  - [CreateScheduledAuditRequestTypeDef](#createscheduledauditrequesttypedef)
-  - [CreateScheduledAuditResponseResponseTypeDef](#createscheduledauditresponseresponsetypedef)
-  - [CreateSecurityProfileRequestTypeDef](#createsecurityprofilerequesttypedef)
-  - [CreateSecurityProfileResponseResponseTypeDef](#createsecurityprofileresponseresponsetypedef)
-  - [CreateStreamRequestTypeDef](#createstreamrequesttypedef)
-  - [CreateStreamResponseResponseTypeDef](#createstreamresponseresponsetypedef)
-  - [CreateThingGroupRequestTypeDef](#createthinggrouprequesttypedef)
-  - [CreateThingGroupResponseResponseTypeDef](#createthinggroupresponseresponsetypedef)
-  - [CreateThingRequestTypeDef](#createthingrequesttypedef)
-  - [CreateThingResponseResponseTypeDef](#createthingresponseresponsetypedef)
-  - [CreateThingTypeRequestTypeDef](#createthingtyperequesttypedef)
-  - [CreateThingTypeResponseResponseTypeDef](#createthingtyperesponseresponsetypedef)
-  - [CreateTopicRuleDestinationRequestTypeDef](#createtopicruledestinationrequesttypedef)
-  - [CreateTopicRuleDestinationResponseResponseTypeDef](#createtopicruledestinationresponseresponsetypedef)
-  - [CreateTopicRuleRequestTypeDef](#createtopicrulerequesttypedef)
+  - [ConfirmTopicRuleDestinationRequestRequestTypeDef](#confirmtopicruledestinationrequestrequesttypedef)
+  - [CreateAuditSuppressionRequestRequestTypeDef](#createauditsuppressionrequestrequesttypedef)
+  - [CreateAuthorizerRequestRequestTypeDef](#createauthorizerrequestrequesttypedef)
+  - [CreateAuthorizerResponseTypeDef](#createauthorizerresponsetypedef)
+  - [CreateBillingGroupRequestRequestTypeDef](#createbillinggrouprequestrequesttypedef)
+  - [CreateBillingGroupResponseTypeDef](#createbillinggroupresponsetypedef)
+  - [CreateCertificateFromCsrRequestRequestTypeDef](#createcertificatefromcsrrequestrequesttypedef)
+  - [CreateCertificateFromCsrResponseTypeDef](#createcertificatefromcsrresponsetypedef)
+  - [CreateCustomMetricRequestRequestTypeDef](#createcustommetricrequestrequesttypedef)
+  - [CreateCustomMetricResponseTypeDef](#createcustommetricresponsetypedef)
+  - [CreateDimensionRequestRequestTypeDef](#createdimensionrequestrequesttypedef)
+  - [CreateDimensionResponseTypeDef](#createdimensionresponsetypedef)
+  - [CreateDomainConfigurationRequestRequestTypeDef](#createdomainconfigurationrequestrequesttypedef)
+  - [CreateDomainConfigurationResponseTypeDef](#createdomainconfigurationresponsetypedef)
+  - [CreateDynamicThingGroupRequestRequestTypeDef](#createdynamicthinggrouprequestrequesttypedef)
+  - [CreateDynamicThingGroupResponseTypeDef](#createdynamicthinggroupresponsetypedef)
+  - [CreateJobRequestRequestTypeDef](#createjobrequestrequesttypedef)
+  - [CreateJobResponseTypeDef](#createjobresponsetypedef)
+  - [CreateJobTemplateRequestRequestTypeDef](#createjobtemplaterequestrequesttypedef)
+  - [CreateJobTemplateResponseTypeDef](#createjobtemplateresponsetypedef)
+  - [CreateKeysAndCertificateRequestRequestTypeDef](#createkeysandcertificaterequestrequesttypedef)
+  - [CreateKeysAndCertificateResponseTypeDef](#createkeysandcertificateresponsetypedef)
+  - [CreateMitigationActionRequestRequestTypeDef](#createmitigationactionrequestrequesttypedef)
+  - [CreateMitigationActionResponseTypeDef](#createmitigationactionresponsetypedef)
+  - [CreateOTAUpdateRequestRequestTypeDef](#createotaupdaterequestrequesttypedef)
+  - [CreateOTAUpdateResponseTypeDef](#createotaupdateresponsetypedef)
+  - [CreatePolicyRequestRequestTypeDef](#createpolicyrequestrequesttypedef)
+  - [CreatePolicyResponseTypeDef](#createpolicyresponsetypedef)
+  - [CreatePolicyVersionRequestRequestTypeDef](#createpolicyversionrequestrequesttypedef)
+  - [CreatePolicyVersionResponseTypeDef](#createpolicyversionresponsetypedef)
+  - [CreateProvisioningClaimRequestRequestTypeDef](#createprovisioningclaimrequestrequesttypedef)
+  - [CreateProvisioningClaimResponseTypeDef](#createprovisioningclaimresponsetypedef)
+  - [CreateProvisioningTemplateRequestRequestTypeDef](#createprovisioningtemplaterequestrequesttypedef)
+  - [CreateProvisioningTemplateResponseTypeDef](#createprovisioningtemplateresponsetypedef)
+  - [CreateProvisioningTemplateVersionRequestRequestTypeDef](#createprovisioningtemplateversionrequestrequesttypedef)
+  - [CreateProvisioningTemplateVersionResponseTypeDef](#createprovisioningtemplateversionresponsetypedef)
+  - [CreateRoleAliasRequestRequestTypeDef](#createrolealiasrequestrequesttypedef)
+  - [CreateRoleAliasResponseTypeDef](#createrolealiasresponsetypedef)
+  - [CreateScheduledAuditRequestRequestTypeDef](#createscheduledauditrequestrequesttypedef)
+  - [CreateScheduledAuditResponseTypeDef](#createscheduledauditresponsetypedef)
+  - [CreateSecurityProfileRequestRequestTypeDef](#createsecurityprofilerequestrequesttypedef)
+  - [CreateSecurityProfileResponseTypeDef](#createsecurityprofileresponsetypedef)
+  - [CreateStreamRequestRequestTypeDef](#createstreamrequestrequesttypedef)
+  - [CreateStreamResponseTypeDef](#createstreamresponsetypedef)
+  - [CreateThingGroupRequestRequestTypeDef](#createthinggrouprequestrequesttypedef)
+  - [CreateThingGroupResponseTypeDef](#createthinggroupresponsetypedef)
+  - [CreateThingRequestRequestTypeDef](#createthingrequestrequesttypedef)
+  - [CreateThingResponseTypeDef](#createthingresponsetypedef)
+  - [CreateThingTypeRequestRequestTypeDef](#createthingtyperequestrequesttypedef)
+  - [CreateThingTypeResponseTypeDef](#createthingtyperesponsetypedef)
+  - [CreateTopicRuleDestinationRequestRequestTypeDef](#createtopicruledestinationrequestrequesttypedef)
+  - [CreateTopicRuleDestinationResponseTypeDef](#createtopicruledestinationresponsetypedef)
+  - [CreateTopicRuleRequestRequestTypeDef](#createtopicrulerequestrequesttypedef)
   - [CustomCodeSigningTypeDef](#customcodesigningtypedef)
-  - [DeleteAccountAuditConfigurationRequestTypeDef](#deleteaccountauditconfigurationrequesttypedef)
-  - [DeleteAuditSuppressionRequestTypeDef](#deleteauditsuppressionrequesttypedef)
-  - [DeleteAuthorizerRequestTypeDef](#deleteauthorizerrequesttypedef)
-  - [DeleteBillingGroupRequestTypeDef](#deletebillinggrouprequesttypedef)
-  - [DeleteCACertificateRequestTypeDef](#deletecacertificaterequesttypedef)
-  - [DeleteCertificateRequestTypeDef](#deletecertificaterequesttypedef)
-  - [DeleteCustomMetricRequestTypeDef](#deletecustommetricrequesttypedef)
-  - [DeleteDimensionRequestTypeDef](#deletedimensionrequesttypedef)
-  - [DeleteDomainConfigurationRequestTypeDef](#deletedomainconfigurationrequesttypedef)
-  - [DeleteDynamicThingGroupRequestTypeDef](#deletedynamicthinggrouprequesttypedef)
-  - [DeleteJobExecutionRequestTypeDef](#deletejobexecutionrequesttypedef)
-  - [DeleteJobRequestTypeDef](#deletejobrequesttypedef)
-  - [DeleteJobTemplateRequestTypeDef](#deletejobtemplaterequesttypedef)
-  - [DeleteMitigationActionRequestTypeDef](#deletemitigationactionrequesttypedef)
-  - [DeleteOTAUpdateRequestTypeDef](#deleteotaupdaterequesttypedef)
-  - [DeletePolicyRequestTypeDef](#deletepolicyrequesttypedef)
-  - [DeletePolicyVersionRequestTypeDef](#deletepolicyversionrequesttypedef)
-  - [DeleteProvisioningTemplateRequestTypeDef](#deleteprovisioningtemplaterequesttypedef)
-  - [DeleteProvisioningTemplateVersionRequestTypeDef](#deleteprovisioningtemplateversionrequesttypedef)
-  - [DeleteRoleAliasRequestTypeDef](#deleterolealiasrequesttypedef)
-  - [DeleteScheduledAuditRequestTypeDef](#deletescheduledauditrequesttypedef)
-  - [DeleteSecurityProfileRequestTypeDef](#deletesecurityprofilerequesttypedef)
-  - [DeleteStreamRequestTypeDef](#deletestreamrequesttypedef)
-  - [DeleteThingGroupRequestTypeDef](#deletethinggrouprequesttypedef)
-  - [DeleteThingRequestTypeDef](#deletethingrequesttypedef)
-  - [DeleteThingTypeRequestTypeDef](#deletethingtyperequesttypedef)
-  - [DeleteTopicRuleDestinationRequestTypeDef](#deletetopicruledestinationrequesttypedef)
-  - [DeleteTopicRuleRequestTypeDef](#deletetopicrulerequesttypedef)
-  - [DeleteV2LoggingLevelRequestTypeDef](#deletev2logginglevelrequesttypedef)
+  - [DeleteAccountAuditConfigurationRequestRequestTypeDef](#deleteaccountauditconfigurationrequestrequesttypedef)
+  - [DeleteAuditSuppressionRequestRequestTypeDef](#deleteauditsuppressionrequestrequesttypedef)
+  - [DeleteAuthorizerRequestRequestTypeDef](#deleteauthorizerrequestrequesttypedef)
+  - [DeleteBillingGroupRequestRequestTypeDef](#deletebillinggrouprequestrequesttypedef)
+  - [DeleteCACertificateRequestRequestTypeDef](#deletecacertificaterequestrequesttypedef)
+  - [DeleteCertificateRequestRequestTypeDef](#deletecertificaterequestrequesttypedef)
+  - [DeleteCustomMetricRequestRequestTypeDef](#deletecustommetricrequestrequesttypedef)
+  - [DeleteDimensionRequestRequestTypeDef](#deletedimensionrequestrequesttypedef)
+  - [DeleteDomainConfigurationRequestRequestTypeDef](#deletedomainconfigurationrequestrequesttypedef)
+  - [DeleteDynamicThingGroupRequestRequestTypeDef](#deletedynamicthinggrouprequestrequesttypedef)
+  - [DeleteJobExecutionRequestRequestTypeDef](#deletejobexecutionrequestrequesttypedef)
+  - [DeleteJobRequestRequestTypeDef](#deletejobrequestrequesttypedef)
+  - [DeleteJobTemplateRequestRequestTypeDef](#deletejobtemplaterequestrequesttypedef)
+  - [DeleteMitigationActionRequestRequestTypeDef](#deletemitigationactionrequestrequesttypedef)
+  - [DeleteOTAUpdateRequestRequestTypeDef](#deleteotaupdaterequestrequesttypedef)
+  - [DeletePolicyRequestRequestTypeDef](#deletepolicyrequestrequesttypedef)
+  - [DeletePolicyVersionRequestRequestTypeDef](#deletepolicyversionrequestrequesttypedef)
+  - [DeleteProvisioningTemplateRequestRequestTypeDef](#deleteprovisioningtemplaterequestrequesttypedef)
+  - [DeleteProvisioningTemplateVersionRequestRequestTypeDef](#deleteprovisioningtemplateversionrequestrequesttypedef)
+  - [DeleteRoleAliasRequestRequestTypeDef](#deleterolealiasrequestrequesttypedef)
+  - [DeleteScheduledAuditRequestRequestTypeDef](#deletescheduledauditrequestrequesttypedef)
+  - [DeleteSecurityProfileRequestRequestTypeDef](#deletesecurityprofilerequestrequesttypedef)
+  - [DeleteStreamRequestRequestTypeDef](#deletestreamrequestrequesttypedef)
+  - [DeleteThingGroupRequestRequestTypeDef](#deletethinggrouprequestrequesttypedef)
+  - [DeleteThingRequestRequestTypeDef](#deletethingrequestrequesttypedef)
+  - [DeleteThingTypeRequestRequestTypeDef](#deletethingtyperequestrequesttypedef)
+  - [DeleteTopicRuleDestinationRequestRequestTypeDef](#deletetopicruledestinationrequestrequesttypedef)
+  - [DeleteTopicRuleRequestRequestTypeDef](#deletetopicrulerequestrequesttypedef)
+  - [DeleteV2LoggingLevelRequestRequestTypeDef](#deletev2logginglevelrequestrequesttypedef)
   - [DeniedTypeDef](#deniedtypedef)
-  - [DeprecateThingTypeRequestTypeDef](#deprecatethingtyperequesttypedef)
-  - [DescribeAccountAuditConfigurationResponseResponseTypeDef](#describeaccountauditconfigurationresponseresponsetypedef)
-  - [DescribeAuditFindingRequestTypeDef](#describeauditfindingrequesttypedef)
-  - [DescribeAuditFindingResponseResponseTypeDef](#describeauditfindingresponseresponsetypedef)
-  - [DescribeAuditMitigationActionsTaskRequestTypeDef](#describeauditmitigationactionstaskrequesttypedef)
-  - [DescribeAuditMitigationActionsTaskResponseResponseTypeDef](#describeauditmitigationactionstaskresponseresponsetypedef)
-  - [DescribeAuditSuppressionRequestTypeDef](#describeauditsuppressionrequesttypedef)
-  - [DescribeAuditSuppressionResponseResponseTypeDef](#describeauditsuppressionresponseresponsetypedef)
-  - [DescribeAuditTaskRequestTypeDef](#describeaudittaskrequesttypedef)
-  - [DescribeAuditTaskResponseResponseTypeDef](#describeaudittaskresponseresponsetypedef)
-  - [DescribeAuthorizerRequestTypeDef](#describeauthorizerrequesttypedef)
-  - [DescribeAuthorizerResponseResponseTypeDef](#describeauthorizerresponseresponsetypedef)
-  - [DescribeBillingGroupRequestTypeDef](#describebillinggrouprequesttypedef)
-  - [DescribeBillingGroupResponseResponseTypeDef](#describebillinggroupresponseresponsetypedef)
-  - [DescribeCACertificateRequestTypeDef](#describecacertificaterequesttypedef)
-  - [DescribeCACertificateResponseResponseTypeDef](#describecacertificateresponseresponsetypedef)
-  - [DescribeCertificateRequestTypeDef](#describecertificaterequesttypedef)
-  - [DescribeCertificateResponseResponseTypeDef](#describecertificateresponseresponsetypedef)
-  - [DescribeCustomMetricRequestTypeDef](#describecustommetricrequesttypedef)
-  - [DescribeCustomMetricResponseResponseTypeDef](#describecustommetricresponseresponsetypedef)
-  - [DescribeDefaultAuthorizerResponseResponseTypeDef](#describedefaultauthorizerresponseresponsetypedef)
-  - [DescribeDetectMitigationActionsTaskRequestTypeDef](#describedetectmitigationactionstaskrequesttypedef)
-  - [DescribeDetectMitigationActionsTaskResponseResponseTypeDef](#describedetectmitigationactionstaskresponseresponsetypedef)
-  - [DescribeDimensionRequestTypeDef](#describedimensionrequesttypedef)
-  - [DescribeDimensionResponseResponseTypeDef](#describedimensionresponseresponsetypedef)
-  - [DescribeDomainConfigurationRequestTypeDef](#describedomainconfigurationrequesttypedef)
-  - [DescribeDomainConfigurationResponseResponseTypeDef](#describedomainconfigurationresponseresponsetypedef)
-  - [DescribeEndpointRequestTypeDef](#describeendpointrequesttypedef)
-  - [DescribeEndpointResponseResponseTypeDef](#describeendpointresponseresponsetypedef)
-  - [DescribeEventConfigurationsResponseResponseTypeDef](#describeeventconfigurationsresponseresponsetypedef)
-  - [DescribeIndexRequestTypeDef](#describeindexrequesttypedef)
-  - [DescribeIndexResponseResponseTypeDef](#describeindexresponseresponsetypedef)
-  - [DescribeJobExecutionRequestTypeDef](#describejobexecutionrequesttypedef)
-  - [DescribeJobExecutionResponseResponseTypeDef](#describejobexecutionresponseresponsetypedef)
-  - [DescribeJobRequestTypeDef](#describejobrequesttypedef)
-  - [DescribeJobResponseResponseTypeDef](#describejobresponseresponsetypedef)
-  - [DescribeJobTemplateRequestTypeDef](#describejobtemplaterequesttypedef)
-  - [DescribeJobTemplateResponseResponseTypeDef](#describejobtemplateresponseresponsetypedef)
-  - [DescribeMitigationActionRequestTypeDef](#describemitigationactionrequesttypedef)
-  - [DescribeMitigationActionResponseResponseTypeDef](#describemitigationactionresponseresponsetypedef)
-  - [DescribeProvisioningTemplateRequestTypeDef](#describeprovisioningtemplaterequesttypedef)
-  - [DescribeProvisioningTemplateResponseResponseTypeDef](#describeprovisioningtemplateresponseresponsetypedef)
-  - [DescribeProvisioningTemplateVersionRequestTypeDef](#describeprovisioningtemplateversionrequesttypedef)
-  - [DescribeProvisioningTemplateVersionResponseResponseTypeDef](#describeprovisioningtemplateversionresponseresponsetypedef)
-  - [DescribeRoleAliasRequestTypeDef](#describerolealiasrequesttypedef)
-  - [DescribeRoleAliasResponseResponseTypeDef](#describerolealiasresponseresponsetypedef)
-  - [DescribeScheduledAuditRequestTypeDef](#describescheduledauditrequesttypedef)
-  - [DescribeScheduledAuditResponseResponseTypeDef](#describescheduledauditresponseresponsetypedef)
-  - [DescribeSecurityProfileRequestTypeDef](#describesecurityprofilerequesttypedef)
-  - [DescribeSecurityProfileResponseResponseTypeDef](#describesecurityprofileresponseresponsetypedef)
-  - [DescribeStreamRequestTypeDef](#describestreamrequesttypedef)
-  - [DescribeStreamResponseResponseTypeDef](#describestreamresponseresponsetypedef)
-  - [DescribeThingGroupRequestTypeDef](#describethinggrouprequesttypedef)
-  - [DescribeThingGroupResponseResponseTypeDef](#describethinggroupresponseresponsetypedef)
-  - [DescribeThingRegistrationTaskRequestTypeDef](#describethingregistrationtaskrequesttypedef)
-  - [DescribeThingRegistrationTaskResponseResponseTypeDef](#describethingregistrationtaskresponseresponsetypedef)
-  - [DescribeThingRequestTypeDef](#describethingrequesttypedef)
-  - [DescribeThingResponseResponseTypeDef](#describethingresponseresponsetypedef)
-  - [DescribeThingTypeRequestTypeDef](#describethingtyperequesttypedef)
-  - [DescribeThingTypeResponseResponseTypeDef](#describethingtyperesponseresponsetypedef)
+  - [DeprecateThingTypeRequestRequestTypeDef](#deprecatethingtyperequestrequesttypedef)
+  - [DescribeAccountAuditConfigurationResponseTypeDef](#describeaccountauditconfigurationresponsetypedef)
+  - [DescribeAuditFindingRequestRequestTypeDef](#describeauditfindingrequestrequesttypedef)
+  - [DescribeAuditFindingResponseTypeDef](#describeauditfindingresponsetypedef)
+  - [DescribeAuditMitigationActionsTaskRequestRequestTypeDef](#describeauditmitigationactionstaskrequestrequesttypedef)
+  - [DescribeAuditMitigationActionsTaskResponseTypeDef](#describeauditmitigationactionstaskresponsetypedef)
+  - [DescribeAuditSuppressionRequestRequestTypeDef](#describeauditsuppressionrequestrequesttypedef)
+  - [DescribeAuditSuppressionResponseTypeDef](#describeauditsuppressionresponsetypedef)
+  - [DescribeAuditTaskRequestRequestTypeDef](#describeaudittaskrequestrequesttypedef)
+  - [DescribeAuditTaskResponseTypeDef](#describeaudittaskresponsetypedef)
+  - [DescribeAuthorizerRequestRequestTypeDef](#describeauthorizerrequestrequesttypedef)
+  - [DescribeAuthorizerResponseTypeDef](#describeauthorizerresponsetypedef)
+  - [DescribeBillingGroupRequestRequestTypeDef](#describebillinggrouprequestrequesttypedef)
+  - [DescribeBillingGroupResponseTypeDef](#describebillinggroupresponsetypedef)
+  - [DescribeCACertificateRequestRequestTypeDef](#describecacertificaterequestrequesttypedef)
+  - [DescribeCACertificateResponseTypeDef](#describecacertificateresponsetypedef)
+  - [DescribeCertificateRequestRequestTypeDef](#describecertificaterequestrequesttypedef)
+  - [DescribeCertificateResponseTypeDef](#describecertificateresponsetypedef)
+  - [DescribeCustomMetricRequestRequestTypeDef](#describecustommetricrequestrequesttypedef)
+  - [DescribeCustomMetricResponseTypeDef](#describecustommetricresponsetypedef)
+  - [DescribeDefaultAuthorizerResponseTypeDef](#describedefaultauthorizerresponsetypedef)
+  - [DescribeDetectMitigationActionsTaskRequestRequestTypeDef](#describedetectmitigationactionstaskrequestrequesttypedef)
+  - [DescribeDetectMitigationActionsTaskResponseTypeDef](#describedetectmitigationactionstaskresponsetypedef)
+  - [DescribeDimensionRequestRequestTypeDef](#describedimensionrequestrequesttypedef)
+  - [DescribeDimensionResponseTypeDef](#describedimensionresponsetypedef)
+  - [DescribeDomainConfigurationRequestRequestTypeDef](#describedomainconfigurationrequestrequesttypedef)
+  - [DescribeDomainConfigurationResponseTypeDef](#describedomainconfigurationresponsetypedef)
+  - [DescribeEndpointRequestRequestTypeDef](#describeendpointrequestrequesttypedef)
+  - [DescribeEndpointResponseTypeDef](#describeendpointresponsetypedef)
+  - [DescribeEventConfigurationsResponseTypeDef](#describeeventconfigurationsresponsetypedef)
+  - [DescribeIndexRequestRequestTypeDef](#describeindexrequestrequesttypedef)
+  - [DescribeIndexResponseTypeDef](#describeindexresponsetypedef)
+  - [DescribeJobExecutionRequestRequestTypeDef](#describejobexecutionrequestrequesttypedef)
+  - [DescribeJobExecutionResponseTypeDef](#describejobexecutionresponsetypedef)
+  - [DescribeJobRequestRequestTypeDef](#describejobrequestrequesttypedef)
+  - [DescribeJobResponseTypeDef](#describejobresponsetypedef)
+  - [DescribeJobTemplateRequestRequestTypeDef](#describejobtemplaterequestrequesttypedef)
+  - [DescribeJobTemplateResponseTypeDef](#describejobtemplateresponsetypedef)
+  - [DescribeMitigationActionRequestRequestTypeDef](#describemitigationactionrequestrequesttypedef)
+  - [DescribeMitigationActionResponseTypeDef](#describemitigationactionresponsetypedef)
+  - [DescribeProvisioningTemplateRequestRequestTypeDef](#describeprovisioningtemplaterequestrequesttypedef)
+  - [DescribeProvisioningTemplateResponseTypeDef](#describeprovisioningtemplateresponsetypedef)
+  - [DescribeProvisioningTemplateVersionRequestRequestTypeDef](#describeprovisioningtemplateversionrequestrequesttypedef)
+  - [DescribeProvisioningTemplateVersionResponseTypeDef](#describeprovisioningtemplateversionresponsetypedef)
+  - [DescribeRoleAliasRequestRequestTypeDef](#describerolealiasrequestrequesttypedef)
+  - [DescribeRoleAliasResponseTypeDef](#describerolealiasresponsetypedef)
+  - [DescribeScheduledAuditRequestRequestTypeDef](#describescheduledauditrequestrequesttypedef)
+  - [DescribeScheduledAuditResponseTypeDef](#describescheduledauditresponsetypedef)
+  - [DescribeSecurityProfileRequestRequestTypeDef](#describesecurityprofilerequestrequesttypedef)
+  - [DescribeSecurityProfileResponseTypeDef](#describesecurityprofileresponsetypedef)
+  - [DescribeStreamRequestRequestTypeDef](#describestreamrequestrequesttypedef)
+  - [DescribeStreamResponseTypeDef](#describestreamresponsetypedef)
+  - [DescribeThingGroupRequestRequestTypeDef](#describethinggrouprequestrequesttypedef)
+  - [DescribeThingGroupResponseTypeDef](#describethinggroupresponsetypedef)
+  - [DescribeThingRegistrationTaskRequestRequestTypeDef](#describethingregistrationtaskrequestrequesttypedef)
+  - [DescribeThingRegistrationTaskResponseTypeDef](#describethingregistrationtaskresponsetypedef)
+  - [DescribeThingRequestRequestTypeDef](#describethingrequestrequesttypedef)
+  - [DescribeThingResponseTypeDef](#describethingresponsetypedef)
+  - [DescribeThingTypeRequestRequestTypeDef](#describethingtyperequestrequesttypedef)
+  - [DescribeThingTypeResponseTypeDef](#describethingtyperesponsetypedef)
   - [DestinationTypeDef](#destinationtypedef)
-  - [DetachPolicyRequestTypeDef](#detachpolicyrequesttypedef)
-  - [DetachPrincipalPolicyRequestTypeDef](#detachprincipalpolicyrequesttypedef)
-  - [DetachSecurityProfileRequestTypeDef](#detachsecurityprofilerequesttypedef)
-  - [DetachThingPrincipalRequestTypeDef](#detachthingprincipalrequesttypedef)
+  - [DetachPolicyRequestRequestTypeDef](#detachpolicyrequestrequesttypedef)
+  - [DetachPrincipalPolicyRequestRequestTypeDef](#detachprincipalpolicyrequestrequesttypedef)
+  - [DetachSecurityProfileRequestRequestTypeDef](#detachsecurityprofilerequestrequesttypedef)
+  - [DetachThingPrincipalRequestRequestTypeDef](#detachthingprincipalrequestrequesttypedef)
   - [DetectMitigationActionExecutionTypeDef](#detectmitigationactionexecutiontypedef)
   - [DetectMitigationActionsTaskStatisticsTypeDef](#detectmitigationactionstaskstatisticstypedef)
   - [DetectMitigationActionsTaskSummaryTypeDef](#detectmitigationactionstasksummarytypedef)
   - [DetectMitigationActionsTaskTargetTypeDef](#detectmitigationactionstasktargettypedef)
-  - [DisableTopicRuleRequestTypeDef](#disabletopicrulerequesttypedef)
+  - [DisableTopicRuleRequestRequestTypeDef](#disabletopicrulerequestrequesttypedef)
   - [DomainConfigurationSummaryTypeDef](#domainconfigurationsummarytypedef)
   - [DynamoDBActionTypeDef](#dynamodbactiontypedef)
   - [DynamoDBv2ActionTypeDef](#dynamodbv2actiontypedef)
   - [EffectivePolicyTypeDef](#effectivepolicytypedef)
   - [ElasticsearchActionTypeDef](#elasticsearchactiontypedef)
   - [EnableIoTLoggingParamsTypeDef](#enableiotloggingparamstypedef)
-  - [EnableTopicRuleRequestTypeDef](#enabletopicrulerequesttypedef)
+  - [EnableTopicRuleRequestRequestTypeDef](#enabletopicrulerequestrequesttypedef)
   - [ErrorInfoTypeDef](#errorinfotypedef)
   - [ExplicitDenyTypeDef](#explicitdenytypedef)
   - [ExponentialRolloutRateTypeDef](#exponentialrolloutratetypedef)
   - [FieldTypeDef](#fieldtypedef)
   - [FileLocationTypeDef](#filelocationtypedef)
   - [FirehoseActionTypeDef](#firehoseactiontypedef)
-  - [GetBehaviorModelTrainingSummariesRequestTypeDef](#getbehaviormodeltrainingsummariesrequesttypedef)
-  - [GetBehaviorModelTrainingSummariesResponseResponseTypeDef](#getbehaviormodeltrainingsummariesresponseresponsetypedef)
-  - [GetCardinalityRequestTypeDef](#getcardinalityrequesttypedef)
-  - [GetCardinalityResponseResponseTypeDef](#getcardinalityresponseresponsetypedef)
-  - [GetEffectivePoliciesRequestTypeDef](#geteffectivepoliciesrequesttypedef)
-  - [GetEffectivePoliciesResponseResponseTypeDef](#geteffectivepoliciesresponseresponsetypedef)
-  - [GetIndexingConfigurationResponseResponseTypeDef](#getindexingconfigurationresponseresponsetypedef)
-  - [GetJobDocumentRequestTypeDef](#getjobdocumentrequesttypedef)
-  - [GetJobDocumentResponseResponseTypeDef](#getjobdocumentresponseresponsetypedef)
-  - [GetLoggingOptionsResponseResponseTypeDef](#getloggingoptionsresponseresponsetypedef)
-  - [GetOTAUpdateRequestTypeDef](#getotaupdaterequesttypedef)
-  - [GetOTAUpdateResponseResponseTypeDef](#getotaupdateresponseresponsetypedef)
-  - [GetPercentilesRequestTypeDef](#getpercentilesrequesttypedef)
-  - [GetPercentilesResponseResponseTypeDef](#getpercentilesresponseresponsetypedef)
-  - [GetPolicyRequestTypeDef](#getpolicyrequesttypedef)
-  - [GetPolicyResponseResponseTypeDef](#getpolicyresponseresponsetypedef)
-  - [GetPolicyVersionRequestTypeDef](#getpolicyversionrequesttypedef)
-  - [GetPolicyVersionResponseResponseTypeDef](#getpolicyversionresponseresponsetypedef)
-  - [GetRegistrationCodeResponseResponseTypeDef](#getregistrationcoderesponseresponsetypedef)
-  - [GetStatisticsRequestTypeDef](#getstatisticsrequesttypedef)
-  - [GetStatisticsResponseResponseTypeDef](#getstatisticsresponseresponsetypedef)
-  - [GetTopicRuleDestinationRequestTypeDef](#gettopicruledestinationrequesttypedef)
-  - [GetTopicRuleDestinationResponseResponseTypeDef](#gettopicruledestinationresponseresponsetypedef)
-  - [GetTopicRuleRequestTypeDef](#gettopicrulerequesttypedef)
-  - [GetTopicRuleResponseResponseTypeDef](#gettopicruleresponseresponsetypedef)
-  - [GetV2LoggingOptionsResponseResponseTypeDef](#getv2loggingoptionsresponseresponsetypedef)
+  - [GetBehaviorModelTrainingSummariesRequestRequestTypeDef](#getbehaviormodeltrainingsummariesrequestrequesttypedef)
+  - [GetBehaviorModelTrainingSummariesResponseTypeDef](#getbehaviormodeltrainingsummariesresponsetypedef)
+  - [GetCardinalityRequestRequestTypeDef](#getcardinalityrequestrequesttypedef)
+  - [GetCardinalityResponseTypeDef](#getcardinalityresponsetypedef)
+  - [GetEffectivePoliciesRequestRequestTypeDef](#geteffectivepoliciesrequestrequesttypedef)
+  - [GetEffectivePoliciesResponseTypeDef](#geteffectivepoliciesresponsetypedef)
+  - [GetIndexingConfigurationResponseTypeDef](#getindexingconfigurationresponsetypedef)
+  - [GetJobDocumentRequestRequestTypeDef](#getjobdocumentrequestrequesttypedef)
+  - [GetJobDocumentResponseTypeDef](#getjobdocumentresponsetypedef)
+  - [GetLoggingOptionsResponseTypeDef](#getloggingoptionsresponsetypedef)
+  - [GetOTAUpdateRequestRequestTypeDef](#getotaupdaterequestrequesttypedef)
+  - [GetOTAUpdateResponseTypeDef](#getotaupdateresponsetypedef)
+  - [GetPercentilesRequestRequestTypeDef](#getpercentilesrequestrequesttypedef)
+  - [GetPercentilesResponseTypeDef](#getpercentilesresponsetypedef)
+  - [GetPolicyRequestRequestTypeDef](#getpolicyrequestrequesttypedef)
+  - [GetPolicyResponseTypeDef](#getpolicyresponsetypedef)
+  - [GetPolicyVersionRequestRequestTypeDef](#getpolicyversionrequestrequesttypedef)
+  - [GetPolicyVersionResponseTypeDef](#getpolicyversionresponsetypedef)
+  - [GetRegistrationCodeResponseTypeDef](#getregistrationcoderesponsetypedef)
+  - [GetStatisticsRequestRequestTypeDef](#getstatisticsrequestrequesttypedef)
+  - [GetStatisticsResponseTypeDef](#getstatisticsresponsetypedef)
+  - [GetTopicRuleDestinationRequestRequestTypeDef](#gettopicruledestinationrequestrequesttypedef)
+  - [GetTopicRuleDestinationResponseTypeDef](#gettopicruledestinationresponsetypedef)
+  - [GetTopicRuleRequestRequestTypeDef](#gettopicrulerequestrequesttypedef)
+  - [GetTopicRuleResponseTypeDef](#gettopicruleresponsetypedef)
+  - [GetV2LoggingOptionsResponseTypeDef](#getv2loggingoptionsresponsetypedef)
   - [GroupNameAndArnTypeDef](#groupnameandarntypedef)
   - [HttpActionHeaderTypeDef](#httpactionheadertypedef)
   - [HttpActionTypeDef](#httpactiontypedef)
@@ -292,112 +292,112 @@ type annotations stubs module
   - [KeyPairTypeDef](#keypairtypedef)
   - [KinesisActionTypeDef](#kinesisactiontypedef)
   - [LambdaActionTypeDef](#lambdaactiontypedef)
-  - [ListActiveViolationsRequestTypeDef](#listactiveviolationsrequesttypedef)
-  - [ListActiveViolationsResponseResponseTypeDef](#listactiveviolationsresponseresponsetypedef)
-  - [ListAttachedPoliciesRequestTypeDef](#listattachedpoliciesrequesttypedef)
-  - [ListAttachedPoliciesResponseResponseTypeDef](#listattachedpoliciesresponseresponsetypedef)
-  - [ListAuditFindingsRequestTypeDef](#listauditfindingsrequesttypedef)
-  - [ListAuditFindingsResponseResponseTypeDef](#listauditfindingsresponseresponsetypedef)
-  - [ListAuditMitigationActionsExecutionsRequestTypeDef](#listauditmitigationactionsexecutionsrequesttypedef)
-  - [ListAuditMitigationActionsExecutionsResponseResponseTypeDef](#listauditmitigationactionsexecutionsresponseresponsetypedef)
-  - [ListAuditMitigationActionsTasksRequestTypeDef](#listauditmitigationactionstasksrequesttypedef)
-  - [ListAuditMitigationActionsTasksResponseResponseTypeDef](#listauditmitigationactionstasksresponseresponsetypedef)
-  - [ListAuditSuppressionsRequestTypeDef](#listauditsuppressionsrequesttypedef)
-  - [ListAuditSuppressionsResponseResponseTypeDef](#listauditsuppressionsresponseresponsetypedef)
-  - [ListAuditTasksRequestTypeDef](#listaudittasksrequesttypedef)
-  - [ListAuditTasksResponseResponseTypeDef](#listaudittasksresponseresponsetypedef)
-  - [ListAuthorizersRequestTypeDef](#listauthorizersrequesttypedef)
-  - [ListAuthorizersResponseResponseTypeDef](#listauthorizersresponseresponsetypedef)
-  - [ListBillingGroupsRequestTypeDef](#listbillinggroupsrequesttypedef)
-  - [ListBillingGroupsResponseResponseTypeDef](#listbillinggroupsresponseresponsetypedef)
-  - [ListCACertificatesRequestTypeDef](#listcacertificatesrequesttypedef)
-  - [ListCACertificatesResponseResponseTypeDef](#listcacertificatesresponseresponsetypedef)
-  - [ListCertificatesByCARequestTypeDef](#listcertificatesbycarequesttypedef)
-  - [ListCertificatesByCAResponseResponseTypeDef](#listcertificatesbycaresponseresponsetypedef)
-  - [ListCertificatesRequestTypeDef](#listcertificatesrequesttypedef)
-  - [ListCertificatesResponseResponseTypeDef](#listcertificatesresponseresponsetypedef)
-  - [ListCustomMetricsRequestTypeDef](#listcustommetricsrequesttypedef)
-  - [ListCustomMetricsResponseResponseTypeDef](#listcustommetricsresponseresponsetypedef)
-  - [ListDetectMitigationActionsExecutionsRequestTypeDef](#listdetectmitigationactionsexecutionsrequesttypedef)
-  - [ListDetectMitigationActionsExecutionsResponseResponseTypeDef](#listdetectmitigationactionsexecutionsresponseresponsetypedef)
-  - [ListDetectMitigationActionsTasksRequestTypeDef](#listdetectmitigationactionstasksrequesttypedef)
-  - [ListDetectMitigationActionsTasksResponseResponseTypeDef](#listdetectmitigationactionstasksresponseresponsetypedef)
-  - [ListDimensionsRequestTypeDef](#listdimensionsrequesttypedef)
-  - [ListDimensionsResponseResponseTypeDef](#listdimensionsresponseresponsetypedef)
-  - [ListDomainConfigurationsRequestTypeDef](#listdomainconfigurationsrequesttypedef)
-  - [ListDomainConfigurationsResponseResponseTypeDef](#listdomainconfigurationsresponseresponsetypedef)
-  - [ListIndicesRequestTypeDef](#listindicesrequesttypedef)
-  - [ListIndicesResponseResponseTypeDef](#listindicesresponseresponsetypedef)
-  - [ListJobExecutionsForJobRequestTypeDef](#listjobexecutionsforjobrequesttypedef)
-  - [ListJobExecutionsForJobResponseResponseTypeDef](#listjobexecutionsforjobresponseresponsetypedef)
-  - [ListJobExecutionsForThingRequestTypeDef](#listjobexecutionsforthingrequesttypedef)
-  - [ListJobExecutionsForThingResponseResponseTypeDef](#listjobexecutionsforthingresponseresponsetypedef)
-  - [ListJobTemplatesRequestTypeDef](#listjobtemplatesrequesttypedef)
-  - [ListJobTemplatesResponseResponseTypeDef](#listjobtemplatesresponseresponsetypedef)
-  - [ListJobsRequestTypeDef](#listjobsrequesttypedef)
-  - [ListJobsResponseResponseTypeDef](#listjobsresponseresponsetypedef)
-  - [ListMitigationActionsRequestTypeDef](#listmitigationactionsrequesttypedef)
-  - [ListMitigationActionsResponseResponseTypeDef](#listmitigationactionsresponseresponsetypedef)
-  - [ListOTAUpdatesRequestTypeDef](#listotaupdatesrequesttypedef)
-  - [ListOTAUpdatesResponseResponseTypeDef](#listotaupdatesresponseresponsetypedef)
-  - [ListOutgoingCertificatesRequestTypeDef](#listoutgoingcertificatesrequesttypedef)
-  - [ListOutgoingCertificatesResponseResponseTypeDef](#listoutgoingcertificatesresponseresponsetypedef)
-  - [ListPoliciesRequestTypeDef](#listpoliciesrequesttypedef)
-  - [ListPoliciesResponseResponseTypeDef](#listpoliciesresponseresponsetypedef)
-  - [ListPolicyPrincipalsRequestTypeDef](#listpolicyprincipalsrequesttypedef)
-  - [ListPolicyPrincipalsResponseResponseTypeDef](#listpolicyprincipalsresponseresponsetypedef)
-  - [ListPolicyVersionsRequestTypeDef](#listpolicyversionsrequesttypedef)
-  - [ListPolicyVersionsResponseResponseTypeDef](#listpolicyversionsresponseresponsetypedef)
-  - [ListPrincipalPoliciesRequestTypeDef](#listprincipalpoliciesrequesttypedef)
-  - [ListPrincipalPoliciesResponseResponseTypeDef](#listprincipalpoliciesresponseresponsetypedef)
-  - [ListPrincipalThingsRequestTypeDef](#listprincipalthingsrequesttypedef)
-  - [ListPrincipalThingsResponseResponseTypeDef](#listprincipalthingsresponseresponsetypedef)
-  - [ListProvisioningTemplateVersionsRequestTypeDef](#listprovisioningtemplateversionsrequesttypedef)
-  - [ListProvisioningTemplateVersionsResponseResponseTypeDef](#listprovisioningtemplateversionsresponseresponsetypedef)
-  - [ListProvisioningTemplatesRequestTypeDef](#listprovisioningtemplatesrequesttypedef)
-  - [ListProvisioningTemplatesResponseResponseTypeDef](#listprovisioningtemplatesresponseresponsetypedef)
-  - [ListRoleAliasesRequestTypeDef](#listrolealiasesrequesttypedef)
-  - [ListRoleAliasesResponseResponseTypeDef](#listrolealiasesresponseresponsetypedef)
-  - [ListScheduledAuditsRequestTypeDef](#listscheduledauditsrequesttypedef)
-  - [ListScheduledAuditsResponseResponseTypeDef](#listscheduledauditsresponseresponsetypedef)
-  - [ListSecurityProfilesForTargetRequestTypeDef](#listsecurityprofilesfortargetrequesttypedef)
-  - [ListSecurityProfilesForTargetResponseResponseTypeDef](#listsecurityprofilesfortargetresponseresponsetypedef)
-  - [ListSecurityProfilesRequestTypeDef](#listsecurityprofilesrequesttypedef)
-  - [ListSecurityProfilesResponseResponseTypeDef](#listsecurityprofilesresponseresponsetypedef)
-  - [ListStreamsRequestTypeDef](#liststreamsrequesttypedef)
-  - [ListStreamsResponseResponseTypeDef](#liststreamsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
-  - [ListTargetsForPolicyRequestTypeDef](#listtargetsforpolicyrequesttypedef)
-  - [ListTargetsForPolicyResponseResponseTypeDef](#listtargetsforpolicyresponseresponsetypedef)
-  - [ListTargetsForSecurityProfileRequestTypeDef](#listtargetsforsecurityprofilerequesttypedef)
-  - [ListTargetsForSecurityProfileResponseResponseTypeDef](#listtargetsforsecurityprofileresponseresponsetypedef)
-  - [ListThingGroupsForThingRequestTypeDef](#listthinggroupsforthingrequesttypedef)
-  - [ListThingGroupsForThingResponseResponseTypeDef](#listthinggroupsforthingresponseresponsetypedef)
-  - [ListThingGroupsRequestTypeDef](#listthinggroupsrequesttypedef)
-  - [ListThingGroupsResponseResponseTypeDef](#listthinggroupsresponseresponsetypedef)
-  - [ListThingPrincipalsRequestTypeDef](#listthingprincipalsrequesttypedef)
-  - [ListThingPrincipalsResponseResponseTypeDef](#listthingprincipalsresponseresponsetypedef)
-  - [ListThingRegistrationTaskReportsRequestTypeDef](#listthingregistrationtaskreportsrequesttypedef)
-  - [ListThingRegistrationTaskReportsResponseResponseTypeDef](#listthingregistrationtaskreportsresponseresponsetypedef)
-  - [ListThingRegistrationTasksRequestTypeDef](#listthingregistrationtasksrequesttypedef)
-  - [ListThingRegistrationTasksResponseResponseTypeDef](#listthingregistrationtasksresponseresponsetypedef)
-  - [ListThingTypesRequestTypeDef](#listthingtypesrequesttypedef)
-  - [ListThingTypesResponseResponseTypeDef](#listthingtypesresponseresponsetypedef)
-  - [ListThingsInBillingGroupRequestTypeDef](#listthingsinbillinggrouprequesttypedef)
-  - [ListThingsInBillingGroupResponseResponseTypeDef](#listthingsinbillinggroupresponseresponsetypedef)
-  - [ListThingsInThingGroupRequestTypeDef](#listthingsinthinggrouprequesttypedef)
-  - [ListThingsInThingGroupResponseResponseTypeDef](#listthingsinthinggroupresponseresponsetypedef)
-  - [ListThingsRequestTypeDef](#listthingsrequesttypedef)
-  - [ListThingsResponseResponseTypeDef](#listthingsresponseresponsetypedef)
-  - [ListTopicRuleDestinationsRequestTypeDef](#listtopicruledestinationsrequesttypedef)
-  - [ListTopicRuleDestinationsResponseResponseTypeDef](#listtopicruledestinationsresponseresponsetypedef)
-  - [ListTopicRulesRequestTypeDef](#listtopicrulesrequesttypedef)
-  - [ListTopicRulesResponseResponseTypeDef](#listtopicrulesresponseresponsetypedef)
-  - [ListV2LoggingLevelsRequestTypeDef](#listv2logginglevelsrequesttypedef)
-  - [ListV2LoggingLevelsResponseResponseTypeDef](#listv2logginglevelsresponseresponsetypedef)
-  - [ListViolationEventsRequestTypeDef](#listviolationeventsrequesttypedef)
-  - [ListViolationEventsResponseResponseTypeDef](#listviolationeventsresponseresponsetypedef)
+  - [ListActiveViolationsRequestRequestTypeDef](#listactiveviolationsrequestrequesttypedef)
+  - [ListActiveViolationsResponseTypeDef](#listactiveviolationsresponsetypedef)
+  - [ListAttachedPoliciesRequestRequestTypeDef](#listattachedpoliciesrequestrequesttypedef)
+  - [ListAttachedPoliciesResponseTypeDef](#listattachedpoliciesresponsetypedef)
+  - [ListAuditFindingsRequestRequestTypeDef](#listauditfindingsrequestrequesttypedef)
+  - [ListAuditFindingsResponseTypeDef](#listauditfindingsresponsetypedef)
+  - [ListAuditMitigationActionsExecutionsRequestRequestTypeDef](#listauditmitigationactionsexecutionsrequestrequesttypedef)
+  - [ListAuditMitigationActionsExecutionsResponseTypeDef](#listauditmitigationactionsexecutionsresponsetypedef)
+  - [ListAuditMitigationActionsTasksRequestRequestTypeDef](#listauditmitigationactionstasksrequestrequesttypedef)
+  - [ListAuditMitigationActionsTasksResponseTypeDef](#listauditmitigationactionstasksresponsetypedef)
+  - [ListAuditSuppressionsRequestRequestTypeDef](#listauditsuppressionsrequestrequesttypedef)
+  - [ListAuditSuppressionsResponseTypeDef](#listauditsuppressionsresponsetypedef)
+  - [ListAuditTasksRequestRequestTypeDef](#listaudittasksrequestrequesttypedef)
+  - [ListAuditTasksResponseTypeDef](#listaudittasksresponsetypedef)
+  - [ListAuthorizersRequestRequestTypeDef](#listauthorizersrequestrequesttypedef)
+  - [ListAuthorizersResponseTypeDef](#listauthorizersresponsetypedef)
+  - [ListBillingGroupsRequestRequestTypeDef](#listbillinggroupsrequestrequesttypedef)
+  - [ListBillingGroupsResponseTypeDef](#listbillinggroupsresponsetypedef)
+  - [ListCACertificatesRequestRequestTypeDef](#listcacertificatesrequestrequesttypedef)
+  - [ListCACertificatesResponseTypeDef](#listcacertificatesresponsetypedef)
+  - [ListCertificatesByCARequestRequestTypeDef](#listcertificatesbycarequestrequesttypedef)
+  - [ListCertificatesByCAResponseTypeDef](#listcertificatesbycaresponsetypedef)
+  - [ListCertificatesRequestRequestTypeDef](#listcertificatesrequestrequesttypedef)
+  - [ListCertificatesResponseTypeDef](#listcertificatesresponsetypedef)
+  - [ListCustomMetricsRequestRequestTypeDef](#listcustommetricsrequestrequesttypedef)
+  - [ListCustomMetricsResponseTypeDef](#listcustommetricsresponsetypedef)
+  - [ListDetectMitigationActionsExecutionsRequestRequestTypeDef](#listdetectmitigationactionsexecutionsrequestrequesttypedef)
+  - [ListDetectMitigationActionsExecutionsResponseTypeDef](#listdetectmitigationactionsexecutionsresponsetypedef)
+  - [ListDetectMitigationActionsTasksRequestRequestTypeDef](#listdetectmitigationactionstasksrequestrequesttypedef)
+  - [ListDetectMitigationActionsTasksResponseTypeDef](#listdetectmitigationactionstasksresponsetypedef)
+  - [ListDimensionsRequestRequestTypeDef](#listdimensionsrequestrequesttypedef)
+  - [ListDimensionsResponseTypeDef](#listdimensionsresponsetypedef)
+  - [ListDomainConfigurationsRequestRequestTypeDef](#listdomainconfigurationsrequestrequesttypedef)
+  - [ListDomainConfigurationsResponseTypeDef](#listdomainconfigurationsresponsetypedef)
+  - [ListIndicesRequestRequestTypeDef](#listindicesrequestrequesttypedef)
+  - [ListIndicesResponseTypeDef](#listindicesresponsetypedef)
+  - [ListJobExecutionsForJobRequestRequestTypeDef](#listjobexecutionsforjobrequestrequesttypedef)
+  - [ListJobExecutionsForJobResponseTypeDef](#listjobexecutionsforjobresponsetypedef)
+  - [ListJobExecutionsForThingRequestRequestTypeDef](#listjobexecutionsforthingrequestrequesttypedef)
+  - [ListJobExecutionsForThingResponseTypeDef](#listjobexecutionsforthingresponsetypedef)
+  - [ListJobTemplatesRequestRequestTypeDef](#listjobtemplatesrequestrequesttypedef)
+  - [ListJobTemplatesResponseTypeDef](#listjobtemplatesresponsetypedef)
+  - [ListJobsRequestRequestTypeDef](#listjobsrequestrequesttypedef)
+  - [ListJobsResponseTypeDef](#listjobsresponsetypedef)
+  - [ListMitigationActionsRequestRequestTypeDef](#listmitigationactionsrequestrequesttypedef)
+  - [ListMitigationActionsResponseTypeDef](#listmitigationactionsresponsetypedef)
+  - [ListOTAUpdatesRequestRequestTypeDef](#listotaupdatesrequestrequesttypedef)
+  - [ListOTAUpdatesResponseTypeDef](#listotaupdatesresponsetypedef)
+  - [ListOutgoingCertificatesRequestRequestTypeDef](#listoutgoingcertificatesrequestrequesttypedef)
+  - [ListOutgoingCertificatesResponseTypeDef](#listoutgoingcertificatesresponsetypedef)
+  - [ListPoliciesRequestRequestTypeDef](#listpoliciesrequestrequesttypedef)
+  - [ListPoliciesResponseTypeDef](#listpoliciesresponsetypedef)
+  - [ListPolicyPrincipalsRequestRequestTypeDef](#listpolicyprincipalsrequestrequesttypedef)
+  - [ListPolicyPrincipalsResponseTypeDef](#listpolicyprincipalsresponsetypedef)
+  - [ListPolicyVersionsRequestRequestTypeDef](#listpolicyversionsrequestrequesttypedef)
+  - [ListPolicyVersionsResponseTypeDef](#listpolicyversionsresponsetypedef)
+  - [ListPrincipalPoliciesRequestRequestTypeDef](#listprincipalpoliciesrequestrequesttypedef)
+  - [ListPrincipalPoliciesResponseTypeDef](#listprincipalpoliciesresponsetypedef)
+  - [ListPrincipalThingsRequestRequestTypeDef](#listprincipalthingsrequestrequesttypedef)
+  - [ListPrincipalThingsResponseTypeDef](#listprincipalthingsresponsetypedef)
+  - [ListProvisioningTemplateVersionsRequestRequestTypeDef](#listprovisioningtemplateversionsrequestrequesttypedef)
+  - [ListProvisioningTemplateVersionsResponseTypeDef](#listprovisioningtemplateversionsresponsetypedef)
+  - [ListProvisioningTemplatesRequestRequestTypeDef](#listprovisioningtemplatesrequestrequesttypedef)
+  - [ListProvisioningTemplatesResponseTypeDef](#listprovisioningtemplatesresponsetypedef)
+  - [ListRoleAliasesRequestRequestTypeDef](#listrolealiasesrequestrequesttypedef)
+  - [ListRoleAliasesResponseTypeDef](#listrolealiasesresponsetypedef)
+  - [ListScheduledAuditsRequestRequestTypeDef](#listscheduledauditsrequestrequesttypedef)
+  - [ListScheduledAuditsResponseTypeDef](#listscheduledauditsresponsetypedef)
+  - [ListSecurityProfilesForTargetRequestRequestTypeDef](#listsecurityprofilesfortargetrequestrequesttypedef)
+  - [ListSecurityProfilesForTargetResponseTypeDef](#listsecurityprofilesfortargetresponsetypedef)
+  - [ListSecurityProfilesRequestRequestTypeDef](#listsecurityprofilesrequestrequesttypedef)
+  - [ListSecurityProfilesResponseTypeDef](#listsecurityprofilesresponsetypedef)
+  - [ListStreamsRequestRequestTypeDef](#liststreamsrequestrequesttypedef)
+  - [ListStreamsResponseTypeDef](#liststreamsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListTargetsForPolicyRequestRequestTypeDef](#listtargetsforpolicyrequestrequesttypedef)
+  - [ListTargetsForPolicyResponseTypeDef](#listtargetsforpolicyresponsetypedef)
+  - [ListTargetsForSecurityProfileRequestRequestTypeDef](#listtargetsforsecurityprofilerequestrequesttypedef)
+  - [ListTargetsForSecurityProfileResponseTypeDef](#listtargetsforsecurityprofileresponsetypedef)
+  - [ListThingGroupsForThingRequestRequestTypeDef](#listthinggroupsforthingrequestrequesttypedef)
+  - [ListThingGroupsForThingResponseTypeDef](#listthinggroupsforthingresponsetypedef)
+  - [ListThingGroupsRequestRequestTypeDef](#listthinggroupsrequestrequesttypedef)
+  - [ListThingGroupsResponseTypeDef](#listthinggroupsresponsetypedef)
+  - [ListThingPrincipalsRequestRequestTypeDef](#listthingprincipalsrequestrequesttypedef)
+  - [ListThingPrincipalsResponseTypeDef](#listthingprincipalsresponsetypedef)
+  - [ListThingRegistrationTaskReportsRequestRequestTypeDef](#listthingregistrationtaskreportsrequestrequesttypedef)
+  - [ListThingRegistrationTaskReportsResponseTypeDef](#listthingregistrationtaskreportsresponsetypedef)
+  - [ListThingRegistrationTasksRequestRequestTypeDef](#listthingregistrationtasksrequestrequesttypedef)
+  - [ListThingRegistrationTasksResponseTypeDef](#listthingregistrationtasksresponsetypedef)
+  - [ListThingTypesRequestRequestTypeDef](#listthingtypesrequestrequesttypedef)
+  - [ListThingTypesResponseTypeDef](#listthingtypesresponsetypedef)
+  - [ListThingsInBillingGroupRequestRequestTypeDef](#listthingsinbillinggrouprequestrequesttypedef)
+  - [ListThingsInBillingGroupResponseTypeDef](#listthingsinbillinggroupresponsetypedef)
+  - [ListThingsInThingGroupRequestRequestTypeDef](#listthingsinthinggrouprequestrequesttypedef)
+  - [ListThingsInThingGroupResponseTypeDef](#listthingsinthinggroupresponsetypedef)
+  - [ListThingsRequestRequestTypeDef](#listthingsrequestrequesttypedef)
+  - [ListThingsResponseTypeDef](#listthingsresponsetypedef)
+  - [ListTopicRuleDestinationsRequestRequestTypeDef](#listtopicruledestinationsrequestrequesttypedef)
+  - [ListTopicRuleDestinationsResponseTypeDef](#listtopicruledestinationsresponsetypedef)
+  - [ListTopicRulesRequestRequestTypeDef](#listtopicrulesrequestrequesttypedef)
+  - [ListTopicRulesResponseTypeDef](#listtopicrulesresponsetypedef)
+  - [ListV2LoggingLevelsRequestRequestTypeDef](#listv2logginglevelsrequestrequesttypedef)
+  - [ListV2LoggingLevelsResponseTypeDef](#listv2logginglevelsresponsetypedef)
+  - [ListViolationEventsRequestRequestTypeDef](#listviolationeventsrequestrequesttypedef)
+  - [ListViolationEventsResponseTypeDef](#listviolationeventsresponsetypedef)
   - [LogTargetConfigurationTypeDef](#logtargetconfigurationtypedef)
   - [LogTargetTypeDef](#logtargettypedef)
   - [LoggingOptionsPayloadTypeDef](#loggingoptionspayloadtypedef)
@@ -427,21 +427,21 @@ type annotations stubs module
   - [PutAssetPropertyValueEntryTypeDef](#putassetpropertyvalueentrytypedef)
   - [PutItemInputTypeDef](#putiteminputtypedef)
   - [RateIncreaseCriteriaTypeDef](#rateincreasecriteriatypedef)
-  - [RegisterCACertificateRequestTypeDef](#registercacertificaterequesttypedef)
-  - [RegisterCACertificateResponseResponseTypeDef](#registercacertificateresponseresponsetypedef)
-  - [RegisterCertificateRequestTypeDef](#registercertificaterequesttypedef)
-  - [RegisterCertificateResponseResponseTypeDef](#registercertificateresponseresponsetypedef)
-  - [RegisterCertificateWithoutCARequestTypeDef](#registercertificatewithoutcarequesttypedef)
-  - [RegisterCertificateWithoutCAResponseResponseTypeDef](#registercertificatewithoutcaresponseresponsetypedef)
-  - [RegisterThingRequestTypeDef](#registerthingrequesttypedef)
-  - [RegisterThingResponseResponseTypeDef](#registerthingresponseresponsetypedef)
+  - [RegisterCACertificateRequestRequestTypeDef](#registercacertificaterequestrequesttypedef)
+  - [RegisterCACertificateResponseTypeDef](#registercacertificateresponsetypedef)
+  - [RegisterCertificateRequestRequestTypeDef](#registercertificaterequestrequesttypedef)
+  - [RegisterCertificateResponseTypeDef](#registercertificateresponsetypedef)
+  - [RegisterCertificateWithoutCARequestRequestTypeDef](#registercertificatewithoutcarequestrequesttypedef)
+  - [RegisterCertificateWithoutCAResponseTypeDef](#registercertificatewithoutcaresponsetypedef)
+  - [RegisterThingRequestRequestTypeDef](#registerthingrequestrequesttypedef)
+  - [RegisterThingResponseTypeDef](#registerthingresponsetypedef)
   - [RegistrationConfigTypeDef](#registrationconfigtypedef)
-  - [RejectCertificateTransferRequestTypeDef](#rejectcertificatetransferrequesttypedef)
+  - [RejectCertificateTransferRequestRequestTypeDef](#rejectcertificatetransferrequestrequesttypedef)
   - [RelatedResourceTypeDef](#relatedresourcetypedef)
-  - [RemoveThingFromBillingGroupRequestTypeDef](#removethingfrombillinggrouprequesttypedef)
-  - [RemoveThingFromThingGroupRequestTypeDef](#removethingfromthinggrouprequesttypedef)
+  - [RemoveThingFromBillingGroupRequestRequestTypeDef](#removethingfrombillinggrouprequestrequesttypedef)
+  - [RemoveThingFromThingGroupRequestRequestTypeDef](#removethingfromthinggrouprequestrequesttypedef)
   - [ReplaceDefaultPolicyVersionParamsTypeDef](#replacedefaultpolicyversionparamstypedef)
-  - [ReplaceTopicRuleRequestTypeDef](#replacetopicrulerequesttypedef)
+  - [ReplaceTopicRuleRequestRequestTypeDef](#replacetopicrulerequestrequesttypedef)
   - [RepublishActionTypeDef](#republishactiontypedef)
   - [ResourceIdentifierTypeDef](#resourceidentifiertypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
@@ -451,47 +451,47 @@ type annotations stubs module
   - [S3LocationTypeDef](#s3locationtypedef)
   - [SalesforceActionTypeDef](#salesforceactiontypedef)
   - [ScheduledAuditMetadataTypeDef](#scheduledauditmetadatatypedef)
-  - [SearchIndexRequestTypeDef](#searchindexrequesttypedef)
-  - [SearchIndexResponseResponseTypeDef](#searchindexresponseresponsetypedef)
+  - [SearchIndexRequestRequestTypeDef](#searchindexrequestrequesttypedef)
+  - [SearchIndexResponseTypeDef](#searchindexresponsetypedef)
   - [SecurityProfileIdentifierTypeDef](#securityprofileidentifiertypedef)
   - [SecurityProfileTargetMappingTypeDef](#securityprofiletargetmappingtypedef)
   - [SecurityProfileTargetTypeDef](#securityprofiletargettypedef)
   - [ServerCertificateSummaryTypeDef](#servercertificatesummarytypedef)
-  - [SetDefaultAuthorizerRequestTypeDef](#setdefaultauthorizerrequesttypedef)
-  - [SetDefaultAuthorizerResponseResponseTypeDef](#setdefaultauthorizerresponseresponsetypedef)
-  - [SetDefaultPolicyVersionRequestTypeDef](#setdefaultpolicyversionrequesttypedef)
-  - [SetLoggingOptionsRequestTypeDef](#setloggingoptionsrequesttypedef)
-  - [SetV2LoggingLevelRequestTypeDef](#setv2logginglevelrequesttypedef)
-  - [SetV2LoggingOptionsRequestTypeDef](#setv2loggingoptionsrequesttypedef)
+  - [SetDefaultAuthorizerRequestRequestTypeDef](#setdefaultauthorizerrequestrequesttypedef)
+  - [SetDefaultAuthorizerResponseTypeDef](#setdefaultauthorizerresponsetypedef)
+  - [SetDefaultPolicyVersionRequestRequestTypeDef](#setdefaultpolicyversionrequestrequesttypedef)
+  - [SetLoggingOptionsRequestRequestTypeDef](#setloggingoptionsrequestrequesttypedef)
+  - [SetV2LoggingLevelRequestRequestTypeDef](#setv2logginglevelrequestrequesttypedef)
+  - [SetV2LoggingOptionsRequestRequestTypeDef](#setv2loggingoptionsrequestrequesttypedef)
   - [SigV4AuthorizationTypeDef](#sigv4authorizationtypedef)
   - [SigningProfileParameterTypeDef](#signingprofileparametertypedef)
   - [SnsActionTypeDef](#snsactiontypedef)
   - [SqsActionTypeDef](#sqsactiontypedef)
-  - [StartAuditMitigationActionsTaskRequestTypeDef](#startauditmitigationactionstaskrequesttypedef)
-  - [StartAuditMitigationActionsTaskResponseResponseTypeDef](#startauditmitigationactionstaskresponseresponsetypedef)
-  - [StartDetectMitigationActionsTaskRequestTypeDef](#startdetectmitigationactionstaskrequesttypedef)
-  - [StartDetectMitigationActionsTaskResponseResponseTypeDef](#startdetectmitigationactionstaskresponseresponsetypedef)
-  - [StartOnDemandAuditTaskRequestTypeDef](#startondemandaudittaskrequesttypedef)
-  - [StartOnDemandAuditTaskResponseResponseTypeDef](#startondemandaudittaskresponseresponsetypedef)
+  - [StartAuditMitigationActionsTaskRequestRequestTypeDef](#startauditmitigationactionstaskrequestrequesttypedef)
+  - [StartAuditMitigationActionsTaskResponseTypeDef](#startauditmitigationactionstaskresponsetypedef)
+  - [StartDetectMitigationActionsTaskRequestRequestTypeDef](#startdetectmitigationactionstaskrequestrequesttypedef)
+  - [StartDetectMitigationActionsTaskResponseTypeDef](#startdetectmitigationactionstaskresponsetypedef)
+  - [StartOnDemandAuditTaskRequestRequestTypeDef](#startondemandaudittaskrequestrequesttypedef)
+  - [StartOnDemandAuditTaskResponseTypeDef](#startondemandaudittaskresponsetypedef)
   - [StartSigningJobParameterTypeDef](#startsigningjobparametertypedef)
-  - [StartThingRegistrationTaskRequestTypeDef](#startthingregistrationtaskrequesttypedef)
-  - [StartThingRegistrationTaskResponseResponseTypeDef](#startthingregistrationtaskresponseresponsetypedef)
+  - [StartThingRegistrationTaskRequestRequestTypeDef](#startthingregistrationtaskrequestrequesttypedef)
+  - [StartThingRegistrationTaskResponseTypeDef](#startthingregistrationtaskresponsetypedef)
   - [StatisticalThresholdTypeDef](#statisticalthresholdtypedef)
   - [StatisticsTypeDef](#statisticstypedef)
   - [StepFunctionsActionTypeDef](#stepfunctionsactiontypedef)
-  - [StopThingRegistrationTaskRequestTypeDef](#stopthingregistrationtaskrequesttypedef)
+  - [StopThingRegistrationTaskRequestRequestTypeDef](#stopthingregistrationtaskrequestrequesttypedef)
   - [StreamFileTypeDef](#streamfiletypedef)
   - [StreamInfoTypeDef](#streaminfotypedef)
   - [StreamSummaryTypeDef](#streamsummarytypedef)
   - [StreamTypeDef](#streamtypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TaskStatisticsForAuditCheckTypeDef](#taskstatisticsforauditchecktypedef)
   - [TaskStatisticsTypeDef](#taskstatisticstypedef)
-  - [TestAuthorizationRequestTypeDef](#testauthorizationrequesttypedef)
-  - [TestAuthorizationResponseResponseTypeDef](#testauthorizationresponseresponsetypedef)
-  - [TestInvokeAuthorizerRequestTypeDef](#testinvokeauthorizerrequesttypedef)
-  - [TestInvokeAuthorizerResponseResponseTypeDef](#testinvokeauthorizerresponseresponsetypedef)
+  - [TestAuthorizationRequestRequestTypeDef](#testauthorizationrequestrequesttypedef)
+  - [TestAuthorizationResponseTypeDef](#testauthorizationresponsetypedef)
+  - [TestInvokeAuthorizerRequestRequestTypeDef](#testinvokeauthorizerrequestrequesttypedef)
+  - [TestInvokeAuthorizerResponseTypeDef](#testinvokeauthorizerresponsetypedef)
   - [ThingAttributeTypeDef](#thingattributetypedef)
   - [ThingConnectivityTypeDef](#thingconnectivitytypedef)
   - [ThingDocumentTypeDef](#thingdocumenttypedef)
@@ -514,49 +514,49 @@ type annotations stubs module
   - [TopicRuleListItemTypeDef](#topicrulelistitemtypedef)
   - [TopicRulePayloadTypeDef](#topicrulepayloadtypedef)
   - [TopicRuleTypeDef](#topicruletypedef)
-  - [TransferCertificateRequestTypeDef](#transfercertificaterequesttypedef)
-  - [TransferCertificateResponseResponseTypeDef](#transfercertificateresponseresponsetypedef)
+  - [TransferCertificateRequestRequestTypeDef](#transfercertificaterequestrequesttypedef)
+  - [TransferCertificateResponseTypeDef](#transfercertificateresponsetypedef)
   - [TransferDataTypeDef](#transferdatatypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateAccountAuditConfigurationRequestTypeDef](#updateaccountauditconfigurationrequesttypedef)
-  - [UpdateAuditSuppressionRequestTypeDef](#updateauditsuppressionrequesttypedef)
-  - [UpdateAuthorizerRequestTypeDef](#updateauthorizerrequesttypedef)
-  - [UpdateAuthorizerResponseResponseTypeDef](#updateauthorizerresponseresponsetypedef)
-  - [UpdateBillingGroupRequestTypeDef](#updatebillinggrouprequesttypedef)
-  - [UpdateBillingGroupResponseResponseTypeDef](#updatebillinggroupresponseresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateAccountAuditConfigurationRequestRequestTypeDef](#updateaccountauditconfigurationrequestrequesttypedef)
+  - [UpdateAuditSuppressionRequestRequestTypeDef](#updateauditsuppressionrequestrequesttypedef)
+  - [UpdateAuthorizerRequestRequestTypeDef](#updateauthorizerrequestrequesttypedef)
+  - [UpdateAuthorizerResponseTypeDef](#updateauthorizerresponsetypedef)
+  - [UpdateBillingGroupRequestRequestTypeDef](#updatebillinggrouprequestrequesttypedef)
+  - [UpdateBillingGroupResponseTypeDef](#updatebillinggroupresponsetypedef)
   - [UpdateCACertificateParamsTypeDef](#updatecacertificateparamstypedef)
-  - [UpdateCACertificateRequestTypeDef](#updatecacertificaterequesttypedef)
-  - [UpdateCertificateRequestTypeDef](#updatecertificaterequesttypedef)
-  - [UpdateCustomMetricRequestTypeDef](#updatecustommetricrequesttypedef)
-  - [UpdateCustomMetricResponseResponseTypeDef](#updatecustommetricresponseresponsetypedef)
+  - [UpdateCACertificateRequestRequestTypeDef](#updatecacertificaterequestrequesttypedef)
+  - [UpdateCertificateRequestRequestTypeDef](#updatecertificaterequestrequesttypedef)
+  - [UpdateCustomMetricRequestRequestTypeDef](#updatecustommetricrequestrequesttypedef)
+  - [UpdateCustomMetricResponseTypeDef](#updatecustommetricresponsetypedef)
   - [UpdateDeviceCertificateParamsTypeDef](#updatedevicecertificateparamstypedef)
-  - [UpdateDimensionRequestTypeDef](#updatedimensionrequesttypedef)
-  - [UpdateDimensionResponseResponseTypeDef](#updatedimensionresponseresponsetypedef)
-  - [UpdateDomainConfigurationRequestTypeDef](#updatedomainconfigurationrequesttypedef)
-  - [UpdateDomainConfigurationResponseResponseTypeDef](#updatedomainconfigurationresponseresponsetypedef)
-  - [UpdateDynamicThingGroupRequestTypeDef](#updatedynamicthinggrouprequesttypedef)
-  - [UpdateDynamicThingGroupResponseResponseTypeDef](#updatedynamicthinggroupresponseresponsetypedef)
-  - [UpdateEventConfigurationsRequestTypeDef](#updateeventconfigurationsrequesttypedef)
-  - [UpdateIndexingConfigurationRequestTypeDef](#updateindexingconfigurationrequesttypedef)
-  - [UpdateJobRequestTypeDef](#updatejobrequesttypedef)
-  - [UpdateMitigationActionRequestTypeDef](#updatemitigationactionrequesttypedef)
-  - [UpdateMitigationActionResponseResponseTypeDef](#updatemitigationactionresponseresponsetypedef)
-  - [UpdateProvisioningTemplateRequestTypeDef](#updateprovisioningtemplaterequesttypedef)
-  - [UpdateRoleAliasRequestTypeDef](#updaterolealiasrequesttypedef)
-  - [UpdateRoleAliasResponseResponseTypeDef](#updaterolealiasresponseresponsetypedef)
-  - [UpdateScheduledAuditRequestTypeDef](#updatescheduledauditrequesttypedef)
-  - [UpdateScheduledAuditResponseResponseTypeDef](#updatescheduledauditresponseresponsetypedef)
-  - [UpdateSecurityProfileRequestTypeDef](#updatesecurityprofilerequesttypedef)
-  - [UpdateSecurityProfileResponseResponseTypeDef](#updatesecurityprofileresponseresponsetypedef)
-  - [UpdateStreamRequestTypeDef](#updatestreamrequesttypedef)
-  - [UpdateStreamResponseResponseTypeDef](#updatestreamresponseresponsetypedef)
-  - [UpdateThingGroupRequestTypeDef](#updatethinggrouprequesttypedef)
-  - [UpdateThingGroupResponseResponseTypeDef](#updatethinggroupresponseresponsetypedef)
-  - [UpdateThingGroupsForThingRequestTypeDef](#updatethinggroupsforthingrequesttypedef)
-  - [UpdateThingRequestTypeDef](#updatethingrequesttypedef)
-  - [UpdateTopicRuleDestinationRequestTypeDef](#updatetopicruledestinationrequesttypedef)
-  - [ValidateSecurityProfileBehaviorsRequestTypeDef](#validatesecurityprofilebehaviorsrequesttypedef)
-  - [ValidateSecurityProfileBehaviorsResponseResponseTypeDef](#validatesecurityprofilebehaviorsresponseresponsetypedef)
+  - [UpdateDimensionRequestRequestTypeDef](#updatedimensionrequestrequesttypedef)
+  - [UpdateDimensionResponseTypeDef](#updatedimensionresponsetypedef)
+  - [UpdateDomainConfigurationRequestRequestTypeDef](#updatedomainconfigurationrequestrequesttypedef)
+  - [UpdateDomainConfigurationResponseTypeDef](#updatedomainconfigurationresponsetypedef)
+  - [UpdateDynamicThingGroupRequestRequestTypeDef](#updatedynamicthinggrouprequestrequesttypedef)
+  - [UpdateDynamicThingGroupResponseTypeDef](#updatedynamicthinggroupresponsetypedef)
+  - [UpdateEventConfigurationsRequestRequestTypeDef](#updateeventconfigurationsrequestrequesttypedef)
+  - [UpdateIndexingConfigurationRequestRequestTypeDef](#updateindexingconfigurationrequestrequesttypedef)
+  - [UpdateJobRequestRequestTypeDef](#updatejobrequestrequesttypedef)
+  - [UpdateMitigationActionRequestRequestTypeDef](#updatemitigationactionrequestrequesttypedef)
+  - [UpdateMitigationActionResponseTypeDef](#updatemitigationactionresponsetypedef)
+  - [UpdateProvisioningTemplateRequestRequestTypeDef](#updateprovisioningtemplaterequestrequesttypedef)
+  - [UpdateRoleAliasRequestRequestTypeDef](#updaterolealiasrequestrequesttypedef)
+  - [UpdateRoleAliasResponseTypeDef](#updaterolealiasresponsetypedef)
+  - [UpdateScheduledAuditRequestRequestTypeDef](#updatescheduledauditrequestrequesttypedef)
+  - [UpdateScheduledAuditResponseTypeDef](#updatescheduledauditresponsetypedef)
+  - [UpdateSecurityProfileRequestRequestTypeDef](#updatesecurityprofilerequestrequesttypedef)
+  - [UpdateSecurityProfileResponseTypeDef](#updatesecurityprofileresponsetypedef)
+  - [UpdateStreamRequestRequestTypeDef](#updatestreamrequestrequesttypedef)
+  - [UpdateStreamResponseTypeDef](#updatestreamresponsetypedef)
+  - [UpdateThingGroupRequestRequestTypeDef](#updatethinggrouprequestrequesttypedef)
+  - [UpdateThingGroupResponseTypeDef](#updatethinggroupresponsetypedef)
+  - [UpdateThingGroupsForThingRequestRequestTypeDef](#updatethinggroupsforthingrequestrequesttypedef)
+  - [UpdateThingRequestRequestTypeDef](#updatethingrequestrequesttypedef)
+  - [UpdateTopicRuleDestinationRequestRequestTypeDef](#updatetopicruledestinationrequestrequesttypedef)
+  - [ValidateSecurityProfileBehaviorsRequestRequestTypeDef](#validatesecurityprofilebehaviorsrequestrequesttypedef)
+  - [ValidateSecurityProfileBehaviorsResponseTypeDef](#validatesecurityprofilebehaviorsresponsetypedef)
   - [ValidationErrorTypeDef](#validationerrortypedef)
   - [ViolationEventAdditionalInfoTypeDef](#violationeventadditionalinfotypedef)
   - [ViolationEventOccurrenceRangeTypeDef](#violationeventoccurrencerangetypedef)
@@ -591,10 +591,10 @@ Required fields:
 - `thresholdPercentage`: `float`
 - `minNumberOfExecutedThings`: `int`
 
-## AcceptCertificateTransferRequestTypeDef
+## AcceptCertificateTransferRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import AcceptCertificateTransferRequestTypeDef
+from mypy_boto3_iot.type_defs import AcceptCertificateTransferRequestRequestTypeDef
 ```
 
 Required fields:
@@ -663,10 +663,10 @@ Optional fields:
 - `lastViolationTime`: `datetime`
 - `violationStartTime`: `datetime`
 
-## AddThingToBillingGroupRequestTypeDef
+## AddThingToBillingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import AddThingToBillingGroupRequestTypeDef
+from mypy_boto3_iot.type_defs import AddThingToBillingGroupRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -676,10 +676,10 @@ Optional fields:
 - `thingName`: `str`
 - `thingArn`: `str`
 
-## AddThingToThingGroupRequestTypeDef
+## AddThingToThingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import AddThingToThingGroupRequestTypeDef
+from mypy_boto3_iot.type_defs import AddThingToThingGroupRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -769,10 +769,10 @@ Optional fields:
 - `doubleValue`: `str`
 - `booleanValue`: `str`
 
-## AssociateTargetsWithJobRequestTypeDef
+## AssociateTargetsWithJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import AssociateTargetsWithJobRequestTypeDef
+from mypy_boto3_iot.type_defs import AssociateTargetsWithJobRequestRequestTypeDef
 ```
 
 Required fields:
@@ -785,10 +785,10 @@ Optional fields:
 - `comment`: `str`
 - `namespaceId`: `str`
 
-## AssociateTargetsWithJobResponseResponseTypeDef
+## AssociateTargetsWithJobResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import AssociateTargetsWithJobResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import AssociateTargetsWithJobResponseTypeDef
 ```
 
 Required fields:
@@ -799,10 +799,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AttachPolicyRequestTypeDef
+## AttachPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import AttachPolicyRequestTypeDef
+from mypy_boto3_iot.type_defs import AttachPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -810,10 +810,10 @@ Required fields:
 - `policyName`: `str`
 - `target`: `str`
 
-## AttachPrincipalPolicyRequestTypeDef
+## AttachPrincipalPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import AttachPrincipalPolicyRequestTypeDef
+from mypy_boto3_iot.type_defs import AttachPrincipalPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -821,10 +821,10 @@ Required fields:
 - `policyName`: `str`
 - `principal`: `str`
 
-## AttachSecurityProfileRequestTypeDef
+## AttachSecurityProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import AttachSecurityProfileRequestTypeDef
+from mypy_boto3_iot.type_defs import AttachSecurityProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -832,10 +832,10 @@ Required fields:
 - `securityProfileName`: `str`
 - `securityProfileTargetArn`: `str`
 
-## AttachThingPrincipalRequestTypeDef
+## AttachThingPrincipalRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import AttachThingPrincipalRequestTypeDef
+from mypy_boto3_iot.type_defs import AttachThingPrincipalRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1247,50 +1247,50 @@ Optional fields:
 - `status`: [CACertificateStatusType](./literals.md#cacertificatestatustype)
 - `creationDate`: `datetime`
 
-## CancelAuditMitigationActionsTaskRequestTypeDef
+## CancelAuditMitigationActionsTaskRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CancelAuditMitigationActionsTaskRequestTypeDef
+from mypy_boto3_iot.type_defs import CancelAuditMitigationActionsTaskRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `taskId`: `str`
 
-## CancelAuditTaskRequestTypeDef
+## CancelAuditTaskRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CancelAuditTaskRequestTypeDef
+from mypy_boto3_iot.type_defs import CancelAuditTaskRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `taskId`: `str`
 
-## CancelCertificateTransferRequestTypeDef
+## CancelCertificateTransferRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CancelCertificateTransferRequestTypeDef
+from mypy_boto3_iot.type_defs import CancelCertificateTransferRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `certificateId`: `str`
 
-## CancelDetectMitigationActionsTaskRequestTypeDef
+## CancelDetectMitigationActionsTaskRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CancelDetectMitigationActionsTaskRequestTypeDef
+from mypy_boto3_iot.type_defs import CancelDetectMitigationActionsTaskRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `taskId`: `str`
 
-## CancelJobExecutionRequestTypeDef
+## CancelJobExecutionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CancelJobExecutionRequestTypeDef
+from mypy_boto3_iot.type_defs import CancelJobExecutionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1304,10 +1304,10 @@ Optional fields:
 - `expectedVersion`: `int`
 - `statusDetails`: `Dict`\[`str`, `str`\]
 
-## CancelJobRequestTypeDef
+## CancelJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CancelJobRequestTypeDef
+from mypy_boto3_iot.type_defs import CancelJobRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1320,10 +1320,10 @@ Optional fields:
 - `comment`: `str`
 - `force`: `bool`
 
-## CancelJobResponseResponseTypeDef
+## CancelJobResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CancelJobResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CancelJobResponseTypeDef
 ```
 
 Required fields:
@@ -1470,20 +1470,20 @@ Optional fields:
 
 - `Enabled`: `bool`
 
-## ConfirmTopicRuleDestinationRequestTypeDef
+## ConfirmTopicRuleDestinationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ConfirmTopicRuleDestinationRequestTypeDef
+from mypy_boto3_iot.type_defs import ConfirmTopicRuleDestinationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `confirmationToken`: `str`
 
-## CreateAuditSuppressionRequestTypeDef
+## CreateAuditSuppressionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateAuditSuppressionRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateAuditSuppressionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1499,10 +1499,10 @@ Optional fields:
 - `suppressIndefinitely`: `bool`
 - `description`: `str`
 
-## CreateAuthorizerRequestTypeDef
+## CreateAuthorizerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateAuthorizerRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateAuthorizerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1518,10 +1518,10 @@ Optional fields:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `signingDisabled`: `bool`
 
-## CreateAuthorizerResponseResponseTypeDef
+## CreateAuthorizerResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateAuthorizerResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreateAuthorizerResponseTypeDef
 ```
 
 Required fields:
@@ -1531,10 +1531,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateBillingGroupRequestTypeDef
+## CreateBillingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateBillingGroupRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateBillingGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1547,10 +1547,10 @@ Optional fields:
   [BillingGroupPropertiesTypeDef](./type_defs.md#billinggrouppropertiestypedef)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateBillingGroupResponseResponseTypeDef
+## CreateBillingGroupResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateBillingGroupResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreateBillingGroupResponseTypeDef
 ```
 
 Required fields:
@@ -1561,10 +1561,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateCertificateFromCsrRequestTypeDef
+## CreateCertificateFromCsrRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateCertificateFromCsrRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateCertificateFromCsrRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1575,10 +1575,10 @@ Optional fields:
 
 - `setAsActive`: `bool`
 
-## CreateCertificateFromCsrResponseResponseTypeDef
+## CreateCertificateFromCsrResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateCertificateFromCsrResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreateCertificateFromCsrResponseTypeDef
 ```
 
 Required fields:
@@ -1589,10 +1589,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateCustomMetricRequestTypeDef
+## CreateCustomMetricRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateCustomMetricRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateCustomMetricRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1606,10 +1606,10 @@ Optional fields:
 - `displayName`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateCustomMetricResponseResponseTypeDef
+## CreateCustomMetricResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateCustomMetricResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreateCustomMetricResponseTypeDef
 ```
 
 Required fields:
@@ -1619,10 +1619,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDimensionRequestTypeDef
+## CreateDimensionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateDimensionRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateDimensionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1637,10 +1637,10 @@ Optional fields:
 
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateDimensionResponseResponseTypeDef
+## CreateDimensionResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateDimensionResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreateDimensionResponseTypeDef
 ```
 
 Required fields:
@@ -1650,10 +1650,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDomainConfigurationRequestTypeDef
+## CreateDomainConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateDomainConfigurationRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateDomainConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1670,10 +1670,10 @@ Optional fields:
 - `serviceType`: [ServiceTypeType](./literals.md#servicetypetype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateDomainConfigurationResponseResponseTypeDef
+## CreateDomainConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateDomainConfigurationResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreateDomainConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -1683,10 +1683,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDynamicThingGroupRequestTypeDef
+## CreateDynamicThingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateDynamicThingGroupRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateDynamicThingGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1702,10 +1702,10 @@ Optional fields:
 - `queryVersion`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateDynamicThingGroupResponseResponseTypeDef
+## CreateDynamicThingGroupResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateDynamicThingGroupResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreateDynamicThingGroupResponseTypeDef
 ```
 
 Required fields:
@@ -1719,10 +1719,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateJobRequestTypeDef
+## CreateJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateJobRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateJobRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1746,10 +1746,10 @@ Optional fields:
 - `namespaceId`: `str`
 - `jobTemplateArn`: `str`
 
-## CreateJobResponseResponseTypeDef
+## CreateJobResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateJobResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreateJobResponseTypeDef
 ```
 
 Required fields:
@@ -1760,10 +1760,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateJobTemplateRequestTypeDef
+## CreateJobTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateJobTemplateRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateJobTemplateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1784,10 +1784,10 @@ Optional fields:
 - `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateJobTemplateResponseResponseTypeDef
+## CreateJobTemplateResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateJobTemplateResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreateJobTemplateResponseTypeDef
 ```
 
 Required fields:
@@ -1797,20 +1797,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateKeysAndCertificateRequestTypeDef
+## CreateKeysAndCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateKeysAndCertificateRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateKeysAndCertificateRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `setAsActive`: `bool`
 
-## CreateKeysAndCertificateResponseResponseTypeDef
+## CreateKeysAndCertificateResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateKeysAndCertificateResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreateKeysAndCertificateResponseTypeDef
 ```
 
 Required fields:
@@ -1822,10 +1822,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateMitigationActionRequestTypeDef
+## CreateMitigationActionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateMitigationActionRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateMitigationActionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1839,10 +1839,10 @@ Optional fields:
 
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateMitigationActionResponseResponseTypeDef
+## CreateMitigationActionResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateMitigationActionResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreateMitigationActionResponseTypeDef
 ```
 
 Required fields:
@@ -1852,10 +1852,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateOTAUpdateRequestTypeDef
+## CreateOTAUpdateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateOTAUpdateRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateOTAUpdateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1882,10 +1882,10 @@ Optional fields:
 - `additionalParameters`: `Dict`\[`str`, `str`\]
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateOTAUpdateResponseResponseTypeDef
+## CreateOTAUpdateResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateOTAUpdateResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreateOTAUpdateResponseTypeDef
 ```
 
 Required fields:
@@ -1898,10 +1898,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePolicyRequestTypeDef
+## CreatePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreatePolicyRequestTypeDef
+from mypy_boto3_iot.type_defs import CreatePolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1913,10 +1913,10 @@ Optional fields:
 
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreatePolicyResponseResponseTypeDef
+## CreatePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreatePolicyResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreatePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -1928,10 +1928,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePolicyVersionRequestTypeDef
+## CreatePolicyVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreatePolicyVersionRequestTypeDef
+from mypy_boto3_iot.type_defs import CreatePolicyVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1943,10 +1943,10 @@ Optional fields:
 
 - `setAsDefault`: `bool`
 
-## CreatePolicyVersionResponseResponseTypeDef
+## CreatePolicyVersionResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreatePolicyVersionResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreatePolicyVersionResponseTypeDef
 ```
 
 Required fields:
@@ -1958,20 +1958,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateProvisioningClaimRequestTypeDef
+## CreateProvisioningClaimRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateProvisioningClaimRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateProvisioningClaimRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `templateName`: `str`
 
-## CreateProvisioningClaimResponseResponseTypeDef
+## CreateProvisioningClaimResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateProvisioningClaimResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreateProvisioningClaimResponseTypeDef
 ```
 
 Required fields:
@@ -1983,10 +1983,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateProvisioningTemplateRequestTypeDef
+## CreateProvisioningTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateProvisioningTemplateRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateProvisioningTemplateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2003,10 +2003,10 @@ Optional fields:
   [ProvisioningHookTypeDef](./type_defs.md#provisioninghooktypedef)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateProvisioningTemplateResponseResponseTypeDef
+## CreateProvisioningTemplateResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateProvisioningTemplateResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreateProvisioningTemplateResponseTypeDef
 ```
 
 Required fields:
@@ -2017,10 +2017,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateProvisioningTemplateVersionRequestTypeDef
+## CreateProvisioningTemplateVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateProvisioningTemplateVersionRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateProvisioningTemplateVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2032,10 +2032,10 @@ Optional fields:
 
 - `setAsDefault`: `bool`
 
-## CreateProvisioningTemplateVersionResponseResponseTypeDef
+## CreateProvisioningTemplateVersionResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateProvisioningTemplateVersionResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreateProvisioningTemplateVersionResponseTypeDef
 ```
 
 Required fields:
@@ -2047,10 +2047,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRoleAliasRequestTypeDef
+## CreateRoleAliasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateRoleAliasRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateRoleAliasRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2063,10 +2063,10 @@ Optional fields:
 - `credentialDurationSeconds`: `int`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateRoleAliasResponseResponseTypeDef
+## CreateRoleAliasResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateRoleAliasResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreateRoleAliasResponseTypeDef
 ```
 
 Required fields:
@@ -2076,10 +2076,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateScheduledAuditRequestTypeDef
+## CreateScheduledAuditRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateScheduledAuditRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateScheduledAuditRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2094,10 +2094,10 @@ Optional fields:
 - `dayOfWeek`: [DayOfWeekType](./literals.md#dayofweektype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateScheduledAuditResponseResponseTypeDef
+## CreateScheduledAuditResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateScheduledAuditResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreateScheduledAuditResponseTypeDef
 ```
 
 Required fields:
@@ -2106,10 +2106,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSecurityProfileRequestTypeDef
+## CreateSecurityProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateSecurityProfileRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateSecurityProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2128,10 +2128,10 @@ Optional fields:
   `List`\[[MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef)\]
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateSecurityProfileResponseResponseTypeDef
+## CreateSecurityProfileResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateSecurityProfileResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreateSecurityProfileResponseTypeDef
 ```
 
 Required fields:
@@ -2141,10 +2141,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateStreamRequestTypeDef
+## CreateStreamRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateStreamRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateStreamRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2158,10 +2158,10 @@ Optional fields:
 - `description`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateStreamResponseResponseTypeDef
+## CreateStreamResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateStreamResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreateStreamResponseTypeDef
 ```
 
 Required fields:
@@ -2173,10 +2173,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateThingGroupRequestTypeDef
+## CreateThingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateThingGroupRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateThingGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2190,10 +2190,10 @@ Optional fields:
   [ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateThingGroupResponseResponseTypeDef
+## CreateThingGroupResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateThingGroupResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreateThingGroupResponseTypeDef
 ```
 
 Required fields:
@@ -2204,10 +2204,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateThingRequestTypeDef
+## CreateThingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateThingRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateThingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2221,10 +2221,10 @@ Optional fields:
   [AttributePayloadTypeDef](./type_defs.md#attributepayloadtypedef)
 - `billingGroupName`: `str`
 
-## CreateThingResponseResponseTypeDef
+## CreateThingResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateThingResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreateThingResponseTypeDef
 ```
 
 Required fields:
@@ -2235,10 +2235,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateThingTypeRequestTypeDef
+## CreateThingTypeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateThingTypeRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateThingTypeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2251,10 +2251,10 @@ Optional fields:
   [ThingTypePropertiesTypeDef](./type_defs.md#thingtypepropertiestypedef)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateThingTypeResponseResponseTypeDef
+## CreateThingTypeResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateThingTypeResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreateThingTypeResponseTypeDef
 ```
 
 Required fields:
@@ -2265,10 +2265,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTopicRuleDestinationRequestTypeDef
+## CreateTopicRuleDestinationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateTopicRuleDestinationRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateTopicRuleDestinationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2276,10 +2276,10 @@ Required fields:
 - `destinationConfiguration`:
   [TopicRuleDestinationConfigurationTypeDef](./type_defs.md#topicruledestinationconfigurationtypedef)
 
-## CreateTopicRuleDestinationResponseResponseTypeDef
+## CreateTopicRuleDestinationResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateTopicRuleDestinationResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import CreateTopicRuleDestinationResponseTypeDef
 ```
 
 Required fields:
@@ -2289,10 +2289,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTopicRuleRequestTypeDef
+## CreateTopicRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import CreateTopicRuleRequestTypeDef
+from mypy_boto3_iot.type_defs import CreateTopicRuleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2320,20 +2320,20 @@ Optional fields:
 - `hashAlgorithm`: `str`
 - `signatureAlgorithm`: `str`
 
-## DeleteAccountAuditConfigurationRequestTypeDef
+## DeleteAccountAuditConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteAccountAuditConfigurationRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteAccountAuditConfigurationRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `deleteScheduledAudits`: `bool`
 
-## DeleteAuditSuppressionRequestTypeDef
+## DeleteAuditSuppressionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteAuditSuppressionRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteAuditSuppressionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2342,20 +2342,20 @@ Required fields:
 - `resourceIdentifier`:
   [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
 
-## DeleteAuthorizerRequestTypeDef
+## DeleteAuthorizerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteAuthorizerRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteAuthorizerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `authorizerName`: `str`
 
-## DeleteBillingGroupRequestTypeDef
+## DeleteBillingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteBillingGroupRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteBillingGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2366,20 +2366,20 @@ Optional fields:
 
 - `expectedVersion`: `int`
 
-## DeleteCACertificateRequestTypeDef
+## DeleteCACertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteCACertificateRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteCACertificateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `certificateId`: `str`
 
-## DeleteCertificateRequestTypeDef
+## DeleteCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteCertificateRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2390,40 +2390,40 @@ Optional fields:
 
 - `forceDelete`: `bool`
 
-## DeleteCustomMetricRequestTypeDef
+## DeleteCustomMetricRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteCustomMetricRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteCustomMetricRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `metricName`: `str`
 
-## DeleteDimensionRequestTypeDef
+## DeleteDimensionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteDimensionRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteDimensionRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `name`: `str`
 
-## DeleteDomainConfigurationRequestTypeDef
+## DeleteDomainConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteDomainConfigurationRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteDomainConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `domainConfigurationName`: `str`
 
-## DeleteDynamicThingGroupRequestTypeDef
+## DeleteDynamicThingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteDynamicThingGroupRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteDynamicThingGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2434,10 +2434,10 @@ Optional fields:
 
 - `expectedVersion`: `int`
 
-## DeleteJobExecutionRequestTypeDef
+## DeleteJobExecutionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteJobExecutionRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteJobExecutionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2451,10 +2451,10 @@ Optional fields:
 - `force`: `bool`
 - `namespaceId`: `str`
 
-## DeleteJobRequestTypeDef
+## DeleteJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteJobRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteJobRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2466,30 +2466,30 @@ Optional fields:
 - `force`: `bool`
 - `namespaceId`: `str`
 
-## DeleteJobTemplateRequestTypeDef
+## DeleteJobTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteJobTemplateRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteJobTemplateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `jobTemplateId`: `str`
 
-## DeleteMitigationActionRequestTypeDef
+## DeleteMitigationActionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteMitigationActionRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteMitigationActionRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `actionName`: `str`
 
-## DeleteOTAUpdateRequestTypeDef
+## DeleteOTAUpdateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteOTAUpdateRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteOTAUpdateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2501,20 +2501,20 @@ Optional fields:
 - `deleteStream`: `bool`
 - `forceDeleteAWSJob`: `bool`
 
-## DeletePolicyRequestTypeDef
+## DeletePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeletePolicyRequestTypeDef
+from mypy_boto3_iot.type_defs import DeletePolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `policyName`: `str`
 
-## DeletePolicyVersionRequestTypeDef
+## DeletePolicyVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeletePolicyVersionRequestTypeDef
+from mypy_boto3_iot.type_defs import DeletePolicyVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2522,20 +2522,20 @@ Required fields:
 - `policyName`: `str`
 - `policyVersionId`: `str`
 
-## DeleteProvisioningTemplateRequestTypeDef
+## DeleteProvisioningTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteProvisioningTemplateRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteProvisioningTemplateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `templateName`: `str`
 
-## DeleteProvisioningTemplateVersionRequestTypeDef
+## DeleteProvisioningTemplateVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteProvisioningTemplateVersionRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteProvisioningTemplateVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2543,30 +2543,30 @@ Required fields:
 - `templateName`: `str`
 - `versionId`: `int`
 
-## DeleteRoleAliasRequestTypeDef
+## DeleteRoleAliasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteRoleAliasRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteRoleAliasRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `roleAlias`: `str`
 
-## DeleteScheduledAuditRequestTypeDef
+## DeleteScheduledAuditRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteScheduledAuditRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteScheduledAuditRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `scheduledAuditName`: `str`
 
-## DeleteSecurityProfileRequestTypeDef
+## DeleteSecurityProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteSecurityProfileRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteSecurityProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2577,20 +2577,20 @@ Optional fields:
 
 - `expectedVersion`: `int`
 
-## DeleteStreamRequestTypeDef
+## DeleteStreamRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteStreamRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteStreamRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `streamId`: `str`
 
-## DeleteThingGroupRequestTypeDef
+## DeleteThingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteThingGroupRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteThingGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2601,10 +2601,10 @@ Optional fields:
 
 - `expectedVersion`: `int`
 
-## DeleteThingRequestTypeDef
+## DeleteThingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteThingRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteThingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2615,40 +2615,40 @@ Optional fields:
 
 - `expectedVersion`: `int`
 
-## DeleteThingTypeRequestTypeDef
+## DeleteThingTypeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteThingTypeRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteThingTypeRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `thingTypeName`: `str`
 
-## DeleteTopicRuleDestinationRequestTypeDef
+## DeleteTopicRuleDestinationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteTopicRuleDestinationRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteTopicRuleDestinationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `arn`: `str`
 
-## DeleteTopicRuleRequestTypeDef
+## DeleteTopicRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteTopicRuleRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteTopicRuleRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ruleName`: `str`
 
-## DeleteV2LoggingLevelRequestTypeDef
+## DeleteV2LoggingLevelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeleteV2LoggingLevelRequestTypeDef
+from mypy_boto3_iot.type_defs import DeleteV2LoggingLevelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2667,10 +2667,10 @@ Optional fields:
 - `implicitDeny`: [ImplicitDenyTypeDef](./type_defs.md#implicitdenytypedef)
 - `explicitDeny`: [ExplicitDenyTypeDef](./type_defs.md#explicitdenytypedef)
 
-## DeprecateThingTypeRequestTypeDef
+## DeprecateThingTypeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DeprecateThingTypeRequestTypeDef
+from mypy_boto3_iot.type_defs import DeprecateThingTypeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2681,10 +2681,10 @@ Optional fields:
 
 - `undoDeprecate`: `bool`
 
-## DescribeAccountAuditConfigurationResponseResponseTypeDef
+## DescribeAccountAuditConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeAccountAuditConfigurationResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeAccountAuditConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -2698,20 +2698,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAuditFindingRequestTypeDef
+## DescribeAuditFindingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeAuditFindingRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeAuditFindingRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `findingId`: `str`
 
-## DescribeAuditFindingResponseResponseTypeDef
+## DescribeAuditFindingResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeAuditFindingResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeAuditFindingResponseTypeDef
 ```
 
 Required fields:
@@ -2720,20 +2720,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAuditMitigationActionsTaskRequestTypeDef
+## DescribeAuditMitigationActionsTaskRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeAuditMitigationActionsTaskRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeAuditMitigationActionsTaskRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `taskId`: `str`
 
-## DescribeAuditMitigationActionsTaskResponseResponseTypeDef
+## DescribeAuditMitigationActionsTaskResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeAuditMitigationActionsTaskResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeAuditMitigationActionsTaskResponseTypeDef
 ```
 
 Required fields:
@@ -2752,10 +2752,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAuditSuppressionRequestTypeDef
+## DescribeAuditSuppressionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeAuditSuppressionRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeAuditSuppressionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2764,10 +2764,10 @@ Required fields:
 - `resourceIdentifier`:
   [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
 
-## DescribeAuditSuppressionResponseResponseTypeDef
+## DescribeAuditSuppressionResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeAuditSuppressionResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeAuditSuppressionResponseTypeDef
 ```
 
 Required fields:
@@ -2781,20 +2781,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAuditTaskRequestTypeDef
+## DescribeAuditTaskRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeAuditTaskRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeAuditTaskRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `taskId`: `str`
 
-## DescribeAuditTaskResponseResponseTypeDef
+## DescribeAuditTaskResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeAuditTaskResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeAuditTaskResponseTypeDef
 ```
 
 Required fields:
@@ -2810,20 +2810,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAuthorizerRequestTypeDef
+## DescribeAuthorizerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeAuthorizerRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeAuthorizerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `authorizerName`: `str`
 
-## DescribeAuthorizerResponseResponseTypeDef
+## DescribeAuthorizerResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeAuthorizerResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeAuthorizerResponseTypeDef
 ```
 
 Required fields:
@@ -2833,20 +2833,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBillingGroupRequestTypeDef
+## DescribeBillingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeBillingGroupRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeBillingGroupRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `billingGroupName`: `str`
 
-## DescribeBillingGroupResponseResponseTypeDef
+## DescribeBillingGroupResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeBillingGroupResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeBillingGroupResponseTypeDef
 ```
 
 Required fields:
@@ -2862,20 +2862,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCACertificateRequestTypeDef
+## DescribeCACertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeCACertificateRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeCACertificateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `certificateId`: `str`
 
-## DescribeCACertificateResponseResponseTypeDef
+## DescribeCACertificateResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeCACertificateResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeCACertificateResponseTypeDef
 ```
 
 Required fields:
@@ -2887,20 +2887,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCertificateRequestTypeDef
+## DescribeCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeCertificateRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeCertificateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `certificateId`: `str`
 
-## DescribeCertificateResponseResponseTypeDef
+## DescribeCertificateResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeCertificateResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeCertificateResponseTypeDef
 ```
 
 Required fields:
@@ -2910,20 +2910,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCustomMetricRequestTypeDef
+## DescribeCustomMetricRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeCustomMetricRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeCustomMetricRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `metricName`: `str`
 
-## DescribeCustomMetricResponseResponseTypeDef
+## DescribeCustomMetricResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeCustomMetricResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeCustomMetricResponseTypeDef
 ```
 
 Required fields:
@@ -2937,10 +2937,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDefaultAuthorizerResponseResponseTypeDef
+## DescribeDefaultAuthorizerResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeDefaultAuthorizerResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeDefaultAuthorizerResponseTypeDef
 ```
 
 Required fields:
@@ -2950,20 +2950,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDetectMitigationActionsTaskRequestTypeDef
+## DescribeDetectMitigationActionsTaskRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeDetectMitigationActionsTaskRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeDetectMitigationActionsTaskRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `taskId`: `str`
 
-## DescribeDetectMitigationActionsTaskResponseResponseTypeDef
+## DescribeDetectMitigationActionsTaskResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeDetectMitigationActionsTaskResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeDetectMitigationActionsTaskResponseTypeDef
 ```
 
 Required fields:
@@ -2973,20 +2973,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDimensionRequestTypeDef
+## DescribeDimensionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeDimensionRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeDimensionRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `name`: `str`
 
-## DescribeDimensionResponseResponseTypeDef
+## DescribeDimensionResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeDimensionResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeDimensionResponseTypeDef
 ```
 
 Required fields:
@@ -3001,20 +3001,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDomainConfigurationRequestTypeDef
+## DescribeDomainConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeDomainConfigurationRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeDomainConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `domainConfigurationName`: `str`
 
-## DescribeDomainConfigurationResponseResponseTypeDef
+## DescribeDomainConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeDomainConfigurationResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeDomainConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -3034,20 +3034,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEndpointRequestTypeDef
+## DescribeEndpointRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeEndpointRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeEndpointRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `endpointType`: `str`
 
-## DescribeEndpointResponseResponseTypeDef
+## DescribeEndpointResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeEndpointResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeEndpointResponseTypeDef
 ```
 
 Required fields:
@@ -3056,10 +3056,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEventConfigurationsResponseResponseTypeDef
+## DescribeEventConfigurationsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeEventConfigurationsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeEventConfigurationsResponseTypeDef
 ```
 
 Required fields:
@@ -3071,20 +3071,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeIndexRequestTypeDef
+## DescribeIndexRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeIndexRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeIndexRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `indexName`: `str`
 
-## DescribeIndexResponseResponseTypeDef
+## DescribeIndexResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeIndexResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeIndexResponseTypeDef
 ```
 
 Required fields:
@@ -3095,10 +3095,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeJobExecutionRequestTypeDef
+## DescribeJobExecutionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeJobExecutionRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeJobExecutionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3110,10 +3110,10 @@ Optional fields:
 
 - `executionNumber`: `int`
 
-## DescribeJobExecutionResponseResponseTypeDef
+## DescribeJobExecutionResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeJobExecutionResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeJobExecutionResponseTypeDef
 ```
 
 Required fields:
@@ -3122,20 +3122,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeJobRequestTypeDef
+## DescribeJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeJobRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeJobRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `jobId`: `str`
 
-## DescribeJobResponseResponseTypeDef
+## DescribeJobResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeJobResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeJobResponseTypeDef
 ```
 
 Required fields:
@@ -3145,20 +3145,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeJobTemplateRequestTypeDef
+## DescribeJobTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeJobTemplateRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeJobTemplateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `jobTemplateId`: `str`
 
-## DescribeJobTemplateResponseResponseTypeDef
+## DescribeJobTemplateResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeJobTemplateResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeJobTemplateResponseTypeDef
 ```
 
 Required fields:
@@ -3178,20 +3178,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMitigationActionRequestTypeDef
+## DescribeMitigationActionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeMitigationActionRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeMitigationActionRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `actionName`: `str`
 
-## DescribeMitigationActionResponseResponseTypeDef
+## DescribeMitigationActionResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeMitigationActionResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeMitigationActionResponseTypeDef
 ```
 
 Required fields:
@@ -3209,20 +3209,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeProvisioningTemplateRequestTypeDef
+## DescribeProvisioningTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeProvisioningTemplateRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeProvisioningTemplateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `templateName`: `str`
 
-## DescribeProvisioningTemplateResponseResponseTypeDef
+## DescribeProvisioningTemplateResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeProvisioningTemplateResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeProvisioningTemplateResponseTypeDef
 ```
 
 Required fields:
@@ -3241,10 +3241,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeProvisioningTemplateVersionRequestTypeDef
+## DescribeProvisioningTemplateVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeProvisioningTemplateVersionRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeProvisioningTemplateVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3252,10 +3252,10 @@ Required fields:
 - `templateName`: `str`
 - `versionId`: `int`
 
-## DescribeProvisioningTemplateVersionResponseResponseTypeDef
+## DescribeProvisioningTemplateVersionResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeProvisioningTemplateVersionResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeProvisioningTemplateVersionResponseTypeDef
 ```
 
 Required fields:
@@ -3267,20 +3267,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRoleAliasRequestTypeDef
+## DescribeRoleAliasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeRoleAliasRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeRoleAliasRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `roleAlias`: `str`
 
-## DescribeRoleAliasResponseResponseTypeDef
+## DescribeRoleAliasResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeRoleAliasResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeRoleAliasResponseTypeDef
 ```
 
 Required fields:
@@ -3290,20 +3290,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeScheduledAuditRequestTypeDef
+## DescribeScheduledAuditRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeScheduledAuditRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeScheduledAuditRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `scheduledAuditName`: `str`
 
-## DescribeScheduledAuditResponseResponseTypeDef
+## DescribeScheduledAuditResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeScheduledAuditResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeScheduledAuditResponseTypeDef
 ```
 
 Required fields:
@@ -3317,20 +3317,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSecurityProfileRequestTypeDef
+## DescribeSecurityProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeSecurityProfileRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeSecurityProfileRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `securityProfileName`: `str`
 
-## DescribeSecurityProfileResponseResponseTypeDef
+## DescribeSecurityProfileResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeSecurityProfileResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeSecurityProfileResponseTypeDef
 ```
 
 Required fields:
@@ -3351,20 +3351,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStreamRequestTypeDef
+## DescribeStreamRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeStreamRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeStreamRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `streamId`: `str`
 
-## DescribeStreamResponseResponseTypeDef
+## DescribeStreamResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeStreamResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeStreamResponseTypeDef
 ```
 
 Required fields:
@@ -3373,20 +3373,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeThingGroupRequestTypeDef
+## DescribeThingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeThingGroupRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeThingGroupRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `thingGroupName`: `str`
 
-## DescribeThingGroupResponseResponseTypeDef
+## DescribeThingGroupResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeThingGroupResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeThingGroupResponseTypeDef
 ```
 
 Required fields:
@@ -3406,20 +3406,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeThingRegistrationTaskRequestTypeDef
+## DescribeThingRegistrationTaskRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeThingRegistrationTaskRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeThingRegistrationTaskRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `taskId`: `str`
 
-## DescribeThingRegistrationTaskResponseResponseTypeDef
+## DescribeThingRegistrationTaskResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeThingRegistrationTaskResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeThingRegistrationTaskResponseTypeDef
 ```
 
 Required fields:
@@ -3439,20 +3439,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeThingRequestTypeDef
+## DescribeThingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeThingRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeThingRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `thingName`: `str`
 
-## DescribeThingResponseResponseTypeDef
+## DescribeThingResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeThingResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeThingResponseTypeDef
 ```
 
 Required fields:
@@ -3468,20 +3468,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeThingTypeRequestTypeDef
+## DescribeThingTypeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeThingTypeRequestTypeDef
+from mypy_boto3_iot.type_defs import DescribeThingTypeRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `thingTypeName`: `str`
 
-## DescribeThingTypeResponseResponseTypeDef
+## DescribeThingTypeResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DescribeThingTypeResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import DescribeThingTypeResponseTypeDef
 ```
 
 Required fields:
@@ -3506,10 +3506,10 @@ Optional fields:
 
 - `s3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
 
-## DetachPolicyRequestTypeDef
+## DetachPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DetachPolicyRequestTypeDef
+from mypy_boto3_iot.type_defs import DetachPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3517,10 +3517,10 @@ Required fields:
 - `policyName`: `str`
 - `target`: `str`
 
-## DetachPrincipalPolicyRequestTypeDef
+## DetachPrincipalPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DetachPrincipalPolicyRequestTypeDef
+from mypy_boto3_iot.type_defs import DetachPrincipalPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3528,10 +3528,10 @@ Required fields:
 - `policyName`: `str`
 - `principal`: `str`
 
-## DetachSecurityProfileRequestTypeDef
+## DetachSecurityProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DetachSecurityProfileRequestTypeDef
+from mypy_boto3_iot.type_defs import DetachSecurityProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3539,10 +3539,10 @@ Required fields:
 - `securityProfileName`: `str`
 - `securityProfileTargetArn`: `str`
 
-## DetachThingPrincipalRequestTypeDef
+## DetachThingPrincipalRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DetachThingPrincipalRequestTypeDef
+from mypy_boto3_iot.type_defs import DetachThingPrincipalRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3617,10 +3617,10 @@ Optional fields:
 - `securityProfileName`: `str`
 - `behaviorName`: `str`
 
-## DisableTopicRuleRequestTypeDef
+## DisableTopicRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import DisableTopicRuleRequestTypeDef
+from mypy_boto3_iot.type_defs import DisableTopicRuleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3709,10 +3709,10 @@ Required fields:
 - `roleArnForLogging`: `str`
 - `logLevel`: [LogLevelType](./literals.md#logleveltype)
 
-## EnableTopicRuleRequestTypeDef
+## EnableTopicRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import EnableTopicRuleRequestTypeDef
+from mypy_boto3_iot.type_defs import EnableTopicRuleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3791,10 +3791,10 @@ Optional fields:
 - `separator`: `str`
 - `batchMode`: `bool`
 
-## GetBehaviorModelTrainingSummariesRequestTypeDef
+## GetBehaviorModelTrainingSummariesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetBehaviorModelTrainingSummariesRequestTypeDef
+from mypy_boto3_iot.type_defs import GetBehaviorModelTrainingSummariesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3803,10 +3803,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## GetBehaviorModelTrainingSummariesResponseResponseTypeDef
+## GetBehaviorModelTrainingSummariesResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetBehaviorModelTrainingSummariesResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import GetBehaviorModelTrainingSummariesResponseTypeDef
 ```
 
 Required fields:
@@ -3817,10 +3817,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCardinalityRequestTypeDef
+## GetCardinalityRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetCardinalityRequestTypeDef
+from mypy_boto3_iot.type_defs import GetCardinalityRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3833,10 +3833,10 @@ Optional fields:
 - `aggregationField`: `str`
 - `queryVersion`: `str`
 
-## GetCardinalityResponseResponseTypeDef
+## GetCardinalityResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetCardinalityResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import GetCardinalityResponseTypeDef
 ```
 
 Required fields:
@@ -3845,10 +3845,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetEffectivePoliciesRequestTypeDef
+## GetEffectivePoliciesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetEffectivePoliciesRequestTypeDef
+from mypy_boto3_iot.type_defs import GetEffectivePoliciesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3857,10 +3857,10 @@ Optional fields:
 - `cognitoIdentityPoolId`: `str`
 - `thingName`: `str`
 
-## GetEffectivePoliciesResponseResponseTypeDef
+## GetEffectivePoliciesResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetEffectivePoliciesResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import GetEffectivePoliciesResponseTypeDef
 ```
 
 Required fields:
@@ -3870,10 +3870,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetIndexingConfigurationResponseResponseTypeDef
+## GetIndexingConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetIndexingConfigurationResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import GetIndexingConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -3885,20 +3885,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetJobDocumentRequestTypeDef
+## GetJobDocumentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetJobDocumentRequestTypeDef
+from mypy_boto3_iot.type_defs import GetJobDocumentRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `jobId`: `str`
 
-## GetJobDocumentResponseResponseTypeDef
+## GetJobDocumentResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetJobDocumentResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import GetJobDocumentResponseTypeDef
 ```
 
 Required fields:
@@ -3907,10 +3907,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLoggingOptionsResponseResponseTypeDef
+## GetLoggingOptionsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetLoggingOptionsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import GetLoggingOptionsResponseTypeDef
 ```
 
 Required fields:
@@ -3920,20 +3920,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetOTAUpdateRequestTypeDef
+## GetOTAUpdateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetOTAUpdateRequestTypeDef
+from mypy_boto3_iot.type_defs import GetOTAUpdateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `otaUpdateId`: `str`
 
-## GetOTAUpdateResponseResponseTypeDef
+## GetOTAUpdateResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetOTAUpdateResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import GetOTAUpdateResponseTypeDef
 ```
 
 Required fields:
@@ -3942,10 +3942,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPercentilesRequestTypeDef
+## GetPercentilesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetPercentilesRequestTypeDef
+from mypy_boto3_iot.type_defs import GetPercentilesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3959,10 +3959,10 @@ Optional fields:
 - `queryVersion`: `str`
 - `percents`: `List`\[`float`\]
 
-## GetPercentilesResponseResponseTypeDef
+## GetPercentilesResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetPercentilesResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import GetPercentilesResponseTypeDef
 ```
 
 Required fields:
@@ -3972,20 +3972,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPolicyRequestTypeDef
+## GetPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetPolicyRequestTypeDef
+from mypy_boto3_iot.type_defs import GetPolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `policyName`: `str`
 
-## GetPolicyResponseResponseTypeDef
+## GetPolicyResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetPolicyResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import GetPolicyResponseTypeDef
 ```
 
 Required fields:
@@ -4000,10 +4000,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPolicyVersionRequestTypeDef
+## GetPolicyVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetPolicyVersionRequestTypeDef
+from mypy_boto3_iot.type_defs import GetPolicyVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4011,10 +4011,10 @@ Required fields:
 - `policyName`: `str`
 - `policyVersionId`: `str`
 
-## GetPolicyVersionResponseResponseTypeDef
+## GetPolicyVersionResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetPolicyVersionResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import GetPolicyVersionResponseTypeDef
 ```
 
 Required fields:
@@ -4030,10 +4030,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRegistrationCodeResponseResponseTypeDef
+## GetRegistrationCodeResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetRegistrationCodeResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import GetRegistrationCodeResponseTypeDef
 ```
 
 Required fields:
@@ -4042,10 +4042,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetStatisticsRequestTypeDef
+## GetStatisticsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetStatisticsRequestTypeDef
+from mypy_boto3_iot.type_defs import GetStatisticsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4058,10 +4058,10 @@ Optional fields:
 - `aggregationField`: `str`
 - `queryVersion`: `str`
 
-## GetStatisticsResponseResponseTypeDef
+## GetStatisticsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetStatisticsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import GetStatisticsResponseTypeDef
 ```
 
 Required fields:
@@ -4070,20 +4070,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTopicRuleDestinationRequestTypeDef
+## GetTopicRuleDestinationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetTopicRuleDestinationRequestTypeDef
+from mypy_boto3_iot.type_defs import GetTopicRuleDestinationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `arn`: `str`
 
-## GetTopicRuleDestinationResponseResponseTypeDef
+## GetTopicRuleDestinationResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetTopicRuleDestinationResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import GetTopicRuleDestinationResponseTypeDef
 ```
 
 Required fields:
@@ -4093,20 +4093,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTopicRuleRequestTypeDef
+## GetTopicRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetTopicRuleRequestTypeDef
+from mypy_boto3_iot.type_defs import GetTopicRuleRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ruleName`: `str`
 
-## GetTopicRuleResponseResponseTypeDef
+## GetTopicRuleResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetTopicRuleResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import GetTopicRuleResponseTypeDef
 ```
 
 Required fields:
@@ -4116,10 +4116,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetV2LoggingOptionsResponseResponseTypeDef
+## GetV2LoggingOptionsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import GetV2LoggingOptionsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import GetV2LoggingOptionsResponseTypeDef
 ```
 
 Required fields:
@@ -4485,10 +4485,10 @@ Required fields:
 
 - `functionArn`: `str`
 
-## ListActiveViolationsRequestTypeDef
+## ListActiveViolationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListActiveViolationsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListActiveViolationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -4501,10 +4501,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListActiveViolationsResponseResponseTypeDef
+## ListActiveViolationsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListActiveViolationsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListActiveViolationsResponseTypeDef
 ```
 
 Required fields:
@@ -4515,10 +4515,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAttachedPoliciesRequestTypeDef
+## ListAttachedPoliciesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListAttachedPoliciesRequestTypeDef
+from mypy_boto3_iot.type_defs import ListAttachedPoliciesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4531,10 +4531,10 @@ Optional fields:
 - `marker`: `str`
 - `pageSize`: `int`
 
-## ListAttachedPoliciesResponseResponseTypeDef
+## ListAttachedPoliciesResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListAttachedPoliciesResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListAttachedPoliciesResponseTypeDef
 ```
 
 Required fields:
@@ -4544,10 +4544,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAuditFindingsRequestTypeDef
+## ListAuditFindingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListAuditFindingsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListAuditFindingsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -4562,10 +4562,10 @@ Optional fields:
 - `endTime`: `Union`\[`datetime`, `str`\]
 - `listSuppressedFindings`: `bool`
 
-## ListAuditFindingsResponseResponseTypeDef
+## ListAuditFindingsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListAuditFindingsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListAuditFindingsResponseTypeDef
 ```
 
 Required fields:
@@ -4576,10 +4576,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAuditMitigationActionsExecutionsRequestTypeDef
+## ListAuditMitigationActionsExecutionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListAuditMitigationActionsExecutionsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListAuditMitigationActionsExecutionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4594,10 +4594,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListAuditMitigationActionsExecutionsResponseResponseTypeDef
+## ListAuditMitigationActionsExecutionsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListAuditMitigationActionsExecutionsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListAuditMitigationActionsExecutionsResponseTypeDef
 ```
 
 Required fields:
@@ -4608,10 +4608,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAuditMitigationActionsTasksRequestTypeDef
+## ListAuditMitigationActionsTasksRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListAuditMitigationActionsTasksRequestTypeDef
+from mypy_boto3_iot.type_defs import ListAuditMitigationActionsTasksRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4628,10 +4628,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListAuditMitigationActionsTasksResponseResponseTypeDef
+## ListAuditMitigationActionsTasksResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListAuditMitigationActionsTasksResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListAuditMitigationActionsTasksResponseTypeDef
 ```
 
 Required fields:
@@ -4642,10 +4642,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAuditSuppressionsRequestTypeDef
+## ListAuditSuppressionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListAuditSuppressionsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListAuditSuppressionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -4657,10 +4657,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListAuditSuppressionsResponseResponseTypeDef
+## ListAuditSuppressionsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListAuditSuppressionsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListAuditSuppressionsResponseTypeDef
 ```
 
 Required fields:
@@ -4671,10 +4671,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAuditTasksRequestTypeDef
+## ListAuditTasksRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListAuditTasksRequestTypeDef
+from mypy_boto3_iot.type_defs import ListAuditTasksRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4689,10 +4689,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListAuditTasksResponseResponseTypeDef
+## ListAuditTasksResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListAuditTasksResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListAuditTasksResponseTypeDef
 ```
 
 Required fields:
@@ -4703,10 +4703,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAuthorizersRequestTypeDef
+## ListAuthorizersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListAuthorizersRequestTypeDef
+from mypy_boto3_iot.type_defs import ListAuthorizersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -4716,10 +4716,10 @@ Optional fields:
 - `ascendingOrder`: `bool`
 - `status`: [AuthorizerStatusType](./literals.md#authorizerstatustype)
 
-## ListAuthorizersResponseResponseTypeDef
+## ListAuthorizersResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListAuthorizersResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListAuthorizersResponseTypeDef
 ```
 
 Required fields:
@@ -4730,10 +4730,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBillingGroupsRequestTypeDef
+## ListBillingGroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListBillingGroupsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListBillingGroupsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -4742,10 +4742,10 @@ Optional fields:
 - `maxResults`: `int`
 - `namePrefixFilter`: `str`
 
-## ListBillingGroupsResponseResponseTypeDef
+## ListBillingGroupsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListBillingGroupsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListBillingGroupsResponseTypeDef
 ```
 
 Required fields:
@@ -4756,10 +4756,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListCACertificatesRequestTypeDef
+## ListCACertificatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListCACertificatesRequestTypeDef
+from mypy_boto3_iot.type_defs import ListCACertificatesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -4768,10 +4768,10 @@ Optional fields:
 - `marker`: `str`
 - `ascendingOrder`: `bool`
 
-## ListCACertificatesResponseResponseTypeDef
+## ListCACertificatesResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListCACertificatesResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListCACertificatesResponseTypeDef
 ```
 
 Required fields:
@@ -4782,10 +4782,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListCertificatesByCARequestTypeDef
+## ListCertificatesByCARequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListCertificatesByCARequestTypeDef
+from mypy_boto3_iot.type_defs import ListCertificatesByCARequestRequestTypeDef
 ```
 
 Required fields:
@@ -4798,10 +4798,10 @@ Optional fields:
 - `marker`: `str`
 - `ascendingOrder`: `bool`
 
-## ListCertificatesByCAResponseResponseTypeDef
+## ListCertificatesByCAResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListCertificatesByCAResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListCertificatesByCAResponseTypeDef
 ```
 
 Required fields:
@@ -4812,10 +4812,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListCertificatesRequestTypeDef
+## ListCertificatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListCertificatesRequestTypeDef
+from mypy_boto3_iot.type_defs import ListCertificatesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -4824,10 +4824,10 @@ Optional fields:
 - `marker`: `str`
 - `ascendingOrder`: `bool`
 
-## ListCertificatesResponseResponseTypeDef
+## ListCertificatesResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListCertificatesResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListCertificatesResponseTypeDef
 ```
 
 Required fields:
@@ -4838,10 +4838,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListCustomMetricsRequestTypeDef
+## ListCustomMetricsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListCustomMetricsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListCustomMetricsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -4849,10 +4849,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListCustomMetricsResponseResponseTypeDef
+## ListCustomMetricsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListCustomMetricsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListCustomMetricsResponseTypeDef
 ```
 
 Required fields:
@@ -4862,10 +4862,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDetectMitigationActionsExecutionsRequestTypeDef
+## ListDetectMitigationActionsExecutionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListDetectMitigationActionsExecutionsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListDetectMitigationActionsExecutionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -4878,10 +4878,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListDetectMitigationActionsExecutionsResponseResponseTypeDef
+## ListDetectMitigationActionsExecutionsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListDetectMitigationActionsExecutionsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListDetectMitigationActionsExecutionsResponseTypeDef
 ```
 
 Required fields:
@@ -4892,10 +4892,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDetectMitigationActionsTasksRequestTypeDef
+## ListDetectMitigationActionsTasksRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListDetectMitigationActionsTasksRequestTypeDef
+from mypy_boto3_iot.type_defs import ListDetectMitigationActionsTasksRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4908,10 +4908,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListDetectMitigationActionsTasksResponseResponseTypeDef
+## ListDetectMitigationActionsTasksResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListDetectMitigationActionsTasksResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListDetectMitigationActionsTasksResponseTypeDef
 ```
 
 Required fields:
@@ -4922,10 +4922,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDimensionsRequestTypeDef
+## ListDimensionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListDimensionsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListDimensionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -4933,10 +4933,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListDimensionsResponseResponseTypeDef
+## ListDimensionsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListDimensionsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListDimensionsResponseTypeDef
 ```
 
 Required fields:
@@ -4946,10 +4946,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDomainConfigurationsRequestTypeDef
+## ListDomainConfigurationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListDomainConfigurationsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListDomainConfigurationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -4958,10 +4958,10 @@ Optional fields:
 - `pageSize`: `int`
 - `serviceType`: [ServiceTypeType](./literals.md#servicetypetype)
 
-## ListDomainConfigurationsResponseResponseTypeDef
+## ListDomainConfigurationsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListDomainConfigurationsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListDomainConfigurationsResponseTypeDef
 ```
 
 Required fields:
@@ -4972,10 +4972,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListIndicesRequestTypeDef
+## ListIndicesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListIndicesRequestTypeDef
+from mypy_boto3_iot.type_defs import ListIndicesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -4983,10 +4983,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListIndicesResponseResponseTypeDef
+## ListIndicesResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListIndicesResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListIndicesResponseTypeDef
 ```
 
 Required fields:
@@ -4996,10 +4996,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListJobExecutionsForJobRequestTypeDef
+## ListJobExecutionsForJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListJobExecutionsForJobRequestTypeDef
+from mypy_boto3_iot.type_defs import ListJobExecutionsForJobRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5012,10 +5012,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListJobExecutionsForJobResponseResponseTypeDef
+## ListJobExecutionsForJobResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListJobExecutionsForJobResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListJobExecutionsForJobResponseTypeDef
 ```
 
 Required fields:
@@ -5026,10 +5026,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListJobExecutionsForThingRequestTypeDef
+## ListJobExecutionsForThingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListJobExecutionsForThingRequestTypeDef
+from mypy_boto3_iot.type_defs import ListJobExecutionsForThingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5043,10 +5043,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListJobExecutionsForThingResponseResponseTypeDef
+## ListJobExecutionsForThingResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListJobExecutionsForThingResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListJobExecutionsForThingResponseTypeDef
 ```
 
 Required fields:
@@ -5057,10 +5057,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListJobTemplatesRequestTypeDef
+## ListJobTemplatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListJobTemplatesRequestTypeDef
+from mypy_boto3_iot.type_defs import ListJobTemplatesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -5068,10 +5068,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListJobTemplatesResponseResponseTypeDef
+## ListJobTemplatesResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListJobTemplatesResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListJobTemplatesResponseTypeDef
 ```
 
 Required fields:
@@ -5082,10 +5082,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListJobsRequestTypeDef
+## ListJobsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListJobsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListJobsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -5098,10 +5098,10 @@ Optional fields:
 - `thingGroupId`: `str`
 - `namespaceId`: `str`
 
-## ListJobsResponseResponseTypeDef
+## ListJobsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListJobsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListJobsResponseTypeDef
 ```
 
 Required fields:
@@ -5111,10 +5111,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMitigationActionsRequestTypeDef
+## ListMitigationActionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListMitigationActionsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListMitigationActionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -5124,10 +5124,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListMitigationActionsResponseResponseTypeDef
+## ListMitigationActionsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListMitigationActionsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListMitigationActionsResponseTypeDef
 ```
 
 Required fields:
@@ -5138,10 +5138,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListOTAUpdatesRequestTypeDef
+## ListOTAUpdatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListOTAUpdatesRequestTypeDef
+from mypy_boto3_iot.type_defs import ListOTAUpdatesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -5150,10 +5150,10 @@ Optional fields:
 - `nextToken`: `str`
 - `otaUpdateStatus`: [OTAUpdateStatusType](./literals.md#otaupdatestatustype)
 
-## ListOTAUpdatesResponseResponseTypeDef
+## ListOTAUpdatesResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListOTAUpdatesResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListOTAUpdatesResponseTypeDef
 ```
 
 Required fields:
@@ -5164,10 +5164,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListOutgoingCertificatesRequestTypeDef
+## ListOutgoingCertificatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListOutgoingCertificatesRequestTypeDef
+from mypy_boto3_iot.type_defs import ListOutgoingCertificatesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -5176,10 +5176,10 @@ Optional fields:
 - `marker`: `str`
 - `ascendingOrder`: `bool`
 
-## ListOutgoingCertificatesResponseResponseTypeDef
+## ListOutgoingCertificatesResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListOutgoingCertificatesResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListOutgoingCertificatesResponseTypeDef
 ```
 
 Required fields:
@@ -5190,10 +5190,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPoliciesRequestTypeDef
+## ListPoliciesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListPoliciesRequestTypeDef
+from mypy_boto3_iot.type_defs import ListPoliciesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -5202,10 +5202,10 @@ Optional fields:
 - `pageSize`: `int`
 - `ascendingOrder`: `bool`
 
-## ListPoliciesResponseResponseTypeDef
+## ListPoliciesResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListPoliciesResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListPoliciesResponseTypeDef
 ```
 
 Required fields:
@@ -5215,10 +5215,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPolicyPrincipalsRequestTypeDef
+## ListPolicyPrincipalsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListPolicyPrincipalsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListPolicyPrincipalsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5231,10 +5231,10 @@ Optional fields:
 - `pageSize`: `int`
 - `ascendingOrder`: `bool`
 
-## ListPolicyPrincipalsResponseResponseTypeDef
+## ListPolicyPrincipalsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListPolicyPrincipalsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListPolicyPrincipalsResponseTypeDef
 ```
 
 Required fields:
@@ -5244,20 +5244,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPolicyVersionsRequestTypeDef
+## ListPolicyVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListPolicyVersionsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListPolicyVersionsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `policyName`: `str`
 
-## ListPolicyVersionsResponseResponseTypeDef
+## ListPolicyVersionsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListPolicyVersionsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListPolicyVersionsResponseTypeDef
 ```
 
 Required fields:
@@ -5267,10 +5267,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPrincipalPoliciesRequestTypeDef
+## ListPrincipalPoliciesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListPrincipalPoliciesRequestTypeDef
+from mypy_boto3_iot.type_defs import ListPrincipalPoliciesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5283,10 +5283,10 @@ Optional fields:
 - `pageSize`: `int`
 - `ascendingOrder`: `bool`
 
-## ListPrincipalPoliciesResponseResponseTypeDef
+## ListPrincipalPoliciesResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListPrincipalPoliciesResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListPrincipalPoliciesResponseTypeDef
 ```
 
 Required fields:
@@ -5296,10 +5296,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPrincipalThingsRequestTypeDef
+## ListPrincipalThingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListPrincipalThingsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListPrincipalThingsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5311,10 +5311,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListPrincipalThingsResponseResponseTypeDef
+## ListPrincipalThingsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListPrincipalThingsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListPrincipalThingsResponseTypeDef
 ```
 
 Required fields:
@@ -5324,10 +5324,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProvisioningTemplateVersionsRequestTypeDef
+## ListProvisioningTemplateVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListProvisioningTemplateVersionsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListProvisioningTemplateVersionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5339,10 +5339,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListProvisioningTemplateVersionsResponseResponseTypeDef
+## ListProvisioningTemplateVersionsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListProvisioningTemplateVersionsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListProvisioningTemplateVersionsResponseTypeDef
 ```
 
 Required fields:
@@ -5353,10 +5353,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProvisioningTemplatesRequestTypeDef
+## ListProvisioningTemplatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListProvisioningTemplatesRequestTypeDef
+from mypy_boto3_iot.type_defs import ListProvisioningTemplatesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -5364,10 +5364,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListProvisioningTemplatesResponseResponseTypeDef
+## ListProvisioningTemplatesResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListProvisioningTemplatesResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListProvisioningTemplatesResponseTypeDef
 ```
 
 Required fields:
@@ -5378,10 +5378,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRoleAliasesRequestTypeDef
+## ListRoleAliasesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListRoleAliasesRequestTypeDef
+from mypy_boto3_iot.type_defs import ListRoleAliasesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -5390,10 +5390,10 @@ Optional fields:
 - `marker`: `str`
 - `ascendingOrder`: `bool`
 
-## ListRoleAliasesResponseResponseTypeDef
+## ListRoleAliasesResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListRoleAliasesResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListRoleAliasesResponseTypeDef
 ```
 
 Required fields:
@@ -5403,10 +5403,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListScheduledAuditsRequestTypeDef
+## ListScheduledAuditsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListScheduledAuditsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListScheduledAuditsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -5414,10 +5414,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListScheduledAuditsResponseResponseTypeDef
+## ListScheduledAuditsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListScheduledAuditsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListScheduledAuditsResponseTypeDef
 ```
 
 Required fields:
@@ -5428,10 +5428,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSecurityProfilesForTargetRequestTypeDef
+## ListSecurityProfilesForTargetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListSecurityProfilesForTargetRequestTypeDef
+from mypy_boto3_iot.type_defs import ListSecurityProfilesForTargetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5444,10 +5444,10 @@ Optional fields:
 - `maxResults`: `int`
 - `recursive`: `bool`
 
-## ListSecurityProfilesForTargetResponseResponseTypeDef
+## ListSecurityProfilesForTargetResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListSecurityProfilesForTargetResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListSecurityProfilesForTargetResponseTypeDef
 ```
 
 Required fields:
@@ -5458,10 +5458,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSecurityProfilesRequestTypeDef
+## ListSecurityProfilesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListSecurityProfilesRequestTypeDef
+from mypy_boto3_iot.type_defs import ListSecurityProfilesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -5471,10 +5471,10 @@ Optional fields:
 - `dimensionName`: `str`
 - `metricName`: `str`
 
-## ListSecurityProfilesResponseResponseTypeDef
+## ListSecurityProfilesResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListSecurityProfilesResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListSecurityProfilesResponseTypeDef
 ```
 
 Required fields:
@@ -5485,10 +5485,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStreamsRequestTypeDef
+## ListStreamsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListStreamsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListStreamsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -5497,10 +5497,10 @@ Optional fields:
 - `nextToken`: `str`
 - `ascendingOrder`: `bool`
 
-## ListStreamsResponseResponseTypeDef
+## ListStreamsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListStreamsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListStreamsResponseTypeDef
 ```
 
 Required fields:
@@ -5511,10 +5511,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_iot.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5525,10 +5525,10 @@ Optional fields:
 
 - `nextToken`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -5538,10 +5538,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTargetsForPolicyRequestTypeDef
+## ListTargetsForPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListTargetsForPolicyRequestTypeDef
+from mypy_boto3_iot.type_defs import ListTargetsForPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5553,10 +5553,10 @@ Optional fields:
 - `marker`: `str`
 - `pageSize`: `int`
 
-## ListTargetsForPolicyResponseResponseTypeDef
+## ListTargetsForPolicyResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListTargetsForPolicyResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListTargetsForPolicyResponseTypeDef
 ```
 
 Required fields:
@@ -5566,10 +5566,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTargetsForSecurityProfileRequestTypeDef
+## ListTargetsForSecurityProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListTargetsForSecurityProfileRequestTypeDef
+from mypy_boto3_iot.type_defs import ListTargetsForSecurityProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5581,10 +5581,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListTargetsForSecurityProfileResponseResponseTypeDef
+## ListTargetsForSecurityProfileResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListTargetsForSecurityProfileResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListTargetsForSecurityProfileResponseTypeDef
 ```
 
 Required fields:
@@ -5595,10 +5595,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListThingGroupsForThingRequestTypeDef
+## ListThingGroupsForThingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListThingGroupsForThingRequestTypeDef
+from mypy_boto3_iot.type_defs import ListThingGroupsForThingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5610,10 +5610,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListThingGroupsForThingResponseResponseTypeDef
+## ListThingGroupsForThingResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListThingGroupsForThingResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListThingGroupsForThingResponseTypeDef
 ```
 
 Required fields:
@@ -5624,10 +5624,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListThingGroupsRequestTypeDef
+## ListThingGroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListThingGroupsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListThingGroupsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -5638,10 +5638,10 @@ Optional fields:
 - `namePrefixFilter`: `str`
 - `recursive`: `bool`
 
-## ListThingGroupsResponseResponseTypeDef
+## ListThingGroupsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListThingGroupsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListThingGroupsResponseTypeDef
 ```
 
 Required fields:
@@ -5652,10 +5652,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListThingPrincipalsRequestTypeDef
+## ListThingPrincipalsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListThingPrincipalsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListThingPrincipalsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5667,10 +5667,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListThingPrincipalsResponseResponseTypeDef
+## ListThingPrincipalsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListThingPrincipalsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListThingPrincipalsResponseTypeDef
 ```
 
 Required fields:
@@ -5680,10 +5680,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListThingRegistrationTaskReportsRequestTypeDef
+## ListThingRegistrationTaskReportsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListThingRegistrationTaskReportsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListThingRegistrationTaskReportsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5696,10 +5696,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListThingRegistrationTaskReportsResponseResponseTypeDef
+## ListThingRegistrationTaskReportsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListThingRegistrationTaskReportsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListThingRegistrationTaskReportsResponseTypeDef
 ```
 
 Required fields:
@@ -5710,10 +5710,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListThingRegistrationTasksRequestTypeDef
+## ListThingRegistrationTasksRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListThingRegistrationTasksRequestTypeDef
+from mypy_boto3_iot.type_defs import ListThingRegistrationTasksRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -5722,10 +5722,10 @@ Optional fields:
 - `maxResults`: `int`
 - `status`: [StatusType](./literals.md#statustype)
 
-## ListThingRegistrationTasksResponseResponseTypeDef
+## ListThingRegistrationTasksResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListThingRegistrationTasksResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListThingRegistrationTasksResponseTypeDef
 ```
 
 Required fields:
@@ -5735,10 +5735,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListThingTypesRequestTypeDef
+## ListThingTypesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListThingTypesRequestTypeDef
+from mypy_boto3_iot.type_defs import ListThingTypesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -5747,10 +5747,10 @@ Optional fields:
 - `maxResults`: `int`
 - `thingTypeName`: `str`
 
-## ListThingTypesResponseResponseTypeDef
+## ListThingTypesResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListThingTypesResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListThingTypesResponseTypeDef
 ```
 
 Required fields:
@@ -5761,10 +5761,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListThingsInBillingGroupRequestTypeDef
+## ListThingsInBillingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListThingsInBillingGroupRequestTypeDef
+from mypy_boto3_iot.type_defs import ListThingsInBillingGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5776,10 +5776,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListThingsInBillingGroupResponseResponseTypeDef
+## ListThingsInBillingGroupResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListThingsInBillingGroupResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListThingsInBillingGroupResponseTypeDef
 ```
 
 Required fields:
@@ -5789,10 +5789,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListThingsInThingGroupRequestTypeDef
+## ListThingsInThingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListThingsInThingGroupRequestTypeDef
+from mypy_boto3_iot.type_defs import ListThingsInThingGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5805,10 +5805,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListThingsInThingGroupResponseResponseTypeDef
+## ListThingsInThingGroupResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListThingsInThingGroupResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListThingsInThingGroupResponseTypeDef
 ```
 
 Required fields:
@@ -5818,10 +5818,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListThingsRequestTypeDef
+## ListThingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListThingsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListThingsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -5833,10 +5833,10 @@ Optional fields:
 - `thingTypeName`: `str`
 - `usePrefixAttributeValue`: `bool`
 
-## ListThingsResponseResponseTypeDef
+## ListThingsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListThingsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListThingsResponseTypeDef
 ```
 
 Required fields:
@@ -5847,10 +5847,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTopicRuleDestinationsRequestTypeDef
+## ListTopicRuleDestinationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListTopicRuleDestinationsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListTopicRuleDestinationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -5858,10 +5858,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListTopicRuleDestinationsResponseResponseTypeDef
+## ListTopicRuleDestinationsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListTopicRuleDestinationsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListTopicRuleDestinationsResponseTypeDef
 ```
 
 Required fields:
@@ -5872,10 +5872,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTopicRulesRequestTypeDef
+## ListTopicRulesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListTopicRulesRequestTypeDef
+from mypy_boto3_iot.type_defs import ListTopicRulesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -5885,10 +5885,10 @@ Optional fields:
 - `nextToken`: `str`
 - `ruleDisabled`: `bool`
 
-## ListTopicRulesResponseResponseTypeDef
+## ListTopicRulesResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListTopicRulesResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListTopicRulesResponseTypeDef
 ```
 
 Required fields:
@@ -5899,10 +5899,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListV2LoggingLevelsRequestTypeDef
+## ListV2LoggingLevelsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListV2LoggingLevelsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListV2LoggingLevelsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -5911,10 +5911,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListV2LoggingLevelsResponseResponseTypeDef
+## ListV2LoggingLevelsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListV2LoggingLevelsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListV2LoggingLevelsResponseTypeDef
 ```
 
 Required fields:
@@ -5925,10 +5925,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListViolationEventsRequestTypeDef
+## ListViolationEventsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListViolationEventsRequestTypeDef
+from mypy_boto3_iot.type_defs import ListViolationEventsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5946,10 +5946,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListViolationEventsResponseResponseTypeDef
+## ListViolationEventsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ListViolationEventsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ListViolationEventsResponseTypeDef
 ```
 
 Required fields:
@@ -6354,10 +6354,10 @@ Optional fields:
 - `numberOfNotifiedThings`: `int`
 - `numberOfSucceededThings`: `int`
 
-## RegisterCACertificateRequestTypeDef
+## RegisterCACertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import RegisterCACertificateRequestTypeDef
+from mypy_boto3_iot.type_defs import RegisterCACertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6373,10 +6373,10 @@ Optional fields:
   [RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## RegisterCACertificateResponseResponseTypeDef
+## RegisterCACertificateResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import RegisterCACertificateResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import RegisterCACertificateResponseTypeDef
 ```
 
 Required fields:
@@ -6386,10 +6386,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RegisterCertificateRequestTypeDef
+## RegisterCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import RegisterCertificateRequestTypeDef
+from mypy_boto3_iot.type_defs import RegisterCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6402,10 +6402,10 @@ Optional fields:
 - `setAsActive`: `bool`
 - `status`: [CertificateStatusType](./literals.md#certificatestatustype)
 
-## RegisterCertificateResponseResponseTypeDef
+## RegisterCertificateResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import RegisterCertificateResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import RegisterCertificateResponseTypeDef
 ```
 
 Required fields:
@@ -6415,10 +6415,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RegisterCertificateWithoutCARequestTypeDef
+## RegisterCertificateWithoutCARequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import RegisterCertificateWithoutCARequestTypeDef
+from mypy_boto3_iot.type_defs import RegisterCertificateWithoutCARequestRequestTypeDef
 ```
 
 Required fields:
@@ -6429,10 +6429,10 @@ Optional fields:
 
 - `status`: [CertificateStatusType](./literals.md#certificatestatustype)
 
-## RegisterCertificateWithoutCAResponseResponseTypeDef
+## RegisterCertificateWithoutCAResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import RegisterCertificateWithoutCAResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import RegisterCertificateWithoutCAResponseTypeDef
 ```
 
 Required fields:
@@ -6442,10 +6442,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RegisterThingRequestTypeDef
+## RegisterThingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import RegisterThingRequestTypeDef
+from mypy_boto3_iot.type_defs import RegisterThingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6456,10 +6456,10 @@ Optional fields:
 
 - `parameters`: `Dict`\[`str`, `str`\]
 
-## RegisterThingResponseResponseTypeDef
+## RegisterThingResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import RegisterThingResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import RegisterThingResponseTypeDef
 ```
 
 Required fields:
@@ -6480,10 +6480,10 @@ Optional fields:
 - `templateBody`: `str`
 - `roleArn`: `str`
 
-## RejectCertificateTransferRequestTypeDef
+## RejectCertificateTransferRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import RejectCertificateTransferRequestTypeDef
+from mypy_boto3_iot.type_defs import RejectCertificateTransferRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6507,10 +6507,10 @@ Optional fields:
   [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
 - `additionalInfo`: `Dict`\[`str`, `str`\]
 
-## RemoveThingFromBillingGroupRequestTypeDef
+## RemoveThingFromBillingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import RemoveThingFromBillingGroupRequestTypeDef
+from mypy_boto3_iot.type_defs import RemoveThingFromBillingGroupRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -6520,10 +6520,10 @@ Optional fields:
 - `thingName`: `str`
 - `thingArn`: `str`
 
-## RemoveThingFromThingGroupRequestTypeDef
+## RemoveThingFromThingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import RemoveThingFromThingGroupRequestTypeDef
+from mypy_boto3_iot.type_defs import RemoveThingFromThingGroupRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -6544,10 +6544,10 @@ Required fields:
 - `templateName`: `Literal['BLANK_POLICY']` (see
   [PolicyTemplateNameType](./literals.md#policytemplatenametype))
 
-## ReplaceTopicRuleRequestTypeDef
+## ReplaceTopicRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ReplaceTopicRuleRequestTypeDef
+from mypy_boto3_iot.type_defs import ReplaceTopicRuleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6684,10 +6684,10 @@ Optional fields:
 - `dayOfMonth`: `str`
 - `dayOfWeek`: [DayOfWeekType](./literals.md#dayofweektype)
 
-## SearchIndexRequestTypeDef
+## SearchIndexRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import SearchIndexRequestTypeDef
+from mypy_boto3_iot.type_defs import SearchIndexRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6701,10 +6701,10 @@ Optional fields:
 - `maxResults`: `int`
 - `queryVersion`: `str`
 
-## SearchIndexResponseResponseTypeDef
+## SearchIndexResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import SearchIndexResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import SearchIndexResponseTypeDef
 ```
 
 Required fields:
@@ -6764,20 +6764,20 @@ Optional fields:
   [ServerCertificateStatusType](./literals.md#servercertificatestatustype)
 - `serverCertificateStatusDetail`: `str`
 
-## SetDefaultAuthorizerRequestTypeDef
+## SetDefaultAuthorizerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import SetDefaultAuthorizerRequestTypeDef
+from mypy_boto3_iot.type_defs import SetDefaultAuthorizerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `authorizerName`: `str`
 
-## SetDefaultAuthorizerResponseResponseTypeDef
+## SetDefaultAuthorizerResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import SetDefaultAuthorizerResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import SetDefaultAuthorizerResponseTypeDef
 ```
 
 Required fields:
@@ -6787,10 +6787,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SetDefaultPolicyVersionRequestTypeDef
+## SetDefaultPolicyVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import SetDefaultPolicyVersionRequestTypeDef
+from mypy_boto3_iot.type_defs import SetDefaultPolicyVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6798,10 +6798,10 @@ Required fields:
 - `policyName`: `str`
 - `policyVersionId`: `str`
 
-## SetLoggingOptionsRequestTypeDef
+## SetLoggingOptionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import SetLoggingOptionsRequestTypeDef
+from mypy_boto3_iot.type_defs import SetLoggingOptionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6809,10 +6809,10 @@ Required fields:
 - `loggingOptionsPayload`:
   [LoggingOptionsPayloadTypeDef](./type_defs.md#loggingoptionspayloadtypedef)
 
-## SetV2LoggingLevelRequestTypeDef
+## SetV2LoggingLevelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import SetV2LoggingLevelRequestTypeDef
+from mypy_boto3_iot.type_defs import SetV2LoggingLevelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6820,10 +6820,10 @@ Required fields:
 - `logTarget`: [LogTargetTypeDef](./type_defs.md#logtargettypedef)
 - `logLevel`: [LogLevelType](./literals.md#logleveltype)
 
-## SetV2LoggingOptionsRequestTypeDef
+## SetV2LoggingOptionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import SetV2LoggingOptionsRequestTypeDef
+from mypy_boto3_iot.type_defs import SetV2LoggingOptionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -6886,10 +6886,10 @@ Optional fields:
 
 - `useBase64`: `bool`
 
-## StartAuditMitigationActionsTaskRequestTypeDef
+## StartAuditMitigationActionsTaskRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import StartAuditMitigationActionsTaskRequestTypeDef
+from mypy_boto3_iot.type_defs import StartAuditMitigationActionsTaskRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6900,10 +6900,10 @@ Required fields:
 - `auditCheckToActionsMapping`: `Dict`\[`str`, `List`\[`str`\]\]
 - `clientRequestToken`: `str`
 
-## StartAuditMitigationActionsTaskResponseResponseTypeDef
+## StartAuditMitigationActionsTaskResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import StartAuditMitigationActionsTaskResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import StartAuditMitigationActionsTaskResponseTypeDef
 ```
 
 Required fields:
@@ -6912,10 +6912,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartDetectMitigationActionsTaskRequestTypeDef
+## StartDetectMitigationActionsTaskRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import StartDetectMitigationActionsTaskRequestTypeDef
+from mypy_boto3_iot.type_defs import StartDetectMitigationActionsTaskRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6933,10 +6933,10 @@ Optional fields:
 - `includeOnlyActiveViolations`: `bool`
 - `includeSuppressedAlerts`: `bool`
 
-## StartDetectMitigationActionsTaskResponseResponseTypeDef
+## StartDetectMitigationActionsTaskResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import StartDetectMitigationActionsTaskResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import StartDetectMitigationActionsTaskResponseTypeDef
 ```
 
 Required fields:
@@ -6945,20 +6945,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartOnDemandAuditTaskRequestTypeDef
+## StartOnDemandAuditTaskRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import StartOnDemandAuditTaskRequestTypeDef
+from mypy_boto3_iot.type_defs import StartOnDemandAuditTaskRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `targetCheckNames`: `List`\[`str`\]
 
-## StartOnDemandAuditTaskResponseResponseTypeDef
+## StartOnDemandAuditTaskResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import StartOnDemandAuditTaskResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import StartOnDemandAuditTaskResponseTypeDef
 ```
 
 Required fields:
@@ -6980,10 +6980,10 @@ Optional fields:
 - `signingProfileName`: `str`
 - `destination`: [DestinationTypeDef](./type_defs.md#destinationtypedef)
 
-## StartThingRegistrationTaskRequestTypeDef
+## StartThingRegistrationTaskRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import StartThingRegistrationTaskRequestTypeDef
+from mypy_boto3_iot.type_defs import StartThingRegistrationTaskRequestRequestTypeDef
 ```
 
 Required fields:
@@ -6993,10 +6993,10 @@ Required fields:
 - `inputFileKey`: `str`
 - `roleArn`: `str`
 
-## StartThingRegistrationTaskResponseResponseTypeDef
+## StartThingRegistrationTaskResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import StartThingRegistrationTaskResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import StartThingRegistrationTaskResponseTypeDef
 ```
 
 Required fields:
@@ -7047,10 +7047,10 @@ Optional fields:
 
 - `executionNamePrefix`: `str`
 
-## StopThingRegistrationTaskRequestTypeDef
+## StopThingRegistrationTaskRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import StopThingRegistrationTaskRequestTypeDef
+from mypy_boto3_iot.type_defs import StopThingRegistrationTaskRequestRequestTypeDef
 ```
 
 Required fields:
@@ -7109,10 +7109,10 @@ Optional fields:
 - `streamId`: `str`
 - `fileId`: `int`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_iot.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -7164,10 +7164,10 @@ Optional fields:
 - `failedChecks`: `int`
 - `canceledChecks`: `int`
 
-## TestAuthorizationRequestTypeDef
+## TestAuthorizationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import TestAuthorizationRequestTypeDef
+from mypy_boto3_iot.type_defs import TestAuthorizationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -7182,10 +7182,10 @@ Optional fields:
 - `policyNamesToAdd`: `List`\[`str`\]
 - `policyNamesToSkip`: `List`\[`str`\]
 
-## TestAuthorizationResponseResponseTypeDef
+## TestAuthorizationResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import TestAuthorizationResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import TestAuthorizationResponseTypeDef
 ```
 
 Required fields:
@@ -7195,10 +7195,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## TestInvokeAuthorizerRequestTypeDef
+## TestInvokeAuthorizerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import TestInvokeAuthorizerRequestTypeDef
+from mypy_boto3_iot.type_defs import TestInvokeAuthorizerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -7213,10 +7213,10 @@ Optional fields:
 - `mqttContext`: [MqttContextTypeDef](./type_defs.md#mqttcontexttypedef)
 - `tlsContext`: [TlsContextTypeDef](./type_defs.md#tlscontexttypedef)
 
-## TestInvokeAuthorizerResponseResponseTypeDef
+## TestInvokeAuthorizerResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import TestInvokeAuthorizerResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import TestInvokeAuthorizerResponseTypeDef
 ```
 
 Required fields:
@@ -7543,10 +7543,10 @@ Optional fields:
 - `awsIotSqlVersion`: `str`
 - `errorAction`: [ActionTypeDef](./type_defs.md#actiontypedef)
 
-## TransferCertificateRequestTypeDef
+## TransferCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import TransferCertificateRequestTypeDef
+from mypy_boto3_iot.type_defs import TransferCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -7558,10 +7558,10 @@ Optional fields:
 
 - `transferMessage`: `str`
 
-## TransferCertificateResponseResponseTypeDef
+## TransferCertificateResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import TransferCertificateResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import TransferCertificateResponseTypeDef
 ```
 
 Required fields:
@@ -7584,10 +7584,10 @@ Optional fields:
 - `acceptDate`: `datetime`
 - `rejectDate`: `datetime`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_iot.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -7595,10 +7595,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tagKeys`: `List`\[`str`\]
 
-## UpdateAccountAuditConfigurationRequestTypeDef
+## UpdateAccountAuditConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateAccountAuditConfigurationRequestTypeDef
+from mypy_boto3_iot.type_defs import UpdateAccountAuditConfigurationRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -7610,10 +7610,10 @@ Optional fields:
 - `auditCheckConfigurations`: `Dict`\[`str`,
   [AuditCheckConfigurationTypeDef](./type_defs.md#auditcheckconfigurationtypedef)\]
 
-## UpdateAuditSuppressionRequestTypeDef
+## UpdateAuditSuppressionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateAuditSuppressionRequestTypeDef
+from mypy_boto3_iot.type_defs import UpdateAuditSuppressionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -7628,10 +7628,10 @@ Optional fields:
 - `suppressIndefinitely`: `bool`
 - `description`: `str`
 
-## UpdateAuthorizerRequestTypeDef
+## UpdateAuthorizerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateAuthorizerRequestTypeDef
+from mypy_boto3_iot.type_defs import UpdateAuthorizerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -7645,10 +7645,10 @@ Optional fields:
 - `tokenSigningPublicKeys`: `Dict`\[`str`, `str`\]
 - `status`: [AuthorizerStatusType](./literals.md#authorizerstatustype)
 
-## UpdateAuthorizerResponseResponseTypeDef
+## UpdateAuthorizerResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateAuthorizerResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import UpdateAuthorizerResponseTypeDef
 ```
 
 Required fields:
@@ -7658,10 +7658,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateBillingGroupRequestTypeDef
+## UpdateBillingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateBillingGroupRequestTypeDef
+from mypy_boto3_iot.type_defs import UpdateBillingGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -7674,10 +7674,10 @@ Optional fields:
 
 - `expectedVersion`: `int`
 
-## UpdateBillingGroupResponseResponseTypeDef
+## UpdateBillingGroupResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateBillingGroupResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import UpdateBillingGroupResponseTypeDef
 ```
 
 Required fields:
@@ -7697,10 +7697,10 @@ Required fields:
 - `action`: `Literal['DEACTIVATE']` (see
   [CACertificateUpdateActionType](./literals.md#cacertificateupdateactiontype))
 
-## UpdateCACertificateRequestTypeDef
+## UpdateCACertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateCACertificateRequestTypeDef
+from mypy_boto3_iot.type_defs import UpdateCACertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -7716,10 +7716,10 @@ Optional fields:
   [RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef)
 - `removeAutoRegistration`: `bool`
 
-## UpdateCertificateRequestTypeDef
+## UpdateCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateCertificateRequestTypeDef
+from mypy_boto3_iot.type_defs import UpdateCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -7727,10 +7727,10 @@ Required fields:
 - `certificateId`: `str`
 - `newStatus`: [CertificateStatusType](./literals.md#certificatestatustype)
 
-## UpdateCustomMetricRequestTypeDef
+## UpdateCustomMetricRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateCustomMetricRequestTypeDef
+from mypy_boto3_iot.type_defs import UpdateCustomMetricRequestRequestTypeDef
 ```
 
 Required fields:
@@ -7738,10 +7738,10 @@ Required fields:
 - `metricName`: `str`
 - `displayName`: `str`
 
-## UpdateCustomMetricResponseResponseTypeDef
+## UpdateCustomMetricResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateCustomMetricResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import UpdateCustomMetricResponseTypeDef
 ```
 
 Required fields:
@@ -7766,10 +7766,10 @@ Required fields:
 - `action`: `Literal['DEACTIVATE']` (see
   [DeviceCertificateUpdateActionType](./literals.md#devicecertificateupdateactiontype))
 
-## UpdateDimensionRequestTypeDef
+## UpdateDimensionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateDimensionRequestTypeDef
+from mypy_boto3_iot.type_defs import UpdateDimensionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -7777,10 +7777,10 @@ Required fields:
 - `name`: `str`
 - `stringValues`: `List`\[`str`\]
 
-## UpdateDimensionResponseResponseTypeDef
+## UpdateDimensionResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateDimensionResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import UpdateDimensionResponseTypeDef
 ```
 
 Required fields:
@@ -7795,10 +7795,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDomainConfigurationRequestTypeDef
+## UpdateDomainConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateDomainConfigurationRequestTypeDef
+from mypy_boto3_iot.type_defs import UpdateDomainConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -7813,10 +7813,10 @@ Optional fields:
   [DomainConfigurationStatusType](./literals.md#domainconfigurationstatustype)
 - `removeAuthorizerConfig`: `bool`
 
-## UpdateDomainConfigurationResponseResponseTypeDef
+## UpdateDomainConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateDomainConfigurationResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import UpdateDomainConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -7826,10 +7826,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDynamicThingGroupRequestTypeDef
+## UpdateDynamicThingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateDynamicThingGroupRequestTypeDef
+from mypy_boto3_iot.type_defs import UpdateDynamicThingGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -7845,10 +7845,10 @@ Optional fields:
 - `queryString`: `str`
 - `queryVersion`: `str`
 
-## UpdateDynamicThingGroupResponseResponseTypeDef
+## UpdateDynamicThingGroupResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateDynamicThingGroupResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import UpdateDynamicThingGroupResponseTypeDef
 ```
 
 Required fields:
@@ -7857,10 +7857,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateEventConfigurationsRequestTypeDef
+## UpdateEventConfigurationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateEventConfigurationsRequestTypeDef
+from mypy_boto3_iot.type_defs import UpdateEventConfigurationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -7868,10 +7868,10 @@ Optional fields:
 - `eventConfigurations`: `Dict`\[[EventTypeType](./literals.md#eventtypetype),
   [ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 
-## UpdateIndexingConfigurationRequestTypeDef
+## UpdateIndexingConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateIndexingConfigurationRequestTypeDef
+from mypy_boto3_iot.type_defs import UpdateIndexingConfigurationRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -7881,10 +7881,10 @@ Optional fields:
 - `thingGroupIndexingConfiguration`:
   [ThingGroupIndexingConfigurationTypeDef](./type_defs.md#thinggroupindexingconfigurationtypedef)
 
-## UpdateJobRequestTypeDef
+## UpdateJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateJobRequestTypeDef
+from mypy_boto3_iot.type_defs import UpdateJobRequestRequestTypeDef
 ```
 
 Required fields:
@@ -7902,10 +7902,10 @@ Optional fields:
 - `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
 - `namespaceId`: `str`
 
-## UpdateMitigationActionRequestTypeDef
+## UpdateMitigationActionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateMitigationActionRequestTypeDef
+from mypy_boto3_iot.type_defs import UpdateMitigationActionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -7918,10 +7918,10 @@ Optional fields:
 - `actionParams`:
   [MitigationActionParamsTypeDef](./type_defs.md#mitigationactionparamstypedef)
 
-## UpdateMitigationActionResponseResponseTypeDef
+## UpdateMitigationActionResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateMitigationActionResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import UpdateMitigationActionResponseTypeDef
 ```
 
 Required fields:
@@ -7931,10 +7931,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateProvisioningTemplateRequestTypeDef
+## UpdateProvisioningTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateProvisioningTemplateRequestTypeDef
+from mypy_boto3_iot.type_defs import UpdateProvisioningTemplateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -7951,10 +7951,10 @@ Optional fields:
   [ProvisioningHookTypeDef](./type_defs.md#provisioninghooktypedef)
 - `removePreProvisioningHook`: `bool`
 
-## UpdateRoleAliasRequestTypeDef
+## UpdateRoleAliasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateRoleAliasRequestTypeDef
+from mypy_boto3_iot.type_defs import UpdateRoleAliasRequestRequestTypeDef
 ```
 
 Required fields:
@@ -7966,10 +7966,10 @@ Optional fields:
 - `roleArn`: `str`
 - `credentialDurationSeconds`: `int`
 
-## UpdateRoleAliasResponseResponseTypeDef
+## UpdateRoleAliasResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateRoleAliasResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import UpdateRoleAliasResponseTypeDef
 ```
 
 Required fields:
@@ -7979,10 +7979,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateScheduledAuditRequestTypeDef
+## UpdateScheduledAuditRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateScheduledAuditRequestTypeDef
+from mypy_boto3_iot.type_defs import UpdateScheduledAuditRequestRequestTypeDef
 ```
 
 Required fields:
@@ -7996,10 +7996,10 @@ Optional fields:
 - `dayOfWeek`: [DayOfWeekType](./literals.md#dayofweektype)
 - `targetCheckNames`: `List`\[`str`\]
 
-## UpdateScheduledAuditResponseResponseTypeDef
+## UpdateScheduledAuditResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateScheduledAuditResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import UpdateScheduledAuditResponseTypeDef
 ```
 
 Required fields:
@@ -8008,10 +8008,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateSecurityProfileRequestTypeDef
+## UpdateSecurityProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateSecurityProfileRequestTypeDef
+from mypy_boto3_iot.type_defs import UpdateSecurityProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -8033,10 +8033,10 @@ Optional fields:
 - `deleteAdditionalMetricsToRetain`: `bool`
 - `expectedVersion`: `int`
 
-## UpdateSecurityProfileResponseResponseTypeDef
+## UpdateSecurityProfileResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateSecurityProfileResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import UpdateSecurityProfileResponseTypeDef
 ```
 
 Required fields:
@@ -8057,10 +8057,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateStreamRequestTypeDef
+## UpdateStreamRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateStreamRequestTypeDef
+from mypy_boto3_iot.type_defs import UpdateStreamRequestRequestTypeDef
 ```
 
 Required fields:
@@ -8073,10 +8073,10 @@ Optional fields:
 - `files`: `List`\[[StreamFileTypeDef](./type_defs.md#streamfiletypedef)\]
 - `roleArn`: `str`
 
-## UpdateStreamResponseResponseTypeDef
+## UpdateStreamResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateStreamResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import UpdateStreamResponseTypeDef
 ```
 
 Required fields:
@@ -8088,10 +8088,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateThingGroupRequestTypeDef
+## UpdateThingGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateThingGroupRequestTypeDef
+from mypy_boto3_iot.type_defs import UpdateThingGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -8104,10 +8104,10 @@ Optional fields:
 
 - `expectedVersion`: `int`
 
-## UpdateThingGroupResponseResponseTypeDef
+## UpdateThingGroupResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateThingGroupResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import UpdateThingGroupResponseTypeDef
 ```
 
 Required fields:
@@ -8116,10 +8116,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateThingGroupsForThingRequestTypeDef
+## UpdateThingGroupsForThingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateThingGroupsForThingRequestTypeDef
+from mypy_boto3_iot.type_defs import UpdateThingGroupsForThingRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -8129,10 +8129,10 @@ Optional fields:
 - `thingGroupsToRemove`: `List`\[`str`\]
 - `overrideDynamicGroups`: `bool`
 
-## UpdateThingRequestTypeDef
+## UpdateThingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateThingRequestTypeDef
+from mypy_boto3_iot.type_defs import UpdateThingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -8147,10 +8147,10 @@ Optional fields:
 - `expectedVersion`: `int`
 - `removeThingType`: `bool`
 
-## UpdateTopicRuleDestinationRequestTypeDef
+## UpdateTopicRuleDestinationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import UpdateTopicRuleDestinationRequestTypeDef
+from mypy_boto3_iot.type_defs import UpdateTopicRuleDestinationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -8159,20 +8159,20 @@ Required fields:
 - `status`:
   [TopicRuleDestinationStatusType](./literals.md#topicruledestinationstatustype)
 
-## ValidateSecurityProfileBehaviorsRequestTypeDef
+## ValidateSecurityProfileBehaviorsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ValidateSecurityProfileBehaviorsRequestTypeDef
+from mypy_boto3_iot.type_defs import ValidateSecurityProfileBehaviorsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `behaviors`: `List`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
 
-## ValidateSecurityProfileBehaviorsResponseResponseTypeDef
+## ValidateSecurityProfileBehaviorsResponseTypeDef
 
 ```python
-from mypy_boto3_iot.type_defs import ValidateSecurityProfileBehaviorsResponseResponseTypeDef
+from mypy_boto3_iot.type_defs import ValidateSecurityProfileBehaviorsResponseTypeDef
 ```
 
 Required fields:

@@ -8,37 +8,37 @@ type annotations stubs module
 [mypy_boto3_apigatewaymanagementapi](https://pypi.org/project/mypy-boto3-apigatewaymanagementapi/).
 
 - [Typed dictionaries for boto3 ApiGatewayManagementApi module](#typed-dictionaries-for-boto3-apigatewaymanagementapi-module)
-  - [DeleteConnectionRequestTypeDef](#deleteconnectionrequesttypedef)
-  - [GetConnectionRequestTypeDef](#getconnectionrequesttypedef)
-  - [GetConnectionResponseResponseTypeDef](#getconnectionresponseresponsetypedef)
+  - [DeleteConnectionRequestRequestTypeDef](#deleteconnectionrequestrequesttypedef)
+  - [GetConnectionRequestRequestTypeDef](#getconnectionrequestrequesttypedef)
+  - [GetConnectionResponseTypeDef](#getconnectionresponsetypedef)
   - [IdentityTypeDef](#identitytypedef)
-  - [PostToConnectionRequestTypeDef](#posttoconnectionrequesttypedef)
+  - [PostToConnectionRequestRequestTypeDef](#posttoconnectionrequestrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
 
-## DeleteConnectionRequestTypeDef
+## DeleteConnectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigatewaymanagementapi.type_defs import DeleteConnectionRequestTypeDef
+from mypy_boto3_apigatewaymanagementapi.type_defs import DeleteConnectionRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ConnectionId`: `str`
 
-## GetConnectionRequestTypeDef
+## GetConnectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigatewaymanagementapi.type_defs import GetConnectionRequestTypeDef
+from mypy_boto3_apigatewaymanagementapi.type_defs import GetConnectionRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ConnectionId`: `str`
 
-## GetConnectionResponseResponseTypeDef
+## GetConnectionResponseTypeDef
 
 ```python
-from mypy_boto3_apigatewaymanagementapi.type_defs import GetConnectionResponseResponseTypeDef
+from mypy_boto3_apigatewaymanagementapi.type_defs import GetConnectionResponseTypeDef
 ```
 
 Required fields:
@@ -60,10 +60,10 @@ Required fields:
 - `SourceIp`: `str`
 - `UserAgent`: `str`
 
-## PostToConnectionRequestTypeDef
+## PostToConnectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigatewaymanagementapi.type_defs import PostToConnectionRequestTypeDef
+from mypy_boto3_apigatewaymanagementapi.type_defs import PostToConnectionRequestRequestTypeDef
 ```
 
 Required fields:

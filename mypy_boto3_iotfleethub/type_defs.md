@@ -9,20 +9,20 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 IoTFleetHub module](#typed-dictionaries-for-boto3-iotfleethub-module)
   - [ApplicationSummaryTypeDef](#applicationsummarytypedef)
-  - [CreateApplicationRequestTypeDef](#createapplicationrequesttypedef)
-  - [CreateApplicationResponseResponseTypeDef](#createapplicationresponseresponsetypedef)
-  - [DeleteApplicationRequestTypeDef](#deleteapplicationrequesttypedef)
-  - [DescribeApplicationRequestTypeDef](#describeapplicationrequesttypedef)
-  - [DescribeApplicationResponseResponseTypeDef](#describeapplicationresponseresponsetypedef)
-  - [ListApplicationsRequestTypeDef](#listapplicationsrequesttypedef)
-  - [ListApplicationsResponseResponseTypeDef](#listapplicationsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [CreateApplicationRequestRequestTypeDef](#createapplicationrequestrequesttypedef)
+  - [CreateApplicationResponseTypeDef](#createapplicationresponsetypedef)
+  - [DeleteApplicationRequestRequestTypeDef](#deleteapplicationrequestrequesttypedef)
+  - [DescribeApplicationRequestRequestTypeDef](#describeapplicationrequestrequesttypedef)
+  - [DescribeApplicationResponseTypeDef](#describeapplicationresponsetypedef)
+  - [ListApplicationsRequestRequestTypeDef](#listapplicationsrequestrequesttypedef)
+  - [ListApplicationsResponseTypeDef](#listapplicationsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateApplicationRequestTypeDef](#updateapplicationrequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateApplicationRequestRequestTypeDef](#updateapplicationrequestrequesttypedef)
 
 ## ApplicationSummaryTypeDef
 
@@ -44,10 +44,10 @@ Optional fields:
 - `applicationState`:
   [ApplicationStateType](./literals.md#applicationstatetype)
 
-## CreateApplicationRequestTypeDef
+## CreateApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotfleethub.type_defs import CreateApplicationRequestTypeDef
+from mypy_boto3_iotfleethub.type_defs import CreateApplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -61,10 +61,10 @@ Optional fields:
 - `clientToken`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateApplicationResponseResponseTypeDef
+## CreateApplicationResponseTypeDef
 
 ```python
-from mypy_boto3_iotfleethub.type_defs import CreateApplicationResponseResponseTypeDef
+from mypy_boto3_iotfleethub.type_defs import CreateApplicationResponseTypeDef
 ```
 
 Required fields:
@@ -74,10 +74,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteApplicationRequestTypeDef
+## DeleteApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotfleethub.type_defs import DeleteApplicationRequestTypeDef
+from mypy_boto3_iotfleethub.type_defs import DeleteApplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -88,20 +88,20 @@ Optional fields:
 
 - `clientToken`: `str`
 
-## DescribeApplicationRequestTypeDef
+## DescribeApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotfleethub.type_defs import DescribeApplicationRequestTypeDef
+from mypy_boto3_iotfleethub.type_defs import DescribeApplicationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `applicationId`: `str`
 
-## DescribeApplicationResponseResponseTypeDef
+## DescribeApplicationResponseTypeDef
 
 ```python
-from mypy_boto3_iotfleethub.type_defs import DescribeApplicationResponseResponseTypeDef
+from mypy_boto3_iotfleethub.type_defs import DescribeApplicationResponseTypeDef
 ```
 
 Required fields:
@@ -122,20 +122,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListApplicationsRequestTypeDef
+## ListApplicationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotfleethub.type_defs import ListApplicationsRequestTypeDef
+from mypy_boto3_iotfleethub.type_defs import ListApplicationsRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `nextToken`: `str`
 
-## ListApplicationsResponseResponseTypeDef
+## ListApplicationsResponseTypeDef
 
 ```python
-from mypy_boto3_iotfleethub.type_defs import ListApplicationsResponseResponseTypeDef
+from mypy_boto3_iotfleethub.type_defs import ListApplicationsResponseTypeDef
 ```
 
 Required fields:
@@ -146,20 +146,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotfleethub.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_iotfleethub.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_iotfleethub.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_iotfleethub.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -194,10 +194,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotfleethub.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_iotfleethub.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -205,10 +205,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotfleethub.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_iotfleethub.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -216,10 +216,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tagKeys`: `List`\[`str`\]
 
-## UpdateApplicationRequestTypeDef
+## UpdateApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotfleethub.type_defs import UpdateApplicationRequestTypeDef
+from mypy_boto3_iotfleethub.type_defs import UpdateApplicationRequestRequestTypeDef
 ```
 
 Required fields:

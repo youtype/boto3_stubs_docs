@@ -42,7 +42,7 @@ Arguments for `ListDatasetEntriesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDatasetEntriesPaginator.paginate` returns
-`Iterator`\[[ListDatasetEntriesResponseResponseTypeDef](./type_defs.md#listdatasetentriesresponseresponsetypedef)\].
+`Iterator`\[[ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef)\].
 
 ## ListModelsPaginator
 
@@ -68,7 +68,7 @@ Arguments for `ListModelsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListModelsPaginator.paginate` returns
-`Iterator`\[[ListModelsResponseResponseTypeDef](./type_defs.md#listmodelsresponseresponsetypedef)\].
+`Iterator`\[[ListModelsResponseTypeDef](./type_defs.md#listmodelsresponsetypedef)\].
 
 ## ListProjectsPaginator
 
@@ -93,4 +93,4 @@ Arguments for `ListProjectsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProjectsPaginator.paginate` returns
-`Iterator`\[[ListProjectsResponseResponseTypeDef](./type_defs.md#listprojectsresponseresponsetypedef)\].
+`Iterator`\[[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef)\].

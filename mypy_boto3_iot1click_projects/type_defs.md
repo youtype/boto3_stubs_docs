@@ -8,25 +8,25 @@ type annotations stubs module
 [mypy_boto3_iot1click_projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
 
 - [Typed dictionaries for boto3 IoT1ClickProjects module](#typed-dictionaries-for-boto3-iot1clickprojects-module)
-  - [AssociateDeviceWithPlacementRequestTypeDef](#associatedevicewithplacementrequesttypedef)
-  - [CreatePlacementRequestTypeDef](#createplacementrequesttypedef)
-  - [CreateProjectRequestTypeDef](#createprojectrequesttypedef)
-  - [DeletePlacementRequestTypeDef](#deleteplacementrequesttypedef)
-  - [DeleteProjectRequestTypeDef](#deleteprojectrequesttypedef)
-  - [DescribePlacementRequestTypeDef](#describeplacementrequesttypedef)
-  - [DescribePlacementResponseResponseTypeDef](#describeplacementresponseresponsetypedef)
-  - [DescribeProjectRequestTypeDef](#describeprojectrequesttypedef)
-  - [DescribeProjectResponseResponseTypeDef](#describeprojectresponseresponsetypedef)
+  - [AssociateDeviceWithPlacementRequestRequestTypeDef](#associatedevicewithplacementrequestrequesttypedef)
+  - [CreatePlacementRequestRequestTypeDef](#createplacementrequestrequesttypedef)
+  - [CreateProjectRequestRequestTypeDef](#createprojectrequestrequesttypedef)
+  - [DeletePlacementRequestRequestTypeDef](#deleteplacementrequestrequesttypedef)
+  - [DeleteProjectRequestRequestTypeDef](#deleteprojectrequestrequesttypedef)
+  - [DescribePlacementRequestRequestTypeDef](#describeplacementrequestrequesttypedef)
+  - [DescribePlacementResponseTypeDef](#describeplacementresponsetypedef)
+  - [DescribeProjectRequestRequestTypeDef](#describeprojectrequestrequesttypedef)
+  - [DescribeProjectResponseTypeDef](#describeprojectresponsetypedef)
   - [DeviceTemplateTypeDef](#devicetemplatetypedef)
-  - [DisassociateDeviceFromPlacementRequestTypeDef](#disassociatedevicefromplacementrequesttypedef)
-  - [GetDevicesInPlacementRequestTypeDef](#getdevicesinplacementrequesttypedef)
-  - [GetDevicesInPlacementResponseResponseTypeDef](#getdevicesinplacementresponseresponsetypedef)
-  - [ListPlacementsRequestTypeDef](#listplacementsrequesttypedef)
-  - [ListPlacementsResponseResponseTypeDef](#listplacementsresponseresponsetypedef)
-  - [ListProjectsRequestTypeDef](#listprojectsrequesttypedef)
-  - [ListProjectsResponseResponseTypeDef](#listprojectsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [DisassociateDeviceFromPlacementRequestRequestTypeDef](#disassociatedevicefromplacementrequestrequesttypedef)
+  - [GetDevicesInPlacementRequestRequestTypeDef](#getdevicesinplacementrequestrequesttypedef)
+  - [GetDevicesInPlacementResponseTypeDef](#getdevicesinplacementresponsetypedef)
+  - [ListPlacementsRequestRequestTypeDef](#listplacementsrequestrequesttypedef)
+  - [ListPlacementsResponseTypeDef](#listplacementsresponsetypedef)
+  - [ListProjectsRequestRequestTypeDef](#listprojectsrequestrequesttypedef)
+  - [ListProjectsResponseTypeDef](#listprojectsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PlacementDescriptionTypeDef](#placementdescriptiontypedef)
   - [PlacementSummaryTypeDef](#placementsummarytypedef)
@@ -34,15 +34,15 @@ type annotations stubs module
   - [ProjectDescriptionTypeDef](#projectdescriptiontypedef)
   - [ProjectSummaryTypeDef](#projectsummarytypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdatePlacementRequestTypeDef](#updateplacementrequesttypedef)
-  - [UpdateProjectRequestTypeDef](#updateprojectrequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdatePlacementRequestRequestTypeDef](#updateplacementrequestrequesttypedef)
+  - [UpdateProjectRequestRequestTypeDef](#updateprojectrequestrequesttypedef)
 
-## AssociateDeviceWithPlacementRequestTypeDef
+## AssociateDeviceWithPlacementRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import AssociateDeviceWithPlacementRequestTypeDef
+from mypy_boto3_iot1click_projects.type_defs import AssociateDeviceWithPlacementRequestRequestTypeDef
 ```
 
 Required fields:
@@ -52,10 +52,10 @@ Required fields:
 - `deviceId`: `str`
 - `deviceTemplateName`: `str`
 
-## CreatePlacementRequestTypeDef
+## CreatePlacementRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import CreatePlacementRequestTypeDef
+from mypy_boto3_iot1click_projects.type_defs import CreatePlacementRequestRequestTypeDef
 ```
 
 Required fields:
@@ -67,10 +67,10 @@ Optional fields:
 
 - `attributes`: `Dict`\[`str`, `str`\]
 
-## CreateProjectRequestTypeDef
+## CreateProjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import CreateProjectRequestTypeDef
+from mypy_boto3_iot1click_projects.type_defs import CreateProjectRequestRequestTypeDef
 ```
 
 Required fields:
@@ -84,10 +84,10 @@ Optional fields:
   [PlacementTemplateTypeDef](./type_defs.md#placementtemplatetypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
-## DeletePlacementRequestTypeDef
+## DeletePlacementRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import DeletePlacementRequestTypeDef
+from mypy_boto3_iot1click_projects.type_defs import DeletePlacementRequestRequestTypeDef
 ```
 
 Required fields:
@@ -95,20 +95,20 @@ Required fields:
 - `placementName`: `str`
 - `projectName`: `str`
 
-## DeleteProjectRequestTypeDef
+## DeleteProjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import DeleteProjectRequestTypeDef
+from mypy_boto3_iot1click_projects.type_defs import DeleteProjectRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `projectName`: `str`
 
-## DescribePlacementRequestTypeDef
+## DescribePlacementRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import DescribePlacementRequestTypeDef
+from mypy_boto3_iot1click_projects.type_defs import DescribePlacementRequestRequestTypeDef
 ```
 
 Required fields:
@@ -116,10 +116,10 @@ Required fields:
 - `placementName`: `str`
 - `projectName`: `str`
 
-## DescribePlacementResponseResponseTypeDef
+## DescribePlacementResponseTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import DescribePlacementResponseResponseTypeDef
+from mypy_boto3_iot1click_projects.type_defs import DescribePlacementResponseTypeDef
 ```
 
 Required fields:
@@ -129,20 +129,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeProjectRequestTypeDef
+## DescribeProjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import DescribeProjectRequestTypeDef
+from mypy_boto3_iot1click_projects.type_defs import DescribeProjectRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `projectName`: `str`
 
-## DescribeProjectResponseResponseTypeDef
+## DescribeProjectResponseTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import DescribeProjectResponseResponseTypeDef
+from mypy_boto3_iot1click_projects.type_defs import DescribeProjectResponseTypeDef
 ```
 
 Required fields:
@@ -163,10 +163,10 @@ Optional fields:
 - `deviceType`: `str`
 - `callbackOverrides`: `Dict`\[`str`, `str`\]
 
-## DisassociateDeviceFromPlacementRequestTypeDef
+## DisassociateDeviceFromPlacementRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import DisassociateDeviceFromPlacementRequestTypeDef
+from mypy_boto3_iot1click_projects.type_defs import DisassociateDeviceFromPlacementRequestRequestTypeDef
 ```
 
 Required fields:
@@ -175,10 +175,10 @@ Required fields:
 - `placementName`: `str`
 - `deviceTemplateName`: `str`
 
-## GetDevicesInPlacementRequestTypeDef
+## GetDevicesInPlacementRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import GetDevicesInPlacementRequestTypeDef
+from mypy_boto3_iot1click_projects.type_defs import GetDevicesInPlacementRequestRequestTypeDef
 ```
 
 Required fields:
@@ -186,10 +186,10 @@ Required fields:
 - `projectName`: `str`
 - `placementName`: `str`
 
-## GetDevicesInPlacementResponseResponseTypeDef
+## GetDevicesInPlacementResponseTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import GetDevicesInPlacementResponseResponseTypeDef
+from mypy_boto3_iot1click_projects.type_defs import GetDevicesInPlacementResponseTypeDef
 ```
 
 Required fields:
@@ -198,10 +198,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPlacementsRequestTypeDef
+## ListPlacementsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import ListPlacementsRequestTypeDef
+from mypy_boto3_iot1click_projects.type_defs import ListPlacementsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -213,10 +213,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListPlacementsResponseResponseTypeDef
+## ListPlacementsResponseTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import ListPlacementsResponseResponseTypeDef
+from mypy_boto3_iot1click_projects.type_defs import ListPlacementsResponseTypeDef
 ```
 
 Required fields:
@@ -227,10 +227,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProjectsRequestTypeDef
+## ListProjectsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import ListProjectsRequestTypeDef
+from mypy_boto3_iot1click_projects.type_defs import ListProjectsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -238,10 +238,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListProjectsResponseResponseTypeDef
+## ListProjectsResponseTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import ListProjectsResponseResponseTypeDef
+from mypy_boto3_iot1click_projects.type_defs import ListProjectsResponseTypeDef
 ```
 
 Required fields:
@@ -252,20 +252,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_iot1click_projects.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_iot1click_projects.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -376,10 +376,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_iot1click_projects.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -387,10 +387,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_iot1click_projects.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -398,10 +398,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tagKeys`: `List`\[`str`\]
 
-## UpdatePlacementRequestTypeDef
+## UpdatePlacementRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import UpdatePlacementRequestTypeDef
+from mypy_boto3_iot1click_projects.type_defs import UpdatePlacementRequestRequestTypeDef
 ```
 
 Required fields:
@@ -413,10 +413,10 @@ Optional fields:
 
 - `attributes`: `Dict`\[`str`, `str`\]
 
-## UpdateProjectRequestTypeDef
+## UpdateProjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import UpdateProjectRequestTypeDef
+from mypy_boto3_iot1click_projects.type_defs import UpdateProjectRequestRequestTypeDef
 ```
 
 Required fields:

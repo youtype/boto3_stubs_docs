@@ -11,6 +11,7 @@ type annotations stubs module
   - [WorkMailClient](#workmailclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_delegate_to_resource](#associate_delegate_to_resource)
     - [associate_member_to_group](#associate_member_to_group)
     - [can_paginate](#can_paginate)
@@ -123,6 +124,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+WorkMailClient exceptions.
+
+Type annotations for `boto3.client("workmail").exceptions` method.
+
+Boto3 documentation:
+[WorkMail.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_delegate_to_resource
 
 Adds a member (user or group) to the resource's set of delegates.
@@ -134,7 +146,7 @@ Boto3 documentation:
 [WorkMail.Client.associate_delegate_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.associate_delegate_to_resource)
 
 Arguments mapping described in
-[AssociateDelegateToResourceRequestTypeDef](./type_defs.md#associatedelegatetoresourcerequesttypedef).
+[AssociateDelegateToResourceRequestRequestTypeDef](./type_defs.md#associatedelegatetoresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -155,7 +167,7 @@ Boto3 documentation:
 [WorkMail.Client.associate_member_to_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.associate_member_to_group)
 
 Arguments mapping described in
-[AssociateMemberToGroupRequestTypeDef](./type_defs.md#associatemembertogrouprequesttypedef).
+[AssociateMemberToGroupRequestRequestTypeDef](./type_defs.md#associatemembertogrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -191,7 +203,7 @@ Boto3 documentation:
 [WorkMail.Client.cancel_mailbox_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.cancel_mailbox_export_job)
 
 Arguments mapping described in
-[CancelMailboxExportJobRequestTypeDef](./type_defs.md#cancelmailboxexportjobrequesttypedef).
+[CancelMailboxExportJobRequestRequestTypeDef](./type_defs.md#cancelmailboxexportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -211,7 +223,7 @@ Boto3 documentation:
 [WorkMail.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_alias)
 
 Arguments mapping described in
-[CreateAliasRequestTypeDef](./type_defs.md#createaliasrequesttypedef).
+[CreateAliasRequestRequestTypeDef](./type_defs.md#createaliasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -232,7 +244,7 @@ Boto3 documentation:
 [WorkMail.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_group)
 
 Arguments mapping described in
-[CreateGroupRequestTypeDef](./type_defs.md#creategrouprequesttypedef).
+[CreateGroupRequestRequestTypeDef](./type_defs.md#creategrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -240,7 +252,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[CreateGroupResponseResponseTypeDef](./type_defs.md#creategroupresponseresponsetypedef).
+[CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef).
 
 ### create_mobile_device_access_rule
 
@@ -254,7 +266,7 @@ Boto3 documentation:
 [WorkMail.Client.create_mobile_device_access_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_mobile_device_access_rule)
 
 Arguments mapping described in
-[CreateMobileDeviceAccessRuleRequestTypeDef](./type_defs.md#createmobiledeviceaccessrulerequesttypedef).
+[CreateMobileDeviceAccessRuleRequestRequestTypeDef](./type_defs.md#createmobiledeviceaccessrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -275,7 +287,7 @@ Keyword-only arguments:
 - `NotDeviceUserAgents`: `List`\[`str`\]
 
 Returns
-[CreateMobileDeviceAccessRuleResponseResponseTypeDef](./type_defs.md#createmobiledeviceaccessruleresponseresponsetypedef).
+[CreateMobileDeviceAccessRuleResponseTypeDef](./type_defs.md#createmobiledeviceaccessruleresponsetypedef).
 
 ### create_organization
 
@@ -287,7 +299,7 @@ Boto3 documentation:
 [WorkMail.Client.create_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_organization)
 
 Arguments mapping described in
-[CreateOrganizationRequestTypeDef](./type_defs.md#createorganizationrequesttypedef).
+[CreateOrganizationRequestRequestTypeDef](./type_defs.md#createorganizationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -299,7 +311,7 @@ Keyword-only arguments:
 - `EnableInteroperability`: `bool`
 
 Returns
-[CreateOrganizationResponseResponseTypeDef](./type_defs.md#createorganizationresponseresponsetypedef).
+[CreateOrganizationResponseTypeDef](./type_defs.md#createorganizationresponsetypedef).
 
 ### create_resource
 
@@ -311,7 +323,7 @@ Boto3 documentation:
 [WorkMail.Client.create_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_resource)
 
 Arguments mapping described in
-[CreateResourceRequestTypeDef](./type_defs.md#createresourcerequesttypedef).
+[CreateResourceRequestRequestTypeDef](./type_defs.md#createresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -320,7 +332,7 @@ Keyword-only arguments:
 - `Type`: [ResourceTypeType](./literals.md#resourcetypetype) *(required)*
 
 Returns
-[CreateResourceResponseResponseTypeDef](./type_defs.md#createresourceresponseresponsetypedef).
+[CreateResourceResponseTypeDef](./type_defs.md#createresourceresponsetypedef).
 
 ### create_user
 
@@ -333,7 +345,7 @@ Boto3 documentation:
 [WorkMail.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_user)
 
 Arguments mapping described in
-[CreateUserRequestTypeDef](./type_defs.md#createuserrequesttypedef).
+[CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -342,8 +354,7 @@ Keyword-only arguments:
 - `DisplayName`: `str` *(required)*
 - `Password`: `str` *(required)*
 
-Returns
-[CreateUserResponseResponseTypeDef](./type_defs.md#createuserresponseresponsetypedef).
+Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
 ### delete_access_control_rule
 
@@ -356,7 +367,7 @@ Boto3 documentation:
 [WorkMail.Client.delete_access_control_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_access_control_rule)
 
 Arguments mapping described in
-[DeleteAccessControlRuleRequestTypeDef](./type_defs.md#deleteaccesscontrolrulerequesttypedef).
+[DeleteAccessControlRuleRequestRequestTypeDef](./type_defs.md#deleteaccesscontrolrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -375,7 +386,7 @@ Boto3 documentation:
 [WorkMail.Client.delete_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_alias)
 
 Arguments mapping described in
-[DeleteAliasRequestTypeDef](./type_defs.md#deletealiasrequesttypedef).
+[DeleteAliasRequestRequestTypeDef](./type_defs.md#deletealiasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -395,7 +406,7 @@ Boto3 documentation:
 [WorkMail.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_group)
 
 Arguments mapping described in
-[DeleteGroupRequestTypeDef](./type_defs.md#deletegrouprequesttypedef).
+[DeleteGroupRequestRequestTypeDef](./type_defs.md#deletegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -415,7 +426,7 @@ Boto3 documentation:
 [WorkMail.Client.delete_mailbox_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_mailbox_permissions)
 
 Arguments mapping described in
-[DeleteMailboxPermissionsRequestTypeDef](./type_defs.md#deletemailboxpermissionsrequesttypedef).
+[DeleteMailboxPermissionsRequestRequestTypeDef](./type_defs.md#deletemailboxpermissionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -437,7 +448,7 @@ Boto3 documentation:
 [WorkMail.Client.delete_mobile_device_access_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_mobile_device_access_rule)
 
 Arguments mapping described in
-[DeleteMobileDeviceAccessRuleRequestTypeDef](./type_defs.md#deletemobiledeviceaccessrulerequesttypedef).
+[DeleteMobileDeviceAccessRuleRequestRequestTypeDef](./type_defs.md#deletemobiledeviceaccessrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -457,7 +468,7 @@ Boto3 documentation:
 [WorkMail.Client.delete_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_organization)
 
 Arguments mapping described in
-[DeleteOrganizationRequestTypeDef](./type_defs.md#deleteorganizationrequesttypedef).
+[DeleteOrganizationRequestRequestTypeDef](./type_defs.md#deleteorganizationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -466,7 +477,7 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[DeleteOrganizationResponseResponseTypeDef](./type_defs.md#deleteorganizationresponseresponsetypedef).
+[DeleteOrganizationResponseTypeDef](./type_defs.md#deleteorganizationresponsetypedef).
 
 ### delete_resource
 
@@ -478,7 +489,7 @@ Boto3 documentation:
 [WorkMail.Client.delete_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_resource)
 
 Arguments mapping described in
-[DeleteResourceRequestTypeDef](./type_defs.md#deleteresourcerequesttypedef).
+[DeleteResourceRequestRequestTypeDef](./type_defs.md#deleteresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -497,7 +508,7 @@ Boto3 documentation:
 [WorkMail.Client.delete_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_retention_policy)
 
 Arguments mapping described in
-[DeleteRetentionPolicyRequestTypeDef](./type_defs.md#deleteretentionpolicyrequesttypedef).
+[DeleteRetentionPolicyRequestRequestTypeDef](./type_defs.md#deleteretentionpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -516,7 +527,7 @@ Boto3 documentation:
 [WorkMail.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_user)
 
 Arguments mapping described in
-[DeleteUserRequestTypeDef](./type_defs.md#deleteuserrequesttypedef).
+[DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -536,7 +547,7 @@ Boto3 documentation:
 [WorkMail.Client.deregister_from_work_mail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.deregister_from_work_mail)
 
 Arguments mapping described in
-[DeregisterFromWorkMailRequestTypeDef](./type_defs.md#deregisterfromworkmailrequesttypedef).
+[DeregisterFromWorkMailRequestRequestTypeDef](./type_defs.md#deregisterfromworkmailrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -555,7 +566,7 @@ Boto3 documentation:
 [WorkMail.Client.describe_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_group)
 
 Arguments mapping described in
-[DescribeGroupRequestTypeDef](./type_defs.md#describegrouprequesttypedef).
+[DescribeGroupRequestRequestTypeDef](./type_defs.md#describegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -563,7 +574,7 @@ Keyword-only arguments:
 - `GroupId`: `str` *(required)*
 
 Returns
-[DescribeGroupResponseResponseTypeDef](./type_defs.md#describegroupresponseresponsetypedef).
+[DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef).
 
 ### describe_mailbox_export_job
 
@@ -576,7 +587,7 @@ Boto3 documentation:
 [WorkMail.Client.describe_mailbox_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_mailbox_export_job)
 
 Arguments mapping described in
-[DescribeMailboxExportJobRequestTypeDef](./type_defs.md#describemailboxexportjobrequesttypedef).
+[DescribeMailboxExportJobRequestRequestTypeDef](./type_defs.md#describemailboxexportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -584,7 +595,7 @@ Keyword-only arguments:
 - `OrganizationId`: `str` *(required)*
 
 Returns
-[DescribeMailboxExportJobResponseResponseTypeDef](./type_defs.md#describemailboxexportjobresponseresponsetypedef).
+[DescribeMailboxExportJobResponseTypeDef](./type_defs.md#describemailboxexportjobresponsetypedef).
 
 ### describe_organization
 
@@ -597,14 +608,14 @@ Boto3 documentation:
 [WorkMail.Client.describe_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_organization)
 
 Arguments mapping described in
-[DescribeOrganizationRequestTypeDef](./type_defs.md#describeorganizationrequesttypedef).
+[DescribeOrganizationRequestRequestTypeDef](./type_defs.md#describeorganizationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 
 Returns
-[DescribeOrganizationResponseResponseTypeDef](./type_defs.md#describeorganizationresponseresponsetypedef).
+[DescribeOrganizationResponseTypeDef](./type_defs.md#describeorganizationresponsetypedef).
 
 ### describe_resource
 
@@ -616,7 +627,7 @@ Boto3 documentation:
 [WorkMail.Client.describe_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_resource)
 
 Arguments mapping described in
-[DescribeResourceRequestTypeDef](./type_defs.md#describeresourcerequesttypedef).
+[DescribeResourceRequestRequestTypeDef](./type_defs.md#describeresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -624,7 +635,7 @@ Keyword-only arguments:
 - `ResourceId`: `str` *(required)*
 
 Returns
-[DescribeResourceResponseResponseTypeDef](./type_defs.md#describeresourceresponseresponsetypedef).
+[DescribeResourceResponseTypeDef](./type_defs.md#describeresourceresponsetypedef).
 
 ### describe_user
 
@@ -636,7 +647,7 @@ Boto3 documentation:
 [WorkMail.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_user)
 
 Arguments mapping described in
-[DescribeUserRequestTypeDef](./type_defs.md#describeuserrequesttypedef).
+[DescribeUserRequestRequestTypeDef](./type_defs.md#describeuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -644,7 +655,7 @@ Keyword-only arguments:
 - `UserId`: `str` *(required)*
 
 Returns
-[DescribeUserResponseResponseTypeDef](./type_defs.md#describeuserresponseresponsetypedef).
+[DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
 
 ### disassociate_delegate_from_resource
 
@@ -657,7 +668,7 @@ Boto3 documentation:
 [WorkMail.Client.disassociate_delegate_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.disassociate_delegate_from_resource)
 
 Arguments mapping described in
-[DisassociateDelegateFromResourceRequestTypeDef](./type_defs.md#disassociatedelegatefromresourcerequesttypedef).
+[DisassociateDelegateFromResourceRequestRequestTypeDef](./type_defs.md#disassociatedelegatefromresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -678,7 +689,7 @@ Boto3 documentation:
 [WorkMail.Client.disassociate_member_from_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.disassociate_member_from_group)
 
 Arguments mapping described in
-[DisassociateMemberFromGroupRequestTypeDef](./type_defs.md#disassociatememberfromgrouprequesttypedef).
+[DisassociateMemberFromGroupRequestRequestTypeDef](./type_defs.md#disassociatememberfromgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -718,7 +729,7 @@ Boto3 documentation:
 [WorkMail.Client.get_access_control_effect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_access_control_effect)
 
 Arguments mapping described in
-[GetAccessControlEffectRequestTypeDef](./type_defs.md#getaccesscontroleffectrequesttypedef).
+[GetAccessControlEffectRequestRequestTypeDef](./type_defs.md#getaccesscontroleffectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -728,7 +739,7 @@ Keyword-only arguments:
 - `UserId`: `str` *(required)*
 
 Returns
-[GetAccessControlEffectResponseResponseTypeDef](./type_defs.md#getaccesscontroleffectresponseresponsetypedef).
+[GetAccessControlEffectResponseTypeDef](./type_defs.md#getaccesscontroleffectresponsetypedef).
 
 ### get_default_retention_policy
 
@@ -741,14 +752,14 @@ Boto3 documentation:
 [WorkMail.Client.get_default_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_default_retention_policy)
 
 Arguments mapping described in
-[GetDefaultRetentionPolicyRequestTypeDef](./type_defs.md#getdefaultretentionpolicyrequesttypedef).
+[GetDefaultRetentionPolicyRequestRequestTypeDef](./type_defs.md#getdefaultretentionpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 
 Returns
-[GetDefaultRetentionPolicyResponseResponseTypeDef](./type_defs.md#getdefaultretentionpolicyresponseresponsetypedef).
+[GetDefaultRetentionPolicyResponseTypeDef](./type_defs.md#getdefaultretentionpolicyresponsetypedef).
 
 ### get_mailbox_details
 
@@ -760,7 +771,7 @@ Boto3 documentation:
 [WorkMail.Client.get_mailbox_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_mailbox_details)
 
 Arguments mapping described in
-[GetMailboxDetailsRequestTypeDef](./type_defs.md#getmailboxdetailsrequesttypedef).
+[GetMailboxDetailsRequestRequestTypeDef](./type_defs.md#getmailboxdetailsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -768,7 +779,7 @@ Keyword-only arguments:
 - `UserId`: `str` *(required)*
 
 Returns
-[GetMailboxDetailsResponseResponseTypeDef](./type_defs.md#getmailboxdetailsresponseresponsetypedef).
+[GetMailboxDetailsResponseTypeDef](./type_defs.md#getmailboxdetailsresponsetypedef).
 
 ### get_mobile_device_access_effect
 
@@ -782,7 +793,7 @@ Boto3 documentation:
 [WorkMail.Client.get_mobile_device_access_effect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_mobile_device_access_effect)
 
 Arguments mapping described in
-[GetMobileDeviceAccessEffectRequestTypeDef](./type_defs.md#getmobiledeviceaccesseffectrequesttypedef).
+[GetMobileDeviceAccessEffectRequestRequestTypeDef](./type_defs.md#getmobiledeviceaccesseffectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -793,7 +804,7 @@ Keyword-only arguments:
 - `DeviceUserAgent`: `str`
 
 Returns
-[GetMobileDeviceAccessEffectResponseResponseTypeDef](./type_defs.md#getmobiledeviceaccesseffectresponseresponsetypedef).
+[GetMobileDeviceAccessEffectResponseTypeDef](./type_defs.md#getmobiledeviceaccesseffectresponsetypedef).
 
 ### list_access_control_rules
 
@@ -806,14 +817,14 @@ Boto3 documentation:
 [WorkMail.Client.list_access_control_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_access_control_rules)
 
 Arguments mapping described in
-[ListAccessControlRulesRequestTypeDef](./type_defs.md#listaccesscontrolrulesrequesttypedef).
+[ListAccessControlRulesRequestRequestTypeDef](./type_defs.md#listaccesscontrolrulesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 
 Returns
-[ListAccessControlRulesResponseResponseTypeDef](./type_defs.md#listaccesscontrolrulesresponseresponsetypedef).
+[ListAccessControlRulesResponseTypeDef](./type_defs.md#listaccesscontrolrulesresponsetypedef).
 
 ### list_aliases
 
@@ -825,7 +836,7 @@ Boto3 documentation:
 [WorkMail.Client.list_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_aliases)
 
 Arguments mapping described in
-[ListAliasesRequestTypeDef](./type_defs.md#listaliasesrequesttypedef).
+[ListAliasesRequestRequestTypeDef](./type_defs.md#listaliasesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -835,7 +846,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAliasesResponseResponseTypeDef](./type_defs.md#listaliasesresponseresponsetypedef).
+[ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef).
 
 ### list_group_members
 
@@ -847,7 +858,7 @@ Boto3 documentation:
 [WorkMail.Client.list_group_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_group_members)
 
 Arguments mapping described in
-[ListGroupMembersRequestTypeDef](./type_defs.md#listgroupmembersrequesttypedef).
+[ListGroupMembersRequestRequestTypeDef](./type_defs.md#listgroupmembersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -857,7 +868,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListGroupMembersResponseResponseTypeDef](./type_defs.md#listgroupmembersresponseresponsetypedef).
+[ListGroupMembersResponseTypeDef](./type_defs.md#listgroupmembersresponsetypedef).
 
 ### list_groups
 
@@ -869,7 +880,7 @@ Boto3 documentation:
 [WorkMail.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_groups)
 
 Arguments mapping described in
-[ListGroupsRequestTypeDef](./type_defs.md#listgroupsrequesttypedef).
+[ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -877,8 +888,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListGroupsResponseResponseTypeDef](./type_defs.md#listgroupsresponseresponsetypedef).
+Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
 
 ### list_mailbox_export_jobs
 
@@ -892,7 +902,7 @@ Boto3 documentation:
 [WorkMail.Client.list_mailbox_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mailbox_export_jobs)
 
 Arguments mapping described in
-[ListMailboxExportJobsRequestTypeDef](./type_defs.md#listmailboxexportjobsrequesttypedef).
+[ListMailboxExportJobsRequestRequestTypeDef](./type_defs.md#listmailboxexportjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -901,7 +911,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListMailboxExportJobsResponseResponseTypeDef](./type_defs.md#listmailboxexportjobsresponseresponsetypedef).
+[ListMailboxExportJobsResponseTypeDef](./type_defs.md#listmailboxexportjobsresponsetypedef).
 
 ### list_mailbox_permissions
 
@@ -915,7 +925,7 @@ Boto3 documentation:
 [WorkMail.Client.list_mailbox_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mailbox_permissions)
 
 Arguments mapping described in
-[ListMailboxPermissionsRequestTypeDef](./type_defs.md#listmailboxpermissionsrequesttypedef).
+[ListMailboxPermissionsRequestRequestTypeDef](./type_defs.md#listmailboxpermissionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -925,7 +935,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListMailboxPermissionsResponseResponseTypeDef](./type_defs.md#listmailboxpermissionsresponseresponsetypedef).
+[ListMailboxPermissionsResponseTypeDef](./type_defs.md#listmailboxpermissionsresponsetypedef).
 
 ### list_mobile_device_access_rules
 
@@ -939,14 +949,14 @@ Boto3 documentation:
 [WorkMail.Client.list_mobile_device_access_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mobile_device_access_rules)
 
 Arguments mapping described in
-[ListMobileDeviceAccessRulesRequestTypeDef](./type_defs.md#listmobiledeviceaccessrulesrequesttypedef).
+[ListMobileDeviceAccessRulesRequestRequestTypeDef](./type_defs.md#listmobiledeviceaccessrulesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 
 Returns
-[ListMobileDeviceAccessRulesResponseResponseTypeDef](./type_defs.md#listmobiledeviceaccessrulesresponseresponsetypedef).
+[ListMobileDeviceAccessRulesResponseTypeDef](./type_defs.md#listmobiledeviceaccessrulesresponsetypedef).
 
 ### list_organizations
 
@@ -958,7 +968,7 @@ Boto3 documentation:
 [WorkMail.Client.list_organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_organizations)
 
 Arguments mapping described in
-[ListOrganizationsRequestTypeDef](./type_defs.md#listorganizationsrequesttypedef).
+[ListOrganizationsRequestRequestTypeDef](./type_defs.md#listorganizationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -966,7 +976,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListOrganizationsResponseResponseTypeDef](./type_defs.md#listorganizationsresponseresponsetypedef).
+[ListOrganizationsResponseTypeDef](./type_defs.md#listorganizationsresponsetypedef).
 
 ### list_resource_delegates
 
@@ -978,7 +988,7 @@ Boto3 documentation:
 [WorkMail.Client.list_resource_delegates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_resource_delegates)
 
 Arguments mapping described in
-[ListResourceDelegatesRequestTypeDef](./type_defs.md#listresourcedelegatesrequesttypedef).
+[ListResourceDelegatesRequestRequestTypeDef](./type_defs.md#listresourcedelegatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -988,7 +998,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListResourceDelegatesResponseResponseTypeDef](./type_defs.md#listresourcedelegatesresponseresponsetypedef).
+[ListResourceDelegatesResponseTypeDef](./type_defs.md#listresourcedelegatesresponsetypedef).
 
 ### list_resources
 
@@ -1000,7 +1010,7 @@ Boto3 documentation:
 [WorkMail.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_resources)
 
 Arguments mapping described in
-[ListResourcesRequestTypeDef](./type_defs.md#listresourcesrequesttypedef).
+[ListResourcesRequestRequestTypeDef](./type_defs.md#listresourcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1009,7 +1019,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListResourcesResponseResponseTypeDef](./type_defs.md#listresourcesresponseresponsetypedef).
+[ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -1021,14 +1031,14 @@ Boto3 documentation:
 [WorkMail.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_users
 
@@ -1040,7 +1050,7 @@ Boto3 documentation:
 [WorkMail.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_users)
 
 Arguments mapping described in
-[ListUsersRequestTypeDef](./type_defs.md#listusersrequesttypedef).
+[ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1048,8 +1058,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListUsersResponseResponseTypeDef](./type_defs.md#listusersresponseresponsetypedef).
+Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 
 ### put_access_control_rule
 
@@ -1061,7 +1070,7 @@ Boto3 documentation:
 [WorkMail.Client.put_access_control_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_access_control_rule)
 
 Arguments mapping described in
-[PutAccessControlRuleRequestTypeDef](./type_defs.md#putaccesscontrolrulerequesttypedef).
+[PutAccessControlRuleRequestRequestTypeDef](./type_defs.md#putaccesscontrolrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1090,7 +1099,7 @@ Boto3 documentation:
 [WorkMail.Client.put_mailbox_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_mailbox_permissions)
 
 Arguments mapping described in
-[PutMailboxPermissionsRequestTypeDef](./type_defs.md#putmailboxpermissionsrequesttypedef).
+[PutMailboxPermissionsRequestRequestTypeDef](./type_defs.md#putmailboxpermissionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1112,7 +1121,7 @@ Boto3 documentation:
 [WorkMail.Client.put_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_retention_policy)
 
 Arguments mapping described in
-[PutRetentionPolicyRequestTypeDef](./type_defs.md#putretentionpolicyrequesttypedef).
+[PutRetentionPolicyRequestRequestTypeDef](./type_defs.md#putretentionpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1137,7 +1146,7 @@ Boto3 documentation:
 [WorkMail.Client.register_to_work_mail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.register_to_work_mail)
 
 Arguments mapping described in
-[RegisterToWorkMailRequestTypeDef](./type_defs.md#registertoworkmailrequesttypedef).
+[RegisterToWorkMailRequestRequestTypeDef](./type_defs.md#registertoworkmailrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1157,7 +1166,7 @@ Boto3 documentation:
 [WorkMail.Client.reset_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.reset_password)
 
 Arguments mapping described in
-[ResetPasswordRequestTypeDef](./type_defs.md#resetpasswordrequesttypedef).
+[ResetPasswordRequestRequestTypeDef](./type_defs.md#resetpasswordrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1180,7 +1189,7 @@ Boto3 documentation:
 [WorkMail.Client.start_mailbox_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.start_mailbox_export_job)
 
 Arguments mapping described in
-[StartMailboxExportJobRequestTypeDef](./type_defs.md#startmailboxexportjobrequesttypedef).
+[StartMailboxExportJobRequestRequestTypeDef](./type_defs.md#startmailboxexportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1194,7 +1203,7 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[StartMailboxExportJobResponseResponseTypeDef](./type_defs.md#startmailboxexportjobresponseresponsetypedef).
+[StartMailboxExportJobResponseTypeDef](./type_defs.md#startmailboxexportjobresponsetypedef).
 
 ### tag_resource
 
@@ -1207,7 +1216,7 @@ Boto3 documentation:
 [WorkMail.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1227,7 +1236,7 @@ Boto3 documentation:
 [WorkMail.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1246,7 +1255,7 @@ Boto3 documentation:
 [WorkMail.Client.update_mailbox_quota](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_mailbox_quota)
 
 Arguments mapping described in
-[UpdateMailboxQuotaRequestTypeDef](./type_defs.md#updatemailboxquotarequesttypedef).
+[UpdateMailboxQuotaRequestRequestTypeDef](./type_defs.md#updatemailboxquotarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1268,7 +1277,7 @@ Boto3 documentation:
 [WorkMail.Client.update_mobile_device_access_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_mobile_device_access_rule)
 
 Arguments mapping described in
-[UpdateMobileDeviceAccessRuleRequestTypeDef](./type_defs.md#updatemobiledeviceaccessrulerequesttypedef).
+[UpdateMobileDeviceAccessRuleRequestRequestTypeDef](./type_defs.md#updatemobiledeviceaccessrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1301,7 +1310,7 @@ Boto3 documentation:
 [WorkMail.Client.update_primary_email_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_primary_email_address)
 
 Arguments mapping described in
-[UpdatePrimaryEmailAddressRequestTypeDef](./type_defs.md#updateprimaryemailaddressrequesttypedef).
+[UpdatePrimaryEmailAddressRequestRequestTypeDef](./type_defs.md#updateprimaryemailaddressrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1321,7 +1330,7 @@ Boto3 documentation:
 [WorkMail.Client.update_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_resource)
 
 Arguments mapping described in
-[UpdateResourceRequestTypeDef](./type_defs.md#updateresourcerequesttypedef).
+[UpdateResourceRequestRequestTypeDef](./type_defs.md#updateresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 

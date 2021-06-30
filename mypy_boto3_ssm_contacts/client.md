@@ -11,6 +11,7 @@ type annotations stubs module
   - [SSMContactsClient](#ssmcontactsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [accept_page](#accept_page)
     - [activate_contact_channel](#activate_contact_channel)
     - [can_paginate](#can_paginate)
@@ -84,6 +85,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+SSMContactsClient exceptions.
+
+Type annotations for `boto3.client("ssm-contacts").exceptions` method.
+
+Boto3 documentation:
+[SSMContacts.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### accept_page
 
 Used to acknowledge an engagement to a contact channel during an incident.
@@ -94,7 +106,7 @@ Boto3 documentation:
 [SSMContacts.Client.accept_page](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.accept_page)
 
 Arguments mapping described in
-[AcceptPageRequestTypeDef](./type_defs.md#acceptpagerequesttypedef).
+[AcceptPageRequestRequestTypeDef](./type_defs.md#acceptpagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -117,7 +129,7 @@ Boto3 documentation:
 [SSMContacts.Client.activate_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.activate_contact_channel)
 
 Arguments mapping described in
-[ActivateContactChannelRequestTypeDef](./type_defs.md#activatecontactchannelrequesttypedef).
+[ActivateContactChannelRequestRequestTypeDef](./type_defs.md#activatecontactchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -153,7 +165,7 @@ Boto3 documentation:
 [SSMContacts.Client.create_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.create_contact)
 
 Arguments mapping described in
-[CreateContactRequestTypeDef](./type_defs.md#createcontactrequesttypedef).
+[CreateContactRequestRequestTypeDef](./type_defs.md#createcontactrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -165,7 +177,7 @@ Keyword-only arguments:
 - `IdempotencyToken`: `str`
 
 Returns
-[CreateContactResultResponseTypeDef](./type_defs.md#createcontactresultresponsetypedef).
+[CreateContactResultTypeDef](./type_defs.md#createcontactresulttypedef).
 
 ### create_contact_channel
 
@@ -179,7 +191,7 @@ Boto3 documentation:
 [SSMContacts.Client.create_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.create_contact_channel)
 
 Arguments mapping described in
-[CreateContactChannelRequestTypeDef](./type_defs.md#createcontactchannelrequesttypedef).
+[CreateContactChannelRequestRequestTypeDef](./type_defs.md#createcontactchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -193,7 +205,7 @@ Keyword-only arguments:
 - `IdempotencyToken`: `str`
 
 Returns
-[CreateContactChannelResultResponseTypeDef](./type_defs.md#createcontactchannelresultresponsetypedef).
+[CreateContactChannelResultTypeDef](./type_defs.md#createcontactchannelresulttypedef).
 
 ### deactivate_contact_channel
 
@@ -207,7 +219,7 @@ Boto3 documentation:
 [SSMContacts.Client.deactivate_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.deactivate_contact_channel)
 
 Arguments mapping described in
-[DeactivateContactChannelRequestTypeDef](./type_defs.md#deactivatecontactchannelrequesttypedef).
+[DeactivateContactChannelRequestRequestTypeDef](./type_defs.md#deactivatecontactchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -225,7 +237,7 @@ Boto3 documentation:
 [SSMContacts.Client.delete_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.delete_contact)
 
 Arguments mapping described in
-[DeleteContactRequestTypeDef](./type_defs.md#deletecontactrequesttypedef).
+[DeleteContactRequestRequestTypeDef](./type_defs.md#deletecontactrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -245,7 +257,7 @@ Boto3 documentation:
 [SSMContacts.Client.delete_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.delete_contact_channel)
 
 Arguments mapping described in
-[DeleteContactChannelRequestTypeDef](./type_defs.md#deletecontactchannelrequesttypedef).
+[DeleteContactChannelRequestRequestTypeDef](./type_defs.md#deletecontactchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -264,14 +276,14 @@ Boto3 documentation:
 [SSMContacts.Client.describe_engagement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.describe_engagement)
 
 Arguments mapping described in
-[DescribeEngagementRequestTypeDef](./type_defs.md#describeengagementrequesttypedef).
+[DescribeEngagementRequestRequestTypeDef](./type_defs.md#describeengagementrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `EngagementId`: `str` *(required)*
 
 Returns
-[DescribeEngagementResultResponseTypeDef](./type_defs.md#describeengagementresultresponsetypedef).
+[DescribeEngagementResultTypeDef](./type_defs.md#describeengagementresulttypedef).
 
 ### describe_page
 
@@ -283,14 +295,13 @@ Boto3 documentation:
 [SSMContacts.Client.describe_page](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.describe_page)
 
 Arguments mapping described in
-[DescribePageRequestTypeDef](./type_defs.md#describepagerequesttypedef).
+[DescribePageRequestRequestTypeDef](./type_defs.md#describepagerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `PageId`: `str` *(required)*
 
-Returns
-[DescribePageResultResponseTypeDef](./type_defs.md#describepageresultresponsetypedef).
+Returns [DescribePageResultTypeDef](./type_defs.md#describepageresulttypedef).
 
 ### generate_presigned_url
 
@@ -321,14 +332,13 @@ Boto3 documentation:
 [SSMContacts.Client.get_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.get_contact)
 
 Arguments mapping described in
-[GetContactRequestTypeDef](./type_defs.md#getcontactrequesttypedef).
+[GetContactRequestRequestTypeDef](./type_defs.md#getcontactrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ContactId`: `str` *(required)*
 
-Returns
-[GetContactResultResponseTypeDef](./type_defs.md#getcontactresultresponsetypedef).
+Returns [GetContactResultTypeDef](./type_defs.md#getcontactresulttypedef).
 
 ### get_contact_channel
 
@@ -340,14 +350,14 @@ Boto3 documentation:
 [SSMContacts.Client.get_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.get_contact_channel)
 
 Arguments mapping described in
-[GetContactChannelRequestTypeDef](./type_defs.md#getcontactchannelrequesttypedef).
+[GetContactChannelRequestRequestTypeDef](./type_defs.md#getcontactchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ContactChannelId`: `str` *(required)*
 
 Returns
-[GetContactChannelResultResponseTypeDef](./type_defs.md#getcontactchannelresultresponsetypedef).
+[GetContactChannelResultTypeDef](./type_defs.md#getcontactchannelresulttypedef).
 
 ### get_contact_policy
 
@@ -360,14 +370,14 @@ Boto3 documentation:
 [SSMContacts.Client.get_contact_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.get_contact_policy)
 
 Arguments mapping described in
-[GetContactPolicyRequestTypeDef](./type_defs.md#getcontactpolicyrequesttypedef).
+[GetContactPolicyRequestRequestTypeDef](./type_defs.md#getcontactpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ContactArn`: `str` *(required)*
 
 Returns
-[GetContactPolicyResultResponseTypeDef](./type_defs.md#getcontactpolicyresultresponsetypedef).
+[GetContactPolicyResultTypeDef](./type_defs.md#getcontactpolicyresulttypedef).
 
 ### list_contact_channels
 
@@ -380,7 +390,7 @@ Boto3 documentation:
 [SSMContacts.Client.list_contact_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.list_contact_channels)
 
 Arguments mapping described in
-[ListContactChannelsRequestTypeDef](./type_defs.md#listcontactchannelsrequesttypedef).
+[ListContactChannelsRequestRequestTypeDef](./type_defs.md#listcontactchannelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -389,7 +399,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListContactChannelsResultResponseTypeDef](./type_defs.md#listcontactchannelsresultresponsetypedef).
+[ListContactChannelsResultTypeDef](./type_defs.md#listcontactchannelsresulttypedef).
 
 ### list_contacts
 
@@ -401,7 +411,7 @@ Boto3 documentation:
 [SSMContacts.Client.list_contacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.list_contacts)
 
 Arguments mapping described in
-[ListContactsRequestTypeDef](./type_defs.md#listcontactsrequesttypedef).
+[ListContactsRequestRequestTypeDef](./type_defs.md#listcontactsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -410,8 +420,7 @@ Keyword-only arguments:
 - `AliasPrefix`: `str`
 - `Type`: [ContactTypeType](./literals.md#contacttypetype)
 
-Returns
-[ListContactsResultResponseTypeDef](./type_defs.md#listcontactsresultresponsetypedef).
+Returns [ListContactsResultTypeDef](./type_defs.md#listcontactsresulttypedef).
 
 ### list_engagements
 
@@ -423,7 +432,7 @@ Boto3 documentation:
 [SSMContacts.Client.list_engagements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.list_engagements)
 
 Arguments mapping described in
-[ListEngagementsRequestTypeDef](./type_defs.md#listengagementsrequesttypedef).
+[ListEngagementsRequestRequestTypeDef](./type_defs.md#listengagementsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -433,7 +442,7 @@ Keyword-only arguments:
 - `TimeRangeValue`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
 
 Returns
-[ListEngagementsResultResponseTypeDef](./type_defs.md#listengagementsresultresponsetypedef).
+[ListEngagementsResultTypeDef](./type_defs.md#listengagementsresulttypedef).
 
 ### list_page_receipts
 
@@ -445,7 +454,7 @@ Boto3 documentation:
 [SSMContacts.Client.list_page_receipts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.list_page_receipts)
 
 Arguments mapping described in
-[ListPageReceiptsRequestTypeDef](./type_defs.md#listpagereceiptsrequesttypedef).
+[ListPageReceiptsRequestRequestTypeDef](./type_defs.md#listpagereceiptsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -454,7 +463,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPageReceiptsResultResponseTypeDef](./type_defs.md#listpagereceiptsresultresponsetypedef).
+[ListPageReceiptsResultTypeDef](./type_defs.md#listpagereceiptsresulttypedef).
 
 ### list_pages_by_contact
 
@@ -467,7 +476,7 @@ Boto3 documentation:
 [SSMContacts.Client.list_pages_by_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.list_pages_by_contact)
 
 Arguments mapping described in
-[ListPagesByContactRequestTypeDef](./type_defs.md#listpagesbycontactrequesttypedef).
+[ListPagesByContactRequestRequestTypeDef](./type_defs.md#listpagesbycontactrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -476,7 +485,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPagesByContactResultResponseTypeDef](./type_defs.md#listpagesbycontactresultresponsetypedef).
+[ListPagesByContactResultTypeDef](./type_defs.md#listpagesbycontactresulttypedef).
 
 ### list_pages_by_engagement
 
@@ -489,7 +498,7 @@ Boto3 documentation:
 [SSMContacts.Client.list_pages_by_engagement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.list_pages_by_engagement)
 
 Arguments mapping described in
-[ListPagesByEngagementRequestTypeDef](./type_defs.md#listpagesbyengagementrequesttypedef).
+[ListPagesByEngagementRequestRequestTypeDef](./type_defs.md#listpagesbyengagementrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -498,7 +507,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPagesByEngagementResultResponseTypeDef](./type_defs.md#listpagesbyengagementresultresponsetypedef).
+[ListPagesByEngagementResultTypeDef](./type_defs.md#listpagesbyengagementresulttypedef).
 
 ### list_tags_for_resource
 
@@ -511,14 +520,14 @@ Boto3 documentation:
 [SSMContacts.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResultResponseTypeDef](./type_defs.md#listtagsforresourceresultresponsetypedef).
+[ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
 
 ### put_contact_policy
 
@@ -530,7 +539,7 @@ Boto3 documentation:
 [SSMContacts.Client.put_contact_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.put_contact_policy)
 
 Arguments mapping described in
-[PutContactPolicyRequestTypeDef](./type_defs.md#putcontactpolicyrequesttypedef).
+[PutContactPolicyRequestRequestTypeDef](./type_defs.md#putcontactpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -550,7 +559,7 @@ Boto3 documentation:
 [SSMContacts.Client.send_activation_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.send_activation_code)
 
 Arguments mapping described in
-[SendActivationCodeRequestTypeDef](./type_defs.md#sendactivationcoderequesttypedef).
+[SendActivationCodeRequestRequestTypeDef](./type_defs.md#sendactivationcoderequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -568,7 +577,7 @@ Boto3 documentation:
 [SSMContacts.Client.start_engagement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.start_engagement)
 
 Arguments mapping described in
-[StartEngagementRequestTypeDef](./type_defs.md#startengagementrequesttypedef).
+[StartEngagementRequestRequestTypeDef](./type_defs.md#startengagementrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -582,7 +591,7 @@ Keyword-only arguments:
 - `IdempotencyToken`: `str`
 
 Returns
-[StartEngagementResultResponseTypeDef](./type_defs.md#startengagementresultresponsetypedef).
+[StartEngagementResultTypeDef](./type_defs.md#startengagementresulttypedef).
 
 ### stop_engagement
 
@@ -595,7 +604,7 @@ Boto3 documentation:
 [SSMContacts.Client.stop_engagement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.stop_engagement)
 
 Arguments mapping described in
-[StopEngagementRequestTypeDef](./type_defs.md#stopengagementrequesttypedef).
+[StopEngagementRequestRequestTypeDef](./type_defs.md#stopengagementrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -614,7 +623,7 @@ Boto3 documentation:
 [SSMContacts.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -633,7 +642,7 @@ Boto3 documentation:
 [SSMContacts.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -652,7 +661,7 @@ Boto3 documentation:
 [SSMContacts.Client.update_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.update_contact)
 
 Arguments mapping described in
-[UpdateContactRequestTypeDef](./type_defs.md#updatecontactrequesttypedef).
+[UpdateContactRequestRequestTypeDef](./type_defs.md#updatecontactrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -673,7 +682,7 @@ Boto3 documentation:
 [SSMContacts.Client.update_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.update_contact_channel)
 
 Arguments mapping described in
-[UpdateContactChannelRequestTypeDef](./type_defs.md#updatecontactchannelrequesttypedef).
+[UpdateContactChannelRequestRequestTypeDef](./type_defs.md#updatecontactchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 

@@ -17,51 +17,51 @@ type annotations stubs module
   - [CelebrityRecognitionTypeDef](#celebrityrecognitiontypedef)
   - [CelebrityTypeDef](#celebritytypedef)
   - [CompareFacesMatchTypeDef](#comparefacesmatchtypedef)
-  - [CompareFacesRequestTypeDef](#comparefacesrequesttypedef)
-  - [CompareFacesResponseResponseTypeDef](#comparefacesresponseresponsetypedef)
+  - [CompareFacesRequestRequestTypeDef](#comparefacesrequestrequesttypedef)
+  - [CompareFacesResponseTypeDef](#comparefacesresponsetypedef)
   - [ComparedFaceTypeDef](#comparedfacetypedef)
   - [ComparedSourceImageFaceTypeDef](#comparedsourceimagefacetypedef)
   - [ContentModerationDetectionTypeDef](#contentmoderationdetectiontypedef)
   - [CoversBodyPartTypeDef](#coversbodyparttypedef)
-  - [CreateCollectionRequestTypeDef](#createcollectionrequesttypedef)
-  - [CreateCollectionResponseResponseTypeDef](#createcollectionresponseresponsetypedef)
-  - [CreateProjectRequestTypeDef](#createprojectrequesttypedef)
-  - [CreateProjectResponseResponseTypeDef](#createprojectresponseresponsetypedef)
-  - [CreateProjectVersionRequestTypeDef](#createprojectversionrequesttypedef)
-  - [CreateProjectVersionResponseResponseTypeDef](#createprojectversionresponseresponsetypedef)
-  - [CreateStreamProcessorRequestTypeDef](#createstreamprocessorrequesttypedef)
-  - [CreateStreamProcessorResponseResponseTypeDef](#createstreamprocessorresponseresponsetypedef)
+  - [CreateCollectionRequestRequestTypeDef](#createcollectionrequestrequesttypedef)
+  - [CreateCollectionResponseTypeDef](#createcollectionresponsetypedef)
+  - [CreateProjectRequestRequestTypeDef](#createprojectrequestrequesttypedef)
+  - [CreateProjectResponseTypeDef](#createprojectresponsetypedef)
+  - [CreateProjectVersionRequestRequestTypeDef](#createprojectversionrequestrequesttypedef)
+  - [CreateProjectVersionResponseTypeDef](#createprojectversionresponsetypedef)
+  - [CreateStreamProcessorRequestRequestTypeDef](#createstreamprocessorrequestrequesttypedef)
+  - [CreateStreamProcessorResponseTypeDef](#createstreamprocessorresponsetypedef)
   - [CustomLabelTypeDef](#customlabeltypedef)
-  - [DeleteCollectionRequestTypeDef](#deletecollectionrequesttypedef)
-  - [DeleteCollectionResponseResponseTypeDef](#deletecollectionresponseresponsetypedef)
-  - [DeleteFacesRequestTypeDef](#deletefacesrequesttypedef)
-  - [DeleteFacesResponseResponseTypeDef](#deletefacesresponseresponsetypedef)
-  - [DeleteProjectRequestTypeDef](#deleteprojectrequesttypedef)
-  - [DeleteProjectResponseResponseTypeDef](#deleteprojectresponseresponsetypedef)
-  - [DeleteProjectVersionRequestTypeDef](#deleteprojectversionrequesttypedef)
-  - [DeleteProjectVersionResponseResponseTypeDef](#deleteprojectversionresponseresponsetypedef)
-  - [DeleteStreamProcessorRequestTypeDef](#deletestreamprocessorrequesttypedef)
-  - [DescribeCollectionRequestTypeDef](#describecollectionrequesttypedef)
-  - [DescribeCollectionResponseResponseTypeDef](#describecollectionresponseresponsetypedef)
-  - [DescribeProjectVersionsRequestTypeDef](#describeprojectversionsrequesttypedef)
-  - [DescribeProjectVersionsResponseResponseTypeDef](#describeprojectversionsresponseresponsetypedef)
-  - [DescribeProjectsRequestTypeDef](#describeprojectsrequesttypedef)
-  - [DescribeProjectsResponseResponseTypeDef](#describeprojectsresponseresponsetypedef)
-  - [DescribeStreamProcessorRequestTypeDef](#describestreamprocessorrequesttypedef)
-  - [DescribeStreamProcessorResponseResponseTypeDef](#describestreamprocessorresponseresponsetypedef)
-  - [DetectCustomLabelsRequestTypeDef](#detectcustomlabelsrequesttypedef)
-  - [DetectCustomLabelsResponseResponseTypeDef](#detectcustomlabelsresponseresponsetypedef)
-  - [DetectFacesRequestTypeDef](#detectfacesrequesttypedef)
-  - [DetectFacesResponseResponseTypeDef](#detectfacesresponseresponsetypedef)
-  - [DetectLabelsRequestTypeDef](#detectlabelsrequesttypedef)
-  - [DetectLabelsResponseResponseTypeDef](#detectlabelsresponseresponsetypedef)
-  - [DetectModerationLabelsRequestTypeDef](#detectmoderationlabelsrequesttypedef)
-  - [DetectModerationLabelsResponseResponseTypeDef](#detectmoderationlabelsresponseresponsetypedef)
-  - [DetectProtectiveEquipmentRequestTypeDef](#detectprotectiveequipmentrequesttypedef)
-  - [DetectProtectiveEquipmentResponseResponseTypeDef](#detectprotectiveequipmentresponseresponsetypedef)
+  - [DeleteCollectionRequestRequestTypeDef](#deletecollectionrequestrequesttypedef)
+  - [DeleteCollectionResponseTypeDef](#deletecollectionresponsetypedef)
+  - [DeleteFacesRequestRequestTypeDef](#deletefacesrequestrequesttypedef)
+  - [DeleteFacesResponseTypeDef](#deletefacesresponsetypedef)
+  - [DeleteProjectRequestRequestTypeDef](#deleteprojectrequestrequesttypedef)
+  - [DeleteProjectResponseTypeDef](#deleteprojectresponsetypedef)
+  - [DeleteProjectVersionRequestRequestTypeDef](#deleteprojectversionrequestrequesttypedef)
+  - [DeleteProjectVersionResponseTypeDef](#deleteprojectversionresponsetypedef)
+  - [DeleteStreamProcessorRequestRequestTypeDef](#deletestreamprocessorrequestrequesttypedef)
+  - [DescribeCollectionRequestRequestTypeDef](#describecollectionrequestrequesttypedef)
+  - [DescribeCollectionResponseTypeDef](#describecollectionresponsetypedef)
+  - [DescribeProjectVersionsRequestRequestTypeDef](#describeprojectversionsrequestrequesttypedef)
+  - [DescribeProjectVersionsResponseTypeDef](#describeprojectversionsresponsetypedef)
+  - [DescribeProjectsRequestRequestTypeDef](#describeprojectsrequestrequesttypedef)
+  - [DescribeProjectsResponseTypeDef](#describeprojectsresponsetypedef)
+  - [DescribeStreamProcessorRequestRequestTypeDef](#describestreamprocessorrequestrequesttypedef)
+  - [DescribeStreamProcessorResponseTypeDef](#describestreamprocessorresponsetypedef)
+  - [DetectCustomLabelsRequestRequestTypeDef](#detectcustomlabelsrequestrequesttypedef)
+  - [DetectCustomLabelsResponseTypeDef](#detectcustomlabelsresponsetypedef)
+  - [DetectFacesRequestRequestTypeDef](#detectfacesrequestrequesttypedef)
+  - [DetectFacesResponseTypeDef](#detectfacesresponsetypedef)
+  - [DetectLabelsRequestRequestTypeDef](#detectlabelsrequestrequesttypedef)
+  - [DetectLabelsResponseTypeDef](#detectlabelsresponsetypedef)
+  - [DetectModerationLabelsRequestRequestTypeDef](#detectmoderationlabelsrequestrequesttypedef)
+  - [DetectModerationLabelsResponseTypeDef](#detectmoderationlabelsresponsetypedef)
+  - [DetectProtectiveEquipmentRequestRequestTypeDef](#detectprotectiveequipmentrequestrequesttypedef)
+  - [DetectProtectiveEquipmentResponseTypeDef](#detectprotectiveequipmentresponsetypedef)
   - [DetectTextFiltersTypeDef](#detecttextfilterstypedef)
-  - [DetectTextRequestTypeDef](#detecttextrequesttypedef)
-  - [DetectTextResponseResponseTypeDef](#detecttextresponseresponsetypedef)
+  - [DetectTextRequestRequestTypeDef](#detecttextrequestrequesttypedef)
+  - [DetectTextResponseTypeDef](#detecttextresponsetypedef)
   - [DetectionFilterTypeDef](#detectionfiltertypedef)
   - [EmotionTypeDef](#emotiontypedef)
   - [EquipmentDetectionTypeDef](#equipmentdetectiontypedef)
@@ -76,46 +76,46 @@ type annotations stubs module
   - [FaceTypeDef](#facetypedef)
   - [GenderTypeDef](#gendertypedef)
   - [GeometryTypeDef](#geometrytypedef)
-  - [GetCelebrityInfoRequestTypeDef](#getcelebrityinforequesttypedef)
-  - [GetCelebrityInfoResponseResponseTypeDef](#getcelebrityinforesponseresponsetypedef)
-  - [GetCelebrityRecognitionRequestTypeDef](#getcelebrityrecognitionrequesttypedef)
-  - [GetCelebrityRecognitionResponseResponseTypeDef](#getcelebrityrecognitionresponseresponsetypedef)
-  - [GetContentModerationRequestTypeDef](#getcontentmoderationrequesttypedef)
-  - [GetContentModerationResponseResponseTypeDef](#getcontentmoderationresponseresponsetypedef)
-  - [GetFaceDetectionRequestTypeDef](#getfacedetectionrequesttypedef)
-  - [GetFaceDetectionResponseResponseTypeDef](#getfacedetectionresponseresponsetypedef)
-  - [GetFaceSearchRequestTypeDef](#getfacesearchrequesttypedef)
-  - [GetFaceSearchResponseResponseTypeDef](#getfacesearchresponseresponsetypedef)
-  - [GetLabelDetectionRequestTypeDef](#getlabeldetectionrequesttypedef)
-  - [GetLabelDetectionResponseResponseTypeDef](#getlabeldetectionresponseresponsetypedef)
-  - [GetPersonTrackingRequestTypeDef](#getpersontrackingrequesttypedef)
-  - [GetPersonTrackingResponseResponseTypeDef](#getpersontrackingresponseresponsetypedef)
-  - [GetSegmentDetectionRequestTypeDef](#getsegmentdetectionrequesttypedef)
-  - [GetSegmentDetectionResponseResponseTypeDef](#getsegmentdetectionresponseresponsetypedef)
-  - [GetTextDetectionRequestTypeDef](#gettextdetectionrequesttypedef)
-  - [GetTextDetectionResponseResponseTypeDef](#gettextdetectionresponseresponsetypedef)
+  - [GetCelebrityInfoRequestRequestTypeDef](#getcelebrityinforequestrequesttypedef)
+  - [GetCelebrityInfoResponseTypeDef](#getcelebrityinforesponsetypedef)
+  - [GetCelebrityRecognitionRequestRequestTypeDef](#getcelebrityrecognitionrequestrequesttypedef)
+  - [GetCelebrityRecognitionResponseTypeDef](#getcelebrityrecognitionresponsetypedef)
+  - [GetContentModerationRequestRequestTypeDef](#getcontentmoderationrequestrequesttypedef)
+  - [GetContentModerationResponseTypeDef](#getcontentmoderationresponsetypedef)
+  - [GetFaceDetectionRequestRequestTypeDef](#getfacedetectionrequestrequesttypedef)
+  - [GetFaceDetectionResponseTypeDef](#getfacedetectionresponsetypedef)
+  - [GetFaceSearchRequestRequestTypeDef](#getfacesearchrequestrequesttypedef)
+  - [GetFaceSearchResponseTypeDef](#getfacesearchresponsetypedef)
+  - [GetLabelDetectionRequestRequestTypeDef](#getlabeldetectionrequestrequesttypedef)
+  - [GetLabelDetectionResponseTypeDef](#getlabeldetectionresponsetypedef)
+  - [GetPersonTrackingRequestRequestTypeDef](#getpersontrackingrequestrequesttypedef)
+  - [GetPersonTrackingResponseTypeDef](#getpersontrackingresponsetypedef)
+  - [GetSegmentDetectionRequestRequestTypeDef](#getsegmentdetectionrequestrequesttypedef)
+  - [GetSegmentDetectionResponseTypeDef](#getsegmentdetectionresponsetypedef)
+  - [GetTextDetectionRequestRequestTypeDef](#gettextdetectionrequestrequesttypedef)
+  - [GetTextDetectionResponseTypeDef](#gettextdetectionresponsetypedef)
   - [GroundTruthManifestTypeDef](#groundtruthmanifesttypedef)
   - [HumanLoopActivationOutputTypeDef](#humanloopactivationoutputtypedef)
   - [HumanLoopConfigTypeDef](#humanloopconfigtypedef)
   - [HumanLoopDataAttributesTypeDef](#humanloopdataattributestypedef)
   - [ImageQualityTypeDef](#imagequalitytypedef)
   - [ImageTypeDef](#imagetypedef)
-  - [IndexFacesRequestTypeDef](#indexfacesrequesttypedef)
-  - [IndexFacesResponseResponseTypeDef](#indexfacesresponseresponsetypedef)
+  - [IndexFacesRequestRequestTypeDef](#indexfacesrequestrequesttypedef)
+  - [IndexFacesResponseTypeDef](#indexfacesresponsetypedef)
   - [InstanceTypeDef](#instancetypedef)
   - [KinesisDataStreamTypeDef](#kinesisdatastreamtypedef)
   - [KinesisVideoStreamTypeDef](#kinesisvideostreamtypedef)
   - [LabelDetectionTypeDef](#labeldetectiontypedef)
   - [LabelTypeDef](#labeltypedef)
   - [LandmarkTypeDef](#landmarktypedef)
-  - [ListCollectionsRequestTypeDef](#listcollectionsrequesttypedef)
-  - [ListCollectionsResponseResponseTypeDef](#listcollectionsresponseresponsetypedef)
-  - [ListFacesRequestTypeDef](#listfacesrequesttypedef)
-  - [ListFacesResponseResponseTypeDef](#listfacesresponseresponsetypedef)
-  - [ListStreamProcessorsRequestTypeDef](#liststreamprocessorsrequesttypedef)
-  - [ListStreamProcessorsResponseResponseTypeDef](#liststreamprocessorsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListCollectionsRequestRequestTypeDef](#listcollectionsrequestrequesttypedef)
+  - [ListCollectionsResponseTypeDef](#listcollectionsresponsetypedef)
+  - [ListFacesRequestRequestTypeDef](#listfacesrequestrequesttypedef)
+  - [ListFacesResponseTypeDef](#listfacesresponsetypedef)
+  - [ListStreamProcessorsRequestRequestTypeDef](#liststreamprocessorsrequestrequesttypedef)
+  - [ListStreamProcessorsResponseTypeDef](#liststreamprocessorsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ModerationLabelTypeDef](#moderationlabeltypedef)
   - [MouthOpenTypeDef](#mouthopentypedef)
   - [MustacheTypeDef](#mustachetypedef)
@@ -134,52 +134,52 @@ type annotations stubs module
   - [ProtectiveEquipmentPersonTypeDef](#protectiveequipmentpersontypedef)
   - [ProtectiveEquipmentSummarizationAttributesTypeDef](#protectiveequipmentsummarizationattributestypedef)
   - [ProtectiveEquipmentSummaryTypeDef](#protectiveequipmentsummarytypedef)
-  - [RecognizeCelebritiesRequestTypeDef](#recognizecelebritiesrequesttypedef)
-  - [RecognizeCelebritiesResponseResponseTypeDef](#recognizecelebritiesresponseresponsetypedef)
+  - [RecognizeCelebritiesRequestRequestTypeDef](#recognizecelebritiesrequestrequesttypedef)
+  - [RecognizeCelebritiesResponseTypeDef](#recognizecelebritiesresponsetypedef)
   - [RegionOfInterestTypeDef](#regionofinteresttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3ObjectTypeDef](#s3objecttypedef)
-  - [SearchFacesByImageRequestTypeDef](#searchfacesbyimagerequesttypedef)
-  - [SearchFacesByImageResponseResponseTypeDef](#searchfacesbyimageresponseresponsetypedef)
-  - [SearchFacesRequestTypeDef](#searchfacesrequesttypedef)
-  - [SearchFacesResponseResponseTypeDef](#searchfacesresponseresponsetypedef)
+  - [SearchFacesByImageRequestRequestTypeDef](#searchfacesbyimagerequestrequesttypedef)
+  - [SearchFacesByImageResponseTypeDef](#searchfacesbyimageresponsetypedef)
+  - [SearchFacesRequestRequestTypeDef](#searchfacesrequestrequesttypedef)
+  - [SearchFacesResponseTypeDef](#searchfacesresponsetypedef)
   - [SegmentDetectionTypeDef](#segmentdetectiontypedef)
   - [SegmentTypeInfoTypeDef](#segmenttypeinfotypedef)
   - [ShotSegmentTypeDef](#shotsegmenttypedef)
   - [SmileTypeDef](#smiletypedef)
-  - [StartCelebrityRecognitionRequestTypeDef](#startcelebrityrecognitionrequesttypedef)
-  - [StartCelebrityRecognitionResponseResponseTypeDef](#startcelebrityrecognitionresponseresponsetypedef)
-  - [StartContentModerationRequestTypeDef](#startcontentmoderationrequesttypedef)
-  - [StartContentModerationResponseResponseTypeDef](#startcontentmoderationresponseresponsetypedef)
-  - [StartFaceDetectionRequestTypeDef](#startfacedetectionrequesttypedef)
-  - [StartFaceDetectionResponseResponseTypeDef](#startfacedetectionresponseresponsetypedef)
-  - [StartFaceSearchRequestTypeDef](#startfacesearchrequesttypedef)
-  - [StartFaceSearchResponseResponseTypeDef](#startfacesearchresponseresponsetypedef)
-  - [StartLabelDetectionRequestTypeDef](#startlabeldetectionrequesttypedef)
-  - [StartLabelDetectionResponseResponseTypeDef](#startlabeldetectionresponseresponsetypedef)
-  - [StartPersonTrackingRequestTypeDef](#startpersontrackingrequesttypedef)
-  - [StartPersonTrackingResponseResponseTypeDef](#startpersontrackingresponseresponsetypedef)
-  - [StartProjectVersionRequestTypeDef](#startprojectversionrequesttypedef)
-  - [StartProjectVersionResponseResponseTypeDef](#startprojectversionresponseresponsetypedef)
+  - [StartCelebrityRecognitionRequestRequestTypeDef](#startcelebrityrecognitionrequestrequesttypedef)
+  - [StartCelebrityRecognitionResponseTypeDef](#startcelebrityrecognitionresponsetypedef)
+  - [StartContentModerationRequestRequestTypeDef](#startcontentmoderationrequestrequesttypedef)
+  - [StartContentModerationResponseTypeDef](#startcontentmoderationresponsetypedef)
+  - [StartFaceDetectionRequestRequestTypeDef](#startfacedetectionrequestrequesttypedef)
+  - [StartFaceDetectionResponseTypeDef](#startfacedetectionresponsetypedef)
+  - [StartFaceSearchRequestRequestTypeDef](#startfacesearchrequestrequesttypedef)
+  - [StartFaceSearchResponseTypeDef](#startfacesearchresponsetypedef)
+  - [StartLabelDetectionRequestRequestTypeDef](#startlabeldetectionrequestrequesttypedef)
+  - [StartLabelDetectionResponseTypeDef](#startlabeldetectionresponsetypedef)
+  - [StartPersonTrackingRequestRequestTypeDef](#startpersontrackingrequestrequesttypedef)
+  - [StartPersonTrackingResponseTypeDef](#startpersontrackingresponsetypedef)
+  - [StartProjectVersionRequestRequestTypeDef](#startprojectversionrequestrequesttypedef)
+  - [StartProjectVersionResponseTypeDef](#startprojectversionresponsetypedef)
   - [StartSegmentDetectionFiltersTypeDef](#startsegmentdetectionfilterstypedef)
-  - [StartSegmentDetectionRequestTypeDef](#startsegmentdetectionrequesttypedef)
-  - [StartSegmentDetectionResponseResponseTypeDef](#startsegmentdetectionresponseresponsetypedef)
+  - [StartSegmentDetectionRequestRequestTypeDef](#startsegmentdetectionrequestrequesttypedef)
+  - [StartSegmentDetectionResponseTypeDef](#startsegmentdetectionresponsetypedef)
   - [StartShotDetectionFilterTypeDef](#startshotdetectionfiltertypedef)
-  - [StartStreamProcessorRequestTypeDef](#startstreamprocessorrequesttypedef)
+  - [StartStreamProcessorRequestRequestTypeDef](#startstreamprocessorrequestrequesttypedef)
   - [StartTechnicalCueDetectionFilterTypeDef](#starttechnicalcuedetectionfiltertypedef)
   - [StartTextDetectionFiltersTypeDef](#starttextdetectionfilterstypedef)
-  - [StartTextDetectionRequestTypeDef](#starttextdetectionrequesttypedef)
-  - [StartTextDetectionResponseResponseTypeDef](#starttextdetectionresponseresponsetypedef)
-  - [StopProjectVersionRequestTypeDef](#stopprojectversionrequesttypedef)
-  - [StopProjectVersionResponseResponseTypeDef](#stopprojectversionresponseresponsetypedef)
-  - [StopStreamProcessorRequestTypeDef](#stopstreamprocessorrequesttypedef)
+  - [StartTextDetectionRequestRequestTypeDef](#starttextdetectionrequestrequesttypedef)
+  - [StartTextDetectionResponseTypeDef](#starttextdetectionresponsetypedef)
+  - [StopProjectVersionRequestRequestTypeDef](#stopprojectversionrequestrequesttypedef)
+  - [StopProjectVersionResponseTypeDef](#stopprojectversionresponsetypedef)
+  - [StopStreamProcessorRequestRequestTypeDef](#stopstreamprocessorrequestrequesttypedef)
   - [StreamProcessorInputTypeDef](#streamprocessorinputtypedef)
   - [StreamProcessorOutputTypeDef](#streamprocessoroutputtypedef)
   - [StreamProcessorSettingsTypeDef](#streamprocessorsettingstypedef)
   - [StreamProcessorTypeDef](#streamprocessortypedef)
   - [SummaryTypeDef](#summarytypedef)
   - [SunglassesTypeDef](#sunglassestypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TechnicalCueSegmentTypeDef](#technicalcuesegmenttypedef)
   - [TestingDataResultTypeDef](#testingdataresulttypedef)
   - [TestingDataTypeDef](#testingdatatypedef)
@@ -188,7 +188,7 @@ type annotations stubs module
   - [TrainingDataResultTypeDef](#trainingdataresulttypedef)
   - [TrainingDataTypeDef](#trainingdatatypedef)
   - [UnindexedFaceTypeDef](#unindexedfacetypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [ValidationDataTypeDef](#validationdatatypedef)
   - [VideoMetadataTypeDef](#videometadatatypedef)
   - [VideoTypeDef](#videotypedef)
@@ -304,10 +304,10 @@ Optional fields:
 - `Similarity`: `float`
 - `Face`: [ComparedFaceTypeDef](./type_defs.md#comparedfacetypedef)
 
-## CompareFacesRequestTypeDef
+## CompareFacesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import CompareFacesRequestTypeDef
+from mypy_boto3_rekognition.type_defs import CompareFacesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -320,10 +320,10 @@ Optional fields:
 - `SimilarityThreshold`: `float`
 - `QualityFilter`: [QualityFilterType](./literals.md#qualityfiltertype)
 
-## CompareFacesResponseResponseTypeDef
+## CompareFacesResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import CompareFacesResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import CompareFacesResponseTypeDef
 ```
 
 Required fields:
@@ -389,10 +389,10 @@ Optional fields:
 - `Confidence`: `float`
 - `Value`: `bool`
 
-## CreateCollectionRequestTypeDef
+## CreateCollectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import CreateCollectionRequestTypeDef
+from mypy_boto3_rekognition.type_defs import CreateCollectionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -403,10 +403,10 @@ Optional fields:
 
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateCollectionResponseResponseTypeDef
+## CreateCollectionResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import CreateCollectionResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import CreateCollectionResponseTypeDef
 ```
 
 Required fields:
@@ -417,20 +417,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateProjectRequestTypeDef
+## CreateProjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import CreateProjectRequestTypeDef
+from mypy_boto3_rekognition.type_defs import CreateProjectRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ProjectName`: `str`
 
-## CreateProjectResponseResponseTypeDef
+## CreateProjectResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import CreateProjectResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import CreateProjectResponseTypeDef
 ```
 
 Required fields:
@@ -439,10 +439,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateProjectVersionRequestTypeDef
+## CreateProjectVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import CreateProjectVersionRequestTypeDef
+from mypy_boto3_rekognition.type_defs import CreateProjectVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -458,10 +458,10 @@ Optional fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `KmsKeyId`: `str`
 
-## CreateProjectVersionResponseResponseTypeDef
+## CreateProjectVersionResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import CreateProjectVersionResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import CreateProjectVersionResponseTypeDef
 ```
 
 Required fields:
@@ -470,10 +470,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateStreamProcessorRequestTypeDef
+## CreateStreamProcessorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import CreateStreamProcessorRequestTypeDef
+from mypy_boto3_rekognition.type_defs import CreateStreamProcessorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -491,10 +491,10 @@ Optional fields:
 
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateStreamProcessorResponseResponseTypeDef
+## CreateStreamProcessorResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import CreateStreamProcessorResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import CreateStreamProcessorResponseTypeDef
 ```
 
 Required fields:
@@ -515,20 +515,20 @@ Optional fields:
 - `Confidence`: `float`
 - `Geometry`: [GeometryTypeDef](./type_defs.md#geometrytypedef)
 
-## DeleteCollectionRequestTypeDef
+## DeleteCollectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DeleteCollectionRequestTypeDef
+from mypy_boto3_rekognition.type_defs import DeleteCollectionRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `CollectionId`: `str`
 
-## DeleteCollectionResponseResponseTypeDef
+## DeleteCollectionResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DeleteCollectionResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import DeleteCollectionResponseTypeDef
 ```
 
 Required fields:
@@ -537,10 +537,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteFacesRequestTypeDef
+## DeleteFacesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DeleteFacesRequestTypeDef
+from mypy_boto3_rekognition.type_defs import DeleteFacesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -548,10 +548,10 @@ Required fields:
 - `CollectionId`: `str`
 - `FaceIds`: `List`\[`str`\]
 
-## DeleteFacesResponseResponseTypeDef
+## DeleteFacesResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DeleteFacesResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import DeleteFacesResponseTypeDef
 ```
 
 Required fields:
@@ -560,20 +560,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteProjectRequestTypeDef
+## DeleteProjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DeleteProjectRequestTypeDef
+from mypy_boto3_rekognition.type_defs import DeleteProjectRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ProjectArn`: `str`
 
-## DeleteProjectResponseResponseTypeDef
+## DeleteProjectResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DeleteProjectResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import DeleteProjectResponseTypeDef
 ```
 
 Required fields:
@@ -582,20 +582,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteProjectVersionRequestTypeDef
+## DeleteProjectVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DeleteProjectVersionRequestTypeDef
+from mypy_boto3_rekognition.type_defs import DeleteProjectVersionRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ProjectVersionArn`: `str`
 
-## DeleteProjectVersionResponseResponseTypeDef
+## DeleteProjectVersionResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DeleteProjectVersionResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import DeleteProjectVersionResponseTypeDef
 ```
 
 Required fields:
@@ -604,30 +604,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteStreamProcessorRequestTypeDef
+## DeleteStreamProcessorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DeleteStreamProcessorRequestTypeDef
+from mypy_boto3_rekognition.type_defs import DeleteStreamProcessorRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DescribeCollectionRequestTypeDef
+## DescribeCollectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DescribeCollectionRequestTypeDef
+from mypy_boto3_rekognition.type_defs import DescribeCollectionRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `CollectionId`: `str`
 
-## DescribeCollectionResponseResponseTypeDef
+## DescribeCollectionResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DescribeCollectionResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import DescribeCollectionResponseTypeDef
 ```
 
 Required fields:
@@ -639,10 +639,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeProjectVersionsRequestTypeDef
+## DescribeProjectVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DescribeProjectVersionsRequestTypeDef
+from mypy_boto3_rekognition.type_defs import DescribeProjectVersionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -655,10 +655,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## DescribeProjectVersionsResponseResponseTypeDef
+## DescribeProjectVersionsResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DescribeProjectVersionsResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import DescribeProjectVersionsResponseTypeDef
 ```
 
 Required fields:
@@ -669,10 +669,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeProjectsRequestTypeDef
+## DescribeProjectsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DescribeProjectsRequestTypeDef
+from mypy_boto3_rekognition.type_defs import DescribeProjectsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -680,10 +680,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## DescribeProjectsResponseResponseTypeDef
+## DescribeProjectsResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DescribeProjectsResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import DescribeProjectsResponseTypeDef
 ```
 
 Required fields:
@@ -694,20 +694,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStreamProcessorRequestTypeDef
+## DescribeStreamProcessorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DescribeStreamProcessorRequestTypeDef
+from mypy_boto3_rekognition.type_defs import DescribeStreamProcessorRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DescribeStreamProcessorResponseResponseTypeDef
+## DescribeStreamProcessorResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DescribeStreamProcessorResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import DescribeStreamProcessorResponseTypeDef
 ```
 
 Required fields:
@@ -729,10 +729,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetectCustomLabelsRequestTypeDef
+## DetectCustomLabelsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DetectCustomLabelsRequestTypeDef
+from mypy_boto3_rekognition.type_defs import DetectCustomLabelsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -745,10 +745,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `MinConfidence`: `float`
 
-## DetectCustomLabelsResponseResponseTypeDef
+## DetectCustomLabelsResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DetectCustomLabelsResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import DetectCustomLabelsResponseTypeDef
 ```
 
 Required fields:
@@ -758,10 +758,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetectFacesRequestTypeDef
+## DetectFacesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DetectFacesRequestTypeDef
+from mypy_boto3_rekognition.type_defs import DetectFacesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -772,10 +772,10 @@ Optional fields:
 
 - `Attributes`: `List`\[[AttributeType](./literals.md#attributetype)\]
 
-## DetectFacesResponseResponseTypeDef
+## DetectFacesResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DetectFacesResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import DetectFacesResponseTypeDef
 ```
 
 Required fields:
@@ -787,10 +787,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetectLabelsRequestTypeDef
+## DetectLabelsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DetectLabelsRequestTypeDef
+from mypy_boto3_rekognition.type_defs import DetectLabelsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -802,10 +802,10 @@ Optional fields:
 - `MaxLabels`: `int`
 - `MinConfidence`: `float`
 
-## DetectLabelsResponseResponseTypeDef
+## DetectLabelsResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DetectLabelsResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import DetectLabelsResponseTypeDef
 ```
 
 Required fields:
@@ -817,10 +817,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetectModerationLabelsRequestTypeDef
+## DetectModerationLabelsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DetectModerationLabelsRequestTypeDef
+from mypy_boto3_rekognition.type_defs import DetectModerationLabelsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -833,10 +833,10 @@ Optional fields:
 - `HumanLoopConfig`:
   [HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef)
 
-## DetectModerationLabelsResponseResponseTypeDef
+## DetectModerationLabelsResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DetectModerationLabelsResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import DetectModerationLabelsResponseTypeDef
 ```
 
 Required fields:
@@ -849,10 +849,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetectProtectiveEquipmentRequestTypeDef
+## DetectProtectiveEquipmentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DetectProtectiveEquipmentRequestTypeDef
+from mypy_boto3_rekognition.type_defs import DetectProtectiveEquipmentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -864,10 +864,10 @@ Optional fields:
 - `SummarizationAttributes`:
   [ProtectiveEquipmentSummarizationAttributesTypeDef](./type_defs.md#protectiveequipmentsummarizationattributestypedef)
 
-## DetectProtectiveEquipmentResponseResponseTypeDef
+## DetectProtectiveEquipmentResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DetectProtectiveEquipmentResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import DetectProtectiveEquipmentResponseTypeDef
 ```
 
 Required fields:
@@ -892,10 +892,10 @@ Optional fields:
 - `RegionsOfInterest`:
   `List`\[[RegionOfInterestTypeDef](./type_defs.md#regionofinteresttypedef)\]
 
-## DetectTextRequestTypeDef
+## DetectTextRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DetectTextRequestTypeDef
+from mypy_boto3_rekognition.type_defs import DetectTextRequestRequestTypeDef
 ```
 
 Required fields:
@@ -907,10 +907,10 @@ Optional fields:
 - `Filters`:
   [DetectTextFiltersTypeDef](./type_defs.md#detecttextfilterstypedef)
 
-## DetectTextResponseResponseTypeDef
+## DetectTextResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import DetectTextResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import DetectTextResponseTypeDef
 ```
 
 Required fields:
@@ -1096,20 +1096,20 @@ Optional fields:
 - `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
 - `Polygon`: `List`\[[PointTypeDef](./type_defs.md#pointtypedef)\]
 
-## GetCelebrityInfoRequestTypeDef
+## GetCelebrityInfoRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import GetCelebrityInfoRequestTypeDef
+from mypy_boto3_rekognition.type_defs import GetCelebrityInfoRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Id`: `str`
 
-## GetCelebrityInfoResponseResponseTypeDef
+## GetCelebrityInfoResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import GetCelebrityInfoResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import GetCelebrityInfoResponseTypeDef
 ```
 
 Required fields:
@@ -1119,10 +1119,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCelebrityRecognitionRequestTypeDef
+## GetCelebrityRecognitionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import GetCelebrityRecognitionRequestTypeDef
+from mypy_boto3_rekognition.type_defs import GetCelebrityRecognitionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1136,10 +1136,10 @@ Optional fields:
 - `SortBy`:
   [CelebrityRecognitionSortByType](./literals.md#celebrityrecognitionsortbytype)
 
-## GetCelebrityRecognitionResponseResponseTypeDef
+## GetCelebrityRecognitionResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import GetCelebrityRecognitionResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import GetCelebrityRecognitionResponseTypeDef
 ```
 
 Required fields:
@@ -1153,10 +1153,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetContentModerationRequestTypeDef
+## GetContentModerationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import GetContentModerationRequestTypeDef
+from mypy_boto3_rekognition.type_defs import GetContentModerationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1170,10 +1170,10 @@ Optional fields:
 - `SortBy`:
   [ContentModerationSortByType](./literals.md#contentmoderationsortbytype)
 
-## GetContentModerationResponseResponseTypeDef
+## GetContentModerationResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import GetContentModerationResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import GetContentModerationResponseTypeDef
 ```
 
 Required fields:
@@ -1188,10 +1188,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFaceDetectionRequestTypeDef
+## GetFaceDetectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import GetFaceDetectionRequestTypeDef
+from mypy_boto3_rekognition.type_defs import GetFaceDetectionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1203,10 +1203,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## GetFaceDetectionResponseResponseTypeDef
+## GetFaceDetectionResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import GetFaceDetectionResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import GetFaceDetectionResponseTypeDef
 ```
 
 Required fields:
@@ -1220,10 +1220,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFaceSearchRequestTypeDef
+## GetFaceSearchRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import GetFaceSearchRequestTypeDef
+from mypy_boto3_rekognition.type_defs import GetFaceSearchRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1236,10 +1236,10 @@ Optional fields:
 - `NextToken`: `str`
 - `SortBy`: [FaceSearchSortByType](./literals.md#facesearchsortbytype)
 
-## GetFaceSearchResponseResponseTypeDef
+## GetFaceSearchResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import GetFaceSearchResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import GetFaceSearchResponseTypeDef
 ```
 
 Required fields:
@@ -1252,10 +1252,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLabelDetectionRequestTypeDef
+## GetLabelDetectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import GetLabelDetectionRequestTypeDef
+from mypy_boto3_rekognition.type_defs import GetLabelDetectionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1268,10 +1268,10 @@ Optional fields:
 - `NextToken`: `str`
 - `SortBy`: [LabelDetectionSortByType](./literals.md#labeldetectionsortbytype)
 
-## GetLabelDetectionResponseResponseTypeDef
+## GetLabelDetectionResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import GetLabelDetectionResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import GetLabelDetectionResponseTypeDef
 ```
 
 Required fields:
@@ -1286,10 +1286,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPersonTrackingRequestTypeDef
+## GetPersonTrackingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import GetPersonTrackingRequestTypeDef
+from mypy_boto3_rekognition.type_defs import GetPersonTrackingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1302,10 +1302,10 @@ Optional fields:
 - `NextToken`: `str`
 - `SortBy`: [PersonTrackingSortByType](./literals.md#persontrackingsortbytype)
 
-## GetPersonTrackingResponseResponseTypeDef
+## GetPersonTrackingResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import GetPersonTrackingResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import GetPersonTrackingResponseTypeDef
 ```
 
 Required fields:
@@ -1319,10 +1319,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSegmentDetectionRequestTypeDef
+## GetSegmentDetectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import GetSegmentDetectionRequestTypeDef
+from mypy_boto3_rekognition.type_defs import GetSegmentDetectionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1334,10 +1334,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## GetSegmentDetectionResponseResponseTypeDef
+## GetSegmentDetectionResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import GetSegmentDetectionResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import GetSegmentDetectionResponseTypeDef
 ```
 
 Required fields:
@@ -1356,10 +1356,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTextDetectionRequestTypeDef
+## GetTextDetectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import GetTextDetectionRequestTypeDef
+from mypy_boto3_rekognition.type_defs import GetTextDetectionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1371,10 +1371,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## GetTextDetectionResponseResponseTypeDef
+## GetTextDetectionResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import GetTextDetectionResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import GetTextDetectionResponseTypeDef
 ```
 
 Required fields:
@@ -1460,10 +1460,10 @@ Optional fields:
 - `Bytes`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `S3Object`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
 
-## IndexFacesRequestTypeDef
+## IndexFacesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import IndexFacesRequestTypeDef
+from mypy_boto3_rekognition.type_defs import IndexFacesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1478,10 +1478,10 @@ Optional fields:
 - `MaxFaces`: `int`
 - `QualityFilter`: [QualityFilterType](./literals.md#qualityfiltertype)
 
-## IndexFacesResponseResponseTypeDef
+## IndexFacesResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import IndexFacesResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import IndexFacesResponseTypeDef
 ```
 
 Required fields:
@@ -1563,10 +1563,10 @@ Optional fields:
 - `X`: `float`
 - `Y`: `float`
 
-## ListCollectionsRequestTypeDef
+## ListCollectionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import ListCollectionsRequestTypeDef
+from mypy_boto3_rekognition.type_defs import ListCollectionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1574,10 +1574,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListCollectionsResponseResponseTypeDef
+## ListCollectionsResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import ListCollectionsResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import ListCollectionsResponseTypeDef
 ```
 
 Required fields:
@@ -1588,10 +1588,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFacesRequestTypeDef
+## ListFacesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import ListFacesRequestTypeDef
+from mypy_boto3_rekognition.type_defs import ListFacesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1603,10 +1603,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListFacesResponseResponseTypeDef
+## ListFacesResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import ListFacesResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import ListFacesResponseTypeDef
 ```
 
 Required fields:
@@ -1617,10 +1617,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStreamProcessorsRequestTypeDef
+## ListStreamProcessorsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import ListStreamProcessorsRequestTypeDef
+from mypy_boto3_rekognition.type_defs import ListStreamProcessorsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1628,10 +1628,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListStreamProcessorsResponseResponseTypeDef
+## ListStreamProcessorsResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import ListStreamProcessorsResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import ListStreamProcessorsResponseTypeDef
 ```
 
 Required fields:
@@ -1642,20 +1642,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_rekognition.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -1889,20 +1889,20 @@ Optional fields:
 - `PersonsWithoutRequiredEquipment`: `List`\[`int`\]
 - `PersonsIndeterminate`: `List`\[`int`\]
 
-## RecognizeCelebritiesRequestTypeDef
+## RecognizeCelebritiesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import RecognizeCelebritiesRequestTypeDef
+from mypy_boto3_rekognition.type_defs import RecognizeCelebritiesRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Image`: [ImageTypeDef](./type_defs.md#imagetypedef)
 
-## RecognizeCelebritiesResponseResponseTypeDef
+## RecognizeCelebritiesResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import RecognizeCelebritiesResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import RecognizeCelebritiesResponseTypeDef
 ```
 
 Required fields:
@@ -1952,10 +1952,10 @@ Optional fields:
 - `Name`: `str`
 - `Version`: `str`
 
-## SearchFacesByImageRequestTypeDef
+## SearchFacesByImageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import SearchFacesByImageRequestTypeDef
+from mypy_boto3_rekognition.type_defs import SearchFacesByImageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1969,10 +1969,10 @@ Optional fields:
 - `FaceMatchThreshold`: `float`
 - `QualityFilter`: [QualityFilterType](./literals.md#qualityfiltertype)
 
-## SearchFacesByImageResponseResponseTypeDef
+## SearchFacesByImageResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import SearchFacesByImageResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import SearchFacesByImageResponseTypeDef
 ```
 
 Required fields:
@@ -1985,10 +1985,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SearchFacesRequestTypeDef
+## SearchFacesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import SearchFacesRequestTypeDef
+from mypy_boto3_rekognition.type_defs import SearchFacesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2001,10 +2001,10 @@ Optional fields:
 - `MaxFaces`: `int`
 - `FaceMatchThreshold`: `float`
 
-## SearchFacesResponseResponseTypeDef
+## SearchFacesResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import SearchFacesResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import SearchFacesResponseTypeDef
 ```
 
 Required fields:
@@ -2067,10 +2067,10 @@ Optional fields:
 - `Value`: `bool`
 - `Confidence`: `float`
 
-## StartCelebrityRecognitionRequestTypeDef
+## StartCelebrityRecognitionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import StartCelebrityRecognitionRequestTypeDef
+from mypy_boto3_rekognition.type_defs import StartCelebrityRecognitionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2084,10 +2084,10 @@ Optional fields:
   [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
 - `JobTag`: `str`
 
-## StartCelebrityRecognitionResponseResponseTypeDef
+## StartCelebrityRecognitionResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import StartCelebrityRecognitionResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import StartCelebrityRecognitionResponseTypeDef
 ```
 
 Required fields:
@@ -2096,10 +2096,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartContentModerationRequestTypeDef
+## StartContentModerationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import StartContentModerationRequestTypeDef
+from mypy_boto3_rekognition.type_defs import StartContentModerationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2114,10 +2114,10 @@ Optional fields:
   [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
 - `JobTag`: `str`
 
-## StartContentModerationResponseResponseTypeDef
+## StartContentModerationResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import StartContentModerationResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import StartContentModerationResponseTypeDef
 ```
 
 Required fields:
@@ -2126,10 +2126,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartFaceDetectionRequestTypeDef
+## StartFaceDetectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import StartFaceDetectionRequestTypeDef
+from mypy_boto3_rekognition.type_defs import StartFaceDetectionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2144,10 +2144,10 @@ Optional fields:
 - `FaceAttributes`: [FaceAttributesType](./literals.md#faceattributestype)
 - `JobTag`: `str`
 
-## StartFaceDetectionResponseResponseTypeDef
+## StartFaceDetectionResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import StartFaceDetectionResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import StartFaceDetectionResponseTypeDef
 ```
 
 Required fields:
@@ -2156,10 +2156,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartFaceSearchRequestTypeDef
+## StartFaceSearchRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import StartFaceSearchRequestTypeDef
+from mypy_boto3_rekognition.type_defs import StartFaceSearchRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2175,10 +2175,10 @@ Optional fields:
   [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
 - `JobTag`: `str`
 
-## StartFaceSearchResponseResponseTypeDef
+## StartFaceSearchResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import StartFaceSearchResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import StartFaceSearchResponseTypeDef
 ```
 
 Required fields:
@@ -2187,10 +2187,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartLabelDetectionRequestTypeDef
+## StartLabelDetectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import StartLabelDetectionRequestTypeDef
+from mypy_boto3_rekognition.type_defs import StartLabelDetectionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2205,10 +2205,10 @@ Optional fields:
   [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
 - `JobTag`: `str`
 
-## StartLabelDetectionResponseResponseTypeDef
+## StartLabelDetectionResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import StartLabelDetectionResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import StartLabelDetectionResponseTypeDef
 ```
 
 Required fields:
@@ -2217,10 +2217,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartPersonTrackingRequestTypeDef
+## StartPersonTrackingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import StartPersonTrackingRequestTypeDef
+from mypy_boto3_rekognition.type_defs import StartPersonTrackingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2234,10 +2234,10 @@ Optional fields:
   [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
 - `JobTag`: `str`
 
-## StartPersonTrackingResponseResponseTypeDef
+## StartPersonTrackingResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import StartPersonTrackingResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import StartPersonTrackingResponseTypeDef
 ```
 
 Required fields:
@@ -2246,10 +2246,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartProjectVersionRequestTypeDef
+## StartProjectVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import StartProjectVersionRequestTypeDef
+from mypy_boto3_rekognition.type_defs import StartProjectVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2257,10 +2257,10 @@ Required fields:
 - `ProjectVersionArn`: `str`
 - `MinInferenceUnits`: `int`
 
-## StartProjectVersionResponseResponseTypeDef
+## StartProjectVersionResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import StartProjectVersionResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import StartProjectVersionResponseTypeDef
 ```
 
 Required fields:
@@ -2282,10 +2282,10 @@ Optional fields:
 - `ShotFilter`:
   [StartShotDetectionFilterTypeDef](./type_defs.md#startshotdetectionfiltertypedef)
 
-## StartSegmentDetectionRequestTypeDef
+## StartSegmentDetectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import StartSegmentDetectionRequestTypeDef
+from mypy_boto3_rekognition.type_defs import StartSegmentDetectionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2302,10 +2302,10 @@ Optional fields:
 - `Filters`:
   [StartSegmentDetectionFiltersTypeDef](./type_defs.md#startsegmentdetectionfilterstypedef)
 
-## StartSegmentDetectionResponseResponseTypeDef
+## StartSegmentDetectionResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import StartSegmentDetectionResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import StartSegmentDetectionResponseTypeDef
 ```
 
 Required fields:
@@ -2324,10 +2324,10 @@ Optional fields:
 
 - `MinSegmentConfidence`: `float`
 
-## StartStreamProcessorRequestTypeDef
+## StartStreamProcessorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import StartStreamProcessorRequestTypeDef
+from mypy_boto3_rekognition.type_defs import StartStreamProcessorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2356,10 +2356,10 @@ Optional fields:
 - `RegionsOfInterest`:
   `List`\[[RegionOfInterestTypeDef](./type_defs.md#regionofinteresttypedef)\]
 
-## StartTextDetectionRequestTypeDef
+## StartTextDetectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import StartTextDetectionRequestTypeDef
+from mypy_boto3_rekognition.type_defs import StartTextDetectionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2375,10 +2375,10 @@ Optional fields:
 - `Filters`:
   [StartTextDetectionFiltersTypeDef](./type_defs.md#starttextdetectionfilterstypedef)
 
-## StartTextDetectionResponseResponseTypeDef
+## StartTextDetectionResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import StartTextDetectionResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import StartTextDetectionResponseTypeDef
 ```
 
 Required fields:
@@ -2387,20 +2387,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopProjectVersionRequestTypeDef
+## StopProjectVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import StopProjectVersionRequestTypeDef
+from mypy_boto3_rekognition.type_defs import StopProjectVersionRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ProjectVersionArn`: `str`
 
-## StopProjectVersionResponseResponseTypeDef
+## StopProjectVersionResponseTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import StopProjectVersionResponseResponseTypeDef
+from mypy_boto3_rekognition.type_defs import StopProjectVersionResponseTypeDef
 ```
 
 Required fields:
@@ -2409,10 +2409,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopStreamProcessorRequestTypeDef
+## StopStreamProcessorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import StopStreamProcessorRequestTypeDef
+from mypy_boto3_rekognition.type_defs import StopStreamProcessorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2485,10 +2485,10 @@ Optional fields:
 - `Value`: `bool`
 - `Confidence`: `float`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_rekognition.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2589,10 +2589,10 @@ Optional fields:
 - `Reasons`: `List`\[[ReasonType](./literals.md#reasontype)\]
 - `FaceDetail`: [FaceDetailTypeDef](./type_defs.md#facedetailtypedef)
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_rekognition.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:

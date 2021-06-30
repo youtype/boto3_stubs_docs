@@ -11,6 +11,7 @@ type annotations stubs module
   - [SESV2Client](#sesv2client)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_configuration_set](#create_configuration_set)
     - [create_configuration_set_event_destination](#create_configuration_set_event_destination)
@@ -141,6 +142,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+SESV2Client exceptions.
+
+Type annotations for `boto3.client("sesv2").exceptions` method.
+
+Boto3 documentation:
+[SESV2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -166,7 +178,7 @@ Boto3 documentation:
 [SESV2.Client.create_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_configuration_set)
 
 Arguments mapping described in
-[CreateConfigurationSetRequestTypeDef](./type_defs.md#createconfigurationsetrequesttypedef).
+[CreateConfigurationSetRequestRequestTypeDef](./type_defs.md#createconfigurationsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -196,7 +208,7 @@ Boto3 documentation:
 [SESV2.Client.create_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_configuration_set_event_destination)
 
 Arguments mapping described in
-[CreateConfigurationSetEventDestinationRequestTypeDef](./type_defs.md#createconfigurationseteventdestinationrequesttypedef).
+[CreateConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#createconfigurationseteventdestinationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -219,7 +231,7 @@ Boto3 documentation:
 [SESV2.Client.create_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_contact)
 
 Arguments mapping described in
-[CreateContactRequestTypeDef](./type_defs.md#createcontactrequesttypedef).
+[CreateContactRequestRequestTypeDef](./type_defs.md#createcontactrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -242,7 +254,7 @@ Boto3 documentation:
 [SESV2.Client.create_contact_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_contact_list)
 
 Arguments mapping described in
-[CreateContactListRequestTypeDef](./type_defs.md#createcontactlistrequesttypedef).
+[CreateContactListRequestRequestTypeDef](./type_defs.md#createcontactlistrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -264,7 +276,7 @@ Boto3 documentation:
 [SESV2.Client.create_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_custom_verification_email_template)
 
 Arguments mapping described in
-[CreateCustomVerificationEmailTemplateRequestTypeDef](./type_defs.md#createcustomverificationemailtemplaterequesttypedef).
+[CreateCustomVerificationEmailTemplateRequestRequestTypeDef](./type_defs.md#createcustomverificationemailtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -287,7 +299,7 @@ Boto3 documentation:
 [SESV2.Client.create_dedicated_ip_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_dedicated_ip_pool)
 
 Arguments mapping described in
-[CreateDedicatedIpPoolRequestTypeDef](./type_defs.md#creatededicatedippoolrequesttypedef).
+[CreateDedicatedIpPoolRequestRequestTypeDef](./type_defs.md#creatededicatedippoolrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -307,7 +319,7 @@ Boto3 documentation:
 [SESV2.Client.create_deliverability_test_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_deliverability_test_report)
 
 Arguments mapping described in
-[CreateDeliverabilityTestReportRequestTypeDef](./type_defs.md#createdeliverabilitytestreportrequesttypedef).
+[CreateDeliverabilityTestReportRequestRequestTypeDef](./type_defs.md#createdeliverabilitytestreportrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -318,7 +330,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDeliverabilityTestReportResponseResponseTypeDef](./type_defs.md#createdeliverabilitytestreportresponseresponsetypedef).
+[CreateDeliverabilityTestReportResponseTypeDef](./type_defs.md#createdeliverabilitytestreportresponsetypedef).
 
 ### create_email_identity
 
@@ -330,7 +342,7 @@ Boto3 documentation:
 [SESV2.Client.create_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_email_identity)
 
 Arguments mapping described in
-[CreateEmailIdentityRequestTypeDef](./type_defs.md#createemailidentityrequesttypedef).
+[CreateEmailIdentityRequestRequestTypeDef](./type_defs.md#createemailidentityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -341,7 +353,7 @@ Keyword-only arguments:
 - `ConfigurationSetName`: `str`
 
 Returns
-[CreateEmailIdentityResponseResponseTypeDef](./type_defs.md#createemailidentityresponseresponsetypedef).
+[CreateEmailIdentityResponseTypeDef](./type_defs.md#createemailidentityresponsetypedef).
 
 ### create_email_identity_policy
 
@@ -355,7 +367,7 @@ Boto3 documentation:
 [SESV2.Client.create_email_identity_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_email_identity_policy)
 
 Arguments mapping described in
-[CreateEmailIdentityPolicyRequestTypeDef](./type_defs.md#createemailidentitypolicyrequesttypedef).
+[CreateEmailIdentityPolicyRequestRequestTypeDef](./type_defs.md#createemailidentitypolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -375,7 +387,7 @@ Boto3 documentation:
 [SESV2.Client.create_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_email_template)
 
 Arguments mapping described in
-[CreateEmailTemplateRequestTypeDef](./type_defs.md#createemailtemplaterequesttypedef).
+[CreateEmailTemplateRequestRequestTypeDef](./type_defs.md#createemailtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -396,7 +408,7 @@ Boto3 documentation:
 [SESV2.Client.create_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_import_job)
 
 Arguments mapping described in
-[CreateImportJobRequestTypeDef](./type_defs.md#createimportjobrequesttypedef).
+[CreateImportJobRequestRequestTypeDef](./type_defs.md#createimportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -408,7 +420,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateImportJobResponseResponseTypeDef](./type_defs.md#createimportjobresponseresponsetypedef).
+[CreateImportJobResponseTypeDef](./type_defs.md#createimportjobresponsetypedef).
 
 ### delete_configuration_set
 
@@ -420,7 +432,7 @@ Boto3 documentation:
 [SESV2.Client.delete_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_configuration_set)
 
 Arguments mapping described in
-[DeleteConfigurationSetRequestTypeDef](./type_defs.md#deleteconfigurationsetrequesttypedef).
+[DeleteConfigurationSetRequestRequestTypeDef](./type_defs.md#deleteconfigurationsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -439,7 +451,7 @@ Boto3 documentation:
 [SESV2.Client.delete_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_configuration_set_event_destination)
 
 Arguments mapping described in
-[DeleteConfigurationSetEventDestinationRequestTypeDef](./type_defs.md#deleteconfigurationseteventdestinationrequesttypedef).
+[DeleteConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#deleteconfigurationseteventdestinationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -458,7 +470,7 @@ Boto3 documentation:
 [SESV2.Client.delete_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_contact)
 
 Arguments mapping described in
-[DeleteContactRequestTypeDef](./type_defs.md#deletecontactrequesttypedef).
+[DeleteContactRequestRequestTypeDef](./type_defs.md#deletecontactrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -477,7 +489,7 @@ Boto3 documentation:
 [SESV2.Client.delete_contact_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_contact_list)
 
 Arguments mapping described in
-[DeleteContactListRequestTypeDef](./type_defs.md#deletecontactlistrequesttypedef).
+[DeleteContactListRequestRequestTypeDef](./type_defs.md#deletecontactlistrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -496,7 +508,7 @@ Boto3 documentation:
 [SESV2.Client.delete_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_custom_verification_email_template)
 
 Arguments mapping described in
-[DeleteCustomVerificationEmailTemplateRequestTypeDef](./type_defs.md#deletecustomverificationemailtemplaterequesttypedef).
+[DeleteCustomVerificationEmailTemplateRequestRequestTypeDef](./type_defs.md#deletecustomverificationemailtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -514,7 +526,7 @@ Boto3 documentation:
 [SESV2.Client.delete_dedicated_ip_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_dedicated_ip_pool)
 
 Arguments mapping described in
-[DeleteDedicatedIpPoolRequestTypeDef](./type_defs.md#deletededicatedippoolrequesttypedef).
+[DeleteDedicatedIpPoolRequestRequestTypeDef](./type_defs.md#deletededicatedippoolrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -532,7 +544,7 @@ Boto3 documentation:
 [SESV2.Client.delete_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_email_identity)
 
 Arguments mapping described in
-[DeleteEmailIdentityRequestTypeDef](./type_defs.md#deleteemailidentityrequesttypedef).
+[DeleteEmailIdentityRequestRequestTypeDef](./type_defs.md#deleteemailidentityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -552,7 +564,7 @@ Boto3 documentation:
 [SESV2.Client.delete_email_identity_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_email_identity_policy)
 
 Arguments mapping described in
-[DeleteEmailIdentityPolicyRequestTypeDef](./type_defs.md#deleteemailidentitypolicyrequesttypedef).
+[DeleteEmailIdentityPolicyRequestRequestTypeDef](./type_defs.md#deleteemailidentitypolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -571,7 +583,7 @@ Boto3 documentation:
 [SESV2.Client.delete_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_email_template)
 
 Arguments mapping described in
-[DeleteEmailTemplateRequestTypeDef](./type_defs.md#deleteemailtemplaterequesttypedef).
+[DeleteEmailTemplateRequestRequestTypeDef](./type_defs.md#deleteemailtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -590,7 +602,7 @@ Boto3 documentation:
 [SESV2.Client.delete_suppressed_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_suppressed_destination)
 
 Arguments mapping described in
-[DeleteSuppressedDestinationRequestTypeDef](./type_defs.md#deletesuppresseddestinationrequesttypedef).
+[DeleteSuppressedDestinationRequestRequestTypeDef](./type_defs.md#deletesuppresseddestinationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -626,8 +638,7 @@ Type annotations for `boto3.client("sesv2").get_account` method.
 Boto3 documentation:
 [SESV2.Client.get_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_account)
 
-Returns
-[GetAccountResponseResponseTypeDef](./type_defs.md#getaccountresponseresponsetypedef).
+Returns [GetAccountResponseTypeDef](./type_defs.md#getaccountresponsetypedef).
 
 ### get_blacklist_reports
 
@@ -639,14 +650,14 @@ Boto3 documentation:
 [SESV2.Client.get_blacklist_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_blacklist_reports)
 
 Arguments mapping described in
-[GetBlacklistReportsRequestTypeDef](./type_defs.md#getblacklistreportsrequesttypedef).
+[GetBlacklistReportsRequestRequestTypeDef](./type_defs.md#getblacklistreportsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `BlacklistItemNames`: `List`\[`str`\] *(required)*
 
 Returns
-[GetBlacklistReportsResponseResponseTypeDef](./type_defs.md#getblacklistreportsresponseresponsetypedef).
+[GetBlacklistReportsResponseTypeDef](./type_defs.md#getblacklistreportsresponsetypedef).
 
 ### get_configuration_set
 
@@ -660,14 +671,14 @@ Boto3 documentation:
 [SESV2.Client.get_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_configuration_set)
 
 Arguments mapping described in
-[GetConfigurationSetRequestTypeDef](./type_defs.md#getconfigurationsetrequesttypedef).
+[GetConfigurationSetRequestRequestTypeDef](./type_defs.md#getconfigurationsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 
 Returns
-[GetConfigurationSetResponseResponseTypeDef](./type_defs.md#getconfigurationsetresponseresponsetypedef).
+[GetConfigurationSetResponseTypeDef](./type_defs.md#getconfigurationsetresponsetypedef).
 
 ### get_configuration_set_event_destinations
 
@@ -681,14 +692,14 @@ Boto3 documentation:
 [SESV2.Client.get_configuration_set_event_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_configuration_set_event_destinations)
 
 Arguments mapping described in
-[GetConfigurationSetEventDestinationsRequestTypeDef](./type_defs.md#getconfigurationseteventdestinationsrequesttypedef).
+[GetConfigurationSetEventDestinationsRequestRequestTypeDef](./type_defs.md#getconfigurationseteventdestinationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 
 Returns
-[GetConfigurationSetEventDestinationsResponseResponseTypeDef](./type_defs.md#getconfigurationseteventdestinationsresponseresponsetypedef).
+[GetConfigurationSetEventDestinationsResponseTypeDef](./type_defs.md#getconfigurationseteventdestinationsresponsetypedef).
 
 ### get_contact
 
@@ -700,15 +711,14 @@ Boto3 documentation:
 [SESV2.Client.get_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_contact)
 
 Arguments mapping described in
-[GetContactRequestTypeDef](./type_defs.md#getcontactrequesttypedef).
+[GetContactRequestRequestTypeDef](./type_defs.md#getcontactrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ContactListName`: `str` *(required)*
 - `EmailAddress`: `str` *(required)*
 
-Returns
-[GetContactResponseResponseTypeDef](./type_defs.md#getcontactresponseresponsetypedef).
+Returns [GetContactResponseTypeDef](./type_defs.md#getcontactresponsetypedef).
 
 ### get_contact_list
 
@@ -720,14 +730,14 @@ Boto3 documentation:
 [SESV2.Client.get_contact_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_contact_list)
 
 Arguments mapping described in
-[GetContactListRequestTypeDef](./type_defs.md#getcontactlistrequesttypedef).
+[GetContactListRequestRequestTypeDef](./type_defs.md#getcontactlistrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ContactListName`: `str` *(required)*
 
 Returns
-[GetContactListResponseResponseTypeDef](./type_defs.md#getcontactlistresponseresponsetypedef).
+[GetContactListResponseTypeDef](./type_defs.md#getcontactlistresponsetypedef).
 
 ### get_custom_verification_email_template
 
@@ -741,14 +751,14 @@ Boto3 documentation:
 [SESV2.Client.get_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_custom_verification_email_template)
 
 Arguments mapping described in
-[GetCustomVerificationEmailTemplateRequestTypeDef](./type_defs.md#getcustomverificationemailtemplaterequesttypedef).
+[GetCustomVerificationEmailTemplateRequestRequestTypeDef](./type_defs.md#getcustomverificationemailtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 
 Returns
-[GetCustomVerificationEmailTemplateResponseResponseTypeDef](./type_defs.md#getcustomverificationemailtemplateresponseresponsetypedef).
+[GetCustomVerificationEmailTemplateResponseTypeDef](./type_defs.md#getcustomverificationemailtemplateresponsetypedef).
 
 ### get_dedicated_ip
 
@@ -762,14 +772,14 @@ Boto3 documentation:
 [SESV2.Client.get_dedicated_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_dedicated_ip)
 
 Arguments mapping described in
-[GetDedicatedIpRequestTypeDef](./type_defs.md#getdedicatediprequesttypedef).
+[GetDedicatedIpRequestRequestTypeDef](./type_defs.md#getdedicatediprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Ip`: `str` *(required)*
 
 Returns
-[GetDedicatedIpResponseResponseTypeDef](./type_defs.md#getdedicatedipresponseresponsetypedef).
+[GetDedicatedIpResponseTypeDef](./type_defs.md#getdedicatedipresponsetypedef).
 
 ### get_dedicated_ips
 
@@ -781,7 +791,7 @@ Boto3 documentation:
 [SESV2.Client.get_dedicated_ips](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_dedicated_ips)
 
 Arguments mapping described in
-[GetDedicatedIpsRequestTypeDef](./type_defs.md#getdedicatedipsrequesttypedef).
+[GetDedicatedIpsRequestRequestTypeDef](./type_defs.md#getdedicatedipsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -790,7 +800,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[GetDedicatedIpsResponseResponseTypeDef](./type_defs.md#getdedicatedipsresponseresponsetypedef).
+[GetDedicatedIpsResponseTypeDef](./type_defs.md#getdedicatedipsresponsetypedef).
 
 ### get_deliverability_dashboard_options
 
@@ -804,7 +814,7 @@ Boto3 documentation:
 [SESV2.Client.get_deliverability_dashboard_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_deliverability_dashboard_options)
 
 Returns
-[GetDeliverabilityDashboardOptionsResponseResponseTypeDef](./type_defs.md#getdeliverabilitydashboardoptionsresponseresponsetypedef).
+[GetDeliverabilityDashboardOptionsResponseTypeDef](./type_defs.md#getdeliverabilitydashboardoptionsresponsetypedef).
 
 ### get_deliverability_test_report
 
@@ -817,14 +827,14 @@ Boto3 documentation:
 [SESV2.Client.get_deliverability_test_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_deliverability_test_report)
 
 Arguments mapping described in
-[GetDeliverabilityTestReportRequestTypeDef](./type_defs.md#getdeliverabilitytestreportrequesttypedef).
+[GetDeliverabilityTestReportRequestRequestTypeDef](./type_defs.md#getdeliverabilitytestreportrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ReportId`: `str` *(required)*
 
 Returns
-[GetDeliverabilityTestReportResponseResponseTypeDef](./type_defs.md#getdeliverabilitytestreportresponseresponsetypedef).
+[GetDeliverabilityTestReportResponseTypeDef](./type_defs.md#getdeliverabilitytestreportresponsetypedef).
 
 ### get_domain_deliverability_campaign
 
@@ -837,14 +847,14 @@ Boto3 documentation:
 [SESV2.Client.get_domain_deliverability_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_domain_deliverability_campaign)
 
 Arguments mapping described in
-[GetDomainDeliverabilityCampaignRequestTypeDef](./type_defs.md#getdomaindeliverabilitycampaignrequesttypedef).
+[GetDomainDeliverabilityCampaignRequestRequestTypeDef](./type_defs.md#getdomaindeliverabilitycampaignrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `CampaignId`: `str` *(required)*
 
 Returns
-[GetDomainDeliverabilityCampaignResponseResponseTypeDef](./type_defs.md#getdomaindeliverabilitycampaignresponseresponsetypedef).
+[GetDomainDeliverabilityCampaignResponseTypeDef](./type_defs.md#getdomaindeliverabilitycampaignresponsetypedef).
 
 ### get_domain_statistics_report
 
@@ -858,7 +868,7 @@ Boto3 documentation:
 [SESV2.Client.get_domain_statistics_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_domain_statistics_report)
 
 Arguments mapping described in
-[GetDomainStatisticsReportRequestTypeDef](./type_defs.md#getdomainstatisticsreportrequesttypedef).
+[GetDomainStatisticsReportRequestRequestTypeDef](./type_defs.md#getdomainstatisticsreportrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -867,7 +877,7 @@ Keyword-only arguments:
 - `EndDate`: `Union`\[`datetime`, `str`\] *(required)*
 
 Returns
-[GetDomainStatisticsReportResponseResponseTypeDef](./type_defs.md#getdomainstatisticsreportresponseresponsetypedef).
+[GetDomainStatisticsReportResponseTypeDef](./type_defs.md#getdomainstatisticsreportresponsetypedef).
 
 ### get_email_identity
 
@@ -881,14 +891,14 @@ Boto3 documentation:
 [SESV2.Client.get_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_email_identity)
 
 Arguments mapping described in
-[GetEmailIdentityRequestTypeDef](./type_defs.md#getemailidentityrequesttypedef).
+[GetEmailIdentityRequestRequestTypeDef](./type_defs.md#getemailidentityrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `EmailIdentity`: `str` *(required)*
 
 Returns
-[GetEmailIdentityResponseResponseTypeDef](./type_defs.md#getemailidentityresponseresponsetypedef).
+[GetEmailIdentityResponseTypeDef](./type_defs.md#getemailidentityresponsetypedef).
 
 ### get_email_identity_policies
 
@@ -902,14 +912,14 @@ Boto3 documentation:
 [SESV2.Client.get_email_identity_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_email_identity_policies)
 
 Arguments mapping described in
-[GetEmailIdentityPoliciesRequestTypeDef](./type_defs.md#getemailidentitypoliciesrequesttypedef).
+[GetEmailIdentityPoliciesRequestRequestTypeDef](./type_defs.md#getemailidentitypoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `EmailIdentity`: `str` *(required)*
 
 Returns
-[GetEmailIdentityPoliciesResponseResponseTypeDef](./type_defs.md#getemailidentitypoliciesresponseresponsetypedef).
+[GetEmailIdentityPoliciesResponseTypeDef](./type_defs.md#getemailidentitypoliciesresponsetypedef).
 
 ### get_email_template
 
@@ -922,14 +932,14 @@ Boto3 documentation:
 [SESV2.Client.get_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_email_template)
 
 Arguments mapping described in
-[GetEmailTemplateRequestTypeDef](./type_defs.md#getemailtemplaterequesttypedef).
+[GetEmailTemplateRequestRequestTypeDef](./type_defs.md#getemailtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 
 Returns
-[GetEmailTemplateResponseResponseTypeDef](./type_defs.md#getemailtemplateresponseresponsetypedef).
+[GetEmailTemplateResponseTypeDef](./type_defs.md#getemailtemplateresponsetypedef).
 
 ### get_import_job
 
@@ -941,14 +951,14 @@ Boto3 documentation:
 [SESV2.Client.get_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_import_job)
 
 Arguments mapping described in
-[GetImportJobRequestTypeDef](./type_defs.md#getimportjobrequesttypedef).
+[GetImportJobRequestRequestTypeDef](./type_defs.md#getimportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[GetImportJobResponseResponseTypeDef](./type_defs.md#getimportjobresponseresponsetypedef).
+[GetImportJobResponseTypeDef](./type_defs.md#getimportjobresponsetypedef).
 
 ### get_suppressed_destination
 
@@ -961,14 +971,14 @@ Boto3 documentation:
 [SESV2.Client.get_suppressed_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_suppressed_destination)
 
 Arguments mapping described in
-[GetSuppressedDestinationRequestTypeDef](./type_defs.md#getsuppresseddestinationrequesttypedef).
+[GetSuppressedDestinationRequestRequestTypeDef](./type_defs.md#getsuppresseddestinationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `EmailAddress`: `str` *(required)*
 
 Returns
-[GetSuppressedDestinationResponseResponseTypeDef](./type_defs.md#getsuppresseddestinationresponseresponsetypedef).
+[GetSuppressedDestinationResponseTypeDef](./type_defs.md#getsuppresseddestinationresponsetypedef).
 
 ### list_configuration_sets
 
@@ -981,7 +991,7 @@ Boto3 documentation:
 [SESV2.Client.list_configuration_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_configuration_sets)
 
 Arguments mapping described in
-[ListConfigurationSetsRequestTypeDef](./type_defs.md#listconfigurationsetsrequesttypedef).
+[ListConfigurationSetsRequestRequestTypeDef](./type_defs.md#listconfigurationsetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -989,7 +999,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[ListConfigurationSetsResponseResponseTypeDef](./type_defs.md#listconfigurationsetsresponseresponsetypedef).
+[ListConfigurationSetsResponseTypeDef](./type_defs.md#listconfigurationsetsresponsetypedef).
 
 ### list_contact_lists
 
@@ -1001,7 +1011,7 @@ Boto3 documentation:
 [SESV2.Client.list_contact_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_contact_lists)
 
 Arguments mapping described in
-[ListContactListsRequestTypeDef](./type_defs.md#listcontactlistsrequesttypedef).
+[ListContactListsRequestRequestTypeDef](./type_defs.md#listcontactlistsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1009,7 +1019,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListContactListsResponseResponseTypeDef](./type_defs.md#listcontactlistsresponseresponsetypedef).
+[ListContactListsResponseTypeDef](./type_defs.md#listcontactlistsresponsetypedef).
 
 ### list_contacts
 
@@ -1021,7 +1031,7 @@ Boto3 documentation:
 [SESV2.Client.list_contacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_contacts)
 
 Arguments mapping described in
-[ListContactsRequestTypeDef](./type_defs.md#listcontactsrequesttypedef).
+[ListContactsRequestRequestTypeDef](./type_defs.md#listcontactsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1032,7 +1042,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListContactsResponseResponseTypeDef](./type_defs.md#listcontactsresponseresponsetypedef).
+[ListContactsResponseTypeDef](./type_defs.md#listcontactsresponsetypedef).
 
 ### list_custom_verification_email_templates
 
@@ -1046,7 +1056,7 @@ Boto3 documentation:
 [SESV2.Client.list_custom_verification_email_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_custom_verification_email_templates)
 
 Arguments mapping described in
-[ListCustomVerificationEmailTemplatesRequestTypeDef](./type_defs.md#listcustomverificationemailtemplatesrequesttypedef).
+[ListCustomVerificationEmailTemplatesRequestRequestTypeDef](./type_defs.md#listcustomverificationemailtemplatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1054,7 +1064,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[ListCustomVerificationEmailTemplatesResponseResponseTypeDef](./type_defs.md#listcustomverificationemailtemplatesresponseresponsetypedef).
+[ListCustomVerificationEmailTemplatesResponseTypeDef](./type_defs.md#listcustomverificationemailtemplatesresponsetypedef).
 
 ### list_dedicated_ip_pools
 
@@ -1067,7 +1077,7 @@ Boto3 documentation:
 [SESV2.Client.list_dedicated_ip_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_dedicated_ip_pools)
 
 Arguments mapping described in
-[ListDedicatedIpPoolsRequestTypeDef](./type_defs.md#listdedicatedippoolsrequesttypedef).
+[ListDedicatedIpPoolsRequestRequestTypeDef](./type_defs.md#listdedicatedippoolsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1075,7 +1085,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[ListDedicatedIpPoolsResponseResponseTypeDef](./type_defs.md#listdedicatedippoolsresponseresponsetypedef).
+[ListDedicatedIpPoolsResponseTypeDef](./type_defs.md#listdedicatedippoolsresponsetypedef).
 
 ### list_deliverability_test_reports
 
@@ -1089,7 +1099,7 @@ Boto3 documentation:
 [SESV2.Client.list_deliverability_test_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_deliverability_test_reports)
 
 Arguments mapping described in
-[ListDeliverabilityTestReportsRequestTypeDef](./type_defs.md#listdeliverabilitytestreportsrequesttypedef).
+[ListDeliverabilityTestReportsRequestRequestTypeDef](./type_defs.md#listdeliverabilitytestreportsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1097,7 +1107,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[ListDeliverabilityTestReportsResponseResponseTypeDef](./type_defs.md#listdeliverabilitytestreportsresponseresponsetypedef).
+[ListDeliverabilityTestReportsResponseTypeDef](./type_defs.md#listdeliverabilitytestreportsresponsetypedef).
 
 ### list_domain_deliverability_campaigns
 
@@ -1111,7 +1121,7 @@ Boto3 documentation:
 [SESV2.Client.list_domain_deliverability_campaigns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_domain_deliverability_campaigns)
 
 Arguments mapping described in
-[ListDomainDeliverabilityCampaignsRequestTypeDef](./type_defs.md#listdomaindeliverabilitycampaignsrequesttypedef).
+[ListDomainDeliverabilityCampaignsRequestRequestTypeDef](./type_defs.md#listdomaindeliverabilitycampaignsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1122,7 +1132,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[ListDomainDeliverabilityCampaignsResponseResponseTypeDef](./type_defs.md#listdomaindeliverabilitycampaignsresponseresponsetypedef).
+[ListDomainDeliverabilityCampaignsResponseTypeDef](./type_defs.md#listdomaindeliverabilitycampaignsresponsetypedef).
 
 ### list_email_identities
 
@@ -1135,7 +1145,7 @@ Boto3 documentation:
 [SESV2.Client.list_email_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_email_identities)
 
 Arguments mapping described in
-[ListEmailIdentitiesRequestTypeDef](./type_defs.md#listemailidentitiesrequesttypedef).
+[ListEmailIdentitiesRequestRequestTypeDef](./type_defs.md#listemailidentitiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1143,7 +1153,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[ListEmailIdentitiesResponseResponseTypeDef](./type_defs.md#listemailidentitiesresponseresponsetypedef).
+[ListEmailIdentitiesResponseTypeDef](./type_defs.md#listemailidentitiesresponsetypedef).
 
 ### list_email_templates
 
@@ -1156,7 +1166,7 @@ Boto3 documentation:
 [SESV2.Client.list_email_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_email_templates)
 
 Arguments mapping described in
-[ListEmailTemplatesRequestTypeDef](./type_defs.md#listemailtemplatesrequesttypedef).
+[ListEmailTemplatesRequestRequestTypeDef](./type_defs.md#listemailtemplatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1164,7 +1174,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[ListEmailTemplatesResponseResponseTypeDef](./type_defs.md#listemailtemplatesresponseresponsetypedef).
+[ListEmailTemplatesResponseTypeDef](./type_defs.md#listemailtemplatesresponsetypedef).
 
 ### list_import_jobs
 
@@ -1176,7 +1186,7 @@ Boto3 documentation:
 [SESV2.Client.list_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_import_jobs)
 
 Arguments mapping described in
-[ListImportJobsRequestTypeDef](./type_defs.md#listimportjobsrequesttypedef).
+[ListImportJobsRequestRequestTypeDef](./type_defs.md#listimportjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1186,7 +1196,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[ListImportJobsResponseResponseTypeDef](./type_defs.md#listimportjobsresponseresponsetypedef).
+[ListImportJobsResponseTypeDef](./type_defs.md#listimportjobsresponsetypedef).
 
 ### list_suppressed_destinations
 
@@ -1200,7 +1210,7 @@ Boto3 documentation:
 [SESV2.Client.list_suppressed_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_suppressed_destinations)
 
 Arguments mapping described in
-[ListSuppressedDestinationsRequestTypeDef](./type_defs.md#listsuppresseddestinationsrequesttypedef).
+[ListSuppressedDestinationsRequestRequestTypeDef](./type_defs.md#listsuppresseddestinationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1212,7 +1222,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[ListSuppressedDestinationsResponseResponseTypeDef](./type_defs.md#listsuppresseddestinationsresponseresponsetypedef).
+[ListSuppressedDestinationsResponseTypeDef](./type_defs.md#listsuppresseddestinationsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -1225,14 +1235,14 @@ Boto3 documentation:
 [SESV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_account_dedicated_ip_warmup_attributes
 
@@ -1245,7 +1255,7 @@ Boto3 documentation:
 [SESV2.Client.put_account_dedicated_ip_warmup_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_dedicated_ip_warmup_attributes)
 
 Arguments mapping described in
-[PutAccountDedicatedIpWarmupAttributesRequestTypeDef](./type_defs.md#putaccountdedicatedipwarmupattributesrequesttypedef).
+[PutAccountDedicatedIpWarmupAttributesRequestRequestTypeDef](./type_defs.md#putaccountdedicatedipwarmupattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1263,7 +1273,7 @@ Boto3 documentation:
 [SESV2.Client.put_account_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_details)
 
 Arguments mapping described in
-[PutAccountDetailsRequestTypeDef](./type_defs.md#putaccountdetailsrequesttypedef).
+[PutAccountDetailsRequestRequestTypeDef](./type_defs.md#putaccountdetailsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1287,7 +1297,7 @@ Boto3 documentation:
 [SESV2.Client.put_account_sending_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_sending_attributes)
 
 Arguments mapping described in
-[PutAccountSendingAttributesRequestTypeDef](./type_defs.md#putaccountsendingattributesrequesttypedef).
+[PutAccountSendingAttributesRequestRequestTypeDef](./type_defs.md#putaccountsendingattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1306,7 +1316,7 @@ Boto3 documentation:
 [SESV2.Client.put_account_suppression_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_suppression_attributes)
 
 Arguments mapping described in
-[PutAccountSuppressionAttributesRequestTypeDef](./type_defs.md#putaccountsuppressionattributesrequesttypedef).
+[PutAccountSuppressionAttributesRequestRequestTypeDef](./type_defs.md#putaccountsuppressionattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1326,7 +1336,7 @@ Boto3 documentation:
 [SESV2.Client.put_configuration_set_delivery_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_delivery_options)
 
 Arguments mapping described in
-[PutConfigurationSetDeliveryOptionsRequestTypeDef](./type_defs.md#putconfigurationsetdeliveryoptionsrequesttypedef).
+[PutConfigurationSetDeliveryOptionsRequestRequestTypeDef](./type_defs.md#putconfigurationsetdeliveryoptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1348,7 +1358,7 @@ Boto3 documentation:
 [SESV2.Client.put_configuration_set_reputation_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_reputation_options)
 
 Arguments mapping described in
-[PutConfigurationSetReputationOptionsRequestTypeDef](./type_defs.md#putconfigurationsetreputationoptionsrequesttypedef).
+[PutConfigurationSetReputationOptionsRequestRequestTypeDef](./type_defs.md#putconfigurationsetreputationoptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1369,7 +1379,7 @@ Boto3 documentation:
 [SESV2.Client.put_configuration_set_sending_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_sending_options)
 
 Arguments mapping described in
-[PutConfigurationSetSendingOptionsRequestTypeDef](./type_defs.md#putconfigurationsetsendingoptionsrequesttypedef).
+[PutConfigurationSetSendingOptionsRequestRequestTypeDef](./type_defs.md#putconfigurationsetsendingoptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1389,7 +1399,7 @@ Boto3 documentation:
 [SESV2.Client.put_configuration_set_suppression_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_suppression_options)
 
 Arguments mapping described in
-[PutConfigurationSetSuppressionOptionsRequestTypeDef](./type_defs.md#putconfigurationsetsuppressionoptionsrequesttypedef).
+[PutConfigurationSetSuppressionOptionsRequestRequestTypeDef](./type_defs.md#putconfigurationsetsuppressionoptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1411,7 +1421,7 @@ Boto3 documentation:
 [SESV2.Client.put_configuration_set_tracking_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_tracking_options)
 
 Arguments mapping described in
-[PutConfigurationSetTrackingOptionsRequestTypeDef](./type_defs.md#putconfigurationsettrackingoptionsrequesttypedef).
+[PutConfigurationSetTrackingOptionsRequestRequestTypeDef](./type_defs.md#putconfigurationsettrackingoptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1430,7 +1440,7 @@ Boto3 documentation:
 [SESV2.Client.put_dedicated_ip_in_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_dedicated_ip_in_pool)
 
 Arguments mapping described in
-[PutDedicatedIpInPoolRequestTypeDef](./type_defs.md#putdedicatedipinpoolrequesttypedef).
+[PutDedicatedIpInPoolRequestRequestTypeDef](./type_defs.md#putdedicatedipinpoolrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1453,7 +1463,7 @@ Boto3 documentation:
 [SESV2.Client.put_dedicated_ip_warmup_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_dedicated_ip_warmup_attributes)
 
 Arguments mapping described in
-[PutDedicatedIpWarmupAttributesRequestTypeDef](./type_defs.md#putdedicatedipwarmupattributesrequesttypedef).
+[PutDedicatedIpWarmupAttributesRequestRequestTypeDef](./type_defs.md#putdedicatedipwarmupattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1473,7 +1483,7 @@ Boto3 documentation:
 [SESV2.Client.put_deliverability_dashboard_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_deliverability_dashboard_option)
 
 Arguments mapping described in
-[PutDeliverabilityDashboardOptionRequestTypeDef](./type_defs.md#putdeliverabilitydashboardoptionrequesttypedef).
+[PutDeliverabilityDashboardOptionRequestRequestTypeDef](./type_defs.md#putdeliverabilitydashboardoptionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1494,7 +1504,7 @@ Boto3 documentation:
 [SESV2.Client.put_email_identity_configuration_set_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_configuration_set_attributes)
 
 Arguments mapping described in
-[PutEmailIdentityConfigurationSetAttributesRequestTypeDef](./type_defs.md#putemailidentityconfigurationsetattributesrequesttypedef).
+[PutEmailIdentityConfigurationSetAttributesRequestRequestTypeDef](./type_defs.md#putemailidentityconfigurationsetattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1514,7 +1524,7 @@ Boto3 documentation:
 [SESV2.Client.put_email_identity_dkim_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_dkim_attributes)
 
 Arguments mapping described in
-[PutEmailIdentityDkimAttributesRequestTypeDef](./type_defs.md#putemailidentitydkimattributesrequesttypedef).
+[PutEmailIdentityDkimAttributesRequestRequestTypeDef](./type_defs.md#putemailidentitydkimattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1535,7 +1545,7 @@ Boto3 documentation:
 [SESV2.Client.put_email_identity_dkim_signing_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_dkim_signing_attributes)
 
 Arguments mapping described in
-[PutEmailIdentityDkimSigningAttributesRequestTypeDef](./type_defs.md#putemailidentitydkimsigningattributesrequesttypedef).
+[PutEmailIdentityDkimSigningAttributesRequestRequestTypeDef](./type_defs.md#putemailidentitydkimsigningattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1547,7 +1557,7 @@ Keyword-only arguments:
   [DkimSigningAttributesTypeDef](./type_defs.md#dkimsigningattributestypedef)
 
 Returns
-[PutEmailIdentityDkimSigningAttributesResponseResponseTypeDef](./type_defs.md#putemailidentitydkimsigningattributesresponseresponsetypedef).
+[PutEmailIdentityDkimSigningAttributesResponseTypeDef](./type_defs.md#putemailidentitydkimsigningattributesresponsetypedef).
 
 ### put_email_identity_feedback_attributes
 
@@ -1560,7 +1570,7 @@ Boto3 documentation:
 [SESV2.Client.put_email_identity_feedback_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_feedback_attributes)
 
 Arguments mapping described in
-[PutEmailIdentityFeedbackAttributesRequestTypeDef](./type_defs.md#putemailidentityfeedbackattributesrequesttypedef).
+[PutEmailIdentityFeedbackAttributesRequestRequestTypeDef](./type_defs.md#putemailidentityfeedbackattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1581,7 +1591,7 @@ Boto3 documentation:
 [SESV2.Client.put_email_identity_mail_from_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_mail_from_attributes)
 
 Arguments mapping described in
-[PutEmailIdentityMailFromAttributesRequestTypeDef](./type_defs.md#putemailidentitymailfromattributesrequesttypedef).
+[PutEmailIdentityMailFromAttributesRequestRequestTypeDef](./type_defs.md#putemailidentitymailfromattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1602,7 +1612,7 @@ Boto3 documentation:
 [SESV2.Client.put_suppressed_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_suppressed_destination)
 
 Arguments mapping described in
-[PutSuppressedDestinationRequestTypeDef](./type_defs.md#putsuppresseddestinationrequesttypedef).
+[PutSuppressedDestinationRequestRequestTypeDef](./type_defs.md#putsuppresseddestinationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1623,7 +1633,7 @@ Boto3 documentation:
 [SESV2.Client.send_bulk_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.send_bulk_email)
 
 Arguments mapping described in
-[SendBulkEmailRequestTypeDef](./type_defs.md#sendbulkemailrequesttypedef).
+[SendBulkEmailRequestRequestTypeDef](./type_defs.md#sendbulkemailrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1643,7 +1653,7 @@ Keyword-only arguments:
 - `ConfigurationSetName`: `str`
 
 Returns
-[SendBulkEmailResponseResponseTypeDef](./type_defs.md#sendbulkemailresponseresponsetypedef).
+[SendBulkEmailResponseTypeDef](./type_defs.md#sendbulkemailresponsetypedef).
 
 ### send_custom_verification_email
 
@@ -1657,7 +1667,7 @@ Boto3 documentation:
 [SESV2.Client.send_custom_verification_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.send_custom_verification_email)
 
 Arguments mapping described in
-[SendCustomVerificationEmailRequestTypeDef](./type_defs.md#sendcustomverificationemailrequesttypedef).
+[SendCustomVerificationEmailRequestRequestTypeDef](./type_defs.md#sendcustomverificationemailrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1666,7 +1676,7 @@ Keyword-only arguments:
 - `ConfigurationSetName`: `str`
 
 Returns
-[SendCustomVerificationEmailResponseResponseTypeDef](./type_defs.md#sendcustomverificationemailresponseresponsetypedef).
+[SendCustomVerificationEmailResponseTypeDef](./type_defs.md#sendcustomverificationemailresponsetypedef).
 
 ### send_email
 
@@ -1678,7 +1688,7 @@ Boto3 documentation:
 [SESV2.Client.send_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.send_email)
 
 Arguments mapping described in
-[SendEmailRequestTypeDef](./type_defs.md#sendemailrequesttypedef).
+[SendEmailRequestRequestTypeDef](./type_defs.md#sendemailrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1695,8 +1705,7 @@ Keyword-only arguments:
 - `ListManagementOptions`:
   [ListManagementOptionsTypeDef](./type_defs.md#listmanagementoptionstypedef)
 
-Returns
-[SendEmailResponseResponseTypeDef](./type_defs.md#sendemailresponseresponsetypedef).
+Returns [SendEmailResponseTypeDef](./type_defs.md#sendemailresponsetypedef).
 
 ### tag_resource
 
@@ -1708,7 +1717,7 @@ Boto3 documentation:
 [SESV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1728,7 +1737,7 @@ Boto3 documentation:
 [SESV2.Client.test_render_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.test_render_email_template)
 
 Arguments mapping described in
-[TestRenderEmailTemplateRequestTypeDef](./type_defs.md#testrenderemailtemplaterequesttypedef).
+[TestRenderEmailTemplateRequestRequestTypeDef](./type_defs.md#testrenderemailtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1736,7 +1745,7 @@ Keyword-only arguments:
 - `TemplateData`: `str` *(required)*
 
 Returns
-[TestRenderEmailTemplateResponseResponseTypeDef](./type_defs.md#testrenderemailtemplateresponseresponsetypedef).
+[TestRenderEmailTemplateResponseTypeDef](./type_defs.md#testrenderemailtemplateresponsetypedef).
 
 ### untag_resource
 
@@ -1748,7 +1757,7 @@ Boto3 documentation:
 [SESV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1768,7 +1777,7 @@ Boto3 documentation:
 [SESV2.Client.update_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_configuration_set_event_destination)
 
 Arguments mapping described in
-[UpdateConfigurationSetEventDestinationRequestTypeDef](./type_defs.md#updateconfigurationseteventdestinationrequesttypedef).
+[UpdateConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#updateconfigurationseteventdestinationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1790,7 +1799,7 @@ Boto3 documentation:
 [SESV2.Client.update_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_contact)
 
 Arguments mapping described in
-[UpdateContactRequestTypeDef](./type_defs.md#updatecontactrequesttypedef).
+[UpdateContactRequestRequestTypeDef](./type_defs.md#updatecontactrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1813,7 +1822,7 @@ Boto3 documentation:
 [SESV2.Client.update_contact_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_contact_list)
 
 Arguments mapping described in
-[UpdateContactListRequestTypeDef](./type_defs.md#updatecontactlistrequesttypedef).
+[UpdateContactListRequestRequestTypeDef](./type_defs.md#updatecontactlistrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1834,7 +1843,7 @@ Boto3 documentation:
 [SESV2.Client.update_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_custom_verification_email_template)
 
 Arguments mapping described in
-[UpdateCustomVerificationEmailTemplateRequestTypeDef](./type_defs.md#updatecustomverificationemailtemplaterequesttypedef).
+[UpdateCustomVerificationEmailTemplateRequestRequestTypeDef](./type_defs.md#updatecustomverificationemailtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1859,7 +1868,7 @@ Boto3 documentation:
 [SESV2.Client.update_email_identity_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_email_identity_policy)
 
 Arguments mapping described in
-[UpdateEmailIdentityPolicyRequestTypeDef](./type_defs.md#updateemailidentitypolicyrequesttypedef).
+[UpdateEmailIdentityPolicyRequestRequestTypeDef](./type_defs.md#updateemailidentitypolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1879,7 +1888,7 @@ Boto3 documentation:
 [SESV2.Client.update_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_email_template)
 
 Arguments mapping described in
-[UpdateEmailTemplateRequestTypeDef](./type_defs.md#updateemailtemplaterequesttypedef).
+[UpdateEmailTemplateRequestRequestTypeDef](./type_defs.md#updateemailtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 

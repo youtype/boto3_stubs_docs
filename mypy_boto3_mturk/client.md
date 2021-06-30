@@ -11,6 +11,7 @@ type annotations stubs module
   - [MTurkClient](#mturkclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [accept_qualification_request](#accept_qualification_request)
     - [approve_assignment](#approve_assignment)
     - [associate_qualification_with_worker](#associate_qualification_with_worker)
@@ -90,6 +91,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+MTurkClient exceptions.
+
+Type annotations for `boto3.client("mturk").exceptions` method.
+
+Boto3 documentation:
+[MTurk.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### accept_qualification_request
 
 The `AcceptQualificationRequest` operation approves a Worker's request for a
@@ -102,7 +114,7 @@ Boto3 documentation:
 [MTurk.Client.accept_qualification_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.accept_qualification_request)
 
 Arguments mapping described in
-[AcceptQualificationRequestRequestTypeDef](./type_defs.md#acceptqualificationrequestrequesttypedef).
+[AcceptQualificationRequestRequestRequestTypeDef](./type_defs.md#acceptqualificationrequestrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -122,7 +134,7 @@ Boto3 documentation:
 [MTurk.Client.approve_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.approve_assignment)
 
 Arguments mapping described in
-[ApproveAssignmentRequestTypeDef](./type_defs.md#approveassignmentrequesttypedef).
+[ApproveAssignmentRequestRequestTypeDef](./type_defs.md#approveassignmentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -144,7 +156,7 @@ Boto3 documentation:
 [MTurk.Client.associate_qualification_with_worker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.associate_qualification_with_worker)
 
 Arguments mapping described in
-[AssociateQualificationWithWorkerRequestTypeDef](./type_defs.md#associatequalificationwithworkerrequesttypedef).
+[AssociateQualificationWithWorkerRequestRequestTypeDef](./type_defs.md#associatequalificationwithworkerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -182,7 +194,7 @@ Boto3 documentation:
 [MTurk.Client.create_additional_assignments_for_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_additional_assignments_for_hit)
 
 Arguments mapping described in
-[CreateAdditionalAssignmentsForHITRequestTypeDef](./type_defs.md#createadditionalassignmentsforhitrequesttypedef).
+[CreateAdditionalAssignmentsForHITRequestRequestTypeDef](./type_defs.md#createadditionalassignmentsforhitrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -202,7 +214,7 @@ Boto3 documentation:
 [MTurk.Client.create_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit)
 
 Arguments mapping described in
-[CreateHITRequestTypeDef](./type_defs.md#createhitrequesttypedef).
+[CreateHITRequestRequestTypeDef](./type_defs.md#createhitrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -226,8 +238,7 @@ Keyword-only arguments:
 - `HITLayoutParameters`:
   `List`\[[HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef)\]
 
-Returns
-[CreateHITResponseResponseTypeDef](./type_defs.md#createhitresponseresponsetypedef).
+Returns [CreateHITResponseTypeDef](./type_defs.md#createhitresponsetypedef).
 
 ### create_hit_type
 
@@ -239,7 +250,7 @@ Boto3 documentation:
 [MTurk.Client.create_hit_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit_type)
 
 Arguments mapping described in
-[CreateHITTypeRequestTypeDef](./type_defs.md#createhittyperequesttypedef).
+[CreateHITTypeRequestRequestTypeDef](./type_defs.md#createhittyperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -253,7 +264,7 @@ Keyword-only arguments:
   `List`\[[QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef)\]
 
 Returns
-[CreateHITTypeResponseResponseTypeDef](./type_defs.md#createhittyperesponseresponsetypedef).
+[CreateHITTypeResponseTypeDef](./type_defs.md#createhittyperesponsetypedef).
 
 ### create_hit_with_hit_type
 
@@ -266,7 +277,7 @@ Boto3 documentation:
 [MTurk.Client.create_hit_with_hit_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit_with_hit_type)
 
 Arguments mapping described in
-[CreateHITWithHITTypeRequestTypeDef](./type_defs.md#createhitwithhittyperequesttypedef).
+[CreateHITWithHITTypeRequestRequestTypeDef](./type_defs.md#createhitwithhittyperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -284,7 +295,7 @@ Keyword-only arguments:
   `List`\[[HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef)\]
 
 Returns
-[CreateHITWithHITTypeResponseResponseTypeDef](./type_defs.md#createhitwithhittyperesponseresponsetypedef).
+[CreateHITWithHITTypeResponseTypeDef](./type_defs.md#createhitwithhittyperesponsetypedef).
 
 ### create_qualification_type
 
@@ -297,7 +308,7 @@ Boto3 documentation:
 [MTurk.Client.create_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_qualification_type)
 
 Arguments mapping described in
-[CreateQualificationTypeRequestTypeDef](./type_defs.md#createqualificationtyperequesttypedef).
+[CreateQualificationTypeRequestRequestTypeDef](./type_defs.md#createqualificationtyperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -315,7 +326,7 @@ Keyword-only arguments:
 - `AutoGrantedValue`: `int`
 
 Returns
-[CreateQualificationTypeResponseResponseTypeDef](./type_defs.md#createqualificationtyperesponseresponsetypedef).
+[CreateQualificationTypeResponseTypeDef](./type_defs.md#createqualificationtyperesponsetypedef).
 
 ### create_worker_block
 
@@ -328,7 +339,7 @@ Boto3 documentation:
 [MTurk.Client.create_worker_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_worker_block)
 
 Arguments mapping described in
-[CreateWorkerBlockRequestTypeDef](./type_defs.md#createworkerblockrequesttypedef).
+[CreateWorkerBlockRequestRequestTypeDef](./type_defs.md#createworkerblockrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -347,7 +358,7 @@ Boto3 documentation:
 [MTurk.Client.delete_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_hit)
 
 Arguments mapping described in
-[DeleteHITRequestTypeDef](./type_defs.md#deletehitrequesttypedef).
+[DeleteHITRequestRequestTypeDef](./type_defs.md#deletehitrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -366,7 +377,7 @@ Boto3 documentation:
 [MTurk.Client.delete_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_qualification_type)
 
 Arguments mapping described in
-[DeleteQualificationTypeRequestTypeDef](./type_defs.md#deletequalificationtyperequesttypedef).
+[DeleteQualificationTypeRequestRequestTypeDef](./type_defs.md#deletequalificationtyperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -385,7 +396,7 @@ Boto3 documentation:
 [MTurk.Client.delete_worker_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_worker_block)
 
 Arguments mapping described in
-[DeleteWorkerBlockRequestTypeDef](./type_defs.md#deleteworkerblockrequesttypedef).
+[DeleteWorkerBlockRequestRequestTypeDef](./type_defs.md#deleteworkerblockrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -406,7 +417,7 @@ Boto3 documentation:
 [MTurk.Client.disassociate_qualification_from_worker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.disassociate_qualification_from_worker)
 
 Arguments mapping described in
-[DisassociateQualificationFromWorkerRequestTypeDef](./type_defs.md#disassociatequalificationfromworkerrequesttypedef).
+[DisassociateQualificationFromWorkerRequestRequestTypeDef](./type_defs.md#disassociatequalificationfromworkerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -445,7 +456,7 @@ Boto3 documentation:
 [MTurk.Client.get_account_balance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_account_balance)
 
 Returns
-[GetAccountBalanceResponseResponseTypeDef](./type_defs.md#getaccountbalanceresponseresponsetypedef).
+[GetAccountBalanceResponseTypeDef](./type_defs.md#getaccountbalanceresponsetypedef).
 
 ### get_assignment
 
@@ -458,14 +469,14 @@ Boto3 documentation:
 [MTurk.Client.get_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_assignment)
 
 Arguments mapping described in
-[GetAssignmentRequestTypeDef](./type_defs.md#getassignmentrequesttypedef).
+[GetAssignmentRequestRequestTypeDef](./type_defs.md#getassignmentrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AssignmentId`: `str` *(required)*
 
 Returns
-[GetAssignmentResponseResponseTypeDef](./type_defs.md#getassignmentresponseresponsetypedef).
+[GetAssignmentResponseTypeDef](./type_defs.md#getassignmentresponsetypedef).
 
 ### get_file_upload_url
 
@@ -477,7 +488,7 @@ Boto3 documentation:
 [MTurk.Client.get_file_upload_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_file_upload_url)
 
 Arguments mapping described in
-[GetFileUploadURLRequestTypeDef](./type_defs.md#getfileuploadurlrequesttypedef).
+[GetFileUploadURLRequestRequestTypeDef](./type_defs.md#getfileuploadurlrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -485,7 +496,7 @@ Keyword-only arguments:
 - `QuestionIdentifier`: `str` *(required)*
 
 Returns
-[GetFileUploadURLResponseResponseTypeDef](./type_defs.md#getfileuploadurlresponseresponsetypedef).
+[GetFileUploadURLResponseTypeDef](./type_defs.md#getfileuploadurlresponsetypedef).
 
 ### get_hit
 
@@ -497,14 +508,13 @@ Boto3 documentation:
 [MTurk.Client.get_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_hit)
 
 Arguments mapping described in
-[GetHITRequestTypeDef](./type_defs.md#gethitrequesttypedef).
+[GetHITRequestRequestTypeDef](./type_defs.md#gethitrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `HITId`: `str` *(required)*
 
-Returns
-[GetHITResponseResponseTypeDef](./type_defs.md#gethitresponseresponsetypedef).
+Returns [GetHITResponseTypeDef](./type_defs.md#gethitresponsetypedef).
 
 ### get_qualification_score
 
@@ -517,7 +527,7 @@ Boto3 documentation:
 [MTurk.Client.get_qualification_score](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_qualification_score)
 
 Arguments mapping described in
-[GetQualificationScoreRequestTypeDef](./type_defs.md#getqualificationscorerequesttypedef).
+[GetQualificationScoreRequestRequestTypeDef](./type_defs.md#getqualificationscorerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -525,7 +535,7 @@ Keyword-only arguments:
 - `WorkerId`: `str` *(required)*
 
 Returns
-[GetQualificationScoreResponseResponseTypeDef](./type_defs.md#getqualificationscoreresponseresponsetypedef).
+[GetQualificationScoreResponseTypeDef](./type_defs.md#getqualificationscoreresponsetypedef).
 
 ### get_qualification_type
 
@@ -538,14 +548,14 @@ Boto3 documentation:
 [MTurk.Client.get_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_qualification_type)
 
 Arguments mapping described in
-[GetQualificationTypeRequestTypeDef](./type_defs.md#getqualificationtyperequesttypedef).
+[GetQualificationTypeRequestRequestTypeDef](./type_defs.md#getqualificationtyperequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `QualificationTypeId`: `str` *(required)*
 
 Returns
-[GetQualificationTypeResponseResponseTypeDef](./type_defs.md#getqualificationtyperesponseresponsetypedef).
+[GetQualificationTypeResponseTypeDef](./type_defs.md#getqualificationtyperesponsetypedef).
 
 ### list_assignments_for_hit
 
@@ -558,7 +568,7 @@ Boto3 documentation:
 [MTurk.Client.list_assignments_for_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_assignments_for_hit)
 
 Arguments mapping described in
-[ListAssignmentsForHITRequestTypeDef](./type_defs.md#listassignmentsforhitrequesttypedef).
+[ListAssignmentsForHITRequestRequestTypeDef](./type_defs.md#listassignmentsforhitrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -569,7 +579,7 @@ Keyword-only arguments:
   `List`\[[AssignmentStatusType](./literals.md#assignmentstatustype)\]
 
 Returns
-[ListAssignmentsForHITResponseResponseTypeDef](./type_defs.md#listassignmentsforhitresponseresponsetypedef).
+[ListAssignmentsForHITResponseTypeDef](./type_defs.md#listassignmentsforhitresponsetypedef).
 
 ### list_bonus_payments
 
@@ -582,7 +592,7 @@ Boto3 documentation:
 [MTurk.Client.list_bonus_payments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_bonus_payments)
 
 Arguments mapping described in
-[ListBonusPaymentsRequestTypeDef](./type_defs.md#listbonuspaymentsrequesttypedef).
+[ListBonusPaymentsRequestRequestTypeDef](./type_defs.md#listbonuspaymentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -592,7 +602,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListBonusPaymentsResponseResponseTypeDef](./type_defs.md#listbonuspaymentsresponseresponsetypedef).
+[ListBonusPaymentsResponseTypeDef](./type_defs.md#listbonuspaymentsresponsetypedef).
 
 ### list_hits
 
@@ -604,15 +614,14 @@ Boto3 documentation:
 [MTurk.Client.list_hits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_hits)
 
 Arguments mapping described in
-[ListHITsRequestTypeDef](./type_defs.md#listhitsrequesttypedef).
+[ListHITsRequestRequestTypeDef](./type_defs.md#listhitsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListHITsResponseResponseTypeDef](./type_defs.md#listhitsresponseresponsetypedef).
+Returns [ListHITsResponseTypeDef](./type_defs.md#listhitsresponsetypedef).
 
 ### list_hits_for_qualification_type
 
@@ -626,7 +635,7 @@ Boto3 documentation:
 [MTurk.Client.list_hits_for_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_hits_for_qualification_type)
 
 Arguments mapping described in
-[ListHITsForQualificationTypeRequestTypeDef](./type_defs.md#listhitsforqualificationtyperequesttypedef).
+[ListHITsForQualificationTypeRequestRequestTypeDef](./type_defs.md#listhitsforqualificationtyperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -635,7 +644,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListHITsForQualificationTypeResponseResponseTypeDef](./type_defs.md#listhitsforqualificationtyperesponseresponsetypedef).
+[ListHITsForQualificationTypeResponseTypeDef](./type_defs.md#listhitsforqualificationtyperesponsetypedef).
 
 ### list_qualification_requests
 
@@ -649,7 +658,7 @@ Boto3 documentation:
 [MTurk.Client.list_qualification_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_qualification_requests)
 
 Arguments mapping described in
-[ListQualificationRequestsRequestTypeDef](./type_defs.md#listqualificationrequestsrequesttypedef).
+[ListQualificationRequestsRequestRequestTypeDef](./type_defs.md#listqualificationrequestsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -658,7 +667,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListQualificationRequestsResponseResponseTypeDef](./type_defs.md#listqualificationrequestsresponseresponsetypedef).
+[ListQualificationRequestsResponseTypeDef](./type_defs.md#listqualificationrequestsresponsetypedef).
 
 ### list_qualification_types
 
@@ -671,7 +680,7 @@ Boto3 documentation:
 [MTurk.Client.list_qualification_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_qualification_types)
 
 Arguments mapping described in
-[ListQualificationTypesRequestTypeDef](./type_defs.md#listqualificationtypesrequesttypedef).
+[ListQualificationTypesRequestRequestTypeDef](./type_defs.md#listqualificationtypesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -682,7 +691,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListQualificationTypesResponseResponseTypeDef](./type_defs.md#listqualificationtypesresponseresponsetypedef).
+[ListQualificationTypesResponseTypeDef](./type_defs.md#listqualificationtypesresponsetypedef).
 
 ### list_review_policy_results_for_hit
 
@@ -697,7 +706,7 @@ Boto3 documentation:
 [MTurk.Client.list_review_policy_results_for_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_review_policy_results_for_hit)
 
 Arguments mapping described in
-[ListReviewPolicyResultsForHITRequestTypeDef](./type_defs.md#listreviewpolicyresultsforhitrequesttypedef).
+[ListReviewPolicyResultsForHITRequestRequestTypeDef](./type_defs.md#listreviewpolicyresultsforhitrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -710,7 +719,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListReviewPolicyResultsForHITResponseResponseTypeDef](./type_defs.md#listreviewpolicyresultsforhitresponseresponsetypedef).
+[ListReviewPolicyResultsForHITResponseTypeDef](./type_defs.md#listreviewpolicyresultsforhitresponsetypedef).
 
 ### list_reviewable_hits
 
@@ -724,7 +733,7 @@ Boto3 documentation:
 [MTurk.Client.list_reviewable_hits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_reviewable_hits)
 
 Arguments mapping described in
-[ListReviewableHITsRequestTypeDef](./type_defs.md#listreviewablehitsrequesttypedef).
+[ListReviewableHITsRequestRequestTypeDef](./type_defs.md#listreviewablehitsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -734,7 +743,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListReviewableHITsResponseResponseTypeDef](./type_defs.md#listreviewablehitsresponseresponsetypedef).
+[ListReviewableHITsResponseTypeDef](./type_defs.md#listreviewablehitsresponsetypedef).
 
 ### list_worker_blocks
 
@@ -747,7 +756,7 @@ Boto3 documentation:
 [MTurk.Client.list_worker_blocks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_worker_blocks)
 
 Arguments mapping described in
-[ListWorkerBlocksRequestTypeDef](./type_defs.md#listworkerblocksrequesttypedef).
+[ListWorkerBlocksRequestRequestTypeDef](./type_defs.md#listworkerblocksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -755,7 +764,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListWorkerBlocksResponseResponseTypeDef](./type_defs.md#listworkerblocksresponseresponsetypedef).
+[ListWorkerBlocksResponseTypeDef](./type_defs.md#listworkerblocksresponsetypedef).
 
 ### list_workers_with_qualification_type
 
@@ -769,7 +778,7 @@ Boto3 documentation:
 [MTurk.Client.list_workers_with_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_workers_with_qualification_type)
 
 Arguments mapping described in
-[ListWorkersWithQualificationTypeRequestTypeDef](./type_defs.md#listworkerswithqualificationtyperequesttypedef).
+[ListWorkersWithQualificationTypeRequestRequestTypeDef](./type_defs.md#listworkerswithqualificationtyperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -779,7 +788,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListWorkersWithQualificationTypeResponseResponseTypeDef](./type_defs.md#listworkerswithqualificationtyperesponseresponsetypedef).
+[ListWorkersWithQualificationTypeResponseTypeDef](./type_defs.md#listworkerswithqualificationtyperesponsetypedef).
 
 ### notify_workers
 
@@ -792,7 +801,7 @@ Boto3 documentation:
 [MTurk.Client.notify_workers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.notify_workers)
 
 Arguments mapping described in
-[NotifyWorkersRequestTypeDef](./type_defs.md#notifyworkersrequesttypedef).
+[NotifyWorkersRequestRequestTypeDef](./type_defs.md#notifyworkersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -801,7 +810,7 @@ Keyword-only arguments:
 - `WorkerIds`: `List`\[`str`\] *(required)*
 
 Returns
-[NotifyWorkersResponseResponseTypeDef](./type_defs.md#notifyworkersresponseresponsetypedef).
+[NotifyWorkersResponseTypeDef](./type_defs.md#notifyworkersresponsetypedef).
 
 ### reject_assignment
 
@@ -813,7 +822,7 @@ Boto3 documentation:
 [MTurk.Client.reject_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.reject_assignment)
 
 Arguments mapping described in
-[RejectAssignmentRequestTypeDef](./type_defs.md#rejectassignmentrequesttypedef).
+[RejectAssignmentRequestRequestTypeDef](./type_defs.md#rejectassignmentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -834,7 +843,7 @@ Boto3 documentation:
 [MTurk.Client.reject_qualification_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.reject_qualification_request)
 
 Arguments mapping described in
-[RejectQualificationRequestRequestTypeDef](./type_defs.md#rejectqualificationrequestrequesttypedef).
+[RejectQualificationRequestRequestRequestTypeDef](./type_defs.md#rejectqualificationrequestrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -854,7 +863,7 @@ Boto3 documentation:
 [MTurk.Client.send_bonus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.send_bonus)
 
 Arguments mapping described in
-[SendBonusRequestTypeDef](./type_defs.md#sendbonusrequesttypedef).
+[SendBonusRequestRequestTypeDef](./type_defs.md#sendbonusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -879,7 +888,7 @@ Boto3 documentation:
 [MTurk.Client.send_test_event_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.send_test_event_notification)
 
 Arguments mapping described in
-[SendTestEventNotificationRequestTypeDef](./type_defs.md#sendtesteventnotificationrequesttypedef).
+[SendTestEventNotificationRequestRequestTypeDef](./type_defs.md#sendtesteventnotificationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -901,7 +910,7 @@ Boto3 documentation:
 [MTurk.Client.update_expiration_for_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_expiration_for_hit)
 
 Arguments mapping described in
-[UpdateExpirationForHITRequestTypeDef](./type_defs.md#updateexpirationforhitrequesttypedef).
+[UpdateExpirationForHITRequestRequestTypeDef](./type_defs.md#updateexpirationforhitrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -920,7 +929,7 @@ Boto3 documentation:
 [MTurk.Client.update_hit_review_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_hit_review_status)
 
 Arguments mapping described in
-[UpdateHITReviewStatusRequestTypeDef](./type_defs.md#updatehitreviewstatusrequesttypedef).
+[UpdateHITReviewStatusRequestRequestTypeDef](./type_defs.md#updatehitreviewstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -940,7 +949,7 @@ Boto3 documentation:
 [MTurk.Client.update_hit_type_of_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_hit_type_of_hit)
 
 Arguments mapping described in
-[UpdateHITTypeOfHITRequestTypeDef](./type_defs.md#updatehittypeofhitrequesttypedef).
+[UpdateHITTypeOfHITRequestRequestTypeDef](./type_defs.md#updatehittypeofhitrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -961,7 +970,7 @@ Boto3 documentation:
 [MTurk.Client.update_notification_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_notification_settings)
 
 Arguments mapping described in
-[UpdateNotificationSettingsRequestTypeDef](./type_defs.md#updatenotificationsettingsrequesttypedef).
+[UpdateNotificationSettingsRequestRequestTypeDef](./type_defs.md#updatenotificationsettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -983,7 +992,7 @@ Boto3 documentation:
 [MTurk.Client.update_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_qualification_type)
 
 Arguments mapping described in
-[UpdateQualificationTypeRequestTypeDef](./type_defs.md#updatequalificationtyperequesttypedef).
+[UpdateQualificationTypeRequestRequestTypeDef](./type_defs.md#updatequalificationtyperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -999,7 +1008,7 @@ Keyword-only arguments:
 - `AutoGrantedValue`: `int`
 
 Returns
-[UpdateQualificationTypeResponseResponseTypeDef](./type_defs.md#updatequalificationtyperesponseresponsetypedef).
+[UpdateQualificationTypeResponseTypeDef](./type_defs.md#updatequalificationtyperesponsetypedef).
 
 ### get_paginator
 

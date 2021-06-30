@@ -12,8 +12,8 @@ type annotations stubs module
   - [CategoryDetailsTypeDef](#categorydetailstypedef)
   - [CharacterOffsetsTypeDef](#characteroffsetstypedef)
   - [IssueDetectedTypeDef](#issuedetectedtypedef)
-  - [ListRealtimeContactAnalysisSegmentsRequestTypeDef](#listrealtimecontactanalysissegmentsrequesttypedef)
-  - [ListRealtimeContactAnalysisSegmentsResponseResponseTypeDef](#listrealtimecontactanalysissegmentsresponseresponsetypedef)
+  - [ListRealtimeContactAnalysisSegmentsRequestRequestTypeDef](#listrealtimecontactanalysissegmentsrequestrequesttypedef)
+  - [ListRealtimeContactAnalysisSegmentsResponseTypeDef](#listrealtimecontactanalysissegmentsresponsetypedef)
   - [PointOfInterestTypeDef](#pointofinteresttypedef)
   - [RealtimeContactAnalysisSegmentTypeDef](#realtimecontactanalysissegmenttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
@@ -64,10 +64,10 @@ Required fields:
 - `CharacterOffsets`:
   [CharacterOffsetsTypeDef](./type_defs.md#characteroffsetstypedef)
 
-## ListRealtimeContactAnalysisSegmentsRequestTypeDef
+## ListRealtimeContactAnalysisSegmentsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_connect_contact_lens.type_defs import ListRealtimeContactAnalysisSegmentsRequestTypeDef
+from mypy_boto3_connect_contact_lens.type_defs import ListRealtimeContactAnalysisSegmentsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -80,10 +80,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListRealtimeContactAnalysisSegmentsResponseResponseTypeDef
+## ListRealtimeContactAnalysisSegmentsResponseTypeDef
 
 ```python
-from mypy_boto3_connect_contact_lens.type_defs import ListRealtimeContactAnalysisSegmentsResponseResponseTypeDef
+from mypy_boto3_connect_contact_lens.type_defs import ListRealtimeContactAnalysisSegmentsResponseTypeDef
 ```
 
 Required fields:

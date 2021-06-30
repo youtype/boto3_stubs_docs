@@ -11,6 +11,7 @@ type annotations stubs module
   - [EBSClient](#ebsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [complete_snapshot](#complete_snapshot)
     - [generate_presigned_url](#generate_presigned_url)
@@ -62,6 +63,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+EBSClient exceptions.
+
+Type annotations for `boto3.client("ebs").exceptions` method.
+
+Boto3 documentation:
+[EBS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -88,7 +100,7 @@ Boto3 documentation:
 [EBS.Client.complete_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.complete_snapshot)
 
 Arguments mapping described in
-[CompleteSnapshotRequestTypeDef](./type_defs.md#completesnapshotrequesttypedef).
+[CompleteSnapshotRequestRequestTypeDef](./type_defs.md#completesnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -101,7 +113,7 @@ Keyword-only arguments:
   [ChecksumAggregationMethodType](./literals.md#checksumaggregationmethodtype))
 
 Returns
-[CompleteSnapshotResponseResponseTypeDef](./type_defs.md#completesnapshotresponseresponsetypedef).
+[CompleteSnapshotResponseTypeDef](./type_defs.md#completesnapshotresponsetypedef).
 
 ### generate_presigned_url
 
@@ -131,7 +143,7 @@ Boto3 documentation:
 [EBS.Client.get_snapshot_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.get_snapshot_block)
 
 Arguments mapping described in
-[GetSnapshotBlockRequestTypeDef](./type_defs.md#getsnapshotblockrequesttypedef).
+[GetSnapshotBlockRequestRequestTypeDef](./type_defs.md#getsnapshotblockrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -140,7 +152,7 @@ Keyword-only arguments:
 - `BlockToken`: `str` *(required)*
 
 Returns
-[GetSnapshotBlockResponseResponseTypeDef](./type_defs.md#getsnapshotblockresponseresponsetypedef).
+[GetSnapshotBlockResponseTypeDef](./type_defs.md#getsnapshotblockresponsetypedef).
 
 ### list_changed_blocks
 
@@ -153,7 +165,7 @@ Boto3 documentation:
 [EBS.Client.list_changed_blocks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.list_changed_blocks)
 
 Arguments mapping described in
-[ListChangedBlocksRequestTypeDef](./type_defs.md#listchangedblocksrequesttypedef).
+[ListChangedBlocksRequestRequestTypeDef](./type_defs.md#listchangedblocksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -164,7 +176,7 @@ Keyword-only arguments:
 - `StartingBlockIndex`: `int`
 
 Returns
-[ListChangedBlocksResponseResponseTypeDef](./type_defs.md#listchangedblocksresponseresponsetypedef).
+[ListChangedBlocksResponseTypeDef](./type_defs.md#listchangedblocksresponsetypedef).
 
 ### list_snapshot_blocks
 
@@ -176,7 +188,7 @@ Boto3 documentation:
 [EBS.Client.list_snapshot_blocks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.list_snapshot_blocks)
 
 Arguments mapping described in
-[ListSnapshotBlocksRequestTypeDef](./type_defs.md#listsnapshotblocksrequesttypedef).
+[ListSnapshotBlocksRequestRequestTypeDef](./type_defs.md#listsnapshotblocksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -186,7 +198,7 @@ Keyword-only arguments:
 - `StartingBlockIndex`: `int`
 
 Returns
-[ListSnapshotBlocksResponseResponseTypeDef](./type_defs.md#listsnapshotblocksresponseresponsetypedef).
+[ListSnapshotBlocksResponseTypeDef](./type_defs.md#listsnapshotblocksresponsetypedef).
 
 ### put_snapshot_block
 
@@ -198,7 +210,7 @@ Boto3 documentation:
 [EBS.Client.put_snapshot_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.put_snapshot_block)
 
 Arguments mapping described in
-[PutSnapshotBlockRequestTypeDef](./type_defs.md#putsnapshotblockrequesttypedef).
+[PutSnapshotBlockRequestRequestTypeDef](./type_defs.md#putsnapshotblockrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -213,7 +225,7 @@ Keyword-only arguments:
 - `Progress`: `int`
 
 Returns
-[PutSnapshotBlockResponseResponseTypeDef](./type_defs.md#putsnapshotblockresponseresponsetypedef).
+[PutSnapshotBlockResponseTypeDef](./type_defs.md#putsnapshotblockresponsetypedef).
 
 ### start_snapshot
 
@@ -225,7 +237,7 @@ Boto3 documentation:
 [EBS.Client.start_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.start_snapshot)
 
 Arguments mapping described in
-[StartSnapshotRequestTypeDef](./type_defs.md#startsnapshotrequesttypedef).
+[StartSnapshotRequestRequestTypeDef](./type_defs.md#startsnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -239,4 +251,4 @@ Keyword-only arguments:
 - `Timeout`: `int`
 
 Returns
-[StartSnapshotResponseResponseTypeDef](./type_defs.md#startsnapshotresponseresponsetypedef).
+[StartSnapshotResponseTypeDef](./type_defs.md#startsnapshotresponsetypedef).

@@ -11,6 +11,7 @@ type annotations stubs module
   - [LicenseManagerClient](#licensemanagerclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [accept_grant](#accept_grant)
     - [can_paginate](#can_paginate)
     - [check_in_license](#check_in_license)
@@ -111,6 +112,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+LicenseManagerClient exceptions.
+
+Type annotations for `boto3.client("license-manager").exceptions` method.
+
+Boto3 documentation:
+[LicenseManager.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### accept_grant
 
 Accepts the specified grant.
@@ -121,14 +133,14 @@ Boto3 documentation:
 [LicenseManager.Client.accept_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.accept_grant)
 
 Arguments mapping described in
-[AcceptGrantRequestTypeDef](./type_defs.md#acceptgrantrequesttypedef).
+[AcceptGrantRequestRequestTypeDef](./type_defs.md#acceptgrantrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `GrantArn`: `str` *(required)*
 
 Returns
-[AcceptGrantResponseResponseTypeDef](./type_defs.md#acceptgrantresponseresponsetypedef).
+[AcceptGrantResponseTypeDef](./type_defs.md#acceptgrantresponsetypedef).
 
 ### can_paginate
 
@@ -155,7 +167,7 @@ Boto3 documentation:
 [LicenseManager.Client.check_in_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.check_in_license)
 
 Arguments mapping described in
-[CheckInLicenseRequestTypeDef](./type_defs.md#checkinlicenserequesttypedef).
+[CheckInLicenseRequestRequestTypeDef](./type_defs.md#checkinlicenserequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -175,7 +187,7 @@ Boto3 documentation:
 [LicenseManager.Client.checkout_borrow_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.checkout_borrow_license)
 
 Arguments mapping described in
-[CheckoutBorrowLicenseRequestTypeDef](./type_defs.md#checkoutborrowlicenserequesttypedef).
+[CheckoutBorrowLicenseRequestRequestTypeDef](./type_defs.md#checkoutborrowlicenserequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -192,7 +204,7 @@ Keyword-only arguments:
   `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
 
 Returns
-[CheckoutBorrowLicenseResponseResponseTypeDef](./type_defs.md#checkoutborrowlicenseresponseresponsetypedef).
+[CheckoutBorrowLicenseResponseTypeDef](./type_defs.md#checkoutborrowlicenseresponsetypedef).
 
 ### checkout_license
 
@@ -204,7 +216,7 @@ Boto3 documentation:
 [LicenseManager.Client.checkout_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.checkout_license)
 
 Arguments mapping described in
-[CheckoutLicenseRequestTypeDef](./type_defs.md#checkoutlicenserequesttypedef).
+[CheckoutLicenseRequestRequestTypeDef](./type_defs.md#checkoutlicenserequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -220,7 +232,7 @@ Keyword-only arguments:
 - `NodeId`: `str`
 
 Returns
-[CheckoutLicenseResponseResponseTypeDef](./type_defs.md#checkoutlicenseresponseresponsetypedef).
+[CheckoutLicenseResponseTypeDef](./type_defs.md#checkoutlicenseresponsetypedef).
 
 ### create_grant
 
@@ -232,7 +244,7 @@ Boto3 documentation:
 [LicenseManager.Client.create_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_grant)
 
 Arguments mapping described in
-[CreateGrantRequestTypeDef](./type_defs.md#creategrantrequesttypedef).
+[CreateGrantRequestRequestTypeDef](./type_defs.md#creategrantrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -246,7 +258,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateGrantResponseResponseTypeDef](./type_defs.md#creategrantresponseresponsetypedef).
+[CreateGrantResponseTypeDef](./type_defs.md#creategrantresponsetypedef).
 
 ### create_grant_version
 
@@ -259,7 +271,7 @@ Boto3 documentation:
 [LicenseManager.Client.create_grant_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_grant_version)
 
 Arguments mapping described in
-[CreateGrantVersionRequestTypeDef](./type_defs.md#creategrantversionrequesttypedef).
+[CreateGrantVersionRequestRequestTypeDef](./type_defs.md#creategrantversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -273,7 +285,7 @@ Keyword-only arguments:
 - `SourceVersion`: `str`
 
 Returns
-[CreateGrantVersionResponseResponseTypeDef](./type_defs.md#creategrantversionresponseresponsetypedef).
+[CreateGrantVersionResponseTypeDef](./type_defs.md#creategrantversionresponsetypedef).
 
 ### create_license
 
@@ -285,7 +297,7 @@ Boto3 documentation:
 [LicenseManager.Client.create_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license)
 
 Arguments mapping described in
-[CreateLicenseRequestTypeDef](./type_defs.md#createlicenserequesttypedef).
+[CreateLicenseRequestRequestTypeDef](./type_defs.md#createlicenserequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -308,7 +320,7 @@ Keyword-only arguments:
   `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
 
 Returns
-[CreateLicenseResponseResponseTypeDef](./type_defs.md#createlicenseresponseresponsetypedef).
+[CreateLicenseResponseTypeDef](./type_defs.md#createlicenseresponsetypedef).
 
 ### create_license_configuration
 
@@ -321,7 +333,7 @@ Boto3 documentation:
 [LicenseManager.Client.create_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_configuration)
 
 Arguments mapping described in
-[CreateLicenseConfigurationRequestTypeDef](./type_defs.md#createlicenseconfigurationrequesttypedef).
+[CreateLicenseConfigurationRequestRequestTypeDef](./type_defs.md#createlicenseconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -338,7 +350,7 @@ Keyword-only arguments:
   `List`\[[ProductInformationTypeDef](./type_defs.md#productinformationtypedef)\]
 
 Returns
-[CreateLicenseConfigurationResponseResponseTypeDef](./type_defs.md#createlicenseconfigurationresponseresponsetypedef).
+[CreateLicenseConfigurationResponseTypeDef](./type_defs.md#createlicenseconfigurationresponsetypedef).
 
 ### create_license_manager_report_generator
 
@@ -352,7 +364,7 @@ Boto3 documentation:
 [LicenseManager.Client.create_license_manager_report_generator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_manager_report_generator)
 
 Arguments mapping described in
-[CreateLicenseManagerReportGeneratorRequestTypeDef](./type_defs.md#createlicensemanagerreportgeneratorrequesttypedef).
+[CreateLicenseManagerReportGeneratorRequestRequestTypeDef](./type_defs.md#createlicensemanagerreportgeneratorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -367,7 +379,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateLicenseManagerReportGeneratorResponseResponseTypeDef](./type_defs.md#createlicensemanagerreportgeneratorresponseresponsetypedef).
+[CreateLicenseManagerReportGeneratorResponseTypeDef](./type_defs.md#createlicensemanagerreportgeneratorresponsetypedef).
 
 ### create_license_version
 
@@ -380,7 +392,7 @@ Boto3 documentation:
 [LicenseManager.Client.create_license_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_version)
 
 Arguments mapping described in
-[CreateLicenseVersionRequestTypeDef](./type_defs.md#createlicenseversionrequesttypedef).
+[CreateLicenseVersionRequestRequestTypeDef](./type_defs.md#createlicenseversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -404,7 +416,7 @@ Keyword-only arguments:
 - `SourceVersion`: `str`
 
 Returns
-[CreateLicenseVersionResponseResponseTypeDef](./type_defs.md#createlicenseversionresponseresponsetypedef).
+[CreateLicenseVersionResponseTypeDef](./type_defs.md#createlicenseversionresponsetypedef).
 
 ### create_token
 
@@ -416,7 +428,7 @@ Boto3 documentation:
 [LicenseManager.Client.create_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_token)
 
 Arguments mapping described in
-[CreateTokenRequestTypeDef](./type_defs.md#createtokenrequesttypedef).
+[CreateTokenRequestRequestTypeDef](./type_defs.md#createtokenrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -427,7 +439,7 @@ Keyword-only arguments:
 - `TokenProperties`: `List`\[`str`\]
 
 Returns
-[CreateTokenResponseResponseTypeDef](./type_defs.md#createtokenresponseresponsetypedef).
+[CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef).
 
 ### delete_grant
 
@@ -439,7 +451,7 @@ Boto3 documentation:
 [LicenseManager.Client.delete_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_grant)
 
 Arguments mapping described in
-[DeleteGrantRequestTypeDef](./type_defs.md#deletegrantrequesttypedef).
+[DeleteGrantRequestRequestTypeDef](./type_defs.md#deletegrantrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -448,7 +460,7 @@ Keyword-only arguments:
 - `StatusReason`: `str`
 
 Returns
-[DeleteGrantResponseResponseTypeDef](./type_defs.md#deletegrantresponseresponsetypedef).
+[DeleteGrantResponseTypeDef](./type_defs.md#deletegrantresponsetypedef).
 
 ### delete_license
 
@@ -460,7 +472,7 @@ Boto3 documentation:
 [LicenseManager.Client.delete_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_license)
 
 Arguments mapping described in
-[DeleteLicenseRequestTypeDef](./type_defs.md#deletelicenserequesttypedef).
+[DeleteLicenseRequestRequestTypeDef](./type_defs.md#deletelicenserequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -468,7 +480,7 @@ Keyword-only arguments:
 - `SourceVersion`: `str` *(required)*
 
 Returns
-[DeleteLicenseResponseResponseTypeDef](./type_defs.md#deletelicenseresponseresponsetypedef).
+[DeleteLicenseResponseTypeDef](./type_defs.md#deletelicenseresponsetypedef).
 
 ### delete_license_configuration
 
@@ -481,7 +493,7 @@ Boto3 documentation:
 [LicenseManager.Client.delete_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_license_configuration)
 
 Arguments mapping described in
-[DeleteLicenseConfigurationRequestTypeDef](./type_defs.md#deletelicenseconfigurationrequesttypedef).
+[DeleteLicenseConfigurationRequestRequestTypeDef](./type_defs.md#deletelicenseconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -501,7 +513,7 @@ Boto3 documentation:
 [LicenseManager.Client.delete_license_manager_report_generator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_license_manager_report_generator)
 
 Arguments mapping described in
-[DeleteLicenseManagerReportGeneratorRequestTypeDef](./type_defs.md#deletelicensemanagerreportgeneratorrequesttypedef).
+[DeleteLicenseManagerReportGeneratorRequestRequestTypeDef](./type_defs.md#deletelicensemanagerreportgeneratorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -519,7 +531,7 @@ Boto3 documentation:
 [LicenseManager.Client.delete_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_token)
 
 Arguments mapping described in
-[DeleteTokenRequestTypeDef](./type_defs.md#deletetokenrequesttypedef).
+[DeleteTokenRequestRequestTypeDef](./type_defs.md#deletetokenrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -538,7 +550,7 @@ Boto3 documentation:
 [LicenseManager.Client.extend_license_consumption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.extend_license_consumption)
 
 Arguments mapping described in
-[ExtendLicenseConsumptionRequestTypeDef](./type_defs.md#extendlicenseconsumptionrequesttypedef).
+[ExtendLicenseConsumptionRequestRequestTypeDef](./type_defs.md#extendlicenseconsumptionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -546,7 +558,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ExtendLicenseConsumptionResponseResponseTypeDef](./type_defs.md#extendlicenseconsumptionresponseresponsetypedef).
+[ExtendLicenseConsumptionResponseTypeDef](./type_defs.md#extendlicenseconsumptionresponsetypedef).
 
 ### generate_presigned_url
 
@@ -577,7 +589,7 @@ Boto3 documentation:
 [LicenseManager.Client.get_access_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_access_token)
 
 Arguments mapping described in
-[GetAccessTokenRequestTypeDef](./type_defs.md#getaccesstokenrequesttypedef).
+[GetAccessTokenRequestRequestTypeDef](./type_defs.md#getaccesstokenrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -585,7 +597,7 @@ Keyword-only arguments:
 - `TokenProperties`: `List`\[`str`\]
 
 Returns
-[GetAccessTokenResponseResponseTypeDef](./type_defs.md#getaccesstokenresponseresponsetypedef).
+[GetAccessTokenResponseTypeDef](./type_defs.md#getaccesstokenresponsetypedef).
 
 ### get_grant
 
@@ -597,15 +609,14 @@ Boto3 documentation:
 [LicenseManager.Client.get_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_grant)
 
 Arguments mapping described in
-[GetGrantRequestTypeDef](./type_defs.md#getgrantrequesttypedef).
+[GetGrantRequestRequestTypeDef](./type_defs.md#getgrantrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `GrantArn`: `str` *(required)*
 - `Version`: `str`
 
-Returns
-[GetGrantResponseResponseTypeDef](./type_defs.md#getgrantresponseresponsetypedef).
+Returns [GetGrantResponseTypeDef](./type_defs.md#getgrantresponsetypedef).
 
 ### get_license
 
@@ -617,15 +628,14 @@ Boto3 documentation:
 [LicenseManager.Client.get_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license)
 
 Arguments mapping described in
-[GetLicenseRequestTypeDef](./type_defs.md#getlicenserequesttypedef).
+[GetLicenseRequestRequestTypeDef](./type_defs.md#getlicenserequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `LicenseArn`: `str` *(required)*
 - `Version`: `str`
 
-Returns
-[GetLicenseResponseResponseTypeDef](./type_defs.md#getlicenseresponseresponsetypedef).
+Returns [GetLicenseResponseTypeDef](./type_defs.md#getlicenseresponsetypedef).
 
 ### get_license_configuration
 
@@ -638,14 +648,14 @@ Boto3 documentation:
 [LicenseManager.Client.get_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_configuration)
 
 Arguments mapping described in
-[GetLicenseConfigurationRequestTypeDef](./type_defs.md#getlicenseconfigurationrequesttypedef).
+[GetLicenseConfigurationRequestRequestTypeDef](./type_defs.md#getlicenseconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `LicenseConfigurationArn`: `str` *(required)*
 
 Returns
-[GetLicenseConfigurationResponseResponseTypeDef](./type_defs.md#getlicenseconfigurationresponseresponsetypedef).
+[GetLicenseConfigurationResponseTypeDef](./type_defs.md#getlicenseconfigurationresponsetypedef).
 
 ### get_license_manager_report_generator
 
@@ -658,14 +668,14 @@ Boto3 documentation:
 [LicenseManager.Client.get_license_manager_report_generator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_manager_report_generator)
 
 Arguments mapping described in
-[GetLicenseManagerReportGeneratorRequestTypeDef](./type_defs.md#getlicensemanagerreportgeneratorrequesttypedef).
+[GetLicenseManagerReportGeneratorRequestRequestTypeDef](./type_defs.md#getlicensemanagerreportgeneratorrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `LicenseManagerReportGeneratorArn`: `str` *(required)*
 
 Returns
-[GetLicenseManagerReportGeneratorResponseResponseTypeDef](./type_defs.md#getlicensemanagerreportgeneratorresponseresponsetypedef).
+[GetLicenseManagerReportGeneratorResponseTypeDef](./type_defs.md#getlicensemanagerreportgeneratorresponsetypedef).
 
 ### get_license_usage
 
@@ -678,14 +688,14 @@ Boto3 documentation:
 [LicenseManager.Client.get_license_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_usage)
 
 Arguments mapping described in
-[GetLicenseUsageRequestTypeDef](./type_defs.md#getlicenseusagerequesttypedef).
+[GetLicenseUsageRequestRequestTypeDef](./type_defs.md#getlicenseusagerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `LicenseArn`: `str` *(required)*
 
 Returns
-[GetLicenseUsageResponseResponseTypeDef](./type_defs.md#getlicenseusageresponseresponsetypedef).
+[GetLicenseUsageResponseTypeDef](./type_defs.md#getlicenseusageresponsetypedef).
 
 ### get_service_settings
 
@@ -698,7 +708,7 @@ Boto3 documentation:
 [LicenseManager.Client.get_service_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_service_settings)
 
 Returns
-[GetServiceSettingsResponseResponseTypeDef](./type_defs.md#getservicesettingsresponseresponsetypedef).
+[GetServiceSettingsResponseTypeDef](./type_defs.md#getservicesettingsresponsetypedef).
 
 ### list_associations_for_license_configuration
 
@@ -712,7 +722,7 @@ Boto3 documentation:
 [LicenseManager.Client.list_associations_for_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_associations_for_license_configuration)
 
 Arguments mapping described in
-[ListAssociationsForLicenseConfigurationRequestTypeDef](./type_defs.md#listassociationsforlicenseconfigurationrequesttypedef).
+[ListAssociationsForLicenseConfigurationRequestRequestTypeDef](./type_defs.md#listassociationsforlicenseconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -721,7 +731,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAssociationsForLicenseConfigurationResponseResponseTypeDef](./type_defs.md#listassociationsforlicenseconfigurationresponseresponsetypedef).
+[ListAssociationsForLicenseConfigurationResponseTypeDef](./type_defs.md#listassociationsforlicenseconfigurationresponsetypedef).
 
 ### list_distributed_grants
 
@@ -734,7 +744,7 @@ Boto3 documentation:
 [LicenseManager.Client.list_distributed_grants](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_distributed_grants)
 
 Arguments mapping described in
-[ListDistributedGrantsRequestTypeDef](./type_defs.md#listdistributedgrantsrequesttypedef).
+[ListDistributedGrantsRequestRequestTypeDef](./type_defs.md#listdistributedgrantsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -744,7 +754,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDistributedGrantsResponseResponseTypeDef](./type_defs.md#listdistributedgrantsresponseresponsetypedef).
+[ListDistributedGrantsResponseTypeDef](./type_defs.md#listdistributedgrantsresponsetypedef).
 
 ### list_failures_for_license_configuration_operations
 
@@ -758,7 +768,7 @@ Boto3 documentation:
 [LicenseManager.Client.list_failures_for_license_configuration_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_failures_for_license_configuration_operations)
 
 Arguments mapping described in
-[ListFailuresForLicenseConfigurationOperationsRequestTypeDef](./type_defs.md#listfailuresforlicenseconfigurationoperationsrequesttypedef).
+[ListFailuresForLicenseConfigurationOperationsRequestRequestTypeDef](./type_defs.md#listfailuresforlicenseconfigurationoperationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -767,7 +777,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListFailuresForLicenseConfigurationOperationsResponseResponseTypeDef](./type_defs.md#listfailuresforlicenseconfigurationoperationsresponseresponsetypedef).
+[ListFailuresForLicenseConfigurationOperationsResponseTypeDef](./type_defs.md#listfailuresforlicenseconfigurationoperationsresponsetypedef).
 
 ### list_license_configurations
 
@@ -780,7 +790,7 @@ Boto3 documentation:
 [LicenseManager.Client.list_license_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_configurations)
 
 Arguments mapping described in
-[ListLicenseConfigurationsRequestTypeDef](./type_defs.md#listlicenseconfigurationsrequesttypedef).
+[ListLicenseConfigurationsRequestRequestTypeDef](./type_defs.md#listlicenseconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -790,7 +800,7 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListLicenseConfigurationsResponseResponseTypeDef](./type_defs.md#listlicenseconfigurationsresponseresponsetypedef).
+[ListLicenseConfigurationsResponseTypeDef](./type_defs.md#listlicenseconfigurationsresponsetypedef).
 
 ### list_license_manager_report_generators
 
@@ -804,7 +814,7 @@ Boto3 documentation:
 [LicenseManager.Client.list_license_manager_report_generators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_manager_report_generators)
 
 Arguments mapping described in
-[ListLicenseManagerReportGeneratorsRequestTypeDef](./type_defs.md#listlicensemanagerreportgeneratorsrequesttypedef).
+[ListLicenseManagerReportGeneratorsRequestRequestTypeDef](./type_defs.md#listlicensemanagerreportgeneratorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -813,7 +823,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListLicenseManagerReportGeneratorsResponseResponseTypeDef](./type_defs.md#listlicensemanagerreportgeneratorsresponseresponsetypedef).
+[ListLicenseManagerReportGeneratorsResponseTypeDef](./type_defs.md#listlicensemanagerreportgeneratorsresponsetypedef).
 
 ### list_license_specifications_for_resource
 
@@ -827,7 +837,7 @@ Boto3 documentation:
 [LicenseManager.Client.list_license_specifications_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_specifications_for_resource)
 
 Arguments mapping described in
-[ListLicenseSpecificationsForResourceRequestTypeDef](./type_defs.md#listlicensespecificationsforresourcerequesttypedef).
+[ListLicenseSpecificationsForResourceRequestRequestTypeDef](./type_defs.md#listlicensespecificationsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -836,7 +846,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListLicenseSpecificationsForResourceResponseResponseTypeDef](./type_defs.md#listlicensespecificationsforresourceresponseresponsetypedef).
+[ListLicenseSpecificationsForResourceResponseTypeDef](./type_defs.md#listlicensespecificationsforresourceresponsetypedef).
 
 ### list_license_versions
 
@@ -849,7 +859,7 @@ Boto3 documentation:
 [LicenseManager.Client.list_license_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_versions)
 
 Arguments mapping described in
-[ListLicenseVersionsRequestTypeDef](./type_defs.md#listlicenseversionsrequesttypedef).
+[ListLicenseVersionsRequestRequestTypeDef](./type_defs.md#listlicenseversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -858,7 +868,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListLicenseVersionsResponseResponseTypeDef](./type_defs.md#listlicenseversionsresponseresponsetypedef).
+[ListLicenseVersionsResponseTypeDef](./type_defs.md#listlicenseversionsresponsetypedef).
 
 ### list_licenses
 
@@ -870,7 +880,7 @@ Boto3 documentation:
 [LicenseManager.Client.list_licenses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_licenses)
 
 Arguments mapping described in
-[ListLicensesRequestTypeDef](./type_defs.md#listlicensesrequesttypedef).
+[ListLicensesRequestRequestTypeDef](./type_defs.md#listlicensesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -880,7 +890,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListLicensesResponseResponseTypeDef](./type_defs.md#listlicensesresponseresponsetypedef).
+[ListLicensesResponseTypeDef](./type_defs.md#listlicensesresponsetypedef).
 
 ### list_received_grants
 
@@ -893,7 +903,7 @@ Boto3 documentation:
 [LicenseManager.Client.list_received_grants](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_received_grants)
 
 Arguments mapping described in
-[ListReceivedGrantsRequestTypeDef](./type_defs.md#listreceivedgrantsrequesttypedef).
+[ListReceivedGrantsRequestRequestTypeDef](./type_defs.md#listreceivedgrantsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -903,7 +913,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListReceivedGrantsResponseResponseTypeDef](./type_defs.md#listreceivedgrantsresponseresponsetypedef).
+[ListReceivedGrantsResponseTypeDef](./type_defs.md#listreceivedgrantsresponsetypedef).
 
 ### list_received_licenses
 
@@ -916,7 +926,7 @@ Boto3 documentation:
 [LicenseManager.Client.list_received_licenses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_received_licenses)
 
 Arguments mapping described in
-[ListReceivedLicensesRequestTypeDef](./type_defs.md#listreceivedlicensesrequesttypedef).
+[ListReceivedLicensesRequestRequestTypeDef](./type_defs.md#listreceivedlicensesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -926,7 +936,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListReceivedLicensesResponseResponseTypeDef](./type_defs.md#listreceivedlicensesresponseresponsetypedef).
+[ListReceivedLicensesResponseTypeDef](./type_defs.md#listreceivedlicensesresponsetypedef).
 
 ### list_resource_inventory
 
@@ -939,7 +949,7 @@ Boto3 documentation:
 [LicenseManager.Client.list_resource_inventory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_resource_inventory)
 
 Arguments mapping described in
-[ListResourceInventoryRequestTypeDef](./type_defs.md#listresourceinventoryrequesttypedef).
+[ListResourceInventoryRequestRequestTypeDef](./type_defs.md#listresourceinventoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -949,7 +959,7 @@ Keyword-only arguments:
   `List`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
 
 Returns
-[ListResourceInventoryResponseResponseTypeDef](./type_defs.md#listresourceinventoryresponseresponsetypedef).
+[ListResourceInventoryResponseTypeDef](./type_defs.md#listresourceinventoryresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -962,14 +972,14 @@ Boto3 documentation:
 [LicenseManager.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_tokens
 
@@ -981,7 +991,7 @@ Boto3 documentation:
 [LicenseManager.Client.list_tokens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_tokens)
 
 Arguments mapping described in
-[ListTokensRequestTypeDef](./type_defs.md#listtokensrequesttypedef).
+[ListTokensRequestRequestTypeDef](./type_defs.md#listtokensrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -990,8 +1000,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListTokensResponseResponseTypeDef](./type_defs.md#listtokensresponseresponsetypedef).
+Returns [ListTokensResponseTypeDef](./type_defs.md#listtokensresponsetypedef).
 
 ### list_usage_for_license_configuration
 
@@ -1005,7 +1014,7 @@ Boto3 documentation:
 [LicenseManager.Client.list_usage_for_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_usage_for_license_configuration)
 
 Arguments mapping described in
-[ListUsageForLicenseConfigurationRequestTypeDef](./type_defs.md#listusageforlicenseconfigurationrequesttypedef).
+[ListUsageForLicenseConfigurationRequestRequestTypeDef](./type_defs.md#listusageforlicenseconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1015,7 +1024,7 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListUsageForLicenseConfigurationResponseResponseTypeDef](./type_defs.md#listusageforlicenseconfigurationresponseresponsetypedef).
+[ListUsageForLicenseConfigurationResponseTypeDef](./type_defs.md#listusageforlicenseconfigurationresponsetypedef).
 
 ### reject_grant
 
@@ -1027,14 +1036,14 @@ Boto3 documentation:
 [LicenseManager.Client.reject_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.reject_grant)
 
 Arguments mapping described in
-[RejectGrantRequestTypeDef](./type_defs.md#rejectgrantrequesttypedef).
+[RejectGrantRequestRequestTypeDef](./type_defs.md#rejectgrantrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `GrantArn`: `str` *(required)*
 
 Returns
-[RejectGrantResponseResponseTypeDef](./type_defs.md#rejectgrantresponseresponsetypedef).
+[RejectGrantResponseTypeDef](./type_defs.md#rejectgrantresponsetypedef).
 
 ### tag_resource
 
@@ -1046,7 +1055,7 @@ Boto3 documentation:
 [LicenseManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1065,7 +1074,7 @@ Boto3 documentation:
 [LicenseManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1085,7 +1094,7 @@ Boto3 documentation:
 [LicenseManager.Client.update_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_license_configuration)
 
 Arguments mapping described in
-[UpdateLicenseConfigurationRequestTypeDef](./type_defs.md#updatelicenseconfigurationrequesttypedef).
+[UpdateLicenseConfigurationRequestRequestTypeDef](./type_defs.md#updatelicenseconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1115,7 +1124,7 @@ Boto3 documentation:
 [LicenseManager.Client.update_license_manager_report_generator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_license_manager_report_generator)
 
 Arguments mapping described in
-[UpdateLicenseManagerReportGeneratorRequestTypeDef](./type_defs.md#updatelicensemanagerreportgeneratorrequesttypedef).
+[UpdateLicenseManagerReportGeneratorRequestRequestTypeDef](./type_defs.md#updatelicensemanagerreportgeneratorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1144,7 +1153,7 @@ Boto3 documentation:
 [LicenseManager.Client.update_license_specifications_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_license_specifications_for_resource)
 
 Arguments mapping described in
-[UpdateLicenseSpecificationsForResourceRequestTypeDef](./type_defs.md#updatelicensespecificationsforresourcerequesttypedef).
+[UpdateLicenseSpecificationsForResourceRequestRequestTypeDef](./type_defs.md#updatelicensespecificationsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1167,7 +1176,7 @@ Boto3 documentation:
 [LicenseManager.Client.update_service_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_service_settings)
 
 Arguments mapping described in
-[UpdateServiceSettingsRequestTypeDef](./type_defs.md#updateservicesettingsrequesttypedef).
+[UpdateServiceSettingsRequestRequestTypeDef](./type_defs.md#updateservicesettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 

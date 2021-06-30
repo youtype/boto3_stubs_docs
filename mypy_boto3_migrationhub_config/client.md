@@ -11,6 +11,7 @@ type annotations stubs module
   - [MigrationHubConfigClient](#migrationhubconfigclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_home_region_control](#create_home_region_control)
     - [describe_home_region_controls](#describe_home_region_controls)
@@ -57,6 +58,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+MigrationHubConfigClient exceptions.
+
+Type annotations for `boto3.client("migrationhub-config").exceptions` method.
+
+Boto3 documentation:
+[MigrationHubConfig.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -83,7 +95,7 @@ Boto3 documentation:
 [MigrationHubConfig.Client.create_home_region_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.create_home_region_control)
 
 Arguments mapping described in
-[CreateHomeRegionControlRequestTypeDef](./type_defs.md#createhomeregioncontrolrequesttypedef).
+[CreateHomeRegionControlRequestRequestTypeDef](./type_defs.md#createhomeregioncontrolrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -92,7 +104,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateHomeRegionControlResultResponseTypeDef](./type_defs.md#createhomeregioncontrolresultresponsetypedef).
+[CreateHomeRegionControlResultTypeDef](./type_defs.md#createhomeregioncontrolresulttypedef).
 
 ### describe_home_region_controls
 
@@ -105,7 +117,7 @@ Boto3 documentation:
 [MigrationHubConfig.Client.describe_home_region_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.describe_home_region_controls)
 
 Arguments mapping described in
-[DescribeHomeRegionControlsRequestTypeDef](./type_defs.md#describehomeregioncontrolsrequesttypedef).
+[DescribeHomeRegionControlsRequestRequestTypeDef](./type_defs.md#describehomeregioncontrolsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -116,7 +128,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeHomeRegionControlsResultResponseTypeDef](./type_defs.md#describehomeregioncontrolsresultresponsetypedef).
+[DescribeHomeRegionControlsResultTypeDef](./type_defs.md#describehomeregioncontrolsresulttypedef).
 
 ### generate_presigned_url
 
@@ -148,4 +160,4 @@ Boto3 documentation:
 [MigrationHubConfig.Client.get_home_region](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.get_home_region)
 
 Returns
-[GetHomeRegionResultResponseTypeDef](./type_defs.md#gethomeregionresultresponsetypedef).
+[GetHomeRegionResultTypeDef](./type_defs.md#gethomeregionresulttypedef).

@@ -13,67 +13,67 @@ type annotations stubs module
   - [AccountAssignmentOperationStatusMetadataTypeDef](#accountassignmentoperationstatusmetadatatypedef)
   - [AccountAssignmentOperationStatusTypeDef](#accountassignmentoperationstatustypedef)
   - [AccountAssignmentTypeDef](#accountassignmenttypedef)
-  - [AttachManagedPolicyToPermissionSetRequestTypeDef](#attachmanagedpolicytopermissionsetrequesttypedef)
+  - [AttachManagedPolicyToPermissionSetRequestRequestTypeDef](#attachmanagedpolicytopermissionsetrequestrequesttypedef)
   - [AttachedManagedPolicyTypeDef](#attachedmanagedpolicytypedef)
-  - [CreateAccountAssignmentRequestTypeDef](#createaccountassignmentrequesttypedef)
-  - [CreateAccountAssignmentResponseResponseTypeDef](#createaccountassignmentresponseresponsetypedef)
-  - [CreateInstanceAccessControlAttributeConfigurationRequestTypeDef](#createinstanceaccesscontrolattributeconfigurationrequesttypedef)
-  - [CreatePermissionSetRequestTypeDef](#createpermissionsetrequesttypedef)
-  - [CreatePermissionSetResponseResponseTypeDef](#createpermissionsetresponseresponsetypedef)
-  - [DeleteAccountAssignmentRequestTypeDef](#deleteaccountassignmentrequesttypedef)
-  - [DeleteAccountAssignmentResponseResponseTypeDef](#deleteaccountassignmentresponseresponsetypedef)
-  - [DeleteInlinePolicyFromPermissionSetRequestTypeDef](#deleteinlinepolicyfrompermissionsetrequesttypedef)
-  - [DeleteInstanceAccessControlAttributeConfigurationRequestTypeDef](#deleteinstanceaccesscontrolattributeconfigurationrequesttypedef)
-  - [DeletePermissionSetRequestTypeDef](#deletepermissionsetrequesttypedef)
-  - [DescribeAccountAssignmentCreationStatusRequestTypeDef](#describeaccountassignmentcreationstatusrequesttypedef)
-  - [DescribeAccountAssignmentCreationStatusResponseResponseTypeDef](#describeaccountassignmentcreationstatusresponseresponsetypedef)
-  - [DescribeAccountAssignmentDeletionStatusRequestTypeDef](#describeaccountassignmentdeletionstatusrequesttypedef)
-  - [DescribeAccountAssignmentDeletionStatusResponseResponseTypeDef](#describeaccountassignmentdeletionstatusresponseresponsetypedef)
-  - [DescribeInstanceAccessControlAttributeConfigurationRequestTypeDef](#describeinstanceaccesscontrolattributeconfigurationrequesttypedef)
-  - [DescribeInstanceAccessControlAttributeConfigurationResponseResponseTypeDef](#describeinstanceaccesscontrolattributeconfigurationresponseresponsetypedef)
-  - [DescribePermissionSetProvisioningStatusRequestTypeDef](#describepermissionsetprovisioningstatusrequesttypedef)
-  - [DescribePermissionSetProvisioningStatusResponseResponseTypeDef](#describepermissionsetprovisioningstatusresponseresponsetypedef)
-  - [DescribePermissionSetRequestTypeDef](#describepermissionsetrequesttypedef)
-  - [DescribePermissionSetResponseResponseTypeDef](#describepermissionsetresponseresponsetypedef)
-  - [DetachManagedPolicyFromPermissionSetRequestTypeDef](#detachmanagedpolicyfrompermissionsetrequesttypedef)
-  - [GetInlinePolicyForPermissionSetRequestTypeDef](#getinlinepolicyforpermissionsetrequesttypedef)
-  - [GetInlinePolicyForPermissionSetResponseResponseTypeDef](#getinlinepolicyforpermissionsetresponseresponsetypedef)
+  - [CreateAccountAssignmentRequestRequestTypeDef](#createaccountassignmentrequestrequesttypedef)
+  - [CreateAccountAssignmentResponseTypeDef](#createaccountassignmentresponsetypedef)
+  - [CreateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef](#createinstanceaccesscontrolattributeconfigurationrequestrequesttypedef)
+  - [CreatePermissionSetRequestRequestTypeDef](#createpermissionsetrequestrequesttypedef)
+  - [CreatePermissionSetResponseTypeDef](#createpermissionsetresponsetypedef)
+  - [DeleteAccountAssignmentRequestRequestTypeDef](#deleteaccountassignmentrequestrequesttypedef)
+  - [DeleteAccountAssignmentResponseTypeDef](#deleteaccountassignmentresponsetypedef)
+  - [DeleteInlinePolicyFromPermissionSetRequestRequestTypeDef](#deleteinlinepolicyfrompermissionsetrequestrequesttypedef)
+  - [DeleteInstanceAccessControlAttributeConfigurationRequestRequestTypeDef](#deleteinstanceaccesscontrolattributeconfigurationrequestrequesttypedef)
+  - [DeletePermissionSetRequestRequestTypeDef](#deletepermissionsetrequestrequesttypedef)
+  - [DescribeAccountAssignmentCreationStatusRequestRequestTypeDef](#describeaccountassignmentcreationstatusrequestrequesttypedef)
+  - [DescribeAccountAssignmentCreationStatusResponseTypeDef](#describeaccountassignmentcreationstatusresponsetypedef)
+  - [DescribeAccountAssignmentDeletionStatusRequestRequestTypeDef](#describeaccountassignmentdeletionstatusrequestrequesttypedef)
+  - [DescribeAccountAssignmentDeletionStatusResponseTypeDef](#describeaccountassignmentdeletionstatusresponsetypedef)
+  - [DescribeInstanceAccessControlAttributeConfigurationRequestRequestTypeDef](#describeinstanceaccesscontrolattributeconfigurationrequestrequesttypedef)
+  - [DescribeInstanceAccessControlAttributeConfigurationResponseTypeDef](#describeinstanceaccesscontrolattributeconfigurationresponsetypedef)
+  - [DescribePermissionSetProvisioningStatusRequestRequestTypeDef](#describepermissionsetprovisioningstatusrequestrequesttypedef)
+  - [DescribePermissionSetProvisioningStatusResponseTypeDef](#describepermissionsetprovisioningstatusresponsetypedef)
+  - [DescribePermissionSetRequestRequestTypeDef](#describepermissionsetrequestrequesttypedef)
+  - [DescribePermissionSetResponseTypeDef](#describepermissionsetresponsetypedef)
+  - [DetachManagedPolicyFromPermissionSetRequestRequestTypeDef](#detachmanagedpolicyfrompermissionsetrequestrequesttypedef)
+  - [GetInlinePolicyForPermissionSetRequestRequestTypeDef](#getinlinepolicyforpermissionsetrequestrequesttypedef)
+  - [GetInlinePolicyForPermissionSetResponseTypeDef](#getinlinepolicyforpermissionsetresponsetypedef)
   - [InstanceAccessControlAttributeConfigurationTypeDef](#instanceaccesscontrolattributeconfigurationtypedef)
   - [InstanceMetadataTypeDef](#instancemetadatatypedef)
-  - [ListAccountAssignmentCreationStatusRequestTypeDef](#listaccountassignmentcreationstatusrequesttypedef)
-  - [ListAccountAssignmentCreationStatusResponseResponseTypeDef](#listaccountassignmentcreationstatusresponseresponsetypedef)
-  - [ListAccountAssignmentDeletionStatusRequestTypeDef](#listaccountassignmentdeletionstatusrequesttypedef)
-  - [ListAccountAssignmentDeletionStatusResponseResponseTypeDef](#listaccountassignmentdeletionstatusresponseresponsetypedef)
-  - [ListAccountAssignmentsRequestTypeDef](#listaccountassignmentsrequesttypedef)
-  - [ListAccountAssignmentsResponseResponseTypeDef](#listaccountassignmentsresponseresponsetypedef)
-  - [ListAccountsForProvisionedPermissionSetRequestTypeDef](#listaccountsforprovisionedpermissionsetrequesttypedef)
-  - [ListAccountsForProvisionedPermissionSetResponseResponseTypeDef](#listaccountsforprovisionedpermissionsetresponseresponsetypedef)
-  - [ListInstancesRequestTypeDef](#listinstancesrequesttypedef)
-  - [ListInstancesResponseResponseTypeDef](#listinstancesresponseresponsetypedef)
-  - [ListManagedPoliciesInPermissionSetRequestTypeDef](#listmanagedpoliciesinpermissionsetrequesttypedef)
-  - [ListManagedPoliciesInPermissionSetResponseResponseTypeDef](#listmanagedpoliciesinpermissionsetresponseresponsetypedef)
-  - [ListPermissionSetProvisioningStatusRequestTypeDef](#listpermissionsetprovisioningstatusrequesttypedef)
-  - [ListPermissionSetProvisioningStatusResponseResponseTypeDef](#listpermissionsetprovisioningstatusresponseresponsetypedef)
-  - [ListPermissionSetsProvisionedToAccountRequestTypeDef](#listpermissionsetsprovisionedtoaccountrequesttypedef)
-  - [ListPermissionSetsProvisionedToAccountResponseResponseTypeDef](#listpermissionsetsprovisionedtoaccountresponseresponsetypedef)
-  - [ListPermissionSetsRequestTypeDef](#listpermissionsetsrequesttypedef)
-  - [ListPermissionSetsResponseResponseTypeDef](#listpermissionsetsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListAccountAssignmentCreationStatusRequestRequestTypeDef](#listaccountassignmentcreationstatusrequestrequesttypedef)
+  - [ListAccountAssignmentCreationStatusResponseTypeDef](#listaccountassignmentcreationstatusresponsetypedef)
+  - [ListAccountAssignmentDeletionStatusRequestRequestTypeDef](#listaccountassignmentdeletionstatusrequestrequesttypedef)
+  - [ListAccountAssignmentDeletionStatusResponseTypeDef](#listaccountassignmentdeletionstatusresponsetypedef)
+  - [ListAccountAssignmentsRequestRequestTypeDef](#listaccountassignmentsrequestrequesttypedef)
+  - [ListAccountAssignmentsResponseTypeDef](#listaccountassignmentsresponsetypedef)
+  - [ListAccountsForProvisionedPermissionSetRequestRequestTypeDef](#listaccountsforprovisionedpermissionsetrequestrequesttypedef)
+  - [ListAccountsForProvisionedPermissionSetResponseTypeDef](#listaccountsforprovisionedpermissionsetresponsetypedef)
+  - [ListInstancesRequestRequestTypeDef](#listinstancesrequestrequesttypedef)
+  - [ListInstancesResponseTypeDef](#listinstancesresponsetypedef)
+  - [ListManagedPoliciesInPermissionSetRequestRequestTypeDef](#listmanagedpoliciesinpermissionsetrequestrequesttypedef)
+  - [ListManagedPoliciesInPermissionSetResponseTypeDef](#listmanagedpoliciesinpermissionsetresponsetypedef)
+  - [ListPermissionSetProvisioningStatusRequestRequestTypeDef](#listpermissionsetprovisioningstatusrequestrequesttypedef)
+  - [ListPermissionSetProvisioningStatusResponseTypeDef](#listpermissionsetprovisioningstatusresponsetypedef)
+  - [ListPermissionSetsProvisionedToAccountRequestRequestTypeDef](#listpermissionsetsprovisionedtoaccountrequestrequesttypedef)
+  - [ListPermissionSetsProvisionedToAccountResponseTypeDef](#listpermissionsetsprovisionedtoaccountresponsetypedef)
+  - [ListPermissionSetsRequestRequestTypeDef](#listpermissionsetsrequestrequesttypedef)
+  - [ListPermissionSetsResponseTypeDef](#listpermissionsetsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [OperationStatusFilterTypeDef](#operationstatusfiltertypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PermissionSetProvisioningStatusMetadataTypeDef](#permissionsetprovisioningstatusmetadatatypedef)
   - [PermissionSetProvisioningStatusTypeDef](#permissionsetprovisioningstatustypedef)
   - [PermissionSetTypeDef](#permissionsettypedef)
-  - [ProvisionPermissionSetRequestTypeDef](#provisionpermissionsetrequesttypedef)
-  - [ProvisionPermissionSetResponseResponseTypeDef](#provisionpermissionsetresponseresponsetypedef)
-  - [PutInlinePolicyToPermissionSetRequestTypeDef](#putinlinepolicytopermissionsetrequesttypedef)
+  - [ProvisionPermissionSetRequestRequestTypeDef](#provisionpermissionsetrequestrequesttypedef)
+  - [ProvisionPermissionSetResponseTypeDef](#provisionpermissionsetresponsetypedef)
+  - [PutInlinePolicyToPermissionSetRequestRequestTypeDef](#putinlinepolicytopermissionsetrequestrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateInstanceAccessControlAttributeConfigurationRequestTypeDef](#updateinstanceaccesscontrolattributeconfigurationrequesttypedef)
-  - [UpdatePermissionSetRequestTypeDef](#updatepermissionsetrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef](#updateinstanceaccesscontrolattributeconfigurationrequestrequesttypedef)
+  - [UpdatePermissionSetRequestRequestTypeDef](#updatepermissionsetrequestrequesttypedef)
 
 ## AccessControlAttributeTypeDef
 
@@ -141,10 +141,10 @@ Optional fields:
 - `PrincipalType`: [PrincipalTypeType](./literals.md#principaltypetype)
 - `PrincipalId`: `str`
 
-## AttachManagedPolicyToPermissionSetRequestTypeDef
+## AttachManagedPolicyToPermissionSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import AttachManagedPolicyToPermissionSetRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import AttachManagedPolicyToPermissionSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -164,10 +164,10 @@ Optional fields:
 - `Name`: `str`
 - `Arn`: `str`
 
-## CreateAccountAssignmentRequestTypeDef
+## CreateAccountAssignmentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import CreateAccountAssignmentRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import CreateAccountAssignmentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -180,10 +180,10 @@ Required fields:
 - `PrincipalType`: [PrincipalTypeType](./literals.md#principaltypetype)
 - `PrincipalId`: `str`
 
-## CreateAccountAssignmentResponseResponseTypeDef
+## CreateAccountAssignmentResponseTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import CreateAccountAssignmentResponseResponseTypeDef
+from mypy_boto3_sso_admin.type_defs import CreateAccountAssignmentResponseTypeDef
 ```
 
 Required fields:
@@ -193,10 +193,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateInstanceAccessControlAttributeConfigurationRequestTypeDef
+## CreateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import CreateInstanceAccessControlAttributeConfigurationRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import CreateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -205,10 +205,10 @@ Required fields:
 - `InstanceAccessControlAttributeConfiguration`:
   [InstanceAccessControlAttributeConfigurationTypeDef](./type_defs.md#instanceaccesscontrolattributeconfigurationtypedef)
 
-## CreatePermissionSetRequestTypeDef
+## CreatePermissionSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import CreatePermissionSetRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import CreatePermissionSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -223,10 +223,10 @@ Optional fields:
 - `RelayState`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreatePermissionSetResponseResponseTypeDef
+## CreatePermissionSetResponseTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import CreatePermissionSetResponseResponseTypeDef
+from mypy_boto3_sso_admin.type_defs import CreatePermissionSetResponseTypeDef
 ```
 
 Required fields:
@@ -235,10 +235,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteAccountAssignmentRequestTypeDef
+## DeleteAccountAssignmentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import DeleteAccountAssignmentRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import DeleteAccountAssignmentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -251,10 +251,10 @@ Required fields:
 - `PrincipalType`: [PrincipalTypeType](./literals.md#principaltypetype)
 - `PrincipalId`: `str`
 
-## DeleteAccountAssignmentResponseResponseTypeDef
+## DeleteAccountAssignmentResponseTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import DeleteAccountAssignmentResponseResponseTypeDef
+from mypy_boto3_sso_admin.type_defs import DeleteAccountAssignmentResponseTypeDef
 ```
 
 Required fields:
@@ -264,10 +264,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteInlinePolicyFromPermissionSetRequestTypeDef
+## DeleteInlinePolicyFromPermissionSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import DeleteInlinePolicyFromPermissionSetRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import DeleteInlinePolicyFromPermissionSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -275,20 +275,20 @@ Required fields:
 - `InstanceArn`: `str`
 - `PermissionSetArn`: `str`
 
-## DeleteInstanceAccessControlAttributeConfigurationRequestTypeDef
+## DeleteInstanceAccessControlAttributeConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import DeleteInstanceAccessControlAttributeConfigurationRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import DeleteInstanceAccessControlAttributeConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `InstanceArn`: `str`
 
-## DeletePermissionSetRequestTypeDef
+## DeletePermissionSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import DeletePermissionSetRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import DeletePermissionSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -296,10 +296,10 @@ Required fields:
 - `InstanceArn`: `str`
 - `PermissionSetArn`: `str`
 
-## DescribeAccountAssignmentCreationStatusRequestTypeDef
+## DescribeAccountAssignmentCreationStatusRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import DescribeAccountAssignmentCreationStatusRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import DescribeAccountAssignmentCreationStatusRequestRequestTypeDef
 ```
 
 Required fields:
@@ -307,10 +307,10 @@ Required fields:
 - `InstanceArn`: `str`
 - `AccountAssignmentCreationRequestId`: `str`
 
-## DescribeAccountAssignmentCreationStatusResponseResponseTypeDef
+## DescribeAccountAssignmentCreationStatusResponseTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import DescribeAccountAssignmentCreationStatusResponseResponseTypeDef
+from mypy_boto3_sso_admin.type_defs import DescribeAccountAssignmentCreationStatusResponseTypeDef
 ```
 
 Required fields:
@@ -320,10 +320,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAccountAssignmentDeletionStatusRequestTypeDef
+## DescribeAccountAssignmentDeletionStatusRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import DescribeAccountAssignmentDeletionStatusRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import DescribeAccountAssignmentDeletionStatusRequestRequestTypeDef
 ```
 
 Required fields:
@@ -331,10 +331,10 @@ Required fields:
 - `InstanceArn`: `str`
 - `AccountAssignmentDeletionRequestId`: `str`
 
-## DescribeAccountAssignmentDeletionStatusResponseResponseTypeDef
+## DescribeAccountAssignmentDeletionStatusResponseTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import DescribeAccountAssignmentDeletionStatusResponseResponseTypeDef
+from mypy_boto3_sso_admin.type_defs import DescribeAccountAssignmentDeletionStatusResponseTypeDef
 ```
 
 Required fields:
@@ -344,20 +344,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInstanceAccessControlAttributeConfigurationRequestTypeDef
+## DescribeInstanceAccessControlAttributeConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import DescribeInstanceAccessControlAttributeConfigurationRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import DescribeInstanceAccessControlAttributeConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `InstanceArn`: `str`
 
-## DescribeInstanceAccessControlAttributeConfigurationResponseResponseTypeDef
+## DescribeInstanceAccessControlAttributeConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import DescribeInstanceAccessControlAttributeConfigurationResponseResponseTypeDef
+from mypy_boto3_sso_admin.type_defs import DescribeInstanceAccessControlAttributeConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -370,10 +370,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePermissionSetProvisioningStatusRequestTypeDef
+## DescribePermissionSetProvisioningStatusRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import DescribePermissionSetProvisioningStatusRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import DescribePermissionSetProvisioningStatusRequestRequestTypeDef
 ```
 
 Required fields:
@@ -381,10 +381,10 @@ Required fields:
 - `InstanceArn`: `str`
 - `ProvisionPermissionSetRequestId`: `str`
 
-## DescribePermissionSetProvisioningStatusResponseResponseTypeDef
+## DescribePermissionSetProvisioningStatusResponseTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import DescribePermissionSetProvisioningStatusResponseResponseTypeDef
+from mypy_boto3_sso_admin.type_defs import DescribePermissionSetProvisioningStatusResponseTypeDef
 ```
 
 Required fields:
@@ -394,10 +394,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePermissionSetRequestTypeDef
+## DescribePermissionSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import DescribePermissionSetRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import DescribePermissionSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -405,10 +405,10 @@ Required fields:
 - `InstanceArn`: `str`
 - `PermissionSetArn`: `str`
 
-## DescribePermissionSetResponseResponseTypeDef
+## DescribePermissionSetResponseTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import DescribePermissionSetResponseResponseTypeDef
+from mypy_boto3_sso_admin.type_defs import DescribePermissionSetResponseTypeDef
 ```
 
 Required fields:
@@ -417,10 +417,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetachManagedPolicyFromPermissionSetRequestTypeDef
+## DetachManagedPolicyFromPermissionSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import DetachManagedPolicyFromPermissionSetRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import DetachManagedPolicyFromPermissionSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -429,10 +429,10 @@ Required fields:
 - `PermissionSetArn`: `str`
 - `ManagedPolicyArn`: `str`
 
-## GetInlinePolicyForPermissionSetRequestTypeDef
+## GetInlinePolicyForPermissionSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import GetInlinePolicyForPermissionSetRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import GetInlinePolicyForPermissionSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -440,10 +440,10 @@ Required fields:
 - `InstanceArn`: `str`
 - `PermissionSetArn`: `str`
 
-## GetInlinePolicyForPermissionSetResponseResponseTypeDef
+## GetInlinePolicyForPermissionSetResponseTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import GetInlinePolicyForPermissionSetResponseResponseTypeDef
+from mypy_boto3_sso_admin.type_defs import GetInlinePolicyForPermissionSetResponseTypeDef
 ```
 
 Required fields:
@@ -474,10 +474,10 @@ Optional fields:
 - `InstanceArn`: `str`
 - `IdentityStoreId`: `str`
 
-## ListAccountAssignmentCreationStatusRequestTypeDef
+## ListAccountAssignmentCreationStatusRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentCreationStatusRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentCreationStatusRequestRequestTypeDef
 ```
 
 Required fields:
@@ -491,10 +491,10 @@ Optional fields:
 - `Filter`:
   [OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef)
 
-## ListAccountAssignmentCreationStatusResponseResponseTypeDef
+## ListAccountAssignmentCreationStatusResponseTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentCreationStatusResponseResponseTypeDef
+from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentCreationStatusResponseTypeDef
 ```
 
 Required fields:
@@ -505,10 +505,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAccountAssignmentDeletionStatusRequestTypeDef
+## ListAccountAssignmentDeletionStatusRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentDeletionStatusRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentDeletionStatusRequestRequestTypeDef
 ```
 
 Required fields:
@@ -522,10 +522,10 @@ Optional fields:
 - `Filter`:
   [OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef)
 
-## ListAccountAssignmentDeletionStatusResponseResponseTypeDef
+## ListAccountAssignmentDeletionStatusResponseTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentDeletionStatusResponseResponseTypeDef
+from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentDeletionStatusResponseTypeDef
 ```
 
 Required fields:
@@ -536,10 +536,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAccountAssignmentsRequestTypeDef
+## ListAccountAssignmentsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentsRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -553,10 +553,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListAccountAssignmentsResponseResponseTypeDef
+## ListAccountAssignmentsResponseTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentsResponseResponseTypeDef
+from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentsResponseTypeDef
 ```
 
 Required fields:
@@ -567,10 +567,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAccountsForProvisionedPermissionSetRequestTypeDef
+## ListAccountsForProvisionedPermissionSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import ListAccountsForProvisionedPermissionSetRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import ListAccountsForProvisionedPermissionSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -585,10 +585,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListAccountsForProvisionedPermissionSetResponseResponseTypeDef
+## ListAccountsForProvisionedPermissionSetResponseTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import ListAccountsForProvisionedPermissionSetResponseResponseTypeDef
+from mypy_boto3_sso_admin.type_defs import ListAccountsForProvisionedPermissionSetResponseTypeDef
 ```
 
 Required fields:
@@ -598,10 +598,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInstancesRequestTypeDef
+## ListInstancesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import ListInstancesRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import ListInstancesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -609,10 +609,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListInstancesResponseResponseTypeDef
+## ListInstancesResponseTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import ListInstancesResponseResponseTypeDef
+from mypy_boto3_sso_admin.type_defs import ListInstancesResponseTypeDef
 ```
 
 Required fields:
@@ -623,10 +623,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListManagedPoliciesInPermissionSetRequestTypeDef
+## ListManagedPoliciesInPermissionSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import ListManagedPoliciesInPermissionSetRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import ListManagedPoliciesInPermissionSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -639,10 +639,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListManagedPoliciesInPermissionSetResponseResponseTypeDef
+## ListManagedPoliciesInPermissionSetResponseTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import ListManagedPoliciesInPermissionSetResponseResponseTypeDef
+from mypy_boto3_sso_admin.type_defs import ListManagedPoliciesInPermissionSetResponseTypeDef
 ```
 
 Required fields:
@@ -653,10 +653,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPermissionSetProvisioningStatusRequestTypeDef
+## ListPermissionSetProvisioningStatusRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import ListPermissionSetProvisioningStatusRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import ListPermissionSetProvisioningStatusRequestRequestTypeDef
 ```
 
 Required fields:
@@ -670,10 +670,10 @@ Optional fields:
 - `Filter`:
   [OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef)
 
-## ListPermissionSetProvisioningStatusResponseResponseTypeDef
+## ListPermissionSetProvisioningStatusResponseTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import ListPermissionSetProvisioningStatusResponseResponseTypeDef
+from mypy_boto3_sso_admin.type_defs import ListPermissionSetProvisioningStatusResponseTypeDef
 ```
 
 Required fields:
@@ -684,10 +684,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPermissionSetsProvisionedToAccountRequestTypeDef
+## ListPermissionSetsProvisionedToAccountRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import ListPermissionSetsProvisionedToAccountRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import ListPermissionSetsProvisionedToAccountRequestRequestTypeDef
 ```
 
 Required fields:
@@ -702,10 +702,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListPermissionSetsProvisionedToAccountResponseResponseTypeDef
+## ListPermissionSetsProvisionedToAccountResponseTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import ListPermissionSetsProvisionedToAccountResponseResponseTypeDef
+from mypy_boto3_sso_admin.type_defs import ListPermissionSetsProvisionedToAccountResponseTypeDef
 ```
 
 Required fields:
@@ -715,10 +715,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPermissionSetsRequestTypeDef
+## ListPermissionSetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import ListPermissionSetsRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import ListPermissionSetsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -730,10 +730,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListPermissionSetsResponseResponseTypeDef
+## ListPermissionSetsResponseTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import ListPermissionSetsResponseResponseTypeDef
+from mypy_boto3_sso_admin.type_defs import ListPermissionSetsResponseTypeDef
 ```
 
 Required fields:
@@ -743,10 +743,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -758,10 +758,10 @@ Optional fields:
 
 - `NextToken`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_sso_admin.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -835,10 +835,10 @@ Optional fields:
 - `SessionDuration`: `str`
 - `RelayState`: `str`
 
-## ProvisionPermissionSetRequestTypeDef
+## ProvisionPermissionSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import ProvisionPermissionSetRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import ProvisionPermissionSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -852,10 +852,10 @@ Optional fields:
 
 - `TargetId`: `str`
 
-## ProvisionPermissionSetResponseResponseTypeDef
+## ProvisionPermissionSetResponseTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import ProvisionPermissionSetResponseResponseTypeDef
+from mypy_boto3_sso_admin.type_defs import ProvisionPermissionSetResponseTypeDef
 ```
 
 Required fields:
@@ -865,10 +865,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutInlinePolicyToPermissionSetRequestTypeDef
+## PutInlinePolicyToPermissionSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import PutInlinePolicyToPermissionSetRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import PutInlinePolicyToPermissionSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -891,10 +891,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -914,10 +914,10 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -926,10 +926,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateInstanceAccessControlAttributeConfigurationRequestTypeDef
+## UpdateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import UpdateInstanceAccessControlAttributeConfigurationRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import UpdateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -938,10 +938,10 @@ Required fields:
 - `InstanceAccessControlAttributeConfiguration`:
   [InstanceAccessControlAttributeConfigurationTypeDef](./type_defs.md#instanceaccesscontrolattributeconfigurationtypedef)
 
-## UpdatePermissionSetRequestTypeDef
+## UpdatePermissionSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sso_admin.type_defs import UpdatePermissionSetRequestTypeDef
+from mypy_boto3_sso_admin.type_defs import UpdatePermissionSetRequestRequestTypeDef
 ```
 
 Required fields:

@@ -11,6 +11,7 @@ type annotations stubs module
   - [GroundStationClient](#groundstationclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [cancel_contact](#cancel_contact)
     - [create_config](#create_config)
@@ -78,6 +79,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+GroundStationClient exceptions.
+
+Type annotations for `boto3.client("groundstation").exceptions` method.
+
+Boto3 documentation:
+[GroundStation.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -103,14 +115,13 @@ Boto3 documentation:
 [GroundStation.Client.cancel_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.cancel_contact)
 
 Arguments mapping described in
-[CancelContactRequestTypeDef](./type_defs.md#cancelcontactrequesttypedef).
+[CancelContactRequestRequestTypeDef](./type_defs.md#cancelcontactrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `contactId`: `str` *(required)*
 
-Returns
-[ContactIdResponseResponseTypeDef](./type_defs.md#contactidresponseresponsetypedef).
+Returns [ContactIdResponseTypeDef](./type_defs.md#contactidresponsetypedef).
 
 ### create_config
 
@@ -122,7 +133,7 @@ Boto3 documentation:
 [GroundStation.Client.create_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_config)
 
 Arguments mapping described in
-[CreateConfigRequestTypeDef](./type_defs.md#createconfigrequesttypedef).
+[CreateConfigRequestRequestTypeDef](./type_defs.md#createconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -131,8 +142,7 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\]
 
-Returns
-[ConfigIdResponseResponseTypeDef](./type_defs.md#configidresponseresponsetypedef).
+Returns [ConfigIdResponseTypeDef](./type_defs.md#configidresponsetypedef).
 
 ### create_dataflow_endpoint_group
 
@@ -146,7 +156,7 @@ Boto3 documentation:
 [GroundStation.Client.create_dataflow_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_dataflow_endpoint_group)
 
 Arguments mapping described in
-[CreateDataflowEndpointGroupRequestTypeDef](./type_defs.md#createdataflowendpointgrouprequesttypedef).
+[CreateDataflowEndpointGroupRequestRequestTypeDef](./type_defs.md#createdataflowendpointgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -156,7 +166,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[DataflowEndpointGroupIdResponseResponseTypeDef](./type_defs.md#dataflowendpointgroupidresponseresponsetypedef).
+[DataflowEndpointGroupIdResponseTypeDef](./type_defs.md#dataflowendpointgroupidresponsetypedef).
 
 ### create_mission_profile
 
@@ -169,7 +179,7 @@ Boto3 documentation:
 [GroundStation.Client.create_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_mission_profile)
 
 Arguments mapping described in
-[CreateMissionProfileRequestTypeDef](./type_defs.md#createmissionprofilerequesttypedef).
+[CreateMissionProfileRequestRequestTypeDef](./type_defs.md#createmissionprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -182,7 +192,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[MissionProfileIdResponseResponseTypeDef](./type_defs.md#missionprofileidresponseresponsetypedef).
+[MissionProfileIdResponseTypeDef](./type_defs.md#missionprofileidresponsetypedef).
 
 ### delete_config
 
@@ -194,7 +204,7 @@ Boto3 documentation:
 [GroundStation.Client.delete_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_config)
 
 Arguments mapping described in
-[DeleteConfigRequestTypeDef](./type_defs.md#deleteconfigrequesttypedef).
+[DeleteConfigRequestRequestTypeDef](./type_defs.md#deleteconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -203,8 +213,7 @@ Keyword-only arguments:
   [ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype)
   *(required)*
 
-Returns
-[ConfigIdResponseResponseTypeDef](./type_defs.md#configidresponseresponsetypedef).
+Returns [ConfigIdResponseTypeDef](./type_defs.md#configidresponsetypedef).
 
 ### delete_dataflow_endpoint_group
 
@@ -217,14 +226,14 @@ Boto3 documentation:
 [GroundStation.Client.delete_dataflow_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_dataflow_endpoint_group)
 
 Arguments mapping described in
-[DeleteDataflowEndpointGroupRequestTypeDef](./type_defs.md#deletedataflowendpointgrouprequesttypedef).
+[DeleteDataflowEndpointGroupRequestRequestTypeDef](./type_defs.md#deletedataflowendpointgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `dataflowEndpointGroupId`: `str` *(required)*
 
 Returns
-[DataflowEndpointGroupIdResponseResponseTypeDef](./type_defs.md#dataflowendpointgroupidresponseresponsetypedef).
+[DataflowEndpointGroupIdResponseTypeDef](./type_defs.md#dataflowendpointgroupidresponsetypedef).
 
 ### delete_mission_profile
 
@@ -237,14 +246,14 @@ Boto3 documentation:
 [GroundStation.Client.delete_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_mission_profile)
 
 Arguments mapping described in
-[DeleteMissionProfileRequestTypeDef](./type_defs.md#deletemissionprofilerequesttypedef).
+[DeleteMissionProfileRequestRequestTypeDef](./type_defs.md#deletemissionprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `missionProfileId`: `str` *(required)*
 
 Returns
-[MissionProfileIdResponseResponseTypeDef](./type_defs.md#missionprofileidresponseresponsetypedef).
+[MissionProfileIdResponseTypeDef](./type_defs.md#missionprofileidresponsetypedef).
 
 ### describe_contact
 
@@ -256,14 +265,14 @@ Boto3 documentation:
 [GroundStation.Client.describe_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.describe_contact)
 
 Arguments mapping described in
-[DescribeContactRequestTypeDef](./type_defs.md#describecontactrequesttypedef).
+[DescribeContactRequestRequestTypeDef](./type_defs.md#describecontactrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `contactId`: `str` *(required)*
 
 Returns
-[DescribeContactResponseResponseTypeDef](./type_defs.md#describecontactresponseresponsetypedef).
+[DescribeContactResponseTypeDef](./type_defs.md#describecontactresponsetypedef).
 
 ### generate_presigned_url
 
@@ -294,7 +303,7 @@ Boto3 documentation:
 [GroundStation.Client.get_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_config)
 
 Arguments mapping described in
-[GetConfigRequestTypeDef](./type_defs.md#getconfigrequesttypedef).
+[GetConfigRequestRequestTypeDef](./type_defs.md#getconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -303,8 +312,7 @@ Keyword-only arguments:
   [ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype)
   *(required)*
 
-Returns
-[GetConfigResponseResponseTypeDef](./type_defs.md#getconfigresponseresponsetypedef).
+Returns [GetConfigResponseTypeDef](./type_defs.md#getconfigresponsetypedef).
 
 ### get_dataflow_endpoint_group
 
@@ -317,14 +325,14 @@ Boto3 documentation:
 [GroundStation.Client.get_dataflow_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_dataflow_endpoint_group)
 
 Arguments mapping described in
-[GetDataflowEndpointGroupRequestTypeDef](./type_defs.md#getdataflowendpointgrouprequesttypedef).
+[GetDataflowEndpointGroupRequestRequestTypeDef](./type_defs.md#getdataflowendpointgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `dataflowEndpointGroupId`: `str` *(required)*
 
 Returns
-[GetDataflowEndpointGroupResponseResponseTypeDef](./type_defs.md#getdataflowendpointgroupresponseresponsetypedef).
+[GetDataflowEndpointGroupResponseTypeDef](./type_defs.md#getdataflowendpointgroupresponsetypedef).
 
 ### get_minute_usage
 
@@ -336,7 +344,7 @@ Boto3 documentation:
 [GroundStation.Client.get_minute_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_minute_usage)
 
 Arguments mapping described in
-[GetMinuteUsageRequestTypeDef](./type_defs.md#getminuteusagerequesttypedef).
+[GetMinuteUsageRequestRequestTypeDef](./type_defs.md#getminuteusagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -344,7 +352,7 @@ Keyword-only arguments:
 - `year`: `int` *(required)*
 
 Returns
-[GetMinuteUsageResponseResponseTypeDef](./type_defs.md#getminuteusageresponseresponsetypedef).
+[GetMinuteUsageResponseTypeDef](./type_defs.md#getminuteusageresponsetypedef).
 
 ### get_mission_profile
 
@@ -357,14 +365,14 @@ Boto3 documentation:
 [GroundStation.Client.get_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_mission_profile)
 
 Arguments mapping described in
-[GetMissionProfileRequestTypeDef](./type_defs.md#getmissionprofilerequesttypedef).
+[GetMissionProfileRequestRequestTypeDef](./type_defs.md#getmissionprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `missionProfileId`: `str` *(required)*
 
 Returns
-[GetMissionProfileResponseResponseTypeDef](./type_defs.md#getmissionprofileresponseresponsetypedef).
+[GetMissionProfileResponseTypeDef](./type_defs.md#getmissionprofileresponsetypedef).
 
 ### get_satellite
 
@@ -376,14 +384,14 @@ Boto3 documentation:
 [GroundStation.Client.get_satellite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_satellite)
 
 Arguments mapping described in
-[GetSatelliteRequestTypeDef](./type_defs.md#getsatelliterequesttypedef).
+[GetSatelliteRequestRequestTypeDef](./type_defs.md#getsatelliterequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `satelliteId`: `str` *(required)*
 
 Returns
-[GetSatelliteResponseResponseTypeDef](./type_defs.md#getsatelliteresponseresponsetypedef).
+[GetSatelliteResponseTypeDef](./type_defs.md#getsatelliteresponsetypedef).
 
 ### list_configs
 
@@ -395,7 +403,7 @@ Boto3 documentation:
 [GroundStation.Client.list_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_configs)
 
 Arguments mapping described in
-[ListConfigsRequestTypeDef](./type_defs.md#listconfigsrequesttypedef).
+[ListConfigsRequestRequestTypeDef](./type_defs.md#listconfigsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -403,7 +411,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListConfigsResponseResponseTypeDef](./type_defs.md#listconfigsresponseresponsetypedef).
+[ListConfigsResponseTypeDef](./type_defs.md#listconfigsresponsetypedef).
 
 ### list_contacts
 
@@ -415,7 +423,7 @@ Boto3 documentation:
 [GroundStation.Client.list_contacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_contacts)
 
 Arguments mapping described in
-[ListContactsRequestTypeDef](./type_defs.md#listcontactsrequesttypedef).
+[ListContactsRequestRequestTypeDef](./type_defs.md#listcontactsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -430,7 +438,7 @@ Keyword-only arguments:
 - `satelliteArn`: `str`
 
 Returns
-[ListContactsResponseResponseTypeDef](./type_defs.md#listcontactsresponseresponsetypedef).
+[ListContactsResponseTypeDef](./type_defs.md#listcontactsresponsetypedef).
 
 ### list_dataflow_endpoint_groups
 
@@ -443,7 +451,7 @@ Boto3 documentation:
 [GroundStation.Client.list_dataflow_endpoint_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_dataflow_endpoint_groups)
 
 Arguments mapping described in
-[ListDataflowEndpointGroupsRequestTypeDef](./type_defs.md#listdataflowendpointgroupsrequesttypedef).
+[ListDataflowEndpointGroupsRequestRequestTypeDef](./type_defs.md#listdataflowendpointgroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -451,7 +459,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListDataflowEndpointGroupsResponseResponseTypeDef](./type_defs.md#listdataflowendpointgroupsresponseresponsetypedef).
+[ListDataflowEndpointGroupsResponseTypeDef](./type_defs.md#listdataflowendpointgroupsresponsetypedef).
 
 ### list_ground_stations
 
@@ -464,7 +472,7 @@ Boto3 documentation:
 [GroundStation.Client.list_ground_stations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_ground_stations)
 
 Arguments mapping described in
-[ListGroundStationsRequestTypeDef](./type_defs.md#listgroundstationsrequesttypedef).
+[ListGroundStationsRequestRequestTypeDef](./type_defs.md#listgroundstationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -473,7 +481,7 @@ Keyword-only arguments:
 - `satelliteId`: `str`
 
 Returns
-[ListGroundStationsResponseResponseTypeDef](./type_defs.md#listgroundstationsresponseresponsetypedef).
+[ListGroundStationsResponseTypeDef](./type_defs.md#listgroundstationsresponsetypedef).
 
 ### list_mission_profiles
 
@@ -486,7 +494,7 @@ Boto3 documentation:
 [GroundStation.Client.list_mission_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_mission_profiles)
 
 Arguments mapping described in
-[ListMissionProfilesRequestTypeDef](./type_defs.md#listmissionprofilesrequesttypedef).
+[ListMissionProfilesRequestRequestTypeDef](./type_defs.md#listmissionprofilesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -494,7 +502,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListMissionProfilesResponseResponseTypeDef](./type_defs.md#listmissionprofilesresponseresponsetypedef).
+[ListMissionProfilesResponseTypeDef](./type_defs.md#listmissionprofilesresponsetypedef).
 
 ### list_satellites
 
@@ -506,7 +514,7 @@ Boto3 documentation:
 [GroundStation.Client.list_satellites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_satellites)
 
 Arguments mapping described in
-[ListSatellitesRequestTypeDef](./type_defs.md#listsatellitesrequesttypedef).
+[ListSatellitesRequestRequestTypeDef](./type_defs.md#listsatellitesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -514,7 +522,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListSatellitesResponseResponseTypeDef](./type_defs.md#listsatellitesresponseresponsetypedef).
+[ListSatellitesResponseTypeDef](./type_defs.md#listsatellitesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -527,14 +535,14 @@ Boto3 documentation:
 [GroundStation.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### reserve_contact
 
@@ -546,7 +554,7 @@ Boto3 documentation:
 [GroundStation.Client.reserve_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.reserve_contact)
 
 Arguments mapping described in
-[ReserveContactRequestTypeDef](./type_defs.md#reservecontactrequesttypedef).
+[ReserveContactRequestRequestTypeDef](./type_defs.md#reservecontactrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -557,8 +565,7 @@ Keyword-only arguments:
 - `startTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `tags`: `Dict`\[`str`, `str`\]
 
-Returns
-[ContactIdResponseResponseTypeDef](./type_defs.md#contactidresponseresponsetypedef).
+Returns [ContactIdResponseTypeDef](./type_defs.md#contactidresponsetypedef).
 
 ### tag_resource
 
@@ -570,7 +577,7 @@ Boto3 documentation:
 [GroundStation.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -589,7 +596,7 @@ Boto3 documentation:
 [GroundStation.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -608,7 +615,7 @@ Boto3 documentation:
 [GroundStation.Client.update_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.update_config)
 
 Arguments mapping described in
-[UpdateConfigRequestTypeDef](./type_defs.md#updateconfigrequesttypedef).
+[UpdateConfigRequestRequestTypeDef](./type_defs.md#updateconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -620,8 +627,7 @@ Keyword-only arguments:
   *(required)*
 - `name`: `str` *(required)*
 
-Returns
-[ConfigIdResponseResponseTypeDef](./type_defs.md#configidresponseresponsetypedef).
+Returns [ConfigIdResponseTypeDef](./type_defs.md#configidresponsetypedef).
 
 ### update_mission_profile
 
@@ -634,7 +640,7 @@ Boto3 documentation:
 [GroundStation.Client.update_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.update_mission_profile)
 
 Arguments mapping described in
-[UpdateMissionProfileRequestTypeDef](./type_defs.md#updatemissionprofilerequesttypedef).
+[UpdateMissionProfileRequestRequestTypeDef](./type_defs.md#updatemissionprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -647,7 +653,7 @@ Keyword-only arguments:
 - `trackingConfigArn`: `str`
 
 Returns
-[MissionProfileIdResponseResponseTypeDef](./type_defs.md#missionprofileidresponseresponsetypedef).
+[MissionProfileIdResponseTypeDef](./type_defs.md#missionprofileidresponsetypedef).
 
 ### get_paginator
 

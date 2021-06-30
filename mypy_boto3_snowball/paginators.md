@@ -37,7 +37,7 @@ Arguments for `DescribeAddressesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAddressesPaginator.paginate` returns
-`Iterator`\[[DescribeAddressesResultResponseTypeDef](./type_defs.md#describeaddressesresultresponsetypedef)\].
+`Iterator`\[[DescribeAddressesResultTypeDef](./type_defs.md#describeaddressesresulttypedef)\].
 
 ## ListClusterJobsPaginator
 
@@ -63,7 +63,7 @@ Arguments for `ListClusterJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListClusterJobsPaginator.paginate` returns
-`Iterator`\[[ListClusterJobsResultResponseTypeDef](./type_defs.md#listclusterjobsresultresponsetypedef)\].
+`Iterator`\[[ListClusterJobsResultTypeDef](./type_defs.md#listclusterjobsresulttypedef)\].
 
 ## ListClustersPaginator
 
@@ -87,7 +87,7 @@ Arguments for `ListClustersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListClustersPaginator.paginate` returns
-`Iterator`\[[ListClustersResultResponseTypeDef](./type_defs.md#listclustersresultresponsetypedef)\].
+`Iterator`\[[ListClustersResultTypeDef](./type_defs.md#listclustersresulttypedef)\].
 
 ## ListCompatibleImagesPaginator
 
@@ -112,7 +112,7 @@ Arguments for `ListCompatibleImagesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCompatibleImagesPaginator.paginate` returns
-`Iterator`\[[ListCompatibleImagesResultResponseTypeDef](./type_defs.md#listcompatibleimagesresultresponsetypedef)\].
+`Iterator`\[[ListCompatibleImagesResultTypeDef](./type_defs.md#listcompatibleimagesresulttypedef)\].
 
 ## ListJobsPaginator
 
@@ -136,4 +136,4 @@ Arguments for `ListJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobsPaginator.paginate` returns
-`Iterator`\[[ListJobsResultResponseTypeDef](./type_defs.md#listjobsresultresponsetypedef)\].
+`Iterator`\[[ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef)\].

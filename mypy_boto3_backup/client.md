@@ -11,6 +11,7 @@ type annotations stubs module
   - [BackupClient](#backupclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_backup_plan](#create_backup_plan)
     - [create_backup_selection](#create_backup_selection)
@@ -108,6 +109,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+BackupClient exceptions.
+
+Type annotations for `boto3.client("backup").exceptions` method.
+
+Boto3 documentation:
+[Backup.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -133,7 +145,7 @@ Boto3 documentation:
 [Backup.Client.create_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_plan)
 
 Arguments mapping described in
-[CreateBackupPlanInputTypeDef](./type_defs.md#createbackupplaninputtypedef).
+[CreateBackupPlanInputRequestTypeDef](./type_defs.md#createbackupplaninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -143,7 +155,7 @@ Keyword-only arguments:
 - `CreatorRequestId`: `str`
 
 Returns
-[CreateBackupPlanOutputResponseTypeDef](./type_defs.md#createbackupplanoutputresponsetypedef).
+[CreateBackupPlanOutputTypeDef](./type_defs.md#createbackupplanoutputtypedef).
 
 ### create_backup_selection
 
@@ -156,7 +168,7 @@ Boto3 documentation:
 [Backup.Client.create_backup_selection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_selection)
 
 Arguments mapping described in
-[CreateBackupSelectionInputTypeDef](./type_defs.md#createbackupselectioninputtypedef).
+[CreateBackupSelectionInputRequestTypeDef](./type_defs.md#createbackupselectioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -166,7 +178,7 @@ Keyword-only arguments:
 - `CreatorRequestId`: `str`
 
 Returns
-[CreateBackupSelectionOutputResponseTypeDef](./type_defs.md#createbackupselectionoutputresponsetypedef).
+[CreateBackupSelectionOutputTypeDef](./type_defs.md#createbackupselectionoutputtypedef).
 
 ### create_backup_vault
 
@@ -178,7 +190,7 @@ Boto3 documentation:
 [Backup.Client.create_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_vault)
 
 Arguments mapping described in
-[CreateBackupVaultInputTypeDef](./type_defs.md#createbackupvaultinputtypedef).
+[CreateBackupVaultInputRequestTypeDef](./type_defs.md#createbackupvaultinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -188,7 +200,7 @@ Keyword-only arguments:
 - `CreatorRequestId`: `str`
 
 Returns
-[CreateBackupVaultOutputResponseTypeDef](./type_defs.md#createbackupvaultoutputresponsetypedef).
+[CreateBackupVaultOutputTypeDef](./type_defs.md#createbackupvaultoutputtypedef).
 
 ### delete_backup_plan
 
@@ -200,14 +212,14 @@ Boto3 documentation:
 [Backup.Client.delete_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_plan)
 
 Arguments mapping described in
-[DeleteBackupPlanInputTypeDef](./type_defs.md#deletebackupplaninputtypedef).
+[DeleteBackupPlanInputRequestTypeDef](./type_defs.md#deletebackupplaninputrequesttypedef).
 
 Keyword-only arguments:
 
 - `BackupPlanId`: `str` *(required)*
 
 Returns
-[DeleteBackupPlanOutputResponseTypeDef](./type_defs.md#deletebackupplanoutputresponsetypedef).
+[DeleteBackupPlanOutputTypeDef](./type_defs.md#deletebackupplanoutputtypedef).
 
 ### delete_backup_selection
 
@@ -220,7 +232,7 @@ Boto3 documentation:
 [Backup.Client.delete_backup_selection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_selection)
 
 Arguments mapping described in
-[DeleteBackupSelectionInputTypeDef](./type_defs.md#deletebackupselectioninputtypedef).
+[DeleteBackupSelectionInputRequestTypeDef](./type_defs.md#deletebackupselectioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -237,7 +249,7 @@ Boto3 documentation:
 [Backup.Client.delete_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault)
 
 Arguments mapping described in
-[DeleteBackupVaultInputTypeDef](./type_defs.md#deletebackupvaultinputtypedef).
+[DeleteBackupVaultInputRequestTypeDef](./type_defs.md#deletebackupvaultinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -254,7 +266,7 @@ Boto3 documentation:
 [Backup.Client.delete_backup_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault_access_policy)
 
 Arguments mapping described in
-[DeleteBackupVaultAccessPolicyInputTypeDef](./type_defs.md#deletebackupvaultaccesspolicyinputtypedef).
+[DeleteBackupVaultAccessPolicyInputRequestTypeDef](./type_defs.md#deletebackupvaultaccesspolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -271,7 +283,7 @@ Boto3 documentation:
 [Backup.Client.delete_backup_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault_notifications)
 
 Arguments mapping described in
-[DeleteBackupVaultNotificationsInputTypeDef](./type_defs.md#deletebackupvaultnotificationsinputtypedef).
+[DeleteBackupVaultNotificationsInputRequestTypeDef](./type_defs.md#deletebackupvaultnotificationsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -287,7 +299,7 @@ Boto3 documentation:
 [Backup.Client.delete_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_recovery_point)
 
 Arguments mapping described in
-[DeleteRecoveryPointInputTypeDef](./type_defs.md#deleterecoverypointinputtypedef).
+[DeleteRecoveryPointInputRequestTypeDef](./type_defs.md#deleterecoverypointinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -304,14 +316,14 @@ Boto3 documentation:
 [Backup.Client.describe_backup_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_backup_job)
 
 Arguments mapping described in
-[DescribeBackupJobInputTypeDef](./type_defs.md#describebackupjobinputtypedef).
+[DescribeBackupJobInputRequestTypeDef](./type_defs.md#describebackupjobinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `BackupJobId`: `str` *(required)*
 
 Returns
-[DescribeBackupJobOutputResponseTypeDef](./type_defs.md#describebackupjoboutputresponsetypedef).
+[DescribeBackupJobOutputTypeDef](./type_defs.md#describebackupjoboutputtypedef).
 
 ### describe_backup_vault
 
@@ -323,14 +335,14 @@ Boto3 documentation:
 [Backup.Client.describe_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_backup_vault)
 
 Arguments mapping described in
-[DescribeBackupVaultInputTypeDef](./type_defs.md#describebackupvaultinputtypedef).
+[DescribeBackupVaultInputRequestTypeDef](./type_defs.md#describebackupvaultinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 
 Returns
-[DescribeBackupVaultOutputResponseTypeDef](./type_defs.md#describebackupvaultoutputresponsetypedef).
+[DescribeBackupVaultOutputTypeDef](./type_defs.md#describebackupvaultoutputtypedef).
 
 ### describe_copy_job
 
@@ -342,14 +354,14 @@ Boto3 documentation:
 [Backup.Client.describe_copy_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_copy_job)
 
 Arguments mapping described in
-[DescribeCopyJobInputTypeDef](./type_defs.md#describecopyjobinputtypedef).
+[DescribeCopyJobInputRequestTypeDef](./type_defs.md#describecopyjobinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `CopyJobId`: `str` *(required)*
 
 Returns
-[DescribeCopyJobOutputResponseTypeDef](./type_defs.md#describecopyjoboutputresponsetypedef).
+[DescribeCopyJobOutputTypeDef](./type_defs.md#describecopyjoboutputtypedef).
 
 ### describe_global_settings
 
@@ -362,7 +374,7 @@ Boto3 documentation:
 [Backup.Client.describe_global_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_global_settings)
 
 Returns
-[DescribeGlobalSettingsOutputResponseTypeDef](./type_defs.md#describeglobalsettingsoutputresponsetypedef).
+[DescribeGlobalSettingsOutputTypeDef](./type_defs.md#describeglobalsettingsoutputtypedef).
 
 ### describe_protected_resource
 
@@ -377,14 +389,14 @@ Boto3 documentation:
 [Backup.Client.describe_protected_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_protected_resource)
 
 Arguments mapping described in
-[DescribeProtectedResourceInputTypeDef](./type_defs.md#describeprotectedresourceinputtypedef).
+[DescribeProtectedResourceInputRequestTypeDef](./type_defs.md#describeprotectedresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[DescribeProtectedResourceOutputResponseTypeDef](./type_defs.md#describeprotectedresourceoutputresponsetypedef).
+[DescribeProtectedResourceOutputTypeDef](./type_defs.md#describeprotectedresourceoutputtypedef).
 
 ### describe_recovery_point
 
@@ -397,7 +409,7 @@ Boto3 documentation:
 [Backup.Client.describe_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_recovery_point)
 
 Arguments mapping described in
-[DescribeRecoveryPointInputTypeDef](./type_defs.md#describerecoverypointinputtypedef).
+[DescribeRecoveryPointInputRequestTypeDef](./type_defs.md#describerecoverypointinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -405,7 +417,7 @@ Keyword-only arguments:
 - `RecoveryPointArn`: `str` *(required)*
 
 Returns
-[DescribeRecoveryPointOutputResponseTypeDef](./type_defs.md#describerecoverypointoutputresponsetypedef).
+[DescribeRecoveryPointOutputTypeDef](./type_defs.md#describerecoverypointoutputtypedef).
 
 ### describe_region_settings
 
@@ -417,7 +429,7 @@ Boto3 documentation:
 [Backup.Client.describe_region_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_region_settings)
 
 Returns
-[DescribeRegionSettingsOutputResponseTypeDef](./type_defs.md#describeregionsettingsoutputresponsetypedef).
+[DescribeRegionSettingsOutputTypeDef](./type_defs.md#describeregionsettingsoutputtypedef).
 
 ### describe_restore_job
 
@@ -429,14 +441,14 @@ Boto3 documentation:
 [Backup.Client.describe_restore_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_restore_job)
 
 Arguments mapping described in
-[DescribeRestoreJobInputTypeDef](./type_defs.md#describerestorejobinputtypedef).
+[DescribeRestoreJobInputRequestTypeDef](./type_defs.md#describerestorejobinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `RestoreJobId`: `str` *(required)*
 
 Returns
-[DescribeRestoreJobOutputResponseTypeDef](./type_defs.md#describerestorejoboutputresponsetypedef).
+[DescribeRestoreJobOutputTypeDef](./type_defs.md#describerestorejoboutputtypedef).
 
 ### disassociate_recovery_point
 
@@ -451,7 +463,7 @@ Boto3 documentation:
 [Backup.Client.disassociate_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.disassociate_recovery_point)
 
 Arguments mapping described in
-[DisassociateRecoveryPointInputTypeDef](./type_defs.md#disassociaterecoverypointinputtypedef).
+[DisassociateRecoveryPointInputRequestTypeDef](./type_defs.md#disassociaterecoverypointinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -469,14 +481,14 @@ Boto3 documentation:
 [Backup.Client.export_backup_plan_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.export_backup_plan_template)
 
 Arguments mapping described in
-[ExportBackupPlanTemplateInputTypeDef](./type_defs.md#exportbackupplantemplateinputtypedef).
+[ExportBackupPlanTemplateInputRequestTypeDef](./type_defs.md#exportbackupplantemplateinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `BackupPlanId`: `str` *(required)*
 
 Returns
-[ExportBackupPlanTemplateOutputResponseTypeDef](./type_defs.md#exportbackupplantemplateoutputresponsetypedef).
+[ExportBackupPlanTemplateOutputTypeDef](./type_defs.md#exportbackupplantemplateoutputtypedef).
 
 ### generate_presigned_url
 
@@ -506,7 +518,7 @@ Boto3 documentation:
 [Backup.Client.get_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan)
 
 Arguments mapping described in
-[GetBackupPlanInputTypeDef](./type_defs.md#getbackupplaninputtypedef).
+[GetBackupPlanInputRequestTypeDef](./type_defs.md#getbackupplaninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -514,7 +526,7 @@ Keyword-only arguments:
 - `VersionId`: `str`
 
 Returns
-[GetBackupPlanOutputResponseTypeDef](./type_defs.md#getbackupplanoutputresponsetypedef).
+[GetBackupPlanOutputTypeDef](./type_defs.md#getbackupplanoutputtypedef).
 
 ### get_backup_plan_from_json
 
@@ -526,14 +538,14 @@ Boto3 documentation:
 [Backup.Client.get_backup_plan_from_json](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan_from_json)
 
 Arguments mapping described in
-[GetBackupPlanFromJSONInputTypeDef](./type_defs.md#getbackupplanfromjsoninputtypedef).
+[GetBackupPlanFromJSONInputRequestTypeDef](./type_defs.md#getbackupplanfromjsoninputrequesttypedef).
 
 Keyword-only arguments:
 
 - `BackupPlanTemplateJson`: `str` *(required)*
 
 Returns
-[GetBackupPlanFromJSONOutputResponseTypeDef](./type_defs.md#getbackupplanfromjsonoutputresponsetypedef).
+[GetBackupPlanFromJSONOutputTypeDef](./type_defs.md#getbackupplanfromjsonoutputtypedef).
 
 ### get_backup_plan_from_template
 
@@ -546,14 +558,14 @@ Boto3 documentation:
 [Backup.Client.get_backup_plan_from_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan_from_template)
 
 Arguments mapping described in
-[GetBackupPlanFromTemplateInputTypeDef](./type_defs.md#getbackupplanfromtemplateinputtypedef).
+[GetBackupPlanFromTemplateInputRequestTypeDef](./type_defs.md#getbackupplanfromtemplateinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `BackupPlanTemplateId`: `str` *(required)*
 
 Returns
-[GetBackupPlanFromTemplateOutputResponseTypeDef](./type_defs.md#getbackupplanfromtemplateoutputresponsetypedef).
+[GetBackupPlanFromTemplateOutputTypeDef](./type_defs.md#getbackupplanfromtemplateoutputtypedef).
 
 ### get_backup_selection
 
@@ -566,7 +578,7 @@ Boto3 documentation:
 [Backup.Client.get_backup_selection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_selection)
 
 Arguments mapping described in
-[GetBackupSelectionInputTypeDef](./type_defs.md#getbackupselectioninputtypedef).
+[GetBackupSelectionInputRequestTypeDef](./type_defs.md#getbackupselectioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -574,7 +586,7 @@ Keyword-only arguments:
 - `SelectionId`: `str` *(required)*
 
 Returns
-[GetBackupSelectionOutputResponseTypeDef](./type_defs.md#getbackupselectionoutputresponsetypedef).
+[GetBackupSelectionOutputTypeDef](./type_defs.md#getbackupselectionoutputtypedef).
 
 ### get_backup_vault_access_policy
 
@@ -588,14 +600,14 @@ Boto3 documentation:
 [Backup.Client.get_backup_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_vault_access_policy)
 
 Arguments mapping described in
-[GetBackupVaultAccessPolicyInputTypeDef](./type_defs.md#getbackupvaultaccesspolicyinputtypedef).
+[GetBackupVaultAccessPolicyInputRequestTypeDef](./type_defs.md#getbackupvaultaccesspolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 
 Returns
-[GetBackupVaultAccessPolicyOutputResponseTypeDef](./type_defs.md#getbackupvaultaccesspolicyoutputresponsetypedef).
+[GetBackupVaultAccessPolicyOutputTypeDef](./type_defs.md#getbackupvaultaccesspolicyoutputtypedef).
 
 ### get_backup_vault_notifications
 
@@ -608,14 +620,14 @@ Boto3 documentation:
 [Backup.Client.get_backup_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_vault_notifications)
 
 Arguments mapping described in
-[GetBackupVaultNotificationsInputTypeDef](./type_defs.md#getbackupvaultnotificationsinputtypedef).
+[GetBackupVaultNotificationsInputRequestTypeDef](./type_defs.md#getbackupvaultnotificationsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 
 Returns
-[GetBackupVaultNotificationsOutputResponseTypeDef](./type_defs.md#getbackupvaultnotificationsoutputresponsetypedef).
+[GetBackupVaultNotificationsOutputTypeDef](./type_defs.md#getbackupvaultnotificationsoutputtypedef).
 
 ### get_recovery_point_restore_metadata
 
@@ -628,7 +640,7 @@ Boto3 documentation:
 [Backup.Client.get_recovery_point_restore_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_recovery_point_restore_metadata)
 
 Arguments mapping described in
-[GetRecoveryPointRestoreMetadataInputTypeDef](./type_defs.md#getrecoverypointrestoremetadatainputtypedef).
+[GetRecoveryPointRestoreMetadataInputRequestTypeDef](./type_defs.md#getrecoverypointrestoremetadatainputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -636,7 +648,7 @@ Keyword-only arguments:
 - `RecoveryPointArn`: `str` *(required)*
 
 Returns
-[GetRecoveryPointRestoreMetadataOutputResponseTypeDef](./type_defs.md#getrecoverypointrestoremetadataoutputresponsetypedef).
+[GetRecoveryPointRestoreMetadataOutputTypeDef](./type_defs.md#getrecoverypointrestoremetadataoutputtypedef).
 
 ### get_supported_resource_types
 
@@ -649,7 +661,7 @@ Boto3 documentation:
 [Backup.Client.get_supported_resource_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_supported_resource_types)
 
 Returns
-[GetSupportedResourceTypesOutputResponseTypeDef](./type_defs.md#getsupportedresourcetypesoutputresponsetypedef).
+[GetSupportedResourceTypesOutputTypeDef](./type_defs.md#getsupportedresourcetypesoutputtypedef).
 
 ### list_backup_jobs
 
@@ -662,7 +674,7 @@ Boto3 documentation:
 [Backup.Client.list_backup_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_jobs)
 
 Arguments mapping described in
-[ListBackupJobsInputTypeDef](./type_defs.md#listbackupjobsinputtypedef).
+[ListBackupJobsInputRequestTypeDef](./type_defs.md#listbackupjobsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -677,7 +689,7 @@ Keyword-only arguments:
 - `ByAccountId`: `str`
 
 Returns
-[ListBackupJobsOutputResponseTypeDef](./type_defs.md#listbackupjobsoutputresponsetypedef).
+[ListBackupJobsOutputTypeDef](./type_defs.md#listbackupjobsoutputtypedef).
 
 ### list_backup_plan_templates
 
@@ -691,7 +703,7 @@ Boto3 documentation:
 [Backup.Client.list_backup_plan_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plan_templates)
 
 Arguments mapping described in
-[ListBackupPlanTemplatesInputTypeDef](./type_defs.md#listbackupplantemplatesinputtypedef).
+[ListBackupPlanTemplatesInputRequestTypeDef](./type_defs.md#listbackupplantemplatesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -699,7 +711,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListBackupPlanTemplatesOutputResponseTypeDef](./type_defs.md#listbackupplantemplatesoutputresponsetypedef).
+[ListBackupPlanTemplatesOutputTypeDef](./type_defs.md#listbackupplantemplatesoutputtypedef).
 
 ### list_backup_plan_versions
 
@@ -713,7 +725,7 @@ Boto3 documentation:
 [Backup.Client.list_backup_plan_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plan_versions)
 
 Arguments mapping described in
-[ListBackupPlanVersionsInputTypeDef](./type_defs.md#listbackupplanversionsinputtypedef).
+[ListBackupPlanVersionsInputRequestTypeDef](./type_defs.md#listbackupplanversionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -722,7 +734,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListBackupPlanVersionsOutputResponseTypeDef](./type_defs.md#listbackupplanversionsoutputresponsetypedef).
+[ListBackupPlanVersionsOutputTypeDef](./type_defs.md#listbackupplanversionsoutputtypedef).
 
 ### list_backup_plans
 
@@ -734,7 +746,7 @@ Boto3 documentation:
 [Backup.Client.list_backup_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plans)
 
 Arguments mapping described in
-[ListBackupPlansInputTypeDef](./type_defs.md#listbackupplansinputtypedef).
+[ListBackupPlansInputRequestTypeDef](./type_defs.md#listbackupplansinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -743,7 +755,7 @@ Keyword-only arguments:
 - `IncludeDeleted`: `bool`
 
 Returns
-[ListBackupPlansOutputResponseTypeDef](./type_defs.md#listbackupplansoutputresponsetypedef).
+[ListBackupPlansOutputTypeDef](./type_defs.md#listbackupplansoutputtypedef).
 
 ### list_backup_selections
 
@@ -756,7 +768,7 @@ Boto3 documentation:
 [Backup.Client.list_backup_selections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_selections)
 
 Arguments mapping described in
-[ListBackupSelectionsInputTypeDef](./type_defs.md#listbackupselectionsinputtypedef).
+[ListBackupSelectionsInputRequestTypeDef](./type_defs.md#listbackupselectionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -765,7 +777,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListBackupSelectionsOutputResponseTypeDef](./type_defs.md#listbackupselectionsoutputresponsetypedef).
+[ListBackupSelectionsOutputTypeDef](./type_defs.md#listbackupselectionsoutputtypedef).
 
 ### list_backup_vaults
 
@@ -778,7 +790,7 @@ Boto3 documentation:
 [Backup.Client.list_backup_vaults](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_vaults)
 
 Arguments mapping described in
-[ListBackupVaultsInputTypeDef](./type_defs.md#listbackupvaultsinputtypedef).
+[ListBackupVaultsInputRequestTypeDef](./type_defs.md#listbackupvaultsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -786,7 +798,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListBackupVaultsOutputResponseTypeDef](./type_defs.md#listbackupvaultsoutputresponsetypedef).
+[ListBackupVaultsOutputTypeDef](./type_defs.md#listbackupvaultsoutputtypedef).
 
 ### list_copy_jobs
 
@@ -798,7 +810,7 @@ Boto3 documentation:
 [Backup.Client.list_copy_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_copy_jobs)
 
 Arguments mapping described in
-[ListCopyJobsInputTypeDef](./type_defs.md#listcopyjobsinputtypedef).
+[ListCopyJobsInputRequestTypeDef](./type_defs.md#listcopyjobsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -812,8 +824,7 @@ Keyword-only arguments:
 - `ByDestinationVaultArn`: `str`
 - `ByAccountId`: `str`
 
-Returns
-[ListCopyJobsOutputResponseTypeDef](./type_defs.md#listcopyjobsoutputresponsetypedef).
+Returns [ListCopyJobsOutputTypeDef](./type_defs.md#listcopyjobsoutputtypedef).
 
 ### list_protected_resources
 
@@ -827,7 +838,7 @@ Boto3 documentation:
 [Backup.Client.list_protected_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_protected_resources)
 
 Arguments mapping described in
-[ListProtectedResourcesInputTypeDef](./type_defs.md#listprotectedresourcesinputtypedef).
+[ListProtectedResourcesInputRequestTypeDef](./type_defs.md#listprotectedresourcesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -835,7 +846,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListProtectedResourcesOutputResponseTypeDef](./type_defs.md#listprotectedresourcesoutputresponsetypedef).
+[ListProtectedResourcesOutputTypeDef](./type_defs.md#listprotectedresourcesoutputtypedef).
 
 ### list_recovery_points_by_backup_vault
 
@@ -849,7 +860,7 @@ Boto3 documentation:
 [Backup.Client.list_recovery_points_by_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_recovery_points_by_backup_vault)
 
 Arguments mapping described in
-[ListRecoveryPointsByBackupVaultInputTypeDef](./type_defs.md#listrecoverypointsbybackupvaultinputtypedef).
+[ListRecoveryPointsByBackupVaultInputRequestTypeDef](./type_defs.md#listrecoverypointsbybackupvaultinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -863,7 +874,7 @@ Keyword-only arguments:
 - `ByCreatedAfter`: `Union`\[`datetime`, `str`\]
 
 Returns
-[ListRecoveryPointsByBackupVaultOutputResponseTypeDef](./type_defs.md#listrecoverypointsbybackupvaultoutputresponsetypedef).
+[ListRecoveryPointsByBackupVaultOutputTypeDef](./type_defs.md#listrecoverypointsbybackupvaultoutputtypedef).
 
 ### list_recovery_points_by_resource
 
@@ -877,7 +888,7 @@ Boto3 documentation:
 [Backup.Client.list_recovery_points_by_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_recovery_points_by_resource)
 
 Arguments mapping described in
-[ListRecoveryPointsByResourceInputTypeDef](./type_defs.md#listrecoverypointsbyresourceinputtypedef).
+[ListRecoveryPointsByResourceInputRequestTypeDef](./type_defs.md#listrecoverypointsbyresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -886,7 +897,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListRecoveryPointsByResourceOutputResponseTypeDef](./type_defs.md#listrecoverypointsbyresourceoutputresponsetypedef).
+[ListRecoveryPointsByResourceOutputTypeDef](./type_defs.md#listrecoverypointsbyresourceoutputtypedef).
 
 ### list_restore_jobs
 
@@ -899,7 +910,7 @@ Boto3 documentation:
 [Backup.Client.list_restore_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_restore_jobs)
 
 Arguments mapping described in
-[ListRestoreJobsInputTypeDef](./type_defs.md#listrestorejobsinputtypedef).
+[ListRestoreJobsInputRequestTypeDef](./type_defs.md#listrestorejobsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -911,7 +922,7 @@ Keyword-only arguments:
 - `ByStatus`: [RestoreJobStatusType](./literals.md#restorejobstatustype)
 
 Returns
-[ListRestoreJobsOutputResponseTypeDef](./type_defs.md#listrestorejobsoutputresponsetypedef).
+[ListRestoreJobsOutputTypeDef](./type_defs.md#listrestorejobsoutputtypedef).
 
 ### list_tags
 
@@ -924,7 +935,7 @@ Boto3 documentation:
 [Backup.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_tags)
 
 Arguments mapping described in
-[ListTagsInputTypeDef](./type_defs.md#listtagsinputtypedef).
+[ListTagsInputRequestTypeDef](./type_defs.md#listtagsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -932,8 +943,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListTagsOutputResponseTypeDef](./type_defs.md#listtagsoutputresponsetypedef).
+Returns [ListTagsOutputTypeDef](./type_defs.md#listtagsoutputtypedef).
 
 ### put_backup_vault_access_policy
 
@@ -947,7 +957,7 @@ Boto3 documentation:
 [Backup.Client.put_backup_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.put_backup_vault_access_policy)
 
 Arguments mapping described in
-[PutBackupVaultAccessPolicyInputTypeDef](./type_defs.md#putbackupvaultaccesspolicyinputtypedef).
+[PutBackupVaultAccessPolicyInputRequestTypeDef](./type_defs.md#putbackupvaultaccesspolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -965,7 +975,7 @@ Boto3 documentation:
 [Backup.Client.put_backup_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.put_backup_vault_notifications)
 
 Arguments mapping described in
-[PutBackupVaultNotificationsInputTypeDef](./type_defs.md#putbackupvaultnotificationsinputtypedef).
+[PutBackupVaultNotificationsInputRequestTypeDef](./type_defs.md#putbackupvaultnotificationsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -985,7 +995,7 @@ Boto3 documentation:
 [Backup.Client.start_backup_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_backup_job)
 
 Arguments mapping described in
-[StartBackupJobInputTypeDef](./type_defs.md#startbackupjobinputtypedef).
+[StartBackupJobInputRequestTypeDef](./type_defs.md#startbackupjobinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1000,7 +1010,7 @@ Keyword-only arguments:
 - `BackupOptions`: `Dict`\[`str`, `str`\]
 
 Returns
-[StartBackupJobOutputResponseTypeDef](./type_defs.md#startbackupjoboutputresponsetypedef).
+[StartBackupJobOutputTypeDef](./type_defs.md#startbackupjoboutputtypedef).
 
 ### start_copy_job
 
@@ -1012,7 +1022,7 @@ Boto3 documentation:
 [Backup.Client.start_copy_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_copy_job)
 
 Arguments mapping described in
-[StartCopyJobInputTypeDef](./type_defs.md#startcopyjobinputtypedef).
+[StartCopyJobInputRequestTypeDef](./type_defs.md#startcopyjobinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1023,8 +1033,7 @@ Keyword-only arguments:
 - `IdempotencyToken`: `str`
 - `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
 
-Returns
-[StartCopyJobOutputResponseTypeDef](./type_defs.md#startcopyjoboutputresponsetypedef).
+Returns [StartCopyJobOutputTypeDef](./type_defs.md#startcopyjoboutputtypedef).
 
 ### start_restore_job
 
@@ -1036,7 +1045,7 @@ Boto3 documentation:
 [Backup.Client.start_restore_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_restore_job)
 
 Arguments mapping described in
-[StartRestoreJobInputTypeDef](./type_defs.md#startrestorejobinputtypedef).
+[StartRestoreJobInputRequestTypeDef](./type_defs.md#startrestorejobinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1047,7 +1056,7 @@ Keyword-only arguments:
 - `ResourceType`: `str`
 
 Returns
-[StartRestoreJobOutputResponseTypeDef](./type_defs.md#startrestorejoboutputresponsetypedef).
+[StartRestoreJobOutputTypeDef](./type_defs.md#startrestorejoboutputtypedef).
 
 ### stop_backup_job
 
@@ -1059,7 +1068,7 @@ Boto3 documentation:
 [Backup.Client.stop_backup_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.stop_backup_job)
 
 Arguments mapping described in
-[StopBackupJobInputTypeDef](./type_defs.md#stopbackupjobinputtypedef).
+[StopBackupJobInputRequestTypeDef](./type_defs.md#stopbackupjobinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1076,7 +1085,7 @@ Boto3 documentation:
 [Backup.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceInputTypeDef](./type_defs.md#tagresourceinputtypedef).
+[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1096,7 +1105,7 @@ Boto3 documentation:
 [Backup.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceInputTypeDef](./type_defs.md#untagresourceinputtypedef).
+[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1114,7 +1123,7 @@ Boto3 documentation:
 [Backup.Client.update_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_backup_plan)
 
 Arguments mapping described in
-[UpdateBackupPlanInputTypeDef](./type_defs.md#updatebackupplaninputtypedef).
+[UpdateBackupPlanInputRequestTypeDef](./type_defs.md#updatebackupplaninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1123,7 +1132,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateBackupPlanOutputResponseTypeDef](./type_defs.md#updatebackupplanoutputresponsetypedef).
+[UpdateBackupPlanOutputTypeDef](./type_defs.md#updatebackupplanoutputtypedef).
 
 ### update_global_settings
 
@@ -1135,7 +1144,7 @@ Boto3 documentation:
 [Backup.Client.update_global_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_global_settings)
 
 Arguments mapping described in
-[UpdateGlobalSettingsInputTypeDef](./type_defs.md#updateglobalsettingsinputtypedef).
+[UpdateGlobalSettingsInputRequestTypeDef](./type_defs.md#updateglobalsettingsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1152,7 +1161,7 @@ Boto3 documentation:
 [Backup.Client.update_recovery_point_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_recovery_point_lifecycle)
 
 Arguments mapping described in
-[UpdateRecoveryPointLifecycleInputTypeDef](./type_defs.md#updaterecoverypointlifecycleinputtypedef).
+[UpdateRecoveryPointLifecycleInputRequestTypeDef](./type_defs.md#updaterecoverypointlifecycleinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1161,7 +1170,7 @@ Keyword-only arguments:
 - `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
 
 Returns
-[UpdateRecoveryPointLifecycleOutputResponseTypeDef](./type_defs.md#updaterecoverypointlifecycleoutputresponsetypedef).
+[UpdateRecoveryPointLifecycleOutputTypeDef](./type_defs.md#updaterecoverypointlifecycleoutputtypedef).
 
 ### update_region_settings
 
@@ -1173,7 +1182,7 @@ Boto3 documentation:
 [Backup.Client.update_region_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_region_settings)
 
 Arguments mapping described in
-[UpdateRegionSettingsInputTypeDef](./type_defs.md#updateregionsettingsinputtypedef).
+[UpdateRegionSettingsInputRequestTypeDef](./type_defs.md#updateregionsettingsinputrequesttypedef).
 
 Keyword-only arguments:
 

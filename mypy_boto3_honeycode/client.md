@@ -11,6 +11,7 @@ type annotations stubs module
   - [HoneycodeClient](#honeycodeclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [batch_create_table_rows](#batch_create_table_rows)
     - [batch_delete_table_rows](#batch_delete_table_rows)
     - [batch_update_table_rows](#batch_update_table_rows)
@@ -71,6 +72,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+HoneycodeClient exceptions.
+
+Type annotations for `boto3.client("honeycode").exceptions` method.
+
+Boto3 documentation:
+[Honeycode.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### batch_create_table_rows
 
 The BatchCreateTableRows API allows you to create one or more rows at the end
@@ -83,7 +95,7 @@ Boto3 documentation:
 [Honeycode.Client.batch_create_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_create_table_rows)
 
 Arguments mapping described in
-[BatchCreateTableRowsRequestTypeDef](./type_defs.md#batchcreatetablerowsrequesttypedef).
+[BatchCreateTableRowsRequestRequestTypeDef](./type_defs.md#batchcreatetablerowsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -95,7 +107,7 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[BatchCreateTableRowsResultResponseTypeDef](./type_defs.md#batchcreatetablerowsresultresponsetypedef).
+[BatchCreateTableRowsResultTypeDef](./type_defs.md#batchcreatetablerowsresulttypedef).
 
 ### batch_delete_table_rows
 
@@ -109,7 +121,7 @@ Boto3 documentation:
 [Honeycode.Client.batch_delete_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_delete_table_rows)
 
 Arguments mapping described in
-[BatchDeleteTableRowsRequestTypeDef](./type_defs.md#batchdeletetablerowsrequesttypedef).
+[BatchDeleteTableRowsRequestRequestTypeDef](./type_defs.md#batchdeletetablerowsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -119,7 +131,7 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[BatchDeleteTableRowsResultResponseTypeDef](./type_defs.md#batchdeletetablerowsresultresponsetypedef).
+[BatchDeleteTableRowsResultTypeDef](./type_defs.md#batchdeletetablerowsresulttypedef).
 
 ### batch_update_table_rows
 
@@ -133,7 +145,7 @@ Boto3 documentation:
 [Honeycode.Client.batch_update_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_update_table_rows)
 
 Arguments mapping described in
-[BatchUpdateTableRowsRequestTypeDef](./type_defs.md#batchupdatetablerowsrequesttypedef).
+[BatchUpdateTableRowsRequestRequestTypeDef](./type_defs.md#batchupdatetablerowsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -145,7 +157,7 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[BatchUpdateTableRowsResultResponseTypeDef](./type_defs.md#batchupdatetablerowsresultresponsetypedef).
+[BatchUpdateTableRowsResultTypeDef](./type_defs.md#batchupdatetablerowsresulttypedef).
 
 ### batch_upsert_table_rows
 
@@ -158,7 +170,7 @@ Boto3 documentation:
 [Honeycode.Client.batch_upsert_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_upsert_table_rows)
 
 Arguments mapping described in
-[BatchUpsertTableRowsRequestTypeDef](./type_defs.md#batchupserttablerowsrequesttypedef).
+[BatchUpsertTableRowsRequestRequestTypeDef](./type_defs.md#batchupserttablerowsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -170,7 +182,7 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[BatchUpsertTableRowsResultResponseTypeDef](./type_defs.md#batchupserttablerowsresultresponsetypedef).
+[BatchUpsertTableRowsResultTypeDef](./type_defs.md#batchupserttablerowsresulttypedef).
 
 ### can_paginate
 
@@ -199,7 +211,7 @@ Boto3 documentation:
 [Honeycode.Client.describe_table_data_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.describe_table_data_import_job)
 
 Arguments mapping described in
-[DescribeTableDataImportJobRequestTypeDef](./type_defs.md#describetabledataimportjobrequesttypedef).
+[DescribeTableDataImportJobRequestRequestTypeDef](./type_defs.md#describetabledataimportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -208,7 +220,7 @@ Keyword-only arguments:
 - `jobId`: `str` *(required)*
 
 Returns
-[DescribeTableDataImportJobResultResponseTypeDef](./type_defs.md#describetabledataimportjobresultresponsetypedef).
+[DescribeTableDataImportJobResultTypeDef](./type_defs.md#describetabledataimportjobresulttypedef).
 
 ### generate_presigned_url
 
@@ -239,7 +251,7 @@ Boto3 documentation:
 [Honeycode.Client.get_screen_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.get_screen_data)
 
 Arguments mapping described in
-[GetScreenDataRequestTypeDef](./type_defs.md#getscreendatarequesttypedef).
+[GetScreenDataRequestRequestTypeDef](./type_defs.md#getscreendatarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -252,7 +264,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[GetScreenDataResultResponseTypeDef](./type_defs.md#getscreendataresultresponsetypedef).
+[GetScreenDataResultTypeDef](./type_defs.md#getscreendataresulttypedef).
 
 ### invoke_screen_automation
 
@@ -266,7 +278,7 @@ Boto3 documentation:
 [Honeycode.Client.invoke_screen_automation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.invoke_screen_automation)
 
 Arguments mapping described in
-[InvokeScreenAutomationRequestTypeDef](./type_defs.md#invokescreenautomationrequesttypedef).
+[InvokeScreenAutomationRequestRequestTypeDef](./type_defs.md#invokescreenautomationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -280,7 +292,7 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[InvokeScreenAutomationResultResponseTypeDef](./type_defs.md#invokescreenautomationresultresponsetypedef).
+[InvokeScreenAutomationResultTypeDef](./type_defs.md#invokescreenautomationresulttypedef).
 
 ### list_table_columns
 
@@ -293,7 +305,7 @@ Boto3 documentation:
 [Honeycode.Client.list_table_columns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_table_columns)
 
 Arguments mapping described in
-[ListTableColumnsRequestTypeDef](./type_defs.md#listtablecolumnsrequesttypedef).
+[ListTableColumnsRequestRequestTypeDef](./type_defs.md#listtablecolumnsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -302,7 +314,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTableColumnsResultResponseTypeDef](./type_defs.md#listtablecolumnsresultresponsetypedef).
+[ListTableColumnsResultTypeDef](./type_defs.md#listtablecolumnsresulttypedef).
 
 ### list_table_rows
 
@@ -315,7 +327,7 @@ Boto3 documentation:
 [Honeycode.Client.list_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_table_rows)
 
 Arguments mapping described in
-[ListTableRowsRequestTypeDef](./type_defs.md#listtablerowsrequesttypedef).
+[ListTableRowsRequestRequestTypeDef](./type_defs.md#listtablerowsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -326,7 +338,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTableRowsResultResponseTypeDef](./type_defs.md#listtablerowsresultresponsetypedef).
+[ListTableRowsResultTypeDef](./type_defs.md#listtablerowsresulttypedef).
 
 ### list_tables
 
@@ -339,7 +351,7 @@ Boto3 documentation:
 [Honeycode.Client.list_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_tables)
 
 Arguments mapping described in
-[ListTablesRequestTypeDef](./type_defs.md#listtablesrequesttypedef).
+[ListTablesRequestRequestTypeDef](./type_defs.md#listtablesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -347,8 +359,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-Returns
-[ListTablesResultResponseTypeDef](./type_defs.md#listtablesresultresponsetypedef).
+Returns [ListTablesResultTypeDef](./type_defs.md#listtablesresulttypedef).
 
 ### query_table_rows
 
@@ -361,7 +372,7 @@ Boto3 documentation:
 [Honeycode.Client.query_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.query_table_rows)
 
 Arguments mapping described in
-[QueryTableRowsRequestTypeDef](./type_defs.md#querytablerowsrequesttypedef).
+[QueryTableRowsRequestRequestTypeDef](./type_defs.md#querytablerowsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -372,7 +383,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[QueryTableRowsResultResponseTypeDef](./type_defs.md#querytablerowsresultresponsetypedef).
+[QueryTableRowsResultTypeDef](./type_defs.md#querytablerowsresulttypedef).
 
 ### start_table_data_import_job
 
@@ -385,7 +396,7 @@ Boto3 documentation:
 [Honeycode.Client.start_table_data_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.start_table_data_import_job)
 
 Arguments mapping described in
-[StartTableDataImportJobRequestTypeDef](./type_defs.md#starttabledataimportjobrequesttypedef).
+[StartTableDataImportJobRequestRequestTypeDef](./type_defs.md#starttabledataimportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -402,7 +413,7 @@ Keyword-only arguments:
 - `clientRequestToken`: `str` *(required)*
 
 Returns
-[StartTableDataImportJobResultResponseTypeDef](./type_defs.md#starttabledataimportjobresultresponsetypedef).
+[StartTableDataImportJobResultTypeDef](./type_defs.md#starttabledataimportjobresulttypedef).
 
 ### get_paginator
 

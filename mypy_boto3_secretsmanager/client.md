@@ -11,6 +11,7 @@ type annotations stubs module
   - [SecretsManagerClient](#secretsmanagerclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [cancel_rotate_secret](#cancel_rotate_secret)
     - [create_secret](#create_secret)
@@ -83,6 +84,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+SecretsManagerClient exceptions.
+
+Type annotations for `boto3.client("secretsmanager").exceptions` method.
+
+Boto3 documentation:
+[SecretsManager.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -110,14 +122,14 @@ Boto3 documentation:
 [SecretsManager.Client.cancel_rotate_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.cancel_rotate_secret)
 
 Arguments mapping described in
-[CancelRotateSecretRequestTypeDef](./type_defs.md#cancelrotatesecretrequesttypedef).
+[CancelRotateSecretRequestRequestTypeDef](./type_defs.md#cancelrotatesecretrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 
 Returns
-[CancelRotateSecretResponseResponseTypeDef](./type_defs.md#cancelrotatesecretresponseresponsetypedef).
+[CancelRotateSecretResponseTypeDef](./type_defs.md#cancelrotatesecretresponsetypedef).
 
 ### create_secret
 
@@ -129,7 +141,7 @@ Boto3 documentation:
 [SecretsManager.Client.create_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.create_secret)
 
 Arguments mapping described in
-[CreateSecretRequestTypeDef](./type_defs.md#createsecretrequesttypedef).
+[CreateSecretRequestRequestTypeDef](./type_defs.md#createsecretrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -145,7 +157,7 @@ Keyword-only arguments:
 - `ForceOverwriteReplicaSecret`: `bool`
 
 Returns
-[CreateSecretResponseResponseTypeDef](./type_defs.md#createsecretresponseresponsetypedef).
+[CreateSecretResponseTypeDef](./type_defs.md#createsecretresponsetypedef).
 
 ### delete_resource_policy
 
@@ -158,14 +170,14 @@ Boto3 documentation:
 [SecretsManager.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.delete_resource_policy)
 
 Arguments mapping described in
-[DeleteResourcePolicyRequestTypeDef](./type_defs.md#deleteresourcepolicyrequesttypedef).
+[DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 
 Returns
-[DeleteResourcePolicyResponseResponseTypeDef](./type_defs.md#deleteresourcepolicyresponseresponsetypedef).
+[DeleteResourcePolicyResponseTypeDef](./type_defs.md#deleteresourcepolicyresponsetypedef).
 
 ### delete_secret
 
@@ -177,7 +189,7 @@ Boto3 documentation:
 [SecretsManager.Client.delete_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.delete_secret)
 
 Arguments mapping described in
-[DeleteSecretRequestTypeDef](./type_defs.md#deletesecretrequesttypedef).
+[DeleteSecretRequestRequestTypeDef](./type_defs.md#deletesecretrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -186,7 +198,7 @@ Keyword-only arguments:
 - `ForceDeleteWithoutRecovery`: `bool`
 
 Returns
-[DeleteSecretResponseResponseTypeDef](./type_defs.md#deletesecretresponseresponsetypedef).
+[DeleteSecretResponseTypeDef](./type_defs.md#deletesecretresponsetypedef).
 
 ### describe_secret
 
@@ -198,14 +210,14 @@ Boto3 documentation:
 [SecretsManager.Client.describe_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.describe_secret)
 
 Arguments mapping described in
-[DescribeSecretRequestTypeDef](./type_defs.md#describesecretrequesttypedef).
+[DescribeSecretRequestRequestTypeDef](./type_defs.md#describesecretrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 
 Returns
-[DescribeSecretResponseResponseTypeDef](./type_defs.md#describesecretresponseresponsetypedef).
+[DescribeSecretResponseTypeDef](./type_defs.md#describesecretresponsetypedef).
 
 ### generate_presigned_url
 
@@ -237,7 +249,7 @@ Boto3 documentation:
 [SecretsManager.Client.get_random_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_random_password)
 
 Arguments mapping described in
-[GetRandomPasswordRequestTypeDef](./type_defs.md#getrandompasswordrequesttypedef).
+[GetRandomPasswordRequestRequestTypeDef](./type_defs.md#getrandompasswordrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -251,7 +263,7 @@ Keyword-only arguments:
 - `RequireEachIncludedType`: `bool`
 
 Returns
-[GetRandomPasswordResponseResponseTypeDef](./type_defs.md#getrandompasswordresponseresponsetypedef).
+[GetRandomPasswordResponseTypeDef](./type_defs.md#getrandompasswordresponsetypedef).
 
 ### get_resource_policy
 
@@ -265,14 +277,14 @@ Boto3 documentation:
 [SecretsManager.Client.get_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_resource_policy)
 
 Arguments mapping described in
-[GetResourcePolicyRequestTypeDef](./type_defs.md#getresourcepolicyrequesttypedef).
+[GetResourcePolicyRequestRequestTypeDef](./type_defs.md#getresourcepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 
 Returns
-[GetResourcePolicyResponseResponseTypeDef](./type_defs.md#getresourcepolicyresponseresponsetypedef).
+[GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef).
 
 ### get_secret_value
 
@@ -285,7 +297,7 @@ Boto3 documentation:
 [SecretsManager.Client.get_secret_value](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_secret_value)
 
 Arguments mapping described in
-[GetSecretValueRequestTypeDef](./type_defs.md#getsecretvaluerequesttypedef).
+[GetSecretValueRequestRequestTypeDef](./type_defs.md#getsecretvaluerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -294,7 +306,7 @@ Keyword-only arguments:
 - `VersionStage`: `str`
 
 Returns
-[GetSecretValueResponseResponseTypeDef](./type_defs.md#getsecretvalueresponseresponsetypedef).
+[GetSecretValueResponseTypeDef](./type_defs.md#getsecretvalueresponsetypedef).
 
 ### list_secret_version_ids
 
@@ -307,7 +319,7 @@ Boto3 documentation:
 [SecretsManager.Client.list_secret_version_ids](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.list_secret_version_ids)
 
 Arguments mapping described in
-[ListSecretVersionIdsRequestTypeDef](./type_defs.md#listsecretversionidsrequesttypedef).
+[ListSecretVersionIdsRequestRequestTypeDef](./type_defs.md#listsecretversionidsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -317,7 +329,7 @@ Keyword-only arguments:
 - `IncludeDeprecated`: `bool`
 
 Returns
-[ListSecretVersionIdsResponseResponseTypeDef](./type_defs.md#listsecretversionidsresponseresponsetypedef).
+[ListSecretVersionIdsResponseTypeDef](./type_defs.md#listsecretversionidsresponsetypedef).
 
 ### list_secrets
 
@@ -329,7 +341,7 @@ Boto3 documentation:
 [SecretsManager.Client.list_secrets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.list_secrets)
 
 Arguments mapping described in
-[ListSecretsRequestTypeDef](./type_defs.md#listsecretsrequesttypedef).
+[ListSecretsRequestRequestTypeDef](./type_defs.md#listsecretsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -339,7 +351,7 @@ Keyword-only arguments:
 - `SortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 
 Returns
-[ListSecretsResponseResponseTypeDef](./type_defs.md#listsecretsresponseresponsetypedef).
+[ListSecretsResponseTypeDef](./type_defs.md#listsecretsresponsetypedef).
 
 ### put_resource_policy
 
@@ -353,7 +365,7 @@ Boto3 documentation:
 [SecretsManager.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.put_resource_policy)
 
 Arguments mapping described in
-[PutResourcePolicyRequestTypeDef](./type_defs.md#putresourcepolicyrequesttypedef).
+[PutResourcePolicyRequestRequestTypeDef](./type_defs.md#putresourcepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -362,7 +374,7 @@ Keyword-only arguments:
 - `BlockPublicPolicy`: `bool`
 
 Returns
-[PutResourcePolicyResponseResponseTypeDef](./type_defs.md#putresourcepolicyresponseresponsetypedef).
+[PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef).
 
 ### put_secret_value
 
@@ -374,7 +386,7 @@ Boto3 documentation:
 [SecretsManager.Client.put_secret_value](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.put_secret_value)
 
 Arguments mapping described in
-[PutSecretValueRequestTypeDef](./type_defs.md#putsecretvaluerequesttypedef).
+[PutSecretValueRequestRequestTypeDef](./type_defs.md#putsecretvaluerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -385,7 +397,7 @@ Keyword-only arguments:
 - `VersionStages`: `List`\[`str`\]
 
 Returns
-[PutSecretValueResponseResponseTypeDef](./type_defs.md#putsecretvalueresponseresponsetypedef).
+[PutSecretValueResponseTypeDef](./type_defs.md#putsecretvalueresponsetypedef).
 
 ### remove_regions_from_replication
 
@@ -398,7 +410,7 @@ Boto3 documentation:
 [SecretsManager.Client.remove_regions_from_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.remove_regions_from_replication)
 
 Arguments mapping described in
-[RemoveRegionsFromReplicationRequestTypeDef](./type_defs.md#removeregionsfromreplicationrequesttypedef).
+[RemoveRegionsFromReplicationRequestRequestTypeDef](./type_defs.md#removeregionsfromreplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -406,7 +418,7 @@ Keyword-only arguments:
 - `RemoveReplicaRegions`: `List`\[`str`\] *(required)*
 
 Returns
-[RemoveRegionsFromReplicationResponseResponseTypeDef](./type_defs.md#removeregionsfromreplicationresponseresponsetypedef).
+[RemoveRegionsFromReplicationResponseTypeDef](./type_defs.md#removeregionsfromreplicationresponsetypedef).
 
 ### replicate_secret_to_regions
 
@@ -420,7 +432,7 @@ Boto3 documentation:
 [SecretsManager.Client.replicate_secret_to_regions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.replicate_secret_to_regions)
 
 Arguments mapping described in
-[ReplicateSecretToRegionsRequestTypeDef](./type_defs.md#replicatesecrettoregionsrequesttypedef).
+[ReplicateSecretToRegionsRequestRequestTypeDef](./type_defs.md#replicatesecrettoregionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -431,7 +443,7 @@ Keyword-only arguments:
 - `ForceOverwriteReplicaSecret`: `bool`
 
 Returns
-[ReplicateSecretToRegionsResponseResponseTypeDef](./type_defs.md#replicatesecrettoregionsresponseresponsetypedef).
+[ReplicateSecretToRegionsResponseTypeDef](./type_defs.md#replicatesecrettoregionsresponsetypedef).
 
 ### restore_secret
 
@@ -444,14 +456,14 @@ Boto3 documentation:
 [SecretsManager.Client.restore_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.restore_secret)
 
 Arguments mapping described in
-[RestoreSecretRequestTypeDef](./type_defs.md#restoresecretrequesttypedef).
+[RestoreSecretRequestRequestTypeDef](./type_defs.md#restoresecretrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 
 Returns
-[RestoreSecretResponseResponseTypeDef](./type_defs.md#restoresecretresponseresponsetypedef).
+[RestoreSecretResponseTypeDef](./type_defs.md#restoresecretresponsetypedef).
 
 ### rotate_secret
 
@@ -463,7 +475,7 @@ Boto3 documentation:
 [SecretsManager.Client.rotate_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.rotate_secret)
 
 Arguments mapping described in
-[RotateSecretRequestTypeDef](./type_defs.md#rotatesecretrequesttypedef).
+[RotateSecretRequestRequestTypeDef](./type_defs.md#rotatesecretrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -474,7 +486,7 @@ Keyword-only arguments:
   [RotationRulesTypeTypeDef](./type_defs.md#rotationrulestypetypedef)
 
 Returns
-[RotateSecretResponseResponseTypeDef](./type_defs.md#rotatesecretresponseresponsetypedef).
+[RotateSecretResponseTypeDef](./type_defs.md#rotatesecretresponsetypedef).
 
 ### stop_replication_to_replica
 
@@ -488,14 +500,14 @@ Boto3 documentation:
 [SecretsManager.Client.stop_replication_to_replica](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.stop_replication_to_replica)
 
 Arguments mapping described in
-[StopReplicationToReplicaRequestTypeDef](./type_defs.md#stopreplicationtoreplicarequesttypedef).
+[StopReplicationToReplicaRequestRequestTypeDef](./type_defs.md#stopreplicationtoreplicarequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 
 Returns
-[StopReplicationToReplicaResponseResponseTypeDef](./type_defs.md#stopreplicationtoreplicaresponseresponsetypedef).
+[StopReplicationToReplicaResponseTypeDef](./type_defs.md#stopreplicationtoreplicaresponsetypedef).
 
 ### tag_resource
 
@@ -508,7 +520,7 @@ Boto3 documentation:
 [SecretsManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -525,7 +537,7 @@ Boto3 documentation:
 [SecretsManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -542,7 +554,7 @@ Boto3 documentation:
 [SecretsManager.Client.update_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.update_secret)
 
 Arguments mapping described in
-[UpdateSecretRequestTypeDef](./type_defs.md#updatesecretrequesttypedef).
+[UpdateSecretRequestRequestTypeDef](./type_defs.md#updatesecretrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -554,7 +566,7 @@ Keyword-only arguments:
 - `SecretString`: `str`
 
 Returns
-[UpdateSecretResponseResponseTypeDef](./type_defs.md#updatesecretresponseresponsetypedef).
+[UpdateSecretResponseTypeDef](./type_defs.md#updatesecretresponsetypedef).
 
 ### update_secret_version_stage
 
@@ -567,7 +579,7 @@ Boto3 documentation:
 [SecretsManager.Client.update_secret_version_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.update_secret_version_stage)
 
 Arguments mapping described in
-[UpdateSecretVersionStageRequestTypeDef](./type_defs.md#updatesecretversionstagerequesttypedef).
+[UpdateSecretVersionStageRequestRequestTypeDef](./type_defs.md#updatesecretversionstagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -577,7 +589,7 @@ Keyword-only arguments:
 - `MoveToVersionId`: `str`
 
 Returns
-[UpdateSecretVersionStageResponseResponseTypeDef](./type_defs.md#updatesecretversionstageresponseresponsetypedef).
+[UpdateSecretVersionStageResponseTypeDef](./type_defs.md#updatesecretversionstageresponsetypedef).
 
 ### validate_resource_policy
 
@@ -591,7 +603,7 @@ Boto3 documentation:
 [SecretsManager.Client.validate_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.validate_resource_policy)
 
 Arguments mapping described in
-[ValidateResourcePolicyRequestTypeDef](./type_defs.md#validateresourcepolicyrequesttypedef).
+[ValidateResourcePolicyRequestRequestTypeDef](./type_defs.md#validateresourcepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -599,7 +611,7 @@ Keyword-only arguments:
 - `SecretId`: `str`
 
 Returns
-[ValidateResourcePolicyResponseResponseTypeDef](./type_defs.md#validateresourcepolicyresponseresponsetypedef).
+[ValidateResourcePolicyResponseTypeDef](./type_defs.md#validateresourcepolicyresponsetypedef).
 
 ### get_paginator
 

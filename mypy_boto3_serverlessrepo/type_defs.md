@@ -11,39 +11,39 @@ type annotations stubs module
   - [ApplicationDependencySummaryTypeDef](#applicationdependencysummarytypedef)
   - [ApplicationPolicyStatementTypeDef](#applicationpolicystatementtypedef)
   - [ApplicationSummaryTypeDef](#applicationsummarytypedef)
-  - [CreateApplicationRequestTypeDef](#createapplicationrequesttypedef)
-  - [CreateApplicationResponseResponseTypeDef](#createapplicationresponseresponsetypedef)
-  - [CreateApplicationVersionRequestTypeDef](#createapplicationversionrequesttypedef)
-  - [CreateApplicationVersionResponseResponseTypeDef](#createapplicationversionresponseresponsetypedef)
-  - [CreateCloudFormationChangeSetRequestTypeDef](#createcloudformationchangesetrequesttypedef)
-  - [CreateCloudFormationChangeSetResponseResponseTypeDef](#createcloudformationchangesetresponseresponsetypedef)
-  - [CreateCloudFormationTemplateRequestTypeDef](#createcloudformationtemplaterequesttypedef)
-  - [CreateCloudFormationTemplateResponseResponseTypeDef](#createcloudformationtemplateresponseresponsetypedef)
-  - [DeleteApplicationRequestTypeDef](#deleteapplicationrequesttypedef)
-  - [GetApplicationPolicyRequestTypeDef](#getapplicationpolicyrequesttypedef)
-  - [GetApplicationPolicyResponseResponseTypeDef](#getapplicationpolicyresponseresponsetypedef)
-  - [GetApplicationRequestTypeDef](#getapplicationrequesttypedef)
-  - [GetApplicationResponseResponseTypeDef](#getapplicationresponseresponsetypedef)
-  - [GetCloudFormationTemplateRequestTypeDef](#getcloudformationtemplaterequesttypedef)
-  - [GetCloudFormationTemplateResponseResponseTypeDef](#getcloudformationtemplateresponseresponsetypedef)
-  - [ListApplicationDependenciesRequestTypeDef](#listapplicationdependenciesrequesttypedef)
-  - [ListApplicationDependenciesResponseResponseTypeDef](#listapplicationdependenciesresponseresponsetypedef)
-  - [ListApplicationVersionsRequestTypeDef](#listapplicationversionsrequesttypedef)
-  - [ListApplicationVersionsResponseResponseTypeDef](#listapplicationversionsresponseresponsetypedef)
-  - [ListApplicationsRequestTypeDef](#listapplicationsrequesttypedef)
-  - [ListApplicationsResponseResponseTypeDef](#listapplicationsresponseresponsetypedef)
+  - [CreateApplicationRequestRequestTypeDef](#createapplicationrequestrequesttypedef)
+  - [CreateApplicationResponseTypeDef](#createapplicationresponsetypedef)
+  - [CreateApplicationVersionRequestRequestTypeDef](#createapplicationversionrequestrequesttypedef)
+  - [CreateApplicationVersionResponseTypeDef](#createapplicationversionresponsetypedef)
+  - [CreateCloudFormationChangeSetRequestRequestTypeDef](#createcloudformationchangesetrequestrequesttypedef)
+  - [CreateCloudFormationChangeSetResponseTypeDef](#createcloudformationchangesetresponsetypedef)
+  - [CreateCloudFormationTemplateRequestRequestTypeDef](#createcloudformationtemplaterequestrequesttypedef)
+  - [CreateCloudFormationTemplateResponseTypeDef](#createcloudformationtemplateresponsetypedef)
+  - [DeleteApplicationRequestRequestTypeDef](#deleteapplicationrequestrequesttypedef)
+  - [GetApplicationPolicyRequestRequestTypeDef](#getapplicationpolicyrequestrequesttypedef)
+  - [GetApplicationPolicyResponseTypeDef](#getapplicationpolicyresponsetypedef)
+  - [GetApplicationRequestRequestTypeDef](#getapplicationrequestrequesttypedef)
+  - [GetApplicationResponseTypeDef](#getapplicationresponsetypedef)
+  - [GetCloudFormationTemplateRequestRequestTypeDef](#getcloudformationtemplaterequestrequesttypedef)
+  - [GetCloudFormationTemplateResponseTypeDef](#getcloudformationtemplateresponsetypedef)
+  - [ListApplicationDependenciesRequestRequestTypeDef](#listapplicationdependenciesrequestrequesttypedef)
+  - [ListApplicationDependenciesResponseTypeDef](#listapplicationdependenciesresponsetypedef)
+  - [ListApplicationVersionsRequestRequestTypeDef](#listapplicationversionsrequestrequesttypedef)
+  - [ListApplicationVersionsResponseTypeDef](#listapplicationversionsresponsetypedef)
+  - [ListApplicationsRequestRequestTypeDef](#listapplicationsrequestrequesttypedef)
+  - [ListApplicationsResponseTypeDef](#listapplicationsresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ParameterDefinitionTypeDef](#parameterdefinitiontypedef)
   - [ParameterValueTypeDef](#parametervaluetypedef)
-  - [PutApplicationPolicyRequestTypeDef](#putapplicationpolicyrequesttypedef)
-  - [PutApplicationPolicyResponseResponseTypeDef](#putapplicationpolicyresponseresponsetypedef)
+  - [PutApplicationPolicyRequestRequestTypeDef](#putapplicationpolicyrequestrequesttypedef)
+  - [PutApplicationPolicyResponseTypeDef](#putapplicationpolicyresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RollbackConfigurationTypeDef](#rollbackconfigurationtypedef)
   - [RollbackTriggerTypeDef](#rollbacktriggertypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UnshareApplicationRequestTypeDef](#unshareapplicationrequesttypedef)
-  - [UpdateApplicationRequestTypeDef](#updateapplicationrequesttypedef)
-  - [UpdateApplicationResponseResponseTypeDef](#updateapplicationresponseresponsetypedef)
+  - [UnshareApplicationRequestRequestTypeDef](#unshareapplicationrequestrequesttypedef)
+  - [UpdateApplicationRequestRequestTypeDef](#updateapplicationrequestrequesttypedef)
+  - [UpdateApplicationResponseTypeDef](#updateapplicationresponsetypedef)
   - [VersionSummaryTypeDef](#versionsummarytypedef)
   - [VersionTypeDef](#versiontypedef)
 
@@ -94,10 +94,10 @@ Optional fields:
 - `Labels`: `List`\[`str`\]
 - `SpdxLicenseId`: `str`
 
-## CreateApplicationRequestTypeDef
+## CreateApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import CreateApplicationRequestTypeDef
+from mypy_boto3_serverlessrepo.type_defs import CreateApplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -121,10 +121,10 @@ Optional fields:
 - `TemplateBody`: `str`
 - `TemplateUrl`: `str`
 
-## CreateApplicationResponseResponseTypeDef
+## CreateApplicationResponseTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import CreateApplicationResponseResponseTypeDef
+from mypy_boto3_serverlessrepo.type_defs import CreateApplicationResponseTypeDef
 ```
 
 Required fields:
@@ -145,10 +145,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateApplicationVersionRequestTypeDef
+## CreateApplicationVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import CreateApplicationVersionRequestTypeDef
+from mypy_boto3_serverlessrepo.type_defs import CreateApplicationVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -163,10 +163,10 @@ Optional fields:
 - `TemplateBody`: `str`
 - `TemplateUrl`: `str`
 
-## CreateApplicationVersionResponseResponseTypeDef
+## CreateApplicationVersionResponseTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import CreateApplicationVersionResponseResponseTypeDef
+from mypy_boto3_serverlessrepo.type_defs import CreateApplicationVersionResponseTypeDef
 ```
 
 Required fields:
@@ -185,10 +185,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateCloudFormationChangeSetRequestTypeDef
+## CreateCloudFormationChangeSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import CreateCloudFormationChangeSetRequestTypeDef
+from mypy_boto3_serverlessrepo.type_defs import CreateCloudFormationChangeSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -212,10 +212,10 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `TemplateId`: `str`
 
-## CreateCloudFormationChangeSetResponseResponseTypeDef
+## CreateCloudFormationChangeSetResponseTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import CreateCloudFormationChangeSetResponseResponseTypeDef
+from mypy_boto3_serverlessrepo.type_defs import CreateCloudFormationChangeSetResponseTypeDef
 ```
 
 Required fields:
@@ -227,10 +227,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateCloudFormationTemplateRequestTypeDef
+## CreateCloudFormationTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import CreateCloudFormationTemplateRequestTypeDef
+from mypy_boto3_serverlessrepo.type_defs import CreateCloudFormationTemplateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -241,10 +241,10 @@ Optional fields:
 
 - `SemanticVersion`: `str`
 
-## CreateCloudFormationTemplateResponseResponseTypeDef
+## CreateCloudFormationTemplateResponseTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import CreateCloudFormationTemplateResponseResponseTypeDef
+from mypy_boto3_serverlessrepo.type_defs import CreateCloudFormationTemplateResponseTypeDef
 ```
 
 Required fields:
@@ -259,30 +259,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteApplicationRequestTypeDef
+## DeleteApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import DeleteApplicationRequestTypeDef
+from mypy_boto3_serverlessrepo.type_defs import DeleteApplicationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ApplicationId`: `str`
 
-## GetApplicationPolicyRequestTypeDef
+## GetApplicationPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import GetApplicationPolicyRequestTypeDef
+from mypy_boto3_serverlessrepo.type_defs import GetApplicationPolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ApplicationId`: `str`
 
-## GetApplicationPolicyResponseResponseTypeDef
+## GetApplicationPolicyResponseTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import GetApplicationPolicyResponseResponseTypeDef
+from mypy_boto3_serverlessrepo.type_defs import GetApplicationPolicyResponseTypeDef
 ```
 
 Required fields:
@@ -292,10 +292,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetApplicationRequestTypeDef
+## GetApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import GetApplicationRequestTypeDef
+from mypy_boto3_serverlessrepo.type_defs import GetApplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -306,10 +306,10 @@ Optional fields:
 
 - `SemanticVersion`: `str`
 
-## GetApplicationResponseResponseTypeDef
+## GetApplicationResponseTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import GetApplicationResponseResponseTypeDef
+from mypy_boto3_serverlessrepo.type_defs import GetApplicationResponseTypeDef
 ```
 
 Required fields:
@@ -330,10 +330,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCloudFormationTemplateRequestTypeDef
+## GetCloudFormationTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import GetCloudFormationTemplateRequestTypeDef
+from mypy_boto3_serverlessrepo.type_defs import GetCloudFormationTemplateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -341,10 +341,10 @@ Required fields:
 - `ApplicationId`: `str`
 - `TemplateId`: `str`
 
-## GetCloudFormationTemplateResponseResponseTypeDef
+## GetCloudFormationTemplateResponseTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import GetCloudFormationTemplateResponseResponseTypeDef
+from mypy_boto3_serverlessrepo.type_defs import GetCloudFormationTemplateResponseTypeDef
 ```
 
 Required fields:
@@ -359,10 +359,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListApplicationDependenciesRequestTypeDef
+## ListApplicationDependenciesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import ListApplicationDependenciesRequestTypeDef
+from mypy_boto3_serverlessrepo.type_defs import ListApplicationDependenciesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -375,10 +375,10 @@ Optional fields:
 - `NextToken`: `str`
 - `SemanticVersion`: `str`
 
-## ListApplicationDependenciesResponseResponseTypeDef
+## ListApplicationDependenciesResponseTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import ListApplicationDependenciesResponseResponseTypeDef
+from mypy_boto3_serverlessrepo.type_defs import ListApplicationDependenciesResponseTypeDef
 ```
 
 Required fields:
@@ -389,10 +389,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListApplicationVersionsRequestTypeDef
+## ListApplicationVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import ListApplicationVersionsRequestTypeDef
+from mypy_boto3_serverlessrepo.type_defs import ListApplicationVersionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -404,10 +404,10 @@ Optional fields:
 - `MaxItems`: `int`
 - `NextToken`: `str`
 
-## ListApplicationVersionsResponseResponseTypeDef
+## ListApplicationVersionsResponseTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import ListApplicationVersionsResponseResponseTypeDef
+from mypy_boto3_serverlessrepo.type_defs import ListApplicationVersionsResponseTypeDef
 ```
 
 Required fields:
@@ -418,10 +418,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListApplicationsRequestTypeDef
+## ListApplicationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import ListApplicationsRequestTypeDef
+from mypy_boto3_serverlessrepo.type_defs import ListApplicationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -429,10 +429,10 @@ Optional fields:
 - `MaxItems`: `int`
 - `NextToken`: `str`
 
-## ListApplicationsResponseResponseTypeDef
+## ListApplicationsResponseTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import ListApplicationsResponseResponseTypeDef
+from mypy_boto3_serverlessrepo.type_defs import ListApplicationsResponseTypeDef
 ```
 
 Required fields:
@@ -491,10 +491,10 @@ Required fields:
 - `Name`: `str`
 - `Value`: `str`
 
-## PutApplicationPolicyRequestTypeDef
+## PutApplicationPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import PutApplicationPolicyRequestTypeDef
+from mypy_boto3_serverlessrepo.type_defs import PutApplicationPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -503,10 +503,10 @@ Required fields:
 - `Statements`:
   `List`\[[ApplicationPolicyStatementTypeDef](./type_defs.md#applicationpolicystatementtypedef)\]
 
-## PutApplicationPolicyResponseResponseTypeDef
+## PutApplicationPolicyResponseTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import PutApplicationPolicyResponseResponseTypeDef
+from mypy_boto3_serverlessrepo.type_defs import PutApplicationPolicyResponseTypeDef
 ```
 
 Required fields:
@@ -564,10 +564,10 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## UnshareApplicationRequestTypeDef
+## UnshareApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import UnshareApplicationRequestTypeDef
+from mypy_boto3_serverlessrepo.type_defs import UnshareApplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -575,10 +575,10 @@ Required fields:
 - `ApplicationId`: `str`
 - `OrganizationId`: `str`
 
-## UpdateApplicationRequestTypeDef
+## UpdateApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import UpdateApplicationRequestTypeDef
+from mypy_boto3_serverlessrepo.type_defs import UpdateApplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -594,10 +594,10 @@ Optional fields:
 - `ReadmeBody`: `str`
 - `ReadmeUrl`: `str`
 
-## UpdateApplicationResponseResponseTypeDef
+## UpdateApplicationResponseTypeDef
 
 ```python
-from mypy_boto3_serverlessrepo.type_defs import UpdateApplicationResponseResponseTypeDef
+from mypy_boto3_serverlessrepo.type_defs import UpdateApplicationResponseTypeDef
 ```
 
 Required fields:

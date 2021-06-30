@@ -11,6 +11,7 @@ type annotations stubs module
   - [ConnectParticipantClient](#connectparticipantclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [complete_attachment_upload](#complete_attachment_upload)
     - [create_participant_connection](#create_participant_connection)
@@ -62,6 +63,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ConnectParticipantClient exceptions.
+
+Type annotations for `boto3.client("connectparticipant").exceptions` method.
+
+Boto3 documentation:
+[ConnectParticipant.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -89,7 +101,7 @@ Boto3 documentation:
 [ConnectParticipant.Client.complete_attachment_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.complete_attachment_upload)
 
 Arguments mapping described in
-[CompleteAttachmentUploadRequestTypeDef](./type_defs.md#completeattachmentuploadrequesttypedef).
+[CompleteAttachmentUploadRequestRequestTypeDef](./type_defs.md#completeattachmentuploadrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -110,7 +122,7 @@ Boto3 documentation:
 [ConnectParticipant.Client.create_participant_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.create_participant_connection)
 
 Arguments mapping described in
-[CreateParticipantConnectionRequestTypeDef](./type_defs.md#createparticipantconnectionrequesttypedef).
+[CreateParticipantConnectionRequestRequestTypeDef](./type_defs.md#createparticipantconnectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -119,7 +131,7 @@ Keyword-only arguments:
 - `ParticipantToken`: `str` *(required)*
 
 Returns
-[CreateParticipantConnectionResponseResponseTypeDef](./type_defs.md#createparticipantconnectionresponseresponsetypedef).
+[CreateParticipantConnectionResponseTypeDef](./type_defs.md#createparticipantconnectionresponsetypedef).
 
 ### disconnect_participant
 
@@ -132,7 +144,7 @@ Boto3 documentation:
 [ConnectParticipant.Client.disconnect_participant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.disconnect_participant)
 
 Arguments mapping described in
-[DisconnectParticipantRequestTypeDef](./type_defs.md#disconnectparticipantrequesttypedef).
+[DisconnectParticipantRequestRequestTypeDef](./type_defs.md#disconnectparticipantrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -171,7 +183,7 @@ Boto3 documentation:
 [ConnectParticipant.Client.get_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.get_attachment)
 
 Arguments mapping described in
-[GetAttachmentRequestTypeDef](./type_defs.md#getattachmentrequesttypedef).
+[GetAttachmentRequestRequestTypeDef](./type_defs.md#getattachmentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -179,7 +191,7 @@ Keyword-only arguments:
 - `ConnectionToken`: `str` *(required)*
 
 Returns
-[GetAttachmentResponseResponseTypeDef](./type_defs.md#getattachmentresponseresponsetypedef).
+[GetAttachmentResponseTypeDef](./type_defs.md#getattachmentresponsetypedef).
 
 ### get_transcript
 
@@ -192,7 +204,7 @@ Boto3 documentation:
 [ConnectParticipant.Client.get_transcript](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.get_transcript)
 
 Arguments mapping described in
-[GetTranscriptRequestTypeDef](./type_defs.md#gettranscriptrequesttypedef).
+[GetTranscriptRequestRequestTypeDef](./type_defs.md#gettranscriptrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -205,7 +217,7 @@ Keyword-only arguments:
 - `StartPosition`: [StartPositionTypeDef](./type_defs.md#startpositiontypedef)
 
 Returns
-[GetTranscriptResponseResponseTypeDef](./type_defs.md#gettranscriptresponseresponsetypedef).
+[GetTranscriptResponseTypeDef](./type_defs.md#gettranscriptresponsetypedef).
 
 ### send_event
 
@@ -217,7 +229,7 @@ Boto3 documentation:
 [ConnectParticipant.Client.send_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.send_event)
 
 Arguments mapping described in
-[SendEventRequestTypeDef](./type_defs.md#sendeventrequesttypedef).
+[SendEventRequestRequestTypeDef](./type_defs.md#sendeventrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -226,8 +238,7 @@ Keyword-only arguments:
 - `Content`: `str`
 - `ClientToken`: `str`
 
-Returns
-[SendEventResponseResponseTypeDef](./type_defs.md#sendeventresponseresponsetypedef).
+Returns [SendEventResponseTypeDef](./type_defs.md#sendeventresponsetypedef).
 
 ### send_message
 
@@ -239,7 +250,7 @@ Boto3 documentation:
 [ConnectParticipant.Client.send_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.send_message)
 
 Arguments mapping described in
-[SendMessageRequestTypeDef](./type_defs.md#sendmessagerequesttypedef).
+[SendMessageRequestRequestTypeDef](./type_defs.md#sendmessagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -249,7 +260,7 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[SendMessageResponseResponseTypeDef](./type_defs.md#sendmessageresponseresponsetypedef).
+[SendMessageResponseTypeDef](./type_defs.md#sendmessageresponsetypedef).
 
 ### start_attachment_upload
 
@@ -263,7 +274,7 @@ Boto3 documentation:
 [ConnectParticipant.Client.start_attachment_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.start_attachment_upload)
 
 Arguments mapping described in
-[StartAttachmentUploadRequestTypeDef](./type_defs.md#startattachmentuploadrequesttypedef).
+[StartAttachmentUploadRequestRequestTypeDef](./type_defs.md#startattachmentuploadrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -274,4 +285,4 @@ Keyword-only arguments:
 - `ConnectionToken`: `str` *(required)*
 
 Returns
-[StartAttachmentUploadResponseResponseTypeDef](./type_defs.md#startattachmentuploadresponseresponsetypedef).
+[StartAttachmentUploadResponseTypeDef](./type_defs.md#startattachmentuploadresponsetypedef).

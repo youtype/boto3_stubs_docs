@@ -11,6 +11,7 @@ type annotations stubs module
   - [SupportClient](#supportclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_attachments_to_set](#add_attachments_to_set)
     - [add_communication_to_case](#add_communication_to_case)
     - [can_paginate](#can_paginate)
@@ -72,6 +73,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+SupportClient exceptions.
+
+Type annotations for `boto3.client("support").exceptions` method.
+
+Boto3 documentation:
+[Support.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_attachments_to_set
 
 Adds one or more attachments to an attachment set.
@@ -82,7 +94,7 @@ Boto3 documentation:
 [Support.Client.add_attachments_to_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.add_attachments_to_set)
 
 Arguments mapping described in
-[AddAttachmentsToSetRequestTypeDef](./type_defs.md#addattachmentstosetrequesttypedef).
+[AddAttachmentsToSetRequestRequestTypeDef](./type_defs.md#addattachmentstosetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -91,7 +103,7 @@ Keyword-only arguments:
 - `attachmentSetId`: `str`
 
 Returns
-[AddAttachmentsToSetResponseResponseTypeDef](./type_defs.md#addattachmentstosetresponseresponsetypedef).
+[AddAttachmentsToSetResponseTypeDef](./type_defs.md#addattachmentstosetresponsetypedef).
 
 ### add_communication_to_case
 
@@ -104,7 +116,7 @@ Boto3 documentation:
 [Support.Client.add_communication_to_case](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.add_communication_to_case)
 
 Arguments mapping described in
-[AddCommunicationToCaseRequestTypeDef](./type_defs.md#addcommunicationtocaserequesttypedef).
+[AddCommunicationToCaseRequestRequestTypeDef](./type_defs.md#addcommunicationtocaserequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -114,7 +126,7 @@ Keyword-only arguments:
 - `attachmentSetId`: `str`
 
 Returns
-[AddCommunicationToCaseResponseResponseTypeDef](./type_defs.md#addcommunicationtocaseresponseresponsetypedef).
+[AddCommunicationToCaseResponseTypeDef](./type_defs.md#addcommunicationtocaseresponsetypedef).
 
 ### can_paginate
 
@@ -141,7 +153,7 @@ Boto3 documentation:
 [Support.Client.create_case](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.create_case)
 
 Arguments mapping described in
-[CreateCaseRequestTypeDef](./type_defs.md#createcaserequesttypedef).
+[CreateCaseRequestRequestTypeDef](./type_defs.md#createcaserequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -155,8 +167,7 @@ Keyword-only arguments:
 - `issueType`: `str`
 - `attachmentSetId`: `str`
 
-Returns
-[CreateCaseResponseResponseTypeDef](./type_defs.md#createcaseresponseresponsetypedef).
+Returns [CreateCaseResponseTypeDef](./type_defs.md#createcaseresponsetypedef).
 
 ### describe_attachment
 
@@ -168,14 +179,14 @@ Boto3 documentation:
 [Support.Client.describe_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_attachment)
 
 Arguments mapping described in
-[DescribeAttachmentRequestTypeDef](./type_defs.md#describeattachmentrequesttypedef).
+[DescribeAttachmentRequestRequestTypeDef](./type_defs.md#describeattachmentrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `attachmentId`: `str` *(required)*
 
 Returns
-[DescribeAttachmentResponseResponseTypeDef](./type_defs.md#describeattachmentresponseresponsetypedef).
+[DescribeAttachmentResponseTypeDef](./type_defs.md#describeattachmentresponsetypedef).
 
 ### describe_cases
 
@@ -187,7 +198,7 @@ Boto3 documentation:
 [Support.Client.describe_cases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_cases)
 
 Arguments mapping described in
-[DescribeCasesRequestTypeDef](./type_defs.md#describecasesrequesttypedef).
+[DescribeCasesRequestRequestTypeDef](./type_defs.md#describecasesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -202,7 +213,7 @@ Keyword-only arguments:
 - `includeCommunications`: `bool`
 
 Returns
-[DescribeCasesResponseResponseTypeDef](./type_defs.md#describecasesresponseresponsetypedef).
+[DescribeCasesResponseTypeDef](./type_defs.md#describecasesresponsetypedef).
 
 ### describe_communications
 
@@ -214,7 +225,7 @@ Boto3 documentation:
 [Support.Client.describe_communications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_communications)
 
 Arguments mapping described in
-[DescribeCommunicationsRequestTypeDef](./type_defs.md#describecommunicationsrequesttypedef).
+[DescribeCommunicationsRequestRequestTypeDef](./type_defs.md#describecommunicationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -225,7 +236,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeCommunicationsResponseResponseTypeDef](./type_defs.md#describecommunicationsresponseresponsetypedef).
+[DescribeCommunicationsResponseTypeDef](./type_defs.md#describecommunicationsresponsetypedef).
 
 ### describe_services
 
@@ -238,7 +249,7 @@ Boto3 documentation:
 [Support.Client.describe_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_services)
 
 Arguments mapping described in
-[DescribeServicesRequestTypeDef](./type_defs.md#describeservicesrequesttypedef).
+[DescribeServicesRequestRequestTypeDef](./type_defs.md#describeservicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -246,7 +257,7 @@ Keyword-only arguments:
 - `language`: `str`
 
 Returns
-[DescribeServicesResponseResponseTypeDef](./type_defs.md#describeservicesresponseresponsetypedef).
+[DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef).
 
 ### describe_severity_levels
 
@@ -258,14 +269,14 @@ Boto3 documentation:
 [Support.Client.describe_severity_levels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_severity_levels)
 
 Arguments mapping described in
-[DescribeSeverityLevelsRequestTypeDef](./type_defs.md#describeseveritylevelsrequesttypedef).
+[DescribeSeverityLevelsRequestRequestTypeDef](./type_defs.md#describeseveritylevelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `language`: `str`
 
 Returns
-[DescribeSeverityLevelsResponseResponseTypeDef](./type_defs.md#describeseveritylevelsresponseresponsetypedef).
+[DescribeSeverityLevelsResponseTypeDef](./type_defs.md#describeseveritylevelsresponsetypedef).
 
 ### describe_trusted_advisor_check_refresh_statuses
 
@@ -280,14 +291,14 @@ Boto3 documentation:
 [Support.Client.describe_trusted_advisor_check_refresh_statuses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_refresh_statuses)
 
 Arguments mapping described in
-[DescribeTrustedAdvisorCheckRefreshStatusesRequestTypeDef](./type_defs.md#describetrustedadvisorcheckrefreshstatusesrequesttypedef).
+[DescribeTrustedAdvisorCheckRefreshStatusesRequestRequestTypeDef](./type_defs.md#describetrustedadvisorcheckrefreshstatusesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `checkIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeTrustedAdvisorCheckRefreshStatusesResponseResponseTypeDef](./type_defs.md#describetrustedadvisorcheckrefreshstatusesresponseresponsetypedef).
+[DescribeTrustedAdvisorCheckRefreshStatusesResponseTypeDef](./type_defs.md#describetrustedadvisorcheckrefreshstatusesresponsetypedef).
 
 ### describe_trusted_advisor_check_result
 
@@ -301,7 +312,7 @@ Boto3 documentation:
 [Support.Client.describe_trusted_advisor_check_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_result)
 
 Arguments mapping described in
-[DescribeTrustedAdvisorCheckResultRequestTypeDef](./type_defs.md#describetrustedadvisorcheckresultrequesttypedef).
+[DescribeTrustedAdvisorCheckResultRequestRequestTypeDef](./type_defs.md#describetrustedadvisorcheckresultrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -309,7 +320,7 @@ Keyword-only arguments:
 - `language`: `str`
 
 Returns
-[DescribeTrustedAdvisorCheckResultResponseResponseTypeDef](./type_defs.md#describetrustedadvisorcheckresultresponseresponsetypedef).
+[DescribeTrustedAdvisorCheckResultResponseTypeDef](./type_defs.md#describetrustedadvisorcheckresultresponsetypedef).
 
 ### describe_trusted_advisor_check_summaries
 
@@ -323,14 +334,14 @@ Boto3 documentation:
 [Support.Client.describe_trusted_advisor_check_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_summaries)
 
 Arguments mapping described in
-[DescribeTrustedAdvisorCheckSummariesRequestTypeDef](./type_defs.md#describetrustedadvisorchecksummariesrequesttypedef).
+[DescribeTrustedAdvisorCheckSummariesRequestRequestTypeDef](./type_defs.md#describetrustedadvisorchecksummariesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `checkIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeTrustedAdvisorCheckSummariesResponseResponseTypeDef](./type_defs.md#describetrustedadvisorchecksummariesresponseresponsetypedef).
+[DescribeTrustedAdvisorCheckSummariesResponseTypeDef](./type_defs.md#describetrustedadvisorchecksummariesresponsetypedef).
 
 ### describe_trusted_advisor_checks
 
@@ -344,14 +355,14 @@ Boto3 documentation:
 [Support.Client.describe_trusted_advisor_checks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_checks)
 
 Arguments mapping described in
-[DescribeTrustedAdvisorChecksRequestTypeDef](./type_defs.md#describetrustedadvisorchecksrequesttypedef).
+[DescribeTrustedAdvisorChecksRequestRequestTypeDef](./type_defs.md#describetrustedadvisorchecksrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `language`: `str` *(required)*
 
 Returns
-[DescribeTrustedAdvisorChecksResponseResponseTypeDef](./type_defs.md#describetrustedadvisorchecksresponseresponsetypedef).
+[DescribeTrustedAdvisorChecksResponseTypeDef](./type_defs.md#describetrustedadvisorchecksresponsetypedef).
 
 ### generate_presigned_url
 
@@ -382,14 +393,14 @@ Boto3 documentation:
 [Support.Client.refresh_trusted_advisor_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.refresh_trusted_advisor_check)
 
 Arguments mapping described in
-[RefreshTrustedAdvisorCheckRequestTypeDef](./type_defs.md#refreshtrustedadvisorcheckrequesttypedef).
+[RefreshTrustedAdvisorCheckRequestRequestTypeDef](./type_defs.md#refreshtrustedadvisorcheckrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `checkId`: `str` *(required)*
 
 Returns
-[RefreshTrustedAdvisorCheckResponseResponseTypeDef](./type_defs.md#refreshtrustedadvisorcheckresponseresponsetypedef).
+[RefreshTrustedAdvisorCheckResponseTypeDef](./type_defs.md#refreshtrustedadvisorcheckresponsetypedef).
 
 ### resolve_case
 
@@ -401,14 +412,14 @@ Boto3 documentation:
 [Support.Client.resolve_case](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.resolve_case)
 
 Arguments mapping described in
-[ResolveCaseRequestTypeDef](./type_defs.md#resolvecaserequesttypedef).
+[ResolveCaseRequestRequestTypeDef](./type_defs.md#resolvecaserequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `caseId`: `str`
 
 Returns
-[ResolveCaseResponseResponseTypeDef](./type_defs.md#resolvecaseresponseresponsetypedef).
+[ResolveCaseResponseTypeDef](./type_defs.md#resolvecaseresponsetypedef).
 
 ### get_paginator
 

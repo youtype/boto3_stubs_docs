@@ -11,6 +11,7 @@ type annotations stubs module
   - [PricingClient](#pricingclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [describe_services](#describe_services)
     - [generate_presigned_url](#generate_presigned_url)
@@ -57,6 +58,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+PricingClient exceptions.
+
+Type annotations for `boto3.client("pricing").exceptions` method.
+
+Boto3 documentation:
+[Pricing.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -83,7 +95,7 @@ Boto3 documentation:
 [Pricing.Client.describe_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.describe_services)
 
 Arguments mapping described in
-[DescribeServicesRequestTypeDef](./type_defs.md#describeservicesrequesttypedef).
+[DescribeServicesRequestRequestTypeDef](./type_defs.md#describeservicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -93,7 +105,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeServicesResponseResponseTypeDef](./type_defs.md#describeservicesresponseresponsetypedef).
+[DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef).
 
 ### generate_presigned_url
 
@@ -123,7 +135,7 @@ Boto3 documentation:
 [Pricing.Client.get_attribute_values](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.get_attribute_values)
 
 Arguments mapping described in
-[GetAttributeValuesRequestTypeDef](./type_defs.md#getattributevaluesrequesttypedef).
+[GetAttributeValuesRequestRequestTypeDef](./type_defs.md#getattributevaluesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -133,7 +145,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetAttributeValuesResponseResponseTypeDef](./type_defs.md#getattributevaluesresponseresponsetypedef).
+[GetAttributeValuesResponseTypeDef](./type_defs.md#getattributevaluesresponsetypedef).
 
 ### get_products
 
@@ -145,7 +157,7 @@ Boto3 documentation:
 [Pricing.Client.get_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.get_products)
 
 Arguments mapping described in
-[GetProductsRequestTypeDef](./type_defs.md#getproductsrequesttypedef).
+[GetProductsRequestRequestTypeDef](./type_defs.md#getproductsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -156,7 +168,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetProductsResponseResponseTypeDef](./type_defs.md#getproductsresponseresponsetypedef).
+[GetProductsResponseTypeDef](./type_defs.md#getproductsresponsetypedef).
 
 ### get_paginator
 

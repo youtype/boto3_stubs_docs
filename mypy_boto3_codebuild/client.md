@@ -11,6 +11,7 @@ type annotations stubs module
   - [CodeBuildClient](#codebuildclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [batch_delete_builds](#batch_delete_builds)
     - [batch_get_build_batches](#batch_get_build_batches)
     - [batch_get_builds](#batch_get_builds)
@@ -98,6 +99,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+CodeBuildClient exceptions.
+
+Type annotations for `boto3.client("codebuild").exceptions` method.
+
+Boto3 documentation:
+[CodeBuild.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### batch_delete_builds
 
 Deletes one or more builds.
@@ -108,14 +120,14 @@ Boto3 documentation:
 [CodeBuild.Client.batch_delete_builds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_delete_builds)
 
 Arguments mapping described in
-[BatchDeleteBuildsInputTypeDef](./type_defs.md#batchdeletebuildsinputtypedef).
+[BatchDeleteBuildsInputRequestTypeDef](./type_defs.md#batchdeletebuildsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ids`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDeleteBuildsOutputResponseTypeDef](./type_defs.md#batchdeletebuildsoutputresponsetypedef).
+[BatchDeleteBuildsOutputTypeDef](./type_defs.md#batchdeletebuildsoutputtypedef).
 
 ### batch_get_build_batches
 
@@ -128,14 +140,14 @@ Boto3 documentation:
 [CodeBuild.Client.batch_get_build_batches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_get_build_batches)
 
 Arguments mapping described in
-[BatchGetBuildBatchesInputTypeDef](./type_defs.md#batchgetbuildbatchesinputtypedef).
+[BatchGetBuildBatchesInputRequestTypeDef](./type_defs.md#batchgetbuildbatchesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ids`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetBuildBatchesOutputResponseTypeDef](./type_defs.md#batchgetbuildbatchesoutputresponsetypedef).
+[BatchGetBuildBatchesOutputTypeDef](./type_defs.md#batchgetbuildbatchesoutputtypedef).
 
 ### batch_get_builds
 
@@ -147,14 +159,14 @@ Boto3 documentation:
 [CodeBuild.Client.batch_get_builds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_get_builds)
 
 Arguments mapping described in
-[BatchGetBuildsInputTypeDef](./type_defs.md#batchgetbuildsinputtypedef).
+[BatchGetBuildsInputRequestTypeDef](./type_defs.md#batchgetbuildsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ids`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetBuildsOutputResponseTypeDef](./type_defs.md#batchgetbuildsoutputresponsetypedef).
+[BatchGetBuildsOutputTypeDef](./type_defs.md#batchgetbuildsoutputtypedef).
 
 ### batch_get_projects
 
@@ -166,14 +178,14 @@ Boto3 documentation:
 [CodeBuild.Client.batch_get_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_get_projects)
 
 Arguments mapping described in
-[BatchGetProjectsInputTypeDef](./type_defs.md#batchgetprojectsinputtypedef).
+[BatchGetProjectsInputRequestTypeDef](./type_defs.md#batchgetprojectsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `names`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetProjectsOutputResponseTypeDef](./type_defs.md#batchgetprojectsoutputresponsetypedef).
+[BatchGetProjectsOutputTypeDef](./type_defs.md#batchgetprojectsoutputtypedef).
 
 ### batch_get_report_groups
 
@@ -186,14 +198,14 @@ Boto3 documentation:
 [CodeBuild.Client.batch_get_report_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_get_report_groups)
 
 Arguments mapping described in
-[BatchGetReportGroupsInputTypeDef](./type_defs.md#batchgetreportgroupsinputtypedef).
+[BatchGetReportGroupsInputRequestTypeDef](./type_defs.md#batchgetreportgroupsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `reportGroupArns`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetReportGroupsOutputResponseTypeDef](./type_defs.md#batchgetreportgroupsoutputresponsetypedef).
+[BatchGetReportGroupsOutputTypeDef](./type_defs.md#batchgetreportgroupsoutputtypedef).
 
 ### batch_get_reports
 
@@ -205,14 +217,14 @@ Boto3 documentation:
 [CodeBuild.Client.batch_get_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_get_reports)
 
 Arguments mapping described in
-[BatchGetReportsInputTypeDef](./type_defs.md#batchgetreportsinputtypedef).
+[BatchGetReportsInputRequestTypeDef](./type_defs.md#batchgetreportsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `reportArns`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetReportsOutputResponseTypeDef](./type_defs.md#batchgetreportsoutputresponsetypedef).
+[BatchGetReportsOutputTypeDef](./type_defs.md#batchgetreportsoutputtypedef).
 
 ### can_paginate
 
@@ -239,7 +251,7 @@ Boto3 documentation:
 [CodeBuild.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.create_project)
 
 Arguments mapping described in
-[CreateProjectInputTypeDef](./type_defs.md#createprojectinputtypedef).
+[CreateProjectInputRequestTypeDef](./type_defs.md#createprojectinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -276,7 +288,7 @@ Keyword-only arguments:
 - `concurrentBuildLimit`: `int`
 
 Returns
-[CreateProjectOutputResponseTypeDef](./type_defs.md#createprojectoutputresponsetypedef).
+[CreateProjectOutputTypeDef](./type_defs.md#createprojectoutputtypedef).
 
 ### create_report_group
 
@@ -288,7 +300,7 @@ Boto3 documentation:
 [CodeBuild.Client.create_report_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.create_report_group)
 
 Arguments mapping described in
-[CreateReportGroupInputTypeDef](./type_defs.md#createreportgroupinputtypedef).
+[CreateReportGroupInputRequestTypeDef](./type_defs.md#createreportgroupinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -300,7 +312,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateReportGroupOutputResponseTypeDef](./type_defs.md#createreportgroupoutputresponsetypedef).
+[CreateReportGroupOutputTypeDef](./type_defs.md#createreportgroupoutputtypedef).
 
 ### create_webhook
 
@@ -314,7 +326,7 @@ Boto3 documentation:
 [CodeBuild.Client.create_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.create_webhook)
 
 Arguments mapping described in
-[CreateWebhookInputTypeDef](./type_defs.md#createwebhookinputtypedef).
+[CreateWebhookInputRequestTypeDef](./type_defs.md#createwebhookinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -325,7 +337,7 @@ Keyword-only arguments:
 - `buildType`: [WebhookBuildTypeType](./literals.md#webhookbuildtypetype)
 
 Returns
-[CreateWebhookOutputResponseTypeDef](./type_defs.md#createwebhookoutputresponsetypedef).
+[CreateWebhookOutputTypeDef](./type_defs.md#createwebhookoutputtypedef).
 
 ### delete_build_batch
 
@@ -337,14 +349,14 @@ Boto3 documentation:
 [CodeBuild.Client.delete_build_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_build_batch)
 
 Arguments mapping described in
-[DeleteBuildBatchInputTypeDef](./type_defs.md#deletebuildbatchinputtypedef).
+[DeleteBuildBatchInputRequestTypeDef](./type_defs.md#deletebuildbatchinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
 Returns
-[DeleteBuildBatchOutputResponseTypeDef](./type_defs.md#deletebuildbatchoutputresponsetypedef).
+[DeleteBuildBatchOutputTypeDef](./type_defs.md#deletebuildbatchoutputtypedef).
 
 ### delete_project
 
@@ -356,7 +368,7 @@ Boto3 documentation:
 [CodeBuild.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_project)
 
 Arguments mapping described in
-[DeleteProjectInputTypeDef](./type_defs.md#deleteprojectinputtypedef).
+[DeleteProjectInputRequestTypeDef](./type_defs.md#deleteprojectinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -374,7 +386,7 @@ Boto3 documentation:
 [CodeBuild.Client.delete_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_report)
 
 Arguments mapping described in
-[DeleteReportInputTypeDef](./type_defs.md#deletereportinputtypedef).
+[DeleteReportInputRequestTypeDef](./type_defs.md#deletereportinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -392,7 +404,7 @@ Boto3 documentation:
 [CodeBuild.Client.delete_report_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_report_group)
 
 Arguments mapping described in
-[DeleteReportGroupInputTypeDef](./type_defs.md#deletereportgroupinputtypedef).
+[DeleteReportGroupInputRequestTypeDef](./type_defs.md#deletereportgroupinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -411,7 +423,7 @@ Boto3 documentation:
 [CodeBuild.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_resource_policy)
 
 Arguments mapping described in
-[DeleteResourcePolicyInputTypeDef](./type_defs.md#deleteresourcepolicyinputtypedef).
+[DeleteResourcePolicyInputRequestTypeDef](./type_defs.md#deleteresourcepolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -430,14 +442,14 @@ Boto3 documentation:
 [CodeBuild.Client.delete_source_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_source_credentials)
 
 Arguments mapping described in
-[DeleteSourceCredentialsInputTypeDef](./type_defs.md#deletesourcecredentialsinputtypedef).
+[DeleteSourceCredentialsInputRequestTypeDef](./type_defs.md#deletesourcecredentialsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
 Returns
-[DeleteSourceCredentialsOutputResponseTypeDef](./type_defs.md#deletesourcecredentialsoutputresponsetypedef).
+[DeleteSourceCredentialsOutputTypeDef](./type_defs.md#deletesourcecredentialsoutputtypedef).
 
 ### delete_webhook
 
@@ -451,7 +463,7 @@ Boto3 documentation:
 [CodeBuild.Client.delete_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_webhook)
 
 Arguments mapping described in
-[DeleteWebhookInputTypeDef](./type_defs.md#deletewebhookinputtypedef).
+[DeleteWebhookInputRequestTypeDef](./type_defs.md#deletewebhookinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -470,7 +482,7 @@ Boto3 documentation:
 [CodeBuild.Client.describe_code_coverages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.describe_code_coverages)
 
 Arguments mapping described in
-[DescribeCodeCoveragesInputTypeDef](./type_defs.md#describecodecoveragesinputtypedef).
+[DescribeCodeCoveragesInputRequestTypeDef](./type_defs.md#describecodecoveragesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -484,7 +496,7 @@ Keyword-only arguments:
 - `maxLineCoveragePercentage`: `float`
 
 Returns
-[DescribeCodeCoveragesOutputResponseTypeDef](./type_defs.md#describecodecoveragesoutputresponsetypedef).
+[DescribeCodeCoveragesOutputTypeDef](./type_defs.md#describecodecoveragesoutputtypedef).
 
 ### describe_test_cases
 
@@ -496,7 +508,7 @@ Boto3 documentation:
 [CodeBuild.Client.describe_test_cases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.describe_test_cases)
 
 Arguments mapping described in
-[DescribeTestCasesInputTypeDef](./type_defs.md#describetestcasesinputtypedef).
+[DescribeTestCasesInputRequestTypeDef](./type_defs.md#describetestcasesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -506,7 +518,7 @@ Keyword-only arguments:
 - `filter`: [TestCaseFilterTypeDef](./type_defs.md#testcasefiltertypedef)
 
 Returns
-[DescribeTestCasesOutputResponseTypeDef](./type_defs.md#describetestcasesoutputresponsetypedef).
+[DescribeTestCasesOutputTypeDef](./type_defs.md#describetestcasesoutputtypedef).
 
 ### generate_presigned_url
 
@@ -536,7 +548,7 @@ Boto3 documentation:
 [CodeBuild.Client.get_report_group_trend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.get_report_group_trend)
 
 Arguments mapping described in
-[GetReportGroupTrendInputTypeDef](./type_defs.md#getreportgrouptrendinputtypedef).
+[GetReportGroupTrendInputRequestTypeDef](./type_defs.md#getreportgrouptrendinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -547,7 +559,7 @@ Keyword-only arguments:
 - `numOfReports`: `int`
 
 Returns
-[GetReportGroupTrendOutputResponseTypeDef](./type_defs.md#getreportgrouptrendoutputresponsetypedef).
+[GetReportGroupTrendOutputTypeDef](./type_defs.md#getreportgrouptrendoutputtypedef).
 
 ### get_resource_policy
 
@@ -559,14 +571,14 @@ Boto3 documentation:
 [CodeBuild.Client.get_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.get_resource_policy)
 
 Arguments mapping described in
-[GetResourcePolicyInputTypeDef](./type_defs.md#getresourcepolicyinputtypedef).
+[GetResourcePolicyInputRequestTypeDef](./type_defs.md#getresourcepolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[GetResourcePolicyOutputResponseTypeDef](./type_defs.md#getresourcepolicyoutputresponsetypedef).
+[GetResourcePolicyOutputTypeDef](./type_defs.md#getresourcepolicyoutputtypedef).
 
 ### import_source_credentials
 
@@ -580,7 +592,7 @@ Boto3 documentation:
 [CodeBuild.Client.import_source_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.import_source_credentials)
 
 Arguments mapping described in
-[ImportSourceCredentialsInputTypeDef](./type_defs.md#importsourcecredentialsinputtypedef).
+[ImportSourceCredentialsInputRequestTypeDef](./type_defs.md#importsourcecredentialsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -591,7 +603,7 @@ Keyword-only arguments:
 - `shouldOverwrite`: `bool`
 
 Returns
-[ImportSourceCredentialsOutputResponseTypeDef](./type_defs.md#importsourcecredentialsoutputresponsetypedef).
+[ImportSourceCredentialsOutputTypeDef](./type_defs.md#importsourcecredentialsoutputtypedef).
 
 ### invalidate_project_cache
 
@@ -604,7 +616,7 @@ Boto3 documentation:
 [CodeBuild.Client.invalidate_project_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.invalidate_project_cache)
 
 Arguments mapping described in
-[InvalidateProjectCacheInputTypeDef](./type_defs.md#invalidateprojectcacheinputtypedef).
+[InvalidateProjectCacheInputRequestTypeDef](./type_defs.md#invalidateprojectcacheinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -622,7 +634,7 @@ Boto3 documentation:
 [CodeBuild.Client.list_build_batches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_build_batches)
 
 Arguments mapping described in
-[ListBuildBatchesInputTypeDef](./type_defs.md#listbuildbatchesinputtypedef).
+[ListBuildBatchesInputRequestTypeDef](./type_defs.md#listbuildbatchesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -632,7 +644,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListBuildBatchesOutputResponseTypeDef](./type_defs.md#listbuildbatchesoutputresponsetypedef).
+[ListBuildBatchesOutputTypeDef](./type_defs.md#listbuildbatchesoutputtypedef).
 
 ### list_build_batches_for_project
 
@@ -645,7 +657,7 @@ Boto3 documentation:
 [CodeBuild.Client.list_build_batches_for_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_build_batches_for_project)
 
 Arguments mapping described in
-[ListBuildBatchesForProjectInputTypeDef](./type_defs.md#listbuildbatchesforprojectinputtypedef).
+[ListBuildBatchesForProjectInputRequestTypeDef](./type_defs.md#listbuildbatchesforprojectinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -656,7 +668,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListBuildBatchesForProjectOutputResponseTypeDef](./type_defs.md#listbuildbatchesforprojectoutputresponsetypedef).
+[ListBuildBatchesForProjectOutputTypeDef](./type_defs.md#listbuildbatchesforprojectoutputtypedef).
 
 ### list_builds
 
@@ -668,15 +680,14 @@ Boto3 documentation:
 [CodeBuild.Client.list_builds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_builds)
 
 Arguments mapping described in
-[ListBuildsInputTypeDef](./type_defs.md#listbuildsinputtypedef).
+[ListBuildsInputRequestTypeDef](./type_defs.md#listbuildsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 - `nextToken`: `str`
 
-Returns
-[ListBuildsOutputResponseTypeDef](./type_defs.md#listbuildsoutputresponsetypedef).
+Returns [ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef).
 
 ### list_builds_for_project
 
@@ -690,7 +701,7 @@ Boto3 documentation:
 [CodeBuild.Client.list_builds_for_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_builds_for_project)
 
 Arguments mapping described in
-[ListBuildsForProjectInputTypeDef](./type_defs.md#listbuildsforprojectinputtypedef).
+[ListBuildsForProjectInputRequestTypeDef](./type_defs.md#listbuildsforprojectinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -699,7 +710,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListBuildsForProjectOutputResponseTypeDef](./type_defs.md#listbuildsforprojectoutputresponsetypedef).
+[ListBuildsForProjectOutputTypeDef](./type_defs.md#listbuildsforprojectoutputtypedef).
 
 ### list_curated_environment_images
 
@@ -712,7 +723,7 @@ Boto3 documentation:
 [CodeBuild.Client.list_curated_environment_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_curated_environment_images)
 
 Returns
-[ListCuratedEnvironmentImagesOutputResponseTypeDef](./type_defs.md#listcuratedenvironmentimagesoutputresponsetypedef).
+[ListCuratedEnvironmentImagesOutputTypeDef](./type_defs.md#listcuratedenvironmentimagesoutputtypedef).
 
 ### list_projects
 
@@ -725,7 +736,7 @@ Boto3 documentation:
 [CodeBuild.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_projects)
 
 Arguments mapping described in
-[ListProjectsInputTypeDef](./type_defs.md#listprojectsinputtypedef).
+[ListProjectsInputRequestTypeDef](./type_defs.md#listprojectsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -733,8 +744,7 @@ Keyword-only arguments:
 - `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 - `nextToken`: `str`
 
-Returns
-[ListProjectsOutputResponseTypeDef](./type_defs.md#listprojectsoutputresponsetypedef).
+Returns [ListProjectsOutputTypeDef](./type_defs.md#listprojectsoutputtypedef).
 
 ### list_report_groups
 
@@ -747,7 +757,7 @@ Boto3 documentation:
 [CodeBuild.Client.list_report_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_report_groups)
 
 Arguments mapping described in
-[ListReportGroupsInputTypeDef](./type_defs.md#listreportgroupsinputtypedef).
+[ListReportGroupsInputRequestTypeDef](./type_defs.md#listreportgroupsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -758,7 +768,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListReportGroupsOutputResponseTypeDef](./type_defs.md#listreportgroupsoutputresponsetypedef).
+[ListReportGroupsOutputTypeDef](./type_defs.md#listreportgroupsoutputtypedef).
 
 ### list_reports
 
@@ -771,7 +781,7 @@ Boto3 documentation:
 [CodeBuild.Client.list_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_reports)
 
 Arguments mapping described in
-[ListReportsInputTypeDef](./type_defs.md#listreportsinputtypedef).
+[ListReportsInputRequestTypeDef](./type_defs.md#listreportsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -780,8 +790,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 - `filter`: [ReportFilterTypeDef](./type_defs.md#reportfiltertypedef)
 
-Returns
-[ListReportsOutputResponseTypeDef](./type_defs.md#listreportsoutputresponsetypedef).
+Returns [ListReportsOutputTypeDef](./type_defs.md#listreportsoutputtypedef).
 
 ### list_reports_for_report_group
 
@@ -794,7 +803,7 @@ Boto3 documentation:
 [CodeBuild.Client.list_reports_for_report_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_reports_for_report_group)
 
 Arguments mapping described in
-[ListReportsForReportGroupInputTypeDef](./type_defs.md#listreportsforreportgroupinputtypedef).
+[ListReportsForReportGroupInputRequestTypeDef](./type_defs.md#listreportsforreportgroupinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -805,7 +814,7 @@ Keyword-only arguments:
 - `filter`: [ReportFilterTypeDef](./type_defs.md#reportfiltertypedef)
 
 Returns
-[ListReportsForReportGroupOutputResponseTypeDef](./type_defs.md#listreportsforreportgroupoutputresponsetypedef).
+[ListReportsForReportGroupOutputTypeDef](./type_defs.md#listreportsforreportgroupoutputtypedef).
 
 ### list_shared_projects
 
@@ -818,7 +827,7 @@ Boto3 documentation:
 [CodeBuild.Client.list_shared_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_shared_projects)
 
 Arguments mapping described in
-[ListSharedProjectsInputTypeDef](./type_defs.md#listsharedprojectsinputtypedef).
+[ListSharedProjectsInputRequestTypeDef](./type_defs.md#listsharedprojectsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -829,7 +838,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListSharedProjectsOutputResponseTypeDef](./type_defs.md#listsharedprojectsoutputresponsetypedef).
+[ListSharedProjectsOutputTypeDef](./type_defs.md#listsharedprojectsoutputtypedef).
 
 ### list_shared_report_groups
 
@@ -843,7 +852,7 @@ Boto3 documentation:
 [CodeBuild.Client.list_shared_report_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_shared_report_groups)
 
 Arguments mapping described in
-[ListSharedReportGroupsInputTypeDef](./type_defs.md#listsharedreportgroupsinputtypedef).
+[ListSharedReportGroupsInputRequestTypeDef](./type_defs.md#listsharedreportgroupsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -854,7 +863,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListSharedReportGroupsOutputResponseTypeDef](./type_defs.md#listsharedreportgroupsoutputresponsetypedef).
+[ListSharedReportGroupsOutputTypeDef](./type_defs.md#listsharedreportgroupsoutputtypedef).
 
 ### list_source_credentials
 
@@ -867,7 +876,7 @@ Boto3 documentation:
 [CodeBuild.Client.list_source_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_source_credentials)
 
 Returns
-[ListSourceCredentialsOutputResponseTypeDef](./type_defs.md#listsourcecredentialsoutputresponsetypedef).
+[ListSourceCredentialsOutputTypeDef](./type_defs.md#listsourcecredentialsoutputtypedef).
 
 ### put_resource_policy
 
@@ -879,7 +888,7 @@ Boto3 documentation:
 [CodeBuild.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.put_resource_policy)
 
 Arguments mapping described in
-[PutResourcePolicyInputTypeDef](./type_defs.md#putresourcepolicyinputtypedef).
+[PutResourcePolicyInputRequestTypeDef](./type_defs.md#putresourcepolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -887,7 +896,7 @@ Keyword-only arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[PutResourcePolicyOutputResponseTypeDef](./type_defs.md#putresourcepolicyoutputresponsetypedef).
+[PutResourcePolicyOutputTypeDef](./type_defs.md#putresourcepolicyoutputtypedef).
 
 ### retry_build
 
@@ -899,15 +908,14 @@ Boto3 documentation:
 [CodeBuild.Client.retry_build](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.retry_build)
 
 Arguments mapping described in
-[RetryBuildInputTypeDef](./type_defs.md#retrybuildinputtypedef).
+[RetryBuildInputRequestTypeDef](./type_defs.md#retrybuildinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `id`: `str`
 - `idempotencyToken`: `str`
 
-Returns
-[RetryBuildOutputResponseTypeDef](./type_defs.md#retrybuildoutputresponsetypedef).
+Returns [RetryBuildOutputTypeDef](./type_defs.md#retrybuildoutputtypedef).
 
 ### retry_build_batch
 
@@ -919,7 +927,7 @@ Boto3 documentation:
 [CodeBuild.Client.retry_build_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.retry_build_batch)
 
 Arguments mapping described in
-[RetryBuildBatchInputTypeDef](./type_defs.md#retrybuildbatchinputtypedef).
+[RetryBuildBatchInputRequestTypeDef](./type_defs.md#retrybuildbatchinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -928,7 +936,7 @@ Keyword-only arguments:
 - `retryType`: [RetryBuildBatchTypeType](./literals.md#retrybuildbatchtypetype)
 
 Returns
-[RetryBuildBatchOutputResponseTypeDef](./type_defs.md#retrybuildbatchoutputresponsetypedef).
+[RetryBuildBatchOutputTypeDef](./type_defs.md#retrybuildbatchoutputtypedef).
 
 ### start_build
 
@@ -940,7 +948,7 @@ Boto3 documentation:
 [CodeBuild.Client.start_build](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.start_build)
 
 Arguments mapping described in
-[StartBuildInputTypeDef](./type_defs.md#startbuildinputtypedef).
+[StartBuildInputRequestTypeDef](./type_defs.md#startbuildinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -986,8 +994,7 @@ Keyword-only arguments:
   [ImagePullCredentialsTypeType](./literals.md#imagepullcredentialstypetype)
 - `debugSessionEnabled`: `bool`
 
-Returns
-[StartBuildOutputResponseTypeDef](./type_defs.md#startbuildoutputresponsetypedef).
+Returns [StartBuildOutputTypeDef](./type_defs.md#startbuildoutputtypedef).
 
 ### start_build_batch
 
@@ -999,7 +1006,7 @@ Boto3 documentation:
 [CodeBuild.Client.start_build_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.start_build_batch)
 
 Arguments mapping described in
-[StartBuildBatchInputTypeDef](./type_defs.md#startbuildbatchinputtypedef).
+[StartBuildBatchInputRequestTypeDef](./type_defs.md#startbuildbatchinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1046,7 +1053,7 @@ Keyword-only arguments:
 - `debugSessionEnabled`: `bool`
 
 Returns
-[StartBuildBatchOutputResponseTypeDef](./type_defs.md#startbuildbatchoutputresponsetypedef).
+[StartBuildBatchOutputTypeDef](./type_defs.md#startbuildbatchoutputtypedef).
 
 ### stop_build
 
@@ -1058,14 +1065,13 @@ Boto3 documentation:
 [CodeBuild.Client.stop_build](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.stop_build)
 
 Arguments mapping described in
-[StopBuildInputTypeDef](./type_defs.md#stopbuildinputtypedef).
+[StopBuildInputRequestTypeDef](./type_defs.md#stopbuildinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
-Returns
-[StopBuildOutputResponseTypeDef](./type_defs.md#stopbuildoutputresponsetypedef).
+Returns [StopBuildOutputTypeDef](./type_defs.md#stopbuildoutputtypedef).
 
 ### stop_build_batch
 
@@ -1077,14 +1083,14 @@ Boto3 documentation:
 [CodeBuild.Client.stop_build_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.stop_build_batch)
 
 Arguments mapping described in
-[StopBuildBatchInputTypeDef](./type_defs.md#stopbuildbatchinputtypedef).
+[StopBuildBatchInputRequestTypeDef](./type_defs.md#stopbuildbatchinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
 Returns
-[StopBuildBatchOutputResponseTypeDef](./type_defs.md#stopbuildbatchoutputresponsetypedef).
+[StopBuildBatchOutputTypeDef](./type_defs.md#stopbuildbatchoutputtypedef).
 
 ### update_project
 
@@ -1096,7 +1102,7 @@ Boto3 documentation:
 [CodeBuild.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.update_project)
 
 Arguments mapping described in
-[UpdateProjectInputTypeDef](./type_defs.md#updateprojectinputtypedef).
+[UpdateProjectInputRequestTypeDef](./type_defs.md#updateprojectinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1130,7 +1136,7 @@ Keyword-only arguments:
 - `concurrentBuildLimit`: `int`
 
 Returns
-[UpdateProjectOutputResponseTypeDef](./type_defs.md#updateprojectoutputresponsetypedef).
+[UpdateProjectOutputTypeDef](./type_defs.md#updateprojectoutputtypedef).
 
 ### update_report_group
 
@@ -1142,7 +1148,7 @@ Boto3 documentation:
 [CodeBuild.Client.update_report_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.update_report_group)
 
 Arguments mapping described in
-[UpdateReportGroupInputTypeDef](./type_defs.md#updatereportgroupinputtypedef).
+[UpdateReportGroupInputRequestTypeDef](./type_defs.md#updatereportgroupinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1152,7 +1158,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[UpdateReportGroupOutputResponseTypeDef](./type_defs.md#updatereportgroupoutputresponsetypedef).
+[UpdateReportGroupOutputTypeDef](./type_defs.md#updatereportgroupoutputtypedef).
 
 ### update_webhook
 
@@ -1164,7 +1170,7 @@ Boto3 documentation:
 [CodeBuild.Client.update_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.update_webhook)
 
 Arguments mapping described in
-[UpdateWebhookInputTypeDef](./type_defs.md#updatewebhookinputtypedef).
+[UpdateWebhookInputRequestTypeDef](./type_defs.md#updatewebhookinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1176,7 +1182,7 @@ Keyword-only arguments:
 - `buildType`: [WebhookBuildTypeType](./literals.md#webhookbuildtypetype)
 
 Returns
-[UpdateWebhookOutputResponseTypeDef](./type_defs.md#updatewebhookoutputresponsetypedef).
+[UpdateWebhookOutputTypeDef](./type_defs.md#updatewebhookoutputtypedef).
 
 ### get_paginator
 

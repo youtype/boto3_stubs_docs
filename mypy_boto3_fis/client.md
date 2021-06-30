@@ -11,6 +11,7 @@ type annotations stubs module
   - [FISClient](#fisclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_experiment_template](#create_experiment_template)
     - [delete_experiment_template](#delete_experiment_template)
@@ -66,6 +67,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+FISClient exceptions.
+
+Type annotations for `boto3.client("fis").exceptions` method.
+
+Boto3 documentation:
+[FIS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -91,7 +103,7 @@ Boto3 documentation:
 [FIS.Client.create_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.create_experiment_template)
 
 Arguments mapping described in
-[CreateExperimentTemplateRequestTypeDef](./type_defs.md#createexperimenttemplaterequesttypedef).
+[CreateExperimentTemplateRequestRequestTypeDef](./type_defs.md#createexperimenttemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -109,7 +121,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateExperimentTemplateResponseResponseTypeDef](./type_defs.md#createexperimenttemplateresponseresponsetypedef).
+[CreateExperimentTemplateResponseTypeDef](./type_defs.md#createexperimenttemplateresponsetypedef).
 
 ### delete_experiment_template
 
@@ -121,14 +133,14 @@ Boto3 documentation:
 [FIS.Client.delete_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.delete_experiment_template)
 
 Arguments mapping described in
-[DeleteExperimentTemplateRequestTypeDef](./type_defs.md#deleteexperimenttemplaterequesttypedef).
+[DeleteExperimentTemplateRequestRequestTypeDef](./type_defs.md#deleteexperimenttemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
 Returns
-[DeleteExperimentTemplateResponseResponseTypeDef](./type_defs.md#deleteexperimenttemplateresponseresponsetypedef).
+[DeleteExperimentTemplateResponseTypeDef](./type_defs.md#deleteexperimenttemplateresponsetypedef).
 
 ### generate_presigned_url
 
@@ -158,14 +170,13 @@ Boto3 documentation:
 [FIS.Client.get_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_action)
 
 Arguments mapping described in
-[GetActionRequestTypeDef](./type_defs.md#getactionrequesttypedef).
+[GetActionRequestRequestTypeDef](./type_defs.md#getactionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
-Returns
-[GetActionResponseResponseTypeDef](./type_defs.md#getactionresponseresponsetypedef).
+Returns [GetActionResponseTypeDef](./type_defs.md#getactionresponsetypedef).
 
 ### get_experiment
 
@@ -177,14 +188,14 @@ Boto3 documentation:
 [FIS.Client.get_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_experiment)
 
 Arguments mapping described in
-[GetExperimentRequestTypeDef](./type_defs.md#getexperimentrequesttypedef).
+[GetExperimentRequestRequestTypeDef](./type_defs.md#getexperimentrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
 Returns
-[GetExperimentResponseResponseTypeDef](./type_defs.md#getexperimentresponseresponsetypedef).
+[GetExperimentResponseTypeDef](./type_defs.md#getexperimentresponsetypedef).
 
 ### get_experiment_template
 
@@ -196,14 +207,14 @@ Boto3 documentation:
 [FIS.Client.get_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_experiment_template)
 
 Arguments mapping described in
-[GetExperimentTemplateRequestTypeDef](./type_defs.md#getexperimenttemplaterequesttypedef).
+[GetExperimentTemplateRequestRequestTypeDef](./type_defs.md#getexperimenttemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
 Returns
-[GetExperimentTemplateResponseResponseTypeDef](./type_defs.md#getexperimenttemplateresponseresponsetypedef).
+[GetExperimentTemplateResponseTypeDef](./type_defs.md#getexperimenttemplateresponsetypedef).
 
 ### list_actions
 
@@ -215,7 +226,7 @@ Boto3 documentation:
 [FIS.Client.list_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_actions)
 
 Arguments mapping described in
-[ListActionsRequestTypeDef](./type_defs.md#listactionsrequesttypedef).
+[ListActionsRequestRequestTypeDef](./type_defs.md#listactionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -223,7 +234,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListActionsResponseResponseTypeDef](./type_defs.md#listactionsresponseresponsetypedef).
+[ListActionsResponseTypeDef](./type_defs.md#listactionsresponsetypedef).
 
 ### list_experiment_templates
 
@@ -235,7 +246,7 @@ Boto3 documentation:
 [FIS.Client.list_experiment_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_experiment_templates)
 
 Arguments mapping described in
-[ListExperimentTemplatesRequestTypeDef](./type_defs.md#listexperimenttemplatesrequesttypedef).
+[ListExperimentTemplatesRequestRequestTypeDef](./type_defs.md#listexperimenttemplatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -243,7 +254,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListExperimentTemplatesResponseResponseTypeDef](./type_defs.md#listexperimenttemplatesresponseresponsetypedef).
+[ListExperimentTemplatesResponseTypeDef](./type_defs.md#listexperimenttemplatesresponsetypedef).
 
 ### list_experiments
 
@@ -255,7 +266,7 @@ Boto3 documentation:
 [FIS.Client.list_experiments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_experiments)
 
 Arguments mapping described in
-[ListExperimentsRequestTypeDef](./type_defs.md#listexperimentsrequesttypedef).
+[ListExperimentsRequestRequestTypeDef](./type_defs.md#listexperimentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -263,7 +274,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListExperimentsResponseResponseTypeDef](./type_defs.md#listexperimentsresponseresponsetypedef).
+[ListExperimentsResponseTypeDef](./type_defs.md#listexperimentsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -275,14 +286,14 @@ Boto3 documentation:
 [FIS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### start_experiment
 
@@ -294,7 +305,7 @@ Boto3 documentation:
 [FIS.Client.start_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.start_experiment)
 
 Arguments mapping described in
-[StartExperimentRequestTypeDef](./type_defs.md#startexperimentrequesttypedef).
+[StartExperimentRequestRequestTypeDef](./type_defs.md#startexperimentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -303,7 +314,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[StartExperimentResponseResponseTypeDef](./type_defs.md#startexperimentresponseresponsetypedef).
+[StartExperimentResponseTypeDef](./type_defs.md#startexperimentresponsetypedef).
 
 ### stop_experiment
 
@@ -315,14 +326,14 @@ Boto3 documentation:
 [FIS.Client.stop_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.stop_experiment)
 
 Arguments mapping described in
-[StopExperimentRequestTypeDef](./type_defs.md#stopexperimentrequesttypedef).
+[StopExperimentRequestRequestTypeDef](./type_defs.md#stopexperimentrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
 Returns
-[StopExperimentResponseResponseTypeDef](./type_defs.md#stopexperimentresponseresponsetypedef).
+[StopExperimentResponseTypeDef](./type_defs.md#stopexperimentresponsetypedef).
 
 ### tag_resource
 
@@ -334,7 +345,7 @@ Boto3 documentation:
 [FIS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -353,7 +364,7 @@ Boto3 documentation:
 [FIS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -372,7 +383,7 @@ Boto3 documentation:
 [FIS.Client.update_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.update_experiment_template)
 
 Arguments mapping described in
-[UpdateExperimentTemplateRequestTypeDef](./type_defs.md#updateexperimenttemplaterequesttypedef).
+[UpdateExperimentTemplateRequestRequestTypeDef](./type_defs.md#updateexperimenttemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -387,4 +398,4 @@ Keyword-only arguments:
 - `roleArn`: `str`
 
 Returns
-[UpdateExperimentTemplateResponseResponseTypeDef](./type_defs.md#updateexperimenttemplateresponseresponsetypedef).
+[UpdateExperimentTemplateResponseTypeDef](./type_defs.md#updateexperimenttemplateresponsetypedef).

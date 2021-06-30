@@ -9,26 +9,26 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 SimpleDB module](#typed-dictionaries-for-boto3-simpledb-module)
   - [AttributeTypeDef](#attributetypedef)
-  - [BatchDeleteAttributesRequestTypeDef](#batchdeleteattributesrequesttypedef)
-  - [BatchPutAttributesRequestTypeDef](#batchputattributesrequesttypedef)
-  - [CreateDomainRequestTypeDef](#createdomainrequesttypedef)
+  - [BatchDeleteAttributesRequestRequestTypeDef](#batchdeleteattributesrequestrequesttypedef)
+  - [BatchPutAttributesRequestRequestTypeDef](#batchputattributesrequestrequesttypedef)
+  - [CreateDomainRequestRequestTypeDef](#createdomainrequestrequesttypedef)
   - [DeletableItemTypeDef](#deletableitemtypedef)
-  - [DeleteAttributesRequestTypeDef](#deleteattributesrequesttypedef)
-  - [DeleteDomainRequestTypeDef](#deletedomainrequesttypedef)
-  - [DomainMetadataRequestTypeDef](#domainmetadatarequesttypedef)
-  - [DomainMetadataResultResponseTypeDef](#domainmetadataresultresponsetypedef)
-  - [GetAttributesRequestTypeDef](#getattributesrequesttypedef)
-  - [GetAttributesResultResponseTypeDef](#getattributesresultresponsetypedef)
+  - [DeleteAttributesRequestRequestTypeDef](#deleteattributesrequestrequesttypedef)
+  - [DeleteDomainRequestRequestTypeDef](#deletedomainrequestrequesttypedef)
+  - [DomainMetadataRequestRequestTypeDef](#domainmetadatarequestrequesttypedef)
+  - [DomainMetadataResultTypeDef](#domainmetadataresulttypedef)
+  - [GetAttributesRequestRequestTypeDef](#getattributesrequestrequesttypedef)
+  - [GetAttributesResultTypeDef](#getattributesresulttypedef)
   - [ItemTypeDef](#itemtypedef)
-  - [ListDomainsRequestTypeDef](#listdomainsrequesttypedef)
-  - [ListDomainsResultResponseTypeDef](#listdomainsresultresponsetypedef)
+  - [ListDomainsRequestRequestTypeDef](#listdomainsrequestrequesttypedef)
+  - [ListDomainsResultTypeDef](#listdomainsresulttypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutAttributesRequestTypeDef](#putattributesrequesttypedef)
+  - [PutAttributesRequestRequestTypeDef](#putattributesrequestrequesttypedef)
   - [ReplaceableAttributeTypeDef](#replaceableattributetypedef)
   - [ReplaceableItemTypeDef](#replaceableitemtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SelectRequestTypeDef](#selectrequesttypedef)
-  - [SelectResultResponseTypeDef](#selectresultresponsetypedef)
+  - [SelectRequestRequestTypeDef](#selectrequestrequesttypedef)
+  - [SelectResultTypeDef](#selectresulttypedef)
   - [UpdateConditionTypeDef](#updateconditiontypedef)
 
 ## AttributeTypeDef
@@ -47,10 +47,10 @@ Optional fields:
 - `AlternateNameEncoding`: `str`
 - `AlternateValueEncoding`: `str`
 
-## BatchDeleteAttributesRequestTypeDef
+## BatchDeleteAttributesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sdb.type_defs import BatchDeleteAttributesRequestTypeDef
+from mypy_boto3_sdb.type_defs import BatchDeleteAttributesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -59,10 +59,10 @@ Required fields:
 - `Items`:
   `List`\[[DeletableItemTypeDef](./type_defs.md#deletableitemtypedef)\]
 
-## BatchPutAttributesRequestTypeDef
+## BatchPutAttributesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sdb.type_defs import BatchPutAttributesRequestTypeDef
+from mypy_boto3_sdb.type_defs import BatchPutAttributesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -71,10 +71,10 @@ Required fields:
 - `Items`:
   `List`\[[ReplaceableItemTypeDef](./type_defs.md#replaceableitemtypedef)\]
 
-## CreateDomainRequestTypeDef
+## CreateDomainRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sdb.type_defs import CreateDomainRequestTypeDef
+from mypy_boto3_sdb.type_defs import CreateDomainRequestRequestTypeDef
 ```
 
 Required fields:
@@ -95,10 +95,10 @@ Optional fields:
 
 - `Attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
-## DeleteAttributesRequestTypeDef
+## DeleteAttributesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sdb.type_defs import DeleteAttributesRequestTypeDef
+from mypy_boto3_sdb.type_defs import DeleteAttributesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -111,30 +111,30 @@ Optional fields:
 - `Attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 - `Expected`: [UpdateConditionTypeDef](./type_defs.md#updateconditiontypedef)
 
-## DeleteDomainRequestTypeDef
+## DeleteDomainRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sdb.type_defs import DeleteDomainRequestTypeDef
+from mypy_boto3_sdb.type_defs import DeleteDomainRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DomainName`: `str`
 
-## DomainMetadataRequestTypeDef
+## DomainMetadataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sdb.type_defs import DomainMetadataRequestTypeDef
+from mypy_boto3_sdb.type_defs import DomainMetadataRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DomainName`: `str`
 
-## DomainMetadataResultResponseTypeDef
+## DomainMetadataResultTypeDef
 
 ```python
-from mypy_boto3_sdb.type_defs import DomainMetadataResultResponseTypeDef
+from mypy_boto3_sdb.type_defs import DomainMetadataResultTypeDef
 ```
 
 Required fields:
@@ -149,10 +149,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAttributesRequestTypeDef
+## GetAttributesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sdb.type_defs import GetAttributesRequestTypeDef
+from mypy_boto3_sdb.type_defs import GetAttributesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -165,10 +165,10 @@ Optional fields:
 - `AttributeNames`: `List`\[`str`\]
 - `ConsistentRead`: `bool`
 
-## GetAttributesResultResponseTypeDef
+## GetAttributesResultTypeDef
 
 ```python
-from mypy_boto3_sdb.type_defs import GetAttributesResultResponseTypeDef
+from mypy_boto3_sdb.type_defs import GetAttributesResultTypeDef
 ```
 
 Required fields:
@@ -192,10 +192,10 @@ Optional fields:
 
 - `AlternateNameEncoding`: `str`
 
-## ListDomainsRequestTypeDef
+## ListDomainsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sdb.type_defs import ListDomainsRequestTypeDef
+from mypy_boto3_sdb.type_defs import ListDomainsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -203,10 +203,10 @@ Optional fields:
 - `MaxNumberOfDomains`: `int`
 - `NextToken`: `str`
 
-## ListDomainsResultResponseTypeDef
+## ListDomainsResultTypeDef
 
 ```python
-from mypy_boto3_sdb.type_defs import ListDomainsResultResponseTypeDef
+from mypy_boto3_sdb.type_defs import ListDomainsResultTypeDef
 ```
 
 Required fields:
@@ -228,10 +228,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PutAttributesRequestTypeDef
+## PutAttributesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sdb.type_defs import PutAttributesRequestTypeDef
+from mypy_boto3_sdb.type_defs import PutAttributesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -286,10 +286,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## SelectRequestTypeDef
+## SelectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sdb.type_defs import SelectRequestTypeDef
+from mypy_boto3_sdb.type_defs import SelectRequestRequestTypeDef
 ```
 
 Required fields:
@@ -301,10 +301,10 @@ Optional fields:
 - `NextToken`: `str`
 - `ConsistentRead`: `bool`
 
-## SelectResultResponseTypeDef
+## SelectResultTypeDef
 
 ```python
-from mypy_boto3_sdb.type_defs import SelectResultResponseTypeDef
+from mypy_boto3_sdb.type_defs import SelectResultTypeDef
 ```
 
 Required fields:

@@ -11,6 +11,7 @@ type annotations stubs module
   - [STSClient](#stsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [assume_role](#assume_role)
     - [assume_role_with_saml](#assume_role_with_saml)
     - [assume_role_with_web_identity](#assume_role_with_web_identity)
@@ -64,6 +65,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+STSClient exceptions.
+
+Type annotations for `boto3.client("sts").exceptions` method.
+
+Boto3 documentation:
+[STS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### assume_role
 
 Returns a set of temporary security credentials that you can use to access AWS
@@ -75,7 +87,7 @@ Boto3 documentation:
 [STS.Client.assume_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role)
 
 Arguments mapping described in
-[AssumeRoleRequestTypeDef](./type_defs.md#assumerolerequesttypedef).
+[AssumeRoleRequestRequestTypeDef](./type_defs.md#assumerolerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -92,8 +104,7 @@ Keyword-only arguments:
 - `TokenCode`: `str`
 - `SourceIdentity`: `str`
 
-Returns
-[AssumeRoleResponseResponseTypeDef](./type_defs.md#assumeroleresponseresponsetypedef).
+Returns [AssumeRoleResponseTypeDef](./type_defs.md#assumeroleresponsetypedef).
 
 ### assume_role_with_saml
 
@@ -106,7 +117,7 @@ Boto3 documentation:
 [STS.Client.assume_role_with_saml](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role_with_saml)
 
 Arguments mapping described in
-[AssumeRoleWithSAMLRequestTypeDef](./type_defs.md#assumerolewithsamlrequesttypedef).
+[AssumeRoleWithSAMLRequestRequestTypeDef](./type_defs.md#assumerolewithsamlrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -119,7 +130,7 @@ Keyword-only arguments:
 - `DurationSeconds`: `int`
 
 Returns
-[AssumeRoleWithSAMLResponseResponseTypeDef](./type_defs.md#assumerolewithsamlresponseresponsetypedef).
+[AssumeRoleWithSAMLResponseTypeDef](./type_defs.md#assumerolewithsamlresponsetypedef).
 
 ### assume_role_with_web_identity
 
@@ -133,7 +144,7 @@ Boto3 documentation:
 [STS.Client.assume_role_with_web_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role_with_web_identity)
 
 Arguments mapping described in
-[AssumeRoleWithWebIdentityRequestTypeDef](./type_defs.md#assumerolewithwebidentityrequesttypedef).
+[AssumeRoleWithWebIdentityRequestRequestTypeDef](./type_defs.md#assumerolewithwebidentityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -147,7 +158,7 @@ Keyword-only arguments:
 - `DurationSeconds`: `int`
 
 Returns
-[AssumeRoleWithWebIdentityResponseResponseTypeDef](./type_defs.md#assumerolewithwebidentityresponseresponsetypedef).
+[AssumeRoleWithWebIdentityResponseTypeDef](./type_defs.md#assumerolewithwebidentityresponsetypedef).
 
 ### can_paginate
 
@@ -175,14 +186,14 @@ Boto3 documentation:
 [STS.Client.decode_authorization_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.decode_authorization_message)
 
 Arguments mapping described in
-[DecodeAuthorizationMessageRequestTypeDef](./type_defs.md#decodeauthorizationmessagerequesttypedef).
+[DecodeAuthorizationMessageRequestRequestTypeDef](./type_defs.md#decodeauthorizationmessagerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `EncodedMessage`: `str` *(required)*
 
 Returns
-[DecodeAuthorizationMessageResponseResponseTypeDef](./type_defs.md#decodeauthorizationmessageresponseresponsetypedef).
+[DecodeAuthorizationMessageResponseTypeDef](./type_defs.md#decodeauthorizationmessageresponsetypedef).
 
 ### generate_presigned_url
 
@@ -212,14 +223,14 @@ Boto3 documentation:
 [STS.Client.get_access_key_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_access_key_info)
 
 Arguments mapping described in
-[GetAccessKeyInfoRequestTypeDef](./type_defs.md#getaccesskeyinforequesttypedef).
+[GetAccessKeyInfoRequestRequestTypeDef](./type_defs.md#getaccesskeyinforequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AccessKeyId`: `str` *(required)*
 
 Returns
-[GetAccessKeyInfoResponseResponseTypeDef](./type_defs.md#getaccesskeyinforesponseresponsetypedef).
+[GetAccessKeyInfoResponseTypeDef](./type_defs.md#getaccesskeyinforesponsetypedef).
 
 ### get_caller_identity
 
@@ -232,7 +243,7 @@ Boto3 documentation:
 [STS.Client.get_caller_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_caller_identity)
 
 Returns
-[GetCallerIdentityResponseResponseTypeDef](./type_defs.md#getcalleridentityresponseresponsetypedef).
+[GetCallerIdentityResponseTypeDef](./type_defs.md#getcalleridentityresponsetypedef).
 
 ### get_federation_token
 
@@ -245,7 +256,7 @@ Boto3 documentation:
 [STS.Client.get_federation_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_federation_token)
 
 Arguments mapping described in
-[GetFederationTokenRequestTypeDef](./type_defs.md#getfederationtokenrequesttypedef).
+[GetFederationTokenRequestRequestTypeDef](./type_defs.md#getfederationtokenrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -257,7 +268,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[GetFederationTokenResponseResponseTypeDef](./type_defs.md#getfederationtokenresponseresponsetypedef).
+[GetFederationTokenResponseTypeDef](./type_defs.md#getfederationtokenresponsetypedef).
 
 ### get_session_token
 
@@ -269,7 +280,7 @@ Boto3 documentation:
 [STS.Client.get_session_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_session_token)
 
 Arguments mapping described in
-[GetSessionTokenRequestTypeDef](./type_defs.md#getsessiontokenrequesttypedef).
+[GetSessionTokenRequestRequestTypeDef](./type_defs.md#getsessiontokenrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -278,4 +289,4 @@ Keyword-only arguments:
 - `TokenCode`: `str`
 
 Returns
-[GetSessionTokenResponseResponseTypeDef](./type_defs.md#getsessiontokenresponseresponsetypedef).
+[GetSessionTokenResponseTypeDef](./type_defs.md#getsessiontokenresponsetypedef).

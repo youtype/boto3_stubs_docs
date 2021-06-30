@@ -8,129 +8,129 @@ type annotations stubs module
 [mypy_boto3_location](https://pypi.org/project/mypy-boto3-location/).
 
 - [Typed dictionaries for boto3 LocationService module](#typed-dictionaries-for-boto3-locationservice-module)
-  - [AssociateTrackerConsumerRequestTypeDef](#associatetrackerconsumerrequesttypedef)
+  - [AssociateTrackerConsumerRequestRequestTypeDef](#associatetrackerconsumerrequestrequesttypedef)
   - [BatchDeleteDevicePositionHistoryErrorTypeDef](#batchdeletedevicepositionhistoryerrortypedef)
-  - [BatchDeleteDevicePositionHistoryRequestTypeDef](#batchdeletedevicepositionhistoryrequesttypedef)
-  - [BatchDeleteDevicePositionHistoryResponseResponseTypeDef](#batchdeletedevicepositionhistoryresponseresponsetypedef)
+  - [BatchDeleteDevicePositionHistoryRequestRequestTypeDef](#batchdeletedevicepositionhistoryrequestrequesttypedef)
+  - [BatchDeleteDevicePositionHistoryResponseTypeDef](#batchdeletedevicepositionhistoryresponsetypedef)
   - [BatchDeleteGeofenceErrorTypeDef](#batchdeletegeofenceerrortypedef)
-  - [BatchDeleteGeofenceRequestTypeDef](#batchdeletegeofencerequesttypedef)
-  - [BatchDeleteGeofenceResponseResponseTypeDef](#batchdeletegeofenceresponseresponsetypedef)
+  - [BatchDeleteGeofenceRequestRequestTypeDef](#batchdeletegeofencerequestrequesttypedef)
+  - [BatchDeleteGeofenceResponseTypeDef](#batchdeletegeofenceresponsetypedef)
   - [BatchEvaluateGeofencesErrorTypeDef](#batchevaluategeofenceserrortypedef)
-  - [BatchEvaluateGeofencesRequestTypeDef](#batchevaluategeofencesrequesttypedef)
-  - [BatchEvaluateGeofencesResponseResponseTypeDef](#batchevaluategeofencesresponseresponsetypedef)
+  - [BatchEvaluateGeofencesRequestRequestTypeDef](#batchevaluategeofencesrequestrequesttypedef)
+  - [BatchEvaluateGeofencesResponseTypeDef](#batchevaluategeofencesresponsetypedef)
   - [BatchGetDevicePositionErrorTypeDef](#batchgetdevicepositionerrortypedef)
-  - [BatchGetDevicePositionRequestTypeDef](#batchgetdevicepositionrequesttypedef)
-  - [BatchGetDevicePositionResponseResponseTypeDef](#batchgetdevicepositionresponseresponsetypedef)
+  - [BatchGetDevicePositionRequestRequestTypeDef](#batchgetdevicepositionrequestrequesttypedef)
+  - [BatchGetDevicePositionResponseTypeDef](#batchgetdevicepositionresponsetypedef)
   - [BatchItemErrorTypeDef](#batchitemerrortypedef)
   - [BatchPutGeofenceErrorTypeDef](#batchputgeofenceerrortypedef)
   - [BatchPutGeofenceRequestEntryTypeDef](#batchputgeofencerequestentrytypedef)
-  - [BatchPutGeofenceRequestTypeDef](#batchputgeofencerequesttypedef)
-  - [BatchPutGeofenceResponseResponseTypeDef](#batchputgeofenceresponseresponsetypedef)
+  - [BatchPutGeofenceRequestRequestTypeDef](#batchputgeofencerequestrequesttypedef)
+  - [BatchPutGeofenceResponseTypeDef](#batchputgeofenceresponsetypedef)
   - [BatchPutGeofenceSuccessTypeDef](#batchputgeofencesuccesstypedef)
   - [BatchUpdateDevicePositionErrorTypeDef](#batchupdatedevicepositionerrortypedef)
-  - [BatchUpdateDevicePositionRequestTypeDef](#batchupdatedevicepositionrequesttypedef)
-  - [BatchUpdateDevicePositionResponseResponseTypeDef](#batchupdatedevicepositionresponseresponsetypedef)
+  - [BatchUpdateDevicePositionRequestRequestTypeDef](#batchupdatedevicepositionrequestrequesttypedef)
+  - [BatchUpdateDevicePositionResponseTypeDef](#batchupdatedevicepositionresponsetypedef)
   - [CalculateRouteCarModeOptionsTypeDef](#calculateroutecarmodeoptionstypedef)
-  - [CalculateRouteRequestTypeDef](#calculaterouterequesttypedef)
-  - [CalculateRouteResponseResponseTypeDef](#calculaterouteresponseresponsetypedef)
+  - [CalculateRouteRequestRequestTypeDef](#calculaterouterequestrequesttypedef)
+  - [CalculateRouteResponseTypeDef](#calculaterouteresponsetypedef)
   - [CalculateRouteSummaryTypeDef](#calculateroutesummarytypedef)
   - [CalculateRouteTruckModeOptionsTypeDef](#calculateroutetruckmodeoptionstypedef)
-  - [CreateGeofenceCollectionRequestTypeDef](#creategeofencecollectionrequesttypedef)
-  - [CreateGeofenceCollectionResponseResponseTypeDef](#creategeofencecollectionresponseresponsetypedef)
-  - [CreateMapRequestTypeDef](#createmaprequesttypedef)
-  - [CreateMapResponseResponseTypeDef](#createmapresponseresponsetypedef)
-  - [CreatePlaceIndexRequestTypeDef](#createplaceindexrequesttypedef)
-  - [CreatePlaceIndexResponseResponseTypeDef](#createplaceindexresponseresponsetypedef)
-  - [CreateRouteCalculatorRequestTypeDef](#createroutecalculatorrequesttypedef)
-  - [CreateRouteCalculatorResponseResponseTypeDef](#createroutecalculatorresponseresponsetypedef)
-  - [CreateTrackerRequestTypeDef](#createtrackerrequesttypedef)
-  - [CreateTrackerResponseResponseTypeDef](#createtrackerresponseresponsetypedef)
+  - [CreateGeofenceCollectionRequestRequestTypeDef](#creategeofencecollectionrequestrequesttypedef)
+  - [CreateGeofenceCollectionResponseTypeDef](#creategeofencecollectionresponsetypedef)
+  - [CreateMapRequestRequestTypeDef](#createmaprequestrequesttypedef)
+  - [CreateMapResponseTypeDef](#createmapresponsetypedef)
+  - [CreatePlaceIndexRequestRequestTypeDef](#createplaceindexrequestrequesttypedef)
+  - [CreatePlaceIndexResponseTypeDef](#createplaceindexresponsetypedef)
+  - [CreateRouteCalculatorRequestRequestTypeDef](#createroutecalculatorrequestrequesttypedef)
+  - [CreateRouteCalculatorResponseTypeDef](#createroutecalculatorresponsetypedef)
+  - [CreateTrackerRequestRequestTypeDef](#createtrackerrequestrequesttypedef)
+  - [CreateTrackerResponseTypeDef](#createtrackerresponsetypedef)
   - [DataSourceConfigurationTypeDef](#datasourceconfigurationtypedef)
-  - [DeleteGeofenceCollectionRequestTypeDef](#deletegeofencecollectionrequesttypedef)
-  - [DeleteMapRequestTypeDef](#deletemaprequesttypedef)
-  - [DeletePlaceIndexRequestTypeDef](#deleteplaceindexrequesttypedef)
-  - [DeleteRouteCalculatorRequestTypeDef](#deleteroutecalculatorrequesttypedef)
-  - [DeleteTrackerRequestTypeDef](#deletetrackerrequesttypedef)
-  - [DescribeGeofenceCollectionRequestTypeDef](#describegeofencecollectionrequesttypedef)
-  - [DescribeGeofenceCollectionResponseResponseTypeDef](#describegeofencecollectionresponseresponsetypedef)
-  - [DescribeMapRequestTypeDef](#describemaprequesttypedef)
-  - [DescribeMapResponseResponseTypeDef](#describemapresponseresponsetypedef)
-  - [DescribePlaceIndexRequestTypeDef](#describeplaceindexrequesttypedef)
-  - [DescribePlaceIndexResponseResponseTypeDef](#describeplaceindexresponseresponsetypedef)
-  - [DescribeRouteCalculatorRequestTypeDef](#describeroutecalculatorrequesttypedef)
-  - [DescribeRouteCalculatorResponseResponseTypeDef](#describeroutecalculatorresponseresponsetypedef)
-  - [DescribeTrackerRequestTypeDef](#describetrackerrequesttypedef)
-  - [DescribeTrackerResponseResponseTypeDef](#describetrackerresponseresponsetypedef)
+  - [DeleteGeofenceCollectionRequestRequestTypeDef](#deletegeofencecollectionrequestrequesttypedef)
+  - [DeleteMapRequestRequestTypeDef](#deletemaprequestrequesttypedef)
+  - [DeletePlaceIndexRequestRequestTypeDef](#deleteplaceindexrequestrequesttypedef)
+  - [DeleteRouteCalculatorRequestRequestTypeDef](#deleteroutecalculatorrequestrequesttypedef)
+  - [DeleteTrackerRequestRequestTypeDef](#deletetrackerrequestrequesttypedef)
+  - [DescribeGeofenceCollectionRequestRequestTypeDef](#describegeofencecollectionrequestrequesttypedef)
+  - [DescribeGeofenceCollectionResponseTypeDef](#describegeofencecollectionresponsetypedef)
+  - [DescribeMapRequestRequestTypeDef](#describemaprequestrequesttypedef)
+  - [DescribeMapResponseTypeDef](#describemapresponsetypedef)
+  - [DescribePlaceIndexRequestRequestTypeDef](#describeplaceindexrequestrequesttypedef)
+  - [DescribePlaceIndexResponseTypeDef](#describeplaceindexresponsetypedef)
+  - [DescribeRouteCalculatorRequestRequestTypeDef](#describeroutecalculatorrequestrequesttypedef)
+  - [DescribeRouteCalculatorResponseTypeDef](#describeroutecalculatorresponsetypedef)
+  - [DescribeTrackerRequestRequestTypeDef](#describetrackerrequestrequesttypedef)
+  - [DescribeTrackerResponseTypeDef](#describetrackerresponsetypedef)
   - [DevicePositionTypeDef](#devicepositiontypedef)
   - [DevicePositionUpdateTypeDef](#devicepositionupdatetypedef)
-  - [DisassociateTrackerConsumerRequestTypeDef](#disassociatetrackerconsumerrequesttypedef)
+  - [DisassociateTrackerConsumerRequestRequestTypeDef](#disassociatetrackerconsumerrequestrequesttypedef)
   - [GeofenceGeometryTypeDef](#geofencegeometrytypedef)
-  - [GetDevicePositionHistoryRequestTypeDef](#getdevicepositionhistoryrequesttypedef)
-  - [GetDevicePositionHistoryResponseResponseTypeDef](#getdevicepositionhistoryresponseresponsetypedef)
-  - [GetDevicePositionRequestTypeDef](#getdevicepositionrequesttypedef)
-  - [GetDevicePositionResponseResponseTypeDef](#getdevicepositionresponseresponsetypedef)
-  - [GetGeofenceRequestTypeDef](#getgeofencerequesttypedef)
-  - [GetGeofenceResponseResponseTypeDef](#getgeofenceresponseresponsetypedef)
-  - [GetMapGlyphsRequestTypeDef](#getmapglyphsrequesttypedef)
-  - [GetMapGlyphsResponseResponseTypeDef](#getmapglyphsresponseresponsetypedef)
-  - [GetMapSpritesRequestTypeDef](#getmapspritesrequesttypedef)
-  - [GetMapSpritesResponseResponseTypeDef](#getmapspritesresponseresponsetypedef)
-  - [GetMapStyleDescriptorRequestTypeDef](#getmapstyledescriptorrequesttypedef)
-  - [GetMapStyleDescriptorResponseResponseTypeDef](#getmapstyledescriptorresponseresponsetypedef)
-  - [GetMapTileRequestTypeDef](#getmaptilerequesttypedef)
-  - [GetMapTileResponseResponseTypeDef](#getmaptileresponseresponsetypedef)
+  - [GetDevicePositionHistoryRequestRequestTypeDef](#getdevicepositionhistoryrequestrequesttypedef)
+  - [GetDevicePositionHistoryResponseTypeDef](#getdevicepositionhistoryresponsetypedef)
+  - [GetDevicePositionRequestRequestTypeDef](#getdevicepositionrequestrequesttypedef)
+  - [GetDevicePositionResponseTypeDef](#getdevicepositionresponsetypedef)
+  - [GetGeofenceRequestRequestTypeDef](#getgeofencerequestrequesttypedef)
+  - [GetGeofenceResponseTypeDef](#getgeofenceresponsetypedef)
+  - [GetMapGlyphsRequestRequestTypeDef](#getmapglyphsrequestrequesttypedef)
+  - [GetMapGlyphsResponseTypeDef](#getmapglyphsresponsetypedef)
+  - [GetMapSpritesRequestRequestTypeDef](#getmapspritesrequestrequesttypedef)
+  - [GetMapSpritesResponseTypeDef](#getmapspritesresponsetypedef)
+  - [GetMapStyleDescriptorRequestRequestTypeDef](#getmapstyledescriptorrequestrequesttypedef)
+  - [GetMapStyleDescriptorResponseTypeDef](#getmapstyledescriptorresponsetypedef)
+  - [GetMapTileRequestRequestTypeDef](#getmaptilerequestrequesttypedef)
+  - [GetMapTileResponseTypeDef](#getmaptileresponsetypedef)
   - [LegGeometryTypeDef](#leggeometrytypedef)
   - [LegTypeDef](#legtypedef)
-  - [ListDevicePositionsRequestTypeDef](#listdevicepositionsrequesttypedef)
+  - [ListDevicePositionsRequestRequestTypeDef](#listdevicepositionsrequestrequesttypedef)
   - [ListDevicePositionsResponseEntryTypeDef](#listdevicepositionsresponseentrytypedef)
-  - [ListDevicePositionsResponseResponseTypeDef](#listdevicepositionsresponseresponsetypedef)
-  - [ListGeofenceCollectionsRequestTypeDef](#listgeofencecollectionsrequesttypedef)
+  - [ListDevicePositionsResponseTypeDef](#listdevicepositionsresponsetypedef)
+  - [ListGeofenceCollectionsRequestRequestTypeDef](#listgeofencecollectionsrequestrequesttypedef)
   - [ListGeofenceCollectionsResponseEntryTypeDef](#listgeofencecollectionsresponseentrytypedef)
-  - [ListGeofenceCollectionsResponseResponseTypeDef](#listgeofencecollectionsresponseresponsetypedef)
+  - [ListGeofenceCollectionsResponseTypeDef](#listgeofencecollectionsresponsetypedef)
   - [ListGeofenceResponseEntryTypeDef](#listgeofenceresponseentrytypedef)
-  - [ListGeofencesRequestTypeDef](#listgeofencesrequesttypedef)
-  - [ListGeofencesResponseResponseTypeDef](#listgeofencesresponseresponsetypedef)
-  - [ListMapsRequestTypeDef](#listmapsrequesttypedef)
+  - [ListGeofencesRequestRequestTypeDef](#listgeofencesrequestrequesttypedef)
+  - [ListGeofencesResponseTypeDef](#listgeofencesresponsetypedef)
+  - [ListMapsRequestRequestTypeDef](#listmapsrequestrequesttypedef)
   - [ListMapsResponseEntryTypeDef](#listmapsresponseentrytypedef)
-  - [ListMapsResponseResponseTypeDef](#listmapsresponseresponsetypedef)
-  - [ListPlaceIndexesRequestTypeDef](#listplaceindexesrequesttypedef)
+  - [ListMapsResponseTypeDef](#listmapsresponsetypedef)
+  - [ListPlaceIndexesRequestRequestTypeDef](#listplaceindexesrequestrequesttypedef)
   - [ListPlaceIndexesResponseEntryTypeDef](#listplaceindexesresponseentrytypedef)
-  - [ListPlaceIndexesResponseResponseTypeDef](#listplaceindexesresponseresponsetypedef)
-  - [ListRouteCalculatorsRequestTypeDef](#listroutecalculatorsrequesttypedef)
+  - [ListPlaceIndexesResponseTypeDef](#listplaceindexesresponsetypedef)
+  - [ListRouteCalculatorsRequestRequestTypeDef](#listroutecalculatorsrequestrequesttypedef)
   - [ListRouteCalculatorsResponseEntryTypeDef](#listroutecalculatorsresponseentrytypedef)
-  - [ListRouteCalculatorsResponseResponseTypeDef](#listroutecalculatorsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
-  - [ListTrackerConsumersRequestTypeDef](#listtrackerconsumersrequesttypedef)
-  - [ListTrackerConsumersResponseResponseTypeDef](#listtrackerconsumersresponseresponsetypedef)
-  - [ListTrackersRequestTypeDef](#listtrackersrequesttypedef)
+  - [ListRouteCalculatorsResponseTypeDef](#listroutecalculatorsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListTrackerConsumersRequestRequestTypeDef](#listtrackerconsumersrequestrequesttypedef)
+  - [ListTrackerConsumersResponseTypeDef](#listtrackerconsumersresponsetypedef)
+  - [ListTrackersRequestRequestTypeDef](#listtrackersrequestrequesttypedef)
   - [ListTrackersResponseEntryTypeDef](#listtrackersresponseentrytypedef)
-  - [ListTrackersResponseResponseTypeDef](#listtrackersresponseresponsetypedef)
+  - [ListTrackersResponseTypeDef](#listtrackersresponsetypedef)
   - [MapConfigurationTypeDef](#mapconfigurationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PlaceGeometryTypeDef](#placegeometrytypedef)
   - [PlaceTypeDef](#placetypedef)
-  - [PutGeofenceRequestTypeDef](#putgeofencerequesttypedef)
-  - [PutGeofenceResponseResponseTypeDef](#putgeofenceresponseresponsetypedef)
+  - [PutGeofenceRequestRequestTypeDef](#putgeofencerequestrequesttypedef)
+  - [PutGeofenceResponseTypeDef](#putgeofenceresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SearchForPositionResultTypeDef](#searchforpositionresulttypedef)
   - [SearchForTextResultTypeDef](#searchfortextresulttypedef)
-  - [SearchPlaceIndexForPositionRequestTypeDef](#searchplaceindexforpositionrequesttypedef)
-  - [SearchPlaceIndexForPositionResponseResponseTypeDef](#searchplaceindexforpositionresponseresponsetypedef)
+  - [SearchPlaceIndexForPositionRequestRequestTypeDef](#searchplaceindexforpositionrequestrequesttypedef)
+  - [SearchPlaceIndexForPositionResponseTypeDef](#searchplaceindexforpositionresponsetypedef)
   - [SearchPlaceIndexForPositionSummaryTypeDef](#searchplaceindexforpositionsummarytypedef)
-  - [SearchPlaceIndexForTextRequestTypeDef](#searchplaceindexfortextrequesttypedef)
-  - [SearchPlaceIndexForTextResponseResponseTypeDef](#searchplaceindexfortextresponseresponsetypedef)
+  - [SearchPlaceIndexForTextRequestRequestTypeDef](#searchplaceindexfortextrequestrequesttypedef)
+  - [SearchPlaceIndexForTextResponseTypeDef](#searchplaceindexfortextresponsetypedef)
   - [SearchPlaceIndexForTextSummaryTypeDef](#searchplaceindexfortextsummarytypedef)
   - [StepTypeDef](#steptypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TruckDimensionsTypeDef](#truckdimensionstypedef)
   - [TruckWeightTypeDef](#truckweighttypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
 
-## AssociateTrackerConsumerRequestTypeDef
+## AssociateTrackerConsumerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import AssociateTrackerConsumerRequestTypeDef
+from mypy_boto3_location.type_defs import AssociateTrackerConsumerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -149,10 +149,10 @@ Required fields:
 - `DeviceId`: `str`
 - `Error`: [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
 
-## BatchDeleteDevicePositionHistoryRequestTypeDef
+## BatchDeleteDevicePositionHistoryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import BatchDeleteDevicePositionHistoryRequestTypeDef
+from mypy_boto3_location.type_defs import BatchDeleteDevicePositionHistoryRequestRequestTypeDef
 ```
 
 Required fields:
@@ -160,10 +160,10 @@ Required fields:
 - `DeviceIds`: `List`\[`str`\]
 - `TrackerName`: `str`
 
-## BatchDeleteDevicePositionHistoryResponseResponseTypeDef
+## BatchDeleteDevicePositionHistoryResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import BatchDeleteDevicePositionHistoryResponseResponseTypeDef
+from mypy_boto3_location.type_defs import BatchDeleteDevicePositionHistoryResponseTypeDef
 ```
 
 Required fields:
@@ -184,10 +184,10 @@ Required fields:
 - `Error`: [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
 - `GeofenceId`: `str`
 
-## BatchDeleteGeofenceRequestTypeDef
+## BatchDeleteGeofenceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import BatchDeleteGeofenceRequestTypeDef
+from mypy_boto3_location.type_defs import BatchDeleteGeofenceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -195,10 +195,10 @@ Required fields:
 - `CollectionName`: `str`
 - `GeofenceIds`: `List`\[`str`\]
 
-## BatchDeleteGeofenceResponseResponseTypeDef
+## BatchDeleteGeofenceResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import BatchDeleteGeofenceResponseResponseTypeDef
+from mypy_boto3_location.type_defs import BatchDeleteGeofenceResponseTypeDef
 ```
 
 Required fields:
@@ -220,10 +220,10 @@ Required fields:
 - `Error`: [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
 - `SampleTime`: `datetime`
 
-## BatchEvaluateGeofencesRequestTypeDef
+## BatchEvaluateGeofencesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import BatchEvaluateGeofencesRequestTypeDef
+from mypy_boto3_location.type_defs import BatchEvaluateGeofencesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -232,10 +232,10 @@ Required fields:
 - `DevicePositionUpdates`:
   `List`\[[DevicePositionUpdateTypeDef](./type_defs.md#devicepositionupdatetypedef)\]
 
-## BatchEvaluateGeofencesResponseResponseTypeDef
+## BatchEvaluateGeofencesResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import BatchEvaluateGeofencesResponseResponseTypeDef
+from mypy_boto3_location.type_defs import BatchEvaluateGeofencesResponseTypeDef
 ```
 
 Required fields:
@@ -256,10 +256,10 @@ Required fields:
 - `DeviceId`: `str`
 - `Error`: [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
 
-## BatchGetDevicePositionRequestTypeDef
+## BatchGetDevicePositionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import BatchGetDevicePositionRequestTypeDef
+from mypy_boto3_location.type_defs import BatchGetDevicePositionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -267,10 +267,10 @@ Required fields:
 - `DeviceIds`: `List`\[`str`\]
 - `TrackerName`: `str`
 
-## BatchGetDevicePositionResponseResponseTypeDef
+## BatchGetDevicePositionResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import BatchGetDevicePositionResponseResponseTypeDef
+from mypy_boto3_location.type_defs import BatchGetDevicePositionResponseTypeDef
 ```
 
 Required fields:
@@ -315,10 +315,10 @@ Required fields:
 - `GeofenceId`: `str`
 - `Geometry`: [GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef)
 
-## BatchPutGeofenceRequestTypeDef
+## BatchPutGeofenceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import BatchPutGeofenceRequestTypeDef
+from mypy_boto3_location.type_defs import BatchPutGeofenceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -327,10 +327,10 @@ Required fields:
 - `Entries`:
   `List`\[[BatchPutGeofenceRequestEntryTypeDef](./type_defs.md#batchputgeofencerequestentrytypedef)\]
 
-## BatchPutGeofenceResponseResponseTypeDef
+## BatchPutGeofenceResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import BatchPutGeofenceResponseResponseTypeDef
+from mypy_boto3_location.type_defs import BatchPutGeofenceResponseTypeDef
 ```
 
 Required fields:
@@ -366,10 +366,10 @@ Required fields:
 - `Error`: [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
 - `SampleTime`: `datetime`
 
-## BatchUpdateDevicePositionRequestTypeDef
+## BatchUpdateDevicePositionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import BatchUpdateDevicePositionRequestTypeDef
+from mypy_boto3_location.type_defs import BatchUpdateDevicePositionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -378,10 +378,10 @@ Required fields:
 - `Updates`:
   `List`\[[DevicePositionUpdateTypeDef](./type_defs.md#devicepositionupdatetypedef)\]
 
-## BatchUpdateDevicePositionResponseResponseTypeDef
+## BatchUpdateDevicePositionResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import BatchUpdateDevicePositionResponseResponseTypeDef
+from mypy_boto3_location.type_defs import BatchUpdateDevicePositionResponseTypeDef
 ```
 
 Required fields:
@@ -402,10 +402,10 @@ Optional fields:
 - `AvoidFerries`: `bool`
 - `AvoidTolls`: `bool`
 
-## CalculateRouteRequestTypeDef
+## CalculateRouteRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import CalculateRouteRequestTypeDef
+from mypy_boto3_location.type_defs import CalculateRouteRequestRequestTypeDef
 ```
 
 Required fields:
@@ -427,10 +427,10 @@ Optional fields:
   [CalculateRouteTruckModeOptionsTypeDef](./type_defs.md#calculateroutetruckmodeoptionstypedef)
 - `WaypointPositions`: `List`\[`List`\[`float`\]\]
 
-## CalculateRouteResponseResponseTypeDef
+## CalculateRouteResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import CalculateRouteResponseResponseTypeDef
+from mypy_boto3_location.type_defs import CalculateRouteResponseTypeDef
 ```
 
 Required fields:
@@ -468,10 +468,10 @@ Optional fields:
 - `Dimensions`: [TruckDimensionsTypeDef](./type_defs.md#truckdimensionstypedef)
 - `Weight`: [TruckWeightTypeDef](./type_defs.md#truckweighttypedef)
 
-## CreateGeofenceCollectionRequestTypeDef
+## CreateGeofenceCollectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import CreateGeofenceCollectionRequestTypeDef
+from mypy_boto3_location.type_defs import CreateGeofenceCollectionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -486,10 +486,10 @@ Optional fields:
 - `PricingPlanDataSource`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateGeofenceCollectionResponseResponseTypeDef
+## CreateGeofenceCollectionResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import CreateGeofenceCollectionResponseResponseTypeDef
+from mypy_boto3_location.type_defs import CreateGeofenceCollectionResponseTypeDef
 ```
 
 Required fields:
@@ -500,10 +500,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateMapRequestTypeDef
+## CreateMapRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import CreateMapRequestTypeDef
+from mypy_boto3_location.type_defs import CreateMapRequestRequestTypeDef
 ```
 
 Required fields:
@@ -518,10 +518,10 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateMapResponseResponseTypeDef
+## CreateMapResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import CreateMapResponseResponseTypeDef
+from mypy_boto3_location.type_defs import CreateMapResponseTypeDef
 ```
 
 Required fields:
@@ -532,10 +532,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePlaceIndexRequestTypeDef
+## CreatePlaceIndexRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import CreatePlaceIndexRequestTypeDef
+from mypy_boto3_location.type_defs import CreatePlaceIndexRequestRequestTypeDef
 ```
 
 Required fields:
@@ -551,10 +551,10 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreatePlaceIndexResponseResponseTypeDef
+## CreatePlaceIndexResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import CreatePlaceIndexResponseResponseTypeDef
+from mypy_boto3_location.type_defs import CreatePlaceIndexResponseTypeDef
 ```
 
 Required fields:
@@ -565,10 +565,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRouteCalculatorRequestTypeDef
+## CreateRouteCalculatorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import CreateRouteCalculatorRequestTypeDef
+from mypy_boto3_location.type_defs import CreateRouteCalculatorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -582,10 +582,10 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateRouteCalculatorResponseResponseTypeDef
+## CreateRouteCalculatorResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import CreateRouteCalculatorResponseResponseTypeDef
+from mypy_boto3_location.type_defs import CreateRouteCalculatorResponseTypeDef
 ```
 
 Required fields:
@@ -596,10 +596,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTrackerRequestTypeDef
+## CreateTrackerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import CreateTrackerRequestTypeDef
+from mypy_boto3_location.type_defs import CreateTrackerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -614,10 +614,10 @@ Optional fields:
 - `PricingPlanDataSource`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateTrackerResponseResponseTypeDef
+## CreateTrackerResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import CreateTrackerResponseResponseTypeDef
+from mypy_boto3_location.type_defs import CreateTrackerResponseTypeDef
 ```
 
 Required fields:
@@ -638,70 +638,70 @@ Optional fields:
 
 - `IntendedUse`: [IntendedUseType](./literals.md#intendedusetype)
 
-## DeleteGeofenceCollectionRequestTypeDef
+## DeleteGeofenceCollectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import DeleteGeofenceCollectionRequestTypeDef
+from mypy_boto3_location.type_defs import DeleteGeofenceCollectionRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `CollectionName`: `str`
 
-## DeleteMapRequestTypeDef
+## DeleteMapRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import DeleteMapRequestTypeDef
+from mypy_boto3_location.type_defs import DeleteMapRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `MapName`: `str`
 
-## DeletePlaceIndexRequestTypeDef
+## DeletePlaceIndexRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import DeletePlaceIndexRequestTypeDef
+from mypy_boto3_location.type_defs import DeletePlaceIndexRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `IndexName`: `str`
 
-## DeleteRouteCalculatorRequestTypeDef
+## DeleteRouteCalculatorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import DeleteRouteCalculatorRequestTypeDef
+from mypy_boto3_location.type_defs import DeleteRouteCalculatorRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `CalculatorName`: `str`
 
-## DeleteTrackerRequestTypeDef
+## DeleteTrackerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import DeleteTrackerRequestTypeDef
+from mypy_boto3_location.type_defs import DeleteTrackerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `TrackerName`: `str`
 
-## DescribeGeofenceCollectionRequestTypeDef
+## DescribeGeofenceCollectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import DescribeGeofenceCollectionRequestTypeDef
+from mypy_boto3_location.type_defs import DescribeGeofenceCollectionRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `CollectionName`: `str`
 
-## DescribeGeofenceCollectionResponseResponseTypeDef
+## DescribeGeofenceCollectionResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import DescribeGeofenceCollectionResponseResponseTypeDef
+from mypy_boto3_location.type_defs import DescribeGeofenceCollectionResponseTypeDef
 ```
 
 Required fields:
@@ -718,20 +718,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMapRequestTypeDef
+## DescribeMapRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import DescribeMapRequestTypeDef
+from mypy_boto3_location.type_defs import DescribeMapRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `MapName`: `str`
 
-## DescribeMapResponseResponseTypeDef
+## DescribeMapResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import DescribeMapResponseResponseTypeDef
+from mypy_boto3_location.type_defs import DescribeMapResponseTypeDef
 ```
 
 Required fields:
@@ -749,20 +749,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePlaceIndexRequestTypeDef
+## DescribePlaceIndexRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import DescribePlaceIndexRequestTypeDef
+from mypy_boto3_location.type_defs import DescribePlaceIndexRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `IndexName`: `str`
 
-## DescribePlaceIndexResponseResponseTypeDef
+## DescribePlaceIndexResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import DescribePlaceIndexResponseResponseTypeDef
+from mypy_boto3_location.type_defs import DescribePlaceIndexResponseTypeDef
 ```
 
 Required fields:
@@ -780,20 +780,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRouteCalculatorRequestTypeDef
+## DescribeRouteCalculatorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import DescribeRouteCalculatorRequestTypeDef
+from mypy_boto3_location.type_defs import DescribeRouteCalculatorRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `CalculatorName`: `str`
 
-## DescribeRouteCalculatorResponseResponseTypeDef
+## DescribeRouteCalculatorResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import DescribeRouteCalculatorResponseResponseTypeDef
+from mypy_boto3_location.type_defs import DescribeRouteCalculatorResponseTypeDef
 ```
 
 Required fields:
@@ -809,20 +809,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTrackerRequestTypeDef
+## DescribeTrackerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import DescribeTrackerRequestTypeDef
+from mypy_boto3_location.type_defs import DescribeTrackerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `TrackerName`: `str`
 
-## DescribeTrackerResponseResponseTypeDef
+## DescribeTrackerResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import DescribeTrackerResponseResponseTypeDef
+from mypy_boto3_location.type_defs import DescribeTrackerResponseTypeDef
 ```
 
 Required fields:
@@ -867,10 +867,10 @@ Required fields:
 - `Position`: `List`\[`float`\]
 - `SampleTime`: `Union`\[`datetime`, `str`\]
 
-## DisassociateTrackerConsumerRequestTypeDef
+## DisassociateTrackerConsumerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import DisassociateTrackerConsumerRequestTypeDef
+from mypy_boto3_location.type_defs import DisassociateTrackerConsumerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -888,10 +888,10 @@ Optional fields:
 
 - `Polygon`: `List`\[`List`\[`List`\[`float`\]\]\]
 
-## GetDevicePositionHistoryRequestTypeDef
+## GetDevicePositionHistoryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import GetDevicePositionHistoryRequestTypeDef
+from mypy_boto3_location.type_defs import GetDevicePositionHistoryRequestRequestTypeDef
 ```
 
 Required fields:
@@ -905,10 +905,10 @@ Optional fields:
 - `NextToken`: `str`
 - `StartTimeInclusive`: `Union`\[`datetime`, `str`\]
 
-## GetDevicePositionHistoryResponseResponseTypeDef
+## GetDevicePositionHistoryResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import GetDevicePositionHistoryResponseResponseTypeDef
+from mypy_boto3_location.type_defs import GetDevicePositionHistoryResponseTypeDef
 ```
 
 Required fields:
@@ -919,10 +919,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDevicePositionRequestTypeDef
+## GetDevicePositionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import GetDevicePositionRequestTypeDef
+from mypy_boto3_location.type_defs import GetDevicePositionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -930,10 +930,10 @@ Required fields:
 - `DeviceId`: `str`
 - `TrackerName`: `str`
 
-## GetDevicePositionResponseResponseTypeDef
+## GetDevicePositionResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import GetDevicePositionResponseResponseTypeDef
+from mypy_boto3_location.type_defs import GetDevicePositionResponseTypeDef
 ```
 
 Required fields:
@@ -945,10 +945,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetGeofenceRequestTypeDef
+## GetGeofenceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import GetGeofenceRequestTypeDef
+from mypy_boto3_location.type_defs import GetGeofenceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -956,10 +956,10 @@ Required fields:
 - `CollectionName`: `str`
 - `GeofenceId`: `str`
 
-## GetGeofenceResponseResponseTypeDef
+## GetGeofenceResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import GetGeofenceResponseResponseTypeDef
+from mypy_boto3_location.type_defs import GetGeofenceResponseTypeDef
 ```
 
 Required fields:
@@ -972,10 +972,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMapGlyphsRequestTypeDef
+## GetMapGlyphsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import GetMapGlyphsRequestTypeDef
+from mypy_boto3_location.type_defs import GetMapGlyphsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -984,10 +984,10 @@ Required fields:
 - `FontUnicodeRange`: `str`
 - `MapName`: `str`
 
-## GetMapGlyphsResponseResponseTypeDef
+## GetMapGlyphsResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import GetMapGlyphsResponseResponseTypeDef
+from mypy_boto3_location.type_defs import GetMapGlyphsResponseTypeDef
 ```
 
 Required fields:
@@ -997,10 +997,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMapSpritesRequestTypeDef
+## GetMapSpritesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import GetMapSpritesRequestTypeDef
+from mypy_boto3_location.type_defs import GetMapSpritesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1008,10 +1008,10 @@ Required fields:
 - `FileName`: `str`
 - `MapName`: `str`
 
-## GetMapSpritesResponseResponseTypeDef
+## GetMapSpritesResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import GetMapSpritesResponseResponseTypeDef
+from mypy_boto3_location.type_defs import GetMapSpritesResponseTypeDef
 ```
 
 Required fields:
@@ -1021,20 +1021,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMapStyleDescriptorRequestTypeDef
+## GetMapStyleDescriptorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import GetMapStyleDescriptorRequestTypeDef
+from mypy_boto3_location.type_defs import GetMapStyleDescriptorRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `MapName`: `str`
 
-## GetMapStyleDescriptorResponseResponseTypeDef
+## GetMapStyleDescriptorResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import GetMapStyleDescriptorResponseResponseTypeDef
+from mypy_boto3_location.type_defs import GetMapStyleDescriptorResponseTypeDef
 ```
 
 Required fields:
@@ -1044,10 +1044,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMapTileRequestTypeDef
+## GetMapTileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import GetMapTileRequestTypeDef
+from mypy_boto3_location.type_defs import GetMapTileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1057,10 +1057,10 @@ Required fields:
 - `Y`: `str`
 - `Z`: `str`
 
-## GetMapTileResponseResponseTypeDef
+## GetMapTileResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import GetMapTileResponseResponseTypeDef
+from mypy_boto3_location.type_defs import GetMapTileResponseTypeDef
 ```
 
 Required fields:
@@ -1098,10 +1098,10 @@ Optional fields:
 
 - `Geometry`: [LegGeometryTypeDef](./type_defs.md#leggeometrytypedef)
 
-## ListDevicePositionsRequestTypeDef
+## ListDevicePositionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import ListDevicePositionsRequestTypeDef
+from mypy_boto3_location.type_defs import ListDevicePositionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1125,10 +1125,10 @@ Required fields:
 - `Position`: `List`\[`float`\]
 - `SampleTime`: `datetime`
 
-## ListDevicePositionsResponseResponseTypeDef
+## ListDevicePositionsResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import ListDevicePositionsResponseResponseTypeDef
+from mypy_boto3_location.type_defs import ListDevicePositionsResponseTypeDef
 ```
 
 Required fields:
@@ -1139,10 +1139,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListGeofenceCollectionsRequestTypeDef
+## ListGeofenceCollectionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import ListGeofenceCollectionsRequestTypeDef
+from mypy_boto3_location.type_defs import ListGeofenceCollectionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1168,10 +1168,10 @@ Optional fields:
 
 - `PricingPlanDataSource`: `str`
 
-## ListGeofenceCollectionsResponseResponseTypeDef
+## ListGeofenceCollectionsResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import ListGeofenceCollectionsResponseResponseTypeDef
+from mypy_boto3_location.type_defs import ListGeofenceCollectionsResponseTypeDef
 ```
 
 Required fields:
@@ -1196,10 +1196,10 @@ Required fields:
 - `Status`: `str`
 - `UpdateTime`: `datetime`
 
-## ListGeofencesRequestTypeDef
+## ListGeofencesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import ListGeofencesRequestTypeDef
+from mypy_boto3_location.type_defs import ListGeofencesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1210,10 +1210,10 @@ Optional fields:
 
 - `NextToken`: `str`
 
-## ListGeofencesResponseResponseTypeDef
+## ListGeofencesResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import ListGeofencesResponseResponseTypeDef
+from mypy_boto3_location.type_defs import ListGeofencesResponseTypeDef
 ```
 
 Required fields:
@@ -1224,10 +1224,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMapsRequestTypeDef
+## ListMapsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import ListMapsRequestTypeDef
+from mypy_boto3_location.type_defs import ListMapsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1250,10 +1250,10 @@ Required fields:
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `UpdateTime`: `datetime`
 
-## ListMapsResponseResponseTypeDef
+## ListMapsResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import ListMapsResponseResponseTypeDef
+from mypy_boto3_location.type_defs import ListMapsResponseTypeDef
 ```
 
 Required fields:
@@ -1264,10 +1264,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPlaceIndexesRequestTypeDef
+## ListPlaceIndexesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import ListPlaceIndexesRequestTypeDef
+from mypy_boto3_location.type_defs import ListPlaceIndexesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1290,10 +1290,10 @@ Required fields:
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `UpdateTime`: `datetime`
 
-## ListPlaceIndexesResponseResponseTypeDef
+## ListPlaceIndexesResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import ListPlaceIndexesResponseResponseTypeDef
+from mypy_boto3_location.type_defs import ListPlaceIndexesResponseTypeDef
 ```
 
 Required fields:
@@ -1304,10 +1304,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRouteCalculatorsRequestTypeDef
+## ListRouteCalculatorsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import ListRouteCalculatorsRequestTypeDef
+from mypy_boto3_location.type_defs import ListRouteCalculatorsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1330,10 +1330,10 @@ Required fields:
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `UpdateTime`: `datetime`
 
-## ListRouteCalculatorsResponseResponseTypeDef
+## ListRouteCalculatorsResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import ListRouteCalculatorsResponseResponseTypeDef
+from mypy_boto3_location.type_defs import ListRouteCalculatorsResponseTypeDef
 ```
 
 Required fields:
@@ -1344,20 +1344,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_location.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_location.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -1366,10 +1366,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTrackerConsumersRequestTypeDef
+## ListTrackerConsumersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import ListTrackerConsumersRequestTypeDef
+from mypy_boto3_location.type_defs import ListTrackerConsumersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1381,10 +1381,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListTrackerConsumersResponseResponseTypeDef
+## ListTrackerConsumersResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import ListTrackerConsumersResponseResponseTypeDef
+from mypy_boto3_location.type_defs import ListTrackerConsumersResponseTypeDef
 ```
 
 Required fields:
@@ -1394,10 +1394,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTrackersRequestTypeDef
+## ListTrackersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import ListTrackersRequestTypeDef
+from mypy_boto3_location.type_defs import ListTrackersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1423,10 +1423,10 @@ Optional fields:
 
 - `PricingPlanDataSource`: `str`
 
-## ListTrackersResponseResponseTypeDef
+## ListTrackersResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import ListTrackersResponseResponseTypeDef
+from mypy_boto3_location.type_defs import ListTrackersResponseTypeDef
 ```
 
 Required fields:
@@ -1491,10 +1491,10 @@ Optional fields:
 - `Street`: `str`
 - `SubRegion`: `str`
 
-## PutGeofenceRequestTypeDef
+## PutGeofenceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import PutGeofenceRequestTypeDef
+from mypy_boto3_location.type_defs import PutGeofenceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1503,10 +1503,10 @@ Required fields:
 - `GeofenceId`: `str`
 - `Geometry`: [GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef)
 
-## PutGeofenceResponseResponseTypeDef
+## PutGeofenceResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import PutGeofenceResponseResponseTypeDef
+from mypy_boto3_location.type_defs import PutGeofenceResponseTypeDef
 ```
 
 Required fields:
@@ -1551,10 +1551,10 @@ Required fields:
 
 - `Place`: [PlaceTypeDef](./type_defs.md#placetypedef)
 
-## SearchPlaceIndexForPositionRequestTypeDef
+## SearchPlaceIndexForPositionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import SearchPlaceIndexForPositionRequestTypeDef
+from mypy_boto3_location.type_defs import SearchPlaceIndexForPositionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1566,10 +1566,10 @@ Optional fields:
 
 - `MaxResults`: `int`
 
-## SearchPlaceIndexForPositionResponseResponseTypeDef
+## SearchPlaceIndexForPositionResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import SearchPlaceIndexForPositionResponseResponseTypeDef
+from mypy_boto3_location.type_defs import SearchPlaceIndexForPositionResponseTypeDef
 ```
 
 Required fields:
@@ -1596,10 +1596,10 @@ Optional fields:
 
 - `MaxResults`: `int`
 
-## SearchPlaceIndexForTextRequestTypeDef
+## SearchPlaceIndexForTextRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import SearchPlaceIndexForTextRequestTypeDef
+from mypy_boto3_location.type_defs import SearchPlaceIndexForTextRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1614,10 +1614,10 @@ Optional fields:
 - `FilterCountries`: `List`\[`str`\]
 - `MaxResults`: `int`
 
-## SearchPlaceIndexForTextResponseResponseTypeDef
+## SearchPlaceIndexForTextResponseTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import SearchPlaceIndexForTextResponseResponseTypeDef
+from mypy_boto3_location.type_defs import SearchPlaceIndexForTextResponseTypeDef
 ```
 
 Required fields:
@@ -1665,10 +1665,10 @@ Optional fields:
 
 - `GeometryOffset`: `int`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_location.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1700,10 +1700,10 @@ Optional fields:
 - `Total`: `float`
 - `Unit`: [VehicleWeightUnitType](./literals.md#vehicleweightunittype)
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_location.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_location.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:

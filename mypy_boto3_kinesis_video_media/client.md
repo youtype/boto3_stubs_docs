@@ -11,6 +11,7 @@ type annotations stubs module
   - [KinesisVideoMediaClient](#kinesisvideomediaclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_media](#get_media)
@@ -54,6 +55,17 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 
 ## Methods
+
+### exceptions
+
+KinesisVideoMediaClient exceptions.
+
+Type annotations for `boto3.client("kinesis-video-media").exceptions` method.
+
+Boto3 documentation:
+[KinesisVideoMedia.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
 
 ### can_paginate
 
@@ -99,7 +111,7 @@ Boto3 documentation:
 [KinesisVideoMedia.Client.get_media](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.get_media)
 
 Arguments mapping described in
-[GetMediaInputTypeDef](./type_defs.md#getmediainputtypedef).
+[GetMediaInputRequestTypeDef](./type_defs.md#getmediainputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -108,5 +120,4 @@ Keyword-only arguments:
 - `StreamName`: `str`
 - `StreamARN`: `str`
 
-Returns
-[GetMediaOutputResponseTypeDef](./type_defs.md#getmediaoutputresponsetypedef).
+Returns [GetMediaOutputTypeDef](./type_defs.md#getmediaoutputtypedef).

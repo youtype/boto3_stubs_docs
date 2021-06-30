@@ -2846,7 +2846,7 @@ Keyword-only arguments:
 - `SAMLMetadataDocument`: `str` *(required)*
 
 Returns
-[UpdateSAMLProviderResponseResponseTypeDef](./type_defs.md#updatesamlproviderresponseresponsetypedef).
+[UpdateSAMLProviderResponseTypeDef](./type_defs.md#updatesamlproviderresponsetypedef).
 
 ## ServerCertificate
 

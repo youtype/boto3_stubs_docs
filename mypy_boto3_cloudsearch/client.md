@@ -11,6 +11,7 @@ type annotations stubs module
   - [CloudSearchClient](#cloudsearchclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [build_suggesters](#build_suggesters)
     - [can_paginate](#can_paginate)
     - [create_domain](#create_domain)
@@ -82,6 +83,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+CloudSearchClient exceptions.
+
+Type annotations for `boto3.client("cloudsearch").exceptions` method.
+
+Boto3 documentation:
+[CloudSearch.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### build_suggesters
 
 Indexes the search suggestions.
@@ -92,14 +104,14 @@ Boto3 documentation:
 [CloudSearch.Client.build_suggesters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.build_suggesters)
 
 Arguments mapping described in
-[BuildSuggestersRequestTypeDef](./type_defs.md#buildsuggestersrequesttypedef).
+[BuildSuggestersRequestRequestTypeDef](./type_defs.md#buildsuggestersrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
 Returns
-[BuildSuggestersResponseResponseTypeDef](./type_defs.md#buildsuggestersresponseresponsetypedef).
+[BuildSuggestersResponseTypeDef](./type_defs.md#buildsuggestersresponsetypedef).
 
 ### can_paginate
 
@@ -126,14 +138,14 @@ Boto3 documentation:
 [CloudSearch.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.create_domain)
 
 Arguments mapping described in
-[CreateDomainRequestTypeDef](./type_defs.md#createdomainrequesttypedef).
+[CreateDomainRequestRequestTypeDef](./type_defs.md#createdomainrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
 Returns
-[CreateDomainResponseResponseTypeDef](./type_defs.md#createdomainresponseresponsetypedef).
+[CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef).
 
 ### define_analysis_scheme
 
@@ -147,7 +159,7 @@ Boto3 documentation:
 [CloudSearch.Client.define_analysis_scheme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_analysis_scheme)
 
 Arguments mapping described in
-[DefineAnalysisSchemeRequestTypeDef](./type_defs.md#defineanalysisschemerequesttypedef).
+[DefineAnalysisSchemeRequestRequestTypeDef](./type_defs.md#defineanalysisschemerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -156,7 +168,7 @@ Keyword-only arguments:
   [AnalysisSchemeTypeDef](./type_defs.md#analysisschemetypedef) *(required)*
 
 Returns
-[DefineAnalysisSchemeResponseResponseTypeDef](./type_defs.md#defineanalysisschemeresponseresponsetypedef).
+[DefineAnalysisSchemeResponseTypeDef](./type_defs.md#defineanalysisschemeresponsetypedef).
 
 ### define_expression
 
@@ -168,7 +180,7 @@ Boto3 documentation:
 [CloudSearch.Client.define_expression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_expression)
 
 Arguments mapping described in
-[DefineExpressionRequestTypeDef](./type_defs.md#defineexpressionrequesttypedef).
+[DefineExpressionRequestRequestTypeDef](./type_defs.md#defineexpressionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -177,7 +189,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[DefineExpressionResponseResponseTypeDef](./type_defs.md#defineexpressionresponseresponsetypedef).
+[DefineExpressionResponseTypeDef](./type_defs.md#defineexpressionresponsetypedef).
 
 ### define_index_field
 
@@ -189,7 +201,7 @@ Boto3 documentation:
 [CloudSearch.Client.define_index_field](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_index_field)
 
 Arguments mapping described in
-[DefineIndexFieldRequestTypeDef](./type_defs.md#defineindexfieldrequesttypedef).
+[DefineIndexFieldRequestRequestTypeDef](./type_defs.md#defineindexfieldrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -198,7 +210,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[DefineIndexFieldResponseResponseTypeDef](./type_defs.md#defineindexfieldresponseresponsetypedef).
+[DefineIndexFieldResponseTypeDef](./type_defs.md#defineindexfieldresponsetypedef).
 
 ### define_suggester
 
@@ -210,7 +222,7 @@ Boto3 documentation:
 [CloudSearch.Client.define_suggester](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_suggester)
 
 Arguments mapping described in
-[DefineSuggesterRequestTypeDef](./type_defs.md#definesuggesterrequesttypedef).
+[DefineSuggesterRequestRequestTypeDef](./type_defs.md#definesuggesterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -218,7 +230,7 @@ Keyword-only arguments:
 - `Suggester`: [SuggesterTypeDef](./type_defs.md#suggestertypedef) *(required)*
 
 Returns
-[DefineSuggesterResponseResponseTypeDef](./type_defs.md#definesuggesterresponseresponsetypedef).
+[DefineSuggesterResponseTypeDef](./type_defs.md#definesuggesterresponsetypedef).
 
 ### delete_analysis_scheme
 
@@ -231,7 +243,7 @@ Boto3 documentation:
 [CloudSearch.Client.delete_analysis_scheme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_analysis_scheme)
 
 Arguments mapping described in
-[DeleteAnalysisSchemeRequestTypeDef](./type_defs.md#deleteanalysisschemerequesttypedef).
+[DeleteAnalysisSchemeRequestRequestTypeDef](./type_defs.md#deleteanalysisschemerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -239,7 +251,7 @@ Keyword-only arguments:
 - `AnalysisSchemeName`: `str` *(required)*
 
 Returns
-[DeleteAnalysisSchemeResponseResponseTypeDef](./type_defs.md#deleteanalysisschemeresponseresponsetypedef).
+[DeleteAnalysisSchemeResponseTypeDef](./type_defs.md#deleteanalysisschemeresponsetypedef).
 
 ### delete_domain
 
@@ -251,14 +263,14 @@ Boto3 documentation:
 [CloudSearch.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_domain)
 
 Arguments mapping described in
-[DeleteDomainRequestTypeDef](./type_defs.md#deletedomainrequesttypedef).
+[DeleteDomainRequestRequestTypeDef](./type_defs.md#deletedomainrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
 Returns
-[DeleteDomainResponseResponseTypeDef](./type_defs.md#deletedomainresponseresponsetypedef).
+[DeleteDomainResponseTypeDef](./type_defs.md#deletedomainresponsetypedef).
 
 ### delete_expression
 
@@ -270,7 +282,7 @@ Boto3 documentation:
 [CloudSearch.Client.delete_expression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_expression)
 
 Arguments mapping described in
-[DeleteExpressionRequestTypeDef](./type_defs.md#deleteexpressionrequesttypedef).
+[DeleteExpressionRequestRequestTypeDef](./type_defs.md#deleteexpressionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -278,7 +290,7 @@ Keyword-only arguments:
 - `ExpressionName`: `str` *(required)*
 
 Returns
-[DeleteExpressionResponseResponseTypeDef](./type_defs.md#deleteexpressionresponseresponsetypedef).
+[DeleteExpressionResponseTypeDef](./type_defs.md#deleteexpressionresponsetypedef).
 
 ### delete_index_field
 
@@ -290,7 +302,7 @@ Boto3 documentation:
 [CloudSearch.Client.delete_index_field](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_index_field)
 
 Arguments mapping described in
-[DeleteIndexFieldRequestTypeDef](./type_defs.md#deleteindexfieldrequesttypedef).
+[DeleteIndexFieldRequestRequestTypeDef](./type_defs.md#deleteindexfieldrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -298,7 +310,7 @@ Keyword-only arguments:
 - `IndexFieldName`: `str` *(required)*
 
 Returns
-[DeleteIndexFieldResponseResponseTypeDef](./type_defs.md#deleteindexfieldresponseresponsetypedef).
+[DeleteIndexFieldResponseTypeDef](./type_defs.md#deleteindexfieldresponsetypedef).
 
 ### delete_suggester
 
@@ -310,7 +322,7 @@ Boto3 documentation:
 [CloudSearch.Client.delete_suggester](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_suggester)
 
 Arguments mapping described in
-[DeleteSuggesterRequestTypeDef](./type_defs.md#deletesuggesterrequesttypedef).
+[DeleteSuggesterRequestRequestTypeDef](./type_defs.md#deletesuggesterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -318,7 +330,7 @@ Keyword-only arguments:
 - `SuggesterName`: `str` *(required)*
 
 Returns
-[DeleteSuggesterResponseResponseTypeDef](./type_defs.md#deletesuggesterresponseresponsetypedef).
+[DeleteSuggesterResponseTypeDef](./type_defs.md#deletesuggesterresponsetypedef).
 
 ### describe_analysis_schemes
 
@@ -331,7 +343,7 @@ Boto3 documentation:
 [CloudSearch.Client.describe_analysis_schemes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_analysis_schemes)
 
 Arguments mapping described in
-[DescribeAnalysisSchemesRequestTypeDef](./type_defs.md#describeanalysisschemesrequesttypedef).
+[DescribeAnalysisSchemesRequestRequestTypeDef](./type_defs.md#describeanalysisschemesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -340,7 +352,7 @@ Keyword-only arguments:
 - `Deployed`: `bool`
 
 Returns
-[DescribeAnalysisSchemesResponseResponseTypeDef](./type_defs.md#describeanalysisschemesresponseresponsetypedef).
+[DescribeAnalysisSchemesResponseTypeDef](./type_defs.md#describeanalysisschemesresponsetypedef).
 
 ### describe_availability_options
 
@@ -353,7 +365,7 @@ Boto3 documentation:
 [CloudSearch.Client.describe_availability_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_availability_options)
 
 Arguments mapping described in
-[DescribeAvailabilityOptionsRequestTypeDef](./type_defs.md#describeavailabilityoptionsrequesttypedef).
+[DescribeAvailabilityOptionsRequestRequestTypeDef](./type_defs.md#describeavailabilityoptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -361,7 +373,7 @@ Keyword-only arguments:
 - `Deployed`: `bool`
 
 Returns
-[DescribeAvailabilityOptionsResponseResponseTypeDef](./type_defs.md#describeavailabilityoptionsresponseresponsetypedef).
+[DescribeAvailabilityOptionsResponseTypeDef](./type_defs.md#describeavailabilityoptionsresponsetypedef).
 
 ### describe_domain_endpoint_options
 
@@ -375,7 +387,7 @@ Boto3 documentation:
 [CloudSearch.Client.describe_domain_endpoint_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_domain_endpoint_options)
 
 Arguments mapping described in
-[DescribeDomainEndpointOptionsRequestTypeDef](./type_defs.md#describedomainendpointoptionsrequesttypedef).
+[DescribeDomainEndpointOptionsRequestRequestTypeDef](./type_defs.md#describedomainendpointoptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -383,7 +395,7 @@ Keyword-only arguments:
 - `Deployed`: `bool`
 
 Returns
-[DescribeDomainEndpointOptionsResponseResponseTypeDef](./type_defs.md#describedomainendpointoptionsresponseresponsetypedef).
+[DescribeDomainEndpointOptionsResponseTypeDef](./type_defs.md#describedomainendpointoptionsresponsetypedef).
 
 ### describe_domains
 
@@ -395,14 +407,14 @@ Boto3 documentation:
 [CloudSearch.Client.describe_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_domains)
 
 Arguments mapping described in
-[DescribeDomainsRequestTypeDef](./type_defs.md#describedomainsrequesttypedef).
+[DescribeDomainsRequestRequestTypeDef](./type_defs.md#describedomainsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DomainNames`: `List`\[`str`\]
 
 Returns
-[DescribeDomainsResponseResponseTypeDef](./type_defs.md#describedomainsresponseresponsetypedef).
+[DescribeDomainsResponseTypeDef](./type_defs.md#describedomainsresponsetypedef).
 
 ### describe_expressions
 
@@ -414,7 +426,7 @@ Boto3 documentation:
 [CloudSearch.Client.describe_expressions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_expressions)
 
 Arguments mapping described in
-[DescribeExpressionsRequestTypeDef](./type_defs.md#describeexpressionsrequesttypedef).
+[DescribeExpressionsRequestRequestTypeDef](./type_defs.md#describeexpressionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -423,7 +435,7 @@ Keyword-only arguments:
 - `Deployed`: `bool`
 
 Returns
-[DescribeExpressionsResponseResponseTypeDef](./type_defs.md#describeexpressionsresponseresponsetypedef).
+[DescribeExpressionsResponseTypeDef](./type_defs.md#describeexpressionsresponsetypedef).
 
 ### describe_index_fields
 
@@ -436,7 +448,7 @@ Boto3 documentation:
 [CloudSearch.Client.describe_index_fields](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_index_fields)
 
 Arguments mapping described in
-[DescribeIndexFieldsRequestTypeDef](./type_defs.md#describeindexfieldsrequesttypedef).
+[DescribeIndexFieldsRequestRequestTypeDef](./type_defs.md#describeindexfieldsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -445,7 +457,7 @@ Keyword-only arguments:
 - `Deployed`: `bool`
 
 Returns
-[DescribeIndexFieldsResponseResponseTypeDef](./type_defs.md#describeindexfieldsresponseresponsetypedef).
+[DescribeIndexFieldsResponseTypeDef](./type_defs.md#describeindexfieldsresponsetypedef).
 
 ### describe_scaling_parameters
 
@@ -458,14 +470,14 @@ Boto3 documentation:
 [CloudSearch.Client.describe_scaling_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_scaling_parameters)
 
 Arguments mapping described in
-[DescribeScalingParametersRequestTypeDef](./type_defs.md#describescalingparametersrequesttypedef).
+[DescribeScalingParametersRequestRequestTypeDef](./type_defs.md#describescalingparametersrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
 Returns
-[DescribeScalingParametersResponseResponseTypeDef](./type_defs.md#describescalingparametersresponseresponsetypedef).
+[DescribeScalingParametersResponseTypeDef](./type_defs.md#describescalingparametersresponsetypedef).
 
 ### describe_service_access_policies
 
@@ -479,7 +491,7 @@ Boto3 documentation:
 [CloudSearch.Client.describe_service_access_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_service_access_policies)
 
 Arguments mapping described in
-[DescribeServiceAccessPoliciesRequestTypeDef](./type_defs.md#describeserviceaccesspoliciesrequesttypedef).
+[DescribeServiceAccessPoliciesRequestRequestTypeDef](./type_defs.md#describeserviceaccesspoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -487,7 +499,7 @@ Keyword-only arguments:
 - `Deployed`: `bool`
 
 Returns
-[DescribeServiceAccessPoliciesResponseResponseTypeDef](./type_defs.md#describeserviceaccesspoliciesresponseresponsetypedef).
+[DescribeServiceAccessPoliciesResponseTypeDef](./type_defs.md#describeserviceaccesspoliciesresponsetypedef).
 
 ### describe_suggesters
 
@@ -499,7 +511,7 @@ Boto3 documentation:
 [CloudSearch.Client.describe_suggesters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_suggesters)
 
 Arguments mapping described in
-[DescribeSuggestersRequestTypeDef](./type_defs.md#describesuggestersrequesttypedef).
+[DescribeSuggestersRequestRequestTypeDef](./type_defs.md#describesuggestersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -508,7 +520,7 @@ Keyword-only arguments:
 - `Deployed`: `bool`
 
 Returns
-[DescribeSuggestersResponseResponseTypeDef](./type_defs.md#describesuggestersresponseresponsetypedef).
+[DescribeSuggestersResponseTypeDef](./type_defs.md#describesuggestersresponsetypedef).
 
 ### generate_presigned_url
 
@@ -540,14 +552,14 @@ Boto3 documentation:
 [CloudSearch.Client.index_documents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.index_documents)
 
 Arguments mapping described in
-[IndexDocumentsRequestTypeDef](./type_defs.md#indexdocumentsrequesttypedef).
+[IndexDocumentsRequestRequestTypeDef](./type_defs.md#indexdocumentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
 Returns
-[IndexDocumentsResponseResponseTypeDef](./type_defs.md#indexdocumentsresponseresponsetypedef).
+[IndexDocumentsResponseTypeDef](./type_defs.md#indexdocumentsresponsetypedef).
 
 ### list_domain_names
 
@@ -559,7 +571,7 @@ Boto3 documentation:
 [CloudSearch.Client.list_domain_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.list_domain_names)
 
 Returns
-[ListDomainNamesResponseResponseTypeDef](./type_defs.md#listdomainnamesresponseresponsetypedef).
+[ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef).
 
 ### update_availability_options
 
@@ -572,7 +584,7 @@ Boto3 documentation:
 [CloudSearch.Client.update_availability_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_availability_options)
 
 Arguments mapping described in
-[UpdateAvailabilityOptionsRequestTypeDef](./type_defs.md#updateavailabilityoptionsrequesttypedef).
+[UpdateAvailabilityOptionsRequestRequestTypeDef](./type_defs.md#updateavailabilityoptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -580,7 +592,7 @@ Keyword-only arguments:
 - `MultiAZ`: `bool` *(required)*
 
 Returns
-[UpdateAvailabilityOptionsResponseResponseTypeDef](./type_defs.md#updateavailabilityoptionsresponseresponsetypedef).
+[UpdateAvailabilityOptionsResponseTypeDef](./type_defs.md#updateavailabilityoptionsresponsetypedef).
 
 ### update_domain_endpoint_options
 
@@ -594,7 +606,7 @@ Boto3 documentation:
 [CloudSearch.Client.update_domain_endpoint_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_domain_endpoint_options)
 
 Arguments mapping described in
-[UpdateDomainEndpointOptionsRequestTypeDef](./type_defs.md#updatedomainendpointoptionsrequesttypedef).
+[UpdateDomainEndpointOptionsRequestRequestTypeDef](./type_defs.md#updatedomainendpointoptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -604,7 +616,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateDomainEndpointOptionsResponseResponseTypeDef](./type_defs.md#updatedomainendpointoptionsresponseresponsetypedef).
+[UpdateDomainEndpointOptionsResponseTypeDef](./type_defs.md#updatedomainendpointoptionsresponsetypedef).
 
 ### update_scaling_parameters
 
@@ -617,7 +629,7 @@ Boto3 documentation:
 [CloudSearch.Client.update_scaling_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_scaling_parameters)
 
 Arguments mapping described in
-[UpdateScalingParametersRequestTypeDef](./type_defs.md#updatescalingparametersrequesttypedef).
+[UpdateScalingParametersRequestRequestTypeDef](./type_defs.md#updatescalingparametersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -627,7 +639,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateScalingParametersResponseResponseTypeDef](./type_defs.md#updatescalingparametersresponseresponsetypedef).
+[UpdateScalingParametersResponseTypeDef](./type_defs.md#updatescalingparametersresponsetypedef).
 
 ### update_service_access_policies
 
@@ -641,7 +653,7 @@ Boto3 documentation:
 [CloudSearch.Client.update_service_access_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_service_access_policies)
 
 Arguments mapping described in
-[UpdateServiceAccessPoliciesRequestTypeDef](./type_defs.md#updateserviceaccesspoliciesrequesttypedef).
+[UpdateServiceAccessPoliciesRequestRequestTypeDef](./type_defs.md#updateserviceaccesspoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -649,4 +661,4 @@ Keyword-only arguments:
 - `AccessPolicies`: `str` *(required)*
 
 Returns
-[UpdateServiceAccessPoliciesResponseResponseTypeDef](./type_defs.md#updateserviceaccesspoliciesresponseresponsetypedef).
+[UpdateServiceAccessPoliciesResponseTypeDef](./type_defs.md#updateserviceaccesspoliciesresponsetypedef).

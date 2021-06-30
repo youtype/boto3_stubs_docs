@@ -32,6 +32,7 @@ from mypy_boto3_kinesis_video_signaling.client import KinesisVideoSignalingChann
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_ice_server_config](./client.md#get_ice_server_config)
 - [send_alexa_offer_to_master](./client.md#send_alexa_offer_to_master)
@@ -68,12 +69,12 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesis_video_signaling.type_defs import GetIceServerConfigRequestTypeDef, ...
+from mypy_boto3_kinesis_video_signaling.type_defs import GetIceServerConfigRequestRequestTypeDef, ...
 ```
 
-- [GetIceServerConfigRequestTypeDef](./type_defs.md#geticeserverconfigrequesttypedef)
-- [GetIceServerConfigResponseResponseTypeDef](./type_defs.md#geticeserverconfigresponseresponsetypedef)
+- [GetIceServerConfigRequestRequestTypeDef](./type_defs.md#geticeserverconfigrequestrequesttypedef)
+- [GetIceServerConfigResponseTypeDef](./type_defs.md#geticeserverconfigresponsetypedef)
 - [IceServerTypeDef](./type_defs.md#iceservertypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [SendAlexaOfferToMasterRequestTypeDef](./type_defs.md#sendalexaoffertomasterrequesttypedef)
-- [SendAlexaOfferToMasterResponseResponseTypeDef](./type_defs.md#sendalexaoffertomasterresponseresponsetypedef)
+- [SendAlexaOfferToMasterRequestRequestTypeDef](./type_defs.md#sendalexaoffertomasterrequestrequesttypedef)
+- [SendAlexaOfferToMasterResponseTypeDef](./type_defs.md#sendalexaoffertomasterresponsetypedef)

@@ -8,50 +8,50 @@ type annotations stubs module
 [mypy_boto3_iot1click_devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
 
 - [Typed dictionaries for boto3 IoT1ClickDevicesService module](#typed-dictionaries-for-boto3-iot1clickdevicesservice-module)
-  - [ClaimDevicesByClaimCodeRequestTypeDef](#claimdevicesbyclaimcoderequesttypedef)
-  - [ClaimDevicesByClaimCodeResponseResponseTypeDef](#claimdevicesbyclaimcoderesponseresponsetypedef)
-  - [DescribeDeviceRequestTypeDef](#describedevicerequesttypedef)
-  - [DescribeDeviceResponseResponseTypeDef](#describedeviceresponseresponsetypedef)
+  - [ClaimDevicesByClaimCodeRequestRequestTypeDef](#claimdevicesbyclaimcoderequestrequesttypedef)
+  - [ClaimDevicesByClaimCodeResponseTypeDef](#claimdevicesbyclaimcoderesponsetypedef)
+  - [DescribeDeviceRequestRequestTypeDef](#describedevicerequestrequesttypedef)
+  - [DescribeDeviceResponseTypeDef](#describedeviceresponsetypedef)
   - [DeviceDescriptionTypeDef](#devicedescriptiontypedef)
   - [DeviceEventTypeDef](#deviceeventtypedef)
   - [DeviceMethodTypeDef](#devicemethodtypedef)
   - [DeviceTypeDef](#devicetypedef)
-  - [FinalizeDeviceClaimRequestTypeDef](#finalizedeviceclaimrequesttypedef)
-  - [FinalizeDeviceClaimResponseResponseTypeDef](#finalizedeviceclaimresponseresponsetypedef)
-  - [GetDeviceMethodsRequestTypeDef](#getdevicemethodsrequesttypedef)
-  - [GetDeviceMethodsResponseResponseTypeDef](#getdevicemethodsresponseresponsetypedef)
-  - [InitiateDeviceClaimRequestTypeDef](#initiatedeviceclaimrequesttypedef)
-  - [InitiateDeviceClaimResponseResponseTypeDef](#initiatedeviceclaimresponseresponsetypedef)
-  - [InvokeDeviceMethodRequestTypeDef](#invokedevicemethodrequesttypedef)
-  - [InvokeDeviceMethodResponseResponseTypeDef](#invokedevicemethodresponseresponsetypedef)
-  - [ListDeviceEventsRequestTypeDef](#listdeviceeventsrequesttypedef)
-  - [ListDeviceEventsResponseResponseTypeDef](#listdeviceeventsresponseresponsetypedef)
-  - [ListDevicesRequestTypeDef](#listdevicesrequesttypedef)
-  - [ListDevicesResponseResponseTypeDef](#listdevicesresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [FinalizeDeviceClaimRequestRequestTypeDef](#finalizedeviceclaimrequestrequesttypedef)
+  - [FinalizeDeviceClaimResponseTypeDef](#finalizedeviceclaimresponsetypedef)
+  - [GetDeviceMethodsRequestRequestTypeDef](#getdevicemethodsrequestrequesttypedef)
+  - [GetDeviceMethodsResponseTypeDef](#getdevicemethodsresponsetypedef)
+  - [InitiateDeviceClaimRequestRequestTypeDef](#initiatedeviceclaimrequestrequesttypedef)
+  - [InitiateDeviceClaimResponseTypeDef](#initiatedeviceclaimresponsetypedef)
+  - [InvokeDeviceMethodRequestRequestTypeDef](#invokedevicemethodrequestrequesttypedef)
+  - [InvokeDeviceMethodResponseTypeDef](#invokedevicemethodresponsetypedef)
+  - [ListDeviceEventsRequestRequestTypeDef](#listdeviceeventsrequestrequesttypedef)
+  - [ListDeviceEventsResponseTypeDef](#listdeviceeventsresponsetypedef)
+  - [ListDevicesRequestRequestTypeDef](#listdevicesrequestrequesttypedef)
+  - [ListDevicesResponseTypeDef](#listdevicesresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
-  - [UnclaimDeviceRequestTypeDef](#unclaimdevicerequesttypedef)
-  - [UnclaimDeviceResponseResponseTypeDef](#unclaimdeviceresponseresponsetypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateDeviceStateRequestTypeDef](#updatedevicestaterequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [UnclaimDeviceRequestRequestTypeDef](#unclaimdevicerequestrequesttypedef)
+  - [UnclaimDeviceResponseTypeDef](#unclaimdeviceresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateDeviceStateRequestRequestTypeDef](#updatedevicestaterequestrequesttypedef)
 
-## ClaimDevicesByClaimCodeRequestTypeDef
+## ClaimDevicesByClaimCodeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_devices.type_defs import ClaimDevicesByClaimCodeRequestTypeDef
+from mypy_boto3_iot1click_devices.type_defs import ClaimDevicesByClaimCodeRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ClaimCode`: `str`
 
-## ClaimDevicesByClaimCodeResponseResponseTypeDef
+## ClaimDevicesByClaimCodeResponseTypeDef
 
 ```python
-from mypy_boto3_iot1click_devices.type_defs import ClaimDevicesByClaimCodeResponseResponseTypeDef
+from mypy_boto3_iot1click_devices.type_defs import ClaimDevicesByClaimCodeResponseTypeDef
 ```
 
 Required fields:
@@ -61,20 +61,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDeviceRequestTypeDef
+## DescribeDeviceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_devices.type_defs import DescribeDeviceRequestTypeDef
+from mypy_boto3_iot1click_devices.type_defs import DescribeDeviceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DeviceId`: `str`
 
-## DescribeDeviceResponseResponseTypeDef
+## DescribeDeviceResponseTypeDef
 
 ```python
-from mypy_boto3_iot1click_devices.type_defs import DescribeDeviceResponseResponseTypeDef
+from mypy_boto3_iot1click_devices.type_defs import DescribeDeviceResponseTypeDef
 ```
 
 Required fields:
@@ -134,10 +134,10 @@ Optional fields:
 - `DeviceId`: `str`
 - `Type`: `str`
 
-## FinalizeDeviceClaimRequestTypeDef
+## FinalizeDeviceClaimRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_devices.type_defs import FinalizeDeviceClaimRequestTypeDef
+from mypy_boto3_iot1click_devices.type_defs import FinalizeDeviceClaimRequestRequestTypeDef
 ```
 
 Required fields:
@@ -148,10 +148,10 @@ Optional fields:
 
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## FinalizeDeviceClaimResponseResponseTypeDef
+## FinalizeDeviceClaimResponseTypeDef
 
 ```python
-from mypy_boto3_iot1click_devices.type_defs import FinalizeDeviceClaimResponseResponseTypeDef
+from mypy_boto3_iot1click_devices.type_defs import FinalizeDeviceClaimResponseTypeDef
 ```
 
 Required fields:
@@ -160,20 +160,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDeviceMethodsRequestTypeDef
+## GetDeviceMethodsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_devices.type_defs import GetDeviceMethodsRequestTypeDef
+from mypy_boto3_iot1click_devices.type_defs import GetDeviceMethodsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DeviceId`: `str`
 
-## GetDeviceMethodsResponseResponseTypeDef
+## GetDeviceMethodsResponseTypeDef
 
 ```python
-from mypy_boto3_iot1click_devices.type_defs import GetDeviceMethodsResponseResponseTypeDef
+from mypy_boto3_iot1click_devices.type_defs import GetDeviceMethodsResponseTypeDef
 ```
 
 Required fields:
@@ -183,20 +183,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## InitiateDeviceClaimRequestTypeDef
+## InitiateDeviceClaimRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_devices.type_defs import InitiateDeviceClaimRequestTypeDef
+from mypy_boto3_iot1click_devices.type_defs import InitiateDeviceClaimRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DeviceId`: `str`
 
-## InitiateDeviceClaimResponseResponseTypeDef
+## InitiateDeviceClaimResponseTypeDef
 
 ```python
-from mypy_boto3_iot1click_devices.type_defs import InitiateDeviceClaimResponseResponseTypeDef
+from mypy_boto3_iot1click_devices.type_defs import InitiateDeviceClaimResponseTypeDef
 ```
 
 Required fields:
@@ -205,10 +205,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## InvokeDeviceMethodRequestTypeDef
+## InvokeDeviceMethodRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_devices.type_defs import InvokeDeviceMethodRequestTypeDef
+from mypy_boto3_iot1click_devices.type_defs import InvokeDeviceMethodRequestRequestTypeDef
 ```
 
 Required fields:
@@ -220,10 +220,10 @@ Optional fields:
 - `DeviceMethod`: [DeviceMethodTypeDef](./type_defs.md#devicemethodtypedef)
 - `DeviceMethodParameters`: `str`
 
-## InvokeDeviceMethodResponseResponseTypeDef
+## InvokeDeviceMethodResponseTypeDef
 
 ```python
-from mypy_boto3_iot1click_devices.type_defs import InvokeDeviceMethodResponseResponseTypeDef
+from mypy_boto3_iot1click_devices.type_defs import InvokeDeviceMethodResponseTypeDef
 ```
 
 Required fields:
@@ -232,10 +232,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDeviceEventsRequestTypeDef
+## ListDeviceEventsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_devices.type_defs import ListDeviceEventsRequestTypeDef
+from mypy_boto3_iot1click_devices.type_defs import ListDeviceEventsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -249,10 +249,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListDeviceEventsResponseResponseTypeDef
+## ListDeviceEventsResponseTypeDef
 
 ```python
-from mypy_boto3_iot1click_devices.type_defs import ListDeviceEventsResponseResponseTypeDef
+from mypy_boto3_iot1click_devices.type_defs import ListDeviceEventsResponseTypeDef
 ```
 
 Required fields:
@@ -262,10 +262,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDevicesRequestTypeDef
+## ListDevicesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_devices.type_defs import ListDevicesRequestTypeDef
+from mypy_boto3_iot1click_devices.type_defs import ListDevicesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -274,10 +274,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListDevicesResponseResponseTypeDef
+## ListDevicesResponseTypeDef
 
 ```python
-from mypy_boto3_iot1click_devices.type_defs import ListDevicesResponseResponseTypeDef
+from mypy_boto3_iot1click_devices.type_defs import ListDevicesResponseTypeDef
 ```
 
 Required fields:
@@ -288,20 +288,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_devices.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_iot1click_devices.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_iot1click_devices.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_iot1click_devices.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -336,10 +336,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_devices.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_iot1click_devices.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -347,20 +347,20 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## UnclaimDeviceRequestTypeDef
+## UnclaimDeviceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_devices.type_defs import UnclaimDeviceRequestTypeDef
+from mypy_boto3_iot1click_devices.type_defs import UnclaimDeviceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DeviceId`: `str`
 
-## UnclaimDeviceResponseResponseTypeDef
+## UnclaimDeviceResponseTypeDef
 
 ```python
-from mypy_boto3_iot1click_devices.type_defs import UnclaimDeviceResponseResponseTypeDef
+from mypy_boto3_iot1click_devices.type_defs import UnclaimDeviceResponseTypeDef
 ```
 
 Required fields:
@@ -369,10 +369,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_devices.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_iot1click_devices.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -380,10 +380,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateDeviceStateRequestTypeDef
+## UpdateDeviceStateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_devices.type_defs import UpdateDeviceStateRequestTypeDef
+from mypy_boto3_iot1click_devices.type_defs import UpdateDeviceStateRequestRequestTypeDef
 ```
 
 Required fields:

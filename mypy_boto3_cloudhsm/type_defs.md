@@ -8,53 +8,53 @@ type annotations stubs module
 [mypy_boto3_cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
 
 - [Typed dictionaries for boto3 CloudHSM module](#typed-dictionaries-for-boto3-cloudhsm-module)
-  - [AddTagsToResourceRequestTypeDef](#addtagstoresourcerequesttypedef)
-  - [AddTagsToResourceResponseResponseTypeDef](#addtagstoresourceresponseresponsetypedef)
-  - [CreateHapgRequestTypeDef](#createhapgrequesttypedef)
-  - [CreateHapgResponseResponseTypeDef](#createhapgresponseresponsetypedef)
-  - [CreateHsmRequestTypeDef](#createhsmrequesttypedef)
-  - [CreateHsmResponseResponseTypeDef](#createhsmresponseresponsetypedef)
-  - [CreateLunaClientRequestTypeDef](#createlunaclientrequesttypedef)
-  - [CreateLunaClientResponseResponseTypeDef](#createlunaclientresponseresponsetypedef)
-  - [DeleteHapgRequestTypeDef](#deletehapgrequesttypedef)
-  - [DeleteHapgResponseResponseTypeDef](#deletehapgresponseresponsetypedef)
-  - [DeleteHsmRequestTypeDef](#deletehsmrequesttypedef)
-  - [DeleteHsmResponseResponseTypeDef](#deletehsmresponseresponsetypedef)
-  - [DeleteLunaClientRequestTypeDef](#deletelunaclientrequesttypedef)
-  - [DeleteLunaClientResponseResponseTypeDef](#deletelunaclientresponseresponsetypedef)
-  - [DescribeHapgRequestTypeDef](#describehapgrequesttypedef)
-  - [DescribeHapgResponseResponseTypeDef](#describehapgresponseresponsetypedef)
-  - [DescribeHsmRequestTypeDef](#describehsmrequesttypedef)
-  - [DescribeHsmResponseResponseTypeDef](#describehsmresponseresponsetypedef)
-  - [DescribeLunaClientRequestTypeDef](#describelunaclientrequesttypedef)
-  - [DescribeLunaClientResponseResponseTypeDef](#describelunaclientresponseresponsetypedef)
-  - [GetConfigRequestTypeDef](#getconfigrequesttypedef)
-  - [GetConfigResponseResponseTypeDef](#getconfigresponseresponsetypedef)
-  - [ListAvailableZonesResponseResponseTypeDef](#listavailablezonesresponseresponsetypedef)
-  - [ListHapgsRequestTypeDef](#listhapgsrequesttypedef)
-  - [ListHapgsResponseResponseTypeDef](#listhapgsresponseresponsetypedef)
-  - [ListHsmsRequestTypeDef](#listhsmsrequesttypedef)
-  - [ListHsmsResponseResponseTypeDef](#listhsmsresponseresponsetypedef)
-  - [ListLunaClientsRequestTypeDef](#listlunaclientsrequesttypedef)
-  - [ListLunaClientsResponseResponseTypeDef](#listlunaclientsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
-  - [ModifyHapgRequestTypeDef](#modifyhapgrequesttypedef)
-  - [ModifyHapgResponseResponseTypeDef](#modifyhapgresponseresponsetypedef)
-  - [ModifyHsmRequestTypeDef](#modifyhsmrequesttypedef)
-  - [ModifyHsmResponseResponseTypeDef](#modifyhsmresponseresponsetypedef)
-  - [ModifyLunaClientRequestTypeDef](#modifylunaclientrequesttypedef)
-  - [ModifyLunaClientResponseResponseTypeDef](#modifylunaclientresponseresponsetypedef)
+  - [AddTagsToResourceRequestRequestTypeDef](#addtagstoresourcerequestrequesttypedef)
+  - [AddTagsToResourceResponseTypeDef](#addtagstoresourceresponsetypedef)
+  - [CreateHapgRequestRequestTypeDef](#createhapgrequestrequesttypedef)
+  - [CreateHapgResponseTypeDef](#createhapgresponsetypedef)
+  - [CreateHsmRequestRequestTypeDef](#createhsmrequestrequesttypedef)
+  - [CreateHsmResponseTypeDef](#createhsmresponsetypedef)
+  - [CreateLunaClientRequestRequestTypeDef](#createlunaclientrequestrequesttypedef)
+  - [CreateLunaClientResponseTypeDef](#createlunaclientresponsetypedef)
+  - [DeleteHapgRequestRequestTypeDef](#deletehapgrequestrequesttypedef)
+  - [DeleteHapgResponseTypeDef](#deletehapgresponsetypedef)
+  - [DeleteHsmRequestRequestTypeDef](#deletehsmrequestrequesttypedef)
+  - [DeleteHsmResponseTypeDef](#deletehsmresponsetypedef)
+  - [DeleteLunaClientRequestRequestTypeDef](#deletelunaclientrequestrequesttypedef)
+  - [DeleteLunaClientResponseTypeDef](#deletelunaclientresponsetypedef)
+  - [DescribeHapgRequestRequestTypeDef](#describehapgrequestrequesttypedef)
+  - [DescribeHapgResponseTypeDef](#describehapgresponsetypedef)
+  - [DescribeHsmRequestRequestTypeDef](#describehsmrequestrequesttypedef)
+  - [DescribeHsmResponseTypeDef](#describehsmresponsetypedef)
+  - [DescribeLunaClientRequestRequestTypeDef](#describelunaclientrequestrequesttypedef)
+  - [DescribeLunaClientResponseTypeDef](#describelunaclientresponsetypedef)
+  - [GetConfigRequestRequestTypeDef](#getconfigrequestrequesttypedef)
+  - [GetConfigResponseTypeDef](#getconfigresponsetypedef)
+  - [ListAvailableZonesResponseTypeDef](#listavailablezonesresponsetypedef)
+  - [ListHapgsRequestRequestTypeDef](#listhapgsrequestrequesttypedef)
+  - [ListHapgsResponseTypeDef](#listhapgsresponsetypedef)
+  - [ListHsmsRequestRequestTypeDef](#listhsmsrequestrequesttypedef)
+  - [ListHsmsResponseTypeDef](#listhsmsresponsetypedef)
+  - [ListLunaClientsRequestRequestTypeDef](#listlunaclientsrequestrequesttypedef)
+  - [ListLunaClientsResponseTypeDef](#listlunaclientsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ModifyHapgRequestRequestTypeDef](#modifyhapgrequestrequesttypedef)
+  - [ModifyHapgResponseTypeDef](#modifyhapgresponsetypedef)
+  - [ModifyHsmRequestRequestTypeDef](#modifyhsmrequestrequesttypedef)
+  - [ModifyHsmResponseTypeDef](#modifyhsmresponsetypedef)
+  - [ModifyLunaClientRequestRequestTypeDef](#modifylunaclientrequestrequesttypedef)
+  - [ModifyLunaClientResponseTypeDef](#modifylunaclientresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [RemoveTagsFromResourceRequestTypeDef](#removetagsfromresourcerequesttypedef)
-  - [RemoveTagsFromResourceResponseResponseTypeDef](#removetagsfromresourceresponseresponsetypedef)
+  - [RemoveTagsFromResourceRequestRequestTypeDef](#removetagsfromresourcerequestrequesttypedef)
+  - [RemoveTagsFromResourceResponseTypeDef](#removetagsfromresourceresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TagTypeDef](#tagtypedef)
 
-## AddTagsToResourceRequestTypeDef
+## AddTagsToResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import AddTagsToResourceRequestTypeDef
+from mypy_boto3_cloudhsm.type_defs import AddTagsToResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -62,10 +62,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## AddTagsToResourceResponseResponseTypeDef
+## AddTagsToResourceResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import AddTagsToResourceResponseResponseTypeDef
+from mypy_boto3_cloudhsm.type_defs import AddTagsToResourceResponseTypeDef
 ```
 
 Required fields:
@@ -74,20 +74,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateHapgRequestTypeDef
+## CreateHapgRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import CreateHapgRequestTypeDef
+from mypy_boto3_cloudhsm.type_defs import CreateHapgRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Label`: `str`
 
-## CreateHapgResponseResponseTypeDef
+## CreateHapgResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import CreateHapgResponseResponseTypeDef
+from mypy_boto3_cloudhsm.type_defs import CreateHapgResponseTypeDef
 ```
 
 Required fields:
@@ -96,10 +96,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateHsmRequestTypeDef
+## CreateHsmRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import CreateHsmRequestTypeDef
+from mypy_boto3_cloudhsm.type_defs import CreateHsmRequestRequestTypeDef
 ```
 
 Required fields:
@@ -117,10 +117,10 @@ Optional fields:
 - `ClientToken`: `str`
 - `SyslogIp`: `str`
 
-## CreateHsmResponseResponseTypeDef
+## CreateHsmResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import CreateHsmResponseResponseTypeDef
+from mypy_boto3_cloudhsm.type_defs import CreateHsmResponseTypeDef
 ```
 
 Required fields:
@@ -129,10 +129,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateLunaClientRequestTypeDef
+## CreateLunaClientRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import CreateLunaClientRequestTypeDef
+from mypy_boto3_cloudhsm.type_defs import CreateLunaClientRequestRequestTypeDef
 ```
 
 Required fields:
@@ -143,10 +143,10 @@ Optional fields:
 
 - `Label`: `str`
 
-## CreateLunaClientResponseResponseTypeDef
+## CreateLunaClientResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import CreateLunaClientResponseResponseTypeDef
+from mypy_boto3_cloudhsm.type_defs import CreateLunaClientResponseTypeDef
 ```
 
 Required fields:
@@ -155,20 +155,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteHapgRequestTypeDef
+## DeleteHapgRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import DeleteHapgRequestTypeDef
+from mypy_boto3_cloudhsm.type_defs import DeleteHapgRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `HapgArn`: `str`
 
-## DeleteHapgResponseResponseTypeDef
+## DeleteHapgResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import DeleteHapgResponseResponseTypeDef
+from mypy_boto3_cloudhsm.type_defs import DeleteHapgResponseTypeDef
 ```
 
 Required fields:
@@ -177,20 +177,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteHsmRequestTypeDef
+## DeleteHsmRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import DeleteHsmRequestTypeDef
+from mypy_boto3_cloudhsm.type_defs import DeleteHsmRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `HsmArn`: `str`
 
-## DeleteHsmResponseResponseTypeDef
+## DeleteHsmResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import DeleteHsmResponseResponseTypeDef
+from mypy_boto3_cloudhsm.type_defs import DeleteHsmResponseTypeDef
 ```
 
 Required fields:
@@ -199,20 +199,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteLunaClientRequestTypeDef
+## DeleteLunaClientRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import DeleteLunaClientRequestTypeDef
+from mypy_boto3_cloudhsm.type_defs import DeleteLunaClientRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ClientArn`: `str`
 
-## DeleteLunaClientResponseResponseTypeDef
+## DeleteLunaClientResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import DeleteLunaClientResponseResponseTypeDef
+from mypy_boto3_cloudhsm.type_defs import DeleteLunaClientResponseTypeDef
 ```
 
 Required fields:
@@ -221,20 +221,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeHapgRequestTypeDef
+## DescribeHapgRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import DescribeHapgRequestTypeDef
+from mypy_boto3_cloudhsm.type_defs import DescribeHapgRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `HapgArn`: `str`
 
-## DescribeHapgResponseResponseTypeDef
+## DescribeHapgResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import DescribeHapgResponseResponseTypeDef
+from mypy_boto3_cloudhsm.type_defs import DescribeHapgResponseTypeDef
 ```
 
 Required fields:
@@ -251,10 +251,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeHsmRequestTypeDef
+## DescribeHsmRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import DescribeHsmRequestTypeDef
+from mypy_boto3_cloudhsm.type_defs import DescribeHsmRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -262,10 +262,10 @@ Optional fields:
 - `HsmArn`: `str`
 - `HsmSerialNumber`: `str`
 
-## DescribeHsmResponseResponseTypeDef
+## DescribeHsmResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import DescribeHsmResponseResponseTypeDef
+from mypy_boto3_cloudhsm.type_defs import DescribeHsmResponseTypeDef
 ```
 
 Required fields:
@@ -295,10 +295,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLunaClientRequestTypeDef
+## DescribeLunaClientRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import DescribeLunaClientRequestTypeDef
+from mypy_boto3_cloudhsm.type_defs import DescribeLunaClientRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -306,10 +306,10 @@ Optional fields:
 - `ClientArn`: `str`
 - `CertificateFingerprint`: `str`
 
-## DescribeLunaClientResponseResponseTypeDef
+## DescribeLunaClientResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import DescribeLunaClientResponseResponseTypeDef
+from mypy_boto3_cloudhsm.type_defs import DescribeLunaClientResponseTypeDef
 ```
 
 Required fields:
@@ -322,10 +322,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetConfigRequestTypeDef
+## GetConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import GetConfigRequestTypeDef
+from mypy_boto3_cloudhsm.type_defs import GetConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -334,10 +334,10 @@ Required fields:
 - `ClientVersion`: [ClientVersionType](./literals.md#clientversiontype)
 - `HapgList`: `List`\[`str`\]
 
-## GetConfigResponseResponseTypeDef
+## GetConfigResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import GetConfigResponseResponseTypeDef
+from mypy_boto3_cloudhsm.type_defs import GetConfigResponseTypeDef
 ```
 
 Required fields:
@@ -348,10 +348,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAvailableZonesResponseResponseTypeDef
+## ListAvailableZonesResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import ListAvailableZonesResponseResponseTypeDef
+from mypy_boto3_cloudhsm.type_defs import ListAvailableZonesResponseTypeDef
 ```
 
 Required fields:
@@ -360,20 +360,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListHapgsRequestTypeDef
+## ListHapgsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import ListHapgsRequestTypeDef
+from mypy_boto3_cloudhsm.type_defs import ListHapgsRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `NextToken`: `str`
 
-## ListHapgsResponseResponseTypeDef
+## ListHapgsResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import ListHapgsResponseResponseTypeDef
+from mypy_boto3_cloudhsm.type_defs import ListHapgsResponseTypeDef
 ```
 
 Required fields:
@@ -383,20 +383,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListHsmsRequestTypeDef
+## ListHsmsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import ListHsmsRequestTypeDef
+from mypy_boto3_cloudhsm.type_defs import ListHsmsRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `NextToken`: `str`
 
-## ListHsmsResponseResponseTypeDef
+## ListHsmsResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import ListHsmsResponseResponseTypeDef
+from mypy_boto3_cloudhsm.type_defs import ListHsmsResponseTypeDef
 ```
 
 Required fields:
@@ -406,20 +406,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListLunaClientsRequestTypeDef
+## ListLunaClientsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import ListLunaClientsRequestTypeDef
+from mypy_boto3_cloudhsm.type_defs import ListLunaClientsRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `NextToken`: `str`
 
-## ListLunaClientsResponseResponseTypeDef
+## ListLunaClientsResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import ListLunaClientsResponseResponseTypeDef
+from mypy_boto3_cloudhsm.type_defs import ListLunaClientsResponseTypeDef
 ```
 
 Required fields:
@@ -429,20 +429,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_cloudhsm.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_cloudhsm.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -451,10 +451,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyHapgRequestTypeDef
+## ModifyHapgRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import ModifyHapgRequestTypeDef
+from mypy_boto3_cloudhsm.type_defs import ModifyHapgRequestRequestTypeDef
 ```
 
 Required fields:
@@ -466,10 +466,10 @@ Optional fields:
 - `Label`: `str`
 - `PartitionSerialList`: `List`\[`str`\]
 
-## ModifyHapgResponseResponseTypeDef
+## ModifyHapgResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import ModifyHapgResponseResponseTypeDef
+from mypy_boto3_cloudhsm.type_defs import ModifyHapgResponseTypeDef
 ```
 
 Required fields:
@@ -478,10 +478,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyHsmRequestTypeDef
+## ModifyHsmRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import ModifyHsmRequestTypeDef
+from mypy_boto3_cloudhsm.type_defs import ModifyHsmRequestRequestTypeDef
 ```
 
 Required fields:
@@ -496,10 +496,10 @@ Optional fields:
 - `ExternalId`: `str`
 - `SyslogIp`: `str`
 
-## ModifyHsmResponseResponseTypeDef
+## ModifyHsmResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import ModifyHsmResponseResponseTypeDef
+from mypy_boto3_cloudhsm.type_defs import ModifyHsmResponseTypeDef
 ```
 
 Required fields:
@@ -508,10 +508,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyLunaClientRequestTypeDef
+## ModifyLunaClientRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import ModifyLunaClientRequestTypeDef
+from mypy_boto3_cloudhsm.type_defs import ModifyLunaClientRequestRequestTypeDef
 ```
 
 Required fields:
@@ -519,10 +519,10 @@ Required fields:
 - `ClientArn`: `str`
 - `Certificate`: `str`
 
-## ModifyLunaClientResponseResponseTypeDef
+## ModifyLunaClientResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import ModifyLunaClientResponseResponseTypeDef
+from mypy_boto3_cloudhsm.type_defs import ModifyLunaClientResponseTypeDef
 ```
 
 Required fields:
@@ -543,10 +543,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## RemoveTagsFromResourceRequestTypeDef
+## RemoveTagsFromResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import RemoveTagsFromResourceRequestTypeDef
+from mypy_boto3_cloudhsm.type_defs import RemoveTagsFromResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -554,10 +554,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeyList`: `List`\[`str`\]
 
-## RemoveTagsFromResourceResponseResponseTypeDef
+## RemoveTagsFromResourceResponseTypeDef
 
 ```python
-from mypy_boto3_cloudhsm.type_defs import RemoveTagsFromResourceResponseResponseTypeDef
+from mypy_boto3_cloudhsm.type_defs import RemoveTagsFromResourceResponseTypeDef
 ```
 
 Required fields:
