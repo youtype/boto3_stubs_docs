@@ -4347,6 +4347,7 @@ Optional fields:
 - `ReplaceUnhealthyInstances`: `bool`
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `Context`: `str`
 
 ## CreateFleetResultTypeDef
 
@@ -13519,6 +13520,7 @@ Optional fields:
   `List`\[[DescribeFleetErrorTypeDef](./type_defs.md#describefleeterrortypedef)\]
 - `Instances`:
   `List`\[[DescribeFleetsInstancesTypeDef](./type_defs.md#describefleetsinstancestypedef)\]
+- `Context`: `str`
 
 ## FleetLaunchTemplateConfigRequestTypeDef
 
@@ -16886,6 +16888,7 @@ Optional fields:
   `List`\[[FleetLaunchTemplateConfigRequestTypeDef](./type_defs.md#fleetlaunchtemplateconfigrequesttypedef)\]
 - `TargetCapacitySpecification`:
   [TargetCapacitySpecificationRequestTypeDef](./type_defs.md#targetcapacityspecificationrequesttypedef)
+- `Context`: `str`
 
 ## ModifyFleetResultTypeDef
 
@@ -17433,6 +17436,7 @@ Optional fields:
   `List`\[[LaunchTemplateConfigTypeDef](./type_defs.md#launchtemplateconfigtypedef)\]
 - `TargetCapacity`: `int`
 - `OnDemandTargetCapacity`: `int`
+- `Context`: `str`
 
 ## ModifySpotFleetRequestResponseTypeDef
 
@@ -21971,6 +21975,7 @@ Optional fields:
 - `LoadBalancersConfig`:
   [LoadBalancersConfigTypeDef](./type_defs.md#loadbalancersconfigtypedef)
 - `InstancePoolsToUseCount`: `int`
+- `Context`: `str`
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 

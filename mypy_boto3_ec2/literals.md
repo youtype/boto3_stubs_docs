@@ -3849,6 +3849,7 @@ Values:
 - `natgateway`
 - `network-acl`
 - `network-insights-analysis`
+- `network-insights-boundary`
 - `network-insights-path`
 - `network-interface`
 - `placement-group`

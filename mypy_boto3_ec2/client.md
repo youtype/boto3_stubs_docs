@@ -1800,6 +1800,7 @@ Keyword-only arguments:
 - `ReplaceUnhealthyInstances`: `bool`
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `Context`: `str`
 
 Returns [CreateFleetResultTypeDef](./type_defs.md#createfleetresulttypedef).
 
@@ -8851,6 +8852,7 @@ Keyword-only arguments:
   `List`\[[FleetLaunchTemplateConfigRequestTypeDef](./type_defs.md#fleetlaunchtemplateconfigrequesttypedef)\]
 - `TargetCapacitySpecification`:
   [TargetCapacitySpecificationRequestTypeDef](./type_defs.md#targetcapacityspecificationrequesttypedef)
+- `Context`: `str`
 
 Returns [ModifyFleetResultTypeDef](./type_defs.md#modifyfleetresulttypedef).
 
@@ -9273,6 +9275,7 @@ Keyword-only arguments:
   `List`\[[LaunchTemplateConfigTypeDef](./type_defs.md#launchtemplateconfigtypedef)\]
 - `TargetCapacity`: `int`
 - `OnDemandTargetCapacity`: `int`
+- `Context`: `str`
 
 Returns
 [ModifySpotFleetRequestResponseTypeDef](./type_defs.md#modifyspotfleetrequestresponsetypedef).

@@ -8719,6 +8719,7 @@ Optional fields:
 - `ImageDigest`: `str`
 - `ModelDataUrl`: `str`
 - `ProductId`: `str`
+- `Environment`: `Dict`\[`str`, `str`\]
 
 ## ModelPackageGroupSummaryTypeDef
 

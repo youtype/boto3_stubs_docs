@@ -410,7 +410,7 @@ Returns
 ### create_algorithm
 
 Create a machine learning algorithm that you can use in Amazon SageMaker and
-list in the AWS Marketplace.
+list in the Amazon Web Services Marketplace.
 
 Type annotations for `boto3.client("sagemaker").create_algorithm` method.
 
@@ -1109,7 +1109,8 @@ Returns
 ### create_model_package
 
 Creates a model package that you can use to create Amazon SageMaker models or
-list on AWS Marketplace, or a versioned model that is part of a model group.
+list on Amazon Web Services Marketplace, or a versioned model that is part of a
+model group.
 
 Type annotations for `boto3.client("sagemaker").create_model_package` method.
 
@@ -2853,7 +2854,7 @@ Returns
 ### describe_model_package
 
 Returns a description of the specified model package, which is used to create
-Amazon SageMaker models or list them on AWS Marketplace.
+Amazon SageMaker models or list them on Amazon Web Services Marketplace.
 
 Type annotations for `boto3.client("sagemaker").describe_model_package` method.
 
@@ -4148,7 +4149,7 @@ Returns
 
 ### list_model_package_groups
 
-Gets a list of the model groups in your AWS account.
+Gets a list of the model groups in your Amazon Web Services account.
 
 Type annotations for `boto3.client("sagemaker").list_model_package_groups`
 method.
@@ -4233,7 +4234,7 @@ Returns
 
 ### list_models
 
-Lists models created with the CreateModel API.
+Lists models created with the `CreateModel` API.
 
 Type annotations for `boto3.client("sagemaker").list_models` method.
 
@@ -4359,7 +4360,7 @@ Returns
 ### list_notebook_instances
 
 Returns a list of the Amazon SageMaker notebook instances in the requester's
-account in an AWS Region.
+account in an Amazon Web Services Region.
 
 Type annotations for `boto3.client("sagemaker").list_notebook_instances`
 method.
@@ -4520,7 +4521,7 @@ Returns
 
 ### list_projects
 
-Gets a list of the projects in an AWS account.
+Gets a list of the projects in an Amazon Web Services account.
 
 Type annotations for `boto3.client("sagemaker").list_projects` method.
 
@@ -4544,8 +4545,8 @@ Returns [ListProjectsOutputTypeDef](./type_defs.md#listprojectsoutputtypedef).
 
 ### list_subscribed_workteams
 
-Gets a list of the work teams that you are subscribed to in the AWS
-Marketplace.
+Gets a list of the work teams that you are subscribed to in the Amazon Web
+Services Marketplace.
 
 Type annotations for `boto3.client("sagemaker").list_subscribed_workteams`
 method.
@@ -4749,7 +4750,8 @@ Returns
 
 ### list_workforces
 
-Use this operation to list all private and vendor workforces in an AWS Region.
+Use this operation to list all private and vendor workforces in an Amazon Web
+Services Region.
 
 Type annotations for `boto3.client("sagemaker").list_workforces` method.
 
