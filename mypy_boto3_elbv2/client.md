@@ -404,8 +404,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_account_limits
 
-Describes the current Elastic Load Balancing resource limits for your AWS
-account.
+Describes the current Elastic Load Balancing resource limits for your Amazon
+Web Services account.
 
 Type annotations for `boto3.client("elbv2").describe_account_limits` method.
 
