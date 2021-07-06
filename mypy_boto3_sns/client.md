@@ -130,7 +130,7 @@ Returns [Exceptions](#exceptions).
 ### add_permission
 
 Adds a statement to a topic's access control policy, granting access for the
-specified AWS accounts to the specified actions.
+specified accounts to the specified actions.
 
 Type annotations for `boto3.client("sns").add_permission` method.
 
@@ -253,8 +253,8 @@ Returns
 
 ### create_sms_sandbox_phone_number
 
-Adds a destination phone number to an AWS account in the SMS sandbox and sends
-a one-time password (OTP) to that phone number.
+Adds a destination phone number to an account in the SMS sandbox and sends a
+one-time password (OTP) to that phone number.
 
 Type annotations for `boto3.client("sns").create_sms_sandbox_phone_number`
 method.
@@ -329,7 +329,7 @@ Keyword-only arguments:
 
 ### delete_sms_sandbox_phone_number
 
-Deletes an AWS account's verified or pending phone number from the SMS sandbox.
+Deletes an account's verified or pending phone number from the SMS sandbox.
 
 Type annotations for `boto3.client("sns").delete_sms_sandbox_phone_number`
 method.
@@ -442,8 +442,7 @@ Returns
 
 ### get_sms_sandbox_account_status
 
-Retrieves the SMS sandbox status for the calling AWS account in the target AWS
-Region.
+Retrieves the SMS sandbox status for the calling account in the target Region.
 
 Type annotations for `boto3.client("sns").get_sms_sandbox_account_status`
 method.
@@ -516,8 +515,7 @@ Returns
 
 ### list_origination_numbers
 
-Lists the calling AWS account's dedicated origination numbers and their
-metadata.
+Lists the calling account's dedicated origination numbers and their metadata.
 
 Type annotations for `boto3.client("sns").list_origination_numbers` method.
 
@@ -577,7 +575,7 @@ Returns
 
 ### list_sms_sandbox_phone_numbers
 
-Lists the calling AWS account's current verified and pending destination phone
+Lists the calling account's current verified and pending destination phone
 numbers in the SMS sandbox.
 
 Type annotations for `boto3.client("sns").list_sms_sandbox_phone_numbers`
@@ -910,7 +908,7 @@ Returns `Dict`\[`str`, `Any`\].
 ### verify_sms_sandbox_phone_number
 
 Verifies a destination phone number with a one-time password (OTP) for the
-calling AWS account.
+calling account.
 
 Type annotations for `boto3.client("sns").verify_sms_sandbox_phone_number`
 method.

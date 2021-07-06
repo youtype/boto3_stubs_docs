@@ -307,7 +307,6 @@ Values:
 
 - `CUSTOM`
 - `DEFAULT`
-- `NONE`
 
 ## ReplicationConfigurationReplicatedDiskStagingDiskTypeType
 

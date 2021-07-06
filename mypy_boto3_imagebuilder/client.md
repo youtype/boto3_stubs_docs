@@ -344,6 +344,8 @@ Keyword-only arguments:
   `List`\[[InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef)\]
 - `tags`: `Dict`\[`str`, `str`\]
 - `workingDirectory`: `str`
+- `additionalInstanceConfiguration`:
+  [AdditionalInstanceConfigurationTypeDef](./type_defs.md#additionalinstanceconfigurationtypedef)
 
 Returns
 [CreateImageRecipeResponseTypeDef](./type_defs.md#createimagereciperesponsetypedef).
@@ -899,7 +901,7 @@ Returns
 ### list_image_packages
 
 List the Packages that are associated with an Image Build Version, as
-determined by AWS Systems Manager Inventory at build time.
+determined by Amazon EC2 Systems Manager Inventory at build time.
 
 Type annotations for `boto3.client("imagebuilder").list_image_packages` method.
 

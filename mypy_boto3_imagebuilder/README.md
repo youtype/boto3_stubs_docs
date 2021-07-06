@@ -137,14 +137,17 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_imagebuilder.type_defs import AmiDistributionConfigurationTypeDef, ...
+from mypy_boto3_imagebuilder.type_defs import AdditionalInstanceConfigurationTypeDef, ...
 ```
 
+- [AdditionalInstanceConfigurationTypeDef](./type_defs.md#additionalinstanceconfigurationtypedef)
 - [AmiDistributionConfigurationTypeDef](./type_defs.md#amidistributionconfigurationtypedef)
 - [AmiTypeDef](./type_defs.md#amitypedef)
 - [CancelImageCreationRequestRequestTypeDef](./type_defs.md#cancelimagecreationrequestrequesttypedef)
 - [CancelImageCreationResponseTypeDef](./type_defs.md#cancelimagecreationresponsetypedef)
 - [ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef)
+- [ComponentParameterDetailTypeDef](./type_defs.md#componentparameterdetailtypedef)
+- [ComponentParameterTypeDef](./type_defs.md#componentparametertypedef)
 - [ComponentSummaryTypeDef](./type_defs.md#componentsummarytypedef)
 - [ComponentTypeDef](./type_defs.md#componenttypedef)
 - [ComponentVersionTypeDef](./type_defs.md#componentversiontypedef)
@@ -263,6 +266,7 @@ from mypy_boto3_imagebuilder.type_defs import AmiDistributionConfigurationTypeDe
 - [ScheduleTypeDef](./type_defs.md#scheduletypedef)
 - [StartImagePipelineExecutionRequestRequestTypeDef](./type_defs.md#startimagepipelineexecutionrequestrequesttypedef)
 - [StartImagePipelineExecutionResponseTypeDef](./type_defs.md#startimagepipelineexecutionresponsetypedef)
+- [SystemsManagerAgentTypeDef](./type_defs.md#systemsmanageragenttypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [TargetContainerRepositoryTypeDef](./type_defs.md#targetcontainerrepositorytypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)

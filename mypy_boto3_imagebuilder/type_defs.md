@@ -8,11 +8,14 @@ type annotations stubs module
 [mypy_boto3_imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
 
 - [Typed dictionaries for boto3 imagebuilder module](#typed-dictionaries-for-boto3-imagebuilder-module)
+  - [AdditionalInstanceConfigurationTypeDef](#additionalinstanceconfigurationtypedef)
   - [AmiDistributionConfigurationTypeDef](#amidistributionconfigurationtypedef)
   - [AmiTypeDef](#amitypedef)
   - [CancelImageCreationRequestRequestTypeDef](#cancelimagecreationrequestrequesttypedef)
   - [CancelImageCreationResponseTypeDef](#cancelimagecreationresponsetypedef)
   - [ComponentConfigurationTypeDef](#componentconfigurationtypedef)
+  - [ComponentParameterDetailTypeDef](#componentparameterdetailtypedef)
+  - [ComponentParameterTypeDef](#componentparametertypedef)
   - [ComponentSummaryTypeDef](#componentsummarytypedef)
   - [ComponentTypeDef](#componenttypedef)
   - [ComponentVersionTypeDef](#componentversiontypedef)
@@ -131,6 +134,7 @@ type annotations stubs module
   - [ScheduleTypeDef](#scheduletypedef)
   - [StartImagePipelineExecutionRequestRequestTypeDef](#startimagepipelineexecutionrequestrequesttypedef)
   - [StartImagePipelineExecutionResponseTypeDef](#startimagepipelineexecutionresponsetypedef)
+  - [SystemsManagerAgentTypeDef](#systemsmanageragenttypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TargetContainerRepositoryTypeDef](#targetcontainerrepositorytypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
@@ -140,6 +144,18 @@ type annotations stubs module
   - [UpdateImagePipelineResponseTypeDef](#updateimagepipelineresponsetypedef)
   - [UpdateInfrastructureConfigurationRequestRequestTypeDef](#updateinfrastructureconfigurationrequestrequesttypedef)
   - [UpdateInfrastructureConfigurationResponseTypeDef](#updateinfrastructureconfigurationresponsetypedef)
+
+## AdditionalInstanceConfigurationTypeDef
+
+```python
+from mypy_boto3_imagebuilder.type_defs import AdditionalInstanceConfigurationTypeDef
+```
+
+Optional fields:
+
+- `systemsManagerAgent`:
+  [SystemsManagerAgentTypeDef](./type_defs.md#systemsmanageragenttypedef)
+- `userDataOverride`: `str`
 
 ## AmiDistributionConfigurationTypeDef
 
@@ -207,6 +223,38 @@ Required fields:
 
 - `componentArn`: `str`
 
+Optional fields:
+
+- `parameters`:
+  `List`\[[ComponentParameterTypeDef](./type_defs.md#componentparametertypedef)\]
+
+## ComponentParameterDetailTypeDef
+
+```python
+from mypy_boto3_imagebuilder.type_defs import ComponentParameterDetailTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+- `type`: `str`
+
+Optional fields:
+
+- `defaultValue`: `List`\[`str`\]
+- `description`: `str`
+
+## ComponentParameterTypeDef
+
+```python
+from mypy_boto3_imagebuilder.type_defs import ComponentParameterTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+- `value`: `List`\[`str`\]
+
 ## ComponentSummaryTypeDef
 
 ```python
@@ -243,6 +291,8 @@ Optional fields:
 - `type`: [ComponentTypeType](./literals.md#componenttypetype)
 - `platform`: [PlatformType](./literals.md#platformtype)
 - `supportedOsVersions`: `List`\[`str`\]
+- `parameters`:
+  `List`\[[ComponentParameterDetailTypeDef](./type_defs.md#componentparameterdetailtypedef)\]
 - `owner`: `str`
 - `data`: `str`
 - `kmsKeyId`: `str`
@@ -519,6 +569,8 @@ Optional fields:
   `List`\[[InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef)\]
 - `tags`: `Dict`\[`str`, `str`\]
 - `workingDirectory`: `str`
+- `additionalInstanceConfiguration`:
+  [AdditionalInstanceConfigurationTypeDef](./type_defs.md#additionalinstanceconfigurationtypedef)
 
 ## CreateImageRecipeResponseTypeDef
 
@@ -1186,6 +1238,8 @@ Optional fields:
 - `dateCreated`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 - `workingDirectory`: `str`
+- `additionalInstanceConfiguration`:
+  [AdditionalInstanceConfigurationTypeDef](./type_defs.md#additionalinstanceconfigurationtypedef)
 
 ## ImageStateTypeDef
 
@@ -1931,6 +1985,16 @@ Required fields:
 - `imageBuildVersionArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## SystemsManagerAgentTypeDef
+
+```python
+from mypy_boto3_imagebuilder.type_defs import SystemsManagerAgentTypeDef
+```
+
+Optional fields:
+
+- `uninstallAfterBuild`: `bool`
 
 ## TagResourceRequestRequestTypeDef
 

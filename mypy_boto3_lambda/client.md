@@ -157,7 +157,7 @@ Returns [Exceptions](#exceptions).
 ### add_layer_version_permission
 
 Adds permissions to the resource-based policy of a version of an
-`AWS Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration- layers.html>`\_\_.
+`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_.
 
 Type annotations for `boto3.client("lambda").add_layer_version_permission`
 method.
@@ -183,7 +183,8 @@ Returns
 
 ### add_permission
 
-Grants an AWS service or another account permission to use a function.
+Grants an Amazon Web Services service or another account permission to use a
+function.
 
 Type annotations for `boto3.client("lambda").add_permission` method.
 
@@ -276,7 +277,7 @@ Returns
 
 ### create_event_source_mapping
 
-Creates a mapping between an event source and an AWS Lambda function.
+Creates a mapping between an event source and an Lambda function.
 
 Type annotations for `boto3.client("lambda").create_event_source_mapping`
 method.
@@ -489,7 +490,7 @@ Keyword-only arguments:
 ### delete_layer_version
 
 Deletes a version of an
-`AWS Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_.
+`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_.
 
 Type annotations for `boto3.client("lambda").delete_layer_version` method.
 
@@ -544,7 +545,7 @@ Returns `str`.
 
 Retrieves details about your account's
 `limits <https://docs.aws.amazon.com/lambda/latest/dg/limits.html>`\_\_ and
-usage in an AWS Region.
+usage in an Amazon Web Services Region.
 
 Type annotations for `boto3.client("lambda").get_account_settings` method.
 
@@ -720,7 +721,7 @@ Returns
 ### get_layer_version
 
 Returns information about a version of an
-`AWS Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_
+`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_
 , with a link to download the layer archive that's valid for 10 minutes.
 
 Type annotations for `boto3.client("lambda").get_layer_version` method.
@@ -742,7 +743,7 @@ Returns
 ### get_layer_version_by_arn
 
 Returns information about a version of an
-`AWS Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_
+`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_
 , with a link to download the layer archive that's valid for 10 minutes.
 
 Type annotations for `boto3.client("lambda").get_layer_version_by_arn` method.
@@ -763,7 +764,7 @@ Returns
 ### get_layer_version_policy
 
 Returns the permission policy for a version of an
-`AWS Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_.
+`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_.
 
 Type annotations for `boto3.client("lambda").get_layer_version_policy` method.
 
@@ -1007,7 +1008,7 @@ Returns
 ### list_layer_versions
 
 Lists the versions of an
-`AWS Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_.
+`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_.
 
 Type annotations for `boto3.client("lambda").list_layer_versions` method.
 
@@ -1030,7 +1031,7 @@ Returns
 ### list_layers
 
 Lists
-`AWS Lambda layers <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_
+`Lambda layers <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_
 and shows information about the latest version of each.
 
 Type annotations for `boto3.client("lambda").list_layers` method.
@@ -1116,7 +1117,7 @@ Returns
 ### publish_layer_version
 
 Creates an
-`AWS Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_
+`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_
 from a ZIP archive.
 
 Type annotations for `boto3.client("lambda").publish_layer_version` method.
@@ -1258,7 +1259,7 @@ Returns
 ### remove_layer_version_permission
 
 Removes a statement from the permissions policy for a version of an
-`AWS Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration- layers.html>`\_\_.
+`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration- layers.html>`\_\_.
 
 Type annotations for `boto3.client("lambda").remove_layer_version_permission`
 method.
@@ -1278,7 +1279,8 @@ Keyword-only arguments:
 
 ### remove_permission
 
-Revokes function-use permission from an AWS service or another account.
+Revokes function-use permission from an Amazon Web Services service or another
+account.
 
 Type annotations for `boto3.client("lambda").remove_permission` method.
 

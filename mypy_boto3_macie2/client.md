@@ -468,7 +468,8 @@ Returns
 
 ### describe_organization_configuration
 
-Retrieves the Amazon Macie configuration settings for an AWS organization.
+Retrieves the Amazon Macie configuration settings for an Amazon Web Services
+organization.
 
 Type annotations for
 `boto3.client("macie2").describe_organization_configuration` method.
@@ -493,7 +494,7 @@ Returns `Dict`\[`str`, `Any`\].
 ### disable_organization_admin_account
 
 Disables an account as the delegated Amazon Macie administrator account for an
-AWS organization.
+Amazon Web Services organization.
 
 Type annotations for
 `boto3.client("macie2").disable_organization_admin_account` method.
@@ -578,7 +579,7 @@ Returns `Dict`\[`str`, `Any`\].
 ### enable_organization_admin_account
 
 Designates an account as the delegated Amazon Macie administrator account for
-an AWS organization.
+an Amazon Web Services organization.
 
 Type annotations for `boto3.client("macie2").enable_organization_admin_account`
 method.
@@ -745,8 +746,7 @@ Returns
 
 ### get_findings_publication_configuration
 
-Retrieves the configuration settings for publishing findings to AWS Security
-Hub.
+Retrieves the configuration settings for publishing findings to Security Hub.
 
 Type annotations for
 `boto3.client("macie2").get_findings_publication_configuration` method.
@@ -995,7 +995,7 @@ Returns
 ### list_organization_admin_accounts
 
 Retrieves information about the delegated Amazon Macie administrator account
-for an AWS organization.
+for an Amazon Web Services organization.
 
 Type annotations for `boto3.client("macie2").list_organization_admin_accounts`
 method.
@@ -1059,7 +1059,7 @@ Returns
 
 ### put_findings_publication_configuration
 
-Updates the configuration settings for publishing findings to AWS Security Hub.
+Updates the configuration settings for publishing findings to Security Hub.
 
 Type annotations for
 `boto3.client("macie2").put_findings_publication_configuration` method.
@@ -1080,8 +1080,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### search_resources
 
-Retrieves (queries) statistical data and other information about AWS resources
-that Amazon Macie monitors and analyzes.
+Retrieves (queries) statistical data and other information about Amazon Web
+Services resources that Amazon Macie monitors and analyzes.
 
 Type annotations for `boto3.client("macie2").search_resources` method.
 
@@ -1254,7 +1254,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_organization_configuration
 
-Updates the Amazon Macie configuration settings for an AWS organization.
+Updates the Amazon Macie configuration settings for an Amazon Web Services
+organization.
 
 Type annotations for `boto3.client("macie2").update_organization_configuration`
 method.

@@ -85,6 +85,7 @@ Values:
 - `ConfigurationConflict`
 - `InsufficientNumberOfReplicas`
 - `InternalFailure`
+- `UnsupportedAddonModification`
 
 ## AddonStatusType
 
@@ -179,6 +180,7 @@ Values:
 - `SecurityGroupNotFound`
 - `SubnetNotFound`
 - `Unknown`
+- `UnsupportedAddonModification`
 - `VpcIdNotFound`
 
 ## FargateProfileStatusType
