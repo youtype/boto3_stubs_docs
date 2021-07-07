@@ -696,7 +696,7 @@ Keyword-only arguments:
 
 ### IAMServiceResource.create_account_alias method
 
-Creates an alias for your AWS account.
+Creates an alias for your account.
 
 Type annotations for `boto3.resource("iam").create_account_alias` method.
 
@@ -712,7 +712,7 @@ Keyword-only arguments:
 
 ### IAMServiceResource.create_account_password_policy method
 
-Updates the password policy settings for the AWS account.
+Updates the password policy settings for the account.
 
 Type annotations for `boto3.resource("iam").create_account_password_policy`
 method.
@@ -778,7 +778,7 @@ Returns [InstanceProfile](#instanceprofile).
 
 ### IAMServiceResource.create_policy method
 
-Creates a new managed policy for your AWS account.
+Creates a new managed policy for your account.
 
 Type annotations for `boto3.resource("iam").create_policy` method.
 
@@ -800,7 +800,7 @@ Returns [Policy](#policy).
 
 ### IAMServiceResource.create_role method
 
-Creates a new role for your AWS account.
+Creates a new role for your account.
 
 Type annotations for `boto3.resource("iam").create_role` method.
 
@@ -845,7 +845,7 @@ Returns [SamlProvider](#samlprovider).
 
 ### IAMServiceResource.create_server_certificate method
 
-Uploads a server certificate entity for the AWS account.
+Uploads a server certificate entity for the account.
 
 Type annotations for `boto3.resource("iam").create_server_certificate` method.
 
@@ -888,7 +888,7 @@ Returns [SigningCertificate](#signingcertificate).
 
 ### IAMServiceResource.create_user method
 
-Creates a new IAM user for your AWS account.
+Creates a new IAM user for your account.
 
 Type annotations for `boto3.resource("iam").create_user` method.
 
@@ -909,7 +909,7 @@ Returns [User](#user).
 
 ### IAMServiceResource.create_virtual_mfa_device method
 
-Creates a new virtual MFA device for the AWS account.
+Creates a new virtual MFA device for the account.
 
 Type annotations for `boto3.resource("iam").create_virtual_mfa_device` method.
 
@@ -1144,7 +1144,7 @@ Boto3 documentation:
 
 #### AccountPasswordPolicy.delete method
 
-Deletes the password policy for the AWS account.
+Deletes the password policy for the account.
 
 Type annotations for `boto3.resource("iam").delete` method.
 
@@ -1184,7 +1184,7 @@ Boto3 documentation:
 
 #### AccountPasswordPolicy.update method
 
-Updates the password policy settings for the AWS account.
+Updates the password policy settings for the account.
 
 Type annotations for `boto3.resource("iam").update` method.
 
@@ -1971,7 +1971,7 @@ Returns [LoginProfile](#loginprofile).
 #### LoginProfile.delete method
 
 Deletes the password for the specified IAM user, which terminates the user's
-ability to access AWS services through the AWS Management Console.
+ability to access Amazon Web Services services through the Management Console.
 
 Type annotations for `boto3.resource("iam").delete` method.
 
@@ -2101,8 +2101,8 @@ Returns `List`\[`str`\].
 
 #### MfaDevice.resync method
 
-Synchronizes the specified MFA device with its IAM resource object on the AWS
-servers.
+Synchronizes the specified MFA device with its IAM resource object on the
+Amazon Web Services servers.
 
 Type annotations for `boto3.resource("iam").resync` method.
 
@@ -3299,7 +3299,7 @@ Keyword-only arguments:
 
 #### User.create method
 
-Creates a new IAM user for your AWS account.
+Creates a new IAM user for your account.
 
 Type annotations for `boto3.resource("iam").create` method.
 
@@ -3319,8 +3319,8 @@ Returns [User](#user).
 
 #### User.create_access_key_pair method
 
-Creates a new AWS secret access key and corresponding AWS access key ID for the
-specified user.
+Creates a new Amazon Web Services secret access key and corresponding Amazon
+Web Services access key ID for the specified user.
 
 Type annotations for `boto3.resource("iam").create_access_key_pair` method.
 

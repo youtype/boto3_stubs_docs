@@ -33,6 +33,7 @@ from mypy_boto3_cloudfront.client import CloudFrontClient
 
 ### Methods
 
+- [associate_alias](./client.md#associate_alias)
 - [can_paginate](./client.md#can_paginate)
 - [create_cache_policy](./client.md#create_cache_policy)
 - [create_cloud_front_origin_access_identity](./client.md#create_cloud_front_origin_access_identity)
@@ -90,6 +91,7 @@ from mypy_boto3_cloudfront.client import CloudFrontClient
 - [get_waiter](./client.md#get_waiter)
 - [list_cache_policies](./client.md#list_cache_policies)
 - [list_cloud_front_origin_access_identities](./client.md#list_cloud_front_origin_access_identities)
+- [list_conflicting_aliases](./client.md#list_conflicting_aliases)
 - [list_distributions](./client.md#list_distributions)
 - [list_distributions_by_cache_policy_id](./client.md#list_distributions_by_cache_policy_id)
 - [list_distributions_by_key_group](./client.md#list_distributions_by_key_group)
@@ -339,6 +341,7 @@ from mypy_boto3_cloudfront.type_defs import ActiveTrustedKeyGroupsTypeDef, ...
 - [AliasICPRecordalTypeDef](./type_defs.md#aliasicprecordaltypedef)
 - [AliasesTypeDef](./type_defs.md#aliasestypedef)
 - [AllowedMethodsTypeDef](./type_defs.md#allowedmethodstypedef)
+- [AssociateAliasRequestRequestTypeDef](./type_defs.md#associatealiasrequestrequesttypedef)
 - [CacheBehaviorTypeDef](./type_defs.md#cachebehaviortypedef)
 - [CacheBehaviorsTypeDef](./type_defs.md#cachebehaviorstypedef)
 - [CachePolicyConfigTypeDef](./type_defs.md#cachepolicyconfigtypedef)
@@ -353,6 +356,8 @@ from mypy_boto3_cloudfront.type_defs import ActiveTrustedKeyGroupsTypeDef, ...
 - [CloudFrontOriginAccessIdentityListTypeDef](./type_defs.md#cloudfrontoriginaccessidentitylisttypedef)
 - [CloudFrontOriginAccessIdentitySummaryTypeDef](./type_defs.md#cloudfrontoriginaccessidentitysummarytypedef)
 - [CloudFrontOriginAccessIdentityTypeDef](./type_defs.md#cloudfrontoriginaccessidentitytypedef)
+- [ConflictingAliasTypeDef](./type_defs.md#conflictingaliastypedef)
+- [ConflictingAliasesListTypeDef](./type_defs.md#conflictingaliaseslisttypedef)
 - [ContentTypeProfileConfigTypeDef](./type_defs.md#contenttypeprofileconfigtypedef)
 - [ContentTypeProfileTypeDef](./type_defs.md#contenttypeprofiletypedef)
 - [ContentTypeProfilesTypeDef](./type_defs.md#contenttypeprofilestypedef)
@@ -495,6 +500,8 @@ from mypy_boto3_cloudfront.type_defs import ActiveTrustedKeyGroupsTypeDef, ...
 - [ListCachePoliciesResultTypeDef](./type_defs.md#listcachepoliciesresulttypedef)
 - [ListCloudFrontOriginAccessIdentitiesRequestRequestTypeDef](./type_defs.md#listcloudfrontoriginaccessidentitiesrequestrequesttypedef)
 - [ListCloudFrontOriginAccessIdentitiesResultTypeDef](./type_defs.md#listcloudfrontoriginaccessidentitiesresulttypedef)
+- [ListConflictingAliasesRequestRequestTypeDef](./type_defs.md#listconflictingaliasesrequestrequesttypedef)
+- [ListConflictingAliasesResultTypeDef](./type_defs.md#listconflictingaliasesresulttypedef)
 - [ListDistributionsByCachePolicyIdRequestRequestTypeDef](./type_defs.md#listdistributionsbycachepolicyidrequestrequesttypedef)
 - [ListDistributionsByCachePolicyIdResultTypeDef](./type_defs.md#listdistributionsbycachepolicyidresulttypedef)
 - [ListDistributionsByKeyGroupRequestRequestTypeDef](./type_defs.md#listdistributionsbykeygrouprequestrequesttypedef)

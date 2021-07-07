@@ -118,30 +118,31 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
+- `AutoMinorVersionUpgrade`: `bool` *(required)*
+- `BrokerName`: `str` *(required)*
+- `DeploymentMode`: [DeploymentModeType](./literals.md#deploymentmodetype)
+  *(required)*
+- `EngineType`: [EngineTypeType](./literals.md#enginetypetype) *(required)*
+- `EngineVersion`: `str` *(required)*
+- `HostInstanceType`: `str` *(required)*
+- `PubliclyAccessible`: `bool` *(required)*
+- `Users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\] *(required)*
 - `AuthenticationStrategy`:
   [AuthenticationStrategyType](./literals.md#authenticationstrategytype)
-- `AutoMinorVersionUpgrade`: `bool`
-- `BrokerName`: `str`
 - `Configuration`:
   [ConfigurationIdTypeDef](./type_defs.md#configurationidtypedef)
 - `CreatorRequestId`: `str`
-- `DeploymentMode`: [DeploymentModeType](./literals.md#deploymentmodetype)
 - `EncryptionOptions`:
   [EncryptionOptionsTypeDef](./type_defs.md#encryptionoptionstypedef)
-- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
-- `EngineVersion`: `str`
-- `HostInstanceType`: `str`
 - `LdapServerMetadata`:
   [LdapServerMetadataInputTypeDef](./type_defs.md#ldapservermetadatainputtypedef)
 - `Logs`: [LogsTypeDef](./type_defs.md#logstypedef)
 - `MaintenanceWindowStartTime`:
   [WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef)
-- `PubliclyAccessible`: `bool`
 - `SecurityGroups`: `List`\[`str`\]
 - `StorageType`: [BrokerStorageTypeType](./literals.md#brokerstoragetypetype)
 - `SubnetIds`: `List`\[`str`\]
 - `Tags`: `Dict`\[`str`, `str`\]
-- `Users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
 
 Returns
 [CreateBrokerResponseTypeDef](./type_defs.md#createbrokerresponsetypedef).
@@ -160,11 +161,11 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
+- `EngineType`: [EngineTypeType](./literals.md#enginetypetype) *(required)*
+- `EngineVersion`: `str` *(required)*
+- `Name`: `str` *(required)*
 - `AuthenticationStrategy`:
   [AuthenticationStrategyType](./literals.md#authenticationstrategytype)
-- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
-- `EngineVersion`: `str`
-- `Name`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
@@ -202,10 +203,10 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `BrokerId`: `str` *(required)*
+- `Password`: `str` *(required)*
 - `Username`: `str` *(required)*
 - `ConsoleAccess`: `bool`
 - `Groups`: `List`\[`str`\]
-- `Password`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -548,6 +549,8 @@ Keyword-only arguments:
 - `LdapServerMetadata`:
   [LdapServerMetadataInputTypeDef](./type_defs.md#ldapservermetadatainputtypedef)
 - `Logs`: [LogsTypeDef](./type_defs.md#logstypedef)
+- `MaintenanceWindowStartTime`:
+  [WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef)
 - `SecurityGroups`: `List`\[`str`\]
 
 Returns
@@ -568,7 +571,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ConfigurationId`: `str` *(required)*
-- `Data`: `str`
+- `Data`: `str` *(required)*
 - `Description`: `str`
 
 Returns

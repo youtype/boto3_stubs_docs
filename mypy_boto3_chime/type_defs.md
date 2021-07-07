@@ -83,6 +83,8 @@ type annotations stubs module
   - [CreateChannelModeratorResponseTypeDef](#createchannelmoderatorresponsetypedef)
   - [CreateChannelRequestRequestTypeDef](#createchannelrequestrequesttypedef)
   - [CreateChannelResponseTypeDef](#createchannelresponsetypedef)
+  - [CreateMediaCapturePipelineRequestRequestTypeDef](#createmediacapturepipelinerequestrequesttypedef)
+  - [CreateMediaCapturePipelineResponseTypeDef](#createmediacapturepipelineresponsetypedef)
   - [CreateMeetingDialOutRequestRequestTypeDef](#createmeetingdialoutrequestrequesttypedef)
   - [CreateMeetingDialOutResponseTypeDef](#createmeetingdialoutresponsetypedef)
   - [CreateMeetingRequestRequestTypeDef](#createmeetingrequestrequesttypedef)
@@ -123,6 +125,7 @@ type annotations stubs module
   - [DeleteChannelModeratorRequestRequestTypeDef](#deletechannelmoderatorrequestrequesttypedef)
   - [DeleteChannelRequestRequestTypeDef](#deletechannelrequestrequesttypedef)
   - [DeleteEventsConfigurationRequestRequestTypeDef](#deleteeventsconfigurationrequestrequesttypedef)
+  - [DeleteMediaCapturePipelineRequestRequestTypeDef](#deletemediacapturepipelinerequestrequesttypedef)
   - [DeleteMeetingRequestRequestTypeDef](#deletemeetingrequestrequesttypedef)
   - [DeletePhoneNumberRequestRequestTypeDef](#deletephonenumberrequestrequesttypedef)
   - [DeleteProxySessionRequestRequestTypeDef](#deleteproxysessionrequestrequesttypedef)
@@ -182,6 +185,8 @@ type annotations stubs module
   - [GetEventsConfigurationRequestRequestTypeDef](#geteventsconfigurationrequestrequesttypedef)
   - [GetEventsConfigurationResponseTypeDef](#geteventsconfigurationresponsetypedef)
   - [GetGlobalSettingsResponseTypeDef](#getglobalsettingsresponsetypedef)
+  - [GetMediaCapturePipelineRequestRequestTypeDef](#getmediacapturepipelinerequestrequesttypedef)
+  - [GetMediaCapturePipelineResponseTypeDef](#getmediacapturepipelineresponsetypedef)
   - [GetMeetingRequestRequestTypeDef](#getmeetingrequestrequesttypedef)
   - [GetMeetingResponseTypeDef](#getmeetingresponsetypedef)
   - [GetMessagingSessionEndpointResponseTypeDef](#getmessagingsessionendpointresponsetypedef)
@@ -256,6 +261,8 @@ type annotations stubs module
   - [ListChannelsModeratedByAppInstanceUserResponseTypeDef](#listchannelsmoderatedbyappinstanceuserresponsetypedef)
   - [ListChannelsRequestRequestTypeDef](#listchannelsrequestrequesttypedef)
   - [ListChannelsResponseTypeDef](#listchannelsresponsetypedef)
+  - [ListMediaCapturePipelinesRequestRequestTypeDef](#listmediacapturepipelinesrequestrequesttypedef)
+  - [ListMediaCapturePipelinesResponseTypeDef](#listmediacapturepipelinesresponsetypedef)
   - [ListMeetingTagsRequestRequestTypeDef](#listmeetingtagsrequestrequesttypedef)
   - [ListMeetingTagsResponseTypeDef](#listmeetingtagsresponsetypedef)
   - [ListMeetingsRequestRequestTypeDef](#listmeetingsrequestrequesttypedef)
@@ -288,6 +295,7 @@ type annotations stubs module
   - [ListVoiceConnectorsResponseTypeDef](#listvoiceconnectorsresponsetypedef)
   - [LoggingConfigurationTypeDef](#loggingconfigurationtypedef)
   - [LogoutUserRequestRequestTypeDef](#logoutuserrequestrequesttypedef)
+  - [MediaCapturePipelineTypeDef](#mediacapturepipelinetypedef)
   - [MediaPlacementTypeDef](#mediaplacementtypedef)
   - [MeetingNotificationConfigurationTypeDef](#meetingnotificationconfigurationtypedef)
   - [MeetingTypeDef](#meetingtypedef)
@@ -1401,6 +1409,38 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateMediaCapturePipelineRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime.type_defs import CreateMediaCapturePipelineRequestRequestTypeDef
+```
+
+Required fields:
+
+- `SourceType`: `Literal['ChimeSdkMeeting']` (see
+  [MediaPipelineSourceTypeType](./literals.md#mediapipelinesourcetypetype))
+- `SourceArn`: `str`
+- `SinkType`: `Literal['S3Bucket']` (see
+  [MediaPipelineSinkTypeType](./literals.md#mediapipelinesinktypetype))
+- `SinkArn`: `str`
+
+Optional fields:
+
+- `ClientRequestToken`: `str`
+
+## CreateMediaCapturePipelineResponseTypeDef
+
+```python
+from mypy_boto3_chime.type_defs import CreateMediaCapturePipelineResponseTypeDef
+```
+
+Required fields:
+
+- `MediaCapturePipeline`:
+  [MediaCapturePipelineTypeDef](./type_defs.md#mediacapturepipelinetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CreateMeetingDialOutRequestRequestTypeDef
 
 ```python
@@ -1946,6 +1986,16 @@ Required fields:
 
 - `AccountId`: `str`
 - `BotId`: `str`
+
+## DeleteMediaCapturePipelineRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime.type_defs import DeleteMediaCapturePipelineRequestRequestTypeDef
+```
+
+Required fields:
+
+- `MediaPipelineId`: `str`
 
 ## DeleteMeetingRequestRequestTypeDef
 
@@ -2642,6 +2692,29 @@ Required fields:
   [BusinessCallingSettingsTypeDef](./type_defs.md#businesscallingsettingstypedef)
 - `VoiceConnector`:
   [VoiceConnectorSettingsTypeDef](./type_defs.md#voiceconnectorsettingstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetMediaCapturePipelineRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime.type_defs import GetMediaCapturePipelineRequestRequestTypeDef
+```
+
+Required fields:
+
+- `MediaPipelineId`: `str`
+
+## GetMediaCapturePipelineResponseTypeDef
+
+```python
+from mypy_boto3_chime.type_defs import GetMediaCapturePipelineResponseTypeDef
+```
+
+Required fields:
+
+- `MediaCapturePipeline`:
+  [MediaCapturePipelineTypeDef](./type_defs.md#mediacapturepipelinetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -3580,6 +3653,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListMediaCapturePipelinesRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime.type_defs import ListMediaCapturePipelinesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListMediaCapturePipelinesResponseTypeDef
+
+```python
+from mypy_boto3_chime.type_defs import ListMediaCapturePipelinesResponseTypeDef
+```
+
+Required fields:
+
+- `MediaCapturePipelines`:
+  `List`\[[MediaCapturePipelineTypeDef](./type_defs.md#mediacapturepipelinetypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListMeetingTagsRequestRequestTypeDef
 
 ```python
@@ -3989,6 +4087,25 @@ Required fields:
 
 - `AccountId`: `str`
 - `UserId`: `str`
+
+## MediaCapturePipelineTypeDef
+
+```python
+from mypy_boto3_chime.type_defs import MediaCapturePipelineTypeDef
+```
+
+Optional fields:
+
+- `MediaPipelineId`: `str`
+- `SourceType`: `Literal['ChimeSdkMeeting']` (see
+  [MediaPipelineSourceTypeType](./literals.md#mediapipelinesourcetypetype))
+- `SourceArn`: `str`
+- `Status`: [MediaPipelineStatusType](./literals.md#mediapipelinestatustype)
+- `SinkType`: `Literal['S3Bucket']` (see
+  [MediaPipelineSinkTypeType](./literals.md#mediapipelinesinktypetype))
+- `SinkArn`: `str`
+- `CreatedTimestamp`: `datetime`
+- `UpdatedTimestamp`: `datetime`
 
 ## MediaPlacementTypeDef
 

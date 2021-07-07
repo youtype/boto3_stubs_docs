@@ -3730,6 +3730,8 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 - `IpPermissions`:
   `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `CidrIp`: `str`
 - `FromPort`: `int`
 - `IpProtocol`: `str`
@@ -3737,9 +3739,12 @@ Keyword-only arguments:
 - `SourceSecurityGroupName`: `str`
 - `SourceSecurityGroupOwnerId`: `str`
 
+Returns
+[AuthorizeSecurityGroupEgressResultTypeDef](./type_defs.md#authorizesecuritygroupegressresulttypedef).
+
 #### SecurityGroup.authorize_ingress method
 
-Adds the specified ingress rules to a security group.
+Adds the specified inbound (ingress) rules to a security group.
 
 Type annotations for `boto3.resource("ec2").authorize_ingress` method.
 
@@ -3761,6 +3766,11 @@ Keyword-only arguments:
 - `SourceSecurityGroupOwnerId`: `str`
 - `ToPort`: `int`
 - `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+Returns
+[AuthorizeSecurityGroupIngressResultTypeDef](./type_defs.md#authorizesecuritygroupingressresulttypedef).
 
 #### SecurityGroup.create_tags method
 
@@ -3846,6 +3856,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 - `IpPermissions`:
   `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `SecurityGroupRuleIds`: `List`\[`str`\]
 - `CidrIp`: `str`
 - `FromPort`: `int`
 - `IpProtocol`: `str`
@@ -3858,7 +3869,7 @@ Returns
 
 #### SecurityGroup.revoke_ingress method
 
-Removes the specified ingress rules from a security group.
+Removes the specified inbound (ingress) rules from a security group.
 
 Type annotations for `boto3.resource("ec2").revoke_ingress` method.
 
@@ -3880,6 +3891,7 @@ Keyword-only arguments:
 - `SourceSecurityGroupOwnerId`: `str`
 - `ToPort`: `int`
 - `DryRun`: `bool`
+- `SecurityGroupRuleIds`: `List`\[`str`\]
 
 Returns
 [RevokeSecurityGroupIngressResultTypeDef](./type_defs.md#revokesecuritygroupingressresulttypedef).

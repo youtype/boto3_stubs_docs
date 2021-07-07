@@ -127,6 +127,11 @@ Optional fields:
 from mypy_boto3_mq.type_defs import BrokerSummaryTypeDef
 ```
 
+Required fields:
+
+- `DeploymentMode`: [DeploymentModeType](./literals.md#deploymentmodetype)
+- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
+
 Optional fields:
 
 - `BrokerArn`: `str`
@@ -134,8 +139,6 @@ Optional fields:
 - `BrokerName`: `str`
 - `BrokerState`: [BrokerStateType](./literals.md#brokerstatetype)
 - `Created`: `datetime`
-- `DeploymentMode`: [DeploymentModeType](./literals.md#deploymentmodetype)
-- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
 - `HostInstanceType`: `str`
 
 ## ConfigurationIdTypeDef
@@ -144,9 +147,12 @@ Optional fields:
 from mypy_boto3_mq.type_defs import ConfigurationIdTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Id`: `str`
+
+Optional fields:
+
 - `Revision`: `int`
 
 ## ConfigurationRevisionTypeDef
@@ -155,11 +161,14 @@ Optional fields:
 from mypy_boto3_mq.type_defs import ConfigurationRevisionTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Created`: `datetime`
-- `Description`: `str`
 - `Revision`: `int`
+
+Optional fields:
+
+- `Description`: `str`
 
 ## ConfigurationTypeDef
 
@@ -167,7 +176,7 @@ Optional fields:
 from mypy_boto3_mq.type_defs import ConfigurationTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Arn`: `str`
 - `AuthenticationStrategy`:
@@ -180,6 +189,9 @@ Optional fields:
 - `LatestRevision`:
   [ConfigurationRevisionTypeDef](./type_defs.md#configurationrevisiontypedef)
 - `Name`: `str`
+
+Optional fields:
+
 - `Tags`: `Dict`\[`str`, `str`\]
 
 ## ConfigurationsTypeDef
@@ -201,32 +213,35 @@ Optional fields:
 from mypy_boto3_mq.type_defs import CreateBrokerRequestRequestTypeDef
 ```
 
+Required fields:
+
+- `AutoMinorVersionUpgrade`: `bool`
+- `BrokerName`: `str`
+- `DeploymentMode`: [DeploymentModeType](./literals.md#deploymentmodetype)
+- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
+- `EngineVersion`: `str`
+- `HostInstanceType`: `str`
+- `PubliclyAccessible`: `bool`
+- `Users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
+
 Optional fields:
 
 - `AuthenticationStrategy`:
   [AuthenticationStrategyType](./literals.md#authenticationstrategytype)
-- `AutoMinorVersionUpgrade`: `bool`
-- `BrokerName`: `str`
 - `Configuration`:
   [ConfigurationIdTypeDef](./type_defs.md#configurationidtypedef)
 - `CreatorRequestId`: `str`
-- `DeploymentMode`: [DeploymentModeType](./literals.md#deploymentmodetype)
 - `EncryptionOptions`:
   [EncryptionOptionsTypeDef](./type_defs.md#encryptionoptionstypedef)
-- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
-- `EngineVersion`: `str`
-- `HostInstanceType`: `str`
 - `LdapServerMetadata`:
   [LdapServerMetadataInputTypeDef](./type_defs.md#ldapservermetadatainputtypedef)
 - `Logs`: [LogsTypeDef](./type_defs.md#logstypedef)
 - `MaintenanceWindowStartTime`:
   [WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef)
-- `PubliclyAccessible`: `bool`
 - `SecurityGroups`: `List`\[`str`\]
 - `StorageType`: [BrokerStorageTypeType](./literals.md#brokerstoragetypetype)
 - `SubnetIds`: `List`\[`str`\]
 - `Tags`: `Dict`\[`str`, `str`\]
-- `Users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
 
 ## CreateBrokerResponseTypeDef
 
@@ -247,13 +262,16 @@ Required fields:
 from mypy_boto3_mq.type_defs import CreateConfigurationRequestRequestTypeDef
 ```
 
+Required fields:
+
+- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
+- `EngineVersion`: `str`
+- `Name`: `str`
+
 Optional fields:
 
 - `AuthenticationStrategy`:
   [AuthenticationStrategyType](./literals.md#authenticationstrategytype)
-- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
-- `EngineVersion`: `str`
-- `Name`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
 ## CreateConfigurationResponseTypeDef
@@ -298,13 +316,13 @@ from mypy_boto3_mq.type_defs import CreateUserRequestRequestTypeDef
 Required fields:
 
 - `BrokerId`: `str`
+- `Password`: `str`
 - `Username`: `str`
 
 Optional fields:
 
 - `ConsoleAccess`: `bool`
 - `Groups`: `List`\[`str`\]
-- `Password`: `str`
 
 ## DeleteBrokerRequestRequestTypeDef
 
@@ -580,18 +598,21 @@ Optional fields:
 from mypy_boto3_mq.type_defs import LdapServerMetadataInputTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Hosts`: `List`\[`str`\]
 - `RoleBase`: `str`
-- `RoleName`: `str`
 - `RoleSearchMatching`: `str`
-- `RoleSearchSubtree`: `bool`
 - `ServiceAccountPassword`: `str`
 - `ServiceAccountUsername`: `str`
 - `UserBase`: `str`
-- `UserRoleName`: `str`
 - `UserSearchMatching`: `str`
+
+Optional fields:
+
+- `RoleName`: `str`
+- `RoleSearchSubtree`: `bool`
+- `UserRoleName`: `str`
 - `UserSearchSubtree`: `bool`
 
 ## LdapServerMetadataOutputTypeDef
@@ -600,17 +621,20 @@ Optional fields:
 from mypy_boto3_mq.type_defs import LdapServerMetadataOutputTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Hosts`: `List`\[`str`\]
 - `RoleBase`: `str`
-- `RoleName`: `str`
 - `RoleSearchMatching`: `str`
-- `RoleSearchSubtree`: `bool`
 - `ServiceAccountUsername`: `str`
 - `UserBase`: `str`
-- `UserRoleName`: `str`
 - `UserSearchMatching`: `str`
+
+Optional fields:
+
+- `RoleName`: `str`
+- `RoleSearchSubtree`: `bool`
+- `UserRoleName`: `str`
 - `UserSearchSubtree`: `bool`
 
 ## ListBrokersRequestRequestTypeDef
@@ -753,12 +777,15 @@ Required fields:
 from mypy_boto3_mq.type_defs import LogsSummaryTypeDef
 ```
 
+Required fields:
+
+- `General`: `bool`
+- `GeneralLogGroup`: `str`
+
 Optional fields:
 
 - `Audit`: `bool`
 - `AuditLogGroup`: `str`
-- `General`: `bool`
-- `GeneralLogGroup`: `str`
 - `Pending`: [PendingLogsTypeDef](./type_defs.md#pendinglogstypedef)
 
 ## LogsTypeDef
@@ -825,12 +852,15 @@ Required fields:
 from mypy_boto3_mq.type_defs import SanitizationWarningTypeDef
 ```
 
+Required fields:
+
+- `Reason`:
+  [SanitizationWarningReasonType](./literals.md#sanitizationwarningreasontype)
+
 Optional fields:
 
 - `AttributeName`: `str`
 - `ElementName`: `str`
-- `Reason`:
-  [SanitizationWarningReasonType](./literals.md#sanitizationwarningreasontype)
 
 ## UpdateBrokerRequestRequestTypeDef
 
@@ -854,6 +884,8 @@ Optional fields:
 - `LdapServerMetadata`:
   [LdapServerMetadataInputTypeDef](./type_defs.md#ldapservermetadatainputtypedef)
 - `Logs`: [LogsTypeDef](./type_defs.md#logstypedef)
+- `MaintenanceWindowStartTime`:
+  [WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef)
 - `SecurityGroups`: `List`\[`str`\]
 
 ## UpdateBrokerResponseTypeDef
@@ -875,6 +907,8 @@ Required fields:
 - `LdapServerMetadata`:
   [LdapServerMetadataOutputTypeDef](./type_defs.md#ldapservermetadataoutputtypedef)
 - `Logs`: [LogsTypeDef](./type_defs.md#logstypedef)
+- `MaintenanceWindowStartTime`:
+  [WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef)
 - `SecurityGroups`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -888,10 +922,10 @@ from mypy_boto3_mq.type_defs import UpdateConfigurationRequestRequestTypeDef
 Required fields:
 
 - `ConfigurationId`: `str`
+- `Data`: `str`
 
 Optional fields:
 
-- `Data`: `str`
 - `Description`: `str`
 
 ## UpdateConfigurationResponseTypeDef
@@ -936,11 +970,14 @@ Optional fields:
 from mypy_boto3_mq.type_defs import UserPendingChangesTypeDef
 ```
 
+Required fields:
+
+- `PendingChange`: [ChangeTypeType](./literals.md#changetypetype)
+
 Optional fields:
 
 - `ConsoleAccess`: `bool`
 - `Groups`: `List`\[`str`\]
-- `PendingChange`: [ChangeTypeType](./literals.md#changetypetype)
 
 ## UserSummaryTypeDef
 
@@ -948,10 +985,13 @@ Optional fields:
 from mypy_boto3_mq.type_defs import UserSummaryTypeDef
 ```
 
+Required fields:
+
+- `Username`: `str`
+
 Optional fields:
 
 - `PendingChange`: [ChangeTypeType](./literals.md#changetypetype)
-- `Username`: `str`
 
 ## UserTypeDef
 
@@ -959,12 +999,15 @@ Optional fields:
 from mypy_boto3_mq.type_defs import UserTypeDef
 ```
 
+Required fields:
+
+- `Password`: `str`
+- `Username`: `str`
+
 Optional fields:
 
 - `ConsoleAccess`: `bool`
 - `Groups`: `List`\[`str`\]
-- `Password`: `str`
-- `Username`: `str`
 
 ## WeeklyStartTimeTypeDef
 
@@ -972,8 +1015,11 @@ Optional fields:
 from mypy_boto3_mq.type_defs import WeeklyStartTimeTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `DayOfWeek`: [DayOfWeekType](./literals.md#dayofweektype)
 - `TimeOfDay`: `str`
+
+Optional fields:
+
 - `TimeZone`: `str`

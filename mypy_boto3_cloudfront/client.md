@@ -12,6 +12,7 @@ type annotations stubs module
   - [Exceptions](#exceptions)
   - [Methods](#methods)
     - [exceptions](#exceptions)
+    - [associate_alias](#associate_alias)
     - [can_paginate](#can_paginate)
     - [create_cache_policy](#create_cache_policy)
     - [create_cloud_front_origin_access_identity](#create_cloud_front_origin_access_identity)
@@ -66,6 +67,7 @@ type annotations stubs module
     - [get_streaming_distribution_config](#get_streaming_distribution_config)
     - [list_cache_policies](#list_cache_policies)
     - [list_cloud_front_origin_access_identities](#list_cloud_front_origin_access_identities)
+    - [list_conflicting_aliases](#list_conflicting_aliases)
     - [list_distributions](#list_distributions)
     - [list_distributions_by_cache_policy_id](#list_distributions_by_cache_policy_id)
     - [list_distributions_by_key_group](#list_distributions_by_key_group)
@@ -265,6 +267,24 @@ Boto3 documentation:
 [CloudFront.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+### associate_alias
+
+Associates an alias (also known as a CNAME or an alternate domain name) with a
+CloudFront distribution.
+
+Type annotations for `boto3.client("cloudfront").associate_alias` method.
+
+Boto3 documentation:
+[CloudFront.Client.associate_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.associate_alias)
+
+Arguments mapping described in
+[AssociateAliasRequestRequestTypeDef](./type_defs.md#associatealiasrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `TargetDistributionId`: `str` *(required)*
+- `Alias`: `str` *(required)*
 
 ### can_paginate
 
@@ -1348,6 +1368,31 @@ Keyword-only arguments:
 Returns
 [ListCloudFrontOriginAccessIdentitiesResultTypeDef](./type_defs.md#listcloudfrontoriginaccessidentitiesresulttypedef).
 
+### list_conflicting_aliases
+
+Gets a list of aliases (also called CNAMEs or alternate domain names) that
+conflict or overlap with the provided alias, and the associated CloudFront
+distributions and Amazon Web Services accounts for each conflicting alias.
+
+Type annotations for `boto3.client("cloudfront").list_conflicting_aliases`
+method.
+
+Boto3 documentation:
+[CloudFront.Client.list_conflicting_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_conflicting_aliases)
+
+Arguments mapping described in
+[ListConflictingAliasesRequestRequestTypeDef](./type_defs.md#listconflictingaliasesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DistributionId`: `str` *(required)*
+- `Alias`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListConflictingAliasesResultTypeDef](./type_defs.md#listconflictingaliasesresulttypedef).
+
 ### list_distributions
 
 List CloudFront distributions.
@@ -1464,7 +1509,7 @@ Returns
 
 ### list_distributions_by_web_acl_id
 
-List the distributions that are associated with a specified AWS WAF web ACL.
+List the distributions that are associated with a specified WAF web ACL.
 
 Type annotations for
 `boto3.client("cloudfront").list_distributions_by_web_acl_id` method.
@@ -1530,7 +1575,7 @@ Returns
 
 ### list_functions
 
-Gets a list of all CloudFront functions in your AWS account.
+Gets a list of all CloudFront functions in your account.
 
 Type annotations for `boto3.client("cloudfront").list_functions` method.
 

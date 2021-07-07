@@ -16,6 +16,7 @@ type annotations stubs module
   - [DescribeTapesPaginatorName](#describetapespaginatorname)
   - [DescribeVTLDevicesPaginatorName](#describevtldevicespaginatorname)
   - [FileShareTypeType](#filesharetypetype)
+  - [GatewayCapacityType](#gatewaycapacitytype)
   - [HostEnvironmentType](#hostenvironmenttype)
   - [ListFileSharesPaginatorName](#listfilesharespaginatorname)
   - [ListFileSystemAssociationsPaginatorName](#listfilesystemassociationspaginatorname)
@@ -119,6 +120,18 @@ Values:
 
 - `NFS`
 - `SMB`
+
+## GatewayCapacityType
+
+```python
+from mypy_boto3_storagegateway.literals import GatewayCapacityType
+```
+
+Values:
+
+- `Large`
+- `Medium`
+- `Small`
 
 ## HostEnvironmentType
 

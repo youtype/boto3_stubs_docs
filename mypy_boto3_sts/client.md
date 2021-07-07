@@ -78,8 +78,8 @@ Returns [Exceptions](#exceptions).
 
 ### assume_role
 
-Returns a set of temporary security credentials that you can use to access AWS
-resources that you might not normally have access to.
+Returns a set of temporary security credentials that you can use to access
+Amazon Web Services resources that you might not normally have access to.
 
 Type annotations for `boto3.client("sts").assume_role` method.
 
@@ -178,7 +178,7 @@ Returns `bool`.
 ### decode_authorization_message
 
 Decodes additional information about the authorization status of a request from
-an encoded message returned in response to an AWS request.
+an encoded message returned in response to an Amazon Web Services request.
 
 Type annotations for `boto3.client("sts").decode_authorization_message` method.
 
@@ -272,7 +272,8 @@ Returns
 
 ### get_session_token
 
-Returns a set of temporary credentials for an AWS account or IAM user.
+Returns a set of temporary credentials for an Amazon Web Services account or
+IAM user.
 
 Type annotations for `boto3.client("sts").get_session_token` method.
 

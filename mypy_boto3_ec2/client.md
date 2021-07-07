@@ -259,6 +259,7 @@ type annotations stubs module
     - [describe_scheduled_instance_availability](#describe_scheduled_instance_availability)
     - [describe_scheduled_instances](#describe_scheduled_instances)
     - [describe_security_group_references](#describe_security_group_references)
+    - [describe_security_group_rules](#describe_security_group_rules)
     - [describe_security_groups](#describe_security_groups)
     - [describe_snapshot_attribute](#describe_snapshot_attribute)
     - [describe_snapshots](#describe_snapshots)
@@ -389,6 +390,7 @@ type annotations stubs module
     - [modify_managed_prefix_list](#modify_managed_prefix_list)
     - [modify_network_interface_attribute](#modify_network_interface_attribute)
     - [modify_reserved_instances](#modify_reserved_instances)
+    - [modify_security_group_rules](#modify_security_group_rules)
     - [modify_snapshot_attribute](#modify_snapshot_attribute)
     - [modify_spot_fleet_request](#modify_spot_fleet_request)
     - [modify_subnet_attribute](#modify_subnet_attribute)
@@ -863,8 +865,8 @@ Keyword-only arguments:
 
 ### associate_enclave_certificate_iam_role
 
-Associates an AWS Identity and Access Management (IAM) role with an AWS
-Certificate Manager (ACM) certificate.
+Associates an Identity and Access Management (IAM) role with an Certificate
+Manager (ACM) certificate.
 
 Type annotations for
 `boto3.client("ec2").associate_enclave_certificate_iam_role` method.
@@ -1196,6 +1198,8 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 - `IpPermissions`:
   `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `CidrIp`: `str`
 - `FromPort`: `int`
 - `IpProtocol`: `str`
@@ -1203,9 +1207,12 @@ Keyword-only arguments:
 - `SourceSecurityGroupName`: `str`
 - `SourceSecurityGroupOwnerId`: `str`
 
+Returns
+[AuthorizeSecurityGroupEgressResultTypeDef](./type_defs.md#authorizesecuritygroupegressresulttypedef).
+
 ### authorize_security_group_ingress
 
-Adds the specified ingress rules to a security group.
+Adds the specified inbound (ingress) rules to a security group.
 
 Type annotations for `boto3.client("ec2").authorize_security_group_ingress`
 method.
@@ -1229,6 +1236,11 @@ Keyword-only arguments:
 - `SourceSecurityGroupOwnerId`: `str`
 - `ToPort`: `int`
 - `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+Returns
+[AuthorizeSecurityGroupIngressResultTypeDef](./type_defs.md#authorizesecuritygroupingressresulttypedef).
 
 ### bundle_instance
 
@@ -6235,6 +6247,30 @@ Keyword-only arguments:
 Returns
 [DescribeSecurityGroupReferencesResultTypeDef](./type_defs.md#describesecuritygroupreferencesresulttypedef).
 
+### describe_security_group_rules
+
+Describes one or more of your security group rules.
+
+Type annotations for `boto3.client("ec2").describe_security_group_rules`
+method.
+
+Boto3 documentation:
+[EC2.Client.describe_security_group_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_security_group_rules)
+
+Arguments mapping described in
+[DescribeSecurityGroupRulesRequestRequestTypeDef](./type_defs.md#describesecuritygrouprulesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SecurityGroupRuleIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeSecurityGroupRulesResultTypeDef](./type_defs.md#describesecuritygrouprulesresulttypedef).
+
 ### describe_security_groups
 
 Describes the specified security groups or all of your security groups.
@@ -7525,7 +7561,7 @@ Returns
 
 ### disassociate_enclave_certificate_iam_role
 
-Disassociates an IAM role from an AWS Certificate Manager (ACM) certificate.
+Disassociates an IAM role from an Certificate Manager (ACM) certificate.
 
 Type annotations for
 `boto3.client("ec2").disassociate_enclave_certificate_iam_role` method.
@@ -7989,8 +8025,8 @@ Returns `str`.
 
 ### get_associated_enclave_certificate_iam_roles
 
-Returns the IAM roles that are associated with the specified AWS Certificate
-Manager (ACM) certificate.
+Returns the IAM roles that are associated with the specified ACM (ACM)
+certificate.
 
 Type annotations for
 `boto3.client("ec2").get_associated_enclave_certificate_iam_roles` method.
@@ -9229,6 +9265,29 @@ Keyword-only arguments:
 
 Returns
 [ModifyReservedInstancesResultTypeDef](./type_defs.md#modifyreservedinstancesresulttypedef).
+
+### modify_security_group_rules
+
+Modifies the rules of a security group.
+
+Type annotations for `boto3.client("ec2").modify_security_group_rules` method.
+
+Boto3 documentation:
+[EC2.Client.modify_security_group_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_security_group_rules)
+
+Arguments mapping described in
+[ModifySecurityGroupRulesRequestRequestTypeDef](./type_defs.md#modifysecuritygrouprulesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `GroupId`: `str` *(required)*
+- `SecurityGroupRules`:
+  `List`\[[SecurityGroupRuleUpdateTypeDef](./type_defs.md#securitygroupruleupdatetypedef)\]
+  *(required)*
+- `DryRun`: `bool`
+
+Returns
+[ModifySecurityGroupRulesResultTypeDef](./type_defs.md#modifysecuritygrouprulesresulttypedef).
 
 ### modify_snapshot_attribute
 
@@ -10650,6 +10709,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 - `IpPermissions`:
   `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `SecurityGroupRuleIds`: `List`\[`str`\]
 - `CidrIp`: `str`
 - `FromPort`: `int`
 - `IpProtocol`: `str`
@@ -10662,7 +10722,7 @@ Returns
 
 ### revoke_security_group_ingress
 
-Removes the specified ingress rules from a security group.
+Removes the specified inbound (ingress) rules from a security group.
 
 Type annotations for `boto3.client("ec2").revoke_security_group_ingress`
 method.
@@ -10686,6 +10746,7 @@ Keyword-only arguments:
 - `SourceSecurityGroupOwnerId`: `str`
 - `ToPort`: `int`
 - `DryRun`: `bool`
+- `SecurityGroupRuleIds`: `List`\[`str`\]
 
 Returns
 [RevokeSecurityGroupIngressResultTypeDef](./type_defs.md#revokesecuritygroupingressresulttypedef).
@@ -11086,12 +11147,13 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
-  *(required)*
 - `DryRun`: `bool`
 - `GroupId`: `str`
 - `GroupName`: `str`
+- `IpPermissions`:
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `SecurityGroupRuleDescriptions`:
+  `List`\[[SecurityGroupRuleDescriptionTypeDef](./type_defs.md#securitygroupruledescriptiontypedef)\]
 
 Returns
 [UpdateSecurityGroupRuleDescriptionsEgressResultTypeDef](./type_defs.md#updatesecuritygroupruledescriptionsegressresulttypedef).
@@ -11111,12 +11173,13 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
-  *(required)*
 - `DryRun`: `bool`
 - `GroupId`: `str`
 - `GroupName`: `str`
+- `IpPermissions`:
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `SecurityGroupRuleDescriptions`:
+  `List`\[[SecurityGroupRuleDescriptionTypeDef](./type_defs.md#securitygroupruledescriptiontypedef)\]
 
 Returns
 [UpdateSecurityGroupRuleDescriptionsIngressResultTypeDef](./type_defs.md#updatesecuritygroupruledescriptionsingressresulttypedef).
@@ -11259,6 +11322,8 @@ Type annotations for `boto3.client("ec2").get_paginator` method with overloads.
   [DescribeScheduledInstanceAvailabilityPaginator](./paginators.md#describescheduledinstanceavailabilitypaginator)
 - `client.get_paginator("describe_scheduled_instances")` ->
   [DescribeScheduledInstancesPaginator](./paginators.md#describescheduledinstancespaginator)
+- `client.get_paginator("describe_security_group_rules")` ->
+  [DescribeSecurityGroupRulesPaginator](./paginators.md#describesecuritygrouprulespaginator)
 - `client.get_paginator("describe_security_groups")` ->
   [DescribeSecurityGroupsPaginator](./paginators.md#describesecuritygroupspaginator)
 - `client.get_paginator("describe_snapshots")` ->

@@ -42,6 +42,7 @@ type annotations stubs module
     - [describe_logging_options](#describe_logging_options)
     - [describe_portal](#describe_portal)
     - [describe_project](#describe_project)
+    - [describe_storage_configuration](#describe_storage_configuration)
     - [disassociate_assets](#disassociate_assets)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_asset_property_aggregates](#get_asset_property_aggregates)
@@ -61,6 +62,7 @@ type annotations stubs module
     - [list_tags_for_resource](#list_tags_for_resource)
     - [put_default_encryption_configuration](#put_default_encryption_configuration)
     - [put_logging_options](#put_logging_options)
+    - [put_storage_configuration](#put_storage_configuration)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [update_access_policy](#update_access_policy)
@@ -152,7 +154,7 @@ Keyword-only arguments:
 
 ### batch_associate_project_assets
 
-Associates a group (batch) of assets with an AWS IoT SiteWise Monitor project.
+Associates a group (batch) of assets with an IoT SiteWise Monitor project.
 
 Type annotations for
 `boto3.client("iotsitewise").batch_associate_project_assets` method.
@@ -174,8 +176,7 @@ Returns
 
 ### batch_disassociate_project_assets
 
-Disassociates a group (batch) of assets from an AWS IoT SiteWise Monitor
-project.
+Disassociates a group (batch) of assets from an IoT SiteWise Monitor project.
 
 Type annotations for
 `boto3.client("iotsitewise").batch_disassociate_project_assets` method.
@@ -197,7 +198,7 @@ Returns
 
 ### batch_put_asset_property_value
 
-Sends a list of asset property values to AWS IoT SiteWise.
+Sends a list of asset property values to IoT SiteWise.
 
 Type annotations for
 `boto3.client("iotsitewise").batch_put_asset_property_value` method.
@@ -234,9 +235,9 @@ Returns `bool`.
 
 ### create_access_policy
 
-Creates an access policy that grants the specified identity (AWS SSO user, AWS
-SSO group, or IAM user) access to the specified AWS IoT SiteWise Monitor portal
-or project resource.
+Creates an access policy that grants the specified identity (Amazon Web
+Services SSO user, Amazon Web Services SSO group, or IAM user) access to the
+specified IoT SiteWise Monitor portal or project resource.
 
 Type annotations for `boto3.client("iotsitewise").create_access_policy` method.
 
@@ -312,7 +313,7 @@ Returns
 
 ### create_dashboard
 
-Creates a dashboard in an AWS IoT SiteWise Monitor project.
+Creates a dashboard in an IoT SiteWise Monitor project.
 
 Type annotations for `boto3.client("iotsitewise").create_dashboard` method.
 
@@ -337,7 +338,7 @@ Returns
 ### create_gateway
 
 Creates a gateway, which is a virtual or edge device that delivers industrial
-data streams from local servers to AWS IoT SiteWise.
+data streams from local servers to IoT SiteWise.
 
 Type annotations for `boto3.client("iotsitewise").create_gateway` method.
 
@@ -411,7 +412,7 @@ Returns
 ### delete_access_policy
 
 Deletes an access policy that grants the specified identity access to the
-specified AWS IoT SiteWise Monitor resource.
+specified IoT SiteWise Monitor resource.
 
 Type annotations for `boto3.client("iotsitewise").delete_access_policy` method.
 
@@ -470,7 +471,7 @@ Returns
 
 ### delete_dashboard
 
-Deletes a dashboard from AWS IoT SiteWise Monitor.
+Deletes a dashboard from IoT SiteWise Monitor.
 
 Type annotations for `boto3.client("iotsitewise").delete_dashboard` method.
 
@@ -489,7 +490,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_gateway
 
-Deletes a gateway from AWS IoT SiteWise.
+Deletes a gateway from IoT SiteWise.
 
 Type annotations for `boto3.client("iotsitewise").delete_gateway` method.
 
@@ -505,7 +506,7 @@ Keyword-only arguments:
 
 ### delete_portal
 
-Deletes a portal from AWS IoT SiteWise Monitor.
+Deletes a portal from IoT SiteWise Monitor.
 
 Type annotations for `boto3.client("iotsitewise").delete_portal` method.
 
@@ -525,7 +526,7 @@ Returns
 
 ### delete_project
 
-Deletes a project from AWS IoT SiteWise Monitor.
+Deletes a project from IoT SiteWise Monitor.
 
 Type annotations for `boto3.client("iotsitewise").delete_project` method.
 
@@ -544,7 +545,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_access_policy
 
-Describes an access policy, which specifies an identity's access to an AWS IoT
+Describes an access policy, which specifies an identity's access to an IoT
 SiteWise Monitor portal or project.
 
 Type annotations for `boto3.client("iotsitewise").describe_access_policy`
@@ -643,8 +644,8 @@ Returns
 
 ### describe_default_encryption_configuration
 
-Retrieves information about the default encryption configuration for the AWS
-account in the default or specified region.
+Retrieves information about the default encryption configuration for the Amazon
+Web Services account in the default or specified Region.
 
 Type annotations for
 `boto3.client("iotsitewise").describe_default_encryption_configuration` method.
@@ -697,7 +698,7 @@ Returns
 
 ### describe_logging_options
 
-Retrieves the current AWS IoT SiteWise logging options.
+Retrieves the current IoT SiteWise logging options.
 
 Type annotations for `boto3.client("iotsitewise").describe_logging_options`
 method.
@@ -745,6 +746,19 @@ Keyword-only arguments:
 
 Returns
 [DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef).
+
+### describe_storage_configuration
+
+Retrieves information about the storage configuration for IoT SiteWise.
+
+Type annotations for
+`boto3.client("iotsitewise").describe_storage_configuration` method.
+
+Boto3 documentation:
+[IoTSiteWise.Client.describe_storage_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_storage_configuration)
+
+Returns
+[DescribeStorageConfigurationResponseTypeDef](./type_defs.md#describestorageconfigurationresponsetypedef).
 
 ### disassociate_assets
 
@@ -900,9 +914,9 @@ Returns
 
 ### list_access_policies
 
-Retrieves a paginated list of access policies for an identity (an AWS SSO user,
-an AWS SSO group, or an IAM user) or an AWS IoT SiteWise Monitor resource (a
-portal or project).
+Retrieves a paginated list of access policies for an identity (an Amazon Web
+Services SSO user, an Amazon Web Services SSO group, or an IAM user) or an IoT
+SiteWise Monitor resource (a portal or project).
 
 Type annotations for `boto3.client("iotsitewise").list_access_policies` method.
 
@@ -1017,8 +1031,7 @@ Returns
 
 ### list_dashboards
 
-Retrieves a paginated list of dashboards for an AWS IoT SiteWise Monitor
-project.
+Retrieves a paginated list of dashboards for an IoT SiteWise Monitor project.
 
 Type annotations for `boto3.client("iotsitewise").list_dashboards` method.
 
@@ -1059,7 +1072,7 @@ Returns
 
 ### list_portals
 
-Retrieves a paginated list of AWS IoT SiteWise Monitor portals.
+Retrieves a paginated list of IoT SiteWise Monitor portals.
 
 Type annotations for `boto3.client("iotsitewise").list_portals` method.
 
@@ -1079,8 +1092,8 @@ Returns
 
 ### list_project_assets
 
-Retrieves a paginated list of assets associated with an AWS IoT SiteWise
-Monitor project.
+Retrieves a paginated list of assets associated with an IoT SiteWise Monitor
+project.
 
 Type annotations for `boto3.client("iotsitewise").list_project_assets` method.
 
@@ -1101,7 +1114,7 @@ Returns
 
 ### list_projects
 
-Retrieves a paginated list of projects for an AWS IoT SiteWise Monitor portal.
+Retrieves a paginated list of projects for an IoT SiteWise Monitor portal.
 
 Type annotations for `boto3.client("iotsitewise").list_projects` method.
 
@@ -1122,7 +1135,7 @@ Returns
 
 ### list_tags_for_resource
 
-Retrieves the list of tags for an AWS IoT SiteWise resource.
+Retrieves the list of tags for an IoT SiteWise resource.
 
 Type annotations for `boto3.client("iotsitewise").list_tags_for_resource`
 method.
@@ -1142,7 +1155,7 @@ Returns
 
 ### put_default_encryption_configuration
 
-Sets the default encryption configuration for the AWS account.
+Sets the default encryption configuration for the Amazon Web Services account.
 
 Type annotations for
 `boto3.client("iotsitewise").put_default_encryption_configuration` method.
@@ -1164,7 +1177,7 @@ Returns
 
 ### put_logging_options
 
-Sets logging options for AWS IoT SiteWise.
+Sets logging options for IoT SiteWise.
 
 Type annotations for `boto3.client("iotsitewise").put_logging_options` method.
 
@@ -1181,9 +1194,31 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### put_storage_configuration
+
+Configures storage settings for IoT SiteWise.
+
+Type annotations for `boto3.client("iotsitewise").put_storage_configuration`
+method.
+
+Boto3 documentation:
+[IoTSiteWise.Client.put_storage_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.put_storage_configuration)
+
+Arguments mapping described in
+[PutStorageConfigurationRequestRequestTypeDef](./type_defs.md#putstorageconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `storageType`: [StorageTypeType](./literals.md#storagetypetype) *(required)*
+- `multiLayerStorage`:
+  [MultiLayerStorageTypeDef](./type_defs.md#multilayerstoragetypedef)
+
+Returns
+[PutStorageConfigurationResponseTypeDef](./type_defs.md#putstorageconfigurationresponsetypedef).
+
 ### tag_resource
 
-Adds tags to an AWS IoT SiteWise resource.
+Adds tags to an IoT SiteWise resource.
 
 Type annotations for `boto3.client("iotsitewise").tag_resource` method.
 
@@ -1202,7 +1237,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
-Removes a tag from an AWS IoT SiteWise resource.
+Removes a tag from an IoT SiteWise resource.
 
 Type annotations for `boto3.client("iotsitewise").untag_resource` method.
 
@@ -1221,8 +1256,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_access_policy
 
-Updates an existing access policy that specifies an identity's access to an AWS
-IoT SiteWise Monitor portal or project resource.
+Updates an existing access policy that specifies an identity's access to an IoT
+SiteWise Monitor portal or project resource.
 
 Type annotations for `boto3.client("iotsitewise").update_access_policy` method.
 
@@ -1318,7 +1353,7 @@ Keyword-only arguments:
 
 ### update_dashboard
 
-Updates an AWS IoT SiteWise Monitor dashboard.
+Updates an IoT SiteWise Monitor dashboard.
 
 Type annotations for `boto3.client("iotsitewise").update_dashboard` method.
 
@@ -1380,7 +1415,7 @@ Returns
 
 ### update_portal
 
-Updates an AWS IoT SiteWise Monitor portal.
+Updates an IoT SiteWise Monitor portal.
 
 Type annotations for `boto3.client("iotsitewise").update_portal` method.
 
@@ -1407,7 +1442,7 @@ Returns
 
 ### update_project
 
-Updates an AWS IoT SiteWise Monitor project.
+Updates an IoT SiteWise Monitor project.
 
 Type annotations for `boto3.client("iotsitewise").update_project` method.
 

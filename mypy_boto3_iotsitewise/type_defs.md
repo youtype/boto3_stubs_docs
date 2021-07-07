@@ -57,6 +57,7 @@ type annotations stubs module
   - [CreatePortalResponseTypeDef](#createportalresponsetypedef)
   - [CreateProjectRequestRequestTypeDef](#createprojectrequestrequesttypedef)
   - [CreateProjectResponseTypeDef](#createprojectresponsetypedef)
+  - [CustomerManagedS3StorageTypeDef](#customermanageds3storagetypedef)
   - [DashboardSummaryTypeDef](#dashboardsummarytypedef)
   - [DeleteAccessPolicyRequestRequestTypeDef](#deleteaccesspolicyrequestrequesttypedef)
   - [DeleteAssetModelRequestRequestTypeDef](#deleteassetmodelrequestrequesttypedef)
@@ -88,6 +89,7 @@ type annotations stubs module
   - [DescribePortalResponseTypeDef](#describeportalresponsetypedef)
   - [DescribeProjectRequestRequestTypeDef](#describeprojectrequestrequesttypedef)
   - [DescribeProjectResponseTypeDef](#describeprojectresponsetypedef)
+  - [DescribeStorageConfigurationResponseTypeDef](#describestorageconfigurationresponsetypedef)
   - [DisassociateAssetsRequestRequestTypeDef](#disassociateassetsrequestrequesttypedef)
   - [ErrorDetailsTypeDef](#errordetailstypedef)
   - [ExpressionVariableTypeDef](#expressionvariabletypedef)
@@ -137,6 +139,7 @@ type annotations stubs module
   - [MetricTypeDef](#metrictypedef)
   - [MetricWindowTypeDef](#metricwindowtypedef)
   - [MonitorErrorDetailsTypeDef](#monitorerrordetailstypedef)
+  - [MultiLayerStorageTypeDef](#multilayerstoragetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PortalResourceTypeDef](#portalresourcetypedef)
   - [PortalStatusTypeDef](#portalstatustypedef)
@@ -150,6 +153,8 @@ type annotations stubs module
   - [PutDefaultEncryptionConfigurationRequestRequestTypeDef](#putdefaultencryptionconfigurationrequestrequesttypedef)
   - [PutDefaultEncryptionConfigurationResponseTypeDef](#putdefaultencryptionconfigurationresponsetypedef)
   - [PutLoggingOptionsRequestRequestTypeDef](#putloggingoptionsrequestrequesttypedef)
+  - [PutStorageConfigurationRequestRequestTypeDef](#putstorageconfigurationrequestrequesttypedef)
+  - [PutStorageConfigurationResponseTypeDef](#putstorageconfigurationresponsetypedef)
   - [ResourceTypeDef](#resourcetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
@@ -913,6 +918,17 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CustomerManagedS3StorageTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import CustomerManagedS3StorageTypeDef
+```
+
+Required fields:
+
+- `s3ResourceArn`: `str`
+- `roleArn`: `str`
+
 ## DashboardSummaryTypeDef
 
 ```python
@@ -1362,6 +1378,23 @@ Required fields:
 - `projectDescription`: `str`
 - `projectCreationDate`: `datetime`
 - `projectLastUpdateDate`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeStorageConfigurationResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DescribeStorageConfigurationResponseTypeDef
+```
+
+Required fields:
+
+- `storageType`: [StorageTypeType](./literals.md#storagetypetype)
+- `multiLayerStorage`:
+  [MultiLayerStorageTypeDef](./type_defs.md#multilayerstoragetypedef)
+- `configurationStatus`:
+  [ConfigurationStatusTypeDef](./type_defs.md#configurationstatustypedef)
+- `lastUpdateDate`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2021,6 +2054,17 @@ Optional fields:
 - `code`: [MonitorErrorCodeType](./literals.md#monitorerrorcodetype)
 - `message`: `str`
 
+## MultiLayerStorageTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import MultiLayerStorageTypeDef
+```
+
+Required fields:
+
+- `customerManagedS3Storage`:
+  [CustomerManagedS3StorageTypeDef](./type_defs.md#customermanageds3storagetypedef)
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -2207,6 +2251,37 @@ Required fields:
 
 - `loggingOptions`:
   [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef)
+
+## PutStorageConfigurationRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import PutStorageConfigurationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `storageType`: [StorageTypeType](./literals.md#storagetypetype)
+
+Optional fields:
+
+- `multiLayerStorage`:
+  [MultiLayerStorageTypeDef](./type_defs.md#multilayerstoragetypedef)
+
+## PutStorageConfigurationResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import PutStorageConfigurationResponseTypeDef
+```
+
+Required fields:
+
+- `storageType`: [StorageTypeType](./literals.md#storagetypetype)
+- `multiLayerStorage`:
+  [MultiLayerStorageTypeDef](./type_defs.md#multilayerstoragetypedef)
+- `configurationStatus`:
+  [ConfigurationStatusTypeDef](./type_defs.md#configurationstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ResourceTypeDef
 

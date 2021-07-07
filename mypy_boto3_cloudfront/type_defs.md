@@ -13,6 +13,7 @@ type annotations stubs module
   - [AliasICPRecordalTypeDef](#aliasicprecordaltypedef)
   - [AliasesTypeDef](#aliasestypedef)
   - [AllowedMethodsTypeDef](#allowedmethodstypedef)
+  - [AssociateAliasRequestRequestTypeDef](#associatealiasrequestrequesttypedef)
   - [CacheBehaviorTypeDef](#cachebehaviortypedef)
   - [CacheBehaviorsTypeDef](#cachebehaviorstypedef)
   - [CachePolicyConfigTypeDef](#cachepolicyconfigtypedef)
@@ -27,6 +28,8 @@ type annotations stubs module
   - [CloudFrontOriginAccessIdentityListTypeDef](#cloudfrontoriginaccessidentitylisttypedef)
   - [CloudFrontOriginAccessIdentitySummaryTypeDef](#cloudfrontoriginaccessidentitysummarytypedef)
   - [CloudFrontOriginAccessIdentityTypeDef](#cloudfrontoriginaccessidentitytypedef)
+  - [ConflictingAliasTypeDef](#conflictingaliastypedef)
+  - [ConflictingAliasesListTypeDef](#conflictingaliaseslisttypedef)
   - [ContentTypeProfileConfigTypeDef](#contenttypeprofileconfigtypedef)
   - [ContentTypeProfileTypeDef](#contenttypeprofiletypedef)
   - [ContentTypeProfilesTypeDef](#contenttypeprofilestypedef)
@@ -169,6 +172,8 @@ type annotations stubs module
   - [ListCachePoliciesResultTypeDef](#listcachepoliciesresulttypedef)
   - [ListCloudFrontOriginAccessIdentitiesRequestRequestTypeDef](#listcloudfrontoriginaccessidentitiesrequestrequesttypedef)
   - [ListCloudFrontOriginAccessIdentitiesResultTypeDef](#listcloudfrontoriginaccessidentitiesresulttypedef)
+  - [ListConflictingAliasesRequestRequestTypeDef](#listconflictingaliasesrequestrequesttypedef)
+  - [ListConflictingAliasesResultTypeDef](#listconflictingaliasesresulttypedef)
   - [ListDistributionsByCachePolicyIdRequestRequestTypeDef](#listdistributionsbycachepolicyidrequestrequesttypedef)
   - [ListDistributionsByCachePolicyIdResultTypeDef](#listdistributionsbycachepolicyidresulttypedef)
   - [ListDistributionsByKeyGroupRequestRequestTypeDef](#listdistributionsbykeygrouprequestrequesttypedef)
@@ -354,6 +359,17 @@ Required fields:
 Optional fields:
 
 - `CachedMethods`: [CachedMethodsTypeDef](./type_defs.md#cachedmethodstypedef)
+
+## AssociateAliasRequestRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import AssociateAliasRequestRequestTypeDef
+```
+
+Required fields:
+
+- `TargetDistributionId`: `str`
+- `Alias`: `str`
 
 ## CacheBehaviorTypeDef
 
@@ -581,6 +597,32 @@ Optional fields:
 
 - `CloudFrontOriginAccessIdentityConfig`:
   [CloudFrontOriginAccessIdentityConfigTypeDef](./type_defs.md#cloudfrontoriginaccessidentityconfigtypedef)
+
+## ConflictingAliasTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ConflictingAliasTypeDef
+```
+
+Optional fields:
+
+- `Alias`: `str`
+- `DistributionId`: `str`
+- `AccountId`: `str`
+
+## ConflictingAliasesListTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ConflictingAliasesListTypeDef
+```
+
+Optional fields:
+
+- `NextMarker`: `str`
+- `MaxItems`: `int`
+- `Quantity`: `int`
+- `Items`:
+  `List`\[[ConflictingAliasTypeDef](./type_defs.md#conflictingaliastypedef)\]
 
 ## ContentTypeProfileConfigTypeDef
 
@@ -2547,6 +2589,35 @@ Required fields:
 
 - `CloudFrontOriginAccessIdentityList`:
   [CloudFrontOriginAccessIdentityListTypeDef](./type_defs.md#cloudfrontoriginaccessidentitylisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListConflictingAliasesRequestRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListConflictingAliasesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DistributionId`: `str`
+- `Alias`: `str`
+
+Optional fields:
+
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+## ListConflictingAliasesResultTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListConflictingAliasesResultTypeDef
+```
+
+Required fields:
+
+- `ConflictingAliasesList`:
+  [ConflictingAliasesListTypeDef](./type_defs.md#conflictingaliaseslisttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

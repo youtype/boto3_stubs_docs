@@ -35,6 +35,7 @@ type annotations stubs module
     - [create_channel_ban](#create_channel_ban)
     - [create_channel_membership](#create_channel_membership)
     - [create_channel_moderator](#create_channel_moderator)
+    - [create_media_capture_pipeline](#create_media_capture_pipeline)
     - [create_meeting](#create_meeting)
     - [create_meeting_dial_out](#create_meeting_dial_out)
     - [create_meeting_with_attendees](#create_meeting_with_attendees)
@@ -60,6 +61,7 @@ type annotations stubs module
     - [delete_channel_message](#delete_channel_message)
     - [delete_channel_moderator](#delete_channel_moderator)
     - [delete_events_configuration](#delete_events_configuration)
+    - [delete_media_capture_pipeline](#delete_media_capture_pipeline)
     - [delete_meeting](#delete_meeting)
     - [delete_phone_number](#delete_phone_number)
     - [delete_proxy_session](#delete_proxy_session)
@@ -98,6 +100,7 @@ type annotations stubs module
     - [get_channel_message](#get_channel_message)
     - [get_events_configuration](#get_events_configuration)
     - [get_global_settings](#get_global_settings)
+    - [get_media_capture_pipeline](#get_media_capture_pipeline)
     - [get_meeting](#get_meeting)
     - [get_messaging_session_endpoint](#get_messaging_session_endpoint)
     - [get_phone_number](#get_phone_number)
@@ -135,6 +138,7 @@ type annotations stubs module
     - [list_channel_moderators](#list_channel_moderators)
     - [list_channels](#list_channels)
     - [list_channels_moderated_by_app_instance_user](#list_channels_moderated_by_app_instance_user)
+    - [list_media_capture_pipelines](#list_media_capture_pipelines)
     - [list_meeting_tags](#list_meeting_tags)
     - [list_meetings](#list_meetings)
     - [list_phone_number_orders](#list_phone_number_orders)
@@ -750,6 +754,34 @@ Keyword-only arguments:
 Returns
 [CreateChannelModeratorResponseTypeDef](./type_defs.md#createchannelmoderatorresponsetypedef).
 
+### create_media_capture_pipeline
+
+Creates a media capture pipeline.
+
+Type annotations for `boto3.client("chime").create_media_capture_pipeline`
+method.
+
+Boto3 documentation:
+[Chime.Client.create_media_capture_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_media_capture_pipeline)
+
+Arguments mapping described in
+[CreateMediaCapturePipelineRequestRequestTypeDef](./type_defs.md#createmediacapturepipelinerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SourceType`: `Literal['ChimeSdkMeeting']` (see
+  [MediaPipelineSourceTypeType](./literals.md#mediapipelinesourcetypetype))
+  *(required)*
+- `SourceArn`: `str` *(required)*
+- `SinkType`: `Literal['S3Bucket']` (see
+  [MediaPipelineSinkTypeType](./literals.md#mediapipelinesinktypetype))
+  *(required)*
+- `SinkArn`: `str` *(required)*
+- `ClientRequestToken`: `str`
+
+Returns
+[CreateMediaCapturePipelineResponseTypeDef](./type_defs.md#createmediacapturepipelineresponsetypedef).
+
 ### create_meeting
 
 Creates a new Amazon Chime SDK meeting in the specified media Region with no
@@ -1273,6 +1305,23 @@ Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `BotId`: `str` *(required)*
+
+### delete_media_capture_pipeline
+
+Deletes the media capture pipeline.
+
+Type annotations for `boto3.client("chime").delete_media_capture_pipeline`
+method.
+
+Boto3 documentation:
+[Chime.Client.delete_media_capture_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_media_capture_pipeline)
+
+Arguments mapping described in
+[DeleteMediaCapturePipelineRequestRequestTypeDef](./type_defs.md#deletemediacapturepipelinerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `MediaPipelineId`: `str` *(required)*
 
 ### delete_meeting
 
@@ -2005,6 +2054,25 @@ Boto3 documentation:
 
 Returns
 [GetGlobalSettingsResponseTypeDef](./type_defs.md#getglobalsettingsresponsetypedef).
+
+### get_media_capture_pipeline
+
+Gets an existing media capture pipeline.
+
+Type annotations for `boto3.client("chime").get_media_capture_pipeline` method.
+
+Boto3 documentation:
+[Chime.Client.get_media_capture_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_media_capture_pipeline)
+
+Arguments mapping described in
+[GetMediaCapturePipelineRequestRequestTypeDef](./type_defs.md#getmediacapturepipelinerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `MediaPipelineId`: `str` *(required)*
+
+Returns
+[GetMediaCapturePipelineResponseTypeDef](./type_defs.md#getmediacapturepipelineresponsetypedef).
 
 ### get_meeting
 
@@ -2766,6 +2834,27 @@ Keyword-only arguments:
 
 Returns
 [ListChannelsModeratedByAppInstanceUserResponseTypeDef](./type_defs.md#listchannelsmoderatedbyappinstanceuserresponsetypedef).
+
+### list_media_capture_pipelines
+
+Returns a list of media capture pipelines.
+
+Type annotations for `boto3.client("chime").list_media_capture_pipelines`
+method.
+
+Boto3 documentation:
+[Chime.Client.list_media_capture_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_media_capture_pipelines)
+
+Arguments mapping described in
+[ListMediaCapturePipelinesRequestRequestTypeDef](./type_defs.md#listmediacapturepipelinesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListMediaCapturePipelinesResponseTypeDef](./type_defs.md#listmediacapturepipelinesresponsetypedef).
 
 ### list_meeting_tags
 

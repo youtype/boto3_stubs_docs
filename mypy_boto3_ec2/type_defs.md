@@ -102,8 +102,10 @@ type annotations stubs module
   - [AuthorizeClientVpnIngressResultTypeDef](#authorizeclientvpningressresulttypedef)
   - [AuthorizeSecurityGroupEgressRequestRequestTypeDef](#authorizesecuritygroupegressrequestrequesttypedef)
   - [AuthorizeSecurityGroupEgressRequestSecurityGroupTypeDef](#authorizesecuritygroupegressrequestsecuritygrouptypedef)
+  - [AuthorizeSecurityGroupEgressResultTypeDef](#authorizesecuritygroupegressresulttypedef)
   - [AuthorizeSecurityGroupIngressRequestRequestTypeDef](#authorizesecuritygroupingressrequestrequesttypedef)
   - [AuthorizeSecurityGroupIngressRequestSecurityGroupTypeDef](#authorizesecuritygroupingressrequestsecuritygrouptypedef)
+  - [AuthorizeSecurityGroupIngressResultTypeDef](#authorizesecuritygroupingressresulttypedef)
   - [AvailabilityZoneMessageTypeDef](#availabilityzonemessagetypedef)
   - [AvailabilityZoneTypeDef](#availabilityzonetypedef)
   - [AvailableCapacityTypeDef](#availablecapacitytypedef)
@@ -632,6 +634,8 @@ type annotations stubs module
   - [DescribeScheduledInstancesResultTypeDef](#describescheduledinstancesresulttypedef)
   - [DescribeSecurityGroupReferencesRequestRequestTypeDef](#describesecuritygroupreferencesrequestrequesttypedef)
   - [DescribeSecurityGroupReferencesResultTypeDef](#describesecuritygroupreferencesresulttypedef)
+  - [DescribeSecurityGroupRulesRequestRequestTypeDef](#describesecuritygrouprulesrequestrequesttypedef)
+  - [DescribeSecurityGroupRulesResultTypeDef](#describesecuritygrouprulesresulttypedef)
   - [DescribeSecurityGroupsRequestRequestTypeDef](#describesecuritygroupsrequestrequesttypedef)
   - [DescribeSecurityGroupsResultTypeDef](#describesecuritygroupsresulttypedef)
   - [DescribeSnapshotAttributeRequestRequestTypeDef](#describesnapshotattributerequestrequesttypedef)
@@ -1100,6 +1104,8 @@ type annotations stubs module
   - [ModifyNetworkInterfaceAttributeRequestRequestTypeDef](#modifynetworkinterfaceattributerequestrequesttypedef)
   - [ModifyReservedInstancesRequestRequestTypeDef](#modifyreservedinstancesrequestrequesttypedef)
   - [ModifyReservedInstancesResultTypeDef](#modifyreservedinstancesresulttypedef)
+  - [ModifySecurityGroupRulesRequestRequestTypeDef](#modifysecuritygrouprulesrequestrequesttypedef)
+  - [ModifySecurityGroupRulesResultTypeDef](#modifysecuritygrouprulesresulttypedef)
   - [ModifySnapshotAttributeRequestRequestTypeDef](#modifysnapshotattributerequestrequesttypedef)
   - [ModifySnapshotAttributeRequestSnapshotTypeDef](#modifysnapshotattributerequestsnapshottypedef)
   - [ModifySpotFleetRequestRequestRequestTypeDef](#modifyspotfleetrequestrequestrequesttypedef)
@@ -1229,6 +1235,7 @@ type annotations stubs module
   - [RebootInstancesRequestInstanceTypeDef](#rebootinstancesrequestinstancetypedef)
   - [RebootInstancesRequestRequestTypeDef](#rebootinstancesrequestrequesttypedef)
   - [RecurringChargeTypeDef](#recurringchargetypedef)
+  - [ReferencedSecurityGroupTypeDef](#referencedsecuritygrouptypedef)
   - [RegionTypeDef](#regiontypedef)
   - [RegisterImageRequestRequestTypeDef](#registerimagerequestrequesttypedef)
   - [RegisterImageRequestServiceResourceTypeDef](#registerimagerequestserviceresourcetypedef)
@@ -1354,6 +1361,10 @@ type annotations stubs module
   - [SearchTransitGatewayRoutesResultTypeDef](#searchtransitgatewayroutesresulttypedef)
   - [SecurityGroupIdentifierTypeDef](#securitygroupidentifiertypedef)
   - [SecurityGroupReferenceTypeDef](#securitygroupreferencetypedef)
+  - [SecurityGroupRuleDescriptionTypeDef](#securitygroupruledescriptiontypedef)
+  - [SecurityGroupRuleRequestTypeDef](#securitygrouprulerequesttypedef)
+  - [SecurityGroupRuleTypeDef](#securitygroupruletypedef)
+  - [SecurityGroupRuleUpdateTypeDef](#securitygroupruleupdatetypedef)
   - [SecurityGroupTypeDef](#securitygrouptypedef)
   - [SendDiagnosticInterruptRequestRequestTypeDef](#senddiagnosticinterruptrequestrequesttypedef)
   - [ServiceConfigurationTypeDef](#serviceconfigurationtypedef)
@@ -2848,6 +2859,8 @@ Optional fields:
 - `DryRun`: `bool`
 - `IpPermissions`:
   `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `CidrIp`: `str`
 - `FromPort`: `int`
 - `IpProtocol`: `str`
@@ -2866,12 +2879,28 @@ Optional fields:
 - `DryRun`: `bool`
 - `IpPermissions`:
   `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `CidrIp`: `str`
 - `FromPort`: `int`
 - `IpProtocol`: `str`
 - `ToPort`: `int`
 - `SourceSecurityGroupName`: `str`
 - `SourceSecurityGroupOwnerId`: `str`
+
+## AuthorizeSecurityGroupEgressResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AuthorizeSecurityGroupEgressResultTypeDef
+```
+
+Required fields:
+
+- `Return`: `bool`
+- `SecurityGroupRules`:
+  `List`\[[SecurityGroupRuleTypeDef](./type_defs.md#securitygroupruletypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AuthorizeSecurityGroupIngressRequestRequestTypeDef
 
@@ -2892,6 +2921,8 @@ Optional fields:
 - `SourceSecurityGroupOwnerId`: `str`
 - `ToPort`: `int`
 - `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## AuthorizeSecurityGroupIngressRequestSecurityGroupTypeDef
 
@@ -2911,6 +2942,22 @@ Optional fields:
 - `SourceSecurityGroupOwnerId`: `str`
 - `ToPort`: `int`
 - `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## AuthorizeSecurityGroupIngressResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AuthorizeSecurityGroupIngressResultTypeDef
+```
+
+Required fields:
+
+- `Return`: `bool`
+- `SecurityGroupRules`:
+  `List`\[[SecurityGroupRuleTypeDef](./type_defs.md#securitygroupruletypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AvailabilityZoneMessageTypeDef
 
@@ -10551,6 +10598,34 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeSecurityGroupRulesRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeSecurityGroupRulesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SecurityGroupRuleIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeSecurityGroupRulesResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeSecurityGroupRulesResultTypeDef
+```
+
+Required fields:
+
+- `SecurityGroupRules`:
+  `List`\[[SecurityGroupRuleTypeDef](./type_defs.md#securitygroupruletypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeSecurityGroupsRequestRequestTypeDef
 
 ```python
@@ -17380,6 +17455,34 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ModifySecurityGroupRulesRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifySecurityGroupRulesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `GroupId`: `str`
+- `SecurityGroupRules`:
+  `List`\[[SecurityGroupRuleUpdateTypeDef](./type_defs.md#securitygroupruleupdatetypedef)\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## ModifySecurityGroupRulesResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifySecurityGroupRulesResultTypeDef
+```
+
+Required fields:
+
+- `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ModifySnapshotAttributeRequestRequestTypeDef
 
 ```python
@@ -19259,6 +19362,20 @@ Optional fields:
 - `Frequency`: `Literal['Hourly']` (see
   [RecurringChargeFrequencyType](./literals.md#recurringchargefrequencytype))
 
+## ReferencedSecurityGroupTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ReferencedSecurityGroupTypeDef
+```
+
+Optional fields:
+
+- `GroupId`: `str`
+- `PeeringStatus`: `str`
+- `UserId`: `str`
+- `VpcId`: `str`
+- `VpcPeeringConnectionId`: `str`
+
 ## RegionTypeDef
 
 ```python
@@ -20661,6 +20778,7 @@ Optional fields:
 - `DryRun`: `bool`
 - `IpPermissions`:
   `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `SecurityGroupRuleIds`: `List`\[`str`\]
 - `CidrIp`: `str`
 - `FromPort`: `int`
 - `IpProtocol`: `str`
@@ -20679,6 +20797,7 @@ Optional fields:
 - `DryRun`: `bool`
 - `IpPermissions`:
   `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `SecurityGroupRuleIds`: `List`\[`str`\]
 - `CidrIp`: `str`
 - `FromPort`: `int`
 - `IpProtocol`: `str`
@@ -20719,6 +20838,7 @@ Optional fields:
 - `SourceSecurityGroupOwnerId`: `str`
 - `ToPort`: `int`
 - `DryRun`: `bool`
+- `SecurityGroupRuleIds`: `List`\[`str`\]
 
 ## RevokeSecurityGroupIngressRequestSecurityGroupTypeDef
 
@@ -20738,6 +20858,7 @@ Optional fields:
 - `SourceSecurityGroupOwnerId`: `str`
 - `ToPort`: `int`
 - `DryRun`: `bool`
+- `SecurityGroupRuleIds`: `List`\[`str`\]
 
 ## RevokeSecurityGroupIngressResultTypeDef
 
@@ -21411,6 +21532,69 @@ Optional fields:
 - `GroupId`: `str`
 - `ReferencingVpcId`: `str`
 - `VpcPeeringConnectionId`: `str`
+
+## SecurityGroupRuleDescriptionTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import SecurityGroupRuleDescriptionTypeDef
+```
+
+Optional fields:
+
+- `SecurityGroupRuleId`: `str`
+- `Description`: `str`
+
+## SecurityGroupRuleRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import SecurityGroupRuleRequestTypeDef
+```
+
+Optional fields:
+
+- `IpProtocol`: `str`
+- `FromPort`: `int`
+- `ToPort`: `int`
+- `CidrIpv4`: `str`
+- `CidrIpv6`: `str`
+- `PrefixListId`: `str`
+- `ReferencedGroupId`: `str`
+- `Description`: `str`
+
+## SecurityGroupRuleTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import SecurityGroupRuleTypeDef
+```
+
+Optional fields:
+
+- `SecurityGroupRuleId`: `str`
+- `GroupId`: `str`
+- `GroupOwnerId`: `str`
+- `IsEgress`: `bool`
+- `IpProtocol`: `str`
+- `FromPort`: `int`
+- `ToPort`: `int`
+- `CidrIpv4`: `str`
+- `CidrIpv6`: `str`
+- `PrefixListId`: `str`
+- `ReferencedGroupInfo`:
+  [ReferencedSecurityGroupTypeDef](./type_defs.md#referencedsecuritygrouptypedef)
+- `Description`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## SecurityGroupRuleUpdateTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import SecurityGroupRuleUpdateTypeDef
+```
+
+Optional fields:
+
+- `SecurityGroupRuleId`: `str`
+- `SecurityGroupRule`:
+  [SecurityGroupRuleRequestTypeDef](./type_defs.md#securitygrouprulerequesttypedef)
 
 ## SecurityGroupTypeDef
 
@@ -23493,16 +23677,15 @@ Optional fields:
 from mypy_boto3_ec2.type_defs import UpdateSecurityGroupRuleDescriptionsEgressRequestRequestTypeDef
 ```
 
-Required fields:
-
-- `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
-
 Optional fields:
 
 - `DryRun`: `bool`
 - `GroupId`: `str`
 - `GroupName`: `str`
+- `IpPermissions`:
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `SecurityGroupRuleDescriptions`:
+  `List`\[[SecurityGroupRuleDescriptionTypeDef](./type_defs.md#securitygroupruledescriptiontypedef)\]
 
 ## UpdateSecurityGroupRuleDescriptionsEgressResultTypeDef
 
@@ -23522,16 +23705,15 @@ Required fields:
 from mypy_boto3_ec2.type_defs import UpdateSecurityGroupRuleDescriptionsIngressRequestRequestTypeDef
 ```
 
-Required fields:
-
-- `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
-
 Optional fields:
 
 - `DryRun`: `bool`
 - `GroupId`: `str`
 - `GroupName`: `str`
+- `IpPermissions`:
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `SecurityGroupRuleDescriptions`:
+  `List`\[[SecurityGroupRuleDescriptionTypeDef](./type_defs.md#securitygroupruledescriptiontypedef)\]
 
 ## UpdateSecurityGroupRuleDescriptionsIngressResultTypeDef
 

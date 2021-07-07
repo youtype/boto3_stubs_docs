@@ -120,6 +120,7 @@ type annotations stubs module
   - [DisassociateFileSystemInputRequestTypeDef](#disassociatefilesysteminputrequesttypedef)
   - [DisassociateFileSystemOutputTypeDef](#disassociatefilesystemoutputtypedef)
   - [DiskTypeDef](#disktypedef)
+  - [EndpointNetworkConfigurationTypeDef](#endpointnetworkconfigurationtypedef)
   - [FileShareInfoTypeDef](#fileshareinfotypedef)
   - [FileSystemAssociationInfoTypeDef](#filesystemassociationinfotypedef)
   - [FileSystemAssociationSummaryTypeDef](#filesystemassociationsummarytypedef)
@@ -387,6 +388,8 @@ Optional fields:
 - `AuditDestinationARN`: `str`
 - `CacheAttributes`:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
+- `EndpointNetworkConfiguration`:
+  [EndpointNetworkConfigurationTypeDef](./type_defs.md#endpointnetworkconfigurationtypedef)
 
 ## AssociateFileSystemOutputTypeDef
 
@@ -636,6 +639,8 @@ Optional fields:
 - `CacheAttributes`:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
 - `NotificationPolicy`: `str`
+- `VPCEndpointDNSName`: `str`
+- `BucketRegion`: `str`
 
 ## CreateNFSFileShareOutputTypeDef
 
@@ -684,6 +689,9 @@ Optional fields:
 - `CacheAttributes`:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
 - `NotificationPolicy`: `str`
+- `VPCEndpointDNSName`: `str`
+- `BucketRegion`: `str`
+- `OplocksEnabled`: `bool`
 
 ## CreateSMBFileShareOutputTypeDef
 
@@ -1328,6 +1336,9 @@ Required fields:
 - `EndpointType`: `str`
 - `SoftwareUpdatesEndDate`: `str`
 - `DeprecationDate`: `str`
+- `GatewayCapacity`: [GatewayCapacityType](./literals.md#gatewaycapacitytype)
+- `SupportedGatewayCapacities`:
+  `List`\[[GatewayCapacityType](./literals.md#gatewaycapacitytype)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1752,6 +1763,16 @@ Optional fields:
 - `DiskAllocationResource`: `str`
 - `DiskAttributeList`: `List`\[`str`\]
 
+## EndpointNetworkConfigurationTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import EndpointNetworkConfigurationTypeDef
+```
+
+Optional fields:
+
+- `IpAddresses`: `List`\[`str`\]
+
 ## FileShareInfoTypeDef
 
 ```python
@@ -1782,6 +1803,8 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `CacheAttributes`:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
+- `EndpointNetworkConfiguration`:
+  [EndpointNetworkConfigurationTypeDef](./type_defs.md#endpointnetworkconfigurationtypedef)
 
 ## FileSystemAssociationSummaryTypeDef
 
@@ -2165,6 +2188,8 @@ Optional fields:
 - `CacheAttributes`:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
 - `NotificationPolicy`: `str`
+- `VPCEndpointDNSName`: `str`
+- `BucketRegion`: `str`
 
 ## NetworkInterfaceTypeDef
 
@@ -2397,6 +2422,9 @@ Optional fields:
 - `CacheAttributes`:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
 - `NotificationPolicy`: `str`
+- `VPCEndpointDNSName`: `str`
+- `BucketRegion`: `str`
+- `OplocksEnabled`: `bool`
 
 ## SetLocalConsolePasswordInputRequestTypeDef
 
@@ -2769,6 +2797,7 @@ Optional fields:
 - `GatewayName`: `str`
 - `GatewayTimezone`: `str`
 - `CloudWatchLogGroupARN`: `str`
+- `GatewayCapacity`: [GatewayCapacityType](./literals.md#gatewaycapacitytype)
 
 ## UpdateGatewayInformationOutputTypeDef
 
@@ -2904,6 +2933,7 @@ Optional fields:
 - `CacheAttributes`:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
 - `NotificationPolicy`: `str`
+- `OplocksEnabled`: `bool`
 
 ## UpdateSMBFileShareOutputTypeDef
 

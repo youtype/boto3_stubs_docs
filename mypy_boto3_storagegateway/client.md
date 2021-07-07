@@ -284,7 +284,7 @@ Returns
 
 ### associate_file_system
 
-Associate an Amazon FSx file system with the Amazon FSx file gateway.
+Associate an Amazon FSx file system with the FSx File Gateway.
 
 Type annotations for `boto3.client("storagegateway").associate_file_system`
 method.
@@ -306,6 +306,8 @@ Keyword-only arguments:
 - `AuditDestinationARN`: `str`
 - `CacheAttributes`:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
+- `EndpointNetworkConfiguration`:
+  [EndpointNetworkConfigurationTypeDef](./type_defs.md#endpointnetworkconfigurationtypedef)
 
 Returns
 [AssociateFileSystemOutputTypeDef](./type_defs.md#associatefilesystemoutputtypedef).
@@ -421,7 +423,7 @@ Returns
 
 ### create_nfs_file_share
 
-Creates a Network File System (NFS) file share on an existing file gateway.
+Creates a Network File System (NFS) file share on an existing S3 File Gateway.
 
 Type annotations for `boto3.client("storagegateway").create_nfs_file_share`
 method.
@@ -454,13 +456,15 @@ Keyword-only arguments:
 - `CacheAttributes`:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
 - `NotificationPolicy`: `str`
+- `VPCEndpointDNSName`: `str`
+- `BucketRegion`: `str`
 
 Returns
 [CreateNFSFileShareOutputTypeDef](./type_defs.md#createnfsfileshareoutputtypedef).
 
 ### create_smb_file_share
 
-Creates a Server Message Block (SMB) file share on an existing file gateway.
+Creates a Server Message Block (SMB) file share on an existing S3 File Gateway.
 
 Type annotations for `boto3.client("storagegateway").create_smb_file_share`
 method.
@@ -497,6 +501,9 @@ Keyword-only arguments:
 - `CacheAttributes`:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
 - `NotificationPolicy`: `str`
+- `VPCEndpointDNSName`: `str`
+- `BucketRegion`: `str`
+- `OplocksEnabled`: `bool`
 
 Returns
 [CreateSMBFileShareOutputTypeDef](./type_defs.md#createsmbfileshareoutputtypedef).
@@ -717,7 +724,7 @@ Returns
 
 ### delete_file_share
 
-Deletes a file share from a file gateway.
+Deletes a file share from an S3 File Gateway.
 
 Type annotations for `boto3.client("storagegateway").delete_file_share` method.
 
@@ -1039,8 +1046,8 @@ Returns
 
 ### describe_nfs_file_shares
 
-Gets a description for one or more Network File System (NFS) file shares from a
-file gateway.
+Gets a description for one or more Network File System (NFS) file shares from
+an S3 File Gateway.
 
 Type annotations for `boto3.client("storagegateway").describe_nfs_file_shares`
 method.
@@ -1061,7 +1068,7 @@ Returns
 ### describe_smb_file_shares
 
 Gets a description for one or more Server Message Block (SMB) file shares from
-a file gateway.
+a S3 File Gateway.
 
 Type annotations for `boto3.client("storagegateway").describe_smb_file_shares`
 method.
@@ -1398,8 +1405,8 @@ Returns
 
 ### list_file_shares
 
-Gets a list of the file shares for a specific file gateway, or the list of file
-shares that belong to the calling user account.
+Gets a list of the file shares for a specific S3 File Gateway, or the list of
+file shares that belong to the calling user account.
 
 Type annotations for `boto3.client("storagegateway").list_file_shares` method.
 
@@ -1442,8 +1449,7 @@ Returns
 
 ### list_gateways
 
-Lists gateways owned by an AWS account in an AWS Region specified in the
-request.
+Lists gateways owned by an account in an Region specified in the request.
 
 Type annotations for `boto3.client("storagegateway").list_gateways` method.
 
@@ -1963,6 +1969,7 @@ Keyword-only arguments:
 - `GatewayName`: `str`
 - `GatewayTimezone`: `str`
 - `CloudWatchLogGroupARN`: `str`
+- `GatewayCapacity`: [GatewayCapacityType](./literals.md#gatewaycapacitytype)
 
 Returns
 [UpdateGatewayInformationOutputTypeDef](./type_defs.md#updategatewayinformationoutputtypedef).
@@ -2081,14 +2088,15 @@ Keyword-only arguments:
 - `CacheAttributes`:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
 - `NotificationPolicy`: `str`
+- `OplocksEnabled`: `bool`
 
 Returns
 [UpdateSMBFileShareOutputTypeDef](./type_defs.md#updatesmbfileshareoutputtypedef).
 
 ### update_smb_file_share_visibility
 
-Controls whether the shares on a gateway are visible in a net view or browse
-list.
+Controls whether the shares on an S3 File Gateway are visible in a net view or
+browse list.
 
 Type annotations for
 `boto3.client("storagegateway").update_smb_file_share_visibility` method.

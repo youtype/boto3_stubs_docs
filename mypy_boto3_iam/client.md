@@ -385,8 +385,8 @@ Keyword-only arguments:
 
 ### create_access_key
 
-Creates a new AWS secret access key and corresponding AWS access key ID for the
-specified user.
+Creates a new Amazon Web Services secret access key and corresponding Amazon
+Web Services access key ID for the specified user.
 
 Type annotations for `boto3.client("iam").create_access_key` method.
 
@@ -405,7 +405,7 @@ Returns
 
 ### create_account_alias
 
-Creates an alias for your AWS account.
+Creates an alias for your account.
 
 Type annotations for `boto3.client("iam").create_account_alias` method.
 
@@ -507,7 +507,7 @@ Returns
 
 ### create_policy
 
-Creates a new managed policy for your AWS account.
+Creates a new managed policy for your account.
 
 Type annotations for `boto3.client("iam").create_policy` method.
 
@@ -551,7 +551,7 @@ Returns
 
 ### create_role
 
-Creates a new role for your AWS account.
+Creates a new role for your account.
 
 Type annotations for `boto3.client("iam").create_role` method.
 
@@ -597,7 +597,7 @@ Returns
 
 ### create_service_linked_role
 
-Creates an IAM role that is linked to a specific AWS service.
+Creates an IAM role that is linked to a specific Amazon Web Services service.
 
 Type annotations for `boto3.client("iam").create_service_linked_role` method.
 
@@ -640,7 +640,7 @@ Returns
 
 ### create_user
 
-Creates a new IAM user for your AWS account.
+Creates a new IAM user for your account.
 
 Type annotations for `boto3.client("iam").create_user` method.
 
@@ -661,7 +661,7 @@ Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
 ### create_virtual_mfa_device
 
-Creates a new virtual MFA device for the AWS account.
+Creates a new virtual MFA device for the account.
 
 Type annotations for `boto3.client("iam").create_virtual_mfa_device` method.
 
@@ -717,7 +717,7 @@ Keyword-only arguments:
 
 ### delete_account_alias
 
-Deletes the specified AWS account alias.
+Deletes the specified account alias.
 
 Type annotations for `boto3.client("iam").delete_account_alias` method.
 
@@ -733,7 +733,7 @@ Keyword-only arguments:
 
 ### delete_account_password_policy
 
-Deletes the password policy for the AWS account.
+Deletes the password policy for the account.
 
 Type annotations for `boto3.client("iam").delete_account_password_policy`
 method.
@@ -794,7 +794,7 @@ Keyword-only arguments:
 ### delete_login_profile
 
 Deletes the password for the specified IAM user, which terminates the user's
-ability to access AWS services through the AWS Management Console.
+ability to access Amazon Web Services services through the Management Console.
 
 Type annotations for `boto3.client("iam").delete_login_profile` method.
 
@@ -1150,7 +1150,7 @@ Keyword-only arguments:
 
 ### generate_credential_report
 
-Generates a credential report for the AWS account.
+Generates a credential report for the account.
 
 Type annotations for `boto3.client("iam").generate_credential_report` method.
 
@@ -1162,7 +1162,7 @@ Returns
 
 ### generate_organizations_access_report
 
-Generates a report for service last accessed data for AWS Organizations.
+Generates a report for service last accessed data for Organizations.
 
 Type annotations for `boto3.client("iam").generate_organizations_access_report`
 method.
@@ -1202,7 +1202,8 @@ Returns `str`.
 ### generate_service_last_accessed_details
 
 Generates a report that includes details about when an IAM resource (user,
-group, role, or policy) was last used in an attempt to access AWS services.
+group, role, or policy) was last used in an attempt to access Amazon Web
+Services services.
 
 Type annotations for
 `boto3.client("iam").generate_service_last_accessed_details` method.
@@ -1244,7 +1245,7 @@ Returns
 ### get_account_authorization_details
 
 Retrieves information about all IAM users, groups, roles, and policies in your
-AWS account, including their relationships to one another.
+Amazon Web Services account, including their relationships to one another.
 
 Type annotations for `boto3.client("iam").get_account_authorization_details`
 method.
@@ -1266,7 +1267,7 @@ Returns
 
 ### get_account_password_policy
 
-Retrieves the password policy for the AWS account.
+Retrieves the password policy for the account.
 
 Type annotations for `boto3.client("iam").get_account_password_policy` method.
 
@@ -1278,7 +1279,8 @@ Returns
 
 ### get_account_summary
 
-Retrieves information about IAM entity usage and IAM quotas in the AWS account.
+Retrieves information about IAM entity usage and IAM quotas in the Amazon Web
+Services account.
 
 Type annotations for `boto3.client("iam").get_account_summary` method.
 
@@ -1332,7 +1334,7 @@ Returns
 
 ### get_credential_report
 
-Retrieves a credential report for the AWS account.
+Retrieves a credential report for the account.
 
 Type annotations for `boto3.client("iam").get_credential_report` method.
 
@@ -1405,7 +1407,7 @@ Returns
 
 ### get_login_profile
 
-Retrieves the user name and password creation date for the specified IAM user.
+Retrieves the user name for the specified IAM user.
 
 Type annotations for `boto3.client("iam").get_login_profile` method.
 
@@ -1444,7 +1446,7 @@ Returns
 
 ### get_organizations_access_report
 
-Retrieves the service last accessed data report for AWS Organizations that was
+Retrieves the service last accessed data report for Organizations that was
 previously generated using the ` GenerateOrganizationsAccessReport` operation.
 
 Type annotations for `boto3.client("iam").get_organizations_access_report`
@@ -1740,8 +1742,8 @@ Returns
 
 ### list_account_aliases
 
-Lists the account alias associated with the AWS account (Note: you can have
-only one).
+Lists the account alias associated with the account (Note: you can have only
+one).
 
 Type annotations for `boto3.client("iam").list_account_aliases` method.
 
@@ -2046,7 +2048,7 @@ Returns
 ### list_open_id_connect_providers
 
 Lists information about the IAM OpenID Connect (OIDC) provider resource objects
-defined in the AWS account.
+defined in the account.
 
 Type annotations for `boto3.client("iam").list_open_id_connect_providers`
 method.
@@ -2059,8 +2061,8 @@ Returns
 
 ### list_policies
 
-Lists all the managed policies that are available in your AWS account,
-including your own customer-defined managed policies and all AWS managed
+Lists all the managed policies that are available in your account, including
+your own customer-defined managed policies and all Amazon Web Services managed
 policies.
 
 Type annotations for `boto3.client("iam").list_policies` method.
@@ -2419,7 +2421,7 @@ Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 
 ### list_virtual_mfa_devices
 
-Lists the virtual MFA devices defined in the AWS account by assignment status.
+Lists the virtual MFA devices defined in the account by assignment status.
 
 Type annotations for `boto3.client("iam").list_virtual_mfa_devices` method.
 
@@ -2612,8 +2614,8 @@ Returns
 
 ### resync_mfa_device
 
-Synchronizes the specified MFA device with its IAM resource object on the AWS
-servers.
+Synchronizes the specified MFA device with its IAM resource object on the
+Amazon Web Services servers.
 
 Type annotations for `boto3.client("iam").resync_mfa_device` method.
 
@@ -2651,7 +2653,7 @@ Keyword-only arguments:
 ### set_security_token_service_preferences
 
 Sets the specified version of the global endpoint token as the token version
-used for the AWS account.
+used for the account.
 
 Type annotations for
 `boto3.client("iam").set_security_token_service_preferences` method.
@@ -2671,8 +2673,8 @@ Keyword-only arguments:
 ### simulate_custom_policy
 
 Simulate how a set of IAM policies and optionally a resource-based policy works
-with a list of API operations and AWS resources to determine the policies'
-effective permissions.
+with a list of API operations and Amazon Web Services resources to determine
+the policies' effective permissions.
 
 Type annotations for `boto3.client("iam").simulate_custom_policy` method.
 
@@ -2703,8 +2705,8 @@ Returns
 ### simulate_principal_policy
 
 Simulate how a set of IAM policies attached to an IAM entity works with a list
-of API operations and AWS resources to determine the policies' effective
-permissions.
+of API operations and Amazon Web Services resources to determine the policies'
+effective permissions.
 
 Type annotations for `boto3.client("iam").simulate_principal_policy` method.
 
@@ -3032,7 +3034,7 @@ Keyword-only arguments:
 
 ### update_account_password_policy
 
-Updates the password policy settings for the AWS account.
+Updates the password policy settings for the account.
 
 Type annotations for `boto3.client("iam").update_account_password_policy`
 method.
@@ -3282,7 +3284,7 @@ Keyword-only arguments:
 
 ### upload_server_certificate
 
-Uploads a server certificate entity for the AWS account.
+Uploads a server certificate entity for the account.
 
 Type annotations for `boto3.client("iam").upload_server_certificate` method.
 
