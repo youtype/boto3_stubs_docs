@@ -152,6 +152,9 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+- `LifeCycleStatusFilter`: `List`\[`str`\]
+- `AvailabilityZoneFilter`: `List`\[`str`\]
+- `AvailabilityZoneIdFilter`: `List`\[`str`\]
 
 ## ListOutpostsOutputTypeDef
 

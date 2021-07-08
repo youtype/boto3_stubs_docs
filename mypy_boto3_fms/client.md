@@ -95,7 +95,7 @@ Returns [Exceptions](#exceptions).
 
 ### associate_admin_account
 
-Sets the AWS Firewall Manager administrator account.
+Sets the Firewall Manager administrator account.
 
 Type annotations for `boto3.client("fms").associate_admin_account` method.
 
@@ -126,7 +126,7 @@ Returns `bool`.
 
 ### delete_apps_list
 
-Permanently deletes an AWS Firewall Manager applications list.
+Permanently deletes an Firewall Manager applications list.
 
 Type annotations for `boto3.client("fms").delete_apps_list` method.
 
@@ -142,9 +142,9 @@ Keyword-only arguments:
 
 ### delete_notification_channel
 
-Deletes an AWS Firewall Manager association with the IAM role and the Amazon
-Simple Notification Service (SNS) topic that is used to record AWS Firewall
-Manager SNS logs.
+Deletes an Firewall Manager association with the IAM role and the Amazon Simple
+Notification Service (SNS) topic that is used to record Firewall Manager SNS
+logs.
 
 Type annotations for `boto3.client("fms").delete_notification_channel` method.
 
@@ -153,7 +153,7 @@ Boto3 documentation:
 
 ### delete_policy
 
-Permanently deletes an AWS Firewall Manager policy.
+Permanently deletes an Firewall Manager policy.
 
 Type annotations for `boto3.client("fms").delete_policy` method.
 
@@ -170,7 +170,7 @@ Keyword-only arguments:
 
 ### delete_protocols_list
 
-Permanently deletes an AWS Firewall Manager protocols list.
+Permanently deletes an Firewall Manager protocols list.
 
 Type annotations for `boto3.client("fms").delete_protocols_list` method.
 
@@ -186,7 +186,7 @@ Keyword-only arguments:
 
 ### disassociate_admin_account
 
-Disassociates the account that has been set as the AWS Firewall Manager
+Disassociates the account that has been set as the Firewall Manager
 administrator account.
 
 Type annotations for `boto3.client("fms").disassociate_admin_account` method.
@@ -214,8 +214,8 @@ Returns `str`.
 
 ### get_admin_account
 
-Returns the AWS Organizations master account that is associated with AWS
-Firewall Manager as the AWS Firewall Manager administrator.
+Returns the Organizations account that is associated with Firewall Manager as
+the Firewall Manager administrator.
 
 Type annotations for `boto3.client("fms").get_admin_account` method.
 
@@ -227,7 +227,7 @@ Returns
 
 ### get_apps_list
 
-Returns information about the specified AWS Firewall Manager applications list.
+Returns information about the specified Firewall Manager applications list.
 
 Type annotations for `boto3.client("fms").get_apps_list` method.
 
@@ -268,7 +268,7 @@ Returns
 ### get_notification_channel
 
 Information about the Amazon Simple Notification Service (SNS) topic that is
-used to record AWS Firewall Manager SNS logs.
+used to record Firewall Manager SNS logs.
 
 Type annotations for `boto3.client("fms").get_notification_channel` method.
 
@@ -280,7 +280,7 @@ Returns
 
 ### get_policy
 
-Returns information about the specified AWS Firewall Manager policy.
+Returns information about the specified Firewall Manager policy.
 
 Type annotations for `boto3.client("fms").get_policy` method.
 
@@ -323,7 +323,7 @@ Returns
 
 ### get_protocols_list
 
-Returns information about the specified AWS Firewall Manager protocols list.
+Returns information about the specified Firewall Manager protocols list.
 
 Type annotations for `boto3.client("fms").get_protocols_list` method.
 
@@ -343,8 +343,8 @@ Returns
 
 ### get_violation_details
 
-Retrieves violations for a resource based on the specified AWS Firewall Manager
-policy and AWS account.
+Retrieves violations for a resource based on the specified Firewall Manager
+policy and Amazon Web Services account.
 
 Type annotations for `boto3.client("fms").get_violation_details` method.
 
@@ -409,7 +409,7 @@ Returns
 ### list_member_accounts
 
 Returns a `MemberAccounts` object that lists the member accounts in the
-administrator's AWS organization.
+administrator's Amazon Web Services organization.
 
 Type annotations for `boto3.client("fms").list_member_accounts` method.
 
@@ -470,7 +470,7 @@ Returns
 
 ### list_tags_for_resource
 
-Retrieves the list of tags for the specified AWS resource.
+Retrieves the list of tags for the specified Amazon Web Services resource.
 
 Type annotations for `boto3.client("fms").list_tags_for_resource` method.
 
@@ -489,7 +489,7 @@ Returns
 
 ### put_apps_list
 
-Creates an AWS Firewall Manager applications list.
+Creates an Firewall Manager applications list.
 
 Type annotations for `boto3.client("fms").put_apps_list` method.
 
@@ -511,7 +511,7 @@ Returns
 ### put_notification_channel
 
 Designates the IAM role and Amazon Simple Notification Service (SNS) topic that
-AWS Firewall Manager uses to record SNS logs.
+Firewall Manager uses to record SNS logs.
 
 Type annotations for `boto3.client("fms").put_notification_channel` method.
 
@@ -528,7 +528,7 @@ Keyword-only arguments:
 
 ### put_policy
 
-Creates an AWS Firewall Manager policy.
+Creates an Firewall Manager policy.
 
 Type annotations for `boto3.client("fms").put_policy` method.
 
@@ -547,7 +547,7 @@ Returns [PutPolicyResponseTypeDef](./type_defs.md#putpolicyresponsetypedef).
 
 ### put_protocols_list
 
-Creates an AWS Firewall Manager protocols list.
+Creates an Firewall Manager protocols list.
 
 Type annotations for `boto3.client("fms").put_protocols_list` method.
 
@@ -569,7 +569,7 @@ Returns
 
 ### tag_resource
 
-Adds one or more tags to an AWS resource.
+Adds one or more tags to an Amazon Web Services resource.
 
 Type annotations for `boto3.client("fms").tag_resource` method.
 
@@ -588,7 +588,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
-Removes one or more tags from an AWS resource.
+Removes one or more tags from an Amazon Web Services resource.
 
 Type annotations for `boto3.client("fms").untag_resource` method.
 
@@ -609,9 +609,13 @@ Returns `Dict`\[`str`, `Any`\].
 
 Type annotations for `boto3.client("fms").get_paginator` method with overloads.
 
+- `client.get_paginator("list_apps_lists")` ->
+  [ListAppsListsPaginator](./paginators.md#listappslistspaginator)
 - `client.get_paginator("list_compliance_status")` ->
   [ListComplianceStatusPaginator](./paginators.md#listcompliancestatuspaginator)
 - `client.get_paginator("list_member_accounts")` ->
   [ListMemberAccountsPaginator](./paginators.md#listmemberaccountspaginator)
 - `client.get_paginator("list_policies")` ->
   [ListPoliciesPaginator](./paginators.md#listpoliciespaginator)
+- `client.get_paginator("list_protocols_lists")` ->
+  [ListProtocolsListsPaginator](./paginators.md#listprotocolslistspaginator)

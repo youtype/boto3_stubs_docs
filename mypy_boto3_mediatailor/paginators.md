@@ -9,6 +9,7 @@ type annotations stubs module
 
 - [Paginators for boto3 MediaTailor module](#paginators-for-boto3-mediatailor-module)
   - [GetChannelSchedulePaginator](#getchannelschedulepaginator)
+  - [ListAlertsPaginator](#listalertspaginator)
   - [ListChannelsPaginator](#listchannelspaginator)
   - [ListPlaybackConfigurationsPaginator](#listplaybackconfigurationspaginator)
   - [ListSourceLocationsPaginator](#listsourcelocationspaginator)
@@ -40,6 +41,32 @@ Arguments for `GetChannelSchedulePaginator.paginate` method:
 
 `GetChannelSchedulePaginator.paginate` returns
 `Iterator`\[[GetChannelScheduleResponseTypeDef](./type_defs.md#getchannelscheduleresponsetypedef)\].
+
+## ListAlertsPaginator
+
+Type annotations for
+`boto3.client("mediatailor").get_paginator("list_alerts")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_mediatailor.paginator import ListAlertsPaginator
+
+def get_list_alerts_paginator() -> ListAlertsPaginator:
+    return boto3.client("mediatailor").get_paginator("list_alerts")
+```
+
+Boto3 documentation:
+[MediaTailor.Paginator.ListAlerts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.ListAlerts)
+
+Arguments for `ListAlertsPaginator.paginate` method:
+
+- `ResourceArn`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListAlertsPaginator.paginate` returns
+`Iterator`\[[ListAlertsResponseTypeDef](./type_defs.md#listalertsresponsetypedef)\].
 
 ## ListChannelsPaginator
 

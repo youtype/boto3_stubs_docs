@@ -901,6 +901,10 @@ Type annotations for `boto3.client("eks").get_waiter` method with overloads.
   [ClusterActiveWaiter](./waiters.md#clusteractivewaiter)
 - `client.get_waiter("cluster_deleted")` ->
   [ClusterDeletedWaiter](./waiters.md#clusterdeletedwaiter)
+- `client.get_waiter("fargate_profile_active")` ->
+  [FargateProfileActiveWaiter](./waiters.md#fargateprofileactivewaiter)
+- `client.get_waiter("fargate_profile_deleted")` ->
+  [FargateProfileDeletedWaiter](./waiters.md#fargateprofiledeletedwaiter)
 - `client.get_waiter("nodegroup_active")` ->
   [NodegroupActiveWaiter](./waiters.md#nodegroupactivewaiter)
 - `client.get_waiter("nodegroup_deleted")` ->

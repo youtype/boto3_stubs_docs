@@ -11,6 +11,7 @@ type annotations stubs module
   - [AccessConfigurationTypeDef](#accessconfigurationtypedef)
   - [AdBreakTypeDef](#adbreaktypedef)
   - [AdMarkerPassthroughTypeDef](#admarkerpassthroughtypedef)
+  - [AlertTypeDef](#alerttypedef)
   - [AvailSuppressionTypeDef](#availsuppressiontypedef)
   - [BumperTypeDef](#bumpertypedef)
   - [CdnConfigurationTypeDef](#cdnconfigurationtypedef)
@@ -51,6 +52,8 @@ type annotations stubs module
   - [HlsPlaylistSettingsTypeDef](#hlsplaylistsettingstypedef)
   - [HttpConfigurationTypeDef](#httpconfigurationtypedef)
   - [HttpPackageConfigurationTypeDef](#httppackageconfigurationtypedef)
+  - [ListAlertsRequestRequestTypeDef](#listalertsrequestrequesttypedef)
+  - [ListAlertsResponseTypeDef](#listalertsresponsetypedef)
   - [ListChannelsRequestRequestTypeDef](#listchannelsrequestrequesttypedef)
   - [ListChannelsResponseTypeDef](#listchannelsresponsetypedef)
   - [ListPlaybackConfigurationsRequestRequestTypeDef](#listplaybackconfigurationsrequestrequesttypedef)
@@ -127,6 +130,20 @@ from mypy_boto3_mediatailor.type_defs import AdMarkerPassthroughTypeDef
 Optional fields:
 
 - `Enabled`: `bool`
+
+## AlertTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import AlertTypeDef
+```
+
+Required fields:
+
+- `AlertCode`: `str`
+- `AlertMessage`: `str`
+- `LastModifiedTime`: `datetime`
+- `RelatedResourceArns`: `List`\[`str`\]
+- `ResourceArn`: `str`
 
 ## AvailSuppressionTypeDef
 
@@ -704,6 +721,34 @@ Required fields:
 - `Path`: `str`
 - `SourceGroup`: `str`
 - `Type`: [TypeType](./literals.md#typetype)
+
+## ListAlertsRequestRequestTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import ListAlertsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListAlertsResponseTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import ListAlertsResponseTypeDef
+```
+
+Required fields:
+
+- `Items`: `List`\[[AlertTypeDef](./type_defs.md#alerttypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListChannelsRequestRequestTypeDef
 

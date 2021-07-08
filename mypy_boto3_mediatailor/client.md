@@ -31,6 +31,7 @@ type annotations stubs module
     - [get_channel_policy](#get_channel_policy)
     - [get_channel_schedule](#get_channel_schedule)
     - [get_playback_configuration](#get_playback_configuration)
+    - [list_alerts](#list_alerts)
     - [list_channels](#list_channels)
     - [list_playback_configurations](#list_playback_configurations)
     - [list_source_locations](#list_source_locations)
@@ -483,6 +484,26 @@ Keyword-only arguments:
 Returns
 [GetPlaybackConfigurationResponseTypeDef](./type_defs.md#getplaybackconfigurationresponsetypedef).
 
+### list_alerts
+
+Returns a list of alerts for the given resource.
+
+Type annotations for `boto3.client("mediatailor").list_alerts` method.
+
+Boto3 documentation:
+[MediaTailor.Client.list_alerts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_alerts)
+
+Arguments mapping described in
+[ListAlertsRequestRequestTypeDef](./type_defs.md#listalertsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns [ListAlertsResponseTypeDef](./type_defs.md#listalertsresponsetypedef).
+
 ### list_channels
 
 Retrieves a list of channels that are associated with this account.
@@ -794,6 +815,8 @@ overloads.
 
 - `client.get_paginator("get_channel_schedule")` ->
   [GetChannelSchedulePaginator](./paginators.md#getchannelschedulepaginator)
+- `client.get_paginator("list_alerts")` ->
+  [ListAlertsPaginator](./paginators.md#listalertspaginator)
 - `client.get_paginator("list_channels")` ->
   [ListChannelsPaginator](./paginators.md#listchannelspaginator)
 - `client.get_paginator("list_playback_configurations")` ->

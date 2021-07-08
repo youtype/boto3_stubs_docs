@@ -11,12 +11,16 @@ type annotations stubs module
   - [AccountRoleStatusType](#accountrolestatustype)
   - [CustomerPolicyScopeIdTypeType](#customerpolicyscopeidtypetype)
   - [DependentServiceNameType](#dependentservicenametype)
+  - [DestinationTypeType](#destinationtypetype)
+  - [ListAppsListsPaginatorName](#listappslistspaginatorname)
   - [ListComplianceStatusPaginatorName](#listcompliancestatuspaginatorname)
   - [ListMemberAccountsPaginatorName](#listmemberaccountspaginatorname)
   - [ListPoliciesPaginatorName](#listpoliciespaginatorname)
+  - [ListProtocolsListsPaginatorName](#listprotocolslistspaginatorname)
   - [PolicyComplianceStatusTypeType](#policycompliancestatustypetype)
   - [RemediationActionTypeType](#remediationactiontypetype)
   - [SecurityServiceTypeType](#securityservicetypetype)
+  - [TargetTypeType](#targettypetype)
   - [ViolationReasonType](#violationreasontype)
 
 ## AccountRoleStatusType
@@ -57,6 +61,28 @@ Values:
 - `AWSVPC`
 - `AWSWAF`
 
+## DestinationTypeType
+
+```python
+from mypy_boto3_fms.literals import DestinationTypeType
+```
+
+Values:
+
+- `IPV4`
+- `IPV6`
+- `PREFIX_LIST`
+
+## ListAppsListsPaginatorName
+
+```python
+from mypy_boto3_fms.literals import ListAppsListsPaginatorName
+```
+
+Values:
+
+- `list_apps_lists`
+
 ## ListComplianceStatusPaginatorName
 
 ```python
@@ -86,6 +112,16 @@ from mypy_boto3_fms.literals import ListPoliciesPaginatorName
 Values:
 
 - `list_policies`
+
+## ListProtocolsListsPaginatorName
+
+```python
+from mypy_boto3_fms.literals import ListProtocolsListsPaginatorName
+```
+
+Values:
+
+- `list_protocols_lists`
 
 ## PolicyComplianceStatusTypeType
 
@@ -126,6 +162,25 @@ Values:
 - `WAF`
 - `WAFV2`
 
+## TargetTypeType
+
+```python
+from mypy_boto3_fms.literals import TargetTypeType
+```
+
+Values:
+
+- `CARRIER_GATEWAY`
+- `EGRESS_ONLY_INTERNET_GATEWAY`
+- `GATEWAY`
+- `INSTANCE`
+- `LOCAL_GATEWAY`
+- `NAT_GATEWAY`
+- `NETWORK_INTERFACE`
+- `TRANSIT_GATEWAY`
+- `VPC_ENDPOINT`
+- `VPC_PEERING_CONNECTION`
+
 ## ViolationReasonType
 
 ```python
@@ -134,10 +189,17 @@ from mypy_boto3_fms.literals import ViolationReasonType
 
 Values:
 
+- `BLACK_HOLE_ROUTE_DETECTED`
+- `BLACK_HOLE_ROUTE_DETECTED_IN_FIREWALL_SUBNET`
+- `FIREWALL_SUBNET_MISSING_EXPECTED_ROUTE`
 - `FMS_CREATED_SECURITY_GROUP_EDITED`
+- `INTERNET_GATEWAY_MISSING_EXPECTED_ROUTE`
+- `INTERNET_TRAFFIC_NOT_INSPECTED`
+- `INVALID_ROUTE_CONFIGURATION`
 - `MISSING_EXPECTED_ROUTE_TABLE`
 - `MISSING_FIREWALL`
 - `MISSING_FIREWALL_SUBNET_IN_AZ`
+- `MISSING_TARGET_GATEWAY`
 - `NETWORK_FIREWALL_POLICY_MODIFIED`
 - `RESOURCE_INCORRECT_WEB_ACL`
 - `RESOURCE_MISSING_DNS_FIREWALL`
@@ -148,4 +210,7 @@ Values:
 - `RESOURCE_VIOLATES_AUDIT_SECURITY_GROUP`
 - `SECURITY_GROUP_REDUNDANT`
 - `SECURITY_GROUP_UNUSED`
+- `TRAFFIC_INSPECTION_CROSSES_AZ_BOUNDARY`
+- `UNEXPECTED_FIREWALL_ROUTES`
+- `UNEXPECTED_TARGET_GATEWAY_ROUTES`
 - `WEB_ACL_MISSING_RULE_GROUP`

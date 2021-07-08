@@ -211,7 +211,7 @@ Returns
 
 ### list_outposts
 
-List the Outposts for your AWS account.
+Create a list of the Outposts for your AWS account.
 
 Type annotations for `boto3.client("outposts").list_outposts` method.
 
@@ -225,6 +225,9 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+- `LifeCycleStatusFilter`: `List`\[`str`\]
+- `AvailabilityZoneFilter`: `List`\[`str`\]
+- `AvailabilityZoneIdFilter`: `List`\[`str`\]
 
 Returns [ListOutpostsOutputTypeDef](./type_defs.md#listoutpostsoutputtypedef).
 

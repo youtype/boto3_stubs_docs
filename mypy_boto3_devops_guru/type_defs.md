@@ -10,6 +10,7 @@ type annotations stubs module
 - [Typed dictionaries for boto3 DevOpsGuru module](#typed-dictionaries-for-boto3-devopsguru-module)
   - [AddNotificationChannelRequestRequestTypeDef](#addnotificationchannelrequestrequesttypedef)
   - [AddNotificationChannelResponseTypeDef](#addnotificationchannelresponsetypedef)
+  - [AnomalyReportedTimeRangeTypeDef](#anomalyreportedtimerangetypedef)
   - [AnomalySourceDetailsTypeDef](#anomalysourcedetailstypedef)
   - [AnomalyTimeRangeTypeDef](#anomalytimerangetypedef)
   - [CloudFormationCollectionFilterTypeDef](#cloudformationcollectionfiltertypedef)
@@ -123,6 +124,20 @@ Required fields:
 - `Id`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## AnomalyReportedTimeRangeTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import AnomalyReportedTimeRangeTypeDef
+```
+
+Required fields:
+
+- `OpenTime`: `datetime`
+
+Optional fields:
+
+- `CloseTime`: `datetime`
 
 ## AnomalySourceDetailsTypeDef
 
@@ -843,6 +858,8 @@ Optional fields:
 - `UpdateTime`: `datetime`
 - `AnomalyTimeRange`:
   [AnomalyTimeRangeTypeDef](./type_defs.md#anomalytimerangetypedef)
+- `AnomalyReportedTimeRange`:
+  [AnomalyReportedTimeRangeTypeDef](./type_defs.md#anomalyreportedtimerangetypedef)
 - `PredictionTimeRange`:
   [PredictionTimeRangeTypeDef](./type_defs.md#predictiontimerangetypedef)
 - `SourceDetails`:
@@ -866,6 +883,8 @@ Optional fields:
 - `UpdateTime`: `datetime`
 - `AnomalyTimeRange`:
   [AnomalyTimeRangeTypeDef](./type_defs.md#anomalytimerangetypedef)
+- `AnomalyReportedTimeRange`:
+  [AnomalyReportedTimeRangeTypeDef](./type_defs.md#anomalyreportedtimerangetypedef)
 - `PredictionTimeRange`:
   [PredictionTimeRangeTypeDef](./type_defs.md#predictiontimerangetypedef)
 - `SourceDetails`:
@@ -940,6 +959,8 @@ Optional fields:
 - `Status`: [AnomalyStatusType](./literals.md#anomalystatustype)
 - `AnomalyTimeRange`:
   [AnomalyTimeRangeTypeDef](./type_defs.md#anomalytimerangetypedef)
+- `AnomalyReportedTimeRange`:
+  [AnomalyReportedTimeRangeTypeDef](./type_defs.md#anomalyreportedtimerangetypedef)
 - `SourceDetails`:
   [AnomalySourceDetailsTypeDef](./type_defs.md#anomalysourcedetailstypedef)
 - `AssociatedInsightId`: `str`
@@ -959,6 +980,8 @@ Optional fields:
 - `Status`: [AnomalyStatusType](./literals.md#anomalystatustype)
 - `AnomalyTimeRange`:
   [AnomalyTimeRangeTypeDef](./type_defs.md#anomalytimerangetypedef)
+- `AnomalyReportedTimeRange`:
+  [AnomalyReportedTimeRangeTypeDef](./type_defs.md#anomalyreportedtimerangetypedef)
 - `SourceDetails`:
   [AnomalySourceDetailsTypeDef](./type_defs.md#anomalysourcedetailstypedef)
 - `AssociatedInsightId`: `str`

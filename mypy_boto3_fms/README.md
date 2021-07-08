@@ -82,12 +82,14 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_fms.paginators import ListComplianceStatusPaginator, ...
+from mypy_boto3_fms.paginators import ListAppsListsPaginator, ...
 ```
 
+- [ListAppsListsPaginator](./paginators.md#listappslistspaginator)
 - [ListComplianceStatusPaginator](./paginators.md#listcompliancestatuspaginator)
 - [ListMemberAccountsPaginator](./paginators.md#listmemberaccountspaginator)
 - [ListPoliciesPaginator](./paginators.md#listpoliciespaginator)
+- [ListProtocolsListsPaginator](./paginators.md#listprotocolslistspaginator)
 
 ## Literals
 
@@ -102,12 +104,16 @@ from mypy_boto3_fms.literals import AccountRoleStatusType, ...
 - [AccountRoleStatusType](./literals.md#accountrolestatustype)
 - [CustomerPolicyScopeIdTypeType](./literals.md#customerpolicyscopeidtypetype)
 - [DependentServiceNameType](./literals.md#dependentservicenametype)
+- [DestinationTypeType](./literals.md#destinationtypetype)
+- [ListAppsListsPaginatorName](./literals.md#listappslistspaginatorname)
 - [ListComplianceStatusPaginatorName](./literals.md#listcompliancestatuspaginatorname)
 - [ListMemberAccountsPaginatorName](./literals.md#listmemberaccountspaginatorname)
 - [ListPoliciesPaginatorName](./literals.md#listpoliciespaginatorname)
+- [ListProtocolsListsPaginatorName](./literals.md#listprotocolslistspaginatorname)
 - [PolicyComplianceStatusTypeType](./literals.md#policycompliancestatustypetype)
 - [RemediationActionTypeType](./literals.md#remediationactiontypetype)
 - [SecurityServiceTypeType](./literals.md#securityservicetypetype)
+- [TargetTypeType](./literals.md#targettypetype)
 - [ViolationReasonType](./literals.md#violationreasontype)
 
 ## Typed dictionaries
@@ -118,9 +124,10 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_fms.type_defs import AppTypeDef, ...
+from mypy_boto3_fms.type_defs import ActionTargetTypeDef, ...
 ```
 
+- [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
 - [AppTypeDef](./type_defs.md#apptypedef)
 - [AppsListDataSummaryTypeDef](./type_defs.md#appslistdatasummarytypedef)
 - [AppsListDataTypeDef](./type_defs.md#appslistdatatypedef)
@@ -135,7 +142,15 @@ from mypy_boto3_fms.type_defs import AppTypeDef, ...
 - [DnsDuplicateRuleGroupViolationTypeDef](./type_defs.md#dnsduplicaterulegroupviolationtypedef)
 - [DnsRuleGroupLimitExceededViolationTypeDef](./type_defs.md#dnsrulegrouplimitexceededviolationtypedef)
 - [DnsRuleGroupPriorityConflictViolationTypeDef](./type_defs.md#dnsrulegrouppriorityconflictviolationtypedef)
+- [EC2AssociateRouteTableActionTypeDef](./type_defs.md#ec2associateroutetableactiontypedef)
+- [EC2CopyRouteTableActionTypeDef](./type_defs.md#ec2copyroutetableactiontypedef)
+- [EC2CreateRouteActionTypeDef](./type_defs.md#ec2createrouteactiontypedef)
+- [EC2CreateRouteTableActionTypeDef](./type_defs.md#ec2createroutetableactiontypedef)
+- [EC2DeleteRouteActionTypeDef](./type_defs.md#ec2deleterouteactiontypedef)
+- [EC2ReplaceRouteActionTypeDef](./type_defs.md#ec2replacerouteactiontypedef)
+- [EC2ReplaceRouteTableAssociationActionTypeDef](./type_defs.md#ec2replaceroutetableassociationactiontypedef)
 - [EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef)
+- [ExpectedRouteTypeDef](./type_defs.md#expectedroutetypedef)
 - [GetAdminAccountResponseTypeDef](./type_defs.md#getadminaccountresponsetypedef)
 - [GetAppsListRequestRequestTypeDef](./type_defs.md#getappslistrequestrequesttypedef)
 - [GetAppsListResponseTypeDef](./type_defs.md#getappslistresponsetypedef)
@@ -162,17 +177,25 @@ from mypy_boto3_fms.type_defs import AppTypeDef, ...
 - [ListProtocolsListsResponseTypeDef](./type_defs.md#listprotocolslistsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [NetworkFirewallBlackHoleRouteDetectedViolationTypeDef](./type_defs.md#networkfirewallblackholeroutedetectedviolationtypedef)
+- [NetworkFirewallInternetTrafficNotInspectedViolationTypeDef](./type_defs.md#networkfirewallinternettrafficnotinspectedviolationtypedef)
+- [NetworkFirewallInvalidRouteConfigurationViolationTypeDef](./type_defs.md#networkfirewallinvalidrouteconfigurationviolationtypedef)
 - [NetworkFirewallMissingExpectedRTViolationTypeDef](./type_defs.md#networkfirewallmissingexpectedrtviolationtypedef)
+- [NetworkFirewallMissingExpectedRoutesViolationTypeDef](./type_defs.md#networkfirewallmissingexpectedroutesviolationtypedef)
 - [NetworkFirewallMissingFirewallViolationTypeDef](./type_defs.md#networkfirewallmissingfirewallviolationtypedef)
 - [NetworkFirewallMissingSubnetViolationTypeDef](./type_defs.md#networkfirewallmissingsubnetviolationtypedef)
 - [NetworkFirewallPolicyDescriptionTypeDef](./type_defs.md#networkfirewallpolicydescriptiontypedef)
 - [NetworkFirewallPolicyModifiedViolationTypeDef](./type_defs.md#networkfirewallpolicymodifiedviolationtypedef)
+- [NetworkFirewallUnexpectedFirewallRoutesViolationTypeDef](./type_defs.md#networkfirewallunexpectedfirewallroutesviolationtypedef)
+- [NetworkFirewallUnexpectedGatewayRoutesViolationTypeDef](./type_defs.md#networkfirewallunexpectedgatewayroutesviolationtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [PartialMatchTypeDef](./type_defs.md#partialmatchtypedef)
 - [PolicyComplianceDetailTypeDef](./type_defs.md#policycompliancedetailtypedef)
 - [PolicyComplianceStatusTypeDef](./type_defs.md#policycompliancestatustypedef)
 - [PolicySummaryTypeDef](./type_defs.md#policysummarytypedef)
 - [PolicyTypeDef](./type_defs.md#policytypedef)
+- [PossibleRemediationActionTypeDef](./type_defs.md#possibleremediationactiontypedef)
+- [PossibleRemediationActionsTypeDef](./type_defs.md#possibleremediationactionstypedef)
 - [ProtocolsListDataSummaryTypeDef](./type_defs.md#protocolslistdatasummarytypedef)
 - [ProtocolsListDataTypeDef](./type_defs.md#protocolslistdatatypedef)
 - [PutAppsListRequestRequestTypeDef](./type_defs.md#putappslistrequestrequesttypedef)
@@ -182,9 +205,12 @@ from mypy_boto3_fms.type_defs import AppTypeDef, ...
 - [PutPolicyResponseTypeDef](./type_defs.md#putpolicyresponsetypedef)
 - [PutProtocolsListRequestRequestTypeDef](./type_defs.md#putprotocolslistrequestrequesttypedef)
 - [PutProtocolsListResponseTypeDef](./type_defs.md#putprotocolslistresponsetypedef)
+- [RemediationActionTypeDef](./type_defs.md#remediationactiontypedef)
+- [RemediationActionWithOrderTypeDef](./type_defs.md#remediationactionwithordertypedef)
 - [ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)
 - [ResourceViolationTypeDef](./type_defs.md#resourceviolationtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [RouteTypeDef](./type_defs.md#routetypedef)
 - [SecurityGroupRemediationActionTypeDef](./type_defs.md#securitygroupremediationactiontypedef)
 - [SecurityGroupRuleDescriptionTypeDef](./type_defs.md#securitygroupruledescriptiontypedef)
 - [SecurityServicePolicyDataTypeDef](./type_defs.md#securityservicepolicydatatypedef)

@@ -12,6 +12,8 @@ type annotations stubs module
   - [AddonDeletedWaiter](#addondeletedwaiter)
   - [ClusterActiveWaiter](#clusteractivewaiter)
   - [ClusterDeletedWaiter](#clusterdeletedwaiter)
+  - [FargateProfileActiveWaiter](#fargateprofileactivewaiter)
+  - [FargateProfileDeletedWaiter](#fargateprofiledeletedwaiter)
   - [NodegroupActiveWaiter](#nodegroupactivewaiter)
   - [NodegroupDeletedWaiter](#nodegroupdeletedwaiter)
 
@@ -99,6 +101,52 @@ Boto3 documentation:
 Arguments for `ClusterDeletedWaiter.wait` method:
 
 - `name`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+
+## FargateProfileActiveWaiter
+
+Type annotations for
+`boto3.client("eks").get_waiter("fargate_profile_active")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_eks.waiter import FargateProfileActiveWaiter
+
+def get_fargate_profile_active_waiter() -> FargateProfileActiveWaiter:
+    return boto3.client("eks").get_waiter("fargate_profile_active")
+```
+
+Boto3 documentation:
+[EKS.Waiter.fargate_profile_active](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.FargateProfileActive)
+
+Arguments for `FargateProfileActiveWaiter.wait` method:
+
+- `clusterName`: `str` *(required)*
+- `fargateProfileName`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+
+## FargateProfileDeletedWaiter
+
+Type annotations for
+`boto3.client("eks").get_waiter("fargate_profile_deleted")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_eks.waiter import FargateProfileDeletedWaiter
+
+def get_fargate_profile_deleted_waiter() -> FargateProfileDeletedWaiter:
+    return boto3.client("eks").get_waiter("fargate_profile_deleted")
+```
+
+Boto3 documentation:
+[EKS.Waiter.fargate_profile_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.FargateProfileDeleted)
+
+Arguments for `FargateProfileDeletedWaiter.wait` method:
+
+- `clusterName`: `str` *(required)*
+- `fargateProfileName`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## NodegroupActiveWaiter

@@ -8,6 +8,7 @@ type annotations stubs module
 [mypy_boto3_fms](https://pypi.org/project/mypy-boto3-fms/).
 
 - [Typed dictionaries for boto3 FMS module](#typed-dictionaries-for-boto3-fms-module)
+  - [ActionTargetTypeDef](#actiontargettypedef)
   - [AppTypeDef](#apptypedef)
   - [AppsListDataSummaryTypeDef](#appslistdatasummarytypedef)
   - [AppsListDataTypeDef](#appslistdatatypedef)
@@ -22,7 +23,15 @@ type annotations stubs module
   - [DnsDuplicateRuleGroupViolationTypeDef](#dnsduplicaterulegroupviolationtypedef)
   - [DnsRuleGroupLimitExceededViolationTypeDef](#dnsrulegrouplimitexceededviolationtypedef)
   - [DnsRuleGroupPriorityConflictViolationTypeDef](#dnsrulegrouppriorityconflictviolationtypedef)
+  - [EC2AssociateRouteTableActionTypeDef](#ec2associateroutetableactiontypedef)
+  - [EC2CopyRouteTableActionTypeDef](#ec2copyroutetableactiontypedef)
+  - [EC2CreateRouteActionTypeDef](#ec2createrouteactiontypedef)
+  - [EC2CreateRouteTableActionTypeDef](#ec2createroutetableactiontypedef)
+  - [EC2DeleteRouteActionTypeDef](#ec2deleterouteactiontypedef)
+  - [EC2ReplaceRouteActionTypeDef](#ec2replacerouteactiontypedef)
+  - [EC2ReplaceRouteTableAssociationActionTypeDef](#ec2replaceroutetableassociationactiontypedef)
   - [EvaluationResultTypeDef](#evaluationresulttypedef)
+  - [ExpectedRouteTypeDef](#expectedroutetypedef)
   - [GetAdminAccountResponseTypeDef](#getadminaccountresponsetypedef)
   - [GetAppsListRequestRequestTypeDef](#getappslistrequestrequesttypedef)
   - [GetAppsListResponseTypeDef](#getappslistresponsetypedef)
@@ -49,17 +58,25 @@ type annotations stubs module
   - [ListProtocolsListsResponseTypeDef](#listprotocolslistsresponsetypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [NetworkFirewallBlackHoleRouteDetectedViolationTypeDef](#networkfirewallblackholeroutedetectedviolationtypedef)
+  - [NetworkFirewallInternetTrafficNotInspectedViolationTypeDef](#networkfirewallinternettrafficnotinspectedviolationtypedef)
+  - [NetworkFirewallInvalidRouteConfigurationViolationTypeDef](#networkfirewallinvalidrouteconfigurationviolationtypedef)
   - [NetworkFirewallMissingExpectedRTViolationTypeDef](#networkfirewallmissingexpectedrtviolationtypedef)
+  - [NetworkFirewallMissingExpectedRoutesViolationTypeDef](#networkfirewallmissingexpectedroutesviolationtypedef)
   - [NetworkFirewallMissingFirewallViolationTypeDef](#networkfirewallmissingfirewallviolationtypedef)
   - [NetworkFirewallMissingSubnetViolationTypeDef](#networkfirewallmissingsubnetviolationtypedef)
   - [NetworkFirewallPolicyDescriptionTypeDef](#networkfirewallpolicydescriptiontypedef)
   - [NetworkFirewallPolicyModifiedViolationTypeDef](#networkfirewallpolicymodifiedviolationtypedef)
+  - [NetworkFirewallUnexpectedFirewallRoutesViolationTypeDef](#networkfirewallunexpectedfirewallroutesviolationtypedef)
+  - [NetworkFirewallUnexpectedGatewayRoutesViolationTypeDef](#networkfirewallunexpectedgatewayroutesviolationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PartialMatchTypeDef](#partialmatchtypedef)
   - [PolicyComplianceDetailTypeDef](#policycompliancedetailtypedef)
   - [PolicyComplianceStatusTypeDef](#policycompliancestatustypedef)
   - [PolicySummaryTypeDef](#policysummarytypedef)
   - [PolicyTypeDef](#policytypedef)
+  - [PossibleRemediationActionTypeDef](#possibleremediationactiontypedef)
+  - [PossibleRemediationActionsTypeDef](#possibleremediationactionstypedef)
   - [ProtocolsListDataSummaryTypeDef](#protocolslistdatasummarytypedef)
   - [ProtocolsListDataTypeDef](#protocolslistdatatypedef)
   - [PutAppsListRequestRequestTypeDef](#putappslistrequestrequesttypedef)
@@ -69,9 +86,12 @@ type annotations stubs module
   - [PutPolicyResponseTypeDef](#putpolicyresponsetypedef)
   - [PutProtocolsListRequestRequestTypeDef](#putprotocolslistrequestrequesttypedef)
   - [PutProtocolsListResponseTypeDef](#putprotocolslistresponsetypedef)
+  - [RemediationActionTypeDef](#remediationactiontypedef)
+  - [RemediationActionWithOrderTypeDef](#remediationactionwithordertypedef)
   - [ResourceTagTypeDef](#resourcetagtypedef)
   - [ResourceViolationTypeDef](#resourceviolationtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [RouteTypeDef](#routetypedef)
   - [SecurityGroupRemediationActionTypeDef](#securitygroupremediationactiontypedef)
   - [SecurityGroupRuleDescriptionTypeDef](#securitygroupruledescriptiontypedef)
   - [SecurityServicePolicyDataTypeDef](#securityservicepolicydatatypedef)
@@ -81,6 +101,17 @@ type annotations stubs module
   - [TagTypeDef](#tagtypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [ViolationDetailTypeDef](#violationdetailtypedef)
+
+## ActionTargetTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import ActionTargetTypeDef
+```
+
+Optional fields:
+
+- `ResourceId`: `str`
+- `Description`: `str`
 
 ## AppTypeDef
 
@@ -258,6 +289,120 @@ Optional fields:
 - `ConflictingPolicyId`: `str`
 - `UnavailablePriorities`: `List`\[`int`\]
 
+## EC2AssociateRouteTableActionTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import EC2AssociateRouteTableActionTypeDef
+```
+
+Required fields:
+
+- `RouteTableId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
+
+Optional fields:
+
+- `Description`: `str`
+- `SubnetId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
+- `GatewayId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
+
+## EC2CopyRouteTableActionTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import EC2CopyRouteTableActionTypeDef
+```
+
+Required fields:
+
+- `VpcId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
+- `RouteTableId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
+
+Optional fields:
+
+- `Description`: `str`
+
+## EC2CreateRouteActionTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import EC2CreateRouteActionTypeDef
+```
+
+Required fields:
+
+- `RouteTableId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
+
+Optional fields:
+
+- `Description`: `str`
+- `DestinationCidrBlock`: `str`
+- `DestinationPrefixListId`: `str`
+- `DestinationIpv6CidrBlock`: `str`
+- `VpcEndpointId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
+- `GatewayId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
+
+## EC2CreateRouteTableActionTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import EC2CreateRouteTableActionTypeDef
+```
+
+Required fields:
+
+- `VpcId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
+
+Optional fields:
+
+- `Description`: `str`
+
+## EC2DeleteRouteActionTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import EC2DeleteRouteActionTypeDef
+```
+
+Required fields:
+
+- `RouteTableId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
+
+Optional fields:
+
+- `Description`: `str`
+- `DestinationCidrBlock`: `str`
+- `DestinationPrefixListId`: `str`
+- `DestinationIpv6CidrBlock`: `str`
+
+## EC2ReplaceRouteActionTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import EC2ReplaceRouteActionTypeDef
+```
+
+Required fields:
+
+- `RouteTableId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
+
+Optional fields:
+
+- `Description`: `str`
+- `DestinationCidrBlock`: `str`
+- `DestinationPrefixListId`: `str`
+- `DestinationIpv6CidrBlock`: `str`
+- `GatewayId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
+
+## EC2ReplaceRouteTableAssociationActionTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import EC2ReplaceRouteTableAssociationActionTypeDef
+```
+
+Required fields:
+
+- `AssociationId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
+- `RouteTableId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
+
+Optional fields:
+
+- `Description`: `str`
+
 ## EvaluationResultTypeDef
 
 ```python
@@ -270,6 +415,21 @@ Optional fields:
   [PolicyComplianceStatusTypeType](./literals.md#policycompliancestatustypetype)
 - `ViolatorCount`: `int`
 - `EvaluationLimitExceeded`: `bool`
+
+## ExpectedRouteTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import ExpectedRouteTypeDef
+```
+
+Optional fields:
+
+- `IpV4Cidr`: `str`
+- `PrefixListId`: `str`
+- `IpV6Cidr`: `str`
+- `ContributingSubnets`: `List`\[`str`\]
+- `AllowedTargets`: `List`\[`str`\]
+- `RouteTableId`: `str`
 
 ## GetAdminAccountResponseTypeDef
 
@@ -617,6 +777,76 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## NetworkFirewallBlackHoleRouteDetectedViolationTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import NetworkFirewallBlackHoleRouteDetectedViolationTypeDef
+```
+
+Optional fields:
+
+- `ViolationTarget`: `str`
+- `RouteTableId`: `str`
+- `VpcId`: `str`
+- `ViolatingRoutes`: `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
+
+## NetworkFirewallInternetTrafficNotInspectedViolationTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import NetworkFirewallInternetTrafficNotInspectedViolationTypeDef
+```
+
+Optional fields:
+
+- `SubnetId`: `str`
+- `SubnetAvailabilityZone`: `str`
+- `RouteTableId`: `str`
+- `ViolatingRoutes`: `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
+- `IsRouteTableUsedInDifferentAZ`: `bool`
+- `CurrentFirewallSubnetRouteTable`: `str`
+- `ExpectedFirewallEndpoint`: `str`
+- `FirewallSubnetId`: `str`
+- `ExpectedFirewallSubnetRoutes`:
+  `List`\[[ExpectedRouteTypeDef](./type_defs.md#expectedroutetypedef)\]
+- `ActualFirewallSubnetRoutes`:
+  `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
+- `InternetGatewayId`: `str`
+- `CurrentInternetGatewayRouteTable`: `str`
+- `ExpectedInternetGatewayRoutes`:
+  `List`\[[ExpectedRouteTypeDef](./type_defs.md#expectedroutetypedef)\]
+- `ActualInternetGatewayRoutes`:
+  `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
+- `VpcId`: `str`
+
+## NetworkFirewallInvalidRouteConfigurationViolationTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import NetworkFirewallInvalidRouteConfigurationViolationTypeDef
+```
+
+Optional fields:
+
+- `AffectedSubnets`: `List`\[`str`\]
+- `RouteTableId`: `str`
+- `IsRouteTableUsedInDifferentAZ`: `bool`
+- `ViolatingRoute`: [RouteTypeDef](./type_defs.md#routetypedef)
+- `CurrentFirewallSubnetRouteTable`: `str`
+- `ExpectedFirewallEndpoint`: `str`
+- `ActualFirewallEndpoint`: `str`
+- `ExpectedFirewallSubnetId`: `str`
+- `ActualFirewallSubnetId`: `str`
+- `ExpectedFirewallSubnetRoutes`:
+  `List`\[[ExpectedRouteTypeDef](./type_defs.md#expectedroutetypedef)\]
+- `ActualFirewallSubnetRoutes`:
+  `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
+- `InternetGatewayId`: `str`
+- `CurrentInternetGatewayRouteTable`: `str`
+- `ExpectedInternetGatewayRoutes`:
+  `List`\[[ExpectedRouteTypeDef](./type_defs.md#expectedroutetypedef)\]
+- `ActualInternetGatewayRoutes`:
+  `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
+- `VpcId`: `str`
+
 ## NetworkFirewallMissingExpectedRTViolationTypeDef
 
 ```python
@@ -630,6 +860,19 @@ Optional fields:
 - `AvailabilityZone`: `str`
 - `CurrentRouteTable`: `str`
 - `ExpectedRouteTable`: `str`
+
+## NetworkFirewallMissingExpectedRoutesViolationTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import NetworkFirewallMissingExpectedRoutesViolationTypeDef
+```
+
+Optional fields:
+
+- `ViolationTarget`: `str`
+- `ExpectedRoutes`:
+  `List`\[[ExpectedRouteTypeDef](./type_defs.md#expectedroutetypedef)\]
+- `VpcId`: `str`
 
 ## NetworkFirewallMissingFirewallViolationTypeDef
 
@@ -686,6 +929,33 @@ Optional fields:
   [NetworkFirewallPolicyDescriptionTypeDef](./type_defs.md#networkfirewallpolicydescriptiontypedef)
 - `ExpectedPolicyDescription`:
   [NetworkFirewallPolicyDescriptionTypeDef](./type_defs.md#networkfirewallpolicydescriptiontypedef)
+
+## NetworkFirewallUnexpectedFirewallRoutesViolationTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import NetworkFirewallUnexpectedFirewallRoutesViolationTypeDef
+```
+
+Optional fields:
+
+- `FirewallSubnetId`: `str`
+- `ViolatingRoutes`: `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
+- `RouteTableId`: `str`
+- `FirewallEndpoint`: `str`
+- `VpcId`: `str`
+
+## NetworkFirewallUnexpectedGatewayRoutesViolationTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import NetworkFirewallUnexpectedGatewayRoutesViolationTypeDef
+```
+
+Optional fields:
+
+- `GatewayId`: `str`
+- `ViolatingRoutes`: `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
+- `RouteTableId`: `str`
+- `VpcId`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -792,6 +1062,34 @@ Optional fields:
 - `ExcludeMap`:
   `Dict`\[[CustomerPolicyScopeIdTypeType](./literals.md#customerpolicyscopeidtypetype),
   `List`\[`str`\]\]
+
+## PossibleRemediationActionTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import PossibleRemediationActionTypeDef
+```
+
+Required fields:
+
+- `OrderedRemediationActions`:
+  `List`\[[RemediationActionWithOrderTypeDef](./type_defs.md#remediationactionwithordertypedef)\]
+
+Optional fields:
+
+- `Description`: `str`
+- `IsDefaultAction`: `bool`
+
+## PossibleRemediationActionsTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import PossibleRemediationActionsTypeDef
+```
+
+Optional fields:
+
+- `Description`: `str`
+- `Actions`:
+  `List`\[[PossibleRemediationActionTypeDef](./type_defs.md#possibleremediationactiontypedef)\]
 
 ## ProtocolsListDataSummaryTypeDef
 
@@ -919,6 +1217,42 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## RemediationActionTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import RemediationActionTypeDef
+```
+
+Optional fields:
+
+- `Description`: `str`
+- `EC2CreateRouteAction`:
+  [EC2CreateRouteActionTypeDef](./type_defs.md#ec2createrouteactiontypedef)
+- `EC2ReplaceRouteAction`:
+  [EC2ReplaceRouteActionTypeDef](./type_defs.md#ec2replacerouteactiontypedef)
+- `EC2DeleteRouteAction`:
+  [EC2DeleteRouteActionTypeDef](./type_defs.md#ec2deleterouteactiontypedef)
+- `EC2CopyRouteTableAction`:
+  [EC2CopyRouteTableActionTypeDef](./type_defs.md#ec2copyroutetableactiontypedef)
+- `EC2ReplaceRouteTableAssociationAction`:
+  [EC2ReplaceRouteTableAssociationActionTypeDef](./type_defs.md#ec2replaceroutetableassociationactiontypedef)
+- `EC2AssociateRouteTableAction`:
+  [EC2AssociateRouteTableActionTypeDef](./type_defs.md#ec2associateroutetableactiontypedef)
+- `EC2CreateRouteTableAction`:
+  [EC2CreateRouteTableActionTypeDef](./type_defs.md#ec2createroutetableactiontypedef)
+
+## RemediationActionWithOrderTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import RemediationActionWithOrderTypeDef
+```
+
+Optional fields:
+
+- `RemediationAction`:
+  [RemediationActionTypeDef](./type_defs.md#remediationactiontypedef)
+- `Order`: `int`
+
 ## ResourceTagTypeDef
 
 ```python
@@ -955,12 +1289,26 @@ Optional fields:
   [NetworkFirewallMissingExpectedRTViolationTypeDef](./type_defs.md#networkfirewallmissingexpectedrtviolationtypedef)
 - `NetworkFirewallPolicyModifiedViolation`:
   [NetworkFirewallPolicyModifiedViolationTypeDef](./type_defs.md#networkfirewallpolicymodifiedviolationtypedef)
+- `NetworkFirewallInternetTrafficNotInspectedViolation`:
+  [NetworkFirewallInternetTrafficNotInspectedViolationTypeDef](./type_defs.md#networkfirewallinternettrafficnotinspectedviolationtypedef)
+- `NetworkFirewallInvalidRouteConfigurationViolation`:
+  [NetworkFirewallInvalidRouteConfigurationViolationTypeDef](./type_defs.md#networkfirewallinvalidrouteconfigurationviolationtypedef)
+- `NetworkFirewallBlackHoleRouteDetectedViolation`:
+  [NetworkFirewallBlackHoleRouteDetectedViolationTypeDef](./type_defs.md#networkfirewallblackholeroutedetectedviolationtypedef)
+- `NetworkFirewallUnexpectedFirewallRoutesViolation`:
+  [NetworkFirewallUnexpectedFirewallRoutesViolationTypeDef](./type_defs.md#networkfirewallunexpectedfirewallroutesviolationtypedef)
+- `NetworkFirewallUnexpectedGatewayRoutesViolation`:
+  [NetworkFirewallUnexpectedGatewayRoutesViolationTypeDef](./type_defs.md#networkfirewallunexpectedgatewayroutesviolationtypedef)
+- `NetworkFirewallMissingExpectedRoutesViolation`:
+  [NetworkFirewallMissingExpectedRoutesViolationTypeDef](./type_defs.md#networkfirewallmissingexpectedroutesviolationtypedef)
 - `DnsRuleGroupPriorityConflictViolation`:
   [DnsRuleGroupPriorityConflictViolationTypeDef](./type_defs.md#dnsrulegrouppriorityconflictviolationtypedef)
 - `DnsDuplicateRuleGroupViolation`:
   [DnsDuplicateRuleGroupViolationTypeDef](./type_defs.md#dnsduplicaterulegroupviolationtypedef)
 - `DnsRuleGroupLimitExceededViolation`:
   [DnsRuleGroupLimitExceededViolationTypeDef](./type_defs.md#dnsrulegrouplimitexceededviolationtypedef)
+- `PossibleRemediationActions`:
+  [PossibleRemediationActionsTypeDef](./type_defs.md#possibleremediationactionstypedef)
 
 ## ResponseMetadataTypeDef
 
@@ -975,6 +1323,19 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
+
+## RouteTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import RouteTypeDef
+```
+
+Optional fields:
+
+- `DestinationType`: [DestinationTypeType](./literals.md#destinationtypetype)
+- `TargetType`: [TargetTypeType](./literals.md#targettypetype)
+- `Destination`: `str`
+- `Target`: `str`
 
 ## SecurityGroupRemediationActionTypeDef
 

@@ -141,6 +141,7 @@ from mypy_boto3_devops_guru.type_defs import AddNotificationChannelRequestReques
 
 - [AddNotificationChannelRequestRequestTypeDef](./type_defs.md#addnotificationchannelrequestrequesttypedef)
 - [AddNotificationChannelResponseTypeDef](./type_defs.md#addnotificationchannelresponsetypedef)
+- [AnomalyReportedTimeRangeTypeDef](./type_defs.md#anomalyreportedtimerangetypedef)
 - [AnomalySourceDetailsTypeDef](./type_defs.md#anomalysourcedetailstypedef)
 - [AnomalyTimeRangeTypeDef](./type_defs.md#anomalytimerangetypedef)
 - [CloudFormationCollectionFilterTypeDef](./type_defs.md#cloudformationcollectionfiltertypedef)

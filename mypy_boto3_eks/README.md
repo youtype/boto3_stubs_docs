@@ -121,6 +121,8 @@ from mypy_boto3_eks.waiters import AddonActiveWaiter, ...
 - [AddonDeletedWaiter](./waiters.md#addondeletedwaiter)
 - [ClusterActiveWaiter](./waiters.md#clusteractivewaiter)
 - [ClusterDeletedWaiter](./waiters.md#clusterdeletedwaiter)
+- [FargateProfileActiveWaiter](./waiters.md#fargateprofileactivewaiter)
+- [FargateProfileDeletedWaiter](./waiters.md#fargateprofiledeletedwaiter)
 - [NodegroupActiveWaiter](./waiters.md#nodegroupactivewaiter)
 - [NodegroupDeletedWaiter](./waiters.md#nodegroupdeletedwaiter)
 
@@ -145,6 +147,8 @@ from mypy_boto3_eks.literals import AMITypesType, ...
 - [ClusterStatusType](./literals.md#clusterstatustype)
 - [DescribeAddonVersionsPaginatorName](./literals.md#describeaddonversionspaginatorname)
 - [ErrorCodeType](./literals.md#errorcodetype)
+- [FargateProfileActiveWaiterName](./literals.md#fargateprofileactivewaitername)
+- [FargateProfileDeletedWaiterName](./literals.md#fargateprofiledeletedwaitername)
 - [FargateProfileStatusType](./literals.md#fargateprofilestatustype)
 - [ListAddonsPaginatorName](./literals.md#listaddonspaginatorname)
 - [ListClustersPaginatorName](./literals.md#listclusterspaginatorname)
