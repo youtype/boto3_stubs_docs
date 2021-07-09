@@ -84,6 +84,7 @@ type annotations stubs module
   - [LabelTypeDef](#labeltypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResultTypeDef](#listtagsforresourceresulttypedef)
+  - [LogitMetricTypeDef](#logitmetrictypedef)
   - [MetricDataPointTypeDef](#metricdatapointtypedef)
   - [ModelEndpointDataBlobTypeDef](#modelendpointdatablobtypedef)
   - [ModelInputConfigurationTypeDef](#modelinputconfigurationtypedef)
@@ -122,6 +123,7 @@ type annotations stubs module
   - [UpdateRuleVersionResultTypeDef](#updateruleversionresulttypedef)
   - [UpdateVariableRequestRequestTypeDef](#updatevariablerequestrequesttypedef)
   - [VariableEntryTypeDef](#variableentrytypedef)
+  - [VariableImportanceMetricsTypeDef](#variableimportancemetricstypedef)
   - [VariableTypeDef](#variabletypedef)
 
 ## BatchCreateVariableErrorTypeDef
@@ -1180,6 +1182,18 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## LogitMetricTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import LogitMetricTypeDef
+```
+
+Required fields:
+
+- `variableName`: `str`
+- `variableType`: `str`
+- `variableImportance`: `float`
+
 ## MetricDataPointTypeDef
 
 ```python
@@ -1547,6 +1561,8 @@ Optional fields:
   [DataValidationMetricsTypeDef](./type_defs.md#datavalidationmetricstypedef)
 - `trainingMetrics`:
   [TrainingMetricsTypeDef](./type_defs.md#trainingmetricstypedef)
+- `variableImportanceMetrics`:
+  [VariableImportanceMetricsTypeDef](./type_defs.md#variableimportancemetricstypedef)
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -1742,6 +1758,17 @@ Optional fields:
 - `defaultValue`: `str`
 - `description`: `str`
 - `variableType`: `str`
+
+## VariableImportanceMetricsTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import VariableImportanceMetricsTypeDef
+```
+
+Optional fields:
+
+- `LogitMetrics`:
+  `List`\[[LogitMetricTypeDef](./type_defs.md#logitmetrictypedef)\]
 
 ## VariableTypeDef
 

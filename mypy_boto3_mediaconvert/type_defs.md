@@ -176,6 +176,7 @@ type annotations stubs module
   - [SccDestinationSettingsTypeDef](#sccdestinationsettingstypedef)
   - [SpekeKeyProviderCmafTypeDef](#spekekeyprovidercmaftypedef)
   - [SpekeKeyProviderTypeDef](#spekekeyprovidertypedef)
+  - [SrtDestinationSettingsTypeDef](#srtdestinationsettingstypedef)
   - [StaticKeyProviderTypeDef](#statickeyprovidertypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TeletextDestinationSettingsTypeDef](#teletextdestinationsettingstypedef)
@@ -606,6 +607,8 @@ Optional fields:
   [ImscDestinationSettingsTypeDef](./type_defs.md#imscdestinationsettingstypedef)
 - `SccDestinationSettings`:
   [SccDestinationSettingsTypeDef](./type_defs.md#sccdestinationsettingstypedef)
+- `SrtDestinationSettings`:
+  [SrtDestinationSettingsTypeDef](./type_defs.md#srtdestinationsettingstypedef)
 - `TeletextDestinationSettings`:
   [TeletextDestinationSettingsTypeDef](./type_defs.md#teletextdestinationsettingstypedef)
 - `TtmlDestinationSettings`:
@@ -738,6 +741,8 @@ Optional fields:
 - `SegmentLength`: `int`
 - `StreamInfResolution`:
   [CmafStreamInfResolutionType](./literals.md#cmafstreaminfresolutiontype)
+- `TargetDurationCompatibilityMode`:
+  [CmafTargetDurationCompatibilityModeType](./literals.md#cmaftargetdurationcompatibilitymodetype)
 - `WriteDashManifest`:
   [CmafWriteDASHManifestType](./literals.md#cmafwritedashmanifesttype)
 - `WriteHlsManifest`:
@@ -1752,6 +1757,8 @@ Optional fields:
 - `SegmentsPerSubdirectory`: `int`
 - `StreamInfResolution`:
   [HlsStreamInfResolutionType](./literals.md#hlsstreaminfresolutiontype)
+- `TargetDurationCompatibilityMode`:
+  [HlsTargetDurationCompatibilityModeType](./literals.md#hlstargetdurationcompatibilitymodetype)
 - `TimedMetadataId3Frame`:
   [HlsTimedMetadataId3FrameType](./literals.md#hlstimedmetadataid3frametype)
 - `TimedMetadataId3Period`: `int`
@@ -3056,6 +3063,17 @@ Optional fields:
 - `ResourceId`: `str`
 - `SystemIds`: `List`\[`str`\]
 - `Url`: `str`
+
+## SrtDestinationSettingsTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import SrtDestinationSettingsTypeDef
+```
+
+Optional fields:
+
+- `StylePassthrough`:
+  [SrtStylePassthroughType](./literals.md#srtstylepassthroughtype)
 
 ## StaticKeyProviderTypeDef
 

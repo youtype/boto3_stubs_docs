@@ -215,6 +215,7 @@ from mypy_boto3_frauddetector.type_defs import BatchCreateVariableErrorTypeDef, 
 - [LabelTypeDef](./type_defs.md#labeltypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef)
+- [LogitMetricTypeDef](./type_defs.md#logitmetrictypedef)
 - [MetricDataPointTypeDef](./type_defs.md#metricdatapointtypedef)
 - [ModelEndpointDataBlobTypeDef](./type_defs.md#modelendpointdatablobtypedef)
 - [ModelInputConfigurationTypeDef](./type_defs.md#modelinputconfigurationtypedef)
@@ -253,4 +254,5 @@ from mypy_boto3_frauddetector.type_defs import BatchCreateVariableErrorTypeDef, 
 - [UpdateRuleVersionResultTypeDef](./type_defs.md#updateruleversionresulttypedef)
 - [UpdateVariableRequestRequestTypeDef](./type_defs.md#updatevariablerequestrequesttypedef)
 - [VariableEntryTypeDef](./type_defs.md#variableentrytypedef)
+- [VariableImportanceMetricsTypeDef](./type_defs.md#variableimportancemetricstypedef)
 - [VariableTypeDef](./type_defs.md#variabletypedef)

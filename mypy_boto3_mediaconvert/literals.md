@@ -73,6 +73,7 @@ type annotations stubs module
   - [CmafPtsOffsetHandlingForBFramesType](#cmafptsoffsethandlingforbframestype)
   - [CmafSegmentControlType](#cmafsegmentcontroltype)
   - [CmafStreamInfResolutionType](#cmafstreaminfresolutiontype)
+  - [CmafTargetDurationCompatibilityModeType](#cmaftargetdurationcompatibilitymodetype)
   - [CmafWriteDASHManifestType](#cmafwritedashmanifesttype)
   - [CmafWriteHLSManifestType](#cmafwritehlsmanifesttype)
   - [CmafWriteSegmentTimelineInRepresentationType](#cmafwritesegmenttimelineinrepresentationtype)
@@ -212,6 +213,7 @@ type annotations stubs module
   - [HlsProgramDateTimeType](#hlsprogramdatetimetype)
   - [HlsSegmentControlType](#hlssegmentcontroltype)
   - [HlsStreamInfResolutionType](#hlsstreaminfresolutiontype)
+  - [HlsTargetDurationCompatibilityModeType](#hlstargetdurationcompatibilitymodetype)
   - [HlsTimedMetadataId3FrameType](#hlstimedmetadataid3frametype)
   - [ImscStylePassthroughType](#imscstylepassthroughtype)
   - [InputDeblockFilterType](#inputdeblockfiltertype)
@@ -317,6 +319,7 @@ type annotations stubs module
   - [ScalingBehaviorType](#scalingbehaviortype)
   - [SccDestinationFramerateType](#sccdestinationframeratetype)
   - [SimulateReservedQueueType](#simulatereservedqueuetype)
+  - [SrtStylePassthroughType](#srtstylepassthroughtype)
   - [StatusUpdateIntervalType](#statusupdateintervaltype)
   - [TeletextPageTypeType](#teletextpagetypetype)
   - [TimecodeBurninPositionType](#timecodeburninpositiontype)
@@ -1178,6 +1181,17 @@ Values:
 
 - `EXCLUDE`
 - `INCLUDE`
+
+## CmafTargetDurationCompatibilityModeType
+
+```python
+from mypy_boto3_mediaconvert.literals import CmafTargetDurationCompatibilityModeType
+```
+
+Values:
+
+- `LEGACY`
+- `SPEC_COMPLIANT`
 
 ## CmafWriteDASHManifestType
 
@@ -2837,6 +2851,17 @@ Values:
 - `EXCLUDE`
 - `INCLUDE`
 
+## HlsTargetDurationCompatibilityModeType
+
+```python
+from mypy_boto3_mediaconvert.literals import HlsTargetDurationCompatibilityModeType
+```
+
+Values:
+
+- `LEGACY`
+- `SPEC_COMPLIANT`
+
 ## HlsTimedMetadataId3FrameType
 
 ```python
@@ -4229,6 +4254,17 @@ Values:
 
 ```python
 from mypy_boto3_mediaconvert.literals import SimulateReservedQueueType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
+
+## SrtStylePassthroughType
+
+```python
+from mypy_boto3_mediaconvert.literals import SrtStylePassthroughType
 ```
 
 Values:

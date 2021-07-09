@@ -697,6 +697,7 @@ type annotations stubs module
   - [TrialSummaryTypeDef](#trialsummarytypedef)
   - [TrialTypeDef](#trialtypedef)
   - [TuningJobCompletionCriteriaTypeDef](#tuningjobcompletioncriteriatypedef)
+  - [TuningJobStepMetaDataTypeDef](#tuningjobstepmetadatatypedef)
   - [USDTypeDef](#usdtypedef)
   - [UiConfigTypeDef](#uiconfigtypedef)
   - [UiTemplateInfoTypeDef](#uitemplateinfotypedef)
@@ -9576,6 +9577,8 @@ Optional fields:
   [ProcessingJobStepMetadataTypeDef](./type_defs.md#processingjobstepmetadatatypedef)
 - `TransformJob`:
   [TransformJobStepMetadataTypeDef](./type_defs.md#transformjobstepmetadatatypedef)
+- `TuningJob`:
+  [TuningJobStepMetaDataTypeDef](./type_defs.md#tuningjobstepmetadatatypedef)
 - `Model`: [ModelStepMetadataTypeDef](./type_defs.md#modelstepmetadatatypedef)
 - `RegisterModel`:
   [RegisterModelStepMetadataTypeDef](./type_defs.md#registermodelstepmetadatatypedef)
@@ -11366,6 +11369,16 @@ from mypy_boto3_sagemaker.type_defs import TuningJobCompletionCriteriaTypeDef
 Required fields:
 
 - `TargetObjectiveMetricValue`: `float`
+
+## TuningJobStepMetaDataTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import TuningJobStepMetaDataTypeDef
+```
+
+Optional fields:
+
+- `Arn`: `str`
 
 ## USDTypeDef
 

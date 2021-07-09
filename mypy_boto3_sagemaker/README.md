@@ -1307,6 +1307,7 @@ from mypy_boto3_sagemaker.type_defs import ActionSourceTypeDef, ...
 - [TrialSummaryTypeDef](./type_defs.md#trialsummarytypedef)
 - [TrialTypeDef](./type_defs.md#trialtypedef)
 - [TuningJobCompletionCriteriaTypeDef](./type_defs.md#tuningjobcompletioncriteriatypedef)
+- [TuningJobStepMetaDataTypeDef](./type_defs.md#tuningjobstepmetadatatypedef)
 - [USDTypeDef](./type_defs.md#usdtypedef)
 - [UiConfigTypeDef](./type_defs.md#uiconfigtypedef)
 - [UiTemplateInfoTypeDef](./type_defs.md#uitemplateinfotypedef)
