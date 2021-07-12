@@ -227,7 +227,7 @@ Returns
 
 ### create_fargate_profile
 
-Creates an AWS Fargate profile for your Amazon EKS cluster.
+Creates an Fargate profile for your Amazon EKS cluster.
 
 Type annotations for `boto3.client("eks").create_fargate_profile` method.
 
@@ -332,7 +332,7 @@ Returns
 
 ### delete_fargate_profile
 
-Deletes an AWS Fargate profile.
+Deletes an Fargate profile.
 
 Type annotations for `boto3.client("eks").delete_fargate_profile` method.
 
@@ -433,7 +433,7 @@ Returns
 
 ### describe_fargate_profile
 
-Returns descriptive information about an AWS Fargate profile.
+Returns descriptive information about an Fargate profile.
 
 Type annotations for `boto3.client("eks").describe_fargate_profile` method.
 
@@ -580,7 +580,8 @@ Returns [ListAddonsResponseTypeDef](./type_defs.md#listaddonsresponsetypedef).
 
 ### list_clusters
 
-Lists the Amazon EKS clusters in your AWS account in the specified Region.
+Lists the Amazon EKS clusters in your Amazon Web Services account in the
+specified Region.
 
 Type annotations for `boto3.client("eks").list_clusters` method.
 
@@ -600,8 +601,8 @@ Returns
 
 ### list_fargate_profiles
 
-Lists the AWS Fargate profiles associated with the specified cluster in your
-AWS account in the specified Region.
+Lists the Fargate profiles associated with the specified cluster in your Amazon
+Web Services account in the specified Region.
 
 Type annotations for `boto3.client("eks").list_fargate_profiles` method.
 
@@ -645,7 +646,7 @@ Returns
 ### list_nodegroups
 
 Lists the Amazon EKS managed node groups associated with the specified cluster
-in your AWS account in the specified Region.
+in your Amazon Web Services account in the specified Region.
 
 Type annotations for `boto3.client("eks").list_nodegroups` method.
 
@@ -686,7 +687,7 @@ Returns
 ### list_updates
 
 Lists the updates associated with an Amazon EKS cluster or managed node group
-in your AWS account, in the specified Region.
+in your Amazon Web Services account, in the specified Region.
 
 Type annotations for `boto3.client("eks").list_updates` method.
 

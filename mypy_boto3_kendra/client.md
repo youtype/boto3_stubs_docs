@@ -25,11 +25,13 @@ type annotations stubs module
     - [delete_data_source](#delete_data_source)
     - [delete_faq](#delete_faq)
     - [delete_index](#delete_index)
+    - [delete_principal_mapping](#delete_principal_mapping)
     - [delete_query_suggestions_block_list](#delete_query_suggestions_block_list)
     - [delete_thesaurus](#delete_thesaurus)
     - [describe_data_source](#describe_data_source)
     - [describe_faq](#describe_faq)
     - [describe_index](#describe_index)
+    - [describe_principal_mapping](#describe_principal_mapping)
     - [describe_query_suggestions_block_list](#describe_query_suggestions_block_list)
     - [describe_query_suggestions_config](#describe_query_suggestions_config)
     - [describe_thesaurus](#describe_thesaurus)
@@ -38,10 +40,12 @@ type annotations stubs module
     - [list_data_source_sync_jobs](#list_data_source_sync_jobs)
     - [list_data_sources](#list_data_sources)
     - [list_faqs](#list_faqs)
+    - [list_groups_older_than_ordering_id](#list_groups_older_than_ordering_id)
     - [list_indices](#list_indices)
     - [list_query_suggestions_block_lists](#list_query_suggestions_block_lists)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [list_thesauri](#list_thesauri)
+    - [put_principal_mapping](#put_principal_mapping)
     - [query](#query)
     - [start_data_source_sync_job](#start_data_source_sync_job)
     - [stop_data_source_sync_job](#stop_data_source_sync_job)
@@ -392,6 +396,26 @@ Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
+### delete_principal_mapping
+
+Deletes a group so that all users and sub groups that belong to the group can
+no longer access documents only available to that group.
+
+Type annotations for `boto3.client("kendra").delete_principal_mapping` method.
+
+Boto3 documentation:
+[kendra.Client.delete_principal_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_principal_mapping)
+
+Arguments mapping described in
+[DeletePrincipalMappingRequestRequestTypeDef](./type_defs.md#deleteprincipalmappingrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IndexId`: `str` *(required)*
+- `GroupId`: `str` *(required)*
+- `DataSourceId`: `str`
+- `OrderingId`: `int`
+
 ### delete_query_suggestions_block_list
 
 Deletes a block list used for query suggestions for an index.
@@ -487,6 +511,29 @@ Keyword-only arguments:
 
 Returns
 [DescribeIndexResponseTypeDef](./type_defs.md#describeindexresponsetypedef).
+
+### describe_principal_mapping
+
+Describes the processing of `PUT` and `DELETE` actions for mapping users to
+their groups.
+
+Type annotations for `boto3.client("kendra").describe_principal_mapping`
+method.
+
+Boto3 documentation:
+[kendra.Client.describe_principal_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_principal_mapping)
+
+Arguments mapping described in
+[DescribePrincipalMappingRequestRequestTypeDef](./type_defs.md#describeprincipalmappingrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IndexId`: `str` *(required)*
+- `GroupId`: `str` *(required)*
+- `DataSourceId`: `str`
+
+Returns
+[DescribePrincipalMappingResponseTypeDef](./type_defs.md#describeprincipalmappingresponsetypedef).
 
 ### describe_query_suggestions_block_list
 
@@ -655,6 +702,31 @@ Keyword-only arguments:
 
 Returns [ListFaqsResponseTypeDef](./type_defs.md#listfaqsresponsetypedef).
 
+### list_groups_older_than_ordering_id
+
+Provides a list of groups that are mapped to users before a given ordering or
+timestamp identifier.
+
+Type annotations for
+`boto3.client("kendra").list_groups_older_than_ordering_id` method.
+
+Boto3 documentation:
+[kendra.Client.list_groups_older_than_ordering_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_groups_older_than_ordering_id)
+
+Arguments mapping described in
+[ListGroupsOlderThanOrderingIdRequestRequestTypeDef](./type_defs.md#listgroupsolderthanorderingidrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IndexId`: `str` *(required)*
+- `OrderingId`: `int` *(required)*
+- `DataSourceId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListGroupsOlderThanOrderingIdResponseTypeDef](./type_defs.md#listgroupsolderthanorderingidresponsetypedef).
+
 ### list_indices
 
 Lists the Amazon Kendra indexes that you have created.
@@ -736,6 +808,28 @@ Keyword-only arguments:
 
 Returns
 [ListThesauriResponseTypeDef](./type_defs.md#listthesauriresponsetypedef).
+
+### put_principal_mapping
+
+Maps users to their groups.
+
+Type annotations for `boto3.client("kendra").put_principal_mapping` method.
+
+Boto3 documentation:
+[kendra.Client.put_principal_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.put_principal_mapping)
+
+Arguments mapping described in
+[PutPrincipalMappingRequestRequestTypeDef](./type_defs.md#putprincipalmappingrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IndexId`: `str` *(required)*
+- `GroupId`: `str` *(required)*
+- `GroupMembers`: [GroupMembersTypeDef](./type_defs.md#groupmemberstypedef)
+  *(required)*
+- `DataSourceId`: `str`
+- `OrderingId`: `int`
+- `RoleArn`: `str`
 
 ### query
 

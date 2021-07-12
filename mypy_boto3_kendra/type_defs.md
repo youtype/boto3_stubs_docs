@@ -49,6 +49,7 @@ type annotations stubs module
   - [CreateThesaurusRequestRequestTypeDef](#createthesaurusrequestrequesttypedef)
   - [CreateThesaurusResponseTypeDef](#createthesaurusresponsetypedef)
   - [DataSourceConfigurationTypeDef](#datasourceconfigurationtypedef)
+  - [DataSourceGroupTypeDef](#datasourcegrouptypedef)
   - [DataSourceSummaryTypeDef](#datasourcesummarytypedef)
   - [DataSourceSyncJobMetricTargetTypeDef](#datasourcesyncjobmetrictargettypedef)
   - [DataSourceSyncJobMetricsTypeDef](#datasourcesyncjobmetricstypedef)
@@ -59,6 +60,7 @@ type annotations stubs module
   - [DeleteDataSourceRequestRequestTypeDef](#deletedatasourcerequestrequesttypedef)
   - [DeleteFaqRequestRequestTypeDef](#deletefaqrequestrequesttypedef)
   - [DeleteIndexRequestRequestTypeDef](#deleteindexrequestrequesttypedef)
+  - [DeletePrincipalMappingRequestRequestTypeDef](#deleteprincipalmappingrequestrequesttypedef)
   - [DeleteQuerySuggestionsBlockListRequestRequestTypeDef](#deletequerysuggestionsblocklistrequestrequesttypedef)
   - [DeleteThesaurusRequestRequestTypeDef](#deletethesaurusrequestrequesttypedef)
   - [DescribeDataSourceRequestRequestTypeDef](#describedatasourcerequestrequesttypedef)
@@ -67,6 +69,8 @@ type annotations stubs module
   - [DescribeFaqResponseTypeDef](#describefaqresponsetypedef)
   - [DescribeIndexRequestRequestTypeDef](#describeindexrequestrequesttypedef)
   - [DescribeIndexResponseTypeDef](#describeindexresponsetypedef)
+  - [DescribePrincipalMappingRequestRequestTypeDef](#describeprincipalmappingrequestrequesttypedef)
+  - [DescribePrincipalMappingResponseTypeDef](#describeprincipalmappingresponsetypedef)
   - [DescribeQuerySuggestionsBlockListRequestRequestTypeDef](#describequerysuggestionsblocklistrequestrequesttypedef)
   - [DescribeQuerySuggestionsBlockListResponseTypeDef](#describequerysuggestionsblocklistresponsetypedef)
   - [DescribeQuerySuggestionsConfigRequestRequestTypeDef](#describequerysuggestionsconfigrequestrequesttypedef)
@@ -88,6 +92,10 @@ type annotations stubs module
   - [GetQuerySuggestionsRequestRequestTypeDef](#getquerysuggestionsrequestrequesttypedef)
   - [GetQuerySuggestionsResponseTypeDef](#getquerysuggestionsresponsetypedef)
   - [GoogleDriveConfigurationTypeDef](#googledriveconfigurationtypedef)
+  - [GroupMembersTypeDef](#groupmemberstypedef)
+  - [GroupOrderingIdSummaryTypeDef](#grouporderingidsummarytypedef)
+  - [GroupSummaryTypeDef](#groupsummarytypedef)
+  - [HierarchicalPrincipalTypeDef](#hierarchicalprincipaltypedef)
   - [HighlightTypeDef](#highlighttypedef)
   - [IndexConfigurationSummaryTypeDef](#indexconfigurationsummarytypedef)
   - [IndexStatisticsTypeDef](#indexstatisticstypedef)
@@ -99,6 +107,8 @@ type annotations stubs module
   - [ListDataSourcesResponseTypeDef](#listdatasourcesresponsetypedef)
   - [ListFaqsRequestRequestTypeDef](#listfaqsrequestrequesttypedef)
   - [ListFaqsResponseTypeDef](#listfaqsresponsetypedef)
+  - [ListGroupsOlderThanOrderingIdRequestRequestTypeDef](#listgroupsolderthanorderingidrequestrequesttypedef)
+  - [ListGroupsOlderThanOrderingIdResponseTypeDef](#listgroupsolderthanorderingidresponsetypedef)
   - [ListIndicesRequestRequestTypeDef](#listindicesrequestrequesttypedef)
   - [ListIndicesResponseTypeDef](#listindicesresponsetypedef)
   - [ListQuerySuggestionsBlockListsRequestRequestTypeDef](#listquerysuggestionsblocklistsrequestrequesttypedef)
@@ -107,10 +117,13 @@ type annotations stubs module
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ListThesauriRequestRequestTypeDef](#listthesaurirequestrequesttypedef)
   - [ListThesauriResponseTypeDef](#listthesauriresponsetypedef)
+  - [MemberGroupTypeDef](#membergrouptypedef)
+  - [MemberUserTypeDef](#memberusertypedef)
   - [OneDriveConfigurationTypeDef](#onedriveconfigurationtypedef)
   - [OneDriveUsersTypeDef](#onedriveuserstypedef)
   - [PrincipalTypeDef](#principaltypedef)
   - [ProxyConfigurationTypeDef](#proxyconfigurationtypedef)
+  - [PutPrincipalMappingRequestRequestTypeDef](#putprincipalmappingrequestrequesttypedef)
   - [QueryRequestRequestTypeDef](#queryrequestrequesttypedef)
   - [QueryResultItemTypeDef](#queryresultitemtypedef)
   - [QueryResultTypeDef](#queryresulttypedef)
@@ -762,6 +775,17 @@ Optional fields:
 - `WebCrawlerConfiguration`:
   [WebCrawlerConfigurationTypeDef](./type_defs.md#webcrawlerconfigurationtypedef)
 
+## DataSourceGroupTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DataSourceGroupTypeDef
+```
+
+Required fields:
+
+- `GroupId`: `str`
+- `DataSourceId`: `str`
+
 ## DataSourceSummaryTypeDef
 
 ```python
@@ -906,6 +930,22 @@ Required fields:
 
 - `Id`: `str`
 
+## DeletePrincipalMappingRequestRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DeletePrincipalMappingRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IndexId`: `str`
+- `GroupId`: `str`
+
+Optional fields:
+
+- `DataSourceId`: `str`
+- `OrderingId`: `int`
+
 ## DeleteQuerySuggestionsBlockListRequestRequestTypeDef
 
 ```python
@@ -1035,6 +1075,37 @@ Required fields:
   `List`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
 - `UserContextPolicy`:
   [UserContextPolicyType](./literals.md#usercontextpolicytype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribePrincipalMappingRequestRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DescribePrincipalMappingRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IndexId`: `str`
+- `GroupId`: `str`
+
+Optional fields:
+
+- `DataSourceId`: `str`
+
+## DescribePrincipalMappingResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DescribePrincipalMappingResponseTypeDef
+```
+
+Required fields:
+
+- `IndexId`: `str`
+- `DataSourceId`: `str`
+- `GroupId`: `str`
+- `GroupOrderingIdSummaries`:
+  `List`\[[GroupOrderingIdSummaryTypeDef](./type_defs.md#grouporderingidsummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1238,6 +1309,8 @@ Optional fields:
   `List`\[[DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)\]
 - `AccessControlList`:
   `List`\[[PrincipalTypeDef](./type_defs.md#principaltypedef)\]
+- `HierarchicalAccessControlList`:
+  `List`\[[HierarchicalPrincipalTypeDef](./type_defs.md#hierarchicalprincipaltypedef)\]
 - `ContentType`: [ContentTypeType](./literals.md#contenttypetype)
 
 ## DocumentsMetadataConfigurationTypeDef
@@ -1347,6 +1420,57 @@ Optional fields:
 - `ExcludeMimeTypes`: `List`\[`str`\]
 - `ExcludeUserAccounts`: `List`\[`str`\]
 - `ExcludeSharedDrives`: `List`\[`str`\]
+
+## GroupMembersTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import GroupMembersTypeDef
+```
+
+Optional fields:
+
+- `MemberGroups`:
+  `List`\[[MemberGroupTypeDef](./type_defs.md#membergrouptypedef)\]
+- `MemberUsers`:
+  `List`\[[MemberUserTypeDef](./type_defs.md#memberusertypedef)\]
+- `S3PathforGroupMembers`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
+
+## GroupOrderingIdSummaryTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import GroupOrderingIdSummaryTypeDef
+```
+
+Optional fields:
+
+- `Status`:
+  [PrincipalMappingStatusType](./literals.md#principalmappingstatustype)
+- `LastUpdatedAt`: `datetime`
+- `ReceivedAt`: `datetime`
+- `OrderingId`: `int`
+- `FailureReason`: `str`
+
+## GroupSummaryTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import GroupSummaryTypeDef
+```
+
+Optional fields:
+
+- `GroupId`: `str`
+- `OrderingId`: `int`
+
+## HierarchicalPrincipalTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import HierarchicalPrincipalTypeDef
+```
+
+Required fields:
+
+- `PrincipalList`:
+  `List`\[[PrincipalTypeDef](./type_defs.md#principaltypedef)\]
 
 ## HighlightTypeDef
 
@@ -1515,6 +1639,37 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListGroupsOlderThanOrderingIdRequestRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ListGroupsOlderThanOrderingIdRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IndexId`: `str`
+- `OrderingId`: `int`
+
+Optional fields:
+
+- `DataSourceId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListGroupsOlderThanOrderingIdResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ListGroupsOlderThanOrderingIdResponseTypeDef
+```
+
+Required fields:
+
+- `GroupsSummaries`:
+  `List`\[[GroupSummaryTypeDef](./type_defs.md#groupsummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListIndicesRequestRequestTypeDef
 
 ```python
@@ -1620,6 +1775,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## MemberGroupTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import MemberGroupTypeDef
+```
+
+Required fields:
+
+- `GroupId`: `str`
+
+Optional fields:
+
+- `DataSourceId`: `str`
+
+## MemberUserTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import MemberUserTypeDef
+```
+
+Required fields:
+
+- `UserId`: `str`
+
 ## OneDriveConfigurationTypeDef
 
 ```python
@@ -1663,6 +1842,10 @@ Required fields:
 - `Type`: [PrincipalTypeType](./literals.md#principaltypetype)
 - `Access`: [ReadAccessTypeType](./literals.md#readaccesstypetype)
 
+Optional fields:
+
+- `DataSourceId`: `str`
+
 ## ProxyConfigurationTypeDef
 
 ```python
@@ -1677,6 +1860,24 @@ Required fields:
 Optional fields:
 
 - `Credentials`: `str`
+
+## PutPrincipalMappingRequestRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import PutPrincipalMappingRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IndexId`: `str`
+- `GroupId`: `str`
+- `GroupMembers`: [GroupMembersTypeDef](./type_defs.md#groupmemberstypedef)
+
+Optional fields:
+
+- `DataSourceId`: `str`
+- `OrderingId`: `int`
+- `RoleArn`: `str`
 
 ## QueryRequestRequestTypeDef
 
@@ -2434,6 +2635,10 @@ from mypy_boto3_kendra.type_defs import UserContextTypeDef
 Optional fields:
 
 - `Token`: `str`
+- `UserId`: `str`
+- `Groups`: `List`\[`str`\]
+- `DataSourceGroups`:
+  `List`\[[DataSourceGroupTypeDef](./type_defs.md#datasourcegrouptypedef)\]
 
 ## UserTokenConfigurationTypeDef
 
