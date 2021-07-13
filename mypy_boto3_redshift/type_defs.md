@@ -15,6 +15,7 @@ type annotations stubs module
   - [AccountWithRestoreAccessTypeDef](#accountwithrestoreaccesstypedef)
   - [AquaConfigurationTypeDef](#aquaconfigurationtypedef)
   - [AttributeValueTargetTypeDef](#attributevaluetargettypedef)
+  - [AuthenticationProfileTypeDef](#authenticationprofiletypedef)
   - [AuthorizeClusterSecurityGroupIngressMessageRequestTypeDef](#authorizeclustersecuritygroupingressmessagerequesttypedef)
   - [AuthorizeClusterSecurityGroupIngressResultTypeDef](#authorizeclustersecuritygroupingressresulttypedef)
   - [AuthorizeEndpointAccessMessageRequestTypeDef](#authorizeendpointaccessmessagerequesttypedef)
@@ -50,6 +51,8 @@ type annotations stubs module
   - [ClustersMessageTypeDef](#clustersmessagetypedef)
   - [CopyClusterSnapshotMessageRequestTypeDef](#copyclustersnapshotmessagerequesttypedef)
   - [CopyClusterSnapshotResultTypeDef](#copyclustersnapshotresulttypedef)
+  - [CreateAuthenticationProfileMessageRequestTypeDef](#createauthenticationprofilemessagerequesttypedef)
+  - [CreateAuthenticationProfileResultTypeDef](#createauthenticationprofileresulttypedef)
   - [CreateClusterMessageRequestTypeDef](#createclustermessagerequesttypedef)
   - [CreateClusterParameterGroupMessageRequestTypeDef](#createclusterparametergroupmessagerequesttypedef)
   - [CreateClusterParameterGroupResultTypeDef](#createclusterparametergroupresulttypedef)
@@ -77,6 +80,8 @@ type annotations stubs module
   - [DataTransferProgressTypeDef](#datatransferprogresstypedef)
   - [DefaultClusterParametersTypeDef](#defaultclusterparameterstypedef)
   - [DeferredMaintenanceWindowTypeDef](#deferredmaintenancewindowtypedef)
+  - [DeleteAuthenticationProfileMessageRequestTypeDef](#deleteauthenticationprofilemessagerequesttypedef)
+  - [DeleteAuthenticationProfileResultTypeDef](#deleteauthenticationprofileresulttypedef)
   - [DeleteClusterMessageRequestTypeDef](#deleteclustermessagerequesttypedef)
   - [DeleteClusterParameterGroupMessageRequestTypeDef](#deleteclusterparametergroupmessagerequesttypedef)
   - [DeleteClusterResultTypeDef](#deleteclusterresulttypedef)
@@ -95,6 +100,8 @@ type annotations stubs module
   - [DeleteTagsMessageRequestTypeDef](#deletetagsmessagerequesttypedef)
   - [DeleteUsageLimitMessageRequestTypeDef](#deleteusagelimitmessagerequesttypedef)
   - [DescribeAccountAttributesMessageRequestTypeDef](#describeaccountattributesmessagerequesttypedef)
+  - [DescribeAuthenticationProfilesMessageRequestTypeDef](#describeauthenticationprofilesmessagerequesttypedef)
+  - [DescribeAuthenticationProfilesResultTypeDef](#describeauthenticationprofilesresulttypedef)
   - [DescribeClusterDbRevisionsMessageRequestTypeDef](#describeclusterdbrevisionsmessagerequesttypedef)
   - [DescribeClusterParameterGroupsMessageRequestTypeDef](#describeclusterparametergroupsmessagerequesttypedef)
   - [DescribeClusterParametersMessageRequestTypeDef](#describeclusterparametersmessagerequesttypedef)
@@ -163,6 +170,8 @@ type annotations stubs module
   - [MaintenanceTrackTypeDef](#maintenancetracktypedef)
   - [ModifyAquaInputMessageRequestTypeDef](#modifyaquainputmessagerequesttypedef)
   - [ModifyAquaOutputMessageTypeDef](#modifyaquaoutputmessagetypedef)
+  - [ModifyAuthenticationProfileMessageRequestTypeDef](#modifyauthenticationprofilemessagerequesttypedef)
+  - [ModifyAuthenticationProfileResultTypeDef](#modifyauthenticationprofileresulttypedef)
   - [ModifyClusterDbRevisionMessageRequestTypeDef](#modifyclusterdbrevisionmessagerequesttypedef)
   - [ModifyClusterDbRevisionResultTypeDef](#modifyclusterdbrevisionresulttypedef)
   - [ModifyClusterIamRolesMessageRequestTypeDef](#modifyclusteriamrolesmessagerequesttypedef)
@@ -344,6 +353,17 @@ from mypy_boto3_redshift.type_defs import AttributeValueTargetTypeDef
 Optional fields:
 
 - `AttributeValue`: `str`
+
+## AuthenticationProfileTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import AuthenticationProfileTypeDef
+```
+
+Optional fields:
+
+- `AuthenticationProfileName`: `str`
+- `AuthenticationProfileContent`: `str`
 
 ## AuthorizeClusterSecurityGroupIngressMessageRequestTypeDef
 
@@ -866,6 +886,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateAuthenticationProfileMessageRequestTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import CreateAuthenticationProfileMessageRequestTypeDef
+```
+
+Required fields:
+
+- `AuthenticationProfileName`: `str`
+- `AuthenticationProfileContent`: `str`
+
+## CreateAuthenticationProfileResultTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import CreateAuthenticationProfileResultTypeDef
+```
+
+Required fields:
+
+- `AuthenticationProfileName`: `str`
+- `AuthenticationProfileContent`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CreateClusterMessageRequestTypeDef
 
 ```python
@@ -1294,6 +1338,28 @@ Optional fields:
 - `DeferMaintenanceStartTime`: `datetime`
 - `DeferMaintenanceEndTime`: `datetime`
 
+## DeleteAuthenticationProfileMessageRequestTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import DeleteAuthenticationProfileMessageRequestTypeDef
+```
+
+Required fields:
+
+- `AuthenticationProfileName`: `str`
+
+## DeleteAuthenticationProfileResultTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import DeleteAuthenticationProfileResultTypeDef
+```
+
+Required fields:
+
+- `AuthenticationProfileName`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DeleteClusterMessageRequestTypeDef
 
 ```python
@@ -1492,6 +1558,29 @@ from mypy_boto3_redshift.type_defs import DescribeAccountAttributesMessageReques
 Optional fields:
 
 - `AttributeNames`: `List`\[`str`\]
+
+## DescribeAuthenticationProfilesMessageRequestTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import DescribeAuthenticationProfilesMessageRequestTypeDef
+```
+
+Optional fields:
+
+- `AuthenticationProfileName`: `str`
+
+## DescribeAuthenticationProfilesResultTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import DescribeAuthenticationProfilesResultTypeDef
+```
+
+Required fields:
+
+- `AuthenticationProfiles`:
+  `List`\[[AuthenticationProfileTypeDef](./type_defs.md#authenticationprofiletypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeClusterDbRevisionsMessageRequestTypeDef
 
@@ -2463,6 +2552,30 @@ Required fields:
 
 - `AquaConfiguration`:
   [AquaConfigurationTypeDef](./type_defs.md#aquaconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ModifyAuthenticationProfileMessageRequestTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import ModifyAuthenticationProfileMessageRequestTypeDef
+```
+
+Required fields:
+
+- `AuthenticationProfileName`: `str`
+- `AuthenticationProfileContent`: `str`
+
+## ModifyAuthenticationProfileResultTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import ModifyAuthenticationProfileResultTypeDef
+```
+
+Required fields:
+
+- `AuthenticationProfileName`: `str`
+- `AuthenticationProfileContent`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

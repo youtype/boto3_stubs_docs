@@ -401,7 +401,7 @@ Returns `Dict`\[`str`, `Any`\].
 ### cancel_maintenance_window_execution
 
 Stops a maintenance window execution that is already in progress and cancels
-any tasks in the window that have not already starting running.
+any tasks in the window that haven't already starting running.
 
 Type annotations for `boto3.client("ssm").cancel_maintenance_window_execution`
 method.
@@ -422,7 +422,8 @@ Returns
 ### create_activation
 
 Generates an activation code and activation ID you can use to register your on-
-premises server or virtual machine (VM) with Systems Manager.
+premises server or virtual machine (VM) with Amazon Web Services Systems
+Manager.
 
 Type annotations for `boto3.client("ssm").create_activation` method.
 
@@ -485,8 +486,8 @@ Returns
 
 ### create_association_batch
 
-Associates the specified Systems Manager document with the specified instances
-or targets.
+Associates the specified Amazon Web Services Systems Manager document (SSM
+document) with the specified instances or targets.
 
 Type annotations for `boto3.client("ssm").create_association_batch` method.
 
@@ -507,7 +508,7 @@ Returns
 
 ### create_document
 
-Creates a Systems Manager (SSM) document.
+Creates a Amazon Web Services Systems Manager (SSM document).
 
 Type annotations for `boto3.client("ssm").create_document` method.
 
@@ -603,9 +604,9 @@ Returns
 
 ### create_ops_metadata
 
-If you create a new application in Application Manager, Systems Manager calls
-this API action to specify information about the new application, including the
-application type.
+If you create a new application in Application Manager, Amazon Web Services
+Systems Manager calls this API operation to specify information about the new
+application, including the application type.
 
 Type annotations for `boto3.client("ssm").create_ops_metadata` method.
 
@@ -703,8 +704,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_association
 
-Disassociates the specified Systems Manager document from the specified
-instance.
+Disassociates the specified Amazon Web Services Systems Manager document (SSM
+document) from the specified instance.
 
 Type annotations for `boto3.client("ssm").delete_association` method.
 
@@ -724,8 +725,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_document
 
-Deletes the Systems Manager document and all instance associations to the
-document.
+Deletes the Amazon Web Services Systems Manager document (SSM document) and all
+instance associations to the document.
 
 Type annotations for `boto3.client("ssm").delete_document` method.
 
@@ -863,7 +864,7 @@ Returns
 
 ### delete_resource_data_sync
 
-Deletes a Resource Data Sync configuration.
+Deletes a resource data sync configuration.
 
 Type annotations for `boto3.client("ssm").delete_resource_data_sync` method.
 
@@ -965,9 +966,9 @@ Returns
 ### describe_activations
 
 Describes details about the activation, such as the date and time the
-activation was created, its expiration date, the IAM role assigned to the
-instances in the activation, and the number of instances registered by using
-this activation.
+activation was created, its expiration date, the Identity and Access Management
+(IAM) role assigned to the instances in the activation, and the number of
+instances registered by using this activation.
 
 Type annotations for `boto3.client("ssm").describe_activations` method.
 
@@ -1011,8 +1012,7 @@ Returns
 
 ### describe_association_execution_targets
 
-Use this API action to view information about a specific execution of a
-specific association.
+Views information about a specific execution of a specific association.
 
 Type annotations for
 `boto3.client("ssm").describe_association_execution_targets` method.
@@ -1037,7 +1037,7 @@ Returns
 
 ### describe_association_executions
 
-Use this API action to view all executions for a specific association ID.
+Views all executions for a specific association ID.
 
 Type annotations for `boto3.client("ssm").describe_association_executions`
 method.
@@ -1132,7 +1132,8 @@ Returns
 
 ### describe_document
 
-Describes the specified Systems Manager document.
+Describes the specified Amazon Web Services Systems Manager document (SSM
+document).
 
 Type annotations for `boto3.client("ssm").describe_document` method.
 
@@ -1153,7 +1154,8 @@ Returns
 
 ### describe_document_permission
 
-Describes the permissions for a Systems Manager document.
+Describes the permissions for a Amazon Web Services Systems Manager document
+(SSM document).
 
 Type annotations for `boto3.client("ssm").describe_document_permission` method.
 
@@ -1271,7 +1273,7 @@ Returns
 
 ### describe_instance_patch_states
 
-Retrieves the high-level patch state of one or more instances.
+.
 
 Type annotations for `boto3.client("ssm").describe_instance_patch_states`
 method.
@@ -1293,8 +1295,7 @@ Returns
 
 ### describe_instance_patch_states_for_patch_group
 
-Retrieves the high-level patch state for the instances in the specified patch
-group.
+.
 
 Type annotations for
 `boto3.client("ssm").describe_instance_patch_states_for_patch_group` method.
@@ -1513,7 +1514,7 @@ Returns
 
 ### describe_maintenance_windows
 
-Retrieves the maintenance windows in an AWS account.
+Retrieves the maintenance windows in an account.
 
 Type annotations for `boto3.client("ssm").describe_maintenance_windows` method.
 
@@ -1608,7 +1609,7 @@ Returns
 
 ### describe_patch_baselines
 
-Lists the patch baselines in your AWS account.
+Lists the patch baselines in your account.
 
 Type annotations for `boto3.client("ssm").describe_patch_baselines` method.
 
@@ -1630,7 +1631,8 @@ Returns
 
 ### describe_patch_group_state
 
-Returns high-level aggregated patch compliance state for a patch group.
+Returns high-level aggregated patch compliance state information for a patch
+group.
 
 Type annotations for `boto3.client("ssm").describe_patch_group_state` method.
 
@@ -1777,8 +1779,8 @@ Returns
 
 ### get_calendar_state
 
-Gets the state of the AWS Systems Manager Change Calendar at an optional,
-specified time.
+Gets the state of a Amazon Web Services Systems Manager change calendar at the
+current time or a specified time.
 
 Type annotations for `boto3.client("ssm").get_calendar_state` method.
 
@@ -1882,7 +1884,8 @@ Returns
 
 ### get_document
 
-Gets the contents of the specified Systems Manager document.
+Gets the contents of the specified Amazon Web Services Systems Manager document
+(SSM document).
 
 Type annotations for `boto3.client("ssm").get_document` method.
 
@@ -2094,7 +2097,8 @@ Returns
 
 ### get_ops_summary
 
-View a summary of OpsItems based on specified filters and aggregators.
+View a summary of operations metadata (OpsData) based on specified filters and
+aggregators.
 
 Type annotations for `boto3.client("ssm").get_ops_summary` method.
 
@@ -2246,7 +2250,8 @@ Returns
 
 ### get_service_setting
 
-`ServiceSetting` is an account-level setting for an AWS service.
+`ServiceSetting` is an account-level setting for an Amazon Web Services
+service.
 
 Type annotations for `boto3.client("ssm").get_service_setting` method.
 
@@ -2308,7 +2313,7 @@ Returns
 
 ### list_associations
 
-Returns all State Manager associations in the current AWS account and Region.
+Returns all State Manager associations in the current account and Region.
 
 Type annotations for `boto3.client("ssm").list_associations` method.
 
@@ -2355,7 +2360,7 @@ Returns
 
 ### list_commands
 
-Lists the commands requested by users of the AWS account.
+Lists the commands requested by users of the account.
 
 Type annotations for `boto3.client("ssm").list_commands` method.
 
@@ -2378,7 +2383,7 @@ Returns [ListCommandsResultTypeDef](./type_defs.md#listcommandsresulttypedef).
 
 ### list_compliance_items
 
-For a specified resource ID, this API action returns a list of compliance
+For a specified resource ID, this API operation returns a list of compliance
 statuses for different resource types.
 
 Type annotations for `boto3.client("ssm").list_compliance_items` method.
@@ -2473,8 +2478,7 @@ Returns
 
 ### list_documents
 
-Returns all Systems Manager (SSM) documents in the current AWS account and
-Region.
+Returns all Systems Manager (SSM) documents in the current account and Region.
 
 Type annotations for `boto3.client("ssm").list_documents` method.
 
@@ -2522,7 +2526,7 @@ Returns
 
 ### list_ops_item_events
 
-Returns a list of all OpsItem events in the current AWS account and Region.
+Returns a list of all OpsItem events in the current Region and account.
 
 Type annotations for `boto3.client("ssm").list_ops_item_events` method.
 
@@ -2567,8 +2571,8 @@ Returns
 
 ### list_ops_metadata
 
-Systems Manager calls this API action when displaying all Application Manager
-OpsMetadata objects or blobs.
+Amazon Web Services Systems Manager calls this API operation when displaying
+all Application Manager OpsMetadata objects or blobs.
 
 Type annotations for `boto3.client("ssm").list_ops_metadata` method.
 
@@ -2656,7 +2660,8 @@ Returns
 
 ### modify_document_permission
 
-Shares a Systems Manager document publicly or privately.
+Shares a Amazon Web Services Systems Manager document (SSM document)publicly or
+privately.
 
 Type annotations for `boto3.client("ssm").modify_document_permission` method.
 
@@ -2888,7 +2893,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### reset_service_setting
 
-`ServiceSetting` is an account-level setting for an AWS service.
+`ServiceSetting` is an account-level setting for an Amazon Web Services
+service.
 
 Type annotations for `boto3.client("ssm").reset_service_setting` method.
 
@@ -2984,7 +2990,7 @@ Returns [SendCommandResultTypeDef](./type_defs.md#sendcommandresulttypedef).
 
 ### start_associations_once
 
-Use this API action to run an association immediately and only one time.
+Runs an association immediately and only one time.
 
 Type annotations for `boto3.client("ssm").start_associations_once` method.
 
@@ -3002,7 +3008,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### start_automation_execution
 
-Initiates execution of an Automation document.
+Initiates execution of an Automation runbook.
 
 Type annotations for `boto3.client("ssm").start_automation_execution` method.
 
@@ -3184,8 +3190,8 @@ Returns
 
 ### update_association_status
 
-Updates the status of the Systems Manager document associated with the
-specified instance.
+Updates the status of the Amazon Web Services Systems Manager document (SSM
+document) associated with the specified instance.
 
 Type annotations for `boto3.client("ssm").update_association_status` method.
 
@@ -3370,8 +3376,8 @@ Returns
 
 ### update_managed_instance_role
 
-Changes the Amazon Identity and Access Management (IAM) role that is assigned
-to the on-premises instance or virtual machines (VM).
+Changes the Identity and Access Management (IAM) role that is assigned to the
+on-premises instance or virtual machines (VM).
 
 Type annotations for `boto3.client("ssm").update_managed_instance_role` method.
 
@@ -3425,8 +3431,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_ops_metadata
 
-Systems Manager calls this API action when you edit OpsMetadata in Application
-Manager.
+Amazon Web Services Systems Manager calls this API operation when you edit
+OpsMetadata in Application Manager.
 
 Type annotations for `boto3.client("ssm").update_ops_metadata` method.
 
@@ -3503,7 +3509,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_service_setting
 
-`ServiceSetting` is an account-level setting for an AWS service.
+`ServiceSetting` is an account-level setting for an Amazon Web Services
+service.
 
 Type annotations for `boto3.client("ssm").update_service_setting` method.
 

@@ -125,6 +125,7 @@ from mypy_boto3_amplifybackend.type_defs import BackendAPIAppSyncAuthSettingsTyp
 - [BackendAPIAuthTypeTypeDef](./type_defs.md#backendapiauthtypetypedef)
 - [BackendAPIConflictResolutionTypeDef](./type_defs.md#backendapiconflictresolutiontypedef)
 - [BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef)
+- [BackendAuthAppleProviderConfigTypeDef](./type_defs.md#backendauthappleproviderconfigtypedef)
 - [BackendAuthSocialProviderConfigTypeDef](./type_defs.md#backendauthsocialproviderconfigtypedef)
 - [BackendJobRespObjTypeDef](./type_defs.md#backendjobrespobjtypedef)
 - [CloneBackendRequestRequestTypeDef](./type_defs.md#clonebackendrequestrequesttypedef)

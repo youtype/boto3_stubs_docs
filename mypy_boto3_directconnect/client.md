@@ -202,8 +202,7 @@ Returns
 
 ### allocate_private_virtual_interface
 
-Provisions a private virtual interface to be owned by the specified AWS
-account.
+Provisions a private virtual interface to be owned by the specified account.
 
 Type annotations for
 `boto3.client("directconnect").allocate_private_virtual_interface` method.
@@ -227,7 +226,7 @@ Returns
 
 ### allocate_public_virtual_interface
 
-Provisions a public virtual interface to be owned by the specified AWS account.
+Provisions a public virtual interface to be owned by the specified account.
 
 Type annotations for
 `boto3.client("directconnect").allocate_public_virtual_interface` method.
@@ -251,8 +250,7 @@ Returns
 
 ### allocate_transit_virtual_interface
 
-Provisions a transit virtual interface to be owned by the specified AWS
-account.
+Provisions a transit virtual interface to be owned by the specified account.
 
 Type annotations for
 `boto3.client("directconnect").allocate_transit_virtual_interface` method.
@@ -320,7 +318,7 @@ Returns
 ### associate_mac_sec_key
 
 Associates a MAC Security (MACsec) Connection Key Name (CKN)/ Connectivity
-Association Key (CAK) pair with an AWS Direct Connect dedicated connection.
+Association Key (CAK) pair with an Direct Connect dedicated connection.
 
 Type annotations for `boto3.client("directconnect").associate_mac_sec_key`
 method.
@@ -399,8 +397,7 @@ Returns
 
 ### confirm_private_virtual_interface
 
-Accepts ownership of a private virtual interface created by another AWS
-account.
+Accepts ownership of a private virtual interface created by another account.
 
 Type annotations for
 `boto3.client("directconnect").confirm_private_virtual_interface` method.
@@ -422,7 +419,7 @@ Returns
 
 ### confirm_public_virtual_interface
 
-Accepts ownership of a public virtual interface created by another AWS account.
+Accepts ownership of a public virtual interface created by another account.
 
 Type annotations for
 `boto3.client("directconnect").confirm_public_virtual_interface` method.
@@ -442,8 +439,7 @@ Returns
 
 ### confirm_transit_virtual_interface
 
-Accepts ownership of a transit virtual interface created by another AWS
-account.
+Accepts ownership of a transit virtual interface created by another account.
 
 Type annotations for
 `boto3.client("directconnect").confirm_transit_virtual_interface` method.
@@ -484,8 +480,8 @@ Returns
 
 ### create_connection
 
-Creates a connection between a customer network and a specific AWS Direct
-Connect location.
+Creates a connection between a customer network and a specific Direct Connect
+location.
 
 Type annotations for `boto3.client("directconnect").create_connection` method.
 
@@ -586,8 +582,8 @@ Returns
 
 ### create_interconnect
 
-Creates an interconnect between an AWS Direct Connect Partner's network and a
-specific AWS Direct Connect location.
+Creates an interconnect between an Direct Connect Partner's network and a
+specific Direct Connect location.
 
 Type annotations for `boto3.client("directconnect").create_interconnect`
 method.
@@ -613,7 +609,7 @@ Returns
 ### create_lag
 
 Creates a link aggregation group (LAG) with the specified number of bundled
-physical dedicated connections between the customer network and a specific AWS
+physical dedicated connections between the customer network and a specific
 Direct Connect location.
 
 Type annotations for `boto3.client("directconnect").create_lag` method.
@@ -1082,7 +1078,7 @@ Returns
 
 ### describe_interconnects
 
-Lists the interconnects owned by the AWS account or only the specified
+Lists the interconnects owned by the account or only the specified
 interconnect.
 
 Type annotations for `boto3.client("directconnect").describe_interconnects`
@@ -1143,7 +1139,7 @@ Returns
 
 ### describe_locations
 
-Lists the AWS Direct Connect locations in the current AWS Region.
+Lists the Direct Connect locations in the current Region.
 
 Type annotations for `boto3.client("directconnect").describe_locations` method.
 
@@ -1154,7 +1150,7 @@ Returns [LocationsTypeDef](./type_defs.md#locationstypedef).
 
 ### describe_tags
 
-Describes the tags associated with the specified AWS Direct Connect resources.
+Describes the tags associated with the specified Direct Connect resources.
 
 Type annotations for `boto3.client("directconnect").describe_tags` method.
 
@@ -1173,7 +1169,7 @@ Returns
 
 ### describe_virtual_gateways
 
-Lists the virtual private gateways owned by the AWS account.
+Lists the virtual private gateways owned by the account.
 
 Type annotations for `boto3.client("directconnect").describe_virtual_gateways`
 method.
@@ -1185,7 +1181,7 @@ Returns [VirtualGatewaysTypeDef](./type_defs.md#virtualgatewaystypedef).
 
 ### describe_virtual_interfaces
 
-Displays all virtual interfaces for an AWS account.
+Displays all virtual interfaces for an account.
 
 Type annotations for
 `boto3.client("directconnect").describe_virtual_interfaces` method.
@@ -1226,7 +1222,7 @@ Returns
 
 ### disassociate_mac_sec_key
 
-Removes the association between a MAC Security (MACsec) security key and an AWS
+Removes the association between a MAC Security (MACsec) security key and an
 Direct Connect dedicated connection.
 
 Type annotations for `boto3.client("directconnect").disassociate_mac_sec_key`
@@ -1336,7 +1332,7 @@ Returns
 
 ### tag_resource
 
-Adds the specified tags to the specified AWS Direct Connect resource.
+Adds the specified tags to the specified Direct Connect resource.
 
 Type annotations for `boto3.client("directconnect").tag_resource` method.
 
@@ -1355,7 +1351,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
-Removes one or more tags from the specified AWS Direct Connect resource.
+Removes one or more tags from the specified Direct Connect resource.
 
 Type annotations for `boto3.client("directconnect").untag_resource` method.
 
@@ -1374,7 +1370,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_connection
 
-Updates the AWS Direct Connect dedicated connection configuration.
+Updates the Direct Connect dedicated connection configuration.
 
 Type annotations for `boto3.client("directconnect").update_connection` method.
 

@@ -62,6 +62,8 @@ from mypy_boto3_lex_models.client import LexModelBuildingServiceClient
 - [get_intent](./client.md#get_intent)
 - [get_intent_versions](./client.md#get_intent_versions)
 - [get_intents](./client.md#get_intents)
+- [get_migration](./client.md#get_migration)
+- [get_migrations](./client.md#get_migrations)
 - [get_paginator](./client.md#get_paginator)
 - [get_slot_type](./client.md#get_slot_type)
 - [get_slot_type_versions](./client.md#get_slot_type_versions)
@@ -73,6 +75,7 @@ from mypy_boto3_lex_models.client import LexModelBuildingServiceClient
 - [put_intent](./client.md#put_intent)
 - [put_slot_type](./client.md#put_slot_type)
 - [start_import](./client.md#start_import)
+- [start_migration](./client.md#start_migration)
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
 
@@ -80,6 +83,7 @@ from mypy_boto3_lex_models.client import LexModelBuildingServiceClient
 
 LexModelBuildingServiceClient [exceptions](./client.md#exceptions)
 
+- AccessDeniedException
 - BadRequestException
 - ClientError
 - ConflictException
@@ -142,11 +146,16 @@ from mypy_boto3_lex_models.literals import ChannelStatusType, ...
 - [LocaleType](./literals.md#localetype)
 - [LogTypeType](./literals.md#logtypetype)
 - [MergeStrategyType](./literals.md#mergestrategytype)
+- [MigrationAlertTypeType](./literals.md#migrationalerttypetype)
+- [MigrationSortAttributeType](./literals.md#migrationsortattributetype)
+- [MigrationStatusType](./literals.md#migrationstatustype)
+- [MigrationStrategyType](./literals.md#migrationstrategytype)
 - [ObfuscationSettingType](./literals.md#obfuscationsettingtype)
 - [ProcessBehaviorType](./literals.md#processbehaviortype)
 - [ResourceTypeType](./literals.md#resourcetypetype)
 - [SlotConstraintType](./literals.md#slotconstrainttype)
 - [SlotValueSelectionStrategyType](./literals.md#slotvalueselectionstrategytype)
+- [SortOrderType](./literals.md#sortordertype)
 - [StatusType](./literals.md#statustype)
 - [StatusTypeType](./literals.md#statustypetype)
 
@@ -218,6 +227,10 @@ from mypy_boto3_lex_models.type_defs import BotAliasMetadataTypeDef, ...
 - [GetIntentVersionsResponseTypeDef](./type_defs.md#getintentversionsresponsetypedef)
 - [GetIntentsRequestRequestTypeDef](./type_defs.md#getintentsrequestrequesttypedef)
 - [GetIntentsResponseTypeDef](./type_defs.md#getintentsresponsetypedef)
+- [GetMigrationRequestRequestTypeDef](./type_defs.md#getmigrationrequestrequesttypedef)
+- [GetMigrationResponseTypeDef](./type_defs.md#getmigrationresponsetypedef)
+- [GetMigrationsRequestRequestTypeDef](./type_defs.md#getmigrationsrequestrequesttypedef)
+- [GetMigrationsResponseTypeDef](./type_defs.md#getmigrationsresponsetypedef)
 - [GetSlotTypeRequestRequestTypeDef](./type_defs.md#getslottyperequestrequesttypedef)
 - [GetSlotTypeResponseTypeDef](./type_defs.md#getslottyperesponsetypedef)
 - [GetSlotTypeVersionsRequestRequestTypeDef](./type_defs.md#getslottypeversionsrequestrequesttypedef)
@@ -235,6 +248,8 @@ from mypy_boto3_lex_models.type_defs import BotAliasMetadataTypeDef, ...
 - [LogSettingsRequestTypeDef](./type_defs.md#logsettingsrequesttypedef)
 - [LogSettingsResponseTypeDef](./type_defs.md#logsettingsresponsetypedef)
 - [MessageTypeDef](./type_defs.md#messagetypedef)
+- [MigrationAlertTypeDef](./type_defs.md#migrationalerttypedef)
+- [MigrationSummaryTypeDef](./type_defs.md#migrationsummarytypedef)
 - [OutputContextTypeDef](./type_defs.md#outputcontexttypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [PromptTypeDef](./type_defs.md#prompttypedef)
@@ -255,6 +270,8 @@ from mypy_boto3_lex_models.type_defs import BotAliasMetadataTypeDef, ...
 - [SlotTypeRegexConfigurationTypeDef](./type_defs.md#slottyperegexconfigurationtypedef)
 - [StartImportRequestRequestTypeDef](./type_defs.md#startimportrequestrequesttypedef)
 - [StartImportResponseTypeDef](./type_defs.md#startimportresponsetypedef)
+- [StartMigrationRequestRequestTypeDef](./type_defs.md#startmigrationrequestrequesttypedef)
+- [StartMigrationResponseTypeDef](./type_defs.md#startmigrationresponsetypedef)
 - [StatementTypeDef](./type_defs.md#statementtypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)

@@ -65,6 +65,10 @@ type annotations stubs module
   - [GetIntentVersionsResponseTypeDef](#getintentversionsresponsetypedef)
   - [GetIntentsRequestRequestTypeDef](#getintentsrequestrequesttypedef)
   - [GetIntentsResponseTypeDef](#getintentsresponsetypedef)
+  - [GetMigrationRequestRequestTypeDef](#getmigrationrequestrequesttypedef)
+  - [GetMigrationResponseTypeDef](#getmigrationresponsetypedef)
+  - [GetMigrationsRequestRequestTypeDef](#getmigrationsrequestrequesttypedef)
+  - [GetMigrationsResponseTypeDef](#getmigrationsresponsetypedef)
   - [GetSlotTypeRequestRequestTypeDef](#getslottyperequestrequesttypedef)
   - [GetSlotTypeResponseTypeDef](#getslottyperesponsetypedef)
   - [GetSlotTypeVersionsRequestRequestTypeDef](#getslottypeversionsrequestrequesttypedef)
@@ -82,6 +86,8 @@ type annotations stubs module
   - [LogSettingsRequestTypeDef](#logsettingsrequesttypedef)
   - [LogSettingsResponseTypeDef](#logsettingsresponsetypedef)
   - [MessageTypeDef](#messagetypedef)
+  - [MigrationAlertTypeDef](#migrationalerttypedef)
+  - [MigrationSummaryTypeDef](#migrationsummarytypedef)
   - [OutputContextTypeDef](#outputcontexttypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PromptTypeDef](#prompttypedef)
@@ -102,6 +108,8 @@ type annotations stubs module
   - [SlotTypeRegexConfigurationTypeDef](#slottyperegexconfigurationtypedef)
   - [StartImportRequestRequestTypeDef](#startimportrequestrequesttypedef)
   - [StartImportResponseTypeDef](#startimportresponsetypedef)
+  - [StartMigrationRequestRequestTypeDef](#startmigrationrequestrequesttypedef)
+  - [StartMigrationResponseTypeDef](#startmigrationresponsetypedef)
   - [StatementTypeDef](#statementtypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
@@ -947,6 +955,70 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetMigrationRequestRequestTypeDef
+
+```python
+from mypy_boto3_lex_models.type_defs import GetMigrationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `migrationId`: `str`
+
+## GetMigrationResponseTypeDef
+
+```python
+from mypy_boto3_lex_models.type_defs import GetMigrationResponseTypeDef
+```
+
+Required fields:
+
+- `migrationId`: `str`
+- `v1BotName`: `str`
+- `v1BotVersion`: `str`
+- `v1BotLocale`: [LocaleType](./literals.md#localetype)
+- `v2BotId`: `str`
+- `v2BotRole`: `str`
+- `migrationStatus`: [MigrationStatusType](./literals.md#migrationstatustype)
+- `migrationStrategy`:
+  [MigrationStrategyType](./literals.md#migrationstrategytype)
+- `migrationTimestamp`: `datetime`
+- `alerts`:
+  `List`\[[MigrationAlertTypeDef](./type_defs.md#migrationalerttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetMigrationsRequestRequestTypeDef
+
+```python
+from mypy_boto3_lex_models.type_defs import GetMigrationsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `sortByAttribute`:
+  [MigrationSortAttributeType](./literals.md#migrationsortattributetype)
+- `sortByOrder`: [SortOrderType](./literals.md#sortordertype)
+- `v1BotNameContains`: `str`
+- `migrationStatusEquals`:
+  [MigrationStatusType](./literals.md#migrationstatustype)
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## GetMigrationsResponseTypeDef
+
+```python
+from mypy_boto3_lex_models.type_defs import GetMigrationsResponseTypeDef
+```
+
+Required fields:
+
+- `migrationSummaries`:
+  `List`\[[MigrationSummaryTypeDef](./type_defs.md#migrationsummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetSlotTypeRequestRequestTypeDef
 
 ```python
@@ -1179,6 +1251,38 @@ Required fields:
 Optional fields:
 
 - `groupNumber`: `int`
+
+## MigrationAlertTypeDef
+
+```python
+from mypy_boto3_lex_models.type_defs import MigrationAlertTypeDef
+```
+
+Optional fields:
+
+- `type`: [MigrationAlertTypeType](./literals.md#migrationalerttypetype)
+- `message`: `str`
+- `details`: `List`\[`str`\]
+- `referenceURLs`: `List`\[`str`\]
+
+## MigrationSummaryTypeDef
+
+```python
+from mypy_boto3_lex_models.type_defs import MigrationSummaryTypeDef
+```
+
+Optional fields:
+
+- `migrationId`: `str`
+- `v1BotName`: `str`
+- `v1BotVersion`: `str`
+- `v1BotLocale`: [LocaleType](./literals.md#localetype)
+- `v2BotId`: `str`
+- `v2BotRole`: `str`
+- `migrationStatus`: [MigrationStatusType](./literals.md#migrationstatustype)
+- `migrationStrategy`:
+  [MigrationStrategyType](./literals.md#migrationstrategytype)
+- `migrationTimestamp`: `datetime`
 
 ## OutputContextTypeDef
 
@@ -1561,6 +1665,41 @@ Required fields:
 - `importStatus`: [ImportStatusType](./literals.md#importstatustype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `createdDate`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StartMigrationRequestRequestTypeDef
+
+```python
+from mypy_boto3_lex_models.type_defs import StartMigrationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `v1BotName`: `str`
+- `v1BotVersion`: `str`
+- `v2BotName`: `str`
+- `v2BotRole`: `str`
+- `migrationStrategy`:
+  [MigrationStrategyType](./literals.md#migrationstrategytype)
+
+## StartMigrationResponseTypeDef
+
+```python
+from mypy_boto3_lex_models.type_defs import StartMigrationResponseTypeDef
+```
+
+Required fields:
+
+- `v1BotName`: `str`
+- `v1BotVersion`: `str`
+- `v1BotLocale`: [LocaleType](./literals.md#localetype)
+- `v2BotId`: `str`
+- `v2BotRole`: `str`
+- `migrationId`: `str`
+- `migrationStrategy`:
+  [MigrationStrategyType](./literals.md#migrationstrategytype)
+- `migrationTimestamp`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

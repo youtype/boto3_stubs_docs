@@ -12,6 +12,7 @@ type annotations stubs module
   - [BackendAPIAuthTypeTypeDef](#backendapiauthtypetypedef)
   - [BackendAPIConflictResolutionTypeDef](#backendapiconflictresolutiontypedef)
   - [BackendAPIResourceConfigTypeDef](#backendapiresourceconfigtypedef)
+  - [BackendAuthAppleProviderConfigTypeDef](#backendauthappleproviderconfigtypedef)
   - [BackendAuthSocialProviderConfigTypeDef](#backendauthsocialproviderconfigtypedef)
   - [BackendJobRespObjTypeDef](#backendjobrespobjtypedef)
   - [CloneBackendRequestRequestTypeDef](#clonebackendrequestrequesttypedef)
@@ -143,6 +144,19 @@ Optional fields:
   [BackendAPIAuthTypeTypeDef](./type_defs.md#backendapiauthtypetypedef)
 - `Service`: `str`
 - `TransformSchema`: `str`
+
+## BackendAuthAppleProviderConfigTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import BackendAuthAppleProviderConfigTypeDef
+```
+
+Optional fields:
+
+- `ClientId`: `str`
+- `KeyId`: `str`
+- `PrivateKey`: `str`
+- `TeamId`: `str`
 
 ## BackendAuthSocialProviderConfigTypeDef
 
@@ -997,6 +1011,8 @@ Optional fields:
   [BackendAuthSocialProviderConfigTypeDef](./type_defs.md#backendauthsocialproviderconfigtypedef)
 - `LoginWithAmazon`:
   [BackendAuthSocialProviderConfigTypeDef](./type_defs.md#backendauthsocialproviderconfigtypedef)
+- `SignInWithApple`:
+  [BackendAuthAppleProviderConfigTypeDef](./type_defs.md#backendauthappleproviderconfigtypedef)
 
 ## UpdateBackendAPIRequestRequestTypeDef
 

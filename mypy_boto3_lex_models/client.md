@@ -41,6 +41,8 @@ type annotations stubs module
     - [get_intent](#get_intent)
     - [get_intent_versions](#get_intent_versions)
     - [get_intents](#get_intents)
+    - [get_migration](#get_migration)
+    - [get_migrations](#get_migrations)
     - [get_slot_type](#get_slot_type)
     - [get_slot_type_versions](#get_slot_type_versions)
     - [get_slot_types](#get_slot_types)
@@ -51,6 +53,7 @@ type annotations stubs module
     - [put_intent](#put_intent)
     - [put_slot_type](#put_slot_type)
     - [start_import](#start_import)
+    - [start_migration](#start_migration)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [get_paginator](#get_paginator)
@@ -79,12 +82,13 @@ static analysis directly:
 ```python
 from mypy_boto3_lex_models.client import Exceptions
 
-def handle_error(exc: Exceptions.BadRequestException) -> None:
+def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
 Exceptions:
 
+- `Exceptions.AccessDeniedException`
 - `Exceptions.BadRequestException`
 - `Exceptions.ClientError`
 - `Exceptions.ConflictException`
@@ -674,6 +678,52 @@ Keyword-only arguments:
 
 Returns [GetIntentsResponseTypeDef](./type_defs.md#getintentsresponsetypedef).
 
+### get_migration
+
+Provides details about an ongoing or complete migration from an Amazon Lex V1
+bot to an Amazon Lex V2 bot.
+
+Type annotations for `boto3.client("lex-models").get_migration` method.
+
+Boto3 documentation:
+[LexModelBuildingService.Client.get_migration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_migration)
+
+Arguments mapping described in
+[GetMigrationRequestRequestTypeDef](./type_defs.md#getmigrationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `migrationId`: `str` *(required)*
+
+Returns
+[GetMigrationResponseTypeDef](./type_defs.md#getmigrationresponsetypedef).
+
+### get_migrations
+
+Gets a list of migrations between Amazon Lex V1 and Amazon Lex V2.
+
+Type annotations for `boto3.client("lex-models").get_migrations` method.
+
+Boto3 documentation:
+[LexModelBuildingService.Client.get_migrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_migrations)
+
+Arguments mapping described in
+[GetMigrationsRequestRequestTypeDef](./type_defs.md#getmigrationsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `sortByAttribute`:
+  [MigrationSortAttributeType](./literals.md#migrationsortattributetype)
+- `sortByOrder`: [SortOrderType](./literals.md#sortordertype)
+- `v1BotNameContains`: `str`
+- `migrationStatusEquals`:
+  [MigrationStatusType](./literals.md#migrationstatustype)
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[GetMigrationsResponseTypeDef](./type_defs.md#getmigrationsresponsetypedef).
+
 ### get_slot_type
 
 Returns information about a specific version of a slot type.
@@ -931,6 +981,30 @@ Keyword-only arguments:
 
 Returns
 [StartImportResponseTypeDef](./type_defs.md#startimportresponsetypedef).
+
+### start_migration
+
+Starts migrating a bot from Amazon Lex V1 to Amazon Lex V2.
+
+Type annotations for `boto3.client("lex-models").start_migration` method.
+
+Boto3 documentation:
+[LexModelBuildingService.Client.start_migration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.start_migration)
+
+Arguments mapping described in
+[StartMigrationRequestRequestTypeDef](./type_defs.md#startmigrationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `v1BotName`: `str` *(required)*
+- `v1BotVersion`: `str` *(required)*
+- `v2BotName`: `str` *(required)*
+- `v2BotRole`: `str` *(required)*
+- `migrationStrategy`:
+  [MigrationStrategyType](./literals.md#migrationstrategytype) *(required)*
+
+Returns
+[StartMigrationResponseTypeDef](./type_defs.md#startmigrationresponsetypedef).
 
 ### tag_resource
 

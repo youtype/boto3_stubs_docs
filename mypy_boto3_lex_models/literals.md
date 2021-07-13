@@ -29,11 +29,16 @@ type annotations stubs module
   - [LocaleType](#localetype)
   - [LogTypeType](#logtypetype)
   - [MergeStrategyType](#mergestrategytype)
+  - [MigrationAlertTypeType](#migrationalerttypetype)
+  - [MigrationSortAttributeType](#migrationsortattributetype)
+  - [MigrationStatusType](#migrationstatustype)
+  - [MigrationStrategyType](#migrationstrategytype)
   - [ObfuscationSettingType](#obfuscationsettingtype)
   - [ProcessBehaviorType](#processbehaviortype)
   - [ResourceTypeType](#resourcetypetype)
   - [SlotConstraintType](#slotconstrainttype)
   - [SlotValueSelectionStrategyType](#slotvalueselectionstrategytype)
+  - [SortOrderType](#sortordertype)
   - [StatusType](#statustype)
   - [StatusTypeType](#statustypetype)
 
@@ -273,6 +278,51 @@ Values:
 - `FAIL_ON_CONFLICT`
 - `OVERWRITE_LATEST`
 
+## MigrationAlertTypeType
+
+```python
+from mypy_boto3_lex_models.literals import MigrationAlertTypeType
+```
+
+Values:
+
+- `ERROR`
+- `WARN`
+
+## MigrationSortAttributeType
+
+```python
+from mypy_boto3_lex_models.literals import MigrationSortAttributeType
+```
+
+Values:
+
+- `MIGRATION_DATE_TIME`
+- `V1_BOT_NAME`
+
+## MigrationStatusType
+
+```python
+from mypy_boto3_lex_models.literals import MigrationStatusType
+```
+
+Values:
+
+- `COMPLETED`
+- `FAILED`
+- `IN_PROGRESS`
+
+## MigrationStrategyType
+
+```python
+from mypy_boto3_lex_models.literals import MigrationStrategyType
+```
+
+Values:
+
+- `CREATE_NEW`
+- `UPDATE_EXISTING`
+
 ## ObfuscationSettingType
 
 ```python
@@ -328,6 +378,17 @@ Values:
 
 - `ORIGINAL_VALUE`
 - `TOP_RESOLUTION`
+
+## SortOrderType
+
+```python
+from mypy_boto3_lex_models.literals import SortOrderType
+```
+
+Values:
+
+- `ASCENDING`
+- `DESCENDING`
 
 ## StatusType
 

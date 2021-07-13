@@ -43,6 +43,7 @@ from mypy_boto3_redshift.client import RedshiftClient
 - [can_paginate](./client.md#can_paginate)
 - [cancel_resize](./client.md#cancel_resize)
 - [copy_cluster_snapshot](./client.md#copy_cluster_snapshot)
+- [create_authentication_profile](./client.md#create_authentication_profile)
 - [create_cluster](./client.md#create_cluster)
 - [create_cluster_parameter_group](./client.md#create_cluster_parameter_group)
 - [create_cluster_security_group](./client.md#create_cluster_security_group)
@@ -57,6 +58,7 @@ from mypy_boto3_redshift.client import RedshiftClient
 - [create_snapshot_schedule](./client.md#create_snapshot_schedule)
 - [create_tags](./client.md#create_tags)
 - [create_usage_limit](./client.md#create_usage_limit)
+- [delete_authentication_profile](./client.md#delete_authentication_profile)
 - [delete_cluster](./client.md#delete_cluster)
 - [delete_cluster_parameter_group](./client.md#delete_cluster_parameter_group)
 - [delete_cluster_security_group](./client.md#delete_cluster_security_group)
@@ -73,6 +75,7 @@ from mypy_boto3_redshift.client import RedshiftClient
 - [delete_tags](./client.md#delete_tags)
 - [delete_usage_limit](./client.md#delete_usage_limit)
 - [describe_account_attributes](./client.md#describe_account_attributes)
+- [describe_authentication_profiles](./client.md#describe_authentication_profiles)
 - [describe_cluster_db_revisions](./client.md#describe_cluster_db_revisions)
 - [describe_cluster_parameter_groups](./client.md#describe_cluster_parameter_groups)
 - [describe_cluster_parameters](./client.md#describe_cluster_parameters)
@@ -115,6 +118,7 @@ from mypy_boto3_redshift.client import RedshiftClient
 - [get_reserved_node_exchange_offerings](./client.md#get_reserved_node_exchange_offerings)
 - [get_waiter](./client.md#get_waiter)
 - [modify_aqua_configuration](./client.md#modify_aqua_configuration)
+- [modify_authentication_profile](./client.md#modify_authentication_profile)
 - [modify_cluster](./client.md#modify_cluster)
 - [modify_cluster_db_revision](./client.md#modify_cluster_db_revision)
 - [modify_cluster_iam_roles](./client.md#modify_cluster_iam_roles)
@@ -149,6 +153,9 @@ RedshiftClient [exceptions](./client.md#exceptions)
 
 - AccessToClusterDeniedFault
 - AccessToSnapshotDeniedFault
+- AuthenticationProfileAlreadyExistsFault
+- AuthenticationProfileNotFoundFault
+- AuthenticationProfileQuotaExceededFault
 - AuthorizationAlreadyExistsFault
 - AuthorizationNotFoundFault
 - AuthorizationQuotaExceededFault
@@ -194,6 +201,7 @@ RedshiftClient [exceptions](./client.md#exceptions)
 - IncompatibleOrderableOptions
 - InsufficientClusterCapacityFault
 - InsufficientS3BucketPolicyFault
+- InvalidAuthenticationProfileRequestFault
 - InvalidAuthorizationStateFault
 - InvalidClusterParameterGroupStateFault
 - InvalidClusterSecurityGroupStateFault
@@ -405,6 +413,7 @@ from mypy_boto3_redshift.type_defs import AcceptReservedNodeExchangeInputMessage
 - [AccountWithRestoreAccessTypeDef](./type_defs.md#accountwithrestoreaccesstypedef)
 - [AquaConfigurationTypeDef](./type_defs.md#aquaconfigurationtypedef)
 - [AttributeValueTargetTypeDef](./type_defs.md#attributevaluetargettypedef)
+- [AuthenticationProfileTypeDef](./type_defs.md#authenticationprofiletypedef)
 - [AuthorizeClusterSecurityGroupIngressMessageRequestTypeDef](./type_defs.md#authorizeclustersecuritygroupingressmessagerequesttypedef)
 - [AuthorizeClusterSecurityGroupIngressResultTypeDef](./type_defs.md#authorizeclustersecuritygroupingressresulttypedef)
 - [AuthorizeEndpointAccessMessageRequestTypeDef](./type_defs.md#authorizeendpointaccessmessagerequesttypedef)
@@ -440,6 +449,8 @@ from mypy_boto3_redshift.type_defs import AcceptReservedNodeExchangeInputMessage
 - [ClustersMessageTypeDef](./type_defs.md#clustersmessagetypedef)
 - [CopyClusterSnapshotMessageRequestTypeDef](./type_defs.md#copyclustersnapshotmessagerequesttypedef)
 - [CopyClusterSnapshotResultTypeDef](./type_defs.md#copyclustersnapshotresulttypedef)
+- [CreateAuthenticationProfileMessageRequestTypeDef](./type_defs.md#createauthenticationprofilemessagerequesttypedef)
+- [CreateAuthenticationProfileResultTypeDef](./type_defs.md#createauthenticationprofileresulttypedef)
 - [CreateClusterMessageRequestTypeDef](./type_defs.md#createclustermessagerequesttypedef)
 - [CreateClusterParameterGroupMessageRequestTypeDef](./type_defs.md#createclusterparametergroupmessagerequesttypedef)
 - [CreateClusterParameterGroupResultTypeDef](./type_defs.md#createclusterparametergroupresulttypedef)
@@ -467,6 +478,8 @@ from mypy_boto3_redshift.type_defs import AcceptReservedNodeExchangeInputMessage
 - [DataTransferProgressTypeDef](./type_defs.md#datatransferprogresstypedef)
 - [DefaultClusterParametersTypeDef](./type_defs.md#defaultclusterparameterstypedef)
 - [DeferredMaintenanceWindowTypeDef](./type_defs.md#deferredmaintenancewindowtypedef)
+- [DeleteAuthenticationProfileMessageRequestTypeDef](./type_defs.md#deleteauthenticationprofilemessagerequesttypedef)
+- [DeleteAuthenticationProfileResultTypeDef](./type_defs.md#deleteauthenticationprofileresulttypedef)
 - [DeleteClusterMessageRequestTypeDef](./type_defs.md#deleteclustermessagerequesttypedef)
 - [DeleteClusterParameterGroupMessageRequestTypeDef](./type_defs.md#deleteclusterparametergroupmessagerequesttypedef)
 - [DeleteClusterResultTypeDef](./type_defs.md#deleteclusterresulttypedef)
@@ -485,6 +498,8 @@ from mypy_boto3_redshift.type_defs import AcceptReservedNodeExchangeInputMessage
 - [DeleteTagsMessageRequestTypeDef](./type_defs.md#deletetagsmessagerequesttypedef)
 - [DeleteUsageLimitMessageRequestTypeDef](./type_defs.md#deleteusagelimitmessagerequesttypedef)
 - [DescribeAccountAttributesMessageRequestTypeDef](./type_defs.md#describeaccountattributesmessagerequesttypedef)
+- [DescribeAuthenticationProfilesMessageRequestTypeDef](./type_defs.md#describeauthenticationprofilesmessagerequesttypedef)
+- [DescribeAuthenticationProfilesResultTypeDef](./type_defs.md#describeauthenticationprofilesresulttypedef)
 - [DescribeClusterDbRevisionsMessageRequestTypeDef](./type_defs.md#describeclusterdbrevisionsmessagerequesttypedef)
 - [DescribeClusterParameterGroupsMessageRequestTypeDef](./type_defs.md#describeclusterparametergroupsmessagerequesttypedef)
 - [DescribeClusterParametersMessageRequestTypeDef](./type_defs.md#describeclusterparametersmessagerequesttypedef)
@@ -553,6 +568,8 @@ from mypy_boto3_redshift.type_defs import AcceptReservedNodeExchangeInputMessage
 - [MaintenanceTrackTypeDef](./type_defs.md#maintenancetracktypedef)
 - [ModifyAquaInputMessageRequestTypeDef](./type_defs.md#modifyaquainputmessagerequesttypedef)
 - [ModifyAquaOutputMessageTypeDef](./type_defs.md#modifyaquaoutputmessagetypedef)
+- [ModifyAuthenticationProfileMessageRequestTypeDef](./type_defs.md#modifyauthenticationprofilemessagerequesttypedef)
+- [ModifyAuthenticationProfileResultTypeDef](./type_defs.md#modifyauthenticationprofileresulttypedef)
 - [ModifyClusterDbRevisionMessageRequestTypeDef](./type_defs.md#modifyclusterdbrevisionmessagerequesttypedef)
 - [ModifyClusterDbRevisionResultTypeDef](./type_defs.md#modifyclusterdbrevisionresulttypedef)
 - [ModifyClusterIamRolesMessageRequestTypeDef](./type_defs.md#modifyclusteriamrolesmessagerequesttypedef)

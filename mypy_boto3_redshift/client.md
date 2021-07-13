@@ -22,6 +22,7 @@ type annotations stubs module
     - [can_paginate](#can_paginate)
     - [cancel_resize](#cancel_resize)
     - [copy_cluster_snapshot](#copy_cluster_snapshot)
+    - [create_authentication_profile](#create_authentication_profile)
     - [create_cluster](#create_cluster)
     - [create_cluster_parameter_group](#create_cluster_parameter_group)
     - [create_cluster_security_group](#create_cluster_security_group)
@@ -36,6 +37,7 @@ type annotations stubs module
     - [create_snapshot_schedule](#create_snapshot_schedule)
     - [create_tags](#create_tags)
     - [create_usage_limit](#create_usage_limit)
+    - [delete_authentication_profile](#delete_authentication_profile)
     - [delete_cluster](#delete_cluster)
     - [delete_cluster_parameter_group](#delete_cluster_parameter_group)
     - [delete_cluster_security_group](#delete_cluster_security_group)
@@ -52,6 +54,7 @@ type annotations stubs module
     - [delete_tags](#delete_tags)
     - [delete_usage_limit](#delete_usage_limit)
     - [describe_account_attributes](#describe_account_attributes)
+    - [describe_authentication_profiles](#describe_authentication_profiles)
     - [describe_cluster_db_revisions](#describe_cluster_db_revisions)
     - [describe_cluster_parameter_groups](#describe_cluster_parameter_groups)
     - [describe_cluster_parameters](#describe_cluster_parameters)
@@ -91,6 +94,7 @@ type annotations stubs module
     - [get_cluster_credentials](#get_cluster_credentials)
     - [get_reserved_node_exchange_offerings](#get_reserved_node_exchange_offerings)
     - [modify_aqua_configuration](#modify_aqua_configuration)
+    - [modify_authentication_profile](#modify_authentication_profile)
     - [modify_cluster](#modify_cluster)
     - [modify_cluster_db_revision](#modify_cluster_db_revision)
     - [modify_cluster_iam_roles](#modify_cluster_iam_roles)
@@ -153,6 +157,9 @@ Exceptions:
 
 - `Exceptions.AccessToClusterDeniedFault`
 - `Exceptions.AccessToSnapshotDeniedFault`
+- `Exceptions.AuthenticationProfileAlreadyExistsFault`
+- `Exceptions.AuthenticationProfileNotFoundFault`
+- `Exceptions.AuthenticationProfileQuotaExceededFault`
 - `Exceptions.AuthorizationAlreadyExistsFault`
 - `Exceptions.AuthorizationNotFoundFault`
 - `Exceptions.AuthorizationQuotaExceededFault`
@@ -198,6 +205,7 @@ Exceptions:
 - `Exceptions.IncompatibleOrderableOptions`
 - `Exceptions.InsufficientClusterCapacityFault`
 - `Exceptions.InsufficientS3BucketPolicyFault`
+- `Exceptions.InvalidAuthenticationProfileRequestFault`
 - `Exceptions.InvalidAuthorizationStateFault`
 - `Exceptions.InvalidClusterParameterGroupStateFault`
 - `Exceptions.InvalidClusterSecurityGroupStateFault`
@@ -376,8 +384,7 @@ Returns
 
 ### authorize_snapshot_access
 
-Authorizes the specified AWS customer account to restore the specified
-snapshot.
+Authorizes the specified account to restore the specified snapshot.
 
 Type annotations for `boto3.client("redshift").authorize_snapshot_access`
 method.
@@ -497,6 +504,27 @@ Keyword-only arguments:
 
 Returns
 [CopyClusterSnapshotResultTypeDef](./type_defs.md#copyclustersnapshotresulttypedef).
+
+### create_authentication_profile
+
+Creates an authentication profile with the specified parameters.
+
+Type annotations for `boto3.client("redshift").create_authentication_profile`
+method.
+
+Boto3 documentation:
+[Redshift.Client.create_authentication_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_authentication_profile)
+
+Arguments mapping described in
+[CreateAuthenticationProfileMessageRequestTypeDef](./type_defs.md#createauthenticationprofilemessagerequesttypedef).
+
+Keyword-only arguments:
+
+- `AuthenticationProfileName`: `str` *(required)*
+- `AuthenticationProfileContent`: `str` *(required)*
+
+Returns
+[CreateAuthenticationProfileResultTypeDef](./type_defs.md#createauthenticationprofileresulttypedef).
 
 ### create_cluster
 
@@ -771,8 +799,8 @@ Returns
 ### create_snapshot_copy_grant
 
 Creates a snapshot copy grant that permits Amazon Redshift to use a customer
-master key (CMK) from AWS Key Management Service (AWS KMS) to encrypt copied
-snapshots in a destination region.
+master key (CMK) from Key Management Service (KMS) to encrypt copied snapshots
+in a destination region.
 
 Type annotations for `boto3.client("redshift").create_snapshot_copy_grant`
 method.
@@ -863,6 +891,26 @@ Keyword-only arguments:
 
 Returns
 [UsageLimitResponseMetadataTypeDef](./type_defs.md#usagelimitresponsemetadatatypedef).
+
+### delete_authentication_profile
+
+Deletes an authentication profile.
+
+Type annotations for `boto3.client("redshift").delete_authentication_profile`
+method.
+
+Boto3 documentation:
+[Redshift.Client.delete_authentication_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_authentication_profile)
+
+Arguments mapping described in
+[DeleteAuthenticationProfileMessageRequestTypeDef](./type_defs.md#deleteauthenticationprofilemessagerequesttypedef).
+
+Keyword-only arguments:
+
+- `AuthenticationProfileName`: `str` *(required)*
+
+Returns
+[DeleteAuthenticationProfileResultTypeDef](./type_defs.md#deleteauthenticationprofileresulttypedef).
 
 ### delete_cluster
 
@@ -1155,6 +1203,26 @@ Keyword-only arguments:
 
 Returns
 [AccountAttributeListTypeDef](./type_defs.md#accountattributelisttypedef).
+
+### describe_authentication_profiles
+
+Describes an authentication profile.
+
+Type annotations for
+`boto3.client("redshift").describe_authentication_profiles` method.
+
+Boto3 documentation:
+[Redshift.Client.describe_authentication_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_authentication_profiles)
+
+Arguments mapping described in
+[DescribeAuthenticationProfilesMessageRequestTypeDef](./type_defs.md#describeauthenticationprofilesmessagerequesttypedef).
+
+Keyword-only arguments:
+
+- `AuthenticationProfileName`: `str`
+
+Returns
+[DescribeAuthenticationProfilesResultTypeDef](./type_defs.md#describeauthenticationprofilesresulttypedef).
 
 ### describe_cluster_db_revisions
 
@@ -1751,8 +1819,8 @@ Returns
 
 ### describe_snapshot_copy_grants
 
-Returns a list of snapshot copy grants owned by the AWS account in the
-destination region.
+Returns a list of snapshot copy grants owned by the account in the destination
+region.
 
 Type annotations for `boto3.client("redshift").describe_snapshot_copy_grants`
 method.
@@ -2055,6 +2123,27 @@ Keyword-only arguments:
 Returns
 [ModifyAquaOutputMessageTypeDef](./type_defs.md#modifyaquaoutputmessagetypedef).
 
+### modify_authentication_profile
+
+Modifies an authentication profile.
+
+Type annotations for `boto3.client("redshift").modify_authentication_profile`
+method.
+
+Boto3 documentation:
+[Redshift.Client.modify_authentication_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_authentication_profile)
+
+Arguments mapping described in
+[ModifyAuthenticationProfileMessageRequestTypeDef](./type_defs.md#modifyauthenticationprofilemessagerequesttypedef).
+
+Keyword-only arguments:
+
+- `AuthenticationProfileName`: `str` *(required)*
+- `AuthenticationProfileContent`: `str` *(required)*
+
+Returns
+[ModifyAuthenticationProfileResultTypeDef](./type_defs.md#modifyauthenticationprofileresulttypedef).
+
 ### modify_cluster
 
 Modifies the settings for a cluster.
@@ -2121,8 +2210,8 @@ Returns
 
 ### modify_cluster_iam_roles
 
-Modifies the list of AWS Identity and Access Management (IAM) roles that can be
-used by the cluster to access other AWS services.
+Modifies the list of Identity and Access Management (IAM) roles that can be
+used by the cluster to access other Amazon Web Services services.
 
 Type annotations for `boto3.client("redshift").modify_cluster_iam_roles`
 method.
@@ -2326,8 +2415,8 @@ Returns
 
 ### modify_snapshot_copy_retention_period
 
-Modifies the number of days to retain snapshots in the destination AWS Region
-after they are copied from the source AWS Region.
+Modifies the number of days to retain snapshots in the destination Region after
+they are copied from the source Region.
 
 Type annotations for
 `boto3.client("redshift").modify_snapshot_copy_retention_period` method.
@@ -2637,8 +2726,7 @@ Returns
 
 ### revoke_snapshot_access
 
-Removes the ability of the specified AWS customer account to restore the
-specified snapshot.
+Removes the ability of the specified account to restore the specified snapshot.
 
 Type annotations for `boto3.client("redshift").revoke_snapshot_access` method.
 

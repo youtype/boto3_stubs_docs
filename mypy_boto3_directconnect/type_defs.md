@@ -340,6 +340,7 @@ Optional fields:
 - `bgpPeerState`: [BGPPeerStateType](./literals.md#bgppeerstatetype)
 - `bgpStatus`: [BGPStatusType](./literals.md#bgpstatustype)
 - `awsDeviceV2`: `str`
+- `awsLogicalDeviceId`: `str`
 
 ## ConfirmConnectionRequestRequestTypeDef
 
@@ -460,6 +461,7 @@ Required fields:
 - `awsDevice`: `str`
 - `jumboFrameCapable`: `bool`
 - `awsDeviceV2`: `str`
+- `awsLogicalDeviceId`: `str`
 - `hasLogicalRedundancy`:
   [HasLogicalRedundancyType](./literals.md#haslogicalredundancytype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -493,6 +495,7 @@ Optional fields:
 - `awsDevice`: `str`
 - `jumboFrameCapable`: `bool`
 - `awsDeviceV2`: `str`
+- `awsLogicalDeviceId`: `str`
 - `hasLogicalRedundancy`:
   [HasLogicalRedundancyType](./literals.md#haslogicalredundancytype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -1295,6 +1298,7 @@ Required fields:
 - `awsDevice`: `str`
 - `jumboFrameCapable`: `bool`
 - `awsDeviceV2`: `str`
+- `awsLogicalDeviceId`: `str`
 - `hasLogicalRedundancy`:
   [HasLogicalRedundancyType](./literals.md#haslogicalredundancytype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -1322,6 +1326,7 @@ Optional fields:
 - `awsDevice`: `str`
 - `jumboFrameCapable`: `bool`
 - `awsDeviceV2`: `str`
+- `awsLogicalDeviceId`: `str`
 - `hasLogicalRedundancy`:
   [HasLogicalRedundancyType](./literals.md#haslogicalredundancytype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -1359,6 +1364,7 @@ Required fields:
 - `minimumLinks`: `int`
 - `awsDevice`: `str`
 - `awsDeviceV2`: `str`
+- `awsLogicalDeviceId`: `str`
 - `connections`:
   `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
 - `allowsHostedConnections`: `bool`
@@ -1392,6 +1398,7 @@ Optional fields:
 - `minimumLinks`: `int`
 - `awsDevice`: `str`
 - `awsDeviceV2`: `str`
+- `awsLogicalDeviceId`: `str`
 - `connections`:
   `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
 - `allowsHostedConnections`: `bool`
@@ -1913,6 +1920,7 @@ Required fields:
 - `bgpPeers`: `List`\[[BGPPeerTypeDef](./type_defs.md#bgppeertypedef)\]
 - `region`: `str`
 - `awsDeviceV2`: `str`
+- `awsLogicalDeviceId`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -1967,6 +1975,7 @@ Optional fields:
 - `bgpPeers`: `List`\[[BGPPeerTypeDef](./type_defs.md#bgppeertypedef)\]
 - `region`: `str`
 - `awsDeviceV2`: `str`
+- `awsLogicalDeviceId`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## VirtualInterfacesTypeDef
