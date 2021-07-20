@@ -70,9 +70,9 @@ jobs:
         env:
           BOTO3_VERSION: ${{ steps.vars.outputs.boto3-version }}
         run: |
-          git config --global user.email "volshebnyi@gmail.com"
-          git config --global user.name ${GITHUB_ACTOR}
+          git config --global user.email "github-actions"
+          git config --global user.name "github-actions@github.com"
           git add -A .
           git commit -m "Update docs to ${BOTO3_VERSION}"
-          git push https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git --tags
-          git push https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git HEAD:master
+          git push --tags
+          git push
